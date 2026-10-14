@@ -80,6 +80,25 @@ node scripts/render_preview.mjs mochi battai cyca --final   # 每段都有錄影
 
 ## 新 App：針孔偵測（58_Lensafe，2026-10-14 新增）
 
+**狀態（10-15）：** 雲端已寫完原始碼，在 00_GrowthEngine 的 `lensafe` 分支，最新 commit 是 faaad46，路徑 `newapps/58_Lensafe/`。目前還沒有用 Xcode 編譯過。
+
+**本機第一步：** 匯入成獨立 repo 並驗證。
+
+```
+cd ~/00_GrowthEngine && git fetch origin lensafe && git worktree add /tmp/lensafe-src origin/lensafe
+cp -R /tmp/lensafe-src/newapps/58_Lensafe ~/58_Lensafe && git worktree remove /tmp/lensafe-src
+cd ~/58_Lensafe && git init -q && git add -A && git commit -qm "Lensafe 初始匯入（00_GrowthEngine lensafe faaad46）"
+gh repo create alice51849/58_Lensafe --private --source=. --push
+brew install xcodegen; xcodegen generate
+(cd Packages/LensafeCore && swift test) && Scripts/check_strings.sh && Scripts/scan_release_for_demo.sh
+```
+
+接著：
+1. 在 iOS 26 模擬器和真機上建置，修到零錯誤。
+2. 照 `Docs/README.md` 的「裝置風險」逐項實測：Lock Screen 擴充裡的手電筒、多鏡頭加手電筒脈衝、Camera Control 滑桿、Release 建置不含 demo、各地緊急電話號碼等。
+3. 照規格 §16 的 1～7 步跑新 App 管線：ledger、spam／requirements 閘門、newapp_register、商標查詢後再建 Bundle ID 和 ASC、US$4.99 價格收據、截圖（先照 `Docs/BUILD.md` §5～6 錄 `demo.mov`）、release 閘門加獨立審查、`submit_one.py`。審查備註貼 `Docs/REVIEW_NOTES.md` 的 Part A。
+
+
 > 規格：`.github/growth/drafts/new-app-hidden-camera/spec.md`（先 `git pull`）。店主已經決定好的事項：
 > - 名稱 **Lensafe**；
 > - **付費下載 US$4.99**：沒有內購、沒有免費版、沒有訂閱，也不做早鳥價；

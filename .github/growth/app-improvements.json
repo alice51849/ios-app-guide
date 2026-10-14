@@ -1,26 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-14T11:53:46Z",
+  "updated_at": "2026-10-14T12:02:29Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
     "you": "只有你能做"
   },
-  "summary_md": "# 53 款 App 成長總覽（2026-10-13）\n\n今日成績單：53 款／39 店面合計 **111 則評分**；母語關鍵字第 1 名 9 組、前 10 名 27 組，全部落在 CZ／DK／SA／ca／GR 這類小店面；主市場（TW／JP／KR／US）幾乎沒有一款站上第一頁。瓶頸不是需求，是店面說法與社會證明。\n\n## 跨 App 共同病灶\n1. **店面文案過時、自相矛盾**：語言行寫 2／4／17／22／33／40+／44／47 種（實際 50）；LockHour 35 個、Lumi Mission／Mission Pro 27 個語系仍是泛用模板，Mission Pro 還寫「Free to try」；名稱承諾描述沒有的事（Stay Clock「Flip」、QR Code Halo「絕不自動開啟」）。\n2. **免費層小到養不成習慣，所以沒有評分**：Studydown 累計 5 分鐘、G+Money Lite 3 筆、Wordmate Lite 10 字、SaveTag 5 筆、100 Notes 1 本 5 頁、OnePage 1 張、WiFi Aid Lite 合計 1 次、QR Halo 3 次——外宣帶來的下載會變成刪除。\n3. **名稱／副標沒有使用者會打的在地詞**：CountDaysNow、LED Moving Text、ShotInbox 50 語系名稱全英文；副標是 UI 字串或自創詞（每日焦點、價值稜鏡、Cue flows）；關鍵字重複名稱、超過 100 字，或含競品商標（掃描王、polaroid／寶麗來）。\n4. **Lite／Pro 互搶**：11 組雙 SKU 的付費版幾乎全是 0 評分、說明與 Lite 相同；外宣一律導向 Lite，Pro 只留「無內購版」一句。\n\n## 本週優先推的 10 款\n| App | 主市場 | 為什麼是現在 |\n|---|---|---|\n| Mochi | US（補 BR／DE）| 「cute to do list」已第 1，只差老實寫免費範圍 |\n| UsageNow | US | 上架 6 天「claude usage」#18，前 5 名最多 39 則評分 |\n| Lumi Mission Planet | TW／JP／KR | 核心詞停第二頁，前面對手只有 1–19 則評分 |\n| Lumi 注音星球 Lite | TW | 9–11 月小一注音季 |\n| G+Money Lite | JP／KR | 「旅行 家計簿」前三名僅 46／4／1 則評分（先放寬免費額度）|\n| MoneyTag | JP／CZ | 「副業 収支」第 2 名只有 1 則評分；CZ 已第 6 |\n| Snapport Lite | TW／JP／ID／VN | 台灣線上換護照、日本マイナ線上申請；CZ 已第 1 |\n| CV Desk | ID／US | 印尼畢業季、「cek skor ATS」 |\n| Unblurry Pro | TW／DK→NL／SV | DK 第 1 的詞型複製到北歐 |\n| CountDaysNow | TW／KR | 學測百日、수능 디데이（先在地化名稱）|\n\n候補：LED Moving Text（TW Q4 演唱會，等名稱在地化）、dB Halo（TW「分貝」#20、KR 층간소음）。\n\n## 雲端 Claude 本週自動完成\n- **Telegram 佇列全面修正**：刪 Opal／Forest／Remini／VSCO／CamScanner／YNAB 競品名；刪 listing 沒有的宣稱（穿衣、絕不自動開啟、給孩子看的天氣）；補 pt-BR／de／ko／vi／zh-Hant；全部加「50 種介面語言，App 內切換」；Pro 系列貼文連結改導 Lite；加「截圖少於 3 張自動跳過」門檻。\n- **成績單改量真實意圖詞**：新增每 App 覆寫詞檔（cute to do list、디데이、旅のしおり、副業 収支、証明写真、claude usage…），排除結果數 <30 的假機會，加 Developer Tools 榜，以 CZ／DK／SA 已登頂詞為對照組。\n- **資料檔同步 live 並去錯**：語言行改 50、關鍵字截 100 字並刪商標詞、qrcodehalo／wifiaidlite／tripplanet／aim990／bopomofo 回填線上文案、矩陣 kids 誤分類修正。\n- **草稿全部入庫等你貼／寄**：ASC 描述草稿（Sereno、Sono Note、PhotoCream、ScanTo id、Wordmate vs Lite）；pitch 信（Gridfiti、app-liv、MrMad、蘋果仁、iphone-ticker、appgefahren、隱私榜單）；Show HN／Reddit／note.com／Naver／Dcard／Zenn 貼文；30 秒影片腳本；usagenow-security.html、注音表 PDF、ATS checklist、「內建先、工具後」教學頁。\n- app-posts.json 四語情境貼文備妥，等本機 threads-autopilot 排程。\n\n## 鉤子片影片：各社群連結與進度\n\n更新：2026-10-14 19:53（台灣）\n\n- 已上傳：2 款／53 款、10 支影片。\n- Android：42 款已在 Google Play 上線；這些 App 的貼文同時附 App Store 與 Google Play 連結（Telegram 兩個按鈕、IG 文案註明 Google Play）。\n- 52 款分鏡已完成；UsageNow 四語已上傳，其餘 51 款待渲染。\n- 雲端渲染卡住兩件事：雲端環境連不到 App Store（itunes.apple.com、*.mzstatic.com 被擋，抓不到現行與在地化截圖），以及雲端沒有 00_GrowthEngine 推送權限（無法把成品交給 Mac 上傳）。\n\n| 平台 | 進度 | 已發 | 下一支（台灣時間） |\n|---|---|---|---|\n| Telegram | 自動，每天 1 支（影片＋App Store 下載按鈕）；已排 4 支 | 0 | 10/14 23:00 UsageNow: AI Usage Tracker en |\n| Instagram | 等 IG_ACCESS_TOKEN 設好才開始；已排 0 支 | 0 | — |\n| YouTube Shorts | Mac 本機上傳（本機待辦「7 秒鉤子片」第 4 步，每天最多 3 支）；上傳後的網址在本機回報 | — | — |\n| Threads／Bluesky | 尚未接上影片自動發文 | — | — |\n| TikTok | 手動配熱門音樂；無聲版在 Mac 的 shorts/out/，尚未上傳 | — | — |\n\n| App | 語言 | 影片 | Telegram | Instagram | Android |\n|---|---|---|---|---|---|\n| Mochi: Cute Checklist | de | [影片](https://files.catbox.moe/ogbh3q.mp4) | — | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | en | [影片](https://files.catbox.moe/pdwb2b.mp4) | 排定 10/18 23:00 | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | ja | [影片](https://files.catbox.moe/tqkgff.mp4) | — | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | ko | [影片](https://files.catbox.moe/yr5huj.mp4) | — | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | pt-BR | [影片](https://files.catbox.moe/9a5xaz.mp4) | — | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | zh-Hant | [影片](https://files.catbox.moe/sh1wdt.mp4) | 排定 10/15 09:00 | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| UsageNow: AI Usage Tracker | en | [影片](https://files.catbox.moe/cwvmmh.mp4) | 排定 10/14 23:00 | — | 尚未上架 |\n| UsageNow: AI Usage Tracker | ja | [影片](https://files.catbox.moe/wigyoz.mp4) | — | — | 尚未上架 |\n| UsageNow: AI Usage Tracker | ko | [影片](https://files.catbox.moe/vqldln.mp4) | — | — | 尚未上架 |\n| UsageNow: AI Usage Tracker | zh-Hant | [影片](https://files.catbox.moe/015xmy.mp4) | 排定 10/17 09:00 | — | 尚未上架 |\n\n",
+  "summary_md": "# 53 款 App 成長總覽（2026-10-13）\n\n今日成績單：53 款／39 店面合計 **111 則評分**；母語關鍵字第 1 名 9 組、前 10 名 27 組，全部落在 CZ／DK／SA／ca／GR 這類小店面；主市場（TW／JP／KR／US）幾乎沒有一款站上第一頁。瓶頸不是需求，是店面說法與社會證明。\n\n## 跨 App 共同病灶\n1. **店面文案過時、自相矛盾**：語言行寫 2／4／17／22／33／40+／44／47 種（實際 50）；LockHour 35 個、Lumi Mission／Mission Pro 27 個語系仍是泛用模板，Mission Pro 還寫「Free to try」；名稱承諾描述沒有的事（Stay Clock「Flip」、QR Code Halo「絕不自動開啟」）。\n2. **免費層小到養不成習慣，所以沒有評分**：Studydown 累計 5 分鐘、G+Money Lite 3 筆、Wordmate Lite 10 字、SaveTag 5 筆、100 Notes 1 本 5 頁、OnePage 1 張、WiFi Aid Lite 合計 1 次、QR Halo 3 次——外宣帶來的下載會變成刪除。\n3. **名稱／副標沒有使用者會打的在地詞**：CountDaysNow、LED Moving Text、ShotInbox 50 語系名稱全英文；副標是 UI 字串或自創詞（每日焦點、價值稜鏡、Cue flows）；關鍵字重複名稱、超過 100 字，或含競品商標（掃描王、polaroid／寶麗來）。\n4. **Lite／Pro 互搶**：11 組雙 SKU 的付費版幾乎全是 0 評分、說明與 Lite 相同；外宣一律導向 Lite，Pro 只留「無內購版」一句。\n\n## 本週優先推的 10 款\n| App | 主市場 | 為什麼是現在 |\n|---|---|---|\n| Mochi | US（補 BR／DE）| 「cute to do list」已第 1，只差老實寫免費範圍 |\n| UsageNow | US | 上架 6 天「claude usage」#18，前 5 名最多 39 則評分 |\n| Lumi Mission Planet | TW／JP／KR | 核心詞停第二頁，前面對手只有 1–19 則評分 |\n| Lumi 注音星球 Lite | TW | 9–11 月小一注音季 |\n| G+Money Lite | JP／KR | 「旅行 家計簿」前三名僅 46／4／1 則評分（先放寬免費額度）|\n| MoneyTag | JP／CZ | 「副業 収支」第 2 名只有 1 則評分；CZ 已第 6 |\n| Snapport Lite | TW／JP／ID／VN | 台灣線上換護照、日本マイナ線上申請；CZ 已第 1 |\n| CV Desk | ID／US | 印尼畢業季、「cek skor ATS」 |\n| Unblurry Pro | TW／DK→NL／SV | DK 第 1 的詞型複製到北歐 |\n| CountDaysNow | TW／KR | 學測百日、수능 디데이（先在地化名稱）|\n\n候補：LED Moving Text（TW Q4 演唱會，等名稱在地化）、dB Halo（TW「分貝」#20、KR 층간소음）。\n\n## 雲端 Claude 本週自動完成\n- **7 秒鉤子片開始量產（10/14）**：雲端抓各國商店現行截圖、渲染、交 Mac 上傳 catbox，自動排進 Telegram 日程；每則發出後連結自動寫回本頁。\n- **宣傳同時附 Android**：已上 Google Play 的 App（目前 42 款），Telegram／Threads 貼文與鉤子片都加 Google Play 連結（帶追蹤碼）。\n- **Telegram 佇列全面修正**：刪 Opal／Forest／Remini／VSCO／CamScanner／YNAB 競品名；刪 listing 沒有的宣稱（穿衣、絕不自動開啟、給孩子看的天氣）；補 pt-BR／de／ko／vi／zh-Hant；全部加「50 種介面語言，App 內切換」；Pro 系列貼文連結改導 Lite；加「截圖少於 3 張自動跳過」門檻。\n- **成績單改量真實意圖詞**：新增每 App 覆寫詞檔（cute to do list、디데이、旅のしおり、副業 収支、証明写真、claude usage…），排除結果數 <30 的假機會，加 Developer Tools 榜，以 CZ／DK／SA 已登頂詞為對照組。\n- **資料檔同步 live 並去錯**：語言行改 50、關鍵字截 100 字並刪商標詞、qrcodehalo／wifiaidlite／tripplanet／aim990／bopomofo 回填線上文案、矩陣 kids 誤分類修正。\n- **草稿全部入庫等你貼／寄**：ASC 描述草稿（Sereno、Sono Note、PhotoCream、ScanTo id、Wordmate vs Lite）；pitch 信（Gridfiti、app-liv、MrMad、蘋果仁、iphone-ticker、appgefahren、隱私榜單）；Show HN／Reddit／note.com／Naver／Dcard／Zenn 貼文；30 秒影片腳本；usagenow-security.html、注音表 PDF、ATS checklist、「內建先、工具後」教學頁。\n- app-posts.json 四語情境貼文備妥，等本機 threads-autopilot 排程。\n\n## 鉤子片影片：各社群連結與進度\n\n更新：2026-10-14 20:02（台灣）\n\n- 已上傳：2 款／53 款、10 支影片。\n- Android：42 款已在 Google Play 上線；這些 App 的貼文同時附 App Store 與 Google Play 連結（Telegram 兩個按鈕、IG 文案註明 Google Play）。\n- 雲端渲染中：先做每款的英文＋中文（自動發文只用這兩種），再補其他語言；每批推給 Mac 上傳後自動排進日程。\n- 付費版 11 款與 Studydown 暫緩：付費版的宣傳導到 Lite 版，Studydown 等免費規則上線。\n\n| 平台 | 進度 | 已發 | 下一支（台灣時間） |\n|---|---|---|---|\n| Telegram | 自動，每天 1 支（影片＋App Store 下載按鈕）；已排 4 支 | 0 | 10/14 23:00 UsageNow: AI Usage Tracker en |\n| Instagram | 等 IG_ACCESS_TOKEN 設好才開始；已排 0 支 | 0 | — |\n| YouTube Shorts | Mac 本機上傳（本機待辦「7 秒鉤子片」第 4 步，每天最多 3 支）；上傳後的網址在本機回報 | — | — |\n| Threads／Bluesky | 尚未接上影片自動發文 | — | — |\n| TikTok | 手動配熱門音樂；無聲版在 Mac 的 shorts/out/，尚未上傳 | — | — |\n\n| App | 語言 | 影片 | Telegram | Instagram | Android |\n|---|---|---|---|---|---|\n| Mochi: Cute Checklist | de | [影片](https://files.catbox.moe/ogbh3q.mp4) | — | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | en | [影片](https://files.catbox.moe/pdwb2b.mp4) | 排定 10/18 23:00 | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | ja | [影片](https://files.catbox.moe/tqkgff.mp4) | — | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | ko | [影片](https://files.catbox.moe/yr5huj.mp4) | — | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | pt-BR | [影片](https://files.catbox.moe/9a5xaz.mp4) | — | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| Mochi: Cute Checklist | zh-Hant | [影片](https://files.catbox.moe/sh1wdt.mp4) | 排定 10/15 09:00 | — | [Google Play](https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo) |\n| UsageNow: AI Usage Tracker | en | [影片](https://files.catbox.moe/cwvmmh.mp4) | 排定 10/14 23:00 | — | 尚未上架 |\n| UsageNow: AI Usage Tracker | ja | [影片](https://files.catbox.moe/wigyoz.mp4) | — | — | 尚未上架 |\n| UsageNow: AI Usage Tracker | ko | [影片](https://files.catbox.moe/vqldln.mp4) | — | — | 尚未上架 |\n| UsageNow: AI Usage Tracker | zh-Hant | [影片](https://files.catbox.moe/015xmy.mp4) | 排定 10/17 09:00 | — | 尚未上架 |\n\n",
   "owner_actions": [
     {
       "id": "oa-engine-push",
       "title": "允許雲端推送到 00_GrowthEngine（鉤子片交給 Mac 上傳）",
       "url": "https://github.com/alice51849/00_GrowthEngine",
-      "how": "在雲端對話回一句「允許 00_GrowthEngine 推送」，雲端要求權限時按允許。之後雲端渲染好的影片會推到 clips-out 分支，Mac 自動上傳 catbox。",
-      "status": "todo"
+      "how": "已完成：雲端渲染好的影片推到 clips-out，Mac 自動上傳 catbox。",
+      "status": "done",
+      "done_at": "2026-10-14T12:10:00Z"
     },
     {
       "id": "oa-network-3",
       "title": "雲端環境的 App Store 網域沒有生效（鉤子片抓不到截圖）",
       "url": "https://code.claude.com/docs/en/cloud-environments#network-access",
-      "how": "對話標題列的雲端環境選單 → Edit → Allowed domains 加上 itunes.apple.com、apps.apple.com、*.mzstatic.com（Allow package managers 保持勾選）→ Save。10/14 晚上的雲端工作階段連這些網域都被擋。",
-      "status": "todo"
+      "how": "已完成：雲端可直接抓 App Store 截圖與各國在地化截圖。",
+      "status": "done",
+      "done_at": "2026-10-14T12:10:00Z"
     },
     {
       "id": "oa-threads-enable",
@@ -79,8 +81,9 @@
       "id": "oa-catbox",
       "title": "雲端環境再加 catbox.moe（讓鉤子片自動上傳並排進 Threads 發文）",
       "url": "https://claude.ai/code",
-      "how": "對話標題列的雲端環境選單 → Edit → Allowed domains 最後加一行 catbox.moe（Allow package managers 保持勾選）→ Save。開了之後雲端會把渲染好的鉤子片上傳到 catbox，自動排進 Threads／Bluesky 影片發文。",
-      "status": "todo"
+      "how": "不需要了：catbox 擋雲端 IP，改由 Mac 上傳。",
+      "status": "done",
+      "done_at": "2026-10-14T12:10:00Z"
     },
     {
       "id": "oa-telegram-daily",
@@ -151,7 +154,7 @@
         {
           "id": "cvdesk-hook7",
           "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、id、th）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「履歷總是 被 ATS 刷掉？」／“Resume getting auto-rejected?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -237,7 +240,7 @@
         {
           "id": "gmoneylite-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「出國玩到一半 預算就爆了？」／“Trip budget already blown?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -318,7 +321,7 @@
         {
           "id": "lumimission-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「叫孩子刷牙 天天像打仗？」／“Brushing teeth: a daily battle?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -412,7 +415,7 @@
         {
           "id": "lumibopomofo-hook7",
           "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、vi）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「注音 原來這麼好玩！」／“Zhuyin, but make it a game”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -518,10 +521,11 @@
         {
           "id": "mochi-hook7",
           "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、pt-BR、de）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「待辦清單 也可以這麼可愛」／“Your to-do list, but make it cute”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "已上傳 6/6 語（de、en、ja、ko、pt-BR、zh-Hant）；下一則 Telegram 10/15 09:00（zh-Hant）；已發 0 則。影片與貼文連結見總覽「鉤子片影片：各社群連結與進度」。",
           "owner": "claude",
           "impact": "high",
-          "status": "in_progress"
+          "status": "done",
+          "done_at": "2026-10-14T12:02:14Z"
         },
         {
           "id": "mochi-aso2",
@@ -602,7 +606,7 @@
         {
           "id": "moneytag-hook7",
           "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、vi、cs）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「哪個副業 真的有賺？」／“Which side gig actually pays?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -670,7 +674,7 @@
         {
           "id": "shotinbox-hook7",
           "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、de）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「那張截圖 又找不到了？」／“Can't find that screenshot again?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -767,7 +771,7 @@
         {
           "id": "snapportlite-hook7",
           "title": "7 秒鉤子片（7 語：en、zh-Hant、ja、ko、id、vi、cs）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「要拍證件照？ 在家自己拍」／“Passport photo? Make it at home”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -885,7 +889,7 @@
         {
           "id": "unblurry-hook7",
           "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、da、nl）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「照片拍糊了？ 秒變清晰」／“Blurry photo? Make it crystal clear”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -976,10 +980,11 @@
         {
           "id": "claudeusagemini-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "四語（en、zh-Hant、ja、ko）已渲染並上傳 catbox，影片連結與各社群進度見上方「鉤子片影片：各社群連結與進度」。Telegram：en 10/14 23:00、zh-Hant 10/17 09:00（台灣）自動發；Instagram 等 IG_ACCESS_TOKEN；YouTube Shorts 由 Mac 上傳。",
+          "detail": "已上傳 4/4 語（en、ja、ko、zh-Hant）；下一則 Telegram 10/14 23:00（en）；已發 0 則。影片與貼文連結見總覽「鉤子片影片：各社群連結與進度」。",
           "owner": "claude",
           "impact": "high",
-          "status": "in_progress"
+          "status": "done",
+          "done_at": "2026-10-14T12:02:14Z"
         },
         {
           "id": "claudeusagemini-16",
@@ -1131,7 +1136,7 @@
         {
           "id": "notesstudio100-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「手寫筆記本 100 款風格」／“Handwritten notes, 100 notebook styles”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -1214,7 +1219,7 @@
         {
           "id": "aim990-hook7",
           "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、vi、id）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「8 分鐘 找出你的多益弱點」／“Find your TOEIC weak spots in 8 min”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -1306,7 +1311,7 @@
         {
           "id": "battai-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「電池健康度 哪天掉到 80%？」／“When will battery health hit 80%?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -1372,7 +1377,7 @@
         {
           "id": "countdaysnow-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「媽媽生日 還有幾天？」／“How long until Mom's birthday?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -1460,7 +1465,7 @@
         {
           "id": "cyca-hook7",
           "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、id、vi）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「你的經期資料 都存到哪去了？」／“Where does your period data go?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -1548,7 +1553,7 @@
         {
           "id": "dailymatelite-hook7",
           "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、id、vi）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「輪到你開口 腦袋一片空白？」／“Your turn to speak… mind goes blank?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -1633,7 +1638,7 @@
         {
           "id": "dbhalo-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「樓上的噪音 到底幾分貝？」／“How loud is your upstairs neighbor?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -1792,7 +1797,7 @@
         {
           "id": "ledmovingtext-hook7",
           "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、de、th）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「演唱會 喊到燒聲了？」／“Lost your voice at the concert?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -1873,7 +1878,7 @@
         {
           "id": "lockhour-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「手機 滑不停？」／“Can't stop scrolling?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -1957,7 +1962,7 @@
         {
           "id": "lumiweather-hook7",
           "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、id）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「今天要不要 穿外套？」／“Jacket or no jacket?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -2048,7 +2053,7 @@
         {
           "id": "lumimath-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「答對一題 小星球就亮起來」／“Every right answer lights a planet”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -2116,7 +2121,7 @@
         {
           "id": "lumibopomofopro-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「學注音 用釣魚的？」／“Zhuyin practice… by fishing?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成。暫緩上片：付費版的宣傳一律導到 Lite 版，Lite 版的鉤子片會照常發。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -2197,7 +2202,7 @@
         {
           "id": "maskmyfile-hook7",
           "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、el）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「傳檔案之前 先遮個資」／“Hide your info before you share”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -2277,7 +2282,7 @@
         {
           "id": "mochidonestamp-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「上次換床單 是什麼時候？」／“When did you last change the sheets?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -2373,7 +2378,7 @@
         {
           "id": "onepageppt-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「落落長的筆記 變成一頁簡報」／“Wall of text? Make it one slide”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -2465,7 +2470,7 @@
         {
           "id": "photocream-hook7",
           "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、zh-Hans、cs）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「自拍也能有 底片感」／“Your selfie, but make it film”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -2562,7 +2567,7 @@
         {
           "id": "savetag-hook7",
           "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、ar、cs）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「收藏的連結 從來沒點開過？」／“Links you saved but never read?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -2644,7 +2649,7 @@
         {
           "id": "scanto-hook7",
           "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、de、id）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「身分證要傳出去？ 先加密碼」／“Sharing your ID? Add a password”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -2722,7 +2727,7 @@
         {
           "id": "sononote-hook7",
           "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、id）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「錄音一停 筆記馬上好」／“Hit stop. Your note is done.”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -2810,7 +2815,7 @@
         {
           "id": "stayclock-hook7",
           "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、de、ar）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「手機在充電？ 讓它變桌鐘」／“Phone charging? Make it a desk clock”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -2882,7 +2887,7 @@
         {
           "id": "tripplanet-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「「到了沒？」 讓旅途變冒險」／““Are we there yet?” Make it a quest”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -2964,7 +2969,7 @@
         {
           "id": "tripbeelite-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「每次出遊都是你 排行程？」／“POV: you're the planner friend”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3050,7 +3055,7 @@
         {
           "id": "wifiaidlite-hook7",
           "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、id）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「網路又卡了？」／“Wi-Fi slow again?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3128,7 +3133,7 @@
         {
           "id": "wordmatelite-hook7",
           "title": "7 秒鉤子片（6 語：en、zh-Hant、ja、ko、id、vi）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「每天只背 5 個單字」／“5 words a day. That's it.”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3221,7 +3226,7 @@
         {
           "id": "zipbox-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「壓縮檔裡 只要一個檔？」／“Need one file from a ZIP?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3283,7 +3288,7 @@
         {
           "id": "aibriefpack-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「AI 答不到重點？ 缺的是脈絡」／“AI keeps missing the context?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3373,7 +3378,7 @@
         {
           "id": "caldaily-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「計算機 也可以這麼美」／“Calculator, but make it aesthetic”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3434,7 +3439,7 @@
         {
           "id": "dailymate-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「主畫面 秒變會話本」／“Your Home Screen, now a phrasebook”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成。暫緩上片：付費版的宣傳一律導到 Lite 版，Lite 版的鉤子片會照常發。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3502,7 +3507,7 @@
         {
           "id": "gmoney-hook7",
           "title": "7 秒鉤子片（5 語：en、zh-Hant、ja、ko、id）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「錢到底 花去哪了？」／“Where did all my money go?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成。暫緩上片：付費版的宣傳一律導到 Lite 版，Lite 版的鉤子片會照常發。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3586,7 +3591,7 @@
         {
           "id": "hourstag-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「這個要工作 幾小時？」／“$129 sneakers? Half a day of work.”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成。暫緩上片：付費版的宣傳一律導到 Lite 版，Lite 版的鉤子片會照常發。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3652,7 +3657,7 @@
         {
           "id": "lumimissionpro-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「刷牙、吃飯、收玩具 天天像打仗？」／“Teeth, meals, tidy-up: a daily battle?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成。暫緩上片：付費版的宣傳一律導到 Lite 版，Lite 版的鉤子片會照常發。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3716,7 +3721,7 @@
         {
           "id": "lumiletters-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「滑手機的時間 也能學 ABC」／“Screen time that teaches ABCs”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3779,7 +3784,7 @@
         {
           "id": "lumiletterspro-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「會唱 ABC 卻還不會拼讀？」／“Knows the ABC song but can't read?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成。暫緩上片：付費版的宣傳一律導到 Lite 版，Lite 版的鉤子片會照常發。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3829,7 +3834,7 @@
         {
           "id": "lumimathpro-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「數學練習卷 還在自己出題？」／“Still making math worksheets by hand?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成。暫緩上片：付費版的宣傳一律導到 Lite 版，Lite 版的鉤子片會照常發。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3886,7 +3891,7 @@
         {
           "id": "picclear-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「iPhone 容量 又滿了？」／“iPhone storage full again?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -3973,7 +3978,7 @@
         {
           "id": "qrcodehalo-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「QR Code 掃到就直接開」／“Scan a QR, it opens instantly”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -4042,7 +4047,7 @@
         {
           "id": "sereno-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「聽不出循環的 雨聲」／“Rain sounds that never loop”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成，雲端渲染中（先做英文＋中文，再補其他語言）；渲染完推給 Mac 上傳，之後自動排進 Telegram／IG 日程。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -4135,7 +4140,7 @@
         {
           "id": "snapport-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「護照照片 在家就能拍」／“Passport photo? Take it at home”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成。暫緩上片：付費版的宣傳一律導到 Lite 版，Lite 版的鉤子片會照常發。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -4208,7 +4213,7 @@
         {
           "id": "studydown-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「手機一拿起來 計時就暫停」／“Pick up your phone, the timer pauses”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成。暫緩上片：Studydown 等免費規則上線再做。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -4277,7 +4282,7 @@
         {
           "id": "tripbee-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「機票、行程 還在翻截圖？」／“Trip plans buried in screenshots?”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成。暫緩上片：付費版的宣傳一律導到 Lite 版，Lite 版的鉤子片會照常發。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -4350,7 +4355,7 @@
         {
           "id": "wifiaid-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「網路問題別再猜 直接看證據」／“Wi-Fi acting up? See the evidence”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成。暫緩上片：付費版的宣傳一律導到 Lite 版，Lite 版的鉤子片會照常發。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"
@@ -4420,7 +4425,7 @@
         {
           "id": "wordmate-hook7",
           "title": "7 秒鉤子片（4 語：en、zh-Hant、ja、ko）",
-          "detail": "分鏡已寫好並經獨立複審，名稱／搜尋字／語言標籤對齊線上商店。鉤子：「不用打開 App 也能背單字」／“Learn words without opening the app”。下一步：渲染成品→上傳→Threads／Bluesky 自動影片發文、Mac 上 YouTube Shorts。",
+          "detail": "分鏡已完成。暫緩上片：付費版的宣傳一律導到 Lite 版，Lite 版的鉤子片會照常發。",
           "owner": "claude",
           "impact": "high",
           "status": "in_progress"

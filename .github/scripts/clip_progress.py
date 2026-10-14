@@ -126,6 +126,41 @@ def hook_total(improvements):
                if x.get("id", "").endswith("-hook7"))
 
 
+def update_hook_cards(improvements, clips, posts, now):
+    """Keep each app's "<key>-hook7" card on the page in step with clips.json."""
+    import re
+    clip_map = clips.get("clips", {})
+    schedule = clips.get("schedule", [])
+    posted = {(p["channel"], p["clip"]) for p in posts}
+    today = now.date().isoformat()
+    for app in improvements.get("apps", []):
+        for action in app.get("actions", []):
+            if action.get("id") != f"{app['key']}-hook7":
+                continue
+            have = sorted(c["locale"] for c in clip_map.values() if c["app"] == app["key"])
+            if not have:
+                continue
+            m = re.search(r"：(.+?)）", action.get("title", ""))
+            wanted = [x.strip() for x in m.group(1).split("、")] if m else have
+            nxt = [e for e in schedule if e["clip"].startswith(app["key"] + "/")
+                   and (e["channel"], e["clip"]) not in posted and e["date"] >= today]
+            sent = sum(1 for p in posts if p["clip"].startswith(app["key"] + "/"))
+            parts = [f"已上傳 {len([x for x in wanted if x in have])}/{len(wanted)} 語（{'、'.join(have)}）"]
+            if nxt:
+                e = nxt[0]
+                parts.append(f"下一則 {CHANNEL_NAME[e['channel']]} {tw_time(e['date'], e['slot'], e['channel'])}"
+                             f"（{e['clip'].split('/')[1]}）")
+            parts.append(f"已發 {sent} 則")
+            action["detail"] = "；".join(parts) + "。影片與貼文連結見總覽「鉤子片影片：各社群連結與進度」。"
+            if set(wanted) <= set(have):
+                if action.get("status") != "done":
+                    action["status"] = "done"
+                    action["done_at"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+            else:
+                action["status"] = "in_progress"
+                action.pop("done_at", None)
+
+
 def update(now=None, notes=None):
     now = now or dt.datetime.now(dt.timezone.utc)
     improvements = load_json(IMPROVEMENTS, {})
@@ -136,6 +171,7 @@ def update(now=None, notes=None):
     from social_post_common import android_apps
     android = {e["key"]: e["play_url"] for e in android_apps().values()}
     section = build_section(clips, posts, app_names(improvements), now, hook_total(improvements), notes, android)
+    update_hook_cards(improvements, clips, posts, now)
     improvements["summary_md"] = replace_section(improvements.get("summary_md", ""), section)
     improvements["updated_at"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     IMPROVEMENTS.write_text(json.dumps(improvements, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

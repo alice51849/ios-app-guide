@@ -185,23 +185,19 @@ def make(out, day, data=None):
     W, H = 1080, 1350
     top, bottom, accent = (_rgb(c) for c in app["colors"])
     img = Image.new("RGB", (W, H))
-    px = ImageDraw.Draw(img)
-    for y in range(H):
-        k = y / H
-        px.line([(0, y), (W, y)], fill=tuple(int(top[i] + (bottom[i] - top[i]) * k) for i in range(3)))
+    cd.gradient(ImageDraw.Draw(img), W, H, top, bottom)  # every row keeps white text at AA contrast
     draw = ImageDraw.Draw(img)
     idx = cd.FONT_INDEX.get(loc, 0)
     f = lambda size, i=idx: ImageFont.truetype(cd.FONT, size, index=i)
 
     def center(text, y, size, fill, i=idx, gap=1.25):
+        # Never below cd.MIN_TEXT: a line that does not fit wraps instead of shrinking into the unreadable.
+        rows, size = cd.wrap(draw, text, lambda s: f(s, i), size, W - 120, min(size, cd.MIN_TEXT))
         font = f(size, i)
-        w = draw.textlength(text, font=font)
-        while w > W - 120 and size > 26:
-            size -= 4
-            font = f(size, i)
-            w = draw.textlength(text, font=font)
-        draw.text(((W - w) / 2, y), text, font=font, fill=fill)
-        return y + int(size * gap)
+        for row in rows:
+            draw.text(((W - draw.textlength(row, font=font)) / 2, y), row, font=font, fill=fill)
+            y += int(size * gap)
+        return y
 
     white = (255, 255, 255)
     head, big, body = lines(card)
@@ -220,13 +216,13 @@ def make(out, day, data=None):
             fz = f(48, zi)
             draw.text((cx - draw.textlength(zy, font=fz) / 2, y + 150), zy, font=fz, fill=accent)
         y += 230
-        y = center(body[1], y, 40, white)
-        center(ZHUYIN_TIPS[day.toordinal() % len(ZHUYIN_TIPS)], y + 4, 40, white)
+        y = center(body[1], y, 42, white)
+        center(ZHUYIN_TIPS[day.toordinal() % len(ZHUYIN_TIPS)], y + 4, 42, white)
     elif card["type"] == "word":
-        y = center(big, y + 20, 110, white, 0, 1.2)
-        y = center(body[0], y + 30, 64, accent)
-        y += 20
-        font = f(36, 0)
+        y = center(big, y + 30, 130, white, 0, 1.2)
+        y = center(body[0], y + 30, 72, accent)
+        y += 30
+        font = f(42, 0)
         words, line, out_lines = body[1].split(" "), "", []
         for w_ in words:  # wrap the English example
             trial = (line + " " + w_).strip()
@@ -237,7 +233,7 @@ def make(out, day, data=None):
                 line = trial
         out_lines.append(line)
         for ln in out_lines[:3]:
-            y = center(ln, y + 4, 36, white, 0)
+            y = center(ln, y + 6, 42, white, 0)
     else:
         y = center(big, y + 16, 72, white, idx, 1.2)
         # The photo's real proportions with its size written beside it.
@@ -251,15 +247,13 @@ def make(out, day, data=None):
         draw.pieslice([hx - pw * 0.42, y + 20 + ph * 0.7, hx + pw * 0.42, y + 20 + ph * 1.3], 180, 360, fill=(200, 196, 220))
         ty = y + 30
         for k, ln in enumerate(body):
-            size = 52 if k == 0 else 34
-            font = f(size)
-            while draw.textlength(ln, font=font) > W - (x + pw + 60) - 70 and size > 22:
-                size -= 2
-                font = f(size)
-            draw.text((x + pw + 60, ty), ln, font=font, fill=accent if k == 0 else white)
-            ty += int(size * 1.6)
-        y += ph + 50
-        center(TEXT[loc]["check"], y, 30, white)
+            rows, size = cd.wrap(draw, ln, f, 56 if k == 0 else 38, W - (x + pw + 60) - 70)
+            for row in rows:
+                draw.text((x + pw + 60, ty), row, font=f(size), fill=accent if k == 0 else white)
+                ty += int(size * 1.3)
+            ty += int(size * 0.3)
+        y = max(y + ph + 50, ty + 20)
+        center(TEXT[loc]["check"], y, 36, white)
     # The real app screen (localized App Store screenshot) rising from the bottom.
     shot = ASSETS / f"{card['app']}_{loc}.png"
     if not shot.exists():
@@ -273,21 +267,18 @@ def make(out, day, data=None):
     top_y = 790
     img.paste(shadow, ((W - pw) // 2 - 40, top_y - 40), shadow)
     img.paste(phone, ((W - pw) // 2, top_y), phone)
-    fade = Image.new("RGBA", (W, 300), (0, 0, 0, 0))
-    fd = ImageDraw.Draw(fade)
-    for i in range(300):
-        fd.line([(0, i), (W, i)], fill=bottom + (int(255 * min(1, i / 180)),))
-    img.paste(fade, (0, H - 300), fade)
+    cd.footer_band(img, bottom, 300)  # darkened band: the pitch line under the pill stays readable
     draw = ImageDraw.Draw(img)
     draw.rounded_rectangle([90, 1160, W - 90, 1260], radius=50, fill=white)
     store = store_line(card)
-    size = 38
+    size = 40
     font = f(size)
-    while draw.textlength(store, font=font) > W - 240:
+    while draw.textlength(store, font=font) > W - 240 and size > cd.MIN_TEXT - 4:
         size -= 2
         font = f(size)
-    draw.text(((W - draw.textlength(store, font=font)) / 2, 1210 - size * 0.62), store, font=font, fill=top)
-    center(app["pitch"][loc], 1280, 32, white)
+    draw.text(((W - draw.textlength(store, font=font)) / 2, 1210 - size * 0.62), store, font=font,
+              fill=top if cd.contrast(top, white) >= cd.AA else cd.legible(top))
+    center(app["pitch"][loc], 1276, 36, white)
     img.save(out, "JPEG", quality=90)
     meta = {"type": card["type"], "item": card["item"]["id"], "locale": loc, "app": card["app"],
             "key": card["key"], "date": day.isoformat(), "caption": caption(card, day)}
@@ -339,13 +330,27 @@ def post_threads(url, meta, card, day):
     return _permalink("https://graph.threads.net/v1.0", media, os.environ.get("THREADS_TOKEN", "")) or ""
 
 
-def post_instagram(url, meta, card):
-    import os
+def instagram_text(meta, card):
     import search_caption as SC
     text = meta["caption"] + "\n" + TEXT[card["locale"]]["bio"]
     tags = SC.card_tags(card["app"], card["locale"])  # keyword hashtags from the planner's seo table
     if tags:
         text += "\n\n" + " ".join(tags)
+    return text
+
+
+def qa_problems(meta, card, channel, image=None, online=True):
+    """Pre-post QA (post_qa.py): the exact text this channel gets, the image, the live store link."""
+    import post_qa
+    text = instagram_text(meta, card) if channel == "instagram" else meta["caption"]
+    return post_qa.card_problems(text, card["locale"], channel, store_url=store_url(card, "qa"),
+                                 name=APPS[card["app"]]["name"], image=image, online=online)
+
+
+def post_instagram(url, meta, card):
+    import os
+    import search_caption as SC
+    text = instagram_text(meta, card)
     alt = SC.card_alt(APPS[card["app"]]["name"], meta["caption"], card["app"], card["locale"])
     media = cd.instagram_image(url, text, label="utility", alt=alt)
     if not media:
@@ -374,6 +379,9 @@ def main():
                      ("threads", lambda: post_threads(args.url, meta, card, day))):
         if args.only and name != args.only:
             continue
+        import post_qa
+        if not post_qa.gate(qa_problems(meta, card, name, image=args.card), f"utility {name}"):
+            continue  # a broken card or caption never goes out
         try:
             link = fn()
         except Exception as exc:  # one channel failing never blocks the others

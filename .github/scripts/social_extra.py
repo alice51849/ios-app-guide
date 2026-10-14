@@ -58,6 +58,7 @@ sys.path.insert(0, str(HERE))
 import clip_posts  # noqa: E402
 import clip_progress  # noqa: E402
 import countdown_cards  # noqa: E402
+import post_qa  # noqa: E402
 import search_caption as SC  # noqa: E402
 
 UA = "lumi-social-extra/1.0"
@@ -334,6 +335,19 @@ def plan(channel, data, posts, day, slot, check=True):
     if rule["cards"] and slot == 15:
         items += [c for c in todays_cards(day, channel) if c["key"] not in done and (not check or exists(c["image"]))]
     return items[:room]
+
+
+# Posters that trim the caption to the platform limit themselves (bsky_rich, post_plurk, the feed consumers).
+TRIMS = {"bluesky", "plurk", "mastodon", "pinterest"}
+
+
+def qa_problems(item, channel, online=True):
+    """Pre-post QA (post_qa.py) for one feed item on one platform."""
+    length = channel not in TRIMS
+    if item["kind"] == "clip":
+        return post_qa.clip_problems(item["clip"], channel, item["caption"], online=online, length=length)
+    return post_qa.card_problems(item["caption"], item["locale"], channel, store_url=item["store"],
+                                 name=item.get("name", ""), online=online, length=length)
 
 
 def link_lines(item):
@@ -856,6 +870,8 @@ def run(channels, day, slot, dry_run=False, data=None):
                 print(f"{ch}{state}: would post {item['kind']} {item['key']} ({item['locale']}) -> {item['store']}")
                 print("  " + item["caption"].replace("\n", "\n  "))
                 continue
+            if not post_qa.gate(qa_problems(item, ch), f"{ch} {item['key']}"):
+                continue  # broken asset or caption: refused, the next item may still go
             if posted_any and STAGGER:
                 time.sleep(STAGGER)
             try:
@@ -919,11 +935,13 @@ def export(day, check=True, data=None, perf=None):
     items = {}
     for ch in EXPORT_CHANNELS:
         out = []
+        # Only items that pass the pre-post QA gate reach the feed's posters (post_qa.py).
+        ok = lambda i: post_qa.gate(qa_problems(i, ch, online=check), f"feed {ch} {i['key']}")  # noqa: E731
         for slot in (1, 15):
             out += [dict(public(i, ch), slot=slot) for i in todays_clips(data, [], ch, day, slot)
-                    if i["key"] not in {o["key"] for o in out}]
+                    if i["key"] not in {o["key"] for o in out} and ok(i)]
         if PLAN[ch]["cards"]:
-            out += [c for c in todays_cards(day, ch) if not check or exists(c["image"])]
+            out += [c for c in todays_cards(day, ch) if (not check or exists(c["image"])) and ok(c)]
         items[ch] = out
     return {"schema": FEED_SCHEMA, "date": day.isoformat(),
             "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "items": items,

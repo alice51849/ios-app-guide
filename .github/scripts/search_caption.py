@@ -21,6 +21,7 @@ fields still get a caption (hook + brand tag).
 """
 import datetime as dt
 import json
+import re
 from functools import lru_cache
 from pathlib import Path
 
@@ -34,7 +35,9 @@ TAG_LIMIT = {"instagram": 5, "threads": 1, "telegram": 3, "bluesky": 3, "faceboo
 # Generic store / platform tags say nothing a searcher types for a problem.
 GENERIC_TAGS = {"#app", "#apps", "#iphoneapps", "#appstore", "#iosapps", "#ios", "#iphone", "#app推薦", "#アプリ紹介",
                 "#앱추천", "#아이폰어플", "#iphoneアプリ", "#aplikasiiphone", "#ungdungiphone", "#แอพไอโฟน",
-                "#productivity", "#android", "#free"}
+                "#productivity", "#android", "#free",
+                # Edition words say nothing a searcher types: they only repeat a part of the brand tag.
+                "#探索版", "#完整版", "#免費版", "#lite", "#pro", "#エクスプローラー版", "#탐험판"}
 
 
 def _load(path, default):
@@ -44,10 +47,35 @@ def _load(path, default):
         return default
 
 
+FULLWIDTH_PUNCT = "、。，．！？：；」』）】〉》…"
+
+
+def tidy(line):
+    """One caption line as a native writer types it: single spaces, none after full-width punctuation
+    ("照片拍糊了？ 秒變清晰" -> "照片拍糊了？秒變清晰", "証明写真、 おうちで" -> "証明写真、おうちで")."""
+    line = re.sub(r"\s+", " ", (line or "").replace("*", "")).strip()
+    return re.sub(f"([{FULLWIDTH_PUNCT}]) ", r"\1", line)
+
+
+def dedupe(lines):
+    """Drop a line another line already contains (case-insensitive), keeping the longer one in place;
+    blank lines are kept as separators."""
+    out = []
+    for i, line in enumerate(lines):
+        low = line.strip().casefold()
+        if low and any(low != o.strip().casefold() and low in o.casefold() for o in lines if o.strip()):
+            continue
+        if low and low in {o.strip().casefold() for o in out}:
+            continue
+        out.append(line)
+    return out
+
+
 def variants(clip):
-    """The clip's hook variants; a clip without them has one: its hook."""
-    hooks = [h for h in clip.get("hooks") or [] if h.get("lead")]
-    return hooks or [{"id": "a", "lead": clip.get("hook", ""), "benefit": ""}]
+    """The clip's hook variants (lines tidied); a clip without them has one: its hook."""
+    hooks = [dict(h, lead=tidy(h["lead"]), benefit=tidy(h.get("benefit", ""))) for h in clip.get("hooks") or []
+             if h.get("lead")]
+    return hooks or [{"id": "a", "lead": tidy(clip.get("hook", "")), "benefit": ""}]
 
 
 def winners(path=PERFORMANCE):
@@ -91,7 +119,7 @@ def tags(clip, limit=5):
 
 def body(clip, variant, limit=FIRST):
     """Problem line, benefit, keyword line; the keyword line moves up if it would fall past `limit`."""
-    lead, benefit, keyline = variant.get("lead", ""), variant.get("benefit", ""), clip.get("keyline", "")
+    lead, benefit, keyline = tidy(variant.get("lead", "")), tidy(variant.get("benefit", "")), clip.get("keyline", "")
     rest = [x for x in (benefit, keyline) if x and x != lead]
     if keyline and benefit and len("\n".join([lead, benefit, keyline])) > limit:
         rest = [keyline, benefit]

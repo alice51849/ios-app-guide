@@ -12,6 +12,7 @@ from pathlib import Path
 from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+os.environ.setdefault("POST_QA_OFFLINE", "1")  # the pre-post QA gate makes no network calls in tests
 
 import clip_progress as P  # noqa: E402
 import social_extra as S  # noqa: E402
@@ -24,7 +25,11 @@ DAY = dt.date(2026, 10, 15)
 def clip(app, locale):
     return {"app": app, "locale": locale, "url": f"https://files.catbox.moe/{app}_{locale}.mp4",
             "store_url": f"https://apps.apple.com/us/app/id1?pt=118326163&ct=h7_{app}_{locale}&mt=8",
-            "hook": f"{app} hook {locale}", "name": f"{app} name", "search": app, "tags": ["#a", "#b", "#c"]}
+            "hook": f"{app} {HOOK.get(locale, 'hook')} {locale}", "name": f"{app} name", "search": app,
+            "tags": ["#a", "#b", "#c"]}
+
+
+HOOK = {"zh-Hant": "鉤子", "ko": "훅", "ja": "フック"}  # each locale's hook line is in its own script (post_qa)
 
 
 DATA = {
@@ -159,7 +164,7 @@ class PlanTest(unittest.TestCase):
     def test_caption_and_campaign_follow_the_platform(self):
         it = S.clip_item("a/zh-Hant", clip("a", "zh-Hant"), "plurk")
         self.assertIn("ct=h7_a_zh-Hant_pk", it["store"])
-        self.assertIn("a hook zh-Hant", it["caption"])
+        self.assertIn("a 鉤子 zh-Hant", it["caption"])
 
     def test_missing_secrets_log_not_configured_and_post_nothing(self):
         with mock.patch.dict(os.environ, {}, clear=True), mock.patch.object(S, "http") as h, \
@@ -297,6 +302,21 @@ class YoutubeLinksTest(unittest.TestCase):
         with mock.patch.object(S, "exists", return_value=False):
             feed = S.export(dt.date(2026, 11, 1), data={"clips": {}, "schedule": []})
         self.assertEqual(feed["items"]["bluesky"], [])
+
+    def test_feed_and_posts_skip_items_the_qa_gate_refuses(self):
+        broken = dict(DATA["clips"]["b/en"], hook="The best app ever")  # banned superlative
+        data = {"clips": dict(DATA["clips"], **{"b/en": broken}), "schedule": DATA["schedule"]}
+        with mock.patch.object(S, "exists", return_value=True), mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            feed = S.export(DAY, data=data)
+        self.assertNotIn("b/en", [i["key"] for i in feed["items"]["bluesky"]])
+        self.assertIn("a/en", [i["key"] for i in feed["items"]["bluesky"]])
+        self.assertIn("QA refused", out.getvalue())
+        posted = mock.Mock(return_value={"id": "9", "link": "l"})
+        with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.dict(S.POSTERS, {"dailymotion": posted}), \
+                mock.patch.object(S, "load_posts", return_value=[]), mock.patch.object(P, "record_post"), \
+                mock.patch("sys.stdout", new_callable=io.StringIO):
+            S.run(("dailymotion",), DAY, 15, data=data)
+        posted.assert_not_called()
 
 
 class HelpersTest(unittest.TestCase):

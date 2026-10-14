@@ -9,6 +9,7 @@ from pathlib import Path
 from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+os.environ.setdefault("POST_QA_OFFLINE", "1")  # the pre-post QA gate makes no network calls in tests
 
 import clip_posts as C  # noqa: E402
 import clip_progress as P  # noqa: E402
@@ -95,6 +96,8 @@ class ClipPostsTest(unittest.TestCase):
         c = dict(clip("a", "en"), hooks=[{"id": "a", "lead": "A", "benefit": ""}, {"id": "b", "lead": "B", "benefit": ""}])
         data = {"clips": {"a/en": c}, "schedule": [{"date": "2026-10-15", "slot": 1, "channel": "telegram", "clip": "a/en"}]}
         with mock.patch.object(C, "load", return_value=data), mock.patch.object(C.CLIPS.__class__, "exists", return_value=True), \
+                mock.patch.object(C.post_qa, "store_lookup", return_value={"trackName": "a name", "description": "", "price": 0}), \
+                mock.patch.object(C.post_qa, "url_status", return_value=200), \
                 mock.patch.object(C, "post_telegram", return_value={"id": 1, "link": None}) as post, \
                 mock.patch.object(P, "record_post") as rec, mock.patch.object(sys, "argv", ["x", "telegram", "--slot", "1",
                                                                                            "--date", "2026-10-15"]):
@@ -158,6 +161,133 @@ class ClipPostsTest(unittest.TestCase):
         self.assertNotIn("https://", calls[0]["text"])
         self.assertEqual(calls[2]["reply_to_id"], "id2")
         self.assertIn("ct=h7_a_en_th", calls[2]["text"])
+
+
+def real(locale="en", **kw):
+    c = dict(clip("u", locale), name="UsageNow: AI Usage Tracker", search="UsageNow", keyline="",
+             hooks=[{"id": "a", "lead": "Hit your AI limit mid-task again?", "benefit": "See what's left"}])
+    c.update(kw)
+    return c
+
+
+class PostQaTest(unittest.TestCase):
+    """The pre-post QA gate (post_qa.py) refuses broken or non-compliant posts."""
+
+    def test_wrong_locale_text_is_refused(self):
+        import post_qa as Q
+        self.assertTrue(Q.locale_problems("Wazige foto?\nSearch “Unblurry” on the App Store", "nl"))
+        self.assertEqual(Q.locale_problems("Wazige foto?\nZoek op ‘Unblurry’ in de App Store\nLink in bio", "nl"), [])
+        self.assertTrue(Q.locale_problems("写真をくっきり", "ja") == [])
+        self.assertTrue(Q.locale_problems("照片变清晰", "ja"))           # no kana: not Japanese
+        self.assertTrue(Q.locale_problems("照片变清晰 这个", "zh-Hant"))  # Simplified characters
+        self.assertTrue(Q.locale_problems("사진 선명하게 写真", "ko") == [])
+        self.assertTrue(Q.locale_problems("Blurry? 사진", "en"))
+        self.assertEqual(Q.locale_problems("Blurry?\n#模糊", "en", allowed=("Unblurry 照片",)), [])  # tags excluded
+
+    def test_banned_and_unsupported_claims_are_refused(self):
+        import post_qa as Q
+        self.assertTrue(Q.claim_problems("The best to-do app"))
+        self.assertTrue(Q.claim_problems("最好用的記帳"))
+        self.assertTrue(Q.claim_problems("Better than CamScanner"))
+        self.assertEqual(Q.claim_problems("Claude, Codex & Copilot limits"), [])
+        self.assertEqual(Q.claim_problems("Track ChatGPT limits", facts="Tracks ChatGPT and Claude"), [])
+        self.assertTrue(Q.claim_problems("Free, no ads", facts="A calm calculator"))
+        self.assertEqual(Q.claim_problems("Free download", price=0), [])
+        self.assertEqual(Q.claim_problems("零廣告，內容先看再處理", facts="零廣告，內容先看再處理"), [])
+        self.assertEqual(Q.claim_problems("Photo cleaner frees storage; free up space"), [])
+        self.assertEqual(Q.claim_problems("Best Planner", allowed=("Best Planner",)), [])  # the store name itself
+
+    def test_counts_must_be_on_the_product_page(self):
+        import post_qa as Q
+        self.assertTrue(Q.count_problems(["Race the clock for 60 seconds"], "46 question types"))
+        self.assertEqual(Q.count_problems(["100 themes built in"], "One hundred themes are built in"), [])
+        self.assertEqual(Q.count_problems(["內建一百款主題", "35 種尺寸"], "35 種證件照尺寸"), [])
+
+    def test_length_tags_and_leftovers(self):
+        import post_qa as Q
+        self.assertTrue(Q.text_problems("x" * 501, "en", "threads"))
+        self.assertTrue(Q.text_problems("Hook\n#a #b", "en", "threads"))
+        self.assertEqual(Q.text_problems("Hook\n#a #b", "en", "telegram"), [])
+        self.assertTrue(Q.text_problems("Hook\nSearch {s}", "en", "telegram"))
+        self.assertTrue(Q.text_problems("Hook with *accent*", "en", "telegram"))
+        self.assertEqual(Q.text_problems("", "en", "telegram"), ["caption is empty"])
+
+    def test_missing_fields_and_dead_links_are_refused(self):
+        import post_qa as Q
+        c = real()
+        self.assertEqual(Q.clip_problems(c, "telegram", C.caption(c, "telegram"), online=False), [])
+        self.assertIn("clip has no url", Q.clip_problems(dict(c, url=""), "telegram", C.caption(c, "telegram"), online=False))
+        self.assertIn("clip has no hook line", Q.clip_problems(dict(c, hooks=[], hook=""), "telegram", "x\ny", online=False))
+        with mock.patch.object(Q, "store_lookup", return_value={}), mock.patch.object(Q, "url_status", return_value=200):
+            self.assertTrue(any("dead store link" in p for p in Q.link_problems(c["store_url"], c["url"])))
+        with mock.patch.object(Q, "store_lookup", return_value={"trackName": "x"}), \
+                mock.patch.object(Q, "url_status", return_value=404):
+            self.assertTrue(any("404" in p for p in Q.link_problems(c["store_url"], c["url"])))
+        with mock.patch.object(Q, "store_lookup", return_value=None), mock.patch.object(Q, "url_status", return_value=None):
+            self.assertEqual(Q.link_problems(c["store_url"], c["url"]), [])  # network trouble never blocks
+
+    def test_a_refused_variant_falls_back_to_one_that_passes(self):
+        c = real(hooks=[{"id": "a", "lead": "Hit your AI limit mid-task again?", "benefit": ""},
+                        {"id": "b", "lead": "The best AI tracker", "benefit": ""}])
+        v, problems = C.qa_variant(c, "instagram", C.SC.variants(c)[1], online=False)
+        self.assertEqual((v["id"], problems), ("a", []))
+        bad = real(hooks=[{"id": "a", "lead": "The best tracker", "benefit": ""}])
+        v, problems = C.qa_variant(bad, "instagram", C.SC.variants(bad)[0], online=False)
+        self.assertIsNone(v)
+        self.assertTrue(problems)
+
+    def test_refused_clip_is_not_posted(self):
+        bad = real(hooks=[{"id": "a", "lead": "The best tracker", "benefit": ""}])
+        data = {"clips": {"u/en": bad}, "schedule": [{"date": "2026-10-15", "slot": 1, "channel": "telegram", "clip": "u/en"}]}
+        with mock.patch.object(C, "load", return_value=data), mock.patch.object(C.CLIPS.__class__, "exists", return_value=True), \
+                mock.patch.object(C, "post_telegram") as post, mock.patch.object(P, "record_post") as rec, \
+                mock.patch.object(sys, "argv", ["x", "telegram", "--slot", "1", "--date", "2026-10-15"]), \
+                mock.patch("sys.stdout"):
+            self.assertEqual(C.main(), 1)
+        post.assert_not_called()
+        rec.assert_not_called()
+
+    # The posting workflows run this file right before they post; there one broken clip must only stop
+    # itself (clip_posts.main gates it), not the whole day, so the full-feed audit runs locally / in review.
+    @unittest.skipIf(os.environ.get("GITHUB_ACTIONS"), "per-clip gate in clip_posts.main covers posting runs")
+    def test_every_planned_clip_caption_passes_the_gate(self):
+        import post_qa as Q
+        data = C.load()
+        for key, c in data["clips"].items():
+            for channel in ("telegram", "instagram", "threads"):
+                for v in C.SC.variants(c):
+                    self.assertEqual(Q.clip_problems(c, channel, C.caption(c, channel, v), online=False), [],
+                                     f"{key} {channel} {v['id']}")
+
+
+class CaptionQualityTest(unittest.TestCase):
+    def test_every_clip_locale_gets_native_template_lines(self):
+        for loc in ("nl", "da", "nb", "cs", "el", "ar", "pl", "zh-Hans"):
+            self.assertIsNot(C.text_for(loc), C.TEXT["en"], loc)
+            self.assertIn(loc, C.PLAY_LINE)
+        nl = C.caption(dict(clip("u", "nl"), hook="Wazige foto?"), "instagram")
+        self.assertIn("in de App Store", nl)
+        self.assertNotIn("on the App Store", nl)
+
+    def test_keyline_the_name_already_says_is_not_repeated(self):
+        c = dict(clip("mochi", "zh-Hant"), name="Mochi: 可愛待辦清單", search="Mochi 可愛待辦清單", keyline="可愛待辦清單",
+                 hooks=[{"id": "a", "lead": "待辦清單 也可以這麼可愛", "benefit": "點一下就完成"}])
+        lines = C.caption(c, "telegram").splitlines()
+        self.assertNotIn("可愛待辦清單", lines)
+        self.assertIn("Mochi: 可愛待辦清單", lines)
+
+    def test_no_space_after_full_width_punctuation(self):
+        c = dict(clip("u", "zh-Hant"), hooks=[{"id": "a", "lead": "照片拍糊了？ 秒變清晰", "benefit": "挑一張、 模糊照片"}])
+        self.assertTrue(C.caption(c, "telegram").startswith("照片拍糊了？秒變清晰\n挑一張、模糊照片"))
+
+    def test_reels_cover_is_the_settled_hook_frame(self):
+        sent = []
+        with mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t"}), \
+                mock.patch.object(C, "_get", side_effect=[{}, {"user_id": "1"}, {"status_code": "FINISHED"}, {"permalink": "p"}]), \
+                mock.patch.object(C, "_post", side_effect=lambda u, f, timeout=60: sent.append(f) or {"id": "m"}):
+            C.post_instagram(real())
+        self.assertEqual(sent[0]["thumb_offset"], str(C.COVER_MS))
+        self.assertLess(C.COVER_MS, 1000)  # inside beat 1 (>= 1.5s), before the first cut
 
 
 class ClipProgressTest(unittest.TestCase):

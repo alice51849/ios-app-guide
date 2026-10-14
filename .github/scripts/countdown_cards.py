@@ -72,6 +72,81 @@ TEXT = {
 }
 
 
+WHITE = (255, 255, 255)
+MIN_TEXT = 34  # px on the 1080-wide card: ~12pt once the feed shows it at phone width
+AA = 4.5  # WCAG AA contrast for normal text
+
+
+def _lum(rgb):
+    def ch(c):
+        c = c / 255
+        return c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4
+    r, g, b = (ch(c) for c in rgb)
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b
+
+
+def contrast(a, b):
+    """WCAG contrast ratio of two RGB colours (1-21)."""
+    la, lb = sorted((_lum(a), _lum(b)), reverse=True)
+    return (la + 0.05) / (lb + 0.05)
+
+
+def legible(bg, ink=WHITE, ratio=AA):
+    """The background colour, darkened just enough (same hue) that `ink` text on it reaches `ratio`."""
+    bg = tuple(int(c) for c in bg)
+    k = 1.0
+    while contrast(ink, tuple(int(c * k) for c in bg)) < ratio and k > 0:
+        k -= 0.005
+    return tuple(int(c * max(k, 0)) for c in bg)
+
+
+def gradient(draw, w, h, top, bottom):
+    """Vertical card gradient whose every row keeps white text at AA contrast."""
+    for y in range(h):
+        k = y / h
+        draw.line([(0, y), (w, y)], fill=legible(tuple(top[i] + (bottom[i] - top[i]) * k for i in range(3))))
+
+
+def wrap(draw, text, font_for, size, max_w, min_size=MIN_TEXT):
+    """(lines, size): shrink to `min_size` at most, then wrap (by word, or by character for CJK)."""
+    while size > min_size and draw.textlength(text, font=font_for(size)) > max_w:
+        size -= 2
+    font = font_for(size)
+    if draw.textlength(text, font=font) <= max_w:
+        return [text], size
+    # CJK sentence: break after the punctuation nearest the middle when both halves fit (no orphaned tail).
+    cuts = [i + 1 for i, ch in enumerate(text[:-1]) if ch in "。、，．！？；：,"]
+    for i in sorted(cuts, key=lambda i: abs(i - len(text) / 2)):
+        halves = [text[:i].strip(), text[i:].strip()]
+        if all(draw.textlength(h, font=font) <= max_w for h in halves):
+            return halves, size
+    units = text.split(" ") if " " in text.strip() else list(text)
+    sep = " " if " " in text.strip() else ""
+    lines, line = [], ""
+    for u in units:
+        trial = (line + sep + u) if line else u
+        if line and draw.textlength(trial, font=font) > max_w:
+            lines.append(line)
+            line = u
+        else:
+            line = trial
+    lines.append(line)
+    return lines, size
+
+
+def footer_band(img, top_rgb_bottom, h=330):
+    """Fade the phone's lower part into a darkened band so the store pill and the line under it read."""
+    from PIL import Image, ImageDraw
+    W, H = img.size
+    band = legible(top_rgb_bottom, WHITE, 7.0)
+    fade = Image.new("RGBA", (W, h), (0, 0, 0, 0))
+    fd = ImageDraw.Draw(fade)
+    for i in range(h):
+        fd.line([(0, i), (W, i)], fill=band + (int(255 * min(1, i / 200)),))
+    img.paste(fade, (0, H - h), fade)
+    return band
+
+
 def today_tw():
     return dt.datetime.now(TW).date()
 
@@ -111,10 +186,7 @@ def make(out, day):
     W, H = 1080, 1350
     top, bottom, accent = (tuple(int(c[i:i + 2], 16) for i in (1, 3, 5)) for c in e["colors"])
     img = Image.new("RGB", (W, H))
-    px = ImageDraw.Draw(img)
-    for y in range(H):
-        k = y / H
-        px.line([(0, y), (W, y)], fill=tuple(int(top[i] + (bottom[i] - top[i]) * k) for i in range(3)))
+    gradient(ImageDraw.Draw(img), W, H, top, bottom)
     draw = ImageDraw.Draw(img)
     idx = FONT_INDEX.get(e["locale"], 0)
     f = lambda size: ImageFont.truetype(FONT, size, index=idx)
@@ -151,23 +223,19 @@ def make(out, day):
     top_y = 640
     img.paste(shadow, ((W - pw) // 2 - 40, top_y - 40), shadow)
     img.paste(phone, ((W - pw) // 2, top_y), phone)
-    # Fade the phone's lower part into the background so the store pill reads.
-    fade = Image.new("RGBA", (W, 330), (0, 0, 0, 0))
-    fd = ImageDraw.Draw(fade)
-    for i in range(330):
-        a = int(255 * min(1, i / 200))
-        fd.line([(0, i), (W, i)], fill=bottom + (a,))
-    img.paste(fade, (0, H - 330), fade)
+    # Fade the phone's lower part into a darkened band so the store pill and the brand line read.
+    footer_band(img, bottom)
     draw = ImageDraw.Draw(img)
     draw.rounded_rectangle([90, 1160, W - 90, 1260], radius=50, fill=(255, 255, 255))
     store = t["both"] if play_store_url(APP_ID, "cd") else t["search"]
-    font = f(38)
-    size = 38
-    while draw.textlength(store, font=font) > W - 240:
+    font = f(40)
+    size = 40
+    while draw.textlength(store, font=font) > W - 240 and size > MIN_TEXT - 4:
         size -= 2
         font = f(size)
-    draw.text(((W - draw.textlength(store, font=font)) / 2, 1210 - size * 0.62), store, font=font, fill=top)
-    center(t["by"], 1280, 32, (255, 255, 255))
+    draw.text(((W - draw.textlength(store, font=font)) / 2, 1210 - size * 0.62), store, font=font,
+              fill=legible(top, WHITE) if contrast(top, WHITE) < AA else top)
+    center(t["by"], 1278, 36, (255, 255, 255))
     img.save(out, "JPEG", quality=90)
     meta = {"event": e["id"], "locale": e["locale"], "days": n, "date": day.isoformat(),
             "caption": caption(e, n, day)}
@@ -270,12 +338,26 @@ def post_threads(url, meta, e):
     threads_image(url, meta["caption"], links)
 
 
-def post_instagram(url, meta):
+def instagram_text(meta):
     import search_caption as SC
     text = meta["caption"] + "\n" + {"ko": "링크는 프로필에", "zh-Hant": "下載連結在個人檔案", "ja": "リンクはプロフィールから"}.get(meta["locale"], "Link in bio")
     tags = SC.card_tags("countdaysnow", meta["locale"])  # keyword hashtags from the planner's seo table
     if tags:
         text += "\n\n" + " ".join(tags)
+    return text
+
+
+def qa_problems(meta, e, channel, image=None, online=True):
+    """Pre-post QA (post_qa.py): the exact text this channel gets, the image, the live store link."""
+    import post_qa
+    text = instagram_text(meta) if channel == "instagram" else meta["caption"]
+    return post_qa.card_problems(text, e["locale"], channel, store_url=store_url(e, "qa"), name="CountDaysNow",
+                                 image=image, online=online)
+
+
+def post_instagram(url, meta):
+    import search_caption as SC
+    text = instagram_text(meta)
     instagram_image(url, text, alt=SC.card_alt("CountDaysNow", meta["caption"], "countdaysnow", meta["locale"]))
 
 
@@ -302,6 +384,9 @@ def main():
                      ("instagram", lambda: post_instagram(args.url, meta))):
         if args.only and name != args.only:
             continue
+        import post_qa
+        if not post_qa.gate(qa_problems(meta, e, name, image=args.card), f"countdown {name}"):
+            continue  # a broken card or caption never goes out
         try:
             fn()
         except Exception as exc:  # one channel failing never blocks the others

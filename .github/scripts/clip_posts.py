@@ -33,6 +33,7 @@ import urllib.request
 from pathlib import Path
 
 import clip_progress
+import post_qa
 import search_caption as SC
 from social_post_common import play_store_url
 
@@ -52,6 +53,14 @@ TEXT = {
     "vi": {"search": "Tìm “{s}” trên App Store", "bio": "Link ở bio", "button": "Tải trên App Store"},
     "th": {"search": "ค้นหา “{s}” ใน App Store", "bio": "ลิงก์อยู่ในโปรไฟล์", "button": "ดาวน์โหลดใน App Store"},
     "pt-BR": {"search": "Pesquise “{s}” na App Store", "bio": "Link na bio", "button": "Baixar na App Store"},
+    "zh-Hans": {"search": "在 App Store 搜索“{s}”", "bio": "下载链接在主页简介", "button": "在 App Store 下载"},
+    "cs": {"search": "Vyhledejte „{s}“ v App Storu", "bio": "Odkaz najdete v profilu", "button": "Stáhnout z App Storu"},
+    "pl": {"search": "Wyszukaj „{s}” w App Store", "bio": "Link w bio", "button": "Pobierz z App Store"},
+    "nl": {"search": "Zoek op ‘{s}’ in de App Store", "bio": "Link in bio", "button": "Download in de App Store"},
+    "da": {"search": "Søg efter “{s}” i App Store", "bio": "Link i bio", "button": "Hent i App Store"},
+    "nb": {"search": "Søk etter «{s}» i App Store", "bio": "Lenke i bio", "button": "Last ned i App Store"},
+    "el": {"search": "Αναζητήστε «{s}» στο App Store", "bio": "Σύνδεσμος στο προφίλ", "button": "Λήψη από το App Store"},
+    "ar": {"search": "ابحث عن «{s}» في App Store", "bio": "الرابط في الملف الشخصي", "button": "حمّله من App Store"},
 }
 
 
@@ -83,7 +92,10 @@ def with_campaign(url, channel):
 PLAY_LINE = {"en": "Also on Google Play", "zh-Hant": "Android 版在 Google Play", "ja": "AndroidはGoogle Playで",
              "ko": "Android는 Google Play에서", "de": "Auch bei Google Play", "fr": "Aussi sur Google Play",
              "es": "También en Google Play", "pt-BR": "Também no Google Play",
-             "id": "Juga ada di Google Play", "vi": "Có cả trên Google Play", "th": "มีบน Google Play ด้วย"}
+             "id": "Juga ada di Google Play", "vi": "Có cả trên Google Play", "th": "มีบน Google Play ด้วย",
+             "zh-Hans": "安卓版在 Google Play", "cs": "Také na Google Play", "pl": "Także w Google Play",
+             "nl": "Ook op Google Play", "da": "Også på Google Play", "nb": "Også på Google Play",
+             "el": "Και στο Google Play", "ar": "متوفر أيضًا على Google Play"}
 
 
 def ios_id(clip):
@@ -103,6 +115,7 @@ def caption(clip, channel, variant=None):
     t = text_for(clip["locale"])
     lines = SC.body(clip, variant or SC.variants(clip)[0])
     lines += [clip["name"], t["search"].format(s=clip["search"])]
+    lines = SC.dedupe(lines)  # a keyline the app name already says ("可愛待辦清單" / "Mochi: 可愛待辦清單") goes
     if play_store_url(ios_id(clip), "h7"):
         lines.append(PLAY_LINE.get(clip["locale"]) or PLAY_LINE.get(clip["locale"].split("-")[0]) or PLAY_LINE["en"])
     if channel == "instagram":
@@ -169,6 +182,9 @@ def post_instagram(clip, variant=None, wait=5, tries=60):
         "video_url": clip["url"],
         "caption": caption(clip, "instagram", variant),  # Reels take no alt_text (image posts only)
         "share_to_feed": "true",
+        # Cover = the hook frame once its slam has settled (frame 9), before the first cut: the pain point,
+        # full size, inside the 3:4 profile-grid crop.
+        "thumb_offset": str(COVER_MS),
         "access_token": token,
     })["id"]
     for _ in range(tries):
@@ -190,6 +206,7 @@ def post_instagram(clip, variant=None, wait=5, tries=60):
 
 
 THREADS = "https://graph.threads.net/v1.0"
+COVER_MS = 300  # Reels cover frame (ms): hook settled (its slam ends at frame 7), phone already in view
 
 
 def post_threads(clip, variant=None, wait=5, tries=60):
@@ -236,6 +253,24 @@ def post_threads(clip, variant=None, wait=5, tries=60):
     return {"id": media, "link": link}
 
 
+def qa_variant(clip, channel, preferred, online=True):
+    """(variant, problems): the preferred hook variant when its caption passes the pre-post QA gate
+    (post_qa.py), else the first variant that does; (None, problems) when none may go out."""
+    hooks = SC.variants(clip)
+    order = [preferred] + [h for h in hooks if h is not preferred and h.get("id") != preferred.get("id")]
+    first = None
+    for v in order:
+        problems = post_qa.clip_problems(clip, channel, caption(clip, channel, v), online=online)
+        if not problems:
+            if v is not preferred:
+                print(f"clip: hook {preferred.get('id')} refused by QA, posting hook {v.get('id')} instead")
+            return v, []
+        first = first or problems
+        if any("dead store link" in p or "media URL" in p or p.startswith("clip has no") for p in problems):
+            break  # the asset itself is broken: no caption can fix it
+    return None, first
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("channel", choices=["telegram", "instagram", "threads", "preview"])
@@ -251,7 +286,10 @@ def main():
     if not clip:
         print(f"clip: nothing scheduled for {channel} on {day} slot {args.slot}")
         return 0
-    variant = SC.choose(clip, channel, day)
+    variant, problems = qa_variant(clip, channel, SC.choose(clip, channel, day), online=args.channel != "preview")
+    if variant is None:
+        post_qa.gate(problems, f"clip {clip['app']}/{clip['locale']} {channel}")
+        return 1
     print(f"clip: {clip['app']} {clip['locale']} hook {variant['id']} {clip['url']}")
     if args.channel == "preview":
         print(caption(clip, "instagram", variant))

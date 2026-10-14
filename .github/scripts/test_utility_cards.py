@@ -10,6 +10,7 @@ from pathlib import Path
 from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+os.environ.setdefault("POST_QA_OFFLINE", "1")  # the pre-post QA gate makes no network calls in tests
 
 import clip_progress as P  # noqa: E402
 import utility_cards as U  # noqa: E402
@@ -123,6 +124,7 @@ class PostTest(unittest.TestCase):
                     mock.patch.object(U, "post_telegram", return_value="https://t.me/x/1"), \
                     mock.patch.object(U, "post_instagram", return_value=None), \
                     mock.patch.object(U, "post_threads", side_effect=RuntimeError("down")), \
+                    mock.patch.object(U, "qa_problems", return_value=[]), \
                     mock.patch.object(P, "record_post") as record:
                 self.assertEqual(U.main(), 0)
         record.assert_called_once_with("telegram", "utility/word/aim990/invoice/zh-Hant", "https://t.me/x/1")
@@ -166,6 +168,65 @@ class MakeTest(unittest.TestCase):
                 self.assertTrue(out.exists())
                 self.assertEqual(json.loads(out.with_suffix(".json").read_text(encoding="utf-8"))["key"], meta["key"])
                 self.assertEqual(U.card_from_meta(meta)["item"]["id"], meta["item"])
+
+
+class LegibilityTest(unittest.TestCase):
+    """Card text keeps WCAG AA contrast and a phone-readable size (utility and countdown cards)."""
+
+    def palettes(self):
+        cd = U.cd
+        return [a["colors"] for a in U.APPS.values()] + [e["colors"] for e in cd.EVENTS]
+
+    def test_white_text_reaches_aa_on_every_gradient_row_and_the_footer(self):
+        cd = U.cd
+        for top, bottom, accent in ((U._rgb(c) for c in p) for p in self.palettes()):
+            for k in (0, 0.25, 0.5, 0.75, 1):
+                row = cd.legible(tuple(top[i] + (bottom[i] - top[i]) * k for i in range(3)))
+                self.assertGreaterEqual(cd.contrast(cd.WHITE, row), cd.AA, (top, bottom, k))
+                if k <= 0.35:  # accent text (headline, count, meaning) only sits in the top third
+                    self.assertGreaterEqual(cd.contrast(accent, row), 3.0, (accent, row))  # large text
+            self.assertGreaterEqual(cd.contrast(cd.WHITE, cd.legible(bottom, cd.WHITE, 7.0)), 7.0)
+            pill_ink = top if cd.contrast(top, cd.WHITE) >= cd.AA else cd.legible(top)
+            self.assertGreaterEqual(cd.contrast(pill_ink, cd.WHITE), cd.AA)  # store line on the white pill
+
+    def test_the_old_pink_gradient_failed_and_is_now_darkened(self):
+        cd = U.cd
+        pink = U._rgb("#e58fb6")  # Lumi注音星球 bottom colour: white on it was ~2.4:1
+        self.assertLess(cd.contrast(cd.WHITE, pink), cd.AA)
+        self.assertGreaterEqual(cd.contrast(cd.WHITE, cd.legible(pink)), cd.AA)
+
+    def test_long_lines_wrap_at_punctuation_instead_of_shrinking(self):
+        from PIL import Image, ImageDraw, ImageFont
+        cd = U.cd
+        draw = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+        font = lambda s: ImageFont.truetype(cd.FONT, s, index=cd.FONT_INDEX["ja"])  # noqa: E731
+        lines, size = cd.wrap(draw, U.TEXT["ja"]["check"], font, 36, 960)
+        self.assertEqual(len(lines), 2)
+        self.assertGreaterEqual(size, cd.MIN_TEXT)
+        self.assertTrue(lines[0].endswith("。"))
+        self.assertGreaterEqual(cd.MIN_TEXT, 34)
+
+    def test_every_card_of_a_full_rotation_passes_the_qa_gate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            for i in range(12):
+                day = DAY0 + dt.timedelta(days=i)
+                out = Path(tmp) / f"c{i}.jpg"
+                meta = U.make(out, day)
+                card = U.card_from_meta(meta)
+                for ch in ("telegram", "instagram", "threads"):
+                    self.assertEqual(U.qa_problems(meta, card, ch, image=out, online=False), [], f"{meta['key']} {ch}")
+            for d in ("2026-10-15", "2026-11-19", "2026-12-20", "2027-01-20", "2027-02-01"):
+                out = Path(tmp) / f"cd{d}.jpg"
+                meta = U.cd.make(out, dt.date.fromisoformat(d))
+                e = next(x for x in U.cd.EVENTS if x["id"] == meta["event"])
+                for ch in ("telegram", "instagram", "threads"):
+                    self.assertEqual(U.cd.qa_problems(meta, e, ch, image=out, online=False), [], f"{d} {ch}")
+
+    def test_a_missing_card_image_is_refused(self):
+        meta = {"type": "word", "item": "invoice", "locale": "en", "app": "aim990", "key": "k",
+                "caption": "Business English word of the day: invoice"}
+        card = U.card_from_meta(meta)
+        self.assertTrue(any("image" in p for p in U.qa_problems(meta, card, "telegram", image="/no/card.jpg", online=False)))
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T16:09:17Z",
+  "updated_at": "2026-10-14T16:26:33Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -11,9 +11,38 @@
       "name": "UsageNow: AI Usage Tracker",
       "search": "UsageNow",
       "tags": [
-        "#productivity",
-        "#iphoneapps",
-        "#appstore"
+        "#AIUsageTracker",
+        "#Developer",
+        "#Coding",
+        "#Quota",
+        "#Reset",
+        "#UsageNow"
+      ],
+      "keywords": [
+        "developer",
+        "coding",
+        "quota",
+        "reset",
+        "countdown",
+        "agent"
+      ],
+      "keyline": "Claude, Codex & Copilot Limits",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Hit your AI limit mid-task again?",
+          "benefit": "See what's left and when it resets"
+        },
+        {
+          "id": "b",
+          "lead": "See what's left and when it resets",
+          "benefit": "Alerts before you run out"
+        },
+        {
+          "id": "c",
+          "lead": "AI limits right on your Home Screen",
+          "benefit": "See what's left and when it resets"
+        }
       ]
     },
     "claudeusagemini/zh-Hant": {
@@ -25,9 +54,38 @@
       "name": "UsageNow：AI 用量與額度追蹤",
       "search": "UsageNow",
       "tags": [
-        "#效率工具",
-        "#App推薦",
-        "#iPhone"
+        "#AI用量與額度追蹤",
+        "#開發者",
+        "#工程師",
+        "#使用量",
+        "#限額",
+        "#UsageNow"
+      ],
+      "keywords": [
+        "開發者",
+        "工程師",
+        "使用量",
+        "限額",
+        "配額",
+        "限制"
+      ],
+      "keyline": "Claude、Codex、Copilot 重置倒數",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "寫到一半 AI 額度又爆了？",
+          "benefit": "剩多少、何時重置 一眼看清"
+        },
+        {
+          "id": "b",
+          "lead": "剩多少、何時重置 一眼看清",
+          "benefit": "用完之前 先提醒你"
+        },
+        {
+          "id": "c",
+          "lead": "AI 額度 主畫面直接看",
+          "benefit": "剩多少、何時重置 一眼看清"
+        }
       ]
     },
     "claudeusagemini/ja": {
@@ -39,9 +97,38 @@
       "name": "UsageNow：AI使用量トラッカー",
       "search": "UsageNow",
       "tags": [
-        "#効率化",
-        "#iPhoneアプリ",
-        "#アプリ紹介"
+        "#AI使用量トラッカー",
+        "#開発者",
+        "#エンジニア",
+        "#制限",
+        "#上限",
+        "#UsageNow"
+      ],
+      "keywords": [
+        "開発者",
+        "エンジニア",
+        "制限",
+        "上限",
+        "トークン",
+        "ウィジェット"
+      ],
+      "keyline": "AI使用量トラッカー",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "作業の途中で またAIの上限？",
+          "benefit": "残りとリセット時刻が ひと目でわかる"
+        },
+        {
+          "id": "b",
+          "lead": "残りとリセット時刻が ひと目でわかる",
+          "benefit": "使い切る前に アラート"
+        },
+        {
+          "id": "c",
+          "lead": "AIの残りを ホーム画面で",
+          "benefit": "残りとリセット時刻が ひと目でわかる"
+        }
       ]
     },
     "claudeusagemini/ko": {
@@ -53,9 +140,38 @@
       "name": "UsageNow: AI 사용량 트래커",
       "search": "UsageNow",
       "tags": [
-        "#생산성",
-        "#앱추천",
-        "#아이폰어플"
+        "#AI사용량트래커",
+        "#개발자",
+        "#토큰",
+        "#할당량",
+        "#리셋",
+        "#UsageNow"
+      ],
+      "keywords": [
+        "개발자",
+        "토큰",
+        "할당량",
+        "리셋",
+        "초기화",
+        "남은양"
+      ],
+      "keyline": "Claude·Codex·Copilot·Gemini 한도",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "작업 중에 또 AI 한도 초과?",
+          "benefit": "남은 양과 초기화 시간 한눈에"
+        },
+        {
+          "id": "b",
+          "lead": "남은 양과 초기화 시간 한눈에",
+          "benefit": "다 쓰기 전에 알림"
+        },
+        {
+          "id": "c",
+          "lead": "AI 남은 사용량 홈 화면에서 바로",
+          "benefit": "남은 양과 초기화 시간 한눈에"
+        }
       ]
     },
     "mochi/en": {
@@ -67,9 +183,38 @@
       "name": "Mochi: Cute Checklist",
       "search": "Mochi Cute Checklist",
       "tags": [
-        "#productivity",
-        "#iphoneapps",
-        "#appstore"
+        "#CuteChecklist",
+        "#Todo",
+        "#List",
+        "#Reminder",
+        "#Planner",
+        "#MochiCuteChecklist"
+      ],
+      "keywords": [
+        "todo",
+        "list",
+        "reminder",
+        "planner",
+        "notes",
+        "habits"
+      ],
+      "keyline": "Plan your day with cozy calm",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Your to-do list, but make it cute",
+          "benefit": "Tap to check it off"
+        },
+        {
+          "id": "b",
+          "lead": "Tap to check it off",
+          "benefit": "101 cute themes"
+        },
+        {
+          "id": "c",
+          "lead": "Right on your Home Screen",
+          "benefit": "Tap to check it off"
+        }
       ]
     },
     "mochi/zh-Hant": {
@@ -81,9 +226,38 @@
       "name": "Mochi: 可愛待辦清單",
       "search": "Mochi 可愛待辦清單",
       "tags": [
-        "#效率工具",
-        "#App推薦",
-        "#iPhone"
+        "#可愛待辦清單",
+        "#待辦",
+        "#任務清單",
+        "#日程",
+        "#提醒",
+        "#Mochi可愛待辦清單"
+      ],
+      "keywords": [
+        "待辦",
+        "任務清單",
+        "日程",
+        "提醒",
+        "備忘錄",
+        "小工具"
+      ],
+      "keyline": "可愛待辦清單",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "待辦清單 也可以這麼可愛",
+          "benefit": "點一下就完成"
+        },
+        {
+          "id": "b",
+          "lead": "點一下就完成",
+          "benefit": "101 款可愛主題"
+        },
+        {
+          "id": "c",
+          "lead": "直接放在主畫面",
+          "benefit": "點一下就完成"
+        }
       ]
     },
     "mochi/ja": {
@@ -95,9 +269,38 @@
       "name": "Mochi: かわいいToDo",
       "search": "Mochi かわいいToDo",
       "tags": [
-        "#効率化",
-        "#iPhoneアプリ",
-        "#アプリ紹介"
+        "#かわいいToDo",
+        "#タスク",
+        "#チェックリスト",
+        "#リマインダー",
+        "#予定",
+        "#MochiかわいいToDo"
+      ],
+      "keywords": [
+        "タスク",
+        "チェックリスト",
+        "リマインダー",
+        "予定",
+        "メモ",
+        "習慣"
+      ],
+      "keyline": "かわいいToDo",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "ToDoリストが こんなにかわいい",
+          "benefit": "タップで完了"
+        },
+        {
+          "id": "b",
+          "lead": "タップで完了",
+          "benefit": "かわいいテーマ101種"
+        },
+        {
+          "id": "c",
+          "lead": "ホーム画面でサッと確認",
+          "benefit": "タップで完了"
+        }
       ]
     },
     "mochi/ko": {
@@ -109,9 +312,38 @@
       "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
       "search": "Mochi 귀여운 할 일",
       "tags": [
-        "#생산성",
-        "#앱추천",
-        "#아이폰어플"
+        "#귀여운할일목록",
+        "#할일",
+        "#체크리스트",
+        "#알림",
+        "#플래너",
+        "#Mochi귀여운할일"
+      ],
+      "keywords": [
+        "할일",
+        "체크리스트",
+        "알림",
+        "플래너",
+        "메모",
+        "습관"
+      ],
+      "keyline": "귀여운 할 일 목록",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "할 일 목록이 이렇게 귀여워도 돼?",
+          "benefit": "톡 누르면 완료"
+        },
+        {
+          "id": "b",
+          "lead": "톡 누르면 완료",
+          "benefit": "귀여운 테마 101가지"
+        },
+        {
+          "id": "c",
+          "lead": "홈 화면에 바로",
+          "benefit": "톡 누르면 완료"
+        }
       ]
     },
     "mochi/pt-BR": {
@@ -123,9 +355,38 @@
       "name": "Mochi: Lista fofa",
       "search": "Mochi Lista fofa",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#ListaFofa",
+        "#Tarefas",
+        "#Lista",
+        "#Lembrete",
+        "#Planner",
+        "#MochiListaFofa"
+      ],
+      "keywords": [
+        "tarefas",
+        "lista",
+        "lembrete",
+        "planner",
+        "notas",
+        "hábitos"
+      ],
+      "keyline": "Lista fofa",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Sua lista de tarefas versão fofa",
+          "benefit": "Um toque e pronto"
+        },
+        {
+          "id": "b",
+          "lead": "Um toque e pronto",
+          "benefit": "101 temas fofos"
+        },
+        {
+          "id": "c",
+          "lead": "Direto na Tela de Início",
+          "benefit": "Um toque e pronto"
+        }
       ]
     },
     "mochi/de": {
@@ -137,9 +398,38 @@
       "name": "Mochi: Süße To-do-Liste",
       "search": "Mochi Süße To-do-Liste",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#SüßeTodoListe",
+        "#Aufgaben",
+        "#Liste",
+        "#Erinnerung",
+        "#Planer",
+        "#MochiSüßeTodoListe"
+      ],
+      "keywords": [
+        "aufgaben",
+        "liste",
+        "erinnerung",
+        "planer",
+        "notizen",
+        "gewohnheiten"
+      ],
+      "keyline": "Süße To-do-Liste",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Deine To-do-Liste, nur viel süßer",
+          "benefit": "Antippen und abhaken"
+        },
+        {
+          "id": "b",
+          "lead": "Antippen und abhaken",
+          "benefit": "101 süße Designs"
+        },
+        {
+          "id": "c",
+          "lead": "Direkt auf dem Home-Bildschirm",
+          "benefit": "Antippen und abhaken"
+        }
       ]
     },
     "countdaysnow/en": {
@@ -151,9 +441,38 @@
       "name": "CountDaysNow: Event Counter",
       "search": "CountDaysNow",
       "tags": [
-        "#productivity",
-        "#iphoneapps",
-        "#appstore"
+        "#EventCounter",
+        "#Since",
+        "#Lunar",
+        "#LockScreen",
+        "#Standby",
+        "#CountDaysNow"
+      ],
+      "keywords": [
+        "since",
+        "lunar",
+        "lock screen",
+        "standby",
+        "apple watch",
+        "birthday"
+      ],
+      "keyline": "Countdown Plan: Work Backwards",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "How long until Mom's birthday?",
+          "benefit": "Or count the days since"
+        },
+        {
+          "id": "b",
+          "lead": "Or count the days since",
+          "benefit": "Milestone alerts 7, 3 and 1 day before"
+        },
+        {
+          "id": "c",
+          "lead": "100 countdown skins",
+          "benefit": "Or count the days since"
+        }
       ]
     },
     "countdaysnow/zh-Hant": {
@@ -165,9 +484,38 @@
       "name": "CountDaysNow: Event Counter",
       "search": "CountDaysNow",
       "tags": [
-        "#效率工具",
-        "#App推薦",
-        "#iPhone"
+        "#倒數",
+        "#生日",
+        "#日期計算",
+        "#提醒",
+        "#農曆",
+        "#CountDaysNow"
+      ],
+      "keywords": [
+        "倒數",
+        "生日",
+        "日期計算",
+        "提醒",
+        "農曆",
+        "鎖定畫面"
+      ],
+      "keyline": "倒數 · 生日 · 日期計算",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "媽媽生日 還有幾天？",
+          "benefit": "已經過了幾天 也幫你數著"
+        },
+        {
+          "id": "b",
+          "lead": "已經過了幾天 也幫你數著",
+          "benefit": "前 7、3、1 天 提醒你"
+        },
+        {
+          "id": "c",
+          "lead": "100 款倒數外觀",
+          "benefit": "已經過了幾天 也幫你數著"
+        }
       ]
     },
     "countdaysnow/ja": {
@@ -179,9 +527,38 @@
       "name": "CountDaysNow: Event Counter",
       "search": "CountDaysNow",
       "tags": [
-        "#効率化",
-        "#iPhoneアプリ",
-        "#アプリ紹介"
+        "#ロック画面",
+        "#経過日数",
+        "#推し活",
+        "#受験",
+        "#買い切り",
+        "#CountDaysNow"
+      ],
+      "keywords": [
+        "ロック画面",
+        "経過日数",
+        "推し活",
+        "受験",
+        "買い切り",
+        "広告なし"
+      ],
+      "keyline": "ロック画面 · 経過日数 · 推し活",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "母の誕生日まで あと何日だっけ？",
+          "benefit": "あれから何日かも ひと目で"
+        },
+        {
+          "id": "b",
+          "lead": "あれから何日かも ひと目で",
+          "benefit": "7日・3日・1日前に お知らせ"
+        },
+        {
+          "id": "c",
+          "lead": "スキン100種類",
+          "benefit": "あれから何日かも ひと目で"
+        }
       ]
     },
     "countdaysnow/ko": {
@@ -193,9 +570,38 @@
       "name": "CountDaysNow: Event Counter",
       "search": "CountDaysNow",
       "tags": [
-        "#생산성",
-        "#앱추천",
-        "#아이폰어플"
+        "#카운트다운",
+        "#생일",
+        "#날짜계산",
+        "#알림",
+        "#잠금화면",
+        "#CountDaysNow"
+      ],
+      "keywords": [
+        "카운트다운",
+        "생일",
+        "날짜계산",
+        "알림",
+        "잠금화면",
+        "애플워치"
+      ],
+      "keyline": "카운트다운 · 생일 · 날짜계산",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "엄마 생신까지 며칠 남았더라?",
+          "benefit": "지난 날도 며칠째인지 한눈에"
+        },
+        {
+          "id": "b",
+          "lead": "지난 날도 며칠째인지 한눈에",
+          "benefit": "7일·3일·1일 전 알림"
+        },
+        {
+          "id": "c",
+          "lead": "스킨 100가지",
+          "benefit": "지난 날도 며칠째인지 한눈에"
+        }
       ]
     },
     "unblurry/en": {
@@ -207,9 +613,38 @@
       "name": "Unblurry Pro: Unblur & HD",
       "search": "Unblurry Pro",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#UnblurHD",
+        "#Unblur",
+        "#Deblur",
+        "#SharpenPhoto",
+        "#PhotoEnhancer",
+        "#UnblurryPro"
+      ],
+      "keywords": [
+        "unblur",
+        "deblur",
+        "sharpen photo",
+        "photo enhancer",
+        "fix blurry photo",
+        "clear photo"
+      ],
+      "keyline": "Unblur photos in HD",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Blurry photo? Make it crystal clear",
+          "benefit": "Pick a blurry shot"
+        },
+        {
+          "id": "b",
+          "lead": "Pick a blurry shot",
+          "benefit": "AI fixes it on-device"
+        },
+        {
+          "id": "c",
+          "lead": "Hold to see the before",
+          "benefit": "Pick a blurry shot"
+        }
       ]
     },
     "unblurry/zh-Hant": {
@@ -221,9 +656,38 @@
       "name": "Unblurry Pro：照片變清晰",
       "search": "Unblurry 照片變清晰",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#模糊變清晰",
+        "#去模糊",
+        "#照片變清晰",
+        "#模糊照片修復",
+        "#照片銳化",
+        "#Unblurry照片變清晰"
+      ],
+      "keywords": [
+        "去模糊",
+        "照片變清晰",
+        "模糊照片修復",
+        "照片銳化",
+        "照片增強",
+        "高畫質"
+      ],
+      "keyline": "模糊照片一鍵變HD",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "照片拍糊了？ 秒變清晰",
+          "benefit": "挑一張模糊照片"
+        },
+        {
+          "id": "b",
+          "lead": "挑一張模糊照片",
+          "benefit": "AI 修復 全在手機完成"
+        },
+        {
+          "id": "c",
+          "lead": "按住看原圖",
+          "benefit": "挑一張模糊照片"
+        }
       ]
     },
     "unblurry/ja": {
@@ -235,9 +699,38 @@
       "name": "Unblurry Pro：写真高画質化",
       "search": "Unblurry 写真高画質化",
       "tags": [
-        "#iPhoneアプリ",
-        "#アプリ紹介",
-        "#iOS"
+        "#ぼやけ補正",
+        "#ぼかし除去",
+        "#写真鮮明化",
+        "#写真をくっきり",
+        "#シャープ補正",
+        "#Unblurry写真高画質化"
+      ],
+      "keywords": [
+        "ぼかし除去",
+        "写真鮮明化",
+        "写真をくっきり",
+        "ぼやけ補正",
+        "シャープ補正",
+        "写真高画質化"
+      ],
+      "keyline": "写真のぼやけをHD補正",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "ぼやけた写真を くっきり補正",
+          "benefit": "ぼやけた1枚を 選んで"
+        },
+        {
+          "id": "b",
+          "lead": "ぼやけた1枚を 選んで",
+          "benefit": "AIが端末内で補正"
+        },
+        {
+          "id": "c",
+          "lead": "長押しで 元画像を確認",
+          "benefit": "ぼやけた1枚を 選んで"
+        }
       ]
     },
     "unblurry/ko": {
@@ -249,9 +742,38 @@
       "name": "Unblurry Pro: 사진 선명하게",
       "search": "Unblurry 사진 선명하게",
       "tags": [
-        "#앱추천",
-        "#아이폰어플",
-        "#iOS"
+        "#흐림보정",
+        "#사진선명하게",
+        "#흐림제거",
+        "#흐린사진보정",
+        "#사진샤픈",
+        "#Unblurry사진선명하게"
+      ],
+      "keywords": [
+        "사진 선명하게",
+        "흐림 제거",
+        "흐린 사진 보정",
+        "사진 샤픈",
+        "사진 보정",
+        "사진 화질 개선"
+      ],
+      "keyline": "흐린 사진을 HD로 선명하게",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "흐릿한 사진? 또렷하게 바꿔요",
+          "benefit": "흐린 사진을 골라요"
+        },
+        {
+          "id": "b",
+          "lead": "흐린 사진을 골라요",
+          "benefit": "AI가 기기 안에서 보정"
+        },
+        {
+          "id": "c",
+          "lead": "길게 눌러 원본 확인",
+          "benefit": "흐린 사진을 골라요"
+        }
       ]
     },
     "unblurry/da": {
@@ -263,9 +785,38 @@
       "name": "Unblurry Pro: Skarpe fotos",
       "search": "Unblurry Pro",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#SkarpeFotos",
+        "#GørFotoSkarpt",
+        "#SløretFoto",
+        "#FjernSløring",
+        "#ForbedrFoto",
+        "#UnblurryPro"
+      ],
+      "keywords": [
+        "gør foto skarpt",
+        "sløret foto",
+        "fjern sløring",
+        "forbedr foto",
+        "photo enhancer",
+        "HD foto"
+      ],
+      "keyline": "Skarpe fotos i HD",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Sløret foto? Gør det krystalklart",
+          "benefit": "Vælg et sløret foto"
+        },
+        {
+          "id": "b",
+          "lead": "Vælg et sløret foto",
+          "benefit": "AI ordner det på din iPhone"
+        },
+        {
+          "id": "c",
+          "lead": "Sammenlign før og efter",
+          "benefit": "Vælg et sløret foto"
+        }
       ]
     },
     "unblurry/nl": {
@@ -277,9 +828,38 @@
       "name": "Unblurry Pro: Scherpe foto",
       "search": "Unblurry Pro",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#ScherpeFoto",
+        "#FotoVerscherpen",
+        "#WazigeFoto",
+        "#FotoOnscherp",
+        "#FotoVerbeteren",
+        "#UnblurryPro"
+      ],
+      "keywords": [
+        "foto verscherpen",
+        "wazige foto",
+        "foto onscherp",
+        "foto verbeteren",
+        "photo enhancer",
+        "hd foto"
+      ],
+      "keyline": "Wazige fotos scherp in HD",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Wazige foto? Maak hem kristalhelder",
+          "benefit": "Kies een wazige foto"
+        },
+        {
+          "id": "b",
+          "lead": "Kies een wazige foto",
+          "benefit": "AI fikst het op je iPhone"
+        },
+        {
+          "id": "c",
+          "lead": "Vergelijk voor en na",
+          "benefit": "Kies een wazige foto"
+        }
       ]
     },
     "unblurry/nb": {
@@ -291,9 +871,38 @@
       "name": "Unblurry Pro: Skarpe foto",
       "search": "Unblurry Pro",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#SkarpeFoto",
+        "#GjørBildeSkarpt",
+        "#UklartBilde",
+        "#FjernUskarphet",
+        "#ForbedreBilde",
+        "#UnblurryPro"
+      ],
+      "keywords": [
+        "gjør bilde skarpt",
+        "uklart bilde",
+        "fjern uskarphet",
+        "forbedre bilde",
+        "photo enhancer",
+        "HD bilde"
+      ],
+      "keyline": "Skarpe bilder i HD",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Uskarpt bilde? Gjør det knivskarpt",
+          "benefit": "Velg et uskarpt bilde"
+        },
+        {
+          "id": "b",
+          "lead": "Velg et uskarpt bilde",
+          "benefit": "AI fikser det på enheten"
+        },
+        {
+          "id": "c",
+          "lead": "Hold for å se før",
+          "benefit": "Velg et uskarpt bilde"
+        }
       ]
     },
     "lumimission/en": {
@@ -305,9 +914,38 @@
       "name": "Lumi Mission Planet: Routines",
       "search": "Lumi Mission Planet",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#Routines",
+        "#ChoreChart",
+        "#StickerChart",
+        "#StarChart",
+        "#BehaviorChart",
+        "#LumiMissionPlanet"
+      ],
+      "keywords": [
+        "chore chart",
+        "sticker chart",
+        "star chart",
+        "behavior chart",
+        "responsibility chart",
+        "daily routine"
+      ],
+      "keyline": "Reward Chart & Kids Routines",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Brushing teeth: a daily battle?",
+          "benefit": "Kids tap, the buddy cheers"
+        },
+        {
+          "id": "b",
+          "lead": "Kids tap, the buddy cheers",
+          "benefit": "Finish a mission, get a victory card"
+        },
+        {
+          "id": "c",
+          "lead": "Collect reward stickers",
+          "benefit": "Kids tap, the buddy cheers"
+        }
       ]
     },
     "lumimission/zh-Hant": {
@@ -319,9 +957,38 @@
       "name": "Lumi 任務星球：生活習慣養成",
       "search": "Lumi 任務星球",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#生活習慣養成",
+        "#獎勵表",
+        "#貼紙表",
+        "#刷牙習慣",
+        "#睡前習慣",
+        "#Lumi任務星球"
+      ],
+      "keywords": [
+        "獎勵表",
+        "貼紙表",
+        "刷牙習慣",
+        "睡前習慣",
+        "收玩具",
+        "如廁訓練"
+      ],
+      "keyline": "生活習慣養成",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "叫孩子刷牙 天天像打仗？",
+          "benefit": "孩子點一下 夥伴就歡呼"
+        },
+        {
+          "id": "b",
+          "lead": "孩子點一下 夥伴就歡呼",
+          "benefit": "完成就有 勝利卡片"
+        },
+        {
+          "id": "c",
+          "lead": "收集成就貼紙",
+          "benefit": "孩子點一下 夥伴就歡呼"
+        }
       ]
     },
     "lumimission/ja": {
@@ -333,9 +1000,38 @@
       "name": "Lumi ミッション星 生活習慣",
       "search": "Lumi ミッション星",
       "tags": [
-        "#iPhoneアプリ",
-        "#アプリ紹介",
-        "#iOS"
+        "#ごほうび表",
+        "#お手伝い表",
+        "#習慣づけ",
+        "#歯磨き",
+        "#お片付け",
+        "#Lumiミッション星"
+      ],
+      "keywords": [
+        "ごほうび表",
+        "お手伝い表",
+        "習慣づけ",
+        "歯磨き",
+        "お片付け",
+        "トイレトレーニング"
+      ],
+      "keyline": "ごほうびシールで生活習慣",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "はみがきが 毎日バトル？",
+          "benefit": "タップすると 相棒が大よろこび"
+        },
+        {
+          "id": "b",
+          "lead": "タップすると 相棒が大よろこび",
+          "benefit": "できたら 記念カード"
+        },
+        {
+          "id": "c",
+          "lead": "ごほうびシールを あつめよう",
+          "benefit": "タップすると 相棒が大よろこび"
+        }
       ]
     },
     "lumimission/ko": {
@@ -347,9 +1043,38 @@
       "name": "Lumi 미션 별: 생활습관 루틴",
       "search": "Lumi 미션 별",
       "tags": [
-        "#앱추천",
-        "#아이폰어플",
-        "#iOS"
+        "#생활습관루틴",
+        "#칭찬스티커",
+        "#칭찬판",
+        "#스티커판",
+        "#습관형성",
+        "#Lumi미션별"
+      ],
+      "keywords": [
+        "칭찬스티커",
+        "칭찬판",
+        "스티커판",
+        "습관형성",
+        "양치질",
+        "배변훈련"
+      ],
+      "keyline": "보상스티커 생활습관 미션",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "양치할 때마다 전쟁인가요?",
+          "benefit": "톡 누르면 친구가 환호해요"
+        },
+        {
+          "id": "b",
+          "lead": "톡 누르면 친구가 환호해요",
+          "benefit": "해내면 기념 카드"
+        },
+        {
+          "id": "c",
+          "lead": "칭찬 스티커 모으기",
+          "benefit": "톡 누르면 친구가 환호해요"
+        }
       ]
     },
     "lumimission/el": {
@@ -361,9 +1086,81 @@
       "name": "Lumi Πλανήτης Αποστολών",
       "search": "Lumi Mission Planet",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#πίνακαςανταμοιβής",
+        "#πίνακαςαυτοκόλλητων",
+        "#πίνακαςαστεριών",
+        "#σύστημαανταμοιβής",
+        "#ρουτίναπαιδιού",
+        "#LumiMissionPlanet"
+      ],
+      "keywords": [
+        "πίνακας ανταμοιβής",
+        "πίνακας αυτοκόλλητων",
+        "πίνακας αστεριών",
+        "σύστημα ανταμοιβής",
+        "ρουτίνα παιδιού",
+        "ανατροφή"
+      ],
+      "keyline": "Πίνακας ανταμοιβής παιδιών",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Βούρτσισμα δοντιών: καθημερινή μάχη;",
+          "benefit": "Τα παιδιά πατούν, ο φίλος επευφημεί"
+        },
+        {
+          "id": "b",
+          "lead": "Τα παιδιά πατούν, ο φίλος επευφημεί",
+          "benefit": "Τέλος αποστολής, μια κάρτα νίκης"
+        },
+        {
+          "id": "c",
+          "lead": "Μαζέψτε αυτοκόλλητα επιβράβευσης",
+          "benefit": "Τα παιδιά πατούν, ο φίλος επευφημεί"
+        }
+      ]
+    },
+    "lumimission/ar": {
+      "app": "lumimission",
+      "locale": "ar",
+      "url": "https://files.catbox.moe/nmmecb.mp4",
+      "store_url": "https://apps.apple.com/sa/app/id6779750237?pt=118326163&ct=h7_lumimission_ar&mt=8",
+      "hook": "تنظيف الأسنان: معركة كل يوم؟",
+      "name": "Lumi كوكب المهام",
+      "search": "Lumi Mission Planet",
+      "tags": [
+        "#جدولالمكافآت",
+        "#جدولالنجوم",
+        "#ملصقاتالمكافأة",
+        "#لوحةالمكافآت",
+        "#روتينالطفل",
+        "#LumiMissionPlanet"
+      ],
+      "keywords": [
+        "جدول المكافآت",
+        "جدول النجوم",
+        "ملصقات المكافأة",
+        "لوحة المكافآت",
+        "روتين الطفل",
+        "روتين الصباح"
+      ],
+      "keyline": "جدول مكافآت للأطفال",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "تنظيف الأسنان: معركة كل يوم؟",
+          "benefit": "الطفل يضغط، والصديق يهتف"
+        },
+        {
+          "id": "b",
+          "lead": "الطفل يضغط، والصديق يهتف",
+          "benefit": "أنهِ المهمة، واحصل على بطاقة فوز"
+        },
+        {
+          "id": "c",
+          "lead": "اجمع ملصقات المكافأة",
+          "benefit": "الطفل يضغط، والصديق يهتف"
+        }
       ]
     },
     "snapportlite/en": {
@@ -375,9 +1172,38 @@
       "name": "Snapport Lite: Take ID Photos",
       "search": "Snapport Lite",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#PassportPhoto",
+        "#IdPhoto",
+        "#VisaPhoto",
+        "#Headshot",
+        "#Background",
+        "#SnapportLite"
+      ],
+      "keywords": [
+        "passport photo",
+        "id photo",
+        "visa photo",
+        "headshot",
+        "background",
+        "white"
+      ],
+      "keyline": "Crop Portraits to Exact Size",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Passport photo? Make it at home",
+          "benefit": "35 photo sizes built in"
+        },
+        {
+          "id": "b",
+          "lead": "35 photo sizes built in",
+          "benefit": "Swap in a clean background"
+        },
+        {
+          "id": "c",
+          "lead": "Your photos stay on your iPhone",
+          "benefit": "35 photo sizes built in"
+        }
       ]
     },
     "snapportlite/zh-Hant": {
@@ -389,9 +1215,38 @@
       "name": "Snapport Lite：在家拍證件照",
       "search": "Snapport Lite",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#證件照",
+        "#護照照片",
+        "#簽證照片",
+        "#二吋",
+        "#一吋",
+        "#SnapportLite"
+      ],
+      "keywords": [
+        "證件照",
+        "護照照片",
+        "簽證照片",
+        "二吋",
+        "一吋",
+        "白底"
+      ],
+      "keyline": "人像照精準裁成指定尺寸",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "要拍證件照？ 在家自己拍",
+          "benefit": "內建 35 種 尺寸範本"
+        },
+        {
+          "id": "b",
+          "lead": "內建 35 種 尺寸範本",
+          "benefit": "背景換成 乾淨純色"
+        },
+        {
+          "id": "c",
+          "lead": "照片只留在 你的 iPhone",
+          "benefit": "內建 35 種 尺寸範本"
+        }
       ]
     },
     "snapportlite/ja": {
@@ -403,9 +1258,38 @@
       "name": "Snapport Lite：自宅で証明写真",
       "search": "Snapport Lite",
       "tags": [
-        "#iPhoneアプリ",
-        "#アプリ紹介",
-        "#iOS"
+        "#証明写真",
+        "#就活写真",
+        "#受験写真",
+        "#パスポート用写真",
+        "#履歴書",
+        "#SnapportLite"
+      ],
+      "keywords": [
+        "証明写真",
+        "就活写真",
+        "受験写真",
+        "パスポート用写真",
+        "履歴書",
+        "背景白"
+      ],
+      "keyline": "顔写真をぴったりのサイズに",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "証明写真、 おうちで撮ろう",
+          "benefit": "35種類の サイズを内蔵"
+        },
+        {
+          "id": "b",
+          "lead": "35種類の サイズを内蔵",
+          "benefit": "背景も すっきり無地に"
+        },
+        {
+          "id": "c",
+          "lead": "写真はiPhoneに保存 アップロードなし",
+          "benefit": "35種類の サイズを内蔵"
+        }
       ]
     },
     "snapportlite/ko": {
@@ -417,9 +1301,38 @@
       "name": "Snapport Lite：집에서 증명사진",
       "search": "Snapport Lite",
       "tags": [
-        "#앱추천",
-        "#아이폰어플",
-        "#iOS"
+        "#증명사진",
+        "#반명함",
+        "#여권용사진",
+        "#취업사진",
+        "#프로필",
+        "#SnapportLite"
+      ],
+      "keywords": [
+        "증명사진",
+        "반명함",
+        "여권용사진",
+        "취업사진",
+        "프로필",
+        "배경지우기"
+      ],
+      "keyline": "인물 사진을 원하는 규격으로",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "증명사진, 집에서 찍자",
+          "benefit": "35가지 규격 기본 내장"
+        },
+        {
+          "id": "b",
+          "lead": "35가지 규격 기본 내장",
+          "benefit": "배경은 깔끔하게"
+        },
+        {
+          "id": "c",
+          "lead": "사진은 iPhone에만 저장",
+          "benefit": "35가지 규격 기본 내장"
+        }
       ]
     },
     "snapportlite/id": {
@@ -431,9 +1344,38 @@
       "name": "Snapport Lite: Ambil pasfoto",
       "search": "Snapport Lite",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#PasFoto",
+        "#BackgroundMerah",
+        "#BackgroundBiru",
+        "#GantiBackground",
+        "#LatarPutih",
+        "#SnapportLite"
+      ],
+      "keywords": [
+        "pas foto",
+        "background merah",
+        "background biru",
+        "ganti background",
+        "latar putih",
+        "cetak"
+      ],
+      "keyline": "Potret presisi sesuai ukuran",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Pas foto? Bikin di rumah aja",
+          "benefit": "35 ukuran foto siap pakai"
+        },
+        {
+          "id": "b",
+          "lead": "35 ukuran foto siap pakai",
+          "benefit": "Ganti latar jadi polos"
+        },
+        {
+          "id": "c",
+          "lead": "Fotomu tetap di iPhone",
+          "benefit": "35 ukuran foto siap pakai"
+        }
       ]
     },
     "snapportlite/vi": {
@@ -445,9 +1387,38 @@
       "name": "Snapport Lite: Ảnh thẻ tại nhà",
       "search": "Snapport Lite",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#chụpảnhthẻ",
+        "#ảnhhộchiếu",
+        "#phôngtrắng",
+        "#XóaPhông",
+        "#táchnền",
+        "#SnapportLite"
+      ],
+      "keywords": [
+        "chụp ảnh thẻ",
+        "ảnh hộ chiếu",
+        "phông trắng",
+        "xóa phông",
+        "tách nền",
+        "in ảnh"
+      ],
+      "keyline": "Cắt chân dung đúng kích cỡ",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Chụp ảnh thẻ ngay tại nhà",
+          "benefit": "35 mẫu kích thước có sẵn"
+        },
+        {
+          "id": "b",
+          "lead": "35 mẫu kích thước có sẵn",
+          "benefit": "Đổi phông nền trắng hoặc xanh"
+        },
+        {
+          "id": "c",
+          "lead": "Ảnh chỉ nằm trên iPhone của bạn",
+          "benefit": "35 mẫu kích thước có sẵn"
+        }
       ]
     },
     "snapportlite/cs": {
@@ -459,37 +1430,210 @@
       "name": "Snapport Lite: Foto na doklady",
       "search": "Snapport Lite",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#Průkazovka",
+        "#Oříznutí",
+        "#VelikostFotky",
+        "#BíléPozadí",
+        "#OdstranitPozadí",
+        "#SnapportLite"
+      ],
+      "keywords": [
+        "průkazovka",
+        "oříznutí",
+        "velikost fotky",
+        "bílé pozadí",
+        "odstranit pozadí",
+        "tisk"
+      ],
+      "keyline": "průkazovka · oříznutí · velikost fotky",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Fotka na pas? Vyfoťte se doma",
+          "benefit": "35 hotových rozměrů"
+        },
+        {
+          "id": "b",
+          "lead": "35 hotových rozměrů",
+          "benefit": "Změňte pozadí na jednobarevné"
+        },
+        {
+          "id": "c",
+          "lead": "Fotky zůstávají ve vašem iPhonu",
+          "benefit": "35 hotových rozměrů"
+        }
       ]
     },
     "gmoneylite/en": {
       "app": "gmoneylite",
       "locale": "en",
-      "url": "https://files.catbox.moe/n2186p.mp4",
+      "url": "https://files.catbox.moe/fbtd4k.mp4",
       "store_url": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=h7_gmoneylite_en&mt=8",
       "hook": "Trip budget already blown?",
       "name": "G+Money Lite: Trip Spending",
       "search": "G+Money Lite",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#TripSpending",
+        "#ExpenseTracker",
+        "#Budget",
+        "#MoneyManager",
+        "#CurrencyConverter",
+        "#GMoneyLite"
+      ],
+      "keywords": [
+        "expense tracker",
+        "budget",
+        "money manager",
+        "currency converter",
+        "exchange rate",
+        "spending tracker"
+      ],
+      "keyline": "Travel Expenses & Currency",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Trip budget already blown?",
+          "benefit": "Log in yen, see it in your currency"
+        },
+        {
+          "id": "b",
+          "lead": "Log in yen, see it in your currency",
+          "benefit": "Whole trip total, at a glance"
+        },
+        {
+          "id": "c",
+          "lead": "Know what's left today",
+          "benefit": "Log in yen, see it in your currency"
+        }
       ]
     },
     "gmoneylite/zh-Hant": {
       "app": "gmoneylite",
       "locale": "zh-Hant",
-      "url": "https://files.catbox.moe/gikqon.mp4",
+      "url": "https://files.catbox.moe/dndedr.mp4",
       "store_url": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=h7_gmoneylite_zh-Hant&mt=8",
       "hook": "出國玩到一半 預算就爆了？",
       "name": "G+Money Lite：旅行記帳·匯率換算",
       "search": "G+Money Lite 旅行記帳",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#旅行記帳匯率換算",
+        "#記帳app",
+        "#理財",
+        "#記帳軟體",
+        "#開銷",
+        "#GMoneyLite旅行記帳"
+      ],
+      "keywords": [
+        "記帳app",
+        "理財",
+        "記帳軟體",
+        "開銷",
+        "花費",
+        "帳本"
+      ],
+      "keyline": "旅行記帳・預算・匯率",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "出國玩到一半 預算就爆了？",
+          "benefit": "日幣記一筆 台幣馬上出來"
+        },
+        {
+          "id": "b",
+          "lead": "日幣記一筆 台幣馬上出來",
+          "benefit": "整趟花多少 一眼看清"
+        },
+        {
+          "id": "c",
+          "lead": "今天還能花多少 隨時知道",
+          "benefit": "日幣記一筆 台幣馬上出來"
+        }
+      ]
+    },
+    "gmoneylite/ja": {
+      "app": "gmoneylite",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/zq3wv8.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=h7_gmoneylite_ja&mt=8",
+      "hook": "旅行中なのに、もう 予算オーバー？",
+      "name": "G+Money Lite：旅の家計簿・為替",
+      "search": "G+Money Lite 旅の家計簿",
+      "tags": [
+        "#旅の家計簿為替",
+        "#家計簿アプリ",
+        "#支出管理",
+        "#お小遣い帳",
+        "#通貨換算",
+        "#GMoneyLite旅の家計簿"
+      ],
+      "keywords": [
+        "家計簿アプリ",
+        "支出管理",
+        "お小遣い帳",
+        "通貨換算",
+        "両替",
+        "旅行費用"
+      ],
+      "keyline": "家計簿・予算・節約・為替換算",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "旅行中なのに、もう 予算オーバー？",
+          "benefit": "現地通貨で記録 自国通貨に即換算"
+        },
+        {
+          "id": "b",
+          "lead": "現地通貨で記録 自国通貨に即換算",
+          "benefit": "旅の合計が ひと目でわかる"
+        },
+        {
+          "id": "c",
+          "lead": "今日あといくら？ すぐわかる",
+          "benefit": "現地通貨で記録 自国通貨に即換算"
+        }
+      ]
+    },
+    "gmoneylite/ko": {
+      "app": "gmoneylite",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/q3hi91.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=h7_gmoneylite_ko&mt=8",
+      "hook": "여행 중인데 벌써 예산 초과?",
+      "name": "G+Money Lite：여행 가계부·환율",
+      "search": "G+Money Lite 여행 가계부",
+      "tags": [
+        "#여행가계부환율",
+        "#지출관리",
+        "#용돈기입장",
+        "#환율계산기",
+        "#통화변환",
+        "#GMoneyLite여행가계부"
+      ],
+      "keywords": [
+        "지출관리",
+        "용돈기입장",
+        "환율계산기",
+        "통화변환",
+        "여행경비",
+        "소비"
+      ],
+      "keyline": "여행 가계부·예산·환율",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "여행 중인데 벌써 예산 초과?",
+          "benefit": "현지 통화로 적으면 내 통화로 바로"
+        },
+        {
+          "id": "b",
+          "lead": "현지 통화로 적으면 내 통화로 바로",
+          "benefit": "여행 총액을 한눈에"
+        },
+        {
+          "id": "c",
+          "lead": "오늘 남은 돈 바로 확인",
+          "benefit": "현지 통화로 적으면 내 통화로 바로"
+        }
       ]
     },
     "lockhour/en": {
@@ -501,23 +1645,81 @@
       "name": "LockHour Pro: Block Apps",
       "search": "LockHour Pro Block Apps",
       "tags": [
-        "#productivity",
-        "#iphoneapps",
-        "#appstore"
+        "#BlockApps",
+        "#AppBlocker",
+        "#ScreenTime",
+        "#Focus",
+        "#FocusTimer",
+        "#LockHourProBlockApps"
+      ],
+      "keywords": [
+        "app blocker",
+        "block apps",
+        "screen time",
+        "focus",
+        "focus timer",
+        "pomodoro"
+      ],
+      "keyline": "App Blocker & Focus Timer",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Can't stop scrolling?",
+          "benefit": "One tap locks your apps"
+        },
+        {
+          "id": "b",
+          "lead": "One tap locks your apps",
+          "benefit": "Unlocks when time's up"
+        },
+        {
+          "id": "c",
+          "lead": "Take back your hours",
+          "benefit": "One tap locks your apps"
+        }
       ]
     },
     "lumibopomofo/en": {
       "app": "lumibopomofo",
       "locale": "en",
-      "url": "https://files.catbox.moe/jq1bnf.mp4",
+      "url": "https://files.catbox.moe/wpik1u.mp4",
       "store_url": "https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=h7_lumibopomofo_en&mt=8",
       "hook": "Zhuyin, but make it a game",
       "name": "Lumi Bopomofo",
       "search": "Lumi Bopomofo",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#ChineseForKids",
+        "#LearnChinese",
+        "#MandarinForKids",
+        "#Pinyin",
+        "#Mandarin",
+        "#LumiBopomofo"
+      ],
+      "keywords": [
+        "chinese for kids",
+        "learn chinese",
+        "mandarin for kids",
+        "pinyin",
+        "mandarin",
+        "chinese characters"
+      ],
+      "keyline": "Zhuyin: Chinese Phonics Fun",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Zhuyin, but make it a game",
+          "benefit": "Listen, then pick the right symbol"
+        },
+        {
+          "id": "b",
+          "lead": "Listen, then pick the right symbol",
+          "benefit": "Blend sounds into syllables"
+        },
+        {
+          "id": "c",
+          "lead": "Collect 37 friends",
+          "benefit": "Listen, then pick the right symbol"
+        }
       ]
     },
     "lumibopomofo/zh-Hant": {
@@ -529,9 +1731,38 @@
       "name": "Lumi注音星球",
       "search": "Lumi注音星球",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#注音符號",
+        "#注音拼讀",
+        "#幼兒注音",
+        "#學注音",
+        "#注音遊戲",
+        "#Lumi注音星球"
+      ],
+      "keywords": [
+        "注音符號",
+        "注音拼讀",
+        "幼兒注音",
+        "學注音",
+        "注音遊戲",
+        "注音練習"
+      ],
+      "keyline": "注音・好玩學發音",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "注音 原來這麼好玩！",
+          "benefit": "聽聲音 選出對的注音"
+        },
+        {
+          "id": "b",
+          "lead": "聽聲音 選出對的注音",
+          "benefit": "把注音 拼成一個音"
+        },
+        {
+          "id": "c",
+          "lead": "收集 37 個 注音小夥伴",
+          "benefit": "聽聲音 選出對的注音"
+        }
       ]
     },
     "aim990/en": {
@@ -543,9 +1774,38 @@
       "name": "Aim990: Fix English Weak Spots",
       "search": "Aim990",
       "tags": [
-        "#learning",
-        "#iphoneapps",
-        "#appstore"
+        "#TOEIC",
+        "#EnglishExam",
+        "#StudyAid",
+        "#TestPrep",
+        "#LanguageLearning",
+        "#Aim990"
+      ],
+      "keywords": [
+        "TOEIC",
+        "English exam",
+        "study aid",
+        "test prep",
+        "language learning",
+        "score tracking"
+      ],
+      "keyline": "Your TOEIC Success Coach",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Find your TOEIC weak spots in 8 min",
+          "benefit": "Then a 30-day plan built around them"
+        },
+        {
+          "id": "b",
+          "lead": "Then a 30-day plan built around them",
+          "benefit": "Understand every mistake"
+        },
+        {
+          "id": "c",
+          "lead": "Mock tests with score estimates",
+          "benefit": "Then a 30-day plan built around them"
+        }
       ]
     },
     "aim990/zh-Hant": {
@@ -557,9 +1817,38 @@
       "name": "Aim990：英文弱點教練",
       "search": "Aim990",
       "tags": [
+        "#TOEIC考試助手",
+        "#TOEIC",
+        "#英語考試",
         "#學習",
-        "#App推薦",
-        "#iPhone"
+        "#聽力",
+        "#Aim990"
+      ],
+      "keywords": [
+        "TOEIC",
+        "英語考試",
+        "學習",
+        "聽力",
+        "閱讀",
+        "考試準備"
+      ],
+      "keyline": "30天提升你的聽讀能力",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "8 分鐘 找出你的多益弱點",
+          "benefit": "依你的弱點 排好 30 天計畫"
+        },
+        {
+          "id": "b",
+          "lead": "依你的弱點 排好 30 天計畫",
+          "benefit": "看懂 每一個錯誤"
+        },
+        {
+          "id": "c",
+          "lead": "模考後 預估分數區間",
+          "benefit": "依你的弱點 排好 30 天計畫"
+        }
       ]
     },
     "battai/en": {
@@ -571,9 +1860,38 @@
       "name": "BattAI: Battery Health & Life",
       "search": "BattAI Battery Health",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#BatteryHealthScore",
+        "#MaximumCapacity",
+        "#Cycles",
+        "#ChargeCare",
+        "#ChargeRange",
+        "#BattAIBatteryHealth"
+      ],
+      "keywords": [
+        "Battery health score",
+        "Maximum capacity",
+        "Cycles",
+        "Charge care",
+        "Charge range",
+        "Charge rate"
+      ],
+      "keyline": "Clear rules, sources, and limits",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "When will battery health hit 80%?",
+          "benefit": "A health score, and what shapes it"
+        },
+        {
+          "id": "b",
+          "lead": "A health score, and what shapes it",
+          "benefit": "A clear report for service or resale"
+        },
+        {
+          "id": "c",
+          "lead": "Measured or estimated? Always labeled",
+          "benefit": "A health score, and what shapes it"
+        }
       ]
     },
     "battai/zh-Hant": {
@@ -585,9 +1903,38 @@
       "name": "BattAI: 電池健康分數",
       "search": "BattAI 電池健康",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#電池健康分數",
+        "#最大容量",
+        "#循環次數",
+        "#充電保養",
+        "#充電區間",
+        "#BattAI電池健康"
+      ],
+      "keywords": [
+        "電池健康分數",
+        "最大容量",
+        "循環次數",
+        "充電保養",
+        "充電區間",
+        "充電速率"
+      ],
+      "keyline": "規則、來源與限制都說清楚",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "電池健康度 哪天掉到 80%？",
+          "benefit": "電池健康分數 連評分依據都看得到"
+        },
+        {
+          "id": "b",
+          "lead": "電池健康分數 連評分依據都看得到",
+          "benefit": "送修、二手轉賣 都用得上的電池報告"
+        },
+        {
+          "id": "c",
+          "lead": "實測還是推估 都標示清楚",
+          "benefit": "電池健康分數 連評分依據都看得到"
+        }
       ]
     },
     "caldaily/en": {
@@ -599,9 +1946,38 @@
       "name": "CalDaily: Calculator & Themes",
       "search": "CalDaily Calculator",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#CalculatorThemes",
+        "#Percent",
+        "#Split",
+        "#Bill",
+        "#Loan",
+        "#CalDailyCalculator"
+      ],
+      "keywords": [
+        "percent",
+        "split",
+        "bill",
+        "loan",
+        "unit",
+        "convert"
+      ],
+      "keyline": "Widget, tools, tidy history",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Calculator, but make it aesthetic",
+          "benefit": "100 themes built in"
+        },
+        {
+          "id": "b",
+          "lead": "100 themes built in",
+          "benefit": "Name it. Find it later."
+        },
+        {
+          "id": "c",
+          "lead": "8 everyday tools",
+          "benefit": "100 themes built in"
+        }
       ]
     },
     "caldaily/zh-Hant": {
@@ -613,9 +1989,38 @@
       "name": "CalDaily 計算機與主題",
       "search": "CalDaily 計算機",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#百分比",
+        "#小費",
+        "#分帳",
+        "#貸款",
+        "#單位換算",
+        "#CalDaily計算機"
+      ],
+      "keywords": [
+        "百分比",
+        "小費",
+        "分帳",
+        "貸款",
+        "單位換算",
+        "打折"
+      ],
+      "keyline": "桌面小工具、八種工具、計算紀錄",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "計算機 也可以這麼美",
+          "benefit": "內建一百款主題"
+        },
+        {
+          "id": "b",
+          "lead": "內建一百款主題",
+          "benefit": "結果取個名 日後找得回來"
+        },
+        {
+          "id": "c",
+          "lead": "8 種實用工具",
+          "benefit": "內建一百款主題"
+        }
       ]
     },
     "cvdesk/en": {
@@ -627,9 +2032,38 @@
       "name": "CV Desk: ATS Resume Builder",
       "search": "CV Desk ATS Resume",
       "tags": [
-        "#productivity",
-        "#iphoneapps",
-        "#appstore"
+        "#ATSResumeBuilder",
+        "#ResumeMaker",
+        "#CvMaker",
+        "#ResumeTemplates",
+        "#CoverLetter",
+        "#CVDeskATSResume"
+      ],
+      "keywords": [
+        "resume maker",
+        "cv maker",
+        "resume templates",
+        "cover letter",
+        "resume pdf",
+        "resume format"
+      ],
+      "keyline": "ATS Resume & CV Builder",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Resume getting auto-rejected?",
+          "benefit": "Tap a fix, lift your score"
+        },
+        {
+          "id": "b",
+          "lead": "Tap a fix, lift your score",
+          "benefit": "Every template ATS-safe"
+        },
+        {
+          "id": "c",
+          "lead": "Export PDF or Word",
+          "benefit": "Tap a fix, lift your score"
+        }
       ]
     },
     "cvdesk/zh-Hant": {
@@ -641,9 +2075,38 @@
       "name": "CV Desk ATS 履歷製作",
       "search": "CV Desk ATS 履歷",
       "tags": [
-        "#效率工具",
-        "#App推薦",
-        "#iPhone"
+        "#履歷範本",
+        "#自傳",
+        "#履歷模板",
+        "#簡歷",
+        "#求職信",
+        "#CVDeskATS履歷"
+      ],
+      "keywords": [
+        "履歷範本",
+        "自傳",
+        "履歷模板",
+        "簡歷",
+        "求職信",
+        "面試"
+      ],
+      "keyline": "ATS履歷表製作・求職範本",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "履歷總是 被 ATS 刷掉？",
+          "benefit": "點修正建議 提升分數"
+        },
+        {
+          "id": "b",
+          "lead": "點修正建議 提升分數",
+          "benefit": "每款範本 都相容 ATS"
+        },
+        {
+          "id": "c",
+          "lead": "匯出 PDF 或 Word",
+          "benefit": "點修正建議 提升分數"
+        }
       ]
     },
     "cyca/en": {
@@ -655,9 +2118,38 @@
       "name": "Cyca: Period & Cycle Tracker",
       "search": "Cyca period tracker",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#PeriodCycleTracker",
+        "#PeriodTracker",
+        "#CycleTracker",
+        "#Ovulation",
+        "#FertileWindow",
+        "#CycaPeriodTracker"
+      ],
+      "keywords": [
+        "period tracker",
+        "cycle tracker",
+        "ovulation",
+        "fertile window",
+        "period calendar",
+        "menstrual calendar"
+      ],
+      "keyline": "Ovulation, Calendar & PMS",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Where does your period data go?",
+          "benefit": "No account. It stays on your phone"
+        },
+        {
+          "id": "b",
+          "lead": "No account. It stays on your phone",
+          "benefit": "Period & ovulation at a glance"
+        },
+        {
+          "id": "c",
+          "lead": "Your daily body forecast",
+          "benefit": "No account. It stays on your phone"
+        }
       ]
     },
     "cyca/zh-Hant": {
@@ -669,9 +2161,38 @@
       "name": "Cyca 經期週期追蹤・排卵",
       "search": "Cyca 經期",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#經期追蹤",
+        "#月經週期",
+        "#排卵期",
+        "#生理期",
+        "#經期記錄",
+        "#Cyca經期"
+      ],
+      "keywords": [
+        "經期追蹤",
+        "月經週期",
+        "排卵期",
+        "生理期",
+        "經期記錄",
+        "排卵日"
+      ],
+      "keyline": "排卵、生理期日曆與經前症候群",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "你的經期資料 都存到哪去了？",
+          "benefit": "不用帳號 只存在你的手機"
+        },
+        {
+          "id": "b",
+          "lead": "不用帳號 只存在你的手機",
+          "benefit": "經期、排卵日 一眼看清"
+        },
+        {
+          "id": "c",
+          "lead": "每日身體預報",
+          "benefit": "不用帳號 只存在你的手機"
+        }
       ]
     },
     "dailymatelite/en": {
@@ -683,9 +2204,38 @@
       "name": "DailyMate Lite: Speak Today",
       "search": "DailyMate Lite",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#SpeakToday",
+        "#Conversation",
+        "#Practice",
+        "#Fluency",
+        "#Vocabulary",
+        "#DailyMateLite"
+      ],
+      "keywords": [
+        "conversation",
+        "practice",
+        "fluency",
+        "vocabulary",
+        "pronunciation",
+        "travel"
+      ],
+      "keyline": "50 Languages, Real Dialogues",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Your turn to speak… mind goes blank?",
+          "benefit": "14 real-life topics"
+        },
+        {
+          "id": "b",
+          "lead": "14 real-life topics",
+          "benefit": "Hear it, then the reply"
+        },
+        {
+          "id": "c",
+          "lead": "A streak for every language",
+          "benefit": "14 real-life topics"
+        }
       ]
     },
     "dailymatelite/zh-Hant": {
@@ -697,9 +2247,38 @@
       "name": "DailyMate Lite：開口練習",
       "search": "DailyMate Lite 開口練習",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#開口練習",
+        "#會話",
+        "#口說",
+        "#旅遊",
+        "#發音",
+        "#DailyMateLite開口練習"
+      ],
+      "keywords": [
+        "會話",
+        "口說",
+        "旅遊",
+        "發音",
+        "聽力",
+        "英語"
+      ],
+      "keyline": "50 種語言情境短句",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "輪到你開口 腦袋一片空白？",
+          "benefit": "14 大生活主題"
+        },
+        {
+          "id": "b",
+          "lead": "14 大生活主題",
+          "benefit": "聽發音，學回話"
+        },
+        {
+          "id": "c",
+          "lead": "各語言進度分開記",
+          "benefit": "14 大生活主題"
+        }
       ]
     },
     "dbhalo/en": {
@@ -711,9 +2290,38 @@
       "name": "dB Halo: Sound Meter",
       "search": "dB Halo Sound Meter",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#SoundMeter",
+        "#Decibel",
+        "#Noise",
+        "#Analyzer",
+        "#Frequency",
+        "#DBHaloSoundMeter"
+      ],
+      "keywords": [
+        "decibel",
+        "noise",
+        "analyzer",
+        "frequency",
+        "octave",
+        "hearing"
+      ],
+      "keyline": "Sound Meter",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "How loud is your upstairs neighbor?",
+          "benefit": "Night impacts logged with time and dB"
+        },
+        {
+          "id": "b",
+          "lead": "Night impacts logged with time and dB",
+          "benefit": "Export a PDF report or CSV"
+        },
+        {
+          "id": "c",
+          "lead": "Apple Watch & widgets",
+          "benefit": "Night impacts logged with time and dB"
+        }
       ]
     },
     "dbhalo/zh-Hant": {
@@ -725,9 +2333,38 @@
       "name": "dB Halo：分貝計",
       "search": "dB Halo 分貝計",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#分貝計",
+        "#噪音計",
+        "#分貝測量",
+        "#音量測試",
+        "#環境噪音",
+        "#dBHalo分貝計"
+      ],
+      "keywords": [
+        "噪音計",
+        "分貝測量",
+        "音量測試",
+        "環境噪音",
+        "聲壓測量",
+        "頻率分析"
+      ],
+      "keyline": "噪音測量、頻譜與睡眠日誌",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "樓上的噪音 到底幾分貝？",
+          "benefit": "半夜的撞擊聲 記下時間與分貝"
+        },
+        {
+          "id": "b",
+          "lead": "半夜的撞擊聲 記下時間與分貝",
+          "benefit": "匯出 PDF 報告 或 CSV"
+        },
+        {
+          "id": "c",
+          "lead": "Apple Watch 與小工具",
+          "benefit": "半夜的撞擊聲 記下時間與分貝"
+        }
       ]
     },
     "lumiletters/en": {
@@ -739,9 +2376,38 @@
       "name": "Lumi Letters Lite: ABC Kids",
       "search": "Lumi Letters Lite",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#ABCKids",
+        "#Alphabet",
+        "#LetterSounds",
+        "#LearnToRead",
+        "#Handwriting",
+        "#LumiLettersLite"
+      ],
+      "keywords": [
+        "alphabet",
+        "letter sounds",
+        "learn to read",
+        "handwriting",
+        "reading",
+        "writing"
+      ],
+      "keyline": "ABC tracing & letter games",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Screen time that teaches ABCs",
+          "benefit": "Trace every stroke"
+        },
+        {
+          "id": "b",
+          "lead": "Trace every stroke",
+          "benefit": "Hear a sound, match its letter"
+        },
+        {
+          "id": "c",
+          "lead": "See how far they've come",
+          "benefit": "Trace every stroke"
+        }
       ]
     },
     "lumiletters/zh-Hant": {
@@ -753,9 +2419,38 @@
       "name": "Lumi 字母星球 Lite：兒童英文ABC遊戲",
       "search": "Lumi 字母星球 Lite",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#兒童英文ABC遊戲",
+        "#英文字母",
+        "#英文發音",
+        "#拼讀",
+        "#學英文",
+        "#Lumi字母星球Lite"
+      ],
+      "keywords": [
+        "英文字母",
+        "英文發音",
+        "拼讀",
+        "學英文",
+        "幼兒英文",
+        "英文啟蒙"
+      ],
+      "keyline": "玩字母．描寫．星球闖關",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "滑手機的時間 也能學 ABC",
+          "benefit": "照筆順描一描"
+        },
+        {
+          "id": "b",
+          "lead": "照筆順描一描",
+          "benefit": "聽發音 配對字母"
+        },
+        {
+          "id": "c",
+          "lead": "看看孩子 進步了多少",
+          "benefit": "照筆順描一描"
+        }
       ]
     },
     "lumimath/en": {
@@ -767,9 +2462,38 @@
       "name": "Lumi Math Planet: Explorer",
       "search": "Lumi Math Planet Explorer",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#Explorer",
+        "#KidsMath",
+        "#MathForKids",
+        "#Counting",
+        "#Numbers",
+        "#LumiMathPlanetExplorer"
+      ],
+      "keywords": [
+        "kids math",
+        "math for kids",
+        "counting",
+        "numbers",
+        "number sense",
+        "addition"
+      ],
+      "keyline": "Explorer",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Every right answer lights a planet",
+          "benefit": "Plays even before they can read"
+        },
+        {
+          "id": "b",
+          "lead": "Plays even before they can read",
+          "benefit": "Race the clock for 60 seconds"
+        },
+        {
+          "id": "c",
+          "lead": "Strengths & gaps at a glance",
+          "benefit": "Plays even before they can read"
+        }
       ]
     },
     "lumimath/zh-Hant": {
@@ -781,9 +2505,38 @@
       "name": "Lumi數學星球：探索版",
       "search": "Lumi數學星球 探索版",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#探索版",
+        "#兒童數學",
+        "#數數",
+        "#加減法",
+        "#數感",
+        "#Lumi數學星球探索版"
+      ],
+      "keywords": [
+        "兒童數學",
+        "數數",
+        "加減法",
+        "數感",
+        "學前教育",
+        "幼稚園"
+      ],
+      "keyline": "探索版",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "答對一題 小星球就亮起來",
+          "benefit": "還不識字 也能看圖玩"
+        },
+        {
+          "id": "b",
+          "lead": "還不識字 也能看圖玩",
+          "benefit": "60 秒內 跟時鐘賽跑"
+        },
+        {
+          "id": "c",
+          "lead": "強弱項一眼看懂",
+          "benefit": "還不識字 也能看圖玩"
+        }
       ]
     },
     "lumiweather/en": {
@@ -795,9 +2548,38 @@
       "name": "Lumi Weather: What to Wear",
       "search": "Lumi Weather",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#FamilyForecast",
+        "#LocalWeather",
+        "#HourlyForecast",
+        "#WeeklyForecast",
+        "#10DayForecast",
+        "#LumiWeather"
+      ],
+      "keywords": [
+        "local weather",
+        "hourly forecast",
+        "weekly forecast",
+        "10 day forecast",
+        "rain radar",
+        "rain alert"
+      ],
+      "keyline": "Family Forecast",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Need sunscreen today?",
+          "benefit": "It tells you what to wear"
+        },
+        {
+          "id": "b",
+          "lead": "It tells you what to wear",
+          "benefit": "Good day out? See exactly why"
+        },
+        {
+          "id": "c",
+          "lead": "Right on your Home Screen",
+          "benefit": "It tells you what to wear"
+        }
       ]
     },
     "lumiweather/zh-Hant": {
@@ -809,9 +2591,38 @@
       "name": "Lumi天氣星球：天氣預報與穿搭建議",
       "search": "Lumi天氣星球",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#氣象",
+        "#即時天氣",
+        "#天氣app",
+        "#每小時天氣",
+        "#一週天氣",
+        "#Lumi天氣星球"
+      ],
+      "keywords": [
+        "氣象",
+        "即時天氣",
+        "天氣 app",
+        "每小時天氣",
+        "一週天氣",
+        "降雨機率"
+      ],
+      "keyline": "氣象 · 即時天氣 · 天氣 app",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "今天要不要 擦防曬？",
+          "benefit": "穿什麼、帶什麼 直接告訴你"
+        },
+        {
+          "id": "b",
+          "lead": "穿什麼、帶什麼 直接告訴你",
+          "benefit": "適合出門嗎？ 看懂為什麼"
+        },
+        {
+          "id": "c",
+          "lead": "你的一天 就在主畫面",
+          "benefit": "穿什麼、帶什麼 直接告訴你"
+        }
       ]
     },
     "maskmyfile/en": {
@@ -823,9 +2634,38 @@
       "name": "Mask My File: Remove Your Info",
       "search": "Mask My File",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#RemoveYourInfo",
+        "#Anonymize",
+        "#Censor",
+        "#BlackOut",
+        "#HideText",
+        "#MaskMyFile"
+      ],
+      "keywords": [
+        "anonymize",
+        "censor",
+        "black out",
+        "hide text",
+        "personal data",
+        "passport"
+      ],
+      "keyline": "Redact files before sharing",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Hide your info before you share",
+          "benefit": "Missed one? Add it"
+        },
+        {
+          "id": "b",
+          "lead": "Missed one? Add it",
+          "benefit": "Saves a new copy, original untouched"
+        },
+        {
+          "id": "c",
+          "lead": "Protected on-device",
+          "benefit": "Missed one? Add it"
+        }
       ]
     },
     "maskmyfile/zh-Hant": {
@@ -837,9 +2677,38 @@
       "name": "Mask My File：分享前移除個資",
       "search": "Mask My File",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#分享前移除個資",
+        "#去識別化",
+        "#塗黑",
+        "#抹除",
+        "#消除",
+        "#MaskMyFile"
+      ],
+      "keywords": [
+        "去識別化",
+        "塗黑",
+        "抹除",
+        "消除",
+        "隱藏",
+        "隱私資料保護"
+      ],
+      "keyline": "分享前遮蔽個資與私密資訊",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "傳檔案之前 先遮個資",
+          "benefit": "漏掉的？手動框選"
+        },
+        {
+          "id": "b",
+          "lead": "漏掉的？手動框選",
+          "benefit": "另存新檔 原始檔不動"
+        },
+        {
+          "id": "c",
+          "lead": "全程在裝置上處理",
+          "benefit": "漏掉的？手動框選"
+        }
       ]
     },
     "mochidonestamp/en": {
@@ -851,9 +2720,38 @@
       "name": "Mochi DoneStamp: Last Time",
       "search": "Mochi DoneStamp",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#LastTime",
+        "#Recurring",
+        "#Reminder",
+        "#DaysSince",
+        "#Maintenance",
+        "#MochiDoneStamp"
+      ],
+      "keywords": [
+        "recurring",
+        "reminder",
+        "days since",
+        "maintenance",
+        "chores",
+        "interval"
+      ],
+      "keyline": "Remember when you did it",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "When did you last change the sheets?",
+          "benefit": "Done? Tap once."
+        },
+        {
+          "id": "b",
+          "lead": "Done? Tap once.",
+          "benefit": "Know what's due next"
+        },
+        {
+          "id": "c",
+          "lead": "Every time, remembered",
+          "benefit": "Done? Tap once."
+        }
       ]
     },
     "mochidonestamp/zh-Hant": {
@@ -865,9 +2763,38 @@
       "name": "Mochi DoneStamp：上次何時",
       "search": "Mochi DoneStamp 上次何時",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#上次何時",
+        "#循環提醒",
+        "#經過天數",
+        "#多久一次",
+        "#家事管家",
+        "#MochiDoneStamp上次何時"
+      ],
+      "keywords": [
+        "循環提醒",
+        "經過天數",
+        "多久一次",
+        "家事管家",
+        "打掃計畫",
+        "定期保養"
+      ],
+      "keyline": "上次何時",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "上次換床單 是什麼時候？",
+          "benefit": "做完，點一下"
+        },
+        {
+          "id": "b",
+          "lead": "做完，點一下",
+          "benefit": "下次該做了沒 一眼就知道"
+        },
+        {
+          "id": "c",
+          "lead": "每一次 都幫你記得",
+          "benefit": "做完，點一下"
+        }
       ]
     },
     "moneytag/en": {
@@ -879,9 +2806,38 @@
       "name": "MoneyTag: Income & Expense",
       "search": "MoneyTag",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#IncomeExpense",
+        "#PLTracking",
+        "#JobCosting",
+        "#ProfitMargin",
+        "#ClientProfitability",
+        "#MoneyTag"
+      ],
+      "keywords": [
+        "P&L tracking",
+        "job costing",
+        "profit margin",
+        "client profitability",
+        "cost breakdown",
+        "freelance books"
+      ],
+      "keyline": "Projects · Tags · Report",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Which side gig actually pays?",
+          "benefit": "One tag adds up across projects"
+        },
+        {
+          "id": "b",
+          "lead": "One tag adds up across projects",
+          "benefit": "Net result, month by month"
+        },
+        {
+          "id": "c",
+          "lead": "Export PDF or CSV",
+          "benefit": "One tag adds up across projects"
+        }
       ]
     },
     "moneytag/zh-Hant": {
@@ -893,9 +2849,38 @@
       "name": "MoneyTag: 收入與支出",
       "search": "MoneyTag",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#收入與支出",
+        "#損益表",
+        "#工單成本",
+        "#任務成本",
+        "#毛利率",
+        "#MoneyTag"
+      ],
+      "keywords": [
+        "損益表",
+        "工單成本",
+        "任務成本",
+        "毛利率",
+        "客戶獲利",
+        "成本分攤"
+      ],
+      "keyline": "專案 · 標籤 · 報表",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "哪個副業 真的有賺？",
+          "benefit": "同一個標籤 跨專案一次加總"
+        },
+        {
+          "id": "b",
+          "lead": "同一個標籤 跨專案一次加總",
+          "benefit": "每個月的淨額 一目了然"
+        },
+        {
+          "id": "c",
+          "lead": "匯出 PDF、CSV",
+          "benefit": "同一個標籤 跨專案一次加總"
+        }
       ]
     },
     "notesstudio100/en": {
@@ -907,9 +2892,38 @@
       "name": "100 Notes Studio: Pen & Paper",
       "search": "100 Notes Studio",
       "tags": [
-        "#productivity",
-        "#iphoneapps",
-        "#appstore"
+        "#PenPaper",
+        "#Journal",
+        "#Planner",
+        "#Flashcards",
+        "#Annotate",
+        "#100NotesStudio"
+      ],
+      "keywords": [
+        "journal",
+        "planner",
+        "flashcards",
+        "annotate",
+        "school",
+        "exam"
+      ],
+      "keyline": "Pen & Paper",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Handwritten notes, 100 notebook styles",
+          "benefit": "Every notebook, its own look"
+        },
+        {
+          "id": "b",
+          "lead": "Every notebook, its own look",
+          "benefit": "Audio saved to the page"
+        },
+        {
+          "id": "c",
+          "lead": "Review with flashcards",
+          "benefit": "Every notebook, its own look"
+        }
       ]
     },
     "notesstudio100/zh-Hant": {
@@ -921,9 +2935,38 @@
       "name": "100 Notes Studio: Pen & Paper",
       "search": "100 Notes Studio",
       "tags": [
-        "#效率工具",
-        "#App推薦",
-        "#iPhone"
+        "#手帳",
+        "#日記",
+        "#讀書計畫",
+        "#抽認卡",
+        "#文字辨識",
+        "#100NotesStudio"
+      ],
+      "keywords": [
+        "手帳",
+        "日記",
+        "讀書計畫",
+        "抽認卡",
+        "文字辨識",
+        "貼紙膠帶"
+      ],
+      "keyline": "手寫筆記本、PDF標註、錄音與複習",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "手寫筆記本 100 款風格",
+          "benefit": "每本筆記 都有專屬風格"
+        },
+        {
+          "id": "b",
+          "lead": "每本筆記 都有專屬風格",
+          "benefit": "錄音就存在那一頁"
+        },
+        {
+          "id": "c",
+          "lead": "用抽認卡複習",
+          "benefit": "每本筆記 都有專屬風格"
+        }
       ]
     },
     "onepageppt/en": {
@@ -935,9 +2978,38 @@
       "name": "OnePage PPT: AI Slide Maker",
       "search": "OnePage PPT",
       "tags": [
-        "#productivity",
-        "#iphoneapps",
-        "#appstore"
+        "#AISlideMaker",
+        "#Presentation",
+        "#Deck",
+        "#Pptx",
+        "#Infographic",
+        "#OnePagePPT"
+      ],
+      "keywords": [
+        "presentation",
+        "deck",
+        "pptx",
+        "infographic",
+        "summary",
+        "pitch"
+      ],
+      "keyline": "Notes to one perfect slide",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Wall of text? Make it one slide",
+          "benefit": "Paste notes, PDFs, screenshots"
+        },
+        {
+          "id": "b",
+          "lead": "Paste notes, PDFs, screenshots",
+          "benefit": "Restyle it instantly"
+        },
+        {
+          "id": "c",
+          "lead": "Export editable PPTX",
+          "benefit": "Paste notes, PDFs, screenshots"
+        }
       ]
     },
     "onepageppt/zh-Hant": {
@@ -949,9 +3021,38 @@
       "name": "OnePage PPT: AI 一頁簡報",
       "search": "OnePage PPT 一頁簡報",
       "tags": [
-        "#效率工具",
-        "#App推薦",
-        "#iPhone"
+        "#AI一頁簡報",
+        "#Pptx",
+        "#報告",
+        "#提案",
+        "#企劃書",
+        "#OnePagePPT一頁簡報"
+      ],
+      "keywords": [
+        "pptx",
+        "報告",
+        "提案",
+        "企劃書",
+        "圖表",
+        "長條圖"
+      ],
+      "keyline": "筆記、螢幕截圖、PDF秒變投影片",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "落落長的筆記 變成一頁簡報",
+          "benefit": "貼上筆記、PDF 或截圖"
+        },
+        {
+          "id": "b",
+          "lead": "貼上筆記、PDF 或截圖",
+          "benefit": "一鍵換風格"
+        },
+        {
+          "id": "c",
+          "lead": "匯出可編輯的 pptx",
+          "benefit": "貼上筆記、PDF 或截圖"
+        }
       ]
     },
     "photocream/en": {
@@ -963,9 +3064,38 @@
       "name": "PhotoCream Pro: Film Filters",
       "search": "PhotoCream Pro",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#FilmFilters",
+        "#FilmCamera",
+        "#RetroFilter",
+        "#VintageCamera",
+        "#DisposableCamera",
+        "#PhotoCreamPro"
+      ],
+      "keywords": [
+        "film camera",
+        "retro filter",
+        "vintage camera",
+        "disposable camera",
+        "photo editor",
+        "beauty camera"
+      ],
+      "keyline": "Film Camera & Retro Filters",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Your selfie, but make it film",
+          "benefit": "100+ film looks"
+        },
+        {
+          "id": "b",
+          "lead": "100+ film looks",
+          "benefit": "Real grain & halation"
+        },
+        {
+          "id": "c",
+          "lead": "Natural beauty & reshape",
+          "benefit": "100+ film looks"
+        }
       ]
     },
     "photocream/zh-Hant": {
@@ -977,9 +3107,38 @@
       "name": "PhotoCream Pro：底片濾鏡·復古修圖",
       "search": "PhotoCream 底片濾鏡",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#底片濾鏡復古修圖",
+        "#底片相機",
+        "#復古濾鏡",
+        "#修圖",
+        "#美顏相機",
+        "#PhotoCream底片濾鏡"
+      ],
+      "keywords": [
+        "底片相機",
+        "復古濾鏡",
+        "修圖",
+        "美顏相機",
+        "自拍",
+        "濾鏡"
+      ],
+      "keyline": "底片相機・復古濾鏡修圖",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "自拍也能有 底片感",
+          "benefit": "100+ 款底片濾鏡"
+        },
+        {
+          "id": "b",
+          "lead": "100+ 款底片濾鏡",
+          "benefit": "真實顆粒與光暈"
+        },
+        {
+          "id": "c",
+          "lead": "放大眼睛、拉長身形 都很自然",
+          "benefit": "100+ 款底片濾鏡"
+        }
       ]
     },
     "picclear/en": {
@@ -991,9 +3150,38 @@
       "name": "PicClear Pro: Photo Cleaner",
       "search": "PicClear Pro",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#PhotoCleaner",
+        "#StorageCleaner",
+        "#FreeSpace",
+        "#DuplicatePhotos",
+        "#DeletePhotos",
+        "#PicClearPro"
+      ],
+      "keywords": [
+        "photo cleaner",
+        "storage cleaner",
+        "free space",
+        "duplicate photos",
+        "delete photos",
+        "clean gallery"
+      ],
+      "keyline": "Photo cleaner frees storage",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "iPhone storage full again?",
+          "benefit": "Duplicates, grouped for review"
+        },
+        {
+          "id": "b",
+          "lead": "Duplicates, grouped for review",
+          "benefit": "Old screenshots, rounded up"
+        },
+        {
+          "id": "c",
+          "lead": "Nothing's deleted until you confirm",
+          "benefit": "Duplicates, grouped for review"
+        }
       ]
     },
     "picclear/zh-Hant": {
@@ -1005,9 +3193,38 @@
       "name": "PicClear Pro：照片清理·釋放空間",
       "search": "PicClear 照片清理",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#照片清理釋放空間",
+        "#照片清理",
+        "#相片清理",
+        "#手機清理",
+        "#釋放空間",
+        "#PicClear照片清理"
+      ],
+      "keywords": [
+        "照片清理",
+        "相片清理",
+        "手機清理",
+        "釋放空間",
+        "儲存空間",
+        "重複照片"
+      ],
+      "keyline": "照片清理，釋放空間",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "iPhone 容量 又滿了？",
+          "benefit": "重複照片 幫你分好組"
+        },
+        {
+          "id": "b",
+          "lead": "重複照片 幫你分好組",
+          "benefit": "舊截圖 一次找出來"
+        },
+        {
+          "id": "c",
+          "lead": "你確認之前 一張都不刪",
+          "benefit": "重複照片 幫你分好組"
+        }
       ]
     },
     "qrcodehalo/en": {
@@ -1019,9 +3236,38 @@
       "name": "QR Code Halo: Scan & Create",
       "search": "QR Code Halo",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#ScanCreate",
+        "#LinkChecker",
+        "#PhishingAlert",
+        "#DomainSafety",
+        "#PayloadAudit",
+        "#QRCodeHalo"
+      ],
+      "keywords": [
+        "link checker",
+        "phishing alert",
+        "domain safety",
+        "payload audit",
+        "barcode",
+        "reader"
+      ],
+      "keyline": "Scan & Create",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Scan a QR, it opens instantly",
+          "benefit": "Create 9 kinds of QR"
+        },
+        {
+          "id": "b",
+          "lead": "Create 9 kinds of QR",
+          "benefit": "Style it, then share"
+        },
+        {
+          "id": "c",
+          "lead": "Nothing leaves your device",
+          "benefit": "Create 9 kinds of QR"
+        }
       ]
     },
     "qrcodehalo/zh-Hant": {
@@ -1033,9 +3279,38 @@
       "name": "QR Code Halo：安全掃描與建立",
       "search": "QR Code Halo",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#安全掃描與建立",
+        "#網址安全",
+        "#釣魚辨識",
+        "#風險檢測",
+        "#仿冒網域",
+        "#QRCodeHalo"
+      ],
+      "keywords": [
+        "網址安全",
+        "釣魚辨識",
+        "風險檢測",
+        "仿冒網域",
+        "行動條碼",
+        "條碼"
+      ],
+      "keyline": "安全掃描與建立",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "QR Code 掃到就直接開",
+          "benefit": "建立 9 種 QR Code"
+        },
+        {
+          "id": "b",
+          "lead": "建立 9 種 QR Code",
+          "benefit": "換個樣式 一鍵分享"
+        },
+        {
+          "id": "c",
+          "lead": "資料不離開 你的裝置",
+          "benefit": "建立 9 種 QR Code"
+        }
       ]
     },
     "savetag/en": {
@@ -1047,9 +3322,38 @@
       "name": "SaveTag: AI Social Bookmarks",
       "search": "SaveTag",
       "tags": [
-        "#productivity",
-        "#iphoneapps",
-        "#appstore"
+        "#AISocialBookmarks",
+        "#Organizer",
+        "#Collection",
+        "#Inbox",
+        "#Archive",
+        "#SaveTag"
+      ],
+      "keywords": [
+        "organizer",
+        "collection",
+        "inbox",
+        "archive",
+        "clipboard",
+        "folder"
+      ],
+      "keyline": "Save links, read them later",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Links you saved but never read?",
+          "benefit": "Auto-tagged the moment you save"
+        },
+        {
+          "id": "b",
+          "lead": "Auto-tagged the moment you save",
+          "benefit": "A few each day, with a streak"
+        },
+        {
+          "id": "c",
+          "lead": "Watch your list shrink",
+          "benefit": "Auto-tagged the moment you save"
+        }
       ]
     },
     "savetag/zh-Hant": {
@@ -1061,9 +3365,38 @@
       "name": "SaveTag:AI 連結收藏",
       "search": "SaveTag",
       "tags": [
-        "#效率工具",
-        "#App推薦",
-        "#iPhone"
+        "#AI連結收藏",
+        "#書籤",
+        "#待讀清單",
+        "#存檔",
+        "#網址",
+        "#SaveTag"
+      ],
+      "keywords": [
+        "書籤",
+        "待讀清單",
+        "存檔",
+        "網址",
+        "離線",
+        "標籤"
+      ],
+      "keyline": "稍後閱讀,自動分類整理",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "收藏的連結 從來沒點開過？",
+          "benefit": "一存下 就自動分類"
+        },
+        {
+          "id": "b",
+          "lead": "一存下 就自動分類",
+          "benefit": "每天翻出幾則 還有連續天數"
+        },
+        {
+          "id": "c",
+          "lead": "待讀清單 終於變短",
+          "benefit": "一存下 就自動分類"
+        }
       ]
     },
     "scanto/en": {
@@ -1075,9 +3408,38 @@
       "name": "ScanTo Pro: Offline PDF & OCR",
       "search": "ScanTo Pro",
       "tags": [
-        "#productivity",
-        "#iphoneapps",
-        "#appstore"
+        "#OfflinePDFOCR",
+        "#Scanner",
+        "#Scan",
+        "#DocScanner",
+        "#Encrypt",
+        "#ScanToPro"
+      ],
+      "keywords": [
+        "scanner",
+        "scan",
+        "doc scanner",
+        "encrypt",
+        "face id",
+        "search"
+      ],
+      "keyline": "Offline PDF & OCR",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Sharing your ID? Add a password",
+          "benefit": "Scan to PDF in seconds"
+        },
+        {
+          "id": "b",
+          "lead": "Scan to PDF in seconds",
+          "benefit": "No cloud. Fully offline"
+        },
+        {
+          "id": "c",
+          "lead": "Locked with Face ID",
+          "benefit": "Scan to PDF in seconds"
+        }
       ]
     },
     "scanto/zh-Hant": {
@@ -1089,9 +3451,38 @@
       "name": "ScanTo Pro: 離線PDF掃描",
       "search": "ScanTo Pro 離線PDF掃描",
       "tags": [
-        "#效率工具",
-        "#App推薦",
-        "#iPhone"
+        "#離線PDF掃描",
+        "#掃描器",
+        "#掃描app",
+        "#文件掃描",
+        "#隱私",
+        "#ScanToPro離線PDF掃描"
+      ],
+      "keywords": [
+        "掃描器",
+        "掃描app",
+        "文件掃描",
+        "隱私",
+        "加密",
+        "辨識"
+      ],
+      "keyline": "私密離線・OCR・一次買斷",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "身分證要傳出去？ 先加密碼",
+          "benefit": "幾秒就掃成 PDF"
+        },
+        {
+          "id": "b",
+          "lead": "幾秒就掃成 PDF",
+          "benefit": "不上雲，完全離線"
+        },
+        {
+          "id": "c",
+          "lead": "用 Face ID 上鎖",
+          "benefit": "幾秒就掃成 PDF"
+        }
       ]
     },
     "sereno/en": {
@@ -1103,9 +3494,38 @@
       "name": "Sereno: Sleep Sounds",
       "search": "Sereno Sleep Sounds",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#SleepSounds",
+        "#WhiteNoise",
+        "#Rain",
+        "#Insomnia",
+        "#Focus",
+        "#SerenoSleepSounds"
+      ],
+      "keywords": [
+        "white noise",
+        "sleep sounds",
+        "rain",
+        "insomnia",
+        "focus",
+        "adhd"
+      ],
+      "keyline": "White noise for sleep & focus",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Rain sounds that never loop",
+          "benefit": "Dozens of sounds to pick from"
+        },
+        {
+          "id": "b",
+          "lead": "Dozens of sounds to pick from",
+          "benefit": "Blend 1000+ soundscapes"
+        },
+        {
+          "id": "c",
+          "lead": "100% offline",
+          "benefit": "Dozens of sounds to pick from"
+        }
       ]
     },
     "sereno/zh-Hant": {
@@ -1117,9 +3537,38 @@
       "name": "Sereno: 極致睡眠音效",
       "search": "Sereno 極致睡眠音效",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#極致睡眠音效",
+        "#雨聲",
+        "#失眠",
+        "#放鬆",
+        "#注意力不足",
+        "#Sereno極致睡眠音效"
+      ],
+      "keywords": [
+        "雨聲",
+        "失眠",
+        "放鬆",
+        "注意力不足",
+        "放鬆音樂",
+        "冥想"
+      ],
+      "keyline": "極致睡眠音效",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "聽不出循環的 雨聲",
+          "benefit": "數十種聲音 任你挑"
+        },
+        {
+          "id": "b",
+          "lead": "數十種聲音 任你挑",
+          "benefit": "混出 1000+ 種音景"
+        },
+        {
+          "id": "c",
+          "lead": "完全離線",
+          "benefit": "數十種聲音 任你挑"
+        }
       ]
     },
     "shotinbox/en": {
@@ -1131,9 +3580,38 @@
       "name": "ShotInbox AI: Sort Screenshots",
       "search": "ShotInbox",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#SortScreenshots",
+        "#Organizer",
+        "#Manager",
+        "#Duplicate",
+        "#Similar",
+        "#ShotInbox"
+      ],
+      "keywords": [
+        "organizer",
+        "manager",
+        "duplicate",
+        "similar",
+        "text",
+        "receipts"
+      ],
+      "keyline": "OCR Search & Photo Cleaner",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Can't find that screenshot again?",
+          "benefit": "Search the text inside them"
+        },
+        {
+          "id": "b",
+          "lead": "Search the text inside them",
+          "benefit": "Receipts, tickets… all sorted"
+        },
+        {
+          "id": "c",
+          "lead": "Done with it? Clear it out",
+          "benefit": "Search the text inside them"
+        }
       ]
     },
     "shotinbox/zh-Hant": {
@@ -1145,9 +3623,38 @@
       "name": "ShotInbox AI：截圖整理",
       "search": "ShotInbox",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#相簿",
+        "#整理",
+        "#照片",
+        "#清理",
+        "#重複",
+        "#ShotInbox"
+      ],
+      "keywords": [
+        "相簿",
+        "整理",
+        "照片",
+        "清理",
+        "重複",
+        "相似"
+      ],
+      "keyline": "本機截圖分類、OCR搜尋與時間軸",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "那張截圖 又找不到了？",
+          "benefit": "截圖裡的文字 也搜得到"
+        },
+        {
+          "id": "b",
+          "lead": "截圖裡的文字 也搜得到",
+          "benefit": "收據、票券… 全都分好類"
+        },
+        {
+          "id": "c",
+          "lead": "處理完了？ 就清掉它",
+          "benefit": "截圖裡的文字 也搜得到"
+        }
       ]
     },
     "sononote/en": {
@@ -1159,9 +3666,38 @@
       "name": "Sono Note: Voice to Text Notes",
       "search": "Sono Note",
       "tags": [
-        "#productivity",
-        "#iphoneapps",
-        "#appstore"
+        "#Transcription",
+        "#SpeechToText",
+        "#AudioToText",
+        "#Transcribe",
+        "#Dictation",
+        "#SonoNote"
+      ],
+      "keywords": [
+        "transcription",
+        "speech to text",
+        "audio to text",
+        "transcribe",
+        "dictation",
+        "voice recorder"
+      ],
+      "keyline": "transcription · speech to text · audio to text",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Hit stop. Your note is done.",
+          "benefit": "Transcribed and tidied up"
+        },
+        {
+          "id": "b",
+          "lead": "Transcribed and tidied up",
+          "benefit": "A summary and the key points"
+        },
+        {
+          "id": "c",
+          "lead": "Action items, ready to check",
+          "benefit": "Transcribed and tidied up"
+        }
       ]
     },
     "sononote/zh-Hant": {
@@ -1173,9 +3709,38 @@
       "name": "Sono Note：錄音轉文字",
       "search": "Sono Note",
       "tags": [
-        "#效率工具",
-        "#App推薦",
-        "#iPhone"
+        "#錄音轉文字",
+        "#語音筆記",
+        "#逐字稿",
+        "#語音輸入",
+        "#會議記錄",
+        "#SonoNote"
+      ],
+      "keywords": [
+        "錄音轉文字",
+        "語音筆記",
+        "逐字稿",
+        "語音輸入",
+        "會議記錄",
+        "聽打"
+      ],
+      "keyline": "語音轉文字・錄音筆記",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "錄音一停 筆記馬上好",
+          "benefit": "自動轉文字 再整理乾淨"
+        },
+        {
+          "id": "b",
+          "lead": "自動轉文字 再整理乾淨",
+          "benefit": "摘要和重點 一次給你"
+        },
+        {
+          "id": "c",
+          "lead": "待辦事項 直接幫你列好",
+          "benefit": "自動轉文字 再整理乾淨"
+        }
       ]
     },
     "stayclock/en": {
@@ -1187,9 +3752,38 @@
       "name": "Stay Clock: Flip Desk Clock",
       "search": "Stay Clock",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#FlipDeskClock",
+        "#Nightstand",
+        "#Standby",
+        "#Dock",
+        "#Charging",
+        "#StayClock"
+      ],
+      "keywords": [
+        "nightstand",
+        "standby",
+        "dock",
+        "charging",
+        "bedside",
+        "oled"
+      ],
+      "keyline": "Always-on time and calendar",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Phone charging? Make it a bedside clock",
+          "benefit": "Big time and a month calendar"
+        },
+        {
+          "id": "b",
+          "lead": "Big time and a month calendar",
+          "benefit": "Flip card faces and more"
+        },
+        {
+          "id": "c",
+          "lead": "Same face on StandBy",
+          "benefit": "Big time and a month calendar"
+        }
       ]
     },
     "stayclock/zh-Hant": {
@@ -1201,9 +3795,38 @@
       "name": "Stay Clock:翻頁桌鐘",
       "search": "Stay Clock",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#翻頁桌鐘",
+        "#數位時鐘",
+        "#床頭時鐘",
+        "#翻頁時鐘",
+        "#充電座擺飾",
+        "#StayClock"
+      ],
+      "keywords": [
+        "數位時鐘",
+        "床頭時鐘",
+        "翻頁時鐘",
+        "充電座擺飾",
+        "桌面小工具",
+        "夜燈時鐘"
+      ],
+      "keyline": "全天顯示時間與行事曆",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "手機在充電？ 讓它變床頭鐘",
+          "benefit": "大字時間 配上整月行事曆"
+        },
+        {
+          "id": "b",
+          "lead": "大字時間 配上整月行事曆",
+          "benefit": "翻頁錶面 還有更多"
+        },
+        {
+          "id": "c",
+          "lead": "StandBy 也是 同一款錶面",
+          "benefit": "大字時間 配上整月行事曆"
+        }
       ]
     },
     "tripbeelite/en": {
@@ -1215,9 +3838,33 @@
       "name": "TripBee Lite: Trip Planner",
       "search": "TripBee Lite",
       "tags": [
-        "#travel",
-        "#iphoneapps",
-        "#appstore"
+        "#TripPlanner",
+        "#Itinerary",
+        "#Travel",
+        "#PackingList",
+        "#Vacation",
+        "#TripBeeLite"
+      ],
+      "keywords": [
+        "trip planner",
+        "itinerary",
+        "travel",
+        "packing list",
+        "vacation",
+        "tickets"
+      ],
+      "keyline": "Trip Planner",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "POV: you're the planner friend",
+          "benefit": "Every day on one timeline"
+        },
+        {
+          "id": "b",
+          "lead": "Every day on one timeline",
+          "benefit": "Reminders in local time"
+        }
       ]
     },
     "tripbeelite/zh-Hant": {
@@ -1229,9 +3876,33 @@
       "name": "TripBee Lite：旅程規劃",
       "search": "TripBee Lite 旅程規劃",
       "tags": [
-        "#旅行",
-        "#App推薦",
-        "#iPhone"
+        "#旅程規劃",
+        "#行程表",
+        "#自由行",
+        "#旅遊",
+        "#打包清單",
+        "#TripBeeLite旅程規劃"
+      ],
+      "keywords": [
+        "旅程規劃",
+        "行程表",
+        "自由行",
+        "旅遊",
+        "打包清單",
+        "機票"
+      ],
+      "keyline": "旅程規劃",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "每次出遊都是你 排行程？",
+          "benefit": "整趟行程 一條時間軸"
+        },
+        {
+          "id": "b",
+          "lead": "整趟行程 一條時間軸",
+          "benefit": "提醒跟著 當地時間走"
+        }
       ]
     },
     "tripplanet/en": {
@@ -1243,9 +3914,38 @@
       "name": "Trip Planet: Kids Quest",
       "search": "Trip Planet",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#WorldTravel",
+        "#FamilyTravel",
+        "#TripPlanner",
+        "#RoadTrip",
+        "#Journal",
+        "#TripPlanet"
+      ],
+      "keywords": [
+        "family travel",
+        "trip planner",
+        "road trip",
+        "journal",
+        "adventure",
+        "missions"
+      ],
+      "keyline": "Family travel adventure",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "“Are we there yet?” Make it a quest",
+          "benefit": "Flight-day missions in one tap"
+        },
+        {
+          "id": "b",
+          "lead": "Flight-day missions in one tap",
+          "benefit": "Mom & Dad plan together"
+        },
+        {
+          "id": "c",
+          "lead": "Tiny missions, big smiles",
+          "benefit": "Flight-day missions in one tap"
+        }
       ]
     },
     "tripplanet/zh-Hant": {
@@ -1257,9 +3957,38 @@
       "name": "Trip Planet 親子旅行遊戲",
       "search": "Trip Planet 親子旅行遊戲",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#家庭旅行",
+        "#旅行計劃",
+        "#公路旅行",
+        "#雜誌",
+        "#冒險",
+        "#TripPlanet親子旅行遊戲"
+      ],
+      "keywords": [
+        "家庭旅行",
+        "旅行計劃",
+        "公路旅行",
+        "雜誌",
+        "冒險",
+        "使命"
+      ],
+      "keyline": "家庭旅行冒險",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "「到了沒？」 讓旅途變冒險",
+          "benefit": "搭機任務包 一鍵加入"
+        },
+        {
+          "id": "b",
+          "lead": "搭機任務包 一鍵加入",
+          "benefit": "爸媽各用手機 一起規劃"
+        },
+        {
+          "id": "c",
+          "lead": "小小任務 換來大大笑容",
+          "benefit": "搭機任務包 一鍵加入"
+        }
       ]
     },
     "wifiaidlite/en": {
@@ -1271,9 +4000,38 @@
       "name": "WiFi Aid Lite: Network Check",
       "search": "WiFi Aid Lite",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#NetworkCheck",
+        "#Internet",
+        "#Outage",
+        "#Router",
+        "#Troubleshoot",
+        "#WiFiAidLite"
+      ],
+      "keywords": [
+        "internet",
+        "outage",
+        "router",
+        "troubleshoot",
+        "latency",
+        "jitter"
+      ],
+      "keyline": "Network Check",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Wi-Fi slow again?",
+          "benefit": "Wi-Fi, DNS or internet?"
+        },
+        {
+          "id": "b",
+          "lead": "Wi-Fi, DNS or internet?",
+          "benefit": "…or just one site?"
+        },
+        {
+          "id": "c",
+          "lead": "Plus what to do next",
+          "benefit": "Wi-Fi, DNS or internet?"
+        }
       ]
     },
     "wifiaidlite/zh-Hant": {
@@ -1285,9 +4043,38 @@
       "name": "WiFi Aid Lite",
       "search": "WiFi Aid Lite",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#網路故障",
+        "#斷線",
+        "#路由器",
+        "#連線測試",
+        "#延遲",
+        "#WiFiAidLite"
+      ],
+      "keywords": [
+        "網路故障",
+        "斷線",
+        "路由器",
+        "連線測試",
+        "延遲",
+        "抖動"
+      ],
+      "keyline": "網路診斷與連線證據",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "網路又卡了？",
+          "benefit": "Wi-Fi、DNS 還是網際網路？"
+        },
+        {
+          "id": "b",
+          "lead": "Wi-Fi、DNS 還是網際網路？",
+          "benefit": "還是網站本身？"
+        },
+        {
+          "id": "c",
+          "lead": "還告訴你下一步",
+          "benefit": "Wi-Fi、DNS 還是網際網路？"
+        }
       ]
     },
     "wordmatelite/en": {
@@ -1299,9 +4086,38 @@
       "name": "Wordmate Lite: Vocabulary",
       "search": "Wordmate Lite",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#Vocabulary",
+        "#Language",
+        "#Spanish",
+        "#French",
+        "#Japanese",
+        "#WordmateLite"
+      ],
+      "keywords": [
+        "language",
+        "spanish",
+        "french",
+        "japanese",
+        "flashcard",
+        "phrase"
+      ],
+      "keyline": "Learn 5 words a day, offline",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "5 words a day. That's it.",
+          "benefit": "Done in one minute"
+        },
+        {
+          "id": "b",
+          "lead": "Done in one minute",
+          "benefit": "Watch your streak grow"
+        },
+        {
+          "id": "c",
+          "lead": "Pick from 44 languages",
+          "benefit": "Done in one minute"
+        }
       ]
     },
     "wordmatelite/zh-Hant": {
@@ -1313,9 +4129,38 @@
       "name": "Wordmate Lite 每天五個單字",
       "search": "Wordmate Lite 單字",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#背單字",
+        "#英文",
+        "#學日文",
+        "#韓文",
+        "#西班牙文",
+        "#WordmateLite單字"
+      ],
+      "keywords": [
+        "背單字",
+        "英文",
+        "學日文",
+        "韓文",
+        "西班牙文",
+        "法文"
+      ],
+      "keyline": "44 種語言，一分鐘的字彙習慣",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "每天只背 5 個單字",
+          "benefit": "一分鐘就練完"
+        },
+        {
+          "id": "b",
+          "lead": "一分鐘就練完",
+          "benefit": "連續天數往上加"
+        },
+        {
+          "id": "c",
+          "lead": "44 種語言任選",
+          "benefit": "一分鐘就練完"
+        }
       ]
     },
     "zipbox/en": {
@@ -1327,9 +4172,38 @@
       "name": "Zipbox: Unzip RAR, ZIP & 7z",
       "search": "Zipbox",
       "tags": [
-        "#iphoneapps",
-        "#appstore",
-        "#ios"
+        "#UnzipRARZIP7z",
+        "#Extractor",
+        "#Unarchiver",
+        "#Decompress",
+        "#Unpack",
+        "#Zipbox"
+      ],
+      "keywords": [
+        "extractor",
+        "unarchiver",
+        "decompress",
+        "unpack",
+        "7zip",
+        "unrar"
+      ],
+      "keyline": "Unzip RAR, ZIP & 7z",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Need one file from a ZIP?",
+          "benefit": "Peek inside, take only that one"
+        },
+        {
+          "id": "b",
+          "lead": "Peek inside, take only that one",
+          "benefit": "Create encrypted ZIP or 7z"
+        },
+        {
+          "id": "c",
+          "lead": "ZIP, RAR, 7z… 13 formats",
+          "benefit": "Peek inside, take only that one"
+        }
       ]
     },
     "zipbox/zh-Hant": {
@@ -1341,10 +4215,2466 @@
       "name": "Zipbox 解壓縮：RAR ZIP 7z",
       "search": "Zipbox 解壓縮",
       "tags": [
-        "#App推薦",
-        "#iPhone",
-        "#iOS"
+        "#壓縮檔",
+        "#檔案管理員",
+        "#中文亂碼",
+        "#密碼保護",
+        "#分卷",
+        "#Zipbox解壓縮"
+      ],
+      "keywords": [
+        "壓縮檔",
+        "檔案管理員",
+        "中文亂碼",
+        "密碼保護",
+        "分卷",
+        "批次"
+      ],
+      "keyline": "零廣告，內容先看再處理",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "壓縮檔裡 只要一個檔？",
+          "benefit": "先看裡面有什麼 只取那一個"
+        },
+        {
+          "id": "b",
+          "lead": "先看裡面有什麼 只取那一個",
+          "benefit": "也能壓縮成 加密 ZIP"
+        },
+        {
+          "id": "c",
+          "lead": "ZIP、RAR、7z… 支援 13 種格式",
+          "benefit": "先看裡面有什麼 只取那一個"
+        }
       ]
+    }
+  },
+  "seo": {
+    "aibriefpack": {
+      "en": {
+        "keywords": [
+          "prompt",
+          "summary",
+          "summarizer",
+          "document",
+          "notes",
+          "screenshot"
+        ],
+        "keyline": "AI Prompt from Files",
+        "tags": [
+          "#AIPromptFromFiles",
+          "#Prompt",
+          "#Summary",
+          "#Summarizer",
+          "#Document",
+          "#AIBrief"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "總結",
+          "摘要",
+          "文件",
+          "筆記",
+          "截圖",
+          "文字擷取"
+        ],
+        "keyline": "把資料整理成清晰脈絡",
+        "tags": [
+          "#檔案轉AI提示詞",
+          "#總結",
+          "#摘要",
+          "#文件",
+          "#筆記",
+          "#AIBrief"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "要約",
+          "まとめ",
+          "文書",
+          "ノート",
+          "スクリーンショット",
+          "文字抽出"
+        ],
+        "keyline": "資料から AI プロンプト",
+        "tags": [
+          "#資料からAIプロンプト",
+          "#要約",
+          "#まとめ",
+          "#文書",
+          "#ノート",
+          "#AIBrief"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "요약",
+          "문서",
+          "메모",
+          "스크린샷",
+          "텍스트추출",
+          "이미지문자인식"
+        ],
+        "keyline": "파일을 AI 프롬프트로",
+        "tags": [
+          "#파일을AI프롬프트로",
+          "#요약",
+          "#문서",
+          "#메모",
+          "#스크린샷",
+          "#AIBrief"
+        ]
+      }
+    },
+    "aim990": {
+      "ja": {
+        "keywords": [
+          "TOEIC",
+          "英語",
+          "試験対策",
+          "リスニング",
+          "リーディング",
+          "勉強法"
+        ],
+        "keyline": "TOEIC対策",
+        "tags": [
+          "#TOEIC対策",
+          "#TOEIC",
+          "#英語",
+          "#試験対策",
+          "#リスニング",
+          "#Aim990"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "토익",
+          "영어",
+          "시험 준비",
+          "학습 코치",
+          "리스닝",
+          "리딩"
+        ],
+        "keyline": "30일 완벽 학습 코치",
+        "tags": [
+          "#토익준비의비밀",
+          "#토익",
+          "#영어",
+          "#시험준비",
+          "#학습코치",
+          "#Aim990"
+        ]
+      }
+    },
+    "battai": {
+      "ja": {
+        "keywords": [
+          "バッテリー状態スコア",
+          "最大容量",
+          "充放電回数",
+          "充電ケア",
+          "充電範囲",
+          "充電速度"
+        ],
+        "keyline": "バッテリー状態スコア",
+        "tags": [
+          "#バッテリー状態スコア",
+          "#最大容量",
+          "#充放電回数",
+          "#充電ケア",
+          "#充電範囲",
+          "#BattAIバッテリー"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "배터리 상태 점수",
+          "성능 최대치",
+          "사이클 수",
+          "충전 관리",
+          "충전 구간",
+          "충전 속도"
+        ],
+        "keyline": "배터리 상태 점수",
+        "tags": [
+          "#배터리상태점수",
+          "#성능최대치",
+          "#사이클수",
+          "#충전관리",
+          "#충전구간",
+          "#BattAI배터리"
+        ]
+      }
+    },
+    "caldaily": {
+      "ja": {
+        "keywords": [
+          "計算機",
+          "割引",
+          "消費税",
+          "チップ",
+          "割り勘",
+          "ローン"
+        ],
+        "keyline": "計算機 · 割引 · 消費税",
+        "tags": [
+          "#計算機",
+          "#割引",
+          "#消費税",
+          "#チップ",
+          "#割り勘",
+          "#CalDaily電卓"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "메모리",
+          "할인",
+          "부가세",
+          "더치페이",
+          "대출",
+          "단위변환"
+        ],
+        "keyline": "메모리 · 할인 · 부가세",
+        "tags": [
+          "#메모리",
+          "#할인",
+          "#부가세",
+          "#더치페이",
+          "#대출",
+          "#CalDaily계산기"
+        ]
+      }
+    },
+    "cvdesk": {
+      "ja": {
+        "keywords": [
+          "履歴書作成",
+          "転職",
+          "履歴書テンプレート",
+          "自己pr",
+          "就活",
+          "面接"
+        ],
+        "keyline": "ATS履歴書・職務経歴書",
+        "tags": [
+          "#ATS履歴書職務経歴書",
+          "#履歴書作成",
+          "#転職",
+          "#履歴書テンプレート",
+          "#自己pr",
+          "#CVDeskATS履歴書"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "이력서 양식",
+          "이력서 작성",
+          "이력서 템플릿",
+          "취업",
+          "면접",
+          "경력기술서"
+        ],
+        "keyline": "ATS 이력서 제작",
+        "tags": [
+          "#ATS이력서제작",
+          "#이력서양식",
+          "#이력서작성",
+          "#이력서템플릿",
+          "#취업",
+          "#CVDeskATS이력서"
+        ]
+      }
+    },
+    "cyca": {
+      "ja": {
+        "keywords": [
+          "生理管理",
+          "生理周期",
+          "排卵日",
+          "排卵予測",
+          "生理予測",
+          "生理日"
+        ],
+        "keyline": "排卵・生理日・PMS予測カレンダー",
+        "tags": [
+          "#生理管理",
+          "#生理周期",
+          "#排卵日",
+          "#排卵予測",
+          "#生理予測",
+          "#Cyca生理"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "생리주기",
+          "생리달력",
+          "배란일",
+          "가임기",
+          "생리예측",
+          "월경"
+        ],
+        "keyline": "배란일·생리달력·PMS 예측",
+        "tags": [
+          "#생리주기",
+          "#생리달력",
+          "#배란일",
+          "#가임기",
+          "#생리예측",
+          "#Cyca생리"
+        ]
+      }
+    },
+    "dailymate": {
+      "en": {
+        "keywords": [
+          "conversation",
+          "speaking",
+          "pronunciation",
+          "listening",
+          "travel",
+          "beginner"
+        ],
+        "keyline": "Language Phrases",
+        "tags": [
+          "#LanguagePhrases",
+          "#Conversation",
+          "#Speaking",
+          "#Pronunciation",
+          "#Listening",
+          "#DailyMatePhrases"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "學英文",
+          "英文口說",
+          "旅遊英文",
+          "實用短句",
+          "發音聆聽",
+          "聽力"
+        ],
+        "keyline": "用句子學語言",
+        "tags": [
+          "#用句子學語言",
+          "#學英文",
+          "#英文口說",
+          "#旅遊英文",
+          "#實用短句",
+          "#DailyMate用句子學語言"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "英会話",
+          "英語学習",
+          "旅行英語",
+          "日常会話",
+          "発音",
+          "リスニング"
+        ],
+        "keyline": "文で身につく語学",
+        "tags": [
+          "#文で身につく語学",
+          "#英会話",
+          "#英語学習",
+          "#旅行英語",
+          "#日常会話",
+          "#DailyMate文で身につく語学"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "영어회화",
+          "영어공부",
+          "여행영어",
+          "일상회화",
+          "발음듣기",
+          "리스닝"
+        ],
+        "keyline": "문장으로 배우는 언어",
+        "tags": [
+          "#문장으로배우는언어",
+          "#영어회화",
+          "#영어공부",
+          "#여행영어",
+          "#일상회화",
+          "#DailyMate문장으로배우는언어"
+        ]
+      }
+    },
+    "dailymatelite": {
+      "ja": {
+        "keywords": [
+          "英会話",
+          "話す",
+          "観光",
+          "発音",
+          "聞き取り",
+          "英語"
+        ],
+        "keyline": "ひとこと練習",
+        "tags": [
+          "#ひとこと練習",
+          "#英会話",
+          "#話す",
+          "#観光",
+          "#発音",
+          "#DailyMateLiteひとこと練習"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "말하기",
+          "관광",
+          "발음",
+          "듣기",
+          "영어",
+          "일본어"
+        ],
+        "keyline": "바로 쓰는 한마디",
+        "tags": [
+          "#바로쓰는한마디",
+          "#말하기",
+          "#관광",
+          "#발음",
+          "#듣기",
+          "#DailyMateLite한마디"
+        ]
+      }
+    },
+    "dbhalo": {
+      "ja": {
+        "keywords": [
+          "騒音計",
+          "音量測定",
+          "音圧レベル",
+          "騒音測定",
+          "周波数分析",
+          "スペクトル分析"
+        ],
+        "keyline": "デシベル測定",
+        "tags": [
+          "#デシベル測定",
+          "#騒音計",
+          "#音量測定",
+          "#音圧レベル",
+          "#騒音測定",
+          "#dBHaloデシベル測定"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "생활소음",
+          "데시벨",
+          "음량측정",
+          "층간소음",
+          "소음계",
+          "주파수분석"
+        ],
+        "keyline": "소음 측정기",
+        "tags": [
+          "#소음측정기",
+          "#생활소음",
+          "#데시벨",
+          "#음량측정",
+          "#층간소음",
+          "#dBHalo소음측정기"
+        ]
+      }
+    },
+    "gmoney": {
+      "en": {
+        "keywords": [
+          "expense tracker",
+          "budget",
+          "money manager",
+          "currency converter",
+          "exchange rate",
+          "spending tracker"
+        ],
+        "keyline": "Budget, Expenses & Currency",
+        "tags": [
+          "#SpendingBudget",
+          "#ExpenseTracker",
+          "#Budget",
+          "#MoneyManager",
+          "#CurrencyConverter",
+          "#GMoney"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "記帳",
+          "記帳app",
+          "預算",
+          "理財",
+          "記帳軟體",
+          "開銷"
+        ],
+        "keyline": "記帳、預算、理財與匯率換算",
+        "tags": [
+          "#日常記帳預算匯率",
+          "#記帳",
+          "#記帳app",
+          "#預算",
+          "#理財",
+          "#GMoney記帳"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "家計簿",
+          "家計簿アプリ",
+          "予算",
+          "支出管理",
+          "節約",
+          "お小遣い帳"
+        ],
+        "keyline": "家計簿・予算・節約・為替換算",
+        "tags": [
+          "#家計簿予算為替",
+          "#家計簿",
+          "#家計簿アプリ",
+          "#予算",
+          "#支出管理",
+          "#GMoney家計簿"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "가계부",
+          "예산",
+          "지출관리",
+          "용돈기입장",
+          "환율",
+          "환율계산기"
+        ],
+        "keyline": "가계부·예산·환율 계산기",
+        "tags": [
+          "#가계부예산환율",
+          "#가계부",
+          "#예산",
+          "#지출관리",
+          "#용돈기입장",
+          "#GMoney가계부"
+        ]
+      }
+    },
+    "hourstag": {
+      "en": {
+        "keywords": [
+          "budget",
+          "spending tracker",
+          "savings",
+          "expense tracker",
+          "money manager",
+          "budget planner"
+        ],
+        "keyline": "Budget, Spending & Savings",
+        "tags": [
+          "#HoursToBuy",
+          "#Budget",
+          "#SpendingTracker",
+          "#Savings",
+          "#ExpenseTracker",
+          "#HoursTagHoursToBuy"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "記帳",
+          "預算",
+          "省錢",
+          "理財",
+          "儲蓄",
+          "存錢"
+        ],
+        "keyline": "預算、記帳、省錢與儲蓄",
+        "tags": [
+          "#價格換工時",
+          "#記帳",
+          "#預算",
+          "#省錢",
+          "#理財",
+          "#HoursTag價格換工時"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "節約",
+          "家計簿",
+          "予算",
+          "貯金",
+          "節約術",
+          "支出管理"
+        ],
+        "keyline": "節約・家計簿・予算・貯金",
+        "tags": [
+          "#価格を時間に",
+          "#節約",
+          "#家計簿",
+          "#予算",
+          "#貯金",
+          "#HoursTag価格を時間に"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "절약",
+          "가계부",
+          "예산",
+          "저축",
+          "소비",
+          "돈관리"
+        ],
+        "keyline": "절약·가계부·예산·저축",
+        "tags": [
+          "#가격을시간으로",
+          "#절약",
+          "#가계부",
+          "#예산",
+          "#저축",
+          "#HoursTag가격을시간으로"
+        ]
+      }
+    },
+    "hourstaglite": {
+      "en": {
+        "keywords": [
+          "budget",
+          "spending tracker",
+          "savings",
+          "expense tracker",
+          "money manager",
+          "budget planner"
+        ],
+        "keyline": "Price in Hours",
+        "tags": [
+          "#PriceInHours",
+          "#Budget",
+          "#SpendingTracker",
+          "#Savings",
+          "#ExpenseTracker"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "記帳",
+          "預算",
+          "省錢",
+          "理財",
+          "儲蓄",
+          "存錢"
+        ],
+        "keyline": "買前先算工時",
+        "tags": [
+          "#買前先算工時",
+          "#記帳",
+          "#預算",
+          "#省錢",
+          "#理財"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "節約",
+          "家計簿",
+          "予算",
+          "貯金",
+          "節約術",
+          "支出管理"
+        ],
+        "keyline": "働く時間で見る値段",
+        "tags": [
+          "#働く時間で見る値段",
+          "#節約",
+          "#家計簿",
+          "#予算",
+          "#貯金"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "절약",
+          "가계부",
+          "예산",
+          "저축",
+          "소비",
+          "돈관리"
+        ],
+        "keyline": "노동시간으로 보는 가격",
+        "tags": [
+          "#노동시간으로보는가격",
+          "#절약",
+          "#가계부",
+          "#예산",
+          "#저축"
+        ]
+      }
+    },
+    "ledmovingtext": {
+      "en": {
+        "keywords": [
+          "banner",
+          "scroller",
+          "billboard",
+          "ticker",
+          "neon",
+          "signage"
+        ],
+        "keyline": "banner · scroller · billboard",
+        "tags": [
+          "#Banner",
+          "#Scroller",
+          "#Billboard",
+          "#Ticker",
+          "#Neon",
+          "#LEDMovingText"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "跑馬燈",
+          "字幕機",
+          "電子看板",
+          "手燈",
+          "舉牌",
+          "接機牌"
+        ],
+        "keyline": "跑馬燈 · 字幕機 · 電子看板",
+        "tags": [
+          "#跑馬燈",
+          "#字幕機",
+          "#電子看板",
+          "#手燈",
+          "#舉牌",
+          "#LEDMovingText"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "カンペ",
+          "うちわ文字",
+          "応援ボード",
+          "推し活",
+          "ライブ",
+          "流れる文字"
+        ],
+        "keyline": "画面がそのまま電光掲示板に",
+        "tags": [
+          "#カンペ",
+          "#うちわ文字",
+          "#応援ボード",
+          "#推し活",
+          "#ライブ",
+          "#LEDMovingText"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "응원판",
+          "손팻말",
+          "플래카드",
+          "현수막",
+          "네온사인",
+          "슬로건"
+        ],
+        "keyline": "응원판 · 손팻말 · 플래카드",
+        "tags": [
+          "#응원판",
+          "#손팻말",
+          "#플래카드",
+          "#현수막",
+          "#네온사인",
+          "#LEDMovingText"
+        ]
+      }
+    },
+    "lockhour": {
+      "zh-Hant": {
+        "keywords": [
+          "專注",
+          "番茄鐘",
+          "螢幕使用時間",
+          "app鎖",
+          "時間管理",
+          "自律"
+        ],
+        "keyline": "專注計時・App鎖與螢幕時間",
+        "tags": [
+          "#封鎖App專注計時",
+          "#專注",
+          "#番茄鐘",
+          "#螢幕使用時間",
+          "#app鎖",
+          "#LockHourPro封鎖App"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "集中",
+          "ポモドーロ",
+          "スクリーンタイム",
+          "アプリ制限",
+          "集中タイマー",
+          "時間管理"
+        ],
+        "keyline": "アプリ制限＆集中タイマー",
+        "tags": [
+          "#アプリ制限集中タイマー",
+          "#集中",
+          "#ポモドーロ",
+          "#スクリーンタイム",
+          "#アプリ制限",
+          "#LockHourProアプリ制限"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "앱 차단",
+          "집중",
+          "스크린타임",
+          "뽀모도로",
+          "집중 타이머",
+          "시간 관리"
+        ],
+        "keyline": "앱 차단 · 집중 타이머",
+        "tags": [
+          "#앱차단집중타이머",
+          "#앱차단",
+          "#집중",
+          "#스크린타임",
+          "#뽀모도로",
+          "#LockHourPro앱차단"
+        ]
+      }
+    },
+    "lumibopomofo": {
+      "ja": {
+        "keywords": [
+          "zhuyin",
+          "ピンイン",
+          "中国語発音",
+          "子供中国語",
+          "中国語学習",
+          "声調"
+        ],
+        "keyline": "zhuyin · ピンイン · 中国語発音",
+        "tags": [
+          "#Zhuyin",
+          "#ピンイン",
+          "#中国語発音",
+          "#子供中国語",
+          "#中国語学習",
+          "#Lumiボポモフォ"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "zhuyin",
+          "병음",
+          "중국어발음",
+          "어린이중국어",
+          "중국어공부",
+          "성조"
+        ],
+        "keyline": "zhuyin · 병음 · 중국어발음",
+        "tags": [
+          "#Zhuyin",
+          "#병음",
+          "#중국어발음",
+          "#어린이중국어",
+          "#중국어공부",
+          "#Lumi보포모포"
+        ]
+      }
+    },
+    "lumibopomofopro": {
+      "en": {
+        "keywords": [
+          "chinese for kids",
+          "learn chinese",
+          "mandarin for kids",
+          "chinese phonics",
+          "pinyin",
+          "mandarin"
+        ],
+        "keyline": "Zhuyin Phonics Game for Kids",
+        "tags": [
+          "#Zhuyin",
+          "#ChineseForKids",
+          "#LearnChinese",
+          "#MandarinForKids",
+          "#ChinesePhonics",
+          "#LumiBopomofoPro"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "注音",
+          "ㄅㄆㄇ",
+          "注音符號",
+          "幼兒學注音",
+          "學前教育",
+          "識字"
+        ],
+        "keyline": "幼兒注音遊戲・拼讀聲調",
+        "tags": [
+          "#注音",
+          "#ㄅㄆㄇ",
+          "#注音符號",
+          "#幼兒學注音",
+          "#學前教育",
+          "#Lumi注音星球Pro"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "ボポモフォ",
+          "中国語",
+          "ピンイン",
+          "中国語発音",
+          "子供中国語",
+          "中国語学習"
+        ],
+        "keyline": "ボポモフォ · 中国語 · ピンイン",
+        "tags": [
+          "#ボポモフォ",
+          "#中国語",
+          "#ピンイン",
+          "#中国語発音",
+          "#子供中国語",
+          "#LumiBopomofoPro"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "보포모포",
+          "중국어",
+          "병음",
+          "중국어발음",
+          "어린이중국어",
+          "중국어공부"
+        ],
+        "keyline": "보포모포 · 중국어 · 병음",
+        "tags": [
+          "#보포모포",
+          "#중국어",
+          "#병음",
+          "#중국어발음",
+          "#어린이중국어",
+          "#LumiBopomofoPro"
+        ]
+      }
+    },
+    "lumiletters": {
+      "ja": {
+        "keywords": [
+          "フォニックス",
+          "英語幼児",
+          "アルファベット",
+          "英語耳",
+          "子供英語",
+          "発音"
+        ],
+        "keyline": "こども英語ABC",
+        "tags": [
+          "#こども英語ABC",
+          "#フォニックス",
+          "#英語幼児",
+          "#アルファベット",
+          "#英語耳",
+          "#LumiレターLite"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "알파벳",
+          "글자",
+          "영어발음",
+          "읽기",
+          "영어학습",
+          "어린이영어"
+        ],
+        "keyline": "글자·따라쓰기 놀이",
+        "tags": [
+          "#어린이영어ABC",
+          "#알파벳",
+          "#글자",
+          "#영어발음",
+          "#읽기",
+          "#Lumi레터Lite"
+        ]
+      }
+    },
+    "lumiletterspro": {
+      "en": {
+        "keywords": [
+          "alphabet",
+          "letter sounds",
+          "learn to read",
+          "tracing",
+          "handwriting",
+          "reading"
+        ],
+        "keyline": "ABC Phonics: Trace & Read",
+        "tags": [
+          "#ABCPhonics",
+          "#Alphabet",
+          "#LetterSounds",
+          "#LearnToRead",
+          "#Tracing",
+          "#LumiLettersPro"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "英文字母",
+          "phonics",
+          "英文發音",
+          "學英文",
+          "兒童英文",
+          "幼兒英文"
+        ],
+        "keyline": "ABC啟蒙",
+        "tags": [
+          "#ABC啟蒙",
+          "#英文字母",
+          "#Phonics",
+          "#英文發音",
+          "#學英文",
+          "#Lumi字母星球Pro"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "アルファベット",
+          "英語",
+          "えいご",
+          "文字",
+          "英語発音",
+          "なぞり書き"
+        ],
+        "keyline": "ABCフォニックス読み書き",
+        "tags": [
+          "#ABCフォニックス",
+          "#アルファベット",
+          "#英語",
+          "#えいご",
+          "#文字",
+          "#LumiレターPro"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "알파벳",
+          "영어",
+          "글자",
+          "영어발음",
+          "영어학습",
+          "어린이영어"
+        ],
+        "keyline": "ABC 파닉스 읽기·쓰기",
+        "tags": [
+          "#ABC파닉스",
+          "#알파벳",
+          "#영어",
+          "#글자",
+          "#영어발음",
+          "#Lumi레터Pro"
+        ]
+      }
+    },
+    "lumimath": {
+      "ja": {
+        "keywords": [
+          "さんすう",
+          "幼児数",
+          "数える",
+          "たしざん",
+          "かずあそび",
+          "知育"
+        ],
+        "keyline": "幼児向け算数知育ゲーム",
+        "tags": [
+          "#体験版",
+          "#さんすう",
+          "#幼児数",
+          "#数える",
+          "#たしざん",
+          "#Lumi算数プラネット体験版"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "유아수학",
+          "아동수학",
+          "수학게임",
+          "셈하기",
+          "덧셈",
+          "뺄셈"
+        ],
+        "keyline": "체험판",
+        "tags": [
+          "#체험판",
+          "#유아수학",
+          "#아동수학",
+          "#수학게임",
+          "#셈하기",
+          "#Lumi수학행성체험판"
+        ]
+      }
+    },
+    "lumimathpro": {
+      "en": {
+        "keywords": [
+          "logic",
+          "reasoning",
+          "olympiad",
+          "multiplication",
+          "preschool",
+          "montessori"
+        ],
+        "keyline": "Kids Numbers",
+        "tags": [
+          "#KidsNumbers",
+          "#Logic",
+          "#Reasoning",
+          "#Olympiad",
+          "#Multiplication",
+          "#LumiMathPro"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "幼兒數學",
+          "數學啟蒙",
+          "學前數學",
+          "加減乘除",
+          "珠心算",
+          "心算"
+        ],
+        "keyline": "兒童數學",
+        "tags": [
+          "#兒童數學",
+          "#幼兒數學",
+          "#數學啟蒙",
+          "#學前數學",
+          "#加減乘除",
+          "#Lumi數學星球兒童數學"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "さんすう",
+          "けいさん",
+          "幼児数",
+          "たしざん",
+          "ひきざん",
+          "かけ算"
+        ],
+        "keyline": "子供の算数",
+        "tags": [
+          "#子供の算数",
+          "#さんすう",
+          "#けいさん",
+          "#幼児数",
+          "#たしざん",
+          "#Lumiさんすうプラネット"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "유아수학",
+          "숫자공부",
+          "구구단",
+          "셈하기",
+          "더하기",
+          "빼기"
+        ],
+        "keyline": "아이 수학",
+        "tags": [
+          "#아이수학",
+          "#유아수학",
+          "#숫자공부",
+          "#구구단",
+          "#셈하기",
+          "#Lumi수학행성아이수학"
+        ]
+      }
+    },
+    "lumimissionpro": {
+      "en": {
+        "keywords": [
+          "routine chart",
+          "daily routine",
+          "chore chart",
+          "reward chart",
+          "sticker chart",
+          "morning routine"
+        ],
+        "keyline": "routine chart · daily routine · chore chart",
+        "tags": [
+          "#RoutineChart",
+          "#DailyRoutine",
+          "#ChoreChart",
+          "#RewardChart",
+          "#StickerChart",
+          "#LumiMissionPlanetPro"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "生活自理",
+          "幼兒作息",
+          "生活常規",
+          "獎勵表",
+          "貼紙表",
+          "集點獎勵"
+        ],
+        "keyline": "好習慣養成遊戲",
+        "tags": [
+          "#好習慣養成遊戲",
+          "#生活自理",
+          "#幼兒作息",
+          "#生活常規",
+          "#獎勵表",
+          "#Lumi任務星球Pro"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "こども習慣",
+          "お支度ボード",
+          "習慣化",
+          "子育て",
+          "お手伝い",
+          "ごほうびシール"
+        ],
+        "keyline": "こども習慣 · お支度ボード · 習慣化",
+        "tags": [
+          "#こども習慣",
+          "#お支度ボード",
+          "#習慣化",
+          "#子育て",
+          "#お手伝い",
+          "#Lumiミッション星Pro"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "유아 습관",
+          "습관형성",
+          "생활계획표",
+          "루틴",
+          "양치",
+          "취침"
+        ],
+        "keyline": "생활습관 게임",
+        "tags": [
+          "#생활습관게임",
+          "#유아습관",
+          "#습관형성",
+          "#생활계획표",
+          "#루틴",
+          "#Lumi미션별Pro"
+        ]
+      }
+    },
+    "lumiweather": {
+      "ja": {
+        "keywords": [
+          "天気予報",
+          "お出かけ",
+          "子供",
+          "天気",
+          "週間天気",
+          "雨雲レーダー"
+        ],
+        "keyline": "天気予報・雨雲レーダー",
+        "tags": [
+          "#天気予報",
+          "#お出かけ",
+          "#子供",
+          "#天気",
+          "#週間天気",
+          "#ルミのおてんき星"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "일기예보",
+          "실시간 날씨",
+          "날씨 앱",
+          "시간별 날씨",
+          "주간 날씨",
+          "강수확률"
+        ],
+        "keyline": "일기예보 · 실시간 날씨 · 날씨 앱",
+        "tags": [
+          "#일기예보",
+          "#실시간날씨",
+          "#날씨앱",
+          "#시간별날씨",
+          "#주간날씨",
+          "#루미날씨"
+        ]
+      }
+    },
+    "maskmyfile": {
+      "ja": {
+        "keywords": [
+          "墨消し",
+          "マスキング",
+          "塗りつぶし",
+          "隠す",
+          "秘匿化",
+          "書類"
+        ],
+        "keyline": "共有前に個人情報を削除",
+        "tags": [
+          "#共有前に個人情報を削除",
+          "#墨消し",
+          "#マスキング",
+          "#塗りつぶし",
+          "#隠す",
+          "#MaskMyFile"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "마스킹",
+          "지우기",
+          "삭제",
+          "보안보호",
+          "문서",
+          "사진"
+        ],
+        "keyline": "공유 전 개인정보 삭제",
+        "tags": [
+          "#공유전개인정보삭제",
+          "#마스킹",
+          "#지우기",
+          "#삭제",
+          "#보안보호",
+          "#MaskMyFile"
+        ]
+      }
+    },
+    "mochidonestamp": {
+      "ja": {
+        "keywords": [
+          "リマインダー",
+          "繰り返し",
+          "経過日数",
+          "家事管理",
+          "掃除記録",
+          "メンテナンス"
+        ],
+        "keyline": "いつやった？",
+        "tags": [
+          "#いつやった",
+          "#リマインダー",
+          "#繰り返し",
+          "#経過日数",
+          "#家事管理",
+          "#MochiDoneStampいつやった"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "주기 알림",
+          "반복 일정",
+          "경과일수",
+          "생활도우미",
+          "집안일",
+          "물주기"
+        ],
+        "keyline": "마지막 기록",
+        "tags": [
+          "#마지막기록",
+          "#주기알림",
+          "#반복일정",
+          "#경과일수",
+          "#생활도우미",
+          "#MochiDoneStamp마지막기록"
+        ]
+      }
+    },
+    "moneytag": {
+      "ja": {
+        "keywords": [
+          "損益計算書",
+          "案件別原価",
+          "ジョブコスト",
+          "利益率",
+          "顧客別採算",
+          "原価配賦"
+        ],
+        "keyline": "収入と支出",
+        "tags": [
+          "#収入と支出",
+          "#損益計算書",
+          "#案件別原価",
+          "#ジョブコスト",
+          "#利益率",
+          "#MoneyTag"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "손익계산서",
+          "작업별 원가",
+          "잡 코스팅",
+          "이익률",
+          "고객별 수익성",
+          "원가 배분"
+        ],
+        "keyline": "수입과 지출",
+        "tags": [
+          "#수입과지출",
+          "#손익계산서",
+          "#작업별원가",
+          "#잡코스팅",
+          "#이익률",
+          "#MoneyTag"
+        ]
+      }
+    },
+    "notesstudio100": {
+      "ja": {
+        "keywords": [
+          "メモ帳",
+          "手帳",
+          "日記",
+          "暗記",
+          "単語帳",
+          "筆記"
+        ],
+        "keyline": "メモ帳 · 手帳 · 日記",
+        "tags": [
+          "#メモ帳",
+          "#手帳",
+          "#日記",
+          "#暗記",
+          "#単語帳",
+          "#100NotesStudio"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "손글씨",
+          "메모",
+          "다이어리",
+          "플래너",
+          "오프라인",
+          "스케치"
+        ],
+        "keyline": "손글씨 · 메모 · 다이어리",
+        "tags": [
+          "#손글씨",
+          "#메모",
+          "#다이어리",
+          "#플래너",
+          "#오프라인",
+          "#100NotesStudio"
+        ]
+      }
+    },
+    "onepageppt": {
+      "ja": {
+        "keywords": [
+          "プレゼン",
+          "pptx",
+          "グラフ",
+          "図解",
+          "企画書",
+          "提案書"
+        ],
+        "keyline": "AI資料作成",
+        "tags": [
+          "#AI資料作成",
+          "#プレゼン",
+          "#Pptx",
+          "#グラフ",
+          "#図解",
+          "#OnePagePPTAI資料作成"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "pptx",
+          "프레젠테이션",
+          "보고서",
+          "기획서",
+          "제안서",
+          "차트"
+        ],
+        "keyline": "AI 발표자료",
+        "tags": [
+          "#AI발표자료",
+          "#Pptx",
+          "#프레젠테이션",
+          "#보고서",
+          "#기획서",
+          "#OnePagePPT발표자료"
+        ]
+      }
+    },
+    "photocream": {
+      "ja": {
+        "keywords": [
+          "フィルムカメラ",
+          "レトロ",
+          "写真加工",
+          "自撮り",
+          "フィルター",
+          "盛れるカメラ"
+        ],
+        "keyline": "フィルムカメラ・レトロ加工",
+        "tags": [
+          "#フィルム風フィルター",
+          "#フィルムカメラ",
+          "#レトロ",
+          "#写真加工",
+          "#自撮り",
+          "#PhotoCreamフィルム"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "필름카메라",
+          "감성카메라",
+          "빈티지",
+          "레트로",
+          "사진편집",
+          "셀카"
+        ],
+        "keyline": "필름카메라·감성 사진편집",
+        "tags": [
+          "#필름필터감성보정",
+          "#필름카메라",
+          "#감성카메라",
+          "#빈티지",
+          "#레트로",
+          "#PhotoCream필름필터"
+        ]
+      }
+    },
+    "picclear": {
+      "ja": {
+        "keywords": [
+          "写真整理",
+          "写真クリーナー",
+          "容量確保",
+          "空き容量",
+          "重複写真",
+          "類似写真"
+        ],
+        "keyline": "写真クリーナーで容量確保",
+        "tags": [
+          "#写真整理重複削除",
+          "#写真整理",
+          "#写真クリーナー",
+          "#容量確保",
+          "#空き容量",
+          "#PicClear写真整理"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "사진 정리",
+          "사진 클리너",
+          "저장공간 확보",
+          "용량 확보",
+          "중복 사진",
+          "비슷한 사진"
+        ],
+        "keyline": "사진 클리너로 용량 확보",
+        "tags": [
+          "#사진정리중복삭제",
+          "#사진정리",
+          "#사진클리너",
+          "#저장공간확보",
+          "#용량확보",
+          "#PicClear사진정리"
+        ]
+      }
+    },
+    "qrcodehalo": {
+      "ja": {
+        "keywords": [
+          "危険url",
+          "フィッシング対策",
+          "安全確認",
+          "偽サイト判別",
+          "読み取り",
+          "スキャン"
+        ],
+        "keyline": "開く前に確認",
+        "tags": [
+          "#開く前に確認",
+          "#危険url",
+          "#フィッシング対策",
+          "#安全確認",
+          "#偽サイト判別",
+          "#QRCodeHalo"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "피싱방지",
+          "링크검사",
+          "도메인검증",
+          "보안확인",
+          "큐알코드",
+          "바코드"
+        ],
+        "keyline": "열기 전 확인",
+        "tags": [
+          "#열기전확인",
+          "#피싱방지",
+          "#링크검사",
+          "#도메인검증",
+          "#보안확인",
+          "#QRCodeHalo"
+        ]
+      }
+    },
+    "savetag": {
+      "ja": {
+        "keywords": [
+          "ブックマーク",
+          "お気に入り",
+          "リーディングリスト",
+          "クリップ",
+          "情報整理",
+          "積読"
+        ],
+        "keyline": "AIであとで読む",
+        "tags": [
+          "#AIであとで読む",
+          "#ブックマーク",
+          "#お気に入り",
+          "#リーディングリスト",
+          "#クリップ",
+          "#SaveTag"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "북마크",
+          "즐겨찾기",
+          "스크랩",
+          "모아보기",
+          "읽을거리",
+          "오프라인"
+        ],
+        "keyline": "AI 링크 보관함",
+        "tags": [
+          "#AI링크보관함",
+          "#북마크",
+          "#즐겨찾기",
+          "#스크랩",
+          "#모아보기",
+          "#SaveTag"
+        ]
+      }
+    },
+    "scanto": {
+      "ja": {
+        "keywords": [
+          "スキャナー",
+          "スキャン",
+          "スキャンアプリ",
+          "書類スキャン",
+          "暗号化",
+          "文字認識"
+        ],
+        "keyline": "オフラインPDF",
+        "tags": [
+          "#オフラインPDF",
+          "#スキャナー",
+          "#スキャン",
+          "#スキャンアプリ",
+          "#書類スキャン",
+          "#ScanToProオフラインPDF"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "스캐너",
+          "스캔",
+          "스캔앱",
+          "문서스캔",
+          "암호화",
+          "문자인식"
+        ],
+        "keyline": "오프라인 PDF・OCR・구독 없음",
+        "tags": [
+          "#오프라인PDF",
+          "#스캐너",
+          "#스캔",
+          "#스캔앱",
+          "#문서스캔",
+          "#ScanToPro오프라인PDF"
+        ]
+      }
+    },
+    "sereno": {
+      "ja": {
+        "keywords": [
+          "雨音",
+          "不眠症",
+          "リラックス",
+          "瞑想",
+          "赤ちゃん",
+          "ADHD"
+        ],
+        "keyline": "スリープサウンド",
+        "tags": [
+          "#スリープサウンド",
+          "#雨音",
+          "#不眠症",
+          "#リラックス",
+          "#瞑想",
+          "#Serenoスリープサウンド"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "빗소리",
+          "불면증",
+          "집중력",
+          "명상",
+          "휴식",
+          "아기수면"
+        ],
+        "keyline": "수면 사운드",
+        "tags": [
+          "#수면사운드",
+          "#빗소리",
+          "#불면증",
+          "#집중력",
+          "#명상",
+          "#Sereno수면사운드"
+        ]
+      }
+    },
+    "shotinbox": {
+      "ja": {
+        "keywords": [
+          "スクリーンショット",
+          "写真",
+          "整理",
+          "アルバム",
+          "重複",
+          "類似"
+        ],
+        "keyline": "スクリーンショット · 写真 · 整理",
+        "tags": [
+          "#スクリーンショット",
+          "#写真",
+          "#整理",
+          "#アルバム",
+          "#重複",
+          "#ShotInbox"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "캡처",
+          "사진",
+          "정리",
+          "앨범",
+          "관리",
+          "중복"
+        ],
+        "keyline": "캡처 · 사진 · 정리",
+        "tags": [
+          "#캡처",
+          "#사진",
+          "#정리",
+          "#앨범",
+          "#관리",
+          "#ShotInbox"
+        ]
+      }
+    },
+    "snapport": {
+      "en": {
+        "keywords": [
+          "biometric",
+          "green card photo",
+          "student",
+          "badge photo",
+          "template",
+          "layout"
+        ],
+        "keyline": "Passport & ID Photos",
+        "tags": [
+          "#PassportIDPhotos",
+          "#Biometric",
+          "#GreenCardPhoto",
+          "#Student",
+          "#BadgePhoto",
+          "#Snapport"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "證件照",
+          "護照照片",
+          "簽證照片",
+          "大頭照",
+          "身分證照片",
+          "台胞證照片"
+        ],
+        "keyline": "大頭照排版・台胞證白底照片",
+        "tags": [
+          "#護照證件照",
+          "#證件照",
+          "#護照照片",
+          "#簽證照片",
+          "#大頭照",
+          "#Snapport"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "パスポート写真",
+          "ビザ写真",
+          "履歴書写真",
+          "マイナンバー写真",
+          "免許証写真",
+          "学生証写真"
+        ],
+        "keyline": "パスポート証明写真",
+        "tags": [
+          "#パスポート証明写真",
+          "#パスポート写真",
+          "#ビザ写真",
+          "#履歴書写真",
+          "#マイナンバー写真",
+          "#Snapport"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "여권사진",
+          "비자사진",
+          "신분증사진",
+          "민증사진",
+          "이력서사진",
+          "학생증사진"
+        ],
+        "keyline": "여권·신분증 사진",
+        "tags": [
+          "#여권신분증사진",
+          "#여권사진",
+          "#비자사진",
+          "#신분증사진",
+          "#민증사진",
+          "#Snapport"
+        ]
+      }
+    },
+    "sononote": {
+      "ja": {
+        "keywords": [
+          "文字起こし",
+          "ボイスレコーダー",
+          "音声認識",
+          "議事録",
+          "録音",
+          "メモ"
+        ],
+        "keyline": "音声を文字起こし・ボイスメモ",
+        "tags": [
+          "#文字起こし",
+          "#ボイスレコーダー",
+          "#音声認識",
+          "#議事録",
+          "#録音",
+          "#SonoNote"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "음성녹음",
+          "회의록",
+          "녹취",
+          "받아쓰기",
+          "음성인식",
+          "메모"
+        ],
+        "keyline": "음성을 텍스트로·음성 메모",
+        "tags": [
+          "#음성녹음",
+          "#회의록",
+          "#녹취",
+          "#받아쓰기",
+          "#음성인식",
+          "#SonoNote"
+        ]
+      }
+    },
+    "stayclock": {
+      "ja": {
+        "keywords": [
+          "置き時計",
+          "デジタル時計",
+          "目覚まし時計",
+          "ナイトスタンド",
+          "充電スタンド",
+          "ウィジェット"
+        ],
+        "keyline": "パタパタ卓上時計",
+        "tags": [
+          "#パタパタ卓上時計",
+          "#置き時計",
+          "#デジタル時計",
+          "#目覚まし時計",
+          "#ナイトスタンド",
+          "#StayClock"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "디지털시계",
+          "협탁시계",
+          "탁상용시계",
+          "거치대시계",
+          "충전거치대",
+          "위젯"
+        ],
+        "keyline": "플립 탁상시계",
+        "tags": [
+          "#플립탁상시계",
+          "#디지털시계",
+          "#협탁시계",
+          "#탁상용시계",
+          "#거치대시계",
+          "#StayClock"
+        ]
+      }
+    },
+    "studydown": {
+      "en": {
+        "keywords": [
+          "focus",
+          "productivity",
+          "streaks",
+          "habits",
+          "goals",
+          "deadline"
+        ],
+        "keyline": "Face-Down Timer",
+        "tags": [
+          "#FaceDownTimer",
+          "#Focus",
+          "#Productivity",
+          "#Streaks",
+          "#Habits",
+          "#Studydown"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "時間管理",
+          "閱讀",
+          "習慣養成",
+          "每週目標",
+          "期限倒數",
+          "時數統計"
+        ],
+        "keyline": "翻面專注計時",
+        "tags": [
+          "#翻面專注計時",
+          "#時間管理",
+          "#閱讀",
+          "#習慣養成",
+          "#每週目標",
+          "#Studydown"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "集中",
+          "タイマー",
+          "勉強",
+          "読書",
+          "習慣化",
+          "目標管理"
+        ],
+        "keyline": "伏せて時間記録",
+        "tags": [
+          "#伏せて時間記録",
+          "#集中",
+          "#タイマー",
+          "#勉強",
+          "#読書",
+          "#Studydown"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "스톱워치",
+          "생산성",
+          "습관",
+          "주간목표",
+          "마감일",
+          "독서"
+        ],
+        "keyline": "집중 타이머",
+        "tags": [
+          "#집중타이머",
+          "#스톱워치",
+          "#생산성",
+          "#습관",
+          "#주간목표",
+          "#Studydown"
+        ]
+      }
+    },
+    "tripbee": {
+      "en": {
+        "keywords": [
+          "vacation",
+          "holiday",
+          "journey",
+          "organizer",
+          "checklist",
+          "family travel"
+        ],
+        "keyline": "Trip Planner",
+        "tags": [
+          "#TripPlanner",
+          "#Vacation",
+          "#Holiday",
+          "#Journey",
+          "#Organizer",
+          "#TripBeePro"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "旅行",
+          "度假",
+          "出遊",
+          "自由行",
+          "自助",
+          "親子遊"
+        ],
+        "keyline": "旅遊行程規劃",
+        "tags": [
+          "#旅遊行程規劃",
+          "#旅行",
+          "#度假",
+          "#出遊",
+          "#自由行",
+          "#TripBee旅遊行程規劃"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "観光",
+          "休暇",
+          "温泉",
+          "ホテル",
+          "航空券",
+          "家族"
+        ],
+        "keyline": "旅行プランナー",
+        "tags": [
+          "#旅行プランナー",
+          "#観光",
+          "#休暇",
+          "#温泉",
+          "#ホテル",
+          "#TripBee旅行プランナー"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "휴가",
+          "관광",
+          "준비물",
+          "체크리스트",
+          "가족",
+          "아이"
+        ],
+        "keyline": "여행 플래너",
+        "tags": [
+          "#여행플래너",
+          "#휴가",
+          "#관광",
+          "#준비물",
+          "#체크리스트",
+          "#TripBee여행플래너"
+        ]
+      }
+    },
+    "tripbeelite": {
+      "ja": {
+        "keywords": [
+          "旅行計画",
+          "旅程表",
+          "旅行",
+          "持ち物",
+          "観光",
+          "チケット"
+        ],
+        "keyline": "いまの旅行ひとつに集中",
+        "tags": [
+          "#旅程プラン",
+          "#旅行計画",
+          "#旅程表",
+          "#旅行",
+          "#持ち物",
+          "#TripBeeLite旅程プラン"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "여행계획",
+          "여행일정",
+          "자유여행",
+          "준비물",
+          "티켓",
+          "알림"
+        ],
+        "keyline": "여행 플래너",
+        "tags": [
+          "#여행플래너",
+          "#여행계획",
+          "#여행일정",
+          "#자유여행",
+          "#준비물",
+          "#TripBeeLite여행플래너"
+        ]
+      }
+    },
+    "tripplanet": {
+      "ja": {
+        "keywords": [
+          "家族旅行",
+          "旅行プランナー",
+          "ロードトリップ",
+          "ジャーナル",
+          "アドベンチャー",
+          "ミッション"
+        ],
+        "keyline": "家族旅行の冒険",
+        "tags": [
+          "#家族旅行",
+          "#旅行プランナー",
+          "#ロードトリップ",
+          "#ジャーナル",
+          "#アドベンチャー",
+          "#TripPlanet子ども旅行ゲーム"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "가족 여행",
+          "여행 플래너",
+          "도로 여행",
+          "신문",
+          "모험",
+          "임무"
+        ],
+        "keyline": "가족 여행 모험",
+        "tags": [
+          "#가족여행",
+          "#여행플래너",
+          "#도로여행",
+          "#신문",
+          "#모험",
+          "#TripPlanet아이여행게임"
+        ]
+      }
+    },
+    "wifiaid": {
+      "en": {
+        "keywords": [
+          "internet",
+          "outage",
+          "router",
+          "troubleshoot",
+          "latency",
+          "jitter"
+        ],
+        "keyline": "Find WiFi Problems",
+        "tags": [
+          "#FindWiFiProblems",
+          "#Internet",
+          "#Outage",
+          "#Router",
+          "#Troubleshoot",
+          "#WiFiAid"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "網路故障",
+          "斷線",
+          "路由器",
+          "連線測試",
+          "延遲",
+          "抖動"
+        ],
+        "keyline": "找出網路問題·診斷",
+        "tags": [
+          "#找出網路問題診斷",
+          "#網路故障",
+          "#斷線",
+          "#路由器",
+          "#連線測試",
+          "#WiFiAid找出網路問題"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "インターネット障害",
+          "ルーター",
+          "接続テスト",
+          "高遅延",
+          "ジッター",
+          "サイト確認"
+        ],
+        "keyline": "ネット不調の原因を特定",
+        "tags": [
+          "#ネット不調の原因を特定",
+          "#インターネット障害",
+          "#ルーター",
+          "#接続テスト",
+          "#高遅延",
+          "#WiFiAidネット不調"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "인터넷장애",
+          "공유기",
+          "연결테스트",
+          "지연시간",
+          "지터",
+          "사이트확인"
+        ],
+        "keyline": "네트워크 문제 진단",
+        "tags": [
+          "#네트워크문제진단",
+          "#인터넷장애",
+          "#공유기",
+          "#연결테스트",
+          "#지연시간",
+          "#WiFiAid네트워크진단"
+        ]
+      }
+    },
+    "wifiaidlite": {
+      "ja": {
+        "keywords": [
+          "インターネット障害",
+          "ルーター",
+          "接続テスト",
+          "高遅延",
+          "ジッター",
+          "サイト確認"
+        ],
+        "keyline": "インターネット障害 · ルーター · 接続テスト",
+        "tags": [
+          "#インターネット障害",
+          "#ルーター",
+          "#接続テスト",
+          "#高遅延",
+          "#ジッター",
+          "#WiFiAidLite"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "인터넷장애",
+          "공유기",
+          "연결테스트",
+          "지연시간",
+          "지터",
+          "사이트확인"
+        ],
+        "keyline": "인터넷장애 · 공유기 · 연결테스트",
+        "tags": [
+          "#인터넷장애",
+          "#공유기",
+          "#연결테스트",
+          "#지연시간",
+          "#지터",
+          "#WiFiAidLite"
+        ]
+      }
+    },
+    "wordmate": {
+      "en": {
+        "keywords": [
+          "flashcards",
+          "spanish",
+          "french",
+          "japanese",
+          "korean",
+          "german"
+        ],
+        "keyline": "Learn 44 Languages",
+        "tags": [
+          "#Learn44Languages",
+          "#Flashcards",
+          "#Spanish",
+          "#French",
+          "#Japanese",
+          "#Wordmate"
+        ]
+      },
+      "zh-Hant": {
+        "keywords": [
+          "學英文",
+          "學日文",
+          "學韓文",
+          "西班牙文",
+          "法文",
+          "德文"
+        ],
+        "keyline": "44 種語言背單字",
+        "tags": [
+          "#44種語言背單字",
+          "#學英文",
+          "#學日文",
+          "#學韓文",
+          "#西班牙文",
+          "#Wordmate背單字"
+        ]
+      },
+      "ja": {
+        "keywords": [
+          "英語",
+          "韓国語",
+          "中国語",
+          "スペイン語",
+          "フランス語",
+          "ドイツ語"
+        ],
+        "keyline": "44言語の単語学習",
+        "tags": [
+          "#44言語の単語学習",
+          "#英語",
+          "#韓国語",
+          "#中国語",
+          "#スペイン語",
+          "#Wordmate単語学習"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "영어공부",
+          "일본어공부",
+          "중국어공부",
+          "스페인어",
+          "프랑스어",
+          "독일어"
+        ],
+        "keyline": "44개 언어 단어 학습",
+        "tags": [
+          "#44개언어단어학습",
+          "#영어공부",
+          "#일본어공부",
+          "#중국어공부",
+          "#스페인어",
+          "#Wordmate단어학습"
+        ]
+      }
+    },
+    "wordmatelite": {
+      "ja": {
+        "keywords": [
+          "英単語",
+          "単語帳",
+          "ボキャブラリー",
+          "英会話",
+          "韓国語",
+          "中国語"
+        ],
+        "keyline": "英単語 · 単語帳 · ボキャブラリー",
+        "tags": [
+          "#英単語",
+          "#単語帳",
+          "#ボキャブラリー",
+          "#英会話",
+          "#韓国語",
+          "#WordmateLite単語"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "영단어",
+          "단어암기",
+          "어휘력",
+          "영어공부",
+          "일본어",
+          "중국어"
+        ],
+        "keyline": "영단어 · 단어암기 · 어휘력",
+        "tags": [
+          "#영단어",
+          "#단어암기",
+          "#어휘력",
+          "#영어공부",
+          "#일본어",
+          "#WordmateLite단어"
+        ]
+      }
+    },
+    "zipbox": {
+      "ja": {
+        "keywords": [
+          "圧縮",
+          "圧縮解凍",
+          "展開",
+          "アーカイブ",
+          "パスワード",
+          "暗号化"
+        ],
+        "keyline": "広告なしで圧縮ファイルをすぐ開く",
+        "tags": [
+          "#ZIPRAR7z対応",
+          "#圧縮",
+          "#圧縮解凍",
+          "#展開",
+          "#アーカイブ",
+          "#Zipbox解凍"
+        ]
+      },
+      "ko": {
+        "keywords": [
+          "압축파일",
+          "압축해제",
+          "비밀번호",
+          "암호화",
+          "분할",
+          "일괄"
+        ],
+        "keyline": "압축파일 · 압축해제 · 비밀번호",
+        "tags": [
+          "#압축파일",
+          "#압축해제",
+          "#비밀번호",
+          "#암호화",
+          "#분할",
+          "#Zipbox압축풀기"
+        ]
+      }
     }
   },
   "schedule": [
@@ -1475,40 +6805,40 @@
       "date": "2026-10-18",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumibopomofo/zh-Hant",
-      "sprint": true
+      "clip": "unblurry/zh-Hant"
     },
     {
       "date": "2026-10-18",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumibopomofo/zh-Hant",
-      "sprint": true
+      "clip": "unblurry/zh-Hant"
     },
     {
       "date": "2026-10-18",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumibopomofo/zh-Hant",
-      "sprint": true
+      "clip": "unblurry/zh-Hant"
     },
     {
       "date": "2026-10-18",
       "slot": 15,
       "channel": "instagram",
-      "clip": "unblurry/en"
+      "clip": "lumimission/ar",
+      "sprint": true
     },
     {
       "date": "2026-10-18",
       "slot": 15,
       "channel": "telegram",
-      "clip": "unblurry/en"
+      "clip": "lumimission/ar",
+      "sprint": true
     },
     {
       "date": "2026-10-18",
       "slot": 15,
       "channel": "threads",
-      "clip": "unblurry/en"
+      "clip": "lumimission/ar",
+      "sprint": true
     },
     {
       "date": "2026-10-19",
@@ -1577,7 +6907,7 @@
       "date": "2026-10-20",
       "slot": 15,
       "channel": "telegram",
-      "clip": "lumimission/en"
+      "clip": "gmoneylite/en"
     },
     {
       "date": "2026-10-20",
@@ -1652,7 +6982,7 @@
       "date": "2026-10-22",
       "slot": 15,
       "channel": "telegram",
-      "clip": "gmoneylite/en"
+      "clip": "lumimission/en"
     },
     {
       "date": "2026-10-22",
@@ -1670,7 +7000,7 @@
       "date": "2026-10-23",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumimission/zh-Hant"
+      "clip": "gmoneylite/zh-Hant"
     },
     {
       "date": "2026-10-23",
@@ -1700,37 +7030,37 @@
       "date": "2026-10-24",
       "slot": 1,
       "channel": "instagram",
-      "clip": "unblurry/zh-Hant"
+      "clip": "aim990/zh-Hant"
     },
     {
       "date": "2026-10-24",
       "slot": 1,
       "channel": "telegram",
-      "clip": "unblurry/zh-Hant"
+      "clip": "aim990/zh-Hant"
     },
     {
       "date": "2026-10-24",
       "slot": 1,
       "channel": "threads",
-      "clip": "unblurry/zh-Hant"
+      "clip": "aim990/zh-Hant"
     },
     {
       "date": "2026-10-24",
       "slot": 15,
       "channel": "instagram",
-      "clip": "lockhour/en"
+      "clip": "unblurry/en"
     },
     {
       "date": "2026-10-24",
       "slot": 15,
       "channel": "telegram",
-      "clip": "lockhour/en"
+      "clip": "unblurry/en"
     },
     {
       "date": "2026-10-24",
       "slot": 15,
       "channel": "threads",
-      "clip": "lockhour/en"
+      "clip": "unblurry/en"
     },
     {
       "date": "2026-10-25",
@@ -1742,7 +7072,7 @@
       "date": "2026-10-25",
       "slot": 1,
       "channel": "telegram",
-      "clip": "gmoneylite/zh-Hant"
+      "clip": "lumimission/zh-Hant"
     },
     {
       "date": "2026-10-25",
@@ -1760,7 +7090,7 @@
       "date": "2026-10-25",
       "slot": 15,
       "channel": "telegram",
-      "clip": "aim990/en"
+      "clip": "lockhour/en"
     },
     {
       "date": "2026-10-25",
@@ -1772,7 +7102,7 @@
       "date": "2026-10-26",
       "slot": 1,
       "channel": "instagram",
-      "clip": "aim990/zh-Hant"
+      "clip": "battai/zh-Hant"
     },
     {
       "date": "2026-10-26",
@@ -1784,13 +7114,13 @@
       "date": "2026-10-26",
       "slot": 1,
       "channel": "threads",
-      "clip": "aim990/zh-Hant"
+      "clip": "battai/zh-Hant"
     },
     {
       "date": "2026-10-26",
       "slot": 15,
       "channel": "instagram",
-      "clip": "battai/en"
+      "clip": "lockhour/en"
     },
     {
       "date": "2026-10-26",
@@ -1802,7 +7132,7 @@
       "date": "2026-10-26",
       "slot": 15,
       "channel": "threads",
-      "clip": "battai/en"
+      "clip": "lockhour/en"
     },
     {
       "date": "2026-10-27",
@@ -1824,83 +7154,83 @@
     },
     {
       "date": "2026-10-27",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "cvdesk/en"
-    },
-    {
-      "date": "2026-10-27",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "cyca/en"
-    },
-    {
-      "date": "2026-10-27",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "cvdesk/en"
-    },
-    {
-      "date": "2026-10-28",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "cyca/zh-Hant"
-    },
-    {
-      "date": "2026-10-28",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "aim990/zh-Hant"
-    },
-    {
-      "date": "2026-10-28",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "cyca/zh-Hant"
-    },
-    {
-      "date": "2026-10-28",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "dailymatelite/en"
-    },
-    {
-      "date": "2026-10-28",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "dailymatelite/en"
-    },
-    {
-      "date": "2026-10-28",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "dailymatelite/en"
-    },
-    {
-      "date": "2026-10-29",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "battai/zh-Hant"
-    },
-    {
-      "date": "2026-10-29",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "caldaily/zh-Hant"
-    },
-    {
-      "date": "2026-10-29",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "battai/zh-Hant"
-    },
-    {
-      "date": "2026-10-29",
       "slot": 15,
       "channel": "instagram",
       "clip": "aim990/en"
     },
     {
+      "date": "2026-10-27",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "aim990/en"
+    },
+    {
+      "date": "2026-10-27",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "aim990/en"
+    },
+    {
+      "date": "2026-10-28",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "cvdesk/zh-Hant"
+    },
+    {
+      "date": "2026-10-28",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "cyca/zh-Hant"
+    },
+    {
+      "date": "2026-10-28",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "cvdesk/zh-Hant"
+    },
+    {
+      "date": "2026-10-28",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "cyca/en"
+    },
+    {
+      "date": "2026-10-28",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "dailymatelite/en"
+    },
+    {
+      "date": "2026-10-28",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "cyca/en"
+    },
+    {
+      "date": "2026-10-29",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "dailymatelite/zh-Hant"
+    },
+    {
+      "date": "2026-10-29",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "caldaily/zh-Hant"
+    },
+    {
+      "date": "2026-10-29",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "dailymatelite/zh-Hant"
+    },
+    {
+      "date": "2026-10-29",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "battai/en"
+    },
+    {
       "date": "2026-10-29",
       "slot": 15,
       "channel": "telegram",
@@ -1910,25 +7240,25 @@
       "date": "2026-10-29",
       "slot": 15,
       "channel": "threads",
-      "clip": "aim990/en"
+      "clip": "battai/en"
     },
     {
       "date": "2026-10-30",
       "slot": 1,
       "channel": "instagram",
-      "clip": "cvdesk/zh-Hant"
+      "clip": "dbhalo/zh-Hant"
     },
     {
       "date": "2026-10-30",
       "slot": 1,
       "channel": "telegram",
-      "clip": "cyca/zh-Hant"
+      "clip": "dbhalo/zh-Hant"
     },
     {
       "date": "2026-10-30",
       "slot": 1,
       "channel": "threads",
-      "clip": "cvdesk/zh-Hant"
+      "clip": "dbhalo/zh-Hant"
     },
     {
       "date": "2026-10-30",
@@ -1952,7 +7282,7 @@
       "date": "2026-10-31",
       "slot": 1,
       "channel": "instagram",
-      "clip": "dailymatelite/zh-Hant"
+      "clip": "cyca/zh-Hant"
     },
     {
       "date": "2026-10-31",
@@ -1964,31 +7294,31 @@
       "date": "2026-10-31",
       "slot": 1,
       "channel": "threads",
-      "clip": "dailymatelite/zh-Hant"
+      "clip": "cyca/zh-Hant"
     },
     {
       "date": "2026-10-31",
       "slot": 15,
       "channel": "instagram",
+      "clip": "cvdesk/en"
+    },
+    {
+      "date": "2026-10-31",
+      "slot": 15,
+      "channel": "telegram",
       "clip": "cyca/en"
     },
     {
       "date": "2026-10-31",
       "slot": 15,
-      "channel": "telegram",
-      "clip": "dbhalo/en"
-    },
-    {
-      "date": "2026-10-31",
-      "slot": 15,
       "channel": "threads",
-      "clip": "cyca/en"
+      "clip": "cvdesk/en"
     },
     {
       "date": "2026-11-01",
       "slot": 1,
       "channel": "instagram",
-      "clip": "dbhalo/zh-Hant"
+      "clip": "lumimath/zh-Hant"
     },
     {
       "date": "2026-11-01",
@@ -2000,13 +7330,13 @@
       "date": "2026-11-01",
       "slot": 1,
       "channel": "threads",
-      "clip": "dbhalo/zh-Hant"
+      "clip": "lumimath/zh-Hant"
     },
     {
       "date": "2026-11-01",
       "slot": 15,
       "channel": "instagram",
-      "clip": "lumiletters/en"
+      "clip": "dailymatelite/en"
     },
     {
       "date": "2026-11-01",
@@ -2018,13 +7348,13 @@
       "date": "2026-11-01",
       "slot": 15,
       "channel": "threads",
-      "clip": "lumiletters/en"
+      "clip": "dailymatelite/en"
     },
     {
       "date": "2026-11-02",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumimath/zh-Hant"
+      "clip": "lumiweather/zh-Hant"
     },
     {
       "date": "2026-11-02",
@@ -2036,25 +7366,25 @@
       "date": "2026-11-02",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumimath/zh-Hant"
+      "clip": "lumiweather/zh-Hant"
     },
     {
       "date": "2026-11-02",
       "slot": 15,
       "channel": "instagram",
-      "clip": "lumiweather/en"
+      "clip": "dbhalo/en"
     },
     {
       "date": "2026-11-02",
       "slot": 15,
       "channel": "telegram",
-      "clip": "maskmyfile/en"
+      "clip": "dbhalo/en"
     },
     {
       "date": "2026-11-02",
       "slot": 15,
       "channel": "threads",
-      "clip": "lumiweather/en"
+      "clip": "dbhalo/en"
     },
     {
       "date": "2026-11-03",
@@ -2066,7 +7396,7 @@
       "date": "2026-11-03",
       "slot": 1,
       "channel": "telegram",
-      "clip": "dbhalo/zh-Hant"
+      "clip": "maskmyfile/zh-Hant"
     },
     {
       "date": "2026-11-03",
@@ -2078,7 +7408,7 @@
       "date": "2026-11-03",
       "slot": 15,
       "channel": "instagram",
-      "clip": "mochidonestamp/en"
+      "clip": "lumiletters/en"
     },
     {
       "date": "2026-11-03",
@@ -2090,7 +7420,7 @@
       "date": "2026-11-03",
       "slot": 15,
       "channel": "threads",
-      "clip": "mochidonestamp/en"
+      "clip": "lumiletters/en"
     },
     {
       "date": "2026-11-04",
@@ -2114,7 +7444,7 @@
       "date": "2026-11-04",
       "slot": 15,
       "channel": "instagram",
-      "clip": "dbhalo/en"
+      "clip": "lumimath/en"
     },
     {
       "date": "2026-11-04",
@@ -2126,31 +7456,31 @@
       "date": "2026-11-04",
       "slot": 15,
       "channel": "threads",
-      "clip": "dbhalo/en"
+      "clip": "lumimath/en"
     },
     {
       "date": "2026-11-05",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumiweather/zh-Hant"
+      "clip": "notesstudio100/zh-Hant"
     },
     {
       "date": "2026-11-05",
       "slot": 1,
       "channel": "telegram",
-      "clip": "maskmyfile/zh-Hant"
+      "clip": "notesstudio100/zh-Hant"
     },
     {
       "date": "2026-11-05",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumiweather/zh-Hant"
+      "clip": "notesstudio100/zh-Hant"
     },
     {
       "date": "2026-11-05",
       "slot": 15,
       "channel": "instagram",
-      "clip": "lumimath/en"
+      "clip": "lumiweather/en"
     },
     {
       "date": "2026-11-05",
@@ -2162,25 +7492,25 @@
       "date": "2026-11-05",
       "slot": 15,
       "channel": "threads",
-      "clip": "lumimath/en"
+      "clip": "lumiweather/en"
     },
     {
       "date": "2026-11-06",
       "slot": 1,
       "channel": "instagram",
-      "clip": "notesstudio100/zh-Hant"
+      "clip": "onepageppt/zh-Hant"
     },
     {
       "date": "2026-11-06",
       "slot": 1,
       "channel": "telegram",
-      "clip": "notesstudio100/zh-Hant"
+      "clip": "onepageppt/zh-Hant"
     },
     {
       "date": "2026-11-06",
       "slot": 1,
       "channel": "threads",
-      "clip": "notesstudio100/zh-Hant"
+      "clip": "onepageppt/zh-Hant"
     },
     {
       "date": "2026-11-06",
@@ -2192,7 +7522,7 @@
       "date": "2026-11-06",
       "slot": 15,
       "channel": "telegram",
-      "clip": "onepageppt/en"
+      "clip": "maskmyfile/en"
     },
     {
       "date": "2026-11-06",
@@ -2204,7 +7534,7 @@
       "date": "2026-11-07",
       "slot": 1,
       "channel": "instagram",
-      "clip": "onepageppt/zh-Hant"
+      "clip": "photocream/zh-Hant"
     },
     {
       "date": "2026-11-07",
@@ -2216,13 +7546,13 @@
       "date": "2026-11-07",
       "slot": 1,
       "channel": "threads",
-      "clip": "onepageppt/zh-Hant"
+      "clip": "photocream/zh-Hant"
     },
     {
       "date": "2026-11-07",
       "slot": 15,
       "channel": "instagram",
-      "clip": "moneytag/en"
+      "clip": "mochidonestamp/en"
     },
     {
       "date": "2026-11-07",
@@ -2234,13 +7564,13 @@
       "date": "2026-11-07",
       "slot": 15,
       "channel": "threads",
-      "clip": "moneytag/en"
+      "clip": "mochidonestamp/en"
     },
     {
       "date": "2026-11-08",
       "slot": 1,
       "channel": "instagram",
-      "clip": "photocream/zh-Hant"
+      "clip": "picclear/zh-Hant"
     },
     {
       "date": "2026-11-08",
@@ -2252,25 +7582,25 @@
       "date": "2026-11-08",
       "slot": 1,
       "channel": "threads",
-      "clip": "photocream/zh-Hant"
+      "clip": "picclear/zh-Hant"
     },
     {
       "date": "2026-11-08",
       "slot": 15,
       "channel": "instagram",
-      "clip": "picclear/en"
+      "clip": "moneytag/en"
     },
     {
       "date": "2026-11-08",
       "slot": 15,
       "channel": "telegram",
-      "clip": "qrcodehalo/en"
+      "clip": "notesstudio100/en"
     },
     {
       "date": "2026-11-08",
       "slot": 15,
       "channel": "threads",
-      "clip": "picclear/en"
+      "clip": "moneytag/en"
     },
     {
       "date": "2026-11-09",
@@ -2282,7 +7612,7 @@
       "date": "2026-11-09",
       "slot": 1,
       "channel": "telegram",
-      "clip": "onepageppt/zh-Hant"
+      "clip": "qrcodehalo/zh-Hant"
     },
     {
       "date": "2026-11-09",
@@ -2300,7 +7630,7 @@
       "date": "2026-11-09",
       "slot": 15,
       "channel": "telegram",
-      "clip": "notesstudio100/en"
+      "clip": "onepageppt/en"
     },
     {
       "date": "2026-11-09",
@@ -2348,19 +7678,19 @@
       "date": "2026-11-11",
       "slot": 1,
       "channel": "instagram",
-      "clip": "picclear/zh-Hant"
+      "clip": "scanto/zh-Hant"
     },
     {
       "date": "2026-11-11",
       "slot": 1,
       "channel": "telegram",
-      "clip": "qrcodehalo/zh-Hant"
+      "clip": "scanto/zh-Hant"
     },
     {
       "date": "2026-11-11",
       "slot": 1,
       "channel": "threads",
-      "clip": "picclear/zh-Hant"
+      "clip": "scanto/zh-Hant"
     },
     {
       "date": "2026-11-11",
@@ -2384,79 +7714,79 @@
       "date": "2026-11-12",
       "slot": 1,
       "channel": "instagram",
-      "clip": "scanto/zh-Hant"
+      "clip": "sereno/zh-Hant"
     },
     {
       "date": "2026-11-12",
       "slot": 1,
       "channel": "telegram",
-      "clip": "scanto/zh-Hant"
+      "clip": "sereno/zh-Hant"
     },
     {
       "date": "2026-11-12",
       "slot": 1,
       "channel": "threads",
-      "clip": "scanto/zh-Hant"
+      "clip": "sereno/zh-Hant"
     },
     {
       "date": "2026-11-12",
       "slot": 15,
       "channel": "instagram",
+      "clip": "picclear/en"
+    },
+    {
+      "date": "2026-11-12",
+      "slot": 15,
+      "channel": "telegram",
       "clip": "qrcodehalo/en"
     },
     {
       "date": "2026-11-12",
       "slot": 15,
-      "channel": "telegram",
-      "clip": "sereno/en"
+      "channel": "threads",
+      "clip": "picclear/en"
     },
     {
-      "date": "2026-11-12",
+      "date": "2026-11-13",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "shotinbox/zh-Hant"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "shotinbox/zh-Hant"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "shotinbox/zh-Hant"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "qrcodehalo/en"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "savetag/en"
+    },
+    {
+      "date": "2026-11-13",
       "slot": 15,
       "channel": "threads",
       "clip": "qrcodehalo/en"
     },
     {
-      "date": "2026-11-13",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "sereno/zh-Hant"
-    },
-    {
-      "date": "2026-11-13",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "shotinbox/zh-Hant"
-    },
-    {
-      "date": "2026-11-13",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "sereno/zh-Hant"
-    },
-    {
-      "date": "2026-11-13",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "savetag/en"
-    },
-    {
-      "date": "2026-11-13",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "savetag/en"
-    },
-    {
-      "date": "2026-11-13",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "savetag/en"
-    },
-    {
       "date": "2026-11-14",
       "slot": 1,
       "channel": "instagram",
-      "clip": "shotinbox/zh-Hant"
+      "clip": "sononote/zh-Hant"
     },
     {
       "date": "2026-11-14",
@@ -2468,25 +7798,25 @@
       "date": "2026-11-14",
       "slot": 1,
       "channel": "threads",
-      "clip": "shotinbox/zh-Hant"
+      "clip": "sononote/zh-Hant"
     },
     {
       "date": "2026-11-14",
       "slot": 15,
       "channel": "instagram",
-      "clip": "sononote/en"
+      "clip": "savetag/en"
     },
     {
       "date": "2026-11-14",
       "slot": 15,
       "channel": "telegram",
-      "clip": "stayclock/en"
+      "clip": "scanto/en"
     },
     {
       "date": "2026-11-14",
       "slot": 15,
       "channel": "threads",
-      "clip": "sononote/en"
+      "clip": "savetag/en"
     },
     {
       "date": "2026-11-15",
@@ -2498,7 +7828,7 @@
       "date": "2026-11-15",
       "slot": 1,
       "channel": "telegram",
-      "clip": "sereno/zh-Hant"
+      "clip": "stayclock/zh-Hant"
     },
     {
       "date": "2026-11-15",
@@ -2516,7 +7846,7 @@
       "date": "2026-11-15",
       "slot": 15,
       "channel": "telegram",
-      "clip": "scanto/en"
+      "clip": "sereno/en"
     },
     {
       "date": "2026-11-15",
@@ -2564,19 +7894,19 @@
       "date": "2026-11-17",
       "slot": 1,
       "channel": "instagram",
-      "clip": "sononote/zh-Hant"
+      "clip": "tripplanet/zh-Hant"
     },
     {
       "date": "2026-11-17",
       "slot": 1,
       "channel": "telegram",
-      "clip": "stayclock/zh-Hant"
+      "clip": "tripplanet/zh-Hant"
     },
     {
       "date": "2026-11-17",
       "slot": 1,
       "channel": "threads",
-      "clip": "sononote/zh-Hant"
+      "clip": "tripplanet/zh-Hant"
     },
     {
       "date": "2026-11-17",
@@ -2600,79 +7930,79 @@
       "date": "2026-11-18",
       "slot": 1,
       "channel": "instagram",
-      "clip": "tripplanet/zh-Hant"
+      "clip": "wifiaidlite/zh-Hant"
     },
     {
       "date": "2026-11-18",
       "slot": 1,
       "channel": "telegram",
-      "clip": "tripplanet/zh-Hant"
+      "clip": "wifiaidlite/zh-Hant"
     },
     {
       "date": "2026-11-18",
       "slot": 1,
       "channel": "threads",
-      "clip": "tripplanet/zh-Hant"
+      "clip": "wifiaidlite/zh-Hant"
     },
     {
       "date": "2026-11-18",
       "slot": 15,
       "channel": "instagram",
+      "clip": "sononote/en"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 15,
+      "channel": "telegram",
       "clip": "stayclock/en"
     },
     {
       "date": "2026-11-18",
       "slot": 15,
-      "channel": "telegram",
-      "clip": "wifiaidlite/en"
+      "channel": "threads",
+      "clip": "sononote/en"
     },
     {
-      "date": "2026-11-18",
+      "date": "2026-11-19",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wordmatelite/zh-Hant"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "wordmatelite/zh-Hant"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "wordmatelite/zh-Hant"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "stayclock/en"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "tripbeelite/en"
+    },
+    {
+      "date": "2026-11-19",
       "slot": 15,
       "channel": "threads",
       "clip": "stayclock/en"
     },
     {
-      "date": "2026-11-19",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "wifiaidlite/zh-Hant"
-    },
-    {
-      "date": "2026-11-19",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "wordmatelite/zh-Hant"
-    },
-    {
-      "date": "2026-11-19",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "wifiaidlite/zh-Hant"
-    },
-    {
-      "date": "2026-11-19",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "tripbeelite/en"
-    },
-    {
-      "date": "2026-11-19",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "tripbeelite/en"
-    },
-    {
-      "date": "2026-11-19",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "tripbeelite/en"
-    },
-    {
       "date": "2026-11-20",
       "slot": 1,
       "channel": "instagram",
-      "clip": "wordmatelite/zh-Hant"
+      "clip": "zipbox/zh-Hant"
     },
     {
       "date": "2026-11-20",
@@ -2684,25 +8014,25 @@
       "date": "2026-11-20",
       "slot": 1,
       "channel": "threads",
-      "clip": "wordmatelite/zh-Hant"
+      "clip": "zipbox/zh-Hant"
     },
     {
       "date": "2026-11-20",
       "slot": 15,
       "channel": "instagram",
-      "clip": "zipbox/en"
+      "clip": "tripbeelite/en"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "tripplanet/en"
     },
     {
       "date": "2026-11-20",
       "slot": 15,
       "channel": "threads",
-      "clip": "zipbox/en"
-    },
-    {
-      "date": "2026-11-21",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "wifiaidlite/zh-Hant"
+      "clip": "tripbeelite/en"
     },
     {
       "date": "2026-11-21",
@@ -2714,7 +8044,7 @@
       "date": "2026-11-21",
       "slot": 15,
       "channel": "telegram",
-      "clip": "tripplanet/en"
+      "clip": "wifiaidlite/en"
     },
     {
       "date": "2026-11-21",
@@ -2742,18 +8072,6 @@
     },
     {
       "date": "2026-11-23",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "zipbox/zh-Hant"
-    },
-    {
-      "date": "2026-11-23",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "zipbox/zh-Hant"
-    },
-    {
-      "date": "2026-11-23",
       "slot": 15,
       "channel": "instagram",
       "clip": "wordmatelite/en"
@@ -2769,6 +8087,18 @@
       "slot": 15,
       "channel": "threads",
       "clip": "wordmatelite/en"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "zipbox/en"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "zipbox/en"
     }
   ]
 }

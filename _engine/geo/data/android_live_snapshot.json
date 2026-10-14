@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-14T12:43:13+0800",
- "count": 38,
- "content_sha256": "69f291f182323c48ebaf41d013e7105553a5f4a01b7e66cfa2078a90b81a7782",
+ "source_generated": "2026-10-14T13:14:03+0800",
+ "count": 39,
+ "content_sha256": "5113ae22e4f292d6eca9f995b00b29780bdcb229a3b651be77afd96878e116cd",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -758,6 +758,27 @@
     "zh-TW": {
      "title": "WiFi Aid",
      "short_description": "用獨立的 DNS、TCP 檢測，診斷 Wi-Fi 問題"
+    }
+   }
+  },
+  "wifiaidlite": {
+   "ios_app_id": "6793414462",
+   "ios_name": "WiFi Aid Lite",
+   "android_folder": "37_WiFiAidLite",
+   "package": "com.alice51849.WiFiAidLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite",
+   "paid": false,
+   "first_seen": "2026-10-14T13:14:03+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "WiFi Aid Lite: Network Check",
+     "short_description": "Test for Router & DNS Issues"
+    },
+    "zh-TW": {
+     "title": "WiFi Aid Lite",
+     "short_description": "無法上網？網路測試與斷線診斷"
     }
    }
   },

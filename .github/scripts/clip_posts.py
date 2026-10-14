@@ -193,9 +193,54 @@ def post_instagram(clip, wait=5, tries=60):
     return {"id": media, "link": link}
 
 
+THREADS = "https://graph.threads.net/v1.0"
+
+
+def post_threads(clip, wait=5, tries=60):
+    """Video post with the hook caption; store links go in the first reply."""
+    token = os.environ.get("THREADS_TOKEN", "").strip()
+    user = os.environ.get("THREADS_USER_ID", "").strip()
+    if not token or not user:
+        print("clip: Threads secrets missing, skipped")
+        return None
+    t = text_for(clip["locale"])
+    text = caption(clip, "threads")
+    container = _post(f"{THREADS}/{user}/threads", {
+        "media_type": "VIDEO", "video_url": clip["url"], "text": text, "access_token": token,
+    })["id"]
+    for _ in range(tries):
+        status = _get(f"{THREADS}/{container}?fields=status,error_message&access_token={token}")
+        if status.get("status") == "FINISHED":
+            break
+        if status.get("status") == "ERROR":
+            raise RuntimeError(f"Threads could not process the video: {status.get('error_message')}")
+        time.sleep(wait)
+    else:
+        raise RuntimeError("Threads processing timed out")
+    media = _post(f"{THREADS}/{user}/threads_publish", {"creation_id": container, "access_token": token})["id"]
+    links = [f"{t['button']}: {with_campaign(clip['store_url'], 'th')}"]
+    play = play_url(clip, "th")
+    if play:
+        links.append(f"Google Play: {play}")
+    try:
+        reply = _post(f"{THREADS}/{user}/threads", {
+            "media_type": "TEXT", "text": "\n".join(links), "reply_to_id": media, "access_token": token,
+        })["id"]
+        time.sleep(wait)
+        _post(f"{THREADS}/{user}/threads_publish", {"creation_id": reply, "access_token": token})
+    except Exception as exc:  # the video is up; a failed reply must not fail the run
+        print(f"clip: Threads link reply skipped ({exc.__class__.__name__})")
+    try:
+        link = _get(f"{THREADS}/{media}?fields=permalink&access_token={token}").get("permalink")
+    except Exception as exc:
+        print(f"clip: permalink lookup skipped ({exc.__class__.__name__})")
+        link = None
+    return {"id": media, "link": link}
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("channel", choices=["telegram", "instagram", "preview"])
+    ap.add_argument("channel", choices=["telegram", "instagram", "threads", "preview"])
     ap.add_argument("--slot", type=int, required=True)
     ap.add_argument("--date", help="YYYY-MM-DD, default today (UTC)")
     args = ap.parse_args()
@@ -212,7 +257,7 @@ def main():
     if args.channel == "preview":
         print(caption(clip, "instagram"))
         return 0
-    posted = post_telegram(clip) if args.channel == "telegram" else post_instagram(clip)
+    posted = {"telegram": post_telegram, "instagram": post_instagram, "threads": post_threads}[args.channel](clip)
     print(f"clip: posted {posted}")
     if posted:
         # The promotion page (office.cait518.cc) lists every post's link.

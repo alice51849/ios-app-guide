@@ -97,6 +97,25 @@ class ClipPostsTest(unittest.TestCase):
         with mock.patch.object(C, "play_store_url", return_value=None):
             self.assertNotIn("Google Play", C.caption(clip("a", "ja"), "instagram"))
 
+    def test_threads_video_then_link_reply(self):
+        calls = []
+
+        def fake_post(url, fields, timeout=60):
+            calls.append(fields)
+            return {"id": f"id{len(calls)}"}
+
+        with mock.patch.dict(os.environ, {"THREADS_TOKEN": "t", "THREADS_USER_ID": "u"}), \
+                mock.patch.object(C, "_post", side_effect=fake_post), \
+                mock.patch.object(C, "_get", side_effect=[{"status": "FINISHED"}, {"permalink": "https://www.threads.net/@x/post/1"}]), \
+                mock.patch.object(C, "play_store_url", return_value=None), \
+                mock.patch.object(C.time, "sleep"):
+            out = C.post_threads(clip("a", "en"))
+        self.assertEqual(out["link"], "https://www.threads.net/@x/post/1")
+        self.assertEqual(calls[0]["media_type"], "VIDEO")
+        self.assertNotIn("https://", calls[0]["text"])
+        self.assertEqual(calls[2]["reply_to_id"], "id2")
+        self.assertIn("ct=h7_a_en_th", calls[2]["text"])
+
 
 class ClipProgressTest(unittest.TestCase):
     NOW = dt.datetime(2026, 10, 15, 2, 0, tzinfo=dt.timezone.utc)
@@ -111,6 +130,7 @@ class ClipProgressTest(unittest.TestCase):
         self.assertIn("[影片](https://files.catbox.moe/a_en.mp4)", md)
         self.assertIn("2 款／53 款、3 支影片", md)
         self.assertIn("| Telegram | 自動", md)
+        self.assertIn("| Threads | 準備中", md)
         self.assertIn("- note", md)
         self.assertIn("| 尚未上架 |", md)
         with_play = P.build_section(DATA, [], {}, self.NOW, None, (), {"a": "https://play.google.com/x"})

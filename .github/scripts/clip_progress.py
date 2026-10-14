@@ -27,12 +27,13 @@ IMPROVEMENTS = GROWTH / "app-improvements.json"
 HEADING = "## 鉤子片影片：各社群連結與進度"
 TW = dt.timezone(dt.timedelta(hours=8))
 # Cron slots (UTC hour) of the posting workflows.
-SLOT_TIME = {"telegram": {1: "01:00", 15: "15:00"}, "instagram": {1: "01:20", 15: "15:20"}}
-CHANNEL_NAME = {"telegram": "Telegram", "instagram": "Instagram"}
+SLOT_TIME = {"telegram": {1: "01:00", 15: "15:00"}, "instagram": {1: "01:20", 15: "15:20"},
+             "threads": {1: "01:40", 15: "15:40"}}
+CHANNEL_NAME = {"telegram": "Telegram", "instagram": "Instagram", "threads": "Threads"}
 # Channels without automation yet: what is true today, shown as-is.
 MANUAL_CHANNELS = [
     ("YouTube Shorts", "Mac 本機上傳（本機待辦「7 秒鉤子片」第 4 步，每天最多 3 支）；上傳後的網址在本機回報"),
-    ("Threads／Bluesky", "尚未接上影片自動發文"),
+    ("Bluesky", "尚未設定（帳號與金鑰都沒有）"),
     ("TikTok", "手動配熱門音樂；無聲版在 Mac 的 shorts/out/，尚未上傳"),
 ]
 
@@ -74,7 +75,7 @@ def build_section(clips, posts, names, now, hook_total=None, notes=(), android=N
                      "新渲染的影片結尾寫「App Store／Google Play 搜尋」、官網頁面加 Google Play 按鈕。")
     lines += [f"- {n}" for n in notes]
     lines += ["", "| 平台 | 進度 | 已發 | 下一支（台灣時間） |", "|---|---|---|---|"]
-    for channel in ("telegram", "instagram"):
+    for channel in ("telegram", "instagram", "threads"):
         entries = [e for e in schedule if e["channel"] == channel]
         done = [p for p in posts if p["channel"] == channel]
         upcoming = [e for e in entries if (channel, e["clip"]) not in posted and e["date"] >= today]
@@ -82,6 +83,10 @@ def build_section(clips, posts, names, now, hook_total=None, notes=(), android=N
             state = "等 IG_ACCESS_TOKEN 設好才開始"
         elif channel == "instagram":
             state = "自動，前兩週每天 1 支，之後每天 2 支"
+        elif channel == "threads" and not entries:
+            state = "準備中（確認帳號後開始）"
+        elif channel == "threads":
+            state = "自動，每天 1 支影片（連結放留言）＋ 2 則圖文"
         else:
             state = "自動，每天 1 支（影片＋App Store 下載按鈕）"
         nxt = "—"
@@ -93,7 +98,7 @@ def build_section(clips, posts, names, now, hook_total=None, notes=(), android=N
     for name, state in MANUAL_CHANNELS:
         lines.append(f"| {name} | {state} | — | — |")
 
-    lines += ["", "| App | 語言 | 影片 | Telegram | Instagram | Android |", "|---|---|---|---|---|---|"]
+    lines += ["", "| App | 語言 | 影片 | Telegram | Instagram | Threads | Android |", "|---|---|---|---|---|---|---|"]
 
     def cell(channel, key):
         p = posted.get((channel, key))
@@ -109,7 +114,7 @@ def build_section(clips, posts, names, now, hook_total=None, notes=(), android=N
         c = clip_map[key]
         play = android.get(c["app"])
         lines.append(f"| {names.get(c['app'], c['app'])} | {c['locale']} | [影片]({c['url']}) | "
-                     f"{cell('telegram', key)} | {cell('instagram', key)} | "
+                     f"{cell('telegram', key)} | {cell('instagram', key)} | {cell('threads', key)} | "
                      f"{f'[Google Play]({play})' if play else '尚未上架'} |")
     return "\n".join(lines)
 

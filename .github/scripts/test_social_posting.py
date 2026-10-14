@@ -1480,7 +1480,7 @@ class DevToGateTests(unittest.TestCase):
         for name in (
             "portfolio-daily.yml",
             "telegram-daily.yml",
-            "threads-daily.yml",
+            "threads-post.yml",
         ):
             with self.subTest(workflow=name):
                 workflow = os.path.join(

@@ -1,0 +1,96 @@
+name: Threads posts
+
+# Replaces threads-daily.yml (disabled after the old account was limited for
+# posting 30-48 linked posts a day). Now at most 3 posts a day, links only in
+# the first reply:
+# - 2 picture posts (Taiwan 11:00, Europe 14:00 UTC)
+# - 1 hook-clip video from .github/growth/clips.json (Asia 01:40 / Americas
+#   15:40 UTC, alternating days as scheduled)
+on:
+  schedule:
+    - cron: "40 1 * * *"   # hook clip, Asia slot
+    - cron: "0 3 * * *"    # picture post, Taiwan 11:00
+    - cron: "0 14 * * *"   # picture post, Europe
+    - cron: "40 15 * * *"  # hook clip, Americas slot
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "whoami = only print which Threads account the token belongs to"
+        default: "whoami"
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: threads-daily-social
+  cancel-in-progress: false
+
+jobs:
+  whoami:
+    if: github.event_name == 'workflow_dispatch' && inputs.mode == 'whoami'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Which account does the token post as
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+        run: |
+          curl -sS "https://graph.threads.net/v1.0/me?fields=id,username&access_token=${THREADS_TOKEN}" \
+            | python3 -c "import json,sys; d=json.load(sys.stdin); print('account:', d.get('username'), d.get('id'), d.get('error', {}).get('message', ''))"
+
+  post:
+    if: github.event_name == 'schedule' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      actions: read
+      contents: write # records each clip post's link on the promotion page
+    env:
+      ASC_GROWTH_SIGNALS_B64: ${{ secrets.ASC_GROWTH_SIGNALS_B64 }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Prevent duplicate UTC slot
+        id: slot
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 .github/scripts/social_slot_gate.py
+          --workflow threads-post.yml
+          --slots 1,3,14,15
+      - name: Post picture post to Threads (link in the first reply)
+        if: steps.slot.outputs.should_post == 'true' && (github.event.schedule == '0 3 * * *' || github.event.schedule == '0 14 * * *')
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+        run: |
+          python3 .github/scripts/test_social_posting.py -q -b
+          python3 .github/scripts/threads_post.py
+      - name: Post today's hook clip to Threads
+        if: steps.slot.outputs.should_post == 'true' && (github.event.schedule == '40 1 * * *' || github.event.schedule == '40 15 * * *')
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          python3 .github/scripts/test_clip_posts.py -q
+          python3 .github/scripts/clip_posts.py threads --slot "$(echo "$SCHEDULE" | awk '{print $2}')"
+      - name: Record the post link on the promotion page
+        if: steps.slot.outputs.should_post == 'true' && (github.event.schedule == '40 1 * * *' || github.event.schedule == '40 15 * * *')
+        continue-on-error: true
+        run: |
+          if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi
+          cp .github/growth/clip-posts.json "$RUNNER_TEMP/clip-posts.json"
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 .github/scripts/clip_progress.py --merge-log "$RUNNER_TEMP/clip-posts.json"
+            git add .github/growth/clip-posts.json .github/growth/app-improvements.json
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "鉤子片發文紀錄：外宣頁連結更新 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not record the clip post"; exit 1

@@ -102,6 +102,18 @@ def compose_text(item):
     return with_play if len(with_play) <= MAX_POST_CHARS else text
 
 
+def compose_body(item):
+    """Post body without links: links go in the first reply (accounts posting a
+    link in every post get limited)."""
+    return f"{item['text']}\n\n{item_footer(item)}"
+
+
+def compose_links(item):
+    url = campaign_app_store_url(item.get("url"), "soc_th_guide")
+    play = play_store_url(item.get("app"), "soc_th_guide")
+    return f"App Store: {url}" + (f"\nGoogle Play: {play}" if play else "")
+
+
 def pick_postable(pool, now=None):
     # load_pool() is already built from the verified live linkset. Rechecking
     # every App Store URL here creates a burst of HEAD requests and triggers
@@ -135,6 +147,7 @@ def publish_post(
     text,
     image_url=None,
     sleeper=time.sleep,
+    reply_to=None,
 ):
     if len(text) > MAX_POST_CHARS:
         raise ValueError(
@@ -145,6 +158,8 @@ def publish_post(
         "text": text,
         "access_token": token,
     }
+    if reply_to is not None:
+        payload["reply_to_id"] = reply_to
     if image_url is not None:
         image_url = canonical_social_image_url(image_url)
         payload["media_type"] = "IMAGE"
@@ -178,14 +193,18 @@ def main():
         return 1
     try:
         pool = telegram_post.load_pool()
-        item, text = pick_postable(pool)
+        item, _ = pick_postable(pool)
         post_id = publish_post(
             tok,
             uid,
-            text,
+            compose_body(item),
             image_url=item_image_url(item),
         )
         print("threads posted ok, id:", post_id, "| app:", item.get("app"))
+        try:
+            publish_post(tok, uid, compose_links(item), reply_to=post_id)
+        except (HTTPStatusError, RequestError, ValueError) as error:
+            print(f"Threads link reply failed: {error}", file=sys.stderr)
         return 0
     except (HTTPStatusError, RequestError, ValueError, KeyError) as error:
         print(f"Threads post failed: {error}", file=sys.stderr)

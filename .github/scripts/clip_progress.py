@@ -67,8 +67,11 @@ def build_section(clips, posts, names, now, hook_total=None, notes=(), android=N
     total = f"／{hook_total} 款" if hook_total else ""
     lines.append(f"- 已上傳：{len(apps)} 款{total}、{len(clip_map)} 支影片。")
     if android:
-        lines.append(f"- Android：{len(android)} 款已在 Google Play 上線；這些 App 的貼文同時附 App Store 與 Google Play 連結"
-                     "（Telegram 兩個按鈕、IG 文案註明 Google Play）。")
+        listed = "、".join(sorted(names.get(k, k) for k in android))
+        lines.append(f"- Android：{len(android)} 款已在 Google Play 上線（{listed}）。"
+                     "Mac 每 30 分鐘掃一次 Google Play，新上架的 App 自動加進所有宣傳："
+                     "Telegram／Threads 貼文加 Google Play 連結、鉤子片 Telegram 加 Google Play 按鈕、IG 文案註明、"
+                     "新渲染的影片結尾寫「App Store／Google Play 搜尋」、官網頁面加 Google Play 按鈕。")
     lines += [f"- {n}" for n in notes]
     lines += ["", "| 平台 | 進度 | 已發 | 下一支（台灣時間） |", "|---|---|---|---|"]
     for channel in ("telegram", "instagram"):

@@ -1,0 +1,47 @@
+name: Android promo sync
+
+# The Mac's Google Play scan pushes _engine/geo/data/android_live_snapshot.json
+# whenever an app goes live. Posts (Telegram, Threads, hook clips) read the
+# snapshot when they go out; this refreshes the promotion page
+# (office.cait518.cc) so its Android list and links match right away.
+on:
+  push:
+    branches: [main]
+    paths:
+      - _engine/geo/data/android_live_snapshot.json
+  schedule:
+    - cron: "40 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android-promo-sync
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Refresh the promotion page
+        run: |
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            before="$(python3 -c "import json;print(json.load(open('.github/growth/app-improvements.json'))['summary_md'].split('## 鉤子片影片')[1].split('更新：')[1].split(chr(10),1)[1])" 2>/dev/null || true)"
+            python3 .github/scripts/clip_progress.py
+            after="$(python3 -c "import json;print(json.load(open('.github/growth/app-improvements.json'))['summary_md'].split('## 鉤子片影片')[1].split('更新：')[1].split(chr(10),1)[1])")"
+            if [ "$before" = "$after" ]; then echo "page already current"; exit 0; fi
+            python3 .github/scripts/test_app_improvements.py
+            git add .github/growth/app-improvements.json
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "外宣頁：Android 上線清單同步 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          exit 1

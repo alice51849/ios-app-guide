@@ -21,6 +21,13 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
 
 > **UsageNow 1.0.2 草稿：照備份改回原文字。** Apple 不能刪除非第一版的待送審版本（DELETE appStoreVersions 會回 409），所以用 `.github/growth/aso/claudeusagemini-asc-backup-*.json` 把 1.0.2 的 name／subtitle／keywords 改回送出前的原值，讓草稿等於沒改過。這是 Caitlyn 2026-10-14 明確要求的還原，不算新的 ASC 改動。
 
+> **2026-10-14 第一優先：匯出每款 App 的真實漏斗（給成長計畫用）。** 從本機最新的 ASC 資料（`~/.growth-private/asc-acquisition-feedback.json`、`portfolio-revenue/latest.*`、Sales and Trends，或重新拉 ASC Analytics，哪個最新用哪個）匯出到**私人** repo `00_GrowthEngine` 的 `reports/funnel-latest.json`，不可放進公開的 ios-app-guide。每款 App 要有：
+> - app_key、app_store_id、價格模式與主要價格、guard 分類（健康／量太小／零成交／零流量／資料不足）
+> - 最近 30 天的 impressions、product_page_views、first_time_downloads、paying_users 或購買筆數、proceeds_usd、refunds
+> - 前 5 名國家的下載與收益、as_of 日期、來源檔名
+>
+> 另外附 portfolio 總計與 `~/.growth-private/asa-status.json` 的摘要（各 campaign 花費、安裝、CPI）。只匯出，不改設定、不開廣告。commit 並 push 00_GrowthEngine。
+
 ## 依序執行
 
 1. `cd ~/00_GrowthEngine/geo/pages && git pull origin main`

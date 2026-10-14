@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T18:35:28Z",
+  "updated_at": "2026-10-14T18:46:13Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -3356,6 +3356,49 @@
         }
       ]
     },
+    "dailymatelite/vi": {
+      "app": "dailymatelite",
+      "locale": "vi",
+      "url": "https://files.catbox.moe/uc8nxt.mp4",
+      "store_url": "https://apps.apple.com/vn/app/id6794725568?pt=118326163&ct=h7_dailymatelite_vi&mt=8",
+      "hook": "Đến lượt mình nói thì đầu óc trống rỗng?",
+      "name": "DailyMate Lite: Luyện nói",
+      "search": "DailyMate Lite",
+      "tags": [
+        "#Luyệnnói",
+        "#giaotiếp",
+        "#dulịch",
+        "#PhátÂm",
+        "#Nghe",
+        "#DailyMateLite"
+      ],
+      "keywords": [
+        "giao tiếp",
+        "du lịch",
+        "phát âm",
+        "nghe",
+        "tiếng Anh",
+        "Nhật"
+      ],
+      "keyline": "50 ngôn ngữ, hội thoại thực tế",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Đến lượt mình nói thì đầu óc trống rỗng?",
+          "benefit": "14 chủ đề đời thường"
+        },
+        {
+          "id": "b",
+          "lead": "14 chủ đề đời thường",
+          "benefit": "Nghe xong, học luôn câu đáp"
+        },
+        {
+          "id": "c",
+          "lead": "Mỗi ngôn ngữ một chuỗi ngày học",
+          "benefit": "14 chủ đề đời thường"
+        }
+      ]
+    },
     "dbhalo/en": {
       "app": "dbhalo",
       "locale": "en",
@@ -3442,6 +3485,92 @@
         }
       ]
     },
+    "dbhalo/ja": {
+      "app": "dbhalo",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/doxs7g.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6806826699?pt=118326163&ct=h7_dbhalo_ja&mt=8",
+      "hook": "上の階の足音って 何dB？",
+      "name": "dB Halo：デシベル測定",
+      "search": "dB Halo デシベル測定",
+      "tags": [
+        "#デシベル測定",
+        "#騒音計",
+        "#音量測定",
+        "#音圧レベル",
+        "#騒音測定",
+        "#dBHaloデシベル測定"
+      ],
+      "keywords": [
+        "騒音計",
+        "音量測定",
+        "音圧レベル",
+        "騒音測定",
+        "周波数分析",
+        "スペクトル分析"
+      ],
+      "keyline": "デシベル測定",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "上の階の足音って 何dB？",
+          "benefit": "夜中の衝撃音も 時刻とdBで記録"
+        },
+        {
+          "id": "b",
+          "lead": "夜中の衝撃音も 時刻とdBで記録",
+          "benefit": "PDFレポートや CSVで書き出し"
+        },
+        {
+          "id": "c",
+          "lead": "Apple Watchと ウィジェット",
+          "benefit": "夜中の衝撃音も 時刻とdBで記録"
+        }
+      ]
+    },
+    "dbhalo/ko": {
+      "app": "dbhalo",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/q8fltt.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6806826699?pt=118326163&ct=h7_dbhalo_ko&mt=8",
+      "hook": "층간소음, 대체 몇 dB일까?",
+      "name": "dB Halo: 소음 측정기",
+      "search": "dB Halo 소음 측정기",
+      "tags": [
+        "#소음측정기",
+        "#생활소음",
+        "#데시벨",
+        "#음량측정",
+        "#층간소음",
+        "#dBHalo소음측정기"
+      ],
+      "keywords": [
+        "생활소음",
+        "데시벨",
+        "음량측정",
+        "층간소음",
+        "소음계",
+        "주파수분석"
+      ],
+      "keyline": "소음 측정기",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "층간소음, 대체 몇 dB일까?",
+          "benefit": "밤사이 충격음도 시간·dB로 기록"
+        },
+        {
+          "id": "b",
+          "lead": "밤사이 충격음도 시간·dB로 기록",
+          "benefit": "PDF 보고서·CSV로 내보내기"
+        },
+        {
+          "id": "c",
+          "lead": "Apple Watch와 위젯까지",
+          "benefit": "밤사이 충격음도 시간·dB로 기록"
+        }
+      ]
+    },
     "lumiletters/en": {
       "app": "lumiletters",
       "locale": "en",
@@ -3525,6 +3654,49 @@
           "id": "c",
           "lead": "看看孩子 進步了多少",
           "benefit": "照筆順描一描"
+        }
+      ]
+    },
+    "lumiletters/ja": {
+      "app": "lumiletters",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/04fith.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6778748533?pt=118326163&ct=h7_lumiletters_ja&mt=8",
+      "hook": "スマホ時間が ABCの時間に",
+      "name": "Lumi レター Lite：こども英語ABC",
+      "search": "Lumi レター Lite",
+      "tags": [
+        "#こども英語ABC",
+        "#フォニックス",
+        "#英語幼児",
+        "#アルファベット",
+        "#英語耳",
+        "#LumiレターLite"
+      ],
+      "keywords": [
+        "フォニックス",
+        "英語幼児",
+        "アルファベット",
+        "英語耳",
+        "子供英語",
+        "発音"
+      ],
+      "keyline": "文字・なぞり書き・冒険",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "スマホ時間が ABCの時間に",
+          "benefit": "書き順どおりに なぞり書き"
+        },
+        {
+          "id": "b",
+          "lead": "書き順どおりに なぞり書き",
+          "benefit": "音を聞いて 文字に合わせよう"
+        },
+        {
+          "id": "c",
+          "lead": "どれだけできたか 見てみよう",
+          "benefit": "書き順どおりに なぞり書き"
         }
       ]
     },
@@ -4047,7 +4219,7 @@
     "onepageppt/en": {
       "app": "onepageppt",
       "locale": "en",
-      "url": "https://files.catbox.moe/5ftqje.mp4",
+      "url": "https://files.catbox.moe/ygk4g4.mp4",
       "store_url": "https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=h7_onepageppt_en&mt=8",
       "hook": "Wall of text? Make it one slide",
       "name": "OnePage PPT: AI Slide Maker",
@@ -4090,7 +4262,7 @@
     "onepageppt/zh-Hant": {
       "app": "onepageppt",
       "locale": "zh-Hant",
-      "url": "https://files.catbox.moe/4pwaq1.mp4",
+      "url": "https://files.catbox.moe/2a6roi.mp4",
       "store_url": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=h7_onepageppt_zh-Hant&mt=8",
       "hook": "落落長的筆記 變成一頁簡報",
       "name": "OnePage PPT: AI 一頁簡報",
@@ -4778,7 +4950,7 @@
     "shotinbox/en": {
       "app": "shotinbox",
       "locale": "en",
-      "url": "https://files.catbox.moe/o6g0f3.mp4",
+      "url": "https://files.catbox.moe/8wjz03.mp4",
       "store_url": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=h7_shotinbox_en&mt=8",
       "hook": "Can't find that screenshot again?",
       "name": "ShotInbox AI: Sort Screenshots",
@@ -4821,7 +4993,7 @@
     "shotinbox/zh-Hant": {
       "app": "shotinbox",
       "locale": "zh-Hant",
-      "url": "https://files.catbox.moe/528jik.mp4",
+      "url": "https://files.catbox.moe/997pj2.mp4",
       "store_url": "https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=h7_shotinbox_zh-Hant&mt=8",
       "hook": "那張截圖 又找不到了？",
       "name": "ShotInbox AI：截圖整理",
@@ -5079,7 +5251,7 @@
     "stayclock/en": {
       "app": "stayclock",
       "locale": "en",
-      "url": "https://files.catbox.moe/tfy50q.mp4",
+      "url": "https://files.catbox.moe/l7l7av.mp4",
       "store_url": "https://apps.apple.com/us/app/id6814035888?pt=118326163&ct=h7_stayclock_en&mt=8",
       "hook": "Phone charging? Make it a bedside clock",
       "name": "Stay Clock: Flip Desk Clock",
@@ -5122,7 +5294,7 @@
     "stayclock/zh-Hant": {
       "app": "stayclock",
       "locale": "zh-Hant",
-      "url": "https://files.catbox.moe/0ctuk4.mp4",
+      "url": "https://files.catbox.moe/7ovm85.mp4",
       "store_url": "https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=h7_stayclock_zh-Hant&mt=8",
       "hook": "手機在充電？ 讓它變床頭鐘",
       "name": "Stay Clock:翻頁桌鐘",
@@ -5159,6 +5331,178 @@
           "id": "c",
           "lead": "StandBy 也是 同一款錶面",
           "benefit": "大字時間 配上整月行事曆"
+        }
+      ]
+    },
+    "stayclock/ja": {
+      "app": "stayclock",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/09ryue.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=h7_stayclock_ja&mt=8",
+      "hook": "充電中のiPhoneを 枕元の時計に",
+      "name": "Stay Clock:パタパタ卓上時計",
+      "search": "Stay Clock",
+      "tags": [
+        "#パタパタ卓上時計",
+        "#置き時計",
+        "#デジタル時計",
+        "#目覚まし時計",
+        "#ナイトスタンド",
+        "#StayClock"
+      ],
+      "keywords": [
+        "置き時計",
+        "デジタル時計",
+        "目覚まし時計",
+        "ナイトスタンド",
+        "充電スタンド",
+        "ウィジェット"
+      ],
+      "keyline": "常時点灯の時計とカレンダー",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "充電中のiPhoneを 枕元の時計に",
+          "benefit": "大きな時刻と 月間カレンダー"
+        },
+        {
+          "id": "b",
+          "lead": "大きな時刻と 月間カレンダー",
+          "benefit": "パタパタ風の 文字盤も"
+        },
+        {
+          "id": "c",
+          "lead": "スタンバイでも 同じ文字盤",
+          "benefit": "大きな時刻と 月間カレンダー"
+        }
+      ]
+    },
+    "stayclock/ko": {
+      "app": "stayclock",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/8pa8ca.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=h7_stayclock_ko&mt=8",
+      "hook": "충전 중인 폰, 협탁 시계로",
+      "name": "Stay Clock: 플립 탁상시계",
+      "search": "Stay Clock",
+      "tags": [
+        "#플립탁상시계",
+        "#디지털시계",
+        "#협탁시계",
+        "#탁상용시계",
+        "#거치대시계",
+        "#StayClock"
+      ],
+      "keywords": [
+        "디지털시계",
+        "협탁시계",
+        "탁상용시계",
+        "거치대시계",
+        "충전거치대",
+        "위젯"
+      ],
+      "keyline": "항상 켜지는 시계와 캘린더",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "충전 중인 폰, 협탁 시계로",
+          "benefit": "큼직한 시간과 월간 캘린더"
+        },
+        {
+          "id": "b",
+          "lead": "큼직한 시간과 월간 캘린더",
+          "benefit": "플립 스타일 페이스까지"
+        },
+        {
+          "id": "c",
+          "lead": "스탠바이에서도 같은 페이스",
+          "benefit": "큼직한 시간과 월간 캘린더"
+        }
+      ]
+    },
+    "stayclock/de": {
+      "app": "stayclock",
+      "locale": "de",
+      "url": "https://files.catbox.moe/zjugr8.mp4",
+      "store_url": "https://apps.apple.com/de/app/id6814035888?pt=118326163&ct=h7_stayclock_de&mt=8",
+      "hook": "Handy lädt? Mach's zur Nachttischuhr",
+      "name": "Stay Clock: Klapp-Tischuhr",
+      "search": "Stay Clock",
+      "tags": [
+        "#KlappTischuhr",
+        "#Nachttisch",
+        "#Standby",
+        "#Dockingstation",
+        "#Laden",
+        "#StayClock"
+      ],
+      "keywords": [
+        "nachttisch",
+        "standby",
+        "dockingstation",
+        "laden",
+        "einbrennschutz",
+        "oled"
+      ],
+      "keyline": "Dauerhafte Uhr und Kalender",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Handy lädt? Mach's zur Nachttischuhr",
+          "benefit": "Große Uhrzeit mit Monatskalender"
+        },
+        {
+          "id": "b",
+          "lead": "Große Uhrzeit mit Monatskalender",
+          "benefit": "Zifferblätter im Klapp-Look"
+        },
+        {
+          "id": "c",
+          "lead": "Dasselbe Zifferblatt im StandBy",
+          "benefit": "Große Uhrzeit mit Monatskalender"
+        }
+      ]
+    },
+    "stayclock/ar": {
+      "app": "stayclock",
+      "locale": "ar",
+      "url": "https://files.catbox.moe/obk2wo.mp4",
+      "store_url": "https://apps.apple.com/sa/app/id6814035888?pt=118326163&ct=h7_stayclock_ar&mt=8",
+      "hook": "هاتفك يشحن؟ حوّله إلى ساعة بجانب السرير",
+      "name": "Stay Clock: ساعة مكتب رقمية",
+      "search": "Stay Clock",
+      "tags": [
+        "#ساعةمكتبرقمية",
+        "#منضدةالسرير",
+        "#الاستعداد",
+        "#حاملالجوال",
+        "#الشحن",
+        "#StayClock"
+      ],
+      "keywords": [
+        "منضدة السرير",
+        "الاستعداد",
+        "حامل الجوال",
+        "الشحن",
+        "جانب السرير",
+        "OLED"
+      ],
+      "keyline": "الوقت والتقويم بلا انقطاع",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "هاتفك يشحن؟ حوّله إلى ساعة بجانب السرير",
+          "benefit": "وقت كبير مع تقويم شهري"
+        },
+        {
+          "id": "b",
+          "lead": "وقت كبير مع تقويم شهري",
+          "benefit": "واجهات قلّابة والمزيد"
+        },
+        {
+          "id": "c",
+          "lead": "الوجه نفسه في وضع الاستعداد",
+          "benefit": "وقت كبير مع تقويم شهري"
         }
       ]
     },
@@ -5812,46 +6156,6 @@
         ]
       }
     },
-    "dbhalo": {
-      "ja": {
-        "keywords": [
-          "騒音計",
-          "音量測定",
-          "音圧レベル",
-          "騒音測定",
-          "周波数分析",
-          "スペクトル分析"
-        ],
-        "keyline": "デシベル測定",
-        "tags": [
-          "#デシベル測定",
-          "#騒音計",
-          "#音量測定",
-          "#音圧レベル",
-          "#騒音測定",
-          "#dBHaloデシベル測定"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "생활소음",
-          "데시벨",
-          "음량측정",
-          "층간소음",
-          "소음계",
-          "주파수분석"
-        ],
-        "keyline": "소음 측정기",
-        "tags": [
-          "#소음측정기",
-          "#생활소음",
-          "#데시벨",
-          "#음량측정",
-          "#층간소음",
-          "#dBHalo소음측정기"
-        ]
-      }
-    },
     "gmoney": {
       "en": {
         "keywords": [
@@ -6239,25 +6543,6 @@
       }
     },
     "lumiletters": {
-      "ja": {
-        "keywords": [
-          "フォニックス",
-          "英語幼児",
-          "アルファベット",
-          "英語耳",
-          "子供英語",
-          "発音"
-        ],
-        "keyline": "こども英語ABC",
-        "tags": [
-          "#こども英語ABC",
-          "#フォニックス",
-          "#英語幼児",
-          "#アルファベット",
-          "#英語耳",
-          "#LumiレターLite"
-        ]
-      },
       "ko": {
         "keywords": [
           "알파벳",
@@ -7107,46 +7392,6 @@
           "#받아쓰기",
           "#음성인식",
           "#SonoNote"
-        ]
-      }
-    },
-    "stayclock": {
-      "ja": {
-        "keywords": [
-          "置き時計",
-          "デジタル時計",
-          "目覚まし時計",
-          "ナイトスタンド",
-          "充電スタンド",
-          "ウィジェット"
-        ],
-        "keyline": "パタパタ卓上時計",
-        "tags": [
-          "#パタパタ卓上時計",
-          "#置き時計",
-          "#デジタル時計",
-          "#目覚まし時計",
-          "#ナイトスタンド",
-          "#StayClock"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "디지털시계",
-          "협탁시계",
-          "탁상용시계",
-          "거치대시계",
-          "충전거치대",
-          "위젯"
-        ],
-        "keyline": "플립 탁상시계",
-        "tags": [
-          "#플립탁상시계",
-          "#디지털시계",
-          "#협탁시계",
-          "#탁상용시계",
-          "#거치대시계",
-          "#StayClock"
         ]
       }
     },

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T14:02:21Z",
+  "updated_at": "2026-10-14T14:12:35Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -882,6 +882,62 @@
         "#效率工具",
         "#App推薦",
         "#iPhone"
+      ]
+    },
+    "sereno/en": {
+      "app": "sereno",
+      "locale": "en",
+      "url": "https://files.catbox.moe/y8erow.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6788236641?pt=118326163&ct=h7_sereno_en&mt=8",
+      "hook": "Rain sounds that never loop",
+      "name": "Sereno: Sleep Sounds",
+      "search": "Sereno Sleep Sounds",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "sereno/zh-Hant": {
+      "app": "sereno",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/csjmz3.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6788236641?pt=118326163&ct=h7_sereno_zh-Hant&mt=8",
+      "hook": "聽不出循環的 雨聲",
+      "name": "Sereno: 極致睡眠音效",
+      "search": "Sereno 極致睡眠音效",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
+    },
+    "shotinbox/en": {
+      "app": "shotinbox",
+      "locale": "en",
+      "url": "https://files.catbox.moe/8wjz03.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6802166527?pt=118326163&ct=h7_shotinbox_en&mt=8",
+      "hook": "Can't find that screenshot again?",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "search": "ShotInbox",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "shotinbox/zh-Hant": {
+      "app": "shotinbox",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/997pj2.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=h7_shotinbox_zh-Hant&mt=8",
+      "hook": "那張截圖 又找不到了？",
+      "name": "ShotInbox AI：截圖整理",
+      "search": "ShotInbox",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
       ]
     }
   },
@@ -1885,6 +1941,12 @@
     {
       "date": "2026-11-11",
       "slot": 1,
+      "channel": "telegram",
+      "clip": "sereno/zh-Hant"
+    },
+    {
+      "date": "2026-11-11",
+      "slot": 1,
       "channel": "threads",
       "clip": "qrcodehalo/zh-Hant"
     },
@@ -1909,14 +1971,32 @@
     {
       "date": "2026-11-12",
       "slot": 1,
+      "channel": "instagram",
+      "clip": "sereno/zh-Hant"
+    },
+    {
+      "date": "2026-11-12",
+      "slot": 1,
       "channel": "telegram",
       "clip": "savetag/zh-Hant"
+    },
+    {
+      "date": "2026-11-12",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "sereno/zh-Hant"
     },
     {
       "date": "2026-11-12",
       "slot": 15,
       "channel": "instagram",
       "clip": "savetag/en"
+    },
+    {
+      "date": "2026-11-12",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "shotinbox/en"
     },
     {
       "date": "2026-11-12",
@@ -1927,8 +2007,20 @@
     {
       "date": "2026-11-13",
       "slot": 1,
+      "channel": "instagram",
+      "clip": "shotinbox/zh-Hant"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 1,
       "channel": "telegram",
       "clip": "scanto/zh-Hant"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "shotinbox/zh-Hant"
     },
     {
       "date": "2026-11-14",
@@ -1941,6 +2033,42 @@
       "slot": 1,
       "channel": "threads",
       "clip": "scanto/zh-Hant"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "sereno/en"
+    },
+    {
+      "date": "2026-11-15",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "shotinbox/zh-Hant"
+    },
+    {
+      "date": "2026-11-15",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "sereno/en"
+    },
+    {
+      "date": "2026-11-15",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "sereno/en"
+    },
+    {
+      "date": "2026-11-16",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "shotinbox/en"
+    },
+    {
+      "date": "2026-11-16",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "shotinbox/en"
     }
   ]
 }

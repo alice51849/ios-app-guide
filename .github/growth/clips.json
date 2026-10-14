@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T17:50:12Z",
+  "updated_at": "2026-10-14T18:01:02Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -2840,6 +2840,49 @@
         }
       ]
     },
+    "cvdesk/th": {
+      "app": "cvdesk",
+      "locale": "th",
+      "url": "https://files.catbox.moe/itcxqu.mp4",
+      "store_url": "https://apps.apple.com/th/app/id6781337213?pt=118326163&ct=h7_cvdesk_th&mt=8",
+      "hook": "เรซูเม่โดน ATS ปัดตก?",
+      "name": "CV Desk: สร้างเรซูเม่ ATS",
+      "search": "CV Desk เรซูเม่ ATS",
+      "tags": [
+        "#สร้างเรซูเม่ATS",
+        "#เรซูเม่",
+        "#ทําเรซูเม่",
+        "#สร้างเรซูเม่",
+        "#ใบสมัครงาน",
+        "#CVDeskเรซูเม่ATS"
+      ],
+      "keywords": [
+        "เรซูเม่",
+        "ทําเรซูเม่",
+        "สร้างเรซูเม่",
+        "ใบสมัครงาน",
+        "ตัวอย่างเรซูเม่",
+        "สมัครงาน"
+      ],
+      "keyline": "สร้างเรซูเม่ ATS · สมัครงาน",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "เรซูเม่โดน ATS ปัดตก?",
+          "benefit": "แตะคำแนะนำแก้ไข เพิ่มคะแนน"
+        },
+        {
+          "id": "b",
+          "lead": "แตะคำแนะนำแก้ไข เพิ่มคะแนน",
+          "benefit": "ทุกเทมเพลต รองรับ ATS"
+        },
+        {
+          "id": "c",
+          "lead": "ส่งออก PDF หรือ Word",
+          "benefit": "แตะคำแนะนำแก้ไข เพิ่มคะแนน"
+        }
+      ]
+    },
     "cyca/en": {
       "app": "cyca",
       "locale": "en",
@@ -2923,6 +2966,49 @@
           "id": "c",
           "lead": "每日身體預報",
           "benefit": "不用帳號 只存在你的手機"
+        }
+      ]
+    },
+    "cyca/ja": {
+      "app": "cyca",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/5ufikj.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=h7_cyca_ja&mt=8",
+      "hook": "生理データって どこに保存されてる？",
+      "name": "Cyca 生理・排卵日トラッカー",
+      "search": "Cyca 生理",
+      "tags": [
+        "#生理管理",
+        "#生理周期",
+        "#排卵日",
+        "#排卵予測",
+        "#生理予測",
+        "#Cyca生理"
+      ],
+      "keywords": [
+        "生理管理",
+        "生理周期",
+        "排卵日",
+        "排卵予測",
+        "生理予測",
+        "生理日"
+      ],
+      "keyline": "排卵・生理日・PMS予測カレンダー",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "生理データって どこに保存されてる？",
+          "benefit": "アカウント不要 端末の中だけ"
+        },
+        {
+          "id": "b",
+          "lead": "アカウント不要 端末の中だけ",
+          "benefit": "生理日も排卵日も ひと目でわかる"
+        },
+        {
+          "id": "c",
+          "lead": "毎日のカラダ予報",
+          "benefit": "アカウント不要 端末の中だけ"
         }
       ]
     },
@@ -5133,25 +5219,6 @@
       }
     },
     "cyca": {
-      "ja": {
-        "keywords": [
-          "生理管理",
-          "生理周期",
-          "排卵日",
-          "排卵予測",
-          "生理予測",
-          "生理日"
-        ],
-        "keyline": "排卵・生理日・PMS予測カレンダー",
-        "tags": [
-          "#生理管理",
-          "#生理周期",
-          "#排卵日",
-          "#排卵予測",
-          "#生理予測",
-          "#Cyca生理"
-        ]
-      },
       "ko": {
         "keywords": [
           "생리주기",

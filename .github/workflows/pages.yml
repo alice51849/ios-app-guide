@@ -6,6 +6,10 @@ on:
     paths:
       - '**'
       - '!_engine/**'
+      # Promotion-page data (clips schedule, post logs, reports) is read from
+      # main by office.cait518.cc, never deployed here; data-only pushes every
+      # few minutes otherwise cancel each in-flight deploy.
+      - '!.github/growth/**'
       # Readback contract fixes must ship without dispatching another GEO run.
       - '_engine/geo/deployment_generation.py'
       - '_engine/geo/hero_tasks_readback.py'

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T09:28:13Z",
+  "updated_at": "2026-10-14T11:53:46Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -57,6 +57,90 @@
         "#앱추천",
         "#아이폰어플"
       ]
+    },
+    "mochi/en": {
+      "app": "mochi",
+      "locale": "en",
+      "url": "https://files.catbox.moe/pdwb2b.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=h7_mochi_en&mt=8",
+      "hook": "Your to-do list, but make it cute",
+      "name": "Mochi: Cute Checklist",
+      "search": "Mochi Cute Checklist",
+      "tags": [
+        "#productivity",
+        "#iphoneapps",
+        "#appstore"
+      ]
+    },
+    "mochi/zh-Hant": {
+      "app": "mochi",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/sh1wdt.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=h7_mochi_zh-Hant&mt=8",
+      "hook": "待辦清單 也可以這麼可愛",
+      "name": "Mochi: 可愛待辦清單",
+      "search": "Mochi 可愛待辦清單",
+      "tags": [
+        "#效率工具",
+        "#App推薦",
+        "#iPhone"
+      ]
+    },
+    "mochi/ja": {
+      "app": "mochi",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/tqkgff.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=h7_mochi_ja&mt=8",
+      "hook": "ToDoリストが こんなにかわいい",
+      "name": "Mochi: かわいいToDo",
+      "search": "Mochi かわいいToDo",
+      "tags": [
+        "#効率化",
+        "#iPhoneアプリ",
+        "#アプリ紹介"
+      ]
+    },
+    "mochi/ko": {
+      "app": "mochi",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/yr5huj.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=h7_mochi_ko&mt=8",
+      "hook": "할 일 목록이 이렇게 귀여워도 돼?",
+      "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+      "search": "Mochi 귀여운 할 일",
+      "tags": [
+        "#생산성",
+        "#앱추천",
+        "#아이폰어플"
+      ]
+    },
+    "mochi/pt-BR": {
+      "app": "mochi",
+      "locale": "pt-BR",
+      "url": "https://files.catbox.moe/9a5xaz.mp4",
+      "store_url": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=h7_mochi_pt-BR&mt=8",
+      "hook": "Sua lista de tarefas versão fofa",
+      "name": "Mochi: Lista fofa",
+      "search": "Mochi Lista fofa",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "mochi/de": {
+      "app": "mochi",
+      "locale": "de",
+      "url": "https://files.catbox.moe/ogbh3q.mp4",
+      "store_url": "https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=h7_mochi_de&mt=8",
+      "hook": "Deine To-do-Liste, nur viel süßer",
+      "name": "Mochi: Süße To-do-Liste",
+      "search": "Mochi Süße To-do-Liste",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
     }
   },
   "schedule": [
@@ -67,10 +151,22 @@
       "clip": "claudeusagemini/en"
     },
     {
+      "date": "2026-10-15",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "mochi/zh-Hant"
+    },
+    {
       "date": "2026-10-17",
       "slot": 1,
       "channel": "telegram",
       "clip": "claudeusagemini/zh-Hant"
+    },
+    {
+      "date": "2026-10-18",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "mochi/en"
     }
   ]
 }

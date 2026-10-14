@@ -6,10 +6,11 @@ The clips are rendered and uploaded by the private Growth Engine
 public video URLs, the App Store link with a per-clip campaign token, the
 hook line and the App Store search term shown on the end card.
 
-Which clip goes out is a pure function of the date and the slot, so there
-is no state to keep: the slot gate already stops a slot from running twice.
-Priority apps rotate first; held apps (paid editions promoted only through
-their Lite version, apps waiting for a pricing change) are skipped.
+clips.json carries a pre-planned schedule: every entry names the date, the
+slot and the channel of exactly one clip. A clip is scheduled at most once per
+channel, so nothing is ever re-posted, and the pacing (Instagram 1 a day for
+the first two weeks, then at most 2; Telegram 1 a day) is decided when the
+schedule is written, not here. A slot without an entry posts nothing.
 
     python3 clip_posts.py telegram --slot 1     # sendVideo + App Store button
     python3 clip_posts.py instagram --slot 15   # Reels via the official API
@@ -27,15 +28,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 CLIPS = HERE.parent / "growth" / "clips.json"
-EPOCH = dt.date(2026, 10, 15)
 GRAPH = "https://graph.instagram.com/v21.0"
-
-# Slot (UTC hour) -> locales in order of preference for that audience.
-SLOT_LOCALES = {
-    1: ["zh-Hant", "ja", "ko", "en"],   # Taiwan / Japan / Korea morning
-    9: ["en", "de", "fr", "es"],        # Europe
-    15: ["en", "es-MX", "pt-BR"],       # Americas
-}
 
 TEXT = {
     "en": {"search": "Search “{s}” on the App Store", "bio": "Link in bio", "button": "Get it on the App Store",
@@ -62,31 +55,17 @@ def text_for(locale):
 
 
 def load(path=CLIPS):
-    data = json.loads(path.read_text(encoding="utf-8"))
-    held = set(data.get("hold", []))
-    clips = [c for c in data.get("clips", []) if c.get("app") not in held and c.get("url")]
-    priority = {app: i for i, app in enumerate(data.get("priority", []))}
-    return clips, priority
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
-def pick(clips, priority, day, slot):
-    """The clip for this date and slot, or None when nothing fits."""
-    wanted = SLOT_LOCALES.get(slot, ["en"])
-    best = {}
-    for clip in clips:
-        if clip["locale"] not in wanted:
-            continue
-        rank = wanted.index(clip["locale"])
-        if clip["app"] not in best or rank < best[clip["app"]][0]:
-            best[clip["app"]] = (rank, clip)
-    if not best:
-        return None
-    apps = sorted(best, key=lambda a: (priority.get(a, len(priority)), a))
-    # Each slot walks the list one app per day (so every app comes up);
-    # slots start a third of the list apart so one day shows different apps.
-    slot_index = sorted(SLOT_LOCALES).index(slot) if slot in SLOT_LOCALES else 0
-    index = ((day - EPOCH).days + slot_index * (len(apps) // len(SLOT_LOCALES) + 1)) % len(apps)
-    return best[apps[index]][1]
+def scheduled(data, day, slot, channel):
+    """The clip planned for this date, slot and channel, or None."""
+    for entry in data.get("schedule", []):
+        if entry["date"] == day.isoformat() and entry["slot"] == slot and entry["channel"] == channel:
+            clip = data["clips"].get(entry["clip"])
+            if clip and clip.get("url"):
+                return clip
+    return None
 
 
 def with_campaign(url, channel):
@@ -96,12 +75,24 @@ def with_campaign(url, channel):
     return urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query)))
 
 
+# A few natural layouts per post, picked per app and locale so a feed never
+# shows the same template twice in a row.
+LAYOUTS = [
+    ["{hook}", "", "{name}", "{search}"],
+    ["{hook}", "", "{search}", "{name}"],
+    ["{name}", "{hook}", "", "{search}"],
+]
+
+
 def caption(clip, channel):
     t = text_for(clip["locale"])
-    lines = [clip["hook"], "", clip["name"], t["search"].format(s=clip["search"])]
+    layout = LAYOUTS[sum(map(ord, f"{clip['app']}/{clip['locale']}/{channel}")) % len(LAYOUTS)]
+    values = {"hook": clip["hook"], "name": clip["name"], "search": t["search"].format(s=clip["search"])}
+    lines = [line.format(**values) for line in layout]
     if channel == "instagram":
-        lines += [t["bio"], "", t["tags"]]
-    return "\n".join(line for line in lines if line is not None)
+        tags = clip.get("tags") or t["tags"].split()
+        lines += [t["bio"], "", " ".join(tags[:3])]
+    return "\n".join(lines)
 
 
 def _post(url, fields, timeout=60):
@@ -178,10 +169,10 @@ def main():
     if not CLIPS.exists():
         print("clip: no clips.json yet, nothing to post")
         return 0
-    clips, priority = load()
-    clip = pick(clips, priority, day, args.slot)
+    channel = "instagram" if args.channel == "preview" else args.channel
+    clip = scheduled(load(), day, args.slot, channel)
     if not clip:
-        print("clip: no clip for this slot")
+        print(f"clip: nothing scheduled for {channel} on {day} slot {args.slot}")
         return 0
     print(f"clip: {clip['app']} {clip['locale']} {clip['url']}")
     if args.channel == "preview":

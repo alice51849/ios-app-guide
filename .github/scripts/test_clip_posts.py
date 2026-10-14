@@ -4,7 +4,6 @@ import datetime as dt
 import json
 import os
 import sys
-import tempfile
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -20,27 +19,26 @@ def clip(app, locale):
             "hook": f"{app} hook", "name": f"{app} name", "search": app}
 
 
+DATA = {
+    "clips": {"a/en": clip("a", "en"), "a/zh-Hant": clip("a", "zh-Hant"), "b/en": clip("b", "en")},
+    "schedule": [
+        {"date": "2026-10-15", "slot": 1, "channel": "telegram", "clip": "a/zh-Hant"},
+        {"date": "2026-10-15", "slot": 15, "channel": "instagram", "clip": "b/en"},
+        {"date": "2026-10-16", "slot": 15, "channel": "telegram", "clip": "missing/en"},
+    ],
+}
+
+
 class ClipPostsTest(unittest.TestCase):
-    def setUp(self):
-        self.clips = [clip("a", "en"), clip("a", "zh-Hant"), clip("b", "en"), clip("c", "ja")]
-        self.priority = {"b": 0, "a": 1}
+    def test_only_the_scheduled_clip_goes_out(self):
+        day = dt.date(2026, 10, 15)
+        self.assertEqual(C.scheduled(DATA, day, 1, "telegram")["locale"], "zh-Hant")
+        self.assertIsNone(C.scheduled(DATA, day, 15, "telegram"))
+        self.assertEqual(C.scheduled(DATA, day, 15, "instagram")["app"], "b")
 
-    def test_slot_prefers_its_audience_language(self):
-        chosen = [C.pick(self.clips, self.priority, C.EPOCH + dt.timedelta(days=d), 1) for d in range(6)]
-        self.assertTrue(all(c["locale"] in ("zh-Hant", "ja", "en") for c in chosen))
-        a = [c for c in chosen if c["app"] == "a"]
-        self.assertTrue(a and all(c["locale"] == "zh-Hant" for c in a))
-
-    def test_rotation_covers_every_app(self):
-        seen = {C.pick(self.clips, self.priority, C.EPOCH + dt.timedelta(days=d), 15)["app"] for d in range(10)}
-        self.assertEqual(seen, {"a", "b"})  # c has no Americas locale
-
-    def test_held_apps_are_never_posted(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            path = Path(tmp) / "clips.json"
-            path.write_text(json.dumps({"clips": self.clips, "hold": ["b"], "priority": ["b", "a"]}))
-            clips, priority = C.load(path)
-        self.assertNotIn("b", {c["app"] for c in clips})
+    def test_unknown_clip_or_empty_day_posts_nothing(self):
+        self.assertIsNone(C.scheduled(DATA, dt.date(2026, 10, 16), 15, "telegram"))
+        self.assertIsNone(C.scheduled(DATA, dt.date(2026, 10, 17), 1, "instagram"))
 
     def test_campaign_token_gets_channel_suffix_and_stays_short(self):
         url = C.with_campaign("https://apps.apple.com/tw/app/id1?pt=1&ct=h7_claudeusagemini_zh-Hant&mt=8", "tg")
@@ -49,10 +47,16 @@ class ClipPostsTest(unittest.TestCase):
         ct = dict(p.split("=") for p in long.split("?")[1].split("&"))["ct"]
         self.assertLessEqual(len(ct), 40)
 
-    def test_instagram_caption_points_to_search_and_bio(self):
+    def test_instagram_caption_points_to_search_and_bio_with_few_tags(self):
         text = C.caption(clip("mochi", "ja"), "instagram")
         self.assertIn("App Storeで「mochi」を検索", text)
         self.assertIn("プロフィール", text)
+        self.assertLessEqual(text.count("#"), 3)
+
+    def test_captions_vary_between_apps(self):
+        layouts = {tuple(C.caption(clip(app, "en"), "telegram").split("\n")[:1]) == (f"{app} hook",)
+                   for app in ("a", "bb", "ccc", "dddd", "eeeee", "ffffff")}
+        self.assertEqual(layouts, {True, False})
 
     def test_reels_wait_for_the_token(self):
         with mock.patch.dict(os.environ, {}, clear=True):

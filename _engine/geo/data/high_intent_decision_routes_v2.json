@@ -5,7 +5,7 @@
     "relative_path": "data/verified-ios-app-finder-catalog.json",
     "expected_app_count": 53,
     "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "56ceba289129e8fb0a6929b2eaa33b78e2291db07dd9ece867b0feabe3008b11",
+    "copy_sha256": "1ee32ea531d157924f222d78478bae555ce0dee2735a20513ef401e2bfaa673b",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -1888,7 +1888,7 @@
           "alternative_lens": "Built-in network settings are enough for forgetting and rejoining Wi-Fi. A professional tool is better for packet-level investigation or managed networks.",
           "verify_before_install": [
             "Compare at least two websites and another device when possible.",
-            "Confirm each tool's free-use allowance and lifetime-unlock scope."
+            "Confirm the single free check shared across all tools and the lifetime-unlock scope."
           ],
           "evidence_refs": [
             "summary.en",
@@ -2222,7 +2222,7 @@
           "market": "United States",
           "culture_route": "Many US drivers, diners and shoppers scan QR codes on parking meters, restaurant tables, posters and parcels, and want to see where a code points before anything opens.",
           "query": "Which QR code scanner shows me the full link before it opens anything?",
-          "buyer_problem": "Many scanners jump straight to a website or action after the scan, so a sticker placed over a real code is one tap away from the browser. The decision is whether a scanner that shows the complete payload with an on-device rule check fits how you scan. By default this app runs the action right after scanning; turn off “Run action after scanning” in Settings to inspect first, then tap Security Check in History.",
+          "buyer_problem": "Many scanners jump straight to a website or action after the scan, so a sticker placed over a real code is one tap away from the browser. The decision is whether a scanner that shows the complete payload with an on-device rule check fits how you scan. By default the scanned action runs right away; turn off “Run action after scanning” in Settings to inspect first, then tap Security Check in History.",
           "decision_rule": "Favor a preview-first scanner when codes come from public places you do not control. The free allowance is three successful scans per device, so regular scanning needs the one-time Lifetime Pro purchase; creating QR codes and keeping local history stay free, and there is no subscription.",
           "workflow_checks": [
             "With automatic action turned off, does every result show the full content, link scheme and host before you act?",

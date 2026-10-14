@@ -39,9 +39,12 @@ UTILITY_LABEL = {"telegram": "TG", "instagram": "IG", "threads": "Th"}
 UTILITY_TYPE = {"word": "英文單字", "zhuyin": "注音", "photo": "證件照尺寸"}
 # Channels without automation yet: what is true today, shown as-is.
 MANUAL_CHANNELS = [
-    ("YouTube Shorts", "本機上傳"),
     ("TikTok", "手動"),
 ]
+# Platforms posted by social_extra.py (social-extra.yml): "未設定" until the first post.
+EXTRA_CHANNELS = {"facebook": ("Facebook", "FB"), "bluesky": ("Bluesky", "Bs"), "youtube": ("YouTube Shorts", "YT"),
+                  "pinterest": ("Pinterest", "Pin"), "tumblr": ("Tumblr", "Tb"), "naver": ("Naver Blog", "Nv"),
+                  "plurk": ("Plurk", "Pk"), "dailymotion": ("Dailymotion", "DM"), "x": ("X", "X")}
 
 
 def load_json(path, default):
@@ -89,6 +92,9 @@ def build_section(clips, posts, names, now, hook_total=None, notes=(), android=N
             c = clip_map.get(e["clip"], {})
             nxt = f"{tw_time(e['date'], e['slot'], channel)} {names.get(c.get('app'), c.get('app', ''))}"
         lines.append(f"| {CHANNEL_NAME[channel]} | {state} | {done} | {nxt} |")
+    for channel, (name, _) in EXTRA_CHANNELS.items():
+        done = sum(1 for p in posts + utility if p["channel"] == channel)
+        lines.append(f"| {name} | {'自動' if done else '未設定'} | {done or '—'} | — |")
     for name, state in MANUAL_CHANNELS:
         lines.append(f"| {name} | {state} | — | — |")
     lines += ["", "| App | 影片 | 已發 |", "|---|---|---|"]
@@ -97,10 +103,11 @@ def build_section(clips, posts, names, now, hook_total=None, notes=(), android=N
         vids = " ".join(f"[{clip_map[k]['locale']}]({clip_map[k]['url']})" for k in keys)
         sent = []
         for k in keys:
-            for ch in ("telegram", "instagram", "threads"):
+            for ch in ("telegram", "instagram", "threads", *EXTRA_CHANNELS):
                 p = posted.get((ch, k))
                 if p and p.get("link"):
-                    sent.append(f"[{CHANNEL_NAME[ch][0]}]({p['link']})")
+                    label = EXTRA_CHANNELS[ch][1] if ch in EXTRA_CHANNELS else CHANNEL_NAME[ch][0]
+                    sent.append(f"[{label}]({p['link']})")
         mark = " 🤖" if app in android else ""
         lines.append(f"| {names.get(app, app)}{mark} | {vids} | {' '.join(sent) or '—'} |")
     return "\n".join(lines)

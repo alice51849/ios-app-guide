@@ -1,0 +1,146 @@
+name: Social extra daily
+
+# Zero-token daily posts of the hook clips (clips.json, mirrored from that
+# day's Instagram/Threads/Telegram schedule) and the day's countdown/utility
+# cards to nine more platforms, by .github/scripts/social_extra.py. Every post
+# goes in .github/growth/clip-posts.json (a clip never goes to the same
+# platform twice) and its link onto office.cait518.cc.
+#
+# Each platform is secret-gated: without its secrets the run logs
+# "not configured" and carries on; a platform error never fails the workflow.
+# Secrets (repository → Settings → Secrets and variables → Actions):
+#   Facebook Page  FB_PAGE_ID, FB_PAGE_TOKEN  (without them the IG_ACCESS_TOKEN
+#                  secret is probed via /me/accounts for a Page token with
+#                  CREATE_CONTENT; the log names the Page it uses)
+#   Bluesky        BSKY_HANDLE, BSKY_APP_PASSWORD
+#   YouTube Shorts YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN
+#                  (uploads stay private until the API project passes audit)
+#   Pinterest      PINTEREST_TOKEN, optional PINTEREST_REFRESH_TOKEN +
+#                  PINTEREST_APP_ID + PINTEREST_APP_SECRET, optional
+#                  PINTEREST_BOARD_ID (default: find/create board "Lumi Apps")
+#   Tumblr         TUMBLR_CONSUMER_KEY, TUMBLR_CONSUMER_SECRET, TUMBLR_TOKEN,
+#                  TUMBLR_TOKEN_SECRET, TUMBLR_BLOG
+#   Naver Blog     NAVER_ID, NAVER_BLOG_API_PASSWORD   (Korean only, 1/day)
+#   Plurk          PLURK_APP_KEY, PLURK_APP_SECRET, PLURK_TOKEN,
+#                  PLURK_TOKEN_SECRET                  (zh-Hant only, ≤2/day)
+#   Dailymotion    DM_API_KEY, DM_API_SECRET, DM_USERNAME, DM_PASSWORD (1/day)
+#   X              X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET
+#                  (paid per post: 1/day)
+# Manual run: mode=whoami checks every configured account without posting;
+# dry_run=true prints what would go out.
+on:
+  schedule:
+    - cron: "50 1 * * *"   # slot 1: after the Asia-morning clip posts
+    - cron: "50 15 * * *"  # slot 15: Americas morning, plus the day's cards
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: "Platform (all, facebook, bluesky, youtube, pinterest, tumblr, naver, plurk, dailymotion, x; comma list ok)"
+        default: "all"
+      mode:
+        description: "post or whoami"
+        type: choice
+        options: [post, whoami]
+        default: post
+      dry_run:
+        description: "Print what would be posted, post nothing"
+        type: boolean
+        default: false
+      slot:
+        description: "clips.json slot (1 or 15); auto = by UTC hour"
+        default: "auto"
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: social-extra
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      actions: read
+      contents: write # records each post's link on the promotion page
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Prevent duplicate UTC slot
+        id: slot
+        if: github.event_name == 'schedule'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 .github/scripts/social_slot_gate.py
+          --workflow social-extra.yml
+          --slots 1,15
+      - name: Test
+        run: |
+          pip install -q pillow
+          python3 .github/scripts/test_social_extra.py -q
+      - name: Post
+        if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
+        env:
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          PINTEREST_TOKEN: ${{ secrets.PINTEREST_TOKEN }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          PINTEREST_APP_ID: ${{ secrets.PINTEREST_APP_ID }}
+          PINTEREST_APP_SECRET: ${{ secrets.PINTEREST_APP_SECRET }}
+          PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
+          TUMBLR_CONSUMER_KEY: ${{ secrets.TUMBLR_CONSUMER_KEY }}
+          TUMBLR_CONSUMER_SECRET: ${{ secrets.TUMBLR_CONSUMER_SECRET }}
+          TUMBLR_TOKEN: ${{ secrets.TUMBLR_TOKEN }}
+          TUMBLR_TOKEN_SECRET: ${{ secrets.TUMBLR_TOKEN_SECRET }}
+          TUMBLR_BLOG: ${{ secrets.TUMBLR_BLOG }}
+          NAVER_ID: ${{ secrets.NAVER_ID }}
+          NAVER_BLOG_API_PASSWORD: ${{ secrets.NAVER_BLOG_API_PASSWORD }}
+          PLURK_APP_KEY: ${{ secrets.PLURK_APP_KEY }}
+          PLURK_APP_SECRET: ${{ secrets.PLURK_APP_SECRET }}
+          PLURK_TOKEN: ${{ secrets.PLURK_TOKEN }}
+          PLURK_TOKEN_SECRET: ${{ secrets.PLURK_TOKEN_SECRET }}
+          DM_API_KEY: ${{ secrets.DM_API_KEY }}
+          DM_API_SECRET: ${{ secrets.DM_API_SECRET }}
+          DM_USERNAME: ${{ secrets.DM_USERNAME }}
+          DM_PASSWORD: ${{ secrets.DM_PASSWORD }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          SCHEDULE: ${{ github.event.schedule }}
+          CHANNEL: ${{ inputs.channel }}
+          MODE: ${{ inputs.mode }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          MANUAL_SLOT: ${{ inputs.slot }}
+        run: |
+          SLOT="${MANUAL_SLOT:-$(echo "$SCHEDULE" | awk '{print $2}')}"
+          python3 .github/scripts/social_extra.py "${MODE:-post}" --channel "${CHANNEL:-all}" --slot "${SLOT:-auto}" \
+            $([ "$DRY_RUN" = "true" ] && echo --dry-run) || echo "::warning::social_extra.py exited with an error"
+      - name: Record the post links on the promotion page
+        if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
+        continue-on-error: true
+        run: |
+          if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi
+          cp .github/growth/clip-posts.json "$RUNNER_TEMP/clip-posts.json"
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 .github/scripts/clip_progress.py --merge-log "$RUNNER_TEMP/clip-posts.json"
+            git add .github/growth/clip-posts.json .github/growth/app-improvements.json
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "多平台發文紀錄：外宣頁連結更新 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not record the posts"; exit 1

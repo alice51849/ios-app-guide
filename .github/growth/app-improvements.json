@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-13T18:09:39Z",
+  "updated_at": "2026-10-14T06:10:59Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -52,6 +52,13 @@
       "how": "已完成：itunes.apple.com、apps.apple.com、open.cait518.cc、alice51849.github.io。",
       "status": "done",
       "done_at": "2026-10-13T10:10:13Z"
+    },
+    {
+      "id": "oa-network-2",
+      "title": "雲端環境再加開 App Store 圖片與影片網域（做鉤子片用）",
+      "url": "https://claude.ai/code",
+      "how": "對話標題列的雲端環境選單 → Edit → Network access 的 Allowed domains 加入三行：*.mzstatic.com、mvod.itunes.apple.com、files.catbox.moe（Allow package managers 保持勾選）→ 存檔。開了之後，雲端可以直接抓 21 款缺素材 App 的截圖與預覽影片做鉤子片，不用等本機。",
+      "status": "todo"
     },
     {
       "id": "oa-telegram-daily",

@@ -15,6 +15,33 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
 
 > **2026-10-14 更新：Caitlyn 決定暫不改 ASC。** 下面所有套用 ASC 的步驟（UsageNow 與其他 App 的 asc-payload）都先跳過，除非她在本機對話裡再次明確要求。UsageNow 1.0.2 草稿已填的新文字，只有在她說「照備份改回去」時才改回。
 
+> **2026-10-14 新增：7 秒鉤子片（高品質短影音）。** 程式和分鏡在私人 repo `~/00_GrowthEngine/shorts/`（先 `git pull`），說明見該資料夾的 README.md。
+> 1. 準備素材：
+>    ```
+>    cd ~/00_GrowthEngine/shorts
+>    npm install
+>    python3 scripts/prepare_shots.py --all
+>    python3 scripts/make_audio.py
+>    ```
+> 2. 在地化截圖：`storyboards/` 裡每款 App，如果 `~/00_GrowthEngine/aso/shots_out/<目錄>/APP_IPHONE_67/` 存在（目錄對照見 `social/breakout/localized_variants.json` 的 shots_dir），就跑 `python3 scripts/prepare_shots.py <app> --localized <那個路徑>`。跑完用 `python3 scripts/grid.py` 或直接看圖，確認各語言的 `NN.png` 跟基準組是同一個畫面。不是的話，把那個語言的資料夾刪掉，改用英文畫面。
+> 3. 渲染：`node scripts/render.mjs --all`，產出在 `out/<app>/<app>_<語言>.mp4`（有音樂）與 `_silent.mp4`（無聲）。每款抽一支從頭看到尾，確認字沒有被切、點擊位置正確。
+> 4. 上架：用既有的 YouTube 上傳程式（`social/yt_upload.py` 與 48 語標題流程），每天最多 3 支，先上 Mochi、Unblurry、LockHour、Lumi Mission、ScanTo、PhotoCream。
+>    - 標題用 `videogen/search_demand.py` 的已驗證查詢句開頭。
+>    - 9/14 起暫停上傳的前後比較今天（10/14）到期：先把比較結果寫進回報，再開始上傳新片。
+>    - 無聲版放在 `out/` 給 TikTok／IG 手動配熱門音樂用。
+> 5. **補素材給雲端：** 下面這些 App 在 `social/assets/` 沒有截圖，雲端做不了它們的鉤子片。請把每款 App Store 上的 iPhone 6.9 吋截圖（1320×2868 或 1290×2796）照 `01.png`、`02.png`… 的格式放進 `social/assets/<key>/`，commit 並 push，雲端就會接著寫分鏡：claudeusagemini（最優先）、countdaysnow、studydown、stayclock、savetag、shotinbox、picclear、qrcodehalo、battai、dbhalo、zipbox、sononote、cvdesk、ledmovingtext、lumibopomofo、lumibopomofopro、lumiletterspro、lumimathpro、lumimissionpro、snapport、moneytag。
+
+> **2026-10-14 新增：補齊截圖（Caitlyn 明確要求）。** HoursTag Lite（iPhone 1 張、iPad 1 張）、SaveTag（各 2 張）、Unblurry（各 2 張）在 App Store 上的截圖少於 3 張，美國、台灣、日本都一樣。
+> 1. 每款做 5–6 張 iPhone 6.9 吋、5–6 張 iPad 13 吋截圖。用既有的 ASO 截圖流程（`~/00_GrowthEngine/aso/`）從模擬器實際畫面產生，字卡只寫商品頁上有的功能。
+>    - Unblurry 可以直接用 `social/assets/unblurry/01–04.png` 的 4 張，再補 1–2 張。
+>    - 50 個語系都要有，沒有在地化截圖的語系用英文版。
+> 2. 截圖只能掛在可編輯的新版本上：
+>    - 建立新版本號，只改版本號，不改程式。
+>    - 建置並上傳，掛上截圖。
+>    - 「新功能」寫「更新 App Store 截圖」（各語系翻譯）。
+>    - 送審。
+> 3. 回報每款的新版本號、截圖張數、送審狀態。
+
 > **2026-10-14 最優先：Threads 全自動恢復。** Caitlyn 選擇重新開啟 threads-autopilot。
 > 1. 在 ~/threads-autopilot（或本機對應路徑）用 `gh workflow enable multi.yml` 與 `gh workflow enable post.yml`（repo alice51849/threads-autopilot）；若已啟用就跳過。確認 self-hosted macOS runner 在線。
 > 2. 做 claudeusagemini-16：UsageNow 加入 reviewed onboarding（照 reviewed_sources/countdaysnow.json 等前例），跑該 repo 測試、推送，讓 Threads 自動發 UsageNow。

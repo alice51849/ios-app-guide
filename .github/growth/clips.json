@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T16:57:28Z",
+  "updated_at": "2026-10-14T17:07:55Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -2106,6 +2106,178 @@
           "id": "c",
           "lead": "模考後 預估分數區間",
           "benefit": "依你的弱點 排好 30 天計畫"
+        }
+      ]
+    },
+    "aim990/ja": {
+      "app": "aim990",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/2wo297.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6784974530?pt=118326163&ct=h7_aim990_ja&mt=8",
+      "hook": "8分で TOEICの弱点がわかる",
+      "name": "Aim990: 英語弱点コーチ",
+      "search": "Aim990",
+      "tags": [
+        "#TOEIC対策",
+        "#TOEIC",
+        "#英語",
+        "#試験対策",
+        "#リスニング",
+        "#Aim990"
+      ],
+      "keywords": [
+        "TOEIC",
+        "英語",
+        "試験対策",
+        "リスニング",
+        "リーディング",
+        "勉強法"
+      ],
+      "keyline": "TOEIC対策",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "8分で TOEICの弱点がわかる",
+          "benefit": "弱点に合わせた 30日プラン"
+        },
+        {
+          "id": "b",
+          "lead": "弱点に合わせた 30日プラン",
+          "benefit": "間違いの理由が すべてわかる"
+        },
+        {
+          "id": "c",
+          "lead": "模試で スコアの目安も",
+          "benefit": "弱点に合わせた 30日プラン"
+        }
+      ]
+    },
+    "aim990/ko": {
+      "app": "aim990",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/3oo22s.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=h7_aim990_ko&mt=8",
+      "hook": "8분 만에 토익 약점 찾기",
+      "name": "Aim990: 영어 약점 코치",
+      "search": "Aim990",
+      "tags": [
+        "#토익준비의비밀",
+        "#토익",
+        "#영어",
+        "#시험준비",
+        "#학습코치",
+        "#Aim990"
+      ],
+      "keywords": [
+        "토익",
+        "영어",
+        "시험 준비",
+        "학습 코치",
+        "리스닝",
+        "리딩"
+      ],
+      "keyline": "30일 완벽 학습 코치",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "8분 만에 토익 약점 찾기",
+          "benefit": "내 약점에 맞춘 30일 플랜"
+        },
+        {
+          "id": "b",
+          "lead": "내 약점에 맞춘 30일 플랜",
+          "benefit": "모든 오답을 제대로 이해"
+        },
+        {
+          "id": "c",
+          "lead": "모의고사로 점수 추정까지",
+          "benefit": "내 약점에 맞춘 30일 플랜"
+        }
+      ]
+    },
+    "aim990/vi": {
+      "app": "aim990",
+      "locale": "vi",
+      "url": "https://files.catbox.moe/cd3pgr.mp4",
+      "store_url": "https://apps.apple.com/vn/app/id6784974530?pt=118326163&ct=h7_aim990_vi&mt=8",
+      "hook": "Tìm điểm yếu TOEIC chỉ trong 8 phút",
+      "name": "Aim990: Gia sư tiếng Anh",
+      "search": "Aim990",
+      "tags": [
+        "#TOEIC",
+        "#luyệnthi",
+        "#tiếngAnh",
+        "#đọc",
+        "#Nghe",
+        "#Aim990"
+      ],
+      "keywords": [
+        "TOEIC",
+        "luyện thi",
+        "tiếng Anh",
+        "đọc",
+        "nghe",
+        "thí sinh"
+      ],
+      "keyline": "Chinh phục TOEIC dễ dàng",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Tìm điểm yếu TOEIC chỉ trong 8 phút",
+          "benefit": "Lộ trình 30 ngày theo điểm yếu"
+        },
+        {
+          "id": "b",
+          "lead": "Lộ trình 30 ngày theo điểm yếu",
+          "benefit": "Hiểu rõ mọi lỗi sai"
+        },
+        {
+          "id": "c",
+          "lead": "Thi thử kèm ước tính điểm",
+          "benefit": "Lộ trình 30 ngày theo điểm yếu"
+        }
+      ]
+    },
+    "aim990/id": {
+      "app": "aim990",
+      "locale": "id",
+      "url": "https://files.catbox.moe/r5kerc.mp4",
+      "store_url": "https://apps.apple.com/id/app/id6784974530?pt=118326163&ct=h7_aim990_id&mt=8",
+      "hook": "Temukan titik lemah TOEIC dalam 8 menit",
+      "name": "Aim990: pelatih Inggris",
+      "search": "Aim990",
+      "tags": [
+        "#SiapTOEIC990",
+        "#TOEIC",
+        "#UjianBahasaInggris",
+        "#PersiapanTOEIC",
+        "#LatihanMendengarkan",
+        "#Aim990"
+      ],
+      "keywords": [
+        "TOEIC",
+        "ujian bahasa Inggris",
+        "persiapan TOEIC",
+        "latihan mendengarkan",
+        "latihan membaca",
+        "pelajaran harian"
+      ],
+      "keyline": "Persiapan TOEIC yang Efektif",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Temukan titik lemah TOEIC dalam 8 menit",
+          "benefit": "Rencana 30 hari sesuai titik lemahmu"
+        },
+        {
+          "id": "b",
+          "lead": "Rencana 30 hari sesuai titik lemahmu",
+          "benefit": "Pahami setiap kesalahan"
+        },
+        {
+          "id": "c",
+          "lead": "Tes simulasi + estimasi skor",
+          "benefit": "Rencana 30 hari sesuai titik lemahmu"
         }
       ]
     },
@@ -4656,46 +4828,6 @@
           "#메모",
           "#스크린샷",
           "#AIBrief"
-        ]
-      }
-    },
-    "aim990": {
-      "ja": {
-        "keywords": [
-          "TOEIC",
-          "英語",
-          "試験対策",
-          "リスニング",
-          "リーディング",
-          "勉強法"
-        ],
-        "keyline": "TOEIC対策",
-        "tags": [
-          "#TOEIC対策",
-          "#TOEIC",
-          "#英語",
-          "#試験対策",
-          "#リスニング",
-          "#Aim990"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "토익",
-          "영어",
-          "시험 준비",
-          "학습 코치",
-          "리스닝",
-          "리딩"
-        ],
-        "keyline": "30일 완벽 학습 코치",
-        "tags": [
-          "#토익준비의비밀",
-          "#토익",
-          "#영어",
-          "#시험준비",
-          "#학습코치",
-          "#Aim990"
         ]
       }
     },

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-13",
-  "content_digest": "41d19cc1b3dd0d7664451b74e01aa77a4666b377f438a74549481d2d1dacb985",
+  "date_modified": "2026-10-14",
+  "content_digest": "5a3454995f596dff3becd9a3554149c2eb0a27ff0066d8fab94efa03de54f82b",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -113,8 +113,8 @@
     {
       "key": "aim990",
       "app_store_id": "6784974530",
-      "name": "Aim990: 토익 준비의 비밀",
-      "summary": "Aim990은 토익 990점을 목표로 하는 여러분의 완벽한 학습 파트너입니다. 30일의 체계적인 학습 계획을 통해 매일 리스닝과 리딩을 강화하는 프로그램을 제공합니다.",
+      "name": "Aim990: 영어 약점 코치",
+      "summary": "Aim990은 토익 LC·RC 스타일 학습을 위한 진단형 코치입니다. 문제만 쌓아 둔 앱이 아니라, 앱을 열 때마다 내 풀이 기록을 근거로 오늘 할 학습이 처방됩니다.",
       "category": "education",
       "search_terms": [
         "토익",
@@ -2486,8 +2486,8 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet 세계 여행",
-      "summary": "모든 가족 여행을 작은 우주 모험으로 바꿔보세요.",
+      "name": "Trip Planet 아이 여행 게임",
+      "summary": "가족 여행을 아이가 주인공인 우주 모험으로 바꿔 보세요. Trip Planet과 함께라면 긴 비행, 장거리 차 이동, 호텔에서 보내는 시간이 3~10세 아이를 위한 미션이 돼요. 모으는 재미가 있는 보상과 함께, 여행을 마칠 때마다 여권에 도장이 찍혀요. 보호자 두 명이 각자의 기기에서 같은 여행을 함께 관리할 수 있어요. 광고도, 제3자 추적도 없어요.",
       "category": "kids",
       "search_terms": [
         "가족 여행",
@@ -2842,7 +2842,7 @@
       "app_store_id": "6797601720",
       "name": "Wordmate Lite 하루 5단어",
       "summary": "단어장을 만들다가 지쳐서 공부 자체를 놓아버린 적이 있다면, Wordmate Lite는 그 지점을 없애기 위해 만든 어휘 앱입니다.",
-      "category": "kids",
+      "category": "education",
       "search_terms": [
         "영단어",
         "단어암기",

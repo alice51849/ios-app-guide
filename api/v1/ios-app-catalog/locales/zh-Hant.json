@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-13",
-  "content_digest": "41d19cc1b3dd0d7664451b74e01aa77a4666b377f438a74549481d2d1dacb985",
+  "date_modified": "2026-10-14",
+  "content_digest": "5a3454995f596dff3becd9a3554149c2eb0a27ff0066d8fab94efa03de54f82b",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -118,8 +118,8 @@
     {
       "key": "aim990",
       "app_store_id": "6784974530",
-      "name": "Aim990：TOEIC考試助手",
-      "summary": "在Aim990，我們知道準備TOEIC(R)考試的挑戰，因此我們設計了一個為期30天的學習計劃，幫助你高效提升聽力與閱讀能力。",
+      "name": "Aim990：英文弱點教練",
+      "summary": "Aim990 是為多益聽力與閱讀風格準備打造的診斷式教練，不是題庫堆疊。每次打開，練習內容都由你自己的作答紀錄決定。",
       "category": "education",
       "search_terms": [
         "TOEIC",
@@ -960,7 +960,7 @@
       "key": "lumibopomofo",
       "app_store_id": "6773017109",
       "name": "Lumi注音星球",
-      "summary": "Lumi 注音星球 是一款專為學齡前與低年級孩子（約 4–7 歲）設計的注音符號學習遊戲。",
+      "summary": "讓孩子快樂踏出注音的第一步，從一場可愛的星球冒險開始！",
       "category": "kids",
       "search_terms": [
         "注音",
@@ -1029,7 +1029,7 @@
       "key": "lumibopomofopro",
       "app_store_id": "6775773117",
       "name": "Lumi注音星球 Pro",
-      "summary": "讓孩子愛上注音, 從一場可愛的星球冒險開始.",
+      "summary": "讓孩子愛上注音，從一場可愛的星球冒險開始。",
       "category": "kids",
       "search_terms": [
         "注音",
@@ -2650,8 +2650,8 @@
     {
       "key": "tripplanet",
       "app_store_id": "6787193643",
-      "name": "Lumi Trip Planet 環球旅行",
-      "summary": "Trip Planet 幫助您的家人將旅行時刻變成每個人都可以分享的神奇任務。創建一次旅行，選擇智慧任務包，然後觀看您的旅程就像電影星雲中的發光星座一樣。每個人都會收到現實世界的小任務，而不是另一個清單：嘗試一種新食物，在機場勇敢地說聲謝謝，在博物館發現三種顏色，拍一張紀念照片，或幫忙收拾飯店行李。小任務。燦爛的笑容。",
+      "name": "Trip Planet 親子旅行遊戲",
+      "summary": "把每一次親子旅行，變成孩子會期待的星際冒險。長途飛行、漫長車程和飯店住宿，都能化為 3 到 10 歲孩子的小任務；完成就能收集獎勵，每走完一趟旅程，還會在旅行護照蓋上印章。兩位家長可以用各自的裝置共享同一趟旅程。沒有廣告，也沒有第三方追蹤。",
       "category": "kids",
       "search_terms": [
         "家庭旅行",
@@ -3019,7 +3019,7 @@
       "app_store_id": "6797601720",
       "name": "Wordmate Lite 每天五個單字",
       "summary": "很多人的外語進度，是停在「還沒把單字卡做好」的那一步。Wordmate Lite 想拿掉的就是這一步。",
-      "category": "kids",
+      "category": "education",
       "search_terms": [
         "背單字",
         "英文",

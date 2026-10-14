@@ -111,7 +111,8 @@ def pick(day, data=None):
     locales = LOCALES[kind]
     locale = locales[(k + k // len(items)) % len(locales)]
     app = {"word": "aim990" if k % 2 == 0 else "wordmatelite", "zhuyin": "lumibopomofo", "photo": "snapportlite"}[kind]
-    return {"type": kind, "item": item, "locale": locale, "app": app, "key": f"utility/{kind}/{item['id']}/{locale}"}
+    return {"type": kind, "item": item, "locale": locale, "app": app,
+            "key": f"utility/{kind}/{app}/{item['id']}/{locale}"}  # own_posts.Catalog reads app and locale from it
 
 
 def campaign(card, channel):

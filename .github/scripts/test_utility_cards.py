@@ -115,7 +115,7 @@ class PostTest(unittest.TestCase):
 
     def test_posts_are_recorded_on_the_promotion_page(self):
         meta = {"type": "word", "item": "invoice", "locale": "zh-Hant", "app": "aim990",
-                "key": "utility/word/invoice/zh-Hant", "caption": "c"}
+                "key": "utility/word/aim990/invoice/zh-Hant", "caption": "c"}
         with tempfile.TemporaryDirectory() as tmp:
             card = Path(tmp) / "card.jpg"
             card.with_suffix(".json").write_text(json.dumps(meta), encoding="utf-8")
@@ -125,16 +125,19 @@ class PostTest(unittest.TestCase):
                     mock.patch.object(U, "post_threads", side_effect=RuntimeError("down")), \
                     mock.patch.object(P, "record_post") as record:
                 self.assertEqual(U.main(), 0)
-        record.assert_called_once_with("telegram", "utility/word/invoice/zh-Hant", "https://t.me/x/1")
+        record.assert_called_once_with("telegram", "utility/word/aim990/invoice/zh-Hant", "https://t.me/x/1")
 
     def test_section_counts_utility_posts_apart_from_clips(self):
         posts = [{"channel": "telegram", "clip": "a/en", "link": "https://t.me/x/5", "posted_at": "2026-10-15T01:00:03Z"},
-                 {"channel": "telegram", "clip": "utility/photo/us_passport/en", "link": "https://t.me/x/6",
+                 {"channel": "telegram", "clip": "utility/photo/snapportlite/us_passport/en", "link": "https://t.me/x/6",
                   "posted_at": "2026-10-15T05:10:40Z"},
-                 {"channel": "instagram", "clip": "utility/photo/us_passport/en", "link": "https://ig/p/1",
+                 {"channel": "instagram", "clip": "utility/photo/snapportlite/us_passport/en", "link": "https://ig/p/1",
                   "posted_at": "2026-10-15T05:11:10Z"}]
         md = P.build_section({"clips": {}, "schedule": []}, posts, {}, dt.datetime(2026, 10, 15, 6, tzinfo=dt.timezone.utc))
         self.assertIn("| 已發出 | 1 則 |", md)
+        import own_posts
+        hit = own_posts.Catalog({}, posts, {}).resolve("instagram", {"permalink": "https://ig/p/1"})
+        self.assertEqual((hit["app"], hit["locale"], hit["kind"]), ("snapportlite", "en", "utility"))
         self.assertIn("| 每日實用卡 | 已發 2 則 · 最新 10/15 證件照尺寸 [TG](https://t.me/x/6) [IG](https://ig/p/1) |", md)
 
 

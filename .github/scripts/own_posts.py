@@ -233,6 +233,9 @@ class Catalog:
         self.apps.sort(key=lambda a: -len(a[0]))
 
     def _clip(self, key, kind="clip"):
+        if key.startswith("utility/"):  # utility_cards.py: utility/<type>/<app>/<item>/<locale>
+            parts = key.split("/")
+            return {"app": parts[2], "locale": parts[-1], "hook": "", "ios_id": "", "kind": "utility", "clip": key}
         c = self.clips.get(key)
         if not c:
             app, _, locale = key.partition("/")

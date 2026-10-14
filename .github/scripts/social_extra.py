@@ -54,6 +54,7 @@ sys.path.insert(0, str(HERE))
 import clip_posts  # noqa: E402
 import clip_progress  # noqa: E402
 import countdown_cards  # noqa: E402
+import search_caption as SC  # noqa: E402
 
 UA = "lumi-social-extra/1.0"
 REPO = os.environ.get("GITHUB_REPOSITORY") or "alice51849/ios-app-guide"
@@ -218,12 +219,15 @@ def load_posts():
     return clip_progress.load_json(clip_progress.POSTS, {}).get("posts", [])
 
 
-def clip_item(key, clip, channel):
+def clip_item(key, clip, channel, day=None):
+    """One clip for one platform: search-first caption, keyword title / alt text, the day's hook variant."""
     ct = CT[channel]
     t = clip_posts.text_for(clip["locale"])
+    v = SC.choose(clip, channel, day or SC.today())
     return {"kind": "clip", "key": key, "locale": clip["locale"], "app": clip["app"], "video": clip["url"],
-            "hook": clip["hook"], "name": clip["name"], "title": clip["hook"], "tags": clip.get("tags") or t["tags"].split(),
-            "caption": clip_posts.caption(clip, channel), "button": t["button"],
+            "hook": v["lead"], "name": clip["name"], "title": SC.pin_title(clip, v), "tags": SC.tags(clip, 10),
+            "caption": clip_posts.caption(clip, channel, v), "button": t["button"], "variant": v["id"],
+            "alt": SC.alt_text(clip, v), "clip": clip, "v": v,
             "store": clip_posts.with_campaign(clip["store_url"], ct), "play": clip_posts.play_url(clip, ct)}
 
 
@@ -246,8 +250,14 @@ def todays_clips(data, posts, channel, day, slot):
         seen.add(key)
         if locales and clip["locale"] not in locales:
             continue
-        out.append(clip_item(key, clip, channel))
+        out.append(clip_item(key, clip, channel, day))
     return out
+
+
+def with_tags(caption, tags, channel):
+    """A card caption plus its keyword hashtags (as many as the platform takes well)."""
+    tags = tags[:SC.TAG_LIMIT.get(channel, 5)]
+    return caption + "\n\n" + " ".join(tags) if tags else caption
 
 
 def raw_url(branch, day):
@@ -262,9 +272,11 @@ def todays_cards(day, channel):
     if hit:
         e, n = hit
         cap = countdown_cards.caption(e, n, day)
+        tags = SC.card_tags("countdaysnow", e["locale"]) or ["#countdown", "#CountDaysNow"]
         cards.append({"kind": "card", "key": f"card/{e['id']}/{day.isoformat()}", "locale": e["locale"],
-                      "image": raw_url("countdown-cards", day), "caption": cap, "title": cap.split("\n")[0],
-                      "name": "CountDaysNow", "hook": cap.split("\n")[0], "tags": ["#countdown", "#CountDaysNow"],
+                      "image": raw_url("countdown-cards", day), "caption": with_tags(cap, tags, channel),
+                      "title": cap.split("\n")[0], "alt": SC.card_alt("CountDaysNow", cap, "countdaysnow", e["locale"]),
+                      "name": "CountDaysNow", "hook": cap.split("\n")[0], "tags": tags,
                       "button": countdown_cards.TEXT[e["locale"]]["button"],
                       "store": countdown_cards.store_url(e, ct),
                       "play": countdown_cards.play_store_url(countdown_cards.APP_ID, f"cd_{e['id']}_{ct}"[:40])})
@@ -277,9 +289,11 @@ def todays_cards(day, channel):
             card = uc.pick(day)
             cap = uc.caption(card, day)
             app = uc.APPS[card["app"]]
+            tags = SC.card_tags(card["app"], card["locale"]) or [f"#{app['name'].replace(' ', '')}"]
             cards.append({"kind": "card", "key": card["key"], "locale": card["locale"],
-                          "image": raw_url("utility-cards", day), "caption": cap, "title": cap.split("\n")[0],
-                          "name": app["name"], "hook": cap.split("\n")[0], "tags": [f"#{app['name'].replace(' ', '')}"],
+                          "image": raw_url("utility-cards", day), "caption": with_tags(cap, tags, channel),
+                          "title": cap.split("\n")[0], "alt": SC.card_alt(app["name"], cap, card["app"], card["locale"]),
+                          "name": app["name"], "hook": cap.split("\n")[0], "tags": tags,
                           "button": clip_posts.text_for(card["locale"])["button"], "store": uc.store_url(card, ct),
                           "play": countdown_cards.play_store_url(app["id"], uc.campaign(card, ct))})
         except Exception as exc:  # a utility-card data change must not stop the clips
@@ -397,12 +411,23 @@ def bsky_session():
 
 
 def bsky_rich(body, links, limit=300):
-    """Text with link facets (UTF-8 byte offsets) on the labels; body trimmed to fit."""
+    """Text with link facets (UTF-8 byte offsets) on the labels and tag facets on #hashtags (Bluesky only
+    indexes a hashtag for search and feeds when it carries a tag facet); body trimmed to fit."""
     tail = "\n\n" + " · ".join(label for label, _ in links)
+    if len(body) + len(tail) > limit:
+        lines = body.split("\n")
+        if lines and lines[-1].startswith("#"):  # drop tags before cutting the problem / benefit lines
+            while len(body) + len(tail) > limit and " " in lines[-1]:
+                lines[-1] = lines[-1].rsplit(" ", 1)[0]
+                body = "\n".join(lines)
     if len(body) + len(tail) > limit:
         body = body[:limit - len(tail) - 1].rstrip() + "…"
     text = body + "\n\n"
     facets = []
+    for m in re.finditer(r"(?:^|\s)(#[^\s#…]+)", body):
+        start = len(body[:m.start(1)].encode("utf-8"))
+        facets.append({"index": {"byteStart": start, "byteEnd": start + len(m.group(1).encode("utf-8"))},
+                       "features": [{"$type": "app.bsky.richtext.facet#tag", "tag": m.group(1)[1:]}]})
     for i, (label, uri) in enumerate(links):
         if i:
             text += " · "
@@ -440,11 +465,12 @@ def post_bluesky(item):
         blob = http("POST", f"{s['pds']}/xrpc/com.atproto.repo.uploadBlob", to_jpeg(fetch_bytes(item["image"])),
                     {**auth, "Content-Type": "image/jpeg"})["blob"]
         embed = {"$type": "app.bsky.embed.images", "images": [
-            {"alt": item["caption"][:300], "image": blob, "aspectRatio": {"width": 1080, "height": 1350}}]}
+            {"alt": (item.get("alt") or item["caption"])[:2000], "image": blob,
+             "aspectRatio": {"width": 1080, "height": 1350}}]}
     else:
         try:
             embed = {"$type": "app.bsky.embed.video", "video": bsky_video(s, fetch_bytes(item["video"])),
-                     "alt": item["hook"], "aspectRatio": {"width": 1080, "height": 1920}}
+                     "alt": (item.get("alt") or item["hook"])[:2000], "aspectRatio": {"width": 1080, "height": 1920}}
         except Exception as exc:  # no video quota or a processing error: post a link card instead
             print(f"bluesky: video upload failed ({exc}); posting a link card")
             embed = {"$type": "app.bsky.embed.external", "external": {
@@ -484,10 +510,18 @@ def yt_text(hook, name, store, play, tags):
     return title, "\n".join(lines)
 
 
-def yt_body(item, data=None):
+def yt_meta(item):
+    """(title, description, tags): search-first for clips (search_caption.youtube), the plain shape otherwise."""
+    if item.get("clip"):
+        links = [f"App Store: {item['store']}"] + ([f"Google Play: {item['play']}"] if item.get("play") else [])
+        return SC.youtube(item["clip"], item["v"], links)
     title, desc = yt_text(item["hook"], item["name"], item["store"], item.get("play"), item["tags"])
-    body = {"snippet": {"title": title, "description": desc, "categoryId": "28",
-                        "tags": [t.lstrip("#") for t in item["tags"]][:10],
+    return title, desc, [t.lstrip("#") for t in item["tags"]][:10]
+
+
+def yt_body(item, data=None):
+    title, desc, words = yt_meta(item)
+    body = {"snippet": {"title": title, "description": desc, "categoryId": "28", "tags": words,
                         "defaultLanguage": YT_LANG.get(item["locale"], item["locale"])},
             "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False}}
     # The same app's other locales become YouTube localizations of this Short.
@@ -495,7 +529,7 @@ def yt_body(item, data=None):
     for clip in (data or {}).get("clips", {}).values():
         if clip["app"] == item["app"] and clip["locale"] != item["locale"]:
             other = clip_item(f"{clip['app']}/{clip['locale']}", clip, "youtube")
-            t, d = yt_text(other["hook"], other["name"], other["store"], other.get("play"), other["tags"])
+            t, d, _ = yt_meta(other)
             locs[YT_LANG.get(clip["locale"], clip["locale"])] = {"title": t, "description": d}
     if locs:
         body["localizations"] = locs
@@ -570,7 +604,7 @@ def post_pinterest(item, tries=60):
     auth = {"Authorization": f"Bearer {pin_token()}"}
     board = pin_board(auth)
     pin = {"board_id": board, "link": item["store"], "title": item["title"][:100],
-           "description": item["caption"][:500], "alt_text": item["hook"][:500]}
+           "description": item["caption"][:500], "alt_text": (item.get("alt") or item["hook"])[:500]}
     if item["kind"] == "card":
         pin["media_source"] = {"source_type": "image_url", "url": item["image"]}
     else:
@@ -620,13 +654,15 @@ def post_tumblr(item):
     blog = tumblr_blog()
     if item["kind"] == "card":
         media = {"type": "image", "media": [{"type": "image/jpeg", "identifier": "media0", "width": 1080, "height": 1350}],
-                 "alt_text": item["hook"][:4096]}
+                 "alt_text": (item.get("alt") or item["hook"])[:4096]}
         upload = ("media0", fetch_bytes(item["image"]), "card.jpg", "image/jpeg")
     else:
         media = {"type": "video", "media": {"type": "video/mp4", "identifier": "media0", "width": 1080, "height": 1920}}
         upload = ("media0", fetch_bytes(item["video"]), "clip.mp4", "video/mp4")
     content = [{"type": "text", "text": item["caption"]}, media,
                {"type": "link", "url": item["store"], "title": item["name"], "description": item["hook"]}]
+    if item["kind"] == "clip":  # keyword-rich heading: Tumblr search reads post text and the first tags
+        content.insert(0, {"type": "text", "subtype": "heading2", "text": item["title"]})
     if item.get("play"):
         content.append(text_link_block("Google Play", item["play"]))
     payload = {"content": content, "state": "published",
@@ -811,9 +847,22 @@ def run(channels, day, slot, dry_run=False, data=None):
                 break
             posted_any = True
             print(f"{ch}: posted {item['key']} {res.get('link')}")
-            clip_progress.record_post(ch, item["key"], res.get("link"), media_id=res.get("id"))
+            clip_progress.record_post(ch, item["key"], res.get("link"), media_id=res.get("id"),
+                                      variant=item.get("variant"))
             posts.append({"channel": ch, "clip": item["key"], "posted_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")})
     return 0
+
+
+def public(item, channel):
+    """An item as plain feed data: search fields kept (variant, alt, keywords, keyline; for YouTube the
+    search-first title / description / tags), the internal clip and variant objects dropped."""
+    out = {k: v for k, v in item.items() if k not in ("clip", "v")}
+    if item.get("clip"):
+        out.update(keywords=item["clip"].get("keywords") or [], keyline=item["clip"].get("keyline", ""))
+        if channel == "youtube":
+            title, desc, words = yt_meta(item)
+            out["youtube"] = {"title": title, "description": desc, "tags": words}
+    return out
 
 
 def export(day, check=True, data=None):
@@ -826,7 +875,7 @@ def export(day, check=True, data=None):
     for ch in EXPORT_CHANNELS:
         out = []
         for slot in (1, 15):
-            out += [dict(i, slot=slot) for i in todays_clips(data, [], ch, day, slot)
+            out += [dict(public(i, ch), slot=slot) for i in todays_clips(data, [], ch, day, slot)
                     if i["key"] not in {o["key"] for o in out}]
         if PLAN[ch]["cards"]:
             out += [c for c in todays_cards(day, ch) if not check or exists(c["image"])]

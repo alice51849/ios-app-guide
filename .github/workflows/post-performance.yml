@@ -36,6 +36,8 @@ jobs:
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          # Channel reallocation threshold (median views of the last 14 clips); unset = 20.
+          PERF_MIN_MEDIAN_VIEWS: ${{ vars.PERF_MIN_MEDIAN_VIEWS }}
         run: python3 .github/scripts/post_performance.py
       - name: Save the ranking and refresh the promotion page
         run: |

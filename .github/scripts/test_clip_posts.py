@@ -54,10 +54,53 @@ class ClipPostsTest(unittest.TestCase):
         self.assertIn("プロフィール", text)
         self.assertLessEqual(text.count("#"), 3)
 
-    def test_captions_vary_between_apps(self):
-        layouts = {tuple(C.caption(clip(app, "en"), "telegram").split("\n")[:1]) == (f"{app} hook",)
-                   for app in ("a", "bb", "ccc", "dddd", "eeeee", "ffffff")}
-        self.assertEqual(layouts, {True, False})
+    def test_every_caption_starts_with_the_problem_line(self):
+        for app in ("a", "bb", "ccc", "dddd"):
+            for channel in ("telegram", "instagram", "threads"):
+                self.assertEqual(C.caption(clip(app, "en"), channel).split("\n")[0], f"{app} hook")
+
+    def test_search_caption_shape_per_platform(self):
+        c = dict(clip("u", "en"), name="UsageNow: AI Usage Tracker", search="UsageNow",
+                 keyline="Claude, Codex & Copilot Limits", keywords=["quota", "reset"],
+                 tags=["#AIUsageTracker", "#iphoneapps", "#Quota", "#Reset", "#Countdown", "#Developer", "#UsageNow"],
+                 hooks=[{"id": "a", "lead": "Hit your AI limit mid-task again?", "benefit": "See what's left and when it resets"},
+                        {"id": "b", "lead": "See what's left and when it resets", "benefit": "Alerts before you run out"}])
+        ig = C.caption(c, "instagram")
+        self.assertTrue(ig.startswith("Hit your AI limit mid-task again?\nSee what's left"))
+        self.assertIn("Claude, Codex & Copilot Limits", ig[:125])  # keyword phrase before "more"
+        tags = ig.splitlines()[-1].split()
+        self.assertEqual(len(tags), 5)
+        self.assertNotIn("#iphoneapps", tags)  # generic store tags never go out
+        self.assertEqual(C.caption(c, "threads").splitlines()[-1], "#AIUsageTracker")  # one topic tag
+        self.assertEqual(len(C.caption(c, "telegram").splitlines()[-1].split()), 3)
+        long = dict(c, hooks=[dict(c["hooks"][0], benefit="x" * 120)])
+        self.assertIn("Claude, Codex & Copilot Limits", C.caption(long, "instagram")[:125])
+        self.assertTrue(C.caption(c, "instagram", c["hooks"][1]).startswith("See what's left"))
+
+    def test_hook_variants_rotate_and_winner_is_preferred(self):
+        import search_caption as SC
+        c = dict(clip("u", "en"), hooks=[{"id": i, "lead": f"lead {i}", "benefit": ""} for i in "abc"])
+        days = [dt.date(2026, 10, 15) + dt.timedelta(days=i) for i in range(6)]
+        picked = {SC.choose(c, ch, d, wins={})["id"] for d in days for ch in ("telegram", "instagram", "threads")}
+        self.assertEqual(picked, {"a", "b", "c"})
+        same_day = {SC.choose(c, ch, days[0], wins={})["id"] for ch in ("telegram", "instagram", "threads", "bluesky")}
+        self.assertGreater(len(same_day), 1)  # platforms test different variants on the same day
+        won = [SC.choose(dict(c, hook_best="c"), "instagram", d, wins={})["id"] for d in days]
+        self.assertGreaterEqual(won.count("c"), 4)  # winner two days in three, rotation keeps testing
+        exploit = next(d for d in days if d.toordinal() % 3)
+        self.assertEqual(SC.choose(c, "x", exploit, wins={"locales": {"en": "b"}})["id"], "b")
+        self.assertEqual(SC.choose(clip("old", "en"), "x", days[0])["lead"], "old hook")  # no variants: the hook
+
+    def test_posted_variant_is_recorded(self):
+        c = dict(clip("a", "en"), hooks=[{"id": "a", "lead": "A", "benefit": ""}, {"id": "b", "lead": "B", "benefit": ""}])
+        data = {"clips": {"a/en": c}, "schedule": [{"date": "2026-10-15", "slot": 1, "channel": "telegram", "clip": "a/en"}]}
+        with mock.patch.object(C, "load", return_value=data), mock.patch.object(C.CLIPS.__class__, "exists", return_value=True), \
+                mock.patch.object(C, "post_telegram", return_value={"id": 1, "link": None}) as post, \
+                mock.patch.object(P, "record_post") as rec, mock.patch.object(sys, "argv", ["x", "telegram", "--slot", "1",
+                                                                                           "--date", "2026-10-15"]):
+            C.main()
+        variant = post.call_args[0][1]
+        self.assertEqual(rec.call_args.kwargs["variant"], variant["id"])
 
     def test_reels_wait_for_the_token(self):
         with mock.patch.dict(os.environ, {}, clear=True):

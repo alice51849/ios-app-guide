@@ -232,24 +232,32 @@ class Catalog:
                      for a in improvements.get("apps", []) if a.get("name")]
         self.apps.sort(key=lambda a: -len(a[0]))
 
-    def _clip(self, key, kind="clip"):
+    def _clip(self, key, kind="clip", variant=None):
         if key.startswith("utility/"):  # utility_cards.py: utility/<type>/<app>/<item>/<locale>
             parts = key.split("/")
             return {"app": parts[2], "locale": parts[-1], "hook": "", "ios_id": "", "kind": "utility", "clip": key}
         c = self.clips.get(key)
         if not c:
             app, _, locale = key.partition("/")
-            return {"app": app, "locale": locale, "hook": "", "ios_id": "", "kind": kind, "clip": key}
-        return {"app": c["app"], "locale": c["locale"], "hook": c.get("hook", ""),
-                "ios_id": ios_id_of(c.get("store_url")), "kind": kind, "clip": key}
+            return {"app": app, "locale": locale, "hook": "", "ios_id": "", "kind": kind, "clip": key,
+                    "variant": variant}
+        # Hook variants (search_caption.py): the lead line that went out is the post's hook.
+        lead = next((h.get("lead") for h in c.get("hooks") or [] if h.get("id") == variant), None)
+        if variant is None and c.get("hooks"):
+            variant = "a"  # posts from before variants carried the storyboard's first line
+        return {"app": c["app"], "locale": c["locale"], "hook": lead or c.get("hook", ""),
+                "ios_id": ios_id_of(c.get("store_url")), "kind": kind, "clip": key, "variant": variant}
 
     def resolve(self, channel, media):
         for k in (media.get("id"), media.get("permalink")):
             p = self.logged.get((channel, str(k or "").rstrip("/")))
             if p:
-                return dict(self._clip(p["clip"]), posted_at=p.get("posted_at"))
+                return dict(self._clip(p["clip"], variant=p.get("variant")), posted_at=p.get("posted_at"))
         text = media.get("caption") or ""
         for key, c in self.clips.items():
+            for h in c.get("hooks") or []:
+                if h.get("lead") and text.startswith(h["lead"]):
+                    return self._clip(key, variant=h.get("id"))
             if c.get("hook") and c["hook"] in text:
                 return self._clip(key)
         low = text.lower()

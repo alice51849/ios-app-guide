@@ -12,6 +12,11 @@ channel, so nothing is ever re-posted, and the pacing (Instagram 1 a day for
 the first two weeks, then at most 2; Telegram 1 a day) is decided when the
 schedule is written, not here. A slot without an entry posts nothing.
 
+Captions are search-first (search_caption.py): the problem line, benefit and
+keyword line from clips.json, then a few keyword hashtags; the hook variant
+rotates across platforms and days and is recorded in clip-posts.json so
+post_performance.py can rank variants.
+
     python3 clip_posts.py telegram --slot 1     # sendVideo + App Store button
     python3 clip_posts.py instagram --slot 15   # Reels via the official API
     python3 clip_posts.py preview --slot 1      # print what would be posted
@@ -28,6 +33,7 @@ import urllib.request
 from pathlib import Path
 
 import clip_progress
+import search_caption as SC
 from social_post_common import play_store_url
 
 HERE = Path(__file__).resolve().parent
@@ -35,28 +41,17 @@ CLIPS = HERE.parent / "growth" / "clips.json"
 GRAPH = "https://graph.instagram.com/v21.0"
 
 TEXT = {
-    "en": {"search": "Search “{s}” on the App Store", "bio": "Link in bio", "button": "Get it on the App Store",
-           "tags": "#iphoneapps #appstore #iosapps"},
-    "zh-Hant": {"search": "在 App Store 搜尋「{s}」", "bio": "下載連結在個人檔案", "button": "在 App Store 下載",
-                "tags": "#iPhone #App推薦 #iOS"},
-    "ja": {"search": "App Storeで「{s}」を検索", "bio": "リンクはプロフィールから", "button": "App Storeで入手",
-           "tags": "#iPhoneアプリ #アプリ紹介 #iOS"},
-    "ko": {"search": "App Store에서 '{s}' 검색", "bio": "링크는 프로필에", "button": "App Store에서 받기",
-           "tags": "#아이폰어플 #앱추천 #iOS"},
-    "de": {"search": "Im App Store nach „{s}“ suchen", "bio": "Link in der Bio", "button": "Im App Store laden",
-           "tags": "#iphoneapps #appstore #ios"},
-    "fr": {"search": "Recherchez « {s} » sur l'App Store", "bio": "Lien dans la bio", "button": "Télécharger sur l'App Store",
-           "tags": "#iphoneapps #appstore #ios"},
-    "es": {"search": "Busca «{s}» en el App Store", "bio": "Enlace en la bio", "button": "Descargar en el App Store",
-           "tags": "#iphoneapps #appstore #ios"},
-    "id": {"search": "Cari “{s}” di App Store", "bio": "Link di bio", "button": "Unduh di App Store",
-           "tags": "#aplikasiiphone #appstore #ios"},
-    "vi": {"search": "Tìm “{s}” trên App Store", "bio": "Link ở bio", "button": "Tải trên App Store",
-           "tags": "#ungdungiphone #appstore #ios"},
-    "th": {"search": "ค้นหา “{s}” ใน App Store", "bio": "ลิงก์อยู่ในโปรไฟล์", "button": "ดาวน์โหลดใน App Store",
-           "tags": "#แอพไอโฟน #appstore #ios"},
-    "pt-BR": {"search": "Pesquise “{s}” na App Store", "bio": "Link na bio", "button": "Baixar na App Store",
-              "tags": "#iphoneapps #appstore #ios"},
+    "en": {"search": "Search “{s}” on the App Store", "bio": "Link in bio", "button": "Get it on the App Store"},
+    "zh-Hant": {"search": "在 App Store 搜尋「{s}」", "bio": "下載連結在個人檔案", "button": "在 App Store 下載"},
+    "ja": {"search": "App Storeで「{s}」を検索", "bio": "リンクはプロフィールから", "button": "App Storeで入手"},
+    "ko": {"search": "App Store에서 '{s}' 검색", "bio": "링크는 프로필에", "button": "App Store에서 받기"},
+    "de": {"search": "Im App Store nach „{s}“ suchen", "bio": "Link in der Bio", "button": "Im App Store laden"},
+    "fr": {"search": "Recherchez « {s} » sur l'App Store", "bio": "Lien dans la bio", "button": "Télécharger sur l'App Store"},
+    "es": {"search": "Busca «{s}» en el App Store", "bio": "Enlace en la bio", "button": "Descargar en el App Store"},
+    "id": {"search": "Cari “{s}” di App Store", "bio": "Link di bio", "button": "Unduh di App Store"},
+    "vi": {"search": "Tìm “{s}” trên App Store", "bio": "Link ở bio", "button": "Tải trên App Store"},
+    "th": {"search": "ค้นหา “{s}” ใน App Store", "bio": "ลิงก์อยู่ในโปรไฟล์", "button": "ดาวน์โหลดใน App Store"},
+    "pt-BR": {"search": "Pesquise “{s}” na App Store", "bio": "Link na bio", "button": "Baixar na App Store"},
 }
 
 
@@ -85,15 +80,6 @@ def with_campaign(url, channel):
     return urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query)))
 
 
-# A few natural layouts per post, picked per app and locale so a feed never
-# shows the same template twice in a row.
-LAYOUTS = [
-    ["{hook}", "", "{name}", "{search}"],
-    ["{hook}", "", "{search}", "{name}"],
-    ["{name}", "{hook}", "", "{search}"],
-]
-
-
 PLAY_LINE = {"en": "Also on Google Play", "zh-Hant": "Android 版在 Google Play", "ja": "AndroidはGoogle Playで",
              "ko": "Android는 Google Play에서", "de": "Auch bei Google Play", "fr": "Aussi sur Google Play",
              "es": "También en Google Play", "pt-BR": "Também no Google Play",
@@ -111,16 +97,19 @@ def play_url(clip, channel):
     return play_store_url(ios_id(clip), f"{ct}_{channel}"[:40])
 
 
-def caption(clip, channel):
+def caption(clip, channel, variant=None):
+    """Search-first caption (search_caption.py): problem line, benefit and keyword line inside the first
+    125 characters, app name + App Store search line, then a few keyword hashtags."""
     t = text_for(clip["locale"])
-    layout = LAYOUTS[sum(map(ord, f"{clip['app']}/{clip['locale']}/{channel}")) % len(LAYOUTS)]
-    values = {"hook": clip["hook"], "name": clip["name"], "search": t["search"].format(s=clip["search"])}
-    lines = [line.format(**values) for line in layout]
+    lines = SC.body(clip, variant or SC.variants(clip)[0])
+    lines += [clip["name"], t["search"].format(s=clip["search"])]
     if play_store_url(ios_id(clip), "h7"):
         lines.append(PLAY_LINE.get(clip["locale"]) or PLAY_LINE.get(clip["locale"].split("-")[0]) or PLAY_LINE["en"])
     if channel == "instagram":
-        tags = clip.get("tags") or t["tags"].split()
-        lines += [t["bio"], "", " ".join(tags[:3])]
+        lines.append(t["bio"])
+    tags = SC.tags(clip, SC.TAG_LIMIT.get(channel, 5))
+    if tags:
+        lines += ["", " ".join(tags)]
     return "\n".join(lines)
 
 
@@ -137,7 +126,7 @@ def _get(url, timeout=60):
         return json.loads(r.read())
 
 
-def post_telegram(clip):
+def post_telegram(clip, variant=None):
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
     if not token or not chat:
@@ -151,7 +140,7 @@ def post_telegram(clip):
     result = _post(f"https://api.telegram.org/bot{token}/sendVideo", {
         "chat_id": chat,
         "video": clip["url"],
-        "caption": caption(clip, "telegram"),
+        "caption": caption(clip, "telegram", variant),
         "supports_streaming": "true",
         "reply_markup": json.dumps(button),
     })
@@ -163,7 +152,7 @@ def post_telegram(clip):
     return {"id": message["message_id"], "link": link}
 
 
-def post_instagram(clip, wait=5, tries=60):
+def post_instagram(clip, variant=None, wait=5, tries=60):
     token = os.environ.get("IG_ACCESS_TOKEN", "").strip()
     if not token:
         print("clip: IG_ACCESS_TOKEN not set yet, Reels skipped")
@@ -178,7 +167,7 @@ def post_instagram(clip, wait=5, tries=60):
     container = _post(f"{GRAPH}/{user}/media", {
         "media_type": "REELS",
         "video_url": clip["url"],
-        "caption": caption(clip, "instagram"),
+        "caption": caption(clip, "instagram", variant),  # Reels take no alt_text (image posts only)
         "share_to_feed": "true",
         "access_token": token,
     })["id"]
@@ -203,7 +192,7 @@ def post_instagram(clip, wait=5, tries=60):
 THREADS = "https://graph.threads.net/v1.0"
 
 
-def post_threads(clip, wait=5, tries=60):
+def post_threads(clip, variant=None, wait=5, tries=60):
     """Video post with the hook caption; store links go in the first reply."""
     token = os.environ.get("THREADS_TOKEN", "").strip()
     user = os.environ.get("THREADS_USER_ID", "").strip()
@@ -213,7 +202,7 @@ def post_threads(clip, wait=5, tries=60):
     # The token's own account id (the THREADS_USER_ID secret can point at an old account).
     user = _get(f"{THREADS}/me?fields=id&access_token={token}").get("id") or user
     t = text_for(clip["locale"])
-    text = caption(clip, "threads")
+    text = caption(clip, "threads", variant)
     container = _post(f"{THREADS}/{user}/threads", {
         "media_type": "VIDEO", "video_url": clip["url"], "text": text, "access_token": token,
     })["id"]
@@ -262,16 +251,18 @@ def main():
     if not clip:
         print(f"clip: nothing scheduled for {channel} on {day} slot {args.slot}")
         return 0
-    print(f"clip: {clip['app']} {clip['locale']} {clip['url']}")
+    variant = SC.choose(clip, channel, day)
+    print(f"clip: {clip['app']} {clip['locale']} hook {variant['id']} {clip['url']}")
     if args.channel == "preview":
-        print(caption(clip, "instagram"))
+        print(caption(clip, "instagram", variant))
         return 0
-    posted = {"telegram": post_telegram, "instagram": post_instagram, "threads": post_threads}[args.channel](clip)
+    posted = {"telegram": post_telegram, "instagram": post_instagram, "threads": post_threads}[args.channel](clip, variant)
     print(f"clip: posted {posted}")
     if posted:
-        # The promotion page (office.cait518.cc) lists every post's link.
+        # The promotion page (office.cait518.cc) lists every post's link; the variant id feeds the
+        # hook A/B ranking in post_performance.py.
         clip_progress.record_post(channel, f"{clip['app']}/{clip['locale']}", posted.get("link"),
-                                  media_id=posted.get("id"))
+                                  media_id=posted.get("id"), variant=variant["id"])
     return 0
 
 

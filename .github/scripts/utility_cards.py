@@ -341,7 +341,13 @@ def post_threads(url, meta, card, day):
 
 def post_instagram(url, meta, card):
     import os
-    media = cd.instagram_image(url, meta["caption"] + "\n" + TEXT[card["locale"]]["bio"], label="utility")
+    import search_caption as SC
+    text = meta["caption"] + "\n" + TEXT[card["locale"]]["bio"]
+    tags = SC.card_tags(card["app"], card["locale"])  # keyword hashtags from the planner's seo table
+    if tags:
+        text += "\n\n" + " ".join(tags)
+    alt = SC.card_alt(APPS[card["app"]]["name"], meta["caption"], card["app"], card["locale"])
+    media = cd.instagram_image(url, text, label="utility", alt=alt)
     if not media:
         return None
     return _permalink("https://graph.instagram.com/v21.0", media, os.environ.get("IG_ACCESS_TOKEN", "")) or ""

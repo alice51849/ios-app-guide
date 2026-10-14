@@ -74,6 +74,62 @@ ENV_ALL = {k: "v" for keys in S.SECRETS.values() for k in keys}
 ENV_ALL.update({"FB_PAGE_ID": "123", "TUMBLR_BLOG": "lumiapps", "NAVER_ID": "lumi"})
 
 
+def search_clip(app="u", locale="en", lead="Hit your AI limit mid-task again?"):
+    return dict(clip(app, locale), name="UsageNow: AI Usage Tracker", search="UsageNow",
+                keyline="Claude, Codex & Copilot Limits", keywords=["quota", "reset", "countdown"],
+                tags=["#AIUsageTracker", "#Quota", "#Reset", "#appstore", "#UsageNow"],
+                hooks=[{"id": "a", "lead": lead, "benefit": "See what's left and when it resets"},
+                       {"id": "b", "lead": "See what's left and when it resets", "benefit": "Alerts before you run out"}])
+
+
+class SearchShapeTest(unittest.TestCase):
+    def test_youtube_title_is_problem_plus_app_plus_shorts(self):
+        it = S.clip_item("u/en", search_clip(lead="L" * 150), "youtube", DAY)
+        title, desc, words = S.yt_meta(it)
+        self.assertLessEqual(len(title), 100)
+        self.assertTrue(title.endswith("| UsageNow #Shorts"))
+        self.assertIn("quota · reset · countdown", desc)
+        self.assertIn("App Store: https://apps.apple.com", desc)
+        self.assertEqual(desc.splitlines()[-1].split()[0], "#Shorts")
+        self.assertIn("quota", words)
+        self.assertNotIn("appstore", words)
+        self.assertLessEqual(sum(len(w) + 1 for w in words), 450)
+
+    def test_pinterest_title_and_alt_text_carry_the_keywords(self):
+        fake = Fake([("POST", "/v5/media", {"media_id": "m1", "upload_url": "https://s3.example/up", "upload_parameters": {}}),
+                     ("POST", "s3.example", {}), ("GET", "/media/m1", {"status": "succeeded"}), ("POST", "/pins", {"id": "p"})])
+        it = S.clip_item("u/en", search_clip(), "pinterest", DAY)
+        with mock.patch.dict(os.environ, {"PINTEREST_TOKEN": "t", "PINTEREST_BOARD_ID": "b"}, clear=True), \
+                mock.patch.object(S, "http", fake), mock.patch.object(S, "fetch_bytes", return_value=b"mp4"):
+            S.post_pinterest(it)
+        pin = json.loads(fake.find("/pins")[0]["data"])
+        self.assertIn("Claude, Codex & Copilot Limits", pin["title"])
+        self.assertLessEqual(len(pin["title"]), 100)
+        self.assertIn("UsageNow: AI Usage Tracker", pin["alt_text"])
+        self.assertIn("Claude, Codex & Copilot Limits", pin["alt_text"])
+
+    def test_bluesky_alt_and_item_variant(self):
+        it = S.clip_item("u/en", search_clip(), "bluesky", DAY)
+        self.assertIn(it["variant"], ("a", "b"))
+        self.assertTrue(it["caption"].startswith(it["hook"]))
+        self.assertIn("Claude, Codex & Copilot Limits", it["alt"])
+        text, facets = S.bsky_rich(it["caption"] + "\n" + "x" * 400, [("App Store", "https://a")])
+        self.assertLessEqual(len(text), 300)
+
+    def test_cards_take_keyword_tags_and_alt_from_the_planner(self):
+        import search_caption as SC
+        seo = {"seo": {"countdaysnow": {"ko": {"tags": ["#카운트다운", "#수능", "#appstore"], "keyline": "D-day 계산"}}}}
+        with mock.patch.object(SC, "_feed", return_value=seo):
+            self.assertEqual(SC.card_tags("countdaysnow", "ko"), ["#카운트다운", "#수능"])
+            self.assertIn("D-day 계산", SC.card_alt("CountDaysNow", "수능 D-35\n오늘도", "countdaysnow", "ko"))
+            self.assertEqual(SC.card_tags("nothing", "ko"), [])
+            day = dt.date(2026, 10, 15)
+            with mock.patch.object(S.countdown_cards, "due", return_value=None):
+                cards = S.todays_cards(day, "bluesky")
+            for c in cards:
+                self.assertTrue(c.get("alt"))
+
+
 class PlanTest(unittest.TestCase):
     def test_mirrors_the_instagram_entry_first_and_skips_posted_clips(self):
         items = S.plan("dailymotion", DATA, [], DAY, 1, check=False)
@@ -136,7 +192,8 @@ class PlanTest(unittest.TestCase):
                 mock.patch.object(S, "load_posts", return_value=[]), \
                 mock.patch.object(P, "record_post") as rec, mock.patch("sys.stdout", new_callable=io.StringIO):
             S.run(("dailymotion",), DAY, 1, data=DATA)
-        rec.assert_called_once_with("dailymotion", "a/en", "https://www.dailymotion.com/video/x9", media_id="9")
+        rec.assert_called_once_with("dailymotion", "a/en", "https://www.dailymotion.com/video/x9", media_id="9",
+                                    variant="a")
 
 
 class ServedElsewhereTest(unittest.TestCase):
@@ -267,7 +324,8 @@ class BlueskyTest(unittest.TestCase):
         self.assertEqual(fake.find("uploadVideo")[0]["headers"]["Authorization"], "Bearer svc")
         record = json.loads(fake.find("createRecord")[0]["data"])["record"]
         self.assertEqual(record["embed"]["$type"], "app.bsky.embed.video")
-        self.assertEqual(len(record["facets"]), 1)
+        kinds = [f["features"][0]["$type"].rsplit("#", 1)[1] for f in record["facets"]]
+        self.assertEqual(sorted(kinds), ["link", "tag", "tag", "tag"])  # App Store link + #a #b #c
 
     def test_video_failure_falls_back_to_a_link_card(self):
         fake = Fake([self.session(), ("GET", "getServiceAuth", RuntimeError("HTTP 403 no video quota")),
@@ -374,8 +432,9 @@ class TumblrTest(unittest.TestCase):
         self.assertIn(b"mp4bytes", call["data"])
         payload = json.loads(call["data"].split(b"application/json\r\n\r\n")[1].split(b"\r\n--")[0])
         types = [b["type"] for b in payload["content"]]
-        self.assertEqual(types[:3], ["text", "video", "link"])
-        self.assertEqual(payload["content"][1]["media"]["identifier"], "media0")
+        self.assertEqual(types[:4], ["text", "text", "video", "link"])
+        self.assertEqual(payload["content"][0]["subtype"], "heading2")  # keyword-rich title
+        self.assertEqual(payload["content"][2]["media"]["identifier"], "media0")
 
 
 class NaverTest(unittest.TestCase):

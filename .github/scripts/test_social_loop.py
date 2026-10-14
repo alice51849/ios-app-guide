@@ -213,5 +213,78 @@ class Performance(unittest.TestCase):
         self.assertEqual(P.build_performance({}, {}), "")
 
 
+def row(ch, views, ts, locale="en", variant=None, app="a", kind="clip"):
+    return {"channel": ch, "id": f"{ch}{ts}{views}", "posted_at": ts, "app": app, "locale": locale, "hook": "h",
+            "clip": f"{app}/{locale}", "kind": kind, "variant": variant, "metrics": {"views": views}, "score": views}
+
+
+def series(ch, views, n, hour=1, start=1, **kw):
+    return [row(ch, views, f"2026-10-{start + i // 2:02d}T{hour:02d}:2{i % 2}:00", **kw) for i in range(n)]
+
+
+class SearchLoop(unittest.TestCase):
+    def test_variant_posts_resolve_to_their_lead(self):
+        clips = {"clips": {"a/en": dict(CLIPS["clips"]["a/en"], hooks=[
+            {"id": "a", "lead": "Hit your limit again?", "benefit": "See what's left"},
+            {"id": "b", "lead": "See what's left", "benefit": "Alerts"}])}}
+        cat = O.Catalog(clips, [{"channel": "instagram", "clip": "a/en", "id": "M1", "variant": "b"}], {})
+        self.assertEqual((cat.resolve("instagram", {"id": "M1"})["hook"], cat.resolve("instagram", {"id": "M1"})["variant"]),
+                         ("See what's left", "b"))
+        self.assertEqual(cat.resolve("threads", {"id": "Z", "caption": "See what's left\nAlerts"})["variant"], "b")
+        self.assertEqual(cat.resolve("threads", {"id": "Y", "caption": "Hit your limit again?\nx"})["variant"], "a")
+
+    def test_hook_winners_need_two_variants_with_data(self):
+        rows = series("instagram", 50, 5, variant="a") + series("threads", 10, 5, variant="b")
+        wins = F.hook_winners(rows)
+        self.assertEqual((wins["global"], wins["locales"].get("en"), wins["apps"].get("a/en")), ("a", "a", "a"))
+        self.assertEqual(F.hook_winners(series("instagram", 50, 9, variant="a"))["global"], None)
+        data = F.build({}, rows, {}, NOW)
+        self.assertEqual([v["key"] for v in data["ranking"]["variants"]], ["a", "b"])
+
+    def test_low_median_channel_drops_to_one_a_day_and_frees_a_slot(self):
+        rows = series("threads", 8, 10, hour=1) + series("threads", 12, 4, hour=15, start=10)
+        rows += series("instagram", 40, 14)
+        alloc = F.allocation(rows, limit=20)
+        self.assertEqual((alloc["reduced"], alloc["best"]), (["threads"], "instagram"))
+        self.assertEqual((alloc["channels"]["threads"]["daily"], alloc["channels"]["threads"]["keep_slot"]), (1, 15))
+        self.assertIn("Threads 近 14 則觀看中位數 8＜20 → 每天 1 則，空出的時段給 Instagram", alloc["decision"])
+        self.assertNotIn("\n", alloc["decision"])
+        # Under 14 posts nothing changes; a strong channel is never reduced.
+        self.assertEqual(F.allocation(series("threads", 1, 13) + series("instagram", 40, 14), limit=20)["reduced"], [])
+        with mock.patch.dict("os.environ", {"PERF_MIN_MEDIAN_VIEWS": "5"}):
+            self.assertEqual(F.allocation(rows)["reduced"], [])
+        weak_ig = F.allocation(series("instagram", 3, 14) + series("threads", 40, 14), limit=20)
+        self.assertIn("沒有空檔時段", weak_ig["decision"])
+
+    def test_best_hours_wait_for_twenty_posts_and_two_hours(self):
+        few = series("instagram", 10, 19)
+        self.assertEqual(F.best_hours(few), ({}, {"instagram": "19/20 則"}))
+        rows = series("instagram", 10, 12, hour=1) + series("instagram", 30, 10, hour=15, start=10)
+        hours, status = F.best_hours(rows)
+        self.assertEqual(hours["instagram"]["en"]["hour"], 15)
+        self.assertEqual(status, {})
+        one_hour, why = F.best_hours(series("threads", 10, 22))
+        self.assertEqual((one_hour, list(why)), ({}, ["threads"]))
+
+    def test_page_shows_decision_hours_and_variants_in_one_line_each(self):
+        hooks = [{"app": "a", "locale": "en", "hook": "h", "views": 9, "avg_score": 9}]
+        perf = {"updated_at": "2026-10-14T00:00:00Z", "ranking": {"hooks": hooks, "variants": [
+                    {"key": "a", "avg_score": 12.5, "posts": 6}, {"key": "b", "avg_score": 4, "posts": 5}]},
+                "hook_winners": {"global": "a"},
+                "allocation": {"decision": "Threads 近 14 則觀看中位數 8＜20 → 每天 1 則，空出的時段給 Instagram",
+                               "channels": {"threads": {"daily": 1}}},
+                "best_hours": {"instagram": {"en": {"hour": 15}}}}
+        table = P.build_performance(perf, {})
+        self.assertIn("\n通路調整：Threads 近 14 則觀看中位數 8＜20", table)
+        self.assertIn("建議時段（台灣）：Instagram en 23:00", table)
+        self.assertIn("鉤子版本：a 問題開頭 12.5（6 則） · b 好處開頭 4（5 則）；目前優先 a", table)
+        waiting = P.build_performance(dict(perf, best_hours={}, best_hours_status={"instagram": "3/20 則"}), {})
+        self.assertIn("建議時段：Instagram 3/20 則", waiting)
+        section = P.build_section({"clips": {}, "schedule": [{"date": "2099-01-01", "slot": 1, "channel": "threads",
+                                                             "clip": "x/en"}]}, [], {}, NOW,
+                                  allocation=perf["allocation"])
+        self.assertIn("| Threads | 自動 1 支／天 |", section)
+
+
 if __name__ == "__main__":
     unittest.main()

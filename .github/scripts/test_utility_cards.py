@@ -142,6 +142,21 @@ class PostTest(unittest.TestCase):
 
 
 @unittest.skipUnless(Path(U.cd.FONT).exists(), "CJK font not installed")
+class SearchTest(unittest.TestCase):
+    def test_instagram_card_gets_alt_text_and_keyword_tags(self):
+        import search_caption as SC
+        sent = []
+        card = U.pick(DAY0)
+        seo = {"seo": {card["app"]: {card["locale"]: {"tags": ["#kw1", "#kw2"], "keyline": "search phrase"}}}}
+        with mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t"}), mock.patch.object(SC, "_feed", return_value=seo), \
+                mock.patch.object(U.cd, "_get", return_value={"user_id": "u"}), mock.patch.object(U.cd.time, "sleep"), \
+                mock.patch.object(U.cd, "_post", side_effect=lambda url, f, timeout=60: sent.append(f) or {"id": "m"}), \
+                mock.patch.object(U, "_permalink", return_value="https://instagram.com/p/x"):
+            U.post_instagram("https://x/card.jpg", {"caption": "Head\nBody"}, card)
+        self.assertIn("search phrase", sent[0]["alt_text"])
+        self.assertTrue(sent[0]["caption"].endswith("#kw1 #kw2"))
+
+
 class MakeTest(unittest.TestCase):
     def test_every_type_draws_a_card_with_meta(self):
         with tempfile.TemporaryDirectory() as tmp:

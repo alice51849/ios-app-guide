@@ -232,8 +232,8 @@ def threads_image(url, text, links, label="countdown"):
     return media
 
 
-def instagram_image(url, text, label="countdown"):
-    """Image post on Instagram; the media id or None."""
+def instagram_image(url, text, label="countdown", alt=None):
+    """Image post on Instagram (with alt text when given: accessibility + search); the media id or None."""
     token = os.environ.get("IG_ACCESS_TOKEN", "")
     if not token:
         print(f"{label}: IG_ACCESS_TOKEN missing")
@@ -241,7 +241,10 @@ def instagram_image(url, text, label="countdown"):
     api = "https://graph.instagram.com/v21.0"
     me = _get(f"{api}/me?fields=user_id&access_token={token}")
     user = me.get("user_id") or me.get("id")
-    c = _post(f"{api}/{user}/media", {"image_url": url, "caption": text, "access_token": token})["id"]
+    fields = {"image_url": url, "caption": text, "access_token": token}
+    if alt:
+        fields["alt_text"] = alt[:1000]
+    c = _post(f"{api}/{user}/media", fields)["id"]
     time.sleep(10)
     media = _post(f"{api}/{user}/media_publish", {"creation_id": c, "access_token": token}).get("id")
     print(f"{label}: instagram", media)
@@ -268,8 +271,12 @@ def post_threads(url, meta, e):
 
 
 def post_instagram(url, meta):
+    import search_caption as SC
     text = meta["caption"] + "\n" + {"ko": "링크는 프로필에", "zh-Hant": "下載連結在個人檔案", "ja": "リンクはプロフィールから"}.get(meta["locale"], "Link in bio")
-    instagram_image(url, text)
+    tags = SC.card_tags("countdaysnow", meta["locale"])  # keyword hashtags from the planner's seo table
+    if tags:
+        text += "\n\n" + " ".join(tags)
+    instagram_image(url, text, alt=SC.card_alt("CountDaysNow", meta["caption"], "countdaysnow", meta["locale"]))
 
 
 def main():

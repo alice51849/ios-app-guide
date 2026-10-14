@@ -30,7 +30,7 @@ PERF_HEADING = "## 成效排行"
 PAGE_TITLE = "# 外宣成效"
 TW = dt.timezone(dt.timedelta(hours=8))
 # Cron slots (UTC hour) of the posting workflows.
-SLOT_TIME = {"telegram": {1: "01:00", 15: "15:00"}, "instagram": {1: "01:20", 15: "15:20"},
+SLOT_TIME = {"telegram": {1: "01:00", 15: "15:00"}, "instagram": {1: "01:20", 9: "09:20", 15: "15:20"},
              "threads": {1: "01:40", 15: "15:40"}}
 CHANNEL_NAME = {"telegram": "Telegram", "instagram": "Instagram", "threads": "Threads"}
 # Daily utility cards share the post log under this key prefix.
@@ -67,9 +67,10 @@ def app_names(improvements):
     return {a["key"]: a.get("name", a["key"]) for a in improvements.get("apps", [])}
 
 
-def build_section(clips, posts, names, now, hook_total=None, notes=(), android=None):
+def build_section(clips, posts, names, now, hook_total=None, notes=(), android=None, allocation=None):
     """Compact, one-screen markdown for the promotion page (heading included)."""
     android = android or {}
+    daily = {ch: info.get("daily") for ch, info in ((allocation or {}).get("channels") or {}).items()}
     utility = [p for p in posts if p["clip"].startswith(UTILITY_PREFIX)]
     posts = [p for p in posts if not p["clip"].startswith(UTILITY_PREFIX)]
     clip_map = clips.get("clips", {})
@@ -91,7 +92,7 @@ def build_section(clips, posts, names, now, hook_total=None, notes=(), android=N
         entries = [e for e in schedule if e["channel"] == channel]
         done = sum(1 for p in posts if p["channel"] == channel)
         upcoming = [e for e in entries if (channel, e["clip"]) not in posted and e["date"] >= today]
-        state = "自動 2 支／天" if entries else "等待中"
+        state = f"自動 {daily.get(channel) or 2} 支／天" if entries else "等待中"
         nxt = "—"
         if upcoming:
             e = upcoming[0]
@@ -136,11 +137,52 @@ def build_performance(perf, names, top=5):
         lines.append(f"| {i} | {names.get(h['app'], h['app'])} | {h['locale']} | {hook} | {h['views']} | {h['avg_score']:g} |")
     if perf.get("boost"):
         lines.append(f"\n加碼排程：{'、'.join(names.get(a, a) for a in perf['boost'])}")
+    for line in (variant_line(perf), allocation_line(perf), hours_line(perf)):
+        if line:
+            lines.append(f"\n{line}")
     skipped = [f"{CHANNEL_NAME.get(c, c)} {s.split(': ', 1)[-1]}" for c, s in perf.get("sources", {}).items()
                if s.startswith("skipped") and "no token" not in s]
     if skipped:
         lines.append(f"\n洞察未取得：{'；'.join(skipped)}")
     return "\n".join(lines)
+
+
+VARIANT_NAME = {"a": "問題開頭", "b": "好處開頭", "c": "功能開頭"}
+
+
+def variant_line(perf):
+    """One line: average score per hook variant (post_performance.py ranking.variants)."""
+    rows = (perf.get("ranking") or {}).get("variants") or []
+    rows = [r for r in rows if r.get("key")]
+    if not rows:
+        return ""
+    best = (perf.get("hook_winners") or {}).get("global")
+    parts = [f"{r['key']} {VARIANT_NAME.get(r['key'], '')} {r['avg_score']:g}（{r['posts']} 則）" for r in rows]
+    return "鉤子版本：" + " · ".join(parts) + (f"；目前優先 {best}" if best else "")
+
+
+def allocation_line(perf):
+    """One line: the channel reallocation decision (post_performance.py allocation)."""
+    alloc = perf.get("allocation") or {}
+    return f"通路調整：{alloc['decision']}" if alloc.get("decision") else ""
+
+
+def hours_line(perf):
+    """One line: recommended posting hour per platform and market (Taiwan time), or what is still missing."""
+    hours = perf.get("best_hours") or {}
+    parts = []
+    for ch, markets in hours.items():
+        if not isinstance(markets, dict):
+            continue
+        for loc, rec in sorted(markets.items()):
+            if isinstance(rec, dict) and rec.get("hour") is not None:
+                tw = (rec["hour"] + 8) % 24
+                parts.append(f"{CHANNEL_NAME.get(ch, ch)} {loc} {tw:02d}:00")
+    status = perf.get("best_hours_status") or {}
+    if parts:
+        return "建議時段（台灣）：" + "、".join(parts)
+    waiting = [f"{CHANNEL_NAME.get(c, c)} {s}" for c, s in status.items()]
+    return "建議時段：" + "；".join(waiting) if waiting else ""
 
 
 def utility_row(utility):
@@ -212,23 +254,27 @@ def update(now=None, notes=None):
         notes = load_json(POSTS, {}).get("notes", [])
     from social_post_common import android_apps
     android = {e["key"]: e["play_url"] for e in android_apps().values()}
-    section = build_section(clips, posts, app_names(improvements), now, hook_total(improvements), notes, android)
+    perf_data = load_json(PERFORMANCE, {})
+    section = build_section(clips, posts, app_names(improvements), now, hook_total(improvements), notes, android,
+                            perf_data.get("allocation"))
     update_hook_cards(improvements, clips, posts, now)
     # The page shows one screen: title + this section. Older narrative lives in
     # .github/growth/app-improvements-archive.json.
-    perf = build_performance(load_json(PERFORMANCE, {}), app_names(improvements))
+    perf = build_performance(perf_data, app_names(improvements))
     improvements["summary_md"] = PAGE_TITLE + "\n\n" + section + "\n" + (f"\n{perf}\n" if perf else "")
     improvements["updated_at"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     IMPROVEMENTS.write_text(json.dumps(improvements, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
-def record_post(channel, key, link, now=None, media_id=None):
+def record_post(channel, key, link, now=None, media_id=None, variant=None):
     """Append one post to clip-posts.json and refresh the page section."""
     now = now or dt.datetime.now(dt.timezone.utc)
     log = load_json(POSTS, {"posts": [], "notes": []})
     entry = {"channel": channel, "clip": key, "link": link, "posted_at": now.strftime("%Y-%m-%dT%H:%M:%SZ")}
     if media_id:  # post_performance.py reads insights by this id
         entry["id"] = str(media_id)
+    if variant:  # hook variant (search_caption.choose), ranked by post_performance.py
+        entry["variant"] = variant
     log.setdefault("posts", []).append(entry)
     POSTS.write_text(json.dumps(log, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     update(now)

@@ -31,7 +31,14 @@ jobs:
           repository: alice51849/00_GrowthEngine
           ssh-key: ${{ secrets.GROWTH_ENGINE_DEPLOY_KEY }}
           path: .engine
-          sparse-checkout: shorts
+          # shorts = planner + storyboards; data/*_full.json and the two aso
+          # keyword files feed the search-intent captions (search_intent.py).
+          sparse-checkout: |
+            shorts/
+            data/*_full.json
+            aso/keyword_baseline_20260923.json
+            aso/kw_content.json
+          sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"

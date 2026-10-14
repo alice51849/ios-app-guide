@@ -6,11 +6,13 @@ name: Instagram Reels daily clip
 on:
   schedule:
     - cron: "20 1 * * *"   # 09:20 Taiwan / Japan / Korea
+    - cron: "20 9 * * *"   # spare slot: posts only when clips.json plans slot 9
+                           # (post_performance.py channel reallocation moved a slot here)
     - cron: "20 15 * * *"  # Americas morning
   workflow_dispatch:
     inputs:
       slot:
-        description: "Audience slot (1 = Asia, 15 = Americas)"
+        description: "Audience slot (1 = Asia, 9 = spare, 15 = Americas)"
         default: "1"
 
 permissions:
@@ -42,7 +44,7 @@ jobs:
         run: >-
           python3 .github/scripts/social_slot_gate.py
           --workflow reels-daily.yml
-          --slots 1,15
+          --slots 1,9,15
       - name: Test
         run: python3 .github/scripts/test_clip_posts.py -q
       - name: Post Reel

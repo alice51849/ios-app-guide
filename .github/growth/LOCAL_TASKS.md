@@ -35,47 +35,49 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
    - 跟商店截圖用同一套示範資料。產生 `*_home_unlocked.png` 那套截圖流程的啟動參數或 StoreKit 測試設定都可以用；
    - 不要用任何真人的資料（Cyca 的經期、BattAI 的電池紀錄都一樣）；
    - 需要內購才看得到的畫面，用 Xcode 的 StoreKit Configuration 在模擬器解鎖。樣片結尾卡已經寫了內購揭露。
-6. 每一段單獨錄一個檔，先擺好畫面再開始錄，按 Ctrl-C 停：
+6. 第二版是「一個畫面錄一個檔」，不是一段一檔。先擺好畫面再開始錄，按 Ctrl-C 停：
    ```bash
    mkdir -p ~/Desktop/preview_raw
-   xcrun simctl io booted recordVideo --codec=h264 --force ~/Desktop/preview_raw/<app>_<locale>_b<N>.mov
+   xcrun simctl io booted recordVideo --codec=h264 --force ~/Desktop/preview_raw/<app>_<locale>_<畫面>.mov
    ```
-   - b1（鉤子）錄 **4 秒**，b2–b4 各錄 **6 秒**。成片只用 3 秒和 4.5 秒，多錄的部分當緩衝。
+   - 每個畫面錄 **8 秒**。成片裡同一個畫面會被切成 2–3 個鏡頭，管線會從錄影裡接著往下取，不會重複同一秒。
+   - 鏡頭推近、標示框、點擊漣漪、計數都由管線加，錄影時只要在對的時間點做對的動作，畫面不要自己捲太快。
    - 不要出現手指、鍵盤或滑鼠游標，也不要出現模擬器外框。`recordVideo` 本來就只錄畫面。
-   - 點擊動作放在開錄後約 1–1.5 秒。
 
-**要錄的畫面（每款 en 和 zh-Hant 各錄一套，共 3 款 × 2 語 × 4 段 = 24 段）：**
+**要錄的畫面（每款 en 和 zh-Hant 各錄一套；Mochi 4 個、BattAI 4 個、Cyca 5 個，共 26 個檔）：**
 
-| App | 段 | 字卡（取自分鏡） | 錄什麼 |
+| App | 畫面檔名 | 用在哪幾張字卡（採用文案 A） | 錄什麼 |
 |---|---|---|---|
-| Mochi | b1 | Your to-do list, but make it cute／待辦清單也可以這麼可愛 | Today 清單（跟截圖 s02 一樣的示範任務），靜止或微捲 4 秒 |
-| Mochi | b2 | Tap to check it off／點一下就完成 | 第 1 秒點「Water the plants」的小圓圈，錄到打勾動畫結束 |
-| Mochi | b3 | 101 cute themes／101 款可愛主題 | 點調色盤進 Skins，捲過 Pink 區，第 1.5 秒點「Mochi」主題 |
-| Mochi | b4 | Right on your Home Screen／直接放在主畫面 | 先在主畫面加好 Today 小工具，錄主畫面上的小工具 6 秒 |
-| BattAI | b1 | When will battery health hit 80%?／電池健康度哪天掉到 80%？ | Trends 分頁，慢慢捲到「Estimated time to 80%」那一列（鎖住的 Preview） |
-| BattAI | b2 | A health score, and what shapes it／電池健康分數，連評分依據都看得到 | Health：先停在 52/100 分數卡，再捲到「What shapes the score」 |
-| BattAI | b3 | A clear report for service or resale／送修、二手轉賣都用得上的電池報告 | More 分頁，點「Reports」，停在報告畫面 |
-| BattAI | b4 | Measured or estimated? Always labeled／實測還是推估都標示清楚 | Today 分頁，電量卡上的「Measured」標籤 |
-| Cyca | b1 | Where does your period data go?／你的經期資料都存到哪去了？ | Today（Good evening、Next period 8 days），靜止 4 秒 |
-| Cyca | b2 | No account. It stays on your phone／不用帳號，只存在你的手機 | 打開「Care for you」，捲到底部「Estimated from your cycle · On-device」 |
-| Cyca | b3 | Period & ovulation at a glance／經期、排卵日一眼看清 | Calendar 分頁，顯示經期、易孕期、排卵日的顏色圖例 |
-| Cyca | b4 | Your daily body forecast／每日身體預報 | 打開 Body Forecast |
+| Mochi | s02 | 鉤子、「點一下 完成」、「點完成超有感」 | Today 清單（跟截圖 s02 一樣的示範任務）；第 2 秒點「Water the plants」的圓圈，第 5 秒點「Morning stretch」 |
+| Mochi | s03 | 「換成可愛的」、「101 款療癒主題」 | 點調色盤進 Skins，第 1 秒點「Mochi」主題，之後慢慢捲過 Pink 區 |
+| Mochi | s04 | 「任務配上表情符號」 | 編輯任務畫面的 Emoji 區，第 2 秒點星星 |
+| Mochi | s01 | 「桌面一眼看到」 | 主畫面上的 Today 小工具（先加好），靜止 8 秒 |
+| BattAI | 01 | 鉤子、「實測、推估 標清楚」 | Today 分頁，電量卡上的 78% 與「Measured」標籤 |
+| BattAI | 02 | 「看你的電池健康分數」、「扣分原因 一次看懂」 | Health：先停在 52/100 分數卡 3 秒，再慢慢捲到「What shapes the score」 |
+| BattAI | 04 | 「預估何時掉到 80%」 | Trends 分頁，「Monthly capacity change」和鎖住的「Estimated time to 80%」 |
+| BattAI | 05 | 「報告不會上傳」、「無廣告 無追蹤」 | More 分頁，第 2 秒點「Reports」，返回後停在 Privacy |
+| Cyca | s01 | 鉤子、「8 天後 下次經期」 | Today（Next period 8 days、Predictions），靜止或微捲 |
+| Cyca | s03 | 「易孕期 一眼看清」 | Calendar 分頁，第 3 秒點 25 號 |
+| Cyca | s05 | 「沒有人。不用帳號」、「只留在你的 iPhone」 | 打開「Care for you」，捲到底部「Estimated from your cycle · On-device」 |
+| Cyca | s02 | 「每天的身體預報」 | 打開 Body Forecast，停在分數 46，再微捲到各項指標 |
+| Cyca | s06 | 「排出你的好日子」 | 打開 Smart Planner，停在「Best days for big plans」，再捲到 The weeks ahead |
 
+- 點擊時間以 `shorts/app_preview.json` 每個鏡頭的 `tap` 為準（那是鏡頭內的秒數）；錄影對不上也沒關係，對不上時把那個鏡頭的 `tap` 刪掉就好。
 - BattAI 的模擬器沒有電池，所以用 build 內建的示範資料集（跟截圖一樣是 1,448 筆、31 天）。如果用測試 iPhone 錄，就用 iPhone 的螢幕錄影功能，錄好轉成 1320×2868。
-- Mochi b4 錄的是主畫面上的小工具。小工具屬於 App 的一部分，但如果審核有意見，就改用 b2 的另一個角度代替。
+- Mochi s01 錄的是主畫面上的小工具。小工具屬於 App 的一部分，但如果審核有意見，就把那兩個鏡頭換成 s02。
 
 **轉檔、放進管線、出正式版（在 00_GrowthEngine/shorts）：**
 ```bash
 for f in ~/Desktop/preview_raw/*.mov; do
-  b=$(basename "$f" .mov); app=${b%%_*}; rest=${b#*_}; loc=${rest%_b*}; n=${b##*_}
+  b=$(basename "$f" .mov); app=${b%%_*}; rest=${b#*_}; loc=${rest%_*}; scr=${b##*_}
   mkdir -p public/recordings/$app/$loc
-  ffmpeg -y -i "$f" -vf "scale=1320:2868,fps=30" -c:v libx264 -crf 16 -pix_fmt yuv420p -an public/recordings/$app/$loc/$n.mp4
+  ffmpeg -y -i "$f" -vf "scale=1320:2868,fps=30" -c:v libx264 -crf 16 -pix_fmt yuv420p -an public/recordings/$app/$loc/$scr.mp4
 done
-node scripts/render_preview.mjs mochi battai cyca --final   # 每段都有錄影才會出片，沒有 DRAFT 字樣
+node scripts/render_preview.mjs mochi battai cyca --final   # 每個畫面都有錄影才會出片，沒有 DRAFT 字樣
 ```
-- 輸出在 `out-preview/<app>/<app>_<locale>_preview.mp4`，規格是 886×1920、30 fps、H.264 High@4.0、約 11 Mbps、AAC 256k 立體聲 48 kHz、20 秒。
+- 輸出在 `out-preview/<app>/<app>_<locale>_preview.mp4`，規格是 886×1920、30 fps、H.264 High@4.0、約 11 Mbps、AAC 256k 立體聲 48 kHz、15.5 秒。
 - 檢查 `out-preview/<app>/<app>_<locale>_poster.png`。這是第 1 秒的畫面，也就是建議的封面。
-- 標示框的座標會自動換算成完整螢幕的位置，但還是要用眼睛看一遍。對不準就在 `storyboards/<app>.json` 那一段的 `locales` 覆蓋。
+- 鏡頭焦點、標示框、計數的座標會自動換算成完整螢幕的位置，但還是要用眼睛看一遍（`--still` 會輸出幾張檢查用的畫格）。對不準就在 `app_preview.json` 那個鏡頭加語系覆蓋，例如 `"zh-Hant": {"ring": [...]}`。
 - 正式版給 Caitlyn 看過才上傳。
 
 ## 新 App：針孔偵測（58_Lensafe，2026-10-14 新增）

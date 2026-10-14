@@ -32,6 +32,13 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
 >    - **Android 也上線了：** App 在 `_engine/geo/data/android_live_snapshot.json` 裡（已上 Google Play）的，YouTube 說明欄除了 App Store 連結也放該檔的 `play_url`（加 `&referrer=utm_source%3Dlumi_social%26utm_campaign%3Dh7_<app>_<語言>_yt`）。
 > 5. **補素材給雲端：** 下面這些 App 在 `social/assets/` 沒有截圖，雲端做不了它們的鉤子片。請把每款 App Store 上的 iPhone 6.9 吋截圖（1320×2868 或 1290×2796）照 `01.png`、`02.png`… 的格式放進 `social/assets/<key>/`，commit 並 push，雲端就會接著寫分鏡：claudeusagemini（最優先）、countdaysnow、studydown、stayclock、savetag、shotinbox、picclear、qrcodehalo、battai、dbhalo、zipbox、sononote、cvdesk、ledmovingtext、lumibopomofo、lumibopomofopro、lumiletterspro、lumimathpro、lumimissionpro、snapport、moneytag。
 
+> **2026-10-14 最優先：打開 In-App Events 送審（Caitlyn 明確指示「打開 In-App Events 送審」）。** 雲端已寫好修改，但雲端無法執行閘門測試。
+> 1. `cd ~/00_GrowthEngine && git pull`
+> 2. 套用修改：`git apply lib/proposals/2026-10-14-iae-seasonal-submission.patch`。內容：只允許名稱以 `S26-` 開頭的季節活動送審；送出前逐筆回讀 ASC，送審單裡只要有一筆不是季節活動就拒絕，所以舊的每日型草稿和 Cyca 的殘留項目永遠送不出去；MARKETING 期限延到 2027-04-30。
+> 3. 跑 `python3 -m pytest -q lib/test_asc_write_authorization.py`；要補測試就補。
+> 4. 全綠才 commit 並 push，再到 GitHub 手動跑 `iae-cycle.yml` 一次。
+> 5. 回報。
+
 > **2026-10-14 最優先：送 Apple 精選提名（Caitlyn 明確要求現在送）。** 這是提名，不是改 App，也不是改商店文字，不受「暫不改 ASC」限制。
 > 1. 內容在 `.github/growth/drafts/apple-featuring-nominations.json`，共 6 款：CountDaysNow、LED Moving Text、Stay Clock、Snapport Lite、Mochi、Mochi DoneStamp。文字已對過商品頁，不要改寫內容。
 > 2. 用本機的 ASC API 金鑰，每款建一筆 nomination：`POST /v1/nominations`。

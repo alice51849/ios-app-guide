@@ -7,6 +7,77 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
 - 副標與關鍵字只要經過一個以上模型驗證，就直接改 ASC。
 - UsageNow 的標題也授權改。
 
+## App Preview 實錄：Mochi、BattAI、Cyca（2026-10-14 新增）
+
+> **這段只錄影、不碰 ASC。** 上傳和建立 PPO 測試要等 Caitlyn 看過樣片並核准，步驟在 `.github/growth/drafts/app-preview-ppo/plan.md`。
+
+**為什麼要實錄：**
+- App Review 2.3.4 寫明 App Preview「只能使用 App 本身的螢幕錄影」，可以加旁白與文字覆蓋。
+- 雲端做的樣片是拿 App Store 截圖加平移與標示框，只能給 Caitlyn 看節奏和字卡，**不能上傳**。
+- 樣片右上角有「DRAFT／草稿」字樣。
+
+**模擬器與錄影設定（每款、每語言都一樣）：**
+1. 機型用 6.9 吋（畫面 1320×2868）：`xcrun simctl list devices available | grep "Pro Max"`，選 iPhone 17 Pro Max（沒有就 16 Pro Max）。
+2. 開機並統一狀態列：
+   ```bash
+   xcrun simctl boot "iPhone 17 Pro Max"; open -a Simulator
+   xcrun simctl ui booted appearance light
+   xcrun simctl status_bar booted override --time "9:41" --dataNetwork wifi --wifiMode active --wifiBars 3 --cellularMode active --cellularBars 4 --batteryState charged --batteryLevel 100
+   ```
+3. 安裝現行上架版的程式碼：
+   - 資料夾用 `python3 -c "import sys; sys.path.insert(0,'$HOME/00_GrowthEngine/lib'); from app_dirs import app_dir; print(app_dir('Mochi'))"` 找，BattAI、Cyca 同理；
+   - Bundle ID 用 `xcodebuild -showBuildSettings | grep PRODUCT_BUNDLE_IDENTIFIER` 查；
+   - 只 build 到模擬器，不改程式、不送審：`xcodebuild -scheme <Scheme> -destination 'platform=iOS Simulator,name=iPhone 17 Pro Max' -derivedDataPath /tmp/pv-dd build`，然後 `xcrun simctl install booted /tmp/pv-dd/Build/Products/Debug-iphonesimulator/<App>.app`。
+4. 語言：每次啟動時指定，不動系統設定。
+   - 英文：`xcrun simctl launch --terminate-running-process booted <bundle-id> -AppleLanguages "(en)" -AppleLocale en_US`
+   - 繁中：`xcrun simctl launch --terminate-running-process booted <bundle-id> -AppleLanguages "(zh-Hant)" -AppleLocale zh_TW`
+5. 示範資料：
+   - 跟商店截圖用同一套示範資料。產生 `*_home_unlocked.png` 那套截圖流程的啟動參數或 StoreKit 測試設定都可以用；
+   - 不要用任何真人的資料（Cyca 的經期、BattAI 的電池紀錄都一樣）；
+   - 需要內購才看得到的畫面，用 Xcode 的 StoreKit Configuration 在模擬器解鎖。樣片結尾卡已經寫了內購揭露。
+6. 每一段單獨錄一個檔，先擺好畫面再開始錄，按 Ctrl-C 停：
+   ```bash
+   mkdir -p ~/Desktop/preview_raw
+   xcrun simctl io booted recordVideo --codec=h264 --force ~/Desktop/preview_raw/<app>_<locale>_b<N>.mov
+   ```
+   - b1（鉤子）錄 **4 秒**，b2–b4 各錄 **6 秒**。成片只用 3 秒和 4.5 秒，多錄的部分當緩衝。
+   - 不要出現手指、鍵盤或滑鼠游標，也不要出現模擬器外框。`recordVideo` 本來就只錄畫面。
+   - 點擊動作放在開錄後約 1–1.5 秒。
+
+**要錄的畫面（每款 en 和 zh-Hant 各錄一套，共 3 款 × 2 語 × 4 段 = 24 段）：**
+
+| App | 段 | 字卡（取自分鏡） | 錄什麼 |
+|---|---|---|---|
+| Mochi | b1 | Your to-do list, but make it cute／待辦清單也可以這麼可愛 | Today 清單（跟截圖 s02 一樣的示範任務），靜止或微捲 4 秒 |
+| Mochi | b2 | Tap to check it off／點一下就完成 | 第 1 秒點「Water the plants」的小圓圈，錄到打勾動畫結束 |
+| Mochi | b3 | 101 cute themes／101 款可愛主題 | 點調色盤進 Skins，捲過 Pink 區，第 1.5 秒點「Mochi」主題 |
+| Mochi | b4 | Right on your Home Screen／直接放在主畫面 | 先在主畫面加好 Today 小工具，錄主畫面上的小工具 6 秒 |
+| BattAI | b1 | When will battery health hit 80%?／電池健康度哪天掉到 80%？ | Trends 分頁，慢慢捲到「Estimated time to 80%」那一列（鎖住的 Preview） |
+| BattAI | b2 | A health score, and what shapes it／電池健康分數，連評分依據都看得到 | Health：先停在 52/100 分數卡，再捲到「What shapes the score」 |
+| BattAI | b3 | A clear report for service or resale／送修、二手轉賣都用得上的電池報告 | More 分頁，點「Reports」，停在報告畫面 |
+| BattAI | b4 | Measured or estimated? Always labeled／實測還是推估都標示清楚 | Today 分頁，電量卡上的「Measured」標籤 |
+| Cyca | b1 | Where does your period data go?／你的經期資料都存到哪去了？ | Today（Good evening、Next period 8 days），靜止 4 秒 |
+| Cyca | b2 | No account. It stays on your phone／不用帳號，只存在你的手機 | 打開「Care for you」，捲到底部「Estimated from your cycle · On-device」 |
+| Cyca | b3 | Period & ovulation at a glance／經期、排卵日一眼看清 | Calendar 分頁，顯示經期、易孕期、排卵日的顏色圖例 |
+| Cyca | b4 | Your daily body forecast／每日身體預報 | 打開 Body Forecast |
+
+- BattAI 的模擬器沒有電池，所以用 build 內建的示範資料集（跟截圖一樣是 1,448 筆、31 天）。如果用測試 iPhone 錄，就用 iPhone 的螢幕錄影功能，錄好轉成 1320×2868。
+- Mochi b4 錄的是主畫面上的小工具。小工具屬於 App 的一部分，但如果審核有意見，就改用 b2 的另一個角度代替。
+
+**轉檔、放進管線、出正式版（在 00_GrowthEngine/shorts）：**
+```bash
+for f in ~/Desktop/preview_raw/*.mov; do
+  b=$(basename "$f" .mov); app=${b%%_*}; rest=${b#*_}; loc=${rest%_b*}; n=${b##*_}
+  mkdir -p public/recordings/$app/$loc
+  ffmpeg -y -i "$f" -vf "scale=1320:2868,fps=30" -c:v libx264 -crf 16 -pix_fmt yuv420p -an public/recordings/$app/$loc/$n.mp4
+done
+node scripts/render_preview.mjs mochi battai cyca --final   # 每段都有錄影才會出片，沒有 DRAFT 字樣
+```
+- 輸出在 `out-preview/<app>/<app>_<locale>_preview.mp4`，規格是 886×1920、30 fps、H.264 High@4.0、約 11 Mbps、AAC 256k 立體聲 48 kHz、20 秒。
+- 檢查 `out-preview/<app>/<app>_<locale>_poster.png`。這是第 1 秒的畫面，也就是建議的封面。
+- 標示框的座標會自動換算成完整螢幕的位置，但還是要用眼睛看一遍。對不準就在 `storyboards/<app>.json` 那一段的 `locales` 覆蓋。
+- 正式版給 Caitlyn 看過才上傳。
+
 ## 新 App：針孔偵測（58_Lensafe，2026-10-14 新增）
 
 > 規格：`.github/growth/drafts/new-app-hidden-camera/spec.md`（先 `git pull`）。店主已經決定好的事項：

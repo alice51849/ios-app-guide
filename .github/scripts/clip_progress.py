@@ -43,10 +43,13 @@ MANUAL_CHANNELS = [
 ]
 # Platforms another repo posts from social_extra.py's feed (social-feed branch),
 # because those accounts' secrets live there; their posts are not logged here.
-# Bluesky/Mastodon follow threads-autopilot's MULTI_PLATFORMS stop-loss switch;
-# YouTube follows the Mac's YT_HOOK_SHORTS switch (video-channel stop-loss: off).
-SERVED_ELSEWHERE = {"bluesky": "自動（threads-autopilot）", "youtube": "自動（Mac，停損鎖）"}
-SERVED_ROWS = [("Mastodon", "自動（threads-autopilot）")]
+# Bluesky and YouTube Shorts are back on since the owner's 2026-10-14 decision
+# (threads-autopilot channels_enabled.json / 00_GrowthEngine shorts/channels_enabled.json;
+# a repo variable set to "off" still stops them). The Mac's YouTube uploads come in
+# through youtube_links.py (clip-replan.yml), so their links show per clip.
+# Mastodon stays locked (account suspended, stop-loss).
+SERVED_ELSEWHERE = {"bluesky": "自動（threads-autopilot，精選每天 ≤5 則）", "youtube": "自動（Mac，每天 ≤2 支）"}
+SERVED_ROWS = [("Mastodon", "停權冷卻（鎖定）")]
 # Platforms posted by social_extra.py (social-extra.yml): "未設定" until the first post.
 EXTRA_CHANNELS = {"facebook": ("Facebook", "FB"), "bluesky": ("Bluesky", "Bs"), "youtube": ("YouTube Shorts", "YT"),
                   "pinterest": ("Pinterest", "Pin"), "tumblr": ("Tumblr", "Tb"), "naver": ("Naver Blog", "Nv"),

@@ -209,6 +209,77 @@ class ServedElsewhereTest(unittest.TestCase):
             self.assertTrue(S.configured("bluesky"))
         self.assertNotIn("mastodon", S.CHANNELS)
 
+    def test_youtube_is_left_to_the_mac_unless_forced(self):
+        with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.object(S, "http") as h, \
+                mock.patch.object(P, "record_post") as rec, mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            self.assertFalse(S.configured("youtube"))
+            S.run(("youtube",), DAY, 1, data=DATA)
+        h.assert_not_called()
+        rec.assert_not_called()
+        self.assertIn("served by 00_GrowthEngine hook-shorts-youtube.yml", out.getvalue())
+        self.assertIn("FORCE_GUIDE_YOUTUBE=1", out.getvalue())
+        with mock.patch.dict(os.environ, dict(ENV_ALL, FORCE_GUIDE_YOUTUBE="1"), clear=True):
+            self.assertTrue(S.configured("youtube"))
+            self.assertFalse(S.configured("bluesky"))  # one override never releases the other channel
+
+    def test_youtube_uses_a_known_winner_instead_of_the_problem_line(self):
+        with mock.patch.object(S.SC, "winners", return_value={}):
+            it = S.clip_item("u/en", dict(search_clip(), hook_best="b"), "youtube", DAY)
+            self.assertEqual(it["variant"], "b")
+            it = S.clip_item("u/en", search_clip(), "youtube", DAY)
+            self.assertEqual(it["variant"], "a")
+
+    def test_export_pool_ranks_boost_apps_first_with_search_fields(self):
+        data = {"clips": {"a/en": search_clip("a", "en"), "b/en": search_clip("b", "en"),
+                          "b/ja": search_clip("b", "ja"), "c/en": dict(clip("c", "en"), url="")},
+                "schedule": []}
+        perf = {"boost": ["b"]}
+        with mock.patch.object(S, "exists", return_value=True), mock.patch.object(S.SC, "winners", return_value={}):
+            feed = S.export(DAY, data=data, perf=perf)
+        self.assertEqual(set(feed["pool"]), {"bluesky", "youtube"})
+        self.assertEqual([i["key"] for i in feed["pool"]["youtube"]], ["b/en", "b/ja", "a/en"])  # c has no video
+        top = feed["pool"]["youtube"][0]
+        self.assertEqual(top["boost_rank"], 1)
+        self.assertEqual(top["youtube"]["title"], "Hit your AI limit mid-task again? | UsageNow #Shorts")  # problem first
+        self.assertEqual(top["variant"], "a")
+        self.assertLessEqual(len(top["youtube"]["title"]), 100)
+        self.assertIn("ct=h7_b_en_yt", top["store"])
+        self.assertIn("quota · reset · countdown", top["youtube"]["description"])
+        self.assertEqual(top["youtube"]["tags"][:3], ["quota", "reset", "countdown"])
+        bs = feed["pool"]["bluesky"][-1]
+        self.assertNotIn("boost_rank", bs)
+        self.assertTrue(bs["alt"] and bs["variant"] and bs["keywords"])
+        self.assertIn("_bs", bs["store"])
+        self.assertEqual(feed["performance"], perf)
+        json.dumps(feed)
+
+
+class YoutubeLinksTest(unittest.TestCase):
+    def test_mac_uploads_join_the_post_log_once_and_show_on_the_page(self):
+        import youtube_links as YL
+        posted = {"posted": {
+            "a/en": {"at": "2026-10-15T12:20:00Z", "videoId": "abcDEF12345", "url": "https://youtube.com/shorts/abcDEF12345"},
+            "b/en": {"at": "2026-10-15T18:20:00Z", "videoId": "x", "url": "https://evil.example/x"},
+            "bad": {"at": "2026-10-15T18:20:00Z", "url": "https://youtube.com/shorts/abcDEF12345"}}}
+        log = {"posts": [{"channel": "instagram", "clip": "a/en", "link": "https://ig/1", "posted_at": "2026-10-15T01:20:00Z"}]}
+        self.assertEqual(YL.merge(posted, log), 1)
+        self.assertEqual(YL.merge(posted, log), 0)  # never twice
+        yt = [p for p in log["posts"] if p["channel"] == "youtube"]
+        self.assertEqual(yt, [{"channel": "youtube", "clip": "a/en", "link": "https://youtube.com/shorts/abcDEF12345",
+                               "posted_at": "2026-10-15T12:20:00Z", "id": "abcDEF12345"}])
+        clips = {"clips": {"a/en": clip("a", "en")}, "schedule": []}
+        section = P.build_section(clips, log["posts"], {}, dt.datetime(2026, 10, 16, 1, tzinfo=dt.timezone.utc))
+        self.assertIn("[YT](https://youtube.com/shorts/abcDEF12345)", section)
+        self.assertIn("| YouTube Shorts | 自動 | 1 | — |", section)
+
+    def test_missing_upload_log_leaves_the_page_alone(self):
+        import youtube_links as YL
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(P, "POSTS", Path(tmp) / "posts.json"), \
+                mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            self.assertEqual(YL.main(["--posted", str(Path(tmp) / "missing.json")]), 0)
+            self.assertFalse((Path(tmp) / "posts.json").exists())
+        self.assertIn("unreadable", out.getvalue())
+
     def test_export_lists_the_days_items_per_consumer_channel(self):
         with mock.patch.object(S, "exists", return_value=True):
             feed = S.export(dt.date(2026, 11, 1), data={"clips": DATA["clips"], "schedule": [
@@ -502,9 +573,9 @@ class PageTest(unittest.TestCase):
         now = dt.datetime(2026, 10, 15, 2, tzinfo=dt.timezone.utc)
         section = P.build_section(clips, [], {}, now)
         self.assertIn("| Facebook | 未設定 | — | — |", section)
-        self.assertIn("| Bluesky | 自動（threads-autopilot） | — | — |", section)
-        self.assertIn("| Mastodon | 自動（threads-autopilot） | — | — |", section)
-        self.assertIn("| YouTube Shorts | 自動（Mac，停損鎖） |", section)
+        self.assertIn("| Bluesky | 自動（threads-autopilot，精選每天 ≤5 則） | — | — |", section)
+        self.assertIn("| Mastodon | 停權冷卻（鎖定） | — | — |", section)
+        self.assertIn("| YouTube Shorts | 自動（Mac，每天 ≤2 支） |", section)
         posts = [{"channel": "bluesky", "clip": "a/en", "link": "https://bsky.app/p/1", "posted_at": "2026-10-15T01:50:00Z"}]
         section = P.build_section(clips, posts, {}, now)
         self.assertIn("| Bluesky | 自動 | 1 | — |", section)

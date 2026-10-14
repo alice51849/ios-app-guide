@@ -22,8 +22,12 @@ Bluesky and Mastodon are posted by the threads-autopilot repo (media.yml),
 where those accounts' secrets live: it reads the day's items from the
 social-feed branch that `export` writes (feed.json). So this script skips
 Bluesky unless FORCE_GUIDE_BLUESKY=1, and a Bluesky secret added here later
-never double-posts. YouTube Shorts of the clips can also come from the Mac
-(00_GrowthEngine hook-shorts-youtube.yml, off by default), reading the same feed.
+never double-posts. YouTube Shorts of the clips come from the Mac
+(00_GrowthEngine hook-shorts-youtube.yml, back on since the owner's 2026-10-14
+decision), reading the same feed, so this script skips YouTube too unless
+FORCE_GUIDE_YOUTUBE=1. Besides the day's items, `export` lists a `pool` of every
+uploaded clip for Bluesky and YouTube (performance boost apps first) and the
+performance summary, so those posters can pick the best clip not yet posted.
 
     python3 social_extra.py post --slot 1 [--channel bluesky] [--dry-run]
     python3 social_extra.py whoami [--channel facebook]
@@ -76,9 +80,12 @@ PLAN = {
     # Export only (not in CHANNELS): posted by threads-autopilot from feed.json.
     "mastodon": {"cap": 2, "clips": True, "cards": True},
 }
-# Served by another repo from feed.json; this script never posts them unless forced.
-SERVED_ELSEWHERE = {"bluesky": "threads-autopilot media.yml"}
+# Served by another repo from feed.json; this script never posts them unless forced
+# (FORCE_GUIDE_BLUESKY=1 / FORCE_GUIDE_YOUTUBE=1), so nothing is ever double-posted.
+SERVED_ELSEWHERE = {"bluesky": "threads-autopilot media.yml", "youtube": "00_GrowthEngine hook-shorts-youtube.yml"}
 EXPORT_CHANNELS = ("bluesky", "mastodon", "youtube")
+# Channels whose poster picks from the whole clip library (feed["pool"]), not only the day's schedule.
+POOL_CHANNELS = ("bluesky", "youtube")
 FEED_SCHEMA = "lumi.social-feed/v1"
 SECRETS = {
     "facebook": ("FB_PAGE_ID", "FB_PAGE_TOKEN"),
@@ -100,12 +107,13 @@ def env(name):
 
 
 def served_elsewhere(channel):
-    return channel in SERVED_ELSEWHERE and env("FORCE_GUIDE_BLUESKY") != "1"
+    return channel in SERVED_ELSEWHERE and env(f"FORCE_GUIDE_{channel.upper()}") != "1"
 
 
 def not_configured(channel):
     if served_elsewhere(channel):
-        return f"{channel}: not configured here (served by {SERVED_ELSEWHERE[channel]}; FORCE_GUIDE_BLUESKY=1 overrides)"
+        return (f"{channel}: not configured here (served by {SERVED_ELSEWHERE[channel]}; "
+                f"FORCE_GUIDE_{channel.upper()}=1 overrides)")
     return f"{channel}: not configured ({', '.join(SECRETS[channel])})"
 
 
@@ -219,11 +227,23 @@ def load_posts():
     return clip_progress.load_json(clip_progress.POSTS, {}).get("posts", [])
 
 
+def variant_for(clip, channel, day):
+    """The day's hook variant. A YouTube Short is found through search, where hook slogans got no views
+    (00_GrowthEngine social/reports/youtube_performance.md), so it leads with the problem line (variant a)
+    unless the performance loop already knows a winner; the other platforms rotate (search_caption.choose)."""
+    if channel != "youtube":
+        return SC.choose(clip, channel, day)
+    hooks = SC.variants(clip)
+    by_id = {h["id"]: h for h in hooks}
+    best = clip.get("hook_best") or SC.winner(SC.winners(), f"{clip.get('app')}/{clip.get('locale')}", clip.get("locale"))
+    return by_id.get(best) or by_id.get("a") or hooks[0]
+
+
 def clip_item(key, clip, channel, day=None):
     """One clip for one platform: search-first caption, keyword title / alt text, the day's hook variant."""
     ct = CT[channel]
     t = clip_posts.text_for(clip["locale"])
-    v = SC.choose(clip, channel, day or SC.today())
+    v = variant_for(clip, channel, day or SC.today())
     return {"kind": "clip", "key": key, "locale": clip["locale"], "app": clip["app"], "video": clip["url"],
             "hook": v["lead"], "name": clip["name"], "title": SC.pin_title(clip, v), "tags": SC.tags(clip, 10),
             "caption": clip_posts.caption(clip, channel, v), "button": t["button"], "variant": v["id"],
@@ -865,12 +885,37 @@ def public(item, channel):
     return out
 
 
-def export(day, check=True, data=None):
-    """The day's clip and card items per EXPORT_CHANNELS, unfiltered by any post log.
+def performance_summary(path=SC.PERFORMANCE):
+    """What the performance loop knows (performance.json), as plain feed data; {} before any insights."""
+    perf = SC._load(path, {})
+    return {k: perf[k] for k in ("boost", "demote", "hook_winners", "best_hours", "updated_at") if perf.get(k)}
+
+
+def pool(data, channel, day, perf=None):
+    """Every uploaded clip as a ready item for `channel` (search-first caption, the day's hook variant),
+    performance boost apps first, then clips.json order; unfiltered by any post log."""
+    boost = [a for a in (perf or {}).get("boost") or [] if isinstance(a, str)]
+    rank = {app: i for i, app in enumerate(boost)}
+    clips = [(k, c) for k, c in (data.get("clips") or {}).items() if c.get("url") and c.get("store_url")]
+    order = sorted(range(len(clips)), key=lambda i: (rank.get(clips[i][1].get("app"), len(rank)), i))
+    out = []
+    for i in order:
+        key, clip = clips[i]
+        item = public(clip_item(key, clip, channel, day), channel)
+        if clip.get("app") in rank:
+            item["boost_rank"] = rank[clip["app"]] + 1
+        out.append(item)
+    return out
+
+
+def export(day, check=True, data=None, perf=None):
+    """The day's clip and card items per EXPORT_CHANNELS, unfiltered by any post log, plus the
+    clip pool for POOL_CHANNELS and the performance summary.
 
     Consumers keep their own dedup and caps; clips come in clips.json order for
     slot 1 then slot 15 (Instagram entry first), cards only once published."""
     data = data if data is not None else clip_posts.load()
+    perf = performance_summary() if perf is None else perf
     items = {}
     for ch in EXPORT_CHANNELS:
         out = []
@@ -881,7 +926,8 @@ def export(day, check=True, data=None):
             out += [c for c in todays_cards(day, ch) if not check or exists(c["image"])]
         items[ch] = out
     return {"schema": FEED_SCHEMA, "date": day.isoformat(),
-            "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "items": items}
+            "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "items": items,
+            "pool": {ch: pool(data, ch, day, perf) for ch in POOL_CHANNELS}, "performance": perf}
 
 
 def main(argv=None):

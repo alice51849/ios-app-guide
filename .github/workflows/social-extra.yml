@@ -25,9 +25,11 @@ name: Social extra daily
 #                  PLURK_TOKEN_SECRET                  (zh-Hant only, ≤2/day)
 #   Dailymotion    DM_API_KEY, DM_API_SECRET, DM_USERNAME, DM_PASSWORD (1/day)
 #                  (paid per post: 1/day)
-# Bluesky is posted by threads-autopilot (media.yml) from this run's feed.json
-# on the social-feed branch; social_extra.py skips it here unless the env
-# FORCE_GUIDE_BLUESKY=1 is set, so adding BSKY_* secrets here cannot double-post.
+# Bluesky is posted by threads-autopilot (media.yml) and YouTube Shorts by the
+# Mac (00_GrowthEngine hook-shorts-youtube.yml), both from this run's feed.json
+# on the social-feed branch (the day's items plus a ranked clip pool);
+# social_extra.py skips them here unless FORCE_GUIDE_BLUESKY=1 /
+# FORCE_GUIDE_YOUTUBE=1 is set, so secrets added here cannot double-post.
 # Manual run: mode=whoami checks every configured account without posting;
 # dry_run=true prints what would go out.
 on:

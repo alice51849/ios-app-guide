@@ -32,6 +32,14 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
 >    - **Android 也上線了：** App 在 `_engine/geo/data/android_live_snapshot.json` 裡（已上 Google Play）的，YouTube 說明欄除了 App Store 連結也放該檔的 `play_url`（加 `&referrer=utm_source%3Dlumi_social%26utm_campaign%3Dh7_<app>_<語言>_yt`）。
 > 5. **補素材給雲端：** 下面這些 App 在 `social/assets/` 沒有截圖，雲端做不了它們的鉤子片。請把每款 App Store 上的 iPhone 6.9 吋截圖（1320×2868 或 1290×2796）照 `01.png`、`02.png`… 的格式放進 `social/assets/<key>/`，commit 並 push，雲端就會接著寫分鏡：claudeusagemini（最優先）、countdaysnow、studydown、stayclock、savetag、shotinbox、picclear、qrcodehalo、battai、dbhalo、zipbox、sononote、cvdesk、ledmovingtext、lumibopomofo、lumibopomofopro、lumiletterspro、lumimathpro、lumimissionpro、snapport、moneytag。
 
+> **2026-10-14 最優先：送 Apple 精選提名（Caitlyn 明確要求現在送）。** 這是提名，不是改 App，也不是改商店文字，不受「暫不改 ASC」限制。
+> 1. 內容在 `.github/growth/drafts/apple-featuring-nominations.json`，共 6 款：CountDaysNow、LED Moving Text、Stay Clock、Snapport Lite、Mochi、Mochi DoneStamp。文字已對過商品頁，不要改寫內容。
+> 2. 用本機的 ASC API 金鑰，每款建一筆 nomination：`POST /v1/nominations`。
+>    - attributes：`name`、`type`、`description`、`publishStartDate`、`publishEndDate`、`deviceFamilies`、`supplementalMaterialsUris`（= supplemental_urls）、`hasInAppEvents: false`、`launchInSelectMarketsFirst: false`、`submitted: true`。
+>    - relationships：`relatedApps`（= app_store_id）、`supportedTerritories`（= territories）。
+> 3. API 不支援或回錯誤：改用 App Store Connect 網頁（Apps → 該 App → 「精選／Featuring」→「提名」→「+」），照檔案逐欄貼上。
+> 4. 回報每款的 nomination id 與狀態。
+
 > **2026-10-14 新增：LED Moving Text 鉤子片重拍（Caitlyn 嫌太醜）。** 商店截圖都是單色字，影片做不出繽紛感，所以改用模擬器實拍。
 > 1. 在模擬器開 LED Moving Text（解鎖完整功能），做 5–6 個彩色看板：
 >    - 彩虹字、漸層字。

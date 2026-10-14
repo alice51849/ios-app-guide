@@ -1,0 +1,84 @@
+{
+  "note": "Apple featuring nominations (App Store Connect > Featuring > Nominations, or App Store Connect API POST /v1/nominations). Facts only from each app's live US product page (checked 2026-10-14). Submit at least 2 weeks before publishStartDate; earlier is better. Nothing here is guaranteed: Apple's editors decide.",
+  "developer_story": "Lumi Studio is a one-person studio in Taiwan that builds focused utilities for everyday moments, each designed on-device first: no accounts, no ads and no tracking in these apps, and every app localized for dozens of App Store languages with in-app language switching.",
+  "nominations": [
+    {
+      "app_key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Countdown Plan for exam season",
+      "type": "APP_ENHANCEMENTS",
+      "publishStartDate": "2026-11-01",
+      "publishEndDate": "2026-11-19",
+      "territories": ["KOR", "TWN", "JPN", "USA"],
+      "deviceFamilies": ["IPHONE", "IPAD"],
+      "description": "Countdown Plan turns a countdown into a preparation schedule. Any event gets its own steps, each due a set number of days before the date, and one view shows what is late, due today, due in the next 7 days and done across every event. Move the date and every step moves with it. For students counting down to Korea's CSAT on November 19 and other exams, it means the last weeks are planned, not just counted. Ahead, Today and Since views give precise day counts, with a date calculator, categories, archive, reminders and Calendar. Countdown Plan is free, runs on-device and needs no account; the app has no ads and no subscription, with one purchase unlocking everything.",
+      "supplemental_urls": ["https://apps.apple.com/app/id6807079789"],
+      "why_now": "수능 2026-11-19; Taiwan's GSAT 100-day countdown falls in late October."
+    },
+    {
+      "app_key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "name": "LED Moving Text: signs for concert season and arrivals",
+      "type": "APP_ENHANCEMENTS",
+      "publishStartDate": "2026-11-01",
+      "publishEndDate": "2026-12-31",
+      "territories": ["TWN", "JPN", "KOR", "THA", "USA"],
+      "deviceFamilies": ["IPHONE", "IPAD"],
+      "description": "Type a message, hold up your phone, and people read it from the back of a crowd. LED Moving Text opens straight onto a live canvas where the preview is the editor: words, speed, size and color change as you adjust them, then one tap goes full screen with swipe for speed and direction, pinch to resize and sideways letters for maximum height. New Cue Flow puts one message per line and steps through them live or on a 2–20 second timer, so event crews, speakers and queues can run a prepared sequence. It is made for moments when a voice will not carry: cheering at a concert without shouting yourself hoarse, meeting someone at arrivals, a pickup sign at the kerb. Unlimited typing, full-screen display and all 108 text colors are free.",
+      "supplemental_urls": ["https://apps.apple.com/app/id6806639602"],
+      "why_now": "Year-end concert and countdown-event season; holiday airport arrivals."
+    },
+    {
+      "app_key": "stayclock",
+      "app_store_id": "6814035888",
+      "name": "Stay Clock: give a spare iPad a second life as a desk clock",
+      "type": "APP_ENHANCEMENTS",
+      "publishStartDate": "2026-11-20",
+      "publishEndDate": "2026-12-31",
+      "territories": ["USA", "JPN", "DEU", "TWN", "GBR"],
+      "deviceFamilies": ["IPHONE", "IPAD", "APPLE_WATCH"],
+      "description": "Stay Clock turns an iPhone or iPad into an always-on desk clock readable from across the room, and one chosen face follows you to StandBy, the Lock Screen, Home Screen widgets and Apple Watch, looking the same on each. Keep Awake understands charging: stay on while charging, always on with a battery floor, or follow the system. Panel Care protects OLED screens with gentle pixel shifting, softened idle details and a dim red night face on true black for the bedroom. Each face can show no calendar, the date and weekday, or a full month. Switch the app language instantly, pick any city or time zone, and choose 12 or 24 hour time. A quiet way to put a spare iPad from the drawer back on the desk during the holidays.",
+      "supplemental_urls": ["https://apps.apple.com/app/id6814035888"],
+      "why_now": "Holiday season: new devices arrive, older iPads get repurposed."
+    },
+    {
+      "app_key": "snapportlite",
+      "app_store_id": "6792856304",
+      "name": "Snapport Lite: exact-size ID photos on-device before holiday travel",
+      "type": "APP_ENHANCEMENTS",
+      "publishStartDate": "2026-11-15",
+      "publishEndDate": "2027-01-31",
+      "territories": ["TWN", "JPN", "IDN", "VNM", "USA", "CZE"],
+      "deviceFamilies": ["IPHONE", "IPAD"],
+      "description": "Snapport Lite crops a portrait to the exact photo size you choose, entirely on your device. Pick from 35 built-in presets for 28 countries and regions, including 2×2 in, 35×45 mm, 33×48 mm and 50×70 mm, or set a custom size in mm, inches or pixels with your own DPI. On-device face detection draws head-top, eye-line and chin guides; pinch, drag and rotate to fine-tune; keep the background or switch to white, light gray, blue, red or a custom color. Every preset and tool is free to use and the first export is included; a one-time purchase unlocks unlimited exports. No subscription, no ads, no tracking, no account. The app only edits the photo: documents are issued solely by the authority you apply to.",
+      "supplemental_urls": ["https://apps.apple.com/app/id6792856304"],
+      "why_now": "Passport and visa renewals ahead of year-end and Lunar New Year travel."
+    },
+    {
+      "app_key": "mochi",
+      "app_store_id": "6785004775",
+      "name": "Mochi: a cozy checklist for fresh-start planning",
+      "type": "APP_ENHANCEMENTS",
+      "publishStartDate": "2026-12-26",
+      "publishEndDate": "2027-01-15",
+      "territories": ["USA", "BRA", "DEU", "GBR", "AUS", "FRA", "ITA", "JPN"],
+      "deviceFamilies": ["IPHONE", "IPAD", "APPLE_WATCH"],
+      "description": "Mochi is a cute, cozy to-do list that makes getting organized feel good: add tasks, tap the little circle when you finish, and enjoy a small moment of calm. Plan school, work, errands, groceries, habits and daily goals in one place, keep important tasks on the Home Screen with widgets, and check the list from Apple Watch. 101 crafted themes (5 free) and 11 emoji sets let people make the list their own. Mochi already finds its audience across the US, Brazil, Germany, Australia, the UK, France and Italy, and the new-year moment is when people look for a softer way to plan. The free version includes 2 lists with up to 4 tasks each; Premium unlocks unlimited lists and tasks and all themes.",
+      "supplemental_urls": ["https://apps.apple.com/app/id6785004775"],
+      "why_now": "New-year planning and resolutions."
+    },
+    {
+      "app_key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "name": "Mochi DoneStamp: remember the last time, for a new-year reset",
+      "type": "APP_ENHANCEMENTS",
+      "publishStartDate": "2027-01-01",
+      "publishEndDate": "2027-01-31",
+      "territories": ["USA", "JPN", "TWN", "GBR", "DEU"],
+      "deviceFamilies": ["IPHONE", "IPAD"],
+      "description": "When did you last change the sheets, water a plant, call family or replace a filter? Mochi DoneStamp is a life-event memory, not another to-do list: tap once when something is done and the exact time joins a calm history. Optional rhythms from minutes to years always restart from when you actually finished. Interactive Home and Lock Screen widgets, Siri and Shortcuts, local reminders with Done and Snooze, backdating and editing, interval insights, full backup and JSON export. Built for everyone with VoiceOver, Dynamic Type, right-to-left layouts, Light and Dark Mode and iPad. Start free with one active event and unlimited history; Lifetime Pro is a one-time unlock. No account, no ads, no analytics, no tracking, no subscription.",
+      "supplemental_urls": ["https://apps.apple.com/app/id6790800323"],
+      "why_now": "January home and routine resets."
+    }
+  ]
+}

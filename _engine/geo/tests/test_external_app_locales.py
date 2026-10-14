@@ -192,9 +192,11 @@ class ExternalAppLocaleTests(unittest.TestCase):
                         self.assertIn('hreflang="x-default"', content)
                         if locale == "sk":
                             self.assertIn("<h2>Hlavné funkcie</h2>", content)
-                            self.assertIn("<h2>Časté otázky</h2>", content)
                             self.assertIn("<h2>Stiahnuť</h2>", content)
-                            self.assertIn('"@type": "FAQPage"', content)
+                        if key not in pages.FAQ_OVERRIDES:
+                            # Keyword-template FAQs ("best app for X …
+                            # is a great choice") are retired.
+                            self.assertNotIn('"@type": "FAQPage"', content)
 
     def test_slovak_directory_is_native_and_feed_discoverable(self):
         with (

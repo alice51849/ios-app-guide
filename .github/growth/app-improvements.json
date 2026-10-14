@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-14T19:49:14Z",
+  "updated_at": "2026-10-14T21:30:31Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -516,7 +516,8 @@
           "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：10/31。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。GEO 單頁部分併入 GEO 批次處理。",
           "owner": "claude",
           "impact": "medium",
-          "status": "in_progress"
+          "status": "in_progress",
+          "progress": "GEO 單頁：50 語系 app 頁已嵌入 7 秒鉤子片（VideoObject＋影片 sitemap）；Threads 排程照舊。"
         },
         {
           "id": "notesstudio100-06",
@@ -549,11 +550,12 @@
         {
           "id": "aim990-03",
           "title": "更新 aim990_full.json 為 live 文案並補量測字",
-          "detail": "把 _engine/data/aim990_full.json 各語系名稱/描述更新為 v2.0.1 live 版；zh-Hant keywords 補「多益,多益聽力,多益閱讀,多益單字,toeic app」、ja 補「TOEIC 弱点,TOEIC アプリ」、vi 補「luyện thi toeic,toeic nghe đọc」，讓 growth_scoreboard 量對字。",
+          "detail": "_engine/data/aim990_full.json 各語系已同步為 live 文案（GrowthEngine data/ 同步），owned feeds 以 --refresh-catalog 重產；量測字維持在 challenge_terms.aim990。",
           "owner": "local",
           "impact": "high",
-          "status": "todo",
-          "note": "量測字已依規則回傳在 challenge_terms.aim990；把 _engine/data/aim990_full.json 同步成 v2.0.1 live 文案屬資料檔修改（drafts 以外），不在雲端草稿範圍。註：live 描述可從公開 iTunes lookup 讀到（TW「Aim990：英文弱點教練」v2.0.1，53 個語系碼），本機同步時可直接取用"
+          "status": "done",
+          "note": "量測字已依規則回傳在 challenge_terms.aim990；把 _engine/data/aim990_full.json 同步成 v2.0.1 live 文案屬資料檔修改（drafts 以外），不在雲端草稿範圍。註：live 描述可從公開 iTunes lookup 讀到（TW「Aim990：英文弱點教練」v2.0.1，53 個語系碼），本機同步時可直接取用",
+          "done_at": "2026-10-14T21:30:31Z"
         },
         {
           "id": "aim990-05",
@@ -1128,7 +1130,8 @@
           "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：11/02。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。GEO 單頁部分併入 GEO 批次處理。",
           "owner": "claude",
           "impact": "low",
-          "status": "in_progress"
+          "status": "in_progress",
+          "progress": "GEO 單頁：50 語系 app 頁已嵌入 7 秒鉤子片（VideoObject＋影片 sitemap）；Threads 排程照舊。"
         }
       ]
     },
@@ -1252,12 +1255,12 @@
         {
           "id": "tripplanet-01",
           "title": "把 tripplanet_full.json 全面改成 live 名稱與正確關鍵字",
-          "detail": "檔案 /home/user/ios-app-guide/_engine/data/tripplanet_full.json：name 改成 live（TW「Trip Planet 親子旅行遊戲」、JP「Trip Planet 子ども旅行ゲーム」、KR「Trip Planet 아이 여행 게임」、US「Trip Planet: Kids Quest」），刪「雜誌,使命,trip planner,ジャーナル,신문」等機翻詞，zh-Hant 前三改「帶小孩出國,飛機上 小孩,親子旅行」、ja「子連れ旅行,旅行 子ども,機内 子ども」、en「road trip games for kids,travel bingo,kids travel missions」，促銷文改掉「轉『我們到了嗎？』變成樂趣」機翻；GEO 頁、catalog、計分板都會繼承。（資料檔在 _engine/data（鏡像），交本機。）",
+          "detail": "50 語系 name／subtitle／description／promotionalText 已依 live 版同步到 _engine/data/tripplanet_full.json（GrowthEngine data/ 同步），機翻促銷文已移除。",
           "owner": "local",
           "impact": "high",
-          "status": "todo",
+          "status": "done",
           "note": "需要修改 _engine/data/tripplanet_full.json（資料檔），所以沒有動。新的 name、≤100 字元的關鍵字、≤170 字元的宣傳文字（zh-Hant／ja／en-US）見 drafts/tripplanet/listing-data-fix-proposal.md；計分板量測詞放在 challenge_terms.tripplanet",
-          "progress": "4 語名稱／關鍵字／說明已回填；其餘語系 promotionalText 待改"
+          "done_at": "2026-10-14T21:30:31Z"
         },
         {
           "id": "tripplanet-04",
@@ -1266,7 +1269,7 @@
           "owner": "local",
           "impact": "high",
           "status": "todo",
-          "progress": "資料已修；頁面待完整重生"
+          "progress": "產生器已移除關鍵字模板 FAQ（build_pages_i18n 只留人工 FAQ）、資料已同步；50 語系頁面由下一次 Daily GEO 重產。"
         }
       ]
     },
@@ -1323,7 +1326,7 @@
           "owner": "local",
           "impact": "medium",
           "status": "todo",
-          "progress": "產生器與 FAQ 已改；best-* 頁待完整重生"
+          "progress": "模板 FAQ 已從產生器移除；best-* 標題頁仍待改。"
         },
         {
           "id": "wifiaidlite-06",

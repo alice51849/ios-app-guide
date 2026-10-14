@@ -168,10 +168,16 @@ def prune_sitemaps(noindex_urls: set[str]) -> int:
         if not dropped:
             continue
         body = "\n".join(kept)
+        # Keep the original <urlset …> tag: image/video/xhtml sitemaps declare
+        # extra namespaces there, and dropping them makes the file invalid XML
+        # (2026-10-14: sitemap_images.xml lost xmlns:image and failed
+        # gen_sitemap_lastmod).
+        opening = re.search(r"<urlset\b[^>]*>", text)
         out = (
             '<?xml version="1.0" encoding="UTF-8"?>\n'
-            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-            f"{body}\n</urlset>\n"
+            + (opening.group(0) if opening else
+               '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+            + f"\n{body}\n</urlset>\n"
         )
         sm.write_text(out, encoding="utf-8")
         removed += dropped

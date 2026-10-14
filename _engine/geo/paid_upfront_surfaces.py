@@ -291,7 +291,34 @@ def _landing(source, row):
     description = "".join(f"<p>{html.escape(text)}</p>" for text in row["description"])
     source = _one(before, lambda m: m[1] + description, source, "landing description")
     before = rf"(<h2>{re.escape(html.escape(row['faq_label']))}</h2>).*?(?=<h2>{re.escape(html.escape(row['download_label']))}</h2>)"
-    return _one(before, lambda m: m[1] + _faq(row["faq"]), source, "landing FAQ")
+    if re.search(before, source, flags=re.S) is None:
+        # build_pages_i18n no longer emits keyword-template FAQs, so the
+        # reviewed paid-upfront FAQ gets its own section before Download.
+        heading = f"<h2>{html.escape(row['faq_label'])}</h2>"
+        source = _one(
+            rf"(?=<h2>{re.escape(html.escape(row['download_label']))}</h2>)",
+            lambda m: heading + _faq(row["faq"]) + "\n  ",
+            source,
+            "landing download heading",
+        )
+    else:
+        source = _one(before, lambda m: m[1] + _faq(row["faq"]), source, "landing FAQ")
+    if not any(
+        '"FAQPage"' in match[2] for match in JSON_RE.finditer(source)
+    ):
+        # The visible FAQ needs its FAQPage twin; _schemas keeps it in sync.
+        schema = json.dumps(
+            {"@context": "https://schema.org", "@type": "FAQPage",
+             "mainEntity": _faq_schema(row["faq"])},
+            ensure_ascii=False, indent=2,
+        ).replace("<", "\\u003c")
+        source = _one(
+            r"(?=</head>)",
+            lambda m: f'<script type="application/ld+json">\n{schema}\n</script>\n',
+            source,
+            "landing head",
+        )
+    return source
 
 
 def _ctas(source, relative, row, availability):

@@ -31,6 +31,9 @@ TEXT_SUFFIXES = {
     ".xml",
 }
 EXCLUDED_PARTS = {".git", "_engine", "node_modules"}
+# The social loop's own data (clips, drafts) keeps its campaign tokens; it is
+# not part of the published site and its ct values are not ours to rewrite.
+EXCLUDED_PREFIXES = {(".github", "growth")}
 APP_STORE_URL_RE = re.compile(
     r"https://apps\.apple\.com/"
     r"(?:(?P<country>[a-z]{2})/)?app/"
@@ -124,6 +127,7 @@ def _public_text_files(pages: Path):
             path.is_file()
             and path.suffix.lower() in TEXT_SUFFIXES
             and not EXCLUDED_PARTS.intersection(path.relative_to(pages).parts)
+            and path.relative_to(pages).parts[:2] not in EXCLUDED_PREFIXES
         ):
             yield path
 

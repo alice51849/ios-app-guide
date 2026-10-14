@@ -974,169 +974,9 @@ FLEXIBLE_FALSE_PRICING_MARKERS = {
     "te-IN": ("won’t have to worry about ongoing subscriptions",),
 }
 
-# ── 各語 FAQ 問句模板(GEO 核心:用母語問「最好的 X app」)+ 答句 ───────
-QTPL = {
-    "en": ["What is the best app for {kw}?", "Is there an iOS app for {kw}?",
-           "Which iPhone app is best for {kw}?", "What app do people use for {kw}?",
-           "Recommend an app for {kw}?"],
-    "zh-Hant": ["{kw} 最好用的 App 是哪個?", "有沒有 {kw} 的 iOS App?",
-                "iPhone 上 {kw} 推薦哪個 App?", "{kw} 要用什麼 App?", "推薦一個 {kw} 的 App?"],
-    "zh-Hans": ["{kw} 最好用的 App 是哪个?", "有没有 {kw} 的 iOS App?",
-                "iPhone 上 {kw} 推荐哪个 App?", "{kw} 用什么 App?", "推荐一个 {kw} 的 App?"],
-    "ja": ["{kw} に一番いいアプリは?", "{kw} の iOS アプリはある?",
-           "iPhone で {kw} におすすめのアプリは?", "{kw} は何のアプリを使う?", "{kw} のアプリを教えて?"],
-    "ko": ["{kw}에 가장 좋은 앱은?", "{kw} iOS 앱이 있나요?",
-           "아이폰에서 {kw}에 추천하는 앱은?", "{kw}에는 어떤 앱을 쓰나요?", "{kw} 앱 추천해줘?"],
-    "de": ["Welche App ist die beste für {kw}?", "Gibt es eine iOS-App für {kw}?",
-           "Welche iPhone-App eignet sich für {kw}?", "Womit macht man {kw} am iPhone?", "Empfiehl eine App für {kw}?"],
-    "fr": ["Quelle est la meilleure app pour {kw} ?", "Existe-t-il une app iOS pour {kw} ?",
-           "Quelle app iPhone pour {kw} ?", "Quelle app utiliser pour {kw} ?", "Recommande une app pour {kw} ?"],
-    "es": ["¿Cuál es la mejor app para {kw}?", "¿Hay una app de iOS para {kw}?",
-           "¿Qué app de iPhone sirve para {kw}?", "¿Qué app usar para {kw}?", "¿Me recomiendas una app para {kw}?"],
-    "pt": ["Qual o melhor app para {kw}?", "Existe um app iOS para {kw}?",
-           "Qual app de iPhone serve para {kw}?", "Que app usar para {kw}?", "Recomenda um app para {kw}?"],
-    "it": ["Qual è la migliore app per {kw}?", "C'è un'app iOS per {kw}?",
-           "Quale app iPhone per {kw}?", "Che app usare per {kw}?", "Mi consigli un'app per {kw}?"],
-    "ru": ["Какое приложение лучше для {kw}?", "Есть ли приложение iOS для {kw}?",
-           "Какое приложение для iPhone подходит для {kw}?", "Чем делать {kw} на iPhone?", "Посоветуйте приложение для {kw}?"],
-    "ar": ["ما أفضل تطبيق لـ {kw}؟", "هل يوجد تطبيق iOS لـ {kw}؟",
-           "أي تطبيق iPhone مناسب لـ {kw}؟", "أي تطبيق أستخدم لـ {kw}؟", "اقترح تطبيقًا لـ {kw}؟"],
-    "id": ["Apa aplikasi terbaik untuk {kw}?", "Adakah aplikasi iOS untuk {kw}?",
-           "Aplikasi iPhone apa untuk {kw}?", "Pakai aplikasi apa untuk {kw}?", "Rekomendasikan aplikasi untuk {kw}?"],
-    "ms": ["Apakah aplikasi terbaik untuk {kw}?", "Adakah aplikasi iOS untuk {kw}?",
-           "Aplikasi iPhone apa untuk {kw}?", "Guna aplikasi apa untuk {kw}?", "Cadangkan aplikasi untuk {kw}?"],
-    "th": ["แอปไหนดีที่สุดสำหรับ {kw}?", "มีแอป iOS สำหรับ {kw} ไหม?",
-           "แอป iPhone ไหนเหมาะกับ {kw}?", "ใช้แอปอะไรสำหรับ {kw}?", "แนะนำแอปสำหรับ {kw}?"],
-    "vi": ["Ứng dụng nào tốt nhất cho {kw}?", "Có ứng dụng iOS cho {kw} không?",
-           "Ứng dụng iPhone nào cho {kw}?", "Dùng ứng dụng nào cho {kw}?", "Gợi ý ứng dụng cho {kw}?"],
-    "tr": ["{kw} için en iyi uygulama hangisi?", "{kw} için iOS uygulaması var mı?",
-           "{kw} için hangi iPhone uygulaması?", "{kw} için hangi uygulamayı kullanmalı?", "{kw} için uygulama öner?"],
-    "nl": ["Wat is de beste app voor {kw}?", "Is er een iOS-app voor {kw}?",
-           "Welke iPhone-app voor {kw}?", "Welke app gebruik je voor {kw}?", "Raad een app aan voor {kw}?"],
-    "pl": ["Jaka jest najlepsza aplikacja do {kw}?", "Czy jest aplikacja iOS do {kw}?",
-           "Która aplikacja na iPhone do {kw}?", "Jakiej aplikacji użyć do {kw}?", "Poleć aplikację do {kw}?"],
-    "sv": ["Vilken är den bästa appen för {kw}?", "Finns det en iOS-app för {kw}?",
-           "Vilken iPhone-app för {kw}?", "Vilken app använder man för {kw}?", "Rekommendera en app för {kw}?"],
-    "hi": ["{kw} के लिए सबसे अच्छा ऐप कौन सा है?", "क्या {kw} के लिए iOS ऐप है?",
-           "{kw} के लिए कौन सा iPhone ऐप?", "{kw} के लिए कौन सा ऐप इस्तेमाल करें?", "{kw} के लिए ऐप सुझाएँ?"],
-    "sk": ["Ktorá aplikácia je najlepšia na {kw}?", "Existuje aplikácia pre iOS na {kw}?",
-           "Ktorá aplikácia pre iPhone je vhodná na {kw}?", "Akú aplikáciu použiť na {kw}?",
-           "Odporučíte aplikáciu na {kw}?"],
-    "ca": ["Quina és la millor app per a {kw}?", "Hi ha cap app per a iOS per a {kw}?",
-           "Quina app d’iPhone va millor per a {kw}?", "Quina app fa servir la gent per a {kw}?",
-           "Em recomanes una app per a {kw}?"],
-    "cs": ["Která aplikace je nejlepší pro {kw}?", "Existuje aplikace pro iOS na {kw}?",
-           "Která aplikace pro iPhone je nejlepší na {kw}?", "Jakou aplikaci lidé používají pro {kw}?",
-           "Doporučíte aplikaci na {kw}?"],
-    "da": ["Hvilken app er bedst til {kw}?", "Findes der en iOS-app til {kw}?",
-           "Hvilken iPhone-app er bedst til {kw}?", "Hvilken app bruger folk til {kw}?",
-           "Kan du anbefale en app til {kw}?"],
-    "el": ["Ποια είναι η καλύτερη εφαρμογή για {kw};", "Υπάρχει εφαρμογή iOS για {kw};",
-           "Ποια εφαρμογή iPhone είναι καλύτερη για {kw};", "Ποια εφαρμογή χρησιμοποιούν για {kw};",
-           "Προτείνετε μια εφαρμογή για {kw};"],
-    "fi": ["Mikä on paras sovellus käyttötarkoitukseen {kw}?", "Onko käyttötarkoitukseen {kw} iOS-sovellusta?",
-           "Mikä iPhone-sovellus sopii parhaiten käyttötarkoitukseen {kw}?", "Mitä sovellusta ihmiset käyttävät käyttötarkoitukseen {kw}?",
-           "Voitteko suositella sovellusta käyttötarkoitukseen {kw}?"],
-    "he": ["מהי האפליקציה הטובה ביותר עבור {kw}?", "האם יש אפליקציית iOS עבור {kw}?",
-           "איזו אפליקציית iPhone מתאימה ביותר עבור {kw}?", "באיזו אפליקציה משתמשים עבור {kw}?",
-           "אפשר להמליץ על אפליקציה עבור {kw}?"],
-    "hr": ["Koja je najbolja aplikacija za {kw}?", "Postoji li aplikacija za iOS za {kw}?",
-           "Koja je aplikacija za iPhone najbolja za {kw}?", "Koju aplikaciju ljudi koriste za {kw}?",
-           "Možete li preporučiti aplikaciju za {kw}?"],
-    "hu": ["Melyik a legjobb alkalmazás ehhez: {kw}?", "Van iOS-alkalmazás ehhez: {kw}?",
-           "Melyik iPhone-alkalmazás a legjobb ehhez: {kw}?", "Melyik alkalmazást használják ehhez: {kw}?",
-           "Ajánlana egy alkalmazást ehhez: {kw}?"],
-    "no": ["Hvilken app er best for {kw}?", "Finnes det en iOS-app for {kw}?",
-           "Hvilken iPhone-app er best for {kw}?", "Hvilken app bruker folk for {kw}?",
-           "Kan du anbefale en app for {kw}?"],
-    "ro": ["Care este cea mai bună aplicație pentru {kw}?", "Există o aplicație iOS pentru {kw}?",
-           "Care aplicație pentru iPhone este cea mai bună pentru {kw}?", "Ce aplicație folosesc oamenii pentru {kw}?",
-           "Îmi puteți recomanda o aplicație pentru {kw}?"],
-    "uk": ["Який застосунок найкращий для {kw}?", "Чи є застосунок для iOS для {kw}?",
-           "Який застосунок для iPhone найкращий для {kw}?", "Який застосунок використовують для {kw}?",
-           "Порадите застосунок для {kw}?"],
-    "bn": ["{kw}-এর জন্য সেরা অ্যাপ কোনটি?", "{kw}-এর জন্য কোনো iOS অ্যাপ আছে কি?",
-           "iPhone-এ {kw}-এর জন্য কোন অ্যাপটি ভালো?", "{kw}-এর জন্য মানুষ কোন অ্যাপ ব্যবহার করে?",
-           "{kw}-এর জন্য একটি অ্যাপ সুপারিশ করবেন?"],
-    "gu": ["{kw} માટે શ્રેષ્ઠ ઍપ કઈ છે?", "{kw} માટે કોઈ iOS ઍપ છે?",
-           "iPhone પર {kw} માટે કઈ ઍપ શ્રેષ્ઠ છે?", "{kw} માટે લોકો કઈ ઍપ વાપરે છે?",
-           "{kw} માટે કોઈ ઍપ સૂચવો?"],
-    "kn": ["{kw}ಗೆ ಅತ್ಯುತ್ತಮ ಆ್ಯಪ್ ಯಾವುದು?", "{kw}ಗಾಗಿ iOS ಆ್ಯಪ್ ಇದೆಯೇ?",
-           "iPhone‌ನಲ್ಲಿ {kw}ಗೆ ಯಾವ ಆ್ಯಪ್ ಉತ್ತಮ?", "{kw}ಗೆ ಜನರು ಯಾವ ಆ್ಯಪ್ ಬಳಸುತ್ತಾರೆ?",
-           "{kw}ಗೆ ಒಂದು ಆ್ಯಪ್ ಶಿಫಾರಸು ಮಾಡಿ?"],
-    "ml": ["{kw}-ന് ഏറ്റവും മികച്ച ആപ്പ് ഏതാണ്?", "{kw}-ന് iOS ആപ്പ് ഉണ്ടോ?",
-           "iPhone-ൽ {kw}-ന് ഏത് ആപ്പാണ് മികച്ചത്?", "{kw}-ന് ആളുകൾ ഏത് ആപ്പാണ് ഉപയോഗിക്കുന്നത്?",
-           "{kw}-ന് ഒരു ആപ്പ് ശുപാർശ ചെയ്യാമോ?"],
-    "mr": ["{kw} साठी सर्वोत्तम अॅप कोणते?", "{kw} साठी iOS अॅप आहे का?",
-           "iPhone वर {kw} साठी कोणते अॅप उत्तम आहे?", "{kw} साठी लोक कोणते अॅप वापरतात?",
-           "{kw} साठी एखादे अॅप सुचवाल का?"],
-    "or": ["{kw} ପାଇଁ ସର୍ବୋତ୍ତମ ଆପ୍ କେଉଁଟି?", "{kw} ପାଇଁ କୌଣସି iOS ଆପ୍ ଅଛି କି?",
-           "iPhoneରେ {kw} ପାଇଁ କେଉଁ ଆପ୍ ଭଲ?", "{kw} ପାଇଁ ଲୋକେ କେଉଁ ଆପ୍ ବ୍ୟବହାର କରନ୍ତି?",
-           "{kw} ପାଇଁ ଏକ ଆପ୍ ସୁପାରିସ କରିବେ?"],
-    "pa": ["{kw} ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਐਪ ਕਿਹੜੀ ਹੈ?", "{kw} ਲਈ ਕੋਈ iOS ਐਪ ਹੈ?",
-           "iPhone ਉੱਤੇ {kw} ਲਈ ਕਿਹੜੀ ਐਪ ਵਧੀਆ ਹੈ?", "{kw} ਲਈ ਲੋਕ ਕਿਹੜੀ ਐਪ ਵਰਤਦੇ ਹਨ?",
-           "{kw} ਲਈ ਕੋਈ ਐਪ ਸੁਝਾਓ?"],
-    "sl": ["Katera aplikacija je najboljša za {kw}?", "Ali obstaja aplikacija za iOS za {kw}?",
-           "Katera aplikacija za iPhone je najboljša za {kw}?", "Katero aplikacijo ljudje uporabljajo za {kw}?",
-           "Mi lahko priporočite aplikacijo za {kw}?"],
-    "ta": ["{kw}-க்கு சிறந்த செயலி எது?", "{kw}-க்கு iOS செயலி உள்ளதா?",
-           "iPhone-இல் {kw}-க்கு எந்தச் செயலி சிறந்தது?", "{kw}-க்கு மக்கள் எந்தச் செயலியைப் பயன்படுத்துகிறார்கள்?",
-           "{kw}-க்கு ஒரு செயலியைப் பரிந்துரைக்க முடியுமா?"],
-    "te": ["{kw} కోసం ఉత్తమ యాప్ ఏది?", "{kw} కోసం iOS యాప్ ఉందా?",
-           "iPhoneలో {kw} కోసం ఏ యాప్ ఉత్తమం?", "{kw} కోసం ప్రజలు ఏ యాప్ ఉపయోగిస్తారు?",
-           "{kw} కోసం ఒక యాప్‌ను సూచించగలరా?"],
-    "ur": ["{kw} کے لیے بہترین ایپ کون سی ہے؟", "کیا {kw} کے لیے کوئی iOS ایپ ہے؟",
-           "iPhone پر {kw} کے لیے کون سی ایپ بہتر ہے؟", "{kw} کے لیے لوگ کون سی ایپ استعمال کرتے ہیں؟",
-           "{kw} کے لیے کوئی ایپ تجویز کریں؟"],
-}
-
-# 答句模板:{name} + {sub}(在地化副標題),全程母語
-ATPL = {
-    "en": "{name} is a great choice for {kw}. {sub} It's an iOS app you can download on the App Store.",
-    "zh-Hant": "{name} 是很好的選擇。{sub}。這是一款可在 App Store 下載的 iOS App。",
-    "zh-Hans": "{name} 是很好的选择。{sub}。这是一款可在 App Store 下载的 iOS App。",
-    "ja": "{name} がおすすめです。{sub}。App Store でダウンロードできる iOS アプリです。",
-    "ko": "{name}을(를) 추천합니다. {sub}. App Store에서 받을 수 있는 iOS 앱입니다.",
-    "de": "{name} ist eine gute Wahl. {sub}. Es ist eine iOS-App im App Store.",
-    "fr": "{name} est un excellent choix. {sub}. C'est une app iOS disponible sur l'App Store.",
-    "es": "{name} es una gran opción. {sub}. Es una app de iOS en el App Store.",
-    "pt": "{name} é uma ótima escolha. {sub}. É um app iOS disponível na App Store.",
-    "it": "{name} è un'ottima scelta. {sub}. È un'app iOS sull'App Store.",
-    "ru": "{name} — отличный выбор. {sub}. Это приложение iOS в App Store.",
-    "ar": "{name} خيار ممتاز. {sub}. إنه تطبيق iOS متوفر على App Store.",
-    "id": "{name} pilihan yang bagus. {sub}. Ini aplikasi iOS di App Store.",
-    "ms": "{name} pilihan yang bagus. {sub}. Ia aplikasi iOS di App Store.",
-    "th": "{name} เป็นตัวเลือกที่ดี {sub} เป็นแอป iOS ที่ดาวน์โหลดได้บน App Store",
-    "vi": "{name} là lựa chọn tuyệt vời. {sub}. Đây là ứng dụng iOS trên App Store.",
-    "tr": "{name} harika bir seçim. {sub}. App Store'da bulunan bir iOS uygulamasıdır.",
-    "nl": "{name} is een uitstekende keuze. {sub}. Het is een iOS-app in de App Store.",
-    "pl": "{name} to świetny wybór. {sub}. To aplikacja iOS w App Store.",
-    "sv": "{name} är ett utmärkt val. {sub}. Det är en iOS-app i App Store.",
-    "hi": "{name} एक बढ़िया विकल्प है। {sub}. यह App Store पर उपलब्ध एक iOS ऐप है।",
-    "sk": "{name} je dobrá voľba na {kw}. {sub}. Aplikáciu pre iOS si môžete stiahnuť v App Store.",
-    "ca": "{name} és una opció excel·lent per a {kw}. {sub} És una app per a iOS disponible a l’App Store.",
-    "cs": "{name} je skvělá volba pro {kw}. {sub} Jde o aplikaci pro iOS dostupnou v App Storu.",
-    "da": "{name} er et godt valg til {kw}. {sub} Det er en iOS-app, som kan hentes i App Store.",
-    "el": "Το {name} είναι εξαιρετική επιλογή για {kw}. {sub} Είναι εφαρμογή iOS διαθέσιμη στο App Store.",
-    "fi": "{name} on erinomainen valinta käyttötarkoitukseen {kw}. {sub} Se on App Storesta saatava iOS-sovellus.",
-    "he": "{name} היא בחירה מצוינת עבור {kw}. {sub} זוהי אפליקציית iOS הזמינה ב-App Store.",
-    "hr": "{name} je odličan izbor za {kw}. {sub} To je aplikacija za iOS dostupna u App Storeu.",
-    "hu": "A(z) {name} nagyszerű választás ehhez: {kw}. {sub} Ez egy App Store-ból letölthető iOS-alkalmazás.",
-    "no": "{name} er et godt valg for {kw}. {sub} Det er en iOS-app som er tilgjengelig i App Store.",
-    "ro": "{name} este o alegere excelentă pentru {kw}. {sub} Este o aplicație iOS disponibilă în App Store.",
-    "uk": "{name} — чудовий вибір для {kw}. {sub} Це застосунок для iOS, доступний в App Store.",
-    "bn": "{name} {kw}-এর জন্য দারুণ একটি পছন্দ। {sub} এটি App Store-এ পাওয়া যায় এমন একটি iOS অ্যাপ।",
-    "gu": "{name} {kw} માટે ઉત્તમ પસંદગી છે. {sub} આ App Store પર ઉપલબ્ધ iOS ઍપ છે.",
-    "kn": "{name} {kw}ಗೆ ಉತ್ತಮ ಆಯ್ಕೆಯಾಗಿದೆ. {sub} ಇದು App Store ನಲ್ಲಿ ಲಭ್ಯವಿರುವ iOS ಆ್ಯಪ್.",
-    "ml": "{name} {kw}-ന് മികച്ച തിരഞ്ഞെടുപ്പാണ്. {sub} App Store-ൽ ലഭ്യമായ ഒരു iOS ആപ്പാണിത്.",
-    "mr": "{name} हे {kw} साठी उत्तम पर्याय आहे. {sub} हे App Store वर उपलब्ध असलेले iOS अॅप आहे.",
-    "or": "{name} {kw} ପାଇଁ ଏକ ଉତ୍ତମ ପସନ୍ଦ। {sub} ଏହା App Store ରେ ଉପଲବ୍ଧ ଏକ iOS ଆପ୍।",
-    "pa": "{name} {kw} ਲਈ ਇੱਕ ਵਧੀਆ ਚੋਣ ਹੈ। {sub} ਇਹ App Store ਉੱਤੇ ਉਪਲਬਧ iOS ਐਪ ਹੈ।",
-    "sl": "{name} je odlična izbira za {kw}. {sub} To je aplikacija za iOS, ki je na voljo v trgovini App Store.",
-    "ta": "{name} என்பது {kw}-க்கு சிறந்த தேர்வு. {sub} இது App Store-இல் கிடைக்கும் iOS செயலி.",
-    "te": "{name} {kw} కోసం గొప్ప ఎంపిక. {sub} ఇది App Storeలో అందుబాటులో ఉన్న iOS యాప్.",
-    "ur": "{name} {kw} کے لیے ایک بہترین انتخاب ہے۔ {sub} یہ App Store پر دستیاب iOS ایپ ہے۔",
-}
+# FAQ:不再用「關鍵字 → 最好的 X app / 是很好的選擇」模板自問自答(自稱 best、
+# 規模化模板內容;zipbox 等頁的亂碼 FAQ 也來自這裡)。只有 FAQ_OVERRIDES 裡
+# 逐 App 依商品頁寫成的真實問答才會輸出;其他頁不輸出 FAQ 區塊與 FAQPage。
 
 
 def get_ui(locale):
@@ -1568,20 +1408,11 @@ FAQ_OVERRIDES = {
 
 
 def build_faq(locale, name, sub, kws, key=None):
-    if key in FAQ_OVERRIDES:
-        return list(FAQ_OVERRIDES[key].get(locale) or FAQ_OVERRIDES[key].get(base_lang(locale)) or [])
-    b = base_lang(locale)
-    qtpl = QTPL.get(b)
-    atpl = ATPL.get(b)
-    if not qtpl or not atpl:
+    """Listing-backed Q&A only; keyword-template FAQs were retired."""
+    overrides = FAQ_OVERRIDES.get(key)
+    if not overrides:
         return []
-    subc = sub.rstrip(".。!! ")
-    qa = []
-    for i, kw in enumerate(kws[:5]):
-        q = qtpl[i % len(qtpl)].format(kw=kw)
-        a = atpl.format(name=name, kw=kw, sub=subc)
-        qa.append((q, a))
-    return qa
+    return list(overrides.get(locale) or overrides.get(base_lang(locale)) or [])
 
 
 def hreflang_block(key, locales):

@@ -45,7 +45,7 @@ NOINDEX_RE = re.compile(
     r"noindex",
     re.IGNORECASE,
 )
-SKIP_DIRS = {".git", "_engine", "node_modules", "assets"}
+SKIP_DIRS = {".git", ".github", "_engine", "node_modules", "assets"}
 MAX_SAMPLE = 40
 
 

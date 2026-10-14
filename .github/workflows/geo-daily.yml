@@ -177,6 +177,7 @@ jobs:
           python3 hero_tasks.py --today "$GEO_BUILD_DATE"
           python3 gen_feed.py
           python3 live_app_guard.py --site-root pages
+          python3 app_hook_clips.py --today "$GEO_BUILD_DATE"
       - name: Reconcile verified Standard.site discovery links
         run: |
           python3 _engine/geo/sync_standard_site.py \
@@ -407,6 +408,7 @@ jobs:
               python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
               python3 dedupe_locale_meta.py --apply
               python3 live_app_guard.py --site-root pages
+              python3 app_hook_clips.py --today "$GEO_BUILD_DATE"
               python3 gen_locale_indexation.py
               python3 gen_link_hubs.py
               python3 gen_locale_indexation.py
@@ -541,6 +543,7 @@ jobs:
           # indexable path + canonical URL set; convergence still runs.
           python3 dedupe_locale_meta.py --apply
           python3 live_app_guard.py --site-root pages
+          python3 app_hook_clips.py --today "$GEO_BUILD_DATE"
           python3 alternatives_i18n.py --pages-dir "$GITHUB_WORKSPACE"
           python3 high_intent_decision_routes.py \
             --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \
@@ -625,6 +628,7 @@ jobs:
                 python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
                 python3 dedupe_locale_meta.py --apply
                 python3 live_app_guard.py --site-root pages
+                python3 app_hook_clips.py --today "$GEO_BUILD_DATE"
                 python3 alternatives_i18n.py --pages-dir "$GITHUB_WORKSPACE"
                 python3 high_intent_decision_routes.py \
                   --inventory "$GITHUB_WORKSPACE/data/verified-ios-app-finder-catalog.json" \

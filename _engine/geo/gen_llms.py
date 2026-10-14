@@ -34,6 +34,7 @@ import android_play  # noqa: E402
 import app_decision_matrix  # noqa: E402
 import app_install_decision_routes  # noqa: E402
 import app_video_lessons  # noqa: E402
+import app_hook_clips  # noqa: E402
 import build_pages_i18n  # noqa: E402
 import high_intent_decision_routes  # noqa: E402
 from app_store_storefronts import (  # noqa: E402
@@ -1591,6 +1592,7 @@ def build_llms(comp_map, live_keys):
     lines += portfolio_finder_lines(full=False)
     lines += publisher_intent_visual_lines(full=False)
     lines += app_video_lessons.llms_lines(full=False)
+    lines += app_hook_clips.llms_lines(full=False)
     lines += portfolio_offer_catalog_lines(full=False)
     lines += app_decision_matrix_lines(full=False)
     lines += agent_product_feed_lines(full=False)
@@ -2254,6 +2256,7 @@ def build_llms_full(comp_map, live_keys):
     lines += portfolio_finder_lines(full=True)
     lines += publisher_intent_visual_lines(full=True)
     lines += app_video_lessons.llms_lines(full=True)
+    lines += app_hook_clips.llms_lines(full=True)
     lines += portfolio_offer_catalog_lines(full=True)
     lines += app_decision_matrix_lines(full=True)
     lines += agent_product_feed_lines(full=True)
@@ -2623,7 +2626,7 @@ def build_llms_full(comp_map, live_keys):
         "sitemap_answers.xml", "sitemap_guides.xml", "sitemap_apps.xml",
         "sitemap_stories.xml", "sitemap_llms.xml",
         "sitemap_images.xml", PUBLISHER_INTENT_VISUALS_SITEMAP,
-        app_video_lessons.SITEMAP_NAME,
+        app_video_lessons.SITEMAP_NAME, app_hook_clips.SITEMAP_NAME,
         "sitemap_linkset.xml", "sitemap_oembed.xml",
         "linkset.json", app_install_decision_routes.SITEMAP_NAME,
         "sitemap_hubs.xml", "sitemap_topic_hubs.xml", "sitemap_review_hubs.xml", "sitemap_tools.xml", "sitemap_data.xml",
@@ -5870,6 +5873,7 @@ def build_robots():
             f"Sitemap: {SITE}/sitemap_images.xml",
             f"Sitemap: {SITE}/{PUBLISHER_INTENT_VISUALS_SITEMAP}",
             f"Sitemap: {SITE}/{app_video_lessons.SITEMAP_NAME}",
+            f"Sitemap: {SITE}/{app_hook_clips.SITEMAP_NAME}",
             f"Sitemap: {SITE}/sitemap_linkset.xml",
             f"Sitemap: {SITE}/sitemap_oembed.xml",
             f"Sitemap: {SITE}/sitemap_llms.xml",
@@ -5936,6 +5940,7 @@ def build_sitemap_index():
             "sitemap_stories.xml", "sitemap_images.xml", "sitemap_linkset.xml",
             PUBLISHER_INTENT_VISUALS_SITEMAP,
             app_video_lessons.SITEMAP_NAME,
+            app_hook_clips.SITEMAP_NAME,
             "sitemap_oembed.xml", "sitemap_llms.xml",
             app_install_decision_routes.SITEMAP_NAME,
             "sitemap_hubs.xml", "sitemap_topic_hubs.xml", "sitemap_review_hubs.xml", "sitemap_tools.xml",

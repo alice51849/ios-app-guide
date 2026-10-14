@@ -22006,8 +22006,6 @@ class GeneratorTests(unittest.TestCase):
         bases = {build_pages_i18n.base_lang(locale) for locale in OFFICIAL_LOCALES}
         for mapping in (
             build_pages_i18n.UI,
-            build_pages_i18n.QTPL,
-            build_pages_i18n.ATPL,
             build_pages_i18n.PROFILE_PRICING,
             build_pages_i18n.PAID_UPFRONT_PRICING,
         ):
@@ -23693,9 +23691,10 @@ class GeneratorTests(unittest.TestCase):
             ),
         )
         # 24 generator passes + 11 hero_tasks.py build/check passes (the hero
-        # task system re-materialises after every body-rewriting phase).
+        # task system re-materialises after every body-rewriting phase) + 4
+        # app_hook_clips.py passes (one after each live_app_guard sweep).
         self.assertEqual(
-            35,
+            39,
             workflow.count('--today "$GEO_BUILD_DATE"'),
         )
         self.assertEqual(
@@ -25691,6 +25690,13 @@ class GeneratorTests(unittest.TestCase):
                 '?ct=fixture"}',
                 encoding="utf-8",
             )
+            growth = pages / ".github" / "growth" / "clips.json"
+            growth.parent.mkdir()
+            growth.write_text(
+                '{"store_url":"https://apps.apple.com/tw/app/id6818607603'
+                '?pt=118326163&ct=h7_demo_zh-Hant&mt=8"}',
+                encoding="utf-8",
+            )
 
             stats = normalize_app_store_links.normalize_tree(pages)
 
@@ -25713,6 +25719,7 @@ class GeneratorTests(unittest.TestCase):
             )
             self.assertNotIn("?ct=", passport.read_text(encoding="utf-8"))
             self.assertIn("?ct=fixture", excluded.read_text(encoding="utf-8"))
+            self.assertIn("ct=h7_demo_zh-Hant", growth.read_text(encoding="utf-8"))
 
     def test_storefront_snapshot_refreshes_all_mapped_countries(self):
         app_id = APPSTORE["lumibopomofo"]

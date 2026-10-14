@@ -1,5 +1,5 @@
 {
-  "contract_digest": "f2a9fee8eb95ef8da88f29185af942f851c47f24d45743eb7cc842450caf9d93",
+  "contract_digest": "1df7845dc3d115e68ef9c94721ea31e1d3f306587abbd7ddf637294e90204e12",
   "copy_mode": "byte_for_byte",
   "files": [
     {
@@ -22,7 +22,7 @@
     },
     {
       "engine_relative_path": "paid_upfront_surfaces.py",
-      "sha256": "4e9534d9f10d5b7383976b9fbaae3357f28a78d8dbb4816831694a8deabf485e",
+      "sha256": "859673d3f8ed41f3bd3e6bb399f29e1dd3d04d415b8879fff787187c6e1e266d",
       "source_path": "geo/paid_upfront_surfaces.py",
       "target_path": "_engine/geo/paid_upfront_surfaces.py"
     },
@@ -70,7 +70,7 @@
     },
     {
       "engine_relative_path": "publish.py",
-      "sha256": "b7deffe498f971d7187ee9c76b3026a49eceef690302e9f7b8bc591e68752a48",
+      "sha256": "45de0469e619c6a0dda0689be60305985908030511f3cb03bc5c728c57c64ee7",
       "source_path": "geo/publish.py",
       "target_path": "_engine/geo/publish.py"
     },

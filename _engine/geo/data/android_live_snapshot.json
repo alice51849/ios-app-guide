@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-14T18:51:10+0800",
+ "source_generated": "2026-10-14T19:22:09+0800",
  "count": 42,
- "content_sha256": "9f5e163ca14364f413ad65c59af5a67d3715465793ed358d978c24f34d20cc05",
+ "content_sha256": "15780a8f6e17da168bc3b0b47d2e5c2702ac9093723a83bc005b23be275ccebc",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -79,7 +79,7 @@
    "copy": {
     "en-US": {
      "title": "CV Desk: ATS Resume Builder",
-     "short_description": "Build ATS-safe resumes with an instant score and keyword tips"
+     "short_description": "Resume & CV maker: clean templates, an instant ATS score and PDF export"
     },
     "zh-TW": {
      "title": "CV Desk ATS 履歷製作",
@@ -184,11 +184,11 @@
    "copy": {
     "en-US": {
      "title": "HoursTag: Hours to Buy",
-     "short_description": "See every price as hours of work and stop impulse spending before it starts"
+     "short_description": "Expense tracker with an hourly wage calculator: see any price as hours of work"
     },
     "zh-TW": {
-     "title": "HoursTag：價格換工時",
-     "short_description": "輸入價格就知道要工作幾小時，標記必要、想要、衝動，看清消費習慣、少點衝動購物"
+     "title": "HoursTag：價格換工時記帳本",
+     "short_description": "記帳 App 加上時薪換算：輸入價格就知道要工作幾小時，標記必要、想要、衝動，少點衝動購物"
     }
    }
   },
@@ -225,12 +225,12 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "LockHour Pro",
-     "short_description": "Digital Detox Focus Sessions"
+     "title": "LockHour Pro: App Blocker",
+     "short_description": "App blocker for focus and digital detox: lock distracting apps, less phone time"
     },
     "zh-TW": {
      "title": "LockHour Pro",
-     "short_description": "數位專注管理與應用鎖定"
+     "short_description": "專注時段自動封鎖分心的 App，讀書、工作、睡前都能幫你戒手機"
     }
    }
   },
@@ -415,11 +415,11 @@
    "copy": {
     "en-US": {
      "title": "Lumi Weather: What to Wear",
-     "short_description": "Outing Score, Umbrella & UV"
+     "short_description": "Hourly weather forecast with an outing score, umbrella and sunscreen tips"
     },
     "zh-TW": {
-     "title": "Lumi天氣星球 外出指數與穿搭建議",
-     "short_description": "逐時與一週預報、帶傘和紫外線"
+     "title": "Lumi天氣星球：天氣預報、外出指數與穿搭建議",
+     "short_description": "逐時與一週天氣預報，一眼看懂今天穿什麼、要不要帶傘、紫外線強不強"
     }
    }
   },
@@ -457,11 +457,11 @@
    "copy": {
     "en-US": {
      "title": "Mochi: Cute Checklist",
-     "short_description": "Cute, cozy checklists with playful skins, reminders and habit tracking"
+     "short_description": "Cute to-do list and checklist with 100 cozy skins and repeating reminders"
     },
     "zh-TW": {
      "title": "Mochi: 可愛待辦清單",
-     "short_description": "可愛又療癒的待辦清單，自選主題外觀、提醒與習慣追蹤"
+     "short_description": "可愛又療癒的待辦清單，寫下待辦事項輕點打勾，100 款主題外觀與重複提醒"
     }
    }
   },
@@ -478,11 +478,11 @@
    "copy": {
     "en-US": {
      "title": "Mochi DoneStamp: Last Time",
-     "short_description": "When Did I Last? Days Since"
+     "short_description": "Last time tracker for chores and upkeep, with days since and recurring reminders"
     },
     "zh-TW": {
      "title": "Mochi DoneStamp：上次何時",
-     "short_description": "上次何時・經過天數與循環提醒"
+     "short_description": "上次是什麼時候做的？一鍵記下家事與保養的完成時間，顯示經過天數，到期自動循環提醒"
     }
    }
   },
@@ -520,11 +520,11 @@
    "copy": {
     "en-US": {
      "title": "100 Notes Studio: Pen & Paper",
-     "short_description": "Handwriting & PDF Workspace"
+     "short_description": "Note taking app: stylus handwriting, PDF annotation, page audio and flashcards"
     },
     "zh-TW": {
      "title": "100 Notes Studio: Pen & Paper",
-     "short_description": "手寫筆記本、PDF標註、錄音與複習"
+     "short_description": "手寫筆記 App：29 種筆刷、100 款筆記本風格、PDF 標註、頁面錄音與抽認卡，還能上鎖"
     }
    }
   },
@@ -561,12 +561,12 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "PhotoCream Pro",
-     "short_description": "Film Simulation & Halation"
+     "title": "PhotoCream Pro: Film Camera",
+     "short_description": "Retro and vintage film filters with grain and light leaks, plus a photo editor"
     },
     "zh-TW": {
-     "title": "PhotoCream Pro",
-     "short_description": "底片顆粒光暈・膠卷模擬"
+     "title": "PhotoCream Pro：底片相機",
+     "short_description": "底片相機搭配復古濾鏡，顆粒、光暈與漏光質感，加上完整修圖與自然美肌"
     }
    }
   },
@@ -582,12 +582,12 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "PicClear Pro",
-     "short_description": "Clean Photo Library Offline"
+     "title": "PicClear Pro: Photo Cleaner",
+     "short_description": "Duplicate photo remover: clear screenshots and blurry shots to reclaim storage"
     },
     "zh-TW": {
      "title": "PicClear Pro",
-     "short_description": "截圖清理・手機空間不足"
+     "short_description": "清理重複照片、舊截圖與模糊照片，手機空間不足時幫你騰出儲存空間"
     }
    }
   },
@@ -646,11 +646,11 @@
    "copy": {
     "en-US": {
      "title": "Sereno: Sleep Sounds",
-     "short_description": "White noise for sleep & focus"
+     "short_description": "White noise, brown noise and rain sounds that never loop, for sleep and focus"
     },
     "zh-TW": {
-     "title": "Sereno: 極致睡眠音效",
-     "short_description": "白噪音助眠與專注神器"
+     "title": "Sereno: 睡眠音效・白噪音",
+     "short_description": "白噪音、褐噪音與雨聲即時生成不循環，陪你入睡、專注與放鬆"
     }
    }
   },
@@ -688,11 +688,11 @@
    "copy": {
     "en-US": {
      "title": "Snapport: Passport & ID Photos",
-     "short_description": "Create passport and ID photos at home with sizing templates and print sheets"
+     "short_description": "Passport photo maker for visa and ID photos, with templates and print sheets"
     },
     "zh-TW": {
-     "title": "Snapport: 護照證件照",
-     "short_description": "在家製作護照證件照,內建多地區尺寸範本與列印排版"
+     "title": "Snapport: 護照證件照、大頭照排版",
+     "short_description": "在家製作護照照片、簽證照片與大頭照，可換白底，內建尺寸範本與列印排版"
     }
    }
   },
@@ -729,12 +729,12 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "Sono Note",
-     "short_description": "Voice notes turned into summaries, tasks and follow-up emails, privately"
+     "title": "Sono Note: Voice to Text Notes",
+     "short_description": "Voice recorder with speech to text that turns notes into summaries and tasks"
     },
     "zh-TW": {
-     "title": "Sono Note",
-     "short_description": "語音筆記自動轉成摘要、待辦事項與跟進郵件"
+     "title": "Sono Note：語音轉文字筆記",
+     "short_description": "語音轉文字的錄音筆記：說完自動整理出逐字稿、摘要、重點與待辦事項"
     }
    }
   },
@@ -751,11 +751,11 @@
    "copy": {
     "en-US": {
      "title": "TripBee Pro: Trip Organizer",
-     "short_description": "Unlimited trips, family packing lists and sending trips to another phone"
+     "short_description": "Trip planner and itinerary organizer with family packing lists and trip sharing"
     },
     "zh-TW": {
-     "title": "TripBee Pro：行程整理管家",
-     "short_description": "無限旅程、全家打包清單，還能把旅程傳到另一支手機"
+     "title": "TripBee Pro：旅遊行程規劃・行程整理管家",
+     "short_description": "旅遊行程規劃與整理：逐日行程、全家打包清單，還能把旅程傳到另一支手機"
     }
    }
   },
@@ -792,12 +792,12 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "Unblurry Pro: Unblur & HD",
-     "short_description": "Restore Old Photos Offline"
+     "title": "Unblurry Pro: Unblur Photo HD",
+     "short_description": "Restore old photos offline, sharpen blurry shots and upscale them with AI"
     },
     "zh-TW": {
      "title": "Unblurry Pro：模糊變清晰",
-     "short_description": "老照片修復・翻新舊相片"
+     "short_description": "模糊照片變清晰：去模糊、銳化、AI 超解析放大，老照片修復、翻新舊相片也能離線完成"
     }
    }
   },
@@ -877,11 +877,11 @@
    "copy": {
     "en-US": {
      "title": "Wordmate Lite: Vocabulary",
-     "short_description": "Build your vocabulary five words at a time in one-minute sessions, offline"
+     "short_description": "Learn languages five words a day: vocabulary builder for 44 languages, offline"
     },
     "zh-TW": {
-     "title": "Wordmate Lite 每天五個單字",
-     "short_description": "一次五個單字、一分鐘練完，可以聽發音，離線也能背，輕鬆養成每天背單字的習慣"
+     "title": "Wordmate Lite 背單字：每天五個單字",
+     "short_description": "英文單字、日文單字都能背：一次五個、一分鐘練完，可聽發音、離線也能背，養成每天背單字的習慣"
     }
    }
   }

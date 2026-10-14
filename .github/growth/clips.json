@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T15:07:32Z",
+  "updated_at": "2026-10-14T15:27:50Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -223,6 +223,34 @@
       "tags": [
         "#App推薦",
         "#iPhone",
+        "#iOS"
+      ]
+    },
+    "unblurry/ja": {
+      "app": "unblurry",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/w5glhy.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=h7_unblurry_ja&mt=8",
+      "hook": "ぼやけた写真を くっきり補正",
+      "name": "Unblurry Pro：写真高画質化",
+      "search": "Unblurry 写真高画質化",
+      "tags": [
+        "#iPhoneアプリ",
+        "#アプリ紹介",
+        "#iOS"
+      ]
+    },
+    "unblurry/ko": {
+      "app": "unblurry",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/t0ycy8.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=h7_unblurry_ko&mt=8",
+      "hook": "흐릿한 사진? 또렷하게 바꿔요",
+      "name": "Unblurry Pro: 사진 선명하게",
+      "search": "Unblurry 사진 선명하게",
+      "tags": [
+        "#앱추천",
+        "#아이폰어플",
         "#iOS"
       ]
     },

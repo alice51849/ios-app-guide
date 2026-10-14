@@ -1,0 +1,140 @@
+{
+ "note": "Threads picture-slot queue (Taiwan 11:00). A queued post takes the slot on its date; otherwise the countdown card, otherwise the regular picture post. Body has no links; store links go in the first reply.",
+ "posts": [
+  {
+   "date": "2026-10-15",
+   "app": "claudeusagemini",
+   "app_id": "6818607603",
+   "task": "claudeusagemini-09",
+   "source": "tw-threads-work-personal",
+   "ct": "un_tw_threads_2",
+   "text": "公司一個 Claude 帳號、自己私人一個，兩邊的 5 小時和每週額度各算各的，重置時間又不一樣。\n每次要開新任務前都在想：現在該用哪一個？\n\n我做 UsageNow 的時候，一開始就設計成多帳號並排：工作、個人、Pro、Max 都可以加，依「5 小時最快重置」「每週最快重置」或用量高低排序，最上面就是最快恢復的那個。也能直接拖曳排成自己習慣的順序。\n主畫面小工具上可以直接翻過每一個帳號，點一下就重新整理。\n\n如果你還有 Codex 或 Copilot 的帳號，也能放在同一個列表。\n\n免費下載，App 內完整試用 24 小時，之後一次買斷，不訂閱。\n連結在留言。"
+  },
+  {
+   "date": "2026-10-17",
+   "app": "claudeusagemini",
+   "app_id": "6818607603",
+   "task": "claudeusagemini-09",
+   "source": "hk-threads-accounts",
+   "ct": "un_hk_threads_1",
+   "text": "用 Claude Code 寫 code 寫到一半撞 limit，相信不少香港 dev 都試過。\n最麻煩是返工用公司 account、收工用自己的 account，兩邊的 5 小時同每週額度各自計，根本記不住哪個先 reset。\n\n我是台灣的獨立開發者，做了 UsageNow 這個 iPhone app：\n・主畫面、鎖定畫面 widget 顯示每個 AI plan 還剩多少、幾時 reset，有倒數\n・Claude、Codex、Copilot、Gemini 都可以加，多個 account 並排，按 reset 時間或用量排序\n・自己設提醒，例如用到 90% 就通知\n・Apple Watch 也看得到\n\n介面有 50 種語言，繁中、英文隨時在設定切換。\n免費下載，app 內完整試用 24 小時，之後一次買斷，不用訂閱。\n獨立開發，與 Anthropic、OpenAI 等公司無關。連結放留言。"
+  },
+  {
+   "date": "2026-10-19",
+   "app": "claudeusagemini",
+   "app_id": "6818607603",
+   "task": "claudeusagemini-09",
+   "source": "tw-threads-watch-meeting",
+   "ct": "un_tw_threads_3",
+   "text": "開會開到一半，很想知道剛剛丟給 Claude Code 跑的東西，額度還撐不撐得住。\n但在會議上拿起手機滑，看起來就是不專心。\n\n這是我在 UsageNow 加上 Apple Watch 複雜功能的原因：抬手看一眼錶面，就知道額度還剩多少。散會回座位前，就知道該接著跑，還是等重置。\n\n手機這邊，主畫面和鎖定畫面小工具各種尺寸都有，每個額度都有重置倒數，也顯示確切的重置時間。\n提醒可以設「用到 98% 通知我」或「額度恢復時通知我」，每個額度每個週期只響一次，不會一直吵。\n\niPhone、iPad、Apple Watch 都能用。免費下載，完整試用 24 小時，之後一次買斷 Pro。連結在留言。"
+  },
+  {
+   "date": "2026-10-21",
+   "app": "claudeusagemini",
+   "app_id": "6818607603",
+   "task": "claudeusagemini-09",
+   "source": "tw-threads-privacy",
+   "ct": "un_tw_threads_4",
+   "text": "做 UsageNow 的時候，我最在意的一件事是：要讀 AI 帳號的用量就一定要登入，那登入資料會去哪裡？\n\n我的做法：\n・在 Claude、ChatGPT、GitHub、Google 各自的官方登入頁登入\n・登入狀態只存在你裝置的鑰匙圈（Keychain）\n・App 只跟這些服務本身連線\n・沒有 UsageNow 伺服器、不用註冊帳號、沒有追蹤\n\n所以你的用量資料不會經過我這邊，因為我根本沒有伺服器可以收。\n\nApp 本身做的事很單純：在主畫面顯示各個 AI 方案還剩多少、什麼時候重置，快用完之前提醒你。\n免費下載，完整試用 24 小時，之後一次買斷 Pro。獨立開發，跟這幾家公司都沒有關係。連結在留言。"
+  },
+  {
+   "date": "2026-10-23",
+   "app": "claudeusagemini",
+   "app_id": "6818607603",
+   "task": "claudeusagemini-09",
+   "source": "claudeusagem_zhHant_4",
+   "ct": "claudeusagem_zhHant_4",
+   "text": "Claude 跑到一半突然說額度用完，才發現不是 5 小時額度，而是每週額度先見底？UsageNow 讓你在主畫面小工具上看 Claude 5 小時與每週額度（含各模型每週上限）、Codex、Copilot 進階請求和 Gemini 每日配額，還有重置倒數。可以自己設 90% 或 98% 提醒，額度恢復也會通知。登入在各服務的官方頁面，資料存在裝置鑰匙圈，沒有 UsageNow 伺服器。App 內可免費試用 24 小時，之後一次買斷不訂閱。獨立開發，與 Anthropic、OpenAI、GitHub、Microsoft、Google 無關。"
+  },
+  {
+   "date": "2026-10-29",
+   "app": "ledmovingtext",
+   "app_id": "6806639602",
+   "task": "ledmovingtext-07",
+   "source": "ledmovingtex_zhHant_1",
+   "ct": "ledmovingtex_zhHant_1",
+   "text": "市集擺攤一整天，最常被問的就是「還有貨嗎？」「可以刷卡嗎？」「排隊從哪開始？」喊到沒聲音。LED Moving Text 可以先把要說的話一行一句打好，現場點一下切下一句，或設 2–20 秒自動輪播。手機直接變成全螢幕跑馬燈，離線可用、不用註冊、沒有廣告；輸入不限次數、全螢幕、左右跑動和 108 種文字顏色永久免費。介面有 50 種語言，在 App 裡就能切換，攤位上的外籍夥伴也能用自己的語言操作。"
+  },
+  {
+   "date": "2026-10-31",
+   "app": "notesstudio100",
+   "app_id": "6798813048",
+   "task": "notesstudio100-04",
+   "source": "notesstudio1_zhHant_1",
+   "ct": "notesstudio1_zhHant_1",
+   "text": "準備國考最怕的不是背不完，是筆記 App 中途改訂閱、或硬要你登入帳號。我是台灣的獨立開發者，做了 100 Notes Studio：不用帳號、沒有廣告、不用外部 AI，核心編輯離線可用。PDF 講義直接標註，手寫內容在裝置上辨識、可以搜尋；筆記裡就能做抽認卡和填空卡，用 FSRS 間隔重複排複習。免費版有 1 本最多 5 頁的筆記本和 2 款風格，100 款風格都能先預覽；要更多筆記本和全部風格，一次購買，不是訂閱。介面 50 種語言，App 內切換。"
+  },
+  {
+   "date": "2026-11-02",
+   "app": "savetag",
+   "app_id": "6802505528",
+   "task": "savetag-04",
+   "source": "savetag_zhHant_1",
+   "ct": "savetag_zhHant_1",
+   "text": "很多人把連結丟進傳給自己的聊天室或備忘錄，結果食譜、想買的外套、出國景點全混在一條紀錄裡，要用時翻不到。我做了 SaveTag：從任何 App 用分享選單一鍵存下，裝置端自動貼上美食、旅遊、購物等標籤，記得大概就搜得到；每天「重新發現」挑幾則沒讀的給你。不用註冊、不上雲端、沒廣告。不購買也能用全部功能、保留最新 5 筆，Pro 一次性 App 內購買。介面 50 種語言，App 內切換。"
+  },
+  {
+   "date": "2026-11-04",
+   "app": "aim990",
+   "app_id": "6784974530",
+   "task": "aim990-10",
+   "source": "aim990_zhHant_1",
+   "ct": "aim990_zhHant_1",
+   "text": "多益刷了幾百題，分數還卡在同一區間？最怕的是錯很多，卻說不出到底錯在哪一類。\n我做了 Aim990：先用 8 分鐘、約 20 題文法／聽力／閱讀診斷，找出最弱的 3 項技能，寫成一份處方：先修哪項、為什麼失分。之後每天只練一項，分診斷、修復、驗證三段；第 30 天用同樣技能複測，和第 1 天並排比。\n免費下載，一次購買解鎖全部，無訂閱；不用帳號、可離線、沒廣告。題目是原創非官方教材，與 ETS 無關，級距只是估算，不保證分數。"
+  },
+  {
+   "date": "2026-11-06",
+   "app": "wordmatelite",
+   "app_id": "6797601720",
+   "task": "wordmatelite-10",
+   "source": "wordmatelite_zhHant_1",
+   "ct": "wordmatelite_zhHant_1",
+   "text": "裝過三個背單字 App，三個都死在「先把單字卡整理好」那一步？\nWordmate Lite 拿掉的就是這步：一次五個字，畫面像一條小石子路，踩完一顆前進一步，結束時把今天學會的五個字完整列給你看。44 種學習語言、14 個生活主題、三種難度，介面 50 種語言可在 App 內切換，可離線、不用帳號。\n老實說免費範圍不大：選一種語言、一個主題，練入門前 10 個字、收藏 3 個；覺得合用再一次買斷，沒有訂閱。我是開發者，歡迎直接留言問。"
+  },
+  {
+   "date": "2026-11-08",
+   "app": "sereno",
+   "app_id": "6788236641",
+   "task": "sereno-07",
+   "source": "sereno_zhHant_1",
+   "ct": "sereno_zhHant_1",
+   "text": "睡前開白噪音，結果每隔幾分鐘就聽到雨聲「接縫」重來一次，反而更清醒？這是我做「Sereno: 極致睡眠音效」的原因：聲音在手機上即時生成，雨不循環、海浪不重複。可以把雨聲、風扇、褐噪音疊在一起，存成自己的組合；睡眠計時器會慢慢淡出，不會突然斷掉。完全離線、沒有廣告、不用帳號，介面有 50 種語言可在 App 內切換。免費先試，想要全部聲音、無限疊加和調音再一次買斷，不訂閱。搜尋時請打全名，同名 App 很多。你睡覺習慣聽什麼聲音？"
+  },
+  {
+   "date": "2026-11-21",
+   "app": "dailymatelite",
+   "app_id": "6794725568",
+   "task": "dailymatelite-07",
+   "source": "dailymatelit_zhHant_1",
+   "ct": "dailymatelit_zhHant_1",
+   "text": "家裡的印尼看護剛來，阿嬤想跟她多聊兩句，卻不知道從哪開始。DailyMate Lite 是一來一往的情境短句：一句提示配一句自然回覆，50 種學習語言、14 大主題，用手機內建語音聽發音、可調語速。每種語言的進度分開記：看護把介面切成印尼文練中文，家人用同一支手機學她的語言；介面 50 種語言在 App 裡就能切。要說清楚的是，只有介面會換語言，打的字不會被翻譯。免費可練「旅行」初級，其餘主題一次買斷、沒有訂閱。"
+  },
+  {
+   "date": "2026-11-23",
+   "app": "tripbeelite",
+   "app_id": "6791299610",
+   "task": "tripbeelite-06",
+   "source": "tripbeelite_zhHant_1",
+   "ct": "tripbeelite_zhHant_1",
+   "text": "下個月就要出發，行程卻散在 LINE 記事本、截圖和訂房 App 裡？TripBee Lite 只處理「眼前這一趟」：每日時間軸放航班、住宿和活動，備註、提醒、票券編號都收在旁邊。免費版可存一趟，回來再換下一趟。想同時存多趟、分享、備份或用智慧打包清單，一次買斷就好，沒有訂閱。不用帳號、沒有廣告和追蹤。介面有 50 種語言，在 App 裡直接切換。"
+  },
+  {
+   "date": "2026-12-01",
+   "app": "wordmate",
+   "app_id": "6789917808",
+   "task": "wordmate-09",
+   "source": "wordmate_zhHant_1",
+   "ct": "wordmate_zhHant_1",
+   "text": "想學日文、韓文很多次，最後都輸給「打開 App 很麻煩」：通勤時手根本空不出來。\n我做 Wordmate 時就想讓單字自己出現在眼前：主畫面互動小工具可以直接看下一個字、收藏；Apple Watch 上也能學、聽系統發音、看進度。44 種學習語言、14 個主題、84 個單元；介面有 50 種語言可在 App 內切換，和學習語言分開設定，每種語言進度各自保存。\n這款是付費下載、一次買斷，沒有訂閱、沒有內購，不用帳號、沒有第三方廣告。想先試這種學法，可以先用同系列免費起步的 Wordmate Lite（沒有小工具和手錶）。"
+  },
+  {
+   "date": "2027-02-15",
+   "app": "cvdesk",
+   "app_id": "6781337213",
+   "task": "cvdesk-04",
+   "source": "cvdesk_zhHant_3",
+   "ct": "cvdesk_zhHant_3",
+   "text": "投外商職缺石沉大海，有時不是你不夠好，是履歷被 ATS 讀亂了：雙欄、表格、圖示技能條都可能被打散。我做的 CV Desk 會在手機上算出 0–100 的 ATS 分數，給可點的修正建議，匯出單欄、文字可選取的 PDF，或可編輯的 Word。建立和預覽不用付費，一次性解鎖就能匯出無浮水印版本；不訂閱、不用帳號、履歷不上傳。分數是裝置端估算，各公司系統不同。介面有 50 種語言，App 內就能切換。"
+  }
+ ]
+}

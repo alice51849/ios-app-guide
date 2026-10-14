@@ -211,6 +211,9 @@ def post_threads(url, meta, e):
     token, user = os.environ.get("THREADS_TOKEN", ""), os.environ.get("THREADS_USER_ID", "")
     if not token or not user:
         return print("countdown: Threads secrets missing")
+    from threads_post import queued_today
+    if queued_today():
+        return print("countdown: a queued Threads post has today's slot; Threads skipped")
     api = "https://graph.threads.net/v1.0"
     c = _post(f"{api}/{user}/threads", {"media_type": "IMAGE", "image_url": url, "text": meta["caption"], "access_token": token})["id"]
     time.sleep(30)

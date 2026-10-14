@@ -185,12 +185,47 @@ def publish_post(
     return post_id
 
 
+QUEUE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "growth", "threads-queue.json")
+
+
+def queued_today(day=None):
+    """The post queued for today (Taiwan date) in growth/threads-queue.json, or None."""
+    import datetime as _d
+    day = day or _d.datetime.now(_d.timezone(_d.timedelta(hours=8))).date()
+    try:
+        with open(QUEUE, encoding="utf-8") as f:
+            posts = json.load(f).get("posts", [])
+    except (OSError, ValueError):
+        return None
+    return next((p for p in posts if p.get("date") == day.isoformat()), None)
+
+
+def queued_links(post):
+    url = campaign_app_store_url(f"https://apps.apple.com/app/id{post['app_id']}", post["ct"])
+    play = play_store_url(post["app_id"], post["ct"])
+    return f"App Store: {url}" + (f"\nGoogle Play: {play}" if play else "")
+
+
 def main():
     tok = os.environ.get("THREADS_TOKEN", "").strip()
     uid = os.environ.get("THREADS_USER_ID", "").strip()
     if not tok or not uid:
         print("missing THREADS_TOKEN / THREADS_USER_ID", file=sys.stderr)
         return 1
+    post = queued_today()
+    if post:
+        try:
+            post_id = publish_post(tok, uid, post["text"])
+            print("threads queued post ok, id:", post_id, "| task:", post.get("task"))
+            publish_post(tok, uid, queued_links(post), reply_to=post_id)
+            return 0
+        except (HTTPStatusError, RequestError, ValueError, KeyError) as error:
+            print(f"Threads queued post failed: {error}", file=sys.stderr)
+            return 1
+    import countdown_cards
+    if countdown_cards.due(countdown_cards.today_tw()):
+        print("countdown card today (countdown-daily.yml); picture post skipped")
+        return 0
     try:
         pool = telegram_post.load_pool()
         item, _ = pick_postable(pool)

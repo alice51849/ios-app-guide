@@ -95,8 +95,10 @@ Caitlyn 在本機對話貼一行「請照這個檔執行」時，就照下面做
 > 1. `cd ~/00_GrowthEngine && git pull`
 > 2. 套用修改：`git apply lib/proposals/2026-10-14-iae-seasonal-submission.patch`。內容：只允許名稱以 `S26-` 開頭的季節活動送審；送出前逐筆回讀 ASC，送審單裡只要有一筆不是季節活動就拒絕，所以舊的每日型草稿和 Cyca 的殘留項目永遠送不出去；MARKETING 期限延到 2027-04-30。
 > 3. 跑 `python3 -m pytest -q lib/test_asc_write_authorization.py`；要補測試就補。
-> 4. 全綠才 commit 並 push，再到 GitHub 手動跑 `iae-cycle.yml` 一次。
-> 5. 回報。
+> 4. 全綠才 commit 並 push。
+> 5. 在 `aso/iae_seasonal.py` 加 `--submit` 模式（目前它刻意沒有送審程式，`write()` 也擋 reviewSubmission 路徑）：只送 `reports/iae-status.json` 裡 `readyToSubmit: true` 的 `S26-` 活動；該 App 已有未完成的送審單（READY_FOR_REVIEW／WAITING_FOR_REVIEW／IN_REVIEW／UNRESOLVED_ISSUES）就跳過並記錄；流程照 `aso/inapp_events.py` 的 `submit_event()`：建送審單 → 加這一個 appEvent → 回讀 items 確認只有這一筆 → `submitted: true`，失敗就把空送審單取消。補測試，並把 `iae-cycle.yml` 的 drafts 模式改成草稿建完接著 `--submit`，以後每週一全自動。
+> 6. 立刻送這 5 個（event id）：S26-CDN-Suneung-D30 `6822784812`（CountDaysNow 6807079789，**10/16 前一定要送**）、S26-Bopomofo-Grade1-Nov `6822784905`（6773017109）、S26-Snapport-Holiday-Travel `6822785073`（6792856304）、S26-StayClock-Holiday-Desk `6822785247`（6814035888）、S26-Mochi-Fresh-Start `6822785328`（6785004775）。不要送任何名稱含 SKIPPED／ZOMBIE／do-not-submit 的舊草稿，也不要碰 Cyca 那張舊送審單。
+> 7. 回報每個活動的送審狀態，並跑一次 `iae-cycle.yml`（status）更新報告。
 
 > **2026-10-14 最優先：送 Apple 精選提名（Caitlyn 明確要求現在送）。** 這是提名，不是改 App，也不是改商店文字，不受「暫不改 ASC」限制。
 > 1. 內容在 `.github/growth/drafts/apple-featuring-nominations.json`，共 6 款：CountDaysNow、LED Moving Text、Stay Clock、Snapport Lite、Mochi、Mochi DoneStamp。文字已對過商品頁，不要改寫內容。

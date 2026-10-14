@@ -1,0 +1,53 @@
+name: Hook clip schedule replan
+
+# Re-plans the hook-clip posting schedule (.github/growth/clips.json) every day
+# after the growth scoreboard, so the small-store sprint follows the newest
+# closest-to-#1 storefronts, seasons switch on and off by date, and the
+# promotion page (office.cait518.cc) stays current. The planner lives in the
+# private Growth Engine (shorts/scripts/schedule_posts.py, read-only checkout).
+on:
+  workflow_run:
+    workflows: ["Daily growth scoreboard"]
+    types: [completed]
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: clip-replan
+  cancel-in-progress: false
+
+jobs:
+  replan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: alice51849/00_GrowthEngine
+          ssh-key: ${{ secrets.GROWTH_ENGINE_DEPLOY_KEY }}
+          path: .engine
+          sparse-checkout: shorts
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Re-plan and refresh the promotion page
+        run: |
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 .engine/shorts/scripts/schedule_posts.py --start 2026-10-13 \
+              --ig-start 2026-10-15 --threads-start 2026-10-15 --out .github/growth/clips.json
+            python3 .github/scripts/clip_progress.py
+            python3 .github/scripts/test_app_improvements.py
+            git add .github/growth/clips.json .github/growth/app-improvements.json
+            git diff --cached --quiet && exit 0
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "鉤子片日程每日重排：小國衝榜、檔期、外宣頁 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          exit 1

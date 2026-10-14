@@ -19,7 +19,7 @@ on:
         default: "450"
 
 permissions:
-  contents: read
+  contents: write # sprint-targets.json for the hook-clip scheduler
   issues: write
 
 concurrency:
@@ -55,10 +55,27 @@ jobs:
             --state .growth-scoreboard/state.json \
             --report .growth-scoreboard/report.md \
             --json-out .growth-scoreboard/scoreboard.json \
+            --sprint-out .github/growth/sprint-targets.json \
             --search-budget "$SEARCH_BUDGET" \
             --chart-budget "$CHART_BUDGET" \
             --issue
           cat .growth-scoreboard/report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Publish sprint targets for the hook-clip scheduler
+        if: success() && hashFiles('.github/growth/sprint-targets.json') != ''
+        continue-on-error: true
+        run: |
+          cp .github/growth/sprint-targets.json "$RUNNER_TEMP/sprint-targets.json"
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp "$RUNNER_TEMP/sprint-targets.json" .github/growth/sprint-targets.json
+            git add .github/growth/sprint-targets.json
+            git diff --cached --quiet && exit 0
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "成績單：小國衝榜目標更新 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          exit 1
       - name: Save scoreboard history
         if: always() && hashFiles('.growth-scoreboard/state.json') != ''
         uses: actions/cache/save@v4

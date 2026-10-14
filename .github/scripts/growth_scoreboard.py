@@ -595,6 +595,22 @@ def opportunities(state, names, limit=25):
     return rows[:limit]
 
 
+def names_for(apps):
+    return {app.app_id: app.name for app in apps}
+
+
+def write_sprint_targets(path, state, names, now):
+    """Closest-to-#1 pairs, public App Store data only, for the clip scheduler:
+    a native-language clip in that storefront's language is posted daily."""
+    rows = opportunities(state, names)
+    targets = [{"app_id": str(e["app_id"]), "country": e["country"], "locale": e["locale"],
+                "keyword": e["keyword"], "rank": e["rank"], "leader_ratings": leader}
+               for _, e, leader in rows]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"updated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "targets": targets},
+                               ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
 KIND_ZH = {"free": "免費", "paid": "付費", "grossing": "營收"}
 
 
@@ -822,6 +838,8 @@ def main(argv=None):
     parser.add_argument("--state", type=Path, required=True)
     parser.add_argument("--report", type=Path, required=True)
     parser.add_argument("--json-out", type=Path)
+    parser.add_argument("--sprint-out", type=Path,
+                        help="write the closest-to-#1 pairs for the hook-clip scheduler")
     parser.add_argument("--search-budget", type=int, default=600)
     parser.add_argument("--chart-budget", type=int, default=150)
     parser.add_argument("--delay", type=float, default=3.1)
@@ -865,6 +883,8 @@ def main(argv=None):
             json.dumps({"outcome": outcome, "state": state}, ensure_ascii=False, indent=1),
             encoding="utf-8",
         )
+    if args.sprint_out:
+        write_sprint_targets(args.sprint_out, state, names_for(apps), now)
     print(json.dumps({**outcome, "requests": fetcher.requests}, ensure_ascii=False))
     if args.issue:
         token = os.environ.get("GITHUB_TOKEN", "")

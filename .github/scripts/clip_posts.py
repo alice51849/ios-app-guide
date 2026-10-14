@@ -49,6 +49,12 @@ TEXT = {
            "tags": "#iphoneapps #appstore #ios"},
     "es": {"search": "Busca «{s}» en el App Store", "bio": "Enlace en la bio", "button": "Descargar en el App Store",
            "tags": "#iphoneapps #appstore #ios"},
+    "id": {"search": "Cari “{s}” di App Store", "bio": "Link di bio", "button": "Unduh di App Store",
+           "tags": "#aplikasiiphone #appstore #ios"},
+    "vi": {"search": "Tìm “{s}” trên App Store", "bio": "Link ở bio", "button": "Tải trên App Store",
+           "tags": "#ungdungiphone #appstore #ios"},
+    "th": {"search": "ค้นหา “{s}” ใน App Store", "bio": "ลิงก์อยู่ในโปรไฟล์", "button": "ดาวน์โหลดใน App Store",
+           "tags": "#แอพไอโฟน #appstore #ios"},
     "pt-BR": {"search": "Pesquise “{s}” na App Store", "bio": "Link na bio", "button": "Baixar na App Store",
               "tags": "#iphoneapps #appstore #ios"},
 }
@@ -90,7 +96,8 @@ LAYOUTS = [
 
 PLAY_LINE = {"en": "Also on Google Play", "zh-Hant": "Android 版在 Google Play", "ja": "AndroidはGoogle Playで",
              "ko": "Android는 Google Play에서", "de": "Auch bei Google Play", "fr": "Aussi sur Google Play",
-             "es": "También en Google Play", "pt-BR": "Também no Google Play"}
+             "es": "También en Google Play", "pt-BR": "Também no Google Play",
+             "id": "Juga ada di Google Play", "vi": "Có cả trên Google Play", "th": "มีบน Google Play ด้วย"}
 
 
 def ios_id(clip):

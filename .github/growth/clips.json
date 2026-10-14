@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T13:11:03Z",
+  "updated_at": "2026-10-14T13:16:56Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -533,6 +533,76 @@
         "#appstore",
         "#ios"
       ]
+    },
+    "lumiletters/zh-Hant": {
+      "app": "lumiletters",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/u9lens.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6778748533?pt=118326163&ct=h7_lumiletters_zh-Hant&mt=8",
+      "hook": "滑手機的時間 也能學 ABC",
+      "name": "Lumi 字母星球 Lite：兒童英文ABC遊戲",
+      "search": "Lumi 字母星球 Lite",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
+    },
+    "lumimath/en": {
+      "app": "lumimath",
+      "locale": "en",
+      "url": "https://files.catbox.moe/vk60cy.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6778269699?pt=118326163&ct=h7_lumimath_en&mt=8",
+      "hook": "Every right answer lights a planet",
+      "name": "Lumi Math Planet: Explorer",
+      "search": "Lumi Math Planet Explorer",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "lumimath/zh-Hant": {
+      "app": "lumimath",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/rc6phy.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6778269699?pt=118326163&ct=h7_lumimath_zh-Hant&mt=8",
+      "hook": "答對一題 小星球就亮起來",
+      "name": "Lumi數學星球：探索版",
+      "search": "Lumi數學星球 探索版",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
+    },
+    "lumiweather/en": {
+      "app": "lumiweather",
+      "locale": "en",
+      "url": "https://files.catbox.moe/kuyoqm.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=h7_lumiweather_en&mt=8",
+      "hook": "Need sunscreen today?",
+      "name": "Lumi Weather: What to Wear",
+      "search": "Lumi Weather",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "lumiweather/zh-Hant": {
+      "app": "lumiweather",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/dfotuw.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=h7_lumiweather_zh-Hant&mt=8",
+      "hook": "今天要不要 擦防曬？",
+      "name": "Lumi天氣星球：天氣預報與穿搭建議",
+      "search": "Lumi天氣星球",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
     }
   },
   "schedule": [
@@ -546,19 +616,19 @@
       "date": "2026-10-15",
       "slot": 1,
       "channel": "instagram",
-      "clip": "claudeusagemini/zh-Hant"
+      "clip": "claudeusagemini/ja"
     },
     {
       "date": "2026-10-15",
       "slot": 1,
       "channel": "telegram",
-      "clip": "mochi/zh-Hant"
+      "clip": "mochi/ja"
     },
     {
       "date": "2026-10-15",
       "slot": 1,
       "channel": "threads",
-      "clip": "claudeusagemini/zh-Hant"
+      "clip": "claudeusagemini/ja"
     },
     {
       "date": "2026-10-16",
@@ -588,7 +658,7 @@
       "date": "2026-10-17",
       "slot": 1,
       "channel": "telegram",
-      "clip": "claudeusagemini/zh-Hant"
+      "clip": "claudeusagemini/ja"
     },
     {
       "date": "2026-10-17",
@@ -618,7 +688,7 @@
       "date": "2026-10-19",
       "slot": 1,
       "channel": "instagram",
-      "clip": "mochi/zh-Hant"
+      "clip": "mochi/ja"
     },
     {
       "date": "2026-10-19",
@@ -630,7 +700,7 @@
       "date": "2026-10-19",
       "slot": 1,
       "channel": "threads",
-      "clip": "mochi/zh-Hant"
+      "clip": "mochi/ja"
     },
     {
       "date": "2026-10-20",
@@ -964,6 +1034,12 @@
     },
     {
       "date": "2026-11-05",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumiletters/zh-Hant"
+    },
+    {
+      "date": "2026-11-05",
       "slot": 15,
       "channel": "instagram",
       "clip": "cyca/en"
@@ -1002,7 +1078,13 @@
       "date": "2026-11-06",
       "slot": 15,
       "channel": "instagram",
-      "clip": "lumiletters/en"
+      "clip": "lumimath/en"
+    },
+    {
+      "date": "2026-11-07",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumiweather/zh-Hant"
     },
     {
       "date": "2026-11-07",
@@ -1035,6 +1117,18 @@
       "clip": "cyca/zh-Hant"
     },
     {
+      "date": "2026-11-08",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "lumiletters/en"
+    },
+    {
+      "date": "2026-11-09",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumimath/zh-Hant"
+    },
+    {
       "date": "2026-11-09",
       "slot": 15,
       "channel": "telegram",
@@ -1057,6 +1151,12 @@
       "slot": 1,
       "channel": "threads",
       "clip": "dailymatelite/zh-Hant"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "lumiweather/en"
     },
     {
       "date": "2026-11-11",
@@ -1095,6 +1195,18 @@
       "clip": "dailymatelite/en"
     },
     {
+      "date": "2026-11-14",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumimath/zh-Hant"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumiletters/zh-Hant"
+    },
+    {
       "date": "2026-11-15",
       "slot": 15,
       "channel": "telegram",
@@ -1105,12 +1217,60 @@
       "slot": 15,
       "channel": "threads",
       "clip": "dbhalo/en"
+    },
+    {
+      "date": "2026-11-16",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumiletters/zh-Hant"
+    },
+    {
+      "date": "2026-11-16",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumimath/zh-Hant"
+    },
+    {
+      "date": "2026-11-17",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lumimath/en"
     },
     {
       "date": "2026-11-17",
       "slot": 15,
       "channel": "threads",
       "clip": "lumiletters/en"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumiweather/zh-Hant"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumiweather/zh-Hant"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "lumimath/en"
+    },
+    {
+      "date": "2026-11-21",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lumiweather/en"
+    },
+    {
+      "date": "2026-11-21",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "lumiweather/en"
     }
   ]
 }

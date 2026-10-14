@@ -1,0 +1,88 @@
+name: Utility card daily
+
+# One useful card a day, rotating: TOEIC-style business English word (Aim990 /
+# Wordmate Lite), 注音 of the day for kids (Lumi注音星球), passport / ID photo
+# size (Snapport Lite). Telegram and Instagram every day; Threads only when the
+# account stays at 3 posts that day (picture/queue/countdown slot + hook clips).
+# Zero token: the card is drawn from .github/growth/utility-cards.json by
+# .github/scripts/utility_cards.py. Each post's link goes on the promotion page.
+on:
+  schedule:
+    - cron: "10 5 * * *"   # Taiwan 13:10
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Post to one channel only (telegram, threads, instagram); empty = all"
+        default: ""
+
+permissions:
+  actions: read   # duplicate-slot gate
+  contents: write # the day's card goes on the utility-cards branch; post links on the page
+
+concurrency:
+  group: utility-daily
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Prevent duplicate daily slot
+        id: slot
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/social_slot_gate.py --workflow utility-daily.yml --slots 5
+      - name: Draw the card
+        if: steps.slot.outputs.should_post == 'true'
+        run: |
+          sudo apt-get install -y -q fonts-noto-cjk >/dev/null
+          pip install -q pillow
+          python3 .github/scripts/test_utility_cards.py -q
+          python3 .github/scripts/utility_cards.py make --out "$RUNNER_TEMP/card.jpg"
+      - name: Publish the card on the utility-cards branch
+        if: steps.slot.outputs.should_post == 'true'
+        id: card
+        run: |
+          name="card-$(date -u +%Y%m%d).jpg"
+          work="$RUNNER_TEMP/cards"
+          git init -q "$work" && cd "$work"
+          git checkout -q --orphan utility-cards
+          cp "$RUNNER_TEMP/card.jpg" "$name"
+          git add "$name"
+          git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -q -m "utility card $name"
+          git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" utility-cards:utility-cards
+          echo "url=https://raw.githubusercontent.com/${{ github.repository }}/utility-cards/$name" >> "$GITHUB_OUTPUT"
+      - name: Post to Telegram, Instagram and (if under the cap) Threads
+        if: steps.slot.outputs.should_post == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          ONLY: ${{ inputs.only }}
+        run: |
+          sleep 20  # let raw.githubusercontent.com serve the new file
+          python3 .github/scripts/utility_cards.py post --card "$RUNNER_TEMP/card.jpg" --url "${{ steps.card.outputs.url }}" ${ONLY:+--only "$ONLY"}
+      - name: Record the post links on the promotion page
+        if: steps.slot.outputs.should_post == 'true'
+        continue-on-error: true
+        run: |
+          if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi
+          cp .github/growth/clip-posts.json "$RUNNER_TEMP/clip-posts.json"
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 .github/scripts/clip_progress.py --merge-log "$RUNNER_TEMP/clip-posts.json"
+            git add .github/growth/clip-posts.json .github/growth/app-improvements.json
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "每日實用卡發文紀錄：外宣頁連結更新 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not record the utility card post"; exit 1

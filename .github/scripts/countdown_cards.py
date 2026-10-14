@@ -190,17 +190,15 @@ def _get(url, timeout=60):
         return json.loads(r.read())
 
 
-def post_telegram(card, meta, e):
+def send_photo(card, caption, row, label="countdown"):
+    """Upload the card to the Telegram channel with a row of link buttons; the API result or None."""
     token, chat = os.environ.get("TELEGRAM_BOT_TOKEN", ""), os.environ.get("TELEGRAM_CHAT_ID", "")
     if not token or not chat:
-        return print("countdown: Telegram secrets missing")
-    row = [{"text": TEXT[e["locale"]]["button"], "url": store_url(e, "tg")}]
-    play = play_store_url(APP_ID, f"cd_{e['id']}_tg"[:40])
-    if play:
-        row.append({"text": "Google Play", "url": play})
+        print(f"{label}: Telegram secrets missing")
+        return None
     boundary = "lumicountdown"
     parts = []
-    for k, v in {"chat_id": chat, "caption": meta["caption"], "reply_markup": json.dumps({"inline_keyboard": [row]})}.items():
+    for k, v in {"chat_id": chat, "caption": caption, "reply_markup": json.dumps({"inline_keyboard": [row]})}.items():
         parts.append(f"--{boundary}\r\nContent-Disposition: form-data; name=\"{k}\"\r\n\r\n{v}\r\n".encode())
     parts.append(f"--{boundary}\r\nContent-Disposition: form-data; name=\"photo\"; filename=\"card.jpg\"\r\n"
                  "Content-Type: image/jpeg\r\n\r\n".encode() + Path(card).read_bytes() + b"\r\n")
@@ -208,45 +206,70 @@ def post_telegram(card, meta, e):
     req = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendPhoto", data=b"".join(parts),
                                  headers={"Content-Type": f"multipart/form-data; boundary={boundary}"})
     with urllib.request.urlopen(req, timeout=60) as r:
-        print("countdown: telegram", json.loads(r.read()).get("ok"))
+        result = json.loads(r.read())
+    print(f"{label}: telegram", result.get("ok"))
+    return result
 
 
-def post_threads(url, meta, e):
+def threads_image(url, text, links, label="countdown"):
+    """Image post on Threads, store links in the first reply; the media id or None."""
     token, user = os.environ.get("THREADS_TOKEN", ""), os.environ.get("THREADS_USER_ID", "")
     if not token or not user:
-        return print("countdown: Threads secrets missing")
-    from threads_post import queued_today
-    if queued_today():
-        return print("countdown: a queued Threads post has today's slot; Threads skipped")
+        print(f"{label}: Threads secrets missing")
+        return None
     api = "https://graph.threads.net/v1.0"
     user = _get(f"{api}/me?fields=id&access_token={token}").get("id") or user  # secret may be stale
-    c = _post(f"{api}/{user}/threads", {"media_type": "IMAGE", "image_url": url, "text": meta["caption"], "access_token": token})["id"]
+    c = _post(f"{api}/{user}/threads", {"media_type": "IMAGE", "image_url": url, "text": text, "access_token": token})["id"]
     time.sleep(30)
     media = _post(f"{api}/{user}/threads_publish", {"creation_id": c, "access_token": token})["id"]
-    links = [f"App Store: {store_url(e, 'th')}"]
-    play = play_store_url(APP_ID, f"cd_{e['id']}_th"[:40])
-    if play:
-        links.append(f"Google Play: {play}")
     try:
         r = _post(f"{api}/{user}/threads", {"media_type": "TEXT", "text": "\n".join(links), "reply_to_id": media, "access_token": token})["id"]
         time.sleep(5)
         _post(f"{api}/{user}/threads_publish", {"creation_id": r, "access_token": token})
     except Exception as exc:
-        print(f"countdown: Threads reply skipped ({exc.__class__.__name__})")
-    print("countdown: threads", media)
+        print(f"{label}: Threads reply skipped ({exc.__class__.__name__})")
+    print(f"{label}: threads", media)
+    return media
 
 
-def post_instagram(url, meta):
+def instagram_image(url, text, label="countdown"):
+    """Image post on Instagram; the media id or None."""
     token = os.environ.get("IG_ACCESS_TOKEN", "")
     if not token:
-        return print("countdown: IG_ACCESS_TOKEN missing")
+        print(f"{label}: IG_ACCESS_TOKEN missing")
+        return None
     api = "https://graph.instagram.com/v21.0"
     me = _get(f"{api}/me?fields=user_id&access_token={token}")
     user = me.get("user_id") or me.get("id")
-    text = meta["caption"] + "\n" + {"ko": "링크는 프로필에", "zh-Hant": "下載連結在個人檔案", "ja": "リンクはプロフィールから"}.get(meta["locale"], "Link in bio")
     c = _post(f"{api}/{user}/media", {"image_url": url, "caption": text, "access_token": token})["id"]
     time.sleep(10)
-    print("countdown: instagram", _post(f"{api}/{user}/media_publish", {"creation_id": c, "access_token": token}).get("id"))
+    media = _post(f"{api}/{user}/media_publish", {"creation_id": c, "access_token": token}).get("id")
+    print(f"{label}: instagram", media)
+    return media
+
+
+def post_telegram(card, meta, e):
+    row = [{"text": TEXT[e["locale"]]["button"], "url": store_url(e, "tg")}]
+    play = play_store_url(APP_ID, f"cd_{e['id']}_tg"[:40])
+    if play:
+        row.append({"text": "Google Play", "url": play})
+    send_photo(card, meta["caption"], row)
+
+
+def post_threads(url, meta, e):
+    from threads_post import queued_today
+    if queued_today():
+        return print("countdown: a queued Threads post has today's slot; Threads skipped")
+    links = [f"App Store: {store_url(e, 'th')}"]
+    play = play_store_url(APP_ID, f"cd_{e['id']}_th"[:40])
+    if play:
+        links.append(f"Google Play: {play}")
+    threads_image(url, meta["caption"], links)
+
+
+def post_instagram(url, meta):
+    text = meta["caption"] + "\n" + {"ko": "링크는 프로필에", "zh-Hant": "下載連結在個人檔案", "ja": "リンクはプロフィールから"}.get(meta["locale"], "Link in bio")
+    instagram_image(url, text)
 
 
 def main():

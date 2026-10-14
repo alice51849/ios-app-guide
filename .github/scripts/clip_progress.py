@@ -33,6 +33,10 @@ TW = dt.timezone(dt.timedelta(hours=8))
 SLOT_TIME = {"telegram": {1: "01:00", 15: "15:00"}, "instagram": {1: "01:20", 15: "15:20"},
              "threads": {1: "01:40", 15: "15:40"}}
 CHANNEL_NAME = {"telegram": "Telegram", "instagram": "Instagram", "threads": "Threads"}
+# Daily utility cards share the post log under this key prefix.
+UTILITY_PREFIX = "utility/"
+UTILITY_LABEL = {"telegram": "TG", "instagram": "IG", "threads": "Th"}
+UTILITY_TYPE = {"word": "英文單字", "zhuyin": "注音", "photo": "證件照尺寸"}
 # Channels without automation yet: what is true today, shown as-is.
 MANUAL_CHANNELS = [
     ("YouTube Shorts", "本機上傳"),
@@ -57,6 +61,8 @@ def app_names(improvements):
 def build_section(clips, posts, names, now, hook_total=None, notes=(), android=None):
     """Compact, one-screen markdown for the promotion page (heading included)."""
     android = android or {}
+    utility = [p for p in posts if p["clip"].startswith(UTILITY_PREFIX)]
+    posts = [p for p in posts if not p["clip"].startswith(UTILITY_PREFIX)]
     clip_map = clips.get("clips", {})
     schedule = clips.get("schedule", [])
     posted = {(p["channel"], p["clip"]): p for p in posts}
@@ -69,6 +75,7 @@ def build_section(clips, posts, names, now, hook_total=None, notes=(), android=N
               f"| 已排程 | {len(schedule)} 則（到 {schedule[-1]['date'][5:].replace('-', '/') if schedule else '—'}） |",
               f"| 已發出 | {len(posts)} 則 |",
               f"| Android 已上架 | {len(android)} 款（貼文自動附 Google Play） |"]
+    lines.append(utility_row(utility))
     lines += [f"| 備註 | {n} |" for n in notes]
     lines += ["", "| 平台 | 狀態 | 已發 | 下一則 |", "|---|---|---|---|"]
     for channel in ("telegram", "instagram", "threads"):
@@ -120,6 +127,17 @@ def build_performance(perf, names, top=5):
     if skipped:
         lines.append(f"\n洞察未取得：{'；'.join(skipped)}")
     return "\n".join(lines)
+
+
+def utility_row(utility):
+    """One summary row for the daily utility cards (utility_cards.py): count + latest links."""
+    latest = ""
+    if utility:
+        day = utility[-1]["posted_at"][:10]
+        links = [f"[{UTILITY_LABEL.get(p['channel'], p['channel'])}]({p['link']})"
+                 for p in utility if p["posted_at"][:10] == day and p.get("link")]
+        latest = f" · 最新 {day[5:].replace('-', '/')} {UTILITY_TYPE.get(utility[-1]['clip'].split('/')[1], '')}" + (f" {' '.join(links)}" if links else "")
+    return f"| 每日實用卡 | 已發 {len(utility)} 則{latest} |"
 
 
 def replace_section(summary, section):

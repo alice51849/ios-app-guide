@@ -1,0 +1,939 @@
+{
+ "note": "Curated static content for the daily utility cards (utility_cards.py). Photo sizes checked 2026-10-14 against each issuing authority's published rules; cards always tell people to confirm the official rules before applying.",
+ "words": [
+  {
+   "id": "invoice",
+   "word": "invoice",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "發票；請款單",
+    "ja": "請求書",
+    "ko": "청구서, 송장",
+    "en": "a bill that lists what you bought and how much you owe"
+   },
+   "example": "Please send the invoice by Friday."
+  },
+  {
+   "id": "deadline",
+   "word": "deadline",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "截止期限",
+    "ja": "締め切り",
+    "ko": "마감 기한",
+    "en": "the latest time by which something must be done"
+   },
+   "example": "The deadline for the report is Monday."
+  },
+  {
+   "id": "reimburse",
+   "word": "reimburse",
+   "pos": "v.",
+   "meaning": {
+    "zh-Hant": "報銷；償還",
+    "ja": "（立て替えた費用を）払い戻す",
+    "ko": "상환하다, 환급하다",
+    "en": "to pay back money that someone has spent"
+   },
+   "example": "The company will reimburse your travel expenses."
+  },
+  {
+   "id": "postpone",
+   "word": "postpone",
+   "pos": "v.",
+   "meaning": {
+    "zh-Hant": "延期",
+    "ja": "延期する",
+    "ko": "연기하다",
+    "en": "to move an event to a later time"
+   },
+   "example": "The meeting has been postponed until Thursday."
+  },
+  {
+   "id": "itinerary",
+   "word": "itinerary",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "行程表",
+    "ja": "旅程表",
+    "ko": "여행 일정표",
+    "en": "a detailed plan of a trip"
+   },
+   "example": "Your itinerary has been sent to your email."
+  },
+  {
+   "id": "inventory",
+   "word": "inventory",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "庫存",
+    "ja": "在庫",
+    "ko": "재고",
+    "en": "the goods a business has in stock"
+   },
+   "example": "We check the inventory at the end of every month."
+  },
+  {
+   "id": "applicant",
+   "word": "applicant",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "應徵者；申請人",
+    "ja": "応募者、申請者",
+    "ko": "지원자",
+    "en": "a person who applies for a job or a program"
+   },
+   "example": "Each applicant will be interviewed in person."
+  },
+  {
+   "id": "quarterly",
+   "word": "quarterly",
+   "pos": "adj.",
+   "meaning": {
+    "zh-Hant": "每季的",
+    "ja": "四半期ごとの",
+    "ko": "분기별의",
+    "en": "happening every three months"
+   },
+   "example": "Sales rose sharply in the quarterly report."
+  },
+  {
+   "id": "warranty",
+   "word": "warranty",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "保固",
+    "ja": "（製品の）保証",
+    "ko": "품질 보증",
+    "en": "a written promise to repair or replace a product"
+   },
+   "example": "The printer comes with a two-year warranty."
+  },
+  {
+   "id": "venue",
+   "word": "venue",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "會場",
+    "ja": "会場",
+    "ko": "개최 장소",
+    "en": "the place where an event happens"
+   },
+   "example": "The venue for the conference has changed."
+  },
+  {
+   "id": "merger",
+   "word": "merger",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "（公司）合併",
+    "ja": "（企業の）合併",
+    "ko": "합병",
+    "en": "the joining of two companies into one"
+   },
+   "example": "The merger was announced on Monday."
+  },
+  {
+   "id": "reservation",
+   "word": "reservation",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "預約；訂位",
+    "ja": "予約",
+    "ko": "예약",
+    "en": "an arrangement to keep a room, table or seat for you"
+   },
+   "example": "I'd like to make a reservation for two."
+  },
+  {
+   "id": "complimentary",
+   "word": "complimentary",
+   "pos": "adj.",
+   "meaning": {
+    "zh-Hant": "免費贈送的",
+    "ja": "無料の（サービスの）",
+    "ko": "무료의",
+    "en": "given free of charge"
+   },
+   "example": "All guests receive a complimentary breakfast."
+  },
+  {
+   "id": "agenda",
+   "word": "agenda",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "議程",
+    "ja": "議題、協議事項",
+    "ko": "안건, 의제",
+    "en": "a list of things to discuss at a meeting"
+   },
+   "example": "The budget is the first item on the agenda."
+  },
+  {
+   "id": "shipment",
+   "word": "shipment",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "貨物；出貨",
+    "ja": "発送品、出荷",
+    "ko": "배송품, 선적",
+    "en": "a load of goods sent together"
+   },
+   "example": "The shipment will arrive next week."
+  },
+  {
+   "id": "estimate",
+   "word": "estimate",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "估價；估計",
+    "ja": "見積もり",
+    "ko": "견적",
+    "en": "an approximate calculation of the cost"
+   },
+   "example": "Could you give us an estimate for the repairs?"
+  },
+  {
+   "id": "revenue",
+   "word": "revenue",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "營收",
+    "ja": "収益、売上",
+    "ko": "수익, 매출",
+    "en": "the income a business receives"
+   },
+   "example": "Revenue grew by 8 percent last year."
+  },
+  {
+   "id": "supervisor",
+   "word": "supervisor",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "主管",
+    "ja": "上司、監督者",
+    "ko": "상사, 감독자",
+    "en": "a person who oversees other workers"
+   },
+   "example": "Ask your supervisor to approve the request."
+  },
+  {
+   "id": "renovation",
+   "word": "renovation",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "整修",
+    "ja": "改装、改修",
+    "ko": "보수 공사, 리모델링",
+    "en": "work that repairs and improves a building"
+   },
+   "example": "The lobby is closed for renovation."
+  },
+  {
+   "id": "subscription",
+   "word": "subscription",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "訂閱",
+    "ja": "定期購読",
+    "ko": "구독",
+    "en": "paying in advance to receive something regularly"
+   },
+   "example": "Your subscription will renew automatically."
+  },
+  {
+   "id": "attendance",
+   "word": "attendance",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "出席（人數）",
+    "ja": "出席（者数）",
+    "ko": "참석, 참석자 수",
+    "en": "the number of people who are present"
+   },
+   "example": "Attendance at the seminar was higher than expected."
+  },
+  {
+   "id": "refund",
+   "word": "refund",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "退款",
+    "ja": "返金",
+    "ko": "환불",
+    "en": "money that is paid back to you"
+   },
+   "example": "You can request a full refund within 30 days."
+  },
+  {
+   "id": "relocate",
+   "word": "relocate",
+   "pos": "v.",
+   "meaning": {
+    "zh-Hant": "搬遷",
+    "ja": "移転する",
+    "ko": "이전하다",
+    "en": "to move to a new place"
+   },
+   "example": "The office will relocate to the city center."
+  },
+  {
+   "id": "proposal",
+   "word": "proposal",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "提案；企畫書",
+    "ja": "提案（書）",
+    "ko": "제안(서)",
+    "en": "a formal plan or suggestion"
+   },
+   "example": "Please review the proposal before the meeting."
+  },
+  {
+   "id": "vendor",
+   "word": "vendor",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "供應商；廠商",
+    "ja": "納入業者、販売業者",
+    "ko": "공급업체, 판매업체",
+    "en": "a company that sells goods or services"
+   },
+   "example": "We are looking for a new office supply vendor."
+  },
+  {
+   "id": "expire",
+   "word": "expire",
+   "pos": "v.",
+   "meaning": {
+    "zh-Hant": "到期；失效",
+    "ja": "期限が切れる",
+    "ko": "만료되다",
+    "en": "to stop being valid after a certain date"
+   },
+   "example": "Your parking permit expires at the end of the month."
+  },
+  {
+   "id": "brochure",
+   "word": "brochure",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "宣傳手冊",
+    "ja": "パンフレット",
+    "ko": "안내 책자",
+    "en": "a small booklet with information about a product or place"
+   },
+   "example": "Please pick up a brochure at the front desk."
+  },
+  {
+   "id": "personnel",
+   "word": "personnel",
+   "pos": "n.",
+   "meaning": {
+    "zh-Hant": "人員",
+    "ja": "職員、人員",
+    "ko": "인원, 직원",
+    "en": "the people who work for an organization"
+   },
+   "example": "Only authorized personnel may enter this area."
+  },
+  {
+   "id": "outstanding",
+   "word": "outstanding",
+   "pos": "adj.",
+   "meaning": {
+    "zh-Hant": "（帳款）未付清的",
+    "ja": "未払いの、未処理の",
+    "ko": "미지불의, 미해결의",
+    "en": "not yet paid or not yet done"
+   },
+   "example": "There is an outstanding balance on your account."
+  },
+  {
+   "id": "confirm",
+   "word": "confirm",
+   "pos": "v.",
+   "meaning": {
+    "zh-Hant": "確認",
+    "ja": "確認する",
+    "ko": "확인하다",
+    "en": "to make sure that something is true or arranged"
+   },
+   "example": "Please confirm your attendance by email."
+  },
+  {
+   "id": "upcoming",
+   "word": "upcoming",
+   "pos": "adj.",
+   "meaning": {
+    "zh-Hant": "即將到來的",
+    "ja": "今度の、近く行われる",
+    "ko": "다가오는",
+    "en": "happening soon"
+   },
+   "example": "Don't miss our upcoming sale."
+  }
+ ],
+ "zhuyin": [
+  {
+   "id": "zy01",
+   "symbol": "ㄅ",
+   "kind": "聲母",
+   "word": "爸爸",
+   "zhuyin": [
+    "ㄅㄚˋ",
+    "˙ㄅㄚ"
+   ]
+  },
+  {
+   "id": "zy02",
+   "symbol": "ㄆ",
+   "kind": "聲母",
+   "word": "葡萄",
+   "zhuyin": [
+    "ㄆㄨˊ",
+    "ㄊㄠˊ"
+   ]
+  },
+  {
+   "id": "zy03",
+   "symbol": "ㄇ",
+   "kind": "聲母",
+   "word": "媽媽",
+   "zhuyin": [
+    "ㄇㄚ",
+    "˙ㄇㄚ"
+   ]
+  },
+  {
+   "id": "zy04",
+   "symbol": "ㄈ",
+   "kind": "聲母",
+   "word": "飛機",
+   "zhuyin": [
+    "ㄈㄟ",
+    "ㄐㄧ"
+   ]
+  },
+  {
+   "id": "zy05",
+   "symbol": "ㄉ",
+   "kind": "聲母",
+   "word": "大象",
+   "zhuyin": [
+    "ㄉㄚˋ",
+    "ㄒㄧㄤˋ"
+   ]
+  },
+  {
+   "id": "zy06",
+   "symbol": "ㄊ",
+   "kind": "聲母",
+   "word": "兔子",
+   "zhuyin": [
+    "ㄊㄨˋ",
+    "˙ㄗ"
+   ]
+  },
+  {
+   "id": "zy07",
+   "symbol": "ㄋ",
+   "kind": "聲母",
+   "word": "牛奶",
+   "zhuyin": [
+    "ㄋㄧㄡˊ",
+    "ㄋㄞˇ"
+   ]
+  },
+  {
+   "id": "zy08",
+   "symbol": "ㄌ",
+   "kind": "聲母",
+   "word": "老虎",
+   "zhuyin": [
+    "ㄌㄠˇ",
+    "ㄏㄨˇ"
+   ]
+  },
+  {
+   "id": "zy09",
+   "symbol": "ㄍ",
+   "kind": "聲母",
+   "word": "哥哥",
+   "zhuyin": [
+    "ㄍㄜ",
+    "˙ㄍㄜ"
+   ]
+  },
+  {
+   "id": "zy10",
+   "symbol": "ㄎ",
+   "kind": "聲母",
+   "word": "蝌蚪",
+   "zhuyin": [
+    "ㄎㄜ",
+    "ㄉㄡˇ"
+   ]
+  },
+  {
+   "id": "zy11",
+   "symbol": "ㄏ",
+   "kind": "聲母",
+   "word": "蝴蝶",
+   "zhuyin": [
+    "ㄏㄨˊ",
+    "ㄉㄧㄝˊ"
+   ]
+  },
+  {
+   "id": "zy12",
+   "symbol": "ㄐ",
+   "kind": "聲母",
+   "word": "雞蛋",
+   "zhuyin": [
+    "ㄐㄧ",
+    "ㄉㄢˋ"
+   ]
+  },
+  {
+   "id": "zy13",
+   "symbol": "ㄑ",
+   "kind": "聲母",
+   "word": "氣球",
+   "zhuyin": [
+    "ㄑㄧˋ",
+    "ㄑㄧㄡˊ"
+   ]
+  },
+  {
+   "id": "zy14",
+   "symbol": "ㄒ",
+   "kind": "聲母",
+   "word": "西瓜",
+   "zhuyin": [
+    "ㄒㄧ",
+    "ㄍㄨㄚ"
+   ]
+  },
+  {
+   "id": "zy15",
+   "symbol": "ㄓ",
+   "kind": "聲母",
+   "word": "蜘蛛",
+   "zhuyin": [
+    "ㄓ",
+    "ㄓㄨ"
+   ]
+  },
+  {
+   "id": "zy16",
+   "symbol": "ㄔ",
+   "kind": "聲母",
+   "word": "吃飯",
+   "zhuyin": [
+    "ㄔ",
+    "ㄈㄢˋ"
+   ]
+  },
+  {
+   "id": "zy17",
+   "symbol": "ㄕ",
+   "kind": "聲母",
+   "word": "獅子",
+   "zhuyin": [
+    "ㄕ",
+    "˙ㄗ"
+   ]
+  },
+  {
+   "id": "zy18",
+   "symbol": "ㄖ",
+   "kind": "聲母",
+   "word": "日出",
+   "zhuyin": [
+    "ㄖˋ",
+    "ㄔㄨ"
+   ]
+  },
+  {
+   "id": "zy19",
+   "symbol": "ㄗ",
+   "kind": "聲母",
+   "word": "嘴巴",
+   "zhuyin": [
+    "ㄗㄨㄟˇ",
+    "˙ㄅㄚ"
+   ]
+  },
+  {
+   "id": "zy20",
+   "symbol": "ㄘ",
+   "kind": "聲母",
+   "word": "草莓",
+   "zhuyin": [
+    "ㄘㄠˇ",
+    "ㄇㄟˊ"
+   ]
+  },
+  {
+   "id": "zy21",
+   "symbol": "ㄙ",
+   "kind": "聲母",
+   "word": "森林",
+   "zhuyin": [
+    "ㄙㄣ",
+    "ㄌㄧㄣˊ"
+   ]
+  },
+  {
+   "id": "zy22",
+   "symbol": "ㄧ",
+   "kind": "介音",
+   "word": "衣服",
+   "zhuyin": [
+    "ㄧ",
+    "˙ㄈㄨ"
+   ]
+  },
+  {
+   "id": "zy23",
+   "symbol": "ㄨ",
+   "kind": "介音",
+   "word": "烏龜",
+   "zhuyin": [
+    "ㄨ",
+    "ㄍㄨㄟ"
+   ]
+  },
+  {
+   "id": "zy24",
+   "symbol": "ㄩ",
+   "kind": "介音",
+   "word": "金魚",
+   "zhuyin": [
+    "ㄐㄧㄣ",
+    "ㄩˊ"
+   ]
+  },
+  {
+   "id": "zy25",
+   "symbol": "ㄚ",
+   "kind": "韻母",
+   "word": "阿姨",
+   "zhuyin": [
+    "ㄚ",
+    "ㄧˊ"
+   ]
+  },
+  {
+   "id": "zy26",
+   "symbol": "ㄛ",
+   "kind": "韻母",
+   "word": "喔喔",
+   "zhuyin": [
+    "ㄛ",
+    "ㄛ"
+   ]
+  },
+  {
+   "id": "zy27",
+   "symbol": "ㄜ",
+   "kind": "韻母",
+   "word": "白鵝",
+   "zhuyin": [
+    "ㄅㄞˊ",
+    "ㄜˊ"
+   ]
+  },
+  {
+   "id": "zy28",
+   "symbol": "ㄝ",
+   "kind": "韻母",
+   "word": "爺爺",
+   "zhuyin": [
+    "ㄧㄝˊ",
+    "˙ㄧㄝ"
+   ]
+  },
+  {
+   "id": "zy29",
+   "symbol": "ㄞ",
+   "kind": "韻母",
+   "word": "愛心",
+   "zhuyin": [
+    "ㄞˋ",
+    "ㄒㄧㄣ"
+   ]
+  },
+  {
+   "id": "zy30",
+   "symbol": "ㄟ",
+   "kind": "韻母",
+   "word": "杯子",
+   "zhuyin": [
+    "ㄅㄟ",
+    "˙ㄗ"
+   ]
+  },
+  {
+   "id": "zy31",
+   "symbol": "ㄠ",
+   "kind": "韻母",
+   "word": "小貓",
+   "zhuyin": [
+    "ㄒㄧㄠˇ",
+    "ㄇㄠ"
+   ]
+  },
+  {
+   "id": "zy32",
+   "symbol": "ㄡ",
+   "kind": "韻母",
+   "word": "海鷗",
+   "zhuyin": [
+    "ㄏㄞˇ",
+    "ㄡ"
+   ]
+  },
+  {
+   "id": "zy33",
+   "symbol": "ㄢ",
+   "kind": "韻母",
+   "word": "安全",
+   "zhuyin": [
+    "ㄢ",
+    "ㄑㄩㄢˊ"
+   ]
+  },
+  {
+   "id": "zy34",
+   "symbol": "ㄣ",
+   "kind": "韻母",
+   "word": "開門",
+   "zhuyin": [
+    "ㄎㄞ",
+    "ㄇㄣˊ"
+   ]
+  },
+  {
+   "id": "zy35",
+   "symbol": "ㄤ",
+   "kind": "韻母",
+   "word": "太陽",
+   "zhuyin": [
+    "ㄊㄞˋ",
+    "ㄧㄤˊ"
+   ]
+  },
+  {
+   "id": "zy36",
+   "symbol": "ㄥ",
+   "kind": "韻母",
+   "word": "台燈",
+   "zhuyin": [
+    "ㄊㄞˊ",
+    "ㄉㄥ"
+   ]
+  },
+  {
+   "id": "zy37",
+   "symbol": "ㄦ",
+   "kind": "韻母",
+   "word": "耳朵",
+   "zhuyin": [
+    "ㄦˇ",
+    "˙ㄉㄨㄛ"
+   ]
+  }
+ ],
+ "photos": [
+  {
+   "id": "us_passport",
+   "doc": {
+    "en": "U.S. passport",
+    "zh-Hant": "美國護照",
+    "ja": "アメリカのパスポート",
+    "ko": "미국 여권"
+   },
+   "w": 51,
+   "h": 51,
+   "size": {
+    "en": "2 × 2 in (51 × 51 mm)",
+    "zh-Hant": "2 × 2 英吋（51 × 51 mm）",
+    "ja": "2 × 2インチ（51 × 51 mm）",
+    "ko": "2 × 2인치 (51 × 51mm)"
+   },
+   "head": "25–35",
+   "bg": "white_or_off_white"
+  },
+  {
+   "id": "uk_passport",
+   "doc": {
+    "en": "UK passport",
+    "zh-Hant": "英國護照",
+    "ja": "イギリスのパスポート",
+    "ko": "영국 여권"
+   },
+   "w": 35,
+   "h": 45,
+   "head": "29–34",
+   "bg": "cream_or_grey"
+  },
+  {
+   "id": "tw_passport",
+   "doc": {
+    "en": "Taiwan passport",
+    "zh-Hant": "台灣護照",
+    "ja": "台湾のパスポート",
+    "ko": "대만 여권"
+   },
+   "w": 35,
+   "h": 45,
+   "head": "32–36",
+   "bg": "white"
+  },
+  {
+   "id": "tw_id",
+   "doc": {
+    "en": "Taiwan national ID card",
+    "zh-Hant": "台灣身分證",
+    "ja": "台湾の身分証",
+    "ko": "대만 신분증"
+   },
+   "w": 35,
+   "h": 45,
+   "head": "32–36",
+   "bg": "white"
+  },
+  {
+   "id": "jp_passport",
+   "doc": {
+    "en": "Japanese passport",
+    "zh-Hant": "日本護照",
+    "ja": "日本のパスポート",
+    "ko": "일본 여권"
+   },
+   "w": 35,
+   "h": 45,
+   "head": "32–36",
+   "bg": "plain_light"
+  },
+  {
+   "id": "kr_passport",
+   "doc": {
+    "en": "Korean passport",
+    "zh-Hant": "韓國護照",
+    "ja": "韓国のパスポート",
+    "ko": "한국 여권"
+   },
+   "w": 35,
+   "h": 45,
+   "head": "32–36",
+   "bg": "white"
+  },
+  {
+   "id": "cn_passport",
+   "doc": {
+    "en": "Chinese passport",
+    "zh-Hant": "中國護照",
+    "ja": "中国のパスポート",
+    "ko": "중국 여권"
+   },
+   "w": 33,
+   "h": 48,
+   "head": "28–33",
+   "bg": "white"
+  },
+  {
+   "id": "ca_passport",
+   "doc": {
+    "en": "Canadian passport",
+    "zh-Hant": "加拿大護照",
+    "ja": "カナダのパスポート",
+    "ko": "캐나다 여권"
+   },
+   "w": 50,
+   "h": 70,
+   "head": "31–36",
+   "bg": "white_or_light"
+  },
+  {
+   "id": "au_passport",
+   "doc": {
+    "en": "Australian passport",
+    "zh-Hant": "澳洲護照",
+    "ja": "オーストラリアのパスポート",
+    "ko": "호주 여권"
+   },
+   "w": 35,
+   "h": 45,
+   "head": "32–36",
+   "bg": "white_or_light_grey"
+  },
+  {
+   "id": "de_passport",
+   "doc": {
+    "en": "German passport",
+    "zh-Hant": "德國護照",
+    "ja": "ドイツのパスポート",
+    "ko": "독일 여권"
+   },
+   "w": 35,
+   "h": 45,
+   "head": "32–36",
+   "bg": "plain_light"
+  },
+  {
+   "id": "fr_passport",
+   "doc": {
+    "en": "French passport",
+    "zh-Hant": "法國護照",
+    "ja": "フランスのパスポート",
+    "ko": "프랑스 여권"
+   },
+   "w": 35,
+   "h": 45,
+   "head": "32–36",
+   "bg": "light_not_white"
+  },
+  {
+   "id": "schengen_visa",
+   "doc": {
+    "en": "Schengen visa",
+    "zh-Hant": "申根簽證",
+    "ja": "シェンゲンビザ",
+    "ko": "솅겐 비자"
+   },
+   "w": 35,
+   "h": 45,
+   "head": "32–36",
+   "bg": "plain_light"
+  },
+  {
+   "id": "jp_resume",
+   "doc": {
+    "en": "Japanese résumé (rirekisho)",
+    "zh-Hant": "日本履歷表",
+    "ja": "履歴書の写真",
+    "ko": "일본 이력서 사진"
+   },
+   "w": 30,
+   "h": 40,
+   "head": null,
+   "bg": "plain_light"
+  },
+  {
+   "id": "kr_resume",
+   "doc": {
+    "en": "Korean résumé photo (3 × 4 cm)",
+    "zh-Hant": "韓國履歷照（半名片）",
+    "ja": "韓国の履歴書写真（半名刺判）",
+    "ko": "이력서 반명함판"
+   },
+   "w": 30,
+   "h": 40,
+   "head": null,
+   "bg": "plain_light"
+  }
+ ]
+}

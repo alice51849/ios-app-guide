@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T12:46:12Z",
+  "updated_at": "2026-10-14T12:56:30Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -379,6 +379,76 @@
         "#iPhone",
         "#iOS"
       ]
+    },
+    "caldaily/en": {
+      "app": "caldaily",
+      "locale": "en",
+      "url": "https://files.catbox.moe/3y210v.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6794178671?pt=118326163&ct=h7_caldaily_en&mt=8",
+      "hook": "Calculator, but make it aesthetic",
+      "name": "CalDaily: Calculator & Themes",
+      "search": "CalDaily Calculator",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "caldaily/zh-Hant": {
+      "app": "caldaily",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/l8kn9t.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=h7_caldaily_zh-Hant&mt=8",
+      "hook": "計算機 也可以這麼美",
+      "name": "CalDaily 計算機與主題",
+      "search": "CalDaily 計算機",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
+    },
+    "cvdesk/en": {
+      "app": "cvdesk",
+      "locale": "en",
+      "url": "https://files.catbox.moe/tai5p4.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6781337213?pt=118326163&ct=h7_cvdesk_en&mt=8",
+      "hook": "Resume getting auto-rejected?",
+      "name": "CV Desk: ATS Resume Builder",
+      "search": "CV Desk ATS Resume",
+      "tags": [
+        "#productivity",
+        "#iphoneapps",
+        "#appstore"
+      ]
+    },
+    "cvdesk/zh-Hant": {
+      "app": "cvdesk",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/2wahlr.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6781337213?pt=118326163&ct=h7_cvdesk_zh-Hant&mt=8",
+      "hook": "履歷總是 被 ATS 刷掉？",
+      "name": "CV Desk ATS 履歷製作",
+      "search": "CV Desk ATS 履歷",
+      "tags": [
+        "#效率工具",
+        "#App推薦",
+        "#iPhone"
+      ]
+    },
+    "cyca/en": {
+      "app": "cyca",
+      "locale": "en",
+      "url": "https://files.catbox.moe/mqsxat.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6782251621?pt=118326163&ct=h7_cyca_en&mt=8",
+      "hook": "Where does your period data go?",
+      "name": "Cyca: Period & Cycle Tracker",
+      "search": "Cyca period tracker",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
     }
   },
   "schedule": [
@@ -497,6 +567,12 @@
       "clip": "battai/en"
     },
     {
+      "date": "2026-11-02",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "caldaily/zh-Hant"
+    },
+    {
       "date": "2026-11-03",
       "slot": 15,
       "channel": "telegram",
@@ -507,6 +583,30 @@
       "slot": 1,
       "channel": "telegram",
       "clip": "battai/zh-Hant"
+    },
+    {
+      "date": "2026-11-05",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "caldaily/en"
+    },
+    {
+      "date": "2026-11-06",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "cvdesk/zh-Hant"
+    },
+    {
+      "date": "2026-11-07",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "cyca/en"
+    },
+    {
+      "date": "2026-11-09",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "cvdesk/en"
     }
   ]
 }

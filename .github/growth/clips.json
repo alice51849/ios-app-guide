@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T11:53:46Z",
+  "updated_at": "2026-10-14T12:06:38Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -141,6 +141,62 @@
         "#appstore",
         "#ios"
       ]
+    },
+    "countdaysnow/en": {
+      "app": "countdaysnow",
+      "locale": "en",
+      "url": "https://files.catbox.moe/wbsfjp.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6807079789?pt=118326163&ct=h7_countdaysnow_en&mt=8",
+      "hook": "How long until Mom's birthday?",
+      "name": "CountDaysNow: Event Counter",
+      "search": "CountDaysNow",
+      "tags": [
+        "#productivity",
+        "#iphoneapps",
+        "#appstore"
+      ]
+    },
+    "countdaysnow/zh-Hant": {
+      "app": "countdaysnow",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/rj2q5p.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=h7_countdaysnow_zh-Hant&mt=8",
+      "hook": "媽媽生日 還有幾天？",
+      "name": "CountDaysNow: Event Counter",
+      "search": "CountDaysNow",
+      "tags": [
+        "#效率工具",
+        "#App推薦",
+        "#iPhone"
+      ]
+    },
+    "unblurry/en": {
+      "app": "unblurry",
+      "locale": "en",
+      "url": "https://files.catbox.moe/lqit0m.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6782275018?pt=118326163&ct=h7_unblurry_en&mt=8",
+      "hook": "Blurry photo? Make it crystal clear",
+      "name": "Unblurry Pro: Unblur & HD",
+      "search": "Unblurry Pro",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "unblurry/zh-Hant": {
+      "app": "unblurry",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/5xknhi.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6782275018?pt=118326163&ct=h7_unblurry_zh-Hant&mt=8",
+      "hook": "照片拍糊了？ 秒變清晰",
+      "name": "Unblurry Pro：照片變清晰",
+      "search": "Unblurry 照片變清晰",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
     }
   },
   "schedule": [
@@ -157,6 +213,12 @@
       "clip": "mochi/zh-Hant"
     },
     {
+      "date": "2026-10-16",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "countdaysnow/en"
+    },
+    {
       "date": "2026-10-17",
       "slot": 1,
       "channel": "telegram",
@@ -167,6 +229,24 @@
       "slot": 15,
       "channel": "telegram",
       "clip": "mochi/en"
+    },
+    {
+      "date": "2026-10-19",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "countdaysnow/zh-Hant"
+    },
+    {
+      "date": "2026-10-20",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "unblurry/en"
+    },
+    {
+      "date": "2026-10-23",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "unblurry/zh-Hant"
     }
   ]
 }

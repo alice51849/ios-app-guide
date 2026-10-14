@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T14:36:37Z",
+  "updated_at": "2026-10-14T14:46:52Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -1074,6 +1074,62 @@
       "hook": "網路又卡了？",
       "name": "WiFi Aid Lite",
       "search": "WiFi Aid Lite",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
+    },
+    "wordmatelite/en": {
+      "app": "wordmatelite",
+      "locale": "en",
+      "url": "https://files.catbox.moe/oi2kso.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6797601720?pt=118326163&ct=h7_wordmatelite_en&mt=8",
+      "hook": "5 words a day. That's it.",
+      "name": "Wordmate Lite: Vocabulary",
+      "search": "Wordmate Lite",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "wordmatelite/zh-Hant": {
+      "app": "wordmatelite",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/c5pzkq.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=h7_wordmatelite_zh-Hant&mt=8",
+      "hook": "每天只背 5 個單字",
+      "name": "Wordmate Lite 每天五個單字",
+      "search": "Wordmate Lite 單字",
+      "tags": [
+        "#App推薦",
+        "#iPhone",
+        "#iOS"
+      ]
+    },
+    "zipbox/en": {
+      "app": "zipbox",
+      "locale": "en",
+      "url": "https://files.catbox.moe/xr0og7.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=h7_zipbox_en&mt=8",
+      "hook": "Need one file from a ZIP?",
+      "name": "Zipbox: Unzip RAR, ZIP & 7z",
+      "search": "Zipbox",
+      "tags": [
+        "#iphoneapps",
+        "#appstore",
+        "#ios"
+      ]
+    },
+    "zipbox/zh-Hant": {
+      "app": "zipbox",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/z5y69c.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=h7_zipbox_zh-Hant&mt=8",
+      "hook": "壓縮檔裡 只要一個檔？",
+      "name": "Zipbox 解壓縮：RAR ZIP 7z",
+      "search": "Zipbox 解壓縮",
       "tags": [
         "#App推薦",
         "#iPhone",
@@ -2326,9 +2382,33 @@
     },
     {
       "date": "2026-11-18",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wordmatelite/zh-Hant"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "wordmatelite/zh-Hant"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "wordmatelite/zh-Hant"
+    },
+    {
+      "date": "2026-11-18",
       "slot": 15,
       "channel": "instagram",
       "clip": "tripbeelite/en"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "zipbox/en"
     },
     {
       "date": "2026-11-18",
@@ -2339,8 +2419,20 @@
     {
       "date": "2026-11-19",
       "slot": 1,
+      "channel": "instagram",
+      "clip": "zipbox/zh-Hant"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 1,
       "channel": "telegram",
       "clip": "tripplanet/zh-Hant"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "zipbox/zh-Hant"
     },
     {
       "date": "2026-11-20",
@@ -2371,6 +2463,42 @@
       "slot": 15,
       "channel": "threads",
       "clip": "tripplanet/en"
+    },
+    {
+      "date": "2026-11-21",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "zipbox/zh-Hant"
+    },
+    {
+      "date": "2026-11-21",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "wordmatelite/en"
+    },
+    {
+      "date": "2026-11-21",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "wordmatelite/en"
+    },
+    {
+      "date": "2026-11-21",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "wordmatelite/en"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "zipbox/en"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "zipbox/en"
     }
   ]
 }

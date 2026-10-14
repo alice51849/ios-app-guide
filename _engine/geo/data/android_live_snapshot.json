@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-14T18:19:56+0800",
+ "source_generated": "2026-10-14T18:51:10+0800",
  "count": 42,
- "content_sha256": "dfc8b4e8ea4db3d9e54de44babdfe16346df21b4938fc3d4573404b4f53dac54",
+ "content_sha256": "9f5e163ca14364f413ad65c59af5a67d3715465793ed358d978c24f34d20cc05",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -121,11 +121,11 @@
    "copy": {
     "en-US": {
      "title": "DailyMate Lite: Speak Today",
-     "short_description": "Situational phrases with natural replies for travel, dining and daily talk"
+     "short_description": "Travel phrasebook and speaking practice in 50 languages with natural replies"
     },
     "zh-TW": {
      "title": "DailyMate Lite：開口練習",
-     "short_description": "點餐、問路、出差都用得上，情境提示搭配自然回覆，練習 50 種語言"
+     "short_description": "出國點餐、問路、出差都用得上：英文、日語、韓語等 50 種語言的情境會話與口說練習"
     }
    }
   },
@@ -141,11 +141,11 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "G+Money",
-     "short_description": "Travel budget and expense tracker with a converter for 50 world currencies"
+     "title": "G+Money: Expense Tracker",
+     "short_description": "Travel budget and expense tracker with a currency converter for 50 currencies"
     },
     "zh-TW": {
-     "title": "G+Money",
+     "title": "G+Money：旅遊記帳",
      "short_description": "出國旅遊與日常記帳，搭配 50 種貨幣匯率換算，依旅程記錄花費、設每日預算"
     }
    }
@@ -435,12 +435,12 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "Mask My File",
-     "short_description": "Redact files before sharing"
+     "title": "Mask My File: Redact PDF",
+     "short_description": "Redact PDF, photo and text files: black out private data and remove metadata"
     },
     "zh-TW": {
-     "title": "Mask My File",
-     "short_description": "分享前遮蔽個資與私密資訊"
+     "title": "Mask My File：PDF 個資遮蔽",
+     "short_description": "分享 PDF、照片與文字檔前，先在本機塗黑遮蔽個資、移除中繼資料，原始檔不會被覆寫"
     }
    }
   },
@@ -499,10 +499,10 @@
    "copy": {
     "en-US": {
      "title": "MoneyTag: Income & Expense",
-     "short_description": "Income and expense tracker by project: see each project's profit and tag totals"
+     "short_description": "Income and expense tracker by project: profit for each side hustle or client"
     },
     "zh-TW": {
-     "title": "MoneyTag: 收入與支出",
+     "title": "MoneyTag: 收入與支出記帳",
      "short_description": "專案制收支記帳：每個專案各算淨額，標籤跨專案合計，接案、副業、小店都好用"
     }
    }
@@ -604,11 +604,11 @@
    "copy": {
     "en-US": {
      "title": "SaveTag: AI Social Bookmarks",
-     "short_description": "Link Saver: Watch & Read Later"
+     "short_description": "Link saver and bookmark manager: auto-tagged saves to watch and read later"
     },
     "zh-TW": {
-     "title": "SaveTag:AI 連結收藏",
-     "short_description": "書籤與稍後閱讀・購物願望清單・自動分類"
+     "title": "SaveTag：AI 連結收藏與書籤",
+     "short_description": "書籤管理與稍後閱讀：從任何 App 存連結，自動分類成購物、食譜、旅遊等主題，願望清單一次收齊"
     }
    }
   },
@@ -625,11 +625,11 @@
    "copy": {
     "en-US": {
      "title": "ScanTo Pro: Offline PDF & OCR",
-     "short_description": "Scan documents into searchable PDFs, fully offline and private"
+     "short_description": "Document scanner and PDF scanner with on-device OCR text search"
     },
     "zh-TW": {
-     "title": "ScanTo Pro: 離線PDF掃描",
-     "short_description": "把文件掃描成可搜尋的 PDF，完全離線、保護隱私"
+     "title": "ScanTo Pro: 離線PDF掃描器",
+     "short_description": "文件掃描成可搜尋的 PDF，OCR 文字辨識在裝置上完成，文件不上傳"
     }
    }
   },
@@ -772,11 +772,11 @@
    "copy": {
     "en-US": {
      "title": "TripBee Lite: Travel Plan",
-     "short_description": "Itinerary & Smart Packing List"
+     "short_description": "Trip planner with a day-by-day itinerary for flights, hotels, tickets and notes"
     },
     "zh-TW": {
-     "title": "TripBee Lite：旅程規劃",
-     "short_description": "旅行行程・行李打包清單"
+     "title": "TripBee Lite：旅程規劃與每日行程表",
+     "short_description": "用每日時間軸做旅遊行程規劃，航班、住宿、票券與備註集中在同一趟旅程"
     }
    }
   },
@@ -835,11 +835,11 @@
    "copy": {
     "en-US": {
      "title": "WiFi Aid Lite: Network Check",
-     "short_description": "Test for Router & DNS Issues"
+     "short_description": "Slow internet? Test your WiFi, router and DNS to find the likely cause"
     },
     "zh-TW": {
      "title": "WiFi Aid Lite",
-     "short_description": "無法上網？網路測試與斷線診斷"
+     "short_description": "網路很慢、連不上？一鍵檢測 Wi-Fi、路由器、DNS 與網站，找出斷線原因"
     }
    }
   },
@@ -877,11 +877,11 @@
    "copy": {
     "en-US": {
      "title": "Wordmate Lite: Vocabulary",
-     "short_description": "Learn languages five words a day: vocabulary builder for 44 languages, offline"
+     "short_description": "Build your vocabulary five words at a time in one-minute sessions, offline"
     },
     "zh-TW": {
-     "title": "Wordmate Lite 背單字：每天五個單字",
-     "short_description": "英文單字、日文單字都能背：一次五個、一分鐘練完，可聽發音、離線也能背，養成每天背單字的習慣"
+     "title": "Wordmate Lite 每天五個單字",
+     "short_description": "一次五個單字、一分鐘練完，可以聽發音，離線也能背，輕鬆養成每天背單字的習慣"
     }
    }
   }

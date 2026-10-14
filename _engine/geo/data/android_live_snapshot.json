@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-14T10:07:11+0800",
- "count": 35,
- "content_sha256": "9db781d5b79a860304d16943b33916d023548dfe290e2720b5bea3a12a8d5fd4",
+ "source_generated": "2026-10-14T11:08:28+0800",
+ "count": 36,
+ "content_sha256": "9a3efab14722ee6e91250f96ff6426046932be3a3798f8f4e0e93954722d058e",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -86,6 +86,27 @@
     "zh-TW": {
      "title": "DailyMate：用句子學語言",
      "short_description": "47 種語言、8,400 句生活會話，旅遊、工作、日常情境都用得上，還能聽發音"
+    }
+   }
+  },
+  "dailymatelite": {
+   "ios_app_id": "6794725568",
+   "ios_name": "DailyMate Lite",
+   "android_folder": "36_DailyMateLite",
+   "package": "com.alice51849.DailyMateLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "paid": false,
+   "first_seen": "2026-10-14T11:08:28+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "DailyMate Lite: Speak Today",
+     "short_description": "Situational phrases with natural replies for travel, dining and daily talk"
+    },
+    "zh-TW": {
+     "title": "DailyMate Lite：開口練習",
+     "short_description": "點餐、問路、出差都用得上，情境提示搭配自然回覆，練習 50 種語言"
     }
    }
   },

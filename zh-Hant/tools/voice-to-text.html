@@ -113,7 +113,7 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 <section class="grid">
 <article class="card"><h2>運作方式</h2><ol><li>使用瀏覽器內建的 SpeechRecognition API，若瀏覽器中斷會自動重新開始。</li><li>辨識中的內容以灰字顯示在欄位下方，只有確定的句子才寫進可編輯欄位，所以你可以邊說邊改前面的字。</li><li>整理選項只會清掉多餘空白與分隔句子，不會改寫你的用字。</li><li>中文、日文、韓文以字數計算，因為用空白斷詞沒有意義。</li></ol></article>
 <article class="card"><h2>這個工具不會做的事</h2><ul><li>不宣稱「在你的裝置上辨識」。Chrome 等多數瀏覽器會把聲音送到瀏覽器廠商的伺服器辨識，這是瀏覽器的行為，不是這個頁面能決定的。</li><li>這個頁面本身不儲存也不傳送任何東西，文字只留在頁面內，關掉分頁就消失。</li><li>不做語者辨識、不加時間軸、也不能轉錄音檔，只處理即時麥克風。</li></ul></article>
-<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="redact-to-pdf.html">文件遮蔽並輸出 PDF</a></li><li><a href="math-worksheet-generator.html">數學練習題產生器</a></li><li><a href="duplicate-photo-finder.html">重複照片偵測</a></li><li><a href="https://open.cait518.cc/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="redact-to-pdf.html">文件遮蔽並輸出 PDF</a></li><li><a href="math-worksheet-generator.html">數學練習題產生器</a></li><li><a href="letter-tracing-worksheet.html">英文字母描寫練習單</a></li><li><a href="https://open.cait518.cc/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
 </section>
 <section class="faq"><h2>常見問題</h2><details><summary>哪些瀏覽器可以用？</summary><p>iOS 與 macOS 的 Safari、Chrome、Edge 支援 SpeechRecognition API；Firefox 目前不支援。頁面載入時會直接顯示你這台的支援狀況。</p></details><details><summary>我的聲音會離開裝置嗎？</summary><p>這取決於瀏覽器而不是這個頁面。Chrome 與 Edge 會把聲音送到雲端辨識，Safari 在部分語言可在裝置上辨識。沒確認過的瀏覽器請不要用來講機密內容。</p></details><details><summary>可以轉錄已經錄好的檔案嗎？</summary><p>不行。Web Speech API 只處理即時麥克風。用喇叭播出來讓麥克風收音可行但品質很差，檔案轉錄要交給專門的 App。</p></details></section>
 <section class="app-card"><h2>想把錄音和文字放在一起保存嗎？</h2>

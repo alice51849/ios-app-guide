@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>전광판 만들기 — 흐르는 글자를 브라우저에서 무료 미리보기</title>
+<meta name="description" content="문구를 입력하면 도트 매트릭스 LED 전광판에 흐르듯 표시됩니다. 8가지 색, 속도, 왼쪽·오른쪽·정지, 깜빡임, 좌우 반전, 전체 화면 지원. 업로드 없음.">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/ko/tools/led-scrolling-text-preview.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/led-scrolling-text-preview.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/led-scrolling-text-preview.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/led-scrolling-text-preview.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/led-scrolling-text-preview.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/led-scrolling-text-preview.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/led-scrolling-text-preview.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LED 전광판 문구 미리보기">
+<meta property="og:description" content="문구를 입력하면 도트 매트릭스 LED 전광판에 흐르듯 표시됩니다. 8가지 색, 속도, 왼쪽·오른쪽·정지, 깜빡임, 좌우 반전, 전체 화면 지원. 업로드 없음.">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/ko/tools/led-scrolling-text-preview.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 88% 0,#fff 0,var(--bg) 55%,#f3e6cd 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#8a5c10}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:8;background:#fffdf8f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}
+.hero{padding:56px 0 26px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--brand);white-space:nowrap}
+.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}
+.hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.06;letter-spacing:-.03em;margin:.3em 0 .22em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.tool,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+.tool{padding:clamp(20px,4vw,34px);margin:14px auto 28px}
+.tool h2,.card h2,.app-card h2{font-size:clamp(22px,3.4vw,31px);line-height:1.15;margin:0 0 6px}
+.intro{color:var(--muted);margin:0 0 8px}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--brand);margin-bottom:6px;white-space:nowrap}
+select,input,button,textarea{font:inherit;color:var(--ink)}
+select,input:not([type=range]):not([type=file]),textarea{width:100%;border:1px solid #dcc9a4;border-radius:13px;background:#fff;padding:10px 12px}
+select,input:not([type=range]):not([type=file]){min-height:46px}
+textarea{min-height:74px;resize:vertical}
+.button{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--gold));color:#fff;text-decoration:none;font-weight:850;padding:12px 19px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(154,107,22,.24)}
+.button.ghost{background:#fff;color:var(--brand);border:1px solid var(--line);box-shadow:none}
+.button[disabled]{opacity:.45;cursor:not-allowed}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:18px}
+.result{background:var(--soft);border:1px solid #ecd9b4;border-radius:16px;padding:13px;min-width:0}
+.result strong{display:block;font-size:12px;color:#96793d;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.result span{display:block;font-size:16px;font-weight:780;margin-top:5px;white-space:nowrap;overflow-x:auto}
+.result.ok span{color:var(--good)}.result.err span{color:var(--bad)}
+.note{background:var(--warn);border:1px solid #ead9a7;border-radius:15px;padding:12px 15px;margin:14px 0 0;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.card,.app-card{padding:clamp(20px,3.4vw,28px)}.card.wide{grid-column:1/-1}
+.card ul,.card ol{padding-left:22px;margin:8px 0}.card li{margin:7px 0}
+.app-card{margin:0 auto 34px;background:linear-gradient(135deg,#fffdf7,#f7ecd6)}
+.app-card .button{margin-top:8px}
+.faq{margin-bottom:28px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}
+.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;touch-action:none}
+.filedrop{border:2px dashed #dcc9a4;border-radius:18px;padding:26px;text-align:center;background:var(--soft);margin-top:14px}
+.filedrop input{width:auto}
+.footer{background:#4a3a1e;color:#f6eeda;text-align:center;padding:26px 0}
+.footer a{color:#f0ddb4}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1080px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
+
+.led-wrap{background:#050505;border-radius:18px;padding:10px;margin-top:18px;overflow:hidden}
+.led-wrap canvas{display:block;width:100%;height:auto}
+.led-wrap:fullscreen{display:flex;align-items:center;justify-content:center;border-radius:0;padding:0}
+.swatches{display:flex;gap:8px;flex-wrap:wrap}.swatches button{width:34px;height:34px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);cursor:pointer}
+.swatches button[aria-pressed=true]{box-shadow:0 0 0 3px var(--brand)}
+@media (max-width:720px){.controls{grid-template-columns:1fr 1fr}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"LED 전광판 문구 미리보기","description":"문구를 입력하면 도트 매트릭스 LED 전광판에 흐르듯 표시됩니다. 8가지 색, 속도, 왼쪽·오른쪽·정지, 깜빡임, 좌우 반전, 전체 화면 지원. 업로드 없음.","url":"https://open.cait518.cc/ios-app-guide/ko/tools/led-scrolling-text-preview.html","inLanguage":"ko","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["한글·한자·일본어를 포함한 어떤 문구든","왼쪽·오른쪽 스크롤 또는 정지, 속도 조절","LED 8색, 깜빡임, 좌우 반전","브라우저 전체 화면 전광판"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"이모지나 한자도 되나요?","acceptedAnswer":{"@type":"Answer","text":"네. 브라우저가 그릴 수 있는 글자는 전광판에 표시됩니다. 획이 많은 글자는 16칸 높이에 맞게 단순해집니다."}},{"@type":"Question","name":"더 크게 보려면?","acceptedAnswer":{"@type":"Answer","text":"전체 화면을 쓰거나, 전체 화면에서 휴대폰을 가로로 돌리면 글자가 커집니다."}},{"@type":"Question","name":"글자가 거꾸로 보여요.","acceptedAnswer":{"@type":"Answer","text":"‘좌우 반전’이 켜져 있습니다. 창 너머로 보여 줄 때가 아니면 끄세요."}}]}</script>
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="index.html">← 무료 도구</a><a href="https://open.cait518.cc/ios-app-guide/ko/" >iOS App Guide</a></div></header>
+<section class="hero wrap">
+<span class="eyebrow">도트 전광판 · 전체 화면 · 무료</span>
+<h1>LED 전광판 문구 미리보기</h1>
+<p class="lead">콘서트 응원, 공항 마중, 가게 안내. 전광판에서 어떻게 보일지 미리 보고 노트북이나 태블릿에서 바로 전체 화면으로 띄우세요.</p>
+<div class="badges"><span class="badge">도트 느낌</span><span class="badge">8가지 색</span><span class="badge">왼쪽·오른쪽·정지</span><span class="badge">전체 화면</span></div>
+</section>
+<main class="wrap">
+<section class="tool" id="tool">
+<h2>표시할 문구</h2>
+<p class="intro">문구를 입력하고 색과 속도를 고른 뒤 전체 화면으로 띄우세요.</p>
+<div class="controls">
+<div class="field" style="grid-column:1/-1"><label for="txt">문구</label><input type="text" id="txt" maxlength="120" value="환영합니다!"></div>
+</div>
+<div class="controls" style="margin-top:10px">
+<div class="field"><label for="spd">속도</label><input type="range" id="spd" min="0" max="10" value="4"></div>
+<div class="field"><label for="dir">방향</label><select id="dir"><option value="-1">왼쪽으로</option><option value="1">오른쪽으로</option><option value="0">정지</option></select></div>
+<div class="field"><label for="blink">깜빡임</label><select id="blink"><option value="0">끄기</option><option value="1">켜기</option></select></div>
+</div>
+<div class="controls" style="margin-top:10px">
+<div class="field"><label>색</label><div class="swatches" id="sw"></div></div>
+<div class="field"><label for="mir">좌우 반전</label><select id="mir"><option value="0">끄기</option><option value="1">켜기</option></select></div>
+<div class="field" style="align-self:end"><button class="button" id="fs" type="button">전체 화면</button></div>
+</div>
+<div class="led-wrap" id="wrap"><canvas id="led" width="960" height="200"></canvas></div>
+<p class="note">브라우저 미리보기입니다. 밝기는 화면에 따라 다릅니다. 입력한 내용은 저장되지 않습니다.</p>
+</section>
+<section class="grid">
+<article class="card"><h2>작동 방식</h2><ol><li>문구를 높이 16픽셀 이미지로 한 번 그리고, 켜진 픽셀 하나하나를 둥근 LED로 표시합니다.</li><li>스크롤은 LED 한 칸씩 움직이며 브라우저 애니메이션 시계에 맞추므로 화면 성능과 상관없이 속도가 일정합니다.</li><li>좌우 반전은 창밖이나 백미러로 볼 때 바르게 읽히도록 화면을 뒤집습니다.</li><li>전체 화면은 브라우저 전체 화면 모드를 씁니다. Esc 키나 버튼을 다시 누르면 나옵니다.</li></ol></article>
+<article class="card"><h2>이 도구가 하지 않는 일</h2><ul><li>브라우저 미리보기일 뿐 휴대폰 앱이 아닙니다. 보드 저장, 글꼴, 효과 팩은 없습니다.</li><li>기기에 따라 화면 자동 잠금을 막지 못합니다. 오래 쓸 때는 화면 설정을 확인하세요.</li><li>계정 없음, 추적 없음, 업로드 없음.</li></ul></article>
+<article class="card wide"><h2>다른 무료 도구</h2><ul><li><a href="white-noise-generator.html">백색소음 재생</a></li><li><a href="sleep-cycle-calculator.html">몇 시에 자야 할까?</a></li><li><a href="travel-budget-calculator.html">여행 예산 계산기</a></li><li><a href="https://open.cait518.cc/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+</section>
+<section class="faq"><h2>자주 묻는 질문</h2><details><summary>이모지나 한자도 되나요?</summary><p>네. 브라우저가 그릴 수 있는 글자는 전광판에 표시됩니다. 획이 많은 글자는 16칸 높이에 맞게 단순해집니다.</p></details><details><summary>더 크게 보려면?</summary><p>전체 화면을 쓰거나, 전체 화면에서 휴대폰을 가로로 돌리면 글자가 커집니다.</p></details><details><summary>글자가 거꾸로 보여요.</summary><p>‘좌우 반전’이 켜져 있습니다. 창 너머로 보여 줄 때가 아니면 끄세요.</p></details></section>
+<section class="app-card"><h2>iPhone에서도 전체 화면 전광판을 쓰려면</h2>
+<p>LED Moving Text 은(는) 선택 사항입니다. 이 도구는 브라우저에서만 동작하므로 앱 없이도 사용할 수 있습니다. 기능·가격·제공 여부는 App Store의 현재 페이지에서 확인하세요.</p>
+<a class="button" href="https://apps.apple.com/kr/app/id6806639602?pt=118326163&ct=geo_learn&mt=8" rel="nofollow noopener">App Store에서 LED Moving Text 보기</a></section>
+<section class="wrap tool-email-capture" style="border:1px solid rgba(120,100,70,.25);border-radius:14px;padding:18px 20px;margin:28px 0;background:rgba(255,250,240,.55)"><h2>새 무료 도구가 나오면 알려드립니다</h2><p>도구는 하나씩 만들어 무료로 올리고 있습니다. 새 도구가 준비되면 알려드릴게요. 이메일은 이 용도로만 사용합니다.</p><form action="https://buttondown.com/api/emails/embed-subscribe/hourstag" method="post" target="_blank" style="display:flex;gap:8px;flex-wrap:wrap"><label for="tec-email" class="visually-hidden" style="position:absolute;left:-9999px">이메일 주소</label><input id="tec-email" type="email" required name="email" placeholder="you@example.com" style="flex:1 1 220px;padding:10px 12px;border-radius:10px;border:1px solid rgba(120,100,70,.35)"><input type="hidden" name="embed" value="1"><button type="submit" style="padding:10px 18px;border-radius:10px;border:0;background:#7a5c2e;color:#fff;cursor:pointer">알림 받기</button></form><p><small>새 무료 도구 알림만 보냅니다. 발송을 위해 Buttondown이 구독 정보를 처리하며, 앱 마케팅이나 주소 판매는 하지 않습니다. 언제든 수신 거부할 수 있습니다.</small></p></section></main>
+<footer class="footer"><div class="wrap">브라우저에서 실행 · 업로드하거나 저장하지 않습니다 · <a href="index.html">무료 도구 전체</a></div></footer>
+<script>var L={"h2":"표시할 문구","intro":"문구를 입력하고 색과 속도를 고른 뒤 전체 화면으로 띄우세요.","l_text":"문구","sample":"환영합니다!","l_speed":"속도","l_dir":"방향","d_left":"왼쪽으로","d_right":"오른쪽으로","d_still":"정지","l_blink":"깜빡임","l_color":"색","l_mirror":"좌우 반전","on":"켜기","off":"끄기","b_full":"전체 화면","note":"브라우저 미리보기입니다. 밝기는 화면에 따라 다릅니다. 입력한 내용은 저장되지 않습니다."};
+
+var $=function(i){return document.getElementById(i);};
+var COLORS=['#ff3b30','#ff9500','#ffd60a','#34c759','#00c7be','#0a84ff','#bf5af2','#ffffff'];
+var color=COLORS[0],off=0,last=0,ROWS=16,cols=0,bitmap=null,textW=0;
+var sw=$('sw');COLORS.forEach(function(c,i){var b=document.createElement('button');b.type='button';b.style.background=c;
+  b.setAttribute('aria-label',c);b.setAttribute('aria-pressed',i===0?'true':'false');
+  b.addEventListener('click',function(){color=c;[].forEach.call(sw.children,function(x){x.setAttribute('aria-pressed','false');});
+    b.setAttribute('aria-pressed','true');});sw.appendChild(b);});
+function rasterize(){var t=$('txt').value||' ',c=document.createElement('canvas'),x=c.getContext('2d');
+  var font='bold '+(ROWS-2)+'px "Helvetica Neue",Arial,"PingFang TC","Hiragino Sans","Noto Sans CJK TC",sans-serif';
+  x.font=font;textW=Math.ceil(x.measureText(t).width)+4;c.width=textW;c.height=ROWS;x.font=font;
+  x.fillStyle='#000';x.fillRect(0,0,c.width,c.height);x.fillStyle='#fff';x.textBaseline='middle';x.fillText(t,2,ROWS/2+1);
+  var d=x.getImageData(0,0,c.width,c.height).data;bitmap=new Uint8Array(c.width*ROWS);
+  for(var i=0;i<c.width*ROWS;i++)bitmap[i]=d[i*4]>110?1:0;window.__led={text:t,width:textW};}
+function frame(ts){var cv=$('led'),x=cv.getContext('2d'),W=cv.width,H=cv.height,cell=H/ROWS;cols=Math.floor(W/cell);
+  var dt=last?Math.min(100,ts-last):16;last=ts;var dir=parseInt($('dir').value,10),speed=parseInt($('spd').value,10);
+  off+=dir*speed*dt*0.004;var span=textW+cols;if(off<-span)off+=span;if(off>span)off-=span;
+  var lit=!($('blink').value==='1'&&Math.floor(ts/450)%2===1),mir=$('mir').value==='1';
+  x.fillStyle='#050505';x.fillRect(0,0,W,H);
+  var start=dir===0?Math.floor((cols-textW)/2):Math.round(off)+(dir<0?cols:-textW);
+  if(dir===0)start=Math.floor((cols-textW)/2);
+  for(var cx=0;cx<cols;cx++){var tx=(mir?cols-1-cx:cx)-start;
+    if(dir!==0){tx=((tx%span)+span)%span;}
+    for(var cy=0;cy<ROWS;cy++){var on=lit&&tx>=0&&tx<textW&&bitmap[cy*textW+tx];
+      x.beginPath();x.arc(cx*cell+cell/2,cy*cell+cell/2,cell*0.38,0,6.2832);
+      x.fillStyle=on?color:'#1b1b1b';x.fill();}}
+  requestAnimationFrame(frame);}
+$('txt').addEventListener('input',rasterize);
+$('fs').addEventListener('click',function(){var w=$('wrap');
+  if(document.fullscreenElement){document.exitFullscreen();return;}
+  if(w.requestFullscreen)w.requestFullscreen().catch(function(){});});
+rasterize();requestAnimationFrame(frame);
+</script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>英文字母描寫練習單產生器 — 自選字母、免費列印</title>
+<meta name="description" content="只用你輸入的英文字母，產生大寫、小寫或大小寫的描寫練習單，三種描寫線，並有和英文作業簿一樣的基準線。免費列印。">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/letter-tracing-worksheet.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/letter-tracing-worksheet.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/letter-tracing-worksheet.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/letter-tracing-worksheet.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/letter-tracing-worksheet.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/letter-tracing-worksheet.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/letter-tracing-worksheet.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="英文字母描寫練習單">
+<meta property="og:description" content="只用你輸入的英文字母，產生大寫、小寫或大小寫的描寫練習單，三種描寫線，並有和英文作業簿一樣的基準線。免費列印。">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/letter-tracing-worksheet.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 88% 0,#fff 0,var(--bg) 55%,#f3e6cd 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#8a5c10}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:8;background:#fffdf8f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}
+.hero{padding:56px 0 26px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--brand);white-space:nowrap}
+.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}
+.hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.06;letter-spacing:-.03em;margin:.3em 0 .22em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.tool,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+.tool{padding:clamp(20px,4vw,34px);margin:14px auto 28px}
+.tool h2,.card h2,.app-card h2{font-size:clamp(22px,3.4vw,31px);line-height:1.15;margin:0 0 6px}
+.intro{color:var(--muted);margin:0 0 8px}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--brand);margin-bottom:6px;white-space:nowrap}
+select,input,button,textarea{font:inherit;color:var(--ink)}
+select,input:not([type=range]):not([type=file]),textarea{width:100%;border:1px solid #dcc9a4;border-radius:13px;background:#fff;padding:10px 12px}
+select,input:not([type=range]):not([type=file]){min-height:46px}
+textarea{min-height:74px;resize:vertical}
+.button{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--gold));color:#fff;text-decoration:none;font-weight:850;padding:12px 19px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(154,107,22,.24)}
+.button.ghost{background:#fff;color:var(--brand);border:1px solid var(--line);box-shadow:none}
+.button[disabled]{opacity:.45;cursor:not-allowed}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:18px}
+.result{background:var(--soft);border:1px solid #ecd9b4;border-radius:16px;padding:13px;min-width:0}
+.result strong{display:block;font-size:12px;color:#96793d;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.result span{display:block;font-size:16px;font-weight:780;margin-top:5px;white-space:nowrap;overflow-x:auto}
+.result.ok span{color:var(--good)}.result.err span{color:var(--bad)}
+.note{background:var(--warn);border:1px solid #ead9a7;border-radius:15px;padding:12px 15px;margin:14px 0 0;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.card,.app-card{padding:clamp(20px,3.4vw,28px)}.card.wide{grid-column:1/-1}
+.card ul,.card ol{padding-left:22px;margin:8px 0}.card li{margin:7px 0}
+.app-card{margin:0 auto 34px;background:linear-gradient(135deg,#fffdf7,#f7ecd6)}
+.app-card .button{margin-top:8px}
+.faq{margin-bottom:28px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}
+.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;touch-action:none}
+.filedrop{border:2px dashed #dcc9a4;border-radius:18px;padding:26px;text-align:center;background:var(--soft);margin-top:14px}
+.filedrop input{width:auto}
+.footer{background:#4a3a1e;color:#f6eeda;text-align:center;padding:26px 0}
+.footer a{color:#f0ddb4}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1080px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media print{.top,.hero,.app-card,.footer,.faq,.grid,.controls,.note{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0;padding:0}.trace{border:0;padding:0}}
+
+.trace{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:18px}
+.trace svg{display:block;width:100%;height:auto;margin-bottom:10px}
+.trace .lbl{font-size:13px;color:var(--muted);margin:0 0 4px}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"英文字母描寫練習單","description":"只用你輸入的英文字母，產生大寫、小寫或大小寫的描寫練習單，三種描寫線，並有和英文作業簿一樣的基準線。免費列印。","url":"https://open.cait518.cc/ios-app-guide/zh-Hant/tools/letter-tracing-worksheet.html","inLanguage":"zh-Hant","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"EducationalApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["輸入的字母每張最多 12 個","大寫、小寫或兩者","點線、外框、淡色填滿三種","每一行都有大寫線、中線與基線"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hant","mainEntity":[{"@type":"Question","name":"可以只練孩子常寫錯的字母嗎？","acceptedAnswer":{"@type":"Answer","text":"這正是重點。只輸入那幾個字母——三個難寫的字母各兩行，比一整套 A 到 Z 有用得多。"}},{"@type":"Question","name":"為什麼有三條線？","acceptedAnswer":{"@type":"Answer","text":"分別是大寫高度、中線和基線。孩子需要中線來判斷小寫字母寫到哪裡、往上或往下延伸的字母要到哪裡，一條線不夠。"}},{"@type":"Question","name":"可以用草寫或學校字體嗎？","acceptedAnswer":{"@type":"Answer","text":"不行。它使用一般的無襯線字體並且直接說明，不宣稱符合某個國家的書寫規範。"}}]}</script>
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="index.html">← 免費工具</a><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/" >iOS App Guide</a></div></header>
+<section class="hero wrap">
+<span class="eyebrow">自選字母 · 真正的基準線 · 可列印</span>
+<h1>英文字母描寫練習單</h1>
+<p class="lead">不是固定的 A 到 Z 套組，而是只輸入孩子正在練的字母。每一行都有大寫高度線、虛線中線和較粗的基線。</p>
+<div class="badges"><span class="badge">自選字母</span><span class="badge">大寫、小寫或都要</span><span class="badge">三種描寫線</span><span class="badge">列印乾淨</span></div>
+</section>
+<main class="wrap">
+<section class="tool" id="tool">
+<h2>選擇字母</h2>
+<p class="intro">輸入字母，要不要空格都可以。每張最多 12 個。</p>
+<div class="controls">
+<div class="field"><label for="letters">字母</label><input type="text" id="letters" value="A B C" maxlength="60"></div>
+<div class="field"><label for="case">大小寫</label><select id="case">
+<option value="upper">大寫</option><option value="lower">小寫</option>
+<option value="both" selected>兩者</option></select></div>
+<div class="field"><label for="rows">每個字母幾行</label><select id="rows">
+<option value="1">1</option><option value="2" selected>2</option><option value="3">3</option></select></div>
+</div>
+<div class="controls" style="margin-top:10px">
+<div class="field"><label for="style">描寫線</label><select id="style">
+<option value="dotted" selected>點線</option><option value="outline">外框</option>
+<option value="faded">淡色填滿</option></select></div>
+<div class="field"><label for="start">起點圓點</label><select id="start">
+<option value="1">顯示</option><option value="0">隱藏</option></select></div>
+<div class="field" style="align-self:end"><button class="button ghost" id="print">列印</button></div>
+</div>
+<div class="trace" id="sheet"></div>
+<p class="note">字母以一般無襯線字體繪製，不是任何國家的書寫規範字體。</p>
+</section>
+<section class="grid">
+<article class="card"><h2>運作方式</h2><ol><li>每一行都用 SVG 畫成，列印時是印表機的解析度，不會是模糊的點陣圖。</li><li>字母後面有三條線：淡淡的大寫高度線、標示小寫高度的虛線中線，以及較粗的基線，和學校的英文作業簿結構一樣。</li><li>點線是虛線外框、外框是實線外框，淡色填滿適合還在描形狀、還不太會沿線寫的孩子。</li><li>起點圓點標出每行第一個字母從哪裡開始寫，也可以關掉。</li></ol></article>
+<article class="card"><h2>這個工具不會做的事</h2><ul><li>不教特定的書寫體系。字形來自一般的無襯線字體，不是草寫或學校指定字體。</li><li>什麼都不儲存，你輸入的字母不會離開這個頁面。</li><li>不用帳號、沒有浮水印、列印張數不限。</li></ul></article>
+<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="duplicate-photo-finder.html">重複照片偵測</a></li><li><a href="flashcard-maker.html">單字卡製作</a></li><li><a href="days-between-dates-calculator.html">天數計算機・日期計算</a></li><li><a href="https://open.cait518.cc/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+</section>
+<section class="faq"><h2>常見問題</h2><details><summary>可以只練孩子常寫錯的字母嗎？</summary><p>這正是重點。只輸入那幾個字母——三個難寫的字母各兩行，比一整套 A 到 Z 有用得多。</p></details><details><summary>為什麼有三條線？</summary><p>分別是大寫高度、中線和基線。孩子需要中線來判斷小寫字母寫到哪裡、往上或往下延伸的字母要到哪裡，一條線不夠。</p></details><details><summary>可以用草寫或學校字體嗎？</summary><p>不行。它使用一般的無襯線字體並且直接說明，不宣稱符合某個國家的書寫規範。</p></details></section>
+<section class="app-card"><h2>也在 iPad 上學英文字母嗎？</h2>
+<p>Lumi Letters 是選用的——這個工具完全在瀏覽器裡執行，沒有 App 也能用。功能、價格與上架狀況請以 App Store 頁面為準。</p>
+<a class="button" href="https://apps.apple.com/tw/app/id6778748533?pt=118326163&ct=geo_learn&mt=8" rel="nofollow noopener">在 App Store 查看 Lumi Letters</a></section>
+<section class="wrap tool-email-capture" style="border:1px solid rgba(120,100,70,.25);border-radius:14px;padding:18px 20px;margin:28px 0;background:rgba(255,250,240,.55)"><h2>新工具上線時通知我</h2><p>這些小工具是一個一個做的,做好就免費放上來。想在有新工具時收到通知,留個信箱就好——只會用在這件事。</p><form action="https://buttondown.com/api/emails/embed-subscribe/hourstag" method="post" target="_blank" style="display:flex;gap:8px;flex-wrap:wrap"><label for="tec-email" class="visually-hidden" style="position:absolute;left:-9999px">電子郵件</label><input id="tec-email" type="email" required name="email" placeholder="you@example.com" style="flex:1 1 220px;padding:10px 12px;border-radius:10px;border:1px solid rgba(120,100,70,.35)"><input type="hidden" name="embed" value="1"><button type="submit" style="padding:10px 18px;border-radius:10px;border:0;background:#7a5c2e;color:#fff;cursor:pointer">通知我</button></form><p><small>只寄新工具上線通知。訂閱由 Buttondown 代為處理;不做 App 行銷、不出售信箱,隨時一鍵取消。</small></p></section></main>
+<footer class="footer"><div class="wrap">全部在瀏覽器內完成 · 不上傳、不儲存 · <a href="index.html">所有免費工具</a></div></footer>
+<script>var L={"h2":"選擇字母","intro":"輸入字母，要不要空格都可以。每張最多 12 個。","l_letters":"字母","l_case":"大小寫","c_upper":"大寫","c_lower":"小寫","c_both":"兩者","l_rows":"每個字母幾行","l_style":"描寫線","s_dotted":"點線","s_outline":"外框","s_faded":"淡色填滿","l_start":"起點圓點","on":"顯示","off":"隱藏","b_print":"列印","empty":"請至少輸入一個字母。","note":"字母以一般無襯線字體繪製，不是任何國家的書寫規範字體。"};
+
+var $=function(i){return document.getElementById(i);};
+function chars(){
+  var raw=$('letters').value.replace(/\s+/g,'');
+  var mode=$('case').value,out=[];
+  for(var i=0;i<raw.length&&out.length<12;i++){
+    var c=raw[i];
+    if(mode==='upper')out.push(c.toUpperCase());
+    else if(mode==='lower')out.push(c.toLowerCase());
+    else{out.push(c.toUpperCase());out.push(c.toLowerCase());}}
+  return out;}
+function styleAttrs(){
+  var s=$('style').value;
+  if(s==='outline')return {fill:'none',stroke:'#c9b489',dash:'',width:2};
+  if(s==='faded')return {fill:'#eadfc6',stroke:'none',dash:'',width:0};
+  return {fill:'none',stroke:'#c9b489',dash:'5 7',width:2.5};}
+function rowSvg(ch,perRow){
+  var st=styleAttrs(),w=980,h=170,x0=40,gap=(w-x0*2)/perRow;
+  var s='<svg viewBox="0 0 '+w+' '+h+'" role="img" aria-label="'+ch+'">';
+  s+='<line x1="20" y1="30" x2="'+(w-20)+'" y2="30" stroke="#ece0c6" stroke-width="2"/>';
+  s+='<line x1="20" y1="90" x2="'+(w-20)+'" y2="90" stroke="#e7d9ba" stroke-width="2" stroke-dasharray="7 9"/>';
+  s+='<line x1="20" y1="140" x2="'+(w-20)+'" y2="140" stroke="#ddc9a0" stroke-width="2.5"/>';
+  for(var i=0;i<perRow;i++){
+    var x=x0+gap*i;
+    s+='<text x="'+x+'" y="140" font-size="120" font-family="Verdana,Geneva,sans-serif"'
+      +' fill="'+st.fill+'" stroke="'+st.stroke+'" stroke-width="'+st.width+'"'
+      +(st.dash?' stroke-dasharray="'+st.dash+'"':'')+'>'+ch+'</text>';
+    if($('start').value==='1'&&i===0)
+      s+='<circle cx="'+(x+6)+'" cy="42" r="7" fill="#c8922a"/>';}
+  s+='</svg>';
+  return s;}
+function render(){
+  var cs=chars(),rows=parseInt($('rows').value,10),host=$('sheet'),h='';
+  if(!cs.length){host.innerHTML='<p class="small">'+L.empty+'</p>';window.__trace=[];return;}
+  cs.forEach(function(c){
+    for(var r=0;r<rows;r++){
+      h+='<p class="lbl">'+c+'</p>'+rowSvg(c,6);}});
+  host.innerHTML=h;
+  window.__trace=cs;}
+['letters','case','rows','style','start'].forEach(function(i){
+  $(i).addEventListener('input',render);$(i).addEventListener('change',render);});
+$('print').addEventListener('click',function(){window.print();});
+render();
+</script>
+</body>
+</html>

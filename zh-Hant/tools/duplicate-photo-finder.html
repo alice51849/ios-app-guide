@@ -99,7 +99,7 @@ canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radi
 <section class="grid">
 <article class="card"><h2>運作方式</h2><ol><li>每張圖畫到 8×8 的 canvas 上轉成亮度，再產生 64 位元的平均雜湊：比平均亮的格子記為 1。</li><li>兩張圖的雜湊差異在你設定的位元數以內就算重複。0 代表看起來完全相同，6 左右可以抓到輕微裁切、曝光差異與重新存檔。</li><li>每一組裡把檔案最大的排第一並標示「留這張」，計數器加總的是其餘那些的大小。</li><li>調整門檻會立刻重新分組，不需要重讀檔案。</li></ol></article>
 <article class="card"><h2>這個工具不會做的事</h2><ul><li>無法刪除任何檔案。網頁碰不到你的照片圖庫，這裡只能告訴你該處理哪些，刪除要你自己來。</li><li>不讀取 EXIF、日期或位置，分組完全依據外觀。</li><li>不上傳，雜湊計算全部在你的裝置上完成。</li></ul></article>
-<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="flashcard-maker.html">單字卡製作</a></li><li><a href="image-compressor.html">壓縮圖片</a></li><li><a href="white-noise-generator.html">白噪音產生器</a></li><li><a href="https://open.cait518.cc/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
+<article class="card wide"><h2>其他免費工具</h2><ul><li><a href="flashcard-maker.html">單字卡製作</a></li><li><a href="days-between-dates-calculator.html">天數計算機・日期計算</a></li><li><a href="wifi-qr-code-generator.html">Wi-Fi QR Code 產生器</a></li><li><a href="https://open.cait518.cc/ios-app-guide/tools/currency-converter.html">Currency converter</a></li></ul></article>
 </section>
 <section class="faq"><h2>常見問題</h2><details><summary>和「完全相同」的重複偵測差在哪？</summary><p>完全相同是比位元組，只要重新存檔、縮圖或換個匯出設定就抓不到了。感知雜湊比的是外觀，所以連拍與幾乎一樣的重拍也能歸在一起。</p></details><details><summary>門檻要設多少？</summary><p>完全或幾乎完全相同設 0–1；連拍與輕微編輯大約設 6。超過 10 之後，像同一個 App 的截圖那種大片單色的圖會開始誤判。</p></details><details><summary>可以直接清理我的手機嗎？</summary><p>不行。瀏覽器頁面碰不到照片圖庫，任何宣稱做得到的頁面都不誠實。請用這裡找出檔案，再自己刪除。</p></details></section>
 <section class="app-card"><h2>想對整個相簿跑一次嗎？</h2>

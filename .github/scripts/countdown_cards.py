@@ -31,6 +31,7 @@ from social_post_common import play_store_url  # noqa: E402
 APP_ID = "6807079789"  # CountDaysNow
 STORE = {"ko": "kr", "zh-Hant": "tw", "ja": "jp", "en": "us"}
 FONT = "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"
+ASSETS = HERE.parent / "growth" / "assets" / "countdown"  # localized App Store screenshots
 FONT_INDEX = {"ja": 0, "ko": 1, "zh-Hans": 2, "zh-Hant": 3, "en": 0}
 TW = dt.timezone(dt.timedelta(hours=8))
 
@@ -75,13 +76,16 @@ def today_tw():
 
 
 def due(day):
-    """The nearest event inside its window (D-day included), or None."""
-    best = None
-    for e in EVENTS:
-        n = (dt.date.fromisoformat(e["date"]) - day).days
-        if 0 <= n <= e["window"] and (best is None or n < best[1]):
-            best = (e, n)
-    return best
+    """Today's event: events in their final 10 days come first (nearest wins);
+    otherwise the active events take turns day by day. None if nothing is active."""
+    active = sorted(((e, (dt.date.fromisoformat(e["date"]) - day).days) for e in EVENTS),
+                    key=lambda x: x[1])
+    active = [(e, n) for e, n in active if 0 <= n <= e["window"]]
+    if not active:
+        return None
+    if active[0][1] <= 10:
+        return active[0]
+    return active[day.toordinal() % len(active)]
 
 
 def store_url(e, channel):
@@ -127,20 +131,42 @@ def make(out, day):
         return y
 
     t = TEXT[e["locale"]]
-    center(e["title"], 170, 76, (255, 255, 255))
+    center(e["title"], 80, 64, (255, 255, 255))
     big = e["today"] if n == 0 else e["count"].format(n=n)
-    y = center(big, 400, 230 if n else 120, accent)
-    center(e["when"], max(y + 40, 760), 52, (255, 255, 255))
-    center(e["lines"][day.toordinal() % len(e["lines"])], 900, 58, (255, 255, 255))
-    draw.rounded_rectangle([90, 1110, W - 90, 1230], radius=60, fill=(255, 255, 255))
+    y = center(big, 175, 190 if n else 104, accent)
+    y = center(e["when"], max(y + 20, 430), 46, (255, 255, 255))
+    center(e["lines"][day.toordinal() % len(e["lines"])], y + 14, 50, (255, 255, 255))
+    # The real app screen (localized App Store screenshot) rising from the bottom.
+    shot = ASSETS / f"countdaysnow_{e['locale']}.png"
+    if not shot.exists():
+        shot = ASSETS / "countdaysnow_en.png"
+    phone = Image.open(shot).convert("RGBA")
+    pw = 540
+    phone = phone.resize((pw, int(phone.height * pw / phone.width)), Image.LANCZOS)
+    shadow = Image.new("RGBA", (pw + 80, phone.height + 80), (0, 0, 0, 0))
+    ImageDraw.Draw(shadow).rounded_rectangle([40, 50, pw + 40, phone.height + 40], radius=70, fill=(0, 0, 0, 110))
+    from PIL import ImageFilter
+    shadow = shadow.filter(ImageFilter.GaussianBlur(24))
+    top_y = 640
+    img.paste(shadow, ((W - pw) // 2 - 40, top_y - 40), shadow)
+    img.paste(phone, ((W - pw) // 2, top_y), phone)
+    # Fade the phone's lower part into the background so the store pill reads.
+    fade = Image.new("RGBA", (W, 330), (0, 0, 0, 0))
+    fd = ImageDraw.Draw(fade)
+    for i in range(330):
+        a = int(255 * min(1, i / 200))
+        fd.line([(0, i), (W, i)], fill=bottom + (a,))
+    img.paste(fade, (0, H - 330), fade)
+    draw = ImageDraw.Draw(img)
+    draw.rounded_rectangle([90, 1160, W - 90, 1260], radius=50, fill=(255, 255, 255))
     store = t["both"] if play_store_url(APP_ID, "cd") else t["search"]
     font = f(38)
     size = 38
     while draw.textlength(store, font=font) > W - 240:
         size -= 2
         font = f(size)
-    draw.text(((W - draw.textlength(store, font=font)) / 2, 1170 - size * 0.6), store, font=font, fill=top)
-    center(t["by"], 1260, 34, (255, 255, 255))
+    draw.text(((W - draw.textlength(store, font=font)) / 2, 1210 - size * 0.62), store, font=font, fill=top)
+    center(t["by"], 1280, 32, (255, 255, 255))
     img.save(out, "JPEG", quality=90)
     meta = {"event": e["id"], "locale": e["locale"], "days": n, "date": day.isoformat(),
             "caption": caption(e, n, day)}

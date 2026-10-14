@@ -21922,7 +21922,8 @@ class GeneratorTests(unittest.TestCase):
         sanitized = build_pages_i18n.sanitize_description(
             "aim990", "zh-Hant", aim_description
         )
-        self.assertIn("無需訂閱", sanitized)
+        # v2.0.1 live copy states the one-time purchase directly.
+        self.assertIn("沒有訂閱", sanitized)
         self.assertNotIn("可選訂閱方案", sanitized)
         en_gb = build_pages_i18n.load_app_locales("aim990")[
             "en-GB"
@@ -21930,7 +21931,7 @@ class GeneratorTests(unittest.TestCase):
         sanitized_en_gb = build_pages_i18n.sanitize_description(
             "aim990", "en-GB", en_gb
         )
-        self.assertIn("without a subscription", sanitized_en_gb.lower())
+        self.assertIn("no subscription", sanitized_en_gb.lower())
         self.assertNotIn("optional subscription", sanitized_en_gb.lower())
         mochi_pricing = build_pages_i18n.pricing_text_for(
             "mochi", "en-US"

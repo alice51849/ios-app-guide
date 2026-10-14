@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-14T12:11:14+0800",
+ "source_generated": "2026-10-14T12:43:13+0800",
  "count": 38,
- "content_sha256": "1fba87f4bca45892edae3ffb81fcea1825aaff1ff4de7f2b114d4246080e9ac2",
+ "content_sha256": "69f291f182323c48ebaf41d013e7105553a5f4a01b7e66cfa2078a90b81a7782",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -610,7 +610,7 @@
     },
     "zh-TW": {
      "title": "ShotInbox AI: Sort Screenshots",
-     "short_description": "本機截圖分類、OCR搜尋與時間軸"
+     "short_description": "本機截圖分類、相似清理與時間軸"
     }
    }
   },

@@ -36,10 +36,12 @@ jobs:
           path: .engine
           # shorts = planner + storyboards (+ striking_distance.json sprint plan); data/*_full.json and the
           # two aso keyword files feed the search-intent captions (search_intent.py); the revenue snapshot
-          # orders the apps (only app keys reach clips.json, no numbers).
+          # orders the apps and the weekly channel funnel moves slots / locales (only app keys and the
+          # schedule reach clips.json, no numbers).
           sparse-checkout: |
             shorts/
             reports/funnel-latest.json
+            reports/channel_funnel.json
             data/*_full.json
             aso/keyword_baseline_20260923.json
             aso/kw_content.json

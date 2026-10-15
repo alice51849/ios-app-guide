@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-15T09:52:43+0800",
- "count": 40,
- "content_sha256": "c565b7aaf4d9ab79d6a4358927768da9e84c56d626c856f31da19c87fee59c2c",
+ "source_generated": "2026-10-15T17:02:19+0800",
+ "count": 41,
+ "content_sha256": "964a4cf604a1cfcb48345d8af6f17728bc20e51242314676ac8b4f3fe3deb571",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -735,6 +735,27 @@
     "zh-TW": {
      "title": "TripBee Lite：旅程規劃與每日行程表",
      "short_description": "用每日時間軸做旅遊行程規劃，航班、住宿、票券與備註集中在同一趟旅程"
+    }
+   }
+  },
+  "tripplanet": {
+   "ios_app_id": "6787193643",
+   "ios_name": "Trip Planet: Kids Quest",
+   "android_folder": "22_LumiTripPlanet",
+   "package": "com.alice51849.TripPlanet",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet",
+   "paid": false,
+   "first_seen": "2026-10-15T17:02:19+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Trip Planet: Kids Quest",
+     "short_description": "Family Travel Missions"
+    },
+    "zh-TW": {
+     "title": "Trip Planet 親子旅行遊戲",
+     "short_description": "兒童帶娃出遊任務獎勵星圖"
     }
    }
   },

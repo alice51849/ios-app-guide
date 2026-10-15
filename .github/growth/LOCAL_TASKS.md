@@ -305,3 +305,63 @@ Caitlyn 會在本機對話貼「請照 LOCAL_TASKS 的社群授權段執行」�
 - 素材在私人 repo `alice51849/00_GrowthEngine` 的 `marketing/led_moving_text_v3/`：商店圖 v3 核准版 01–06.png、overview.png（英文、iPhone 6.9），`README.md` 是交接說明。
 - 用同一套 v3 圖文做影片節奏與字卡；影片畫面若要放 App 畫面，必須是真實 App 螢幕錄影（2.3.3）、完整解鎖、無價格／Free／Pro 字樣、無假狀態列。
 - 只做草稿給 Caitlyn 看，不上傳 ASC。需要本機實拍畫面時，才在這裡新增一段請本機錄影。
+
+### 請本機錄影：LED Moving Text 鉤子片真機畫面
+
+> 雲端已做好草稿：`00_GrowthEngine/shorts/storyboards/ledmovingtext_v3.json`（英文、11 秒、6 段 v3 標題）。每段 App 畫面現在都是「真機錄影 rec_0N」佔位框。只要把 6 段真機螢幕錄影放到指定位置，雲端重算時就會自動換上。**只做草稿給 Caitlyn 看，不上傳 ASC、不發社群。**
+
+**1. 準備手機（約 3 分鐘）**
+
+1. 用 iPhone 6.9 吋（Pro Max）。
+2. 裝**拍攝專用版**（拍商店圖 v3 用的那版，完整解鎖）。不要用 App Store 正式版，正式版會跳出解鎖或價格畫面。
+3. 手機語言改成英文：設定 → 一般 → 語言與地區 → iPhone 語言 → English。
+4. 關掉通知：打開「飛航模式」，來電和訊息就不會跳出來。
+5. 關掉專注模式：從右上角往下滑開控制中心，確認「專注模式」（勿擾、睡眠、工作）都是關的，錄影中才不會跳出切換提示。
+6. 螢幕亮度調到最高。
+7. 確認控制中心有錄影鍵：控制中心左上角「+」→ 新增控制項 → 搜尋「螢幕錄製」→ 加入。
+
+**2. 怎麼錄一段**
+
+1. 先在 App 裡停在要錄的畫面。
+2. 從右上角往下滑開控制中心 → 點圓形錄影鍵 → 倒數 3 秒。
+3. 往上滑關掉控制中心，等 1 秒再開始操作。
+4. 錄完點左上角紅色時間膠囊 → 「停止」。影片會存到「照片」。
+5. 在「照片」打開影片 → 編輯 → 拖動左邊把手，剪掉開頭控制中心那一段 → 完成。
+
+**3. 要錄的 6 段**（每段錄 5–6 秒；影片每段只用 1.5–2 秒，多錄一點方便挑）
+
+| 檔名 | 拿法 | 要錄什麼 | 長度 |
+|---|---|---|---|
+| `rec_01.mov` | 橫拿 | 看板文字換成「LOVE YOU!」，捲動模式 → 點全螢幕鍵 → 手機轉橫，讓字捲動（像舉牌給人看） | 5 秒 |
+| `rec_02.mov` | 橫拿 | 文字換成「GO TEAM GO!」，固定模式，大字亮色 → 全螢幕橫向，靜靜錄（從人群後面也看得到的那種） | 5 秒 |
+| `rec_03.mov` | 直拿 | Create 畫面：清空文字，一個字一個字打「WELCOME HOME!」，上面預覽要即時出現彩色字；打完停 1 秒 | 6 秒 |
+| `rec_04.mov` | 直拿 | Templates 分頁：從最上面慢慢往下滑，看得到一整排現成看板（共 60 款）；不要滑太快 | 5 秒 |
+| `rec_05.mov` | 直拿 | 切換效果：點 Glow → 停 1 秒 → 點 Dot Matrix → 停 1 秒 → 再點一種效果；預覽要跟著變 | 6 秒 |
+| `rec_06.mov` | 直拿 | Style → Text Color：點 Rainbow → 停 1 秒 → 選一個漸層 → 停 1 秒；字要跟著變色 | 6 秒 |
+
+- 拍攝專用版每個畫面只能放固定範本：先把要拍的看板換成上表的文字再錄。
+- **文字一律照上表，不要更長。** 長字串在固定模式會被切掉。
+- **不能出現任何價格、Free、Pro、試用或解鎖畫面。** 一跳出來就整段重錄。
+- 不要出現真實人名、個人照片或通知。狀態列用手機原本的就好，不要另外修圖。
+
+**4. 放檔案並 commit（在 Mac 上）**
+
+1. 用 AirDrop 把 6 段影片傳到 Mac（會在「下載項目」）。
+2. 依上表改名成 `rec_01.mov` … `rec_06.mov`（全小寫）。如果傳過來是 `.MP4`，直接把副檔名改成 `.mov` 即可。
+3. 放進 `~/00_GrowthEngine/social/assets/ledmovingtext/`（沒有這個資料夾就新建）。
+4. 在終端機執行（`social/assets/` 和 `*.mov` 預設不進 git，所以要加 `-f`；只加這 6 個檔）：
+
+   ```bash
+   cd ~/00_GrowthEngine
+   git pull --rebase --autostash
+   ls -lh social/assets/ledmovingtext/          # 每個檔要小於 50 MB；太大就錄短一點
+   git add -f social/assets/ledmovingtext/rec_0[1-6].mov
+   git commit -m "LED Moving Text 鉤子片真機錄影 rec_01–rec_06"
+   git push origin main
+   ```
+
+**5. 做完後跟雲端 session 說**（整段貼上，把 commit 換成剛剛的編號）
+
+> LED Moving Text 鉤子片真機錄影 rec_01–rec_06 已推到 00_GrowthEngine 的 social/assets/ledmovingtext/（commit xxxxxxx）。請用 shorts/storyboards/ledmovingtext_v3.json 跑 `node scripts/render.mjs ledmovingtext_v3 --draft` 重算草稿，檢查構圖，給 Caitlyn 看。hold 先不要拿掉，也不要排程或上傳。
+
+- 有哪一段錄不到，就在這句後面寫「rec_0N 沒錄，原因：…」。那段會繼續顯示佔位框。

@@ -88,7 +88,7 @@ class AttributionIntegrityTests(unittest.TestCase):
         self.environment.start()
         self.addCleanup(self.environment.stop)
         (GEO / "pages").mkdir(exist_ok=True)
-        self.directory = tempfile.TemporaryDirectory(prefix="attribution-test-", dir=GEO / "pages")
+        self.directory = tempfile.TemporaryDirectory(prefix="attribution-test-")
         self.addCleanup(self.directory.cleanup)
         self.pages = Path(self.directory.name)
 

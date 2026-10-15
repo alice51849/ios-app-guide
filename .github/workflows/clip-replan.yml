@@ -34,10 +34,12 @@ jobs:
           repository: alice51849/00_GrowthEngine
           ssh-key: ${{ secrets.GROWTH_ENGINE_DEPLOY_KEY }}
           path: .engine
-          # shorts = planner + storyboards; data/*_full.json and the two aso
-          # keyword files feed the search-intent captions (search_intent.py).
+          # shorts = planner + storyboards (+ striking_distance.json sprint plan); data/*_full.json and the
+          # two aso keyword files feed the search-intent captions (search_intent.py); the revenue snapshot
+          # orders the apps (only app keys reach clips.json, no numbers).
           sparse-checkout: |
             shorts/
+            reports/funnel-latest.json
             data/*_full.json
             aso/keyword_baseline_20260923.json
             aso/kw_content.json

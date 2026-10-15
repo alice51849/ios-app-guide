@@ -10,6 +10,10 @@ on:
         description: Live app guide slug (optional)
         required: false
         default: ""
+      run:
+        description: 已停用；要手動跑一次請填 yes（其他觸發一律跳過、不算失敗）
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -20,6 +24,7 @@ concurrency:
 
 jobs:
   archive:
+    if: ${{ inputs.run == 'yes' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

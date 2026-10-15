@@ -93,10 +93,50 @@ BRANDS = [
     "Lumi Math Pro",
     "Lumi Bopomofo Pro",
     "Lumi Trip Planet",
+    "Trip Planet: Kids Quest",
     "Wordmate",
     "DailyMate",
     "TripBee Lite",
 ]
+# App Store 改名:品牌名在譯文裡一律原樣保留,所以改名前寫好的在地化頁會一直
+# 帶著舊名;--refresh 又只在字典「多譯出」內容時才覆寫,單純換名永遠不會被
+# 觸發(tripplanet-04:publisher catalog 40 筆仍讀到舊名)。英文來源頁已換成新名
+# 且不再含舊名時,refresh 只把在地化頁中的舊品牌名換成新名,其他譯文不動。
+# 長的舊全名放前面,避免先換掉前綴。
+RENAMED_BRANDS: tuple[tuple[str, str], ...] = (
+    ("Lumi Trip Planet: World Travel", "Trip Planet: Kids Quest"),
+    ("Lumi Trip Planet", "Trip Planet: Kids Quest"),
+)
+
+
+# 韓文助詞跟著前一個字的收尾音變:Planet(플래닛)有收尾音、Quest(퀘스트)沒有,
+# 換名後要把「은/이/을/과/으로」改成「는/가/를/와/로」。
+KO_VOWEL_FINAL_BRANDS = frozenset({"Trip Planet: Kids Quest"})
+KO_PARTICLES_AFTER_VOWEL = {"은": "는", "이": "가", "을": "를", "과": "와", "으로": "로"}
+
+
+def _fix_ko_particles(text: str, brand: str) -> str:
+    return re.sub(
+        re.escape(brand) + r"(으로|은|이|을|과)(?=[\s.,!?;:…)\]\"'<」』]|$)",
+        lambda m: brand + KO_PARTICLES_AFTER_VOWEL[m.group(1)],
+        text,
+    )
+
+
+def apply_brand_renames(
+    localized: str,
+    english_source: str,
+    lang: str | None = None,
+) -> str:
+    """Swap stale App Store names for the current one the English page uses."""
+    for old, new in RENAMED_BRANDS:
+        if old in localized and new in english_source and old not in english_source:
+            localized = localized.replace(old, new)
+            if lang == "ko" and new in KO_VOWEL_FINAL_BRANDS:
+                localized = _fix_ko_particles(localized, new)
+    return localized
+
+
 NATIVE_SCRIPT_RANGES = {
     "ar-SA": ((0x0600, 0x06FF), (0x0750, 0x077F)),
     "ur-PK": ((0x0600, 0x06FF), (0x0750, 0x077F)),
@@ -2818,6 +2858,24 @@ def _existing_untranslated_ratio(existing: str, english_strings: list[str]) -> f
     return same / total
 
 
+def _refresh_brand_names(
+    target: Path,
+    english_source: str,
+    lang: str,
+    slug: str,
+) -> bool:
+    try:
+        existing = target.read_text(encoding="utf-8")
+    except OSError:
+        return False
+    updated = apply_brand_renames(existing, english_source, lang)
+    if updated == existing:
+        return False
+    target.write_text(updated, encoding="utf-8")
+    print(f"renamed brand in {lang}/{slug}.html", flush=True)
+    return True
+
+
 def run_refresh(
     langs: list[str],
     trans_dir: str,
@@ -2850,7 +2908,7 @@ def run_refresh(
             q.stem for q in ANSWERS.glob("*.html") if q.name != "index.html"
         )
 
-    improved = unchanged = failed = 0
+    improved = unchanged = failed = renamed = 0
     touched_slugs: list[str] = []
     for slug in candidates:
         src_path = ANSWERS / f"{slug}.html"
@@ -2860,10 +2918,13 @@ def run_refresh(
         strings, spans, json_spans = extract_strings(source)
         slug_touched = False
         for lang in langs:
-            if lang in ENGLISH_LOCALES:
-                continue
             target = ROOT / lang / "answers" / f"{slug}.html"
             if not target.exists():
+                continue
+            if lang in ENGLISH_LOCALES:
+                if _refresh_brand_names(target, source, lang, slug):
+                    renamed += 1
+                    slug_touched = True
                 continue
             gm = global_maps[lang]
             mapping = {x: gm.get(x, x) for x in strings}
@@ -2876,7 +2937,11 @@ def run_refresh(
                 continue
             old_ratio = _existing_untranslated_ratio(existing, strings)
             if new_ratio > old_ratio - min_gain:
-                unchanged += 1
+                if _refresh_brand_names(target, source, lang, slug):
+                    renamed += 1
+                    slug_touched = True
+                else:
+                    unchanged += 1
                 continue
             try:
                 localized = render_localized(
@@ -2906,7 +2971,12 @@ def run_refresh(
 
     print(
         json.dumps(
-            {"refreshed": improved, "unchanged": unchanged, "failed": failed},
+            {
+                "refreshed": improved,
+                "renamed": renamed,
+                "unchanged": unchanged,
+                "failed": failed,
+            },
             ensure_ascii=False,
         ),
         flush=True,

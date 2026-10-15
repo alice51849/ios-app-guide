@@ -1788,7 +1788,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "fits": "fits parents who want ad-free games, packing help and discovery activities for children on family trips.",
             "faq": [
                 {"q": "Is it only for the journey?", "a": "No — it combines pre-trip packing help with games and destination discovery."},
-                {"q": "Does it contain ads?", "a": "No — Lumi Trip Planet is positioned as an ad-free, child-safe experience."},
+                {"q": "Does it contain ads?", "a": "No — Trip Planet: Kids Quest is positioned as an ad-free, child-safe experience."},
                 {"q": "Is there a subscription?", "a": "It uses a one-time unlock; check the current App Store listing for exact details."},
             ],
         },

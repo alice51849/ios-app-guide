@@ -1088,6 +1088,65 @@ def alt_heading(key, comp):
     )
 
 
+# 8 語系舊版在地化比較頁(<locale>/alternatives/<key>-vs-*.html)沒有自己的
+# 產生器,也不在 alternatives_i18n 的 exact-50 manifest 內,標題原本一律是
+# 「[競品] 的替代方案:App」。分流 App 的英文頁產完後,用同一個使用情境把
+# 這些在地化頁的 <title>/og:title/H1/JSON-LD name 改成以本 App 為主體,
+# 競品只當比較對象。情境文字只寫商品頁確認過的事實(一次購買)。
+LOCALIZED_USE_CASE_TITLES = {
+    "lumibopomofopro": {
+        "de-DE": "Zhuyin-App zum Einmalkauf: {name} im Vergleich zu {comp}",
+        "es-ES": "App de zhuyin de pago único: {name} frente a {comp}",
+        "fr-FR": "App de zhuyin à achat unique : {name} face à {comp}",
+        "ja": "買い切りの注音符号アプリ: {name} と {comp} の比較",
+        "ko": "한 번 구매하는 주음부호 앱: {name}와 {comp} 비교",
+        "pt-BR": "App de zhuyin com compra única: {name} comparado com {comp}",
+        "zh-Hans": "一次买断的注音 App：{name} 与 {comp} 对比",
+        "zh-Hant": "一次買斷的注音 App：{name} 與 {comp} 比較",
+    },
+}
+# alternatives_i18n 自己產的頁面帶這個標記,標題歸它管,這裡不碰。
+ALTERNATIVES_I18N_OWNER_MARKER = "data-alternatives-owner="
+
+
+def localized_use_case_title(key, locale, comp):
+    template = LOCALIZED_USE_CASE_TITLES.get(key, {}).get(locale)
+    if not template:
+        return None
+    short_name = APPS[key]["name"].split(":", 1)[0]
+    return template.format(name=short_name, comp=comp)
+
+
+def retitle_localized_alternatives(key, slug, comp, pages=None):
+    """把分流 App 的在地化舊版比較頁標題改成以本 App 為主體;回傳改動的路徑。"""
+    root = Path(pages or PAGES)
+    changed = []
+    for locale in sorted(LOCALIZED_USE_CASE_TITLES.get(key, {})):
+        path = root / locale / "alternatives" / f"{slug}.html"
+        if not path.is_file():
+            continue
+        doc = path.read_text(encoding="utf-8")
+        if ALTERNATIVES_I18N_OWNER_MARKER in doc:
+            continue
+        match = re.search(r"<title>(.*?)</title>", doc, flags=re.DOTALL)
+        if not match:
+            continue
+        new_title = localized_use_case_title(key, locale, comp)
+        old_html = match.group(1)
+        old_text = html.unescape(old_html)
+        if old_text == new_title:
+            continue
+        updated = doc.replace(old_html, html.escape(new_title, quote=False))
+        old_json = json.dumps(old_text, ensure_ascii=False)[1:-1]
+        new_json = json.dumps(new_title, ensure_ascii=False)[1:-1]
+        if old_json != old_html:
+            updated = updated.replace(old_json, new_json)
+        if updated != doc:
+            path.write_text(updated, encoding="utf-8")
+            changed.append(path)
+    return changed
+
+
 def alt_page(key, comp_norm, gap_queries):
     a = APPS[key]
     comp = disp(comp_norm)
@@ -1343,6 +1402,8 @@ def main():
             slug, html_doc = alt_page(k, c, gaps)
             open(os.path.join(ALT, f"{slug}.html"), "w", encoding="utf-8").write(html_doc)
             written.append(f"{slug}.html"); urls.append(f"{SITE}/alternatives/{slug}.html")
+            for path in retitle_localized_alternatives(k, slug, disp(c)):
+                print(f"  ↻ 在地化標題改以 App 為主體: {path.relative_to(PAGES)}")
         slug, html_doc = hub_page(k, gaps)
         open(os.path.join(ALT, f"{slug}.html"), "w", encoding="utf-8").write(html_doc)
         written.append(f"{slug}.html"); urls.append(f"{SITE}/alternatives/{slug}.html")

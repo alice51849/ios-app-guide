@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-15T06:28:05Z",
+  "updated_at": "2026-10-15T06:49:06Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -965,11 +965,11 @@
         {
           "id": "lumibopomofopro-07",
           "title": "GEO／Telegram 分流",
-          "detail": "台灣流量導向 Lite，Pro 只出現在「無內購／海外／離線」情境頁；alternatives 頁避免以對手名稱為標題主體。",
+          "detail": "台灣流量導向 Lite，Pro 只出現在「無內購／海外／離線」情境頁；alternatives 頁避免以對手名稱為標題主體。 完成：8 語系（de-DE/es-ES/fr-FR/ja/ko/pt-BR/zh-Hans/zh-Hant）32 頁 lumibopomofopro-vs-* 標題／H1／og:title／JSON-LD 改以「一次買斷注音 App：Lumi Bopomofo Pro 與 [競品] 比較」為主體；這批舊頁沒有獨立產生器，改由 aeo_pages.retitle_localized_alternatives 在每次產英文頁後套用（LOCALIZED_USE_CASE_TITLES，附測試），8 語系 browse 清單標題同步。",
           "owner": "local",
           "impact": "medium",
-          "status": "in_progress",
-          "progress": "已完成：Telegram 排程加市場分流（zh-Hant 永不排 Pro，台灣流量只走 Lite；附測試）；英文 alternatives 5 頁改以「一次買斷注音 App」用途為標題主體（aeo_pages.alt_heading 重產）；answers 類別頁本來就走 Lite 門。未完成：8 語系在地化 lumibopomofopro-vs-* 頁（含 zh-Hant）的產生器不在 Guide 鏡像，標題仍以對手名稱開頭，需在 GrowthEngine 端補產生器後重產。"
+          "status": "done",
+          "done_at": "2026-10-15T06:49:06Z"
         },
         {
           "id": "lumibopomofopro-08",
@@ -1286,11 +1286,11 @@
         {
           "id": "tripplanet-04",
           "title": "重產 tripplanet GEO 頁與 catalog 條目（備妥、凍結後上線）",
-          "detail": "資料檔修正後以 GrowthEngine 重產 50 語系 tripplanet.html、hubs/tripplanet.html、publisher catalog 條目；移除「雜誌 要用什麼 App?」「是很好的選擇」模板 FAQ 與「購買和共享位於家長的門後」機翻句。",
+          "detail": "資料檔修正後以 GrowthEngine 重產 50 語系 tripplanet.html、hubs/tripplanet.html、publisher catalog 條目；移除「雜誌 要用什麼 App?」「是很好的選擇」模板 FAQ 與「購買和共享位於家長的門後」機翻句。 完成：answer_personas FAQ 舊名改為 Trip Planet: Kids Quest；45 語系翻譯字典補上新名稱條目（GE／鏡像合併後一致）；aeo_answers_i18n --refresh 新增改名換字（RENAMED_BRANDS，含韓文助詞，附測試），40 頁在地化 persona 頁已換名，publisher catalog 重產後 0 筆舊名。",
           "owner": "local",
           "impact": "high",
-          "status": "in_progress",
-          "progress": "已完成：50 語系 tripplanet.html 與 hubs/tripplanet.html 以產生器重產（新名稱 Trip Planet: Kids Quest，模板 FAQ 與機翻句已不在），best-* 英文問答頁改問句標題。未完成：publisher catalog 有 40 筆仍讀到在地化 persona 頁的舊名「Lumi Trip Planet」，需先補字典再以 aeo_answers_i18n --refresh 重產該 40 頁，下一次 publisher_intent_catalog 才會更新。"
+          "status": "done",
+          "done_at": "2026-10-15T06:49:06Z"
         }
       ]
     },

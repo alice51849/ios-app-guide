@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T19:49:14Z",
+  "updated_at": "2026-10-15T00:45:51Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -2032,22 +2032,22 @@
       "name": "Aim990: Fix English Weak Spots",
       "search": "Aim990",
       "tags": [
+        "#FixEnglishWeakSpots",
         "#TOEIC",
-        "#EnglishExam",
-        "#StudyAid",
-        "#TestPrep",
-        "#LanguageLearning",
+        "#Listening",
+        "#Reading",
+        "#Grammar",
         "#Aim990"
       ],
       "keywords": [
         "TOEIC",
-        "English exam",
-        "study aid",
-        "test prep",
-        "language learning",
-        "score tracking"
+        "listening",
+        "reading",
+        "grammar",
+        "vocabulary",
+        "dictation"
       ],
-      "keyline": "Your TOEIC Success Coach",
+      "keyline": "TOEIC L&R diagnosis in 8 min",
       "hooks": [
         {
           "id": "a",
@@ -2075,22 +2075,22 @@
       "name": "Aim990：英文弱點教練",
       "search": "Aim990",
       "tags": [
-        "#TOEIC考試助手",
-        "#TOEIC",
-        "#英語考試",
-        "#學習",
+        "#英文弱點教練",
+        "#多益",
         "#聽力",
+        "#閱讀",
+        "#文法",
         "#Aim990"
       ],
       "keywords": [
-        "TOEIC",
-        "英語考試",
-        "學習",
+        "多益",
         "聽力",
         "閱讀",
-        "考試準備"
+        "文法",
+        "單字",
+        "聽寫"
       ],
-      "keyline": "30天提升你的聽讀能力",
+      "keyline": "多益聽讀診斷與30天計畫",
       "hooks": [
         {
           "id": "a",
@@ -2118,22 +2118,22 @@
       "name": "Aim990: 英語弱点コーチ",
       "search": "Aim990",
       "tags": [
-        "#TOEIC対策",
+        "#英語弱点コーチ",
         "#TOEIC",
-        "#英語",
-        "#試験対策",
         "#リスニング",
+        "#リーディング",
+        "#文法",
         "#Aim990"
       ],
       "keywords": [
         "TOEIC",
-        "英語",
-        "試験対策",
         "リスニング",
         "リーディング",
-        "勉強法"
+        "文法",
+        "単語",
+        "ディクテーション"
       ],
-      "keyline": "TOEIC対策",
+      "keyline": "TOEIC L&R 8分診断と弱点処方",
       "hooks": [
         {
           "id": "a",
@@ -2161,22 +2161,22 @@
       "name": "Aim990: 영어 약점 코치",
       "search": "Aim990",
       "tags": [
-        "#토익준비의비밀",
+        "#영어약점코치",
         "#토익",
-        "#영어",
-        "#시험준비",
-        "#학습코치",
+        "#듣기",
+        "#독해",
+        "#어법",
         "#Aim990"
       ],
       "keywords": [
         "토익",
-        "영어",
-        "시험 준비",
-        "학습 코치",
-        "리스닝",
-        "리딩"
+        "듣기",
+        "독해",
+        "어법",
+        "어휘",
+        "받아쓰기"
       ],
-      "keyline": "30일 완벽 학습 코치",
+      "keyline": "토익 LC RC 8분 진단",
       "hooks": [
         {
           "id": "a",
@@ -2204,22 +2204,22 @@
       "name": "Aim990: Gia sư tiếng Anh",
       "search": "Aim990",
       "tags": [
+        "#GiasưtiếngAnh",
         "#TOEIC",
-        "#luyệnthi",
-        "#tiếngAnh",
-        "#đọc",
-        "#Nghe",
+        "#Listening",
+        "#Reading",
+        "#Grammar",
         "#Aim990"
       ],
       "keywords": [
         "TOEIC",
-        "luyện thi",
-        "tiếng Anh",
-        "đọc",
-        "nghe",
-        "thí sinh"
+        "listening",
+        "reading",
+        "grammar",
+        "vocabulary",
+        "dictation"
       ],
-      "keyline": "Chinh phục TOEIC dễ dàng",
+      "keyline": "Chẩn đoán TOEIC trong 8 phút",
       "hooks": [
         {
           "id": "a",
@@ -2247,7 +2247,7 @@
       "name": "Aim990: pelatih Inggris",
       "search": "Aim990",
       "tags": [
-        "#SiapTOEIC990",
+        "#PelatihInggris",
         "#TOEIC",
         "#UjianBahasaInggris",
         "#PersiapanTOEIC",
@@ -2262,7 +2262,7 @@
         "latihan membaca",
         "pelajaran harian"
       ],
-      "keyline": "Persiapan TOEIC yang Efektif",
+      "keyline": "Diagnosis TOEIC 8 menit",
       "hooks": [
         {
           "id": "a",
@@ -4305,7 +4305,7 @@
     "maskmyfile/el": {
       "app": "maskmyfile",
       "locale": "el",
-      "url": "https://files.catbox.moe/9cgxia.mp4",
+      "url": "https://files.catbox.moe/qz3lmz.mp4",
       "store_url": "https://apps.apple.com/gr/app/id6792850916?pt=118326163&ct=h7_maskmyfile_el&mt=8",
       "hook": "Πριν το στείλετε, κρύψτε τα στοιχεία σας",
       "name": "Mask My File: Σβήστε δεδομένα",
@@ -7086,22 +7086,22 @@
       "name": "Trip Planet: Kids Quest",
       "search": "Trip Planet",
       "tags": [
-        "#WorldTravel",
-        "#FamilyTravel",
-        "#TripPlanner",
-        "#RoadTrip",
-        "#Journal",
+        "#KidsQuest",
+        "#RoadTripGamesForKids",
+        "#TravelBingo",
+        "#KidsTravelMissions",
+        "#Flight",
         "#TripPlanet"
       ],
       "keywords": [
-        "family travel",
-        "trip planner",
-        "road trip",
-        "journal",
-        "adventure",
-        "missions"
+        "road trip games for kids",
+        "travel bingo",
+        "kids travel missions",
+        "flight",
+        "airplane",
+        "vacation"
       ],
-      "keyline": "Family travel adventure",
+      "keyline": "Family Travel Missions & Games",
       "hooks": [
         {
           "id": "a",
@@ -7129,22 +7129,22 @@
       "name": "Trip Planet 親子旅行遊戲",
       "search": "Trip Planet 親子旅行遊戲",
       "tags": [
-        "#家庭旅行",
-        "#旅行計劃",
-        "#公路旅行",
-        "#雜誌",
-        "#冒險",
+        "#帶小孩出國",
+        "#飛機上小孩",
+        "#親子旅行",
+        "#旅行任務",
+        "#兒童",
         "#TripPlanet親子旅行遊戲"
       ],
       "keywords": [
-        "家庭旅行",
-        "旅行計劃",
-        "公路旅行",
-        "雜誌",
-        "冒險",
-        "使命"
+        "帶小孩出國",
+        "飛機上 小孩",
+        "親子旅行",
+        "旅行任務",
+        "兒童",
+        "旅行遊戲"
       ],
-      "keyline": "家庭旅行冒險",
+      "keyline": "帶小孩出國搭飛機・任務集章獎勵",
       "hooks": [
         {
           "id": "a",
@@ -7172,22 +7172,22 @@
       "name": "Trip Planet 子ども旅行ゲーム",
       "search": "Trip Planet 子ども旅行ゲーム",
       "tags": [
-        "#家族旅行",
-        "#旅行プランナー",
-        "#ロードトリップ",
-        "#ジャーナル",
-        "#アドベンチャー",
+        "#子連れ旅行",
+        "#旅行子ども",
+        "#機内子ども",
+        "#子連れ飛行機",
+        "#ミッション",
         "#TripPlanet子ども旅行ゲーム"
       ],
       "keywords": [
-        "家族旅行",
-        "旅行プランナー",
-        "ロードトリップ",
-        "ジャーナル",
-        "アドベンチャー",
-        "ミッション"
+        "子連れ旅行",
+        "旅行 子ども",
+        "機内 子ども",
+        "子連れ 飛行機",
+        "ミッション",
+        "パスポート"
       ],
-      "keyline": "家族旅行の冒険",
+      "keyline": "子連れ旅のミッション＆スタンプ",
       "hooks": [
         {
           "id": "a",
@@ -7215,22 +7215,22 @@
       "name": "Trip Planet 아이 여행 게임",
       "search": "Trip Planet 아이 여행 게임",
       "tags": [
+        "#아이와여행",
+        "#비행기아이",
         "#가족여행",
-        "#여행플래너",
-        "#도로여행",
-        "#신문",
-        "#모험",
+        "#여행미션",
+        "#여행게임",
         "#TripPlanet아이여행게임"
       ],
       "keywords": [
+        "아이와 여행",
+        "비행기 아이",
         "가족 여행",
-        "여행 플래너",
-        "도로 여행",
-        "신문",
-        "모험",
-        "임무"
+        "여행 미션",
+        "여행 게임",
+        "어린이"
       ],
-      "keyline": "가족 여행 모험",
+      "keyline": "비행기·나들이 미션 도장 모으기",
       "hooks": [
         {
           "id": "a",
@@ -7252,28 +7252,28 @@
     "tripplanet/cs": {
       "app": "tripplanet",
       "locale": "cs",
-      "url": "https://files.catbox.moe/37ipvt.mp4",
+      "url": "https://files.catbox.moe/p7v58e.mp4",
       "store_url": "https://apps.apple.com/cz/app/id6787193643?pt=118326163&ct=h7_tripplanet_cs&mt=8",
       "hook": "„Už tam budeme?“ Udělejte z cesty výpravu",
       "name": "Trip Planet pro děti",
       "search": "Trip Planet",
       "tags": [
-        "#Cesty",
         "#RodinnéCestování",
-        "#PlánovačVýletů",
         "#SilničníVýlet",
-        "#Časopis",
+        "#Dobrodružství",
+        "#Misí",
+        "#Odměny",
         "#TripPlanet"
       ],
       "keywords": [
         "rodinné cestování",
-        "plánovač výletů",
         "silniční výlet",
-        "časopis",
         "dobrodružství",
-        "misí"
+        "misí",
+        "odměny",
+        "dovolená"
       ],
-      "keyline": "Cesty",
+      "keyline": "Rodinné mise na cestách",
       "hooks": [
         {
           "id": "a",

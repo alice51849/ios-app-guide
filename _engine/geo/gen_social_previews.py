@@ -745,6 +745,31 @@ def _answer_metadata_insert_index(document: str) -> int:
     return style_index if style_index >= 0 else head_end
 
 
+NOINDEX_DIRECTIVES = frozenset({"noindex", "none"})
+
+
+def is_noindex_page(path: Path) -> bool:
+    """True when the page carries a robots ``noindex`` (or ``none``) rule.
+
+    gen_app_page_consolidation and dedupe_locale_meta deliberately mark
+    near-duplicate answers pages ``noindex,follow``.  Those pages are not
+    social-preview targets, so the answers pass leaves them untouched
+    instead of failing the robots consistency check meant for indexable
+    guides.
+    """
+    parser = _GuideMetadataParser()
+    parser.feed(path.read_text(encoding="utf-8"))
+    for directive in parser.robots:
+        tokens = {
+            token.strip().lower()
+            for token in re.split(r"[\s,]+", directive)
+            if token.strip()
+        }
+        if tokens & NOINDEX_DIRECTIVES:
+            return True
+    return False
+
+
 def ensure_answer_metadata(
     path: Path,
     key: str,
@@ -811,6 +836,11 @@ def reconcile_answer_metadata(
         raise ValueError("Answer social preview App Store IDs must be unique")
     live_ids = set(id_to_key)
     targets: dict[Path, str] = {}
+    # noindex pages (gen_app_page_consolidation / dedupe_locale_meta) are
+    # skipped outright.  Their robots meta lives inside the managed preview
+    # block, so neither rewriting nor removing that block is safe: both would
+    # silently drop the noindex and re-expose the page to the index.
+    paths = {path for path in paths if not is_noindex_page(path)}
     for path in paths:
         app_id = gen_smart_app_banners.single_app_id(path, live_ids)
         if app_id is not None:

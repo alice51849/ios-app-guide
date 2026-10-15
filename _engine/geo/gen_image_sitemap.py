@@ -243,6 +243,18 @@ def _answer_entry(
     parser = _PageMetadataParser()
     parser.feed(source)
     _reject_duplicate_attributes(parser, answer)
+    # noindex answers pages (gen_app_page_consolidation, dedupe_locale_meta)
+    # must not be listed in any sitemap; their preview block is left as-is by
+    # gen_social_previews, so it is not validated here either.
+    if any(
+        {
+            token.strip().casefold()
+            for token in directive.replace(",", " ").split()
+        }
+        & {"noindex", "none"}
+        for directive in parser.named.get("robots", [])
+    ):
+        return None
     app_store_ids = direct_app_store_ids(
         unmanaged_app_store_source(source),
         answer,

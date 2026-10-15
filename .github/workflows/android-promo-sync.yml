@@ -33,9 +33,10 @@ jobs:
         run: |
           for i in 1 2 3; do
             git fetch -q origin main && git reset -q --hard origin/main
-            before="$(python3 -c "import json;print(json.load(open('.github/growth/app-improvements.json'))['summary_md'].split('## 鉤子片影片')[1].split('更新：')[1].split(chr(10),1)[1])" 2>/dev/null || true)"
+            # Compare the page minus its clock line (clip_progress.section_body).
+            before="$(python3 .github/scripts/clip_progress.py --print-section-body)"
             python3 .github/scripts/clip_progress.py
-            after="$(python3 -c "import json;print(json.load(open('.github/growth/app-improvements.json'))['summary_md'].split('## 鉤子片影片')[1].split('更新：')[1].split(chr(10),1)[1])")"
+            after="$(python3 .github/scripts/clip_progress.py --print-section-body)"
             if [ "$before" = "$after" ]; then echo "page already current"; exit 0; fi
             python3 .github/scripts/test_app_improvements.py
             git add .github/growth/app-improvements.json

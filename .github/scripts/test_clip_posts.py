@@ -323,6 +323,22 @@ class ClipProgressTest(unittest.TestCase):
         self.assertNotIn("old", out)
         self.assertEqual(P.replace_section("# T", P.HEADING), "# T\n\n" + P.HEADING + "\n")
 
+    def test_section_body_ignores_only_the_clock_line(self):
+        page = lambda clock, rows: f"# 外宣成效\n\n{P.HEADING}\n\n{clock}\n\n{rows}\n\n## 成效排行\n\n更新 10/15 · x\n"
+        a = P.section_body(page("更新 10/15 13:47（台灣）", "| a | 1 |"))
+        self.assertEqual(a, P.section_body(page("更新 10/15 14:20（台灣）", "| a | 1 |")))
+        self.assertNotEqual(a, P.section_body(page("更新 10/15 14:20（台灣）", "| a | 2 |")))
+        self.assertNotIn("13:47", a)
+        self.assertIn("更新 10/15 · x", a)                                 # later sections untouched
+        self.assertEqual(a, P.section_body(page("更新：10/15 13:47", "| a | 1 |")))  # older form
+        self.assertEqual(P.section_body("# 外宣成效\n"), "")              # no section yet
+
+    def test_section_body_matches_what_build_section_writes(self):
+        md = P.build_section(DATA, [], {}, self.NOW, None)
+        later = P.build_section(DATA, [], {}, self.NOW + dt.timedelta(minutes=33), None)
+        self.assertNotEqual(md, later)
+        self.assertEqual(P.section_body("# T\n\n" + md), P.section_body("# T\n\n" + later))
+
 
 if __name__ == "__main__":
     unittest.main()

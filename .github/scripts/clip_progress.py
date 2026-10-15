@@ -293,11 +293,36 @@ def merge_log(path):
     POSTS.write_text(json.dumps(log, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def section_body(summary_md):
+    """The hook-clip section and everything after it, minus its timestamp line.
+
+    android-promo-sync.yml compares this before and after a refresh, so a run
+    that only moves the "更新 …（台灣）" clock commits nothing. Accepts the
+    current "更新 10/15 13:47" line and the older "更新：…" form; returns ""
+    when the page has no hook section yet (so the first refresh always lands).
+    """
+    marker = HEADING.split("：")[0]  # "## 鉤子片影片"
+    if marker not in summary_md:
+        return ""
+    rest = summary_md.split(marker, 1)[1]
+    lines = rest.split("\n")
+    for i, line in enumerate(lines):
+        if line.startswith("更新"):
+            del lines[i]
+            break
+    return "\n".join(lines)
+
+
 if __name__ == "__main__":
     import argparse
     ap = argparse.ArgumentParser()
     ap.add_argument("--merge-log", help="clip-posts.json saved before resetting to origin/main")
+    ap.add_argument("--print-section-body", action="store_true",
+                    help="print the hook section without its timestamp line, change nothing")
     args = ap.parse_args()
+    if args.print_section_body:
+        print(section_body(load_json(IMPROVEMENTS, {}).get("summary_md", "")))
+        raise SystemExit(0)
     if args.merge_log:
         merge_log(args.merge_log)
     update()

@@ -10,6 +10,7 @@ import urllib.parse
 
 import android_play
 from app_store_storefronts import (
+    is_app_store_review_url,
     normalize_app_store_campaign_url,
     validated_app_store_url,
 )
@@ -113,6 +114,9 @@ def normalize_source(source: str) -> tuple[str, int]:
 def assert_no_partial_campaigns(source: str, path: Path) -> None:
     for match in QUERY_APP_STORE_URL_RE.finditer(source):
         url, _, _ = _decode_ampersands(match.group(0))
+        if is_app_store_review_url(url):
+            # Existing-user review link: one exact, attribution-free shape.
+            continue
         try:
             validated_app_store_url(url)
         except ValueError as error:

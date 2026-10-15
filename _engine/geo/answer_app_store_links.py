@@ -22,7 +22,7 @@ APP_STORE_PATH_RE = re.compile(
 )
 MANAGED_APP_STORE_BLOCK_RE = re.compile(
     r"\s*<!-- (?P<name>"
-    r"app-decision-card|app-store-share|app-store-qr|"
+    r"app-decision-card|app-store-share|app-store-qr|app-store-review|"
     r"mobile-store-cta|smart-app-banner"
     r"):start -->.*?<!-- (?P=name):end -->\s*",
     flags=re.DOTALL,

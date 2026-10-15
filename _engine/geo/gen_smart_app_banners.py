@@ -68,6 +68,15 @@ APP_STORE_SHARE_BLOCK_RE = re.compile(
     rf"{re.escape(APP_STORE_SHARE_BLOCK_END)}\s*",
     flags=re.DOTALL,
 )
+# Existing-user review link (gen_app_store_review_ctas.py): a managed block,
+# never a download CTA, so every CTA selector strips it first.
+APP_STORE_REVIEW_BLOCK_START = "<!-- app-store-review:start -->"
+APP_STORE_REVIEW_BLOCK_END = "<!-- app-store-review:end -->"
+APP_STORE_REVIEW_BLOCK_RE = re.compile(
+    rf"\s*{re.escape(APP_STORE_REVIEW_BLOCK_START)}.*?"
+    rf"{re.escape(APP_STORE_REVIEW_BLOCK_END)}\s*",
+    flags=re.DOTALL,
+)
 ANSWER_SOCIAL_PREVIEW_START = "<!-- answer-social-preview:start -->"
 APP_DECISION_CARD_BLOCK_RE = re.compile(
     r"\s*<!-- app-decision-card:start -->.*?"

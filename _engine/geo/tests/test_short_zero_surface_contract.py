@@ -20,6 +20,7 @@ from live_app_manifest import canonical_manifest
 ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
 
 import gen_app_store_qr_ctas as qr
+import gen_app_store_review_ctas as review_ctas
 import gen_publisher_disclosures as disclosures
 import gen_store_attribution as attribution
 import market_availability as market
@@ -228,6 +229,20 @@ class ShortZeroSurfaceContract(unittest.TestCase):
                     link for link in Links(source).links
                     if f"/id{app_id}" in link["attrs"].get("href", "")
                 ]
+                # BM-13 / BM-47: focus Apps also carry exactly one existing-
+                # user review link; it is the only App Store link allowed to
+                # differ from the stamped download URL, and only in this shape.
+                review = [
+                    link for link in apple
+                    if stores.is_app_store_review_url(link["attrs"]["href"])
+                ]
+                self.assertEqual(
+                    [f"https://apps.apple.com/us/app/id{app_id}?action=write-review"]
+                    * len(review),
+                    [link["attrs"]["href"] for link in review],
+                )
+                self.assertEqual(int(review_ctas.is_review_app(app_id)), len(review))
+                apple = [link for link in apple if link not in review]
                 self.assertGreaterEqual(len(apple), 5)
                 self.assertTrue(all(link["attrs"]["href"] == expected for link in apple))
                 for link in apple:

@@ -6,6 +6,8 @@ from html.parser import HTMLParser
 import re
 from urllib.parse import urljoin, urlsplit
 
+from app_store_storefronts import is_app_store_review_url
+
 VOID = frozenset("area base br col embed hr img input link meta param source track wbr".split())
 
 
@@ -166,6 +168,10 @@ def is_primary_action(node: Element) -> bool:
         and node.attrs.get("data-market-reason") == "MARKET_NOT_IN_APPLE_MEDIA_SERVICES"
     ):
         return True
+    # An existing-user review link (?action=write-review) is not the page's
+    # primary install action, so it never moves the supplemental resource.
+    if is_app_store_review_url(node.attrs.get("href") or ""):
+        return False
     return (
         node.tag in {"a", "button"} and visible(node)
         and "ghost" not in node.classes

@@ -20,6 +20,7 @@ sys.path.insert(0, str(ROOT / "social"))
 import gen_app_store_qr_ctas  # noqa: E402
 from gen_store_attribution import final_store_url, page_token  # noqa: E402
 from app_store_storefronts import load_storefront_availability, resolve_provider_token  # noqa: E402
+import gen_app_store_review_ctas  # noqa: E402
 import gen_app_store_share_ctas  # noqa: E402
 import gen_mobile_store_ctas  # noqa: E402
 import gen_smart_app_banners  # noqa: E402
@@ -49,17 +50,19 @@ def _render_target(
 ):
     """Render one target page without writing it.
 
-    Returns ``(kind, updated, smart, mobile, qr, share, qr_asset)`` where
-    ``updated`` is ``None`` when the page is unchanged and the counters are the
-    per-page increments of the serial loop.
+    Returns ``(kind, updated, smart, mobile, qr, share, qr_asset, review)``
+    where ``updated`` is ``None`` when the page is unchanged and the counters
+    are the per-page increments of the serial loop.
     """
     path, app_id = item
     source = path.read_text(encoding="utf-8")
     locale = gen_app_store_qr_ctas.page_locale(path, pages)
     if market.is_unavailable(locale, app_id):
-        cleaned = market_surface_policy.enforce_html(source, locale, app_id=app_id)
+        cleaned = market_surface_policy.enforce_html(
+            gen_app_store_review_ctas.strip_review(source), locale, app_id=app_id,
+        )
         changed = cleaned != source
-        return "blocked", cleaned if changed else None, int(changed), 0, 0, 0, None
+        return "blocked", cleaned if changed else None, int(changed), 0, 0, 0, None, 0
     current = gen_smart_app_banners.render_banner(
         path,
         source,
@@ -67,10 +70,15 @@ def _render_target(
     )
     smart_changed = int(current != source)
 
+    # The review block is re-placed under the final QR card at the end, so
+    # take it out before the QR step: otherwise the QR card (anchored to
+    # </main>) and the review block would swap places on every pass.
+    source_review = gen_app_store_review_ctas.managed_block(source)
+    current = gen_app_store_review_ctas.strip_review(current)
     if path not in conversion_targets:
         return (
             "banner", current if current != source else None,
-            smart_changed, 0, 0, 0, None,
+            smart_changed, 0, 0, 0, None, int(source_review is not None),
         )
 
     rendered = gen_mobile_store_ctas.render_mobile_cta(
@@ -132,10 +140,28 @@ def _render_target(
     if not block or block.group(0).strip() != expected_share:
         raise ValueError(f"Pages have no native App Store share action: {path}")
 
+    # BM-13 / BM-47: existing-user review link for the focus Apps. Minted
+    # through the stamper's own review rule so the final pass never moves it.
+    review_href = (
+        final_store_url(
+            gen_app_store_review_ctas.review_target_url(app_id),
+            "", provider, locale=locale, availability=availability,
+            app_id=app_id,
+        )
+        if gen_app_store_review_ctas.is_review_app(app_id)
+        else None
+    )
+    current = gen_app_store_review_ctas.render_review(
+        path, current, app_id, review_href, locale,
+    )
+    review_changed = int(
+        gen_app_store_review_ctas.managed_block(current) != source_review
+    )
+
     return (
         "conversion", current if current != source else None,
         smart_changed, mobile_changed, qr_changed, share_changed,
-        (app_id, qr_href),
+        (app_id, qr_href), review_changed,
     )
 
 
@@ -156,9 +182,12 @@ def _strip_surfaces(path: Path):
     rendered = gen_app_store_share_ctas.BLOCK_RE.sub("\n", current)
     share_changed = int(rendered != current)
     current = rendered
+    rendered = gen_app_store_review_ctas.strip_review(current)
+    review_changed = int(rendered != current)
+    current = rendered
     return (
         current if current != source else None,
-        smart_changed, mobile_changed, qr_changed, share_changed,
+        smart_changed, mobile_changed, qr_changed, share_changed, review_changed,
     )
 
 
@@ -211,6 +240,9 @@ def generate(
     conversion_installed: set[Path] = set()
     installed_ids: set[str] = set()
     qr_assets: set[tuple[str, str]] = set()
+    review_changed = 0
+    review_installed: set[Path] = set()
+    review_ids: set[str] = set()
 
     # Rendering is per page and side-effect free; pages are written here, in
     # the original order, so a failure leaves exactly the serial state behind.
@@ -230,11 +262,12 @@ def generate(
         target_items,
     )
     for (path, app_id), result in zip(target_items, rendered_targets, strict=True):
-        kind, updated, smart, mobile, qr, share, qr_asset = result
+        kind, updated, smart, mobile, qr, share, qr_asset, review = result
         smart_changed += smart
         mobile_changed += mobile
         qr_changed += qr
         share_changed += share
+        review_changed += review
         if updated is not None:
             path.write_text(updated, encoding="utf-8")
         if kind == "blocked":
@@ -245,6 +278,9 @@ def generate(
         qr_assets.add(qr_asset)
         conversion_installed.add(path)
         installed_ids.add(app_id)
+        if gen_app_store_review_ctas.is_review_app(app_id):
+            review_installed.add(path)
+            review_ids.add(app_id)
 
     stripped_items = sorted(eligible_pages - set(targets))
     for path, result in zip(
@@ -252,11 +288,12 @@ def generate(
         parallel_pages.ordered_map(_strip_surfaces, stripped_items),
         strict=True,
     ):
-        updated, smart, mobile, qr, share = result
+        updated, smart, mobile, qr, share, review = result
         smart_changed += smart
         mobile_changed += mobile
         qr_changed += qr
         share_changed += share
+        review_changed += review
         if updated is not None:
             path.write_text(updated, encoding="utf-8")
 
@@ -268,6 +305,13 @@ def generate(
     if installed_ids != expected_ids:
         missing = ", ".join(sorted(expected_ids - installed_ids)) or "unknown"
         raise ValueError(f"Live apps have no conversion surface: {missing}")
+    expected_review_ids = {
+        app_id for app_id in installed_ids
+        if gen_app_store_review_ctas.is_review_app(app_id)
+    }
+    if review_ids != expected_review_ids:
+        missing = ", ".join(sorted(expected_review_ids - review_ids)) or "unknown"
+        raise ValueError(f"Focus apps have no review link: {missing}")
     qr_changed += gen_app_store_qr_ctas.sync_assets(pages, qr_assets)
 
     languages = {
@@ -317,6 +361,14 @@ def generate(
             ),
             "languages": len(share_languages),
             "changed_files": share_changed,
+        },
+        "app_store_review_ctas": {
+            "apps": len(review_ids),
+            "guide_pages": len(review_installed & guide_pages),
+            "answer_pages": len(review_installed & answer_pages),
+            "buyer_intent_pages": len(review_installed & buyer_intent_pages),
+            "pages": len(review_installed),
+            "changed_files": review_changed,
         },
     }
 

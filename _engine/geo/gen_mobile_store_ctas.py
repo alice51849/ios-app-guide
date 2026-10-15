@@ -120,6 +120,8 @@ def app_store_cta(source: str, app_id: str) -> tuple[str, str] | None:
             "\n", BLOCK_RE.sub("\n", source)
         ),
     )
+    # The existing-user review link is never the download CTA.
+    cleaned = gen_smart_app_banners.APP_STORE_REVIEW_BLOCK_RE.sub("\n", cleaned)
     candidates: list[tuple[int, str, str]] = []
     for match in ANCHOR_RE.finditer(cleaned):
         attributes = _attributes(match.group("attrs"))

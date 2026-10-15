@@ -15,6 +15,7 @@ import re
 import urllib.parse
 from xml.etree import ElementTree
 
+from app_store_storefronts import is_app_store_review_url
 import gen_hubs
 
 
@@ -87,11 +88,19 @@ def _expected_alternates(key, locales):
 
 
 def _attributed_store_links(parser, app_id, relative):
-    links = [
-        href
-        for href in parser.anchors
-        if urllib.parse.urlsplit(href).netloc.casefold() == "apps.apple.com"
-    ]
+    links = []
+    for href in parser.anchors:
+        if urllib.parse.urlsplit(href).netloc.casefold() != "apps.apple.com":
+            continue
+        if is_app_store_review_url(html.unescape(href)):
+            # Existing-user review link (BM-13 / BM-47): not a download CTA,
+            # never attributed, but it must still belong to the hub's App.
+            if f"/id{app_id}?" not in html.unescape(href):
+                raise HubContractError(
+                    f"{relative}: App Store review link does not belong to App {app_id}"
+                )
+            continue
+        links.append(href)
     if len(links) < 2:
         raise HubContractError(
             f"{relative}: expected at least two visible App Store links"

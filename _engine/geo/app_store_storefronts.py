@@ -420,6 +420,57 @@ def required_campaign_app_store_url(
     )
 
 
+# --------------------------------------------------------------------------- #
+# Existing-user review links (BM-13 / BM-47)
+#
+# ``?action=write-review`` opens Apple's "Write a Review" sheet for people who
+# already have the app. It is not a download CTA, so it never carries pt/ct/mt
+# and never counts toward download attribution. The contract is deliberately
+# one exact shape -- optional verified storefront, numeric app ID, the single
+# ``action=write-review`` parameter, nothing else -- so every other query on an
+# App Store URL keeps failing closed in validated_app_store_url.
+# --------------------------------------------------------------------------- #
+APP_STORE_REVIEW_QUERY = "action=write-review"
+APP_STORE_REVIEW_URL_RE = re.compile(
+    r"https://apps\.apple\.com/(?:(?P<country>[a-z]{2})/)?app/"
+    r"id(?P<app_id>\d{9,12})\?action=write-review"
+)
+
+
+def app_store_review_url(app_id: str) -> str:
+    """The countryless existing-user review link for one numeric App ID."""
+    if not isinstance(app_id, str) or re.fullmatch(r"\d{9,12}", app_id) is None:
+        raise ValueError(f"Invalid App Store ID for a review link: {app_id!r}")
+    return f"https://apps.apple.com/app/id{app_id}?{APP_STORE_REVIEW_QUERY}"
+
+
+def is_app_store_review_url(value: object) -> bool:
+    """True only for the exact review-link shape (no tracking, no fragment)."""
+    return isinstance(value, str) and APP_STORE_REVIEW_URL_RE.fullmatch(value) is not None
+
+
+def validated_app_store_review_url(
+    value: str,
+    expected_app_id: str | None = None,
+    *,
+    expected_locale: str | None = None,
+    availability: dict[str, frozenset[str]] | None = None,
+) -> str:
+    """Validate a review link with the same storefront rules as a CTA."""
+    match = APP_STORE_REVIEW_URL_RE.fullmatch(value) if isinstance(value, str) else None
+    if match is None:
+        raise ValueError(f"Invalid App Store review URL: {value!r}")
+    # Storefront, market and app-ID checks are exactly those of the direct
+    # link; only the query differs, and it was pinned by the regex above.
+    validated_app_store_url(
+        value.split("?", 1)[0],
+        expected_app_id,
+        expected_locale=expected_locale,
+        availability=availability,
+    )
+    return value
+
+
 def has_trusted_promotional_rating(detail: dict[str, object]) -> bool:
     """Return whether a rating is strong enough to feature as social proof."""
     rating_value = detail.get("rating_value")

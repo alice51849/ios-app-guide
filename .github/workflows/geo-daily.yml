@@ -560,6 +560,10 @@ jobs:
           # Stories were regenerated above with clean campaign URLs; their CTA
           # contract is the final storefront URL, which only exists from here.
           python3 validate_webstories.py
+          # BM-13/BM-47: read-only per-App census of the existing-user review
+          # links (?action=write-review) that the conversion-surface pass
+          # renders and the attribution pass keeps campaign-free.
+          python3 gen_app_store_review_ctas.py --report
           python3 hero_tasks.py --today "$GEO_BUILD_DATE"
           python3 gen_feed.py
           python3 result_image_index.py

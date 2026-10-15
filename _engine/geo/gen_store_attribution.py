@@ -21,6 +21,9 @@ Rules that keep it safe:
     localized visual collection owns ``iag_visual_<locale>``.
   • The original ``&`` / ``&amp;`` escaping of the href is preserved, so the
     rewrite never changes how a page is parsed.
+  • Existing-user review links (``?action=write-review``, see
+    app_store_storefronts.APP_STORE_REVIEW_URL_RE) are not download CTAs:
+    they are storefront-aligned and validated but never carry pt/ct/mt.
   • Registry membership is not live evidence. The shared manifest removes
     non-live promotions before attribution; mixed pages retain their live links.
 
@@ -53,12 +56,14 @@ from app_store_storefronts import (  # noqa: E402
     REQUIRED_LOCALE_STOREFRONTS,
     PROVIDER_TOKEN_ENV,
     PROVIDER_TOKEN_RE,
+    is_app_store_review_url,
     is_clean_app_store_developer_url,
     load_storefront_availability,
     normalize_app_store_campaign_url,
     required_campaign_app_store_url,
     resolve_provider_token,
     storefront_locale_for_url,
+    validated_app_store_review_url,
 )
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
@@ -380,6 +385,10 @@ def final_store_url(
     the pre-stamp CTA, or the QR desync gate rejects the whole tree."""
     if is_clean_app_store_developer_url(url):
         return None if market.is_unavailable(locale) else url
+    if is_app_store_review_url(url):
+        return final_review_url(
+            url, locale=locale, availability=availability, app_id=app_id,
+        )
     if app_id is None:
         match = re.search(r"/id(\d+)(?:[?#]|$)", url)
         app_id = match[1] if match else None
@@ -395,6 +404,34 @@ def final_store_url(
         url, campaign, provider_token=provider,
         expected_locale=storefront_locale_for_url(url, locale),
         expected_app_id=app_id, availability=availability,
+    )
+
+
+def final_review_url(
+    url: str, *, locale: str | None = None, availability=None,
+    app_id: str | None = None,
+) -> str | None:
+    """The exact review link the stamper leaves on a page.
+
+    Same storefront alignment and market blocking as a download CTA, but the
+    single ``action=write-review`` parameter is kept and no campaign is added:
+    a review link measures nothing and must never be mistaken for a download.
+    """
+    match = APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(url).path)
+    if match is None or not is_app_store_review_url(url):
+        raise ValueError(f"Invalid App Store review URL: {url!r}")
+    if app_id is not None and match["app_id"] != app_id:
+        raise ValueError(f"App Store review URL app mismatch: {url!r}")
+    app_id = match["app_id"]
+    if market.is_unavailable(locale, app_id):
+        validated_app_store_review_url(url, app_id)
+        storefront_locale_for_url(url, locale)
+        return None
+    url = align_storefront(url, locale, availability)
+    return validated_app_store_review_url(
+        url, app_id,
+        expected_locale=storefront_locale_for_url(url, locale),
+        availability=availability,
     )
 
 
@@ -456,6 +493,10 @@ def rewrite(
         # re-encode afterwards so the rewrite never changes how a page parses.
         escaped = html.unescape(raw) != raw
         url = html.unescape(raw)
+        if match.re is SHARE_URL_RE and is_app_store_review_url(url):
+            # The share sheet hands this URL to new people: it must be a
+            # download link, never the existing-user review action.
+            raise ValueError("App Store share URL cannot be a review link")
         updated = retarget(url)
         if updated is None:
             if match.re is ANCHOR_HREF_RE:

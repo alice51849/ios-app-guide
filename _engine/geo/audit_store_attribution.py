@@ -7,8 +7,11 @@ Run after every generator, including feeds and downloadable artifacts:
 This gate is read-only and uses the cached Apple live/storefront snapshots.
 It checks HTML, structured APIs, feed enclosures, browser payloads, QR pixels,
 PDF annotations and archive members. IDs, canonical/hreflang and developer
-profiles stay clean and never count as download CTAs. Supplemental languages
-may use verified-app global URLs, but never an unverified country guess.
+profiles stay clean and never count as download CTAs. Existing-user review
+links (exactly ``/[cc/]app/id<N>?action=write-review`` for a live roster App)
+are accepted as non-download links; every other query still fails closed.
+Supplemental languages may use verified-app global URLs, but never an
+unverified country guess.
 The official catalog still requires every verified app in all 50 locales.
 """
 
@@ -40,10 +43,12 @@ from app_store_storefronts import (
     LOCALE_STOREFRONTS,
     PROVIDER_TOKEN_RE,
     STATE_FILE,
+    is_app_store_review_url,
     is_clean_app_store_developer_url,
     load_storefront_availability,
     resolve_provider_token,
     storefront_locale_for_url,
+    validated_app_store_review_url,
     validated_app_store_url,
 )
 from official_locales import OFFICIAL_LOCALES
@@ -475,7 +480,27 @@ def html_references(source: str, *, locale: str | None = None):
     yield from parser.references
 
 
+REVIEW_FORBIDDEN_FIELDS = ACTION_FIELDS | {
+    "canonical_app_store_url", "storefront_url", "data-app-store-url",
+}
+
+
+def _review_app_id(url: str) -> str:
+    return APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(url).path)["app_id"]
+
+
 def normalized_reference(ref: Reference) -> Reference:
+    if is_app_store_review_url(ref.url):
+        # A review link is for people who already have the App. It is a
+        # clean, non-download link: never a CTA field, never attributed.
+        if ref.field.casefold() in REVIEW_FORBIDDEN_FIELDS:
+            raise AttributionError(
+                f"An App Store CTA cannot point to a review action: {ref.field}"
+            )
+        app_id = _review_app_id(ref.url)
+        if ref.app_id is not None and ref.app_id != app_id:
+            raise AttributionError(f"App Store review link app mismatch: {ref.url}")
+        return Reference(ref.url, ref.field, ref.locale, app_id, True, ref.surface)
     if not is_clean_app_store_developer_url(ref.url):
         return ref
     if ref.field.casefold() in ACTION_FIELDS | {
@@ -515,7 +540,17 @@ def validate_reference(ref: Reference, *, provider: str,
         )
     if ref.identity:
         _clean_identity(ref.url, ref.field)
-        if not is_clean_app_store_developer_url(ref.url):
+        if is_app_store_review_url(ref.url):
+            validated_app_store_review_url(
+                ref.url, ref.app_id,
+                expected_locale=storefront_locale_for_url(ref.url, ref.locale),
+                availability=availability,
+            )
+            if ref.app_id not in _roster_campaign_by_app_id():
+                raise AttributionError(
+                    f"App Store review link is outside the live roster: {ref.app_id}"
+                )
+        elif not is_clean_app_store_developer_url(ref.url):
             validated_app_store_url(ref.url, ref.app_id)
         return None
     expected_locale = storefront_locale_for_url(ref.url, ref.locale)
@@ -627,7 +662,9 @@ def audit_source(source: str, relative: str, *, provider: str,
         if parser.script_type is not None or parser.qr_href is not None:
             raise AttributionError("Unclosed script or QR card")
         refs = parser.references
-        if refs and all(ref.identity for ref in refs):
+        if refs and all(
+            ref.identity or is_app_store_review_url(ref.url) for ref in refs
+        ):
             raise AttributionError("App page has no actionable App Store CTA")
         for href, image in parser.qr_cards:
             _qr_card(href, image, root, qr_cache)
@@ -736,6 +773,11 @@ def _audit_file(path: Path, pages: Path, provider: str, availability,
             )
         for ref in refs:
             if ref.identity:
+                if is_app_store_review_url(ref.url) and ref.app_id not in expected_app_ids:
+                    raise AttributionError(
+                        "App Store review link is outside the verified live "
+                        f"inventory: {ref.app_id}"
+                    )
                 continue
             parsed = urllib.parse.urlsplit(ref.url)
             app_id = APP_STORE_PATH_RE.fullmatch(parsed.path)["app_id"]

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-15T05:47:28Z",
+  "updated_at": "2026-10-15T05:55:09Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -13,49 +13,67 @@
       "title": "送 Apple 精選提名（6 款，內容已寫好）",
       "url": "https://claude.ai/code?environment=env_01F2jpNPngkKPUwFwXMKXBUo",
       "how": "最省事：開本機對話（點上面連結）貼這一行，本機會用 ASC API 一次送出 6 款：請照 ~/00_GrowthEngine/geo/pages/.github/growth/LOCAL_TASKS.md 執行「送 Apple 精選提名」那段。授權：可送精選提名，不改 App 本體、不改商店文字。　要自己手動送也可以：① 打開 https://appstoreconnect.apple.com/apps ，用開發者 Apple ID 登入。② 點 App（例如 CountDaysNow）→ 上方找「精選」（Featuring）分頁 →「提名」→ 按「+」。③ 照 https://github.com/alice51849/ios-app-guide/blob/main/.github/growth/drafts/apple-featuring-nominations.json 該款的內容逐欄貼：名稱＝name、類型選「App 功能強化」、描述＝description、發布日期＝publishStartDate～publishEndDate、國家地區＝territories、補充資料網址＝supplemental_urls。④ 按「提交」。每款重複一次。　CountDaysNow（수능 11/19）最急，11/1 開始，請今天就送。",
-      "status": "todo"
+      "status": "done",
+      "resolution": "declined",
+      "decided_at": "2026-10-15T04:09:33Z",
+      "done_at": "2026-10-15T04:09:33Z"
     },
     {
       "id": "oa-youtube-local",
       "title": "開本機對話：YouTube Shorts 上傳、LED 看板實拍、補截圖（貼一行字）",
       "url": "https://claude.ai/code?environment=env_01F2jpNPngkKPUwFwXMKXBUo",
       "how": "① Mac 開著、連上網路。② 點上面的連結（用平常的 Claude 帳號登入），會開一個在你 Mac 上執行的新對話。③ 在輸入框貼這一行，按 Enter：請照 ~/00_GrowthEngine/geo/pages/.github/growth/LOCAL_TASKS.md 執行。授權：外宣直接做、不改 App 本體、不改 App Store Connect。④ 它跑的過程中如果跳出「允許」的按鈕就按允許；最後它會回報每一項推了哪個 commit。⑤ 它會做：YouTube Shorts 每天最多 3 支（說明欄附 App Store 與 Google Play 連結）、LED Moving Text 彩色看板實拍、HoursTag Lite／SaveTag／Unblurry 補截圖。",
-      "status": "todo"
+      "status": "done",
+      "resolution": "done",
+      "decided_at": "2026-10-15T04:09:41Z",
+      "done_at": "2026-10-15T04:09:41Z"
     },
     {
       "id": "oa-threads-enable",
       "title": "Threads 自動發文要選一套（二選一）",
       "url": "https://github.com/alice51849/threads-autopilot/actions/workflows/multi.yml",
       "how": "方案 A（官網那套，最省事）：在雲端對話跟 Claude 說「Threads 用官網那套」。金鑰已經在了，雲端會重新開啟、把影片也接上，你不用做別的。方案 B（threads-autopilot）：① 點上面的連結（用 GitHub 帳號 alice51849 登入）→ 頁面上方灰色橫條寫「This workflow was disabled manually」→ 按右邊「Enable workflow」。② 再打開 https://github.com/alice51849/threads-autopilot/actions/workflows/post.yml 一樣按「Enable workflow」。③ Mac 要開著（它是用 Mac 上的 GitHub 執行器發文）。④ 跟雲端 Claude 說「Threads 用 autopilot」，雲端再把影片接上去。兩套不要同時開，不然會重複發。",
-      "status": "todo"
+      "status": "in_progress",
+      "resolution": "ai",
+      "decided_at": "2026-10-15T04:09:45Z"
     },
     {
       "id": "oa-usagenow-102-note",
       "title": "UsageNow 1.0.2 草稿裡已填了新商店文字（不送審就不會上架）",
       "url": "https://appstoreconnect.apple.com/apps/6818607603/distribution",
       "how": "以後若要因為別的更新送出 1.0.2，先在本機對話說：「把 UsageNow 1.0.2 的商店文字照備份改回去」。不送 1.0.2 就不用理。",
-      "status": "todo"
+      "status": "done",
+      "resolution": "done",
+      "decided_at": "2026-10-15T04:09:55Z",
+      "done_at": "2026-10-15T04:09:55Z"
     },
     {
       "id": "oa-usagenow-push",
       "title": "UsageNow 衝榜：今晚 21:00–22:30 發台灣 4 則",
       "url": "https://claude.ai/artifact/FGRhJkypQ1FfHYWQanZN3o",
       "how": "打開後照順序按橘色按鈕，發文畫面已填好，按「發佈」就好；Dcard／PTT／FB 按「複製貼文」再貼上。",
-      "status": "todo"
+      "status": "in_progress",
+      "resolution": "ai",
+      "decided_at": "2026-10-15T04:10:02Z"
     },
     {
       "id": "oa-06",
       "title": "以本人名義出面：Show HN（UsageNow）、Reddit／Dcard／PTT、Product Hunt、pitch 信與 Offer Code",
       "how": "草稿都在 repo。Show HN 發後 24 小時內親自回覆安全性問題；Reddit／Dcard／PTT 先讀版規、揭露開發者身分、每版只發一次、正文不放商店連結；Product Hunt 用於 G+Money Lite／AI Brief／Mask My File；pitch 信寄 Gridfiti／app-liv、MrMad／蘋果仁、iphone-ticker／appgefahren、隱私榜單、幼教與多益創作者各 3–5 位、幼兒園／僑校老師、One-Forty／TIWA／新住民家庭服務中心；Offer Code 在 ASC 產生，不付費、不換評分、合作揭露。",
-      "status": "todo",
-      "url": "https://news.ycombinator.com/submit"
+      "status": "done",
+      "url": "https://news.ycombinator.com/submit",
+      "resolution": "declined",
+      "decided_at": "2026-10-15T04:10:05Z",
+      "done_at": "2026-10-15T04:10:05Z"
     },
     {
       "id": "oa-08",
       "title": "每週錄 1–2 支 15–30 秒實機影片並上 Shorts／Reels",
       "how": "依 repo 腳本順序：Mochi（點圓圈、切主題、Watch）、Stay Clock（舊 iPad→桌鐘→紅光）、Lumi Mission（點一下→兔兔歡呼→家長日曆）、UsageNow（小工具＋90% 提醒）、Snapport Lite（白牆拍→4×6 排版）、Sereno 3 小時雨聲＋褐噪音長片；用自己的照片與相簿、不放連結，我們配三語字幕與文案。",
-      "status": "todo",
-      "url": "https://studio.youtube.com"
+      "status": "in_progress",
+      "url": "https://studio.youtube.com",
+      "resolution": "ai",
+      "decided_at": "2026-10-15T04:10:09Z"
     }
   ],
   "apps": [

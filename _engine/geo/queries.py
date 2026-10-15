@@ -1210,6 +1210,22 @@ for _k, _qs in _GEO_TAILORED21.items():
         if _q not in _base:
             _base.append(_q)
 
+# 對標第一名清單 BM-01～BM-03（2026-10-15）：UsageNow 服務別意圖頁、重置時間
+# 對照表與比較頁。slug 由題目決定（answers/claude-usage-tracker.html 等），
+# 內容由 answer_personas 中同題目的 persona 提供。
+_BENCHMARK_USAGENOW = [
+    "claude usage tracker",
+    "claude code limits",
+    "codex usage tracker",
+    "claude weekly limit reset",
+    "claude usage limit reset times",
+    "best claude usage tracker for iphone",
+]
+_base = CURATED.setdefault("claudeusagemini", [])
+for _q in _BENCHMARK_USAGENOW:
+    if _q not in _base:
+        _base.append(_q)
+
 
 # 上方所有來源都載入後，再把免費版新增題目合併到 Pro；Pro 專屬題目
 # 保留在 Pro 自己的 list，不可反向出現在免費版。

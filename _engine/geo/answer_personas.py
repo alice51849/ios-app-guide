@@ -4075,6 +4075,518 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                     ),
                 },
             ],
+        },
+        # Service-intent pages (benchmark checklist BM-01..BM-03, 2026-10-15).
+        # Each one answers a single search intent with the same facts as the
+        # live listing; rules about how a service counts or resets usage are
+        # attributed to that service's own documentation, and the reset-time
+        # page carries the date it was last checked.
+        {
+            "query": "claude usage tracker",
+            "guide_title": "Claude usage tracker for iPhone: what to check",
+            "triggers": [
+                "claude usage tracker",
+                "claude usage monitor",
+                "track claude usage",
+                "claude pro usage",
+                "claude max usage",
+            ],
+            "persona": "Claude Pro and Max subscribers who keep hitting the 5-hour or weekly limit and want to see what is left before starting the next long task",
+            "lead": (
+                "If Claude is part of your working day, the numbers that "
+                "decide whether the next long task fits are how much of the "
+                "5-hour session and the weekly limits is left, and when each "
+                "one resets."
+            ),
+            "paras": [
+                (
+                    "Claude counts paid-plan usage in a 5-hour session window "
+                    "and in weekly limits, and some plans also have weekly "
+                    "caps for individual models. Claude's own usage page "
+                    "shows these numbers when you open it; a tracker's job "
+                    "is to keep them in view, with a countdown to each reset, "
+                    "so you can decide before a task whether to start it now "
+                    "or after the next reset."
+                ),
+                (
+                    "Check three things before you install one: that it shows "
+                    "the session limit, the weekly limits and any per-model "
+                    "weekly cap separately; that it warns you at a percentage "
+                    "you choose rather than only at 100 percent; and where "
+                    "your Claude sign-in goes. The safest pattern is signing "
+                    "in on Claude's own login page with the session kept in "
+                    "the device Keychain and no extra server in between."
+                ),
+            ],
+            "look": [
+                "The 5-hour session limit, the weekly limits and per-model weekly caps shown separately.",
+                "A live countdown and the exact reset time for each limit, in your local format.",
+                "Alerts at a percentage you choose, sent once per limit and cycle, plus an optional reset alert.",
+                "Home Screen and Lock Screen widgets and Apple Watch complications, so you do not have to open the app.",
+                "Pro and Max, work and personal accounts side by side, with sign-in on Claude's own login page kept in the Keychain.",
+            ],
+            "steps": [
+                "Sign in with your Claude account and compare the numbers with Claude's own usage page.",
+                "Set an alert at 90 percent on the limit you hit most often and check that it arrives once in that cycle.",
+                "Add a Lock Screen or Home Screen widget so the remaining share is visible without opening anything.",
+                "If you use more than one Claude account, sort them by 5-hour or weekly reset to see which frees up first.",
+                "Use the free 24-hour trial to test every feature, widgets included, before paying for anything.",
+            ],
+            "fits": "fits Claude Pro and Max subscribers who want the 5-hour and weekly limits, per-model weekly caps and every reset time on the Home Screen, Lock Screen or Apple Watch, alongside any Codex, Copilot or Gemini plans they also use. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "Is UsageNow made by Anthropic?",
+                    "a": (
+                        "No. UsageNow is an independent app and is not "
+                        "affiliated with Anthropic. Claude is a trademark of "
+                        "its owner."
+                    ),
+                },
+                {
+                    "q": "Which Claude limits does it show?",
+                    "a": (
+                        "The 5-hour session limit and the weekly limits, "
+                        "including per-model weekly caps, each with a live "
+                        "countdown and the exact reset time."
+                    ),
+                },
+                {
+                    "q": "Where does my Claude sign-in go?",
+                    "a": (
+                        "You sign in on Claude's own login page. The sign-in "
+                        "stays in your device's Keychain and UsageNow talks "
+                        "only to the services themselves: there is no "
+                        "UsageNow server, no account to create and no "
+                        "tracking."
+                    ),
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": (
+                        "No. Every feature is free during a 24-hour trial "
+                        "started in the app; after that, UsageNow Pro is a "
+                        "single one-time purchase."
+                    ),
+                },
+            ],
+        },
+        {
+            "query": "claude code limits",
+            "guide_title": "Claude Code limits: how to see them before a long agent run",
+            "triggers": [
+                "claude code limits",
+                "claude code usage limit",
+                "claude code usage",
+                "claude code rate limit",
+                "claude code 5 hour limit",
+            ],
+            "persona": "developers who run Claude Code on a Pro or Max plan and get stopped by the 5-hour or weekly limit halfway through an agent run",
+            "lead": (
+                "A long Claude Code run that stops halfway because a limit "
+                "ran out costs more than the wait: you lose the thread of "
+                "the task. Knowing what is left before you start is the fix."
+            ),
+            "paras": [
+                (
+                    "When you use Claude Code with a Claude Pro or Max plan, "
+                    "Anthropic's documentation says it draws on the same "
+                    "usage limits as Claude itself: a 5-hour session window "
+                    "and weekly limits, with weekly caps for some models. "
+                    "Agent runs read files, run tools and retry, so they can "
+                    "use a large share of a window quickly. Checking the "
+                    "remaining share and the next reset before a big "
+                    "refactor tells you whether to start now or queue it."
+                ),
+                (
+                    "A phone or watch is a good place for that number, "
+                    "because it stays visible while the terminal is busy. "
+                    "Look for a tracker that shows the session and weekly "
+                    "limits separately, warns you at a percentage you pick, "
+                    "and tells you the moment a limit is back. Pay-as-you-go "
+                    "API usage is billed per token instead, so it is a "
+                    "different number from these plan limits."
+                ),
+            ],
+            "look": [
+                "The Claude 5-hour session limit and weekly limits, including per-model weekly caps, shown separately.",
+                "A countdown and the exact reset time, so you can plan the next long run around it.",
+                "An alert at the percentage you choose, such as 90 or 98, sent once per limit and cycle.",
+                "A reset alert that tells you when a limit is back, so a queued task can start.",
+                "Lock Screen widgets and Apple Watch complications that stay visible while the terminal works.",
+            ],
+            "steps": [
+                "Before a long Claude Code run, check how much of the 5-hour and weekly limits is left and when each resets.",
+                "Set an alert at 90 percent on the 5-hour limit so you can wrap up a step before the window closes.",
+                "Turn on the reset alert and queue the next big task for the moment the limit is back.",
+                "If you also use Codex or Copilot, keep them in the same view and switch to the plan with room left.",
+                "Use the free 24-hour trial to try every feature before paying for anything.",
+            ],
+            "fits": "fits developers who run Claude Code on a Pro or Max plan and want the 5-hour and weekly limits, per-model weekly caps and reset times on the Lock Screen, Home Screen or Apple Watch, next to any Codex, Copilot or Gemini plans. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "Does Claude Code share limits with Claude?",
+                    "a": (
+                        "On a Pro or Max plan, Anthropic's documentation says "
+                        "Claude Code uses the same usage limits as Claude, so "
+                        "the 5-hour and weekly limits cover both."
+                    ),
+                },
+                {
+                    "q": "Does UsageNow show pay-as-you-go API spending?",
+                    "a": (
+                        "No. Its App Store listing names the Claude plan "
+                        "limits: the 5-hour session limit and the weekly "
+                        "limits, including per-model weekly caps."
+                    ),
+                },
+                {
+                    "q": "Is UsageNow made by Anthropic?",
+                    "a": (
+                        "No. UsageNow is an independent app and is not "
+                        "affiliated with Anthropic. Claude and Claude Code "
+                        "are trademarks of their owner."
+                    ),
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": (
+                        "No. Every feature is free during a 24-hour trial "
+                        "started in the app; after that, UsageNow Pro is a "
+                        "single one-time purchase."
+                    ),
+                },
+            ],
+        },
+        {
+            "query": "codex usage tracker",
+            "guide_title": "Codex usage tracker for iPhone: what to check",
+            "triggers": [
+                "codex usage tracker",
+                "codex usage monitor",
+                "track codex usage",
+                "chatgpt codex usage",
+                "codex weekly limit",
+                "codex 5 hour limit",
+            ],
+            "persona": "developers who use ChatGPT Codex every day and want to see the 5-hour and weekly windows before they start the next task",
+            "lead": (
+                "Codex on a ChatGPT plan counts usage in a 5-hour window and "
+                "a weekly window, and either one can stop a task. The useful "
+                "number is what is left in each, and when each one resets."
+            ),
+            "paras": [
+                (
+                    "Because the two windows reset at different times, a "
+                    "tracker should show them separately with a countdown to "
+                    "each reset. If you have more than one ChatGPT account, "
+                    "for example work and personal, it should show them side "
+                    "by side and let you sort by the next reset, so you can "
+                    "move to the account that frees up first."
+                ),
+                (
+                    "Many developers use Codex next to Claude, GitHub Copilot "
+                    "or Gemini, so a tracker that puts every plan in one "
+                    "view saves switching between usage pages. As with any "
+                    "usage tracker, check where the sign-in goes: on the "
+                    "service's own login page, kept in the device Keychain, "
+                    "with no extra server in between."
+                ),
+            ],
+            "look": [
+                "The ChatGPT Codex 5-hour and weekly windows shown separately, each with its own countdown.",
+                "The exact reset time in your local format, not only a relative countdown.",
+                "Alerts at a percentage you choose, sent once per limit and cycle, plus an optional reset alert.",
+                "Several accounts side by side, sortable by 5-hour reset, weekly reset or usage.",
+                "Claude, Copilot and Gemini plans in the same view, with sign-in kept in the Keychain.",
+            ],
+            "steps": [
+                "Sign in with your ChatGPT account and compare both Codex windows with the service's own usage page.",
+                "Set an alert at 90 percent on the window you hit most often.",
+                "Add a Home Screen widget, tap its refresh button, and flip through your accounts on it.",
+                "Sort accounts by weekly reset to see which one frees up first.",
+                "Use the free 24-hour trial to test every feature before paying for anything.",
+            ],
+            "fits": "fits developers who use ChatGPT Codex, often next to Claude, Copilot or Gemini, and want both Codex windows and every reset time on the Home Screen, Lock Screen or Apple Watch without another account. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "Is UsageNow made by OpenAI?",
+                    "a": (
+                        "No. UsageNow is an independent app and is not "
+                        "affiliated with OpenAI. ChatGPT and Codex are "
+                        "trademarks of their owner."
+                    ),
+                },
+                {
+                    "q": "Which Codex limits does it show?",
+                    "a": (
+                        "The ChatGPT Codex 5-hour and weekly windows, each "
+                        "with a live countdown and the exact reset time."
+                    ),
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": (
+                        "No. Every feature is free during a 24-hour trial "
+                        "started in the app; after that, UsageNow Pro is a "
+                        "single one-time purchase."
+                    ),
+                },
+            ],
+        },
+        {
+            "query": "claude weekly limit reset",
+            "guide_title": "When does the Claude weekly limit reset?",
+            "triggers": [
+                "claude weekly limit reset",
+                "claude weekly reset",
+                "when does claude weekly limit reset",
+                "claude weekly limit reset time",
+            ],
+            "persona": "Claude Pro and Max subscribers who hit the weekly limit and want to know exactly when it comes back",
+            "lead": (
+                "When the Claude weekly limit runs out, the only question "
+                "left is when it comes back, and the answer depends on your "
+                "own account rather than on a fixed day of the week."
+            ),
+            "paras": [
+                (
+                    "Claude's weekly limits run on a seven-day cycle that "
+                    "belongs to your account, so two people can see different "
+                    "reset times. Some plans also have weekly caps for "
+                    "individual models, which can reset separately from the "
+                    "overall weekly limit. Claude's own usage page shows the "
+                    "current reset time when you open it."
+                ),
+                (
+                    "If you plan work around the weekly reset, it helps to "
+                    "see the exact time in your own time zone and to get a "
+                    "notice when the limit is back. A tracker can also warn "
+                    "you earlier in the week, at a percentage you choose, so "
+                    "you can pace the remaining share instead of running out "
+                    "a day before the reset."
+                ),
+            ],
+            "look": [
+                "The exact weekly reset time in your local format, not only a countdown.",
+                "Per-model weekly caps listed separately from the overall weekly limit.",
+                "A reset alert that tells you the moment the weekly limit is back.",
+                "An early alert at a percentage you choose, sent once per limit and cycle.",
+                "Several Claude accounts sortable by weekly reset.",
+            ],
+            "steps": [
+                "Open Claude's own usage page once and note the weekly reset time it shows.",
+                "Add the same account to a tracker and check that both show the same time.",
+                "Turn on the reset alert so you know when the weekly limit is back.",
+                "Set an alert at 75 or 90 percent of the weekly limit to pace the rest of the week.",
+                "Use the free 24-hour trial to test every feature before paying for anything.",
+            ],
+            "fits": "fits Claude Pro and Max subscribers who want the exact weekly reset time, per-model weekly caps and a reset alert on the Home Screen, Lock Screen or Apple Watch. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "Does the Claude weekly limit reset on the same day for everyone?",
+                    "a": (
+                        "No. The weekly cycle belongs to your account, so "
+                        "check the reset time shown for your own account."
+                    ),
+                },
+                {
+                    "q": "Can UsageNow tell me when the weekly limit is back?",
+                    "a": (
+                        "Yes. Turn on a reset alert to be notified the moment "
+                        "a limit is back; the app also shows a live countdown "
+                        "and the exact reset time."
+                    ),
+                },
+                {
+                    "q": "Is UsageNow made by Anthropic?",
+                    "a": (
+                        "No. UsageNow is an independent app and is not "
+                        "affiliated with Anthropic."
+                    ),
+                },
+            ],
+        },
+        {
+            "query": "claude usage limit reset times",
+            "guide_title": "AI coding plan reset times: Claude, Codex, Copilot and Gemini",
+            "triggers": [
+                "usage limit reset times",
+                "claude usage limit reset times",
+                "ai usage limit reset time",
+                "when do ai usage limits reset",
+            ],
+            "persona": "developers who switch between Claude, Codex, Copilot and Gemini and want one reference for how and when each plan limit resets",
+            "lead": (
+                "Each AI coding service resets its limits on its own "
+                "schedule. This reference lists how each one counts and "
+                "resets, as described in each service's own documentation; "
+                "last checked on 15 October 2026."
+            ),
+            "paras": [
+                (
+                    "As checked on 15 October 2026: Claude counts paid-plan "
+                    "usage in a 5-hour session window "
+                    "that starts with your first message, plus weekly limits "
+                    "on a seven-day cycle tied to your account, with weekly "
+                    "caps for some models. ChatGPT Codex uses a 5-hour window "
+                    "and a weekly window. GitHub's documentation says Copilot "
+                    "premium request counters reset on the first day of each "
+                    "month at 00:00 UTC. Google's Gemini API documentation "
+                    "says daily request quotas reset at midnight Pacific time."
+                ),
+                (
+                    "These rules change from time to time, and the exact "
+                    "reset moment for a rolling window depends on when you "
+                    "started using it, so the reliable source is the reset "
+                    "time each service reports for your own account. That "
+                    "is the number a tracker should show for every plan, "
+                    "with a countdown and the exact time in your local "
+                    "format."
+                ),
+            ],
+            "look": [
+                "Claude: a 5-hour session window from your first message, plus weekly limits on a seven-day cycle tied to your account.",
+                "ChatGPT Codex: a 5-hour window and a weekly window, each with its own reset.",
+                "GitHub Copilot: premium request counters reset on the first day of each month at 00:00 UTC.",
+                "Gemini API: daily request quotas reset at midnight Pacific time.",
+                "For any plan, the reset time the service reports for your own account is the one to trust.",
+            ],
+            "steps": [
+                "Find the plan that stops you most often and note how it counts: a rolling window, a weekly cycle, a monthly allowance or a daily quota.",
+                "Check that plan's own usage page for the reset time on your account.",
+                "Put every plan you use in one tracker so the next reset is visible at a glance.",
+                "Turn on reset alerts so you know when a limit is back.",
+                "Come back to this page after a plan change; it is updated when the services change their rules.",
+            ],
+            "fits": "fits developers who juggle Claude, Codex, Copilot or Gemini plans and want every reset time, with a live countdown and the exact time in their local format, on the Home Screen, Lock Screen or Apple Watch. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "When does the Claude 5-hour limit reset?",
+                    "a": (
+                        "Five hours after the session started, and the "
+                        "session starts with your first message. Claude's "
+                        "own usage page shows the exact time for your account."
+                    ),
+                },
+                {
+                    "q": "When do GitHub Copilot premium requests reset?",
+                    "a": (
+                        "GitHub's documentation says premium request counters "
+                        "reset on the first day of each month at 00:00 UTC."
+                    ),
+                },
+                {
+                    "q": "When do Gemini API daily quotas reset?",
+                    "a": (
+                        "Google's Gemini API documentation says daily request "
+                        "quotas reset at midnight Pacific time."
+                    ),
+                },
+                {
+                    "q": "Is UsageNow affiliated with these services?",
+                    "a": (
+                        "No. UsageNow is an independent app and is not "
+                        "affiliated with Anthropic, OpenAI, GitHub, Microsoft "
+                        "or Google; their product names are trademarks of "
+                        "their respective owners."
+                    ),
+                },
+            ],
+        },
+        {
+            "query": "best claude usage tracker for iphone",
+            "guide_title": "Claude usage trackers for iPhone in 2026: four apps compared",
+            "triggers": [
+                "best claude usage tracker",
+                "claude usage tracker for iphone",
+                "claude usage app comparison",
+                "usage for claude alternative",
+                "codexbar alternative",
+            ],
+            "persona": "Claude and Codex users comparing iPhone usage trackers before they download one",
+            "lead": (
+                "Several iPhone apps now track Claude and other AI coding "
+                "limits. They differ in which services they cover, whether "
+                "they need a Mac, and how you pay. This comparison uses only "
+                "what each App Store listing says, checked on 15 October 2026."
+            ),
+            "paras": [
+                (
+                    "Usage for Claude is a free download in Utilities. Its "
+                    "listing describes Claude usage limits in-app and on the "
+                    "Home Screen, Lock Screen and Apple Watch, usage history "
+                    "charts, limit notifications and optional Claude Code "
+                    "CLI stats, and it requires iOS 26.2 or later. Limits: AI "
+                    "Usage Tracker is a free download in Developer Tools that "
+                    "lists Codex (ChatGPT), Claude Code and three other "
+                    "providers, with Home Screen and Lock Screen widgets "
+                    "and tokens kept in the Keychain; it requires iOS 26.0 "
+                    "or later."
+                ),
+                (
+                    "CodexBar Usage Monitor is a paid-upfront app in "
+                    "Developer Tools ($3.99 in the US store) that lists "
+                    "eleven providers, including ChatGPT and Codex, GitHub "
+                    "Copilot, Claude and Google Gemini, with widgets "
+                    "and an Apple Watch dashboard. A separate free app, "
+                    "CodexBar - Usage of AI, is a companion that needs "
+                    "CodexBar running on a Mac and syncs through iCloud. Prices and "
+                    "features change, so check each current listing before "
+                    "you decide."
+                ),
+            ],
+            "look": [
+                "Which services you need: Claude only, or Claude plus Codex, Copilot, Gemini or others.",
+                "Whether the app works on its own or needs a Mac running alongside it.",
+                "Separate 5-hour and weekly limits, with the exact reset time, not only a percentage.",
+                "Alerts at a percentage you choose, widgets, and Apple Watch support if you use a watch.",
+                "How you pay: free, paid upfront, a subscription, or a free trial followed by a one-time unlock.",
+            ],
+            "steps": [
+                "List the AI plans you actually hit limits on, and drop any tracker that does not cover them.",
+                "Check the minimum iOS version on each listing against your iPhone.",
+                "Decide whether you want a stand-alone iPhone app or a companion to a Mac menu bar tool.",
+                "Compare how each app handles your sign-in and whether it uses its own server.",
+                "Try before paying: use a free download or free trial to compare the numbers with each service's own usage page.",
+            ],
+            "fits": "fits developers who want Claude, ChatGPT Codex, GitHub Copilot and Gemini limits in one stand-alone iPhone, iPad and Apple Watch app, with custom percentage alerts, widgets in every size, iOS 17 or later and 50 languages. You can start a free 24-hour trial of every feature in the app; after that, a one-time purchase unlocks UsageNow Pro, with no subscription.",
+            "faq": [
+                {
+                    "q": "Which of these apps need a Mac?",
+                    "a": (
+                        "According to its listing, CodexBar - Usage of AI "
+                        "needs CodexBar on a Mac with iCloud sync. The "
+                        "other listings compared here describe stand-alone "
+                        "iPhone apps."
+                    ),
+                },
+                {
+                    "q": "Which services does UsageNow cover?",
+                    "a": (
+                        "Claude 5-hour and weekly limits including per-model "
+                        "weekly caps, ChatGPT Codex 5-hour and weekly windows, "
+                        "GitHub Copilot premium requests, chat and code "
+                        "completions, and Gemini daily request quotas."
+                    ),
+                },
+                {
+                    "q": "Is this comparison independent?",
+                    "a": (
+                        "No. It is published by the developer of UsageNow and "
+                        "uses only facts from each App Store listing on 15 "
+                        "October 2026. Other app names are trademarks of "
+                        "their owners."
+                    ),
+                },
+                {
+                    "q": "Is there a subscription for UsageNow?",
+                    "a": (
+                        "No. Every feature is free during a 24-hour trial "
+                        "started in the app; after that, UsageNow Pro is a "
+                        "single one-time purchase."
+                    ),
+                },
+            ],
         }
     ],
     "easyam": [

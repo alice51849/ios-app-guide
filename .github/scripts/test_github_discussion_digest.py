@@ -293,45 +293,36 @@ class PublisherDecisionTests(unittest.TestCase):
         return existing
 
     def test_due_update_fails_before_mutation_without_capability(self):
-        # Even while unlocked the token may report viewerCanUpdate=false; the
-        # server decides on the single update mutation, and a denial re-locks.
+        # Without update capability updateDiscussion is never sent; a failed
+        # replacement lock is reported and nothing is closed.
         existing = self._due_existing()
-        still_denied = copy.deepcopy(existing)
-        still_denied["locked"] = False
-        now = dt.datetime(2026, 7, 29, tzinfo=dt.timezone.utc)
-        calls: list[str] = []
-
-        def denied_update(*_args, **kwargs):
-            calls.append("update")
-            self.assertFalse(kwargs["require_viewer_update"])
-            raise digest.PublisherError("GraphQL returned errors: cannot update")
-
+        now = dt.datetime(2026, 10, 3, tzinfo=dt.timezone.utc)
+        created = discussion(self.rendered, locked=False)
+        created["id"] = "D_kwDONew"
         with (
             mock.patch.object(
                 digest,
                 "load_repository_state",
-                side_effect=(state(existing), state(still_denied)),
+                side_effect=(state(existing), state(created, existing)),
             ),
+            mock.patch.object(digest, "_create_discussion", return_value=created),
             mock.patch.object(
-                digest, "_unlock_discussion",
-                side_effect=lambda *_: calls.append("unlock"),
+                digest,
+                "_lock_discussion",
+                side_effect=digest.PublisherError("lock refused"),
             ),
-            mock.patch.object(
-                digest, "_lock_discussion",
-                side_effect=lambda *_: calls.append("lock"),
-            ),
-            mock.patch.object(
-                digest, "_update_discussion", side_effect=denied_update,
-            ),
+            mock.patch.object(digest, "_close_superseded") as close,
+            mock.patch.object(digest, "_update_discussion") as update,
         ):
-            with self.assertRaisesRegex(digest.PublisherError, "cannot update"):
+            with self.assertRaisesRegex(digest.PublisherError, "lock refused"):
                 digest.publish(
                     mock.sentinel.client,
                     self.rendered,
                     bootstrap=False,
                     now=now,
                 )
-        self.assertEqual(["unlock", "update", "lock"], calls)
+        update.assert_not_called()
+        close.assert_not_called()
 
     def test_lock_toggles_do_not_reset_the_update_interval(self):
         existing = self._due_existing()
@@ -348,35 +339,38 @@ class PublisherDecisionTests(unittest.TestCase):
             digest._content_changed_at(existing),
         )
 
-    def test_locked_post_without_capability_is_updated_via_temporary_unlock(self):
+    def test_locked_post_without_capability_is_superseded_by_new_locked_post(self):
         existing = self._due_existing()
-        unlocked = copy.deepcopy(existing)
-        unlocked["locked"] = False
-        unlocked["viewerCanUpdate"] = True
-        relocked = discussion(self.rendered)
-        relocked["viewerCanUpdate"] = False
+        created = discussion(self.rendered, locked=False)
+        created["id"] = "D_kwDONew"
+        created["url"] = "https://github.com/alice51849/ios-app-guide/discussions/2"
+        created["viewerCanUpdate"] = False
+        relocked = copy.deepcopy(created)
+        relocked["locked"] = True
         now = dt.datetime(2026, 10, 3, tzinfo=dt.timezone.utc)
         calls: list[str] = []
         with (
             mock.patch.object(
                 digest,
                 "load_repository_state",
-                side_effect=(state(existing), state(unlocked), state(relocked)),
+                side_effect=(state(existing), state(relocked, existing)),
             ),
             mock.patch.object(
-                digest, "_unlock_discussion",
-                side_effect=lambda *_: calls.append("unlock"),
+                digest,
+                "_create_discussion",
+                side_effect=lambda *a, **k: calls.append(
+                    f"create:reserve={k['mutation_reserve']}"
+                ) or created,
             ),
             mock.patch.object(
                 digest, "_lock_discussion",
-                side_effect=lambda *_: calls.append("lock"),
+                side_effect=lambda _c, i: calls.append(f"lock:{i}"),
             ),
             mock.patch.object(
-                digest, "_update_discussion",
-                side_effect=lambda *a, **k: calls.append(
-                    f"update:locked={k.get('require_locked')}"
-                ),
+                digest, "_close_superseded",
+                side_effect=lambda _c, i: calls.append(f"close:{i}") or True,
             ),
+            mock.patch.object(digest, "_update_discussion") as update,
         ):
             result = digest.publish(
                 mock.sentinel.client,
@@ -384,93 +378,92 @@ class PublisherDecisionTests(unittest.TestCase):
                 bootstrap=False,
                 now=now,
             )
-        self.assertEqual("updated", result.action)
-        self.assertEqual(["unlock", "update:locked=False", "lock"], calls)
-
-    def test_temporary_unlock_relocks_when_update_fails(self):
-        existing = self._due_existing()
-        unlocked = copy.deepcopy(existing)
-        unlocked["locked"] = False
-        unlocked["viewerCanUpdate"] = True
-        now = dt.datetime(2026, 10, 3, tzinfo=dt.timezone.utc)
-        calls: list[str] = []
-
-        def failing_update(*_args, **_kwargs):
-            calls.append("update")
-            raise digest.PublisherError("update rejected")
-
-        with (
-            mock.patch.object(
-                digest,
-                "load_repository_state",
-                side_effect=(state(existing), state(unlocked)),
-            ),
-            mock.patch.object(
-                digest, "_unlock_discussion",
-                side_effect=lambda *_: calls.append("unlock"),
-            ),
-            mock.patch.object(
-                digest, "_lock_discussion",
-                side_effect=lambda *_: calls.append("lock"),
-            ),
-            mock.patch.object(
-                digest, "_update_discussion", side_effect=failing_update,
-            ),
-        ):
-            with self.assertRaisesRegex(digest.PublisherError, "update rejected"):
-                digest.publish(
-                    mock.sentinel.client,
-                    self.rendered,
-                    bootstrap=False,
-                    now=now,
-                )
-        self.assertEqual(["unlock", "update", "lock"], calls)
-
-    def test_temporary_unlock_refuses_body_changed_while_unlocked(self):
-        existing = self._due_existing()
-        tampered = copy.deepcopy(existing)
-        tampered["locked"] = False
-        tampered["viewerCanUpdate"] = True
-        tampered["body"] = digest.render_digest(
-            self.rendered.resources, OLD_SOURCE_SHA
-        ).body
-        now = dt.datetime(2026, 10, 3, tzinfo=dt.timezone.utc)
-        with (
-            mock.patch.object(
-                digest,
-                "load_repository_state",
-                side_effect=(state(existing), state(tampered)),
-            ),
-            mock.patch.object(digest, "_unlock_discussion"),
-            mock.patch.object(digest, "_lock_discussion") as lock,
-            mock.patch.object(digest, "_update_discussion") as update,
-        ):
-            with self.assertRaisesRegex(digest.PublisherError, "changed while"):
-                digest.publish(
-                    mock.sentinel.client,
-                    self.rendered,
-                    bootstrap=False,
-                    now=now,
-                )
+        self.assertEqual("superseded", result.action)
+        self.assertEqual(created["url"], result.url)
+        self.assertIn("closed as outdated", result.reason)
+        self.assertEqual(
+            ["create:reserve=3", "lock:D_kwDONew", "close:D_kwDOExample"],
+            calls,
+        )
         update.assert_not_called()
-        lock.assert_called_once()
 
-    def test_unlock_mutation_requires_exact_confirmation(self):
+    def test_supersede_succeeds_even_if_closing_old_post_is_refused(self):
+        existing = self._due_existing()
+        created = discussion(self.rendered, locked=False)
+        created["id"] = "D_kwDONew"
+        relocked = copy.deepcopy(created)
+        relocked["locked"] = True
+        now = dt.datetime(2026, 10, 3, tzinfo=dt.timezone.utc)
+        with (
+            mock.patch.object(
+                digest,
+                "load_repository_state",
+                side_effect=(state(existing), state(relocked, existing)),
+            ),
+            mock.patch.object(digest, "_create_discussion", return_value=created),
+            mock.patch.object(digest, "_lock_discussion"),
+            mock.patch.object(digest, "_close_superseded", return_value=False),
+        ):
+            result = digest.publish(
+                mock.sentinel.client,
+                self.rendered,
+                bootstrap=False,
+                now=now,
+            )
+        self.assertEqual("superseded", result.action)
+        self.assertIn("stays locked", result.reason)
+
+    def test_supersede_refuses_when_newest_post_is_not_the_created_one(self):
+        existing = self._due_existing()
+        created = discussion(self.rendered, locked=False)
+        created["id"] = "D_kwDONew"
+        now = dt.datetime(2026, 10, 3, tzinfo=dt.timezone.utc)
+        with (
+            mock.patch.object(
+                digest,
+                "load_repository_state",
+                side_effect=(state(existing), state(existing)),
+            ),
+            mock.patch.object(digest, "_create_discussion", return_value=created),
+            mock.patch.object(digest, "_lock_discussion"),
+            mock.patch.object(digest, "_close_superseded") as close,
+        ):
+            with self.assertRaisesRegex(digest.PublisherError, "different newest"):
+                digest.publish(
+                    mock.sentinel.client,
+                    self.rendered,
+                    bootstrap=False,
+                    now=now,
+                )
+        close.assert_not_called()
+
+    def test_close_superseded_requires_exact_confirmation_and_is_best_effort(self):
         client = mock.Mock()
         client.execute.return_value = {
-            "unlockLockable": {
-                "unlockedRecord": {
+            "closeDiscussion": {
+                "discussion": {
                     "id": "D_kwDOExample",
-                    "locked": False,
+                    "closed": True,
                     "url": "https://github.com/alice51849/ios-app-guide/discussions/1",
                 }
             }
         }
-        digest._unlock_discussion(client, "D_kwDOExample")
-        self.assertEqual(2, client.execute.call_args.kwargs["mutation_reserve"])
-        client.execute.return_value["unlockLockable"]["unlockedRecord"]["locked"] = True
-        with self.assertRaisesRegex(digest.PublisherError, "unlock"):
-            digest._unlock_discussion(client, "D_kwDOExample")
+        self.assertTrue(digest._close_superseded(client, "D_kwDOExample"))
+        client.execute.return_value["closeDiscussion"]["discussion"]["closed"] = False
+        self.assertFalse(digest._close_superseded(client, "D_kwDOExample"))
+        client.execute.side_effect = digest.PublisherError("FORBIDDEN")
+        self.assertFalse(digest._close_superseded(client, "D_kwDOExample"))
+
+    def test_newest_managed_post_is_active_and_older_ones_are_allowed(self):
+        older = discussion(self.rendered)
+        newer = copy.deepcopy(older)
+        newer["id"] = "D_kwDONew"
+        loaded = state(newer, older)
+        self.assertEqual("D_kwDONew", digest._newest_managed(loaded)["id"])
+        with self.assertRaisesRegex(digest.PublisherError, "different newest"):
+            digest._newest_managed(loaded, expected_id="D_kwDOExample")
+        with self.assertRaisesRegex(digest.PublisherError, "did not find"):
+            digest._newest_managed(state())
 
     def test_graphql_actions_bot_login_is_approved(self):
         existing = discussion(self.rendered)

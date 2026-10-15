@@ -1404,6 +1404,59 @@ FAQ_OVERRIDES = {
              "不能。它只記錄每次檢查當下你的連線狀況,幫助你更清楚描述問題,不保證修好,也不保證申訴成功。"),
         ],
     },
+    # Lensafe(尚未上架;上架後由 catch-up 產頁時才會用到):第一題先給不用 App 的
+    # 檢查方法,其餘只寫 App 真的做得到的事。不寫「安全/保證/100%」,不提磁力計、
+    # 準確率或 LiDAR;價格由商店顯示,不寫數字。
+    "lensafe": {
+        "en": [
+            ("How do I check a hotel room for hidden cameras?",
+             "Start without an app: look over whatever faces the bed, shower and desk (smoke detectors, clocks, chargers, vents, frames), turn the lights off and sweep slowly with a flashlight held beside your eyes, looking for a small glint that stays put as you move. Lensafe adds a camera view that marks possible lens reflections, a front-camera infrared check and a list of camera-like devices on the same Wi-Fi."),
+            ("What does Lensafe check?",
+             "Three common signs: lens reflections (the flashlight pulses while the rear camera looks for points that light up and stay put, and you can tap a ring to confirm one spot), infrared lights seen by the front camera in a dark room, and devices on your Wi-Fi or nearby Bluetooth that look like cameras. It also shows how much of the room you have swept and keeps checklists and a PDF report for each stay."),
+            ("How is it priced?",
+             "Lensafe is a paid download. One purchase includes every feature; there are no in-app purchases, no subscription and no free version."),
+            ("Can it find every hidden camera?",
+             "No. A camera with no infrared, no network and a lens angled away from you may not show up, and hotel Wi-Fi often hides devices from each other. Not seeing a sign does not mean a room has no camera, so Lensafe never labels a room as clear."),
+            ("Does anything leave my iPhone?",
+             "No. Video is processed on the device, there is no account, and nothing is collected. It requires iOS 26 or later and an iPhone with a flashlight."),
+        ],
+        "ko": [
+            ("숙소 몰카는 어떻게 확인하나요?",
+             "앱 없이 먼저 시작하세요. 침대·샤워실·책상을 향한 물건(화재감지기, 시계, 충전기, 환풍구, 액자)을 살펴보고, 불을 끈 뒤 플래시를 눈 가까이 대고 천천히 비추며 움직여도 제자리에 남는 작은 반사점을 찾습니다. Lensafe는 여기에 렌즈일 수 있는 반사를 화면에 표시하는 카메라 화면, 전면 카메라 적외선 점검, 같은 와이파이에서 카메라처럼 응답하는 기기 목록을 더해 줍니다."),
+            ("Lensafe는 무엇을 점검하나요?",
+             "흔한 흔적 세 가지입니다. 렌즈 반사(플래시가 깜빡이는 동안 후면 카메라가 제자리에 머무는 반사점을 찾고, 원을 탭해 한 지점을 확인), 어두운 방에서 전면 카메라로 보이는 적외선, 와이파이·주변 블루투스의 카메라 같은 기기입니다. 점검한 방향의 범위를 보여 주고, 체크리스트와 숙소별 PDF 기록도 남깁니다."),
+            ("가격은 어떻게 되나요?",
+             "Lensafe는 유료 앱입니다. 한 번 구매로 모든 기능을 사용하며, 앱 내 구입·구독·무료 버전은 없습니다."),
+            ("모든 몰카를 찾을 수 있나요?",
+             "아니요. 적외선·네트워크가 없고 렌즈 각도가 맞지 않는 카메라는 보이지 않을 수 있고, 숙소 와이파이는 기기끼리 서로 못 보게 막혀 있는 경우가 많습니다. 흔적이 없다고 카메라가 없다는 뜻은 아니므로, Lensafe는 방에 문제가 없다고 판정하지 않습니다."),
+            ("영상이 아이폰 밖으로 나가나요?",
+             "아니요. 영상은 기기 안에서만 처리되고, 계정이 없으며 아무것도 수집하지 않습니다. iOS 26 이상, 플래시가 있는 아이폰이 필요합니다."),
+        ],
+        "ja": [
+            ("ホテルで盗撮カメラを確認する方法は?",
+             "まずはアプリなしで。ベッド・シャワー・机に向いている物(火災報知器、時計、充電器、通気口、額縁)を見て回り、部屋を暗くしてライトを目の近くに構えてゆっくり照らし、動いても同じ場所に残る小さな光の点を探します。Lensafe は、レンズの可能性がある反射を画面に表示するカメラ画面、前面カメラでの赤外線チェック、同じWi-Fiでカメラのように応答する機器の一覧を加えます。"),
+            ("Lensafe は何を確認しますか?",
+             "よくある手がかり3つです。レンズの反射(ライトを点滅させながら背面カメラが動かない反射点を探し、リングをタップして一点を確認)、暗い部屋で前面カメラに映る赤外線、Wi-Fi・近くのBluetoothにあるカメラらしい機器です。照らした方向の確認範囲を表示し、チェックリストと宿泊ごとのPDF記録も残せます。"),
+            ("価格は?",
+             "Lensafe は有料アプリです。一度の購入ですべての機能が使え、App内課金・サブスクリプション・無料版はありません。"),
+            ("すべての隠しカメラを見つけられますか?",
+             "いいえ。赤外線もネットワークもなく、レンズの向きが合わないカメラは映らないことがあり、ホテルのWi-Fiは機器同士が見えない設定が多いです。手がかりがなくてもカメラがないとは言い切れないため、Lensafe は部屋に問題がないとは判定しません。"),
+            ("映像が iPhone の外に出ることはありますか?",
+             "ありません。映像は端末内で処理され、アカウントはなく、何も収集しません。iOS 26 以降とライト付きの iPhone が必要です。"),
+        ],
+        "zh-Hant": [
+            ("飯店針孔怎麼檢查?",
+             "先不用 App:把正對床、浴室和書桌的東西(煙霧偵測器、時鐘、充電頭、通風口、相框)看過一遍,再關燈,把手電筒貼近眼睛慢慢掃,找移動時仍停在原地的小光點。Lensafe 再加上會圈出可能鏡頭反光的相機畫面、前鏡頭紅外線檢查,以及同一個 Wi-Fi 裡回應方式像攝影機的裝置清單。"),
+            ("Lensafe 檢查哪些東西?",
+             "三種常見跡象:鏡頭反光(手電筒閃爍時,後鏡頭找出亮起來而且停在原地的光點,點一下圓圈可以確認這一點)、暗房裡前鏡頭看得到的紅外線,以及 Wi-Fi 與附近藍牙上像攝影機的裝置。也會顯示掃描覆蓋率,並保存清單和每次住宿的 PDF 報告。"),
+            ("怎麼收費?",
+             "Lensafe 是付費下載,一次購買就能使用全部功能,沒有 App 內購買、沒有訂閱,也沒有免費版。"),
+            ("能找到所有針孔攝影機嗎?",
+             "不能。沒有紅外線、沒有連網、鏡頭角度又沒對到的機器,可能看不出來;飯店 Wi-Fi 也常讓裝置之間互相看不到。沒看到跡象不代表一定沒有,所以 Lensafe 不會判定房間沒問題。"),
+            ("影像會離開我的 iPhone 嗎?",
+             "不會。影像只在手機上處理,不用帳號,也不收集任何資料。需要 iOS 26 以上、有手電筒的 iPhone。"),
+        ],
+    },
 }
 
 

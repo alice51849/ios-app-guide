@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-14T20:53:34+0800",
- "count": 43,
- "content_sha256": "97dd7bc5ac7cadbaa7ded60216b37465f8284e019cc327aab16778b1f88dbbc7",
+ "source_generated": "2026-10-15T09:52:43+0800",
+ "count": 40,
+ "content_sha256": "c565b7aaf4d9ab79d6a4358927768da9e84c56d626c856f31da19c87fee59c2c",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -423,27 +423,6 @@
     }
    }
   },
-  "lumiweather": {
-   "ios_app_id": "6779552704",
-   "ios_name": "Lumi Weather",
-   "android_folder": "09_LumiWeather",
-   "package": "com.alice51849.LumiWeather",
-   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather",
-   "paid": false,
-   "first_seen": "2026-10-14T15:15:47+0800",
-   "launch_wave": "new",
-   "match": "bundle_id_exact",
-   "copy": {
-    "en-US": {
-     "title": "Lumi Weather: What to Wear",
-     "short_description": "Hourly weather forecast with an outing score, umbrella and sunscreen tips"
-    },
-    "zh-TW": {
-     "title": "Lumi天氣星球：天氣預報、外出指數與穿搭建議",
-     "short_description": "逐時與一週天氣預報，一眼看懂今天穿什麼、要不要帶傘、紫外線強不強"
-    }
-   }
-  },
   "maskmyfile": {
    "ios_app_id": "6792850916",
    "ios_name": "Mask My File",
@@ -591,27 +570,6 @@
     }
    }
   },
-  "picclear": {
-   "ios_app_id": "6780223070",
-   "ios_name": "PicClear",
-   "android_folder": "12_PicClearPro",
-   "package": "com.picclear.app",
-   "play_url": "https://play.google.com/store/apps/details?id=com.picclear.app",
-   "paid": false,
-   "first_seen": "2026-10-13T09:04:47+0800",
-   "launch_wave": "new",
-   "match": "bundle_id_exact",
-   "copy": {
-    "en-US": {
-     "title": "PicClear Pro: Photo Cleaner",
-     "short_description": "Duplicate photo remover: clear screenshots and blurry shots to reclaim storage"
-    },
-    "zh-TW": {
-     "title": "PicClear Pro",
-     "short_description": "清理重複照片、舊截圖與模糊照片，手機空間不足時幫你騰出儲存空間"
-    }
-   }
-  },
   "savetag": {
    "ios_app_id": "6802505528",
    "ios_name": "SaveTag",
@@ -630,27 +588,6 @@
     "zh-TW": {
      "title": "SaveTag：AI 連結收藏與書籤",
      "short_description": "書籤管理與稍後閱讀：從任何 App 存連結，自動分類成購物、食譜、旅遊等主題，願望清單一次收齊"
-    }
-   }
-  },
-  "scanto": {
-   "ios_app_id": "6779977651",
-   "ios_name": "ScanTo Pro",
-   "android_folder": "11_ScanToPro",
-   "package": "com.alice51849.OfflineScannerPro",
-   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.OfflineScannerPro",
-   "paid": false,
-   "first_seen": "2026-10-11T14:26:56+0800",
-   "launch_wave": "baseline",
-   "match": "bundle_id_exact",
-   "copy": {
-    "en-US": {
-     "title": "ScanTo Pro: Offline PDF & OCR",
-     "short_description": "Document scanner and PDF scanner with on-device OCR text search"
-    },
-    "zh-TW": {
-     "title": "ScanTo Pro: 離線PDF掃描器",
-     "short_description": "文件掃描成可搜尋的 PDF，OCR 文字辨識在裝置上完成，文件不上傳"
     }
    }
   },

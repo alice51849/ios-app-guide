@@ -18,6 +18,10 @@ import clip_progress as P  # noqa: E402
 import social_extra as S  # noqa: E402
 
 S.PAUSE = 0
+# Many tests patch os.environ with clear=True, which drops POST_QA_OFFLINE; on a runner with direct
+# internet the gate then looked up the fixtures' fake app id1, got "no such app" and cached it
+# (lru_cache), refusing every fixture clip for the rest of the run (social-extra failed 2026-10-15).
+S.post_qa.offline = lambda: True
 S.STAGGER = 0
 DAY = dt.date(2026, 10, 15)
 

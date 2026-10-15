@@ -993,6 +993,38 @@ class TelegramPageReadyGateTests(unittest.TestCase):
                     )
                 )
 
+    def test_taiwan_bopomofo_traffic_never_routes_to_pro(self):
+        # lumibopomofopro-07: zh-Hant goes to the free-to-start Lite; Pro stays
+        # eligible in every other locale (overseas / no in-app purchase).
+        pro, lite = "6775773117", "6773017109"
+        self.assertTrue(telegram_post.routed_away({"lang": "zh-Hant", "app": pro}))
+        self.assertFalse(telegram_post.routed_away({"lang": "zh-Hant", "app": lite}))
+        self.assertFalse(telegram_post.routed_away({"lang": "en-US", "app": pro}))
+        pool = [
+            {
+                "app": app_id,
+                "lang": locale,
+                "text": f"Fixture {app_id} {locale}",
+                "url": f"https://apps.apple.com/app/id{app_id}",
+                "source": "publisher_intent_catalog",
+            }
+            for app_id in (*self.APPS, pro, lite)
+            for locale in common.OFFICIAL_SOCIAL_LOCALES
+        ]
+        asia = self.NOW.replace(hour=1)
+        only_pro = frozenset((*self.APPS, lite))
+        chosen = []
+        while True:
+            item = telegram_post.choose_unpublished(
+                pool, self.empty_ledger(), asia, skip_apps=only_pro
+            )
+            if item is None:
+                break
+            chosen.append((item["lang"], str(item["app"])))
+            pool = [entry for entry in pool if entry is not item]
+        self.assertTrue(chosen)  # Pro still posts in the other Asia locales.
+        self.assertNotIn(("zh-Hant", pro), chosen)
+
     def test_publish_once_forwards_the_gate_to_candidate_selection(self):
         context = {
             "slot": "2026-10-14T01:00:00+00:00",

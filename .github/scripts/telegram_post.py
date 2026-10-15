@@ -168,6 +168,18 @@ CURRENT_ROSTER_LOCALE_RECORDS = 2650
 # Ledger intents may name a historical roster App or a current one.
 LEDGER_APP_IDS = EXACT47_APP_IDS | CURRENT_ROSTER_APP_IDS
 
+# 付費/免費分流(lumibopomofopro-07):台灣(zh-Hant)流量導向免費起步的
+# Lumi Bopomofo,買斷版 Pro 不在 zh-Hant 推播;Pro 只留給海外、無內購與離線
+# 語境的其他語系。鍵為 (官方語系, App Store id)。
+MARKET_ROUTING_EXCLUSIONS = frozenset({
+    ("zh-Hant", "6775773117"),  # Lumi Bopomofo Pro → 台灣導向 Lumi Bopomofo
+})
+
+
+def routed_away(item):
+    return (str(item.get("lang")), str(item.get("app"))) in MARKET_ROUTING_EXCLUSIONS
+
+
 # 頁面就緒門檻(hourstaglite-03):商店頁 iPhone 截圖少於 3 張的 App 接不住貼文
 # 帶來的點擊,先跳過,截圖補齊後自動恢復。每次執行只做一次批次 lookup;
 # Apple 讀不到時一律放行(fail open),絕不讓每日貼文因此失敗。
@@ -1006,6 +1018,7 @@ def choose_unpublished(pool, ledger, now, slot=None, skip_apps=frozenset()):
         and item.get("lang") in TZ_LANGS[zone]
         and str(item.get("app")) not in blocked_apps
         and str(item.get("app")) not in skip_apps
+        and not routed_away(item)
         and _digest(compose_text(item)) not in used
         # Posts sent before the Google Play line was added count as used too.
         and _digest(compose_text(item, android=False)) not in used

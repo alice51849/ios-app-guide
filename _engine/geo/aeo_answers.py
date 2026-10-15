@@ -541,8 +541,9 @@ def default_content(question: str, key: str) -> dict[str, Any]:
     if access:
         lead += f" {access}."
     strengths = ", ".join(app.get("cta_bullets", [])[:3])
+    shown = queries.display_question(question)
     base = {
-        "meta_description": f"{question}: what to check before choosing an iPhone app, and where {name} may fit as a practical option.",
+        "meta_description": f"{shown}: what to check before choosing an iPhone app, and where {name} may fit as a practical option.",
         "lead": lead,
         "short_answer_paragraphs": [
             "The best choice depends on your real use case: privacy, offline access, export options, ease of use, and whether the pricing model still makes sense after a few months. Before installing, test the app with a realistic task rather than judging only by screenshots.",
@@ -972,8 +973,12 @@ def render_page(
     name = app["name"]
     url = appstore_url(key, ANSWER_CAMPAIGN)
     slug = slugify(question)
+    # 改過標題的既有 best-* 頁:slug 不變,顯示問題導向的標題(queries.LEGACY_BEST_RETITLES)。
+    shown = queries.display_question(question)
     canonical = f"{SITE}/answers/{slug}.html"
-    title = content.get("page_title") or f"{question}: honest iPhone app buying guide"
+    title = content.get("page_title") or (
+        shown if shown != question else f"{question}: honest iPhone app buying guide"
+    )
     meta = concise_meta(content["meta_description"], limit=220, hard_limit=220)
     style = extract_style(effective_pages_root)
     primary_resource_url = content.get("primary_resource_url", "")
@@ -1004,7 +1009,7 @@ def render_page(
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "iOS App Guide", "item": f"{SITE}/index.html"},
             {"@type": "ListItem", "position": 2, "name": "Answers", "item": f"{SITE}/answers/index.html"},
-            {"@type": "ListItem", "position": 3, "name": question, "item": canonical},
+            {"@type": "ListItem", "position": 3, "name": shown, "item": canonical},
         ],
     }
     faq_schema = {
@@ -1018,7 +1023,7 @@ def render_page(
     howto = {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": f"How to choose: {question}",
+        "name": f"How to choose: {shown}",
         "step": [
             {"@type": "HowToStep", "position": i + 1, "name": step.split(":")[0][:80], "text": step}
             for i, step in enumerate(content["decision_steps"])
@@ -1171,7 +1176,7 @@ def render_page(
 </script>
 </head>
 <body><header class="top"><div class="wrap nav"><a href="{SITE}/index.html">iOS App Guide</a><nav><a href="{SITE}/answers/index.html">Answers</a> · <a href="{SITE}/tools/">Free tools</a> · <a href="{SITE}/alternatives/">Alternatives</a> · <a href="{SITE}/about.html">About</a></nav></div></header>
-<main><section class="hero wrap"><div class="breadcrumb"><a href="{SITE}/index.html">Home</a> / <a href="{SITE}/answers/index.html">Answers</a></div><div class="eyebrow">High-intent answer</div><h1>{e(question)}</h1><p class="lead">{e(content["lead"])}</p><p>{hero_actions}</p></section>
+<main><section class="hero wrap"><div class="breadcrumb"><a href="{SITE}/index.html">Home</a> / <a href="{SITE}/answers/index.html">Answers</a></div><div class="eyebrow">High-intent answer</div><h1>{e(shown)}</h1><p class="lead">{e(content["lead"])}</p><p>{hero_actions}</p></section>
 <section class="wrap grid"><article class="card two answer"><h2>Short answer</h2>{paras}<h2>What to look for before choosing</h2><ul class="checklist">{look}</ul><h2>A practical decision process</h2><ol class="checklist">{steps}</ol><h2>Quick comparison</h2><table><thead><tr><th>Need</th><th>What to check</th><th>Why it matters</th></tr></thead><tbody>{comparison_rows}</tbody></table>{sources_html}{article_app_fit}</article><aside class="card side">{sidebar_html}</aside></section>
 <section class="wrap card"><h2>FAQ</h2>{faq_html}</section>{deferred_app_fit}</main><footer class="footer"><div class="wrap">Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.</div></footer></body></html>'''
     import paid_upfront_surfaces
@@ -1216,6 +1221,13 @@ def question_plan(
     plan: list[tuple[str, str]] = []
     seen_slugs: set[str] = set()
     selected_keys = set(selected)
+    # 改過標題的既有 best-* 頁固定由原擁有者重生,不因排序被同品類兄弟版搶走。
+    for key in ordered:
+        for q in queries.LEGACY_BEST_RETITLES.get(key, {}):
+            slug = slugify(q)
+            if slug not in seen_slugs:
+                seen_slugs.add(slug)
+                plan.append((key, q))
     for key in ordered:
         for q in queries.ALL.get(key, queries.CURATED.get(key, [])):
             if not is_english_answer_question(q):

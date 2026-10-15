@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-15T05:56:36Z",
+  "updated_at": "2026-10-15T06:08:09Z",
   "legend": {
     "claude": "雲端 Claude 可直接做",
     "local": "你電腦上的 Claude 會直接做（已長期授權）",
@@ -531,11 +531,11 @@
         {
           "id": "notesstudio100-04",
           "title": "threads-autopilot 排程與 GEO 單頁",
-          "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：10/31。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。GEO 單頁部分併入 GEO 批次處理。",
+          "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：10/31。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。GEO 單頁部分併入 GEO 批次處理。 完成：GEO 單頁：50 語系 notesstudio100.html 以 build_pages_i18n 重產（移除模板 FAQ）；best-* 英文問答頁改為問句標題、hub 同步重產；Threads 10/31 排程照舊。",
           "owner": "claude",
           "impact": "medium",
-          "status": "in_progress",
-          "progress": "GEO 單頁：50 語系 app 頁已嵌入 7 秒鉤子片（VideoObject＋影片 sitemap）；Threads 排程照舊。"
+          "status": "done",
+          "done_at": "2026-10-15T06:07:16Z"
         },
         {
           "id": "notesstudio100-06",
@@ -968,7 +968,8 @@
           "detail": "台灣流量導向 Lite，Pro 只出現在「無內購／海外／離線」情境頁；alternatives 頁避免以對手名稱為標題主體。",
           "owner": "local",
           "impact": "medium",
-          "status": "todo"
+          "status": "in_progress",
+          "progress": "已完成：Telegram 排程加市場分流（zh-Hant 永不排 Pro，台灣流量只走 Lite；附測試）；英文 alternatives 5 頁改以「一次買斷注音 App」用途為標題主體（aeo_pages.alt_heading 重產）；answers 類別頁本來就走 Lite 門。未完成：8 語系在地化 lumibopomofopro-vs-* 頁（含 zh-Hant）的產生器不在 Guide 鏡像，標題仍以對手名稱開頭，需在 GrowthEngine 端補產生器後重產。"
         },
         {
           "id": "lumibopomofopro-08",
@@ -1037,10 +1038,11 @@
         {
           "id": "mochidonestamp-07",
           "title": "GEO 增加「days since／多久一次」意圖頁",
-          "detail": "現有 alternatives 頁比的是 Sweepy、Tody、Cozi、HomeRoutines（家事 App），方向對；再補 en/ja/zh-Hant 的「how to remember when you last changed the filter」問答頁。",
+          "detail": "現有 alternatives 頁比的是 Sweepy、Tody、Cozi、HomeRoutines（家事 App），方向對；再補 en/ja/zh-Hant 的「how to remember when you last changed the filter」問答頁。 完成：新增 deep_items/mochidonestamp.json，產出 answers/how-to-remember-when-you-last-changed-the-air-filter-or-water-filter.html 及 zh-Hant／ja 版；只寫實有功能（一鍵記錄＋復原、補登日期、從實際完成時間重算的節奏、完成／稍後提醒、小工具、備註照片、JSON 匯出、免費 1 事件＋Lifetime Pro 無訂閱），更換間隔請依製造商建議。",
           "owner": "local",
           "impact": "low",
-          "status": "todo"
+          "status": "done",
+          "done_at": "2026-10-15T06:07:16Z"
         },
         {
           "id": "mochidonestamp-08",
@@ -1145,11 +1147,11 @@
         {
           "id": "savetag-04",
           "title": "threads-autopilot 排程＋GEO 單頁",
-          "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：11/02。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。GEO 單頁部分併入 GEO 批次處理。",
+          "detail": "已排進官網 Threads（hourstag.app）台灣 11:00 時段：11/02。內文不放連結，App Store／Google Play 連結自動放第一則留言；同帳號每天仍 ≤3 則。GEO 單頁部分併入 GEO 批次處理。 完成：GEO 單頁：50 語系 savetag.html 以 build_pages_i18n 重產（移除模板 FAQ）；best-* 英文問答頁改為問句標題（例：How do I build a read-later list on iPhone that actually shrinks?）、hub 同步重產；Threads 11/02 排程照舊。",
           "owner": "claude",
           "impact": "low",
-          "status": "in_progress",
-          "progress": "GEO 單頁：50 語系 app 頁已嵌入 7 秒鉤子片（VideoObject＋影片 sitemap）；Threads 排程照舊。"
+          "status": "done",
+          "done_at": "2026-10-15T06:07:16Z"
         }
       ]
     },
@@ -1237,10 +1239,11 @@
         {
           "id": "stayclock-06",
           "title": "GEO 補「舊 iPad 再利用」意圖頁",
-          "detail": "現有 stayclock-vs-dclock／flip-clock-widget 等比較頁；補 en/zh-Hant/ja/de 的「turn an old iPad into a nightstand clock」「舊 iPad 當床頭鐘」「古いiPadを置き時計に」問答頁，寫明 StandBy 差異。",
+          "detail": "現有 stayclock-vs-dclock／flip-clock-widget 等比較頁；補 en/zh-Hant/ja/de 的「turn an old iPad into a nightstand clock」「舊 iPad 當床頭鐘」「古いiPadを置き時計に」問答頁，寫明 StandBy 差異。 完成：新增 deep_items/stayclock.json，以 aeo_answers 產出 answers/how-to-turn-an-old-ipad-into-an-always-on-nightstand-clock.html，並以 aeo_answers_i18n --trans 產出 zh-Hant／ja／de-DE 版；內容只寫上架功能（Keep Awake、夜間紅色錶面、Panel Care、無帳號無網路、1 款免費＋Lifetime），FAQ 寫明與 iPhone StandBy 的差異，並提醒先確認 iPadOS 相容性。",
           "owner": "local",
           "impact": "medium",
-          "status": "todo"
+          "status": "done",
+          "done_at": "2026-10-15T06:07:16Z"
         },
         {
           "id": "stayclock-07",
@@ -1286,8 +1289,8 @@
           "detail": "資料檔修正後以 GrowthEngine 重產 50 語系 tripplanet.html、hubs/tripplanet.html、publisher catalog 條目；移除「雜誌 要用什麼 App?」「是很好的選擇」模板 FAQ 與「購買和共享位於家長的門後」機翻句。",
           "owner": "local",
           "impact": "high",
-          "status": "todo",
-          "progress": "產生器已移除關鍵字模板 FAQ（build_pages_i18n 只留人工 FAQ）、資料已同步；50 語系頁面由下一次 Daily GEO 重產。"
+          "status": "in_progress",
+          "progress": "已完成：50 語系 tripplanet.html 與 hubs/tripplanet.html 以產生器重產（新名稱 Trip Planet: Kids Quest，模板 FAQ 與機翻句已不在），best-* 英文問答頁改問句標題。未完成：publisher catalog 有 40 筆仍讀到在地化 persona 頁的舊名「Lumi Trip Planet」，需先補字典再以 aeo_answers_i18n --refresh 重產該 40 頁，下一次 publisher_intent_catalog 才會更新。"
         }
       ]
     },
@@ -1340,11 +1343,11 @@
         {
           "id": "wifiaidlite-05",
           "title": "GEO 產生器改掉 12 個 best-* 頁與模板 FAQ",
-          "detail": "en-US/wifiaidlite.html 的 FAQ 是「What is the best app for internet? WiFi Aid Lite… is a great choice for internet」這種關鍵字套模板，違反不自稱 best 且屬規模化內容；改為真實問答並去掉 best 字眼。",
+          "detail": "en-US/wifiaidlite.html 的 FAQ 是「What is the best app for internet? WiFi Aid Lite… is a great choice for internet」這種關鍵字套模板，違反不自稱 best 且屬規模化內容；改為真實問答並去掉 best 字眼。 完成：queries.LEGACY_BEST_RETITLES＋aeo_answers --refresh-slug 重產 12 個 wifiaidlite best-* 英文頁，標題／H1／og／JSON-LD 改為真實問句（例：Which iPhone app explains why my Wi-Fi is not working?），網址不變；50 語系 wifiaidlite.html 由 build_pages_i18n 重產，模板 FAQ 已去除。在地化 best-* 問答頁標題待字典翻譯後由 Daily GEO 更新。",
           "owner": "local",
           "impact": "medium",
-          "status": "todo",
-          "progress": "模板 FAQ 已從產生器移除；best-* 標題頁仍待改。"
+          "status": "done",
+          "done_at": "2026-10-15T06:07:16Z"
         },
         {
           "id": "wifiaidlite-06",

@@ -1252,14 +1252,68 @@ except Exception:
     _COMPETITORS = {}
 
 
-# 不自稱 best、不套關鍵字模板的 App(wifiaidlite-05):不產生 "best {kw} app" 題目。
-NO_BEST_QUERY_KEYS = {"wifiaidlite"}
+# 不自稱 best、不套關鍵字模板的 App(wifiaidlite-05、tripplanet-04、
+# notesstudio100-04、savetag-04):不產生新的 "best {kw} app" 題目。
+NO_BEST_QUERY_KEYS = {"wifiaidlite", "tripplanet", "notesstudio100", "savetag"}
+
+# 既有 best-* answer 頁(網址已被索引,不改 slug、不轉址)改用問題導向的標題與
+# H1:左邊是決定 slug 的原始題目,右邊是頁面實際顯示的問題。顯示文字只描述
+# 使用者的問題,不自稱 best,也不寫商品頁沒有的功能。
+LEGACY_BEST_RETITLES = {
+    "wifiaidlite": {
+        "best aid app": "Which iPhone app helps find the real cause of a Wi-Fi problem?",
+        "best check if a website is down app": "How can I check on iPhone whether a website is down or it is my connection?",
+        "best dns not resolving iphone app": "How can I tell on iPhone whether DNS is not resolving?",
+        "best dns test app": "How do I run a DNS test on iPhone and read the result?",
+        "best internet outage app": "Is it an internet outage or just my Wi-Fi? How to check on iPhone",
+        "best is it my wifi or the website app": "Is it my Wi-Fi or the website? How to tell on iPhone",
+        "best network diagnostics app": "Which network checks show where an iPhone connection is failing?",
+        "best wi-fi connected but no internet app": "Wi-Fi connected but no internet on iPhone: how do I find the cause?",
+        "best wifi analyzer app": "What can a Wi-Fi check app on iPhone actually measure?",
+        "best wifi app": "Which iPhone app explains why my Wi-Fi is not working?",
+        "best wifi connected but no internet app": "iPhone says Wi-Fi is connected but there is no internet: what should I check first?",
+        "best wifi or the website app": "Wi-Fi or the website: how do I find out which one is failing on iPhone?",
+    },
+    "tripplanet": {
+        "best travel activity app for kids on family trips": "Which travel activity app turns family trips into missions for kids?",
+        "best kids travel app": "What kind of travel app helps kids enjoy a family trip?",
+        "best travel games for kids app": "How can an iPhone app turn flights and car rides into travel games for kids?",
+        "best road trip games app": "What road trip games can kids play with an iPhone app?",
+        "best family travel app": "Which family travel app gives kids their own missions on a trip?",
+    },
+    "notesstudio100": {
+        "best offline handwriting notes app for ipad with pdf markup no subscription": "Is there an offline iPad handwriting notes app with PDF markup and no subscription?",
+        "best handwriting notes app ipad app": "What should a handwriting notes app on iPad do well with Apple Pencil?",
+        "best pdf markup and handwriting in one app app": "Is there one iPad app for both PDF markup and handwritten notes?",
+        "best notes app no subscription app": "Which notes app for iPhone and iPad works without a subscription?",
+        "best offline notes app no account app": "Is there a notes app that works offline without creating an account?",
+    },
+    "savetag": {
+        "best app to save links from other apps on iphone": "How do I save links from other apps on iPhone into one place?",
+        "best save links app": "Where can I save links on iPhone so I actually find them again?",
+        "best bookmark manager app": "How do I keep saved links organized on iPhone without an account?",
+        "best read later app": "How do I build a read-later list on iPhone that actually shrinks?",
+        "best link organizer app": "How can I organize saved links on iPhone with tags automatically?",
+    },
+}
+_DISPLAY_QUESTIONS = {
+    legacy.lower(): shown
+    for retitles in LEGACY_BEST_RETITLES.values()
+    for legacy, shown in retitles.items()
+}
+
+
+def display_question(question):
+    """頁面顯示的問題;未改標題的題目原樣回傳(slug 一律由原始題目決定)。"""
+    return _DISPLAY_QUESTIONS.get(" ".join(str(question).split()).lower(), question)
 
 
 def queries_for(key):
     """合併手工精選 + 從 keywords 自動衍生的自然語言查詢,去重。"""
     a = APPS[key]
     out = list(CURATED.get(key, []))
+    # 已改標題的既有 best-* 頁仍由原 App 擁有,hub 與 answers 索引照常連到它們。
+    out.extend(LEGACY_BEST_RETITLES.get(key, {}))
     for kw in a.get("keywords", [])[:4]:
         if key not in NO_BEST_QUERY_KEYS:
             out.append(f"best {kw} app")

@@ -699,7 +699,7 @@ def positioning(key, noun):
             "intro": f"{name} is a one-time-purchase {noun} for iPhone.",
             "heading": f"Why people choose a pay-once {noun}",
             "cta": f"View {name} — one-time purchase on the App Store",
-            "hub_title": f"Best no-subscription {noun} for iPhone — {name} (pay once)",
+            "hub_title": f"No-subscription {noun} for iPhone — {name} (pay once)",
             "hub_heading": f"The pay-once {noun} for iPhone: {name}",
             "hub_section": "What you get (no subscription)",
             "slug": f"{key}-no-subscription",
@@ -1059,6 +1059,35 @@ def faq_schema(faq):
                             "acceptedAnswer": {"@type": "Answer", "text": ans}} for q, ans in faq]}
 
 
+# 付費/免費分流(lumibopomofopro-07):這些 App 的比較頁以使用情境為標題主體,
+# 競品名稱只當比較對象,不當標題主角。情境文字只寫商品頁上確認過的事實。
+USE_CASE_LED_ALTERNATIVES = {
+    # Pro 商品頁:一次購買全解鎖、沒有 App 內購買彈窗、不需網路。
+    # (title 用短版,<title> 70 字內仍保留競品名,四頁標題不會重複)
+    "lumibopomofopro": (
+        "Pay-once Zhuyin app",
+        "Pay-once Zhuyin app with no in-app purchases",
+    ),
+}
+
+
+def alt_heading(key, comp):
+    """(title 主體, H1) — 預設以競品名稱為參照;分流 App 改以使用情境為主體。"""
+    name = APPS[key]["name"]
+    short_name = name.split(":", 1)[0]
+    use_case = USE_CASE_LED_ALTERNATIVES.get(key)
+    if use_case:
+        title_lead, heading_lead = use_case
+        return (
+            f"{title_lead} vs {comp} — {short_name}",
+            f"{heading_lead}: {name} compared with {comp}",
+        )
+    return (
+        f"{comp} alternative for iPhone — {short_name}",
+        f"{comp} alternative for iPhone: {name}",
+    )
+
+
 def alt_page(key, comp_norm, gap_queries):
     a = APPS[key]
     comp = disp(comp_norm)
@@ -1066,16 +1095,14 @@ def alt_page(key, comp_norm, gap_queries):
     url = landing_url(key)
     flexible = pricing_profile(key) == "flexible"
     position = None if flexible else positioning(key, noun)
-    short_name = a["name"].split(":", 1)[0]
     article = article_for(comp)
+    title, heading = alt_heading(key, comp)
     if flexible:
-        title = f"{comp} alternative for iPhone — {short_name}"
         desc = (
             f"Looking for {article} {comp} alternative on iPhone? {a['name']} offers a "
             "one-time unlock option alongside optional subscriptions."
         )
     else:
-        title = f"{comp} alternative for iPhone — {short_name}"
         desc = f"Looking for {article} {comp} alternative on iPhone? {position['description']}"
     faq = faq_for(key, comp, gap_queries)
     schemas = [app_schema(key, desc), faq_schema(faq)]
@@ -1087,7 +1114,7 @@ def alt_page(key, comp_norm, gap_queries):
         f'        <p itemprop="text">{e(ans)}</p>\n      </div>\n    </div>'
         for q, ans in faq)
     if flexible:
-        body = f"""  <h1>{e(comp)} alternative for iPhone: {e(a['name'])}</h1>
+        body = f"""  <h1>{e(heading)}</h1>
   <p><strong>{e(a['name'])}</strong> is a {e(noun)} for iPhone. It offers a <strong>one-time unlock option</strong>
   alongside optional subscription plans, so users can choose the current App Store option that fits them.</p>
   <p><a href="{e(url)}"><strong>View {e(a['name'])} on the App Store →</strong></a></p>
@@ -1105,7 +1132,7 @@ def alt_page(key, comp_norm, gap_queries):
 
   <p><a href="{e(url)}"><strong>Explore {e(a['name'])} and its current unlock options →</strong></a></p>"""
     else:
-        body = f"""  <h1>{e(comp)} alternative for iPhone: {e(a['name'])}</h1>
+        body = f"""  <h1>{e(heading)}</h1>
   <p><strong>{e(position['intro'])}</strong> {e((a.get('sub') or '').replace(chr(10),' '))}</p>
   <p><a href="{e(url)}"><strong>{e(position['cta'])} →</strong></a></p>
 

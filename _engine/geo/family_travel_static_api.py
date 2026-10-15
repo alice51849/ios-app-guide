@@ -85,10 +85,10 @@ COPY = {
         ),
         "app_title": "Optional digital travel layer",
         "app_text": (
-            "Lumi Trip Planet adds an optional on-device activity layer. The API and "
+            "Trip Planet: Kids Quest adds an optional on-device activity layer. The API and "
             "open dataset remain free and independent."
         ),
-        "app_cta": "View Lumi Trip Planet on the App Store",
+        "app_cta": "View Trip Planet: Kids Quest on the App Store",
     },
     "zh-Hant": {
         "lang": "zh-Hant",
@@ -136,10 +136,10 @@ COPY = {
         ),
         "app_title": "選用數位旅行層",
         "app_text": (
-            "Lumi Trip Planet 提供選用的裝置端活動層；API 與開放資料仍維持"
+            "Trip Planet: Kids Quest 提供選用的裝置端活動層；API 與開放資料仍維持"
             "免費且獨立。"
         ),
-        "app_cta": "在 App Store 查看 Lumi Trip Planet",
+        "app_cta": "在 App Store 查看 Trip Planet: Kids Quest",
     },
 }
 

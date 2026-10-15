@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # paras matkailupelisovellus lapsille perhematkoille
 
-Vanhemmat, jotka matkustavat pienten lasten kanssa, tarvitsevat aktiviteetteja, jotka tekevät pakkauksesta, odottamisesta ja uuden paikan tutkimisesta osan seikkailua, eivät lisästressiä. Siksi Lumi Trip Planet on olemassa.
+Vanhemmat, jotka matkustavat pienten lasten kanssa, tarvitsevat aktiviteetteja, jotka tekevät pakkauksesta, odottamisesta ja uuden paikan tutkimisesta osan seikkailua, eivät lisästressiä. Siksi Trip Planet: Kids Quest on olemassa.
 
 - Lapset & oppiminen
 - Ilmainen aloitus
@@ -20,7 +20,7 @@ Vanhemmat, jotka matkustavat pienten lasten kanssa, tarvitsevat aktiviteetteja, 
 - Yksityinen / laitteella
 - App Store · Ilmainen
 
-[Hanki Lumi Trip Planet App Storesta →](https://apps.apple.com/fi/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[Hanki Trip Planet: Kids Quest App Storesta →](https://apps.apple.com/fi/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

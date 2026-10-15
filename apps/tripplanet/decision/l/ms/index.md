@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # apl aktiviti perjalanan terbaik untuk kanak-kanak semasa percutian keluarga
 
-Ibu bapa yang melancong dengan anak kecil perlukan aktiviti yang jadikan mengemas barang, menunggu dan meneroka tempat baru sebagai sebahagian pengembaraan, bukan satu lagi sumber tekanan. Sebab itulah Lumi Trip Planet dibina.
+Ibu bapa yang melancong dengan anak kecil perlukan aktiviti yang jadikan mengemas barang, menunggu dan meneroka tempat baru sebagai sebahagian pengembaraan, bukan satu lagi sumber tekanan. Sebab itulah Trip Planet: Kids Quest dibina.
 
 - Kanak-kanak & pembelajaran
 - Percuma untuk bermula · buka kunci sekali sahaja
@@ -20,7 +20,7 @@ Ibu bapa yang melancong dengan anak kecil perlukan aktiviti yang jadikan mengema
 - Peribadi / pada peranti
 - App Store · Percuma
 
-[Dapatkan Lumi Trip Planet di App Store →](https://apps.apple.com/my/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[Dapatkan Trip Planet: Kids Quest di App Store →](https://apps.apple.com/my/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

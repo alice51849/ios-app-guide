@@ -189,10 +189,10 @@ COPY = {
         ),
         "app_title": "Optional digital travel layer",
         "app_text": (
-            "Lumi Trip Planet offers an optional on-device activity layer. The complete "
+            "Trip Planet: Kids Quest offers an optional on-device activity layer. The complete "
             "passport, PDFs, metadata and open data remain free and independent."
         ),
-        "app_cta": "View Lumi Trip Planet on the App Store",
+        "app_cta": "View Trip Planet: Kids Quest on the App Store",
         "footer": "Independent, openly licensed family travel resource from iOS App Guide.",
         "learning_use": "Family-guided observation and bilingual travel vocabulary practice",
         "keywords": (
@@ -304,10 +304,10 @@ COPY = {
         ),
         "app_title": "選用數位旅行層",
         "app_text": (
-            "Lumi Trip Planet 提供選用的裝置端活動層；完整護照、PDF、中繼資料與"
+            "Trip Planet: Kids Quest 提供選用的裝置端活動層；完整護照、PDF、中繼資料與"
             "開放資料仍維持免費且獨立。"
         ),
-        "app_cta": "在 App Store 查看 Lumi Trip Planet",
+        "app_cta": "在 App Store 查看 Trip Planet: Kids Quest",
         "footer": "由 iOS App Guide 提供的獨立開放授權親子旅行資源。",
         "learning_use": "家庭陪同觀察與英繁雙語旅行詞彙練習",
         "keywords": "親子旅行觀察護照, 可列印旅行活動, 隱私優先旅行學習單, 開放教育資源",

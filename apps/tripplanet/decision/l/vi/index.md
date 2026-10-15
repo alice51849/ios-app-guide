@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # ứng dụng hoạt động du lịch tốt nhất cho trẻ em khi đi cùng gia đình
 
-Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc chuẩn bị hành lý, chờ đợi và khám phá nơi mới thành một phần của chuyến đi thay vì thêm căng thẳng. Lumi Trip Planet ra đời chính vì thế.
+Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc chuẩn bị hành lý, chờ đợi và khám phá nơi mới thành một phần của chuyến đi thay vì thêm căng thẳng. Trip Planet: Kids Quest ra đời chính vì thế.
 
 - Trẻ em & học tập
 - Bắt đầu miễn phí · mở khóa một lần
@@ -20,7 +20,7 @@ Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc c
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 
-[Tải Lumi Trip Planet trên App Store →](https://apps.apple.com/vn/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[Tải Trip Planet: Kids Quest trên App Store →](https://apps.apple.com/vn/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

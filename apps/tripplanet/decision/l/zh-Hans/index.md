@@ -12,7 +12,7 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 
 # 适合家庭出行儿童的最佳旅行活动App
 
-带幼儿旅行的家长需要能将收拾、等待和探索新地点变成冒险的一部分，而不是新的压力来源。所以才有了 Lumi Trip Planet。
+带幼儿旅行的家长需要能将收拾、等待和探索新地点变成冒险的一部分，而不是新的压力来源。所以才有了 Trip Planet: Kids Quest。
 
 - 儿童与学习
 - 免费开始使用 · 一次性解锁

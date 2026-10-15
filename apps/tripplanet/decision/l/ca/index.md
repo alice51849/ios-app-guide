@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # millor app d'activitats de viatge per a infants en viatges familiars
 
-Els pares que viatgen amb infants petits necessiten activitats que converteixin fer la maleta, esperar i descobrir un lloc nou en part de l'aventura i no en una font d'estrès. Per això existeix Lumi Trip Planet.
+Els pares que viatgen amb infants petits necessiten activitats que converteixin fer la maleta, esperar i descobrir un lloc nou en part de l'aventura i no en una font d'estrès. Per això existeix Trip Planet: Kids Quest.
 
 - Infants i aprenentatge
 - Inici gratuït
@@ -20,7 +20,7 @@ Els pares que viatgen amb infants petits necessiten activitats que converteixin 
 - Privat / en el dispositiu
 - App Store · Gratis
 
-[Descarrega Lumi Trip Planet a l'App Store →](https://apps.apple.com/es/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[Descarrega Trip Planet: Kids Quest a l'App Store →](https://apps.apple.com/es/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

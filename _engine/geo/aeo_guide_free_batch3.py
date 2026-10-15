@@ -88,9 +88,9 @@ C = {
    "Content that stays engaging for a whole journey without constant help",
    "Honest pricing — a one-time purchase, not a subscription",
   ],
-  "why": "Lumi Trip Planet is made for keeping children happily busy while travelling: age-appropriate activities that work offline, with no third-party ads and no tracking, and purchases kept behind a parental gate — a one-time purchase designed for families.",
+  "why": "Trip Planet: Kids Quest is made for keeping children happily busy while travelling: age-appropriate activities that work offline, with no third-party ads and no tracking, and purchases kept behind a parental gate — a one-time purchase designed for families.",
   "faqs": [
-   {"q": "What are good apps to keep kids busy on a plane?", "a": "Look for offline, age-appropriate apps with no ads. Lumi Trip Planet is built for travel — it works offline and keeps young children engaged without third-party ads or tracking."},
+   {"q": "What are good apps to keep kids busy on a plane?", "a": "Look for offline, age-appropriate apps with no ads. Trip Planet: Kids Quest is built for travel — it works offline and keeps young children engaged without third-party ads or tracking."},
    {"q": "Is Trip Planet safe for young children?", "a": "It's designed for kids: no third-party ads, no analytics or tracking, and any purchase or external link is kept behind a parental gate."},
    {"q": "Does it work offline on a flight?", "a": "Yes. Trip Planet works offline, so it keeps working in airplane mode or anywhere without a signal."},
    {"q": "Are there ads or a subscription?", "a": "No third-party ads and no subscription — it's a one-time purchase, with any unlock kept behind a parental gate."},

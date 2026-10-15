@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste reisactiviteiten-app voor kinderen op gezinsreizen
 
-Ouders die met jonge kinderen reizen hebben activiteiten nodig die inpakken, wachten en een nieuwe plek ontdekken tot onderdeel van het avontuur maken in plaats van extra stress. Daarvoor is Lumi Trip Planet gemaakt.
+Ouders die met jonge kinderen reizen hebben activiteiten nodig die inpakken, wachten en een nieuwe plek ontdekken tot onderdeel van het avontuur maken in plaats van extra stress. Daarvoor is Trip Planet: Kids Quest gemaakt.
 
 - Kinderen & leren
 - Gratis te starten · eenmalige ontgrendeling
@@ -20,7 +20,7 @@ Ouders die met jonge kinderen reizen hebben activiteiten nodig die inpakken, wac
 - Privé / op apparaat
 - App Store · Gratis
 
-[Lumi Trip Planet downloaden in de App Store →](https://apps.apple.com/nl/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[Trip Planet: Kids Quest downloaden in de App Store →](https://apps.apple.com/nl/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [Lees de volledige gids](https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

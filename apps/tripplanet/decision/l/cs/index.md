@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # nejlepší cestovní aktivní aplikace pro děti na rodinné výlety
 
-Rodiče cestující s malými dětmi potřebují aktivity, které promění balení, čekání i objevování nového místa v součást dobrodružství, ne další zdroj stresu. Právě proto Lumi Trip Planet vznikl.
+Rodiče cestující s malými dětmi potřebují aktivity, které promění balení, čekání i objevování nového místa v součást dobrodružství, ne další zdroj stresu. Právě proto Trip Planet: Kids Quest vznikl.
 
 - Děti a učení
 - Zdarma na začátek
@@ -20,7 +20,7 @@ Rodiče cestující s malými dětmi potřebují aktivity, které promění bale
 - Soukromé / v zařízení
 - App Store · Zdarma
 
-[Stáhněte si Lumi Trip Planet v App Store →](https://apps.apple.com/cz/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[Stáhněte si Trip Planet: Kids Quest v App Store →](https://apps.apple.com/cz/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

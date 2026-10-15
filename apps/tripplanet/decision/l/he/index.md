@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # אפליקציית פעילויות נסיעה לילדים בטיולי משפחה
 
-הורים מטיילים עם ילדים צעירים צריכים פעילויות שהופכות אריזה, המתנה וגילוי מקום חדש לחלק מההרפתקה ולא לעוד מקור לחץ. בשביל זה Lumi Trip Planet נבנה.
+הורים מטיילים עם ילדים צעירים צריכים פעילויות שהופכות אריזה, המתנה וגילוי מקום חדש לחלק מההרפתקה ולא לעוד מקור לחץ. בשביל זה Trip Planet: Kids Quest נבנה.
 
 - ילדים ולמידה
 - התחלה ללא תשלום
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - פרטי / במכשיר
 - App Store · בחינם
 
-[קבל את Lumi Trip Planet ב-App Store →](https://apps.apple.com/il/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[קבל את Trip Planet: Kids Quest ב-App Store →](https://apps.apple.com/il/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [קרא את המדריך המלא](https://open.cait518.cc/ios-app-guide/he/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

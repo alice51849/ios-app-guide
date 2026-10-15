@@ -26,7 +26,7 @@ SITE = os.environ.get(
 SLUG = "family-travel-mission-card-generator"
 APP_KEY = "tripplanet"
 APP_ID = "6787193643"
-APP_NAME = "Lumi Trip Planet: World Travel"
+APP_NAME = "Trip Planet: Kids Quest"
 TOOL_DATE = "2026-07-15"
 WEBMCP_SOURCE = "https://developer.chrome.com/docs/ai/webmcp/imperative-api"
 LICENSE = "https://creativecommons.org/licenses/by/4.0/"
@@ -613,12 +613,12 @@ COPY = {
         ),
         "app_title": "Optional reusable digital layer",
         "app_text": (
-            "Lumi Trip Planet lets a parent create reusable travel missions, choose a "
+            "Trip Planet: Kids Quest lets a parent create reusable travel missions, choose a "
             "target count and set an optional family reward. Check the current App Store "
             "listing for availability and exact features; the free cards above work "
             "without the app."
         ),
-        "app_cta": "View Lumi Trip Planet on the App Store",
+        "app_cta": "View Trip Planet: Kids Quest on the App Store",
         "faq": "Questions families ask",
         "faq_items": (
             (
@@ -763,11 +763,11 @@ COPY = {
         ),
         "app_title": "選用的可重複數位層",
         "app_text": (
-            "Lumi Trip Planet 讓家長建立可重複使用的旅行任務、選擇目標數量，"
+            "Trip Planet: Kids Quest 讓家長建立可重複使用的旅行任務、選擇目標數量，"
             "並設定選用家庭獎勵。請以目前 App Store 頁面確認供應地區與確切功能；"
             "上方免費卡片不需要 App 也能完整使用。"
         ),
-        "app_cta": "在 App Store 查看 Lumi Trip Planet",
+        "app_cta": "在 App Store 查看 Trip Planet: Kids Quest",
         "faq": "家庭常見問題",
         "faq_items": (
             (

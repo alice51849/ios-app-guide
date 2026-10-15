@@ -1663,72 +1663,6 @@
     {
       "@type": "ListItem",
       "position": 26,
-      "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripplanet",
-        "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Trip Planet",
-        "description": "어린 자녀와 여행하는 부모에게는 짐 싸기와 기다리는 시간, 낯선 장소 탐험까지 모험의 일부로 만들어 주는 활동이 필요합니다. 또 하나의 스트레스가 되어서는 곤란합니다. 그래서 만든 것이 Lumi Trip Planet입니다.",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6787193643",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6787193643"
-          },
-          "name": "Lumi Trip Planet",
-          "operatingSystem": "iOS",
-          "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6787193643",
-          "inLanguage": "ko",
-          "description": "어린 자녀와 여행하는 부모에게는 짐 싸기와 기다리는 시간, 낯선 장소 탐험까지 모험의 일부로 만들어 주는 활동이 필요합니다. 또 하나의 스트레스가 되어서는 곤란합니다. 그래서 만든 것이 Lumi Trip Planet입니다.",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripplanet"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": true
-        },
-        "price": "0",
-        "priceCurrency": "KRW",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "KR"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 27,
       "url": "https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1794,7 +1728,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 27,
       "url": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1794,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 28,
       "url": "https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1926,7 +1860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 29,
       "url": "https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1992,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 30,
       "url": "https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2058,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 31,
       "url": "https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2124,7 +2058,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 32,
       "url": "https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2190,7 +2124,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 33,
       "url": "https://apps.apple.com/kr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2256,7 +2190,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 34,
       "url": "https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2322,7 +2256,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 35,
       "url": "https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2388,7 +2322,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 36,
       "url": "https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2454,7 +2388,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 37,
       "url": "https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2520,7 +2454,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 38,
       "url": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2586,7 +2520,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 39,
       "url": "https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2652,7 +2586,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 40,
       "url": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2718,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 41,
       "url": "https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2784,7 +2718,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 42,
       "url": "https://apps.apple.com/kr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2824,6 +2758,72 @@
           "description": "휴대폰을 뒤집고, 소중한 일에 시간을 써 보세요. Studydown은 업무 프로젝트부터 독서, 외국어 연습, 취미까지 활동별로 들인 시간을 기록합니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-studydown"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "KRW",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "KR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
+      "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripplanet",
+        "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Trip Planet: Kids Quest",
+        "description": "어린 자녀와 여행하는 부모에게는 짐 싸기와 기다리는 시간, 낯선 장소 탐험까지 모험의 일부로 만들어 주는 활동이 필요합니다. 또 하나의 스트레스가 되어서는 곤란합니다. 그래서 만든 것이 Trip Planet: Kids Quest입니다.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6787193643",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6787193643"
+          },
+          "name": "Trip Planet: Kids Quest",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6787193643",
+          "inLanguage": "ko",
+          "description": "어린 자녀와 여행하는 부모에게는 짐 싸기와 기다리는 시간, 낯선 장소 탐험까지 모험의 일부로 만들어 주는 활동이 필요합니다. 또 하나의 스트레스가 되어서는 곤란합니다. 그래서 만든 것이 Trip Planet: Kids Quest입니다.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripplanet"
           },
           "additionalProperty": [
             {

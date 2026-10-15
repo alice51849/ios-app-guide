@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # أفضل تطبيق أنشطة سفر للأطفال في الرحلات العائلية
 
-الآباء المسافرون مع أطفال صغار يحتاجون أنشطة تحول التجهيز، الانتظار واكتشاف مكان جديد إلى جزء من المغامرة بدلاً من مصدر ضغط إضافي. لهذا وُجد Lumi Trip Planet.
+الآباء المسافرون مع أطفال صغار يحتاجون أنشطة تحول التجهيز، الانتظار واكتشاف مكان جديد إلى جزء من المغامرة بدلاً من مصدر ضغط إضافي. لهذا وُجد Trip Planet: Kids Quest.
 
 - الأطفال والتعلم
 - بدء مجاني · فتح مرة واحدة
@@ -20,7 +20,7 @@ publisher: "Lumi Studio"
 - خاص / على الجهاز
 - App Store · مجاني
 
-[احصل على Lumi Trip Planet من App Store →](https://apps.apple.com/sa/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[احصل على Trip Planet: Kids Quest من App Store →](https://apps.apple.com/sa/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

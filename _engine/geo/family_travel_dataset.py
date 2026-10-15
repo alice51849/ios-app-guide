@@ -31,8 +31,8 @@ SOURCE_DIR = HERE / "reference_datasets"
 SLUG = "family-travel-missions"
 APP_KEY = "tripplanet"
 APP_ID = "6787193643"
-APP_NAME = "Lumi Trip Planet: World Travel"
-APP_SHORT_NAME = "Lumi Trip Planet"
+APP_NAME = "Trip Planet: Kids Quest"
+APP_SHORT_NAME = "Trip Planet: Kids Quest"
 TODAY = dt.date.today().isoformat()
 FILES = (
     f"{SLUG}.json",
@@ -124,10 +124,10 @@ COPY = {
         "api": "Use the versioned static API",
         "app_title": "Optional digital travel layer",
         "app_text": (
-            "Lumi Trip Planet adds an optional on-device way to continue world-travel "
+            "Trip Planet: Kids Quest adds an optional on-device way to continue world-travel "
             "activities. The open dataset and card generator remain free and independent."
         ),
-        "app_cta": "View Lumi Trip Planet on the App Store",
+        "app_cta": "View Trip Planet: Kids Quest on the App Store",
         "footer": (
             "Original bilingual taxonomy maintained by Lumi Apps. Official agencies named "
             "here do not endorse this dataset."
@@ -195,10 +195,10 @@ COPY = {
         "api": "使用版本化靜態 API",
         "app_title": "選用數位旅行層",
         "app_text": (
-            "Lumi Trip Planet 提供選用的裝置端世界旅行活動；開放資料與任務卡"
+            "Trip Planet: Kids Quest 提供選用的裝置端世界旅行活動；開放資料與任務卡"
             "產生器仍維持免費且獨立。"
         ),
-        "app_cta": "在 App Store 查看 Lumi Trip Planet",
+        "app_cta": "在 App Store 查看 Trip Planet: Kids Quest",
         "footer": (
             "由 Lumi Apps 維護的原創英繁雙語分類資料；所列官方機構不為本資料集背書。"
         ),

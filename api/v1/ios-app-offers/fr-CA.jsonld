@@ -1729,72 +1729,6 @@
     {
       "@type": "ListItem",
       "position": 27,
-      "url": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-tripplanet",
-        "url": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Trip Planet",
-        "description": "Les parents qui voyagent avec de jeunes enfants ont besoin d’activités qui transforment le bagage, l’attente et la découverte d’un nouvel endroit en partie de l’aventure plutôt qu’une source de stress. C'est pour ça que Lumi Trip Planet existe.",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6787193643",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6787193643"
-          },
-          "name": "Lumi Trip Planet",
-          "operatingSystem": "iOS",
-          "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6787193643",
-          "inLanguage": "fr-CA",
-          "description": "Les parents qui voyagent avec de jeunes enfants ont besoin d’activités qui transforment le bagage, l’attente et la découverte d’un nouvel endroit en partie de l’aventure plutôt qu’une source de stress. C'est pour ça que Lumi Trip Planet existe.",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-tripplanet"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": true
-        },
-        "price": "0",
-        "priceCurrency": "CAD",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "CA"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 28,
       "url": "https://apps.apple.com/ca/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1794,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 28,
       "url": "https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1926,7 +1860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 29,
       "url": "https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1992,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 30,
       "url": "https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2058,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 31,
       "url": "https://apps.apple.com/ca/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2124,7 +2058,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 32,
       "url": "https://apps.apple.com/ca/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2190,7 +2124,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 33,
       "url": "https://apps.apple.com/ca/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2256,7 +2190,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 34,
       "url": "https://apps.apple.com/ca/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2322,7 +2256,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 35,
       "url": "https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2388,7 +2322,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 36,
       "url": "https://apps.apple.com/ca/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2454,7 +2388,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 37,
       "url": "https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2520,7 +2454,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 38,
       "url": "https://apps.apple.com/ca/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2586,7 +2520,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 39,
       "url": "https://apps.apple.com/ca/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2652,7 +2586,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 40,
       "url": "https://apps.apple.com/ca/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2718,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 41,
       "url": "https://apps.apple.com/ca/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2784,7 +2718,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 42,
       "url": "https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2850,7 +2784,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 43,
       "url": "https://apps.apple.com/ca/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2890,6 +2824,72 @@
           "description": "Faites de la place à ce qui compte pour vous. Studydown garde une trace du temps consacré à un projet, à la lecture ou à une nouvelle habileté",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-studydown"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "url": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-tripplanet",
+        "url": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Trip Planet: Kids Quest",
+        "description": "Les parents qui voyagent avec de jeunes enfants ont besoin d’activités qui transforment le bagage, l’attente et la découverte d’un nouvel endroit en partie de l’aventure plutôt qu’une source de stress. C'est pour ça que Trip Planet: Kids Quest existe.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6787193643",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6787193643"
+          },
+          "name": "Trip Planet: Kids Quest",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6787193643",
+          "inLanguage": "fr-CA",
+          "description": "Les parents qui voyagent avec de jeunes enfants ont besoin d’activités qui transforment le bagage, l’attente et la découverte d’un nouvel endroit en partie de l’aventure plutôt qu’une source de stress. C'est pour ça que Trip Planet: Kids Quest existe.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-tripplanet"
           },
           "additionalProperty": [
             {

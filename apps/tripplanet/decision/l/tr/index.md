@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # Aile gezilerinde çocuklar için en iyi seyahat aktivite uygulaması
 
-Genç çocuklarla seyahat eden ebeveynler, paketleme, bekleme ve yeni bir yeri keşfetmeyi maceranın parçası yapan aktivitelere ihtiyaç duyar; aksi halde bu süreç bir stres kaynağına dönüşür. İşte Lumi Trip Planet bu yüzden ortaya çıktı.
+Genç çocuklarla seyahat eden ebeveynler, paketleme, bekleme ve yeni bir yeri keşfetmeyi maceranın parçası yapan aktivitelere ihtiyaç duyar; aksi halde bu süreç bir stres kaynağına dönüşür. İşte Trip Planet: Kids Quest bu yüzden ortaya çıktı.
 
 - Çocuklar & öğrenme
 - Başlangıçta ücretsiz · tek seferlik açma
@@ -20,7 +20,7 @@ Genç çocuklarla seyahat eden ebeveynler, paketleme, bekleme ve yeni bir yeri k
 - Gizli / cihazda
 - App Store · Ücretsiz
 
-[Lumi Trip Planet’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[Trip Planet: Kids Quest’i App Store’dan edinin →](https://apps.apple.com/tr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

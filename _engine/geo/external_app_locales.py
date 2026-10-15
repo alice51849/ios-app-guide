@@ -272,10 +272,10 @@ EXTERNAL_APP_LOCALES = {
     },
     "tripplanet": {
         "en-US": {
-            "name": "Lumi Trip Planet",
+            "name": "Trip Planet: Kids Quest",
             "subtitle": "Offline travel games and packing fun for ages 4-10",
             "description": (
-                "Lumi Trip Planet turns waiting at the airport, long drives, and "
+                "Trip Planet: Kids Quest turns waiting at the airport, long drives, and "
                 "quiet hotel time into a playful travel adventure for children "
                 "ages 4 to 10.\n\n"
                 "Kid-friendly games, packing activities, and discovery prompts "
@@ -293,11 +293,11 @@ EXTERNAL_APP_LOCALES = {
             ),
         },
         "zh-Hant": {
-            "name": "Lumi 旅行星球",
+            "name": "Trip Planet 親子旅行遊戲",
             "subtitle": "4-10 歲孩子的離線旅行遊戲與行李任務",
             "description": (
                 "候機、長途車程與飯店空檔，常是親子旅行最容易疲累的時刻。"
-                "Lumi 旅行星球把這些等待時間變成 4-10 歲孩子也能參與的"
+                "Trip Planet 親子旅行遊戲把這些等待時間變成 4-10 歲孩子也能參與的"
                 "旅行冒險。\n\n"
                 "適齡小遊戲、行李任務與沿途探索提示，讓孩子不只是問還要"
                 "多久，而是真的加入旅程。內容可離線使用，在飛機、火車或"
@@ -311,10 +311,10 @@ EXTERNAL_APP_LOCALES = {
             ),
         },
         "sk": {
-            "name": "Lumi Trip Planet",
+            "name": "Trip Planet pre deti",
             "subtitle": "Offline cestovateľské hry a balenie pre deti od 4 do 10 rokov",
             "description": (
-                "Lumi Trip Planet mení čakanie na letisku, dlhé jazdy autom aj "
+                "Trip Planet: Kids Quest mení čakanie na letisku, dlhé jazdy autom aj "
                 "pokojné chvíle v hoteli na hravé cestovateľské dobrodružstvo pre "
                 "deti vo veku od 4 do 10 rokov.\n\n"
                 "Detské hry, aktivity na balenie a objaviteľské úlohy pomáhajú "

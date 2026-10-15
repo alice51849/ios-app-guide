@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # beste reiseaktivitetsapp for barn på familietur
 
-Foreldre som reiser med små barn trenger aktiviteter som gjør pakking, venting og oppdagelse av et nytt sted til en del av eventyret i stedet for enda en kilde til stress. Det er derfor Lumi Trip Planet finnes.
+Foreldre som reiser med små barn trenger aktiviteter som gjør pakking, venting og oppdagelse av et nytt sted til en del av eventyret i stedet for enda en kilde til stress. Det er derfor Trip Planet: Kids Quest finnes.
 
 - Barn og læring
 - Gratis å starte
@@ -20,7 +20,7 @@ Foreldre som reiser med små barn trenger aktiviteter som gjør pakking, venting
 - Privat / på enheten
 - App Store · Gratis
 
-[Få Lumi Trip Planet på App Store →](https://apps.apple.com/no/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+[Få Trip Planet: Kids Quest på App Store →](https://apps.apple.com/no/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
 
 [Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/answers/best-travel-activity-app-for-kids-on-family-trips.html)
 

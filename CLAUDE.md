@@ -1,0 +1,33 @@
+# 工作規則（CLAUDE.md）
+
+## 溝通
+- 一律用繁體中文回覆。
+- 已完成或在等審核的項目不用回報，只回報還沒完成的部分，並標上完成百分比。
+- 需要我手動做的步驟，要寫得最詳細，詳細到我不用動腦就能照著做。
+- 需要我轉告本機（Mac）session 的內容，直接寫成一段讓我複製貼上。
+- 你覺得怎樣做比較好就直接做，我的目標是所有進度都達到 100%。全速前進，用最快的方式完成，可以平行開多個 worker。
+
+## 範圍
+- 只做外宣，不改 App，也不提議修改 App 或價格。
+- 絕對不做任何要付費的東西，也不要提議。
+- 不改既有 App 在 App Store Connect 的商店文字、價格、截圖、promotionalText。GrowthEngine 裡的資料必須和線上商店文案一致。
+- 社群發文要安全，但不要太保守。Threads 每天最多 3 則；不自動回覆陌生人。
+- Mastodon 帳號被鎖，只能申訴，不能發文。
+- 影片裡的 App 畫面必須是真實螢幕錄影（App Store 審核規則 2.3.3），畫面完整解鎖，不能出現價格／Free／Pro 字樣，也不能有假狀態列。
+
+## 安全與流程
+- 不 force-push、不改寫歷史；沒經過審核不開 PR、不 merge。
+- commit 訊息、PR、程式碼註解裡不寫 AI 模型名稱。
+- 只 commit 自己改的檔案，不要把其他 worker 還沒 commit 的檔案一起 stage。
+- 刪除檔案前，要先由另一個不同的模型複審；我明確說「不需要審核」時例外。
+- 不跳過、不停用、不刪除測試。只有在我同意移除某項內容時，專屬於那項內容的測試可以一起刪。
+- 不修改 lib/asc_write_authorization.py；權限被拒時不要想辦法繞過。worker 被拒絕的動作，不能改由主 session 代做。
+- 密鑰（密碼、token）只放在本機 Mac，雲端不讀、不存、不顯示。
+- 00_GrowthEngine 的 geo/ 是正本，ios-app-guide 的 _engine/geo 是它的逐 byte 鏡像，兩邊要同一次一起改。
+- 互推設定（support_network/crosspromo_config.json）的清單和 geo/answer_personas.py 的 PENDING_PERSONAS 必須在同一個 commit 一起改，否則互推網會 fail-closed 停擺。
+- threads-autopilot 的 PUBLISHER_REVIEWED_SOURCE_DIGEST 要先經另一個模型複審，才能重新釘選。
+- AgentOffice（~/AgentOffice）和 ~/.growth-runtime 只在本機 Mac 上；要改這兩個地方，寫成一段文字讓我貼給本機 session。
+
+## 已放棄或已移除，不要再做
+- Lensafe（第 58 款）：業主已放棄，停止所有相關工作。
+- Arquivo 存檔工作：已移除，不要再加回來。

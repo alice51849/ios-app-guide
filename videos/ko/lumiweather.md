@@ -1,8 +1,8 @@
 ---
-title: "부모가 아이와 야외 시간을 계획할 때 도움이 되는 최고의 날씨 앱"
+title: "루미 날씨: 외출 지수와 옷차림 — 우산·자외선·시간별 주간 예보 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/ko/lumiweather.html"
-modified: "2026-09-16"
+modified: "2026-10-15"
 video_url: "https://files.catbox.moe/fu7uq6.mp4"
 duration: "PT16S"
 app_store_id: "6779552704"
@@ -10,14 +10,14 @@ verified_live: true
 publisher: "Lumi Studio"
 ---
 
-# 부모가 아이와 야외 시간을 계획할 때 도움이 되는 최고의 날씨 앱
+# 루미 날씨: 외출 지수와 옷차림 — 우산·자외선·시간별 주간 예보 | iOS App
 
-야외 시간을 계획하는 부모는 온도만으로는 부족합니다: 아이에게 적합한 조건인지, 어떤 옷이 필요한지 빠르고 연령별로 확인해야 합니다. 그래서 만든 것이 Lumi Weather입니다.
+지금 나가기 좋은지, 무엇을 입어야 할지, 우산이나 선크림이 필요한지 한눈에 알려주는 날씨 앱입니다.
 
 [영상 보기](https://files.catbox.moe/fu7uq6.mp4)
 
-[App Store에서 Lumi Weather 받기 →](https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=iag_video_ko&mt=8)
+[App Store에서 루미 날씨: 외출 지수와 옷차림 받기](https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=iag_video_ko&mt=8)
 
-[앱 가이드 열기](https://open.cait518.cc/ios-app-guide/ko/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
+[앱 가이드 열기](https://open.cait518.cc/ios-app-guide/ko/lumiweather.html)
 
-> 앱 개발자인 Lumi Studio에서 직접 작성한 가이드입니다. 앱 이름은 해당 소유자의 상표이며 식별 목적으로만 사용됩니다. 문서, 건강, 학교 및 생산성과 관련된 결정을 내릴 때는 필요에 따라 관련 기관의 공식 요건을 확인하시기 바랍니다.
+> 이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.

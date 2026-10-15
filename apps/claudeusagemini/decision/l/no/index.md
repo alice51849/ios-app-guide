@@ -2,7 +2,7 @@
 title: "UsageNow: AI-forbruk tracker — Claude, Codex, Copilot grenser | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/no/index.html"
-modified: "2026-10-13"
+modified: "2026-10-15"
 app_store_id: "6818607603"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

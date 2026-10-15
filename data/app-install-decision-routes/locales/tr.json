@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "tr",
-  "dateModified": "2026-10-13",
-  "content_digest": "749c46f4e9a5e32aa853a11bd1bc563bc178aaa9e2d6090d21f75a2f2ddef11b",
-  "generation_digest": "9eceb86a45de2118710b286b161af324221deb633f9b5af8d127e5c1d9da302d",
+  "dateModified": "2026-10-15",
+  "content_digest": "fd5f3d83bed26194cc64f6ec4a5d709429c9d140da3d2bd9b68197f19a3d3877",
+  "generation_digest": "29f357f04e5c36afed609d3c4b6aa88f69f5f9414e1cef723cbf8df77e640d66",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -1304,6 +1304,70 @@
       "verified_live": true
     },
     {
+      "record_id": "tr:lumiweather",
+      "locale": "tr",
+      "app_key": "lumiweather",
+      "app_name": "Lumi Hava: Hava Durumu Tahmini",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Lumi Hava: Hava Durumu Tahmini — Dışarı çıkılır mı? Yağış ve UV | iOS App",
+      "decision_context": "Lumi Hava, bugün dışarı çıkmak için iyi bir gün olup olmadığını bir saniyede gösterir: 0 ile 100 arasında bir gezinti puanı ve yürürken bile okuyabileceğiniz kısa bir değerlendirme. Puan, kapıdan adımınızı attığınız anda hissettiklerinizi bir araya getirir: hissedilen sıcaklık, yağış olasılığı, UV ışınımı ve rüzgar. Sayıya dokunun, her etkenin sonuca nasıl yansıdığını görün. Lumi ayrıca ne giymeniz gerektiğini önerir, şemsiye ya da güneş kremi almanızı hatırlatır, birkaç dakika içinde yağış başlayacaksa, dakikalık verinin olduğu yerlerde sizi uyarır ve günün hangi saatlerinde dışarının en keyifli olduğunu gösterir. İleriyi planlamak için saatlik tahmin, sıcaklık eğrisi ve önümüzdeki 7 gün hazır. Sık baktığınız yerleri, örneğin evi, işi ya da yazlığı kaydedin ve aralarında tek dokunuşla geçiş yapın. Widget'ı Ana Ekran'a veya Kilitli Ekran'a ekleyin, havayı doğrudan Apple Watch'ta görün ve günlük bir hatırlatıcı kurun; böylece günün puanı evden çıkmadan önce karşınızda olsun. Lumi Hava sabah işe giderken de, koşuya çıkarken, köpeği gezdirirken, bisiklet turunda, plaj gününde ya da arkadaşlarınızla veya ailenizle hafta sonu kaçamağında da işinize yarar. Sevimli Lumi karakteri ve hava sahneleri gökyüzüyle birlikte değişir. Lumi güneş şapkasını takar, şemsiyenin altına saklanır ya da atkısına sarınır; böylece tahmin kolayca anlaşılır. Gizliliğiniz sizde kalır. Hesap yok, reklam yok, üçüncü taraf analiz yok. Yerler ve ayarlar cihazınızda saklanır, konumunuz yalnızca hava durumunu almak için kullanılır. Bugün ekranı ve gezinti puanı hemen çalışır. Uygulama içi tek seferlik kilit açma ile her şeye erişirsiniz: saatlik ve 7 günlük tahmin, dışarı çıkmak için uygun zaman, çıkış öncesi kontrol listesi, birden fazla yer ve widget. Abonelik yok. Hava durumu verileri Apple WeatherKit tarafından sağlanır. Tahminler yalnızca bilgi amaçlıdır; dışarı çıkmadan önce koşulları her zaman kendiniz de kontrol edin.",
+      "category": "kids",
+      "category_label": "Çocuklar & öğrenme",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Başlangıçta ücretsiz · tek seferlik açma",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Hesap yok",
+        "Reklam yok",
+        "Takip yok",
+        "Gizli / cihazda"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "Araç takımı"
+      ],
+      "badge_labels": [
+        "Çocuklar & öğrenme",
+        "Başlangıçta ücretsiz · tek seferlik açma",
+        "Hesap yok",
+        "Reklam yok",
+        "Takip yok",
+        "Gizli / cihazda",
+        "Araç takımı",
+        "App Store · Ücretsiz"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/lumiweather.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/tr/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/tr/lumiweather.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Flumiweather%2Fdecision%2Fl%2Ftr%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/tr.json",
+      "app_store_id": "6779552704",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
+      "app_store_url": "https://apps.apple.com/tr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Lumi Hava: Hava Durumu Tahmini uygulamasını App Store'dan al",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TRY",
+        "formatted_price": "Ücretsiz"
+      },
+      "guide_cta_label": "Kılavuzun tamamını oku",
+      "publisher_disclosure": "Bu, listelenen her uygulamanın geliştiricisi Lumi Studio tarafından yayımlanan birinci taraf materyaldir.",
+      "source_persona_query": "weather app to help me plan when to go outside",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "tr:lumiletters",
       "locale": "tr",
       "app_key": "lumiletters",
@@ -1627,126 +1691,6 @@
       "guide_cta_label": "Kılavuzun tamamını oku",
       "publisher_disclosure": "Uygulamanın geliştiricisi Lumi Studio tarafından hazırlanan rehber. Uygulama adları ilgili sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılır. Belgeler, sağlık, okul ve verimlilikle ilgili kararlarda, geçerli olduğu yerlerde resmi gereklilikleri doğrulayın.",
       "source_persona_query": "best complete morning and bedtime routine app for kids",
-      "source_surface": "answer_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
-      "record_id": "tr:tripplanet",
-      "locale": "tr",
-      "app_key": "tripplanet",
-      "app_name": "Trip Planet: Kids Quest",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "Aile gezilerinde çocuklar için en iyi seyahat aktivite uygulaması",
-      "decision_context": "Genç çocuklarla seyahat eden ebeveynler, paketleme, bekleme ve yeni bir yeri keşfetmeyi maceranın parçası yapan aktivitelere ihtiyaç duyar; aksi halde bu süreç bir stres kaynağına dönüşür. İşte Trip Planet: Kids Quest bu yüzden ortaya çıktı.",
-      "category": "kids",
-      "category_label": "Çocuklar & öğrenme",
-      "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Başlangıçta ücretsiz · tek seferlik açma",
-      "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_ads",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Çevrimdışı",
-        "Reklam yok",
-        "Gizli / cihazda"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "Çocuklar & öğrenme",
-        "Başlangıçta ücretsiz · tek seferlik açma",
-        "Çevrimdışı",
-        "Reklam yok",
-        "Gizli / cihazda",
-        "App Store · Ücretsiz"
-      ],
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/answers/best-travel-activity-app-for-kids-on-family-trips.html",
-      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/tr/index.html",
-      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/tr/tripplanet.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Ftripplanet%2Fdecision%2Fl%2Ftr%2Findex.html&format=json",
-      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/tr.json",
-      "app_store_id": "6787193643",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/tr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "Trip Planet: Kids Quest’i App Store’dan edinin →",
-      "storefront_facts": {
-        "price": "0",
-        "currency": "TRY",
-        "formatted_price": "Ücretsiz"
-      },
-      "guide_cta_label": "Kılavuzun tamamını oku",
-      "publisher_disclosure": "Uygulamanın geliştiricisi Lumi Studio tarafından hazırlanan rehber. Uygulama adları ilgili sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılır. Belgeler, sağlık, okul ve verimlilikle ilgili kararlarda, geçerli olduğu yerlerde resmi gereklilikleri doğrulayın.",
-      "source_persona_query": "best travel activity app for kids on family trips",
-      "source_surface": "answer_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
-      "record_id": "tr:lumiweather",
-      "locale": "tr",
-      "app_key": "lumiweather",
-      "app_name": "Lumi Weather",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "Ebeveynlerin çocuklarla dışarıda zaman planlamasına yardımcı en iyi hava durumu uygulaması",
-      "decision_context": "Dışarıda zaman planlayan ebeveynler sadece sıcaklık değil; çocuğa uygun koşullar ve hangi kıyafetin mantıklı olduğuna dair hızlı, yaşa uygun bir bakış ister. İşte Lumi Weather bu yüzden ortaya çıktı.",
-      "category": "kids",
-      "category_label": "Çocuklar & öğrenme",
-      "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Başlangıçta ücretsiz · tek seferlik açma",
-      "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Hesap yok",
-        "Reklam yok",
-        "Takip yok",
-        "Gizli / cihazda"
-      ],
-      "device_surfaces": [
-        "widget"
-      ],
-      "device_labels": [
-        "Araç takımı"
-      ],
-      "badge_labels": [
-        "Çocuklar & öğrenme",
-        "Başlangıçta ücretsiz · tek seferlik açma",
-        "Hesap yok",
-        "Reklam yok",
-        "Takip yok",
-        "Gizli / cihazda",
-        "Araç takımı",
-        "App Store · Ücretsiz"
-      ],
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
-      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/tr/index.html",
-      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/tr/lumiweather.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Flumiweather%2Fdecision%2Fl%2Ftr%2Findex.html&format=json",
-      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/tr.json",
-      "app_store_id": "6779552704",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/tr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "Lumi Weather’ı App Store’dan edinin →",
-      "storefront_facts": {
-        "price": "0",
-        "currency": "TRY",
-        "formatted_price": "Ücretsiz"
-      },
-      "guide_cta_label": "Kılavuzun tamamını oku",
-      "publisher_disclosure": "Uygulamanın geliştiricisi Lumi Studio tarafından hazırlanan rehber. Uygulama adları ilgili sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılır. Belgeler, sağlık, okul ve verimlilikle ilgili kararlarda, geçerli olduğu yerlerde resmi gereklilikleri doğrulayın.",
-      "source_persona_query": "best weather app to help parents plan outdoor time with kids",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -2661,6 +2605,62 @@
       "verified_live": true
     },
     {
+      "record_id": "tr:tripplanet",
+      "locale": "tr",
+      "app_key": "tripplanet",
+      "app_name": "Trip Planet: Kids Quest",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Aile gezilerinde çocuklar için en iyi seyahat aktivite uygulaması",
+      "decision_context": "Genç çocuklarla seyahat eden ebeveynler, paketleme, bekleme ve yeni bir yeri keşfetmeyi maceranın parçası yapan aktivitelere ihtiyaç duyar; aksi halde bu süreç bir stres kaynağına dönüşür. İşte Trip Planet: Kids Quest bu yüzden ortaya çıktı.",
+      "category": "kids",
+      "category_label": "Çocuklar & öğrenme",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Başlangıçta ücretsiz · tek seferlik açma",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Çevrimdışı",
+        "Reklam yok",
+        "Gizli / cihazda"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Çocuklar & öğrenme",
+        "Başlangıçta ücretsiz · tek seferlik açma",
+        "Çevrimdışı",
+        "Reklam yok",
+        "Gizli / cihazda",
+        "App Store · Ücretsiz"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/tr/answers/best-travel-activity-app-for-kids-on-family-trips.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/tr/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/tr/tripplanet.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Ftripplanet%2Fdecision%2Fl%2Ftr%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/tr.json",
+      "app_store_id": "6787193643",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
+      "app_store_url": "https://apps.apple.com/tr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Trip Planet: Kids Quest’i App Store’dan edinin →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TRY",
+        "formatted_price": "Ücretsiz"
+      },
+      "guide_cta_label": "Kılavuzun tamamını oku",
+      "publisher_disclosure": "Uygulamanın geliştiricisi Lumi Studio tarafından hazırlanan rehber. Uygulama adları ilgili sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılır. Belgeler, sağlık, okul ve verimlilikle ilgili kararlarda, geçerli olduğu yerlerde resmi gereklilikleri doğrulayın.",
+      "source_persona_query": "best travel activity app for kids on family trips",
+      "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "tr:tripbeelite",
       "locale": "tr",
       "app_key": "tripbeelite",
@@ -2954,8 +2954,8 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Wordmate Lite: Kelime Ezberle — Günde beş sözcük, bir dakika | iOS App",
       "decision_context": "Çoğu dil planı, daha ilk günden fazla büyük olduğu için ikinci haftada biter. Wordmate Lite tam tersinden başlar: bir dakika, beş kelime ve patikada görünen tek bir adım. Her oturum yalnızca beş kelimelik kısa bir patikadır. Dilini ve konunu seçersin, kelime kelime ilerlersin ve bitiş ekranı o oturumda öğrendiğin beş kelimeyi tam olarak gösterir. Kendin kurman gereken desteler yok, peşini bırakmayan uzun tekrar kuyruğu yok. Kimin için: büyük uygulamaları deneyip ikinci haftada bırakan yetişkinler ve küçük ama gerçekten kalıcı bir günlük alışkanlık isteyen herkes. İçinde ne var: öğrenmek için 44 dil; seyahat, iş, sınavlar, günlük hayat, restoran, alışveriş, sağlık, teknoloji, doğa ve iş görüşmesi gibi 14 yaşam konusu; başlangıçtan ileri düzeye üç seviye. Her kelimenin okunuşunu sistem seslerinden dinleyebilir, her dil için sesi kendin seçebilirsin. Önemli kelimeleri kaydedersin ve kayıtlı listen konuya ve seviyeye göre düzenli kalır. İlerlemen hep göz önünde: gün serin ve en iyi serin, bugün ve toplamda öğrendiğin kelime sayısı, her dil, konu ve ünite için ilerleme halkaları. Günlük hedefini 5, 10, 15 veya 20 kelime olarak ayarlayabilirsin. Görünüm cihazının açık ya da koyu ayarını izler; iPad tarafında neredeyse tam genişlikte tek sütun halinde açılır, dikey, yatay ve Split View kullanımına uyar. Gizlilik yalın: hesap yok, giriş yok, kişisel veri toplanmıyor, üçüncü taraf reklamı yok, analiz veya izleme aracı yok. Veriler cihazında kalır ve her şey çevrimdışı çalışır; uçakta, metroda, her yerde. Ücretsiz indirilir: bir dil, bir patika ve başlangıç seviyesinde ilk on kelime, üç kayıtlı kelimeyle birlikte. Geri kalan her şey kilit işaretiyle ya da gerçek bir önizlemeyle görünür kalır, böylece ilerideki içeriği net görürsün. Tek seferlik bir satın alma 44 dilin tamamını, 14 patikanın tamamını, tüm seviyeleri, sınırsız öğrenmeyi ve sınırsız kayıtlı kelimeyi açar. Ömür boyu, abonelik yok. Kullanım Koşulları (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
-      "category": "kids",
-      "category_label": "Çocuklar & öğrenme",
+      "category": "education",
+      "category_label": "Eğitim",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Başlangıçta ücretsiz · tek seferlik açma",
       "one_time_option": true,
@@ -2974,7 +2974,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Çocuklar & öğrenme",
+        "Eğitim",
         "Başlangıçta ücretsiz · tek seferlik açma",
         "Çevrimdışı",
         "Hesap yok",

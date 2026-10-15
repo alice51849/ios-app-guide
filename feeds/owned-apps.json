@@ -258,7 +258,7 @@
       "record_count": 53
     },
     "bn-BD": {
-      "date_modified": "2026-10-14T21:20:23Z",
+      "date_modified": "2026-10-15T10:23:58Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -268,7 +268,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "bn-BD/feed.xml",
-          "sha256": "6a3b04bb3b2737fb75098de506c03fe11c5ba561bace296203abf75d559b22e0",
+          "sha256": "6443cdd9a117ccee17d71ac07baf843af7393d0d4c7ccab562054f3f5c8463ef",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.xml"
         },
         "json_feed": {
@@ -278,7 +278,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "bn-BD/feed.json",
-          "sha256": "78143599f1cefc5824c9de9695d60c3f972b6ea8c0f8ab1e643766d533b1b7c2",
+          "sha256": "647a633b5d738f42dce735d63d6338ddb3908b694db5ef28ecf74fba28b96305",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.json"
         },
         "rss": {
@@ -289,7 +289,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "bn-BD/rss.xml",
-          "sha256": "dd003ed250c9c592e7733a625cf35373b96d492358235593f38fc165d0389f2a",
+          "sha256": "2f35e0f7b34850778702dc27924307d01ffeddff72a34a32550cc01e614b3a3a",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/rss.xml"
         }
       },
@@ -2218,7 +2218,7 @@
       "record_count": 53
     }
   },
-  "generation_digest": "1bb48a9da7e72781ba25d40d3d25d274784d275eccd36a3fe46973cbbce3b887",
+  "generation_digest": "533e8d02baa5e69238463c1318635798698fd2cb95ee6e9d88a12a358d6345f3",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2228,17 +2228,17 @@
   "record_count": 2650,
   "schema": "lumi.owned-app-feeds/v2",
   "site": "https://open.cait518.cc/ios-app-guide",
-  "sitemap_sha256": "dead2cf49f16b44c60e37657187aef4853a5ea8edb81f579113cf766e6a3d144",
+  "sitemap_sha256": "8003a391f64d75a5501009abe1b1505b69adcbad440365f53e197bf231287c75",
   "source": {
-    "catalog_content_digest": "f12cea2fe6f9db7d3a70a4acdca6e86c6b25b19bd78c512e9cbca0dacd9d4a8d",
+    "catalog_content_digest": "3a352913e6d67da9c93bebf1ba76ba493a87f919c2d1c7c57a6329841f6cf884",
     "roster_digest": "15b66ce58723f2f232a1fb7fabb382ec541c6c97925cbc351815601e8a3bde9d",
     "source_files": {
       "../social/videogen/registry.py": "ea304096297b2aa13ff03ebd513db2c60ec71ee4202acd5eb3bbceee58144a5f",
       "app_store_storefronts.py": "218e4c15034023bdc0c1481fed4d74d5f88e51380b761efca955e8a8810026d0",
-      "build_pages_i18n.py": "dd3c721f7db036e456d1aed7c2f959c1ba6210534b200efdfdb23996e1750cd9",
+      "build_pages_i18n.py": "91da5b56638390607d4170be342724186fff6afcb70656b43e2fa3f309a99e6c",
       "data/paid_upfront_surface_repairs.json": "b7f48683121484d0327ae24b9d70ced2c48920debde420218de05dfa20e6fa1c",
       "deployment_generation.py": "3f26aac0d6552845ed628713c60534f167cea6abcafd5eaee560150345f90a68",
-      "external_app_locales.py": "931182b43719e712ca3573f9b2ce22fb60cce34acc23909c5b63660624737f35",
+      "external_app_locales.py": "fb3999c0e2dcbfcec56890291c0bd232e9f448092270b7208a2663b4c0579f4c",
       "gen_publisher_disclosures.py": "0e5c124806e6d8e2e419561e63d82c9a1d8afb99eb8912fa5ca49ba4c8a90677",
       "gen_sitemap_lastmod.py": "73befdc396e607eb16ffee76930bd6df098580d4da153577c1a56d6952d206f5",
       "indexnow_submit.py": "7093732431554588484d89c90679931d340cb29dcc8ea5e87c8d76aa9fbd54ef",

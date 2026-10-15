@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ms",
-  "dateModified": "2026-10-13",
-  "content_digest": "749c46f4e9a5e32aa853a11bd1bc563bc178aaa9e2d6090d21f75a2f2ddef11b",
-  "generation_digest": "9eceb86a45de2118710b286b161af324221deb633f9b5af8d127e5c1d9da302d",
+  "dateModified": "2026-10-15",
+  "content_digest": "fd5f3d83bed26194cc64f6ec4a5d709429c9d140da3d2bd9b68197f19a3d3877",
+  "generation_digest": "29f357f04e5c36afed609d3c4b6aa88f69f5f9414e1cef723cbf8df77e640d66",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -1304,6 +1304,70 @@
       "verified_live": true
     },
     {
+      "record_id": "ms:lumiweather",
+      "locale": "ms",
+      "app_key": "lumiweather",
+      "app_name": "Lumi Cuaca: Ramalan Hari Ini",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Lumi Cuaca: Ramalan Hari Ini — Skor Keluar Rumah & Pakaian | iOS App",
+      "decision_context": "Sesuai untuk keluar hari ini? Lumi Cuaca memberi jawapan dengan sekali pandang melalui skor keluar rumah dari 0 hingga 100 dan satu ayat yang jelas, jadi anda boleh membuat keputusan dalam beberapa saat. Skor ini menggabungkan suhu yang dirasai, peluang hujan, indeks UV, angin dan keadaan langit. Ketik pada skor untuk melihat sejauh mana setiap faktor mempengaruhinya, tanpa kiraan tersembunyi. Selepas itu Lumi membantu anda bersedia: pakai baju apa, perlu bawa payung atau tidak, bila perlu pelindung matahari, topi atau cermin mata hitam, lengkap dengan senarai semak barang untuk dibawa yang boleh dikongsi, serta idea aktiviti yang sesuai dengan cuaca hari ini. Rancang hari mengikut jam yang sesuai. Lumi menunjukkan waktu yang paling sesuai untuk keluar, memaparkan graf suhu 24 jam, butiran setiap jam dan ramalan 7 hari, serta memberitahu lebih awal apabila hujan akan turun atau apabila esok dijangka hujan, lebih sejuk atau lebih panas. Cuaca sentiasa di hujung jari. Tambah widget pada Skrin Utama dan Skrin Kunci, lihat skor pada Apple Watch, simpan tempat yang kerap anda kunjungi di samping lokasi semasa, dan tetapkan peringatan harian pada waktu pilihan anda. Menyokong Celsius dan Fahrenheit. Lumi menjadikan cuaca lebih hidup. Watak mesra ini memakai topi ketika panas terik, membuka payung ketika hujan dan melilit mafela ketika sejuk, dalam pemandangan yang berubah dari matahari terbit, hujan, salji hingga malam yang dipenuhi bintang. Berguna ketika ke tempat kerja, sebelum berlari atau berjalan kaki, semasa membawa anjing bersiar-siar, merancang hujung minggu, membeli-belah, melancong atau meluangkan masa bersama keluarga dan rakan-rakan. Privasi diutamakan: tiada akaun, tiada iklan, tiada analitik pihak ketiga. Data anda disimpan pada peranti anda, dan lokasi hanya digunakan untuk mendapatkan cuaca di tempat anda berada. Buka kunci sekali dalam aplikasi untuk semua ciri, tanpa langganan. Data cuaca disediakan oleh Apple WeatherKit. Ramalan dan cadangan hanya sebagai rujukan.",
+      "category": "kids",
+      "category_label": "Kanak-kanak & pembelajaran",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Percuma untuk bermula · buka kunci sekali sahaja",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Tiada akaun",
+        "Tiada iklan",
+        "Tiada penjejakan",
+        "Peribadi / pada peranti"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "Widjet"
+      ],
+      "badge_labels": [
+        "Kanak-kanak & pembelajaran",
+        "Percuma untuk bermula · buka kunci sekali sahaja",
+        "Tiada akaun",
+        "Tiada iklan",
+        "Tiada penjejakan",
+        "Peribadi / pada peranti",
+        "Widjet",
+        "App Store · Percuma"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/lumiweather.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ms/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ms/lumiweather.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Flumiweather%2Fdecision%2Fl%2Fms%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
+      "app_store_id": "6779552704",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
+      "app_store_url": "https://apps.apple.com/my/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Dapatkan Lumi Cuaca: Ramalan Hari Ini di App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MYR",
+        "formatted_price": "Percuma"
+      },
+      "guide_cta_label": "Baca panduan penuh",
+      "publisher_disclosure": "Bahan ini diterbitkan terus oleh Lumi Studio, pembangun semua aplikasi yang disenaraikan.",
+      "source_persona_query": "weather app to help me plan when to go outside",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "ms:lumiletters",
       "locale": "ms",
       "app_key": "lumiletters",
@@ -1627,126 +1691,6 @@
       "guide_cta_label": "Baca panduan penuh",
       "publisher_disclosure": "Panduan ini diterbitkan oleh Lumi Studio, pembangun app ini. Nama app ialah tanda dagangan pemilik masing-masing dan digunakan untuk tujuan pengenalan sahaja. Untuk keputusan berkaitan dokumen, kesihatan, sekolah dan produktiviti, sila sahkan keperluan rasmi yang berkenaan.",
       "source_persona_query": "best complete morning and bedtime routine app for kids",
-      "source_surface": "answer_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
-      "record_id": "ms:tripplanet",
-      "locale": "ms",
-      "app_key": "tripplanet",
-      "app_name": "Trip Planet: Kids Quest",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "apl aktiviti perjalanan terbaik untuk kanak-kanak semasa percutian keluarga",
-      "decision_context": "Ibu bapa yang melancong dengan anak kecil perlukan aktiviti yang jadikan mengemas barang, menunggu dan meneroka tempat baru sebagai sebahagian pengembaraan, bukan satu lagi sumber tekanan. Sebab itulah Trip Planet: Kids Quest dibina.",
-      "category": "kids",
-      "category_label": "Kanak-kanak & pembelajaran",
-      "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Percuma untuk bermula · buka kunci sekali sahaja",
-      "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_ads",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Luar talian",
-        "Tiada iklan",
-        "Peribadi / pada peranti"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "Kanak-kanak & pembelajaran",
-        "Percuma untuk bermula · buka kunci sekali sahaja",
-        "Luar talian",
-        "Tiada iklan",
-        "Peribadi / pada peranti",
-        "App Store · Percuma"
-      ],
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/answers/best-travel-activity-app-for-kids-on-family-trips.html",
-      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/ms/index.html",
-      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ms/tripplanet.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Ftripplanet%2Fdecision%2Fl%2Fms%2Findex.html&format=json",
-      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
-      "app_store_id": "6787193643",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/my/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "Dapatkan Trip Planet: Kids Quest di App Store →",
-      "storefront_facts": {
-        "price": "0",
-        "currency": "MYR",
-        "formatted_price": "Percuma"
-      },
-      "guide_cta_label": "Baca panduan penuh",
-      "publisher_disclosure": "Panduan ini diterbitkan oleh Lumi Studio, pembangun app ini. Nama app ialah tanda dagangan pemilik masing-masing dan digunakan untuk tujuan pengenalan sahaja. Untuk keputusan berkaitan dokumen, kesihatan, sekolah dan produktiviti, sila sahkan keperluan rasmi yang berkenaan.",
-      "source_persona_query": "best travel activity app for kids on family trips",
-      "source_surface": "answer_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
-      "record_id": "ms:lumiweather",
-      "locale": "ms",
-      "app_key": "lumiweather",
-      "app_name": "Lumi Weather",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "aplikasi cuaca terbaik untuk bantu ibu bapa rancang masa luar bersama anak",
-      "decision_context": "Ibu bapa yang merancang masa luar perlukan lebih daripada suhu: mereka perlukan pandangan pantas mengikut umur sama ada keadaan sesuai untuk anak dan pakaian yang masuk akal. Sebab itulah Lumi Weather dibina.",
-      "category": "kids",
-      "category_label": "Kanak-kanak & pembelajaran",
-      "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Percuma untuk bermula · buka kunci sekali sahaja",
-      "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Tiada akaun",
-        "Tiada iklan",
-        "Tiada penjejakan",
-        "Peribadi / pada peranti"
-      ],
-      "device_surfaces": [
-        "widget"
-      ],
-      "device_labels": [
-        "Widjet"
-      ],
-      "badge_labels": [
-        "Kanak-kanak & pembelajaran",
-        "Percuma untuk bermula · buka kunci sekali sahaja",
-        "Tiada akaun",
-        "Tiada iklan",
-        "Tiada penjejakan",
-        "Peribadi / pada peranti",
-        "Widjet",
-        "App Store · Percuma"
-      ],
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
-      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ms/index.html",
-      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ms/lumiweather.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Flumiweather%2Fdecision%2Fl%2Fms%2Findex.html&format=json",
-      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
-      "app_store_id": "6779552704",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/my/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "Dapatkan Lumi Weather di App Store →",
-      "storefront_facts": {
-        "price": "0",
-        "currency": "MYR",
-        "formatted_price": "Percuma"
-      },
-      "guide_cta_label": "Baca panduan penuh",
-      "publisher_disclosure": "Panduan ini diterbitkan oleh Lumi Studio, pembangun app ini. Nama app ialah tanda dagangan pemilik masing-masing dan digunakan untuk tujuan pengenalan sahaja. Untuk keputusan berkaitan dokumen, kesihatan, sekolah dan produktiviti, sila sahkan keperluan rasmi yang berkenaan.",
-      "source_persona_query": "best weather app to help parents plan outdoor time with kids",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -2661,6 +2605,62 @@
       "verified_live": true
     },
     {
+      "record_id": "ms:tripplanet",
+      "locale": "ms",
+      "app_key": "tripplanet",
+      "app_name": "Trip Planet: Kids Quest",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "apl aktiviti perjalanan terbaik untuk kanak-kanak semasa percutian keluarga",
+      "decision_context": "Ibu bapa yang melancong dengan anak kecil perlukan aktiviti yang jadikan mengemas barang, menunggu dan meneroka tempat baru sebagai sebahagian pengembaraan, bukan satu lagi sumber tekanan. Sebab itulah Trip Planet: Kids Quest dibina.",
+      "category": "kids",
+      "category_label": "Kanak-kanak & pembelajaran",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Percuma untuk bermula · buka kunci sekali sahaja",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Luar talian",
+        "Tiada iklan",
+        "Peribadi / pada peranti"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Kanak-kanak & pembelajaran",
+        "Percuma untuk bermula · buka kunci sekali sahaja",
+        "Luar talian",
+        "Tiada iklan",
+        "Peribadi / pada peranti",
+        "App Store · Percuma"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ms/answers/best-travel-activity-app-for-kids-on-family-trips.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/ms/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ms/tripplanet.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Ftripplanet%2Fdecision%2Fl%2Fms%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ms.json",
+      "app_store_id": "6787193643",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
+      "app_store_url": "https://apps.apple.com/my/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Dapatkan Trip Planet: Kids Quest di App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "MYR",
+        "formatted_price": "Percuma"
+      },
+      "guide_cta_label": "Baca panduan penuh",
+      "publisher_disclosure": "Panduan ini diterbitkan oleh Lumi Studio, pembangun app ini. Nama app ialah tanda dagangan pemilik masing-masing dan digunakan untuk tujuan pengenalan sahaja. Untuk keputusan berkaitan dokumen, kesihatan, sekolah dan produktiviti, sila sahkan keperluan rasmi yang berkenaan.",
+      "source_persona_query": "best travel activity app for kids on family trips",
+      "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "ms:tripbeelite",
       "locale": "ms",
       "app_key": "tripbeelite",
@@ -2954,8 +2954,8 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Wordmate Lite Seminit Sehari — Lima perkataan, 44 bahasa | iOS App",
       "decision_context": "Ramai yang tersekat belajar bahasa pada titik kad hafalan masih belum siap disusun. Wordmate Lite membuang langkah itu terus. Satu sesi hanya lima perkataan. Skrinnya sebuah denai berbatu kerikil, anda memijak satu demi satu lalu melangkah ke hadapan, dan di penghujung sesi kelima lima perkataan tadi dipaparkan penuh. Apa yang sudah dibuat hari ini terus jelas, jadi esok lebih senang disambung. Sesuai untuk anda yang cuma ada beberapa minit semasa berulang alik, yang sudah berkali kali memasang aplikasi pembelajaran lalu berhenti separuh jalan, yang jemu menyusun kad sendiri dan berdepan barisan ulang kaji yang bertimbun, atau yang bakal bertugas di luar negara mahupun bercuti dan mahu pegang dahulu perkataan yang betul betul digunakan. Terdapat 44 bahasa untuk dipelajari. Temanya merangkumi pengembaraan, dunia kerja, peperiksaan, kehidupan harian, makan, membeli belah, kanak kanak, temu duga, kesihatan, teknologi, alam semula jadi, hiburan, pergaulan dan makanan, kesemuanya 14 tema, dan setiap tema masih dipecahkan kepada unit. Tahapnya tiga: permulaan, pertengahan dan lanjutan. Perkataan yang menarik boleh disimpan, lalu dikumpulkan mengikut tema dan tahap supaya senang dibuka semula. Sebutan dimainkan menggunakan suara bacaan yang sedia ada pada peranti, dan setiap bahasa boleh diberi suara berlainan mengikut selera telinga anda. Kemajuan dipaparkan melalui rentetan hari berturut turut, rekod terpanjang, jumlah perkataan hari ini dan keseluruhan, kemajuan mengikut bahasa, serta gelang kemajuan bagi setiap tema dan setiap unit. Sasaran harian boleh ditetapkan pada 5, 10, 15 atau 20 perkataan. Paparan cerah dan gelap kedua duanya disokong, dan secara lalai mengikut tetapan sistem. Pada iPad, susun atur satu lajur menggunakan hampir keseluruhan lebar skrin dan kekal selesa dibaca dalam mod potret, landskap mahupun Split View. Tentang privasi. Akaun tidak diperlukan. Data peribadi tidak dikumpul. Tiada iklan pihak ketiga. Tiada alat analitik atau penjejakan pihak ketiga. Apa sahaja yang anda masukkan kekal pada peranti sendiri. Aplikasi berjalan di luar talian, jadi di dalam pesawat atau di bawah tanah pun pembelajaran tidak terputus. Tanpa bayaran pun anda boleh memilih satu bahasa dan satu tema, mempelajari 10 perkataan pertama pada tahap permulaan, dan menyimpan sehingga 3 perkataan. Bahasa, tema dan tahap yang lain tidak disorok, sebaliknya tetap dipaparkan dengan tanda kunci atau pratonton sebenar. Sekali beli, semuanya terbuka: 44 bahasa, 14 tema, semua tahap, pembelajaran dan simpanan tanpa had. Bukan langganan bulanan. Perbendaharaan kata tidak membesar dalam satu malam. Ia membesar lima sehari, dan tugas aplikasi ini ialah menjadikan denai itu kelihatan. Terma Penggunaan (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
-      "category": "kids",
-      "category_label": "Kanak-kanak & pembelajaran",
+      "category": "education",
+      "category_label": "Pendidikan",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Percuma untuk bermula · buka kunci sekali sahaja",
       "one_time_option": true,
@@ -2974,7 +2974,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Kanak-kanak & pembelajaran",
+        "Pendidikan",
         "Percuma untuk bermula · buka kunci sekali sahaja",
         "Luar talian",
         "Tiada akaun",

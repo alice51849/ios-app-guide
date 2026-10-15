@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "ko",
-  "dateModified": "2026-10-13",
-  "content_digest": "749c46f4e9a5e32aa853a11bd1bc563bc178aaa9e2d6090d21f75a2f2ddef11b",
-  "generation_digest": "9eceb86a45de2118710b286b161af324221deb633f9b5af8d127e5c1d9da302d",
+  "dateModified": "2026-10-15",
+  "content_digest": "fd5f3d83bed26194cc64f6ec4a5d709429c9d140da3d2bd9b68197f19a3d3877",
+  "generation_digest": "29f357f04e5c36afed609d3c4b6aa88f69f5f9414e1cef723cbf8df77e640d66",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -1634,126 +1634,6 @@
       "verified_live": true
     },
     {
-      "record_id": "ko:tripplanet",
-      "locale": "ko",
-      "app_key": "tripplanet",
-      "app_name": "Trip Planet: Kids Quest",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "가족 여행에서 아이들을 위한 최고의 여행 활동 앱",
-      "decision_context": "어린 자녀와 여행하는 부모에게는 짐 싸기와 기다리는 시간, 낯선 장소 탐험까지 모험의 일부로 만들어 주는 활동이 필요합니다. 또 하나의 스트레스가 되어서는 곤란합니다. 그래서 만든 것이 Trip Planet: Kids Quest입니다.",
-      "category": "kids",
-      "category_label": "어린이 & 학습",
-      "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 한 번 결제로 잠금 해제",
-      "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_ads",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "오프라인",
-        "광고 없음",
-        "프라이빗 / 기기 내"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "어린이 & 학습",
-        "무료로 시작 · 한 번 결제로 잠금 해제",
-        "오프라인",
-        "광고 없음",
-        "프라이빗 / 기기 내",
-        "App Store · 무료"
-      ],
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/answers/best-travel-activity-app-for-kids-on-family-trips.html",
-      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/ko/index.html",
-      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ko/tripplanet.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Ftripplanet%2Fdecision%2Fl%2Fko%2Findex.html&format=json",
-      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
-      "app_store_id": "6787193643",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "App Store에서 Trip Planet: Kids Quest 받기 →",
-      "storefront_facts": {
-        "price": "0",
-        "currency": "KRW",
-        "formatted_price": "무료"
-      },
-      "guide_cta_label": "전체 안내서 읽기",
-      "publisher_disclosure": "앱 개발자인 Lumi Studio에서 직접 작성한 가이드입니다. 앱 이름은 해당 소유자의 상표이며 식별 목적으로만 사용됩니다. 문서, 건강, 학교 및 생산성과 관련된 결정을 내릴 때는 필요에 따라 관련 기관의 공식 요건을 확인하시기 바랍니다.",
-      "source_persona_query": "best travel activity app for kids on family trips",
-      "source_surface": "answer_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
-      "record_id": "ko:lumiweather",
-      "locale": "ko",
-      "app_key": "lumiweather",
-      "app_name": "Lumi Weather",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "부모가 아이와 야외 시간을 계획할 때 도움이 되는 최고의 날씨 앱",
-      "decision_context": "야외 시간을 계획하는 부모는 온도만으로는 부족합니다: 아이에게 적합한 조건인지, 어떤 옷이 필요한지 빠르고 연령별로 확인해야 합니다. 그래서 만든 것이 Lumi Weather입니다.",
-      "category": "kids",
-      "category_label": "어린이 & 학습",
-      "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "무료로 시작 · 한 번 결제로 잠금 해제",
-      "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "계정 없음",
-        "광고 없음",
-        "추적 없음",
-        "프라이빗 / 기기 내"
-      ],
-      "device_surfaces": [
-        "widget"
-      ],
-      "device_labels": [
-        "위젯"
-      ],
-      "badge_labels": [
-        "어린이 & 학습",
-        "무료로 시작 · 한 번 결제로 잠금 해제",
-        "계정 없음",
-        "광고 없음",
-        "추적 없음",
-        "프라이빗 / 기기 내",
-        "위젯",
-        "App Store · 무료"
-      ],
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
-      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ko/index.html",
-      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ko/lumiweather.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Flumiweather%2Fdecision%2Fl%2Fko%2Findex.html&format=json",
-      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
-      "app_store_id": "6779552704",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "App Store에서 Lumi Weather 받기 →",
-      "storefront_facts": {
-        "price": "0",
-        "currency": "KRW",
-        "formatted_price": "무료"
-      },
-      "guide_cta_label": "전체 안내서 읽기",
-      "publisher_disclosure": "앱 개발자인 Lumi Studio에서 직접 작성한 가이드입니다. 앱 이름은 해당 소유자의 상표이며 식별 목적으로만 사용됩니다. 문서, 건강, 학교 및 생산성과 관련된 결정을 내릴 때는 필요에 따라 관련 기관의 공식 요건을 확인하시기 바랍니다.",
-      "source_persona_query": "best weather app to help parents plan outdoor time with kids",
-      "source_surface": "answer_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
       "record_id": "ko:mochi",
       "locale": "ko",
       "app_key": "mochi",
@@ -2661,6 +2541,62 @@
       "verified_live": true
     },
     {
+      "record_id": "ko:tripplanet",
+      "locale": "ko",
+      "app_key": "tripplanet",
+      "app_name": "Trip Planet: Kids Quest",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "가족 여행에서 아이들을 위한 최고의 여행 활동 앱",
+      "decision_context": "어린 자녀와 여행하는 부모에게는 짐 싸기와 기다리는 시간, 낯선 장소 탐험까지 모험의 일부로 만들어 주는 활동이 필요합니다. 또 하나의 스트레스가 되어서는 곤란합니다. 그래서 만든 것이 Trip Planet: Kids Quest입니다.",
+      "category": "kids",
+      "category_label": "어린이 & 학습",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "무료로 시작 · 한 번 결제로 잠금 해제",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "오프라인",
+        "광고 없음",
+        "프라이빗 / 기기 내"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "어린이 & 학습",
+        "무료로 시작 · 한 번 결제로 잠금 해제",
+        "오프라인",
+        "광고 없음",
+        "프라이빗 / 기기 내",
+        "App Store · 무료"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/answers/best-travel-activity-app-for-kids-on-family-trips.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/ko/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ko/tripplanet.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Ftripplanet%2Fdecision%2Fl%2Fko%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
+      "app_store_id": "6787193643",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
+      "app_store_url": "https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "App Store에서 Trip Planet: Kids Quest 받기 →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료"
+      },
+      "guide_cta_label": "전체 안내서 읽기",
+      "publisher_disclosure": "앱 개발자인 Lumi Studio에서 직접 작성한 가이드입니다. 앱 이름은 해당 소유자의 상표이며 식별 목적으로만 사용됩니다. 문서, 건강, 학교 및 생산성과 관련된 결정을 내릴 때는 필요에 따라 관련 기관의 공식 요건을 확인하시기 바랍니다.",
+      "source_persona_query": "best travel activity app for kids on family trips",
+      "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "ko:tripbeelite",
       "locale": "ko",
       "app_key": "tripbeelite",
@@ -2954,8 +2890,8 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Wordmate Lite 하루 5단어 — 44개 언어, 1분이면 끝나는 어휘 | iOS App",
       "decision_context": "단어장을 만들다가 지쳐서 공부 자체를 놓아버린 적이 있다면, Wordmate Lite는 그 지점을 없애기 위해 만든 어휘 앱입니다. 한 번에 다섯 개. 조약돌을 하나씩 밟고 지나가듯 진행하고, 마지막 화면에는 오늘 익힌 다섯 개가 그대로 정리되어 나타납니다. 오늘 무엇을 했는지 한눈에 보이면 내일도 이어집니다. 이런 분께 맞습니다. 출퇴근길 몇 분만 손에 쥐고 싶은 분. 학습 앱을 여러 번 깔았다가 매번 접었던 분. 카드를 직접 만들고 밀린 복습을 처리하는 일에 지친 분. 업무나 여행을 앞두고 실제로 쓰는 표현부터 챙기고 싶은 분. 학습 언어는 44개입니다. 주제는 여행, 비즈니스, 시험, 일상, 식사, 쇼핑, 아이, 면접, 건강, 기술, 자연, 엔터테인먼트, 사교, 음식까지 14가지이며 각각 유닛으로 나뉘어 있습니다. 난이도는 입문, 중급, 고급 3단계입니다. 마음에 든 표현은 저장해 두면 주제와 난이도별로 묶여 정리되어, 나중에 다시 훑어보기 좋습니다. 발음은 기기의 음성 읽기 기능으로 들려줍니다. 언어마다 목소리를 고를 수 있어 귀에 익히는 방식도 취향대로 맞출 수 있습니다. 연속 일수와 최고 기록, 오늘과 누적 학습량, 언어별 진행 상황, 주제와 유닛별 진행 링으로 쌓아온 흔적이 그대로 보입니다. 하루 목표는 5개, 10개, 15개, 20개 중에서 고릅니다. 밝은 화면과 어두운 화면을 모두 지원하고 기본값은 시스템 설정을 따릅니다. 아이패드에서는 화면 폭을 거의 다 쓰는 한 단 구성으로, 세로와 가로는 물론 Split View에서도 읽기 편하게 배치됩니다. 개인정보에 관해서. 계정이 필요 없습니다. 개인정보를 수집하지 않습니다. 제3자 광고가 없습니다. 제3자 분석이나 추적 도구도 넣지 않았습니다. 입력한 내용은 기기 안에 남습니다. 오프라인에서 동작하므로 비행기 안에서도 지하철에서도 학습이 끊기지 않습니다. 무료 상태에서도 선택한 언어 하나와 주제 하나로 입문 단계의 첫 10개를 배우고 3개까지 저장할 수 있습니다. 나머지 언어와 주제, 난이도도 숨기지 않고 잠금 표시나 실제 미리보기와 함께 그대로 보여 줍니다. 한 번의 구매로 44개 언어 전체, 14가지 주제 전체, 모든 난이도, 학습과 저장 개수 제한이 풀립니다. 구독은 없습니다. 어휘는 한 번에 늘지 않습니다. 매일 다섯 개씩. 그 쌓임을 눈에 보이게 만드는 것이 이 앱이 하는 일입니다. 이용약관(EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
-      "category": "kids",
-      "category_label": "어린이 & 학습",
+      "category": "education",
+      "category_label": "교육",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "무료로 시작 · 한 번 결제로 잠금 해제",
       "one_time_option": true,
@@ -2974,7 +2910,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "어린이 & 학습",
+        "교육",
         "무료로 시작 · 한 번 결제로 잠금 해제",
         "오프라인",
         "계정 없음",
@@ -3127,6 +3063,70 @@
       "guide_cta_label": "전체 안내서 읽기",
       "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
       "source_persona_query": "paid app to open RAR and 7z files on iPhone without ads",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "ko:lumiweather",
+      "locale": "ko",
+      "app_key": "lumiweather",
+      "app_name": "루미 날씨: 외출 지수와 옷차림",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "루미 날씨: 외출 지수와 옷차림 — 우산·자외선·시간별 주간 예보 | iOS App",
+      "decision_context": "지금 나가기 좋은지, 무엇을 입어야 할지, 우산이나 선크림이 필요한지 한눈에 알려주는 날씨 앱입니다. 기온, 자외선, 강수확률, 바람을 하나하나 확인할 필요 없이 루미가 이를 종합해 0부터 100까지의 외출 지수와 짧은 한 줄 판단으로 알려드립니다. '외출하기 좋은 날'부터 '오늘은 실내가 좋아요'까지 답은 간단합니다. 지수를 탭하면 체감온도, 자외선, 비, 바람이 점수에 각각 어떻게 반영됐는지 볼 수 있어 조언의 이유도 쉽게 이해할 수 있습니다. 날씨에 맞춰 하루를 계획하세요 루미는 오늘 외출하기 좋은 시간대를 알려드립니다. 산책, 러닝, 자전거, 출퇴근, 주말 볼일도 쾌적한 시간에 맞출 수 있습니다. 우산이나 우비를 챙겨야 할 때, 모자와 선크림이 필요할 때, 바람이 강해 얇은 겉옷이 있으면 좋을 때도 알기 쉽게 알려드립니다. 분 단위 강수 데이터를 제공하는 지역에서는 비가 곧 시작되거나 그칠 때도 알려주고, 내일 비가 올 것 같으면 미리 알려드립니다. 읽기 쉬운 예보 오늘 화면에서는 앞으로 몇 시간의 날씨를 한눈에 볼 수 있습니다. 시간별 화면에서는 하루 기온 흐름과 함께 시간마다 체감온도, 강수확률, 자외선, 풍속을 확인할 수 있고, 7일 예보도 볼 수 있습니다. 외출 준비 체크리스트는 날씨에 맞춰 입을 옷과 챙길 물건을 정리해 줍니다. 선글라스부터 장화까지 필요한 것을 바로 알 수 있고, 탭 한 번으로 공유할 수도 있습니다. 어디서든 날씨 확인 집, 회사, 공원처럼 자주 가는 장소를 저장하고 탭 한 번으로 전환하세요. 홈 화면이나 잠금 화면에 위젯을 추가하고, Apple Watch에서 현재 기온을 확인하고, 매일 원하는 시간에 알림을 받을 수 있습니다. 날씨 따라 바뀌는 장면 캐릭터 루미는 날씨에 맞춰 햇빛 모자를 쓰거나, 우비를 입거나, 목도리를 두르거나, 우산을 듭니다. 일러스트 장면도 날씨와 시간대에 따라 바뀌어 맑은 낮과 밤부터 비, 안개, 폭풍우, 눈까지 보여 줍니다. 개인정보 보호 계정이 필요 없고, 광고도 서드파티 분석 도구도 없습니다. 장소와 설정은 기기에만 저장되며, 위치 정보는 현재 위치의 날씨를 가져오는 데에만 사용되고 광고나 추적에는 사용되지 않습니다. 한 번 구매, 구독 없음 외출 지수, 한 줄 판단, 외출하기 좋은 시간대, 조언, 매일 알림이 담긴 오늘 화면은 바로 사용할 수 있습니다. 앱 내에서 한 번 구매하면 시간별 화면, 7일 예보 전체, 외출 준비 체크리스트, 여러 장소 저장, Apple Watch의 앞으로 몇 시간 예보를 이용할 수 있습니다. 구독은 없으며 가족 공유를 지원합니다. 루미 날씨는 50개 언어의 화면 표시를 지원하며, 시스템 언어를 따르거나 앱 안에서 원하는 언어로 바꿀 수 있습니다. 날씨 데이터는 Apple WeatherKit에서 제공됩니다. 예보는 참고용이므로 외출 전에 실제 날씨도 함께 확인해 주세요.",
+      "category": "kids",
+      "category_label": "어린이 & 학습",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "무료로 시작 · 한 번 결제로 잠금 해제",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "계정 없음",
+        "광고 없음",
+        "추적 없음",
+        "프라이빗 / 기기 내"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "위젯"
+      ],
+      "badge_labels": [
+        "어린이 & 학습",
+        "무료로 시작 · 한 번 결제로 잠금 해제",
+        "계정 없음",
+        "광고 없음",
+        "추적 없음",
+        "프라이빗 / 기기 내",
+        "위젯",
+        "App Store · 무료"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ko/lumiweather.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ko/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/ko/lumiweather.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Flumiweather%2Fdecision%2Fl%2Fko%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ko.json",
+      "app_store_id": "6779552704",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
+      "app_store_url": "https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "App Store에서 루미 날씨: 외출 지수와 옷차림 받기",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료"
+      },
+      "guide_cta_label": "전체 안내서 읽기",
+      "publisher_disclosure": "이 자료는 목록에 있는 모든 앱의 개발사 Lumi Studio가 직접 발행한 1차 자료입니다.",
+      "source_persona_query": "weather app to help me plan when to go outside",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

@@ -2,7 +2,7 @@
 title: "HoursTag：把花費換成工時，月底看懂自己的支出紀錄"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/zh-Hant/hourstag.html"
-modified: "2026-09-16"
+modified: "2026-10-15"
 video_url: "https://files.catbox.moe/wp5abu.mp4"
 duration: "PT16S"
 app_store_id: "6754218117"

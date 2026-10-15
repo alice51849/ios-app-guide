@@ -1,7 +1,7 @@
 {
   "version": 2,
   "source": "Apple iTunes Lookup API",
-  "checked_at": "2026-10-13T04:58:53Z",
+  "checked_at": "2026-10-15T09:34:37Z",
   "app_count": 53,
   "app_ids": [
     "6754218117",
@@ -2580,8 +2580,8 @@
         "price": "0",
         "currency": "BRL",
         "formatted_price": "Grátis",
-        "rating_value": 3.0,
-        "rating_count": 3
+        "rating_value": 3.5,
+        "rating_count": 4
       },
       "6787193643": {
         "price": "0",
@@ -4668,7 +4668,9 @@
       "6782251621": {
         "price": "0",
         "currency": "EUR",
-        "formatted_price": "Gratuit"
+        "formatted_price": "Gratuit",
+        "rating_value": 2.0,
+        "rating_count": 1
       },
       "6782275018": {
         "price": "0",
@@ -12258,7 +12260,7 @@
         "currency": "USD",
         "formatted_price": "Free",
         "rating_value": 4.3,
-        "rating_count": 24
+        "rating_count": 25
       },
       "6787193643": {
         "price": "0",

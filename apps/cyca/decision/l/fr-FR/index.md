@@ -2,7 +2,7 @@
 title: "meilleure application de suivi de règles sans compte requis iPhone"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/fr-FR/index.html"
-modified: "2026-10-13"
+modified: "2026-10-15"
 app_store_id: "6782251621"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -21,6 +21,7 @@ Dans une catégorie où la sensibilité des données est primordiale, le bon sui
 - Sans suivi
 - Privé / sur l’appareil
 - App Store · Gratuit
+- ★ 2.0/5 · 1
 
 [Obtenez Cyca sur l’App Store →](https://apps.apple.com/fr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
 

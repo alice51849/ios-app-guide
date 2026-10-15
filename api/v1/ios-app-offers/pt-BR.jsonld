@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/br/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Escanear e Criar",
-        "description": "O QR Code Halo coloca você no controle: confira o conteúdo, avalie os sinais exibidos e só então escolha uma ação. Escanear um código nunca abre nada",
+        "description": "O QR Code Halo coloca você no controle: confira o conteúdo, avalie os sinais exibidos e só então escolha uma ação. Por padrão, a ação é executada logo após",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "pt-BR",
-          "description": "O QR Code Halo coloca você no controle: confira o conteúdo, avalie os sinais exibidos e só então escolha uma ação. Escanear um código nunca abre nada",
+          "description": "O QR Code Halo coloca você no controle: confira o conteúdo, avalie os sinais exibidos e só então escolha uma ação. Por padrão, a ação é executada logo após",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-qrcodehalo"
           },

@@ -1,17 +1,17 @@
 ---
-title: "paras sääsovellus vanhemmille lasten ulkoilun suunnitteluun"
+title: "Lumi Sää: Ennuste ja vaatteet — Lähteäkö ulos? Sade, UV, tuuli | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/fi/index.html"
-modified: "2026-10-13"
+modified: "2026-10-15"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# paras sääsovellus vanhemmille lasten ulkoilun suunnitteluun
+# Lumi Sää: Ennuste ja vaatteet — Lähteäkö ulos? Sade, UV, tuuli | iOS App
 
-Vanhemmat tarvitsevat ulkoilun suunnitteluun enemmän kuin lämpötilan: he tarvitsevat nopean, ikätietoisen näkymän siitä, sopiiko sää lapselle ja mitkä vaatteet ovat järkeviä. Siksi Lumi Weather on olemassa.
+Lumi Sää kertoo yhdellä silmäyksellä, kannattaako tänään lähteä ulos: ulkoiluindeksi asteikolla 0–100 ja lyhyt arvio, jonka ehtii lukea ohimennen. Indeksi yhdistää sen, mikä tuntuu heti ovesta astuessa: tuntuvan lämpötilan, sateen todennäköisyyden, UV-säteilyn ja tuulen. Napauta lukua, niin näet, miten kukin tekijä vaikuttaa. Lumi ehdottaa myös, mitä kannattaa pukea päälle, muistuttaa sateenvarjosta tai aurinkorasvasta, varoittaa, kun sade on alkamassa muutaman minuutin päästä, jos minuuttikohtaista tietoa on saatavilla, ja näyttää, mihin aikaan päivästä ulkona on kaikkein mukavinta. Pidemmälle suunnitteluun on tuntiennuste, lämpötilakäyrä ja seuraavat 7 päivää. Tallenna usein tarkistamasi paikat, kuten koti, työpaikka tai mökki, ja vaihda niiden välillä yhdellä napautuksella. Lisää widget Koti-valikkoon tai lukitusnäytölle, katso sää suoraan Apple Watchista ja aseta päivittäinen muistutus, niin päivän indeksi on tiedossa ennen kuin lähdet kotoa. Lumi Sää sopii yhtä hyvin aamun työmatkaan kuin lenkkiin, koiran ulkoilutukseen, pyöräretkeen, rantapäivään tai viikonloppureissuun ystävien tai perheen kanssa. Ystävällinen Lumi-hahmo ja säämaisemat muuttuvat taivaan mukaan. Lumi laittaa aurinkohatun päähän, painuu sateenvarjon alle tai kietoutuu kaulaliinaan, joten ennusteen ymmärtää vaivatta. Yksityisyytesi pysyy sinulla. Ei tiliä, ei mainoksia eikä kolmansien osapuolten analytiikkaa. Paikat ja asetukset tallentuvat laitteellesi, ja sijaintiasi käytetään vain sään hakemiseen. Tänään-näkymä ulkoiluindekseineen toimii heti. Kertaluonteisella avauksella sovelluksessa saat käyttöösi kaiken: tuntiennusteen ja 7 päivän ennusteen, sopivan ajan lähteä ulos, lähtölistan, useat paikat ja widgetin. Ei tilausta. Säätiedot tulevat Apple WeatherKitistä. Ennusteet ovat vain suuntaa antavia, joten tarkista olosuhteet aina itse ennen kuin lähdet.
 
 - Lapset & oppiminen
 - Ilmainen aloitus
@@ -22,8 +22,8 @@ Vanhemmat tarvitsevat ulkoilun suunnitteluun enemmän kuin lämpötilan: he tarv
 - Widget
 - App Store · Ilmainen
 
-[Hanki Lumi Weather App Storesta →](https://apps.apple.com/fi/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
+[Lataa Lumi Sää: Ennuste ja vaatteet App Storesta](https://apps.apple.com/fi/app/id6779552704?pt=118326163&ct=geo_pick&mt=8)
 
-[Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html)
+[Lue koko opas](https://open.cait518.cc/ios-app-guide/fi/lumiweather.html)
 
-> Oppaan on kirjoittanut sovelluksen kehittäjä Lumi Studio. Sovellusten nimet ovat omistajiensa tavaramerkkejä, ja niitä käytetään vain tunnistamiseen. Asiakirjoihin, terveyteen, kouluun ja työn tuottavuuteen liittyvissä päätöksissä kannattaa tarkistaa viralliset vaatimukset silloin, kun niillä on merkitystä.
+> Tämä on Lumi Studion, jokaisen listatun sovelluksen kehittäjän, julkaisema ensimmäisen osapuolen materiaali.

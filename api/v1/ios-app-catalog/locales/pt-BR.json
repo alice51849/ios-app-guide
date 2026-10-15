@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-14",
-  "content_digest": "f12cea2fe6f9db7d3a70a4acdca6e86c6b25b19bd78c512e9cbca0dacd9d4a8d",
+  "date_modified": "2026-10-15",
+  "content_digest": "3a352913e6d67da9c93bebf1ba76ba493a87f919c2d1c7c57a6329841f6cf884",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -1397,8 +1397,8 @@
         "price": "0",
         "currency": "BRL",
         "formatted_price": "Grátis",
-        "rating_value": 3.0,
-        "rating_count": 3,
+        "rating_value": 3.5,
+        "rating_count": 4,
         "storefront_url": "https://apps.apple.com/br/app/id6785004775"
       }
     },
@@ -2079,9 +2079,7 @@
       "category": "kids",
       "search_terms": [
         "viagem em família",
-        "planejador de viagem",
         "viagem",
-        "jornal",
         "aventura",
         "missões",
         "recompensas",

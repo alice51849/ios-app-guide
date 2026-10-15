@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "hu",
-  "dateModified": "2026-10-13",
-  "content_digest": "749c46f4e9a5e32aa853a11bd1bc563bc178aaa9e2d6090d21f75a2f2ddef11b",
-  "generation_digest": "9eceb86a45de2118710b286b161af324221deb633f9b5af8d127e5c1d9da302d",
+  "dateModified": "2026-10-15",
+  "content_digest": "fd5f3d83bed26194cc64f6ec4a5d709429c9d140da3d2bd9b68197f19a3d3877",
+  "generation_digest": "29f357f04e5c36afed609d3c4b6aa88f69f5f9414e1cef723cbf8df77e640d66",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -1304,6 +1304,70 @@
       "verified_live": true
     },
     {
+      "record_id": "hu:lumiweather",
+      "locale": "hu",
+      "app_key": "lumiweather",
+      "app_name": "Lumi Időjárás: Előrejelzés",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Lumi Időjárás: Előrejelzés — Érdemes kimenni? Eső és UV | iOS App",
+      "decision_context": "A Lumi Időjárás egy pillantás alatt megmutatja, érdemes-e ma kimenni: egy 0 és 100 közötti szabadtéri pontszámot és egy rövid értékelést, amelyet menet közben is elolvashatsz. A pontszám összegzi mindazt, amit az ajtón kilépve érzel: a hőérzetet, az eső esélyét, az UV-sugárzást és a szelet. Koppints a számra, és láthatod, hogyan számítanak bele az egyes tényezők. A Lumi azt is javasolja, mit vegyél fel, szól, ha esernyőt vagy naptejet érdemes vinni, figyelmeztet, ha néhány percen belül eleredhet az eső (ahol percre pontos adat elérhető), és megmutatja, a nap melyik szakában a legkellemesebb kint lenni. Ha előre tervezel, ott az óránkénti előrejelzés, a hőmérsékleti görbe és a következő 7 nap. Mentsd el a gyakran nézett helyeket, például az otthonodat, a munkahelyedet vagy a nyaralót, és válts köztük egyetlen koppintással. Tedd a widgetet a Főképernyőre vagy a zárolási képernyőre, nézd az időjárást közvetlenül az Apple Watchon, és állíts be napi emlékeztetőt, hogy a nap pontszámát már indulás előtt ismerd. A Lumi Időjárás ugyanúgy jól jön a reggeli munkába induláshoz, mint a futáshoz, a kutyasétáltatáshoz, egy biciklitúrához, egy strandnaphoz vagy egy hétvégi kiránduláshoz a barátokkal vagy a családdal. A barátságos Lumi figura és az időjárási jelenetek az éggel együtt változnak. Lumi napkalapot húz, az esernyő alá bújik vagy sálba burkolózik, így az előrejelzés könnyen érthető. A magánszférád nálad marad. Nincs fiók, nincsenek hirdetések, és nincs harmadik féltől származó analitika. A helyek és a beállítások az eszközödön maradnak, a helyadatodat pedig az alkalmazás csak az időjárás lekéréséhez használja. A Ma képernyő a pontszámmal azonnal működik. Egyszeri, alkalmazáson belüli feloldással mindenhez hozzáférsz: óránkénti és 7 napos előrejelzés, alkalmas időpont a kimenéshez, indulás előtti ellenőrzőlista, több hely és widget. Nincs előfizetés. Az időjárásadatokat az Apple WeatherKit szolgáltatja. Az előrejelzések csak tájékoztató jellegűek, ezért indulás előtt mindig nézd meg magad is a körülményeket.",
+      "category": "kids",
+      "category_label": "Gyerekek & tanulás",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Ingyenes kezdés",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Nincs fiók",
+        "Nincs reklám",
+        "Nincs követés",
+        "Privát / eszközön tárolt"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "Widget"
+      ],
+      "badge_labels": [
+        "Gyerekek & tanulás",
+        "Ingyenes kezdés",
+        "Nincs fiók",
+        "Nincs reklám",
+        "Nincs követés",
+        "Privát / eszközön tárolt",
+        "Widget",
+        "App Store · Ingyenes"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/lumiweather.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/hu/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/hu/lumiweather.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Flumiweather%2Fdecision%2Fl%2Fhu%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
+      "app_store_id": "6779552704",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
+      "app_store_url": "https://apps.apple.com/hu/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Töltse le a(z) Lumi Időjárás: Előrejelzés appot az App Store-ból",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
+      "guide_cta_label": "Olvasd el a teljes útmutatót",
+      "publisher_disclosure": "Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.",
+      "source_persona_query": "weather app to help me plan when to go outside",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "hu:lumiletters",
       "locale": "hu",
       "app_key": "lumiletters",
@@ -1627,126 +1691,6 @@
       "guide_cta_label": "Olvasd el a teljes útmutatót",
       "publisher_disclosure": "Az útmutatót az alkalmazás fejlesztője, a Lumi Studio írta. Az alkalmazásnevek tulajdonosaik védjegyei, és kizárólag azonosítás céljából szerepelnek. Dokumentumokkal, egészséggel, iskolával és munkaszervezéssel kapcsolatos döntéseknél ellenőrizd a hivatalos követelményeket ott, ahol ez lényeges.",
       "source_persona_query": "best complete morning and bedtime routine app for kids",
-      "source_surface": "answer_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
-      "record_id": "hu:tripplanet",
-      "locale": "hu",
-      "app_key": "tripplanet",
-      "app_name": "Trip Planet: Kids Quest",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "legjobb utazós tevékenység alkalmazás gyerekeknek családi utazáshoz",
-      "decision_context": "A fiatal gyerekekkel utazó szülőknek olyan tevékenységek kellenek, amelyek a csomagolást, várakozást és az új hely felfedezését az utazás részévé teszik, nem újabb stresszforrássá. Ezért készült a Trip Planet: Kids Quest.",
-      "category": "kids",
-      "category_label": "Gyerekek & tanulás",
-      "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés",
-      "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_ads",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Offline",
-        "Nincs reklám",
-        "Privát / eszközön tárolt"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "Gyerekek & tanulás",
-        "Ingyenes kezdés",
-        "Offline",
-        "Nincs reklám",
-        "Privát / eszközön tárolt",
-        "App Store · Ingyenes"
-      ],
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/answers/best-travel-activity-app-for-kids-on-family-trips.html",
-      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/hu/index.html",
-      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/hu/tripplanet.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Ftripplanet%2Fdecision%2Fl%2Fhu%2Findex.html&format=json",
-      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
-      "app_store_id": "6787193643",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/hu/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "Szerezd be a Trip Planet: Kids Quest-et az App Store-ban →",
-      "storefront_facts": {
-        "price": "0",
-        "currency": "HUF",
-        "formatted_price": "Ingyenes"
-      },
-      "guide_cta_label": "Olvasd el a teljes útmutatót",
-      "publisher_disclosure": "Az útmutatót az alkalmazás fejlesztője, a Lumi Studio írta. Az alkalmazásnevek tulajdonosaik védjegyei, és kizárólag azonosítás céljából szerepelnek. Dokumentumokkal, egészséggel, iskolával és munkaszervezéssel kapcsolatos döntéseknél ellenőrizd a hivatalos követelményeket ott, ahol ez lényeges.",
-      "source_persona_query": "best travel activity app for kids on family trips",
-      "source_surface": "answer_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
-      "record_id": "hu:lumiweather",
-      "locale": "hu",
-      "app_key": "lumiweather",
-      "app_name": "Lumi Weather",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "legjobb időjárás alkalmazás szülőknek kültéri programok tervezéséhez gyerekekkel",
-      "decision_context": "A szülőknek, akik kültéri programot terveznek, több kell egy hőmérsékletnél: gyors, életkorhoz igazított nézet arra, hogy az időjárás megfelel-e a gyereknek, és milyen ruházat indokolt. Ezért készült a Lumi Weather.",
-      "category": "kids",
-      "category_label": "Gyerekek & tanulás",
-      "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Ingyenes kezdés",
-      "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Nincs fiók",
-        "Nincs reklám",
-        "Nincs követés",
-        "Privát / eszközön tárolt"
-      ],
-      "device_surfaces": [
-        "widget"
-      ],
-      "device_labels": [
-        "Widget"
-      ],
-      "badge_labels": [
-        "Gyerekek & tanulás",
-        "Ingyenes kezdés",
-        "Nincs fiók",
-        "Nincs reklám",
-        "Nincs követés",
-        "Privát / eszközön tárolt",
-        "Widget",
-        "App Store · Ingyenes"
-      ],
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
-      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/hu/index.html",
-      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/hu/lumiweather.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Flumiweather%2Fdecision%2Fl%2Fhu%2Findex.html&format=json",
-      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
-      "app_store_id": "6779552704",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/hu/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "Szerezd be a Lumi Weather-t az App Store-ban →",
-      "storefront_facts": {
-        "price": "0",
-        "currency": "HUF",
-        "formatted_price": "Ingyenes"
-      },
-      "guide_cta_label": "Olvasd el a teljes útmutatót",
-      "publisher_disclosure": "Az útmutatót az alkalmazás fejlesztője, a Lumi Studio írta. Az alkalmazásnevek tulajdonosaik védjegyei, és kizárólag azonosítás céljából szerepelnek. Dokumentumokkal, egészséggel, iskolával és munkaszervezéssel kapcsolatos döntéseknél ellenőrizd a hivatalos követelményeket ott, ahol ez lényeges.",
-      "source_persona_query": "best weather app to help parents plan outdoor time with kids",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -2661,6 +2605,62 @@
       "verified_live": true
     },
     {
+      "record_id": "hu:tripplanet",
+      "locale": "hu",
+      "app_key": "tripplanet",
+      "app_name": "Trip Planet: Kids Quest",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "legjobb utazós tevékenység alkalmazás gyerekeknek családi utazáshoz",
+      "decision_context": "A fiatal gyerekekkel utazó szülőknek olyan tevékenységek kellenek, amelyek a csomagolást, várakozást és az új hely felfedezését az utazás részévé teszik, nem újabb stresszforrássá. Ezért készült a Trip Planet: Kids Quest.",
+      "category": "kids",
+      "category_label": "Gyerekek & tanulás",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Ingyenes kezdés",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Nincs reklám",
+        "Privát / eszközön tárolt"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Gyerekek & tanulás",
+        "Ingyenes kezdés",
+        "Offline",
+        "Nincs reklám",
+        "Privát / eszközön tárolt",
+        "App Store · Ingyenes"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/hu/answers/best-travel-activity-app-for-kids-on-family-trips.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/hu/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/hu/tripplanet.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Ftripplanet%2Fdecision%2Fl%2Fhu%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/hu.json",
+      "app_store_id": "6787193643",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
+      "app_store_url": "https://apps.apple.com/hu/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Szerezd be a Trip Planet: Kids Quest-et az App Store-ban →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "HUF",
+        "formatted_price": "Ingyenes"
+      },
+      "guide_cta_label": "Olvasd el a teljes útmutatót",
+      "publisher_disclosure": "Az útmutatót az alkalmazás fejlesztője, a Lumi Studio írta. Az alkalmazásnevek tulajdonosaik védjegyei, és kizárólag azonosítás céljából szerepelnek. Dokumentumokkal, egészséggel, iskolával és munkaszervezéssel kapcsolatos döntéseknél ellenőrizd a hivatalos követelményeket ott, ahol ez lényeges.",
+      "source_persona_query": "best travel activity app for kids on family trips",
+      "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "hu:tripbeelite",
       "locale": "hu",
       "app_key": "tripbeelite",
@@ -2954,8 +2954,8 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Wordmate Lite: szótanulás — Napi öt szó egyetlen percben | iOS App",
       "decision_context": "Szeretnél végre haladni egy nyelvvel, de estére megint elfogy a nap, és egyetlen új szó sem ragadt meg. A Wordmate Lite napi egy percre rövidíti a tanulást, és ezt az egy percet tényleg tartani lehet. Egy foglalkozás öt szó egy kavicsösvényen. Kiválasztod a nyelvet és a témát, végigmész öt szón, meghallgatod a kiejtésüket, a záróképernyőn pedig pontosan azt az öt szót látod, amit az imént megtanultál. Nem kell paklikat építeni, és nem vár rád több száz elmaradt ismétlés. Felnőtteknek készült, akik villamoson, sorban állva vagy lefekvés előtt tanulnak: utazás előtt, állásinterjú előtt, vizsga előtt, vagy egyszerűen azért, mert évek után vissza akarnak térni a nyelvhez. Negyvennégy tanulható nyelv és tizennégy témaútvonal található benne: utazás, munka, vizsgák, hétköznapok, étkezés, éttermek, vásárlás, gyerekek, állásinterjú, egészség, technológia, természet, szórakozás és társasági élet. Minden útvonalnak három szintje van a kezdőtől a haladóig, és rövid egységekre bomlik. Amit meg akarsz tartani, elmentheted a saját szólistádra, téma és szint szerint rendezve. A kiejtést a rendszer beszédhangja mondja ki, és nyelvenként kiválaszthatod, melyik hang szólaljon meg. A napi célod 5, 10, 15 vagy 20 szó lehet, a statisztika pedig mutatja a sorozatot, a leghosszabb sorozatot, a mai és az összes megtanult szót, valamint a haladást minden nyelvben, témában és egységben. Világos és sötét megjelenéssel egyaránt működik, alapból a rendszer beállítását követi, iPaden pedig szinte teljes szélességben, állóban, fekvőben és Split View nézetben is jól használható. Az adatkezelés egyszerű: nincs fiók, nincs bejelentkezés, nem gyűjtünk személyes adatot, nincs külső hirdetés és nincs külső analitika. A haladásod a készülékeden marad, a tanulás pedig internet nélkül is működik. Fizetés nélkül kezdesz: egy választott nyelv, egy útvonal, az első tíz szó kezdő szinten és három mentett szó. A többi útvonal, szint és felület látható marad előnézettel, így rögtön tudod, mit kapsz. Az egyszeri vásárlás feloldja mind a 44 nyelvet, mind a 14 útvonalat, az összes szintet, a korlátlan tanulást és a korlátlan mentett szólistát. Egyszer fizetsz, előfizetés nélkül. Felhasználási feltételek (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
-      "category": "kids",
-      "category_label": "Gyerekek & tanulás",
+      "category": "education",
+      "category_label": "Oktatás",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Ingyenes kezdés",
       "one_time_option": true,
@@ -2974,7 +2974,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Gyerekek & tanulás",
+        "Oktatás",
         "Ingyenes kezdés",
         "Offline",
         "Nincs fiók",

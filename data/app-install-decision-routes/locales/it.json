@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "it",
-  "dateModified": "2026-10-13",
-  "content_digest": "749c46f4e9a5e32aa853a11bd1bc563bc178aaa9e2d6090d21f75a2f2ddef11b",
-  "generation_digest": "9eceb86a45de2118710b286b161af324221deb633f9b5af8d127e5c1d9da302d",
+  "dateModified": "2026-10-15",
+  "content_digest": "fd5f3d83bed26194cc64f6ec4a5d709429c9d140da3d2bd9b68197f19a3d3877",
+  "generation_digest": "29f357f04e5c36afed609d3c4b6aa88f69f5f9414e1cef723cbf8df77e640d66",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -1522,6 +1522,70 @@
       "verified_live": true
     },
     {
+      "record_id": "it:lumiweather",
+      "locale": "it",
+      "app_key": "lumiweather",
+      "app_name": "Lumi Meteo: Previsioni",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "Lumi Meteo: Previsioni — Indice uscita, cosa indossare | iOS App",
+      "decision_context": "Lumi Meteo ti dice a colpo d'occhio se è il momento giusto per uscire, cosa indossare e se ti servono l'ombrello o la crema solare. Invece di controllare temperatura, UV, probabilità di pioggia e vento uno per uno, ottieni un indice di uscita da 0 a 100 e un giudizio chiaro, da una giornata perfetta per uscire a una giornata da passare al chiuso. Tocca l'indice per vedere come temperatura percepita, UV, pioggia e vento lo hanno influenzato. Così ogni consiglio è facile da capire e da verificare. Organizza la giornata in base al meteo Lumi ti indica il momento ideale per uscire, così la passeggiata, la corsa, il giro in bici, il tragitto verso il lavoro o le commissioni del fine settimana cadono nelle ore più piacevoli. Consigli semplici ti dicono quando portare ombrello o impermeabile, quando servono cappello e crema solare e quando una giacca leggera ti aiuta contro il vento. Dove sono disponibili i dati di precipitazione minuto per minuto, Lumi ti avvisa anche quando la pioggia sta per iniziare o per smettere, e ti anticipa quando domani è probabile che piova. Previsioni facili da leggere La schermata Oggi mostra le prossime ore a colpo d'occhio. La vista oraria aggiunge l'andamento della temperatura della giornata con temperatura percepita, probabilità di pioggia, UV e vento per ogni ora, oltre alle previsioni a 7 giorni. La lista per uscire trasforma il meteo in un breve elenco di cosa indossare e cosa portare, dagli occhiali da sole agli stivali da pioggia, e puoi condividerla con un tocco. Il meteo ovunque tu sia Salva i luoghi che frequenti di più, come casa, ufficio o il parco, e passa dall'uno all'altro con un tocco. Aggiungi Lumi come widget alla schermata Home o alla schermata di blocco, controlla la temperatura attuale su Apple Watch e imposta un promemoria giornaliero all'ora che preferisci. Scene che cambiano con il cielo Lumi, un personaggio simpatico, si veste in base al meteo: cappello da sole, impermeabile, sciarpa o ombrello. Le scene illustrate cambiano con il tempo e con l'ora del giorno, dalle giornate di sole e dalle notti serene fino a pioggia, nebbia, temporali e neve. Privacy prima di tutto Non serve un account. Non ci sono pubblicità né strumenti di analisi di terze parti. I tuoi luoghi e le impostazioni restano sul dispositivo, e la posizione viene usata solo per ottenere il meteo dove ti trovi, mai per pubblicità o tracciamento. Un solo sblocco, nessun abbonamento La schermata Oggi, con indice di uscita, giudizio, momento ideale per uscire, consigli e promemoria giornaliero, funziona subito. Uno sblocco unico in-app aggiunge la vista oraria, le previsioni complete a 7 giorni, la lista per uscire, più luoghi salvati e le prossime ore su Apple Watch. Nessun abbonamento, ed è supportata la funzione In famiglia. Lumi Meteo è disponibile in 50 lingue dell'interfaccia e può seguire la lingua del sistema, oppure puoi passare a un'altra lingua dall'app. I dati meteo sono forniti da Apple WeatherKit. Le previsioni hanno valore indicativo, quindi controlla sempre il tempo intorno a te prima di uscire.",
+      "category": "kids",
+      "category_label": "Bambini e apprendimento",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis per iniziare · sblocco unico",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Nessun account",
+        "Nessuna pubblicità",
+        "Nessun tracciamento",
+        "Privato / su dispositivo"
+      ],
+      "device_surfaces": [
+        "widget"
+      ],
+      "device_labels": [
+        "Widget"
+      ],
+      "badge_labels": [
+        "Bambini e apprendimento",
+        "Gratis per iniziare · sblocco unico",
+        "Nessun account",
+        "Nessuna pubblicità",
+        "Nessun tracciamento",
+        "Privato / su dispositivo",
+        "Widget",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/lumiweather.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/it/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/it/lumiweather.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Flumiweather%2Fdecision%2Fl%2Fit%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/it.json",
+      "app_store_id": "6779552704",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
+      "app_store_url": "https://apps.apple.com/it/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Scarica Lumi Meteo: Previsioni sull'App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Leggi la guida completa",
+      "publisher_disclosure": "Questo contenuto è pubblicato direttamente da Lumi Studio, lo sviluppatore di tutte le app elencate.",
+      "source_persona_query": "weather app to help me plan when to go outside",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "it:lumimission",
       "locale": "it",
       "app_key": "lumimission",
@@ -1630,126 +1694,6 @@
       "guide_cta_label": "Leggi la guida completa",
       "publisher_disclosure": "Guida redatta dall'editore Lumi Studio, lo sviluppatore dell'app. I nomi delle app sono marchi dei rispettivi proprietari e sono usati solo a scopo identificativo. Per decisioni che riguardano documenti, salute, scuola e produttività, verifica i requisiti ufficiali quando è rilevante.",
       "source_persona_query": "best complete morning and bedtime routine app for kids",
-      "source_surface": "answer_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
-      "record_id": "it:tripplanet",
-      "locale": "it",
-      "app_key": "tripplanet",
-      "app_name": "Trip Planet: Kids Quest",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "miglior app attività viaggio per bambini in vacanza in famiglia",
-      "decision_context": "I genitori in viaggio con bambini piccoli hanno bisogno di attività che trasformino bagaglio, attesa e scoperta di un nuovo posto in parte dell’avventura invece che fonte di stress. È per questo che esiste Trip Planet: Kids Quest.",
-      "category": "kids",
-      "category_label": "Bambini e apprendimento",
-      "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis per iniziare · sblocco unico",
-      "one_time_option": true,
-      "privacy_facts": [
-        "offline",
-        "no_ads",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Offline",
-        "Nessuna pubblicità",
-        "Privato / su dispositivo"
-      ],
-      "device_surfaces": [],
-      "device_labels": [],
-      "badge_labels": [
-        "Bambini e apprendimento",
-        "Gratis per iniziare · sblocco unico",
-        "Offline",
-        "Nessuna pubblicità",
-        "Privato / su dispositivo",
-        "App Store · Gratis"
-      ],
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/answers/best-travel-activity-app-for-kids-on-family-trips.html",
-      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/it/index.html",
-      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/it/tripplanet.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Ftripplanet%2Fdecision%2Fl%2Fit%2Findex.html&format=json",
-      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/it.json",
-      "app_store_id": "6787193643",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
-      "app_store_url": "https://apps.apple.com/it/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "Scarica Trip Planet: Kids Quest su App Store →",
-      "storefront_facts": {
-        "price": "0",
-        "currency": "EUR",
-        "formatted_price": "Gratis"
-      },
-      "guide_cta_label": "Leggi la guida completa",
-      "publisher_disclosure": "Guida redatta dall'editore Lumi Studio, lo sviluppatore dell'app. I nomi delle app sono marchi dei rispettivi proprietari e sono usati solo a scopo identificativo. Per decisioni che riguardano documenti, salute, scuola e produttività, verifica i requisiti ufficiali quando è rilevante.",
-      "source_persona_query": "best travel activity app for kids on family trips",
-      "source_surface": "answer_page",
-      "query_origin": "publisher_authored_editorially_localized",
-      "measured_search_volume": false,
-      "is_ranking": false,
-      "verified_live": true
-    },
-    {
-      "record_id": "it:lumiweather",
-      "locale": "it",
-      "app_key": "lumiweather",
-      "app_name": "Lumi Weather",
-      "priority_rank": null,
-      "priority_group": "baseline_coverage",
-      "publisher_query": "miglior app meteo per aiutare i genitori a pianificare attività all’aperto con bambini",
-      "decision_context": "I genitori che pianificano attività all’aperto hanno bisogno di più della temperatura: serve una vista rapida e adatta all’età su condizioni e abbigliamento. È per questo che esiste Lumi Weather.",
-      "category": "kids",
-      "category_label": "Bambini e apprendimento",
-      "purchase_model": "free_with_lifetime_unlock",
-      "purchase_label": "Gratis per iniziare · sblocco unico",
-      "one_time_option": true,
-      "privacy_facts": [
-        "no_account",
-        "no_ads",
-        "no_tracking",
-        "private_or_on_device"
-      ],
-      "privacy_labels": [
-        "Nessun account",
-        "Nessuna pubblicità",
-        "Nessun tracciamento",
-        "Privato / su dispositivo"
-      ],
-      "device_surfaces": [
-        "widget"
-      ],
-      "device_labels": [
-        "Widget"
-      ],
-      "badge_labels": [
-        "Bambini e apprendimento",
-        "Gratis per iniziare · sblocco unico",
-        "Nessun account",
-        "Nessuna pubblicità",
-        "Nessun tracciamento",
-        "Privato / su dispositivo",
-        "Widget",
-        "App Store · Gratis"
-      ],
-      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html",
-      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/it/index.html",
-      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/it/lumiweather.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Flumiweather%2Fdecision%2Fl%2Fit%2Findex.html&format=json",
-      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/it.json",
-      "app_store_id": "6779552704",
-      "canonical_app_store_url": "https://apps.apple.com/app/id6779552704",
-      "app_store_url": "https://apps.apple.com/it/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-      "app_store_cta_label": "Scarica Lumi Weather su App Store →",
-      "storefront_facts": {
-        "price": "0",
-        "currency": "EUR",
-        "formatted_price": "Gratis"
-      },
-      "guide_cta_label": "Leggi la guida completa",
-      "publisher_disclosure": "Guida redatta dall'editore Lumi Studio, lo sviluppatore dell'app. I nomi delle app sono marchi dei rispettivi proprietari e sono usati solo a scopo identificativo. Per decisioni che riguardano documenti, salute, scuola e produttività, verifica i requisiti ufficiali quando è rilevante.",
-      "source_persona_query": "best weather app to help parents plan outdoor time with kids",
       "source_surface": "answer_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -2667,6 +2611,62 @@
       "verified_live": true
     },
     {
+      "record_id": "it:tripplanet",
+      "locale": "it",
+      "app_key": "tripplanet",
+      "app_name": "Trip Planet: Kids Quest",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "miglior app attività viaggio per bambini in vacanza in famiglia",
+      "decision_context": "I genitori in viaggio con bambini piccoli hanno bisogno di attività che trasformino bagaglio, attesa e scoperta di un nuovo posto in parte dell’avventura invece che fonte di stress. È per questo che esiste Trip Planet: Kids Quest.",
+      "category": "kids",
+      "category_label": "Bambini e apprendimento",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis per iniziare · sblocco unico",
+      "one_time_option": true,
+      "privacy_facts": [
+        "offline",
+        "no_ads",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Offline",
+        "Nessuna pubblicità",
+        "Privato / su dispositivo"
+      ],
+      "device_surfaces": [],
+      "device_labels": [],
+      "badge_labels": [
+        "Bambini e apprendimento",
+        "Gratis per iniziare · sblocco unico",
+        "Offline",
+        "Nessuna pubblicità",
+        "Privato / su dispositivo",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/it/answers/best-travel-activity-app-for-kids-on-family-trips.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/it/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/it/tripplanet.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Ftripplanet%2Fdecision%2Fl%2Fit%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/it.json",
+      "app_store_id": "6787193643",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6787193643",
+      "app_store_url": "https://apps.apple.com/it/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Scarica Trip Planet: Kids Quest su App Store →",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Leggi la guida completa",
+      "publisher_disclosure": "Guida redatta dall'editore Lumi Studio, lo sviluppatore dell'app. I nomi delle app sono marchi dei rispettivi proprietari e sono usati solo a scopo identificativo. Per decisioni che riguardano documenti, salute, scuola e produttività, verifica i requisiti ufficiali quando è rilevante.",
+      "source_persona_query": "best travel activity app for kids on family trips",
+      "source_surface": "answer_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
       "record_id": "it:tripbeelite",
       "locale": "it",
       "app_key": "tripbeelite",
@@ -2960,8 +2960,8 @@
       "priority_group": "baseline_coverage",
       "publisher_query": "Wordmate Lite: vocabolario — Cinque parole al giorno | iOS App",
       "decision_context": "Cinque parole, un minuto, un passo visibile sul tuo percorso. Wordmate Lite prende quel proposito vago di imparare finalmente una lingua e lo riduce a un gesto abbastanza piccolo da entrare in qualsiasi giornata. Ogni sessione è un sentiero di cinque parole, non una di più. Alla fine lo schermo ti mostra esattamente le cinque che hai appena imparato. Nessun mazzo di carte da costruire, nessuna coda di ripassi arretrati che ti aspetta, nessun senso di colpa se salti due giorni. È pensato per chi lavora, studia o viaggia e non ha mai un'ora libera di fila, ma trova un minuto in metropolitana, durante la pausa caffè o prima di dormire. Dentro ci sono 44 lingue di studio e 14 mondi presi dalla vita reale: viaggio, lavoro, esami, vita quotidiana, ristorante, spesa, bambini, colloquio, salute, tecnologia, natura, tempo libero, vita sociale e cucina. Tre livelli ti accompagnano dal principiante all'avanzato. Ogni parola si ascolta: la pronuncia usa le voci di sistema del tuo iPhone e sei tu a scegliere quale voce parla in ogni lingua. Le parole che vuoi tenere finiscono nella lista salvata, ordinata per tema e per livello. Gli anelli di avanzamento seguono ogni tema e ogni unità, insieme alla serie in corso, al record, alle parole imparate oggi e ai progressi lingua per lingua. L'obiettivo giornaliero si imposta su cinque, dieci, quindici o venti parole. L'aspetto chiaro o scuro segue il sistema. Su iPad trovi una sola colonna quasi a tutta larghezza, in verticale, in orizzontale e in Split View. Tutto funziona senza rete, in aereo come in galleria. Nessun account, nessuna registrazione. Non vengono raccolti dati personali, non c'è pubblicità di terze parti e non ci sono strumenti di tracciamento esterni. I tuoi dati restano sul dispositivo. Senza pagare nulla tieni una lingua, un percorso, le prime dieci parole del livello principiante e fino a tre parole salvate. Tutto il resto resta visibile, con un lucchetto o con una vera anteprima. Un acquisto unico apre tutte le 44 lingue, i 14 percorsi, tutti i livelli, lo studio senza limiti e la lista salvata senza limiti. Paghi una volta sola e resta tuo, senza abbonamento. Termini di utilizzo (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
-      "category": "kids",
-      "category_label": "Bambini e apprendimento",
+      "category": "education",
+      "category_label": "Istruzione",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Gratis per iniziare · sblocco unico",
       "one_time_option": true,
@@ -2980,7 +2980,7 @@
       "device_surfaces": [],
       "device_labels": [],
       "badge_labels": [
-        "Bambini e apprendimento",
+        "Istruzione",
         "Gratis per iniziare · sblocco unico",
         "Offline",
         "Nessun account",

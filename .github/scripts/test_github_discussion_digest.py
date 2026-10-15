@@ -282,7 +282,7 @@ class PublisherDecisionTests(unittest.TestCase):
         self.assertEqual("deferred", result.action)
         update.assert_not_called()
 
-    def test_due_update_fails_before_mutation_without_capability(self):
+    def _due_existing(self) -> dict[str, object]:
         old_resources = digest.select_resources(
             feed([item("/ios-app-guide/data/old.html")]),
             html_loader=html_loader,
@@ -290,12 +290,27 @@ class PublisherDecisionTests(unittest.TestCase):
         old = digest.render_digest(old_resources, OLD_SOURCE_SHA)
         existing = discussion(old, updated_at="2026-06-01T00:00:00Z")
         existing["viewerCanUpdate"] = False
+        return existing
+
+    def test_due_update_fails_before_mutation_without_capability(self):
+        existing = self._due_existing()
+        still_denied = copy.deepcopy(existing)
+        still_denied["locked"] = False
         now = dt.datetime(2026, 7, 29, tzinfo=dt.timezone.utc)
+        calls: list[str] = []
         with (
             mock.patch.object(
                 digest,
                 "load_repository_state",
-                return_value=state(existing),
+                side_effect=(state(existing), state(still_denied)),
+            ),
+            mock.patch.object(
+                digest, "_unlock_discussion",
+                side_effect=lambda *_: calls.append("unlock"),
+            ),
+            mock.patch.object(
+                digest, "_lock_discussion",
+                side_effect=lambda *_: calls.append("lock"),
             ),
             mock.patch.object(digest, "_update_discussion") as update,
         ):
@@ -307,6 +322,131 @@ class PublisherDecisionTests(unittest.TestCase):
                     now=now,
                 )
         update.assert_not_called()
+        self.assertEqual(["unlock", "lock"], calls)
+
+    def test_locked_post_without_capability_is_updated_via_temporary_unlock(self):
+        existing = self._due_existing()
+        unlocked = copy.deepcopy(existing)
+        unlocked["locked"] = False
+        unlocked["viewerCanUpdate"] = True
+        relocked = discussion(self.rendered)
+        relocked["viewerCanUpdate"] = False
+        now = dt.datetime(2026, 10, 3, tzinfo=dt.timezone.utc)
+        calls: list[str] = []
+        with (
+            mock.patch.object(
+                digest,
+                "load_repository_state",
+                side_effect=(state(existing), state(unlocked), state(relocked)),
+            ),
+            mock.patch.object(
+                digest, "_unlock_discussion",
+                side_effect=lambda *_: calls.append("unlock"),
+            ),
+            mock.patch.object(
+                digest, "_lock_discussion",
+                side_effect=lambda *_: calls.append("lock"),
+            ),
+            mock.patch.object(
+                digest, "_update_discussion",
+                side_effect=lambda *a, **k: calls.append(
+                    f"update:locked={k.get('require_locked')}"
+                ),
+            ),
+        ):
+            result = digest.publish(
+                mock.sentinel.client,
+                self.rendered,
+                bootstrap=False,
+                now=now,
+            )
+        self.assertEqual("updated", result.action)
+        self.assertEqual(["unlock", "update:locked=False", "lock"], calls)
+
+    def test_temporary_unlock_relocks_when_update_fails(self):
+        existing = self._due_existing()
+        unlocked = copy.deepcopy(existing)
+        unlocked["locked"] = False
+        unlocked["viewerCanUpdate"] = True
+        now = dt.datetime(2026, 10, 3, tzinfo=dt.timezone.utc)
+        calls: list[str] = []
+
+        def failing_update(*_args, **_kwargs):
+            calls.append("update")
+            raise digest.PublisherError("update rejected")
+
+        with (
+            mock.patch.object(
+                digest,
+                "load_repository_state",
+                side_effect=(state(existing), state(unlocked)),
+            ),
+            mock.patch.object(
+                digest, "_unlock_discussion",
+                side_effect=lambda *_: calls.append("unlock"),
+            ),
+            mock.patch.object(
+                digest, "_lock_discussion",
+                side_effect=lambda *_: calls.append("lock"),
+            ),
+            mock.patch.object(
+                digest, "_update_discussion", side_effect=failing_update,
+            ),
+        ):
+            with self.assertRaisesRegex(digest.PublisherError, "update rejected"):
+                digest.publish(
+                    mock.sentinel.client,
+                    self.rendered,
+                    bootstrap=False,
+                    now=now,
+                )
+        self.assertEqual(["unlock", "update", "lock"], calls)
+
+    def test_temporary_unlock_refuses_body_changed_while_unlocked(self):
+        existing = self._due_existing()
+        tampered = copy.deepcopy(existing)
+        tampered["locked"] = False
+        tampered["viewerCanUpdate"] = True
+        tampered["body"] = digest.render_digest(
+            self.rendered.resources, OLD_SOURCE_SHA
+        ).body
+        now = dt.datetime(2026, 10, 3, tzinfo=dt.timezone.utc)
+        with (
+            mock.patch.object(
+                digest,
+                "load_repository_state",
+                side_effect=(state(existing), state(tampered)),
+            ),
+            mock.patch.object(digest, "_unlock_discussion"),
+            mock.patch.object(digest, "_lock_discussion") as lock,
+            mock.patch.object(digest, "_update_discussion") as update,
+        ):
+            with self.assertRaisesRegex(digest.PublisherError, "changed while"):
+                digest.publish(
+                    mock.sentinel.client,
+                    self.rendered,
+                    bootstrap=False,
+                    now=now,
+                )
+        update.assert_not_called()
+        lock.assert_called_once()
+
+    def test_unlock_mutation_requires_exact_confirmation(self):
+        client = mock.Mock()
+        client.execute.return_value = {
+            "unlockLockable": {
+                "unlockedRecord": {
+                    "id": "D_kwDOExample",
+                    "locked": False,
+                    "url": "https://github.com/alice51849/ios-app-guide/discussions/1",
+                }
+            }
+        }
+        digest._unlock_discussion(client, "D_kwDOExample")
+        self.assertEqual(2, client.execute.call_args.kwargs["mutation_reserve"])
+        client.execute.return_value["unlockLockable"]["unlockedRecord"]["locked"] = True
+        with self.assertRaisesRegex(digest.PublisherError, "unlock"):
+            digest._unlock_discussion(client, "D_kwDOExample")
 
     def test_graphql_actions_bot_login_is_approved(self):
         existing = discussion(self.rendered)

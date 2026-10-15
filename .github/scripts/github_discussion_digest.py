@@ -151,6 +151,20 @@ mutation LockManagedDiscussion($id: ID!) {
 }
 """
 
+UNLOCK_DISCUSSION_MUTATION = """
+mutation UnlockManagedDiscussion($id: ID!) {
+  unlockLockable(input: {lockableId: $id}) {
+    unlockedRecord {
+      ... on Discussion {
+        id
+        locked
+        url
+      }
+    }
+  }
+}
+"""
+
 UPDATE_DISCUSSION_MUTATION = """
 mutation UpdateManagedDiscussion($id: ID!, $body: String!) {
   updateDiscussion(input: {discussionId: $id, body: $body}) {
@@ -791,6 +805,25 @@ def _create_discussion(
     return discussion
 
 
+def _unlock_discussion(client: GraphQLClient, discussion_id: str) -> None:
+    # Reserve room for the update and the mandatory re-lock that follow.
+    data = client.execute(
+        UNLOCK_DISCUSSION_MUTATION,
+        {"id": discussion_id},
+        mutation=True,
+        mutation_reserve=2,
+    )
+    payload = data.get("unlockLockable")
+    unlocked = payload.get("unlockedRecord") if isinstance(payload, dict) else None
+    if (
+        not isinstance(unlocked, dict)
+        or unlocked.get("id") != discussion_id
+        or unlocked.get("locked") is not False
+    ):
+        raise PublisherError("unlockLockable did not confirm the exact Discussion unlock")
+    _discussion_url(unlocked.get("url"))
+
+
 def _lock_discussion(client: GraphQLClient, discussion_id: str) -> None:
     data = client.execute(
         LOCK_DISCUSSION_MUTATION,
@@ -813,11 +846,15 @@ def _update_discussion(
     discussion_id: str,
     rendered: RenderedDigest,
     category_id: str,
+    *,
+    require_locked: bool = True,
+    mutation_reserve: int = 0,
 ) -> None:
     data = client.execute(
         UPDATE_DISCUSSION_MUTATION,
         {"id": discussion_id, "body": rendered.body},
         mutation=True,
+        mutation_reserve=mutation_reserve,
     )
     payload = data.get("updateDiscussion")
     discussion = payload.get("discussion") if isinstance(payload, dict) else None
@@ -826,8 +863,57 @@ def _update_discussion(
     _validate_existing(
         discussion,
         category_id=category_id,
-        require_locked=True,
+        require_locked=require_locked,
     )
+
+
+def _update_via_temporary_unlock(
+    client: GraphQLClient,
+    discussion: Mapping[str, object],
+    rendered: RenderedDigest,
+    category_id: str,
+) -> None:
+    """Update a locked managed Discussion the workflow token cannot edit while locked.
+
+    GitHub reports viewerCanUpdate=false for a locked Discussion to the Actions
+    token even when that token authored it. The token can still lock/unlock it
+    (the same permission bootstrap uses), so unlock, re-verify that the token
+    may now update the unchanged post, update it, and always re-lock.
+    """
+
+    discussion_id = _valid_node_id(discussion.get("id"), label="Discussion")
+    original_body = discussion.get("body")
+    _unlock_discussion(client, discussion_id)
+    try:
+        unlocked_state = load_repository_state(client)
+        if len(unlocked_state.managed) != 1:
+            raise PublisherError("Unlock verification did not find exactly one Discussion")
+        current = unlocked_state.managed[0]
+        if current.get("id") != discussion_id or current.get("body") != original_body:
+            raise PublisherError("Managed Discussion changed while it was unlocked")
+        _validate_existing(
+            current,
+            category_id=unlocked_state.category_id,
+            require_locked=False,
+        )
+        _update_discussion(
+            client,
+            discussion_id,
+            rendered,
+            unlocked_state.category_id,
+            require_locked=False,
+            mutation_reserve=1,
+        )
+    except PublisherError as error:
+        try:
+            _lock_discussion(client, discussion_id)
+        except PublisherError as lock_error:
+            raise _lock_failure_details(client, lock_error) from error
+        raise
+    try:
+        _lock_discussion(client, discussion_id)
+    except PublisherError as error:
+        raise _lock_failure_details(client, error) from error
 
 
 def _verify_rendered_discussion(
@@ -983,25 +1069,36 @@ def publish(
             ),
         )
 
-    _validate_existing(
-        discussion,
-        category_id=state.category_id,
-        require_locked=True,
-    )
-    discussion_id = _valid_node_id(discussion.get("id"), label="Discussion")
-    _update_discussion(
-        client,
-        discussion_id,
-        rendered,
-        state.category_id,
-    )
+    if discussion.get("viewerCanUpdate") is True:
+        _validate_existing(
+            discussion,
+            category_id=state.category_id,
+            require_locked=True,
+        )
+        discussion_id = _valid_node_id(discussion.get("id"), label="Discussion")
+        _update_discussion(
+            client,
+            discussion_id,
+            rendered,
+            state.category_id,
+        )
+    else:
+        _update_via_temporary_unlock(
+            client,
+            discussion,
+            rendered,
+            state.category_id,
+        )
     verified = load_repository_state(client)
     if len(verified.managed) != 1:
         raise PublisherError("Update verification did not find exactly one Discussion")
+    # The re-locked post may again report viewerCanUpdate=false; exact body,
+    # digest, lock and zero-comment checks still apply.
     verified_url = _verify_rendered_discussion(
         verified.managed[0],
         rendered=rendered,
         category_id=verified.category_id,
+        require_viewer_update=False,
     )
     return PublicationResult(
         action="updated",

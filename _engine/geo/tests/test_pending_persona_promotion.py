@@ -22,7 +22,6 @@ LAUNCH_CANDIDATES = {
     "gbago": ("6804564400", "GBAGo"),
     "studydown": ("6807335593", "Studydown"),
     "claudeusagemini": ("6818607603", "UsageNow"),
-    "lensafe": ("6822961295", "Lensafe"),
 }
 FIELDS = {"query", "guide_title", "triggers", "persona", "lead", "paras",
           "look", "steps", "fits", "faq"}
@@ -45,10 +44,6 @@ FORBIDDEN = {
                         "real-time"),
     "easyam": ("apple watch", "unlimited free", "android", "guaranteed",
                "never miss", "official holiday data from"),
-    "lensafe": ("guarantee", "100%", "100 %", "magnet", "lidar", "airbnb",
-                "accuracy", "accurate", "detects microphones", "finds every",
-                "catches every", "room is safe", "is safe", "secure",
-                "free download", "free trial", "ai-powered", "android"),
 }
 REQUIRED = {
     "dbhalo": ("not a certified",),
@@ -60,9 +55,6 @@ REQUIRED = {
     "claudeusagemini": ("not affiliated with", "24-hour trial",
                         "one-time purchase", "no subscription"),
     "easyam": ("alarmkit", "workday", "offline", "no subscription"),
-    "lensafe": ("no in-app purchases", "no subscription", "no free version",
-                "on the device", "does not mean a room has no camera",
-                "ios 26"),
 }
 
 

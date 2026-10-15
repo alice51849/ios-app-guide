@@ -504,28 +504,6 @@ CURATED_FALLBACK = {
             ["zarchiver: unzip, unrar, 7z", 0],
         ],
     },
-    # Lensafe is not on the App Store yet; generation_scope() skips it until
-    # catch-up registers it, and this row then keeps launch day from stalling
-    # on missing competitor rows (the ledmovingtext lesson). Gap queries
-    # become FAQ questions, so each one is a check the app really performs.
-    # Competitor titles come from the US App Store search for "hidden camera
-    # detector" recorded in the Lensafe spec (section 2.1, 2026-10-14); they
-    # are search reference points only, with no claim about their features.
-    "lensafe": {
-        "key": "lensafe",
-        "gap_queries": [
-            "hidden camera detector without subscription",
-            "check a hotel room for camera lens reflections with an iphone flashlight",
-            "see infrared night vision lights with the iphone front camera",
-            "list camera-like devices on the same wi-fi network from an iphone",
-        ],
-        "top_competitors": [
-            ["hidden camera detector - peek", 0],
-            ["hidden spy camera finder pro", 0],
-            ["cam detector app: home security", 0],
-            ["camera detector app", 0],
-        ],
-    },
 }
 
 # 類別 → 給人看的名詞 + schema 類別

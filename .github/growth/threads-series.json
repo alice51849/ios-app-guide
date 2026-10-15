@@ -1,0 +1,260 @@
+{
+ "note": "Template + data series for the Threads evening slot (threads-post.yml, 13:00 UTC = Taiwan 21:00 = US Eastern 9:00). One post a day in this slot, shared with the hook clip it replaces; the account stays at 3 posts a day (09:40 hook clip, 11:00 queued/countdown/picture, 21:00 this slot). Body has no links; the App Store link (with the series ct) goes in the first reply. Facts follow the live App Store copy checked 2026-10-15 (iTunes Lookup). Source: 00_GrowthEngine reports/benchmark_top1_checklist_2026-10-15.md BM-11, BM-17, BM-22.",
+ "daily_cap": 3,
+ "priority_clip_apps": [
+  "claudeusagemini"
+ ],
+ "rotation": [
+  "lumiweather_tomorrow",
+  "mochi_checklist"
+ ],
+ "series": {
+  "usagenow_policy": {
+   "bm": "BM-11",
+   "app": "claudeusagemini",
+   "app_id": "6818607603",
+   "ct": "bm_usagenow_us_x",
+   "locale": "en-US",
+   "audience": "US developers who code with Claude every day and hit the 5-hour or weekly limit; they pay to stop being surprised mid-task.",
+   "status": "held",
+   "hold_reason": "UsageNow (claudeusagemini) is still in threads-autopilot live_roster.PENDING_ONBOARDING; set status to live only after its reviewed social source is sealed there.",
+   "template": "Claude usage limits changed today: {headline}\n\nWhat it means if you code with Claude:\n• {impact_1}\n• {impact_2}\n\nSource: {source_name}, {source_date}.\n\nUsageNow shows the 5-hour and weekly limits with a countdown to each reset and alerts at the percent you pick. 24-hour free trial, then a one-time unlock. Not affiliated with Anthropic. Link in the reply.",
+   "event_fields": [
+    "date",
+    "headline",
+    "impact_1",
+    "impact_2",
+    "source_name",
+    "source_date",
+    "source_url"
+   ],
+   "events": [],
+   "field_max": {
+    "date": 10,
+    "headline": 55,
+    "impact_1": 50,
+    "impact_2": 50,
+    "source_name": 25,
+    "source_date": 12,
+    "source_url": 300
+   },
+   "image_note": "Optional image_url per event: an explainer card on open.cait518.cc (no app screens; app screens must be real recordings)."
+  },
+  "mochi_checklist": {
+   "bm": "BM-17",
+   "app": "mochi",
+   "app_id": "6785004775",
+   "ct": "bm_mochi_us_th",
+   "locale": "en-US",
+   "audience": "US students, young women and ADHD-leaning planners on Threads who like cute, low-pressure to-do lists; the free version fits a 4-task list, Premium unlocks unlimited lists and all themes.",
+   "status": "live",
+   "template": "Today's #MochiChecklist: {title}\n\n○ {item_1}\n○ {item_2}\n○ {item_3}\n○ {item_4}\n\n{tip}\n\nFour tasks is exactly what one list holds in the free version of Mochi (2 lists, up to 4 tasks each). Tap the little circle as you finish each one.\nWhat's on your list today?",
+   "lists": [
+    {
+     "title": "Monday reset",
+     "items": [
+      "Clear the kitchen counter",
+      "Check this week's calendar",
+      "Pick 3 must-dos for the week",
+      "Fill your water bottle"
+     ],
+     "tip": "Small and specific beats long and vague."
+    },
+    {
+     "title": "ADHD-friendly morning",
+     "items": [
+      "Meds and a glass of water",
+      "Phone, keys, wallet by the door",
+      "Eat something with protein",
+      "One look at today's plan"
+     ],
+     "tip": "Put the list where you'll see it before you need it."
+    },
+    {
+     "title": "15-minute room reset",
+     "items": [
+      "Trash in one bag",
+      "Dishes to the sink",
+      "Clothes to the hamper",
+      "Clear one surface"
+     ],
+     "tip": "Set a timer; stop when it rings, even if you're not done."
+    },
+    {
+     "title": "Study session",
+     "items": [
+      "Phone in another room",
+      "Open only the notes you need",
+      "25 minutes on one topic",
+      "Write 3 things you learned"
+     ],
+     "tip": "Start with the easiest task to get moving."
+    },
+    {
+     "title": "Grocery run",
+     "items": [
+      "Check the fridge first",
+      "Breakfast for 5 days",
+      "Two easy dinners",
+      "Snacks you'll actually eat"
+     ],
+     "tip": "Shop from the list, not from the aisles."
+    },
+    {
+     "title": "Weekend trip packing",
+     "items": [
+      "Chargers and a power bank",
+      "Toiletries in one pouch",
+      "One outfit per day plus a spare",
+      "ID and tickets"
+     ],
+     "tip": "Pack the night before, not the morning of."
+    },
+    {
+     "title": "Sunday reset",
+     "items": [
+      "Laundry started",
+      "Bag packed for Monday",
+      "Plan 2 meals",
+      "Lights out 30 minutes earlier"
+     ],
+     "tip": "Future you will thank tonight's you."
+    },
+    {
+     "title": "Work-from-home day",
+     "items": [
+      "Get dressed",
+      "Top 3 tasks written down",
+      "Lunch away from the desk",
+      "Close the laptop at a set time"
+     ],
+     "tip": "A clear end time makes the day feel finished."
+    },
+    {
+     "title": "Self-care evening",
+     "items": [
+      "Shower and skincare",
+      "Tidy the nightstand",
+      "Lay out tomorrow's clothes",
+      "No screens for the last 20 minutes"
+     ],
+     "tip": "Rest counts as a task too."
+    },
+    {
+     "title": "Errand day",
+     "items": [
+      "Return the package",
+      "Pharmacy pickup",
+      "Refill gas or transit card",
+      "Pay the one bill you keep forgetting"
+     ],
+     "tip": "Group errands by location to save trips."
+    },
+    {
+     "title": "Moving week",
+     "items": [
+      "Label boxes by room",
+      "Forward your mail",
+      "Pack an open-first box",
+      "Photo the meter readings"
+     ],
+     "tip": "One box a day adds up fast."
+    },
+    {
+     "title": "Low-energy day",
+     "items": [
+      "Drink water",
+      "Eat a real meal",
+      "Answer one message",
+      "Step outside for 5 minutes"
+     ],
+     "tip": "Doing less on purpose is still a plan."
+    },
+    {
+     "title": "Exam week",
+     "items": [
+      "List every topic",
+      "Practice test on the hardest one",
+      "Sleep 8 hours",
+      "Pack pens and ID the night before"
+     ],
+     "tip": "Review mistakes, not just notes."
+    },
+    {
+     "title": "Before bed",
+     "items": [
+      "Charge your phone",
+      "Set tomorrow's alarm",
+      "Write tomorrow's first task",
+      "Glass of water on the nightstand"
+     ],
+     "tip": "A 2-minute plan tonight saves 20 minutes tomorrow."
+    }
+   ]
+  },
+  "lumiweather_tomorrow": {
+   "bm": "BM-22",
+   "app": "lumiweather",
+   "app_id": "6779552704",
+   "ct": "bm_lumiweather_tw_th",
+   "locale": "zh-Hant",
+   "audience": "Taiwan commuters and parents checking at night what they and their kids should wear tomorrow, especially on cold-front and seasonal-change days.",
+   "status": "live",
+   "forecast_source": "MET Norway",
+   "cities": [
+    {
+     "name": "台北",
+     "lat": 25.04,
+     "lon": 121.53
+    },
+    {
+     "name": "台中",
+     "lat": 24.15,
+     "lon": 120.67
+    },
+    {
+     "name": "高雄",
+     "lat": 22.63,
+     "lon": 120.3
+    }
+   ],
+   "triggers": {
+    "min_le": 18,
+    "max_ge": 33,
+    "range_ge": 10,
+    "rain_mm_ge": 1.0
+   },
+   "bands": [
+    {
+     "text": "很冷：發熱衣＋毛衣＋厚外套，圍巾手套一起帶；孩子再多一層。",
+     "mean_le": 12
+    },
+    {
+     "text": "偏冷：長袖＋毛衣或刷毛，外面加一件防風外套。",
+     "mean_le": 16
+    },
+    {
+     "text": "早晚涼：長袖＋薄外套，洋蔥式穿法方便調整。",
+     "mean_le": 20
+    },
+    {
+     "text": "舒服：短袖或薄長袖，進冷氣房帶一件薄外套。",
+     "mean_le": 24
+    },
+    {
+     "text": "溫暖：短袖就好，室內冷氣強的話帶件薄外套。",
+     "mean_le": 27
+    },
+    {
+     "text": "炎熱：短袖、透氣材質，帽子、防曬和水都要帶。",
+     "mean_le": 99
+    }
+   ],
+   "range_line": "日夜溫差 {range} 度，早上出門多帶一件。",
+   "rain_line": "{cities}明天可能下雨，記得帶傘。",
+   "template": "明天（{date}）穿什麼？\n\n{city_lines}\n\n以台北來說，{outfit}{extra}\n\n#明天穿什麼 #天氣\n預報：{source}，僅供參考，出門前以實際天氣為準。\n\n我做的 Lumi天氣星球 會把體感溫度、紫外線、降雨和風綜合成 0 到 100 的外出指數，再提醒要不要帶傘、擦防曬。今日頁免費；逐時、一週預報和出門準備清單是 App 內一次解鎖，沒有訂閱。連結在留言。",
+   "range_line_ge": 8,
+   "bands_note": "Band by Taipei's (min+max)/2; triggers decide whether weather takes the slot outside its rotation day."
+  }
+ }
+}

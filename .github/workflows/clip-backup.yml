@@ -51,12 +51,18 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: python3 .github/scripts/clip_posts.py instagram --slot "${{ steps.slot.outputs.slot }}"
       - name: Threads
-        if: steps.slot.outputs.slot != ''
+        # Only the 01:xx slot: the Threads evening slot (13:00 UTC) belongs to
+        # threads_series.py, which posts the slot-15 clip itself when no series
+        # post is due; a 17:47 backup would land after Taiwan midnight and make
+        # a 4th post. The account cap (3 a day, Taiwan date) is checked first.
+        if: steps.slot.outputs.slot == '1'
         continue-on-error: true
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
-        run: python3 .github/scripts/clip_posts.py threads --slot "${{ steps.slot.outputs.slot }}"
+        run: |
+          python3 .github/scripts/threads_series.py room || { echo "Threads: account at its daily cap; skipped"; exit 0; }
+          python3 .github/scripts/clip_posts.py threads --slot 1
       - name: Record the post links on the promotion page
         if: steps.slot.outputs.slot != ''
         run: |

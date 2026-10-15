@@ -93,7 +93,10 @@ class ThreadsCapTest(unittest.TestCase):
         day = dt.date(2026, 10, 20)
         self.assertEqual(U.threads_planned(day, self.schedule(2)), 3)
         self.assertFalse(U.threads_has_room(day, self.schedule(2)))
-        self.assertTrue(U.threads_has_room(day, self.schedule(1)))
+        # The 21:00 evening slot (threads_series.py or the slot-15 clip) always takes one post.
+        self.assertFalse(U.threads_has_room(day, self.schedule(1)))
+        self.assertEqual(U.threads_planned(day, self.schedule(0)), 2)
+        self.assertTrue(U.threads_has_room(day, self.schedule(0)))
         self.assertTrue(U.threads_has_room(day, Path("/nonexistent.json")))
 
     def test_full_threads_day_posts_nothing_there(self):

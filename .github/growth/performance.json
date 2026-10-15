@@ -1,0 +1,745 @@
+{
+  "updated_at": "2026-10-15T04:24:53Z",
+  "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
+  "sources": {
+    "instagram": "ok: 0 posts",
+    "threads": "ok: 19 posts"
+  },
+  "boost": [
+    "battai",
+    "unblurry",
+    "onepageppt",
+    "notesstudio100",
+    "wifiaidlite"
+  ],
+  "demote": [
+    "hourstaglite",
+    "shotinbox",
+    "hourstag",
+    "scanto",
+    "countdaysnow"
+  ],
+  "hook_winners": {
+    "apps": {},
+    "locales": {},
+    "global": null
+  },
+  "allocation": {
+    "threshold": 20.0,
+    "window": 14,
+    "channels": {},
+    "best": null,
+    "reduced": [],
+    "decision": "等資料：每通路需 14 則有洞察的鉤子片（目前 0）"
+  },
+  "best_hours": {},
+  "best_hours_status": {
+    "threads": "19/20 則"
+  },
+  "ranking": {
+    "apps": [
+      {
+        "key": "battai",
+        "posts": 1,
+        "views": 110,
+        "engagement": 0,
+        "score": 110,
+        "avg_score": 110.0
+      },
+      {
+        "key": "unblurry",
+        "posts": 1,
+        "views": 74,
+        "engagement": 1,
+        "score": 77,
+        "avg_score": 77.0
+      },
+      {
+        "key": "onepageppt",
+        "posts": 1,
+        "views": 34,
+        "engagement": 1,
+        "score": 39,
+        "avg_score": 39.0
+      },
+      {
+        "key": "notesstudio100",
+        "posts": 1,
+        "views": 20,
+        "engagement": 0,
+        "score": 20,
+        "avg_score": 20.0
+      },
+      {
+        "key": "wifiaidlite",
+        "posts": 1,
+        "views": 19,
+        "engagement": 0,
+        "score": 19,
+        "avg_score": 19.0
+      },
+      {
+        "key": "sononote",
+        "posts": 1,
+        "views": 14,
+        "engagement": 0,
+        "score": 14,
+        "avg_score": 14.0
+      },
+      {
+        "key": "savetag",
+        "posts": 1,
+        "views": 14,
+        "engagement": 0,
+        "score": 14,
+        "avg_score": 14.0
+      },
+      {
+        "key": "zipbox",
+        "posts": 2,
+        "views": 15,
+        "engagement": 0,
+        "score": 15,
+        "avg_score": 7.5
+      },
+      {
+        "key": "tripbee",
+        "posts": 1,
+        "views": 7,
+        "engagement": 0,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
+        "key": "caldaily",
+        "posts": 1,
+        "views": 7,
+        "engagement": 0,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
+        "key": "maskmyfile",
+        "posts": 2,
+        "views": 13,
+        "engagement": 0,
+        "score": 13,
+        "avg_score": 6.5
+      },
+      {
+        "key": "hourstaglite",
+        "posts": 1,
+        "views": 6,
+        "engagement": 0,
+        "score": 6,
+        "avg_score": 6.0
+      },
+      {
+        "key": "shotinbox",
+        "posts": 1,
+        "views": 6,
+        "engagement": 0,
+        "score": 6,
+        "avg_score": 6.0
+      },
+      {
+        "key": "hourstag",
+        "posts": 2,
+        "views": 11,
+        "engagement": 0,
+        "score": 11,
+        "avg_score": 5.5
+      },
+      {
+        "key": "scanto",
+        "posts": 1,
+        "views": 5,
+        "engagement": 0,
+        "score": 5,
+        "avg_score": 5.0
+      },
+      {
+        "key": "countdaysnow",
+        "posts": 1,
+        "views": 5,
+        "engagement": 0,
+        "score": 5,
+        "avg_score": 5.0
+      }
+    ],
+    "locales": [
+      {
+        "key": "zh-Hant",
+        "posts": 7,
+        "views": 195,
+        "engagement": 1,
+        "score": 200,
+        "avg_score": 28.6
+      },
+      {
+        "key": "en",
+        "posts": 12,
+        "views": 165,
+        "engagement": 1,
+        "score": 168,
+        "avg_score": 14.0
+      }
+    ],
+    "hooks": [
+      {
+        "app": "battai",
+        "locale": "zh-Hant",
+        "hook": "才剛過中午，iPhone 電量就低到讓人不敢離開充電器旁。",
+        "posts": 1,
+        "views": 110,
+        "engagement": 0,
+        "score": 110,
+        "avg_score": 110.0
+      },
+      {
+        "app": "unblurry",
+        "locale": "en",
+        "hook": "Unblur photos in HD.",
+        "posts": 1,
+        "views": 74,
+        "engagement": 1,
+        "score": 77,
+        "avg_score": 77.0
+      },
+      {
+        "app": "onepageppt",
+        "locale": "zh-Hant",
+        "hook": "沒有人會讀完整份報告，大家只看那一頁簡報。",
+        "posts": 1,
+        "views": 34,
+        "engagement": 1,
+        "score": 39,
+        "avg_score": 39.0
+      },
+      {
+        "app": "notesstudio100",
+        "locale": "en",
+        "hook": "Заметки от руки и PDF.",
+        "posts": 1,
+        "views": 20,
+        "engagement": 0,
+        "score": 20,
+        "avg_score": 20.0
+      },
+      {
+        "app": "wifiaidlite",
+        "locale": "zh-Hant",
+        "hook": "“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测",
+        "posts": 1,
+        "views": 19,
+        "engagement": 0,
+        "score": 19,
+        "avg_score": 19.0
+      },
+      {
+        "app": "sononote",
+        "locale": "en",
+        "hook": "The best idea of the week happened while you were driving.",
+        "posts": 1,
+        "views": 14,
+        "engagement": 0,
+        "score": 14,
+        "avg_score": 14.0
+      },
+      {
+        "app": "savetag",
+        "locale": "zh-Hant",
+        "hook": "整天把連結傳給自己，說晚點看，然後就再也沒回去看過。",
+        "posts": 1,
+        "views": 14,
+        "engagement": 0,
+        "score": 14,
+        "avg_score": 14.0
+      },
+      {
+        "app": "maskmyfile",
+        "locale": "en",
+        "hook": "You sent the bank statement. The account number was still on",
+        "posts": 1,
+        "views": 9,
+        "engagement": 0,
+        "score": 9,
+        "avg_score": 9.0
+      },
+      {
+        "app": "hourstag",
+        "locale": "zh-Hant",
+        "hook": "那筆衝動購物花的不是錢，是你一整天的工時。",
+        "posts": 1,
+        "views": 8,
+        "engagement": 0,
+        "score": 8,
+        "avg_score": 8.0
+      },
+      {
+        "app": "zipbox",
+        "locale": "en",
+        "hook": "Raspakiraj bez reklama.",
+        "posts": 1,
+        "views": 8,
+        "engagement": 0,
+        "score": 8,
+        "avg_score": 8.0
+      },
+      {
+        "app": "zipbox",
+        "locale": "en",
+        "hook": "Nyahzip fail tanpa iklan.",
+        "posts": 1,
+        "views": 7,
+        "engagement": 0,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
+        "app": "tripbee",
+        "locale": "en",
+        "hook": "Six confirmation emails, two screenshots, one note — and no ",
+        "posts": 1,
+        "views": 7,
+        "engagement": 0,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
+        "app": "caldaily",
+        "locale": "en",
+        "hook": "You checked the date three times today and still typed the w",
+        "posts": 1,
+        "views": 7,
+        "engagement": 0,
+        "score": 7,
+        "avg_score": 7.0
+      },
+      {
+        "app": "hourstaglite",
+        "locale": "en",
+        "hook": "See the real price of things.",
+        "posts": 1,
+        "views": 6,
+        "engagement": 0,
+        "score": 6,
+        "avg_score": 6.0
+      },
+      {
+        "app": "shotinbox",
+        "locale": "zh-Hant",
+        "hook": "本機截圖分類、OCR搜尋與時間軸。",
+        "posts": 1,
+        "views": 6,
+        "engagement": 0,
+        "score": 6,
+        "avg_score": 6.0
+      },
+      {
+        "app": "scanto",
+        "locale": "en",
+        "hook": "A document scanner that keeps everything on your device — ev",
+        "posts": 1,
+        "views": 5,
+        "engagement": 0,
+        "score": 5,
+        "avg_score": 5.0
+      },
+      {
+        "app": "countdaysnow",
+        "locale": "en",
+        "hook": "Plan backwards from the dates that matter.",
+        "posts": 1,
+        "views": 5,
+        "engagement": 0,
+        "score": 5,
+        "avg_score": 5.0
+      },
+      {
+        "app": "maskmyfile",
+        "locale": "zh-Hant",
+        "hook": "分享前遮蔽個資與私密資訊。",
+        "posts": 1,
+        "views": 4,
+        "engagement": 0,
+        "score": 4,
+        "avg_score": 4.0
+      },
+      {
+        "app": "hourstag",
+        "locale": "en",
+        "hook": "That impulse buy did not cost you money. It cost you a whole",
+        "posts": 1,
+        "views": 3,
+        "engagement": 0,
+        "score": 3,
+        "avg_score": 3.0
+      }
+    ],
+    "variants": []
+  },
+  "posts": [
+    {
+      "channel": "threads",
+      "id": "18125755924868781",
+      "link": "https://www.threads.com/@hourstag.app/post/DdXpzr_j7Jf",
+      "posted_at": "2026-09-17T01:17:53",
+      "app": "sononote",
+      "locale": "en",
+      "hook": "The best idea of the week happened while you were driving.",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 14,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 14
+    },
+    {
+      "channel": "threads",
+      "id": "17861076180696416",
+      "link": "https://www.threads.com/@hourstag.app/post/DdYF9EEmBeS",
+      "posted_at": "2026-09-18T00:04:22",
+      "app": "scanto",
+      "locale": "en",
+      "hook": "A document scanner that keeps everything on your device — ev",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 5,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 5
+    },
+    {
+      "channel": "threads",
+      "id": "17875654506631748",
+      "link": "https://www.threads.com/@hourstag.app/post/DdaYLrHCYSh",
+      "posted_at": "2026-09-18T02:40:12",
+      "app": "hourstag",
+      "locale": "en",
+      "hook": "That impulse buy did not cost you money. It cost you a whole",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 3,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 3
+    },
+    {
+      "channel": "threads",
+      "id": "18107794259332372",
+      "link": "https://www.threads.com/@hourstag.app/post/DdalEo5iZvZ",
+      "posted_at": "2026-09-18T04:33:11",
+      "app": "battai",
+      "locale": "zh-Hant",
+      "hook": "才剛過中午，iPhone 電量就低到讓人不敢離開充電器旁。",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 110,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 110
+    },
+    {
+      "channel": "threads",
+      "id": "18095086100185116",
+      "link": "https://www.threads.com/@hourstag.app/post/Ddc3QW0gYUw",
+      "posted_at": "2026-09-19T01:52:30",
+      "app": "zipbox",
+      "locale": "en",
+      "hook": "Nyahzip fail tanpa iklan.",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 7,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 7
+    },
+    {
+      "channel": "threads",
+      "id": "18115525570966700",
+      "link": "https://www.threads.com/@hourstag.app/post/DddliqAkqLr",
+      "posted_at": "2026-09-19T08:38:15",
+      "app": "maskmyfile",
+      "locale": "en",
+      "hook": "You sent the bank statement. The account number was still on",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 9,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 9
+    },
+    {
+      "channel": "threads",
+      "id": "18141144793515114",
+      "link": "https://www.threads.com/@hourstag.app/post/DddljnDEtPY",
+      "posted_at": "2026-09-19T08:38:57",
+      "app": "notesstudio100",
+      "locale": "en",
+      "hook": "Заметки от руки и PDF.",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 20,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 20
+    },
+    {
+      "channel": "threads",
+      "id": "18051698057801731",
+      "link": "https://www.threads.com/@hourstag.app/post/DddlkrgEvVu",
+      "posted_at": "2026-09-19T13:36:23",
+      "app": "onepageppt",
+      "locale": "zh-Hant",
+      "hook": "沒有人會讀完整份報告，大家只看那一頁簡報。",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 34,
+        "likes": 0,
+        "replies": 1,
+        "reposts": 0
+      },
+      "score": 39
+    },
+    {
+      "channel": "threads",
+      "id": "17925982158182875",
+      "link": "https://www.threads.com/@hourstag.app/post/DdecDjSEjLD",
+      "posted_at": "2026-09-19T16:36:16",
+      "app": "tripbee",
+      "locale": "en",
+      "hook": "Six confirmation emails, two screenshots, one note — and no ",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 7,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 7
+    },
+    {
+      "channel": "threads",
+      "id": "18111441415841888",
+      "link": "https://www.threads.com/@hourstag.app/post/DdiAsLbEmgn",
+      "posted_at": "2026-09-21T01:48:39",
+      "app": "caldaily",
+      "locale": "en",
+      "hook": "You checked the date three times today and still typed the w",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 7,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 7
+    },
+    {
+      "channel": "threads",
+      "id": "18482998210107846",
+      "link": "https://www.threads.com/@hourstag.app/post/DdecElMEpX1",
+      "posted_at": "2026-09-21T16:14:59",
+      "app": "savetag",
+      "locale": "zh-Hant",
+      "hook": "整天把連結傳給自己，說晚點看，然後就再也沒回去看過。",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 14,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 14
+    },
+    {
+      "channel": "threads",
+      "id": "18101196347575099",
+      "link": "https://www.threads.com/@hourstag.app/post/DdmF9wzH8C5",
+      "posted_at": "2026-09-22T15:55:05",
+      "app": "hourstaglite",
+      "locale": "en",
+      "hook": "See the real price of things.",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 6,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 6
+    },
+    {
+      "channel": "threads",
+      "id": "18490553053101241",
+      "link": "https://www.threads.com/@hourstag.app/post/Ddm5aYtn-aR",
+      "posted_at": "2026-09-22T23:22:57",
+      "app": "hourstag",
+      "locale": "zh-Hant",
+      "hook": "那筆衝動購物花的不是錢，是你一整天的工時。",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 8,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 8
+    },
+    {
+      "channel": "threads",
+      "id": "18096798578390531",
+      "link": "https://www.threads.com/@hourstag.app/post/DdotzMvH-RS",
+      "posted_at": "2026-09-23T16:20:21",
+      "app": "shotinbox",
+      "locale": "zh-Hant",
+      "hook": "本機截圖分類、OCR搜尋與時間軸。",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 6,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 6
+    },
+    {
+      "channel": "threads",
+      "id": "17923188840429354",
+      "link": "https://www.threads.com/@hourstag.app/post/DdpgkZkn0ka",
+      "posted_at": "2026-09-23T23:45:28",
+      "app": "maskmyfile",
+      "locale": "zh-Hant",
+      "hook": "分享前遮蔽個資與私密資訊。",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 4,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 4
+    },
+    {
+      "channel": "threads",
+      "id": "18116189401787422",
+      "link": "https://www.threads.com/@hourstag.app/post/DdsG9vPAYxS",
+      "posted_at": "2026-09-24T23:58:10",
+      "app": "unblurry",
+      "locale": "en",
+      "hook": "Unblur photos in HD.",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 74,
+        "likes": 1,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 77
+    },
+    {
+      "channel": "threads",
+      "id": "18127466044828173",
+      "link": "https://www.threads.com/@hourstag.app/post/DdtKCVMk7EL",
+      "posted_at": "2026-09-25T09:42:06",
+      "app": "wifiaidlite",
+      "locale": "zh-Hant",
+      "hook": "“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 19,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 19
+    },
+    {
+      "channel": "threads",
+      "id": "17936315010123036",
+      "link": "https://www.threads.com/@hourstag.app/post/DdwdcB6Elvj",
+      "posted_at": "2026-09-26T16:34:02",
+      "app": "zipbox",
+      "locale": "en",
+      "hook": "Raspakiraj bez reklama.",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 8,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 8
+    },
+    {
+      "channel": "threads",
+      "id": "18109455410362773",
+      "link": "https://www.threads.com/@hourstag.app/post/DeegbdAGei7",
+      "posted_at": "2026-10-14T13:43:56",
+      "app": "countdaysnow",
+      "locale": "en",
+      "hook": "Plan backwards from the dates that matter.",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 5,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 5
+    }
+  ]
+}

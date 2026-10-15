@@ -297,3 +297,11 @@ Caitlyn 會在本機對話貼「請照 LOCAL_TASKS 的社群授權段執行」�
 8. **不要設每日自動執行。** Caitlyn 要求剩下的工作改成 0 token 自動化，所以本機 Claude 只在她貼這一行時跑一次。也不要建立 launchd 或用 `--dangerously-skip-permissions` 的無人值守腳本。
 
 9. **回報：** 每做完一段，用中文說明做了哪些項目、各推了哪個 commit。最後一行列出需要 Caitlyn 按允許的動作，沒有就寫「無」。
+
+## LED Moving Text 鉤子片影片：雲端自行製作（2026-10-15 新增）
+
+> Caitlyn 指示：鉤子片影片交給雲端做，本機不做。
+
+- 素材在私人 repo `alice51849/00_GrowthEngine` 的 `marketing/led_moving_text_v3/`：商店圖 v3 核准版 01–06.png、overview.png（英文、iPhone 6.9），`README.md` 是交接說明。
+- 用同一套 v3 圖文做影片節奏與字卡；影片畫面若要放 App 畫面，必須是真實 App 螢幕錄影（2.3.3）、完整解鎖、無價格／Free／Pro 字樣、無假狀態列。
+- 只做草稿給 Caitlyn 看，不上傳 ASC。需要本機實拍畫面時，才在這裡新增一段請本機錄影。

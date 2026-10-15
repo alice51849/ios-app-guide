@@ -16,8 +16,7 @@
    "ct": "bm_usagenow_us_x",
    "locale": "en-US",
    "audience": "US developers who code with Claude every day and hit the 5-hour or weekly limit; they pay to stop being surprised mid-task.",
-   "status": "held",
-   "hold_reason": "UsageNow (claudeusagemini) is still in threads-autopilot live_roster.PENDING_ONBOARDING; set status to live only after its reviewed social source is sealed there.",
+   "status": "live",
    "template": "Claude usage limits changed today: {headline}\n\nWhat it means if you code with Claude:\n• {impact_1}\n• {impact_2}\n\nSource: {source_name}, {source_date}.\n\nUsageNow shows the 5-hour and weekly limits with a countdown to each reset and alerts at the percent you pick. 24-hour free trial, then a one-time unlock. Not affiliated with Anthropic. Link in the reply.",
    "event_fields": [
     "date",
@@ -38,7 +37,9 @@
     "source_date": 12,
     "source_url": 300
    },
-   "image_note": "Optional image_url per event: an explainer card on open.cait518.cc (no app screens; app screens must be real recordings)."
+   "image_note": "Optional image_url per event: an explainer card on open.cait518.cc (no app screens; app screens must be real recordings).",
+   "route_note": "Owner decision 2026-10-15 (via coordinator): UsageNow stays in threads-autopilot PENDING_ONBOARDING, so BM-11 goes out only through this ios-app-guide 21:00 slot (UsageNow hook clips keep the slot; a limit-change explainer posts on the day an event row is added), never through threads-autopilot's reviewed text route.",
+   "how_to_add_event": "On the day Claude's limits change, append {date (Taiwan date), headline, impact_1, impact_2, source_name, source_date, source_url (official Anthropic page)} within field_max; optional image_url on open.cait518.cc."
   },
   "mochi_checklist": {
    "bm": "BM-17",

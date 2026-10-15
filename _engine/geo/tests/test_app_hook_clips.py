@@ -36,7 +36,7 @@ class AppHookClipsTest(unittest.TestCase):
         (growth / "clips.json").write_text(json.dumps({"clips": {
             "demo/en": clip("demo", "en", "aaa111"),
             "demo/ja": clip("demo", "ja", "bbb222", "日本語のフック"),
-            "demo/de": clip("demo", "de", "ccc333", "Deutscher Hook"),
+            "demo/de": {**clip("demo", "de", "ccc333", "Deutscher Hook"), "duration": 13.0},
             "bad/en": {"app": "bad", "locale": "en", "url": "https://evil.test/x.mp4",
                        "hook": "x", "name": "x"},
         }}), encoding="utf-8")
@@ -81,6 +81,10 @@ class AppHookClipsTest(unittest.TestCase):
         self.assertEqual(sitemap.count("<url>"), 3)  # noindex fr-FR stays out
         self.assertNotIn("fr-FR", sitemap)
         self.assertIn("<video:duration>7</video:duration>", sitemap)
+        # An owner-approved longer cut declares its own length (clips.json "duration").
+        de = (self.pages / "de-DE" / "demo.html").read_text(encoding="utf-8")
+        self.assertIn('"duration":"PT13S"', de)
+        self.assertIn("<video:duration>13</video:duration>", sitemap)
         before = {p: p.read_text(encoding="utf-8") for p in self.pages.rglob("*.html")}
         app_hook_clips.build(self.pages, today="2027-01-01")
         after = {p: p.read_text(encoding="utf-8") for p in self.pages.rglob("*.html")}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Embed each App's 7-second hook clip on its localized App guide pages.
+"""Embed each App's hook clip (7 s, or a longer owner-approved cut) on its localized App guide pages.
 
 Source: ``.github/growth/clips.json`` in the Pages tree (planned by
 shorts/scripts/schedule_posts.py; one MP4 per App and clip locale).  Every
@@ -49,7 +49,7 @@ CLIPS_RELATIVE = Path(".github") / "growth" / "clips.json"
 MANIFEST_RELATIVE = Path("data") / "app-hook-clips.json"
 POSTER_RELATIVE = Path("assets") / "hook-clips"
 SITEMAP_NAME = "sitemap_hook_clips.xml"
-DURATION_SECONDS = 7
+DURATION_SECONDS = 7  # the standard clip; a longer cut carries "duration" in clips.json
 START = "<!-- app-hook-clip:start -->"
 END = "<!-- app-hook-clip:end -->"
 BLOCK_RE = re.compile(re.escape(START) + r".*?" + re.escape(END) + r"\n?", re.S)
@@ -97,8 +97,12 @@ def load_clips(pages: Path) -> dict[str, dict[str, dict]]:
         name = " ".join(str(clip.get("name") or "").split())
         if not hook or not name or not isinstance(locale, str):
             continue
+        duration = clip.get("duration", DURATION_SECONDS)
+        if isinstance(duration, bool) or not isinstance(duration, (int, float)) or not 1 <= duration <= 900:
+            duration = DURATION_SECONDS
         by_app.setdefault(app, {})[locale] = {
             "locale": locale, "url": url, "hook": hook, "name": name,
+            "duration": duration,
         }
     return by_app
 
@@ -183,7 +187,7 @@ def render_block(record: dict) -> str:
         "thumbnailUrl": [record["thumbnail_url"]],
         "uploadDate": record["upload_date"] + "T00:00:00+00:00",
         "contentUrl": record["clip_url"],
-        "duration": f"PT{DURATION_SECONDS}S",
+        "duration": f"PT{record['duration']:g}S",
         "inLanguage": record["clip_locale"],
     }
     return (
@@ -245,7 +249,7 @@ def render_sitemap(records: list[dict]) -> str:
             ("title", record["title"]),
             ("description", record["description"]),
             ("content_loc", record["clip_url"]),
-            ("duration", str(DURATION_SECONDS)),
+            ("duration", str(round(record["duration"]))),
             ("publication_date", record["upload_date"] + "T00:00:00+00:00"),
             ("family_friendly", "yes"),
         ):
@@ -309,6 +313,7 @@ def build(pages: Path = PAGES, *, today: str | None = None,
                 ),
                 "thumbnail_url": poster_url(pages, clip, share),
                 "upload_date": dates[clip["url"]],
+                "duration": clip.get("duration", DURATION_SECONDS),
                 "indexable": _indexable(source, page_url),
             }
             records.append(record)
@@ -317,7 +322,7 @@ def build(pages: Path = PAGES, *, today: str | None = None,
     manifest = {
         "name": "Lumi Studio App hook clips",
         "description": (
-            "7-second App Store hook clips embedded on the localized App "
+            "Short App Store hook clips (7 s standard) embedded on the localized App "
             "guide pages; uploadDate is the first day each clip URL was seen."
         ),
         "video_sitemap": f"{SITE}/{SITEMAP_NAME}",
@@ -357,7 +362,7 @@ def llms_lines(*, full: bool) -> list[str]:
     payload = json.loads(path.read_text(encoding="utf-8"))
     lines = [
         "",
-        "## App hook clips (7-second previews)",
+        "## App hook clips (short video previews)",
         f"- Video sitemap: {SITE}/{SITEMAP_NAME}",
         f"- Manifest: {SITE}/{MANIFEST_RELATIVE.as_posix()}",
         f"- Coverage: {payload['clip_count']} clips for {payload['app_count']} "
@@ -367,7 +372,7 @@ def llms_lines(*, full: bool) -> list[str]:
     if full:
         lines.append(
             "- Each App page carries a schema.org VideoObject with contentUrl, "
-            "thumbnailUrl, uploadDate and duration PT7S"
+            "thumbnailUrl, uploadDate and duration (PT7S for the standard clips)"
         )
     return lines
 

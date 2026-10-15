@@ -34,6 +34,15 @@ APP_STORE_RE = re.compile(
     r"https://apps\.apple\.com/app/id(\d+)",
     flags=re.IGNORECASE,
 )
+# InstallAction targets are rewritten downstream by gen_store_attribution to a
+# storefront + campaign URL (``/us/app/id…?pt=…&ct=…``).  Matching an existing
+# action must accept that shape too, otherwise every run appends a fresh
+# canonical InstallAction and potentialAction grows without bound.
+INSTALL_TARGET_RE = re.compile(
+    r"https?://(?:apps|itunes)\.apple\.com/"
+    r"(?:[a-z]{2}(?:-[a-z0-9]+)?/)?app/(?:[^/?#\"'\s]+/)?id(\d+)",
+    flags=re.IGNORECASE,
+)
 SCHEMA_CATEGORY = {
     "photo-utility": "PhotographyApplication",
     "productivity": "BusinessApplication",
@@ -275,6 +284,22 @@ def _app_store_ids(value: Any) -> set[str]:
     return set()
 
 
+def _install_target_ids(value: Any) -> set[str]:
+    if isinstance(value, str):
+        return set(INSTALL_TARGET_RE.findall(value))
+    if isinstance(value, list):
+        ids: set[str] = set()
+        for item in value:
+            ids.update(_install_target_ids(item))
+        return ids
+    if isinstance(value, dict):
+        ids = set()
+        for item in value.values():
+            ids.update(_install_target_ids(item))
+        return ids
+    return set()
+
+
 def _node_app_store_ids(node: dict[str, Any]) -> set[str]:
     ids: set[str] = set()
     for field in (
@@ -346,15 +371,19 @@ def _install_action(value: Any, app_id: str) -> dict[str, Any] | list[Any]:
         return canonical
     actions = value if isinstance(value, list) else [value]
     result: list[Any] = []
+    seen: set[str] = set()
     found = False
     for action in actions:
         matching_install = (
             isinstance(action, dict)
             and "InstallAction" in _schema_types(action)
-            and app_id in _app_store_ids(action.get("target"))
+            and app_id in _install_target_ids(action.get("target"))
         )
         if not matching_install:
-            result.append(action)
+            key = json.dumps(action, ensure_ascii=False, sort_keys=True)
+            if key not in seen:
+                seen.add(key)
+                result.append(action)
             continue
         if found:
             continue
@@ -367,6 +396,124 @@ def _install_action(value: Any, app_id: str) -> dict[str, Any] | list[Any]:
     if not found:
         result.append(canonical)
     return result[0] if len(result) == 1 else result
+
+
+def _dedupe_action_list(actions: list[Any]) -> list[Any]:
+    """Collapse repeated actions: one InstallAction per App Store ID, and no
+    byte-identical repeats of anything else.  Order is preserved."""
+    result: list[Any] = []
+    seen: set[Any] = set()
+    for action in actions:
+        key: Any
+        install_ids = (
+            _install_target_ids(action.get("target"))
+            if isinstance(action, dict)
+            and "InstallAction" in _schema_types(action)
+            else set()
+        )
+        if len(install_ids) == 1:
+            key = ("install", next(iter(install_ids)))
+        else:
+            key = json.dumps(action, ensure_ascii=False, sort_keys=True)
+        if key in seen:
+            continue
+        seen.add(key)
+        result.append(action)
+    return result
+
+
+POTENTIAL_ACTION_LIST_RE = re.compile(r'"potentialAction"\s*:\s*\[')
+
+
+def dedupe_install_actions(source: str) -> str | None:
+    """Remove duplicated InstallActions from every JSON-LD block of a page.
+
+    Only the ``potentialAction`` array text is rewritten, so the rest of the
+    page (and the block's own serialization style) is left untouched.
+    Returns ``None`` when nothing changed, which makes the pass idempotent.
+    """
+    if source.count("InstallAction") < 2:
+        return None
+    decoder = json.JSONDecoder()
+    parts: list[str] = []
+    cursor = 0
+    changed = False
+    for block in JSON_LD_RE.finditer(source):
+        body_start = block.start("body")
+        body = block.group("body")
+        pieces: list[str] = []
+        body_cursor = 0
+        for match in POTENTIAL_ACTION_LIST_RE.finditer(body):
+            array_start = match.end() - 1
+            if array_start < body_cursor:
+                continue
+            try:
+                actions, array_end = decoder.raw_decode(body, array_start)
+            except json.JSONDecodeError:
+                continue
+            deduped = _dedupe_action_list(actions)
+            if len(deduped) == len(actions):
+                continue
+            original = body[array_start:array_end]
+            if "\n" in original:
+                indent = re.search(r"\n([ \t]*)\S", original)
+                item_indent = indent.group(1) if indent else "  "
+                closing = re.search(r"\n([ \t]*)\]$", original)
+                close_indent = closing.group(1) if closing else ""
+                items = [
+                    json.dumps(item, ensure_ascii=False, indent=2).replace(
+                        "\n", "\n" + item_indent
+                    )
+                    for item in deduped
+                ]
+                replacement = (
+                    "[\n"
+                    + ",\n".join(item_indent + item for item in items)
+                    + "\n" + close_indent + "]"
+                )
+            else:
+                replacement = json.dumps(
+                    deduped, ensure_ascii=False, separators=(",", ":")
+                )
+            replacement = replacement.replace("</", r"<\/")
+            pieces.append(body[body_cursor:array_start])
+            pieces.append(replacement)
+            body_cursor = array_end
+            changed = True
+        if pieces:
+            pieces.append(body[body_cursor:])
+            parts.append(source[cursor:body_start])
+            parts.append("".join(pieces))
+            cursor = block.end("body")
+    if not changed:
+        return None
+    parts.append(source[cursor:])
+    return "".join(parts)
+
+
+def _dedupe_page(path: Path) -> str | None:
+    try:
+        source = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError):
+        return None
+    return dedupe_install_actions(source)
+
+
+def dedupe_existing(pages: Path = PAGES) -> int:
+    """Repair pages that accumulated duplicate InstallActions."""
+    paths = sorted(
+        path
+        for path in pages.rglob("*.html")
+        if "_engine" not in path.parts and ".git" not in path.parts
+    )
+    repaired = 0
+    for path, updated in zip(
+        paths, parallel_pages.ordered_map(_dedupe_page, paths), strict=True
+    ):
+        if updated is not None:
+            path.write_text(updated, encoding="utf-8")
+            repaired += 1
+    return repaired
 
 
 def _is_store_identifier(value: Any, app_id: str) -> bool:
@@ -781,7 +928,7 @@ def _without_managed_install_actions(
         if not (
             isinstance(action, dict)
             and "InstallAction" in _schema_types(action)
-            and bool(_app_store_ids(action) & managed_ids)
+            and bool(_install_target_ids(action) & managed_ids)
         )
     ]
     if not remaining:
@@ -948,7 +1095,16 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pages", type=Path, default=PAGES)
     parser.add_argument("--site", default=gen_smart_app_banners.SITE)
+    parser.add_argument(
+        "--dedupe-existing",
+        action="store_true",
+        help="only collapse duplicated InstallActions in existing pages",
+    )
     args = parser.parse_args()
+    if args.dedupe_existing:
+        repaired = dedupe_existing(args.pages)
+        print(f"Mobile app identity: deduped InstallActions on {repaired} pages")
+        return
     stats = generate(args.pages, site=args.site.rstrip("/"))
     print(
         "Mobile app identity: "

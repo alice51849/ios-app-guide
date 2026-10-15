@@ -1,0 +1,40 @@
+name: Owner decisions
+
+# Caitlyn 10-14：「完成事項卡片…做幾個按鈕 已完成 已拒絕 AI自己做 這三個扭直接回傳最新狀態與答案」
+# Reads the button presses from office.cait518.cc/api/owner-decision (read-only GET) and
+# applies them to .github/growth/app-improvements.json owner_actions; the full list is kept in
+# .github/growth/owner-decisions.json for the AI sessions (declined = never do, ai = Claude does it).
+on:
+  schedule:
+    - cron: '13,43 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: owner-decisions
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test
+        run: cd .github/scripts && python3 -m unittest test_owner_decisions -q
+      - name: Apply decisions
+        run: |
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 .github/scripts/owner_decisions.py
+            python3 .github/scripts/test_app_improvements.py -q
+            git add .github/growth/owner-decisions.json .github/growth/app-improvements.json
+            if git diff --cached --quiet; then echo "no change"; exit 0; fi
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "待辦決議：外宣頁卡片狀態更新 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::error::could not record owner decisions"; exit 1

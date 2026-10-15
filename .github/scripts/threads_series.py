@@ -5,8 +5,8 @@ One post a day at 13:00 UTC (Taiwan 21:00, US Eastern 9:00), in the slot the
 Americas hook clip used to take, so the account stays at 3 posts a day:
 
 - BM-11 UsageNow: on the day Claude's usage limits change (events in the data
-  file), an explainer. Held until UsageNow leaves threads-autopilot's
-  PENDING_ONBOARDING.
+  file), an explainer. UsageNow stays in threads-autopilot's
+  PENDING_ONBOARDING, so this slot is its only Threads text route.
 - BM-22 Lumi Weather: "明天○○度穿什麼" for Taipei, Taichung and Kaohsiung,
   from the MET Norway forecast.
 - BM-17 Mochi: "Today's #MochiChecklist", a 4-task list.

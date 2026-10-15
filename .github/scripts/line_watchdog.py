@@ -55,7 +55,6 @@ PROFILES: dict[str, dict] = {
             "indexnow-daily.yml": 30,
             "portfolio-daily.yml": 30,
             "telegram-daily.yml": 30,
-            "arquivo-pt-daily.yml": 30,
             "software-heritage-daily.yml": 30,
             "growth-scoreboard.yml": 30,
             "sov-weekly.yml": 8 * 24,

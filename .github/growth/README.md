@@ -71,7 +71,7 @@
 | growth-scoreboard（每天 10:41 台灣） | 53 款評分、母語關鍵字名次；**全部店面×類別的免費榜每天量一次並列出各榜第 1 名是誰**；UsageNow 衝榜區塊（40 國開發者工具免費＋營收榜、8 個對手、27 組關鍵字） |
 | portfolio-daily / telegram-daily | Telegram 每日精選；10/27 前「今日焦點」輪播 UsageNow；截圖少於 3 張的 App 自動跳過 |
 | geo-daily、indexnow-daily、pages | GEO 內容產生、IndexNow 通知；正式站上傳仍走配對發布（排隊組已修好，不會再被推送取消） |
-| line-watchdog、arquivo-pt-daily、software-heritage-daily、sov-weekly | 線路健康檢查與備份 |
+| line-watchdog、software-heritage-daily、sov-weekly（arquivo-pt-daily 2026-10-15 停用，只留手動） | 線路健康檢查與備份 |
 
 暫停中、要等額度重置（10/20 01:00 台灣）或你再開口才做：
 - 其餘 App 的雙模型副標／關鍵字調教。Mochi、ShotInbox 已完成第一模型，待 Fable 驗證；其他 7 款與剩下的 App 尚未開始。

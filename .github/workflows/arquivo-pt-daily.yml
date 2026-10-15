@@ -1,8 +1,9 @@
 name: Daily Arquivo.pt archive
 
+# 2026-10-15 業主停用（「Arquivo 就不要做了 直接移除這個工作」）：Arquivo.pt 自 10/10 起持續 503／連不上，
+# 每天紅燈只會灌高看板異常數。移除排程、只留手動觸發；監看與自動補發已從 line_watchdog、
+# 00_GrowthEngine agent/cloud_workflow_watchdog.py 與 github_recovery_watchdog.sh 拿掉。檔案保留不刪。
 on:
-  schedule:
-    - cron: "47 2 * * *"
   workflow_dispatch:
     inputs:
       app:

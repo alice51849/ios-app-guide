@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T16:43:34Z",
+  "updated_at": "2026-10-15T17:58:18Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "claudeusagemini/en": {
@@ -10659,243 +10659,1924 @@
           "benefit": "อยู่ไกลแค่ไหน ก็มองเห็นชัด"
         }
       ]
+    },
+    "dailymate/en": {
+      "app": "dailymate",
+      "locale": "en",
+      "url": "https://files.catbox.moe/bue2n2.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6790418321?pt=118326163&ct=h7_dailymate_en&mt=8",
+      "hook": "Your Home Screen, now a phrasebook",
+      "name": "DailyMate: Language Phrases",
+      "search": "DailyMate Phrases",
+      "tags": [
+        "#LanguagePhrases",
+        "#Conversation",
+        "#Speaking",
+        "#Pronunciation",
+        "#Listening",
+        "#DailyMatePhrases"
+      ],
+      "keywords": [
+        "conversation",
+        "speaking",
+        "pronunciation",
+        "listening",
+        "travel",
+        "beginner"
+      ],
+      "keyline": "Language Phrases",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Your Home Screen, now a phrasebook",
+          "benefit": "3 levels in every topic"
+        },
+        {
+          "id": "b",
+          "lead": "3 levels in every topic",
+          "benefit": "47 languages to learn"
+        },
+        {
+          "id": "c",
+          "lead": "Hear it, plus the natural reply",
+          "benefit": "3 levels in every topic"
+        }
+      ]
+    },
+    "dailymate/zh-Hant": {
+      "app": "dailymate",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/40zf82.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=h7_dailymate_zh-Hant&mt=8",
+      "hook": "主畫面 秒變會話本",
+      "name": "DailyMate：用句子學語言",
+      "search": "DailyMate 用句子學語言",
+      "tags": [
+        "#用句子學語言",
+        "#學英文",
+        "#英文口說",
+        "#旅遊英文",
+        "#實用短句",
+        "#DailyMate用句子學語言"
+      ],
+      "keywords": [
+        "學英文",
+        "英文口說",
+        "旅遊英文",
+        "實用短句",
+        "發音聆聽",
+        "聽力"
+      ],
+      "keyline": "不背單字，直接學生活會話",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "主畫面 秒變會話本",
+          "benefit": "每個主題都分 初中高三級"
+        },
+        {
+          "id": "b",
+          "lead": "每個主題都分 初中高三級",
+          "benefit": "47 種語言任你學"
+        },
+        {
+          "id": "c",
+          "lead": "聽發音 再學自然回話",
+          "benefit": "每個主題都分 初中高三級"
+        }
+      ]
+    },
+    "dailymate/ja": {
+      "app": "dailymate",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/2oq7mt.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=h7_dailymate_ja&mt=8",
+      "hook": "ホーム画面が フレーズ帳に",
+      "name": "DailyMate：文で身につく語学",
+      "search": "DailyMate 文で身につく語学",
+      "tags": [
+        "#文で身につく語学",
+        "#英会話",
+        "#英語学習",
+        "#旅行英語",
+        "#日常会話",
+        "#DailyMate文で身につく語学"
+      ],
+      "keywords": [
+        "英会話",
+        "英語学習",
+        "旅行英語",
+        "日常会話",
+        "発音",
+        "リスニング"
+      ],
+      "keyline": "単語ではなく実用フレーズ",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "ホーム画面が フレーズ帳に",
+          "benefit": "どのテーマも 3レベル"
+        },
+        {
+          "id": "b",
+          "lead": "どのテーマも 3レベル",
+          "benefit": "学べる言語は47"
+        },
+        {
+          "id": "c",
+          "lead": "音声で聞いて 自然な返しまで",
+          "benefit": "どのテーマも 3レベル"
+        }
+      ]
+    },
+    "dailymate/ko": {
+      "app": "dailymate",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/0df4pg.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=h7_dailymate_ko&mt=8",
+      "hook": "홈 화면이 회화책으로 변신",
+      "name": "DailyMate: 문장으로 배우는 언어",
+      "search": "DailyMate 문장으로 배우는 언어",
+      "tags": [
+        "#문장으로배우는언어",
+        "#영어회화",
+        "#영어공부",
+        "#여행영어",
+        "#일상회화",
+        "#DailyMate문장으로배우는언어"
+      ],
+      "keywords": [
+        "영어회화",
+        "영어공부",
+        "여행영어",
+        "일상회화",
+        "발음듣기",
+        "리스닝"
+      ],
+      "keyline": "문장으로 배우는 언어",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "홈 화면이 회화책으로 변신",
+          "benefit": "주제마다 3단계 난이도"
+        },
+        {
+          "id": "b",
+          "lead": "주제마다 3단계 난이도",
+          "benefit": "배울 수 있는 언어 47개"
+        },
+        {
+          "id": "c",
+          "lead": "듣고, 자연스러운 대답까지",
+          "benefit": "주제마다 3단계 난이도"
+        }
+      ]
+    },
+    "gmoney/en": {
+      "app": "gmoney",
+      "locale": "en",
+      "url": "https://files.catbox.moe/txsq79.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6755782939?pt=118326163&ct=h7_gmoney_en&mt=8",
+      "hook": "Where did all my money go?",
+      "name": "G+Money: Spending & Budget",
+      "search": "G+Money",
+      "tags": [
+        "#SpendingBudget",
+        "#ExpenseTracker",
+        "#Budget",
+        "#MoneyManager",
+        "#CurrencyConverter",
+        "#GMoney"
+      ],
+      "keywords": [
+        "expense tracker",
+        "budget",
+        "money manager",
+        "currency converter",
+        "exchange rate",
+        "spending tracker"
+      ],
+      "keyline": "Budget, Expenses & Currency",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Where did all my money go?",
+          "benefit": "See where it went, by category"
+        },
+        {
+          "id": "b",
+          "lead": "See where it went, by category",
+          "benefit": "Convert & log, even offline"
+        },
+        {
+          "id": "c",
+          "lead": "See what's left today",
+          "benefit": "See where it went, by category"
+        }
+      ]
+    },
+    "gmoney/zh-Hant": {
+      "app": "gmoney",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/ve63hr.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=h7_gmoney_zh-Hant&mt=8",
+      "hook": "錢到底 花去哪了？",
+      "name": "G+Money：日常記帳·預算·匯率",
+      "search": "G+Money 記帳",
+      "tags": [
+        "#日常記帳預算匯率",
+        "#記帳",
+        "#記帳app",
+        "#預算",
+        "#理財",
+        "#GMoney記帳"
+      ],
+      "keywords": [
+        "記帳",
+        "記帳app",
+        "預算",
+        "理財",
+        "記帳軟體",
+        "開銷"
+      ],
+      "keyline": "記帳、預算、理財與匯率換算",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "錢到底 花去哪了？",
+          "benefit": "按分類 看見錢花去哪"
+        },
+        {
+          "id": "b",
+          "lead": "按分類 看見錢花去哪",
+          "benefit": "換算＋記帳 離線也能用"
+        },
+        {
+          "id": "c",
+          "lead": "今天還能花多少 一目了然",
+          "benefit": "按分類 看見錢花去哪"
+        }
+      ]
+    },
+    "gmoney/ja": {
+      "app": "gmoney",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/lk7ile.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=h7_gmoney_ja&mt=8",
+      "hook": "お金、どこに 消えた？",
+      "name": "G+Money：家計簿・予算・為替",
+      "search": "G+Money 家計簿",
+      "tags": [
+        "#家計簿予算為替",
+        "#家計簿",
+        "#家計簿アプリ",
+        "#予算",
+        "#支出管理",
+        "#GMoney家計簿"
+      ],
+      "keywords": [
+        "家計簿",
+        "家計簿アプリ",
+        "予算",
+        "支出管理",
+        "節約",
+        "お小遣い帳"
+      ],
+      "keyline": "家計簿・予算・節約・為替換算",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "お金、どこに 消えた？",
+          "benefit": "カテゴリ別に 使い道が見える"
+        },
+        {
+          "id": "b",
+          "lead": "カテゴリ別に 使い道が見える",
+          "benefit": "換算も記録も オフラインでOK"
+        },
+        {
+          "id": "c",
+          "lead": "今日あといくら 使えるか一目で",
+          "benefit": "カテゴリ別に 使い道が見える"
+        }
+      ]
+    },
+    "gmoney/ko": {
+      "app": "gmoney",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/nck8iy.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=h7_gmoney_ko&mt=8",
+      "hook": "내 돈 다 어디 갔지?",
+      "name": "G+Money：가계부·예산·환율",
+      "search": "G+Money 가계부",
+      "tags": [
+        "#가계부예산환율",
+        "#가계부",
+        "#예산",
+        "#지출관리",
+        "#용돈기입장",
+        "#GMoney가계부"
+      ],
+      "keywords": [
+        "가계부",
+        "예산",
+        "지출관리",
+        "용돈기입장",
+        "환율",
+        "환율계산기"
+      ],
+      "keyline": "가계부·예산·환율 계산기",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "내 돈 다 어디 갔지?",
+          "benefit": "분류별로 어디에 썼는지 한눈에"
+        },
+        {
+          "id": "b",
+          "lead": "분류별로 어디에 썼는지 한눈에",
+          "benefit": "환율 계산·기록 오프라인에서도"
+        },
+        {
+          "id": "c",
+          "lead": "오늘 남은 예산 한눈에",
+          "benefit": "분류별로 어디에 썼는지 한눈에"
+        }
+      ]
+    },
+    "gmoney/id": {
+      "app": "gmoney",
+      "locale": "id",
+      "url": "https://files.catbox.moe/jgixdt.mp4",
+      "store_url": "https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=h7_gmoney_id&mt=8",
+      "hook": "Uangku habis ke mana?",
+      "name": "G+Money: Catat & atur anggaran",
+      "search": "G+Money",
+      "tags": [
+        "#CatatAturAnggaran",
+        "#Pengeluaran",
+        "#Anggaran",
+        "#Keuangan",
+        "#CatatanKeuangan",
+        "#GMoney"
+      ],
+      "keywords": [
+        "pengeluaran",
+        "anggaran",
+        "keuangan",
+        "catatan keuangan",
+        "konverter mata uang",
+        "kurs"
+      ],
+      "keyline": "Anggaran, pengeluaran & kurs",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Uangku habis ke mana?",
+          "benefit": "Lihat ke mana uangmu, per kategori"
+        },
+        {
+          "id": "b",
+          "lead": "Lihat ke mana uangmu, per kategori",
+          "benefit": "Konversi & catat, tanpa sinyal"
+        },
+        {
+          "id": "c",
+          "lead": "Sisa anggaran hari ini",
+          "benefit": "Lihat ke mana uangmu, per kategori"
+        }
+      ]
+    },
+    "hourstag/en": {
+      "app": "hourstag",
+      "locale": "en",
+      "url": "https://files.catbox.moe/k601zw.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6754218117?pt=118326163&ct=h7_hourstag_en&mt=8",
+      "hook": "$129 sneakers? Half a day of work.",
+      "name": "HoursTag: Hours to Buy",
+      "search": "HoursTag Hours to Buy",
+      "tags": [
+        "#HoursToBuy",
+        "#Budget",
+        "#SpendingTracker",
+        "#Savings",
+        "#ExpenseTracker",
+        "#HoursTagHoursToBuy"
+      ],
+      "keywords": [
+        "budget",
+        "spending tracker",
+        "savings",
+        "expense tracker",
+        "money manager",
+        "budget planner"
+      ],
+      "keyline": "Budget, Spending & Savings",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "$129 sneakers? Half a day of work.",
+          "benefit": "Need, want or impulse?"
+        },
+        {
+          "id": "b",
+          "lead": "Need, want or impulse?",
+          "benefit": "See where your hours go"
+        },
+        {
+          "id": "c",
+          "lead": "Goals, priced in work hours",
+          "benefit": "Need, want or impulse?"
+        }
+      ]
+    },
+    "hourstag/zh-Hant": {
+      "app": "hourstag",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/7rqslz.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6754218117?pt=118326163&ct=h7_hourstag_zh-Hant&mt=8",
+      "hook": "這個要工作 幾小時？",
+      "name": "HoursTag：價格換工時",
+      "search": "HoursTag 價格換工時",
+      "tags": [
+        "#價格換工時",
+        "#記帳",
+        "#預算",
+        "#省錢",
+        "#理財",
+        "#HoursTag價格換工時"
+      ],
+      "keywords": [
+        "記帳",
+        "預算",
+        "省錢",
+        "理財",
+        "儲蓄",
+        "存錢"
+      ],
+      "keyline": "預算、記帳、省錢與儲蓄",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "這個要工作 幾小時？",
+          "benefit": "必要、想要 還是衝動？"
+        },
+        {
+          "id": "b",
+          "lead": "必要、想要 還是衝動？",
+          "benefit": "每筆花費 都換成工時"
+        },
+        {
+          "id": "c",
+          "lead": "目標也換算成 工時",
+          "benefit": "必要、想要 還是衝動？"
+        }
+      ]
+    },
+    "hourstag/ja": {
+      "app": "hourstag",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/g0j3nl.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6754218117?pt=118326163&ct=h7_hourstag_ja&mt=8",
+      "hook": "これ買うのに 何時間働く？",
+      "name": "HoursTag: 価格を時間に",
+      "search": "HoursTag 価格を時間に",
+      "tags": [
+        "#価格を時間に",
+        "#節約",
+        "#家計簿",
+        "#予算",
+        "#貯金",
+        "#HoursTag価格を時間に"
+      ],
+      "keywords": [
+        "節約",
+        "家計簿",
+        "予算",
+        "貯金",
+        "節約術",
+        "支出管理"
+      ],
+      "keyline": "節約・家計簿・予算・貯金",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "これ買うのに 何時間働く？",
+          "benefit": "必要？欲しい？それとも衝動？"
+        },
+        {
+          "id": "b",
+          "lead": "必要？欲しい？それとも衝動？",
+          "benefit": "出費を時間で ふり返る"
+        },
+        {
+          "id": "c",
+          "lead": "目標も労働時間で",
+          "benefit": "必要？欲しい？それとも衝動？"
+        }
+      ]
+    },
+    "hourstag/ko": {
+      "app": "hourstag",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/xedqbn.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=h7_hourstag_ko&mt=8",
+      "hook": "몇 시간 일해야 이걸 살 수 있을까?",
+      "name": "HoursTag: 가격을 시간으로",
+      "search": "HoursTag 가격을 시간으로",
+      "tags": [
+        "#가격을시간으로",
+        "#절약",
+        "#가계부",
+        "#예산",
+        "#저축",
+        "#HoursTag가격을시간으로"
+      ],
+      "keywords": [
+        "절약",
+        "가계부",
+        "예산",
+        "저축",
+        "소비",
+        "돈관리"
+      ],
+      "keyline": "절약·가계부·예산·저축",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "몇 시간 일해야 이걸 살 수 있을까?",
+          "benefit": "필요? 갖고 싶음? 아니면 충동?"
+        },
+        {
+          "id": "b",
+          "lead": "필요? 갖고 싶음? 아니면 충동?",
+          "benefit": "지출을 시간으로 한눈에"
+        },
+        {
+          "id": "c",
+          "lead": "목표도 노동 시간으로",
+          "benefit": "필요? 갖고 싶음? 아니면 충동?"
+        }
+      ]
+    },
+    "lumibopomofopro/en": {
+      "app": "lumibopomofopro",
+      "locale": "en",
+      "url": "https://files.catbox.moe/b2ld27.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6775773117?pt=118326163&ct=h7_lumibopomofopro_en&mt=8",
+      "hook": "Zhuyin practice… by fishing?",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "search": "Lumi Bopomofo Pro",
+      "tags": [
+        "#Zhuyin",
+        "#ChineseForKids",
+        "#LearnChinese",
+        "#MandarinForKids",
+        "#ChinesePhonics",
+        "#LumiBopomofoPro"
+      ],
+      "keywords": [
+        "chinese for kids",
+        "learn chinese",
+        "mandarin for kids",
+        "chinese phonics",
+        "pinyin",
+        "mandarin"
+      ],
+      "keyline": "Zhuyin Phonics Game for Kids",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Zhuyin practice…by fishing?",
+          "benefit": "Hear the blend, catch the right fish"
+        },
+        {
+          "id": "b",
+          "lead": "Hear the blend, catch the right fish",
+          "benefit": "Race the clock"
+        },
+        {
+          "id": "c",
+          "lead": "All 37 sounds unlocked",
+          "benefit": "Hear the blend, catch the right fish"
+        }
+      ]
+    },
+    "lumibopomofopro/zh-Hant": {
+      "app": "lumibopomofopro",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/h586c3.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6775773117?pt=118326163&ct=h7_lumibopomofopro_zh-Hant&mt=8",
+      "hook": "學注音 用釣魚的？",
+      "name": "Lumi注音星球 Pro",
+      "search": "Lumi注音星球 Pro",
+      "tags": [
+        "#注音",
+        "#ㄅㄆㄇ",
+        "#注音符號",
+        "#幼兒學注音",
+        "#學前教育",
+        "#Lumi注音星球Pro"
+      ],
+      "keywords": [
+        "注音",
+        "ㄅㄆㄇ",
+        "注音符號",
+        "幼兒學注音",
+        "學前教育",
+        "識字"
+      ],
+      "keyline": "幼兒注音遊戲・拼讀聲調",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "學注音 用釣魚的？",
+          "benefit": "聽到發音 釣出對的魚"
+        },
+        {
+          "id": "b",
+          "lead": "聽到發音 釣出對的魚",
+          "benefit": "限時挑戰 刷新紀錄"
+        },
+        {
+          "id": "c",
+          "lead": "37 個注音 全部解鎖",
+          "benefit": "聽到發音 釣出對的魚"
+        }
+      ]
+    },
+    "lumibopomofopro/ja": {
+      "app": "lumibopomofopro",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/wkychp.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6775773117?pt=118326163&ct=h7_lumibopomofopro_ja&mt=8",
+      "hook": "注音の練習を 釣りで？",
+      "name": "Lumi Bopomofo Pro：台湾華語",
+      "search": "Lumi Bopomofo Pro",
+      "tags": [
+        "#ボポモフォ",
+        "#中国語",
+        "#ピンイン",
+        "#中国語発音",
+        "#子供中国語",
+        "#LumiBopomofoPro"
+      ],
+      "keywords": [
+        "ボポモフォ",
+        "中国語",
+        "ピンイン",
+        "中国語発音",
+        "子供中国語",
+        "中国語学習"
+      ],
+      "keyline": "幼児の注音フォニックス",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "注音の練習を 釣りで？",
+          "benefit": "音を聞いて 正しい魚を釣ろう"
+        },
+        {
+          "id": "b",
+          "lead": "音を聞いて 正しい魚を釣ろう",
+          "benefit": "制限時間で ベストに挑戦"
+        },
+        {
+          "id": "c",
+          "lead": "37音すべて アンロック",
+          "benefit": "音を聞いて 正しい魚を釣ろう"
+        }
+      ]
+    },
+    "lumibopomofopro/ko": {
+      "app": "lumibopomofopro",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/2emopd.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=h7_lumibopomofopro_ko&mt=8",
+      "hook": "주음 공부를 낚시로?",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "search": "Lumi Bopomofo Pro",
+      "tags": [
+        "#보포모포",
+        "#중국어",
+        "#병음",
+        "#중국어발음",
+        "#어린이중국어",
+        "#LumiBopomofoPro"
+      ],
+      "keywords": [
+        "보포모포",
+        "중국어",
+        "병음",
+        "중국어발음",
+        "어린이중국어",
+        "중국어공부"
+      ],
+      "keyline": "유아 주음 파닉스 게임",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "주음 공부를 낚시로?",
+          "benefit": "결합음을 듣고 맞는 물고기 낚기"
+        },
+        {
+          "id": "b",
+          "lead": "결합음을 듣고 맞는 물고기 낚기",
+          "benefit": "제한 시간 안에 내 기록 깨기"
+        },
+        {
+          "id": "c",
+          "lead": "37개 소리 모두 열림",
+          "benefit": "결합음을 듣고 맞는 물고기 낚기"
+        }
+      ]
+    },
+    "lumiletterspro/en": {
+      "app": "lumiletterspro",
+      "locale": "en",
+      "url": "https://files.catbox.moe/jks7u7.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6778491147?pt=118326163&ct=h7_lumiletterspro_en&mt=8",
+      "hook": "Knows the ABC song but can't read?",
+      "name": "Lumi Letters Pro: ABC Phonics",
+      "search": "Lumi Letters Pro",
+      "tags": [
+        "#ABCPhonics",
+        "#Alphabet",
+        "#LetterSounds",
+        "#LearnToRead",
+        "#Tracing",
+        "#LumiLettersPro"
+      ],
+      "keywords": [
+        "alphabet",
+        "letter sounds",
+        "learn to read",
+        "tracing",
+        "handwriting",
+        "reading"
+      ],
+      "keyline": "ABC Phonics: Trace & Read",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Knows the ABC song but can't read?",
+          "benefit": "Trace on screen, then print a worksheet"
+        },
+        {
+          "id": "b",
+          "lead": "Trace on screen, then print a worksheet",
+          "benefit": "See their progress at a glance"
+        },
+        {
+          "id": "c",
+          "lead": "26 letter friends to collect",
+          "benefit": "Trace on screen, then print a worksheet"
+        }
+      ]
+    },
+    "lumiletterspro/zh-Hant": {
+      "app": "lumiletterspro",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/n8dzp3.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6778491147?pt=118326163&ct=h7_lumiletterspro_zh-Hant&mt=8",
+      "hook": "會唱 ABC 卻還不會拼讀？",
+      "name": "Lumi 字母星球 Pro：ABC啟蒙",
+      "search": "Lumi 字母星球 Pro",
+      "tags": [
+        "#ABC啟蒙",
+        "#英文字母",
+        "#Phonics",
+        "#英文發音",
+        "#學英文",
+        "#Lumi字母星球Pro"
+      ],
+      "keywords": [
+        "英文字母",
+        "phonics",
+        "英文發音",
+        "學英文",
+        "兒童英文",
+        "幼兒英文"
+      ],
+      "keyline": "ABC自然發音・拼讀閱讀",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "會唱 ABC 卻還不會拼讀？",
+          "benefit": "螢幕上描完 再印成學習單"
+        },
+        {
+          "id": "b",
+          "lead": "螢幕上描完 再印成學習單",
+          "benefit": "孩子的進步 一眼看見"
+        },
+        {
+          "id": "c",
+          "lead": "收集 26 位 字母小夥伴",
+          "benefit": "螢幕上描完 再印成學習單"
+        }
+      ]
+    },
+    "lumiletterspro/ja": {
+      "app": "lumiletterspro",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/lexhbf.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6778491147?pt=118326163&ct=h7_lumiletterspro_ja&mt=8",
+      "hook": "ABCの歌は歌えても 読むのはまだ？",
+      "name": "Lumi レター Pro：ABCフォニックス",
+      "search": "Lumi レター Pro",
+      "tags": [
+        "#ABCフォニックス",
+        "#アルファベット",
+        "#英語",
+        "#えいご",
+        "#文字",
+        "#LumiレターPro"
+      ],
+      "keywords": [
+        "アルファベット",
+        "英語",
+        "えいご",
+        "文字",
+        "英語発音",
+        "なぞり書き"
+      ],
+      "keyline": "ABCフォニックス読み書き",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "ABCの歌は歌えても 読むのはまだ？",
+          "benefit": "画面でなぞって プリントでも練習"
+        },
+        {
+          "id": "b",
+          "lead": "画面でなぞって プリントでも練習",
+          "benefit": "成長が ひと目でわかる"
+        },
+        {
+          "id": "c",
+          "lead": "文字のなかま 26人を集めよう",
+          "benefit": "画面でなぞって プリントでも練習"
+        }
+      ]
+    },
+    "lumiletterspro/ko": {
+      "app": "lumiletterspro",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/ok1uxw.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=h7_lumiletterspro_ko&mt=8",
+      "hook": "ABC 노래는 아는데 읽기는 아직?",
+      "name": "Lumi 레터 Pro: ABC 파닉스",
+      "search": "Lumi 레터 Pro",
+      "tags": [
+        "#ABC파닉스",
+        "#알파벳",
+        "#영어",
+        "#글자",
+        "#영어발음",
+        "#Lumi레터Pro"
+      ],
+      "keywords": [
+        "알파벳",
+        "영어",
+        "글자",
+        "영어발음",
+        "영어학습",
+        "어린이영어"
+      ],
+      "keyline": "ABC 파닉스 읽기·쓰기",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "ABC 노래는 아는데 읽기는 아직?",
+          "benefit": "화면에서 따라 쓰고 학습지로 인쇄까지"
+        },
+        {
+          "id": "b",
+          "lead": "화면에서 따라 쓰고 학습지로 인쇄까지",
+          "benefit": "아이의 성장이 한눈에"
+        },
+        {
+          "id": "c",
+          "lead": "글자 친구 26명 모으기",
+          "benefit": "화면에서 따라 쓰고 학습지로 인쇄까지"
+        }
+      ]
+    },
+    "lumimathpro/en": {
+      "app": "lumimathpro",
+      "locale": "en",
+      "url": "https://files.catbox.moe/8pgcbn.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6776958488?pt=118326163&ct=h7_lumimathpro_en&mt=8",
+      "hook": "Still making math worksheets by hand?",
+      "name": "Lumi Math Pro: Kids Numbers",
+      "search": "Lumi Math Pro",
+      "tags": [
+        "#KidsNumbers",
+        "#Logic",
+        "#Reasoning",
+        "#Olympiad",
+        "#Multiplication",
+        "#LumiMathPro"
+      ],
+      "keywords": [
+        "logic",
+        "reasoning",
+        "olympiad",
+        "multiplication",
+        "preschool",
+        "montessori"
+      ],
+      "keyline": "Competition-style brain math",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Still making math worksheets by hand?",
+          "benefit": "20 leveled problems with an answer key"
+        },
+        {
+          "id": "b",
+          "lead": "20 leveled problems with an answer key",
+          "benefit": "Plus a report of every weak spot"
+        },
+        {
+          "id": "c",
+          "lead": "Kids play, you print",
+          "benefit": "20 leveled problems with an answer key"
+        }
+      ]
+    },
+    "lumimathpro/zh-Hant": {
+      "app": "lumimathpro",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/777fyj.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6776958488?pt=118326163&ct=h7_lumimathpro_zh-Hant&mt=8",
+      "hook": "數學練習卷 還在自己出題？",
+      "name": "Lumi 數學星球：兒童數學",
+      "search": "Lumi 數學星球 兒童數學",
+      "tags": [
+        "#兒童數學",
+        "#幼兒數學",
+        "#數學啟蒙",
+        "#學前數學",
+        "#加減乘除",
+        "#Lumi數學星球兒童數學"
+      ],
+      "keywords": [
+        "幼兒數學",
+        "數學啟蒙",
+        "學前數學",
+        "加減乘除",
+        "珠心算",
+        "心算"
+      ],
+      "keyline": "國際數學賽題型・全家練邏輯",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "數學練習卷 還在自己出題？",
+          "benefit": "依程度出 20 題 還附解答"
+        },
+        {
+          "id": "b",
+          "lead": "依程度出 20 題 還附解答",
+          "benefit": "再匯出學習報告 弱項一目了然"
+        },
+        {
+          "id": "c",
+          "lead": "孩子玩，你來印",
+          "benefit": "依程度出 20 題 還附解答"
+        }
+      ]
+    },
+    "lumimathpro/ja": {
+      "app": "lumimathpro",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/a3fdk9.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6776958488?pt=118326163&ct=h7_lumimathpro_ja&mt=8",
+      "hook": "算数プリント まだ手作り？",
+      "name": "Lumi さんすうプラネット：子供の算数",
+      "search": "Lumi さんすうプラネット",
+      "tags": [
+        "#子供の算数",
+        "#さんすう",
+        "#けいさん",
+        "#幼児数",
+        "#たしざん",
+        "#Lumiさんすうプラネット"
+      ],
+      "keywords": [
+        "さんすう",
+        "けいさん",
+        "幼児数",
+        "たしざん",
+        "ひきざん",
+        "かけ算"
+      ],
+      "keyline": "国際大会レベルの思考力を家族で",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "算数プリント まだ手作り？",
+          "benefit": "レベルに合わせた20問 解答つき"
+        },
+        {
+          "id": "b",
+          "lead": "レベルに合わせた20問 解答つき",
+          "benefit": "学習レポートで にがてもひと目で"
+        },
+        {
+          "id": "c",
+          "lead": "子どもは遊ぶだけ プリントはワンタップ",
+          "benefit": "レベルに合わせた20問 解答つき"
+        }
+      ]
+    },
+    "lumimathpro/ko": {
+      "app": "lumimathpro",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/up1dlk.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=h7_lumimathpro_ko&mt=8",
+      "hook": "수학 학습지 아직 직접 만드세요?",
+      "name": "Lumi 수학 행성: 아이 수학",
+      "search": "Lumi 수학 행성 아이 수학",
+      "tags": [
+        "#아이수학",
+        "#유아수학",
+        "#숫자공부",
+        "#구구단",
+        "#셈하기",
+        "#Lumi수학행성아이수학"
+      ],
+      "keywords": [
+        "유아수학",
+        "숫자공부",
+        "구구단",
+        "셈하기",
+        "더하기",
+        "빼기"
+      ],
+      "keyline": "아이 수학",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "수학 학습지 아직 직접 만드세요?",
+          "benefit": "수준에 맞춘 20문제 정답까지"
+        },
+        {
+          "id": "b",
+          "lead": "수준에 맞춘 20문제 정답까지",
+          "benefit": "학습 보고서로 약점까지 한눈에"
+        },
+        {
+          "id": "c",
+          "lead": "아이는 놀고, 부모는 출력",
+          "benefit": "수준에 맞춘 20문제 정답까지"
+        }
+      ]
+    },
+    "lumimissionpro/en": {
+      "app": "lumimissionpro",
+      "locale": "en",
+      "url": "https://files.catbox.moe/993xuz.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6779745474?pt=118326163&ct=h7_lumimissionpro_en&mt=8",
+      "hook": "Teeth, meals, tidy-up: a daily battle?",
+      "name": "Lumi Mission Planet Pro",
+      "search": "Lumi Mission Planet Pro",
+      "tags": [
+        "#RoutineChart",
+        "#DailyRoutine",
+        "#ChoreChart",
+        "#RewardChart",
+        "#StickerChart",
+        "#LumiMissionPlanetPro"
+      ],
+      "keywords": [
+        "routine chart",
+        "daily routine",
+        "chore chart",
+        "reward chart",
+        "sticker chart",
+        "morning routine"
+      ],
+      "keyline": "Kids Routines & Habit Tracker",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Teeth, meals, tidy-up: a daily battle?",
+          "benefit": "Kids tap, the buddy cheers"
+        },
+        {
+          "id": "b",
+          "lead": "Kids tap, the buddy cheers",
+          "benefit": "Finish a mission, get a victory card"
+        },
+        {
+          "id": "c",
+          "lead": "Parents see every tap",
+          "benefit": "Kids tap, the buddy cheers"
+        }
+      ]
+    },
+    "lumimissionpro/zh-Hant": {
+      "app": "lumimissionpro",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/xh08zx.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6779745474?pt=118326163&ct=h7_lumimissionpro_zh-Hant&mt=8",
+      "hook": "刷牙、吃飯、收玩具 天天像打仗？",
+      "name": "Lumi 任務星球 Pro：好習慣養成遊戲",
+      "search": "Lumi 任務星球 Pro",
+      "tags": [
+        "#好習慣養成遊戲",
+        "#生活自理",
+        "#幼兒作息",
+        "#生活常規",
+        "#獎勵表",
+        "#Lumi任務星球Pro"
+      ],
+      "keywords": [
+        "生活自理",
+        "幼兒作息",
+        "生活常規",
+        "獎勵表",
+        "貼紙表",
+        "集點獎勵"
+      ],
+      "keyline": "好習慣養成遊戲",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "刷牙、吃飯、收玩具 天天像打仗？",
+          "benefit": "完成一步點一下 夥伴就歡呼"
+        },
+        {
+          "id": "b",
+          "lead": "完成一步點一下 夥伴就歡呼",
+          "benefit": "完成任務 就有勝利卡片"
+        },
+        {
+          "id": "c",
+          "lead": "家長看得到 每一筆紀錄",
+          "benefit": "完成一步點一下 夥伴就歡呼"
+        }
+      ]
+    },
+    "lumimissionpro/ja": {
+      "app": "lumimissionpro",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/1ged0k.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6779745474?pt=118326163&ct=h7_lumimissionpro_ja&mt=8",
+      "hook": "はみがき、ごはん、片づけ 毎日バトル？",
+      "name": "Lumi ミッション星 Pro 毎日の習慣",
+      "search": "Lumi ミッション星 Pro",
+      "tags": [
+        "#こども習慣",
+        "#お支度ボード",
+        "#習慣化",
+        "#子育て",
+        "#お手伝い",
+        "#Lumiミッション星Pro"
+      ],
+      "keywords": [
+        "こども習慣",
+        "お支度ボード",
+        "習慣化",
+        "子育て",
+        "お手伝い",
+        "ごほうびシール"
+      ],
+      "keyline": "こども習慣 · お支度ボード · 習慣化",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "はみがき、ごはん、片づけ 毎日バトル？",
+          "benefit": "できたら1タップ 相棒が大よろこび"
+        },
+        {
+          "id": "b",
+          "lead": "できたら1タップ 相棒が大よろこび",
+          "benefit": "ミッションのあとは 記念カード"
+        },
+        {
+          "id": "c",
+          "lead": "保護者は すべての記録を確認",
+          "benefit": "できたら1タップ 相棒が大よろこび"
+        }
+      ]
+    },
+    "lumimissionpro/ko": {
+      "app": "lumimissionpro",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/810h89.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=h7_lumimissionpro_ko&mt=8",
+      "hook": "양치, 밥, 정리 매일 전쟁인가요?",
+      "name": "Lumi 미션 별 Pro: 생활습관 게임",
+      "search": "Lumi 미션 별 Pro",
+      "tags": [
+        "#생활습관게임",
+        "#유아습관",
+        "#습관형성",
+        "#생활계획표",
+        "#루틴",
+        "#Lumi미션별Pro"
+      ],
+      "keywords": [
+        "유아 습관",
+        "습관형성",
+        "생활계획표",
+        "루틴",
+        "양치",
+        "취침"
+      ],
+      "keyline": "생활습관 게임",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "양치, 밥, 정리 매일 전쟁인가요?",
+          "benefit": "한 번 탭하면 친구가 환호해요"
+        },
+        {
+          "id": "b",
+          "lead": "한 번 탭하면 친구가 환호해요",
+          "benefit": "미션을 끝내면 기념 카드"
+        },
+        {
+          "id": "c",
+          "lead": "보호자는 전체 기록까지 확인",
+          "benefit": "한 번 탭하면 친구가 환호해요"
+        }
+      ]
+    },
+    "snapport/en": {
+      "app": "snapport",
+      "locale": "en",
+      "url": "https://files.catbox.moe/fag79w.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=h7_snapport_en&mt=8",
+      "hook": "Passport photo? Take it at home",
+      "name": "Snapport: Passport & ID Photos",
+      "search": "Snapport",
+      "tags": [
+        "#PassportIDPhotos",
+        "#Biometric",
+        "#GreenCardPhoto",
+        "#Student",
+        "#BadgePhoto",
+        "#Snapport"
+      ],
+      "keywords": [
+        "biometric",
+        "green card photo",
+        "student",
+        "badge photo",
+        "template",
+        "layout"
+      ],
+      "keyline": "Passport ID Visa Photos",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Passport photo? Take it at home",
+          "benefit": "Guides for head, eyes and chin"
+        },
+        {
+          "id": "b",
+          "lead": "Guides for head, eyes and chin",
+          "benefit": "Swap the background right on your iPhone"
+        },
+        {
+          "id": "c",
+          "lead": "Print 4×6, A4 or Letter sheets",
+          "benefit": "Guides for head, eyes and chin"
+        }
+      ]
+    },
+    "snapport/zh-Hant": {
+      "app": "snapport",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/xrcahc.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6780575828?pt=118326163&ct=h7_snapport_zh-Hant&mt=8",
+      "hook": "護照照片 在家就能拍",
+      "name": "Snapport: 護照證件照",
+      "search": "Snapport",
+      "tags": [
+        "#護照證件照",
+        "#證件照",
+        "#護照照片",
+        "#簽證照片",
+        "#大頭照",
+        "#Snapport"
+      ],
+      "keywords": [
+        "證件照",
+        "護照照片",
+        "簽證照片",
+        "大頭照",
+        "身分證照片",
+        "台胞證照片"
+      ],
+      "keyline": "大頭照排版・台胞證白底照片",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "護照照片 在家就能拍",
+          "benefit": "頭頂、眼線、下巴 都有對齊指引"
+        },
+        {
+          "id": "b",
+          "lead": "頭頂、眼線、下巴 都有對齊指引",
+          "benefit": "背景直接換 全在 iPhone 上完成"
+        },
+        {
+          "id": "c",
+          "lead": "4×6、A4、Letter 列印拼版",
+          "benefit": "頭頂、眼線、下巴 都有對齊指引"
+        }
+      ]
+    },
+    "snapport/ja": {
+      "app": "snapport",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/pumpbq.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=h7_snapport_ja&mt=8",
+      "hook": "パスポート写真、 自宅で撮れる",
+      "name": "Snapport: パスポート証明写真",
+      "search": "Snapport",
+      "tags": [
+        "#パスポート証明写真",
+        "#パスポート写真",
+        "#ビザ写真",
+        "#履歴書写真",
+        "#マイナンバー写真",
+        "#Snapport"
+      ],
+      "keywords": [
+        "パスポート写真",
+        "ビザ写真",
+        "履歴書写真",
+        "マイナンバー写真",
+        "免許証写真",
+        "学生証写真"
+      ],
+      "keyline": "学生証・社員証の写真も自宅で撮影",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "パスポート写真、自宅で撮れる",
+          "benefit": "頭頂・目線・あごの ガイドつき"
+        },
+        {
+          "id": "b",
+          "lead": "頭頂・目線・あごの ガイドつき",
+          "benefit": "背景の変更も iPhoneだけで"
+        },
+        {
+          "id": "c",
+          "lead": "4×6・A4・レターの 印刷シート",
+          "benefit": "頭頂・目線・あごの ガイドつき"
+        }
+      ]
+    },
+    "snapport/ko": {
+      "app": "snapport",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/yn4j21.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=h7_snapport_ko&mt=8",
+      "hook": "여권 사진, 집에서 찍어요",
+      "name": "Snapport: 여권·신분증 사진",
+      "search": "Snapport",
+      "tags": [
+        "#여권신분증사진",
+        "#여권사진",
+        "#비자사진",
+        "#신분증사진",
+        "#민증사진",
+        "#Snapport"
+      ],
+      "keywords": [
+        "여권사진",
+        "비자사진",
+        "신분증사진",
+        "민증사진",
+        "이력서사진",
+        "학생증사진"
+      ],
+      "keyline": "여권 비자 증명사진",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "여권 사진, 집에서 찍어요",
+          "benefit": "머리·눈·턱 정렬 가이드"
+        },
+        {
+          "id": "b",
+          "lead": "머리·눈·턱 정렬 가이드",
+          "benefit": "배경 변경도 iPhone에서 바로"
+        },
+        {
+          "id": "c",
+          "lead": "4×6·A4·Letter 인쇄 시트",
+          "benefit": "머리·눈·턱 정렬 가이드"
+        }
+      ]
+    },
+    "tripbee/en": {
+      "app": "tripbee",
+      "locale": "en",
+      "url": "https://files.catbox.moe/lt4l3w.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=h7_tripbee_en&mt=8",
+      "hook": "Trip plans buried in screenshots?",
+      "name": "TripBee Pro: Trip Planner",
+      "search": "TripBee Pro",
+      "tags": [
+        "#TripPlanner",
+        "#Vacation",
+        "#Holiday",
+        "#Journey",
+        "#Organizer",
+        "#TripBeePro"
+      ],
+      "keywords": [
+        "vacation",
+        "holiday",
+        "journey",
+        "organizer",
+        "checklist",
+        "family travel"
+      ],
+      "keyline": "Itinerary, packing & maps",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Trip plans buried in screenshots?",
+          "benefit": "Open in Maps in one tap"
+        },
+        {
+          "id": "b",
+          "lead": "Open in Maps in one tap",
+          "benefit": "Plan every trip, even offline"
+        }
+      ]
+    },
+    "tripbee/zh-Hant": {
+      "app": "tripbee",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/w93zaw.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6787754435?pt=118326163&ct=h7_tripbee_zh-Hant&mt=8",
+      "hook": "機票、行程 還在翻截圖？",
+      "name": "TripBee: 旅遊行程規劃",
+      "search": "TripBee 旅遊行程規劃",
+      "tags": [
+        "#旅遊行程規劃",
+        "#旅行",
+        "#度假",
+        "#出遊",
+        "#自由行",
+        "#TripBee旅遊行程規劃"
+      ],
+      "keywords": [
+        "旅行",
+        "度假",
+        "出遊",
+        "自由行",
+        "自助",
+        "親子遊"
+      ],
+      "keyline": "行程表・打包清單・導航",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "機票、行程 還在翻截圖？",
+          "benefit": "Apple 地圖 一鍵導航"
+        },
+        {
+          "id": "b",
+          "lead": "Apple 地圖 一鍵導航",
+          "benefit": "每趟旅程 離線也能規劃"
+        }
+      ]
+    },
+    "tripbee/ja": {
+      "app": "tripbee",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/ry36ln.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=h7_tripbee_ja&mt=8",
+      "hook": "旅の予定、まだ スクショ？",
+      "name": "TripBee: 旅行プランナー",
+      "search": "TripBee 旅行プランナー",
+      "tags": [
+        "#旅行プランナー",
+        "#観光",
+        "#休暇",
+        "#温泉",
+        "#ホテル",
+        "#TripBee旅行プランナー"
+      ],
+      "keywords": [
+        "観光",
+        "休暇",
+        "温泉",
+        "ホテル",
+        "航空券",
+        "家族"
+      ],
+      "keyline": "旅行プランナー",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "旅の予定、まだ スクショ？",
+          "benefit": "Appleマップを ワンタップで"
+        },
+        {
+          "id": "b",
+          "lead": "Appleマップを ワンタップで",
+          "benefit": "オフラインでも 旅の計画ができる"
+        }
+      ]
+    },
+    "tripbee/ko": {
+      "app": "tripbee",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/q53ux9.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=h7_tripbee_ko&mt=8",
+      "hook": "여행 일정, 아직도 캡처로?",
+      "name": "TripBee: 여행 플래너",
+      "search": "TripBee 여행 플래너",
+      "tags": [
+        "#여행플래너",
+        "#휴가",
+        "#관광",
+        "#준비물",
+        "#체크리스트",
+        "#TripBee여행플래너"
+      ],
+      "keywords": [
+        "휴가",
+        "관광",
+        "준비물",
+        "체크리스트",
+        "가족",
+        "아이"
+      ],
+      "keyline": "여행 일정과 짐 싸기",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "여행 일정, 아직도 캡처로?",
+          "benefit": "Apple 지도 원탭 길찾기"
+        },
+        {
+          "id": "b",
+          "lead": "Apple 지도 원탭 길찾기",
+          "benefit": "오프라인에서도 여행 계획 가능"
+        }
+      ]
+    },
+    "wifiaid/en": {
+      "app": "wifiaid",
+      "locale": "en",
+      "url": "https://files.catbox.moe/fw8rsu.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6790467886?pt=118326163&ct=h7_wifiaid_en&mt=8",
+      "hook": "Wi-Fi acting up? See the evidence",
+      "name": "WiFi Aid: Find WiFi Problems",
+      "search": "WiFi Aid",
+      "tags": [
+        "#FindWiFiProblems",
+        "#Internet",
+        "#Outage",
+        "#Router",
+        "#Troubleshoot",
+        "#WiFiAid"
+      ],
+      "keywords": [
+        "internet",
+        "outage",
+        "router",
+        "troubleshoot",
+        "latency",
+        "jitter"
+      ],
+      "keyline": "Network Diagnosis & Evidence",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Wi-Fi acting up? See the evidence",
+          "benefit": "One tap to check"
+        },
+        {
+          "id": "b",
+          "lead": "One tap to check",
+          "benefit": "Delay and stability, too"
+        },
+        {
+          "id": "c",
+          "lead": "Flaky Wi-Fi? Deep Check",
+          "benefit": "One tap to check"
+        }
+      ]
+    },
+    "wifiaid/zh-Hant": {
+      "app": "wifiaid",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/elrj8r.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=h7_wifiaid_zh-Hant&mt=8",
+      "hook": "網路問題別再猜 直接看證據",
+      "name": "WiFi Aid：找出網路問題·診斷",
+      "search": "WiFi Aid 找出網路問題",
+      "tags": [
+        "#找出網路問題診斷",
+        "#網路故障",
+        "#斷線",
+        "#路由器",
+        "#連線測試",
+        "#WiFiAid找出網路問題"
+      ],
+      "keywords": [
+        "網路故障",
+        "斷線",
+        "路由器",
+        "連線測試",
+        "延遲",
+        "抖動"
+      ],
+      "keyline": "網路診斷與連線證據",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "網路問題別再猜 直接看證據",
+          "benefit": "一鍵完成檢查"
+        },
+        {
+          "id": "b",
+          "lead": "一鍵完成檢查",
+          "benefit": "連延遲和穩定度都看"
+        },
+        {
+          "id": "c",
+          "lead": "時好時壞？深度檢查",
+          "benefit": "一鍵完成檢查"
+        }
+      ]
+    },
+    "wifiaid/ja": {
+      "app": "wifiaid",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/s367cp.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=h7_wifiaid_ja&mt=8",
+      "hook": "ネット不調？ 勘より証拠",
+      "name": "WiFi Aid：ネット不調の原因を特定",
+      "search": "WiFi Aid ネット不調",
+      "tags": [
+        "#ネット不調の原因を特定",
+        "#インターネット障害",
+        "#ルーター",
+        "#接続テスト",
+        "#高遅延",
+        "#WiFiAidネット不調"
+      ],
+      "keywords": [
+        "インターネット障害",
+        "ルーター",
+        "接続テスト",
+        "高遅延",
+        "ジッター",
+        "サイト確認"
+      ],
+      "keyline": "ネット接続診断・原因を特定",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "ネット不調？勘より証拠",
+          "benefit": "ワンタップで診断"
+        },
+        {
+          "id": "b",
+          "lead": "ワンタップで診断",
+          "benefit": "遅延も安定性も"
+        },
+        {
+          "id": "c",
+          "lead": "不安定なら 詳細チェック",
+          "benefit": "ワンタップで診断"
+        }
+      ]
+    },
+    "wifiaid/ko": {
+      "app": "wifiaid",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/ju6dy3.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=h7_wifiaid_ko&mt=8",
+      "hook": "와이파이 문제? 감 말고 증거로",
+      "name": "WiFi Aid：네트워크 문제 진단",
+      "search": "WiFi Aid 네트워크 진단",
+      "tags": [
+        "#네트워크문제진단",
+        "#인터넷장애",
+        "#공유기",
+        "#연결테스트",
+        "#지연시간",
+        "#WiFiAid네트워크진단"
+      ],
+      "keywords": [
+        "인터넷장애",
+        "공유기",
+        "연결테스트",
+        "지연시간",
+        "지터",
+        "사이트확인"
+      ],
+      "keyline": "네트워크 문제 진단",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "와이파이 문제? 감 말고 증거로",
+          "benefit": "탭 한 번으로 검사"
+        },
+        {
+          "id": "b",
+          "lead": "탭 한 번으로 검사",
+          "benefit": "지연과 안정성까지"
+        },
+        {
+          "id": "c",
+          "lead": "자꾸 끊기면? 정밀 검사",
+          "benefit": "탭 한 번으로 검사"
+        }
+      ]
+    },
+    "wordmate/en": {
+      "app": "wordmate",
+      "locale": "en",
+      "url": "https://files.catbox.moe/5ieeti.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6789917808?pt=118326163&ct=h7_wordmate_en&mt=8",
+      "hook": "Learn words without opening the app",
+      "name": "Wordmate: Learn 44 Languages",
+      "search": "Wordmate",
+      "tags": [
+        "#Learn44Languages",
+        "#Flashcards",
+        "#Spanish",
+        "#French",
+        "#Japanese",
+        "#Wordmate"
+      ],
+      "keywords": [
+        "flashcards",
+        "spanish",
+        "french",
+        "japanese",
+        "korean",
+        "german"
+      ],
+      "keyline": "44 Languages & Vocab Widget",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Learn words without opening the app",
+          "benefit": "Or right on your wrist"
+        },
+        {
+          "id": "b",
+          "lead": "Or right on your wrist",
+          "benefit": "Keep your streak going"
+        },
+        {
+          "id": "c",
+          "lead": "Pick from 44 languages",
+          "benefit": "Or right on your wrist"
+        }
+      ]
+    },
+    "wordmate/zh-Hant": {
+      "app": "wordmate",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/q4brz2.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=h7_wordmate_zh-Hant&mt=8",
+      "hook": "不用打開 App 也能背單字",
+      "name": "Wordmate：44 種語言背單字",
+      "search": "Wordmate 背單字",
+      "tags": [
+        "#44種語言背單字",
+        "#學英文",
+        "#學日文",
+        "#學韓文",
+        "#西班牙文",
+        "#Wordmate背單字"
+      ],
+      "keywords": [
+        "學英文",
+        "學日文",
+        "學韓文",
+        "西班牙文",
+        "法文",
+        "德文"
+      ],
+      "keyline": "44 種語言與單字小工具",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "不用打開 App 也能背單字",
+          "benefit": "手腕上也能背"
+        },
+        {
+          "id": "b",
+          "lead": "手腕上也能背",
+          "benefit": "連續學習不中斷"
+        },
+        {
+          "id": "c",
+          "lead": "44 種語言任選",
+          "benefit": "手腕上也能背"
+        }
+      ]
+    },
+    "wordmate/ja": {
+      "app": "wordmate",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/ut2fgw.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=h7_wordmate_ja&mt=8",
+      "hook": "アプリを開かずに 単語学習",
+      "name": "Wordmate：44言語の単語学習",
+      "search": "Wordmate 単語学習",
+      "tags": [
+        "#44言語の単語学習",
+        "#英語",
+        "#韓国語",
+        "#中国語",
+        "#スペイン語",
+        "#Wordmate単語学習"
+      ],
+      "keywords": [
+        "英語",
+        "韓国語",
+        "中国語",
+        "スペイン語",
+        "フランス語",
+        "ドイツ語"
+      ],
+      "keyline": "44言語の単語ウィジェット",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "アプリを開かずに 単語学習",
+          "benefit": "Apple Watchでも"
+        },
+        {
+          "id": "b",
+          "lead": "Apple Watchでも",
+          "benefit": "連続記録をキープ"
+        },
+        {
+          "id": "c",
+          "lead": "44言語から選べる",
+          "benefit": "Apple Watchでも"
+        }
+      ]
+    },
+    "wordmate/ko": {
+      "app": "wordmate",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/0kxulu.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=h7_wordmate_ko&mt=8",
+      "hook": "앱을 열지 않고 단어 공부",
+      "name": "Wordmate: 44개 언어 단어 학습",
+      "search": "Wordmate 단어 학습",
+      "tags": [
+        "#44개언어단어학습",
+        "#영어공부",
+        "#일본어공부",
+        "#중국어공부",
+        "#스페인어",
+        "#Wordmate단어학습"
+      ],
+      "keywords": [
+        "영어공부",
+        "일본어공부",
+        "중국어공부",
+        "스페인어",
+        "프랑스어",
+        "독일어"
+      ],
+      "keyline": "44개 언어 단어 위젯",
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "앱을 열지 않고 단어 공부",
+          "benefit": "손목에서도 단어 공부"
+        },
+        {
+          "id": "b",
+          "lead": "손목에서도 단어 공부",
+          "benefit": "연속 학습 이어가기"
+        },
+        {
+          "id": "c",
+          "lead": "44개 언어 중 선택",
+          "benefit": "손목에서도 단어 공부"
+        }
+      ]
     }
   },
   "seo": {
-    "dailymate": {
-      "en": {
-        "keywords": [
-          "conversation",
-          "speaking",
-          "pronunciation",
-          "listening",
-          "travel",
-          "beginner"
-        ],
-        "keyline": "Language Phrases",
-        "tags": [
-          "#LanguagePhrases",
-          "#Conversation",
-          "#Speaking",
-          "#Pronunciation",
-          "#Listening",
-          "#DailyMatePhrases"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "學英文",
-          "英文口說",
-          "旅遊英文",
-          "實用短句",
-          "發音聆聽",
-          "聽力"
-        ],
-        "keyline": "用句子學語言",
-        "tags": [
-          "#用句子學語言",
-          "#學英文",
-          "#英文口說",
-          "#旅遊英文",
-          "#實用短句",
-          "#DailyMate用句子學語言"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "英会話",
-          "英語学習",
-          "旅行英語",
-          "日常会話",
-          "発音",
-          "リスニング"
-        ],
-        "keyline": "文で身につく語学",
-        "tags": [
-          "#文で身につく語学",
-          "#英会話",
-          "#英語学習",
-          "#旅行英語",
-          "#日常会話",
-          "#DailyMate文で身につく語学"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "영어회화",
-          "영어공부",
-          "여행영어",
-          "일상회화",
-          "발음듣기",
-          "리스닝"
-        ],
-        "keyline": "문장으로 배우는 언어",
-        "tags": [
-          "#문장으로배우는언어",
-          "#영어회화",
-          "#영어공부",
-          "#여행영어",
-          "#일상회화",
-          "#DailyMate문장으로배우는언어"
-        ]
-      }
-    },
-    "gmoney": {
-      "en": {
-        "keywords": [
-          "expense tracker",
-          "budget",
-          "money manager",
-          "currency converter",
-          "exchange rate",
-          "spending tracker"
-        ],
-        "keyline": "Budget, Expenses & Currency",
-        "tags": [
-          "#SpendingBudget",
-          "#ExpenseTracker",
-          "#Budget",
-          "#MoneyManager",
-          "#CurrencyConverter",
-          "#GMoney"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "記帳",
-          "記帳app",
-          "預算",
-          "理財",
-          "記帳軟體",
-          "開銷"
-        ],
-        "keyline": "記帳、預算、理財與匯率換算",
-        "tags": [
-          "#日常記帳預算匯率",
-          "#記帳",
-          "#記帳app",
-          "#預算",
-          "#理財",
-          "#GMoney記帳"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "家計簿",
-          "家計簿アプリ",
-          "予算",
-          "支出管理",
-          "節約",
-          "お小遣い帳"
-        ],
-        "keyline": "家計簿・予算・節約・為替換算",
-        "tags": [
-          "#家計簿予算為替",
-          "#家計簿",
-          "#家計簿アプリ",
-          "#予算",
-          "#支出管理",
-          "#GMoney家計簿"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "가계부",
-          "예산",
-          "지출관리",
-          "용돈기입장",
-          "환율",
-          "환율계산기"
-        ],
-        "keyline": "가계부·예산·환율 계산기",
-        "tags": [
-          "#가계부예산환율",
-          "#가계부",
-          "#예산",
-          "#지출관리",
-          "#용돈기입장",
-          "#GMoney가계부"
-        ]
-      }
-    },
-    "hourstag": {
-      "en": {
-        "keywords": [
-          "budget",
-          "spending tracker",
-          "savings",
-          "expense tracker",
-          "money manager",
-          "budget planner"
-        ],
-        "keyline": "Budget, Spending & Savings",
-        "tags": [
-          "#HoursToBuy",
-          "#Budget",
-          "#SpendingTracker",
-          "#Savings",
-          "#ExpenseTracker",
-          "#HoursTagHoursToBuy"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "記帳",
-          "預算",
-          "省錢",
-          "理財",
-          "儲蓄",
-          "存錢"
-        ],
-        "keyline": "預算、記帳、省錢與儲蓄",
-        "tags": [
-          "#價格換工時",
-          "#記帳",
-          "#預算",
-          "#省錢",
-          "#理財",
-          "#HoursTag價格換工時"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "節約",
-          "家計簿",
-          "予算",
-          "貯金",
-          "節約術",
-          "支出管理"
-        ],
-        "keyline": "節約・家計簿・予算・貯金",
-        "tags": [
-          "#価格を時間に",
-          "#節約",
-          "#家計簿",
-          "#予算",
-          "#貯金",
-          "#HoursTag価格を時間に"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "절약",
-          "가계부",
-          "예산",
-          "저축",
-          "소비",
-          "돈관리"
-        ],
-        "keyline": "절약·가계부·예산·저축",
-        "tags": [
-          "#가격을시간으로",
-          "#절약",
-          "#가계부",
-          "#예산",
-          "#저축",
-          "#HoursTag가격을시간으로"
-        ]
-      }
-    },
     "hourstaglite": {
       "en": {
         "keywords": [
@@ -10967,318 +12648,6 @@
           "#가계부",
           "#예산",
           "#저축"
-        ]
-      }
-    },
-    "lumibopomofopro": {
-      "en": {
-        "keywords": [
-          "chinese for kids",
-          "learn chinese",
-          "mandarin for kids",
-          "chinese phonics",
-          "pinyin",
-          "mandarin"
-        ],
-        "keyline": "Zhuyin Phonics Game for Kids",
-        "tags": [
-          "#Zhuyin",
-          "#ChineseForKids",
-          "#LearnChinese",
-          "#MandarinForKids",
-          "#ChinesePhonics",
-          "#LumiBopomofoPro"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "注音",
-          "ㄅㄆㄇ",
-          "注音符號",
-          "幼兒學注音",
-          "學前教育",
-          "識字"
-        ],
-        "keyline": "幼兒注音遊戲・拼讀聲調",
-        "tags": [
-          "#注音",
-          "#ㄅㄆㄇ",
-          "#注音符號",
-          "#幼兒學注音",
-          "#學前教育",
-          "#Lumi注音星球Pro"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "ボポモフォ",
-          "中国語",
-          "ピンイン",
-          "中国語発音",
-          "子供中国語",
-          "中国語学習"
-        ],
-        "keyline": "ボポモフォ · 中国語 · ピンイン",
-        "tags": [
-          "#ボポモフォ",
-          "#中国語",
-          "#ピンイン",
-          "#中国語発音",
-          "#子供中国語",
-          "#LumiBopomofoPro"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "보포모포",
-          "중국어",
-          "병음",
-          "중국어발음",
-          "어린이중국어",
-          "중국어공부"
-        ],
-        "keyline": "보포모포 · 중국어 · 병음",
-        "tags": [
-          "#보포모포",
-          "#중국어",
-          "#병음",
-          "#중국어발음",
-          "#어린이중국어",
-          "#LumiBopomofoPro"
-        ]
-      }
-    },
-    "lumiletterspro": {
-      "en": {
-        "keywords": [
-          "alphabet",
-          "letter sounds",
-          "learn to read",
-          "tracing",
-          "handwriting",
-          "reading"
-        ],
-        "keyline": "ABC Phonics: Trace & Read",
-        "tags": [
-          "#ABCPhonics",
-          "#Alphabet",
-          "#LetterSounds",
-          "#LearnToRead",
-          "#Tracing",
-          "#LumiLettersPro"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "英文字母",
-          "phonics",
-          "英文發音",
-          "學英文",
-          "兒童英文",
-          "幼兒英文"
-        ],
-        "keyline": "ABC啟蒙",
-        "tags": [
-          "#ABC啟蒙",
-          "#英文字母",
-          "#Phonics",
-          "#英文發音",
-          "#學英文",
-          "#Lumi字母星球Pro"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "アルファベット",
-          "英語",
-          "えいご",
-          "文字",
-          "英語発音",
-          "なぞり書き"
-        ],
-        "keyline": "ABCフォニックス読み書き",
-        "tags": [
-          "#ABCフォニックス",
-          "#アルファベット",
-          "#英語",
-          "#えいご",
-          "#文字",
-          "#LumiレターPro"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "알파벳",
-          "영어",
-          "글자",
-          "영어발음",
-          "영어학습",
-          "어린이영어"
-        ],
-        "keyline": "ABC 파닉스 읽기·쓰기",
-        "tags": [
-          "#ABC파닉스",
-          "#알파벳",
-          "#영어",
-          "#글자",
-          "#영어발음",
-          "#Lumi레터Pro"
-        ]
-      }
-    },
-    "lumimathpro": {
-      "en": {
-        "keywords": [
-          "logic",
-          "reasoning",
-          "olympiad",
-          "multiplication",
-          "preschool",
-          "montessori"
-        ],
-        "keyline": "Kids Numbers",
-        "tags": [
-          "#KidsNumbers",
-          "#Logic",
-          "#Reasoning",
-          "#Olympiad",
-          "#Multiplication",
-          "#LumiMathPro"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "幼兒數學",
-          "數學啟蒙",
-          "學前數學",
-          "加減乘除",
-          "珠心算",
-          "心算"
-        ],
-        "keyline": "兒童數學",
-        "tags": [
-          "#兒童數學",
-          "#幼兒數學",
-          "#數學啟蒙",
-          "#學前數學",
-          "#加減乘除",
-          "#Lumi數學星球兒童數學"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "さんすう",
-          "けいさん",
-          "幼児数",
-          "たしざん",
-          "ひきざん",
-          "かけ算"
-        ],
-        "keyline": "子供の算数",
-        "tags": [
-          "#子供の算数",
-          "#さんすう",
-          "#けいさん",
-          "#幼児数",
-          "#たしざん",
-          "#Lumiさんすうプラネット"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "유아수학",
-          "숫자공부",
-          "구구단",
-          "셈하기",
-          "더하기",
-          "빼기"
-        ],
-        "keyline": "아이 수학",
-        "tags": [
-          "#아이수학",
-          "#유아수학",
-          "#숫자공부",
-          "#구구단",
-          "#셈하기",
-          "#Lumi수학행성아이수학"
-        ]
-      }
-    },
-    "lumimissionpro": {
-      "en": {
-        "keywords": [
-          "routine chart",
-          "daily routine",
-          "chore chart",
-          "reward chart",
-          "sticker chart",
-          "morning routine"
-        ],
-        "keyline": "routine chart · daily routine · chore chart",
-        "tags": [
-          "#RoutineChart",
-          "#DailyRoutine",
-          "#ChoreChart",
-          "#RewardChart",
-          "#StickerChart",
-          "#LumiMissionPlanetPro"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "生活自理",
-          "幼兒作息",
-          "生活常規",
-          "獎勵表",
-          "貼紙表",
-          "集點獎勵"
-        ],
-        "keyline": "好習慣養成遊戲",
-        "tags": [
-          "#好習慣養成遊戲",
-          "#生活自理",
-          "#幼兒作息",
-          "#生活常規",
-          "#獎勵表",
-          "#Lumi任務星球Pro"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "こども習慣",
-          "お支度ボード",
-          "習慣化",
-          "子育て",
-          "お手伝い",
-          "ごほうびシール"
-        ],
-        "keyline": "こども習慣 · お支度ボード · 習慣化",
-        "tags": [
-          "#こども習慣",
-          "#お支度ボード",
-          "#習慣化",
-          "#子育て",
-          "#お手伝い",
-          "#Lumiミッション星Pro"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "유아 습관",
-          "습관형성",
-          "생활계획표",
-          "루틴",
-          "양치",
-          "취침"
-        ],
-        "keyline": "생활습관 게임",
-        "tags": [
-          "#생활습관게임",
-          "#유아습관",
-          "#습관형성",
-          "#생활계획표",
-          "#루틴",
-          "#Lumi미션별Pro"
         ]
       }
     },
@@ -11362,84 +12731,6 @@
         ]
       }
     },
-    "snapport": {
-      "en": {
-        "keywords": [
-          "biometric",
-          "green card photo",
-          "student",
-          "badge photo",
-          "template",
-          "layout"
-        ],
-        "keyline": "Passport & ID Photos",
-        "tags": [
-          "#PassportIDPhotos",
-          "#Biometric",
-          "#GreenCardPhoto",
-          "#Student",
-          "#BadgePhoto",
-          "#Snapport"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "證件照",
-          "護照照片",
-          "簽證照片",
-          "大頭照",
-          "身分證照片",
-          "台胞證照片"
-        ],
-        "keyline": "大頭照排版・台胞證白底照片",
-        "tags": [
-          "#護照證件照",
-          "#證件照",
-          "#護照照片",
-          "#簽證照片",
-          "#大頭照",
-          "#Snapport"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "パスポート写真",
-          "ビザ写真",
-          "履歴書写真",
-          "マイナンバー写真",
-          "免許証写真",
-          "学生証写真"
-        ],
-        "keyline": "パスポート証明写真",
-        "tags": [
-          "#パスポート証明写真",
-          "#パスポート写真",
-          "#ビザ写真",
-          "#履歴書写真",
-          "#マイナンバー写真",
-          "#Snapport"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "여권사진",
-          "비자사진",
-          "신분증사진",
-          "민증사진",
-          "이력서사진",
-          "학생증사진"
-        ],
-        "keyline": "여권·신분증 사진",
-        "tags": [
-          "#여권신분증사진",
-          "#여권사진",
-          "#비자사진",
-          "#신분증사진",
-          "#민증사진",
-          "#Snapport"
-        ]
-      }
-    },
     "sononote": {
       "ja": {
         "keywords": [
@@ -11477,240 +12768,6 @@
           "#받아쓰기",
           "#음성인식",
           "#SonoNote"
-        ]
-      }
-    },
-    "tripbee": {
-      "en": {
-        "keywords": [
-          "vacation",
-          "holiday",
-          "journey",
-          "organizer",
-          "checklist",
-          "family travel"
-        ],
-        "keyline": "Trip Planner",
-        "tags": [
-          "#TripPlanner",
-          "#Vacation",
-          "#Holiday",
-          "#Journey",
-          "#Organizer",
-          "#TripBeePro"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "旅行",
-          "度假",
-          "出遊",
-          "自由行",
-          "自助",
-          "親子遊"
-        ],
-        "keyline": "旅遊行程規劃",
-        "tags": [
-          "#旅遊行程規劃",
-          "#旅行",
-          "#度假",
-          "#出遊",
-          "#自由行",
-          "#TripBee旅遊行程規劃"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "観光",
-          "休暇",
-          "温泉",
-          "ホテル",
-          "航空券",
-          "家族"
-        ],
-        "keyline": "旅行プランナー",
-        "tags": [
-          "#旅行プランナー",
-          "#観光",
-          "#休暇",
-          "#温泉",
-          "#ホテル",
-          "#TripBee旅行プランナー"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "휴가",
-          "관광",
-          "준비물",
-          "체크리스트",
-          "가족",
-          "아이"
-        ],
-        "keyline": "여행 플래너",
-        "tags": [
-          "#여행플래너",
-          "#휴가",
-          "#관광",
-          "#준비물",
-          "#체크리스트",
-          "#TripBee여행플래너"
-        ]
-      }
-    },
-    "wifiaid": {
-      "en": {
-        "keywords": [
-          "internet",
-          "outage",
-          "router",
-          "troubleshoot",
-          "latency",
-          "jitter"
-        ],
-        "keyline": "Find WiFi Problems",
-        "tags": [
-          "#FindWiFiProblems",
-          "#Internet",
-          "#Outage",
-          "#Router",
-          "#Troubleshoot",
-          "#WiFiAid"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "網路故障",
-          "斷線",
-          "路由器",
-          "連線測試",
-          "延遲",
-          "抖動"
-        ],
-        "keyline": "找出網路問題·診斷",
-        "tags": [
-          "#找出網路問題診斷",
-          "#網路故障",
-          "#斷線",
-          "#路由器",
-          "#連線測試",
-          "#WiFiAid找出網路問題"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "インターネット障害",
-          "ルーター",
-          "接続テスト",
-          "高遅延",
-          "ジッター",
-          "サイト確認"
-        ],
-        "keyline": "ネット不調の原因を特定",
-        "tags": [
-          "#ネット不調の原因を特定",
-          "#インターネット障害",
-          "#ルーター",
-          "#接続テスト",
-          "#高遅延",
-          "#WiFiAidネット不調"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "인터넷장애",
-          "공유기",
-          "연결테스트",
-          "지연시간",
-          "지터",
-          "사이트확인"
-        ],
-        "keyline": "네트워크 문제 진단",
-        "tags": [
-          "#네트워크문제진단",
-          "#인터넷장애",
-          "#공유기",
-          "#연결테스트",
-          "#지연시간",
-          "#WiFiAid네트워크진단"
-        ]
-      }
-    },
-    "wordmate": {
-      "en": {
-        "keywords": [
-          "flashcards",
-          "spanish",
-          "french",
-          "japanese",
-          "korean",
-          "german"
-        ],
-        "keyline": "Learn 44 Languages",
-        "tags": [
-          "#Learn44Languages",
-          "#Flashcards",
-          "#Spanish",
-          "#French",
-          "#Japanese",
-          "#Wordmate"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "學英文",
-          "學日文",
-          "學韓文",
-          "西班牙文",
-          "法文",
-          "德文"
-        ],
-        "keyline": "44 種語言背單字",
-        "tags": [
-          "#44種語言背單字",
-          "#學英文",
-          "#學日文",
-          "#學韓文",
-          "#西班牙文",
-          "#Wordmate背單字"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "英語",
-          "韓国語",
-          "中国語",
-          "スペイン語",
-          "フランス語",
-          "ドイツ語"
-        ],
-        "keyline": "44言語の単語学習",
-        "tags": [
-          "#44言語の単語学習",
-          "#英語",
-          "#韓国語",
-          "#中国語",
-          "#スペイン語",
-          "#Wordmate単語学習"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "영어공부",
-          "일본어공부",
-          "중국어공부",
-          "스페인어",
-          "프랑스어",
-          "독일어"
-        ],
-        "keyline": "44개 언어 단어 학습",
-        "tags": [
-          "#44개언어단어학습",
-          "#영어공부",
-          "#일본어공부",
-          "#중국어공부",
-          "#스페인어",
-          "#Wordmate단어학습"
         ]
       }
     }
@@ -11765,39 +12822,39 @@
       "date": "2026-10-16",
       "slot": 1,
       "channel": "instagram",
-      "clip": "battai/zh-Hant"
+      "clip": "claudeusagemini/zh-Hant"
     },
     {
       "date": "2026-10-16",
       "slot": 1,
       "channel": "telegram",
-      "clip": "battai/zh-Hant"
+      "clip": "wordmate/zh-Hant"
     },
     {
       "date": "2026-10-16",
       "slot": 1,
       "channel": "threads",
-      "clip": "battai/zh-Hant"
+      "clip": "claudeusagemini/zh-Hant"
     },
     {
       "date": "2026-10-16",
       "slot": 15,
       "channel": "instagram",
-      "clip": "tripplanet/cs",
+      "clip": "mochi/en",
       "sprint": true
     },
     {
       "date": "2026-10-16",
       "slot": 15,
       "channel": "telegram",
-      "clip": "tripplanet/cs",
+      "clip": "mochi/en",
       "sprint": true
     },
     {
       "date": "2026-10-16",
       "slot": 15,
       "channel": "threads",
-      "clip": "tripplanet/cs",
+      "clip": "mochi/en",
       "sprint": true
     },
     {
@@ -11810,370 +12867,370 @@
       "date": "2026-10-17",
       "slot": 1,
       "channel": "telegram",
+      "clip": "claudeusagemini/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-17",
+      "slot": 1,
+      "channel": "threads",
       "clip": "lumibopomofo_b/zh-Hant"
     },
     {
       "date": "2026-10-17",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "onepageppt/en",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-17",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "unblurry/en"
+    },
+    {
+      "date": "2026-10-17",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "onepageppt/en",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-18",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "battai/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-18",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "cyca/zh-Hant"
+    },
+    {
+      "date": "2026-10-18",
       "slot": 1,
       "channel": "threads",
+      "clip": "battai/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-18",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "wordmate/en"
+    },
+    {
+      "date": "2026-10-18",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lumibopomofo/en",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-18",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "wordmate/en"
+    },
+    {
+      "date": "2026-10-19",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumibopomofo/ja"
+    },
+    {
+      "date": "2026-10-19",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "mochi_b/zh-Hant"
+    },
+    {
+      "date": "2026-10-19",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumibopomofo/ja"
+    },
+    {
+      "date": "2026-10-19",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "claudeusagemini/en",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-19",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "onepageppt/en",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-19",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "claudeusagemini/en",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-20",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "zipbox/zh-Hant",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-20",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "claudeusagemini/zh-Hant",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-20",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "zipbox/zh-Hant",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-20",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "mochi_b/en"
+    },
+    {
+      "date": "2026-10-20",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "wordmate/en"
+    },
+    {
+      "date": "2026-10-20",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "mochi_b/en"
+    },
+    {
+      "date": "2026-10-21",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumiweather/zh-Hant",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-21",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumibopomofo/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-21",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumiweather/zh-Hant",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-21",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "unblurry/en"
+    },
+    {
+      "date": "2026-10-21",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "unblurry_b/en"
+    },
+    {
+      "date": "2026-10-21",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "unblurry/en"
+    },
+    {
+      "date": "2026-10-22",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "claudeusagemini/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-22",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "battai/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-22",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "claudeusagemini/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-22",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "lumibopomofo_b/en"
+    },
+    {
+      "date": "2026-10-22",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "mochi/pt-BR"
+    },
+    {
+      "date": "2026-10-22",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "lumibopomofo_b/en"
+    },
+    {
+      "date": "2026-10-23",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "countdaysnow/zh-Hant"
+    },
+    {
+      "date": "2026-10-23",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "claudeusagemini/ko",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-23",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "countdaysnow/zh-Hant"
+    },
+    {
+      "date": "2026-10-23",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "onepageppt/de",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-23",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "cyca/en"
+    },
+    {
+      "date": "2026-10-23",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "onepageppt/de",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-24",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumibopomofo/ko"
+    },
+    {
+      "date": "2026-10-24",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumibopomofo/ko",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-24",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumibopomofo/ko"
+    },
+    {
+      "date": "2026-10-24",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "ledmovingtext/de",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-24",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lumiweather/en"
+    },
+    {
+      "date": "2026-10-24",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "ledmovingtext/de",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-25",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "claudeusagemini/ko",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-25",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "zipbox/zh-Hant",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-25",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "claudeusagemini/ko",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-25",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "mochi/pt-BR"
+    },
+    {
+      "date": "2026-10-25",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "mochi_b/en"
+    },
+    {
+      "date": "2026-10-25",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "mochi/pt-BR"
+    },
+    {
+      "date": "2026-10-26",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumibopomofo_b/ja"
+    },
+    {
+      "date": "2026-10-26",
+      "slot": 1,
+      "channel": "telegram",
       "clip": "lumibopomofo_b/zh-Hant"
     },
     {
-      "date": "2026-10-17",
+      "date": "2026-10-26",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumibopomofo_b/ja"
+    },
+    {
+      "date": "2026-10-26",
       "slot": 15,
       "channel": "instagram",
       "clip": "lumimission/el",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-17",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "lumimission/el",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-17",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "lumimission/el",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-18",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "wifiaidlite/id",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-18",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "wifiaidlite/id",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-18",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "wifiaidlite/id",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-18",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "unblurry/en"
-    },
-    {
-      "date": "2026-10-18",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "unblurry/en"
-    },
-    {
-      "date": "2026-10-18",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "unblurry/en"
-    },
-    {
-      "date": "2026-10-19",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "battai/ja",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-19",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "battai/ja",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-19",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "battai/ja",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-19",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "onepageppt/en"
-    },
-    {
-      "date": "2026-10-19",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "onepageppt/en"
-    },
-    {
-      "date": "2026-10-19",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "onepageppt/en"
-    },
-    {
-      "date": "2026-10-20",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "tripplanet/ja",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-20",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "tripplanet/ja",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-20",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "tripplanet/ja",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-20",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "notesstudio100/en"
-    },
-    {
-      "date": "2026-10-20",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "notesstudio100/en"
-    },
-    {
-      "date": "2026-10-20",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "notesstudio100/en"
-    },
-    {
-      "date": "2026-10-21",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "countdaysnow/zh-Hant"
-    },
-    {
-      "date": "2026-10-21",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "countdaysnow/zh-Hant"
-    },
-    {
-      "date": "2026-10-21",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "countdaysnow/zh-Hant"
-    },
-    {
-      "date": "2026-10-21",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "maskmyfile/pl",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-21",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "maskmyfile/pl",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-21",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "maskmyfile/pl",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-22",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "claudeusagemini/zh-Hant",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-22",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "claudeusagemini/zh-Hant",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-22",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "claudeusagemini/zh-Hant",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-22",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "battai/en"
-    },
-    {
-      "date": "2026-10-22",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "battai/en"
-    },
-    {
-      "date": "2026-10-22",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "battai/en"
-    },
-    {
-      "date": "2026-10-23",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "mochidonestamp/zh-Hant",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-23",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "mochidonestamp/zh-Hant",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-23",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "mochidonestamp/zh-Hant",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-23",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "unblurry_b/en"
-    },
-    {
-      "date": "2026-10-23",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "unblurry_b/en"
-    },
-    {
-      "date": "2026-10-23",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "unblurry_b/en"
-    },
-    {
-      "date": "2026-10-24",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "wifiaidlite/ja",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-24",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "wifiaidlite/ja",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-24",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "wifiaidlite/ja",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-24",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "mochi/en"
-    },
-    {
-      "date": "2026-10-24",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "mochi/en"
-    },
-    {
-      "date": "2026-10-24",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "mochi/en"
-    },
-    {
-      "date": "2026-10-25",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "countdaysnow_b/zh-Hant"
-    },
-    {
-      "date": "2026-10-25",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "countdaysnow_b/zh-Hant"
-    },
-    {
-      "date": "2026-10-25",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "countdaysnow_b/zh-Hant"
-    },
-    {
-      "date": "2026-10-25",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "ledmovingtext/de",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-25",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "ledmovingtext/de",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-25",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "ledmovingtext/de",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-26",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "unblurry/zh-Hant"
-    },
-    {
-      "date": "2026-10-26",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "unblurry/zh-Hant"
-    },
-    {
-      "date": "2026-10-26",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "unblurry/zh-Hant"
-    },
-    {
-      "date": "2026-10-26",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "onepageppt/de",
       "sprint": true
     },
     {
@@ -12187,35 +13244,34 @@
       "date": "2026-10-26",
       "slot": 15,
       "channel": "threads",
-      "clip": "onepageppt/de",
+      "clip": "lumimission/el",
       "sprint": true
     },
     {
       "date": "2026-10-27",
       "slot": 1,
       "channel": "instagram",
-      "clip": "wifiaidlite/ko",
-      "sprint": true
+      "clip": "countdaysnow_b/zh-Hant"
     },
     {
       "date": "2026-10-27",
       "slot": 1,
       "channel": "telegram",
-      "clip": "wifiaidlite/ko",
+      "clip": "lumiweather/zh-Hant",
       "sprint": true
     },
     {
       "date": "2026-10-27",
       "slot": 1,
       "channel": "threads",
-      "clip": "wifiaidlite/ko",
-      "sprint": true
+      "clip": "countdaysnow_b/zh-Hant"
     },
     {
       "date": "2026-10-27",
       "slot": 15,
       "channel": "instagram",
-      "clip": "claudeusagemini_b/en"
+      "clip": "tripplanet/cs",
+      "sprint": true
     },
     {
       "date": "2026-10-27",
@@ -12227,844 +13283,868 @@
       "date": "2026-10-27",
       "slot": 15,
       "channel": "threads",
-      "clip": "claudeusagemini_b/en"
+      "clip": "tripplanet/cs",
+      "sprint": true
     },
     {
       "date": "2026-10-28",
       "slot": 1,
       "channel": "instagram",
-      "clip": "notesstudio100/zh-Hant"
+      "clip": "wifiaidlite/id",
+      "sprint": true
     },
     {
       "date": "2026-10-28",
       "slot": 1,
       "channel": "telegram",
-      "clip": "notesstudio100/zh-Hant"
+      "clip": "lumibopomofo/vi"
     },
     {
       "date": "2026-10-28",
       "slot": 1,
       "channel": "threads",
-      "clip": "notesstudio100/zh-Hant"
+      "clip": "wifiaidlite/id",
+      "sprint": true
     },
     {
       "date": "2026-10-28",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "claudeusagemini_b/en"
+    },
+    {
+      "date": "2026-10-28",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "ledmovingtext/de",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-28",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "claudeusagemini_b/en"
+    },
+    {
+      "date": "2026-10-29",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "mochi_b/zh-Hant"
+    },
+    {
+      "date": "2026-10-29",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "countdaysnow/zh-Hant"
+    },
+    {
+      "date": "2026-10-29",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "mochi_b/zh-Hant"
+    },
+    {
+      "date": "2026-10-29",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "lumibopomofo/en",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-29",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lumimission/el",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-29",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "lumibopomofo/en",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-30",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wordmate/zh-Hant"
+    },
+    {
+      "date": "2026-10-30",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumibopomofo_b/ja"
+    },
+    {
+      "date": "2026-10-30",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "wordmate/zh-Hant"
+    },
+    {
+      "date": "2026-10-30",
       "slot": 15,
       "channel": "instagram",
       "clip": "lumimission/ar",
       "sprint": true
     },
     {
-      "date": "2026-10-28",
+      "date": "2026-10-30",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "tripplanet/cs",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-30",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "lumimission/ar",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-31",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "tripplanet/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-31",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "wifiaidlite/id",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-31",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "tripplanet/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-31",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "unblurry_b/en"
+    },
+    {
+      "date": "2026-10-31",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "mochi/de"
+    },
+    {
+      "date": "2026-10-31",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "unblurry_b/en"
+    },
+    {
+      "date": "2026-11-01",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumibopomofo_b/ko"
+    },
+    {
+      "date": "2026-11-01",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumibopomofo_b/ko"
+    },
+    {
+      "date": "2026-11-01",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumibopomofo_b/ko"
+    },
+    {
+      "date": "2026-11-01",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "maskmyfile/pl",
+      "sprint": true
+    },
+    {
+      "date": "2026-11-01",
       "slot": 15,
       "channel": "telegram",
       "clip": "lumimission/ar",
       "sprint": true
     },
     {
-      "date": "2026-10-28",
+      "date": "2026-11-01",
       "slot": 15,
       "channel": "threads",
-      "clip": "lumimission/ar",
+      "clip": "maskmyfile/pl",
       "sprint": true
     },
     {
-      "date": "2026-10-29",
+      "date": "2026-11-02",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "mochidonestamp/zh-Hant",
+      "sprint": true
+    },
+    {
+      "date": "2026-11-02",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "tripplanet/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-11-02",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "mochidonestamp/zh-Hant",
+      "sprint": true
+    },
+    {
+      "date": "2026-11-02",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "mochi/de"
+    },
+    {
+      "date": "2026-11-02",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "wordmatelite/en"
+    },
+    {
+      "date": "2026-11-02",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "mochi/de"
+    },
+    {
+      "date": "2026-11-03",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wifiaidlite/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-11-03",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumibopomofo_b/vi"
+    },
+    {
+      "date": "2026-11-03",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "wifiaidlite/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-11-03",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "cyca/en"
+    },
+    {
+      "date": "2026-11-03",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "maskmyfile/pl",
+      "sprint": true
+    },
+    {
+      "date": "2026-11-03",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "cyca/en"
+    },
+    {
+      "date": "2026-11-04",
       "slot": 1,
       "channel": "instagram",
       "clip": "lumiletters/zh-Hant",
       "sprint": true
     },
     {
-      "date": "2026-10-29",
+      "date": "2026-11-04",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "mochidonestamp/zh-Hant",
+      "sprint": true
+    },
+    {
+      "date": "2026-11-04",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumiletters/zh-Hant",
+      "sprint": true
+    },
+    {
+      "date": "2026-11-04",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "lumiweather/en"
+    },
+    {
+      "date": "2026-11-04",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "mochi_b/pt-BR"
+    },
+    {
+      "date": "2026-11-04",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "lumiweather/en"
+    },
+    {
+      "date": "2026-11-05",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumibopomofo/vi"
+    },
+    {
+      "date": "2026-11-05",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "wifiaidlite/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-11-05",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumibopomofo/vi"
+    },
+    {
+      "date": "2026-11-05",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "mochi_b/pt-BR"
+    },
+    {
+      "date": "2026-11-05",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "snapport/en"
+    },
+    {
+      "date": "2026-11-05",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "mochi_b/pt-BR"
+    },
+    {
+      "date": "2026-11-06",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wifiaidlite/ko",
+      "sprint": true
+    },
+    {
+      "date": "2026-11-06",
       "slot": 1,
       "channel": "telegram",
       "clip": "lumiletters/zh-Hant",
       "sprint": true
     },
     {
-      "date": "2026-10-29",
+      "date": "2026-11-06",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumiletters/zh-Hant",
+      "clip": "wifiaidlite/ko",
       "sprint": true
     },
     {
-      "date": "2026-10-29",
+      "date": "2026-11-06",
       "slot": 15,
       "channel": "instagram",
-      "clip": "mochi_b/en"
+      "clip": "wordmatelite/en"
     },
     {
-      "date": "2026-10-29",
+      "date": "2026-11-06",
       "slot": 15,
       "channel": "telegram",
-      "clip": "mochi_b/en"
+      "clip": "lumibopomofo_b/en"
     },
     {
-      "date": "2026-10-29",
+      "date": "2026-11-06",
       "slot": 15,
       "channel": "threads",
-      "clip": "mochi_b/en"
+      "clip": "wordmatelite/en"
     },
     {
-      "date": "2026-10-30",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "unblurry_b/zh-Hant"
-    },
-    {
-      "date": "2026-10-30",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "unblurry_b/zh-Hant"
-    },
-    {
-      "date": "2026-10-30",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "unblurry_b/zh-Hant"
-    },
-    {
-      "date": "2026-10-30",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "wifiaidlite/en"
-    },
-    {
-      "date": "2026-10-30",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "wifiaidlite/en"
-    },
-    {
-      "date": "2026-10-30",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "wifiaidlite/en"
-    },
-    {
-      "date": "2026-10-31",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "onepageppt/zh-Hant"
-    },
-    {
-      "date": "2026-10-31",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "onepageppt/zh-Hant"
-    },
-    {
-      "date": "2026-10-31",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "onepageppt/zh-Hant"
-    },
-    {
-      "date": "2026-10-31",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "claudeusagemini/en"
-    },
-    {
-      "date": "2026-10-31",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "countdaysnow/en"
-    },
-    {
-      "date": "2026-10-31",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "claudeusagemini/en"
-    },
-    {
-      "date": "2026-11-01",
+      "date": "2026-11-07",
       "slot": 1,
       "channel": "instagram",
       "clip": "lumiletters/ko",
       "sprint": true
     },
     {
-      "date": "2026-11-01",
+      "date": "2026-11-07",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "countdaysnow_b/zh-Hant"
+    },
+    {
+      "date": "2026-11-07",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumiletters/ko",
+      "sprint": true
+    },
+    {
+      "date": "2026-11-07",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "snapport/en"
+    },
+    {
+      "date": "2026-11-07",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "battai/en"
+    },
+    {
+      "date": "2026-11-07",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "snapport/en"
+    },
+    {
+      "date": "2026-11-08",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumibopomofo_b/vi"
+    },
+    {
+      "date": "2026-11-08",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "wifiaidlite/ko",
+      "sprint": true
+    },
+    {
+      "date": "2026-11-08",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumibopomofo_b/vi"
+    },
+    {
+      "date": "2026-11-08",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "battai/en"
+    },
+    {
+      "date": "2026-11-08",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "zipbox/en"
+    },
+    {
+      "date": "2026-11-08",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "battai/en"
+    },
+    {
+      "date": "2026-11-09",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "claudeusagemini_b/zh-Hant"
+    },
+    {
+      "date": "2026-11-09",
       "slot": 1,
       "channel": "telegram",
       "clip": "lumiletters/ko",
       "sprint": true
     },
     {
-      "date": "2026-11-01",
+      "date": "2026-11-09",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumiletters/ko",
-      "sprint": true
+      "clip": "claudeusagemini_b/zh-Hant"
     },
     {
-      "date": "2026-11-01",
+      "date": "2026-11-09",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "zipbox/en"
+    },
+    {
+      "date": "2026-11-09",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lumibopomofopro/en"
+    },
+    {
+      "date": "2026-11-09",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "zipbox/en"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "mochi/ko"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "claudeusagemini_b/zh-Hant"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "mochi/ko"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "lumibopomofopro/en"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "gmoney/en"
+    },
+    {
+      "date": "2026-11-10",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "lumibopomofopro/en"
+    },
+    {
+      "date": "2026-11-11",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wordmate/ja"
+    },
+    {
+      "date": "2026-11-11",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "mochi/ko"
+    },
+    {
+      "date": "2026-11-11",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "wordmate/ja"
+    },
+    {
+      "date": "2026-11-11",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "gmoney/en"
+    },
+    {
+      "date": "2026-11-11",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "dailymate/en"
+    },
+    {
+      "date": "2026-11-11",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "gmoney/en"
+    },
+    {
+      "date": "2026-11-12",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "claudeusagemini_b/ja"
+    },
+    {
+      "date": "2026-11-12",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "wordmate/ja"
+    },
+    {
+      "date": "2026-11-12",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "claudeusagemini_b/ja"
+    },
+    {
+      "date": "2026-11-12",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "dailymate/en"
+    },
+    {
+      "date": "2026-11-12",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "wifiaid/en"
+    },
+    {
+      "date": "2026-11-12",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "dailymate/en"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "mochi_b/ja"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "claudeusagemini_b/ja"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "mochi_b/ja"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "wifiaid/en"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "shotinbox/en"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "wifiaid/en"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wordmate/ko"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "mochi_b/ja"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "wordmate/ko"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "shotinbox/en"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "snapportlite/en"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "shotinbox/en"
+    },
+    {
+      "date": "2026-11-15",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "snapportlite/ja"
+    },
+    {
+      "date": "2026-11-15",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "wordmate/ko"
+    },
+    {
+      "date": "2026-11-15",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "snapportlite/ja"
+    },
+    {
+      "date": "2026-11-15",
       "slot": 15,
       "channel": "instagram",
       "clip": "countdaysnow/en"
     },
     {
-      "date": "2026-11-01",
+      "date": "2026-11-15",
       "slot": 15,
       "channel": "telegram",
-      "clip": "ledmovingtext/en"
+      "clip": "countdaysnow/en"
     },
     {
-      "date": "2026-11-01",
+      "date": "2026-11-15",
       "slot": 15,
       "channel": "threads",
       "clip": "countdaysnow/en"
     },
     {
-      "date": "2026-11-02",
+      "date": "2026-11-16",
       "slot": 1,
       "channel": "instagram",
-      "clip": "wifiaidlite/zh-Hant"
+      "clip": "claudeusagemini_b/ko"
     },
     {
-      "date": "2026-11-02",
+      "date": "2026-11-16",
       "slot": 1,
       "channel": "telegram",
-      "clip": "wifiaidlite/zh-Hant"
+      "clip": "snapportlite_b/zh-Hant"
     },
     {
-      "date": "2026-11-02",
+      "date": "2026-11-16",
       "slot": 1,
       "channel": "threads",
-      "clip": "wifiaidlite/zh-Hant"
+      "clip": "claudeusagemini_b/ko"
     },
     {
-      "date": "2026-11-02",
+      "date": "2026-11-16",
       "slot": 15,
       "channel": "instagram",
       "clip": "ledmovingtext/en"
     },
     {
-      "date": "2026-11-02",
+      "date": "2026-11-16",
       "slot": 15,
       "channel": "telegram",
-      "clip": "snapportlite/en"
+      "clip": "ledmovingtext/en"
     },
     {
-      "date": "2026-11-02",
+      "date": "2026-11-16",
       "slot": 15,
       "channel": "threads",
       "clip": "ledmovingtext/en"
     },
     {
-      "date": "2026-11-03",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "claudeusagemini_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-03",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "claudeusagemini_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-03",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "claudeusagemini_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-03",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "snapportlite/en"
-    },
-    {
-      "date": "2026-11-03",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "countdaysnow_b/en"
-    },
-    {
-      "date": "2026-11-03",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "snapportlite/en"
-    },
-    {
-      "date": "2026-11-04",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "mochi/zh-Hant"
-    },
-    {
-      "date": "2026-11-04",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "mochi/zh-Hant"
-    },
-    {
-      "date": "2026-11-04",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "mochi/zh-Hant"
-    },
-    {
-      "date": "2026-11-04",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "countdaysnow_b/en"
-    },
-    {
-      "date": "2026-11-04",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "lumimission_b/en"
-    },
-    {
-      "date": "2026-11-04",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "countdaysnow_b/en"
-    },
-    {
-      "date": "2026-11-05",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "ledmovingtext/zh-Hant"
-    },
-    {
-      "date": "2026-11-05",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "ledmovingtext/zh-Hant"
-    },
-    {
-      "date": "2026-11-05",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "ledmovingtext/zh-Hant"
-    },
-    {
-      "date": "2026-11-05",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "lumimission_b/en"
-    },
-    {
-      "date": "2026-11-05",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "snapportlite_b/en"
-    },
-    {
-      "date": "2026-11-05",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "lumimission_b/en"
-    },
-    {
-      "date": "2026-11-06",
+      "date": "2026-11-17",
       "slot": 1,
       "channel": "instagram",
       "clip": "snapportlite_b/zh-Hant"
     },
     {
-      "date": "2026-11-06",
+      "date": "2026-11-17",
       "slot": 1,
       "channel": "telegram",
-      "clip": "gmoneylite/zh-Hant"
+      "clip": "claudeusagemini_b/ko"
     },
     {
-      "date": "2026-11-06",
+      "date": "2026-11-17",
       "slot": 1,
       "channel": "threads",
       "clip": "snapportlite_b/zh-Hant"
     },
     {
-      "date": "2026-11-06",
+      "date": "2026-11-17",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "lumimission_b/en"
+    },
+    {
+      "date": "2026-11-17",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lumimission_b/en"
+    },
+    {
+      "date": "2026-11-17",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "lumimission_b/en"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "mochi/zh-Hant"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "snapportlite/ja"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "mochi/zh-Hant"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "countdaysnow_b/en"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "countdaysnow_b/en"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "countdaysnow_b/en"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "unblurry/ja"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "mochi/zh-Hant"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "unblurry/ja"
+    },
+    {
+      "date": "2026-11-19",
       "slot": 15,
       "channel": "instagram",
       "clip": "gmoneylite/en"
     },
     {
-      "date": "2026-11-06",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "lumibopomofo/en"
-    },
-    {
-      "date": "2026-11-06",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "gmoneylite/en"
-    },
-    {
-      "date": "2026-11-07",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "mochi_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-07",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "mochi_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-07",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "mochi_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-07",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "lumibopomofo/en"
-    },
-    {
-      "date": "2026-11-07",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "lumimission/en"
-    },
-    {
-      "date": "2026-11-07",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "lumibopomofo/en"
-    },
-    {
-      "date": "2026-11-08",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "lumimission/zh-Hant"
-    },
-    {
-      "date": "2026-11-08",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "snapportlite/zh-Hant"
-    },
-    {
-      "date": "2026-11-08",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "lumimission/zh-Hant"
-    },
-    {
-      "date": "2026-11-08",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "lockhour/en"
-    },
-    {
-      "date": "2026-11-08",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "lockhour/en"
-    },
-    {
-      "date": "2026-11-08",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "lockhour/en"
-    },
-    {
-      "date": "2026-11-09",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "snapportlite/zh-Hant"
-    },
-    {
-      "date": "2026-11-09",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "gmoneylite_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-09",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "snapportlite/zh-Hant"
-    },
-    {
-      "date": "2026-11-09",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "gmoneylite_b/en"
-    },
-    {
-      "date": "2026-11-09",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "lumibopomofo_b/en"
-    },
-    {
-      "date": "2026-11-09",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "gmoneylite_b/en"
-    },
-    {
-      "date": "2026-11-10",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "aibriefpack/zh-Hant"
-    },
-    {
-      "date": "2026-11-10",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "lumimission_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-10",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "aibriefpack/zh-Hant"
-    },
-    {
-      "date": "2026-11-10",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "lumibopomofo_b/en"
-    },
-    {
-      "date": "2026-11-10",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "aibriefpack/en"
-    },
-    {
-      "date": "2026-11-10",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "lumibopomofo_b/en"
-    },
-    {
-      "date": "2026-11-11",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "lumimission_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-11",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "snapportlite_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-11",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "lumimission_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-11",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "lockhour_b/en"
-    },
-    {
-      "date": "2026-11-11",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "lockhour_b/en"
-    },
-    {
-      "date": "2026-11-11",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "lockhour_b/en"
-    },
-    {
-      "date": "2026-11-12",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "gmoneylite/zh-Hant"
-    },
-    {
-      "date": "2026-11-12",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "aim990/zh-Hant"
-    },
-    {
-      "date": "2026-11-12",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "gmoneylite/zh-Hant"
-    },
-    {
-      "date": "2026-11-12",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "snapportlite_b/en"
-    },
-    {
-      "date": "2026-11-12",
+      "date": "2026-11-19",
       "slot": 15,
       "channel": "telegram",
       "clip": "gmoneylite/en"
     },
     {
-      "date": "2026-11-12",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "snapportlite_b/en"
-    },
-    {
-      "date": "2026-11-13",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "aim990/zh-Hant"
-    },
-    {
-      "date": "2026-11-13",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "lumimission/zh-Hant"
-    },
-    {
-      "date": "2026-11-13",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "aim990/zh-Hant"
-    },
-    {
-      "date": "2026-11-13",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "aibriefpack/en"
-    },
-    {
-      "date": "2026-11-13",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "caldaily/en"
-    },
-    {
-      "date": "2026-11-13",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "aibriefpack/en"
-    },
-    {
-      "date": "2026-11-14",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "lockhour/zh-Hant"
-    },
-    {
-      "date": "2026-11-14",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "lockhour/zh-Hant"
-    },
-    {
-      "date": "2026-11-14",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "lockhour/zh-Hant"
-    },
-    {
-      "date": "2026-11-14",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "lumimission/en"
-    },
-    {
-      "date": "2026-11-14",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "cvdesk/en"
-    },
-    {
-      "date": "2026-11-14",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "lumimission/en"
-    },
-    {
-      "date": "2026-11-15",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "gmoneylite_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-15",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "aibriefpack/zh-Hant"
-    },
-    {
-      "date": "2026-11-15",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "gmoneylite_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-15",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "caldaily/en"
-    },
-    {
-      "date": "2026-11-15",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "gmoneylite_b/en"
-    },
-    {
-      "date": "2026-11-15",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "caldaily/en"
-    },
-    {
-      "date": "2026-11-16",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "cvdesk/zh-Hant"
-    },
-    {
-      "date": "2026-11-16",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "caldaily/zh-Hant"
-    },
-    {
-      "date": "2026-11-16",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "cvdesk/zh-Hant"
-    },
-    {
-      "date": "2026-11-16",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "aim990/en"
-    },
-    {
-      "date": "2026-11-16",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "aim990/en"
-    },
-    {
-      "date": "2026-11-16",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "aim990/en"
-    },
-    {
-      "date": "2026-11-17",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "lockhour_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-17",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "lockhour_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-17",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "lockhour_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-17",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "cyca/en"
-    },
-    {
-      "date": "2026-11-17",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "cyca/en"
-    },
-    {
-      "date": "2026-11-17",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "cyca/en"
-    },
-    {
-      "date": "2026-11-18",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "caldaily/zh-Hant"
-    },
-    {
-      "date": "2026-11-18",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "cvdesk/zh-Hant"
-    },
-    {
-      "date": "2026-11-18",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "caldaily/zh-Hant"
-    },
-    {
-      "date": "2026-11-18",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "dailymatelite/en"
-    },
-    {
-      "date": "2026-11-18",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "dailymatelite/en"
-    },
-    {
-      "date": "2026-11-18",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "dailymatelite/en"
-    },
-    {
-      "date": "2026-11-19",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "dbhalo/zh-Hant"
-    },
-    {
-      "date": "2026-11-19",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "dbhalo/zh-Hant"
-    },
-    {
-      "date": "2026-11-19",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "dbhalo/zh-Hant"
-    },
-    {
-      "date": "2026-11-19",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "cvdesk/en"
-    },
-    {
-      "date": "2026-11-19",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "lumiletters/en"
-    },
-    {
       "date": "2026-11-19",
       "slot": 15,
       "channel": "threads",
-      "clip": "cvdesk/en"
+      "clip": "gmoneylite/en"
     },
     {
       "date": "2026-11-20",
@@ -13076,7 +14156,7 @@
       "date": "2026-11-20",
       "slot": 1,
       "channel": "telegram",
-      "clip": "cyca/zh-Hant"
+      "clip": "unblurry/ja"
     },
     {
       "date": "2026-11-20",
@@ -13106,697 +14186,1597 @@
       "date": "2026-11-21",
       "slot": 1,
       "channel": "instagram",
-      "clip": "dailymatelite/zh-Hant"
+      "clip": "mochi_b/ko"
     },
     {
       "date": "2026-11-21",
       "slot": 1,
       "channel": "telegram",
-      "clip": "dailymatelite/zh-Hant"
+      "clip": "cyca/ja"
     },
     {
       "date": "2026-11-21",
       "slot": 1,
       "channel": "threads",
-      "clip": "dailymatelite/zh-Hant"
+      "clip": "mochi_b/ko"
     },
     {
       "date": "2026-11-21",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "snapportlite/en"
+    },
+    {
+      "date": "2026-11-21",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "snapportlite_b/en"
+    },
+    {
+      "date": "2026-11-21",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "snapportlite/en"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "unblurry_b/zh-Hant"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "mochi_b/ko"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "unblurry_b/zh-Hant"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "lumimission/en"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lumimission/en"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "lumimission/en"
+    },
+    {
+      "date": "2026-11-23",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "cyca/ja"
+    },
+    {
+      "date": "2026-11-23",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "unblurry_b/zh-Hant"
+    },
+    {
+      "date": "2026-11-23",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "cyca/ja"
+    },
+    {
+      "date": "2026-11-23",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "gmoneylite_b/en"
+    },
+    {
+      "date": "2026-11-23",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "gmoneylite_b/en"
+    },
+    {
+      "date": "2026-11-23",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "gmoneylite_b/en"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "mochi/ja"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "cyca/ko"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "mochi/ja"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "snapportlite_b/en"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lockhour/en"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "snapportlite_b/en"
+    },
+    {
+      "date": "2026-11-25",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "unblurry/zh-Hant"
+    },
+    {
+      "date": "2026-11-25",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "mochi/ja"
+    },
+    {
+      "date": "2026-11-25",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "unblurry/zh-Hant"
+    },
+    {
+      "date": "2026-11-25",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "lockhour/en"
+    },
+    {
+      "date": "2026-11-25",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "aibriefpack/en"
+    },
+    {
+      "date": "2026-11-25",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "lockhour/en"
+    },
+    {
+      "date": "2026-11-26",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "cyca/ko"
+    },
+    {
+      "date": "2026-11-26",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "unblurry/zh-Hant"
+    },
+    {
+      "date": "2026-11-26",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "cyca/ko"
+    },
+    {
+      "date": "2026-11-26",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "aibriefpack/en"
+    },
+    {
+      "date": "2026-11-26",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "aim990/en"
+    },
+    {
+      "date": "2026-11-26",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "aibriefpack/en"
+    },
+    {
+      "date": "2026-11-27",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wordmatelite/zh-Hant"
+    },
+    {
+      "date": "2026-11-27",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "cyca/id"
+    },
+    {
+      "date": "2026-11-27",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "wordmatelite/zh-Hant"
+    },
+    {
+      "date": "2026-11-27",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "mochi_b/de"
+    },
+    {
+      "date": "2026-11-27",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lockhour_b/en"
+    },
+    {
+      "date": "2026-11-27",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "mochi_b/de"
+    },
+    {
+      "date": "2026-11-28",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "unblurry_b/ja"
+    },
+    {
+      "date": "2026-11-28",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "wordmatelite/zh-Hant"
+    },
+    {
+      "date": "2026-11-28",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "unblurry_b/ja"
+    },
+    {
+      "date": "2026-11-28",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "lockhour_b/en"
+    },
+    {
+      "date": "2026-11-28",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "mochi_b/de"
+    },
+    {
+      "date": "2026-11-28",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "lockhour_b/en"
+    },
+    {
+      "date": "2026-11-29",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "cyca/id"
+    },
+    {
+      "date": "2026-11-29",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "unblurry_b/ja"
+    },
+    {
+      "date": "2026-11-29",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "cyca/id"
+    },
+    {
+      "date": "2026-11-29",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "aim990/en"
+    },
+    {
+      "date": "2026-11-29",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "caldaily/en"
+    },
+    {
+      "date": "2026-11-29",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "aim990/en"
+    },
+    {
+      "date": "2026-11-30",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "snapport/zh-Hant"
+    },
+    {
+      "date": "2026-11-30",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "cyca/vi"
+    },
+    {
+      "date": "2026-11-30",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "snapport/zh-Hant"
+    },
+    {
+      "date": "2026-11-30",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "caldaily/en"
+    },
+    {
+      "date": "2026-11-30",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "cvdesk/en"
+    },
+    {
+      "date": "2026-11-30",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "caldaily/en"
+    },
+    {
+      "date": "2026-12-01",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "gmoneylite/zh-Hant"
+    },
+    {
+      "date": "2026-12-01",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "gmoneylite/zh-Hant"
+    },
+    {
+      "date": "2026-12-01",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "gmoneylite/zh-Hant"
+    },
+    {
+      "date": "2026-12-01",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "cvdesk/en"
+    },
+    {
+      "date": "2026-12-01",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "dailymatelite/en"
+    },
+    {
+      "date": "2026-12-01",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "cvdesk/en"
+    },
+    {
+      "date": "2026-12-02",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "unblurry/ko"
+    },
+    {
+      "date": "2026-12-02",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "unblurry/ko"
+    },
+    {
+      "date": "2026-12-02",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "unblurry/ko"
+    },
+    {
+      "date": "2026-12-02",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "dailymatelite/en"
+    },
+    {
+      "date": "2026-12-02",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "dbhalo/en"
+    },
+    {
+      "date": "2026-12-02",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "dailymatelite/en"
+    },
+    {
+      "date": "2026-12-03",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "gmoneylite_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-03",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "gmoneylite_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-03",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "gmoneylite_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-03",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "dbhalo/en"
+    },
+    {
+      "date": "2026-12-03",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "hourstag/en"
+    },
+    {
+      "date": "2026-12-03",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "dbhalo/en"
+    },
+    {
+      "date": "2026-12-04",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "cyca/vi"
+    },
+    {
+      "date": "2026-12-04",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "snapport/zh-Hant"
+    },
+    {
+      "date": "2026-12-04",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "cyca/vi"
+    },
+    {
+      "date": "2026-12-04",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "hourstag/en"
+    },
+    {
+      "date": "2026-12-04",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lumiletters/en"
+    },
+    {
+      "date": "2026-12-04",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "hourstag/en"
+    },
+    {
+      "date": "2026-12-05",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "unblurry_b/ko"
+    },
+    {
+      "date": "2026-12-05",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "unblurry_b/ko"
+    },
+    {
+      "date": "2026-12-05",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "unblurry_b/ko"
+    },
+    {
+      "date": "2026-12-05",
       "slot": 15,
       "channel": "instagram",
       "clip": "lumiletters/en"
     },
     {
-      "date": "2026-11-21",
+      "date": "2026-12-05",
       "slot": 15,
       "channel": "telegram",
-      "clip": "lumimath/en"
+      "clip": "lumiletterspro/en"
     },
     {
-      "date": "2026-11-21",
+      "date": "2026-12-05",
       "slot": 15,
       "channel": "threads",
       "clip": "lumiletters/en"
     },
     {
-      "date": "2026-11-22",
+      "date": "2026-12-06",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumimath/zh-Hant"
+      "clip": "onepageppt/zh-Hant"
     },
     {
-      "date": "2026-11-22",
+      "date": "2026-12-06",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumiweather/zh-Hant"
+      "clip": "onepageppt/zh-Hant"
     },
     {
-      "date": "2026-11-22",
+      "date": "2026-12-06",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumimath/zh-Hant"
+      "clip": "onepageppt/zh-Hant"
     },
     {
-      "date": "2026-11-22",
+      "date": "2026-12-06",
       "slot": 15,
       "channel": "instagram",
-      "clip": "dbhalo/en"
+      "clip": "lumiletterspro/en"
     },
     {
-      "date": "2026-11-22",
+      "date": "2026-12-06",
       "slot": 15,
       "channel": "telegram",
-      "clip": "dbhalo/en"
+      "clip": "lumimath/en"
     },
     {
-      "date": "2026-11-22",
+      "date": "2026-12-06",
       "slot": 15,
       "channel": "threads",
-      "clip": "dbhalo/en"
+      "clip": "lumiletterspro/en"
     },
     {
-      "date": "2026-11-23",
+      "date": "2026-12-07",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumiweather/zh-Hant"
+      "clip": "battai/zh-Hant"
     },
     {
-      "date": "2026-11-23",
+      "date": "2026-12-07",
       "slot": 1,
       "channel": "telegram",
-      "clip": "maskmyfile/zh-Hant"
+      "clip": "battai/zh-Hant"
     },
     {
-      "date": "2026-11-23",
+      "date": "2026-12-07",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumiweather/zh-Hant"
+      "clip": "battai/zh-Hant"
     },
     {
-      "date": "2026-11-23",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "maskmyfile/en"
-    },
-    {
-      "date": "2026-11-23",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "mochidonestamp/en"
-    },
-    {
-      "date": "2026-11-23",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "maskmyfile/en"
-    },
-    {
-      "date": "2026-11-24",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "moneytag/zh-Hant"
-    },
-    {
-      "date": "2026-11-24",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "lumimath/zh-Hant"
-    },
-    {
-      "date": "2026-11-24",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "moneytag/zh-Hant"
-    },
-    {
-      "date": "2026-11-24",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "mochidonestamp/en"
-    },
-    {
-      "date": "2026-11-24",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "moneytag/en"
-    },
-    {
-      "date": "2026-11-24",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "mochidonestamp/en"
-    },
-    {
-      "date": "2026-11-25",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "photocream/zh-Hant"
-    },
-    {
-      "date": "2026-11-25",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "photocream/zh-Hant"
-    },
-    {
-      "date": "2026-11-25",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "photocream/zh-Hant"
-    },
-    {
-      "date": "2026-11-25",
+      "date": "2026-12-07",
       "slot": 15,
       "channel": "instagram",
       "clip": "lumimath/en"
     },
     {
-      "date": "2026-11-25",
+      "date": "2026-12-07",
       "slot": 15,
       "channel": "telegram",
-      "clip": "lumiweather/en"
+      "clip": "lumimathpro/en"
     },
     {
-      "date": "2026-11-25",
+      "date": "2026-12-07",
       "slot": 15,
       "channel": "threads",
       "clip": "lumimath/en"
     },
     {
-      "date": "2026-11-26",
+      "date": "2026-12-08",
       "slot": 1,
       "channel": "instagram",
-      "clip": "maskmyfile/zh-Hant"
+      "clip": "lumibopomofopro/zh-Hant"
     },
     {
-      "date": "2026-11-26",
+      "date": "2026-12-08",
       "slot": 1,
       "channel": "telegram",
-      "clip": "picclear/zh-Hant"
+      "clip": "lumibopomofopro/zh-Hant"
     },
     {
-      "date": "2026-11-26",
+      "date": "2026-12-08",
       "slot": 1,
       "channel": "threads",
-      "clip": "maskmyfile/zh-Hant"
+      "clip": "lumibopomofopro/zh-Hant"
     },
     {
-      "date": "2026-11-26",
+      "date": "2026-12-08",
       "slot": 15,
       "channel": "instagram",
-      "clip": "lumiweather/en"
+      "clip": "lumimathpro/en"
     },
     {
-      "date": "2026-11-26",
+      "date": "2026-12-08",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "lumimissionpro/en"
+    },
+    {
+      "date": "2026-12-08",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "lumimathpro/en"
+    },
+    {
+      "date": "2026-12-09",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "gmoney/zh-Hant"
+    },
+    {
+      "date": "2026-12-09",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "gmoney/zh-Hant"
+    },
+    {
+      "date": "2026-12-09",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "gmoney/zh-Hant"
+    },
+    {
+      "date": "2026-12-09",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "lumimissionpro/en"
+    },
+    {
+      "date": "2026-12-09",
       "slot": 15,
       "channel": "telegram",
       "clip": "maskmyfile/en"
     },
     {
-      "date": "2026-11-26",
+      "date": "2026-12-09",
       "slot": 15,
       "channel": "threads",
-      "clip": "lumiweather/en"
+      "clip": "lumimissionpro/en"
     },
     {
-      "date": "2026-11-27",
+      "date": "2026-12-10",
       "slot": 1,
       "channel": "instagram",
-      "clip": "picclear/zh-Hant"
+      "clip": "dailymate/zh-Hant"
     },
     {
-      "date": "2026-11-27",
+      "date": "2026-12-10",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "dailymate/zh-Hant"
+    },
+    {
+      "date": "2026-12-10",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "dailymate/zh-Hant"
+    },
+    {
+      "date": "2026-12-10",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "maskmyfile/en"
+    },
+    {
+      "date": "2026-12-10",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "mochidonestamp/en"
+    },
+    {
+      "date": "2026-12-10",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "maskmyfile/en"
+    },
+    {
+      "date": "2026-12-11",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wifiaid/zh-Hant"
+    },
+    {
+      "date": "2026-12-11",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "wifiaid/zh-Hant"
+    },
+    {
+      "date": "2026-12-11",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "wifiaid/zh-Hant"
+    },
+    {
+      "date": "2026-12-11",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "mochidonestamp/en"
+    },
+    {
+      "date": "2026-12-11",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "moneytag/en"
+    },
+    {
+      "date": "2026-12-11",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "mochidonestamp/en"
+    },
+    {
+      "date": "2026-12-12",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "shotinbox/zh-Hant"
+    },
+    {
+      "date": "2026-12-12",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "shotinbox/zh-Hant"
+    },
+    {
+      "date": "2026-12-12",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "shotinbox/zh-Hant"
+    },
+    {
+      "date": "2026-12-12",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "moneytag/en"
+    },
+    {
+      "date": "2026-12-12",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "notesstudio100/en"
+    },
+    {
+      "date": "2026-12-12",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "moneytag/en"
+    },
+    {
+      "date": "2026-12-13",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "ledmovingtext/zh-Hant"
+    },
+    {
+      "date": "2026-12-13",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "ledmovingtext/zh-Hant"
+    },
+    {
+      "date": "2026-12-13",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "ledmovingtext/zh-Hant"
+    },
+    {
+      "date": "2026-12-13",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "notesstudio100/en"
+    },
+    {
+      "date": "2026-12-13",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "photocream/en"
+    },
+    {
+      "date": "2026-12-13",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "notesstudio100/en"
+    },
+    {
+      "date": "2026-12-14",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumimission_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-14",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumimission_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-14",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumimission_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-14",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "photocream/en"
+    },
+    {
+      "date": "2026-12-14",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "picclear/en"
+    },
+    {
+      "date": "2026-12-14",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "photocream/en"
+    },
+    {
+      "date": "2026-12-15",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lockhour/zh-Hant"
+    },
+    {
+      "date": "2026-12-15",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lockhour/zh-Hant"
+    },
+    {
+      "date": "2026-12-15",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lockhour/zh-Hant"
+    },
+    {
+      "date": "2026-12-15",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "picclear/en"
+    },
+    {
+      "date": "2026-12-15",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "qrcodehalo/en"
+    },
+    {
+      "date": "2026-12-15",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "picclear/en"
+    },
+    {
+      "date": "2026-12-16",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "aibriefpack/zh-Hant"
+    },
+    {
+      "date": "2026-12-16",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "aibriefpack/zh-Hant"
+    },
+    {
+      "date": "2026-12-16",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "aibriefpack/zh-Hant"
+    },
+    {
+      "date": "2026-12-16",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "qrcodehalo/en"
+    },
+    {
+      "date": "2026-12-16",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "savetag/en"
+    },
+    {
+      "date": "2026-12-16",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "qrcodehalo/en"
+    },
+    {
+      "date": "2026-12-17",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumimission/zh-Hant"
+    },
+    {
+      "date": "2026-12-17",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumimission/zh-Hant"
+    },
+    {
+      "date": "2026-12-17",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumimission/zh-Hant"
+    },
+    {
+      "date": "2026-12-17",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "savetag/en"
+    },
+    {
+      "date": "2026-12-17",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "scanto/en"
+    },
+    {
+      "date": "2026-12-17",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "savetag/en"
+    },
+    {
+      "date": "2026-12-18",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lockhour_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-18",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lockhour_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-18",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lockhour_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-18",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "scanto/en"
+    },
+    {
+      "date": "2026-12-18",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "sereno/en"
+    },
+    {
+      "date": "2026-12-18",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "scanto/en"
+    },
+    {
+      "date": "2026-12-19",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "aim990/zh-Hant"
+    },
+    {
+      "date": "2026-12-19",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "aim990/zh-Hant"
+    },
+    {
+      "date": "2026-12-19",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "aim990/zh-Hant"
+    },
+    {
+      "date": "2026-12-19",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "sereno/en"
+    },
+    {
+      "date": "2026-12-19",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "sononote/en"
+    },
+    {
+      "date": "2026-12-19",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "sereno/en"
+    },
+    {
+      "date": "2026-12-20",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "caldaily/zh-Hant"
+    },
+    {
+      "date": "2026-12-20",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "caldaily/zh-Hant"
+    },
+    {
+      "date": "2026-12-20",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "caldaily/zh-Hant"
+    },
+    {
+      "date": "2026-12-20",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "sononote/en"
+    },
+    {
+      "date": "2026-12-20",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "studydown/en"
+    },
+    {
+      "date": "2026-12-20",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "sononote/en"
+    },
+    {
+      "date": "2026-12-21",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "cvdesk/zh-Hant"
+    },
+    {
+      "date": "2026-12-21",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "cvdesk/zh-Hant"
+    },
+    {
+      "date": "2026-12-21",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "cvdesk/zh-Hant"
+    },
+    {
+      "date": "2026-12-21",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "studydown/en"
+    },
+    {
+      "date": "2026-12-21",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "tripbee/en"
+    },
+    {
+      "date": "2026-12-21",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "studydown/en"
+    },
+    {
+      "date": "2026-12-22",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "dailymatelite/zh-Hant"
+    },
+    {
+      "date": "2026-12-22",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "dailymatelite/zh-Hant"
+    },
+    {
+      "date": "2026-12-22",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "dailymatelite/zh-Hant"
+    },
+    {
+      "date": "2026-12-22",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "tripbee/en"
+    },
+    {
+      "date": "2026-12-22",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "tripbeelite/en"
+    },
+    {
+      "date": "2026-12-22",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "tripbee/en"
+    },
+    {
+      "date": "2026-12-23",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "dbhalo/zh-Hant"
+    },
+    {
+      "date": "2026-12-23",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "dbhalo/zh-Hant"
+    },
+    {
+      "date": "2026-12-23",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "dbhalo/zh-Hant"
+    },
+    {
+      "date": "2026-12-23",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "tripbeelite/en"
+    },
+    {
+      "date": "2026-12-23",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "tripplanet/en"
+    },
+    {
+      "date": "2026-12-23",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "tripbeelite/en"
+    },
+    {
+      "date": "2026-12-24",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "hourstag/zh-Hant"
+    },
+    {
+      "date": "2026-12-24",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "hourstag/zh-Hant"
+    },
+    {
+      "date": "2026-12-24",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "hourstag/zh-Hant"
+    },
+    {
+      "date": "2026-12-24",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "tripplanet/en"
+    },
+    {
+      "date": "2026-12-24",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "wifiaidlite/en"
+    },
+    {
+      "date": "2026-12-24",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "tripplanet/en"
+    },
+    {
+      "date": "2026-12-25",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumiletterspro/zh-Hant"
+    },
+    {
+      "date": "2026-12-25",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumiletterspro/zh-Hant"
+    },
+    {
+      "date": "2026-12-25",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumiletterspro/zh-Hant"
+    },
+    {
+      "date": "2026-12-25",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "wifiaidlite/en"
+    },
+    {
+      "date": "2026-12-25",
+      "slot": 15,
+      "channel": "threads",
+      "clip": "wifiaidlite/en"
+    },
+    {
+      "date": "2026-12-26",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumimath/zh-Hant"
+    },
+    {
+      "date": "2026-12-26",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumimath/zh-Hant"
+    },
+    {
+      "date": "2026-12-26",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumimath/zh-Hant"
+    },
+    {
+      "date": "2026-12-27",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumimathpro/zh-Hant"
+    },
+    {
+      "date": "2026-12-27",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumimathpro/zh-Hant"
+    },
+    {
+      "date": "2026-12-27",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumimathpro/zh-Hant"
+    },
+    {
+      "date": "2026-12-28",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumimissionpro/zh-Hant"
+    },
+    {
+      "date": "2026-12-28",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumimissionpro/zh-Hant"
+    },
+    {
+      "date": "2026-12-28",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumimissionpro/zh-Hant"
+    },
+    {
+      "date": "2026-12-29",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "maskmyfile/zh-Hant"
+    },
+    {
+      "date": "2026-12-29",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "maskmyfile/zh-Hant"
+    },
+    {
+      "date": "2026-12-29",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "maskmyfile/zh-Hant"
+    },
+    {
+      "date": "2026-12-30",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "moneytag/zh-Hant"
+    },
+    {
+      "date": "2026-12-30",
       "slot": 1,
       "channel": "telegram",
       "clip": "moneytag/zh-Hant"
     },
     {
-      "date": "2026-11-27",
+      "date": "2026-12-30",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "moneytag/zh-Hant"
+    },
+    {
+      "date": "2026-12-31",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "notesstudio100/zh-Hant"
+    },
+    {
+      "date": "2026-12-31",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "notesstudio100/zh-Hant"
+    },
+    {
+      "date": "2026-12-31",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "notesstudio100/zh-Hant"
+    },
+    {
+      "date": "2027-01-01",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "photocream/zh-Hant"
+    },
+    {
+      "date": "2027-01-01",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "photocream/zh-Hant"
+    },
+    {
+      "date": "2027-01-01",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "photocream/zh-Hant"
+    },
+    {
+      "date": "2027-01-02",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "picclear/zh-Hant"
+    },
+    {
+      "date": "2027-01-02",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "picclear/zh-Hant"
+    },
+    {
+      "date": "2027-01-02",
       "slot": 1,
       "channel": "threads",
       "clip": "picclear/zh-Hant"
     },
     {
-      "date": "2026-11-27",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "moneytag/en"
-    },
-    {
-      "date": "2026-11-27",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "qrcodehalo/en"
-    },
-    {
-      "date": "2026-11-27",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "moneytag/en"
-    },
-    {
-      "date": "2026-11-28",
+      "date": "2027-01-03",
       "slot": 1,
       "channel": "instagram",
       "clip": "qrcodehalo/zh-Hant"
     },
     {
-      "date": "2026-11-28",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "savetag/zh-Hant"
-    },
-    {
-      "date": "2026-11-28",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "qrcodehalo/zh-Hant"
-    },
-    {
-      "date": "2026-11-28",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "photocream/en"
-    },
-    {
-      "date": "2026-11-28",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "photocream/en"
-    },
-    {
-      "date": "2026-11-28",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "photocream/en"
-    },
-    {
-      "date": "2026-11-29",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "savetag/zh-Hant"
-    },
-    {
-      "date": "2026-11-29",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "scanto/zh-Hant"
-    },
-    {
-      "date": "2026-11-29",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "savetag/zh-Hant"
-    },
-    {
-      "date": "2026-11-29",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "scanto/en"
-    },
-    {
-      "date": "2026-11-29",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "picclear/en"
-    },
-    {
-      "date": "2026-11-29",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "scanto/en"
-    },
-    {
-      "date": "2026-11-30",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "sereno/zh-Hant"
-    },
-    {
-      "date": "2026-11-30",
+      "date": "2027-01-03",
       "slot": 1,
       "channel": "telegram",
       "clip": "qrcodehalo/zh-Hant"
     },
     {
-      "date": "2026-11-30",
+      "date": "2027-01-03",
       "slot": 1,
       "channel": "threads",
-      "clip": "sereno/zh-Hant"
+      "clip": "qrcodehalo/zh-Hant"
     },
     {
-      "date": "2026-11-30",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "picclear/en"
-    },
-    {
-      "date": "2026-11-30",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "sereno/en"
-    },
-    {
-      "date": "2026-11-30",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "picclear/en"
-    },
-    {
-      "date": "2026-12-01",
+      "date": "2027-01-04",
       "slot": 1,
       "channel": "instagram",
-      "clip": "shotinbox/zh-Hant"
+      "clip": "savetag/zh-Hant"
     },
     {
-      "date": "2026-12-01",
+      "date": "2027-01-04",
       "slot": 1,
       "channel": "telegram",
-      "clip": "shotinbox/zh-Hant"
+      "clip": "savetag/zh-Hant"
     },
     {
-      "date": "2026-12-01",
+      "date": "2027-01-04",
       "slot": 1,
       "channel": "threads",
-      "clip": "shotinbox/zh-Hant"
+      "clip": "savetag/zh-Hant"
     },
     {
-      "date": "2026-12-01",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "qrcodehalo/en"
-    },
-    {
-      "date": "2026-12-01",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "savetag/en"
-    },
-    {
-      "date": "2026-12-01",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "qrcodehalo/en"
-    },
-    {
-      "date": "2026-12-02",
+      "date": "2027-01-05",
       "slot": 1,
       "channel": "instagram",
       "clip": "scanto/zh-Hant"
     },
     {
-      "date": "2026-12-02",
+      "date": "2027-01-05",
       "slot": 1,
       "channel": "telegram",
-      "clip": "sononote/zh-Hant"
+      "clip": "scanto/zh-Hant"
     },
     {
-      "date": "2026-12-02",
+      "date": "2027-01-05",
       "slot": 1,
       "channel": "threads",
       "clip": "scanto/zh-Hant"
     },
     {
-      "date": "2026-12-02",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "savetag/en"
-    },
-    {
-      "date": "2026-12-02",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "scanto/en"
-    },
-    {
-      "date": "2026-12-02",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "savetag/en"
-    },
-    {
-      "date": "2026-12-03",
+      "date": "2027-01-06",
       "slot": 1,
       "channel": "instagram",
-      "clip": "sononote/zh-Hant"
+      "clip": "sereno/zh-Hant"
     },
     {
-      "date": "2026-12-03",
+      "date": "2027-01-06",
       "slot": 1,
       "channel": "telegram",
       "clip": "sereno/zh-Hant"
     },
     {
-      "date": "2026-12-03",
+      "date": "2027-01-06",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "sereno/zh-Hant"
+    },
+    {
+      "date": "2027-01-07",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "sononote/zh-Hant"
+    },
+    {
+      "date": "2027-01-07",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "sononote/zh-Hant"
+    },
+    {
+      "date": "2027-01-07",
       "slot": 1,
       "channel": "threads",
       "clip": "sononote/zh-Hant"
     },
     {
-      "date": "2026-12-03",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "sereno/en"
-    },
-    {
-      "date": "2026-12-03",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "studydown/en"
-    },
-    {
-      "date": "2026-12-03",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "sereno/en"
-    },
-    {
-      "date": "2026-12-04",
+      "date": "2027-01-08",
       "slot": 1,
       "channel": "instagram",
       "clip": "stayclock/zh-Hant"
     },
     {
-      "date": "2026-12-04",
+      "date": "2027-01-08",
       "slot": 1,
       "channel": "telegram",
       "clip": "stayclock/zh-Hant"
     },
     {
-      "date": "2026-12-04",
+      "date": "2027-01-08",
       "slot": 1,
       "channel": "threads",
       "clip": "stayclock/zh-Hant"
     },
     {
-      "date": "2026-12-04",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "shotinbox/en"
-    },
-    {
-      "date": "2026-12-04",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "shotinbox/en"
-    },
-    {
-      "date": "2026-12-04",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "shotinbox/en"
-    },
-    {
-      "date": "2026-12-05",
+      "date": "2027-01-09",
       "slot": 1,
       "channel": "instagram",
       "clip": "studydown/zh-Hant"
     },
     {
-      "date": "2026-12-05",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "tripbeelite/zh-Hant"
-    },
-    {
-      "date": "2026-12-05",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "studydown/zh-Hant"
-    },
-    {
-      "date": "2026-12-05",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "tripbeelite/en"
-    },
-    {
-      "date": "2026-12-05",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "sononote/en"
-    },
-    {
-      "date": "2026-12-05",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "tripbeelite/en"
-    },
-    {
-      "date": "2026-12-06",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "tripplanet/zh-Hant"
-    },
-    {
-      "date": "2026-12-06",
+      "date": "2027-01-09",
       "slot": 1,
       "channel": "telegram",
       "clip": "studydown/zh-Hant"
     },
     {
-      "date": "2026-12-06",
+      "date": "2027-01-09",
       "slot": 1,
       "channel": "threads",
-      "clip": "tripplanet/zh-Hant"
+      "clip": "studydown/zh-Hant"
     },
     {
-      "date": "2026-12-06",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "sononote/en"
-    },
-    {
-      "date": "2026-12-06",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "tripplanet/en"
-    },
-    {
-      "date": "2026-12-06",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "sononote/en"
-    },
-    {
-      "date": "2026-12-07",
+      "date": "2027-01-10",
       "slot": 1,
       "channel": "instagram",
-      "clip": "wordmatelite/zh-Hant"
+      "clip": "tripbee/zh-Hant"
     },
     {
-      "date": "2026-12-07",
+      "date": "2027-01-10",
       "slot": 1,
       "channel": "telegram",
-      "clip": "wordmatelite/zh-Hant"
+      "clip": "tripbee/zh-Hant"
     },
     {
-      "date": "2026-12-07",
+      "date": "2027-01-10",
       "slot": 1,
       "channel": "threads",
-      "clip": "wordmatelite/zh-Hant"
+      "clip": "tripbee/zh-Hant"
     },
     {
-      "date": "2026-12-07",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "zipbox/en"
-    },
-    {
-      "date": "2026-12-07",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "zipbox/en"
-    },
-    {
-      "date": "2026-12-07",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "zipbox/en"
-    },
-    {
-      "date": "2026-12-08",
+      "date": "2027-01-11",
       "slot": 1,
       "channel": "instagram",
       "clip": "tripbeelite/zh-Hant"
     },
     {
-      "date": "2026-12-08",
+      "date": "2027-01-11",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "tripbeelite/zh-Hant"
+    },
+    {
+      "date": "2027-01-11",
       "slot": 1,
       "channel": "threads",
       "clip": "tripbeelite/zh-Hant"
     },
     {
-      "date": "2026-12-08",
-      "slot": 15,
+      "date": "2027-01-12",
+      "slot": 1,
       "channel": "instagram",
-      "clip": "studydown/en"
+      "clip": "tripplanet/zh-Hant"
     },
     {
-      "date": "2026-12-08",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "tripbeelite/en"
-    },
-    {
-      "date": "2026-12-08",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "studydown/en"
-    },
-    {
-      "date": "2026-12-09",
+      "date": "2027-01-12",
       "slot": 1,
       "channel": "telegram",
       "clip": "tripplanet/zh-Hant"
     },
     {
-      "date": "2026-12-09",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "tripplanet/en"
-    },
-    {
-      "date": "2026-12-09",
-      "slot": 15,
+      "date": "2027-01-12",
+      "slot": 1,
       "channel": "threads",
-      "clip": "tripplanet/en"
+      "clip": "tripplanet/zh-Hant"
     },
     {
-      "date": "2026-12-10",
+      "date": "2027-01-13",
       "slot": 1,
       "channel": "instagram",
-      "clip": "zipbox/zh-Hant"
+      "clip": "wifiaidlite/zh-Hant"
     },
     {
-      "date": "2026-12-10",
+      "date": "2027-01-13",
       "slot": 1,
       "channel": "telegram",
-      "clip": "zipbox/zh-Hant"
+      "clip": "wifiaidlite/zh-Hant"
     },
     {
-      "date": "2026-12-10",
+      "date": "2027-01-13",
       "slot": 1,
       "channel": "threads",
-      "clip": "zipbox/zh-Hant"
-    },
-    {
-      "date": "2026-12-10",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "wordmatelite/en"
-    },
-    {
-      "date": "2026-12-10",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "wordmatelite/en"
-    },
-    {
-      "date": "2026-12-10",
-      "slot": 15,
-      "channel": "threads",
-      "clip": "wordmatelite/en"
+      "clip": "wifiaidlite/zh-Hant"
     }
   ]
 }

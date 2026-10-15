@@ -868,7 +868,41 @@ def validate_icons(pages: Path, app_keys: Iterable[str]) -> None:
         raise ValueError(f"Publisher visual icons are missing or empty: {joined}")
 
 
-def _gallery_modified(path, locale, records, ui, modified, site):
+def _recorded_gallery_digests(manifest_path: Path) -> dict[str, str]:
+    """Return the gallery digests the previous build published, by locale."""
+    try:
+        previous = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError, TypeError, json.JSONDecodeError):
+        return {}
+    galleries = previous.get("galleries") if isinstance(previous, dict) else None
+    if not isinstance(galleries, list):
+        return {}
+    digests: dict[str, str] = {}
+    for gallery in galleries:
+        if not isinstance(gallery, dict):
+            continue
+        locale = gallery.get("locale")
+        digest = gallery.get("sha256")
+        if isinstance(locale, str) and isinstance(digest, str):
+            digests[locale] = digest
+    return digests
+
+
+def _gallery_edited_since_build(path: Path, recorded_digest: str | None) -> bool:
+    """True when a gallery's bytes differ from what the last build recorded.
+
+    Such a page was changed after its declared date (for example by a scoped
+    rename outside this generator), so the sitemap derives a newer lastmod
+    from Git. Keeping the old declared date would make the two disagree.
+    """
+    if recorded_digest is None or not path.is_file():
+        return False
+    return hashlib.sha256(path.read_bytes()).hexdigest() != recorded_digest
+
+
+def _gallery_modified(path, locale, records, ui, modified, site, edited=False):
+    if edited:
+        return modified
     if path.is_file():
         previous = path.read_text(encoding="utf-8")
         match = re.search(
@@ -917,6 +951,19 @@ def build(
     source_dataset_path = pages / "data" / f"{catalog.SLUG}.json"
     source_digest = hashlib.sha256(source_dataset_path.read_bytes()).hexdigest()
     modified = _stable_modified(manifest_path, generation_digest, today)
+    recorded_galleries = _recorded_gallery_digests(manifest_path)
+    edited_galleries = {
+        locale
+        for locale in ("en", *OFFICIAL_LOCALES)
+        if _gallery_edited_since_build(
+            pages / gallery_relative_path(locale),
+            recorded_galleries.get(locale),
+        )
+    }
+    if edited_galleries:
+        # An edited gallery is republished today; the manifest date may not
+        # trail any gallery date it lists.
+        modified = today
     manifest_records: list[dict[str, Any]] = []
     changed = 0
     expected_images: set[Path] = set()
@@ -950,7 +997,15 @@ def build(
     root_records = records_by_locale["en-US"]
     root_gallery_path = pages / gallery_relative_path("en")
     gallery_dates = {
-        "en": _gallery_modified(root_gallery_path, "en", root_records, ui_i18n["en-US"], modified, site)
+        "en": _gallery_modified(
+            root_gallery_path,
+            "en",
+            root_records,
+            ui_i18n["en-US"],
+            modified,
+            site,
+            edited="en" in edited_galleries,
+        )
     }
     root_gallery_source = _final_gallery_content(
         root_gallery_path,
@@ -971,7 +1026,13 @@ def build(
     for locale in OFFICIAL_LOCALES:
         gallery_path = pages / gallery_relative_path(locale)
         gallery_dates[locale] = _gallery_modified(
-            gallery_path, locale, records_by_locale[locale], ui_i18n[locale], modified, site
+            gallery_path,
+            locale,
+            records_by_locale[locale],
+            ui_i18n[locale],
+            modified,
+            site,
+            edited=locale in edited_galleries,
         )
         gallery_source = _final_gallery_content(
             gallery_path,

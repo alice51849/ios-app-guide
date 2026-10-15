@@ -63,6 +63,52 @@ class PublisherIntentVisualUnitTests(unittest.TestCase):
                 identity["sha256"],
             )
 
+    def test_gallery_edited_after_build_is_redated(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / "visuals" / "index.html"
+            path.parent.mkdir()
+            built = "<html><head></head><body>Built</body></html>"
+            path.write_text(built, encoding="utf-8")
+            manifest = root / "manifest.json"
+            manifest.write_text(
+                json.dumps(
+                    {
+                        "galleries": [
+                            visuals._gallery_manifest_record(
+                                "en", built, modified="2026-10-14"
+                            )
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            recorded = visuals._recorded_gallery_digests(manifest)
+            self.assertEqual(
+                {"en": hashlib.sha256(built.encode("utf-8")).hexdigest()},
+                recorded,
+            )
+            self.assertFalse(
+                visuals._gallery_edited_since_build(path, recorded["en"])
+            )
+            path.write_text(
+                "<html><head></head><body>Renamed</body></html>",
+                encoding="utf-8",
+            )
+            self.assertTrue(
+                visuals._gallery_edited_since_build(path, recorded["en"])
+            )
+            self.assertFalse(visuals._gallery_edited_since_build(path, None))
+            self.assertEqual(
+                {}, visuals._recorded_gallery_digests(root / "missing.json")
+            )
+            self.assertEqual(
+                "2026-10-15",
+                visuals._gallery_modified(
+                    path, "en", [], {}, "2026-10-15", visuals.SITE, edited=True
+                ),
+            )
+
     def test_campaign_tokens_are_unique_and_app_store_safe(self) -> None:
         tokens = [
             visuals.visual_campaign_token(locale)

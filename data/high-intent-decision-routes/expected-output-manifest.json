@@ -5,7 +5,7 @@
   "creative_count": 53,
   "current_inventory": {
     "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "56ceba289129e8fb0a6929b2eaa33b78e2291db07dd9ece867b0feabe3008b11",
+    "copy_sha256": "2682632db12d7b6cb12594d309ba9e35e9473fae983d5a71204e533c8058715a",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 53
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "8b723cdcd1999cac641d5a2757dc1771960363a4f6aa7f0ed3e1a1b40b4396a8",
+      "generated_sha256": "ede6507b75fbc337ef60c75e09eb8af94b78e496b78bcb449a9f11b70df9558f",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "fb48dd06f71463b97a6f98e8bc2dac72c7810a99f4c3b351a625a5a57f5df31e",
+      "generated_sha256": "e3b4ebe1d7e876769af9022473eb4de047097dd43fd72ecda7c51ce5bbe375b2",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -209,7 +209,7 @@
       "relative_path": "en-US/decide/picclear/recover-storage-from-photo-clutter.html"
     },
     {
-      "generated_sha256": "b945392fdad3f3a3270cb4038e629ecdde0a106d36a1fd37e3dff28a56bc60d4",
+      "generated_sha256": "68a23771193027da147bd71ca94f010457555eed58642709a051ab40ea499ebd",
       "kind": "route_html",
       "relative_path": "en-US/decide/qrcodehalo/qr-scanner-that-shows-the-full-link-before-opening.html"
     },
@@ -269,7 +269,7 @@
       "relative_path": "en-US/decide/tripbeelite/plan-one-upcoming-trip-without-clutter.html"
     },
     {
-      "generated_sha256": "7444cbbc5e81cfceb21c154f75d67067925c4d4f85260daa0c4349c064493941",
+      "generated_sha256": "0f765f3ec3ef91c5a395b59db51fdb398ed36c01820bde135386ce50465866a6",
       "kind": "route_html",
       "relative_path": "en-US/decide/tripplanet/turn-family-travel-waiting-into-observation.html"
     },
@@ -284,7 +284,7 @@
       "relative_path": "en-US/decide/wifiaid/separate-wifi-dns-and-website-failure.html"
     },
     {
-      "generated_sha256": "1d93ca3b44de1af7b7ba44c709fac17293658a380fb27f14ffa992bdc9389ff5",
+      "generated_sha256": "f5365a0b413f4f8e70cf5e2e7c348dacd8ba613c1a2229774cdc2d1f564a81c4",
       "kind": "route_html",
       "relative_path": "en-US/decide/wifiaidlite/free-check-wifi-versus-website.html"
     },
@@ -294,7 +294,7 @@
       "relative_path": "en-US/decide/wordmate/vocabulary-on-widget-and-watch.html"
     },
     {
-      "generated_sha256": "5f9fac2153b8bf49d9efea0474247e7bb53c9949adfae33c54103cb0e6a89fbf",
+      "generated_sha256": "d451547b0669969ab2d7d79cdae45263e0ba4d77904ff0d4b1f56f3e8a9633fd",
       "kind": "route_html",
       "relative_path": "en-US/decide/wordmatelite/five-words-without-building-decks.html"
     },
@@ -339,12 +339,12 @@
       "relative_path": "zh-Hant/decide/cyca/private-cycle-patterns-without-account.html"
     },
     {
-      "generated_sha256": "a3c111092d81c5615006346f124bc64193f7feede02fbf6a40ef1c4279d29c77",
+      "generated_sha256": "7f4a5f4fa9388eef082901a2d57c23f727f49e0da3a321154de55a65a7f6deae",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html"
     },
     {
-      "generated_sha256": "00fdf3efab48da9ac3d2aec38911cb2a6d0bffc72a270957b0626e56fa93f382",
+      "generated_sha256": "ff11b46ab8dd4a58b6c767d2c18ce21ae8166b7bdd4be367664dcca5476d4326",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html"
     },
@@ -372,14 +372,14 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "56ceba289129e8fb0a6929b2eaa33b78e2291db07dd9ece867b0feabe3008b11",
+    "copy_sha256": "2682632db12d7b6cb12594d309ba9e35e9473fae983d5a71204e533c8058715a",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 53,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "aadf2cb3bf4e45abaf0a71e6f9547aa04e193a401641faa8dd9b24508c4742f1",
+  "manifest_digest": "0378e03703e0bc96d6a1c1a866270ae8562cf55fe6286637869967cb74d2b984",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "8a10d8554ed076525fb90f5e3dcb33acbb8fefdab0250bc414130d345b682919",
+  "release_contract_digest": "32f51629bc2bc159afdd958cd3cc4506aeaf50825f526660e358d75697ed4f33",
   "release_state": "exact",
   "route_count": 66,
   "routes": [
@@ -988,8 +988,8 @@
       "creative_id": "qrcodehalo:qr-scanner-that-shows-the-full-link-before-opening:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "b945392fdad3f3a3270cb4038e629ecdde0a106d36a1fd37e3dff28a56bc60d4",
-      "record_digest": "7081faba8c4bc651a7cc5787c7985a65a0a60ff03186e66c5ebb580cd28f1690",
+      "output_sha256": "68a23771193027da147bd71ca94f010457555eed58642709a051ab40ea499ebd",
+      "record_digest": "ec3ed3de4af19587449fb077e724296fdc141f228bd0ad5a7d9ad6ca6ceee275",
       "relative_path": "en-US/decide/qrcodehalo/qr-scanner-that-shows-the-full-link-before-opening.html",
       "route_id": "en-US:qrcodehalo:qr-scanner-that-shows-the-full-link-before-opening",
       "route_slug": "qr-scanner-that-shows-the-full-link-before-opening",
@@ -1192,8 +1192,8 @@
       "creative_id": "tripplanet:turn-family-travel-waiting-into-observation:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "7444cbbc5e81cfceb21c154f75d67067925c4d4f85260daa0c4349c064493941",
-      "record_digest": "b8415ebc9cc40678827d135915917adc6c2bd323a7062e0ddd5922422e5fdd2e",
+      "output_sha256": "0f765f3ec3ef91c5a395b59db51fdb398ed36c01820bde135386ce50465866a6",
+      "record_digest": "afaa0facba77178d320b11c2d7d16ea996ed114518a2f559706161d9aa1d3886",
       "relative_path": "en-US/decide/tripplanet/turn-family-travel-waiting-into-observation.html",
       "route_id": "en-US:tripplanet:turn-family-travel-waiting-into-observation",
       "route_slug": "turn-family-travel-waiting-into-observation",
@@ -1243,8 +1243,8 @@
       "creative_id": "wifiaidlite:free-check-wifi-versus-website:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "1d93ca3b44de1af7b7ba44c709fac17293658a380fb27f14ffa992bdc9389ff5",
-      "record_digest": "8da353b601322fb527860f3d362a66f2d1bdb926cab51474a6b846272db2983b",
+      "output_sha256": "f5365a0b413f4f8e70cf5e2e7c348dacd8ba613c1a2229774cdc2d1f564a81c4",
+      "record_digest": "7274591746e5d7e82263143aa97ba0f133688d80d2857f5b75e9bde00bb82513",
       "relative_path": "en-US/decide/wifiaidlite/free-check-wifi-versus-website.html",
       "route_id": "en-US:wifiaidlite:free-check-wifi-versus-website",
       "route_slug": "free-check-wifi-versus-website",
@@ -1277,7 +1277,7 @@
       "creative_id": "wordmatelite:five-words-without-building-decks:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "5f9fac2153b8bf49d9efea0474247e7bb53c9949adfae33c54103cb0e6a89fbf",
+      "output_sha256": "d451547b0669969ab2d7d79cdae45263e0ba4d77904ff0d4b1f56f3e8a9633fd",
       "record_digest": "23e6b9235eafa09129caec37eeaabe9ca21b99fc63c2d9b0b891485461531867",
       "relative_path": "en-US/decide/wordmatelite/five-words-without-building-decks.html",
       "route_id": "en-US:wordmatelite:five-words-without-building-decks",
@@ -1413,8 +1413,8 @@
       "creative_id": "lumibopomofo:gentle-zhuyin-practice-for-bilingual-child:alternative",
       "intent_type": "alternative",
       "locale": "zh-Hant",
-      "output_sha256": "a3c111092d81c5615006346f124bc64193f7feede02fbf6a40ef1c4279d29c77",
-      "record_digest": "cd47873977fb04bf35ba84cfdc25f89790acd6bf2b6a8a12f0cc8e67cd2773a3",
+      "output_sha256": "7f4a5f4fa9388eef082901a2d57c23f727f49e0da3a321154de55a65a7f6deae",
+      "record_digest": "1a2d2d7917746e0f61045748509d386f15ca90bd397743a2893e10621059ad16",
       "relative_path": "zh-Hant/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html",
       "route_id": "zh-Hant:lumibopomofo:gentle-zhuyin-practice-for-bilingual-child",
       "route_slug": "gentle-zhuyin-practice-for-bilingual-child",
@@ -1430,8 +1430,8 @@
       "creative_id": "lumibopomofopro:complete-zhuyin-path-for-heritage-family:alternative",
       "intent_type": "alternative",
       "locale": "zh-Hant",
-      "output_sha256": "00fdf3efab48da9ac3d2aec38911cb2a6d0bffc72a270957b0626e56fa93f382",
-      "record_digest": "ae105e7e7f75793f7c241fabb8d48d7c4e98c2a2652dea1dca325ff87c6f7c8a",
+      "output_sha256": "ff11b46ab8dd4a58b6c767d2c18ce21ae8166b7bdd4be367664dcca5476d4326",
+      "record_digest": "cf8fa0444d01bf7bddf925fb76d2585872af64ea4e481bb30740323cd835df10",
       "relative_path": "zh-Hant/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html",
       "route_id": "zh-Hant:lumibopomofopro:complete-zhuyin-path-for-heritage-family",
       "route_slug": "complete-zhuyin-path-for-heritage-family",
@@ -1508,5 +1508,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "be11d11acc5ff25d1a6084788d9acfbe3dc2d61249c26162e4edeb107bdc03aa"
+  "source_contract_digest": "2641e9818035a6c8615ba30080139cf94b58e412b63830c254003c475e6fa33f"
 }

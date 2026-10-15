@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開發者搜尋意圖目錄",
   "description": "第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。",
   "inLanguage": "zh-Hant",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1734,8 +1734,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "家長規劃戶外時間需要的不只是溫度：需要快速、年齡適合的判斷，是否適合孩子出門及穿著建議。所以才有了 Lumi Weather。",
+        "name": "Lumi天氣星球 外出指數與穿搭建議",
+        "description": "一眼看懂現在適不適合出門、該穿什麼、要不要帶傘或擦防曬，Lumi天氣星球把天氣預報變成一句清楚的答案。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1750,7 +1750,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi天氣星球 外出指數與穿搭建議",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1761,11 +1761,11 @@
             "target": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "zh-Hant",
-          "description": "家長規劃戶外時間需要的不只是溫度：需要快速、年齡適合的判斷，是否適合孩子出門及穿著建議。所以才有了 Lumi Weather。",
+          "description": "一眼看懂現在適不適合出門、該穿什麼、要不要帶傘或擦防曬，Lumi天氣星球把天氣預報變成一句清楚的答案。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-lumiweather"
           },
@@ -2263,7 +2263,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo：安全掃描與建立",
-        "description": "QR Code Halo 不會把讀取結果直接變成一次點擊。流程固定是檢查、判斷、行動，讓你先看清內容、風險依據與可執行範圍，再決定下一步。",
+        "description": "預設掃描後會自動執行；到設定關閉「掃描後自動執行」即可先檢查，歷史紀錄中按「安全檢查」。流程固定是檢查、判斷、行動，讓你先看清內容、風險依據與可執行範圍，再決定下一步。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2293,7 +2293,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "zh-Hant",
-          "description": "QR Code Halo 不會把讀取結果直接變成一次點擊。流程固定是檢查、判斷、行動，讓你先看清內容、風險依據與可執行範圍，再決定下一步。",
+          "description": "預設掃描後會自動執行；到設定關閉「掃描後自動執行」即可先檢查，歷史紀錄中按「安全檢查」。流程固定是檢查、判斷、行動，讓你先看清內容、風險依據與可執行範圍，再決定下一步。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-qrcodehalo"
           },

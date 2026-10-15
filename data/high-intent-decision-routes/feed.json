@@ -509,11 +509,11 @@
         "campaign_token": "geo_ask",
         "intent_type": "problem_aware",
         "locale": "en-US",
-        "record_digest": "7081faba8c4bc651a7cc5787c7985a65a0a60ff03186e66c5ebb580cd28f1690"
+        "record_digest": "ec3ed3de4af19587449fb077e724296fdc141f228bd0ad5a7d9ad6ca6ceee275"
       },
       "id": "en-US:qrcodehalo:qr-scanner-that-shows-the-full-link-before-opening",
       "language": "en",
-      "summary": "Many scanners jump straight to a website or action after the scan, so a sticker placed over a real code is one tap away from the browser. The decision is whether a scanner that shows the complete payload with an on-device rule check fits how you scan. By default this app runs the action right after scanning; turn off “Run action after scanning” in Settings to inspect first, then tap Security Check in History.",
+      "summary": "Many scanners jump straight to a website or action after the scan, so a sticker placed over a real code is one tap away from the browser. The decision is whether a scanner that shows the complete payload with an on-device rule check fits how you scan. By default the scanned action runs right away; turn off “Run action after scanning” in Settings to inspect first, then tap Security Check in History.",
       "title": "Which QR code scanner shows me the full link before it opens anything?",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/qrcodehalo/qr-scanner-that-shows-the-full-link-before-opening.html"
     },
@@ -677,7 +677,7 @@
         "campaign_token": "geo_learn",
         "intent_type": "workflow",
         "locale": "en-US",
-        "record_digest": "b8415ebc9cc40678827d135915917adc6c2bd323a7062e0ddd5922422e5fdd2e"
+        "record_digest": "afaa0facba77178d320b11c2d7d16ea996ed114518a2f559706161d9aa1d3886"
       },
       "id": "en-US:tripplanet:turn-family-travel-waiting-into-observation",
       "language": "en",
@@ -719,7 +719,7 @@
         "campaign_token": "geo_ask",
         "intent_type": "problem_aware",
         "locale": "en-US",
-        "record_digest": "8da353b601322fb527860f3d362a66f2d1bdb926cab51474a6b846272db2983b"
+        "record_digest": "7274591746e5d7e82263143aa97ba0f133688d80d2857f5b75e9bde00bb82513"
       },
       "id": "en-US:wifiaidlite:free-check-wifi-versus-website",
       "language": "en",
@@ -859,7 +859,7 @@
         "campaign_token": "geo_pick",
         "intent_type": "alternative",
         "locale": "zh-Hant",
-        "record_digest": "cd47873977fb04bf35ba84cfdc25f89790acd6bf2b6a8a12f0cc8e67cd2773a3"
+        "record_digest": "1a2d2d7917746e0f61045748509d386f15ca90bd397743a2893e10621059ad16"
       },
       "id": "zh-Hant:lumibopomofo:gentle-zhuyin-practice-for-bilingual-child",
       "language": "zh-Hant",
@@ -873,7 +873,7 @@
         "campaign_token": "geo_pick",
         "intent_type": "alternative",
         "locale": "zh-Hant",
-        "record_digest": "ae105e7e7f75793f7c241fabb8d48d7c4e98c2a2652dea1dca325ff87c6f7c8a"
+        "record_digest": "cf8fa0444d01bf7bddf925fb76d2585872af64ea4e481bb30740323cd835df10"
       },
       "id": "zh-Hant:lumibopomofopro:complete-zhuyin-path-for-heritage-family",
       "language": "zh-Hant",

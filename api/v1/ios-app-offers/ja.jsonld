@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開発元検索意図カタログ",
   "description": "各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。",
   "inLanguage": "ja",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1729,72 +1729,6 @@
     {
       "@type": "ListItem",
       "position": 27,
-      "url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-lumiweather",
-        "url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "屋外時間を計画する親には、気温だけでなく、子どもに合った条件かどうか・どんな服装が適切かを素早く年齢に合わせて確認できるアプリが必要です。だからLumi Weatherを作りました。",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6779552704",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6779552704"
-          },
-          "name": "Lumi Weather",
-          "operatingSystem": "iOS",
-          "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ja/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6779552704",
-          "inLanguage": "ja",
-          "description": "屋外時間を計画する親には、気温だけでなく、子どもに合った条件かどうか・どんな服装が適切かを素早く年齢に合わせて確認できるアプリが必要です。だからLumi Weatherを作りました。",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-lumiweather"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": true
-        },
-        "price": "0",
-        "priceCurrency": "JPY",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "JP"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 28,
       "url": "https://apps.apple.com/jp/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1860,7 +1794,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 28,
       "url": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1926,7 +1860,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 29,
       "url": "https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1992,7 +1926,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 30,
       "url": "https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2058,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 31,
       "url": "https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2124,7 +2058,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 32,
       "url": "https://apps.apple.com/jp/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2190,7 +2124,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 33,
       "url": "https://apps.apple.com/jp/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2256,14 +2190,14 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 34,
       "url": "https://apps.apple.com/jp/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/jp/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo：開く前に確認",
-        "description": "QR Code Halo は読み取った瞬間に何かを開くアプリではありません。調べる、判断する、操作するの順に、内容と根拠を確かめてから次へ進めます。",
+        "description": "初期設定では読み取ると自動で実行されます。先に確認したいときは、設定で「スキャン後に自動実行」をオフにし、履歴で「セキュリティチェック」を押してください。調べる、判断する、操作するの順に、内容と根拠を確かめてから次へ進めます。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2293,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "ja",
-          "description": "QR Code Halo は読み取った瞬間に何かを開くアプリではありません。調べる、判断する、操作するの順に、内容と根拠を確かめてから次へ進めます。",
+          "description": "初期設定では読み取ると自動で実行されます。先に確認したいときは、設定で「スキャン後に自動実行」をオフにし、履歴で「セキュリティチェック」を押してください。調べる、判断する、操作するの順に、内容と根拠を確かめてから次へ進めます。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-qrcodehalo"
           },
@@ -2322,7 +2256,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 35,
       "url": "https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2388,7 +2322,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 36,
       "url": "https://apps.apple.com/jp/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2454,7 +2388,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 37,
       "url": "https://apps.apple.com/jp/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2520,7 +2454,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 38,
       "url": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2586,7 +2520,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 39,
       "url": "https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2652,7 +2586,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 40,
       "url": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2718,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 41,
       "url": "https://apps.apple.com/jp/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2784,7 +2718,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 42,
       "url": "https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2850,7 +2784,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 43,
       "url": "https://apps.apple.com/jp/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2916,7 +2850,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 44,
       "url": "https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -2982,7 +2916,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 45,
       "url": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3048,7 +2982,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 46,
       "url": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3114,7 +3048,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 47,
       "url": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3180,7 +3114,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 48,
       "url": "https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3246,7 +3180,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 49,
       "url": "https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3312,7 +3246,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 50,
       "url": "https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3378,7 +3312,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 51,
       "url": "https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3444,7 +3378,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 53,
+      "position": 52,
       "url": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -3500,6 +3434,72 @@
           "isAccessibleForFree": false
         },
         "price": "800",
+        "priceCurrency": "JPY",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "JP"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 53,
+      "url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-lumiweather",
+        "url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+        "name": "ルミのおてんき星 おでかけ指数",
+        "description": "今出かけるのにちょうどいいか、何を着ればいいか、傘や日焼け止めが必要かが、ひと目でわかる天気アプリです。",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779552704",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779552704"
+          },
+          "name": "ルミのおてんき星 おでかけ指数",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/lumiweather.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779552704",
+          "inLanguage": "ja",
+          "description": "今出かけるのにちょうどいいか、何を着ればいいか、傘や日焼け止めが必要かが、ひと目でわかる天気アプリです。",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-lumiweather"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
         "priceCurrency": "JPY",
         "availability": "https://schema.org/InStock",
         "eligibleRegion": {

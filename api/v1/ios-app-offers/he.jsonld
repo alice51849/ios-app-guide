@@ -6,7 +6,7 @@
   "name": "קטלוג כוונות החיפוש של Lumi Studio מפרסם",
   "description": "קטלוג רשמי המציג עבור מי מיועדת כל אפליקציה, המשימה שהיא נועדה לבצע, והמסלול הישיר ל-App Store.",
   "inLanguage": "he",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1734,8 +1734,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/il/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "הורים שמתכננים זמן בחוץ צריכים יותר מטמפרטורה: הם צריכים מבט מהיר ומותאם גיל האם התנאים מתאימים לילד ומה כדאי ללבוש. בשביל זה Lumi Weather נבנה.",
+        "name": "Lumi מזג אוויר: תחזית ולבוש",
+        "description": "האפליקציה Lumi מזג אוויר מראה לכם בשנייה אחת אם היום הוא יום טוב לצאת מהבית: ציון יציאה בין 0 ל־100 ומשפט קצר שאפשר לקרוא תוך כדי הליכה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1750,7 +1750,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi מזג אוויר: תחזית ולבוש",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/il/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1761,11 +1761,11 @@
             "target": "https://apps.apple.com/il/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/he/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/he/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "he",
-          "description": "הורים שמתכננים זמן בחוץ צריכים יותר מטמפרטורה: הם צריכים מבט מהיר ומותאם גיל האם התנאים מתאימים לילד ומה כדאי ללבוש. בשביל זה Lumi Weather נבנה.",
+          "description": "האפליקציה Lumi מזג אוויר מראה לכם בשנייה אחת אם היום הוא יום טוב לצאת מהבית: ציון יציאה בין 0 ל־100 ומשפט קצר שאפשר לקרוא תוך כדי הליכה.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-lumiweather"
           },
@@ -2263,7 +2263,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/il/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: סריקה ויצירה",
-        "description": "QR Code Halo שומר על סדר מכוון: בודקים את התוכן שפוענח, שוקלים את הממצאים הגלויים ורק אז בוחרים פעולה. עצם זיהוי הקוד לעולם לא פותח יעד אוטומטית.",
+        "description": "QR Code Halo שומר על סדר מכוון: בודקים את התוכן שפוענח, שוקלים את הממצאים הגלויים ורק אז בוחרים פעולה. כברירת מחדל, הפעולה מתבצעת מיד לאחר הסריקה. כדי לבדוק קודם, כבו את “הפעל פעולה לאחר סריקה” בהגדרות ולחצו על “בדיקת אבטחה” בהיסטוריה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2293,7 +2293,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "he",
-          "description": "QR Code Halo שומר על סדר מכוון: בודקים את התוכן שפוענח, שוקלים את הממצאים הגלויים ורק אז בוחרים פעולה. עצם זיהוי הקוד לעולם לא פותח יעד אוטומטית.",
+          "description": "QR Code Halo שומר על סדר מכוון: בודקים את התוכן שפוענח, שוקלים את הממצאים הגלויים ורק אז בוחרים פעולה. כברירת מחדל, הפעולה מתבצעת מיד לאחר הסריקה. כדי לבדוק קודם, כבו את “הפעל פעולה לאחר סריקה” בהגדרות ולחצו על “בדיקת אבטחה” בהיסטוריה.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-qrcodehalo"
           },

@@ -6,7 +6,7 @@
   "name": "Lumi Studio प्रकाशक शोध हेतू निर्देशिका",
   "description": "प्रत्येक अॅप कोणासाठी डिझाइन केले आहे, ते कोणते कार्य पूर्ण करण्याचा प्रयत्न करत आहेत, आणि थेट App Store मार्ग यांचा प्रथम पक्ष निर्देशिका.",
   "inLanguage": "mr-IN",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1668,8 +1668,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "पालकांना बाहेर जाण्याचे नियोजन करताना तापमानापेक्षा अधिक माहिती हवी असते: मुलासाठी परिस्थिती योग्य आहे का आणि कोणते कपडे योग्य आहेत हे पटकन जाणून घ्यावे लागते। म्हणूनच Lumi Weather तयार झाला.",
+        "name": "Lumi हवामान: आजचा अंदाज",
+        "description": "आज बाहेर पडायला योग्य वेळ आहे का? Lumi हवामान एका नजरेत सांगते: 0 ते 100 पर्यंतचा बाहेर जाण्याचा स्कोअर आणि एक स्पष्ट वाक्य, म्हणजे काही सेकंदांत निर्णय",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1684,7 +1684,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi हवामान: आजचा अंदाज",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1695,11 +1695,11 @@
             "target": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/mr-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/mr-IN/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "mr-IN",
-          "description": "पालकांना बाहेर जाण्याचे नियोजन करताना तापमानापेक्षा अधिक माहिती हवी असते: मुलासाठी परिस्थिती योग्य आहे का आणि कोणते कपडे योग्य आहेत हे पटकन जाणून घ्यावे लागते। म्हणूनच Lumi Weather तयार झाला.",
+          "description": "आज बाहेर पडायला योग्य वेळ आहे का? Lumi हवामान एका नजरेत सांगते: 0 ते 100 पर्यंतचा बाहेर जाण्याचा स्कोअर आणि एक स्पष्ट वाक्य, म्हणजे काही सेकंदांत निर्णय",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld#offer-lumiweather"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/in/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: स्कॅन, तयार करा",
-        "description": "QR Code Halo क्रम तुमच्या हातात ठेवतो: decode केलेला मजकूर पाहा, दिसणारे findings समजा आणि मगच कृती निवडा. Code ओळखला म्हणून काहीही आपोआप उघडत नाही.",
+        "description": "QR Code Halo क्रम तुमच्या हातात ठेवतो: decode केलेला मजकूर पाहा, दिसणारे findings समजा आणि मगच कृती निवडा. डिफॉल्टनुसार स्कॅन केल्यावर लगेच कृती चालते. आधी तपासायचे असल्यास सेटिंग्जमध्ये “स्कॅननंतर कृती चालवा” बंद करा आणि इतिहासात “सुरक्षा तपासणी” दाबा.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "mr-IN",
-          "description": "QR Code Halo क्रम तुमच्या हातात ठेवतो: decode केलेला मजकूर पाहा, दिसणारे findings समजा आणि मगच कृती निवडा. Code ओळखला म्हणून काहीही आपोआप उघडत नाही.",
+          "description": "QR Code Halo क्रम तुमच्या हातात ठेवतो: decode केलेला मजकूर पाहा, दिसणारे findings समजा आणि मगच कृती निवडा. डिफॉल्टनुसार स्कॅन केल्यावर लगेच कृती चालते. आधी तपासायचे असल्यास सेटिंग्जमध्ये “स्कॅननंतर कृती चालवा” बंद करा आणि इतिहासात “सुरक्षा तपासणी” दाबा.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld#offer-qrcodehalo"
           },
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "खरी समस्या शोधा. सर्व टूल्स मिळून एक संपूर्ण तपासणी मोफत आहे. अमर्याद वापरासाठी ऐच्छिक एक-वेळ आजीवन अनलॉक—सबस्क्रिप्शन, जाहिराती किंवा ट्रॅकिंग",
+        "description": "खरी समस्या शोधा. सर्व टूल्स मिळून एक संपूर्ण तपासणी मोफत आहे. अमर्याद वापरासाठी ऐच्छिक एक-वेळ आजीवन अनलॉक—सबस्क्रिप्शन, जाहिराती किंवा ट्रॅकिंग नाही.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "mr-IN",
-          "description": "खरी समस्या शोधा. सर्व टूल्स मिळून एक संपूर्ण तपासणी मोफत आहे. अमर्याद वापरासाठी ऐच्छिक एक-वेळ आजीवन अनलॉक—सबस्क्रिप्शन, जाहिराती किंवा ट्रॅकिंग",
+          "description": "खरी समस्या शोधा. सर्व टूल्स मिळून एक संपूर्ण तपासणी मोफत आहे. अमर्याद वापरासाठी ऐच्छिक एक-वेळ आजीवन अनलॉक—सबस्क्रिप्शन, जाहिराती किंवा ट्रॅकिंग नाही.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/mr-IN.jsonld#offer-wifiaidlite"
           },

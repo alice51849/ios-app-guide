@@ -6,7 +6,7 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1686,8 +1686,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/cn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "家长规划户外时间需要的不仅是温度：还需快速、年龄适配的判断天气是否适合孩子及穿衣建议。所以才有了 Lumi Weather。",
+        "name": "Lumi天气星球 出门指数与穿衣建议",
+        "description": "一眼看懂现在适不适合出门、该穿什么、要不要带伞或涂防晒，Lumi天气星球把天气预报变成一句清楚的答案。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1702,7 +1702,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi天气星球 出门指数与穿衣建议",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/cn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1713,11 +1713,11 @@
             "target": "https://apps.apple.com/cn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "zh-Hans",
-          "description": "家长规划户外时间需要的不仅是温度：还需快速、年龄适配的判断天气是否适合孩子及穿衣建议。所以才有了 Lumi Weather。",
+          "description": "一眼看懂现在适不适合出门、该穿什么、要不要带伞或涂防晒，Lumi天气星球把天气预报变成一句清楚的答案。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-lumiweather"
           },
@@ -2215,7 +2215,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/cn/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo：安全扫码与制作",
-        "description": "QR Code Halo 不把识别结果直接变成一次点击。它遵循检查、判断、行动的顺序，让你先看清内容、风险依据和可执行范围，再决定下一步。",
+        "description": "默认扫描后会自动执行；到设置关闭“扫描后自动执行”即可先检查，在历史记录中点按“安全检查”。它遵循检查、判断、行动的顺序，让你先看清内容、风险依据和可执行范围，再决定下一步。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2245,7 +2245,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "zh-Hans",
-          "description": "QR Code Halo 不把识别结果直接变成一次点击。它遵循检查、判断、行动的顺序，让你先看清内容、风险依据和可执行范围，再决定下一步。",
+          "description": "默认扫描后会自动执行；到设置关闭“扫描后自动执行”即可先检查，在历史记录中点按“安全检查”。它遵循检查、判断、行动的顺序，让你先看清内容、风险依据和可执行范围，再决定下一步。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-qrcodehalo"
           },

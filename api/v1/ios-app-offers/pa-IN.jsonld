@@ -6,7 +6,7 @@
   "name": "Lumi Studio ਪ੍ਰਕਾਸ਼ਕ ਖੋਜ ਇਰਾਦਾ ਕੈਟਾਲੌਗ",
   "description": "ਇੱਕ ਪਹਿਲਾ-ਪੱਖ ਕੈਟਾਲੌਗ ਜਿਸ ਵਿੱਚ ਦਰਸਾਇਆ ਗਿਆ ਹੈ ਕਿ ਹਰ ਐਪ ਕਿਸ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ, ਉਹ ਕਿਹੜਾ ਕੰਮ ਪੂਰਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ, ਅਤੇ ਸਿੱਧਾ App Store ਪੱਥ।",
   "inLanguage": "pa-IN",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1668,8 +1668,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "ਬਾਹਰ ਸਮਾਂ ਯੋਜਨਾ ਬਣਾਉਣ ਵਾਲੇ ਮਾਪਿਆਂ ਨੂੰ ਸਿਰਫ਼ ਤਾਪਮਾਨ ਦੀ ਲੋੜ ਨਹੀਂ: ਉਹਨਾਂ ਨੂੰ ਇੱਕ ਤੇਜ਼, ਉਮਰ-ਅਨੁਕੂਲ ਦ੍ਰਿਸ਼ ਚਾਹੀਦਾ ਕਿ ਹਾਲਾਤ ਬੱਚੇ ਲਈ ਠੀਕ ਹਨ ਅਤੇ ਕਿਹੜੇ ਕਪੜੇ ਸਹੀ ਹਨ। ਇਸੇ ਲਈ Lumi Weather ਬਣਿਆ।",
+        "name": "Lumi ਮੌਸਮ: ਅੱਜ ਦੀ ਭਵਿੱਖਬਾਣੀ",
+        "description": "ਕੀ ਅੱਜ ਬਾਹਰ ਨਿਕਲਣ ਦਾ ਸਹੀ ਸਮਾਂ ਹੈ? Lumi ਮੌਸਮ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ ਦੱਸ ਦਿੰਦਾ ਹੈ: 0 ਤੋਂ 100 ਤੱਕ ਦਾ ਬਾਹਰ ਜਾਣ ਦਾ ਸਕੋਰ ਅਤੇ ਇੱਕ ਸਾਫ਼ ਵਾਕ, ਤਾਂ ਜੋ ਤੁਸੀਂ ਕੁਝ ਹੀ ਸਕਿੰਟਾਂ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1684,7 +1684,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi ਮੌਸਮ: ਅੱਜ ਦੀ ਭਵਿੱਖਬਾਣੀ",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1695,11 +1695,11 @@
             "target": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/pa-IN/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "pa-IN",
-          "description": "ਬਾਹਰ ਸਮਾਂ ਯੋਜਨਾ ਬਣਾਉਣ ਵਾਲੇ ਮਾਪਿਆਂ ਨੂੰ ਸਿਰਫ਼ ਤਾਪਮਾਨ ਦੀ ਲੋੜ ਨਹੀਂ: ਉਹਨਾਂ ਨੂੰ ਇੱਕ ਤੇਜ਼, ਉਮਰ-ਅਨੁਕੂਲ ਦ੍ਰਿਸ਼ ਚਾਹੀਦਾ ਕਿ ਹਾਲਾਤ ਬੱਚੇ ਲਈ ਠੀਕ ਹਨ ਅਤੇ ਕਿਹੜੇ ਕਪੜੇ ਸਹੀ ਹਨ। ਇਸੇ ਲਈ Lumi Weather ਬਣਿਆ।",
+          "description": "ਕੀ ਅੱਜ ਬਾਹਰ ਨਿਕਲਣ ਦਾ ਸਹੀ ਸਮਾਂ ਹੈ? Lumi ਮੌਸਮ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ ਦੱਸ ਦਿੰਦਾ ਹੈ: 0 ਤੋਂ 100 ਤੱਕ ਦਾ ਬਾਹਰ ਜਾਣ ਦਾ ਸਕੋਰ ਅਤੇ ਇੱਕ ਸਾਫ਼ ਵਾਕ, ਤਾਂ ਜੋ ਤੁਸੀਂ ਕੁਝ ਹੀ ਸਕਿੰਟਾਂ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld#offer-lumiweather"
           },
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "ਅਸਲ ਸਮੱਸਿਆ ਲੱਭੋ. ਸਾਰੇ ਟੂਲਾਂ ਲਈ ਮਿਲਾ ਕੇ ਇੱਕ ਪੂਰੀ ਜਾਂਚ ਮੁਫ਼ਤ ਹੈ। ਬੇਅੰਤ ਵਰਤੋਂ ਲਈ ਵਿਕਲਪਿਕ ਇੱਕ-ਵਾਰ ਜੀਵਨ ਭਰ ਦਾ ਅਨਲੌਕ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ, ਇਸ਼ਤਿਹਾਰ ਜਾਂ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ",
+        "description": "ਅਸਲ ਸਮੱਸਿਆ ਲੱਭੋ. ਸਾਰੇ ਟੂਲਾਂ ਲਈ ਮਿਲਾ ਕੇ ਇੱਕ ਪੂਰੀ ਜਾਂਚ ਮੁਫ਼ਤ ਹੈ। ਬੇਅੰਤ ਵਰਤੋਂ ਲਈ ਵਿਕਲਪਿਕ ਇੱਕ-ਵਾਰ ਜੀਵਨ ਭਰ ਦਾ ਅਨਲੌਕ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ, ਇਸ਼ਤਿਹਾਰ ਜਾਂ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ।",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "pa-IN",
-          "description": "ਅਸਲ ਸਮੱਸਿਆ ਲੱਭੋ. ਸਾਰੇ ਟੂਲਾਂ ਲਈ ਮਿਲਾ ਕੇ ਇੱਕ ਪੂਰੀ ਜਾਂਚ ਮੁਫ਼ਤ ਹੈ। ਬੇਅੰਤ ਵਰਤੋਂ ਲਈ ਵਿਕਲਪਿਕ ਇੱਕ-ਵਾਰ ਜੀਵਨ ਭਰ ਦਾ ਅਨਲੌਕ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ, ਇਸ਼ਤਿਹਾਰ ਜਾਂ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ",
+          "description": "ਅਸਲ ਸਮੱਸਿਆ ਲੱਭੋ. ਸਾਰੇ ਟੂਲਾਂ ਲਈ ਮਿਲਾ ਕੇ ਇੱਕ ਪੂਰੀ ਜਾਂਚ ਮੁਫ਼ਤ ਹੈ। ਬੇਅੰਤ ਵਰਤੋਂ ਲਈ ਵਿਕਲਪਿਕ ਇੱਕ-ਵਾਰ ਜੀਵਨ ਭਰ ਦਾ ਅਨਲੌਕ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ, ਇਸ਼ਤਿਹਾਰ ਜਾਂ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ।",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld#offer-wifiaidlite"
           },

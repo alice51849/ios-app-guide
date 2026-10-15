@@ -6,7 +6,7 @@
   "name": "Catálogo de intenciones de búsqueda del editor Lumi Studio",
   "description": "Un catálogo publicado directamente por el desarrollador que indica para quién está diseñada cada app, la tarea que quiere completar y el acceso directo a App Store.",
   "inLanguage": "es-ES",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1663,6 +1663,72 @@
     {
       "@type": "ListItem",
       "position": 26,
+      "url": "https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-lumiweather",
+        "url": "https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Tiempo: Qué me pongo hoy",
+        "description": "Lumi Tiempo te dice de un vistazo si es buen momento para salir, qué ponerte y si necesitas paraguas o crema solar.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779552704",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779552704"
+          },
+          "name": "Lumi Tiempo: Qué me pongo hoy",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/es-ES/lumiweather.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779552704",
+          "inLanguage": "es-ES",
+          "description": "Lumi Tiempo te dice de un vistazo si es buen momento para salir, qué ponerte y si necesitas paraguas o crema solar.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-lumiweather"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "ES"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
       "url": "https://apps.apple.com/es/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1702,72 +1768,6 @@
           "description": "Los padres que viajan con niños pequeños necesitan actividades que conviertan preparar la maleta, esperar y descubrir un lugar nuevo en parte de la aventura en vez de otra fuente de estrés. Por eso existe Lumi Trip Planet.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-tripplanet"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": true
-        },
-        "price": "0",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "ES"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 27,
-      "url": "https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-lumiweather",
-        "url": "https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "Los padres que planifican actividades al aire libre necesitan más que una temperatura: necesitan una visión rápida y adaptada a la edad sobre si las condiciones son adecuadas para un niño y qué ropa tiene sentido. Por eso existe Lumi Weather.",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6779552704",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6779552704"
-          },
-          "name": "Lumi Weather",
-          "operatingSystem": "iOS",
-          "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/es-ES/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6779552704",
-          "inLanguage": "es-ES",
-          "description": "Los padres que planifican actividades al aire libre necesitan más que una temperatura: necesitan una visión rápida y adaptada a la edad sobre si las condiciones son adecuadas para un niño y qué ropa tiene sentido. Por eso existe Lumi Weather.",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-lumiweather"
           },
           "additionalProperty": [
             {
@@ -3253,7 +3253,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/es/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Una revisión completa es gratuita, en total para todas las herramientas. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo.",
+        "description": "Una revisión completa es gratuita, en total para todas las herramientas. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3283,7 +3283,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "es-ES",
-          "description": "Una revisión completa es gratuita, en total para todas las herramientas. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo.",
+          "description": "Una revisión completa es gratuita, en total para todas las herramientas. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/es-ES.jsonld#offer-wifiaidlite"
           },

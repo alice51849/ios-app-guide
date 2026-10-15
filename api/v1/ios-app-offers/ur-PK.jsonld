@@ -6,7 +6,7 @@
   "name": "Lumi Studio پبلشر سرچ انٹینٹ کیٹلاگ",
   "description": "ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔",
   "inLanguage": "ur-PK",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1734,8 +1734,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/pk/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "والدین کو آؤٹ ڈور وقت پلان کرتے ہوئے صرف درجہ حرارت سے زیادہ چاہیے: انہیں جلدی، عمر کے مطابق یہ دیکھنا ہوتا ہے کہ حالات بچے کے لیے مناسب ہیں یا نہیں اور کون سے کپڑے مناسب ہیں۔ اسی لیے Lumi Weather بنایا گیا۔",
+        "name": "Lumi موسم: آج کی پیش گوئی",
+        "description": "کیا آج باہر نکلنے کا صحیح وقت ہے؟ Lumi موسم ایک نظر میں بتا دیتا ہے: 0 سے 100 تک باہر جانے کا اسکور اور ایک واضح جملہ، تاکہ آپ چند سیکنڈ میں فیصلہ کر سکیں۔",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1750,7 +1750,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi موسم: آج کی پیش گوئی",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/pk/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1761,11 +1761,11 @@
             "target": "https://apps.apple.com/pk/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "ur-PK",
-          "description": "والدین کو آؤٹ ڈور وقت پلان کرتے ہوئے صرف درجہ حرارت سے زیادہ چاہیے: انہیں جلدی، عمر کے مطابق یہ دیکھنا ہوتا ہے کہ حالات بچے کے لیے مناسب ہیں یا نہیں اور کون سے کپڑے مناسب ہیں۔ اسی لیے Lumi Weather بنایا گیا۔",
+          "description": "کیا آج باہر نکلنے کا صحیح وقت ہے؟ Lumi موسم ایک نظر میں بتا دیتا ہے: 0 سے 100 تک باہر جانے کا اسکور اور ایک واضح جملہ، تاکہ آپ چند سیکنڈ میں فیصلہ کر سکیں۔",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiweather"
           },

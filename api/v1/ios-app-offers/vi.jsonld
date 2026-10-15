@@ -6,7 +6,7 @@
   "name": "Danh mục ý định tìm kiếm của nhà phát hành Lumi Studio",
   "description": "Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụng dành cho ai, nhiệm vụ họ muốn hoàn thành và lối truy cập trực tiếp đến App Store.",
   "inLanguage": "vi",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1663,6 +1663,72 @@
     {
       "@type": "ListItem",
       "position": 26,
+      "url": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiweather",
+        "url": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Thời tiết: Dự báo mưa",
+        "description": "Hôm nay có nên ra ngoài không? Lumi Thời tiết trả lời chỉ trong nháy mắt, với chỉ số ra ngoài từ 0 đến 100 và một câu nhận định rõ ràng, để bạn quyết",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779552704",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779552704"
+          },
+          "name": "Lumi Thời tiết: Dự báo mưa",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/vi/lumiweather.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779552704",
+          "inLanguage": "vi",
+          "description": "Hôm nay có nên ra ngoài không? Lumi Thời tiết trả lời chỉ trong nháy mắt, với chỉ số ra ngoài từ 0 đến 100 và một câu nhận định rõ ràng, để bạn quyết",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiweather"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "VND",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "VN"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
       "url": "https://apps.apple.com/vn/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
       "item": {
         "@type": "Offer",
@@ -1702,72 +1768,6 @@
           "description": "Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc chuẩn bị hành lý, chờ đợi và khám phá nơi mới thành một phần của chuyến đi thay vì thêm căng thẳng. Lumi Trip Planet ra đời chính vì thế.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-tripplanet"
-          },
-          "additionalProperty": [
-            {
-              "@type": "PropertyValue",
-              "name": "purchase_model",
-              "value": "free_with_lifetime_unlock"
-            },
-            {
-              "@type": "PropertyValue",
-              "name": "one_time_option",
-              "value": true
-            }
-          ],
-          "isAccessibleForFree": true
-        },
-        "price": "0",
-        "priceCurrency": "VND",
-        "availability": "https://schema.org/InStock",
-        "eligibleRegion": {
-          "@type": "Country",
-          "identifier": "VN"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 27,
-      "url": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-      "item": {
-        "@type": "Offer",
-        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiweather",
-        "url": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "Phụ huynh lên kế hoạch cho trẻ ra ngoài cần nhiều hơn nhiệt độ: cần cái nhìn nhanh, phù hợp độ tuổi về điều kiện có phù hợp cho trẻ và trang phục nào hợp lý. Lumi Weather ra đời chính vì thế.",
-        "seller": {
-          "@type": "Organization",
-          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
-          "name": "Lumi Studio",
-          "url": "https://open.cait518.cc/ios-app-guide/about.html"
-        },
-        "itemOffered": {
-          "@type": "MobileApplication",
-          "@id": "https://apps.apple.com/app/id6779552704",
-          "identifier": {
-            "@type": "PropertyValue",
-            "propertyID": "Apple App Store ID",
-            "value": "6779552704"
-          },
-          "name": "Lumi Weather",
-          "operatingSystem": "iOS",
-          "applicationCategory": "EducationalApplication",
-          "url": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-          "installUrl": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-          "downloadUrl": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-          "potentialAction": {
-            "@type": "InstallAction",
-            "target": "https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
-          },
-          "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/vi/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
-          },
-          "sameAs": "https://apps.apple.com/app/id6779552704",
-          "inLanguage": "vi",
-          "description": "Phụ huynh lên kế hoạch cho trẻ ra ngoài cần nhiều hơn nhiệt độ: cần cái nhìn nhanh, phù hợp độ tuổi về điều kiện có phù hợp cho trẻ và trang phục nào hợp lý. Lumi Weather ra đời chính vì thế.",
-          "offers": {
-            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-lumiweather"
           },
           "additionalProperty": [
             {
@@ -3253,7 +3253,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Tìm ra sự cố thực sự. Miễn phí một lần kiểm tra đầy đủ, tính chung cho tất cả công cụ. Mở khóa trọn đời một lần tùy chọn để dùng không giới hạn—không thuê bao, quảng",
+        "description": "Tìm ra sự cố thực sự. Miễn phí một lần kiểm tra đầy đủ, tính chung cho tất cả công cụ. Mở khóa trọn đời một lần tùy chọn để dùng không giới hạn—không",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3283,7 +3283,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "vi",
-          "description": "Tìm ra sự cố thực sự. Miễn phí một lần kiểm tra đầy đủ, tính chung cho tất cả công cụ. Mở khóa trọn đời một lần tùy chọn để dùng không giới hạn—không thuê bao, quảng",
+          "description": "Tìm ra sự cố thực sự. Miễn phí một lần kiểm tra đầy đủ, tính chung cho tất cả công cụ. Mở khóa trọn đời một lần tùy chọn để dùng không giới hạn—không",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld#offer-wifiaidlite"
           },

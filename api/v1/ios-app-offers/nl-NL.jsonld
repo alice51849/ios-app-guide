@@ -6,7 +6,7 @@
   "name": "Lumi Studio Uitgever Zoekintentiecatalogus",
   "description": "Een catalogus van de eerste partij met informatie over voor wie elke app is ontworpen, welke taak ze proberen te voltooien en het directe App Store-pad.",
   "inLanguage": "nl-NL",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1734,8 +1734,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/nl/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "Ouders die buitentijd plannen hebben meer nodig dan een temperatuur: ze willen snel zien of de omstandigheden geschikt zijn voor een kind en welke kleding handig is. Daarvoor is Lumi Weather gemaakt.",
+        "name": "Lumi Weer: Wat trek ik aan?",
+        "description": "Lumi Weer laat je in één oogopslag zien of het een goed moment is om naar buiten te gaan, wat je aantrekt en of je een paraplu of zonnebrand nodig hebt.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1750,7 +1750,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi Weer: Wat trek ik aan?",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/nl/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1761,11 +1761,11 @@
             "target": "https://apps.apple.com/nl/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/nl-NL/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/nl-NL/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "nl-NL",
-          "description": "Ouders die buitentijd plannen hebben meer nodig dan een temperatuur: ze willen snel zien of de omstandigheden geschikt zijn voor een kind en welke kleding handig is. Daarvoor is Lumi Weather gemaakt.",
+          "description": "Lumi Weer laat je in één oogopslag zien of het een goed moment is om naar buiten te gaan, wat je aantrekt en of je een paraplu of zonnebrand nodig hebt.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld#offer-lumiweather"
           },
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/nl/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Vind het echte probleem. Eén volledige controle is gratis, voor alle tools samen. Optionele eenmalige levenslange ontgrendeling voor onbeperkt gebruik—geen abonnement",
+        "description": "Vind het echte probleem. Eén volledige controle is gratis, voor alle tools samen. Optionele eenmalige levenslange ontgrendeling voor onbeperkt gebruik—geen",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "nl-NL",
-          "description": "Vind het echte probleem. Eén volledige controle is gratis, voor alle tools samen. Optionele eenmalige levenslange ontgrendeling voor onbeperkt gebruik—geen abonnement",
+          "description": "Vind het echte probleem. Eén volledige controle is gratis, voor alle tools samen. Optionele eenmalige levenslange ontgrendeling voor onbeperkt gebruik—geen",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/nl-NL.jsonld#offer-wifiaidlite"
           },

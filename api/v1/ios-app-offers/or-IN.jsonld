@@ -6,7 +6,7 @@
   "name": "Lumi Studio ପ୍ରକାଶକ ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ ସୂଚୀ",
   "description": "ପ୍ରତ୍ୟେକ ଆପ୍ କାହା ପାଇଁ ଡିଜାଇନ୍ କରାଯାଇଛି, ସେମାନେ କେଉଁ କାର୍ଯ୍ୟ ସମ୍ପୂର୍ଣ୍ଣ କରିବାକୁ ଚେଷ୍ଟା କରୁଛନ୍ତି, ଏବଂ ସିଧା App Store ପଥର ପ୍ରଥମ-ପକ୍ଷ ସୂଚୀ।",
   "inLanguage": "or-IN",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1668,8 +1668,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/or-IN.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "ବାହାର ଯୋଜନା କରୁଥିବା ଅଭିଭାବକମାନେ କେବଳ ତାପମାନ ନୁହେଁ, ଏକ ଦ୍ରୁତ, ପିଲା-ଅନୁଯାୟୀ ଦୃଶ୍ୟ ଚାହାନ୍ତି, ଯେଉଁଥିରେ ଅବସ୍ଥା ପିଲା ପାଇଁ ଉପଯୁକ୍ତ କି ନୁହେଁ ଏବଂ କଣ ପୋଷାକ ଯୋଗ୍ୟ। ସେଥିପାଇଁ ହିଁ Lumi Weather ତିଆରି ହେଲା।",
+        "name": "Lumi ପାଗ: ଆଜିର ପୂର୍ବାନୁମାନ",
+        "description": "ଆଜି ବାହାରକୁ ଯିବା ପାଇଁ ଠିକ୍ ସମୟ କି? Lumi ପାଗ ଗୋଟିଏ ନଜରରେ କହିଦିଏ: 0 ରୁ 100 ପର୍ଯ୍ୟନ୍ତ ବାହାରକୁ ଯିବା ସ୍କୋର ଏବଂ ଗୋଟିଏ ସ୍ପଷ୍ଟ ବାକ୍ୟ, ଯାହାଦ୍ୱାରା ଆପଣ କିଛି ସେକେଣ୍ଡରେ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1684,7 +1684,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi ପାଗ: ଆଜିର ପୂର୍ବାନୁମାନ",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1695,11 +1695,11 @@
             "target": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/or-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/or-IN/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "or-IN",
-          "description": "ବାହାର ଯୋଜନା କରୁଥିବା ଅଭିଭାବକମାନେ କେବଳ ତାପମାନ ନୁହେଁ, ଏକ ଦ୍ରୁତ, ପିଲା-ଅନୁଯାୟୀ ଦୃଶ୍ୟ ଚାହାନ୍ତି, ଯେଉଁଥିରେ ଅବସ୍ଥା ପିଲା ପାଇଁ ଉପଯୁକ୍ତ କି ନୁହେଁ ଏବଂ କଣ ପୋଷାକ ଯୋଗ୍ୟ। ସେଥିପାଇଁ ହିଁ Lumi Weather ତିଆରି ହେଲା।",
+          "description": "ଆଜି ବାହାରକୁ ଯିବା ପାଇଁ ଠିକ୍ ସମୟ କି? Lumi ପାଗ ଗୋଟିଏ ନଜରରେ କହିଦିଏ: 0 ରୁ 100 ପର୍ଯ୍ୟନ୍ତ ବାହାରକୁ ଯିବା ସ୍କୋର ଏବଂ ଗୋଟିଏ ସ୍ପଷ୍ଟ ବାକ୍ୟ, ଯାହାଦ୍ୱାରା ଆପଣ କିଛି ସେକେଣ୍ଡରେ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/or-IN.jsonld#offer-lumiweather"
           },

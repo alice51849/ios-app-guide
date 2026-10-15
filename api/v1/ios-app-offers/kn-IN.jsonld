@@ -6,7 +6,7 @@
   "name": "Lumi Studio ಪ್ರಕಾಶಕರ ಹುಡುಕಾಟ ಉದ್ದೇಶ ಕ್ಯಾಟಲಾಗ್",
   "description": "ಪ್ರತಿ ಆ್ಯಪ್ ಯಾರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ, ಅವರು ಪೂರ್ಣಗೊಳಿಸಲು ಯತ್ನಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಮತ್ತು ನೇರ App Store ಮಾರ್ಗದ ಮೊದಲ-ಪಕ್ಷ ಕ್ಯಾಟಲಾಗ್.",
   "inLanguage": "kn-IN",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1668,8 +1668,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "ಪೋಷಕರು ಹೊರಗಿನ ಸಮಯ ಯೋಜನೆ ಮಾಡುವಾಗ ಕೇವಲ ತಾಪಮಾನಕ್ಕಿಂತ ಹೆಚ್ಚು ಬೇಕು: ಮಕ್ಕಳಿಗೆ ಅನುಗುಣವಾದ ಹವಾಮಾನ ಮತ್ತು ಉಡುಪು ತ್ವರಿತವಾಗಿ ನೋಡಲು ಬೇಕು. ಅದಕ್ಕಾಗಿಯೇ Lumi Weather ರೂಪುಗೊಂಡಿತು.",
+        "name": "Lumi ಹವಾಮಾನ: ಇಂದಿನ ಮುನ್ಸೂಚನೆ",
+        "description": "ಇಂದು ಹೊರಗೆ ಹೋಗಲು ಸರಿಯಾದ ಸಮಯವೇ? Lumi ಹವಾಮಾನ ಒಂದೇ ನೋಟದಲ್ಲಿ ಹೇಳುತ್ತದೆ: 0 ರಿಂದ 100 ರವರೆಗಿನ ಹೊರಹೋಗುವ ಸ್ಕೋರ್ ಮತ್ತು ಒಂದು ಸ್ಪಷ್ಟ ವಾಕ್ಯ, ಇದರಿಂದ ಕೆಲವೇ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1684,7 +1684,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi ಹವಾಮಾನ: ಇಂದಿನ ಮುನ್ಸೂಚನೆ",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1695,11 +1695,11 @@
             "target": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/kn-IN/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "kn-IN",
-          "description": "ಪೋಷಕರು ಹೊರಗಿನ ಸಮಯ ಯೋಜನೆ ಮಾಡುವಾಗ ಕೇವಲ ತಾಪಮಾನಕ್ಕಿಂತ ಹೆಚ್ಚು ಬೇಕು: ಮಕ್ಕಳಿಗೆ ಅನುಗುಣವಾದ ಹವಾಮಾನ ಮತ್ತು ಉಡುಪು ತ್ವರಿತವಾಗಿ ನೋಡಲು ಬೇಕು. ಅದಕ್ಕಾಗಿಯೇ Lumi Weather ರೂಪುಗೊಂಡಿತು.",
+          "description": "ಇಂದು ಹೊರಗೆ ಹೋಗಲು ಸರಿಯಾದ ಸಮಯವೇ? Lumi ಹವಾಮಾನ ಒಂದೇ ನೋಟದಲ್ಲಿ ಹೇಳುತ್ತದೆ: 0 ರಿಂದ 100 ರವರೆಗಿನ ಹೊರಹೋಗುವ ಸ್ಕೋರ್ ಮತ್ತು ಒಂದು ಸ್ಪಷ್ಟ ವಾಕ್ಯ, ಇದರಿಂದ ಕೆಲವೇ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-lumiweather"
           },

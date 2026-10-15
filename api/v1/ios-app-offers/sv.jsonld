@@ -6,7 +6,7 @@
   "name": "Lumi Studio Utgivaresökintentskatalog",
   "description": "En förstapartsöversikt över vem varje app är avsedd för, uppgiften de försöker slutföra och den direkta App Store-sökvägen.",
   "inLanguage": "sv",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1734,8 +1734,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/se/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "Föräldrar som planerar utetid behöver mer än temperatur: de behöver en snabb, åldersanpassad översikt om förhållandena passar barnet och vilka kläder som är rimliga. Det är därför Lumi Weather finns.",
+        "name": "Lumi Väder: Prognos & kläder",
+        "description": "Lumi Väder visar på en sekund om det är en bra dag att gå ut: ett utomhusindex från 0 till 100 och ett kort besked som går att läsa i förbifarten.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1750,7 +1750,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi Väder: Prognos & kläder",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/se/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1761,11 +1761,11 @@
             "target": "https://apps.apple.com/se/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/sv/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/sv/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "sv",
-          "description": "Föräldrar som planerar utetid behöver mer än temperatur: de behöver en snabb, åldersanpassad översikt om förhållandena passar barnet och vilka kläder som är rimliga. Det är därför Lumi Weather finns.",
+          "description": "Lumi Väder visar på en sekund om det är en bra dag att gå ut: ett utomhusindex från 0 till 100 och ett kort besked som går att läsa i förbifarten.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sv.jsonld#offer-lumiweather"
           },

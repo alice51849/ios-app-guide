@@ -6,7 +6,7 @@
   "name": "Lumi Studio പ്രസാധകന്റെ തിരയൽ ഉദ്ദേശ്യ കാറ്റലോഗ്",
   "description": "ഓരോ ആപ്പും ആരെ ലക്ഷ്യമിട്ട് രൂപകൽപ്പന ചെയ്തതാണെന്ന്, അവർ പൂർത്തിയാക്കാൻ ശ്രമിക്കുന്ന ജോലി, നേരിട്ട് App Store വഴി എത്താനുള്ള വഴി എന്നിവയുടെ ആദ്യകക്ഷി കാറ്റലോഗ്",
   "inLanguage": "ml-IN",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1668,8 +1668,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "പുറത്തേക്കുള്ള സമയം ആസൂത്രണം ചെയ്യുന്ന മാതാപിതാക്കൾക്ക് താപനില മാത്രം പോരാ: കാലാവസ്ഥ കുട്ടിക്ക് അനുയോജ്യമാണോ, ഏത് വസ്ത്രമാണ് ചേരുന്നത് എന്നിവ പ്രായം കണക്കിലെടുത്ത് വേഗത്തിൽ മനസ്സിലാക്കണം. അതിനുവേണ്ടിയാണ് Lumi Weather ഉണ്ടാക്കിയത്.",
+        "name": "Lumi കാലാവസ്ഥ: മഴയും വെയിലും",
+        "description": "ഇന്ന് പുറത്തിറങ്ങാൻ പറ്റിയ സമയമാണോ? Lumi കാലാവസ്ഥ ഒറ്റനോട്ടത്തിൽ പറഞ്ഞുതരും: 0 മുതൽ 100 വരെയുള്ള പുറത്തിറങ്ങൽ സ്കോറും വ്യക്തമായ ഒരു വാക്യവും, അതിനാൽ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1684,7 +1684,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi കാലാവസ്ഥ: മഴയും വെയിലും",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1695,11 +1695,11 @@
             "target": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ml-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ml-IN/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "ml-IN",
-          "description": "പുറത്തേക്കുള്ള സമയം ആസൂത്രണം ചെയ്യുന്ന മാതാപിതാക്കൾക്ക് താപനില മാത്രം പോരാ: കാലാവസ്ഥ കുട്ടിക്ക് അനുയോജ്യമാണോ, ഏത് വസ്ത്രമാണ് ചേരുന്നത് എന്നിവ പ്രായം കണക്കിലെടുത്ത് വേഗത്തിൽ മനസ്സിലാക്കണം. അതിനുവേണ്ടിയാണ് Lumi Weather ഉണ്ടാക്കിയത്.",
+          "description": "ഇന്ന് പുറത്തിറങ്ങാൻ പറ്റിയ സമയമാണോ? Lumi കാലാവസ്ഥ ഒറ്റനോട്ടത്തിൽ പറഞ്ഞുതരും: 0 മുതൽ 100 വരെയുള്ള പുറത്തിറങ്ങൽ സ്കോറും വ്യക്തമായ ഒരു വാക്യവും, അതിനാൽ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ml-IN.jsonld#offer-lumiweather"
           },

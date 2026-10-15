@@ -6,7 +6,7 @@
   "name": "Katalog namjera pretraživanja izdavača Lumi Studio",
   "description": "Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.",
   "inLanguage": "hr",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1734,8 +1734,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "Roditeljima koji planiraju boravak vani treba više od temperature: treba im brz, dobno prilagođen pregled je li vrijeme pogodno za dijete i koja odjeća ima smisla. Upravo zato Lumi Weather postoji.",
+        "name": "Lumi Vrijeme: Prognoza danas",
+        "description": "Lumi Vrijeme u sekundi pokazuje je li danas pravi dan za izlazak: ocjenu izlaska od 0 do 100 i kratku procjenu koju pročitate u prolazu.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1750,7 +1750,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi Vrijeme: Prognoza danas",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1761,11 +1761,11 @@
             "target": "https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "hr",
-          "description": "Roditeljima koji planiraju boravak vani treba više od temperature: treba im brz, dobno prilagođen pregled je li vrijeme pogodno za dijete i koja odjeća ima smisla. Upravo zato Lumi Weather postoji.",
+          "description": "Lumi Vrijeme u sekundi pokazuje je li danas pravi dan za izlazak: ocjenu izlaska od 0 do 100 i kratku procjenu koju pročitate u prolazu.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiweather"
           },

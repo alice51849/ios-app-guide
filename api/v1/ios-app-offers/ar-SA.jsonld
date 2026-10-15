@@ -6,7 +6,7 @@
   "name": "كتالوج نوايا البحث للناشر Lumi Studio",
   "description": "كتالوج ينشره المطور مباشرةً ويوضح الفئة التي صُمم لها كل تطبيق، والمهمة التي تريد إنجازها، والمسار المباشر إلى App Store.",
   "inLanguage": "ar-SA",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1734,8 +1734,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/sa/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "الآباء الذين يخططون وقت الخارج يحتاجون أكثر من درجة الحرارة: يحتاجون نظرة سريعة حسب العمر لمعرفة إذا كانت الظروف مناسبة للطفل وما الملابس المناسبة. لهذا وُجد Lumi Weather.",
+        "name": "Lumi الطقس: توقعات اليوم",
+        "description": "هل الوقت مناسب للخروج اليوم؟ يجيبك Lumi الطقس بنظرة واحدة: مؤشر خروج من 0 إلى 100 وجملة واضحة تختصر يومك، لتتخذ قرارك في ثوانٍ.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1750,7 +1750,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi الطقس: توقعات اليوم",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/sa/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1761,11 +1761,11 @@
             "target": "https://apps.apple.com/sa/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ar-SA/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "ar-SA",
-          "description": "الآباء الذين يخططون وقت الخارج يحتاجون أكثر من درجة الحرارة: يحتاجون نظرة سريعة حسب العمر لمعرفة إذا كانت الظروف مناسبة للطفل وما الملابس المناسبة. لهذا وُجد Lumi Weather.",
+          "description": "هل الوقت مناسب للخروج اليوم؟ يجيبك Lumi الطقس بنظرة واحدة: مؤشر خروج من 0 إلى 100 وجملة واضحة تختصر يومك، لتتخذ قرارك في ثوانٍ.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-lumiweather"
           },
@@ -2263,7 +2263,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/sa/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: مسح وإنشاء",
-        "description": "يضع QR Code Halo الخطوات بترتيب واعٍ: افحص المحتوى المفكوك، وقيّم النتائج الظاهرة، ثم اختر الإجراء بنفسك. مجرد التعرف على الرمز لا يفتح أي وجهة تلقائيًا.",
+        "description": "يضع QR Code Halo الخطوات بترتيب واعٍ: افحص المحتوى المفكوك، وقيّم النتائج الظاهرة، ثم اختر الإجراء بنفسك. افتراضيًا، يُنفَّذ الإجراء فور المسح. لفحص الرمز أولًا، أوقف «تنفيذ الإجراء بعد المسح» من الإعدادات، ثم اضغط «فحص الأمان» في السجل.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2293,7 +2293,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "ar-SA",
-          "description": "يضع QR Code Halo الخطوات بترتيب واعٍ: افحص المحتوى المفكوك، وقيّم النتائج الظاهرة، ثم اختر الإجراء بنفسك. مجرد التعرف على الرمز لا يفتح أي وجهة تلقائيًا.",
+          "description": "يضع QR Code Halo الخطوات بترتيب واعٍ: افحص المحتوى المفكوك، وقيّم النتائج الظاهرة، ثم اختر الإجراء بنفسك. افتراضيًا، يُنفَّذ الإجراء فور المسح. لفحص الرمز أولًا، أوقف «تنفيذ الإجراء بعد المسح» من الإعدادات، ثم اضغط «فحص الأمان» في السجل.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-qrcodehalo"
           },

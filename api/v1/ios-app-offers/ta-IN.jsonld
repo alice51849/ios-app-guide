@@ -6,7 +6,7 @@
   "name": "Lumi Studio வெளியீட்டாளர் தேடல் நோக்கக் குறியீட்டு அட்டவணை",
   "description": "ஒவ்வொரு செயலியும் யாருக்காக வடிவமைக்கப்பட்டுள்ளதோ, அவர்கள் நிறைவேற்ற முயற்சிக்கும் பணியோ, நேரடி App Store பாதையோ ஆகியவற்றின் முதல்-பார்ட்டி அட்டவணை.",
   "inLanguage": "ta-IN",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1668,8 +1668,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "வெளியில் செல்ல திட்டமிடும் பெற்றோர் வெப்பம் மட்டும் அல்ல; குழந்தைக்கு பொருந்தும் நிலை மற்றும் எந்த உடை பொருந்தும் என்பதை வயதுக்கு ஏற்ப விரைவாக பார்க்க வேண்டும். அதற்காகவே Lumi Weather உருவானது.",
+        "name": "Lumi வானிலை: முன்னறிவிப்பு",
+        "description": "இன்று வெளியே செல்ல ஏற்ற நேரமா? Lumi வானிலை ஒரே பார்வையில் சொல்லிவிடும்: 0 முதல் 100 வரையிலான வெளியே செல்லும் ஸ்கோரும் தெளிவான ஒரு வாக்கியமும், அதனால் சில",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1684,7 +1684,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi வானிலை: முன்னறிவிப்பு",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1695,11 +1695,11 @@
             "target": "https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ta-IN/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "ta-IN",
-          "description": "வெளியில் செல்ல திட்டமிடும் பெற்றோர் வெப்பம் மட்டும் அல்ல; குழந்தைக்கு பொருந்தும் நிலை மற்றும் எந்த உடை பொருந்தும் என்பதை வயதுக்கு ஏற்ப விரைவாக பார்க்க வேண்டும். அதற்காகவே Lumi Weather உருவானது.",
+          "description": "இன்று வெளியே செல்ல ஏற்ற நேரமா? Lumi வானிலை ஒரே பார்வையில் சொல்லிவிடும்: 0 முதல் 100 வரையிலான வெளியே செல்லும் ஸ்கோரும் தெளிவான ஒரு வாக்கியமும், அதனால் சில",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ta-IN.jsonld#offer-lumiweather"
           },

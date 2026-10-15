@@ -6,7 +6,7 @@
   "name": "Lumi Studio – Katalog der Suchintentionen des Herausgebers",
   "description": "Ein direkt vom Entwickler veröffentlichter Katalog, der zeigt, für wen jede App entwickelt wurde, welche Aufgabe die jeweilige Person erledigen möchte und wie sie direkt zum App Store gelangt.",
   "inLanguage": "de-DE",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1668,8 +1668,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/de/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "Eltern, die Outdoor-Zeit planen, brauchen mehr als eine Temperatur: Sie brauchen einen schnellen, altersgerechten Überblick, ob die Bedingungen für ein Kind passen und welche Kleidung sinnvoll ist. Dafür gibt es Lumi Weather.",
+        "name": "Lumi Wetter: Was ziehe ich an?",
+        "description": "Lumi Wetter zeigt dir auf einen Blick, ob jetzt ein guter Moment zum Rausgehen ist, was du anziehen solltest und ob du einen Schirm oder Sonnencreme",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1684,7 +1684,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi Wetter: Was ziehe ich an?",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/de/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1695,11 +1695,11 @@
             "target": "https://apps.apple.com/de/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/de-DE/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "de-DE",
-          "description": "Eltern, die Outdoor-Zeit planen, brauchen mehr als eine Temperatur: Sie brauchen einen schnellen, altersgerechten Überblick, ob die Bedingungen für ein Kind passen und welche Kleidung sinnvoll ist. Dafür gibt es Lumi Weather.",
+          "description": "Lumi Wetter zeigt dir auf einen Blick, ob jetzt ein guter Moment zum Rausgehen ist, was du anziehen solltest und ob du einen Schirm oder Sonnencreme",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-lumiweather"
           },
@@ -3253,7 +3253,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/de/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Das echte Problem. Eine vollständige Prüfung ist kostenlos, insgesamt für alle Tools. Optionaler Einmalkauf für dauerhaft unbegrenzte Nutzung—kein Abo, keine",
+        "description": "Das echte Problem. Eine vollständige Prüfung ist kostenlos, insgesamt für alle Tools. Optionaler Einmalkauf für dauerhaft unbegrenzte Nutzung—kein Abo",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3283,7 +3283,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "de-DE",
-          "description": "Das echte Problem. Eine vollständige Prüfung ist kostenlos, insgesamt für alle Tools. Optionaler Einmalkauf für dauerhaft unbegrenzte Nutzung—kein Abo, keine",
+          "description": "Das echte Problem. Eine vollständige Prüfung ist kostenlos, insgesamt für alle Tools. Optionaler Einmalkauf für dauerhaft unbegrenzte Nutzung—kein Abo",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-wifiaidlite"
           },

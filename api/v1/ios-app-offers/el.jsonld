@@ -6,7 +6,7 @@
   "name": "Κατάλογος Προθέσεων Αναζήτησης Εκδότη Lumi Studio",
   "description": "Ένας πρωτογενής κατάλογος που δείχνει για ποιον προορίζεται κάθε εφαρμογή, το έργο που προσπαθεί να ολοκληρώσει και την άμεση διαδρομή στο App Store.",
   "inLanguage": "el",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1734,8 +1734,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/gr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "Οι γονείς που σχεδιάζουν εξωτερικές δραστηριότητες χρειάζονται κάτι περισσότερο από θερμοκρασία: χρειάζονται γρήγορη, προσαρμοσμένη στην ηλικία εικόνα αν οι συνθήκες ταιριάζουν σε παιδί και τι ρούχα χρειάζονται. Γι' αυτό υπάρχει το Lumi Weather.",
+        "name": "Lumi Καιρός: Πρόγνωση & ρούχα",
+        "description": "Το Lumi Καιρός σάς δείχνει σε ένα δευτερόλεπτο αν σήμερα είναι καλή μέρα για να βγείτε έξω: έναν βαθμό εξόδου από 0 έως 100 και μια σύντομη εκτίμηση που",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1750,7 +1750,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi Καιρός: Πρόγνωση & ρούχα",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/gr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1761,11 +1761,11 @@
             "target": "https://apps.apple.com/gr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/el/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/el/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "el",
-          "description": "Οι γονείς που σχεδιάζουν εξωτερικές δραστηριότητες χρειάζονται κάτι περισσότερο από θερμοκρασία: χρειάζονται γρήγορη, προσαρμοσμένη στην ηλικία εικόνα αν οι συνθήκες ταιριάζουν σε παιδί και τι ρούχα χρειάζονται. Γι' αυτό υπάρχει το Lumi Weather.",
+          "description": "Το Lumi Καιρός σάς δείχνει σε ένα δευτερόλεπτο αν σήμερα είναι καλή μέρα για να βγείτε έξω: έναν βαθμό εξόδου από 0 έως 100 και μια σύντομη εκτίμηση που",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/el.jsonld#offer-lumiweather"
           },

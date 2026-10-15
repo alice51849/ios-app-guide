@@ -6,7 +6,7 @@
   "name": "แคตตาล็อกเจตนาการค้นหาจากผู้พัฒนา Lumi Studio",
   "description": "แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร",
   "inLanguage": "th",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1734,8 +1734,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/th/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "ผู้ปกครองที่วางแผนกิจกรรมกลางแจ้งต้องการมากกว่าอุณหภูมิ: ต้องการดูสภาพอากาศแบบรวดเร็วและเหมาะกับเด็ก พร้อมคำแนะนำเสื้อผ้า Lumi Weather ถึงเกิดขึ้นมาด้วยเหตุนี้",
+        "name": "Lumi อากาศ: พยากรณ์วันนี้",
+        "description": "วันนี้เหมาะจะออกไปข้างนอกไหม Lumi อากาศบอกได้ในแวบเดียว ด้วยดัชนีออกนอกบ้านตั้งแต่ 0 ถึง 100 พร้อมประโยคสรุปที่เข้าใจง่าย ช่วยให้ตัดสินใจได้ในไม่กี่วินาที",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1750,7 +1750,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi อากาศ: พยากรณ์วันนี้",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/th/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1761,11 +1761,11 @@
             "target": "https://apps.apple.com/th/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/th/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/th/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "th",
-          "description": "ผู้ปกครองที่วางแผนกิจกรรมกลางแจ้งต้องการมากกว่าอุณหภูมิ: ต้องการดูสภาพอากาศแบบรวดเร็วและเหมาะกับเด็ก พร้อมคำแนะนำเสื้อผ้า Lumi Weather ถึงเกิดขึ้นมาด้วยเหตุนี้",
+          "description": "วันนี้เหมาะจะออกไปข้างนอกไหม Lumi อากาศบอกได้ในแวบเดียว ด้วยดัชนีออกนอกบ้านตั้งแต่ 0 ถึง 100 พร้อมประโยคสรุปที่เข้าใจง่าย ช่วยให้ตัดสินใจได้ในไม่กี่วินาที",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-lumiweather"
           },

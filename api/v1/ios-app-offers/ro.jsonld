@@ -6,7 +6,7 @@
   "name": "Catalogul de intenții de căutare Lumi Studio al editorului",
   "description": "O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.",
   "inLanguage": "ro",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1734,8 +1734,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/ro/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "Părinții care planifică timpul afară au nevoie de mai mult decât o temperatură: au nevoie de o privire rapidă, adaptată vârstei, dacă condițiile sunt potrivite pentru copil și ce îmbrăcăminte are sens. De aceea există Lumi Weather.",
+        "name": "Lumi Vremea: Prognoză și haine",
+        "description": "Lumi Vremea îți arată într-o secundă dacă azi e o zi bună de ieșit din casă: un scor de ieșire de la 0 la 100 și o scurtă concluzie pe care o citești din",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1750,7 +1750,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi Vremea: Prognoză și haine",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/ro/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1761,11 +1761,11 @@
             "target": "https://apps.apple.com/ro/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ro/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ro/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "ro",
-          "description": "Părinții care planifică timpul afară au nevoie de mai mult decât o temperatură: au nevoie de o privire rapidă, adaptată vârstei, dacă condițiile sunt potrivite pentru copil și ce îmbrăcăminte are sens. De aceea există Lumi Weather.",
+          "description": "Lumi Vremea îți arată într-o secundă dacă azi e o zi bună de ieșit din casă: un scor de ieșire de la 0 la 100 și o scurtă concluzie pe care o citești din",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-lumiweather"
           },

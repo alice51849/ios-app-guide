@@ -6,7 +6,7 @@
   "name": "Каталог намірів пошуку видавця Lumi Studio",
   "description": "Каталог першої сторони, що описує, для кого призначений кожен додаток, яке завдання він допомагає виконати, і прямий шлях до App Store.",
   "inLanguage": "uk",
-  "dateModified": "2026-10-11",
+  "dateModified": "2026-10-15",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1734,8 +1734,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/ua/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi Weather",
-        "description": "Батькам, які планують час на вулиці, потрібно більше, ніж температура: потрібен швидкий, віковий огляд, чи підходять умови для дитини і який одяг доречний. Заради цього Lumi Weather і зроблено.",
+        "name": "Lumi Погода: прогноз і одяг",
+        "description": "Lumi Погода за секунду показує, чи варто сьогодні виходити з дому: оцінку прогулянки від 0 до 100 і короткий висновок, який можна прочитати на ходу.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1750,7 +1750,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi Weather",
+          "name": "Lumi Погода: прогноз і одяг",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/ua/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1761,11 +1761,11 @@
             "target": "https://apps.apple.com/ua/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/best-weather-app-to-help-parents-plan-outdoor-time-with-kids.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/lumiweather.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6779552704",
           "inLanguage": "uk",
-          "description": "Батькам, які планують час на вулиці, потрібно більше, ніж температура: потрібен швидкий, віковий огляд, чи підходять умови для дитини і який одяг доречний. Заради цього Lumi Weather і зроблено.",
+          "description": "Lumi Погода за секунду показує, чи варто сьогодні виходити з дому: оцінку прогулянки від 0 до 100 і короткий висновок, який можна прочитати на ходу.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-lumiweather"
           },

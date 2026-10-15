@@ -41,6 +41,7 @@
 ## 已放棄或已移除，不要再做
 - Lensafe（第 58 款）：業主已放棄，停止所有相關工作。
 - Arquivo 存檔工作：已移除，不要再加回來。
+- 不改 threads-autopilot 的市場閘門（market_availability.py／.mjs）讓 UsageNow 上架已審文字通路：業主 2026-10-15 不同意，不要再提。
 
 ## Session 命名
 - 開始工作後第一件事：用 set_session_title 工具（claude-code-remote）把這個 session 改名。

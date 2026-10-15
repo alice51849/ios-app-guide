@@ -293,11 +293,19 @@ class PublisherDecisionTests(unittest.TestCase):
         return existing
 
     def test_due_update_fails_before_mutation_without_capability(self):
+        # Even while unlocked the token may report viewerCanUpdate=false; the
+        # server decides on the single update mutation, and a denial re-locks.
         existing = self._due_existing()
         still_denied = copy.deepcopy(existing)
         still_denied["locked"] = False
         now = dt.datetime(2026, 7, 29, tzinfo=dt.timezone.utc)
         calls: list[str] = []
+
+        def denied_update(*_args, **kwargs):
+            calls.append("update")
+            self.assertFalse(kwargs["require_viewer_update"])
+            raise digest.PublisherError("GraphQL returned errors: cannot update")
+
         with (
             mock.patch.object(
                 digest,
@@ -312,7 +320,9 @@ class PublisherDecisionTests(unittest.TestCase):
                 digest, "_lock_discussion",
                 side_effect=lambda *_: calls.append("lock"),
             ),
-            mock.patch.object(digest, "_update_discussion") as update,
+            mock.patch.object(
+                digest, "_update_discussion", side_effect=denied_update,
+            ),
         ):
             with self.assertRaisesRegex(digest.PublisherError, "cannot update"):
                 digest.publish(
@@ -321,8 +331,22 @@ class PublisherDecisionTests(unittest.TestCase):
                     bootstrap=False,
                     now=now,
                 )
-        update.assert_not_called()
-        self.assertEqual(["unlock", "lock"], calls)
+        self.assertEqual(["unlock", "update", "lock"], calls)
+
+    def test_lock_toggles_do_not_reset_the_update_interval(self):
+        existing = self._due_existing()
+        existing["createdAt"] = "2026-07-29T04:04:03Z"
+        existing["lastEditedAt"] = None
+        existing["updatedAt"] = "2026-10-15T19:35:17Z"
+        self.assertEqual(
+            dt.datetime(2026, 7, 29, 4, 4, 3, tzinfo=dt.timezone.utc),
+            digest._content_changed_at(existing),
+        )
+        existing["lastEditedAt"] = "2026-09-01T00:00:00Z"
+        self.assertEqual(
+            dt.datetime(2026, 9, 1, tzinfo=dt.timezone.utc),
+            digest._content_changed_at(existing),
+        )
 
     def test_locked_post_without_capability_is_updated_via_temporary_unlock(self):
         existing = self._due_existing()

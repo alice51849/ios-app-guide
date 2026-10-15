@@ -91,6 +91,8 @@ query ManagedDiscussion($owner: String!, $name: String!) {
         body
         url
         locked
+        createdAt
+        lastEditedAt
         updatedAt
         author { login }
         viewerCanUpdate
@@ -762,6 +764,20 @@ def _validate_existing(
     return parse_metadata(discussion.get("body"))
 
 
+def _content_changed_at(discussion: Mapping[str, object]) -> dt.datetime:
+    """When the managed body last changed.
+
+    Lock/unlock bumps updatedAt, so prefer lastEditedAt (body edits) and then
+    createdAt; updatedAt is only a fallback for payloads without either.
+    """
+
+    for key in ("lastEditedAt", "createdAt", "updatedAt"):
+        value = discussion.get(key)
+        if value is not None:
+            return _parse_updated_at(value)
+    raise PublisherError("Managed Discussion updatedAt was missing")
+
+
 def _parse_updated_at(value: object) -> dt.datetime:
     if not isinstance(value, str):
         raise PublisherError("Managed Discussion updatedAt was missing")
@@ -848,6 +864,7 @@ def _update_discussion(
     category_id: str,
     *,
     require_locked: bool = True,
+    require_viewer_update: bool = True,
     mutation_reserve: int = 0,
 ) -> None:
     data = client.execute(
@@ -864,6 +881,7 @@ def _update_discussion(
         discussion,
         category_id=category_id,
         require_locked=require_locked,
+        require_viewer_update=require_viewer_update,
     )
 
 
@@ -875,10 +893,11 @@ def _update_via_temporary_unlock(
 ) -> None:
     """Update a locked managed Discussion the workflow token cannot edit while locked.
 
-    GitHub reports viewerCanUpdate=false for a locked Discussion to the Actions
-    token even when that token authored it. The token can still lock/unlock it
-    (the same permission bootstrap uses), so unlock, re-verify that the token
-    may now update the unchanged post, update it, and always re-lock.
+    GitHub reports viewerCanUpdate=false to the Actions token for the managed
+    Discussion even though that token authored it. The token can still lock and
+    unlock it (the same permission bootstrap uses), so unlock, re-verify the
+    unchanged post, let the server authorize the single update mutation, and
+    always re-lock. A server-side denial changes nothing and is re-locked.
     """
 
     discussion_id = _valid_node_id(discussion.get("id"), label="Discussion")
@@ -895,6 +914,7 @@ def _update_via_temporary_unlock(
             current,
             category_id=unlocked_state.category_id,
             require_locked=False,
+            require_viewer_update=False,
         )
         _update_discussion(
             client,
@@ -902,6 +922,7 @@ def _update_via_temporary_unlock(
             rendered,
             unlocked_state.category_id,
             require_locked=False,
+            require_viewer_update=False,
             mutation_reserve=1,
         )
     except PublisherError as error:
@@ -1054,7 +1075,7 @@ def publish(
             reason="substantive digest is unchanged",
         )
 
-    updated_at = _parse_updated_at(discussion.get("updatedAt"))
+    updated_at = _content_changed_at(discussion)
     elapsed = now - updated_at
     if elapsed < dt.timedelta(0):
         raise PublisherError("Managed Discussion updatedAt is in the future")

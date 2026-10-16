@@ -1,0 +1,68 @@
+name: Telegram link fix
+
+# Owner rule (2026-10-17): every promo post carries the app's direct download link. Two early posts of the public
+# channel (the channel's own test message and the free printable zhuyin-sheet tool) only link to a web page.
+# A bot can edit its own messages: telegram_link_fix.py adds the inline App Store (and Google Play) buttons
+# with editMessageReplyMarkup, the text is not touched, only the message ids listed in the script are edited,
+# each once, and the answer is read back. Manual only; nothing here runs on a schedule.
+#   mode=audit  reads the public preview page and reports which of them still lack the link, edits nothing.
+#   mode=apply  adds the buttons.
+# Report: .github/growth/telegram-link-fix-report.json; receipts: .github/growth/telegram-link-fix.json.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "audit (report only) or apply (add the buttons)"
+        type: choice
+        options:
+          - audit
+          - apply
+        default: "audit"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: telegram-link-fix
+  cancel-in-progress: false
+
+jobs:
+  fix:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write # the report and the receipts are committed
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Test
+        run: python3 .github/scripts/test_telegram_link_fix.py -q
+      - name: Audit / add the buttons
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MODE: ${{ inputs.mode }}
+        run: |
+          case "$MODE" in audit|apply) ;; *) echo "::error::unknown mode"; exit 2;; esac
+          python3 .github/scripts/telegram_link_fix.py "$MODE"
+      - name: Save the report and the receipts
+        if: always()
+        run: |
+          G=.github/growth
+          FILES="$G/telegram-link-fix-report.json $G/telegram-link-fix.json"
+          if [ -z "$(git status --porcelain -- $FILES)" ]; then echo "nothing new"; exit 0; fi
+          mkdir -p "$RUNNER_TEMP/save"
+          for f in $FILES; do [ -f "$f" ] && cp -f "$f" "$RUNNER_TEMP/save/$(basename "$f")"; done
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            for f in $FILES; do [ -f "$RUNNER_TEMP/save/$(basename "$f")" ] && cp -f "$RUNNER_TEMP/save/$(basename "$f")" "$f"; done
+            for f in $FILES; do [ -f "$f" ] && git add "$f"; done
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "Telegram 補下載連結紀錄 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not save the telegram link fix reports"; exit 1

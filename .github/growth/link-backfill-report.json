@@ -1,14 +1,13 @@
 {
- "generated": "2026-10-16T22:01:08Z",
+ "generated": "2026-10-16T22:08:09Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 3,
   "ok_caption": 39,
   "unknown_app": 46,
   "ok_store_only": 679,
-  "write_failed": 1,
-  "missing": 11,
-  "backfilled": 4,
+  "backfilled": 6,
+  "missing": 10,
   "ok_backfilled_earlier": 2
  },
  "rows": [
@@ -8922,13 +8921,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcSeAmhk_8V",
    "date": "2026-08-21",
    "app": "lumimath",
-   "status": "write_failed:24",
+   "status": "backfilled",
    "text": "\"Five more minutes\" — about a learning game, for once. A cozy math adventure for ages 3–6: counting, number sense, shapes, and logic that fe",
    "why": "brand",
    "ios_id": "6778269699",
    "locale": "en",
    "own_replies": [],
-   "error": "HTTP 400 code 24: The requested resource does not exist"
+   "comment_id": "18389128003228294",
+   "at": "2026-10-16T22:05:12Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",
@@ -8986,12 +8988,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcQ3xdAE9gz",
    "date": "2026-08-20",
    "app": "aim990",
-   "status": "missing",
+   "status": "backfilled",
    "text": "3 000 mots en tête, et toujours bloqué dans les dix premières secondes. Améliorez votre score TOEIC avec Aim990 ! Un coach d'étude de 30 jou",
    "why": "brand",
    "ios_id": "6784974530",
    "locale": "vi",
-   "own_replies": []
+   "own_replies": [],
+   "comment_id": "18126226861812910",
+   "at": "2026-10-16T22:05:12Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

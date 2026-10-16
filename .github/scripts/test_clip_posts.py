@@ -247,6 +247,39 @@ class ClipPostsTest(unittest.TestCase):
         self.assertEqual(calls[2]["reply_to_id"], "id2")
         self.assertIn("ct=h7_a_th", calls[2]["text"])
 
+    def test_play_link_uses_the_same_per_platform_ct_as_the_app_store_link(self):
+        # Mochi is Android-live in the snapshot: each platform's Play referrer is that platform's App Store ct.
+        mochi = dict(clip("mochi", "ja"), store_url="https://apps.apple.com/jp/app/id6785004775?pt=118326163"
+                     "&ct=h7_mochi_ja&mt=8")
+        for channel in ("th", "tg", "yt", "bs", "fb", "tb"):
+            with self.subTest(channel=channel):
+                self.assertIn(f"ct=h7_mochi_{channel}", C.with_campaign(mochi["store_url"], channel))
+                self.assertEqual(
+                    "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
+                    f"&referrer=utm_source%3Dh7_mochi_{channel}%26utm_campaign%3Dmochi",
+                    C.play_url(mochi, channel))
+        self.assertIsNone(C.play_url(clip("a", "en"), "th"))  # id1 is not on Android
+
+    def test_threads_reply_lists_app_store_then_tracked_play(self):
+        calls = []
+        mochi = dict(clip("mochi", "en"), store_url="https://apps.apple.com/us/app/id6785004775?pt=118326163"
+                     "&ct=h7_mochi_en&mt=8")
+
+        def fake_post(url, fields, timeout=60):
+            calls.append(fields)
+            return {"id": f"id{len(calls)}"}
+
+        with mock.patch.dict(os.environ, {"THREADS_TOKEN": "t", "THREADS_USER_ID": "u"}), \
+                mock.patch.object(C, "_post", side_effect=fake_post), \
+                mock.patch.object(C, "_get", side_effect=[{"id": "u"}, {"status": "FINISHED"}, {"permalink": "p"}]), \
+                mock.patch.object(C.time, "sleep"):
+            C.post_threads(mochi)
+        self.assertNotIn("https://", calls[0]["text"])  # links never in the post body
+        reply = calls[2]["text"].splitlines()
+        self.assertIn("ct=h7_mochi_th", reply[0])
+        self.assertEqual("Google Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
+                         "&referrer=utm_source%3Dh7_mochi_th%26utm_campaign%3Dmochi", reply[1])
+
 
 def real(locale="en", **kw):
     c = dict(clip("u", locale), name="UsageNow: AI Usage Tracker", search="UsageNow", keyline="",

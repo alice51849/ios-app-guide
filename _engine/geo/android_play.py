@@ -22,8 +22,14 @@ Anything else stays in ``unmapped`` and never gets a link.  Retired apps
 Consumers
 ---------
 * ``inject_tree``      adds a Google Play link next to the first App Store
-  CTA of each mapped app on guide pages and per-app hub pages (idempotent,
-  marker ``data-android-play``; stale markers are removed).
+  CTA of each mapped app on every public HTML page of the site (answer,
+  intent, comparison, tool, localized, guide and hub pages; idempotent,
+  marker ``data-android-play``; stale markers are removed, so an app that
+  leaves the snapshot loses its links on the next pass).  The link carries
+  the install referrer ``utm_source=<ct of that App Store CTA>&utm_campaign=
+  <app key>`` (``tracked_play_url``, the same shape as 00_GrowthEngine
+  ``agent/ct_codes.play_referrer_url``), so Play installs land on the same
+  channel row as App Store downloads.
 * ``llms_line``        one llms.txt sub-bullet per mapped app.
 
 Copy rule: the Android sentence only names Google Play and quotes the app's
@@ -42,6 +48,7 @@ from pathlib import Path
 import re
 import sys
 import unicodedata
+import urllib.parse
 
 
 HERE = Path(__file__).resolve().parent
@@ -58,10 +65,15 @@ MAX_SHORT_DESCRIPTION = 80
 PACKAGE_RE = re.compile(r"^[A-Za-z][A-Za-z0-9_]*(?:\.[A-Za-z][A-Za-z0-9_]*)+$")
 APP_ID_RE = re.compile(r"^\d{9,12}$")
 MARKER = "data-android-play"
-INJECT_SCOPES = (
-    re.compile(r"^guides/[^/]+\.html$"),
-    re.compile(r"^apps/[^/]+/index\.html$"),
-)
+# Every published HTML page; the engine, CI data and dependencies are not site pages.
+EXCLUDED_PARTS = frozenset({".git", ".github", "_engine", "node_modules"})
+CT_RE = re.compile(r"^[A-Za-z0-9_-]{1,40}$")
+APP_KEY_RE = re.compile(r"^[a-z0-9][a-z0-9_]{0,39}$")
+# Generators that pin each output page by digest (hero_tasks); their pages are
+# theirs byte for byte, so a Play link there would fail their --check gate.
+DIGEST_PINNED_MANIFESTS = ("data/hero-tasks/manifest.json",)
+# Pages whose App Store CTA has no ct of its own (channel geo_pages in agent/ct_codes.py).
+DEFAULT_CT = "iag_play"
 IOS_ONLY_RE = re.compile(
     r"widget|apple\s*watch|watch\s*os|live\s*activit|dynamic\s*island|icloud|"
     r"\bsiri\b|iphone|ipad|\bios\b|app\s*store|airdrop|face\s*id|touch\s*id|"
@@ -87,9 +99,31 @@ _MANAGED_BLOCK_RE = re.compile(
 _TAG_RE = re.compile(r"<[^>]+>")
 
 
-def _managed_spans(source: str) -> list[tuple[int, int]]:
-    """Regions owned by other generators (``<!-- x:start -->`` .. ``:end``)."""
-    return [match.span() for match in _MANAGED_BLOCK_RE.finditer(source)]
+# Markers that only wrap a page's own content (aeo_answers microformats); what is
+# inside them is ordinary page copy, not a block another generator rewrites.
+WRAPPER_BLOCKS = frozenset({"answer-microformat", "answer-content"})
+# Blocks that float over the page (fixed bottom bar); a CTA there is the last resort.
+FLOATING_BLOCKS = frozenset({"mobile-store-cta"})
+_BLOCK_START_RE = re.compile(r"<!--\s*(?P<name>[\w.-]+):start\s*-->")
+
+
+def _managed_spans(source: str) -> list[tuple[int, int, str]]:
+    """Regions owned by other generators (``<!-- x:start -->`` .. ``:end``), nested ones included."""
+    spans = []
+    for start in _BLOCK_START_RE.finditer(source):
+        name = start.group("name")
+        if name in WRAPPER_BLOCKS:
+            continue
+        end = re.compile(r"<!--\s*" + re.escape(name) + r":end\s*-->").search(source, start.end())
+        if end:
+            spans.append((start.start(), end.end(), name))
+    return spans
+
+
+def _owning_block(spans: list[tuple[int, int, str]], position: int) -> tuple[int, int, str] | None:
+    """The outermost generator-owned block around ``position``."""
+    containing = [span for span in spans if span[0] <= position < span[1]]
+    return max(containing, key=lambda span: span[1] - span[0]) if containing else None
 
 
 def _is_text_cta(anchor: str) -> bool:
@@ -114,6 +148,24 @@ def play_url(package: str) -> str:
     if not isinstance(package, str) or not PACKAGE_RE.match(package):
         raise SnapshotError(f"invalid Android package: {package!r}")
     return PLAY_PREFIX + package
+
+
+def tracked_play_url(play: str, ct: str, app: str) -> str:
+    """Play link with the install referrer utm_source=<ct>&utm_campaign=<app key>."""
+    if not str(play or "").startswith(PLAY_PREFIX) or not PACKAGE_RE.match(play[len(PLAY_PREFIX):]):
+        raise SnapshotError(f"not a bare Google Play details URL: {play!r}")
+    if not CT_RE.match(ct or "") or not APP_KEY_RE.match(app or ""):
+        raise SnapshotError(f"invalid Play referrer ct/app: {ct!r} {app!r}")
+    referrer = urllib.parse.quote(f"utm_source={ct}&utm_campaign={app}", safe="")
+    return f"{play}&referrer={referrer}"
+
+
+def _anchor_ct(anchor: str) -> str:
+    """The ct of an App Store anchor's href, or DEFAULT_CT."""
+    href = re.search(r'\bhref="([^"]*)"', anchor)
+    query = urllib.parse.urlsplit(html.unescape(href.group(1))).query if href else ""
+    ct = (urllib.parse.parse_qs(query).get("ct") or [""])[0]
+    return ct if CT_RE.match(ct) else DEFAULT_CT
 
 
 def ios_only_claim(text: str) -> bool:
@@ -361,17 +413,34 @@ def _cached_apps() -> dict[str, dict]:
     return _CACHE
 
 
+_P_OPEN_RE = re.compile(r"<p[\s>]", re.IGNORECASE)
+_P_CLOSE_RE = re.compile(r"</p>", re.IGNORECASE)
+
+
+def _last(pattern: re.Pattern, source: str, end: int) -> int:
+    found = -1
+    for match in pattern.finditer(source, 0, end):
+        found = match.start()
+    return found
+
+
 def _inside_paragraph(source: str, start: int) -> bool:
-    head = source[:start].lower()
-    opened = max(head.rfind("<p>"), head.rfind("<p "))
-    return opened > head.rfind("</p>")
+    # Offsets stay in ``source`` coordinates: str.lower() changes the length of
+    # some characters (Turkish "İ"), which would shift every later position.
+    return _last(_P_OPEN_RE, source, start) > _last(_P_CLOSE_RE, source, start)
+
+
+def _paragraph_close(source: str, start: int) -> int:
+    match = _P_CLOSE_RE.search(source, start)
+    return match.start() if match else -1
 
 
 def inject_html(source: str, apps: dict[str, dict]) -> str:
     """Add one Google Play link after the first App Store CTA per mapped app.
 
-    Only visible-text CTAs outside blocks managed by other generators qualify,
-    so image previews and ``<!-- x:start -->`` sections stay byte-identical.
+    Only visible-text CTAs count, and blocks managed by other generators
+    (``<!-- x:start -->`` .. ``:end``) stay byte-identical: a CTA that only
+    exists inside such a block gets its Play paragraph right after the block.
     """
     text = _INJECTED_RE.sub("", source)
     by_id = {str(entry["ios_app_id"]): (key, entry) for key, entry in apps.items()}
@@ -380,22 +449,33 @@ def inject_html(source: str, apps: dict[str, dict]) -> str:
     seen: set[str] = set()
     inserts: list[tuple[int, str]] = []
     managed = _managed_spans(text)
+    candidates = []
     for match in _APP_STORE_ANCHOR_RE.finditer(text):
+        if match.group("app_id") in by_id and _is_text_cta(match.group(0)):
+            block = _owning_block(managed, match.start())
+            # Page copy first; then generator-owned body blocks; the floating
+            # mobile bar last.  A CTA in a block gets its Play paragraph right
+            # after that block, so the block's own generator keeps its bytes.
+            rank = 0 if block is None else 2 if block[2] in FLOATING_BLOCKS else 1
+            candidates.append((rank, match.start(), match, block))
+    for _rank, _start, match, block in sorted(candidates, key=lambda c: c[:2]):
         app_id = match.group("app_id")
-        if app_id in seen or app_id not in by_id:
-            continue
-        if not _is_text_cta(match.group(0)) or any(
-            start <= match.start() < end for start, end in managed
-        ):
+        if app_id in seen:
             continue
         seen.add(app_id)
         key, entry = by_id[app_id]
-        url = html.escape(entry["play_url"], quote=True)
+        url = html.escape(
+            tracked_play_url(entry["play_url"], _anchor_ct(match.group(0)), key), quote=True
+        )
         package = html.escape(entry["package"], quote=True)
-        if _inside_paragraph(text, match.start()):
-            close = text.lower().find("</p>", match.end())
-            if close < 0:
-                continue
+        if block is not None or _inside_paragraph(text, match.start()):
+            if block is not None and not _inside_paragraph(text, block[1]):
+                position = block[1]
+            else:
+                close = _paragraph_close(text, block[1] if block else match.end())
+                if close < 0:
+                    continue
+                position = close + 4
             if english:
                 name = display_name(key, entry)
                 short = _copy(entry).get("short_description")
@@ -404,7 +484,7 @@ def inject_html(source: str, apps: dict[str, dict]) -> str:
                         + (f" — {html.escape(short)}" if short else ""))
             else:
                 body = f'Android: <a href="{url}" rel="noopener">Google Play</a>'
-            inserts.append((close + 4,
+            inserts.append((position,
                             f'\n  <p class="android-play" {MARKER}="{package}">'
                             f"{body}</p>"))
         else:
@@ -416,8 +496,28 @@ def inject_html(source: str, apps: dict[str, dict]) -> str:
     return text
 
 
-def _in_scope(relative: str) -> bool:
-    return any(pattern.match(relative) for pattern in INJECT_SCOPES)
+def _digest_pinned(pages: Path) -> set[str]:
+    pinned: set[str] = set()
+    for relative in DIGEST_PINNED_MANIFESTS:
+        try:
+            outputs = json.loads((pages / relative).read_text(encoding="utf-8")).get("outputs") or {}
+        except (OSError, ValueError, AttributeError):
+            continue
+        pinned.update(str(path) for path in outputs)
+    return pinned
+
+
+def _site_pages(pages: Path):
+    """Published HTML pages, without descending into the excluded directories
+    or touching pages another generator pins by digest."""
+    pinned = _digest_pinned(pages)
+    for directory, subdirs, files in os.walk(pages):
+        subdirs[:] = sorted(d for d in subdirs if d not in EXCLUDED_PARTS)
+        for name in sorted(files):
+            if name.endswith(".html"):
+                path = Path(directory) / name
+                if not path.is_symlink() and path.relative_to(pages).as_posix() not in pinned:
+                    yield path
 
 
 def inject_tree(pages: Path = PAGES, apps: dict[str, dict] | None = None) -> dict[str, int]:
@@ -430,12 +530,14 @@ def inject_tree(pages: Path = PAGES, apps: dict[str, dict] | None = None) -> dic
                   file=sys.stderr)
             return {"scanned": 0, "changed_files": 0, "apps": 0}
     scanned = changed = 0
-    for path in sorted(pages.glob("guides/*.html")) + sorted(pages.glob("apps/*/index.html")):
-        relative = path.relative_to(pages).as_posix()
-        if path.is_symlink() or not _in_scope(relative):
-            continue
+    for path in _site_pages(pages):
         scanned += 1
-        source = path.read_text(encoding="utf-8")
+        try:
+            source = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            continue
+        if MARKER not in source and "apps.apple.com/" not in source:
+            continue
         updated = inject_html(source, apps)
         if updated != source:
             path.write_text(updated, encoding="utf-8")
@@ -448,7 +550,7 @@ def main(argv: list[str] | None = None) -> int:
     sub = parser.add_subparsers(dest="command", required=True)
     check = sub.add_parser("check", help="validate the committed snapshot")
     check.add_argument("--snapshot", type=Path, default=SNAPSHOT_PATH)
-    inject = sub.add_parser("inject", help="add Play links to guide/hub pages")
+    inject = sub.add_parser("inject", help="add Play links next to App Store CTAs on site pages")
     inject.add_argument("--pages", type=Path, default=PAGES)
     args = parser.parse_args(argv)
     if args.command == "check":

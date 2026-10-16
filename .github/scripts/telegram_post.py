@@ -27,6 +27,7 @@ from social_post_common import (
     OFFICIAL_SOCIAL_LOCALES,
     RequestError,
     campaign_app_store_url,
+    legacy_play_store_url,
     play_store_url,
     canonical_app_store_url,
     canonical_social_image_url,
@@ -733,10 +734,11 @@ def telegram_campaign(item, with_locale=None):
     return f"soc_tg_{key[:TG_CT_MAX - len('soc_tg_') - len(suffix)]}{suffix}"
 
 
-def compose_text(item, android=True, review=True, ct=None):
+def compose_text(item, android=True, review=True, ct=None, legacy_play=False):
     ct = telegram_campaign(item) if ct is None else ct
     url = campaign_app_store_url(item.get("url"), ct)
-    play = play_store_url(item.get("app"), ct) if android else None
+    play_link = legacy_play_store_url if legacy_play else play_store_url
+    play = play_link(item.get("app"), ct) if android else None
     links = f"👉 {url}" + (f"\n🤖 Google Play: {play}" if play else "")
     # Existing-user review link, only for the review_links.json pairs (category
     # leader with <= 20 ratings) in their own locale; no ct, no reward.
@@ -1012,11 +1014,12 @@ def page_unready_apps(app_ids, country=PAGE_READY_STOREFRONT, opener=None, sleep
 
 def _sent_digests(item):
     """Every payload digest this item has gone out as: the current text, and the texts sent before the
-    Google Play line, before the review line (review_links.json), or with the shared soc_tg_guide token."""
+    Google Play line, with the older Play referrer shape, before the review line (review_links.json), or
+    with the shared soc_tg_guide token."""
     return {
-        _digest(compose_text(item, android=android, review=review, ct=ct))
+        _digest(compose_text(item, android=android, review=review, ct=ct, legacy_play=legacy))
         for ct in dict.fromkeys((telegram_campaign(item), telegram_campaign(item, True), LEGACY_TG_CT))
-        for android in (True, False)
+        for android, legacy in ((True, False), (True, True), (False, False))
         for review in (True, False)
     }
 

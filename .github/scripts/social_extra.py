@@ -886,6 +886,8 @@ def run(channels, day, slot, dry_run=False, data=None):
             if dry_run:
                 state = "" if ok else " [not configured]"
                 print(f"{ch}{state}: would post {item['kind']} {item['key']} ({item['locale']}) -> {item['store']}")
+                if item.get("play"):
+                    print(f"  Google Play -> {item['play']}")
                 print("  " + item["caption"].replace("\n", "\n  "))
                 continue
             if not post_qa.gate(qa_problems(item, ch), f"{ch} {item['key']}"):

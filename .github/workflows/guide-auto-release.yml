@@ -1,0 +1,68 @@
+name: Guide auto paired release
+
+# pages.yml only uploads on a paired dispatch; pushes and Daily GEO runs are
+# preflight only. From 2026-10-13 to 10-16 nobody dispatched and three days of
+# pages stayed 404 behind green runs. This job does the pairing itself:
+# whenever main has content the live site lacks, it binds 00_GrowthEngine
+# geo/pages to this Guide main (deploy key GROWTH_ENGINE_DEPLOY_KEY) and
+# dispatches exactly one paired release; content waiting over 6 hours keeps a
+# guide-deploy-stale issue open that mentions the owner.
+
+on:
+  workflow_run:
+    workflows: ["Deploy static site to Pages", "Daily GEO content"]
+    types: [completed]
+  schedule:
+    - cron: "23 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Judge only: no gitlink push, no dispatch, no issue"
+        type: boolean
+        default: false
+
+permissions:
+  actions: write
+  contents: read
+  issues: write
+
+concurrency:
+  group: guide-auto-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Self-test the release logic before trusting it
+        run: |
+          cd .github/scripts
+          python3 -m unittest -q test_guide_auto_release test_line_watchdog
+      - name: Check out 00_GrowthEngine for the gitlink
+        uses: actions/checkout@v4
+        with:
+          repository: alice51849/00_GrowthEngine
+          ssh-key: ${{ secrets.GROWTH_ENGINE_DEPLOY_KEY }}
+          path: .engine
+          fetch-depth: 1
+          sparse-checkout: |
+            geo/pages
+          sparse-checkout-cone-mode: false
+      - name: Pair, dispatch and reconcile the stale-deploy issue
+        env:
+          TRIGGER_CONCLUSION: ${{ github.event.workflow_run.conclusion || 'success' }}
+          DRY_RUN: ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: |
+          python3 .github/scripts/guide_auto_release.py \
+            --repo "$GITHUB_REPOSITORY" \
+            --guide-root . \
+            --engine-dir .engine \
+            --stale-hours 6 \
+            --trigger-conclusion "$TRIGGER_CONCLUSION" \
+            $DRY_RUN

@@ -142,14 +142,32 @@ class EvidenceTests(unittest.TestCase):
 class GuideEvidenceTests(unittest.TestCase):
     def test_live_deployment_must_be_on_main(self):
         payload = {"source_commit": "abcdef1234", "generated_at": wd.iso(NOW - 3 * H)}
+        # On main with nothing deployable waiting: fresh now, whatever the deploy's age.
         on_main = ScriptedGh({"compare/abcdef1234...main": {"status": "ahead"}})
-        stamp, note = wd.guide_deployment(on_main, lambda url: json.dumps(payload).encode(), "https://x/g/")
-        self.assertEqual(NOW - 3 * H, stamp)
+        stamp, note = wd.guide_deployment(on_main, lambda url: json.dumps(payload).encode(), "https://x/g/", NOW)
+        self.assertEqual(NOW, stamp)
         self.assertIn("on main", note)
         diverged = ScriptedGh({"compare/abcdef1234...main": {"status": "diverged"}})
         stamp, note = wd.guide_deployment(diverged, lambda url: json.dumps(payload).encode(), "https://x/g")
         self.assertIsNone(stamp)
         self.assertIn("not an ancestor", note)
+
+    def test_undeployed_content_on_main_is_dated_by_its_oldest_commit(self):
+        # 2026-10-13..16: the deploy was young but main was days ahead.
+        payload = {"source_commit": "abcdef1234", "generated_at": wd.iso(NOW - 1 * H)}
+        gh = ScriptedGh({
+            "compare/abcdef1234...main": {"status": "ahead", "commits": [
+                {"sha": "c1", "commit": {"committer": {"date": wd.iso(NOW - 30 * H)}}},
+                {"sha": "c2", "commit": {"committer": {"date": wd.iso(NOW - 20 * H)}}},
+            ]},
+            "commits/c1": {"files": [{"filename": ".github/growth/clips.json"}]},
+            "commits/c2": {"files": [{"filename": "answers/new-page.html"}]},
+        })
+        stamp, note = wd.guide_deployment(gh, lambda url: json.dumps(payload).encode(), "https://x/g", NOW)
+        self.assertEqual(NOW - 20 * H, stamp)
+        self.assertIn("lacks 1 content commit", note)
+        self.assertFalse(wd.judge_evidence("guide_deployment", stamp, note, NOW)["fresh"])
+        self.assertTrue(wd.judge_evidence("guide_deployment", NOW - 5 * H, note, NOW)["fresh"])
 
     def test_deployment_without_source_commit_is_an_error(self):
         with self.assertRaises(wd.WatchdogError):

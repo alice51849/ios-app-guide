@@ -166,7 +166,7 @@ EVIDENCE_MAX_AGE_HOURS = {
     "threads_receipts": 24,
     "bluesky_receipts": 24,
     "nostr_receipts": 24,
-    "guide_deployment": 48,
+    "guide_deployment": 6,  # hours main content may wait for a paired release
     "telegram_message_id": 30,
 }
 
@@ -496,17 +496,35 @@ def nostr_receipts(root: Path) -> tuple[float | None, int]:
     return (max(stamps) if stamps else None), len(stamps)
 
 
-def guide_deployment(gh: Gh, fetch: Callable[[str], bytes], site: str) -> tuple[float | None, str]:
+def guide_deployment(gh: Gh, fetch: Callable[[str], bytes], site: str,
+                     now: float | None = None) -> tuple[float | None, str]:
+    """Judge the live site by how long main's content has waited, not by its age.
+
+    Only paired releases upload, so a deploy can be young while main is days
+    ahead (2026-10-13..16: three days of pages stayed 404 while this row read
+    the deploy as fresh). The stamp is the commit time of the oldest
+    deployable commit the live site lacks; an up-to-date site is stamped now.
+    """
     url = f"{site.rstrip('/')}/.well-known/deployment.json"
     payload = json.loads(fetch(url).decode("utf-8"))
     generation = payload.get("generation") or {}
-    stamp = parse_time(generation.get("generated_at") or payload.get("generated_at"))
     source = str(payload.get("source_commit") or generation.get("pages_source_sha") or "")
     if len(source) < 7:
         raise WatchdogError("live deployment.json has no source commit")
     if not gh.is_ancestor_of_main(source):
         return None, f"live source {source[:8]} is not an ancestor of main"
-    return stamp, f"live source {source[:8]} is on main"
+    import guide_release
+    try:
+        pending = guide_release.undeployed(gh.api, gh.repo, source)
+    except guide_release.ReleaseError as error:
+        raise WatchdogError(str(error)) from error
+    if not pending:
+        current = now if now is not None else dt.datetime.now(dt.timezone.utc).timestamp()
+        return current, f"live source {source[:8]} is on main and carries all content"
+    return pending[0].committed_at, (
+        f"live source {source[:8]} lacks {len(pending)} content commit(s) from main "
+        f"(oldest {pending[0].sha[:8]}); paired release pending"
+    )
 
 
 # The line is scheduled more often than it posts: a run whose slot another run
@@ -655,7 +673,7 @@ def run(profile_name: str, repo: str, root: Path, *, now: float, gh: Gh,
         elif name == "nostr_receipts":
             stamp, count = nostr_receipts(root); note = f"{count} quorum-acknowledged events"
         elif name == "guide_deployment":
-            stamp, note = guide_deployment(gh, fetch, site)
+            stamp, note = guide_deployment(gh, fetch, site, now)
         elif name == "telegram_message_id":
             stamp, note = telegram_message_id(gh)
         else:  # pragma: no cover

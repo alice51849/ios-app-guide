@@ -20,6 +20,7 @@ from social_post_common import (
     RequestError,
     campaign_app_store_url,
     canonical_app_store_url,
+    play_store_url,
     request_json,
     validate_url,
 )
@@ -44,6 +45,7 @@ TELEGRAM_LANGUAGE_PITCH = (
     "🌏 每款都支援 50 種語言，App 內一鍵切換、不必改手機語言："
     "家人用中文、看護用印尼文或越南文、孩子用英文，同一支手機各用各的。\n\n"
 )
+PLAY_LINK_RE = re.compile(r"https://play\.google\.com/store/apps/details\?\S+")
 THREADS_LIMIT = threads_post.MAX_POST_CHARS
 THREADS_LINK_LIMIT = 5
 PORTFOLIO_WORKFLOW = "portfolio-daily.yml"
@@ -132,6 +134,10 @@ class PublicApp:
             if campaign is None
             else campaign_app_store_url(canonical, campaign)
         )
+
+    def play_url(self, campaign):
+        """Tracked Google Play link (same ct as the App Store link), or None off Android."""
+        return play_store_url(self.app_id, campaign)
 
 
 @dataclasses.dataclass(frozen=True)
@@ -506,7 +512,7 @@ def spotlight_block(apps, today=None, directory=None, skip_apps=frozenset()):
     focus_ids = spotlight_focus_ids(day, directory)
     posts = [post for post in posts if post["app_id"] in focus_ids] or posts
     post = posts[day.toordinal() % len(posts)]
-    # No extra link: the digest keeps exactly one tracked link per App.
+    # No extra link: the digest keeps one tracked link per App and store (App Store, Google Play).
     return f"🔦 今日焦點｜{post['name']}\n{post['text']}\n（下載連結在下方清單）\n\n"
 
 
@@ -527,9 +533,11 @@ def telegram_messages(apps, today=None, skip_spotlight_apps=frozenset()):
             DISPLAY_CATEGORY_OVERRIDES.get(app.key, app.category),
             CATEGORY_ZH["other"],
         )
+        play = app.play_url(campaign)
         return (
             f"• {category}｜{app.name}\n"
             f"  {app.appstore_url(campaign)}"
+            + (f"\n  Google Play: {play}" if play else "")
         )
 
     batches = _pack_apps(
@@ -634,6 +642,21 @@ def validate_coverage(platform, apps, messages):
             if campaign_app_store_url(bare, campaign) != url:
                 raise CoverageError(
                     f"{platform} App Store URL attribution is invalid: {url}"
+                )
+        if platform == "telegram":
+            # Every Android-live App also carries its tracked Google Play link.
+            expected_play = [
+                play
+                for play in (
+                    by_id[app_id].play_url(campaign) for app_id in message.app_ids
+                )
+                if play
+            ]
+            observed_play = PLAY_LINK_RE.findall(message.text)
+            if observed_play != expected_play:
+                raise CoverageError(
+                    f"{platform} Google Play links invalid: "
+                    f"expected={expected_play}, observed={observed_play}"
                 )
 
 

@@ -170,6 +170,19 @@ class PlanTest(unittest.TestCase):
         self.assertIn("ct=h7_a_pk", it["store"])
         self.assertIn("a 鉤子 zh-Hant", it["caption"])
 
+    def test_android_clip_play_link_carries_each_platforms_own_ct(self):
+        mochi = dict(clip("mochi", "en"), store_url="https://apps.apple.com/us/app/id6785004775?pt=118326163"
+                     "&ct=h7_mochi_en&mt=8")
+        for channel, ct in S.CT.items():
+            with self.subTest(channel=channel):
+                it = S.clip_item("mochi/en", mochi, channel)
+                self.assertIn(f"ct=h7_mochi_{ct}", it["store"])
+                self.assertTrue(it["play"].endswith(f"&referrer=utm_source%3Dh7_mochi_{ct}%26utm_campaign%3Dmochi"))
+                self.assertEqual(f"Google Play: {it['play']}", S.link_lines(it)[1])
+        it = S.clip_item("mochi/en", mochi, "youtube")
+        self.assertIn(f"Google Play: {it['play']}", S.yt_meta(it)[1])
+        self.assertIsNone(S.clip_item("a/en", clip("a", "en"), "bluesky")["play"])  # id1 is iOS only
+
     def test_missing_secrets_log_not_configured_and_post_nothing(self):
         with mock.patch.dict(os.environ, {}, clear=True), mock.patch.object(S, "http") as h, \
                 mock.patch("sys.stdout", new_callable=io.StringIO) as out:

@@ -340,8 +340,34 @@ def android_apps():
     return _ANDROID
 
 
+# Play install referrer, same shape as 00_GrowthEngine agent/ct_codes.py play_referrer_url:
+# utm_source=<the sibling App Store ct>&utm_campaign=<snapshot app key>, fully percent-encoded.
+PLAY_CAMPAIGN_RE = re.compile(r"^[A-Za-z0-9_-]{1,40}$")
+PLAY_APP_KEY_RE = re.compile(r"^[a-z0-9][a-z0-9_]{0,39}$")
+PLAY_DETAILS_PREFIX = "https://play.google.com/store/apps/details?id="
+
+
 def play_store_url(app_id, campaign):
-    """Google Play link with the same campaign token, or None if not on Android."""
+    """Google Play link tracked with the App Store link's own ct token, or None if not on Android."""
+    entry = android_apps().get(str(app_id))
+    if not entry:
+        return None
+    token = str(campaign or "").strip()
+    if PLAY_CAMPAIGN_RE.fullmatch(token) is None:
+        raise ValueError(f"Invalid Google Play campaign token: {campaign!r}")
+    key = str(entry.get("key") or "")
+    if PLAY_APP_KEY_RE.fullmatch(key) is None:
+        raise ValueError(f"Invalid Google Play app key: {key!r}")
+    play = str(entry["play_url"])
+    if not play.startswith(PLAY_DETAILS_PREFIX) or "&" in play or "#" in play:
+        raise ValueError(f"Not a bare Google Play details URL: {play!r}")
+    referrer = urllib.parse.quote(f"utm_source={token}&utm_campaign={key}", safe="")
+    return f"{play}&referrer={referrer}"
+
+
+def legacy_play_store_url(app_id, campaign):
+    """The older Play link shape (utm_source=lumi_social&utm_campaign=<ct>) already posted; only for
+    recognising earlier posts (replay protection), never for new ones."""
     entry = android_apps().get(str(app_id))
     if not entry:
         return None

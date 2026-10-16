@@ -1594,6 +1594,52 @@ class TelegramDailyCatalogTests(unittest.TestCase):
         self.assertTrue(all("ct=soc_tg_digest" in link for link in links))
         self.assertNotIn("ct=soc_tg_guide", combined)
 
+    def test_catalog_lists_the_tracked_play_link_of_every_android_app(self):
+        campaign = portfolio_daily.PLATFORM_CAMPAIGNS["telegram"]
+        messages = portfolio_daily.telegram_messages(
+            self.apps, today=dt.date(2026, 10, 16)
+        )
+        portfolio_daily.validate_coverage("telegram", self.apps, messages)
+        android = common.android_apps()
+        on_play = [app for app in self.apps if app.app_id in android]
+        self.assertTrue(on_play)
+        self.assertTrue([app for app in self.apps if app.app_id not in android])
+        combined = "\n".join(message.text for message in messages)
+        play_lines = [
+            line.strip() for line in combined.splitlines()
+            if line.strip().startswith("Google Play: ")
+        ]
+        self.assertEqual(len(on_play), len(play_lines))
+        for app in on_play:
+            key = android[app.app_id]["key"]
+            with self.subTest(app=key):
+                expected = (
+                    f"Google Play: {android[app.app_id]['play_url']}&referrer="
+                    f"utm_source%3D{campaign}%26utm_campaign%3D{key}"
+                )
+                self.assertIn(expected, play_lines)
+                # The Play line sits right under the App's own App Store line.
+                store = app.appstore_url(campaign)
+                self.assertIn(f"  {store}\n  {expected}", combined)
+        self.assertNotIn("lumi_social", combined)
+
+    def test_catalog_refuses_a_missing_play_link(self):
+        messages = portfolio_daily.telegram_messages(
+            self.apps, today=dt.date(2026, 10, 16)
+        )
+        broken = [
+            portfolio_daily.DigestMessage(
+                "\n".join(
+                    line for line in message.text.splitlines()
+                    if not line.strip().startswith("Google Play: ")
+                ),
+                message.app_ids,
+            )
+            for message in messages
+        ]
+        with self.assertRaises(portfolio_daily.CoverageError):
+            portfolio_daily.validate_coverage("telegram", self.apps, broken)
+
     def test_catalog_covers_every_live_app_once_split_under_telegram_limit(self):
         messages = portfolio_daily.telegram_messages(
             self.apps, today=dt.date(2026, 10, 16)
@@ -1661,6 +1707,98 @@ class TelegramDailyCatalogTests(unittest.TestCase):
         portfolio = self._workflow("portfolio-daily.yml")
         telegram_job = portfolio.split("\n  telegram:\n", 1)[1].split("\n  threads:\n", 1)[0]
         self.assertIn("group: telegram-portfolio-digest", telegram_job)
+
+
+class PlayReferrerTests(unittest.TestCase):
+    """Google Play links carry the sibling App Store ct as utm_source and the
+    snapshot key as utm_campaign (00_GrowthEngine agent/ct_codes.py play_referrer_url)."""
+
+    MOCHI = "6785004775"  # Android-live in _engine/geo/data/android_live_snapshot.json
+    IOS_ONLY = "1000000001"
+    MOCHI_PLAY = "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
+
+    def test_canonical_referrer_shape(self):
+        self.assertEqual(
+            self.MOCHI_PLAY
+            + "&referrer=utm_source%3Dh7_mochi_th%26utm_campaign%3Dmochi",
+            common.play_store_url(self.MOCHI, "h7_mochi_th"),
+        )
+        apps = {"77": {"ios_app_id": "77", "key": "usagenow",
+                       "play_url": "https://play.google.com/store/apps/details?id=com.a.B"}}
+        with mock.patch.object(common, "android_apps", return_value=apps):
+            self.assertEqual(
+                "https://play.google.com/store/apps/details?id=com.a.B"
+                "&referrer=utm_source%3Dh7_usagenow_th%26utm_campaign%3Dusagenow",
+                common.play_store_url("77", "h7_usagenow_th"),
+            )
+
+    def test_referrer_decodes_to_ct_and_app_key(self):
+        for ct in ("soc_tg_guide", "soc_tg_digest", "cd_tg", "ut_aim990_tg", "rp_th", "bm_mochi_us_th"):
+            with self.subTest(ct=ct):
+                url = common.play_store_url(self.MOCHI, ct)
+                referrer = urllib.parse.parse_qs(urllib.parse.urlsplit(url).query)["referrer"][0]
+                self.assertEqual(
+                    {"utm_source": [ct], "utm_campaign": ["mochi"]},
+                    urllib.parse.parse_qs(referrer),
+                )
+                self.assertNotIn("lumi_social", url)
+                # The referrer value is fully percent-encoded: one & and one = outside it.
+                self.assertEqual(1, url.count("&"))
+
+    def test_invalid_campaign_tokens_are_refused(self):
+        for ct in ("", "has space", "a&b", "x=y", "a" * 41, "ünicode", None):
+            with self.subTest(ct=ct), self.assertRaises(ValueError):
+                common.play_store_url(self.MOCHI, ct)
+        self.assertTrue(common.play_store_url(self.MOCHI, "a-b_C9" + "x" * 34))
+
+    def test_apps_off_android_get_no_play_link(self):
+        self.assertIsNone(common.play_store_url(self.IOS_ONLY, "soc_tg_guide"))
+        self.assertIsNone(common.play_store_url("", "soc_tg_guide"))
+
+    def test_snapshot_drives_the_links(self):
+        apps = {"88": {"ios_app_id": "88", "key": "newapp",
+                       "play_url": "https://play.google.com/store/apps/details?id=com.a.New"}}
+        with mock.patch.object(common, "android_apps", return_value=apps):
+            self.assertIn("utm_campaign%3Dnewapp", common.play_store_url("88", "cd_tg"))
+            self.assertIsNone(common.play_store_url(self.MOCHI, "cd_tg"))
+
+    def _item(self, app):
+        return {"app": app, "url": f"https://apps.apple.com/app/id{app}", "text": "Pain line",
+                "lang": "en"}
+
+    def test_telegram_single_and_threads_reply_carry_the_tracked_play_link(self):
+        text = telegram_post.compose_text(self._item(self.MOCHI))
+        self.assertIn("ct=soc_tg_guide", text)
+        self.assertIn(
+            "🤖 Google Play: " + self.MOCHI_PLAY
+            + "&referrer=utm_source%3Dsoc_tg_guide%26utm_campaign%3Dmochi",
+            text,
+        )
+        self.assertNotIn("play.google.com", telegram_post.compose_text(self._item(self.IOS_ONLY)))
+        body = threads_post.compose_body(self._item(self.MOCHI))
+        self.assertNotIn("http", body)
+        links = threads_post.compose_links(self._item(self.MOCHI)).splitlines()
+        self.assertTrue(links[0].startswith("App Store: ") and "ct=soc_th_guide" in links[0])
+        self.assertEqual(
+            "Google Play: " + self.MOCHI_PLAY
+            + "&referrer=utm_source%3Dsoc_th_guide%26utm_campaign%3Dmochi",
+            links[1],
+        )
+        self.assertEqual(1, len(threads_post.compose_links(self._item(self.IOS_ONLY)).splitlines()))
+
+    def test_threads_queued_reply_uses_the_series_token_for_play_too(self):
+        links = threads_post.queued_links({"app_id": self.MOCHI, "ct": "bm_mochi_us_th"})
+        self.assertIn("ct=bm_mochi_us_th", links)
+        self.assertIn("utm_source%3Dbm_mochi_us_th%26utm_campaign%3Dmochi", links)
+
+    def test_posts_with_the_older_play_shape_still_count_as_sent(self):
+        item = self._item(self.MOCHI)
+        legacy = telegram_post.compose_text(item, legacy_play=True)
+        self.assertIn("utm_source%3Dlumi_social%26utm_campaign%3Dsoc_tg_guide", legacy)
+        self.assertNotEqual(legacy, telegram_post.compose_text(item))
+        self.assertIn(telegram_post._digest(legacy), telegram_post._sent_digests(item))
+        self.assertIn(telegram_post._digest(telegram_post.compose_text(item, ct="soc_tg_guide", legacy_play=True)),
+                      telegram_post._sent_digests(item))
 
 
 class DevToGateTests(unittest.TestCase):

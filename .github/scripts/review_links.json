@@ -1,0 +1,23 @@
+{
+ "schema": "lumi.review-links/v1",
+ "note": "Existing-user App Store review link (https://apps.apple.com/app/id<N>?action=write-review) on social posts, only for the App x country pairs whose category leader has 20 ratings or fewer (00_GrowthEngine reports/top1_gap_2026-10-16.md, common conclusion 1): one to three ratings can flip the category there. One neutral sentence per locale, reused verbatim from 00_GrowthEngine geo/gen_app_store_review_ctas.py REVIEW_LABELS: no reward, no star prompt, no price, no superlative. The link never carries pt/ct/mt (it is not a download CTA). official_locale matches telegram_post.py items, clip_locale matches clips.json clips; a pair is matched by App Store ID, never by app key.",
+ "source": "reports/top1_gap_2026-10-16.md (2026-10-16)",
+ "pairs": [
+  {"app": "UsageNow", "app_id": "6818607603", "country": "kr", "official_locale": "ko", "clip_locale": "ko", "keyword": "claude 사용량", "top1_ratings": 0},
+  {"app": "dB Halo", "app_id": "6806826699", "country": "de", "official_locale": "de-DE", "clip_locale": "de", "keyword": "lärmmessgerät", "top1_ratings": 0},
+  {"app": "OnePage PPT", "app_id": "6798814385", "country": "tw", "official_locale": "zh-Hant", "clip_locale": "zh-Hant", "keyword": "簡報 製作", "top1_ratings": 0},
+  {"app": "OnePage PPT", "app_id": "6798814385", "country": "kr", "official_locale": "ko", "clip_locale": "ko", "keyword": "발표 자료", "top1_ratings": 0},
+  {"app": "Lumi Weather", "app_id": "6779552704", "country": "de", "official_locale": "de-DE", "clip_locale": "de", "keyword": "was anziehen wetter", "top1_ratings": 1},
+  {"app": "UsageNow", "app_id": "6818607603", "country": "us", "official_locale": "en-US", "clip_locale": "en", "keyword": "claude usage", "top1_ratings": 5},
+  {"app": "Unblurry", "app_id": "6782275018", "country": "jp", "official_locale": "ja", "clip_locale": "ja", "keyword": "ぼやけた 写真 修正", "top1_ratings": 8},
+  {"app": "Lumi Bopomofo", "app_id": "6773017109", "country": "us", "official_locale": "en-US", "clip_locale": "en", "keyword": "bopomofo", "top1_ratings": 14},
+  {"app": "CV Desk", "app_id": "6781337213", "country": "kr", "official_locale": "ko", "clip_locale": "ko", "keyword": "이력서", "top1_ratings": 18}
+ ],
+ "labels": {
+  "de-DE": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+  "en-US": "Already using this app? Rate or review it on the App Store",
+  "ja": "このアプリをお使いですか？App Store で評価・レビューできます",
+  "ko": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+  "zh-Hant": "已經在用這款 App？可以到 App Store 評分或撰寫評論"
+ }
+}

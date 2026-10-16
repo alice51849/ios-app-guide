@@ -40,6 +40,7 @@ from pathlib import Path
 
 import clip_progress
 import post_qa
+import review_links
 import search_caption as SC
 import volume_ramp
 from social_post_common import play_store_url
@@ -160,6 +161,10 @@ def caption(clip, channel, variant=None):
         lines.append(PLAY_LINE.get(clip["locale"]) or PLAY_LINE.get(clip["locale"].split("-")[0]) or PLAY_LINE["en"])
     if channel == "instagram":
         lines.append(t["bio"])
+    if channel == "telegram":
+        # Clickable existing-user review link, only for the review_links.json pairs in their locale
+        # (Instagram captions cannot carry a link; Threads posts carry none).
+        lines += review_links.lines(review_links.for_clip(clip))
     tags = SC.tags(clip, SC.TAG_LIMIT.get(channel, 5))
     if tags:
         lines += ["", " ".join(tags)]

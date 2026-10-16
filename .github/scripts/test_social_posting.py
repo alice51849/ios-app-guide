@@ -1855,5 +1855,59 @@ class DevToGateTests(unittest.TestCase):
         latest_publication.assert_called_once()
 
 
+class TelegramReviewLinkTests(unittest.TestCase):
+    """review_links.json: the daily Telegram post carries the existing-user review link only for the
+    App x locale pairs whose category leader has <= 20 ratings; posts sent before it stay used."""
+
+    USAGENOW, MOCHI = "6818607603", "6785004775"
+    NOW = dt.datetime(2026, 10, 16, 1, 5, tzinfo=dt.timezone.utc)
+
+    def item(self, app, lang):
+        return {"app": app, "lang": lang, "text": "Quality copy", "url": f"https://apps.apple.com/app/id{app}",
+                "source": "publisher_intent_catalog"}
+
+    def test_only_listed_pairs_get_the_review_line(self):
+        review = f"https://apps.apple.com/app/id{self.USAGENOW}?action=write-review"
+        text = telegram_post.compose_text(self.item(self.USAGENOW, "ko"))
+        self.assertIn(review, text)
+        self.assertIn("📝 이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\n" + review, text)
+        self.assertTrue(text.endswith(common.footer_for("ko")))
+        first = next(part for part in text.split() if part.startswith("https://"))
+        self.assertIn("ct=soc_tg_guide", first)  # the download CTA stays first and attributed
+        self.assertNotIn("ct=", review)
+        self.assertIn("write-review", telegram_post.compose_text(self.item(self.USAGENOW, "en-US")))
+        for app, lang in ((self.USAGENOW, "ja"), (self.USAGENOW, "en-GB"), (self.MOCHI, "ko"),
+                          ("6798814385", "zh-Hans")):
+            with self.subTest(app=app, lang=lang):
+                self.assertNotIn("write-review", telegram_post.compose_text(self.item(app, lang)))
+        self.assertNotIn("write-review", telegram_post.compose_text(self.item(self.USAGENOW, "ko"), review=False))
+        # The public-history reader still sees one App per post (both links name the same App ID).
+        urls = [part for part in text.split() if part.startswith("https://apps.apple.com")]
+        self.assertEqual({self.USAGENOW}, telegram_post._app_ids(urls))
+
+    def test_posts_sent_before_the_review_line_count_as_used(self):
+        target = self.item(self.USAGENOW, "ko")
+        pool = [target]
+
+        def candidates(pool_arg, channel, now):
+            return pool_arg if channel == "telegram:asia" else [{"app": "7000000009"}]
+
+        def ledger(digest):
+            receipts = {} if digest is None else {"LumiApps2026/1": {
+                "app_store_id": self.USAGENOW, "payload_digest": digest,
+                "timestamp": "2026-10-10T01:00:00+00:00"}}
+            return {"receipts": receipts, "intents": {}}
+
+        with mock.patch.object(telegram_post, "channel_candidates", side_effect=candidates):
+            self.assertIs(target, telegram_post.choose_unpublished(pool, ledger(None), self.NOW))
+            for old in (telegram_post.compose_text(target, review=False),
+                        telegram_post.compose_text(target, android=False, review=False),
+                        telegram_post.compose_text(target)):
+                with self.subTest(old=old[-80:]):
+                    self.assertIsNone(
+                        telegram_post.choose_unpublished(pool, ledger(telegram_post._digest(old)), self.NOW)
+                    )
+
+
 if __name__ == "__main__":
     unittest.main()

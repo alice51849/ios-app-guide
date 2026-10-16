@@ -365,6 +365,19 @@ class DeploymentGenerationTests(unittest.TestCase):
             generation.seal_generation(current, self.outputs)["measurement_generation_id"],
         )
 
+    def test_guide_measured_canary_locales_are_runtime_input_not_a_missing_mirror(self):
+        # Guide-only measured state (index_entry_canary_locales.py): no canonical copy exists.
+        _write(self.site, "_engine/geo/index_entry_canary_locales.json", b'{"pages": 1}\n')
+        _commit(self.site)
+        first = self.build_identity()
+        self.assertEqual(self.identity["mirror_digest"], first["mirror_digest"])
+        self.assertNotEqual(self.identity["mirror_inputs_digest"], first["mirror_inputs_digest"])
+        _write(self.site, "_engine/geo/index_entry_canary_locales.json", b'{"pages": 2}\n')
+        _commit(self.site)
+        second = self.build_identity()
+        self.assertEqual(first["mirror_digest"], second["mirror_digest"])
+        self.assertNotEqual(first["mirror_inputs_digest"], second["mirror_inputs_digest"])
+
     def test_configuration_changes_invalidate_generation(self):
         _write(self.site, ".github/workflows/pages.yml", b"name: New Pages\n")
         _commit(self.site)

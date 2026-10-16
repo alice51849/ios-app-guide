@@ -189,7 +189,8 @@ def _runtime_input(relative: str) -> bool:
     path = PurePosixPath(relative)
     return (
         path.parts[0] in {"i18n_trans", "_demand", "reports"}
-        or relative in {"sitemap_lastmod_state.json", "standard_site_sync_state.json"}
+        or relative in {"sitemap_lastmod_state.json", "standard_site_sync_state.json",
+                        "index_entry_canary_locales.json"}
     )
 
 

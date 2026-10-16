@@ -76,10 +76,13 @@ jobs:
           ONLY: ${{ inputs.only }}
           CHANNELS: ${{ inputs.channels || 'instagram threads' }}
         run: |
-          ONLY_ARGS=""
-          if [ -n "$ONLY" ]; then ONLY_ARGS="--only $ONLY"; fi
+          # the dispatch inputs are typed by a person: only numbers and the two channel names go further
+          case "$MODE" in audit|apply|diag) ;; *) echo "::error::unknown mode"; exit 2;; esac
+          case "$MAX_NEW" in ''|*[!0-9]*) echo "::error::max_new must be a number"; exit 2;; esac
+          for c in $CHANNELS; do case "$c" in instagram|threads) ;; *) echo "::error::unknown channel"; exit 2;; esac; done
+          for p in $ONLY; do case "$p" in ''|*[!0-9]*) echo "::error::post ids are numbers"; exit 2;; esac; done
           set -o pipefail
-          python3 .github/scripts/link_backfill.py "$MODE" --max-new "$MAX_NEW" --channels $CHANNELS $ONLY_ARGS | tee "$RUNNER_TEMP/backfill.log"
+          python3 .github/scripts/link_backfill.py "$MODE" --max-new "$MAX_NEW" --channels $CHANNELS ${ONLY:+--only $ONLY} | tee "$RUNNER_TEMP/backfill.log"
       - name: Summary
         if: always() && steps.gate.outputs.run == 'true'
         run: |

@@ -234,6 +234,26 @@ def has_link_now(client, media, store, play):
     return DL.has_download_link(text, store, play), text
 
 
+def fetch_comment(client, comment_id):
+    """The comment / reply we wrote, fetched by its own id: the list edge of a post does not always show the
+    account's own comments, the object itself is the proof that it exists and what it says."""
+    fields = "id,text,username,timestamp,hidden" if client.channel == "instagram" else "id,text,username,timestamp"
+    return client._get(str(comment_id), fields=fields)
+
+
+def verified_by_id(client, comment_id, store, play):
+    """True when the comment we wrote is readable by its id, says the links and is not hidden."""
+    if not comment_id:
+        return False
+    try:
+        one = fetch_comment(client, comment_id)
+    except Exception as exc:
+        if is_throttle(exc):
+            raise
+        return False
+    return bool(one) and not one.get("hidden") and DL.has_download_link(one.get("text", ""), store, play)
+
+
 def _short(text, n):
     return " ".join((text or "").split())[:n]
 
@@ -379,6 +399,47 @@ def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=ti
     return rows
 
 
+def diag(client, state, only, out=print):
+    """Read-only: what the platform answers about the given posts and about the comments we wrote under them.
+    Prints public text and ids only (never a token)."""
+    channel = client.channel
+    out(f"diag {channel}: token owner = {client.username}")
+    for pid in only:
+        pid = str(pid)
+        try:
+            info = client._get(pid, fields="id,comments_count,is_comment_enabled" if channel == "instagram" else "id,has_replies")
+        except Exception as exc:
+            info = {"error": str(exc)[:160]}
+        out(f"diag {channel} {pid}: the post says {json.dumps(info, sort_keys=True)}")
+        try:
+            raw = client._get(f"{pid}/comments" if channel == "instagram" else f"{pid}/replies",
+                              fields="id,text,username,timestamp", limit=50).get("data", [])
+        except Exception as exc:
+            out(f"diag {channel} {pid}: the list failed ({str(exc)[:160]})")
+            raw = []
+        out(f"diag {channel} {pid}: the list shows {len(raw)} comments")
+        for c in raw[:12]:
+            out(f"  {c.get('id')} user={c.get('username')} text={_short(c.get('text'), 100)}")
+        cid = ((state["done"].get(channel) or {}).get(pid) or {}).get("comment_id")
+        if cid:
+            try:
+                one = fetch_comment(client, cid)
+                out(f"diag {channel} {pid}: our comment {cid} by its id -> {_short(json.dumps(one, ensure_ascii=False, sort_keys=True), 300)}")
+            except Exception as exc:
+                out(f"diag {channel} {pid}: our comment {cid} by its id failed ({str(exc)[:160]})")
+    if channel == "instagram":   # does the list work at all for this token? look at posts that report comments
+        try:
+            rows = client._get(f"{client.user_id}/media", fields="id,comments_count,timestamp", limit=50).get("data", [])
+            with_comments = [r for r in rows if (r.get("comments_count") or 0) > 0][:4]
+            out(f"diag instagram: {len(rows)} newest posts, {len(with_comments)} shown that report comments")
+            for r in with_comments:
+                seen = client._get(f"{r['id']}/comments", fields="id,username", limit=50).get("data", [])
+                out(f"  {r['id']} comments_count={r.get('comments_count')} the list shows {len(seen)} "
+                    f"users={[c.get('username') for c in seen][:5]}")
+        except Exception as exc:
+            out(f"diag instagram: the sanity look failed ({str(exc)[:160]})")
+
+
 def merge_state(saved_path, path=STATE):
     """Fold a run's state into the current file (the workflow resets to origin/main before it commits)."""
     saved, state = OP.load_json(saved_path, {}), load_state(path)
@@ -428,22 +489,10 @@ def main(argv=None):
     state = load_state()
     tokens = {"instagram": os.environ.get("IG_ACCESS_TOKEN", "").strip(), "threads": os.environ.get("THREADS_TOKEN", "").strip()}
     clients = {"instagram": OP.InstagramClient, "threads": OP.ThreadsClient}
-    if args.cmd == "diag":   # read-only: what the platform answers as the comments of the given posts (public text only)
+    if args.cmd == "diag":   # read-only: what the platform answers about the given posts and our comments (public text only)
         for channel in args.channels:
-            if not tokens[channel]:
-                continue
-            client = clients[channel](tokens[channel]).me()
-            for pid in args.only or []:
-                try:
-                    raw = client._get(f"{pid}/comments" if channel == "instagram" else f"{pid}/replies",
-                                      fields="id,text,username,timestamp" + (",hidden" if channel == "instagram" else ""),
-                                      limit=50).get("data", [])
-                except Exception as exc:
-                    print(f"diag {channel} {pid}: read failed ({str(exc)[:160]})")
-                    continue
-                print(f"diag {channel} {pid}: {len(raw)} comments seen, token owner = {client.username}")
-                for c in raw[:12]:
-                    print(f"  {c.get('id')} user={c.get('username')} hidden={c.get('hidden')} text={_short(c.get('text'), 100)}")
+            if tokens[channel]:
+                diag(clients[channel](tokens[channel]).me(), state, args.only or [])
         return 0
     rows = []
     for channel in args.channels:

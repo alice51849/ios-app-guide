@@ -1909,5 +1909,93 @@ class TelegramReviewLinkTests(unittest.TestCase):
                     )
 
 
+class TelegramCampaignAndPaidLocaleTest(unittest.TestCase):
+    """Telegram text posts: per-app campaign token, posts sent with soc_tg_guide stay used, and the
+    locale rotation leans on the paying markets without dropping the others."""
+
+    NOW = dt.datetime(2026, 10, 16, 1, 5, tzinfo=dt.timezone.utc)
+
+    def item(self, app, lang, key="mochi"):
+        return {"app": app, "app_key": key, "lang": lang, "text": f"Quality copy {lang}",
+                "url": f"https://apps.apple.com/app/id{app}", "source": "publisher_intent_catalog"}
+
+    def test_token_names_the_app_and_can_name_the_locale(self):
+        self.assertEqual("soc_tg_mochi", telegram_post.telegram_campaign(self.item("1", "zh-Hant")))
+        self.assertEqual("soc_tg_mochi_zhhant", telegram_post.telegram_campaign(self.item("1", "zh-Hant"), True))
+        self.assertEqual("soc_tg_guide", telegram_post.telegram_campaign({"app": "1", "lang": "en"}))
+        longest = telegram_post.telegram_campaign(self.item("1", "zh-Hans", "claudeusagemini"), True)
+        self.assertEqual("soc_tg_claudeusagemini_zhhans", longest)
+        for key in ("claudeusagemini", "lumibopomofopro", "a" * 40):
+            for with_locale in (False, True):
+                token = telegram_post.telegram_campaign(self.item("1", "pt-BR", key), with_locale)
+                self.assertRegex(token, r"^[a-z0-9_]{1,30}$")
+                self.assertTrue(common.APP_STORE_CAMPAIGN_RE.fullmatch(token))
+        text = telegram_post.compose_text(self.item("6785004775", "en-US"))
+        first = next(part for part in text.split() if part.startswith("https://"))
+        self.assertEqual(["soc_tg_mochi"], urllib.parse.parse_qs(urllib.parse.urlsplit(first).query)["ct"])
+
+    def test_posts_sent_with_the_shared_token_count_as_used(self):
+        target = self.item("6785004775", "ko")
+
+        def candidates(pool_arg, channel, now):
+            return pool_arg if channel == "telegram:asia" else [{"app": "7000000009"}]
+
+        def ledger(digest):
+            return {"receipts": {"LumiApps2026/1": {
+                "app_store_id": "6785004775", "payload_digest": digest,
+                "timestamp": "2026-10-10T01:00:00+00:00"}}, "intents": {}}
+
+        with mock.patch.object(telegram_post, "channel_candidates", side_effect=candidates):
+            self.assertIs(target, telegram_post.choose_unpublished([target], ledger("x"), self.NOW))
+            for ct in ("soc_tg_guide", "soc_tg_mochi", "soc_tg_mochi_ko"):
+                for android in (True, False):
+                    old = telegram_post.compose_text(target, android=android, ct=ct)
+                    with self.subTest(ct=ct, android=android):
+                        self.assertIsNone(telegram_post.choose_unpublished(
+                            [target], ledger(telegram_post._digest(old)), self.NOW))
+
+    def test_paid_locales_lead_three_days_of_four_and_every_locale_stays(self):
+        days = [dt.date(2026, 10, 18) + dt.timedelta(days=i) for i in range(24)]
+        for zone, locales in telegram_post.TZ_LANGS.items():
+            picks = [telegram_post.paid_locale_of_day(zone, d) for d in days]
+            self.assertEqual(6, picks.count(None), zone)  # one long-tail day in four
+            self.assertTrue(set(filter(None, picks)) <= set(locales), zone)
+        asia = [telegram_post.paid_locale_of_day("asia", d) for d in days]
+        self.assertGreater(asia.count("zh-Hant"), asia.count("ja"))
+        self.assertGreater(asia.count("ja"), asia.count("ko"))
+        self.assertGreater(asia.count("ko"), 0)
+        americas = [telegram_post.paid_locale_of_day("americas", d) for d in days]
+        self.assertGreater(americas.count("en-US"), americas.count("pt-BR"))
+        eligible = [self.item("1", lang) for lang in ("ms", "ko", "mr-IN", "zh-Hant", "ja")] + \
+                   [self.item("2", lang, "cyca") for lang in ("vi", "ja")]
+        paid_day = next(d for d in days if telegram_post.paid_locale_of_day("asia", d) == "ja")
+        ordered = telegram_post.paid_market_first(eligible, "asia", paid_day)
+        self.assertEqual(sorted(map(id, eligible)), sorted(map(id, ordered)))  # nothing dropped
+        self.assertEqual(["ja", "zh-Hant", "ko", "ms", "mr-IN"], [i["lang"] for i in ordered[:5]])
+        self.assertEqual(["1"] * 5 + ["2"] * 2, [i["app"] for i in ordered])  # app rotation kept
+        long_tail = next(d for d in days if telegram_post.paid_locale_of_day("asia", d) is None)
+        self.assertEqual(eligible, telegram_post.paid_market_first(eligible, "asia", long_tail))
+
+    def test_choose_unpublished_posts_the_paid_locale_of_the_day(self):
+        pool = [self.item("6785004775", lang) for lang in ("mr-IN", "ms", "ko", "zh-Hant")]
+
+        def candidates(pool_arg, channel, now):
+            return pool_arg if channel == "telegram:asia" else [{"app": "7000000009"}]
+
+        empty = {"receipts": {}, "intents": {}}
+        for offset in range(8):
+            now = self.NOW + dt.timedelta(days=offset)
+            want = telegram_post.paid_locale_of_day("asia", now.date())
+            with mock.patch.object(telegram_post, "channel_candidates", side_effect=candidates):
+                picked = telegram_post.choose_unpublished(pool, empty, now)
+            with self.subTest(day=now.date()):
+                if want is None:
+                    self.assertEqual("mr-IN", picked["lang"])  # long-tail day: the plain rotation
+                elif want == "ja":
+                    self.assertEqual("zh-Hant", picked["lang"])  # no ja copy: next paid locale
+                else:
+                    self.assertEqual(want, picked["lang"])
+
+
 if __name__ == "__main__":
     unittest.main()

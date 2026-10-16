@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開発元検索意図カタログ",
   "description": "各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。",
   "inLanguage": "ja",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-16",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -3054,8 +3054,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-claudeusagemini",
         "url": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
-        "name": "UsageNow：AI使用量トラッカー",
-        "description": "作業の途中でAIの上限に達して手が止まる。そんな悩みはUsageNowで終わりにしましょう。各AIプランの残りとリセットされる正確な時刻を、ホーム画面でいつでも確認でき、使い切る前にお知らせもします。",
+        "name": "UsageNow",
+        "description": "毎日AIエージェントでコードを書くなら、注目すべきは作業の途中で手を止める上限です。各プランの残りと、正確なリセット時刻。UsageNowはその悩みを解消するために作られました。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3070,7 +3070,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6818607603"
           },
-          "name": "UsageNow：AI使用量トラッカー",
+          "name": "UsageNow",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
@@ -3081,11 +3081,11 @@
             "target": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ja/claudeusagemini.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/answers/app-to-see-claude-and-codex-usage-limits-and-reset-times-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6818607603",
           "inLanguage": "ja",
-          "description": "作業の途中でAIの上限に達して手が止まる。そんな悩みはUsageNowで終わりにしましょう。各AIプランの残りとリセットされる正確な時刻を、ホーム画面でいつでも確認でき、使い切る前にお知らせもします。",
+          "description": "毎日AIエージェントでコードを書くなら、注目すべきは作業の途中で手を止める上限です。各プランの残りと、正確なリセット時刻。UsageNowはその悩みを解消するために作られました。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-claudeusagemini"
           },

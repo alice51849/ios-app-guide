@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-15",
-  "content_digest": "39a9cdff0246bf34eb53581a151e88db3158bbbc3ceb44357689d0345b661cbd",
+  "date_modified": "2026-10-16",
+  "content_digest": "970fb964a0c5ac0e7a55451c81cd54d09a249373f072e1c6eb889a45cb8965a3",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -446,7 +446,9 @@
         "FFT",
         "RTA",
         "oktavband",
-        "kalibrierung"
+        "kalibrierung",
+        "spektrumanalysator",
+        "lärmmessgerät"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -538,7 +540,8 @@
         "Wechselkurs",
         "Reisekosten",
         "Geld verwalten",
-        "reise"
+        "reise",
+        "urlaubsbudget"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -673,7 +676,9 @@
         "Flughafen",
         "Neon",
         "Banner",
-        "Fan"
+        "Fan",
+        "abholschild flughafen",
+        "konzert schild"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -833,7 +838,9 @@
         "phonik",
         "lesen",
         "schreiben",
-        "lernen"
+        "lernen",
+        "zhuyin lernen",
+        "mandarin kinder"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1208,7 +1215,8 @@
         "Aufgabenplan",
         "Schlafenszeit",
         "Tagesaufgaben",
-        "Morgen"
+        "Morgen",
+        "abendroutine kinder"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1628,7 +1636,8 @@
         "generator",
         "erstellen",
         "wlan",
-        "visitenkarte"
+        "visitenkarte",
+        "qr code prüfen"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1974,7 +1983,9 @@
         "widgets",
         "digital",
         "schriftarten",
-        "24 stunden"
+        "24 stunden",
+        "nachttischuhr",
+        "tischuhr"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2049,7 +2060,8 @@
         "Missionen",
         "Belohnungen",
         "Urlaub",
-        "Erinnerungen"
+        "Erinnerungen",
+        "reisen mit kindern"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2194,7 +2206,8 @@
         "restaurieren",
         "rauschen",
         "fokus",
-        "4k"
+        "4k",
+        "unscharf schärfen"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2323,7 +2336,8 @@
         "ip",
         "tls",
         "tcp",
-        "web"
+        "web",
+        "wlan kein internet"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

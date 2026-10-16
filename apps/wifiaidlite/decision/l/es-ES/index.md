@@ -1,17 +1,17 @@
 ---
-title: "WiFi Aid Lite — Diagnóstico de red fiable | iOS App"
+title: "WiFi Aid Lite — ¿Sin internet? Halla la causa | iOS App"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/es-ES/index.html"
-modified: "2026-10-15"
+modified: "2026-10-16"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid Lite — Diagnóstico de red fiable | iOS App
+# WiFi Aid Lite — ¿Sin internet? Halla la causa | iOS App
 
-Una revisión completa es gratuita, en total para todas las herramientas. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo. • Hacer test — Tests de Wi-Fi y DNS en un toque • Test profundo — Más pruebas y estabilidad de red • Probar una web — Un sitio o internet en general • Pruebas — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexión inestable — Fluctuación • Historial — Registros privados solo en este dispositivo • Nodo conectado — La ubicación precisa identifica el Wi-Fi y el nodo actual Sin cuenta, anuncios ni rastreo. Registros privados solo en este dispositivo. Una revisión completa es gratuita, en total para todas las herramientas. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo.
+Puedes hacer una comprobación completa en total, con cualquier herramienta, sin comprar. Una compra única opcional dentro de la app desbloquea comprobaciones ilimitadas y la comparación de antes y después de tu arreglo: sin suscripciones, anuncios ni rastreo. • Hacer test — Tests de Wi-Fi y DNS en un toque • Test profundo — Más pruebas y estabilidad de red • Probar una web — Un sitio o internet en general • Pruebas — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexión inestable — Fluctuación • Historial — Registros privados solo en este dispositivo • Nodo conectado — La ubicación precisa identifica el Wi-Fi y el nodo actual Sin cuenta, anuncios ni rastreo. Registros privados solo en este dispositivo. Puedes hacer una comprobación completa en total, con cualquier herramienta, sin comprar. Una compra única opcional dentro de la app desbloquea comprobaciones ilimitadas y la comparación de antes y después de tu arreglo: sin suscripciones, anuncios ni rastreo.
 
 - Más
 - Gratis para empezar · desbloqueo único

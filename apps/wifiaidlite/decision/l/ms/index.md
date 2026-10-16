@@ -1,17 +1,17 @@
 ---
-title: "WiFi Aid Lite — Diagnosis rangkaian tepat | iOS App"
+title: "WiFi Aid Lite — Tiada internet? Cari punca | iOS App"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/ms/index.html"
-modified: "2026-10-15"
+modified: "2026-10-16"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid Lite — Diagnosis rangkaian tepat | iOS App
+# WiFi Aid Lite — Tiada internet? Cari punca | iOS App
 
-Cari punca sebenar. Satu pemeriksaan penuh percuma, dikongsi untuk semua alat. Buka kunci seumur hidup sekali bayar pilihan untuk penggunaan tanpa had—tanpa langganan, iklan, atau penjejakan. • Jalankan Semakan — Semak Wi-Fi, DNS dan internet dengan satu ketikan • Semakan Mendalam — Bukti tambahan dan ujian kestabilan • Semak Laman Web — Uji satu laman atau internet luas • Bukti — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Sambungan tidak stabil — Jitter • Sejarah Semakan — Rekod peribadi hanya disimpan pada peranti ini • Nod Tersambung — Lokasi tepat mengenal pasti Wi-Fi dan nod semasa Tiada akaun, iklan, analitik, atau penjejakan. Rekod peribadi hanya disimpan pada peranti ini. Satu pemeriksaan penuh percuma, dikongsi untuk semua alat. Buka kunci seumur hidup sekali bayar pilihan untuk penggunaan tanpa had—tanpa langganan, iklan, atau penjejakan.
+Cari punca sebenar. Tanpa pembelian, anda boleh membuat satu semakan penuh sahaja secara keseluruhan dengan mana-mana alat. Pembelian dalam apl sekali bayar pilihan membuka semakan tanpa had dan perbandingan sebelum dan selepas pembaikan—tanpa langganan, iklan, atau penjejakan. • Jalankan Semakan — Semak Wi-Fi, DNS dan internet dengan satu ketikan • Semakan Mendalam — Bukti tambahan dan ujian kestabilan • Semak Laman Web — Uji satu laman atau internet luas • Bukti — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Sambungan tidak stabil — Jitter • Sejarah Semakan — Rekod peribadi hanya disimpan pada peranti ini • Nod Tersambung — Lokasi tepat mengenal pasti Wi-Fi dan nod semasa Tiada akaun, iklan, analitik, atau penjejakan. Rekod peribadi hanya disimpan pada peranti ini. Tanpa pembelian, anda boleh membuat satu semakan penuh sahaja secara keseluruhan dengan mana-mana alat. Pembelian dalam apl sekali bayar pilihan membuka semakan tanpa had dan perbandingan sebelum dan selepas pembaikan—tanpa langganan, iklan, atau penjejakan.
 
 - Lagi
 - Percuma untuk bermula · buka kunci sekali sahaja

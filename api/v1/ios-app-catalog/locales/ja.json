@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-15",
-  "content_digest": "39a9cdff0246bf34eb53581a151e88db3158bbbc3ceb44357689d0345b661cbd",
+  "date_modified": "2026-10-16",
+  "content_digest": "970fb964a0c5ac0e7a55451c81cd54d09a249373f072e1c6eb889a45cb8965a3",
   "locale": "ja",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -165,7 +165,8 @@
         "充電ケア",
         "充電範囲",
         "充電速度",
-        "データを書き出す"
+        "データを書き出す",
+        "バッテリー 劣化"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -949,7 +950,8 @@
         "台湾",
         "書き順",
         "読み方",
-        "注音符号"
+        "注音符号",
+        "注音 学習"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1379,7 +1381,8 @@
         "保育園",
         "ごはん",
         "身支度",
-        "知育"
+        "知育",
+        "ごほうび シール"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1560,7 +1563,8 @@
         "ローカル処理",
         "一括",
         "PDF",
-        "OCR"
+        "OCR",
+        "個人情報 マスク"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1707,7 +1711,8 @@
         "請負採算",
         "イベント収支",
         "賃貸収支",
-        "黒字化"
+        "黒字化",
+        "プロジェクト 経費"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2333,7 +2338,8 @@
         "焼き付き防止",
         "ナイトモード",
         "大きい文字",
-        "北欧デザイン"
+        "北欧デザイン",
+        "フリップ時計"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2468,7 +2474,8 @@
         "チケット",
         "リマインダー",
         "ホテル",
-        "航空券"
+        "航空券",
+        "旅程"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2725,7 +2732,8 @@
         "IPv4",
         "IPv6",
         "Ping",
-        "TLS"
+        "TLS",
+        "wifi つながらない"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

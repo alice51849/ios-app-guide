@@ -12,8 +12,8 @@
   ],
   "_lumi_catalog": {
     "apiVersion": "1.2.0",
-    "dateModified": "2026-10-15",
-    "contentDigest": "39a9cdff0246bf34eb53581a151e88db3158bbbc3ceb44357689d0345b661cbd",
+    "dateModified": "2026-10-16",
+    "contentDigest": "970fb964a0c5ac0e7a55451c81cd54d09a249373f072e1c6eb889a45cb8965a3",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "ordering": "alphabetical_by_app_name_not_a_ranking",
     "recordCount": 53
@@ -85,10 +85,11 @@
         "文件掃描",
         "文字辨識",
         "論文閱讀",
-        "讀文件"
+        "讀文件",
+        "提示詞管理"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-11T14:33:28Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     },
     {
       "id": "https://apps.apple.com/app/id6784974530",
@@ -107,10 +108,11 @@
         "離線",
         "買斷",
         "弱點",
-        "考前衝刺"
+        "考前衝刺",
+        "英文檢定"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-15T10:09:07Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802423998",
@@ -125,10 +127,13 @@
         "充電保養",
         "充電區間",
         "充電速率",
-        "匯出資料"
+        "匯出資料",
+        "電池檢測",
+        "電池",
+        "電池健康度"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-11T14:33:28Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     },
     {
       "id": "https://apps.apple.com/app/id6794178671",
@@ -294,10 +299,12 @@
         "月事",
         "好朋友",
         "生理紀錄",
-        "白帶"
+        "白帶",
+        "經期 追蹤",
+        "月經 app"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-11T14:33:28Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790418321",
@@ -644,10 +651,11 @@
         "拖延症",
         "生產力",
         "睡眠",
-        "分心"
+        "分心",
+        "app 封鎖"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-11T14:33:28Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     },
     {
       "id": "https://apps.apple.com/app/id6773017109",
@@ -809,10 +817,11 @@
         "塗鴉",
         "點讀",
         "識字",
-        "拼字"
+        "拼字",
+        "兒童 字母"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-11T14:33:28Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     },
     {
       "id": "https://apps.apple.com/app/id6778491147",
@@ -1058,10 +1067,13 @@
         "上學",
         "整理",
         "責任感",
-        "星星"
+        "星星",
+        "兒童 習慣",
+        "獎勵 貼紙",
+        "睡前 習慣"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-15T10:09:07Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     },
     {
       "id": "https://apps.apple.com/app/id6779745474",
@@ -1160,10 +1172,11 @@
         "氣溫",
         "保暖",
         "野餐",
-        "出遊"
+        "出遊",
+        "天氣 穿搭"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-15T10:09:07Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     },
     {
       "id": "https://apps.apple.com/app/id6792850916",
@@ -1235,10 +1248,11 @@
         "計畫表",
         "日計畫",
         "記事",
-        "桌面小工具"
+        "桌面小工具",
+        "代辦事項"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-05T16:20:42Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     },
     {
       "id": "https://apps.apple.com/app/id6790800323",
@@ -1478,10 +1492,11 @@
         "行事曆",
         "票券",
         "庫存",
-        "菜單"
+        "菜單",
+        "qr code 連結 檢查"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-09-28T23:21:21Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     },
     {
       "id": "https://apps.apple.com/app/id6802505528",
@@ -1859,10 +1874,11 @@
         "搭飛機",
         "打發時間",
         "機上",
-        "行前準備"
+        "行前準備",
+        "小孩 旅行"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-15T09:37:06Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     },
     {
       "id": "https://apps.apple.com/app/id6791299610",
@@ -1968,10 +1984,11 @@
         "修復",
         "強化照片",
         "一鍵修圖",
-        "老照片翻新"
+        "老照片翻新",
+        "照片 變清晰"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-11T14:33:28Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     },
     {
       "id": "https://apps.apple.com/app/id6818607603",
@@ -2034,10 +2051,11 @@
         "IPv4",
         "IPv6",
         "DNS",
-        "Ping"
+        "Ping",
+        "wifi 診斷"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-11T14:33:28Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     },
     {
       "id": "https://apps.apple.com/app/id6793414462",
@@ -2160,10 +2178,12 @@
         "全文搜尋",
         "加密",
         "預覽",
-        "離線"
+        "離線",
+        "密碼保護 zip",
+        "開啟 rar 檔案"
       ],
       "language": "zh-Hant",
-      "date_modified": "2026-10-11T14:33:28Z"
+      "date_modified": "2026-10-16T06:58:43Z"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-15",
-  "content_digest": "39a9cdff0246bf34eb53581a151e88db3158bbbc3ceb44357689d0345b661cbd",
+  "date_modified": "2026-10-16",
+  "content_digest": "970fb964a0c5ac0e7a55451c81cd54d09a249373f072e1c6eb889a45cb8965a3",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -162,7 +162,8 @@
         "충전 관리",
         "충전 구간",
         "충전 속도",
-        "데이터 내보내기"
+        "데이터 내보내기",
+        "배터리"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -669,7 +670,8 @@
         "엔화환율",
         "달러환율",
         "유로환율",
-        "저축"
+        "저축",
+        "해외여행 예산"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1252,7 +1254,8 @@
         "기초학습",
         "우주",
         "모험",
-        "행성"
+        "행성",
+        "수학 놀이"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1467,7 +1470,8 @@
         "잘했어",
         "습관표",
         "목표달성",
-        "집안일"
+        "집안일",
+        "아이 생활습관"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1540,7 +1544,8 @@
         "꽃가루",
         "빨래",
         "우산",
-        "양산"
+        "양산",
+        "옷차림 날씨"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1700,7 +1705,8 @@
         "가전케어",
         "리마인더",
         "유지보수",
-        "루틴"
+        "루틴",
+        "마지막 기록"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2670,7 +2676,8 @@
         "흐릿한사진",
         "오래된사진",
         "얼굴보정",
-        "사진편집"
+        "사진편집",
+        "흐린 사진 복구"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2722,7 +2729,10 @@
         "코딩",
         "에이전트",
         "llm",
-        "모니터"
+        "모니터",
+        "codex 사용량 제한",
+        "copilot 사용량",
+        "claude 사용량"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

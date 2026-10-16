@@ -6,7 +6,7 @@
   "name": "Lumi Studio – Katalog der Suchintentionen des Herausgebers",
   "description": "Ein direkt vom Entwickler veröffentlichter Katalog, der zeigt, für wen jede App entwickelt wurde, welche Aufgabe die jeweilige Person erledigen möchte und wie sie direkt zum App Store gelangt.",
   "inLanguage": "de-DE",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-16",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -3120,8 +3120,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-claudeusagemini",
         "url": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
-        "name": "UsageNow: KI-Nutzung Tracker",
-        "description": "Mitten in der Arbeit ans KI-Limit gestoßen? UsageNow zeigt dir direkt auf dem Home-Bildschirm, wie viel von jedem KI-Plan noch übrig ist und wann er",
+        "name": "UsageNow",
+        "description": "Wenn du jeden Tag mit KI-Agenten programmierst, ist das Limit entscheidend, das dich mitten in der Aufgabe stoppt: wie viel von jedem Plan übrig ist und wann er genau zurückgesetzt wird. Genau diese Lücke schließt UsageNow.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3136,7 +3136,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6818607603"
           },
-          "name": "UsageNow: KI-Nutzung Tracker",
+          "name": "UsageNow",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
@@ -3147,11 +3147,11 @@
             "target": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/de-DE/claudeusagemini.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/de-DE/answers/app-to-see-claude-and-codex-usage-limits-and-reset-times-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6818607603",
           "inLanguage": "de-DE",
-          "description": "Mitten in der Arbeit ans KI-Limit gestoßen? UsageNow zeigt dir direkt auf dem Home-Bildschirm, wie viel von jedem KI-Plan noch übrig ist und wann er",
+          "description": "Wenn du jeden Tag mit KI-Agenten programmierst, ist das Limit entscheidend, das dich mitten in der Aufgabe stoppt: wie viel von jedem Plan übrig ist und wann er genau zurückgesetzt wird. Genau diese Lücke schließt UsageNow.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-claudeusagemini"
           },

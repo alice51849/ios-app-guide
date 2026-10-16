@@ -6,7 +6,7 @@
   "name": "Catalogue des intentions de recherche de l’éditeur Lumi Studio",
   "description": "Un catalogue publié directement par le développeur qui indique à qui chaque application est destinée, la tâche à accomplir et l’accès direct à l’App Store.",
   "inLanguage": "fr-FR",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-16",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -3253,7 +3253,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/fr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Une vérification complète est gratuite, tous outils confondus. Déblocage à vie unique en option pour un accès illimité : pas d'abonnement, ni pub, ni suivi",
+        "description": "Une vérification complète au total, avec l'outil de votre choix, est possible sans achat. Un achat intégré unique et facultatif débloque les",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3283,7 +3283,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "fr-FR",
-          "description": "Une vérification complète est gratuite, tous outils confondus. Déblocage à vie unique en option pour un accès illimité : pas d'abonnement, ni pub, ni suivi",
+          "description": "Une vérification complète au total, avec l'outil de votre choix, est possible sans achat. Un achat intégré unique et facultatif débloque les",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-FR.jsonld#offer-wifiaidlite"
           },

@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-15",
-  "content_digest": "39a9cdff0246bf34eb53581a151e88db3158bbbc3ceb44357689d0345b661cbd",
+  "date_modified": "2026-10-16",
+  "content_digest": "970fb964a0c5ac0e7a55451c81cd54d09a249373f072e1c6eb889a45cb8965a3",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -27,7 +27,8 @@
         "offline",
         "estudo",
         "prova",
-        "rascunho"
+        "rascunho",
+        "notas à mão"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -415,7 +416,8 @@
         "japonês",
         "coreano",
         "iniciante",
-        "áudio"
+        "áudio",
+        "guia de conversação"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1336,7 +1338,8 @@
         "foto",
         "pdf",
         "exif",
-        "senha"
+        "senha",
+        "tarjar pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1377,7 +1380,10 @@
         "compras",
         "calendário",
         "widget",
-        "organização"
+        "organização",
+        "lista de tarefas",
+        "checklist",
+        "to do list"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1455,7 +1461,8 @@
         "margem lucro",
         "rentabilidade cliente",
         "rateio de custos",
-        "análise cruzada"
+        "análise cruzada",
+        "despesas do projeto"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2084,7 +2091,8 @@
         "missões",
         "recompensas",
         "férias",
-        "memórias"
+        "memórias",
+        "jogos para viagem de carro"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

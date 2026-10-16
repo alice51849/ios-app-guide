@@ -2,7 +2,7 @@
 title: "ルミのおてんき星 おでかけ指数 — 今日の服装と傘がわかる天気予報 | iOS App"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/ja/index.html"
-modified: "2026-10-15"
+modified: "2026-10-16"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

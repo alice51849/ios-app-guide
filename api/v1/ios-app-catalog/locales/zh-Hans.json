@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-15",
-  "content_digest": "39a9cdff0246bf34eb53581a151e88db3158bbbc3ceb44357689d0345b661cbd",
+  "date_modified": "2026-10-16",
+  "content_digest": "970fb964a0c5ac0e7a55451c81cd54d09a249373f072e1c6eb889a45cb8965a3",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -633,7 +633,8 @@
         "旅费",
         "海外消费",
         "港币",
-        "记账工具"
+        "记账工具",
+        "出国预算"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1460,7 +1461,8 @@
         "常规",
         "整理",
         "责任",
-        "孩子"
+        "孩子",
+        "家务 表"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2074,7 +2076,8 @@
         "门票",
         "菜单",
         "海报",
-        "美化"
+        "美化",
+        "二维码 安全检测"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2133,7 +2136,9 @@
         "快捷指令",
         "美食",
         "购物",
-        "网页"
+        "网页",
+        "收藏 链接",
+        "链接 整理"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

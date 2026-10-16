@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開發者搜尋意圖目錄",
   "description": "第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。",
   "inLanguage": "zh-Hant",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-16",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -3120,8 +3120,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-claudeusagemini",
         "url": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
-        "name": "UsageNow：AI 用量與額度追蹤",
-        "description": "工作做到一半，AI 額度突然用完？UsageNow 直接在主畫面告訴你每個 AI 方案還剩多少用量，以及確切的重置時間，並在額度用完之前提醒你。",
+        "name": "UsageNow",
+        "description": "如果你每天都用 AI 代理寫程式，真正該留意的是會讓你工作做到一半被迫中斷的限制：每個方案還剩多少，以及確切何時重置。UsageNow 正是為了補上這個缺口而打造。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3136,7 +3136,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6818607603"
           },
-          "name": "UsageNow：AI 用量與額度追蹤",
+          "name": "UsageNow",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
@@ -3147,11 +3147,11 @@
             "target": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/claudeusagemini.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/app-to-see-claude-and-codex-usage-limits-and-reset-times-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6818607603",
           "inLanguage": "zh-Hant",
-          "description": "工作做到一半，AI 額度突然用完？UsageNow 直接在主畫面告訴你每個 AI 方案還剩多少用量，以及確切的重置時間，並在額度用完之前提醒你。",
+          "description": "如果你每天都用 AI 代理寫程式，真正該留意的是會讓你工作做到一半被迫中斷的限制：每個方案還剩多少，以及確切何時重置。UsageNow 正是為了補上這個缺口而打造。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-claudeusagemini"
           },

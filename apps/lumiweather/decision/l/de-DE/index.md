@@ -2,7 +2,7 @@
 title: "Lumi Wetter: Was ziehe ich an? — Was anziehen bei Regen & UV | iOS App"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/de-DE/index.html"
-modified: "2026-10-15"
+modified: "2026-10-16"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

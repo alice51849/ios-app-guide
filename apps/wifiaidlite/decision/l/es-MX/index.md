@@ -1,17 +1,17 @@
 ---
-title: "WiFi Aid Lite — Diagnóstico de red confiable | iOS App"
+title: "WiFi Aid Lite — ¿Sin internet? Checa la causa | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/es-MX/index.html"
-modified: "2026-10-15"
+modified: "2026-10-16"
 app_store_id: "6793414462"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid Lite — Diagnóstico de red confiable | iOS App
+# WiFi Aid Lite — ¿Sin internet? Checa la causa | iOS App
 
-Una revisión completa es gratuita, en total para todas las herramientas. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo. • Iniciar revisión — Revisa Wi-Fi, DNS e internet con un toque • Revisión profunda — Más pruebas y muestras de estabilidad • Revisar un sitio — Un sitio o todo internet • Pruebas — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexión inestable — Fluctuación • Historial de revisiones — Registros privados solo en este dispositivo • Nodo conectado — La ubicación precisa identifica el Wi-Fi y el nodo actual Sin cuenta, anuncios, análisis ni rastreo. Registros privados solo en este dispositivo. Una revisión completa es gratuita, en total para todas las herramientas. Desbloqueo de por vida opcional de un solo pago para uso ilimitado: sin suscripciones, anuncios ni rastreo.
+Puedes hacer una revisión completa en total, con cualquier herramienta, sin comprar. Una compra única opcional dentro de la app desbloquea revisiones ilimitadas y la comparación de antes y después de tu corrección: sin suscripciones, anuncios ni rastreo. • Iniciar revisión — Revisa Wi-Fi, DNS e internet con un toque • Revisión profunda — Más pruebas y muestras de estabilidad • Revisar un sitio — Un sitio o todo internet • Pruebas — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexión inestable — Fluctuación • Historial de revisiones — Registros privados solo en este dispositivo • Nodo conectado — La ubicación precisa identifica el Wi-Fi y el nodo actual Sin cuenta, anuncios, análisis ni rastreo. Registros privados solo en este dispositivo. Puedes hacer una revisión completa en total, con cualquier herramienta, sin comprar. Una compra única opcional dentro de la app desbloquea revisiones ilimitadas y la comparación de antes y después de tu corrección: sin suscripciones, anuncios ni rastreo.
 
 - Más
 - Gratis para empezar · desbloqueo único

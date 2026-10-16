@@ -5,7 +5,7 @@
   "creative_count": 53,
   "current_inventory": {
     "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "2682632db12d7b6cb12594d309ba9e35e9473fae983d5a71204e533c8058715a",
+    "copy_sha256": "07fcde5fdf5230d0a253abd19853aeb66e3bb2b4284dd30e0041ee29f280d52a",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 53
@@ -24,7 +24,7 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "ede6507b75fbc337ef60c75e09eb8af94b78e496b78bcb449a9f11b70df9558f",
+      "generated_sha256": "85a365434161883c56dc9c67aaf26c7f8be87944b7f42753bc258f6f9e118179",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
@@ -209,7 +209,7 @@
       "relative_path": "en-US/decide/picclear/recover-storage-from-photo-clutter.html"
     },
     {
-      "generated_sha256": "68a23771193027da147bd71ca94f010457555eed58642709a051ab40ea499ebd",
+      "generated_sha256": "0f68ca0beb05c88b4bff9e38e6560e25e18bf3ed9bfdf85b9365962dede9cee4",
       "kind": "route_html",
       "relative_path": "en-US/decide/qrcodehalo/qr-scanner-that-shows-the-full-link-before-opening.html"
     },
@@ -372,14 +372,14 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "2682632db12d7b6cb12594d309ba9e35e9473fae983d5a71204e533c8058715a",
+    "copy_sha256": "07fcde5fdf5230d0a253abd19853aeb66e3bb2b4284dd30e0041ee29f280d52a",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 53,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "0378e03703e0bc96d6a1c1a866270ae8562cf55fe6286637869967cb74d2b984",
+  "manifest_digest": "fe7a614bbd661a5e1e969d20e7c2163259f763acdcde19117fc4dbbe01f97704",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "32f51629bc2bc159afdd958cd3cc4506aeaf50825f526660e358d75697ed4f33",
+  "release_contract_digest": "17fce3a8994dfd59fa476be22d6bc9ab7ddc33cc332f29bdffb1b0f267544108",
   "release_state": "exact",
   "route_count": 66,
   "routes": [
@@ -988,7 +988,7 @@
       "creative_id": "qrcodehalo:qr-scanner-that-shows-the-full-link-before-opening:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "68a23771193027da147bd71ca94f010457555eed58642709a051ab40ea499ebd",
+      "output_sha256": "0f68ca0beb05c88b4bff9e38e6560e25e18bf3ed9bfdf85b9365962dede9cee4",
       "record_digest": "ec3ed3de4af19587449fb077e724296fdc141f228bd0ad5a7d9ad6ca6ceee275",
       "relative_path": "en-US/decide/qrcodehalo/qr-scanner-that-shows-the-full-link-before-opening.html",
       "route_id": "en-US:qrcodehalo:qr-scanner-that-shows-the-full-link-before-opening",
@@ -1508,5 +1508,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "2641e9818035a6c8615ba30080139cf94b58e412b63830c254003c475e6fa33f"
+  "source_contract_digest": "1c227efdbec176b699ef781ad274865330798b446265ff0daea2db6ce62baf93"
 }

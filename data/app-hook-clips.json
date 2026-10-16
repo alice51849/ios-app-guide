@@ -1,10 +1,10 @@
 {
   "name": "Lumi Studio App hook clips",
-  "description": "7-second App Store hook clips embedded on the localized App guide pages; uploadDate is the first day each clip URL was seen.",
+  "description": "Short App Store hook clips (7 s standard) embedded on the localized App guide pages; uploadDate is the first day each clip URL was seen.",
   "video_sitemap": "https://open.cait518.cc/ios-app-guide/sitemap_hook_clips.xml",
-  "clip_count": 189,
-  "app_count": 39,
-  "page_count": 1950,
+  "clip_count": 245,
+  "app_count": 52,
+  "page_count": 2600,
   "clips": [
     {
       "app_key": "aibriefpack",
@@ -116,27 +116,33 @@
     },
     {
       "app_key": "claudeusagemini",
+      "locale": "de",
+      "url": "https://files.catbox.moe/ixzy6p.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "claudeusagemini",
       "locale": "en",
-      "url": "https://files.catbox.moe/cwvmmh.mp4",
-      "upload_date": "2026-10-14"
+      "url": "https://files.catbox.moe/n106qp.mp4",
+      "upload_date": "2026-10-16"
     },
     {
       "app_key": "claudeusagemini",
       "locale": "ja",
-      "url": "https://files.catbox.moe/wigyoz.mp4",
-      "upload_date": "2026-10-14"
+      "url": "https://files.catbox.moe/5t4uhq.mp4",
+      "upload_date": "2026-10-16"
     },
     {
       "app_key": "claudeusagemini",
       "locale": "ko",
-      "url": "https://files.catbox.moe/vqldln.mp4",
-      "upload_date": "2026-10-14"
+      "url": "https://files.catbox.moe/kslctz.mp4",
+      "upload_date": "2026-10-16"
     },
     {
       "app_key": "claudeusagemini",
       "locale": "zh-Hant",
-      "url": "https://files.catbox.moe/015xmy.mp4",
-      "upload_date": "2026-10-14"
+      "url": "https://files.catbox.moe/ufv87k.mp4",
+      "upload_date": "2026-10-16"
     },
     {
       "app_key": "countdaysnow",
@@ -235,6 +241,30 @@
       "upload_date": "2026-10-14"
     },
     {
+      "app_key": "dailymate",
+      "locale": "en",
+      "url": "https://files.catbox.moe/bue2n2.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "dailymate",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/2oq7mt.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "dailymate",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/0df4pg.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "dailymate",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/40zf82.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
       "app_key": "dailymatelite",
       "locale": "en",
       "url": "https://files.catbox.moe/kdik5x.mp4",
@@ -295,6 +325,36 @@
       "upload_date": "2026-10-14"
     },
     {
+      "app_key": "gmoney",
+      "locale": "en",
+      "url": "https://files.catbox.moe/txsq79.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "gmoney",
+      "locale": "id",
+      "url": "https://files.catbox.moe/jgixdt.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "gmoney",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/lk7ile.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "gmoney",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/nck8iy.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "gmoney",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/ve63hr.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
       "app_key": "gmoneylite",
       "locale": "en",
       "url": "https://files.catbox.moe/fbtd4k.mp4",
@@ -317,6 +377,66 @@
       "locale": "zh-Hant",
       "url": "https://files.catbox.moe/dndedr.mp4",
       "upload_date": "2026-10-14"
+    },
+    {
+      "app_key": "hourstag",
+      "locale": "en",
+      "url": "https://files.catbox.moe/k601zw.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "hourstag",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/g0j3nl.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "hourstag",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/xedqbn.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "hourstag",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/7rqslz.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "ledmovingtext",
+      "locale": "de",
+      "url": "https://files.catbox.moe/7z16wk.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "ledmovingtext",
+      "locale": "en",
+      "url": "https://files.catbox.moe/uwn4z2.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "ledmovingtext",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/7lehsp.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "ledmovingtext",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/0iagip.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "ledmovingtext",
+      "locale": "th",
+      "url": "https://files.catbox.moe/mc5epe.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "ledmovingtext",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/e0vt89.mp4",
+      "upload_date": "2026-10-16"
     },
     {
       "app_key": "lockhour",
@@ -373,6 +493,30 @@
       "upload_date": "2026-10-14"
     },
     {
+      "app_key": "lumibopomofopro",
+      "locale": "en",
+      "url": "https://files.catbox.moe/b2ld27.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "lumibopomofopro",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/wkychp.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "lumibopomofopro",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/2emopd.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "lumibopomofopro",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/h586c3.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
       "app_key": "lumiletters",
       "locale": "en",
       "url": "https://files.catbox.moe/qmraui.mp4",
@@ -397,6 +541,30 @@
       "upload_date": "2026-10-14"
     },
     {
+      "app_key": "lumiletterspro",
+      "locale": "en",
+      "url": "https://files.catbox.moe/jks7u7.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "lumiletterspro",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/lexhbf.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "lumiletterspro",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/ok1uxw.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "lumiletterspro",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/n8dzp3.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
       "app_key": "lumimath",
       "locale": "en",
       "url": "https://files.catbox.moe/vk60cy.mp4",
@@ -419,6 +587,30 @@
       "locale": "zh-Hant",
       "url": "https://files.catbox.moe/rc6phy.mp4",
       "upload_date": "2026-10-14"
+    },
+    {
+      "app_key": "lumimathpro",
+      "locale": "en",
+      "url": "https://files.catbox.moe/8pgcbn.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "lumimathpro",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/a3fdk9.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "lumimathpro",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/up1dlk.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "lumimathpro",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/777fyj.mp4",
+      "upload_date": "2026-10-16"
     },
     {
       "app_key": "lumimission",
@@ -455,6 +647,30 @@
       "locale": "zh-Hant",
       "url": "https://files.catbox.moe/5hp3l6.mp4",
       "upload_date": "2026-10-14"
+    },
+    {
+      "app_key": "lumimissionpro",
+      "locale": "en",
+      "url": "https://files.catbox.moe/993xuz.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "lumimissionpro",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/1ged0k.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "lumimissionpro",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/810h89.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "lumimissionpro",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/xh08zx.mp4",
+      "upload_date": "2026-10-16"
     },
     {
       "app_key": "lumiweather",
@@ -865,6 +1081,30 @@
       "upload_date": "2026-10-14"
     },
     {
+      "app_key": "snapport",
+      "locale": "en",
+      "url": "https://files.catbox.moe/fag79w.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "snapport",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/pumpbq.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "snapport",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/yn4j21.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "snapport",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/xrcahc.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
       "app_key": "snapportlite",
       "locale": "cs",
       "url": "https://files.catbox.moe/gi3g71.mp4",
@@ -953,6 +1193,54 @@
       "locale": "zh-Hant",
       "url": "https://files.catbox.moe/0ctuk4.mp4",
       "upload_date": "2026-10-14"
+    },
+    {
+      "app_key": "studydown",
+      "locale": "en",
+      "url": "https://files.catbox.moe/ginoyv.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "studydown",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/1gzw3r.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "studydown",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/c50eax.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "studydown",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/m3bay1.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "tripbee",
+      "locale": "en",
+      "url": "https://files.catbox.moe/lt4l3w.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "tripbee",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/ry36ln.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "tripbee",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/q53ux9.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "tripbee",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/w93zaw.mp4",
+      "upload_date": "2026-10-16"
     },
     {
       "app_key": "tripbeelite",
@@ -1051,6 +1339,30 @@
       "upload_date": "2026-10-14"
     },
     {
+      "app_key": "wifiaid",
+      "locale": "en",
+      "url": "https://files.catbox.moe/fw8rsu.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "wifiaid",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/s367cp.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "wifiaid",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/ju6dy3.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "wifiaid",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/elrj8r.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
       "app_key": "wifiaidlite",
       "locale": "en",
       "url": "https://files.catbox.moe/hj5ucn.mp4",
@@ -1079,6 +1391,30 @@
       "locale": "zh-Hant",
       "url": "https://files.catbox.moe/r89l75.mp4",
       "upload_date": "2026-10-14"
+    },
+    {
+      "app_key": "wordmate",
+      "locale": "en",
+      "url": "https://files.catbox.moe/5ieeti.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "wordmate",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/ut2fgw.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "wordmate",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/0kxulu.mp4",
+      "upload_date": "2026-10-16"
+    },
+    {
+      "app_key": "wordmate",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/q4brz2.mp4",
+      "upload_date": "2026-10-16"
     },
     {
       "app_key": "wordmatelite",

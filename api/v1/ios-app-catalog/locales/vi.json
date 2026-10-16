@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-15",
-  "content_digest": "39a9cdff0246bf34eb53581a151e88db3158bbbc3ceb44357689d0345b661cbd",
+  "date_modified": "2026-10-16",
+  "content_digest": "970fb964a0c5ac0e7a55451c81cd54d09a249373f072e1c6eb889a45cb8965a3",
   "locale": "vi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -394,7 +394,8 @@
         "Pháp",
         "Đức",
         "người mới",
-        "nói"
+        "nói",
+        "câu giao tiếp hàng ngày"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -996,7 +997,8 @@
         "tập trung",
         "ngoại tuyến",
         "trò chơi",
-        "học"
+        "học",
+        "phonics cho bé"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1377,7 +1379,8 @@
         "tài liệu",
         "pdf",
         "quét",
-        "siêu dữ liệu"
+        "siêu dữ liệu",
+        "che thông tin"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1542,7 +1545,8 @@
         "bảng",
         "dự án",
         "thiết kế",
-        "luận văn"
+        "luận văn",
+        "tóm tắt một trang"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1601,7 +1605,8 @@
         "hạt",
         "sáng",
         "cam",
-        "filter"
+        "filter",
+        "filter phim"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1870,7 +1875,8 @@
         "thời",
         "gian",
         "OCR",
-        "photo cleaner"
+        "photo cleaner",
+        "sắp xếp ảnh chụp màn hình"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2362,7 +2368,8 @@
         "kết nối",
         "ipv4",
         "ipv6",
-        "ping"
+        "ping",
+        "chẩn đoán wifi"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2441,7 +2448,8 @@
         "giao tiếp",
         "du lịch",
         "ngoại ngữ",
-        "offline"
+        "offline",
+        "từ mỗi ngày"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2521,7 +2529,10 @@
         "trích xuất",
         "chia nhỏ",
         "hình ảnh",
-        "7zip"
+        "7zip",
+        "zip có mật khẩu",
+        "giải nén 7z",
+        "quản lý tệp nén"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

@@ -1,8 +1,12 @@
 name: Utility card daily
 
-# One useful card a day, rotating: TOEIC-style business English word (Aim990 /
-# Wordmate Lite), 注音 of the day for kids (Lumi注音星球), passport / ID photo
-# size (Snapport Lite). Telegram and Instagram every day; Threads only when the
+# One useful card a day, rotating through eight types: TOEIC-style business
+# English word (Aim990 / Wordmate Lite), 注音 of the day for kids (Lumi注音星球),
+# passport / ID photo size (Snapport Lite), ABC letter of the day (Lumi Letters
+# Lite), let's count (Lumi Math Planet), five bedtime steps (Lumi Mission
+# Planet), a project income-minus-expenses example (MoneyTag) and a recurring
+# chore with a suggested interval (Mochi DoneStamp). Each card shows a real App
+# Store screenshot of its app. Telegram and Instagram every day; Threads only when the
 # account stays at 3 posts that day (picture/queue/countdown slot + hook clips).
 # Zero token: the card is drawn from .github/growth/utility-cards.json by
 # .github/scripts/utility_cards.py. Each post's link goes on the promotion page.

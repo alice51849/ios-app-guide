@@ -20,24 +20,29 @@ DAY0 = U.EPOCH
 
 class PickTest(unittest.TestCase):
     def test_types_rotate_daily_and_start_at_the_top_of_each_list(self):
-        cards = [U.pick(DAY0 + dt.timedelta(days=i)) for i in range(6)]
-        self.assertEqual([c["type"] for c in cards], ["word", "zhuyin", "photo"] * 2)
+        n = len(U.TYPES)
+        cards = [U.pick(DAY0 + dt.timedelta(days=i)) for i in range(2 * n)]
+        self.assertEqual([c["type"] for c in cards], list(U.TYPES) * 2)
+        self.assertEqual(U.TYPES[:3], ("word", "zhuyin", "photo"))
         self.assertEqual(cards[1]["item"]["symbol"], "ㄅ")
-        self.assertEqual(cards[4]["item"]["symbol"], "ㄆ")
+        self.assertEqual(cards[n + 1]["item"]["symbol"], "ㄆ")
         self.assertEqual(cards[0]["item"]["word"], "invoice")
 
     def test_every_item_and_locale_comes_round_and_apps_match_types(self):
         data = U.load()
-        seen = {"word": set(), "zhuyin": set(), "photo": set()}
-        for i in range(3 * 37 * 4):
+        seen = {t: set() for t in U.TYPES}
+        for i in range(len(U.TYPES) * 37 * 4):
             c = U.pick(DAY0 + dt.timedelta(days=i), data)
             seen[c["type"]].add((c["item"]["id"], c["locale"]))
             self.assertIn(c["locale"], U.LOCALES[c["type"]])
-            self.assertEqual(c["app"], {"zhuyin": "lumibopomofo", "photo": "snapportlite"}.get(c["type"], c["app"]))
+            self.assertEqual(c["app"], U.TYPE_APP.get(c["type"], c["app"]))
             self.assertIn(c["app"], U.APPS)
         self.assertEqual(len({i for i, _ in seen["zhuyin"]}), 37)
         self.assertEqual({loc for _, loc in seen["photo"]}, {"en", "zh-Hant", "ja", "ko"})
-        self.assertEqual({c["app"] for c in (U.pick(DAY0 + dt.timedelta(days=3 * k)) for k in range(2))},
+        for kind in ("letter", "count", "bedtime", "ledger", "chore"):  # every item, in every locale it is shown in
+            self.assertEqual({i for i, _ in seen[kind]}, {x["id"] for x in data[U.LISTS[kind]]}, kind)
+            self.assertEqual({loc for _, loc in seen[kind]}, set(U.LOCALES[kind]), kind)
+        self.assertEqual({c["app"] for c in (U.pick(DAY0 + dt.timedelta(days=len(U.TYPES) * k)) for k in range(2))},
                          {"aim990", "wordmatelite"})
 
     def test_curated_data_is_complete_for_every_locale(self):
@@ -50,8 +55,8 @@ class PickTest(unittest.TestCase):
         for p in data["photos"]:
             self.assertEqual(set(p["doc"]), {"en", "zh-Hant", "ja", "ko"})
             self.assertIn(p["bg"], U.BACKGROUND)
-        shown = {"aim990": U.LOCALES["word"], "wordmatelite": U.LOCALES["word"],
-                 "lumibopomofo": U.LOCALES["zhuyin"], "snapportlite": U.LOCALES["photo"]}
+        shown = {"aim990": U.LOCALES["word"], "wordmatelite": U.LOCALES["word"]}
+        shown.update({U.TYPE_APP[t]: U.LOCALES[t] for t in U.TYPE_APP})
         for app, locales in shown.items():  # every locale an app appears in has its pitch and screenshot
             for loc in locales:
                 self.assertIn(loc, U.APPS[app]["pitch"])
@@ -146,6 +151,117 @@ class PostTest(unittest.TestCase):
         self.assertIn("| 每日實用卡 | 已發 2 則 · 最新 10/15 證件照尺寸 [TG](https://t.me/x/6) [IG](https://ig/p/1) |", md)
 
 
+class NewTypesTest(unittest.TestCase):
+    """Letter / count / bedtime / ledger / chore cards (Lumi Letters, Lumi Math, Lumi Mission, MoneyTag, DoneStamp)."""
+    NEW = ("letter", "count", "bedtime", "ledger", "chore")
+
+    def test_each_list_covers_two_weeks_with_complete_copy(self):
+        data = U.load()
+        for kind in self.NEW:
+            items = data[U.LISTS[kind]]
+            self.assertGreaterEqual(len(items), 14, kind)  # two weeks of this type without a repeat
+            self.assertEqual(len({x["id"] for x in items}), len(items), kind)
+        locs = set(U.ALL4)
+        for x in data["letters"]:
+            self.assertEqual(len(x["letter"]), 1)
+            self.assertEqual(set(x["meaning"]), locs)
+        self.assertEqual("".join(x["letter"] for x in data["letters"]), "ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+        for x in data["counting"]:
+            self.assertTrue(1 <= x["n"] <= 20)
+            say = data["count_things"][x["thing"]]
+            self.assertEqual(set(say), locs)
+            for loc in ("zh-Hant", "ja", "ko"):
+                self.assertIn("{n}", say[loc])
+        for x in data["bedtime"]:
+            self.assertEqual(set(x["theme"]), locs)
+            self.assertEqual(len(x["steps"]), 5)
+            self.assertEqual(len(set(x["steps"])), 5)
+            for st in x["steps"]:
+                self.assertEqual(set(data["bedtime_steps"][st]), locs)
+        for x in data["ledger"]:
+            self.assertEqual(set(x["project"]), locs)
+            for e in x["income"] + x["expenses"]:
+                self.assertEqual(set(e["label"]), locs)
+                self.assertIsInstance(e["amount"], int)
+                self.assertGreater(e["amount"], 0)
+            self.assertGreaterEqual(U.ledger_net(x), 0)
+        hedge = {"zh-Hant": "建議", "en": "Suggested", "ja": "目安", "ko": "권장"}
+        for x in data["chores"]:
+            self.assertEqual(set(x["task"]), locs)
+            for loc, word in hedge.items():  # intervals are always worded as a suggestion
+                self.assertIn(word, x["every"][loc], (x["id"], loc))
+
+    def test_ledger_rows_add_up(self):
+        data = U.load()
+        for x in data["ledger"]:
+            card = {"type": "ledger", "item": x, "locale": "en", "app": "moneytag", "key": "k"}
+            _, _, body = U.lines(card)
+            self.assertEqual(len(body), len(x["income"]) + len(x["expenses"]) + 1)
+            self.assertTrue(body[-1].endswith(U.money(U.ledger_net(x))))
+        trip = next(x for x in data["ledger"] if x["id"] == "trip")
+        self.assertEqual(U.ledger_net(trip), 20000 - 9600 - 4200 - 5100)
+
+    def test_count_lines_follow_the_number(self):
+        self.assertEqual(U.count_lines(3, "en"), (None, "Hold up 3 on one hand"))
+        self.assertEqual(U.count_lines(7, "en")[0], "5 + 2 = 7")
+        self.assertEqual(U.count_lines(10, "zh-Hant")[0], "5 + 5 = 10")
+        self.assertEqual(U.count_lines(13, "ko")[0], "10 + 3 = 13")
+        self.assertEqual(U.count_lines(20, "ja")[0], "10 + 10 = 20")
+        c = {"type": "count", "item": U._resolve("count", {"id": "x", "n": 1, "thing": "star"}, U.load()),
+             "locale": "en", "app": "lumimath", "key": "k"}
+        self.assertEqual(U.lines(c)[2][0], "1 star")
+
+    def test_captions_name_the_localized_app_and_carry_no_price_words(self):
+        import re
+        banned = re.compile(r"\bfree\b|\bpro\b|免費|無料|무료|\$|NT\$|￥|¥|₩|price|價格|価格|가격", re.I)
+        data = U.load()
+        for i in range(len(U.TYPES) * 26):
+            day = DAY0 + dt.timedelta(days=i)
+            c = U.pick(day, data)
+            if c["type"] not in self.NEW:
+                continue
+            text = U.caption(c, day)
+            self.assertIn(U.app_name(c), text)
+            self.assertIsNone(banned.search(text), text)
+            self.assertEqual(U.qa_problems({"caption": text}, c, "threads", online=False), [], text)
+        self.assertIn("ct=ut_mochidonestamp_th", U.store_url(U.pick(DAY0 + dt.timedelta(days=7)), "th"))
+        self.assertTrue(U.store_url(U.pick(DAY0 + dt.timedelta(days=6)), "tg").startswith(
+            "https://apps.apple.com/tw/app/id6801956402?"))
+        for app in U.APPS:
+            for ch in ("tg", "th", "ig", "qa"):
+                self.assertLessEqual(len(f"ut_{app}_{ch}"), 40)
+
+    @unittest.skipUnless(Path(U.cd.FONT).exists(), "CJK font not installed")
+    def test_pitch_lines_fit_one_line_under_the_store_pill(self):
+        from PIL import Image, ImageDraw, ImageFont
+        draw = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+        for app, a in U.APPS.items():
+            for loc, text in a["pitch"].items():
+                font = ImageFont.truetype(U.cd.FONT, U.cd.MIN_TEXT, index=U.cd.FONT_INDEX.get(loc, 0))
+                self.assertLessEqual(draw.textlength(text, font=font), 1080 - 120, (app, loc))
+
+    @unittest.skipUnless(Path(U.cd.FONT).exists(), "CJK font not installed")
+    def test_every_new_card_in_every_locale_passes_the_qa_gate(self):
+        data = U.load()
+        todo = {(t, loc) for t in self.NEW for loc in U.LOCALES[t]}
+        done = 0
+        with tempfile.TemporaryDirectory() as tmp:
+            for i in range(len(U.TYPES) * 14 * 4):  # two weeks of each type, each locale at least once
+                day = DAY0 + dt.timedelta(days=i)
+                c = U.pick(day, data)
+                if c["type"] not in self.NEW:
+                    continue
+                out = Path(tmp) / f"n{i}.jpg"
+                meta = U.make(out, day, data)
+                card = U.card_from_meta(meta, data)
+                for ch in ("telegram", "instagram", "threads"):
+                    self.assertEqual(U.qa_problems(meta, card, ch, image=out, online=False), [], f"{meta['key']} {ch}")
+                todo.discard((c["type"], c["locale"]))
+                done += 1
+        self.assertEqual(todo, set())
+        self.assertGreaterEqual(done, 5 * 14)
+
+
 @unittest.skipUnless(Path(U.cd.FONT).exists(), "CJK font not installed")
 class SearchTest(unittest.TestCase):
     def test_instagram_card_gets_alt_text_and_keyword_tags(self):
@@ -165,7 +281,7 @@ class SearchTest(unittest.TestCase):
 class MakeTest(unittest.TestCase):
     def test_every_type_draws_a_card_with_meta(self):
         with tempfile.TemporaryDirectory() as tmp:
-            for i in range(3):
+            for i in range(len(U.TYPES)):
                 out = Path(tmp) / f"c{i}.jpg"
                 meta = U.make(out, DAY0 + dt.timedelta(days=i))
                 self.assertTrue(out.exists())
@@ -211,7 +327,7 @@ class LegibilityTest(unittest.TestCase):
 
     def test_every_card_of_a_full_rotation_passes_the_qa_gate(self):
         with tempfile.TemporaryDirectory() as tmp:
-            for i in range(12):
+            for i in range(2 * len(U.TYPES)):
                 day = DAY0 + dt.timedelta(days=i)
                 out = Path(tmp) / f"c{i}.jpg"
                 meta = U.make(out, day)

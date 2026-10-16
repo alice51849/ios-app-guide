@@ -2,12 +2,21 @@
 """Daily utility cards: one genuinely useful image a day, branded with the app
 that does the job (zero token).
 
-Three card types take turns day by day, all from curated static lists in
+Eight card types take turns day by day, all from curated static lists in
 .github/growth/utility-cards.json (no paid API, no model at runtime):
 
 - word    TOEIC-style business English word of the day -> Aim990 / Wordmate Lite
 - zhuyin  注音 of the day for kids (zh-Hant)            -> Lumi注音星球
 - photo   passport / ID photo size of the day            -> Snapport Lite
+- letter  ABC letter of the day + a first word          -> Lumi Letters Lite
+- count   number of the day, counted out on ten-frames  -> Lumi Math Planet
+- bedtime five bedtime steps for small children         -> Lumi Mission Planet
+- ledger  one project's income minus expenses, worked   -> MoneyTag
+- chore   an easily forgotten recurring chore + a
+          conservative suggested interval               -> Mochi DoneStamp
+
+The app screen on every card is a real App Store screenshot of that app
+(assets/utility/<app>_<locale>.png, taken from the public iTunes Lookup API).
 
 Weather-style and currency cards are left out on purpose: the repo has no
 free keyless data source for them.
@@ -39,8 +48,14 @@ DATA = GROWTH / "utility-cards.json"
 CLIPS = GROWTH / "clips.json"
 ASSETS = GROWTH / "assets" / "utility"  # localized App Store screenshots
 STORE = {"ko": "kr", "zh-Hant": "tw", "ja": "jp", "en": "us"}
-TYPES = ("word", "zhuyin", "photo")
-LOCALES = {"word": ("zh-Hant", "ja", "ko", "en"), "zhuyin": ("zh-Hant",), "photo": ("en", "zh-Hant", "ja", "ko")}
+TYPES = ("word", "zhuyin", "photo", "letter", "count", "bedtime", "ledger", "chore")
+ALL4 = ("zh-Hant", "en", "ja", "ko")
+LOCALES = {"word": ("zh-Hant", "ja", "ko", "en"), "zhuyin": ("zh-Hant",), "photo": ("en", "zh-Hant", "ja", "ko"),
+           "letter": ALL4, "count": ALL4, "bedtime": ALL4, "ledger": ALL4, "chore": ALL4}
+LISTS = {"word": "words", "zhuyin": "zhuyin", "photo": "photos", "letter": "letters", "count": "counting",
+         "bedtime": "bedtime", "ledger": "ledger", "chore": "chores"}  # curated list per type in DATA
+TYPE_APP = {"zhuyin": "lumibopomofo", "photo": "snapportlite", "letter": "lumiletters", "count": "lumimath",
+            "bedtime": "lumimission", "ledger": "moneytag", "chore": "mochidonestamp"}  # word: Aim990 / Wordmate
 EPOCH = dt.date(2026, 10, 15)  # day 0 of the rotation: first word, ㄅ, first photo size
 THREADS_CAP = 3  # posts a day on the Threads account, everything included
 
@@ -56,24 +71,75 @@ APPS = {
     "snapportlite": {"id": "6792856304", "name": "Snapport Lite", "colors": ("#3b2a6b", "#8a6fd1", "#ffe3f1"),
                      "pitch": {"zh-Hant": "在家拍證件照，35 種尺寸範本", "ja": "自宅で証明写真、35種類のサイズ",
                                "ko": "집에서 증명사진, 35가지 규격", "en": "ID photos at home, 35 size presets"}},
+    # Pitch lines below are taken from each app's own App Store description (iTunes Lookup, 2026-10-16);
+    # "names" is the localized store name people search for in that storefront.
+    "lumiletters": {"id": "6778748533", "name": "Lumi Letters Lite", "colors": ("#2a2366", "#6a4fc4", "#ffd76a"),
+                    "names": {"zh-Hant": "Lumi 字母星球 Lite", "ja": "Lumi レター Lite", "ko": "Lumi 레터 Lite"},
+                    "pitch": {"zh-Hant": "三到七歲，聽字母發音、描寫大寫與小寫",
+                              "en": "Ages 3–7: hear each letter, trace big and small",
+                              "ja": "3〜7歳。文字の音を聞いて、大文字・小文字をなぞり書き",
+                              "ko": "3~7세, 글자 소리를 듣고 대문자와 소문자를 따라쓰기"}},
+    "lumimath": {"id": "6778269699", "name": "Lumi Math Planet", "colors": ("#14264f", "#3a5fb0", "#ffe08a"),
+                 "names": {"zh-Hant": "Lumi數學星球", "ja": "Lumi算数プラネット", "ko": "Lumi 수학 행성"},
+                 "pitch": {"zh-Hant": "答對一題，小星球就亮起來", "en": "Solve a question and a little planet lights up",
+                           "ja": "1問解くたびに、小さな星がひとつ灯ります", "ko": "문제를 맞힐 때마다 작은 행성에 불이 켜져요"}},
+    "lumimission": {"id": "6779750237", "name": "Lumi Mission Planet", "colors": ("#231a4d", "#5a4a9e", "#ffc7e0"),
+                    "names": {"zh-Hant": "Lumi 任務星球", "ja": "Lumi ミッション星", "ko": "Lumi 미션 별"},
+                    "pitch": {"zh-Hant": "把每日生活常規變成溫柔的小任務", "en": "Turns daily routines into gentle missions",
+                              "ja": "毎日のせいかつを小さなミッションに", "ko": "하루 일과를 다정한 미션으로"}},
+    "moneytag": {"id": "6801956402", "name": "MoneyTag", "colors": ("#0f3b2e", "#2f7a5c", "#c8f5a0"),
+                 "pitch": {"zh-Hant": "每個專案各自算淨額，同一標籤跨專案合計",
+                           "en": "Projects with their own net result",
+                           "ja": "プロジェクトごとの純額とタグ集計",
+                           "ko": "프로젝트마다 따로 계산되는 순액"}},
+    "mochidonestamp": {"id": "6790800323", "name": "Mochi DoneStamp", "colors": ("#4a2a3a", "#9a5a76", "#ffe6b8"),
+                       "pitch": {"zh-Hant": "事情做完點一下，記住上次是什麼時候",
+                                 "en": "Finish something, tap once, and the exact time is kept",
+                                 "ja": "済ませたら一度タップ。正確な日時が履歴に残ります",
+                                 "ko": "일을 마치고 한 번 탭하면 정확한 시간이 기록으로 남아요"}},
 }
 TEXT = {
     "en": {"word": "Business English word of the day", "photo": "Photo size of the day",
            "search": "Search “{s}” on the App Store", "both": "Search “{s}” on App Store or Google Play",
            "button": "Get it on the App Store", "bio": "Link in bio", "head": "Head (chin to crown): {h} mm",
-           "check": "Rules change: check the official site before you apply.", "example": "Example"},
+           "check": "Rules change: check the official site before you apply.", "example": "Example",
+           "letter": "Letter of the day", "count": "Let's count", "bedtime": "Tonight's 5 bedtime steps",
+           "ledger": "Project net, worked out", "chore": "When did you last do it?", "is_for": "{l} is for {w}",
+           "net": "Net", "ledger_note": "Example numbers, just to show the math",
+           "chore_note": "A general suggestion: follow the product manual", "last": "Last time: ___ days ago",
+           "bedtime_note": "Change the order to suit your child",
+           "fingers": "Hold up {n} on one hand", "five": "One hand of 5, then {r} more", "ten": "Both hands make 10",
+           "teen": "Both hands make 10, then {r} more", "twenty": "Count both hands two times"},
     "zh-Hant": {"word": "今日多益商務單字", "zhuyin": "今日注音", "photo": "今日證件照尺寸",
                 "search": "App Store 搜尋「{s}」", "both": "App Store／Google Play 搜尋「{s}」",
                 "button": "在 App Store 下載", "bio": "下載連結在個人檔案", "head": "頭部（下巴到頭頂）{h} mm",
-                "check": "規定可能更新，送件前請先確認官方說明", "example": "例句"},
+                "check": "規定可能更新，送件前請先確認官方說明", "example": "例句",
+                "letter": "今日字母", "count": "今日數一數", "bedtime": "今晚睡前 5 步", "ledger": "專案損益小算式",
+                "chore": "上次做是幾天前？", "is_for": "{l} — {w}", "net": "淨額",
+                "ledger_note": "示例數字，只示範算式", "chore_note": "週期為一般建議，請以產品說明書為準",
+                "last": "上次：___ 天前", "bedtime_note": "順序可依孩子習慣調整",
+                "fingers": "伸出 {n} 根手指", "five": "一隻手 5 根，再加 {r} 根", "ten": "兩隻手剛好 10 根",
+                "teen": "兩隻手 10 根，再數 {r} 個", "twenty": "兩隻手各數兩次"},
     "ja": {"word": "今日のTOEIC®ビジネス英単語", "photo": "今日の証明写真サイズ",
            "search": "App Storeで「{s}」を検索", "both": "App Store・Google Playで「{s}」を検索",
            "button": "App Storeで入手", "bio": "リンクはプロフィールから", "head": "頭の長さ（あご〜頭頂）{h} mm",
-           "check": "規定は変わることがあります。申請前に公式情報をご確認ください", "example": "例文"},
+           "check": "規定は変わることがあります。申請前に公式情報をご確認ください", "example": "例文",
+           "letter": "今日のアルファベット", "count": "今日のかぞえてみよう", "bedtime": "今夜のおやすみ5ステップ",
+           "ledger": "プロジェクト収支の計算例", "chore": "最後にやったのは何日前？", "is_for": "{l} — {w}",
+           "net": "純額", "ledger_note": "数字は計算の例です", "chore_note": "周期は一般的な目安です。取扱説明書に従ってください",
+           "last": "前回：___ 日前", "bedtime_note": "順番はお子さまに合わせて変えてOK",
+           "fingers": "ゆびを {n}本 たてよう", "five": "かた手で5、もうかた手で{r}", "ten": "りょう手で ちょうど10",
+           "teen": "りょう手で10、あと{r}つ", "twenty": "りょう手を2かい かぞえよう"},
     "ko": {"word": "오늘의 토익 비즈니스 영단어", "photo": "오늘의 증명사진 규격",
            "search": "App Store에서 '{s}' 검색", "both": "App Store · Google Play에서 '{s}' 검색",
            "button": "App Store에서 받기", "bio": "링크는 프로필에", "head": "머리 길이(턱~정수리) {h} mm",
-           "check": "규정은 바뀔 수 있어요. 신청 전 공식 안내를 확인하세요", "example": "예문"},
+           "check": "규정은 바뀔 수 있어요. 신청 전 공식 안내를 확인하세요", "example": "예문",
+           "letter": "오늘의 알파벳", "count": "오늘의 숫자 세기", "bedtime": "오늘 밤 잠자기 전 5단계",
+           "ledger": "프로젝트 손익 계산 예시", "chore": "마지막으로 한 게 며칠 전?", "is_for": "{l} — {w}",
+           "net": "순액", "ledger_note": "숫자는 계산 예시예요", "chore_note": "일반적인 권장 주기예요. 제품 설명서를 따르세요",
+           "last": "마지막: ___일 전", "bedtime_note": "순서는 아이에게 맞게 바꿔도 돼요",
+           "fingers": "손가락 {n}개를 펴 봐요", "five": "한 손 5개, 다른 손 {r}개", "ten": "두 손을 다 펴면 10",
+           "teen": "두 손 10개, 그리고 {r}개 더", "twenty": "두 손을 두 번 세어 봐요"},
 }
 BACKGROUND = {
     "white": {"en": "White background", "zh-Hant": "白色背景", "ja": "白い背景", "ko": "흰색 배경"},
@@ -92,10 +158,28 @@ BACKGROUND = {
 }
 ZHUYIN_TIPS = ["跟孩子一起大聲唸三次", "找找看家裡哪些東西有這個音", "用手指在空中寫一寫", "唸給爸爸媽媽聽"]
 KIND_TIP = {"聲母": "聲母：放在最前面的音", "介音": "介音：夾在中間的音", "韻母": "韻母：放在後面的音"}
+LETTER_TIPS = {
+    "zh-Hant": ["跟孩子一起大聲唸三次", "用手指在空中寫大寫和小寫", "找找家裡哪裡有這個字母", "想想還有哪個字也是這個音開頭"],
+    "en": ["Say it out loud three times together", "Trace the big and small letter in the air",
+           "Spot this letter around the house", "Think of another word that starts with it"],
+    "ja": ["いっしょに3回、声に出して言おう", "ゆびで空中に大文字と小文字を書こう", "おうちの中でこの文字をさがそう",
+           "同じ音ではじまることばをさがそう"],
+    "ko": ["함께 소리 내어 세 번 읽어요", "손가락으로 허공에 대문자와 소문자를 써 봐요", "집 안에서 이 글자를 찾아봐요",
+           "이 소리로 시작하는 다른 단어를 떠올려 봐요"],
+}
 
 
 def load(path=DATA):
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _resolve(kind, item, data):
+    """The item with the shared vocabulary it points at filled in (count objects, bedtime steps)."""
+    if kind == "count":
+        return dict(item, say=data["count_things"][item["thing"]])
+    if kind == "bedtime":
+        return dict(item, step_text=[data["bedtime_steps"][s] for s in item["steps"]])
+    return item
 
 
 def pick(day, data=None):
@@ -106,11 +190,11 @@ def pick(day, data=None):
     n = day.toordinal() - EPOCH.toordinal()
     kind = TYPES[n % len(TYPES)]
     k = n // len(TYPES)
-    items = data[{"word": "words", "zhuyin": "zhuyin", "photo": "photos"}[kind]]
-    item = items[k % len(items)]
+    items = data[LISTS[kind]]
+    item = _resolve(kind, items[k % len(items)], data)
     locales = LOCALES[kind]
     locale = locales[(k + k // len(items)) % len(locales)]
-    app = {"word": "aim990" if k % 2 == 0 else "wordmatelite", "zhuyin": "lumibopomofo", "photo": "snapportlite"}[kind]
+    app = ("aim990" if k % 2 == 0 else "wordmatelite") if kind == "word" else TYPE_APP[kind]
     return {"type": kind, "item": item, "locale": locale, "app": app,
             "key": f"utility/{kind}/{app}/{item['id']}/{locale}"}  # own_posts.Catalog reads app and locale from it
 
@@ -126,10 +210,32 @@ def store_url(card, channel):
     return f"https://apps.apple.com/{STORE[card['locale']]}/app/id{APPS[card['app']]['id']}?{query}"
 
 
+def app_name(card):
+    """The app's store name in the card's storefront (what people type into the search box)."""
+    app = APPS[card["app"]]
+    return app.get("names", {}).get(card["locale"], app["name"])
+
+
 def store_line(card):
     app = APPS[card["app"]]
     t = TEXT[card["locale"]]
-    return (t["both"] if play_store_url(app["id"], "ut") else t["search"]).format(s=app["name"])
+    return (t["both"] if play_store_url(app["id"], "ut") else t["search"]).format(s=app_name(card))
+
+
+def money(v):
+    return f"{v:,}" if v >= 0 else f"−{-v:,}"
+
+
+def ledger_net(item):
+    return sum(e["amount"] for e in item["income"]) - sum(e["amount"] for e in item["expenses"])
+
+
+def count_lines(n, loc):
+    """(how many, the ten-frame sum or None, the finger tip) for the number of the day."""
+    t = TEXT[loc]
+    return (None if n <= 5 else f"5 + {n - 5} = {n}" if n <= 10 else f"10 + {n - 10} = {n}",
+            t["fingers"].format(n=n) if n <= 5 else t["five"].format(r=n - 5) if n < 10 else t["ten"] if n == 10
+            else t["teen"].format(r=n - 10) if n < 20 else t["twenty"])
 
 
 def lines(card):
@@ -140,6 +246,22 @@ def lines(card):
         return t["word"], f"{item['word']}  ({item['pos']})", [meaning, f"{t['example']}: {item['example']}"]
     if card["type"] == "zhuyin":
         return t["zhuyin"], item["symbol"], [f"{item['word']}  {' '.join(item['zhuyin'])}", KIND_TIP[item["kind"]]]
+    if card["type"] == "letter":
+        return t["letter"], f"{item['letter']} {item['letter'].lower()}", [
+            t["is_for"].format(l=item["letter"], w=item["word"]), item["meaning"][loc]]
+    if card["type"] == "count":
+        n, say = item["n"], item["say"][loc]
+        how_many = f"{n} {say[0] if n == 1 else say[1]}" if loc == "en" else say.format(n=n)
+        eq, tip = count_lines(n, loc)
+        return t["count"], str(n), [how_many, *([eq] if eq else []), tip]
+    if card["type"] == "bedtime":
+        return t["bedtime"], item["theme"][loc], [f"{i}. {s[loc]}" for i, s in enumerate(item["step_text"], 1)]
+    if card["type"] == "ledger":
+        rows = [f"+ {e['label'][loc]} {money(e['amount'])}" for e in item["income"]]
+        rows += [f"− {e['label'][loc]} {money(e['amount'])}" for e in item["expenses"]]
+        return t["ledger"], item["project"][loc], rows + [f"= {t['net']} {money(ledger_net(item))}"]
+    if card["type"] == "chore":
+        return t["chore"], item["task"][loc], [item["every"][loc]]
     size = item.get("size", {}).get(loc) or f"{item['w']} × {item['h']} mm"
     body = [size]
     if item.get("head"):
@@ -151,13 +273,22 @@ def lines(card):
 def caption(card, day):
     head, big, body = lines(card)
     app = APPS[card["app"]]
+    t = TEXT[card["locale"]]
     extra = []
     if card["type"] == "zhuyin":
         extra.append(ZHUYIN_TIPS[day.toordinal() % len(ZHUYIN_TIPS)])
+    if card["type"] == "letter":
+        tips = LETTER_TIPS[card["locale"]]
+        extra.append(tips[day.toordinal() % len(tips)])
     if card["type"] == "photo":
-        extra.append(TEXT[card["locale"]]["check"])
-    return "\n".join([f"{head}：{big}" if card["locale"] in ("zh-Hant", "ja") else f"{head}: {big}", *body, *extra,
-                      "", f"{app['name']}: {app['pitch'][card['locale']]}", store_line(card)])
+        extra.append(t["check"])
+    extra += [t[n] for k, n in (("bedtime", "bedtime_note"), ("ledger", "ledger_note"), ("chore", "chore_note"))
+              if card["type"] == k]
+    if head.endswith(("?", "？")):
+        lead = f"{head} {big}"
+    else:
+        lead = f"{head}：{big}" if card["locale"] in ("zh-Hant", "ja") else f"{head}: {big}"
+    return "\n".join([lead, *body, *extra, "", f"{app_name(card)}: {app['pitch'][card['locale']]}", store_line(card)])
 
 
 def threads_planned(day, clips_path=CLIPS):
@@ -238,7 +369,7 @@ def make(out, day, data=None):
         out_lines.append(line)
         for ln in out_lines[:3]:
             y = center(ln, y + 6, 42, white, 0)
-    else:
+    elif card["type"] == "photo":
         y = center(big, y + 16, 72, white, idx, 1.2)
         # The photo's real proportions with its size written beside it.
         item = card["item"]
@@ -258,6 +389,81 @@ def make(out, day, data=None):
             ty += int(size * 0.3)
         y = max(y + ph + 50, ty + 20)
         center(TEXT[loc]["check"], y, 36, white)
+    elif card["type"] == "letter":
+        y = center(big, y + 6, 250, white, 0, 1.2)
+        y = center(body[0], y + 10, 72, accent, 0 if loc == "en" else idx)
+        y = center(body[1], y + 6, 52, white)
+        tips = LETTER_TIPS[loc]
+        center(tips[day.toordinal() % len(tips)], y + 14, 40, white)
+    elif card["type"] == "count":
+        n = card["item"]["n"]
+        y = center(big, y, 150, white, 0, 1.15) + 46
+        # Ten-frames: rows of five, filled dots for the number of the day.
+        cell, gap = 62, 40
+        frames = 1 if n <= 10 else 2
+        fw = cell * 5
+        x0 = (W - (fw * frames + gap * (frames - 1))) / 2
+        for fr in range(frames):
+            fx = x0 + fr * (fw + gap)
+            draw.rounded_rectangle([fx - 8, y - 8, fx + fw + 8, y + cell * 2 + 8], radius=14, outline=accent, width=3)
+            for c in range(10):
+                cx, cy = fx + (c % 5) * cell + cell / 2, y + (c // 5) * cell + cell / 2
+                r = cell * 0.36
+                if fr * 10 + c < n:
+                    draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=accent)
+                else:
+                    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=white, width=2)
+        y += cell * 2 + 34
+        y = center(body[0], y, 56, accent)
+        for ln in body[1:]:
+            y = center(ln, y + 2, 44, white)
+    elif card["type"] == "bedtime":
+        y = center(big, y + 10, 64, white, idx, 1.2)
+        y += 14
+        fn = f(40)
+        for i, step in enumerate(card["item"]["step_text"], 1):
+            cx, cy, r = 190, y + 34, 30
+            draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=accent)
+            num = str(i)
+            draw.text((cx - draw.textlength(num, font=fn) / 2, cy - 40 * 0.62), num, font=fn,
+                      fill=top if cd.contrast(top, accent) >= cd.AA else (0, 0, 0))
+            rows, size = cd.wrap(draw, step[loc], f, 46, W - 250 - 90)
+            ry = cy - (len(rows) * size * 1.2) / 2
+            for row in rows:
+                draw.text((250, ry), row, font=f(size), fill=white)
+                ry += size * 1.2
+            y += max(80, int(len(rows) * size * 1.2) + 16)
+        center(TEXT[loc]["bedtime_note"], y + 6, 36, white)
+    elif card["type"] == "ledger":
+        item = card["item"]
+        y = center(big, y + 10, 68, white, idx, 1.2)
+        y += 10
+        left, right = 160, W - 160
+        def row(sign, label, amount, size, fill):
+            font = f(size)
+            draw.text((left, y), f"{sign} {label}", font=font, fill=fill)
+            draw.text((right - draw.textlength(amount, font=font), y), amount, font=font, fill=fill)
+        for e in item["income"]:
+            row("+", e["label"][loc], money(e["amount"]), 46, white)
+            y += 64
+        for e in item["expenses"]:
+            row("−", e["label"][loc], money(e["amount"]), 46, white)
+            y += 64
+        draw.line([(left, y + 4), (right, y + 4)], fill=accent, width=4)
+        y += 18
+        row("=", TEXT[loc]["net"], money(ledger_net(item)), 58, accent)
+        y += 82
+        center(TEXT[loc]["ledger_note"], y, 36, white)
+    elif card["type"] == "chore":
+        y = center(big, y + 24, 84, white, idx, 1.2)
+        y = center(body[0], y + 16, 48, accent)
+        # A blank "days ago" stamp to fill in mentally.
+        last = TEXT[loc]["last"]
+        fl = f(52)
+        lw = draw.textlength(last, font=fl)
+        draw.rounded_rectangle([(W - lw) / 2 - 40, y + 20, (W + lw) / 2 + 40, y + 120], radius=24, outline=accent, width=4)
+        draw.text(((W - lw) / 2, y + 70 - 52 * 0.62), last, font=fl, fill=white)
+        center(TEXT[loc]["chore_note"], y + 146, 36, white)
     # The real app screen (localized App Store screenshot) rising from the bottom.
     shot = ASSETS / f"{card['app']}_{loc}.png"
     if not shot.exists():
@@ -292,8 +498,8 @@ def make(out, day, data=None):
 
 def card_from_meta(meta, data=None):
     data = data or load()
-    items = data[{"word": "words", "zhuyin": "zhuyin", "photo": "photos"}[meta["type"]]]
-    item = next(x for x in items if x["id"] == meta["item"])
+    items = data[LISTS[meta["type"]]]
+    item = _resolve(meta["type"], next(x for x in items if x["id"] == meta["item"]), data)
     return {"type": meta["type"], "item": item, "locale": meta["locale"], "app": meta["app"], "key": meta["key"]}
 
 
@@ -348,7 +554,7 @@ def qa_problems(meta, card, channel, image=None, online=True):
     import post_qa
     text = instagram_text(meta, card) if channel == "instagram" else meta["caption"]
     return post_qa.card_problems(text, card["locale"], channel, store_url=store_url(card, "qa"),
-                                 name=APPS[card["app"]]["name"], image=image, online=online)
+                                 name=app_name(card), image=image, online=online)
 
 
 def post_instagram(url, meta, card):

@@ -935,5 +935,1733 @@
    "head": null,
    "bg": "plain_light"
   }
+ ],
+ "letters": [
+  {
+   "id": "letter_a",
+   "letter": "A",
+   "word": "apple",
+   "meaning": {
+    "zh-Hant": "蘋果",
+    "en": "a crunchy fruit",
+    "ja": "りんご",
+    "ko": "사과"
+   }
+  },
+  {
+   "id": "letter_b",
+   "letter": "B",
+   "word": "ball",
+   "meaning": {
+    "zh-Hant": "球",
+    "en": "a round toy to throw",
+    "ja": "ボール",
+    "ko": "공"
+   }
+  },
+  {
+   "id": "letter_c",
+   "letter": "C",
+   "word": "cat",
+   "meaning": {
+    "zh-Hant": "貓",
+    "en": "a furry pet that says meow",
+    "ja": "ねこ",
+    "ko": "고양이"
+   }
+  },
+  {
+   "id": "letter_d",
+   "letter": "D",
+   "word": "dog",
+   "meaning": {
+    "zh-Hant": "狗",
+    "en": "a pet that says woof",
+    "ja": "いぬ",
+    "ko": "개"
+   }
+  },
+  {
+   "id": "letter_e",
+   "letter": "E",
+   "word": "egg",
+   "meaning": {
+    "zh-Hant": "蛋",
+    "en": "what a hen lays",
+    "ja": "たまご",
+    "ko": "달걀"
+   }
+  },
+  {
+   "id": "letter_f",
+   "letter": "F",
+   "word": "fish",
+   "meaning": {
+    "zh-Hant": "魚",
+    "en": "it swims in water",
+    "ja": "さかな",
+    "ko": "물고기"
+   }
+  },
+  {
+   "id": "letter_g",
+   "letter": "G",
+   "word": "goat",
+   "meaning": {
+    "zh-Hant": "山羊",
+    "en": "a farm animal with horns",
+    "ja": "やぎ",
+    "ko": "염소"
+   }
+  },
+  {
+   "id": "letter_h",
+   "letter": "H",
+   "word": "hat",
+   "meaning": {
+    "zh-Hant": "帽子",
+    "en": "you wear it on your head",
+    "ja": "ぼうし",
+    "ko": "모자"
+   }
+  },
+  {
+   "id": "letter_i",
+   "letter": "I",
+   "word": "igloo",
+   "meaning": {
+    "zh-Hant": "冰屋",
+    "en": "a house made of snow",
+    "ja": "かまくら",
+    "ko": "이글루"
+   }
+  },
+  {
+   "id": "letter_j",
+   "letter": "J",
+   "word": "juice",
+   "meaning": {
+    "zh-Hant": "果汁",
+    "en": "a drink made from fruit",
+    "ja": "ジュース",
+    "ko": "주스"
+   }
+  },
+  {
+   "id": "letter_k",
+   "letter": "K",
+   "word": "kite",
+   "meaning": {
+    "zh-Hant": "風箏",
+    "en": "it flies in the wind",
+    "ja": "たこ",
+    "ko": "연"
+   }
+  },
+  {
+   "id": "letter_l",
+   "letter": "L",
+   "word": "lion",
+   "meaning": {
+    "zh-Hant": "獅子",
+    "en": "a big cat that roars",
+    "ja": "ライオン",
+    "ko": "사자"
+   }
+  },
+  {
+   "id": "letter_m",
+   "letter": "M",
+   "word": "moon",
+   "meaning": {
+    "zh-Hant": "月亮",
+    "en": "it shines at night",
+    "ja": "つき",
+    "ko": "달"
+   }
+  },
+  {
+   "id": "letter_n",
+   "letter": "N",
+   "word": "nest",
+   "meaning": {
+    "zh-Hant": "鳥巢",
+    "en": "a bird's home",
+    "ja": "とりのす",
+    "ko": "둥지"
+   }
+  },
+  {
+   "id": "letter_o",
+   "letter": "O",
+   "word": "owl",
+   "meaning": {
+    "zh-Hant": "貓頭鷹",
+    "en": "a bird awake at night",
+    "ja": "ふくろう",
+    "ko": "부엉이"
+   }
+  },
+  {
+   "id": "letter_p",
+   "letter": "P",
+   "word": "pig",
+   "meaning": {
+    "zh-Hant": "豬",
+    "en": "a pink farm animal",
+    "ja": "ぶた",
+    "ko": "돼지"
+   }
+  },
+  {
+   "id": "letter_q",
+   "letter": "Q",
+   "word": "queen",
+   "meaning": {
+    "zh-Hant": "女王",
+    "en": "she wears a crown",
+    "ja": "じょおう",
+    "ko": "여왕"
+   }
+  },
+  {
+   "id": "letter_r",
+   "letter": "R",
+   "word": "rabbit",
+   "meaning": {
+    "zh-Hant": "兔子",
+    "en": "it hops with long ears",
+    "ja": "うさぎ",
+    "ko": "토끼"
+   }
+  },
+  {
+   "id": "letter_s",
+   "letter": "S",
+   "word": "sun",
+   "meaning": {
+    "zh-Hant": "太陽",
+    "en": "it shines in the day",
+    "ja": "たいよう",
+    "ko": "해"
+   }
+  },
+  {
+   "id": "letter_t",
+   "letter": "T",
+   "word": "tree",
+   "meaning": {
+    "zh-Hant": "樹",
+    "en": "it grows leaves",
+    "ja": "き",
+    "ko": "나무"
+   }
+  },
+  {
+   "id": "letter_u",
+   "letter": "U",
+   "word": "umbrella",
+   "meaning": {
+    "zh-Hant": "雨傘",
+    "en": "it keeps the rain off",
+    "ja": "かさ",
+    "ko": "우산"
+   }
+  },
+  {
+   "id": "letter_v",
+   "letter": "V",
+   "word": "violin",
+   "meaning": {
+    "zh-Hant": "小提琴",
+    "en": "you play it with a bow",
+    "ja": "バイオリン",
+    "ko": "바이올린"
+   }
+  },
+  {
+   "id": "letter_w",
+   "letter": "W",
+   "word": "water",
+   "meaning": {
+    "zh-Hant": "水",
+    "en": "we drink it every day",
+    "ja": "みず",
+    "ko": "물"
+   }
+  },
+  {
+   "id": "letter_x",
+   "letter": "X",
+   "word": "xylophone",
+   "meaning": {
+    "zh-Hant": "木琴",
+    "en": "tap it to make music",
+    "ja": "もっきん",
+    "ko": "실로폰"
+   }
+  },
+  {
+   "id": "letter_y",
+   "letter": "Y",
+   "word": "yo-yo",
+   "meaning": {
+    "zh-Hant": "溜溜球",
+    "en": "a toy that goes up and down",
+    "ja": "ヨーヨー",
+    "ko": "요요"
+   }
+  },
+  {
+   "id": "letter_z",
+   "letter": "Z",
+   "word": "zebra",
+   "meaning": {
+    "zh-Hant": "斑馬",
+    "en": "a horse with stripes",
+    "ja": "しまうま",
+    "ko": "얼룩말"
+   }
+  }
+ ],
+ "count_things": {
+  "star": {
+   "zh-Hant": "{n} 顆星星",
+   "en": [
+    "star",
+    "stars"
+   ],
+   "ja": "ほしが {n}こ",
+   "ko": "별 {n}개"
+  },
+  "apple": {
+   "zh-Hant": "{n} 個蘋果",
+   "en": [
+    "apple",
+    "apples"
+   ],
+   "ja": "りんごが {n}こ",
+   "ko": "사과 {n}개"
+  },
+  "balloon": {
+   "zh-Hant": "{n} 顆氣球",
+   "en": [
+    "balloon",
+    "balloons"
+   ],
+   "ja": "ふうせんが {n}こ",
+   "ko": "풍선 {n}개"
+  },
+  "cookie": {
+   "zh-Hant": "{n} 片餅乾",
+   "en": [
+    "cookie",
+    "cookies"
+   ],
+   "ja": "クッキーが {n}まい",
+   "ko": "쿠키 {n}개"
+  },
+  "block": {
+   "zh-Hant": "{n} 塊積木",
+   "en": [
+    "block",
+    "blocks"
+   ],
+   "ja": "つみきが {n}こ",
+   "ko": "블록 {n}개"
+  },
+  "ball": {
+   "zh-Hant": "{n} 顆球",
+   "en": [
+    "ball",
+    "balls"
+   ],
+   "ja": "ボールが {n}こ",
+   "ko": "공 {n}개"
+  },
+  "candy": {
+   "zh-Hant": "{n} 顆糖果",
+   "en": [
+    "sweet",
+    "sweets"
+   ],
+   "ja": "あめが {n}こ",
+   "ko": "사탕 {n}개"
+  }
+ },
+ "counting": [
+  {
+   "id": "count_1",
+   "n": 1,
+   "thing": "star"
+  },
+  {
+   "id": "count_2",
+   "n": 2,
+   "thing": "apple"
+  },
+  {
+   "id": "count_3",
+   "n": 3,
+   "thing": "balloon"
+  },
+  {
+   "id": "count_4",
+   "n": 4,
+   "thing": "cookie"
+  },
+  {
+   "id": "count_5",
+   "n": 5,
+   "thing": "block"
+  },
+  {
+   "id": "count_6",
+   "n": 6,
+   "thing": "ball"
+  },
+  {
+   "id": "count_7",
+   "n": 7,
+   "thing": "candy"
+  },
+  {
+   "id": "count_8",
+   "n": 8,
+   "thing": "star"
+  },
+  {
+   "id": "count_9",
+   "n": 9,
+   "thing": "apple"
+  },
+  {
+   "id": "count_10",
+   "n": 10,
+   "thing": "balloon"
+  },
+  {
+   "id": "count_11",
+   "n": 11,
+   "thing": "cookie"
+  },
+  {
+   "id": "count_12",
+   "n": 12,
+   "thing": "block"
+  },
+  {
+   "id": "count_13",
+   "n": 13,
+   "thing": "ball"
+  },
+  {
+   "id": "count_14",
+   "n": 14,
+   "thing": "candy"
+  },
+  {
+   "id": "count_15",
+   "n": 15,
+   "thing": "star"
+  },
+  {
+   "id": "count_16",
+   "n": 16,
+   "thing": "apple"
+  },
+  {
+   "id": "count_17",
+   "n": 17,
+   "thing": "balloon"
+  },
+  {
+   "id": "count_18",
+   "n": 18,
+   "thing": "cookie"
+  },
+  {
+   "id": "count_19",
+   "n": 19,
+   "thing": "block"
+  },
+  {
+   "id": "count_20",
+   "n": 20,
+   "thing": "ball"
+  }
+ ],
+ "bedtime_steps": {
+  "toys": {
+   "zh-Hant": "把玩具收回家",
+   "en": "Put the toys away",
+   "ja": "おもちゃをかたづける",
+   "ko": "장난감 정리하기"
+  },
+  "bath": {
+   "zh-Hant": "洗澡",
+   "en": "Bath time",
+   "ja": "おふろに入る",
+   "ko": "목욕하기"
+  },
+  "pajamas": {
+   "zh-Hant": "換上睡衣",
+   "en": "Put on pajamas",
+   "ja": "パジャマに着がえる",
+   "ko": "잠옷 입기"
+  },
+  "teeth": {
+   "zh-Hant": "刷牙",
+   "en": "Brush teeth",
+   "ja": "はみがきをする",
+   "ko": "양치하기"
+  },
+  "potty": {
+   "zh-Hant": "睡前上廁所",
+   "en": "Use the toilet",
+   "ja": "トイレに行く",
+   "ko": "화장실 다녀오기"
+  },
+  "water": {
+   "zh-Hant": "喝一小口水",
+   "en": "A small sip of water",
+   "ja": "お水をひとくち",
+   "ko": "물 한 모금 마시기"
+  },
+  "book": {
+   "zh-Hant": "一起讀一本書",
+   "en": "Read one book together",
+   "ja": "絵本を1さつ読む",
+   "ko": "그림책 한 권 읽기"
+  },
+  "hug": {
+   "zh-Hant": "抱抱說晚安",
+   "en": "Hug and say good night",
+   "ja": "ぎゅっとして おやすみ",
+   "ko": "꼭 안고 잘 자 인사"
+  },
+  "lights": {
+   "zh-Hant": "關大燈，開小夜燈",
+   "en": "Big light off, night-light on",
+   "ja": "でんきを消して 小さなあかりに",
+   "ko": "불 끄고 수면등 켜기"
+  },
+  "clothes": {
+   "zh-Hant": "準備明天的衣服",
+   "en": "Lay out tomorrow's clothes",
+   "ja": "あしたの服をよういする",
+   "ko": "내일 입을 옷 준비하기"
+  },
+  "bag": {
+   "zh-Hant": "把書包放在門口",
+   "en": "Put the bag by the door",
+   "ja": "かばんを玄関におく",
+   "ko": "가방을 현관에 두기"
+  },
+  "happy": {
+   "zh-Hant": "說一件今天開心的事",
+   "en": "Share one happy thing from today",
+   "ja": "今日うれしかったことを1つ話す",
+   "ko": "오늘 좋았던 일 하나 말하기"
+  },
+  "breathe": {
+   "zh-Hant": "慢慢深呼吸三次",
+   "en": "Three slow, deep breaths",
+   "ja": "ゆっくり深呼吸を3回",
+   "ko": "천천히 숨 세 번 쉬기"
+  },
+  "plush": {
+   "zh-Hant": "跟娃娃說晚安",
+   "en": "Say good night to a soft toy",
+   "ja": "ぬいぐるみに おやすみ",
+   "ko": "인형에게 잘 자 인사"
+  },
+  "wash": {
+   "zh-Hant": "洗臉、洗手",
+   "en": "Wash face and hands",
+   "ja": "顔と手をあらう",
+   "ko": "세수하고 손 씻기"
+  },
+  "song": {
+   "zh-Hant": "唱一首晚安歌",
+   "en": "Sing a good-night song",
+   "ja": "おやすみの歌を1曲",
+   "ko": "자장가 한 곡 부르기"
+  },
+  "blanket": {
+   "zh-Hant": "蓋好被子",
+   "en": "Tuck in the blanket",
+   "ja": "おふとんをかける",
+   "ko": "이불 덮기"
+  }
+ },
+ "bedtime": [
+  {
+   "id": "bedtime_astronaut",
+   "theme": {
+    "zh-Hant": "太空人睡前任務",
+    "en": "Astronaut bedtime mission",
+    "ja": "宇宙飛行士のおやすみミッション",
+    "ko": "우주비행사 잘 자 미션"
+   },
+   "steps": [
+    "toys",
+    "bath",
+    "pajamas",
+    "teeth",
+    "hug"
+   ]
+  },
+  {
+   "id": "bedtime_bunny",
+   "theme": {
+    "zh-Hant": "小兔兔晚安路線",
+    "en": "The bunny's bedtime path",
+    "ja": "うさぎのおやすみコース",
+    "ko": "토끼의 잘 자 코스"
+   },
+   "steps": [
+    "wash",
+    "pajamas",
+    "teeth",
+    "book",
+    "lights"
+   ]
+  },
+  {
+   "id": "bedtime_stars",
+   "theme": {
+    "zh-Hant": "星星收集夜",
+    "en": "Star-collecting night",
+    "ja": "星あつめの夜",
+    "ko": "별 모으기 밤"
+   },
+   "steps": [
+    "toys",
+    "teeth",
+    "potty",
+    "happy",
+    "blanket"
+   ]
+  },
+  {
+   "id": "bedtime_tomorrow",
+   "theme": {
+    "zh-Hant": "明天準備好了",
+    "en": "Ready for tomorrow",
+    "ja": "あしたの準備ばっちり",
+    "ko": "내일 준비 완료"
+   },
+   "steps": [
+    "clothes",
+    "bag",
+    "bath",
+    "teeth",
+    "hug"
+   ]
+  },
+  {
+   "id": "bedtime_moon",
+   "theme": {
+    "zh-Hant": "安靜的月亮",
+    "en": "The quiet moon",
+    "ja": "しずかなお月さま",
+    "ko": "조용한 달님"
+   },
+   "steps": [
+    "bath",
+    "pajamas",
+    "breathe",
+    "song",
+    "lights"
+   ]
+  },
+  {
+   "id": "bedtime_story",
+   "theme": {
+    "zh-Hant": "故事時間",
+    "en": "Story time",
+    "ja": "おはなしの時間",
+    "ko": "이야기 시간"
+   },
+   "steps": [
+    "teeth",
+    "potty",
+    "water",
+    "book",
+    "plush"
+   ]
+  },
+  {
+   "id": "bedtime_clean",
+   "theme": {
+    "zh-Hant": "洗得香香的",
+    "en": "Fresh and clean",
+    "ja": "ピカピカおふろ",
+    "ko": "뽀득뽀득 깨끗하게"
+   },
+   "steps": [
+    "bath",
+    "pajamas",
+    "teeth",
+    "potty",
+    "blanket"
+   ]
+  },
+  {
+   "id": "bedtime_plush",
+   "theme": {
+    "zh-Hant": "娃娃也要睡",
+    "en": "Toys sleep too",
+    "ja": "ぬいぐるみもおやすみ",
+    "ko": "인형도 코 자요"
+   },
+   "steps": [
+    "toys",
+    "plush",
+    "wash",
+    "teeth",
+    "hug"
+   ]
+  },
+  {
+   "id": "bedtime_thanks",
+   "theme": {
+    "zh-Hant": "謝謝今天",
+    "en": "Thank you, today",
+    "ja": "今日にありがとう",
+    "ko": "고마운 오늘"
+   },
+   "steps": [
+    "teeth",
+    "pajamas",
+    "happy",
+    "hug",
+    "lights"
+   ]
+  },
+  {
+   "id": "bedtime_breathe",
+   "theme": {
+    "zh-Hant": "慢慢呼吸",
+    "en": "Slow and calm",
+    "ja": "ゆっくりおやすみ",
+    "ko": "천천히 숨 쉬고"
+   },
+   "steps": [
+    "potty",
+    "teeth",
+    "blanket",
+    "breathe",
+    "lights"
+   ]
+  },
+  {
+   "id": "bedtime_patrol",
+   "theme": {
+    "zh-Hant": "星球巡邏隊",
+    "en": "Planet patrol",
+    "ja": "星のパトロール隊",
+    "ko": "행성 순찰대"
+   },
+   "steps": [
+    "toys",
+    "bag",
+    "wash",
+    "teeth",
+    "book"
+   ]
+  },
+  {
+   "id": "bedtime_lullaby",
+   "theme": {
+    "zh-Hant": "晚安歌之夜",
+    "en": "Lullaby night",
+    "ja": "おやすみの歌の夜",
+    "ko": "자장가의 밤"
+   },
+   "steps": [
+    "bath",
+    "teeth",
+    "water",
+    "song",
+    "hug"
+   ]
+  },
+  {
+   "id": "bedtime_weekend",
+   "theme": {
+    "zh-Hant": "週末前一晚",
+    "en": "The night before the weekend",
+    "ja": "週末まえの夜",
+    "ko": "주말 전날 밤"
+   },
+   "steps": [
+    "toys",
+    "bath",
+    "teeth",
+    "book",
+    "happy"
+   ]
+  },
+  {
+   "id": "bedtime_newweek",
+   "theme": {
+    "zh-Hant": "新的一週",
+    "en": "A new week ahead",
+    "ja": "新しい一週間",
+    "ko": "새로운 한 주"
+   },
+   "steps": [
+    "clothes",
+    "bag",
+    "teeth",
+    "potty",
+    "breathe"
+   ]
+  },
+  {
+   "id": "bedtime_keeper",
+   "theme": {
+    "zh-Hant": "月亮守護者",
+    "en": "Moon keeper",
+    "ja": "お月さまの番人",
+    "ko": "달님 지킴이"
+   },
+   "steps": [
+    "wash",
+    "pajamas",
+    "potty",
+    "plush",
+    "lights"
+   ]
+  },
+  {
+   "id": "bedtime_stargazer",
+   "theme": {
+    "zh-Hant": "小小天文學家",
+    "en": "Little stargazer",
+    "ja": "ちいさな天文学者",
+    "ko": "꼬마 천문학자"
+   },
+   "steps": [
+    "pajamas",
+    "teeth",
+    "happy",
+    "book",
+    "blanket"
+   ]
+  }
+ ],
+ "ledger": [
+  {
+   "id": "market_stall",
+   "project": {
+    "zh-Hant": "市集擺攤",
+    "en": "Weekend market stall",
+    "ja": "週末マルシェの出店",
+    "ko": "주말 플리마켓 판매"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "銷售",
+      "en": "Sales",
+      "ja": "売上",
+      "ko": "판매"
+     },
+     "amount": 8000
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "攤位費",
+      "en": "Stall fee",
+      "ja": "出店料",
+      "ko": "부스비"
+     },
+     "amount": 1500
+    },
+    {
+     "label": {
+      "zh-Hant": "材料",
+      "en": "Materials",
+      "ja": "材料",
+      "ko": "재료"
+     },
+     "amount": 2300
+    }
+   ]
+  },
+  {
+   "id": "design_gig",
+   "project": {
+    "zh-Hant": "設計接案",
+    "en": "Freelance design job",
+    "ja": "デザインの受託",
+    "ko": "디자인 외주"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "案件報酬",
+      "en": "Client fee",
+      "ja": "報酬",
+      "ko": "작업비"
+     },
+     "amount": 12000
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "素材",
+      "en": "Stock assets",
+      "ja": "素材",
+      "ko": "소재"
+     },
+     "amount": 900
+    },
+    {
+     "label": {
+      "zh-Hant": "印刷打樣",
+      "en": "Print proofs",
+      "ja": "印刷見本",
+      "ko": "인쇄 교정"
+     },
+     "amount": 600
+    }
+   ]
+  },
+  {
+   "id": "tutoring",
+   "project": {
+    "zh-Hant": "家教",
+    "en": "Private tutoring",
+    "ja": "家庭教師",
+    "ko": "과외"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "學費",
+      "en": "Lesson fees",
+      "ja": "授業料",
+      "ko": "수업료"
+     },
+     "amount": 6400
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "交通",
+      "en": "Travel",
+      "ja": "交通費",
+      "ko": "교통비"
+     },
+     "amount": 480
+    },
+    {
+     "label": {
+      "zh-Hant": "講義影印",
+      "en": "Copies",
+      "ja": "プリント代",
+      "ko": "자료 복사"
+     },
+     "amount": 320
+    }
+   ]
+  },
+  {
+   "id": "secondhand",
+   "project": {
+    "zh-Hant": "二手拍賣",
+    "en": "Selling used items",
+    "ja": "フリマ出品",
+    "ko": "중고 판매"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "售出",
+      "en": "Items sold",
+      "ja": "売れた分",
+      "ko": "판매액"
+     },
+     "amount": 3600
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "運費",
+      "en": "Shipping",
+      "ja": "送料",
+      "ko": "배송비"
+     },
+     "amount": 540
+    },
+    {
+     "label": {
+      "zh-Hant": "包材",
+      "en": "Packaging",
+      "ja": "梱包材",
+      "ko": "포장재"
+     },
+     "amount": 160
+    }
+   ]
+  },
+  {
+   "id": "club",
+   "project": {
+    "zh-Hant": "社團活動",
+    "en": "Club activity",
+    "ja": "サークル活動",
+    "ko": "동아리 활동"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "會費",
+      "en": "Member dues",
+      "ja": "会費",
+      "ko": "회비"
+     },
+     "amount": 5000
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "場地",
+      "en": "Venue",
+      "ja": "会場代",
+      "ko": "장소 대여"
+     },
+     "amount": 2400
+    },
+    {
+     "label": {
+      "zh-Hant": "點心",
+      "en": "Snacks",
+      "ja": "おやつ",
+      "ko": "간식"
+     },
+     "amount": 1100
+    }
+   ]
+  },
+  {
+   "id": "party",
+   "project": {
+    "zh-Hant": "生日派對",
+    "en": "Birthday party",
+    "ja": "誕生日パーティー",
+    "ko": "생일 파티"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "大家分攤",
+      "en": "Shared by guests",
+      "ja": "みんなの割り勘",
+      "ko": "참가비"
+     },
+     "amount": 4800
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "蛋糕",
+      "en": "Cake",
+      "ja": "ケーキ",
+      "ko": "케이크"
+     },
+     "amount": 1200
+    },
+    {
+     "label": {
+      "zh-Hant": "佈置",
+      "en": "Decorations",
+      "ja": "飾りつけ",
+      "ko": "장식"
+     },
+     "amount": 900
+    },
+    {
+     "label": {
+      "zh-Hant": "餐點",
+      "en": "Food",
+      "ja": "料理",
+      "ko": "음식"
+     },
+     "amount": 2400
+    }
+   ]
+  },
+  {
+   "id": "trip",
+   "project": {
+    "zh-Hant": "家庭旅行",
+    "en": "Family trip",
+    "ja": "家族旅行",
+    "ko": "가족 여행"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "旅行基金",
+      "en": "Trip fund",
+      "ja": "旅行積立",
+      "ko": "여행 적립금"
+     },
+     "amount": 20000
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "住宿",
+      "en": "Lodging",
+      "ja": "宿泊",
+      "ko": "숙박"
+     },
+     "amount": 9600
+    },
+    {
+     "label": {
+      "zh-Hant": "交通",
+      "en": "Transport",
+      "ja": "交通費",
+      "ko": "교통비"
+     },
+     "amount": 4200
+    },
+    {
+     "label": {
+      "zh-Hant": "餐費",
+      "en": "Meals",
+      "ja": "食事",
+      "ko": "식비"
+     },
+     "amount": 5100
+    }
+   ]
+  },
+  {
+   "id": "workshop",
+   "project": {
+    "zh-Hant": "手作課程",
+    "en": "Craft workshop",
+    "ja": "ハンドメイド教室",
+    "ko": "공방 클래스"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "報名費",
+      "en": "Sign-up fees",
+      "ja": "参加費",
+      "ko": "참가비"
+     },
+     "amount": 9000
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "材料包",
+      "en": "Material kits",
+      "ja": "材料キット",
+      "ko": "재료 키트"
+     },
+     "amount": 3600
+    },
+    {
+     "label": {
+      "zh-Hant": "場地",
+      "en": "Venue",
+      "ja": "会場代",
+      "ko": "장소 대여"
+     },
+     "amount": 2000
+    }
+   ]
+  },
+  {
+   "id": "bakery",
+   "project": {
+    "zh-Hant": "烘焙小舖",
+    "en": "Home bakery",
+    "ja": "おうちパン屋",
+    "ko": "홈베이킹 판매"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "銷售",
+      "en": "Sales",
+      "ja": "売上",
+      "ko": "판매"
+     },
+     "amount": 7500
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "麵粉奶油",
+      "en": "Flour and butter",
+      "ja": "小麦粉とバター",
+      "ko": "밀가루와 버터"
+     },
+     "amount": 2100
+    },
+    {
+     "label": {
+      "zh-Hant": "包裝",
+      "en": "Packaging",
+      "ja": "包装",
+      "ko": "포장"
+     },
+     "amount": 800
+    }
+   ]
+  },
+  {
+   "id": "photo_gig",
+   "project": {
+    "zh-Hant": "攝影接案",
+    "en": "Photo shoot job",
+    "ja": "撮影の仕事",
+    "ko": "촬영 외주"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "拍攝費",
+      "en": "Shoot fee",
+      "ja": "撮影料",
+      "ko": "촬영비"
+     },
+     "amount": 8000
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "交通",
+      "en": "Travel",
+      "ja": "交通費",
+      "ko": "교통비"
+     },
+     "amount": 600
+    },
+    {
+     "label": {
+      "zh-Hant": "器材租借",
+      "en": "Gear rental",
+      "ja": "機材レンタル",
+      "ko": "장비 대여"
+     },
+     "amount": 1500
+    }
+   ]
+  },
+  {
+   "id": "group_buy",
+   "project": {
+    "zh-Hant": "團購代墊",
+    "en": "Group order paid upfront",
+    "ja": "共同購入の立て替え",
+    "ko": "공동구매 대신 결제"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "收回款項",
+      "en": "Paid back",
+      "ja": "回収した分",
+      "ko": "돌려받은 돈"
+     },
+     "amount": 6300
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "代墊貨款",
+      "en": "Order paid",
+      "ja": "立て替えた代金",
+      "ko": "대신 낸 금액"
+     },
+     "amount": 6000
+    },
+    {
+     "label": {
+      "zh-Hant": "運費",
+      "en": "Shipping",
+      "ja": "送料",
+      "ko": "배송비"
+     },
+     "amount": 300
+    }
+   ]
+  },
+  {
+   "id": "camping",
+   "project": {
+    "zh-Hant": "露營",
+    "en": "Camping weekend",
+    "ja": "キャンプ",
+    "ko": "캠핑"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "大家分攤",
+      "en": "Shared by the group",
+      "ja": "みんなの割り勘",
+      "ko": "참가비"
+     },
+     "amount": 6000
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "營位",
+      "en": "Campsite",
+      "ja": "サイト代",
+      "ko": "캠핑장"
+     },
+     "amount": 2400
+    },
+    {
+     "label": {
+      "zh-Hant": "食材",
+      "en": "Food",
+      "ja": "食材",
+      "ko": "식재료"
+     },
+     "amount": 2700
+    },
+    {
+     "label": {
+      "zh-Hant": "木柴",
+      "en": "Firewood",
+      "ja": "まき",
+      "ko": "장작"
+     },
+     "amount": 300
+    }
+   ]
+  },
+  {
+   "id": "class_party",
+   "project": {
+    "zh-Hant": "班級同樂會",
+    "en": "Class party",
+    "ja": "クラスのお楽しみ会",
+    "ko": "학급 파티"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "班費",
+      "en": "Class fund",
+      "ja": "クラス費",
+      "ko": "학급비"
+     },
+     "amount": 3000
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "飲料",
+      "en": "Drinks",
+      "ja": "飲み物",
+      "ko": "음료"
+     },
+     "amount": 1000
+    },
+    {
+     "label": {
+      "zh-Hant": "點心",
+      "en": "Snacks",
+      "ja": "おやつ",
+      "ko": "간식"
+     },
+     "amount": 1500
+    }
+   ]
+  },
+  {
+   "id": "translation",
+   "project": {
+    "zh-Hant": "翻譯接案",
+    "en": "Translation job",
+    "ja": "翻訳の仕事",
+    "ko": "번역 외주"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "稿費",
+      "en": "Translation fee",
+      "ja": "翻訳料",
+      "ko": "번역료"
+     },
+     "amount": 4500
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "參考書",
+      "en": "Reference books",
+      "ja": "参考書",
+      "ko": "참고서"
+     },
+     "amount": 450
+    }
+   ]
+  },
+  {
+   "id": "pet_sitting",
+   "project": {
+    "zh-Hant": "寵物保母",
+    "en": "Pet sitting",
+    "ja": "ペットシッター",
+    "ko": "펫시터"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "照顧費",
+      "en": "Sitting fee",
+      "ja": "シッター代",
+      "ko": "돌봄비"
+     },
+     "amount": 3200
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "交通",
+      "en": "Travel",
+      "ja": "交通費",
+      "ko": "교통비"
+     },
+     "amount": 400
+    },
+    {
+     "label": {
+      "zh-Hant": "零食玩具",
+      "en": "Treats and toys",
+      "ja": "おやつとおもちゃ",
+      "ko": "간식과 장난감"
+     },
+     "amount": 300
+    }
+   ]
+  },
+  {
+   "id": "handmade_shop",
+   "project": {
+    "zh-Hant": "網路手作小店",
+    "en": "Online handmade shop",
+    "ja": "ネットのハンドメイド販売",
+    "ko": "온라인 수공예 판매"
+   },
+   "income": [
+    {
+     "label": {
+      "zh-Hant": "銷售",
+      "en": "Sales",
+      "ja": "売上",
+      "ko": "판매"
+     },
+     "amount": 5400
+    }
+   ],
+   "expenses": [
+    {
+     "label": {
+      "zh-Hant": "材料",
+      "en": "Materials",
+      "ja": "材料",
+      "ko": "재료"
+     },
+     "amount": 1600
+    },
+    {
+     "label": {
+      "zh-Hant": "運費",
+      "en": "Shipping",
+      "ja": "送料",
+      "ko": "배송비"
+     },
+     "amount": 700
+    },
+    {
+     "label": {
+      "zh-Hant": "包材",
+      "en": "Packaging",
+      "ja": "梱包材",
+      "ko": "포장재"
+     },
+     "amount": 200
+    }
+   ]
+  }
+ ],
+ "chores": [
+  {
+   "id": "toothbrush",
+   "task": {
+    "zh-Hant": "換牙刷",
+    "en": "Replace your toothbrush",
+    "ja": "歯ブラシの交換",
+    "ko": "칫솔 교체"
+   },
+   "every": {
+    "zh-Hant": "建議約每 3 個月換一次，刷毛開花就提早換",
+    "en": "Suggested: about every 3 months, sooner if the bristles fray",
+    "ja": "目安は約3か月ごと。毛先が開いたら早めに",
+    "ko": "권장: 약 3개월마다, 솔이 벌어지면 더 일찍"
+   }
+  },
+  {
+   "id": "ac_filter",
+   "task": {
+    "zh-Hant": "洗冷氣濾網",
+    "en": "Clean the air-con filter",
+    "ja": "エアコンフィルターの掃除",
+    "ko": "에어컨 필터 청소"
+   },
+   "every": {
+    "zh-Hant": "建議使用季節約每 2 週清一次",
+    "en": "Suggested: about every 2 weeks while you use it",
+    "ja": "目安は使う季節に2週間に1回ほど",
+    "ko": "권장: 사용하는 계절엔 약 2주마다"
+   }
+  },
+  {
+   "id": "sheets",
+   "task": {
+    "zh-Hant": "換床單",
+    "en": "Change the bed sheets",
+    "ja": "シーツの交換",
+    "ko": "침구 커버 교체"
+   },
+   "every": {
+    "zh-Hant": "建議約每 1–2 週換洗",
+    "en": "Suggested: about every 1–2 weeks",
+    "ja": "目安は1〜2週間に1回ほど",
+    "ko": "권장: 약 1~2주마다"
+   }
+  },
+  {
+   "id": "pillow",
+   "task": {
+    "zh-Hant": "洗枕頭",
+    "en": "Wash your pillows",
+    "ja": "枕を洗う",
+    "ko": "베개 세탁"
+   },
+   "every": {
+    "zh-Hant": "建議約每 3–6 個月，依洗滌標示",
+    "en": "Suggested: every 3–6 months, per the care label",
+    "ja": "目安は3〜6か月ごと。洗濯表示に従って",
+    "ko": "권장: 3~6개월마다, 세탁 표시에 따라"
+   }
+  },
+  {
+   "id": "washer",
+   "task": {
+    "zh-Hant": "清洗衣機槽",
+    "en": "Clean the washing machine drum",
+    "ja": "洗濯槽の掃除",
+    "ko": "세탁조 청소"
+   },
+   "every": {
+    "zh-Hant": "建議約每 1–2 個月",
+    "en": "Suggested: about every 1–2 months",
+    "ja": "目安は1〜2か月に1回ほど",
+    "ko": "권장: 약 1~2개월마다"
+   }
+  },
+  {
+   "id": "fridge",
+   "task": {
+    "zh-Hant": "整理冰箱",
+    "en": "Clear out the fridge",
+    "ja": "冷蔵庫の整理",
+    "ko": "냉장고 정리"
+   },
+   "every": {
+    "zh-Hant": "建議約每週看一次有沒有過期",
+    "en": "Suggested: a quick check about once a week",
+    "ja": "目安は週に1回ほど期限チェック",
+    "ko": "권장: 약 일주일에 한 번 유통기한 확인"
+   }
+  },
+  {
+   "id": "range_hood",
+   "task": {
+    "zh-Hant": "洗抽油煙機濾網",
+    "en": "Clean the range hood filter",
+    "ja": "換気扇フィルターの掃除",
+    "ko": "주방 후드 필터 청소"
+   },
+   "every": {
+    "zh-Hant": "建議約每月一次，常煎炒可更勤",
+    "en": "Suggested: about once a month, more if you fry often",
+    "ja": "目安は月に1回ほど。炒め物が多いなら早めに",
+    "ko": "권장: 약 한 달에 한 번, 볶음 요리가 많으면 더 자주"
+   }
+  },
+  {
+   "id": "smoke_alarm",
+   "task": {
+    "zh-Hant": "測試住宅警報器",
+    "en": "Test the smoke alarm",
+    "ja": "住宅用火災警報器のテスト",
+    "ko": "화재경보기 테스트"
+   },
+   "every": {
+    "zh-Hant": "建議約每月按一次測試鈕",
+    "en": "Suggested: press the test button about once a month",
+    "ja": "目安は月に1回ほどテストボタンを押す",
+    "ko": "권장: 약 한 달에 한 번 테스트 버튼 누르기"
+   }
+  },
+  {
+   "id": "drain",
+   "task": {
+    "zh-Hant": "清浴室排水孔",
+    "en": "Clear the shower drain",
+    "ja": "お風呂の排水口の掃除",
+    "ko": "욕실 배수구 청소"
+   },
+   "every": {
+    "zh-Hant": "建議約每週一次",
+    "en": "Suggested: about once a week",
+    "ja": "目安は週に1回ほど",
+    "ko": "권장: 약 일주일에 한 번"
+   }
+  },
+  {
+   "id": "dehumidifier",
+   "task": {
+    "zh-Hant": "洗除濕機濾網",
+    "en": "Clean the dehumidifier filter",
+    "ja": "除湿機フィルターの掃除",
+    "ko": "제습기 필터 청소"
+   },
+   "every": {
+    "zh-Hant": "建議約每 2 週，依說明書",
+    "en": "Suggested: about every 2 weeks, per the manual",
+    "ja": "目安は2週間に1回ほど。説明書に従って",
+    "ko": "권장: 약 2주마다, 설명서에 따라"
+   }
+  },
+  {
+   "id": "tires",
+   "task": {
+    "zh-Hant": "檢查胎壓",
+    "en": "Check the tire pressure",
+    "ja": "タイヤの空気圧チェック",
+    "ko": "타이어 공기압 점검"
+   },
+   "every": {
+    "zh-Hant": "建議約每月一次，出遠門前也看一下",
+    "en": "Suggested: about once a month and before long drives",
+    "ja": "目安は月に1回ほど。遠出の前にも",
+    "ko": "권장: 약 한 달에 한 번, 장거리 운전 전에도"
+   }
+  },
+  {
+   "id": "water_filter",
+   "task": {
+    "zh-Hant": "換濾水壺濾芯",
+    "en": "Replace the water filter cartridge",
+    "ja": "浄水器カートリッジの交換",
+    "ko": "정수 필터 교체"
+   },
+   "every": {
+    "zh-Hant": "建議依產品說明書的週期更換",
+    "en": "Suggested: on the schedule in the product manual",
+    "ja": "目安は取扱説明書の交換時期どおりに",
+    "ko": "권장: 제품 설명서의 교체 주기대로"
+   }
+  },
+  {
+   "id": "photo_backup",
+   "task": {
+    "zh-Hant": "備份手機照片",
+    "en": "Back up your phone photos",
+    "ja": "スマホ写真のバックアップ",
+    "ko": "휴대폰 사진 백업"
+   },
+   "every": {
+    "zh-Hant": "建議約每月一次",
+    "en": "Suggested: about once a month",
+    "ja": "目安は月に1回ほど",
+    "ko": "권장: 약 한 달에 한 번"
+   }
+  },
+  {
+   "id": "kettle",
+   "task": {
+    "zh-Hant": "熱水壺除水垢",
+    "en": "Descale the kettle",
+    "ja": "電気ケトルの湯あか取り",
+    "ko": "전기포트 물때 제거"
+   },
+   "every": {
+    "zh-Hant": "建議約每 1–2 個月，依水質調整",
+    "en": "Suggested: every 1–2 months, depending on your water",
+    "ja": "目安は1〜2か月ごと。水質に合わせて",
+    "ko": "권장: 1~2개월마다, 물 상태에 따라"
+   }
+  },
+  {
+   "id": "towels",
+   "task": {
+    "zh-Hant": "洗浴巾",
+    "en": "Wash the bath towels",
+    "ja": "バスタオルの洗濯",
+    "ko": "목욕 수건 세탁"
+   },
+   "every": {
+    "zh-Hant": "建議約用 3 次就洗",
+    "en": "Suggested: after about 3 uses",
+    "ja": "目安は3回ほど使ったら",
+    "ko": "권장: 약 3번 쓰고 나면"
+   }
+  },
+  {
+   "id": "mattress",
+   "task": {
+    "zh-Hant": "床墊轉向",
+    "en": "Rotate the mattress",
+    "ja": "マットレスの向きを変える",
+    "ko": "매트리스 방향 바꾸기"
+   },
+   "every": {
+    "zh-Hant": "建議約每 3 個月，依產品說明",
+    "en": "Suggested: about every 3 months, per the maker",
+    "ja": "目安は約3か月ごと。メーカーの案内に従って",
+    "ko": "권장: 약 3개월마다, 제조사 안내에 따라"
+   }
+  }
  ]
 }

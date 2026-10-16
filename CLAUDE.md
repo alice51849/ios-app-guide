@@ -39,6 +39,14 @@
 - threads-autopilot 的 PUBLISHER_REVIEWED_SOURCE_DIGEST 要先經另一個模型複審，才能重新釘選。
 - AgentOffice（~/AgentOffice）和 ~/.growth-runtime 只在本機 Mac 上；要改這兩個地方，由雲端用 send_message 直接交給在線的本機 session 處理，不要叫我轉貼。
 
+## 交接（防帳號或 session 中斷）
+- 進度一律存在 GitHub，不只留在對話或容器裡：換帳號、session 中斷或封存後，別的 session 只靠 GitHub 就要能接手（業主 2026-10-16：「以後要更頻繁的更新到github…避免該帳號被中斷之後其他帳號…沒辦法接續」）。
+- 每個 session（雲端、本機都算）在 00_GrowthEngine 的 `ops/handoff/sessions/` 有自己的交接檔，格式見該資料夾 README；開工後第一個 commit 就建立，只改自己的檔。
+- 交接檔寫：目標、已完成（附 commit SHA）、進行中（做到哪、下一步的具體指令）、卡住（原因、等誰）、交給本機或其他 session 的工作（內容要點）、worker 清單與狀態。
+- 每完成一個步驟、派出或收回 worker、送出 send_message，或至少每 30 分鐘，就更新交接檔並 commit＋push 到 00_GrowthEngine main。
+- 還沒完成的程式或內容改動不要只留在容器：commit 到 `wip/<主題>` 分支並 push（不 force-push），交接檔寫分支名與還差什麼。
+- 開工時（包括「繼續未完成的任務」）：先讀 `ops/handoff/sessions/` 最近 3 天的檔案和各 repo 最近 2 天的 git log，接續狀態不是「已完成」的項目；接手別人的項目時在原檔最後註明由誰接手。
+
 ## 已放棄或已移除，不要再做
 - Lensafe（第 58 款）：業主已放棄，停止所有相關工作。
 - Arquivo 存檔工作：已移除，不要再加回來。

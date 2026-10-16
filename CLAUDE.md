@@ -14,7 +14,7 @@
 - 一律用繁體中文回覆。
 - 已完成或在等審核的項目不用回報，只回報還沒完成的部分，並標上完成百分比。
 - 需要我手動做的步驟，要寫得最詳細，詳細到我不用動腦就能照著做。
-- 需要我轉告本機（Mac）session 的內容，直接寫成一段讓我複製貼上。
+- 雲端要給本機（Mac）session 的資訊或工作，由雲端用 send_message（claude-code-remote）直接傳給在線的本機 session，不要叫我轉貼或轉告（業主 2026-10-16：「雲端要傳資訊給本機直接自己傳」）。只有本機完全沒有在線 session 時，才寫成一段讓我複製貼上。
 - 你覺得怎樣做比較好就直接做，我的目標是所有進度都達到 100%。全速前進，用最快的方式完成，可以平行開多個 worker。
 
 ## 範圍
@@ -37,7 +37,7 @@
 - 00_GrowthEngine 的 geo/ 是正本，ios-app-guide 的 _engine/geo 是它的逐 byte 鏡像，兩邊要同一次一起改。
 - 互推設定（support_network/crosspromo_config.json）的清單和 geo/answer_personas.py 的 PENDING_PERSONAS 必須在同一個 commit 一起改，否則互推網會 fail-closed 停擺。
 - threads-autopilot 的 PUBLISHER_REVIEWED_SOURCE_DIGEST 要先經另一個模型複審，才能重新釘選。
-- AgentOffice（~/AgentOffice）和 ~/.growth-runtime 只在本機 Mac 上；要改這兩個地方，寫成一段文字讓我貼給本機 session。
+- AgentOffice（~/AgentOffice）和 ~/.growth-runtime 只在本機 Mac 上；要改這兩個地方，由雲端用 send_message 直接交給在線的本機 session 處理，不要叫我轉貼。
 
 ## 已放棄或已移除，不要再做
 - Lensafe（第 58 款）：業主已放棄，停止所有相關工作。

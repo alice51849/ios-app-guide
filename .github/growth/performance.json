@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-15T04:24:53Z",
+  "updated_at": "2026-10-16T04:20:01Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
-    "instagram": "ok: 0 posts",
-    "threads": "ok: 19 posts"
+    "instagram": "ok: 3 posts",
+    "threads": "ok: 22 posts"
   },
   "boost": [
     "battai",
@@ -13,11 +13,11 @@
     "wifiaidlite"
   ],
   "demote": [
-    "hourstaglite",
-    "shotinbox",
-    "hourstag",
-    "scanto",
-    "countdaysnow"
+    "countdaysnow",
+    "maskmyfile",
+    "dbhalo",
+    "aim990",
+    "qrcodehalo"
   ],
   "hook_winners": {
     "apps": {},
@@ -27,14 +27,50 @@
   "allocation": {
     "threshold": 20.0,
     "window": 14,
-    "channels": {},
+    "channels": {
+      "instagram": {
+        "posts": 2,
+        "median_views": 0.5,
+        "keep_slot": 1,
+        "daily": 2
+      },
+      "threads": {
+        "posts": 1,
+        "median_views": 8,
+        "keep_slot": 1,
+        "daily": 2
+      }
+    },
     "best": null,
     "reduced": [],
-    "decision": "等資料：每通路需 14 則有洞察的鉤子片（目前 0）"
+    "decision": "等資料：每通路需 14 則有洞察的鉤子片（目前 Instagram 2、Threads 1）"
   },
-  "best_hours": {},
+  "best_hours": {
+    "threads": {
+      "en": {
+        "hour": 8,
+        "avg_views": 14.5,
+        "posts": 14,
+        "hours": {
+          "1": 9.3,
+          "8": 14.5,
+          "13": 4.5,
+          "16": 7.5
+        }
+      },
+      "zh-Hant": {
+        "hour": 16,
+        "avg_views": 10.0,
+        "posts": 8,
+        "hours": {
+          "16": 10.0,
+          "23": 6.0
+        }
+      }
+    }
+  },
   "best_hours_status": {
-    "threads": "19/20 則"
+    "instagram": "3/20 則"
   },
   "ranking": {
     "apps": [
@@ -73,10 +109,10 @@
       {
         "key": "wifiaidlite",
         "posts": 1,
-        "views": 19,
+        "views": 20,
         "engagement": 0,
-        "score": 19,
-        "avg_score": 19.0
+        "score": 20,
+        "avg_score": 20.0
       },
       {
         "key": "sononote",
@@ -103,6 +139,14 @@
         "avg_score": 7.5
       },
       {
+        "key": "lumibopomofo",
+        "posts": 2,
+        "views": 9,
+        "engagement": 1,
+        "score": 14,
+        "avg_score": 7.0
+      },
+      {
         "key": "tripbee",
         "posts": 1,
         "views": 7,
@@ -117,14 +161,6 @@
         "engagement": 0,
         "score": 7,
         "avg_score": 7.0
-      },
-      {
-        "key": "maskmyfile",
-        "posts": 2,
-        "views": 13,
-        "engagement": 0,
-        "score": 13,
-        "avg_score": 6.5
       },
       {
         "key": "hourstaglite",
@@ -165,24 +201,64 @@
         "engagement": 0,
         "score": 5,
         "avg_score": 5.0
+      },
+      {
+        "key": "maskmyfile",
+        "posts": 3,
+        "views": 13,
+        "engagement": 0,
+        "score": 13,
+        "avg_score": 4.3
+      },
+      {
+        "key": "dbhalo",
+        "posts": 1,
+        "views": 4,
+        "engagement": 0,
+        "score": 4,
+        "avg_score": 4.0
+      },
+      {
+        "key": "aim990",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "key": "qrcodehalo",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "locales": [
       {
         "key": "zh-Hant",
-        "posts": 7,
-        "views": 195,
-        "engagement": 1,
-        "score": 200,
-        "avg_score": 28.6
+        "posts": 10,
+        "views": 205,
+        "engagement": 2,
+        "score": 215,
+        "avg_score": 21.5
       },
       {
         "key": "en",
-        "posts": 12,
-        "views": 165,
+        "posts": 14,
+        "views": 169,
         "engagement": 1,
-        "score": 168,
-        "avg_score": 14.0
+        "score": 172,
+        "avg_score": 12.3
+      },
+      {
+        "key": "cs",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "hooks": [
@@ -231,10 +307,10 @@
         "locale": "zh-Hant",
         "hook": "“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测",
         "posts": 1,
-        "views": 19,
+        "views": 20,
         "engagement": 0,
-        "score": 19,
-        "avg_score": 19.0
+        "score": 20,
+        "avg_score": 20.0
       },
       {
         "app": "sononote",
@@ -285,6 +361,16 @@
         "engagement": 0,
         "score": 8,
         "avg_score": 8.0
+      },
+      {
+        "app": "lumibopomofo",
+        "locale": "zh-Hant",
+        "hook": "收集 37 個 注音小夥伴",
+        "posts": 2,
+        "views": 9,
+        "engagement": 1,
+        "score": 14,
+        "avg_score": 7.0
       },
       {
         "app": "zipbox",
@@ -367,6 +453,16 @@
         "avg_score": 4.0
       },
       {
+        "app": "dbhalo",
+        "locale": "en",
+        "hook": "Spectrum, Dose & Sleep Journal.",
+        "posts": 1,
+        "views": 4,
+        "engagement": 0,
+        "score": 4,
+        "avg_score": 4.0
+      },
+      {
         "app": "hourstag",
         "locale": "en",
         "hook": "That impulse buy did not cost you money. It cost you a whole",
@@ -375,9 +471,56 @@
         "engagement": 0,
         "score": 3,
         "avg_score": 3.0
+      },
+      {
+        "app": "aim990",
+        "locale": "zh-Hant",
+        "hook": "",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "maskmyfile",
+        "locale": "cs",
+        "hook": "Něco chybí? Přidejte to",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "qrcodehalo",
+        "locale": "en",
+        "hook": "Scanning never auto-opens a destination.",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
-    "variants": []
+    "variants": [
+      {
+        "key": "c",
+        "posts": 2,
+        "views": 9,
+        "engagement": 1,
+        "score": 14,
+        "avg_score": 7.0
+      },
+      {
+        "key": "b",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      }
+    ]
   },
   "posts": [
     {
@@ -696,12 +839,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 19,
+        "views": 20,
         "likes": 0,
         "replies": 0,
         "reposts": 0
       },
-      "score": 19
+      "score": 20
     },
     {
       "channel": "threads",
@@ -740,6 +883,126 @@
         "reposts": 0
       },
       "score": 5
+    },
+    {
+      "channel": "instagram",
+      "id": "18037089620655985",
+      "link": "https://www.instagram.com/reel/DegQdxZjqGh/",
+      "posted_at": "2026-10-15T05:56:30",
+      "app": "lumibopomofo",
+      "locale": "zh-Hant",
+      "hook": "收集 37 個 注音小夥伴",
+      "clip": "lumibopomofo/zh-Hant",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 1,
+        "reach": 1,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 1
+    },
+    {
+      "channel": "threads",
+      "id": "18105193691312359",
+      "link": "https://www.threads.com/@hourstag.app/post/DegUA20Dah4",
+      "posted_at": "2026-10-15T06:27:48",
+      "app": "lumibopomofo",
+      "locale": "zh-Hant",
+      "hook": "收集 37 個 注音小夥伴",
+      "clip": "lumibopomofo/zh-Hant",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 8,
+        "likes": 0,
+        "replies": 1,
+        "reposts": 0
+      },
+      "score": 13
+    },
+    {
+      "channel": "instagram",
+      "id": "18131712448759505",
+      "link": "https://www.instagram.com/p/DegrTJdmwgf/",
+      "posted_at": "2026-10-15T09:50:49",
+      "app": "aim990",
+      "locale": "zh-Hant",
+      "hook": "",
+      "clip": "utility/word/aim990/invoice/zh-Hant",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "threads",
+      "id": "18039515507830741",
+      "link": "https://www.threads.com/@hourstag.app/post/DehGb7ulP-U",
+      "posted_at": "2026-10-15T13:51:27",
+      "app": "dbhalo",
+      "locale": "en",
+      "hook": "Spectrum, Dose & Sleep Journal.",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 4,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 4
+    },
+    {
+      "channel": "instagram",
+      "id": "18096617609140304",
+      "link": "https://www.instagram.com/reel/DehrpqjgFgN/",
+      "posted_at": "2026-10-15T19:13:09",
+      "app": "maskmyfile",
+      "locale": "cs",
+      "hook": "Něco chybí? Přidejte to",
+      "clip": "maskmyfile/cs",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "threads",
+      "id": "17992989714111435",
+      "link": "https://www.threads.com/@hourstag.app/post/DeiK4cOklsA",
+      "posted_at": "2026-10-16T03:44:07",
+      "app": "qrcodehalo",
+      "locale": "en",
+      "hook": "Scanning never auto-opens a destination.",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "likes": 0,
+        "replies": 0,
+        "reposts": 0
+      },
+      "score": 0
     }
   ]
 }

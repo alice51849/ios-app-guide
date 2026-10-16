@@ -24,8 +24,10 @@ import answer_app_store_links  # noqa: E402
 import check_hub_coverage  # noqa: E402
 import app_store_storefronts as stores  # noqa: E402
 import audit_store_attribution as audit  # noqa: E402
+import gen_app_store_conversion_surfaces as surfaces  # noqa: E402
 import gen_app_store_review_ctas as review  # noqa: E402
 import gen_mobile_store_ctas  # noqa: E402
+import gen_smart_app_banners  # noqa: E402
 import gen_store_attribution as attribution  # noqa: E402
 import hero_task_html  # noqa: E402
 import market_availability as market  # noqa: E402
@@ -259,7 +261,7 @@ class ReviewStamperAndAuditTests(unittest.TestCase):
 
 class ReviewBlockTests(unittest.TestCase):
     def test_focus_apps_and_labels_are_complete_and_neutral(self):
-        self.assertEqual(21, len(review.REVIEW_APP_IDS))
+        self.assertEqual(len(APPSTORE), len(review.REVIEW_APP_IDS))
         self.assertIn(USAGENOW, review.REVIEW_APP_IDS)
         self.assertEqual(USAGENOW, "6818607603")
         self.assertEqual(set(OFFICIAL_LOCALES), set(review.REVIEW_LABELS))
@@ -269,6 +271,21 @@ class ReviewBlockTests(unittest.TestCase):
                 self.assertIn("App Stor", label)
                 self.assertIsNone(review.INCENTIVE_RE.search(label))
                 self.assertNotRegex(label, r"\d")
+
+    def test_focus_apps_include_recent_paying_apps(self):
+        """Every live roster App gets the review link (benchmark_top1 section 3,
+        lever 1), in particular the Apps that paid in the last 30 days but had
+        no link at all (reports/conversion_focus_2026-10-16.md)."""
+        for key, app_id in LIVE_APPS.items():
+            with self.subTest(app=key):
+                self.assertIn(key, review.REVIEW_APP_KEYS)
+                self.assertTrue(review.is_review_app(app_id))
+        for key in ("unblurry", "onepageppt", "wordmate", "snapport", "gmoney"):
+            with self.subTest(app=key):
+                self.assertIn(key, review.REVIEW_APP_KEYS)
+                self.assertTrue(review.is_review_app(APPSTORE[key]))
+        self.assertEqual(set(review.REVIEW_APP_KEYS), set(APPSTORE))
+        self.assertFalse(review.is_review_app("6700000001"))
 
     def test_block_is_placed_under_the_qr_card_and_is_idempotent(self):
         source = (
@@ -285,11 +302,12 @@ class ReviewBlockTests(unittest.TestCase):
         self.assertLess(once.index(review.BLOCK_END), once.index("</main>"))
         self.assertIn(review.REVIEW_LABELS["ja"], once)
         self.assertIn(f'href="{href}"', once)
-        # Removing the App from the focus list (or a blocked market) self-heals.
+        # Removing the App from the roster (or a blocked market) self-heals.
         self.assertNotIn(review.BLOCK_START, review.render_review(Path("x"), once, USAGENOW, None, "ja"))
-        lumimath = str(APPSTORE["lumimath"])
+        retired = "6700000001"
+        self.assertNotIn(retired, review.REVIEW_APP_IDS)
         self.assertNotIn(review.BLOCK_START, review.render_review(
-            Path("x"), once, lumimath, href.replace(USAGENOW, lumimath), "ja",
+            Path("x"), once, retired, href.replace(USAGENOW, retired), "ja",
         ))
         with self.assertRaises(ValueError):
             review.review_block(USAGENOW, f"{href}&ct=x", "ja")
@@ -303,6 +321,102 @@ class ReviewBlockTests(unittest.TestCase):
         block = "<!-- hero-task-resources-v1:start --><section>x</section><!-- hero-task-resources-v1:end -->"
         updated = hero_task_html.insert_resource(source, block, "hero-task-resources-v1")
         self.assertEqual(source.replace(intro, intro + block, 1), updated)
+
+    def test_single_app_buyer_sections_get_banner_and_review(self):
+        """best-for, vs and reviews single-App pages carry the Smart App Banner
+        and the review link; a multi-App page in the same family and a Web
+        Story (AMP, protected story campaign) get neither."""
+        app_id = USAGENOW
+        other = str(APPSTORE["mochi"])
+
+        def body(*ids):
+            return "".join(
+                f'<p><a href="https://apps.apple.com/app/id{value}">Get</a></p>'
+                for value in ids
+            )
+
+        def document(lang, *ids):
+            return (
+                f'<html lang="{lang}"><head><meta charset="utf-8"></head>'
+                f"<body><main>{body(*ids)}</main></body></html>"
+            )
+
+        story = (
+            '<html amp lang="ja"><head><meta charset="utf-8"></head><body>'
+            '<amp-story><amp-story-page id="cta"><amp-story-cta-layer>'
+            f'<a href="https://apps.apple.com/app/id{app_id}">Get</a>'
+            "</amp-story-cta-layer></amp-story-page></amp-story></body></html>"
+        )
+        with tempfile.TemporaryDirectory() as directory, mock.patch.dict(
+            os.environ, {stores.PROVIDER_TOKEN_ENV: PROVIDER},
+        ):
+            pages = Path(directory)
+            guide = pages / "guides" / "claudeusagemini.html"
+            single = {
+                "ja/best-for/usagenow-best.html": document("ja", app_id),
+                "ja/vs/usagenow-vs-other.html": document("ja", app_id),
+                "reviews/usagenow-review-2026.html": document("en", app_id),
+                "de-DE/reviews/usagenow-review-2026.html": document("de-DE", app_id),
+            }
+            excluded = {
+                "ja/best-for/two-apps.html": document("ja", app_id, other),
+                "ja/vs/usagenow-vs-mochi.html": document("ja", app_id, other),
+                "ja/reviews/two-apps.html": document("ja", app_id, other),
+                "ja/stories/claudeusagemini.html": story,
+                "stories/claudeusagemini.html": story,
+                # Non-store-locale mirrors keep the global link: no surface.
+                "aa/best-for/usagenow-best.html": document("aa", app_id),
+            }
+            for relative, source in {**single, **excluded}.items():
+                path = pages / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(source, encoding="utf-8")
+            guide.parent.mkdir()
+            guide.write_text(document("en", app_id), encoding="utf-8")
+            with mock.patch.object(
+                gen_smart_app_banners, "build_targets",
+                return_value=({guide.resolve(): app_id}, 1),
+            ):
+                inventory = gen_smart_app_banners.build_surface_inventory(
+                    pages, {"claudeusagemini"}, "https://example.test/site",
+                )
+                self.assertEqual(
+                    {guide.resolve(), *(
+                        (pages / relative).resolve() for relative in single
+                    )},
+                    set(inventory.targets),
+                )
+                self.assertEqual(
+                    {(pages / relative).resolve() for relative in single},
+                    set(inventory.buyer_intent_pages) & set(inventory.targets),
+                )
+                with mock.patch.object(
+                    gen_smart_app_banners, "build_surface_inventory",
+                    return_value=inventory,
+                ):
+                    result = surfaces.generate(
+                        pages, {"claudeusagemini"}, "https://example.test/site",
+                    )
+            self.assertEqual(len(single), result["smart_app_banners"]["buyer_intent_pages"])
+            self.assertEqual(len(single), result["app_store_review_ctas"]["buyer_intent_pages"])
+            self.assertEqual(len(single) + 1, result["app_store_review_ctas"]["pages"])
+            banner = gen_smart_app_banners.banner_block(app_id)
+            for relative in single:
+                with self.subTest(page=relative):
+                    source = (pages / relative).read_text(encoding="utf-8")
+                    self.assertEqual(1, source.count(banner))
+                    self.assertEqual(1, source.count(review.BLOCK_START))
+                    locale = relative.split("/")[0] if relative.count("/") == 2 else "en-US"
+                    self.assertIn(html.escape(review.REVIEW_LABELS[locale]), source)
+                    # No storefront snapshot in the fixture, so the link stays
+                    # global; the stamper aligns it once availability is known.
+                    self.assertIn(
+                        f'href="https://apps.apple.com/app/id{app_id}?action=write-review"',
+                        source,
+                    )
+            for relative, original in excluded.items():
+                with self.subTest(page=relative):
+                    self.assertEqual(original, (pages / relative).read_text(encoding="utf-8"))
 
     def test_cta_selectors_never_pick_the_review_link(self):
         download = f"https://apps.apple.com/us/app/id{USAGENOW}"

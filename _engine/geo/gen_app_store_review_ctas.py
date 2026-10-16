@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Add a neutral existing-user "rate or review" link to focus-App pages.
+"""Add a neutral existing-user "rate or review" link to live-App pages.
 
-BM-13 / BM-47 (reports/benchmark_top1_checklist_2026-10-15.md): every page
-about one of the ten focus Apps carries Apple's direct review action,
-``https://apps.apple.com/[cc/]app/id<N>?action=write-review``.
+BM-13 / BM-47 (reports/benchmark_top1_checklist_2026-10-15.md) and lever 1
+of reports/benchmark_top1_2026-10-15.md section 3: every page about a live
+roster App carries Apple's direct review action,
+``https://apps.apple.com/[cc/]app/id<N>?action=write-review`` (no reward).
 
 Rules kept here on purpose:
   * No incentive, no star prompt, no "leave 5 stars": one neutral sentence per
@@ -53,35 +54,19 @@ BLOCK_RE = gen_smart_app_banners.APP_STORE_REVIEW_BLOCK_RE
 QR_BLOCK_END = gen_smart_app_banners.APP_STORE_QR_BLOCK_END
 MOBILE_CTA_BLOCK_START = gen_smart_app_banners.MOBILE_CTA_BLOCK_START
 
-# The ten focus Apps of the 2026-10-15 benchmark checklist (registry keys),
-# plus the rest of the A-group roster (coverage audit 2026-10-16): every
-# live App's pages carry the same neutral existing-user review link, because
-# the benchmark found review count is the one lever every category leader
-# has and we lack (single-digit counts on every App).
-REVIEW_APP_KEYS = (
-    "claudeusagemini",  # UsageNow
-    "mochi",
-    "battai",
-    "lumiweather",
-    "cvdesk",
-    "cyca",
-    "aim990",
-    "lumibopomofo",
-    "dbhalo",
-    "zipbox",
-    # A-group additions (2026-10-16)
-    "aibriefpack",
-    "lumibopomofopro",
-    "caldaily",
-    "countdaysnow",
-    "dailymate",
-    "dailymatelite",
-    "gmoney",
-    "gmoneylite",
-    "hourstag",
-    "hourstaglite",
-    "ledmovingtext",
-)
+# Every registry App (registry keys). Started 2026-10-15 as the ten focus
+# Apps of the benchmark checklist, widened on 2026-10-16 (coverage audit:
+# only 10 of 53 live Apps had the link) to the whole roster: every live App's
+# pages carry the same neutral existing-user review link, because the
+# benchmark found review count is the one lever every category leader has
+# and we lack (single-digit counts on every App), and
+# reports/benchmark_top1_2026-10-15.md section 3 (lever 1) puts the link on
+# every page. reports/conversion_focus_2026-10-16.md also showed the Apps with
+# paying units in the last 30 days (unblurry 6, onepageppt 4, wordmate 4,
+# snapport 4, gmoney 3) had no link at all. Live gating stays upstream: only
+# conversion targets of verified-live Apps get the block, and the read-only
+# audit accepts a review link only for a live roster App.
+REVIEW_APP_KEYS = tuple(sorted(APPSTORE))
 REVIEW_APP_IDS = frozenset(str(APPSTORE[key]) for key in REVIEW_APP_KEYS)
 
 # One neutral sentence per official locale. No reward, no rating value, no
@@ -168,7 +153,7 @@ def review_block(app_id: str, href: str, locale: str) -> str:
     (hero_task_html) treats top-level paragraphs as the page introduction.
     """
     if not is_review_app(app_id):
-        raise ValueError(f"App is not a review-link focus App: {app_id}")
+        raise ValueError(f"App is not a review-link roster App: {app_id}")
     if not is_app_store_review_url(href):
         raise ValueError(f"Invalid App Store review URL: {href!r}")
     path = APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(href).path)
@@ -239,7 +224,7 @@ def review_target_url(app_id: str) -> str:
 
 
 def coverage(pages: Path = PAGES) -> dict[str, object]:
-    """Read-only census of review blocks per focus App in a built tree."""
+    """Read-only census of review blocks per roster App in a built tree."""
     by_app: Counter = Counter()
     pages_with_block = 0
     for path in pages.rglob("*.html"):

@@ -219,12 +219,17 @@ class QrEligiblePageFamilyTests(unittest.TestCase):
     不必等雲端跑 40 分鐘才炸一頁。
     """
 
-    # section -> (module name, expected bucket token)
+    # section -> (module name, expected bucket token). A persisted family
+    # (its writers are not shipped in the cloud engine, so the attribution
+    # pass is the only thing that mints its token) has no module to check.
     FAMILIES = {
         "answers": ("aeo_answers", "geo_ask"),
         "guides": ("aeo_guide", "geo_learn"),
         "hubs": ("gen_hubs", "geo_pick"),
         "alternatives": ("aeo_pages", "geo_pick"),
+        "best-for": (None, "geo_pick"),
+        "vs": (None, "geo_pick"),
+        "reviews": (None, "geo_pick"),
     }
 
     def test_sections_match_the_qr_eligible_surface(self):
@@ -246,6 +251,8 @@ class QrEligiblePageFamilyTests(unittest.TestCase):
                         f"{section}/page.html"
                     ),
                 )
+                if module_name is None:
+                    continue
                 text = _module_source(module_name)
                 self.assertNotIn(
                     '"iag_',

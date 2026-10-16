@@ -29,6 +29,7 @@ from answer_app_store_links import (  # noqa: E402
 import gen_linkset  # noqa: E402
 import parallel_pages  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
+from official_locales import OFFICIAL_LOCALES  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
 
 
@@ -90,7 +91,16 @@ MOBILE_APP_IDENTITY_BLOCK_RE = re.compile(
 )
 LOCALE_DIRECTORY_RE = re.compile(r"[a-z]{2,3}(?:-[A-Za-z]{2,4})?")
 RESERVED_TOP_LEVEL_DIRS = {"api"}
-BUYER_INTENT_SECTIONS = ("answers", "alternatives", "hubs")
+# Page families whose single-App pages carry the install surfaces (Smart App
+# Banner, sticky mobile CTA, QR card, share action, review link). best-for,
+# vs and reviews are persisted families (their writers are not shipped in the
+# cloud engine; the attribution pass owns their token). stories stays out on
+# purpose: Web Stories are AMP documents (no custom scripts, one CTA layer
+# link) whose banner and CTA validate_webstories.py pins to the story
+# campaign.
+BUYER_INTENT_SECTIONS = (
+    "answers", "alternatives", "hubs", "best-for", "vs", "reviews",
+)
 
 
 @dataclass(frozen=True)
@@ -257,7 +267,11 @@ def build_install_targets(
     targets, app_count = build_targets(pages, live_keys, site)
     _add_single_app_targets(
         targets,
-        _alternative_pages(pages) | _hub_pages(pages),
+        set().union(*(
+            _section_pages(pages, section)
+            for section in BUYER_INTENT_SECTIONS
+            if section != "answers"
+        )),
         {APPSTORE[key] for key in live_keys},
     )
     return targets, app_count
@@ -344,8 +358,10 @@ def _section_pages(pages: Path, section: str) -> set[Path]:
         for path in (pages / section).glob("*.html")
         if path.name != "index.html"
     }
+    # Only official-locale mirrors: a non-store-locale mirror (noindex, global
+    # store link) has no storefront to mint the surfaces for.
     for child in pages.iterdir():
-        if child.name == "_engine" or not child.is_dir():
+        if child.name not in OFFICIAL_LOCALES or not child.is_dir():
             continue
         localized_section = child / section
         if localized_section.is_dir():

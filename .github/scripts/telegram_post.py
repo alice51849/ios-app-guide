@@ -712,9 +712,31 @@ def pick(pool, now=None):
     return candidates(pool, now)[0]
 
 
-def compose_text(item, android=True, review=True):
-    url = campaign_app_store_url(item.get("url"), "soc_tg_guide")
-    play = play_store_url(item.get("app"), "soc_tg_guide") if android else None
+# App Store campaign of a single Telegram post. Apple reports campaigns per app and reveals one only past
+# 5 first-time downloads (00_GrowthEngine agent/ct_codes.py, conversion_drop_2026-10-16 action 5), so the
+# token carries the app key and leaves the locale to the ledger receipt (official_locale) by default;
+# TG_CT_WITH_LOCALE = True splits it to soc_tg_<app>_<lang> (ct_codes reads both, and soc_tg_guide).
+LEGACY_TG_CT = "soc_tg_guide"
+TG_CT_WITH_LOCALE = False
+TG_CT_MAX = 30  # social_post_common.APP_STORE_CAMPAIGN_RE
+
+
+def telegram_campaign(item, with_locale=None):
+    """soc_tg_<app_key>[_<lang>], only [a-z0-9_] and at most TG_CT_MAX characters; soc_tg_guide when the
+    item has no publisher app key."""
+    key = str(item.get("app_key") or "")
+    if re.fullmatch(r"[a-z0-9]+", key) is None:
+        return LEGACY_TG_CT
+    with_locale = TG_CT_WITH_LOCALE if with_locale is None else with_locale
+    lang = re.sub(r"[^a-z0-9]", "", str(item.get("lang") or "").lower()) if with_locale else ""
+    suffix = f"_{lang}" if lang else ""
+    return f"soc_tg_{key[:TG_CT_MAX - len('soc_tg_') - len(suffix)]}{suffix}"
+
+
+def compose_text(item, android=True, review=True, ct=None):
+    ct = telegram_campaign(item) if ct is None else ct
+    url = campaign_app_store_url(item.get("url"), ct)
+    play = play_store_url(item.get("app"), ct) if android else None
     links = f"👉 {url}" + (f"\n🤖 Google Play: {play}" if play else "")
     # Existing-user review link, only for the review_links.json pairs (category
     # leader with <= 20 ratings) in their own locale; no ct, no reward.
@@ -988,6 +1010,59 @@ def page_unready_apps(app_ids, country=PAGE_READY_STOREFRONT, opener=None, sleep
     return frozenset(unready)
 
 
+def _sent_digests(item):
+    """Every payload digest this item has gone out as: the current text, and the texts sent before the
+    Google Play line, before the review line (review_links.json), or with the shared soc_tg_guide token."""
+    return {
+        _digest(compose_text(item, android=android, review=review, ct=ct))
+        for ct in dict.fromkeys((telegram_campaign(item), telegram_campaign(item, True), LEGACY_TG_CT))
+        for android in (True, False)
+        for review in (True, False)
+    }
+
+
+# Paying markets first (00_GrowthEngine reports/conversion_focus_2026-10-16.md: 7-day paid storefronts
+# US 7 / BR 4 / CA 2 / KR 1 for Mochi, TW for Lumi Bopomofo, Wordmate, gMoney, Zipbox, JP / DE / US for
+# Snapport; reports/channel_funnel.md). Each zone has one slot a day; on three days of four the selected
+# app goes out in the zone's paid locale of the day (weighted cycle), on the fourth the existing rotation
+# keeps every other locale in turn. A paid locale already sent for that app falls to the next one.
+PAID_LOCALE_CYCLE = {
+    "asia": ("zh-Hant", "ja", "zh-Hant", "ko", "zh-Hant", "ja"),
+    "eu_me": ("de-DE",),
+    "americas": ("en-US", "pt-BR", "en-US", "pt-BR", "en-US", "en-CA"),
+}
+LONG_TAIL_EVERY = 4  # every 4th day per zone keeps the plain locale rotation
+
+
+def paid_locale_of_day(zone, day):
+    """The zone's paid locale for `day` (a date), or None on a long-tail day."""
+    n = day.toordinal()
+    if n % LONG_TAIL_EVERY == LONG_TAIL_EVERY - 1:
+        return None
+    cycle = PAID_LOCALE_CYCLE.get(zone, ())
+    if not cycle:
+        return None
+    return cycle[(n - n // LONG_TAIL_EVERY) % len(cycle)]
+
+
+def paid_market_first(eligible, zone, day):
+    """`eligible` with each app's items reordered so the day's paid locale leads, then the zone's other
+    paid locales; the app order (the fair rotation) and every item are kept."""
+    target = paid_locale_of_day(zone, day)
+    if target is None:
+        return list(eligible)
+    paid = list(dict.fromkeys((target, *PAID_LOCALE_CYCLE[zone])))
+    groups = {}
+    for item in eligible:
+        groups.setdefault(str(item.get("app")), []).append(item)
+    rank = {lang: i for i, lang in enumerate(paid)}
+    return [
+        item
+        for items in groups.values()
+        for item in sorted(items, key=lambda it: rank.get(it.get("lang"), len(paid)))
+    ]
+
+
 def choose_unpublished(pool, ledger, now, slot=None, skip_apps=frozenset()):
     from social_slot_gate import slot_start
 
@@ -1025,13 +1100,9 @@ def choose_unpublished(pool, ledger, now, slot=None, skip_apps=frozenset()):
         and str(item.get("app")) not in blocked_apps
         and str(item.get("app")) not in skip_apps
         and not routed_away(item)
-        and _digest(compose_text(item)) not in used
-        # Posts sent before the Google Play line was added count as used too.
-        and _digest(compose_text(item, android=False)) not in used
-        # So do posts sent before the review line (review_links.json) was added.
-        and _digest(compose_text(item, review=False)) not in used
-        and _digest(compose_text(item, android=False, review=False)) not in used
+        and not _sent_digests(item) & used
     ]
+    eligible = paid_market_first(eligible, zone, scheduled.date())
     # Native gaps get the next eligible existing slot, never additional sends.
     return next(
         (item for item in eligible if str(item["app"]) not in covered),

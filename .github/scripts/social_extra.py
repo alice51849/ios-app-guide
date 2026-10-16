@@ -300,7 +300,7 @@ def todays_cards(day, channel):
                       "name": "CountDaysNow", "hook": cap.split("\n")[0], "tags": tags,
                       "button": countdown_cards.TEXT[e["locale"]]["button"],
                       "store": countdown_cards.store_url(e, ct),
-                      "play": countdown_cards.play_store_url(countdown_cards.APP_ID, f"cd_{e['id']}_{ct}"[:40])})
+                      "play": countdown_cards.play_store_url(countdown_cards.APP_ID, countdown_cards.campaign(ct))})
     try:
         import utility_cards as uc
     except ImportError:

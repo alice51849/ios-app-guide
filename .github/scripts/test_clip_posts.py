@@ -50,10 +50,17 @@ class ClipPostsTest(unittest.TestCase):
 
     def test_campaign_token_gets_channel_suffix_and_stays_short(self):
         url = C.with_campaign("https://apps.apple.com/tw/app/id1?pt=1&ct=h7_claudeusagemini_zh-Hant&mt=8", "tg")
-        self.assertIn("ct=h7_claudeusagemini_zh-Hant_tg", url)
+        self.assertIn("ct=h7_claudeusagemini_tg", url)  # the locale leaves the campaign token
         long = C.with_campaign("https://apps.apple.com/us/app/id1?ct=" + "x" * 45, "ig")
         ct = dict(p.split("=") for p in long.split("?")[1].split("&"))["ct"]
         self.assertLessEqual(len(ct), 40)
+
+    def test_clip_campaign_drops_only_the_locale(self):
+        cases = {"h7_mochi_en": "h7_mochi", "h7_mochi_zh-Hant": "h7_mochi", "h7_mochi_b_pt-BR": "h7_mochi_b",
+                 "h7_mochi_th": "h7_mochi", "h7_mochi": "h7_mochi", "h7_mochi_b": "h7_mochi_b", "": "h7"}
+        for token, merged in cases.items():
+            self.assertEqual(C.clip_campaign(token), merged, token)
+        self.assertIn("ct=h7_mochi_b_yt", C.with_campaign("https://apps.apple.com/us/app/id1?ct=h7_mochi_b", "yt"))
 
     def test_instagram_caption_points_to_search_and_bio_with_few_tags(self):
         text = C.caption(clip("mochi", "ja"), "instagram")
@@ -127,7 +134,7 @@ class ClipPostsTest(unittest.TestCase):
             self.assertEqual(C.post_telegram(clip("a", "en")), {"id": 7, "link": None})
         self.assertTrue(sent["endpoint"].endswith("/sendVideo"))
         button = json.loads(sent["reply_markup"])["inline_keyboard"][0][0]
-        self.assertIn("ct=h7_a_en_tg", button["url"])
+        self.assertIn("ct=h7_a_tg", button["url"])
 
     def test_public_channel_post_gets_a_link(self):
         reply = {"ok": True, "result": {"message_id": 9, "chat": {"username": "lumiapps"}}}
@@ -166,7 +173,7 @@ class ClipPostsTest(unittest.TestCase):
         self.assertEqual(calls[0]["media_type"], "VIDEO")
         self.assertNotIn("https://", calls[0]["text"])
         self.assertEqual(calls[2]["reply_to_id"], "id2")
-        self.assertIn("ct=h7_a_en_th", calls[2]["text"])
+        self.assertIn("ct=h7_a_th", calls[2]["text"])
 
 
 def real(locale="en", **kw):

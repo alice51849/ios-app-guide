@@ -167,7 +167,7 @@ class PlanTest(unittest.TestCase):
 
     def test_caption_and_campaign_follow_the_platform(self):
         it = S.clip_item("a/zh-Hant", clip("a", "zh-Hant"), "plurk")
-        self.assertIn("ct=h7_a_zh-Hant_pk", it["store"])
+        self.assertIn("ct=h7_a_pk", it["store"])
         self.assertIn("a 鉤子 zh-Hant", it["caption"])
 
     def test_missing_secrets_log_not_configured_and_post_nothing(self):
@@ -252,7 +252,7 @@ class ServedElsewhereTest(unittest.TestCase):
         self.assertEqual(top["youtube"]["title"], "Hit your AI limit mid-task again? | UsageNow #Shorts")  # problem first
         self.assertEqual(top["variant"], "a")
         self.assertLessEqual(len(top["youtube"]["title"]), 100)
-        self.assertIn("ct=h7_b_en_yt", top["store"])
+        self.assertIn("ct=h7_b_yt", top["store"])
         self.assertIn("quota · reset · countdown", top["youtube"]["description"])
         self.assertEqual(top["youtube"]["tags"][:3], ["quota", "reset", "countdown"])
         bs = feed["pool"]["bluesky"][-1]
@@ -353,6 +353,7 @@ class CardsTest(unittest.TestCase):
         for c in cards:
             self.assertTrue(c["image"].startswith("https://raw.githubusercontent.com/"))
             self.assertIn("_tb", c["store"])
+            self.assertRegex(c["store"], r"ct=(cd_tb|ut_[a-z0-9]+_tb)&")  # app x platform, no event / type id
             self.assertTrue(c["caption"])
         self.assertTrue(all(c["locale"] == "ko" for c in S.todays_cards(dt.date(2026, 11, 1), "naver")))
 

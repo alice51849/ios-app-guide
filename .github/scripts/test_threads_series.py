@@ -62,6 +62,13 @@ class PlanTest(unittest.TestCase):
         self.assertNotIn("http", chosen["text"])
         self.assertIn("ct=bm_usagenow_us_x", __import__("threads_post").queued_links(chosen))
 
+    def test_queued_posts_keep_bm_tokens_and_merge_the_rest(self):
+        tp = __import__("threads_post")
+        self.assertEqual("bm_mochi_us_th", tp.queued_campaign({"ct": "bm_mochi_us_th"}))
+        for ct in ("aim990_zhHant_1", "un_tw_threads_4", "", None):
+            self.assertEqual("soc_th_guide", tp.queued_campaign({"ct": ct}))
+        self.assertIn("ct=soc_th_guide", tp.queued_links({"app_id": "6784974530", "ct": "aim990_zhHant_1"}))
+
     def test_overlong_event_is_skipped(self):
         data = live_event(self.data)
         data["series"]["usagenow_policy"]["events"][0]["headline"] = "x" * 200

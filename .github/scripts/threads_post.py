@@ -213,9 +213,17 @@ def queued_today(day=None):
     return next((p for p in posts if p.get("date") == day.isoformat()), None)
 
 
+def queued_campaign(post):
+    """A pre-registered BM series token (bm_*) stays; any other queued post counts under the guide's
+    Threads campaign (soc_th_guide), because per-post tokens never reach Apple's 5-download reveal."""
+    ct = str(post.get("ct") or "")
+    return ct if ct.startswith("bm_") else "soc_th_guide"
+
+
 def queued_links(post):
-    url = campaign_app_store_url(f"https://apps.apple.com/app/id{post['app_id']}", post["ct"])
-    play = play_store_url(post["app_id"], post["ct"])
+    ct = queued_campaign(post)
+    url = campaign_app_store_url(f"https://apps.apple.com/app/id{post['app_id']}", ct)
+    play = play_store_url(post["app_id"], ct)
     return f"App Store: {url}" + (f"\nGoogle Play: {play}" if play else "")
 
 

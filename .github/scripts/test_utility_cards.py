@@ -75,7 +75,7 @@ class CopyTest(unittest.TestCase):
         c = U.pick(DAY0 + dt.timedelta(days=1))
         url = U.store_url(c, "tg")
         self.assertTrue(url.startswith("https://apps.apple.com/tw/app/id6773017109?"))
-        self.assertIn("ct=ut_zhuyin_lumibopomofo_tg", url)
+        self.assertIn("ct=ut_lumibopomofo_tg", url)
         self.assertLessEqual(len(U.campaign(c, "th")), 40)
 
 
@@ -114,7 +114,7 @@ class PostTest(unittest.TestCase):
             link = U.post_telegram("card.jpg", {"caption": "c"}, c)
         self.assertEqual(link, "https://t.me/lumiapps/9")
         row = send.call_args[0][2]
-        self.assertIn("ct=ut_word_aim990_tg", row[0]["url"])
+        self.assertIn("ct=ut_aim990_tg", row[0]["url"])
         self.assertEqual(row[-1]["text"], "Google Play")  # Aim990 is on Android
 
     def test_posts_are_recorded_on_the_promotion_page(self):

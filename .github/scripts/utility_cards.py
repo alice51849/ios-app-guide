@@ -116,7 +116,9 @@ def pick(day, data=None):
 
 
 def campaign(card, channel):
-    return f"ut_{card['type']}_{card['app']}_{channel}"[:40]
+    """ut_<app>_<platform>: the card type stays in the post log; per-type tokens split the same
+    downloads into rows Apple never reveals (it shows a campaign only past 5 first-time downloads)."""
+    return f"ut_{card['app']}_{channel}"[:40]
 
 
 def store_url(card, channel):

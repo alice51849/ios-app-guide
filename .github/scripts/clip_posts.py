@@ -96,10 +96,25 @@ def scheduled(data, day, slot, channel):
     return None
 
 
+# A locale segment of an older clip token (h7_<app>_<locale>): en, ja, zh-Hant, pt-BR ...
+CLIP_LOCALE_RE = re.compile(r"^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$")
+
+
+def clip_campaign(token):
+    """The clip's App Store campaign without its locale: h7_<app>[_b]_<locale> -> h7_<app>[_b].
+    Apple reveals a campaign (per app) only past 5 first-time downloads; per-locale tokens never got
+    there, so the token stays at clip x platform and the locale lives in the post log
+    (00_GrowthEngine agent/ct_codes.py reads the result)."""
+    parts = (token or "h7").split("_")
+    if len(parts) >= 3 and parts[0] == "h7" and CLIP_LOCALE_RE.fullmatch(parts[-1]):
+        return "_".join(parts[:-1])
+    return token or "h7"
+
+
 def with_campaign(url, channel):
     parts = urllib.parse.urlsplit(url)
     query = dict(urllib.parse.parse_qsl(parts.query))
-    query["ct"] = f"{query.get('ct', 'h7')}_{channel}"[:40]
+    query["ct"] = f"{clip_campaign(query.get('ct', 'h7'))}_{channel}"[:40]
     return urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query)))
 
 
@@ -120,7 +135,7 @@ def ios_id(clip):
 def play_url(clip, channel):
     """Google Play link for the clip's app (same ct token), or None if not on Android."""
     ct = urllib.parse.parse_qs(urllib.parse.urlsplit(clip.get("store_url", "")).query).get("ct", ["h7"])[0]
-    return play_store_url(ios_id(clip), f"{ct}_{channel}"[:40])
+    return play_store_url(ios_id(clip), f"{clip_campaign(ct)}_{channel}"[:40])
 
 
 def caption(clip, channel, variant=None):

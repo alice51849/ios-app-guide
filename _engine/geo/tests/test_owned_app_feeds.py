@@ -358,5 +358,43 @@ class PipelineContractTests(unittest.TestCase):
                 pair.gitlink(Path("growth"), "HEAD")
 
 
+def _committed_owned_feed_index() -> Path | None:
+    # In the Guide this file sits two levels above _engine/geo; from a
+    # GrowthEngine checkout it is found through an explicit Guide checkout.
+    candidates = [GEO.parents[1] / feeds.INDEX]
+    guide = os.environ.get("HIGH_INTENT_GUIDE_REPOSITORY")
+    if guide:
+        candidates.append(Path(guide) / feeds.INDEX)
+    return next((path for path in candidates if path.is_file()), None)
+
+
+class CommittedOwnedFeedSourceTests(unittest.TestCase):
+    """Editing an owned-feed source file must regenerate feeds/owned-apps.json.
+
+    Pages deploys run owned_app_feeds.py --check, which fails on any source
+    digest drift (78a993b93a changed app_store_storefronts.py only). Catch it
+    in the same change instead of at deploy time.
+    """
+
+    def test_committed_index_records_current_source_digests(self):
+        index = _committed_owned_feed_index()
+        if index is None:
+            self.skipTest("Guide feeds/owned-apps.json is not mounted")
+        recorded = json.loads(index.read_text(encoding="utf-8"))["source"][
+            "source_files"
+        ]
+        current = feeds.source_hashes(GEO)
+        drift = sorted(
+            name for name in current if recorded.get(name) != current[name]
+        )
+        self.assertEqual(
+            [],
+            drift,
+            "Owned-feed sources changed; run python3 _engine/geo/"
+            "owned_app_feeds.py --pages-dir <guide> and commit "
+            "feeds/owned-apps.json with the source change",
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -24,7 +24,7 @@ import re
 import sys
 
 APP_STORE_URL = re.compile(r"https?://(?:apps|itunes)\.apple\.com/[^\s\"'<>)]+", re.I)
-APP_STORE_BARE = re.compile(r"https?://(?:apps|itunes)\.apple\.com/[^\s\"'<>)]*?/id(\d+)", re.I)
+APP_STORE_BARE = re.compile(r"https?://(?:apps|itunes)\.apple\.com/[^\s\"'<>)]*?/id(\d+)(?![A-Za-z0-9_])", re.I)
 PLAY_LINK = re.compile(r"https?://play\.google\.com/store/apps/details\?(?:[^\s\"'<>)]*&)?id=([A-Za-z0-9_.]+)", re.I)
 HASHTAG_LINE = re.compile(r"^\s*(?:#\S+\s*)+$")
 
@@ -112,7 +112,19 @@ def _cut(text, room):
         if pos >= len(cut) // 2:
             cut = cut[:pos]
             break
+    cut = re.sub(r"https?://\S*$", "", cut)  # never leave half a URL behind
     return cut.rstrip() + "…"
+
+
+def _without_own_links(text, app_store_url, play_url):
+    """`text` minus the lines that carry this app's own store links (the full link block is rebuilt after a trim)."""
+    wanted_id, wanted_pkg = app_store_id(app_store_url), play_package(play_url)
+    keep = []
+    for line in (text or "").split("\n"):
+        own = (wanted_id and wanted_id in store_ids_in(line)) or (wanted_pkg and wanted_pkg in play_packages_in(line))
+        if not own:
+            keep.append(line)
+    return "\n".join(keep)
 
 
 def ensure_download_link(text, app_store_url, play_url=None, *, max_len=None, app_store_label="App Store",
@@ -133,24 +145,42 @@ def ensure_download_link(text, app_store_url, play_url=None, *, max_len=None, ap
     out = f"{text.rstrip()}{sep}{block}" if text.strip() else block
     if max_len is None or measure(out) <= max_len:
         return out
-    lines = text.rstrip().split("\n")
-    while lines and (not lines[-1].strip() or HASHTAG_LINE.match(lines[-1])):  # drop the hashtag tail first
-        lines.pop()
+    # Over the limit: rebuild with the FULL link block (App Store + Play) and a trimmed body, so a trim can
+    # never cut away a link the text already had; the result is verified before it is returned.
+    block = "\n".join(filter(None, [f"{app_store_label}: {app_store_url}",
+                                    f"{play_label}: {play_url}" if play_url else ""]))
+    lines = _without_own_links(text, app_store_url, play_url).rstrip().split("\n")
+    candidates = []
+
+    def with_block():
         body = "\n".join(lines).rstrip()
-        out = f"{body}{sep}{block}" if body else block
-        if measure(out) <= max_len:
-            return out
+        candidates.append(f"{body}{sep}{block}" if body else block)
+
+    with_block()  # the whole body first
+    while lines and (not lines[-1].strip() or HASHTAG_LINE.match(lines[-1])):  # then without the hashtag tail
+        lines.pop()
+        with_block()
     body = "\n".join(lines).rstrip()
+    for out in candidates:
+        if measure(out) <= max_len:
+            return _verified(out, app_store_url, play_url, label)
     room = max_len - measure(sep + block) - 1
     while room > 0:
         trimmed = _cut(body, room)
         out = f"{trimmed}{sep}{block}"
         if measure(out) <= max_len:
-            return out
+            return _verified(out, app_store_url, play_url, label)
         room -= max(1, measure(out) - max_len)
     if measure(block) <= max_len:  # only the link itself fits: still a post with a download link
-        return block
+        return _verified(block, app_store_url, play_url, label)
     raise MissingDownloadLink(f"{label}: the download link ({measure(block)} chars) does not fit {max_len}")
+
+
+def _verified(out, app_store_url, play_url, label):
+    problems = link_problems(out, app_store_url, play_url, label)
+    if problems:
+        raise MissingDownloadLink("; ".join(problems))
+    return out
 
 
 def threads_reply_problems(reply_text, app_store_url, play_url=None):

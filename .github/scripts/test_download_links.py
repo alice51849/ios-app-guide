@@ -78,6 +78,24 @@ class DownloadLinksTest(unittest.TestCase):
         tight = D.ensure_download_link("x" * 400 + "\n#tag", STORE, max_len=len(f"App Store: {STORE}") + 30)
         self.assertTrue(D.has_download_link(tight, STORE))
 
+    def test_a_trim_never_drops_a_link_the_text_already_had(self):
+        have = "Hook\n" + "word " * 50 + f"\nApp Store: {STORE}\n\n#a #b"  # has the App Store link, lacks Play
+        out = D.ensure_download_link(have, STORE, PLAY, max_len=len(have) + 10)
+        self.assertLessEqual(len(out), len(have) + 10)
+        self.assertTrue(D.has_download_link(out, STORE, PLAY))
+        self.assertEqual(out.count(STORE), 1)
+
+    def test_a_trim_never_leaves_half_a_url(self):
+        text = "see https://example.com/" + "x" * 300 + " bye"
+        out = D.ensure_download_link(text, STORE, PLAY, max_len=300)
+        self.assertNotIn("https://example.com", out)
+        self.assertLessEqual(len(out), 300)
+        self.assertTrue(D.has_download_link(out, STORE, PLAY))
+
+    def test_an_id_must_end_at_the_digits(self):
+        self.assertEqual(D.app_store_id("https://apps.apple.com/app/id6785004775abc"), "")
+        self.assertFalse(D.has_download_link("https://apps.apple.com/app/id6785004775abc", STORE))
+
     def test_hashtags_go_before_the_body_is_cut(self):
         out = D.ensure_download_link("Hook\n\n#aaa #bbb", STORE, max_len=len(f"Hook\n\nApp Store: {STORE}") + 2)
         self.assertNotIn("#aaa", out)

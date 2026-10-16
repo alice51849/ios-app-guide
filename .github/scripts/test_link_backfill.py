@@ -2,6 +2,7 @@
 """Tests for link_backfill.py (no network): the download link goes under our own posts that lack it, once."""
 import contextlib
 import copy
+import datetime as dt
 import io
 import os
 import sys
@@ -20,23 +21,34 @@ PLAIN = "6818607603"   # iOS only here (not in the snapshot)
 
 
 class FakeClient:
-    def __init__(self, channel, media, comments=None, username="brand", fail_on_write=None, fail_comments=None):
+    def __init__(self, channel, media, comments=None, username="brand", fail_on_write=None, fail_comments=None,
+                 hide_own=False, drop_writes=False, counts=None, account_replies=None, fail_replies=False):
         self.channel, self.media_rows, self.by_post = channel, media, comments or {}
         self.user_id, self.username = "u1", username
         self.writes, self.attempts, self.reads = [], 0, 0
         self.fail_on_write, self.fail_comments = fail_on_write, fail_comments
+        # Instagram: the list of a post does not show the account's own comments, the post's count does
+        self.hide_own, self.drop_writes, self.counts = hide_own, drop_writes, dict(counts or {})
+        self.account_replies, self.fail_replies = account_replies or [], fail_replies
 
     def me(self):
         return self
 
     def _get(self, path, **params):
+        if params.get("fields") == "comments_count":
+            return {"comments_count": self.counts.get(str(path), 0)}
+        if path.endswith("/replies"):   # all replies of the account
+            if self.fail_replies:
+                raise RuntimeError("network down")
+            return {"data": self.account_replies}
         return {"data": self.media_rows, "paging": {}}
 
     def comments(self, media_id, limit=50):
         self.reads += 1
         if self.fail_comments and (self.fail_comments is not True or self.writes):
             raise self.fail_comments if self.fail_comments is not True else RuntimeError("network down")
-        return list(self.by_post.get(str(media_id), []))
+        rows = list(self.by_post.get(str(media_id), []))
+        return [r for r in rows if not (self.hide_own and r.get("own"))]
 
     def _post(self, path, **fields):
         return {"id": self._write(path.split("/")[0], fields["message"])}
@@ -49,8 +61,10 @@ class FakeClient:
         if self.fail_on_write:
             raise self.fail_on_write
         self.writes.append((str(post_id), text))
-        self.by_post.setdefault(str(post_id), []).append({"id": f"c{len(self.writes)}", "text": text, "user": self.username,
-                                                          "own": True})
+        if not self.drop_writes:   # a dropped write: the platform answered with an id, nothing was added
+            self.by_post.setdefault(str(post_id), []).append({"id": f"c{len(self.writes)}", "text": text,
+                                                              "user": self.username, "own": True})
+            self.counts[str(post_id)] = self.counts.get(str(post_id), 0) + 1
         return f"c{len(self.writes)}"
 
 
@@ -247,6 +261,88 @@ class BackfillTest(unittest.TestCase):
             with contextlib.redirect_stdout(io.StringIO()):   # the ::error:: line is not a real alert here
                 self.assertEqual(B.main(["audit"]), 1)
 
+    # ---- the read-back of an Instagram comment (the list of a post hides the account's own comments) ...
+
+    def test_instagram_hides_its_own_comments_so_the_count_going_up_is_the_proof(self):
+        client = ig([reel()], hide_own=True)
+        state = fresh_state()
+        rows = self.run_channel(client, state, apply=True)
+        self.assertEqual(rows[0]["status"], "backfilled")
+        self.assertEqual(rows[0]["via"], "count")
+        self.assertEqual(state["done"]["instagram"]["100"]["count_before"], 0)
+        rows2 = self.run_channel(client, state, apply=True)
+        self.assertEqual(rows2[0]["status"], "ok_backfilled_earlier")
+        self.assertEqual(len(client.writes), 1)
+
+    def test_a_write_the_platform_dropped_is_not_verified_and_never_repeated(self):
+        client = ig([reel()], hide_own=True, drop_writes=True)
+        state = fresh_state()
+        self.assertEqual(self.run_channel(client, state, apply=True)[0]["status"], "backfilled_unverified")
+        self.assertEqual(self.run_channel(client, state, apply=True)[0]["status"], "backfilled_unverified")
+        self.assertEqual(len(client.writes), 1)
+
+    def test_a_receipt_from_before_the_count_was_kept_is_proven_by_a_count_of_one(self):
+        client = ig([reel()], hide_own=True, counts={"100": 1})
+        state = fresh_state()
+        state["done"] = {"instagram": {"100": {"at": "t", "comment_id": "c9", "app": "mochi", "verified": False}}}
+        self.assertEqual(self.run_channel(client, state, apply=True)[0]["status"], "ok_backfilled_earlier")
+        self.assertEqual(client.writes, [])
+
+    def test_comments_the_list_does_not_show_stop_a_second_comment_when_the_receipts_are_lost(self):
+        client = ig([reel()], hide_own=True, counts={"100": 1})
+        rows = self.run_channel(client, fresh_state(), apply=True)
+        self.assertEqual(rows[0]["status"], "unlisted_comments")
+        self.assertEqual(client.writes, [])
+
+    # ... and the slow drip: caps per 24 hours
+
+    NOW = dt.datetime(2026, 10, 17, 12, 0, tzinfo=dt.timezone.utc)
+
+    def stamp(self, hours_ago, fmt="%Y-%m-%dT%H:%M:%SZ"):
+        return (self.NOW - dt.timedelta(hours=hours_ago)).strftime(fmt)
+
+    def test_the_daily_cap_keeps_the_drip_slow(self):
+        media = [reel(str(100 + i), f"Hook {i} Mochi") for i in range(10)]
+        cap = B.DAILY_CAP["instagram"]
+        recent = {str(900 + i): {"at": self.stamp(2 + i), "comment_id": "x", "app": "mochi", "verified": True} for i in range(cap)}
+        client, state = ig(media), fresh_state()
+        state["done"] = {"instagram": dict(recent)}
+        self.run_channel(client, state, apply=True, max_new=5, now=self.NOW)
+        self.assertEqual(client.writes, [], "the cap is used up by the last 24 hours")
+        client, state = ig(media), fresh_state()
+        state["done"] = {"instagram": {k: dict(v, at=self.stamp(30)) for k, v in recent.items()}}
+        self.run_channel(client, state, apply=True, max_new=2, now=self.NOW)
+        self.assertEqual(len(client.writes), 2, "a day later the cap is free again")
+        client, state = ig(media), fresh_state()   # a failed try counts as much as a written one
+        state["failed"] = {"instagram": {str(900 + i): {"n": 1, "at": self.stamp(1)} for i in range(cap)}}
+        self.run_channel(client, state, apply=True, max_new=5, now=self.NOW)
+        self.assertEqual(client.writes, [])
+
+    def test_threads_never_adds_more_links_than_the_account_limit_allows(self):
+        post = {"id": "200", "text": "Task list too boring?", "permalink": "https://www.threads.com/@b/post/BBB",
+                "timestamp": "2026-10-15T06:00:00+0000"}
+        ceiling = B.LINK_BUDGET_24H["threads"]
+        busy = [{"id": f"r{i}", "text": "Get it: https://apps.apple.com/app/id1", "timestamp": self.stamp(1 + i / 10, "%Y-%m-%dT%H:%M:%S+0000")}
+                for i in range(ceiling)]
+        client = FakeClient("threads", [post], account_replies=busy)
+        self.run_channel(client, apply=True, now=self.NOW)
+        self.assertEqual(client.writes, [], "the account already sent as many links as the ceiling in 24 hours")
+        client = FakeClient("threads", [post], account_replies=busy[:-1])
+        self.run_channel(client, apply=True, now=self.NOW)
+        self.assertEqual(len(client.writes), 1, "one link fits under the ceiling")
+        client = FakeClient("threads", [post], fail_replies=True)
+        self.run_channel(client, apply=True, now=self.NOW)
+        self.assertEqual(client.writes, [], "links that cannot be counted are not added")
+
+    def test_diag_only_reads(self):
+        client = ig([reel()], hide_own=True)
+        state = fresh_state()
+        self.run_channel(client, state, apply=True)
+        lines, before = [], len(client.writes)
+        B.diag(client, state, ["100"], finder=B.AppFinder(catalog()), out=lines.append)
+        self.assertTrue(any("token owner" in line for line in lines))
+        self.assertEqual(len(client.writes), before)
+
 
 class AppFinderTest(unittest.TestCase):
     def finder(self):
@@ -287,6 +383,90 @@ class AppFinderTest(unittest.TestCase):
     def test_the_app_store_id_in_the_text_decides(self):
         self.assertEqual(self.app("Leaving the link here: https://apps.apple.com/us/app/id3?mt=8"), "aim990")
         self.assertIsNone(self.app("Rate us https://apps.apple.com/us/app/id3?action=write-review"))
+
+
+    def finder_for(self, names, clips=None, posts=None):
+        cat = OP.Catalog(clips={"clips": clips or {}}, posts=posts or [],
+                         improvements={"apps": [{"name": n, "key": k, "app_store_id": i} for n, k, i in names]})
+        return B.AppFinder(cat)
+
+    @staticmethod
+    def app_of(finder, text, channel="threads", media_id="x"):
+        return (finder.resolve(channel, {"id": media_id, "caption": text, "permalink": ""}) or {}).get("app")
+
+    def test_a_word_from_a_subtitle_is_not_a_name(self):
+        f = self.finder_for([("Studydown: Face-Down Timer", "studydown", "20")])
+        self.assertIsNone(self.app_of(f, "Locked with Face ID. Scan to PDF"))
+        self.assertEqual(self.app_of(f, "Studydown keeps the phone face down"), "studydown")
+
+    def test_the_name_without_pro_counts_only_while_no_other_app_has_it(self):
+        f = self.finder_for([("Unblurry Pro", "unblurry", "21"), ("TripBee Pro: Trip Planner", "tripbee", "22"),
+                             ("TripBee Lite: Trip Planner", "tripbeelite", "23"), ("G+Money", "gmoney", "24"),
+                             ("G+Money Lite", "gmoneylite", "25")])
+        self.assertEqual(self.app_of(f, "Unblurry fixes blurry photos"), "unblurry")
+        self.assertIsNone(self.app_of(f, "Unblurry Plus fixes blurry photos"), "a product we do not know")
+        self.assertIsNone(self.app_of(f, "TripBee plans your trip"), "Pro or Lite: not guessed")
+        self.assertEqual(self.app_of(f, "TripBee Lite plans your trip"), "tripbeelite")
+        self.assertEqual(self.app_of(f, "G+Money tracks money"), "gmoney")
+        self.assertEqual(self.app_of(f, "G+Money Lite tracks money"), "gmoneylite")
+
+    def test_blanks_between_latin_and_cjk_do_not_matter(self):
+        f = self.finder_for([("Lumi 數學星球：兒童數學（Lumi Math Pro）", "lumimathpro", "9"),
+                             ("Lumi數學星球：探索版（Lumi Math Planet: Explorer）", "lumimath", "8")])
+        self.assertIsNone(self.app_of(f, "Lumi數學星球 帶孩子玩數學"), "Explorer or Pro: the same words")
+        self.assertEqual(self.app_of(f, "Lumi 數學星球：探索版 免費試玩"), "lumimath")
+        self.assertEqual(self.app_of(f, "Lumi數學星球：兒童數學 免費試玩"), "lumimathpro")
+        self.assertEqual(self.app_of(f, "Lumi Math Planet is out"), "lumimath")
+
+    def test_a_hook_line_only_one_app_uses_can_name_the_app(self):
+        clips = {"a/en": {"app": "a", "store_url": "https://apps.apple.com/us/app/id31?ct=x", "name": "Alpha: Notes",
+                          "search": "Alpha Notes", "hook": "Zero friction note taking",
+                          "hooks": [{"id": "a", "lead": "Capture ideas in one tap"}]},
+                 "b/en": {"app": "b", "store_url": "https://apps.apple.com/us/app/id32?ct=x", "name": "Beta: Timer",
+                          "search": "Beta Timer", "hook": "Capture ideas in one tap", "hooks": []}}
+        f = self.finder_for([("Alpha: Notes", "a", "31"), ("Beta: Timer", "b", "32")], clips=clips)
+        self.assertEqual(self.app_of(f, "Zero friction note taking, all day"), "a")
+        self.assertIsNone(self.app_of(f, "Capture ideas in one tap. Easy."), "two apps use this line")
+        self.assertEqual(self.app_of(f, "Capture ideas in one tap\nAlpha: Notes"), "a", "the name settles it")
+
+    def test_the_proofs_must_agree(self):
+        f = self.finder_for([("Alpha: Notes", "a", "31"), ("Beta: Timer", "b", "32")])
+        self.assertEqual(self.app_of(f, "Alpha: Notes https://apps.apple.com/app/id31"), "a")
+        self.assertIsNone(self.app_of(f, "Alpha: Notes https://apps.apple.com/app/id32"), "the link says Beta, the name says Alpha")
+        self.assertIsNone(self.app_of(f, "https://apps.apple.com/app/id31 and https://apps.apple.com/app/id32"))
+
+    def test_the_ledger_decides_first_and_a_carousel_is_an_instagram_post(self):
+        posts = [{"channel": "instagram_feed", "clip": "feed/a/en", "id": "300", "link": "https://www.instagram.com/p/FFF/"},
+                 {"channel": "threads", "clip": "b/en", "id": "301", "link": "https://www.threads.com/@x/post/GGG"}]
+        clips = {"b/en": {"app": "b", "locale": "en", "store_url": "https://apps.apple.com/us/app/id32?ct=x", "name": "Beta: Timer",
+                          "search": "Beta Timer", "hook": "Time it right", "hooks": []}}
+        f = self.finder_for([("Alpha: Notes", "a", "31"), ("Beta: Timer", "b", "32")], clips=clips, posts=posts)
+        post = f.resolve("instagram", {"id": "300", "caption": "Screens of the app", "permalink": ""})
+        self.assertEqual((post["app"], post["why"]), ("a", "ledger"))
+        self.assertEqual(self.app_of(f, "Alpha: Notes is here", media_id="301"), "b", "the ledger wins over the text")
+
+
+class AppFinderRealDataTest(unittest.TestCase):
+    def test_every_caption_we_can_generate_maps_to_its_own_app_or_to_none(self):
+        """The old captions (no URL) of every clip, hook and channel - the finder must never name another app."""
+        import clip_posts as CP
+        import search_caption as SC
+        catalog = OP.Catalog(posts=[])
+        finder = B.AppFinder(catalog)
+        total = unknown = 0
+        for key, clip in catalog.clips.items():
+            for variant in SC.variants(clip):
+                for channel in ("instagram", "threads", "telegram"):
+                    lines = CP.caption(dict(clip), channel, variant).splitlines()
+                    text = "\n".join(line for line in lines if "http" not in line)
+                    post = finder.resolve("instagram", {"id": "zz", "caption": text, "permalink": ""})
+                    total += 1
+                    if post is None:
+                        unknown += 1
+                    else:
+                        self.assertEqual(post["ios_id"], CP.ios_id(clip), f"{key} {variant['id']} {channel}")
+        self.assertGreater(total, 1000)
+        self.assertLess(unknown / total, 0.05, "the finder should still know almost every caption of our own")
 
 
 if __name__ == "__main__":

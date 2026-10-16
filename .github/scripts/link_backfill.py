@@ -56,6 +56,11 @@ AUDIT_READS = 2000   # comment reads per channel in an audit run
 APPLY_READS = 150    # ... and in an apply run (it stops at --max-new writes anyway)
 MAX_FAILS = 2     # a post whose comment failed this often is set aside
 SKIP_TYPES = {"REPOST_FACADE"}   # a repost shell is not our own post
+DAILY_CAP = {"instagram": 6, "threads": 6}   # links added per channel in any 24 hours (a slow drip, never a burst)
+# Threads limited the account once for posting many linked posts (30-48 a day). Every post and reply of the
+# account that carries a store link counts, whoever wrote it (comment_replies, the series, this sweeper):
+# the sweeper only adds what still fits under this ceiling.
+LINK_BUDGET_24H = {"threads": 20}
 
 
 def load_state(path=STATE):
@@ -102,57 +107,121 @@ def list_media(client, pages=PAGES, limit=50):
 # ---------------------------------------------------------------- which app does a post promote
 
 SPLIT = re.compile(r"[:：（）()\-–—・|／/·,，]")
+PAREN = re.compile(r"[（(]([^）)]+)[）)]")
 QUALIFIERS = {"pro", "plus", "lite", "max", "mini", "premium", "free", "ultra"}
+LATIN_THEN_CJK = re.compile(r"(?<=[A-Za-z0-9])\s+(?=[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af])")
+
+
+def squash(text):
+    """Casefolded, without the blank between a Latin word and CJK text: "Lumi 數學星球" and "Lumi數學星球" are one name."""
+    return LATIN_THEN_CJK.sub("", text.casefold())
 
 
 def brands(name):
-    """Names a post may use for the app: the full store name, its leading Latin run and its delimited parts."""
-    out = {name.strip()}
-    lead = re.match(r"^[A-Za-z0-9+&' ]+", name)
-    if lead and len(lead.group(0).strip()) >= 5:
-        out.add(lead.group(0).strip())
-    for part in SPLIT.split(name):
-        part = part.strip()
-        if len(part) >= 4 and re.search(r"[A-Za-z一-鿿]", part):
-            out.add(part)
-    return out
+    """(exact, derived) names a post may use for the app. Exact: the store name, its main name (before the first
+    delimiter), the main name's leading Latin run, and the same for the name in brackets ("Lumi Math Pro" in
+    "...（Lumi Math Pro）"). Derived: the main name without a trailing Pro / Lite / Plus ("Unblurry Pro" ->
+    "Unblurry"), which only counts while no other app has it as an exact name. Subtitle words are descriptive
+    ("Face ID Lock", "Event Counter") and shared between apps, so they are not names."""
+    name = name.strip()
+    exact, derived = {name}, set()
+    for part in [PAREN.sub("", name).strip()] + [m.strip() for m in PAREN.findall(name)]:
+        if not part:
+            continue
+        exact.add(part)
+        main = SPLIT.split(part, maxsplit=1)[0].strip()
+        if len(main) >= 4:
+            exact.add(main)
+        lead = re.match(r"^[A-Za-z0-9+&' ]+", main)
+        if lead and len(lead.group(0).strip()) >= 5:
+            exact.add(lead.group(0).strip())
+        words = main.split()
+        if len(words) >= 2 and words[-1].casefold() in QUALIFIERS and len(" ".join(words[:-1])) >= 4:
+            derived.add(" ".join(words[:-1]))
+    return exact, derived
+
+
+LEDGER_CHANNELS = {"instagram": ("instagram", "instagram_feed")}   # a feed carousel is logged under its own channel
+MIN_LEAD = 10    # a hook line shorter than this proves nothing
 
 
 class AppFinder:
-    """Resolves the app a post promotes. Order: the post ledger / hook text / full app name (own_posts.Catalog),
-    the App Store id in the text, then exactly one of our brands somewhere in the text (a store listing post
-    starts with it). A text that names no brand, two different apps, or "<brand> Plus" (a product we do not
-    know) stays unknown - it is listed, never guessed."""
+    """Resolves the app a post promotes, and never guesses (a wrong app's link is worse than none).
+
+    Evidence, strongest first: the post ledger (exact post id / link); the App Store id in the text; one of our
+    brands in the text (the store names, in every language our captions use; a brand two apps share, a brand
+    followed by Lite / Pro / Plus, and a brand inside a longer brand count for nothing); a hook line only one
+    app uses. A text whose evidence points at two apps - or at an app we do not know ("<brand> Plus") - stays
+    unknown: it is listed, not touched."""
 
     def __init__(self, catalog):
         self.catalog = catalog
-        self.by_id = {str(ios): (key, name) for name, key, ios in catalog.apps if ios}
-        self.brands = []
+        self.by_id = {str(ios): (key, name) for name, key, ios in catalog.apps if ios}   # iOS id -> (app key, name)
+        exact, derived = {}, {}   # squashed brand -> {iOS id}: an app is told apart by its iOS id, whatever key a clip set uses
         for name, key, ios in catalog.apps:
-            for b in brands(name):
-                self.brands.append((b.casefold(), key, ios))
-        self.brands.sort(key=lambda x: -len(x[0]))
+            if not ios:
+                continue
+            e, d = brands(name)
+            for b in e:
+                exact.setdefault(squash(b), set()).add(str(ios))
+            for b in d:
+                derived.setdefault(squash(b), set()).add(str(ios))
+        leads = {}    # squashed hook line -> {iOS id}
+        for clip in catalog.clips.values():
+            ios = OP.ios_id_of(clip.get("store_url"))
+            if not ios:
+                continue
+            self.by_id.setdefault(ios, (re.sub(r"_[a-z]$", "", clip["app"]), clip.get("name", "")))
+            for whole in (clip.get("name"), clip.get("search")):   # the exact names our captions carry, in every language
+                if whole and len(whole.strip()) >= 5:
+                    exact.setdefault(squash(whole.strip()), set()).add(ios)
+            for lead in [clip.get("hook")] + [h.get("lead") for h in clip.get("hooks") or []]:
+                if lead and len(lead.strip()) >= MIN_LEAD:
+                    leads.setdefault(squash(lead.strip()), set()).add(ios)
+        owners = dict(derived)
+        owners.update(exact)      # an exact name beats the same word derived from another app's name
+        self.brands = sorted(((b, next(iter(o))) for b, o in owners.items() if len(o) == 1), key=lambda x: -len(x[0]))
+        self.leads = {l: next(iter(o)) for l, o in leads.items() if len(o) == 1}
+
+    def _ledger(self, channel, media):
+        for ch in LEDGER_CHANNELS.get(channel, (channel,)):
+            for k in (media.get("id"), media.get("permalink")):
+                p = self.catalog.logged.get((ch, str(k or "").rstrip("/")))
+                if p and p["clip"].startswith("feed/"):   # feed/<app>/<locale>: a store-screenshot carousel
+                    parts = p["clip"].split("/")
+                    return {"app": parts[1], "locale": parts[-1], "hook": "", "ios_id": "", "kind": "feed",
+                            "clip": p["clip"], "why": "ledger"}
+                if p:
+                    return dict(self.catalog._clip(p["clip"], variant=p.get("variant")), posted_at=p.get("posted_at"),
+                                why="ledger")
+        return None
 
     def resolve(self, channel, media):
-        post = self.catalog.resolve(channel, media)
+        post = self._ledger(channel, media)
         if post and ios_id_for(self.catalog, post):
             return post
         text = media.get("caption") or ""
-        found = self._by_url(text) or self._by_brand(text)
-        if not found:
-            return None
-        key, ios = found
+        found = [(why, e) for why, e in (("url", self._by_url(text)), ("brand", self._by_brand(text)),
+                                         ("hook", self._by_lead(text))) if e is not None]
+        evidence = [e for _why, e in found]
+        if not evidence or False in evidence or len(set(evidence)) != 1:
+            return None   # nothing to go on, two apps in one text, or the proofs disagree
+        ios = evidence[0]
         first = next((line for line in text.splitlines() if line.strip()), "")
-        return {"app": key, "locale": OP.detect_language(text) or "en", "hook": first[:60], "ios_id": ios,
-                "kind": "image", "clip": None}
+        return {"app": self.by_id[ios][0], "locale": OP.detect_language(text) or "en", "hook": first[:60],
+                "ios_id": ios, "kind": "image", "clip": None, "why": "+".join(w for w, _e in found)}
+
+    # Each _by_* answers None (no evidence), False (evidence for more than one app) or the app's iOS id.
 
     def _by_url(self, text):
-        known = {self.by_id[i][0]: i for i in DL.store_ids_in(text) if i in self.by_id}
-        return next(iter(known.items())) if len(known) == 1 else None
+        known = {i for i in DL.store_ids_in(text) if i in self.by_id}
+        if not known:
+            return None
+        return next(iter(known)) if len(known) == 1 else False
 
     def _hits(self, text):
         out = []
-        for b, key, ios in self.brands:
+        for b, ios in self.brands:
             start = 0
             while True:
                 i = text.find(b, start)
@@ -165,17 +234,26 @@ class AppFinder:
                     rest = text[j:].lstrip(" :：-")
                     word = re.split(r"[\s:：,，.。]", rest, maxsplit=1)[0] if rest else ""
                     if word not in QUALIFIERS:
-                        out.append((i, j, key, ios))
+                        out.append((i, j, ios))
                 start = i + 1
         return out
 
     def _by_brand(self, text):
-        low = re.sub(r"^[\W_]+", "", text.strip(), flags=re.U).casefold()
+        low = squash(re.sub(r"^[\W_]+", "", text.strip(), flags=re.U))
         hits = self._hits(low)
         # a brand inside a longer brand ("Mochi" in "Mochi DoneStamp") is not a second app
         keep = [h for h in hits if not any(o[0] <= h[0] and h[1] <= o[1] and (o[1] - o[0]) > (h[1] - h[0]) for o in hits)]
-        keys = {(h[2], h[3]) for h in keep}
-        return next(iter(keys)) if len(keys) == 1 else None
+        found = {h[2] for h in keep}
+        if not found:
+            return None
+        return next(iter(found)) if len(found) == 1 else False
+
+    def _by_lead(self, text):
+        low = squash(re.sub(r"^[\W_]+", "", text.strip(), flags=re.U))
+        owners = {owner for lead, owner in self.leads.items() if low.startswith(lead)}
+        if not owners:
+            return None
+        return next(iter(owners)) if len(owners) == 1 else False
 
 
 def ios_id_for(catalog, post):
@@ -254,6 +332,59 @@ def verified_by_id(client, comment_id, store, play):
     return bool(one) and not one.get("hidden") and DL.has_download_link(one.get("text", ""), store, play)
 
 
+def comments_count(client, media_id):
+    """How many comments the platform says an Instagram post has (None: unknown). The comments list of a post
+    does not show the account's own comments, the count does - it is the read-back for a comment we wrote."""
+    if client.channel != "instagram":
+        return None
+    try:
+        return int(client._get(str(media_id), fields="comments_count").get("comments_count"))
+    except (OP.ApiError, TypeError, ValueError) as exc:
+        if isinstance(exc, OP.ApiError) and is_throttle(exc):
+            raise
+        return None
+
+
+def _when(value):
+    try:
+        return dt.datetime.strptime(str(value), "%Y-%m-%dT%H:%M:%S%z")
+    except ValueError:
+        return None
+
+
+def writes_last_day(state, channel, now):
+    """Links this sweeper tried to add (a failed try counts too) in the 24 hours before `now`."""
+    cutoff, n = now - dt.timedelta(hours=24), 0
+    for section in ("done", "failed"):
+        for d in (state.get(section, {}).get(channel) or {}).values():
+            ts = _when((d.get("at") or "").replace("Z", "+0000"))
+            if ts and ts >= cutoff:
+                n += 1
+    return n
+
+
+def link_writes_last_day(client, media, now):
+    """Posts and replies of the account in the last 24 hours that carry a store link, whoever wrote them
+    (None: could not be counted - the caller then writes nothing)."""
+    cutoff = now - dt.timedelta(hours=24)
+
+    def recent(rows):
+        n = 0
+        for r in rows:
+            ts = _when(r.get("timestamp"))
+            text = r.get("text") or r.get("caption") or ""
+            if ts and ts >= cutoff and ("apps.apple.com" in text or "play.google.com" in text):
+                n += 1
+        return n
+    try:
+        replies = client._get(f"{client.user_id}/replies", fields="id,text,timestamp", limit=100).get("data", [])
+    except Exception as exc:
+        if is_throttle(exc):
+            raise
+        return None
+    return recent(media) + recent(replies)
+
+
 def _short(text, n):
     return " ".join((text or "").split())[:n]
 
@@ -268,6 +399,7 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
     post = finder.resolve(channel, media)
     ios = ios_id_for(finder.catalog, post)
     row["app"] = (post or {}).get("app", "")
+    row["why"] = (post or {}).get("why", "")   # which evidence named the app (ledger / url / brand / hook)
     if not ios:
         row["status"] = "unknown_app"
         return row, None
@@ -297,7 +429,9 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
         return row, None
     if reads is not None:
         reads["n"] += 1
-    mine = own_comments(client, media["id"])
+    listed = client.comments(media["id"])
+    me = (client.username or "").lower()
+    mine = [r for r in listed if r.get("own") or (r.get("user") or "").lower() == me]
     if read_gap:
         sleeper(read_gap)
     seen = " ".join(c.get("text", "") for c in mine) + "\n" + text
@@ -309,9 +443,19 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
             row["status"] = "ok_comment" if channel == "instagram" else "ok_reply"
             state["checked"].setdefault(channel, {})[pid] = row["status"]  # never read this post again
         return row, None
-    if done:  # written earlier but not visible (yet): never write a second one
+    if done:  # written earlier but the list does not show it: the post's comment count is the proof, never write a second one
+        count = comments_count(client, media["id"])
+        if count is not None and count >= int(done.get("count_before") or 0) + 1:
+            done["verified"] = True
+            row["status"] = "ok_backfilled_earlier"
+            return row, None
         row["status"] = "backfilled_unverified"
         return row, None
+    if channel == "instagram":   # the list of an Instagram post hides the account's own comments, the count does not
+        count = comments_count(client, media["id"])
+        if count is not None and count > len(listed):
+            row["status"] = "unlisted_comments"   # one of them may be a link we wrote earlier: never a second one
+            return row, None
     row["status"] = "missing"
     row["own_replies"] = [_short(c.get("text", ""), 100) for c in mine][:3]
     return row, {"store": store, "play": play, "missing_store": not DL.has_app_store_link(seen, store),
@@ -336,11 +480,26 @@ def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=ti
     except Exception as exc:
         log(f"::warning::{channel}: listing our posts failed, skipped ({exc})")
         return [{"channel": channel, "id": "", "status": f"list_failed:{getattr(exc, 'code', 'x')}"}]
+    allowed = max_new
+    if apply:   # a slow drip: the 24-hour caps first, the rest of the run's batch after
+        allowed = min(max_new, max(DAILY_CAP.get(channel, max_new) - writes_last_day(state, channel, now), 0))
+        if allowed and channel in LINK_BUDGET_24H:
+            try:
+                used = link_writes_last_day(client, media, now)
+            except Exception as exc:
+                log(f"::warning::{channel}: counting the account's links failed ({str(exc)[:100]}); nothing is added now")
+                used = None
+            if used is None:
+                allowed = 0
+            else:
+                allowed = min(allowed, max(LINK_BUDGET_24H[channel] - used, 0))
+        if allowed < max_new:
+            log(f"{channel}: {allowed} of {max_new} link(s) fit under the 24-hour limits")
     rows, attempts = [], 0
     for m in media:
         if only and str(m["id"]) not in only:
             continue
-        if apply and attempts >= max_new:
+        if apply and attempts >= allowed:
             break  # the batch is used up: the rest keeps its previous status
         try:
             row, todo = classify(client, m, finder, state, reads, read_gap=read_gap, sleeper=sleeper)
@@ -365,6 +524,7 @@ def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=ti
         text = comment_text(row.get("locale"), todo["store"], todo["play"] if todo["missing_play"] else None,
                             todo["missing_store"])
         try:
+            before = comments_count(client, row["id"])   # the read-back of an Instagram comment is the count going up
             new_id = write_link(client, row["id"], text)
         except Exception as exc:
             row["status"] = f"write_failed:{getattr(exc, 'code', 'x')}"
@@ -378,39 +538,51 @@ def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=ti
             break
         at = now.strftime("%Y-%m-%dT%H:%M:%SZ")
         receipt = state["done"].setdefault(channel, {})[row["id"]] = {
-            "at": at, "comment_id": str(new_id or ""), "app": row["app"], "verified": False}
+            "at": at, "comment_id": str(new_id or ""), "app": row["app"], "verified": False, "count_before": before}
         persist()  # the receipt is safe on disk before the read-back
-        verified = False
+        verified, via = False, ""
         try:
             for _ in range(3):  # read it back: the link must really be under the post
                 sleeper(5)
                 verified, _seen = has_link_now(client, m, todo["store"], todo["play"])
+                via = "list" if verified else ""
+                if not verified and before is not None:
+                    count = comments_count(client, row["id"])
+                    verified = count is not None and count >= before + 1
+                    via = "count" if verified else ""
                 if verified:
                     break
         except Exception as exc:
             log(f"::warning::{channel}: read-back of {row['id']} failed ({str(exc)[:100]}); checked again on the next sweep")
-        receipt["verified"] = verified
+        receipt["verified"], receipt["via"] = verified, via
         persist()
         row.update(status="backfilled" if verified else "backfilled_unverified", comment_id=receipt["comment_id"],
-                   at=at, verified=verified)
+                   at=at, verified=verified, via=via)
         log(f"{channel}: link added under {row['id']} ({row['app']}) verified={verified}")
         sleeper(gap)
     persist()
     return rows
 
 
-def diag(client, state, only, out=print):
-    """Read-only: what the platform answers about the given posts and about the comments we wrote under them.
-    Prints public text and ids only (never a token)."""
+def diag(client, state, only, finder=None, out=print):
+    """Read-only: what the platform answers about the given posts and about the comments we wrote under them,
+    and which app the finder takes each post for. Prints public text and ids only (never a token)."""
     channel = client.channel
     out(f"diag {channel}: token owner = {client.username}")
     for pid in only:
         pid = str(pid)
+        fields = ("id,caption,permalink,comments_count,is_comment_enabled" if channel == "instagram"
+                  else "id,text,permalink,has_replies")
         try:
-            info = client._get(pid, fields="id,comments_count,is_comment_enabled" if channel == "instagram" else "id,has_replies")
+            info = client._get(pid, fields=fields)
         except Exception as exc:
             info = {"error": str(exc)[:160]}
-        out(f"diag {channel} {pid}: the post says {json.dumps(info, sort_keys=True)}")
+        text = info.get("caption") or info.get("text") or ""
+        out(f"diag {channel} {pid}: {_short(json.dumps({k: v for k, v in info.items() if k not in ('caption', 'text')}, sort_keys=True), 200)}")
+        out(f"diag {channel} {pid}: text = {_short(text, 500)}")
+        if finder is not None and text:
+            post = finder.resolve(channel, {"id": pid, "permalink": info.get("permalink", ""), "caption": text})
+            out(f"diag {channel} {pid}: the finder says app={(post or {}).get('app', '-')} why={(post or {}).get('why', '-')}")
         try:
             raw = client._get(f"{pid}/comments" if channel == "instagram" else f"{pid}/replies",
                               fields="id,text,username,timestamp", limit=50).get("data", [])
@@ -421,12 +593,14 @@ def diag(client, state, only, out=print):
         for c in raw[:12]:
             out(f"  {c.get('id')} user={c.get('username')} text={_short(c.get('text'), 100)}")
         cid = ((state["done"].get(channel) or {}).get(pid) or {}).get("comment_id")
-        if cid:
-            try:
-                one = fetch_comment(client, cid)
-                out(f"diag {channel} {pid}: our comment {cid} by its id -> {_short(json.dumps(one, ensure_ascii=False, sort_keys=True), 300)}")
-            except Exception as exc:
-                out(f"diag {channel} {pid}: our comment {cid} by its id failed ({str(exc)[:160]})")
+        if cid:   # an id of ours, then the same id with the last digit changed (an object that does not exist)
+            for label, probe, fields in (("ours", cid, "id"), ("ours", cid, "id,text"), ("ours", cid, "id,text,username,timestamp,hidden"),
+                                         ("not ours", cid[:-1] + str((int(cid[-1]) + 1) % 10), "id")):
+                try:
+                    one = client._get(probe, fields=fields)
+                    out(f"diag {channel} {pid}: {label} comment {probe} fields={fields} -> {_short(json.dumps(one, ensure_ascii=False, sort_keys=True), 300)}")
+                except Exception as exc:
+                    out(f"diag {channel} {pid}: {label} comment {probe} fields={fields} failed ({str(exc)[:160]})")
     if channel == "instagram":   # does the list work at all for this token? look at posts that report comments
         try:
             rows = client._get(f"{client.user_id}/media", fields="id,comments_count,timestamp", limit=50).get("data", [])
@@ -492,7 +666,7 @@ def main(argv=None):
     if args.cmd == "diag":   # read-only: what the platform answers about the given posts and our comments (public text only)
         for channel in args.channels:
             if tokens[channel]:
-                diag(clients[channel](tokens[channel]).me(), state, args.only or [])
+                diag(clients[channel](tokens[channel]).me(), state, args.only or [], finder=finder)
         return 0
     rows = []
     for channel in args.channels:
@@ -512,7 +686,7 @@ def main(argv=None):
         Path(args.report).write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     save_state(state)   # receipts, plus the posts an audit found already linked (never read again)
     print(f"link_backfill {args.cmd}: {counts}")
-    todo = [r for r in rows if r["status"] in ("missing", "unknown_app", "not_checked")
+    todo = [r for r in rows if r["status"] in ("missing", "unknown_app", "not_checked", "unlisted_comments")
             or r["status"].startswith(("write_failed", "backfilled_unverified"))]
     for r in todo[:40]:
         print(f"  {r['channel']} {r['id']} {r.get('date', '')} {r.get('app', '')} {r['status']}")

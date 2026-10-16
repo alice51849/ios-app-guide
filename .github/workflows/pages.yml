@@ -1,11 +1,4 @@
 name: Deploy static site to Pages
-# Only a paired dispatch uploads; every other run is preflight. Say so in the
-# run list so a green push run is never read as "online" (2026-10-13..16).
-# guide-auto-release.yml finds its own paired runs by this title.
-run-name: >-
-  ${{ (github.event_name == 'workflow_dispatch' && inputs.owned_feed_release && inputs.incremental_high_intent)
-  && format('配對發布（會上線） {0}', inputs.expected_guide_sha)
-  || 'PREFLIGHT ONLY — 尚未上線' }}
 
 on:
   push:
@@ -115,17 +108,6 @@ jobs:
           print(json.dumps({"notification_release_hold": hold, "provider_intents": 0,
                             "provider_requests": 0, "explicit_paired_upload": paired}))
           PY
-      - name: Label preflight-only runs (nothing below uploads)
-        if: steps.release_policy.outputs.allow_upload != 'true'
-        run: |
-          echo "::warning title=PREFLIGHT ONLY — 尚未上線::This run checks the site but never uploads it. Only a paired release (guide-auto-release.yml) puts main online; check /.well-known/deployment.json."
-          {
-            echo "## PREFLIGHT ONLY — 尚未上線"
-            echo
-            echo "這個 run 只做檢查，不會上傳部署；綠燈不代表新內容已上線。"
-            echo "上線由 guide-auto-release.yml 自動配對發布（run 名稱「配對發布（會上線）」）。"
-            echo "線上版本看 https://alice51849.github.io/ios-app-guide/.well-known/deployment.json 的 source_commit。"
-          } >> "$GITHUB_STEP_SUMMARY"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - uses: actions/setup-node@v4
@@ -165,6 +147,10 @@ jobs:
           python3 _engine/geo/gen_hubs.py
           python3 _engine/geo/check_hub_coverage.py --pages-dir .
           python3 _engine/geo/gen_tool_email_capture.py
+          # alternatives_i18n and gen_hubs just rewrote their pages from templates;
+          # put the tracked Google Play link back next to each Android-live app's
+          # App Store CTA (idempotent; digest-pinned hero-task pages are skipped).
+          python3 _engine/geo/android_play.py inject --pages .
       - name: Render source-owned public email protection
         env:
           TZ: UTC

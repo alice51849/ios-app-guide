@@ -53,7 +53,11 @@ BLOCK_RE = gen_smart_app_banners.APP_STORE_REVIEW_BLOCK_RE
 QR_BLOCK_END = gen_smart_app_banners.APP_STORE_QR_BLOCK_END
 MOBILE_CTA_BLOCK_START = gen_smart_app_banners.MOBILE_CTA_BLOCK_START
 
-# The ten focus Apps of the 2026-10-15 benchmark checklist (registry keys).
+# The ten focus Apps of the 2026-10-15 benchmark checklist (registry keys),
+# plus the rest of the A-group roster (coverage audit 2026-10-16): every
+# live App's pages carry the same neutral existing-user review link, because
+# the benchmark found review count is the one lever every category leader
+# has and we lack (single-digit counts on every App).
 REVIEW_APP_KEYS = (
     "claudeusagemini",  # UsageNow
     "mochi",
@@ -65,6 +69,18 @@ REVIEW_APP_KEYS = (
     "lumibopomofo",
     "dbhalo",
     "zipbox",
+    # A-group additions (2026-10-16)
+    "aibriefpack",
+    "lumibopomofopro",
+    "caldaily",
+    "countdaysnow",
+    "dailymate",
+    "dailymatelite",
+    "gmoney",
+    "gmoneylite",
+    "hourstag",
+    "hourstaglite",
+    "ledmovingtext",
 )
 REVIEW_APP_IDS = frozenset(str(APPSTORE[key]) for key in REVIEW_APP_KEYS)
 

@@ -40,6 +40,18 @@
 - AgentOffice（~/AgentOffice）和 ~/.growth-runtime 只在本機 Mac 上；要改這兩個地方，由雲端用 send_message 直接交給在線的本機 session 處理，不要叫我轉貼。
 - 「上線」只看線上實際狀態，不看綠燈：ios-app-guide 的 push 觸發的 Pages run 只跑 preflight，真正上傳要靠配對發布（00_GrowthEngine geo/pages gitlink 綁到新的 Guide main 再 dispatch）。回報「已上線」之前，必須確認線上 deployment generation（GitHub Deployments 的 github-pages 最新一筆，或 /.well-known/deployment.json）已包含該 commit；其他站與通路同理，要有讀回證據（網址 200、發文收據）才算完成（2026-10-16 guide 站 10-13 起沒上傳、3 天沒人發現，業主：「要確保之後不可以再發生」）。
 
+## 省 token（不犧牲速度與品質）
+業主 2026-10-16：「請一率使用節省token但不影響速度跟品質的方式運行」。所有 session、worker、排程一律照做：
+- 只讀需要的部分：先 grep／rg 找位置，再讀行號範圍；大檔、JSON、log 不整份讀，用 head／tail／cut -c／jq 取欄位；已在對話裡的內容不重讀。
+- 大輸出先截短：指令輸出加 `| tail -n 50`、`| cut -c1-200`；GitHub job log 先用 failed_only＋tail_lines ≤ 80，不夠再放大；list_events 一律帶 kinds 篩選。
+- 大範圍搜尋、讀很多檔、長 log 分析交給子 agent，主 session 只收結論；子 agent 的回報限 ≤ 15 行，轉給業主時再濃縮，不整段貼。
+- 模型分工：機械性工作（照範本大量產頁、跑測試、搬檔、查狀態）用 sonnet；設計、找根因、文案品質、複審用 opus；禁止 Fable。
+- 測試：改到哪就先跑那幾個測試，全套只在推送前跑一次；CI 只在推完後看一次結果，不反覆輪詢；等待用通知或排程，不用 sleep 迴圈。
+- 不重工：開工先看交接檔與 git log；重用既有 clone 與 worktree（大 repo 用淺 clone，不重複 clone）。
+- 獨立的工作同一回合平行送出（省時間）；只有真的獨立的大型工作流才另開 session，完成就封存。
+- 交接檔用追加短段落，不重寫整份；回報業主用短表格，只列未完成項目與百分比。
+- 不為了省 token 跳過測試、驗證或檢查；品質與速度優先於省 token。
+
 ## 交接（防帳號或 session 中斷）
 - 進度一律存在 GitHub，不只留在對話或容器裡：換帳號、session 中斷或封存後，別的 session 只靠 GitHub 就要能接手（業主 2026-10-16：「以後要更頻繁的更新到github…避免該帳號被中斷之後其他帳號…沒辦法接續」）。
 - 每個 session（雲端、本機都算）在 00_GrowthEngine 的 `ops/handoff/sessions/` 有自己的交接檔，格式見該資料夾 README；開工後第一個 commit 就建立，只改自己的檔。

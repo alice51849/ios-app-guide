@@ -1,0 +1,4 @@
+{
+  "note": "Dated conversion posts for the Threads evening slot (threads-post.yml 13:00 UTC = Taiwan 21:00 = US Eastern 9:00 = Brazil 10:00 = Germany/France 15:00). threads_series.py takes the post queued for the Taiwan date after a UsageNow event, a UsageNow hook clip or a weather alert, and before the daily rotation; every other day the rotation (BM-17 Mochi / BM-22 Lumi Weather) keeps the slot. Body has no links; the App Store link with the post's bm_<app>_<cc>_th token goes in the first reply. One post per date; facts follow the live App Store copy of that locale (00_GrowthEngine data/<app>_full.json). Source: 00_GrowthEngine reports/conversion_focus_2026-10-16.md (each app's top paying market).",
+  "posts": []
+}

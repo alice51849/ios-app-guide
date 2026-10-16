@@ -34,6 +34,9 @@ sys.path.insert(0, str(HERE))
 
 SERIES = HERE.parent / "growth" / "threads-series.json"
 CLIPS = HERE.parent / "growth" / "clips.json"
+# Dated conversion posts for audiences awake at 13:00 UTC (US / BR morning, EU afternoon):
+# one post per date, native language, a bm_<app>_<cc>_th token; the rotation keeps every other day.
+EVENING_QUEUE = HERE.parent / "growth" / "threads-evening-queue.json"
 TW = dt.timezone(dt.timedelta(hours=8))
 EVENING_CLIP_SLOT = 15  # clips.json slot id of the clip this slot replaces
 UA = "LumiApps-threads-series/1.0 hourstag.app@gmail.com"
@@ -47,6 +50,28 @@ def load(path=SERIES):
 
 def today_tw(now=None):
     return (now or dt.datetime.now(dt.timezone.utc)).astimezone(TW).date()
+
+
+def load_evening_queue(path=EVENING_QUEUE):
+    """Posts of growth/threads-evening-queue.json; a missing or broken file is an empty queue."""
+    try:
+        posts = json.loads(Path(path).read_text(encoding="utf-8")).get("posts", [])
+    except (OSError, ValueError):
+        return []
+    return [p for p in posts if isinstance(p, dict)]
+
+
+def evening_queued(day, queue):
+    """The conversion post queued for `day` (Taiwan date), or None."""
+    for p in queue:
+        if p.get("date") == day.isoformat():
+            return p
+    return None
+
+
+def queue_post(p):
+    return {"series": "CONV", "app": p["app"], "app_id": p["app_id"], "ct": p["ct"],
+            "locale": p.get("locale", ""), "text": p["text"], "image_url": p.get("image_url")}
 
 
 def planned_clip(day, clips_path=CLIPS):
@@ -166,10 +191,13 @@ def post(series, text, image_url=None):
             "ct": series["ct"], "locale": series["locale"], "text": text, "image_url": image_url}
 
 
-def plan(day, data=None, weather=None, clip=None):
+def plan(day, data=None, weather=None, clip=None, queue=None):
     """What the evening slot posts on `day`: a series post dict, or None for
-    the planned hook clip. `weather` is tomorrow_weather() (None = unknown)."""
+    the planned hook clip. `weather` is tomorrow_weather() (None = unknown).
+    Order: UsageNow event > UsageNow clip > weather alert > dated conversion
+    post (`queue`, growth/threads-evening-queue.json) > rotation > clip."""
     data = data or load()
+    queue = load_evening_queue() if queue is None else queue
     s = data["series"]
     event = usagenow_event(s["usagenow_policy"], day)
     if event:
@@ -181,6 +209,9 @@ def plan(day, data=None, weather=None, clip=None):
     weather_ok = wx.get("status") == "live" and weather is not None
     if weather_ok and weather_triggered(wx, weather):
         return post(wx, compose_weather(wx, weather, day))
+    queued = evening_queued(day, queue)
+    if queued and not evening_queue_problems([queued]):
+        return queue_post(queued)
     rotation = [k for k in data["rotation"] if s[k].get("status") == "live"]
     if rotation:
         key = rotation[day.toordinal() % len(rotation)]
@@ -193,12 +224,47 @@ def plan(day, data=None, weather=None, clip=None):
     return None
 
 
-def validate(data=None):
-    """Problems with the data file: lengths, ct tokens, banned words."""
+BANNED = ("best", "#1", "No.1", "最強", "最好", "第一", "最佳", "free forever", "price", "$")
+QUEUE_FIELDS = ("date", "app", "app_id", "ct", "locale", "text")
+
+
+def evening_queue_problems(queue):
+    """Why a conversion post cannot take the slot: missing fields, a token that is not a
+    pre-registered bm_<app>_<cc>_th series token, an overlong body, a link, a banned word,
+    or two posts on one date."""
+    from social_post_common import APP_STORE_CAMPAIGN_RE
+    problems, dates = [], set()
+    for p in queue:
+        where = f"evening queue {p.get('date')} {p.get('app')}"
+        missing = [k for k in QUEUE_FIELDS if not p.get(k)]
+        if missing:
+            problems.append(f"{where}: missing {missing}")
+            continue
+        try:
+            dt.date.fromisoformat(p["date"])
+        except ValueError:
+            problems.append(f"{where}: bad date")
+        if p["date"] in dates:
+            problems.append(f"{where}: two posts on one date")
+        dates.add(p["date"])
+        if APP_STORE_CAMPAIGN_RE.fullmatch(p["ct"]) is None or not p["ct"].startswith("bm_") or not p["ct"].endswith("_th"):
+            problems.append(f"{where}: ct must be bm_<app>_<cc>_th, not {p['ct']!r}")
+        text = p["text"]
+        if len(text) > MAX_POST_CHARS:
+            problems.append(f"{where}: {len(text)} chars")
+        if "http" in text:
+            problems.append(f"{where}: link in body")
+        low = text.lower()
+        problems += [f"{where}: banned {w!r}" for w in BANNED if w.lower() in low]
+    return problems
+
+
+def validate(data=None, queue=None):
+    """Problems with the data files: lengths, ct tokens, banned words."""
     from social_post_common import APP_STORE_CAMPAIGN_RE
     data = data or load()
-    problems = []
-    banned = ("best", "#1", "No.1", "最強", "最好", "第一", "最佳", "free forever", "price", "$")
+    problems = evening_queue_problems(load_evening_queue() if queue is None else queue)
+    banned = BANNED
     day = dt.date(2026, 1, 5)
     sample = {c["name"]: {"min": 9, "max": 19, "rain": 3.0} for c in data["series"]["lumiweather_tomorrow"]["cities"]}
     texts = [compose_weather(data["series"]["lumiweather_tomorrow"], sample, day)]

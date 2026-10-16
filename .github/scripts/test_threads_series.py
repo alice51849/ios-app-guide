@@ -114,6 +114,55 @@ class PlanTest(unittest.TestCase):
         self.assertIsNone(T.plan(DAY, data, COLD))
 
 
+QUEUED = {"date": DAY.isoformat(), "app": "cyca", "app_id": "6782251621", "ct": "bm_cyca_us_th",
+          "locale": "en-US", "task": "cyca-conv-1", "source": "conv_us_1",
+          "text": "Irregular cycle, PCOS or trying to conceive: Cyca keeps the log on your phone. Link in the reply."}
+
+
+class EveningQueueTest(unittest.TestCase):
+    """Dated conversion posts (growth/threads-evening-queue.json) for audiences awake at 13:00 UTC."""
+
+    def setUp(self):
+        self.data = T.load()
+
+    def test_queued_post_takes_the_slot_on_its_date(self):
+        chosen = T.plan(DAY, self.data, MILD, queue=[QUEUED])
+        self.assertEqual("CONV", chosen["series"])
+        self.assertEqual("bm_cyca_us_th", chosen["ct"])
+        self.assertIn("ct=bm_cyca_us_th", __import__("threads_post").queued_links(chosen))
+        self.assertNotIn("http", chosen["text"])
+
+    def test_other_days_keep_the_rotation(self):
+        chosen = T.plan(DAY + dt.timedelta(days=1), self.data, MILD, queue=[QUEUED])
+        self.assertIn(chosen["series"], ("BM-17", "BM-22"))
+
+    def test_usagenow_event_and_weather_alert_still_win(self):
+        self.assertEqual("BM-11", T.plan(DAY, live_event(self.data), MILD, queue=[QUEUED])["series"])
+        self.assertEqual("BM-22", T.plan(DAY, self.data, COLD, queue=[QUEUED])["series"])
+        self.assertIsNone(T.plan(DAY, self.data, MILD, clip="claudeusagemini/en", queue=[QUEUED]))
+
+    def test_bad_entries_are_reported_and_never_posted(self):
+        bad = [dict(QUEUED, ct="un_tw_threads_1"), dict(QUEUED, text="x" * 501),
+               dict(QUEUED, text="see https://example.com"), dict(QUEUED, text="the best tracker"),
+               {k: v for k, v in QUEUED.items() if k != "locale"}]
+        for entry in bad:
+            self.assertTrue(T.evening_queue_problems([entry]), entry)
+            self.assertNotEqual("CONV", (T.plan(DAY, self.data, MILD, queue=[entry]) or {}).get("series"), entry)
+        self.assertTrue(T.evening_queue_problems([QUEUED, dict(QUEUED, app="mochi")]))  # one date, two posts
+        self.assertEqual([], T.evening_queue_problems([QUEUED]))
+
+    def test_live_queue_file_is_valid_and_one_post_per_date(self):
+        queue = T.load_evening_queue()
+        self.assertEqual([], T.evening_queue_problems(queue))
+        self.assertEqual(len(queue), len({p["date"] for p in queue}))
+        for p in queue:
+            self.assertTrue(p["ct"].startswith("bm_") and p["ct"].endswith("_th"), p["ct"])
+            self.assertLessEqual(len(p["text"]), 480, p["date"])
+
+    def test_missing_queue_file_is_empty(self):
+        self.assertEqual([], T.load_evening_queue(Path("/nonexistent/queue.json")))
+
+
 class ForecastTest(unittest.TestCase):
     def forecast(self, day):
         steps = []

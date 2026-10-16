@@ -417,7 +417,13 @@ def _write_if_changed(
         previous = path.read_text(encoding="utf-8")
     if previous == content:
         return False
-    path.write_text(content, encoding="utf-8")
+    # 先寫暫存檔再 os.replace：兩個行程同時寫同一頁時，舊的較長內容不會殘留在
+    # </html> 後面（2026-10-16 稽核：152 頁 answers 有這種尾巴）。
+    temporary = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+    temporary.write_text(content, encoding="utf-8")
+    if path.exists():
+        os.chmod(temporary, path.stat().st_mode & 0o777)
+    os.replace(temporary, path)
     return True
 
 

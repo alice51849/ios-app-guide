@@ -1,0 +1,77 @@
+name: Download link backfill
+
+# Owner rule (2026-10-17): every promo post carries the app's direct download link. Instagram
+# captions and Threads posts cannot be edited through the API, so the link goes in ONE comment /
+# reply under OUR OWN post when it lacks one (link_backfill.py: only the token owner's media, once
+# per post, read back after writing, slows down on a rate-limit answer).
+#   mode=audit  lists which posts have / lack the link and writes the report, posts nothing.
+#   mode=apply  adds the missing links (max_new per channel per run; `only` = a small first batch).
+# Report: .github/growth/link-backfill-report.json; receipts: .github/growth/link-backfill.json.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "audit (report only) or apply (add the links)"
+        default: "audit"
+      max_new:
+        description: "Links added per channel in this run"
+        default: "3"
+      only:
+        description: "Only these post ids (space separated; empty = all)"
+        default: ""
+      channels:
+        description: "instagram threads (space separated)"
+        default: "instagram threads"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: link-backfill
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write # the report and the receipts are committed
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Test
+        run: |
+          python3 .github/scripts/test_download_links.py -q
+          python3 .github/scripts/test_link_backfill.py -q
+      - name: Audit / add the links
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          MODE: ${{ inputs.mode }}
+          MAX_NEW: ${{ inputs.max_new }}
+          ONLY: ${{ inputs.only }}
+          CHANNELS: ${{ inputs.channels }}
+        run: |
+          ONLY_ARGS=""
+          if [ -n "$ONLY" ]; then ONLY_ARGS="--only $ONLY"; fi
+          python3 .github/scripts/link_backfill.py "$MODE" --max-new "$MAX_NEW" --channels $CHANNELS $ONLY_ARGS | tee "$RUNNER_TEMP/backfill.log"
+          { echo "### Download link backfill ($MODE)"; grep -E '^link_backfill ' "$RUNNER_TEMP/backfill.log"; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Save the report and the receipts
+        run: |
+          if [ -z "$(git status --porcelain -- .github/growth/link-backfill-report.json .github/growth/link-backfill.json)" ]; then echo "nothing new"; exit 0; fi
+          cp .github/growth/link-backfill-report.json "$RUNNER_TEMP/report.json"
+          cp -f .github/growth/link-backfill.json "$RUNNER_TEMP/state.json" 2>/dev/null || echo '{}' > "$RUNNER_TEMP/state.json"
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp "$RUNNER_TEMP/report.json" .github/growth/link-backfill-report.json
+            python3 .github/scripts/link_backfill.py merge --state-from "$RUNNER_TEMP/state.json"
+            git add .github/growth/link-backfill-report.json .github/growth/link-backfill.json
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "下載連結補齊紀錄 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not save the link backfill report"; exit 1

@@ -6,7 +6,7 @@
   "name": "แคตตาล็อกเจตนาการค้นหาจากผู้พัฒนา Lumi Studio",
   "description": "แคตตาล็อกที่ผู้พัฒนาเผยแพร่โดยตรง ระบุว่าแต่ละแอปเหมาะกับใคร ต้องการทำงานใดให้เสร็จ และเข้าถึง App Store โดยตรงได้อย่างไร",
   "inLanguage": "th",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-16",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -18,8 +18,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/th/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
-        "name": "100 Notes Studio: Pen & Paper",
-        "description": "100 Notes Studio เป็นพื้นที่เขียนและจัดระเบียบที่ทำงานแบบออฟไลน์ ใช้จดด้วยลายมือ พิมพ์ข้อความ ทำเครื่องหมายบน PDF บันทึกเสียงประจำหน้า",
+        "name": "100 Notes Studio",
+        "description": "100 Notes Studio — 100 Notes Studio เป็นพื้นที่ทำงานส่วนตัวแบบออฟไลน์สำหรับลายมือ โน้ตพิมพ์ การมาร์กอัป PDF การบันทึกเสียงแนบในหน้า และการทบทวนบทเรียน เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว · ไม่มีสมัครสมาชิกรายเดือน",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -34,7 +34,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6798813048"
           },
-          "name": "100 Notes Studio: Pen & Paper",
+          "name": "100 Notes Studio",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/th/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
@@ -45,11 +45,11 @@
             "target": "https://apps.apple.com/th/app/id6798813048?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/th/notesstudio100.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/th/answers/best-offline-handwriting-notes-app-for-ipad-with-pdf-markup-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "th",
-          "description": "100 Notes Studio เป็นพื้นที่เขียนและจัดระเบียบที่ทำงานแบบออฟไลน์ ใช้จดด้วยลายมือ พิมพ์ข้อความ ทำเครื่องหมายบน PDF บันทึกเสียงประจำหน้า",
+          "description": "100 Notes Studio — 100 Notes Studio เป็นพื้นที่ทำงานส่วนตัวแบบออฟไลน์สำหรับลายมือ โน้ตพิมพ์ การมาร์กอัป PDF การบันทึกเสียงแนบในหน้า และการทบทวนบทเรียน เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว · ไม่มีสมัครสมาชิกรายเดือน",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-notesstudio100"
           },
@@ -1932,8 +1932,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-moneytag",
         "url": "https://apps.apple.com/th/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
-        "name": "MoneyTag: รายรับและรายจ่าย",
-        "description": "รายรับและรายจ่าย ทุกโปรเจกต์มีบัญชีของตัวเอง: รายรับลบรายจ่ายคือยอดสุทธิของโปรเจกต์นั้น นี่คือคำถามที่พบบ่อยที่สุด หากไม่มีคำตอบที่ต้องการ เขียนมาหาเราได้เลย ทุกข้อความมีคนอ่านจริง",
+        "name": "MoneyTag: Income & Expense",
+        "description": "งบประมาณรายเดือนบอกฟรีแลนซ์ไม่ได้ว่าโปรเจกต์ของลูกค้ารายหนึ่งทำกำไรจริงหรือไม่ — แต่ละโปรเจกต์ต้องมีรายรับ รายจ่าย และยอดสุทธิของตัวเอง — MoneyTag: Income & Expense ถูกสร้างมาเพื่อสิ่งนี้",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1948,7 +1948,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6801956402"
           },
-          "name": "MoneyTag: รายรับและรายจ่าย",
+          "name": "MoneyTag: Income & Expense",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
           "url": "https://apps.apple.com/th/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
@@ -1959,11 +1959,11 @@
             "target": "https://apps.apple.com/th/app/id6801956402?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/th/moneytag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/th/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6801956402",
           "inLanguage": "th",
-          "description": "รายรับและรายจ่าย ทุกโปรเจกต์มีบัญชีของตัวเอง: รายรับลบรายจ่ายคือยอดสุทธิของโปรเจกต์นั้น นี่คือคำถามที่พบบ่อยที่สุด หากไม่มีคำตอบที่ต้องการ เขียนมาหาเราได้เลย ทุกข้อความมีคนอ่านจริง",
+          "description": "งบประมาณรายเดือนบอกฟรีแลนซ์ไม่ได้ว่าโปรเจกต์ของลูกค้ารายหนึ่งทำกำไรจริงหรือไม่ — แต่ละโปรเจกต์ต้องมีรายรับ รายจ่าย และยอดสุทธิของตัวเอง — MoneyTag: Income & Expense ถูกสร้างมาเพื่อสิ่งนี้",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/th.jsonld#offer-moneytag"
           },

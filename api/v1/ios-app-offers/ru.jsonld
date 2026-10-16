@@ -6,7 +6,7 @@
   "name": "Каталог намерений поиска издателя Lumi Studio",
   "description": "Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.",
   "inLanguage": "ru",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-16",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -18,8 +18,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/ru/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
-        "name": "100 Notes Studio: Pen & Paper",
-        "description": "Соберите рукописные страницы, набранный текст, разметку PDF и инструменты для учёбы в понятном рабочем пространстве. Основные функции доступны без",
+        "name": "100 Notes Studio",
+        "description": "100 Notes Studio — 100 Notes Studio — это приватное офлайн-пространство для рукописных и печатных заметок, разметки PDF, аудиозаписей, привязанных к странице, и учёбы. Бесплатное начало · Разовая разблокировка · Без подписки.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -34,7 +34,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6798813048"
           },
-          "name": "100 Notes Studio: Pen & Paper",
+          "name": "100 Notes Studio",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/ru/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
@@ -45,11 +45,11 @@
             "target": "https://apps.apple.com/ru/app/id6798813048?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ru/notesstudio100.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-offline-handwriting-notes-app-for-ipad-with-pdf-markup-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798813048",
           "inLanguage": "ru",
-          "description": "Соберите рукописные страницы, набранный текст, разметку PDF и инструменты для учёбы в понятном рабочем пространстве. Основные функции доступны без",
+          "description": "100 Notes Studio — 100 Notes Studio — это приватное офлайн-пространство для рукописных и печатных заметок, разметки PDF, аудиозаписей, привязанных к странице, и учёбы. Бесплатное начало · Разовая разблокировка · Без подписки.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-notesstudio100"
           },
@@ -1932,8 +1932,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-moneytag",
         "url": "https://apps.apple.com/ru/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
-        "name": "MoneyTag: Доходы и расходы",
-        "description": "Доходы и расходы У каждого проекта своя книга учёта: доходы минус расходы — это его чистый итог. Здесь собраны вопросы, которые задают чаще всего. Если вашего нет, напишите нам — каждое письмо читает живой человек.",
+        "name": "MoneyTag: Income & Expense",
+        "description": "Месячный бюджет не покажет фрилансеру, принёс ли конкретный проект клиента деньги — каждому проекту нужны свои доходы, расходы и итоговый результат. MoneyTag: Income & Expense создано именно для этого.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1948,7 +1948,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6801956402"
           },
-          "name": "MoneyTag: Доходы и расходы",
+          "name": "MoneyTag: Income & Expense",
           "operatingSystem": "iOS",
           "applicationCategory": "FinanceApplication",
           "url": "https://apps.apple.com/ru/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
@@ -1959,11 +1959,11 @@
             "target": "https://apps.apple.com/ru/app/id6801956402?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ru/moneytag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6801956402",
           "inLanguage": "ru",
-          "description": "Доходы и расходы У каждого проекта своя книга учёта: доходы минус расходы — это его чистый итог. Здесь собраны вопросы, которые задают чаще всего. Если вашего нет, напишите нам — каждое письмо читает живой человек.",
+          "description": "Месячный бюджет не покажет фрилансеру, принёс ли конкретный проект клиента деньги — каждому проекту нужны свои доходы, расходы и итоговый результат. MoneyTag: Income & Expense создано именно для этого.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-moneytag"
           },

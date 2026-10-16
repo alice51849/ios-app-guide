@@ -1,12 +1,13 @@
 {
- "generated": "2026-10-16T21:58:00Z",
+ "generated": "2026-10-16T22:01:08Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 3,
-  "ok_caption": 40,
-  "unknown_app": 44,
+  "ok_caption": 39,
+  "unknown_app": 46,
   "ok_store_only": 679,
-  "missing": 13,
+  "write_failed": 1,
+  "missing": 11,
   "backfilled": 4,
   "ok_backfilled_earlier": 2
  },
@@ -88,12 +89,10 @@
    "id": "18340371214259524",
    "permalink": "https://www.threads.com/@hourstag.app/post/DecRJ8sDyuY",
    "date": "2026-10-13",
-   "app": "claudeusagemini",
-   "status": "ok_caption",
+   "app": "",
+   "status": "unknown_app",
    "text": "重構跑到一半，Claude Code 突然停下來說額度用完。 我第一個反應是去看 5 小時額度，明明還剩一大截，後來才發現是每週額度先見底。 被擋過幾次之後，我乾脆自己寫了一個 iPhone App：UsageNow。 主畫面小工具直接顯示 Claude 的 5 小時和每週額度（",
-   "why": "url+brand",
-   "ios_id": "6818607603",
-   "locale": "zh-Hant"
+   "why": ""
   },
   {
    "channel": "threads",
@@ -888,13 +887,10 @@
    "id": "18333247204259336",
    "permalink": "https://www.threads.com/@hourstag.app/post/Dc2hPmIAZ4g",
    "date": "2026-09-04",
-   "app": "aim990",
-   "status": "missing",
+   "app": "",
+   "status": "unknown_app",
    "text": "把零散刷题变成一套经得住时间压力的训练流程。 Aim990 Plus 面向认真备考的成人学习者,专注英语听力与阅读的限时作答能力。它不是让你漫无目的地堆题量,而是用清晰的三步循环安排每次练习:先做 Warm-up,用8道听力与阅读混合题快速进入状态;再进入 Pressure Se",
-   "why": "brand",
-   "ios_id": "6784974530",
-   "locale": "zh-Hant",
-   "own_replies": []
+   "why": ""
   },
   {
    "channel": "threads",
@@ -8926,12 +8922,13 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/DcSeAmhk_8V",
    "date": "2026-08-21",
    "app": "lumimath",
-   "status": "missing",
+   "status": "write_failed:24",
    "text": "\"Five more minutes\" — about a learning game, for once. A cozy math adventure for ages 3–6: counting, number sense, shapes, and logic that fe",
    "why": "brand",
    "ios_id": "6778269699",
    "locale": "en",
-   "own_replies": []
+   "own_replies": [],
+   "error": "HTTP 400 code 24: The requested resource does not exist"
   },
   {
    "channel": "threads",

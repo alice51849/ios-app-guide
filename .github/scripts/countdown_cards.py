@@ -164,8 +164,14 @@ def due(day):
     return active[day.toordinal() % len(active)]
 
 
+def campaign(channel):
+    """One CountDaysNow campaign per platform (cd_<platform>): per-event tokens split the same downloads
+    into rows Apple never reveals (it shows a campaign only past 5 first-time downloads)."""
+    return f"cd_{channel}"[:40]
+
+
 def store_url(e, channel):
-    query = urllib.parse.urlencode({"pt": "118326163", "ct": f"cd_{e['id']}_{channel}"[:40], "mt": "8"})
+    query = urllib.parse.urlencode({"pt": "118326163", "ct": campaign(channel), "mt": "8"})
     return f"https://apps.apple.com/{STORE[e['locale']]}/app/id{APP_ID}?{query}"
 
 
@@ -321,7 +327,7 @@ def instagram_image(url, text, label="countdown", alt=None):
 
 def post_telegram(card, meta, e):
     row = [{"text": TEXT[e["locale"]]["button"], "url": store_url(e, "tg")}]
-    play = play_store_url(APP_ID, f"cd_{e['id']}_tg"[:40])
+    play = play_store_url(APP_ID, campaign("tg"))
     if play:
         row.append({"text": "Google Play", "url": play})
     send_photo(card, meta["caption"], row)
@@ -332,7 +338,7 @@ def post_threads(url, meta, e):
     if queued_today():
         return print("countdown: a queued Threads post has today's slot; Threads skipped")
     links = [f"App Store: {store_url(e, 'th')}"]
-    play = play_store_url(APP_ID, f"cd_{e['id']}_th"[:40])
+    play = play_store_url(APP_ID, campaign("th"))
     if play:
         links.append(f"Google Play: {play}")
     threads_image(url, meta["caption"], links)

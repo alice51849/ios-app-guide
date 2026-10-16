@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T06:47:46Z",
+  "updated_at": "2026-10-16T07:17:31Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "mochi/en": {
@@ -12406,7 +12406,7 @@
     "claudeusagemini/en": {
       "app": "claudeusagemini",
       "locale": "en",
-      "url": "https://files.catbox.moe/n106qp.mp4",
+      "url": "https://files.catbox.moe/4w05q4.mp4",
       "store_url": "https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=h7_claudeusagemini&mt=8",
       "hook": "AI limit hit mid-task again?",
       "name": "UsageNow: AI Usage Tracker",
@@ -12450,7 +12450,7 @@
     "claudeusagemini/zh-Hant": {
       "app": "claudeusagemini",
       "locale": "zh-Hant",
-      "url": "https://files.catbox.moe/ufv87k.mp4",
+      "url": "https://files.catbox.moe/olx5cc.mp4",
       "store_url": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=h7_claudeusagemini&mt=8",
       "hook": "寫到一半 AI 額度又爆了？",
       "name": "UsageNow：AI 用量與額度追蹤",
@@ -12494,7 +12494,7 @@
     "claudeusagemini/ja": {
       "app": "claudeusagemini",
       "locale": "ja",
-      "url": "https://files.catbox.moe/5t4uhq.mp4",
+      "url": "https://files.catbox.moe/3n1uiz.mp4",
       "store_url": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=h7_claudeusagemini&mt=8",
       "hook": "作業の途中で またAIの上限？",
       "name": "UsageNow：AI使用量トラッカー",
@@ -12538,7 +12538,7 @@
     "claudeusagemini/ko": {
       "app": "claudeusagemini",
       "locale": "ko",
-      "url": "https://files.catbox.moe/kslctz.mp4",
+      "url": "https://files.catbox.moe/5tz3nf.mp4",
       "store_url": "https://apps.apple.com/kr/app/id6818607603?pt=118326163&ct=h7_claudeusagemini&mt=8",
       "hook": "작업 중에 또 AI 한도 초과?",
       "name": "UsageNow: AI 사용량 트래커",
@@ -12582,7 +12582,7 @@
     "claudeusagemini/de": {
       "app": "claudeusagemini",
       "locale": "de",
-      "url": "https://files.catbox.moe/ixzy6p.mp4",
+      "url": "https://files.catbox.moe/jsfggd.mp4",
       "store_url": "https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=h7_claudeusagemini&mt=8",
       "hook": "Schon wieder am KI-Limit?",
       "name": "UsageNow: KI-Nutzung Tracker",
@@ -15517,6 +15517,24 @@
       "slot": 1,
       "channel": "threads",
       "clip": "tripplanet/zh-Hant"
+    },
+    {
+      "date": "2027-01-14",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wifiaidlite/zh-Hant"
+    },
+    {
+      "date": "2027-01-14",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "wifiaidlite/zh-Hant"
+    },
+    {
+      "date": "2027-01-14",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "wifiaidlite/zh-Hant"
     }
   ]
 }

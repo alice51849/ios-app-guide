@@ -387,6 +387,11 @@ class AppFinderTest(unittest.TestCase):
         self.assertIsNone(self.app("Aim990 Plus: English Mock Test Offline English Test Practice"))
         self.assertEqual(self.app("Aim990 Your TOEIC Coach Unlock your potential"), "aim990")
 
+    def test_a_product_we_do_not_know_is_not_the_app_that_shares_its_first_word(self):
+        self.assertIsNone(self.app("Aim990 Plus: practice offline. Aim990 keeps you on track"))
+        self.assertEqual(self.app("Aim990 helps you. Learn more about it"), "aim990")
+        self.assertEqual(self.app("TripBee Lite: Travel Plan, TripBee Lite is free"), "tripbeelite")
+
     def test_a_brand_inside_the_text_decides_only_when_it_is_the_only_one(self):
         self.assertEqual(self.app("一份你不想打開的待辦清單。放進 Mochi 清單就好。"), "mochi")
         self.assertEqual(self.app("眠りと集中のホワイトノイズ。Serenoは、あなたの電話を変えます。"), "sereno")

@@ -220,7 +220,9 @@ class AppFinder:
         return next(iter(known)) if len(known) == 1 else False
 
     def _hits(self, text):
-        out = []
+        """([(start, end, iOS id)], [(start, end)]): where a brand stands in the text, and where one stands
+        directly before Pro / Lite / Plus (a product that name does not say)."""
+        out, skipped = [], []
         for b, ios in self.brands:
             start = 0
             while True:
@@ -235,14 +237,20 @@ class AppFinder:
                     word = re.split(r"[\s:：,，.。]", rest, maxsplit=1)[0] if rest else ""
                     if word not in QUALIFIERS:
                         out.append((i, j, ios))
+                    else:
+                        skipped.append((i, j))
                 start = i + 1
-        return out
+        return out, skipped
 
     def _by_brand(self, text):
         low = squash(re.sub(r"^[\W_]+", "", text.strip(), flags=re.U))
-        hits = self._hits(low)
+        hits, skipped = self._hits(low)
         # a brand inside a longer brand ("Mochi" in "Mochi DoneStamp") is not a second app
         keep = [h for h in hits if not any(o[0] <= h[0] and h[1] <= o[1] and (o[1] - o[0]) > (h[1] - h[0]) for o in hits)]
+        # "<brand> Plus" that no longer name of ours covers is a product we do not know: the text is not about the
+        # app that shares its first word, even when that word stands alone somewhere else in it
+        if any(not any(o[0] <= s[0] and s[1] <= o[1] and (o[1] - o[0]) > (s[1] - s[0]) for o in hits) for s in skipped):
+            return False
         found = {h[2] for h in keep}
         if not found:
             return None

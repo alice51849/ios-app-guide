@@ -107,10 +107,26 @@ SLOT_WORKFLOWS: dict[str, dict[str, dict]] = {
         # the slot gate and posts inputs.slot (default 1), so the healer never
         # dispatches it; clip-backup.yml already backs up slots 1 and 15.
         "reels-daily.yml": {
-            "slots": {1: 20, 9: 20, 15: 20},
+            "slots": {1: 20, 9: 20, 12: 20, 15: 20, 18: 20, 22: 20},
             "max_age_hours": SLOT_MAX_AGE_HOURS,
             "heal": "monitor",
-            "reason": "dispatch bypasses the slot gate; clip-backup.yml backs up slots 1/15",
+            "reason": "dispatch bypasses the slot gate; clip-backup.yml backs up every slot",
+        },
+        # Telegram clips outside telegram-daily's 01:00 / 09:00 / 15:00 (volume-ramp.json stages). A slot
+        # the ramp has not switched on yet runs green and posts nothing; clip-backup.yml refills a miss.
+        "telegram-clips.yml": {
+            "slots": {12: 30, 18: 30, 22: 30},
+            "max_age_hours": SLOT_MAX_AGE_HOURS,
+            "heal": "monitor",
+            "reason": "dispatch bypasses the slot gate; clip-backup.yml backs up every slot",
+        },
+        # Instagram feed carousels (store_shot_cards.py): 07:20 Asia locale, 19:20 English. Gate:
+        # social_slot_gate.py --slots 7,19; a dispatch posts inputs.slot, so it is watched, not dispatched.
+        "ig-feed-daily.yml": {
+            "slots": {7: 20, 19: 20},
+            "max_age_hours": SLOT_MAX_AGE_HOURS,
+            "heal": "monitor",
+            "reason": "dispatch posts inputs.slot regardless of the gate; the ramp allowance stops a double",
         },
         # 05:10 daily card. Gate: social_slot_gate.py --slots 5 (slot = latest 05:00
         # before now), so a plain dispatch fills today's slot and only that one.
@@ -135,11 +151,11 @@ SLOT_WORKFLOWS: dict[str, dict[str, dict]] = {
         # clip-posts.json and Threads goes through threads_backfill.py ->
         # threads-post.yml (gate + cap), so a rerun only fills misses.
         "clip-backup.yml": {
-            "slots": {3: 47, 14: 47, 17: 47},
+            "slots": {0: 47, 3: 47, 11: 47, 14: 47, 17: 47, 20: 47},
             "max_age_hours": SLOT_MAX_AGE_HOURS,
             "heal": "inputs",
             "inputs": {"slot": "{clip_slot}", "date": "{date}"},
-            "clip_slot": {3: "1", 14: "", 17: "15"},
+            "clip_slot": {0: "22", 3: "1", 11: "9", 14: "12", 17: "15", 20: "18"},
             "reason": "clip_posts.py skips posted clips; Threads via threads-post gate + cap",
         },
     },

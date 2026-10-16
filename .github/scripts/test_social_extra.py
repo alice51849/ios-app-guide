@@ -598,9 +598,10 @@ class PageTest(unittest.TestCase):
         now = dt.datetime(2026, 10, 15, 2, tzinfo=dt.timezone.utc)
         section = P.build_section(clips, [], {}, now)
         self.assertIn("| Facebook | 未設定 | — | — |", section)
-        self.assertIn("| Bluesky | 自動（threads-autopilot，精選每天 ≤5 則） | — | — |", section)
+        self.assertIn("| Instagram 圖文輪播 | 未設定 | — | — |", section)
+        self.assertIn("| Bluesky | 自動（threads-autopilot，媒體每天 2→5 則爬坡） | — | — |", section)
         self.assertIn("| Mastodon | 停權冷卻（鎖定） | — | — |", section)
-        self.assertIn("| YouTube Shorts | 自動（Mac，每天 ≤2 支） |", section)
+        self.assertIn("| YouTube Shorts | 自動（Mac，每天 2→4 支爬坡） |", section)
         posts = [{"channel": "bluesky", "clip": "a/en", "link": "https://bsky.app/p/1", "posted_at": "2026-10-15T01:50:00Z"}]
         section = P.build_section(clips, posts, {}, now)
         self.assertIn("| Bluesky | 自動 | 1 | — |", section)

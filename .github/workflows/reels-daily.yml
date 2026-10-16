@@ -3,16 +3,28 @@ name: Instagram Reels daily clip
 # Posts one 7-second hook clip per slot to Instagram Reels through the
 # official Instagram API (own professional account, no app review needed).
 # Until the IG_ACCESS_TOKEN secret exists every run ends quietly.
+# Slots (UTC) switch on stage by stage from .github/growth/volume-ramp.json
+# (3 -> 4 -> 5 -> 6 Reels a day, one stage every 3 days; the Growth Engine's
+# schedule_posts.py plans a clip only for the slots of the day's stage):
+# 1 = Taipei 09:20 / Tokyo-Seoul 10:20, 9 = Europe morning / Taipei 17:20,
+# 15 = New York 11:20 + Europe afternoon, 12 = Taipei 20:20 / Tokyo-Seoul 21:20
+# (TW: the top revenue per download), 22 = New York 18:20 / LA 15:20 / São Paulo
+# 19:20, 18 = New York 14:20 / LA 11:20. clip_posts.py checks the day's
+# allowance before posting; a rate-limit / block answer from Instagram drops the
+# channel one stage (volume_ramp.py) and opens a volume-throttle issue.
 on:
   schedule:
     - cron: "20 1 * * *"   # 09:20 Taiwan / Japan / Korea
-    - cron: "20 9 * * *"   # spare slot: posts only when clips.json plans slot 9
-                           # (post_performance.py channel reallocation moved a slot here)
+    - cron: "20 9 * * *"   # Europe morning / Taipei 17:20 (also the spare slot the
+                           # post_performance.py channel reallocation may hand out)
+    - cron: "20 12 * * *"  # Taipei 20:20 (4 a day)
     - cron: "20 15 * * *"  # Americas morning
+    - cron: "20 18 * * *"  # US afternoon (6 a day)
+    - cron: "20 22 * * *"  # US evening / Brazil (5 a day)
   workflow_dispatch:
     inputs:
       slot:
-        description: "Audience slot (1 = Asia, 9 = spare, 15 = Americas)"
+        description: "Audience slot (UTC hour: 1, 9, 12, 15, 18 or 22)"
         default: "1"
 
 permissions:
@@ -30,7 +42,8 @@ jobs:
     timeout-minutes: 20
     permissions:
       actions: read
-      contents: write # records each Reel's link on the promotion page
+      contents: write # records each Reel's link on the promotion page and a throttle in volume-ramp.json
+      issues: write   # volume_ramp.py opens a volume-throttle issue when Instagram says slow down
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -44,30 +57,36 @@ jobs:
         run: >-
           python3 .github/scripts/social_slot_gate.py
           --workflow reels-daily.yml
-          --slots 1,9,15
+          --slots 1,9,12,15,18,22
       - name: Test
-        run: python3 .github/scripts/test_clip_posts.py -q
+        run: |
+          python3 .github/scripts/test_volume_ramp.py -q
+          python3 .github/scripts/test_clip_posts.py -q
       - name: Post Reel
         if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           SCHEDULE: ${{ github.event.schedule }}
           MANUAL_SLOT: ${{ inputs.slot }}
         run: |
           SLOT="${MANUAL_SLOT:-$(echo "$SCHEDULE" | awk '{print $2}')}"
           python3 .github/scripts/clip_posts.py instagram --slot "$SLOT"
-      - name: Record the post link on the promotion page
+      - name: Record the post link on the promotion page (and any throttle)
         # office.cait518.cc lists every clip post; clip_posts.py wrote the
-        # link to clip-posts.json and refreshed app-improvements.json.
-        if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
+        # link to clip-posts.json and refreshed app-improvements.json. Runs even
+        # when the post failed, so a throttle written to volume-ramp.json lands.
+        if: always() && (github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true')
         continue-on-error: true
         run: |
-          if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi
+          if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json .github/growth/volume-ramp.json)" ]; then echo "nothing posted"; exit 0; fi
           cp .github/growth/clip-posts.json "$RUNNER_TEMP/clip-posts.json"
+          cp .github/growth/volume-ramp.json "$RUNNER_TEMP/volume-ramp.json"
           for i in 1 2 3; do
             git fetch -q origin main && git reset -q --hard origin/main
             python3 .github/scripts/clip_progress.py --merge-log "$RUNNER_TEMP/clip-posts.json"
-            git add .github/growth/clip-posts.json .github/growth/app-improvements.json
+            python3 .github/scripts/volume_ramp.py --merge "$RUNNER_TEMP/volume-ramp.json"
+            git add .github/growth/clip-posts.json .github/growth/app-improvements.json .github/growth/volume-ramp.json
             git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "鉤子片發文紀錄：外宣頁連結更新 [skip ci]"
             if git push -q origin HEAD:main; then exit 0; fi

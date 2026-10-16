@@ -1,0 +1,91 @@
+name: Telegram extra clip slots
+
+# The hook clips Telegram posts outside telegram-daily.yml's 01:00 / 09:00 /
+# 15:00 slots, as .github/growth/volume-ramp.json switches them on stage by
+# stage (3 -> 4 -> 6 a day, planned by the Growth Engine's schedule_posts.py
+# into clips.json). Slot hours (UTC): 12 = Taipei 20:30 (the top revenue per
+# download), 18 = New York 14:30 / LA 11:30, 22 = New York 18:30 / LA 15:30 /
+# São Paulo 19:30.
+# clip_posts.py posts only the clip clips.json plans for the slot, checks the
+# day's allowance first, and never re-posts a clip (clip-posts.json). A "slow
+# down" answer from Telegram drops the channel one stage (volume_ramp.py) and
+# opens a volume-throttle issue. The text posts stay in telegram-daily.yml.
+on:
+  schedule:
+    - cron: "30 12 * * *"
+    - cron: "30 18 * * *"
+    - cron: "30 22 * * *"
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Clip slot (UTC hour: 12, 18 or 22)"
+        default: "12"
+      date:
+        description: "UTC date YYYY-MM-DD of that slot (empty = today)"
+        default: ""
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: telegram-clips-social
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      actions: read
+      contents: write # records each clip's link on the promotion page and a throttle in volume-ramp.json
+      issues: write   # volume_ramp.py opens a volume-throttle issue when Telegram says slow down
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Prevent duplicate UTC slot
+        id: slot
+        if: github.event_name == 'schedule'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 .github/scripts/social_slot_gate.py
+          --workflow telegram-clips.yml
+          --slots 12,18,22
+      - name: Test
+        run: |
+          python3 .github/scripts/test_volume_ramp.py -q
+          python3 .github/scripts/test_clip_posts.py -q
+      - name: Post the slot's hook clip (video + App Store button)
+        if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SCHEDULE: ${{ github.event.schedule }}
+          MANUAL_SLOT: ${{ inputs.slot }}
+          MANUAL_DATE: ${{ inputs.date }}
+        run: |
+          SLOT="${MANUAL_SLOT:-$(echo "$SCHEDULE" | awk '{print $2}')}"
+          python3 .github/scripts/clip_posts.py telegram --slot "$SLOT" ${MANUAL_DATE:+--date "$MANUAL_DATE"}
+      - name: Record the post link on the promotion page (and any throttle)
+        if: always() && (github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true')
+        continue-on-error: true
+        run: |
+          if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json .github/growth/volume-ramp.json)" ]; then echo "nothing posted"; exit 0; fi
+          cp .github/growth/clip-posts.json "$RUNNER_TEMP/clip-posts.json"
+          cp .github/growth/volume-ramp.json "$RUNNER_TEMP/volume-ramp.json"
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 .github/scripts/clip_progress.py --merge-log "$RUNNER_TEMP/clip-posts.json"
+            python3 .github/scripts/volume_ramp.py --merge "$RUNNER_TEMP/volume-ramp.json"
+            git add .github/growth/clip-posts.json .github/growth/app-improvements.json .github/growth/volume-ramp.json
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "鉤子片發文紀錄：外宣頁連結更新 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not record the clip post"; exit 1

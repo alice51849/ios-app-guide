@@ -1,0 +1,114 @@
+name: Instagram feed carousel daily
+
+# One carousel per slot on the Instagram feed, made from the app's live App
+# Store screenshots in the slot market's storefront (store_shot_cards.py):
+# 07:20 UTC = Taipei 15:20 / Tokyo-Seoul 16:20 (the app's Asia locale, zh-Hant
+# first: the top revenue per download), 19:20 UTC = New York 15:20 / LA 12:20
+# (English). Stages from .github/growth/volume-ramp.json "instagram_feed"
+# (1 -> 2 a day); the script checks the day's allowance and the account's
+# 10-posts-a-day cap first. Texts come from clips.json (the vetted hooks,
+# keyline and search phrase), so there is no price, no "free", no model
+# at runtime. The cards go on the feed-cards branch for a public URL, like
+# the utility cards. A "slow down" answer from Instagram drops both the
+# Reels and the feed one stage (volume_ramp.py) and opens a volume-throttle
+# issue.
+on:
+  schedule:
+    - cron: "20 7 * * *"
+    - cron: "20 19 * * *"
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Slot (7 = Asia locale, 19 = English)"
+        default: "7"
+      dry_run:
+        description: "Draw the cards and print the caption, post nothing"
+        type: boolean
+        default: false
+
+permissions:
+  actions: read
+  contents: write # the day's cards go on the feed-cards branch; post links on the page
+
+concurrency:
+  group: ig-feed-daily
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      actions: read
+      contents: write
+      issues: write   # volume_ramp.py opens a volume-throttle issue when Instagram says slow down
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Prevent duplicate UTC slot
+        id: slot
+        if: github.event_name == 'schedule'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/social_slot_gate.py --workflow ig-feed-daily.yml --slots 7,19
+      - name: Draw the cards
+        id: cards
+        if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+          MANUAL_SLOT: ${{ inputs.slot }}
+        run: |
+          sudo apt-get install -y -q fonts-noto-cjk >/dev/null
+          pip install -q pillow
+          python3 .github/scripts/test_volume_ramp.py -q
+          python3 .github/scripts/test_store_shot_cards.py -q
+          SLOT="${MANUAL_SLOT:-$(echo "$SCHEDULE" | awk '{print $2}')}"
+          python3 .github/scripts/store_shot_cards.py make --slot "$SLOT" --out-dir "$RUNNER_TEMP/feed-cards"
+          if [ -f "$RUNNER_TEMP/feed-cards/plan.json" ]; then echo "made=true" >> "$GITHUB_OUTPUT"; else echo "made=false" >> "$GITHUB_OUTPUT"; fi
+      - name: Publish the cards on the feed-cards branch
+        if: steps.cards.outputs.made == 'true'
+        id: card
+        run: |
+          # One folder per slot and day; the branch keeps only the latest set (Instagram fetches at post time).
+          set -e
+          dir="$(date -u +%Y%m%d)-${{ inputs.slot || 'auto' }}-${{ github.run_id }}"
+          work="$RUNNER_TEMP/cards-branch"
+          git init -q "$work" && cd "$work"
+          git checkout -q --orphan feed-cards
+          mkdir -p "$dir" && cp "$RUNNER_TEMP"/feed-cards/*.jpg "$dir/"
+          git add "$dir"
+          git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -q -m "feed cards $dir"
+          git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" feed-cards:feed-cards
+          echo "url=https://raw.githubusercontent.com/${{ github.repository }}/feed-cards/$dir" >> "$GITHUB_OUTPUT"
+      - name: Post the carousel to Instagram
+        if: steps.cards.outputs.made == 'true' && inputs.dry_run != true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          sleep 20  # let raw.githubusercontent.com serve the new files
+          python3 .github/scripts/store_shot_cards.py post --dir "$RUNNER_TEMP/feed-cards" --base-url "${{ steps.card.outputs.url }}"
+      - name: Show the plan (dry run)
+        if: steps.cards.outputs.made == 'true' && inputs.dry_run == true
+        run: cat "$RUNNER_TEMP/feed-cards/plan.json"
+      - name: Record the post link on the promotion page (and any throttle)
+        if: always() && steps.cards.outputs.made == 'true'
+        continue-on-error: true
+        run: |
+          if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json .github/growth/volume-ramp.json)" ]; then echo "nothing posted"; exit 0; fi
+          cp .github/growth/clip-posts.json "$RUNNER_TEMP/clip-posts.json"
+          cp .github/growth/volume-ramp.json "$RUNNER_TEMP/volume-ramp.json"
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 .github/scripts/clip_progress.py --merge-log "$RUNNER_TEMP/clip-posts.json"
+            python3 .github/scripts/volume_ramp.py --merge "$RUNNER_TEMP/volume-ramp.json"
+            git add .github/growth/clip-posts.json .github/growth/app-improvements.json .github/growth/volume-ramp.json
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "IG 圖文輪播發文紀錄：外宣頁連結更新 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not record the carousel post"; exit 1

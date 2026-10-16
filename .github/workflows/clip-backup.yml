@@ -17,15 +17,23 @@ name: Hook clip backup posts
 # slot gate stops a double post, and its cap check keeps the account at 3
 # posts a Taiwan day (threads-autopilot included). Only today's Taiwan slots
 # are filled, so a backup never takes tomorrow's room.
+#
+# Slots follow .github/growth/volume-ramp.json (reels-daily.yml / telegram-clips.yml
+# crons): 1, 9, 12, 15, 18 and 22 UTC; a backup for a slot clips.json does not
+# plan (an earlier ramp stage) finds nothing and posts nothing. The 00:47 run
+# backs up the previous day's 22:xx slot.
 on:
   schedule:
+    - cron: '47 0 * * *'    # after the 22:xx slot (US evening) of the day before
     - cron: '47 3 * * *'    # after the 01:xx slot (Asia morning); Threads 01:40 + 03:00
-    - cron: '47 14 * * *'   # Threads only: the 13:00 evening slot, before Taiwan midnight
+    - cron: '47 11 * * *'   # after the 09:xx slot (Asia evening / Europe morning)
+    - cron: '47 14 * * *'   # after the 12:xx slot (Taipei 20:xx); Threads: the 13:00 evening slot, before Taiwan midnight
     - cron: '47 17 * * *'   # after the 15:xx slot (Americas)
+    - cron: '47 20 * * *'   # after the 18:xx slot (US afternoon)
   workflow_dispatch:
     inputs:
       slot:
-        description: "Clip slot to back up on Telegram/Instagram (1 or 15; empty = Threads check only)"
+        description: "Clip slot to back up on Telegram/Instagram (1, 9, 12, 15, 18 or 22; empty = Threads check only)"
         required: false
         default: ""
       date:
@@ -36,6 +44,7 @@ on:
 permissions:
   contents: write
   actions: write # threads_backfill.py dispatches threads-post.yml
+  issues: write  # volume_ramp.py opens a volume-throttle issue when a platform says slow down
 
 concurrency:
   group: clip-backup
@@ -58,16 +67,21 @@ jobs:
           MANUAL_DATE: ${{ inputs.date }}
         run: |
           # The cron that fired decides the slot and its date, however late it runs.
+          back=0
           case "$SCHEDULE" in
+            "47 0 * * *")  s=22; fired="00:47"; back=1 ;;   # the slot was on the day before
             "47 3 * * *")  s=1;  fired="03:47" ;;
+            "47 11 * * *") s=9;  fired="11:47" ;;
+            "47 14 * * *") s=12; fired="14:47" ;;
             "47 17 * * *") s=15; fired="17:47" ;;
+            "47 20 * * *") s=18; fired="20:47" ;;
             *)             s=;   fired= ;;
           esac
           if [ -n "$fired" ]; then
-            d=$(date -u +%F)
-            if [ "$(date -u +%H:%M)" \< "$fired" ]; then d=$(date -u -d yesterday +%F); fi
+            d=$(date -u -d "-$back day" +%F)
+            if [ "$(date -u +%H:%M)" \< "$fired" ]; then d=$(date -u -d "$d -1 day" +%F); fi
           else
-            case "$MANUAL_SLOT" in 1|15) s=$MANUAL_SLOT ;; "") s= ;; *) echo "::error::slot must be 1 or 15"; exit 1 ;; esac
+            case "$MANUAL_SLOT" in 1|9|12|15|18|22) s=$MANUAL_SLOT ;; "") s= ;; *) echo "::error::slot must be 1, 9, 12, 15, 18 or 22"; exit 1 ;; esac
             d=${MANUAL_DATE:-$(date -u +%F)}
             case "$d" in [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]) ;; *) echo "::error::date must be YYYY-MM-DD"; exit 1 ;; esac
             date -u -d "$d" +%F >/dev/null 2>&1 || { echo "::error::bad date $d"; exit 1; }
@@ -76,11 +90,14 @@ jobs:
           echo "slot=${s:-none} date=$d"
       - name: Test
         if: steps.slot.outputs.slot != ''
-        run: python3 .github/scripts/test_clip_posts.py -q
+        run: |
+          python3 .github/scripts/test_volume_ramp.py -q
+          python3 .github/scripts/test_clip_posts.py -q
       - name: Telegram
         if: steps.slot.outputs.slot != ''
         continue-on-error: true
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python3 .github/scripts/clip_posts.py telegram --slot "${{ steps.slot.outputs.slot }}" --date "${{ steps.slot.outputs.date }}"
@@ -88,6 +105,7 @@ jobs:
         if: steps.slot.outputs.slot != ''
         continue-on-error: true
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: python3 .github/scripts/clip_posts.py instagram --slot "${{ steps.slot.outputs.slot }}" --date "${{ steps.slot.outputs.date }}"
       - name: Threads
@@ -103,15 +121,17 @@ jobs:
         run: |
           python3 .github/scripts/test_threads_backfill.py -q
           python3 .github/scripts/threads_backfill.py
-      - name: Record the post links on the promotion page
+      - name: Record the post links on the promotion page (and any throttle)
         if: steps.slot.outputs.slot != ''
         run: |
-          if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi
+          if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json .github/growth/volume-ramp.json)" ]; then echo "nothing posted"; exit 0; fi
           cp .github/growth/clip-posts.json "$RUNNER_TEMP/clip-posts.json"
+          cp .github/growth/volume-ramp.json "$RUNNER_TEMP/volume-ramp.json"
           for i in 1 2 3; do
             git fetch -q origin main && git reset -q --hard origin/main
             python3 .github/scripts/clip_progress.py --merge-log "$RUNNER_TEMP/clip-posts.json"
-            git add .github/growth/clip-posts.json .github/growth/app-improvements.json
+            python3 .github/scripts/volume_ramp.py --merge "$RUNNER_TEMP/volume-ramp.json"
+            git add .github/growth/clip-posts.json .github/growth/app-improvements.json .github/growth/volume-ramp.json
             git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "鉤子片補發紀錄：外宣頁連結更新 [skip ci]"
             if git push -q origin HEAD:main; then exit 0; fi

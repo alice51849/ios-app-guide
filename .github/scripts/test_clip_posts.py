@@ -112,11 +112,47 @@ class ClipPostsTest(unittest.TestCase):
                 mock.patch.object(C.post_qa, "store_lookup", return_value={"trackName": "a name", "description": "", "price": 0}), \
                 mock.patch.object(C.post_qa, "url_status", return_value=200), \
                 mock.patch.object(C, "post_telegram", return_value={"id": 1, "link": None}) as post, \
+                mock.patch.object(C, "posted_log", return_value=[]), \
                 mock.patch.object(P, "record_post") as rec, mock.patch.object(sys, "argv", ["x", "telegram", "--slot", "1",
                                                                                            "--date", "2026-10-15"]):
             C.main()
         variant = post.call_args[0][1]
         self.assertEqual(rec.call_args.kwargs["variant"], variant["id"])
+
+    def test_the_days_ramp_allowance_stops_a_slot_and_a_slow_down_answer_throttles(self):
+        c = clip("a", "en")
+        data = {"clips": {"a/en": c}, "schedule": [{"date": "2026-10-20", "slot": 15, "channel": "instagram", "clip": "a/en"}]}
+        ramp = {"schema": C.volume_ramp.SCHEMA, "stage_days": 3, "hold_days": 7,
+                "channels": {"instagram": {"start": "2026-10-17", "stages": [2, 3], "slots": [1, 15, 12]}}}
+        log = [{"channel": "instagram", "clip": f"x{i}/en", "posted_at": "2026-10-20T01:21:00Z"} for i in range(3)]
+        argv = ["x", "instagram", "--slot", "15", "--date", "2026-10-20"]
+        with mock.patch.object(C, "load", return_value=data), mock.patch.object(C.CLIPS.__class__, "exists", return_value=True), \
+                mock.patch.object(C.volume_ramp, "load", return_value=ramp), mock.patch.object(C, "posted_log", return_value=log), \
+                mock.patch.object(C, "post_instagram") as post, mock.patch.object(sys, "argv", argv), mock.patch("sys.stdout"):
+            self.assertEqual(C.main(), 0)
+        post.assert_not_called()  # 3 of today's 3 already out: the slot is skipped, nothing fails
+        with mock.patch.object(C, "load", return_value=data), mock.patch.object(C.CLIPS.__class__, "exists", return_value=True), \
+                mock.patch.object(C.volume_ramp, "load", return_value=ramp), mock.patch.object(C, "posted_log", return_value=log[:1]), \
+                mock.patch.object(C.post_qa, "store_lookup", return_value={"trackName": "a name", "description": "", "price": 0}), \
+                mock.patch.object(C.post_qa, "url_status", return_value=200), \
+                mock.patch.object(C, "post_instagram", side_effect=RuntimeError('HTTP 400: {"error":{"code":4,"message":"(#4) Application request limit reached"}}')), \
+                mock.patch.object(C.volume_ramp, "handle_error") as handle, mock.patch.object(sys, "argv", argv), mock.patch("sys.stdout"):
+            with self.assertRaises(RuntimeError):
+                C.main()
+        self.assertEqual(handle.call_args[0][0], "instagram")
+        self.assertTrue(C.volume_ramp.is_throttle_error(handle.call_args[0][1]))
+
+    def test_http_errors_carry_the_api_reason_not_the_token(self):
+        import io
+        import urllib.error
+        err = urllib.error.HTTPError("https://graph.instagram.com/x?access_token=SECRET", 429, "Too Many Requests", {},
+                                     io.BytesIO(b'{"error":{"message":"(#4) Application request limit reached","code":4}}'))
+        with mock.patch.object(C.urllib.request, "urlopen", side_effect=err):
+            with self.assertRaises(RuntimeError) as cm:
+                C._get("https://graph.instagram.com/x?access_token=SECRET")
+        self.assertIn("HTTP 429", str(cm.exception))
+        self.assertIn("request limit", str(cm.exception))
+        self.assertNotIn("SECRET", str(cm.exception))
 
     def test_reels_wait_for_the_token(self):
         with mock.patch.dict(os.environ, {}, clear=True):
@@ -254,6 +290,7 @@ class PostQaTest(unittest.TestCase):
         data = {"clips": {"u/en": bad}, "schedule": [{"date": "2026-10-15", "slot": 1, "channel": "telegram", "clip": "u/en"}]}
         with mock.patch.object(C, "load", return_value=data), mock.patch.object(C.CLIPS.__class__, "exists", return_value=True), \
                 mock.patch.object(C, "post_telegram") as post, mock.patch.object(P, "record_post") as rec, \
+                mock.patch.object(C, "posted_log", return_value=[]), \
                 mock.patch.object(sys, "argv", ["x", "telegram", "--slot", "1", "--date", "2026-10-15"]), \
                 mock.patch("sys.stdout"):
             self.assertEqual(C.main(), 1)

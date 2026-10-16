@@ -8,9 +8,14 @@ hook line and the App Store search term shown on the end card.
 
 clips.json carries a pre-planned schedule: every entry names the date, the
 slot and the channel of exactly one clip. A clip is scheduled at most once per
-channel, so nothing is ever re-posted, and the pacing (Instagram 1 a day for
-the first two weeks, then at most 2; Telegram 1 a day) is decided when the
-schedule is written, not here. A slot without an entry posts nothing.
+channel, so nothing is ever re-posted, and the pacing is decided when the
+schedule is written, not here. A slot without an entry posts nothing. The
+daily volume climbs by .github/growth/volume-ramp.json (volume_ramp.py): the
+planner adds slots stage by stage, and this script checks the day's allowance
+right before posting, so a plan written before an automatic throttle never
+posts more than the ramp allows today. A rate-limit, spam or action-block
+answer from a platform drops that channel one stage (volume_ramp.handle_error)
+and opens a volume-throttle GitHub issue.
 
 Captions are search-first (search_caption.py): the problem line, benefit and
 keyword line from clips.json, then a few keyword hashtags; the hook variant
@@ -28,6 +33,7 @@ import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -35,6 +41,7 @@ from pathlib import Path
 import clip_progress
 import post_qa
 import search_caption as SC
+import volume_ramp
 from social_post_common import play_store_url
 
 HERE = Path(__file__).resolve().parent
@@ -72,14 +79,18 @@ def load(path=CLIPS):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def posted_log():
+    """Every logged post (clip-posts.json)."""
+    path = CLIPS.parent / "clip-posts.json"
+    if not path.exists():
+        return []
+    return json.loads(path.read_text(encoding="utf-8")).get("posts", [])
+
+
 def already_posted(channel):
     """Clip keys already posted on this channel (clip-posts.json), so a backup
     run (clip-backup.yml) that fills a slot GitHub dropped never re-posts."""
-    path = CLIPS.parent / "clip-posts.json"
-    if not path.exists():
-        return set()
-    posts = json.loads(path.read_text(encoding="utf-8")).get("posts", [])
-    return {p["clip"] for p in posts if p.get("channel") == channel}
+    return {p["clip"] for p in posted_log() if p.get("channel") == channel}
 
 
 def scheduled(data, day, slot, channel):
@@ -155,17 +166,24 @@ def caption(clip, channel, variant=None):
     return "\n".join(lines)
 
 
+def _open(req, timeout):
+    """The JSON answer; an HTTP error carries the API's reason (never the token) so a rate limit or
+    block is recognisable (volume_ramp.is_throttle_error)."""
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read())
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode(errors="replace")[:300]
+        raise RuntimeError(f"HTTP {exc.code}: {body}") from None
+
+
 def _post(url, fields, timeout=60):
     data = urllib.parse.urlencode(fields).encode()
-    req = urllib.request.Request(url, data=data, headers={"User-Agent": "lumi-clip-poster/1.0"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.loads(r.read())
+    return _open(urllib.request.Request(url, data=data, headers={"User-Agent": "lumi-clip-poster/1.0"}), timeout)
 
 
 def _get(url, timeout=60):
-    req = urllib.request.Request(url, headers={"User-Agent": "lumi-clip-poster/1.0"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.loads(r.read())
+    return _open(urllib.request.Request(url, headers={"User-Agent": "lumi-clip-poster/1.0"}), timeout)
 
 
 def post_telegram(clip, variant=None):
@@ -315,6 +333,10 @@ def main():
     if not clip:
         print(f"clip: nothing scheduled for {channel} on {day} slot {args.slot}")
         return 0
+    allowed, done, left = volume_ramp.room(volume_ramp.load(), channel, day, posted_log())
+    if left is not None and left <= 0 and args.channel != "preview":
+        print(f"clip: {channel} already made {done} of today's {allowed} clip posts (volume-ramp.json); slot skipped")
+        return 0
     variant, problems = qa_variant(clip, channel, SC.choose(clip, channel, day), online=args.channel != "preview")
     if variant is None:
         post_qa.gate(problems, f"clip {clip['app']}/{clip['locale']} {channel}")
@@ -323,7 +345,13 @@ def main():
     if args.channel == "preview":
         print(caption(clip, "instagram", variant))
         return 0
-    posted = {"telegram": post_telegram, "instagram": post_instagram, "threads": post_threads}[args.channel](clip, variant)
+    try:
+        posted = {"telegram": post_telegram, "instagram": post_instagram, "threads": post_threads}[args.channel](clip, variant)
+    except Exception as exc:
+        # A "slow down" answer drops the channel one ramp stage (committed by the workflow) and opens an issue;
+        # any failure still fails the step so it shows red.
+        volume_ramp.handle_error(channel, exc, day=day)
+        raise
     print(f"clip: posted {posted}")
     if posted:
         # The promotion page (office.cait518.cc) lists every post's link; the variant id feeds the

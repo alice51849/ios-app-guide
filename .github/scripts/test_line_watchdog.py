@@ -488,8 +488,11 @@ class OtherSlotLineTests(unittest.TestCase):
         self.assertTrue(rows["clip-backup.yml 14:47Z"]["fresh"])
 
     def test_clip_backup_missed_threads_evening_backup_is_not_rerun_next_taiwan_day(self):
-        runs = [slot_run("2026-10-15T17:49:00Z", "Hook clip backup posts", run_id=3),
+        runs = [slot_run("2026-10-15T20:49:00Z", "Hook clip backup posts", run_id=6),
+                slot_run("2026-10-15T17:49:00Z", "Hook clip backup posts", run_id=3),
+                slot_run("2026-10-15T11:49:00Z", "Hook clip backup posts", run_id=5),
                 slot_run("2026-10-15T03:49:00Z", "Hook clip backup posts", run_id=2),
+                slot_run("2026-10-15T00:49:00Z", "Hook clip backup posts", run_id=4),
                 slot_run("2026-10-14T14:49:00Z", "Hook clip backup posts", run_id=1)]
         rows, gh = self.judge("clip-backup.yml", runs, at("2026-10-16T00:41:00Z"))
         self.assertFalse(rows["clip-backup.yml 14:47Z"]["fresh"])
@@ -530,7 +533,7 @@ class GuideProfileSlotRunTests(unittest.TestCase):
         lines = {row["line"].split(" ")[0] for row in slot_rows}
         self.assertEqual(set(GUIDE_SLOTS), lines)
         reels = [row for row in slot_rows if row["line"].startswith("reels-daily.yml")]
-        self.assertEqual(3, len(reels))
+        self.assertEqual(len(GUIDE_SLOTS["reels-daily.yml"]["slots"]), len(reels))  # one row per ramp slot
         self.assertTrue(all(not row["fresh"] and row["action"] == "monitor_only" for row in reels))
         self.assertNotIn("reels-daily.yml", gh.dispatched())
 

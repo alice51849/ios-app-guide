@@ -30,7 +30,8 @@ PERF_HEADING = "## 成效排行"
 PAGE_TITLE = "# 外宣成效"
 TW = dt.timezone(dt.timedelta(hours=8))
 # Cron slots (UTC hour) of the posting workflows.
-SLOT_TIME = {"telegram": {1: "01:00", 15: "15:00"}, "instagram": {1: "01:20", 9: "09:20", 15: "15:20"},
+SLOT_TIME = {"telegram": {1: "01:00", 9: "09:00", 12: "12:30", 15: "15:00", 18: "18:30", 22: "22:30"},
+             "instagram": {1: "01:20", 9: "09:20", 12: "12:20", 15: "15:20", 18: "18:20", 22: "22:20"},
              "threads": {1: "01:40", 15: "15:40"}}
 CHANNEL_NAME = {"telegram": "Telegram", "instagram": "Instagram", "threads": "Threads"}
 # Daily utility cards share the post log under this key prefix.
@@ -48,10 +49,11 @@ MANUAL_CHANNELS = [
 # a repo variable set to "off" still stops them). The Mac's YouTube uploads come in
 # through youtube_links.py (clip-replan.yml), so their links show per clip.
 # Mastodon stays locked (account suspended, stop-loss).
-SERVED_ELSEWHERE = {"bluesky": "自動（threads-autopilot，精選每天 ≤5 則）", "youtube": "自動（Mac，每天 ≤2 支）"}
+SERVED_ELSEWHERE = {"bluesky": "自動（threads-autopilot，媒體每天 2→5 則爬坡）", "youtube": "自動（Mac，每天 2→4 支爬坡）"}
 SERVED_ROWS = [("Mastodon", "停權冷卻（鎖定）")]
 # Platforms posted by social_extra.py (social-extra.yml): "未設定" until the first post.
-EXTRA_CHANNELS = {"facebook": ("Facebook", "FB"), "bluesky": ("Bluesky", "Bs"), "youtube": ("YouTube Shorts", "YT"),
+EXTRA_CHANNELS = {"instagram_feed": ("Instagram 圖文輪播", "IGf"),
+                  "facebook": ("Facebook", "FB"), "bluesky": ("Bluesky", "Bs"), "youtube": ("YouTube Shorts", "YT"),
                   "pinterest": ("Pinterest", "Pin"), "tumblr": ("Tumblr", "Tb"), "naver": ("Naver Blog", "Nv"),
                   "plurk": ("Plurk", "Pk"), "dailymotion": ("Dailymotion", "DM")}
 

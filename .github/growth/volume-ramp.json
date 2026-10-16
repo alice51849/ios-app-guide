@@ -1,0 +1,85 @@
+{
+  "schema": "lumi.volume-ramp/v1",
+  "note": "Daily posting volume per channel, climbing one stage every stage_days from start (owner 2026-10-16: IG / the other networks post far too little). Read by 00_GrowthEngine shorts/scripts/schedule_posts.py (how many clip slots a day to plan, which slots first) and by .github/scripts/clip_posts.py / store_shot_cards.py (the day's allowance at post time). Auto-throttle (volume_ramp.py): a rate-limit, spam or action-block answer from a platform drops that channel one stage (ceiling) for hold_days, records the event here and opens a volume-throttle GitHub issue; after the hold the climb resumes one stage per stage_days from the ceiling. Threads stays at the owner's 3-a-day cap (clips: the 01:40 slot plus the 13:00 fallback) and is never raised. Mastodon posts nothing (account locked).",
+  "stage_days": 3,
+  "hold_days": 7,
+  "channels": {
+    "instagram": {
+      "kind": "reels",
+      "start": "2026-10-17",
+      "stages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "slots": [
+        1,
+        9,
+        15,
+        12,
+        22,
+        18
+      ],
+      "slot_note": "UTC hours of reels-daily.yml (minute 20): 1 = TW/JP/KR morning, 9 = Europe morning / TW 17:20 / JP-KR 18:20 (coverage audit 2026-10-16: the third slot every listing needed), 15 = US East 11:20 / Europe afternoon, 12 = TW 20:20 / JP-KR 21:20 (top revenue per download: TW), 22 = US East 18:20 / West 15:20 / BR 19:20, 18 = US East 14:20 / West 11:20",
+      "ceiling": null,
+      "ceiling_until": null,
+      "events": []
+    },
+    "instagram_feed": {
+      "kind": "carousel",
+      "start": "2026-10-17",
+      "stages": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "slots": [
+        7,
+        19
+      ],
+      "slot_note": "ig-feed-daily.yml (minute 20): 7 = TW 15:20 / JP-KR 16:20 (Asia-locale store-screenshot carousel), 19 = US East 15:20 / West 12:20 (English)",
+      "ceiling": null,
+      "ceiling_until": null,
+      "events": []
+    },
+    "telegram": {
+      "kind": "clips",
+      "start": "2026-10-17",
+      "stages": [
+        3,
+        4,
+        6
+      ],
+      "slots": [
+        1,
+        9,
+        15,
+        12,
+        22,
+        18
+      ],
+      "slot_note": "1, 9 and 15 = telegram-daily.yml (minute 0, with the day's text post); 12, 18, 22 = telegram-clips.yml (minute 30)",
+      "ceiling": null,
+      "ceiling_until": null,
+      "events": []
+    },
+    "threads": {
+      "kind": "clips",
+      "start": "2026-10-15",
+      "stages": [
+        2
+      ],
+      "slots": [
+        1,
+        15
+      ],
+      "slot_note": "owner rule: at most 3 posts a day on the account (CLAUDE.md); slot 1 = the 01:40 clip, slot 15 = the clip the 13:00 run posts when no series post is due. Never raised.",
+      "ceiling": null,
+      "ceiling_until": null,
+      "events": []
+    }
+  }
+}

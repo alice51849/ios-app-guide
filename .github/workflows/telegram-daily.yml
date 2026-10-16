@@ -20,6 +20,8 @@ jobs:
     if: github.event_name == 'schedule' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    outputs:
+      should_post: ${{ steps.slot.outputs.should_post }}
     permissions:
       actions: read
       contents: write # telegram-native-ledger 孤立資料分支的 CAS 寫入，與鉤子片發文紀錄。
@@ -94,3 +96,38 @@ jobs:
           include-hidden-files: true
           if-no-files-found: ignore
           retention-days: 90
+
+  catalog:
+    # 每日全 App 目錄(portfolio_daily.py):全部上架 App 依類別列出，每款一條
+    # 帶 ct=soc_tg_digest 的 App Store 連結，超過長度自動拆成多則。
+    # 每個時段都試一次，但同一個 UTC 日只發一次：portfolio_daily 先查
+    # telegram-daily 的 catalog job 與 portfolio-daily 的 telegram job 今天
+    # 是否已成功，成功過就直接略過。漏一班由下一個時段補上。
+    needs: post
+    if: >-
+      always()
+      && github.event_name == 'schedule'
+      && github.ref == 'refs/heads/main'
+      && needs.post.outputs.should_post == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      # 與 portfolio-daily 的 telegram job 共用，兩邊不會同時判斷「今天還沒發」。
+      group: telegram-portfolio-digest
+      cancel-in-progress: false
+    permissions:
+      actions: read
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Verify social posting regressions
+        run: python3 .github/scripts/test_social_posting.py -q -b
+      - name: Post today's all-App catalog (once per UTC day)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/portfolio_daily.py --platform telegram

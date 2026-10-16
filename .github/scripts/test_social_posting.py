@@ -1502,6 +1502,167 @@ class DailyPortfolioCoverageTests(unittest.TestCase):
         self.assertIn("fetch-depth: 0", checkout)
 
 
+class TelegramDailyCatalogTests(unittest.TestCase):
+    """The all-App catalog goes out every day, once, from either workflow."""
+
+    PAGE_GATED_KEYS = ("unblurry", "hourstaglite", "savetag")
+
+    @classmethod
+    def setUpClass(cls):
+        cls.apps = portfolio_daily.load_public_apps()
+
+    @staticmethod
+    def _workflow(name):
+        path = os.path.join(
+            portfolio_daily.REPO_ROOT, ".github", "workflows", name
+        )
+        with open(path, encoding="utf-8") as workflow_file:
+            return workflow_file.read()
+
+    @staticmethod
+    def _fetcher(portfolio_jobs, telegram_jobs):
+        def fetcher(url, _token):
+            if "/workflows/portfolio-daily.yml/" in url:
+                return {"workflow_runs": [
+                    {"id": 100, "created_at": "2026-10-16T04:30:00Z"},
+                ]}
+            if "/workflows/telegram-daily.yml/" in url:
+                return {"workflow_runs": [
+                    {"id": 300, "created_at": "2026-10-16T01:00:00Z"},
+                    {"id": 400, "created_at": "2026-10-16T09:00:00Z"},
+                ]}
+            if "/runs/100/jobs" in url:
+                return {"jobs": portfolio_jobs}
+            if "/runs/300/jobs" in url:
+                return {"jobs": telegram_jobs}
+            raise AssertionError(f"unexpected URL: {url}")
+
+        return fetcher
+
+    def _published(self, portfolio_jobs, telegram_jobs, platform="telegram"):
+        return portfolio_daily.already_published_today(
+            platform,
+            now=dt.datetime(2026, 10, 16, 9, 5, tzinfo=dt.timezone.utc),
+            repository="alice51849/ios-app-guide",
+            current_run_id="400",
+            token="test-token",
+            fetcher=self._fetcher(portfolio_jobs, telegram_jobs),
+        )
+
+    def test_catalog_slot_success_today_prevents_a_second_catalog(self):
+        done = {
+            "name": "catalog", "conclusion": "success",
+            "completed_at": "2026-10-16T01:04:00Z",
+        }
+        post_only = {
+            "name": "post", "conclusion": "success",
+            "completed_at": "2026-10-16T01:03:00Z",
+        }
+        self.assertTrue(self._published([], [post_only, done]))
+        # The single-App post job of the slot does not count as the catalog.
+        self.assertFalse(self._published([], [post_only]))
+        # A failed catalog leaves the day open for the next slot.
+        self.assertFalse(self._published([], [
+            post_only, {**done, "conclusion": "failure"},
+        ]))
+        # Yesterday's catalog does not cover today.
+        self.assertFalse(self._published([], [
+            {**done, "completed_at": "2026-10-15T15:04:00Z"},
+        ]))
+        # portfolio-daily's own job still counts (no double post on the day of
+        # the switch-over), and Threads never looks at the Telegram catalog.
+        self.assertTrue(self._published([{
+            "name": "telegram", "conclusion": "success",
+            "completed_at": "2026-10-16T04:33:00Z",
+        }], []))
+        self.assertFalse(self._published([], [done], platform="threads"))
+
+    def test_catalog_has_its_own_tracking_token_on_every_link(self):
+        campaign = portfolio_daily.PLATFORM_CAMPAIGNS["telegram"]
+        self.assertEqual("soc_tg_digest", campaign)
+        self.assertNotEqual("soc_tg_guide", campaign)
+        messages = portfolio_daily.telegram_messages(
+            self.apps, today=dt.date(2026, 10, 16)
+        )
+        portfolio_daily.validate_coverage("telegram", self.apps, messages)
+        combined = "\n".join(message.text for message in messages)
+        links = [
+            line.strip() for line in combined.splitlines()
+            if line.strip().startswith("https://apps.apple.com/app/id")
+        ]
+        self.assertEqual(len(self.apps), len(links))
+        self.assertTrue(all("ct=soc_tg_digest" in link for link in links))
+        self.assertNotIn("ct=soc_tg_guide", combined)
+
+    def test_catalog_covers_every_live_app_once_split_under_telegram_limit(self):
+        messages = portfolio_daily.telegram_messages(
+            self.apps, today=dt.date(2026, 10, 16)
+        )
+        self.assertGreaterEqual(len(messages), 1)
+        self.assertTrue(all(
+            len(message.text) <= portfolio_daily.TELEGRAM_LIMIT < 4096
+            for message in messages
+        ))
+        listed = [app_id for message in messages for app_id in message.app_ids]
+        self.assertEqual(sorted(app.app_id for app in self.apps), sorted(listed))
+        self.assertNotIn("lensafe", {app.key for app in self.apps})
+
+    def test_page_gated_apps_stay_in_the_catalog_but_never_lead_it(self):
+        by_key = {app.key: app for app in self.apps}
+        gated = frozenset(
+            by_key[key].app_id for key in self.PAGE_GATED_KEYS if key in by_key
+        )
+        self.assertTrue(gated)
+        messages = portfolio_daily.telegram_messages(
+            self.apps, today=dt.date(2026, 10, 16), skip_spotlight_apps=gated,
+        )
+        portfolio_daily.validate_coverage("telegram", self.apps, messages)
+        listed = {app_id for message in messages for app_id in message.app_ids}
+        self.assertLessEqual(gated, listed)
+        spotlight = messages[0].text.split("🌏", 1)[0]
+        for key in self.PAGE_GATED_KEYS:
+            if key in by_key:
+                self.assertNotIn(f"今日焦點｜{by_key[key].name}\n", spotlight)
+
+    def test_catalog_list_lines_have_no_price_free_or_superlative(self):
+        messages = portfolio_daily.telegram_messages(
+            self.apps, today=dt.date(2026, 10, 16)
+        )
+        entries = [
+            line for message in messages for line in message.text.splitlines()
+            if line.startswith("• ")
+        ]
+        self.assertEqual(len(self.apps), len(entries))
+        for line in entries:
+            with self.subTest(line=line):
+                for banned in ("$", "NT", "元", "免費", "Free", "free", "最", "best", "#1", "No.1"):
+                    self.assertNotIn(banned, line)
+
+    def test_telegram_daily_runs_the_catalog_after_every_slot(self):
+        text = self._workflow("telegram-daily.yml")
+        self.assertIn(
+            "should_post: ${{ steps.slot.outputs.should_post }}", text
+        )
+        catalog = text.split("\n  catalog:\n", 1)[1]
+        self.assertIn("needs: post", catalog)
+        self.assertIn("always()", catalog)
+        self.assertIn("needs.post.outputs.should_post == 'true'", catalog)
+        self.assertIn("github.event_name == 'schedule'", catalog)
+        self.assertIn("group: telegram-portfolio-digest", catalog)
+        self.assertIn("cancel-in-progress: false", catalog)
+        self.assertIn("actions: read", catalog)
+        self.assertIn("GITHUB_TOKEN: ${{ github.token }}", catalog)
+        self.assertLess(
+            catalog.index("test_social_posting.py -q -b"),
+            catalog.index("portfolio_daily.py --platform telegram"),
+        )
+        self.assertNotIn("--dry-run", catalog)
+        self.assertNotIn("continue-on-error", catalog)
+        portfolio = self._workflow("portfolio-daily.yml")
+        telegram_job = portfolio.split("\n  telegram:\n", 1)[1].split("\n  threads:\n", 1)[0]
+        self.assertIn("group: telegram-portfolio-digest", telegram_job)
+
+
 class DevToGateTests(unittest.TestCase):
     POOL = (
         {"title": "First", "body": "one"},

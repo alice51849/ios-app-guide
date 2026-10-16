@@ -43,6 +43,10 @@ jobs:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    concurrency:
+      # 與 telegram-daily 的 catalog job 共用：同一天的全 App 目錄只發一次。
+      group: telegram-portfolio-digest
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6

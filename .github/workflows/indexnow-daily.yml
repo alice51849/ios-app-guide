@@ -91,6 +91,29 @@ jobs:
             --receipt-file "$receipt_file" \
             --content-state "$content_state" \
             "${mode[@]}"
+      - name: Submit every App homepage (once per UTC day)
+        # 增量只送內容有變的頁、全量一個月一次；每款 App 的主頁(50 語系 +
+        # 指南頁,約 2,700 個網址,遠低於 IndexNow 單批 10,000)改成每天送一次。
+        # 同一 UTC 日只送一次(state 隨 cache 保存),上一步剛送過的不重送。
+        # 失敗不擋上一步的 durable state 保存;下一個排程會補送。
+        continue-on-error: true
+        run: |
+          script=".github/scripts/indexnow_app_pages.py"
+          if [ ! -f "$script" ]; then
+            echo "::notice::deployed tree has no $script yet; skipped"
+            exit 0
+          fi
+          python3 .github/scripts/test_indexnow_app_pages.py
+          keyfile="$(find . -maxdepth 1 -type f -name '*.txt' \
+            | grep -E '/[a-f0-9]{32}\.txt$' | head -1)"
+          test -n "$keyfile"
+          python3 "$script" \
+            --pages-dir . \
+            --site https://open.cait518.cc/ios-app-guide \
+            --key-file "$keyfile" \
+            --key-location "https://open.cait518.cc/ios-app-guide/$(basename "$keyfile")" \
+            --state-file ".indexnow-state/app-pages-daily.json" \
+            --incremental-receipt ".indexnow-state/accepted-receipt.json"
       - name: Preserve IndexNow outcome (held is not accepted or indexed)
         if: success()
         uses: actions/upload-artifact@v4

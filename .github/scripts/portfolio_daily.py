@@ -47,8 +47,22 @@ TELEGRAM_LANGUAGE_PITCH = (
 THREADS_LIMIT = threads_post.MAX_POST_CHARS
 THREADS_LINK_LIMIT = 5
 PORTFOLIO_WORKFLOW = "portfolio-daily.yml"
+# The Telegram digest also runs as the `catalog` job of every telegram-daily
+# slot (01/09/15 UTC), so a missed or failed run is caught up the same day.
+# A successful job of either workflow today means today's digest is out.
+TELEGRAM_DAILY_WORKFLOW = "telegram-daily.yml"
+TELEGRAM_CATALOG_JOB = "catalog"
+DIGEST_JOBS = {
+    "telegram": (
+        (PORTFOLIO_WORKFLOW, "telegram"),
+        (TELEGRAM_DAILY_WORKFLOW, TELEGRAM_CATALOG_JOB),
+    ),
+    "threads": ((PORTFOLIO_WORKFLOW, "threads"),),
+}
+# The digest has its own token so its clicks/downloads are not mixed with the
+# single-App Telegram posts (soc_tg_guide) in App Store Connect Campaigns.
 PLATFORM_CAMPAIGNS = {
-    "telegram": "soc_tg_guide",
+    "telegram": "soc_tg_digest",
     "threads": "soc_th_guide",
 }
 
@@ -316,59 +330,64 @@ def already_published_today(
         raise CoverageError(f"Invalid GITHUB_REPOSITORY: {repository!r}")
 
     base = f"https://api.github.com/repos/{repository}"
-    query = urllib.parse.urlencode(
-        {"status": "completed", "per_page": "30"}
-    )
-    history = fetcher(
-        f"{base}/actions/workflows/{PORTFOLIO_WORKFLOW}/runs?{query}",
-        token,
-    )
-    runs = history.get("workflow_runs") if isinstance(history, dict) else None
-    if not isinstance(runs, list):
-        raise CoverageError("GitHub Actions history has no workflow_runs")
-    for run in runs:
-        if not isinstance(run, dict) or str(run.get("id")) == str(
-            current_run_id
-        ):
-            continue
-        created = _github_time(run.get("created_at"))
-        if created and created.date() < today - dt.timedelta(days=1):
-            continue
-        run_id = run.get("id")
-        if not isinstance(run_id, int):
-            continue
-        jobs_payload = fetcher(
-            f"{base}/actions/runs/{run_id}/jobs?filter=all&per_page=100",
+    # No status filter: a run still finishing another job (e.g. the market
+    # SLA check) may already hold today's successful digest job.
+    query = urllib.parse.urlencode({"per_page": "30"})
+    jobs_by_workflow = collections.defaultdict(set)
+    for workflow, job_name in DIGEST_JOBS.get(
+        platform, ((PORTFOLIO_WORKFLOW, platform),)
+    ):
+        jobs_by_workflow[workflow].add(job_name.casefold())
+    for workflow, job_names in jobs_by_workflow.items():
+        history = fetcher(
+            f"{base}/actions/workflows/{workflow}/runs?{query}",
             token,
         )
-        jobs = (
-            jobs_payload.get("jobs")
-            if isinstance(jobs_payload, dict)
-            else None
-        )
-        if not isinstance(jobs, list):
-            raise CoverageError(
-                f"GitHub Actions run {run_id} has no jobs array"
-            )
-        for job in jobs:
-            if (
-                isinstance(job, dict)
-                and str(job.get("name") or "").casefold()
-                == platform.casefold()
-                and job.get("conclusion") == "success"
+        runs = history.get("workflow_runs") if isinstance(history, dict) else None
+        if not isinstance(runs, list):
+            raise CoverageError("GitHub Actions history has no workflow_runs")
+        for run in runs:
+            if not isinstance(run, dict) or str(run.get("id")) == str(
+                current_run_id
             ):
-                completed = _github_time(job.get("completed_at"))
-                if completed is None:
-                    raise CoverageError(
-                        f"Successful {platform} job in run {run_id} "
-                        "has no valid completed_at"
-                    )
-                if completed.date() == today:
-                    print(
-                        f"{platform} portfolio already published today "
-                        f"by run {run_id}; skipping"
-                    )
-                    return True
+                continue
+            created = _github_time(run.get("created_at"))
+            if created and created.date() < today - dt.timedelta(days=1):
+                continue
+            run_id = run.get("id")
+            if not isinstance(run_id, int):
+                continue
+            jobs_payload = fetcher(
+                f"{base}/actions/runs/{run_id}/jobs?filter=all&per_page=100",
+                token,
+            )
+            jobs = (
+                jobs_payload.get("jobs")
+                if isinstance(jobs_payload, dict)
+                else None
+            )
+            if not isinstance(jobs, list):
+                raise CoverageError(
+                    f"GitHub Actions run {run_id} has no jobs array"
+                )
+            for job in jobs:
+                if (
+                    isinstance(job, dict)
+                    and str(job.get("name") or "").casefold() in job_names
+                    and job.get("conclusion") == "success"
+                ):
+                    completed = _github_time(job.get("completed_at"))
+                    if completed is None:
+                        raise CoverageError(
+                            f"Successful {platform} job in run {run_id} "
+                            "has no valid completed_at"
+                        )
+                    if completed.date() == today:
+                        print(
+                            f"{platform} portfolio already published today "
+                            f"by {workflow} run {run_id}; skipping"
+                        )
+                        return True
     return False
 
 

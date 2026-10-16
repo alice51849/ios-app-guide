@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Tests for download_links.py (no network): every promo text carries the app's direct download link."""
+import contextlib
+import io
 import json
 import os
 import sys
@@ -124,7 +126,10 @@ class DownloadLinksTest(unittest.TestCase):
     def test_refusal_is_printed_and_logged(self):
         with tempfile.TemporaryDirectory() as tmp:
             log = Path(tmp) / "guard.jsonl"
-            self.assertFalse(D.refuse("a/en instagram", ["no link"], log_path=str(log)))
+            out = io.StringIO()   # the ::error:: line is the real thing's output: keep it out of this run's annotations
+            with contextlib.redirect_stdout(out):
+                self.assertFalse(D.refuse("a/en instagram", ["no link"], log_path=str(log)))
+            self.assertIn("::error::a/en instagram: download link guard refused: no link", out.getvalue())
             row = json.loads(log.read_text(encoding="utf-8").splitlines()[0])
             self.assertEqual(row, {"label": "a/en instagram", "problems": ["no link"]})
 

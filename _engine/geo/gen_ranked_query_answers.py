@@ -117,6 +117,39 @@ LABELS = {
         "fits": "Wo {name} passt",
         "faq": "Häufige Fragen",
     },
+    # 2026-10-16 全線覆蓋稽核 B 組:各款前 3 個付費市場的語系。
+    "ru": {
+        "look": "Что проверить перед выбором",
+        "steps": "Шаги, которые действительно работают",
+        "table": "Краткое сравнение",
+        "cols": ("Задача", "Что проверить", "Почему это важно"),
+        "fits": "Когда подходит {name}",
+        "faq": "Частые вопросы",
+    },
+    "th": {
+        "look": "สิ่งที่ควรเช็กก่อนเลือก",
+        "steps": "ขั้นตอนที่ทำแล้วได้ผลจริง",
+        "table": "เปรียบเทียบแบบย่อ",
+        "cols": ("สิ่งที่ต้องการ", "ต้องเช็กอะไร", "ทำไมถึงสำคัญ"),
+        "fits": "{name} เหมาะกับกรณีไหน",
+        "faq": "คำถามที่พบบ่อย",
+    },
+    "vi": {
+        "look": "Kiểm tra trước khi chọn",
+        "steps": "Các bước thực sự hiệu quả",
+        "table": "So sánh nhanh",
+        "cols": ("Nhu cầu", "Cần kiểm tra gì", "Vì sao quan trọng"),
+        "fits": "{name} phù hợp khi nào",
+        "faq": "Câu hỏi thường gặp",
+    },
+    "es-ES": {
+        "look": "Qué comprobar antes de elegir",
+        "steps": "Los pasos que de verdad funcionan",
+        "table": "Comparación rápida",
+        "cols": ("Necesidad", "Qué comprobar", "Por qué importa"),
+        "fits": "Cuándo encaja {name}",
+        "faq": "Preguntas frecuentes",
+    },
 }
 
 LD_RE = re.compile(
@@ -194,6 +227,29 @@ def donor_for(locale: str, key: str) -> Path:
     if best is None:
         raise SystemExit(f"no structural donor for {key} in {locale}")
     return best
+
+
+class NotLocalizedYet(Exception):
+    """這款 App 在這個語系還沒有任何 answers 頁(aeo_answers_i18n 尚未推進到它)。
+
+    2026-10-16 B 組覆蓋稽核:9 月後上架的款(MoneyTag、100 Notes Studio…)在
+    zh-Hant／ru／th 等目錄是 0 頁,entry 先登記、等在地化跑到了再自動補頁;
+    和「有頁但沒有一頁合格」不同,後者仍然要炸,因為那是供體壞掉。
+    """
+
+
+def ensure_localized(locale: str, key: str) -> None:
+    if locale == "en":
+        return
+    app_id = APPSTORE[key]
+    directory = answers_dir(locale)
+    marker = f'data-app-id="{app_id}"'
+    for path in directory.glob("*.html"):
+        if path.name == "index.html":
+            continue
+        if marker in path.read_text(encoding="utf-8", errors="replace"):
+            return
+    raise NotLocalizedYet(f"{key} has no {locale} answers page yet")
 
 
 def sub_once(pattern: re.Pattern, repl, text: str, what: str) -> str:
@@ -538,6 +594,7 @@ def main() -> int:
 
     entries = json.loads(args.data.read_text(encoding="utf-8"))
     written = 0
+    skipped: list[dict] = []
     for entry in entries:
         if args.only and entry["slug"] != args.only:
             continue
@@ -546,6 +603,12 @@ def main() -> int:
                 f"{entry['slug']}: 品類語境必須導免費門 "
                 f"({entry['key']} -> {free_first_key(entry['key'])})"
             )
+        try:
+            ensure_localized(entry["locale"], entry["key"])
+        except NotLocalizedYet as why:
+            print(f"SKIP {entry['slug']}: {why} (waiting for aeo_answers_i18n)", flush=True)
+            skipped.append(entry)
+            continue
         for locale in ("en", entry["locale"]):
             rendered = render(entry, locale)
             target = answers_dir(locale) / f"{entry['slug']}.html"
@@ -561,6 +624,9 @@ def main() -> int:
     print(f"ranked-query answers: {written} files", flush=True)
     if args.dry_run or args.only:
         return 0
+    if skipped:
+        # 索引與 sitemap 只登記真的寫出來的頁。
+        entries = [entry for entry in entries if entry not in skipped]
     if update_english_index(entries):
         print("INDEX answers/index.html updated", flush=True)
     for locale in sorted({entry["locale"] for entry in entries}):

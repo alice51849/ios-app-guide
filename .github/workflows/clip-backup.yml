@@ -6,14 +6,36 @@ name: Hook clip backup posts
 # that slot on every channel that has not posted it yet. clip_posts.py skips
 # a clip already in clip-posts.json, so a backup only fills a miss and never
 # re-posts. It never makes the channels' other daily posts.
+#
+# The slot comes from github.event.schedule, not the clock, so a backup GitHub
+# itself delays by hours still fills the slot it was meant for, on the date
+# that slot was on.
+#
+# Threads: threads_backfill.py starts threads-post.yml (mode=post) for each
+# Threads slot of the current Taiwan day (01:40 clip, 03:00 picture, 13:00
+# evening series) that no threads-post run filled or is running. That run's
+# slot gate stops a double post, and its cap check keeps the account at 3
+# posts a Taiwan day (threads-autopilot included). Only today's Taiwan slots
+# are filled, so a backup never takes tomorrow's room.
 on:
   schedule:
-    - cron: '47 3 * * *'    # after the 01:xx slot (Asia morning)
+    - cron: '47 3 * * *'    # after the 01:xx slot (Asia morning); Threads 01:40 + 03:00
+    - cron: '47 14 * * *'   # Threads only: the 13:00 evening slot, before Taiwan midnight
     - cron: '47 17 * * *'   # after the 15:xx slot (Americas)
   workflow_dispatch:
+    inputs:
+      slot:
+        description: "Clip slot to back up on Telegram/Instagram (1 or 15; empty = Threads check only)"
+        required: false
+        default: ""
+      date:
+        description: "UTC date YYYY-MM-DD of that clip slot (empty = today)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
+  actions: write # threads_backfill.py dispatches threads-post.yml
 
 concurrency:
   group: clip-backup
@@ -30,10 +52,28 @@ jobs:
           python-version: "3.x"
       - name: Which slot
         id: slot
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+          MANUAL_SLOT: ${{ inputs.slot }}
+          MANUAL_DATE: ${{ inputs.date }}
         run: |
-          h=$(date -u +%-H)
-          if [ "$h" -ge 15 ]; then s=15; elif [ "$h" -ge 1 ] && [ "$h" -lt 9 ]; then s=1; else s=; fi
-          echo "slot=$s" >> "$GITHUB_OUTPUT"; echo "slot=${s:-none}"
+          # The cron that fired decides the slot and its date, however late it runs.
+          case "$SCHEDULE" in
+            "47 3 * * *")  s=1;  fired="03:47" ;;
+            "47 17 * * *") s=15; fired="17:47" ;;
+            *)             s=;   fired= ;;
+          esac
+          if [ -n "$fired" ]; then
+            d=$(date -u +%F)
+            if [ "$(date -u +%H:%M)" \< "$fired" ]; then d=$(date -u -d yesterday +%F); fi
+          else
+            case "$MANUAL_SLOT" in 1|15) s=$MANUAL_SLOT ;; "") s= ;; *) echo "::error::slot must be 1 or 15"; exit 1 ;; esac
+            d=${MANUAL_DATE:-$(date -u +%F)}
+            case "$d" in [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]) ;; *) echo "::error::date must be YYYY-MM-DD"; exit 1 ;; esac
+            date -u -d "$d" +%F >/dev/null 2>&1 || { echo "::error::bad date $d"; exit 1; }
+          fi
+          echo "slot=$s" >> "$GITHUB_OUTPUT"; echo "date=$d" >> "$GITHUB_OUTPUT"
+          echo "slot=${s:-none} date=$d"
       - name: Test
         if: steps.slot.outputs.slot != ''
         run: python3 .github/scripts/test_clip_posts.py -q
@@ -43,26 +83,26 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python3 .github/scripts/clip_posts.py telegram --slot "${{ steps.slot.outputs.slot }}"
+        run: python3 .github/scripts/clip_posts.py telegram --slot "${{ steps.slot.outputs.slot }}" --date "${{ steps.slot.outputs.date }}"
       - name: Instagram
         if: steps.slot.outputs.slot != ''
         continue-on-error: true
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-        run: python3 .github/scripts/clip_posts.py instagram --slot "${{ steps.slot.outputs.slot }}"
+        run: python3 .github/scripts/clip_posts.py instagram --slot "${{ steps.slot.outputs.slot }}" --date "${{ steps.slot.outputs.date }}"
       - name: Threads
-        # Only the 01:xx slot: the Threads evening slot (13:00 UTC) belongs to
-        # threads_series.py, which posts the slot-15 clip itself when no series
-        # post is due; a 17:47 backup would land after Taiwan midnight and make
-        # a 4th post. The account cap (3 a day, Taiwan date) is checked first.
-        if: steps.slot.outputs.slot == '1'
+        # Never posts here: it starts threads-post.yml (mode=post) for each
+        # missed Threads slot of the current Taiwan day, so every Threads post
+        # goes through that workflow's slot gate and account cap
+        # (threads_series.py room, 3 a Taiwan day). The evening slot is only
+        # refilled before Taiwan midnight, so it never makes a 4th post or
+        # takes tomorrow's room; a 17:47 backup finds no due Threads slot.
         continue-on-error: true
         env:
-          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
-          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
-          python3 .github/scripts/threads_series.py room || { echo "Threads: account at its daily cap; skipped"; exit 0; }
-          python3 .github/scripts/clip_posts.py threads --slot 1
+          python3 .github/scripts/test_threads_backfill.py -q
+          python3 .github/scripts/threads_backfill.py
       - name: Record the post links on the promotion page
         if: steps.slot.outputs.slot != ''
         run: |

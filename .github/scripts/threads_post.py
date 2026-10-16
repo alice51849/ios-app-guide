@@ -188,6 +188,19 @@ def publish_post(
 QUEUE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "growth", "threads-queue.json")
 
 
+TW = _dt.timezone(_dt.timedelta(hours=8))
+
+
+def slot_time(value):
+    """The UTC slot start social_slot_gate.py wrote, or None when unset."""
+    if not value:
+        return None
+    stamp = _dt.datetime.fromisoformat(value.strip().replace("Z", "+00:00"))
+    if stamp.tzinfo is None:
+        stamp = stamp.replace(tzinfo=_dt.timezone.utc)
+    return stamp.astimezone(_dt.timezone.utc)
+
+
 def queued_today(day=None):
     """The post queued for today (Taiwan date) in growth/threads-queue.json, or None."""
     import datetime as _d
@@ -220,7 +233,10 @@ def main():
             uid = json.loads(r.read()).get("id") or uid
     except Exception as error:  # keep the secret as a fallback
         print(f"Threads: could not resolve the token's account ({error.__class__.__name__})", file=sys.stderr)
-    post = queued_today()
+    # THREADS_SLOT (social_slot_gate.py's slot) keeps a run GitHub delayed, or
+    # a backfill, on the content and audience of the slot it fills.
+    slot = slot_time(os.environ.get("THREADS_SLOT", ""))
+    post = queued_today(slot.astimezone(TW).date() if slot else None)
     if post:
         try:
             post_id = publish_post(tok, uid, post["text"])
@@ -231,12 +247,12 @@ def main():
             print(f"Threads queued post failed: {error}", file=sys.stderr)
             return 1
     import countdown_cards
-    if countdown_cards.due(countdown_cards.today_tw()):
+    if countdown_cards.due(slot.astimezone(TW).date() if slot else countdown_cards.today_tw()):
         print("countdown card today (countdown-daily.yml); picture post skipped")
         return 0
     try:
         pool = telegram_post.load_pool()
-        item, _ = pick_postable(pool)
+        item, _ = pick_postable(pool, slot)
         post_id = publish_post(
             tok,
             uid,

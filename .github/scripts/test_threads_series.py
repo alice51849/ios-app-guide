@@ -157,6 +157,24 @@ class CapTest(unittest.TestCase):
             raise OSError("down")
         self.assertFalse(T.has_room("tok", 3, self.NOW, boom))
 
+    def test_room_status_tells_full_from_unknown(self):
+        def boom(url, timeout=30):
+            raise OSError("down")
+        two = ["2026-10-20T01:41:00+0000", "2026-10-20T03:02:00+0000"]
+        three = two + ["2026-10-20T05:12:00+0000"]
+        self.assertEqual("room", T.room_status("tok", 3, self.NOW, self.opener(two)))
+        self.assertEqual("full", T.room_status("tok", 3, self.NOW, self.opener(three)))
+        self.assertEqual("unknown", T.room_status("tok", 3, self.NOW, boom))
+
+    def test_room_command_exit_codes(self):
+        from unittest import mock
+        with mock.patch.dict("os.environ", {"THREADS_TOKEN": "tok"}):
+            for status, code in (("room", 0), ("full", 1), ("unknown", 2)):
+                with mock.patch.object(T, "room_status", return_value=status):
+                    self.assertEqual(code, T.main(["room"]))
+        with mock.patch.dict("os.environ", {"THREADS_TOKEN": ""}):
+            self.assertEqual(2, T.main(["room"]))
+
 
 class WorkflowTest(unittest.TestCase):
     def test_threads_post_has_three_slots(self):
@@ -167,11 +185,41 @@ class WorkflowTest(unittest.TestCase):
         self.assertIn("threads_series.py evening", text)
         self.assertIn("steps.series.outputs.fallback == 'clip'", text)
 
-    def test_clip_backup_never_refills_the_evening_threads_slot(self):
+    def test_threads_post_slot_comes_from_the_schedule_and_dispatch_can_fill_it(self):
+        text = (WORKFLOWS / "threads-post.yml").read_text(encoding="utf-8")
+        gate = text.split("- name: Prevent duplicate UTC slot", 1)[1].split("- name:", 1)[0]
+        self.assertIn("SLOT_SCHEDULE: ${{ github.event.schedule }}", gate)
+        self.assertIn('--schedule "$SLOT_SCHEDULE"', gate)
+        self.assertIn('--slot-hour "$SLOT_HOUR"', gate)
+        self.assertIn("inputs.mode == 'post'", text)
+        self.assertIn("format('Threads posts · cron {0}', github.event.schedule)", text)
+        # No post step keys off the run's actual start time any more.
+        steps = text.split("jobs:", 1)[1]
+        self.assertNotIn("github.event.schedule ==", steps)
+
+    def test_every_threads_post_step_waits_for_the_account_cap(self):
+        text = (WORKFLOWS / "threads-post.yml").read_text(encoding="utf-8")
+        post = text.split("\n  post:", 1)[1]
+        steps = post.split("      - name: ")[1:]
+        posting = [s for s in steps if "THREADS_USER_ID" in s]
+        self.assertEqual(4, len(posting))
+        for step in posting:
+            self.assertIn("steps.room.outputs.ok == 'true'", step)
+        self.assertIn("threads_series.py room", post)
+
+    def test_clip_backup_never_refills_the_evening_threads_slot_after_taiwan_midnight(self):
         text = (WORKFLOWS / "clip-backup.yml").read_text(encoding="utf-8")
         threads = text.split("- name: Threads", 1)[1].split("- name:", 1)[0]
-        self.assertIn("steps.slot.outputs.slot == '1'", threads)
-        self.assertIn("threads_series.py room", threads)
+        # clip-backup never posts to Threads itself: threads_backfill.py only
+        # dispatches threads-post.yml (slot gate + daily cap) for today's
+        # Taiwan slots, so the 17:47 backup finds nothing to fill.
+        self.assertIn("threads_backfill.py", threads)
+        self.assertNotIn("clip_posts.py threads", threads)
+        self.assertNotIn("THREADS_TOKEN", threads)
+        import threads_backfill
+        import datetime as _dt
+        late = _dt.datetime(2026, 10, 15, 17, 47, tzinfo=_dt.timezone.utc)
+        self.assertEqual([], threads_backfill.missing_slots([], late))
 
 
 if __name__ == "__main__":

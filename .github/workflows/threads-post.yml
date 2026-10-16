@@ -10,6 +10,19 @@ name: Threads posts
 #   "明天穿什麼" / Mochi #MochiChecklist / UsageNow limit-change explainer.
 #   When no series post is due it posts the slot-15 hook clip instead, and it
 #   holds when the account already has 3 posts today (Taiwan date).
+#
+# The slot comes from github.event.schedule (the cron that fired), not the
+# time GitHub got round to running it: 10/16 the 01:40 run started at 06:26,
+# took the 03:00 slot, and the picture post was skipped. A missed slot is
+# filled with workflow_dispatch mode=post slot=<1|3|13> [date=YYYY-MM-DD]
+# (clip-backup.yml does that through threads_backfill.py; the Mac can too).
+# The slot gate stops a second run of the same slot, and every post path
+# checks the account cap (threads_series.py room) first.
+# run-name records the slot so social_slot_gate.py can read it back.
+run-name: >-
+  ${{ github.event_name == 'workflow_dispatch'
+  && format('Threads posts · {0} slot {1} {2}', inputs.mode, inputs.slot, inputs.date)
+  || format('Threads posts · cron {0}', github.event.schedule) }}
 on:
   schedule:
     - cron: "40 1 * * *"   # hook clip, Asia slot
@@ -18,8 +31,24 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "whoami = only print which Threads account the token belongs to"
+        description: "whoami = only print which Threads account the token belongs to; post = fill a missed slot"
+        type: choice
+        options:
+          - whoami
+          - post
         default: "whoami"
+      slot:
+        description: "post: UTC slot to fill (1 = hook clip, 3 = picture post, 13 = evening series)"
+        type: choice
+        options:
+          - "1"
+          - "3"
+          - "13"
+        default: "1"
+      date:
+        description: "post: UTC date YYYY-MM-DD of the slot (empty = its latest occurrence)"
+        required: false
+        default: ""
 
 permissions:
   actions: read
@@ -43,7 +72,10 @@ jobs:
             | python3 -c "import json,sys; d=json.load(sys.stdin); print('account:', d.get('username'), d.get('id'), d.get('error', {}).get('message', ''))"
 
   post:
-    if: github.event_name == 'schedule' && github.ref == 'refs/heads/main'
+    if: >-
+      github.ref == 'refs/heads/main'
+      && (github.event_name == 'schedule'
+      || (github.event_name == 'workflow_dispatch' && inputs.mode == 'post'))
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
@@ -60,47 +92,71 @@ jobs:
         id: slot
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          SLOT_SCHEDULE: ${{ github.event.schedule }}
+          SLOT_HOUR: ${{ github.event_name == 'workflow_dispatch' && inputs.slot || '' }}
+          SLOT_DATE: ${{ github.event_name == 'workflow_dispatch' && inputs.date || '' }}
         run: >-
+          python3 .github/scripts/test_social_slot_gate.py -q &&
           python3 .github/scripts/social_slot_gate.py
           --workflow threads-post.yml
           --slots 1,3,13
+          --schedule "$SLOT_SCHEDULE"
+          --slot-hour "$SLOT_HOUR"
+          --slot-date "$SLOT_DATE"
+      - name: Check the account's daily cap (3 posts, Taiwan date)
+        # Shared with every Threads post path (threads-autopilot included).
+        # Full: the slot is done. Count unknown: fail, so a backfill can retry.
+        id: room
+        if: steps.slot.outputs.should_post == 'true'
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+        run: |
+          python3 .github/scripts/threads_series.py room && rc=0 || rc=$?
+          if [ "$rc" = 0 ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ "$rc" = 1 ]; then echo "ok=false" >> "$GITHUB_OUTPUT"; echo "Threads: account at its daily cap; slot skipped"; exit 0; fi
+          echo "::error::could not count today's Threads posts; nothing posted"; exit 1
       - name: Post picture post to Threads (link in the first reply)
-        if: steps.slot.outputs.should_post == 'true' && github.event.schedule == '0 3 * * *'
+        if: steps.room.outputs.ok == 'true' && steps.slot.outputs.hour == '3'
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          THREADS_SLOT: ${{ steps.slot.outputs.slot }}
         run: |
           # threads_post.py: queued post (growth/threads-queue.json) first, else the
           # countdown card takes the slot (countdown-daily.yml), else a picture post.
           python3 .github/scripts/test_social_posting.py -q -b
           python3 .github/scripts/threads_post.py
       - name: Post today's hook clip to Threads
-        if: steps.slot.outputs.should_post == 'true' && github.event.schedule == '40 1 * * *'
+        if: steps.room.outputs.ok == 'true' && steps.slot.outputs.hour == '1'
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          SLOT_DATE: ${{ steps.slot.outputs.date }}
         run: |
           python3 .github/scripts/test_clip_posts.py -q
-          python3 .github/scripts/clip_posts.py threads --slot 1
+          python3 .github/scripts/clip_posts.py threads --slot 1 --date "$SLOT_DATE"
       - name: Post tonight's series post (BM-11 / BM-17 / BM-22)
         id: series
-        if: steps.slot.outputs.should_post == 'true' && github.event.schedule == '0 13 * * *'
+        if: steps.room.outputs.ok == 'true' && steps.slot.outputs.hour == '13'
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          SLOT_DATE: ${{ steps.slot.outputs.date }}
         run: |
+          # 13:00 UTC is 21:00 in Taiwan, so the slot's UTC date is its Taiwan date.
           python3 .github/scripts/test_threads_series.py -q
-          python3 .github/scripts/threads_series.py evening
+          python3 .github/scripts/threads_series.py evening --date "$SLOT_DATE"
       - name: Post the slot-15 hook clip when no series post is due
-        if: steps.slot.outputs.should_post == 'true' && steps.series.outputs.fallback == 'clip'
+        if: steps.room.outputs.ok == 'true' && steps.series.outputs.fallback == 'clip'
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          SLOT_DATE: ${{ steps.slot.outputs.date }}
         run: |
           python3 .github/scripts/test_clip_posts.py -q
-          python3 .github/scripts/clip_posts.py threads --slot 15
+          python3 .github/scripts/clip_posts.py threads --slot 15 --date "$SLOT_DATE"
       - name: Record the post link on the promotion page
-        if: steps.slot.outputs.should_post == 'true' && (github.event.schedule == '40 1 * * *' || github.event.schedule == '0 13 * * *')
+        if: steps.room.outputs.ok == 'true' && (steps.slot.outputs.hour == '1' || steps.slot.outputs.hour == '13')
         continue-on-error: true
         run: |
           if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi

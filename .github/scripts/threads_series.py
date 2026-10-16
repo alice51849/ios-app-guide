@@ -18,7 +18,7 @@ the series ct goes in the first reply.
 
     python3 threads_series.py preview [--date YYYY-MM-DD] [--offline]
     python3 threads_series.py evening        # post, or print fallback=clip
-    python3 threads_series.py room           # exit 0 if the account is under the daily cap
+    python3 threads_series.py room           # exit 0 under the daily cap, 1 at the cap, 2 count unknown
 """
 import argparse
 import datetime as dt
@@ -244,15 +244,20 @@ def posts_today(token, now=None, opener=urllib.request.urlopen):
     return count
 
 
-def has_room(token, cap, now=None, opener=urllib.request.urlopen):
-    """True when the account is under the cap. Unknown counts as full."""
+def room_status(token, cap, now=None, opener=urllib.request.urlopen):
+    """"room" under the cap, "full" at it, "unknown" when the count failed."""
     try:
         n = posts_today(token, now, opener)
     except Exception as error:
         print(f"series: could not count today's Threads posts ({error.__class__.__name__}); holding", file=sys.stderr)
-        return False
+        return "unknown"
     print(f"series: {n} Threads posts today (cap {cap})")
-    return n < cap
+    return "room" if n < cap else "full"
+
+
+def has_room(token, cap, now=None, opener=urllib.request.urlopen):
+    """True when the account is under the cap. Unknown counts as full."""
+    return room_status(token, cap, now, opener) == "room"
 
 
 # ---- CLI ------------------------------------------------------------------
@@ -279,7 +284,11 @@ def main(argv=None):
         return 1 if problems else 0
     token = os.environ.get("THREADS_TOKEN", "").strip()
     if args.command == "room":
-        return 0 if token and has_room(token, data["daily_cap"]) else 1
+        # Every Threads post path (threads-post.yml slots, its backfills and
+        # threads-autopilot on the same account) counts against this one cap.
+        if not token:
+            return 2
+        return {"room": 0, "full": 1}.get(room_status(token, data["daily_cap"]), 2)
     weather = None if args.offline else tomorrow_weather(data["series"]["lumiweather_tomorrow"], day)
     chosen = plan(day, data, weather, planned_clip(day))
     if args.command == "preview":

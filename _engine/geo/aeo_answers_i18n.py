@@ -21,6 +21,7 @@ from typing import Any
 
 from official_locales import OFFICIAL_LOCALES
 from site_config import PUBLIC_SITE  # noqa: E402
+import android_play  # noqa: E402
 import paid_upfront_surfaces  # noqa: E402
 
 
@@ -1224,6 +1225,11 @@ def extract_strings(source: str) -> tuple[list[str], list[tuple[int, int, str, s
                 continue
             collect_json_strings(obj, strings)
             json_spans.append((open_end, close_start, raw))
+    # Google Play links belong to android_play, not to the page copy: every
+    # pass strips them and re-injects them in the page's own language, so they
+    # are never translation units (otherwise each locale dictionary would miss
+    # them and the curated localizer would skip every Android-live app's page).
+    script_style_ranges.extend(android_play.injected_spans(source))
 
     def in_block(pos: int) -> bool:
         return any(start <= pos < end for start, end in script_style_ranges)

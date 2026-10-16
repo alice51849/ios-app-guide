@@ -25,12 +25,17 @@ Consumers
   CTA of each mapped app on every public HTML page of the site (answer,
   intent, comparison, tool, localized, guide and hub pages; idempotent,
   marker ``data-android-play``; stale markers are removed, so an app that
-  leaves the snapshot loses its links on the next pass).  The link carries
+  leaves the snapshot loses its links on the next pass).  AMP Web Stories
+  (``<amp-story>``) never get one: their CTA layer holds exactly the one
+  direct App Store CTA (``validate_webstories``), so a pass only strips stale
+  Play markers there.  The link carries
   the install referrer ``utm_source=<ct of that App Store CTA>&utm_campaign=
   <app key>`` (``tracked_play_url``, the same shape as 00_GrowthEngine
   ``agent/ct_codes.play_referrer_url``), so Play installs land on the same
   channel row as App Store downloads.
 * ``llms_line``        one llms.txt sub-bullet per mapped app.
+* ``injected_spans``   where the injected links sit, so ``aeo_answers_i18n``
+  never treats them as translatable page copy.
 
 Copy rule: the Android sentence only names Google Play and quotes the app's
 own Play short description; it never claims iOS-only features (widgets,
@@ -92,6 +97,9 @@ _INJECTED_RE = re.compile(
     re.DOTALL,
 )
 _HTML_LANG_RE = re.compile(r'<html\b[^>]*\blang="([^"]+)"', re.IGNORECASE)
+# AMP Web Stories: the story's CTA layer is a single-action App Store surface
+# gated by validate_webstories (exactly one direct App Store CTA per story).
+_AMP_STORY_RE = re.compile(r"<amp-story[\s>]", re.IGNORECASE)
 _MANAGED_BLOCK_RE = re.compile(
     r"<!--\s*(?P<name>[\w.-]+):start\s*-->.*?<!--\s*(?P=name):end\s*-->",
     re.DOTALL,
@@ -435,14 +443,34 @@ def _paragraph_close(source: str, start: int) -> int:
     return match.start() if match else -1
 
 
+def is_web_story(source: str) -> bool:
+    """AMP Web Story document (``<amp-story>``); never gets a Play link."""
+    return bool(_AMP_STORY_RE.search(source))
+
+
+def injected_spans(source: str) -> list[tuple[int, int]]:
+    """Offsets of the Play links this module injected into ``source``.
+
+    They are this module's own markup, re-rendered in each page's language on
+    every pass, so localizers skip them instead of treating them as page copy.
+    """
+    return [match.span() for match in _INJECTED_RE.finditer(source)]
+
+
 def inject_html(source: str, apps: dict[str, dict]) -> str:
     """Add one Google Play link after the first App Store CTA per mapped app.
+
+    AMP Web Stories are left without one (stale Play markers are still
+    stripped): ``validate_webstories`` requires their CTA layer to hold exactly
+    the direct App Store CTA.
 
     Only visible-text CTAs count, and blocks managed by other generators
     (``<!-- x:start -->`` .. ``:end``) stay byte-identical: a CTA that only
     exists inside such a block gets its Play paragraph right after the block.
     """
     text = _INJECTED_RE.sub("", source)
+    if is_web_story(text):
+        return text
     by_id = {str(entry["ios_app_id"]): (key, entry) for key, entry in apps.items()}
     lang = (_HTML_LANG_RE.search(text) or [None, ""])[1].lower()
     english = lang == "en" or lang.startswith("en-")

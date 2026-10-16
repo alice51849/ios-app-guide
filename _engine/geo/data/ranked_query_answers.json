@@ -11530,5 +11530,749 @@
     ]
    ]
   }
+ },
+ {
+  "key": "claudeusagemini",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "claude 用量",
+  "rank": 2,
+  "slug": "claude-usage-across-several-accounts-which-one-to-continue-on",
+  "loc": {
+   "title": "claude 用量：工作、個人或 Pro、Max 多個帳號，下一個該用哪個",
+   "meta": "同時有好幾個 Claude 帳號時，要看的不是哪個剩得多，而是哪個先重置。把每個帳號的 5 小時與每週額度、確切重置時間排在同一個小工具上，換帳號就不用一個個登入查。",
+   "h1": "claude 用量：多個帳號時，先看哪個先重置",
+   "lead": "一個帳號額度見底，手上還有另一個帳號，卻不知道哪個撐得比較久，這是多帳號的人常卡住的地方。",
+   "answer": "有多個 Claude 帳號時，把每個帳號的 5 小時額度、每週額度和確切重置時間並排，再依 5 小時重置時間排序，下一個要接手的帳號就會排在前面，不必逐一登入查看。",
+   "paras": [
+    "搜尋 claude 用量的人，很多手上不只一個帳號：公司給的工作帳號、自己付費的個人帳號，或是 Pro 和 Max 各一個。問題是每個帳號的 5 小時工作階段額度和每週額度各自倒數，剩得多的帳號不一定撐得久；每週額度快見底的帳號，就算 5 小時額度還很滿，也可能做到一半就停。所以比較帳號時，要同時看兩種額度和各自的重置時間。",
+    "UsageNow 把所有帳號放在同一個畫面：工作與個人、Pro 與 Max 並排顯示，可以依 5 小時重置時間、每週重置時間、用量由高到低或由低到高、名稱或服務排序，也能拖移成自己的順序。主畫面與鎖定畫面小工具上可以直接翻看每個帳號，想看最新數字時，點一下小工具就會更新。",
+    "換帳號的時機也能交給提醒：替 5 小時額度、每週額度或所有額度設定你在意的百分比，例如 90 或 98，每個額度在每個週期只提醒一次；再開啟重置提醒，原本見底的帳號一恢復就知道可以切回去。登入都在各服務自己的官方登入頁面完成，登入資訊只留在裝置的鑰匙圈，沒有 UsageNow 伺服器，也不需要另外註冊帳號。"
+   ],
+   "look": [
+    "每個帳號的 5 小時額度與每週額度是否分開顯示",
+    "能不能依 5 小時重置或每週重置時間排序",
+    "能不能在小工具上直接翻看不同帳號",
+    "工作與個人帳號能不能並排，不用登出再登入",
+    "登入資訊是否只留在裝置上，沒有另外的伺服器"
+   ],
+   "steps": [
+    "在各服務的官方登入頁面，把每個帳號都登入一次。",
+    "把帳號依 5 小時重置時間排序，或拖移成自己習慣的順序。",
+    "在主畫面或鎖定畫面加上小工具，直接在上面翻看各帳號。",
+    "替每個帳號設定 90 或 98 這類你在意的百分比提醒。",
+    "開啟重置提醒，額度一恢復就切回原本的帳號。"
+   ],
+   "rows": [
+    [
+     "帳號數量",
+     "能否並排、能否在小工具上翻看",
+     "多個帳號才會有換來換去的問題"
+    ],
+    [
+     "排序方式",
+     "依 5 小時或每週重置時間",
+     "先重置的帳號會自動排到前面"
+    ],
+    [
+     "提醒",
+     "可自訂百分比、每個週期只提醒一次",
+     "換帳號的時機不必靠記憶"
+    ]
+   ],
+   "fits": "UsageNow 適合每天用 Claude、Codex、Copilot、Gemini 寫程式的開發者，特別是手上有工作與個人、Pro 與 Max 多個帳號的人。每個方案還剩多少、什麼時候重置，都顯示在主畫面與鎖定畫面小工具和 Apple Watch 複雜功能上；先用 24 小時免費試用體驗全部功能，之後一次性購買解鎖 UsageNow Pro，沒有訂閱。",
+   "faq": [
+    [
+     "多個 Claude 帳號要怎麼一起看用量？",
+     "把每個帳號都登入後並排顯示，依 5 小時重置時間排序，先恢復的帳號就在前面，在小工具上也能直接翻看。"
+    ],
+    [
+     "剩得多的帳號，就是下一個該用的嗎？",
+     "不一定。也要看每週額度和重置時間；每週額度快見底的帳號，5 小時額度再滿也撐不久。"
+    ],
+    [
+     "UsageNow 是訂閱制嗎？",
+     "不是。先用 24 小時免費試用體驗全部功能，之後一次性購買解鎖 UsageNow Pro，沒有訂閱。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Claude usage across several accounts: which one to continue on",
+   "meta": "With several Claude accounts, the one with more left is not always the one that lasts. Line up each account's 5-hour and weekly limits and exact reset times on one widget, and switching stops being guesswork.",
+   "h1": "Claude usage with several accounts: look at which one resets first",
+   "lead": "One account is out, another still has room, and you cannot tell which will last longer. That is where people with several accounts get stuck.",
+   "answer": "With several Claude accounts, put each account's 5-hour limit, weekly limit and exact reset time side by side and sort by 5-hour reset; the account to continue on comes up first, without signing in to each one.",
+   "paras": [
+    "Many people searching for Claude usage run more than one account: a work account from the company, a personal one they pay for, or a Pro and a Max side by side. Each account counts down its 5-hour session limit and weekly limit separately, so the account with more left is not always the one that lasts. An account near its weekly cap can stop you halfway even with a full 5-hour window, which is why comparing accounts means reading both limits and both reset times.",
+    "UsageNow puts every account on one screen: work and personal, Pro and Max, side by side, sorted by 5-hour reset, weekly reset, highest or lowest usage, name or service, or dragged into your own order. On Home Screen and Lock Screen widgets you can flip through each account directly, and a tap on the widget refreshes it when you want the latest numbers.",
+    "The moment to switch can come from an alert instead of memory. Set the percentage you care about, like 90 or 98, for the 5-hour limit, the weekly limit or all limits; each alert fires once per limit and cycle. Turn on the reset alert and you know when the account that ran out is back. Sign-in happens on each service's own login page and stays in the device's Keychain; there is no UsageNow server and no account to create."
+   ],
+   "look": [
+    "Whether each account's 5-hour and weekly limits are shown separately",
+    "Whether accounts can be sorted by 5-hour or weekly reset time",
+    "Whether you can flip through accounts right on the widget",
+    "Whether work and personal accounts sit side by side without signing out",
+    "Whether sign-in stays on the device with no separate server"
+   ],
+   "steps": [
+    "Sign in to each account once on the service's official login page.",
+    "Sort accounts by 5-hour reset, or drag them into the order you use.",
+    "Add a widget to the Home Screen or Lock Screen and flip through accounts on it.",
+    "Set a percentage alert such as 90 or 98 for each account.",
+    "Turn on the reset alert and switch back as soon as a limit returns."
+   ],
+   "rows": [
+    [
+     "Number of accounts",
+     "Side by side and flippable on the widget",
+     "Switching only becomes a problem with several accounts"
+    ],
+    [
+     "Sort order",
+     "By 5-hour or weekly reset time",
+     "The account that resets first moves up the list"
+    ],
+    [
+     "Alerts",
+     "Custom percentage, once per cycle",
+     "Switching does not depend on memory"
+    ]
+   ],
+   "fits": "UsageNow fits developers who code with Claude, Codex, Copilot and Gemini every day, especially with several accounts such as work and personal or Pro and Max: what is left on each plan and when it resets, on Home Screen and Lock Screen widgets and Apple Watch complications, with a free 24-hour trial of everything and then a single one-time purchase of UsageNow Pro, no subscription.",
+   "faq": [
+    [
+     "How do I check usage across several Claude accounts?",
+     "Sign in to each one and view them side by side, sorted by 5-hour reset. The account that comes back first is listed first, and you can flip through them on the widget."
+    ],
+    [
+     "Is the account with more left the one to use next?",
+     "Not always. Check the weekly limit and reset time too; an account near its weekly cap will not last long even with a full 5-hour window."
+    ],
+    [
+     "Is UsageNow a subscription?",
+     "No. Try every feature with a free 24-hour trial, then unlock UsageNow Pro with a single one-time purchase. There is no subscription."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "claudeusagemini",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "codex 用量",
+  "rank": 2,
+  "slug": "codex-usage-5-hour-and-weekly-windows-before-a-long-task",
+  "loc": {
+   "title": "codex 用量：5 小時區間和每週區間，長任務開跑前先看這兩個",
+   "meta": "ChatGPT Codex 的用量分成 5 小時區間和每週區間。長任務跑到一半被擋，通常是開跑前沒看兩個區間還剩多少、何時重置。把剩餘量與倒數放在小工具上，排程就有依據。",
+   "h1": "codex 用量：開跑長任務前，先確認兩個區間",
+   "lead": "Codex 跑到一半停下來，比一開始就不能跑更麻煩：做到一半的改動得重新接上。",
+   "answer": "Codex 的用量要同時看 5 小時區間和每週區間；長任務開跑前，先確認兩個區間的剩餘量和重置倒數，剩得不多就等重置後再開，或把任務拆小。",
+   "paras": [
+    "搜尋 codex 用量的人，多半遇過任務跑到一半就被額度擋下。ChatGPT Codex 的用量分成 5 小時區間和每週區間，兩個各自計算；5 小時區間剛重置，不代表每週區間也還夠。長時間的重構、整批修正測試這類任務，開跑前先看兩個區間，比跑到一半再想辦法省事得多。",
+    "實際做法是讓數字一直在眼前。UsageNow 在主畫面與鎖定畫面小工具顯示 Codex 的 5 小時區間與每週區間，每次重置都有即時倒數，並依你所在地區的格式顯示確切重置時間；同一個畫面也能看到 Claude、GitHub Copilot 和 Gemini 的額度，同時用好幾個工具的人不必來回切換。",
+    "如果想在被擋之前就知道，可以自訂提醒：選 5 小時額度、每週額度或所有額度，輸入 90 或 98 這類百分比，每個額度在每個週期只提醒一次。開啟重置提醒，區間一恢復就能接著跑。登入在服務自己的官方登入頁面完成，登入資訊保存在裝置的鑰匙圈，UsageNow 只與服務本身連線。"
+   ],
+   "look": [
+    "5 小時區間和每週區間是否分開顯示",
+    "有沒有到下次重置的即時倒數和確切時間",
+    "能不能在主畫面或鎖定畫面直接看到，不用開網頁",
+    "能不能在用完之前，依自己設的百分比提醒",
+    "同時用 Claude 或 Copilot 時，能不能放在同一個畫面"
+   ],
+   "steps": [
+    "在官方登入頁面登入你的 ChatGPT 帳號。",
+    "在主畫面或鎖定畫面加上小工具，選你要的尺寸。",
+    "長任務開跑前，先看 5 小時與每週兩個區間的剩餘量。",
+    "剩得不多就等重置倒數結束再開，或把任務拆成小段。",
+    "設定 90 或 98 的提醒，再開啟重置提醒。"
+   ],
+   "rows": [
+    [
+     "區間",
+     "5 小時與每週都看得到",
+     "只看一個，另一個會在半路擋住你"
+    ],
+    [
+     "重置時間",
+     "倒數加上確切時間",
+     "決定長任務什麼時候開跑"
+    ],
+    [
+     "多個工具",
+     "Codex 與 Claude、Copilot 同一畫面",
+     "不用為了查額度來回切換"
+    ]
+   ],
+   "fits": "UsageNow 適合每天用 Codex、Claude、Copilot、Gemini 寫程式的開發者：每個方案還剩多少、什麼時候重置，都顯示在主畫面與鎖定畫面小工具和 Apple Watch 複雜功能上；先用 24 小時免費試用體驗全部功能，之後一次性購買解鎖 UsageNow Pro，沒有訂閱。",
+   "faq": [
+    [
+     "Codex 的用量在哪裡看？",
+     "把 5 小時區間和每週區間的剩餘量與重置倒數放在小工具上，主畫面或鎖定畫面就看得到，不必每次打開網頁。"
+    ],
+    [
+     "5 小時區間重置了，就可以放心跑長任務嗎？",
+     "還要看每週區間。每週區間快用完時，5 小時區間再滿也可能跑到一半停下。"
+    ],
+    [
+     "UsageNow 是訂閱制嗎？",
+     "不是。先用 24 小時免費試用體驗全部功能，之後一次性購買解鎖 UsageNow Pro，沒有訂閱。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Codex usage: check the 5-hour and weekly windows before a long task",
+   "meta": "ChatGPT Codex usage runs on a 5-hour window and a weekly window. Long tasks that stop halfway usually started without a look at what was left in both. Keep the remaining share and the countdown on a widget and you can plan the run.",
+   "h1": "Codex usage: check both windows before a long run",
+   "lead": "A Codex task that stops halfway is worse than one that never starts: you have to pick half-finished changes back up.",
+   "answer": "Codex usage has to be read as a 5-hour window and a weekly window together; before a long task, check what is left in both and how long until each resets, and if it is tight, wait for the reset or split the task.",
+   "paras": [
+    "Most people searching for Codex usage have had a task cut off by the limit midway. ChatGPT Codex counts a 5-hour window and a weekly window separately, so a fresh 5-hour window does not mean the weekly one has room. For long refactors or a batch of test fixes, checking both windows before you start saves far more time than improvising halfway through.",
+    "The practical fix is to keep the numbers in view. UsageNow shows Codex's 5-hour and weekly windows on Home Screen and Lock Screen widgets, with a live countdown to every reset and the exact reset time in your local format. Claude, GitHub Copilot and Gemini limits sit on the same screen, so people using several tools do not have to switch around.",
+    "To know before you are stopped, set your own alerts: pick the 5-hour limit, the weekly limit or all limits and type a percentage such as 90 or 98; each alert fires once per limit and cycle. Turn on the reset alert to resume the moment a window is back. Sign-in happens on the service's own login page and stays in the device's Keychain; UsageNow talks only to the services themselves."
+   ],
+   "look": [
+    "Whether the 5-hour and weekly windows are shown separately",
+    "Whether there is a live countdown and an exact time for the next reset",
+    "Whether it is visible on the Home Screen or Lock Screen without opening a page",
+    "Whether it can alert you at a percentage you set, before you run out",
+    "Whether Claude or Copilot can sit on the same screen if you use them too"
+   ],
+   "steps": [
+    "Sign in to your ChatGPT account on the official login page.",
+    "Add a widget to the Home Screen or Lock Screen in the size you want.",
+    "Before a long task, check what is left in both the 5-hour and weekly windows.",
+    "If it is tight, wait for the reset countdown or split the task into smaller runs.",
+    "Set an alert at 90 or 98, then turn on the reset alert."
+   ],
+   "rows": [
+    [
+     "Windows",
+     "Both 5-hour and weekly visible",
+     "Watch one and the other stops you midway"
+    ],
+    [
+     "Reset time",
+     "Countdown plus exact time",
+     "Decides when to start the long run"
+    ],
+    [
+     "Several tools",
+     "Codex with Claude and Copilot on one screen",
+     "No switching around to check limits"
+    ]
+   ],
+   "fits": "UsageNow fits developers who code with Codex, Claude, Copilot and Gemini every day: what is left on each plan and when it resets, on Home Screen and Lock Screen widgets and Apple Watch complications, with a free 24-hour trial of everything and then a single one-time purchase of UsageNow Pro, no subscription.",
+   "faq": [
+    [
+     "Where do I see my Codex usage?",
+     "Put the remaining share and reset countdown of the 5-hour and weekly windows on a widget, and they are on your Home Screen or Lock Screen without opening a web page."
+    ],
+    [
+     "If the 5-hour window just reset, is it safe to start a long task?",
+     "Check the weekly window too. When it is nearly used up, a full 5-hour window can still stop halfway."
+    ],
+    [
+     "Is UsageNow a subscription?",
+     "No. Try every feature with a free 24-hour trial, then unlock UsageNow Pro with a single one-time purchase. There is no subscription."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "claudeusagemini",
+  "locale": "ja",
+  "market": "JP",
+  "term": "ai 使用量",
+  "rank": 9,
+  "slug": "ai-usage-tracker-claude-codex-copilot-gemini-in-one-widget",
+  "loc": {
+   "title": "ai 使用量：Claude・Codex・Copilot・Geminiの残りを1つのウィジェットで見る",
+   "meta": "複数のAIツールを使い分けていると、上限の種類もリセットのタイミングもツールごとに違います。Claudeの5時間・週間上限、Codexの2つの枠、Copilotのプレミアムリクエスト、Geminiの1日の上限を同じ画面に並べる方法をまとめました。",
+   "h1": "ai 使用量：ツールごとに違う上限を、ひとつの画面に",
+   "lead": "Claudeが止まったらCodexへ、Codexが止まったらCopilotへ。使い分けるほど、どれがいつ戻るのかがわからなくなります。",
+   "answer": "複数のAIツールの使用量は、上限の種類がツールごとに違うため、Claudeの5時間・週間上限、Codexの5時間枠と週間枠、Copilotのプレミアムリクエスト、Geminiのモデル別の1日の上限を、リセット時刻と一緒に1つのウィジェットに並べるのが現実的です。",
+   "paras": [
+    "ai 使用量で検索する方の多くは、ひとつのツールではなく複数のAIを使い分けています。ところが上限の数え方はツールごとに違い、Claudeは5時間のセッション上限と週間上限（モデル別の週間上限も含む）、ChatGPT Codexは5時間枠と週間枠、GitHub Copilotはプレミアムリクエスト、Geminiはモデルごとの1日あたりのリクエスト上限です。それぞれのサービス画面を順に開いて確かめていると、それだけで作業が止まります。",
+    "UsageNowはこの4つを同じ画面にまとめ、ホーム画面とロック画面のウィジェット（全サイズ）とApple Watchのコンプリケーションに表示します。リセットまでのカウントダウンと正確なリセット時刻はお住まいの地域の表記で表示され、ウィジェット上でアカウントをめくったり、タップして最新の数値に更新したりできます。並び順は5時間リセットが近い順、週間リセットが近い順、使用量の多い順・少ない順、名前順、サービス順から選べます。",
+    "次にどのツールへ切り替えるかは、アラートに任せられます。5時間の上限、週間上限、またはすべての上限を選び、90や98など気になるパーセンテージを入力すれば、上限ごと・サイクルごとに1回だけ届きます。サインインは各サービス公式のログインページで行い、情報はデバイスのキーチェーンに保存されます。UsageNowのサーバはなく、アカウント登録もトラッキングもありません。"
+   ],
+   "look": [
+    "使っているAIツールすべての上限が1つの画面に並ぶか",
+    "ツールごとに違う上限の種類が、それぞれ分けて表示されるか",
+    "リセットまでのカウントダウンと正確な時刻が見えるか",
+    "サービス順や使用量順など、並び順を変えられるか",
+    "サインイン情報がデバイスに残り、別のサーバを経由しないか"
+   ],
+   "steps": [
+    "使っている各サービスに、公式のログインページからサインインします。",
+    "ホーム画面またはロック画面にウィジェットを追加します。",
+    "サービス順か、5時間リセットが近い順に並べ替えます。",
+    "上限に近づきやすいツールに、90や98のアラートを作ります。",
+    "リセットアラートをオンにして、戻ったツールにすぐ切り替えます。"
+   ],
+   "rows": [
+    [
+     "対応ツール",
+     "Claude・Codex・Copilot・Geminiが並ぶか",
+     "使い分けるほど、まとめて見る意味が大きくなります"
+    ],
+    [
+     "上限の種類",
+     "5時間・週間・プレミアムリクエスト・1日の上限",
+     "ツールごとに数え方が違います"
+    ],
+    [
+     "切り替えの目安",
+     "リセット時刻とアラート",
+     "次にどのツールを使うかを決められます"
+    ]
+   ],
+   "fits": "UsageNowは、Claude・Codex・Copilot・Geminiを毎日使い分ける開発者に向いています。各プランの残りとリセット時刻をホーム画面・ロック画面のウィジェットとApple Watchのコンプリケーションで表示し、24時間の無料トライアルですべての機能を試したあとは、1回限りの購入でUsageNow Proのロックを解除します。サブスクリプションはありません。",
+   "faq": [
+    [
+     "複数のAIの使用量をまとめて確認できますか？",
+     "はい。Claude・Codex・Copilot・Geminiの上限とリセット時刻を、1つのウィジェットに並べて確認できます。"
+    ],
+    [
+     "ツールごとに上限の種類が違うと、何が困りますか？",
+     "Claudeは5時間と週間、Copilotはプレミアムリクエストと数え方が違うため、同じパーセントでも戻るまでの時間が大きく違うからです。"
+    ],
+    [
+     "UsageNowはサブスクリプションですか？",
+     "いいえ。24時間の無料トライアルですべての機能を試したあと、1回限りの購入でUsageNow Proのロックを解除します。サブスクリプションはありません。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "AI usage tracker: Claude, Codex, Copilot and Gemini limits in one widget",
+   "meta": "If you switch between several AI tools, each one counts its limit differently and resets at a different time. Here is how to put Claude's 5-hour and weekly limits, Codex's two windows, Copilot's premium requests and Gemini's daily quotas on one screen.",
+   "h1": "AI usage tracker: different limits, one screen",
+   "lead": "Claude stops, so you move to Codex; Codex stops, so you move to Copilot. The more you switch, the less you know which one comes back when.",
+   "answer": "Because every AI tool counts usage differently, the practical approach is to put Claude's 5-hour and weekly limits, Codex's 5-hour and weekly windows, Copilot's premium requests and Gemini's per-model daily quotas on one widget, each with its reset time.",
+   "paras": [
+    "People looking for an AI usage tracker usually juggle several tools, not one. Each counts in its own way: Claude has a 5-hour session limit and weekly limits including per-model weekly caps, ChatGPT Codex has a 5-hour window and a weekly window, GitHub Copilot has premium requests, and Gemini has a daily request quota for each model. Opening each service page in turn to check is enough on its own to stop your work.",
+    "UsageNow brings all four onto one screen and shows them on Home Screen and Lock Screen widgets in every size and as Apple Watch complications. Each reset gets a live countdown and the exact reset time in your local format; you can flip through accounts on the widget and tap it to refresh. Sort by 5-hour reset, weekly reset, highest or lowest usage, name or service.",
+    "Which tool to switch to next can come from an alert. Pick the 5-hour limit, the weekly limit or all limits, type a percentage such as 90 or 98, and each alert arrives once per limit and cycle. Sign-in happens on each service's official login page and stays in the device's Keychain. There is no UsageNow server, no account to create and no tracking."
+   ],
+   "look": [
+    "Whether every AI tool you use shows up on one screen",
+    "Whether each tool's own kind of limit is shown separately",
+    "Whether there is a countdown and an exact reset time",
+    "Whether the order can change, by service or by usage",
+    "Whether sign-in stays on the device with no separate server"
+   ],
+   "steps": [
+    "Sign in to each service you use on its official login page.",
+    "Add a widget to the Home Screen or Lock Screen.",
+    "Sort by service, or by the nearest 5-hour reset.",
+    "Create alerts at 90 or 98 for the tools that tend to run close to their limits.",
+    "Turn on the reset alert and switch back as soon as a tool returns."
+   ],
+   "rows": [
+    [
+     "Tools covered",
+     "Claude, Codex, Copilot and Gemini side by side",
+     "The more you switch, the more one view helps"
+    ],
+    [
+     "Limit types",
+     "5-hour, weekly, premium requests, daily quotas",
+     "Each tool counts differently"
+    ],
+    [
+     "When to switch",
+     "Reset times and alerts",
+     "Tells you which tool to use next"
+    ]
+   ],
+   "fits": "UsageNow fits developers who move between Claude, Codex, Copilot and Gemini every day: what is left on each plan and when it resets, on Home Screen and Lock Screen widgets and Apple Watch complications, with a free 24-hour trial of everything and then a single one-time purchase of UsageNow Pro, no subscription.",
+   "faq": [
+    [
+     "Can I track usage for several AI tools in one place?",
+     "Yes. Claude, Codex, Copilot and Gemini limits and reset times sit together on one widget."
+    ],
+    [
+     "Why does it matter that each tool counts limits differently?",
+     "Claude uses 5-hour and weekly limits while Copilot counts premium requests, so the same percentage can mean a very different wait before it comes back."
+    ],
+    [
+     "Is UsageNow a subscription?",
+     "No. Try every feature with a free 24-hour trial, then unlock UsageNow Pro with a single one-time purchase. There is no subscription."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "claudeusagemini",
+  "locale": "ja",
+  "market": "JP",
+  "term": "claude 使用量",
+  "rank": 31,
+  "slug": "claude-usage-on-apple-watch-and-ipad-without-leaving-your-work",
+  "loc": {
+   "title": "claude 使用量：Apple WatchとiPadで、作業の手を止めずに確認する",
+   "meta": "Claudeの使用量を確かめるたびにブラウザを開くと、そのたびに集中が切れます。5時間上限と週間上限の残りとリセットまでのカウントダウンを、Apple WatchのコンプリケーションやiPadのウィジェットに置く方法をまとめました。",
+   "h1": "claude 使用量：画面を切り替えずに、手元で見る",
+   "lead": "使用量を確かめるためにエディタからブラウザへ切り替える。その数秒が、1日に何度も積み重なります。",
+   "answer": "Claudeの使用量は、5時間上限と週間上限の残りとリセットまでのカウントダウンをApple WatchのコンプリケーションやiPad・iPhoneのウィジェットに置いておけば、作業中の画面を切り替えずに手元で確認できます。",
+   "paras": [
+    "claude 使用量で検索する方の多くは、作業中に「あとどれくらい使えるか」を何度も確かめています。Claudeには5時間のセッション上限と週間上限があり、モデル別の週間上限もあるため、気にする数字はひとつではありません。そのたびにブラウザで使用量の画面を開いていると、確認そのものが作業を中断させます。",
+    "そこで、作業中の画面とは別の場所に数字を置きます。UsageNowはiPhone、iPad、Apple Watchで使え、Claudeの5時間上限と週間上限をApple Watchのコンプリケーションと、ホーム画面・ロック画面の全サイズのウィジェットに表示します。リセットまでのカウントダウンと正確なリセット時刻はお住まいの地域の表記で表示され、最新の数値が見たいときはウィジェットをタップすれば更新されます。",
+    "見に行く回数そのものを減らしたいなら、アラートを組み合わせます。90や98など気になるパーセンテージを入力しておけば、上限ごと・サイクルごとに1回だけ知らせてくれ、リセットアラートで上限が戻った瞬間もわかります。サインインは各サービス公式のログインページで行い、情報はデバイスのキーチェーンに保存されます。UsageNowのサーバはありません。"
+   ],
+   "look": [
+    "Apple Watchのコンプリケーションで残りが見えるか",
+    "iPhoneだけでなくiPadのウィジェットにも対応しているか",
+    "リセットまでのカウントダウンと正確な時刻が出るか",
+    "タップしてすぐ最新の数値に更新できるか",
+    "見に行かなくても、決めたパーセンテージで知らせてくれるか"
+   ],
+   "steps": [
+    "各サービス公式のログインページからサインインします。",
+    "Apple Watchの文字盤にUsageNowのコンプリケーションを追加します。",
+    "iPadやiPhoneのホーム画面・ロック画面にウィジェットを置きます。",
+    "最新の数値が必要なときは、ウィジェットをタップして更新します。",
+    "90や98のアラートと、リセットアラートを設定します。"
+   ],
+   "rows": [
+    [
+     "Apple Watch",
+     "コンプリケーションで残りとカウントダウン",
+     "手首を見るだけで済みます"
+    ],
+    [
+     "iPad・iPhone",
+     "ホーム画面とロック画面のウィジェット",
+     "作業中の画面を切り替えずに見られます"
+    ],
+    [
+     "更新",
+     "ウィジェットをタップ",
+     "今の数値を確かめたいときにすぐわかります"
+    ]
+   ],
+   "fits": "UsageNowはClaude・Codex・Copilot・Geminiを毎日使う開発者に向いています。各プランの残りとリセット時刻をiPhone・iPadのウィジェットとApple Watchのコンプリケーションで表示し、24時間の無料トライアルですべての機能を試したあとは、1回限りの購入でUsageNow Proのロックを解除します。サブスクリプションはありません。",
+   "faq": [
+    [
+     "Apple WatchでClaudeの使用量を見られますか？",
+     "はい。コンプリケーションとして、残りとリセットまでのカウントダウンを文字盤に表示できます。"
+    ],
+    [
+     "iPadでも使えますか？",
+     "はい。UsageNowはiPhone、iPad、Apple Watchで使え、iPadのホーム画面にもウィジェットを置けます。"
+    ],
+    [
+     "UsageNowはサブスクリプションですか？",
+     "いいえ。24時間の無料トライアルですべての機能を試したあと、1回限りの購入でUsageNow Proのロックを解除します。サブスクリプションはありません。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Claude usage on Apple Watch and iPad: check it without leaving your work",
+   "meta": "Opening a browser every time you check Claude usage breaks your focus every time. Here is how to keep the 5-hour and weekly limits and the countdown to each reset on an Apple Watch complication or an iPad widget.",
+   "h1": "Claude usage: see it at hand, without switching screens",
+   "lead": "Switching from the editor to a browser just to check usage takes seconds, many times a day.",
+   "answer": "Keep what is left of Claude's 5-hour and weekly limits, plus the countdown to each reset, on an Apple Watch complication or an iPad or iPhone widget, and you can check usage at hand without switching away from your work.",
+   "paras": [
+    "Most people searching for Claude usage check how much they have left several times while working. Claude has a 5-hour session limit and weekly limits, with per-model weekly caps as well, so there is more than one number to watch. Opening the usage page in a browser each time makes the check itself the interruption.",
+    "The fix is to put the numbers somewhere other than the screen you are working on. UsageNow runs on iPhone, iPad and Apple Watch and shows Claude's 5-hour and weekly limits as Apple Watch complications and on Home Screen and Lock Screen widgets in every size. The countdown to each reset and the exact reset time appear in your local format, and a tap on the widget refreshes it when you want the latest numbers.",
+    "To check less often, add alerts. Type a percentage you care about, like 90 or 98, and you are told once per limit and cycle; a reset alert tells you the moment a limit is back. Sign-in happens on each service's official login page and stays in the device's Keychain. There is no UsageNow server."
+   ],
+   "look": [
+    "Whether an Apple Watch complication shows what is left",
+    "Whether widgets work on iPad as well as iPhone",
+    "Whether there is a countdown and an exact reset time",
+    "Whether a tap refreshes the numbers right away",
+    "Whether it alerts you at your percentage so you do not have to look"
+   ],
+   "steps": [
+    "Sign in on each service's official login page.",
+    "Add the UsageNow complication to your Apple Watch face.",
+    "Place widgets on the Home Screen or Lock Screen of your iPad or iPhone.",
+    "Tap the widget when you need the latest numbers.",
+    "Set alerts at 90 or 98, and turn on the reset alert."
+   ],
+   "rows": [
+    [
+     "Apple Watch",
+     "What is left and the countdown as a complication",
+     "A glance at your wrist is enough"
+    ],
+    [
+     "iPad and iPhone",
+     "Home Screen and Lock Screen widgets",
+     "No switching away from the screen you work on"
+    ],
+    [
+     "Refresh",
+     "Tap the widget",
+     "The current number when you want it"
+    ]
+   ],
+   "fits": "UsageNow fits developers who code with Claude, Codex, Copilot and Gemini every day: what is left on each plan and when it resets, on iPhone and iPad widgets and Apple Watch complications, with a free 24-hour trial of everything and then a single one-time purchase of UsageNow Pro, no subscription.",
+   "faq": [
+    [
+     "Can I see Claude usage on Apple Watch?",
+     "Yes. As a complication, it shows what is left and the countdown to the reset on your watch face."
+    ],
+    [
+     "Does it work on iPad?",
+     "Yes. UsageNow runs on iPhone, iPad and Apple Watch, and you can put its widgets on the iPad Home Screen."
+    ],
+    [
+     "Is UsageNow a subscription?",
+     "No. Try every feature with a free 24-hour trial, then unlock UsageNow Pro with a single one-time purchase. There is no subscription."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "claudeusagemini",
+  "locale": "ko",
+  "market": "KR",
+  "term": "클로드 사용량",
+  "rank": null,
+  "slug": "claude-code-usage-alert-before-the-limit-stops-your-session",
+  "loc": {
+   "title": "클로드 사용량: 한도에 닿기 전에 90%, 98%에서 알림 받는 법",
+   "meta": "클로드 사용량은 수시로 확인하는 것보다 미리 알림을 받는 쪽이 작업에 덜 방해됩니다. 5시간 한도와 주간 한도에 원하는 퍼센트로 알림을 걸고, 초기화 알림으로 다시 열리는 순간까지 받는 방법을 정리했습니다.",
+   "h1": "클로드 사용량: 확인하지 말고 알림으로 받기",
+   "lead": "코딩에 집중하고 있을 때는 사용량을 수시로 확인하는 일 자체가 흐름을 끊습니다.",
+   "answer": "클로드 사용량은 5시간 한도와 주간 한도에 90이나 98처럼 원하는 퍼센트로 알림을 걸어 두고 초기화 알림까지 켜 두면, 수시로 확인하지 않아도 멈추기 전과 다시 열리는 순간을 모두 알 수 있습니다.",
+   "paras": [
+    "클로드 사용량을 검색하는 분 중에는 Claude Code 같은 도구로 긴 작업을 돌리다 갑자기 멈춘 경험이 있는 개발자가 많습니다. Claude는 5시간 세션 한도와 주간 한도가 따로 돌아가고 모델별 주간 한도까지 있어서, 어느 쪽에 먼저 닿을지 예측하기 어렵습니다. 그렇다고 몇 분마다 사용량을 열어 보는 것은 지키려던 집중을 스스로 깨는 일입니다.",
+    "그래서 확인하는 대신 알림을 받는 쪽이 낫습니다. UsageNow에서는 5시간 한도, 주간 한도 또는 모든 한도를 고른 뒤 신경 쓰이는 퍼센트를 직접 입력해 알림을 만들 수 있고, 원하는 만큼 추가할 수 있습니다. 알림은 한도별로 주기마다 한 번만 울리므로 잠금 화면이 알림으로 가득 차지 않습니다. 예를 들어 90에서는 지금 단계를 정리할 시점을, 98에서는 지금까지의 작업을 커밋할 시점을 알리게 둘 수 있습니다.",
+    "멈춘 뒤에는 초기화 알림이 다시 시작할 때를 알려 줍니다. 초기화까지 남은 시간은 홈 화면·잠금 화면 위젯과 Apple Watch 컴플리케이션에서 실시간으로 카운트다운되고, 정확한 초기화 시각도 사용자 지역 형식으로 표시됩니다. 로그인은 각 서비스의 공식 로그인 페이지에서 하며, 로그인 정보는 기기의 키체인에만 보관됩니다."
+   ],
+   "look": [
+    "알림 기준 퍼센트를 직접 입력할 수 있는지",
+    "5시간 한도와 주간 한도에 따로 알림을 걸 수 있는지",
+    "같은 한도에 대해 알림이 반복해서 울리지 않는지",
+    "한도가 다시 열릴 때 초기화 알림을 받을 수 있는지",
+    "알림 외에 위젯과 Apple Watch에서도 남은 양을 볼 수 있는지"
+   ],
+   "steps": [
+    "각 서비스의 공식 로그인 페이지에서 로그인합니다.",
+    "5시간 한도에 90 같은 첫 번째 알림을 만듭니다.",
+    "98처럼 작업을 마무리할 시점의 두 번째 알림을 추가합니다.",
+    "주간 한도에도 같은 방식으로 알림을 겁니다.",
+    "초기화 알림을 켜서 다시 시작할 시점을 받습니다."
+   ],
+   "rows": [
+    [
+     "알림 기준",
+     "퍼센트를 직접 입력",
+     "작업 습관에 맞춰 정리할 시점을 정합니다"
+    ],
+    [
+     "알림 횟수",
+     "한도별·주기별 한 번",
+     "잠금 화면이 조용하게 유지됩니다"
+    ],
+    [
+     "초기화 알림",
+     "한도가 다시 열리는 순간",
+     "언제 다시 시작할지 기다리며 확인하지 않아도 됩니다"
+    ]
+   ],
+   "fits": "UsageNow는 Claude·Codex·Copilot·Gemini로 매일 코딩하는 개발자에게 맞습니다. 각 요금제의 남은 사용량과 초기화 시각을 홈 화면·잠금 화면 위젯과 Apple Watch 컴플리케이션에서 보여 주고, 원하는 퍼센트에서 미리 알려 줍니다. 24시간 무료 체험으로 모든 기능을 써 본 뒤 한 번의 구매로 UsageNow Pro를 잠금 해제하며, 구독은 없습니다.",
+   "faq": [
+    [
+     "클로드 사용량이 한도에 가까워지면 알림을 받을 수 있나요?",
+     "네. 5시간 한도나 주간 한도에 90, 98처럼 원하는 퍼센트를 입력해 알림을 만들 수 있고, 필요한 만큼 추가할 수 있습니다."
+    ],
+    [
+     "알림이 계속 울리지는 않나요?",
+     "아닙니다. 알림은 한도별로 주기마다 한 번만 울리므로 잠금 화면이 조용하게 유지됩니다."
+    ],
+    [
+     "UsageNow는 구독인가요?",
+     "아닙니다. 24시간 무료 체험으로 모든 기능을 써 본 뒤, 한 번의 구매로 UsageNow Pro를 잠금 해제합니다. 구독은 없습니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Claude Code usage: get an alert before the limit stops your session",
+   "meta": "For Claude Code usage, an alert works better than checking. Set alerts at the percentage you choose on the 5-hour and weekly limits, plus a reset alert for the moment the limit opens again, so a coding session does not stop cold.",
+   "h1": "Claude Code usage: get alerted instead of checking",
+   "lead": "When you are deep in a coding session, checking usage every few minutes is itself the interruption.",
+   "answer": "Set alerts on the 5-hour and weekly limits at a percentage such as 90 or 98 and turn on the reset alert; you then know both before the stop and the moment the limit opens again, without checking usage mid-session.",
+   "paras": [
+    "Many people searching for Claude Code usage are developers whose long session stopped without warning. Claude runs a 5-hour session limit and weekly limits on separate clocks, plus per-model weekly caps, so it is hard to predict which one you will reach first. Opening a usage page every few minutes is not the answer; it breaks the focus you were trying to protect.",
+    "An alert is the better habit. In UsageNow you choose the 5-hour limit, the weekly limit or all limits, type the percentage that matters to you and add as many alerts as you like. Each one fires once per limit and cycle, so the Lock Screen does not fill up. One pattern: an alert at 90 to wrap up the current step and one at 98 to commit what you have.",
+    "After a stop, the reset alert tells you when to pick up again. The time until each reset counts down live on Home Screen and Lock Screen widgets and Apple Watch complications, with the exact reset time in your local format. Sign-in happens on each service's official login page and stays only in the device's Keychain."
+   ],
+   "look": [
+    "Whether you can type the alert percentage yourself",
+    "Whether the 5-hour and weekly limits take separate alerts",
+    "Whether an alert fires once per limit instead of repeating",
+    "Whether a reset alert tells you when the limit opens again",
+    "Whether widgets and Apple Watch show what is left besides alerts"
+   ],
+   "steps": [
+    "Sign in on each service's official login page.",
+    "Create a first alert on the 5-hour limit, such as 90.",
+    "Add a second alert for wrapping up, such as 98.",
+    "Set alerts on the weekly limit the same way.",
+    "Turn on the reset alert to know when to start again."
+   ],
+   "rows": [
+    [
+     "Alert threshold",
+     "A percentage you type",
+     "Matches the point where you want to wrap up"
+    ],
+    [
+     "Alert frequency",
+     "Once per limit and cycle",
+     "Keeps the Lock Screen quiet"
+    ],
+    [
+     "Reset alert",
+     "The moment the limit reopens",
+     "No checking back to see if you can restart"
+    ]
+   ],
+   "fits": "UsageNow fits developers who code with Claude, Codex, Copilot and Gemini every day: what is left on each plan and when it resets, on Home Screen and Lock Screen widgets and Apple Watch complications, plus alerts at the percentage you choose, with a free 24-hour trial of everything and then a single one-time purchase of UsageNow Pro, no subscription.",
+   "faq": [
+    [
+     "Can I get an alert when Claude usage gets close to the limit?",
+     "Yes. Type a percentage such as 90 or 98 for the 5-hour limit or the weekly limit, and add as many alerts as you need."
+    ],
+    [
+     "Will the alerts keep going off?",
+     "No. Each alert fires once per limit and cycle, so you hear it once and the Lock Screen stays quiet."
+    ],
+    [
+     "Is UsageNow a subscription?",
+     "No. Try every feature with a free 24-hour trial, then unlock UsageNow Pro with a single one-time purchase. There is no subscription."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "claudeusagemini",
+  "locale": "de-DE",
+  "market": "DE",
+  "term": "claude nutzung",
+  "rank": 9,
+  "slug": "claude-weekly-usage-limit-and-per-model-caps-plan-the-week",
+  "loc": {
+   "title": "Claude Nutzung: das Wochenlimit im Blick behalten, nicht nur die 5 Stunden",
+   "meta": "Bei der Claude Nutzung bremst oft nicht das 5-Stunden-Limit, sondern das Wochenlimit, inklusive der Wochenlimits pro Modell. So siehst du Restmenge und genaue Uhrzeit der Zurücksetzung auf dem Home-Bildschirm und teilst die Woche danach ein.",
+   "h1": "Claude Nutzung: die Woche einteilen, nicht nur die nächsten 5 Stunden",
+   "lead": "Das 5-Stunden-Limit ist nach ein paar Stunden wieder da. Wer mitten in der Woche ans Wochenlimit stößt, wartet deutlich länger.",
+   "answer": "Bei der Claude Nutzung gehören das 5-Stunden-Sitzungslimit und die Wochenlimits zusammen in den Blick; wer Restmenge und genaue Uhrzeit der wöchentlichen Zurücksetzung kennt, kann große Aufgaben auf die Tage legen, an denen noch genug übrig ist.",
+   "paras": [
+    "Wer nach Claude Nutzung sucht, kennt meist das 5-Stunden-Limit gut, wird aber vom Wochenlimit überrascht. Claude zählt das 5-Stunden-Sitzungslimit und die Wochenlimits getrennt, dazu kommen Wochenlimits pro Modell. Ein frisches 5-Stunden-Fenster hilft wenig, wenn das Wochenlimit fast aufgebraucht ist, und dann wartest du nicht Stunden, sondern Tage.",
+    "Praktisch ist es, beide Zahlen ständig vor Augen zu haben. UsageNow zeigt das 5-Stunden-Sitzungslimit und die Wochenlimits von Claude, inklusive der Wochenlimits pro Modell, in Widgets für Home-Bildschirm und Sperrbildschirm in allen Größen und als Komplikation auf der Apple Watch. Bis zu jeder Zurücksetzung läuft ein Live-Countdown, dazu kommt die genaue Uhrzeit im Format deiner Region. Mit mehreren Konten sortierst du nach Zurücksetzung des Wochenlimits und siehst sofort, welches Konto die Woche noch trägt.",
+    "Damit die Woche nicht vorzeitig kippt, helfen Warnungen: Wähle das Wochenlimit, gib einen Prozentwert wie 90 oder 98 ein, und die Warnung kommt nur einmal pro Limit und Zyklus. Eine Warnung zum Zurücksetzen meldet, wann das Limit wieder verfügbar ist. Angemeldet wird auf der Anmeldeseite des jeweiligen Dienstes, die Anmeldung bleibt im Schlüsselbund deines Geräts, und einen UsageNow-Server gibt es nicht."
+   ],
+   "look": [
+    "Ob 5-Stunden-Limit und Wochenlimit getrennt angezeigt werden",
+    "Ob auch die Wochenlimits pro Modell sichtbar sind",
+    "Ob die genaue Uhrzeit der wöchentlichen Zurücksetzung zu sehen ist",
+    "Ob sich Konten nach Zurücksetzung des Wochenlimits sortieren lassen",
+    "Ob die Anmeldung auf dem Gerät bleibt, ohne eigenen Server"
+   ],
+   "steps": [
+    "Melde dich auf der offiziellen Anmeldeseite von Claude an.",
+    "Lege ein Widget auf den Home-Bildschirm oder Sperrbildschirm.",
+    "Prüfe vor einer großen Aufgabe, wie viel vom Wochenlimit übrig ist und wann es zurückgesetzt wird.",
+    "Erstelle eine Warnung für das Wochenlimit, etwa bei 90.",
+    "Schalte die Warnung zum Zurücksetzen ein und plane große Aufgaben danach."
+   ],
+   "rows": [
+    [
+     "Wochenlimit",
+     "Restmenge und genaue Uhrzeit der Zurücksetzung",
+     "Hier wartest du Tage statt Stunden"
+    ],
+    [
+     "Limits pro Modell",
+     "Ob sie getrennt sichtbar sind",
+     "Ein Modell kann früher am Limit sein als der Rest"
+    ],
+    [
+     "Mehrere Konten",
+     "Sortierung nach Zurücksetzung des Wochenlimits",
+     "Zeigt, welches Konto die Woche noch trägt"
+    ]
+   ],
+   "fits": "UsageNow passt zu Entwicklerinnen und Entwicklern, die täglich mit Claude, Codex, Copilot und Gemini arbeiten: was in jedem Plan noch übrig ist und wann es zurückgesetzt wird, in Widgets für Home-Bildschirm und Sperrbildschirm und als Komplikation auf der Apple Watch. Zuerst eine kostenlose 24-Stunden-Testphase mit allen Funktionen, danach schaltest du UsageNow Pro mit einem einmaligen Kauf frei. Kein Abo.",
+   "faq": [
+    [
+     "Wo sehe ich meine Claude Nutzung für die Woche?",
+     "Lege das Wochenlimit mit Restmenge und genauer Uhrzeit der Zurücksetzung in ein Widget, dann siehst du es direkt auf dem Home-Bildschirm."
+    ],
+    [
+     "Was ist wichtiger, das 5-Stunden-Limit oder das Wochenlimit?",
+     "Beide, aber das Wochenlimit hält dich länger auf. Ist es fast aufgebraucht, hilft auch ein frisches 5-Stunden-Fenster kaum weiter."
+    ],
+    [
+     "Ist UsageNow ein Abo?",
+     "Nein. Du testest 24 Stunden lang kostenlos alle Funktionen und schaltest danach UsageNow Pro mit einem einmaligen Kauf frei. Es gibt kein Abo."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Claude usage limit: the weekly cap and per-model caps that stop you midweek",
+   "meta": "The Claude usage limit that hurts is often not the 5-hour window but the weekly cap, including per-model weekly caps. See what is left and the exact weekly reset time on your Home Screen and plan the week around it.",
+   "h1": "Claude usage limit: plan the week, not just the next 5 hours",
+   "lead": "The 5-hour limit comes back within hours. Hit the weekly cap midweek and the wait is far longer.",
+   "answer": "Read Claude's 5-hour session limit and weekly limits together; once you know what is left for the week and exactly when it resets, you can put big tasks on the days that still have room.",
+   "paras": [
+    "Most people searching for the Claude usage limit know the 5-hour window well and get caught by the weekly cap. Claude counts the 5-hour session limit and the weekly limits separately, plus per-model weekly caps. A fresh 5-hour window does little when the weekly limit is nearly used up, and then the wait is days, not hours.",
+    "The practical move is to keep both numbers in sight. UsageNow shows Claude's 5-hour session limit and weekly limits, including per-model weekly caps, on Home Screen and Lock Screen widgets in every size and as Apple Watch complications. Each reset has a live countdown and the exact time in your local format. With several accounts, sort by weekly reset and you see which account still carries the week.",
+    "To keep the week from running out early, use alerts: choose the weekly limit, type a percentage such as 90 or 98, and the alert arrives once per limit and cycle. A reset alert tells you when the limit is available again. Sign-in happens on each service's own login page and stays in your device's Keychain, and there is no UsageNow server."
+   ],
+   "look": [
+    "Whether the 5-hour and weekly limits are shown separately",
+    "Whether per-model weekly caps are visible too",
+    "Whether the exact weekly reset time is shown",
+    "Whether accounts can be sorted by weekly reset",
+    "Whether sign-in stays on the device with no separate server"
+   ],
+   "steps": [
+    "Sign in on Claude's official login page.",
+    "Add a widget to the Home Screen or Lock Screen.",
+    "Before a big task, check what is left of the weekly limit and when it resets.",
+    "Create an alert on the weekly limit, for example at 90.",
+    "Turn on the reset alert and plan big tasks around it."
+   ],
+   "rows": [
+    [
+     "Weekly limit",
+     "What is left and the exact reset time",
+     "This is where you wait days instead of hours"
+    ],
+    [
+     "Per-model caps",
+     "Whether they are visible separately",
+     "One model can hit its cap before the rest"
+    ],
+    [
+     "Several accounts",
+     "Sorting by weekly reset",
+     "Shows which account still carries the week"
+    ]
+   ],
+   "fits": "UsageNow fits developers who code with Claude, Codex, Copilot and Gemini every day: what is left on each plan and when it resets, on Home Screen and Lock Screen widgets and Apple Watch complications, with a free 24-hour trial of everything and then a single one-time purchase of UsageNow Pro, no subscription.",
+   "faq": [
+    [
+     "Where can I see my weekly Claude usage?",
+     "Put the weekly limit with what is left and its exact reset time on a widget, and it is right on your Home Screen."
+    ],
+    [
+     "Which matters more, the 5-hour limit or the weekly limit?",
+     "Both, but the weekly limit holds you up longer. When it is nearly used up, a fresh 5-hour window does not help much."
+    ],
+    [
+     "Is UsageNow a subscription?",
+     "No. Try every feature with a free 24-hour trial, then unlock UsageNow Pro with a single one-time purchase. There is no subscription."
+    ]
+   ]
+  }
  }
 ]

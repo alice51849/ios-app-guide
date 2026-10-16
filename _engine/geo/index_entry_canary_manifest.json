@@ -68,8 +68,8 @@
   "locale_policy": {
     "measured_2026_09_12": {
       "best-app-to-save-links-from-other-apps-on-iphone": {
-        "variants": 4,
-        "en_hreflang_entries": 6
+        "variants": 7,
+        "en_hreflang_entries": 9
       },
       "best-app-blocker-app": {
         "variants": 26,
@@ -84,8 +84,8 @@
         "en_hreflang_entries": 20
       },
       "best-app-to-sort-screenshots-on-iphone-offline": {
-        "variants": 4,
-        "en_hreflang_entries": 6
+        "variants": 6,
+        "en_hreflang_entries": 8
       },
       "best-aesthetic-to-do-list-app-iphone-no-subscription": {
         "variants": 18,
@@ -100,7 +100,8 @@
         "en_hreflang_entries": 20
       }
     },
-    "rule": "這 8 頁都有在地化版本(4–26 個),而且每個英文頁的 hreflang 數正好等於『變體數 + en + x-default』,hreflang 圖是完整且自洽的。首頁 index.html 是 en / x-default hub,因此只連**英文版本**——那是這個 hub 的合法版本;在地化版本由英文頁自身的 hreflang alternate 宣告,搜尋引擎可由此發現,不需要也不應該從英文 hub 直連母語頁。",
+    "remeasured": "2026-10-16 依實際站台重新量測：C 組 e70a80902 為 best-app-to-save-links-from-other-apps-on-iphone 新增 ja／zh-Hans／zh-Hant、best-app-to-sort-screenshots-on-iphone-offline 新增 ja／zh-Hant，變體數 4→7、4→6，英文頁 hreflang 也同步宣告（6→9、6→8）；其餘 6 頁不變。",
+    "rule": "這 8 頁都有在地化版本(6–26 個),而且每個英文頁的 hreflang 數正好等於『變體數 + en + x-default』,hreflang 圖是完整且自洽的。首頁 index.html 是 en / x-default hub,因此只連**英文版本**——那是這個 hub 的合法版本;在地化版本由英文頁自身的 hreflang alternate 宣告,搜尋引擎可由此發現,不需要也不應該從英文 hub 直連母語頁。",
     "forbidden": "不得為了湊 exact50 而生成英文假母語版本,也不得宣稱某頁有它實際沒有的在地化版本。首頁的 50 locale hreflang 集合維持不變。",
     "localized_hubs_untouched": "50 個 `<locale>/index.html` 完全未改,不把英文連結塞進母語頁;母語使用者的入口仍由各自語系的 hub 提供。"
   },

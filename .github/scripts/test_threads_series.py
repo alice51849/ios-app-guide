@@ -48,6 +48,13 @@ class DataTest(unittest.TestCase):
 class PlanTest(unittest.TestCase):
     def setUp(self):
         self.data = T.load()
+        # The live conversion queue (threads-evening-queue.json) has dated posts; the
+        # series rules are tested without it (EveningQueueTest covers the queue).
+        self._queue_path = T.EVENING_QUEUE
+        T.EVENING_QUEUE = Path("/nonexistent/threads-evening-queue.json")
+
+    def tearDown(self):
+        T.EVENING_QUEUE = self._queue_path
 
     def test_held_usagenow_never_posts(self):
         data = live_event(self.data)

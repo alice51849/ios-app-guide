@@ -197,7 +197,7 @@ def plan(day, data=None, weather=None, clip=None, queue=None):
     Order: UsageNow event > UsageNow clip > weather alert > dated conversion
     post (`queue`, growth/threads-evening-queue.json) > rotation > clip."""
     data = data or load()
-    queue = load_evening_queue() if queue is None else queue
+    queue = load_evening_queue(EVENING_QUEUE) if queue is None else queue  # the module path, so tests can point it elsewhere
     s = data["series"]
     event = usagenow_event(s["usagenow_policy"], day)
     if event:
@@ -263,7 +263,7 @@ def validate(data=None, queue=None):
     """Problems with the data files: lengths, ct tokens, banned words."""
     from social_post_common import APP_STORE_CAMPAIGN_RE
     data = data or load()
-    problems = evening_queue_problems(load_evening_queue() if queue is None else queue)
+    problems = evening_queue_problems(load_evening_queue(EVENING_QUEUE) if queue is None else queue)
     banned = BANNED
     day = dt.date(2026, 1, 5)
     sample = {c["name"]: {"min": 9, "max": 19, "rain": 3.0} for c in data["series"]["lumiweather_tomorrow"]["cities"]}

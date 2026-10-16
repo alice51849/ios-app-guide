@@ -1,4 +1,125 @@
 {
-  "note": "Dated conversion posts for the Threads evening slot (threads-post.yml 13:00 UTC = Taiwan 21:00 = US Eastern 9:00 = Brazil 10:00 = Germany/France 15:00). threads_series.py takes the post queued for the Taiwan date after a UsageNow event, a UsageNow hook clip or a weather alert, and before the daily rotation; every other day the rotation (BM-17 Mochi / BM-22 Lumi Weather) keeps the slot. Body has no links; the App Store link with the post's bm_<app>_<cc>_th token goes in the first reply. One post per date; facts follow the live App Store copy of that locale (00_GrowthEngine data/<app>_full.json). Source: 00_GrowthEngine reports/conversion_focus_2026-10-16.md (each app's top paying market).",
-  "posts": []
+ "note": "Dated conversion posts for the Threads evening slot (threads-post.yml 13:00 UTC = Taiwan 21:00 = US Eastern 9:00 = Brazil 10:00 = Germany/France 15:00). threads_series.py takes the post queued for the Taiwan date after a UsageNow event, a UsageNow hook clip or a weather alert, and before the daily rotation; every other day the rotation (BM-17 Mochi / BM-22 Lumi Weather) keeps the slot. Body has no links; the App Store link with the post's bm_<app>_<cc>_th token goes in the first reply. One post per date; facts follow the live App Store copy of that locale (00_GrowthEngine data/<app>_full.json). Source: 00_GrowthEngine reports/conversion_focus_2026-10-16.md (each app's top paying market).",
+ "posts": [
+  {
+   "date": "2026-10-18",
+   "app": "mochi",
+   "app_id": "6785004775",
+   "ct": "bm_mochi_br_th",
+   "locale": "pt-BR",
+   "task": "mochi-conv-1",
+   "source": "conv_br_1",
+   "text": "Semana de prova, estágio e ainda a lista do mercado na cabeça? Eu fiz o Mochi pra isso: uma lista de tarefas fofa e calma. Você anota o que precisa fazer, toca no pequeno círculo quando concluir e sente o dia ficando em ordem. Serve pra estudos, trabalho, compras, hábitos e rotina, com lembretes e widget na Tela de Início, e dá pra acompanhar pelo Apple Watch. A versão gratuita já vem com 2 listas de até 4 tarefas e 5 temas. Link nos comentários."
+  },
+  {
+   "date": "2026-10-19",
+   "app": "cyca",
+   "app_id": "6782251621",
+   "ct": "bm_cyca_us_th",
+   "locale": "en",
+   "task": "cyca-conv-1",
+   "source": "conv_us_1",
+   "text": "If your cycle is 26 days one month and 41 the next, a calendar that only marks \"day 28\" is useless. I built Cyca for exactly that.\n\nLog flow, symptoms and moods in a tap. It learns your rhythm and adapts every time you log, so the prediction reflects your range, not a textbook 28 days.\n\nNo account, no servers, no cloud. Your cycle data never leaves your iPhone, and it works offline.\n\nA wellness estimate, not a medical device or contraception. Link in the comments."
+  },
+  {
+   "date": "2026-10-20",
+   "app": "snapport",
+   "app_id": "6780575828",
+   "ct": "bm_snapport_de_th",
+   "locale": "de-DE",
+   "task": "snapport-conv-1",
+   "source": "conv_de_1",
+   "text": "Bewerbungsfoto fällig, Visumantrag will 35×45 mm, Dafür habe ich Snapport gebaut.\n\nFoto zu Hause am iPhone, Gesicht an den Linien für Kopfoberkante, Augen und Kinn ausrichten, Hintergrund auf Weiß, Grau, Blau oder Rot, Export als JPEG, PNG, PDF oder Druckbogen für 10×15. Alles auf dem Gerät, kein Konto, kein Tracking.\n\nEhrlich: Für Reisepass und Personalausweis gibt es seit Mai 2025 nur digitale Passbilder vom Amt. Snapport liefert nur das Foto.\n\nLink in den Kommentaren."
+  },
+  {
+   "date": "2026-10-21",
+   "app": "claudeusagemini",
+   "app_id": "6818607603",
+   "ct": "bm_usagenow_de_th",
+   "locale": "de-DE",
+   "task": "claudeusagemini-conv-1",
+   "source": "conv_de_1",
+   "text": "Mitten im Refactoring, der Agent läuft, und dann: Limit erreicht, bitte warten. Ich habe UsageNow gebaut, um das 5-Stunden- und das Wochenlimit von Claude, Codex und Copilot als Widget auf dem iPhone zu sehen, mit Countdown bis zur Zurücksetzung und Warnung bei 90 oder 98 %. Kein Konto, kein eigener Server, die Anmeldung bleibt im Schlüsselbund. 24 Stunden kostenlos testen, dann Einmalkauf, kein Abo. Unabhängig von Anthropic, OpenAI, GitHub. Link in den Kommentaren."
+  },
+  {
+   "date": "2026-10-22",
+   "app": "aim990",
+   "app_id": "6784974530",
+   "ct": "bm_aim990_fr_th",
+   "locale": "fr-FR",
+   "task": "aim990-conv-1",
+   "source": "conv_fr_1",
+   "text": "TOEIC dans deux mois, score plancher imposé par l’école, et vous ne savez pas où vous perdez des points ? J’ai créé Aim990 pour ça : un diagnostic de 8 minutes désigne vos trois compétences les plus faibles, puis chaque jour une seule compétence prescrite, et au jour 30 les mêmes compétences sont mesurées à nouveau. Hors ligne, sans compte, sans pub. Contenus originaux, non affilié à ETS, palier estimé non officiel. Le lien est en commentaire."
+  },
+  {
+   "date": "2026-10-23",
+   "app": "lumibopomofopro",
+   "app_id": "6775773117",
+   "ct": "bm_lumibopomofopro_us_th",
+   "locale": "en",
+   "task": "lumibopomofopro-conv-1",
+   "source": "conv_us_1",
+   "text": "Weekend Chinese school parents: your kid can name ㄅㄆㄇ but freezes when asked to blend ㄍㄨㄚ into one sound? Mine too.\n\nIn Lumi Bopomofo Pro, Bopomofo Fishing plays the blended syllable and your child catches the right fish. Tone Roller Coaster does the same for the five tones. It says the sound correctly every time.\n\nOne purchase, all 37 sounds, every level, every game. No ads, no in-app purchase pop-ups, no sign-up, no internet required.\n\nLink in the comments."
+  },
+  {
+   "date": "2026-10-25",
+   "app": "mochi",
+   "app_id": "6785004775",
+   "ct": "bm_mochi_br_th",
+   "locale": "pt-BR",
+   "task": "mochi-conv-1",
+   "source": "conv_br_1",
+   "text": "Vai viajar no feriado? Eu sou o desenvolvedor do Mochi e uso ele assim: uma lista “antes de sair de casa” com as 4 coisas que sempre esqueço (documento, carregador, gás, chaves), lembrete na manhã da viagem e o widget na Tela de Início pra conferir sem abrir o app. Toca no circulinho e pronto, sem aquele frio na barriga na porta. O Mochi é uma lista de tarefas fofa pra estudos, trabalho, compras e rotina, com 101 temas (5 grátis). Link nos comentários."
+  },
+  {
+   "date": "2026-10-26",
+   "app": "cyca",
+   "app_id": "6782251621",
+   "ct": "bm_cyca_us_th",
+   "locale": "en",
+   "task": "cyca-conv-2",
+   "source": "conv_us_2",
+   "text": "Before you put your period data into any app, ask one question: where does it go?\n\nI'm the indie developer behind Cyca, and my answer is: nowhere. No account, no servers, no tracking. Everything stays on your iPhone, and it works offline.\n\nTrack today and your period for free. Cyca Pro is a single lifetime purchase, never a subscription: future predictions, Personal Rhythm, the Smart Planner, full calendar history.\n\nLink in the comments."
+  },
+  {
+   "date": "2026-10-27",
+   "app": "snapport",
+   "app_id": "6780575828",
+   "ct": "bm_snapport_de_th",
+   "locale": "de-DE",
+   "task": "snapport-conv-2",
+   "source": "conv_de_2",
+   "text": "Die häufigste Frage zu Snapport: Lite oder Vollversion?\n\nSnapport Lite: alle Vorlagen und Werkzeuge kostenlos nutzbar, der erste Export inklusive.\n\nSnapport: einmal kaufen, dann gehört es dir. Kein Abo, keine In-App-Käufe, keine Werbung. Eigene Größen in mm, Zoll oder Pixeln, Druckbögen für 10×15, A4 und Letter.\n\nBeide arbeiten offline auf dem iPhone. Keine garantiert die Annahme; das entscheidet die Stelle, bei der du einreichst.\n\nLink in den Kommentaren."
+  },
+  {
+   "date": "2026-10-28",
+   "app": "claudeusagemini",
+   "app_id": "6818607603",
+   "ct": "bm_usagenow_de_th",
+   "locale": "de-DE",
+   "task": "claudeusagemini-conv-1",
+   "source": "conv_de_1",
+   "text": "Zwei Claude-Konten, dazu Copilot, und ich wusste nie, welches Fenster gerade frei ist. Deshalb zeigt UsageNow alle Konten nebeneinander, sortiert nach der nächsten Zurücksetzung, und blättert im Widget durch alle. Eine Warnung zum Zurücksetzen sagt mir, wann der lange Lauf starten kann. Auch auf Sperrbildschirm und Apple Watch. Erst 24 Stunden alles testen, dann einmal kaufen, kein Abo. Unabhängig von Anthropic und OpenAI. Link in den Kommentaren."
+  },
+  {
+   "date": "2026-10-29",
+   "app": "aim990",
+   "app_id": "6784974530",
+   "ct": "bm_aim990_fr_th",
+   "locale": "fr-FR",
+   "task": "aim990-conv-1",
+   "source": "conv_fr_1",
+   "text": "L’écoute du TOEIC se travaille dans le train : 8 minutes de dictée, 5 minutes de répétition guidée avec la voix de l’appareil, puis une conversation de Part 3 avec les questions lues avant l’audio. C’est ma routine avec Aim990, que j’ai développé pour les étudiants en BTS et en école de commerce. L’entraînement quotidien fonctionne hors ligne, et un seul achat débloque tout, sans abonnement. Non affilié à ETS, palier estimé non officiel. Le lien est en commentaire."
+  },
+  {
+   "date": "2026-10-30",
+   "app": "lumibopomofopro",
+   "app_id": "6775773117",
+   "ct": "bm_lumibopomofopro_us_th",
+   "locale": "en",
+   "task": "lumibopomofopro-conv-2",
+   "source": "conv_us_2",
+   "text": "A Chinese school teacher asked me for a Zhuyin app she could recommend without worrying what families would hit later. That's why Lumi Bopomofo Pro exists.\n\nOne purchase unlocks everything: 37 sounds, every level, five games. A parents page shows progress anytime. No ads, no outside links, no social features, no internet needed, so it runs on a classroom iPad without Wi-Fi.\n\nUniversal for iPhone and iPad, shared by the whole family. Link in the comments."
+  }
+ ]
 }

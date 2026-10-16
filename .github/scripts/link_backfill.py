@@ -408,7 +408,7 @@ def summarize(rows):
 
 def main(argv=None):
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["audit", "apply", "merge"])
+    ap.add_argument("cmd", choices=["audit", "apply", "merge", "diag"])
     ap.add_argument("--state-from", help="merge: the state file a run saved")
     ap.add_argument("--channels", nargs="+", default=["instagram", "threads"], choices=["instagram", "threads"])
     ap.add_argument("--max-new", type=int, default=5, help="links added per channel per run")
@@ -428,6 +428,23 @@ def main(argv=None):
     state = load_state()
     tokens = {"instagram": os.environ.get("IG_ACCESS_TOKEN", "").strip(), "threads": os.environ.get("THREADS_TOKEN", "").strip()}
     clients = {"instagram": OP.InstagramClient, "threads": OP.ThreadsClient}
+    if args.cmd == "diag":   # read-only: what the platform answers as the comments of the given posts (public text only)
+        for channel in args.channels:
+            if not tokens[channel]:
+                continue
+            client = clients[channel](tokens[channel]).me()
+            for pid in args.only or []:
+                try:
+                    raw = client._get(f"{pid}/comments" if channel == "instagram" else f"{pid}/replies",
+                                      fields="id,text,username,timestamp" + (",hidden" if channel == "instagram" else ""),
+                                      limit=50).get("data", [])
+                except Exception as exc:
+                    print(f"diag {channel} {pid}: read failed ({str(exc)[:160]})")
+                    continue
+                print(f"diag {channel} {pid}: {len(raw)} comments seen, token owner = {client.username}")
+                for c in raw[:12]:
+                    print(f"  {c.get('id')} user={c.get('username')} hidden={c.get('hidden')} text={_short(c.get('text'), 100)}")
+        return 0
     rows = []
     for channel in args.channels:
         if not tokens[channel]:

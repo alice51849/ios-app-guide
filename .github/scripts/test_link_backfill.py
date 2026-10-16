@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Tests for link_backfill.py (no network): the download link goes under our own posts that lack it, once."""
+import contextlib
 import copy
+import io
 import os
 import sys
 import unittest
@@ -242,7 +244,8 @@ class BackfillTest(unittest.TestCase):
             rows = self.run_channel(client, apply=True)
             self.assertEqual(rows[0]["status"], "snapshot_missing")
             self.assertEqual(client.attempts, 0)
-            self.assertEqual(B.main(["audit"]), 1)
+            with contextlib.redirect_stdout(io.StringIO()):   # the ::error:: line is not a real alert here
+                self.assertEqual(B.main(["audit"]), 1)
 
 
 class AppFinderTest(unittest.TestCase):

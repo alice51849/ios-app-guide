@@ -20,6 +20,7 @@ on:
         options:
           - audit
           - apply
+          - diag
         default: "audit"
       max_new:
         description: "Links added per channel in this run"

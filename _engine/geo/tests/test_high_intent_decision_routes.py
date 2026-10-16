@@ -1573,6 +1573,34 @@ class HighIntentRouteInventoryIntegrationTests(unittest.TestCase):
         shutil.copy2(routes.SYNC_CONTRACT_PATH, contract_target)
         return current_source
 
+    @unittest.skipUnless(
+        (GUIDE_REPOSITORY / "en-US").is_dir(),
+        "Guide page checkout is not mounted",
+    )
+    def test_current_registry_copy_matches_the_sealed_contract(self):
+        # Daily GEO rebuilds the finder catalog from the current registry
+        # and Guide pages before decision routes validate it. Recompute that
+        # projection here so a keyword/summary edit without a reseal fails
+        # when the copy changes, not hours later inside Daily GEO.
+        records = finder.catalog_records(
+            set(self.release["app_keys"]),
+            GUIDE_REPOSITORY,
+        )
+        _, copy_sha256 = routes._inventory_digests(records)
+        sealed = self.source["inventory_contract"]["copy_sha256"]
+        if copy_sha256 != sealed:
+            fingerprints = " ".join(
+                f"{item['key']}={routes._sha256_json(item)[:10]}"
+                for item in routes._inventory_projection(records)
+            )
+            self.fail(
+                "Finder copy changed without resealing "
+                "inventory_contract.copy_sha256 "
+                f"(current {copy_sha256[:10]} vs sealed {sealed[:10]}); "
+                "review the changed App copy, reseal and rerun "
+                f"--write-sync-contract. fingerprints: {fingerprints}"
+            )
+
     def test_context_inventory_recomputes_the_reviewed_contract(self):
         with tempfile.TemporaryDirectory(
             prefix=".high-intent-gitlink-base-test-",

@@ -58,9 +58,10 @@ jobs:
           TELEGRAM_SCHEDULE: ${{ github.event.schedule }}
         run: python3 .github/scripts/telegram_post.py
       - name: Post today's 7-second hook clip (video + App Store button)
-        # Asia morning (zh-Hant) and Americas (en) slots only; a clip problem
-        # never fails the daily post above.
-        if: steps.slot.outputs.should_post == 'true' && (github.event.schedule == '0 1 * * *' || github.event.schedule == '0 15 * * *')
+        # Asia morning (zh-Hant / ja / ko), Europe (de / fr / es / en) and Americas (en)
+        # slots, as planned in clips.json by schedule_posts.py; a clip problem never
+        # fails the daily post above.
+        if: steps.slot.outputs.should_post == 'true' && (github.event.schedule == '0 1 * * *' || github.event.schedule == '0 9 * * *' || github.event.schedule == '0 15 * * *')
         continue-on-error: true
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -72,7 +73,7 @@ jobs:
       - name: Record the post link on the promotion page
         # office.cait518.cc lists every clip post; clip_posts.py wrote the
         # link to clip-posts.json and refreshed app-improvements.json.
-        if: steps.slot.outputs.should_post == 'true' && (github.event.schedule == '0 1 * * *' || github.event.schedule == '0 15 * * *')
+        if: steps.slot.outputs.should_post == 'true' && (github.event.schedule == '0 1 * * *' || github.event.schedule == '0 9 * * *' || github.event.schedule == '0 15 * * *')
         continue-on-error: true
         run: |
           if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi

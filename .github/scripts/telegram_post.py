@@ -43,6 +43,7 @@ if str(GEO_ENGINE) not in sys.path:
     sys.path.insert(0, str(GEO_ENGINE))
 
 import market_availability as market  # noqa: E402
+import review_links  # noqa: E402
 
 INTENT_CATALOG_PATH = (
     REPO_ROOT
@@ -711,10 +712,15 @@ def pick(pool, now=None):
     return candidates(pool, now)[0]
 
 
-def compose_text(item, android=True):
+def compose_text(item, android=True, review=True):
     url = campaign_app_store_url(item.get("url"), "soc_tg_guide")
     play = play_store_url(item.get("app"), "soc_tg_guide") if android else None
     links = f"👉 {url}" + (f"\n🤖 Google Play: {play}" if play else "")
+    # Existing-user review link, only for the review_links.json pairs (category
+    # leader with <= 20 ratings) in their own locale; no ct, no reward.
+    rate = review_links.for_official(item.get("app"), item.get("lang")) if review else None
+    if rate:
+        links += "\n📝 " + "\n".join(review_links.lines(rate))
     return (
         f"{item['text']}\n\n{links}\n\n"
         f"{item_footer(item)}"
@@ -1022,6 +1028,9 @@ def choose_unpublished(pool, ledger, now, slot=None, skip_apps=frozenset()):
         and _digest(compose_text(item)) not in used
         # Posts sent before the Google Play line was added count as used too.
         and _digest(compose_text(item, android=False)) not in used
+        # So do posts sent before the review line (review_links.json) was added.
+        and _digest(compose_text(item, review=False)) not in used
+        and _digest(compose_text(item, android=False, review=False)) not in used
     ]
     # Native gaps get the next eligible existing slot, never additional sends.
     return next(

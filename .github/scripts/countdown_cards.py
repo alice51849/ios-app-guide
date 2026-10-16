@@ -291,6 +291,13 @@ def threads_image(url, text, links, label="countdown"):
     if not token or not user:
         print(f"{label}: Threads secrets missing")
         return None
+    # The 3-posts-a-day cap is per account (hook clips, queued posts, backfills,
+    # threads-autopilot and manual posts all count), so check the live count
+    # right before posting; an unknown count holds the post.
+    import threads_series
+    if not threads_series.has_room(token, threads_series.load()["daily_cap"]):
+        print(f"{label}: Threads account at its daily cap (or count unknown); Threads skipped")
+        return None
     api = "https://graph.threads.net/v1.0"
     user = _get(f"{api}/me?fields=id&access_token={token}").get("id") or user  # secret may be stale
     c = _post(f"{api}/{user}/threads", {"media_type": "IMAGE", "image_url": url, "text": text, "access_token": token})["id"]

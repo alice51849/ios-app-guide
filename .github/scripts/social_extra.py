@@ -57,6 +57,7 @@ sys.path.insert(0, str(HERE))
 
 import clip_posts  # noqa: E402
 import clip_progress  # noqa: E402
+import review_links  # noqa: E402
 import countdown_cards  # noqa: E402
 import post_qa  # noqa: E402
 import search_caption as SC  # noqa: E402
@@ -245,11 +246,17 @@ def clip_item(key, clip, channel, day=None):
     ct = CT[channel]
     t = clip_posts.text_for(clip["locale"])
     v = variant_for(clip, channel, day or SC.today())
-    return {"kind": "clip", "key": key, "locale": clip["locale"], "app": clip["app"], "video": clip["url"],
+    item = {"kind": "clip", "key": key, "locale": clip["locale"], "app": clip["app"], "video": clip["url"],
             "hook": v["lead"], "name": clip["name"], "title": SC.pin_title(clip, v), "tags": SC.tags(clip, 10),
             "caption": clip_posts.caption(clip, channel, v), "button": t["button"], "variant": v["id"],
             "alt": SC.alt_text(clip, v), "clip": clip, "v": v,
             "store": clip_posts.with_campaign(clip["store_url"], ct), "play": clip_posts.play_url(clip, ct)}
+    # Existing-user review link (review_links.json pairs only): {"label", "url"}, no ct. It reaches the
+    # feed as is, so the YouTube Shorts description and threads-autopilot's Bluesky posts carry it too.
+    review = review_links.for_clip(clip)
+    if review:
+        item["review"] = review
+    return item
 
 
 def todays_clips(data, posts, channel, day, slot):
@@ -354,7 +361,7 @@ def link_lines(item):
     lines = [f"{item['button']}: {item['store']}"]
     if item.get("play"):
         lines.append(f"Google Play: {item['play']}")
-    return lines
+    return lines + review_links.lines(item.get("review"))
 
 
 # ---------------------------------------------------------------- Facebook Page
@@ -493,6 +500,8 @@ def bsky_video(s, data, tries=60):
 def post_bluesky(item):
     s = bsky_session()
     links = [("App Store", item["store"])] + ([("Google Play", item["play"])] if item.get("play") else [])
+    if item.get("review"):  # the review sentence is its own link facet (review_links.json pairs only)
+        links.append((item["review"]["label"], item["review"]["url"]))
     text, facets = bsky_rich(item["caption"], links)
     auth = {"Authorization": f"Bearer {s['jwt']}"}
     if item["kind"] == "card":
@@ -548,6 +557,7 @@ def yt_meta(item):
     """(title, description, tags): search-first for clips (search_caption.youtube), the plain shape otherwise."""
     if item.get("clip"):
         links = [f"App Store: {item['store']}"] + ([f"Google Play: {item['play']}"] if item.get("play") else [])
+        links += review_links.lines(item.get("review"))  # review_links.json pairs only
         return SC.youtube(item["clip"], item["v"], links)
     title, desc = yt_text(item["hook"], item["name"], item["store"], item.get("play"), item["tags"])
     return title, desc, [t.lstrip("#") for t in item["tags"]][:10]
@@ -745,6 +755,9 @@ def post_naver(item):
     if item.get("play"):
         links.append(f'<a href="{html.escape(item["play"])}">Google Play에서 받기</a>')
     body = f"<p>{text}</p>{media}<p>{' · '.join(links)}</p>"
+    if item.get("review"):  # review_links.json pairs only (UsageNow / OnePage PPT / CV Desk in Korea)
+        body += (f'<p><a href="{html.escape(item["review"]["url"])}" rel="nofollow">'
+                 f'{html.escape(item["review"]["label"])}</a></p>')
     postid = naver_call("metaWeblog.newPost", nid, nid, pw, {"title": f"{item['name']} — {item['title']}", "description": body}, True)
     return {"id": str(postid), "link": f"https://blog.naver.com/{nid}/{postid}"}
 
@@ -787,6 +800,11 @@ def post_plurk(item, limit=360):
     else:
         media = item["video"]
     tail = f"\n{media}\n{item['store']} ({item['button']})"
+    # review_links.json pairs only (OnePage PPT in Taiwan): the review link goes before Google Play, since
+    # one or two ratings can flip the category there and both links rarely fit in 360 characters.
+    review = "\n".join(["", *review_links.lines(item.get("review"))]) if item.get("review") else ""
+    if review and len(tail) + len(review) < limit - 40:
+        tail += review
     if item.get("play") and len(tail) + len(item["play"]) + 16 < limit - 40:
         tail += f"\n{item['play']} (Google Play)"
     head = item["caption"]

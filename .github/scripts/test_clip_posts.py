@@ -13,6 +13,7 @@ os.environ.setdefault("POST_QA_OFFLINE", "1")  # the pre-post QA gate makes no n
 
 import clip_posts as C  # noqa: E402
 import clip_progress as P  # noqa: E402
+import review_links as R  # noqa: E402
 
 
 def clip(app, locale):
@@ -382,6 +383,81 @@ class ClipProgressTest(unittest.TestCase):
         later = P.build_section(DATA, [], {}, self.NOW + dt.timedelta(minutes=33), None)
         self.assertNotEqual(md, later)
         self.assertEqual(P.section_body("# T\n\n" + md), P.section_body("# T\n\n" + later))
+
+
+class ReviewLinksTest(unittest.TestCase):
+    """review_links.json: the existing-user review link goes only to the 9 App x country pairs whose
+    category leader has <= 20 ratings (00_GrowthEngine reports/top1_gap_2026-10-16.md), in their locale."""
+
+    PAIRS = {("6818607603", "kr"), ("6806826699", "de"), ("6798814385", "tw"), ("6798814385", "kr"),
+             ("6779552704", "de"), ("6818607603", "us"), ("6782275018", "jp"), ("6773017109", "us"),
+             ("6781337213", "kr")}
+
+    @staticmethod
+    def pair_clip(app_id, locale, hook):
+        return dict(clip("claudeusagemini", locale), hook=hook, name="UsageNow", search="UsageNow",
+                    store_url=f"https://apps.apple.com/us/app/id{app_id}?pt=118326163&ct=h7_x&mt=8")
+
+    def test_exactly_the_nine_pairs_with_their_own_locale(self):
+        cfg = R.config()
+        self.assertEqual({(p["app_id"], p["country"]) for p in cfg["pairs"]}, self.PAIRS)
+        self.assertTrue(all(p["top1_ratings"] <= 20 for p in cfg["pairs"]))
+        country_locale = {"kr": ("ko", "ko"), "de": ("de-DE", "de"), "tw": ("zh-Hant", "zh-Hant"),
+                          "us": ("en-US", "en"), "jp": ("ja", "ja")}
+        for p in cfg["pairs"]:
+            self.assertEqual((p["official_locale"], p["clip_locale"]), country_locale[p["country"]])
+
+    def test_labels_are_the_geo_review_sentences_word_for_word(self):
+        import ast
+        geo = Path(__file__).resolve().parents[2] / "_engine" / "geo" / "gen_app_store_review_ctas.py"
+        tree = ast.parse(geo.read_text(encoding="utf-8"))
+        labels = next(ast.literal_eval(node.value) for node in tree.body if isinstance(node, ast.Assign)
+                      and getattr(node.targets[0], "id", None) == "REVIEW_LABELS")
+        for locale, label in R.config()["labels"].items():
+            self.assertEqual(label, labels[locale], locale)
+
+    def test_link_is_the_bare_review_action_without_attribution(self):
+        url = R.review_url("6818607603")
+        self.assertEqual(url, "https://apps.apple.com/app/id6818607603?action=write-review")
+        self.assertRegex(url, R.REVIEW_URL_RE)
+        for token in ("ct=", "pt=", "mt="):
+            self.assertNotIn(token, url)
+        with self.assertRaises(ValueError):
+            R.review_url("12")
+
+    def test_incentives_superlatives_and_duplicates_are_refused(self):
+        base = R.config()
+        for bad in ("Leave 5 stars!", "Rate it ⭐", "Review it and get a gift", "Get Pro free",
+                    "給五星好評", "The best app? Rate it", "Rate it: https://x"):
+            with self.subTest(bad=bad):
+                with self.assertRaises(ValueError):
+                    R.validate(dict(base, labels=dict(base["labels"], ko=bad)))
+        with self.assertRaises(ValueError):
+            R.validate(dict(base, pairs=base["pairs"] + base["pairs"][:1]))
+
+    def test_matched_by_app_id_and_locale_never_by_key(self):
+        self.assertIsNotNone(R.for_clip(self.pair_clip("6818607603", "ko", "AI 한도 초과?")))  # key claudeusagemini
+        self.assertIsNotNone(R.for_clip(self.pair_clip("6818607603", "en", "Hit your AI limit?")))
+        self.assertIsNone(R.for_clip(self.pair_clip("6818607603", "ja", "上限？")))       # JP leader has 11,602
+        self.assertIsNone(R.for_clip(self.pair_clip("6785004775", "en", "Cute list")))  # Mochi: not a pair
+        self.assertIsNone(R.for_clip(clip("a", "en")))
+        self.assertEqual(R.for_official("6798814385", "zh-Hant")["url"],
+                         "https://apps.apple.com/app/id6798814385?action=write-review")
+        self.assertIsNone(R.for_official("6798814385", "zh-Hans"))
+        self.assertIsNone(R.for_official("6818607603", "en-GB"))
+
+    def test_only_the_telegram_caption_carries_it_and_it_passes_qa(self):
+        c = self.pair_clip("6818607603", "ko", "작업 중에 또 AI 한도 초과?")
+        variant = {"id": "a", "lead": c["hook"]}
+        cap = C.caption(c, "telegram", variant)
+        self.assertIn("https://apps.apple.com/app/id6818607603?action=write-review", cap)
+        self.assertIn(R.config()["labels"]["ko"], cap)
+        self.assertEqual(C.post_qa.clip_problems(c, "telegram", cap, online=False), [])
+        self.assertTrue(cap.split("\n")[-1].startswith("#"))  # hashtags stay last
+        for channel in ("instagram", "threads"):
+            self.assertNotIn("write-review", C.caption(c, channel, variant))
+        other = clip("a", "ko")
+        self.assertNotIn("write-review", C.caption(other, "telegram", {"id": "a", "lead": "훅"}))
 
 
 if __name__ == "__main__":

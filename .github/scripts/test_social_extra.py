@@ -619,5 +619,72 @@ class PageTest(unittest.TestCase):
         self.assertEqual(log["posts"][0]["id"], "1295")
 
 
+def pair_clip(locale="ko", hook="작업 중에 또 AI 한도 초과?"):
+    """A UsageNow clip (key claudeusagemini) in a review_links.json pair locale."""
+    return dict(search_clip("claudeusagemini", locale, hook),
+                store_url="https://apps.apple.com/us/app/id6818607603?pt=118326163&ct=h7_claudeusagemini&mt=8")
+
+
+REVIEW_URL = "https://apps.apple.com/app/id6818607603?action=write-review"
+
+
+class ReviewLinkFeedTest(unittest.TestCase):
+    """The existing-user review link (review_links.json pairs only) reaches the feed and the link lines."""
+
+    def test_pair_clip_items_carry_the_review_and_others_do_not(self):
+        it = S.clip_item("claudeusagemini/ko", pair_clip(), "youtube", DAY)
+        self.assertEqual(it["review"]["url"], REVIEW_URL)
+        self.assertEqual(it["review"]["label"], S.review_links.config()["labels"]["ko"])
+        self.assertNotIn("review", S.clip_item("claudeusagemini/ja", pair_clip("ja", "また上限？"), "youtube", DAY))
+        self.assertNotIn("review", S.clip_item("a/ko", clip("a", "ko"), "youtube", DAY))
+        self.assertEqual(S.public(it, "youtube")["review"], it["review"])  # feed.json keeps it
+
+    def test_feed_export_keeps_the_review_for_bluesky_and_youtube(self):
+        data = {"clips": {"claudeusagemini/en": pair_clip("en", "Hit your AI limit mid-task again?"),
+                          "a/en": clip("a", "en")},
+                "schedule": [{"date": DAY.isoformat(), "slot": 1, "channel": "instagram",
+                              "clip": "claudeusagemini/en"}]}
+        feed = S.export(DAY, check=False, data=data, perf={})
+        day_items = {i["key"]: i for i in feed["items"]["bluesky"]}
+        self.assertEqual(day_items["claudeusagemini/en"]["review"]["url"], REVIEW_URL)
+        pool = {i["key"]: i for i in feed["pool"]["youtube"]}
+        self.assertEqual(pool["claudeusagemini/en"]["review"]["url"], REVIEW_URL)
+        self.assertIn(REVIEW_URL, pool["claudeusagemini/en"]["youtube"]["description"])
+        self.assertNotIn("review", pool["a/en"])
+        self.assertNotIn("write-review", pool["a/en"]["youtube"]["description"])
+
+    def test_youtube_description_puts_it_after_the_store_links(self):
+        it = S.clip_item("claudeusagemini/ko", pair_clip(), "youtube", DAY)
+        _, desc, _ = S.yt_meta(it)
+        lines = desc.splitlines()
+        store = next(i for i, line in enumerate(lines) if line.startswith("App Store: "))
+        self.assertEqual(lines[store + 1:store + 3], [it["review"]["label"], REVIEW_URL])
+        self.assertNotIn("ct=", lines[store + 2])
+
+    def test_link_lines_naver_and_plurk_carry_it(self):
+        it = S.clip_item("claudeusagemini/ko", pair_clip(), "naver", DAY)
+        self.assertEqual(S.link_lines(it)[-2:], [it["review"]["label"], REVIEW_URL])
+        seen = []
+
+        def rpc(url, data, headers):
+            params, method = xmlrpc.client.loads(data)
+            seen.append((method, params))
+            return (200, {}, xmlrpc.client.dumps(("2234",), methodresponse=True).encode())
+        with mock.patch.dict(os.environ, {"NAVER_ID": "lumi", "NAVER_BLOG_API_PASSWORD": "pw"}, clear=True), \
+                mock.patch.object(S, "http", Fake([("POST", "api.blog.naver.com/xmlrpc", rpc)])):
+            S.post_naver(it)
+        self.assertIn(f'<a href="{REVIEW_URL}" rel="nofollow">', seen[0][1][3]["description"])
+        tw = dict(pair_clip("zh-Hant", "落落長的筆記 變成一頁簡報"),
+                  store_url="https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=h7_onepageppt&mt=8")
+        pk = S.clip_item("onepageppt/zh-Hant", tw, "plurk", DAY)
+        fake = Fake([("POST", "/Timeline/plurkAdd", {"plurk_id": 1295})])
+        with mock.patch.dict(os.environ, {k: "v" for k in S.SECRETS["plurk"]}, clear=True), \
+                mock.patch.object(S, "http", fake):
+            S.post_plurk(pk)
+        fields = dict(__import__("urllib.parse").parse.parse_qsl(fake.find("plurkAdd")[0]["data"].decode()))
+        self.assertIn("https://apps.apple.com/app/id6798814385?action=write-review", fields["content"])
+        self.assertLessEqual(len(fields["content"]), 360)
+
+
 if __name__ == "__main__":
     unittest.main()

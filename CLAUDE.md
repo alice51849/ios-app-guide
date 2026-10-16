@@ -38,6 +38,7 @@
 - 互推設定（support_network/crosspromo_config.json）的清單和 geo/answer_personas.py 的 PENDING_PERSONAS 必須在同一個 commit 一起改，否則互推網會 fail-closed 停擺。
 - threads-autopilot 的 PUBLISHER_REVIEWED_SOURCE_DIGEST 要先經另一個模型複審，才能重新釘選。
 - AgentOffice（~/AgentOffice）和 ~/.growth-runtime 只在本機 Mac 上；要改這兩個地方，由雲端用 send_message 直接交給在線的本機 session 處理，不要叫我轉貼。
+- 「上線」只看線上實際狀態，不看綠燈：ios-app-guide 的 push 觸發的 Pages run 只跑 preflight，真正上傳要靠配對發布（00_GrowthEngine geo/pages gitlink 綁到新的 Guide main 再 dispatch）。回報「已上線」之前，必須確認線上 deployment generation（GitHub Deployments 的 github-pages 最新一筆，或 /.well-known/deployment.json）已包含該 commit；其他站與通路同理，要有讀回證據（網址 200、發文收據）才算完成（2026-10-16 guide 站 10-13 起沒上傳、3 天沒人發現，業主：「要確保之後不可以再發生」）。
 
 ## 交接（防帳號或 session 中斷）
 - 進度一律存在 GitHub，不只留在對話或容器裡：換帳號、session 中斷或封存後，別的 session 只靠 GitHub 就要能接手（業主 2026-10-16：「以後要更頻繁的更新到github…避免該帳號被中斷之後其他帳號…沒辦法接續」）。

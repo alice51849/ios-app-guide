@@ -15,6 +15,7 @@ listed, so nothing here can touch a stranger's post.
 """
 import json
 import re
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -159,10 +160,25 @@ class ThreadsClient(_Client):
                  "timestamp": r.get("timestamp", ""), "own": bool(r.get("is_reply_owned_by_me")),
                  "we_replied": False} for r in rows]
 
-    def reply(self, comment_id, text):
+    # A new container is not ready to publish at once: publishing right away answers "(#24) The requested
+    # resource does not exist". threads_post.publish_post waits 35 s and tries twice more 25 s apart; so does this.
+    PUBLISH_WAIT = 35
+    PUBLISH_RETRIES = (25, 25)
+
+    def reply(self, comment_id, text, sleeper=time.sleep):
         container = self._post(f"{self.user_id}/threads", media_type="TEXT", text=text,
                                reply_to_id=comment_id)["id"]
-        return self._post(f"{self.user_id}/threads_publish", creation_id=container).get("id")
+        sleeper(self.PUBLISH_WAIT)
+        waits = (0,) + tuple(self.PUBLISH_RETRIES)
+        for i, wait in enumerate(waits):
+            if wait:
+                sleeper(wait)
+            try:   # the same container again: it can only ever be published once, never a second reply
+                return self._post(f"{self.user_id}/threads_publish", creation_id=container).get("id")
+            except ApiError as exc:
+                if exc.code == 24 and i < len(waits) - 1:   # not ready yet
+                    continue
+                raise ApiError(exc.status, exc.code, f"publish: {exc.message}") from None
 
     def insights(self, media_id):
         m = self.metrics(self._get(f"{media_id}/insights", metric="views,likes,replies,reposts,quotes"))

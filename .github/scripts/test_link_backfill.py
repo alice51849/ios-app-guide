@@ -358,6 +358,61 @@ class BackfillTest(unittest.TestCase):
         self.assertEqual(len(client.writes), before)
 
 
+class ThreadsPublishWaitTest(unittest.TestCase):
+    """A Threads reply is a container plus a publish; the publish needs the container to be ready first."""
+
+    def client(self, publish_answers, container_error=None):
+        c = OP.ThreadsClient("secret-token")
+        c.user_id = "42"
+        c.calls, c.sleeps = [], []
+
+        def post(url, fields):
+            step = url.rsplit("/", 1)[-1]
+            c.calls.append(step)
+            if step == "threads":
+                if container_error:
+                    raise container_error
+                return {"id": "container-1"}
+            answer = publish_answers.pop(0)
+            if isinstance(answer, Exception):
+                raise answer
+            return answer
+        c.post = post
+        return c
+
+    def test_waits_then_publishes_the_same_container_again(self):
+        c = self.client([OP.ApiError(400, 24, "The requested resource does not exist"),
+                         OP.ApiError(400, 24, "The requested resource does not exist"), {"id": "reply-9"}])
+        self.assertEqual("reply-9", c.reply("post-1", "text", sleeper=c.sleeps.append))
+        self.assertEqual([35, 25, 25], c.sleeps)
+        self.assertEqual(["threads", "threads_publish", "threads_publish", "threads_publish"], c.calls)
+
+    def test_never_creates_a_second_container_when_it_keeps_failing(self):
+        err = OP.ApiError(400, 24, "The requested resource does not exist")
+        c = self.client([err, err, err])
+        with self.assertRaises(OP.ApiError) as ctx:
+            c.reply("post-1", "text", sleeper=c.sleeps.append)
+        self.assertIn("publish:", str(ctx.exception))
+        self.assertEqual(1, c.calls.count("threads"))
+        self.assertEqual(3, c.calls.count("threads_publish"))
+
+    def test_another_answer_is_not_retried(self):
+        c = self.client([OP.ApiError(400, 4, "Application request limit reached")])
+        with self.assertRaises(OP.ApiError) as ctx:
+            c.reply("post-1", "text", sleeper=c.sleeps.append)
+        self.assertEqual(4, ctx.exception.code)
+        self.assertTrue(B.is_throttle(ctx.exception))
+        self.assertEqual([35], c.sleeps)
+        self.assertEqual(1, c.calls.count("threads_publish"))
+
+    def test_a_failed_container_publishes_nothing(self):
+        c = self.client([], container_error=OP.ApiError(400, 100, "Invalid parameter"))
+        with self.assertRaises(OP.ApiError):
+            c.reply("post-1", "text", sleeper=c.sleeps.append)
+        self.assertEqual(["threads"], c.calls)
+        self.assertEqual([], c.sleeps)
+
+
 class AppFinderTest(unittest.TestCase):
     def finder(self):
         names = [("Mochi: Cute Checklist", "mochi", "1"), ("Mochi DoneStamp: Last Time", "mochidonestamp", "2"),

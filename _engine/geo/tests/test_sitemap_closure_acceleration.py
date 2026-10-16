@@ -347,7 +347,9 @@ class ParallelSuiteTests(unittest.TestCase):
             parallel_unittest.discover_tests(GEO / "tests")
 
     def test_parallel_matches_serial_ids_and_failure_propagation(self):
-        with tempfile.TemporaryDirectory(dir=GEO / "tests") as directory:
+        # Outside geo/tests: the fixture writes test_*.py files, and parallel lanes
+        # that scan the source tree would read them while they are being removed.
+        with tempfile.TemporaryDirectory(prefix="parallel-fixture-") as directory:
             fixture = Path(directory)
             for module in (
                 "test_parallel_fixture_alpha",

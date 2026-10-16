@@ -51,15 +51,31 @@ KNOWN_ORIGIN_LITERALS = SYNC_CONTRACT_FROZEN | {
 }
 
 
+def _is_transient(relative: Path) -> bool:
+    # Other tests write fixture modules into tempfile.TemporaryDirectory(dir=geo/tests)
+    # ("tmp" prefix) and delete them while parallel lanes run; they are not sources.
+    parts = relative.parts
+    return len(parts) > 3 and parts[:2] == ("geo", "tests") and parts[2].startswith("tmp")
+
+
 def _python_sources() -> list[Path]:
     paths = []
     for base in ("geo", "agent"):
         for path in sorted((ROOT / base).rglob("*.py")):
             relative = path.relative_to(ROOT)
-            if "pages" in relative.parts:
+            if "pages" in relative.parts or _is_transient(relative):
                 continue
             paths.append(path)
     return paths
+
+
+def _read_source(path: Path) -> str | None:
+    try:
+        return path.read_text(encoding="utf-8")
+    except FileNotFoundError:
+        # Only a transient fixture can vanish mid-run; a missing real source still
+        # fails the tests that import it.
+        return None
 
 
 class PublicHostSingleSourceTest(unittest.TestCase):
@@ -100,7 +116,9 @@ class PublicHostSingleSourceTest(unittest.TestCase):
             relative = path.relative_to(ROOT).as_posix()
             if relative in KNOWN_ORIGIN_LITERALS:
                 continue
-            text = path.read_text(encoding="utf-8")
+            text = _read_source(path)
+            if text is None:
+                continue
             if ORIGIN_GUIDE_URL in text:
                 offenders.append(relative)
         self.assertEqual(
@@ -129,7 +147,9 @@ class PublicHostSingleSourceTest(unittest.TestCase):
         missing = []
         for path in _python_sources():
             relative = path.relative_to(ROOT).as_posix()
-            text = path.read_text(encoding="utf-8")
+            text = _read_source(path)
+            if text is None:
+                continue
             if (
                 "PUBLIC_SITE" not in text
                 or path.name == "site_config.py"

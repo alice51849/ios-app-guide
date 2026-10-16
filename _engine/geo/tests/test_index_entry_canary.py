@@ -41,6 +41,9 @@ def _site_root(geo: Path) -> Path:
 
 
 PAGES = _site_root(GEO)
+if str(GEO) not in sys.path:
+    sys.path.insert(0, str(GEO))
+import index_entry_canary_locales as canary_locales  # noqa: E402
 # 00_GrowthEngine 的權威副本裡,站台 (geo/pages) 是 gitignored 的巢狀 repo,
 # 隔離 worktree 不會有它。沒有站台就跳過需要站台的檢查,而不是假裝失敗;
 # 有站台(雲端鏡像 checkout)時這些檢查一定要真的跑並且會失敗。
@@ -313,15 +316,29 @@ class InvariantsTest(unittest.TestCase):
                 self.assertEqual(len(declared), expected,
                                  f"{slug}:實際變體 {len(variants)} 個,宣告 {len(declared)} 個 hreflang")
                 self.assertIn("x-default", declared)
+                # 不只數量:每個 hreflang 都要指向自己語系的那一頁,母語頁 canonical 指回自己。
+                self.assertEqual(
+                    [],
+                    canary_locales.hreflang_problems(
+                        PAGES, slug, variants, canary_locales.default_site()),
+                )
 
     def test_measured_variant_counts_match_the_manifest(self) -> None:
-        """manifest 不得宣稱某頁有它實際沒有的在地化版本。"""
-        locales = [d.name for d in PAGES.iterdir()
-                   if d.is_dir() and re.fullmatch(r"[a-z]{2}(-[A-Za-z]{2,4})?", d.name)]
+        """紀錄不得宣稱某頁有它實際沒有的在地化版本,也不得漏掉實際存在的版本。
+
+        現行紀錄(_engine/geo/index_entry_canary_locales.json)由
+        index_entry_canary_locales.py 依實際站台推導:補語系會自動記進去,
+        已記錄的語系消失則在產生時 fail-closed。這裡逐語系完全比對,不是 >=。
+        """
+        record = canary_locales.load_state(PAGES)
+        self.assertIsNotNone(record, "站台缺少 index-entry canary 語系紀錄")
+        measured = canary_locales.measure(PAGES, CANARIES)
+        self.assertEqual(measured, record)
+        # 2026-09-12 的歷史基準:之後的版本只會增加,實測不得少於當時。
         for slug, expected in MANIFEST["locale_policy"]["measured_2026_09_12"].items():
             with self.subTest(slug):
-                actual = sum(1 for l in locales if (PAGES / l / "answers" / f"{slug}.html").is_file())
-                self.assertEqual(actual, expected["variants"])
+                self.assertLessEqual(
+                    expected["variants"], len(measured["canaries"][slug]))
 
     def test_no_fabricated_english_pseudo_locale_pages(self) -> None:
         """不為 exact50 造英文假母語:本次未新增任何語系目錄下的 canary 檔案。"""

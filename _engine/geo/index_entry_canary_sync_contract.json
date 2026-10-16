@@ -19,13 +19,13 @@
     {
       "growth": "geo/index_entry_canary_manifest.json",
       "guide": "_engine/geo/index_entry_canary_manifest.json",
-      "sha256": "c13adb08a936f7570a24acc422caa8931191ab72786a3903123eb7b1f0be4e09",
+      "sha256": "84245fa468528747ca36e04de31bea480b82cd11710b69d1b2e2fb1621eaf320",
       "role": "canary 清單、在地化實測值、回退步驟與 E0 Gate 契約"
     },
     {
       "growth": "geo/tests/test_index_entry_canary.py",
       "guide": "_engine/geo/tests/test_index_entry_canary.py",
-      "sha256": "4c021dc8f9103a9694827975dad66a8bd8fc659eb251ad66420ece96eb7123f1",
+      "sha256": "986fe27046fa1f0e99349885334d970ee0aa5d492507efac4be2ae74c242cbfa",
       "role": "契約測試;以 _site_root() 同時支援兩種佈局,因此兩邊可維持 byte 相同"
     }
   ],

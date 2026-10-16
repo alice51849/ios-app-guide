@@ -105,6 +105,29 @@ class ThreadsCapTest(unittest.TestCase):
             self.assertIsNone(U.post_threads("https://x/card.jpg", {"caption": "c"}, U.pick(DAY0), DAY0))
         image.assert_not_called()
 
+    def test_card_image_checks_the_live_account_cap_before_posting(self):
+        import threads_series as S
+        env = {"THREADS_TOKEN": "t", "THREADS_USER_ID": "u"}
+        with mock.patch.dict(os.environ, env), \
+                mock.patch.object(S, "posts_today", return_value=3), \
+                mock.patch.object(U.cd, "_post") as post:
+            self.assertIsNone(U.cd.threads_image("https://x/card.jpg", "c", ["App Store: x"], label="utility"))
+        post.assert_not_called()
+        # A count that fails holds the post too.
+        with mock.patch.dict(os.environ, env), \
+                mock.patch.object(S, "posts_today", side_effect=OSError("down")), \
+                mock.patch.object(U.cd, "_post") as post:
+            self.assertIsNone(U.cd.threads_image("https://x/card.jpg", "c", ["App Store: x"]))
+        post.assert_not_called()
+        # Under the cap the image goes out and the links go in the first reply.
+        with mock.patch.dict(os.environ, env), \
+                mock.patch.object(S, "posts_today", return_value=2), \
+                mock.patch.object(U.cd, "_get", return_value={"id": "u"}), \
+                mock.patch.object(U.cd.time, "sleep"), \
+                mock.patch.object(U.cd, "_post", side_effect=[{"id": "c1"}, {"id": "m1"}, {"id": "r1"}, {"id": "r2"}]) as post:
+            self.assertEqual(U.cd.threads_image("https://x/card.jpg", "c", ["App Store: x"]), "m1")
+        self.assertEqual(post.call_count, 4)
+
 
 class PostTest(unittest.TestCase):
     def test_telegram_buttons_and_message_link(self):

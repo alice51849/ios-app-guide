@@ -44,11 +44,16 @@ jobs:
         run: |
           cd .github/scripts
           python3 -m unittest -q test_guide_auto_release test_line_watchdog
+      # GROWTH_PUSH_TOKEN (the existing Growth push token, if the owner copies it
+      # here) can bind the gitlink; the read-only deploy key cannot, and then
+      # this job only judges and alarms while 00_GrowthEngine's
+      # guide-auto-release.yml binds and dispatches.
       - name: Check out 00_GrowthEngine for the gitlink
         uses: actions/checkout@v4
         with:
           repository: alice51849/00_GrowthEngine
-          ssh-key: ${{ secrets.GROWTH_ENGINE_DEPLOY_KEY }}
+          token: ${{ secrets.GROWTH_PUSH_TOKEN || github.token }}
+          ssh-key: ${{ secrets.GROWTH_PUSH_TOKEN == '' && secrets.GROWTH_ENGINE_DEPLOY_KEY || '' }}
           path: .engine
           fetch-depth: 1
           sparse-checkout: |

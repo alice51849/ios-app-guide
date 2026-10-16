@@ -136,6 +136,20 @@ class RunTests(unittest.TestCase):
         self.assertIn(ar.OWNER_MENTION, created[0][-1])
         self.assertEqual("issue_created", result["issue"])
 
+    def test_read_only_gitlink_credential_holds_and_still_alarms(self):
+        def read_only_git(argv):
+            self.git_calls.append(argv)
+            if "push" in argv:
+                raise gr.ReleaseError("git push failed: key is read only")
+            if "ls-tree" in argv:
+                return f"160000 commit {LIVE}\tgeo/pages"
+            return GROWTH if "rev-parse" in argv else ""
+        gh = self.gh()
+        result = self.run_once(gh, git_runner=read_only_git)
+        self.assertTrue(result["action"].startswith("hold: gitlink bind failed"))
+        self.assertFalse([argv for argv in gh.calls if argv[:3] == ["gh", "workflow", "run"]])
+        self.assertEqual("issue_created", result["issue"])
+
     def test_fresh_lag_dispatches_without_an_alarm(self):
         gh = self.gh(waiting_hours=2)
         result = self.run_once(gh)

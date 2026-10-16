@@ -175,9 +175,18 @@ def run(*, gh: Gh, fetch: Callable[[str], bytes], site: str, guide_root: Path, g
         else:
             if engine is None:
                 raise gr.ReleaseError("--engine-dir is required to dispatch")
-            growth_sha = bind_gitlink(engine, guide_sha, runner=git_runner)
-            dispatch_paired(gh, guide_sha, growth_sha, live_sha, notification_hold(guide_root))
-            action = "dispatched"
+            try:
+                growth_sha = bind_gitlink(engine, guide_sha, runner=git_runner)
+            except gr.ReleaseError as error:
+                # A read-only credential (the Guide repo's Growth deploy key) cannot
+                # bind; the 00_GrowthEngine copy of this job binds with its own token.
+                action = f"hold: gitlink bind failed ({str(error)[:160]})"
+            else:
+                if any(run.get("status") != "completed" for run in paired_runs(gh)):
+                    action = "hold: another paired release started meanwhile"
+                else:
+                    dispatch_paired(gh, guide_sha, growth_sha, live_sha, notification_hold(guide_root))
+                    action = "dispatched"
     body = stale_body(live_sha, guide_sha, pending, lag, action) if pending and lag > stale_hours else None
     issue = "skipped (dry run)" if dry_run else reconcile_stale(gh, body)
     return {"live": live_sha, "guide": guide_sha, "growth": growth_sha, "pending": len(pending),

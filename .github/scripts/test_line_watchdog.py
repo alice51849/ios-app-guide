@@ -262,5 +262,303 @@ class ProfileRunTests(unittest.TestCase):
         self.assertEqual([], gh.dispatched())
 
 
+def at(text: str) -> float:
+    return wd.parse_time(text)
+
+
+def slot_run(created: str, title: str, *, conclusion="success", status="completed",
+             run_id=1, actor="github-actions[bot]"):
+    return {"id": run_id, "conclusion": conclusion, "status": status, "created_at": created,
+            "updated_at": created, "display_title": title, "actor": {"login": actor}}
+
+
+def threads_title(cron: str) -> str:
+    return f"Threads posts · cron {cron}"
+
+
+GUIDE_SLOTS = wd.SLOT_WORKFLOWS["ios-app-guide"]
+WORKFLOW_DIR = HERE.parent / "workflows"
+
+
+class SlotPolicyTests(unittest.TestCase):
+    """2026-10-15 the 13:00 UTC threads-post run never came and nothing went red:
+    every promotion line with daily slots must be judged slot by slot."""
+
+    def test_every_social_promotion_line_is_watched(self):
+        for name in ("reels-daily.yml", "threads-post.yml", "utility-daily.yml",
+                     "countdown-daily.yml", "clip-backup.yml"):
+            self.assertIn(name, GUIDE_SLOTS, name)
+            self.assertTrue((WORKFLOW_DIR / name).is_file(), name)
+            window = GUIDE_SLOTS[name]["max_age_hours"]
+            self.assertGreaterEqual(window, 26, name)
+            self.assertLessEqual(window, 30, name)
+        wd.validate_slot_policy("ios-app-guide")
+        wd.validate_slot_policy("threads-autopilot")
+
+    def test_heal_policy_per_line(self):
+        self.assertEqual("inputs", GUIDE_SLOTS["threads-post.yml"]["heal"])
+        self.assertEqual({"mode": "post", "slot": "{hour}", "date": "{date}"},
+                         GUIDE_SLOTS["threads-post.yml"]["inputs"])
+        self.assertEqual("plain", GUIDE_SLOTS["utility-daily.yml"]["heal"])
+        self.assertEqual("inputs", GUIDE_SLOTS["clip-backup.yml"]["heal"])
+        # Dispatch bypasses the reels slot gate; countdown has no gate or dedupe.
+        self.assertEqual("monitor", GUIDE_SLOTS["reels-daily.yml"]["heal"])
+        self.assertEqual("monitor", GUIDE_SLOTS["countdown-daily.yml"]["heal"])
+
+    def test_slots_match_the_workflow_crons(self):
+        import re
+        for name, spec in GUIDE_SLOTS.items():
+            text = (WORKFLOW_DIR / name).read_text(encoding="utf-8")
+            crons = set()
+            for minute, hours in re.findall(r"cron:\s*['\"](\d{1,2}) ([\d,]+) \* \* \*['\"]", text):
+                for hour in hours.split(","):
+                    crons.add((int(hour), int(minute)))
+            self.assertEqual(crons, set(spec["slots"].items()), name)
+
+    def test_threads_post_dispatch_inputs_match_the_workflow(self):
+        text = (WORKFLOW_DIR / "threads-post.yml").read_text(encoding="utf-8")
+        for key in ("mode:", "slot:", "date:", "- post", '- "13"'):
+            self.assertIn(key, text)
+
+    def test_a_slot_line_is_never_also_a_workflow_line(self):
+        for profile, lines in wd.SLOT_WORKFLOWS.items():
+            self.assertFalse(set(lines) & set(wd.PROFILES[profile]["workflows"]), profile)
+
+    def test_broken_policy_is_rejected(self):
+        original = dict(GUIDE_SLOTS["countdown-daily.yml"])
+        try:
+            GUIDE_SLOTS["countdown-daily.yml"]["heal"] = "yolo"
+            with self.assertRaises(wd.WatchdogError):
+                wd.validate_slot_policy("ios-app-guide")
+        finally:
+            GUIDE_SLOTS["countdown-daily.yml"].clear()
+            GUIDE_SLOTS["countdown-daily.yml"].update(original)
+
+
+class ThreadsSlotTests(unittest.TestCase):
+    SPEC = GUIDE_SLOTS["threads-post.yml"]
+
+    def judge(self, runs, now, dispatch_runs=(), dispatch=True):
+        gh = ScriptedGh({
+            "workflows/threads-post.yml/runs?per_page=30&event": {"workflow_runs": list(dispatch_runs)},
+            "workflows/threads-post.yml/runs?per_page=30": {"workflow_runs": runs},
+        })
+        rows = wd.judge_slots(gh, "threads-post.yml", self.SPEC, now, dispatch=dispatch)
+        return {row["line"]: row for row in rows}, gh
+
+    def test_the_dropped_1015_evening_slot_turns_red_at_the_next_watchdog(self):
+        runs = [
+            slot_run("2026-10-15T03:05:00Z", threads_title("0 3 * * *"), run_id=5),
+            slot_run("2026-10-15T01:45:00Z", threads_title("40 1 * * *"), run_id=4),
+            slot_run("2026-10-14T13:04:00Z", threads_title("0 13 * * *"), run_id=3),
+        ]
+        rows, gh = self.judge(runs, at("2026-10-16T00:41:00Z"))
+        evening = rows["threads-post.yml 13:00Z"]
+        self.assertFalse(evening["fresh"])
+        self.assertEqual("2026-10-15T13:00:00Z", evening["missed_slot"])
+        # 08:41 in Taiwan: yesterday's evening slot would take today's room.
+        self.assertEqual("outside_taiwan_day", evening["action"])
+        self.assertTrue(rows["threads-post.yml 01:40Z"]["fresh"])
+        self.assertTrue(rows["threads-post.yml 03:00Z"]["fresh"])
+        self.assertEqual([], gh.dispatched())
+
+    def test_a_missed_slot_of_today_is_refilled_with_mode_post_inputs(self):
+        runs = [
+            slot_run("2026-10-16T01:50:00Z", threads_title("40 1 * * *"), run_id=7),
+            slot_run("2026-10-15T13:02:00Z", threads_title("0 13 * * *"), run_id=6),
+            slot_run("2026-10-15T03:01:00Z", threads_title("0 3 * * *"), run_id=5),
+        ]
+        rows, gh = self.judge(runs, at("2026-10-16T12:41:00Z"))
+        picture = rows["threads-post.yml 03:00Z"]
+        self.assertFalse(picture["fresh"])
+        self.assertEqual("retriggered", picture["action"])
+        self.assertEqual({"mode": "post", "slot": "3", "date": "2026-10-16"}, picture["dispatch_inputs"])
+        calls = [argv for argv in gh.calls if argv[:3] == ["gh", "workflow", "run"]]
+        self.assertEqual(1, len(calls))
+        self.assertEqual(["-f", "mode=post", "-f", "slot=3", "-f", "date=2026-10-16"], calls[0][-6:])
+        self.assertTrue(rows["threads-post.yml 13:00Z"]["fresh"])
+
+    def test_a_backfill_dispatch_serves_its_slot(self):
+        runs = [
+            slot_run("2026-10-16T06:30:00Z", "Threads posts · post slot 3 2026-10-16", run_id=8),
+            slot_run("2026-10-16T01:50:00Z", threads_title("40 1 * * *"), run_id=7),
+            slot_run("2026-10-15T13:02:00Z", threads_title("0 13 * * *"), run_id=6),
+        ]
+        rows, gh = self.judge(runs, at("2026-10-16T12:41:00Z"))
+        self.assertTrue(all(row["fresh"] for row in rows.values()), rows)
+        self.assertEqual([], gh.dispatched())
+
+    def test_whoami_and_failed_runs_never_serve_a_slot(self):
+        runs = [
+            slot_run("2026-10-16T05:00:00Z", "Threads posts · whoami slot 3 ", run_id=9),
+            slot_run("2026-10-16T03:02:00Z", threads_title("0 3 * * *"), conclusion="failure", run_id=8),
+            slot_run("2026-10-16T01:50:00Z", threads_title("40 1 * * *"), run_id=7),
+            slot_run("2026-10-15T13:02:00Z", threads_title("0 13 * * *"), run_id=6),
+        ]
+        rows, _ = self.judge(runs, at("2026-10-16T12:41:00Z"), dispatch=False)
+        self.assertFalse(rows["threads-post.yml 03:00Z"]["fresh"])
+        self.assertEqual("would_retrigger", rows["threads-post.yml 03:00Z"]["action"])
+
+    def test_a_running_run_for_the_missed_slot_is_awaited(self):
+        runs = [
+            slot_run("2026-10-16T12:30:00Z", "Threads posts · post slot 3 2026-10-16",
+                     conclusion=None, status="queued", run_id=9),
+            slot_run("2026-10-16T01:50:00Z", threads_title("40 1 * * *"), run_id=7),
+            slot_run("2026-10-15T13:02:00Z", threads_title("0 13 * * *"), run_id=6),
+        ]
+        rows, gh = self.judge(runs, at("2026-10-16T12:41:00Z"))
+        self.assertEqual("wait_in_progress", rows["threads-post.yml 03:00Z"]["action"])
+        self.assertEqual([], gh.dispatched())
+
+    def test_bot_dispatch_budget_caps_slot_refills(self):
+        runs = [slot_run("2026-10-15T13:02:00Z", threads_title("0 13 * * *"), run_id=6)]
+        bots = [slot_run("2026-10-16T04:00:00Z", "x", run_id=11),
+                slot_run("2026-10-16T05:00:00Z", "y", run_id=12)]
+        rows, gh = self.judge(runs, at("2026-10-16T12:41:00Z"), dispatch_runs=bots)
+        self.assertEqual("retrigger_budget_exhausted", rows["threads-post.yml 01:40Z"]["action"])
+        self.assertEqual("retrigger_budget_exhausted", rows["threads-post.yml 03:00Z"]["action"])
+        self.assertEqual([], gh.dispatched())
+
+    def test_two_missed_slots_share_one_budget(self):
+        runs = [slot_run("2026-10-15T13:02:00Z", threads_title("0 13 * * *"), run_id=6)]
+        bots = [slot_run("2026-10-16T04:00:00Z", "x", run_id=11)]
+        rows, gh = self.judge(runs, at("2026-10-16T12:41:00Z"), dispatch_runs=bots)
+        self.assertEqual("retriggered", rows["threads-post.yml 01:40Z"]["action"])
+        self.assertEqual("retrigger_budget_exhausted", rows["threads-post.yml 03:00Z"]["action"])
+        self.assertEqual(["threads-post.yml"], gh.dispatched())
+
+
+class OtherSlotLineTests(unittest.TestCase):
+    def judge(self, workflow, runs, now, dispatch=True):
+        gh = ScriptedGh({
+            f"workflows/{workflow}/runs?per_page=30&event": {"workflow_runs": []},
+            f"workflows/{workflow}/runs?per_page=30": {"workflow_runs": runs},
+        })
+        rows = wd.judge_slots(gh, workflow, GUIDE_SLOTS[workflow], now, dispatch=dispatch)
+        return {row["line"]: row for row in rows}, gh
+
+    def test_reels_missed_slot_is_red_but_never_dispatched(self):
+        runs = [slot_run("2026-10-16T09:22:00Z", "Instagram Reels daily clip", run_id=3),
+                slot_run("2026-10-15T15:21:00Z", "Instagram Reels daily clip", run_id=2),
+                slot_run("2026-10-15T01:21:00Z", "Instagram Reels daily clip", run_id=1)]
+        rows, gh = self.judge("reels-daily.yml", runs, at("2026-10-16T12:41:00Z"))
+        self.assertFalse(rows["reels-daily.yml 01:20Z"]["fresh"])
+        self.assertEqual("monitor_only", rows["reels-daily.yml 01:20Z"]["action"])
+        self.assertTrue(rows["reels-daily.yml 09:20Z"]["fresh"])
+        self.assertTrue(rows["reels-daily.yml 15:20Z"]["fresh"])
+        self.assertEqual([], gh.dispatched())
+
+    def test_countdown_green_run_without_a_post_is_fresh_and_a_miss_is_watch_only(self):
+        rows, _ = self.judge("countdown-daily.yml",
+                             [slot_run("2026-10-16T03:12:00Z", "Countdown card daily")],
+                             at("2026-10-16T12:41:00Z"))
+        self.assertTrue(rows["countdown-daily.yml 03:10Z"]["fresh"])
+        rows, gh = self.judge("countdown-daily.yml",
+                              [slot_run("2026-10-15T03:12:00Z", "Countdown card daily")],
+                              at("2026-10-16T12:41:00Z"))
+        self.assertFalse(rows["countdown-daily.yml 03:10Z"]["fresh"])
+        self.assertEqual("monitor_only", rows["countdown-daily.yml 03:10Z"]["action"])
+        self.assertEqual([], gh.dispatched())
+
+    def test_utility_miss_of_today_gets_a_plain_dispatch(self):
+        rows, gh = self.judge("utility-daily.yml",
+                              [slot_run("2026-10-15T05:12:00Z", "Utility card daily")],
+                              at("2026-10-16T12:41:00Z"))
+        self.assertEqual("retriggered", rows["utility-daily.yml 05:10Z"]["action"])
+        calls = [argv for argv in gh.calls if argv[:3] == ["gh", "workflow", "run"]]
+        self.assertEqual([["gh", "workflow", "run", "utility-daily.yml", "--repo", "owner/repo"]], calls)
+
+    def test_utility_miss_of_yesterday_is_not_refilled_after_taiwan_midnight(self):
+        rows, gh = self.judge("utility-daily.yml",
+                              [slot_run("2026-10-14T05:12:00Z", "Utility card daily")],
+                              at("2026-10-16T00:41:00Z"))
+        self.assertFalse(rows["utility-daily.yml 05:10Z"]["fresh"])
+        self.assertEqual("outside_taiwan_day", rows["utility-daily.yml 05:10Z"]["action"])
+        self.assertEqual([], gh.dispatched())
+
+    def test_clip_backup_missed_americas_backup_is_refilled_with_its_slot(self):
+        runs = [slot_run("2026-10-15T14:49:00Z", "Hook clip backup posts", run_id=3),
+                slot_run("2026-10-15T03:49:00Z", "Hook clip backup posts", run_id=2),
+                slot_run("2026-10-14T17:49:00Z", "Hook clip backup posts", run_id=1)]
+        rows, gh = self.judge("clip-backup.yml", runs, at("2026-10-16T00:41:00Z"))
+        row = rows["clip-backup.yml 17:47Z"]
+        self.assertEqual("retriggered", row["action"])
+        self.assertEqual({"slot": "15", "date": "2026-10-15"}, row["dispatch_inputs"])
+        self.assertTrue(rows["clip-backup.yml 03:47Z"]["fresh"])
+        self.assertTrue(rows["clip-backup.yml 14:47Z"]["fresh"])
+
+    def test_clip_backup_missed_threads_evening_backup_is_not_rerun_next_taiwan_day(self):
+        runs = [slot_run("2026-10-15T17:49:00Z", "Hook clip backup posts", run_id=3),
+                slot_run("2026-10-15T03:49:00Z", "Hook clip backup posts", run_id=2),
+                slot_run("2026-10-14T14:49:00Z", "Hook clip backup posts", run_id=1)]
+        rows, gh = self.judge("clip-backup.yml", runs, at("2026-10-16T00:41:00Z"))
+        self.assertFalse(rows["clip-backup.yml 14:47Z"]["fresh"])
+        self.assertEqual("outside_taiwan_day", rows["clip-backup.yml 14:47Z"]["action"])
+        self.assertEqual([], gh.dispatched())
+
+    def test_clip_backup_missed_asia_backup_uses_clip_slot_1(self):
+        runs = [slot_run("2026-10-15T17:49:00Z", "Hook clip backup posts", run_id=3),
+                slot_run("2026-10-15T14:49:00Z", "Hook clip backup posts", run_id=2),
+                slot_run("2026-10-15T03:49:00Z", "Hook clip backup posts", run_id=1)]
+        rows, _ = self.judge("clip-backup.yml", runs, at("2026-10-16T12:41:00Z"), dispatch=False)
+        row = rows["clip-backup.yml 03:47Z"]
+        self.assertEqual("would_retrigger", row["action"])
+        self.assertEqual({"slot": "1", "date": "2026-10-16"}, row["dispatch_inputs"])
+
+
+class GuideProfileSlotRunTests(unittest.TestCase):
+    def test_guide_profile_judges_every_slot_line(self):
+        names = list(wd.PROFILES["ios-app-guide"]["workflows"]) + list(GUIDE_SLOTS)
+        now = at("2026-10-16T12:41:00Z")
+        table = {
+            "actions/workflows?per_page=100": {"workflows": [
+                {"path": f".github/workflows/{name}", "id": i, "state": "active", "name": name}
+                for i, name in enumerate(names, start=1)
+            ]},
+            "workflows/telegram-daily.yml/runs": {"workflow_runs": [
+                slot_run("2026-10-16T09:01:00Z", "Telegram", run_id=77)]},
+            "run view 77": "message_id: 300",
+            "compare/abcdef1234...main": {"status": "ahead"},
+            "workflows/reels-daily.yml/runs": {"workflow_runs": []},
+            "/runs?": {"workflow_runs": [slot_run("2026-10-16T12:00:00Z", "generic")]},
+        }
+        payload = json.dumps({"source_commit": "abcdef1234", "generated_at": "2026-10-16T10:00:00Z"}).encode()
+        gh = ScriptedGh(table)
+        rows = wd.run("ios-app-guide", "owner/repo", Path("."), now=now, gh=gh, dispatch=True,
+                      fetch=lambda url: payload)
+        slot_rows = [row for row in rows if row["kind"] == "slot"]
+        lines = {row["line"].split(" ")[0] for row in slot_rows}
+        self.assertEqual(set(GUIDE_SLOTS), lines)
+        reels = [row for row in slot_rows if row["line"].startswith("reels-daily.yml")]
+        self.assertEqual(3, len(reels))
+        self.assertTrue(all(not row["fresh"] and row["action"] == "monitor_only" for row in reels))
+        self.assertNotIn("reels-daily.yml", gh.dispatched())
+
+    def test_disabled_or_missing_slot_line_is_skipped_not_judged(self):
+        names = list(wd.PROFILES["ios-app-guide"]["workflows"])
+        workflows = [
+            {"path": f".github/workflows/{name}", "id": i, "state": "active", "name": name}
+            for i, name in enumerate(names, start=1)
+        ] + [{"path": ".github/workflows/countdown-daily.yml", "id": 99,
+              "state": "disabled_manually", "name": "c"}]
+        table = {
+            "actions/workflows?per_page=100": {"workflows": workflows},
+            "workflows/telegram-daily.yml/runs": {"workflow_runs": [
+                slot_run("2026-10-16T09:01:00Z", "Telegram", run_id=77)]},
+            "run view 77": "message_id: 300",
+            "compare/abcdef1234...main": {"status": "ahead"},
+            "/runs?": {"workflow_runs": [slot_run("2026-10-16T12:00:00Z", "generic")]},
+        }
+        payload = json.dumps({"source_commit": "abcdef1234", "generated_at": "2026-10-16T10:00:00Z"}).encode()
+        gh = ScriptedGh(table)
+        rows = wd.run("ios-app-guide", "owner/repo", Path("."), now=at("2026-10-16T12:41:00Z"),
+                      gh=gh, dispatch=True, fetch=lambda url: payload)
+        by_line = {row["line"]: row for row in rows if row["kind"] == "slot"}
+        self.assertEqual("skipped", by_line["countdown-daily.yml"]["action"])
+        self.assertIn("disabled_manually", by_line["countdown-daily.yml"]["note"])
+        self.assertIn("missing", by_line["threads-post.yml"]["note"])
+        self.assertEqual([], gh.dispatched())
+
+
 if __name__ == "__main__":
     unittest.main()

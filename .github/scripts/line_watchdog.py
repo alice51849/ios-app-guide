@@ -5,7 +5,9 @@ A green workflow run is not success. Each line is judged by (a) a recent
 successful run *and* (b) fresh delivery evidence (platform IDs in the durable
 state files, or the live deployment record / Telegram message_id for the
 Guide). Stale lines are re-triggered at most twice per 24 hours through
-``gh workflow run``; anything still red is written to a single ``line-health``
+``gh workflow run``. Multi-slot social lines (SLOT_WORKFLOWS) are judged per
+slot, and only slot-gated ones are re-triggered, with the missed slot's inputs
+and inside its own Taiwan day; anything still red is written to a single ``line-health``
 GitHub Issue. Nothing here ever types into a session, messages another
 agent, touches Mastodon (permanently retired) or calls an LLM API.
 
@@ -62,6 +64,88 @@ PROFILES: dict[str, dict] = {
         "evidence": ["guide_deployment", "telegram_message_id"],
     },
 }
+
+# --------------------------------------------------------------------------- #
+# Slot lines: social workflows with several daily crons (or one daily cron whose
+# post must not slip a day). A whole-workflow window cannot see one missed slot
+# while the other slots still succeed: 2026-10-15 the 13:00 UTC threads-post run
+# never came and nothing went red, because the 01:40 and 03:00 runs were green.
+# Each slot is therefore judged on its own: the newest *successful* run that
+# claims the slot (run-name marker, or its created_at, exactly as
+# social_slot_gate.py reads it) must be for an occurrence at most
+# ``max_age_hours`` old, measured from the slot's UTC hour. The watchdog runs at
+# 00:41 and 12:41 UTC; 27h turns a missed slot red at the first watchdog run
+# after it (a served slot is at most ~24h old there) while tolerating a run
+# GitHub delayed by a few hours.
+#
+# ``heal`` decides what the healer may do with a missed slot:
+#   - "inputs":  gh workflow run with ``inputs`` (str.format with hour/date of
+#                the missed slot). Only for workflows whose slot gate stops a
+#                second run of the same slot.
+#   - "plain":   gh workflow run without inputs; only when the workflow's own
+#                gate (slot = latest slot hour before now) lands on the missed
+#                slot, so the run fills that slot and no other.
+#   - "monitor": never dispatched; ``reason`` says why.
+# Every healed slot must also fall on the current Taiwan day (the Threads cap is
+# 3 posts a Taiwan day, threads_backfill.py uses the same rule): refilling
+# yesterday's slot after Taiwan midnight would take today's room and post at
+# the wrong hour, so such a slot stays red for a person to look at.
+# --------------------------------------------------------------------------- #
+SLOT_MAX_AGE_HOURS = 27
+SLOT_WORKFLOWS: dict[str, dict[str, dict]] = {
+    "ios-app-guide": {
+        # 01:40 hook clip / 03:00 picture post / 13:00 evening series. Gate:
+        # social_slot_gate.py --slots 1,3,13; cap: threads_series.py room.
+        "threads-post.yml": {
+            "slots": {1: 40, 3: 0, 13: 0},
+            "max_age_hours": SLOT_MAX_AGE_HOURS,
+            "heal": "inputs",
+            "inputs": {"mode": "post", "slot": "{hour}", "date": "{date}"},
+            "reason": "slot gate + 3-a-Taiwan-day cap; dispatched as mode=post slot=<h> date=<d>",
+        },
+        # 01:20 Asia / 09:20 spare / 15:20 Americas. A workflow_dispatch run skips
+        # the slot gate and posts inputs.slot (default 1), so the healer never
+        # dispatches it; clip-backup.yml already backs up slots 1 and 15.
+        "reels-daily.yml": {
+            "slots": {1: 20, 9: 20, 15: 20},
+            "max_age_hours": SLOT_MAX_AGE_HOURS,
+            "heal": "monitor",
+            "reason": "dispatch bypasses the slot gate; clip-backup.yml backs up slots 1/15",
+        },
+        # 05:10 daily card. Gate: social_slot_gate.py --slots 5 (slot = latest 05:00
+        # before now), so a plain dispatch fills today's slot and only that one.
+        "utility-daily.yml": {
+            "slots": {5: 10},
+            "max_age_hours": SLOT_MAX_AGE_HOURS,
+            "heal": "plain",
+            "reason": "slot gate --slots 5 stops a second card on the same slot",
+        },
+        # 03:10 daily. Runs and succeeds every day; it only posts when a countdown
+        # is due (countdown_cards.py active), so a green run with nothing posted is
+        # healthy. No slot gate or dedupe: a second run would post a second card on
+        # Telegram/Threads/Instagram, so it is watched, never dispatched.
+        "countdown-daily.yml": {
+            "slots": {3: 10},
+            "max_age_hours": SLOT_MAX_AGE_HOURS,
+            "heal": "monitor",
+            "reason": "no slot gate or dedupe: a rerun would post a duplicate card",
+        },
+        # 03:47 (backs up clip slot 1 + Threads 01/03), 14:47 (Threads 13 only),
+        # 17:47 (clip slot 15). clip_posts.py skips a clip already in
+        # clip-posts.json and Threads goes through threads_backfill.py ->
+        # threads-post.yml (gate + cap), so a rerun only fills misses.
+        "clip-backup.yml": {
+            "slots": {3: 47, 14: 47, 17: 47},
+            "max_age_hours": SLOT_MAX_AGE_HOURS,
+            "heal": "inputs",
+            "inputs": {"slot": "{clip_slot}", "date": "{date}"},
+            "clip_slot": {3: "1", 14: "", 17: "15"},
+            "reason": "clip_posts.py skips posted clips; Threads via threads-post gate + cap",
+        },
+    },
+}
+SLOT_HEALS = {"inputs", "plain", "monitor"}
+TAIWAN = dt.timezone(dt.timedelta(hours=8))
 EVIDENCE_MAX_AGE_HOURS = {
     "threads_receipts": 24,
     "bluesky_receipts": 24,
@@ -134,8 +218,11 @@ class Gh:
         payload = self.api(f"repos/{self.repo}/actions/workflows/{workflow_file}/runs?{query}")
         return list((payload or {}).get("workflow_runs", []))
 
-    def dispatch(self, workflow_file: str) -> None:
-        self.runner(["gh", "workflow", "run", workflow_file, "--repo", self.repo])
+    def dispatch(self, workflow_file: str, inputs: dict[str, str] | None = None) -> None:
+        argv = ["gh", "workflow", "run", workflow_file, "--repo", self.repo]
+        for key, value in (inputs or {}).items():
+            argv += ["-f", f"{key}={value}"]
+        self.runner(argv)
 
     def run_log(self, run_id: int) -> str:
         return self.runner(["gh", "run", "view", str(run_id), "--repo", self.repo, "--log"])
@@ -217,6 +304,132 @@ def judge_workflow(gh: Gh, workflow_file: str, max_age_hours: float, now: float,
     else:
         row["action"] = "would_retrigger"
     return row
+
+
+# --------------------------------------------------------------------------- #
+# Slot freshness (one row per daily slot; see SLOT_WORKFLOWS)
+# --------------------------------------------------------------------------- #
+ACTIVE_STATUSES = {"in_progress", "queued", "waiting", "pending", "requested"}
+
+
+def validate_slot_policy(profile_name: str) -> None:
+    lines = SLOT_WORKFLOWS.get(profile_name, {})
+    overlap = set(lines) & set(PROFILES[profile_name]["workflows"])
+    if overlap:
+        raise WatchdogError(f"judged twice (workflow window and slots): {sorted(overlap)}")
+    for workflow, spec in lines.items():
+        slots = spec.get("slots") or {}
+        if not slots or any(not 0 <= h <= 23 or not 0 <= m <= 59 for h, m in slots.items()):
+            raise WatchdogError(f"{workflow}: slots must map UTC hours to cron minutes")
+        if spec.get("heal") not in SLOT_HEALS:
+            raise WatchdogError(f"{workflow}: unknown heal policy {spec.get('heal')!r}")
+        if spec["heal"] == "inputs" and not spec.get("inputs"):
+            raise WatchdogError(f"{workflow}: heal=inputs needs inputs")
+        if not spec.get("reason"):
+            raise WatchdogError(f"{workflow}: every slot policy states its reason")
+
+
+def _slot_of(run: dict, hours: tuple[int, ...]) -> dt.datetime | None:
+    """The UTC slot start a run claims, read the way social_slot_gate.py reads it."""
+    import social_slot_gate as gate  # lazy: only the Guide profile has slot lines
+
+    try:
+        return gate.run_slot(run, hours)
+    except (ValueError, TypeError):
+        return None
+
+
+def _latest_occurrence(now: float, hour: int, minute: int) -> dt.datetime:
+    clock = dt.datetime.fromtimestamp(now, dt.timezone.utc)
+    fired = clock.replace(hour=hour, minute=minute, second=0, microsecond=0)
+    if fired > clock:
+        fired -= dt.timedelta(days=1)
+    return fired.replace(minute=0)
+
+
+def _gate_slot_now(now: float, hours: tuple[int, ...]) -> dt.datetime:
+    """social_slot_gate.slot_start: the slot a gate without flags picks right now."""
+    clock = dt.datetime.fromtimestamp(now, dt.timezone.utc)
+    passed = [h for h in hours if h <= clock.hour]
+    if passed:
+        return clock.replace(hour=passed[-1], minute=0, second=0, microsecond=0)
+    return (clock - dt.timedelta(days=1)).replace(hour=hours[-1], minute=0, second=0, microsecond=0)
+
+
+def slot_heal_inputs(spec: dict, slot: dt.datetime) -> dict[str, str]:
+    values = {
+        "hour": str(slot.hour),
+        "date": slot.date().isoformat(),
+        "clip_slot": (spec.get("clip_slot") or {}).get(slot.hour, ""),
+    }
+    return {key: template.format(**values) for key, template in (spec.get("inputs") or {}).items()}
+
+
+def judge_slots(gh: Gh, workflow_file: str, spec: dict, now: float, *, dispatch: bool) -> list[dict]:
+    runs = gh.runs(workflow_file)
+    hours = tuple(sorted(spec["slots"]))
+    served: dict[int, float] = {}
+    active: set[dt.datetime] = set()
+    for run in runs:
+        slot = _slot_of(run, hours)
+        if slot is None:
+            continue
+        if run.get("status") in ACTIVE_STATUSES:
+            active.add(slot)
+        elif run.get("status") == "completed" and run.get("conclusion") == "success":
+            served[slot.hour] = max(served.get(slot.hour, 0.0), slot.timestamp())
+    max_age = spec["max_age_hours"]
+    rows: list[dict] = []
+    dispatched_here = 0
+    for hour in hours:
+        minute = spec["slots"][hour]
+        last = served.get(hour)
+        fresh = last is not None and now - last <= max_age * HOUR
+        row = {
+            "line": f"{workflow_file} {hour:02d}:{minute:02d}Z", "kind": "slot", "fresh": fresh,
+            "last_success": iso(last), "max_age_hours": max_age, "in_progress": False,
+            "action": "none", "note": "", "heal": spec["heal"],
+        }
+        rows.append(row)
+        if fresh:
+            continue
+        missed = _latest_occurrence(now, hour, minute)
+        row["missed_slot"] = iso(missed.timestamp())
+        if missed in active:
+            row.update(in_progress=True, action="wait_in_progress",
+                       note=f"a run for slot {iso(missed.timestamp())} is still running")
+            continue
+        if spec["heal"] == "monitor":
+            row.update(action="monitor_only", note=spec["reason"])
+            continue
+        today_tw = dt.datetime.fromtimestamp(now, TAIWAN).date()
+        if missed.astimezone(TAIWAN).date() != today_tw:
+            row.update(action="outside_taiwan_day", note=(
+                f"missed slot {iso(missed.timestamp())} is on an earlier Taiwan day; "
+                "refilling it now would take today's room (needs a person)"))
+            continue
+        if spec["heal"] == "plain" and _gate_slot_now(now, hours) != missed:
+            row.update(action="monitor_only", note=(
+                "a plain dispatch would be gated onto a different slot"))
+            continue
+        since = iso(now - 24 * HOUR)
+        recent = [
+            run for run in gh.runs(workflow_file, event="workflow_dispatch", created=f">={since}")
+            if (run.get("actor") or {}).get("login") == "github-actions[bot]"
+        ]
+        row["auto_retriggers_24h"] = len(recent) + dispatched_here
+        if row["auto_retriggers_24h"] >= MAX_RETRIGGERS_PER_DAY:
+            row["action"] = "retrigger_budget_exhausted"
+            continue
+        inputs = slot_heal_inputs(spec, missed) if spec["heal"] == "inputs" else {}
+        row["dispatch_inputs"] = inputs
+        if dispatch:
+            gh.dispatch(workflow_file, inputs)
+            dispatched_here += 1
+            row["action"] = "retriggered"
+        else:
+            row["action"] = "would_retrigger"
+    return rows
 
 
 # --------------------------------------------------------------------------- #
@@ -339,6 +552,8 @@ def render_table(rows: list[dict], now: float) -> str:
         )
     lines += [
         "",
+        "A *slot* row is one daily cron of a multi-slot social line: red means that slot's "
+        "run never succeeded (GitHub dropped it or it failed), even if the other slots are green. "
         "Root-cause hints: a stale *workflow* with a fresh *evidence* row means the schedule "
         "slipped but delivery is fine; fresh workflow + stale evidence means green runs are "
         "not delivering (check receipts/platform IDs, not run conclusions). Mastodon is "
@@ -392,6 +607,7 @@ def _http_post(url: str, payload: dict) -> None:
 def run(profile_name: str, repo: str, root: Path, *, now: float, gh: Gh,
         dispatch: bool, fetch: Callable[[str], bytes] = _http_get,
         site: str = "https://open.cait518.cc/ios-app-guide") -> list[dict]:
+    validate_slot_policy(profile_name)
     profile = PROFILES[profile_name]
     known = gh.workflows()
     rows: list[dict] = []
@@ -405,6 +621,16 @@ def run(profile_name: str, repo: str, root: Path, *, now: float, gh: Gh,
             })
             continue
         rows.append(judge_workflow(gh, workflow_file, max_age, now, dispatch=dispatch))
+    for workflow_file, spec in SLOT_WORKFLOWS.get(profile_name, {}).items():
+        meta = known.get(workflow_file)
+        if meta is None or meta["state"] != "active":
+            rows.append({
+                "line": workflow_file, "kind": "slot", "fresh": True, "last_success": "n/a",
+                "max_age_hours": spec["max_age_hours"], "in_progress": False, "action": "skipped",
+                "note": f"workflow {meta['state'] if meta else 'missing'} (not judged)",
+            })
+            continue
+        rows.extend(judge_slots(gh, workflow_file, spec, now, dispatch=dispatch))
     for name in profile["evidence"]:
         if name == "threads_receipts":
             stamp, count = threads_receipts(root); note = f"{count} confirmed Threads receipts"

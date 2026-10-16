@@ -143,6 +143,41 @@ class ClipPostsTest(unittest.TestCase):
         self.assertEqual(handle.call_args[0][0], "instagram")
         self.assertTrue(C.volume_ramp.is_throttle_error(handle.call_args[0][1]))
 
+    def test_threads_morning_clip_gives_way_to_the_evening_conversion_post(self):
+        queued = {"date": "2026-10-18", "app": "mochi", "app_id": "6785004775", "ct": "bm_mochi_br_th",
+                  "locale": "pt-BR", "text": "Semana de prova? Link nos comentários."}
+        day = dt.date(2026, 10, 18)
+        self.assertEqual(C.yields_to_evening("threads", 1, day, [queued])["ct"], "bm_mochi_br_th")
+        self.assertIsNone(C.yields_to_evening("threads", 1, dt.date(2026, 10, 24), [queued]))  # no post that day
+        self.assertIsNone(C.yields_to_evening("threads", 15, day, [queued]))  # the evening fallback clip itself
+        for channel in ("telegram", "instagram"):
+            self.assertIsNone(C.yields_to_evening(channel, 1, day, [queued]))
+        broken = dict(queued, ct="soc_th")  # a post the evening slot would refuse keeps the clip
+        self.assertIsNone(C.yields_to_evening("threads", 1, day, [broken]))
+        data = {"clips": {"a/en": clip("a", "en")}, "schedule": [
+            {"date": "2026-10-18", "slot": 1, "channel": ch, "clip": "a/en"} for ch in ("threads", "telegram")]}
+        common = [mock.patch.object(C, "load", return_value=data), mock.patch.object(C.CLIPS.__class__, "exists", return_value=True),
+                  mock.patch.object(C.threads_series, "load_evening_queue", return_value=[queued]),
+                  mock.patch.object(C.post_qa, "store_lookup", return_value={"trackName": "a name", "description": "", "price": 0}),
+                  mock.patch.object(C.post_qa, "url_status", return_value=200),
+                  mock.patch.object(C, "posted_log", return_value=[]), mock.patch.object(P, "record_post"), mock.patch("sys.stdout")]
+        for patch in common:
+            patch.start()
+        self.addCleanup(mock.patch.stopall)
+        with mock.patch.object(C, "post_threads") as th, \
+                mock.patch.object(sys, "argv", ["x", "threads", "--slot", "1", "--date", "2026-10-18"]):
+            self.assertEqual(C.main(), 0)
+        th.assert_not_called()
+        with mock.patch.object(C, "post_telegram", return_value={"id": 1, "link": None}) as tg, \
+                mock.patch.object(sys, "argv", ["x", "telegram", "--slot", "1", "--date", "2026-10-18"]):
+            self.assertEqual(C.main(), 0)
+        tg.assert_called_once()
+
+    def test_the_real_evening_queue_dates_take_the_threads_morning_slot(self):
+        queue = C.threads_series.load_evening_queue(C.threads_series.EVENING_QUEUE)
+        for p in queue:
+            self.assertIsNotNone(C.yields_to_evening("threads", 1, dt.date.fromisoformat(p["date"]), queue), p["date"])
+
     def test_http_errors_carry_the_api_reason_not_the_token(self):
         import io
         import urllib.error

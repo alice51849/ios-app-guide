@@ -42,6 +42,7 @@ import clip_progress
 import post_qa
 import review_links
 import search_caption as SC
+import threads_series
 import volume_ramp
 from social_post_common import play_store_url
 
@@ -305,6 +306,26 @@ def post_threads(clip, variant=None, wait=5, tries=60):
     return {"id": media, "link": link}
 
 
+# Threads clip slots that give way to the evening conversion post (threads-post.yml slot 1, Asia 01:40 UTC).
+EVENING_YIELD_SLOTS = (1,)
+
+
+def yields_to_evening(channel, slot, day, queue=None):
+    """The evening conversion post that the Threads hook clip of `slot` gives way to, or None.
+    The account takes 3 Threads posts a day (threads-autopilot at Taiwan midnight, slot 1, slot 3),
+    so on a date growth/threads-evening-queue.json has a valid post for, the morning hook clip
+    (reduce in channel_funnel) leaves the third place to the 13:00 UTC bm_*_th conversion post
+    for the top paying markets. Telegram and Instagram post as usual. Slot 1 fires at 09:40 in
+    Taiwan, so its UTC date is the Taiwan date the queue is keyed on."""
+    if channel != "threads" or slot not in EVENING_YIELD_SLOTS:
+        return None
+    queue = threads_series.load_evening_queue(threads_series.EVENING_QUEUE) if queue is None else queue
+    queued = threads_series.evening_queued(day, queue)
+    if queued and not threads_series.evening_queue_problems([queued]):
+        return queued
+    return None
+
+
 def qa_variant(clip, channel, preferred, online=True):
     """(variant, problems): the preferred hook variant when its caption passes the pre-post QA gate
     (post_qa.py), else the first variant that does; (None, problems) when none may go out."""
@@ -337,6 +358,11 @@ def main():
     clip = scheduled(load(), day, args.slot, channel)
     if not clip:
         print(f"clip: nothing scheduled for {channel} on {day} slot {args.slot}")
+        return 0
+    queued = yields_to_evening(channel, args.slot, day)
+    if queued and args.channel != "preview":
+        print(f"clip: Threads slot {args.slot} gives way to tonight's conversion post "
+              f"({queued['app']} {queued['ct']}); Telegram and Instagram are unaffected")
         return 0
     allowed, done, left = volume_ramp.room(volume_ramp.load(), channel, day, posted_log())
     if left is not None and left <= 0 and args.channel != "preview":

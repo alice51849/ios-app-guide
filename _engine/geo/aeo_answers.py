@@ -925,14 +925,63 @@ def microformat_answer_html(document: str) -> str:
                 + root_close
                 + document[body_close:]
             )
-    elif root_end not in document or content_start not in document:
+    elif root_end not in document:
+        document = _reclose_answer_microformat_root(
+            document, root_start, root_end, content_start, content_end
+        )
+    elif content_start not in document:
         raise ValueError("Incomplete answer microformat wrapper")
     return document
 
 
+def _reclose_answer_microformat_root(
+    document: str,
+    root_start: str,
+    root_end: str,
+    content_start: str,
+    content_end: str,
+) -> str:
+    """Restore a root close lost when trailing debris was trimmed.
+
+    Older builds placed the root close before the last </body>, which could
+    sit inside stale bytes after </html>; trimming those bytes dropped it.
+    Re-close only when the content wrapper is intact and exactly one div is
+    left open, so a page that is broken in any other way still fails loudly.
+    The close goes where complete pages carry it: after the answer footer
+    that follows the content wrapper, ahead of later page-level blocks.
+    """
+    body_close = document.lower().rfind("</body>")
+    root_at = document.find(root_start)
+    content_open_at = document.find(content_start)
+    content_close_at = document.find(content_end)
+    open_divs = len(re.findall(r"<div\b", document, re.IGNORECASE)) - len(
+        re.findall(r"</div>", document, re.IGNORECASE)
+    )
+    if (
+        document.count(root_start) != 1
+        or document.count(content_start) != 1
+        or document.count(content_end) != 1
+        or not 0 <= root_at < content_open_at < content_close_at < body_close
+        or open_divs != 1
+    ):
+        raise ValueError("Incomplete answer microformat wrapper")
+    close_at = content_close_at + len(content_end)
+    footer = re.match(
+        r"\s*<footer\b[^>]*>.*?</footer>",
+        document[close_at:body_close],
+        re.IGNORECASE | re.DOTALL,
+    )
+    if footer:
+        close_at += footer.end()
+    return document[:close_at] + f"</div>{root_end}" + document[close_at:]
+
+
 def reconcile_answer_microformats(path: Path) -> bool:
     source = path.read_text(encoding="utf-8")
-    rendered = microformat_answer_html(source)
+    try:
+        rendered = microformat_answer_html(source)
+    except ValueError as error:
+        raise ValueError(f"{path}: {error}") from error
     if rendered == source:
         return False
     path.write_text(rendered, encoding="utf-8")

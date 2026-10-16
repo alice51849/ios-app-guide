@@ -10520,6 +10520,56 @@ class GeneratorTests(unittest.TestCase):
             aeo_answers.microformat_answer_html(redirect),
         )
 
+    def test_answer_microformats_reclose_root_lost_with_trailing_debris(self):
+        legacy = (
+            '<!DOCTYPE html><html lang="en"><head>'
+            "<title>Legacy answer</title>"
+            '<link rel="canonical" href="https://example.com/answer">'
+            "</head><body><main><h1>Legacy answer</h1>"
+            '<p class="lead">Useful summary.</p></main>'
+            '<footer class="footer">Independent publisher guide.</footer>'
+            "</body></html>"
+        )
+        complete = aeo_answers.microformat_answer_html(legacy).replace(
+            "</body>",
+            '\n<!-- mobile-store-cta:start --><div class="mobile-store-cta">'
+            "</div><!-- mobile-store-cta:end -->\n</body>",
+            1,
+        )
+        self.assertEqual(complete, aeo_answers.microformat_answer_html(complete))
+        root_close = "</div><!-- answer-microformat:end -->"
+        self.assertIn(
+            f"</footer>{root_close}\n<!-- mobile-store-cta:start -->", complete
+        )
+        self.assertEqual(1, complete.count(root_close))
+        trimmed = complete.replace(root_close, "", 1)
+        unclosed_div = trimmed.replace(
+            '<footer class="footer">', '<footer class="footer"><div>', 1
+        )
+        no_content_start = complete.replace(
+            "<!-- answer-content:start -->", "", 1
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "answer.html"
+            path.write_text(trimmed, encoding="utf-8")
+            self.assertTrue(aeo_answers.reconcile_answer_microformats(path))
+            self.assertEqual(complete, path.read_text(encoding="utf-8"))
+            self.assertFalse(aeo_answers.reconcile_answer_microformats(path))
+
+            for broken in (
+                no_content_start,
+                trimmed.replace("<!-- answer-content:end -->", "", 1),
+                unclosed_div,
+            ):
+                path.write_text(broken, encoding="utf-8")
+                with self.assertRaisesRegex(
+                    ValueError,
+                    re.escape(str(path))
+                    + r": Incomplete answer microformat wrapper",
+                ):
+                    aeo_answers.reconcile_answer_microformats(path)
+                self.assertEqual(broken, path.read_text(encoding="utf-8"))
+
     def test_answer_social_preview_reconciles_once_and_skips_unsafe_pages(self):
         with tempfile.TemporaryDirectory() as directory:
             pages = Path(directory)

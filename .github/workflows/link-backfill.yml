@@ -6,6 +6,8 @@ name: Download link backfill
 # per post, newest first, a few per run, read back after writing, stops on a rate-limit answer).
 #   mode=audit  lists which posts have / lack the link and writes the report, posts nothing.
 #   mode=apply  adds the missing links (max_new per channel per run; `only` = a small first batch).
+#   mode=diag   read-only look at what the platform answers about the posts in `only`.
+# Dev.to articles can be edited, so there the text itself gets the link block (devto_link_fix.py).
 # The schedule is the self-healing sweeper (detect a failure, fix it): it runs `apply` with a small
 # max_new, and only once .github/growth/link-backfill.auto exists (the owner's switch for the sweeper).
 # Report: .github/growth/link-backfill-report.json; receipts: .github/growth/link-backfill.json.
@@ -29,8 +31,8 @@ on:
         description: "Only these post ids (space separated; empty = all)"
         default: ""
       channels:
-        description: "instagram threads (space separated)"
-        default: "instagram threads"
+        description: "instagram threads devto (space separated)"
+        default: "instagram threads devto"
 
 permissions:
   contents: read
@@ -65,6 +67,7 @@ jobs:
         run: |
           python3 .github/scripts/test_download_links.py -q
           python3 .github/scripts/test_link_backfill.py -q
+          python3 .github/scripts/test_devto_link_fix.py -q
       - name: Audit / add the links
         id: sweep
         if: steps.gate.outputs.run == 'true'
@@ -72,35 +75,59 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           MODE: ${{ inputs.mode || 'apply' }}
-          MAX_NEW: ${{ inputs.max_new || '3' }}
+          MAX_NEW: ${{ inputs.max_new || '2' }}
           ONLY: ${{ inputs.only }}
-          CHANNELS: ${{ inputs.channels || 'instagram threads' }}
+          CHANNELS: ${{ inputs.channels || 'instagram threads devto' }}
         run: |
-          # the dispatch inputs are typed by a person: only numbers and the two channel names go further
+          # the dispatch inputs are typed by a person: only numbers and the known channel names go further
           case "$MODE" in audit|apply|diag) ;; *) echo "::error::unknown mode"; exit 2;; esac
           case "$MAX_NEW" in ''|*[!0-9]*) echo "::error::max_new must be a number"; exit 2;; esac
-          for c in $CHANNELS; do case "$c" in instagram|threads) ;; *) echo "::error::unknown channel"; exit 2;; esac; done
           for p in $ONLY; do case "$p" in ''|*[!0-9]*) echo "::error::post ids are numbers"; exit 2;; esac; done
+          SOCIAL=""; DEVTO=0
+          for c in $CHANNELS; do case "$c" in instagram|threads) SOCIAL="$SOCIAL $c";; devto) DEVTO=1;; *) echo "::error::unknown channel"; exit 2;; esac; done
+          echo "devto=$DEVTO" >> "$GITHUB_OUTPUT"
           set -o pipefail
-          python3 .github/scripts/link_backfill.py "$MODE" --max-new "$MAX_NEW" --channels $CHANNELS ${ONLY:+--only $ONLY} | tee "$RUNNER_TEMP/backfill.log"
+          if [ -n "$SOCIAL" ]; then
+            python3 .github/scripts/link_backfill.py "$MODE" --max-new "$MAX_NEW" --channels $SOCIAL ${ONLY:+--only $ONLY} | tee "$RUNNER_TEMP/backfill.log"
+          else
+            : > "$RUNNER_TEMP/backfill.log"
+          fi
+      - name: Dev.to articles
+        if: steps.gate.outputs.run == 'true' && steps.sweep.outputs.devto == '1' && inputs.mode != 'diag' && inputs.only == ''
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          MODE: ${{ inputs.mode || 'apply' }}
+          MAX_NEW: ${{ inputs.max_new || '2' }}
+        run: |
+          set -o pipefail
+          python3 .github/scripts/devto_link_fix.py "$MODE" --max-new "$MAX_NEW" | tee -a "$RUNNER_TEMP/backfill.log"
       - name: Summary
         if: always() && steps.gate.outputs.run == 'true'
         run: |
-          { echo "### Download link backfill"; grep -E '^link_backfill |^  (instagram|threads) ' "$RUNNER_TEMP/backfill.log" | head -60; } >> "$GITHUB_STEP_SUMMARY" || true
-      - name: Save the report and the receipts
+          { echo "### Download link backfill"; grep -E '^link_backfill |^devto_link_fix |^  (instagram|threads|devto) ' "$RUNNER_TEMP/backfill.log" | head -60; } >> "$GITHUB_STEP_SUMMARY" || true
+      - name: Save the reports and the receipts
         if: always() && steps.gate.outputs.run == 'true'
         run: |
-          if [ -z "$(git status --porcelain -- .github/growth/link-backfill-report.json .github/growth/link-backfill.json)" ]; then echo "nothing new"; exit 0; fi
-          cp .github/growth/link-backfill-report.json "$RUNNER_TEMP/report.json"
-          cp -f .github/growth/link-backfill.json "$RUNNER_TEMP/state.json" 2>/dev/null || echo '{}' > "$RUNNER_TEMP/state.json"
+          G=.github/growth
+          FILES="$G/link-backfill-report.json $G/link-backfill.json $G/devto-link-fix-report.json $G/devto-link-fix.json"
+          if [ -z "$(git status --porcelain -- $FILES)" ]; then echo "nothing new"; exit 0; fi
+          mkdir -p "$RUNNER_TEMP/save"
+          for f in $FILES; do [ -f "$f" ] && cp -f "$f" "$RUNNER_TEMP/save/$(basename "$f")"; done
           for i in 1 2 3; do
             git fetch -q origin main && git reset -q --hard origin/main
-            cp "$RUNNER_TEMP/report.json" .github/growth/link-backfill-report.json
-            python3 .github/scripts/link_backfill.py merge --state-from "$RUNNER_TEMP/state.json"
-            git add .github/growth/link-backfill-report.json .github/growth/link-backfill.json
+            for r in link-backfill-report devto-link-fix-report; do
+              [ -f "$RUNNER_TEMP/save/$r.json" ] && cp -f "$RUNNER_TEMP/save/$r.json" "$G/$r.json"
+            done
+            if [ -f "$RUNNER_TEMP/save/link-backfill.json" ]; then
+              python3 .github/scripts/link_backfill.py merge --state-from "$RUNNER_TEMP/save/link-backfill.json"
+            fi
+            if [ -f "$RUNNER_TEMP/save/devto-link-fix.json" ]; then
+              python3 -c "import sys; sys.path.insert(0, '.github/scripts'); import link_backfill as B, devto_link_fix as D; B.merge_state(sys.argv[1], D.STATE)" "$RUNNER_TEMP/save/devto-link-fix.json"
+            fi
+            for f in $FILES; do [ -f "$f" ] && git add "$f"; done
             git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "下載連結補齊紀錄 [skip ci]"
             if git push -q origin HEAD:main; then exit 0; fi
             sleep $((i * 5))
           done
-          echo "::warning::could not save the link backfill report"; exit 1
+          echo "::warning::could not save the link backfill reports"; exit 1

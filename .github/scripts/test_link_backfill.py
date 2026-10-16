@@ -261,6 +261,20 @@ class BackfillTest(unittest.TestCase):
             with contextlib.redirect_stdout(io.StringIO()):   # the ::error:: line is not a real alert here
                 self.assertEqual(B.main(["audit"]), 1)
 
+    def test_an_older_post_with_the_app_store_link_but_no_play_link_is_left_alone(self):
+        store, _play = B.links_for("instagram", MOCHI)
+        client = ig([reel(caption=f"Hook\nApp Store: {store}")])
+        rows = self.run_channel(client, apply=True)
+        self.assertEqual(rows[0]["status"], "ok_store_only")
+        self.assertEqual((client.writes, client.reads), ([], 0))
+        reply = {"id": "r1", "text": f"App Store: {store}", "user": "brand", "own": True}
+        client = FakeClient("threads", [{"id": "200", "text": "Task list too boring?", "permalink": "https://www.threads.com/@b/post/BBB",
+                                         "timestamp": "2026-10-15T06:00:00+0000"}], {"200": [reply]})
+        state = fresh_state()
+        self.assertEqual(self.run_channel(client, state, apply=True)[0]["status"], "ok_store_only")
+        self.assertEqual(client.writes, [])
+        self.assertEqual(state["checked"]["threads"]["200"], "ok_store_only", "never read again")
+
     # ---- the read-back of an Instagram comment (the list of a post hides the account's own comments) ...
 
     def test_instagram_hides_its_own_comments_so_the_count_going_up_is_the_proof(self):

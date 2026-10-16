@@ -22,6 +22,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 
 APP_STORE_URL = re.compile(r"https?://(?:apps|itunes)\.apple\.com/[^\s\"'<>)]+", re.I)
 APP_STORE_BARE = re.compile(r"https?://(?:apps|itunes)\.apple\.com/[^\s\"'<>)]*?/id(\d+)(?![A-Za-z0-9_])", re.I)
@@ -45,11 +46,17 @@ def play_package(url):
     return m.group(1) if m else ""
 
 
+def _plain(text):
+    """The text with percent-encoded URLs read as plain ones (a platform may hand a link back wrapped)."""
+    text = text or ""
+    return urllib.parse.unquote(text) if "%2F" in text.upper() or "%3A" in text.upper() else text
+
+
 def store_ids_in(text):
     """App ids the text links as a DOWNLOAD page. A write-review link (?action=write-review) is the same
     app page but not a download link, so it does not count."""
     ids = set()
-    for m in APP_STORE_URL.finditer(text or ""):
+    for m in APP_STORE_URL.finditer(_plain(text)):
         url = m.group(0)
         if "action=write-review" in url.lower():
             continue
@@ -60,7 +67,14 @@ def store_ids_in(text):
 
 
 def play_packages_in(text):
-    return {m.group(1) for m in PLAY_LINK.finditer(text or "")}
+    return {m.group(1) for m in PLAY_LINK.finditer(_plain(text))}
+
+
+def links_covered(text, wanted_text):
+    """True when `text` holds every App Store page and Google Play package that `wanted_text` links to
+    (compared by app id / package, so a changed campaign token or a rewritten URL does not matter)."""
+    ids, packages = store_ids_in(wanted_text), play_packages_in(wanted_text)
+    return bool(ids or packages) and ids <= store_ids_in(text) and packages <= play_packages_in(text)
 
 
 def has_app_store_link(text, app_store_url):

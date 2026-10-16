@@ -44,6 +44,14 @@ class DownloadLinksTest(unittest.TestCase):
         self.assertTrue(D.has_download_link(both, STORE))
         self.assertTrue(D.has_download_link(f"{review}\nGet it: {STORE}", STORE))
 
+    def test_a_wrapped_or_retargeted_link_is_still_this_apps_link(self):
+        wrapped = "https%3A%2F%2Fapps.apple.com%2Fapp%2Fid6785004775%3Fct%3Dx"
+        self.assertTrue(D.has_download_link(f"see {wrapped}", STORE))
+        self.assertTrue(D.links_covered(f"Get it: {STORE}", "App Store: https://apps.apple.com/app/id6785004775?ct=other"))
+        self.assertFalse(D.links_covered("nothing here", f"App Store: {STORE}"))
+        self.assertFalse(D.links_covered(f"App Store: {STORE}", f"App Store: {STORE}\nGoogle Play: {PLAY}"))
+        self.assertFalse(D.links_covered("anything", "no links in here"))
+
     def test_link_in_bio_words_are_not_a_link(self):
         for text in ("Search “Mochi” on the App Store\nLink in bio", "Also on Google Play", "App Store: soon"):
             self.assertFalse(D.has_download_link(text, STORE), text)

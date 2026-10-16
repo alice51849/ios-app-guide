@@ -411,6 +411,9 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
     if DL.has_download_link(text, store, play):
         row["status"] = "ok_caption"
         return row, None
+    if DL.has_app_store_link(text, store):   # an older post: the App Store link is the direct download, no second round for Play
+        row["status"] = "ok_store_only"
+        return row, None
     done = state["done"].get(channel, {}).get(pid)
     cached = state["checked"].get(channel, {}).get(pid)
     if cached and not done:
@@ -442,6 +445,10 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
         else:
             row["status"] = "ok_comment" if channel == "instagram" else "ok_reply"
             state["checked"].setdefault(channel, {})[pid] = row["status"]  # never read this post again
+        return row, None
+    if not done and DL.has_app_store_link(seen, store):   # our own older reply has the App Store link: enough
+        row["status"] = "ok_store_only"
+        state["checked"].setdefault(channel, {})[pid] = row["status"]
         return row, None
     if done:  # written earlier but the list does not show it: the post's comment count is the proof, never write a second one
         count = comments_count(client, media["id"])

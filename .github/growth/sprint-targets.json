@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-15T07:43:21Z",
+ "updated_at": "2026-10-16T07:30:16Z",
  "targets": [
   {
    "app_id": "6792850916",
@@ -42,6 +42,22 @@
    "leader_ratings": 0
   },
   {
+   "app_id": "6802166527",
+   "country": "il",
+   "locale": "he",
+   "keyword": "מנהל צילומי מסך",
+   "rank": 2,
+   "leader_ratings": 0
+  },
+  {
+   "app_id": "6814035888",
+   "country": "il",
+   "locale": "he",
+   "keyword": "שידה ליד המיטה",
+   "rank": 2,
+   "leader_ratings": 0
+  },
+  {
    "app_id": "6802423998",
    "country": "jp",
    "locale": "ja",
@@ -80,6 +96,14 @@
    "keyword": "claude 用量",
    "rank": 2,
    "leader_ratings": 1
+  },
+  {
+   "app_id": "6779750237",
+   "country": "fi",
+   "locale": "fi",
+   "keyword": "palkintotaulu",
+   "rank": 2,
+   "leader_ratings": 2
   },
   {
    "app_id": "6793414462",
@@ -176,30 +200,6 @@
    "keyword": "字母描寫",
    "rank": 3,
    "leader_ratings": 3
-  },
-  {
-   "app_id": "6773017109",
-   "country": "tw",
-   "locale": "zh-Hant",
-   "keyword": "注音聲調",
-   "rank": 3,
-   "leader_ratings": 22
-  },
-  {
-   "app_id": "6779750237",
-   "country": "dk",
-   "locale": "da",
-   "keyword": "belønningstavle",
-   "rank": 4,
-   "leader_ratings": 0
-  },
-  {
-   "app_id": "6778748533",
-   "country": "kr",
-   "locale": "ko",
-   "keyword": "알파벳 학습지",
-   "rank": 4,
-   "leader_ratings": 0
   }
  ]
 }

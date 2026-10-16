@@ -20,6 +20,7 @@ ROSTER_APP_COUNT = len(canonical_manifest()["apps"])
 
 import build_pages_i18n
 import gen_review_pages
+import gen_smart_app_banners
 import market_availability as market
 from official_locales import OFFICIAL_LOCALES
 import paid_upfront_surfaces as repairs
@@ -27,6 +28,27 @@ from videogen.registry import APPSTORE
 
 
 PAGES = Path(os.environ.get("GEO_PAGES", repairs.HERE / "pages")).resolve()
+
+
+# Install surfaces owned by gen_app_store_conversion_surfaces.py (Smart App
+# Banner, sticky mobile CTA, QR card, share action, existing-user review
+# link). The reviews family carries them since best-for/vs/reviews joined the
+# buyer-intent sections; gen_review_pages renders only the article body, and
+# the conversion pass re-adds these blocks after this pass in every geo-daily
+# phase.
+CONVERSION_SURFACE_BLOCKS = (
+    gen_smart_app_banners.BLOCK_RE,
+    gen_smart_app_banners.MOBILE_CTA_BLOCK_RE,
+    gen_smart_app_banners.APP_STORE_QR_BLOCK_RE,
+    gen_smart_app_banners.APP_STORE_SHARE_BLOCK_RE,
+    gen_smart_app_banners.APP_STORE_REVIEW_BLOCK_RE,
+)
+
+
+def without_conversion_surfaces(source):
+    for pattern in CONVERSION_SURFACE_BLOCKS:
+        source = pattern.sub("\n", source)
+    return source
 
 
 def schemas(source):
@@ -100,6 +122,10 @@ class PaidUpfrontSurfaces(unittest.TestCase):
         for relative, row in self.targets.items():
             with self.subTest(path=relative):
                 before, source = self.rendered(relative)
+                if row["kind"] == "review":
+                    # Compare the article's own CTAs: the conversion pass,
+                    # not this re-render, owns the install-surface links.
+                    before = without_conversion_surfaces(before)
                 old_links = re.findall(r'href="(https://apps\.apple\.com/[^"]+)"', before)
                 new_links = re.findall(r'href="(https://apps\.apple\.com/[^"]+)"', source)
                 self.assertEqual(len(old_links), len(new_links))

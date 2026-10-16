@@ -15,6 +15,7 @@ import gen_publisher_disclosures  # noqa: E402
 import gen_app_decision_cards  # noqa: E402
 import gen_app_store_conversion_surfaces  # noqa: E402
 import gen_app_store_qr_ctas  # noqa: E402
+import gen_app_store_review_ctas  # noqa: E402
 import gen_app_store_share_ctas  # noqa: E402
 import gen_guide_design  # noqa: E402
 import gen_mobile_store_ctas  # noqa: E402
@@ -185,6 +186,41 @@ class RefreshPerformanceTests(unittest.TestCase):
                 site=site,
                 inventory=sequential_inventory,
             )
+            # The existing-user review link (BM-13 / BM-47) is the combined
+            # pass's fifth surface and has no standalone CLI: apply its
+            # public renderer last, exactly as the combined pass mints it, so
+            # the comparison still pins block order and the other four
+            # generators byte for byte.
+            review_provider = (
+                gen_app_store_conversion_surfaces.resolve_provider_token()
+                or None
+            )
+            for path, target_app_id in sorted(
+                sequential_inventory.targets.items()
+            ):
+                if path not in sequential_inventory.guide_pages:
+                    continue
+                locale = gen_app_store_qr_ctas.page_locale(path, sequential)
+                current = path.read_text(encoding="utf-8")
+                review_href = (
+                    gen_store_attribution.final_store_url(
+                        gen_app_store_review_ctas.review_target_url(
+                            target_app_id
+                        ),
+                        "",
+                        review_provider,
+                        locale=locale,
+                        availability=None,
+                        app_id=target_app_id,
+                    )
+                    if gen_app_store_review_ctas.is_review_app(target_app_id)
+                    else None
+                )
+                updated = gen_app_store_review_ctas.render_review(
+                    path, current, target_app_id, review_href, locale,
+                )
+                if updated != current:
+                    path.write_text(updated, encoding="utf-8")
 
             with mock.patch.object(
                 gen_smart_app_banners,
@@ -209,6 +245,9 @@ class RefreshPerformanceTests(unittest.TestCase):
             combined_answer = (
                 combined / "answers" / "app.html"
             ).read_text(encoding="utf-8")
+            combined_guide = (
+                combined / "guides" / "app.html"
+            ).read_text(encoding="utf-8")
 
         build_inventory.assert_called_once()
         self.assertEqual(sequential_manifest, combined_manifest)
@@ -223,6 +262,14 @@ class RefreshPerformanceTests(unittest.TestCase):
         )
         self.assertIsNone(
             gen_app_store_share_ctas.BLOCK_RE.search(combined_answer)
+        )
+        self.assertEqual(
+            gen_app_store_review_ctas.is_review_app(app_id),
+            gen_app_store_review_ctas.BLOCK_RE.search(combined_guide)
+            is not None,
+        )
+        self.assertIsNone(
+            gen_app_store_review_ctas.BLOCK_RE.search(combined_answer)
         )
 
     def test_workflow_repairs_conversion_inventory_after_remote_merges(self):

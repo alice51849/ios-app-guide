@@ -216,8 +216,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-battai",
         "url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
-        "name": "BattAI: 電池健康分數",
-        "description": "BattAI BattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。其他結果由這些讀值計算，或由你補充。每一項都會顯示來源與限制。",
+        "name": "BattAI",
+        "description": "電池分數要有用，App 就必須分清楚哪些是 iOS 量到的、哪些是估計的、哪些是你自己輸入的 — BattAI 正是為此而生。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -232,7 +232,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6802423998"
           },
-          "name": "BattAI: 電池健康分數",
+          "name": "BattAI",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
@@ -243,11 +243,11 @@
             "target": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/battai.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "zh-Hant",
-          "description": "BattAI BattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。其他結果由這些讀值計算，或由你補充。每一項都會顯示來源與限制。",
+          "description": "電池分數要有用，App 就必須分清楚哪些是 iOS 量到的、哪些是估計的、哪些是你自己輸入的 — BattAI 正是為此而生。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-battai"
           },
@@ -282,8 +282,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
-        "name": "CalDaily 計算機與主題",
-        "description": "一台你會真的留著用的計算機，因為它記得每個數字背後的來龍去脈。",
+        "name": "CalDaily",
+        "description": "CalDaily — 一台你會真的留著用的計算機，因為它記得每個數字背後的來龍去脈。免費開始 · 單次解鎖 · 沒有訂閱制。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -298,7 +298,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6794178671"
           },
-          "name": "CalDaily 計算機與主題",
+          "name": "CalDaily",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
@@ -309,11 +309,11 @@
             "target": "https://apps.apple.com/tw/app/id6794178671?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/caldaily.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "zh-Hant",
-          "description": "一台你會真的留著用的計算機，因為它記得每個數字背後的來龍去脈。",
+          "description": "CalDaily — 一台你會真的留著用的計算機，因為它記得每個數字背後的來龍去脈。免費開始 · 單次解鎖 · 沒有訂閱制。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-caldaily"
           },
@@ -348,8 +348,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-countdaysnow",
         "url": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
-        "name": "CountDaysNow: Event Counter",
-        "description": "• 每日焦點 過往 · 今天 · 未來 — 儲存",
+        "name": "CountDaysNow",
+        "description": "CountDaysNow — 從重要的日子往回規劃。免費開始 · 一次買斷 · 無訂閱。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -364,7 +364,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6807079789"
           },
-          "name": "CountDaysNow: Event Counter",
+          "name": "CountDaysNow",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
@@ -375,11 +375,11 @@
             "target": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/countdaysnow.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/countdown-widget-app-for-iphone-without-ads-or-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6807079789",
           "inLanguage": "zh-Hant",
-          "description": "• 每日焦點 過往 · 今天 · 未來 — 儲存",
+          "description": "CountDaysNow — 從重要的日子往回規劃。免費開始 · 一次買斷 · 無訂閱。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-countdaysnow"
           },
@@ -678,8 +678,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/tw/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
-        "name": "dB Halo：分貝計",
-        "description": "周遭聲音有多大？能量集中在哪些頻段？依所選標準預估，安全時長還剩多少？dB Halo 把即時聲級、聲學分析、噪音劑量與睡眠聲音紀錄整合在同一個 App，所有處理都在裝置端完成。支援 iPhone、iPad 與 Apple Watch。",
+        "name": "dB Halo",
+        "description": "dB Halo — 從家庭工作室與空調低鳴，到健身房或演唱會場地，dB Halo 幫你看懂聲音，資料不會離開你的裝置。免費開始 · 一次買斷 · 沒有訂閱。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -694,7 +694,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6806826699"
           },
-          "name": "dB Halo：分貝計",
+          "name": "dB Halo",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/tw/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
@@ -705,11 +705,11 @@
             "target": "https://apps.apple.com/tw/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/dbhalo.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/sound-meter-app-for-iphone-with-frequency-spectrum-and-noise-dose.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "zh-Hant",
-          "description": "周遭聲音有多大？能量集中在哪些頻段？依所選標準預估，安全時長還剩多少？dB Halo 把即時聲級、聲學分析、噪音劑量與睡眠聲音紀錄整合在同一個 App，所有處理都在裝置端完成。支援 iPhone、iPad 與 Apple Watch。",
+          "description": "dB Halo — 從家庭工作室與空調低鳴，到健身房或演唱會場地，dB Halo 幫你看懂聲音，資料不會離開你的裝置。免費開始 · 一次買斷 · 沒有訂閱。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-dbhalo"
           },
@@ -1009,7 +1009,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-ledmovingtext",
         "url": "https://apps.apple.com/tw/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
         "name": "LED Moving Text",
-        "description": "打上一句話，手機就變成一面會發光、會跑的大字看板，隔著整個場館、月台或人群都看得清楚。",
+        "description": "LED Moving Text — Cue Flow 專門應付一張牌子不夠用的時刻。免費起步 · 一次買斷 · 不用訂閱。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1035,11 +1035,11 @@
             "target": "https://apps.apple.com/tw/app/id6806639602?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/ledmovingtext.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/led-scrolling-text-app-for-concerts-and-airport-pickups.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6806639602",
           "inLanguage": "zh-Hant",
-          "description": "打上一句話，手機就變成一面會發光、會跑的大字看板，隔著整個場館、月台或人群都看得清楚。",
+          "description": "LED Moving Text — Cue Flow 專門應付一張牌子不夠用的時刻。免費起步 · 一次買斷 · 不用訂閱。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-ledmovingtext"
           },
@@ -1998,8 +1998,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-onepageppt",
         "url": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
-        "name": "OnePage PPT: AI 一頁簡報",
-        "description": "把落落長的文字，變成別人真的會看完的一頁。不用再從空白頁開始，也不用把 20 頁資料硬塞成一頁。",
+        "name": "OnePage PPT",
+        "description": "OnePage PPT — 把落落長的文字，變成別人真的會看完的一頁投影片。免費開始 · 一次買斷解鎖 · 沒有訂閱。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2014,7 +2014,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6798814385"
           },
-          "name": "OnePage PPT: AI 一頁簡報",
+          "name": "OnePage PPT",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
@@ -2025,11 +2025,11 @@
             "target": "https://apps.apple.com/tw/app/id6798814385?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/onepageppt.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/app-that-turns-meeting-notes-into-one-presentation-slide.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798814385",
           "inLanguage": "zh-Hant",
-          "description": "把落落長的文字，變成別人真的會看完的一頁。不用再從空白頁開始，也不用把 20 頁資料硬塞成一頁。",
+          "description": "OnePage PPT — 把落落長的文字，變成別人真的會看完的一頁投影片。免費開始 · 一次買斷解鎖 · 沒有訂閱。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-onepageppt"
           },
@@ -2196,8 +2196,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
-        "name": "QR Code Halo：安全掃描與建立",
-        "description": "預設掃描後會自動執行；到設定關閉「掃描後自動執行」即可先檢查，歷史紀錄中按「安全檢查」。流程固定是檢查、判斷、行動，讓你先看清內容、風險依據與可執行範圍，再決定下一步。",
+        "name": "QR Code Halo",
+        "description": "QR Code Halo — QR Code Halo 以「檢查、判斷、行動」為核心。免費開始 · 一次買斷解鎖 · 沒有訂閱。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2212,7 +2212,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6806779853"
           },
-          "name": "QR Code Halo：安全掃描與建立",
+          "name": "QR Code Halo",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
@@ -2223,11 +2223,11 @@
             "target": "https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/qrcodehalo.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/qr-code-scanner-app-that-shows-the-link-before-opening-it.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "zh-Hant",
-          "description": "預設掃描後會自動執行；到設定關閉「掃描後自動執行」即可先檢查，歷史紀錄中按「安全檢查」。流程固定是檢查、判斷、行動，讓你先看清內容、風險依據與可執行範圍，再決定下一步。",
+          "description": "QR Code Halo — QR Code Halo 以「檢查、判斷、行動」為核心。免費開始 · 一次買斷解鎖 · 沒有訂閱。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-qrcodehalo"
           },
@@ -2262,8 +2262,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-savetag",
         "url": "https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
-        "name": "SaveTag:AI 連結收藏",
-        "description": "先存下來,而且真的會看完。 你每天都在傳連結給自己。朋友分享的食譜、看上的外套、說好要看的影片、想再讀一次的貼文。它們散落在聊天室、備忘錄和截圖裡,然後就再也找不到了。",
+        "name": "SaveTag",
+        "description": "連結從聊天室、備忘錄和截圖裡冒出來，存到某個地方，然後再也沒被看過 — 存得下來，卻回不去 SaveTag — 先存下來。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2278,7 +2278,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6802505528"
           },
-          "name": "SaveTag:AI 連結收藏",
+          "name": "SaveTag",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
@@ -2289,11 +2289,11 @@
             "target": "https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/savetag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-app-to-save-links-from-other-apps-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "zh-Hant",
-          "description": "先存下來,而且真的會看完。 你每天都在傳連結給自己。朋友分享的食譜、看上的外套、說好要看的影片、想再讀一次的貼文。它們散落在聊天室、備忘錄和截圖裡,然後就再也找不到了。",
+          "description": "連結從聊天室、備忘錄和截圖裡冒出來，存到某個地方，然後再也沒被看過 — 存得下來，卻回不去 SaveTag — 先存下來。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-savetag"
           },
@@ -2460,8 +2460,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
-        "name": "ShotInbox AI: Sort Screenshots",
-        "description": "截圖，井然有序 每張截圖都能找到、處理、清掉。",
+        "name": "ShotInbox AI",
+        "description": "截圖會越積越多，因為每一張都是一件待辦 — 要歸檔的收據、要打開的連結、要導航的地址 — 而相機膠卷沒有任何辦法把它們處理完 — ShotInbox AI 就是為此而生。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2476,7 +2476,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6802166527"
           },
-          "name": "ShotInbox AI: Sort Screenshots",
+          "name": "ShotInbox AI",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
@@ -2487,11 +2487,11 @@
             "target": "https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/shotinbox.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-app-to-sort-screenshots-on-iphone-offline.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "zh-Hant",
-          "description": "截圖，井然有序 每張截圖都能找到、處理、清掉。",
+          "description": "截圖會越積越多，因為每一張都是一件待辦 — 要歸檔的收據、要打開的連結、要導航的地址 — 而相機膠卷沒有任何辦法把它們處理完 — ShotInbox AI 就是為此而生。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-shotinbox"
           },
@@ -2790,8 +2790,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-studydown",
         "url": "https://apps.apple.com/tw/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Studydown：翻面專注計時",
-        "description": "把手機螢幕朝下，為真正重要的事留點時間。推進專案、閱讀、學語言、練琴，都能在 Studydown 建立自己的項目，把每次投入累積成看得見的紀錄。",
+        "name": "Studydown",
+        "description": "Studydown — 為專案、一本書或想培養的技能留點時間。免費開始 · 一次買斷解鎖 · 沒有訂閱。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2806,7 +2806,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6807335593"
           },
-          "name": "Studydown：翻面專注計時",
+          "name": "Studydown",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/tw/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
@@ -2817,11 +2817,11 @@
             "target": "https://apps.apple.com/tw/app/id6807335593?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/studydown.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/focus-timer-that-starts-when-you-put-your-phone-face-down.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "zh-Hant",
-          "description": "把手機螢幕朝下，為真正重要的事留點時間。推進專案、閱讀、學語言、練琴，都能在 Studydown 建立自己的項目，把每次投入累積成看得見的紀錄。",
+          "description": "Studydown — 為專案、一本書或想培養的技能留點時間。免費開始 · 一次買斷解鎖 · 沒有訂閱。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-studydown"
           },
@@ -3450,8 +3450,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Zipbox 解壓縮：RAR ZIP 7z",
-        "description": "Zipbox 是 App Store 付費下載 App，一次購買就包含全部功能，沒有 App 內購買、訂閱或廣告。13 種格式全都在裝置本機處理。",
+        "name": "Zipbox",
+        "description": "Zipbox — 在裝置上開啟加密與分卷的 ZIP、RAR、RAR5 與 7z 壓縮檔，建立 ZIP 或 7z，一次購買就包含全部功能。付費下載 · 包含全部功能 · 沒有 App 內購買或訂閱。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3466,7 +3466,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6806776579"
           },
-          "name": "Zipbox 解壓縮：RAR ZIP 7z",
+          "name": "Zipbox",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
@@ -3477,11 +3477,11 @@
             "target": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/zipbox.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/paid-app-to-open-rar-and-7z-files-on-iphone-without-ads.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "zh-Hant",
-          "description": "Zipbox 是 App Store 付費下載 App，一次購買就包含全部功能，沒有 App 內購買、訂閱或廣告。13 種格式全都在裝置本機處理。",
+          "description": "Zipbox — 在裝置上開啟加密與分卷的 ZIP、RAR、RAR5 與 7z 壓縮檔，建立 ZIP 或 7z，一次購買就包含全部功能。付費下載 · 包含全部功能 · 沒有 App 內購買或訂閱。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-zipbox"
           },

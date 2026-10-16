@@ -272,6 +272,17 @@ class ShortZeroSurfaceContract(unittest.TestCase):
             link["attrs"]["href"] for link in Links(source).links
             if "apps.apple.com/" in link["attrs"].get("href", "")
         ]
+        # BM-13 / BM-47: the existing-user review link is not a Pro CTA. At
+        # most one may sit beside the five, in its exact attribution-free
+        # shape and for the same paid App.
+        review = [link for link in links if stores.is_app_store_review_url(link)]
+        self.assertLessEqual(len(review), 1)
+        self.assertEqual(
+            ["https://apps.apple.com/us/app/id6776958488?action=write-review"]
+            * len(review),
+            review,
+        )
+        links = [link for link in links if link not in review]
         self.assertEqual(5, len(links))
         self.assertTrue(all("/us/app/id6776958488?" in link for link in links))
         self.assertNotIn("6778269699", source)

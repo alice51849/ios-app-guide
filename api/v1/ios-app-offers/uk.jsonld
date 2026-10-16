@@ -6,7 +6,7 @@
   "name": "Каталог намірів пошуку видавця Lumi Studio",
   "description": "Каталог першої сторони, що описує, для кого призначений кожен додаток, яке завдання він допомагає виконати, і прямий шлях до App Store.",
   "inLanguage": "uk",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-16",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -2790,8 +2790,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-studydown",
         "url": "https://apps.apple.com/ua/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Studydown: Облік часу",
-        "description": "Знаходьте час для важливого й помічайте свої зусилля. Studydown записує час для робочих проєктів, читання та захоплень, коли ви кладете телефон екраном",
+        "name": "Studydown",
+        "description": "Studydown — Трохи часу для проєкту, книги чи навички, яку ви хочете розвинути. Безкоштовний старт · Одноразове розблокування · Без підписки.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2806,7 +2806,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6807335593"
           },
-          "name": "Studydown: Облік часу",
+          "name": "Studydown",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/ua/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
@@ -2817,11 +2817,11 @@
             "target": "https://apps.apple.com/ua/app/id6807335593?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/uk/studydown.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/uk/answers/focus-timer-that-starts-when-you-put-your-phone-face-down.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6807335593",
           "inLanguage": "uk",
-          "description": "Знаходьте час для важливого й помічайте свої зусилля. Studydown записує час для робочих проєктів, читання та захоплень, коли ви кладете телефон екраном",
+          "description": "Studydown — Трохи часу для проєкту, книги чи навички, яку ви хочете розвинути. Безкоштовний старт · Одноразове розблокування · Без підписки.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-studydown"
           },

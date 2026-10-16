@@ -23691,11 +23691,13 @@ class GeneratorTests(unittest.TestCase):
                 '--state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE"'
             ),
         )
-        # 24 generator passes + 11 hero_tasks.py build/check passes (the hero
-        # task system re-materialises after every body-rewriting phase) + 4
+        # 26 generator passes (each reconcile phase also rebuilds the offer
+        # catalog from the re-merged publisher-intent records) + 11
+        # hero_tasks.py build/check passes (the hero task system
+        # re-materialises after every body-rewriting phase) + 4
         # app_hook_clips.py passes (one after each live_app_guard sweep).
         self.assertEqual(
-            39,
+            41,
             workflow.count('--today "$GEO_BUILD_DATE"'),
         )
         self.assertEqual(
@@ -24002,10 +24004,10 @@ class GeneratorTests(unittest.TestCase):
         )
         self.assertEqual(3, workflow.count("portfolio_app_catalog_api.py"))
         self.assertEqual(5, workflow.count("publisher_intent_catalog.py"))
-        self.assertEqual(3, workflow.count("portfolio_offer_catalog.py"))
+        self.assertEqual(5, workflow.count("portfolio_offer_catalog.py"))
         self.assertEqual(8, workflow.count("publisher_intent_visuals.py"))
         self.assertEqual(3, workflow.count("app_video_lessons.py"))
-        self.assertEqual(3, workflow.count("gen_github_discovery_readmes.py"))
+        self.assertEqual(5, workflow.count("gen_github_discovery_readmes.py"))
         self.assertLess(
             workflow.index("live_app_manifest.py --refresh"),
             workflow.index("passport_photo_print_sheet.py"),

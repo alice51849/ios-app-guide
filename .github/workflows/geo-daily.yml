@@ -406,6 +406,11 @@ jobs:
               python3 paid_upfront_surfaces.py --pages "$GITHUB_WORKSPACE"
               python3 gen_social_previews.py
               python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
+              # An origin merge can bring new localized persona answers, which
+              # move publisher-intent records; rebuild the two catalogs that
+              # are derived from those records before the full suite checks them.
+              python3 portfolio_offer_catalog.py --today "$GEO_BUILD_DATE"
+              python3 gen_github_discovery_readmes.py
               python3 dedupe_locale_meta.py --apply
               python3 live_app_guard.py --site-root pages
               python3 app_hook_clips.py --today "$GEO_BUILD_DATE"
@@ -630,6 +635,8 @@ jobs:
                 python3 paid_upfront_surfaces.py --pages "$GITHUB_WORKSPACE"
                 python3 gen_social_previews.py
                 python3 publisher_intent_catalog.py --today "$GEO_BUILD_DATE"
+                python3 portfolio_offer_catalog.py --today "$GEO_BUILD_DATE"
+                python3 gen_github_discovery_readmes.py
                 python3 dedupe_locale_meta.py --apply
                 python3 live_app_guard.py --site-root pages
                 python3 app_hook_clips.py --today "$GEO_BUILD_DATE"

@@ -216,8 +216,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-battai",
         "url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
-        "name": "BattAI: 배터리 상태 점수",
-        "description": "BattAI BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간까지 다섯 가지예요. 다른 결과는 기록에서 계산하거나 직접 추가해요. 각 항목에 출처와 한계를 표시해요.",
+        "name": "BattAI",
+        "description": "배터리 점수는 앱이 iOS가 측정한 값, 추정한 값, 직접 입력한 값을 구분할 때만 쓸모가 있습니다 — BattAI는 바로 이를 위해 만들어졌습니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -232,7 +232,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6802423998"
           },
-          "name": "BattAI: 배터리 상태 점수",
+          "name": "BattAI",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
@@ -243,11 +243,11 @@
             "target": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ko/battai.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "ko",
-          "description": "BattAI BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간까지 다섯 가지예요. 다른 결과는 기록에서 계산하거나 직접 추가해요. 각 항목에 출처와 한계를 표시해요.",
+          "description": "배터리 점수는 앱이 iOS가 측정한 값, 추정한 값, 직접 입력한 값을 구분할 때만 쓸모가 있습니다 — BattAI는 바로 이를 위해 만들어졌습니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-battai"
           },
@@ -282,8 +282,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
-        "name": "CalDaily 계산기 및 테마",
-        "description": "계속 쓰게 되는 계산기입니다. 숫자에 담긴 맥락까지 기억하기 때문입니다.",
+        "name": "CalDaily",
+        "description": "CalDaily — 계속 쓰게 되는 계산기입니다. 숫자에 담긴 맥락까지 기억하기 때문입니다. 무료로 시작 · 한 번의 해제 · 구독 없음.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -298,7 +298,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6794178671"
           },
-          "name": "CalDaily 계산기 및 테마",
+          "name": "CalDaily",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
@@ -309,11 +309,11 @@
             "target": "https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ko/caldaily.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "ko",
-          "description": "계속 쓰게 되는 계산기입니다. 숫자에 담긴 맥락까지 기억하기 때문입니다.",
+          "description": "CalDaily — 계속 쓰게 되는 계산기입니다. 숫자에 담긴 맥락까지 기억하기 때문입니다. 무료로 시작 · 한 번의 해제 · 구독 없음.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-caldaily"
           },
@@ -348,8 +348,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-countdaysnow",
         "url": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
-        "name": "CountDaysNow: Event Counter",
-        "description": "• 오늘의 초점 지난 · 오늘 · 다음 — 저장",
+        "name": "CountDaysNow",
+        "description": "CountDaysNow — 중요한 날짜에서 거꾸로 계획하세요. 무료로 시작 · 한 번만 결제 · 구독 없음.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -364,7 +364,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6807079789"
           },
-          "name": "CountDaysNow: Event Counter",
+          "name": "CountDaysNow",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
@@ -375,11 +375,11 @@
             "target": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ko/countdaysnow.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/countdown-widget-app-for-iphone-without-ads-or-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6807079789",
           "inLanguage": "ko",
-          "description": "• 오늘의 초점 지난 · 오늘 · 다음 — 저장",
+          "description": "CountDaysNow — 중요한 날짜에서 거꾸로 계획하세요. 무료로 시작 · 한 번만 결제 · 구독 없음.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-countdaysnow"
           },
@@ -678,8 +678,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-dbhalo",
         "url": "https://apps.apple.com/kr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
-        "name": "dB Halo: 소음 측정기",
-        "description": "지금 이곳의 소리는 몇 dB일까요? 선택한 기준에서 안전 시간이 얼마나 남았는지도 한눈에 확인해 보세요.",
+        "name": "dB Halo",
+        "description": "dB Halo — 집 작업실과 공조기 웅웅거림부터 헬스장이나 공연장까지, dB Halo는 데이터를 기기 밖으로 보내지 않고 소리를 이해하도록 도와줍니다. 무료 시작 · 한 번만 구매하는 해제 · 구독 없음.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -694,7 +694,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6806826699"
           },
-          "name": "dB Halo: 소음 측정기",
+          "name": "dB Halo",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/kr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
@@ -705,11 +705,11 @@
             "target": "https://apps.apple.com/kr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ko/dbhalo.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ko/answers/sound-meter-app-for-iphone-with-frequency-spectrum-and-noise-dose.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6806826699",
           "inLanguage": "ko",
-          "description": "지금 이곳의 소리는 몇 dB일까요? 선택한 기준에서 안전 시간이 얼마나 남았는지도 한눈에 확인해 보세요.",
+          "description": "dB Halo — 집 작업실과 공조기 웅웅거림부터 헬스장이나 공연장까지, dB Halo는 데이터를 기기 밖으로 보내지 않고 소리를 이해하도록 도와줍니다. 무료 시작 · 한 번만 구매하는 해제 · 구독 없음.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-dbhalo"
           },

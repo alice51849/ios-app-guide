@@ -6,7 +6,7 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-16",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1956,8 +1956,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-onepageppt",
         "url": "https://apps.apple.com/cn/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
-        "name": "OnePage PPT: AI一页幻灯片",
-        "description": "把一大段文字，变成别人真的会看完的一页。不用再从空白页开始，也不用把 20 页素材硬塞成一页。",
+        "name": "OnePage PPT",
+        "description": "OnePage PPT — 把一大段文字变成别人真的会看完的一页幻灯片。免费开始 · 一次性解锁 · 无订阅。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1972,7 +1972,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6798814385"
           },
-          "name": "OnePage PPT: AI一页幻灯片",
+          "name": "OnePage PPT",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/cn/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
@@ -1983,11 +1983,11 @@
             "target": "https://apps.apple.com/cn/app/id6798814385?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/onepageppt.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/app-that-turns-meeting-notes-into-one-presentation-slide.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6798814385",
           "inLanguage": "zh-Hans",
-          "description": "把一大段文字，变成别人真的会看完的一页。不用再从空白页开始，也不用把 20 页素材硬塞成一页。",
+          "description": "OnePage PPT — 把一大段文字变成别人真的会看完的一页幻灯片。免费开始 · 一次性解锁 · 无订阅。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-onepageppt"
           },
@@ -2220,8 +2220,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-savetag",
         "url": "https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
-        "name": "SaveTag:AI 链接收藏",
-        "description": "先存下来,而且这次真的会看完。 你每天都在给自己发链接。朋友分享的菜谱、看中的外套、说好要看的视频、想再读一遍的帖子。它们散落在聊天记录、备忘录和截图里,然后就再也找不到了。",
+        "name": "SaveTag",
+        "description": "链接散落在聊天记录、备忘录和截图里，随手存在某个地方，然后就再也没看过——存是存了，回头看却做不到 SaveTag——现在就存下来。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2236,7 +2236,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6802505528"
           },
-          "name": "SaveTag:AI 链接收藏",
+          "name": "SaveTag",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
@@ -2247,11 +2247,11 @@
             "target": "https://apps.apple.com/cn/app/id6802505528?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/savetag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-app-to-save-links-from-other-apps-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "zh-Hans",
-          "description": "先存下来,而且这次真的会看完。 你每天都在给自己发链接。朋友分享的菜谱、看中的外套、说好要看的视频、想再读一遍的帖子。它们散落在聊天记录、备忘录和截图里,然后就再也找不到了。",
+          "description": "链接散落在聊天记录、备忘录和截图里，随手存在某个地方，然后就再也没看过——存是存了，回头看却做不到 SaveTag——现在就存下来。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-savetag"
           },
@@ -3262,8 +3262,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-wordmatelite",
         "url": "https://apps.apple.com/cn/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Wordmate Lite 每天五个单词",
-        "description": "很多人的外语进度，都卡在「卡片还没做完」这一步。Wordmate Lite 想去掉的就是这一步。",
+        "name": "Wordmate Lite",
+        "description": "Wordmate Lite — 每天五个单词。免费开始 · 一次性解锁 · 无订阅。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3278,7 +3278,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6797601720"
           },
-          "name": "Wordmate Lite 每天五个单词",
+          "name": "Wordmate Lite",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/cn/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
@@ -3289,11 +3289,11 @@
             "target": "https://apps.apple.com/cn/app/id6797601720?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/wordmatelite.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/answers/best-free-vocabulary-app-for-adults-one-minute-a-day-no-flashcard-decks.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6797601720",
           "inLanguage": "zh-Hans",
-          "description": "很多人的外语进度，都卡在「卡片还没做完」这一步。Wordmate Lite 想去掉的就是这一步。",
+          "description": "Wordmate Lite — 每天五个单词。免费开始 · 一次性解锁 · 无订阅。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-wordmatelite"
           },

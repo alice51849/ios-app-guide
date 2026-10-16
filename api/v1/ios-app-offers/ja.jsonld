@@ -216,8 +216,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-battai",
         "url": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
-        "name": "BattAI: バッテリー状態スコア",
-        "description": "BattAI BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。",
+        "name": "BattAI",
+        "description": "バッテリースコアが役立つのは、iOSが測定した値、推定した値、自分で入力した値をアプリが区別しているときだけです — BattAIはそのために作られています。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -232,7 +232,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6802423998"
           },
-          "name": "BattAI: バッテリー状態スコア",
+          "name": "BattAI",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
@@ -243,11 +243,11 @@
             "target": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ja/battai.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "ja",
-          "description": "BattAI BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。",
+          "description": "バッテリースコアが役立つのは、iOSが測定した値、推定した値、自分で入力した値をアプリが区別しているときだけです — BattAIはそのために作られています。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-battai"
           },
@@ -282,8 +282,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-caldaily",
         "url": "https://apps.apple.com/jp/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
-        "name": "CalDaily 電卓とテーマ",
-        "description": "使い続けたくなる電卓。数字の背景まで覚えているからです。",
+        "name": "CalDaily",
+        "description": "CalDaily — 使い続けたくなる電卓。数字の背景まで覚えているからです。無料で始められる · 一度きりの解放 · サブスクリプションなし。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -298,7 +298,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6794178671"
           },
-          "name": "CalDaily 電卓とテーマ",
+          "name": "CalDaily",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/jp/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
@@ -309,11 +309,11 @@
             "target": "https://apps.apple.com/jp/app/id6794178671?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ja/caldaily.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6794178671",
           "inLanguage": "ja",
-          "description": "使い続けたくなる電卓。数字の背景まで覚えているからです。",
+          "description": "CalDaily — 使い続けたくなる電卓。数字の背景まで覚えているからです。無料で始められる · 一度きりの解放 · サブスクリプションなし。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-caldaily"
           },
@@ -348,8 +348,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-countdaysnow",
         "url": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
-        "name": "CountDaysNow: Event Counter",
-        "description": "• 今日のフォーカス 過去 · 今日 · 未来 — 保存",
+        "name": "CountDaysNow",
+        "description": "CountDaysNow — 大切な日から逆算して計画する。無料で始められる · 買い切り · サブスクなし。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -364,7 +364,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6807079789"
           },
-          "name": "CountDaysNow: Event Counter",
+          "name": "CountDaysNow",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
@@ -375,11 +375,11 @@
             "target": "https://apps.apple.com/jp/app/id6807079789?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ja/countdaysnow.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/answers/countdown-widget-app-for-iphone-without-ads-or-subscription.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6807079789",
           "inLanguage": "ja",
-          "description": "• 今日のフォーカス 過去 · 今日 · 未来 — 保存",
+          "description": "CountDaysNow — 大切な日から逆算して計画する。無料で始められる · 買い切り · サブスクなし。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-countdaysnow"
           },
@@ -2130,8 +2130,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/jp/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
-        "name": "QR Code Halo：開く前に確認",
-        "description": "初期設定では読み取ると自動で実行されます。先に確認したいときは、設定で「スキャン後に自動実行」をオフにし、履歴で「セキュリティチェック」を押してください。調べる、判断する、操作するの順に、内容と根拠を確かめてから次へ進めます。",
+        "name": "QR Code Halo",
+        "description": "QR Code Halo — QR Code Halo は「調べる、判断する、操作する」を軸に作られています。無料で始められる · 買い切りで解除 · サブスクリプションなし。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2146,7 +2146,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6806779853"
           },
-          "name": "QR Code Halo：開く前に確認",
+          "name": "QR Code Halo",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/jp/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
@@ -2157,11 +2157,11 @@
             "target": "https://apps.apple.com/jp/app/id6806779853?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ja/qrcodehalo.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/answers/qr-code-scanner-app-that-shows-the-link-before-opening-it.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "ja",
-          "description": "初期設定では読み取ると自動で実行されます。先に確認したいときは、設定で「スキャン後に自動実行」をオフにし、履歴で「セキュリティチェック」を押してください。調べる、判断する、操作するの順に、内容と根拠を確かめてから次へ進めます。",
+          "description": "QR Code Halo — QR Code Halo は「調べる、判断する、操作する」を軸に作られています。無料で始められる · 買い切りで解除 · サブスクリプションなし。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-qrcodehalo"
           },
@@ -2196,8 +2196,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-savetag",
         "url": "https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
-        "name": "SaveTag: AIであとで読む",
-        "description": "保存する。そして、今度こそ読み切る。 一日に何度も、自分あてにリンクを送っていませんか。友だちが教えてくれたレシピ、気になったアウター、あとで見ようと思った動画、もう一度読み返したかった投稿。トーク画面やメモ、スクリーンショットに散らばって、そのまま行方不明になります。",
+        "name": "SaveTag",
+        "description": "リンクはチャットやメモ、スクリーンショットで届き、どこかに保存され、二度と見られることはありません。保存はできても、戻ってくることができないのです SaveTag — 今すぐ保存。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2212,7 +2212,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6802505528"
           },
-          "name": "SaveTag: AIであとで読む",
+          "name": "SaveTag",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
@@ -2223,11 +2223,11 @@
             "target": "https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ja/savetag.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/answers/best-app-to-save-links-from-other-apps-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802505528",
           "inLanguage": "ja",
-          "description": "保存する。そして、今度こそ読み切る。 一日に何度も、自分あてにリンクを送っていませんか。友だちが教えてくれたレシピ、気になったアウター、あとで見ようと思った動画、もう一度読み返したかった投稿。トーク画面やメモ、スクリーンショットに散らばって、そのまま行方不明になります。",
+          "description": "リンクはチャットやメモ、スクリーンショットで届き、どこかに保存され、二度と見られることはありません。保存はできても、戻ってくることができないのです SaveTag — 今すぐ保存。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-savetag"
           },
@@ -2394,8 +2394,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
-        "name": "ShotInbox AI: Sort Screenshots",
-        "description": "スクショを、すっきり整理 すべての画像を見つけ、処理し、片づける。",
+        "name": "ShotInbox AI",
+        "description": "スクリーンショットがたまるのは、1枚1枚がタスクだったからです。保管すべきレシート、開くべきリンク、向かうべき住所。そしてカメラロールには、それを片づける手段がありません — ShotInbox AI はそのために作られました。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2410,7 +2410,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6802166527"
           },
-          "name": "ShotInbox AI: Sort Screenshots",
+          "name": "ShotInbox AI",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
@@ -2421,11 +2421,11 @@
             "target": "https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ja/shotinbox.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/answers/best-app-to-sort-screenshots-on-iphone-offline.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6802166527",
           "inLanguage": "ja",
-          "description": "スクショを、すっきり整理 すべての画像を見つけ、処理し、片づける。",
+          "description": "スクリーンショットがたまるのは、1枚1枚がタスクだったからです。保管すべきレシート、開くべきリンク、向かうべき住所。そしてカメラロールには、それを片づける手段がありません — ShotInbox AI はそのために作られました。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-shotinbox"
           },
@@ -3384,8 +3384,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-zipbox",
         "url": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Zipbox 解凍：ZIP RAR 7z対応",
-        "description": "ZipboxはApp Storeで購入する有料アプリです。1回の購入ですべての機能を利用でき、アプリ内課金・サブスクリプション・広告はありません。13形式を端末内だけで処理します。",
+        "name": "Zipbox",
+        "description": "Zipbox — 暗号化・分割された ZIP・RAR・RAR5・7z を端末内で展開し、ZIP や 7z を作成。1回の購入ですべての機能を利用できます。有料ダウンロード · 全機能込み · アプリ内課金・サブスクリプションなし。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3400,7 +3400,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6806776579"
           },
-          "name": "Zipbox 解凍：ZIP RAR 7z対応",
+          "name": "Zipbox",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
@@ -3411,11 +3411,11 @@
             "target": "https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/ja/zipbox.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/ja/answers/paid-app-to-open-rar-and-7z-files-on-iphone-without-ads.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6806776579",
           "inLanguage": "ja",
-          "description": "ZipboxはApp Storeで購入する有料アプリです。1回の購入ですべての機能を利用でき、アプリ内課金・サブスクリプション・広告はありません。13形式を端末内だけで処理します。",
+          "description": "Zipbox — 暗号化・分割された ZIP・RAR・RAR5・7z を端末内で展開し、ZIP や 7z を作成。1回の購入ですべての機能を利用できます。有料ダウンロード · 全機能込み · アプリ内課金・サブスクリプションなし。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-zipbox"
           },

@@ -40,6 +40,8 @@ sys.path.insert(0, str(ROOT / "_engine/social"))
 sys.path.insert(0, str(ROOT / "_engine/geo"))
 
 from app_store_storefronts import (  # noqa: E402
+    is_app_store_review_url,
+    validated_app_store_review_url,
     validated_app_store_url,
 )
 import gen_standard_site as generator  # noqa: E402
@@ -394,6 +396,16 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             for url in store_urls:
                 # "html" is the page source here, so unescape by hand.
                 decoded = url.replace("&amp;", "&")
+                if is_app_store_review_url(decoded):
+                    # BM-13 / BM-47: the existing-user review link is its own
+                    # narrow link class (exact ?action=write-review shape, no
+                    # campaign), never a download CTA, so it is validated by
+                    # its own contract against the same door.
+                    self.assertEqual(
+                        decoded,
+                        validated_app_store_review_url(decoded, door),
+                    )
+                    continue
                 self.assertEqual(decoded, validated_app_store_url(decoded))
             edition = "WiFi Aid Lite" if door == "6793414462" else "WiFi Aid"
             self.assertRegex(

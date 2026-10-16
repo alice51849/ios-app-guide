@@ -1593,6 +1593,29 @@ def require_complete_mapping(
         )
 
 
+_KEPT_NAME_RE = re.compile(r"[A-Z][A-Za-z0-9+&.'-]*")
+
+
+def strip_kept_names(source: str, target: str) -> str:
+    """``target`` without the proper names a translation is expected to keep.
+
+    Brand, product and service names (Claude, Codex, Copilot, UsageNow,
+    BattAI ...) stay in Latin letters in every language; counting them as
+    "untranslated" let a correct zh-Hant page about Claude and Codex usage
+    limits fail the native-script ratio at 0.60 (geo-daily 2026-10-16) while
+    the same page without the names scores 0.84. Only names that appear
+    capitalised in the English source (plus BRANDS) are dropped, so a sentence
+    left in English still counts against the ratio.
+    """
+    names = set(BRANDS) | set(_KEPT_NAME_RE.findall(source))
+    out = target
+    for name in sorted(names, key=len, reverse=True):
+        if len(name) < 2:
+            continue
+        out = out.replace(name, " ")
+    return out
+
+
 def require_translation_quality(
     strings: list[str],
     mapping: dict[str, str],
@@ -1632,7 +1655,7 @@ def require_translation_quality(
         character
         for source in strings
         if source not in allow_english
-        for character in mapping[source]
+        for character in strip_kept_names(source, mapping[source])
         if character.isalpha()
     ]
     native = sum(

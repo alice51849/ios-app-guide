@@ -238,6 +238,30 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
             "pa-IN",
         )
 
+    def test_translation_quality_ignores_kept_brand_and_service_names(self):
+        # Service names are kept in Latin letters in every language; they must
+        # not count as untranslated text (geo-daily 2026-10-16: the zh-Hant
+        # UsageNow pages scored 0.60-0.69 only because of Claude / Codex /
+        # Copilot / Gemini / Anthropic / OpenAI).
+        source = "Claude 5-hour and weekly limits, Codex windows, Copilot premium requests and Gemini daily quotas in one place"
+        target = "Claude 5 小時與每週限制、Codex 區間、Copilot 進階請求與 Gemini 每日配額，一個畫面全看到。"
+        aeo_answers_i18n.require_translation_quality(
+            [source], {source: target}, "example", "zh-Hant"
+        )
+        stripped = aeo_answers_i18n.strip_kept_names(source, target)
+        for name in ("Claude", "Codex", "Copilot", "Gemini"):
+            self.assertNotIn(name, stripped)
+
+    def test_translation_quality_still_rejects_english_left_in_native_copy(self):
+        source = "How to see Claude usage limits and reset times on iPhone"
+        with self.assertRaisesRegex(ValueError, "native-script ratio"):
+            aeo_answers_i18n.require_translation_quality(
+                [source],
+                {source: "Claude usage limits and reset times 的查看方法 on iPhone"},
+                "example",
+                "zh-Hant",
+            )
+
     def test_reviewed_locale_override_replaces_model_copy(self):
         source, reviewed = next(
             iter(aeo_answers_i18n.LOCALE_TEXT_OVERRIDES["ro"].items())

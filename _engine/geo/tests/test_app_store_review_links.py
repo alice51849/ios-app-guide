@@ -259,7 +259,7 @@ class ReviewStamperAndAuditTests(unittest.TestCase):
 
 class ReviewBlockTests(unittest.TestCase):
     def test_focus_apps_and_labels_are_complete_and_neutral(self):
-        self.assertEqual(10, len(review.REVIEW_APP_IDS))
+        self.assertEqual(21, len(review.REVIEW_APP_IDS))
         self.assertIn(USAGENOW, review.REVIEW_APP_IDS)
         self.assertEqual(USAGENOW, "6818607603")
         self.assertEqual(set(OFFICIAL_LOCALES), set(review.REVIEW_LABELS))

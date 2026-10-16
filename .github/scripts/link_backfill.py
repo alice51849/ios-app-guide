@@ -39,7 +39,7 @@ REPORT = GROWTH / "link-backfill-report.json"
 CT = {"instagram": "bf_ig", "threads": "bf_th"}   # reply-style attribution, one token per channel
 THROTTLE_CODES = {4, 17, 32, 341, 368, 613, 80001, 80002, 80006}
 GAP = 20       # seconds between two writes
-PAGES = 12     # 12 x 50 = the 600 newest posts of a channel
+PAGES = 40     # 40 x 50 = the 2000 newest posts of a channel (the whole history of these accounts)
 
 
 class Throttled(Exception):
@@ -131,7 +131,7 @@ def classify(client, media, catalog, state):
     channel = client.channel
     text = media.get("caption") or ""
     row = {"channel": channel, "id": str(media["id"]), "permalink": media.get("permalink", ""),
-           "date": (media.get("timestamp") or "")[:10], "app": "", "status": ""}
+           "date": (media.get("timestamp") or "")[:10], "app": "", "status": "", "text": " ".join(text.split())[:140]}
     post = catalog.resolve(channel, media)
     ios = ios_id_for(catalog, post)
     row["app"] = (post or {}).get("app", "")
@@ -149,11 +149,13 @@ def classify(client, media, catalog, state):
     if str(media["id"]) in state.get("done", {}).get(channel, {}):
         row["status"] = "ok_backfilled_earlier"
         return row, None
-    ok, seen = has_link_now(client, media, store, play)
-    if ok:
+    mine = own_comments(client, media["id"])
+    seen = " ".join(c.get("text", "") for c in mine) + "\n" + text
+    if DL.has_download_link(seen, store, play):
         row["status"] = "ok_comment" if channel == "instagram" else "ok_reply"
         return row, None
     row["status"] = "missing"
+    row["own_replies"] = [" ".join(c.get("text", "").split())[:100] for c in mine][:3]
     return row, {"store": store, "play": play, "missing_store": not DL.has_app_store_link(seen, store),
                  "missing_play": bool(play) and not DL.has_play_link(seen, play)}
 

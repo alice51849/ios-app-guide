@@ -66,8 +66,12 @@ def run(
                 (upgraded if existed else created).append(slug)
                 continue
             try:
-                content = A.normalized_content(A.default_content(q, key), q, key)
-                path.write_text(A.render_page(q, key, content), encoding="utf-8")
+                # 會換成免費門的頁用免費兄弟版自己的事實產生(換門只換身份不換事實)。
+                page_key = A.answer_key(q, key)
+                content = A.normalized_content(
+                    A.default_content(q, page_key), q, page_key
+                )
+                path.write_text(A.render_page(q, page_key, content), encoding="utf-8")
                 (upgraded if existed else created).append(slug)
             except Exception as exc:  # noqa: BLE001
                 failed.append(f"{slug}: {exc}")

@@ -649,6 +649,40 @@ def exempt(rel, name, swap):
     return False
 
 
+@functools.lru_cache(maxsize=None)
+def _swap_for_paid(paid_key):
+    return next((s for s in build_swaps() if s["paid_key"] == paid_key), None)
+
+
+def answer_render_key(question, key):
+    """answer 頁該用哪個 key **產生**(身份與事實一起決定)。
+
+    根因(2026-10-17 稽核):換門只換 id / 名稱 / 分享圖,不換事實。付費 key
+    產生的 pill、featureList、「listed strengths」句與主題事實,原封跟著換到
+    免費版頁上 —— G+Money Lite 頁寫著 G+Money 的 `No ads`,DailyMate Lite 頁
+    寫著 DailyMate 的 `Paid download`、`47 languages`,免費版商店根本沒這樣寫。
+
+    所以會被換成免費門的頁,在**產生時**就用免費兄弟版自己的 registry /
+    內容庫事實(與 reclaim_free_first_answers 同一條路:事實從產生時就是免費
+    版的,不是換門後再改字)。門的判準只有一份:本模組的 exempt() 判定這頁本來
+    就不換門(付費語境 slug、點名付費版、付費文案頁、persona 首問頁…)或問句
+    明確要求零內購時,維持原 key。queries.ALL 的歸屬不動(hub 與索引照舊)。
+    """
+    free = paid_to_free().get(key)
+    if not free or not APPSTORE.get(free):
+        return key
+    if PAID_ONLY_INTENT_RE.search(question):
+        return key
+    swap = _swap_for_paid(key)
+    if swap is None:
+        return key
+    from publisher_intent_catalog import slugify
+    rel = os.path.join(ANSWERS_SURFACE, slugify(question) + ".html")
+    if exempt(rel, os.path.basename(rel), swap):
+        return key
+    return free
+
+
 def id_to_paid_key():
     return {APPSTORE[k]: k for k in paid_to_free() if k in APPSTORE}
 

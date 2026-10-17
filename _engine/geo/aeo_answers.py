@@ -186,6 +186,18 @@ def app_truth_notes(key: str, app: dict[str, Any]) -> list[str]:
     return notes
 
 
+def answer_key(question: str, key: str) -> str:
+    """實際產生這一頁的 App:會換成免費門的頁,事實一律用免費兄弟版自己的。
+
+    判準只有一份,在 gen_free_first_links.answer_render_key(延遲匯入,避免循環)。
+    對免費 key 或不換門的頁是恆等。只在「寫頁面」的入口套用(create_page、
+    regen_facts);default_content / render_page 仍照傳入的 key 產生,契約不變。
+    """
+    from gen_free_first_links import answer_render_key
+
+    return answer_render_key(question, key)
+
+
 def prompt_for(question: str, key: str) -> list[dict[str, str]]:
     app = APPS[key]
     facts = {
@@ -1307,6 +1319,8 @@ def create_page(
     path = answers_dir / f"{slug}.html"
     if path.exists() and not force:
         return None
+    # 會換成免費門的頁,身份與事實一起用免費兄弟版產生(不是換門後再改字)。
+    key = answer_key(question, key)
     try:
         if use_openai:
             raw = call_openai(prompt_for(question, key))

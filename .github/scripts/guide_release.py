@@ -21,6 +21,7 @@ from typing import Callable
 
 NON_DEPLOYABLE_PREFIXES = (".github/", ".claude/", "_engine/")
 MAX_COMMITS_SCANNED = 40
+COMMIT_FILES_PAGE = 300  # GitHub's per-page cap on a commit's file list
 SHA = re.compile(r"^[0-9a-f]{40}$")
 
 
@@ -71,7 +72,13 @@ def undeployed(api: Callable[[str], object], repo: str, live_sha: str, head: str
     for commit in commits[:MAX_COMMITS_SCANNED]:
         sha = str(commit.get("sha") or "")
         detail = api(f"repos/{repo}/commits/{sha}") or {}
-        if any(is_deployable(str(item.get("filename") or "")) for item in detail.get("files") or []):
+        files = detail.get("files") or []
+        # The commit API drops the file list of very large commits (a 62k-page
+        # site-wide pass came back with files=[] and was judged "up to date")
+        # and pages it at 300 entries: an empty or full page cannot prove the
+        # commit is automation-only, so it counts as site content.
+        unknown = len(files) == 0 or len(files) >= COMMIT_FILES_PAGE
+        if unknown or any(is_deployable(str(item.get("filename") or "")) for item in files):
             stamp = parse_time(((commit.get("commit") or {}).get("committer") or {}).get("date"))
             if stamp is None:
                 raise ReleaseError(f"commit {sha[:8]} has no committer date")

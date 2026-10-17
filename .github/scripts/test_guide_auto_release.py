@@ -61,6 +61,17 @@ class LagTests(unittest.TestCase):
         self.assertAlmostEqual(8.0, gr.lag_hours(pending, NOW))
 
 
+    def test_commit_whose_file_list_is_dropped_or_truncated_counts_as_content(self):
+        gh = ScriptedGh({
+            f"compare/{LIVE}...main": compare(("big", 2), ("paged", 1), ("bot", 0.5)),
+            "commits/big": {"files": []},  # API omits files on very large commits
+            "commits/paged": {"files": [{"filename": f"_engine/geo/x{i}.py"} for i in range(300)]},
+            "commits/bot": {"files": [{"filename": ".github/growth/clips.json"}]},
+        })
+        pending = gr.undeployed(gh.api, gh.repo, LIVE)
+        self.assertEqual(["big", "paged"], [item.sha for item in pending])
+
+
 class DecideTests(unittest.TestCase):
     pending = [gr.Pending("c2", NOW - 8 * H)]
 

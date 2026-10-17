@@ -22,6 +22,7 @@ LOCALE_RE = re.compile(r"^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$")
 sys.path.insert(0, str(HERE.parent / "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from aeo_pages import pricing_profile  # noqa: E402
+from answer_text import answer_outcome  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
 import gen_store_attribution  # noqa: E402
 
@@ -336,7 +337,7 @@ def build(key):
     a = APPS[key]
     topic = TOPICS[key]
     name = a["name"]
-    sub = a.get("sub", "")
+    sub = answer_outcome(a)
     bullets = a.get("cta_bullets", []) or ["Independent", "Purpose-built", "iPhone"]
     url = appstore_url(key, ROUNDUP_CAMPAIGN) or appstore_url(key)
     comps = COMP.get(key) or EXTRA_COMP.get(key, [])

@@ -352,9 +352,13 @@ class SnapshotMissing(ValueError):
     so no post goes out on the guess "iPhone only" (it would silently drop the Google Play link)."""
 
 
-def play_store_url(app_id, campaign):
-    """Google Play link tracked with the App Store link's own ct token, or None if not on Android.
+def play_store_url(app_id, campaign, channel_level=True):
+    """Google Play link tracked with the App Store link's own ct token (sent at channel level, as the App Store
+    one: download_links.coarse_campaign; channel_level=False rebuilds a link sent before, for replay
+    protection only), or None if not on Android.
     Raises SnapshotMissing (a ValueError) when the Android snapshot cannot be read: no post, no guess."""
+    from download_links import coarse_campaign
+
     apps = android_apps()
     if not apps:
         raise SnapshotMissing("the Android snapshot is empty or unreadable; the Google Play link cannot be decided")
@@ -364,6 +368,7 @@ def play_store_url(app_id, campaign):
     token = str(campaign or "").strip()
     if PLAY_CAMPAIGN_RE.fullmatch(token) is None:
         raise ValueError(f"Invalid Google Play campaign token: {campaign!r}")
+    token = coarse_campaign(token) if channel_level else token
     key = str(entry.get("key") or "")
     if PLAY_APP_KEY_RE.fullmatch(key) is None:
         raise ValueError(f"Invalid Google Play app key: {key!r}")
@@ -384,12 +389,17 @@ def legacy_play_store_url(app_id, campaign):
     return f"{entry['play_url']}&referrer={referrer}"
 
 
-def campaign_app_store_url(value, campaign):
-    """Keep a direct App Store CTA while attaching one low-cardinality token."""
+def campaign_app_store_url(value, campaign, channel_level=True):
+    """Keep a direct App Store CTA while attaching one low-cardinality token: the caller's label is sent as
+    its channel-level campaign (download_links.coarse_campaign), so Apple counts one row per app and channel.
+    channel_level=False rebuilds a link sent before with the label itself (replay protection only)."""
+    from download_links import coarse_campaign
+
     canonical = canonical_app_store_url(value)
     token = str(campaign or "").strip()
     if APP_STORE_CAMPAIGN_RE.fullmatch(token) is None:
         raise ValueError(f"Invalid App Store campaign token: {campaign!r}")
+    token = coarse_campaign(token) if channel_level else token
     provider = os.environ.get(
         "APP_STORE_PROVIDER_TOKEN",
         DEFAULT_APP_STORE_PROVIDER_TOKEN,

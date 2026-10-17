@@ -74,65 +74,87 @@ def play_for(ios_id, ct):
 
 
 class BioLineTest(unittest.TestCase):
+    """Owner 2026-10-17: 「改成原版的好了 請大家去個人檔案下載」「但是你的 tag 可以直接放一個我 app 的名稱」 - an Instagram text
+    has no URL, closes with the localized profile-link line, and a caption names the app in one brand hashtag."""
+
     def test_the_line_names_the_app_by_its_main_store_name_in_the_caption_locale(self):
-        self.assertEqual(B.bio_line("en", "Mochi: Cute Checklist"), "📲 Link in bio → tap “Mochi”")
-        self.assertEqual(B.bio_line("zh-Hant", "UsageNow：AI 用量與額度追蹤"), "📲 下載連結在個人檔案 → 點「UsageNow」")
-        self.assertEqual(B.bio_line("ja", "Mochi: かわいいToDo"), "📲 リンクはプロフィールから → 「Mochi」をタップ")
-        self.assertIn("‘Lumi 수학 행성’", B.bio_line("ko", "Lumi 수학 행성: 체험판"))
+        # The line is in the caption's locale; the app is named by its brand hashtag (the main store name).
+        self.assertEqual(B.bio_line("en"), "📲 Download via the link in bio")
+        self.assertEqual(B.bio_line("zh-Hant"), "📲 請到個人檔案（bio）的連結下載")
+        self.assertEqual(B.bio_line("ja"), "📲 ダウンロードはプロフィール（bio）のリンクから")
+        self.assertEqual(B.bio_line("pt-BR"), B.bio_line("pt"))
+        self.assertEqual(B.bio_line("xx"), B.bio_line("en"))   # a locale without its own words: English
         self.assertEqual(B.short_name("TripBee Pro: Trip Planner"), "TripBee Pro")
         self.assertEqual(B.short_name("Lumi注音星球"), "Lumi注音星球")
         self.assertEqual(B.short_name("Snapport Lite - ID Photos"), "Snapport Lite")
-        # Right-to-left text: the arrow points the way the line is read.
-        self.assertIn(" ← ", B.bio_line("ar", "Mask My File"))
-        with self.assertRaises(ValueError):
-            B.bio_line("en", "  ")
+        self.assertEqual(B.brand_tag("Mochi: Cute Checklist"), "#Mochi")
+        self.assertEqual(B.brand_tag("UsageNow：AI 用量與額度追蹤"), "#UsageNow")
+        self.assertEqual(B.brand_tag("TripBee Pro: Trip Planner"), "#TripBeePro")
+        self.assertEqual(B.brand_tag("G+Money"), "#GMoney")
+        # A brand written in another script takes the app's Latin store name (clips.json / apps.json by App Store id).
+        self.assertEqual(B.brand_tag("Lumi注音星球", BOPO_ID), "#LumiBopomofo")
+        self.assertEqual(B.brand_tag("Lumi ボポモフォ", f"https://apps.apple.com/jp/app/id{BOPO_ID}"), "#LumiBopomofo")
+        self.assertEqual(B.brand_tag("Lumi注音星球"), "")   # no Latin name known: no tag, and the gate refuses
 
     def test_every_caption_locale_has_its_own_words_and_the_same_bio_phrase_as_the_posters(self):
-        for locale, t in CP.TEXT.items():
-            self.assertIn(locale, B.TAP, locale)
-            self.assertEqual(B.BIO[locale], t["bio"], locale)   # one phrase, no drift between the tables
-            line = B.bio_line(locale, "Mochi: x", t["bio"])
-            self.assertTrue(line.startswith("📲 " + t["bio"]), locale)
-            self.assertTrue(B.has_bio_line(line, locale, "Mochi"), locale)
+        for locale in CP.TEXT:
+            self.assertIn(locale, B.BIO, locale)   # one table (download_links.INSTAGRAM_CTA) for every poster
+            line = B.bio_line(locale)
+            self.assertEqual(line, "📲 " + B.BIO[locale], locale)
+            self.assertTrue(DL.has_instagram_cta(line, locale), locale)
+            self.assertEqual(DL.instagram_url_problems(line), [], locale)
             self.assertEqual(post_qa.locale_problems(line, locale, ("Mochi",)), [], locale)
+        self.assertEqual(len(set(B.BIO.values())), len(B.BIO), "every language has its own words")
 
     def test_qa_refuses_an_instagram_caption_that_does_not_say_where_to_tap(self):
         clip = dict(CLIPS["clips"]["mochi/en"], url="https://x/v.mp4", search="Mochi",
                     compliance={"real_recording": True, "screen_text_ok": True, "board": "0123456789abcdef"})
         real = CP.caption(clip, "instagram")
-        self.assertIn("📲 Link in bio → tap “Mochi”", real)
+        self.assertIn("📲 Download via the link in bio", real)
+        self.assertEqual(real.splitlines()[-1].split()[0], "#Mochi")   # the brand hashtag leads the tags
+        self.assertNotIn("https://", real)
         self.assertEqual(post_qa.clip_problems(clip, "instagram", real, online=False), [])
-        generic = real.replace("📲 Link in bio → tap “Mochi”", "Link in bio")
-        self.assertTrue(DL.has_download_link(generic, clip["store_url"].replace("h7_mochi", "h7_mochi_ig")))
+        generic = real.replace("📲 Download via the link in bio", "Link in bio")
         problems = post_qa.clip_problems(clip, "instagram", generic, online=False)
-        self.assertTrue(any("profile-link step" in p for p in problems), problems)
+        self.assertTrue(any("profile-link line" in p for p in problems), problems)
+        no_brand = real.replace("#Mochi", "#ToDo")
+        self.assertTrue(any("brand hashtag #Mochi" in p for p in post_qa.clip_problems(clip, "instagram", no_brand,
+                                                                                       online=False)))
+        with_url = real + "\nGet it on the App Store: https://apps.apple.com/app/id" + MOCHI_ID
+        self.assertTrue(any("must not carry a URL" in p for p in post_qa.clip_problems(clip, "instagram", with_url,
+                                                                                       online=False)))
         # Telegram and Threads links can be tapped: no such line is asked of them.
         self.assertFalse(post_qa.bio_problems(generic, "en", clip["name"], "telegram"))
-        # Card posters opt in; without the opt-in the card rule stays as it was.
+        # Every Instagram card is held to the rule now, with or without the poster's opt-in.
         store = f"https://apps.apple.com/us/app/id{MOCHI_ID}"
         card = f"Head\nGet it on the App Store: {store}?pt=118326163&ct=ut_mochi_ig&mt=8\nLink in bio"
+        good = f"Head\n{B.bio_line('en')}\n\n#Mochi #ToDo"
         with mock.patch("social_post_common.play_store_url", return_value=None):
-            self.assertFalse([p for p in post_qa.card_problems(card, "en", "instagram", store_url=store, name="Mochi",
-                                                               online=False) if "profile-link" in p])
-            self.assertTrue([p for p in post_qa.card_problems(card, "en", "instagram", store_url=store, name="Mochi",
-                                                              online=False, require_bio=True) if "profile-link" in p])
+            for opt_in in (False, True):
+                bad = post_qa.card_problems(card, "en", "instagram", store_url=store, name="Mochi", online=False,
+                                            require_bio=opt_in)
+                self.assertTrue([p for p in bad if "profile-link" in p], opt_in)
+                self.assertTrue([p for p in bad if "must not carry a URL" in p], opt_in)
+                self.assertEqual([], post_qa.card_problems(good, "en", "instagram", store_url=store, name="Mochi",
+                                                           online=False, require_bio=opt_in))
 
     def test_instagram_comments_and_replies_say_where_to_tap_and_keep_the_link(self):
-        store = f"https://apps.apple.com/app/id{MOCHI_ID}?pt=118326163&ct=bf_ig&mt=8"
-        text = LB.comment_text("ja", store, None, channel="instagram", name="Mochi: かわいいToDo")
-        self.assertEqual(text.splitlines()[0], "📲 リンクはプロフィールから → 「Mochi」をタップ")
-        self.assertTrue(DL.has_download_link(text, store))
-        self.assertNotIn("📲", LB.comment_text("ja", store, None, channel="threads", name="Mochi"))
+        # Instagram: no comment is added any more (link_backfill NO_WRITE) and a reply carries no URL, only the
+        # profile-link line; Threads keeps its links.
+        self.assertIn("instagram", LB.NO_WRITE)
+        store = f"https://apps.apple.com/app/id{MOCHI_ID}?pt=118326163&ct=bf_th&mt=8"
+        self.assertNotIn("📲", LB.comment_text("ja", store, None, channel="threads"))
+        self.assertTrue(DL.has_download_link(LB.comment_text("ja", store, None, channel="threads"), store))
         post = {"app": "mochi", "locale": "en", "ios_id": MOCHI_ID}
         comment = {"id": "1", "text": "Thank you, love it!", "user": "fan", "timestamp": "2026-10-14T10:00:00+0000"}
         now = R.dt.datetime(2026, 10, 14, 12, 0, tzinfo=R.dt.timezone.utc)
-        with mock.patch.object(R, "play_store_url", return_value=None), \
-                mock.patch.object(R.HUB, "display_name", return_value="Mochi: Cute Checklist"):
+        with mock.patch.object(R, "play_store_url", return_value=None):
             ig = R.decide(comment, post, "instagram", "lumi", {}, "M", now)
             th = R.decide(comment, post, "threads", "lumi", {}, "M", now)
-        self.assertIn("📲 Link in bio → tap “Mochi”", ig["text"])
-        self.assertIn("ct=rp_ig", ig["text"])
+        self.assertTrue(ig["text"].endswith("📲 Download via the link in bio"), ig["text"])
+        self.assertNotIn("https://", ig["text"])
         self.assertNotIn("📲", th["text"])
+        self.assertIn("ct=threads&", th["text"])
 
 
 class HubDataTest(unittest.TestCase):

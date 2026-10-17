@@ -471,9 +471,10 @@ class FooterAndSelectionTests(unittest.TestCase):
             "app": "7000000000",
             "url": "https://apps.apple.com/app/id7000000000",
         }
+        # one channel-level campaign per app and channel (download_links.coarse_campaign)
         for token, composer in (
-            ("soc_tg_guide", telegram_post.compose_text),
-            ("soc_th_guide", threads_post.compose_text),
+            ("telegram", telegram_post.compose_text),
+            ("threads", threads_post.compose_text),
         ):
             with self.subTest(token=token):
                 text = composer(item)
@@ -1592,8 +1593,9 @@ class TelegramDailyCatalogTests(unittest.TestCase):
             if line.strip().startswith("https://apps.apple.com/app/id")
         ]
         self.assertEqual(len(self.apps), len(links))
-        self.assertTrue(all("ct=soc_tg_digest" in link for link in links))
-        self.assertNotIn("ct=soc_tg_guide", combined)
+        # the digest's label (soc_tg_digest) leaves as the Telegram channel's campaign, like every Telegram post
+        self.assertTrue(all("ct=telegram&" in link for link in links))
+        self.assertNotIn("ct=soc_tg_", combined)
 
     def test_catalog_lists_the_tracked_play_link_of_every_android_app(self):
         campaign = portfolio_daily.PLATFORM_CAMPAIGNS["telegram"]
@@ -1616,7 +1618,7 @@ class TelegramDailyCatalogTests(unittest.TestCase):
             with self.subTest(app=key):
                 expected = (
                     f"Google Play: {android[app.app_id]['play_url']}&referrer="
-                    f"utm_source%3D{campaign}%26utm_campaign%3D{key}"
+                    f"utm_source%3Dtelegram%26utm_campaign%3D{key}"
                 )
                 self.assertIn(expected, play_lines)
                 # The Play line sits right under the App's own App Store line.
@@ -1721,25 +1723,32 @@ class PlayReferrerTests(unittest.TestCase):
     def test_canonical_referrer_shape(self):
         self.assertEqual(
             self.MOCHI_PLAY
-            + "&referrer=utm_source%3Dh7_mochi_th%26utm_campaign%3Dmochi",
+            + "&referrer=utm_source%3Dthreads%26utm_campaign%3Dmochi",
             common.play_store_url(self.MOCHI, "h7_mochi_th"),
+        )
+        self.assertEqual(  # a link sent before, rebuilt for replay protection only
+            self.MOCHI_PLAY
+            + "&referrer=utm_source%3Dh7_mochi_th%26utm_campaign%3Dmochi",
+            common.play_store_url(self.MOCHI, "h7_mochi_th", channel_level=False),
         )
         apps = {"77": {"ios_app_id": "77", "key": "usagenow",
                        "play_url": "https://play.google.com/store/apps/details?id=com.a.B"}}
         with mock.patch.object(common, "android_apps", return_value=apps):
             self.assertEqual(
                 "https://play.google.com/store/apps/details?id=com.a.B"
-                "&referrer=utm_source%3Dh7_usagenow_th%26utm_campaign%3Dusagenow",
+                "&referrer=utm_source%3Dthreads%26utm_campaign%3Dusagenow",
                 common.play_store_url("77", "h7_usagenow_th"),
             )
 
     def test_referrer_decodes_to_ct_and_app_key(self):
-        for ct in ("soc_tg_guide", "soc_tg_digest", "cd_tg", "ut_aim990_tg", "rp_th", "bm_mochi_us_th"):
+        sent = {"soc_tg_guide": "telegram", "soc_tg_digest": "telegram", "cd_tg": "telegram",
+                "ut_aim990_tg": "telegram", "rp_th": "threads", "bm_mochi_us_th": "threads"}
+        for ct, campaign in sent.items():
             with self.subTest(ct=ct):
                 url = common.play_store_url(self.MOCHI, ct)
                 referrer = urllib.parse.parse_qs(urllib.parse.urlsplit(url).query)["referrer"][0]
                 self.assertEqual(
-                    {"utm_source": [ct], "utm_campaign": ["mochi"]},
+                    {"utm_source": [campaign], "utm_campaign": ["mochi"]},
                     urllib.parse.parse_qs(referrer),
                 )
                 self.assertNotIn("lumi_social", url)
@@ -1777,36 +1786,39 @@ class PlayReferrerTests(unittest.TestCase):
 
     def test_telegram_single_and_threads_reply_carry_the_tracked_play_link(self):
         text = telegram_post.compose_text(self._item(self.MOCHI))
-        self.assertIn("ct=soc_tg_guide", text)
+        self.assertIn("ct=telegram&", text)
         self.assertIn(
             "🤖 Google Play: " + self.MOCHI_PLAY
-            + "&referrer=utm_source%3Dsoc_tg_guide%26utm_campaign%3Dmochi",
+            + "&referrer=utm_source%3Dtelegram%26utm_campaign%3Dmochi",
             text,
         )
         self.assertNotIn("play.google.com", telegram_post.compose_text(self._item(self.IOS_ONLY)))
         body = threads_post.compose_body(self._item(self.MOCHI))
         self.assertNotIn("http", body)
         links = threads_post.compose_links(self._item(self.MOCHI)).splitlines()
-        self.assertTrue(links[0].startswith("App Store: ") and "ct=soc_th_guide" in links[0])
+        self.assertTrue(links[0].startswith("App Store: ") and "ct=threads&" in links[0])
         self.assertEqual(
             "Google Play: " + self.MOCHI_PLAY
-            + "&referrer=utm_source%3Dsoc_th_guide%26utm_campaign%3Dmochi",
+            + "&referrer=utm_source%3Dthreads%26utm_campaign%3Dmochi",
             links[1],
         )
         self.assertEqual(1, len(threads_post.compose_links(self._item(self.IOS_ONLY)).splitlines()))
 
     def test_threads_queued_reply_uses_the_series_token_for_play_too(self):
+        # a series post goes out on Threads: its BM label stays in the queue, the links carry the Threads campaign
         links = threads_post.queued_links({"app_id": self.MOCHI, "ct": "bm_mochi_us_th"})
-        self.assertIn("ct=bm_mochi_us_th", links)
-        self.assertIn("utm_source%3Dbm_mochi_us_th%26utm_campaign%3Dmochi", links)
+        self.assertIn("ct=threads&", links)
+        self.assertIn("utm_source%3Dthreads%26utm_campaign%3Dmochi", links)
 
     def test_posts_with_the_older_play_shape_still_count_as_sent(self):
         item = self._item(self.MOCHI)
-        legacy = telegram_post.compose_text(item, legacy_play=True)
+        legacy = telegram_post.compose_text(item, legacy_play=True, channel_level=False)
         self.assertIn("utm_source%3Dlumi_social%26utm_campaign%3Dsoc_tg_guide", legacy)
+        self.assertIn("ct=soc_tg_guide&", legacy)  # exactly as it was sent then
         self.assertNotEqual(legacy, telegram_post.compose_text(item))
         self.assertIn(telegram_post._digest(legacy), telegram_post._sent_digests(item))
-        self.assertIn(telegram_post._digest(telegram_post.compose_text(item, ct="soc_tg_guide", legacy_play=True)),
+        self.assertIn(telegram_post._digest(telegram_post.compose_text(item, ct="soc_tg_guide", legacy_play=True,
+                                                                       channel_level=False)),
                       telegram_post._sent_digests(item))
 
 
@@ -2043,7 +2055,7 @@ class TelegramReviewLinkTests(unittest.TestCase):
         self.assertIn("📝 이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\n" + review, text)
         self.assertTrue(text.endswith(common.footer_for("ko")))
         first = next(part for part in text.split() if part.startswith("https://"))
-        self.assertIn("ct=soc_tg_guide", first)  # the download CTA stays first and attributed
+        self.assertIn("ct=telegram&", first)  # the download CTA stays first and attributed
         self.assertNotIn("ct=", review)
         self.assertIn("write-review", telegram_post.compose_text(self.item(self.USAGENOW, "en-US")))
         for app, lang in ((self.USAGENOW, "ja"), (self.USAGENOW, "en-GB"), (self.MOCHI, "ko"),
@@ -2102,7 +2114,10 @@ class TelegramCampaignAndPaidLocaleTest(unittest.TestCase):
                 self.assertTrue(common.APP_STORE_CAMPAIGN_RE.fullmatch(token))
         text = telegram_post.compose_text(self.item("6785004775", "en-US"))
         first = next(part for part in text.split() if part.startswith("https://"))
-        self.assertEqual(["soc_tg_mochi"], urllib.parse.parse_qs(urllib.parse.urlsplit(first).query)["ct"])
+        # the label names the app; the link carries the Telegram channel's campaign (download_links.coarse_campaign)
+        self.assertEqual(["telegram"], urllib.parse.parse_qs(urllib.parse.urlsplit(first).query)["ct"])
+        sent_before = telegram_post.compose_text(self.item("6785004775", "en-US"), channel_level=False)
+        self.assertIn("ct=soc_tg_mochi&", sent_before)
 
     def test_posts_sent_with_the_shared_token_count_as_used(self):
         target = self.item("6785004775", "ko")
@@ -2119,7 +2134,9 @@ class TelegramCampaignAndPaidLocaleTest(unittest.TestCase):
             self.assertIs(target, telegram_post.choose_unpublished([target], ledger("x"), self.NOW))
             for ct in ("soc_tg_guide", "soc_tg_mochi", "soc_tg_mochi_ko"):
                 for android in (True, False):
-                    old = telegram_post.compose_text(target, android=android, ct=ct)
+                    # texts sent before the channel-level campaign carried the label itself as ct
+                    old = telegram_post.compose_text(target, android=android, ct=ct, channel_level=False)
+                    self.assertIn(f"ct={ct}&", old)
                     with self.subTest(ct=ct, android=android):
                         self.assertIsNone(telegram_post.choose_unpublished(
                             [target], ledger(telegram_post._digest(old)), self.NOW))
@@ -2651,7 +2668,7 @@ class TelegramDownloadLinkTests(_LinkGuardCase):
         # A post with the existing-user review link still carries the download link first.
         reviewed = telegram_post.make_intent(self.item("6818607603", "ko"), self.CONTEXT)
         self.assertIn("write-review", reviewed["text"])
-        self.assertIn("ct=soc_tg_guide", reviewed["text"].split("👉 ")[1].split()[0])
+        self.assertIn("ct=telegram&", reviewed["text"].split("👉 ")[1].split()[0])
         android = telegram_post.make_intent(self.item(self.MOCHI), self.CONTEXT)
         self.assertIn("apps.apple.com/app/id" + self.MOCHI, android["text"])
         self.assertIn("play.google.com/store/apps/details?id=", android["text"])

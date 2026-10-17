@@ -79,8 +79,8 @@ class TelegramLinkFixTest(unittest.TestCase):
         row = payload["reply_markup"]["inline_keyboard"][0]
         self.assertEqual(2, len(row))
         self.assertIn(f"apps.apple.com/app/id{IOS}", row[0]["url"])
-        self.assertIn("ct=bf_tg", row[0]["url"])
-        self.assertEqual(PLAY, row[1]["url"])
+        self.assertIn("ct=telegram&", row[0]["url"])
+        self.assertEqual(PLAY, row[1]["url"])  # play_store_url is mocked here
         for button in row:
             self.assertNotRegex(button["text"], r"(?i)free|pro\b|\$|價|免費|買斷|試用")
         self.assertTrue(all(v["verified"] for v in state["done"]["telegram"].values()))

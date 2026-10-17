@@ -115,12 +115,13 @@ class DrawTest(unittest.TestCase):
         img = Image.open(Path(self.tmp.name) / "01.jpg")
         self.assertEqual(img.size, (S.W, S.H))
         self.assertIn("待辦清單也可以這麼可愛", plan["caption"])
-        self.assertIn("下載連結在個人檔案", plan["caption"])
-        # Owner rule 2026-10-17: the caption carries the app's direct App Store link (pt + ct) and no other
-        # store link; this app is iOS-only, so no Google Play link. The drawn cards carry no URL at all
-        # (a URL on an image is not tappable and reads as spam).
-        self.assertEqual(STORE_LINK.findall(plan["caption"]),
-                         ["https://apps.apple.com/us/app/id1005?pt=118326163&ct=h7_mochi_igc&mt=8"])
+        self.assertIn("📲 請到個人檔案（bio）的連結下載", plan["caption"])
+        # Owner 2026-10-17 (「改成原版的好了 請大家去個人檔案下載」「但是你的 tag 可以直接放一個我 app 的名稱」): the caption
+        # carries no URL at all (Instagram cannot tap it; the profile link is the download link) and its hashtags
+        # start with the app's brand hashtag. The drawn cards carry no URL either (not tappable on an image).
+        self.assertEqual(STORE_LINK.findall(plan["caption"]), [])
+        self.assertNotIn("https://", plan["caption"])
+        self.assertEqual(plan["caption"].splitlines()[-1].split()[0], "#mochiname")
         drawn_text = [t for c in drawn.call_args_list for t in (c.args[1], c.args[2].get("name", ""))]
         self.assertEqual(len(drawn.call_args_list), 3)
         self.assertFalse([t for t in drawn_text if "http" in t or "apps.apple.com" in t])
@@ -138,10 +139,11 @@ class DrawTest(unittest.TestCase):
         with mock.patch.object(S.post_qa, "store_lookup", return_value={"screenshotUrls": urls}), \
                 mock.patch.object(S.volume_ramp, "load", return_value={}):
             plan = S.make(self.tmp.name, dt.date(2026, 10, 17), 7, data=d, posts=[], fetcher=lambda u: shot_png())
-        self.assertEqual(STORE_LINK.findall(plan["caption"]), [
-            "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=h7_mochi_igc&mt=8",
-            "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
-            "&referrer=utm_source%3Dh7_mochi_igc%26utm_campaign%3Dmochi"])
+        # Instagram: no link (owner 2026-10-17); an Android app says in words that it is on Google Play too - the
+        # profile-link hub carries both store buttons.
+        self.assertEqual(STORE_LINK.findall(plan["caption"]), [])
+        self.assertIn("Android 版在 Google Play", plan["caption"])
+        self.assertIn("📲 請到個人檔案（bio）的連結下載", plan["caption"])
         self.assertEqual(S.qa(plan, online=False), [])
 
     def test_too_few_screenshots_or_failed_downloads_make_nothing(self):
@@ -161,7 +163,7 @@ class DrawTest(unittest.TestCase):
 
 class PostTest(unittest.TestCase):
     PLAN = {"key": "feed/mochi/en", "app": "mochi", "locale": "en", "slot": 19, "date": "2026-10-17", "variant": "a",
-            "cards": ["01.jpg", "02.jpg"], "caption": "hook\n📲 Link in bio → tap “Mochi”\nGet it on the App Store: https://apps.apple.com/us/app/id1?pt=118326163&ct=h7_mochi_igc&mt=8",
+            "cards": ["01.jpg", "02.jpg"], "caption": "hook\n📲 Download via the link in bio\n\n#Mochi #ToDo",
             "store_url": "https://apps.apple.com/us/app/id1",
             "name": "Mochi", "alt": "Mochi — hook"}
 
@@ -198,13 +200,25 @@ class PostTest(unittest.TestCase):
                 mock.patch.object(S.clip_posts, "_get", side_effect=gets), mock.patch.object(S.time, "sleep"):
             S.post_instagram(bare, "https://raw.githubusercontent.com/o/r/feed-cards/d/")
         caption = next(c["caption"] for c in calls if c.get("media_type") == "CAROUSEL")
-        self.assertIn("https://apps.apple.com/app/id1", caption.replace("/us/app/", "/app/"))
+        # Owner 2026-10-17: the send call adds the profile-link line and the brand hashtag, never a URL.
+        self.assertIn("📲 Download via the link in bio", caption)
+        self.assertEqual(caption.splitlines()[-1].split()[0], "#Mochi")
+        self.assertNotIn("https://", caption)
         self.assertTrue(S.post_qa.card_problems(bare["caption"], "en", "instagram", store_url=bare["store_url"], name="Mochi", online=False))
         self.assertEqual(S.post_qa.card_problems(self.PLAN["caption"], "en", "instagram", store_url=self.PLAN["store_url"], name="Mochi", online=False), [])
-        # An Instagram URL cannot be tapped: the gate also wants the step that names the app on the profile link.
+        # An Instagram URL cannot be tapped: the gate wants the profile-link line (and the brand hashtag) instead.
         self.assertEqual(S.qa(self.PLAN, online=False), [])
-        generic = dict(self.PLAN, caption=self.PLAN["caption"].replace("📲 Link in bio → tap “Mochi”", "Link in bio"))
-        self.assertTrue([p for p in S.qa(generic, online=False) if "profile-link step" in p])
+        generic = dict(self.PLAN, caption=self.PLAN["caption"].replace("📲 Download via the link in bio", "Link in bio"))
+        self.assertTrue([p for p in S.qa(generic, online=False) if "profile-link line" in p])
+        # A plan written while the URL rule held (it carries the link) is refused at the send call, nothing goes out.
+        linked = dict(self.PLAN, caption=self.PLAN["caption"] + "\nGet it on the App Store: https://apps.apple.com/us/app/id1")
+        self.assertTrue([p for p in S.qa(linked, online=False) if "must not carry a URL" in p])
+        calls.clear()
+        with mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t"}), mock.patch.object(S.clip_posts, "_post", side_effect=fake_post), \
+                mock.patch.object(S.clip_posts, "_get", side_effect=gets[:1]), mock.patch.object(S.time, "sleep"):
+            with self.assertRaises(S.IGB.DL.MissingDownloadLink):
+                S.post_instagram(linked, "https://raw.githubusercontent.com/o/r/feed-cards/d/")
+        self.assertEqual(calls, [], "nothing is uploaded, not even the cards")
 
     def test_main_posts_records_and_throttles_on_a_slow_down_answer(self):
         with tempfile.TemporaryDirectory() as tmp:

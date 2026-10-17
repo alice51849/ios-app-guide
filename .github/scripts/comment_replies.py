@@ -7,14 +7,15 @@ script the comment is written in, the intent from keywords, and the reply from
 a few short hand-written variants per language and intent, rotated so replies
 don't read like a bot.
 
-Every reply carries the direct download link of the app its post promotes (owner
+Every Threads reply carries the direct download link of the app its post promotes (owner
 rule 2026-10-17): the App Store link, plus the Google Play link when the app is on
-Android - praise, language and how-to answers included. On Instagram a reply URL cannot be
-tapped, so the reply also says where to tap: "📲 Link in bio → tap “<app>”" (ig_bio.py). A reply is checked before it
-goes out (download_links.py); one that does not carry the link, or does not fit the
+Android - praise, language and how-to answers included. Instagram cannot tap a URL in a reply,
+so an Instagram reply carries none (owner, the same day): where the link would go it says
+"📲 Download via the link in bio" in the reply's language (ig_bio.py). A reply is checked before
+it goes out (download_links.py); one that breaks its platform's rule, or does not fit the
 platform's length limit, is not sent and is reported with ::error::. A post that maps
 to no app of ours (link_backfill.AppFinder: several proofs must agree) gets no reply
-at all, whatever the comment says: there is no link to give.
+at all, whatever the comment says: there is no app to point to.
 
 Skipped (no reply): our own account, comments we already answered
 (.github/growth/replied-comments.json, plus a live check), links / spam /
@@ -40,7 +41,6 @@ from pathlib import Path
 
 import download_links as DL
 import ig_bio as IGB
-import ig_bio_hub as HUB
 from link_backfill import LEDGER_CHANNELS, AppFinder, ios_id_for
 from own_posts import (GROWTH, HERE, ApiError, Catalog, InstagramClient, ThreadsClient,
                        detect_language, load_json)
@@ -311,6 +311,8 @@ def decide(comment, post, channel, own_username, state, media_id, now):
         links = f"Google Play: {play}\nApp Store: {app}" if play else links
     elif intent in LINK_INTENTS:
         key = "price_free" if intent == "price" and is_free(post["ios_id"]) else intent
+    if DL.is_instagram(channel):   # no URL on Instagram (it cannot be tapped): the profile-link line instead
+        links = IGB.bio_line(lang)
     variants = T[lang][key]
     # Rotate per language+intent so two replies in a row never read the same.
     variant = state.setdefault("rotation", {}).get(f"{lang}/{key}", 0) % len(variants)
@@ -318,11 +320,9 @@ def decide(comment, post, channel, own_username, state, media_id, now):
     reply = template.format(links=links).strip()
     if "{links}" not in template:  # praise / language / howto / android_none: link lines at the end
         reply = f"{reply}\n{links}"
-    if channel == "instagram":   # an Instagram reply URL cannot be tapped: say where to tap (ig_bio.py)
-        name = HUB.display_name(post["ios_id"], lang) or post.get("name") or ""
-        if name:
-            reply = f"{reply}\n{IGB.bio_line(lang, name)}"
-    problems = DL.link_problems(reply, app, play, label=f"{channel} reply to comment {comment['id']}")
+    label = f"{channel} reply to comment {comment['id']}"
+    problems = IGB.reply_problems(reply, lang, label=label) if DL.is_instagram(channel) else \
+        DL.link_problems(reply, app, play, label=label)
     limit = MAX_REPLY_CHARS.get(channel, 500)
     if len(reply) > limit:
         problems.append(f"{channel} reply to comment {comment['id']}: {len(reply)} chars is over the {limit} limit")

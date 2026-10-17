@@ -14,7 +14,7 @@ os.environ.setdefault("POST_QA_OFFLINE", "1")
 
 import download_links as D  # noqa: E402
 
-STORE = "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=h7_mochi_ig&mt=8"
+STORE = "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=telegram&mt=8"  # channel level, as composers send it
 PLAY = "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dx"
 
 
@@ -136,6 +136,146 @@ class DownloadLinksTest(unittest.TestCase):
     def test_cli_exit_code(self):
         self.assertEqual(D.main(["check", "hello", "--app-store", STORE]), 1)
         self.assertEqual(D.main(["check", f"hello {STORE}", "--app-store", STORE]), 0)
+
+
+class InstagramRuleTest(unittest.TestCase):
+    """Owner 2026-10-17: 「ig 貼文沒辦法顯示連結的話你用很長的文字沒有比較好耶 改成原版的好了 請大家去個人檔案下載」「但是你的
+    tag 可以直接放一個我 app 的名稱」 - an Instagram text carries no URL, closes with the localized "download via the link
+    in bio" line, and a caption names the app in ONE brand hashtag. Every other platform keeps its links."""
+
+    GOOD = "Task list too boring?\nMochi: Cute To-Do\n📲 Download via the link in bio\n\n#Mochi #ToDo"
+
+    def test_a_caption_without_a_url_with_the_line_and_the_brand_hashtag_is_fine(self):
+        self.assertEqual([], D.instagram_problems(self.GOOD, "Mochi: Cute To-Do", locale="en"))
+        zh = "待辦清單好無聊？\n📲 請到個人檔案（bio）的連結下載\n\n#UsageNow #AI額度"
+        self.assertEqual([], D.instagram_problems(zh, "UsageNow：AI 用量與額度追蹤", locale="zh-Hant"))
+
+    def test_any_url_is_refused_the_apps_own_store_links_included(self):
+        for url in (STORE, PLAY, "https://open.cait518.cc/ig/", "open.cait518.cc/ig/", "apps.apple.com/app/id6785004775",
+                    "www.example.org", "lumistudio.com", "http://t.me/lumi"):
+            text = self.GOOD.replace("📲 Download via the link in bio", f"📲 Download via the link in bio\n{url}")
+            problems = D.instagram_problems(text, "Mochi", locale="en")
+            self.assertTrue(any("must not carry a URL" in p for p in problems), (url, problems))
+            with self.assertRaises(D.MissingDownloadLink):
+                D.ensure_instagram_caption(text, "Mochi", "en")
+        for plain in ("Version 1.5/2 is out", "Node.js and e.g. notes", "G+Money", "50% off nothing"):
+            self.assertEqual([], D.instagram_url_problems(plain), plain)   # words, not addresses
+
+    def test_the_profile_link_line_is_required_in_the_texts_language(self):
+        no_line = self.GOOD.replace("📲 Download via the link in bio", "Link in bio")
+        self.assertTrue(any("profile-link line" in p for p in D.instagram_problems(no_line, "Mochi", locale="en")))
+        self.assertTrue(any("profile-link line" in p for p in D.instagram_problems(self.GOOD, "Mochi", locale="ja")))
+        self.assertEqual([], D.instagram_problems(self.GOOD, "Mochi"))   # no locale given: any language's line
+        for locale in ("en", "zh-Hant", "zh-Hans", "ja", "ko", "de", "fr", "es", "it", "pt-BR", "id", "vi", "th", "cs",
+                       "pl", "nl", "da", "nb", "el", "ar"):
+            line = D.instagram_cta_line(locale)
+            self.assertTrue(line.startswith("📲 ") and D.has_instagram_cta(line, locale), locale)
+        self.assertEqual(D.instagram_cta("zh"), D.instagram_cta("zh-Hant"))
+        self.assertEqual(D.instagram_cta("pt"), D.instagram_cta("pt-BR"))
+        self.assertEqual(D.instagram_cta("sw"), D.instagram_cta("en"))
+
+    def test_the_brand_hashtag_is_the_main_store_name_without_spaces_and_symbols(self):
+        cases = {"BattAI: Battery Health & Life": "#BattAI", "Lumi Weather": "#LumiWeather", "G+Money": "#GMoney",
+                 "dB Halo": "#dBHalo", "100 Notes Studio": "#100NotesStudio", "UsageNow：AI 用量與額度追蹤": "#UsageNow",
+                 "HoursTag Lite：買前先算工時": "#HoursTagLite", "Snapport Lite - ID Photos": "#SnapportLite"}
+        for name, tag in cases.items():
+            self.assertEqual(D.brand_hashtag(name), tag, name)
+        # A brand that is not written in Latin letters takes the app's Latin store name.
+        self.assertEqual(D.brand_hashtag("Lumi注音星球", "Lumi Bopomofo"), "#LumiBopomofo")
+        self.assertEqual(D.brand_hashtag("Lumi ボポモフォ", "Lumi Bopomofo: Zhuyin"), "#LumiBopomofo")
+        self.assertEqual(D.brand_hashtag("Lumi注音星球"), "")
+        problems = D.instagram_problems(self.GOOD, "Lumi注音星球", locale="en")
+        self.assertTrue(any("no brand hashtag can be made" in p for p in problems), problems)
+
+    def test_the_brand_hashtag_must_be_there_as_a_whole_tag(self):
+        self.assertTrue(D.has_brand_hashtag("x #mochi y", "#Mochi"))   # any letter case
+        self.assertFalse(D.has_brand_hashtag("x #MochiDoneStamp", "#Mochi"))
+        self.assertFalse(D.has_brand_hashtag("Mochi", "#Mochi"))
+        no_tag = self.GOOD.replace("#Mochi ", "")
+        self.assertTrue(any("no brand hashtag #Mochi" in p for p in D.instagram_problems(no_tag, "Mochi", locale="en")))
+        self.assertEqual([], D.instagram_problems("Thanks!\n📲 Download via the link in bio", locale="en", brand=False))
+
+    def test_ensure_adds_the_line_and_the_brand_hashtag_first_within_the_tag_limit(self):
+        text = "Task list too boring?\nMochi: Cute To-Do\n\n#ToDo #Checklist #Cute #Planner #Habit"
+        out = D.ensure_instagram_caption(text, "Mochi: Cute To-Do", "en", tag_limit=5)
+        lines = out.split("\n")
+        self.assertEqual(lines[2], "📲 Download via the link in bio")
+        self.assertEqual(lines[-1].split(), ["#Mochi", "#ToDo", "#Checklist", "#Cute", "#Planner"])
+        self.assertEqual(out, D.ensure_instagram_caption(out, "Mochi: Cute To-Do", "en", tag_limit=5))   # idempotent
+        moved = D.ensure_instagram_caption("Hook\n\n#ToDo #mochi", "Mochi", "en")
+        self.assertEqual(moved.split("\n")[-1].split(), ["#Mochi", "#ToDo"])   # one brand hashtag, first
+
+    def test_a_long_caption_loses_other_hashtags_then_body_never_the_line_or_the_brand(self):
+        text = "word " * 600 + "\n\n" + " ".join(f"#tag{i}" for i in range(20))
+        out = D.ensure_instagram_caption(text, "BattAI", "zh-Hant", max_len=2200)
+        self.assertLessEqual(len(out), 2200)
+        self.assertEqual(out.split("\n")[-1], "#BattAI")
+        self.assertIn("📲 請到個人檔案（bio）的連結下載", out)
+        self.assertEqual([], D.instagram_problems(out, "BattAI", locale="zh-Hant"))
+        with self.assertRaises(D.MissingDownloadLink):
+            D.ensure_instagram_caption(text, "BattAI", "en", max_len=10)
+
+    def test_other_platforms_still_owe_the_direct_link(self):
+        # The Instagram rule is Instagram's: a Telegram / Bluesky text without the link is refused as before.
+        self.assertTrue(D.link_problems(self.GOOD, STORE))
+        self.assertTrue(D.link_problems(f"{self.GOOD}\n{STORE}", STORE, PLAY))   # Android: Play is owed too
+        self.assertEqual([], D.link_problems(f"{self.GOOD}\n{STORE}\n{PLAY}", STORE, PLAY))
+        self.assertIn(STORE, D.ensure_download_link(self.GOOD, STORE))
+        self.assertTrue(D.is_instagram("instagram") and D.is_instagram("instagram_feed"))
+        for channel in ("telegram", "threads", "bluesky", "youtube", "facebook", ""):
+            self.assertFalse(D.is_instagram(channel), channel)
+
+
+# Shared vectors: 00_GrowthEngine lib/test_outbound_links.py holds the same table for the mirrored core.
+CHANNEL_LEVEL = {
+    "h7_mochi_tg": "telegram", "h7_mochi_b_th": "threads", "ut_snapportlite_tg": "telegram", "cd_tg": "telegram",
+    "cd_pin": "social", "h7_mochi_tt": "social", "soc_tg_digest": "telegram", "soc_tg_gmoneylite": "telegram",
+    "soc_th_guide": "threads", "bf_tg": "telegram", "rp_ig": "instagram", "h7_mochi_yt": "youtube",
+    "yt_shorts": "youtube", "bm_usagenow_us_seo": "web", "bm_usagenow_us_th": "threads", "h_cvdesk_th_yt": "youtube",
+    "h_mochi_jp_kol": "outreach", "radar_bs": "bluesky", "radar_qr": "social", "geo_ask": "web", "iag_story": "web",
+    "sup_mochi_own": "web", "nostr_en-us": "social", "appdir_alternativeto_mochi": "outreach",
+    "mochi_flyer_ja": "outreach", "ig_bio_mochi": "instagram", "THREADS": "threads", "web": "web",
+}
+KEPT_AS_IS = ("gx_reach_b_v2_7c748bd2c62d6bf0", "yt_longform", "h7_mochi", "radar_zz", "wm_short15_lite", "")
+
+
+class ChannelLevelCampaignTest(unittest.TestCase):
+    """Apple hides a campaign below its privacy threshold: every link leaves with one ct per app and channel."""
+
+    def test_every_posting_line_token_leaves_at_channel_level(self):
+        for token, campaign in CHANNEL_LEVEL.items():
+            self.assertEqual(campaign, D.coarse_campaign(token), token)
+            self.assertIn(D.coarse_campaign(token), D.COARSE_CAMPAIGNS, token)
+        for token in KEPT_AS_IS:
+            self.assertEqual(token, D.coarse_campaign(token), token)
+        self.assertLessEqual(len(D.COARSE_CAMPAIGNS), 8)
+
+    def test_only_the_ct_of_app_store_links_changes(self):
+        text = ("Get it: https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=h7_mochi_tg&mt=8\n"
+                "<a href=\"https://apps.apple.com/app/id1?pt=1&amp;ct=ut_a_th&amp;mt=8\">x</a>\n"
+                "Play: https://play.google.com/store/apps/details?id=a&referrer=utm_source%3Dh7_mochi_tg\n"
+                "Rate: https://apps.apple.com/app/id6785004775?action=write-review\n"
+                "Other: https://example.com/?ct=h7_mochi_tg")
+        out = D.coarsen_campaign_links(text)
+        self.assertEqual(text.replace("ct=h7_mochi_tg&mt", "ct=telegram&mt").replace("ct=ut_a_th&", "ct=threads&"),
+                         out)
+        self.assertEqual(out, D.coarsen_campaign_links(out))  # idempotent
+        self.assertEqual(["h7_mochi_tg", "ut_a_th"], D.fine_campaigns(text))
+        self.assertEqual([], D.fine_campaigns(out))
+        self.assertIsNone(D.coarse_campaign_url(None))
+        self.assertEqual("https://example.com/?ct=h7_a_th", D.coarse_campaign_url("https://example.com/?ct=h7_a_th"))
+
+    def test_the_last_gate_sends_the_channel_campaign_and_still_fits(self):
+        fine = "https://apps.apple.com/app/id6785004775?pt=118326163&ct=rp_ig&mt=8"
+        sent = fine.replace("ct=rp_ig", "ct=instagram")
+        self.assertEqual(f"Hi\n\nApp Store: {sent}", D.ensure_download_link("Hi", fine))
+        self.assertEqual(f"Hi {sent}", D.ensure_download_link(f"Hi {fine}", STORE))
+        # The limit is measured on the text as sent (channel ct), so an appended link block still fits.
+        body = "word " * 20
+        out = D.ensure_download_link(body, fine, max_len=len(body) + len(sent) - 10)
+        self.assertLessEqual(len(out), len(body) + len(sent) - 10)
+        self.assertIn(sent, out)
+        self.assertEqual([], D.fine_campaigns(out))
 
 
 if __name__ == "__main__":

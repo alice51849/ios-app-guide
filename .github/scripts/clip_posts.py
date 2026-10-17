@@ -22,13 +22,13 @@ keyword line from clips.json, then a few keyword hashtags; the hook variant
 rotates across platforms and days and is recorded in clip-posts.json so
 post_performance.py can rank variants.
 
-Every post carries the app's direct download link (owner rule 2026-10-17, download_links.py): the
-Instagram and Telegram captions hold the full App Store URL (plus Google Play when the app is on
-Android; an Instagram caption link is not tappable, so the caption also says "Link in bio → tap “<app>”",
-ig_bio.py, and the profile link is the hub ig_bio_hub.py builds), the Threads video keeps
-its links in the first reply (account-limit history) and that reply is retried and checked. The QA
-gate (post_qa.py) refuses a caption without the link and ensure_download_link() is the last guard at
-the send call, so a post never goes out without it silently.
+Download links (owner rules 2026-10-17, download_links.py): the Telegram caption holds the full App Store
+URL (plus Google Play when the app is on Android), the Threads video keeps its links in the first reply
+(account-limit history) and that reply is retried and checked. Instagram cannot tap a caption URL, so the
+Reels caption carries none: it ends with the localized "📲 Download via the link in bio" line and leads its
+hashtags with the app's brand hashtag (#Mochi; ig_bio.py - the profile link is the hub ig_bio_hub.py builds).
+The QA gate (post_qa.py) refuses a caption that breaks its platform's rule, and ensure_download_link() /
+ig_bio.caption() are the last guards at the send call, so nothing goes out wrong silently.
 
     python3 clip_posts.py telegram --slot 1     # sendVideo + App Store button
     python3 clip_posts.py instagram --slot 15   # Reels via the official API
@@ -54,32 +54,32 @@ import review_links
 import search_caption as SC
 import threads_series
 import volume_ramp
-from social_post_common import play_store_url
+from social_post_common import SnapshotMissing, play_store_url
 
 HERE = Path(__file__).resolve().parent
 CLIPS = HERE.parent / "growth" / "clips.json"
 GRAPH = "https://graph.instagram.com/v21.0"
 
 TEXT = {
-    "en": {"search": "Search “{s}” on the App Store", "bio": "Link in bio", "button": "Get it on the App Store"},
-    "zh-Hant": {"search": "在 App Store 搜尋「{s}」", "bio": "下載連結在個人檔案", "button": "在 App Store 下載"},
-    "ja": {"search": "App Storeで「{s}」を検索", "bio": "リンクはプロフィールから", "button": "App Storeで入手"},
-    "ko": {"search": "App Store에서 '{s}' 검색", "bio": "링크는 프로필에", "button": "App Store에서 받기"},
-    "de": {"search": "Im App Store nach „{s}“ suchen", "bio": "Link in der Bio", "button": "Im App Store laden"},
-    "fr": {"search": "Recherchez « {s} » sur l'App Store", "bio": "Lien dans la bio", "button": "Télécharger sur l'App Store"},
-    "es": {"search": "Busca «{s}» en el App Store", "bio": "Enlace en la bio", "button": "Descargar en el App Store"},
-    "id": {"search": "Cari “{s}” di App Store", "bio": "Link di bio", "button": "Unduh di App Store"},
-    "vi": {"search": "Tìm “{s}” trên App Store", "bio": "Link ở bio", "button": "Tải trên App Store"},
-    "th": {"search": "ค้นหา “{s}” ใน App Store", "bio": "ลิงก์อยู่ในโปรไฟล์", "button": "ดาวน์โหลดใน App Store"},
-    "pt-BR": {"search": "Pesquise “{s}” na App Store", "bio": "Link na bio", "button": "Baixar na App Store"},
-    "zh-Hans": {"search": "在 App Store 搜索“{s}”", "bio": "下载链接在主页简介", "button": "在 App Store 下载"},
-    "cs": {"search": "Vyhledejte „{s}“ v App Storu", "bio": "Odkaz najdete v profilu", "button": "Stáhnout z App Storu"},
-    "pl": {"search": "Wyszukaj „{s}” w App Store", "bio": "Link w bio", "button": "Pobierz z App Store"},
-    "nl": {"search": "Zoek op ‘{s}’ in de App Store", "bio": "Link in bio", "button": "Download in de App Store"},
-    "da": {"search": "Søg efter “{s}” i App Store", "bio": "Link i bio", "button": "Hent i App Store"},
-    "nb": {"search": "Søk etter «{s}» i App Store", "bio": "Lenke i bio", "button": "Last ned i App Store"},
-    "el": {"search": "Αναζητήστε «{s}» στο App Store", "bio": "Σύνδεσμος στο προφίλ", "button": "Λήψη από το App Store"},
-    "ar": {"search": "ابحث عن «{s}» في App Store", "bio": "الرابط في الملف الشخصي", "button": "حمّله من App Store"},
+    "en": {"search": "Search “{s}” on the App Store", "button": "Get it on the App Store"},
+    "zh-Hant": {"search": "在 App Store 搜尋「{s}」", "button": "在 App Store 下載"},
+    "ja": {"search": "App Storeで「{s}」を検索", "button": "App Storeで入手"},
+    "ko": {"search": "App Store에서 '{s}' 검색", "button": "App Store에서 받기"},
+    "de": {"search": "Im App Store nach „{s}“ suchen", "button": "Im App Store laden"},
+    "fr": {"search": "Recherchez « {s} » sur l'App Store", "button": "Télécharger sur l'App Store"},
+    "es": {"search": "Busca «{s}» en el App Store", "button": "Descargar en el App Store"},
+    "id": {"search": "Cari “{s}” di App Store", "button": "Unduh di App Store"},
+    "vi": {"search": "Tìm “{s}” trên App Store", "button": "Tải trên App Store"},
+    "th": {"search": "ค้นหา “{s}” ใน App Store", "button": "ดาวน์โหลดใน App Store"},
+    "pt-BR": {"search": "Pesquise “{s}” na App Store", "button": "Baixar na App Store"},
+    "zh-Hans": {"search": "在 App Store 搜索“{s}”", "button": "在 App Store 下载"},
+    "cs": {"search": "Vyhledejte „{s}“ v App Storu", "button": "Stáhnout z App Storu"},
+    "pl": {"search": "Wyszukaj „{s}” w App Store", "button": "Pobierz z App Store"},
+    "nl": {"search": "Zoek op ‘{s}’ in de App Store", "button": "Download in de App Store"},
+    "da": {"search": "Søg efter “{s}” i App Store", "button": "Hent i App Store"},
+    "nb": {"search": "Søk etter «{s}» i App Store", "button": "Last ned i App Store"},
+    "el": {"search": "Αναζητήστε «{s}» στο App Store", "button": "Λήψη από το App Store"},
+    "ar": {"search": "ابحث عن «{s}» في App Store", "button": "حمّله من App Store"},
 }
 
 
@@ -139,9 +139,11 @@ def clip_campaign(token):
 
 
 def with_campaign(url, channel):
+    """The clip's App Store link for one platform, with that channel's ct (download_links.coarse_campaign:
+    one campaign per app and channel; the clip, variant and locale stay in the post log)."""
     parts = urllib.parse.urlsplit(url)
     query = dict(urllib.parse.parse_qsl(parts.query))
-    query["ct"] = f"{clip_campaign(query.get('ct', 'h7'))}_{channel}"[:40]
+    query["ct"] = DL.coarse_campaign(f"{clip_campaign(query.get('ct', 'h7'))}_{channel}"[:40])
     return urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query)))
 
 
@@ -167,8 +169,9 @@ def play_url(clip, channel):
 
 CHANNEL_CT = {"instagram": "ig", "telegram": "tg", "threads": "th"}   # ct suffix per channel (agent/ct_codes.py)
 # An Instagram surface with its own row (store_shot_cards.py carousels: h7_<app>_igc), so Reels and carousels are
-# told apart in App Store Connect; pass it as caption(..., tag=...).
-LINK_IN_CAPTION = ("instagram", "telegram")   # Threads keeps its links in the first reply
+# told apart in App Store Connect; pass it as caption(..., tag=...). (Instagram captions carry no URL any more, so
+# the tag only names the surface there; the profile-link hub has its own ig_bio_<app> campaign.)
+LINK_IN_CAPTION = ("telegram",)   # Threads keeps its links in the first reply; Instagram points to the bio link
 
 
 def play_label(clip):
@@ -199,8 +202,7 @@ def caption(clip, channel, variant=None, tag=None):
     lines += [clip["name"], t["search"].format(s=SC.clip_search(clip))]
     lines = SC.dedupe(lines)  # a keyline the app name already says ("可愛待辦清單" / "Mochi: 可愛待辦清單") goes
     if channel == "instagram":
-        # The caption URL below cannot be tapped: say where to tap, the app on the profile-link hub (ig_bio.py).
-        lines.append(IGB.bio_line(clip["locale"], clip["name"], t["bio"]))
+        return instagram_caption(clip, lines)
     if channel in LINK_IN_CAPTION:
         lines += link_lines(clip, channel, tag)  # the direct download link(s), in the text itself
     elif play_store_url(ios_id(clip), "h7"):
@@ -220,6 +222,24 @@ def caption(clip, channel, variant=None, tag=None):
                                        app_store_label=t["button"], play_label=play_label(clip),
                                        label=f"{clip.get('app')}/{clip.get('locale')} {channel}")
     return text
+
+
+def instagram_caption(clip, lines):
+    """The Instagram caption (owner 2026-10-17): the search-first lines, "Also on Google Play" (words only) when the
+    app is on Android, then "📲 Download via the link in bio" in the clip's language, then the hashtags led by the
+    app's brand hashtag (#Mochi) - no URL, Instagram cannot tap one (the profile-link hub has both store buttons).
+    ig_bio.caption() checks it and raises MissingDownloadLink when it cannot be made so."""
+    try:
+        on_play = bool(play_store_url(ios_id(clip), "h7"))
+    except SnapshotMissing:   # no link rides on it here: without the snapshot the line is just left out
+        on_play = False
+    lines = [*lines, *([play_label(clip)] if on_play else []), IGB.bio_line(clip["locale"])]
+    limit = SC.TAG_LIMIT.get("instagram", 5)
+    tags = IGB.hashtags(lambda n: SC.tags(clip, n), clip["name"], clip.get("store_url"), limit)
+    text = "\n".join(lines + (["", " ".join(tags)] if tags else []))
+    return IGB.caption(text, clip["name"], clip["locale"], clip.get("store_url"),
+                       max_len=post_qa.LIMITS["instagram"], tag_limit=limit,
+                       label=f"{clip.get('app')}/{clip.get('locale')} instagram")
 
 
 def _open(req, timeout):
@@ -284,10 +304,10 @@ def post_instagram(clip, variant=None, wait=5, tries=60):
         print(f"clip: token refresh skipped ({exc.__class__.__name__})")
     me = _get(f"{GRAPH}/me?fields=user_id,username&access_token={token}")
     user = me.get("user_id") or me.get("id")
-    store, play = download_urls(clip, "instagram")
-    text = DL.ensure_download_link(caption(clip, "instagram", variant), store, play, max_len=post_qa.LIMITS["instagram"],
-                                   app_store_label=text_for(clip["locale"])["button"], play_label=play_label(clip),
-                                   label=f"{clip.get('app')}/{clip.get('locale')} instagram")  # never without the link
+    # The last guard at the send call: no URL, the profile-link line, the brand hashtag (ig_bio.py).
+    text = IGB.caption(caption(clip, "instagram", variant), clip["name"], clip["locale"], clip.get("store_url"),
+                       max_len=post_qa.LIMITS["instagram"], tag_limit=SC.TAG_LIMIT.get("instagram", 5),
+                       label=f"{clip.get('app')}/{clip.get('locale')} instagram")
     container = _post(f"{GRAPH}/{user}/media", {
         "media_type": "REELS",
         "video_url": clip["url"],

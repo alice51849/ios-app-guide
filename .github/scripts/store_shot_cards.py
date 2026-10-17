@@ -17,10 +17,10 @@ first: the top revenue per download), 19 UTC = New York 15:20 / LA 12:20 ->
 English. Apps rotate in the planner's revenue order (the order of clips.json's
 schedule), one app at most once a week here, one (app, locale) carousel at
 most once in 60 days. The caption is clip_posts.caption (problem line,
-benefit, keyword line, App Store search line, the profile-link step naming the app
-(ig_bio.py), the direct App Store link with ct=h7_<app>_igc - the carousels' own row,
-apart from the Reels' h7_<app>_ig - plus Google Play when the app is on Android,
-keyword tags); the drawn cards carry no URL (not tappable on an image).
+benefit, keyword line, App Store search line, then "📲 Download via the link in bio"
+in the slot's language and the hashtags led by the app's brand hashtag, #Mochi;
+owner 2026-10-17: no URL in an Instagram text, it cannot be tapped - the profile
+link is the hub ig_bio_hub.py builds, ig_bio.py); the drawn cards carry no URL either.
 
     python3 store_shot_cards.py make --slot 7 --out-dir cards/      # cards + plan.json
     python3 store_shot_cards.py post --dir cards/ --base-url https://raw.githubusercontent.com/<repo>/feed-cards
@@ -43,7 +43,7 @@ sys.path.insert(0, str(HERE))
 import clip_posts  # noqa: E402
 import clip_progress  # noqa: E402
 import countdown_cards as cd  # noqa: E402
-import download_links as DL  # noqa: E402
+import ig_bio as IGB  # noqa: E402
 import post_qa  # noqa: E402
 import search_caption as SC  # noqa: E402
 import volume_ramp  # noqa: E402
@@ -245,13 +245,12 @@ def make(out_dir, day, slot, data=None, posts=None, fetcher=fetch):
 # ---------------------------------------------------------------- Instagram
 
 def checked_caption(plan):
-    """The caption with the app's direct download link(s): the clip caption already holds them; this is the
-    last guard before the send (a caption without the link raises MissingDownloadLink and nothing is posted)."""
-    stub = {"store_url": plan["store_url"], "locale": plan["locale"]}
-    store, play = clip_posts.download_urls(stub, "instagram", FEED_CT)
-    return DL.ensure_download_link(plan["caption"], store, play, max_len=post_qa.LIMITS["instagram"],
-                                   app_store_label=clip_posts.text_for(plan["locale"])["button"],
-                                   play_label=clip_posts.play_label(stub), label=f"feed {plan['key']}")
+    """The caption as Instagram takes it (owner 2026-10-17): no URL, the profile-link line, the app's brand
+    hashtag. The clip caption already is so; this is the last guard before the send (a caption that cannot be
+    made so raises MissingDownloadLink and nothing is posted)."""
+    return IGB.caption(plan["caption"], plan.get("name", ""), plan["locale"], plan["store_url"],
+                       max_len=post_qa.LIMITS["instagram"], tag_limit=SC.TAG_LIMIT.get("instagram", 5),
+                       label=f"feed {plan['key']}")
 
 
 def post_instagram(plan, base_url, wait=PAUSE, tries=40):
@@ -260,6 +259,7 @@ def post_instagram(plan, base_url, wait=PAUSE, tries=40):
     if not token:
         print("feed: IG_ACCESS_TOKEN not set, carousel skipped")
         return None
+    caption = checked_caption(plan)   # before any upload: a caption that cannot go out stops the whole carousel
     me = clip_posts._get(f"{GRAPH}/me?fields=user_id,username&access_token={token}")
     user = me.get("user_id") or me.get("id")
     children = []
@@ -270,7 +270,7 @@ def post_instagram(plan, base_url, wait=PAUSE, tries=40):
         children.append(clip_posts._post(f"{GRAPH}/{user}/media", fields)["id"])
         time.sleep(min(wait, 2))
     container = clip_posts._post(f"{GRAPH}/{user}/media", {
-        "media_type": "CAROUSEL", "children": ",".join(children), "caption": checked_caption(plan),
+        "media_type": "CAROUSEL", "children": ",".join(children), "caption": caption,
         "access_token": token})["id"]
     for _ in range(tries):
         status = clip_posts._get(f"{GRAPH}/{container}?fields=status_code&access_token={token}").get("status_code")

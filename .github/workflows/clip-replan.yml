@@ -37,9 +37,14 @@ jobs:
           # shorts = planner + storyboards (+ striking_distance.json sprint plan); data/*_full.json and the
           # two aso keyword files feed the search-intent captions (search_intent.py); the revenue snapshot
           # orders the apps and the weekly channel funnel moves slots / locales (only app keys and the
-          # schedule reach clips.json, no numbers).
+          # schedule reach clips.json, no numbers). lib/outbound_links.py is the shared download-link check the
+          # planner imports; geo/sku_routing.py + geo/data/sku_routing.json give each paid <-> Lite family's door
+          # (SKU routing: the edition that earns the most per product-page view goes first).
           sparse-checkout: |
             shorts/
+            lib/outbound_links.py
+            geo/sku_routing.py
+            geo/data/sku_routing.json
             reports/funnel-latest.json
             reports/channel_funnel.json
             data/*_full.json

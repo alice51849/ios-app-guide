@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-17T16:03:14+0800",
+ "source_generated": "2026-10-17T17:34:41+0800",
  "count": 51,
- "content_sha256": "8d379c1491e1fdaa5afed5b2ee3d2e433b4c65b2a720704973b32867f2f925df",
+ "content_sha256": "7dc4e1f48262f515f0f2cffd5cb1415ca401733c87fddd360b7db7d703054c12",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -1072,6 +1072,12 @@
    }
   }
  },
- "unmapped": [],
+ "unmapped": [
+  {
+   "folder": "51_GBAGo",
+   "package": "com.alice51849.GBAGo",
+   "reason": "no_unique_ios_match"
+  }
+ ],
  "baseline_first_seen": "2026-10-11T14:26:56+0800"
 }

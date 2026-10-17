@@ -34,6 +34,7 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "social"))
 from videogen.registry import APPS, APPSTORE, appstore_url  # noqa: E402
 from appstore_live import live_app_keys  # noqa: E402
+from answer_text import answer_outcome  # noqa: E402
 import gen_store_attribution  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
 
@@ -913,7 +914,7 @@ def faq_for(key, comp_name, gap_queries):
     elif profile == "pay_once":
         qa = [
             (f"What is a good pay-once alternative to {comp_name} on iPhone?",
-             f"{a['name']} is a one-time-purchase {noun} for iPhone — {a.get('sub','').replace(chr(10),' ')}. "
+             f"{a['name']} is a one-time-purchase {noun} for iPhone — {answer_outcome(a).replace(chr(10),' ')}. "
              "The App Store purchase includes everything, with no recurring subscription."),
             (f"Is there a {noun} with no subscription?",
              f"Yes. {a['name']} is a pay-once {noun}: buy it once and keep it. "
@@ -926,7 +927,7 @@ def faq_for(key, comp_name, gap_queries):
              f"listing for pricing and availability: {url}"),
             (f"What makes {a['name']} an alternative to {comp_name}?",
              f"{a['name']} is a no-subscription {noun} for iPhone with a focus on "
-             f"{a.get('sub', '').replace(chr(10), ' ')}."),
+             f"{answer_outcome(a).replace(chr(10), ' ')}."),
         ]
     elif profile == "free_to_start":
         if key == "tripbeelite":
@@ -963,7 +964,7 @@ def faq_for(key, comp_name, gap_queries):
         qa = [
             (f"What makes {a['name']} an alternative to {comp_name}?",
              f"{a['name']} is a privacy-focused {noun} for iPhone — "
-             f"{a.get('sub', '').replace(chr(10), ' ')}."),
+             f"{answer_outcome(a).replace(chr(10), ' ')}."),
             (f"How much does {a['name']} cost?",
              f"Pricing can vary by storefront. Check the current App Store listing: {url}"),
         ]
@@ -1170,7 +1171,7 @@ def alt_page(key, comp_norm, gap_queries):
   <p><a href="{e(url)}"><strong>Explore {e(a['name'])} and its current unlock options →</strong></a></p>"""
     else:
         body = f"""  <h1>{e(heading)}</h1>
-  <p><strong>{e(position['intro'])}</strong> {e((a.get('sub') or '').replace(chr(10),' '))}</p>
+  <p><strong>{e(position['intro'])}</strong> {e(answer_outcome(a).replace(chr(10),' '))}</p>
   <p><a href="{e(url)}"><strong>{e(position['cta'])} →</strong></a></p>
 
   <h2>{e(position['heading'])}</h2>
@@ -1231,7 +1232,7 @@ def hub_page(key, gap_queries):
   <p><a href="{e(url)}"><strong>Explore {e(a['name'])} on the App Store →</strong></a></p>"""
     else:
         body = f"""  <h1>{e(position['hub_heading'])}</h1>
-  <p><strong>{e(position['intro'])}</strong> {e((a.get('sub') or '').replace(chr(10),' '))}</p>
+  <p><strong>{e(position['intro'])}</strong> {e(answer_outcome(a).replace(chr(10),' '))}</p>
   <p><a href="{e(url)}"><strong>{e(position['cta'])} →</strong></a></p>
 
   <h2>{e(position['hub_section'])}</h2>

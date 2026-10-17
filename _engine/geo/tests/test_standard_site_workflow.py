@@ -167,7 +167,12 @@ class StandardSiteWorkflowTests(unittest.TestCase):
         ).casefold()
         self.assertIn("one trip and up to three saved expenses", combined)
         self.assertIn("saved or manually set exchange rate", combined)
-        self.assertIn("category statistics are free", combined)
+        # 商店免費範圍只寫匯率、預算、摘要；不再宣稱分類統計免費
+        self.assertIn(
+            "rates, the budget and the summary are free for one trip and three expenses",
+            combined,
+        )
+        self.assertNotIn("category statistics are free", combined)
         self.assertIn("one optional purchase", combined)
         self.assertIn("publisher disclosure:", combined)
 

@@ -898,7 +898,7 @@ def build_toeic_page():
     cta = ('<h2>Studying toward a higher TOEIC band? Practise daily with a one-time unlock</h2>\n'
            '<p>Moving up a CEFR band takes consistent, targeted practice on your weak sections. '
            '<strong>Aim990</strong> is a TOEIC Listening &amp; Reading study aid with a one-time '
-           'unlock, no subscription, daily timed drills, weak-spot focus, score tracking and no ads. '
+           'unlock, no subscription, an 8-minute diagnosis of your 3 weakest skills, daily drills, a Day 30 recheck and no ads. '
            'It is an independent study aid and not affiliated with ETS.</p>\n'
            f'<a class="cta" href="{AIM990_APP}">Get Aim990 on the App Store →</a>\n'
            f'<p style="font-size:14px"><a href="{SITE}/data/">More open datasets →</a></p>')

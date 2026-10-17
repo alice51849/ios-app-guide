@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-17T09:56:47+0800",
- "count": 44,
- "content_sha256": "ad58bec1fa94e4cd72232da8e432abb65af03a5aa4b20c47a4486b3bfa761634",
+ "source_generated": "2026-10-17T13:30:18+0800",
+ "count": 45,
+ "content_sha256": "b713a712eeba16af29cac69c62aaf5737433c86151fd4cf6da9f930a22e19050",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -609,6 +609,27 @@
     "zh-TW": {
      "title": "PicClear Pro",
      "short_description": "清理重複照片、舊截圖與模糊照片，手機空間不足時幫你騰出儲存空間"
+    }
+   }
+  },
+  "qrcodehalo": {
+   "ios_app_id": "6806779853",
+   "ios_name": "QR Code Halo",
+   "android_folder": "47_QRCodeHalo",
+   "package": "com.alice51849.QRCodeHalo",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.QRCodeHalo",
+   "paid": false,
+   "first_seen": "2026-10-17T13:30:18+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "QR Code Halo: Scan & Create",
+     "short_description": "QR code scanner and barcode reader with a QR generator and on-device link check"
+    },
+    "zh-TW": {
+     "title": "QR Code Halo：條碼掃描、建立與安全檢查",
+     "short_description": "QR Code 掃描器、條碼掃描與 QR Code 產生器：一掃即開，事後在本機做安全檢查"
     }
    }
   },

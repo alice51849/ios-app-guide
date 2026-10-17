@@ -17,8 +17,9 @@ first: the top revenue per download), 19 UTC = New York 15:20 / LA 12:20 ->
 English. Apps rotate in the planner's revenue order (the order of clips.json's
 schedule), one app at most once a week here, one (app, locale) carousel at
 most once in 60 days. The caption is clip_posts.caption (problem line,
-benefit, keyword line, App Store search line, "link in bio", keyword tags),
-the store link stays in the bio (ct=h7_<app>_igf on the promotion page).
+benefit, keyword line, App Store search line, the direct App Store link with
+ct=h7_<app>_ig plus Google Play when the app is on Android, the bio hint,
+keyword tags); the drawn cards carry no URL (not tappable on an image).
 
     python3 store_shot_cards.py make --slot 7 --out-dir cards/      # cards + plan.json
     python3 store_shot_cards.py post --dir cards/ --base-url https://raw.githubusercontent.com/<repo>/feed-cards

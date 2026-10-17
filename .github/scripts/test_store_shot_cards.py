@@ -4,6 +4,7 @@ import datetime as dt
 import io
 import json
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -38,6 +39,8 @@ def data(*pairs):
     schedule = [{"date": "2026-10-17", "slot": 1, "channel": "instagram", "clip": k} for k in clips]
     return {"clips": clips, "schedule": schedule}
 
+
+STORE_LINK = re.compile(r"https?://(?:apps\.apple\.com|play\.google\.com)/\S+")
 
 FONT = next((f for f in ("/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
                          "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc",
@@ -99,7 +102,8 @@ class DrawTest(unittest.TestCase):
         ramp = {"schema": R.SCHEMA, "stage_days": 3, "hold_days": 7,
                 "channels": {"instagram_feed": {"start": "2026-10-17", "stages": [1, 2], "slots": [7, 19]}}}
         with mock.patch.object(S.post_qa, "store_lookup", return_value={"screenshotUrls": urls}), \
-                mock.patch.object(S.volume_ramp, "load", return_value=ramp):
+                mock.patch.object(S.volume_ramp, "load", return_value=ramp), \
+                mock.patch.object(S, "compose", wraps=S.compose) as drawn:
             plan = S.make(self.tmp.name, dt.date(2026, 10, 17), 7, data=d, posts=[], fetcher=lambda u: shot_png())
         self.assertEqual(plan["key"], "feed/mochi/zh-Hant")
         self.assertEqual(plan["cards"], ["01.jpg", "02.jpg", "03.jpg"])
@@ -107,13 +111,33 @@ class DrawTest(unittest.TestCase):
         self.assertEqual(img.size, (S.W, S.H))
         self.assertIn("待辦清單也可以這麼可愛", plan["caption"])
         self.assertIn("下載連結在個人檔案", plan["caption"])
-        self.assertNotIn("http", plan["caption"])
+        # Owner rule 2026-10-17: the caption carries the app's direct App Store link (pt + ct) and no other
+        # store link; this app is iOS-only, so no Google Play link. The drawn cards carry no URL at all
+        # (a URL on an image is not tappable and reads as spam).
+        self.assertEqual(STORE_LINK.findall(plan["caption"]),
+                         ["https://apps.apple.com/us/app/id1005?pt=118326163&ct=h7_mochi_ig&mt=8"])
+        drawn_text = [t for c in drawn.call_args_list for t in (c.args[1], c.args[2].get("name", ""))]
+        self.assertEqual(len(drawn.call_args_list), 3)
+        self.assertFalse([t for t in drawn_text if "http" in t or "apps.apple.com" in t])
         self.assertEqual(json.loads((Path(self.tmp.name) / "plan.json").read_text())["key"], plan["key"])
         self.assertEqual(S.qa(plan, online=False), [])
         # The day's allowance used up: nothing is made.
         posted = [{"channel": S.CHANNEL, "clip": "feed/x/en", "posted_at": "2026-10-17T07:21:00Z"}]
         with mock.patch.object(S.volume_ramp, "load", return_value=ramp), mock.patch("sys.stdout"):
             self.assertIsNone(S.make(self.tmp.name, dt.date(2026, 10, 17), 19, data=d, posts=posted))
+
+    def test_the_plan_caption_adds_the_google_play_link_when_the_app_is_on_android(self):
+        d = data(("mochi", "zh-Hant"))
+        d["clips"]["mochi/zh-Hant"]["store_url"] = "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=h7_mochi&mt=8"
+        urls = [f"https://is1-ssl.mzstatic.com/image/thumb/x/{i}.png/320x480bb.jpg" for i in range(2)]
+        with mock.patch.object(S.post_qa, "store_lookup", return_value={"screenshotUrls": urls}), \
+                mock.patch.object(S.volume_ramp, "load", return_value={}):
+            plan = S.make(self.tmp.name, dt.date(2026, 10, 17), 7, data=d, posts=[], fetcher=lambda u: shot_png())
+        self.assertEqual(STORE_LINK.findall(plan["caption"]), [
+            "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=h7_mochi_ig&mt=8",
+            "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
+            "&referrer=utm_source%3Dh7_mochi_ig%26utm_campaign%3Dmochi"])
+        self.assertEqual(S.qa(plan, online=False), [])
 
     def test_too_few_screenshots_or_failed_downloads_make_nothing(self):
         d = data(("mochi", "en"))

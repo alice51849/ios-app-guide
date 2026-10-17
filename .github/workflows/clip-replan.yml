@@ -40,6 +40,8 @@ jobs:
           # schedule reach clips.json, no numbers). lib/outbound_links.py is the shared download-link check the
           # planner imports; geo/sku_routing.py + geo/data/sku_routing.json give each paid <-> Lite family's door
           # (SKU routing: the edition that earns the most per product-page view goes first).
+          # data/rank_watch/history.csv (keyword ranks) rebuilds search-terms.json: the caption's App Store search
+          # term is the one each app is closest to the top 3 on per storefront (build_search_terms.py).
           sparse-checkout: |
             shorts/
             lib/outbound_links.py
@@ -47,6 +49,7 @@ jobs:
             geo/data/sku_routing.json
             reports/funnel-latest.json
             reports/channel_funnel.json
+            data/rank_watch/history.csv
             data/*_full.json
             aso/keyword_baseline_20260923.json
             aso/kw_content.json
@@ -61,9 +64,13 @@ jobs:
             python3 .engine/shorts/scripts/schedule_posts.py --start 2026-10-13 \
               --ig-start 2026-10-15 --threads-start 2026-10-15 --out .github/growth/clips.json
             python3 .github/scripts/youtube_links.py --posted .engine/shorts/youtube-posted.json
+            python3 .github/scripts/build_search_terms.py --history .engine/data/rank_watch/history.csv \
+              --funnel .engine/reports/funnel-latest.json \
+              || echo "::error::search-terms.json not rebuilt: captions keep the last committed search terms"
             python3 .github/scripts/clip_progress.py
             python3 .github/scripts/test_app_improvements.py
-            git add .github/growth/clips.json .github/growth/clip-posts.json .github/growth/app-improvements.json
+            git add .github/growth/clips.json .github/growth/clip-posts.json .github/growth/app-improvements.json \
+              .github/growth/search-terms.json
             git diff --cached --quiet && exit 0
             git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "鉤子片日程每日重排：小國衝榜、檔期、外宣頁 [skip ci]"

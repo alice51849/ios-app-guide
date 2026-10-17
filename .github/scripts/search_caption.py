@@ -194,6 +194,7 @@ def _terms():
 
 STOREFRONT = re.compile(r"apps\.apple\.com/([a-z]{2})/", re.I)
 TERM_MAX_AGE = 21  # days: an older rank reading no longer says where the app stands
+MAX_RANK = 10  # past #10 people rarely scroll down to the app: the caption keeps the brand name
 
 
 def search_term(app, locale, store_url="", fallback="", data=None, day=None):
@@ -219,7 +220,11 @@ def search_term(app, locale, store_url="", fallback="", data=None, day=None):
             age = (day - dt.date.fromisoformat(str(entry.get("date")))).days
         except ValueError:
             continue
-        if term and -1 <= age <= TERM_MAX_AGE:
+        try:
+            rank = int(entry.get("rank") or 0)
+        except (TypeError, ValueError):
+            continue
+        if term and 1 <= rank <= MAX_RANK and -1 <= age <= TERM_MAX_AGE:
             return term
     return fallback
 

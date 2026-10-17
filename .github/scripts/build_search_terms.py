@@ -9,12 +9,15 @@ funnel snapshot (reports/funnel-latest.json, which storefronts paid in the last 
 
 Per app and storefront it keeps one term:
 - the term's latest reading is at most FRESH_DAYS older than the newest reading in the file;
-- the latest rank is in WINDOW (2-30), the smallest rank wins (closest to the top 3); a term already at #1 is
-  only the fallback when no 2-30 term exists; ties go to the term with more results (more competition = more
+- the latest rank is in WINDOW (2-10: past #10 people rarely scroll down to the app, so the caption keeps the
+  brand name), the smallest rank wins (closest to the top 3); a term already at #1 is
+  only the fallback when no 2-10 term exists; ties go to the term with more results (more competition = more
   searches), then the term text;
 - the term is in the storefront's language (script check; a Latin-script non-English storefront skips terms
   the same app also tracks in an English storefront) and passes the post QA claim check (no superlatives,
-  no competitor names or claims the app's own store text does not carry).
+  no competitor names or claims the app's own store text does not carry);
+- the term is not on the exclusion list (.github/growth/search-terms-exclude.json: misspellings people do type
+  but a caption should not print); the next qualifying term is used instead.
 
 search_caption.search_term() reads the file; with no entry (or a stale one) the caption keeps the clip's
 own search phrase. Only terms the rank probe really tracks and the app really ranks for are written.
@@ -36,6 +39,7 @@ import post_qa as QA  # noqa: E402
 
 GROWTH = HERE.parent / "growth"
 OUT = GROWTH / "search-terms.json"
+EXCLUDE = GROWTH / "search-terms-exclude.json"
 CLIPS = GROWTH / "clips.json"
 ENGINE = HERE.parents[2] / "00_GrowthEngine"
 SCHEMA = "lumi.search-terms/v1"
@@ -48,7 +52,7 @@ LOCALE = {"US": "en", "GB": "en", "CA": "en", "JP": "ja", "TW": "zh-Hant", "KR":
 MARKET_WEIGHT = {"US": 1.0, "JP": 0.6, "GB": 0.45, "CN": 0.45, "DE": 0.4, "KR": 0.3, "FR": 0.3, "TW": 0.3,
                  "CA": 0.25, "BR": 0.2, "RU": 0.1, "TH": 0.1, "VN": 0.08}
 ENGLISH_STOREFRONTS = {"US", "GB", "CA"}
-WINDOW = (2, 30)
+WINDOW = (2, 10)
 FRESH_DAYS = 7
 
 
@@ -120,7 +124,22 @@ def competitor(term, facts=""):
                for c in QA.COMPETITORS)
 
 
-def build(history, funnel=None, clips=None):
+def excluded_terms(data):
+    """{(app, storefront, term casefolded)} from the exclusion file; app / storefront "*" = any."""
+    out = set()
+    for row in (data or {}).get("terms") or []:
+        if isinstance(row, dict) and str(row.get("term") or "").strip():
+            out.add((str(row.get("app") or "*"), str(row.get("storefront") or "*").upper(),
+                     str(row["term"]).strip().casefold()))
+    return out
+
+
+def is_excluded(app, storefront, term, exclude):
+    t = term.casefold()
+    return any((a, sf, t) in exclude for a in (app, "*") for sf in (storefront, "*"))
+
+
+def build(history, funnel=None, clips=None, exclude=None):
     readings = history
     if not readings:
         return {"schema": SCHEMA, "as_of": None, "window": list(WINDOW), "apps": {}}
@@ -135,11 +154,13 @@ def build(history, funnel=None, clips=None):
     for (app, storefront, term), (day, rank, results) in readings.items():
         if day < cutoff or rank is None or rank > WINDOW[1] or rank < 1 or storefront not in LOCALE:
             continue
+        if is_excluded(app, storefront, term, exclude or set()):
+            continue
         if not in_language(term, storefront, english.get(app, set())):
             continue
         if QA.claim_problems(term, facts=facts.get(app, "")) or competitor(term, facts.get(app, "")):
             continue
-        # rank 2-30 first (smallest wins), a #1 term only when nothing in the window is left
+        # rank 2-10 first (smallest wins), a #1 term only when nothing in the window is left
         sort_key = (rank < WINDOW[0], rank, -(results or 0), term)
         current = best.get((app, storefront))
         if current is None or sort_key < current[0]:
@@ -170,7 +191,7 @@ def main(argv=None):
     if not Path(args.history).is_file():
         print(f"::error::rank history not found: {args.history}")
         return 1
-    data = build(read_history(args.history), _load(args.funnel), _load(CLIPS))
+    data = build(read_history(args.history), _load(args.funnel), _load(CLIPS), excluded_terms(_load(EXCLUDE)))
     if not data["apps"]:
         print("::error::no ranked term in the history: search-terms.json left as it is")
         return 1

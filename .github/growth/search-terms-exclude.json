@@ -1,0 +1,11 @@
+{
+ "about": "Terms build_search_terms.py never prints in a caption's App Store search line (misspellings people do type, but a caption should not show). app / storefront \"*\" = any.",
+ "terms": [
+  {
+   "app": "mochi",
+   "storefront": "TW",
+   "term": "代辦事項",
+   "why": "錯字（待辦事項）"
+  }
+ ]
+}

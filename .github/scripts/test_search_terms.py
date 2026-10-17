@@ -72,7 +72,7 @@ class BuildTest(unittest.TestCase):
             ["2026-10-17", "KR", "a", "사용량", "6", "9"],
             ["2026-10-17", "TW", "a", "这个用量", "2", "9"],           # Simplified in Taiwan
             ["2026-10-17", "TW", "a", "用量追蹤", "7", "9"],
-            ["2026-10-17", "US", "a", "token usage", "30", "9"],
+            ["2026-10-17", "US", "a", "token usage", "9", "9"],
             ["2026-10-17", "FR", "a", "token usage", "2", "9"],        # the English term tracked in the US
             ["2026-10-17", "FR", "a", "consommation tokens", "8", "9"],
             ["2026-10-17", "RU", "a", "token usage", "2", "9"],        # no Cyrillic in Russia
@@ -98,6 +98,31 @@ class BuildTest(unittest.TestCase):
         apps = B.build(h, funnel)["apps"]["a"]
         self.assertTrue(apps["TW"]["paid"])
         self.assertFalse(apps["US"]["paid"])
+
+    def test_terms_past_ten_keep_the_brand_name(self):
+        h = history([["2026-10-17", "US", "a", "usage limit", "21", "55"], ["2026-10-17", "GB", "a", "usage", "10", "9"]])
+        apps = B.build(h)["apps"]["a"]
+        self.assertNotIn("US", apps)                     # #21: no entry, the caption falls back to the store name
+        self.assertEqual(apps["GB"]["term"], "usage")    # #10 is still in
+
+    def test_excluded_terms_give_way_to_the_next_qualifying_term(self):
+        h = history([["2026-10-17", "TW", "mochi", "代辦事項", "2", "50"],
+                     ["2026-10-17", "TW", "mochi", "待辦清單", "6", "90"],
+                     ["2026-10-17", "TW", "cyca", "代辦事項", "3", "50"]])
+        exclude = B.excluded_terms({"terms": [{"app": "mochi", "storefront": "TW", "term": "代辦事項"}]})
+        apps = B.build(h, exclude=exclude)["apps"]
+        self.assertEqual(apps["mochi"]["TW"]["term"], "待辦清單")
+        self.assertEqual(apps["cyca"]["TW"]["term"], "代辦事項")  # the row names one app only
+        anywhere = B.excluded_terms({"terms": [{"app": "*", "storefront": "*", "term": "代辦事項"}]})
+        self.assertNotIn("cyca", B.build(h, exclude=anywhere)["apps"])
+
+    def test_committed_exclusion_list_drops_the_mochi_misspelling(self):
+        exclude = B.excluded_terms(json.loads(B.EXCLUDE.read_text(encoding="utf-8")))
+        self.assertTrue(B.is_excluded("mochi", "TW", "代辦事項", exclude))
+        data = json.loads(SC.SEARCH_TERMS.read_text(encoding="utf-8"))
+        for app, per in data["apps"].items():
+            for sf, e in per.items():
+                self.assertFalse(B.is_excluded(app, sf, e["term"], exclude), (app, sf, e["term"]))
 
     def test_empty_history_writes_nothing(self):
         self.assertEqual(B.build({})["apps"], {})
@@ -128,6 +153,10 @@ class SearchTermTest(unittest.TestCase):
         self.assertEqual(SC.search_term("mochi", "ja", "", "Mochi かわいいToDo", DATA, DAY), "Mochi かわいいToDo")
         self.assertEqual(SC.search_term("zipbox", "en", "", "ZipBox", DATA, DAY), "ZipBox")
         self.assertEqual(SC.search_term("mochi", "en", "", "Mochi", {}, DAY), "Mochi")
+
+    def test_entry_past_rank_ten_is_not_used(self):
+        far = {"apps": {"mochi": {"US": dict(DATA["apps"]["mochi"]["US"], rank=21)}}}
+        self.assertEqual(SC.search_term("mochi", "en", "https://apps.apple.com/us/app/id1", "Mochi", far, DAY), "Mochi")
 
     def test_hook_variant_listing_uses_its_base_app(self):
         clip = {"app": "mochi_b", "locale": "en", "store_url": "https://apps.apple.com/us/app/id1", "search": "Mochi"}

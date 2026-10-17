@@ -380,6 +380,10 @@ jobs:
            python3 _engine/geo/publisher_intent_visuals.py \
              --today "$GEO_BUILD_DATE"
            python3 _engine/geo/result_image_index.py --pages "$GITHUB_WORKSPACE"
+           # Every promotional page says who runs the site before its first
+           # recommendation (JP stealth-marketing rules, FTC 16 CFR 465);
+           # after every body generator, before lastmod reads the bytes.
+           python3 _engine/geo/first_party_disclosure.py --pages "$GITHUB_WORKSPACE"
            python3 _engine/geo/gen_sitemap_lastmod.py \
             --today "$GEO_BUILD_DATE" \
             --workflow-started-at "$GEO_WORKFLOW_STARTED_AT" \
@@ -582,6 +586,7 @@ jobs:
             --output-dir "$GITHUB_WORKSPACE" \
             --check-materialization-closure
           cd "$GITHUB_WORKSPACE"
+          python3 _engine/geo/first_party_disclosure.py --pages "$GITHUB_WORKSPACE"
           python3 _engine/geo/gen_sitemap_lastmod.py \
             --fallback-state "$SITEMAP_LASTMOD_INTERMEDIATE_STATE" \
             --today "$GEO_BUILD_DATE" \

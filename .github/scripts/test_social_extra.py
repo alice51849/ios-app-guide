@@ -75,6 +75,14 @@ class Fake:
         return [c for c in self.calls if part in c["url"] and (method is None or c["method"] == method)]
 
 
+def without_android(ios_id):
+    """The real Android snapshot minus one app: the card fixture's CountDaysNow went live on Google Play
+    (2026-10-17), so the iPhone-only tests take it out of the snapshot instead of depending on live data."""
+    import social_post_common as common
+    snapshot = {k: v for k, v in common.android_apps().items() if k != ios_id}
+    return mock.patch.object(common, "android_apps", return_value=snapshot)
+
+
 def item(kind="clip", locale="en"):
     if kind == "clip":
         return S.clip_item(f"a/{locale}", clip("a", locale), "bluesky")
@@ -867,7 +875,8 @@ class SentPayloadLinksTest(LinkAsserts, unittest.TestCase):
 
     def test_pinterest_without_android_has_the_app_store_link_only(self):
         fake = Fake([("GET", "/boards", {"items": [{"id": "b1", "name": "Lumi Apps"}]}), ("POST", "/pins", {"id": "p1"})])
-        with mock.patch.dict(os.environ, {"PINTEREST_TOKEN": "t"}, clear=True), mock.patch.object(S, "http", fake):
+        with mock.patch.dict(os.environ, {"PINTEREST_TOKEN": "t"}, clear=True), mock.patch.object(S, "http", fake), \
+                without_android("6807079789"):
             S.post_pinterest(item("card"))
         self.assertIosLinks(json.loads(fake.find("/pins")[0]["data"])["description"], "6807079789")
 
@@ -895,7 +904,8 @@ class SentPayloadLinksTest(LinkAsserts, unittest.TestCase):
         with self.assertRaises(DL.MissingDownloadLink):
             S.play_of(bad)
         self.assertTrue(S.qa_problems(bad, "bluesky"))
-        self.assertIsNone(S.play_of(item("card")))   # an app that is not on Android still has no Play link
+        with without_android("6807079789"):
+            self.assertIsNone(S.play_of(item("card")))   # an app that is not on Android still has no Play link
 
     def test_tumblr_link_block_is_the_app_store_and_the_google_play_text_links_it(self):
         for it in (mochi_item("tumblr"), mochi_card()):

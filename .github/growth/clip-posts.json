@@ -17,7 +17,15 @@
       "clip": "wifiaidlite/zh-Hant",
       "link": "https://youtube.com/shorts/f2iOdp-uqDM",
       "posted_at": "2026-10-15T01:11:20Z",
-      "id": "f2iOdp-uqDM"
+      "id": "f2iOdp-uqDM",
+      "taken_down": {
+        "at": "2026-10-17T10:48:20Z",
+        "method": "videos.update status.privacyStatus=private",
+        "reason": "store_screenshot",
+        "report": "reports/video_takedown_2026-10-17.json",
+        "reversible": true,
+        "status": "private"
+      }
     },
     {
       "channel": "telegram",
@@ -69,7 +77,15 @@
       "clip": "battai/zh-Hant",
       "link": "https://youtube.com/shorts/hDfr8pqV9Ng",
       "posted_at": "2026-10-15T08:24:39Z",
-      "id": "hDfr8pqV9Ng"
+      "id": "hDfr8pqV9Ng",
+      "taken_down": {
+        "at": "2026-10-17T10:48:20Z",
+        "method": "videos.update status.privacyStatus=private",
+        "reason": "free_download_end_card",
+        "report": "reports/video_takedown_2026-10-17.json",
+        "reversible": true,
+        "status": "private"
+      }
     },
     {
       "channel": "telegram",
@@ -161,7 +177,15 @@
       "clip": "claudeusagemini_b/en",
       "link": "https://youtube.com/shorts/kIxSqYRrU90",
       "posted_at": "2026-10-16T17:16:37Z",
-      "id": "kIxSqYRrU90"
+      "id": "kIxSqYRrU90",
+      "taken_down": {
+        "at": "2026-10-17T10:48:20Z",
+        "method": "videos.update status.privacyStatus=private",
+        "reason": "store_screenshot",
+        "report": "reports/video_takedown_2026-10-17.json",
+        "reversible": true,
+        "status": "private"
+      }
     },
     {
       "channel": "instagram",
@@ -198,7 +222,15 @@
       "clip": "lumibopomofo/en",
       "link": "https://youtube.com/shorts/upwqKZ4rxwY",
       "posted_at": "2026-10-16T21:17:13Z",
-      "id": "upwqKZ4rxwY"
+      "id": "upwqKZ4rxwY",
+      "taken_down": {
+        "at": "2026-10-17T10:48:20Z",
+        "method": "videos.update status.privacyStatus=private",
+        "reason": "free_download_end_card",
+        "report": "reports/video_takedown_2026-10-17.json",
+        "reversible": true,
+        "status": "private"
+      }
     },
     {
       "channel": "instagram_feed",

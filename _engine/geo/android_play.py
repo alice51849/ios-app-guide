@@ -19,6 +19,19 @@ Mapping Android -> iOS roster key is mechanical and recorded per app:
 Anything else stays in ``unmapped`` and never gets a link.  Retired apps
 (``RETIRED_KEYS``) are never listed.
 
+Shrink protection: ``android_live_scan.py`` skips an app on ANY non-200 answer
+(a network outage, a 429, a timeout), so one bad round writes a scan with fewer
+apps, down to none.  Published as it is, the snapshot would make every consumer
+read the dropped apps as "not on Google Play": texts go out without the Play
+link they owe and the next page pass strips the Play links already on the site.
+``vanished_apps`` / ``shrink_plan`` / ``carry_forward`` therefore keep every app
+that vanished from the scan in the published snapshot (its published entry is
+carried forward, new apps are published at once) until it has been missing for
+an hour (a real take-down persists, a failed probe does not), each app on its
+own clock.  More apps than ``mass_limit`` vanishing together, or a scan with no
+app at all, is a failed round, not that many take-downs: nothing of it is
+published and the sync reports an error until a person accepts the removal.
+
 Consumers
 ---------
 * ``inject_tree``      adds a Google Play link next to the first App Store
@@ -378,6 +391,81 @@ def load_snapshot(
     return validate_snapshot(
         document, load_manifest_apps(manifest_path), strict=False
     )
+
+
+SHRINK_HOLD_SECONDS = 3600  # an app has to be missing from the scan this long (two rounds) before its removal is published
+SHRINK_MASS_APPS = 3        # more apps than this missing at once is a failed round or an event, not that many take-downs
+SHRINK_MASS_RATIO = 0.10    # ... and for a big portfolio, more than this share of everything that is published
+
+
+def vanished_apps(snapshot: dict, current: dict | None) -> list[str]:
+    """Roster keys the published snapshot (`current`) lists as live on Google Play that `snapshot` no longer has.
+    No published snapshot yet (None) or an unreadable one: nothing can have vanished."""
+    if not isinstance(current, dict) or not isinstance(current.get("apps"), dict):
+        return []
+    new_keys = set((snapshot or {}).get("apps") or {})
+    return sorted(key for key in current["apps"] if key not in new_keys)
+
+
+def mass_limit(published: int) -> int:
+    """How many apps may vanish at once before it counts as a mass event: at most SHRINK_MASS_APPS, and for a small
+    portfolio at most SHRINK_MASS_RATIO of it (never less than one app)."""
+    return max(1, min(SHRINK_MASS_APPS, int(SHRINK_MASS_RATIO * max(0, published))))
+
+
+def shrink_plan(vanished: list[str], published: int, pending: dict | None, now: float, *,
+                accepted=(), hold: float = SHRINK_HOLD_SECONDS) -> dict:
+    """What to do with the apps the published snapshot lists as live that the new scan lacks.
+
+    The scanner skips an app on ANY non-200 answer, so a failed probe looks exactly like a take-down for one round.
+    Every vanished app therefore has its own clock (`pending["first_seen"][key]`, kept while it stays missing, so
+    different apps flapping in turn cannot reset one another): it is carried forward from the published snapshot
+    until it has been missing for `hold` seconds, then its removal is published.  New apps are never delayed.
+    Apps vanishing together are different: more than mass_limit(published) at once is a failed round (Play throttling
+    the scanner) or an event, not that many take-downs inside one scan interval, so none of their removals is
+    published until a person accepts them (`accepted`, from --accept-removal) and the caller reports an error.
+
+    Returns {"carry": keys to keep from the published snapshot, "drop": keys whose removal is published,
+    "mass": bool, "first_seen": {key: epoch} of the carried keys (the state to keep for the next run)}.
+    """
+    previous = pending.get("first_seen") if isinstance(pending, dict) and isinstance(pending.get("first_seen"), dict) else {}
+    accepted = set(accepted)
+    keys = sorted(vanished)
+    first_seen: dict[str, float] = {}
+    for key in keys:
+        try:
+            first = float(previous[key])
+        except (KeyError, TypeError, ValueError):
+            first = now
+        first_seen[key] = now if first > now + 300 else first  # a start in the future (clock jump, garbled file) restarts the clock
+    undecided = [key for key in keys if key not in accepted]
+    mass = len(undecided) > mass_limit(published)
+    drop = [key for key in keys if key in accepted or (not mass and now - first_seen[key] >= hold)]
+    carry = [key for key in keys if key not in drop]
+    return {"carry": carry, "drop": drop, "mass": mass, "first_seen": {key: first_seen[key] for key in carry}}
+
+
+def carry_forward(snapshot: dict, current: dict | None, keys: list[str]) -> dict:
+    """`snapshot` plus the published entries of `keys` (apps whose removal is not confirmed yet), with `count` and
+    `content_sha256` recomputed.  An app is not carried when the new snapshot has it already, or when its package
+    now belongs to another app there (a package may appear only once)."""
+    apps = dict((snapshot or {}).get("apps") or {})
+    published = ((current or {}).get("apps") or {}) if isinstance(current, dict) else {}
+    packages = {entry.get("package") for entry in apps.values() if isinstance(entry, dict)}
+    carried = 0
+    for key in keys:
+        entry = published.get(key)
+        if key in apps or not isinstance(entry, dict) or entry.get("package") in packages:
+            continue
+        apps[key] = entry
+        packages.add(entry.get("package"))
+        carried += 1
+    if not carried:
+        return snapshot
+    apps = dict(sorted(apps.items()))
+    body = {"apps": apps, "unmapped": snapshot.get("unmapped") or [],
+            "baseline_first_seen": snapshot.get("baseline_first_seen")}
+    return {**snapshot, "count": len(apps), "content_sha256": _digest(body), "apps": apps}
 
 
 def _copy(entry: dict, locale: str = "en-US") -> dict:

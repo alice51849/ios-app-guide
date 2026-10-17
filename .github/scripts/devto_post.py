@@ -9,9 +9,11 @@ import sys
 import urllib.parse
 import urllib.request
 
+import download_links as DL
 from social_post_common import (
     HTTPStatusError,
     RequestError,
+    play_store_url,
     request_json,
     validate_url,
 )
@@ -94,6 +96,24 @@ def article_urls(article):
     ))
 
 
+def article_link_problems(article):
+    """Why `article` may not go out: it has to carry the direct download link of every app it links to (the
+    App Store link, plus the Google Play link for an app that is live on Android), and at least one app link."""
+    body = article.get("body", "")
+    ids = sorted(DL.store_ids_in(body))
+    if not ids:
+        return ["no App Store download link in the article"]
+    problems = []
+    for app_id in ids:
+        try:
+            play = play_store_url(app_id, "dv")
+        except ValueError as error:   # the Android snapshot is unreadable: the Play link cannot be decided
+            return [f"the Google Play link cannot be decided ({error})"]
+        if play and not DL.has_play_link(body, play):
+            problems.append(f"app {app_id} is live on Google Play but the article has no Google Play link")
+    return problems
+
+
 def next_publishable(pool, published):
     done = {
         article.get("title", "").strip()
@@ -101,6 +121,14 @@ def next_publishable(pool, published):
     }
     for article in pool:
         if article["title"].strip() in done:
+            continue
+        problems = article_link_problems(article)
+        if problems:
+            print(
+                f"Dev.to: skipping article without its download link: "
+                f"{article['title']} ({'; '.join(problems)})",
+                file=sys.stderr,
+            )
             continue
         dead = [url for url in article_urls(article) if not validate_url(url)]
         if dead:
@@ -141,6 +169,10 @@ def publication_due(pool, published, now=None):
 
 
 def _publish(key, article):
+    problems = article_link_problems(article)
+    if problems:   # the last guard: an article without its download link is never sent
+        DL.refuse(f"Dev.to publish ({article.get('title', '')[:60]})", problems)
+        raise ValueError("; ".join(problems))
     payload = {
         "article": {
             "title": article["title"],

@@ -347,9 +347,18 @@ PLAY_APP_KEY_RE = re.compile(r"^[a-z0-9][a-z0-9_]{0,39}$")
 PLAY_DETAILS_PREFIX = "https://play.google.com/store/apps/details?id="
 
 
+class SnapshotMissing(ValueError):
+    """The Android snapshot is missing, unreadable or empty: whether an app is on Google Play cannot be decided,
+    so no post goes out on the guess "iPhone only" (it would silently drop the Google Play link)."""
+
+
 def play_store_url(app_id, campaign):
-    """Google Play link tracked with the App Store link's own ct token, or None if not on Android."""
-    entry = android_apps().get(str(app_id))
+    """Google Play link tracked with the App Store link's own ct token, or None if not on Android.
+    Raises SnapshotMissing (a ValueError) when the Android snapshot cannot be read: no post, no guess."""
+    apps = android_apps()
+    if not apps:
+        raise SnapshotMissing("the Android snapshot is empty or unreadable; the Google Play link cannot be decided")
+    entry = apps.get(str(app_id))
     if not entry:
         return None
     token = str(campaign or "").strip()

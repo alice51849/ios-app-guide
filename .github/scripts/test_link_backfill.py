@@ -16,27 +16,36 @@ os.environ.setdefault("POST_QA_OFFLINE", "1")
 import link_backfill as B  # noqa: E402
 import own_posts as OP  # noqa: E402
 
+B.URL_CHECK = lambda url: (True, "test")   # no test reaches the network; UrlOkTest drives the real url_ok
+
 MOCHI = "6785004775"   # on Google Play in the Android snapshot
 PLAIN = "6818607603"   # iOS only here (not in the snapshot)
 
 
 class FakeClient:
     def __init__(self, channel, media, comments=None, username="brand", fail_on_write=None, fail_comments=None,
-                 hide_own=False, drop_writes=False, counts=None, account_replies=None, fail_replies=False):
+                 hide_own=False, drop_writes=False, counts=None, account_replies=None, fail_replies=False,
+                 fail_count=False):
         self.channel, self.media_rows, self.by_post = channel, media, comments or {}
         self.user_id, self.username = "u1", username
-        self.writes, self.attempts, self.reads = [], 0, 0
+        self.writes, self.attempts, self.reads, self.known_comments = [], 0, 0, set()
         self.fail_on_write, self.fail_comments = fail_on_write, fail_comments
         # Instagram: the list of a post does not show the account's own comments, the post's count does
         self.hide_own, self.drop_writes, self.counts = hide_own, drop_writes, dict(counts or {})
-        self.account_replies, self.fail_replies = account_replies or [], fail_replies
+        self.account_replies, self.fail_replies, self.fail_count = account_replies or [], fail_replies, fail_count
 
     def me(self):
         return self
 
     def _get(self, path, **params):
         if params.get("fields") == "comments_count":
+            if self.fail_count:   # the platform answers, but not with a count
+                raise OP.ApiError(400, 100, "Invalid parameter")
             return {"comments_count": self.counts.get(str(path), 0)}
+        if str(path) in self.known_comments:   # a comment of the account, fetched by its id: an empty object
+            return {}
+        if str(path).startswith("c") and str(path)[1:].isdigit():   # an id that does not exist
+            raise OP.ApiError(400, 100, "Object does not exist")
         if path.endswith("/replies"):   # all replies of the account
             if self.fail_replies:
                 raise RuntimeError("network down")
@@ -62,6 +71,7 @@ class FakeClient:
             raise self.fail_on_write
         self.writes.append((str(post_id), text))
         if not self.drop_writes:   # a dropped write: the platform answered with an id, nothing was added
+            self.known_comments.add(f"c{len(self.writes)}")
             self.by_post.setdefault(str(post_id), []).append({"id": f"c{len(self.writes)}", "text": text,
                                                               "user": self.username, "own": True})
             self.counts[str(post_id)] = self.counts.get(str(post_id), 0) + 1
@@ -130,6 +140,19 @@ class BackfillTest(unittest.TestCase):
         rows3 = self.run_channel(client, fresh_state(), apply=True)  # state lost: the comment itself is found
         self.assertEqual(len(client.writes), 1)
         self.assertEqual(rows3[0]["status"], "ok_comment")
+
+    def test_a_link_that_does_not_answer_is_not_written_and_does_not_use_up_the_batch(self):
+        client = ig([reel("100"), reel("101")])
+        # Mochi is on Android, so a post needs two links: the first post's store link is dead, all others answer
+        answers = iter([(False, "HTTP 404"), (True, "HTTP 200"), (True, "HTTP 200"), (True, "HTTP 200")])
+        with mock.patch.object(B, "URL_CHECK", lambda url: next(answers)):
+            rows = self.run_channel(client, apply=True, max_new=1)
+        by_id = {r["id"]: r for r in rows}
+        self.assertEqual("link_unreachable", by_id["100"]["status"])
+        self.assertIn("HTTP 404", by_id["100"]["error"])
+        self.assertNotIn("?", by_id["100"]["error"])   # the page, never the tracking parameters
+        self.assertEqual([("101", client.writes[0][1])], client.writes)   # the next post still got its link
+        self.assertEqual("backfilled", by_id["101"]["status"])
 
     def test_only_the_missing_store_is_added_when_the_caption_has_play_only(self):
         store, play = B.links_for("instagram", MOCHI)
@@ -297,10 +320,18 @@ class BackfillTest(unittest.TestCase):
 
     def test_a_receipt_from_before_the_count_was_kept_is_proven_by_a_count_of_one(self):
         client = ig([reel()], hide_own=True, counts={"100": 1})
+        client.known_comments.add("c9")   # the comment we wrote exists, fetched by its id
         state = fresh_state()
         state["done"] = {"instagram": {"100": {"at": "t", "comment_id": "c9", "app": "mochi", "verified": False}}}
         self.assertEqual(self.run_channel(client, state, apply=True)[0]["status"], "ok_backfilled_earlier")
         self.assertEqual(client.writes, [])
+
+    def test_somebody_elses_comment_raising_the_count_is_not_proof_of_ours(self):
+        client = ig([reel()], hide_own=True, counts={"100": 1})   # a count of one, but our comment id does not exist
+        state = fresh_state()
+        state["done"] = {"instagram": {"100": {"at": "t", "comment_id": "c9", "app": "mochi", "verified": False}}}
+        self.assertEqual(self.run_channel(client, state, apply=True)[0]["status"], "backfilled_unverified")
+        self.assertEqual(client.writes, [])   # and never a second comment either
 
     def test_comments_the_list_does_not_show_stop_a_second_comment_when_the_receipts_are_lost(self):
         client = ig([reel()], hide_own=True, counts={"100": 1})
@@ -356,6 +387,149 @@ class BackfillTest(unittest.TestCase):
         B.diag(client, state, ["100"], finder=B.AppFinder(catalog()), out=lines.append)
         self.assertTrue(any("token owner" in line for line in lines))
         self.assertEqual(len(client.writes), before)
+
+
+class UrlOkTest(unittest.TestCase):
+    """Owner rule 2026-10-17: a link goes under a post only while its page answers HTTP 200."""
+
+    class Resp:
+        def __init__(self, status=200, body=b""):
+            self.status, self.body = status, body
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_a):
+            return False
+
+        def read(self):
+            return self.body
+
+        def getcode(self):
+            return self.status
+
+    def opener(self, handler):
+        calls = []
+
+        def op(request, timeout=0):
+            url = getattr(request, "full_url", request)
+            calls.append(url)
+            return handler(url)
+        op.calls = calls
+        return op
+
+    STORE = "https://apps.apple.com/app/id6785004775?pt=118326163&ct=bf_ig&mt=8"
+    PLAY = "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dbf_ig"
+
+    def test_http_200_passes_and_a_link_is_looked_at_once_per_run(self):
+        op, seen = self.opener(lambda url: self.Resp(200)), {}
+        self.assertEqual((True, "HTTP 200"), B.url_ok(self.STORE, op, seen=seen))
+        self.assertEqual((True, "HTTP 200"), B.url_ok(self.STORE, op, seen=seen))
+        self.assertEqual([self.STORE], op.calls)
+
+    def test_a_missing_page_is_never_accepted_and_never_second_guessed(self):
+        def handler(url):
+            raise B.urllib.error.HTTPError(url, 404, "Not Found", {}, None)
+        op = self.opener(handler)
+        self.assertEqual((False, "HTTP 404"), B.url_ok(self.STORE, op, seen={}))
+        self.assertEqual(1, len(op.calls))   # no iTunes lookup after a 404
+
+    def test_a_store_page_refused_to_a_script_passes_when_the_lookup_knows_the_app(self):
+        def handler(url):
+            if "itunes.apple.com/lookup" in url:
+                return self.Resp(200, b'{"resultCount": 1}')
+            raise B.urllib.error.HTTPError(url, 403, "Forbidden", {}, None)
+        ok, why = B.url_ok(self.STORE, self.opener(handler), seen={})
+        self.assertTrue(ok)
+        self.assertIn("403", why)
+
+        def unknown(url):
+            if "itunes.apple.com/lookup" in url:
+                return self.Resp(200, b'{"resultCount": 0}')
+            raise B.urllib.error.HTTPError(url, 403, "Forbidden", {}, None)
+        self.assertEqual((False, "HTTP 403"), B.url_ok(self.STORE, self.opener(unknown), seen={}))
+
+    def test_a_play_page_that_does_not_answer_is_not_known_to_be_fine(self):
+        def busy(url):
+            raise B.urllib.error.HTTPError(url, 429, "Too Many Requests", {}, None)
+        op = self.opener(busy)
+        self.assertEqual((False, "HTTP 429"), B.url_ok(self.PLAY, op, seen={}))
+        self.assertEqual(1, len(op.calls))   # the lookup is for App Store pages only
+
+        def down(url):
+            raise B.urllib.error.URLError("https://secret.example/?token=abc")
+        ok, why = B.url_ok(self.PLAY, self.opener(down), seen={})
+        self.assertFalse(ok)
+        self.assertEqual("URLError", why)
+        self.assertNotIn("token", why)
+
+
+class ConflictAndCountTest(unittest.TestCase):
+    """A link to another app already under the post, and a comment count that cannot be read, stop the write."""
+
+    def run_channel(self, client, state=None, **kw):
+        kw.setdefault("sleeper", lambda s: None)
+        kw.setdefault("log", lambda *a: None)
+        return B.run(client, catalog(), state if state is not None else fresh_state(), **kw)
+
+    def test_a_text_that_links_an_app_we_do_not_know_is_not_taken_for_a_brand_mention(self):
+        finder = B.AppFinder(catalog())
+        text = "New: https://apps.apple.com/app/id9999999999 - works great next to Mochi"
+        self.assertIsNone(finder.resolve("threads", {"id": "x", "caption": text, "permalink": ""}))
+        known = f"Task list too boring? https://apps.apple.com/app/id{MOCHI}"
+        self.assertEqual(MOCHI, finder.resolve("threads", {"id": "x", "caption": known, "permalink": ""})["ios_id"])
+
+    def test_our_own_reply_that_links_another_app_stops_the_backfill(self):
+        post = reel("200", caption="Task list too boring?\nMochi on the App Store")
+        mine = {"id": "r1", "text": f"Get it on the App Store: https://apps.apple.com/app/id{PLAIN}?pt=1&ct=x&mt=8",
+                "user": "brand", "own": True}
+        client = FakeClient("threads", [post], {"200": [mine]})
+        state = fresh_state()
+        rows = self.run_channel(client, state, apply=True)
+        self.assertEqual(["unknown_app"], [r["status"] for r in rows])
+        self.assertIn("conflict", rows[0]["why"])
+        self.assertEqual([], client.writes)
+        self.assertEqual("unknown_app", state["checked"]["threads"]["200"])   # settled: never read again
+
+    def test_an_instagram_post_whose_count_cannot_be_read_is_never_written(self):
+        client = ig([reel()], fail_count=True)
+        for apply in (False, True):
+            rows = self.run_channel(client, apply=apply)
+            self.assertEqual(["read_failed:count"], [r["status"] for r in rows])
+        self.assertEqual([], client.writes)
+
+    def test_the_count_lost_between_the_look_and_the_write_writes_nothing(self):
+        client = ig([reel()])
+        seen = iter([0, None])   # the look finds the count, the baseline right before the write does not
+        with mock.patch.object(B, "comments_count", side_effect=lambda *_: next(seen)):
+            rows = self.run_channel(client, apply=True)
+        self.assertEqual(["read_failed:count"], [r["status"] for r in rows])
+        self.assertEqual([], client.writes)
+
+    def test_merge_state_never_lowers_a_failure_count_or_unverifies_a_receipt(self):
+        import json
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            current, saved = Path(tmp) / "current.json", Path(tmp) / "saved.json"
+            current.write_text(json.dumps({"done": {"instagram": {"1": {"at": "2026-10-16T10:00:00Z", "verified": True},
+                                                                  "2": {"at": "2026-10-16T10:00:00Z", "verified": False}}},
+                                           "checked": {}, "failed": {"threads": {"9": {"n": 2, "at": "2026-10-16T09:00:00Z"}}}}),
+                               encoding="utf-8")
+            saved.write_text(json.dumps({"done": {"instagram": {"1": {"at": "2026-10-16T11:00:00Z", "verified": False},
+                                                                "2": {"at": "2026-10-16T11:00:00Z", "verified": True},
+                                                                "3": {"at": "2026-10-16T11:00:00Z", "verified": True}}},
+                                         "checked": {"threads": {"5": "ok_reply"}},
+                                         "failed": {"threads": {"9": {"n": 1, "at": "2026-10-16T08:00:00Z"},
+                                                                "8": {"n": 1, "at": "2026-10-16T08:00:00Z"}}}}),
+                             encoding="utf-8")
+            B.merge_state(str(saved), str(current))
+            merged = json.loads(current.read_text(encoding="utf-8"))
+        self.assertTrue(merged["done"]["instagram"]["1"]["verified"])        # stays verified
+        self.assertTrue(merged["done"]["instagram"]["2"]["verified"])        # becomes verified
+        self.assertIn("3", merged["done"]["instagram"])
+        self.assertEqual(2, merged["failed"]["threads"]["9"]["n"])           # not lowered by an older copy
+        self.assertEqual(1, merged["failed"]["threads"]["8"]["n"])
+        self.assertEqual("ok_reply", merged["checked"]["threads"]["5"])
 
 
 class ThreadsPublishWaitTest(unittest.TestCase):

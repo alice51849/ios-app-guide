@@ -14,7 +14,8 @@ Americas hook clip used to take, so the account stays at 3 posts a day:
 Order: UsageNow event > a UsageNow hook clip planned for the slot > weather on
 a cold, hot, rainy or big-swing day > the daily rotation > the planned clip.
 Everything comes from .github/growth/threads-series.json; the store link with
-the series ct goes in the first reply.
+the series ct (and the Google Play link when the app is on Android) goes in the first reply, which is
+checked before the post goes out, retried, and fails the step when it still does not post.
 
     python3 threads_series.py preview [--date YYYY-MM-DD] [--offline]
     python3 threads_series.py evening        # post, or print fallback=clip
@@ -31,6 +32,8 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
+
+import download_links as DL  # noqa: E402
 
 SERIES = HERE.parent / "growth" / "threads-series.json"
 CLIPS = HERE.parent / "growth" / "clips.json"
@@ -376,14 +379,24 @@ def main(argv=None):
             uid = json.loads(r.read()).get("id") or uid
     except Exception as error:
         print(f"series: could not resolve the token's account ({error.__class__.__name__})", file=sys.stderr)
-    post_id = threads_post.publish_post(token, uid, chosen["text"], image_url=chosen.get("image_url"))
-    print(f"series: posted {chosen['series']} {chosen['app']} id {post_id}")
+    # Owner rule 2026-10-17: the post carries the app's direct download link. The link goes in the first
+    # reply (the main text stays link-free), checked before anything is posted, retried when it fails and
+    # reported loudly (::error:: and a red step) when it still does not go out - never dropped silently.
+    label = f"series {chosen['series']} {chosen['app']}"
     try:
-        threads_post.publish_post(token, uid, threads_post.queued_links(chosen), reply_to=post_id)
-    except Exception as error:  # the post is out; only the link reply failed
-        print(f"series: link reply failed: {error}", file=sys.stderr)
-    _output("fallback", "none")
-    return 0
+        store, play = threads_post.queued_link_urls(chosen)
+        links = threads_post.queued_links(chosen)
+    except (KeyError, ValueError) as error:  # no usable app id: nothing is posted
+        DL.refuse(f"{label} (nothing was posted)", [f"cannot build the app's download link ({error.__class__.__name__})"])
+        _output("fallback", "none")
+        return 1
+    result = threads_post.publish_linked(
+        token, uid, chosen["text"], links, store, play,
+        image_url=chosen.get("image_url"), day=day, label=label)
+    if result.post_id:
+        print(f"series: posted {chosen['series']} {chosen['app']} id {result.post_id}")
+    _output("fallback", "none")  # the slot is taken, posted or not: no hook clip on top of it
+    return 0 if result.link_ok else 1
 
 
 if __name__ == "__main__":

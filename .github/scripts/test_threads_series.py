@@ -4,11 +4,15 @@ import copy
 import datetime as dt
 import io
 import json
+import os
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import download_links as DL  # noqa: E402
 import threads_series as T  # noqa: E402
 
 WORKFLOWS = Path(__file__).resolve().parent.parent / "workflows"
@@ -237,6 +241,105 @@ class CapTest(unittest.TestCase):
                     self.assertEqual(code, T.main(["room"]))
         with mock.patch.dict("os.environ", {"THREADS_TOKEN": ""}):
             self.assertEqual(2, T.main(["room"]))
+
+
+class EveningLinkReplyTest(unittest.TestCase):
+    """Owner rule 2026-10-17: the evening post gets its app's direct download link in the first reply
+    (App Store, plus Google Play for an Android app). The reply is checked before anything is posted,
+    retried when it fails, and a final failure ends the step red - the post is never re-posted for it."""
+
+    MOCHI, IOS_ONLY = "6785004775", "1000000001"  # Android-live / iOS-only App Store ids
+
+    def setUp(self):
+        import threads_post
+        self.tp = threads_post
+        handle, self.log_path = tempfile.mkstemp(suffix=".jsonl")
+        os.close(handle)
+        self.addCleanup(os.unlink, self.log_path)
+        for patcher in (mock.patch.dict(os.environ, {"LINK_GUARD_LOG": self.log_path, "THREADS_TOKEN": "tok",
+                                                     "THREADS_USER_ID": "uid"}),
+                        mock.patch("sys.stderr", new_callable=io.StringIO)):
+            patcher.start()
+            self.addCleanup(patcher.stop)
+        out = mock.patch("sys.stdout", new_callable=io.StringIO)
+        self.out = out.start()
+        self.addCleanup(out.stop)
+
+    def post(self, app, text="Pain line without any URL."):
+        return {"series": "CONV", "app": "x", "app_id": app, "ct": "bm_x_us_th", "locale": "en", "text": text,
+                "image_url": None}
+
+    def evening(self, chosen, publish, find=None):
+        with (
+            mock.patch.object(T, "has_room", return_value=True),
+            mock.patch.object(T, "plan", return_value=chosen),
+            mock.patch.object(T, "planned_clip", return_value=None),
+            mock.patch.object(T.urllib.request, "urlopen", side_effect=OSError("offline")),
+            mock.patch.object(self.tp, "find_own_post", return_value=find),
+            mock.patch.object(self.tp, "find_own_link_reply", return_value=None),   # the look worked: no reply yet
+            mock.patch.object(self.tp, "publish_post", side_effect=publish) as posted,
+            mock.patch("time.sleep") as slept,
+        ):
+            return T.main(["evening", "--date", "2026-10-20", "--offline"]), posted, slept
+
+    def refusals(self):
+        with open(self.log_path, encoding="utf-8") as handle:
+            return [json.loads(line) for line in handle if line.strip()]
+
+    def test_the_reply_carries_the_app_store_link_and_play_for_an_android_app(self):
+        rc, posted, _ = self.evening(self.post(self.MOCHI), ["m1", "r1"])
+        self.assertEqual(0, rc)
+        main_call, reply_call = posted.call_args_list
+        self.assertNotIn("http", main_call.args[2])
+        self.assertEqual("m1", reply_call.kwargs["reply_to"])
+        self.assertIn("apps.apple.com/app/id" + self.MOCHI, reply_call.args[2])
+        self.assertIn("ct=bm_x_us_th", reply_call.args[2])
+        self.assertIn("play.google.com/store/apps/details?id=", reply_call.args[2])
+        self.assertIn("fallback=none", self.out.getvalue())
+        rc, posted, _ = self.evening(self.post(self.IOS_ONLY), ["m2", "r2"])
+        self.assertEqual(0, rc)
+        self.assertNotIn("play.google.com", posted.call_args_list[1].args[2])
+        self.assertEqual([], self.refusals())
+
+    def test_a_failed_reply_is_retried_and_the_run_goes_through(self):
+        rc, posted, slept = self.evening(self.post(self.MOCHI), ["m1", self.tp.RequestError("down"), "r1"])
+        self.assertEqual(0, rc)
+        self.assertEqual(3, posted.call_count)
+        self.assertEqual([mock.call(15)], slept.call_args_list)
+        self.assertEqual([], self.refusals())
+
+    def test_a_reply_that_never_posts_ends_red_and_does_not_repost_the_main_post(self):
+        failures = [self.tp.RequestError("down")] * self.tp.LINK_REPLY_TRIES
+        rc, posted, _ = self.evening(self.post(self.MOCHI), ["m1", *failures])
+        self.assertEqual(1, rc)
+        self.assertEqual(1, sum(1 for c in posted.call_args_list if "reply_to" not in c.kwargs))
+        self.assertIn("::error::", self.out.getvalue())
+        self.assertIn("fallback=none", self.out.getvalue())  # no hook clip on top of a slot that is taken
+        self.assertEqual(1, len(self.refusals()))
+
+    def test_nothing_is_posted_when_the_apps_link_cannot_be_built(self):
+        for bad in ("abc", "", None):
+            with self.subTest(app_id=bad):
+                rc, posted, _ = self.evening(self.post(bad), ["m1", "r1"])
+                self.assertEqual(1, rc)
+                posted.assert_not_called()
+                self.assertIn("::error::", self.out.getvalue())
+
+    def test_a_rerun_of_a_red_slot_adds_the_reply_under_the_post_that_is_up(self):
+        rc, posted, _ = self.evening(self.post(self.MOCHI), ["r1"], find="m-existing")
+        self.assertEqual(0, rc)
+        posted.assert_called_once()
+        self.assertEqual("m-existing", posted.call_args.kwargs["reply_to"])
+
+    def test_every_series_and_queued_post_has_a_checked_link_reply(self):
+        data = T.load()
+        posts = [{"app_id": s["app_id"], "ct": s["ct"], "app": s["app"]} for s in data["series"].values()]
+        posts += [T.queue_post(p) for p in T.load_evening_queue(T.EVENING_QUEUE)]
+        self.assertGreater(len(posts), len(data["series"]))
+        for post in posts:
+            with self.subTest(app=post["app"], ct=post["ct"]):
+                store, play = self.tp.queued_link_urls(post)
+                self.assertEqual([], DL.threads_reply_problems(self.tp.queued_links(post), store, play))
 
 
 class WorkflowTest(unittest.TestCase):

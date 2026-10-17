@@ -7,11 +7,19 @@ script the comment is written in, the intent from keywords, and the reply from
 a few short hand-written variants per language and intent, rotated so replies
 don't read like a bot.
 
+Every reply carries the direct download link of the app its post promotes (owner
+rule 2026-10-17): the App Store link, plus the Google Play link when the app is on
+Android - praise, language and how-to answers included. A reply is checked before it
+goes out (download_links.py); one that does not carry the link, or does not fit the
+platform's length limit, is not sent and is reported with ::error::. A post that maps
+to no app of ours (link_backfill.AppFinder: several proofs must agree) gets no reply
+at all, whatever the comment says: there is no link to give.
+
 Skipped (no reply): our own account, comments we already answered
 (.github/growth/replied-comments.json, plus a live check), links / spam /
 offensive words, complaints (a human should answer those), and anything
-ambiguous - no intent match, a language without templates, or a link-type
-question on a post we can't map to an app.
+ambiguous - no intent match, a language without templates, or a post we can't
+map to an app.
 
 Caps: <= 20 replies a day and <= 5 a run per platform, <= 1 reply per
 commenter per post, comments younger than 7 days on posts younger than 30.
@@ -29,9 +37,11 @@ import sys
 import time
 from pathlib import Path
 
+import download_links as DL
+from link_backfill import AppFinder, ios_id_for
 from own_posts import (GROWTH, HERE, ApiError, Catalog, InstagramClient, ThreadsClient,
                        detect_language, load_json)
-from social_post_common import campaign_app_store_url, play_store_url
+from social_post_common import SnapshotMissing, campaign_app_store_url, play_store_url
 
 STATE = GROWTH / "replied-comments.json"
 APPS = HERE.parent.parent / "apps.json"
@@ -40,7 +50,8 @@ RUN_CAP = 5
 MAX_COMMENT_AGE = dt.timedelta(days=7)
 MAX_POST_AGE = dt.timedelta(days=30)
 KEEP_STATE = dt.timedelta(days=120)
-LINK_INTENTS = ("price", "download", "android")
+LINK_INTENTS = ("price", "download", "android")   # these also name the link in their own template
+MAX_REPLY_CHARS = {"instagram": 2200, "threads": 500}
 
 # ------------------------------------------------------------------ filters
 
@@ -114,7 +125,9 @@ NEGATION = re.compile(r"\b(not|never|no)\b|n't|沒|没|不好|不行|じゃな�
 POSITIVE_WITH_NEGATION = re.compile(r"不錯|不错|不賴|不赖|没毛病")
 
 # ------------------------------------------------------------------ templates
-# {links} only appears in price / download / android templates.
+# {links} only appears in price / download / android templates; decide() appends the link lines to the
+# other templates (praise, language, howto, android_none), so every reply carries them. A comment under a post
+# that maps to no app gets no reply at all (there is no link to give).
 
 T = {
     "en": {
@@ -285,22 +298,31 @@ def decide(comment, post, channel, own_username, state, media_id, now):
         lang = (post or {}).get("locale")
     if lang not in T:
         return {"skip": "language"}
-    key, links = intent, ""
-    if intent in LINK_INTENTS:
-        app, play = store_links(post, channel)
-        if not app:
-            return {"skip": "no-app"}
-        if intent == "android":
-            key = "android_live" if play else "android_none"
-            links = f"Google Play: {play}\nApp Store: {app}" if play else ""
-        else:
-            key = "price_free" if intent == "price" and is_free(post["ios_id"]) else intent
-            links = f"App Store: {app}" + (f"\nGoogle Play: {play}" if play else "")
+    app, play = store_links(post, channel)
+    if not app:   # no app, no download link to give: a reply without it is not sent, whatever the intent
+        return {"skip": "no-app"}
+    key = intent
+    links = f"App Store: {app}" + (f"\nGoogle Play: {play}" if play else "")
+    if intent == "android":
+        key = "android_live" if play else "android_none"
+        links = f"Google Play: {play}\nApp Store: {app}" if play else links
+    elif intent in LINK_INTENTS:
+        key = "price_free" if intent == "price" and is_free(post["ios_id"]) else intent
     variants = T[lang][key]
     # Rotate per language+intent so two replies in a row never read the same.
     variant = state.setdefault("rotation", {}).get(f"{lang}/{key}", 0) % len(variants)
-    return {"text": variants[variant].format(links=links).strip(), "intent": intent, "lang": lang,
-            "key": key, "variant": variant}
+    template = variants[variant]
+    reply = template.format(links=links).strip()
+    if "{links}" not in template:  # praise / language / howto / android_none: link lines at the end
+        reply = f"{reply}\n{links}"
+    problems = DL.link_problems(reply, app, play, label=f"{channel} reply to comment {comment['id']}")
+    limit = MAX_REPLY_CHARS.get(channel, 500)
+    if len(reply) > limit:
+        problems.append(f"{channel} reply to comment {comment['id']}: {len(reply)} chars is over the {limit} limit")
+    if problems:  # never send a reply without the link: report it, do not stay silent
+        DL.refuse(f"{channel} comment reply", problems)
+        return {"skip": "link-guard"}
+    return {"text": reply, "intent": intent, "lang": lang, "key": key, "variant": variant}
 
 
 def parse_time(value):
@@ -322,6 +344,7 @@ def replies_today(state, channel, now):
 def run_platform(client, catalog, state, now, dry_run=False, sleeper=time.sleep, gap=20,
                  save=lambda: None, log=print):
     channel = client.channel
+    finder = catalog if isinstance(catalog, AppFinder) else AppFinder(catalog)
     try:
         client.me()
     except ApiError as exc:
@@ -331,7 +354,8 @@ def run_platform(client, catalog, state, now, dry_run=False, sleeper=time.sleep,
     if budget <= 0:
         log(f"{channel}: daily cap of {DAILY_CAP} reached")
         return []
-    sent = []
+    sent, no_app = [], set()
+    noted = state.setdefault("no_app", {}).setdefault(channel, {})
     try:
         media = client.media()
     except ApiError as exc:
@@ -349,10 +373,20 @@ def run_platform(client, catalog, state, now, dry_run=False, sleeper=time.sleep,
                 return sent
             log(f"{channel}: comments of {m['id']} skipped ({exc})")
             continue
-        post = catalog.resolve(channel, m)
+        post = finder.resolve(channel, m)   # several proofs must agree on the app (link_backfill.AppFinder), else no link
+        if post and not post.get("ios_id"):  # a ledger post knows the app, not always its store id
+            post = dict(post, ios_id=ios_id_for(finder.catalog, post))
         for c in sorted(comments, key=lambda c: c.get("timestamp", "")):
             d = decide(c, post, channel, client.username, state, m["id"], now)
             if "skip" in d:
+                if d["skip"] == "no-app" and m["id"] not in no_app:   # once per post (not per run): ::error:: + guard log
+                    no_app.add(m["id"])
+                    if m["id"] not in noted:
+                        noted[m["id"]] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+                        DL.refuse(f"{channel} comment replies", [
+                            f"post {m['id']} maps to no app of ours, so no reply with a download link can be written; "
+                            "its comments get no reply (reported once; link_backfill.py keeps listing the post)"])
+                        save()
                 if d["skip"] not in ("own", "replied", "old"):
                     log(f"{channel}: skip {c['id']} ({d['skip']})")
                 continue
@@ -403,6 +437,7 @@ def load_state(path=STATE):
     state.setdefault("replied", {}).setdefault("instagram", {})
     state["replied"].setdefault("threads", {})
     state.setdefault("rotation", {})
+    state.setdefault("no_app", {})   # posts already reported as "maps to no app": one ::error:: per post, not one per run
     return state
 
 
@@ -410,6 +445,8 @@ def prune(state, now):
     cutoff = (now - KEEP_STATE).strftime("%Y-%m-%dT%H:%M:%SZ")
     for channel, rows in state["replied"].items():
         state["replied"][channel] = {k: v for k, v in rows.items() if not v.get("at") or v["at"] >= cutoff}
+    for channel, rows in state.get("no_app", {}).items():
+        state["no_app"][channel] = {k: v for k, v in rows.items() if not v or v >= cutoff}
 
 
 def save_state(state, path=STATE):
@@ -421,6 +458,8 @@ def merge_state(saved_path, path=STATE):
     mine, cur = load_state(saved_path), load_state(path)
     for channel, rows in mine["replied"].items():
         cur["replied"].setdefault(channel, {}).update(rows)
+    for channel, rows in mine.get("no_app", {}).items():
+        cur.setdefault("no_app", {}).setdefault(channel, {}).update(rows)
     for k, v in mine["rotation"].items():
         cur["rotation"][k] = max(v, cur["rotation"].get(k, 0))
     save_state(cur, path)
@@ -457,6 +496,8 @@ def main(argv=None):
         try:
             total += len(run_platform(client, catalog, state, now, dry_run=dry,
                                       save=(lambda: None) if dry else (lambda: save_state(state))))
+        except SnapshotMissing as exc:   # the Google Play link cannot be decided: no reply is written, and it is loud
+            DL.refuse(f"{client.channel} comment replies", [f"stopped, no reply was written: {exc}"])
         except (ApiError, OSError, ValueError, KeyError) as exc:  # never fail the workflow
             print(f"{client.channel}: stopped ({exc.__class__.__name__}: {exc})")
     if not dry:

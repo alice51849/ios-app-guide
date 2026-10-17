@@ -41,6 +41,7 @@ sys.path.insert(0, str(HERE))
 import clip_posts  # noqa: E402
 import clip_progress  # noqa: E402
 import countdown_cards as cd  # noqa: E402
+import download_links as DL  # noqa: E402
 import post_qa  # noqa: E402
 import search_caption as SC  # noqa: E402
 import volume_ramp  # noqa: E402
@@ -238,6 +239,16 @@ def make(out_dir, day, slot, data=None, posts=None, fetcher=fetch):
 
 # ---------------------------------------------------------------- Instagram
 
+def checked_caption(plan):
+    """The caption with the app's direct download link(s): the clip caption already holds them; this is the
+    last guard before the send (a caption without the link raises MissingDownloadLink and nothing is posted)."""
+    stub = {"store_url": plan["store_url"], "locale": plan["locale"]}
+    store, play = clip_posts.download_urls(stub, "instagram")
+    return DL.ensure_download_link(plan["caption"], store, play, max_len=post_qa.LIMITS["instagram"],
+                                   app_store_label=clip_posts.text_for(plan["locale"])["button"],
+                                   play_label=clip_posts.play_label(stub), label=f"feed {plan['key']}")
+
+
 def post_instagram(plan, base_url, wait=PAUSE, tries=40):
     """Carousel container from the published card URLs, published; {"id", "link"} or None without a token."""
     token = os.environ.get("IG_ACCESS_TOKEN", "").strip()
@@ -254,7 +265,8 @@ def post_instagram(plan, base_url, wait=PAUSE, tries=40):
         children.append(clip_posts._post(f"{GRAPH}/{user}/media", fields)["id"])
         time.sleep(min(wait, 2))
     container = clip_posts._post(f"{GRAPH}/{user}/media", {
-        "media_type": "CAROUSEL", "children": ",".join(children), "caption": plan["caption"], "access_token": token})["id"]
+        "media_type": "CAROUSEL", "children": ",".join(children), "caption": checked_caption(plan),
+        "access_token": token})["id"]
     for _ in range(tries):
         status = clip_posts._get(f"{GRAPH}/{container}?fields=status_code&access_token={token}").get("status_code")
         if status == "FINISHED":

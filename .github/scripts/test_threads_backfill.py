@@ -2,7 +2,9 @@
 """Tests for the Threads slot backfill (clip-backup.yml -> threads-post.yml)."""
 
 import datetime as dt
+import io
 import json
+import os
 import unittest
 from unittest import mock
 
@@ -113,6 +115,62 @@ class DispatchTests(unittest.TestCase):
             self.assertEqual(0, B.main(["--dry-run"]))
         dispatch.assert_not_called()
 
+
+
+class LinkReplyRerunTests(unittest.TestCase):
+    """threads_post.py ends the step red when a post's download-link reply cannot be posted. A failed run
+    does not cover its slot, so this backfill dispatches the slot again: the rerun must add the missing
+    reply under the post that is already up, never post the same text a second time."""
+
+    MOCHI = "6785004775"
+
+    def test_a_red_slot_is_dispatched_again(self):
+        runs = [run("2026-10-16T03:00:00Z", "Threads posts · cron 0 3 * * *", conclusion="failure")]
+        now = dt.datetime(2026, 10, 16, 3, 47, tzinfo=UTC)
+        self.assertIn(dt.datetime(2026, 10, 16, 3, tzinfo=UTC), B.missing_slots(runs, now))
+
+    def test_the_rerun_only_adds_the_reply_to_the_post_of_that_slot_day(self):
+        import threads_post
+        queued = {"date": "2026-10-16", "app": "mochi", "app_id": self.MOCHI, "ct": "bm_mochi_us_th",
+                  "task": "t", "text": "Pain line without any URL."}
+        env = {"THREADS_TOKEN": "tok", "THREADS_USER_ID": "uid", "THREADS_SLOT": "2026-10-16T03:00:00+00:00"}
+        find = mock.Mock(return_value="m-existing")
+        look = mock.Mock(return_value=None)   # the look for an earlier link reply worked: there is none yet
+        with (
+            mock.patch.dict(os.environ, env),
+            mock.patch("urllib.request.urlopen", side_effect=OSError("offline")),
+            mock.patch("sys.stdout", new_callable=io.StringIO),
+            mock.patch("sys.stderr", new_callable=io.StringIO),
+            mock.patch.object(threads_post, "queued_today", return_value=queued) as today,
+            mock.patch.object(threads_post, "find_own_post", find),
+            mock.patch.object(threads_post, "find_own_link_reply", look),
+            mock.patch.object(threads_post, "publish_post", return_value="r1") as posted,
+        ):
+            self.assertEqual(0, threads_post.main())
+        self.assertEqual(dt.date(2026, 10, 16), today.call_args.args[0])
+        self.assertEqual(dt.date(2026, 10, 16), find.call_args.args[2])  # looked for in the slot's Taiwan day
+        self.assertEqual("m-existing", look.call_args.args[1])           # and for a reply under that post
+        posted.assert_called_once()
+        self.assertEqual("m-existing", posted.call_args.kwargs["reply_to"])
+        self.assertIn("apps.apple.com/app/id" + self.MOCHI, posted.call_args.args[2])
+
+    def test_the_rerun_posts_nothing_when_the_reply_is_already_up(self):
+        import threads_post
+        queued = {"date": "2026-10-16", "app": "mochi", "app_id": self.MOCHI, "ct": "bm_mochi_us_th",
+                  "task": "t", "text": "Pain line without any URL."}
+        env = {"THREADS_TOKEN": "tok", "THREADS_USER_ID": "uid", "THREADS_SLOT": "2026-10-16T03:00:00+00:00"}
+        with (
+            mock.patch.dict(os.environ, env),
+            mock.patch("urllib.request.urlopen", side_effect=OSError("offline")),
+            mock.patch("sys.stdout", new_callable=io.StringIO),
+            mock.patch("sys.stderr", new_callable=io.StringIO),
+            mock.patch.object(threads_post, "queued_today", return_value=queued),
+            mock.patch.object(threads_post, "find_own_post", return_value="m-existing"),
+            mock.patch.object(threads_post, "find_own_link_reply", return_value="r-existing"),
+            mock.patch.object(threads_post, "publish_post") as posted,
+        ):
+            self.assertEqual(0, threads_post.main())   # green: post and reply are both up
+        posted.assert_not_called()
 
 
 class PicturePostSlotTests(unittest.TestCase):

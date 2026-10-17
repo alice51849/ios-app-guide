@@ -281,6 +281,174 @@ class ClipPostsTest(unittest.TestCase):
                          "&referrer=utm_source%3Dh7_mochi_th%26utm_campaign%3Dmochi", reply[1])
 
 
+class DownloadLinkTest(unittest.TestCase):
+    """Every hook clip post carries the app's direct download link (owner rule 2026-10-17)."""
+    MOCHI = dict(clip("mochi", "en"), store_url="https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=h7_mochi_en&mt=8",
+                 name="Mochi: Cute To-Do", search="Mochi",
+                 hooks=[{"id": "a", "lead": "Task list too boring to open?", "benefit": "A cute checklist"}])
+
+    def test_instagram_caption_holds_the_full_urls_and_the_bio_hint(self):
+        text = C.caption(self.MOCHI, "instagram")
+        self.assertIn("Get it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=h7_mochi_ig&mt=8", text)
+        self.assertIn("Also on Google Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
+                      "&referrer=utm_source%3Dh7_mochi_ig%26utm_campaign%3Dmochi", text)
+        self.assertIn("Link in bio", text)
+        self.assertEqual(text.split("\n")[0], "Task list too boring to open?")  # the hook still opens the caption
+        self.assertLessEqual(len(text), 2200)
+        self.assertEqual(C.post_qa.clip_problems(self.MOCHI, "instagram", text, online=False), [])
+
+    def test_telegram_caption_holds_the_urls_too_and_threads_text_does_not(self):
+        text = C.caption(self.MOCHI, "telegram")
+        self.assertIn("ct=h7_mochi_tg", text)
+        self.assertIn("play.google.com", text)
+        self.assertNotIn("https://", C.caption(self.MOCHI, "threads"))  # Threads links go in the first reply
+        self.assertEqual(C.post_qa.clip_problems(self.MOCHI, "threads", C.caption(self.MOCHI, "threads"), online=False), [])
+
+    def test_ios_only_app_gets_the_app_store_link_only(self):
+        text = C.caption(clip("a", "en"), "instagram")
+        self.assertIn("https://apps.apple.com/us/app/id1?", text)
+        self.assertNotIn("play.google.com", text)
+
+    def test_qa_refuses_a_caption_without_the_link(self):
+        bare = "Task list too boring to open?\nMochi: Cute To-Do\nSearch “Mochi” on the App Store\nLink in bio"
+        for channel in ("instagram", "telegram"):
+            problems = C.post_qa.clip_problems(self.MOCHI, channel, bare, online=False)
+            self.assertTrue(any("download link" in p for p in problems), (channel, problems))
+        only_ios = C.caption(clip("a", "en"), "instagram").replace("play.google.com", "x.example")
+        self.assertEqual(C.post_qa.clip_problems(clip("a", "en"), "instagram", only_ios, online=False), [])
+        no_play = C.caption(self.MOCHI, "instagram").split("Also on Google Play")[0]
+        self.assertTrue(any("Google Play" in p for p in C.post_qa.clip_problems(self.MOCHI, "instagram", no_play, online=False)))
+
+    def test_a_clip_without_a_store_link_is_never_posted(self):
+        broken = dict(self.MOCHI, store_url="")
+        variant, problems = C.qa_variant(broken, "instagram", C.SC.variants(broken)[0], online=False)
+        self.assertIsNone(variant)
+        self.assertTrue(problems)
+
+    def test_an_over_long_caption_is_refused_by_qa_not_sent_with_a_cut_link(self):
+        long = dict(self.MOCHI, hooks=[{"id": "a", "lead": "Task list too boring to open?", "benefit": "cute " * 400}])
+        text = C.caption(long, "telegram")
+        self.assertIn("https://apps.apple.com/", text)
+        self.assertTrue(any("characters" in p for p in C.post_qa.clip_problems(long, "telegram", text, online=False)))
+
+    def test_the_send_calls_never_send_a_caption_without_the_link(self):
+        sent = {}
+
+        def fake_post(url, fields, timeout=60):
+            sent.setdefault(url.rsplit("/", 1)[-1], fields)
+            return {"id": "m1", "ok": True, "result": {"message_id": 1}}
+
+        with mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t", "TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "c"}), \
+                mock.patch.object(C, "_post", side_effect=fake_post), \
+                mock.patch.object(C, "caption", return_value="Hook only, nothing else"), \
+                mock.patch.object(C, "_get", side_effect=[{}, {"user_id": "u"}, {"status_code": "FINISHED"}, {"permalink": "p"}]), \
+                mock.patch.object(C.time, "sleep"):
+            C.post_instagram(self.MOCHI)
+            C.post_telegram(self.MOCHI)
+        for key in ("media", "sendVideo"):
+            field = sent[key]["caption"]
+            self.assertTrue(C.DL.has_download_link(field, self.MOCHI["store_url"], C.play_url(self.MOCHI, "ig")), key)
+
+    def test_a_retry_does_not_double_a_reply_that_was_published_after_all(self):
+        calls = []
+
+        def post(url, fields, timeout=60):
+            calls.append(fields)
+            if fields.get("reply_to_id") and len([c for c in calls if c.get("reply_to_id")]) == 1:
+                raise RuntimeError("timeout")  # the platform published it, but the answer never came back
+            return {"id": f"id{len(calls)}"}
+
+        store, play = C.download_urls(self.MOCHI, "threads")
+        mine = {"data": [{"text": f"{store}\n{play}", "is_reply_owned_by_me": True}]}
+        gets = [{"id": "u"}, {"status": "FINISHED"}, mine, {"permalink": "p"}]
+        with mock.patch.dict(os.environ, {"THREADS_TOKEN": "t", "THREADS_USER_ID": "u"}), \
+                mock.patch.object(C, "_post", side_effect=post), mock.patch.object(C, "_get", side_effect=gets), \
+                mock.patch.object(C.time, "sleep"):
+            out = C.post_threads(self.MOCHI)
+        self.assertTrue(out["link_reply"])
+        self.assertEqual(len([c for c in calls if c.get("reply_to_id")]), 1, "no second reply once ours is found")
+
+    def test_a_retry_that_cannot_look_does_not_post_a_second_reply(self):
+        calls = []
+
+        def post(url, fields, timeout=60):
+            calls.append(fields)
+            if fields.get("reply_to_id"):
+                raise RuntimeError("timeout")  # maybe published, maybe not
+            return {"id": f"id{len(calls)}"}
+
+        gets = [{"id": "u"}, {"status": "FINISHED"}, RuntimeError("down"), {"permalink": "p"}]   # the look fails
+        with mock.patch.dict(os.environ, {"THREADS_TOKEN": "t", "THREADS_USER_ID": "u"}), \
+                mock.patch.object(C, "_post", side_effect=post), mock.patch.object(C, "_get", side_effect=gets), \
+                mock.patch.object(C.time, "sleep"), mock.patch("sys.stdout"):   # the ::error:: line is not this run's
+            out = C.post_threads(self.MOCHI)
+        self.assertFalse(out["link_reply"], "the sweeper looks again later")
+        self.assertEqual(len([c for c in calls if c.get("reply_to_id")]), 1, "a second reply could double the first")
+
+    def test_a_post_whose_link_reply_failed_is_recorded_and_the_step_stays_green(self):
+        data = {"clips": {"u/en": self.MOCHI}, "schedule": [{"date": "2026-10-15", "slot": 1, "channel": "threads", "clip": "u/en"}]}
+        posted = {"id": "9", "link": "https://www.threads.com/@b/post/9", "link_reply": False}
+        with mock.patch.object(C, "load", return_value=data), mock.patch.object(C.CLIPS.__class__, "exists", return_value=True), \
+                mock.patch.object(C, "post_threads", return_value=posted), mock.patch.object(P, "record_post") as rec, \
+                mock.patch.object(C, "posted_log", return_value=[]), \
+                mock.patch.object(C, "qa_variant", return_value=({"id": "a"}, [])), \
+                mock.patch.object(sys, "argv", ["x", "threads", "--slot", "1", "--date", "2026-10-15"]), \
+                mock.patch("sys.stdout") as out:
+            self.assertEqual(C.main(), 0, "a red step would re-dispatch the slot and post the clip twice")
+        rec.assert_called_once()
+        self.assertIn("::error::", "".join(str(c.args[0]) for c in out.write.call_args_list))
+
+    def test_threads_link_reply_is_retried_and_a_missing_one_is_flagged(self):
+        calls = []
+
+        def flaky(url, fields, timeout=60):
+            calls.append(fields)
+            if fields.get("reply_to_id") and len([c for c in calls if c.get("reply_to_id")]) < 3:
+                raise RuntimeError("HTTP 500")
+            return {"id": f"id{len(calls)}"}
+
+        with mock.patch.dict(os.environ, {"THREADS_TOKEN": "t", "THREADS_USER_ID": "u"}), \
+                mock.patch.object(C, "_post", side_effect=flaky), \
+                mock.patch.object(C, "_get", side_effect=[{"id": "u"}, {"status": "FINISHED"}, {"data": []}, {"data": []}, {"permalink": "p"}]), \
+                mock.patch.object(C.time, "sleep"):
+            out = C.post_threads(self.MOCHI)
+        self.assertTrue(out["link_reply"])
+        self.assertEqual(len([c for c in calls if c.get("reply_to_id")]), 3)
+        always = lambda url, fields, timeout=60: (_ for _ in ()).throw(RuntimeError("x")) if fields.get("reply_to_id") else {"id": "i"}  # noqa: E731
+        with mock.patch.dict(os.environ, {"THREADS_TOKEN": "t", "THREADS_USER_ID": "u"}), \
+                mock.patch.object(C, "_post", side_effect=always), \
+                mock.patch.object(C, "_get", side_effect=[{"id": "u"}, {"status": "FINISHED"}, {"data": []}, {"data": []}, {"permalink": "p"}]), \
+                mock.patch.object(C.time, "sleep"), mock.patch("sys.stdout"):   # the ::error:: line is not this run's
+            self.assertFalse(C.post_threads(self.MOCHI)["link_reply"])
+
+    def test_a_failed_publish_publishes_the_same_container_again_after_the_wait(self):
+        calls, waits = [], []
+
+        def post(url, fields, timeout=60):
+            calls.append((url.rsplit("/", 1)[-1], dict(fields)))
+            if url.endswith("threads_publish") and fields.get("creation_id") == "reply-1" and sum(
+                    1 for u, f in calls if f.get("creation_id") == "reply-1") < 2:
+                raise RuntimeError("HTTP 400 (#24) The requested resource does not exist")   # not ready yet
+            return {"id": "reply-1" if "reply_to_id" in fields else f"id{len(calls)}"}
+
+        with mock.patch.dict(os.environ, {"THREADS_TOKEN": "t", "THREADS_USER_ID": "u"}), \
+                mock.patch.object(C, "_post", side_effect=post), \
+                mock.patch.object(C, "_get", side_effect=[{"id": "u"}, {"status": "FINISHED"}, {"data": []}, {"permalink": "p"}]), \
+                mock.patch.object(C.time, "sleep", side_effect=waits.append):
+            out = C.post_threads(self.MOCHI)
+        self.assertTrue(out["link_reply"])
+        self.assertEqual(1, len([f for _u, f in calls if f.get("reply_to_id")]), "one container for the reply")
+        self.assertEqual(2, len([f for _u, f in calls if f.get("creation_id") == "reply-1"]), "published again")
+        self.assertIn(C.REPLY_WAIT, waits)   # the new container gets time before the first publish
+
+    def test_every_planned_clip_caption_carries_its_link_on_instagram_and_telegram(self):
+        data = C.load()
+        for key, c in sorted(data["clips"].items()):
+            for channel in C.LINK_IN_CAPTION:
+                store, play = C.download_urls(c, channel)
+                self.assertTrue(C.DL.has_download_link(C.caption(c, channel), store, play), (key, channel))
+
+
 def real(locale="en", **kw):
     c = dict(clip("u", locale), name="UsageNow: AI Usage Tracker", search="UsageNow", keyline="",
              hooks=[{"id": "a", "lead": "Hit your AI limit mid-task again?", "benefit": "See what's left"}])

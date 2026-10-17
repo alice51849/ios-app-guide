@@ -21,6 +21,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import devto_post
+import download_links as DL
 import portfolio_daily
 import social_post_common as common
 import telegram_post
@@ -1755,6 +1756,14 @@ class PlayReferrerTests(unittest.TestCase):
         self.assertIsNone(common.play_store_url(self.IOS_ONLY, "soc_tg_guide"))
         self.assertIsNone(common.play_store_url("", "soc_tg_guide"))
 
+    def test_an_unreadable_snapshot_refuses_instead_of_dropping_the_play_link(self):
+        for empty in ({}, None):
+            with self.subTest(snapshot=empty), mock.patch.object(common, "android_apps", return_value=empty or {}):
+                with self.assertRaises(common.SnapshotMissing):
+                    common.play_store_url(self.MOCHI, "soc_tg_guide")
+                with self.assertRaises(ValueError):   # callers that already turn ValueError into "no post" cover it
+                    common.play_store_url(self.IOS_ONLY, "soc_tg_guide")
+
     def test_snapshot_drives_the_links(self):
         apps = {"88": {"ios_app_id": "88", "key": "newapp",
                        "play_url": "https://play.google.com/store/apps/details?id=com.a.New"}}
@@ -1872,21 +1881,44 @@ class DevToGateTests(unittest.TestCase):
         self.assertTrue(devto_post.publication_due(self.POOL, published, now))
 
     def test_dead_article_url_is_skipped_until_it_becomes_live(self):
+        store = "App Store: https://apps.apple.com/app/id6818607603?ct=dv"   # an iOS-only app: no Google Play link due
         pool = (
             {
                 "title": "Unavailable",
-                "body": "Download https://example.com/missing",
+                "body": f"Download https://example.com/missing\n{store}",
             },
             {
                 "title": "Ready",
-                "body": "Read https://example.com/live",
+                "body": f"Read https://example.com/live\n{store}",
             },
         )
         with mock.patch.object(
-            devto_post, "validate_url", side_effect=(False, True)
+            devto_post, "validate_url", side_effect=lambda url: "missing" not in url
         ):
             selected = devto_post.next_publishable(pool, ())
         self.assertEqual("Ready", selected["title"])
+
+    def test_an_article_goes_out_only_with_the_download_links_of_the_apps_it_names(self):
+        ios_only = "https://apps.apple.com/app/id6818607603?ct=dv"
+        mochi = "https://apps.apple.com/app/id6785004775?ct=dv"      # live on Google Play
+        play = common.play_store_url("6785004775", "dv")
+        problems = devto_post.article_link_problems
+        self.assertEqual(["no App Store download link in the article"], problems({"body": "Read https://example.com"}))
+        self.assertEqual([], problems({"body": f"x {ios_only}"}))
+        self.assertIn("no Google Play link", problems({"body": f"x {mochi}"})[0])
+        self.assertEqual([], problems({"body": f"x {mochi}\nGoogle Play: {play}"}))
+        self.assertIn("no Google Play link", problems({"body": f"{ios_only} {mochi}"})[0])   # one linked app is missing its Play link
+        with mock.patch.object(common, "android_apps", return_value={}), \
+                mock.patch.object(devto_post, "play_store_url", common.play_store_url):
+            self.assertIn("cannot be decided", problems({"body": f"x {ios_only}"})[0])
+        # next_publishable leaves such an article for later and _publish refuses it before any request
+        article = {"title": "Bare", "body": "No link at all"}
+        self.assertIsNone(devto_post.next_publishable((article,), ()))
+        with mock.patch.object(devto_post, "request_json") as request, mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            with self.assertRaises(ValueError):
+                devto_post._publish("secret-key", article)
+        request.assert_not_called()
+        self.assertIn("::error::", out.getvalue())
 
     def test_authenticated_history_read_403_is_an_explicit_failure(self):
         error = common.HTTPStatusError(
@@ -2133,6 +2165,580 @@ class TelegramCampaignAndPaidLocaleTest(unittest.TestCase):
                     self.assertEqual("zh-Hant", picked["lang"])  # no ja copy: next paid locale
                 else:
                     self.assertEqual(want, picked["lang"])
+
+
+_POOL = []
+
+
+def _shared_pool():
+    """telegram_post.load_pool() once for the link-coverage classes (it reads the whole intent catalog)."""
+    if not _POOL:
+        _POOL.append(telegram_post.load_pool())
+    return _POOL[0]
+
+
+class _LinkGuardCase(unittest.TestCase):
+    """Shared setup: LINK_GUARD_LOG points at a temp file so refusals can be read back."""
+
+    MOCHI, IOS_ONLY = "6785004775", "1000000001"  # Android-live / iOS-only App Store ids
+
+    def setUp(self):
+        handle, self.log_path = tempfile.mkstemp(suffix=".jsonl")
+        os.close(handle)
+        self.addCleanup(os.unlink, self.log_path)
+        env = mock.patch.dict(os.environ, {"LINK_GUARD_LOG": self.log_path})
+        env.start()
+        self.addCleanup(env.stop)
+
+    def refusals(self):
+        with open(self.log_path, encoding="utf-8") as handle:
+            return [json.loads(line) for line in handle if line.strip()]
+
+    def queued(self, app, ct="bm_mochi_us_th"):
+        post = {"app_id": app, "ct": ct, "app": "x", "date": "2026-10-20", "text": "Pain line, no URL"}
+        store, play = threads_post.queued_link_urls(post)
+        return post, threads_post.queued_links(post), store, play
+
+
+_REAL_FIND_OWN_LINK_REPLY = threads_post.find_own_link_reply  # the tests below patch the module attribute
+
+
+class ThreadsLinkReplyTests(_LinkGuardCase):
+    """Owner rule 2026-10-17: every Threads post gets its app's direct download link in the first reply;
+    the reply is checked, retried, and a final failure is loud (::error:: and a log line), never silent."""
+
+    def setUp(self):
+        super().setUp()
+        self.sleeper = mock.Mock()
+        out = mock.patch("sys.stdout", new_callable=io.StringIO)
+        err = mock.patch("sys.stderr", new_callable=io.StringIO)
+        self.out, self.err = out.start(), err.start()
+        self.addCleanup(out.stop)
+        self.addCleanup(err.stop)
+        look = mock.patch.object(threads_post, "find_own_link_reply", return_value=None)  # never the network
+        self.look = look.start()
+        self.addCleanup(look.stop)
+
+    def reply(self, links, store, play, **kw):
+        return threads_post.publish_link_reply("tok", "uid", "m1", links, store, play, sleeper=self.sleeper, **kw)
+
+    def test_a_retry_does_not_double_a_reply_that_was_published_after_all(self):
+        _, links, store, play = self.queued(self.IOS_ONLY, "soc_th_guide")
+        self.look.return_value = "r-early"
+        with mock.patch.object(threads_post, "publish_post", side_effect=[common.RequestError("timeout"), "r2"]) as publish:
+            self.assertEqual("r-early", self.reply(links, store, play))
+        self.assertEqual(1, publish.call_count, "once our own reply with the link is found nothing is posted again")
+        self.assertEqual([], self.refusals())
+
+    def test_find_own_link_reply_reads_only_our_replies_with_the_link(self):
+        _, links, store, play = self.queued(self.MOCHI)
+
+        class Resp:
+            def __init__(self, rows):
+                self.rows = rows
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *exc):
+                return False
+
+            def read(self):
+                return json.dumps({"data": self.rows}).encode()
+
+        def opener(rows):
+            return lambda url, timeout=30: Resp(rows)
+
+        def boom(url, timeout=30):
+            raise OSError("down")
+
+        find = _REAL_FIND_OWN_LINK_REPLY
+        self.assertEqual("r7", find("tok", "m1", store, play, opener=opener([{"id": "r7", "text": links, "is_reply_owned_by_me": True}])))
+        self.assertIsNone(find("tok", "m1", store, play, opener=opener([{"id": "r8", "text": links, "is_reply_owned_by_me": False}])))
+        partial = [{"id": "r9", "text": links.splitlines()[0], "is_reply_owned_by_me": True}]  # lacks the Play link
+        self.assertIsNone(find("tok", "m1", store, play, opener=opener(partial)))
+        with self.assertRaises(threads_post.LookupFailed):   # a failed look is not "no reply yet"
+            find("tok", "m1", store, play, opener=boom)
+
+    def test_a_retry_that_cannot_look_does_not_post_a_second_reply(self):
+        _, links, store, play = self.queued(self.IOS_ONLY, "soc_th_guide")
+        self.look.side_effect = threads_post.LookupFailed("down")
+        with mock.patch.object(threads_post, "publish_post", side_effect=common.RequestError("timeout")) as publish:
+            self.assertIsNone(self.reply(links, store, play))
+        self.assertEqual(1, publish.call_count, "the first try failed, the look failed: nothing more is posted")
+        self.assertTrue(self.refusals(), "and it is loud")
+
+    def test_the_reply_with_the_link_is_posted_once_under_the_post(self):
+        _, links, store, play = self.queued(self.IOS_ONLY, "soc_th_guide")
+        with mock.patch.object(threads_post, "publish_post", return_value="r1") as publish:
+            self.assertEqual("r1", self.reply(links, store, play))
+        publish.assert_called_once()
+        self.assertEqual("m1", publish.call_args.kwargs["reply_to"])
+        self.assertEqual(links, publish.call_args.args[2])
+        self.assertIn("apps.apple.com/app/id" + self.IOS_ONLY, links)
+        self.assertNotIn("play.google.com", links)
+        self.assertEqual("", self.out.getvalue())
+
+    def test_an_android_app_reply_carries_google_play_too(self):
+        _, links, store, play = self.queued(self.MOCHI)
+        self.assertIn("apps.apple.com/app/id" + self.MOCHI, links)
+        self.assertIn("play.google.com/store/apps/details?id=", links)
+        with mock.patch.object(threads_post, "publish_post", return_value="r1") as publish:
+            self.assertEqual("r1", self.reply(links, store, play))
+            # The App Store line alone does not satisfy an Android app: nothing is sent.
+            publish.reset_mock()
+            self.assertIsNone(self.reply(links.splitlines()[0], store, play))
+        publish.assert_not_called()
+        self.assertIn("Google Play", self.refusals()[-1]["problems"][0])
+
+    def test_a_reply_without_this_apps_link_is_refused_and_nothing_is_called(self):
+        _, links, store, play = self.queued(self.MOCHI)
+        other = threads_post.queued_links({"app_id": self.IOS_ONLY, "ct": "bm_mochi_us_th"})
+        for text in ("Link in the comments", "", other, "https://example.com/get-it", "App Store: not-a-link"):
+            with self.subTest(text=text):
+                with mock.patch.object(threads_post, "publish_post") as publish:
+                    self.assertIsNone(self.reply(text, store, play))
+                publish.assert_not_called()
+        self.assertEqual(5, len(self.refusals()))
+        self.assertIn("::error::", self.out.getvalue())
+        self.sleeper.assert_not_called()
+
+    def test_a_failed_reply_is_retried_with_backoff_and_then_goes_out(self):
+        _, links, store, play = self.queued(self.IOS_ONLY, "soc_th_guide")
+        errors = [common.RequestError("down"), common.HTTPStatusError("Threads publish", 500), "r9"]
+        with mock.patch.object(threads_post, "publish_post", side_effect=errors) as publish:
+            self.assertEqual("r9", self.reply(links, store, play))
+        self.assertEqual(3, publish.call_count)
+        self.assertEqual([mock.call(15), mock.call(45)], self.sleeper.call_args_list)
+        self.assertEqual([], self.refusals())  # it did go out: nothing to report
+        self.assertIn("attempt 2/3 failed (HTTPStatusError 500)", self.err.getvalue())
+        self.assertNotIn("down", self.err.getvalue())  # failure notes name the class, never the message
+
+    def test_a_reply_that_never_posts_is_reported_not_swallowed(self):
+        _, links, store, play = self.queued(self.MOCHI)
+        with mock.patch.object(threads_post, "publish_post", side_effect=common.RequestError("down")) as publish:
+            self.assertIsNone(self.reply(links, store, play))
+        self.assertEqual(threads_post.LINK_REPLY_TRIES, publish.call_count)
+        self.assertEqual(1, len(self.refusals()))
+        self.assertIn("download link reply was not posted", self.refusals()[0]["problems"][0])
+        self.assertIn("::error::", self.out.getvalue())
+
+    def test_an_unpostable_reply_is_not_retried_but_still_reported(self):
+        _, links, store, play = self.queued(self.IOS_ONLY, "soc_th_guide")
+        with mock.patch.object(threads_post, "publish_post", side_effect=ValueError("too long")) as publish:
+            self.assertIsNone(self.reply(links, store, play))
+        publish.assert_called_once()
+        self.assertEqual(1, len(self.refusals()))
+
+
+class ThreadsLinkedPostTests(_LinkGuardCase):
+    """publish_linked and the threads_post.main paths: the post and its link reply as one unit."""
+
+    def setUp(self):
+        super().setUp()
+        self.sleeper = mock.Mock()
+        for target in ("sys.stdout", "sys.stderr"):
+            patcher = mock.patch(target, new_callable=io.StringIO)
+            setattr(self, "out" if target == "sys.stdout" else "err", patcher.start())
+            self.addCleanup(patcher.stop)
+        look = mock.patch.object(threads_post, "find_own_link_reply", return_value=None)  # the look worked, no reply yet
+        look.start()
+        self.addCleanup(look.stop)
+
+    def linked(self, app=None, ct="bm_mochi_us_th", **kw):
+        post, links, store, play = self.queued(app or self.MOCHI, ct)
+        return threads_post.publish_linked("tok", "uid", post["text"], links, store, play, sleeper=self.sleeper,
+                                           find=kw.pop("find", lambda *_: None), **kw)
+
+    def test_post_then_reply_and_the_main_text_stays_link_free(self):
+        with mock.patch.object(threads_post, "publish_post", side_effect=["m1", "r1"]) as publish:
+            result = self.linked()
+        self.assertEqual(("m1", True), tuple(result))
+        main_call, reply_call = publish.call_args_list
+        self.assertNotIn("http", main_call.args[2])
+        self.assertNotIn("reply_to", main_call.kwargs)
+        self.assertEqual("m1", reply_call.kwargs["reply_to"])
+        self.assertIn("apps.apple.com/app/id" + self.MOCHI, reply_call.args[2])
+        self.assertIn("play.google.com", reply_call.args[2])
+
+    def test_the_post_does_not_go_out_when_its_link_cannot_be_built(self):
+        post, links, store, play = self.queued(self.MOCHI)
+        find = mock.Mock()
+        with mock.patch.object(threads_post, "publish_post") as publish:
+            for bad in ("Link in the comments", links.splitlines()[0]):  # none / App Store only for an Android app
+                result = threads_post.publish_linked("tok", "uid", post["text"], bad, store, play,
+                                                     sleeper=self.sleeper, find=find)
+                self.assertEqual((None, False), tuple(result))
+        publish.assert_not_called()
+        find.assert_not_called()
+        self.assertEqual(2, len(self.refusals()))
+
+    def test_a_failed_reply_leaves_the_post_recorded_and_is_reported(self):
+        failures = [common.RequestError("down")] * threads_post.LINK_REPLY_TRIES
+        with mock.patch.object(threads_post, "publish_post", side_effect=["m1", *failures]) as publish:
+            result = self.linked()
+        self.assertEqual(("m1", False), tuple(result))
+        self.assertEqual(1 + threads_post.LINK_REPLY_TRIES, publish.call_count)
+        self.assertEqual(1, sum(1 for c in publish.call_args_list if "reply_to" not in c.kwargs))  # posted once
+        self.assertEqual(1, len(self.refusals()))
+
+    def test_a_rerun_only_adds_the_missing_reply_under_the_post_that_is_up(self):
+        with mock.patch.object(threads_post, "publish_post", return_value="r1") as publish:
+            result = self.linked(find=lambda *_: "m-existing")
+        self.assertEqual(("m-existing", True), tuple(result))
+        publish.assert_called_once()
+        self.assertEqual("m-existing", publish.call_args.kwargs["reply_to"])
+
+    TODAY = "2026-10-20T03:00:00+0000"   # Taiwan 2026-10-20 11:00
+
+    def test_find_own_post_matches_the_text_and_never_guesses_when_the_look_fails(self):
+        rows = [{"id": "1", "text": "other", "timestamp": self.TODAY},
+                {"id": "2", "text": "  Pain line,   no URL \n", "timestamp": self.TODAY}]
+        opener = mock.Mock(return_value=FakeResponse(json.dumps({"data": rows}).encode()))
+        self.assertEqual("2", threads_post.find_own_post("tok", "Pain line, no URL", dt.date(2026, 10, 20), opener))
+        query = urllib.parse.parse_qs(urllib.parse.urlsplit(opener.call_args.args[0]).query)
+        self.assertEqual("1792425600", query["since"][0])  # Taiwan midnight of 2026-10-20 (UTC 10-19 16:00)
+        self.assertIsNone(threads_post.find_own_post("tok", "never posted", dt.date(2026, 10, 20), opener))
+        down = mock.Mock(side_effect=urllib.error.URLError("offline"))
+        with self.assertRaises(threads_post.LookupFailed):   # a failed look is not "not posted yet"
+            threads_post.find_own_post("tok", "Pain line, no URL", dt.date(2026, 10, 20), down)
+        self.assertNotIn("tok", self.err.getvalue())
+
+    def test_find_own_post_matches_a_long_text_the_platform_returns_cut_off(self):
+        long_text = "A long hook line that goes on and on about one small problem. " * 6
+        rows = [{"id": "9", "text": long_text[:150], "timestamp": self.TODAY}]
+        opener = mock.Mock(return_value=FakeResponse(json.dumps({"data": rows}).encode()))
+        self.assertEqual("9", threads_post.find_own_post("tok", long_text, dt.date(2026, 10, 20), opener))
+        short = [{"id": "8", "text": "Short", "timestamp": self.TODAY}]
+        opener = mock.Mock(return_value=FakeResponse(json.dumps({"data": short}).encode()))
+        self.assertIsNone(threads_post.find_own_post("tok", "Short but different", dt.date(2026, 10, 20), opener))
+
+    def find_in(self, rows, text="Pain line, no URL", day=dt.date(2026, 10, 20)):
+        opener = mock.Mock(return_value=FakeResponse(json.dumps({"data": rows}).encode()))
+        return threads_post.find_own_post("tok", text, day, opener)
+
+    def test_find_own_post_never_takes_an_older_copy_of_the_same_text_for_todays_post(self):
+        # the series repeats a text after a day or more and the API's `since` is not trusted to cut it off:
+        # yesterday's copy standing in for today's would end the step green with nothing posted
+        text = "Pain line, no URL"
+        yesterday = {"id": "old", "text": text, "timestamp": "2026-10-19T03:00:00+0000"}     # Taiwan 10-19 11:00
+        just_before = {"id": "edge", "text": text, "timestamp": "2026-10-19T15:59:59+0000"}   # Taiwan 10-19 23:59:59
+        self.assertIsNone(self.find_in([yesterday, just_before]))
+        midnight = {"id": "new", "text": text, "timestamp": "2026-10-19T16:00:00+0000"}      # Taiwan 10-20 00:00:00
+        self.assertEqual("new", self.find_in([yesterday, just_before, midnight]))
+        self.assertEqual("new", self.find_in([yesterday, {**midnight, "timestamp": "2026-10-19T16:00:00+00:00"}]))
+        after = {"id": "later", "text": text, "timestamp": "2026-10-20T16:00:00+0000"}       # Taiwan 10-21 00:00:00
+        self.assertIsNone(self.find_in([after]))   # a later day's copy is no more this day's than an earlier one
+        self.assertEqual("new", self.find_in([after, midnight, yesterday]))
+
+    def test_find_own_post_cannot_tell_when_a_copy_has_no_readable_timestamp(self):
+        for stamp in (None, "", "yesterday", "2026-10-20"):
+            row = {"id": "x", "text": "Pain line, no URL"}
+            if stamp is not None:
+                row["timestamp"] = stamp
+            with self.subTest(stamp=stamp):
+                with self.assertRaises(threads_post.LookupFailed):
+                    self.find_in([row])
+        # a row of other text without a timestamp is of no interest, and an unreadable copy is not hidden by a
+        # readable older one (the order the API returns rows in is not relied on)
+        self.assertIsNone(self.find_in([{"id": "o", "text": "other"}]))
+        with self.assertRaises(threads_post.LookupFailed):
+            self.find_in([{"id": "old", "text": "Pain line, no URL", "timestamp": "2026-10-19T03:00:00+0000"},
+                          {"id": "x", "text": "Pain line, no URL"}])
+
+    def test_a_series_text_that_was_posted_yesterday_is_posted_again_today(self):
+        post, links, store, play = self.queued(self.MOCHI)
+        rows = [{"id": "yesterday", "text": post["text"], "timestamp": "2026-10-19T03:00:00+0000"}]
+        opener = mock.Mock(return_value=FakeResponse(json.dumps({"data": rows}).encode()))
+
+        def find(token, text, day):
+            return threads_post.find_own_post(token, text, dt.date(2026, 10, 20), opener)
+
+        with mock.patch.object(threads_post, "publish_post", side_effect=["today", "r1"]) as publish:
+            result = threads_post.publish_linked("tok", "uid", post["text"], links, store, play,
+                                                 sleeper=self.sleeper, find=find)
+        self.assertEqual(("today", True), tuple(result))   # a new post, not the old id reported as today's
+        self.assertEqual(2, publish.call_count)
+
+    def test_a_rerun_does_not_add_a_second_reply_when_one_is_already_up(self):
+        post, links, store, play = self.queued(self.MOCHI, "bm_mochi_us_th")
+        look = mock.Mock(return_value="r-existing")
+        with mock.patch.object(threads_post, "publish_post") as publish:
+            result = threads_post.publish_linked("tok", "uid", post["text"], links, store, play, sleeper=self.sleeper,
+                                                 find=lambda *_: "m-existing", find_reply=look)
+        self.assertEqual(("m-existing", True), tuple(result))
+        publish.assert_not_called()
+        look.assert_called_once()
+        self.assertEqual([], self.refusals())
+
+    def test_a_rerun_posts_no_reply_when_it_cannot_tell_whether_one_is_up(self):
+        post, links, store, play = self.queued(self.MOCHI, "bm_mochi_us_th")
+        look = mock.Mock(side_effect=threads_post.LookupFailed("down"))
+        with mock.patch.object(threads_post, "publish_post") as publish:
+            result = threads_post.publish_linked("tok", "uid", post["text"], links, store, play, sleeper=self.sleeper,
+                                                 find=lambda *_: "m-existing", find_reply=look)
+        self.assertEqual(("m-existing", False), tuple(result))
+        publish.assert_not_called()
+        self.assertEqual(1, len(self.refusals()))
+
+    def test_nothing_is_posted_when_it_cannot_tell_whether_the_post_is_already_up(self):
+        post, links, store, play = self.queued(self.MOCHI, "bm_mochi_us_th")
+
+        def down(*_):
+            raise threads_post.LookupFailed("down")
+        with mock.patch.object(threads_post, "publish_post") as publish:
+            result = threads_post.publish_linked("tok", "uid", post["text"], links, store, play, sleeper=self.sleeper,
+                                                 find=down)
+        self.assertEqual((None, False), tuple(result))
+        publish.assert_not_called()   # a second copy of the post is worse than a late one
+        self.assertEqual(1, len(self.refusals()))
+
+    # ---- threads_post.main()
+
+    def run_main(self, *, queued=None, item=None, publish=None, find=None):
+        env = {"THREADS_TOKEN": "tok", "THREADS_USER_ID": "uid", "THREADS_SLOT": ""}
+        pick = (item, "text") if item else None
+        with (
+            mock.patch.dict(os.environ, env),
+            mock.patch.object(urllib.request, "urlopen", side_effect=OSError("offline")),
+            mock.patch.object(threads_post, "queued_today", return_value=queued),
+            mock.patch("countdown_cards.due", return_value=False),
+            mock.patch.object(telegram_post, "load_pool", return_value=[item] if item else []),
+            mock.patch.object(threads_post, "pick_postable", return_value=pick),
+            mock.patch.object(threads_post, "find_own_post", return_value=find),
+            mock.patch.object(threads_post, "publish_post", side_effect=publish) as posted,
+            mock.patch("time.sleep") as slept,
+        ):
+            return threads_post.main(), posted, slept
+
+    def queued_post(self, app):
+        return {"date": "2026-10-20", "app": "x", "app_id": app, "ct": "bm_mochi_us_th", "task": "t",
+                "text": "Pain line, no URL. Link in the comments."}
+
+    def test_main_queued_post_goes_out_with_its_link_reply(self):
+        rc, posted, _ = self.run_main(queued=self.queued_post(self.MOCHI), publish=["m1", "r1"])
+        self.assertEqual(0, rc)
+        self.assertEqual(2, posted.call_count)
+        self.assertIn("id" + self.MOCHI, posted.call_args_list[1].args[2])
+        self.assertIn("play.google.com", posted.call_args_list[1].args[2])  # Android app
+        rc, posted, _ = self.run_main(queued=self.queued_post(self.IOS_ONLY), publish=["m2", "r2"])
+        self.assertEqual(0, rc)
+        self.assertNotIn("play.google.com", posted.call_args_list[1].args[2])
+
+    def test_main_queued_post_whose_reply_keeps_failing_ends_red_without_reposting(self):
+        publish = ["m1"] + [common.RequestError("down")] * threads_post.LINK_REPLY_TRIES
+        rc, posted, slept = self.run_main(queued=self.queued_post(self.MOCHI), publish=publish)
+        self.assertEqual(1, rc)
+        self.assertEqual(1, sum(1 for c in posted.call_args_list if "reply_to" not in c.kwargs))
+        self.assertEqual([mock.call(15), mock.call(45)], slept.call_args_list)
+        self.assertIn("::error::", self.out.getvalue())
+        self.assertEqual(1, len(self.refusals()))
+
+    def test_main_queued_post_with_no_known_app_posts_nothing(self):
+        for broken in ("not-a-number", None):
+            with self.subTest(app_id=broken):
+                rc, posted, _ = self.run_main(queued=self.queued_post(broken), publish=["m1", "r1"])
+                self.assertEqual(1, rc)
+                posted.assert_not_called()
+
+    def test_main_rerun_of_a_red_slot_does_not_repost_the_queued_post(self):
+        rc, posted, _ = self.run_main(queued=self.queued_post(self.MOCHI), publish=["r1"], find="m-existing")
+        self.assertEqual(0, rc)
+        posted.assert_called_once()
+        self.assertEqual("m-existing", posted.call_args.kwargs["reply_to"])
+
+    def test_main_rerun_whose_lookup_fails_posts_nothing_and_ends_red(self):
+        env = {"THREADS_TOKEN": "tok", "THREADS_USER_ID": "uid", "THREADS_SLOT": ""}
+        with (
+            mock.patch.dict(os.environ, env),
+            mock.patch.object(urllib.request, "urlopen", side_effect=OSError("offline")),
+            mock.patch.object(threads_post, "queued_today", return_value=self.queued_post(self.MOCHI)),
+            mock.patch.object(threads_post, "find_own_post", side_effect=threads_post.LookupFailed("down")),
+            mock.patch.object(threads_post, "publish_post") as posted,
+            mock.patch("time.sleep"),
+        ):
+            rc = threads_post.main()
+        self.assertEqual(1, rc)
+        posted.assert_not_called()
+        self.assertIn("::error::", self.out.getvalue())
+
+    def test_main_picture_post_gets_the_link_reply_and_fails_red_without_it(self):
+        item = {"app": self.MOCHI, "url": f"https://apps.apple.com/app/id{self.MOCHI}", "text": "Pain line",
+                "lang": "en", "image_url": None}
+        rc, posted, _ = self.run_main(item=item, publish=["m1", "r1"])
+        self.assertEqual(0, rc)
+        reply = posted.call_args_list[1]
+        self.assertEqual("m1", reply.kwargs["reply_to"])
+        self.assertIn("id" + self.MOCHI, reply.args[2])
+        self.assertIn("play.google.com", reply.args[2])
+        publish = ["m1"] + [common.HTTPStatusError("Threads publish", 500)] * threads_post.LINK_REPLY_TRIES
+        rc, posted, _ = self.run_main(item=item, publish=publish)
+        self.assertEqual(1, rc)
+        self.assertEqual(1, sum(1 for c in posted.call_args_list if "reply_to" not in c.kwargs))
+
+    def test_main_picture_post_with_a_broken_app_id_posts_nothing(self):
+        item = {"app": "abc", "url": "https://apps.apple.com/app/id1", "text": "Pain line", "lang": "en"}
+        rc, posted, _ = self.run_main(item=item, publish=["m1", "r1"])
+        self.assertEqual(1, rc)
+        posted.assert_not_called()
+
+
+class ThreadsPoolLinkCoverageTests(unittest.TestCase):
+    """Every post the Threads paths can send has a link reply that passes the download-link check."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.pool = _shared_pool()
+
+    def test_every_pool_item_has_a_checked_link_reply(self):
+        bad, android = [], 0
+        for item in self.pool:
+            store, play = threads_post.item_link_urls(item)
+            android += bool(play)
+            problems = DL.threads_reply_problems(threads_post.compose_links(item), store, play)
+            if problems:
+                bad.append((item.get("app"), item.get("lang"), problems))
+        self.assertEqual([], bad[:10])
+        self.assertTrue(0 < android < len(self.pool), "the pool must hold Android and iOS-only apps")
+
+    def test_publisher_intent_bodies_stay_link_free_and_fit(self):
+        bad = [(item["app"], item["lang"]) for item in self.pool
+               if item.get("source") == "publisher_intent_catalog"
+               and ("http" in threads_post.compose_body(item)
+                    or len(threads_post.compose_body(item)) > threads_post.MAX_POST_CHARS)]
+        self.assertEqual([], bad[:10])
+
+    def test_every_queued_post_has_a_checked_link_reply(self):
+        import threads_series
+        queues = {"threads-queue": [], "evening": threads_series.load_evening_queue(threads_series.EVENING_QUEUE)}
+        with open(threads_post.QUEUE, encoding="utf-8") as handle:
+            queues["threads-queue"] = json.load(handle)["posts"]
+        series = threads_series.load()["series"]
+        queues["series"] = [{"app_id": s["app_id"], "ct": s["ct"]} for s in series.values()]
+        bad = []
+        for name, posts in queues.items():
+            self.assertTrue(posts, name)
+            for post in posts:
+                store, play = threads_post.queued_link_urls(post)
+                problems = DL.threads_reply_problems(threads_post.queued_links(post), store, play)
+                if problems:
+                    bad.append((name, post.get("date"), post.get("app"), problems))
+        self.assertEqual([], bad)
+
+
+class TelegramDownloadLinkTests(_LinkGuardCase):
+    """telegram_post.make_intent: a text without the app's direct download link is never reserved or sent."""
+
+    CONTEXT = {"slot": "2026-10-17T01:00:00+00:00", "source_sha": "1" * 40, "generation_digest": "2" * 64,
+               "catalog_digest": "3" * 64, "roster_digest": "4" * 64, "run_id": "1", "run_attempt": "1",
+               "now": dt.datetime(2026, 10, 17, 1, 5, tzinfo=dt.timezone.utc)}
+
+    def item(self, app, lang=None, text="Quality copy"):
+        return {"app": app, "lang": lang or telegram_post.TZ_LANGS["asia"][0], "text": text,
+                "url": f"https://apps.apple.com/app/id{app}", "source": "publisher_intent_catalog"}
+
+    def setUp(self):
+        super().setUp()
+        for target in ("sys.stdout", "sys.stderr"):
+            patcher = mock.patch(target, new_callable=io.StringIO)
+            setattr(self, "out" if target == "sys.stdout" else "err", patcher.start())
+            self.addCleanup(patcher.stop)
+
+    def test_texts_with_the_link_pass_and_carry_play_for_android_apps(self):
+        ios = telegram_post.make_intent(self.item(self.IOS_ONLY), self.CONTEXT)
+        self.assertIn("apps.apple.com/app/id" + self.IOS_ONLY, ios["text"])
+        self.assertNotIn("play.google.com", ios["text"])
+        # A post with the existing-user review link still carries the download link first.
+        reviewed = telegram_post.make_intent(self.item("6818607603", "ko"), self.CONTEXT)
+        self.assertIn("write-review", reviewed["text"])
+        self.assertIn("ct=soc_tg_guide", reviewed["text"].split("👉 ")[1].split()[0])
+        android = telegram_post.make_intent(self.item(self.MOCHI), self.CONTEXT)
+        self.assertIn("apps.apple.com/app/id" + self.MOCHI, android["text"])
+        self.assertIn("play.google.com/store/apps/details?id=", android["text"])
+        self.assertEqual("", self.out.getvalue())
+
+    def test_a_text_without_the_link_is_refused_loudly(self):
+        review = f"https://apps.apple.com/app/id{self.MOCHI}?action=write-review"
+        cases = {
+            "no link at all": ("Quality copy\n\n— Lumi Studio", self.IOS_ONLY),
+            "another app's link": (f"Quality copy\n\n👉 https://apps.apple.com/app/id{self.IOS_ONLY}?pt=1&ct=x&mt=8",
+                                   self.MOCHI),
+            "Android app without Google Play": (f"Q\n\n👉 https://apps.apple.com/app/id{self.MOCHI}?pt=1&ct=x&mt=8",
+                                                self.MOCHI),
+        }
+        for name, (text, app) in cases.items():
+            with self.subTest(name), mock.patch.object(telegram_post, "compose_text", return_value=text):
+                with self.assertRaises(DL.MissingDownloadLink):
+                    telegram_post.make_intent(self.item(app), self.CONTEXT)
+        self.assertEqual(3, len(self.refusals()))
+        self.assertIn("::error::", self.out.getvalue())
+        # The write-a-review link points at the store page too, but it is not the download link.
+        label = "Rate us on the App Store"
+        with mock.patch.object(telegram_post.review_links, "for_official", return_value={"label": label, "url": review}):
+            self.assertTrue(telegram_post.download_link_problems(self.item(self.MOCHI), f"Q\n\n{label}\n{review}"))
+
+    def test_publish_once_sends_and_reserves_nothing_without_the_link(self):
+        ledger, store = {"intents": {}, "receipts": {}}, mock.Mock(spec=telegram_post.GitHubLedger)
+        with (
+            mock.patch.object(telegram_post, "choose_unpublished", return_value=self.item(self.MOCHI)),
+            mock.patch.object(telegram_post, "compose_text", return_value="Quality copy, no link"),
+            mock.patch.object(telegram_post, "_publish_item") as send,
+        ):
+            with self.assertRaises(ValueError):
+                telegram_post.publish_once([], ledger, store, self.CONTEXT, "token", {"id": -1})
+        send.assert_not_called()
+        self.assertEqual({}, ledger["intents"])
+        store.save.assert_not_called()
+
+    def test_main_ends_red_when_the_link_check_refuses(self):
+        store = mock.Mock(spec=telegram_post.GitHubLedger)
+        store.load.return_value = {"intents": {}, "receipts": {}}
+        with (
+            mock.patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "@c", "GITHUB_TOKEN": "g"}),
+            mock.patch.object(telegram_post, "production_context", return_value={"source_sha": "1" * 40}),
+            mock.patch.object(telegram_post, "load_pool", return_value=[]),
+            mock.patch.object(telegram_post, "GitHubLedger", return_value=store),
+            mock.patch.object(telegram_post, "read_native_chat", return_value={"id": -1}),
+            mock.patch.object(telegram_post, "reconcile_pending"),
+            mock.patch.object(telegram_post, "page_unready_apps", return_value=frozenset()),
+            mock.patch.object(telegram_post, "publish_once", side_effect=DL.MissingDownloadLink("no link")),
+        ):
+            self.assertEqual(1, telegram_post.main([]))
+        self.assertIn("blocked/failed", self.err.getvalue())
+
+
+class TelegramPoolLinkCoverageTests(unittest.TestCase):
+    """The whole Telegram pool (publisher intent catalog and telegram_posts.json): every text composes
+    with the app's direct download link, or the pool is wrong and must be fixed."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.pool = _shared_pool()
+
+    def test_every_pool_item_composes_a_text_with_its_download_link(self):
+        bad, android, sources = [], 0, set()
+        for item in self.pool:
+            text = telegram_post.compose_text(item)
+            problems = telegram_post.download_link_problems(item, text)
+            android += "play.google.com" in text
+            sources.add(item.get("source"))
+            if problems:
+                bad.append((item.get("app"), item.get("lang"), item.get("source"), problems))
+        self.assertEqual([], bad[:10], f"{len(bad)} of {len(self.pool)} pool texts miss the download link")
+        self.assertIn("publisher_intent_catalog", sources)
+        self.assertGreater(len(sources), 1, "telegram_posts.json items are part of the pool too")
+        self.assertTrue(0 < android < len(self.pool), "the pool must hold Android and iOS-only apps")
+
+    def test_every_item_of_telegram_posts_json_that_can_post_has_its_link(self):
+        with open(os.path.join(HERE, "telegram_posts.json"), encoding="utf-8") as handle:
+            static = json.load(handle)
+        live = {item["app"] for item in self.pool}
+        for item in static:
+            if str(item.get("app")) not in live:
+                continue  # load_pool() leaves apps outside the live roster out: they are never posted
+            item = dict(item, url=common.canonical_app_store_url(f"https://apps.apple.com/app/id{item['app']}"))
+            with self.subTest(app=item["app"], lang=item.get("lang")):
+                self.assertEqual([], telegram_post.download_link_problems(item, telegram_post.compose_text(item)))
 
 
 if __name__ == "__main__":

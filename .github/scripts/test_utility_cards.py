@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Tests for utility_cards.py (no network)."""
+import contextlib
 import datetime as dt
+import io
 import json
 import os
 import sys
@@ -283,6 +285,77 @@ class NewTypesTest(unittest.TestCase):
                 done += 1
         self.assertEqual(todo, set())
         self.assertGreaterEqual(done, 5 * 14)
+
+
+class DownloadLinkTest(unittest.TestCase):
+    """Every utility card post carries the app's direct download link (owner rule 2026-10-17)."""
+
+    def meta(self, card):
+        return {"type": card["type"], "item": card["item"]["id"], "locale": card["locale"], "app": card["app"],
+                "key": card["key"], "caption": "Head\nBody"}
+
+    def test_instagram_and_telegram_texts_hold_the_full_urls(self):
+        card = U.pick(DAY0)   # Aim990: on Android
+        for channel, build in (("instagram", U.instagram_text), ("telegram", U.telegram_text)):
+            text = build(self.meta(card), card)
+            store, play = U.download_urls(card, channel)
+            self.assertIn(store, text, channel)
+            self.assertIn("ct=ut_aim990_" + U.CHANNEL_CT[channel], store)
+            self.assertTrue(play and play in text, channel)
+        self.assertIn(U.TEXT[card["locale"]]["bio"], U.instagram_text(self.meta(card), card))
+
+    def test_qa_refuses_a_text_without_the_link_and_passes_the_real_one(self):
+        import post_qa
+        card = U.pick(DAY0)
+        for channel in ("instagram", "telegram"):
+            bare = post_qa.card_problems("Head\nBody\nLink in bio", card["locale"], channel, store_url=U.store_url(card, "qa"),
+                                         name=U.app_name(card), online=False)
+            self.assertTrue(any("download link" in p for p in bare), channel)
+            real = U.qa_problems(self.meta(card), card, channel, online=False)
+            self.assertFalse([p for p in real if "download link" in p], (channel, real))
+
+    def test_send_calls_never_send_a_text_without_the_link(self):
+        card = U.pick(DAY0)
+        sent = {}
+        with mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t"}), mock.patch.object(U.cd, "_get", return_value={"user_id": "u"}), \
+                mock.patch.object(U.cd.time, "sleep"), \
+                mock.patch.object(U.cd, "_post", side_effect=lambda url, f, timeout=60: sent.update(f) or {"id": "m"}), \
+                mock.patch.object(U, "_permalink", return_value=""):
+            U.cd.instagram_image("https://x/card.jpg", "bare text", guard=U.download_urls(card, "instagram"))
+            store, play = U.download_urls(card, "instagram")
+            self.assertTrue(U.cd.DL.has_download_link(sent["caption"], store, play))
+            sent.clear()
+            with self.assertRaises(U.cd.DL.MissingDownloadLink):
+                U.cd.instagram_image("https://x/card.jpg", "bare text", guard=("https://example.com/not-a-store", None))
+            self.assertEqual(sent, {}, "nothing is sent when no link can be attached")
+
+    def test_threads_link_reply_is_retried_and_a_missing_one_is_flagged(self):
+        card = U.pick(DAY0)
+        calls = []
+
+        def post(url, fields, timeout=60):
+            calls.append(fields)
+            if fields.get("reply_to_id") and len([c for c in calls if c.get("reply_to_id")]) < 3:
+                raise RuntimeError("HTTP 500")
+            return {"id": f"id{len(calls)}"}
+
+        links = U.link_lines(card, "threads")
+        with mock.patch.dict(os.environ, {"THREADS_TOKEN": "t", "THREADS_USER_ID": "u"}), mock.patch.object(U.cd, "_get", return_value={"id": "u"}), \
+                mock.patch.object(U.cd, "_post", side_effect=post), mock.patch.object(U.cd.time, "sleep"), \
+                mock.patch("threads_series.has_room", return_value=True):
+            U.cd.LINK_FAILURES.clear()
+            U.cd.threads_image("https://x/card.jpg", "Head", links, label="utility")
+            self.assertEqual(U.cd.LINK_FAILURES, [])
+            self.assertEqual(len([c for c in calls if c.get("reply_to_id")]), 3)
+            self.assertIn("ct=ut_aim990_th", [c for c in calls if c.get("reply_to_id")][-1]["text"])
+            calls.clear()
+            out = io.StringIO()   # the refusal prints a ::error:: line; the daily workflow runs this test too (-q, no -b)
+            with mock.patch.object(U.cd, "_post", side_effect=lambda url, f, timeout=60: (_ for _ in ()).throw(RuntimeError("x")) if f.get("reply_to_id") else {"id": "i"}), \
+                    contextlib.redirect_stdout(out):
+                U.cd.threads_image("https://x/card.jpg", "Head", links, label="utility")
+            self.assertIn("::error::", out.getvalue())
+        self.assertEqual(U.cd.LINK_FAILURES, ["i"])
+        U.cd.LINK_FAILURES.clear()
 
 
 @unittest.skipUnless(Path(U.cd.FONT).exists(), "CJK font not installed")

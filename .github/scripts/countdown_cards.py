@@ -12,11 +12,19 @@ content, so it never reads as a repeated post.
 
 Posting: Telegram (photo upload + App Store button), Threads (image, store
 links in the first reply) and Instagram (image) with the existing secrets.
+
+Every post carries the app's direct download link (owner rule 2026-10-17, download_links.py): the
+Telegram and Instagram texts hold the full App Store URL (and Google Play), the Threads link reply is
+retried (one container, published again) and the send calls re-check the text (ensure_download_link).
+A Threads reply that still fails is reported with ::error:: and kept in LINK_FAILURES; the step stays green
+(the post is already out and a red step would only make the watchdog post the card twice) and
+link_backfill.py adds the reply within hours.
 """
 import argparse
 import datetime as dt
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -28,6 +36,13 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
 from social_post_common import play_store_url  # noqa: E402
+import download_links as DL  # noqa: E402
+
+LINK_FAILURES = []   # Threads posts whose link reply did not go out (::error:: now, link_backfill.py adds it later)
+# A new Threads container is not ready to publish at once (publishing answers "(#24) The requested resource does
+# not exist"); threads_post.publish_post waits 35 s and publishes again 25 s apart, the reply here does the same.
+REPLY_WAIT = 35
+REPLY_RETRY_WAIT = 25
 
 APP_ID = "6807079789"  # CountDaysNow
 STORE = {"ko": "kr", "zh-Hant": "tw", "ja": "jp", "en": "us"}
@@ -175,6 +190,24 @@ def store_url(e, channel):
     return f"https://apps.apple.com/{STORE[e['locale']]}/app/id{APP_ID}?{query}"
 
 
+CHANNEL_CT = {"instagram": "ig", "telegram": "tg", "threads": "th"}
+
+
+def download_urls(e, channel):
+    """(App Store URL, Google Play URL or None) for one channel."""
+    ch = CHANNEL_CT.get(channel, channel)
+    return store_url(e, ch), play_store_url(APP_ID, campaign(ch))
+
+
+def link_lines(e, channel):
+    """The "label: URL" lines that carry the direct download link(s) in the post text."""
+    store, play = download_urls(e, channel)
+    lines = [f"{TEXT[e['locale']]['button']}: {store}"]
+    if play:
+        lines.append(f"Google Play: {play}")
+    return lines
+
+
 def caption(e, n, day):
     t = TEXT[e["locale"]]
     head = e["today"].replace("\n", " ") if n == 0 else f"{e['title']} {e['count'].format(n=n)}"
@@ -264,12 +297,21 @@ def _get(url, timeout=60):
         return json.loads(r.read())
 
 
-def send_photo(card, caption, row, label="countdown"):
+def guarded(text, guard, limit, label):
+    """`text` with the download link(s) of guard = (App Store URL, Google Play URL or None); a post whose
+    link cannot be attached raises MissingDownloadLink (nothing is sent). guard None = a legacy caller."""
+    if guard is None:
+        return text
+    return DL.ensure_download_link(text, guard[0], guard[1], max_len=limit, label=label)
+
+
+def send_photo(card, caption, row, label="countdown", guard=None):
     """Upload the card to the Telegram channel with a row of link buttons; the API result or None."""
     token, chat = os.environ.get("TELEGRAM_BOT_TOKEN", ""), os.environ.get("TELEGRAM_CHAT_ID", "")
     if not token or not chat:
         print(f"{label}: Telegram secrets missing")
         return None
+    caption = guarded(caption, guard, 1024, f"{label} telegram")
     boundary = "lumicountdown"
     parts = []
     for k, v in {"chat_id": chat, "caption": caption, "reply_markup": json.dumps({"inline_keyboard": [row]})}.items():
@@ -283,6 +325,17 @@ def send_photo(card, caption, row, label="countdown"):
         result = json.loads(r.read())
     print(f"{label}: telegram", result.get("ok"))
     return result
+
+
+def own_link_reply_exists(api, token, media, links):
+    """True when our own reply under `media` already holds every link of `links` (a retry must not double it),
+    False when it does not, None when the look itself failed (then nothing more is posted)."""
+    try:
+        rows = _get(f"{api}/{media}/replies?fields=text,is_reply_owned_by_me&access_token={token}").get("data", [])
+    except Exception:
+        return None
+    mine = " ".join(r.get("text", "") for r in rows if r.get("is_reply_owned_by_me"))
+    return DL.links_covered(mine, "\n".join(links))
 
 
 def threads_image(url, text, links, label="countdown"):
@@ -303,22 +356,41 @@ def threads_image(url, text, links, label="countdown"):
     c = _post(f"{api}/{user}/threads", {"media_type": "IMAGE", "image_url": url, "text": text, "access_token": token})["id"]
     time.sleep(30)
     media = _post(f"{api}/{user}/threads_publish", {"creation_id": c, "access_token": token})["id"]
-    try:
-        r = _post(f"{api}/{user}/threads", {"media_type": "TEXT", "text": "\n".join(links), "reply_to_id": media, "access_token": token})["id"]
-        time.sleep(5)
-        _post(f"{api}/{user}/threads_publish", {"creation_id": r, "access_token": token})
-    except Exception as exc:
-        print(f"{label}: Threads reply skipped ({exc.__class__.__name__})")
+    reply_ok, r = False, None
+    for attempt in range(3):  # the image is up: the download link reply is retried, never silently dropped
+        if attempt:
+            exists = own_link_reply_exists(api, token, media, links)
+            if exists:  # an earlier try published after all
+                reply_ok = True
+                break
+            if exists is None:  # cannot tell whether it is there: no second reply
+                print(f"{label}: could not check for an earlier link reply; not posting another")
+                break
+        try:
+            if r is None:  # a retry publishes the same container again, it never opens a second one
+                r = _post(f"{api}/{user}/threads", {"media_type": "TEXT", "text": "\n".join(links), "reply_to_id": media, "access_token": token})["id"]
+                time.sleep(REPLY_WAIT)  # a new container is not ready to publish at once
+            _post(f"{api}/{user}/threads_publish", {"creation_id": r, "access_token": token})
+            reply_ok = True
+            break
+        except Exception as exc:
+            print(f"{label}: Threads link reply attempt {attempt + 1} failed ({exc.__class__.__name__})")
+            time.sleep(REPLY_RETRY_WAIT * (attempt + 1))
+    if not reply_ok:
+        LINK_FAILURES.append(media)
+        DL.refuse(f"{label} threads", ["the Threads post is up but its download link reply was not posted "
+                                       "(link_backfill.py adds it)"])
     print(f"{label}: threads", media)
     return media
 
 
-def instagram_image(url, text, label="countdown", alt=None):
+def instagram_image(url, text, label="countdown", alt=None, guard=None):
     """Image post on Instagram (with alt text when given: accessibility + search); the media id or None."""
     token = os.environ.get("IG_ACCESS_TOKEN", "")
     if not token:
         print(f"{label}: IG_ACCESS_TOKEN missing")
         return None
+    text = guarded(text, guard, 2200, f"{label} instagram")
     api = "https://graph.instagram.com/v21.0"
     me = _get(f"{api}/me?fields=user_id&access_token={token}")
     user = me.get("user_id") or me.get("id")
@@ -337,23 +409,32 @@ def post_telegram(card, meta, e):
     play = play_store_url(APP_ID, campaign("tg"))
     if play:
         row.append({"text": "Google Play", "url": play})
-    send_photo(card, meta["caption"], row)
+    send_photo(card, telegram_text(meta, e), row, guard=download_urls(e, "telegram"))
 
 
 def post_threads(url, meta, e):
     from threads_post import queued_today
     if queued_today():
         return print("countdown: a queued Threads post has today's slot; Threads skipped")
-    links = [f"App Store: {store_url(e, 'th')}"]
-    play = play_store_url(APP_ID, campaign("th"))
-    if play:
-        links.append(f"Google Play: {play}")
-    threads_image(url, meta["caption"], links)
+    threads_image(url, meta["caption"], link_lines(e, "threads"))
 
 
-def instagram_text(meta):
+def event_of(meta):
+    return next(x for x in EVENTS if x["id"] == meta["event"])
+
+
+def telegram_text(meta, e=None):
+    """The Telegram caption: the card text plus the clickable download link(s)."""
+    e = e or event_of(meta)
+    return meta["caption"] + "\n" + "\n".join(link_lines(e, "telegram"))
+
+
+def instagram_text(meta, e=None):
+    """The Instagram caption: the card text, the full download URL(s) (not tappable: the bio hint stays), tags."""
     import search_caption as SC
-    text = meta["caption"] + "\n" + {"ko": "링크는 프로필에", "zh-Hant": "下載連結在個人檔案", "ja": "リンクはプロフィールから"}.get(meta["locale"], "Link in bio")
+    e = e or event_of(meta)
+    bio = {"ko": "링크는 프로필에", "zh-Hant": "下載連結在個人檔案", "ja": "リンクはプロフィールから"}.get(meta["locale"], "Link in bio")
+    text = meta["caption"] + "\n" + "\n".join(link_lines(e, "instagram")) + "\n" + bio
     tags = SC.card_tags("countdaysnow", meta["locale"])  # keyword hashtags from the planner's seo table
     if tags:
         text += "\n\n" + " ".join(tags)
@@ -363,15 +444,16 @@ def instagram_text(meta):
 def qa_problems(meta, e, channel, image=None, online=True):
     """Pre-post QA (post_qa.py): the exact text this channel gets, the image, the live store link."""
     import post_qa
-    text = instagram_text(meta) if channel == "instagram" else meta["caption"]
+    text = {"instagram": instagram_text, "telegram": telegram_text}.get(channel, lambda m, ev: m["caption"])(meta, e)
     return post_qa.card_problems(text, e["locale"], channel, store_url=store_url(e, "qa"), name="CountDaysNow",
                                  image=image, online=online)
 
 
-def post_instagram(url, meta):
+def post_instagram(url, meta, e=None):
     import search_caption as SC
-    text = instagram_text(meta)
-    instagram_image(url, text, alt=SC.card_alt("CountDaysNow", meta["caption"], "countdaysnow", meta["locale"]))
+    e = e or event_of(meta)
+    instagram_image(url, instagram_text(meta, e), alt=SC.card_alt("CountDaysNow", meta["caption"], "countdaysnow", meta["locale"]),
+                    guard=download_urls(e, "instagram"))
 
 
 def main():
@@ -394,7 +476,7 @@ def main():
     e = next(x for x in EVENTS if x["id"] == meta["event"])
     for name, fn in (("telegram", lambda: post_telegram(args.card, meta, e)),
                      ("threads", lambda: post_threads(args.url, meta, e)),
-                     ("instagram", lambda: post_instagram(args.url, meta))):
+                     ("instagram", lambda: post_instagram(args.url, meta, e))):
         if args.only and name != args.only:
             continue
         import post_qa
@@ -404,6 +486,10 @@ def main():
             fn()
         except Exception as exc:  # one channel failing never blocks the others
             print(f"countdown: {name} failed ({exc})")
+    # A post whose link reply failed is already out (DL.refuse printed the ::error::). A red step would only make
+    # the watchdog re-dispatch the slot and post the card twice, so the run stays green; link_backfill.py adds it.
+    if LINK_FAILURES:
+        print(f"countdown: {len(LINK_FAILURES)} Threads post(s) wait for their link reply (link_backfill.py): {LINK_FAILURES}")
     return 0
 
 

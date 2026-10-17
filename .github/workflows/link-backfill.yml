@@ -50,6 +50,8 @@ jobs:
       contents: write # the report and the receipts are committed
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # a run that waited in the queue must see the receipts the run before it committed
       - name: Is the sweeper switched on?
         id: gate
         run: |

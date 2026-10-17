@@ -22,6 +22,13 @@ keyword line from clips.json, then a few keyword hashtags; the hook variant
 rotates across platforms and days and is recorded in clip-posts.json so
 post_performance.py can rank variants.
 
+Every post carries the app's direct download link (owner rule 2026-10-17, download_links.py): the
+Instagram and Telegram captions hold the full App Store URL (plus Google Play when the app is on
+Android; an Instagram caption link is not tappable, so "link in bio" stays), the Threads video keeps
+its links in the first reply (account-limit history) and that reply is retried and checked. The QA
+gate (post_qa.py) refuses a caption without the link and ensure_download_link() is the last guard at
+the send call, so a post never goes out without it silently.
+
     python3 clip_posts.py telegram --slot 1     # sendVideo + App Store button
     python3 clip_posts.py instagram --slot 15   # Reels via the official API
     python3 clip_posts.py preview --slot 1      # print what would be posted
@@ -39,6 +46,7 @@ import urllib.request
 from pathlib import Path
 
 import clip_progress
+import download_links as DL
 import post_qa
 import review_links
 import search_caption as SC
@@ -151,6 +159,29 @@ def play_url(clip, channel):
     return play_store_url(ios_id(clip), f"{clip_campaign(ct)}_{channel}"[:40])
 
 
+CHANNEL_CT = {"instagram": "ig", "telegram": "tg", "threads": "th"}   # ct suffix per channel (agent/ct_codes.py)
+LINK_IN_CAPTION = ("instagram", "telegram")   # Threads keeps its links in the first reply
+
+
+def play_label(clip):
+    return PLAY_LINE.get(clip["locale"]) or PLAY_LINE.get(clip["locale"].split("-")[0]) or PLAY_LINE["en"]
+
+
+def download_urls(clip, channel):
+    """(App Store URL, Google Play URL or None) with the channel's own ct token."""
+    tag = CHANNEL_CT.get(channel, channel)
+    return with_campaign(clip["store_url"], tag), play_url(clip, tag)
+
+
+def link_lines(clip, channel):
+    """The "label: URL" lines that carry the direct download link(s) in a caption."""
+    store, play = download_urls(clip, channel)
+    lines = [f"{text_for(clip['locale'])['button']}: {store}"]
+    if play:
+        lines.append(f"{play_label(clip)}: {play}")
+    return lines
+
+
 def caption(clip, channel, variant=None):
     """Search-first caption (search_caption.py): problem line, benefit and keyword line inside the first
     125 characters, app name + App Store search line, then a few keyword hashtags."""
@@ -158,18 +189,27 @@ def caption(clip, channel, variant=None):
     lines = SC.body(clip, variant or SC.variants(clip)[0])
     lines += [clip["name"], t["search"].format(s=clip["search"])]
     lines = SC.dedupe(lines)  # a keyline the app name already says ("可愛待辦清單" / "Mochi: 可愛待辦清單") goes
-    if play_store_url(ios_id(clip), "h7"):
-        lines.append(PLAY_LINE.get(clip["locale"]) or PLAY_LINE.get(clip["locale"].split("-")[0]) or PLAY_LINE["en"])
+    if channel in LINK_IN_CAPTION:
+        lines += link_lines(clip, channel)  # the direct download link(s), in the text itself
+    elif play_store_url(ios_id(clip), "h7"):
+        lines.append(play_label(clip))  # Threads: the links are in the first reply
     if channel == "instagram":
-        lines.append(t["bio"])
+        lines.append(t["bio"])  # the caption link is not tappable: point to the bio link as well
     if channel == "telegram":
         # Clickable existing-user review link, only for the review_links.json pairs in their locale
-        # (Instagram captions cannot carry a link; Threads posts carry none).
+        # (Threads posts carry none).
         lines += review_links.lines(review_links.for_clip(clip))
     tags = SC.tags(clip, SC.TAG_LIMIT.get(channel, 5))
     if tags:
         lines += ["", " ".join(tags)]
-    return "\n".join(lines)
+    text = "\n".join(lines)
+    if channel in LINK_IN_CAPTION:
+        # Keeps the links when a long caption would pass the platform limit (hashtags go first).
+        store, play = download_urls(clip, channel)
+        text = DL.ensure_download_link(text, store, play, max_len=post_qa.LIMITS.get(channel),
+                                       app_store_label=t["button"], play_label=play_label(clip),
+                                       label=f"{clip.get('app')}/{clip.get('locale')} {channel}")
+    return text
 
 
 def _open(req, timeout):
@@ -203,10 +243,14 @@ def post_telegram(clip, variant=None):
     if play:
         row.append({"text": "Google Play", "url": play})
     button = {"inline_keyboard": [row]}
+    store, play_link = download_urls(clip, "telegram")
+    text = DL.ensure_download_link(caption(clip, "telegram", variant), store, play_link,
+                                   max_len=post_qa.LIMITS["telegram"], app_store_label=text_for(clip["locale"])["button"],
+                                   play_label=play_label(clip), label=f"{clip.get('app')}/{clip.get('locale')} telegram")
     result = _post(f"https://api.telegram.org/bot{token}/sendVideo", {
         "chat_id": chat,
         "video": clip["url"],
-        "caption": caption(clip, "telegram", variant),
+        "caption": text,
         "supports_streaming": "true",
         "reply_markup": json.dumps(button),
     })
@@ -230,10 +274,14 @@ def post_instagram(clip, variant=None, wait=5, tries=60):
         print(f"clip: token refresh skipped ({exc.__class__.__name__})")
     me = _get(f"{GRAPH}/me?fields=user_id,username&access_token={token}")
     user = me.get("user_id") or me.get("id")
+    store, play = download_urls(clip, "instagram")
+    text = DL.ensure_download_link(caption(clip, "instagram", variant), store, play, max_len=post_qa.LIMITS["instagram"],
+                                   app_store_label=text_for(clip["locale"])["button"], play_label=play_label(clip),
+                                   label=f"{clip.get('app')}/{clip.get('locale')} instagram")  # never without the link
     container = _post(f"{GRAPH}/{user}/media", {
         "media_type": "REELS",
         "video_url": clip["url"],
-        "caption": caption(clip, "instagram", variant),  # Reels take no alt_text (image posts only)
+        "caption": text,  # Reels take no alt_text (image posts only)
         "share_to_feed": "true",
         # Cover = the hook frame once its slam has settled (frame 9), before the first cut: the pain point,
         # full size, inside the 3:4 profile-grid crop.
@@ -262,6 +310,23 @@ THREADS = "https://graph.threads.net/v1.0"
 COVER_MS = 300  # Reels cover frame (ms): hook settled (its slam ends at frame 7), phone already in view
 
 
+# A new Threads container is not ready to publish at once (publishing answers "(#24) The requested resource does
+# not exist"); threads_post.publish_post waits 35 s and publishes again 25 s apart, the reply here does the same.
+REPLY_WAIT = 35
+REPLY_RETRY_WAIT = 25
+
+
+def own_link_reply_exists(token, media, store, play):
+    """True when our own reply under `media` already carries the download link (a retry must not double it),
+    False when it does not, None when the look itself failed (then nothing more is posted: a second reply
+    could double the first, link_backfill.py looks again later)."""
+    try:
+        rows = _get(f"{THREADS}/{media}/replies?fields=text,is_reply_owned_by_me&access_token={token}").get("data", [])
+    except Exception:
+        return None
+    return DL.has_download_link(" ".join(r.get("text", "") for r in rows if r.get("is_reply_owned_by_me")), store, play)
+
+
 def post_threads(clip, variant=None, wait=5, tries=60):
     """Video post with the hook caption; store links go in the first reply."""
     token = os.environ.get("THREADS_TOKEN", "").strip()
@@ -286,24 +351,47 @@ def post_threads(clip, variant=None, wait=5, tries=60):
     else:
         raise RuntimeError("Threads processing timed out")
     media = _post(f"{THREADS}/{user}/threads_publish", {"creation_id": container, "access_token": token})["id"]
-    links = [f"{t['button']}: {with_campaign(clip['store_url'], 'th')}"]
-    play = play_url(clip, "th")
+    store, play = download_urls(clip, "threads")
+    links = [f"{t['button']}: {store}"]
     if play:
         links.append(f"Google Play: {play}")
-    try:
-        reply = _post(f"{THREADS}/{user}/threads", {
-            "media_type": "TEXT", "text": "\n".join(links), "reply_to_id": media, "access_token": token,
-        })["id"]
-        time.sleep(wait)
-        _post(f"{THREADS}/{user}/threads_publish", {"creation_id": reply, "access_token": token})
-    except Exception as exc:  # the video is up; a failed reply must not fail the run
-        print(f"clip: Threads link reply skipped ({exc.__class__.__name__})")
+    reply_text = "\n".join(links)
+    reply_ok = False
+    problems = DL.threads_reply_problems(reply_text, store, play)
+    if problems:
+        DL.refuse(f"{clip.get('app')}/{clip.get('locale')} threads", problems)
+    else:
+        reply = None
+        for attempt in range(3):  # the video is up: the download link reply is retried, never silently dropped
+            if attempt:
+                exists = own_link_reply_exists(token, media, store, play)
+                if exists:  # an earlier try published after all
+                    reply_ok = True
+                    break
+                if exists is None:  # cannot tell whether it is there: no second reply
+                    print("clip: could not check for an earlier link reply; not posting another")
+                    break
+            try:
+                if reply is None:  # a retry publishes the same container again, it never opens a second one
+                    reply = _post(f"{THREADS}/{user}/threads", {
+                        "media_type": "TEXT", "text": reply_text, "reply_to_id": media, "access_token": token,
+                    })["id"]
+                    time.sleep(REPLY_WAIT)  # a new container is not ready to publish at once
+                _post(f"{THREADS}/{user}/threads_publish", {"creation_id": reply, "access_token": token})
+                reply_ok = True
+                break
+            except Exception as exc:
+                print(f"clip: Threads link reply attempt {attempt + 1} failed ({exc.__class__.__name__})")
+                time.sleep(REPLY_RETRY_WAIT * (attempt + 1))
+    if not reply_ok:
+        DL.refuse(f"{clip.get('app')}/{clip.get('locale')} threads",
+                  ["the Threads video is up but its download link reply was not posted (link_backfill.py adds it)"])
     try:
         link = _get(f"{THREADS}/{media}?fields=permalink&access_token={token}").get("permalink")
     except Exception as exc:
         print(f"clip: permalink lookup skipped ({exc.__class__.__name__})")
         link = None
-    return {"id": media, "link": link}
+    return {"id": media, "link": link, "link_reply": reply_ok}
 
 
 # Threads clip slots that give way to the evening conversion post (threads-post.yml slot 1, Asia 01:40 UTC).
@@ -333,7 +421,11 @@ def qa_variant(clip, channel, preferred, online=True):
     order = [preferred] + [h for h in hooks if h is not preferred and h.get("id") != preferred.get("id")]
     first = None
     for v in order:
-        problems = post_qa.clip_problems(clip, channel, caption(clip, channel, v), online=online)
+        try:
+            text = caption(clip, channel, v)
+        except (KeyError, ValueError) as exc:  # DL.MissingDownloadLink is a ValueError: no link, no post
+            return None, [f"caption cannot be built: {exc}"]
+        problems = post_qa.clip_problems(clip, channel, text, online=online)
         if not problems:
             if v is not preferred:
                 print(f"clip: hook {preferred.get('id')} refused by QA, posting hook {v.get('id')} instead")
@@ -389,6 +481,12 @@ def main():
         # hook A/B ranking in post_performance.py.
         clip_progress.record_post(channel, f"{clip['app']}/{clip['locale']}", posted.get("link"),
                                   media_id=posted.get("id"), variant=variant["id"])
+        if posted.get("link_reply") is False:
+            # The post is up and recorded. A red step would only make the watchdog re-dispatch the slot and post
+            # it twice, so the step stays green: the ::error:: above is the alert and link_backfill.py (the
+            # sweeper, link-backfill.yml) adds the missing reply under the post.
+            print(f"::error::{clip['app']}/{clip['locale']} {channel}: posted without its download link reply; "
+                  "link-backfill adds it")
     return 0
 
 

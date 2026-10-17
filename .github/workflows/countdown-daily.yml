@@ -54,6 +54,11 @@ jobs:
           git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -q -m "countdown card $name"
           git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" countdown-cards:countdown-cards
           echo "url=https://raw.githubusercontent.com/${{ github.repository }}/countdown-cards/$name" >> "$GITHUB_OUTPUT"
+      - name: Test (the download link guard)
+        if: steps.due.outputs.due == 'true'
+        run: |
+          python3 .github/scripts/test_download_links.py -q
+          python3 .github/scripts/test_countdown_cards.py -q
       - name: Post to Telegram, Threads and Instagram
         if: steps.due.outputs.due == 'true'
         env:

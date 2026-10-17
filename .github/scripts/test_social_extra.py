@@ -7,6 +7,7 @@ import os
 import sys
 import tempfile
 import unittest
+import urllib.parse
 import xmlrpc.client
 from pathlib import Path
 from unittest import mock
@@ -15,6 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 os.environ.setdefault("POST_QA_OFFLINE", "1")  # the pre-post QA gate makes no network calls in tests
 
 import clip_progress as P  # noqa: E402
+import download_links as DL  # noqa: E402
 import social_extra as S  # noqa: E402
 
 S.PAUSE = 0
@@ -690,13 +692,410 @@ class ReviewLinkFeedTest(unittest.TestCase):
         tw = dict(pair_clip("zh-Hant", "落落長的筆記 變成一頁簡報"),
                   store_url="https://apps.apple.com/us/app/id6798814385?pt=118326163&ct=h7_onepageppt&mt=8")
         pk = S.clip_item("onepageppt/zh-Hant", tw, "plurk", DAY)
+        # OnePage PPT is on Android: both download links come first, the rating link goes if 360 cannot hold it.
         fake = Fake([("POST", "/Timeline/plurkAdd", {"plurk_id": 1295})])
         with mock.patch.dict(os.environ, {k: "v" for k in S.SECRETS["plurk"]}, clear=True), \
                 mock.patch.object(S, "http", fake):
             S.post_plurk(pk)
-        fields = dict(__import__("urllib.parse").parse.parse_qsl(fake.find("plurkAdd")[0]["data"].decode()))
-        self.assertIn("https://apps.apple.com/app/id6798814385?action=write-review", fields["content"])
+        fields = dict(urllib.parse.parse_qsl(fake.find("plurkAdd")[0]["data"].decode()))
+        self.assertIn("6798814385", DL.store_ids_in(fields["content"]))
+        self.assertIn("com.alice51849.OnePagePPT", DL.play_packages_in(fields["content"]))
         self.assertLessEqual(len(fields["content"]), 360)
+        # An app that is not on Android has room for the rating link as well (the original intent of this check).
+        fake = Fake([("POST", "/Timeline/plurkAdd", {"plurk_id": 1295})])
+        with mock.patch.dict(os.environ, {k: "v" for k in S.SECRETS["plurk"]}, clear=True), \
+                mock.patch.object(S, "http", fake), mock.patch.object(S, "play_store_url", return_value=None):
+            S.post_plurk(dict(pk, play=None))
+        fields = dict(urllib.parse.parse_qsl(fake.find("plurkAdd")[0]["data"].decode()))
+        self.assertIn("https://apps.apple.com/app/id6798814385?action=write-review", fields["content"])
+        self.assertIn("6798814385", DL.store_ids_in(fields["content"]))
+        self.assertLessEqual(len(fields["content"]), 360)
+
+
+# ------------------------------------------------------------------ the download link in every post
+# Owner rule (2026-10-17): every promo text carries the app's direct App Store link, plus Google Play when the
+# app is on Android. Each test checks the payload the platform really receives (http mocked).
+
+MOCHI_ID, MOCHI_PKG = "6785004775", "com.alice51849.MochiTodo"  # Mochi is on Android (android_live_snapshot.json)
+MOCHI_STORE = f"https://apps.apple.com/us/app/id{MOCHI_ID}?pt=118326163&ct=h7_mochi_en&mt=8"
+RATING_ONLY = f"https://apps.apple.com/app/id{MOCHI_ID}?action=write-review"
+
+
+def mochi_item(channel, locale="en", **over):
+    """An Android app's clip item (Mochi): has an App Store and a Google Play link."""
+    return dict(S.clip_item(f"mochi/{locale}", dict(clip("mochi", locale), store_url=MOCHI_STORE), channel, DAY), **over)
+
+
+def mochi_card(locale="en", **over):
+    """An Android app's image card (Mochi)."""
+    store = f"https://apps.apple.com/us/app/id{MOCHI_ID}?pt=118326163&ct=ut_mochi_tb&mt=8"
+    return {**item("card", locale), "store": store, "play": S.play_store_url(MOCHI_ID, "ut_mochi_tb"), "name": "Mochi", **over}
+
+
+def ios_item(channel, locale="en", **over):
+    """An iOS-only app's clip item (fixture app id1): an App Store link and no Google Play."""
+    return dict(S.clip_item(f"a/{locale}", clip("a", locale), channel, DAY), **over)
+
+
+class LinkAsserts:
+    def assertAndroidLinks(self, text, store_id=MOCHI_ID, pkg=MOCHI_PKG):
+        self.assertIn(store_id, DL.store_ids_in(text), f"no App Store link in {text!r}")
+        self.assertIn(pkg, DL.play_packages_in(text), f"no Google Play link in {text!r}")
+
+    def assertIosLinks(self, text, store_id="1"):
+        self.assertIn(store_id, DL.store_ids_in(text))
+        self.assertEqual(DL.play_packages_in(text), set())
+
+
+def sent_form(fake, part):
+    return dict(urllib.parse.parse_qsl(fake.find(part)[0]["data"].decode()))
+
+
+class SentPayloadLinksTest(LinkAsserts, unittest.TestCase):
+    """The payload each poster really sends carries the download links (Android app: both)."""
+
+    def test_facebook_first_comment_carries_both_links_and_so_does_the_link_post(self):
+        def run(comment_answer):
+            fake = Fake([("POST", "rupload.facebook.com", {"success": True}),
+                         ("POST", "/123/video_reels", lambda u, d, h: {"video_id": "v1"} if b"start" in d else {"success": True}),
+                         ("POST", "/v1/comments", comment_answer), ("POST", "/123/feed", {"id": "f1"})])
+            with mock.patch.dict(os.environ, {"FB_PAGE_ID": "123", "FB_PAGE_TOKEN": "pt"}, clear=True), \
+                    mock.patch.object(S, "http", fake), mock.patch("sys.stdout", new_callable=io.StringIO):
+                S.post_facebook(mochi_item("facebook"))
+            return fake
+        fake = run({"id": "c1"})
+        self.assertAndroidLinks(sent_form(fake, "/v1/comments")["message"])
+        finish = [c for c in fake.calls if c["data"] and b"video_state=PUBLISHED" in c["data"]]
+        self.assertAndroidLinks(urllib.parse.parse_qs(finish[0]["data"].decode())["description"][0])  # the Reel's own text too
+        self.assertEqual(fake.find("/123/feed"), [])
+        fake = run(RuntimeError("HTTP 400 comments closed"))  # commenting refused: the link post has both links too
+        feed = sent_form(fake, "/123/feed")
+        self.assertAndroidLinks(feed["message"])
+        self.assertIn(MOCHI_ID, DL.store_ids_in(feed["link"]))
+        fake = Fake([("POST", "rupload.facebook.com", {"success": True}),
+                     ("POST", "/123/video_reels", lambda u, d, h: {"video_id": "v1"} if b"start" in d else {"success": True}),
+                     ("POST", "/v1/comments", {"id": "c1"})])
+        with mock.patch.dict(os.environ, {"FB_PAGE_ID": "123", "FB_PAGE_TOKEN": "pt"}, clear=True), mock.patch.object(S, "http", fake):
+            S.post_facebook(ios_item("facebook"))
+        self.assertIosLinks(sent_form(fake, "/v1/comments")["message"])
+
+    def test_bluesky_link_facets_point_at_both_stores_within_300_characters(self):
+        session = ("POST", "createSession", {"accessJwt": "jwt", "did": "did:plc:me", "handle": "h.bsky.social"})
+        for caption in (None, "寫到一半的待辦清單 " * 40):  # a caption far over 300 characters keeps its links
+            fake = Fake([session, ("GET", "getServiceAuth", RuntimeError("HTTP 403 no video quota")),
+                         ("POST", "createRecord", {"uri": "at://did:plc:me/app.bsky.feed.post/3x"})])
+            it = mochi_item("bluesky") if caption is None else mochi_item("bluesky", caption=caption)
+            with mock.patch.dict(os.environ, {"BSKY_HANDLE": "h", "BSKY_APP_PASSWORD": "p"}, clear=True), \
+                    mock.patch.object(S, "http", fake), mock.patch.object(S, "fetch_bytes", return_value=b"mp4"), \
+                    mock.patch("sys.stdout", new_callable=io.StringIO):
+                S.post_bluesky(it)
+            record = json.loads(fake.find("createRecord")[0]["data"])["record"]
+            uris = "\n".join(f["features"][0]["uri"] for f in record["facets"] if f["features"][0]["$type"].endswith("#link"))
+            self.assertAndroidLinks(uris)
+            self.assertLessEqual(len(record["text"]), 300)
+            raw = record["text"].encode()
+            for f in record["facets"]:
+                if f["features"][0]["$type"].endswith("#link"):
+                    self.assertIn(raw[f["index"]["byteStart"]:f["index"]["byteEnd"]].decode(), ("App Store", "Google Play"))
+
+    def test_youtube_description_carries_both_links(self):
+        fake = Fake([("POST", "oauth2.googleapis.com/token", {"access_token": "at"}),
+                     ("POST", "upload/youtube/v3/videos", (200, {"location": "https://upload.example/s1"}, b"")),
+                     ("PUT", "upload.example/s1", {"id": "yt1"})])
+        env = {"YT_CLIENT_ID": "c", "YT_CLIENT_SECRET": "s", "YT_REFRESH_TOKEN": "r"}
+        with mock.patch.dict(os.environ, env, clear=True), mock.patch.object(S, "http", fake), \
+                mock.patch.object(S, "fetch_bytes", return_value=b"mp4"), mock.patch("sys.stdout", new_callable=io.StringIO):
+            S.post_youtube(mochi_item("youtube"), {"clips": {}})
+        body = json.loads(fake.find("uploadType=resumable")[0]["data"])
+        self.assertAndroidLinks(body["snippet"]["description"])
+
+    def test_pinterest_description_holds_google_play_and_the_link_field_the_app_store(self):
+        for caption, kind in (("Plan your day", "clip"), ("Plan your day\n" * 200, "clip"), ("Plan your day", "card")):
+            fake = Fake([("GET", "/boards", {"items": [{"id": "b1", "name": "Lumi Apps"}]}),
+                         ("POST", "/v5/media", {"media_id": "m1", "upload_url": "https://s3.example/up", "upload_parameters": {}}),
+                         ("POST", "s3.example", {}), ("GET", "/media/m1", {"status": "succeeded"}), ("POST", "/pins", {"id": "p1"})])
+            it = mochi_item("pinterest", caption=caption) if kind == "clip" else mochi_card(caption=caption)
+            with mock.patch.dict(os.environ, {"PINTEREST_TOKEN": "t"}, clear=True), mock.patch.object(S, "http", fake), \
+                    mock.patch.object(S, "fetch_bytes", return_value=b"mp4"):
+                S.post_pinterest(it)
+            pin = json.loads(fake.find("/pins")[0]["data"])
+            self.assertAndroidLinks(pin["description"])
+            self.assertLessEqual(len(pin["description"]), 800)
+            self.assertEqual(pin["link"], it["store"])  # the link field holds one URL: the App Store page
+            self.assertEqual(len(DL.store_ids_in(pin["link"])) + len(DL.play_packages_in(pin["link"])), 1)
+
+    def test_pinterest_without_android_has_the_app_store_link_only(self):
+        fake = Fake([("GET", "/boards", {"items": [{"id": "b1", "name": "Lumi Apps"}]}), ("POST", "/pins", {"id": "p1"})])
+        with mock.patch.dict(os.environ, {"PINTEREST_TOKEN": "t"}, clear=True), mock.patch.object(S, "http", fake):
+            S.post_pinterest(item("card"))
+        self.assertIosLinks(json.loads(fake.find("/pins")[0]["data"])["description"], "6807079789")
+
+    def test_item_without_a_play_link_gets_it_from_the_android_snapshot(self):
+        fake = Fake([("GET", "/boards", {"items": [{"id": "b1", "name": "Lumi Apps"}]}), ("POST", "/pins", {"id": "p1"})])
+        with mock.patch.dict(os.environ, {"PINTEREST_TOKEN": "t"}, clear=True), mock.patch.object(S, "http", fake):
+            S.post_pinterest(mochi_card(play=None))
+        self.assertAndroidLinks(json.loads(fake.find("/pins")[0]["data"])["description"])
+
+    def test_an_unreadable_android_snapshot_refuses_the_item_instead_of_dropping_its_play_link(self):
+        import social_post_common as common
+        card = mochi_card(play=None)
+        with mock.patch.object(common, "android_apps", return_value={}):
+            with self.assertRaises(DL.MissingDownloadLink):
+                S.play_of(card)
+            with self.assertRaises(DL.MissingDownloadLink):
+                S.link_lines(card)
+            problems = S.qa_problems(card, "bluesky")   # a refusal of this item, not a crash of the whole run
+            self.assertTrue(problems and "Google Play" in problems[0], problems)
+        self.assertIn(MOCHI_PKG, DL.play_packages_in(S.play_of(card)))   # the snapshot is back: fine again
+
+    def test_an_android_app_whose_play_link_cannot_be_built_is_refused_not_sent_iphone_only(self):
+        bad = mochi_card(play=None)
+        bad["store"] = MOCHI_STORE.replace("ct=h7_mochi_en", "ct=bad%20token")
+        with self.assertRaises(DL.MissingDownloadLink):
+            S.play_of(bad)
+        self.assertTrue(S.qa_problems(bad, "bluesky"))
+        self.assertIsNone(S.play_of(item("card")))   # an app that is not on Android still has no Play link
+
+    def test_tumblr_link_block_is_the_app_store_and_the_google_play_text_links_it(self):
+        for it in (mochi_item("tumblr"), mochi_card()):
+            fake = Fake([("POST", "/blog/lumiapps.tumblr.com/posts", {"response": {"id": 77, "id_string": "77"}})])
+            env = {k: "v" for k in S.SECRETS["tumblr"]}
+            env["TUMBLR_BLOG"] = "lumiapps"
+            with mock.patch.dict(os.environ, env, clear=True), mock.patch.object(S, "http", fake), \
+                    mock.patch.object(S, "fetch_bytes", return_value=b"bytes"):
+                S.post_tumblr(it)
+            data = fake.calls[0]["data"]
+            payload = json.loads(data.split(b"application/json\r\n\r\n")[1].split(b"\r\n--")[0])
+            link = next(b for b in payload["content"] if b["type"] == "link")
+            self.assertIn(MOCHI_ID, DL.store_ids_in(link["url"]))
+            play = payload["content"][-1]
+            self.assertEqual(play["text"], "Google Play")
+            self.assertIn(MOCHI_PKG, DL.play_packages_in(play["formatting"][0]["url"]))
+            self.assertAndroidLinks(S.npf_text(payload["content"]))
+
+    def test_naver_html_has_both_download_anchors(self):
+        seen = []
+
+        def rpc(url, data, headers):
+            params, method = xmlrpc.client.loads(data)
+            seen.append((method, params))
+            return (200, {}, xmlrpc.client.dumps(("2234",), methodresponse=True).encode())
+        with mock.patch.dict(os.environ, {"NAVER_ID": "lumi", "NAVER_BLOG_API_PASSWORD": "pw"}, clear=True), \
+                mock.patch.object(S, "http", Fake([("POST", "api.blog.naver.com/xmlrpc", rpc)])):
+            S.post_naver(mochi_item("naver", "ko"))
+        self.assertAndroidLinks(seen[0][1][3]["description"])
+
+    def test_plurk_keeps_both_links_whatever_the_caption_length(self):
+        for caption in ("倒數" * 300, "短短的一句話", "倒數\n" * 40 + "#標籤一 #標籤二 #標籤三"):
+            fake = Fake([("POST", "/Timeline/plurkAdd", {"plurk_id": 1295})])
+            it = mochi_item("plurk", "zh-Hant", caption=caption)
+            with mock.patch.dict(os.environ, {k: "v" for k in S.SECRETS["plurk"]}, clear=True), mock.patch.object(S, "http", fake):
+                S.post_plurk(it)
+            content = sent_form(fake, "plurkAdd")["content"]
+            self.assertAndroidLinks(content)
+            self.assertLessEqual(len(content), 360)
+            self.assertIn(it["video"], content)
+
+    def test_plurk_card_content_after_the_picture_upload_keeps_both_links(self):
+        fake = Fake([("POST", "/Timeline/uploadPicture", {"full": "https://images.plurk.com/x.jpg"}),
+                     ("POST", "/Timeline/plurkAdd", {"plurk_id": 1295})])
+        with mock.patch.dict(os.environ, {k: "v" for k in S.SECRETS["plurk"]}, clear=True), mock.patch.object(S, "http", fake), \
+                mock.patch.object(S, "fetch_bytes", return_value=b"jpg"):
+            S.post_plurk(mochi_card(caption="倒數" * 300, locale="zh-Hant"))
+        content = sent_form(fake, "plurkAdd")["content"]
+        self.assertAndroidLinks(content)
+        self.assertLessEqual(len(content), 360)
+        self.assertIn("https://images.plurk.com/x.jpg", content)
+
+    def test_dailymotion_description_carries_both_links_even_for_a_huge_caption(self):
+        for caption in (None, "x " * 3000):
+            fake = Fake([("POST", "/oauth/token", {"access_token": "dm"}), ("POST", "/me/videos", {"id": "x9"})])
+            it = mochi_item("dailymotion") if caption is None else mochi_item("dailymotion", caption=caption)
+            with mock.patch.dict(os.environ, {k: "v" for k in S.SECRETS["dailymotion"]}, clear=True), mock.patch.object(S, "http", fake):
+                S.post_dailymotion(it)
+            desc = sent_form(fake, "/me/videos")["description"]
+            self.assertAndroidLinks(desc)
+            self.assertLessEqual(len(desc), 3000)
+
+    def test_mastodon_text_for_the_feed_consumer_counts_links_the_mastodon_way(self):
+        for caption in (None, "Plan your day\nTap to check it off\n" * 40 + "#Todo #List"):
+            it = mochi_item("mastodon") if caption is None else mochi_item("mastodon", caption=caption)
+            text = S.final_text(it, "mastodon")
+            self.assertAndroidLinks(text)
+            self.assertLessEqual(S.fedi_len(text), 500)
+            self.assertEqual(S.qa_problems(it, "mastodon", online=False), [])
+
+
+class FinalTextTest(LinkAsserts, unittest.TestCase):
+    """final_text() is the whole text a platform receives; the QA gate checks exactly that."""
+
+    def test_every_platform_final_text_carries_the_links_and_passes_qa(self):
+        for channel in S.RENDER:
+            loc = {"naver": "ko", "plurk": "zh-Hant"}.get(channel, "en")  # the locale each platform takes
+            with self.subTest(channel=channel, app="mochi"):
+                it = mochi_item(channel, loc)
+                self.assertAndroidLinks(S.final_text(it, channel))
+                self.assertEqual(S.qa_problems(it, channel, online=False), [])
+            with self.subTest(channel=channel, app="ios only"):
+                it = ios_item(channel, loc)
+                self.assertIosLinks(S.final_text(it, channel))
+                self.assertEqual(S.qa_problems(it, channel, online=False), [])
+
+    def test_final_text_starts_with_the_caption_and_includes_the_link_fields(self):
+        fb = S.final_text(mochi_item("facebook"), "facebook")  # description + first comment
+        self.assertTrue(fb.startswith(mochi_item("facebook")["caption"]))
+        self.assertIn("Google Play: https://play.google.com", fb)
+        tb = S.final_text(mochi_item("tumblr"), "tumblr")  # the link block and the linked "Google Play" text
+        self.assertTrue(tb.startswith(mochi_item("tumblr")["caption"]))
+        self.assertIn("https://play.google.com", tb)
+        bs = S.final_text(mochi_item("bluesky"), "bluesky")  # the link facets' URIs
+        self.assertIn("https://apps.apple.com", bs.split("\n")[-2])
+        pin = S.final_text(mochi_item("pinterest"), "pinterest")  # description + the pin's link field
+        self.assertTrue(pin.endswith(mochi_item("pinterest")["store"]))
+
+    def test_the_rating_link_is_no_download_link(self):
+        review = S.clip_item("claudeusagemini/ko", pair_clip(), "dailymotion", DAY)  # a rating-link pair, not on Android
+        self.assertTrue(review["review"])
+        rating_only = f"{review['caption']}\n{REVIEW_URL}"  # the same app id, but only the rating link
+        self.assertFalse(DL.has_app_store_link(rating_only, review["store"]))  # the shared check ignores a rating link too
+        self.assertTrue(any("App Store" in p for p in S.link_problems(rating_only, review, "x")))
+        text = S.final_text(review, "dailymotion")
+        self.assertEqual(S.link_problems(text, review, "x"), [])
+        self.assertIn("write-review", text)  # the rating link follows the download links
+        self.assertLess(text.index("apps.apple.com/us/"), text.index("write-review"))
+
+    def test_the_gate_refuses_a_text_with_no_usable_link(self):
+        for channel in S.RENDER:
+            for store in ("", "https://example.com/app", RATING_ONLY):
+                with self.subTest(channel=channel, store=store):
+                    loc = {"naver": "ko", "plurk": "zh-Hant"}.get(channel, "en")
+                    problems = S.qa_problems(mochi_item(channel, loc, store=store), channel, online=False)
+                    self.assertTrue(problems, "a post without its download link must not pass QA")
+                    self.assertTrue(any("App Store" in p for p in problems))
+
+
+class MissingLinkRefusedTest(unittest.TestCase):
+    """An app with no usable App Store link is refused at the send call: ::error::, no http, no download."""
+
+    POSTERS = {"facebook": "post_facebook", "bluesky": "post_bluesky", "youtube": "post_youtube", "pinterest": "post_pinterest",
+               "tumblr": "post_tumblr", "naver": "post_naver", "plurk": "post_plurk", "dailymotion": "post_dailymotion"}
+
+    CARD_CHANNELS = ("bluesky", "pinterest", "tumblr", "naver", "plurk")  # the platforms that take cards (PLAN)
+
+    def test_every_poster_refuses_before_any_request(self):
+        for channel, name in self.POSTERS.items():
+            loc = {"naver": "ko", "plurk": "zh-Hant"}.get(channel, "en")
+            items = {"clip": mochi_item(channel, loc)}
+            if channel in self.CARD_CHANNELS:
+                items["card"] = mochi_card(loc)
+            for kind, base in items.items():
+                for store in ("", "https://example.com/app", RATING_ONLY):
+                    with self.subTest(channel=channel, kind=kind, store=store):
+                        it = dict(base, store=store)
+                        fake = Fake([])
+                        fetch = mock.Mock(return_value=b"bytes")
+                        with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.object(S, "http", fake), \
+                                mock.patch.object(S, "fetch_bytes", fetch), mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+                            res = getattr(S, name)(it, {"clips": {}}) if channel == "youtube" else getattr(S, name)(it)
+                        self.assertIsNone(res)
+                        self.assertEqual(fake.calls, [], "nothing may be sent")
+                        fetch.assert_not_called()
+                        self.assertIn("::error::", out.getvalue())
+                        self.assertIn("download link", out.getvalue())
+
+    def test_run_refuses_the_item_and_never_calls_the_poster(self):
+        broken = {"clips": {"a/en": dict(clip("a", "en"), store_url="")},
+                  "schedule": [{"date": "2026-10-15", "slot": 1, "channel": "instagram", "clip": "a/en"}]}
+        posted = mock.Mock(return_value={"id": "9", "link": "l"})
+        with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.dict(S.POSTERS, {"dailymotion": posted}), \
+                mock.patch.object(S, "load_posts", return_value=[]), mock.patch.object(P, "record_post") as rec, \
+                mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            S.run(("dailymotion",), DAY, 1, data=broken)
+        posted.assert_not_called()
+        rec.assert_not_called()
+        self.assertIn("QA refused", out.getvalue())
+
+    def test_run_sends_what_the_gate_approved(self):
+        posted = mock.Mock(return_value={"id": "9", "link": "l"})
+        with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.dict(S.POSTERS, {"dailymotion": posted}), \
+                mock.patch.object(S, "load_posts", return_value=[]), mock.patch.object(P, "record_post"), \
+                mock.patch("sys.stdout", new_callable=io.StringIO):
+            S.run(("dailymotion",), DAY, 1, data=DATA)
+        posted.assert_called_once()
+
+    def test_dry_run_shows_the_text_with_its_links(self):
+        with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.object(S, "http") as h, \
+                mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            S.run(("dailymotion",), DAY, 1, dry_run=True, data=DATA)
+        h.assert_not_called()
+        self.assertIn("Get it on the App Store: https://apps.apple.com/us/app/id1", out.getvalue())
+
+    def test_youtube_localization_without_a_link_is_left_out_but_the_post_goes(self):
+        data = {"clips": {"a/en": clip("a", "en"), "a/ko": clip("a", "ko")}}
+        data["clips"]["a/ko"]["store_url"] = "https://example.com/not-a-store"
+        it = S.clip_item("a/en", data["clips"]["a/en"], "youtube")
+        with mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            body = S.yt_body(it, data)
+        self.assertNotIn("localizations", body)
+        self.assertIn("download link guard refused", out.getvalue())
+        self.assertIn("apps.apple.com", body["snippet"]["description"])
+
+
+class FeedLinksTest(LinkAsserts, unittest.TestCase):
+    """export(): the feed is not emptied by the link gate, and every item has store, play and button."""
+
+    def feed(self, data=None):
+        data = data or {"clips": DATA["clips"], "schedule": DATA["schedule"]}
+        with mock.patch.object(S, "exists", return_value=True), mock.patch("sys.stdout", new_callable=io.StringIO):
+            return S.export(DAY, check=False, data=data, perf={})
+
+    def test_feed_keeps_its_items_and_each_has_store_play_and_button(self):
+        feed = self.feed()
+        for ch in S.EXPORT_CHANNELS:
+            self.assertTrue(feed["items"][ch], f"{ch} feed must not be emptied by the link gate")
+            for it in feed["items"][ch] + (feed["pool"].get(ch) or []):
+                with self.subTest(channel=ch, key=it["key"]):
+                    self.assertTrue(DL.app_store_id(it["store"]))
+                    self.assertIn("play", it)
+                    self.assertTrue(it["button"])
+                    self.assertIn("caption", it)  # the existing fields stay
+        self.assertEqual([i["key"] for i in feed["items"]["bluesky"] if i["kind"] == "clip"], ["a/en", "a/zh-Hant", "b/en"])
+
+    def test_android_apps_in_the_feed_carry_their_google_play_link(self):
+        data = {"clips": {"mochi/en": dict(clip("mochi", "en"), store_url=MOCHI_STORE),
+                          "a/en": clip("a", "en")},
+                "schedule": [{"date": DAY.isoformat(), "slot": 1, "channel": "instagram", "clip": "mochi/en"},
+                             {"date": DAY.isoformat(), "slot": 15, "channel": "instagram", "clip": "a/en"}]}
+        feed = self.feed(data)
+        for ch in S.EXPORT_CHANNELS:
+            by_key = {i["key"]: i for i in feed["items"][ch]}
+            self.assertIn(MOCHI_PKG, DL.play_packages_in(by_key["mochi/en"]["play"]))
+            self.assertIsNone(by_key["a/en"]["play"])
+            self.assertIn(MOCHI_ID, DL.store_ids_in(by_key["mochi/en"]["store"]))
+            self.assertTrue(by_key["mochi/en"]["button"])
+
+    def test_cards_in_the_feed_have_the_three_fields_too(self):
+        with mock.patch.object(S, "exists", return_value=True), mock.patch("sys.stdout", new_callable=io.StringIO):
+            feed = S.export(dt.date(2026, 11, 1), check=False, data={"clips": {}, "schedule": []}, perf={})
+        cards = [i for i in feed["items"]["bluesky"] if i["kind"] == "card"]
+        self.assertTrue(cards)
+        for c in cards:
+            self.assertTrue(c["store"] and c["button"])
+            self.assertIn("play", c)
+
+    def test_a_clip_without_a_store_link_is_dropped_alone(self):
+        bad = dict(DATA["clips"]["b/en"], store_url="https://example.com/not-a-store")
+        data = {"clips": dict(DATA["clips"], **{"b/en": bad}), "schedule": DATA["schedule"]}
+        with mock.patch.object(S, "exists", return_value=True), mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            feed = S.export(DAY, check=False, data=data, perf={})
+        for ch in S.EXPORT_CHANNELS:
+            keys = [i["key"] for i in feed["items"][ch]]
+            self.assertNotIn("b/en", keys)
+            self.assertIn("a/en", keys)
+        self.assertNotIn("b/en", [i["key"] for i in feed["pool"]["bluesky"]])
+        self.assertIn("a/en", [i["key"] for i in feed["pool"]["youtube"]])
+        self.assertIn("download link", out.getvalue())
+        json.dumps(feed)
 
 
 if __name__ == "__main__":

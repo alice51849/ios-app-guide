@@ -8,6 +8,9 @@ social_extra.py) calls this right before it posts. A post is refused when:
   no video or store URL, or template leftovers ("{s}", "*accent*", "None");
 - the caption is too long for the platform, or carries more hashtags than the
   platform takes;
+- the direct download link is missing (download_links.py): the caption must hold the app's App Store
+  URL (and its Google Play URL when the app is on Android) - Threads is exempt, its links go in the
+  first reply, which clip_posts.py / threads_series.py check themselves;
 - the text is in the wrong language: a ja caption without kana, a zh-Hant
   caption with Simplified-only characters or kana / Hangul, an English template
   line ("Search ... on the App Store", "Link in bio") in another locale;
@@ -32,6 +35,8 @@ import urllib.parse
 import urllib.request
 from functools import lru_cache
 from pathlib import Path
+
+import download_links as DL
 
 HERE = Path(__file__).resolve().parent
 CLIPS = HERE.parent / "growth" / "clips.json"
@@ -339,6 +344,25 @@ def product_facts(store_url, extra=()):
 
 # ------------------------------------------------------------------ the gates
 
+# Channels whose main text is not required to hold the link: Threads keeps links in the first reply
+# (the old account was limited for linked posts); the poster checks that reply itself.
+LINK_EXEMPT = {"threads"}
+
+
+def download_link_problems(text, store_url, channel, play_url=None):
+    """The post must carry the app's direct download link (App Store, and Google Play when it is on Android)."""
+    if channel in LINK_EXEMPT:
+        return []
+    if play_url is None:
+        from social_post_common import android_apps, play_store_url
+        if not android_apps():  # an unreadable snapshot would silently drop every Google Play link
+            return [f"{channel} text: the Android snapshot (_engine/geo/data/android_live_snapshot.json) is missing or "
+                    "empty, so the Google Play links cannot be checked"]
+        app_id = DL.app_store_id(store_url)
+        play_url = play_store_url(app_id, "qa") if app_id else None
+    return DL.link_problems(text, store_url, play_url, label=f"{channel} text")
+
+
 def clip_problems(clip, channel, text, online=True, length=True):
     """Everything that should stop one hook clip post on one channel."""
     out = []
@@ -352,6 +376,7 @@ def clip_problems(clip, channel, text, online=True, length=True):
     facts, price = product_facts(clip.get("store_url", ""), store_text) if online else ("\n".join(store_text), None)
     allowed = (clip.get("name", ""), clip.get("search", ""))
     out += text_problems(text, clip.get("locale", ""), channel, allowed=allowed, facts=facts, price=price, length=length)
+    out += download_link_problems(text, clip.get("store_url", ""), channel)
     if online:
         live = facts != "\n".join(p for p in store_text if p)
         if live:  # counts are only checked against a live description
@@ -361,7 +386,8 @@ def clip_problems(clip, channel, text, online=True, length=True):
     return out
 
 
-def card_problems(text, locale, channel, *, store_url, name, image=None, extra_facts=(), online=True, length=True):
+def card_problems(text, locale, channel, *, store_url, name, image=None, extra_facts=(), online=True, length=True,
+                  require_link=True):
     """Everything that should stop one image card post."""
     out = []
     if image is not None:
@@ -370,6 +396,8 @@ def card_problems(text, locale, channel, *, store_url, name, image=None, extra_f
             out.append(f"card image missing or empty: {image}")
     facts, price = product_facts(store_url, (name, *extra_facts)) if online else ("\n".join((name, *extra_facts)), None)
     out += text_problems(text, locale, channel, allowed=(name,), facts=facts, price=price, length=length)
+    if require_link:
+        out += download_link_problems(text, store_url, channel)
     if online:
         out += link_problems(store_url)
     return out
@@ -392,7 +420,13 @@ def audit(online=False, path=CLIPS):
     for key, clip in sorted(data.get("clips", {}).items()):
         for channel in ("telegram", "instagram", "threads"):
             for v in SC.variants(clip):
-                problems = clip_problems(clip, channel, clip_posts.caption(clip, channel, v), online=online)
+                try:
+                    text = clip_posts.caption(clip, channel, v)
+                except (KeyError, ValueError) as exc:
+                    gate([f"caption cannot be built: {exc}"], f"{key} {channel} hook {v.get('id')}")
+                    bad += 1
+                    continue
+                problems = clip_problems(clip, channel, text, online=online)
                 if problems:
                     bad += 1
                     gate(problems, f"{key} {channel} hook {v.get('id')}")

@@ -37,6 +37,8 @@ import re
 import sys
 import tempfile
 import time
+import urllib.error
+import urllib.request
 from pathlib import Path
 
 import clip_posts as CP
@@ -214,9 +216,12 @@ class AppFinder:
     # Each _by_* answers None (no evidence), False (evidence for more than one app) or the app's iOS id.
 
     def _by_url(self, text):
-        known = {i for i in DL.store_ids_in(text) if i in self.by_id}
-        if not known:
+        ids = DL.store_ids_in(text)
+        if not ids:
             return None
+        known = {i for i in ids if i in self.by_id}
+        if len(known) != len(ids):   # it links an App Store page that is not one of ours: the text is about something else
+            return False
         return next(iter(known)) if len(known) == 1 else False
 
     def _hits(self, text):
@@ -307,6 +312,49 @@ def is_throttle(exc):
     return volume_ramp.is_throttle_error(exc)
 
 
+CHECK_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) "
+            "Version/17.0 Safari/605.1.15")
+_URL_SEEN = {}
+
+
+def url_ok(url, opener=None, timeout=20, seen=None):
+    """(True, note) when a GET of `url` (redirects followed) answers HTTP 200, else (False, why). A store page
+    that the store refuses to a script (403 / 429 / 5xx) is accepted when the iTunes lookup knows its app id;
+    a 404 is never accepted, and trouble reaching the page is "not known to be fine", never a pass. The answer
+    is kept for the run: a link is looked at once."""
+    seen = _URL_SEEN if seen is None else seen
+    if url in seen:
+        return seen[url]
+    opener = opener or urllib.request.urlopen
+    status, note = None, ""
+    try:
+        request = urllib.request.Request(url, headers={"User-Agent": CHECK_UA, "Accept": "text/html,*/*"})
+        with opener(request, timeout=timeout) as response:
+            status = getattr(response, "status", None) or response.getcode()
+    except urllib.error.HTTPError as exc:
+        status = exc.code
+        exc.close()
+    except Exception as exc:   # network trouble: the class only (a URL can carry a token)
+        note = exc.__class__.__name__
+    if status == 200:
+        out = (True, "HTTP 200")
+    else:
+        out = (False, f"HTTP {status}" if status else (note or "no answer"))
+        found = re.search(r"apps\.apple\.com/(?:[^?#]*/)?id(\d+)", url)
+        if found and status not in (404, 410):
+            try:
+                with opener(f"https://itunes.apple.com/lookup?id={found.group(1)}&country=us", timeout=timeout) as response:
+                    if json.loads(response.read()).get("resultCount", 0) >= 1:
+                        out = (True, f"{out[1]}, the app id is in the iTunes lookup")
+            except Exception:   # noqa: BLE001 - the lookup is only a second opinion
+                pass
+    seen[url] = out
+    return out
+
+
+URL_CHECK = url_ok   # the tests replace it: nothing here may reach the network there
+
+
 def write_link(client, media_id, text):
     if client.channel == "instagram":
         return client._post(f"{media_id}/comments", message=text).get("id")
@@ -320,24 +368,19 @@ def has_link_now(client, media, store, play):
     return DL.has_download_link(text, store, play), text
 
 
-def fetch_comment(client, comment_id):
-    """The comment / reply we wrote, fetched by its own id: the list edge of a post does not always show the
-    account's own comments, the object itself is the proof that it exists and what it says."""
-    fields = "id,text,username,timestamp,hidden" if client.channel == "instagram" else "id,text,username,timestamp"
-    return client._get(str(comment_id), fields=fields)
-
-
-def verified_by_id(client, comment_id, store, play):
-    """True when the comment we wrote is readable by its id, says the links and is not hidden."""
+def comment_exists(client, comment_id):
+    """True when the comment we wrote can be fetched by its own id. Instagram answers an empty object for the
+    account's own comment (its text is not shown to us) and error 100 for an id that does not exist. Together with
+    the post's count going up this rules out that somebody else's comment was taken for ours."""
     if not comment_id:
         return False
     try:
-        one = fetch_comment(client, comment_id)
-    except Exception as exc:
+        client._get(str(comment_id), fields="id")
+        return True
+    except OP.ApiError as exc:
         if is_throttle(exc):
             raise
         return False
-    return bool(one) and not one.get("hidden") and DL.has_download_link(one.get("text", ""), store, play)
 
 
 def comments_count(client, media_id):
@@ -446,6 +489,12 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
     if read_gap:
         sleeper(read_gap)
     seen = " ".join(c.get("text", "") for c in mine) + "\n" + text
+    foreign = DL.store_ids_in(seen) - {ios}
+    if foreign:   # the post or our own comment already links another app (even one that is not in the catalog)
+        row["status"] = "unknown_app"
+        row["why"] = f"{row.get('why', '')} | conflict: id{', id'.join(sorted(foreign))} already linked under the post"
+        state["checked"].setdefault(channel, {})[pid] = row["status"]
+        return row, None
     if DL.has_download_link(seen, store, play):
         if done:  # the comment we wrote is there: verified now
             done["verified"] = True
@@ -460,7 +509,8 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
         return row, None
     if done:  # written earlier but the list does not show it: the post's comment count is the proof, never write a second one
         count = comments_count(client, media["id"])
-        if count is not None and count >= int(done.get("count_before") or 0) + 1:
+        if (count is not None and count >= int(done.get("count_before") or 0) + 1
+                and comment_exists(client, done.get("comment_id"))):
             done["verified"] = True
             row["status"] = "ok_backfilled_earlier"
             return row, None
@@ -468,7 +518,10 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
         return row, None
     if channel == "instagram":   # the list of an Instagram post hides the account's own comments, the count does not
         count = comments_count(client, media["id"])
-        if count is not None and count > len(listed):
+        if count is None:   # cannot tell whether a comment of ours is hidden from the list: never write on a guess
+            row["status"] = "read_failed:count"
+            return row, None
+        if count > len(listed):   # (replies under other people's comments count too: those posts wait, they are listed)
             row["status"] = "unlisted_comments"   # one of them may be a link we wrote earlier: never a second one
             return row, None
     row["status"] = "missing"
@@ -535,11 +588,28 @@ def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=ti
             row["status"] = "snapshot_missing"
             log(f"::error::{channel}: the Android snapshot is empty; nothing is written")
             break
+        needed = ([todo["store"]] if todo["missing_store"] else []) + \
+            ([todo["play"]] if todo["missing_play"] and todo["play"] else [])
+        dead = []
+        for link in needed:   # a link goes under a post only while its page answers HTTP 200
+            good, why = URL_CHECK(link)
+            if not good:
+                dead.append(f"{link.split('?')[0]} ({why})")
+        if dead:
+            row["status"] = "link_unreachable"
+            row["error"] = "; ".join(dead)[:200]
+            log(f"::warning::{channel}: nothing written under {row['id']}: {row['error']} does not answer HTTP 200 "
+                "now; the next sweep looks again")
+            continue
         attempts += 1
         text = comment_text(row.get("locale"), todo["store"], todo["play"] if todo["missing_play"] else None,
                             todo["missing_store"])
         try:
             before = comments_count(client, row["id"])   # the read-back of an Instagram comment is the count going up
+            if channel == "instagram" and before is None:   # without the count nothing can be read back: write nothing
+                row["status"] = "read_failed:count"
+                attempts -= 1
+                continue
             new_id = write_link(client, row["id"], text)
         except Exception as exc:
             row["status"] = f"write_failed:{getattr(exc, 'code', 'x')}"
@@ -563,7 +633,7 @@ def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=ti
                 via = "list" if verified else ""
                 if not verified and before is not None:
                     count = comments_count(client, row["id"])
-                    verified = count is not None and count >= before + 1
+                    verified = count is not None and count >= before + 1 and comment_exists(client, new_id)
                     via = "count" if verified else ""
                 if verified:
                     break
@@ -634,7 +704,16 @@ def merge_state(saved_path, path=STATE):
     saved, state = OP.load_json(saved_path, {}), load_state(path)
     for section in ("done", "checked", "failed"):
         for channel, rows in (saved.get(section) or {}).items():
-            state[section].setdefault(channel, {}).update(rows)
+            have = state[section].setdefault(channel, {})
+            for pid, entry in rows.items():
+                old = have.get(pid)
+                if old is None or section == "checked":
+                    have[pid] = entry
+                elif section == "failed":   # the higher failure count, then the later try, wins
+                    have[pid] = entry if (entry.get("n", 0), entry.get("at", "")) >= (old.get("n", 0), old.get("at", "")) else old
+                else:   # done: a verified receipt stays verified; otherwise the later write wins
+                    keep_new = (bool(entry.get("verified")), entry.get("at", "")) >= (bool(old.get("verified")), old.get("at", ""))
+                    have[pid] = entry if keep_new else old
     save_state(state, path)
 
 
@@ -701,7 +780,8 @@ def main(argv=None):
         Path(args.report).write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     save_state(state)   # receipts, plus the posts an audit found already linked (never read again)
     print(f"link_backfill {args.cmd}: {counts}")
-    todo = [r for r in rows if r["status"] in ("missing", "unknown_app", "not_checked", "unlisted_comments")
+    todo = [r for r in rows if r["status"] in ("missing", "unknown_app", "not_checked", "unlisted_comments",
+                                              "link_unreachable")
             or r["status"].startswith(("write_failed", "backfilled_unverified"))]
     for r in todo[:40]:
         print(f"  {r['channel']} {r['id']} {r.get('date', '')} {r.get('app', '')} {r['status']}")

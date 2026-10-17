@@ -210,6 +210,24 @@ def store_url(card, channel):
     return f"https://apps.apple.com/{STORE[card['locale']]}/app/id{APPS[card['app']]['id']}?{query}"
 
 
+CHANNEL_CT = {"instagram": "ig", "telegram": "tg", "threads": "th"}
+
+
+def download_urls(card, channel):
+    """(App Store URL, Google Play URL or None) for one channel."""
+    ch = CHANNEL_CT.get(channel, channel)
+    return store_url(card, ch), play_store_url(APPS[card["app"]]["id"], campaign(card, ch))
+
+
+def link_lines(card, channel):
+    """The "label: URL" lines that carry the direct download link(s) in the post text."""
+    store, play = download_urls(card, channel)
+    lines = [f"{TEXT[card['locale']]['button']}: {store}"]
+    if play:
+        lines.append(f"Google Play: {play}")
+    return lines
+
+
 def app_name(card):
     """The app's store name in the card's storefront (what people type into the search box)."""
     app = APPS[card["app"]]
@@ -517,7 +535,8 @@ def post_telegram(card_path, meta, card):
     play = play_store_url(app["id"], campaign(card, "tg"))
     if play:
         row.append({"text": "Google Play", "url": play})
-    result = cd.send_photo(card_path, meta["caption"], row, label="utility")
+    result = cd.send_photo(card_path, telegram_text(meta, card), row, label="utility",
+                           guard=download_urls(card, "telegram"))
     if not result or not result.get("ok"):
         return None
     message = result["result"]
@@ -530,19 +549,21 @@ def post_threads(url, meta, card, day):
         print(f"utility: Threads already has {threads_planned(day)} posts planned today (cap {THREADS_CAP}); skipped")
         return None
     import os
-    links = [f"App Store: {store_url(card, 'th')}"]
-    play = play_store_url(APPS[card["app"]]["id"], campaign(card, "th"))
-    if play:
-        links.append(f"Google Play: {play}")
-    media = cd.threads_image(url, meta["caption"], links, label="utility")
+    media = cd.threads_image(url, meta["caption"], link_lines(card, "threads"), label="utility")
     if not media:
         return None
     return _permalink("https://graph.threads.net/v1.0", media, os.environ.get("THREADS_TOKEN", "")) or ""
 
 
+def telegram_text(meta, card):
+    """The Telegram caption: the card text plus the clickable download link(s)."""
+    return meta["caption"] + "\n" + "\n".join(link_lines(card, "telegram"))
+
+
 def instagram_text(meta, card):
+    """The Instagram caption: the card text, the full download URL(s) (not tappable: the bio hint stays), tags."""
     import search_caption as SC
-    text = meta["caption"] + "\n" + TEXT[card["locale"]]["bio"]
+    text = meta["caption"] + "\n" + "\n".join(link_lines(card, "instagram")) + "\n" + TEXT[card["locale"]]["bio"]
     tags = SC.card_tags(card["app"], card["locale"])  # keyword hashtags from the planner's seo table
     if tags:
         text += "\n\n" + " ".join(tags)
@@ -552,7 +573,7 @@ def instagram_text(meta, card):
 def qa_problems(meta, card, channel, image=None, online=True):
     """Pre-post QA (post_qa.py): the exact text this channel gets, the image, the live store link."""
     import post_qa
-    text = instagram_text(meta, card) if channel == "instagram" else meta["caption"]
+    text = {"instagram": instagram_text, "telegram": telegram_text}.get(channel, lambda m, c: m["caption"])(meta, card)
     return post_qa.card_problems(text, card["locale"], channel, store_url=store_url(card, "qa"),
                                  name=app_name(card), image=image, online=online)
 
@@ -562,7 +583,7 @@ def post_instagram(url, meta, card):
     import search_caption as SC
     text = instagram_text(meta, card)
     alt = SC.card_alt(APPS[card["app"]]["name"], meta["caption"], card["app"], card["locale"])
-    media = cd.instagram_image(url, text, label="utility", alt=alt)
+    media = cd.instagram_image(url, text, label="utility", alt=alt, guard=download_urls(card, "instagram"))
     if not media:
         return None
     return _permalink("https://graph.instagram.com/v21.0", media, os.environ.get("IG_ACCESS_TOKEN", "")) or ""
@@ -600,6 +621,8 @@ def main():
         if link is not None:
             # The promotion page (office.cait518.cc) lists every post's link.
             clip_progress.record_post(name, meta["key"], link or None)
+    # A Threads post whose link reply failed is already out (the ::error:: is the alert). A red step would make the
+    # watchdog re-dispatch the whole slot and post the card to Telegram and Instagram twice; link_backfill.py adds it.
     return 0
 
 

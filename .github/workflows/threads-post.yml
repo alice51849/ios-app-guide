@@ -156,7 +156,7 @@ jobs:
           python3 .github/scripts/test_clip_posts.py -q
           python3 .github/scripts/clip_posts.py threads --slot 15 --date "$SLOT_DATE"
       - name: Record the post link on the promotion page
-        if: steps.room.outputs.ok == 'true' && (steps.slot.outputs.hour == '1' || steps.slot.outputs.hour == '13')
+        if: always() && steps.room.outputs.ok == 'true' && (steps.slot.outputs.hour == '1' || steps.slot.outputs.hour == '13')
         continue-on-error: true
         run: |
           if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi

@@ -132,7 +132,8 @@ class DrawTest(unittest.TestCase):
 
 class PostTest(unittest.TestCase):
     PLAN = {"key": "feed/mochi/en", "app": "mochi", "locale": "en", "slot": 19, "date": "2026-10-17", "variant": "a",
-            "cards": ["01.jpg", "02.jpg"], "caption": "hook\nLink in bio", "store_url": "https://apps.apple.com/us/app/id1",
+            "cards": ["01.jpg", "02.jpg"], "caption": "hook\nGet it on the App Store: https://apps.apple.com/us/app/id1?pt=118326163&ct=h7_mochi_ig&mt=8\nLink in bio",
+            "store_url": "https://apps.apple.com/us/app/id1",
             "name": "Mochi", "alt": "Mochi — hook"}
 
     def test_carousel_children_then_container_then_publish(self):
@@ -155,6 +156,23 @@ class PostTest(unittest.TestCase):
         with mock.patch.dict(os.environ, {}, clear=True):
             self.assertIsNone(S.post_instagram(self.PLAN, "u"))
 
+    def test_the_carousel_caption_always_carries_the_download_link(self):
+        bare = dict(self.PLAN, caption="hook\nLink in bio")   # a plan written before the link rule
+        calls = []
+
+        def fake_post(url, fields, timeout=60):
+            calls.append(fields)
+            return {"id": f"id{len(calls)}"}
+
+        gets = [{"user_id": "u"}, {"status_code": "FINISHED"}, {"permalink": "p"}]
+        with mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t"}), mock.patch.object(S.clip_posts, "_post", side_effect=fake_post), \
+                mock.patch.object(S.clip_posts, "_get", side_effect=gets), mock.patch.object(S.time, "sleep"):
+            S.post_instagram(bare, "https://raw.githubusercontent.com/o/r/feed-cards/d/")
+        caption = next(c["caption"] for c in calls if c.get("media_type") == "CAROUSEL")
+        self.assertIn("https://apps.apple.com/app/id1", caption.replace("/us/app/", "/app/"))
+        self.assertTrue(S.post_qa.card_problems(bare["caption"], "en", "instagram", store_url=bare["store_url"], name="Mochi", online=False))
+        self.assertEqual(S.post_qa.card_problems(self.PLAN["caption"], "en", "instagram", store_url=self.PLAN["store_url"], name="Mochi", online=False), [])
+
     def test_main_posts_records_and_throttles_on_a_slow_down_answer(self):
         with tempfile.TemporaryDirectory() as tmp:
             (Path(tmp) / "plan.json").write_text(json.dumps(self.PLAN))
@@ -168,7 +186,8 @@ class PostTest(unittest.TestCase):
                 with self.assertRaises(RuntimeError):
                     S.main(argv)
             self.assertEqual(handle.call_args[0][0], S.CHANNEL)
-            self.assertEqual(S.main(["post", "--dir", tmp]), 1)  # no base url
+            with mock.patch("sys.stdout"):   # the ::error:: line is the real thing's output, not this run's
+                self.assertEqual(S.main(["post", "--dir", tmp]), 1)  # no base url
 
     def test_committed_workflow_and_ramp_agree_on_the_slots(self):
         ramp = R.load()

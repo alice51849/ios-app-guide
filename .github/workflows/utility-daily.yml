@@ -75,7 +75,7 @@ jobs:
           sleep 20  # let raw.githubusercontent.com serve the new file
           python3 .github/scripts/utility_cards.py post --card "$RUNNER_TEMP/card.jpg" --url "${{ steps.card.outputs.url }}" ${ONLY:+--only "$ONLY"}
       - name: Record the post links on the promotion page
-        if: steps.slot.outputs.should_post == 'true'
+        if: always() && steps.slot.outputs.should_post == 'true'
         continue-on-error: true
         run: |
           if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi

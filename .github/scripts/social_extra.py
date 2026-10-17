@@ -18,6 +18,13 @@ puts the link on the promotion page (office.cait518.cc). Daily caps per
 platform live in PLAN. Every platform is secret-gated: without its secrets it
 logs "not configured" and moves on; one platform failing never fails the run.
 
+Every post carries the app's direct download link (owner rule 2026-10-17, download_links.py): the App
+Store link, plus Google Play when the app is on Android. render() builds, per platform, every piece that
+platform receives (text, link field / block / facet / first comment) and `final_text()` is the whole of it
+as one string: the QA gate (qa_problems, run, export) checks that string, and each post_<platform> sends
+the very same pieces after a last link check (outgoing()), so a post without its link is refused with a
+::error:: and never sent silently.
+
 Bluesky and Mastodon are posted by the threads-autopilot repo (media.yml),
 where those accounts' secrets live: it reads the day's items from the
 social-feed branch that `export` writes (feed.json). So this script skips
@@ -56,11 +63,13 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
 import clip_posts  # noqa: E402
+import download_links as DL  # noqa: E402
 import clip_progress  # noqa: E402
 import review_links  # noqa: E402
 import countdown_cards  # noqa: E402
 import post_qa  # noqa: E402
 import search_caption as SC  # noqa: E402
+from social_post_common import play_store_url  # noqa: E402
 
 UA = "lumi-social-extra/1.0"
 REPO = os.environ.get("GITHUB_REPOSITORY") or "alice51849/ios-app-guide"
@@ -344,24 +353,108 @@ def plan(channel, data, posts, day, slot, check=True):
     return items[:room]
 
 
-# Posters that trim the caption to the platform limit themselves (bsky_rich, post_plurk, the feed consumers).
-TRIMS = {"bluesky", "plurk", "mastodon", "pinterest"}
+GOOGLE_PLAY = "Google Play"
+URL_IN_TEXT = re.compile(r"https?://\S+")
+# Apple's rating link carries the app's id too, but it is not a download link: it never counts as one.
+REVIEW_LINK = re.compile(r"https?://[^\s\"'<>]*action=write-review[^\s\"'<>]*")
 
 
-def qa_problems(item, channel, online=True):
-    """Pre-post QA (post_qa.py) for one feed item on one platform."""
-    length = channel not in TRIMS
-    if item["kind"] == "clip":
-        return post_qa.clip_problems(item["clip"], channel, item["caption"], online=online, length=length)
-    return post_qa.card_problems(item["caption"], item["locale"], channel, store_url=item["store"],
-                                 name=item.get("name", ""), online=online, length=length)
+def fedi_len(text):
+    """Mastodon length: every link counts 23 characters, whatever its length."""
+    return len(URL_IN_TEXT.sub("x" * 23, text))
+
+
+def button_of(item):
+    """The App Store button label of the item's locale (the feed always carries one)."""
+    return item.get("button") or clip_posts.text_for(item.get("locale") or "en")["button"]
+
+
+def play_of(item):
+    """The item's Google Play link, or None when the app is not on Android. An item without one gets it from
+    the Android snapshot, with the campaign token of its own App Store link. Raises MissingDownloadLink when
+    the snapshot cannot be read or the app is on Android but its link cannot be built: never "iPhone only"
+    on a guess (the QA gate turns it into a refusal of that item, the feed leaves it out)."""
+    if item.get("play"):
+        return item["play"]
+    app_id = DL.app_store_id(item.get("store"))
+    if not app_id:
+        return None
+    ct = urllib.parse.parse_qs(urllib.parse.urlsplit(item["store"]).query).get("ct", ["social"])[0]
+    try:
+        return play_store_url(app_id, ct)
+    except ValueError as exc:   # SnapshotMissing is one: the text of these errors never carries a token or URL
+        raise DL.MissingDownloadLink(f"the Google Play link cannot be decided: {exc}") from None
 
 
 def link_lines(item):
-    lines = [f"{item['button']}: {item['store']}"]
-    if item.get("play"):
-        lines.append(f"Google Play: {item['play']}")
+    lines = [f"{button_of(item)}: {item['store']}"]
+    play = play_of(item)
+    if play:
+        lines.append(f"{GOOGLE_PLAY}: {play}")
     return lines + review_links.lines(item.get("review"))
+
+
+def link_problems(text, item, label):
+    """What `text` lacks of the app's download link: its App Store link, and its Google Play link when the app
+    is on Android (the rating link does not count)."""
+    return DL.link_problems(REVIEW_LINK.sub(" ", text or ""), item.get("store"), play_of(item), label=label)
+
+
+def with_links(body, item, limit, *, measure=len, review=True, label="post"):
+    """`body` followed by the item's download link lines. The body (hashtags first) is trimmed to fit `limit`,
+    a link never is; MissingDownloadLink when they cannot fit. The rating lines follow only if they still fit."""
+    text = DL.ensure_download_link(body, item.get("store"), play_of(item), max_len=limit, app_store_label=button_of(item),
+                                   play_label=GOOGLE_PLAY, measure=measure, label=label)
+    extra = review_links.lines(item.get("review")) if review else []
+    if extra and measure(text + "\n" + "\n".join(extra)) <= limit:
+        text += "\n" + "\n".join(extra)
+    return text
+
+
+def qa_problems(item, channel, online=True):
+    """Pre-post QA (post_qa.py) for one feed item on one platform: it checks final_text(), the caption together
+    with the download links this platform really receives, not the bare caption."""
+    try:
+        out = render(item, channel)
+    except DL.MissingDownloadLink as exc:
+        return [f"{channel} text: {exc}"]
+    counted = "counted" in out  # posters that fit the text to the platform limit themselves: measured below
+    if item["kind"] == "clip":
+        problems = post_qa.clip_problems(item["clip"], channel, out["final"], online=online, length=not counted)
+    else:
+        problems = post_qa.card_problems(out["final"], item["locale"], channel, store_url=item["store"],
+                                         name=item.get("name", ""), online=online, length=not counted)
+    limit = post_qa.LIMITS.get(channel)
+    if counted and limit and out.get("measure", len)(out["counted"]) > limit:
+        problems.append(f"{channel} text is {out.get('measure', len)(out['counted'])} characters; {channel} takes {limit}")
+    for name, text in out["checks"]:  # the strict check: the rating link is no download link
+        problems += [p for p in link_problems(text, item, f"{channel} {name}") if p not in problems]
+    return problems
+
+
+def final_text(item, channel):
+    """Everything the platform's reader gets of this post - caption, link block / first comment / link field /
+    link facets - as one string (MissingDownloadLink when the links cannot be attached). The QA gate
+    checks this text and the poster sends the same pieces."""
+    return render(item, channel)["final"]
+
+
+def outgoing(item, channel):
+    """The pieces to send for this platform (render), after the last link check right before the send call.
+    None - after a ::error:: - when the download link is missing or cannot be attached: nothing is sent then."""
+    label = f"{channel} {item.get('key', '')}".strip()
+    try:
+        out = render(item, channel)
+    except DL.MissingDownloadLink as exc:
+        DL.refuse(label, [str(exc)])
+        return None
+    problems = []
+    for name, text in out["checks"]:
+        problems += link_problems(text, item, f"{channel} {name}")
+    if problems:
+        DL.refuse(label, problems)
+        return None
+    return out
 
 
 # ---------------------------------------------------------------- Facebook Page
@@ -396,7 +489,22 @@ def fb_creds():
     return {"page": found["id"], "token": found["access_token"]}
 
 
+def render_facebook(item):
+    """Reel description = the caption plus every download link written out (Reel captions are not clickable, like
+    Instagram's, so the full URLs are text a person can copy); the same links are the first comment (clickable),
+    or - if commenting is refused - a link post. All three carry every download link."""
+    comment = "\n".join(link_lines(item))
+    fallback = "\n".join([item.get("name", ""), item.get("hook", ""), "", *link_lines(item)])
+    final = f"{item['caption']}\n\n{comment}"
+    return {"final": final, "description": final, "comment": comment,
+            "fallback": fallback, "link": item["store"],
+            "checks": [("reel description", final), ("first comment", comment), ("link post", fallback)]}
+
+
 def post_facebook(item):
+    out = outgoing(item, "facebook")
+    if not out:
+        return None
     creds = fb_creds()
     if not creds:
         return None
@@ -409,15 +517,19 @@ def post_facebook(item):
         raise RuntimeError(f"Facebook upload failed: {up}")
     http("POST", f"{FB}/{page}/video_reels", form({
         "access_token": token, "video_id": vid, "upload_phase": "finish", "video_state": "PUBLISHED",
-        "description": item["caption"]}))
+        "description": out["description"]}))
     # Links in a Reel caption are not clickable: the store links go in the first
     # comment, or (if commenting is refused) in a link post with a preview.
     try:
-        http("POST", f"{FB}/{vid}/comments", form({"message": "\n".join(link_lines(item)), "access_token": token}))
+        http("POST", f"{FB}/{vid}/comments", form({"message": out["comment"], "access_token": token}))
     except Exception as exc:
         print(f"facebook: comment refused ({exc.__class__.__name__}); posting a link post instead")
-        http("POST", f"{FB}/{page}/feed", form({"message": f"{item['name']}\n{item['hook']}", "link": item["store"],
-                                                 "access_token": token}))
+        try:
+            http("POST", f"{FB}/{page}/feed", form({"message": out["fallback"], "link": out["link"],
+                                                     "access_token": token}))
+        except Exception as exc2:  # the Reel is up: no repost, but the missing link is loud and left to the sweeper
+            DL.refuse("facebook reel", [f"the Reel {vid} is up but neither its link comment nor the link post went out "
+                                        f"({exc2.__class__.__name__})"])
     return {"id": vid, "link": f"https://www.facebook.com/reel/{vid}"}
 
 
@@ -497,12 +609,33 @@ def bsky_video(s, data, tries=60):
     raise RuntimeError("Bluesky video processing timed out")
 
 
-def post_bluesky(item):
-    s = bsky_session()
-    links = [("App Store", item["store"])] + ([("Google Play", item["play"])] if item.get("play") else [])
+def bsky_links(item):
+    links = [("App Store", item["store"])]
+    if play_of(item):
+        links.append((GOOGLE_PLAY, play_of(item)))
     if item.get("review"):  # the review sentence is its own link facet (review_links.json pairs only)
         links.append((item["review"]["label"], item["review"]["url"]))
-    text, facets = bsky_rich(item["caption"], links)
+    return links
+
+
+def render_bluesky(item):
+    """The links are facets on their labels, so only the labels count towards the 300 characters; the facets'
+    URIs are the link field of this post (part of `final`)."""
+    limit = post_qa.LIMITS["bluesky"]
+    text, facets = bsky_rich(item["caption"], bsky_links(item), limit)
+    if len(text) > limit:
+        raise DL.MissingDownloadLink(f"bluesky {item.get('key')}: the link labels do not fit {limit} characters")
+    uris = [f["features"][0]["uri"] for f in facets if f["features"][0]["$type"].endswith("#link")]
+    return {"final": "\n".join([text, *uris]), "counted": text, "text": text, "facets": facets,
+            "checks": [("text", "\n".join(uris))]}
+
+
+def post_bluesky(item):
+    out = outgoing(item, "bluesky")
+    if not out:
+        return None
+    s = bsky_session()
+    text, facets = out["text"], out["facets"]
     auth = {"Authorization": f"Bearer {s['jwt']}"}
     if item["kind"] == "card":
         blob = http("POST", f"{s['pds']}/xrpc/com.atproto.repo.uploadBlob", to_jpeg(fetch_bytes(item["image"])),
@@ -556,10 +689,10 @@ def yt_text(hook, name, store, play, tags):
 def yt_meta(item):
     """(title, description, tags): search-first for clips (search_caption.youtube), the plain shape otherwise."""
     if item.get("clip"):
-        links = [f"App Store: {item['store']}"] + ([f"Google Play: {item['play']}"] if item.get("play") else [])
+        links = [f"App Store: {item['store']}"] + ([f"{GOOGLE_PLAY}: {play_of(item)}"] if play_of(item) else [])
         links += review_links.lines(item.get("review"))  # review_links.json pairs only
         return SC.youtube(item["clip"], item["v"], links)
-    title, desc = yt_text(item["hook"], item["name"], item["store"], item.get("play"), item["tags"])
+    title, desc = yt_text(item["hook"], item["name"], item["store"], play_of(item), item["tags"])
     return title, desc, [t.lstrip("#") for t in item["tags"]][:10]
 
 
@@ -574,13 +707,24 @@ def yt_body(item, data=None):
         if clip["app"] == item["app"] and clip["locale"] != item["locale"]:
             other = clip_item(f"{clip['app']}/{clip['locale']}", clip, "youtube")
             t, d, _ = yt_meta(other)
+            problems = link_problems(d, other, f"youtube localization {clip['locale']}")
+            if problems:  # a translation without the download link is left out; the post itself is checked apart
+                DL.refuse(f"youtube {item.get('key')}", problems)
+                continue
             locs[YT_LANG.get(clip["locale"], clip["locale"])] = {"title": t, "description": d}
     if locs:
         body["localizations"] = locs
     return body
 
 
+def render_youtube(item):
+    title, desc, words = yt_meta(item)
+    return {"final": desc, "title": title, "description": desc, "tags": words, "checks": [("description", desc)]}
+
+
 def post_youtube(item, data=None):
+    if not outgoing(item, "youtube"):
+        return None
     token = yt_token()
     video = fetch_bytes(item["video"])
     body = yt_body(item, data)
@@ -644,11 +788,22 @@ def pin_board(auth):
                 {**auth, "Content-Type": "application/json"})["id"]
 
 
+def render_pinterest(item):
+    """A pin has one link field (the App Store page); Google Play, which cannot go there, is written into the
+    description with the App Store link too, so the text alone carries every download link (800 characters)."""
+    desc = with_links(item["caption"], item, post_qa.LIMITS["pinterest"], review=False, label=f"pinterest {item.get('key')}")
+    return {"final": f"{desc}\n{item['store']}", "counted": desc, "description": desc, "link": item["store"],
+            "checks": [("description", desc)]}
+
+
 def post_pinterest(item, tries=60):
+    out = outgoing(item, "pinterest")
+    if not out:
+        return None
     auth = {"Authorization": f"Bearer {pin_token()}"}
     board = pin_board(auth)
-    pin = {"board_id": board, "link": item["store"], "title": item["title"][:100],
-           "description": item["caption"][:500], "alt_text": (item.get("alt") or item["hook"])[:500]}
+    pin = {"board_id": board, "link": out["link"], "title": item["title"][:100],
+           "description": out["description"], "alt_text": (item.get("alt") or item["hook"])[:500]}
     if item["kind"] == "card":
         pin["media_source"] = {"source_type": "image_url", "url": item["image"]}
     else:
@@ -694,22 +849,51 @@ def text_link_block(label, url):
     return {"type": "text", "text": label, "formatting": [{"start": 0, "end": len(label), "type": "link", "url": url}]}
 
 
-def post_tumblr(item):
-    blog = tumblr_blog()
+def tumblr_content(item):
+    """The post's NPF blocks: caption, the media, the App Store link block and the Google Play link text."""
     if item["kind"] == "card":
         media = {"type": "image", "media": [{"type": "image/jpeg", "identifier": "media0", "width": 1080, "height": 1350}],
                  "alt_text": (item.get("alt") or item["hook"])[:4096]}
-        upload = ("media0", fetch_bytes(item["image"]), "card.jpg", "image/jpeg")
     else:
         media = {"type": "video", "media": {"type": "video/mp4", "identifier": "media0", "width": 1080, "height": 1920}}
-        upload = ("media0", fetch_bytes(item["video"]), "clip.mp4", "video/mp4")
     content = [{"type": "text", "text": item["caption"]}, media,
                {"type": "link", "url": item["store"], "title": item["name"], "description": item["hook"]}]
     if item["kind"] == "clip":  # keyword-rich heading: Tumblr search reads post text and the first tags
         content.insert(0, {"type": "text", "subtype": "heading2", "text": item["title"]})
-    if item.get("play"):
-        content.append(text_link_block("Google Play", item["play"]))
-    payload = {"content": content, "state": "published",
+    if play_of(item):
+        content.append(text_link_block(GOOGLE_PLAY, play_of(item)))
+    return content
+
+
+def npf_text(content):
+    """The text of NPF blocks as one string: the text blocks (the heading aside) and the URL of every link
+    block or linked text."""
+    out = []
+    for block in content:
+        if block.get("type") == "text" and block.get("subtype") != "heading2":
+            out.append(block["text"])
+            out += [f["url"] for f in block.get("formatting", []) if f.get("type") == "link"]
+        elif block.get("type") == "link":
+            out.append(block["url"])
+    return "\n".join(out)
+
+
+def render_tumblr(item):
+    content = tumblr_content(item)
+    text = npf_text(content)
+    return {"final": text, "content": content, "checks": [("text", text)]}
+
+
+def post_tumblr(item):
+    out = outgoing(item, "tumblr")
+    if not out:
+        return None
+    blog = tumblr_blog()
+    if item["kind"] == "card":
+        upload = ("media0", fetch_bytes(item["image"]), "card.jpg", "image/jpeg")
+    else:
+        upload = ("media0", fetch_bytes(item["video"]), "clip.mp4", "video/mp4")
+    payload = {"content": out["content"], "state": "published",
                "tags": ",".join(t.lstrip("#") for t in item["tags"][:5])}
     body, ctype = multipart([("json", jbody(payload), None, "application/json"), upload])
     url = f"{TUMBLR}/blog/{blog}/posts"
@@ -739,7 +923,32 @@ def naver_call(method, *params):
         raise RuntimeError(f"Naver fault {fault.faultCode}: {fault.faultString}") from None
 
 
+def naver_links(item):
+    links = [(button_of(item), item["store"])]
+    if play_of(item):
+        links.append(("Google Play에서 받기", play_of(item)))
+    return links
+
+
+def naver_body(item, media):
+    text = "<br>".join(html.escape(line) for line in item["caption"].split("\n"))
+    links = " · ".join(f'<a href="{html.escape(url)}">{html.escape(label)}</a>' for label, url in naver_links(item))
+    body = f"<p>{text}</p>{media}<p>{links}</p>"
+    if item.get("review"):  # review_links.json pairs only (UsageNow / OnePage PPT / CV Desk in Korea)
+        body += (f'<p><a href="{html.escape(item["review"]["url"])}" rel="nofollow">'
+                 f'{html.escape(item["review"]["label"])}</a></p>')
+    return body
+
+
+def render_naver(item):
+    text = "\n".join([item["caption"], *(f"{label}: {url}" for label, url in naver_links(item)),
+                      *review_links.lines(item.get("review"))])
+    return {"final": text, "checks": [("text", text)]}
+
+
 def post_naver(item):
+    if not outgoing(item, "naver"):
+        return None
     nid, pw = env("NAVER_ID"), env("NAVER_BLOG_API_PASSWORD")
     if item["kind"] == "card":
         up = naver_call("metaWeblog.newMediaObject", nid, nid, pw, {
@@ -750,14 +959,10 @@ def post_naver(item):
         src = html.escape(item["video"])
         media = (f'<p><video src="{src}" controls playsinline width="360"></video></p>'
                  f'<p><a href="{src}">▶ 영상 보기</a></p>')
-    text = "<br>".join(html.escape(line) for line in item["caption"].split("\n"))
-    links = [f'<a href="{html.escape(item["store"])}">{html.escape(item["button"])}</a>']
-    if item.get("play"):
-        links.append(f'<a href="{html.escape(item["play"])}">Google Play에서 받기</a>')
-    body = f"<p>{text}</p>{media}<p>{' · '.join(links)}</p>"
-    if item.get("review"):  # review_links.json pairs only (UsageNow / OnePage PPT / CV Desk in Korea)
-        body += (f'<p><a href="{html.escape(item["review"]["url"])}" rel="nofollow">'
-                 f'{html.escape(item["review"]["label"])}</a></p>')
+    body = naver_body(item, media)
+    problems = link_problems(body, item, "naver html")  # the HTML that is sent
+    if problems:
+        return DL.refuse(f"naver {item.get('key')}", problems) or None
     postid = naver_call("metaWeblog.newPost", nid, nid, pw, {"title": f"{item['name']} — {item['title']}", "description": body}, True)
     return {"id": str(postid), "link": f"https://blog.naver.com/{nid}/{postid}"}
 
@@ -794,23 +999,57 @@ def base36(n):
             return out
 
 
+def plurk_content(item, media, limit=360):
+    """The plurk: the caption, then the media link and every download link. The links come first and are never
+    cut: the caption is trimmed to what is left of the limit (MissingDownloadLink when not even they fit).
+    review_links.json pairs only (OnePage PPT in Taiwan): the rating link follows Google Play, if there is room."""
+    tail = f"\n{media}\n{item['store']} ({button_of(item)})"
+    if play_of(item):
+        tail += f"\n{play_of(item)} ({GOOGLE_PLAY})"
+    if len(tail) > limit:
+        raise DL.MissingDownloadLink(f"plurk {item.get('key')}: the download links ({len(tail)} chars) do not fit {limit}")
+    review = "\n".join(["", *review_links.lines(item.get("review"))]) if item.get("review") else ""
+    if review and len(tail) + len(review) < limit - 40:
+        tail += review
+    return fit_head(item["caption"], limit - len(tail)) + tail
+
+
+def fit_head(head, room):
+    """`head` cut to `room` characters: the trailing hashtag lines go first (a hashtag cut in half is no tag),
+    then the text itself, ending in an ellipsis."""
+    if len(head) <= room:
+        return head
+    lines = head.rstrip().split("\n")
+    while lines and (not lines[-1].strip() or DL.HASHTAG_LINE.match(lines[-1])):
+        lines.pop()
+        trimmed = "\n".join(lines).rstrip()
+        if len(trimmed) <= room:
+            return trimmed
+    body = "\n".join(lines).rstrip()
+    return body[:room - 1].rstrip() + "…" if room >= 2 else ""
+
+
+def render_plurk(item):
+    """The media link is the card's uploaded picture (known after the upload): the clip / card URL stands in."""
+    content = plurk_content(item, item.get("video") or item.get("image") or "", post_qa.LIMITS["plurk"])
+    return {"final": content, "counted": content, "checks": [("text", content)]}
+
+
 def post_plurk(item, limit=360):
+    if not outgoing(item, "plurk"):
+        return None
     if item["kind"] == "card":
         media = plurk_call("/Timeline/uploadPicture", files=[("image", fetch_bytes(item["image"]), "card.jpg", "image/jpeg")])["full"]
     else:
         media = item["video"]
-    tail = f"\n{media}\n{item['store']} ({item['button']})"
-    # review_links.json pairs only (OnePage PPT in Taiwan): the review link goes before Google Play, since
-    # one or two ratings can flip the category there and both links rarely fit in 360 characters.
-    review = "\n".join(["", *review_links.lines(item.get("review"))]) if item.get("review") else ""
-    if review and len(tail) + len(review) < limit - 40:
-        tail += review
-    if item.get("play") and len(tail) + len(item["play"]) + 16 < limit - 40:
-        tail += f"\n{item['play']} (Google Play)"
-    head = item["caption"]
-    if len(head) + len(tail) > limit:
-        head = head[:max(0, limit - len(tail) - 1)].rstrip() + "…"
-    r = plurk_call("/Timeline/plurkAdd", {"content": head + tail, "qualifier": "shares", "lang": "tr_ch"})
+    try:
+        content = plurk_content(item, media, limit)
+    except DL.MissingDownloadLink as exc:
+        return DL.refuse(f"plurk {item.get('key')}", [str(exc)]) or None
+    problems = link_problems(content, item, "plurk text")
+    if problems:
+        return DL.refuse(f"plurk {item.get('key')}", problems) or None
+    r = plurk_call("/Timeline/plurkAdd", {"content": content, "qualifier": "shares", "lang": "tr_ch"})
     return {"id": str(r["plurk_id"]), "link": f"https://www.plurk.com/p/{base36(r['plurk_id'])}"}
 
 
@@ -830,11 +1069,18 @@ def dm_token():
         "username": env("DM_USERNAME"), "password": env("DM_PASSWORD"), "scope": "manage_videos"}))["access_token"]
 
 
+def render_dailymotion(item):
+    desc = with_links(item["caption"], item, post_qa.LIMITS["dailymotion"], label=f"dailymotion {item.get('key')}")
+    return {"final": desc, "description": desc, "checks": [("description", desc)]}
+
+
 def post_dailymotion(item):
+    out = outgoing(item, "dailymotion")
+    if not out:
+        return None
     auth = {"Authorization": f"Bearer {dm_token()}"}
-    desc = "\n".join([item["caption"], "", *link_lines(item)])
     r = http("POST", f"{DM}/me/videos", form({
-        "url": item["video"], "title": f"{item['hook']} | {item['name']}"[:255], "description": desc[:3000],
+        "url": item["video"], "title": f"{item['hook']} | {item['name']}"[:255], "description": out["description"],
         "tags": ",".join(t.lstrip("#") for t in item["tags"][:5]), "channel": "tech", "published": "true",
         "is_created_for_kids": "false"}), auth)
     return {"id": r["id"], "link": f"https://www.dailymotion.com/video/{r['id']}"}
@@ -843,6 +1089,29 @@ def post_dailymotion(item):
 def whoami_dailymotion():
     r = http("GET", f"{DM}/me?fields=id,username,screenname", headers={"Authorization": f"Bearer {dm_token()}"})
     print(f"dailymotion: {r.get('username')} ({r.get('screenname')})")
+
+
+# ---------------------------------------------------------------- what really goes out
+
+def render_mastodon(item):
+    """Posted by threads-autopilot from the feed: the caption plus the download links, counted the Mastodon way
+    (every link 23 characters, 500 in all)."""
+    text = with_links(item["caption"], item, post_qa.LIMITS["mastodon"], measure=fedi_len, review=False,
+                      label=f"mastodon {item.get('key')}")
+    return {"final": text, "counted": text, "measure": fedi_len, "text": text, "checks": [("text", text)]}
+
+
+RENDER = {"facebook": render_facebook, "bluesky": render_bluesky, "youtube": render_youtube,
+          "pinterest": render_pinterest, "tumblr": render_tumblr, "naver": render_naver, "plurk": render_plurk,
+          "dailymotion": render_dailymotion, "mastodon": render_mastodon}
+
+
+def render(item, channel):
+    """Every piece `channel` receives for this item (see final_text); MissingDownloadLink when the app has no
+    valid App Store link or the links cannot be attached within the platform's limit."""
+    if not DL.app_store_id(item.get("store")):
+        raise DL.MissingDownloadLink(f"no App Store link known for this app: {item.get('store')!r}")
+    return RENDER[channel](item)
 
 
 # ---------------------------------------------------------------- runner
@@ -886,9 +1155,13 @@ def run(channels, day, slot, dry_run=False, data=None):
             if dry_run:
                 state = "" if ok else " [not configured]"
                 print(f"{ch}{state}: would post {item['kind']} {item['key']} ({item['locale']}) -> {item['store']}")
-                if item.get("play"):
-                    print(f"  Google Play -> {item['play']}")
-                print("  " + item["caption"].replace("\n", "\n  "))
+                if play_of(item):
+                    print(f"  Google Play -> {play_of(item)}")
+                try:
+                    shown = final_text(item, ch)
+                except DL.MissingDownloadLink as exc:
+                    shown = f"[no download link: {exc}]\n{item['caption']}"
+                print("  " + shown.replace("\n", "\n  "))
                 continue
             if not post_qa.gate(qa_problems(item, ch), f"{ch} {item['key']}"):
                 continue  # broken asset or caption: refused, the next item may still go
@@ -913,6 +1186,9 @@ def public(item, channel):
     """An item as plain feed data: search fields kept (variant, alt, keywords, keyline; for YouTube the
     search-first title / description / tags), the internal clip and variant objects dropped."""
     out = {k: v for k, v in item.items() if k not in ("clip", "v")}
+    # The consumers (threads-autopilot, the Mac) build their post from these three: always present, and
+    # `play` is the Google Play link whenever the app is on Android (None otherwise).
+    out.update(store=item.get("store"), play=play_of(item), button=button_of(item))
     if item.get("clip"):
         out.update(keywords=item["clip"].get("keywords") or [], keyline=item["clip"].get("keyline", ""))
         if channel == "youtube":
@@ -937,7 +1213,10 @@ def pool(data, channel, day, perf=None):
     out = []
     for i in order:
         key, clip = clips[i]
-        item = public(clip_item(key, clip, channel, day), channel)
+        raw = clip_item(key, clip, channel, day)
+        if not outgoing(raw, channel):  # a clip whose download link cannot be attached is not offered
+            continue
+        item = public(raw, channel)
         if clip.get("app") in rank:
             item["boost_rank"] = rank[clip["app"]] + 1
         out.append(item)
@@ -961,7 +1240,7 @@ def export(day, check=True, data=None, perf=None):
             out += [dict(public(i, ch), slot=slot) for i in todays_clips(data, [], ch, day, slot)
                     if i["key"] not in {o["key"] for o in out} and ok(i)]
         if PLAN[ch]["cards"]:
-            out += [c for c in todays_cards(day, ch) if (not check or exists(c["image"])) and ok(c)]
+            out += [public(c, ch) for c in todays_cards(day, ch) if (not check or exists(c["image"])) and ok(c)]
         items[ch] = out
     return {"schema": FEED_SCHEMA, "date": day.isoformat(),
             "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "items": items,

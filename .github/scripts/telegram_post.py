@@ -18,6 +18,7 @@ import time
 import urllib.parse
 import urllib.request
 
+import download_links as DL
 from social_post_common import (
     AMERICAS_LOCALES,
     ASIA_LOCALES,
@@ -1113,10 +1114,32 @@ def choose_unpublished(pool, ledger, now, slot=None, skip_apps=frozenset()):
     )
 
 
+def download_link_problems(item, text):
+    """Why `text` does not carry the direct download link of the app `item` promotes (empty list = it does).
+
+    Owner rule 2026-10-17: every promo post carries the app's App Store link, plus its Google Play link when
+    the app is in the Android snapshot. The links are looked up by the app id (item["app"]), so a text that
+    links another app fails. The existing-user write-a-review link also points at the app's store page; it is
+    cut out before the check because it is not the download link.
+    """
+    ct = telegram_campaign(item)
+    play = play_store_url(item.get("app"), ct)
+    body = text
+    for line in review_links.lines(review_links.for_official(item.get("app"), item.get("lang"))):
+        body = body.replace(line, "")
+    return DL.link_problems(body, f"https://apps.apple.com/app/id{item.get('app')}", play,
+                            label=f"Telegram {item.get('app')}/{item.get('lang')}")
+
+
 def make_intent(item, context):
     if item["lang"] not in TZ_LANGS[_zone(_timestamp(context["slot"]).hour)]:
         raise ValueError("Telegram locale does not belong to the authoritative slot")
     text = compose_text(item)
+    problems = download_link_problems(item, text)
+    if problems:
+        # Fail closed before the slot is reserved: nothing is sent, the step goes red (main() returns 1).
+        DL.refuse(f"Telegram {item.get('app')}/{item.get('lang')}", problems)
+        raise DL.MissingDownloadLink("; ".join(problems))
     return {
         "slot": context["slot"], "status": "reserved",
         "app_store_id": str(item["app"]), "official_locale": item["lang"],

@@ -1,7 +1,7 @@
 {
  "schema": "lumi.video-takedown/v1",
  "mode": "apply",
- "generated_at": "2026-10-17T10:51:42Z",
+ "generated_at": "2026-10-17T10:57:57Z",
  "digest": "a18330949ba6b3f25d4519a8710af56665bc06533981004e828a707301089159",
  "targets": 10,
  "summary_report": "00_GrowthEngine reports/video_takedown_2026-10-17.json",
@@ -21,28 +21,12 @@
    "reversible": true,
    "live": {
     "state": "present",
-    "video": true,
-    "photo": false
+    "video": false,
+    "photo": true
    },
-   "caption": "收集 37 個 注音小夥伴\n聽聲音 選出對的注音\n注音・好玩學發音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#注音符號 #注音拼讀 #Lumi注音星球",
-   "fallback": {
-    "ready": true,
-    "problems": [],
-    "photo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/64/02/30/64023030-bf62-3c68-1b7e-28ad423e838c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-    "caption": "收集 37 個 注音小夥伴\n聽聲音 選出對的注音\n注音・好玩學發音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#注音符號 #注音拼讀 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/app/id6773017109?pt=118326163&ct=bf_tg&mt=8\nAndroid 版在 Google Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dlumibopomofo",
-    "buttons": [
-     "https://apps.apple.com/app/id6773017109?pt=118326163&ct=bf_tg&mt=8",
-     "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dlumibopomofo"
-    ]
-   },
-   "action": "unverified",
-   "readback": {
-    "api_photo": true,
-    "state": "present",
-    "video": true,
-    "photo": false
-   },
-   "problem": "the public preview still shows the video (re-run apply)"
+   "caption": "收集 37 個 注音小夥伴\n聽聲音 選出對的注音\n注音・好玩學發音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#注音符號 #注音拼讀 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/app/id6773017109?pt=118326163&ct=bf_tg&mt=8\nAndroid 版在 Google Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dlumibopomofo",
+   "action": "done",
+   "note": "the message carries no video any more"
   },
   {
    "platform": "telegram",
@@ -57,28 +41,26 @@
    "record": "ios-app-guide .github/growth/clip-posts.json",
    "method": "editMessageMedia：影片換成該款 App Store 圖示照片，保留原文並補 App Store（＋上架 Play 的款加 Play）直接下載連結與按鈕；不刪除，可用 editMessageMedia 換回原影片",
    "reversible": true,
-   "live": {
-    "state": "present",
-    "video": true,
-    "photo": false
-   },
-   "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #MaskMyFile",
-   "fallback": {
-    "ready": true,
-    "problems": [],
+   "action": "none",
+   "note": "done earlier",
+   "receipt": {
+    "at": "2026-10-17T10:51:42Z",
+    "clip": "maskmyfile/cs",
+    "status": "video_replaced",
+    "verified": true,
+    "readback": {
+     "api_photo": true,
+     "state": "present",
+     "video": false,
+     "photo": true
+    },
+    "caption_before": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #MaskMyFile",
+    "caption_after": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #MaskMyFile\n\nStáhnout z App Storu: https://apps.apple.com/app/id6792850916?pt=118326163&ct=bf_tg&mt=8\nTaké na Google Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dmaskmyfile",
     "photo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8d/49/98/8d49986d-df1e-9d3d-b94c-419b2b937782/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #MaskMyFile\n\nStáhnout z App Storu: https://apps.apple.com/app/id6792850916?pt=118326163&ct=bf_tg&mt=8\nTaké na Google Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dmaskmyfile",
     "buttons": [
      "https://apps.apple.com/app/id6792850916?pt=118326163&ct=bf_tg&mt=8",
      "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dmaskmyfile"
     ]
-   },
-   "action": "done",
-   "readback": {
-    "api_photo": true,
-    "state": "present",
-    "video": false,
-    "photo": true
    }
   },
   {
@@ -94,28 +76,26 @@
    "record": "ios-app-guide .github/growth/clip-posts.json",
    "method": "editMessageMedia：影片換成該款 App Store 圖示照片，保留原文並補 App Store（＋上架 Play 的款加 Play）直接下載連結與按鈕；不刪除，可用 editMessageMedia 換回原影片",
    "reversible": true,
-   "live": {
-    "state": "present",
-    "video": true,
-    "photo": false
-   },
-   "caption": "手腕上也能背\n連續學習不中斷\n44 種語言與單字小工具\nWordmate：44 種語言背單字\n在 App Store 搜尋「Wordmate 背單字」\nAndroid 版在 Google Play\n\n#44種語言背單字 #學英文 #Wordmate背單字",
-   "fallback": {
-    "ready": true,
-    "problems": [],
+   "action": "none",
+   "note": "done earlier",
+   "receipt": {
+    "at": "2026-10-17T10:51:42Z",
+    "clip": "wordmate/zh-Hant",
+    "status": "video_replaced",
+    "verified": true,
+    "readback": {
+     "api_photo": true,
+     "state": "present",
+     "video": false,
+     "photo": true
+    },
+    "caption_before": "手腕上也能背\n連續學習不中斷\n44 種語言與單字小工具\nWordmate：44 種語言背單字\n在 App Store 搜尋「Wordmate 背單字」\nAndroid 版在 Google Play\n\n#44種語言背單字 #學英文 #Wordmate背單字",
+    "caption_after": "手腕上也能背\n連續學習不中斷\n44 種語言與單字小工具\nWordmate：44 種語言背單字\n在 App Store 搜尋「Wordmate 背單字」\nAndroid 版在 Google Play\n\n#44種語言背單字 #學英文 #Wordmate背單字\n\n在 App Store 下載: https://apps.apple.com/app/id6789917808?pt=118326163&ct=bf_tg&mt=8\nAndroid 版在 Google Play: https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dwordmate",
     "photo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/97/35/b1/9735b11f-3365-789a-867b-9a8cac5f78e6/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-    "caption": "手腕上也能背\n連續學習不中斷\n44 種語言與單字小工具\nWordmate：44 種語言背單字\n在 App Store 搜尋「Wordmate 背單字」\nAndroid 版在 Google Play\n\n#44種語言背單字 #學英文 #Wordmate背單字\n\n在 App Store 下載: https://apps.apple.com/app/id6789917808?pt=118326163&ct=bf_tg&mt=8\nAndroid 版在 Google Play: https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dwordmate",
     "buttons": [
      "https://apps.apple.com/app/id6789917808?pt=118326163&ct=bf_tg&mt=8",
      "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dwordmate"
     ]
-   },
-   "action": "done",
-   "readback": {
-    "api_photo": true,
-    "state": "present",
-    "video": false,
-    "photo": true
    }
   },
   {
@@ -131,28 +111,26 @@
    "record": "ios-app-guide .github/growth/clip-posts.json",
    "method": "editMessageMedia：影片換成該款 App Store 圖示照片，保留原文並補 App Store（＋上架 Play 的款加 Play）直接下載連結與按鈕；不刪除，可用 editMessageMedia 換回原影片",
    "reversible": true,
-   "live": {
-    "state": "present",
-    "video": true,
-    "photo": false
-   },
-   "caption": "Right on your Home Screen\nTap to check it off\nPlan your day with cozy calm\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CuteChecklist #Todo #MochiCuteChecklist",
-   "fallback": {
-    "ready": true,
-    "problems": [],
+   "action": "none",
+   "note": "done earlier",
+   "receipt": {
+    "at": "2026-10-17T10:51:42Z",
+    "clip": "mochi/en",
+    "status": "video_replaced",
+    "verified": true,
+    "readback": {
+     "api_photo": true,
+     "state": "present",
+     "video": false,
+     "photo": true
+    },
+    "caption_before": "Right on your Home Screen\nTap to check it off\nPlan your day with cozy calm\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CuteChecklist #Todo #MochiCuteChecklist",
+    "caption_after": "Right on your Home Screen\nTap to check it off\nPlan your day with cozy calm\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CuteChecklist #Todo #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/app/id6785004775?pt=118326163&ct=bf_tg&mt=8\nAlso on Google Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dmochi",
     "photo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fd/f4/0e/fdf40e2c-91e4-6f2d-52ff-e9123609ec51/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-    "caption": "Right on your Home Screen\nTap to check it off\nPlan your day with cozy calm\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CuteChecklist #Todo #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/app/id6785004775?pt=118326163&ct=bf_tg&mt=8\nAlso on Google Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dmochi",
     "buttons": [
      "https://apps.apple.com/app/id6785004775?pt=118326163&ct=bf_tg&mt=8",
      "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dmochi"
     ]
-   },
-   "action": "done",
-   "readback": {
-    "api_photo": true,
-    "state": "present",
-    "video": false,
-    "photo": true
    }
   },
   {
@@ -264,26 +242,19 @@
    "record": "ios-app-guide .github/growth/clip-posts.json",
    "method": "DELETE /{threads-media-id}（threads_delete）",
    "reversible": false,
-   "live": {
-    "state": "present",
-    "media_type": "VIDEO",
-    "permalink": "https://www.threads.com/@hourstag.app/post/DegUA20Dah4",
-    "timestamp": "2026-10-15T06:27:48+0000",
-    "username": "hourstag.app",
-    "shortcode": "DegUA20Dah4"
-   },
-   "action": "done",
-   "own_replies_kept": [
-    {
-     "id": "17898348957398868",
-     "text": "在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=h7_lumibopomofo_zh-Hant_th&mt=8\nGoogle Play: "
-    }
-   ],
-   "answer": {
-    "success": true,
-    "deleted_id": "18105193691312359"
-   },
-   "readback": "HTTP 400 code 100: Unsupported get request. Object with ID '18105193691312359' does not exist, cannot be loaded due to missing permissions, or does not support "
+   "action": "none",
+   "note": "done earlier",
+   "receipt": {
+    "at": "2026-10-17T10:51:42Z",
+    "clip": "lumibopomofo/zh-Hant",
+    "status": "deleted",
+    "verified": true,
+    "answer": {
+     "success": true,
+     "deleted_id": "18105193691312359"
+    },
+    "readback": "HTTP 400 code 100: Unsupported get request. Object with ID '18105193691312359' does not exist, cannot be loaded due to missing permissions, or does not support "
+   }
   },
   {
    "platform": "threads",
@@ -298,48 +269,29 @@
    "record": "ios-app-guide .github/growth/clip-posts.json",
    "method": "DELETE /{threads-media-id}（threads_delete）",
    "reversible": false,
-   "live": {
-    "state": "present",
-    "media_type": "VIDEO",
-    "permalink": "https://www.threads.com/@hourstag.app/post/Dek9_ySlB4l",
-    "timestamp": "2026-10-17T01:51:25+0000",
-    "username": "hourstag.app",
-    "shortcode": "Dek9_ySlB4l"
-   },
-   "action": "done",
-   "own_replies_kept": [
-    {
-     "id": "17998106798828841",
-     "text": "在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=h7_lumibopomofo_b_th&mt=8\nGoogle Play: https:"
-    }
-   ],
-   "answer": {
-    "success": true,
-    "deleted_id": "18110538290595393"
-   },
-   "readback": "HTTP 400 code 100: Unsupported get request. Object with ID '18110538290595393' does not exist, cannot be loaded due to missing permissions, or does not support "
+   "action": "none",
+   "note": "done earlier",
+   "receipt": {
+    "at": "2026-10-17T10:51:42Z",
+    "clip": "lumibopomofo_b/zh-Hant",
+    "status": "deleted",
+    "verified": true,
+    "answer": {
+     "success": true,
+     "deleted_id": "18110538290595393"
+    },
+    "readback": "HTTP 400 code 100: Unsupported get request. Object with ID '18110538290595393' does not exist, cannot be loaded due to missing permissions, or does not support "
+   }
   }
  ],
  "receipts": {
   "telegram": {
    "355": {
-    "at": "2026-10-17T10:51:42Z",
+    "at": "2026-10-17T10:57:57Z",
     "clip": "lumibopomofo/zh-Hant",
     "status": "video_replaced",
-    "verified": false,
-    "readback": {
-     "api_photo": true,
-     "state": "present",
-     "video": true,
-     "photo": false
-    },
-    "caption_before": "收集 37 個 注音小夥伴\n聽聲音 選出對的注音\n注音・好玩學發音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#注音符號 #注音拼讀 #Lumi注音星球",
-    "caption_after": "收集 37 個 注音小夥伴\n聽聲音 選出對的注音\n注音・好玩學發音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#注音符號 #注音拼讀 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/app/id6773017109?pt=118326163&ct=bf_tg&mt=8\nAndroid 版在 Google Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dlumibopomofo",
-    "photo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/64/02/30/64023030-bf62-3c68-1b7e-28ad423e838c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
-    "buttons": [
-     "https://apps.apple.com/app/id6773017109?pt=118326163&ct=bf_tg&mt=8",
-     "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dlumibopomofo"
-    ]
+    "verified": true,
+    "note": "the message carries no video any more"
    },
    "363": {
     "at": "2026-10-17T10:51:42Z",

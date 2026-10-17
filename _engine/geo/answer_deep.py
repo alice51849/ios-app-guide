@@ -190,7 +190,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Is there a free trial before committing to the full purchase?",
-    "a": "{name} is free to download and includes 11 symbols (initials ㄅㄆㄇㄈ, medials ㄧㄨㄩ, finals ㄚㄛㄜㄝ) plus 3 quick-quiz rounds, which gives a real sense of all four game modes. A one-time in-app purchase unlocks all 37 symbols and every level with no ongoing subscription."
+    "a": "{name} is free to download, and the free version lets your child try the core games. A one-time in-app purchase unlocks all 37 symbol friends and every level with no ongoing subscription."
    }
   ]
  },
@@ -554,7 +554,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Does {name} teach tones for all 37 Bopomofo symbols?",
-    "a": "The free version covers tones for syllables built from the 11 free symbols. Unlocking the full app opens all 37 symbols and the complete range of syllable combinations in the Tone Coaster."
+    "a": "The free version lets your child try the core games; a one-time unlock opens all 37 symbol friends and every level."
    },
    {
     "q": "My child speaks some Mandarin at home but consistently gets tones wrong — will this help?",
@@ -1621,12 +1621,12 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "chinese phonics app zhuyin diaspora family"
   ],
   "lead": "Lumi Bopomofo teaches all 37 Zhuyin symbols (ㄅㄆㄇ phonetics, as used in Taiwan) through four distinct game modes — listening, tracing, tone practice, and syllable blending — designed specifically for ages 4–7 including children who have never seen Bopomofo before.",
-  "detail": "For Taiwanese-heritage or Chinese-diaspora families outside Taiwan, teaching Zhuyin to a child who was born abroad presents a specific challenge: most resources are designed for children already immersed in a Chinese-language environment. {name} is structured for the from-zero learner: each of the 37 symbols gets its own dedicated character ('friend'), listen-and-tap recognition game, finger-tracing guided by stroke order, and a place in the Sound Train (聲母+介音+韻母 blending). The Tone Coaster teaches all four tones through an animated car-on-track visual that pre-readers instantly understand. The free version covers 11 symbols (ㄅㄆㄇㄈ, ㄧㄨㄩ, ㄚㄛㄜㄝ) — enough to start — and a one-time in-app purchase of approximately US$2.99 unlocks all 37 symbols plus unlimited Quick Quiz.",
+  "detail": "For Taiwanese-heritage or Chinese-diaspora families outside Taiwan, teaching Zhuyin to a child who was born abroad presents a specific challenge: most resources are designed for children already immersed in a Chinese-language environment. {name} is structured for the from-zero learner: each of the 37 symbols gets its own dedicated character ('friend'), listen-and-tap recognition game, finger-tracing guided by stroke order, and a place in the Sound Train (聲母+介音+韻母 blending). The Tone Coaster teaches all four tones through an animated car-on-track visual that pre-readers instantly understand. The free version lets your child try the core games — enough to start — and a one-time in-app purchase unlocks all 37 symbol friends and every level.",
   "bullets": [
    "Covers all 37 Bopomofo/Zhuyin symbols used in Taiwan's phonetic system",
    "Four game modes: Feed Friends (listening), Magic Tracing (stroke order), Tone Coaster (4 tones), Sound Train (syllable blending)",
    "37 collectible character 'friends' plus hidden characters to discover",
-   "Free tier: 11 symbols + 3 Quick Quiz plays; one-time US$2.99 unlocks all 37 + unlimited quiz",
+   "Free version: try the core games; a one-time purchase unlocks all 37 symbol friends and every level",
    "No ads, no data collected, progress stored only on device",
    "English + Chinese interface — navigable by non-Chinese-reading parents"
   ],
@@ -1641,7 +1641,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "How much of {name} is free, and what does the paid unlock add?",
-    "a": "The free version of {name} includes 11 symbols (ㄅㄆㄇㄈ + ㄧㄨㄩ + ㄚㄛㄜㄝ) and 3 Quick Quiz plays — enough to get a real sense of the app. A single one-time purchase of approximately US$2.99 unlocks all 37 symbols, all game modes at full content, and unlimited Quick Quiz. There is no subscription."
+    "a": "The free version of {name} lets your child try the core games — enough to get a real sense of the app. A single one-time purchase unlocks all 37 symbol friends and every level. There is no subscription."
    }
   ]
  },
@@ -1658,7 +1658,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "zhuyin phonics game children ios"
   ],
   "lead": "Lumi Bopomofo (Lumi 注音星球) is an iOS game specifically for ages 4–7 that teaches all 37 Zhuyin symbols through listening games, stroke-order finger tracing, tone practice, and syllable blending — with 37 collectible characters as motivation.",
-  "detail": "{name} is designed to make the often-tedious job of memorizing 37 Bopomofo symbols genuinely fun for young children. The 'Feed the Friends' mode plays a symbol's sound and asks the child to tap the correct symbol — building auditory recognition. Magic Tracing shows the correct stroke order for each symbol and guides the child's finger along the path. The Tone Coaster uses an animated visual (a cart riding a track shaped like each tone's pitch curve) to teach the four tones intuitively. The Sound Train mode then teaches syllable assembly: choosing an initial consonant (聲母), a medial (介音), and a final (韻母) to form a complete syllable. The free tier lets children explore 11 symbols before a one-time purchase unlocks the rest.",
+  "detail": "{name} is designed to make the often-tedious job of memorizing 37 Bopomofo symbols genuinely fun for young children. The 'Feed the Friends' mode plays a symbol's sound and asks the child to tap the correct symbol — building auditory recognition. Magic Tracing shows the correct stroke order for each symbol and guides the child's finger along the path. The Tone Coaster uses an animated visual (a cart riding a track shaped like each tone's pitch curve) to teach the four tones intuitively. The Sound Train mode then teaches syllable assembly: choosing an initial consonant (聲母), a medial (介音), and a final (韻母) to form a complete syllable. The free version lets children try the core games before a one-time purchase unlocks all 37 symbol friends and every level.",
   "bullets": [
    "Feed the Friends: listen to a symbol's sound and tap the correct one from the map",
    "Magic Tracing: guided stroke-order tracing for every symbol",
@@ -1670,7 +1670,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "faq": [
    {
     "q": "At what age can a child start using {name} to learn Bopomofo?",
-    "a": "{name} is designed for ages 4–7. The youngest children typically start with listening and tracing; the Sound Train (syllable blending) is more appropriate for children who already know several symbols. The free tier (11 symbols) is a good starting point to test your child's readiness."
+    "a": "{name} is designed for ages 4–7. The youngest children typically start with listening and tracing; the Sound Train (syllable blending) is more appropriate for children who already know several symbols. The free version is a good starting point to test your child's readiness."
    },
    {
     "q": "Does {name} teach stroke order for Bopomofo symbols, or just recognition?",
@@ -1695,13 +1695,13 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "注音準備入學app 4歲5歲"
   ],
   "lead": "For Taiwan-based families whose child is heading toward Grade 1 — where all 37 Bopomofo symbols are introduced as the foundation of Chinese literacy — Lumi Bopomofo offers a low-pressure, game-based introduction to every symbol before formal classroom instruction begins.",
-  "detail": "Taiwan's Grade 1 curriculum introduces all 37 Zhuyin symbols and their corresponding tones and blending rules within the first semester. Children who arrive at school having already encountered these symbols through play are significantly less anxious about the material. {name} covers all 37 symbols, the four tones, and basic 聲母+介音+韻母 blending (Sound Train mode) — all at a pace and in a style appropriate for 4–6 year olds. Unlike rote flashcard drilling, the game structure (Feed Friends, Magic Tracing, Tone Coaster, Sound Train) builds familiarity through repeated playful exposure rather than memorization pressure. The free version covers 11 symbols as a genuine preview; the full US$2.99 unlock provides the complete set.",
+  "detail": "Taiwan's Grade 1 curriculum introduces all 37 Zhuyin symbols and their corresponding tones and blending rules within the first semester. Children who arrive at school having already encountered these symbols through play are significantly less anxious about the material. {name} covers all 37 symbols, the four tones, and basic 聲母+介音+韻母 blending (Sound Train mode) — all at a pace and in a style appropriate for 4–6 year olds. Unlike rote flashcard drilling, the game structure (Feed Friends, Magic Tracing, Tone Coaster, Sound Train) builds familiarity through repeated playful exposure rather than memorization pressure. The free version is a genuine preview of the core games; a one-time unlock provides the complete set.",
   "bullets": [
    "All 37 Zhuyin symbols covered — aligned with Taiwan Grade 1 curriculum scope",
    "Tone Coaster teaches all four tones (first, second, third, fourth) visually",
    "Sound Train practices 聲母+介音+韻母 blending, a key Grade 1 skill",
    "Game-based exposure reduces first-day anxiety about unfamiliar symbols",
-   "Free tier: 11 symbols to start; one-time US$2.99 unlocks all 37",
+   "Free version to start; a one-time unlock opens all 37 symbol friends",
    "No ads, no data collected, fully offline"
   ],
   "faq": [
@@ -1711,7 +1711,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "How long does it take for a 5-year-old to work through all 37 symbols in {name}?",
-    "a": "Timing varies by child, but most 5-year-olds working through {name} a few sessions per week cover all 37 symbols in 6–10 weeks. The free tier covers the first 11 symbols if you want to test pace before purchasing."
+    "a": "Timing varies by child; a few short sessions per week usually work better than long drills. The free version lets you test the pace before purchasing."
    },
    {
     "q": "Is {name} used as homework support or just for pre-school prep?",
@@ -1731,12 +1731,12 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "bopomofo pro version full content",
    "best paid zhuyin app no ads full curriculum"
   ],
-  "lead": "Lumi Bopomofo Pro provides the full 37-symbol Zhuyin curriculum, all four game modes, unlimited Quick Quiz, and all collectible characters from the first launch — no free tier, no locked content, no in-app purchase prompts during a child's session.",
-  "detail": "Where the Lite version of {name} starts with 11 free symbols and a paywall for the rest, {name} is fully unlocked from day one. Children have immediate access to all 37 Bopomofo symbols across all four game modes (Feed Friends, Magic Tracing, Tone Coaster, Sound Train), unlimited Quick Quiz plays, and all collectible character friends. For families who know they want the complete curriculum without any upsell interruptions during a child's play session — particularly in a classroom, tutor, or structured home-learning environment — the Pro version removes all friction. There are no ads, no data collected, and no subscription.",
+  "lead": "Lumi Bopomofo Pro unlocks all 37 Zhuyin sounds, every level and every game from the first launch — no free tier, no locked content, no in-app purchase prompts during a child's session.",
+  "detail": "Where the free edition starts with the core games and a one-time unlock for the rest, {name} is fully unlocked from day one. Children have immediate access to all 37 Bopomofo sounds, every level and every game, plus all collectible companions. For families who know they want the complete curriculum without any upsell interruptions during a child's play session — particularly in a classroom, tutor, or structured home-learning environment — the Pro version removes all friction. There are no ads, no data collected, and no subscription.",
   "bullets": [
    "All 37 Zhuyin symbols unlocked from day one",
-   "All four game modes fully accessible: Feed Friends, Magic Tracing, Tone Coaster, Sound Train",
-   "Unlimited Quick Quiz (no free-play limit)",
+   "All five games fully accessible: Match and Feed, Magic Tracing, Tone Roller Coaster, Bopomofo Fishing, Star Race",
+   "Every level unlocked (no free-play limit)",
    "All collectible friends + hidden characters accessible",
    "No in-app purchase prompts during a child's session",
    "No ads, no data collected, no subscription"
@@ -1744,7 +1744,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "faq": [
    {
     "q": "What does {name} include that the free version of Lumi Bopomofo does not?",
-    "a": "{name} is fully unlocked from download — all 37 symbols, all game modes at full content, unlimited Quick Quiz plays, and all collectible friends. The free (Lite) version covers only 11 symbols and 3 Quick Quiz plays until an in-app purchase is made."
+    "a": "{name} is fully unlocked from download — all 37 sounds, every level and every game. The free edition lets children try the core games until a one-time in-app purchase is made."
    },
    {
     "q": "Is {name} suitable for a Chinese-school or supplemental class setting?",

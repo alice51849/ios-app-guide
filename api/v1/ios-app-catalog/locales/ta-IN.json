@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-17",
-  "content_digest": "adaede8286c9e3187dc59d4ad57ee3a7351b1259fd4193ca828c755e41ea57d2",
+  "content_digest": "058b13fa29dda7db85f3334f75fc84645836589d465c91f9202904ddf7f3a4ae",
   "locale": "ta-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -92,7 +92,7 @@
       "key": "aim990",
       "app_store_id": "6784974530",
       "name": "Aim990: ஆங்கில கோச்",
-      "summary": "தினசரி Listening, Reading பயிற்சி, பலவீனப் பகுதிகளில் கவனம் மற்றும் முன்னேற்றக் கண்காணிப்புடன் TOEIC-க்குத் தயாராகுங்கள்.",
+      "summary": "Aim990 என்பது TOEIC பாணியிலான கேட்டல் மற்றும் வாசிப்பு தயாரிப்புக்கான கண்டறிதல் அடிப்படையிலான பயிற்சியாளர். இது கேள்விகளின் கிடங்கு அல்ல: நீங்கள் திறக்கும் ஒவ்வொரு அமர்வும் உங்கள் சொந்த பதில் தரவுகளிலிருந்தே தீர்மானிக்கப்படுகிறது.",
       "category": "education",
       "search_terms": [
         "இலக்கணம்",
@@ -235,7 +235,7 @@
       "capabilities": {
         "offline": false,
         "no_account": true,
-        "no_ads": false,
+        "no_ads": true,
         "no_tracking": false,
         "private_or_on_device": true,
         "widget": true,

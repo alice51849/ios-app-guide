@@ -269,11 +269,26 @@ class IndicIdentityTests(unittest.TestCase):
                         "description": "₹499 · reviewed body",
                         "promotionalText": "৳৫৯৯ · reviewed value",
                     }
+                    source.update(
+                        {field: expected[:-2] for field, expected in fields.items()}
+                    )
                     result = external_identity(key, locale, source)
                     for field, expected in fields.items():
                         self.assertEqual(result[field], expected)
                     self.assertEqual(result["description"], source["description"])
                     self.assertEqual(result["promotionalText"], source["promotionalText"])
+
+    def test_source_headlines_never_replace_a_different_store_headline(self):
+        # 商店已換成另一句完整副標時，照商店原文，不再套舊的修復句。
+        for key, locales in SOURCE_HEADLINES.items():
+            for locale, fields in locales.items():
+                with self.subTest(key=key, locale=locale):
+                    source = {field: "Original store copy" for field in fields}
+                    result = external_identity(key, locale, source)
+                    for field in fields:
+                        if key == "tripplanet" and field == "name":
+                            continue
+                        self.assertEqual(result[field], "Original store copy")
 
     def test_registry_brand_rejects_wrong_app_id(self):
         import gen_webstories

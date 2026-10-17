@@ -439,6 +439,12 @@ def _storefront_fact(source: str, answer: bool) -> dict[str, object] | None:
     return result
 
 
+def _store_subtitle(key: str, locale: str) -> str:
+    import build_pages_i18n
+
+    return build_pages_i18n.store_subtitle(key, locale)
+
+
 def _page_content(
     source: str,
     key: str,
@@ -464,7 +470,12 @@ def _page_content(
         campaign,
     )
     promise = _plain_text(promise_match.group(1))
-    if answer and promise.lower().startswith("a practical buying guide for"):
+    # 答案頁卡片名稱下那一行＝該語系的商店副標（App 頁取自頁面 <p><strong>，
+    # 也就是同一份商店副標）；商店沒有該語系副標時才沿用原本的來源。
+    listed = _store_subtitle(key, locale) if answer else ""
+    if listed:
+        promise = listed
+    elif answer and promise.lower().startswith("a practical buying guide for"):
         outcome = " ".join(str(APPS[key].get("sub", "")).split()).rstrip(".")
         access = " ".join(str(APPS[key].get("tag", "")).split()).rstrip(".")
         promise = f"{outcome}. {access}." if access else f"{outcome}."

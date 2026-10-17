@@ -23485,9 +23485,26 @@ class GeneratorTests(unittest.TestCase):
                 "sk",
                 availability,
             )
+            # 答案頁卡片名稱下那一行＝該語系商店副標。
+            self.assertEqual(
+                gen_app_decision_cards._store_subtitle("tripbeelite", "sk"),
+                decision["promise"],
+            )
+            self.assertTrue(decision["promise"])
+            with mock.patch.object(
+                gen_app_decision_cards, "_store_subtitle", return_value=""
+            ):
+                fallback = gen_app_decision_cards._page_content(
+                    generic,
+                    "tripbeelite",
+                    app_id,
+                    True,
+                    "sk",
+                    availability,
+                )
             self.assertIn(
                 gen_app_decision_cards.APPS["tripbeelite"]["sub"],
-                decision["promise"],
+                fallback["promise"],
             )
             weak = rendered.replace(
                 '<data value="4.9">4.9</data>',
@@ -26011,11 +26028,25 @@ class GeneratorTests(unittest.TestCase):
                     locale,
                     localizations,
                 )
+                listed = build_pages_i18n._listed_subtitle(
+                    key,
+                    locale,
+                    localizations.get(locale),
+                )
+                if listed:
+                    # 名稱下的副標照線上商店該語系原文（可能只有品牌名）。
+                    self.assertEqual(
+                        listed,
+                        values["subtitle"],
+                        f"{key}/{locale}/subtitle",
+                    )
                 for field in (
                     "subtitle",
                     "description",
                     "promotionalText",
                 ):
+                    if field == "subtitle" and listed:
+                        continue
                     self.assertTrue(
                         build_pages_i18n._is_native_copy(
                             locale,
@@ -26034,8 +26065,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertRegex(bengali["subtitle"], r"[\u0980-\u09ff]")
         self.assertNotIn("Period Tracker", bengali["subtitle"])
         catalan = build_pages_i18n.external_localized_values("aim990", "ca")
-        self.assertIn("Prepara el TOEIC", catalan["description"])
-        self.assertIn("comprensió lectora", catalan["keywords"])
+        self.assertEqual("Diagnòstic TOEIC en 8 minuts", catalan["subtitle"])
+        self.assertIn("entrenador de diagnòstic", catalan["description"])
+        self.assertIn("vocabulari", catalan["keywords"])
+        self.assertNotIn("Pla de 30 dies", str(catalan.values()))
         self.assertNotIn("Unlock your potential", str(catalan.values()))
 
     def test_localized_llms_reject_missing_locale_instead_of_fallback(self):

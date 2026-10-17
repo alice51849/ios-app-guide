@@ -1322,6 +1322,29 @@ def _first_localized_sentence(value):
     return f"{_word_bounded_excerpt(paragraph, 179)}…"
 
 
+def _listed_subtitle(key, locale, source):
+    """該語系上架文案（data/<key>_full.json）裡的副標，只套品牌／截斷修復。"""
+    listed = _single_line((source or {}).get("subtitle"))
+    if not listed:
+        return ""
+    return _single_line(
+        external_identity(key, locale, {"subtitle": listed}).get("subtitle")
+    )
+
+
+def store_subtitle(key, locale):
+    """名稱下方那一行要顯示的商店副標（與 App 頁 <p><strong> 同一份）。
+
+    卡片、hub、互推卡等凡是「App 名稱＋一行副標」的地方都用這裡，不用
+    registry 的 sub（那是影片／活動用的句子）。該語系沒有上架副標時回傳空字串，
+    由呼叫端決定退回什麼。
+    """
+    source = load_app_locales(key).get(locale)
+    if not isinstance(source, dict):
+        return ""
+    return _listed_subtitle(key, locale, source)
+
+
 def external_localized_values(key, locale, localizations=None):
     localizations = localizations or load_app_locales(key)
     source = localizations.get(locale)
@@ -1332,6 +1355,7 @@ def external_localized_values(key, locale, localizations=None):
         EXTERNAL_APP_LOCALE_OVERRIDES.get(key, {}).get(locale, {})
     )
     values = external_identity(key, locale, values)
+    listed_subtitle = _listed_subtitle(key, locale, source)
 
     description = values.get("description")
     if not _is_native_copy(
@@ -1354,14 +1378,18 @@ def external_localized_values(key, locale, localizations=None):
             )
     values["description"] = description
 
-    if not _is_native_copy(
+    if listed_subtitle:
+        # 名稱下方的副標一律照線上商店該語系原文，連只有品牌名的副標
+        # （例如「Claude, Codex, Copilot, Gemini」）也照登；覆寫只補描述。
+        values["subtitle"] = listed_subtitle
+    elif not _is_native_copy(
         locale,
         "subtitle",
         values.get("subtitle"),
         localizations,
     ):
         values["subtitle"] = _first_localized_sentence(description)
-    if not _is_native_copy(
+    if not listed_subtitle and not _is_native_copy(
         locale,
         "subtitle",
         values.get("subtitle"),

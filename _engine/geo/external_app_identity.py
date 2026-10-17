@@ -27,6 +27,14 @@ SOURCE_HEADLINES = {
 }
 
 
+def _is_truncated_headline(value: object, headline: str) -> bool:
+    """只修 ASC 30 字截斷留下的半截字；商店已換成別的完整文案就照商店。"""
+    if not isinstance(value, str):
+        return False
+    current = " ".join(value.split())
+    return bool(current) and current != headline and headline.startswith(current)
+
+
 def external_brand(key: str, locale: str, text: str) -> str:
     """Replace identity tokens only, preserving the surrounding native copy."""
     if key == "tripplanet" and locale in INDIC_LOCALES:
@@ -41,7 +49,9 @@ def external_identity(key: str, locale: str, attributes: dict) -> dict:
         value = values.get(field)
         if isinstance(value, str):
             values[field] = external_brand(key, locale, value)
-    values.update(SOURCE_HEADLINES.get(key, {}).get(locale, {}))
+    for field, headline in SOURCE_HEADLINES.get(key, {}).get(locale, {}).items():
+        if _is_truncated_headline(values.get(field), headline):
+            values[field] = headline
     if key == "tripplanet" and locale in INDIC_LOCALES:
         values["name"] = TRIP_PLANET_NAME
     return values

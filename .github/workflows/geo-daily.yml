@@ -537,6 +537,9 @@ jobs:
           # ResourceSync must not recreate an unattributed store URL after the
           # final attribution pass.
           python3 zhuyin_resourcesync.py
+          # Legacy persona/cross/seasonal/scenario cards: the line under each
+          # App name follows the store subtitle (only that line is rewritten).
+          python3 sync_card_subtitles.py --pages "$GITHUB_WORKSPACE"
           python3 gen_app_decision_cards.py
           python3 gen_llms.py --cached-live
           python3 hero_tasks.py --today "$GEO_BUILD_DATE"

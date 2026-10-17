@@ -543,6 +543,13 @@ def _social_metadata(key, title, description, canonical, image_alt, locale):
     )
 
 
+def _hub_subtitle(key, locale):
+    """hub 名稱下那一行：該語系的商店副標（與 App 頁同一份）。"""
+    import build_pages_i18n
+
+    return build_pages_i18n.store_subtitle(key, locale)
+
+
 def build_localized_hub(key, locale, availability=None, page_copy=None):
     if locale not in OFFICIAL_LOCALES:
         raise ValueError(f"Unsupported hub locale: {locale}")
@@ -647,7 +654,7 @@ def build_localized_hub(key, locale, availability=None, page_copy=None):
 </head><body>
 <header class="top"><div class="wrap nav"><a href="{e(guide_url)}">{e(guide_label)}</a></div></header>
 <main class="wrap">
-<section class="hero">{_preview_html(key, store_href or guide_url, store_label, name)}<h1>{e(name)}</h1><p class="lead">{e(description)}</p>{store_action}</section>
+<section class="hero">{_preview_html(key, store_href or guide_url, store_label, name)}<h1>{e(name)}</h1><p class="lead">{e(_hub_subtitle(key, locale) or description)}</p>{store_action}</section>
 <section class="card"><h2>{e(section_label)}</h2><div class="ll">{resources_html}</div></section>{searched_as}
 </main>
 <footer class="footer"><div class="wrap"><a href="{e(guide_url)}">{e(name)}</a></div></footer>
@@ -664,7 +671,9 @@ def build_hub(key):
     a = APPS[key]
     e = html.escape
     name = a["name"]
-    sub = (a.get("sub") or a.get("tag") or "").strip()
+    # 名稱下那一行＝商店 en-US 副標；registry 的 sub 是影片／活動句，只在商店
+    # 沒有副標時退回。
+    sub = _hub_subtitle(key, "en-US") or (a.get("sub") or a.get("tag") or "").strip()
     # gen_app_store_qr_ctas.py hashes this page's first App Store link into the
     # QR image file name, and gen_store_attribution.py rewrites that link
     # afterwards, so a token minted here that the attribution pass disagrees

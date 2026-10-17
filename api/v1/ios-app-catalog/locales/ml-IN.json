@@ -2,7 +2,7 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-17",
-  "content_digest": "adaede8286c9e3187dc59d4ad57ee3a7351b1259fd4193ca828c755e41ea57d2",
+  "content_digest": "058b13fa29dda7db85f3334f75fc84645836589d465c91f9202904ddf7f3a4ae",
   "locale": "ml-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -90,7 +90,7 @@
       "key": "aim990",
       "app_store_id": "6784974530",
       "name": "Aim990: ഇംഗ്ലീഷ് കോച്ച്",
-      "summary": "ദൈനംദിന Listening, Reading പരിശീലനം, ദുർബല മേഖലകളിലെ പഠനം, പ്രോഗ്രസ് ട്രാക്കിംഗ് എന്നിവ വഴി TOEIC-നായി തയ്യാറെടുക്കൂ.",
+      "summary": "TOEIC ശൈലിയിലുള്ള കേൾവി, വായന തയ്യാറെടുപ്പിനുള്ള പരിശോധനാധിഷ്ഠിത പരിശീലകനാണ് Aim990. ഇത് ചോദ്യങ്ങളുടെ സംഭരണിയല്ല: നിങ്ങൾ തുറക്കുന്ന ഓരോ സെഷനും നിങ്ങളുടെ സ്വന്തം ഉത്തരങ്ങളുടെ വിവരങ്ങളിൽ നിന്നാണ് നിശ്ചയിക്കപ്പെടുന്നത്.",
       "category": "education",
       "search_terms": [
         "english",
@@ -228,7 +228,7 @@
       "capabilities": {
         "offline": false,
         "no_account": true,
-        "no_ads": false,
+        "no_ads": true,
         "no_tracking": false,
         "private_or_on_device": true,
         "widget": true,

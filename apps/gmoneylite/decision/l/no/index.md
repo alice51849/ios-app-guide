@@ -1,5 +1,5 @@
 ---
-title: "G+Money Lite: Reiseutgifter — Budsjett, utgifter & valuta | iOS App"
+title: "G+Money Lite: Reiseutgifter — Dagsbudsjett, klokke og widget | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/no/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# G+Money Lite: Reiseutgifter — Budsjett, utgifter & valuta | iOS App
+# G+Money Lite: Reiseutgifter — Dagsbudsjett, klokke og widget | iOS App
 
-G+Money Lite — Smart reisevaluta- & utgiftssporer Reisepenger, gjort enkelt Registrer hvert kjøp i lokal valuta og se det straks i din egen valuta – på nett eller offline. Veksle • Live- eller manuelle kurser: Vi henter de nyeste kursene automatisk, eller angi dem selv. Fungerer alltid offline. • Henter de nyeste kursene når du åpner appen (omtrent hver 6. time). Fungerer offline med dine lagrede kurser. • Midtkurs som referanse. Kort og kontanter kan avvike. Utgifter • Daglig budsjett: Valgfritt. Se hvordan hver dag ligger an mot budsjettet. • Per kategori · Reiser · Filtre · Oppføringer • Sikkerhetskopi & gjenoppretting: Inkluderer utgifter, kurser, kategorier og innstillinger. • Widget · Apple Watch Alt blir på enheten din. Ingen konto, ingen sporing. Kurser via en offentlig valutatjeneste. Gratis: kurser, budsjett, oversikt · 1 reise · 3 utgifter Én betaling · Livstidstilgang · Ingen abonnement Lås opp ubegrensede utgifter og reiser for alltid.
+G+Money Lite — Smart reisevaluta- & utgiftssporer Reisepenger, gjort enkelt Registrer hvert kjøp i lokal valuta og se det straks i din egen valuta – på nett eller offline. Veksle • Live- eller manuelle kurser: Vi henter de nyeste kursene automatisk, eller angi dem selv. Fungerer alltid offline. • Henter de nyeste kursene når du åpner appen (omtrent hver 6. time). Fungerer offline med dine lagrede kurser. • Midtkurs som referanse. Kort og kontanter kan avvike. Utgifter • Daglig budsjett: Valgfritt. Se hvordan hver dag ligger an mot budsjettet. • Per kategori · Reiser · Filtre · Oppføringer • Sikkerhetskopi & gjenoppretting: Inkluderer utgifter, kurser, kategorier og innstillinger. • Widget · Apple Watch Alt blir på enheten din. Ingen konto, ingen sporing. Kurser via en offentlig valutatjeneste. Uten kjøp: kurser, budsjett, oversikt · 1 reise · 3 utgifter Én betaling · Ingen abonnement Lås opp ubegrensede utgifter og reiser for alltid. Optimalisert for iPhone Duo.
 
 - Økonomi og reise
 - Gratis å starte

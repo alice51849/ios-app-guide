@@ -1,5 +1,5 @@
 ---
-title: "OnePage PPT : diapos par IA — Vos notes en une page claire | iOS App"
+title: "OnePage PPT : diapos par IA — Présentation à partir de notes | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/fr-CA/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# OnePage PPT : diapos par IA — Vos notes en une page claire | iOS App
+# OnePage PPT : diapos par IA — Présentation à partir de notes | iOS App
 
 Transformez un mur de texte en UNE diapo qui se lit vraiment. OnePage PPT lit ce que vous lui donnez — texte tapé ou collé, captures d'écran, photos, PDF, tableaux CSV —, en dégage les points clés et les met sur une seule diapo 16:9 prête à présenter. COMMENT ÇA MARCHE 1. Ajoutez tout : tapez, collez, photographiez ou importez un PDF ou un chiffrier. 2. Touchez « Créer ma diapo » : le contenu devient des messages clés et le bon graphique. 3. Présentez ou exportez. LE BON VISUEL Les chiffres deviennent des graphiques à colonnes, barres, courbes, anneau ou entonnoir. Les étapes donnent un organigramme, les dates une frise, deux options un comparatif, les constats une matrice ou un arbre. Un graphique n'apparaît que si les données le soutiennent : aucun chiffre n'est inventé. REFAITES-LA À VOTRE GOÛT Six refontes d'un geste — Plus épuré, Plus visuel, Plus professionnel, Plus affirmé, Plus compact, Plus éditorial — refont la diapo avec d'autres graphiques, typographies et mises en page. Verrouillez ce qui vous plaît. EXPORTEZ PARTOUT • .pptx modifiable pour PowerPoint, Keynote et Google Slides • PDF pour partager et imprimer • PNG haute résolution pour documents et courriels MODIFIEZ TOUT Touchez un élément pour le réécrire, changer une image, réordonner les blocs ou le style; l'historique des versions ramène toute version antérieure. CONFIDENTIEL Tout roule sur votre appareil. Vos projets et vos images restent sur votre iPhone ou iPad, et vos exportations n'en sortent que si vous les partagez vous-même. Aucun compte, aucune session ni pistage — et ça marche sans réseau. ACHAT UNIQUE Essayez gratuitement. Lifetime Pro s'achète une fois, sans abonnement.
 

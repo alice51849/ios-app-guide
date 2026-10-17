@@ -1,5 +1,5 @@
 ---
-title: "OnePage PPT: Yapay Zeka Slayt — Notlardan tek sayfalık sunum | iOS App"
+title: "OnePage PPT: Yapay Zeka Slayt — Tek sayfalık sunum hazırlama | iOS App"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/tr/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# OnePage PPT: Yapay Zeka Slayt — Notlardan tek sayfalık sunum | iOS App
+# OnePage PPT: Yapay Zeka Slayt — Tek sayfalık sunum hazırlama | iOS App
 
 Upuzun bir metni, insanların gerçekten okuduğu TEK bir sayfaya dönüştürün. OnePage PPT verdiğiniz her şeyi okur — yazdığınız veya yapıştırdığınız metni, ekran görüntülerini, fotoğrafları, PDF'leri, CSV tablolarını — ana fikirleri çıkarıp sunuma hazır tek bir 16:9 sayfada toplar. ■ NASIL ÇALIŞIR 1. Ne olursa ekleyin: yazın, yapıştırın, fotoğraf çekin ya da PDF/tablo aktarın. 2. "Sayfamı Oluştur"a dokunun. İçerik başlıklara indirgenir, doğru görsele dönüşür. 3. Sunun veya dışa aktarın. ■ DOĞRU GÖRSELİ KENDİ SEÇER Sayılar sütun, çubuk, çizgi, halka veya huni grafiğine dönüşür. Adımlar süreç akışına, tarihler zaman çizelgesine, iki seçenek karşılaştırmaya, bulgular matrise veya hiyerarşiye dönüşür. KPI satırı, veri tablosu ve madde kartları da var. Yalnızca verinin desteklediği grafiği çizer; asla sayı uydurmaz. ■ TEK DOKUNUŞLA YENİDEN TASARIM Altı seçenek — Daha Sade, Daha Görsel, Daha Profesyonel, Daha Çarpıcı, Daha Derli Toplu, Daha Dergi Tarzı — sayfayı farklı grafik, tipografi ve yerleşimle baştan kurar. Beğendiğiniz öğeyi kilitleyin. ■ HER YERE AKTARIN · PowerPoint, Keynote ve Google Slaytlar'da düzenlenebilen .pptx · Paylaşmak ve yazdırmak için PDF · Yüksek çözünürlüklü PNG ■ HER AYRINTIYI DÜZENLEYİN Bir öğeye dokunup metnini, görselini, sırasını ya da stilini değiştirin. Sürüm geçmişi ve yakınlaştırılabilir önizleme de var. ■ TASARIM GEREĞİ GİZLİ Her şey cihazınızda çalışır; projeleriniz ve görselleriniz iPhone veya iPad'inizde kalır, dışa aktardığınız dosyalar ise yalnızca siz paylaştığınızda cihazdan çıkar. Hesap yok, giriş yok, izleme yok; internetsiz çalışır. ■ TEK SEFERLİK SATIN ALMA Ücretsiz deneyin. Lifetime Pro tek seferlik bir satın almadır, abonelik değil.
 

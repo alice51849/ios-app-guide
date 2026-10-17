@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import html
 import json
 import os
 import sys
@@ -155,7 +156,7 @@ class ExternalAppLocaleTests(unittest.TestCase):
                     with self.subTest(key=key, locale=locale):
                         self.assertIn(f'<html lang="{locale}"', content)
                         self.assertIn(
-                            localized["subtitle"].replace("&", "&amp;"),
+                            html.escape(localized["subtitle"]),
                             content,
                         )
                         countryless = (

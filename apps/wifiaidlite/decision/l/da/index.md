@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid Lite — Netværksdiagnose med beviser | iOS App"
+title: "WiFi Aid Lite — Intet internet? Find årsagen | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/da/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid Lite — Netværksdiagnose med beviser | iOS App
+# WiFi Aid Lite — Intet internet? Find årsagen | iOS App
 
-Find det rigtige problem. Hvert værktøj inkluderer én gratis fuld brug. Valgfri livstidsoplåsning som engangskøb til ubegrænset brug—ingen abonnement, reklamer eller sporing. • Start Test — Wi-Fi, DNS og internet med ét tryk • Deep Check — Flere beviser og stabilitet • Tjek Website — Én side eller hele nettet • Beviser — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Ustabil forbindelse — Variation • Testhistorik — Dine data forbliver på denne enhed • Tilsluttet node — Præcis placering finder Wi-Fi og aktuel node Ingen konto, reklamer eller sporing. Dine data forbliver på denne enhed. Hvert værktøj inkluderer én gratis fuld brug. Valgfri livstidsoplåsning som engangskøb til ubegrænset brug—ingen abonnement, reklamer eller sporing.
+Find det rigtige problem. Du kan lave ét fuldt tjek i alt, med et hvilket som helst værktøj, uden køb. Et valgfrit engangskøb i appen låser op for ubegrænsede tjek og sammenligningen før og efter din rettelse—ingen abonnement, reklamer eller sporing. • Start Test — Wi-Fi, DNS og internet med ét tryk • Deep Check — Flere beviser og stabilitet • Tjek Website — Én side eller hele nettet • Beviser — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Ustabil forbindelse — Variation • Testhistorik — Dine data forbliver på denne enhed • Tilsluttet node — Præcis placering finder Wi-Fi og aktuel node Ingen konto, reklamer eller sporing. Dine data forbliver på denne enhed. Du kan lave ét fuldt tjek i alt, med et hvilket som helst værktøj, uden køb. Et valgfrit engangskøb i appen låser op for ubegrænsede tjek og sammenligningen før og efter din rettelse—ingen abonnement, reklamer eller sporing.
 
 - Mere
 - Gratis at komme i gang

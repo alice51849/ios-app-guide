@@ -1,5 +1,5 @@
 ---
-title: "AI Brief: Datoteke u AI upit — Datoteke u jasnom kontekstu | iOS App"
+title: "AI Brief: Datoteke u AI upit — Promptovi iz datoteka i PDF-a | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/hr/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# AI Brief: Datoteke u AI upit — Datoteke u jasnom kontekstu | iOS App
+# AI Brief: Datoteke u AI upit — Promptovi iz datoteka i PDF-a | iOS App
 
-Bolji kontekst. Bolji odgovori. Pretvorite snimke zaslona, datoteke, bilješke i dokumente u jedan jasan sažetak spreman za AI. OBJEDINITE CIJELI KONTEKST • Dodajte snimke zaslona, PDF-ove, datoteke, kopirani tekst, bilješke ili poveznice. Vi birate što ulazi u konačni sažetak. • OCR, čitanje PDF-ova, provjera duplikata, izdvajanje činjenica i otkrivanje privatnih podataka koriste Appleove okvire lokalno na uređaju. • Odaberite jedan ili više izvora iznad. Obrada počinje tek kada nastavite. PROVJERITE ČINJENICE PRIJE NEGO ŠTO IH AI VIDI • Svaka činjenica zadržava izvor i razinu pouzdanosti. Ispravite sve što zahtijeva dodatni kontekst. • Pronađite činjenice, proturječnosti i otvorena pitanja • Provjerite svaku činjenicu, izvor i razinu pouzdanosti prije nego što ih AI vidi. ZAŠTITITE PRIVATNOST • Otkriveni podaci nikada se ne uklanjaju automatski. Prije izvoza svaki podatak zadržite, zamijenite ili uklonite. • Za svako otkriće odaberite zadržavanje, zamjenu ili uklanjanje. AI Brief ne jamči anonimnost. • Zamjene i uklanjanja primjenjuju se pri izvozu. ČIST KONTEKST ZA BILO KOJEG AI ASISTENTA • Strukturirani naslovi i format spreman za izvore • Izradite kontekst jednom. Upotrijebite ga ponovno kad god želite. • Kopiraj AI sažetak • Povijest verzija • Namjenski predlošci VAŠ KONTEKST OSTAJE PRIVATAN • AI Brief ne sadrži oglase trećih strana, praćenje, analitiku ni telemetriju sadržaja. • Pregledajte sažetak prije slanja bilo kojoj AI usluzi.
+Bolji kontekst. Bolji odgovori. Pretvorite snimke zaslona, datoteke, bilješke i dokumente u jedan jasan sažetak spreman za AI. OBJEDINITE CIJELI KONTEKST • Dodajte snimke zaslona, PDF-ove, datoteke, kopirani tekst, bilješke ili poveznice. Vi birate što ulazi u konačni sažetak. • OCR, čitanje PDF-ova, provjera duplikata, izdvajanje činjenica i otkrivanje privatnih podataka koriste Appleove okvire lokalno na uređaju. • Kombinirajte koliko god izvora želite — sve se objedinjuje u jedan pregledan sažetak. PROVJERITE ČINJENICE PRIJE NEGO ŠTO IH AI VIDI • Svaka činjenica zadržava izvor i razinu pouzdanosti. Ispravite sve što zahtijeva dodatni kontekst. • Pronađite činjenice, proturječnosti i otvorena pitanja • Provjerite svaku činjenicu, izvor i razinu pouzdanosti prije nego što ih AI vidi. ZAŠTITITE PRIVATNOST • Otkriveni podaci nikada se ne uklanjaju automatski. Prije izvoza svaki podatak zadržite, zamijenite ili uklonite. • Za svako otkriće odaberite zadržavanje, zamjenu ili uklanjanje. AI Brief ne jamči anonimnost. • Zamjene i uklanjanja primjenjuju se pri izvozu. ČIST KONTEKST ZA BILO KOJEG AI ASISTENTA • Strukturirani naslovi i format spreman za izvore • Izradite kontekst jednom. Upotrijebite ga ponovno kad god želite. • Gotov sažetak kopirajte jednim dodirom i zalijepite u bilo koji AI chat • Povijest verzija — svaki raniji nacrt uvijek vam je pri ruci • Namjenski predlošci VAŠ KONTEKST OSTAJE PRIVATAN • AI Brief ne sadrži oglase trećih strana, praćenje, analitiku ni telemetriju sadržaja. • Pregledajte sažetak prije slanja bilo kojoj AI usluzi. Optimizirano za iPhone Duo.
 
 - Produktivnost
 - Besplatno za početak

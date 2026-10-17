@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: Uren om te kopen — Budget, uitgaven & sparen | iOS App"
+title: "HoursTag: Uren om te kopen — Uurloon en uitgaven inzicht | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/nl-NL/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Uren om te kopen — Budget, uitgaven & sparen | iOS App
+# HoursTag: Uren om te kopen — Uurloon en uitgaven inzicht | iOS App
 
 Wat kost het echt? Niet in euro's, maar in uren van je leven.
 

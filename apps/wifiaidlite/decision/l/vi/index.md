@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid Lite — Chẩn đoán mạng có bằng chứng | iOS App"
+title: "WiFi Aid Lite: Kiểm tra mạng — Mất kết nối? Tìm nguyên nhân | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/vi/index.html"
 modified: "2026-10-17"
@@ -9,16 +9,16 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid Lite — Chẩn đoán mạng có bằng chứng | iOS App
+# WiFi Aid Lite: Kiểm tra mạng — Mất kết nối? Tìm nguyên nhân | iOS App
 
-Tìm ra sự cố thực sự. Miễn phí một lần kiểm tra đầy đủ, tính chung cho tất cả công cụ. Mở khóa trọn đời một lần tùy chọn để dùng không giới hạn—không thuê bao, quảng cáo hay theo dõi. • Chạy kiểm tra — Kiểm tra Wi-Fi, DNS và mạng chỉ với một chạm • Kiểm tra chuyên sâu — Thêm bằng chứng và kiểm tra độ ổn định • Kiểm tra trang web — Kiểm tra một trang hoặc toàn bộ mạng • Bằng chứng — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Kết nối có vẻ không ổn định — Độ trễ biến động • Lịch sử kiểm tra — Hồ sơ riêng tư chỉ lưu trên thiết bị này • Nút đang kết nối — Vị trí chính xác nhận diện Wi-Fi và nút hiện tại Không tài khoản, quảng cáo, phân tích hay theo dõi. Hồ sơ riêng tư chỉ lưu trên thiết bị này. Miễn phí một lần kiểm tra đầy đủ, tính chung cho tất cả công cụ. Mở khóa trọn đời một lần tùy chọn để dùng không giới hạn—không thuê bao, quảng cáo hay theo dõi.
+Tìm ra sự cố thực sự. Không cần mua, bạn có thể kiểm tra đầy đủ tổng cộng một lần với bất kỳ công cụ nào. Một lần mua trong ứng dụng tùy chọn sẽ mở khóa kiểm tra không giới hạn và phần so sánh trước và sau khi sửa—không thuê bao, quảng cáo hay theo dõi. • Chạy kiểm tra — Kiểm tra Wi-Fi, DNS và mạng chỉ với một chạm • Kiểm tra chuyên sâu — Thêm bằng chứng và kiểm tra độ ổn định • Kiểm tra trang web — Kiểm tra một trang hoặc toàn bộ mạng • Bằng chứng — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Kết nối có vẻ không ổn định — Độ trễ biến động • Lịch sử kiểm tra — Hồ sơ riêng tư chỉ lưu trên thiết bị này • Nút đang kết nối — Vị trí chính xác nhận diện Wi-Fi và nút hiện tại Không tài khoản, quảng cáo, phân tích hay theo dõi. Hồ sơ riêng tư chỉ lưu trên thiết bị này. Không cần mua, bạn có thể kiểm tra đầy đủ tổng cộng một lần với bất kỳ công cụ nào. Một lần mua trong ứng dụng tùy chọn sẽ mở khóa kiểm tra không giới hạn và phần so sánh trước và sau khi sửa—không thuê bao, quảng cáo hay theo dõi.
 
 - Khác
 - Bắt đầu miễn phí · mở khóa một lần
 - Không tài khoản
 - App Store · Miễn phí
 
-[Tải WiFi Aid Lite trên App Store](https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
+[Tải WiFi Aid Lite: Kiểm tra mạng trên App Store](https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
 
 [Đọc toàn bộ hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/wifiaidlite.html)
 

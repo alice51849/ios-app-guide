@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/ua/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: сканер кодів",
-        "description": "QR Code Halo зберігає свідомий порядок: спочатку дослідіть розкодований вміст, потім оцініть показані факти й лише після цього оберіть дію. За",
+        "description": "QR Code Halo діє тієї ж миті, коли зчитує код. Скануйте камерою або виберіть фото: посилання відкриваються в браузері, коди входу з ключем доступу й",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "uk",
-          "description": "QR Code Halo зберігає свідомий порядок: спочатку дослідіть розкодований вміст, потім оцініть показані факти й лише після цього оберіть дію. За",
+          "description": "QR Code Halo діє тієї ж миті, коли зчитує код. Скануйте камерою або виберіть фото: посилання відкриваються в браузері, коди входу з ключем доступу й",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/ua/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: ID-фото вдома",
         "description": "Потрібне фото певного розміру? Snapport Lite обрізає ваш портрет точно до вибраного розміру просто на пристрої. Зніміть нове фото або виберіть його з",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: ID-фото вдома",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/ua/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/ua/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Знайдіть реальну проблему. Кожен інструмент містить одне безкоштовне повне використання. Необов'язкове одноразове довічне розблокування для необмеженого",
+        "description": "Знайдіть реальну проблему. Без покупки доступна лише одна повна перевірка загалом, будь-яким інструментом. Необов'язкова одноразова покупка в застосунку",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "uk",
-          "description": "Знайдіть реальну проблему. Кожен інструмент містить одне безкоштовне повне використання. Необов'язкове одноразове довічне розблокування для необмеженого",
+          "description": "Знайдіть реальну проблему. Без покупки доступна лише одна повна перевірка загалом, будь-яким інструментом. Необов'язкова одноразова покупка в застосунку",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/uk.jsonld#offer-wifiaidlite"
           },

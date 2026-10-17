@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid: Najděte chyby sítě — Diagnostika sítě s důkazy | iOS App"
+title: "WiFi Aid: Najděte chyby sítě — Router, mesh, DNS: diagnostika | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/cs/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid: Najděte chyby sítě — Diagnostika sítě s důkazy | iOS App
+# WiFi Aid: Najděte chyby sítě — Router, mesh, DNS: diagnostika | iOS App
 
-Najděte nejpravděpodobnější příčinu pomocí nezávislých testů tras, DNS, TCP, TLS, odezvy a stability. Jedna platba předem, bez předplatného, reklam a sledování. • Spustit — Wi-Fi, DNS a internet jedním klepnutím • Deep Check — Více důkazů a stabilita • Test Stránek — Zjistěte, zda je problém stránka nebo celá síť • Důkazy — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Připojení je nestabilní — Kolísání (Jitter) • Historie — Údaje jsou uloženy jen na tomto zařízení • Apple Watch — Spustit • Widget · iPad — Připojeno · Spustit Žádné účty, reklamy nebo sledování. Údaje jsou uloženy jen na tomto zařízení. Jeden nákup předem v App Storu. Bez předplatného.
+Najděte nejpravděpodobnější příčinu pomocí nezávislých testů tras, DNS, TCP, TLS, odezvy a stability. Jedna platba předem, bez předplatného, reklam a sledování. • Spustit — Wi-Fi, DNS a internet jedním klepnutím • Deep Check — Více důkazů a stabilita • Test Stránek — Zjistěte, zda je problém stránka nebo celá síť • Důkazy — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Připojení je nestabilní — Kolísání (Jitter) • Historie — Údaje jsou uloženy jen na tomto zařízení • Apple Watch — Spustit • Widget · iPad — Připojeno · Spustit Žádné účty, reklamy nebo sledování. Údaje jsou uloženy jen na tomto zařízení. Jeden nákup předem v App Storu. Bez předplatného. Optimalizováno pro iPhone Duo.
 
 - Fotografie a nástroje
 - Placené stažení

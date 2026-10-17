@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid: Diagnòstic de xarxa — Diagnòstic de xarxa amb proves | iOS App"
+title: "WiFi Aid: Diagnòstic de xarxa — Diagnosi de router, mesh i DNS | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/ca/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid: Diagnòstic de xarxa — Diagnòstic de xarxa amb proves | iOS App
+# WiFi Aid: Diagnòstic de xarxa — Diagnosi de router, mesh i DNS | iOS App
 
-Troba la causa més probable amb proves independents de rutes, DNS, TCP, TLS, temps i estabilitat. Un únic pagament inicial, sense subscripcions, anuncis ni seguiment. • Fer un test — Tests de Wi-Fi i DNS en un toc • Test profund — Més proves i estabilitat de xarxa • Provar un web — Comprova si un destí o internet fallen • Proves — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connexió inestable — Fluctuació • Historial — Registres privats només en aquest dispositiu • Apple Watch — Fer un test • Widget · iPad — Connectat · Fer un test Sense compte, anuncis ni rastreig. Registres privats només en aquest dispositiu. Una única compra inicial a l’App Store. Sense subscripció.
+Troba la causa més probable amb proves independents de rutes, DNS, TCP, TLS, temps i estabilitat. Un únic pagament inicial, sense subscripcions, anuncis ni seguiment. • Fer un test — Tests de Wi-Fi i DNS en un toc • Test profund — Més proves i estabilitat de xarxa • Provar un web — Comprova si un destí o internet fallen • Proves — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connexió inestable — Fluctuació • Historial — Registres privats només en aquest dispositiu • Apple Watch — Fer un test • Widget · iPad — Connectat · Fer un test Sense compte, anuncis ni rastreig. Registres privats només en aquest dispositiu. Una única compra inicial a l’App Store. Sense subscripció. Optimitzada per a l'iPhone Duo.
 
 - Fotografia i utilitat
 - Descàrrega de pagament

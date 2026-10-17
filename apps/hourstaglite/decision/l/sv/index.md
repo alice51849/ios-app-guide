@@ -1,5 +1,5 @@
 ---
-title: "HoursTag Lite: Pris i timmar — Det verkliga priset på saker | iOS App"
+title: "HoursTag Lite: Pris i timmar — Medvetna köp: verkligt pris | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/sv/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite: Pris i timmar — Det verkliga priset på saker | iOS App
+# HoursTag Lite: Pris i timmar — Medvetna köp: verkligt pris | iOS App
 
-HoursTag Lite - Det verkliga priset på saker Varje köp kostar timmar av ditt liv. HoursTag Lite omvandlar priser till arbetstid – så att du spenderar med klarhet. Möt ditt värdeprisma - Tidskostnad: Ditt nettovärde per arbetstimme - Typ: Behov - Önskan - Impuls - Ditt värdemönster - Fullständig värdeanalys - Vad kostar ett mål?: Se arbetet bakom ett mål och följ dina framsteg. - Säkerhetskopiering: Inkluderar inkomst, utgifter, mål och inställningar. - Widget - Apple Watch Allt stannar på din enhet. Inget konto, ingen spårning. En betalning · Livstidsåtkomst · Ingen prenumeration Obegränsade val och ändringar Obegränsade mål och framsteg Delning, insikter och säkerhetskopior
+HoursTag Lite - Det verkliga priset på saker Varje köp kostar timmar av ditt liv. HoursTag Lite omvandlar priser till arbetstid – så att du spenderar med klarhet. Möt ditt värdeprisma - Tidskostnad: Ditt nettovärde per arbetstimme - Typ: Behov - Önskan - Impuls - Ditt värdemönster - Fullständig värdeanalys - Vad kostar ett mål?: Se arbetet bakom ett mål och följ dina framsteg. - Säkerhetskopiering: Inkluderar inkomst, utgifter, mål och inställningar. - Widget - Apple Watch Allt stannar på din enhet. Inget konto, ingen spårning. En betalning · Livstidsåtkomst · Ingen prenumeration Obegränsade val och ändringar Obegränsade mål och framsteg Delning, insikter och säkerhetskopior Optimerad för iPhone Duo.
 
 - Ekonomi & resor
 - Gratis att börja · engångsupplåsning

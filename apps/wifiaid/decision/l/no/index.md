@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid: Finn nettverksfeil — Nettverksdiagnose med bevis | iOS App"
+title: "WiFi Aid: Finn nettverksfeil — Ruter-, mesh- og DNS-diagnose | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/no/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid: Finn nettverksfeil — Nettverksdiagnose med bevis | iOS App
+# WiFi Aid: Finn nettverksfeil — Ruter-, mesh- og DNS-diagnose | iOS App
 
-Finn den mest sannsynlige årsaken med uavhengige tester av ruter, DNS, TCP, TLS, svartid og stabilitet. Én forhåndsbetaling, uten abonnement, reklame eller sporing. • Start Test — Wi-Fi, DNS og internett med ett trykk • Deep Check — Mer bevis og stabilitet • Sjekk Nettside — Se om problemet er en side eller nettet • Beviser — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Ustabil tilkobling — Variation • Testhistorikk — Dine data lagres kun på denne enheten • Apple Watch — Start Test • Widget · iPad — Tilkoblet · Start Test Ingen konto, annonser eller sporing. Dine data lagres kun på denne enheten. Ett engangskjøp i App Store. Ingen abonnement.
+Finn den mest sannsynlige årsaken med uavhengige tester av ruter, DNS, TCP, TLS, svartid og stabilitet. Én forhåndsbetaling, uten abonnement, reklame eller sporing. • Start Test — Wi-Fi, DNS og internett med ett trykk • Deep Check — Mer bevis og stabilitet • Sjekk Nettside — Se om problemet er en side eller nettet • Beviser — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Ustabil tilkobling — Variation • Testhistorikk — Dine data lagres kun på denne enheten • Apple Watch — Start Test • Widget · iPad — Tilkoblet · Start Test Ingen konto, annonser eller sporing. Dine data lagres kun på denne enheten. Ett engangskjøp i App Store. Ingen abonnement. Optimalisert for iPhone Duo.
 
 - Foto og verktøy
 - Betalt nedlasting

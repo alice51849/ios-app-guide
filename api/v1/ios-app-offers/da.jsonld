@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/dk/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Scan og opret",
-        "description": "QR Code Halo holder rækkefølgen tydelig: undersøg det afkodede indhold, vurder de synlige fund, og vælg først derefter en handling. Som standard udføres",
+        "description": "QR Code Halo handler, så snart en kode er læst. Scan med kameraet, eller vælg et foto: links åbnes i din browser, koder til login med adgangsnøgle og",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "da",
-          "description": "QR Code Halo holder rækkefølgen tydelig: undersøg det afkodede indhold, vurder de synlige fund, og vælg først derefter en handling. Som standard udføres",
+          "description": "QR Code Halo handler, så snart en kode er læst. Scan med kameraet, eller vælg et foto: links åbnes i din browser, koder til login med adgangsnøgle og",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/dk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Pasfoto hjemme",
         "description": "Skal du bruge et foto i en bestemt størrelse? Snapport Lite beskærer dit portræt præcis til den størrelse, du vælger, direkte på din enhed. Tag et nyt foto",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Pasfoto hjemme",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/dk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/dk/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Find det rigtige problem. Hvert værktøj inkluderer én gratis fuld brug. Valgfri livstidsoplåsning som engangskøb til ubegrænset brug—ingen abonnement",
+        "description": "Find det rigtige problem. Du kan lave ét fuldt tjek i alt, med et hvilket som helst værktøj, uden køb. Et valgfrit engangskøb i appen låser op for",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "da",
-          "description": "Find det rigtige problem. Hvert værktøj inkluderer én gratis fuld brug. Valgfri livstidsoplåsning som engangskøb til ubegrænset brug—ingen abonnement",
+          "description": "Find det rigtige problem. Du kan lave ét fuldt tjek i alt, med et hvilket som helst værktøj, uden køb. Et valgfrit engangskøb i appen låser op for",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-wifiaidlite"
           },

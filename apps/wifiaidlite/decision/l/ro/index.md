@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid Lite — Diagnoză de rețea cu dovezi | iOS App"
+title: "WiFi Aid Lite — Fără internet? Află cauza | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/ro/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid Lite — Diagnoză de rețea cu dovezi | iOS App
+# WiFi Aid Lite — Fără internet? Află cauza | iOS App
 
-Găsește problema reală. Fiecare instrument include o utilizare completă gratuită. Deblocare pe viață opțională, printr-o singură plată, pentru utilizare nelimitată—fără abonament, reclame sau urmărire. • Rulează un Test — Verificări Wi-Fi și DNS cu o atingere • Test Profund — Mai multe dovezi și mostre de stabilitate • Test Website — Un site sau întregul internet • Dovezi — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexiune instabilă — Variație • Istoric Teste — Înregistrări private doar pe acest dispozitiv • Nod conectat — Locația precisă identifică Wi-Fi-ul și nodul actual Fără cont, reclame sau urmărire. Înregistrări private doar pe acest dispozitiv. Fiecare instrument include o utilizare completă gratuită. Deblocare pe viață opțională, printr-o singură plată, pentru utilizare nelimitată—fără abonament, reclame sau urmărire.
+Găsește problema reală. Fără cumpărare poți face în total o singură verificare completă, cu orice instrument. O achiziție unică opțională în aplicație deblochează verificări nelimitate și comparația înainte și după remediere—fără abonament, reclame sau urmărire. • Rulează un Test — Verificări Wi-Fi și DNS cu o atingere • Test Profund — Mai multe dovezi și mostre de stabilitate • Test Website — Un site sau întregul internet • Dovezi — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexiune instabilă — Variație • Istoric Teste — Înregistrări private doar pe acest dispozitiv • Nod conectat — Locația precisă identifică Wi-Fi-ul și nodul actual Fără cont, reclame sau urmărire. Înregistrări private doar pe acest dispozitiv. Fără cumpărare poți face în total o singură verificare completă, cu orice instrument. O achiziție unică opțională în aplicație deblochează verificări nelimitate și comparația înainte și după remediere—fără abonament, reclame sau urmărire.
 
 - Mai mult
 - Început gratuit

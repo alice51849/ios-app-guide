@@ -2131,7 +2131,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/de/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Scanner",
-        "description": "QR Code Halo macht aus einem Scan einen bewussten Ablauf: Inhalt prüfen, sichtbare Hinweise abwägen und erst dann handeln. Standardmäßig wird die Aktion",
+        "description": "QR Code Halo handelt, sobald ein Code gelesen ist. Scanne mit der Kamera oder wähle ein Foto: Links öffnen sich im Browser, Codes für die Anmeldung mit",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2161,7 +2161,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "de-DE",
-          "description": "QR Code Halo macht aus einem Scan einen bewussten Ablauf: Inhalt prüfen, sichtbare Hinweise abwägen und erst dann handeln. Standardmäßig wird die Aktion",
+          "description": "QR Code Halo handelt, sobald ein Code gelesen ist. Scanne mit der Kamera oder wähle ein Foto: Links öffnen sich im Browser, Codes für die Anmeldung mit",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-qrcodehalo"
           },
@@ -2394,7 +2394,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-shotinbox",
         "url": "https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
-        "name": "ShotInbox AI: Sort Screenshots",
+        "name": "ShotInbox AI: Screenshots",
         "description": "Screenshots, endlich sortiert",
         "seller": {
           "@type": "Organization",
@@ -2410,7 +2410,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6802166527"
           },
-          "name": "ShotInbox AI: Sort Screenshots",
+          "name": "ShotInbox AI: Screenshots",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
@@ -2526,7 +2526,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/de/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Passbild machen",
         "description": "Du brauchst ein Foto in einem bestimmten Format? Snapport Lite schneidet dein Porträt direkt auf deinem Gerät exakt auf die gewählte Größe zu. Nimm ein",
         "seller": {
           "@type": "Organization",
@@ -2542,7 +2542,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Passbild machen",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/de/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3252,8 +3252,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/de/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
-        "name": "WiFi Aid Lite",
-        "description": "Das echte Problem. Eine vollständige Prüfung ist kostenlos, insgesamt für alle Tools. Optionaler Einmalkauf für dauerhaft unbegrenzte Nutzung—kein Abo",
+        "name": "WiFi Aid Lite: WLAN-Test",
+        "description": "Das echte Problem. Ohne Kauf ist insgesamt eine vollständige Prüfung möglich, mit einem beliebigen Tool. Ein optionaler Einmalkauf schaltet unbegrenzte",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3268,7 +3268,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6793414462"
           },
-          "name": "WiFi Aid Lite",
+          "name": "WiFi Aid Lite: WLAN-Test",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/de/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
@@ -3283,7 +3283,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "de-DE",
-          "description": "Das echte Problem. Eine vollständige Prüfung ist kostenlos, insgesamt für alle Tools. Optionaler Einmalkauf für dauerhaft unbegrenzte Nutzung—kein Abo",
+          "description": "Das echte Problem. Ohne Kauf ist insgesamt eine vollständige Prüfung möglich, mit einem beliebigen Tool. Ein optionaler Einmalkauf schaltet unbegrenzte",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld#offer-wifiaidlite"
           },

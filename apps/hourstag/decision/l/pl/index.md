@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: Godziny zakupu — Budżet, wydatki, oszczędzanie | iOS App"
+title: "HoursTag: Godziny zakupu — Stawka godzinowa i wydatki | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/pl/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Godziny zakupu — Budżet, wydatki, oszczędzanie | iOS App
+# HoursTag: Godziny zakupu — Stawka godzinowa i wydatki | iOS App
 
 Ile to naprawdę kosztuje? Nie w złotówkach – w godzinach twojego życia.
 

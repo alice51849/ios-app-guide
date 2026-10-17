@@ -1,5 +1,5 @@
 ---
-title: "HoursTag Lite: Cena v hodinách — Spoznajte svoj hranol hodnoty | iOS App"
+title: "HoursTag Lite: Cena v hodinách — Vedomý nákup: skutočná cena | iOS App"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/sk/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite: Cena v hodinách — Spoznajte svoj hranol hodnoty | iOS App
+# HoursTag Lite: Cena v hodinách — Vedomý nákup: skutočná cena | iOS App
 
-HoursTag Lite - Pozrite sa na skutočnú cenu vecí Každý nákup stojí hodiny vášho života. HoursTag Lite premieňa ceny na pracovný čas — aby ste míňali s prehľadom. Spoznajte svoj hranol hodnoty - Cena v čase: Vaša čistá hodnota za hodinu práce - Typ: Potrebujem - Chcem - Impulzívne - Váš vzorec hodnoty - Úplná analýza hodnoty - Koľko bude stáť cieľ?: Pozrite sa na prácu za cieľom — a sledujte svoj pokrok. - Záloha a obnova: Zahŕňa príjmy, výdavky, ciele a preferencie. - Widget - Apple Watch Všetko zostáva na vašom zariadení. Žiadny účet, žiadne sledovanie. Jedna platba · Doživotný prístup · Bez predplatného Neobmedzené rozhodnutia a úpravy Neobmedzené ciele a pokrok Zdieľanie, analýzy a zálohy
+HoursTag Lite - Pozrite sa na skutočnú cenu vecí Každý nákup stojí hodiny vášho života. HoursTag Lite premieňa ceny na pracovný čas — aby ste míňali s prehľadom. Spoznajte svoj hranol hodnoty - Cena v čase: Vaša čistá hodnota za hodinu práce - Typ: Potrebujem - Chcem - Impulzívne - Váš vzorec hodnoty - Úplná analýza hodnoty - Koľko bude stáť cieľ?: Pozrite sa na prácu za cieľom — a sledujte svoj pokrok. - Záloha a obnova: Zahŕňa príjmy, výdavky, ciele a preferencie. - Widget - Apple Watch Všetko zostáva na vašom zariadení. Žiadny účet, žiadne sledovanie. Jedna platba · Doživotný prístup · Bez predplatného Neobmedzené rozhodnutia a úpravy Neobmedzené ciele a pokrok Zdieľanie, analýzy a zálohy Optimalizované pre iPhone Duo.
 
 - Peniaze a cestovanie
 - Zadarmo na začiatok

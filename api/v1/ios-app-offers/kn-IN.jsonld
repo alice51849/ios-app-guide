@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/in/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: ಸ್ಕ್ಯಾನ್, ರಚನೆ",
-        "description": "QR Code Halo ಯೋಚಿಸಿದ ಕ್ರಮವನ್ನು ಉಳಿಸುತ್ತದೆ: decode ಆದ ವಿಷಯ ನೋಡಿ, ಕಾಣುವ findings ಅರ್ಥಮಾಡಿ, ನಂತರವೇ ಕ್ರಮ ಆಯ್ಕೆಮಾಡಿ. ಡಿಫಾಲ್ಟ್ ಆಗಿ ಸ್ಕ್ಯಾನ್ ಮಾಡಿದ ತಕ್ಷಣ ಕ್ರಿಯೆ",
+        "description": "QR Code Halo ಕೋಡ್ ಓದಿದ ಕ್ಷಣವೇ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ಕ್ಯಾಮೆರಾದಿಂದ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ ಅಥವಾ ಫೋಟೋ ಆರಿಸಿ: ಲಿಂಕ್‌ಗಳು ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ತೆರೆಯುತ್ತವೆ, ಪಾಸ್‌ಕೀ ಮೂಲಕ ಸೈನ್",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "kn-IN",
-          "description": "QR Code Halo ಯೋಚಿಸಿದ ಕ್ರಮವನ್ನು ಉಳಿಸುತ್ತದೆ: decode ಆದ ವಿಷಯ ನೋಡಿ, ಕಾಣುವ findings ಅರ್ಥಮಾಡಿ, ನಂತರವೇ ಕ್ರಮ ಆಯ್ಕೆಮಾಡಿ. ಡಿಫಾಲ್ಟ್ ಆಗಿ ಸ್ಕ್ಯಾನ್ ಮಾಡಿದ ತಕ್ಷಣ ಕ್ರಿಯೆ",
+          "description": "QR Code Halo ಕೋಡ್ ಓದಿದ ಕ್ಷಣವೇ ಕೆಲಸ ಮಾಡುತ್ತದೆ. ಕ್ಯಾಮೆರಾದಿಂದ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ ಅಥವಾ ಫೋಟೋ ಆರಿಸಿ: ಲಿಂಕ್‌ಗಳು ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ತೆರೆಯುತ್ತವೆ, ಪಾಸ್‌ಕೀ ಮೂಲಕ ಸೈನ್",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: ಐಡಿ ಫೋಟೋ",
         "description": "ನಿರ್ದಿಷ್ಟ ಗಾತ್ರದ ಫೋಟೋ ಬೇಕೇ? Snapport Lite ನಿಮ್ಮ ಪೋರ್ಟ್ರೇಟ್ ಅನ್ನು ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಗಾತ್ರಕ್ಕೆ ನಿಖರವಾಗಿ, ನೇರವಾಗಿ ನಿಮ್ಮ ಸಾಧನದಲ್ಲೇ ಕ್ರಾಪ್ ಮಾಡುತ್ತದೆ. ಹೊಸ ಫೋಟೋ",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: ಐಡಿ ಫೋಟೋ",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "ನಿಜವಾದ ಸಮಸ್ಯೆಯನ್ನು ಹುಡುಕಿ. ಪ್ರತಿ ಟೂಲ್ ಒಂದು ಬಾರಿ ಉಚಿತ ಸಂಪೂರ್ಣ ಬಳಕೆಯನ್ನು ಒಳಗೊಂಡಿದೆ. ಅಪರಿಮಿತ ಬಳಕೆಗೆ ಐಚ್ಛಿಕ ಒಂದು-ಬಾರಿಯ ಆಜೀವ ಅನ್‌ಲಾಕ್—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು",
+        "description": "ನಿಜವಾದ ಸಮಸ್ಯೆಯನ್ನು ಹುಡುಕಿ. ಖರೀದಿ ಇಲ್ಲದೆ ಯಾವುದೇ ಟೂಲ್‌ನಿಂದ ಒಟ್ಟು ಒಂದು ಬಾರಿ ಸಂಪೂರ್ಣ ಪರಿಶೀಲನೆ ಮಾಡಬಹುದು. ಐಚ್ಛಿಕ ಒಂದು-ಬಾರಿಯ ಇನ್-ಆ್ಯಪ್ ಖರೀದಿಯಿಂದ ಅಪರಿಮಿತ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "kn-IN",
-          "description": "ನಿಜವಾದ ಸಮಸ್ಯೆಯನ್ನು ಹುಡುಕಿ. ಪ್ರತಿ ಟೂಲ್ ಒಂದು ಬಾರಿ ಉಚಿತ ಸಂಪೂರ್ಣ ಬಳಕೆಯನ್ನು ಒಳಗೊಂಡಿದೆ. ಅಪರಿಮಿತ ಬಳಕೆಗೆ ಐಚ್ಛಿಕ ಒಂದು-ಬಾರಿಯ ಆಜೀವ ಅನ್‌ಲಾಕ್—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು",
+          "description": "ನಿಜವಾದ ಸಮಸ್ಯೆಯನ್ನು ಹುಡುಕಿ. ಖರೀದಿ ಇಲ್ಲದೆ ಯಾವುದೇ ಟೂಲ್‌ನಿಂದ ಒಟ್ಟು ಒಂದು ಬಾರಿ ಸಂಪೂರ್ಣ ಪರಿಶೀಲನೆ ಮಾಡಬಹುದು. ಐಚ್ಛಿಕ ಒಂದು-ಬಾರಿಯ ಇನ್-ಆ್ಯಪ್ ಖರೀದಿಯಿಂದ ಅಪರಿಮಿತ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-wifiaidlite"
           },
@@ -3253,7 +3253,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-wifiaid",
         "url": "https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ",
-        "description": "ಸ್ವತಂತ್ರ DNS, TCP, TLS ಮತ್ತು ಸ್ಥಿರತೆ ಪರೀಕ್ಷೆಗಳ ಮೂಲಕ ಸಂಭವನೀಯ ಸಂಪರ್ಕ ಸಮಸ್ಯೆ ಕಂಡುಹಿಡಿಯಿರಿ. ಒಮ್ಮೆ ಮಾತ್ರ ಪಾವತಿಸಿ—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ.",
+        "description": "ಒಂದು ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi‑Fi ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಸಮಸ್ಯೆ ಪರಿಶೀಲಿಸಿ. DNS, TCP, TLS, ವೇಗ, ಜಿಟ್ಟರ್, IPv4 ಮತ್ತು IPv6 ಸಾಕ್ಷ್ಯ ನೋಡಿ ಸರಿಯಾದ ಪರಿಹಾರ ಕೈಗೊಳ್ಳಿ—ಜಾಹೀರಾತು ಅಥವಾ",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3283,7 +3283,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6790467886",
           "inLanguage": "kn-IN",
-          "description": "ಸ್ವತಂತ್ರ DNS, TCP, TLS ಮತ್ತು ಸ್ಥಿರತೆ ಪರೀಕ್ಷೆಗಳ ಮೂಲಕ ಸಂಭವನೀಯ ಸಂಪರ್ಕ ಸಮಸ್ಯೆ ಕಂಡುಹಿಡಿಯಿರಿ. ಒಮ್ಮೆ ಮಾತ್ರ ಪಾವತಿಸಿ—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ.",
+          "description": "ಒಂದು ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi‑Fi ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಸಮಸ್ಯೆ ಪರಿಶೀಲಿಸಿ. DNS, TCP, TLS, ವೇಗ, ಜಿಟ್ಟರ್, IPv4 ಮತ್ತು IPv6 ಸಾಕ್ಷ್ಯ ನೋಡಿ ಸರಿಯಾದ ಪರಿಹಾರ ಕೈಗೊಳ್ಳಿ—ಜಾಹೀರಾತು ಅಥವಾ",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/kn-IN.jsonld#offer-wifiaid"
           },

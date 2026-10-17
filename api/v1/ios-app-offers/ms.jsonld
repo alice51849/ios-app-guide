@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ms.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/my/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Imbas & Cipta",
-        "description": "QR Code Halo mengekalkan urutan yang disengajakan: semak kandungan yang dinyahkod, timbang findings yang dipaparkan, kemudian barulah pilih tindakan",
+        "description": "QR Code Halo terus bertindak sebaik sahaja kod dibaca. Imbas dengan kamera atau pilih foto: pautan dibuka dalam pelayar, kod log masuk dengan kunci",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "ms",
-          "description": "QR Code Halo mengekalkan urutan yang disengajakan: semak kandungan yang dinyahkod, timbang findings yang dipaparkan, kemudian barulah pilih tindakan",
+          "description": "QR Code Halo terus bertindak sebaik sahaja kod dibaca. Imbas dengan kamera atau pilih foto: pautan dibuka dalam pelayar, kod log masuk dengan kunci",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ms.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ms.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/my/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Ambil foto ID",
         "description": "Perlukan gambar dengan saiz tertentu? Snapport Lite memangkas potret anda tepat mengikut saiz yang dipilih, terus pada peranti anda. Ambil gambar baharu",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Ambil foto ID",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/my/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",

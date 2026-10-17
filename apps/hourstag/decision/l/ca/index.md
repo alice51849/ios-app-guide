@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: Hores per comprar — Estalvi, despeses, pressupost | iOS App"
+title: "HoursTag: Hores per comprar — Salari per hora i despeses | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ca/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Hores per comprar — Estalvi, despeses, pressupost | iOS App
+# HoursTag: Hores per comprar — Salari per hora i despeses | iOS App
 
 Quant costa de debò? No en euros, sinó en hores de la teva vida.
 

@@ -1,5 +1,5 @@
 ---
-title: "G+Money Lite: Bani de vacanță — Cheltuieli, buget & valută | iOS App"
+title: "G+Money Lite: Bani de vacanță — Buget zilnic pe ceas și widget | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ro/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# G+Money Lite: Bani de vacanță — Cheltuieli, buget & valută | iOS App
+# G+Money Lite: Bani de vacanță — Buget zilnic pe ceas și widget | iOS App
 
-G+Money Lite — Converter de valută și tracker de cheltuieli inteligent pentru călătorii Bani de călătorie, simplu Înregistrează fiecare achiziție în valuta locală și vezi-o instantaneu în valuta ta de acasă — online sau offline. Conversie • Cursuri live sau manuale: Putem obține cele mai recente cursuri automat, sau le poți seta tu. Funcționează întotdeauna offline. • Obține cele mai recente cursuri când deschizi aplicația (aproximativ la fiecare 6 ore). Funcționează întotdeauna offline cu cursurile tale salvate. • Curs de referință mediu. Cardurile și numerarul pot diferi. Cheltuieli • Limită zilnică: Opțional. Vezi cum se urmărește fiecare zi în raport cu aceasta. • Pe categorie · Călătorii · Filtre · Înregistrări • Backup & restaurare: Include cheltuieli, cursuri, categorii și setări. • Widget · Apple Watch Totul rămâne pe dispozitivul tău. Fără cont, fără urmărire. Cursurile folosesc un serviciu public de cursuri de schimb. Gratuit: cursuri, buget, rezumat · 1 călătorie · 3 cheltuieli O singură plată · Acces pe viață · Fără abonament Deblochează pe viață cheltuieli și călătorii nelimitate.
+G+Money Lite — Converter de valută și tracker de cheltuieli inteligent pentru călătorii Bani de călătorie, simplu Înregistrează fiecare achiziție în valuta locală și vezi-o instantaneu în valuta ta de acasă — online sau offline. Conversie • Cursuri live sau manuale: Putem obține cele mai recente cursuri automat, sau le poți seta tu. Funcționează întotdeauna offline. • Obține cele mai recente cursuri când deschizi aplicația (aproximativ la fiecare 6 ore). Funcționează întotdeauna offline cu cursurile tale salvate. • Curs de referință mediu. Cardurile și numerarul pot diferi. Cheltuieli • Limită zilnică: Opțional. Vezi cum se urmărește fiecare zi în raport cu aceasta. • Pe categorie · Călătorii · Filtre · Înregistrări • Backup & restaurare: Include cheltuieli, cursuri, categorii și setări. • Widget · Apple Watch Totul rămâne pe dispozitivul tău. Fără cont, fără urmărire. Cursurile folosesc un serviciu public de cursuri de schimb. Fără achiziție: cursuri, buget, rezumat · 1 călătorie · 3 cheltuieli O singură plată · Fără abonament Deblochează cheltuieli și călătorii nelimitate. Optimizată pentru iPhone Duo.
 
 - Bani & călătorii
 - Început gratuit

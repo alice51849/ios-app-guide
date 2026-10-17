@@ -1,5 +1,5 @@
 ---
-title: "AI Brief: Ze souborů AI prompt — Soubory v jasném kontextu | iOS App"
+title: "AI Brief: Ze souborů AI prompt — Prompty ze souborů a PDF | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/cs/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# AI Brief: Ze souborů AI prompt — Soubory v jasném kontextu | iOS App
+# AI Brief: Ze souborů AI prompt — Prompty ze souborů a PDF | iOS App
 
-Lepší kontext. Lepší odpovědi. Proměňte snímky obrazovky, soubory, poznámky a dokumenty v jeden přehledný podklad pro AI. SHROMÁŽDĚTE CELÝ KONTEXT • Přidejte snímky obrazovky, PDF, soubory, zkopírovaný text, poznámky nebo odkazy. Sami určíte, co zůstane ve výsledném podkladu. • OCR, čtení PDF, kontrola duplicit, extrakce faktů a detekce soukromých údajů probíhají lokálně pomocí frameworků Apple. • Vyberte jeden nebo více zdrojů výše. Zpracování začne až po pokračování. OVĚŘTE FAKTA, NEŽ JE UVIDÍ AI • U každého faktu zůstává zdroj i míra spolehlivosti. Opravte vše, co vyžaduje širší kontext. • Najděte fakta, rozpory a nezodpovězené otázky • Než data uvidí AI, zkontrolujte každý fakt, zdroj i míru spolehlivosti. CHRAŇTE SOUKROMÍ • Zjištěné údaje se nikdy nemažou automaticky. Před exportem každý údaj ponechte, nahraďte nebo odstraňte. • U každého nálezu zvolte ponechání, nahrazení nebo odstranění. AI Brief neslibuje anonymitu. • Náhrady a odstranění se použijí při exportu. ČISTÝ KONTEXT PRO LIBOVOLNÉHO AI ASISTENTA • Strukturované nadpisy a formátování s odkazy na zdroje • Vytvořte kontext jednou. Použijte ho kdykoli znovu. • Kopírovat podklad pro AI • Historie verzí • Šablony pro konkrétní účely VÁŠ KONTEXT ZŮSTÁVÁ SOUKROMÝ • AI Brief neobsahuje reklamy třetích stran, sledování, analytiku ani telemetrii obsahu. • Před odesláním do libovolné služby AI si podklad zkontrolujte.
+Lepší kontext. Lepší odpovědi. Proměňte snímky obrazovky, soubory, poznámky a dokumenty v jeden přehledný podklad pro AI. SHROMÁŽDĚTE CELÝ KONTEXT • Přidejte snímky obrazovky, PDF, soubory, zkopírovaný text, poznámky nebo odkazy. Sami určíte, co zůstane ve výsledném podkladu. • OCR, čtení PDF, kontrola duplicit, extrakce faktů a detekce soukromých údajů probíhají lokálně pomocí frameworků Apple. • Kombinujte libovolný počet zdrojů — vše se spojí do jednoho přehledného podkladu. OVĚŘTE FAKTA, NEŽ JE UVIDÍ AI • U každého faktu zůstává zdroj i míra spolehlivosti. Opravte vše, co vyžaduje širší kontext. • Najděte fakta, rozpory a nezodpovězené otázky • Než data uvidí AI, zkontrolujte každý fakt, zdroj i míru spolehlivosti. CHRAŇTE SOUKROMÍ • Zjištěné údaje se nikdy nemažou automaticky. Před exportem každý údaj ponechte, nahraďte nebo odstraňte. • U každého nálezu zvolte ponechání, nahrazení nebo odstranění. AI Brief neslibuje anonymitu. • Náhrady a odstranění se použijí při exportu. ČISTÝ KONTEXT PRO LIBOVOLNÉHO AI ASISTENTA • Strukturované nadpisy a formátování s odkazy na zdroje • Vytvořte kontext jednou. Použijte ho kdykoli znovu. • Hotový podklad zkopírujete jedním klepnutím a vložíte do libovolného AI chatu • Historie verzí — každý dřívější koncept máte stále po ruce • Šablony pro konkrétní účely VÁŠ KONTEXT ZŮSTÁVÁ SOUKROMÝ • AI Brief neobsahuje reklamy třetích stran, sledování, analytiku ani telemetrii obsahu. • Před odesláním do libovolné služby AI si podklad zkontrolujte. Optimalizováno pro iPhone Duo.
 
 - Produktivita
 - Zdarma na začátek

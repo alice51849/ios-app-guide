@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/sa/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: مسح وإنشاء",
-        "description": "يضع QR Code Halo الخطوات بترتيب واعٍ: افحص المحتوى المفكوك، وقيّم النتائج الظاهرة، ثم اختر الإجراء بنفسك. افتراضيًا، يُنفَّذ الإجراء فور المسح. لفحص",
+        "description": "ينفّذ QR Code Halo الإجراء لحظة قراءة الرمز. امسح بالكاميرا أو اختر صورة: تُفتح الروابط في المتصفح، وتنتقل رموز تسجيل الدخول بمفتاح المرور وروابط التطبيقات",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "ar-SA",
-          "description": "يضع QR Code Halo الخطوات بترتيب واعٍ: افحص المحتوى المفكوك، وقيّم النتائج الظاهرة، ثم اختر الإجراء بنفسك. افتراضيًا، يُنفَّذ الإجراء فور المسح. لفحص",
+          "description": "ينفّذ QR Code Halo الإجراء لحظة قراءة الرمز. امسح بالكاميرا أو اختر صورة: تُفتح الروابط في المتصفح، وتنتقل رموز تسجيل الدخول بمفتاح المرور وروابط التطبيقات",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/sa/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: التقط صور هوية",
         "description": "تحتاج إلى صورة بمقاس محدد؟ يقص Snapport Lite صورتك الشخصية بدقة على المقاس الذي تختاره، مباشرة على جهازك. التقط صورة جديدة أو اختر واحدة من مكتبتك، وحاذِ",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: التقط صور هوية",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/sa/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3253,7 +3253,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/sa/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "اكتشف المشكلة الحقيقية. فحص كامل واحد مجاني لجميع الأدوات مجتمعة. شراء لمرة واحدة (مدى الحياة) لفتح الاستخدام غير المحدود—بدون اشتراكات، إعلانات، أو تتبع.",
+        "description": "اكتشف المشكلة الحقيقية. يمكنك إجراء فحص كامل واحد إجمالًا، بأي أداة، دون شراء. شراء اختياري لمرة واحدة داخل التطبيق يفتح الفحوصات غير المحدودة ومقارنة ما",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3283,7 +3283,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "ar-SA",
-          "description": "اكتشف المشكلة الحقيقية. فحص كامل واحد مجاني لجميع الأدوات مجتمعة. شراء لمرة واحدة (مدى الحياة) لفتح الاستخدام غير المحدود—بدون اشتراكات، إعلانات، أو تتبع.",
+          "description": "اكتشف المشكلة الحقيقية. يمكنك إجراء فحص كامل واحد إجمالًا، بأي أداة، دون شراء. شراء اختياري لمرة واحدة داخل التطبيق يفتح الفحوصات غير المحدودة ومقارنة ما",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-wifiaidlite"
           },

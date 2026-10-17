@@ -1,5 +1,5 @@
 ---
-title: "HoursTag：价格换工时 — 预算、记账、省钱与储蓄 | iOS App"
+title: "HoursTag：价格换工时 — 月薪时薪计算・花费记账本 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/zh-Hans/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag：价格换工时 — 预算、记账、省钱与储蓄 | iOS App
+# HoursTag：价格换工时 — 月薪时薪计算・花费记账本 | iOS App
 
 这真正要花你多少？不是多少钱——是你生命中的几个小时。
 

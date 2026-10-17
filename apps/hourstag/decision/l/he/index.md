@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: שעות לקנייה — תקציב, חיסכון והוצאות | iOS App"
+title: "HoursTag: שעות לקנייה — שכר שעתי והוצאות | iOS App"
 lang: "he"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/he/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: שעות לקנייה — תקציב, חיסכון והוצאות | iOS App
+# HoursTag: שעות לקנייה — שכר שעתי והוצאות | iOS App
 
 כמה זה באמת עולה? לא רק בשקלים — אלא בשעות מהחיים שלך.
 

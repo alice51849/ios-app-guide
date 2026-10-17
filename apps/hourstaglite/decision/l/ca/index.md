@@ -1,5 +1,5 @@
 ---
-title: "HoursTag Lite: Preu en hores — Prisma de valor | iOS App"
+title: "HoursTag Lite: Preu en hores — Compra conscient: preu real | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/ca/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite: Preu en hores — Prisma de valor | iOS App
+# HoursTag Lite: Preu en hores — Compra conscient: preu real | iOS App
 
-HoursTag Lite - Veure el preu real de les coses Cada compra costa hores de la teva vida. HoursTag Lite transforma els preus en temps de treball — així pots gastar amb claredat. Descobreix el teu prisma de valor - Cost en temps: El teu valor net per hora treballada - Tipus: Necessitat - Desig - Impuls - El teu patró de valor - Anàlisi completa de valor - Quin cost tindrà un objectiu?: Veure el treball darrere d'un objectiu — i seguir el teu progrés. - Còpia de seguretat i restauració: Inclou ingressos, despeses, objectius i preferències. - Widget - Apple Watch Tot es queda al teu dispositiu. Sense compte, sense seguiment. Un sol pagament · Accés de per vida · Sense subscripció Decisions i edicions il·limitades Objectius i progrés il·limitats Compartir, anàlisi i còpies
+HoursTag Lite - Veure el preu real de les coses Cada compra costa hores de la teva vida. HoursTag Lite transforma els preus en temps de treball — així pots gastar amb claredat. Descobreix el teu prisma de valor - Cost en temps: El teu valor net per hora treballada - Tipus: Necessitat - Desig - Impuls - El teu patró de valor - Anàlisi completa de valor - Quin cost tindrà un objectiu?: Veure el treball darrere d'un objectiu — i seguir el teu progrés. - Còpia de seguretat i restauració: Inclou ingressos, despeses, objectius i preferències. - Widget - Apple Watch Tot es queda al teu dispositiu. Sense compte, sense seguiment. Un sol pagament · Accés de per vida · Sense subscripció Decisions i edicions il·limitades Objectius i progrés il·limitats Compartir, anàlisi i còpies Optimitzada per a l'iPhone Duo.
 
 - Diners i viatges
 - Inici gratuït

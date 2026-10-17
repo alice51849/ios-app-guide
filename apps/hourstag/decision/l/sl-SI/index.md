@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: Cena v Urah — Proračun, stroški & prihranki | iOS App"
+title: "HoursTag: Cena v Urah — Urna postavka in stroški | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/sl-SI/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Cena v Urah — Proračun, stroški & prihranki | iOS App
+# HoursTag: Cena v Urah — Urna postavka in stroški | iOS App
 
 Kaj te resnično stane? Ne v evrih — v urah tvojega življenja.
 

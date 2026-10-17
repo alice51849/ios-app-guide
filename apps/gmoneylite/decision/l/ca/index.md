@@ -1,5 +1,5 @@
 ---
-title: "G+Money Lite: Diners de viatge — Despeses, pressupost i canvi | iOS App"
+title: "G+Money Lite: Diners de viatge — Límit diari, rellotge i widget | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ca/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# G+Money Lite: Diners de viatge — Despeses, pressupost i canvi | iOS App
+# G+Money Lite: Diners de viatge — Límit diari, rellotge i widget | iOS App
 
-G+Money Lite — Conversor de moneda de viatge intel·ligent i rastrejador de despeses Dinero de viatge, fet senzill Registra cada compra en la moneda local i veuràs-ho instantàniament en la teva moneda d'inici — en línia o fora de línia. Converteix • Tipus en viu o manuals: Podem obtenir els tipus més recents automàticament, o tu mateix els pots establir. Sempre funciona sense connexió. • Obté els tipus més recents quan obris l'aplicació (aproximadament cada 6 hores). Sempre funciona sense connexió amb els teus tipus desats. • Tipus de referència del mercat mitjà. Les targetes i efectiu poden diferir. Despeses • Límit diari: Opcional. Veure com cada dia es compara amb això. • Per categoria · Viatges · Filtres · Registres • Còpia de seguretat i restauració: Inclou despeses, tipus, categories i configuracions. • Widget · Apple Watch Tot es queda al teu dispositiu. Sense compte, sense seguiment. Els tipus utilitzen un servei públic de tipus de canvi. Gratis: canvi, pressupost i resum · 1 viatge · 3 despeses Un sol pagament · Accés de per vida · Sense subscripció Desbloqueja per sempre despeses i viatges il·limitats.
+G+Money Lite — Conversor de moneda de viatge intel·ligent i rastrejador de despeses Dinero de viatge, fet senzill Registra cada compra en la moneda local i veuràs-ho instantàniament en la teva moneda d'inici — en línia o fora de línia. Converteix • Tipus en viu o manuals: Podem obtenir els tipus més recents automàticament, o tu mateix els pots establir. Sempre funciona sense connexió. • Obté els tipus més recents quan obris l'aplicació (aproximadament cada 6 hores). Sempre funciona sense connexió amb els teus tipus desats. • Tipus de referència del mercat mitjà. Les targetes i efectiu poden diferir. Despeses • Límit diari: Opcional. Veure com cada dia es compara amb això. • Per categoria · Viatges · Filtres · Registres • Còpia de seguretat i restauració: Inclou despeses, tipus, categories i configuracions. • Widget · Apple Watch Tot es queda al teu dispositiu. Sense compte, sense seguiment. Els tipus utilitzen un servei públic de tipus de canvi. Sense compra: canvi, pressupost i resum · 1 viatge · 3 despeses Un sol pagament · Sense subscripció Desbloqueja despeses i viatges il·limitats. Optimitzada per a l'iPhone Duo.
 
 - Diners i viatges
 - Inici gratuït

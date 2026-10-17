@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid: Diagnoza omrežja — Diagnoza omrežja in dokazi | iOS App"
+title: "WiFi Aid: Diagnoza omrežja — Usmerjevalnik, mesh in DNS | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/sl-SI/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid: Diagnoza omrežja — Diagnoza omrežja in dokazi | iOS App
+# WiFi Aid: Diagnoza omrežja — Usmerjevalnik, mesh in DNS | iOS App
 
-Odkrijte najverjetnejši vzrok težave z neodvisnimi preverjanji DNS, TCP, TLS, časovnih zamikov in stabilnosti. Enkratno plačilo — brez naročnine, oglasov ali sledenja. • Hitra preveritev — WiFi, DNS in internetni pregled z enim dotikom • Poglobljena preveritev — Več dokazov in vzorcev stabilnosti • Preveri spletno stran — Ali odpove ena destinacija ali celotni internet • Dokazi — DNS · TCP · TLS · TTFB · HTTP · Neposredni IP · IPv4 · IPv6 • Povezava se zdi nestabilna — Nihanje • Zgodovina preveritev — Zasebni zapisi, shranjeni samo na tej napravi • Apple Watch — Hitra preveritev • Widget · iPad — Povezano · Hitra preveritev Brez računa, oglasov, analitike ali sledenja. Zasebni zapisi, shranjeni samo na tej napravi. Enkratni nakup v App Store. Brez naročnine.
+Z enim dotikom preverite Wi‑Fi in internet. Jasni dokazi za DNS, TCP, TLS, hitrost, nihanje, IPv4 in IPv6 pokažejo pravi naslednji korak—brez oglasov in naročnine. • Začni Test — Wi-Fi, DNS in internet z enim dotikom • Deep Check — Več dokazov in stabilnost • Preveri Spletno Stran — Odkrij, ali je težava na strani ali na spletu • Dokazi — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Povezava je nestabilna — Nihanje (Jitter) • Zgodovina Testov — Podatki ostanejo samo na tej napravi • Apple Watch — Začni Test • Widget · iPad — Povezan · Začni Test Brez računov, oglasov ali sledenja. Podatki ostanejo samo na tej napravi. WiFi Aid je celotna aplikacija z enkratnim plačilom. Brez oglasov, nakupov v aplikaciji ali naročnine. Optimizirano za iPhone Duo.
 
 - Fotografija in pripomočki
 - Plačljiv prenos

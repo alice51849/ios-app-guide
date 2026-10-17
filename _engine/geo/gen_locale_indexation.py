@@ -34,6 +34,7 @@ from official_locales import OFFICIAL_LOCALES  # noqa: E402
 from canonical_urls import canonical_url_for_html  # noqa: E402
 from site_tree_index import SiteTreeIndex  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
+import scaled_content_gate  # noqa: E402
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 SITE = os.environ.get("GEO_SITE", PUBLIC_SITE).rstrip("/")
@@ -74,6 +75,7 @@ class IndexationResult:
     sitemap_stats: dict[str, int]
     dropped_sitemaps: int
     orphan_urls: int
+    scaled_gated: frozenset[str] = frozenset()
 
 
 # ------------------------------------------------------------------ locale model
@@ -159,11 +161,14 @@ def rewrite_pages(
     dead: set[str],
     check: bool,
     tree: SiteTreeIndex | None = None,
+    gated: frozenset[str] = frozenset(),
 ) -> dict[str, int]:
     tree = tree or SiteTreeIndex.scan(pages)
     noindexed = 0
     alternates_cleaned = 0
     reindexed = 0
+    scaled_noindexed = 0
+    scaled_reindexed = 0
     for rel in tree.html_relatives():
         path = tree.path(rel)
         text = path.read_text(encoding="utf-8", errors="ignore")
@@ -176,8 +181,19 @@ def rewrite_pages(
         elif MARK in updated:
             updated = remove_noindex(updated)
             reindexed += 1
+        # Localized copies that only repeat an indexable English page
+        # (scaled_content_gate.py): noindex,follow, reversible by our own mark.
+        if rel in gated:
+            before = updated
+            updated = scaled_content_gate.apply_noindex(updated)
+            if updated != before:
+                scaled_noindexed += 1
+        elif scaled_content_gate.MARK in updated:
+            updated = scaled_content_gate.remove_noindex(updated)
+            scaled_reindexed += 1
         before = updated
         updated = strip_dead_alternates(updated, dead)
+        updated = scaled_content_gate.strip_gated_alternates(updated, gated, SITE)
         if updated != before:
             alternates_cleaned += 1
         if updated != text and not check:
@@ -189,6 +205,8 @@ def rewrite_pages(
         "noindexed": noindexed,
         "reindexed": reindexed,
         "alternates_cleaned": alternates_cleaned,
+        "scaled_noindexed": scaled_noindexed,
+        "scaled_reindexed": scaled_reindexed,
     }
 
 
@@ -265,6 +283,7 @@ def prune_sitemaps(
     dead: set[str],
     check: bool,
     tree: SiteTreeIndex | None = None,
+    gated: frozenset[str] = frozenset(),
 ) -> dict[str, int]:
     removed_dead = 0
     removed_ghost = 0
@@ -307,7 +326,10 @@ def prune_sitemaps(
                 return ""
             stats["kept"] += 1
             kept_urls.add(loc.group(1))
-            return body
+            # A gated page must not stay in a kept URL's hreflang cluster.
+            return scaled_content_gate.strip_gated_sitemap_alternates(
+                body, gated, SITE
+            )
 
         updated = LOC_BLOCK_RE.sub(keep, source)
         removed_dead += stats["dead"]
@@ -486,16 +508,23 @@ def run_indexation(
     pages = pages.resolve()
     tree = tree or SiteTreeIndex.scan(pages)
     dead = non_store_locales(pages, tree)
+    gated = (
+        scaled_content_gate.evaluate(pages, tree, site=SITE).gated
+        if rewrite_html
+        else frozenset()
+    )
     page_stats = (
-        rewrite_pages(pages, dead, check, tree)
+        rewrite_pages(pages, dead, check, tree, gated)
         if rewrite_html
         else {
             "noindexed": 0,
             "reindexed": 0,
             "alternates_cleaned": 0,
+            "scaled_noindexed": 0,
+            "scaled_reindexed": 0,
         }
     )
-    sitemap_stats = prune_sitemaps(pages, dead, check, tree)
+    sitemap_stats = prune_sitemaps(pages, dead, check, tree, gated)
     kept_urls = sitemap_stats.pop("_kept")
     kept = {
         rel
@@ -549,6 +578,7 @@ def run_indexation(
         sitemap_stats=sitemap_stats,
         dropped_sitemaps=dropped_sitemaps,
         orphan_urls=orphans,
+        scaled_gated=gated,
     )
 
 
@@ -558,6 +588,13 @@ def print_result(result: IndexationResult) -> None:
         "pages_noindexed={noindexed} pages_reindexed={reindexed} "
         "pages_alternates_cleaned={alternates_cleaned}".format(
             dead=len(result.dead_locales),
+            **result.page_stats,
+        )
+    )
+    print(
+        "scaled-content-gate: gated={gated} pages_noindexed={scaled_noindexed} "
+        "pages_reindexed={scaled_reindexed}".format(
+            gated=len(result.scaled_gated),
             **result.page_stats,
         )
     )

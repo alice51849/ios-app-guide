@@ -114,6 +114,57 @@ class ExactEdgeRepresentationTests(unittest.TestCase):
             with self.subTest(kwargs=kwargs), self.assertRaises(generation.GenerationError):
                 self.check(self.edge_body(), **kwargs)
 
+    # Cloudflare's previous rotation (live until 2026-10-17): same site token,
+    # different script version and SRI hash.
+    ROTATED_BEACON = (
+        b'<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/'
+        b'v4bc70e2c01a94c73b74392e4234840661791215815920" '
+        b'integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" '
+        b'data-cf-beacon=\'{"version":"2024.11.0","token":"34d707e33e364ac582d0cb00e4243bc0",'
+        b'"r":1,"spa":2}\' crossorigin="anonymous"></script>'
+    )
+
+    def test_rotated_beacon_of_the_same_site_records_its_own_transform(self):
+        body = self.edge_body(self.ROTATED_BEACON)
+        check = self.check(body)
+        self.assertEqual(
+            generation.edge_transform_for(self.ROTATED_BEACON), check["edge_transform"],
+        )
+        self.assertNotEqual(generation.EDGE_TRANSFORM, check["edge_transform"])
+        self.assertEqual(hashlib.sha256(body).hexdigest(), check["response_sha256"])
+        self.assertEqual(hashlib.sha256(self.SOURCE).hexdigest(), check["sha256"])
+        self.assertTrue(generation.validate_edge_check(check, site=generation.EDGE_SITE))
+
+    def test_beacons_outside_the_pinned_shape_fail_closed(self):
+        beacon = generation.EDGE_BEACON
+        tags = (
+            beacon.replace(b"34d707e33e364ac582d0cb00e4243bc0", b"0" * 32),
+            beacon.replace(b"static.cloudflareinsights.com", b"static.cloudflareinsights.com.evil.test"),
+            beacon.replace(b'integrity="sha512-', b'integrity="sha256-'),
+            beacon.replace(b"==\" data-cf-beacon", b"\" data-cf-beacon"),
+            beacon.replace(b'crossorigin="anonymous"', b'crossorigin="use-credentials"'),
+            beacon.replace(b'"version":"2024.11.0"', b'"version":"latest"'),
+            beacon.replace(b"beacon.min.js/v", b"beacon.min.js/v../x"),
+            self.ROTATED_BEACON + b"\n" + beacon,
+        )
+        for tag in tags:
+            with self.subTest(tag=hashlib.sha256(tag).hexdigest()):
+                with self.assertRaises(generation.GenerationError):
+                    self.check(self.edge_body(tag))
+
+    def test_receipts_only_accept_well_formed_beacon_transforms(self):
+        check = self.check(self.edge_body(self.ROTATED_BEACON))
+        for transform in (
+            generation.EDGE_TRANSFORM_PREFIX + "0" * 63,
+            generation.EDGE_TRANSFORM_PREFIX + "G" * 64,
+            "other-transform:" + "0" * 64,
+            generation.EDGE_TRANSFORM + "\n",
+        ):
+            with self.subTest(transform=transform), self.assertRaises(generation.GenerationError):
+                generation.validate_edge_check(
+                    {**check, "edge_transform": transform}, site=generation.EDGE_SITE,
+                )
+
     def test_unknown_beacons_and_arbitrary_html_changes_fail_closed(self):
         bodies = (
             self.edge_body().replace(b"Exact source", b"Altered source"),

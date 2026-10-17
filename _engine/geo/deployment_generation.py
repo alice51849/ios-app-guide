@@ -33,15 +33,34 @@ MAX_BYTES = 16 * 1024 * 1024
 READBACK_USER_AGENT = "Lumi-Deployment-Generation/1"
 EDGE_SITE = "https://open.cait518.cc/ios-app-guide"
 # Cloudflare appends this public, integrity-pinned analytics tag after upload.
-# Only this exact suffix is reversible; all application bytes still match SHA-256.
+# EDGE_BEACON is the current sample; Cloudflare rotates the script version and
+# its SRI hash every few days (10-14, 10-17), so readback accepts exactly one
+# tag of this shape: same host, same site token, same attributes and order,
+# only the version path, SRI hash and beacon version vary in strict formats.
+# Only that single suffix is reversible; all application bytes still match SHA-256.
 EDGE_BEACON = (
     b'<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/'
-    b'v4bc70e2c01a94c73b74392e4234840661791215815920" '
-    b'integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" '
+    b'vce701823e78c4301a35b7e07294d87301792088814092" '
+    b'integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" '
     b'data-cf-beacon=\'{"version":"2024.11.0","token":"34d707e33e364ac582d0cb00e4243bc0",'
     b'"r":1,"spa":2}\' crossorigin="anonymous"></script>'
 )
-EDGE_TRANSFORM = "cloudflare-beacon-sha256:" + hashlib.sha256(EDGE_BEACON).hexdigest()
+EDGE_BEACON_PATTERN = re.compile(
+    rb'<script type="module" src="https://static\.cloudflareinsights\.com/beacon\.min\.js/'
+    rb'v[0-9a-f]{32,64}" '
+    rb'integrity="sha512-[A-Za-z0-9+/]{86}==" '
+    rb'data-cf-beacon=\'\{"version":"[0-9]{4}\.[0-9]{1,2}\.[0-9]{1,3}",'
+    rb'"token":"34d707e33e364ac582d0cb00e4243bc0",'
+    rb'"r":1,"spa":2\}\' crossorigin="anonymous"></script>'
+)
+EDGE_TRANSFORM_PREFIX = "cloudflare-beacon-sha256:"
+
+
+def edge_transform_for(tag: bytes) -> str:
+    return EDGE_TRANSFORM_PREFIX + hashlib.sha256(tag).hexdigest()
+
+
+EDGE_TRANSFORM = edge_transform_for(EDGE_BEACON)
 EDGE_READBACK_METHOD = "https_get_exact_source_bytes_with_pinned_edge_beacon"
 SOURCE_FIELDS = {
     "source_sha", "source_tree", "generator_digest", "dependency_lock_digest",
@@ -405,7 +424,10 @@ def validate_edge_check(check: dict[str, Any], *, site: str) -> bool:
     if (
         site != EDGE_SITE
         or not str(check.get("path", "")).endswith(".html")
-        or check["edge_transform"] != EDGE_TRANSFORM
+        or re.fullmatch(
+            re.escape(EDGE_TRANSFORM_PREFIX) + r"[0-9a-f]{64}",
+            str(check["edge_transform"]),
+        ) is None
         or re.fullmatch(r"[0-9a-f]{64}", str(check.get("response_sha256", ""))) is None
         or check.get("response_sha256") == check.get("sha256")
     ):
@@ -557,16 +579,17 @@ def verified_output_representation(
     actual = hashlib.sha256(body).hexdigest()
     if actual == expected_sha256:
         return body, {}
-    inserted = EDGE_BEACON + b"\n"
-    position = body.rfind(inserted + b"</body>")
-    if (
-        site == EDGE_SITE and relative.endswith(".html")
-        and position >= 0 and body.count(EDGE_BEACON) == 1
-    ):
-        application = body[:position] + body[position + len(inserted):]
+    matches = (
+        list(EDGE_BEACON_PATTERN.finditer(body))
+        if site == EDGE_SITE and relative.endswith(".html") else []
+    )
+    if len(matches) == 1 and body.startswith(b"\n</body>", matches[0].end()):
+        start, end = matches[0].span()
+        application = body[:start] + body[end + 1:]
         if hashlib.sha256(application).hexdigest() == expected_sha256:
             return application, {
-                "response_sha256": actual, "edge_transform": EDGE_TRANSFORM,
+                "response_sha256": actual,
+                "edge_transform": edge_transform_for(matches[0].group(0)),
             }
     raise GenerationError(f"live output digest drift: {relative}")
 

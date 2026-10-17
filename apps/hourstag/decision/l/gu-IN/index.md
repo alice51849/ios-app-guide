@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: સમયથી ખરીદી — ખરેખર કિંમત શું છે? | iOS App"
+title: "HoursTag: સમયથી ખરીદી — કલાકનો પગાર અને ખર્ચ | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/gu-IN/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: સમયથી ખરીદી — ખરેખર કિંમત શું છે? | iOS App
+# HoursTag: સમયથી ખરીદી — કલાકનો પગાર અને ખર્ચ | iOS App
 
 ખરેખર કિંમત શું છે? ડોલરમાં નહીં, પરંતુ તમારા જીવનના કલાકોમાં.
 

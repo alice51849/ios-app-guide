@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/cz/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: čtečka a tvorba",
-        "description": "QR Code Halo zachovává vědomé pořadí: nejdřív prozkoumat dekódovaný obsah, potom posoudit zobrazené nálezy a až pak zvolit akci. Ve výchozím nastavení se",
+        "description": "QR Code Halo jedná hned, jak přečte kód. Naskenujte kód kamerou nebo vyberte fotku: odkazy se otevřou v prohlížeči, kódy pro přihlášení přístupovým",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "cs",
-          "description": "QR Code Halo zachovává vědomé pořadí: nejdřív prozkoumat dekódovaný obsah, potom posoudit zobrazené nálezy a až pak zvolit akci. Ve výchozím nastavení se",
+          "description": "QR Code Halo jedná hned, jak přečte kód. Naskenujte kód kamerou nebo vyberte fotku: odkazy se otevřou v prohlížeči, kódy pro přihlášení přístupovým",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/cz/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Foto na doklady",
         "description": "Potřebujete fotku v přesném rozměru? Snapport Lite ořízne váš portrét přesně na zvolenou velikost, přímo ve vašem zařízení. Vyfoťte novou fotku nebo ji",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Foto na doklady",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/cz/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/cz/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Najděte skutečný problém. Každý nástroj zahrnuje jedno bezplatné plné použití. Volitelné jednorázové doživotní odemknutí pro neomezené používání—bez",
+        "description": "Najděte skutečný problém. Bez nákupu můžete celkem jednou provést úplnou kontrolu libovolným nástrojem. Volitelný jednorázový nákup v aplikaci odemkne",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "cs",
-          "description": "Najděte skutečný problém. Každý nástroj zahrnuje jedno bezplatné plné použití. Volitelné jednorázové doživotní odemknutí pro neomezené používání—bez",
+          "description": "Najděte skutečný problém. Bez nákupu můžete celkem jednou provést úplnou kontrolu libovolným nástrojem. Volitelný jednorázový nákup v aplikaci odemkne",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld#offer-wifiaidlite"
           },

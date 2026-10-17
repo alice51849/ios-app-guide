@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid: Diagnoză de rețea — Diagnoză de rețea cu dovezi | iOS App"
+title: "WiFi Aid: Diagnoză de rețea — Diagnoză router, mesh și DNS | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/ro/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid: Diagnoză de rețea — Diagnoză de rețea cu dovezi | iOS App
+# WiFi Aid: Diagnoză de rețea — Diagnoză router, mesh și DNS | iOS App
 
-Găsește cauza cea mai probabilă prin teste independente de traseu, DNS, TCP, TLS, timpi și stabilitate. O singură plată inițială, fără abonament, reclame sau urmărire. • Rulează un Test — Verificări Wi-Fi și DNS cu o atingere • Test Profund — Mai multe dovezi și mostre de stabilitate • Test Website — Vezi dacă un site sau întregul internet pică • Dovezi — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexiune instabilă — Variație • Istoric Teste — Înregistrări private doar pe acest dispozitiv • Apple Watch — Rulează un Test • Widget · iPad — Conectat · Rulează un Test Fără cont, reclame sau urmărire. Înregistrări private doar pe acest dispozitiv. O singură achiziție inițială în App Store. Fără abonament.
+Găsește cauza cea mai probabilă prin teste independente de traseu, DNS, TCP, TLS, timpi și stabilitate. O singură plată inițială, fără abonament, reclame sau urmărire. • Rulează un Test — Verificări Wi-Fi și DNS cu o atingere • Test Profund — Mai multe dovezi și mostre de stabilitate • Test Website — Vezi dacă un site sau întregul internet pică • Dovezi — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Conexiune instabilă — Variație • Istoric Teste — Înregistrări private doar pe acest dispozitiv • Apple Watch — Rulează un Test • Widget · iPad — Conectat · Rulează un Test Fără cont, reclame sau urmărire. Înregistrări private doar pe acest dispozitiv. O singură achiziție inițială în App Store. Fără abonament. Optimizată pentru iPhone Duo.
 
 - Fotografie & utilitate
 - Descărcare plătită

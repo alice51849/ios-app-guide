@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid: Znajdź błędy sieci — Rzetelna diagnostyka sieci | iOS App"
+title: "WiFi Aid: Znajdź błędy sieci — Router, mesh i DNS: diagnoza | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/pl/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid: Znajdź błędy sieci — Rzetelna diagnostyka sieci | iOS App
+# WiFi Aid: Znajdź błędy sieci — Router, mesh i DNS: diagnoza | iOS App
 
-Znajdź najbardziej prawdopodobną przyczynę dzięki niezależnym testom tras, DNS, TCP, TLS, czasu i stabilności. Jedna opłata z góry, bez subskrypcji, reklam i śledzenia. • Rozpocznij — Wi-Fi, DNS i internet za jednym kliknięciem • Deep Check — Więcej dowodów i stabilność • Sprawdź Stronę — Sprawdź czy problem to strona czy cała sieć • Dowody — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Połączenie jest niestabilne — Wahanie (Jitter) • Historia — Dane są przechowywane tylko na tym urządzeniu • Apple Watch — Rozpocznij • Widget · iPad — Połączono · Rozpocznij Bez konta, reklam i śledzenia. Dane są przechowywane tylko na tym urządzeniu. Jeden zakup z góry w App Store. Bez subskrypcji.
+Znajdź najbardziej prawdopodobną przyczynę dzięki niezależnym testom tras, DNS, TCP, TLS, czasu i stabilności. Jedna opłata z góry, bez subskrypcji, reklam i śledzenia. • Rozpocznij — Wi-Fi, DNS i internet za jednym kliknięciem • Deep Check — Więcej dowodów i stabilność • Sprawdź Stronę — Sprawdź czy problem to strona czy cała sieć • Dowody — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Połączenie jest niestabilne — Wahanie (Jitter) • Historia — Dane są przechowywane tylko na tym urządzeniu • Apple Watch — Rozpocznij • Widget · iPad — Połączono · Rozpocznij Bez konta, reklam i śledzenia. Dane są przechowywane tylko na tym urządzeniu. Jeden zakup z góry w App Store. Bez subskrypcji. Zoptymalizowana pod kątem iPhone'a Duo.
 
 - Zdjęcia i narzędzia
 - Płatne do pobrania

@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: खरीदने के घंटे — यह सच में कितना महंगा है? | iOS App"
+title: "HoursTag: खरीदने के घंटे — प्रति घंटा वेतन और खर्च | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/hi/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: खरीदने के घंटे — यह सच में कितना महंगा है? | iOS App
+# HoursTag: खरीदने के घंटे — प्रति घंटा वेतन और खर्च | iOS App
 
 यह सच में कितना महंगा है? रुपये में नहीं, आपकी ज़िंदगी के घंटों में।
 

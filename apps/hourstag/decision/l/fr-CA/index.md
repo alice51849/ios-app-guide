@@ -1,5 +1,5 @@
 ---
-title: "HoursTag : Heures d’achat — Budget, dépenses & épargne | iOS App"
+title: "HoursTag : Heures d’achat — Salaire horaire & dépenses | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/fr-CA/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag : Heures d’achat — Budget, dépenses & épargne | iOS App
+# HoursTag : Heures d’achat — Salaire horaire & dépenses | iOS App
 
 Ça coûte vraiment combien? Pas seulement en dollars, mais en heures de votre vie.
 

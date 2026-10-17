@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid: Diagnostic réseau — Diagnostic réseau précis | iOS App"
+title: "WiFi Aid: Diagnostic réseau — Diagnostic routeur, mesh, DNS | iOS App"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/fr-CA/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid: Diagnostic réseau — Diagnostic réseau précis | iOS App
+# WiFi Aid: Diagnostic réseau — Diagnostic routeur, mesh, DNS | iOS App
 
-Repérez la cause probable grâce aux vérifications indépendantes des chemins, DNS, TCP, TLS, délais et stabilité. Un seul achat initial, sans abonnement, pub ni suivi. • Lancer un test — Tests Wi-Fi et DNS en un geste • Test complet — Preuves et stabilité réseau • Tester un site — Vérifier un site ou l'internet global • Preuves — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connexion instable — Gigue • Historique — Données privées locales uniquement • Apple Watch — Lancer un test • Widget · iPad — Connecté · Lancer un test Sans compte, pub, ni suivi. Données privées locales uniquement. Un seul achat initial sur l’App Store. Aucun abonnement.
+Repérez la cause probable grâce aux vérifications indépendantes des chemins, DNS, TCP, TLS, délais et stabilité. Un seul achat initial, sans abonnement, pub ni suivi. • Faire une vérification — Tests Wi-Fi et DNS en un geste • Vérification complète — Preuves et stabilité réseau • Vérifier un site — Vérifier un site ou l'internet global • Preuves — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connexion instable — Gigue • Historique — Données privées locales uniquement • Apple Watch — Faire une vérification • Widget · iPad — Connecté · Faire une vérification Sans compte, pub, ni suivi. Données privées locales uniquement. Un seul achat initial sur l’App Store. Aucun abonnement. Optimisée pour iPhone Duo.
 
 - Photo et utilitaire
 - Téléchargement payant

@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid: Löydä verkon viat — Verkon vianmääritys näytöin | iOS App"
+title: "WiFi Aid: Löydä verkon viat — Reititin, mesh, DNS: diagnoosi | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/fi/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid: Löydä verkon viat — Verkon vianmääritys näytöin | iOS App
+# WiFi Aid: Löydä verkon viat — Reititin, mesh, DNS: diagnoosi | iOS App
 
-Löydä todennäköisin syy riippumattomilla reitti-, DNS-, TCP-, TLS-, ajoitus- ja vakaustesteillä. Yksi ennakkomaksu, ei tilausta, mainoksia eikä seurantaa. • Aloita Testi — Wi-Fi, DNS ja netti yhdellä napautuksella • Deep Check — Lisää todisteita • Testaa Sivusto — Onko vika sivulla vai koko verkossa • Todisteet — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Yhteys on epävakaa — Vaihtelu • Testihistoria — Tiedot pidetään tällä laitteella • Apple Watch — Aloita Testi • Widget · iPad — Yhdistetty · Aloita Testi Ei tiliä, mainoksia tai seurantaa. Tiedot pidetään tällä laitteella. Yksi ennakko-ostos App Storessa. Ei tilausta.
+Löydä todennäköisin syy riippumattomilla reitti-, DNS-, TCP-, TLS-, ajoitus- ja vakaustesteillä. Yksi ennakkomaksu, ei tilausta, mainoksia eikä seurantaa. • Aloita Testi — Wi-Fi, DNS ja netti yhdellä napautuksella • Deep Check — Lisää todisteita • Testaa Sivusto — Onko vika sivulla vai koko verkossa • Todisteet — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Yhteys on epävakaa — Vaihtelu • Testihistoria — Tiedot pidetään tällä laitteella • Apple Watch — Aloita Testi • Widget · iPad — Yhdistetty · Aloita Testi Ei tiliä, mainoksia tai seurantaa. Tiedot pidetään tällä laitteella. Yksi ennakko-ostos App Storessa. Ei tilausta. Optimoitu iPhone Duo -puhelimelle.
 
 - Kuva & apuohjelma
 - Maksullinen lataus

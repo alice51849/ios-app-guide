@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ — ଆପଣଙ୍କ ଜୀବନର ଘଣ୍ଟାରେ ମୂଲ୍ୟ କେତେ? | iOS App"
+title: "HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ — ଘଣ୍ଟା ମଜୁରି ଓ ଖର୍ଚ୍ଚ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/or-IN/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ — ଆପଣଙ୍କ ଜୀବନର ଘଣ୍ଟାରେ ମୂଲ୍ୟ କେତେ? | iOS App
+# HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ — ଘଣ୍ଟା ମଜୁରି ଓ ଖର୍ଚ୍ଚ | iOS App
 
 ଆପଣଙ୍କ ଜୀବନର ଘଣ୍ଟାରେ ମୂଲ୍ୟ କେତେ?
 

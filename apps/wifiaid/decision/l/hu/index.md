@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid: Hálózati hibák — Hálózatdiagnosztika tényekkel | iOS App"
+title: "WiFi Aid: Hálózati hibák — Router, mesh, DNS diagnosztika | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/hu/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid: Hálózati hibák — Hálózatdiagnosztika tényekkel | iOS App
+# WiFi Aid: Hálózati hibák — Router, mesh, DNS diagnosztika | iOS App
 
-Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és követés nélkül. • Teszt Indítása — Wi-Fi, DNS és internet egyetlen érintéssel • Deep Check — Több bizonyíték és stabilitás • Weboldal Teszt — Tudd meg, hogy a weboldal vagy a net rossz • Bizonyíték — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • A kapcsolat instabil — Ingadozás • Teszt Előzmények — Az adatokat csak az eszköz tárolja • Apple Watch — Teszt Indítása • Widget · iPad — Kapcsolódva · Teszt Indítása Nincs fiók, hirdetés vagy követés. Az adatokat csak az eszköz tárolja. Egyetlen előzetes vásárlás az App Store-ban. Nincs előfizetés.
+Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és követés nélkül. • Teszt Indítása — Wi-Fi, DNS és internet egyetlen érintéssel • Deep Check — Több bizonyíték és stabilitás • Weboldal Teszt — Tudd meg, hogy a weboldal vagy a net rossz • Bizonyíték — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • A kapcsolat instabil — Ingadozás • Teszt Előzmények — Az adatokat csak az eszköz tárolja • Apple Watch — Teszt Indítása • Widget · iPad — Kapcsolódva · Teszt Indítása Nincs fiók, hirdetés vagy követés. Az adatokat csak az eszköz tárolja. Egyetlen előzetes vásárlás az App Store-ban. Nincs előfizetés. iPhone Duo-ra optimalizálva.
 
 - Fotó & segédprogram
 - Fizetős letöltés

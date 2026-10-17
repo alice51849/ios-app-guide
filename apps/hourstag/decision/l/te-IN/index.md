@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: కొనుగోలు సమయం — మీరు నిజంగా ఎంత ఖర్చు చేస్తున్నారు? | iOS App"
+title: "HoursTag: కొనుగోలు సమయం — గంట వేతనం, ఖర్చు | iOS App"
 lang: "te-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/te-IN/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: కొనుగోలు సమయం — మీరు నిజంగా ఎంత ఖర్చు చేస్తున్నారు? | iOS App
+# HoursTag: కొనుగోలు సమయం — గంట వేతనం, ఖర్చు | iOS App
 
 మీరు నిజంగా ఎంత ఖర్చు చేస్తున్నారు? డాలర్లలో కాదు — మీ జీవితంలో గంటల్లో.
 

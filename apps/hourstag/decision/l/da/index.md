@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: Timer at købe — Budget, udgifter & opsparing | iOS App"
+title: "HoursTag: Timer at købe — Timeløn og forbrug | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/da/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Timer at købe — Budget, udgifter & opsparing | iOS App
+# HoursTag: Timer at købe — Timeløn og forbrug | iOS App
 
 Hvad koster det egentlig? Ikke i kroner – i timer af dit liv.
 

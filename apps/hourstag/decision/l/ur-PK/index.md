@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: وقت کی قیمت — حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔ | iOS App"
+title: "HoursTag: وقت کی قیمت — فی گھنٹہ اجرت اور اخراجات | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ur-PK/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: وقت کی قیمت — حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔ | iOS App
+# HoursTag: وقت کی قیمت — فی گھنٹہ اجرت اور اخراجات | iOS App
 
 حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔
 

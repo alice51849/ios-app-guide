@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: Ώρες αγοράς — Έξοδα, αποταμίευση & budget | iOS App"
+title: "HoursTag: Ώρες αγοράς — Ωριαία αμοιβή και έξοδα | iOS App"
 lang: "el"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/el/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Ώρες αγοράς — Έξοδα, αποταμίευση & budget | iOS App
+# HoursTag: Ώρες αγοράς — Ωριαία αμοιβή και έξοδα | iOS App
 
 Πόσο κοστίζει πραγματικά; Όχι σε ευρώ, αλλά σε ώρες από τη ζωή σου.
 

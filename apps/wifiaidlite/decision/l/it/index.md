@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid Lite — Diagnosi di rete affidabile | iOS App"
+title: "WiFi Aid Lite — Niente internet? Ecco perché | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/it/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid Lite — Diagnosi di rete affidabile | iOS App
+# WiFi Aid Lite — Niente internet? Ecco perché | iOS App
 
-Trova il vero problema. Un controllo completo è gratuito, in totale per tutti gli strumenti. Sblocco a vita opzionale una tantum per uso illimitato: nessun abbonamento, pubblicità o tracciamento. • Avvia test — Test Wi-Fi e DNS in un tocco • Test profondo — Più prove e stabilità di rete • Testa un sito — Un sito o internet in generale • Prove — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connessione instabile — Variazione • Cronologia — Dati privati solo su questo dispositivo • Nodo connesso — La posizione precisa identifica il Wi-Fi e il nodo attuale Nessun account, annuncio o tracciamento. Dati privati solo su questo dispositivo. Un controllo completo è gratuito, in totale per tutti gli strumenti. Sblocco a vita opzionale una tantum per uso illimitato: nessun abbonamento, pubblicità o tracciamento.
+Trova il vero problema. Puoi fare un solo controllo completo in totale, con qualsiasi strumento, senza acquisto. Un acquisto in-app una tantum facoltativo sblocca controlli illimitati e il confronto prima e dopo la correzione: nessun abbonamento, pubblicità o tracciamento. • Avvia test — Test Wi-Fi e DNS in un tocco • Test profondo — Più prove e stabilità di rete • Testa un sito — Un sito o internet in generale • Prove — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connessione instabile — Variazione • Cronologia — Dati privati solo su questo dispositivo • Nodo connesso — La posizione precisa identifica il Wi-Fi e il nodo attuale Nessun account, annuncio o tracciamento. Dati privati solo su questo dispositivo. Puoi fare un solo controllo completo in totale, con qualsiasi strumento, senza acquisto. Un acquisto in-app una tantum facoltativo sblocca controlli illimitati e il confronto prima e dopo la correzione: nessun abbonamento, pubblicità o tracciamento.
 
 - Altro
 - Gratis per iniziare · sblocco unico

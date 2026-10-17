@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/fi/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: skannaa ja luo",
-        "description": "QR Code Halo etenee harkitusti: tutki purettu sisältö, arvioi näkyvät havainnot ja valitse toiminto vasta sen jälkeen. Oletuksena toiminto suoritetaan heti",
+        "description": "QR Code Halo toimii heti, kun koodi on luettu. Skannaa kameralla tai valitse kuva: linkit avautuvat selaimessa, pääsyavaimella kirjautumisen koodit ja",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "fi",
-          "description": "QR Code Halo etenee harkitusti: tutki purettu sisältö, arvioi näkyvät havainnot ja valitse toiminto vasta sen jälkeen. Oletuksena toiminto suoritetaan heti",
+          "description": "QR Code Halo toimii heti, kun koodi on luettu. Skannaa kameralla tai valitse kuva: linkit avautuvat selaimessa, pääsyavaimella kirjautumisen koodit ja",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/fi/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Ota passikuvat",
         "description": "Tarvitsetko kuvan tarkassa koossa? Snapport Lite rajaa muotokuvasi juuri valitsemaasi kokoon suoraan laitteellasi. Ota uusi kuva tai valitse kirjastosta",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Ota passikuvat",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/fi/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/fi/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Löydä oikea ongelma. Jokainen työkalu sisältää yhden ilmaisen täyden käytön. Valinnainen kertaluontoinen elinikäinen avaus rajattomaan käyttöön—ei tilausta",
+        "description": "Löydä oikea ongelma. Ilman ostoa voit tehdä yhteensä yhden täyden tarkistuksen millä tahansa työkalulla. Valinnainen kertaosto sovelluksessa avaa",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "fi",
-          "description": "Löydä oikea ongelma. Jokainen työkalu sisältää yhden ilmaisen täyden käytön. Valinnainen kertaluontoinen elinikäinen avaus rajattomaan käyttöön—ei tilausta",
+          "description": "Löydä oikea ongelma. Ilman ostoa voit tehdä yhteensä yhden täyden tarkistuksen millä tahansa työkalulla. Valinnainen kertaosto sovelluksessa avaa",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-wifiaidlite"
           },

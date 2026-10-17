@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: खरेदी वेळेची किंमत — तुमच्या आयुष्याची खरी किंमत काय आहे? | iOS App"
+title: "HoursTag: खरेदी वेळेची किंमत — तासाचा पगार आणि खर्च | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/mr-IN/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: खरेदी वेळेची किंमत — तुमच्या आयुष्याची खरी किंमत काय आहे? | iOS App
+# HoursTag: खरेदी वेळेची किंमत — तासाचा पगार आणि खर्च | iOS App
 
 तुमच्या आयुष्याची खरी किंमत काय आहे?
 

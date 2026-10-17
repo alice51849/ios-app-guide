@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid Lite — Diagnóstico de rede fiável | iOS App"
+title: "WiFi Aid Lite — Sem internet? Veja a causa | iOS App"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/pt-PT/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid Lite — Diagnóstico de rede fiável | iOS App
+# WiFi Aid Lite — Sem internet? Veja a causa | iOS App
 
-Cada ferramenta inclui um uso gratuito. Desbloqueio vitalício opcional de pagamento único para uso ilimitado: sem assinaturas, anúncios ou rastreamento. • Fazer um Teste — Testes de Wi-Fi e DNS num só toque • Teste Profundo — Mais provas e estabilidade da rede • Testar um Site — Um site ou a internet em geral • Provas — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • A ligação parece instável — Flutuação • Histórico — Registos privados apenas neste dispositivo • Nó ligado — A localização exata identifica o Wi-Fi e o nó atual Sem conta, anúncios ou rastreio. Registos privados apenas neste dispositivo. Cada ferramenta inclui um uso gratuito. Desbloqueio vitalício opcional de pagamento único para uso ilimitado: sem assinaturas, anúncios ou rastreamento.
+Pode fazer uma verificação completa no total, com qualquer ferramenta, sem compra. Uma compra única opcional na app desbloqueia verificações ilimitadas e a comparação antes e depois da correção: sem assinaturas, anúncios ou rastreamento. • Fazer um Teste — Testes de Wi-Fi e DNS num só toque • Teste Profundo — Mais provas e estabilidade da rede • Testar um Site — Um site ou a internet em geral • Provas — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • A ligação parece instável — Flutuação • Histórico — Registos privados apenas neste dispositivo • Nó ligado — A localização exata identifica o Wi-Fi e o nó atual Sem conta, anúncios ou rastreio. Registos privados apenas neste dispositivo. Pode fazer uma verificação completa no total, com qualquer ferramenta, sem compra. Uma compra única opcional na app desbloqueia verificações ilimitadas e a comparação antes e depois da correção: sem assinaturas, anúncios ou rastreamento.
 
 - Mais
 - Grátis para começar · desbloqueio único

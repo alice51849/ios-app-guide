@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-17T15:32:38+0800",
- "count": 50,
- "content_sha256": "037d70c198584a81c161ca218c231f689904138dcd4324caf14018eb9cfb1b3b",
+ "source_generated": "2026-10-17T16:03:14+0800",
+ "count": 51,
+ "content_sha256": "8d379c1491e1fdaa5afed5b2ee3d2e433b4c65b2a720704973b32867f2f925df",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -839,6 +839,25 @@
     "zh-TW": {
      "title": "Sono Note：語音轉文字筆記",
      "short_description": "語音轉文字的錄音筆記：說完自動整理出逐字稿、摘要、重點與待辦事項"
+    }
+   }
+  },
+  "stayclock": {
+   "ios_app_id": "6814035888",
+   "ios_name": "Stay Clock",
+   "android_folder": "54_StayClock",
+   "package": "com.alice51849.StayClock",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "paid": false,
+   "first_seen": "2026-10-17T16:03:14+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Stay Clock: Flip Desk Clock"
+    },
+    "zh-TW": {
+     "title": "Stay Clock：翻頁桌鐘・床頭常亮時鐘"
     }
    }
   },

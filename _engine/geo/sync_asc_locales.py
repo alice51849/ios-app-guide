@@ -24,13 +24,9 @@ from official_locales import (  # noqa: E402
 from videogen.registry import APPSTORE  # noqa: E402
 
 
-OUTPUT_FILES = {
-    "mochi": "mochi_full.json",
-    "scanto": "scanto_full.json",
-    "sereno": "sereno_full.json",
-    "tripbee": "tripbee_full.json",
-    "tripplanet": "tripplanet_full.json",
-}
+# Every roster App exports to data/<key>_full.json, the copy bank the Guide,
+# support sites and threads-autopilot contracts read.
+OUTPUT_FILES = {key: f"{key}_full.json" for key in APPSTORE}
 REQUIRED_FIELDS = ("name", "subtitle", "description", "keywords", "promotionalText")
 PUBLIC_STATES = {"READY_FOR_SALE", "READY_FOR_DISTRIBUTION"}
 
@@ -147,15 +143,45 @@ def parse_args():
     return parser.parse_args()
 
 
+def merge_existing(path, payload):
+    """Keep fields this export does not own (e.g. subtitle_orig) on each locale."""
+    try:
+        existing = json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, ValueError):
+        return payload
+    if not isinstance(existing, dict):
+        return payload
+    merged = {}
+    for locale, fields in payload.items():
+        old = existing.get(locale)
+        extra = {
+            name: value
+            for name, value in (old.items() if isinstance(old, dict) else ())
+            if name not in REQUIRED_FIELDS
+        }
+        merged[locale] = {**fields, **extra}
+    return merged
+
+
 def main():
     args = parse_args()
     keys = args.apps or list(OUTPUT_FILES)
+    failed = []
     for key in keys:
-        payload = fetch_public_localizations(key)
+        try:
+            payload = fetch_public_localizations(key)
+        except Exception as exc:  # one App's gap must not hide the rest
+            failed.append(key)
+            print(f"✗ {key}: {exc}", file=sys.stderr)
+            continue
         destination = args.output_dir / OUTPUT_FILES[key]
-        write_json(destination, payload)
+        write_json(destination, merge_existing(destination, payload))
         print(f"✓ {key}: {len(payload)} public locales → {destination}")
+    if failed:
+        print(f"failed: {','.join(failed)}", file=sys.stderr)
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

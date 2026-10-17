@@ -14,7 +14,7 @@
   "deployment_state": "generated_not_deployed",
   "expected_outputs": [
     {
-      "generated_sha256": "84d77233afc8fd7d0f535d2da8e18b755eef5aa1a32f0b5f7e8e926e1a6ed4f5",
+      "generated_sha256": "f9b605b059beebdc69049e5cb02b836dc3031120241864ee82097c524591e62d",
       "kind": "conversion_contracts",
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.json"
     },
@@ -29,7 +29,7 @@
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "eb018e9ce37f9009ec5de45bed011b0d955dbd26c62abfecea866fc9093566cd",
+      "generated_sha256": "5b4b8c553957f894dd5d08ba8eba5f57cfb4950b66d77bd39c997f709c41ed22",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -84,7 +84,7 @@
       "relative_path": "en-US/decide/dailymate/complete-travel-sentences-on-watch.html"
     },
     {
-      "generated_sha256": "3f58d7d5e2cdbf9e7a806b12bd0f93bb29b6540fa5871c146504b891bd97e9e4",
+      "generated_sha256": "a33c90cee3fb396b51cfef1ddb09100d5b0ebcd9e8a037c3f9be7b5ea13a3327",
       "kind": "route_html",
       "relative_path": "en-US/decide/dailymatelite/free-situational-phrasebook-before-trip.html"
     },
@@ -99,7 +99,7 @@
       "relative_path": "en-US/decide/gmoney/convert-and-log-travel-spending-offline.html"
     },
     {
-      "generated_sha256": "47b078c5d1f7ba261ef028c59f9eaf68d7f42394138b5ba97c7c0dad3c7eec15",
+      "generated_sha256": "84617eafed3c31e7631c32ad5e749dbe0f545f9043597a5380593cdeb9432657",
       "kind": "route_html",
       "relative_path": "en-US/decide/gmoneylite/test-multi-currency-trip-budget-free.html"
     },
@@ -124,7 +124,7 @@
       "relative_path": "en-US/decide/lockhour/stop-social-apps-during-study-blocks.html"
     },
     {
-      "generated_sha256": "06ef185b65479bd807e0a5f21cef0a042b61da408dc1696b65dfdeaa79fb5c51",
+      "generated_sha256": "c84d45e9fa3973a5857398fda6d7b0eceb28fe3fbe26618c1055549f389af784",
       "kind": "route_html",
       "relative_path": "en-US/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html"
     },
@@ -134,7 +134,7 @@
       "relative_path": "en-US/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html"
     },
     {
-      "generated_sha256": "92df2c4f636ee1a77515e90e3005a532d166f5bf75fe58767fe8296293f6a281",
+      "generated_sha256": "d1eb69eb3a76df58d6eee65a569a723c787cfa38ade136d0e76c6f94697e5b1c",
       "kind": "route_html",
       "relative_path": "en-US/decide/lumiletters/try-phonics-before-one-time-unlock.html"
     },
@@ -154,7 +154,7 @@
       "relative_path": "en-US/decide/lumimathpro/complete-math-thinking-space-adventure.html"
     },
     {
-      "generated_sha256": "2981d0f4901fe0d724c0bd9a0c788694113db80aa53e0d33e97d8f39d6bb10c2",
+      "generated_sha256": "9a200dc47383f569be8ab1470bc73695e1b0e8f1f44e563ef44a19547e740ee7",
       "kind": "route_html",
       "relative_path": "en-US/decide/lumimission/end-daily-routine-battles-with-play.html"
     },
@@ -169,12 +169,12 @@
       "relative_path": "en-US/decide/lumiweather/decide-what-child-wears-outside.html"
     },
     {
-      "generated_sha256": "7cf4296cc1543dfced63f03e893ff69c3c725f1f695be4d243d49e29a053c4da",
+      "generated_sha256": "579326efac10c3abfaa58e7139452dbefaee4c720ac9ca0354f664c0ec48f769",
       "kind": "route_html",
       "relative_path": "en-US/decide/maskmyfile/redact-client-files-before-sharing.html"
     },
     {
-      "generated_sha256": "95c2a33add999a091447259ea0afecadde0f3e9f3f7e00cfc3afaff14fcf1fd6",
+      "generated_sha256": "2e680107350667fb5edfef439022c8dfb5b564f0ee8115b67e1c4403bd3d3dba",
       "kind": "route_html",
       "relative_path": "en-US/decide/mochi/cozy-checklist-without-project-overhead.html"
     },
@@ -214,7 +214,7 @@
       "relative_path": "en-US/decide/qrcodehalo/qr-scanner-that-shows-the-full-link-before-opening.html"
     },
     {
-      "generated_sha256": "0367380ec31a72089c0486fe3992d1e7fa7eb0f43b4b259ea2183e7ecdc60beb",
+      "generated_sha256": "8c639756d6e0ade03dc17da2de50178ababb96360741923c4397abf94103695b",
       "kind": "route_html",
       "relative_path": "en-US/decide/savetag/turn-saved-links-into-a-readable-queue.html"
     },
@@ -239,7 +239,7 @@
       "relative_path": "en-US/decide/snapport/make-passport-photo-at-home.html"
     },
     {
-      "generated_sha256": "19da26348affe726633b43c437ba7a1b455c1c767d1ca3c5f45cb7e2edce2d9f",
+      "generated_sha256": "765f2bb4ecf62cc40a36d6c3ad8628aa3674f94ef247df47b1c21ad6e28dee44",
       "kind": "route_html",
       "relative_path": "en-US/decide/snapportlite/test-passport-photo-layout-free.html"
     },
@@ -349,7 +349,7 @@
       "relative_path": "zh-Hant/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html"
     },
     {
-      "generated_sha256": "66627da64d129d66d2f5159c69ae54f3e60bc290df570fab8d80b7ffe3edc501",
+      "generated_sha256": "31234fb59b2d41aa4369c38ecc24949be46e540452aeee66e6ed1d88dd8c433f",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/mochi/cozy-checklist-without-project-overhead.html"
     },
@@ -377,7 +377,7 @@
     "public_apps": 53,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "23eb5a608d2fdf0fcda500203c36f59969d046ad565d1e83d1e9b7a41f346eda",
+  "manifest_digest": "9814a9f91b5cf4e198b4e19c8a4b27e0f81fd819dedb836639e2e5e8e6eedf23",
   "owner": "high_intent_decision_routes",
   "release_contract_digest": "65146dc15e36e9ee111d26b33e33ca599acfafc1776f1c785f89dc909980f317",
   "release_state": "exact",
@@ -563,8 +563,8 @@
       "creative_id": "dailymatelite:free-situational-phrasebook-before-trip:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "3f58d7d5e2cdbf9e7a806b12bd0f93bb29b6540fa5871c146504b891bd97e9e4",
-      "record_digest": "4785f1828b4315e522299d95b44a5b657432a95ef3a2890e840651e306dede74",
+      "output_sha256": "a33c90cee3fb396b51cfef1ddb09100d5b0ebcd9e8a037c3f9be7b5ea13a3327",
+      "record_digest": "8a6bd76cf4421d3149d7833ce3c23b9bc1461b82515eda869a1b7bb1a819204e",
       "relative_path": "en-US/decide/dailymatelite/free-situational-phrasebook-before-trip.html",
       "route_id": "en-US:dailymatelite:free-situational-phrasebook-before-trip",
       "route_slug": "free-situational-phrasebook-before-trip",
@@ -614,8 +614,8 @@
       "creative_id": "gmoneylite:test-multi-currency-trip-budget-free:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "47b078c5d1f7ba261ef028c59f9eaf68d7f42394138b5ba97c7c0dad3c7eec15",
-      "record_digest": "04edf045a491d5a952c0d9dff1c1f3dcd0517b51c02947c22408fbbef24aa227",
+      "output_sha256": "84617eafed3c31e7631c32ad5e749dbe0f545f9043597a5380593cdeb9432657",
+      "record_digest": "7f16064e4a4f430b39da794b93cae429c26012cca1728b8b37d26155851e1c99",
       "relative_path": "en-US/decide/gmoneylite/test-multi-currency-trip-budget-free.html",
       "route_id": "en-US:gmoneylite:test-multi-currency-trip-budget-free",
       "route_slug": "test-multi-currency-trip-budget-free",
@@ -699,8 +699,8 @@
       "creative_id": "lumibopomofo:gentle-zhuyin-practice-for-bilingual-child:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "06ef185b65479bd807e0a5f21cef0a042b61da408dc1696b65dfdeaa79fb5c51",
-      "record_digest": "aa9fcd910c70c7ebb9a5f33415241ff669118fb83a8caf9b1b11156eaf414fcd",
+      "output_sha256": "c84d45e9fa3973a5857398fda6d7b0eceb28fe3fbe26618c1055549f389af784",
+      "record_digest": "6235263172bada7db8b0e81bf0e8e9223911e32f217199ceb85f171d533ac866",
       "relative_path": "en-US/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html",
       "route_id": "en-US:lumibopomofo:gentle-zhuyin-practice-for-bilingual-child",
       "route_slug": "gentle-zhuyin-practice-for-bilingual-child",
@@ -733,8 +733,8 @@
       "creative_id": "lumiletters:try-phonics-before-one-time-unlock:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "92df2c4f636ee1a77515e90e3005a532d166f5bf75fe58767fe8296293f6a281",
-      "record_digest": "04db72a1aad334e0105123bef469d32857683dda8f712753fa846f88813ce442",
+      "output_sha256": "d1eb69eb3a76df58d6eee65a569a723c787cfa38ade136d0e76c6f94697e5b1c",
+      "record_digest": "7fcf4fdce4e6c12a96d6e930525b323e7ce577789556bec66f8fe2523d4c1989",
       "relative_path": "en-US/decide/lumiletters/try-phonics-before-one-time-unlock.html",
       "route_id": "en-US:lumiletters:try-phonics-before-one-time-unlock",
       "route_slug": "try-phonics-before-one-time-unlock",
@@ -801,8 +801,8 @@
       "creative_id": "lumimission:end-daily-routine-battles-with-play:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "2981d0f4901fe0d724c0bd9a0c788694113db80aa53e0d33e97d8f39d6bb10c2",
-      "record_digest": "8dcac6ec08f6b93af087498125a9c2c5dd8565478b86fc87456eed1201cfe8b3",
+      "output_sha256": "9a200dc47383f569be8ab1470bc73695e1b0e8f1f44e563ef44a19547e740ee7",
+      "record_digest": "b63d54e1a96720c58ca6084e97b41cb3da768c2d9aa459c3494ea4da792aa7ba",
       "relative_path": "en-US/decide/lumimission/end-daily-routine-battles-with-play.html",
       "route_id": "en-US:lumimission:end-daily-routine-battles-with-play",
       "route_slug": "end-daily-routine-battles-with-play",
@@ -852,8 +852,8 @@
       "creative_id": "maskmyfile:redact-client-files-before-sharing:privacy_pay_once",
       "intent_type": "privacy_pay_once",
       "locale": "en-US",
-      "output_sha256": "7cf4296cc1543dfced63f03e893ff69c3c725f1f695be4d243d49e29a053c4da",
-      "record_digest": "b4c4e64dad3a6a20d3676f0be7c70cc374faa3d19d0125b2709f426a455ce544",
+      "output_sha256": "579326efac10c3abfaa58e7139452dbefaee4c720ac9ca0354f664c0ec48f769",
+      "record_digest": "58502d33058999c84c9d981e5bf09a86fe7be8a3dfda9d4823a16e1bf8691bd0",
       "relative_path": "en-US/decide/maskmyfile/redact-client-files-before-sharing.html",
       "route_id": "en-US:maskmyfile:redact-client-files-before-sharing",
       "route_slug": "redact-client-files-before-sharing",
@@ -869,8 +869,8 @@
       "creative_id": "mochi:cozy-checklist-without-project-overhead:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "95c2a33add999a091447259ea0afecadde0f3e9f3f7e00cfc3afaff14fcf1fd6",
-      "record_digest": "c2af1d02da1bfb55eb71ad864217627a965f35bba20e0342511facfadb471673",
+      "output_sha256": "2e680107350667fb5edfef439022c8dfb5b564f0ee8115b67e1c4403bd3d3dba",
+      "record_digest": "5a1dc4ed1b41a204fe131d5720e8db27714227d62069072b67ab64fad6b816d4",
       "relative_path": "en-US/decide/mochi/cozy-checklist-without-project-overhead.html",
       "route_id": "en-US:mochi:cozy-checklist-without-project-overhead",
       "route_slug": "cozy-checklist-without-project-overhead",
@@ -1005,8 +1005,8 @@
       "creative_id": "savetag:turn-saved-links-into-a-readable-queue:privacy_pay_once",
       "intent_type": "privacy_pay_once",
       "locale": "en-US",
-      "output_sha256": "0367380ec31a72089c0486fe3992d1e7fa7eb0f43b4b259ea2183e7ecdc60beb",
-      "record_digest": "42eebac2c486687810e474cfaedf8f9afd43d088091d17d33d88e86ae82adc43",
+      "output_sha256": "8c639756d6e0ade03dc17da2de50178ababb96360741923c4397abf94103695b",
+      "record_digest": "b3f42c868f34a101142e5a25227306b261ff1dadadefdc946431f698ac66ac26",
       "relative_path": "en-US/decide/savetag/turn-saved-links-into-a-readable-queue.html",
       "route_id": "en-US:savetag:turn-saved-links-into-a-readable-queue",
       "route_slug": "turn-saved-links-into-a-readable-queue",
@@ -1090,8 +1090,8 @@
       "creative_id": "snapportlite:test-passport-photo-layout-free:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "19da26348affe726633b43c437ba7a1b455c1c767d1ca3c5f45cb7e2edce2d9f",
-      "record_digest": "d084b9b5d2436ce4ff2af76c2a0df7a2a139050760c6163c5e9ba6d62c6d0986",
+      "output_sha256": "765f2bb4ecf62cc40a36d6c3ad8628aa3674f94ef247df47b1c21ad6e28dee44",
+      "record_digest": "6a8048122595ee0ad39c079440465930d29becd97b0f84a62457172dbbcc8fc2",
       "relative_path": "en-US/decide/snapportlite/test-passport-photo-layout-free.html",
       "route_id": "en-US:snapportlite:test-passport-photo-layout-free",
       "route_slug": "test-passport-photo-layout-free",
@@ -1447,8 +1447,8 @@
       "creative_id": "mochi:cozy-checklist-without-project-overhead:alternative",
       "intent_type": "alternative",
       "locale": "zh-Hant",
-      "output_sha256": "66627da64d129d66d2f5159c69ae54f3e60bc290df570fab8d80b7ffe3edc501",
-      "record_digest": "076fdd6f2fdd671ccfa23a1616ed5aca5b01921f084d23f5fa1cf7a7afd6ae34",
+      "output_sha256": "31234fb59b2d41aa4369c38ecc24949be46e540452aeee66e6ed1d88dd8c433f",
+      "record_digest": "611ecbd9c23448bb73c097b3e49f0d8bf7a711e919733caeb211bc47f91d998c",
       "relative_path": "zh-Hant/decide/mochi/cozy-checklist-without-project-overhead.html",
       "route_id": "zh-Hant:mochi:cozy-checklist-without-project-overhead",
       "route_slug": "cozy-checklist-without-project-overhead",
@@ -1508,5 +1508,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "911c6b9636486d4ce6368983d78f6539320014149d6a24544143a32329bca07d"
+  "source_contract_digest": "0bd3515a7ffc9a165e9216447588efd40edfae99e9db1c6abbabb837f873269f"
 }

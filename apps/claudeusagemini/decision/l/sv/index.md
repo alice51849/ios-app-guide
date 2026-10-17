@@ -2,7 +2,7 @@
 title: "UsageNow: AI-användning — Claude, Codex, Copilot gränser | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/sv/index.html"
-modified: "2026-10-16"
+modified: "2026-10-17"
 app_store_id: "6818607603"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

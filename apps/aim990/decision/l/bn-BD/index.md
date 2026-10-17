@@ -2,7 +2,7 @@
 title: "Aim990: ইংরেজি কোচ — ৮ মিনিটে দুর্বলতা নির্ণয় | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aim990/decision/l/bn-BD/index.html"
-modified: "2026-10-16"
+modified: "2026-10-17"
 app_store_id: "6784974530"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

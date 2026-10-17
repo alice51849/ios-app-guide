@@ -1,17 +1,17 @@
 ---
-title: "MoneyTag: Receitas e despesas — Projetos, etiquetas e saldo | iOS App"
+title: "melhor controle de receitas e despesas para projetos freelance sem assinatura"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/pt-BR/index.html"
-modified: "2026-10-16"
+modified: "2026-10-17"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# MoneyTag: Receitas e despesas — Projetos, etiquetas e saldo | iOS App
+# melhor controle de receitas e despesas para projetos freelance sem assinatura
 
-Receitas e despesas Cada projeto tem a própria contabilidade: receitas menos despesas dão o resultado líquido dele. Aqui estão as dúvidas mais comuns. Se a sua não estiver na lista, escreva para nós — cada mensagem é lida por uma pessoa de verdade. • O mesmo livro no iPhone e no iPad • Cada projeto com seu resultado líquido • Etiquetas que somam entre projetos • Uma moeda por projeto • Taxas ao vivo ou manuais • App para Apple Watch • Widgets na Tela de Início e na Tela Bloqueada O que é exatamente um projeto? Um projeto é uma contabilidade fechada em si mesma: lançamentos próprios, moeda própria e resultado próprio. O MoneyTag soma as receitas, subtrai as despesas e mostra o resultado líquido só daquele projeto. O MoneyTag converte moedas? Cada projeto tem sua própria moeda-base. Na tela inicial, você escolhe diretamente a moeda de entrada. O MoneyTag atualiza taxas de câmbio públicas aproximadamente a cada 6 horas; também é possível definir uma taxa manual e depois voltar ao modo automático. O valor convertido é salvo na moeda-base do projeto, e as taxas salvas continuam disponíveis offline. As taxas de referência são fornecidas pelo Frankfurter ou ExchangeRate-API; apenas para fins informativos. Como funcionam as etiquetas? As etiquetas são parte central do MoneyTag, não um detalhe. Marque qualquer receita ou despesa e a tela de Etiquetas soma a mesma etiqueta em todos os seus projetos de uma vez: receitas, despesas e o líquido da etiqueta. A análise de etiquetas entre projetos faz parte do Lifetime Pro. O que é gratuito e o que o Lifetime Pro acrescenta? Grátis · 1 projeto · restam 5 lançamentos. Projetos, etiquetas e relatórios ilimitados — uma compra, para sempre. Exportar CSV · Exportar PDF · Exportar imagem · Backup e restauração. O que o app do Apple Watch e os widgets mostram? O app do Watch permite registrar um lançamento direto do pulso e ver receitas, despesas e o líquido do projeto atual. Os widgets mostram esse mesmo panorama na Tela de Início e na Tela Bloqueada. Projetos, transações, montantes, notas, etiquetas, categorias e definições ficam no armazenamento local do MoneyTag e não são enviados ao Frankfurter / ExchangeRate-API. Com a sincronização do iCloud ativada, também fica uma cópia no seu próprio iCloud. Como exporto minha contabilidade ou passo para outro aparelho? Exportar CSV · Exportar PDF · Exportar imagem · Backup e restauração. Inclui projetos, lançamentos, etiquetas e ajustes. Projetos, transações, montantes, notas, etiquetas, categorias e definições ficam no armazenamento local do MoneyTag e não são enviados ao Frankfurter / ExchangeRate-API. Com a sincronização do iCloud ativada, também fica uma cópia no seu próprio iCloud. Com as taxas automáticas ativas, o MoneyTag envia o código de três letras da moeda base e o pedido de rede necessário para api.frankfurter.dev / open.er-api.com. A infraestrutura Cloudflare do Frankfurter / ExchangeRate-API pode processar o endereço IP, a região aproximada, dados de interação e diagnósticos. Este processamento serve a funcionalidade e a análise da App, pode estar associado a si, não é usado para seguimento e não envolve publicidade. Desative as taxas automáticas e use uma taxa manual para evitar estes pedidos. As taxas de referência são fornecidas pelo Frankfurter ou ExchangeRate-API; apenas para fins informativos.
+Um orçamento mensal não diz a um freelancer se um projeto de cliente realmente deu lucro — cada projeto precisa de suas próprias receitas, despesas e resultado líquido — o MoneyTag: Income & Expense foi feito para isso.
 
 - Dinheiro e viagem
 - Grátis para começar · desbloqueio único
@@ -24,8 +24,8 @@ Receitas e despesas Cada projeto tem a própria contabilidade: receitas menos de
 - Apple Watch
 - App Store · Grátis
 
-[Baixe MoneyTag: Receitas e despesas na App Store](https://apps.apple.com/br/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
+[Baixar MoneyTag: Income & Expense na App Store →](https://apps.apple.com/br/app/id6801956402?pt=118326163&ct=geo_pick&mt=8)
 
-[Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/moneytag.html)
+[Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html)
 
-> Este conteúdo é publicado diretamente pela Lumi Studio, desenvolvedora de todos os apps apresentados.
+> Guia publicado pela Lumi Studio, desenvolvedora do app. Os nomes dos apps são marcas registradas de seus respectivos proprietários e são usados apenas para fins de identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais correspondentes quando aplicável.

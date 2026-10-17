@@ -1,17 +1,17 @@
 ---
-title: "CalDaily 電卓とテーマ — ウィジェット・8つのツール・履歴 | iOS App"
+title: "名前を付けて検索できる履歴を保存する iPhone 電卓アプリのおすすめ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/ja/index.html"
-modified: "2026-10-16"
+modified: "2026-10-17"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# CalDaily 電卓とテーマ — ウィジェット・8つのツール・履歴 | iOS App
+# 名前を付けて検索できる履歴を保存する iPhone 電卓アプリのおすすめ
 
-使い続けたくなる電卓。数字の背景まで覚えているからです。 たいていの電卓は閉じた瞬間に忘れてしまいます。CalDaily はすべての結果を残し、名前と種類を付けられるので、一週間後でも「割り勘した食事」や「比較したローン」をそのまま検索できます。履歴は日付ごとにまとまり、ツールで絞り込め、必要なら CSV に書き出して表計算ソフトで使えます。 8つのツールが、普通のキーパッドでは面倒な日常の計算を引き受けます。メモリー、関数計算、割引と税、チップと割り勘、単位換算、日数と営業日、ローン返済額、旅行の燃料費。それぞれ一度設定した既定値で開くので、同じ税率や人数を毎回入力し直す必要はありません。 ホーム画面ウィジェットはアプリを開かずに計算でき、選んでいるテーマに合わせて見た目も変わります。 100種類のテーマを内蔵。落ち着いたセラミックから深みのあるプリズムまで、キーの形・素材・光がそれぞれ異なります。1種類は無料で、一度の購入で残りすべてと、全ツールの無制限利用が解放されます。サブスクリプションはありません。 すべて端末内で動作します。アカウントもクラウド同期も広告も解析もありません。計算内容は手元に残ります。 50言語に対応し、どの言語でもレイアウトが崩れないよう調整しています。 こんな方に：割り勘、割引の確認、レシピや DIY の単位換算、日付や締切の計算、ローンの比較、そしてホーム画面に置いて気持ちのいい電卓が欲しい方に。
+CalDaily — 使い続けたくなる電卓。数字の背景まで覚えているからです。無料で始められる · 一度きりの解放 · サブスクリプションなし。
 
 - その他
 - 無料で開始・一度の購入でアンロック
@@ -20,8 +20,8 @@ publisher: "Lumi Studio"
 - ウィジェット
 - App Store · 無料
 
-[App Store で CalDaily 電卓とテーマ を入手](https://apps.apple.com/jp/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
+[App Store で CalDaily を入手 →](https://apps.apple.com/jp/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
 
-[完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/caldaily.html)
+[完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html)
 
-> これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。
+> アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。

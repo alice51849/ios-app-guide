@@ -1,17 +1,17 @@
 ---
-title: "Zipbox 解凍：ZIP RAR 7z対応 — 広告なしで圧縮ファイルをすぐ開く | iOS App"
+title: "iPhone で RAR や 7z を広告なしで開ける有料アプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/ja/index.html"
-modified: "2026-10-16"
+modified: "2026-10-17"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# Zipbox 解凍：ZIP RAR 7z対応 — 広告なしで圧縮ファイルをすぐ開く | iOS App
+# iPhone で RAR や 7z を広告なしで開ける有料アプリ
 
-ZipboxはApp Storeで購入する有料アプリです。1回の購入ですべての機能を利用でき、アプリ内課金・サブスクリプション・広告はありません。13形式を端末内だけで処理します。 広告はいっさい出ません。バナーも、全画面の動画も、開くまでのカウントダウンもありません。自分のファイルを開くのに待たされることがありません。 ZIP・RAR/RAR5・7z・TAR・GZIP・TAR.GZIP・BZIP2・TAR.BZIP2・XZ・TAR.XZ・LZMA・LZ4・ISOの展開 展開する前に中を確認できます。ファイル一覧を見ながら写真・動画・PDF・テキスト・ソースコードをプレビューして、本当に必要な1つだけを取り出せます。 処理はすべて端末の中で完結します。Zipboxは通信を行わず、アカウントもログインも不要で、解析や追跡のコードも入っていません。 ZIP・RAR・7zは分割ファイルとパスワード付きにも対応 ファイルApp、Safariのダウンロード、メール、共有シートからそのまま開き、取り出したファイルを同じ経路で送り出せます。 仕事のZIPがメールで届き、通勤電車の中で40個の中からPDFを1つだけ取り出したいとき。 Safariでダウンロードした圧縮ファイルがファイルAppに残っているのに、どのアプリでも開けないとき。 友人がパスワード付きの7zで旅行の写真を送ってきて、とりあえず中身を見たいとき。 Zipboxでできること ZIP・RAR/RAR5・7z・TAR・GZIP・TAR.GZIP・BZIP2・TAR.BZIP2・XZ・TAR.XZ・LZMA・LZ4・ISOの展開 ZIP・RAR・7zは分割ファイルとパスワード付きにも対応 展開せずに中身をそのまま確認 写真・動画・PDF・テキスト・ソースコードのプレビュー 1ファイルだけ、選んだ複数だけ、またはまとめて取り出し ファイルApp・Safariのダウンロード・メール・共有シートから起動 AES-256暗号化と分割出力に対応したZIP・7zの作成 複数の圧縮ファイルを順番に展開し、1件失敗しても残りを続行 圧縮ファイル内のファイル名とテキストの検索、PDF はファイル名のみ 移動・名前の変更・整理、ファイルAppやiCloud Driveへの書き出し、圧縮ファイルを作成（ショートカット） ZipboxはApp Storeで購入する有料アプリです。1回の購入ですべての機能を利用でき、アプリ内課金・サブスクリプション・広告はありません。13形式を端末内だけで処理します。 開けないファイルや、対応してほしい形式があれば hourstag.app@gmail.com までお知らせください。
+Zipbox — 暗号化・分割された ZIP・RAR・RAR5・7z を端末内で展開し、ZIP や 7z を作成。1回の購入ですべての機能を利用できます。有料ダウンロード · 全機能込み · アプリ内課金・サブスクリプションなし。
 
 - その他
 - 有料ダウンロード
@@ -22,8 +22,8 @@ ZipboxはApp Storeで購入する有料アプリです。1回の購入ですべ�
 - プライベート／端末内
 - App Store · ¥800
 
-[App Store で Zipbox 解凍：ZIP RAR 7z対応 を入手](https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
+[App Store で Zipbox を入手 →](https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8)
 
-[完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/zipbox.html)
+[完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/answers/paid-app-to-open-rar-and-7z-files-on-iphone-without-ads.html)
 
-> これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。
+> アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。

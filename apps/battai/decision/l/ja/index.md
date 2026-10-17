@@ -1,17 +1,17 @@
 ---
-title: "BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App"
+title: "正直な推定とレポートがある最高のiPhoneバッテリー状態アプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/ja/index.html"
-modified: "2026-10-16"
+modified: "2026-10-17"
 app_store_id: "6802423998"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# BattAI: バッテリー状態スコア — ルール、情報源、限界を明確に | iOS App
+# 正直な推定とレポートがある最高のiPhoneバッテリー状態アプリ
 
-BattAI BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。 状態 • バッテリー状態スコア • スコアを形づくる要因 • 最大容量の推移 • 最大容量 • 充放電回数 充電 • 充電ケア • 充電範囲 • 充電速度 データを書き出す • このデバイスでファイルを作成します。アップロードはしません。 • このデバイスで作成。データはアップロードしません。 プライバシー • 広告、利用解析、追跡、他社SDK、通信はありません。データはここに保存し、ペアリング済みApple Watchへ最小スナップショットだけを直接送ります。 • BattAIが読むのは充放電回数、公称充電容量、設計容量だけです。ほかの内容はすぐ破棄し、保存も送信もしません。 電池の変化を長く見守る • より深い履歴、計画、レポートを使えます。 • 支払いは一度だけ。サブスクリプションなし。
+バッテリースコアが役立つのは、iOSが測定した値、推定した値、自分で入力した値をアプリが区別しているときだけです — BattAIはそのために作られています。
 
 - その他
 - 無料で開始・一度の購入でアンロック
@@ -19,8 +19,8 @@ BattAI BattAIが公開iOS APIから使うのは、電池残量、充電状態、
 - Apple Watch
 - App Store · 無料
 
-[App Store で BattAI: バッテリー状態スコア を入手](https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
+[App StoreでBattAIを入手 →](https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8)
 
-[完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/battai.html)
+[完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/answers/best-iphone-battery-health-app-with-honest-estimates-and-report.html)
 
-> これは、掲載するすべてのアプリの開発元である Lumi Studio が公開する一次資料です。
+> アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。

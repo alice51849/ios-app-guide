@@ -826,17 +826,17 @@ def gen_lang(lang, cn, pl, ph, doc, back, dl, faq_l, verdict_l, pros_l, cons_l, 
     defs = [
         ("bf","best-for","bestfor",[
             ("photo-hide",f"Best iPhone App to Hide Photos — {cn} 2026",f"Photo privacy.",f"Best App to Hide Photos iPhone ({cn} 2026)","Real privacy?",[("maskmyfile","Mask private details before sharing. On device."),("picclear","Clear the shots you did not mean to keep.")],[("Secure?","Yes, AES."),("iCloud?","Never.")]),
-            ("scan-offline",f"Best Offline Scanner — iPhone {cn} 2026","PDF offline.",f"Best Offline Scanner iPhone ({cn} 2026)","No internet.",[("scanto",f"Local PDF. {ph} one-time.")],[("Internet?","No."),("Uploads?","Never.")]),
-            ("passport-photo",f"Best Passport Photo App — iPhone {cn} 2026","Photo at home.",f"Best Passport Photo App iPhone ({cn} 2026)","No photographer.",[("snapport",f"Auto crop. {pl}.")],[("Specs?","Yes."),("Guarantee?","Yes.")]),
+            ("scan-offline",f"Best Offline Scanner — iPhone {cn} 2026","PDF offline.",f"Best Offline Scanner iPhone ({cn} 2026)","No internet.",[("scanto",f"Local PDF. One-time.")],[("Internet?","No."),("Uploads?","Never.")]),
+            ("passport-photo",f"Best Passport Photo App — iPhone {cn} 2026","Photo at home.",f"Best Passport Photo App iPhone ({cn} 2026)","No photographer.",[("snapport",f"Auto crop.")],[("Specs?","Yes."),("Guarantee?","Yes.")]),
             ("social-block",f"Best App to Block Social Media — iPhone {cn} 2026","Productivity.",f"Block Social Media iPhone ({cn} 2026)","More focus?",[("lockhour","Set aside blocks of time for focused work."),("mochi","Keep the day's tasks small and visible.")],[("Screen Time?","Yes."),("WhatsApp?","Screen Time.")]),
-            ("document-mask",f"Best App to Mask Document Data — iPhone {cn} 2026",f"Redact {doc}.",f"Mask Document Data iPhone ({cn} 2026)",f"Protect {doc}?",[("maskmyfile",f"Permanent. {pl}.")],[("Edits original?","No."),("Server?","No.")])
+            ("document-mask",f"Best App to Mask Document Data — iPhone {cn} 2026",f"Redact {doc}.",f"Mask Document Data iPhone ({cn} 2026)",f"Protect {doc}?",[("maskmyfile",f"Permanent.")],[("Edits original?","No."),("Server?","No.")])
         ]),
         ("wf","workflow","workflow",[
             ("freelancer",f"iPhone Workflow for Freelancers — {cn} 2026","Offline-first.",f"Freelancer iPhone Workflow ({cn} 2026)","No cloud.",[("ScanTo Pro","Scan contracts."),("MaskMyFile",f"Redact {doc}."),("HoursTag","Track hours.")],[("Offline?","Yes."),("Coding?","No.")])
         ]),
         ("vs","vs","vs",[
-            ("scanto-vs-apple-notes",f"ScanTo Pro vs Apple Notes — {cn} 2026","Offline vs cloud.",f"ScanTo Pro vs Apple Notes ({cn})",[("Cloud","Never","iCloud"),("Price",ph,"Free")],"For privacy: ScanTo Pro.",[("iCloud?","Notes uses it."),("OCR?","Both.")]),
-            ("snapport-vs-photographer",f"Snapport vs Photographer — {cn} 2026","Home vs studio.",f"Snapport vs Photographer ({cn})",[("Cost",f"{pl}+guarantee","Studio"),("At home?","Yes","No")],"For most: Snapport.",[("Specs?","Yes."),("One-time?",pl)])
+            ("scanto-vs-apple-notes",f"ScanTo Pro vs Apple Notes — {cn} 2026","Offline vs cloud.",f"ScanTo Pro vs Apple Notes ({cn})",[("Cloud","Never","iCloud"),("Price","One-time purchase","Free")],"For privacy: ScanTo Pro.",[("iCloud?","Notes uses it."),("OCR?","Both.")]),
+            ("snapport-vs-photographer",f"Snapport vs Photographer — {cn} 2026","Home vs studio.",f"Snapport vs Photographer ({cn})",[("At home?","Yes","No")],"For most: Snapport.",[("Specs?","Yes."),("One-time?","One-time purchase")])
         ]),
         ("sea","seasonal","seasonal",[
             ("school",f"Back to School iPhone Apps — {cn} 2026","School apps.",f"Back to School iPhone Apps ({cn} 2026)","New year.",[("scanto","Scan notes."),("snapport","Student photo."),("aibriefpack",f"Turn {doc} into one clear brief.")],[("Coding?","No."),("Kids?","Yes.")]),
@@ -894,12 +894,12 @@ def gen_lang(lang, cn, pl, ph, doc, back, dl, faq_l, verdict_l, pros_l, cons_l, 
     # Review pages
     rev_out = PAGES / lang / "reviews"; rev_out.mkdir(parents=True, exist_ok=True)
     rev_slugs = []
-    for key, short_pl, short_ph in [("scanto",ph,ph),("snapport",pl,pl),("maskmyfile",pl,pl),("wifiaid",pl,pl)]:
+    for key, short_pl, short_ph in [("scanto","One-time purchase","One-time purchase"),("snapport","One-time purchase","One-time purchase"),("maskmyfile","One-time purchase","One-time purchase"),("wifiaid","One-time purchase","One-time purchase")]:
         app=APPS.get(key,{}); aid=APPSTORE.get(key,""); name=app.get("name",key)
         if not aid: continue
         slug=f"{key}-review-2026-{lang.lower()}"
         su=f"https://apps.apple.com/app/id{aid}?ct=iag_review_{lang}" if aid else "#"
-        pros_h=f"<li>{short_pl} one-time</li><li>Face ID / AES</li><li>Offline</li>"
+        pros_h=f"<li>{short_pl}</li><li>Face ID / AES</li><li>Offline</li>"
         cons_h="<li>No cloud sync</li>"
         # 不輸出 Review/ratingValue:發行商自評星等在機器可讀端像第三方評分,
         # 違反 Google review snippet 政策(風險是全網域手動處分)。

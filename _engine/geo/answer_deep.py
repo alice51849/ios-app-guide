@@ -624,7 +624,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Does it work in my language?",
-    "a": "{name} is available in 50 interface languages and can follow your system language, or you can switch to another one inside the app."
+    "a": "{name} is available in more than 40 languages and can follow your system language or one you choose."
    }
   ]
  },
@@ -792,7 +792,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Which languages are supported?",
-    "a": "{name} is available in 50 interface languages and can follow your system language, or you can switch to another one inside the app."
+    "a": "{name} is available in more than 40 languages and can follow your system language or one you choose."
    }
   ]
  },
@@ -942,27 +942,27 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "study app block social media pomodoro",
    "app blocker exam prep iphone"
   ],
-  "lead": "LockHour's Study Mode runs three preset Pomodoro-style cycles and uses Apple's Screen Time stack to shield your chosen apps at the OS level during every focus interval — automatically unlocking at breaks.",
-  "detail": "{name} ships three study presets: Pomodoro (25 min focus / 5 min break × 4, auto-restarts), Deep Study (50 min / 10 min × 3, auto-restarts), and Exam Prep (90 min / 15 min × 2, manual restart). Before starting you pick the apps or categories to block — Social, Video, and Games are pre-recommended for Study Mode. During focus intervals those apps show LockHour's shield screen instead of opening; they unlock automatically at each break, then re-lock when the next focus interval begins. A stats dashboard records study minutes today, cycles this week, and your running streak.",
+  "lead": "LockHour's Study Mode runs Pomodoro-style cycles with breaks and uses Apple's Screen Time stack to shield your chosen apps at the OS level while you focus — they unlock automatically when the timer ends.",
+  "detail": "{name}'s Study Mode runs Pomodoro-style cycles with breaks. Before starting you pick the apps, categories or websites to block. During the session those apps show LockHour's shield screen instead of opening, and they unlock automatically when the timer ends. Insights show today's focused time, weekly charts, streaks and how many hours you've reclaimed.",
   "bullets": [
-   "Three preset cycles: Pomodoro (25/5×4), Deep Study (50/10×3), Exam Prep (90/15×2)",
+   "Study Mode: Pomodoro-style cycles with breaks",
    "Blocking is enforced at the OS level by Apple Screen Time — not an app-switching trick",
-   "Apps show a shield screen during focus intervals; unlock automatically at break time",
-   "Stats dashboard: study minutes today, cycles this week, current streak, best streak",
-   "Study Mode is a premium feature — one-time unlock, no subscription"
+   "Chosen apps show a shield screen during the session and unlock automatically when the timer ends",
+   "Insights: today's focused time, weekly charts, streaks and reclaimed hours",
+   "One simple purchase unlocks everything — no subscription"
   ],
   "faq": [
    {
-    "q": "What happens to blocked apps during break intervals?",
-    "a": "When the focus interval ends, LockHour lifts the shields automatically so your blocked apps are accessible during the break. If auto-restart is on (Pomodoro and Deep Study presets), the focus lock re-engages at the end of the break without any action from you."
+    "q": "What happens to blocked apps when the session ends?",
+    "a": "When the timer ends, LockHour lifts the shields automatically, so your blocked apps open again without any manual re-enabling."
    },
    {
     "q": "Can I block specific apps or only broad categories?",
     "a": "On a real device with Screen Time authorization granted, you use Apple's FamilyActivityPicker to select specific apps (e.g. TikTok, Instagram) as well as categories and web domains — granular selection is fully supported."
    },
    {
-    "q": "Is Study Mode included in the free tier?",
-    "a": "No. The free tier covers only Quick Focus — a single 25-minute flat session. Study Mode with Pomodoro cycles, all other focus modes, and scheduled automation are part of the one-time unlock."
+    "q": "Is Study Mode a subscription?",
+    "a": "No. One simple purchase unlocks everything, with no subscription and no hidden fees; check the App Store listing for what you can try before buying."
    }
   ]
  },
@@ -976,19 +976,19 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "stop doomscrolling before bed iphone",
    "sleep wind down app blocker schedule"
   ],
-  "lead": "LockHour's Sleep Wind Down mode runs a 60-minute pre-bed focus lock that shields Social, Video, and Entertainment apps — and it can be scheduled to activate automatically every night via iOS so you don't have to make the decision when you're already tired.",
-  "detail": "The impulse to scroll at night is hardest to resist in exactly the moment when a manually-triggered app blocker fails. {name} solves this with a schedulable Sleep Wind Down: set a nightly start time and the OS DeviceActivity system activates the block automatically, even if you've forgotten to open the app. The default duration is 60 minutes targeting Social, Video, and Entertainment categories; you can swap in any specific apps or domains. The block ends at a configurable time (default 7 AM) and lifts automatically — no morning steps needed.",
+  "lead": "LockHour's Sleep Wind Down mode is built to stop late-night scrolling: start it before bed and the social and video apps you choose stay shielded until the timer ends.",
+  "detail": "The impulse to scroll at night is hardest to resist when you are already tired, so make the decision once, before bed. {name}'s Sleep Wind Down mode locks the apps and websites you choose for the length you set and lifts the block automatically when the timer ends. Add Hard Mode and stopping early takes a cooldown and a confirmation, so ending the block becomes a deliberate choice instead of a reflex.",
   "bullets": [
-   "Sleep Wind Down: 60-minute default lock on Social, Video, and Entertainment categories",
-   "Schedulable via iOS DeviceActivity — triggers automatically every night without opening the app",
-   "Hard Mode: cooldown delay + typed confirmation phrase required to cancel the session early",
-   "Calls, alarms, messages, and non-selected apps remain fully accessible throughout",
-   "Configurable end time (default 7 AM); everything unlocks automatically"
+   "Sleep Wind Down mode to stop late-night scrolling",
+   "You choose the apps or websites to lock and the session length",
+   "Hard Mode: a cooldown and a confirmation before you can stop early",
+   "Apps you did not select stay available",
+   "Everything unlocks automatically when the timer ends"
   ],
   "faq": [
    {
-    "q": "Does the sleep schedule work even if LockHour is not running in the background?",
-    "a": "Yes. The schedule is registered with iOS DeviceActivity — the operating system handles triggering it. LockHour does not need to be running in the foreground for the block to activate."
+    "q": "Does the block keep working if LockHour is closed?",
+    "a": "Yes. The shield is applied through Apple's Screen Time framework, so closing or backgrounding LockHour does not lift it; the apps unlock automatically when the timer ends."
    },
    {
     "q": "Can I block specific apps for Sleep Wind Down rather than categories?",
@@ -996,7 +996,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "What if I genuinely need to use a blocked app at night?",
-    "a": "Without Hard Mode enabled you can end the session immediately in the app. With Hard Mode on, there is a cooldown delay plus a typed confirmation phrase before cancellation — enough friction to interrupt an impulse scroll, but not a parental lock. Someone sufficiently determined can also revoke Screen Time authorization in iOS Settings."
+    "a": "Without Hard Mode enabled you can end the session immediately in the app. With Hard Mode on, there is a cooldown and a confirmation before you can stop early — enough friction to interrupt an impulse scroll, but not a parental lock. Someone sufficiently determined can also revoke Screen Time authorization in iOS Settings."
    }
   ]
  },
@@ -1011,11 +1011,11 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "lockhour bypass hard mode"
   ],
   "lead": "LockHour uses Apple's official FamilyControls and ManagedSettings APIs to block apps at the OS level — but it is honestly a self-control tool designed to add intentional friction, not an unbreakable lock.",
-  "detail": "When a session starts, {name} instructs the iOS ManagedSettingsStore to display a shield screen on every app in your selected list. This block is enforced by iOS itself — relaunching the phone, switching apps, or backgrounding LockHour does not lift it. Hard Mode raises the exit cost further: a timed cooldown delay plus a typed phrase must be completed before cancelling early. The app is transparent about its limits: it's built to interrupt the impulse-grab, not to be technically impossible to bypass — a sufficiently determined user can go to iOS Settings → Screen Time and revoke LockHour's authorization, just as with any Screen Time configuration. What it does reliably is make casual, unconscious app-opening fail.",
+  "detail": "When a session starts, {name} instructs the iOS ManagedSettingsStore to display a shield screen on every app in your selected list. This block is enforced by iOS itself — relaunching the phone, switching apps, or backgrounding LockHour does not lift it. Hard Mode raises the exit cost further: a cooldown and a confirmation come before you can stop early. The app is transparent about its limits: it's built to interrupt the impulse-grab, not to be technically impossible to bypass — a sufficiently determined user can go to iOS Settings → Screen Time and revoke LockHour's authorization, just as with any Screen Time configuration. What it does reliably is make casual, unconscious app-opening fail.",
   "bullets": [
    "Uses Apple FamilyControls + ManagedSettings — same OS stack as native Screen Time",
    "Block survives app restarts and screen locks — enforced by iOS, not by LockHour staying in foreground",
-   "Hard Mode: timed cooldown + typed confirmation phrase required to end a session early",
+   "Hard Mode: a cooldown and a confirmation before you can end a session early",
    "LockHour never reads app content, messages, browsing history, or Screen Time usage data",
    "Designed for voluntary self-control — not parental control, not surveillance"
   ],
@@ -1026,7 +1026,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Can LockHour see what I do inside apps or how long I use them?",
-    "a": "No. LockHour only instructs iOS to shield the apps you chose. It has no access to app content, messages, browsing data, or Screen Time reports. The app collects no analytics and has no account system."
+    "a": "No. LockHour only instructs iOS to shield the apps you chose. It has no access to app content, messages, browsing data, or Screen Time reports. There are no ads, no tracking, no third-party analytics and no account."
    },
    {
     "q": "Do phone calls and alarms still work during a session?",
@@ -1044,27 +1044,27 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "morning routine no social media iphone",
    "block apps first 30 minutes morning"
   ],
-  "lead": "LockHour's Morning Reset mode blocks Social and News apps for the first 30 minutes of your day and can be scheduled to activate automatically every morning — removing the willpower requirement from the moment you're most vulnerable.",
-  "detail": "The reflexive phone-grab right after an alarm is strongest precisely when willpower is lowest. {name}'s Morning Reset mode (default: 30 minutes, targeting Social and News categories) is schedulable via iOS DeviceActivity — the OS activates it at your chosen time every day whether you've opened LockHour or not. After the 30-minute block ends, your apps unlock automatically. Every completed morning reset is logged in your session history, and the streak counter shows how many consecutive mornings you've successfully protected, which gives the habit visible momentum.",
+  "lead": "LockHour's Morning Reset mode is built to help you start your day before the scroll: start it when you wake up and the social and news apps you choose stay shielded until the timer ends.",
+  "detail": "The reflexive phone-grab right after an alarm is strongest precisely when willpower is lowest, so make the decision once, the night before. Start {name}'s Morning Reset when you wake, and the apps and websites you chose stay locked for the length you set, then unlock automatically. Streaks and the reclaimed-hours count show how many mornings you have protected, which gives the habit visible momentum.",
   "bullets": [
-   "Morning Reset: 30-minute default block targeting Social and News app categories",
-   "Schedulable via iOS DeviceActivity — activates automatically every morning, no manual trigger",
-   "Streak tracker shows consecutive mornings completed — makes the habit visible",
-   "Calls, messages, alarms, and all non-selected apps remain fully accessible",
-   "Morning Reset is included in the one-time unlock (not available in free Quick Focus tier)"
+   "Morning Reset mode: start your day before the scroll",
+   "You choose the apps or websites to lock and the session length",
+   "Streaks and reclaimed hours make the habit visible",
+   "Apps you did not select stay available",
+   "One simple purchase unlocks everything — no subscription"
   ],
   "faq": [
    {
-    "q": "Can I extend the morning block beyond 30 minutes?",
-    "a": "The Morning Reset preset is 30 minutes. For a longer custom morning block you can use Custom Focus mode, set your preferred duration, and start it manually. The scheduled auto-start is currently tied to the preset duration."
+    "q": "Can I choose how long the morning block lasts?",
+    "a": "Yes. Morning Reset is one of the focus modes, and Custom lets you set your own length if you want a different block."
    },
    {
-    "q": "What exactly does 'Social' and 'News' category cover?",
-    "a": "These are Apple's App Store category groupings, which include apps Apple classifies in those categories on the device — typically covering major social media platforms and news aggregators. You can also hand-pick specific apps to add or remove."
+    "q": "Can I pick which apps are blocked in the morning?",
+    "a": "Yes. You choose the specific apps, categories or websites to shield before you start the session."
    },
    {
-    "q": "Will LockHour impact my battery life with scheduled automation?",
-    "a": "No measurably. The block is enforced by iOS DeviceActivity extensions running at the OS level. LockHour does not run a background process during a session — there is no continuous CPU or network activity."
+    "q": "Does LockHour keep running in the background to enforce the block?",
+    "a": "The shield is applied through Apple's Screen Time framework, so it holds while LockHour is closed and lifts automatically when the timer ends."
    }
   ]
  },
@@ -1305,7 +1305,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "What real phonics skills does {name} teach, beyond just showing letters?",
-    "a": "{name} teaches letter recognition (uppercase and lowercase), phonics sounds, stroke-order handwriting, first-word sound associations, and beginning/ending/middle-vowel sound discrimination through 14 challenge types in My Planet mode."
+    "a": "{name} teaches letter recognition (uppercase and lowercase), phonics sounds, stroke-order handwriting, first-word sound associations, and beginning/ending/middle-vowel sound discrimination through 12 game types across 14 planets."
    },
    {
     "q": "Is {name} suitable for a child who gets easily frustrated with learning games?",
@@ -1333,7 +1333,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "Progress backup and restore — switch devices without losing progress",
    "Four languages: Traditional Chinese, English, Japanese, Korean (auto-detects device language)",
    "Same core phonics content as Lite (A–Z tracing, phonics, 26 forest friends, 14-planet adventure) plus parent layer",
-   "One-time purchase; no subscription, no ads, no data collected"
+   "Paid upfront download — one-time purchase; no subscription, no ads, no data collected"
   ],
   "faq": [
    {
@@ -1769,10 +1769,10 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "注音自學全套app一次買斷"
   ],
   "lead": "For Taiwanese-heritage parents who learned Bopomofo themselves and want to pass the same phonetic foundation to their children abroad, Lumi Bopomofo Pro delivers the complete 37-symbol curriculum — the same scope as Taiwan's Grade 1 — in a child's game format with no locked content and no ads.",
-  "detail": "Parents who grew up with Zhuyin themselves often feel strongly that their children should have the same phonetic foundation for Traditional Chinese literacy, even when living outside Taiwan. {name} is built precisely for this: it covers the same 37 symbols, all four tones, and the 聲母+介音+韻母 blending that Taiwan's curriculum teaches, in a format designed for young children who may be learning it for the first time in an English-dominant environment. Because the Pro version has no IAP prompts during play, a parent can hand the device to their child knowing no purchase screens will appear. The English + Chinese interface means Chinese-speaking parents can navigate settings while the child receives phonics instruction delivered in a culturally familiar, age-appropriate way.",
+  "detail": "Parents who grew up with Zhuyin themselves often feel strongly that their children should have the same phonetic foundation for Traditional Chinese literacy, even when living outside Taiwan. {name} is built precisely for this: it covers the same 37 symbols, all five tones, and the 聲母+介音+韻母 blending that Taiwan's curriculum teaches, in a format designed for young children who may be learning it for the first time in an English-dominant environment. Because the Pro version has no IAP prompts during play, a parent can hand the device to their child knowing no purchase screens will appear. The English + Chinese interface means Chinese-speaking parents can navigate settings while the child receives phonics instruction delivered in a culturally familiar, age-appropriate way.",
   "bullets": [
    "Complete 37-symbol Zhuyin curriculum matching Taiwan's Grade 1 scope",
-   "All four tones taught via Tone Coaster animation — no rote memorization required",
+   "All five tones taught through the Tone Roller Coaster game — no rote memorization required",
    "Sound Train teaches 聲母+介音+韻母 syllable blending",
    "Fully unlocked from day one — no IAP prompts during a child's session",
    "English + Chinese interface: parents navigate in their language, child learns in both",
@@ -1781,7 +1781,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "faq": [
    {
     "q": "I learned Bopomofo as a child in Taiwan — does {name} teach the same system I learned?",
-    "a": "Yes — {name} teaches the standard Bopomofo/Zhuyin system used in Taiwan, covering all 37 symbols (21 initials, 16 finals, and the medials), all four tones, and syllable blending. It is the same phonetic system you learned, delivered in a game format for 4–7 year olds."
+    "a": "Yes — {name} teaches the standard Bopomofo/Zhuyin system used in Taiwan, covering all 37 symbols (21 initials, 16 finals, and the medials), all five tones, and syllable blending. It is the same phonetic system you learned, delivered in a game format for 3–7 year olds."
    },
    {
     "q": "My child speaks more English than Chinese at home. Can they still benefit from {name}?",
@@ -1822,7 +1822,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Is there a subscription for {name}, or is it a one-time purchase?",
-    "a": "The four core missions are free with no subscription. A single one-time in-app purchase unlocks school prep, unlimited custom missions, all six buddy characters, and the full 100-sticker collection permanently. There are no monthly fees and no subscription of any kind."
+    "a": "The four core missions are free with no subscription. A single one-time in-app purchase unlocks school prep, unlimited custom missions, all six buddy characters, and the full 100-sticker collection. There are no monthly fees and no subscription of any kind."
    },
    {
     "q": "Does {name} track and show parents how consistently their child is completing routines?",
@@ -3126,19 +3126,19 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "transcribe and summarize a meeting on iphone",
    "get action items from a recording"
   ],
-  "lead": "To make a recording useful you want more than a transcript — a summary and a clear list of action items you can act on, ideally processed privately on your device.",
-  "detail": "A raw transcript is hard to use; the value is in the summary and the extracted to-dos. {name} records or imports audio, transcribes it, then generates a concise summary, action items and even a draft follow-up email — all on-device, so private conversations don't go to a cloud account. Export the notes to wherever you work. It's pay-once with no subscription and no account, so a long meeting becomes something usable in a minute.",
+  "lead": "To make a recording useful you want more than a transcript — a summary and a clear list of action items you can act on, with your notes kept on your own iPhone.",
+  "detail": "A raw transcript is hard to use; the value is in the summary and the extracted to-dos. {name} records or imports audio, transcribes it, then generates a concise summary, action items and even a draft follow-up email — your notes live on your iPhone and nothing is uploaded to the developer; choose Local Only mode to keep transcription on the device as well. Export the notes to wherever you work. It's pay-once with no subscription and no account, so a long meeting becomes something usable in a minute.",
   "bullets": [
-   "Record or import, then transcribe on-device",
+   "Record or import, then transcribe (Local Only mode keeps it on the device)",
    "Concise summary + extracted action items",
    "Draft follow-up email generated for you",
-   "On-device — no cloud account; private",
+   "No account; nothing uploaded to the developer",
    "Pay-once, export to your notes app"
   ],
   "faq": [
    {
     "q": "Does my audio go to a cloud?",
-    "a": "No — {name} processes on-device, so recordings and transcripts stay on your phone."
+    "a": "Nothing is uploaded to the developer. Transcription uses Apple speech recognition, which may send audio to Apple for some languages; in {name}'s Local Only mode everything stays on your iPhone."
    },
    {
     "q": "Do I get action items, not just a transcript?",
@@ -3161,10 +3161,10 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "on-device transcription app private"
   ],
   "lead": "An offline voice-to-text app transcribes on your device, so it works with no signal and keeps your recordings private.",
-  "detail": "Cloud transcription needs a connection and sends your audio to a server. An on-device app avoids both. {name} transcribes on-device, so it works offline — on a plane, in a basement meeting room — and your audio never leaves the phone. It also summarises and pulls out action items, and exports to your notes. It's pay-once with no account, so there's no subscription and no sign-up.",
+  "detail": "Cloud transcription needs a connection and sends your audio to a server. An on-device app avoids both. In {name}'s Local Only mode, transcription stays on the device, so it works offline — even in airplane mode — and nothing is uploaded to the developer. It also summarises and pulls out action items, and exports to your notes. It's pay-once with no account, so there's no subscription and no sign-up.",
   "bullets": [
-   "On-device transcription — works with no signal",
-   "Audio stays private, never uploaded",
+   "Local Only mode — transcription on the device, even in airplane mode",
+   "Nothing uploaded to the developer",
    "Summary + action items, not just a transcript",
    "Export to your notes or tasks app",
    "Pay-once, no account"
@@ -3172,11 +3172,11 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "faq": [
    {
     "q": "Does it work with no internet?",
-    "a": "Yes — {name} transcribes on-device, so it works offline."
+    "a": "Yes — in Local Only mode {name} transcribes on the device, even in airplane mode."
    },
    {
     "q": "Is my audio uploaded?",
-    "a": "No — everything is processed on the phone."
+    "a": "Not to the developer. Apple's speech recognition may send audio to Apple for some languages; in Local Only mode everything stays on your device."
    },
    {
     "q": "Subscription?",
@@ -3195,12 +3195,12 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "turn lecture into notes automatically"
   ],
   "lead": "For lectures, the win is turning an hour of audio into a transcript plus key points and a short summary — so revision takes minutes, not a re-listen.",
-  "detail": "Recording a lecture is only useful if you don't have to replay the whole thing. {name} transcribes the class on-device, then generates key points and a concise summary you can study from, and lets you export the notes. Because it's on-device it keeps recordings private and works without a connection. It's pay-once with no per-recording paywall, so it fits a student budget. Always get your lecturer's permission before recording.",
+  "detail": "Recording a lecture is only useful if you don't have to replay the whole thing. {name} transcribes the class, then generates key points and a concise summary you can study from, and lets you export the notes. Notes stay on your iPhone, and Local Only mode keeps transcription on the device so it works without a connection. It's pay-once with no per-recording paywall, so it fits a student budget. Always get your lecturer's permission before recording.",
   "bullets": [
-   "Transcribes the lecture on-device",
+   "Transcribes the lecture (Local Only mode keeps it on the device)",
    "Key points + concise summary to study from",
    "Export notes to your study app",
-   "Private and offline; no per-recording fee",
+   "Local Only mode works offline; no per-recording fee",
    "Pay-once, no subscription"
   ],
   "faq": [
@@ -3210,7 +3210,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Are my recordings private?",
-    "a": "Yes — {name} processes on-device."
+    "a": "Yes — notes live on your iPhone and nothing is uploaded to the developer; Local Only mode keeps transcription on the device too."
    },
    {
     "q": "Should I record lectures?",
@@ -3331,12 +3331,12 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "day by day itinerary multiple cities"
   ],
   "lead": "For a multi-city trip, the clearest plan is a single day-by-day timeline where each city's flights, hotels and activities sit in order — so you always know what's next and where.",
-  "detail": "Juggling several cities gets messy in notes and emails. A day-by-day timeline fixes it: put each flight, hotel check-in, activity and restaurant on the right day, with type icons, time zones, notes and reminders, so a glance tells you the plan. {name} builds one itinerary spanning multiple cities and keeps it available offline so you can read it on the move. It stores everything on-device with no account, and it's pay-once with no subscription.",
+  "detail": "Juggling several cities gets messy in notes and emails. A day-by-day timeline fixes it: put each flight, hotel check-in, activity and restaurant on the right day, with type icons, time zones, notes and reminders, so a glance tells you the plan. {name} builds one itinerary spanning multiple cities and keeps it available offline so you can read it on the move. With iCloud on, trips sync through your private iCloud account, and it's pay-once with no subscription.",
   "bullets": [
    "One day-by-day timeline across all your cities",
    "Flights, hotels, activities and food with clear type icons",
    "Works offline once the trip is created",
-   "On-device, no account",
+   "Optional private iCloud sync",
    "Pay-once, no subscription"
   ],
   "faq": [
@@ -3350,7 +3350,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Is there a subscription?",
-    "a": "No — {name} is pay-once with no account."
+    "a": "No — {name} is pay-once with no subscription."
    }
   ]
  },
@@ -3364,11 +3364,11 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "itinerary app works without internet no login",
    "offline trip planner no sign up"
   ],
-  "lead": "The most reliable travel itinerary app is one that stores your plans on-device and needs no account — so it opens instantly on a plane or in a dead zone, with no login to fail.",
-  "detail": "Cloud itinerary apps can stall when you have no signal or when a login times out — exactly when you need your plans. An on-device app avoids both. {name} keeps your full day-by-day itinerary — flights, hotels, activities and transport — on the device with no account, so it's there mid-flight and in low-signal destinations. Type icons, time zones, notes and reminders keep each item easy to read, and it's pay-once with no subscription between trips.",
+  "lead": "The most reliable travel itinerary app is one whose core planning works offline — so it opens on a plane or in a dead zone without waiting for a connection.",
+  "detail": "Itinerary apps that need a live connection can stall when you have no signal — exactly when you need your plans. {name}'s core planning works offline, so your day-by-day itinerary — flights, hotels, activities and transport — is there mid-flight and in low-signal destinations. With iCloud on, trips sync through your private iCloud account; there is no sign-up with the developer, who has no travel-data server. Type icons, time zones, notes and reminders keep each item easy to read, and it's pay-once with no subscription between trips.",
   "bullets": [
-   "Itinerary stored on-device — opens with no signal",
-   "No account or login to fail at the wrong moment",
+   "Core planning works offline — opens with no signal",
+   "No sign-up with the developer; optional private iCloud sync",
    "Day-by-day timeline with type icons and time zones",
    "Reliable mid-flight and in dead zones",
    "Pay-once, no subscription"
@@ -3376,11 +3376,11 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
   "faq": [
    {
     "q": "Does it need internet to open my plans?",
-    "a": "No — {name} stores everything on-device, so your itinerary opens offline."
+    "a": "No — {name}'s core planning works offline, so your itinerary opens without a connection."
    },
    {
     "q": "Do I have to create an account?",
-    "a": "No — there's no login; your plans live on the device."
+    "a": "Not with the developer — if you turn on iCloud, trips sync through your own private iCloud account."
    },
    {
     "q": "Subscription?",
@@ -3399,22 +3399,22 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "keep group trip organized itinerary"
   ],
   "lead": "For a family or group trip, a clear shared day-by-day plan — flights, hotels, meal times, activities — prevents the constant 'what's next?' and keeps everyone aligned.",
-  "detail": "Group trips fall apart when the plan lives in one person's head or scattered messages. A single timeline for each day — arrivals, check-ins, activities and restaurant bookings — makes the plan legible at a glance. {name} builds that day-by-day itinerary with type icons and works offline, so the organiser can pull it up anywhere and share a trip or day poster. Sharing communicates the plan; the app does not claim real-time collaborative editing. It's on-device, no account, and pay-once.",
+  "detail": "Group trips fall apart when the plan lives in one person's head or scattered messages. A single timeline for each day — arrivals, check-ins, activities and restaurant bookings — makes the plan legible at a glance. {name} builds that day-by-day itinerary with type icons and works offline, so the organiser can pull it up anywhere, invite others to edit a shared trip through iCloud, and share a trip or day poster. It's pay-once with no subscription.",
   "bullets": [
    "One clear day-by-day plan for the whole group",
    "Clear type icons for flights, hotels, meals and activities",
    "Works offline; share a trip or day poster",
-   "On-device, no account",
+   "Invite others to edit a shared trip via iCloud",
    "Pay-once, no subscription"
   ],
   "faq": [
    {
     "q": "Can I share the plan with my family?",
-    "a": "You can share a trip or day poster; {name} keeps the master plan on your device and does not claim real-time collaborative editing."
+    "a": "Yes — with iCloud on, people you invite can read and edit a shared trip, and you can also share a trip or day poster."
    },
    {
     "q": "Does everyone need the app or an account?",
-    "a": "No account is needed; the organiser keeps the plan in {name} and shares the details."
+    "a": "There is no sign-up with the developer; people who edit a shared trip do so through iCloud, and anyone can view a shared trip or day poster."
    },
    {
     "q": "Is it pay-once?",
@@ -3909,11 +3909,11 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "reward chart app for kids no ads"
   ],
   "lead": "The best routine or chore app for young children turns daily tasks into a rewarding game they want to complete — without ads or anything that pressures them to spend.",
-  "detail": "Paper star charts work until they get lost or forgotten; a good app keeps the routine visible and rewarding every day. {name} turns morning routines, bedtime steps and simple chores into a friendly game with rewards, so a young child follows along with less nagging. It's built for the 3–6 age range, ad-free with no data collected from children, and a one-time unlock — so there's nothing manipulative and nothing extra to buy. Parents get the structure without the mess of paper charts. Check the current App Store listing for details.",
+  "detail": "Paper star charts work until they get lost or forgotten; a good app keeps the routine visible and rewarding every day. {name} turns morning routines, bedtime steps and simple chores into a friendly game with rewards, so a young child follows along with less nagging. It's built for children aged about 3–7, ad-free with no data collected from children, and a one-time unlock — so there's nothing manipulative and nothing extra to buy. Parents get the structure without the mess of paper charts. Check the current App Store listing for details.",
   "bullets": [
    "Turns routines and chores into a rewarding game",
    "Keeps the daily routine visible — no lost paper charts",
-   "Designed for young children (about ages 3–6)",
+   "Designed for young children (about ages 3–7)",
    "Ad-free, no data collected from children",
    "One-time unlock, nothing manipulative"
   ],
@@ -3943,7 +3943,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "daily habits app for preschool kids"
   ],
   "lead": "Young children build independence when a routine is predictable, visual, and rewarding — so they can see what comes next and feel proud completing it themselves.",
-  "detail": "Preschoolers thrive on predictable routines they can follow with less adult prompting. Making each step visual and rewarding helps a child move through getting dressed, brushing teeth or tidying up on their own. {name} presents daily routines as a friendly game with steps and rewards, so a child gains independence and parents nag less. It's for the 3–6 range, ad-free, no data collected, and a one-time unlock. Pair it with consistent daily use for the best results.",
+  "detail": "Preschoolers thrive on predictable routines they can follow with less adult prompting. Making each step visual and rewarding helps a child move through getting dressed, brushing teeth or tidying up on their own. {name} presents daily routines as a friendly game with steps and rewards, so a child gains independence and parents nag less. It's for children aged about 3–7, ad-free, no data collected, and a one-time unlock. Pair it with consistent daily use for the best results.",
   "bullets": [
    "Predictable, visual routines a child can follow themselves",
    "Rewards each completed step to build motivation",
@@ -3958,7 +3958,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "What age is it for?",
-    "a": "It's designed for roughly ages 3–6, the window for building early daily habits."
+    "a": "It's designed for roughly ages 3–7, the window for building early daily habits."
    },
    {
     "q": "Is it ad-free and private?",
@@ -3977,11 +3977,11 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "spend less time on phone"
   ],
   "lead": "Cutting phone use works better with a hard timed block than willpower — you decide the rules once, and the app enforces them so you're not relying on self-control in the moment.",
-  "detail": "Most 'just use it less' advice fails because the pull happens in the moment. A timed block removes the decision: you pick the apps and hours, and they're locked until time's up. {name} uses Apple's Screen Time API to hard-block chosen apps, categories or sites for a session, with an optional Hard Mode that prevents ending it early. Set recurring blocks for study, work, meals or bedtime, and everything unlocks automatically when the timer ends. It's pay-once with no subscription. It reduces access; building better habits is still up to you.",
+  "detail": "Most 'just use it less' advice fails because the pull happens in the moment. A timed block removes the decision: you pick the apps and hours, and they're locked until time's up. {name} uses Apple's Screen Time API to hard-block chosen apps, categories or sites for a session, with an optional Hard Mode that adds a cooldown and a confirmation before you can end it early. Use focus modes for study, deep work or winding down for sleep, and everything unlocks automatically when the timer ends. It's pay-once with no subscription. It reduces access; building better habits is still up to you.",
   "bullets": [
    "Timed hard-block removes in-the-moment willpower battles",
    "Blocks apps, categories or websites you choose",
-   "Optional Hard Mode prevents ending a session early",
+   "Optional Hard Mode adds a cooldown and a confirmation before ending a session early",
    "Recurring blocks for study, work, meals, bedtime",
    "Pay-once; uses Apple Screen Time (system-level)"
   ],
@@ -3992,7 +3992,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Can I bypass it when tempted?",
-    "a": "With Hard Mode on, early exit is prevented for the session; otherwise apps unlock when the timer ends."
+    "a": "With Hard Mode on, stopping early takes a cooldown and a confirmation; otherwise apps unlock when the timer ends."
    },
    {
     "q": "Is it a subscription?",
@@ -4011,18 +4011,18 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "screen time not working well enough"
   ],
   "lead": "Apple's built-in Screen Time is a good start, but many people tap 'Ignore Limit' — so a stricter blocker with a no-bypass mode is what actually holds.",
-  "detail": "Screen Time's app limits work until you hit the limit and tap 'Ignore Limit,' which is easy to do repeatedly. A dedicated blocker built on the same Screen Time framework can add stricter enforcement: timed sessions and a Hard Mode that prevents early exit. {name} does exactly that — it uses Apple's Screen Time API but adds hard, timed blocks you can't casually bypass, plus recurring schedules. It's honest about how blocking works (it builds on Screen Time, not around it) and it's pay-once. If you keep ignoring the built-in limits, a stricter layer is what helps.",
+  "detail": "Screen Time's app limits work until you hit the limit and tap 'Ignore Limit,' which is easy to do repeatedly. A dedicated blocker built on the same Screen Time framework can add stricter enforcement: timed sessions and a Hard Mode that adds a cooldown and a confirmation before an early exit. {name} does exactly that — it uses Apple's Screen Time API but adds timed blocks you can't casually bypass, plus focus modes for work, study and sleep. It's honest about how blocking works (it builds on Screen Time, not around it) and it's pay-once. If you keep ignoring the built-in limits, a stricter layer is what helps.",
   "bullets": [
    "Screen Time is easy to bypass with 'Ignore Limit'",
    "{name} adds hard, timed blocks on the same framework",
-   "Hard Mode prevents early exit for the session",
+   "Hard Mode adds a cooldown and a confirmation before an early exit",
    "Recurring schedules for consistent enforcement",
    "Pay-once; builds on Screen Time, honestly"
   ],
   "faq": [
    {
     "q": "Why isn't built-in Screen Time enough for me?",
-    "a": "Its limits can be dismissed with 'Ignore Limit.' {name} adds timed blocks and a no-early-exit Hard Mode for stricter enforcement."
+    "a": "Its limits can be dismissed with 'Ignore Limit.' {name} adds timed blocks and a Hard Mode with a cooldown and a confirmation before stopping early."
    },
    {
     "q": "Does it replace Screen Time?",

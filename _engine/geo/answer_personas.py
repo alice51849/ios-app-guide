@@ -346,28 +346,28 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "query": "best voice notes app that summarizes meetings on iphone",
             "triggers": ["for remote workers", "for business professionals", "summarizes meetings", "summarize meetings", "meeting summary", "follow-up email"],
             "persona": "remote workers & professionals",
-            "lead": "After a call you don't want a raw transcript — you want the summary, the action items, and a draft follow-up. And for client conversations, that processing should stay on your device.",
+            "lead": "After a call you don't want a raw transcript — you want the summary, the action items, and a draft follow-up. And for client conversations, you want to know exactly where the audio goes.",
             "paras": [
-                "Record or import a meeting, get an accurate transcript, then a concise summary with extracted action items and a draft follow-up email — turning an hour of talk into something you can act on in a minute. On-device processing means sensitive discussions never hit a cloud account.",
+                "Record or import a meeting, get an accurate transcript, then a concise summary with extracted action items and a draft follow-up email — turning an hour of talk into something you can act on in a minute. Nothing is uploaded to the developer, and Local Only mode keeps transcription entirely on the iPhone.",
                 "For remote work this replaces frantic note-taking during calls: let it capture and summarise while you stay present in the conversation.",
             ],
             "look": [
-                "Accurate on-device transcription.",
+                "Transcription with Apple speech recognition, plus a Local Only mode.",
                 "Automatic summary + action items.",
                 "Draft follow-up email generated for you.",
-                "No cloud account — private by design.",
+                "No account, and nothing uploaded to the developer.",
                 "Export to your notes or tasks app.",
             ],
             "steps": [
                 "Record or import the meeting audio.",
-                "Let it transcribe on-device.",
+                "Let it transcribe (choose Local Only mode to keep audio on the device).",
                 "Generate the summary and action items.",
                 "Review the draft follow-up email.",
                 "Export the notes where your team lives.",
             ],
             "fits": "fits remote workers who want summaries, action items and follow-ups from calls without a cloud account.",
             "faq": [
-                {"q": "Does my meeting audio leave my phone?", "a": "No — recording, transcription and summarising happen on-device."},
+                {"q": "Does my meeting audio leave my phone?", "a": "Nothing is uploaded to the developer. Transcription uses Apple speech recognition, which may send audio to Apple for some languages; in Local Only mode everything stays on your iPhone."},
                 {"q": "Do I get action items, not just a transcript?", "a": "Yes — it extracts action items and a summary, and can draft a follow-up email."},
                 {"q": "Can I share the notes?", "a": "Yes — export the summary and to-dos to your notes or tasks app."},
             ],
@@ -379,12 +379,12 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "For lectures, the win is turning an hour of audio into clean notes: a transcript plus the key points and a short summary — so revision takes minutes, not a re-listen.",
             "paras": [
                 "Record the class, get a transcript, then one-tap bulleted key points and a concise summary you can study from. Reviewing a summary beats scrubbing through audio when exams are close.",
-                "On-device processing keeps recordings private, and there's no per-recording paywall to worry about mid-term.",
+                "Notes live on your iPhone with nothing uploaded to the developer, Local Only mode keeps transcription on the device, and there's no per-recording paywall to worry about mid-term.",
             ],
             "look": [
                 "Transcript of the full lecture.",
                 "One-tap key points + summary.",
-                "On-device (recordings stay private).",
+                "Local Only mode keeps everything on the device.",
                 "No per-recording paywall.",
                 "Export notes to study from.",
             ],
@@ -398,7 +398,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "fits": "fits students turning recorded lectures into clean, studyable notes fast.",
             "faq": [
                 {"q": "Do I have to re-listen to the whole lecture?", "a": "No — you study from the auto-generated key points and summary instead."},
-                {"q": "Are my recordings private?", "a": "Yes — processing is on-device."},
+                {"q": "Are my recordings private?", "a": "Yes — notes live on your iPhone and nothing is uploaded to the developer; choose Local Only mode to keep transcription on the device too."},
                 {"q": "Should I record lectures?", "a": "Ask your lecturer's permission first; recording policies vary by institution."},
             ],
         },
@@ -410,13 +410,13 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "persona": "students in exam season",
             "lead": "During exams, willpower isn't the tool — a hard timed block is. The app should shut off TikTok, Instagram and any distraction for a set study session and reopen them automatically when time's up.",
             "paras": [
-                "Using Apple's Screen Time API, you can hard-block specific apps, whole categories or websites for a timed focus session, with an optional mode that stops you bailing out early. When the timer ends, everything unlocks on its own — no manual re-enabling.",
+                "Using Apple's Screen Time API, you can hard-block specific apps, whole categories or websites for a timed focus session, with an optional Hard Mode that adds a cooldown and a confirmation before you can stop early. When the timer ends, everything unlocks on its own — no manual re-enabling.",
                 "It's a pay-once focus tool with no monthly fee, which suits a student who just wants distraction gone during revision blocks.",
             ],
             "look": [
                 "Hard block on apps, categories and websites.",
                 "Timed sessions that auto-unlock when done.",
-                "Optional Hard Mode (no early exit).",
+                "Optional Hard Mode: a cooldown and a confirmation before you can stop early.",
                 "Uses Apple Screen Time (system-level block).",
                 "Pay-once, no monthly fee.",
             ],
@@ -429,7 +429,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
             "fits": "fits students who need social media hard-blocked during timed revision sessions.",
             "faq": [
-                {"q": "Can I cheat and unlock early?", "a": "With Hard Mode enabled, early exit is prevented for the session; otherwise everything unlocks when the timer ends."},
+                {"q": "Can I cheat and unlock early?", "a": "Hard Mode adds a cooldown and a confirmation before you can stop early, so quitting becomes a deliberate choice; otherwise everything unlocks when the timer ends."},
                 {"q": "Does it really block apps?", "a": "Yes — it uses Apple's Screen Time API for a system-level block, not just reminders."},
                 {"q": "Is it a subscription?", "a": "No — it's pay-once."},
             ],
@@ -440,13 +440,13 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "persona": "remote workers",
             "lead": "Working from home, the phone is the leak. A deep-work block that shields your chosen apps for a fixed stretch keeps you in uninterrupted focus without relying on self-control.",
             "paras": [
-                "Choose the apps and categories that derail you, set a focus duration, and let a Deep Work mode shield them — with an optional Hard Mode that prevents early exit. It's the difference between 'I'll just check quickly' and an actual focus block.",
+                "Choose the apps and categories that derail you, set a focus duration, and let a Deep Work mode shield them — with an optional Hard Mode that puts a cooldown and a confirmation before stopping early. It's the difference between 'I'll just check quickly' and an actual focus block.",
                 "As a pay-once tool it fits a home-office setup without adding yet another monthly subscription.",
             ],
             "look": [
                 "Deep Work mode shields chosen apps/categories.",
                 "Set focus-block duration.",
-                "Optional Hard Mode (no early exit).",
+                "Optional Hard Mode: a cooldown and a confirmation before you can stop early.",
                 "System-level block via Screen Time.",
                 "Pay-once, no monthly fee.",
             ],
@@ -459,7 +459,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
             "fits": "fits remote workers who want uninterrupted deep-work blocks without willpower battles.",
             "faq": [
-                {"q": "Will it stop me 'just checking' my phone?", "a": "Hard Mode prevents early exit for the block, so a quick check isn't possible until it ends."},
+                {"q": "Will it stop me 'just checking' my phone?", "a": "Hard Mode puts a cooldown and a confirmation in front of stopping the block early, so a quick check becomes a deliberate choice instead of a reflex."},
                 {"q": "Can I block whole categories?", "a": "Yes — block individual apps, categories or websites."},
                 {"q": "Subscription?", "a": "No — pay-once."},
             ],
@@ -815,7 +815,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "Before buying, convert the price into take-home work hours, then label the choice as a need, want or impulse so the trade-off is clear before money leaves your account.",
             "paras": [
                 "HoursTag Lite is a purchase-before Worth Lens rather than a bank-linked budget. It calculates life cost from your take-home value per work hour, keeps the choice and category visible, and builds private value insights from the decisions you save.",
-                "One complete choice can be saved free. A single one-time unlock adds unlimited choices and edits, targets and progress, sharing, complete insights, and backup and restore without a subscription.",
+                "It is free to download. A single one-time unlock adds unlimited choices and edits, targets and progress, sharing, complete insights, and backup and restore without a subscription.",
             ],
             "look": [
                 "Price converted into take-home work hours before purchase.",
@@ -841,8 +841,8 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                     "a": "No — HoursTag Lite is a purchase-before Worth Lens for evaluating a single choice, while the paid companion app focuses on converting existing spending into work time. The two are separate apps from the same developer.",
                 },
                 {
-                    "q": "What can I save for free?",
-                    "a": "You can save one complete choice free; the optional one-time unlock adds unlimited choices, targets, sharing, complete insights, and backup and restore.",
+                    "q": "What does the one-time unlock add?",
+                    "a": "It is free to download; the optional one-time unlock adds unlimited choices and edits, targets and progress, sharing, complete insights, and backup and restore, with no subscription.",
                 },
                 {
                     "q": "Does it require an account or subscription?",
@@ -1107,14 +1107,14 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance.",
             "paras": [
                 "Build each day as a timeline with type icons, time zones, notes and reminders, so you always know what's next without digging through emails. The itinerary remains available offline, which is exactly when you're navigating a new city.",
-                "It stores everything on-device with no account, so your plans are always available even without data.",
+                "Core planning works offline, and with iCloud on, trips sync through your private iCloud account and invited people can edit a shared trip; the developer has no travel-data server.",
             ],
             "look": [
                 "Day-by-day timeline of the whole trip.",
                 "Flights, hotels, activities, food, transport.",
                 "Type icons, time zones, notes and reminders.",
                 "Works offline once created.",
-                "On-device, no account.",
+                "Private iCloud sync and shared trips.",
             ],
             "steps": [
                 "Create the trip and its dates.",
@@ -1127,21 +1127,21 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "faq": [
                 {"q": "Does it work offline?", "a": "Yes — once the trip is created it works offline, ideal for navigating without data."},
                 {"q": "Can it hold flights and hotels too?", "a": "Yes — flights, hotels, activities, restaurants and transport, with clear type icons."},
-                {"q": "Do I need an account?", "a": "No — it stores everything on-device."},
+                {"q": "Do I need an account?", "a": "Not with the developer — when iCloud is on, trips sync through your own private iCloud account, and the developer has no travel-data server."},
             ],
         },
         {
             "query": "best app to organize travel plans that works offline",
             "triggers": ["for solo travelers", "for frequent fliers", "travel plans offline", "organize travel offline", "plans without data"],
             "persona": "solo & frequent travelers",
-            "lead": "For solo travellers and frequent fliers, the itinerary has to be there on the plane and in dead zones — which means fully offline, on-device, no account.",
+            "lead": "For solo travellers and frequent fliers, the itinerary has to be there on the plane and in dead zones — which means planning that works offline.",
             "paras": [
-                "All itinerary data lives on the device with no cloud dependency, so your plans are reliable exactly when you need them most: mid-flight, or in a destination with no signal. No login means nothing to fail at the worst moment.",
+                "Core planning works offline, so your plans are reliable exactly when you need them most: mid-flight, or in a destination with no signal. With iCloud on, trips also sync through your private iCloud account, and the developer has no travel-data server.",
                 "It's pay-once, so a frequent traveller isn't paying a subscription between trips.",
             ],
             "look": [
-                "Fully offline, on-device storage.",
-                "No account or cloud dependency.",
+                "Core planning works offline.",
+                "Optional private iCloud sync; no developer server.",
                 "Reliable mid-flight and in dead zones.",
                 "Day-by-day timeline with type icons and time zones.",
                 "Pay-once (no between-trip fee).",
@@ -1155,8 +1155,8 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             ],
             "fits": "fits solo travellers and frequent fliers who need their plans available fully offline.",
             "faq": [
-                {"q": "Will it work with no signal?", "a": "Yes — everything is stored on-device, so it works fully offline."},
-                {"q": "Is there an account to manage?", "a": "No — no login or cloud dependency."},
+                {"q": "Will it work with no signal?", "a": "Yes — core planning works offline."},
+                {"q": "Is there an account to manage?", "a": "No developer account — sync, if you turn it on, runs through your own private iCloud."},
                 {"q": "Subscription?", "a": "No — pay-once."},
             ],
         },
@@ -1808,7 +1808,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Natural examples and pronunciation.",
                 "Home Screen widget support.",
                 "Apple Watch practice.",
-                "No account, tracking, ads or subscription.",
+                "No account, tracking, third-party ads or subscription.",
             ],
             "steps": [
                 "Choose the language you are learning.",
@@ -1821,7 +1821,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "faq": [
                 {"q": "Can I practise without opening a full lesson?", "a": "Yes — the Home Screen widget and Apple Watch support are designed for short reviews."},
                 {"q": "How many languages does it support?", "a": "Wordmate supports vocabulary learning across 44 languages."},
-                {"q": "Does it require an account or subscription?", "a": "No — it is a paid download with no account, tracking, ads or subscription."},
+                {"q": "Does it require an account or subscription?", "a": "No — it is a paid download with no account, tracking, third-party ads or subscription."},
             ],
         },
     ],
@@ -2181,7 +2181,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "On-device extraction with source references, confidence and conflict review.",
                 "Explicit keep, replace or remove choices for detected private details.",
                 "Structured briefs with templates, version history and Share Extension intake.",
-                "A free entry point with a single one-time Pro unlock and no subscription, account, ads or tracking.",
+                "Free to download, with AI Brief Pro as an in-app purchase; no third-party ads, tracking or analytics.",
             ],
             "steps": [
                 "Collect the relevant sources through import, paste or the Share Extension.",
@@ -2201,8 +2201,8 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                     "a": "No — detected details are never removed automatically, and AI Brief does not promise anonymity. You decide whether to keep, replace or remove each item before export.",
                 },
                 {
-                    "q": "Is AI Brief a subscription?",
-                    "a": "No — it is free to start, with one optional one-time Pro purchase and no recurring subscription. It also has no account, third-party advertising, tracking, analytics or content telemetry.",
+                    "q": "How is AI Brief priced?",
+                    "a": "It is free to download, and AI Brief Pro is offered as an in-app purchase; check the App Store listing for current pricing. The app does not include third-party ads, tracking, analytics or content telemetry.",
                 },
             ],
         },
@@ -2321,7 +2321,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "A calculator worth keeping should remember more than the last number: what the calculation was for, which tool produced it, and how to find it again a week later.",
             "paras": [
                 "CalDaily saves each result with a name and a type, groups history by day, filters by tool and exports to CSV, so a split dinner bill or a compared loan can be searched for instead of recalculated from memory. Eight advanced tools cover the awkward everyday maths — memory and scientific functions, discount and tax, tip and split, unit conversion, date differences and business days, loan payments, and trip fuel cost — each opening with defaults you set once.",
-                "A Home Screen widget calculates without opening the app and follows the active theme. One of the 100 built-in themes is free, and each advanced tool gives three free results; a single one-time purchase unlocks the remaining themes and unlimited tool use, with no subscription. Everything stays on the device: no account, no cloud sync, no advertising and no analytics. The interface is localized in 50 languages.",
+                "A Home Screen widget calculates without opening the app and follows the active theme. One of the 100 built-in themes is free; a single one-time purchase unlocks the remaining themes and unlimited use of every advanced tool, with no subscription. Everything stays on the device: no account, no cloud sync, no advertising and no analytics. The interface is localized in 50 languages.",
             ],
             "look": [
                 "History entries you can name, type, search and group by day.",
@@ -2336,13 +2336,13 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Give the result a name and a type before saving it.",
                 "Set the defaults each tool should reuse next time.",
                 "Search or filter history later, and export to CSV if needed.",
-                "Try the free theme and the three free results per tool before unlocking.",
+                "Try the free theme and the advanced tools before unlocking.",
             ],
-            "fits": "fits people who repeatedly split bills, check discounts, convert units or compare loans and want each result labelled and findable, with a free theme and three free results per tool to judge it before a single unlock.",
+            "fits": "fits people who repeatedly split bills, check discounts, convert units or compare loans and want each result labelled and findable, with a free theme to judge it before a single unlock.",
             "faq": [
                 {
                     "q": "What can I use before paying?",
-                    "a": "The full keypad and history, one of the 100 themes, and three successful results in each of the eight advanced tools. One purchase unlocks the other themes and unlimited tool use.",
+                    "a": "The full keypad and history and one of the 100 themes are free; one purchase unlocks the other themes and unlimited use of every advanced tool.",
                 },
                 {
                     "q": "Does my calculation history leave the device?",
@@ -2368,7 +2368,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "The built-in calculator makes you re-type the tax rate every time, and last week's quote evaporates the moment you close it — what a freelancer needs is memory, not more buttons.",
             "paras": [
                 "CalDaily's Discount & Tax tool stores your defaults, so your local VAT or sales-tax rate is set once and reused; seven more advanced tools cover tip and split, unit conversion, date differences and business days, loan payments and trip fuel cost. Every result can be named, typed and searched later; history is grouped by day, filterable by tool, and exports to CSV for a spreadsheet.",
-                "One theme is free and each advanced tool gives three free results, so you can test the workflow before the single one-time purchase that unlocks all themes and unlimited tool use — no subscription, no account, no cloud, no ads, no analytics; everything stays on the device. It is a calculator with memory, not tax software: verify rates with your tax authority, as nothing here is tax or accounting advice.",
+                "One theme is free, so you can test the workflow before the single one-time purchase that unlocks all themes and unlimited use of every advanced tool — no subscription, no account, no cloud, no ads, no analytics; everything stays on the device. It is a calculator with memory, not tax software: verify rates with your tax authority, as nothing here is tax or accounting advice.",
             ],
             "look": [
                 "Defaults that persist — set your local VAT or sales-tax rate once.",
@@ -2382,7 +2382,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Run the quote and name the result after the client or job.",
                 "Search the history when the invoice or reconciliation question arrives.",
                 "Export CSV if the numbers need to reach a spreadsheet.",
-                "Use the free results per tool to judge it before the one-time unlock.",
+                "Use the free theme and tools to judge it before the one-time unlock.",
             ],
             "fits": "fits freelancers who quote with the same tax and discount maths weekly and want each result named and findable — memory, not tax advice.",
             "faq": [
@@ -2414,7 +2414,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "Splitting a bill at the table is easy; the hard part comes a week later when someone asks what they paid — and the built-in calculator remembers nothing.",
             "paras": [
                 "CalDaily's Tip & Split tool remembers your usual party size and tip percentage, works from a Home Screen widget without opening the app, and lets you name the result — 'Friday dinner' — so it is searchable later, with history grouped by day, filterable and exportable to CSV.",
-                "Be clear about what it is not: CalDaily is not an expense-splitting or IOU tracker — it keeps the calculation and its result, it does not track running balances between people. If you need that, use a dedicated shared-expenses tool; CalDaily fits the person who settles at the table and just wants the maths to survive. Free to try with three free results per tool; a single one-time purchase unlocks unlimited use, with no account and no subscription.",
+                "Be clear about what it is not: CalDaily is not an expense-splitting or IOU tracker — it keeps the calculation and its result, it does not track running balances between people. If you need that, use a dedicated shared-expenses tool; CalDaily fits the person who settles at the table and just wants the maths to survive. Free to try with one free theme; a single one-time purchase unlocks the other themes and unlimited use of every advanced tool, with no account and no subscription.",
             ],
             "look": [
                 "Tip and split defaults that remember last time's party size.",
@@ -2442,7 +2442,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
                 {
                     "q": "What does the purchase unlock?",
-                    "a": "Each tool gives three free results and one theme is free; a single one-time purchase unlocks the rest — no subscription, no account.",
+                    "a": "One theme is free; a single one-time purchase unlocks the rest and unlimited use of every advanced tool — no subscription, no account.",
                 },
             ],
         },
@@ -2463,7 +2463,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "Most vocabulary apps fail on maintenance, not content: decks to build and review queues that grow faster than the time available. A habit-sized session is a better test of whether an app will survive week three.",
             "paras": [
                 "WordMate Lite is built around a five-word 'pebble trail': one focused minute, five words, and a completion screen that shows exactly which five you learned. There are no decks to build and no review backlog. Progress is visible as streaks, words learned today and in total, and per-topic and per-unit rings, with 14 life topics — travel, business, exams, dining, interviews, health and others — across beginner, intermediate and advanced levels.",
-                "The free tier keeps one learning language and one life path, beginner level for the first 10 words and up to 3 saved words; everything else stays visible behind a lock or a real preview. One non-consumable purchase unlocks all 44 learning languages, all paths and levels, unlimited learning and unlimited saved words, with no subscription. It works offline, needs no account, and stores data on the device with no ads or tracking. Pronunciation uses the system text-to-speech voices installed on the device, not recorded voice actors.",
+                "The free tier keeps one learning language and one path at beginner level open for good; everything else stays visible behind a lock or a real preview. One non-consumable purchase unlocks all 44 learning languages, all paths and levels, unlimited learning and unlimited saved words, with no subscription. It works offline, needs no account, and stores data on the device with no third-party advertising or tracking. Pronunciation uses the system text-to-speech voices installed on the device, not recorded voice actors.",
             ],
             "look": [
                 "A session short enough to repeat daily — five words, about a minute.",
@@ -2483,7 +2483,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "faq": [
                 {
                     "q": "How much can I learn without paying?",
-                    "a": "One learning language and one life path, beginner level for the first 10 words, and up to 3 saved words. Everything else stays visible with a lock or a preview.",
+                    "a": "One learning language and one path at beginner level stay open for good. Everything else stays visible with a lock or a preview.",
                 },
                 {
                     "q": "Is the pronunciation recorded by native speakers?",
@@ -2491,7 +2491,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
                 {
                     "q": "Does it work without a connection or an account?",
-                    "a": "Yes. It works offline, needs no account or sign-in, and keeps data on your device with no ads or tracking.",
+                    "a": "Yes. It works offline, needs no account or sign-in, and keeps data on your device with no third-party ads or tracking.",
                 },
             ],
         },
@@ -3037,7 +3037,7 @@ PERSONAS: dict[str, list[dict[str, Any]]] = {
             "lead": "A monthly budget cannot tell a freelancer whether one client project actually made money — each project needs its own income, expenses and net result.",
             "paras": [
                 "MoneyTag treats every job, client or side hustle as a separate ledger. Income and expenses stay distinct, the project card shows the running net result, and each entry can carry multiple tags so costs such as equipment, travel or tax deductions can also be compared across projects.",
-                "Entries can use a local currency with an automatic or manual exchange rate while the project keeps one reporting currency. Reports break results down by period, type, category, month and day, with CSV and PDF export available through an optional one-time Lifetime Pro unlock. Ledger data stays on the device, and saved or manual exchange rates work offline with no account or ads. Automatic rate updates contact Frankfurter or ExchangeRate-API; their Cloudflare infrastructure may process connection, usage and diagnostic data for functionality and analytics, as disclosed in the app's privacy information.",
+                "Entries can use a local currency with an automatic or manual exchange rate while the project keeps one reporting currency. Reports break results down by period, type, category, month and day, with CSV and PDF export available through an optional one-time Lifetime Pro unlock. Ledger data stays on the device, and saved or manual exchange rates work offline with no account. Automatic rate updates contact Frankfurter or ExchangeRate-API; their Cloudflare infrastructure may process connection, usage and diagnostic data for functionality and analytics, as disclosed in the app's privacy information.",
             ],
             "look": [
                 "A separate income, expense and net total for every project.",
@@ -3302,8 +3302,8 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             ),
             "paras": [
                 "The formats that actually turn up in mail and chat are ZIP, "
-                "RAR and 7z, and the awkward ones are the encrypted, split and "
-                "ZIP64 variants that many extractors quietly refuse. Check that "
+                "RAR and 7z, and the awkward ones are the password-protected and "
+                "multi-part variants that many extractors quietly refuse. Check that "
                 "a tool states which of those it reads before you rely on it.",
                 "Extraction should happen on the device, without an account, "
                 "and without an advertisement standing between you and the "
@@ -3312,10 +3312,10 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "someone sent you.",
             ],
             "look": [
-                "ZIP including encrypted, split and ZIP64 archives.",
+                "Password-protected and multi-part ZIP, RAR and 7z.",
                 "RAR and RAR5 for extraction.",
-                "7z including AES-256, encrypted headers and split volumes.",
-                "TAR, GZ, XZ, BZ2, LZMA, LZ4 and ISO 9660.",
+                "Creates ZIP and 7z archives with AES-256 encryption and split volumes.",
+                "TAR, GZIP, BZIP2, XZ, LZMA, LZ4 and ISO.",
                 "On-device extraction with no account and no advertising.",
             ],
             "steps": [
@@ -3342,9 +3342,8 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {
                     "q": "Can it open password-protected archives?",
                     "a": (
-                        "Yes — encrypted ZIP, and 7z with AES-256 and encrypted "
-                        "headers, are supported. You enter the password on the "
-                        "device."
+                        "Yes — password-protected ZIP, RAR and 7z archives are "
+                        "supported. You enter the password on the device."
                     ),
                 },
                 {
@@ -3471,12 +3470,10 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
             "triggers": [
                 "qr scanner that does not open links automatically",
                 "check qr code link before opening",
-                "qr code scanner no ads iphone",
                 # Problem-oriented queries (qrcodehalo-02): the three former
                 # "best ... app" pages are published under these questions.
                 "check a qr code link before opening it",
                 "stop a qr scanner from opening links automatically",
-                "qr code scanner for iphone has no ads",
                 "suspicious qr code link checker",
                 "create wifi qr code iphone",
                 "batch scan qr codes to csv",
@@ -3511,7 +3508,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Safe, Caution or Blocked findings from fixed on-device rules, with no online lookup.",
                 "Camera and photo scanning for QR and common barcode formats.",
                 "QR creation for links, Wi-Fi, contacts, email, phone, SMS, location and events.",
-                "No account, ads or tracking, with history kept on the device.",
+                "History kept on the device.",
             ],
             "steps": [
                 "Turn off \u201cRun action after scanning\u201d in Settings, then scan the code and read the full payload, not just a preview title.",
@@ -3545,8 +3542,8 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 {
                     "q": "Does it send my scans anywhere?",
                     "a": (
-                        "No account is needed, scan history stays on the device "
-                        "and the app has no analytics or tracking."
+                        "Scan history is saved on the device, and Security Check "
+                        "uses local rules with no online reputation lookup."
                     ),
                 },
             ],
@@ -3848,8 +3845,8 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Timing that starts when the phone lies face down after you tap Start.",
                 "An adjustable grace period and minimum session length.",
                 "Activities with daily and weekly totals and a streak.",
-                "A Live Activity while timing and reminders to come back.",
-                "Data kept on the device with no account, ads or tracking.",
+                "Weekly goals and deadlines, with reminders.",
+                "Timing and records on the device, with no account or ads.",
             ],
             "steps": [
                 "Create an activity for the thing you want to spend time on.",
@@ -3869,7 +3866,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                     "a": (
                         "It works as a trial: up to three activities and five "
                         "minutes of recorded time in total. The one-time Lifetime "
-                        "Pro purchase removes those limits and adds monthly stats, "
+                        "Pro purchase removes those limits and adds advanced statistics, "
                         "weekly goals, deadlines, widgets and Apple Watch."
                     ),
                 },

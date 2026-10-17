@@ -500,12 +500,24 @@ def _fact_text(app: dict[str, object]) -> str:
     return " ".join(str(value) for value in values if value).casefold()
 
 
+_NO_ADS_CLAIM = re.compile(r"(?<![\w-])no ads\b")
+
+
+def _claim_text(app: dict[str, object]) -> str:
+    """Claims only (sub, tag, bullets); search keywords are not claims."""
+    values = [app.get("sub", ""), app.get("tag", ""), *app.get("cta_bullets", [])]
+    return " ".join(str(value) for value in values if value).casefold()
+
+
 def explicit_capabilities(app: dict[str, object]) -> dict[str, bool]:
     facts = _fact_text(app)
     return {
         "offline": "offline" in facts,
         "no_account": "no account" in facts,
-        "no_ads": "no ads" in facts or "no third-party ads" in facts,
+        # Only a plain "no ads" claim counts: "no third-party ads" is a
+        # narrower store promise and must not become a generic No ads chip,
+        # and a search keyword such as "scanner no ads" is not a claim.
+        "no_ads": bool(_NO_ADS_CLAIM.search(_claim_text(app))),
         "no_tracking": "no tracking" in facts,
         "private_or_on_device": (
             "private" in facts or "on-device" in facts

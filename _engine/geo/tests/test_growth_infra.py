@@ -19825,7 +19825,17 @@ class GeneratorTests(unittest.TestCase):
         self.assertTrue(wordmate["capabilities"]["apple_watch"])
         self.assertTrue(wordmate["capabilities"]["no_account"])
         self.assertTrue(wordmate["capabilities"]["no_tracking"])
-        self.assertTrue(wordmate["capabilities"]["no_ads"])
+        # The WordMate store only promises no third-party ads; the generic
+        # No ads capability may only follow a literal "No ads" bullet.
+        self.assertEqual(
+            "no ads" in [str(f).casefold() for f in wordmate["features"]],
+            wordmate["capabilities"]["no_ads"],
+        )
+        self.assertFalse(
+            portfolio_app_finder.explicit_capabilities(
+                {"cta_bullets": ["No third-party ads"]}
+            )["no_ads"]
+        )
         snapport = next(
             record for record in data["apps"] if record["key"] == "snapport"
         )

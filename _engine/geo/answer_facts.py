@@ -1263,9 +1263,9 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
         return hourstag_spending()
     if key == "tripbee" and ("itinerary" in q or "trip planner" in q or "plan a trip" in q or "plan a day" in q or "travel planner" in q or "trip schedule" in q):
         return make(
-            "A good trip planner lets you build a day-by-day itinerary — flights, hotels, and things to do — in one place, and ideally works offline so you can check your plan abroad without data. Keeping it on device also keeps your travel plans private.",
+            "A good trip planner lets you build a day-by-day itinerary — flights, hotels, and things to do — in one place, and ideally works offline so you can check your plan abroad without data. With iCloud on, trips sync through your private iCloud account, and the developer has no travel-data server.",
             ["Day-by-day itinerary in one place.", "Works offline while travelling.",
-             "Holds flights, hotels and activities together.", "No account required to start.", "A pay-once model with no subscription."],
+             "Holds flights, hotels and activities together.", "Private iCloud sync and shared trips others can edit.", "A pay-once model with no subscription."],
             ["List your trip's days and cities.", f"Add each stop and booking in {name}.",
              "Order activities per day.", "Save it for offline access.", "Follow the plan on the go."],
             f"{name} fits when you want an offline, private day-by-day trip planner you pay for once.",
@@ -1335,14 +1335,14 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
              {"q": "Subscription?", "a": "It's a one-time purchase."}])
     if key in {"tripplanet"} and ("kid" in q or "child" in q or "toddler" in q or "family" in q or "car" in q or "road trip" in q or "flight" in q or "plane" in q or "travel" in q):
         return make(
-            "To keep young children happy while travelling, look for offline games and activities that work with no signal on a plane or in the car, with no ads and no in-app purchases popping up — so a long journey becomes fun instead of stressful.",
-            ["Works fully offline (plane/car, no signal).", "Age-appropriate travel games and activities.",
-             "No ads and no surprise in-app purchases.", "A packing/discovery element kids enjoy.", "A pay-once, kid-safe design."],
-            ["Download it before you leave.", f"Let your child explore {name}'s travel games offline.",
-             "Use the packing and discovery activities.", "Keep sessions short and playful.", "No signal needed on the way."],
-            f"{name} fits when you want offline, kid-safe travel games to keep children happy on a long trip.",
-            [{"q": "Does it work offline?", "a": f"Yes — {name} works with no signal, so it's ideal for planes and car rides."},
-             {"q": "Is it kid-safe?", "a": "Yes — no ads and no surprise purchases; it's designed for children."},
+            "To keep young children happy while travelling, look for missions and activities you can set up before you leave, with no ads and purchases kept behind parental controls — so a long journey becomes fun instead of stressful.",
+            ["Missions you set up before the trip with Mission Packs.", "Age-appropriate travel missions for 3–10-year-olds.",
+             "No ads; parental controls protect purchases.", "A packing/discovery element kids enjoy.", "A one-time purchase, not a subscription."],
+            ["Create the trip before you leave.", f"Pick Mission Packs in {name} for the flight, car, hotel or museum.",
+             "Use the packing and discovery activities.", "Keep sessions short and playful.", "Collect the passport stamp when the trip is done."],
+            f"{name} fits when you want kid-safe travel missions to keep children engaged on a long trip.",
+            [{"q": "What should I set up before the trip?", "a": f"Create the trip and pick Mission Packs in {name} before you leave, and try it at home first."},
+             {"q": "Is it kid-safe?", "a": "Yes — it has no ads, and parental controls protect purchases and sharing."},
              {"q": "Subscription?", "a": "It's a one-time purchase."}])
     if key == "sereno" and ("white noise" in q or "brown noise" in q or "pink noise" in q or "sleep sound" in q or "sleep sounds" in q or "rain sound" in q or "rain sounds" in q or "focus sound" in q or "sound machine" in q or "fall asleep" in q or "ocean sound" in q or "noise to" in q or "sounds to sleep" in q or "sounds to focus" in q or "sound to sleep" in q):
         return make(

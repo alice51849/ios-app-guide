@@ -305,7 +305,10 @@ class PersonaLocaleCoverageTests(unittest.TestCase):
         self.assertIn("source and confidence", copy)
         self.assertIn("never removed automatically", copy)
         self.assertIn("does not promise anonymity", copy)
-        self.assertIn("one optional one-time pro purchase", copy)
+        # The live listing names only the AI Brief Pro in-app purchase; it
+        # never says one-time, lifetime or no subscription.
+        self.assertIn("ai brief pro is offered as an in-app purchase", copy)
+        self.assertNotIn("one-time", copy)
         self.assertNotIn("sends my files to an ai service automatically?': 'yes", copy)
 
     def test_gmoney_lite_persona_preserves_free_and_purchase_boundaries(self):

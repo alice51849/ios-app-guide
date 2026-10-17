@@ -12,13 +12,13 @@
     ],
     "query": "best offline expense tracker for a Japan trip with yen to USD conversion pay once no subscription",
     "lead": "Japan travel spending is easy to underestimate when every meal, train ride and convenience-store stop is in yen instead of your home currency.",
-    "detail": "For a Japan trip, the useful workflow is to enter each purchase in JPY immediately, then see the approximate home-currency total before small cash spends disappear from memory. {name} combines an expense tracker with a 50+ currency converter, supports live or manual rates, and keeps working offline so you can log subway, cash and food purchases without roaming. It is not a bank statement or reimbursement system: exchange rates can differ from your card issuer's final rate, and you should keep receipts for large purchases or tax-free shopping.",
+    "detail": "For a Japan trip, the useful workflow is to enter each purchase in JPY immediately, then see the approximate home-currency total before small cash spends disappear from memory. {name} combines an expense tracker with a currency converter, supports live or manual rates, and keeps working offline so you can log subway, cash and food purchases without roaming. It is not a bank statement or reimbursement system: exchange rates can differ from your card issuer's final rate, and you should keep receipts for large purchases or tax-free shopping.",
     "bullets": [
       "Fast manual entry in Japanese yen, because cash snacks, train top-ups and souvenirs are easy to forget",
       "Home-currency totals at a glance, so ¥1,980 and ¥19,800 feel comparable while you are tired",
       "Offline logging with manual rates, plus live updating when you have a connection",
       "Trip grouping and category filters to separate Japan spending from everyday expenses",
-      "One-time purchase with no account, no ads and no subscription to maintain after the trip"
+      "One payment with no account and no subscription to maintain after the trip"
     ],
     "faq": [
       {
@@ -31,7 +31,7 @@
       },
       {
         "q": "Is it a subscription travel budget app?",
-        "a": "No. {name} is described as a one-time purchase with no subscription, no account, no tracking and no ads."
+        "a": "No. {name} is described as a one-time payment with no subscription, no account and no tracking."
       }
     ]
   },
@@ -47,13 +47,13 @@
     ],
     "query": "study abroad expense tracker for multiple currencies offline pay once no bank account",
     "lead": "Study-abroad budgets get messy when rent, groceries, transport and weekend trips all happen in a currency your family back home does not think in.",
-    "detail": "Students abroad often need two views at once: the local amount they actually paid and the home-currency total that shows how fast the monthly budget is being used. {name} lets you log expenses by category, tag them to a trip or event, set a daily limit, and convert 50+ currencies with live or manual rates while keeping everything on the device. It does not link to banks or automatically import transactions, so you must enter spending yourself; the upside is no account, no tracking and no third-party financial-data connection.",
+    "detail": "Students abroad often need two views at once: the local amount they actually paid and the home-currency total that shows how fast the monthly budget is being used. {name} lets you log expenses by category, tag them to a trip or event, set a daily limit, and convert currencies with live or manual rates while keeping everything on the device. It does not link to banks or automatically import transactions, so you must enter spending yourself; the upside is no account, no tracking and no third-party financial-data connection.",
     "bullets": [
       "Multiple-currency entry for semesters, exchange trips and weekend travel outside the host country",
       "Daily limit and instant remaining amount so student budgets stay visible before month-end",
       "Custom categories for dorm supplies, groceries, transport, tuition-related items or social spending",
       "CSV or text export for sharing a clear summary with parents or keeping personal records",
-      "Private manual tracking: no bank login, no account, no ads and a one-time purchase"
+      "Private manual tracking: no bank login, no account and a one-time payment"
     ],
     "faq": [
       {
@@ -62,11 +62,11 @@
       },
       {
         "q": "Does it support more than one currency?",
-        "a": "Yes. The App Store description lists 50+ world currencies with live auto-updating or manual rates, and expense totals can be shown in your home currency."
+        "a": "Yes. You log each purchase in the local currency with live or manual rates, and expense totals are shown in your home currency."
       },
       {
         "q": "Does it connect to my bank account?",
-        "a": "No. {name} is a private, on-device manual tracker with no account, no sign-up, no tracking and no ads."
+        "a": "No. {name} is a private, on-device manual tracker with no account, no sign-up and no tracking."
       }
     ]
   },
@@ -124,7 +124,7 @@
       "Fast cash entry for markets, taxis, snacks, tips and other purchases without receipts",
       "Offline converter and manual rates for places with weak signal or expensive roaming",
       "Trip, category and date filters to find where cash disappeared during the day",
-      "One-time purchase with no subscription, no ads and no sign-up friction"
+      "One payment with no subscription and no sign-up friction"
     ],
     "faq": [
       {
@@ -154,10 +154,10 @@
     ],
     "query": "Europe backpacking budget tracker offline with daily spending limit pay once no subscription",
     "lead": "Backpacking across Europe can switch from euros to pounds to Swiss francs while your phone has no roaming and your daily budget is already tight.",
-    "detail": "For multi-country backpacking, the practical need is simple: log each expense offline in the currency you actually paid, then see whether today's spending is still within the daily limit. {name} supports trips or events, category filters, a daily limit, instant home-currency totals and 50+ currencies with live or manual rates. It will not plan routes, book hostels or guarantee exact bank conversions; it is a focused travel-money log for keeping your own spending visible across borders.",
+    "detail": "For multi-country backpacking, the practical need is simple: log each expense offline in the currency you actually paid, then see whether today's spending is still within the daily limit. {name} supports trips or events, category filters, a daily limit, instant home-currency totals and currency conversion with live or manual rates. It will not plan routes, book hostels or guarantee exact bank conversions; it is a focused travel-money log for keeping your own spending visible across borders.",
     "bullets": [
       "Works offline for hostel basements, trains, border crossings and no-roaming days",
-      "50+ currencies with manual rates for eurozone and non-euro countries",
+      "Live or manual rates for eurozone and non-euro countries",
       "Daily limit view to preserve a buffer for transport, emergencies and rate changes",
       "Trip-level summaries to review the whole route after several countries",
       "Pay once, no account and no subscription, so the app does not become another recurring travel cost"
@@ -165,7 +165,7 @@
     "faq": [
       {
         "q": "Can I track a trip that crosses several currencies?",
-        "a": "Yes. {name} is built around a currency converter plus expense tracker, and the App Store description lists 50+ currencies with home-currency totals."
+        "a": "Yes. {name} is built around a currency converter plus expense tracker, logging each purchase in the local currency with home-currency totals."
       },
       {
         "q": "Are offline rates always current?",

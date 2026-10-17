@@ -16,7 +16,6 @@ publisher: "Lumi Studio"
 - Seyahat
 - Ücretli indirme
 - Çevrimdışı
-- Hesap yok
 - Reklam yok
 - Takip yok
 - Gizli / cihazda

@@ -16,7 +16,6 @@ publisher: "Lumi Studio"
 - Produktivität
 - Kostenloser Einstieg · einmalige Freischaltung
 - Kein Konto
-- Keine Werbung
 - Privat / auf dem Gerät
 - Widget
 - Apple Watch

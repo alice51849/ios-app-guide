@@ -15,6 +15,7 @@ Für ein Kind, das Zhuyin erstmals lernt, sollte die App alle 37 Symbole durch N
 
 - Kinder & Lernen
 - Kostenloser Einstieg · einmalige Freischaltung
+- Offline
 - Kein Konto
 - Keine Werbung
 - App Store · Kostenlos

@@ -15,6 +15,7 @@ Para uma criança a aprender Zhuyin pela primeira vez, o app deve cobrir os 37 s
 
 - Crianças e aprendizagem
 - Grátis para começar · desbloqueio único
+- Offline
 - Sem conta
 - Sem anúncios
 - App Store · Grátis

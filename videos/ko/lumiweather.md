@@ -2,7 +2,7 @@
 title: "루미 날씨: 외출 지수와 옷차림 — 우산·자외선·시간별 주간 예보 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/ko/lumiweather.html"
-modified: "2026-10-15"
+modified: "2026-10-17"
 video_url: "https://files.catbox.moe/fu7uq6.mp4"
 duration: "PT16S"
 app_store_id: "6779552704"

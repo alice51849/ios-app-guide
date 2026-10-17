@@ -16,7 +16,6 @@ Navetiștii ocupați au nevoie de exersare de vocabular care să se potrivească
 - Educație
 - Descărcare plătită
 - Fără cont
-- Fără reclame
 - Fără urmărire
 - Privat / pe dispozitiv
 - Widget

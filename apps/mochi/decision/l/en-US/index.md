@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # best simple to do list app iphone no subscription
 
-If most to-do apps feel bloated, the right one is a clean checklist with reminders, repeat rules and a Watch complication — and deliberately no project-management machinery. That is why Mochi exists.
+If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management machinery. That is why Mochi exists.
 
 - Productivity
 - Free to start · one-time unlock
+- No account
 - No ads
 - Apple Watch
 - App Store · Free

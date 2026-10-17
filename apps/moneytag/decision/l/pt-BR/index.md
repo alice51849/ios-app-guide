@@ -17,7 +17,6 @@ Um orçamento mensal não diz a um freelancer se um projeto de cliente realmente
 - Grátis para começar · desbloqueio único
 - Offline
 - Sem conta
-- Sem anúncios
 - Sem rastreamento
 - Privado / no dispositivo
 - Widget

@@ -6,7 +6,7 @@
   "name": "Lumi Studio Utgiver Søkeintensjonskatalog",
   "description": "En førsteparts katalog over hvem hver app er laget for, oppgaven de prøver å fullføre, og den direkte App Store-stien.",
   "inLanguage": "no",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-battai",
         "url": "https://apps.apple.com/no/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Batteritilstand",
-        "description": "BattAI BattAI bruker fem verdier fra offentlige iOS-API-er: batterinivå, ladestatus, strømsparing, termisk tilstand for hele enheten og tid. Andre resultater beregnes fra disse målingene eller legges til av deg. Hver detalj viser kilde og grenser.",
+        "description": "BattAI • BattAI bruker fem verdier fra offentlige iOS-API-er: batterinivå, ladestatus, strømsparing, termisk tilstand for hele enheten og tid. Andre resultater beregnes fra disse målingene eller legges til av deg. Hver detalj viser kilde og grenser. • BattAI har ingen konto, telemetri, annonser eller nettverksforespørsler. Data blir på denne enheten, bortsett fra et minimalt funksjonsbegrenset øyeblikksbilde som sendes direkte til den sammenkoblede Apple Watch-en. Målinger er begrenset, analysen kjører høyst hvert femte minutt, beregninger bruker intervaller, og manglende data forblir manglende.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "no",
-          "description": "BattAI BattAI bruker fem verdier fra offentlige iOS-API-er: batterinivå, ladestatus, strømsparing, termisk tilstand for hele enheten og tid. Andre resultater beregnes fra disse målingene eller legges til av deg. Hver detalj viser kilde og grenser.",
+          "description": "BattAI • BattAI bruker fem verdier fra offentlige iOS-API-er: batterinivå, ladestatus, strømsparing, termisk tilstand for hele enheten og tid. Andre resultater beregnes fra disse målingene eller legges til av deg. Hver detalj viser kilde og grenser. • BattAI har ingen konto, telemetri, annonser eller nettverksforespørsler. Data blir på denne enheten, bortsett fra et minimalt funksjonsbegrenset øyeblikksbilde som sendes direkte til den sammenkoblede Apple Watch-en. Målinger er begrenset, analysen kjører høyst hvert femte minutt, beregninger bruker intervaller, og manglende data forblir manglende.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-battai"
           },
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-mochi",
         "url": "https://apps.apple.com/no/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "Hvis de fleste oppgaveapper føles oppblåste, er den rette en ren sjekkliste med påminnelser, gjentakelsesregler og en Watch-komplikasjon — og bevisst uten prosjektstyringsmaskineri. Det er derfor Mochi finnes.",
+        "description": "Hvis de fleste oppgaveapper føles oppblåste, er den rette en ren sjekkliste med påminnelser og støtte for Apple Watch — og bevisst uten prosjektstyringsmaskineri. Det er derfor Mochi finnes.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "no",
-          "description": "Hvis de fleste oppgaveapper føles oppblåste, er den rette en ren sjekkliste med påminnelser, gjentakelsesregler og en Watch-komplikasjon — og bevisst uten prosjektstyringsmaskineri. Det er derfor Mochi finnes.",
+          "description": "Hvis de fleste oppgaveapper føles oppblåste, er den rette en ren sjekkliste med påminnelser og støtte for Apple Watch — og bevisst uten prosjektstyringsmaskineri. Det er derfor Mochi finnes.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-mochi"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/no/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Skann og lag",
-        "description": "QR Code Halo gir deg en tydelig rekkefølge: undersøk innholdet, vurder synlige funn og velg først deretter en handling. Som standard utføres handlingen",
+        "description": "QR Code Halo handler så snart en kode er lest. Skann med kameraet, eller velg et bilde: lenker åpnes i nettleseren, koder for pålogging med passnøkkel og",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "no",
-          "description": "QR Code Halo gir deg en tydelig rekkefølge: undersøk innholdet, vurder synlige funn og velg først deretter en handling. Som standard utføres handlingen",
+          "description": "QR Code Halo handler så snart en kode er lest. Skann med kameraet, eller velg et bilde: lenker åpnes i nettleseren, koder for pålogging med passnøkkel og",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/no/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Passfoto hjemme",
         "description": "Trenger du et bilde i en bestemt størrelse? Snapport Lite beskjærer portrettet ditt nøyaktig til størrelsen du velger, rett på enheten din. Ta et nytt",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Passfoto hjemme",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/no/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/no/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Finn det virkelige problemet. Hvert verktøy inkluderer én gratis full bruk. Valgfri livstidsopplåsing som engangskjøp for ubegrenset bruk—ingen abonnement",
+        "description": "Finn det virkelige problemet. Uten kjøp kan du ta én full sjekk totalt, med hvilket som helst verktøy. Et valgfritt engangskjøp i appen låser opp",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "no",
-          "description": "Finn det virkelige problemet. Hvert verktøy inkluderer én gratis full bruk. Valgfri livstidsopplåsing som engangskjøp for ubegrenset bruk—ingen abonnement",
+          "description": "Finn det virkelige problemet. Uten kjøp kan du ta én full sjekk totalt, med hvilket som helst verktøy. Et valgfritt engangskjøp i appen låser opp",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/no.jsonld#offer-wifiaidlite"
           },

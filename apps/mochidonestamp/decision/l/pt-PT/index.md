@@ -15,7 +15,6 @@ For chores and upkeep that do not belong on a rigid calendar, a useful tracker r
 
 - Estilo de vida
 - Grátis para começar · desbloqueio único
-- Offline
 - Sem conta
 - Sem anúncios
 - Sem rastreamento

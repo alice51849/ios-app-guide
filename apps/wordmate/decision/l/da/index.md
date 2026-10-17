@@ -16,7 +16,6 @@ Travle pendlere har brug for ordforrådsøvelser, der passer ind i ledige minutt
 - Uddannelse
 - Betalt download
 - Ingen konto
-- Ingen reklamer
 - Ingen sporing
 - Privat / på enheden
 - Widget

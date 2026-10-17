@@ -1,5 +1,5 @@
 ---
-title: "아이폰에서 회의 내용을 요약하는 최고의 음성 메모 앱"
+title: "iPhone에서 회의를 요약해 주는 음성 메모 앱 추천"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/ko/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# 아이폰에서 회의 내용을 요약하는 최고의 음성 메모 앱
+# iPhone에서 회의를 요약해 주는 음성 메모 앱 추천
 
-통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다. 그 간극을 메우려고 만든 앱이 Sono Note입니다.
+통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다 — Sono Note는 이를 위해 만들어졌습니다.
 
 - 생산성
 - 무료로 시작 · 한 번 결제로 잠금 해제

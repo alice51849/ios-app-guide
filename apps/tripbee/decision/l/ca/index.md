@@ -16,7 +16,6 @@ Una bona app d’itineraris converteix un viatge desordenat en una línia de tem
 - Viatges
 - Descàrrega de pagament
 - Fora de línia
-- Sense compte
 - Sense anuncis
 - Sense seguiment
 - Privat / en el dispositiu

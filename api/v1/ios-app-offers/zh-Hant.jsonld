@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開發者搜尋意圖目錄",
   "description": "第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。",
   "inLanguage": "zh-Hant",
-  "dateModified": "2026-10-16",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/tw/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
         "name": "LockHour Pro",
-        "description": "考試期間，意志力不是工具——嚴格的定時封鎖才是。所以才有了 LockHour Pro。",
+        "description": "考試期間，意志力不是工具——嚴格的定時封鎖才是——LockHour Pro 專為此設計。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "zh-Hant",
-          "description": "考試期間，意志力不是工具——嚴格的定時封鎖才是。所以才有了 LockHour Pro。",
+          "description": "考試期間，意志力不是工具——嚴格的定時封鎖才是——LockHour Pro 專為此設計。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-lockhour"
           },
@@ -1668,7 +1668,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Lumi天氣星球 外出指數與穿搭建議",
+        "name": "Lumi天氣星球：天氣預報與穿搭建議",
         "description": "一眼看懂現在適不適合出門、該穿什麼、要不要帶傘或擦防曬，Lumi天氣星球把天氣預報變成一句清楚的答案。",
         "seller": {
           "@type": "Organization",
@@ -1684,7 +1684,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "Lumi天氣星球 外出指數與穿搭建議",
+          "name": "Lumi天氣星球：天氣預報與穿搭建議",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-mochi",
         "url": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "如果大多數待辦應用程式感覺臃腫，適合你的應該是簡潔清單，附提醒、重複規則和 Apple Watch 複雜功能，且刻意不含專案管理機制。所以才有了 Mochi。",
+        "description": "如果大多數待辦應用程式感覺臃腫，適合你的應該是簡潔清單，附提醒和 Apple Watch 支援，且刻意不含專案管理機制。所以才有了 Mochi。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "zh-Hant",
-          "description": "如果大多數待辦應用程式感覺臃腫，適合你的應該是簡潔清單，附提醒、重複規則和 Apple Watch 複雜功能，且刻意不含專案管理機制。所以才有了 Mochi。",
+          "description": "如果大多數待辦應用程式感覺臃腫，適合你的應該是簡潔清單，附提醒和 Apple Watch 支援，且刻意不含專案管理機制。所以才有了 Mochi。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-mochi"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite：在家拍證件照",
         "description": "需要特定尺寸的照片嗎？Snapport Lite 直接在你的裝置上，把人像照片精準裁成你選的尺寸。拍一張新照片或從相簿挑選，依導引對齊臉部、整理背景，就能匯出。",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite：在家拍證件照",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",

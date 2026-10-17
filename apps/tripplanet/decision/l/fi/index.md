@@ -15,7 +15,6 @@ Vanhemmat, jotka matkustavat pienten lasten kanssa, tarvitsevat aktiviteetteja, 
 
 - Lapset & oppiminen
 - Ilmainen aloitus
-- Offline
 - Ei mainoksia
 - Yksityinen / laitteella
 - App Store · Ilmainen

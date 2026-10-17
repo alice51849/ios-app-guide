@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # najlepšia jednoduchá aplikácia na zoznam úloh na iPhone bez predplatného
 
-Ak sa vám väčšina aplikácií na úlohy zdá preplnená, správna je čistý zoznam s pripomienkami, opakovaniami a komplikáciou na Apple Watch — a zámerne bez riadenia projektov. Práve preto Mochi vznikol.
+Ak sa vám väčšina aplikácií na úlohy zdá preplnená, správna je čistý zoznam s pripomienkami a podporou Apple Watch — a zámerne bez riadenia projektov. Práve preto Mochi vznikol.
 
 - Produktivita
 - Zadarmo na začiatok
+- Bez účtu
 - Bez reklám
 - Apple Watch
 - App Store · Zadarmo

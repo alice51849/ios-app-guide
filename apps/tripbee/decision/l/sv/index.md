@@ -16,7 +16,6 @@ En bra reseplanerare förvandlar en rörig resa till en tydlig dag-för-dag-tids
 - Resor
 - Betald nedladdning
 - Offline
-- Inget konto
 - Inga annonser
 - Ingen spårning
 - Privat / på enheten

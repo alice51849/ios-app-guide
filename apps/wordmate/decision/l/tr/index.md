@@ -16,7 +16,6 @@ Yoğun yolculuklarda kelime pratiği, tam ders, yeni hesap veya her tekrar için
 - Eğitim
 - Ücretli indirme
 - Hesap yok
-- Reklam yok
 - Takip yok
 - Gizli / cihazda
 - Araç takımı

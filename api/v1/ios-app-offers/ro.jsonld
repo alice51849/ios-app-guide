@@ -6,7 +6,7 @@
   "name": "Catalogul de intenții de căutare Lumi Studio al editorului",
   "description": "O listă de primă parte a destinatarilor fiecărei aplicații, a sarcinii pe care încearcă să o îndeplinească și a traseului direct către App Store.",
   "inLanguage": "ro",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-battai",
         "url": "https://apps.apple.com/ro/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Sănătatea bateriei",
-        "description": "BattAI BattAI folosește cinci valori din API-urile publice iOS: nivelul bateriei, starea încărcării, consum redus, starea termică a întregului dispozitiv și ora. Celelalte rezultate sunt calculate din aceste citiri sau adăugate de tine. Fiecare detaliu arată sursa și limitele.",
+        "description": "BattAI • BattAI folosește cinci valori din API-urile publice iOS: nivelul bateriei, starea încărcării, consum redus, starea termică a întregului dispozitiv și ora. Celelalte rezultate sunt calculate din aceste citiri sau adăugate de tine. Fiecare detaliu arată sursa și limitele. • BattAI nu are cont, telemetrie, reclame sau solicitări de rețea. Datele rămân pe dispozitiv, cu excepția unui rezumat minim și limitat la funcții trimis direct către Apple Watch-ul asociat. Eșantionarea este limitată, analiza rulează cel mult o dată la cinci minute, estimările folosesc intervale, iar datele lipsă rămân lipsă.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "ro",
-          "description": "BattAI BattAI folosește cinci valori din API-urile publice iOS: nivelul bateriei, starea încărcării, consum redus, starea termică a întregului dispozitiv și ora. Celelalte rezultate sunt calculate din aceste citiri sau adăugate de tine. Fiecare detaliu arată sursa și limitele.",
+          "description": "BattAI • BattAI folosește cinci valori din API-urile publice iOS: nivelul bateriei, starea încărcării, consum redus, starea termică a întregului dispozitiv și ora. Celelalte rezultate sunt calculate din aceste citiri sau adăugate de tine. Fiecare detaliu arată sursa și limitele. • BattAI nu are cont, telemetrie, reclame sau solicitări de rețea. Datele rămân pe dispozitiv, cu excepția unui rezumat minim și limitat la funcții trimis direct către Apple Watch-ul asociat. Eșantionarea este limitată, analiza rulează cel mult o dată la cinci minute, estimările folosesc intervale, iar datele lipsă rămân lipsă.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-battai"
           },
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-mochi",
         "url": "https://apps.apple.com/ro/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "Dacă majoritatea aplicațiilor de listă de făcut par încărcate, cea potrivită este o listă curată cu memento-uri, reguli de repetare și o complicație pentru Watch — și fără mecanisme de management de proiect. De aceea există Mochi.",
+        "description": "Dacă majoritatea aplicațiilor de listă de făcut par încărcate, cea potrivită este o listă curată cu memento-uri și suport pentru Apple Watch — și fără mecanisme de management de proiect. De aceea există Mochi.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "ro",
-          "description": "Dacă majoritatea aplicațiilor de listă de făcut par încărcate, cea potrivită este o listă curată cu memento-uri, reguli de repetare și o complicație pentru Watch — și fără mecanisme de management de proiect. De aceea există Mochi.",
+          "description": "Dacă majoritatea aplicațiilor de listă de făcut par încărcate, cea potrivită este o listă curată cu memento-uri și suport pentru Apple Watch — și fără mecanisme de management de proiect. De aceea există Mochi.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-mochi"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/ro/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Scaner coduri",
-        "description": "QR Code Halo păstrează ordinea sub controlul tău: inspectezi conținutul decodat, evaluezi constatările afișate și abia apoi alegi o acțiune. Implicit",
+        "description": "QR Code Halo acționează imediat ce citește un cod. Scanează cu camera sau alege o poză: linkurile se deschid în browser, codurile de conectare cu cheie",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "ro",
-          "description": "QR Code Halo păstrează ordinea sub controlul tău: inspectezi conținutul decodat, evaluezi constatările afișate și abia apoi alegi o acțiune. Implicit",
+          "description": "QR Code Halo acționează imediat ce citește un cod. Scanează cu camera sau alege o poză: linkurile se deschid în browser, codurile de conectare cu cheie",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/ro/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Poze de buletin",
         "description": "Ai nevoie de o fotografie la o dimensiune anume? Snapport Lite îți decupează portretul exact la mărimea aleasă, direct pe dispozitivul tău. Fă o fotografie",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Poze de buletin",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/ro/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/ro/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Găsește problema reală. Fiecare instrument include o utilizare completă gratuită. Deblocare pe viață opțională, printr-o singură plată, pentru utilizare",
+        "description": "Găsește problema reală. Fără cumpărare poți face în total o singură verificare completă, cu orice instrument. O achiziție unică opțională în aplicație",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "ro",
-          "description": "Găsește problema reală. Fiecare instrument include o utilizare completă gratuită. Deblocare pe viață opțională, printr-o singură plată, pentru utilizare",
+          "description": "Găsește problema reală. Fără cumpărare poți face în total o singură verificare completă, cu orice instrument. O achiziție unică opțională în aplicație",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld#offer-wifiaidlite"
           },

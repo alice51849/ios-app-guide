@@ -15,7 +15,6 @@ Foreldre som reiser med små barn trenger aktiviteter som gjør pakking, venting
 
 - Barn og læring
 - Gratis å starte
-- Frakoblet
 - Ingen annonser
 - Privat / på enheten
 - App Store · Gratis

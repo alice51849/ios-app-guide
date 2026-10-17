@@ -15,7 +15,6 @@ For chores and upkeep that do not belong on a rigid calendar, a useful tracker r
 
 - Gaya hidup
 - Percuma untuk bermula · buka kunci sekali sahaja
-- Luar talian
 - Tiada akaun
 - Tiada iklan
 - Tiada penjejakan

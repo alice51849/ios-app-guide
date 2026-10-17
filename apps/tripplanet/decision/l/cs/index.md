@@ -15,7 +15,6 @@ Rodiče cestující s malými dětmi potřebují aktivity, které promění bale
 
 - Děti a učení
 - Zdarma na začátek
-- Offline
 - Bez reklam
 - Soukromé / v zařízení
 - App Store · Zdarma

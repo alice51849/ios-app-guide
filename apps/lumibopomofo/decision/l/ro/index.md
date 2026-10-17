@@ -15,6 +15,7 @@ Pentru un copil care învață Zhuyin pentru prima dată, aplicația trebuie să
 
 - Copii & învățare
 - Început gratuit
+- Offline
 - Fără cont
 - Fără reclame
 - App Store · Gratuit

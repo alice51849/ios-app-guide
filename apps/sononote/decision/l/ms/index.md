@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi nota suara terbaik yang meringkaskan mesyuarat di iPhone
 
-Selepas panggilan, anda tidak mahu transkrip mentah — anda mahu ringkasan, item tindakan, dan draf susulan. Itulah jurang yang cuba ditutup oleh Sono Note.
+Selepas panggilan, anda tidak mahu transkrip mentah — anda mahu ringkasan, item tindakan, dan draf susulan — Sono Note dibina untuk ini.
 
 - Produktiviti
 - Percuma untuk bermula · buka kunci sekali sahaja

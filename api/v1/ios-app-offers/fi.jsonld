@@ -6,7 +6,7 @@
   "name": "Lumi Studio Julkaisijan Hakutarkoitusluettelo",
   "description": "Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.",
   "inLanguage": "fi",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-battai",
         "url": "https://apps.apple.com/fi/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Akun kuntotulos",
-        "description": "BattAI BattAI käyttää viittä julkisten iOS-API:en arvoa: akun varaustasoa, lataustilaa, virransäästötilaa, koko laitteen lämpötilaa kuvaavaa tilaa ja aikaa. Muut tulokset lasketaan näistä lukemista tai lisäämistäsi tiedoista. Jokainen tieto kertoo lähteen ja rajat.",
+        "description": "BattAI • BattAI käyttää viittä julkisten iOS-API:en arvoa: akun varaustasoa, lataustilaa, virransäästötilaa, koko laitteen lämpötilaa kuvaavaa tilaa ja aikaa. Muut tulokset lasketaan näistä lukemista tai lisäämistäsi tiedoista. Jokainen tieto kertoo lähteen ja rajat. • BattAI:ssa ei ole tiliä, telemetriaa, mainoksia tai verkkopyyntöjä. Tiedot pysyvät tällä laitteella lukuun ottamatta pientä, ominaisuuksiltaan rajattua tilannekuvaa, joka lähetetään suoraan paritettuun Apple Watchiin. Mittaus on rajattua, analyysi suoritetaan enintään viiden minuutin välein, arviot näytetään väleinä ja puuttuvat tiedot pysyvät puuttuvina.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "fi",
-          "description": "BattAI BattAI käyttää viittä julkisten iOS-API:en arvoa: akun varaustasoa, lataustilaa, virransäästötilaa, koko laitteen lämpötilaa kuvaavaa tilaa ja aikaa. Muut tulokset lasketaan näistä lukemista tai lisäämistäsi tiedoista. Jokainen tieto kertoo lähteen ja rajat.",
+          "description": "BattAI • BattAI käyttää viittä julkisten iOS-API:en arvoa: akun varaustasoa, lataustilaa, virransäästötilaa, koko laitteen lämpötilaa kuvaavaa tilaa ja aikaa. Muut tulokset lasketaan näistä lukemista tai lisäämistäsi tiedoista. Jokainen tieto kertoo lähteen ja rajat. • BattAI:ssa ei ole tiliä, telemetriaa, mainoksia tai verkkopyyntöjä. Tiedot pysyvät tällä laitteella lukuun ottamatta pientä, ominaisuuksiltaan rajattua tilannekuvaa, joka lähetetään suoraan paritettuun Apple Watchiin. Mittaus on rajattua, analyysi suoritetaan enintään viiden minuutin välein, arviot näytetään väleinä ja puuttuvat tiedot pysyvät puuttuvina.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-battai"
           },
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-mochi",
         "url": "https://apps.apple.com/fi/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla, toistosäännöillä ja Watch-komplikaatiolla — ja tarkoituksella ilman projektinhallinnan koneistoa. Siksi Mochi on olemassa.",
+        "description": "Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla ja Apple Watch -tuella — ja tarkoituksella ilman projektinhallinnan koneistoa. Siksi Mochi on olemassa.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "fi",
-          "description": "Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla, toistosäännöillä ja Watch-komplikaatiolla — ja tarkoituksella ilman projektinhallinnan koneistoa. Siksi Mochi on olemassa.",
+          "description": "Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla ja Apple Watch -tuella — ja tarkoituksella ilman projektinhallinnan koneistoa. Siksi Mochi on olemassa.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-mochi"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/fi/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: skannaa ja luo",
-        "description": "QR Code Halo etenee harkitusti: tutki purettu sisältö, arvioi näkyvät havainnot ja valitse toiminto vasta sen jälkeen. Oletuksena toiminto suoritetaan heti",
+        "description": "QR Code Halo toimii heti, kun koodi on luettu. Skannaa kameralla tai valitse kuva: linkit avautuvat selaimessa, pääsyavaimella kirjautumisen koodit ja",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "fi",
-          "description": "QR Code Halo etenee harkitusti: tutki purettu sisältö, arvioi näkyvät havainnot ja valitse toiminto vasta sen jälkeen. Oletuksena toiminto suoritetaan heti",
+          "description": "QR Code Halo toimii heti, kun koodi on luettu. Skannaa kameralla tai valitse kuva: linkit avautuvat selaimessa, pääsyavaimella kirjautumisen koodit ja",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/fi/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Ota passikuvat",
         "description": "Tarvitsetko kuvan tarkassa koossa? Snapport Lite rajaa muotokuvasi juuri valitsemaasi kokoon suoraan laitteellasi. Ota uusi kuva tai valitse kirjastosta",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Ota passikuvat",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/fi/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/fi/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Löydä oikea ongelma. Jokainen työkalu sisältää yhden ilmaisen täyden käytön. Valinnainen kertaluontoinen elinikäinen avaus rajattomaan käyttöön—ei tilausta",
+        "description": "Löydä oikea ongelma. Ilman ostoa voit tehdä yhteensä yhden täyden tarkistuksen millä tahansa työkalulla. Valinnainen kertaosto sovelluksessa avaa",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "fi",
-          "description": "Löydä oikea ongelma. Jokainen työkalu sisältää yhden ilmaisen täyden käytön. Valinnainen kertaluontoinen elinikäinen avaus rajattomaan käyttöön—ei tilausta",
+          "description": "Löydä oikea ongelma. Ilman ostoa voit tehdä yhteensä yhden täyden tarkistuksen millä tahansa työkalulla. Valinnainen kertaosto sovelluksessa avaa",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-wifiaidlite"
           },

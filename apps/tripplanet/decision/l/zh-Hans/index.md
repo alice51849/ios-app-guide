@@ -16,7 +16,6 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 
 - 儿童与学习
 - 免费开始使用 · 一次性解锁
-- 离线
 - 无广告
 - 私密 / 设备本地
 

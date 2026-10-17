@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: Ore per comprare — Risparmio, spese e budget | iOS App"
+title: "HoursTag: Ore per comprare — Paga oraria e spese | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/it/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Ore per comprare — Risparmio, spese e budget | iOS App
+# HoursTag: Ore per comprare — Paga oraria e spese | iOS App
 
 Quanto costa davvero? Non in euro, ma in ore della tua vita.
 

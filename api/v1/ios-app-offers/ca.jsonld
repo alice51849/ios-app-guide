@@ -6,7 +6,7 @@
   "name": "Catàleg d'intencions de cerca de Lumi Studio Editor",
   "description": "Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.",
   "inLanguage": "ca",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-battai",
         "url": "https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Salut de la bateria",
-        "description": "BattAI BattAI utilitza cinc dades de les API públiques d’iOS: nivell de bateria, estat de càrrega, baix consum, estat tèrmic de tot el dispositiu i hora. La resta es calcula amb aquestes lectures o l’afegeixes tu. Cada dada mostra la font i els límits.",
+        "description": "BattAI • BattAI utilitza cinc dades de les API públiques d’iOS: nivell de bateria, estat de càrrega, baix consum, estat tèrmic de tot el dispositiu i hora. La resta es calcula amb aquestes lectures o l’afegeixes tu. Cada dada mostra la font i els límits. • BattAI no té compte, telemetria, anuncis ni peticions de xarxa. Les dades es queden al dispositiu, excepte una instantània mínima i limitada a les funcions enviada directament a l’Apple Watch enllaçat. El mostreig és limitat, l’anàlisi s’executa com a màxim cada cinc minuts, les estimacions són intervals i les dades absents continuen absents.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "ca",
-          "description": "BattAI BattAI utilitza cinc dades de les API públiques d’iOS: nivell de bateria, estat de càrrega, baix consum, estat tèrmic de tot el dispositiu i hora. La resta es calcula amb aquestes lectures o l’afegeixes tu. Cada dada mostra la font i els límits.",
+          "description": "BattAI • BattAI utilitza cinc dades de les API públiques d’iOS: nivell de bateria, estat de càrrega, baix consum, estat tèrmic de tot el dispositiu i hora. La resta es calcula amb aquestes lectures o l’afegeixes tu. Cada dada mostra la font i els límits. • BattAI no té compte, telemetria, anuncis ni peticions de xarxa. Les dades es queden al dispositiu, excepte una instantània mínima i limitada a les funcions enviada directament a l’Apple Watch enllaçat. El mostreig és limitat, l’anàlisi s’executa com a màxim cada cinc minuts, les estimacions són intervals i les dades absents continuen absents.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-battai"
           },
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-mochi",
         "url": "https://apps.apple.com/es/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris, regles de repetició i una complicació per a Watch — i deliberadament sense maquinària de gestió de projectes. Per això existeix Mochi.",
+        "description": "Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris i compatibilitat amb l’Apple Watch — i deliberadament sense maquinària de gestió de projectes. Per això existeix Mochi.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "ca",
-          "description": "Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris, regles de repetició i una complicació per a Watch — i deliberadament sense maquinària de gestió de projectes. Per això existeix Mochi.",
+          "description": "Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris i compatibilitat amb l’Apple Watch — i deliberadament sense maquinària de gestió de projectes. Per això existeix Mochi.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-mochi"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/es/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Escàner",
-        "description": "QR Code Halo ordena el procés perquè tinguis el control: inspecciona el contingut, decideix amb indicis visibles i només després tria una acció. De",
+        "description": "QR Code Halo actua en el moment que llegeix un codi. Escaneja amb la càmera o tria una foto: els enllaços s'obren al navegador, els codis d'inici amb",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "ca",
-          "description": "QR Code Halo ordena el procés perquè tinguis el control: inspecciona el contingut, decideix amb indicis visibles i només després tria una acció. De",
+          "description": "QR Code Halo actua en el moment que llegeix un codi. Escaneja amb la càmera o tria una foto: els enllaços s'obren al navegador, els codis d'inici amb",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/es/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Fotos de carnet",
         "description": "Necessites una foto amb unes mides concretes? Snapport Lite retalla el teu retrat exactament a la mida que triïs, directament al teu dispositiu. Fes una",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Fotos de carnet",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/es/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/es/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Troba el problema real. Una comprovació completa és gratuïta, en total per a totes les eines. Desbloqueig de per vida opcional de pagament únic per a un ús",
+        "description": "Troba el problema real. Pots fer una comprovació completa en total, amb qualsevol eina, sense comprar res. Una compra única opcional dins l'app desbloqueja",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "ca",
-          "description": "Troba el problema real. Una comprovació completa és gratuïta, en total per a totes les eines. Desbloqueig de per vida opcional de pagament únic per a un ús",
+          "description": "Troba el problema real. Pots fer una comprovació completa en total, amb qualsevol eina, sense comprar res. Una compra única opcional dins l'app desbloqueja",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-wifiaidlite"
           },

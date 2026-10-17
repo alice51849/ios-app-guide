@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor app de notas de voz que resume reuniões no iPhone
 
-Depois de uma chamada, não quer uma transcrição bruta — quer o resumo, os itens de ação e um rascunho de seguimento. É essa a lacuna que Sono Note procura preencher.
+Depois de uma chamada, não quer uma transcrição bruta — quer o resumo, os itens de ação e um rascunho de seguimento — Sono Note foi criado para isso.
 
 - Produtividade
 - Grátis para começar · desbloqueio único

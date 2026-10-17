@@ -6,7 +6,7 @@
   "name": "Lumi Studio प्रकाशक खोज-इरादा कैटलॉग",
   "description": "डेवलपर द्वारा सीधे प्रकाशित कैटलॉग, जो बताता है कि हर ऐप किसके लिए बनाया गया है, उपयोगकर्ता कौन-सा काम पूरा करना चाहता है और App Store तक सीधा रास्ता क्या है।",
   "inLanguage": "hi",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-battai",
         "url": "https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: बैटरी स्वास्थ्य स्कोर",
-        "description": "BattAI BattAI सार्वजनिक iOS API से पाँच मान लेता है: बैटरी स्तर, चार्ज स्थिति, लो पावर मोड, पूरे डिवाइस की तापीय स्थिति और समय। दूसरे नतीजे इन मापों से निकाले जाते हैं या आप जोड़ते हैं। हर जानकारी अपना स्रोत और सीमा दिखाती है।",
+        "description": "BattAI • BattAI सार्वजनिक iOS API से पाँच मान लेता है: बैटरी स्तर, चार्ज स्थिति, लो पावर मोड, पूरे डिवाइस की तापीय स्थिति और समय। दूसरे नतीजे इन मापों से निकाले जाते हैं या आप जोड़ते हैं। हर जानकारी अपना स्रोत और सीमा दिखाती है। • BattAI में खाता, टेलीमेट्री, विज्ञापन या नेटवर्क अनुरोध नहीं हैं। डेटा इसी डिवाइस पर रहता है, सिवाय सीमित सुविधाओं वाले छोटे सारांश के जो सीधे जुड़े Apple Watch को भेजा जाता है। माप लेना सीमित है, विश्लेषण अधिकतम हर पाँच मिनट में चलता है, अनुमान सीमाओं में दिखते हैं और गायब डेटा गायब रहता है।",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "hi",
-          "description": "BattAI BattAI सार्वजनिक iOS API से पाँच मान लेता है: बैटरी स्तर, चार्ज स्थिति, लो पावर मोड, पूरे डिवाइस की तापीय स्थिति और समय। दूसरे नतीजे इन मापों से निकाले जाते हैं या आप जोड़ते हैं। हर जानकारी अपना स्रोत और सीमा दिखाती है।",
+          "description": "BattAI • BattAI सार्वजनिक iOS API से पाँच मान लेता है: बैटरी स्तर, चार्ज स्थिति, लो पावर मोड, पूरे डिवाइस की तापीय स्थिति और समय। दूसरे नतीजे इन मापों से निकाले जाते हैं या आप जोड़ते हैं। हर जानकारी अपना स्रोत और सीमा दिखाती है। • BattAI में खाता, टेलीमेट्री, विज्ञापन या नेटवर्क अनुरोध नहीं हैं। डेटा इसी डिवाइस पर रहता है, सिवाय सीमित सुविधाओं वाले छोटे सारांश के जो सीधे जुड़े Apple Watch को भेजा जाता है। माप लेना सीमित है, विश्लेषण अधिकतम हर पाँच मिनट में चलता है, अनुमान सीमाओं में दिखते हैं और गायब डेटा गायब रहता है।",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-battai"
           },
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-mochi",
         "url": "https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "यदि अधिकांश टू-डू ऐप्स भारी लगते हैं, तो सही ऐप एक साफ चेकलिस्ट है जिसमें रिमाइंडर, दोहराव नियम और Watch कॉम्प्लिकेशन है — और जानबूझकर कोई प्रोजेक्ट-मैनेजमेंट नहीं। इसीलिए Mochi बना।",
+        "description": "यदि अधिकांश टू-डू ऐप्स भारी लगते हैं, तो सही ऐप एक साफ चेकलिस्ट है जिसमें रिमाइंडर और Apple Watch सपोर्ट है — और जानबूझकर कोई प्रोजेक्ट-मैनेजमेंट नहीं। इसीलिए Mochi बना।",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "hi",
-          "description": "यदि अधिकांश टू-डू ऐप्स भारी लगते हैं, तो सही ऐप एक साफ चेकलिस्ट है जिसमें रिमाइंडर, दोहराव नियम और Watch कॉम्प्लिकेशन है — और जानबूझकर कोई प्रोजेक्ट-मैनेजमेंट नहीं। इसीलिए Mochi बना।",
+          "description": "यदि अधिकांश टू-डू ऐप्स भारी लगते हैं, तो सही ऐप एक साफ चेकलिस्ट है जिसमें रिमाइंडर और Apple Watch सपोर्ट है — और जानबूझकर कोई प्रोजेक्ट-मैनेजमेंट नहीं। इसीलिए Mochi बना।",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-mochi"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/in/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: स्कैन व बनाएँ",
-        "description": "QR Code Halo क्रम आपके हाथ में रखता है: decode की गई सामग्री देखें, दिख रहे findings समझें और उसके बाद ही कार्रवाई चुनें। डिफ़ॉल्ट रूप से स्कैन के तुरंत",
+        "description": "QR Code Halo कोड पढ़ते ही काम कर देता है। कैमरे से स्कैन कीजिए या फ़ोटो चुनिए: लिंक आपके ब्राउज़र में खुलते हैं, पासकी से साइन इन वाले कोड और ऐप लिंक",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "hi",
-          "description": "QR Code Halo क्रम आपके हाथ में रखता है: decode की गई सामग्री देखें, दिख रहे findings समझें और उसके बाद ही कार्रवाई चुनें। डिफ़ॉल्ट रूप से स्कैन के तुरंत",
+          "description": "QR Code Halo कोड पढ़ते ही काम कर देता है। कैमरे से स्कैन कीजिए या फ़ोटो चुनिए: लिंक आपके ब्राउज़र में खुलते हैं, पासकी से साइन इन वाले कोड और ऐप लिंक",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: घर पर ID फोटो",
         "description": "किसी तय साइज़ की फोटो चाहिए? Snapport Lite आपके पोर्ट्रेट को आपके चुने हुए साइज़ में सटीक रूप से क्रॉप करता है, सीधे आपके डिवाइस पर। नई फोटो लें या",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: घर पर ID फोटो",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "असली समस्या खोजें. सभी टूल मिलाकर एक पूरी जाँच मुफ्त है। असीमित उपयोग के लिए वन-टाइम आजीवन अनलॉक—कोई सदस्यता, विज्ञापन या ट्रैकिंग नहीं।",
+        "description": "असली समस्या खोजें. बिना खरीदे किसी भी टूल से कुल एक बार पूरी जाँच की जा सकती है। वैकल्पिक वन-टाइम इन-ऐप खरीद से असीमित जाँच और ठीक करने से पहले व बाद की",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "hi",
-          "description": "असली समस्या खोजें. सभी टूल मिलाकर एक पूरी जाँच मुफ्त है। असीमित उपयोग के लिए वन-टाइम आजीवन अनलॉक—कोई सदस्यता, विज्ञापन या ट्रैकिंग नहीं।",
+          "description": "असली समस्या खोजें. बिना खरीदे किसी भी टूल से कुल एक बार पूरी जाँच की जा सकती है। वैकल्पिक वन-टाइम इन-ऐप खरीद से असीमित जाँच और ठीक करने से पहले व बाद की",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld#offer-wifiaidlite"
           },

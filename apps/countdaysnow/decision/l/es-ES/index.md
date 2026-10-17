@@ -16,7 +16,6 @@ publisher: "Lumi Studio"
 - Productividad
 - Gratis para empezar · desbloqueo único
 - Sin cuenta
-- Sin anuncios
 - Privado / en el dispositivo
 - Widget
 - Apple Watch

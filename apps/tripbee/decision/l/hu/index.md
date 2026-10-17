@@ -16,7 +16,6 @@ Egy jó útiterv alkalmazás a kusza utazást világos napi bontású idővonalr
 - Utazás
 - Fizetős letöltés
 - Offline
-- Nincs fiók
 - Nincs reklám
 - Nincs követés
 - Privát / eszközön tárolt

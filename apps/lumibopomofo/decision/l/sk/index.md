@@ -15,6 +15,7 @@ Pre dieťa, ktoré sa učí Zhuyin prvýkrát, by aplikácia mala pokrývať vš
 
 - Deti a učenie
 - Zadarmo na začiatok
+- Offline
 - Bez účtu
 - Bez reklám
 - App Store · Zadarmo

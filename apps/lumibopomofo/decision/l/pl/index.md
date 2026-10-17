@@ -15,6 +15,7 @@ Dla dziecka uczącego się Zhuyin po raz pierwszy aplikacja powinna obejmować w
 
 - Dzieci i nauka
 - Darmowe na start · jednorazowe odblokowanie
+- Offline
 - Bez konta
 - Bez reklam
 - App Store · Bezpłatnie

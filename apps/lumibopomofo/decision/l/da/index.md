@@ -15,6 +15,7 @@ For et barn, der først lærer Zhuyin, skal appen dække alle 37 symboler gennem
 
 - Børn & læring
 - Gratis at komme i gang
+- Offline
 - Ingen konto
 - Ingen reklamer
 - App Store · Gratis

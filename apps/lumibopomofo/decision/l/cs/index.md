@@ -15,6 +15,7 @@ Pro dítě, které se učí Zhuyin poprvé, by aplikace měla pokrýt všech 37 
 
 - Děti a učení
 - Zdarma na začátek
+- Offline
 - Bez účtu
 - Bez reklam
 - App Store · Zdarma

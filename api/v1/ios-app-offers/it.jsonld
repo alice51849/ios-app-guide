@@ -6,7 +6,7 @@
   "name": "Catalogo degli intenti di ricerca dell'editore Lumi Studio",
   "description": "Un catalogo pubblicato direttamente dallo sviluppatore che indica a chi è destinata ogni app, l'attività da completare e l'accesso diretto all'App Store.",
   "inLanguage": "it",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-battai",
         "url": "https://apps.apple.com/it/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Salute della batteria",
-        "description": "BattAI BattAI usa cinque dati delle API pubbliche di iOS: livello batteria, stato di carica, Risparmio energetico, stato termico dell’intero dispositivo e ora. Gli altri risultati sono calcolati da queste letture o aggiunti da te. Ogni dettaglio mostra fonte e limiti.",
+        "description": "BattAI • BattAI usa cinque dati delle API pubbliche di iOS: livello batteria, stato di carica, Risparmio energetico, stato termico dell’intero dispositivo e ora. Gli altri risultati sono calcolati da queste letture o aggiunti da te. Ogni dettaglio mostra fonte e limiti. • BattAI non ha account, telemetria, pubblicità o richieste di rete. I dati restano sul dispositivo, tranne un’istantanea minima e limitata alle funzioni inviata direttamente all’Apple Watch abbinato. Il campionamento è limitato, l’analisi avviene al massimo ogni cinque minuti, le stime usano intervalli e i dati mancanti restano mancanti.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "it",
-          "description": "BattAI BattAI usa cinque dati delle API pubbliche di iOS: livello batteria, stato di carica, Risparmio energetico, stato termico dell’intero dispositivo e ora. Gli altri risultati sono calcolati da queste letture o aggiunti da te. Ogni dettaglio mostra fonte e limiti.",
+          "description": "BattAI • BattAI usa cinque dati delle API pubbliche di iOS: livello batteria, stato di carica, Risparmio energetico, stato termico dell’intero dispositivo e ora. Gli altri risultati sono calcolati da queste letture o aggiunti da te. Ogni dettaglio mostra fonte e limiti. • BattAI non ha account, telemetria, pubblicità o richieste di rete. I dati restano sul dispositivo, tranne un’istantanea minima e limitata alle funzioni inviata direttamente all’Apple Watch abbinato. Il campionamento è limitato, l’analisi avviene al massimo ogni cinque minuti, le stime usano intervalli e i dati mancanti restano mancanti.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-battai"
           },
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-mochi",
         "url": "https://apps.apple.com/it/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "Se la maggior parte delle app per liste ti sembra troppo complessa, quella giusta è una lista pulita con promemoria, regole di ripetizione e una complicazione per Watch — e volutamente senza gestione progetti. È per questo che esiste Mochi.",
+        "description": "Se la maggior parte delle app per liste ti sembra troppo complessa, quella giusta è una lista pulita con promemoria e supporto per Apple Watch — e volutamente senza gestione progetti. È per questo che esiste Mochi.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "it",
-          "description": "Se la maggior parte delle app per liste ti sembra troppo complessa, quella giusta è una lista pulita con promemoria, regole di ripetizione e una complicazione per Watch — e volutamente senza gestione progetti. È per questo che esiste Mochi.",
+          "description": "Se la maggior parte delle app per liste ti sembra troppo complessa, quella giusta è una lista pulita con promemoria e supporto per Apple Watch — e volutamente senza gestione progetti. È per questo che esiste Mochi.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-mochi"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/it/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Scansiona e Crea",
-        "description": "QR Code Halo segue una sequenza precisa: ispeziona il contenuto decodificato, valuta le prove mostrate e solo dopo scegli l'azione. Per impostazione",
+        "description": "QR Code Halo agisce nel momento in cui legge un codice. Scansiona con la fotocamera o scegli una foto: i link si aprono nel browser, i codici di accesso",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "it",
-          "description": "QR Code Halo segue una sequenza precisa: ispeziona il contenuto decodificato, valuta le prove mostrate e solo dopo scegli l'azione. Per impostazione",
+          "description": "QR Code Halo agisce nel momento in cui legge un codice. Scansiona con la fotocamera o scegli una foto: i link si aprono nel browser, i codici di accesso",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/it/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Fai fototessere",
         "description": "Ti serve una foto in un formato preciso? Snapport Lite ritaglia il tuo ritratto esattamente nella misura che scegli, direttamente sul tuo dispositivo",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Fai fototessere",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/it/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/it/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Trova il vero problema. Un controllo completo è gratuito, in totale per tutti gli strumenti. Sblocco a vita opzionale una tantum per uso illimitato: nessun",
+        "description": "Trova il vero problema. Puoi fare un solo controllo completo in totale, con qualsiasi strumento, senza acquisto. Un acquisto in-app una tantum",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "it",
-          "description": "Trova il vero problema. Un controllo completo è gratuito, in totale per tutti gli strumenti. Sblocco a vita opzionale una tantum per uso illimitato: nessun",
+          "description": "Trova il vero problema. Puoi fare un solo controllo completo in totale, con qualsiasi strumento, senza acquisto. Un acquisto in-app una tantum",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-wifiaidlite"
           },

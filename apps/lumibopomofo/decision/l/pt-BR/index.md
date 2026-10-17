@@ -15,6 +15,7 @@ Para uma criança que está aprendendo Zhuyin pela primeira vez, o app deve cobr
 
 - Infantil e aprendizado
 - Grátis para começar · desbloqueio único
+- Offline
 - Sem conta
 - Sem anúncios
 - App Store · Grátis

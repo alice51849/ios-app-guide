@@ -1,5 +1,5 @@
 ---
-title: "HoursTag Lite: Prezzo in ore — Il vero prezzo delle cose | iOS App"
+title: "HoursTag Lite: Prezzo in ore — Acquisto consapevole: valore | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/it/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite: Prezzo in ore — Il vero prezzo delle cose | iOS App
+# HoursTag Lite: Prezzo in ore — Acquisto consapevole: valore | iOS App
 
-HoursTag Lite - Il vero prezzo delle cose Ogni acquisto costa ore della tua vita. HoursTag Lite converte i prezzi in tempo di lavoro, per spendere con consapevolezza. Scopri il tuo prisma del valore - Costo in tempo: Il tuo valore netto per ora di lavoro - Tipo: Necessità - Desiderio - Impulso - Il tuo schema di valore - Analisi completa del valore - Quanto costa un obiettivo?: Vedi il lavoro dietro un obiettivo e monitora i progressi. - Backup e ripristino: Include reddito, spese, obiettivi e preferenze. - Widget - Apple Watch Tutto resta sul tuo dispositivo. Nessun account, nessun tracciamento. Un solo pagamento · Accesso a vita · Nessun abbonamento Scelte e modifiche illimitate Obiettivi e progressi illimitati Condivisione, analisi e backup
+HoursTag Lite - Il vero prezzo delle cose Ogni acquisto costa ore della tua vita. HoursTag Lite converte i prezzi in tempo di lavoro, per spendere con consapevolezza. Scopri il tuo prisma del valore - Costo in tempo: Il tuo valore netto per ora di lavoro - Tipo: Necessità - Desiderio - Impulso - Il tuo schema di valore - Analisi completa del valore - Quanto costa un obiettivo?: Vedi il lavoro dietro un obiettivo e monitora i progressi. - Backup e ripristino: Include reddito, spese, obiettivi e preferenze. - Widget - Apple Watch Tutto resta sul tuo dispositivo. Nessun account, nessun tracciamento. Un solo pagamento · Accesso a vita · Nessun abbonamento Scelte e modifiche illimitate Obiettivi e progressi illimitati Condivisione, analisi e backup Ottimizzata per iPhone Duo.
 
 - Denaro e viaggi
 - Gratis per iniziare · sblocco unico

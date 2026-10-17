@@ -16,7 +16,6 @@ Quem usa transporte precisa de prática de vocabulário que caiba em minutos liv
 - Educação
 - Download pago
 - Sem conta
-- Sem anúncios
 - Sem rastreamento
 - Privado / no dispositivo
 - Widget

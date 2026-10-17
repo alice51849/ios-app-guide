@@ -8,7 +8,7 @@
 <!-- guide-design:end -->
 <title>dB Halo: เครื่องวัดระดับเสียง — สเปกตรัมและปริมาณเสียงรบกวน | iOS App</title>
 <meta name="description" content="รู้ทันทีว่าเสียงรอบตัวดังเพียงใด และระยะเวลาที่ปลอดภัยโดยประมาณยังเหลือเท่าไร dB Halo คือเครื่องวัดระดับเสียงบน iPhone และ iPad ที่อ่านง่าย วง Halo">
-<meta name="keywords" content="sound, meter, noise, decibel, เดซิเบล, วัดความดัง, ความถี่, ไมโครโฟน, อ็อกเทฟ, สเปกโตรแกรม, LAeq, FFT, RTA, NIOSH">
+<meta name="keywords" content="sound, meter, noise, decibel, เดซิเบล, วัดความดัง, นอนกรน, ความถี่, ไมโครโฟน, สเปกโตรแกรม, FFT, RTA, level, loud">
 <link rel="canonical" href="https://open.cait518.cc/ios-app-guide/th/dbhalo.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6806826699, affiliate-data=pt=118326163&amp;ct=geo_pick&amp;mt=8">
@@ -127,7 +127,7 @@
 <link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/dbhalo.html">
 <link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/dbhalo.html">
 <link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/dbhalo.html">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"dB Halo: เครื่องวัดระดับเสียง","operatingSystem":"iOS","applicationCategory":"UtilitiesApplication","description":"รู้ทันทีว่าเสียงรอบตัวดังเพียงใด และระยะเวลาที่ปลอดภัยโดยประมาณยังเหลือเท่าไร dB Halo คือเครื่องวัดระดับเสียงบน iPhone และ iPad ที่อ่านง่าย วง Halo ขนาดใหญ่ช่วยให้เห็นระดับความดันเสียงและโซนความดังได้ในพริบตา พร้อมค่าปัจจุบัน ค่าต่ำสุด ค่าเฉลี่ย ค่าสูงสุด ค่าพีค และบันทึกเหตุการณ์พร้อมเวลา\n\nเปิดสเปกตรัม FFT แถบอ็อกเทฟในเครื่องวิเคราะห์แบบเรียลไทม์ (RTA) และสเปกโตรแกรมได้ในการวัดครั้งเดียว มุมมองทั้งสามใช้ข้อมูลและเส้นเวลาแบบเรียลไทม์เดียวกัน จึงสลับดูได้โดยไม่ต้องเริ่มวัดใหม่หรือเสียข้อมูลช่วงก่อนหน้า เมื่อต้องการวิเคราะห์ลึกขึ้น ยังดูความถี่เด่น สัดส่วนยอดคลื่น อัตราสุ่มตัวอย่าง และรายละเอียดอื่น ๆ ได้\n\nปริมาณเสียงรบกวนจะประเมินการรับเสียงรายวันและเวลาที่ปลอดภัยที่เหลือตามเกณฑ์ NIOSH หรือ OSHA\n\nบันทึกการนอนจะตรวจจับและจำแนกเหตุการณ์เสียงบนอุปกรณ์ เช่น เสียงกรน เสียงหายใจ เสียงพูด เสียงไอ เสียงนาฬิกาปลุก เสียงสัตว์ เสียงกระแทก เสียงแวดล้อม และเสียงร้องไห้ แล้วเรียงเป็นเส้นเวลา ระบบจะไม่บันทึกเสียงดิบจากไมโครโฟน และจะสร้างไฟล์ AAC เฉพาะเมื่อคุณเริ่มการอัดเสียงด้วยตนเอง\n\nเปิดการวัดที่บันทึกไว้ในประวัติ แล้วส่งออกการวัดที่เลือกเป็นรายงาน PDF ที่มีภาพข้อมูลหรือข้อมูล CSV ได้ ไฟล์ AAC จะมีเฉพาะการอัดเสียงที่คุณเริ่มเอง และยังซ้อนค่า dB ลงบนภาพถ่ายหรือวิดีโอเพื่อส่งออกได้\n\nเลือกการถ่วงน้ำหนัก A, C หรือ Z ใช้ไมโครโฟนภายนอก และบันทึกโปรไฟล์การปรับเทียบได้หลายชุด บันทึกระดับเสียงสิ่งแวดล้อมที่เลือกไว้ในแอปสุขภาพ ใช้วิดเจ็ตบนหน้าจอโฮมและหน้าจอล็อก เรียกคำสั่งลัดผ่าน App Intents หรือเริ่มวัดแบบอิสระบน Apple Watch\n\nการประมวลผลทั้งหมดเกิดขึ้นบนอุปกรณ์ ไม่ต้องมีบัญชี ไม่มีโฆษณา ไม่มีการวิเคราะห์ข้อมูล และไม่มีการติดตาม\n\nฟีเจอร์ทั่วไปแต่ละรายการให้สร้างผลลัพธ์ได้ฟรี 3 ครั้ง ส่วนสเปกตรัม ปริมาณเสียงรบกวน และการนอนให้ 1 ครั้งต่อฟีเจอร์ ระบบจะนับเมื่อสร้างผลลัพธ์สำเร็จเท่านั้น การยกเลิก การปฏิเสธสิทธิ์ หรือข้อผิดพลาดจะไม่ถูกนับ และยังเปิดดูผลลัพธ์เดิมได้เสมอ Lifetime Pro ซื้อครั้งเดียว ใช้งานได้ไม่จำกัดตลอดไป ไม่มีการสมัครสมาชิก\n\nค่าที่แสดงเป็นเพียงค่าประมาณ dB Halo ไม่ใช่เครื่องวัดระดับเสียงวิชาชีพที่ผ่านการรับรอง และไม่สามารถใช้แทนคำแนะนำทางการแพทย์หรือการประเมินความปลอดภัยในการทำงาน","url":"https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","featureList":["sound","meter","noise","decibel","เดซิเบล","วัดความดัง","ความถี่","ไมโครโฟน"],"keywords":"sound, meter, noise, decibel, เดซิเบล, วัดความดัง, ความถี่, ไมโครโฟน, อ็อกเทฟ, สเปกโตรแกรม, LAeq, FFT, RTA, NIOSH","@id":"https://apps.apple.com/app/id6806826699","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6806826699"},"downloadUrl":"https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/th/dbhalo.html#webpage"},"offers":{"@type":"Offer","price":"0","priceCurrency":"THB","url":"https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"dB Halo: เครื่องวัดระดับเสียง","operatingSystem":"iOS","applicationCategory":"UtilitiesApplication","description":"รู้ทันทีว่าเสียงรอบตัวดังเพียงใด และระยะเวลาที่ปลอดภัยโดยประมาณยังเหลือเท่าไร dB Halo คือเครื่องวัดระดับเสียงบน iPhone และ iPad ที่อ่านง่าย วง Halo ขนาดใหญ่ช่วยให้เห็นระดับความดันเสียงและโซนความดังได้ในพริบตา พร้อมค่าปัจจุบัน ค่าต่ำสุด ค่าเฉลี่ย ค่าสูงสุด ค่าพีค และบันทึกเหตุการณ์พร้อมเวลา\n\nเปิดสเปกตรัม FFT แถบอ็อกเทฟในเครื่องวิเคราะห์แบบเรียลไทม์ (RTA) และสเปกโตรแกรมได้ในการวัดครั้งเดียว มุมมองทั้งสามใช้ข้อมูลและเส้นเวลาแบบเรียลไทม์เดียวกัน จึงสลับดูได้โดยไม่ต้องเริ่มวัดใหม่หรือเสียข้อมูลช่วงก่อนหน้า เมื่อต้องการวิเคราะห์ลึกขึ้น ยังดูความถี่เด่น สัดส่วนยอดคลื่น อัตราสุ่มตัวอย่าง และรายละเอียดอื่น ๆ ได้\n\nปริมาณเสียงรบกวนจะประเมินการรับเสียงรายวันและเวลาที่ปลอดภัยที่เหลือตามเกณฑ์ NIOSH หรือ OSHA\n\nบันทึกการนอนจะตรวจจับและจำแนกเหตุการณ์เสียงบนอุปกรณ์ เช่น เสียงกรน เสียงหายใจ เสียงพูด เสียงไอ เสียงนาฬิกาปลุก เสียงสัตว์ เสียงกระแทก เสียงแวดล้อม และเสียงร้องไห้ แล้วเรียงเป็นเส้นเวลา ระบบจะไม่บันทึกเสียงดิบจากไมโครโฟน และจะสร้างไฟล์ AAC เฉพาะเมื่อคุณเริ่มการอัดเสียงด้วยตนเอง\n\nเปิดการวัดที่บันทึกไว้ในประวัติ แล้วส่งออกการวัดที่เลือกเป็นรายงาน PDF ที่มีภาพข้อมูลหรือข้อมูล CSV ได้ ไฟล์ AAC จะมีเฉพาะการอัดเสียงที่คุณเริ่มเอง และยังซ้อนค่า dB ลงบนภาพถ่ายหรือวิดีโอเพื่อส่งออกได้\n\nเลือกการถ่วงน้ำหนัก A, C หรือ Z ใช้ไมโครโฟนภายนอก และบันทึกโปรไฟล์การปรับเทียบได้หลายชุด บันทึกระดับเสียงสิ่งแวดล้อมที่เลือกไว้ในแอปสุขภาพ ใช้วิดเจ็ตบนหน้าจอโฮมและหน้าจอล็อก เรียกคำสั่งลัดผ่าน App Intents หรือเริ่มวัดแบบอิสระบน Apple Watch\n\nการประมวลผลทั้งหมดเกิดขึ้นบนอุปกรณ์ ไม่ต้องมีบัญชี ไม่มีโฆษณา ไม่มีการวิเคราะห์ข้อมูล และไม่มีการติดตาม\n\nฟีเจอร์ทั่วไปแต่ละรายการให้สร้างผลลัพธ์ได้ฟรี 3 ครั้ง ส่วนสเปกตรัม ปริมาณเสียงรบกวน และการนอนให้ 1 ครั้งต่อฟีเจอร์ ระบบจะนับเมื่อสร้างผลลัพธ์สำเร็จเท่านั้น การยกเลิก การปฏิเสธสิทธิ์ หรือข้อผิดพลาดจะไม่ถูกนับ และยังเปิดดูผลลัพธ์เดิมได้เสมอ Lifetime Pro ซื้อครั้งเดียว ใช้งานได้ไม่จำกัดตลอดไป ไม่มีการสมัครสมาชิก\n\nค่าที่แสดงเป็นเพียงค่าประมาณ dB Halo ไม่ใช่เครื่องวัดระดับเสียงวิชาชีพที่ผ่านการรับรอง และไม่สามารถใช้แทนคำแนะนำทางการแพทย์หรือการประเมินความปลอดภัยในการทำงาน\n\nปรับแต่งมาสำหรับ iPhone Duo","url":"https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","featureList":["sound","meter","noise","decibel","เดซิเบล","วัดความดัง","นอนกรน","ความถี่"],"keywords":"sound, meter, noise, decibel, เดซิเบล, วัดความดัง, นอนกรน, ความถี่, ไมโครโฟน, สเปกโตรแกรม, FFT, RTA, level, loud","@id":"https://apps.apple.com/app/id6806826699","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6806826699"},"downloadUrl":"https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/th/dbhalo.html#webpage"},"offers":{"@type":"Offer","price":"0","priceCurrency":"THB","url":"https://apps.apple.com/th/app/id6806826699?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://open.cait518.cc/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
@@ -170,13 +170,6 @@
 <!-- app-store-review:start -->
 <div class="app-store-review" data-app-store-review="6806826699" style="margin:1rem 0;font-size:.9em;text-align:center"><a class="app-store-review__link" href="https://apps.apple.com/th/app/id6806826699?action=write-review" rel="nofollow noopener">ใช้แอปนี้อยู่แล้วใช่ไหม ให้คะแนนหรือเขียนรีวิวได้ใน App Store</a></div>
 <!-- app-store-review:end -->
-<!-- app-hook-clip:start -->
-<figure class="app-hook-clip" data-app-key="dbhalo" lang="en" style="margin:18px 0;max-width:300px">
-<video controls playsinline muted loop preload="none" poster="https://open.cait518.cc/ios-app-guide/assets/hook-clips/afmrje.jpg" width="1080" height="1920" style="display:block;width:100%;aspect-ratio:9/16;border-radius:18px;background:#111;object-fit:contain" aria-label="How loud is your upstairs neighbor? | dB Halo: Sound Meter"><source src="https://files.catbox.moe/afmrje.mp4" type="video/mp4"></video>
-<figcaption style="margin-top:6px;font-size:14px;color:#6b6257">How loud is your upstairs neighbor?</figcaption>
-</figure>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"How loud is your upstairs neighbor? | dB Halo: Sound Meter","description":"รู้ทันทีว่าเสียงรอบตัวดังเพียงใด และระยะเวลาที่ปลอดภัยโดยประมาณยังเหลือเท่าไร dB Halo คือเครื่องวัดระดับเสียงบน iPhone และ iPad ที่อ่านง่าย วง Halo","thumbnailUrl":["https://open.cait518.cc/ios-app-guide/assets/hook-clips/afmrje.jpg"],"uploadDate":"2026-10-14T00:00:00+00:00","contentUrl":"https://files.catbox.moe/afmrje.mp4","duration":"PT7S","inLanguage":"en"}</script>
-<!-- app-hook-clip:end -->
 <h2>dB Halo: เครื่องวัดระดับเสียง คืออะไร?</h2>
   <p>dB Halo: เครื่องวัดระดับเสียง เป็นแอป iOS สเปกตรัมและปริมาณเสียงรบกวน</p>
   <p>รู้ทันทีว่าเสียงรอบตัวดังเพียงใด และระยะเวลาที่ปลอดภัยโดยประมาณยังเหลือเท่าไร dB Halo คือเครื่องวัดระดับเสียงบน iPhone และ iPad ที่อ่านง่าย วง Halo ขนาดใหญ่ช่วยให้เห็นระดับความดันเสียงและโซนความดังได้ในพริบตา พร้อมค่าปัจจุบัน ค่าต่ำสุด ค่าเฉลี่ย ค่าสูงสุด ค่าพีค และบันทึกเหตุการณ์พร้อมเวลา</p>
@@ -188,6 +181,7 @@
   <p>การประมวลผลทั้งหมดเกิดขึ้นบนอุปกรณ์ ไม่ต้องมีบัญชี ไม่มีโฆษณา ไม่มีการวิเคราะห์ข้อมูล และไม่มีการติดตาม</p>
   <p>ฟีเจอร์ทั่วไปแต่ละรายการให้สร้างผลลัพธ์ได้ฟรี 3 ครั้ง ส่วนสเปกตรัม ปริมาณเสียงรบกวน และการนอนให้ 1 ครั้งต่อฟีเจอร์ ระบบจะนับเมื่อสร้างผลลัพธ์สำเร็จเท่านั้น การยกเลิก การปฏิเสธสิทธิ์ หรือข้อผิดพลาดจะไม่ถูกนับ และยังเปิดดูผลลัพธ์เดิมได้เสมอ Lifetime Pro ซื้อครั้งเดียว ใช้งานได้ไม่จำกัดตลอดไป ไม่มีการสมัครสมาชิก</p>
   <p>ค่าที่แสดงเป็นเพียงค่าประมาณ dB Halo ไม่ใช่เครื่องวัดระดับเสียงวิชาชีพที่ผ่านการรับรอง และไม่สามารถใช้แทนคำแนะนำทางการแพทย์หรือการประเมินความปลอดภัยในการทำงาน</p>
+  <p>ปรับแต่งมาสำหรับ iPhone Duo</p>
 
   <h2>ฟีเจอร์หลัก</h2>
   <ul>
@@ -197,8 +191,8 @@
     <li>decibel</li>
     <li>เดซิเบล</li>
     <li>วัดความดัง</li>
+    <li>นอนกรน</li>
     <li>ความถี่</li>
-    <li>ไมโครโฟน</li>
   </ul>
 
   <h2>ราคา</h2>
@@ -206,6 +200,7 @@
 
   <h2>ดาวน์โหลด</h2>
   <p><a href="https://apps.apple.com/th/app/id6806826699?pt=118326163&amp;ct=geo_pick&amp;mt=8">ดาวน์โหลด dB Halo: เครื่องวัดระดับเสียง บน App Store</a></p>
+  <p class="android-play" data-android-play="com.alice51849.dBHalo">Android: <a href="https://play.google.com/store/apps/details?id=com.alice51849.dBHalo&amp;referrer=utm_source%3Dgeo_pick%26utm_campaign%3Ddbhalo" rel="noopener">Google Play</a></p>
 <p class="publisher-disclosure" data-publisher-disclosure="true"><small>เนื้อหานี้เผยแพร่โดยตรงจาก Lumi Studio ซึ่งเป็นผู้พัฒนาแอปทั้งหมดที่ระบุไว้</small></p>
 <!-- app-store-facts:start -->
 <aside class="iag-store-facts" aria-label="App Store">

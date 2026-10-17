@@ -16,7 +16,6 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 
 - শিশু ও শেখা
 - বিনামূল্যে শুরু
-- অফলাইন
 - কোনও বিজ্ঞাপন নেই
 - গোপনীয় / ডিভাইসে
 

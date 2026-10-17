@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # cea mai bună aplicație simplă de listă de făcut pe iPhone fără abonament
 
-Dacă majoritatea aplicațiilor de listă de făcut par încărcate, cea potrivită este o listă curată cu memento-uri, reguli de repetare și o complicație pentru Watch — și fără mecanisme de management de proiect. De aceea există Mochi.
+Dacă majoritatea aplicațiilor de listă de făcut par încărcate, cea potrivită este o listă curată cu memento-uri și suport pentru Apple Watch — și fără mecanisme de management de proiect. De aceea există Mochi.
 
 - Productivitate
 - Început gratuit
+- Fără cont
 - Fără reclame
 - Apple Watch
 - App Store · Gratuit

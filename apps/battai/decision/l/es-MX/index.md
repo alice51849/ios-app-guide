@@ -1,5 +1,5 @@
 ---
-title: "BattAI: Estado de la batería — Reglas, fuentes y límites claros | iOS App"
+title: "BattAI: Estado de la batería — Alerta de carga y de pila baja | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/es-MX/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# BattAI: Estado de la batería — Reglas, fuentes y límites claros | iOS App
+# BattAI: Estado de la batería — Alerta de carga y de pila baja | iOS App
 
-BattAI BattAI usa cinco valores de las API públicas de iOS: nivel de batería, estado de carga, modo de bajo consumo, estado térmico del dispositivo y hora. Los demás resultados se calculan con esas lecturas o los agregas tú. Cada dato muestra su fuente y sus límites. Condición • Puntaje de condición de la batería • Qué forma el puntaje • Capacidad máxima a lo largo del tiempo • Capacidad máxima • Ciclos Carga • Cuidado de carga • Rango de carga • Ritmo de carga Exportar datos • Crea un archivo en este dispositivo. No se sube nada. • Creado en este dispositivo. No se suben datos. Privacidad • Sin anuncios, analíticas, rastreo, SDK de terceros ni solicitudes de internet. Los datos permanecen aquí, salvo una instantánea mínima enviada directamente al Apple Watch enlazado. • BattAI solo lee el conteo de ciclos, la capacidad nominal de carga y la capacidad de diseño. Los demás datos se descartan al instante, sin guardarse ni enviarse. Conoce tu batería con el tiempo • Desbloquea más historial, planificación y reportes. • Pago único. Sin suscripción.
+BattAI • BattAI usa cinco valores de las API públicas de iOS: nivel de batería, estado de carga, modo de bajo consumo, estado térmico del dispositivo y hora. Los demás resultados se calculan con esas lecturas o los agregas tú. Cada dato muestra su fuente y sus límites. • BattAI no tiene cuenta, telemetría, anuncios ni solicitudes de red. Los datos permanecen en este dispositivo, salvo una instantánea mínima y limitada que se envía directamente al Apple Watch enlazado. El muestreo es limitado, el análisis se ejecuta como máximo cada cinco minutos, las estimaciones usan rangos y los datos ausentes siguen ausentes. Condición • Puntaje de condición de la batería • Qué forma el puntaje • Capacidad máxima a lo largo del tiempo • Tiempo estimado hasta el 80% Carga • Cuidado de carga • Rango de carga • Ritmo de carga Reportes • Crea un reporte claro de la batería para servicio, reventa o tus archivos. • Informe completo: las gráficas y textos de la app • El mismo informe guardado como PNG • Todos tus datos en una tabla de texto Privacidad • Sin anuncios, analíticas, rastreo, SDK de terceros ni solicitudes de internet. Los datos permanecen aquí, salvo una instantánea mínima enviada directamente al Apple Watch enlazado. • Las API públicas de iOS ofrecen nivel de batería, estado de carga, modo de bajo consumo, estado térmico de todo el dispositivo y hora. BattAI marca cualquier otro resultado como estimado o aportado por ti. • Las reglas fijas siguen pautas establecidas para baterías de iones de litio sobre descargas profundas, periodos largos con carga alta, calor y volumen de carga. La referencia de servicio de Apple del 80% se mantiene separada de las bandas de orientación de BattAI. Ningún resultado promete más vida útil. Conoce tu batería con el tiempo • Pago único. Tuyo para siempre. Sin suscripción. • Tu compra está vinculada a tu cuenta de Apple y funciona en tus dispositivos. Optimizada para el iPhone Duo.
 
 - Más
 - Gratis para empezar · desbloqueo único

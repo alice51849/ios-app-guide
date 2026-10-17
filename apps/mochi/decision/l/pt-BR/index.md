@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # melhor app simples de lista de tarefas no iPhone sem assinatura
 
-Se a maioria dos apps de tarefas parece inchada, o ideal é uma lista limpa com lembretes, regras de repetição e complicação para Watch — e propositalmente sem recursos de gerenciamento de projetos. É por isso que o Mochi existe.
+Se a maioria dos apps de tarefas parece inchada, o ideal é uma lista limpa com lembretes e suporte ao Apple Watch — e propositalmente sem recursos de gerenciamento de projetos. É por isso que o Mochi existe.
 
 - Produtividade
 - Grátis para começar · desbloqueio único
+- Sem conta
 - Sem anúncios
 - Apple Watch
 - App Store · Grátis

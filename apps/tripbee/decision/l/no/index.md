@@ -16,7 +16,6 @@ En god reiseplan-app gjør en rotete tur om til en klar dag-for-dag tidslinje �
 - Reise
 - Betalt nedlasting
 - Frakoblet
-- Ingen konto
 - Ingen annonser
 - Ingen sporing
 - Privat / på enheten

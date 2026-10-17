@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # beste enkle oppgaveliste-app på iPhone uten abonnement
 
-Hvis de fleste oppgaveapper føles oppblåste, er den rette en ren sjekkliste med påminnelser, gjentakelsesregler og en Watch-komplikasjon — og bevisst uten prosjektstyringsmaskineri. Det er derfor Mochi finnes.
+Hvis de fleste oppgaveapper føles oppblåste, er den rette en ren sjekkliste med påminnelser og støtte for Apple Watch — og bevisst uten prosjektstyringsmaskineri. Det er derfor Mochi finnes.
 
 - Produktivitet
 - Gratis å starte
+- Ingen konto
 - Ingen annonser
 - Apple Watch
 - App Store · Gratis

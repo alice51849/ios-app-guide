@@ -16,7 +16,6 @@ Travle pendlere trenger vokabularøving som passer inn i ledige minutter uten å
 - Utdanning
 - Betalt nedlasting
 - Ingen konto
-- Ingen annonser
 - Ingen sporing
 - Privat / på enheten
 - Widget

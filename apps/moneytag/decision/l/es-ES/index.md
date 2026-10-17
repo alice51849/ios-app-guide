@@ -17,7 +17,6 @@ Un presupuesto mensual no le dice a un freelancer si un proyecto de un cliente h
 - Gratis para empezar · desbloqueo único
 - Sin conexión
 - Sin cuenta
-- Sin anuncios
 - Sin seguimiento
 - Privado / en el dispositivo
 - Widget

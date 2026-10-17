@@ -1,5 +1,5 @@
 ---
-title: "Mochi DoneStamp: Nazadnje — Zapomni si, kdaj je bilo | iOS App"
+title: "Mochi DoneStamp: Nazadnje — Kdaj je bilo? Opomniki opravil | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/sl-SI/index.html"
 modified: "2026-10-17"
@@ -9,13 +9,12 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Mochi DoneStamp: Nazadnje — Zapomni si, kdaj je bilo | iOS App
+# Mochi DoneStamp: Nazadnje — Kdaj je bilo? Opomniki opravil | iOS App
 
-Kdaj ste nazadnje zamenjali posteljnino, zalili rastlino, poklicali družino, varnostno kopirali fotografije ali zamenjali filter? Mochi DoneStamp je spomin za življenjske dogodke, ne še en seznam opravil. Ko končate, en tap shrani točen čas v mirno zgodovino. Po potrebi dodajte približen ali natančen ritem. Naslednji datum se vedno znova izračuna od dejanskega zaključka. • Zapis z enim tapom in Razveljavi • Dodajanje, urejanje ali brisanje preteklih trenutkov • Prilagodljivi in natančni ritmi od minut do let • Lokalni opomniki z Opravljeno in Dremež • Interaktivni widgeti začetnega in zaklenjenega zaslona • Siri, Bližnjice, izbirne opombe in fotografije • Statistika intervalov, popolna kopija in izvoz JSON • Temni način, iPad, VoiceOver in Dynamic Type Brezplačno dobite en aktiven dogodek in neomejeno zgodovino. En nakup Lifetime Pro odklene neomejene dogodke in vse funkcije. Brez računa, oglasov, analitike ali sledenja. Ključni podatki ostanejo v napravi. Brez naročnine.
+Kdaj ste nazadnje zamenjali posteljnino, zalili rastlino, poklicali družino, varnostno kopirali fotografije ali zamenjali filter? Mochi DoneStamp je spomin za življenjske dogodke, ne še en seznam opravil. Ko končate, en tap shrani točen čas v mirno zgodovino. Po potrebi dodajte približen ali natančen ritem. Naslednji datum se vedno znova izračuna od dejanskega zaključka. • Zapis z enim tapom in Razveljavi • Dodajanje, urejanje ali brisanje preteklih trenutkov • Prilagodljivi in natančni ritmi od minut do let • Lokalni opomniki z Opravljeno in Dremež • Interaktivni widgeti začetnega in zaklenjenega zaslona • Siri, Bližnjice, izbirne opombe in fotografije • Statistika intervalov, popolna kopija in izvoz JSON • Temni način, iPad, VoiceOver in Dynamic Type Brezplačno dobite en aktiven dogodek in neomejeno zgodovino. En nakup Lifetime Pro odklene neomejene dogodke in vse funkcije. Brez računa, oglasov, analitike ali sledenja. Ključni podatki ostanejo v napravi. Brez naročnine. Optimizirano za iPhone Duo.
 
 - Življenjski slog
 - Brezplačen začetek
-- Brez povezave
 - Brez računa
 - Brez oglasov
 - Brez sledenja

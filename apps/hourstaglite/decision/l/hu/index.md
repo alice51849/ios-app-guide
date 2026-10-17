@@ -1,5 +1,5 @@
 ---
-title: "HoursTag Lite: Ár munkaórában — Lásd a dolgok valódi árát | iOS App"
+title: "HoursTag Lite: Ár munkaórában — Tudatos vásárlás: valós ár | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/hu/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite: Ár munkaórában — Lásd a dolgok valódi árát | iOS App
+# HoursTag Lite: Ár munkaórában — Tudatos vásárlás: valós ár | iOS App
 
-HoursTag Lite - Lásd a dolgok valódi árát Minden vásárlás órákat vesz el az életedből. Az HoursTag Lite átalakítja az árakat munkai idővé — így világosan költhetsz. Ismerd meg az értékprizmádat - Időköltség: Nettó értéked munkaóránként - Típus: Szükség - Akar - Impulzus - Az értékmintád - Teljes értékelemzés - Mennyibe fog kerülni egy cél?: Lásd a munkát egy cél mögött — és kövesd a fejlődésed. - Biztonsági mentés & visszaállítás: Tartalmazza a jövedelmet, kiadásokat, célokat és beállításokat. - Widget - Apple Watch Minden az eszközödön marad. Nincs fiók, nincs nyomkövetés. Egyszeri fizetés · Élethosszig · Nincs előfizetés Korlátlan döntések és szerkesztések Korlátlan célok és haladás Megosztás, elemzés és mentések
+HoursTag Lite - Lásd a dolgok valódi árát Minden vásárlás órákat vesz el az életedből. Az HoursTag Lite átalakítja az árakat munkai idővé — így világosan költhetsz. Ismerd meg az értékprizmádat - Időköltség: Nettó értéked munkaóránként - Típus: Szükség - Akar - Impulzus - Az értékmintád - Teljes értékelemzés - Mennyibe fog kerülni egy cél?: Lásd a munkát egy cél mögött — és kövesd a fejlődésed. - Biztonsági mentés & visszaállítás: Tartalmazza a jövedelmet, kiadásokat, célokat és beállításokat. - Widget - Apple Watch Minden az eszközödön marad. Nincs fiók, nincs nyomkövetés. Egyszeri fizetés · Élethosszig · Nincs előfizetés Korlátlan döntések és szerkesztések Korlátlan célok és haladás Megosztás, elemzés és mentések iPhone Duo-ra optimalizálva.
 
 - Pénzügy & utazás
 - Ingyenes kezdés

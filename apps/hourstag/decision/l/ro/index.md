@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: Ore pentru cumpărat — Buget, cheltuieli & economii | iOS App"
+title: "HoursTag: Ore pentru cumpărat — Salariu orar și cheltuieli | iOS App"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ro/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Ore pentru cumpărat — Buget, cheltuieli & economii | iOS App
+# HoursTag: Ore pentru cumpărat — Salariu orar și cheltuieli | iOS App
 
 Cât costă cu adevărat? Nu în lei, ci în ore din viața ta.
 

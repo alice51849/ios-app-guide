@@ -17,7 +17,6 @@ A monthly budget cannot tell a freelancer whether one client project actually ma
 - Free to start · one-time unlock
 - Offline
 - No account
-- No ads
 - No tracking
 - Private / on-device
 - Widget

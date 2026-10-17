@@ -15,6 +15,7 @@ Voor een kind dat Zhuyin voor het eerst leert, moet de app alle 37 symbolen beha
 
 - Kinderen & leren
 - Gratis te starten · eenmalige ontgrendeling
+- Offline
 - Geen account
 - Geen advertenties
 - App Store · Gratis

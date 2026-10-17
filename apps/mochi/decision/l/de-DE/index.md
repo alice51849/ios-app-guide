@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # beste einfache To-Do-Liste-App für iPhone ohne Abonnement
 
-Wenn sich die meisten To-Do-Apps aufgebläht anfühlen, ist die richtige eine saubere Checkliste mit Erinnerungen, Wiederholungsregeln und einer Watch-Komplikation – und bewusst ohne Projektmanagement-Funktionen. Dafür gibt es Mochi.
+Wenn sich die meisten To-Do-Apps aufgebläht anfühlen, ist die richtige eine saubere Checkliste mit Erinnerungen und Apple-Watch-Unterstützung – und bewusst ohne Projektmanagement-Funktionen. Dafür gibt es Mochi.
 
 - Produktivität
 - Kostenloser Einstieg · einmalige Freischaltung
+- Kein Konto
 - Keine Werbung
 - Apple Watch
 - App Store · Kostenlos

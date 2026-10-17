@@ -15,7 +15,6 @@ Rodičia cestujúci s malými deťmi potrebujú aktivity, ktoré premenia baleni
 
 - Deti a učenie
 - Zadarmo na začiatok
-- Offline
 - Bez reklám
 - Súkromné / v zariadení
 - App Store · Zadarmo

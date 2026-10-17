@@ -15,7 +15,6 @@ For chores and upkeep that do not belong on a rigid calendar, a useful tracker r
 
 - ไลฟ์สไตล์
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
-- ออฟไลน์
 - ไม่มีบัญชี
 - ไม่มีโฆษณา
 - ไม่มีการติดตาม

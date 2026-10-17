@@ -15,6 +15,7 @@ Para un niño que aprende Zhuyin por primera vez, la app debe cubrir los 37 sím
 
 - Niños y aprendizaje
 - Gratis para empezar · desbloqueo único
+- Sin conexión
 - Sin cuenta
 - Sin anuncios
 - App Store · Gratis

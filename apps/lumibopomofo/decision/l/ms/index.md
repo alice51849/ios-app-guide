@@ -15,6 +15,7 @@ Untuk kanak-kanak yang mula belajar Zhuyin, aplikasi harus merangkumi semua 37 s
 
 - Kanak-kanak & pembelajaran
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Luar talian
 - Tiada akaun
 - Tiada iklan
 - App Store · Percuma

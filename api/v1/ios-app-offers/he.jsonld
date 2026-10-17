@@ -6,7 +6,7 @@
   "name": "קטלוג כוונות החיפוש של Lumi Studio מפרסם",
   "description": "קטלוג רשמי המציג עבור מי מיועדת כל אפליקציה, המשימה שהיא נועדה לבצע, והמסלול הישיר ל-App Store.",
   "inLanguage": "he",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-battai",
         "url": "https://apps.apple.com/il/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: ציון בריאות הסוללה",
-        "description": "BattAI ⁦BattAI⁩ משתמש בחמישה ערכים מממשקי ⁦iOS API⁩ ציבוריים: רמת הסוללה, מצב הטעינה, מצב סוללה חלשה, המצב התרמי של המכשיר כולו והזמן. תוצאות אחרות מחושבות מהמדידות האלה או נוספות על ידך. ליד כל פרט מוצגים המקור והמגבלות.",
+        "description": "BattAI • ⁦BattAI⁩ משתמש בחמישה ערכים מממשקי ⁦iOS API⁩ ציבוריים: רמת הסוללה, מצב הטעינה, מצב סוללה חלשה, המצב התרמי של המכשיר כולו והזמן. תוצאות אחרות מחושבות מהמדידות האלה או נוספות על ידך. ליד כל פרט מוצגים המקור והמגבלות. • ל־⁦BattAI⁩ אין חשבון, טלמטריה, פרסומות או בקשות רשת. הנתונים נשארים במכשיר, למעט תמונת מצב מזערית ומוגבלת שנשלחת ישירות ל־⁦Apple Watch⁩ המקושר. הדגימה מוגבלת, הניתוח רץ לכל היותר פעם בחמש דקות, אומדנים מוצגים כטווחים ונתונים חסרים נשארים חסרים.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "he",
-          "description": "BattAI ⁦BattAI⁩ משתמש בחמישה ערכים מממשקי ⁦iOS API⁩ ציבוריים: רמת הסוללה, מצב הטעינה, מצב סוללה חלשה, המצב התרמי של המכשיר כולו והזמן. תוצאות אחרות מחושבות מהמדידות האלה או נוספות על ידך. ליד כל פרט מוצגים המקור והמגבלות.",
+          "description": "BattAI • ⁦BattAI⁩ משתמש בחמישה ערכים מממשקי ⁦iOS API⁩ ציבוריים: רמת הסוללה, מצב הטעינה, מצב סוללה חלשה, המצב התרמי של המכשיר כולו והזמן. תוצאות אחרות מחושבות מהמדידות האלה או נוספות על ידך. ליד כל פרט מוצגים המקור והמגבלות. • ל־⁦BattAI⁩ אין חשבון, טלמטריה, פרסומות או בקשות רשת. הנתונים נשארים במכשיר, למעט תמונת מצב מזערית ומוגבלת שנשלחת ישירות ל־⁦Apple Watch⁩ המקושר. הדגימה מוגבלת, הניתוח רץ לכל היותר פעם בחמש דקות, אומדנים מוצגים כטווחים ונתונים חסרים נשארים חסרים.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-battai"
           },
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-mochi",
         "url": "https://apps.apple.com/il/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "אם רוב אפליקציות המטלות מרגישות עמוסות, האפליקציה הנכונה היא רשימת בדיקה נקייה עם תזכורות, חוקי חזרה וקומפליקציה ל-Apple Watch — ובכוונה ללא מנגנוני ניהול פרויקטים. בשביל זה Mochi נבנה.",
+        "description": "אם רוב אפליקציות המטלות מרגישות עמוסות, האפליקציה הנכונה היא רשימת בדיקה נקייה עם תזכורות ותמיכה ב-Apple Watch — ובכוונה ללא מנגנוני ניהול פרויקטים. בשביל זה Mochi נבנה.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "he",
-          "description": "אם רוב אפליקציות המטלות מרגישות עמוסות, האפליקציה הנכונה היא רשימת בדיקה נקייה עם תזכורות, חוקי חזרה וקומפליקציה ל-Apple Watch — ובכוונה ללא מנגנוני ניהול פרויקטים. בשביל זה Mochi נבנה.",
+          "description": "אם רוב אפליקציות המטלות מרגישות עמוסות, האפליקציה הנכונה היא רשימת בדיקה נקייה עם תזכורות ותמיכה ב-Apple Watch — ובכוונה ללא מנגנוני ניהול פרויקטים. בשביל זה Mochi נבנה.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-mochi"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/il/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: סריקה ויצירה",
-        "description": "QR Code Halo שומר על סדר מכוון: בודקים את התוכן שפוענח, שוקלים את הממצאים הגלויים ורק אז בוחרים פעולה. כברירת מחדל, הפעולה מתבצעת מיד לאחר הסריקה. כדי",
+        "description": "ברגע ש-QR Code Halo קורא קוד, הוא פועל. סרקו במצלמה או בחרו תמונה: קישורים נפתחים בדפדפן, קודי כניסה עם מפתח גישה וקישורים לאפליקציות עוברים ישירות",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "he",
-          "description": "QR Code Halo שומר על סדר מכוון: בודקים את התוכן שפוענח, שוקלים את הממצאים הגלויים ורק אז בוחרים פעולה. כברירת מחדל, הפעולה מתבצעת מיד לאחר הסריקה. כדי",
+          "description": "ברגע ש-QR Code Halo קורא קוד, הוא פועל. סרקו במצלמה או בחרו תמונה: קישורים נפתחים בדפדפן, קודי כניסה עם מפתח גישה וקישורים לאפליקציות עוברים ישירות",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/il/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: צלם תמונת דרכון",
         "description": "צריכים תמונה במידה מסוימת? Snapport Lite חותכת את הדיוקן שלכם בדיוק לגודל שבחרתם, ישירות במכשיר. צלמו תמונה חדשה או בחרו אחת מהספרייה, יישרו את הפנים לפי",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: צלם תמונת דרכון",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/il/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/il/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "מצא את הבעיה האמיתית. בדיקה מלאה אחת בחינם, בסך הכול לכל הכלים. פתיחה חד-פעמית ואופציונלית לכל החיים לשימוש בלתי מוגבל—ללא מנוי, פרסומות או מעקב.",
+        "description": "מצא את הבעיה האמיתית. אפשר לבצע בדיקה מלאה אחת בסך הכול, בכל כלי, בלי לרכוש. רכישה חד-פעמית אופציונלית בתוך האפליקציה פותחת בדיקות ללא הגבלה ואת ההשוואה",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "he",
-          "description": "מצא את הבעיה האמיתית. בדיקה מלאה אחת בחינם, בסך הכול לכל הכלים. פתיחה חד-פעמית ואופציונלית לכל החיים לשימוש בלתי מוגבל—ללא מנוי, פרסומות או מעקב.",
+          "description": "מצא את הבעיה האמיתית. אפשר לבצע בדיקה מלאה אחת בסך הכול, בכל כלי, בלי לרכוש. רכישה חד-פעמית אופציונלית בתוך האפליקציה פותחת בדיקות ללא הגבלה ואת ההשוואה",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/he.jsonld#offer-wifiaidlite"
           },

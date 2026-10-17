@@ -15,7 +15,6 @@ Eltern, die mit kleinen Kindern reisen, brauchen Aktivitäten, die Packen, Warte
 
 - Kinder & Lernen
 - Kostenloser Einstieg · einmalige Freischaltung
-- Offline
 - Keine Werbung
 - Privat / auf dem Gerät
 - App Store · Kostenlos

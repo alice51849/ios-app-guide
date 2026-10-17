@@ -16,7 +16,6 @@ Los viajeros ocupados necesitan práctica de vocabulario que encaje en minutos l
 - Educación
 - Descarga de pago
 - Sin cuenta
-- Sin anuncios
 - Sin seguimiento
 - Privado / en el dispositivo
 - Widget

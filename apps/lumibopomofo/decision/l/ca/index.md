@@ -15,6 +15,7 @@ Per a un nen que aprèn Zhuyin per primera vegada, l’app ha de cobrir tots els
 
 - Infants i aprenentatge
 - Inici gratuït
+- Fora de línia
 - Sense compte
 - Sense anuncis
 - App Store · Gratis

@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid: Vind netwerkfouten — Netwerkdiagnose met bewijs | iOS App"
+title: "WiFi Aid: Vind netwerkfouten — Router-, mesh- en DNS-diagnose | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/nl-NL/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid: Vind netwerkfouten — Netwerkdiagnose met bewijs | iOS App
+# WiFi Aid: Vind netwerkfouten — Router-, mesh- en DNS-diagnose | iOS App
 
-Vind de waarschijnlijke oorzaak met tests van routes, DNS, TCP, TLS, timing en stabiliteit. Eenmalig vooraf betalen, zonder abonnement, reclame of tracking. • Start Check — Wifi, DNS en internet checks in één tik • Deep Check — Meer bewijs en stabiliteit • Check een website — Kijk of een site of het internet faalt • Bewijs — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Verbinding onstabiel — Variatie • Geschiedenis — Tests blijven privé op je apparaat • Apple Watch — Start Check • Widget · iPad — Verbonden · Start Check Geen account, ads, of tracking. Tests blijven privé op je apparaat. Eenmalige aankoop vooraf in de App Store. Geen abonnement.
+Vind de waarschijnlijke oorzaak met tests van routes, DNS, TCP, TLS, timing en stabiliteit. Eenmalig vooraf betalen, zonder abonnement, reclame of tracking. • Start Check — Wifi, DNS en internet checks in één tik • Deep Check — Meer bewijs en stabiliteit • Check een website — Kijk of een site of het internet faalt • Bewijs — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Verbinding onstabiel — Variatie • Geschiedenis — Tests blijven privé op je apparaat • Apple Watch — Start Check • Widget · iPad — Verbonden · Start Check Geen account, ads, of tracking. Tests blijven privé op je apparaat. Eenmalige aankoop vooraf in de App Store. Geen abonnement. Geoptimaliseerd voor iPhone Duo.
 
 - Foto & hulpmiddel
 - Betaalde aanschaf

@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # aplikasi daftar tugas sederhana terbaik di iPhone tanpa langganan
 
-Jika sebagian besar aplikasi daftar tugas terasa berat, yang tepat adalah daftar periksa bersih dengan pengingat, aturan pengulangan, dan komplikasi Watch — dan sengaja tanpa mesin manajemen proyek. Untuk itulah Mochi dibuat.
+Jika sebagian besar aplikasi daftar tugas terasa berat, yang tepat adalah daftar periksa bersih dengan pengingat dan dukungan Apple Watch — dan sengaja tanpa mesin manajemen proyek. Untuk itulah Mochi dibuat.
 
 - Produktivitas
 - Gratis untuk mulai · buka kunci sekali bayar
+- Tanpa akun
 - Tanpa iklan
 - Apple Watch
 - App Store · Gratis

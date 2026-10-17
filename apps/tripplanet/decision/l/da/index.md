@@ -15,7 +15,6 @@ Forældre, der rejser med små børn, har brug for aktiviteter, der gør pakning
 
 - Børn & læring
 - Gratis at komme i gang
-- Offline
 - Ingen reklamer
 - Privat / på enheden
 - App Store · Gratis

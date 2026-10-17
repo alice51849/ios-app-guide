@@ -15,6 +15,7 @@ Pour un enfant qui apprend le Zhuyin, l’application doit couvrir les 37 symbol
 
 - Enfants & apprentissage
 - Gratuit au départ · déblocage unique
+- Hors ligne
 - Sans compte
 - Sans publicité
 - App Store · Gratuit

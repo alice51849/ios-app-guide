@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best free travel expense tracker with currency conversion for iphone
 
-A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.
+Ein sinnvoller kostenloser Test für Reiseausgaben sollte den kompletten Ablauf von Landes- zu Heimatwährung umfassen, nicht nur ein leeres Kassenbuch, das erst nach dem Kauf nützlich wird. G+Money Lite – smarter Reisewährungs- und Ausgaben-Tracker – jede Ausgabe erfassen und in der Heimatwährung sehen.
 
 - Geld & Reisen
 - Kostenloser Einstieg · einmalige Freischaltung

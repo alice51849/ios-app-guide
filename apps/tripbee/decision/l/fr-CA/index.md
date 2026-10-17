@@ -16,7 +16,6 @@ Une bonne application d’itinéraire transforme un voyage désordonné en une c
 - Voyage
 - Téléchargement payant
 - Hors ligne
-- Aucun compte
 - Aucune publicité
 - Aucun suivi
 - Privé / sur l'appareil

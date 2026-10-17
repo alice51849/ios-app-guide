@@ -16,7 +16,6 @@ Vytížení cestující potřebují procvičování slovní zásoby, které se v
 - Vzdělávání
 - Placené stažení
 - Bez účtu
-- Bez reklam
 - Bez sledování
 - Soukromé / v zařízení
 - Widget

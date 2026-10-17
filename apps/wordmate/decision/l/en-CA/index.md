@@ -16,7 +16,6 @@ Busy commuters need vocabulary practice that fits into spare minutes without req
 - Education
 - Paid download
 - No account
-- No ads
 - No tracking
 - Private / on-device
 - Widget

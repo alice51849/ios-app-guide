@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid Lite — Nettverksdiagnose med bevis | iOS App"
+title: "WiFi Aid Lite — Ikke internett? Finn årsaken | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/no/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid Lite — Nettverksdiagnose med bevis | iOS App
+# WiFi Aid Lite — Ikke internett? Finn årsaken | iOS App
 
-Finn det virkelige problemet. Hvert verktøy inkluderer én gratis full bruk. Valgfri livstidsopplåsing som engangskjøp for ubegrenset bruk—ingen abonnement, annonser eller sporing. • Start Test — Wi-Fi, DNS og internett med ett trykk • Deep Check — Mer bevis og stabilitet • Sjekk Nettside — En side eller hele nettet • Beviser — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Ustabil tilkobling — Variation • Testhistorikk — Dine data lagres kun på denne enheten • Tilkoblet node — Nøyaktig posisjon finner Wi-Fi og gjeldende node Ingen konto, annonser eller sporing. Dine data lagres kun på denne enheten. Hvert verktøy inkluderer én gratis full bruk. Valgfri livstidsopplåsing som engangskjøp for ubegrenset bruk—ingen abonnement, annonser eller sporing.
+Finn det virkelige problemet. Uten kjøp kan du ta én full sjekk totalt, med hvilket som helst verktøy. Et valgfritt engangskjøp i appen låser opp ubegrensede sjekker og før-og-etter-sammenligningen etter reparasjonen—ingen abonnement, annonser eller sporing. • Start Test — Wi-Fi, DNS og internett med ett trykk • Deep Check — Mer bevis og stabilitet • Sjekk Nettside — En side eller hele nettet • Beviser — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Ustabil tilkobling — Variation • Testhistorikk — Dine data lagres kun på denne enheten • Tilkoblet node — Nøyaktig posisjon finner Wi-Fi og gjeldende node Ingen konto, annonser eller sporing. Dine data lagres kun på denne enheten. Uten kjøp kan du ta én full sjekk totalt, med hvilket som helst verktøy. Et valgfritt engangskjøp i appen låser opp ubegrensede sjekker og før-og-etter-sammenligningen etter reparasjonen—ingen abonnement, annonser eller sporing.
 
 - Mer
 - Gratis å starte

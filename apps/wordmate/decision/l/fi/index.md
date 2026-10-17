@@ -16,7 +16,6 @@ Kiireiset työmatkalaiset tarvitsevat sanastoharjoituksia, jotka mahtuvat vapais
 - Koulutus
 - Maksullinen lataus
 - Ei tiliä
-- Ei mainoksia
 - Ei seurantaa
 - Yksityinen / laitteella
 - Widget

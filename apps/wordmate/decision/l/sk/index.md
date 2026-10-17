@@ -16,7 +16,6 @@ Zaneprázdnení cestujúci potrebujú precvičovanie slovnej zásoby, ktoré sa 
 - Vzdelávanie
 - Platené stiahnutie
 - Bez účtu
-- Bez reklám
 - Bez sledovania
 - Súkromné / v zariadení
 - Widget

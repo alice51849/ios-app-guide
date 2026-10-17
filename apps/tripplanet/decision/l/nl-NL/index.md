@@ -15,7 +15,6 @@ Ouders die met jonge kinderen reizen hebben activiteiten nodig die inpakken, wac
 
 - Kinderen & leren
 - Gratis te starten · eenmalige ontgrendeling
-- Offline
 - Geen advertenties
 - Privé / op apparaat
 - App Store · Gratis

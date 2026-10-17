@@ -6,15 +6,15 @@
 <!-- guide-design:start -->
 <link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
 <!-- guide-design:end -->
-<title>WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ &amp; ಪುರಾವೆ | iOS App</title>
-<meta name="description" content="ಸ್ವತಂತ್ರ DNS, TCP, TLS ಮತ್ತು ಸ್ಥಿರತೆ ಪರೀಕ್ಷೆಗಳ ಮೂಲಕ ಸಂಭವನೀಯ ಸಂಪರ್ಕ ಸಮಸ್ಯೆ ಕಂಡುಹಿಡಿಯಿರಿ. ಒಮ್ಮೆ ಮಾತ್ರ ಪಾವತಿಸಿ—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ.">
-<meta name="keywords" content="wifi ಸಮಸ್ಯೆ, ವೇಗ ಪರೀಕ್ಷೆ, dns, ping, network test, internet, ನೆಟ್ ತಪಾಸಣೆ, speed, router, latency, ttfb, ip">
+<title>WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ರೌಟರ್, ಮೆಶ್ ಮತ್ತು DNS ಪರಿಶೀಲನೆ | iOS App</title>
+<meta name="description" content="ಒಂದು ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi‑Fi ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಸಮಸ್ಯೆ ಪರಿಶೀಲಿಸಿ. DNS, TCP, TLS, ವೇಗ, ಜಿಟ್ಟರ್, IPv4 ಮತ್ತು IPv6 ಸಾಕ್ಷ್ಯ ನೋಡಿ ಸರಿಯಾದ ಪರಿಹಾರ ಕೈಗೊಳ್ಳಿ—ಜಾಹೀರಾತು ಅಥವಾ">
+<meta name="keywords" content="ಲೇಟೆನ್ಸಿ, ಜಿಟರ್, ipv6, ipv4, tcp, ನೋಡ್, ಎಕ್ಸ್‌ಟೆಂಡರ್, ರೋಮಿಂಗ್, ವರದಿ, pdf, ಇತಿಹಾಸ, ವಿಜೆಟ್, ವಾಚ್, ಸ್ಥಿರತೆ, ಫೈಬರ್">
 <link rel="canonical" href="https://open.cait518.cc/ios-app-guide/kn-IN/wifiaid.html">
 <!-- smart-app-banner:start -->
 <meta name="apple-itunes-app" content="app-id=6790467886, affiliate-data=pt=118326163&amp;ct=geo_pick&amp;mt=8">
 <!-- smart-app-banner:end -->
 <!-- social-preview:start -->
-<meta property="og:title" content="WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ &amp; ಪುರಾವೆ | iOS App">
+<meta property="og:title" content="WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ರೌಟರ್, ಮೆಶ್ ಮತ್ತು DNS ಪರಿಶೀಲನೆ | iOS App">
 <meta property="og:type" content="product">
 <meta property="og:url" content="https://open.cait518.cc/ios-app-guide/kn-IN/wifiaid.html">
 <meta property="og:image" content="https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg">
@@ -22,8 +22,8 @@
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
-<meta property="og:image:alt" content="WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ &amp; ಪುರಾವೆ | iOS App">
-<meta property="og:description" content="App Store · ₹ 599. ಸ್ವತಂತ್ರ DNS, TCP, TLS ಮತ್ತು ಸ್ಥಿರತೆ ಪರೀಕ್ಷೆಗಳ ಮೂಲಕ ಸಂಭವನೀಯ ಸಂಪರ್ಕ ಸಮಸ್ಯೆ ಕಂಡುಹಿಡಿಯಿರಿ. ಒಮ್ಮೆ ಮಾತ್ರ ಪಾವತಿಸಿ—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ.">
+<meta property="og:image:alt" content="WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ರೌಟರ್, ಮೆಶ್ ಮತ್ತು DNS ಪರಿಶೀಲನೆ | iOS App">
+<meta property="og:description" content="App Store · ₹ 599. ಒಂದು ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi‑Fi ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಸಮಸ್ಯೆ ಪರಿಶೀಲಿಸಿ. DNS, TCP, TLS, ವೇಗ, ಜಿಟ್ಟರ್, IPv4 ಮತ್ತು IPv6 ಸಾಕ್ಷ್ಯ ನೋಡಿ ಸರಿಯಾದ ಪರಿಹಾರ ಕೈಗೊಳ್ಳಿ—ಜಾಹೀರಾತು ಅಥವಾ">
 <meta property="og:locale" content="kn_IN">
 <meta property="og:site_name" content="iOS App Guide">
 <meta property="product:price:amount" content="599">
@@ -36,8 +36,8 @@
   "@type": "WebPage",
   "@id": "https://open.cait518.cc/ios-app-guide/kn-IN/wifiaid.html#webpage",
   "url": "https://open.cait518.cc/ios-app-guide/kn-IN/wifiaid.html",
-  "name": "WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ & ಪುರಾವೆ | iOS App",
-  "description": "ಸ್ವತಂತ್ರ DNS, TCP, TLS ಮತ್ತು ಸ್ಥಿರತೆ ಪರೀಕ್ಷೆಗಳ ಮೂಲಕ ಸಂಭವನೀಯ ಸಂಪರ್ಕ ಸಮಸ್ಯೆ ಕಂಡುಹಿಡಿಯಿರಿ. ಒಮ್ಮೆ ಮಾತ್ರ ಪಾವತಿಸಿ—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ.",
+  "name": "WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ರೌಟರ್, ಮೆಶ್ ಮತ್ತು DNS ಪರಿಶೀಲನೆ | iOS App",
+  "description": "ಒಂದು ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi‑Fi ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಸಮಸ್ಯೆ ಪರಿಶೀಲಿಸಿ. DNS, TCP, TLS, ವೇಗ, ಜಿಟ್ಟರ್, IPv4 ಮತ್ತು IPv6 ಸಾಕ್ಷ್ಯ ನೋಡಿ ಸರಿಯಾದ ಪರಿಹಾರ ಕೈಗೊಳ್ಳಿ—ಜಾಹೀರಾತು ಅಥವಾ",
   "inLanguage": "kn-IN",
   "primaryImageOfPage": {
     "@type": "ImageObject",
@@ -47,7 +47,7 @@
     "width": 1200,
     "height": 675,
     "encodingFormat": "image/jpeg",
-    "caption": "WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ & ಪುರಾವೆ | iOS App",
+    "caption": "WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ರೌಟರ್, ಮೆಶ್ ಮತ್ತು DNS ಪರಿಶೀಲನೆ | iOS App",
     "representativeOfPage": true
   },
   "mainEntity": {
@@ -64,17 +64,17 @@
 @media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
 </style>
 <meta name="twitter:card" content="app">
-<meta name="twitter:title" content="WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ &amp; ಪುರಾವೆ | iOS App">
-<meta name="twitter:description" content="App Store · ₹ 599. ಸ್ವತಂತ್ರ DNS, TCP, TLS ಮತ್ತು ಸ್ಥಿರತೆ ಪರೀಕ್ಷೆಗಳ ಮೂಲಕ ಸಂಭವನೀಯ ಸಂಪರ್ಕ ಸಮಸ್ಯೆ ಕಂಡುಹಿಡಿಯಿರಿ. ಒಮ್ಮೆ ಮಾತ್ರ ಪಾವತಿಸಿ—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ.">
+<meta name="twitter:title" content="WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ರೌಟರ್, ಮೆಶ್ ಮತ್ತು DNS ಪರಿಶೀಲನೆ | iOS App">
+<meta name="twitter:description" content="App Store · ₹ 599. ಒಂದು ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi‑Fi ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಸಮಸ್ಯೆ ಪರಿಶೀಲಿಸಿ. DNS, TCP, TLS, ವೇಗ, ಜಿಟ್ಟರ್, IPv4 ಮತ್ತು IPv6 ಸಾಕ್ಷ್ಯ ನೋಡಿ ಸರಿಯಾದ ಪರಿಹಾರ ಕೈಗೊಳ್ಳಿ—ಜಾಹೀರಾತು ಅಥವಾ">
 <meta name="twitter:image" content="https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg">
-<meta name="twitter:image:alt" content="WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ &amp; ಪುರಾವೆ | iOS App">
+<meta name="twitter:image:alt" content="WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ರೌಟರ್, ಮೆಶ್ ಮತ್ತು DNS ಪರಿಶೀಲನೆ | iOS App">
 <meta name="twitter:app:name:iphone" content="WiFi Aid">
 <meta name="twitter:app:id:iphone" content="6790467886">
 <meta name="twitter:app:name:ipad" content="WiFi Aid">
 <meta name="twitter:app:id:ipad" content="6790467886">
 <meta name="twitter:label1" content="App Store">
 <meta name="twitter:data1" content="₹ 599">
-<link rel="alternate" type="application/json+oembed" href="https://open.cait518.cc/ios-app-guide/oembed/kn-IN/wifiaid.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fkn-IN%2Fwifiaid.html&amp;format=json" title="WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ &amp; ಪುರಾವೆ | iOS App">
+<link rel="alternate" type="application/json+oembed" href="https://open.cait518.cc/ios-app-guide/oembed/kn-IN/wifiaid.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fkn-IN%2Fwifiaid.html&amp;format=json" title="WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ — ರೌಟರ್, ಮೆಶ್ ಮತ್ತು DNS ಪರಿಶೀಲನೆ | iOS App">
 <!-- social-preview:end -->
 <link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/wifiaid.html">
 <link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/wifiaid.html">
@@ -127,7 +127,7 @@
 <link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaid.html">
 <link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaid.html">
 <link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/wifiaid.html">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ","operatingSystem":"iOS","applicationCategory":"PhotographyApplication","description":"ಸ್ವತಂತ್ರ DNS, TCP, TLS ಮತ್ತು ಸ್ಥಿರತೆ ಪರೀಕ್ಷೆಗಳ ಮೂಲಕ ಸಂಭವನೀಯ ಸಂಪರ್ಕ ಸಮಸ್ಯೆ ಕಂಡುಹಿಡಿಯಿರಿ. ಒಮ್ಮೆ ಮಾತ್ರ ಪಾವತಿಸಿ—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ.\n\n• ಪರೀಕ್ಷೆ ಚಲಾಯಿಸಿ — ಒಂದೇ ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi-Fi, DNS ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಪರೀಕ್ಷೆ\n• ಆಳ ಪರೀಕ್ಷೆ — ಹೆಚ್ಚಿನ ಪುರಾವೆ ಮತ್ತು ಸ್ಥಿರತೆ ಮಾದರಿಗಳು\n• ವೆಬ್‌ಸೈಟ್ ಪರೀಕ್ಷಿಸಿ — ಒಂದು ಗಮ್ಯ ವಿಫಲವಾಗಿದೆಯೇ ಅಥವಾ ವ್ಯಾಪಕ ಇಂಟರ್ನೆಟ್ ಸಮಸ್ಯೆಯೇ ಎಂದು ತಿಳಿಯಿರಿ\n• ಪುರಾವೆ — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6\n• ಸಂಪರ್ಕ ಅಸ್ಥಿರ ಕಾಣುತ್ತಿದೆ — ವ್ಯತ್ಯಾಸ\n• ಪರೀಕ್ಷೆ ಇತಿಹಾಸ — ಖಾಸಗಿ ದಾಖಲೆಗಳು ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಸಂಗ್ರಹಿತ\n• Apple Watch — ಪರೀಕ್ಷೆ ಚಲಾಯಿಸಿ\n• Widget · iPad — ಸಂಪರ್ಕಿತ · ಪರೀಕ್ಷೆ ಚಲಾಯಿಸಿ\n\nಖಾತೆ, ಜಾಹೀರಾತು, ವಿಶ್ಲೇಷಣೆ ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ. ಖಾಸಗಿ ದಾಖಲೆಗಳು ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಸಂಗ್ರಹಿತ.\n\nApp Store ನಲ್ಲಿ ಒಮ್ಮೆ ಖರೀದಿ. ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.","url":"https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","featureList":["wifi ಸಮಸ್ಯೆ","ವೇಗ ಪರೀಕ್ಷೆ","dns","ping","network test","internet","ನೆಟ್ ತಪಾಸಣೆ","speed"],"keywords":"wifi ಸಮಸ್ಯೆ, ವೇಗ ಪರೀಕ್ಷೆ, dns, ping, network test, internet, ನೆಟ್ ತಪಾಸಣೆ, speed, router, latency, ttfb, ip","@id":"https://apps.apple.com/app/id6790467886","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6790467886"},"downloadUrl":"https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/kn-IN/wifiaid.html#webpage"},"offers":{"@type":"Offer","price":"599","priceCurrency":"INR","url":"https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ","operatingSystem":"iOS","applicationCategory":"PhotographyApplication","description":"ಒಂದು ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi‑Fi ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಸಮಸ್ಯೆ ಪರಿಶೀಲಿಸಿ. DNS, TCP, TLS, ವೇಗ, ಜಿಟ್ಟರ್, IPv4 ಮತ್ತು IPv6 ಸಾಕ್ಷ್ಯ ನೋಡಿ ಸರಿಯಾದ ಪರಿಹಾರ ಕೈಗೊಳ್ಳಿ—ಜಾಹೀರಾತು ಅಥವಾ ಚಂದಾ ಇಲ್ಲ.\n\n• ಪರಿಶೀಲನೆ ನಡೆಸು — ಒಂದೇ ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi-Fi, DNS ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಪರಿಶೀಲನೆ\n• ಡೀಪ್ ಚೆಕ್ — ಹೆಚ್ಚಿನ ಪುರಾವೆ ಮತ್ತು ಸ್ಥಿರತೆಯ ಮಾದರಿಗಳು\n• ವೆಬ್‌ಸೈಟ್ ಪರಿಶೀಲಿಸಿ — ಒಂದು ತಾಣ ಅಥವಾ ಇಡೀ ಇಂಟರ್ನೆಟ್ ವಿಫಲವಾಗುತ್ತಿದೆಯೇ ಎಂದು ನೋಡಿ\n• ಪುರಾವೆ — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6\n• ಸಂಪರ್ಕ ಅಸ್ಥಿರವಾಗಿದೆ — ವ್ಯತ್ಯಾಸ\n• ಪರಿಶೀಲನೆ ಇತಿಹಾಸ — ಖಾಸಗಿ ದಾಖಲೆಗಳು ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಉಳಿಯುತ್ತವೆ\n• Apple Watch — ಪರಿಶೀಲನೆ ನಡೆಸು\n• Widget · iPad — ಸಂಪರ್ಕಗೊಂಡಿದೆ · ಪರಿಶೀಲನೆ ನಡೆಸು\n\nಯಾವುದೇ ಖಾತೆ, ಜಾಹೀರಾತುಗಳು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ. ಖಾಸಗಿ ದಾಖಲೆಗಳು ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಉಳಿಯುತ್ತವೆ.\n\nWiFi Aid ಒಂದೇ ಬಾರಿಯ ಪಾವತಿಯ ಸಂಪೂರ್ಣ ಆಪ್. ಜಾಹೀರಾತು, ಇನ್‑ಆಪ್ ಖರೀದಿ ಅಥವಾ ಚಂದಾ ಇಲ್ಲ.\n\niPhone Duo ಗಾಗಿ ಆಪ್ಟಿಮೈಸ್ ಮಾಡಲಾಗಿದೆ.","url":"https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","featureList":["ಲೇಟೆನ್ಸಿ","ಜಿಟರ್","ipv6","ipv4","tcp","ನೋಡ್","ಎಕ್ಸ್‌ಟೆಂಡರ್","ರೋಮಿಂಗ್"],"keywords":"ಲೇಟೆನ್ಸಿ, ಜಿಟರ್, ipv6, ipv4, tcp, ನೋಡ್, ಎಕ್ಸ್‌ಟೆಂಡರ್, ರೋಮಿಂಗ್, ವರದಿ, pdf, ಇತಿಹಾಸ, ವಿಜೆಟ್, ವಾಚ್, ಸ್ಥಿರತೆ, ಫೈಬರ್","@id":"https://apps.apple.com/app/id6790467886","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6790467886"},"downloadUrl":"https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/kn-IN/wifiaid.html#webpage"},"offers":{"@type":"Offer","price":"599","priceCurrency":"INR","url":"https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
 <!-- app-store-facts-style:start -->
 <link rel="stylesheet" href="https://open.cait518.cc/ios-app-guide/assets/app-store-facts-v1.css">
 <!-- app-store-facts-style:end -->
@@ -145,14 +145,14 @@
 <body>
 <main>
   <h1>WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ</h1>
-  <p><strong>ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ &amp; ಪುರಾವೆ</strong></p>
+  <p><strong>ರೌಟರ್, ಮೆಶ್ ಮತ್ತು DNS ಪರಿಶೀಲನೆ</strong></p>
 <!-- app-decision-card:start -->
 <aside class="iag-decision-card" data-app-id="6790467886" aria-label="WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ">
   <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/wifiaid-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
   <div class="iag-decision-card__body">
     <strong class="iag-decision-card__title" title="WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ">WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ</strong>
-    <p class="iag-decision-card__promise" title="ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ &amp; ಪುರಾವೆ">ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ &amp; ಪುರಾವೆ</p>
-    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="wifi ಸಮಸ್ಯೆ">wifi ಸಮಸ್ಯೆ</span><span class="iag-decision-card__fact" title="ವೇಗ ಪರೀಕ್ಷೆ">ವೇಗ ಪರೀಕ್ಷೆ</span><span class="iag-decision-card__fact" title="dns">dns</span><span class="iag-decision-card__fact" title="ping">ping</span></div>
+    <p class="iag-decision-card__promise" title="ರೌಟರ್, ಮೆಶ್ ಮತ್ತು DNS ಪರಿಶೀಲನೆ">ರೌಟರ್, ಮೆಶ್ ಮತ್ತು DNS ಪರಿಶೀಲನೆ</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="ಲೇಟೆನ್ಸಿ">ಲೇಟೆನ್ಸಿ</span><span class="iag-decision-card__fact" title="ಜಿಟರ್">ಜಿಟರ್</span><span class="iag-decision-card__fact" title="ipv6">ipv6</span><span class="iag-decision-card__fact" title="ipv4">ipv4</span></div>
     <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="599">₹ 599</data></div>
     <p class="iag-decision-card__terms" title="ಒಂದೇ ಮುಂಗಡ ಬೆಲೆಯ ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್, ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.">ಒಂದೇ ಮುಂಗಡ ಬೆಲೆಯ ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್, ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.</p>
     <a class="iag-decision-card__cta" href="https://apps.apple.com/in/app/id6790467886?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="App Store ನಲ್ಲಿ WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ ಪಡೆಯಿರಿ" title="App Store ನಲ್ಲಿ WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ ಪಡೆಯಿರಿ">App Store ನಲ್ಲಿ WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ ಪಡೆಯಿರಿ</a>
@@ -171,37 +171,31 @@
 <div class="app-store-review" data-app-store-review="6790467886" style="margin:1rem 0;font-size:.9em;text-align:center"><a class="app-store-review__link" href="https://apps.apple.com/in/app/id6790467886?action=write-review" rel="nofollow noopener">ಈ ಆ್ಯಪ್ ಅನ್ನು ಈಗಾಗಲೇ ಬಳಸುತ್ತಿದ್ದೀರಾ? App Store ನಲ್ಲಿ ರೇಟ್ ಮಾಡಿ ಅಥವಾ ವಿಮರ್ಶೆ ಬರೆಯಿರಿ</a></div>
 <!-- app-store-review:end -->
 
-<!-- app-hook-clip:start -->
-<figure class="app-hook-clip" data-app-key="wifiaid" lang="en" style="margin:18px 0;max-width:300px">
-<video controls playsinline muted loop preload="none" poster="https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg" width="1080" height="1920" style="display:block;width:100%;aspect-ratio:9/16;border-radius:18px;background:#111;object-fit:contain" aria-label="Wi-Fi acting up? See the evidence | WiFi Aid: Find WiFi Problems"><source src="https://files.catbox.moe/fw8rsu.mp4" type="video/mp4"></video>
-<figcaption style="margin-top:6px;font-size:14px;color:#6b6257">Wi-Fi acting up? See the evidence</figcaption>
-</figure>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"Wi-Fi acting up? See the evidence | WiFi Aid: Find WiFi Problems","description":"ಸ್ವತಂತ್ರ DNS, TCP, TLS ಮತ್ತು ಸ್ಥಿರತೆ ಪರೀಕ್ಷೆಗಳ ಮೂಲಕ ಸಂಭವನೀಯ ಸಂಪರ್ಕ ಸಮಸ್ಯೆ ಕಂಡುಹಿಡಿಯಿರಿ. ಒಮ್ಮೆ ಮಾತ್ರ ಪಾವತಿಸಿ—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ.","thumbnailUrl":["https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg"],"uploadDate":"2026-10-16T00:00:00+00:00","contentUrl":"https://files.catbox.moe/fw8rsu.mp4","duration":"PT7S","inLanguage":"en"}</script>
-<!-- app-hook-clip:end -->
 <h2>WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ ಎಂದರೇನು?</h2>
-  <p>WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ ಒಂದು iOS ಆ್ಯಪ್. ಸಂಪರ್ಕ ದೋಷ ಪತ್ತೆ &amp; ಪುರಾವೆ</p>
-  <p>ಸ್ವತಂತ್ರ DNS, TCP, TLS ಮತ್ತು ಸ್ಥಿರತೆ ಪರೀಕ್ಷೆಗಳ ಮೂಲಕ ಸಂಭವನೀಯ ಸಂಪರ್ಕ ಸಮಸ್ಯೆ ಕಂಡುಹಿಡಿಯಿರಿ. ಒಮ್ಮೆ ಮಾತ್ರ ಪಾವತಿಸಿ—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ.</p>
-  <p>• ಪರೀಕ್ಷೆ ಚಲಾಯಿಸಿ — ಒಂದೇ ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi-Fi, DNS ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಪರೀಕ್ಷೆ</p>
-  <p>• ಆಳ ಪರೀಕ್ಷೆ — ಹೆಚ್ಚಿನ ಪುರಾವೆ ಮತ್ತು ಸ್ಥಿರತೆ ಮಾದರಿಗಳು</p>
-  <p>• ವೆಬ್‌ಸೈಟ್ ಪರೀಕ್ಷಿಸಿ — ಒಂದು ಗಮ್ಯ ವಿಫಲವಾಗಿದೆಯೇ ಅಥವಾ ವ್ಯಾಪಕ ಇಂಟರ್ನೆಟ್ ಸಮಸ್ಯೆಯೇ ಎಂದು ತಿಳಿಯಿರಿ</p>
+  <p>WiFi Aid: ನೆಟ್ವರ್ಕ್ ಸಮಸ್ಯೆ ಒಂದು iOS ಆ್ಯಪ್. ರೌಟರ್, ಮೆಶ್ ಮತ್ತು DNS ಪರಿಶೀಲನೆ</p>
+  <p>ಒಂದು ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi‑Fi ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಸಮಸ್ಯೆ ಪರಿಶೀಲಿಸಿ. DNS, TCP, TLS, ವೇಗ, ಜಿಟ್ಟರ್, IPv4 ಮತ್ತು IPv6 ಸಾಕ್ಷ್ಯ ನೋಡಿ ಸರಿಯಾದ ಪರಿಹಾರ ಕೈಗೊಳ್ಳಿ—ಜಾಹೀರಾತು ಅಥವಾ ಚಂದಾ ಇಲ್ಲ.</p>
+  <p>• ಪರಿಶೀಲನೆ ನಡೆಸು — ಒಂದೇ ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi-Fi, DNS ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಪರಿಶೀಲನೆ</p>
+  <p>• ಡೀಪ್ ಚೆಕ್ — ಹೆಚ್ಚಿನ ಪುರಾವೆ ಮತ್ತು ಸ್ಥಿರತೆಯ ಮಾದರಿಗಳು</p>
+  <p>• ವೆಬ್‌ಸೈಟ್ ಪರಿಶೀಲಿಸಿ — ಒಂದು ತಾಣ ಅಥವಾ ಇಡೀ ಇಂಟರ್ನೆಟ್ ವಿಫಲವಾಗುತ್ತಿದೆಯೇ ಎಂದು ನೋಡಿ</p>
   <p>• ಪುರಾವೆ — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6</p>
-  <p>• ಸಂಪರ್ಕ ಅಸ್ಥಿರ ಕಾಣುತ್ತಿದೆ — ವ್ಯತ್ಯಾಸ</p>
-  <p>• ಪರೀಕ್ಷೆ ಇತಿಹಾಸ — ಖಾಸಗಿ ದಾಖಲೆಗಳು ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಸಂಗ್ರಹಿತ</p>
-  <p>• Apple Watch — ಪರೀಕ್ಷೆ ಚಲಾಯಿಸಿ</p>
-  <p>• Widget · iPad — ಸಂಪರ್ಕಿತ · ಪರೀಕ್ಷೆ ಚಲಾಯಿಸಿ</p>
-  <p>ಖಾತೆ, ಜಾಹೀರಾತು, ವಿಶ್ಲೇಷಣೆ ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ. ಖಾಸಗಿ ದಾಖಲೆಗಳು ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಸಂಗ್ರಹಿತ.</p>
-  <p>App Store ನಲ್ಲಿ ಒಮ್ಮೆ ಖರೀದಿ. ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ.</p>
+  <p>• ಸಂಪರ್ಕ ಅಸ್ಥಿರವಾಗಿದೆ — ವ್ಯತ್ಯಾಸ</p>
+  <p>• ಪರಿಶೀಲನೆ ಇತಿಹಾಸ — ಖಾಸಗಿ ದಾಖಲೆಗಳು ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಉಳಿಯುತ್ತವೆ</p>
+  <p>• Apple Watch — ಪರಿಶೀಲನೆ ನಡೆಸು</p>
+  <p>• Widget · iPad — ಸಂಪರ್ಕಗೊಂಡಿದೆ · ಪರಿಶೀಲನೆ ನಡೆಸು</p>
+  <p>ಯಾವುದೇ ಖಾತೆ, ಜಾಹೀರಾತುಗಳು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ. ಖಾಸಗಿ ದಾಖಲೆಗಳು ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಉಳಿಯುತ್ತವೆ.</p>
+  <p>WiFi Aid ಒಂದೇ ಬಾರಿಯ ಪಾವತಿಯ ಸಂಪೂರ್ಣ ಆಪ್. ಜಾಹೀರಾತು, ಇನ್‑ಆಪ್ ಖರೀದಿ ಅಥವಾ ಚಂದಾ ಇಲ್ಲ.</p>
+  <p>iPhone Duo ಗಾಗಿ ಆಪ್ಟಿಮೈಸ್ ಮಾಡಲಾಗಿದೆ.</p>
 
   <h2>ಪ್ರಮುಖ ವೈಶಿಷ್ಟ್ಯಗಳು</h2>
   <ul>
-    <li>wifi ಸಮಸ್ಯೆ</li>
-    <li>ವೇಗ ಪರೀಕ್ಷೆ</li>
-    <li>dns</li>
-    <li>ping</li>
-    <li>network test</li>
-    <li>internet</li>
-    <li>ನೆಟ್ ತಪಾಸಣೆ</li>
-    <li>speed</li>
+    <li>ಲೇಟೆನ್ಸಿ</li>
+    <li>ಜಿಟರ್</li>
+    <li>ipv6</li>
+    <li>ipv4</li>
+    <li>tcp</li>
+    <li>ನೋಡ್</li>
+    <li>ಎಕ್ಸ್‌ಟೆಂಡರ್</li>
+    <li>ರೋಮಿಂಗ್</li>
   </ul>
 
   <h2>ಬೆಲೆ</h2>
@@ -220,7 +214,7 @@
 <!-- app-store-facts:end -->
 </main>
 <!-- webmcp-install-tool:start -->
-<script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6790467886","app_name":"WiFi Aid","page_language":"kn-IN","page_url":"https://open.cait518.cc/ios-app-guide/kn-IN/wifiaid.html","app_store_url":"https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","localized_description":"ಸ್ವತಂತ್ರ DNS, TCP, TLS ಮತ್ತು ಸ್ಥಿರತೆ ಪರೀಕ್ಷೆಗಳ ಮೂಲಕ ಸಂಭವನೀಯ ಸಂಪರ್ಕ ಸಮಸ್ಯೆ ಕಂಡುಹಿಡಿಯಿರಿ. ಒಮ್ಮೆ ಮಾತ್ರ ಪಾವತಿಸಿ—ಚಂದಾದಾರಿಕೆ, ಜಾಹೀರಾತು ಅಥವಾ ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ.","storefront_facts":{"price":"599","currency":"INR","formatted_price":"₹ 599"}}</script>
+<script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6790467886","app_name":"WiFi Aid","page_language":"kn-IN","page_url":"https://open.cait518.cc/ios-app-guide/kn-IN/wifiaid.html","app_store_url":"https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","localized_description":"ಒಂದು ಟ್ಯಾಪ್‌ನಲ್ಲಿ Wi‑Fi ಮತ್ತು ಇಂಟರ್ನೆಟ್ ಸಮಸ್ಯೆ ಪರಿಶೀಲಿಸಿ.","storefront_facts":{"price":"599","currency":"INR","formatted_price":"₹ 599"}}</script>
 <script src="https://open.cait518.cc/ios-app-guide/assets/webmcp-install-tool-v2.js" data-webmcp-install="iag-webmcp-install-data" defer></script>
 <!-- webmcp-install-tool:end -->
 <!-- mobile-store-cta:start -->

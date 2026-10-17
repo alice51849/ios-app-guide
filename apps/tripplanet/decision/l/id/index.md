@@ -15,7 +15,6 @@ Orang tua yang bepergian dengan anak kecil butuh aktivitas yang membuat berkemas
 
 - Anak & pembelajaran
 - Gratis untuk mulai · buka kunci sekali bayar
-- Offline
 - Tanpa iklan
 - Privat / di perangkat
 - App Store · Gratis

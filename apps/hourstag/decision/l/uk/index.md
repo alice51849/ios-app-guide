@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: Години до покупки — Бюджет, витрати й економія | iOS App"
+title: "HoursTag: Години до покупки — Погодинна ставка і витрати | iOS App"
 lang: "uk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/uk/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Години до покупки — Бюджет, витрати й економія | iOS App
+# HoursTag: Години до покупки — Погодинна ставка і витрати | iOS App
 
 Скільки це коштує насправді? Не в гривнях, а в годинах вашого життя.
 

@@ -15,7 +15,6 @@ Los padres que viajan con niños pequeños necesitan actividades que conviertan 
 
 - Infantil y aprendizaje
 - Gratis para empezar · desbloqueo único
-- Sin conexión
 - Sin anuncios
 - Privado / en el dispositivo
 - App Store · Gratis

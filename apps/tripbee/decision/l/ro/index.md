@@ -16,7 +16,6 @@ O aplicație bună de itinerar transformă o călătorie dezordonată într-un c
 - Călătorii
 - Descărcare plătită
 - Offline
-- Fără cont
 - Fără reclame
 - Fără urmărire
 - Privat / pe dispozitiv

@@ -3,8 +3,8 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "en-GB",
   "dateModified": "2026-10-17",
-  "content_digest": "938d95e26772d26d5cffe0a8f72251531e7b593ae8aae3171614d932f7c907c3",
-  "generation_digest": "bfafca5e9e6727c806488584384b4e133a5d632711fee84a28391e1163a5592d",
+  "content_digest": "9ee476d4472399ff659f0e6f0d86740057c5c8f644c71795439f41f68294b8a1",
+  "generation_digest": "69919d1ffe3dee270a3b0c9de832a705b43e77c73c95b3022d4667c9bbe77209",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -140,14 +140,12 @@
       "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
         "no_account",
         "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "Offline",
         "No account",
         "No adverts",
         "No tracking",
@@ -162,7 +160,6 @@
       "badge_labels": [
         "Lifestyle",
         "Free to start · one-time unlock",
-        "Offline",
         "No account",
         "No adverts",
         "No tracking",
@@ -483,12 +480,10 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
-        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "No account",
-        "No adverts",
         "Private / on-device"
       ],
       "device_surfaces": [
@@ -503,7 +498,6 @@
         "Productivity",
         "Free to start · one-time unlock",
         "No account",
-        "No adverts",
         "Private / on-device",
         "Widget",
         "Apple Watch",
@@ -891,7 +885,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "best free travel expense tracker with currency conversion for iphone",
-      "decision_context": "For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock. That's the gap G+Money Lite was built to close.",
+      "decision_context": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase. G+Money Lite — Smart travel currency and expense tracker — log each spend and see it in your home currency.",
       "category": "finance",
       "category_label": "Money & travel",
       "purchase_model": "free_with_lifetime_unlock",
@@ -1143,7 +1137,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "best app to block social media while studying iphone",
-      "decision_context": "During exams, willpower isn't the tool — a hard timed block is. That's why LockHour Pro exists.",
+      "decision_context": "During exams, willpower isn't the tool — a hard timed block is — LockHour Pro is built for this.",
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
@@ -1209,10 +1203,12 @@
       "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
+        "offline",
         "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "Offline",
         "No account",
         "No adverts"
       ],
@@ -1221,6 +1217,7 @@
       "badge_labels": [
         "Children & learning",
         "Free to start · one-time unlock",
+        "Offline",
         "No account",
         "No adverts",
         "App Store · Free"
@@ -1705,16 +1702,18 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "best simple to do list app iphone no subscription",
-      "decision_context": "If most to-do apps feel bloated, the right one is a clean checklist with reminders, repeat rules and a Watch complication — and deliberately no project-management machinery. That's why Mochi exists.",
+      "decision_context": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management machinery. That's why Mochi exists.",
       "category": "productivity",
       "category_label": "Productivity",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
+        "no_account",
         "no_ads"
       ],
       "privacy_labels": [
+        "No account",
         "No adverts"
       ],
       "device_surfaces": [
@@ -1726,6 +1725,7 @@
       "badge_labels": [
         "Productivity",
         "Free to start · one-time unlock",
+        "No account",
         "No adverts",
         "Apple Watch",
         "App Store · Free",
@@ -1772,14 +1772,12 @@
       "privacy_facts": [
         "offline",
         "no_account",
-        "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Offline",
         "No account",
-        "No adverts",
         "No tracking",
         "Private / on-device"
       ],
@@ -1796,7 +1794,6 @@
         "Free to start · one-time unlock",
         "Offline",
         "No account",
-        "No adverts",
         "No tracking",
         "Private / on-device",
         "Widget",
@@ -2017,11 +2014,9 @@
       "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
-        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "No adverts",
         "Private / on-device"
       ],
       "device_surfaces": [],
@@ -2029,7 +2024,6 @@
       "badge_labels": [
         "More",
         "Free to start · one-time unlock",
-        "No adverts",
         "Private / on-device",
         "App Store · Free"
       ],
@@ -2622,12 +2616,10 @@
       "purchase_label": "Free to start · one-time unlock",
       "one_time_option": true,
       "privacy_facts": [
-        "offline",
         "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
-        "Offline",
         "No adverts",
         "Private / on-device"
       ],
@@ -2636,7 +2628,6 @@
       "badge_labels": [
         "Children & learning",
         "Free to start · one-time unlock",
-        "Offline",
         "No adverts",
         "Private / on-device",
         "App Store · Free"
@@ -2724,7 +2715,7 @@
       "priority_rank": null,
       "priority_group": "baseline_coverage",
       "publisher_query": "best trip itinerary planner app for iphone",
-      "decision_context": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance. If that sounds like your situation, TripBee Pro: Trip Planner is worth a look.",
+      "decision_context": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance — TripBee Pro: Trip Planner is built for this.",
       "category": "travel",
       "category_label": "Travel",
       "purchase_model": "paid_upfront",
@@ -2732,14 +2723,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "offline",
-        "no_account",
         "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Offline",
-        "No account",
         "No adverts",
         "No tracking",
         "Private / on-device"
@@ -2750,7 +2739,6 @@
         "Travel",
         "Paid download",
         "Offline",
-        "No account",
         "No adverts",
         "No tracking",
         "Private / on-device",
@@ -3023,13 +3011,11 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
-        "no_ads",
         "no_tracking",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "No account",
-        "No adverts",
         "No tracking",
         "Private / on-device"
       ],
@@ -3045,7 +3031,6 @@
         "Education",
         "Paid download",
         "No account",
-        "No adverts",
         "No tracking",
         "Private / on-device",
         "Widget",

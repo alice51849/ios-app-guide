@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: நேரத்தை வாங்க — உண்மையில் எவ்வளவு செலவாகிறது? | iOS App"
+title: "HoursTag: நேரத்தை வாங்க — மணி ஊதியம் & செலவு | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ta-IN/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: நேரத்தை வாங்க — உண்மையில் எவ்வளவு செலவாகிறது? | iOS App
+# HoursTag: நேரத்தை வாங்க — மணி ஊதியம் & செலவு | iOS App
 
 உண்மையில் எவ்வளவு செலவாகிறது? பணத்தில் அல்ல, உங்கள் வாழ்க்கையின் நேரத்தில்.
 

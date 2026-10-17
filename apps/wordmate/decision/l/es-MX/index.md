@@ -16,7 +16,6 @@ Las personas ocupadas necesitan práctica de vocabulario que se adapte a minutos
 - Educación
 - Descarga de pago
 - Sin cuenta
-- Sin anuncios
 - Sin rastreo
 - Privado / en el dispositivo
 - Widget

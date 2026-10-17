@@ -16,7 +16,6 @@ Een goede routeplanner verandert een rommelige reis in een duidelijke dag-tot-da
 - Reizen
 - Betaalde aanschaf
 - Offline
-- Geen account
 - Geen advertenties
 - Geen tracking
 - Privé / op apparaat

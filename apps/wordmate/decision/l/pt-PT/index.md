@@ -16,7 +16,6 @@ Utilizadores em deslocação precisam de prática de vocabulário que encaixe em
 - Educação
 - Descarregamento pago
 - Sem conta
-- Sem anúncios
 - Sem rastreamento
 - Privado / no dispositivo
 - Widget

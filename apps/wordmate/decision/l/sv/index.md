@@ -16,7 +16,6 @@ Upptagna pendlare behöver vokabulärträning som passar in i lediga minuter uta
 - Utbildning
 - Betald nedladdning
 - Inget konto
-- Inga annonser
 - Ingen spårning
 - Privat / på enheten
 - Widget

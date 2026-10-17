@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ — ਅਸਲ ਕੀਮਤ ਕੀ ਹੈ? | iOS App"
+title: "HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ — ਘੰਟੇ ਦੀ ਤਨਖਾਹ ਤੇ ਖਰਚ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/pa-IN/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ — ਅਸਲ ਕੀਮਤ ਕੀ ਹੈ? | iOS App
+# HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ — ਘੰਟੇ ਦੀ ਤਨਖਾਹ ਤੇ ਖਰਚ | iOS App
 
 ਅਸਲ ਕੀਮਤ ਕੀ ਹੈ? ਡਾਲਰਾਂ ਵਿੱਚ ਨਹੀਂ — ਤੁਹਾਡੇ ਜੀਵਨ ਦੇ ਘੰਟਿਆਂ ਵਿੱਚ।
 

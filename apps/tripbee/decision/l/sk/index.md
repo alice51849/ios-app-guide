@@ -16,7 +16,6 @@ Dobrá aplikácia na itinerár premení chaotickú cestu na jasný denný harmon
 - Cestovanie
 - Platené stiahnutie
 - Offline
-- Bez účtu
 - Bez reklám
 - Bez sledovania
 - Súkromné / v zariadení

@@ -6,7 +6,7 @@
   "name": "Katalog namjera pretraživanja izdavača Lumi Studio",
   "description": "Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.",
   "inLanguage": "hr",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-battai",
         "url": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Ocjena stanja baterije",
-        "description": "BattAI BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja.",
+        "description": "BattAI • BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja. • BattAI nema račun, telemetriju, oglase ni mrežne zahtjeve. Podaci ostaju na ovom uređaju, osim minimalnog ograničenog sažetka koji se izravno šalje uparenom Apple Watchu. Uzorkovanje je ograničeno, analiza se pokreće najviše svakih pet minuta, procjene koriste raspone, a podaci koji nedostaju ostaju prazni.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "hr",
-          "description": "BattAI BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja.",
+          "description": "BattAI • BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja. • BattAI nema račun, telemetriju, oglase ni mrežne zahtjeve. Podaci ostaju na ovom uređaju, osim minimalnog ograničenog sažetka koji se izravno šalje uparenom Apple Watchu. Uzorkovanje je ograničeno, analiza se pokreće najviše svakih pet minuta, procjene koriste raspone, a podaci koji nedostaju ostaju prazni.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-battai"
           },
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-mochi",
         "url": "https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima, pravilima ponavljanja i komplikacijom za Apple Watch — i namjerno bez upravljanja projektima. Upravo zato Mochi postoji.",
+        "description": "Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima i podrškom za Apple Watch — i namjerno bez upravljanja projektima. Upravo zato Mochi postoji.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "hr",
-          "description": "Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima, pravilima ponavljanja i komplikacijom za Apple Watch — i namjerno bez upravljanja projektima. Upravo zato Mochi postoji.",
+          "description": "Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima i podrškom za Apple Watch — i namjerno bez upravljanja projektima. Upravo zato Mochi postoji.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-mochi"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/hr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Skener kodova",
-        "description": "QR Code Halo zadržava promišljen redoslijed: pregledaj dekodirani sadržaj, procijeni prikazane nalaze i tek tada odaberi radnju. Prema zadanim postavkama",
+        "description": "QR Code Halo djeluje čim pročita kod. Skenirajte kamerom ili odaberite sliku: poveznice se otvaraju u pregledniku, kodovi za prijavu pristupnim ključem i",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "hr",
-          "description": "QR Code Halo zadržava promišljen redoslijed: pregledaj dekodirani sadržaj, procijeni prikazane nalaze i tek tada odaberi radnju. Prema zadanim postavkama",
+          "description": "QR Code Halo djeluje čim pročita kod. Skenirajte kamerom ili odaberite sliku: poveznice se otvaraju u pregledniku, kodovi za prijavu pristupnim ključem i",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Slike za osobnu",
         "description": "Trebate fotografiju točno određene veličine? Snapport Lite obrezuje vaš portret točno na odabranu veličinu, izravno na vašem uređaju. Snimite novu",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Slike za osobnu",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3187,7 +3187,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/hr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Pronađi stvarni problem. Svaki alat uključuje jednu besplatnu potpunu upotrebu. Neobavezno jednokratno doživotno otključavanje za neograničenu upotrebu—bez",
+        "description": "Pronađi stvarni problem. Bez kupnje možete ukupno jednom provesti potpunu provjeru bilo kojim alatom. Neobavezna jednokratna kupnja u aplikaciji otključava",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3217,7 +3217,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "hr",
-          "description": "Pronađi stvarni problem. Svaki alat uključuje jednu besplatnu potpunu upotrebu. Neobavezno jednokratno doživotno otključavanje za neograničenu upotrebu—bez",
+          "description": "Pronađi stvarni problem. Bez kupnje možete ukupno jednom provesti potpunu provjeru bilo kojim alatom. Neobavezna jednokratna kupnja u aplikaciji otključava",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wifiaidlite"
           },

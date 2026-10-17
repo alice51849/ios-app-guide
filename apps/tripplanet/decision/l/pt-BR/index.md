@@ -15,7 +15,6 @@ Pais viajando com crianças pequenas precisam de atividades que transformem arru
 
 - Infantil e aprendizado
 - Grátis para começar · desbloqueio único
-- Offline
 - Sem anúncios
 - Privado / no dispositivo
 - App Store · Grátis

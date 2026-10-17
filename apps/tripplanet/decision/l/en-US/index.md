@@ -15,7 +15,6 @@ Parents traveling with young children need activities that turn packing, waiting
 
 - Kids & learning
 - Free to start · one-time unlock
-- Offline
 - No ads
 - Private / on-device
 - App Store · Free

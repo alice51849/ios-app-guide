@@ -15,6 +15,7 @@ För ett barn som lär sig Zhuyin för första gången bör appen täcka alla 37
 
 - Barn & lärande
 - Gratis att börja · engångsupplåsning
+- Offline
 - Inget konto
 - Inga annonser
 - App Store · Gratis

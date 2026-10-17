@@ -16,7 +16,6 @@ En god rejseplanlægningsapp forvandler en rodet rejse til en klar dag-for-dag t
 - Rejse
 - Betalt download
 - Offline
-- Ingen konto
 - Ingen reklamer
 - Ingen sporing
 - Privat / på enheden

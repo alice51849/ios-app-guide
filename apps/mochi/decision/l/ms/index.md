@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # aplikasi senarai tugasan mudah terbaik iPhone tanpa langganan
 
-Jika kebanyakan aplikasi tugasan terasa berat, yang betul adalah senarai semak bersih dengan peringatan, peraturan ulangan dan komplikasi Watch — dan sengaja tanpa mesin pengurusan projek. Sebab itulah Mochi dibina.
+Jika kebanyakan aplikasi tugasan terasa berat, yang betul adalah senarai semak bersih dengan peringatan dan sokongan Apple Watch — dan sengaja tanpa mesin pengurusan projek. Sebab itulah Mochi dibina.
 
 - Produktiviti
 - Percuma untuk bermula · buka kunci sekali sahaja
+- Tiada akaun
 - Tiada iklan
 - Apple Watch
 - App Store · Percuma

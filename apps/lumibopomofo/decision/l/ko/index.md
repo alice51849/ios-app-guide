@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - 어린이 & 학습
 - 무료로 시작 · 한 번 결제로 잠금 해제
+- 오프라인
 - 계정 없음
 - 광고 없음
 - App Store · 무료

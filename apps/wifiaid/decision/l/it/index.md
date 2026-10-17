@@ -1,5 +1,5 @@
 ---
-title: "WiFi Aid: Trova guasti di rete — Diagnosi di rete affidabile | iOS App"
+title: "WiFi Aid: Trova guasti di rete — Diagnosi router, mesh e DNS | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/it/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# WiFi Aid: Trova guasti di rete — Diagnosi di rete affidabile | iOS App
+# WiFi Aid: Trova guasti di rete — Diagnosi router, mesh e DNS | iOS App
 
-Trova la causa probabile con verifiche indipendenti di percorsi, DNS, TCP, TLS, tempi e stabilità. Un acquisto iniziale, senza abbonamenti, pubblicità o tracciamento. • Avvia test — Test Wi-Fi e DNS in un tocco • Test profondo — Più prove e stabilità di rete • Testa un sito — Verifica se un sito o internet non funzionano • Prove — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connessione instabile — Variazione • Cronologia — Dati privati solo su questo dispositivo • Apple Watch — Avvia test • Widget · iPad — Connesso · Avvia test Nessun account, annuncio o tracciamento. Dati privati solo su questo dispositivo. Un solo acquisto iniziale su App Store. Nessun abbonamento.
+Trova la causa probabile con verifiche indipendenti di percorsi, DNS, TCP, TLS, tempi e stabilità. Un acquisto iniziale, senza abbonamenti, pubblicità o tracciamento. • Avvia test — Test Wi-Fi e DNS in un tocco • Test profondo — Più prove e stabilità di rete • Testa un sito — Verifica se un sito o internet non funzionano • Prove — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Connessione instabile — Variazione • Cronologia — Dati privati solo su questo dispositivo • Apple Watch — Avvia test • Widget · iPad — Connesso · Avvia test Nessun account, annuncio o tracciamento. Dati privati solo su questo dispositivo. Un solo acquisto iniziale su App Store. Nessun abbonamento. Ottimizzata per iPhone Duo.
 
 - Foto e utilità
 - Scaricamento a pagamento

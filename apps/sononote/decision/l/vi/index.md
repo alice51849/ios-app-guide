@@ -1,5 +1,5 @@
 ---
-title: "ứng dụng ghi chú giọng nói tốt nhất tóm tắt cuộc họp trên iPhone"
+title: "ứng dụng ghi âm tốt nhất tóm tắt cuộc họp trên iPhone"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/vi/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# ứng dụng ghi chú giọng nói tốt nhất tóm tắt cuộc họp trên iPhone
+# ứng dụng ghi âm tốt nhất tóm tắt cuộc họp trên iPhone
 
-Sau cuộc gọi bạn không muốn bản ghi thô — bạn muốn bản tóm tắt, các mục hành động và bản nháp theo dõi. Đúng khoảng trống đó là thứ Sono Note muốn lấp.
+Sau cuộc gọi bạn không muốn bản ghi thô — bạn muốn bản tóm tắt, các mục hành động và bản nháp theo dõi — Sono Note được thiết kế cho điều này.
 
 - Năng suất
 - Bắt đầu miễn phí · mở khóa một lần

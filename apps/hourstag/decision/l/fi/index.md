@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: Ostotunnit — Budjetti, menot & säästöt | iOS App"
+title: "HoursTag: Ostotunnit — Tuntipalkka ja menot | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/fi/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Ostotunnit — Budjetti, menot & säästöt | iOS App
+# HoursTag: Ostotunnit — Tuntipalkka ja menot | iOS App
 
 Mitä se oikeasti maksaa? Ei euroina – vaan elämäsi tunteina.
 

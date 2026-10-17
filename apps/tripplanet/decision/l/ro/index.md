@@ -15,7 +15,6 @@ Părinții care călătoresc cu copii mici au nevoie de activități care transf
 
 - Copii & învățare
 - Început gratuit
-- Offline
 - Fără reclame
 - Privat / pe dispozitiv
 - App Store · Gratuit

@@ -17,7 +17,6 @@ Ein Monatsbudget sagt einem Freelancer nicht, ob ein einzelnes Kundenprojekt wir
 - Kostenloser Einstieg · einmalige Freischaltung
 - Offline
 - Kein Konto
-- Keine Werbung
 - Kein Tracking
 - Privat / auf dem Gerät
 - Widget

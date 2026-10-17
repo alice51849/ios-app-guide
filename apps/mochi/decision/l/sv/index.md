@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # bästa enkla att-göra-lista-app på iPhone utan prenumeration
 
-Om de flesta att-göra-appar känns överlastade är rätt app en ren checklista med påminnelser, upprepningsregler och en Watch-komplikation – och medvetet utan projektledningsmaskineri. Det är därför Mochi finns.
+Om de flesta att-göra-appar känns överlastade är rätt app en ren checklista med påminnelser och stöd för Apple Watch – och medvetet utan projektledningsmaskineri. Det är därför Mochi finns.
 
 - Produktivitet
 - Gratis att börja · engångsupplåsning
+- Inget konto
 - Inga annonser
 - Apple Watch
 - App Store · Gratis

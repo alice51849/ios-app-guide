@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: സമയം വാങ്ങുക — വില എത്രയെന്ന് അറിയാമോ? | iOS App"
+title: "HoursTag: സമയം വാങ്ങുക — മണിക്കൂർ വേതനവും ചെലവും | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ml-IN/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: സമയം വാങ്ങുക — വില എത്രയെന്ന് അറിയാമോ? | iOS App
+# HoursTag: സമയം വാങ്ങുക — മണിക്കൂർ വേതനവും ചെലവും | iOS App
 
 വില എത്രയെന്ന് അറിയാമോ? ഡോളറുകളിൽ അല്ല, നിങ്ങളുടെ ജീവിതത്തിലെ മണിക്കൂറുകളിൽ.
 

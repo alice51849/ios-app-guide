@@ -16,7 +16,6 @@ Người đi làm bận rộn cần luyện tập từ vựng phù hợp thời 
 - Giáo dục
 - Tải xuống trả phí
 - Không tài khoản
-- Không quảng cáo
 - Không theo dõi
 - Riêng tư / trên thiết bị
 - Tiện ích

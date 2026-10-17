@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - Trẻ em & học tập
 - Bắt đầu miễn phí · mở khóa một lần
+- Ngoại tuyến
 - Không tài khoản
 - Không quảng cáo
 - App Store · Miễn phí

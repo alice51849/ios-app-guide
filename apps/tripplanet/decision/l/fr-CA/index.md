@@ -15,7 +15,6 @@ Les parents qui voyagent avec de jeunes enfants ont besoin d’activités qui tr
 
 - Enfants et apprentissage
 - Gratuit au départ · déblocage unique
-- Hors ligne
 - Aucune publicité
 - Privé / sur l'appareil
 - App Store · Gratuit

@@ -15,7 +15,6 @@ QR Code Halo — QR Code Halo 以「檢查、判斷、行動」為核心。免�
 
 - 更多
 - 免費開始 · 一次性解鎖
-- 無廣告
 - 隱私優先／裝置端
 - App Store · 免費
 

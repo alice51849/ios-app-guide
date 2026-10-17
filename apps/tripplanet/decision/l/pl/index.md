@@ -15,7 +15,6 @@ Rodzice podróżujący z małymi dziećmi potrzebują aktywności, które zamien
 
 - Dzieci i nauka
 - Darmowe na start · jednorazowe odblokowanie
-- Offline
 - Bez reklam
 - Prywatne / na urządzeniu
 - App Store · Bezpłatnie

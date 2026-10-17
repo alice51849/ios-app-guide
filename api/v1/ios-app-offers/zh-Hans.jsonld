@@ -6,7 +6,7 @@
   "name": "Lumi Studio 开发者搜索意图目录",
   "description": "第一方目录，说明每款 App 的适用人群、想完成的任务以及直达 App Store 的下载入口。",
   "inLanguage": "zh-Hans",
-  "dateModified": "2026-10-16",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-battai",
         "url": "https://apps.apple.com/cn/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: 电池健康评分",
-        "description": "BattAI BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。",
+        "description": "BattAI • BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。 • BattAI 没有账户、遥测、广告或网络请求。数据留在这台设备上，只会把功能受限的最小快照直接发给已配对的 Apple Watch。取样频率受限，分析最快每 5 分钟一次；估算使用区间，缺失数据保持缺失。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "zh-Hans",
-          "description": "BattAI BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。",
+          "description": "BattAI • BattAI 只使用公开 iOS API 提供的五项数据：电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。 • BattAI 没有账户、遥测、广告或网络请求。数据留在这台设备上，只会把功能受限的最小快照直接发给已配对的 Apple Watch。取样频率受限，分析最快每 5 分钟一次；估算使用区间，缺失数据保持缺失。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-battai"
           },
@@ -1759,7 +1759,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-mochi",
         "url": "https://apps.apple.com/cn/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "如果大多数待办应用感觉臃肿，合适的就是带提醒、重复规则和 Watch 复杂功能的干净清单——且刻意无项目管理功能。所以才有了 Mochi。",
+        "description": "如果大多数待办应用感觉臃肿，合适的就是带提醒和 Apple Watch 支持的干净清单——且刻意无项目管理功能。所以才有了 Mochi。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1789,7 +1789,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "zh-Hans",
-          "description": "如果大多数待办应用感觉臃肿，合适的就是带提醒、重复规则和 Watch 复杂功能的干净清单——且刻意无项目管理功能。所以才有了 Mochi。",
+          "description": "如果大多数待办应用感觉臃肿，合适的就是带提醒和 Apple Watch 支持的干净清单——且刻意无项目管理功能。所以才有了 Mochi。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-mochi"
           },
@@ -2155,7 +2155,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/cn/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo：安全扫码与制作",
-        "description": "默认扫描后会自动执行；到设置关闭“扫描后自动执行”即可先检查，在历史记录中点按“安全检查”。它遵循检查、判断、行动的顺序，让你先看清内容、风险依据和可执行范围，再决定下一步。",
+        "description": "QR Code Halo 扫到就直接执行。用相机扫描或选择照片：网址直接在浏览器中打开，通行密钥登录码和 App 链接直接交给 iOS，Wi-Fi 码会弹出 iOS 的加入网络提示，电话、短信、邮件和地点则交给相应的 App。联系人和日程会打开 iOS",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2185,7 +2185,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "zh-Hans",
-          "description": "默认扫描后会自动执行；到设置关闭“扫描后自动执行”即可先检查，在历史记录中点按“安全检查”。它遵循检查、判断、行动的顺序，让你先看清内容、风险依据和可执行范围，再决定下一步。",
+          "description": "QR Code Halo 扫到就直接执行。用相机扫描或选择照片：网址直接在浏览器中打开，通行密钥登录码和 App 链接直接交给 iOS，Wi-Fi 码会弹出 iOS 的加入网络提示，电话、短信、邮件和地点则交给相应的 App。联系人和日程会打开 iOS",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-qrcodehalo"
           },
@@ -2550,7 +2550,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/cn/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite：在家拍证件照",
         "description": "需要特定尺寸的照片吗？Snapport Lite 直接在你的设备上，把人像照片精准裁剪成你选择的尺寸。拍一张新照片或从相册中选择，按照指引对齐脸部、整理背景，即可导出。",
         "seller": {
           "@type": "Organization",
@@ -2566,7 +2566,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite：在家拍证件照",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/cn/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -3130,7 +3130,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hans.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
-        "name": "WiFi Aid Lite",
+        "name": "WiFi Aid Lite：网络故障检测",
         "description": "“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测 DNS、TCP、TLS、响应时间与稳定性,交叉比对各项证据,告诉你最可能的故障原因,不必再瞎猜、重启碰运气。",
         "seller": {
           "@type": "Organization",
@@ -3146,7 +3146,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6793414462"
           },
-          "name": "WiFi Aid Lite",
+          "name": "WiFi Aid Lite：网络故障检测",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",

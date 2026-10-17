@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: Hodiny na nákup — Rozpočet, výdaje a úspory | iOS App"
+title: "HoursTag: Hodiny na nákup — Hodinová mzda a výdaje | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/cs/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: Hodiny na nákup — Rozpočet, výdaje a úspory | iOS App
+# HoursTag: Hodiny na nákup — Hodinová mzda a výdaje | iOS App
 
 Kolik to opravdu stojí? Ne v korunách, ale v hodinách vašeho života.
 

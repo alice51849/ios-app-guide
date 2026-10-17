@@ -15,6 +15,7 @@ publisher: "Lumi Studio"
 
 - 兒童與學習
 - 免費開始 · 一次性解鎖
+- 離線使用
 - 免帳號
 - 無廣告
 - App Store · 免費

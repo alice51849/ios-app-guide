@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # iPhone için aboneliksiz en iyi basit yapılacaklar listesi uygulaması
 
-Çoğu yapılacaklar uygulaması şişkin hissediyorsa, doğru olanı hatırlatıcılar, tekrar kuralları ve Watch komplikasyonu ile temiz bir kontrol listesidir — ve kasıtlı olarak proje yönetimi mekanizması yoktur. İşte Mochi bu yüzden ortaya çıktı.
+Çoğu yapılacaklar uygulaması şişkin hissediyorsa, doğru olanı hatırlatıcılar ve Apple Watch desteği ile temiz bir kontrol listesidir — ve kasıtlı olarak proje yönetimi mekanizması yoktur. İşte Mochi bu yüzden ortaya çıktı.
 
 - Verimlilik
 - Başlangıçta ücretsiz · tek seferlik açma
+- Hesap yok
 - Reklam yok
 - Apple Watch
 - App Store · Ücretsiz

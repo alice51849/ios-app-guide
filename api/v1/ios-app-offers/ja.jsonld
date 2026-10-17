@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開発元検索意図カタログ",
   "description": "各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。",
   "inLanguage": "ja",
-  "dateModified": "2026-10-16",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -18,7 +18,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-notesstudio100",
         "url": "https://apps.apple.com/jp/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
-        "name": "100 Notes Studio: Pen & Paper",
+        "name": "100 Notes Studio：手書きノート",
         "description": "手書き、キーボード入力、PDFへの書き込み、ページに残す録音、暗記学習を、整理されたオフライン環境にまとめられます。100 Notes Studioはタブレットとスマートフォンの両方に合わせて設計されています。",
         "seller": {
           "@type": "Organization",
@@ -34,7 +34,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6798813048"
           },
-          "name": "100 Notes Studio: Pen & Paper",
+          "name": "100 Notes Studio：手書きノート",
           "operatingSystem": "iOS",
           "applicationCategory": "BusinessApplication",
           "url": "https://apps.apple.com/jp/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/jp/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
         "name": "LockHour Pro",
-        "description": "試験中は意志力ではなく、強制的な時間制限ブロックが必要です。だからLockHour Proを作りました。",
+        "description": "試験中は意志力ではなく、強制的な時間制限ブロックが必要です。— LockHour Proはそれを実現します。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "ja",
-          "description": "試験中は意志力ではなく、強制的な時間制限ブロックが必要です。だからLockHour Proを作りました。",
+          "description": "試験中は意志力ではなく、強制的な時間制限ブロックが必要です。— LockHour Proはそれを実現します。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-lockhour"
           },
@@ -1735,7 +1735,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-mochi",
         "url": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "多くのToDoアプリが重く感じるなら、リマインダー、繰り返しルール、Watchコンプリケーションを備えたクリーンなチェックリストで。だからMochiを作りました。",
+        "description": "多くのToDoアプリが重く感じるなら、リマインダーとApple Watch対応を備えたクリーンなチェックリストで。だからMochiを作りました。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1765,7 +1765,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "ja",
-          "description": "多くのToDoアプリが重く感じるなら、リマインダー、繰り返しルール、Watchコンプリケーションを備えたクリーンなチェックリストで。だからMochiを作りました。",
+          "description": "多くのToDoアプリが重く感じるなら、リマインダーとApple Watch対応を備えたクリーンなチェックリストで。だからMochiを作りました。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-mochi"
           },
@@ -2526,7 +2526,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite：自宅で証明写真",
         "description": "決まったサイズの写真が必要なときに。Snapport Lite は、お使いのデバイス上で顔写真を選んだサイズにぴったりトリミングします。新しく撮影するかライブラリから選び、ガイドに合わせて顔の位置を整え、背景を整えたら書き出すだけです。",
         "seller": {
           "@type": "Organization",
@@ -2542,7 +2542,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite：自宅で証明写真",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2593,7 +2593,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-sononote",
         "url": "https://apps.apple.com/jp/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
         "name": "Sono Note",
-        "description": "通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです。その隙間を埋めるためにSono Noteを作りました。",
+        "description": "通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです—Sono Noteはこれを念頭に作られています。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2623,7 +2623,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "ja",
-          "description": "通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです。その隙間を埋めるためにSono Noteを作りました。",
+          "description": "通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです—Sono Noteはこれを念頭に作られています。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-sononote"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
         "name": "TripBee Pro: 旅行プランナー",
-        "description": "優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムラインに整理し、フライト、ホテル、アクティビティ、レストラン、交通機関を種類別アイコンで一目で確認できるようにします。心当たりがあるなら、TripBee Pro: 旅行プランナーを試してみてください。",
+        "description": "優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムラインに整理し、フライト、ホテル、アクティビティ、レストラン、交通機関を種類別アイコンで一目で確認できるようにします — TripBee Pro: Trip Planner はこのために作られています。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "ja",
-          "description": "優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムラインに整理し、フライト、ホテル、アクティビティ、レストラン、交通機関を種類別アイコンで一目で確認できるようにします。心当たりがあるなら、TripBee Pro: 旅行プランナーを試してみてください。",
+          "description": "優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムラインに整理し、フライト、ホテル、アクティビティ、レストラン、交通機関を種類別アイコンで一目で確認できるようにします — TripBee Pro: Trip Planner はこのために作られています。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-tripbee"
           },
@@ -3450,7 +3450,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-lumiweather",
         "url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
-        "name": "ルミのおてんき星 おでかけ指数",
+        "name": "ルミのおてんき星：天気予報・今日の服装",
         "description": "今出かけるのにちょうどいいか、何を着ればいいか、傘や日焼け止めが必要かが、ひと目でわかる天気アプリです。",
         "seller": {
           "@type": "Organization",
@@ -3466,7 +3466,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6779552704"
           },
-          "name": "ルミのおてんき星 おでかけ指数",
+          "name": "ルミのおてんき星：天気予報・今日の服装",
           "operatingSystem": "iOS",
           "applicationCategory": "EducationalApplication",
           "url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",

@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # najboljša preprosta aplikacija za seznam opravil na iPhonu brez naročnine
 
-Če se vam večina aplikacij za opravila zdi preveč zapletenih, je prava izbira čist kontrolni seznam z opomniki, ponavljanjem in komplikacijo za Apple Watch — in namerno brez upravljanja projektov. Prav zato Mochi obstaja.
+Če se vam večina aplikacij za opravila zdi preveč zapletenih, je prava izbira čist kontrolni seznam z opomniki in podporo za Apple Watch — in namerno brez upravljanja projektov. Prav zato Mochi obstaja.
 
 - Produktivnost
 - Brezplačen začetek
+- Brez računa
 - Brez oglasov
 - Apple Watch
 - App Store · Brezplačno

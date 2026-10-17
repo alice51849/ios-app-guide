@@ -15,7 +15,6 @@ Starši, ki potujejo z mlajšimi otroki, potrebujejo aktivnosti, ki pakiranje, �
 
 - Otroci in učenje
 - Brezplačen začetek
-- Brez povezave
 - Brez oglasov
 - Zasebno / na napravi
 - App Store · Brezplačno

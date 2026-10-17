@@ -1,5 +1,5 @@
 ---
-title: "HoursTag Lite: Precio en horas — El precio real de las cosas | iOS App"
+title: "HoursTag Lite: Precio en horas — Compra consciente: precio real | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/es-MX/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite: Precio en horas — El precio real de las cosas | iOS App
+# HoursTag Lite: Precio en horas — Compra consciente: precio real | iOS App
 
-HoursTag Lite - El precio real de las cosas Cada compra cuesta horas de tu vida. HoursTag Lite convierte los precios en tiempo de trabajo, para que gastes con claridad. Conoce tu prisma de valor - Costo en tiempo: Tu valor neto por hora trabajada - Tipo: Necesidad - Deseo - Impulso - Tu patrón de valor - Análisis completo de valor - ¿Cuánto cuesta una meta?: Ve el trabajo detrás de una meta y sigue tu progreso. - Copia y restauración: Incluye ingresos, gastos, metas y preferencias. - Widget - Apple Watch Todo se queda en tu dispositivo. Sin cuenta, sin rastreo. Un solo pago · Acceso de por vida · Sin suscripción Decisiones y ediciones ilimitadas Metas y progreso ilimitados Compartir, análisis y respaldos
+HoursTag Lite - El precio real de las cosas Cada compra cuesta horas de tu vida. HoursTag Lite convierte los precios en tiempo de trabajo, para que gastes con claridad. Conoce tu prisma de valor - Costo en tiempo: Tu valor neto por hora trabajada - Tipo: Necesidad - Deseo - Impulso - Tu patrón de valor - Análisis completo de valor - ¿Cuánto cuesta una meta?: Ve el trabajo detrás de una meta y sigue tu progreso. - Copia y restauración: Incluye ingresos, gastos, metas y preferencias. - Widget - Apple Watch Todo se queda en tu dispositivo. Sin cuenta, sin rastreo. Un solo pago · Acceso de por vida · Sin suscripción Decisiones y ediciones ilimitadas Metas y progreso ilimitados Compartir, análisis y respaldos Optimizada para el iPhone Duo.
 
 - Dinero y viajes
 - Gratis para empezar · desbloqueo único

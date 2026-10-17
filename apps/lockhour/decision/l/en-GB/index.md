@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best app to block social media while studying iphone
 
-During exams, willpower isn't the tool — a hard timed block is. That's why LockHour Pro exists.
+During exams, willpower isn't the tool — a hard timed block is — LockHour Pro is built for this.
 
 - Productivity
 - Free to start · one-time unlock

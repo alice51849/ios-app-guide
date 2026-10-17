@@ -16,7 +16,6 @@ Az elfoglalt ingázóknak olyan szókincs gyakorlás kell, ami belefér a szabad
 - Oktatás
 - Fizetős letöltés
 - Nincs fiók
-- Nincs reklám
 - Nincs követés
 - Privát / eszközön tárolt
 - Widget

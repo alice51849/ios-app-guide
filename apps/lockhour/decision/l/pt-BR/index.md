@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # melhor app para bloquear redes sociais enquanto estuda no iPhone
 
-Durante provas, força de vontade não é a ferramenta — um bloqueio rígido temporizado é. É por isso que o LockHour Pro existe.
+Durante provas, força de vontade não é a ferramenta — um bloqueio rígido temporizado é — LockHour Pro foi feito para isso.
 
 - Produtividade
 - Grátis para começar · desbloqueio único
@@ -21,7 +21,7 @@ Durante provas, força de vontade não é a ferramenta — um bloqueio rígido t
 - Privado / no dispositivo
 - App Store · Grátis
 
-[Baixe o LockHour Pro na App Store →](https://apps.apple.com/br/app/id6780107485?pt=118326163&ct=geo_pick&mt=8)
+[Baixar LockHour Pro na App Store →](https://apps.apple.com/br/app/id6780107485?pt=118326163&ct=geo_pick&mt=8)
 
 [Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-BR/answers/best-app-to-block-social-media-while-studying-iphone.html)
 

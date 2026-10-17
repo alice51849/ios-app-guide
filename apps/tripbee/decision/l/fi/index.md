@@ -16,7 +16,6 @@ Hyvä aikataulusovellus muuttaa sekavan matkan selkeäksi päiväkohtaiseksi aik
 - Matkailu
 - Maksullinen lataus
 - Offline
-- Ei tiliä
 - Ei mainoksia
 - Ei seurantaa
 - Yksityinen / laitteella

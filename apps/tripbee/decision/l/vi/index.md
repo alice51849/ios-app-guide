@@ -16,7 +16,6 @@ Một ứng dụng lịch trình tốt biến chuyến đi lộn xộn thành d�
 - Du lịch
 - Tải xuống trả phí
 - Ngoại tuyến
-- Không tài khoản
 - Không quảng cáo
 - Không theo dõi
 - Riêng tư / trên thiết bị

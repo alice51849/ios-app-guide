@@ -5,7 +5,7 @@
   "creative_count": 53,
   "current_inventory": {
     "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "5fecc2453712c24cc7fe7348cf2880f3cf4769f159af68a5b38cbb37071905f8",
+    "copy_sha256": "e2a325de4792fc09308fee73a2cfb5e455058ed4b1bbc060ab0274ad9f5c8786",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 53
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "2f981512ec85a39826705cd8a9dac946aacf0fb1076faf3f4389aa8cd4d2359e",
+      "generated_sha256": "0928467d5e5ec2b9bf64700659da7c9aec104eb6e2063978d7395acb95dd6ab4",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "5b4b8c553957f894dd5d08ba8eba5f57cfb4950b66d77bd39c997f709c41ed22",
+      "generated_sha256": "06b5850858faceda903adc558571bed1881972c09d314daaf2bee9eeaff4b219",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -39,7 +39,7 @@
       "relative_path": "de-DE/decide/mochidonestamp/remember-when-household-task-was-done.html"
     },
     {
-      "generated_sha256": "7acbfc141a31d7ae552ca4cf4a3df031cc05f3a7c2da4dfbf35ec455c66222bd",
+      "generated_sha256": "df1e26e7311b2a5e4c40a3e61528e4521edfa6379adb6f35ec99f7a2b9f22372",
       "kind": "route_html",
       "relative_path": "en-US/decide/aibriefpack/organize-source-context-before-ai.html"
     },
@@ -124,7 +124,7 @@
       "relative_path": "en-US/decide/lockhour/stop-social-apps-during-study-blocks.html"
     },
     {
-      "generated_sha256": "c84d45e9fa3973a5857398fda6d7b0eceb28fe3fbe26618c1055549f389af784",
+      "generated_sha256": "01f02b3311d96c6a0c5385f628d68f68b37780fcfd018fbde4dc6b03d11fc1e2",
       "kind": "route_html",
       "relative_path": "en-US/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html"
     },
@@ -209,7 +209,7 @@
       "relative_path": "en-US/decide/picclear/recover-storage-from-photo-clutter.html"
     },
     {
-      "generated_sha256": "0f68ca0beb05c88b4bff9e38e6560e25e18bf3ed9bfdf85b9365962dede9cee4",
+      "generated_sha256": "e5ace3d309a36af180c4db26ea6a5c58901813dc16691f6b3a10b522db64e60c",
       "kind": "route_html",
       "relative_path": "en-US/decide/qrcodehalo/qr-scanner-that-shows-the-full-link-before-opening.html"
     },
@@ -259,7 +259,7 @@
       "relative_path": "en-US/decide/studydown/focus-timer-that-stops-when-you-pick-up-your-phone.html"
     },
     {
-      "generated_sha256": "71fda9f634c6de2f67fe0d4f6a7ce91bd8c81f7dcd656180d49443404f913ded",
+      "generated_sha256": "cdd046fff1e1d9660c90142317bc9a9355c81cd351db428336f9bbc82c81f200",
       "kind": "route_html",
       "relative_path": "en-US/decide/tripbee/private-offline-family-trip-plan.html"
     },
@@ -289,7 +289,7 @@
       "relative_path": "en-US/decide/wifiaidlite/free-check-wifi-versus-website.html"
     },
     {
-      "generated_sha256": "9be6f9a5a6749481abddc24b46ad307edf065746289c6d78f9e9794cbf355c2b",
+      "generated_sha256": "bcc3d5f35d7bcdf0487807529f7d37d3d5cb047f1ddc9909eeec720059a28155",
       "kind": "route_html",
       "relative_path": "en-US/decide/wordmate/vocabulary-on-widget-and-watch.html"
     },
@@ -372,14 +372,14 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "5fecc2453712c24cc7fe7348cf2880f3cf4769f159af68a5b38cbb37071905f8",
+    "copy_sha256": "e2a325de4792fc09308fee73a2cfb5e455058ed4b1bbc060ab0274ad9f5c8786",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 53,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "9814a9f91b5cf4e198b4e19c8a4b27e0f81fd819dedb836639e2e5e8e6eedf23",
+  "manifest_digest": "a31af606ef6bee90b045f2c14540c879a8e37299cf8752df2ff231e5767aece1",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "65146dc15e36e9ee111d26b33e33ca599acfafc1776f1c785f89dc909980f317",
+  "release_contract_digest": "36dfb28faff5fe6c872d9acb698f0435125d4748310474bc0a0964ce0d6b051e",
   "release_state": "exact",
   "route_count": 66,
   "routes": [
@@ -410,8 +410,8 @@
       "creative_id": "aibriefpack:organize-source-context-before-ai:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "7acbfc141a31d7ae552ca4cf4a3df031cc05f3a7c2da4dfbf35ec455c66222bd",
-      "record_digest": "9f82cd8cc9e183f7305e1c608304e0661f92291f40a0b6e3194775eac3791b6e",
+      "output_sha256": "df1e26e7311b2a5e4c40a3e61528e4521edfa6379adb6f35ec99f7a2b9f22372",
+      "record_digest": "7167c1c911e677df3a8bb63f68d82e13ef812f2076c40aa3d7e53a877cec7294",
       "relative_path": "en-US/decide/aibriefpack/organize-source-context-before-ai.html",
       "route_id": "en-US:aibriefpack:organize-source-context-before-ai",
       "route_slug": "organize-source-context-before-ai",
@@ -699,8 +699,8 @@
       "creative_id": "lumibopomofo:gentle-zhuyin-practice-for-bilingual-child:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "c84d45e9fa3973a5857398fda6d7b0eceb28fe3fbe26618c1055549f389af784",
-      "record_digest": "6235263172bada7db8b0e81bf0e8e9223911e32f217199ceb85f171d533ac866",
+      "output_sha256": "01f02b3311d96c6a0c5385f628d68f68b37780fcfd018fbde4dc6b03d11fc1e2",
+      "record_digest": "1d08ea7ef1e9614d2f9a2a4ce5ee9b68a7cc6f84fb5b2ceb8a3faedb93758144",
       "relative_path": "en-US/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html",
       "route_id": "en-US:lumibopomofo:gentle-zhuyin-practice-for-bilingual-child",
       "route_slug": "gentle-zhuyin-practice-for-bilingual-child",
@@ -988,7 +988,7 @@
       "creative_id": "qrcodehalo:qr-scanner-that-shows-the-full-link-before-opening:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "0f68ca0beb05c88b4bff9e38e6560e25e18bf3ed9bfdf85b9365962dede9cee4",
+      "output_sha256": "e5ace3d309a36af180c4db26ea6a5c58901813dc16691f6b3a10b522db64e60c",
       "record_digest": "ec3ed3de4af19587449fb077e724296fdc141f228bd0ad5a7d9ad6ca6ceee275",
       "relative_path": "en-US/decide/qrcodehalo/qr-scanner-that-shows-the-full-link-before-opening.html",
       "route_id": "en-US:qrcodehalo:qr-scanner-that-shows-the-full-link-before-opening",
@@ -1158,8 +1158,8 @@
       "creative_id": "tripbee:private-offline-family-trip-plan:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "71fda9f634c6de2f67fe0d4f6a7ce91bd8c81f7dcd656180d49443404f913ded",
-      "record_digest": "93b9e400ad9d2e26511bc78dae7d0ed609bcbdaf73201e0579897c50510b3cd5",
+      "output_sha256": "cdd046fff1e1d9660c90142317bc9a9355c81cd351db428336f9bbc82c81f200",
+      "record_digest": "38b90cbbae38146a062b9f3dee67aab78d5aee5ac029e05fb04bc05f9c5d1e1b",
       "relative_path": "en-US/decide/tripbee/private-offline-family-trip-plan.html",
       "route_id": "en-US:tripbee:private-offline-family-trip-plan",
       "route_slug": "private-offline-family-trip-plan",
@@ -1260,8 +1260,8 @@
       "creative_id": "wordmate:vocabulary-on-widget-and-watch:privacy_pay_once",
       "intent_type": "privacy_pay_once",
       "locale": "en-US",
-      "output_sha256": "9be6f9a5a6749481abddc24b46ad307edf065746289c6d78f9e9794cbf355c2b",
-      "record_digest": "53969ed33d451335c1f11b9defa9c23ddc2868347d62dbdc8607c99c7c9a0914",
+      "output_sha256": "bcc3d5f35d7bcdf0487807529f7d37d3d5cb047f1ddc9909eeec720059a28155",
+      "record_digest": "dc4aac7c1e734a10ef37be97233c3054bd250442e456826d19730081bf81dfdb",
       "relative_path": "en-US/decide/wordmate/vocabulary-on-widget-and-watch.html",
       "route_id": "en-US:wordmate:vocabulary-on-widget-and-watch",
       "route_slug": "vocabulary-on-widget-and-watch",
@@ -1508,5 +1508,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "0bd3515a7ffc9a165e9216447588efd40edfae99e9db1c6abbabb837f873269f"
+  "source_contract_digest": "de15273c1f96b91be208d481fb2ee7c0e488c144ffc1d14cedb6b5b53fa65b8a"
 }

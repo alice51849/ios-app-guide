@@ -16,7 +16,6 @@ I pendolari hanno bisogno di pratica vocabolario che si adatti ai minuti liberi 
 - Istruzione
 - Scaricamento a pagamento
 - Nessun account
-- Nessuna pubblicità
 - Nessun tracciamento
 - Privato / su dispositivo
 - Widget

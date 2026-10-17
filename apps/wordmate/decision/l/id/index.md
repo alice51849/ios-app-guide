@@ -16,7 +16,6 @@ Komuter sibuk butuh latihan kosakata yang bisa masuk di waktu luang tanpa perlu 
 - Pendidikan
 - Unduhan berbayar
 - Tanpa akun
-- Tanpa iklan
 - Tanpa pelacakan
 - Privat / di perangkat
 - Widget

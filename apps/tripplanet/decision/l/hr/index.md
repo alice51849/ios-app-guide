@@ -15,7 +15,6 @@ Roditeljima koji putuju s malom djecom trebaju aktivnosti koje pakiranje, čekan
 
 - Djeca i učenje
 - Besplatno za početak
-- Izvan mreže
 - Bez oglasa
 - Privatno / na uređaju
 - App Store · Besplatno

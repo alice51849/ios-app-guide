@@ -6,7 +6,7 @@
   "name": "Catálogo de intenções de busca da publicadora Lumi Studio",
   "description": "Um catálogo publicado diretamente pela desenvolvedora que mostra para quem cada app foi criado, a tarefa que a pessoa quer concluir e o acesso direto à App Store.",
   "inLanguage": "pt-BR",
-  "dateModified": "2026-10-16",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -217,7 +217,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-battai",
         "url": "https://apps.apple.com/br/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
         "name": "BattAI: Saúde da bateria",
-        "description": "BattAI O BattAI usa cinco dados das APIs públicas do iOS: nível da bateria, estado da carga, Pouca Energia, estado térmico do aparelho inteiro e hora. Os outros resultados são calculados com essas leituras ou adicionados por você. Cada dado mostra fonte e limites.",
+        "description": "BattAI • O BattAI usa cinco dados das APIs públicas do iOS: nível da bateria, estado da carga, Pouca Energia, estado térmico do aparelho inteiro e hora. Os outros resultados são calculados com essas leituras ou adicionados por você. Cada dado mostra fonte e limites. • O BattAI não tem conta, telemetria, anúncios nem acesso à internet. Os dados ficam no aparelho, exceto por um resumo mínimo e limitado aos recursos enviado diretamente ao Apple Watch emparelhado. A amostragem é limitada, a análise roda no máximo a cada cinco minutos, estimativas usam faixas e dados ausentes continuam ausentes.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -247,7 +247,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6802423998",
           "inLanguage": "pt-BR",
-          "description": "BattAI O BattAI usa cinco dados das APIs públicas do iOS: nível da bateria, estado da carga, Pouca Energia, estado térmico do aparelho inteiro e hora. Os outros resultados são calculados com essas leituras ou adicionados por você. Cada dado mostra fonte e limites.",
+          "description": "BattAI • O BattAI usa cinco dados das APIs públicas do iOS: nível da bateria, estado da carga, Pouca Energia, estado térmico do aparelho inteiro e hora. Os outros resultados são calculados com essas leituras ou adicionados por você. Cada dado mostra fonte e limites. • O BattAI não tem conta, telemetria, anúncios nem acesso à internet. Os dados ficam no aparelho, exceto por um resumo mínimo e limitado aos recursos enviado diretamente ao Apple Watch emparelhado. A amostragem é limitada, a análise roda no máximo a cada cinco minutos, estimativas usam faixas e dados ausentes continuam ausentes.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-battai"
           },
@@ -811,7 +811,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/br/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite",
-        "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
+        "description": "Um teste gratuito útil de gastos de viagem deve incluir todo o fluxo da moeda local para a sua moeda, não só um livro-caixa vazio que só serve depois da compra. G+Money Lite — controle inteligente de câmbio e gastos de viagem — registre cada gasto e veja-o na sua moeda.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -841,7 +841,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "pt-BR",
-          "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
+          "description": "Um teste gratuito útil de gastos de viagem deve incluir todo o fluxo da moeda local para a sua moeda, não só um livro-caixa vazio que só serve depois da compra. G+Money Lite — controle inteligente de câmbio e gastos de viagem — registre cada gasto e veja-o na sua moeda.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/br/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
         "name": "LockHour Pro",
-        "description": "Durante provas, força de vontade não é a ferramenta — um bloqueio rígido temporizado é. É por isso que o LockHour Pro existe.",
+        "description": "Durante provas, força de vontade não é a ferramenta — um bloqueio rígido temporizado é — LockHour Pro foi feito para isso.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "pt-BR",
-          "description": "Durante provas, força de vontade não é a ferramenta — um bloqueio rígido temporizado é. É por isso que o LockHour Pro existe.",
+          "description": "Durante provas, força de vontade não é a ferramenta — um bloqueio rígido temporizado é — LockHour Pro foi feito para isso.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-lockhour"
           },
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-mochi",
         "url": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "Se a maioria dos apps de tarefas parece inchada, o ideal é uma lista limpa com lembretes, regras de repetição e complicação para Watch — e propositalmente sem recursos de gerenciamento de projetos. É por isso que o Mochi existe.",
+        "description": "Se a maioria dos apps de tarefas parece inchada, o ideal é uma lista limpa com lembretes e suporte ao Apple Watch — e propositalmente sem recursos de gerenciamento de projetos. É por isso que o Mochi existe.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "pt-BR",
-          "description": "Se a maioria dos apps de tarefas parece inchada, o ideal é uma lista limpa com lembretes, regras de repetição e complicação para Watch — e propositalmente sem recursos de gerenciamento de projetos. É por isso que o Mochi existe.",
+          "description": "Se a maioria dos apps de tarefas parece inchada, o ideal é uma lista limpa com lembretes e suporte ao Apple Watch — e propositalmente sem recursos de gerenciamento de projetos. É por isso que o Mochi existe.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-mochi"
           },
@@ -2197,7 +2197,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-qrcodehalo",
         "url": "https://apps.apple.com/br/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
         "name": "QR Code Halo: Escanear e Criar",
-        "description": "O QR Code Halo coloca você no controle: confira o conteúdo, avalie os sinais exibidos e só então escolha uma ação. Por padrão, a ação é executada logo após",
+        "description": "O QR Code Halo age no instante em que lê um código. Escaneie com a câmera ou escolha uma foto: links abrem no seu navegador, códigos de login com",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2227,7 +2227,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6806779853",
           "inLanguage": "pt-BR",
-          "description": "O QR Code Halo coloca você no controle: confira o conteúdo, avalie os sinais exibidos e só então escolha uma ação. Por padrão, a ação é executada logo após",
+          "description": "O QR Code Halo age no instante em que lê um código. Escaneie com a câmera ou escolha uma foto: links abrem no seu navegador, códigos de login com",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-qrcodehalo"
           },
@@ -2592,7 +2592,7 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-snapportlite",
         "url": "https://apps.apple.com/br/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
-        "name": "Snapport Lite",
+        "name": "Snapport Lite: Faça foto 3x4",
         "description": "Precisa de uma foto em um tamanho específico? O Snapport Lite recorta o seu retrato exatamente no tamanho escolhido, direto no seu dispositivo. Tire uma",
         "seller": {
           "@type": "Organization",
@@ -2608,7 +2608,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6792856304"
           },
-          "name": "Snapport Lite",
+          "name": "Snapport Lite: Faça foto 3x4",
           "operatingSystem": "iOS",
           "applicationCategory": "PhotographyApplication",
           "url": "https://apps.apple.com/br/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-sononote",
         "url": "https://apps.apple.com/br/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
         "name": "Sono Note",
-        "description": "Após uma chamada, você não quer uma transcrição bruta — quer o resumo, os itens de ação e um rascunho de acompanhamento. É justamente essa lacuna que o Sono Note quer preencher.",
+        "description": "Após uma chamada, você não quer uma transcrição bruta — quer o resumo, os itens de ação e um rascunho de acompanhamento — Sono Note foi feito para isso.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "pt-BR",
-          "description": "Após uma chamada, você não quer uma transcrição bruta — quer o resumo, os itens de ação e um rascunho de acompanhamento. É justamente essa lacuna que o Sono Note quer preencher.",
+          "description": "Após uma chamada, você não quer uma transcrição bruta — quer o resumo, os itens de ação e um rascunho de acompanhamento — Sono Note foi feito para isso.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-sononote"
           },
@@ -2988,8 +2988,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/br/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
-        "name": "TripBee Pro: Planejador de Viagens",
-        "description": "Um bom app de roteiro transforma uma viagem confusa em uma linha do tempo clara dia a dia — voos, hotéis, atividades, restaurantes e transporte — com ícones claros por tipo para você ler seu dia rapidamente. Se você se identificou, dá uma olhada no TripBee Pro: Planejador de Viagens.",
+        "name": "TripBee Pro: Trip Planner",
+        "description": "Um bom app de roteiro transforma uma viagem confusa em uma linha do tempo clara dia a dia — voos, hotéis, atividades, restaurantes e transporte — com ícones claros por tipo para você ler seu dia rapidamente — TripBee Pro: Planejador de Viagens foi feito para isso.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3004,7 +3004,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6787754435"
           },
-          "name": "TripBee Pro: Planejador de Viagens",
+          "name": "TripBee Pro: Trip Planner",
           "operatingSystem": "iOS",
           "applicationCategory": "TravelApplication",
           "url": "https://apps.apple.com/br/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "pt-BR",
-          "description": "Um bom app de roteiro transforma uma viagem confusa em uma linha do tempo clara dia a dia — voos, hotéis, atividades, restaurantes e transporte — com ícones claros por tipo para você ler seu dia rapidamente. Se você se identificou, dá uma olhada no TripBee Pro: Planejador de Viagens.",
+          "description": "Um bom app de roteiro transforma uma viagem confusa em uma linha do tempo clara dia a dia — voos, hotéis, atividades, restaurantes e transporte — com ícones claros por tipo para você ler seu dia rapidamente — TripBee Pro: Planejador de Viagens foi feito para isso.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-tripbee"
           },
@@ -3253,7 +3253,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-wifiaidlite",
         "url": "https://apps.apple.com/br/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
         "name": "WiFi Aid Lite",
-        "description": "Cada ferramenta inclui um uso gratuito. Desbloqueio vitalício opcional de pagamento único para uso ilimitado: sem assinaturas, anúncios ou rastreamento.",
+        "description": "Você pode fazer uma verificação completa no total, com qualquer ferramenta, sem compra. Uma compra única opcional no app desbloqueia verificações",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3283,7 +3283,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793414462",
           "inLanguage": "pt-BR",
-          "description": "Cada ferramenta inclui um uso gratuito. Desbloqueio vitalício opcional de pagamento único para uso ilimitado: sem assinaturas, anúncios ou rastreamento.",
+          "description": "Você pode fazer uma verificação completa no total, com qualquer ferramenta, sem compra. Uma compra única opcional no app desbloqueia verificações",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pt-BR.jsonld#offer-wifiaidlite"
           },

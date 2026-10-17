@@ -11,12 +11,11 @@ publisher: "Lumi Studio"
 
 # best trip itinerary planner app for iphone
 
-A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance. If that's your situation, TripBee Pro: Trip Planner is worth a look.
+A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance — TripBee Pro: Trip Planner is built for this.
 
 - Travel
 - Paid download
 - Offline
-- No account
 - No ads
 - No tracking
 - Private / on-device

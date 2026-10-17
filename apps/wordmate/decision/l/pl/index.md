@@ -16,7 +16,6 @@ Zapracowani potrzebują ćwiczeń słownictwa, które mieszczą się w wolnych c
 - Edukacja
 - Płatne do pobrania
 - Bez konta
-- Bez reklam
 - Bez śledzenia
 - Prywatne / na urządzeniu
 - Widżet

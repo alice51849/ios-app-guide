@@ -16,7 +16,6 @@ Dobra aplikacija za itinerar spremeni zmedeno potovanje v jasen dnevni časovni 
 - Potovanja
 - Plačljiv prenos
 - Brez povezave
-- Brez računa
 - Brez oglasov
 - Brez sledenja
 - Zasebno / na napravi

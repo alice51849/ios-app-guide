@@ -15,7 +15,6 @@ QR Code Halo — QR Code Halo is built around Inspect, Decide, Act. Free to star
 
 - More
 - Free to start · one-time unlock
-- No ads
 - Private / on-device
 - App Store · Free
 

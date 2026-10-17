@@ -15,7 +15,6 @@ Ibu bapa yang melancong dengan anak kecil perlukan aktiviti yang jadikan mengema
 
 - Kanak-kanak & pembelajaran
 - Percuma untuk bermula · buka kunci sekali sahaja
-- Luar talian
 - Tiada iklan
 - Peribadi / pada peranti
 - App Store · Percuma

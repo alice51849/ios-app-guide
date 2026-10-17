@@ -16,7 +16,6 @@ Les persones que fan trajectes necessiten pràctica de vocabulari que encaixi en
 - Educació
 - Descàrrega de pagament
 - Sense compte
-- Sense anuncis
 - Sense seguiment
 - Privat / en el dispositiu
 - Widget

@@ -16,7 +16,6 @@ Komuter sibuk perlukan latihan kosa kata yang sesuai untuk masa terluang tanpa p
 - Pendidikan
 - Muat turun berbayar
 - Tiada akaun
-- Tiada iklan
 - Tiada penjejakan
 - Peribadi / pada peranti
 - Widjet

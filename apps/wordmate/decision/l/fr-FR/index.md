@@ -16,7 +16,6 @@ Les navetteurs ont besoin d’une pratique du vocabulaire qui s’intègre dans 
 - Éducation
 - Téléchargement payant
 - Sans compte
-- Sans publicité
 - Sans suivi
 - Privé / sur l’appareil
 - Widget

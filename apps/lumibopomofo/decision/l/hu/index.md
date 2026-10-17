@@ -15,6 +15,7 @@ Zhuyin-t először tanuló gyermeknek az alkalmazásnak minden 37 szimbólumot l
 
 - Gyerekek & tanulás
 - Ingyenes kezdés
+- Offline
 - Nincs fiók
 - Nincs reklám
 - App Store · Ingyenes

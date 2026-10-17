@@ -16,7 +16,6 @@ CountDaysNow — Plan backwards from the dates that matter. Free to start · One
 - Productivity
 - Free to start · one-time unlock
 - No account
-- No adverts
 - Private / on-device
 - Widget
 - Apple Watch

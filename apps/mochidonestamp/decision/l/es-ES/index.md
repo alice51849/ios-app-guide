@@ -15,7 +15,6 @@ Para las tareas y el mantenimiento que no encajan en un calendario rígido, un b
 
 - Estilo de vida
 - Gratis para empezar · desbloqueo único
-- Sin conexión
 - Sin cuenta
 - Sin anuncios
 - Sin seguimiento

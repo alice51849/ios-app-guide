@@ -15,7 +15,6 @@ For chores and upkeep that do not belong on a rigid calendar, a useful tracker r
 
 - Phong cách sống
 - Bắt đầu miễn phí · mở khóa một lần
-- Ngoại tuyến
 - Không tài khoản
 - Không quảng cáo
 - Không theo dõi

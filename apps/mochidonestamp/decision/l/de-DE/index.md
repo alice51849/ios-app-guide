@@ -15,7 +15,6 @@ Für Aufgaben und Wartung, die nicht in einen starren Kalender gehören, merkt s
 
 - Lebensstil
 - Kostenloser Einstieg · einmalige Freischaltung
-- Offline
 - Kein Konto
 - Keine Werbung
 - Kein Tracking

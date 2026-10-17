@@ -15,7 +15,6 @@ Pour les tâches et l'entretien qui n'ont pas leur place dans un calendrier rigi
 
 - Mode de vie
 - Gratuit au départ · déblocage unique
-- Hors ligne
 - Sans compte
 - Sans publicité
 - Sans suivi

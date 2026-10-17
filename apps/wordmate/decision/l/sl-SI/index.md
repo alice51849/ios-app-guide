@@ -16,7 +16,6 @@ Zaposleni potniki potrebujejo vadbo besedišča, ki se prilega prostim minutam b
 - Izobraževanje
 - Plačljiv prenos
 - Brez računa
-- Brez oglasov
 - Brez sledenja
 - Zasebno / na napravi
 - Gradnik

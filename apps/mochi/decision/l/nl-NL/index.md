@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # beste eenvoudige takenlijst app iPhone zonder abonnement
 
-Als de meeste takenlijst-apps te vol voelen, is de juiste een overzichtelijke checklist met herinneringen, herhalingsregels en een Watch-complicatie — en bewust zonder projectmanagementfuncties. Daarvoor is Mochi gemaakt.
+Als de meeste takenlijst-apps te vol voelen, is de juiste een overzichtelijke checklist met herinneringen en ondersteuning voor Apple Watch — en bewust zonder projectmanagementfuncties. Daarvoor is Mochi gemaakt.
 
 - Productiviteit
 - Gratis te starten · eenmalige ontgrendeling
+- Geen account
 - Geen advertenties
 - Apple Watch
 - App Store · Gratis

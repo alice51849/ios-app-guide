@@ -16,7 +16,6 @@ Una buona app per itinerari trasforma un viaggio disordinato in una timeline chi
 - Viaggi
 - Scaricamento a pagamento
 - Offline
-- Nessun account
 - Nessuna pubblicità
 - Nessun tracciamento
 - Privato / su dispositivo

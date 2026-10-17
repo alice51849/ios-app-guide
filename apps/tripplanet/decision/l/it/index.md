@@ -15,7 +15,6 @@ I genitori in viaggio con bambini piccoli hanno bisogno di attività che trasfor
 
 - Bambini e apprendimento
 - Gratis per iniziare · sblocco unico
-- Offline
 - Nessuna pubblicità
 - Privato / su dispositivo
 - App Store · Gratis

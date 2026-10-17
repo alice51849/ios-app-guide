@@ -16,7 +16,6 @@ Dobrá aplikace na itinerář promění chaotickou cestu v přehledný denní pl
 - Cestování
 - Placené stažení
 - Offline
-- Bez účtu
 - Bez reklam
 - Bez sledování
 - Soukromé / v zařízení

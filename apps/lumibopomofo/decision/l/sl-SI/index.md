@@ -15,6 +15,7 @@ Za otroka, ki se prvič uči Zhuyin, mora aplikacija pokrivati vseh 37 simbolov 
 
 - Otroci in učenje
 - Brezplačen začetek
+- Brez povezave
 - Brez računa
 - Brez oglasov
 - App Store · Brezplačno

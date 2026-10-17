@@ -1,5 +1,5 @@
 ---
-title: "iPhone’da toplantıları özetleyen en iyi sesli not uygulaması"
+title: "iPhone'da toplantıları özetleyen en iyi sesli not uygulaması"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/tr/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# iPhone’da toplantıları özetleyen en iyi sesli not uygulaması
+# iPhone'da toplantıları özetleyen en iyi sesli not uygulaması
 
-Bir çağrı sonrası ham yazıya değil, özet, eylem maddeleri ve taslak takip e-postasına ihtiyacınız vardır. Sono Note tam da bu boşluğu kapatmak için var.
+Bir çağrı sonrası ham yazıya değil, özet, eylem maddeleri ve taslak takip e-postasına ihtiyacınız vardır — Sono Note bu amaçla tasarlanmıştır.
 
 - Verimlilik
 - Başlangıçta ücretsiz · tek seferlik açma

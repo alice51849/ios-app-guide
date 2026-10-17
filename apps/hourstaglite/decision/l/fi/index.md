@@ -1,5 +1,5 @@
 ---
-title: "HoursTag Lite: Hinta tunteina — Asioiden todellinen hinta | iOS App"
+title: "HoursTag Lite: Hinta tunteina — Tietoinen osto: oikea hinta | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/fi/index.html"
 modified: "2026-10-17"
@@ -9,9 +9,9 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag Lite: Hinta tunteina — Asioiden todellinen hinta | iOS App
+# HoursTag Lite: Hinta tunteina — Tietoinen osto: oikea hinta | iOS App
 
-HoursTag Lite - Asioiden todellinen hinta Jokainen ostos maksaa tunteja elämästäsi. HoursTag Lite muuntaa hinnat työajaksi – jotta käytät rahaa harkiten. Tutustu arvoprismaasi - Aikakustannus: Nettoarvosi työtuntia kohden - Tyyppi: Tarve - Halu - Heräte - Arvoprofiilisi - Täydellinen arvoanalyysi - Paljonko tavoite maksaa?: Näe tavoitteen takana oleva työ ja seuraa edistymistäsi. - Varmuuskopiointi: Sisältää tulot, kulut, tavoitteet ja asetukset. - Widget - Apple Watch Kaikki pysyy laitteellasi. Ei tiliä, ei seurantaa. Yksi maksu · Elinikäinen käyttö · Ei tilausta Rajattomat valinnat ja muokkaukset Rajattomat tavoitteet ja edistyminen Jakaminen, analyysit ja varmuuskopiot
+HoursTag Lite - Asioiden todellinen hinta Jokainen ostos maksaa tunteja elämästäsi. HoursTag Lite muuntaa hinnat työajaksi – jotta käytät rahaa harkiten. Tutustu arvoprismaasi - Aikakustannus: Nettoarvosi työtuntia kohden - Tyyppi: Tarve - Halu - Heräte - Arvoprofiilisi - Täydellinen arvoanalyysi - Paljonko tavoite maksaa?: Näe tavoitteen takana oleva työ ja seuraa edistymistäsi. - Varmuuskopiointi: Sisältää tulot, kulut, tavoitteet ja asetukset. - Widget - Apple Watch Kaikki pysyy laitteellasi. Ei tiliä, ei seurantaa. Yksi maksu · Elinikäinen käyttö · Ei tilausta Rajattomat valinnat ja muokkaukset Rajattomat tavoitteet ja edistyminen Jakaminen, analyysit ja varmuuskopiot Optimoitu iPhone Duo -puhelimelle.
 
 - Raha & matkailu
 - Ilmainen aloitus

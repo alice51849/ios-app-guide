@@ -15,7 +15,6 @@ Genç çocuklarla seyahat eden ebeveynler, paketleme, bekleme ve yeni bir yeri k
 
 - Çocuklar & öğrenme
 - Başlangıçta ücretsiz · tek seferlik açma
-- Çevrimdışı
 - Reklam yok
 - Gizli / cihazda
 - App Store · Ücretsiz

@@ -16,7 +16,6 @@ Zaposlenim putnicima treba vježba vokabulara koja stane u slobodne minute bez p
 - Obrazovanje
 - Plaćeno preuzimanje
 - Bez računa
-- Bez oglasa
 - Bez praćenja
 - Privatno / na uređaju
 - Widget

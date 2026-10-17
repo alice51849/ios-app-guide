@@ -16,7 +16,6 @@ Les navetteurs occupés ont besoin de pratique vocabulaire qui s’insère dans 
 - Éducation
 - Téléchargement payant
 - Aucun compte
-- Aucune publicité
 - Aucun suivi
 - Privé / sur l'appareil
 - Widget

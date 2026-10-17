@@ -15,7 +15,6 @@ Els pares que viatgen amb infants petits necessiten activitats que converteixin 
 
 - Infants i aprenentatge
 - Inici gratuït
-- Fora de línia
 - Sense anuncis
 - Privat / en el dispositiu
 - App Store · Gratis

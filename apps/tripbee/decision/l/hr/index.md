@@ -16,7 +16,6 @@ Dobra aplikacija za planiranje pretvara kaotično putovanje u jasan dnevni raspo
 - Putovanja
 - Plaćeno preuzimanje
 - Izvan mreže
-- Bez računa
 - Bez oglasa
 - Bez praćenja
 - Privatno / na uređaju

@@ -15,6 +15,7 @@ Untuk anak yang baru belajar Zhuyin, aplikasi harus mencakup semua 37 simbol mel
 
 - Anak & pembelajaran
 - Gratis untuk mulai · buka kunci sekali bayar
+- Offline
 - Tanpa akun
 - Tanpa iklan
 - App Store · Gratis

@@ -16,7 +16,6 @@ Drukke forenzen hebben vocabulaire-oefening nodig die in vrije minuten past zond
 - Onderwijs
 - Betaalde aanschaf
 - Geen account
-- Geen advertenties
 - Geen tracking
 - Privé / op apparaat
 - Widget

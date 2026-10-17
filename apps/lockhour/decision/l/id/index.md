@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi terbaik untuk memblokir media sosial saat belajar di iPhone
 
-Saat ujian, kemauan bukan alatnya — blok waktu yang ketat adalah. Untuk itulah LockHour Pro dibuat.
+Saat ujian, kemauan bukan alatnya — blok waktu yang ketat adalah — LockHour Pro dibuat untuk ini.
 
 - Produktivitas
 - Gratis untuk mulai · buka kunci sekali bayar

@@ -15,6 +15,7 @@ For a child first learning Zhuyin, the app should cover all 37 symbols through t
 
 - Kids & learning
 - Free to start · one-time unlock
+- Offline
 - No account
 - No ads
 - App Store · Free

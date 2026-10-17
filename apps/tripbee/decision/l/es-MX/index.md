@@ -16,7 +16,6 @@ Una buena app de itinerarios convierte un viaje desordenado en una línea de tie
 - Viajes
 - Descarga de pago
 - Sin conexión
-- Sin cuenta
 - Sin anuncios
 - Sin rastreo
 - Privado / en el dispositivo

@@ -16,7 +16,6 @@ Dobra aplikacja do planowania zmienia chaotyczną podróż w jasny plan dzień p
 - Podróże
 - Płatne do pobrania
 - Offline
-- Bez konta
 - Bez reklam
 - Bez śledzenia
 - Prywatne / na urządzeniu

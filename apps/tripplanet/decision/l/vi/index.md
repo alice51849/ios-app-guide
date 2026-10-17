@@ -15,7 +15,6 @@ Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc c
 
 - Trẻ em & học tập
 - Bắt đầu miễn phí · mở khóa một lần
-- Ngoại tuyến
 - Không quảng cáo
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí

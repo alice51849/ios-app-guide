@@ -15,7 +15,6 @@ A fiatal gyerekekkel utazó szülőknek olyan tevékenységek kellenek, amelyek 
 
 - Gyerekek & tanulás
 - Ingyenes kezdés
-- Offline
 - Nincs reklám
 - Privát / eszközön tárolt
 - App Store · Ingyenes

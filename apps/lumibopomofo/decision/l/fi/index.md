@@ -15,6 +15,7 @@ Lapselle, joka oppii Zhuyiniä ensimmäistä kertaa, sovelluksen tulee kattaa ka
 
 - Lapset & oppiminen
 - Ilmainen aloitus
+- Offline
 - Ei tiliä
 - Ei mainoksia
 - App Store · Ilmainen

@@ -2,7 +2,7 @@
 title: "iPhone 上最佳數學遊戲應用程式，培養兒童邏輯能力"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/zh-Hant/lumimath.html"
-modified: "2026-10-15"
+modified: "2026-10-17"
 video_url: "https://files.catbox.moe/znbf6i.mp4"
 duration: "PT16S"
 app_store_id: "6778269699"

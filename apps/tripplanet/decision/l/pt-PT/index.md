@@ -15,7 +15,6 @@ Pais a viajar com crianças pequenas precisam de atividades que transformem faze
 
 - Crianças e aprendizagem
 - Grátis para começar · desbloqueio único
-- Offline
 - Sem anúncios
 - Privado / no dispositivo
 - App Store · Grátis

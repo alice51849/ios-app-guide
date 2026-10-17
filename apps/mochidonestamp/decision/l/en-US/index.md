@@ -15,7 +15,6 @@ For chores and upkeep that do not belong on a rigid calendar, a useful tracker r
 
 - Lifestyle
 - Free to start · one-time unlock
-- Offline
 - No account
 - No ads
 - No tracking

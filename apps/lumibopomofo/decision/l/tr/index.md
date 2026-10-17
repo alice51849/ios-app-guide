@@ -15,6 +15,7 @@ Zhuyin'i ilk kez öğrenen bir çocuk için, uygulama tüm 37 sembolü çizerek 
 
 - Çocuklar & öğrenme
 - Başlangıçta ücretsiz · tek seferlik açma
+- Çevrimdışı
 - Hesap yok
 - Reklam yok
 - App Store · Ücretsiz

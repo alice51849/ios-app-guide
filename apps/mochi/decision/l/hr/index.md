@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # najbolja jednostavna aplikacija za popis zadataka na iPhoneu bez pretplate
 
-Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima, pravilima ponavljanja i komplikacijom za Apple Watch — i namjerno bez upravljanja projektima. Upravo zato Mochi postoji.
+Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima i podrškom za Apple Watch — i namjerno bez upravljanja projektima. Upravo zato Mochi postoji.
 
 - Produktivnost
 - Besplatno za početak
+- Bez računa
 - Bez oglasa
 - Apple Watch
 - App Store · Besplatno

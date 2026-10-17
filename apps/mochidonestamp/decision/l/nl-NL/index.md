@@ -1,5 +1,5 @@
 ---
-title: "Mochi DoneStamp: Laatste keer — Onthoud wanneer je het deed | iOS App"
+title: "Mochi DoneStamp: Laatste keer — Wanneer gedaan? Herinneringen | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/nl-NL/index.html"
 modified: "2026-10-17"
@@ -9,13 +9,12 @@ purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# Mochi DoneStamp: Laatste keer — Onthoud wanneer je het deed | iOS App
+# Mochi DoneStamp: Laatste keer — Wanneer gedaan? Herinneringen | iOS App
 
-Wanneer verschoonde je voor het laatst het bed, gaf je een plant water, belde je familie, maakte je een fotoback-up of verving je een filter? Mochi DoneStamp onthoudt gebeurtenissen uit je leven en is geen takenlijst. Klaar? Eén tik bewaart het exacte tijdstip in een rustig overzicht. Voeg alleen waar nodig een ongeveer of exact ritme toe. De volgende datum wordt altijd opnieuw berekend vanaf het moment waarop je echt klaar was. • Vastleggen met één tik en Ongedaan maken • Eerdere momenten toevoegen, wijzigen of verwijderen • Flexibele en exacte ritmes van minuten tot jaren • Lokale meldingen met Klaar en Sluimer • Interactieve widgets voor begin- en toegangsscherm • Siri, Opdrachten, notities en optionele foto's • Intervalinzichten, volledige back-up en JSON-export • Donkere modus, iPad, VoiceOver en Dynamic Type Gratis krijg je één actieve gebeurtenis en onbeperkte historie. Koop Lifetime Pro één keer voor onbeperkte gebeurtenissen en alle functies. Geen account, reclame, analyse of tracking. Je kerngegevens blijven op je apparaat. Nooit een abonnement.
+Wanneer verschoonde je voor het laatst het bed, gaf je een plant water, belde je familie, maakte je een fotoback-up of verving je een filter? Mochi DoneStamp onthoudt gebeurtenissen uit je leven en is geen takenlijst. Klaar? Eén tik bewaart het exacte tijdstip in een rustig overzicht. Voeg alleen waar nodig een ongeveer of exact ritme toe. De volgende datum wordt altijd opnieuw berekend vanaf het moment waarop je echt klaar was. • Vastleggen met één tik en Ongedaan maken • Eerdere momenten toevoegen, wijzigen of verwijderen • Flexibele en exacte ritmes van minuten tot jaren • Lokale meldingen met Klaar en Sluimer • Interactieve widgets voor begin- en toegangsscherm • Siri, Opdrachten, notities en optionele foto's • Intervalinzichten, volledige back-up en JSON-export • Donkere modus, iPad, VoiceOver en Dynamic Type Gratis krijg je één actieve gebeurtenis en onbeperkte historie. Koop Lifetime Pro één keer voor onbeperkte gebeurtenissen en alle functies. Geen account, reclame, analyse of tracking. Je kerngegevens blijven op je apparaat. Nooit een abonnement. Geoptimaliseerd voor iPhone Duo.
 
 - Leefstijl
 - Gratis te starten · eenmalige ontgrendeling
-- Offline
 - Geen account
 - Geen advertenties
 - Geen tracking

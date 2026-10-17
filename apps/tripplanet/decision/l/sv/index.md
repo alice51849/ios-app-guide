@@ -15,7 +15,6 @@ Föräldrar som reser med små barn behöver aktiviteter som gör packning, vän
 
 - Barn & lärande
 - Gratis att börja · engångsupplåsning
-- Offline
 - Inga annonser
 - Privat / på enheten
 - App Store · Gratis

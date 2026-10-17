@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best free travel expense tracker with currency conversion for iphone
 
-A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.
+การทดลองบันทึกค่าใช้จ่ายเดินทางฟรีที่มีประโยชน์ควรครอบคลุมขั้นตอนทั้งหมดจากสกุลเงินท้องถิ่นไปยังสกุลเงินบ้านเกิด ไม่ใช่แค่สมุดบัญชีว่างที่มีประโยชน์หลังซื้อเท่านั้น G+Money Lite — ตัวแปลงสกุลเงินและบันทึกค่าใช้จ่ายเดินทางอัจฉริยะ — บันทึกทุกการใช้จ่ายและดูเป็นสกุลเงินบ้านเกิด
 
 - เงิน & การเดินทาง
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว

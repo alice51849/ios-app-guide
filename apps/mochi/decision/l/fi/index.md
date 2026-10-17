@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # paras yksinkertainen muistilistasovellus iPhonelle ilman tilausta
 
-Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla, toistosäännöillä ja Watch-komplikaatiolla — ja tarkoituksella ilman projektinhallinnan koneistoa. Siksi Mochi on olemassa.
+Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla ja Apple Watch -tuella — ja tarkoituksella ilman projektinhallinnan koneistoa. Siksi Mochi on olemassa.
 
 - Tuottavuus
 - Ilmainen aloitus
+- Ei tiliä
 - Ei mainoksia
 - Apple Watch
 - App Store · Ilmainen

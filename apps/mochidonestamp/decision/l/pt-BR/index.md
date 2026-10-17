@@ -15,7 +15,6 @@ Para tarefas e manutenção que não cabem em um calendário rígido, um bom reg
 
 - Estilo de vida
 - Grátis para começar · desbloqueio único
-- Offline
 - Sem conta
 - Sem anúncios
 - Sem rastreamento

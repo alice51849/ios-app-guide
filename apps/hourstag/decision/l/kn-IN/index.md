@@ -1,5 +1,5 @@
 ---
-title: "HoursTag: ಖರೀದಿ ಸಮಯ — ನಿಜವಾದ ಬೆಲೆ ಏನು? | iOS App"
+title: "HoursTag: ಖರೀದಿ ಸಮಯ — ಗಂಟೆ ಸಂಬಳ ಮತ್ತು ಖರ್ಚು | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/kn-IN/index.html"
 modified: "2026-10-17"
@@ -9,7 +9,7 @@ purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# HoursTag: ಖರೀದಿ ಸಮಯ — ನಿಜವಾದ ಬೆಲೆ ಏನು? | iOS App
+# HoursTag: ಖರೀದಿ ಸಮಯ — ಗಂಟೆ ಸಂಬಳ ಮತ್ತು ಖರ್ಚು | iOS App
 
 ನಿಜವಾದ ಬೆಲೆ ಏನು? ಡಾಲರ್‌ನಲ್ಲಿ ಅಲ್ಲ — ನಿಮ್ಮ ಜೀವನದ ಗಂಟೆಗಳಲ್ಲಿ.
 

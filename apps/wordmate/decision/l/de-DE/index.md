@@ -16,7 +16,6 @@ Pendler brauchen Vokabeltraining, das in freie Minuten passt, ohne eine vollstä
 - Bildung
 - Kostenpflichtiger Download
 - Kein Konto
-- Keine Werbung
 - Kein Tracking
 - Privat / auf dem Gerät
 - Widget

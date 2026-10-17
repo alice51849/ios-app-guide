@@ -22129,7 +22129,7 @@ class GeneratorTests(unittest.TestCase):
                 "mochi", "en-US", app_locales
             )
             page = Path(output).read_text(encoding="utf-8")
-        self.assertIn(sub, page)
+        self.assertIn(html.escape(sub), page)
         self.assertIn("Free to download", page)
         self.assertNotIn("<meta name=\"description\" content=\"\">", page)
 

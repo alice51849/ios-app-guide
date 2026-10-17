@@ -12,9 +12,11 @@ module exists. The posters share these three helpers:
   the template link lines appended (the body is trimmed to the platform limit, hashtags first); when the
   app has no known link, or no room is left, it raises MissingDownloadLink so nothing is sent silently.
 
-Platform rules stay as they are: Instagram captions cannot hold a clickable link, so the full URL is
-written into the text *and* the "link in bio" line stays; Threads keeps its link in the first reply
-(account limit history), so its main text is not checked here - threads_reply_problems() checks the reply.
+Platform rules: Instagram cannot turn a URL in a caption, comment or reply into a link, so an Instagram text
+carries NO URL at all (owner 2026-10-17, replacing the same day's "write the full URL into it"): it closes with
+the localized "download via the link in bio" line and a caption names the app in one brand hashtag (#BattAI) -
+instagram_problems() / ensure_instagram_caption() below. Threads keeps its link in the first reply (account
+limit history), so its main text is not checked here - threads_reply_problems() checks the reply.
 
     python3 download_links.py check "text" --app-store https://apps.apple.com/app/id1   # exit 1 when missing
 """
@@ -22,6 +24,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 import urllib.parse
 
 APP_STORE_URL = re.compile(r"https?://(?:apps|itunes)\.apple\.com/[^\s\"'<>)]+", re.I)
@@ -200,6 +203,190 @@ def _verified(out, app_store_url, play_url, label):
 def threads_reply_problems(reply_text, app_store_url, play_url=None):
     """Threads posts keep links out of the main text; the first reply must carry them."""
     return link_problems(reply_text, app_store_url, play_url, label="Threads link reply")
+
+
+# ---------------------------------------------------------------- Instagram: no URL, the profile (bio) link instead
+#
+# Owner 2026-10-17 (replacing the same day's "write the full URL into the Instagram text"): 「ig 貼文沒辦法顯示連結的話
+# 你用很長的文字沒有比較好耶 改成原版的好了 請大家去個人檔案下載」「但是你的 tag 可以直接放一個我 app 的名稱」. Instagram never
+# turns a URL in a caption, comment or reply into a link, so an Instagram text carries NO URL: it closes with the
+# localized "download via the link in bio" line, and a caption names the app in ONE brand hashtag - the main store
+# name without spaces and symbols (#BattAI, #LumiWeather; a brand written in another script takes its Latin store
+# name: Lumi注音星球 -> #LumiBopomofo). The profile link is the download link. Every other platform keeps its links.
+
+INSTAGRAM_CHANNELS = ("instagram", "instagram_feed")
+INSTAGRAM_CTA = {
+    "en": "Download via the link in bio",
+    "zh-Hant": "請到個人檔案（bio）的連結下載",
+    "zh-Hans": "请到个人主页（bio）的链接下载",
+    "ja": "ダウンロードはプロフィール（bio）のリンクから",
+    "ko": "다운로드는 프로필(bio) 링크에서",
+    "de": "Download über den Link in der Bio",
+    "fr": "Téléchargez-la via le lien dans la bio",
+    "es": "Descárgala desde el enlace de la bio",
+    "it": "Scaricala dal link nella bio",
+    "pt-BR": "Baixe pelo link na bio",
+    "id": "Unduh lewat link di bio",
+    "vi": "Tải về qua link ở bio",
+    "th": "ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)",
+    "cs": "Stáhněte si ji přes odkaz v profilu (bio)",
+    "pl": "Pobierz przez link w bio",
+    "nl": "Download via de link in bio",
+    "da": "Download via linket i bio",
+    "nb": "Last ned via lenken i bio",
+    "el": "Λήψη από τον σύνδεσμο στο προφίλ (bio)",
+    "ar": "حمّله من الرابط في الملف الشخصي (bio)",
+}
+_CTA_ALIAS = {"zh": "zh-Hant", "zh-TW": "zh-Hant", "zh-HK": "zh-Hant", "zh-CN": "zh-Hans", "pt": "pt-BR", "no": "nb"}
+INSTAGRAM_CTA_MARK = "📲"
+# A web address in any form a reader could copy: a scheme, "www.", a domain with a path, a store host, a bare domain.
+IG_URL = re.compile(r"https?://\S+|\bwww\.\S+|\b(?:[a-z0-9-]+\.)+[a-z]{2,24}/\S*|"
+                    r"\b(?:apps\.apple|itunes\.apple|play\.google)\.com\b\S*|"
+                    r"\b[a-z0-9-]+(?:\.[a-z0-9-]+)*\.(?:com|net|org|io|cc|co|me|dev|page|link|ly|gl|to|site|xyz|info)\b",
+                    re.I)
+_BRAND_SPLIT = re.compile(r"\s*[:：｜|]\s*|\s+[-–—]\s+")
+_IG_TAG = re.compile(r"(?<!\w)#\w+")
+
+
+def is_instagram(channel):
+    """True for the Instagram surfaces (Reels / image posts, and the feed carousels' own ledger channel)."""
+    return (channel or "") in INSTAGRAM_CHANNELS
+
+
+def instagram_cta(locale=None):
+    """The localized "download via the link in bio" phrase (English for a locale without its own)."""
+    locale = _CTA_ALIAS.get(locale or "en", locale or "en")
+    return INSTAGRAM_CTA.get(locale) or INSTAGRAM_CTA.get(locale.split("-")[0]) or INSTAGRAM_CTA["en"]
+
+
+def instagram_cta_line(locale=None):
+    """The line that closes an Instagram text: "📲 Download via the link in bio", in the text's language."""
+    return f"{INSTAGRAM_CTA_MARK} {instagram_cta(locale)}"
+
+
+def has_instagram_cta(text, locale=None):
+    """True when the text says to download via the profile (bio) link (in `locale` when one is given)."""
+    text = text or ""
+    if locale:
+        return instagram_cta(locale) in text
+    return any(phrase in text for phrase in INSTAGRAM_CTA.values())
+
+
+def brand_name(name):
+    """The app's main store name: the part before the first ':' / '：' / '｜' / ' - ' ("Mochi: Cute" -> "Mochi")."""
+    name = " ".join((name or "").split())
+    head = _BRAND_SPLIT.split(name, maxsplit=1)[0].strip()
+    return head if len(head) >= 2 else name
+
+
+def _latin_only(text):
+    return all(ch.isascii() or unicodedata.name(ch, "").startswith("LATIN") for ch in text if ch.isalpha())
+
+
+def brand_hashtag(name, latin_name=None):
+    """'#BattAI' for 'BattAI: Battery Health & Life': the main store name without spaces and symbols. A brand that
+    is not written in Latin letters ('Lumi注音星球') takes `latin_name`, the app's Latin store name ('Lumi Bopomofo'
+    -> '#LumiBopomofo'); '' when neither gives one."""
+    for candidate in (name, latin_name):
+        head = brand_name(candidate)
+        if not head or not _latin_only(head):
+            continue
+        tag = "".join(ch for ch in head if ch.isalnum())
+        if tag and not tag.isdigit():
+            return f"#{tag}"
+    return ""
+
+
+def has_brand_hashtag(text, tag):
+    """True when `tag` is one of the text's hashtags (the whole tag, any letter case)."""
+    return bool(tag) and tag.casefold() in {t.casefold() for t in _IG_TAG.findall(text or "")}
+
+
+def instagram_url_problems(text, label="instagram text"):
+    """An Instagram text must not carry a URL: Instagram cannot tap it, the profile (bio) link is the download link."""
+    found = IG_URL.search(text or "")
+    if not found:
+        return []
+    return [f"{label}: an Instagram text must not carry a URL ({found.group(0)[:60]!r}); Instagram cannot tap it, "
+            "the download link is the profile (bio) link"]
+
+
+def instagram_problems(text, name=None, *, locale=None, latin_name=None, brand=True, urls=True,
+                       label="instagram text"):
+    """QA problems of an Instagram text ([] = fine): a URL in it (urls=True), no "download via the link in bio" line
+    (in `locale` when given), and for a caption (brand=True) no brand hashtag of the app."""
+    out = instagram_url_problems(text, label) if urls else []
+    if not has_instagram_cta(text, locale):
+        out.append(f"{label}: no profile-link line ({instagram_cta_line(locale)!r}); an Instagram text says to "
+                   "download via the link in the profile (bio)")
+    if brand:
+        tag = brand_hashtag(name, latin_name)
+        if not tag:
+            out.append(f"{label}: no brand hashtag can be made from the app name {name!r} (no Latin store name known)")
+        elif not has_brand_hashtag(text, tag):
+            out.append(f"{label}: no brand hashtag {tag} (the app's name as one hashtag)")
+    return out
+
+
+def ensure_instagram_caption(text, name, locale=None, *, latin_name=None, max_len=None, tag_limit=None,
+                             measure=len, label="instagram"):
+    """`text` as an Instagram caption: the profile-link line and the brand hashtag (first in the closing hashtag
+    line) are added when missing; with tag_limit the other hashtags make room for the brand one. Over max_len the
+    other hashtags go first, then the body is trimmed - never the profile-link line or the brand hashtag.
+
+    Raises MissingDownloadLink (nothing is sent) when the text carries a URL, when no brand hashtag can be made
+    from the app name, or when the caption still does not fit."""
+    text = text or ""
+    tag = brand_hashtag(name, latin_name)
+    problems = instagram_url_problems(text, label)
+    if not tag:
+        problems.append(f"{label}: no brand hashtag can be made from the app name {name!r} (no Latin store name known)")
+    if problems:
+        raise MissingDownloadLink("; ".join(problems))
+    lines = text.rstrip().split("\n")
+    tags = []
+    while lines and (not lines[-1].strip() or HASHTAG_LINE.match(lines[-1])):
+        tags = lines.pop().split() + tags
+    body = "\n".join(lines).rstrip()
+    cta = instagram_cta_line(locale)
+    if not has_instagram_cta(body, locale):
+        body = f"{body}\n{cta}" if body else cta
+    if not has_brand_hashtag(body, tag):
+        tags = [tag] + [t for t in tags if t.casefold() != tag.casefold()]
+    if tag_limit:
+        tags = tags[:tag_limit]
+
+    def build(head, shown):
+        return f"{head}\n\n{' '.join(shown)}" if shown else head
+
+    out = build(body, tags)
+    if max_len is None or measure(out) <= max_len:
+        return _instagram_verified(out, name, locale, latin_name, label)
+    kept = tags[:1] if tags and tags[0].casefold() == tag.casefold() else []
+    others = tags[len(kept):]
+    while others:  # the other hashtags go first, from the end
+        others.pop()
+        out = build(body, kept + others)
+        if measure(out) <= max_len:
+            return _instagram_verified(out, name, locale, latin_name, label)
+    head = "\n".join(line for line in body.split("\n") if instagram_cta(locale) not in line).rstrip()
+    tail = build(cta, kept)
+    room = max_len - measure("\n" + tail)
+    while head and room > 0:  # then the body is trimmed above the profile-link line
+        out = f"{_cut(head, room)}\n{tail}"
+        if measure(out) <= max_len:
+            return _instagram_verified(out, name, locale, latin_name, label)
+        room -= max(1, measure(out) - max_len)
+    if measure(tail) <= max_len:
+        return _instagram_verified(tail, name, locale, latin_name, label)
+    raise MissingDownloadLink(f"{label}: the profile-link line and the brand hashtag do not fit {max_len}")
+
+
+def _instagram_verified(out, name, locale, latin_name, label):
+    problems = instagram_problems(out, name, locale=locale, latin_name=latin_name, label=label)
+    if problems:
+        raise MissingDownloadLink("; ".join(problems))
+    return out
 
 
 def refuse(label, problems, log_path=None):

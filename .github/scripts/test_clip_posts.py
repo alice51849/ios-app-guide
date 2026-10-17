@@ -308,12 +308,19 @@ class DownloadLinkTest(unittest.TestCase):
                  hooks=[{"id": "a", "lead": "Task list too boring to open?", "benefit": "A cute checklist"}])
 
     def test_instagram_caption_holds_the_full_urls_and_the_bio_hint(self):
+        # Owner 2026-10-17 「改成原版的好了 請大家去個人檔案下載」「但是你的 tag 可以直接放一個我 app 的名稱」: no URL on
+        # Instagram (it cannot be tapped), the profile-link line closes the text, the brand hashtag leads the tags.
         text = C.caption(self.MOCHI, "instagram")
-        self.assertIn("Get it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=h7_mochi_ig&mt=8", text)
-        self.assertIn("Also on Google Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
-                      "&referrer=utm_source%3Dh7_mochi_ig%26utm_campaign%3Dmochi", text)
-        self.assertIn("Link in bio", text)
-        self.assertEqual(text.split("\n")[0], "Task list too boring to open?")  # the hook still opens the caption
+        self.assertNotIn("https://", text)
+        self.assertNotIn("apps.apple.com", text)
+        self.assertNotIn("play.google.com", text)
+        self.assertIn("Also on Google Play", text)   # Mochi is on Android: said in words, the hub has the button
+        lines = text.split("\n")
+        self.assertEqual(lines[0], "Task list too boring to open?")  # the hook still opens the caption
+        self.assertEqual(lines[-3], "📲 Download via the link in bio")
+        self.assertEqual(lines[-1].split()[0], "#Mochi")
+        self.assertEqual(1, lines[-1].split().count("#Mochi"))   # one brand hashtag
+        self.assertLessEqual(len(lines[-1].split()), C.post_qa.MAX_TAGS["instagram"])
         self.assertLessEqual(len(text), 2200)
         self.assertEqual(C.post_qa.clip_problems(self.MOCHI, "instagram", text, online=False), [])
 
@@ -325,19 +332,35 @@ class DownloadLinkTest(unittest.TestCase):
         self.assertEqual(C.post_qa.clip_problems(self.MOCHI, "threads", C.caption(self.MOCHI, "threads"), online=False), [])
 
     def test_ios_only_app_gets_the_app_store_link_only(self):
-        text = C.caption(clip("a", "en"), "instagram")
+        text = C.caption(clip("a", "en"), "telegram")
         self.assertIn("https://apps.apple.com/us/app/id1?", text)
         self.assertNotIn("play.google.com", text)
+        ig = C.caption(clip("a", "en"), "instagram")   # Instagram: no URL at all, and no Google Play line either
+        self.assertNotIn("https://", ig)
+        self.assertNotIn("Google Play", ig)
+        self.assertIn("📲 Download via the link in bio", ig)
 
     def test_qa_refuses_a_caption_without_the_link(self):
         bare = "Task list too boring to open?\nMochi: Cute To-Do\nSearch “Mochi” on the App Store\nLink in bio"
-        for channel in ("instagram", "telegram"):
-            problems = C.post_qa.clip_problems(self.MOCHI, channel, bare, online=False)
-            self.assertTrue(any("download link" in p for p in problems), (channel, problems))
-        only_ios = C.caption(clip("a", "en"), "instagram").replace("play.google.com", "x.example")
-        self.assertEqual(C.post_qa.clip_problems(clip("a", "en"), "instagram", only_ios, online=False), [])
-        no_play = C.caption(self.MOCHI, "instagram").split("Also on Google Play")[0]
-        self.assertTrue(any("Google Play" in p for p in C.post_qa.clip_problems(self.MOCHI, "instagram", no_play, online=False)))
+        problems = C.post_qa.clip_problems(self.MOCHI, "telegram", bare, online=False)
+        self.assertTrue(any("download link" in p for p in problems), problems)
+        # Instagram: the old "Link in bio" text has neither the profile-link line nor the brand hashtag.
+        problems = C.post_qa.clip_problems(self.MOCHI, "instagram", bare, online=False)
+        self.assertTrue(any("profile-link line" in p for p in problems), problems)
+        self.assertTrue(any("brand hashtag #Mochi" in p for p in problems), problems)
+        good = C.caption(self.MOCHI, "instagram")
+        self.assertEqual(C.post_qa.clip_problems(self.MOCHI, "instagram", good, online=False), [])
+        # ... and a URL is refused on Instagram, the store links of this very app included.
+        store, play = C.download_urls(self.MOCHI, "instagram")
+        for url in (store, play, "apps.apple.com/app/id6785004775", "open.cait518.cc/ig/"):
+            linked = good.replace("📲 Download via the link in bio", f"📲 Download via the link in bio\n{url}")
+            problems = C.post_qa.clip_problems(self.MOCHI, "instagram", linked, online=False)
+            self.assertTrue(any("must not carry a URL" in p for p in problems), (url, problems))
+        # Telegram keeps the rule it had: both links for an Android app.
+        no_play = C.caption(self.MOCHI, "telegram").split("Also on Google Play")[0]
+        self.assertTrue(any("Google Play" in p for p in C.post_qa.clip_problems(self.MOCHI, "telegram", no_play, online=False)))
+        only_ios = C.caption(clip("a", "en"), "telegram")
+        self.assertEqual(C.post_qa.clip_problems(clip("a", "en"), "telegram", only_ios, online=False), [])
 
     def test_a_clip_without_a_store_link_is_never_posted(self):
         broken = dict(self.MOCHI, store_url="")
@@ -365,9 +388,21 @@ class DownloadLinkTest(unittest.TestCase):
                 mock.patch.object(C.time, "sleep"):
             C.post_instagram(self.MOCHI)
             C.post_telegram(self.MOCHI)
-        for key in ("media", "sendVideo"):
-            field = sent[key]["caption"]
-            self.assertTrue(C.DL.has_download_link(field, self.MOCHI["store_url"], C.play_url(self.MOCHI, "ig")), key)
+        field = sent["sendVideo"]["caption"]
+        self.assertTrue(C.DL.has_download_link(field, self.MOCHI["store_url"], C.play_url(self.MOCHI, "tg")))
+        # Instagram: the send call itself adds the profile-link line and the brand hashtag, never a URL.
+        field = sent["media"]["caption"]
+        self.assertEqual([], C.DL.instagram_problems(field, self.MOCHI["name"], locale="en"), field)
+        self.assertIn("📲 Download via the link in bio", field)
+        self.assertNotIn("https://", field)
+        sent.clear()
+        with mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t"}), \
+                mock.patch.object(C, "_post", side_effect=fake_post), \
+                mock.patch.object(C, "caption", return_value="Hook\nhttps://apps.apple.com/app/id6785004775"), \
+                mock.patch.object(C, "_get", side_effect=[{}, {"user_id": "u"}]), mock.patch.object(C.time, "sleep"):
+            with self.assertRaises(C.DL.MissingDownloadLink):
+                C.post_instagram(self.MOCHI)
+        self.assertEqual(sent, {}, "a caption with a URL never reaches Instagram")
 
     def test_a_retry_does_not_double_a_reply_that_was_published_after_all(self):
         calls = []
@@ -463,10 +498,17 @@ class DownloadLinkTest(unittest.TestCase):
 
     def test_every_planned_clip_caption_carries_its_link_on_instagram_and_telegram(self):
         data = C.load()
+        self.assertEqual(("telegram",), C.LINK_IN_CAPTION)
         for key, c in sorted(data["clips"].items()):
             for channel in C.LINK_IN_CAPTION:
                 store, play = C.download_urls(c, channel)
                 self.assertTrue(C.DL.has_download_link(C.caption(c, channel), store, play), (key, channel))
+            # Instagram (owner 2026-10-17): the profile-link line in the clip's language and the app's brand
+            # hashtag instead of a URL - for every planned clip, the non-Latin store names included.
+            ig = C.caption(c, "instagram")
+            self.assertEqual([], C.IGB.caption_problems(ig, c["locale"], c["name"], c["store_url"]), (key, ig))
+            self.assertEqual(1, sum(t.casefold() == C.IGB.brand_tag(c["name"], c["store_url"]).casefold()
+                                    for t in ig.split()), key)
 
 
 def real(locale="en", **kw):

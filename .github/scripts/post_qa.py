@@ -11,8 +11,9 @@ social_extra.py) calls this right before it posts. A post is refused when:
 - the direct download link is missing (download_links.py): the caption must hold the app's App Store
   URL (and its Google Play URL when the app is on Android) - Threads is exempt, its links go in the
   first reply, which clip_posts.py / threads_series.py check themselves;
-- an Instagram caption does not say where to tap (its URL cannot be tapped): the profile-link step
-  naming the app, "Link in bio → tap “Mochi”" (ig_bio.py);
+- an Instagram text breaks the Instagram rule (owner 2026-10-17; Instagram cannot tap a URL): it carries
+  a URL, it lacks the localized "📲 Download via the link in bio" line, or it lacks the app's brand
+  hashtag (#Mochi) (download_links.instagram_problems, ig_bio.py);
 - the text is in the wrong language: a ja caption without kana, a zh-Hant
   caption with Simplified-only characters or kana / Hangul, an English template
   line ("Search ... on the App Store", "Link in bio") in another locale;
@@ -354,9 +355,13 @@ LINK_EXEMPT = {"threads"}
 
 
 def download_link_problems(text, store_url, channel, play_url=None):
-    """The post must carry the app's direct download link (App Store, and Google Play when it is on Android)."""
+    """The post must carry the app's direct download link (App Store, and Google Play when it is on Android).
+    Instagram is the other way round (owner 2026-10-17): its text must carry NO URL - the profile (bio) link is
+    the download link; bio_problems() asks for the profile-link line and the brand hashtag."""
     if channel in LINK_EXEMPT:
         return []
+    if DL.is_instagram(channel):
+        return DL.instagram_url_problems(text, label=f"{channel} text")
     if play_url is None:
         from social_post_common import android_apps, play_store_url
         if not android_apps():  # an unreadable snapshot would silently drop every Google Play link
@@ -367,13 +372,14 @@ def download_link_problems(text, store_url, channel, play_url=None):
     return DL.link_problems(text, store_url, play_url, label=f"{channel} text")
 
 
-def bio_problems(text, locale, name, channel):
-    """Instagram only: a caption URL cannot be tapped, so the text must say where to tap - the profile link,
-    then the app by name ("Link in bio → tap “Mochi”", ig_bio.py). Other channels have tappable links."""
-    if channel != "instagram":
+def bio_problems(text, locale, name, channel, store_url=None):
+    """Instagram only (a URL cannot be tapped there): the text closes with the localized "📲 Download via the link in
+    bio" line and names the app in its brand hashtag (#Mochi; a brand in another script takes the app's Latin store
+    name, looked up by store_url). Other channels have tappable links."""
+    if not DL.is_instagram(channel):
         return []
     import ig_bio
-    return ig_bio.bio_problems(text, locale, name, label=f"{channel} text")
+    return ig_bio.caption_problems(text, locale, name, store_url, label=f"{channel} text", urls=False)
 
 
 def video_compliance_problems(clip):
@@ -404,7 +410,7 @@ def clip_problems(clip, channel, text, online=True, length=True):
     out += text_problems(text, clip.get("locale", ""), channel, allowed=allowed, facts=facts, price=price, length=length)
     out += download_link_problems(text, clip.get("store_url", ""), channel)
     if clip.get("name"):
-        out += bio_problems(text, clip.get("locale", ""), clip["name"], channel)
+        out += bio_problems(text, clip.get("locale", ""), clip["name"], channel, clip.get("store_url"))
     if online:
         live = facts != "\n".join(p for p in store_text if p)
         if live:  # counts are only checked against a live description
@@ -416,8 +422,9 @@ def clip_problems(clip, channel, text, online=True, length=True):
 
 def card_problems(text, locale, channel, *, store_url, name, image=None, extra_facts=(), online=True, length=True,
                   require_link=True, require_bio=False):
-    """Everything that should stop one image card post. require_bio: an Instagram text must also say where to
-    tap (bio_problems); the card posters whose captions carry that line pass it."""
+    """Everything that should stop one image card post. An Instagram text is always held to the Instagram rule
+    (no URL, the profile-link line, the brand hashtag: bio_problems); require_bio is kept for the callers and
+    asks for nothing more since that rule (owner 2026-10-17) covers every Instagram text."""
     out = []
     if image is not None:
         p = Path(image)
@@ -425,10 +432,10 @@ def card_problems(text, locale, channel, *, store_url, name, image=None, extra_f
             out.append(f"card image missing or empty: {image}")
     facts, price = product_facts(store_url, (name, *extra_facts)) if online else ("\n".join((name, *extra_facts)), None)
     out += text_problems(text, locale, channel, allowed=(name,), facts=facts, price=price, length=length)
-    if require_link:
+    if require_link or DL.is_instagram(channel):
         out += download_link_problems(text, store_url, channel)
-    if require_bio:
-        out += bio_problems(text, locale, name, channel)
+    if require_bio or DL.is_instagram(channel):
+        out += bio_problems(text, locale, name, channel, store_url)
     if online:
         out += link_problems(store_url)
     return out

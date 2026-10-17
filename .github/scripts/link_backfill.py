@@ -9,11 +9,14 @@ own post:
 - audit: list our posts, resolve the app each one promotes (clips.json + clip-posts.json, the App Store id
   in the text, then the app names in the text), and write a report of which posts have the link (caption,
   or our own comment / reply) and which do not. Writes nothing to the platforms.
-- apply: add ONE comment (Instagram) or reply (Threads) per post that lacks it - "<Get it on the App
-  Store>: <App Store URL>" plus the Google Play URL when the app is on Android; on Instagram, where a
-  comment URL cannot be tapped either, first "📲 Link in bio → tap “<app>”" (ig_bio.py: the profile link
-  is the hub https://open.cait518.cc/ig/) - then read the comments back and keep the receipt. A post is
-  only ever done once (state + a look at our own comments first).
+- apply: add ONE reply (Threads) per post that lacks it - "<Get it on the App Store>: <App Store URL>" plus
+  the Google Play URL when the app is on Android - then read the replies back and keep the receipt. A post is
+  only ever done once (state + a look at our own replies first).
+
+Instagram: no comment is added any more (owner 2026-10-17: an Instagram URL cannot be tapped, so Instagram
+texts carry none and point to the profile (bio) link, the hub https://open.cait518.cc/ig/ - ig_bio.py). An
+apply run leaves Instagram alone (NO_WRITE: no read, no write); the comments written before stay where they
+are. An audit still reads Instagram, and a caption that follows the profile-link rule is "ok_bio_link".
 
 Safety, because the Threads account was limited once for posting many linked posts:
 - the newest posts come first, at most --max-new writes per channel per run, GAP seconds between writes;
@@ -46,7 +49,6 @@ from pathlib import Path
 import clip_posts as CP
 import download_links as DL
 import ig_bio as IGB
-import ig_bio_hub as HUB
 import own_posts as OP
 import volume_ramp
 from social_post_common import android_apps, campaign_app_store_url, play_store_url
@@ -67,6 +69,11 @@ DAILY_CAP = {"instagram": 6, "threads": 6}   # links added per channel in any 24
 # account that carries a store link counts, whoever wrote it (comment_replies, the series, this sweeper):
 # the sweeper only adds what still fits under this ceiling.
 LINK_BUDGET_24H = {"threads": 20}
+# Channels the sweeper writes nothing to (the reason is logged). Owner 2026-10-17: 「ig 貼文沒辦法顯示連結的話你用很長的
+# 文字沒有比較好耶 改成原版的好了 請大家去個人檔案下載」 - Instagram texts carry no URL, so no link comment goes under an
+# Instagram post any more; the comments added earlier are left as they are (never deleted).
+NO_WRITE = {"instagram": "Instagram texts point to the profile (bio) link and carry no URL (owner 2026-10-17); "
+                         "no link comment is added any more, the ones added earlier stay"}
 
 
 def load_state(path=STATE):
@@ -293,13 +300,13 @@ def links_for(channel, ios_id):
     return campaign_app_store_url(f"https://apps.apple.com/app/id{ios_id}", ct), play_store_url(ios_id, ct)
 
 
-def comment_text(locale, store, play, missing_store=True, channel=None, name=""):
-    """The links under a post; on Instagram (where a comment URL cannot be tapped either) first the line that
-    says where to tap: "📲 Link in bio → tap “<app>”" (ig_bio.py, the profile-link hub)."""
+def comment_text(locale, store, play, missing_store=True, channel=None):
+    """The links under a post. (Instagram gets none any more, NO_WRITE; should that switch ever be lifted, the
+    comment would open with the profile-link line, "📲 Download via the link in bio", ig_bio.py.)"""
     t = CP.text_for(locale or "en")
     lines = []
-    if channel == "instagram" and name:
-        lines.append(IGB.bio_line(locale or "en", name, t["bio"]))
+    if DL.is_instagram(channel):
+        lines.append(IGB.bio_line(locale or "en"))
     if missing_store:
         lines.append(f"{t['button']}: {store}")
     if play:
@@ -470,6 +477,9 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
     store, play = links_for(channel, ios)
     row["ios_id"] = ios
     row["locale"] = (post or {}).get("locale") or OP.detect_language(text) or "en"
+    if DL.is_instagram(channel) and DL.has_instagram_cta(text) and not DL.instagram_url_problems(text):
+        row["status"] = "ok_bio_link"   # the Instagram rule (owner 2026-10-17): no URL, the profile (bio) link
+        return row, None
     # Instagram carries the links in the caption; Threads keeps them in the first reply on purpose (but a
     # Threads text that holds them itself - older posts, autopilot posts - is complete too).
     if DL.has_download_link(text, store, play):
@@ -545,8 +555,12 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
 
 def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=time.sleep, gap=GAP, read_gap=0,
         log=print, pages=PAGES, now=None, max_reads=None, save=None):
-    """Audit (and with apply=True fix) one channel. Returns the report rows."""
+    """Audit (and with apply=True fix) one channel. Returns the report rows (none for an apply run on a NO_WRITE
+    channel: it is not even read)."""
     channel = client.channel
+    if apply and channel in NO_WRITE:
+        log(f"{channel}: nothing is added - {NO_WRITE[channel]}")
+        return []
     now = now or dt.datetime.now(dt.timezone.utc)
     finder = catalog if isinstance(catalog, AppFinder) else AppFinder(catalog)
     reads = {"n": 0, "max": max_reads if max_reads is not None else (APPLY_READS if apply else AUDIT_READS)}
@@ -615,12 +629,8 @@ def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=ti
                 "now; the next sweep looks again")
             continue
         attempts += 1
-        name = ""
-        if channel == "instagram":   # the app as the profile-link hub shows it in the post's language
-            name = HUB.display_name(row.get("ios_id"), row.get("locale")) or \
-                (finder.by_id.get(str(row.get("ios_id") or "")) or ("", ""))[1]
         text = comment_text(row.get("locale"), todo["store"], todo["play"] if todo["missing_play"] else None,
-                            todo["missing_store"], channel=channel, name=name)
+                            todo["missing_store"], channel=channel)
         try:
             before = comments_count(client, row["id"])   # the read-back of an Instagram comment is the count going up
             if channel == "instagram" and before is None:   # without the count nothing can be read back: write nothing

@@ -301,23 +301,28 @@ class DownloadLinkTest(unittest.TestCase):
 
     def test_instagram_and_telegram_texts_hold_the_full_urls(self):
         card = U.pick(DAY0)   # Aim990: on Android
-        for channel, build in (("instagram", U.instagram_text), ("telegram", U.telegram_text)):
-            text = build(self.meta(card), card)
-            store, play = U.download_urls(card, channel)
-            self.assertIn(store, text, channel)
-            self.assertIn("ct=ut_aim990_" + U.CHANNEL_CT[channel], store)
-            self.assertTrue(play and play in text, channel)
-        self.assertIn(U.TEXT[card["locale"]]["bio"], U.instagram_text(self.meta(card), card))
+        text = U.telegram_text(self.meta(card), card)
+        store, play = U.download_urls(card, "telegram")
+        self.assertIn(store, text)
+        self.assertIn("ct=ut_aim990_tg", store)
+        self.assertTrue(play and play in text)
+        # Instagram (owner 2026-10-17): no URL; the profile-link line and the brand hashtag instead.
+        ig = U.instagram_text(self.meta(card), card)
+        self.assertNotIn("https://", ig)
+        self.assertIn(U.cd.DL.instagram_cta_line(card["locale"]), ig)
+        self.assertEqual(ig.splitlines()[-1].split()[0], "#Aim990")
+        self.assertEqual([], U.cd.DL.instagram_problems(ig, U.app_name(card), locale=card["locale"]))
 
     def test_qa_refuses_a_text_without_the_link_and_passes_the_real_one(self):
         import post_qa
         card = U.pick(DAY0)
-        for channel in ("instagram", "telegram"):
+        for channel, missing in (("instagram", "profile-link line"), ("telegram", "download link")):
             bare = post_qa.card_problems("Head\nBody\nLink in bio", card["locale"], channel, store_url=U.store_url(card, "qa"),
                                          name=U.app_name(card), online=False)
-            self.assertTrue(any("download link" in p for p in bare), channel)
+            self.assertTrue(any(missing in p for p in bare), channel)
             real = U.qa_problems(self.meta(card), card, channel, online=False)
-            self.assertFalse([p for p in real if "download link" in p], (channel, real))
+            self.assertFalse([p for p in real if "download link" in p or "profile-link" in p or "brand hashtag" in p
+                              or "URL" in p], (channel, real))
 
     def test_send_calls_never_send_a_text_without_the_link(self):
         card = U.pick(DAY0)
@@ -326,13 +331,17 @@ class DownloadLinkTest(unittest.TestCase):
                 mock.patch.object(U.cd.time, "sleep"), \
                 mock.patch.object(U.cd, "_post", side_effect=lambda url, f, timeout=60: sent.update(f) or {"id": "m"}), \
                 mock.patch.object(U, "_permalink", return_value=""):
-            U.cd.instagram_image("https://x/card.jpg", "bare text", guard=U.download_urls(card, "instagram"))
-            store, play = U.download_urls(card, "instagram")
-            self.assertTrue(U.cd.DL.has_download_link(sent["caption"], store, play))
+            app = (U.app_name(card), card["locale"], U.APPS[card["app"]]["id"])
+            U.cd.instagram_image("https://x/card.jpg", "bare text", app=app)
+            # Instagram (owner 2026-10-17): the send call adds the profile-link line and the brand hashtag, no URL.
+            self.assertEqual([], U.cd.DL.instagram_problems(sent["caption"], app[0], locale=app[1]))
+            self.assertNotIn("https://", sent["caption"])
             sent.clear()
-            with self.assertRaises(U.cd.DL.MissingDownloadLink):
-                U.cd.instagram_image("https://x/card.jpg", "bare text", guard=("https://example.com/not-a-store", None))
-            self.assertEqual(sent, {}, "nothing is sent when no link can be attached")
+            for bad in ({"app": app, "text": "bare text https://apps.apple.com/app/id1"},   # a URL never goes out
+                        {"app": None, "text": "bare text"}):                              # nor an unchecked text
+                with self.assertRaises(U.cd.DL.MissingDownloadLink):
+                    U.cd.instagram_image("https://x/card.jpg", bad["text"], app=bad["app"])
+            self.assertEqual(sent, {}, "nothing is sent when the text cannot be made right")
 
     def test_threads_link_reply_is_retried_and_a_missing_one_is_flagged(self):
         card = U.pick(DAY0)

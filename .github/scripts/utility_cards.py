@@ -114,7 +114,7 @@ APPS = {
 TEXT = {
     "en": {"word": "Business English word of the day", "photo": "Photo size of the day",
            "search": "Search “{s}” on the App Store", "both": "Search “{s}” on App Store or Google Play",
-           "button": "Get it on the App Store", "bio": "Link in bio", "head": "Head (chin to crown): {h} mm",
+           "button": "Get it on the App Store", "head": "Head (chin to crown): {h} mm",
            "check": "Rules change: check the official site before you apply.", "example": "Example",
            "letter": "Letter of the day", "count": "Let's count", "bedtime": "Tonight's 5 bedtime steps",
            "ledger": "Project net, worked out", "chore": "When did you last do it?", "is_for": "{l} is for {w}",
@@ -126,7 +126,7 @@ TEXT = {
            "checklist": "Today's 4-task checklist"},
     "zh-Hant": {"word": "今日多益商務單字", "zhuyin": "今日注音", "photo": "今日證件照尺寸",
                 "search": "App Store 搜尋「{s}」", "both": "App Store／Google Play 搜尋「{s}」",
-                "button": "在 App Store 下載", "bio": "下載連結在個人檔案", "head": "頭部（下巴到頭頂）{h} mm",
+                "button": "在 App Store 下載", "head": "頭部（下巴到頭頂）{h} mm",
                 "check": "規定可能更新，送件前請先確認官方說明", "example": "例句",
                 "letter": "今日字母", "count": "今日數一數", "bedtime": "今晚睡前 5 步", "ledger": "專案損益小算式",
                 "chore": "上次做是幾天前？", "is_for": "{l} — {w}", "net": "淨額",
@@ -137,7 +137,7 @@ TEXT = {
                 "checklist": "今天的 4 件事"},
     "ja": {"word": "今日のTOEIC®ビジネス英単語", "photo": "今日の証明写真サイズ",
            "search": "App Storeで「{s}」を検索", "both": "App Store・Google Playで「{s}」を検索",
-           "button": "App Storeで入手", "bio": "リンクはプロフィールから", "head": "頭の長さ（あご〜頭頂）{h} mm",
+           "button": "App Storeで入手", "head": "頭の長さ（あご〜頭頂）{h} mm",
            "check": "規定は変わることがあります。申請前に公式情報をご確認ください", "example": "例文",
            "letter": "今日のアルファベット", "count": "今日のかぞえてみよう", "bedtime": "今夜のおやすみ5ステップ",
            "ledger": "プロジェクト収支の計算例", "chore": "最後にやったのは何日前？", "is_for": "{l} — {w}",
@@ -148,7 +148,7 @@ TEXT = {
            "checklist": "今日の4つのToDo"},
     "ko": {"word": "오늘의 토익 비즈니스 영단어", "photo": "오늘의 증명사진 규격",
            "search": "App Store에서 '{s}' 검색", "both": "App Store · Google Play에서 '{s}' 검색",
-           "button": "App Store에서 받기", "bio": "링크는 프로필에", "head": "머리 길이(턱~정수리) {h} mm",
+           "button": "App Store에서 받기", "head": "머리 길이(턱~정수리) {h} mm",
            "check": "규정은 바뀔 수 있어요. 신청 전 공식 안내를 확인하세요", "example": "예문",
            "letter": "오늘의 알파벳", "count": "오늘의 숫자 세기", "bedtime": "오늘 밤 잠자기 전 5단계",
            "ledger": "프로젝트 손익 계산 예시", "chore": "마지막으로 한 게 며칠 전?", "is_for": "{l} — {w}",
@@ -599,16 +599,16 @@ def telegram_text(meta, card):
 
 
 def instagram_text(meta, card):
-    """The Instagram caption: the card text, where to tap (the URL is not tappable: the profile link, then the
-    app, ig_bio.py), the full download URL(s), tags."""
+    """The Instagram caption (owner 2026-10-17: no URL, Instagram cannot tap one): the card text, "📲 Download via
+    the link in bio" in the card's language, then the hashtags led by the app's brand hashtag (ig_bio.py)."""
     import ig_bio
     import search_caption as SC
-    bio = ig_bio.bio_line(card["locale"], app_name(card), TEXT[card["locale"]]["bio"])
-    text = meta["caption"] + "\n" + bio + "\n" + "\n".join(link_lines(card, "instagram"))
-    tags = SC.card_tags(card["app"], card["locale"])  # keyword hashtags from the planner's seo table
-    if tags:
-        text += "\n\n" + " ".join(tags)
-    return text
+    name, ref = app_name(card), APPS[card["app"]]["id"]
+    # keyword hashtags from the planner's seo table, after the brand hashtag
+    tags = ig_bio.hashtags(lambda n: SC.card_tags(card["app"], card["locale"], n), name, ref)
+    text = meta["caption"] + "\n" + ig_bio.bio_line(card["locale"]) + ("\n\n" + " ".join(tags) if tags else "")
+    return ig_bio.caption(text, name, card["locale"], ref, tag_limit=SC.TAG_LIMIT.get("instagram", 5),
+                          label=f"utility {card.get('key', card['app'])} instagram")
 
 
 def qa_problems(meta, card, channel, image=None, online=True):
@@ -624,7 +624,8 @@ def post_instagram(url, meta, card):
     import search_caption as SC
     text = instagram_text(meta, card)
     alt = SC.card_alt(APPS[card["app"]]["name"], meta["caption"], card["app"], card["locale"])
-    media = cd.instagram_image(url, text, label="utility", alt=alt, guard=download_urls(card, "instagram"))
+    media = cd.instagram_image(url, text, label="utility", alt=alt,
+                               app=(app_name(card), card["locale"], APPS[card["app"]]["id"]))
     if not media:
         return None
     return _permalink("https://graph.instagram.com/v21.0", media, os.environ.get("IG_ACCESS_TOKEN", "")) or ""

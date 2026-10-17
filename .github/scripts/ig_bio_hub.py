@@ -14,9 +14,9 @@ Every button carries pt=118326163 and ct=ig_bio_<app> (00_GrowthEngine agent/ct_
 instagram row: the downloads the Instagram posts bring in through the profile). The words (headings,
 categories, app names) follow the visitor's phone language through a few lines of inline script - no
 tracking, no external script, nothing sent anywhere; without script the page reads in English. Captions
-name the app to tap ("Link in bio → tap “Mochi”", ig_bio.py), and that name is on this page in every case:
-the latest-posts block shows the post's own name, the full list the localized store name (clips.json, the
-utility-card names, else the catalog name).
+carry no URL: they say "📲 Download via the link in bio" and name the app in its brand hashtag (#Mochi,
+ig_bio.py), and that name is on this page in every case: the latest-posts block shows the post's own name,
+the full list the localized store name (clips.json, the utility-card names, else the catalog name).
 
 The page goes to .github/growth/ig-hub/index.html every time an Instagram post is recorded (the "Record the
 post link" steps) and once a day (ig-bio-hub.yml); the root site (alice51849.github.io, its ig-hub.yml)

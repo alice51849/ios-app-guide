@@ -13,9 +13,11 @@ content, so it never reads as a repeated post.
 Posting: Telegram (photo upload + App Store button), Threads (image, store
 links in the first reply) and Instagram (image) with the existing secrets.
 
-Every post carries the app's direct download link (owner rule 2026-10-17, download_links.py): the
-Telegram and Instagram texts hold the full App Store URL (and Google Play), the Threads link reply is
-retried (one container, published again) and the send calls re-check the text (ensure_download_link).
+Download links (owner rules 2026-10-17, download_links.py): the Telegram text holds the full App Store URL
+(and Google Play), the Threads link reply is retried (one container, published again) and the send calls
+re-check the text (ensure_download_link). Instagram cannot tap a caption URL, so its text carries none: it
+ends with "📲 Download via the link in bio" in the card's language and the #CountDaysNow brand hashtag leads
+its hashtags (ig_bio.py; instagram_image() re-checks that at the send call).
 A Threads reply that still fails is reported with ::error:: and kept in LINK_FAILURES; the step stays green
 (the post is already out and a red step would only make the watchdog post the card twice) and
 link_backfill.py adds the reply within hours.
@@ -384,13 +386,20 @@ def threads_image(url, text, links, label="countdown"):
     return media
 
 
-def instagram_image(url, text, label="countdown", alt=None, guard=None):
-    """Image post on Instagram (with alt text when given: accessibility + search); the media id or None."""
+def instagram_image(url, text, label="countdown", alt=None, app=None):
+    """Image post on Instagram (with alt text when given: accessibility + search); the media id or None.
+
+    app = (store name, locale, App Store id or link) of the app the post is about: the text is held to the
+    Instagram rule at the send call (owner 2026-10-17: no URL, the profile-link line, the brand hashtag;
+    ig_bio.caption). Without it the text cannot be checked, so nothing is sent (MissingDownloadLink)."""
+    import ig_bio
+    if not app:
+        raise DL.MissingDownloadLink(f"{label} instagram: no app given, the Instagram text cannot be checked")
+    text = ig_bio.caption(text, app[0], app[1], app[2], max_len=2200, label=f"{label} instagram")
     token = os.environ.get("IG_ACCESS_TOKEN", "")
     if not token:
         print(f"{label}: IG_ACCESS_TOKEN missing")
         return None
-    text = guarded(text, guard, 2200, f"{label} instagram")
     api = "https://graph.instagram.com/v21.0"
     me = _get(f"{api}/me?fields=user_id&access_token={token}")
     user = me.get("user_id") or me.get("id")
@@ -430,17 +439,16 @@ def telegram_text(meta, e=None):
 
 
 def instagram_text(meta, e=None):
-    """The Instagram caption: the card text, where to tap (the URL is not tappable: the profile link, then the
-    app, ig_bio.py), the full download URL(s), tags."""
+    """The Instagram caption (owner 2026-10-17: no URL, Instagram cannot tap one): the card text, "📲 Download via
+    the link in bio" in the card's language, then the hashtags led by #CountDaysNow (ig_bio.py)."""
     import ig_bio
     import search_caption as SC
     e = e or event_of(meta)
-    bio = ig_bio.bio_line(meta["locale"], "CountDaysNow")
-    text = meta["caption"] + "\n" + bio + "\n" + "\n".join(link_lines(e, "instagram"))
-    tags = SC.card_tags("countdaysnow", meta["locale"])  # keyword hashtags from the planner's seo table
-    if tags:
-        text += "\n\n" + " ".join(tags)
-    return text
+    # keyword hashtags from the planner's seo table, after the brand hashtag
+    tags = ig_bio.hashtags(lambda n: SC.card_tags("countdaysnow", meta["locale"], n), "CountDaysNow", APP_ID)
+    text = meta["caption"] + "\n" + ig_bio.bio_line(meta["locale"]) + ("\n\n" + " ".join(tags) if tags else "")
+    return ig_bio.caption(text, "CountDaysNow", meta["locale"], APP_ID, tag_limit=SC.TAG_LIMIT.get("instagram", 5),
+                          label=f"countdown {meta.get('event', '')} instagram")
 
 
 def qa_problems(meta, e, channel, image=None, online=True):
@@ -455,7 +463,7 @@ def post_instagram(url, meta, e=None):
     import search_caption as SC
     e = e or event_of(meta)
     instagram_image(url, instagram_text(meta, e), alt=SC.card_alt("CountDaysNow", meta["caption"], "countdaysnow", meta["locale"]),
-                    guard=download_urls(e, "instagram"))
+                    app=("CountDaysNow", meta["locale"], APP_ID))
 
 
 def main():

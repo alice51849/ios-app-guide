@@ -91,21 +91,31 @@ class Decide(unittest.TestCase):
     post = {"app": "a", "locale": "en", "ios_id": "111"}
 
     def test_every_reply_carries_the_link_and_the_language_matches(self):
-        s = state()
-        with mock.patch.object(R, "play_store_url", return_value=None), mock.patch.object(R, "is_free", return_value=True):
-            price = R.decide(c("1", "is it free?"), self.post, "instagram", "lumi", s, "M", NOW)
-            thanks = R.decide(c("2", "謝謝！好用"), self.post, "instagram", "lumi", s, "M", NOW)
-            android = R.decide(c("3", "android?"), self.post, "instagram", "lumi", s, "M", NOW)
-        app_store = "https://apps.apple.com/app/id111?pt=118326163&ct=rp_ig&mt=8"
-        self.assertIn(app_store, price["text"])
-        self.assertIn(price["text"].splitlines()[0], [t.split("\n")[0] for t in R.T["en"]["price_free"]])
-        self.assertEqual(thanks["lang"], "zh-Hant")  # still answered in the commenter's language ...
-        self.assertIn(thanks["text"].splitlines()[0], R.T["zh-Hant"]["praise"])
-        self.assertTrue(thanks["text"].endswith("App Store: " + app_store))  # ... with the link line at the end
-        self.assertEqual(android["key"], "android_none")
-        self.assertIn(android["text"].splitlines()[0], R.T["en"]["android_none"])
-        self.assertTrue(android["text"].endswith("App Store: " + app_store))  # iOS-only: the App Store link
-        self.assertNotIn("play.google.com", android["text"])
+        # Threads: the direct link; Instagram (owner 2026-10-17, a URL cannot be tapped there): no URL, the
+        # profile-link line in the commenter's language where the link would be.
+        for channel, ct in (("threads", "rp_th"), ("instagram", None)):
+            s = state()
+            with mock.patch.object(R, "play_store_url", return_value=None), mock.patch.object(R, "is_free", return_value=True):
+                price = R.decide(c("1", "is it free?"), self.post, channel, "lumi", s, "M", NOW)
+                thanks = R.decide(c("2", "謝謝！好用"), self.post, channel, "lumi", s, "M", NOW)
+                android = R.decide(c("3", "android?"), self.post, channel, "lumi", s, "M", NOW)
+            if ct:
+                app_store = f"https://apps.apple.com/app/id111?pt=118326163&ct={ct}&mt=8"
+                self.assertIn(app_store, price["text"])
+                ends = ("App Store: " + app_store,) * 2
+            else:
+                for d in (price, thanks, android):
+                    self.assertEqual([], DL.instagram_url_problems(d["text"]), d["text"])
+                self.assertIn(DL.instagram_cta_line("en"), price["text"])
+                ends = (DL.instagram_cta_line("zh-Hant"), DL.instagram_cta_line("en"))
+            self.assertIn(price["text"].splitlines()[0], [t.split("\n")[0] for t in R.T["en"]["price_free"]])
+            self.assertEqual(thanks["lang"], "zh-Hant")  # still answered in the commenter's language ...
+            self.assertIn(thanks["text"].splitlines()[0], R.T["zh-Hant"]["praise"])
+            self.assertTrue(thanks["text"].endswith(ends[0]), channel)  # ... with the link line at the end
+            self.assertEqual(android["key"], "android_none")
+            self.assertIn(android["text"].splitlines()[0], R.T["en"]["android_none"])
+            self.assertTrue(android["text"].endswith(ends[1]), channel)  # iOS-only: the App Store link (Threads)
+            self.assertNotIn("play.google.com", android["text"])
 
     def test_android_live_gets_google_play(self):
         with mock.patch.object(R, "play_store_url", return_value="https://play.google.com/store/apps/details?id=x"):
@@ -146,9 +156,16 @@ OTHER_LANGS = {"zh-Hant": "好用耶", "ja": "ありがとう", "ko": "감사합
 
 
 class DownloadLinkOnEveryReply(unittest.TestCase):
-    """Owner rule 2026-10-17: every reply to a comment on a post that maps to an app carries that app's
+    """Owner rule 2026-10-17: every Threads reply to a comment on a post that maps to an app carries that app's
     direct download link - the App Store link, plus Google Play when the app is on Android - whatever the
-    intent (praise, language and how-to included), and a reply that cannot carry it is not sent."""
+    intent (praise, language and how-to included), and a reply that cannot carry it is not sent. An Instagram
+    reply (owner, the same day: a URL cannot be tapped there) carries no URL and says "📲 Download via the link
+    in bio" in the reply's language instead; one that breaks that rule is not sent either."""
+
+    def assertInstagramReply(self, text, lang="en"):
+        self.assertEqual([], DL.instagram_problems(text, locale=lang, brand=False), text)
+        self.assertNotIn("apps.apple.com", text)
+        self.assertNotIn("play.google.com", text)
 
     post = {"app": "a", "locale": "en", "ios_id": "111"}
     MAPPED = object()  # decide(): "use the mapped post" (None means a post we cannot map to an app)
@@ -170,14 +187,17 @@ class DownloadLinkOnEveryReply(unittest.TestCase):
                             s or state(), "M", NOW)
 
     def test_all_intents_get_the_app_store_link_and_ios_only_apps_no_play(self):
-        for channel, ct in (("instagram", "rp_ig"), ("threads", "rp_th")):
+        for channel, ct in (("instagram", None), ("threads", "rp_th")):
             for intent, text in ENGLISH.items():
                 with self.subTest(channel=channel, intent=intent):
                     d = self.decide(text, channel)
                     self.assertEqual(intent, d["intent"])
+                    self.assertNotIn("play.google.com", d["text"])
+                    if not ct:   # Instagram: the profile-link line instead of the URL
+                        self.assertInstagramReply(d["text"])
+                        continue
                     self.assertTrue(DL.has_download_link(d["text"], "https://apps.apple.com/app/id111"))
                     self.assertIn(f"ct={ct}", d["text"])
-                    self.assertNotIn("play.google.com", d["text"])
                     self.assertEqual([], DL.link_problems(d["text"], "https://apps.apple.com/app/id111"))
 
     def test_android_apps_get_google_play_on_every_intent(self):
@@ -185,9 +205,13 @@ class DownloadLinkOnEveryReply(unittest.TestCase):
             for channel in ("instagram", "threads"):
                 with self.subTest(intent=intent, channel=channel):
                     d = self.decide(text, channel, play=PLAY)
+                    if channel == "instagram":   # no URL there, the Android answer still says it is on Android
+                        self.assertInstagramReply(d["text"])
+                        continue
                     self.assertTrue(DL.has_download_link(d["text"], "https://apps.apple.com/app/id111", PLAY))
                     self.assertIn("Google Play: " + PLAY, d["text"])
-        self.assertEqual("android_live", self.decide(ENGLISH["android"], play=PLAY)["key"])
+        for channel in ("instagram", "threads"):
+            self.assertEqual("android_live", self.decide(ENGLISH["android"], channel, play=PLAY)["key"])
 
     def test_every_template_of_every_language_carries_the_link_within_the_platform_limit(self):
         # Force each rotation slot of each (language, intent) template through decide().
@@ -206,7 +230,10 @@ class DownloadLinkOnEveryReply(unittest.TestCase):
                                     d = self.decide(text, channel, s=s, play=play)
                                 with self.subTest(lang=lang, key=key, variant=variant, play=bool(play), channel=channel):
                                     self.assertEqual((lang, key, variant), (d["lang"], d["key"], d["variant"]))
-                                    self.assertEqual([], DL.link_problems(d["text"], "https://apps.apple.com/app/id111", play))
+                                    if channel == "instagram":
+                                        self.assertInstagramReply(d["text"], lang)
+                                    else:
+                                        self.assertEqual([], DL.link_problems(d["text"], "https://apps.apple.com/app/id111", play))
                                     self.assertLessEqual(len(d["text"]), limit)
                                     seen += 1
         self.assertGreater(seen, 100)
@@ -288,9 +315,13 @@ class DownloadLinkOnEveryReply(unittest.TestCase):
         self.assertIn("::error::", self.out.getvalue())
         self.assertEqual(2, len(self.refusals()))
         self.assertIn("over the 40 limit", self.refusals()[0]["problems"][0])
-        # A text that lost its link is refused the same way.
+        # A text that lost its link (Threads), or breaks the Instagram rule, is refused the same way.
         with mock.patch.object(R.DL, "link_problems", return_value=["reply: no direct App Store download link"]):
-            self.assertEqual({"skip": "link-guard"}, self.decide(ENGLISH["praise"]))
+            self.assertEqual({"skip": "link-guard"}, self.decide(ENGLISH["praise"], "threads"))
+        with mock.patch.object(R.IGB, "reply_problems", return_value=["instagram reply: no profile-link line"]):
+            self.assertEqual({"skip": "link-guard"}, self.decide(ENGLISH["praise"], "instagram"))
+        with mock.patch.dict(R.T["en"], {"praise": ["See https://example.com/x"] * 3}):   # a URL never reaches Instagram
+            self.assertEqual({"skip": "link-guard"}, self.decide(ENGLISH["praise"], "instagram"))
 
     def refusals(self):
         with open(self.log_path, encoding="utf-8") as handle:
@@ -306,9 +337,10 @@ class DownloadLinkOnEveryReply(unittest.TestCase):
         with mock.patch.object(R, "play_store_url", return_value=None):
             sent = R.run_platform(fc, CATALOG, state(), NOW, sleeper=lambda _: None, log=lambda _: None)
         self.assertEqual(4, len(sent))
-        for comment_id, text in fc.sent:  # the four comments under the post that maps to app 111
-            with self.subTest(comment=comment_id):
-                self.assertTrue(DL.has_download_link(text, "https://apps.apple.com/app/id111"), text)
+        for comment_id, text in fc.sent:  # the four comments under the post that maps to app 111 (Instagram:
+            with self.subTest(comment=comment_id):   # the profile-link line, no URL)
+                self.assertTrue(DL.has_instagram_cta(text), text)
+                self.assertEqual([], DL.instagram_url_problems(text), text)
         # A thank-you under a post we cannot map to an app has no link to give, so it is not sent at all.
         self.assertNotIn("5", [comment_id for comment_id, _text in fc.sent])
 

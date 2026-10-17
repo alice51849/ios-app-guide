@@ -49,7 +49,7 @@ import gen_standard_site as generator  # noqa: E402
 
 MIRROR_SHA256 = {
     "_engine/social/gen_standard_site.py": (
-        "bb5360a9861abe6e20d49b65b2501a2317ec4ffac6178d7246e827c13f75a95a"
+        "6f5bc16db73d0d895b660ecb0d68d56db488cae4bed79b3ed444f879a2abba58"
     ),
     "_engine/social/standard_site_publish.py": (
         "aa60fddd59f875149398dc989c20a967628fca79f9ba817e37149ed7a7a1a252"
@@ -263,17 +263,14 @@ class StandardSiteWorkflowTests(unittest.TestCase):
             "travel-itinerary-app-with-a-one-time-unlock-instead-of-a-"
             "subscription.html"
         ]
-        self.assertIn("interactive single-day switch", sharing)
-        self.assertIn("offline content and compact controls", sharing)
-        self.assertIn("zip containing the html", sharing)
-        self.assertIn(
-            "other supported destinations receive the original html",
-            sharing,
-        )
-        self.assertIn(
-            "does not claim real-time collaborative itinerary editing",
-            sharing,
-        )
+        # The store listing names trip sharing but not the HTML/LINE export
+        # mechanics, so the deployed answer states only what the store says.
+        self.assertIn("unlimited saved journeys", sharing)
+        self.assertIn("trip sharing", sharing)
+        self.assertIn("complete backup and restore", sharing)
+        self.assertIn("no subscription", sharing)
+        self.assertNotIn("interactive single-day switch", sharing)
+        self.assertNotIn("zip containing the html", sharing)
         for document in documents:
             self.assertIn(
                 "publisher disclosure:",

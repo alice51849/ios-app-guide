@@ -41,7 +41,7 @@ class PickTest(unittest.TestCase):
             self.assertIn(c["app"], U.APPS)
         self.assertEqual(len({i for i, _ in seen["zhuyin"]}), 37)
         self.assertEqual({loc for _, loc in seen["photo"]}, {"en", "zh-Hant", "ja", "ko"})
-        for kind in ("letter", "count", "bedtime", "ledger", "chore"):  # every item, in every locale it is shown in
+        for kind in ("letter", "count", "bedtime", "ledger", "chore", "checklist"):  # every item, in every locale
             self.assertEqual({i for i, _ in seen[kind]}, {x["id"] for x in data[U.LISTS[kind]]}, kind)
             self.assertEqual({loc for _, loc in seen[kind]}, set(U.LOCALES[kind]), kind)
         self.assertEqual({c["app"] for c in (U.pick(DAY0 + dt.timedelta(days=len(U.TYPES) * k)) for k in range(2))},
@@ -178,7 +178,7 @@ class PostTest(unittest.TestCase):
 
 class NewTypesTest(unittest.TestCase):
     """Letter / count / bedtime / ledger / chore cards (Lumi Letters, Lumi Math, Lumi Mission, MoneyTag, DoneStamp)."""
-    NEW = ("letter", "count", "bedtime", "ledger", "chore")
+    NEW = ("letter", "count", "bedtime", "ledger", "chore", "checklist")
 
     def test_each_list_covers_two_weeks_with_complete_copy(self):
         data = U.load()
@@ -210,6 +210,11 @@ class NewTypesTest(unittest.TestCase):
                 self.assertIsInstance(e["amount"], int)
                 self.assertGreater(e["amount"], 0)
             self.assertGreaterEqual(U.ledger_net(x), 0)
+        for x in data["checklists"]:  # Mochi: a title, exactly four tasks and a tip in every locale
+            for field in ("title", "items", "tip"):
+                self.assertEqual(set(x[field]), locs, (x["id"], field))
+            for loc in locs:
+                self.assertEqual(len(x["items"][loc]), 4, (x["id"], loc))
         hedge = {"zh-Hant": "建議", "en": "Suggested", "ja": "目安", "ko": "권장"}
         for x in data["chores"]:
             self.assertEqual(set(x["task"]), locs)

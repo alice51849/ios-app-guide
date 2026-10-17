@@ -38,7 +38,8 @@ CHANNEL_NAME = {"telegram": "Telegram", "instagram": "Instagram", "threads": "Th
 UTILITY_PREFIX = "utility/"
 UTILITY_LABEL = {"telegram": "TG", "instagram": "IG", "threads": "Th"}
 UTILITY_TYPE = {"word": "英文單字", "zhuyin": "注音", "photo": "證件照尺寸", "letter": "今日字母", "count": "今日數一數",
-                "bedtime": "睡前 5 步", "ledger": "專案損益算式", "chore": "上次做是幾天前"}
+                "bedtime": "睡前 5 步", "ledger": "專案損益算式", "chore": "上次做是幾天前",
+                "checklist": "今日 4 件事清單"}
 # Channels without automation yet: what is true today, shown as-is.
 MANUAL_CHANNELS = [
     ("TikTok", "手動"),

@@ -2,7 +2,7 @@
 """Daily utility cards: one genuinely useful image a day, branded with the app
 that does the job (zero token).
 
-Eight card types take turns day by day, all from curated static lists in
+Nine card types take turns day by day, all from curated static lists in
 .github/growth/utility-cards.json (no paid API, no model at runtime):
 
 - word    TOEIC-style business English word of the day -> Aim990 / Wordmate Lite
@@ -14,6 +14,9 @@ Eight card types take turns day by day, all from curated static lists in
 - ledger  one project's income minus expenses, worked   -> MoneyTag
 - chore   an easily forgotten recurring chore + a
           conservative suggested interval               -> Mochi DoneStamp
+- checklist a short, ready-to-copy 4-task list for one
+          situation (study session, Sunday reset…)      -> Mochi (added 2026-10-17, last in the
+          rotation so the first eight keep their days until 10-23)
 
 The app screen on every card is a real App Store screenshot of that app
 (assets/utility/<app>_<locale>.png, taken from the public iTunes Lookup API).
@@ -48,14 +51,16 @@ DATA = GROWTH / "utility-cards.json"
 CLIPS = GROWTH / "clips.json"
 ASSETS = GROWTH / "assets" / "utility"  # localized App Store screenshots
 STORE = {"ko": "kr", "zh-Hant": "tw", "ja": "jp", "en": "us"}
-TYPES = ("word", "zhuyin", "photo", "letter", "count", "bedtime", "ledger", "chore")
+TYPES = ("word", "zhuyin", "photo", "letter", "count", "bedtime", "ledger", "chore", "checklist")
 ALL4 = ("zh-Hant", "en", "ja", "ko")
 LOCALES = {"word": ("zh-Hant", "ja", "ko", "en"), "zhuyin": ("zh-Hant",), "photo": ("en", "zh-Hant", "ja", "ko"),
-           "letter": ALL4, "count": ALL4, "bedtime": ALL4, "ledger": ALL4, "chore": ALL4}
+           "letter": ALL4, "count": ALL4, "bedtime": ALL4, "ledger": ALL4, "chore": ALL4, "checklist": ALL4}
 LISTS = {"word": "words", "zhuyin": "zhuyin", "photo": "photos", "letter": "letters", "count": "counting",
-         "bedtime": "bedtime", "ledger": "ledger", "chore": "chores"}  # curated list per type in DATA
+         "bedtime": "bedtime", "ledger": "ledger", "chore": "chores",
+         "checklist": "checklists"}  # curated list per type in DATA
 TYPE_APP = {"zhuyin": "lumibopomofo", "photo": "snapportlite", "letter": "lumiletters", "count": "lumimath",
-            "bedtime": "lumimission", "ledger": "moneytag", "chore": "mochidonestamp"}  # word: Aim990 / Wordmate
+            "bedtime": "lumimission", "ledger": "moneytag", "chore": "mochidonestamp",
+            "checklist": "mochi"}  # word: Aim990 / Wordmate
 EPOCH = dt.date(2026, 10, 15)  # day 0 of the rotation: first word, ㄅ, first photo size
 THREADS_CAP = 3  # posts a day on the Threads account, everything included
 
@@ -92,6 +97,14 @@ APPS = {
                            "en": "Projects with their own net result",
                            "ja": "プロジェクトごとの純額とタグ集計",
                            "ko": "프로젝트마다 따로 계산되는 순액"}},
+    # Mochi (checklist type): the names are the store names people type into the search box in each storefront,
+    # the pitch lines are the first sentence of each storefront's own description (iTunes Lookup, 2026-10-17).
+    "mochi": {"id": "6785004775", "name": "Mochi Cute Checklist", "colors": ("#4f2346", "#9b4f77", "#ffd6e7"),
+              "names": {"zh-Hant": "Mochi 可愛待辦清單", "ja": "Mochi かわいいToDo", "ko": "Mochi 귀여운 할 일 목록"},
+              "pitch": {"en": "Add tasks, tap the little circle when you finish",
+                        "zh-Hant": "寫下任務，輕點小圓圈完成打勾",
+                        "ja": "タスクを書いて、終わったら小さな丸をタップ",
+                        "ko": "할 일을 적고, 끝나면 작은 동그라미를 탭하세요"}},
     "mochidonestamp": {"id": "6790800323", "name": "Mochi DoneStamp", "colors": ("#4a2a3a", "#9a5a76", "#ffe6b8"),
                        "pitch": {"zh-Hant": "事情做完點一下，記住上次是什麼時候",
                                  "en": "Finish something, tap once, and the exact time is kept",
@@ -109,7 +122,8 @@ TEXT = {
            "chore_note": "A general suggestion: follow the product manual", "last": "Last time: ___ days ago",
            "bedtime_note": "Change the order to suit your child",
            "fingers": "Hold up {n} on one hand", "five": "One hand of 5, then {r} more", "ten": "Both hands make 10",
-           "teen": "Both hands make 10, then {r} more", "twenty": "Count both hands two times"},
+           "teen": "Both hands make 10, then {r} more", "twenty": "Count both hands two times",
+           "checklist": "Today's 4-task checklist"},
     "zh-Hant": {"word": "今日多益商務單字", "zhuyin": "今日注音", "photo": "今日證件照尺寸",
                 "search": "App Store 搜尋「{s}」", "both": "App Store／Google Play 搜尋「{s}」",
                 "button": "在 App Store 下載", "bio": "下載連結在個人檔案", "head": "頭部（下巴到頭頂）{h} mm",
@@ -119,7 +133,8 @@ TEXT = {
                 "ledger_note": "示例數字，只示範算式", "chore_note": "週期為一般建議，請以產品說明書為準",
                 "last": "上次：___ 天前", "bedtime_note": "順序可依孩子習慣調整",
                 "fingers": "伸出 {n} 根手指", "five": "一隻手 5 根，再加 {r} 根", "ten": "兩隻手剛好 10 根",
-                "teen": "兩隻手 10 根，再數 {r} 個", "twenty": "兩隻手各數兩次"},
+                "teen": "兩隻手 10 根，再數 {r} 個", "twenty": "兩隻手各數兩次",
+                "checklist": "今天的 4 件事"},
     "ja": {"word": "今日のTOEIC®ビジネス英単語", "photo": "今日の証明写真サイズ",
            "search": "App Storeで「{s}」を検索", "both": "App Store・Google Playで「{s}」を検索",
            "button": "App Storeで入手", "bio": "リンクはプロフィールから", "head": "頭の長さ（あご〜頭頂）{h} mm",
@@ -129,7 +144,8 @@ TEXT = {
            "net": "純額", "ledger_note": "数字は計算の例です", "chore_note": "周期は一般的な目安です。取扱説明書に従ってください",
            "last": "前回：___ 日前", "bedtime_note": "順番はお子さまに合わせて変えてOK",
            "fingers": "ゆびを {n}本 たてよう", "five": "かた手で5、もうかた手で{r}", "ten": "りょう手で ちょうど10",
-           "teen": "りょう手で10、あと{r}つ", "twenty": "りょう手を2かい かぞえよう"},
+           "teen": "りょう手で10、あと{r}つ", "twenty": "りょう手を2かい かぞえよう",
+           "checklist": "今日の4つのToDo"},
     "ko": {"word": "오늘의 토익 비즈니스 영단어", "photo": "오늘의 증명사진 규격",
            "search": "App Store에서 '{s}' 검색", "both": "App Store · Google Play에서 '{s}' 검색",
            "button": "App Store에서 받기", "bio": "링크는 프로필에", "head": "머리 길이(턱~정수리) {h} mm",
@@ -139,7 +155,8 @@ TEXT = {
            "net": "순액", "ledger_note": "숫자는 계산 예시예요", "chore_note": "일반적인 권장 주기예요. 제품 설명서를 따르세요",
            "last": "마지막: ___일 전", "bedtime_note": "순서는 아이에게 맞게 바꿔도 돼요",
            "fingers": "손가락 {n}개를 펴 봐요", "five": "한 손 5개, 다른 손 {r}개", "ten": "두 손을 다 펴면 10",
-           "teen": "두 손 10개, 그리고 {r}개 더", "twenty": "두 손을 두 번 세어 봐요"},
+           "teen": "두 손 10개, 그리고 {r}개 더", "twenty": "두 손을 두 번 세어 봐요",
+           "checklist": "오늘의 할 일 4가지"},
 }
 BACKGROUND = {
     "white": {"en": "White background", "zh-Hant": "白色背景", "ja": "白い背景", "ko": "흰색 배경"},
@@ -280,6 +297,8 @@ def lines(card):
         return t["ledger"], item["project"][loc], rows + [f"= {t['net']} {money(ledger_net(item))}"]
     if card["type"] == "chore":
         return t["chore"], item["task"][loc], [item["every"][loc]]
+    if card["type"] == "checklist":
+        return t["checklist"], item["title"][loc], [f"○ {x}" for x in item["items"][loc]]
     size = item.get("size", {}).get(loc) or f"{item['w']} × {item['h']} mm"
     body = [size]
     if item.get("head"):
@@ -300,6 +319,8 @@ def caption(card, day):
         extra.append(tips[day.toordinal() % len(tips)])
     if card["type"] == "photo":
         extra.append(t["check"])
+    if card["type"] == "checklist":
+        extra.append(card["item"]["tip"][card["locale"]])
     extra += [t[n] for k, n in (("bedtime", "bedtime_note"), ("ledger", "ledger_note"), ("chore", "chore_note"))
               if card["type"] == k]
     if head.endswith(("?", "？")):
@@ -482,6 +503,20 @@ def make(out, day, data=None):
         draw.rounded_rectangle([(W - lw) / 2 - 40, y + 20, (W + lw) / 2 + 40, y + 120], radius=24, outline=accent, width=4)
         draw.text(((W - lw) / 2, y + 70 - 52 * 0.62), last, font=fl, fill=white)
         center(TEXT[loc]["chore_note"], y + 146, 36, white)
+    elif card["type"] == "checklist":
+        y = center(big, y + 16, 72, white, idx, 1.2)
+        y += 18
+        for step in body:
+            # An empty circle per task, like the one tapped in the app (the caption writes it as "○").
+            cx, cy, r = 190, y + 34, 26
+            draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=accent, width=5)
+            rows, size = cd.wrap(draw, step.removeprefix("○ "), f, 46, W - 250 - 90)
+            ry = cy - (len(rows) * size * 1.2) / 2
+            for row in rows:
+                draw.text((250, ry), row, font=f(size), fill=white)
+                ry += size * 1.2
+            y += max(84, int(len(rows) * size * 1.2) + 18)
+        center(card["item"]["tip"][loc], y + 6, 36, accent)
     # The real app screen (localized App Store screenshot) rising from the bottom.
     shot = ASSETS / f"{card['app']}_{loc}.png"
     if not shot.exists():

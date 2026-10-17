@@ -28,10 +28,13 @@ STAMP = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$")
 
 
 def uploads(posted):
-    """(key, url, at, video id) for every well-formed upload record, oldest first."""
+    """(key, url, at, video id) for every well-formed upload record, oldest first.
+
+    A key with "#" is an older upload kept next to its clip key (youtube_hook_shorts.py moves a taken-down upload
+    to "<key>#taken_down@<time>" when a new cut of the key goes up): it was logged here before, so it is left out."""
     out = []
     for key, rec in ((posted or {}).get("posted") or {}).items():
-        if not isinstance(rec, dict):
+        if not isinstance(rec, dict) or "#" in key:
             continue
         url, at = str(rec.get("url") or ""), str(rec.get("at") or "")
         if "/" in key and SHORTS_URL.match(url) and STAMP.match(at):
@@ -40,15 +43,17 @@ def uploads(posted):
 
 
 def merge(posted, log):
-    """Append uploads missing from the post log; returns how many were added."""
-    have = {(p.get("channel"), p.get("clip")) for p in log.get("posts", [])}
+    """Append uploads missing from the post log (one entry per video: a new cut of a clip whose first upload
+    was taken down gets its own entry); returns how many were added."""
+    have = {(p.get("channel"), p.get("clip"), p.get("id") or str(p.get("link") or "").rsplit("/", 1)[-1])
+            for p in log.get("posts", [])}
     added = 0
     for key, url, at, vid in uploads(posted):
-        if (CHANNEL, key) in have:
+        if (CHANNEL, key, vid) in have:
             continue
         log.setdefault("posts", []).append({"channel": CHANNEL, "clip": key, "link": url, "posted_at": at,
                                             "id": vid})
-        have.add((CHANNEL, key))
+        have.add((CHANNEL, key, vid))
         added += 1
     log["posts"].sort(key=lambda p: p.get("posted_at", ""))
     return added
@@ -58,10 +63,11 @@ def carry_takedowns(posted, log):
     """Copy the Mac's "taken_down" marks (00_GrowthEngine video_takedown_youtube.py: a non-compliant Short made
     private) onto the same upload's entry here, so this repo's readers skip it too; returns how many changed."""
     marks = {}
-    for key, url, _at, vid in uploads(posted):
-        mark = ((posted or {}).get("posted") or {}).get(key, {}).get("taken_down")
-        if isinstance(mark, dict):
-            marks[(key, url)] = mark
+    records = (posted or {}).get("posted") or {}
+    for raw, rec in records.items():
+        mark = rec.get("taken_down") if isinstance(rec, dict) else None
+        if isinstance(mark, dict) and rec.get("url"):
+            marks[(raw.split("#", 1)[0], rec["url"])] = mark
     changed = 0
     for p in log.get("posts", []):
         mark = marks.get((p.get("clip"), p.get("link"))) if p.get("channel") == CHANNEL else None

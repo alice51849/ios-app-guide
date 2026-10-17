@@ -369,6 +369,28 @@ class YoutubeLinksTest(unittest.TestCase):
         self.assertNotIn("abcDEF12345", section)
         self.assertIn("https://ig/1", section)
 
+    def test_a_new_cut_of_a_taken_down_short_joins_the_log_and_the_old_one_keeps_its_mark(self):
+        import youtube_links as YL
+        mark = {"at": "2026-10-17T10:00:00Z", "status": "private", "reversible": True}
+        log = {"posts": [{"channel": "youtube", "clip": "a/en", "link": "https://youtube.com/shorts/oldOLD12345",
+                          "posted_at": "2026-10-15T12:20:00Z", "id": "oldOLD12345"}]}
+        # the Mac moved the old upload to "<key>#taken_down@<time>" when the new real-recording cut went up
+        posted = {"posted": {
+            "a/en#taken_down@2026-10-15T12:20:00Z": {"at": "2026-10-15T12:20:00Z", "videoId": "oldOLD12345",
+                                                    "url": "https://youtube.com/shorts/oldOLD12345", "taken_down": mark},
+            "a/en": {"at": "2026-10-18T12:20:00Z", "videoId": "newNEW12345", "url": "https://youtube.com/shorts/newNEW12345"}}}
+        self.assertEqual(YL.merge(posted, log), 1)
+        self.assertEqual(YL.merge(posted, log), 0)
+        self.assertEqual(YL.carry_takedowns(posted, log), 1)   # the mark still reaches the old entry
+        by = {p["id"]: p for p in log["posts"]}
+        self.assertEqual(mark, by["oldOLD12345"]["taken_down"])
+        self.assertNotIn("taken_down", by["newNEW12345"])
+        self.assertEqual(["a/en", "a/en"], [p["clip"] for p in log["posts"]])
+        clips = {"clips": {"a/en": clip("a", "en")}, "schedule": []}
+        section = P.build_section(clips, log["posts"], {}, dt.datetime(2026, 10, 18, 13, tzinfo=dt.timezone.utc))
+        self.assertIn("newNEW12345", section)
+        self.assertNotIn("oldOLD12345", section)
+
     def test_missing_upload_log_leaves_the_page_alone(self):
         import youtube_links as YL
         with tempfile.TemporaryDirectory() as tmp, mock.patch.object(P, "POSTS", Path(tmp) / "posts.json"), \

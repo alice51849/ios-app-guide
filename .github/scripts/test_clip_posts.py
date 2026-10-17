@@ -50,6 +50,21 @@ class ClipPostsTest(unittest.TestCase):
         with mock.patch.object(C, "already_posted", return_value={key}):
             self.assertIsNone(C.scheduled(DATA, day, 1, "telegram"))
 
+    def test_a_taken_down_cut_does_not_block_the_new_real_recording_of_the_same_key(self):
+        # video_takedown.py marks a non-compliant post "taken_down"; the entry stays, the key can go out again
+        # (lumibopomofo / battai / snapport got real-recording cuts under their old keys on 2026-10-17).
+        day = dt.date(2026, 10, 15)
+        gone = [{"channel": "telegram", "clip": "a/zh-Hant", "id": "355", "posted_at": "2026-10-14T05:47:26Z",
+                 "taken_down": {"status": "video_replaced"}}]
+        self.assertEqual(set(), C.already_posted("telegram", gone))
+        with mock.patch.object(C, "posted_log", return_value=gone):
+            self.assertEqual("zh-Hant", C.scheduled(DATA, day, 1, "telegram")["locale"])
+        live = gone + [{"channel": "telegram", "clip": "a/zh-Hant", "id": "400", "posted_at": "2026-10-15T01:00:00Z"}]
+        self.assertEqual({"a/zh-Hant"}, C.already_posted("telegram", live))   # the new cut went out: once only
+        with mock.patch.object(C, "posted_log", return_value=live):
+            self.assertIsNone(C.scheduled(DATA, day, 1, "telegram"))
+        self.assertEqual({"a/zh-Hant"}, C.already_posted("instagram", [dict(live[1], channel="instagram")]))
+
     def test_unknown_clip_or_empty_day_posts_nothing(self):
         self.assertIsNone(C.scheduled(DATA, dt.date(2026, 10, 16), 15, "telegram"))
         self.assertIsNone(C.scheduled(DATA, dt.date(2026, 10, 17), 1, "instagram"))

@@ -99,10 +99,14 @@ def posted_log():
     return json.loads(path.read_text(encoding="utf-8")).get("posts", [])
 
 
-def already_posted(channel):
+def already_posted(channel, posts=None):
     """Clip keys already posted on this channel (clip-posts.json), so a backup
-    run (clip-backup.yml) that fills a slot GitHub dropped never re-posts."""
-    return {p["clip"] for p in posted_log() if p.get("channel") == channel}
+    run (clip-backup.yml) that fills a slot GitHub dropped never re-posts.
+
+    A post marked "taken_down" (video_takedown.py: a non-compliant cut taken down) does not count: its entry stays
+    as history, and a new compliant real-recording cut of the same clip key can go out on this channel again."""
+    posts = posted_log() if posts is None else posts
+    return {p["clip"] for p in posts if p.get("channel") == channel and not p.get("taken_down")}
 
 
 def scheduled(data, day, slot, channel):

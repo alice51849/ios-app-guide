@@ -223,7 +223,7 @@ def update_hook_cards(improvements, clips, posts, now):
     import re
     clip_map = clips.get("clips", {})
     schedule = clips.get("schedule", [])
-    posted = {(p["channel"], p["clip"]) for p in posts}
+    posted = {(p["channel"], p["clip"]) for p in posts if not p.get("taken_down")}   # a taken-down cut can go out again
     today = now.date().isoformat()
     for app in improvements.get("apps", []):
         for action in app.get("actions", []):

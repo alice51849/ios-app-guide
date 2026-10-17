@@ -17,7 +17,7 @@ import download_links as DL  # noqa: E402
 import own_posts as OP  # noqa: E402
 import video_takedown as V  # noqa: E402
 
-NOW = dt.datetime(2026, 10, 17, 12, 0, tzinfo=dt.timezone.utc)   # 355 is past its 48 h window, the rest inside
+NOW = dt.datetime(2026, 10, 17, 12, 0, tzinfo=dt.timezone.utc)
 ICON = "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/aa/AppIcon/512x512bb.jpg"
 CAPTION = "收集 37 個 注音小夥伴\n聽聲音 選出對的注音\n在 App Store 搜尋「Lumi注音星球」\n\n#注音符號 #Lumi注音星球"
 
@@ -40,9 +40,10 @@ class Fakes:
     def __init__(self):
         self.calls = []
         self.chat_username = "LumiApps2026"
-        self.tg_refuse_delete = set()     # ids whose deleteMessage Telegram refuses (48 h)
         self.tg_gone = set()               # ids already deleted on Telegram
-        self.preview_lag = set()           # ids whose public preview still shows the deleted message
+        self.preview_lag = set()           # ids whose public preview still shows the old video
+        self.edit_keeps_video = set()      # ids whose editMessageMedia answer still carries a video
+        self.edit_not_modified = set()     # ids whose edit Telegram answers "message is not modified"
         self.replaced = set()
         self.graph = {t["id"]: {"id": t["id"], "media_type": "VIDEO", "permalink": t["link"],
                                 "timestamp": t["posted_at"], "username": "hourstag.app"}
@@ -57,14 +58,13 @@ class Fakes:
         if method == "getChat":
             return {"id": -100, "username": self.chat_username, "type": "channel"}
         mid = str(payload["message_id"])
-        if method == "deleteMessage":
-            if mid in self.tg_gone:
-                raise RuntimeError("HTTP 400 Bad Request: message to delete not found")
-            if mid in self.tg_refuse_delete:
-                raise RuntimeError("HTTP 400 Bad Request: message can't be deleted for everyone")
-            self.tg_gone.add(mid)
-            return True
         if method == "editMessageMedia":
+            if mid in self.edit_not_modified:
+                self.replaced.add(mid)
+                raise RuntimeError("HTTP 400 Bad Request: message is not modified: specified new message content "
+                                   "and reply markup are exactly the same")
+            if mid in self.edit_keeps_video:
+                return {"message_id": int(mid), "video": {"file_id": "v"}}
             self.replaced.add(mid)
             return {"message_id": int(mid), "photo": [{"file_id": "p"}], "caption": payload["media"]["caption"],
                     "reply_markup": payload["reply_markup"]}
@@ -74,7 +74,7 @@ class Fakes:
         self.calls.append(("preview", post_id))
         if post_id in self.tg_gone and post_id not in self.preview_lag:
             return {"state": "missing", "video": False, "photo": False, "text": ""}
-        if post_id in self.replaced:
+        if post_id in self.replaced and post_id not in self.preview_lag:
             return {"state": "present", "video": False, "photo": True, "text": CAPTION}
         return {"state": "present", "video": True, "photo": False, "text": CAPTION}
 
@@ -162,9 +162,9 @@ class PlanTests(Base):
         self.assertEqual(0, code)
         self.assertEqual([], self.f.writes())
         rows = self.by_id(doc)
-        self.assertEqual("delete_or_replace_video", rows[("telegram", "355")]["action"])   # past 48 h
-        for mid in ("363", "366", "373"):
-            self.assertEqual("delete", rows[("telegram", mid)]["action"])
+        for t in targets_of("telegram"):   # replaced, never deleted (more recoverable)
+            self.assertEqual("replace_video", rows[("telegram", t["id"])]["action"])
+            self.assertTrue(rows[("telegram", t["id"])]["reversible"])
         for t in targets_of("instagram"):
             self.assertEqual("local_archive", rows[("instagram", t["id"])]["action"])
         for t in targets_of("threads"):
@@ -227,13 +227,14 @@ class PlanTests(Base):
         self.assertEqual(1, code)
         self.assertTrue(all(r["action"] == "blocked" for r in rep["rows"]))
 
-    def test_past_the_window_without_a_fallback_is_blocked(self):
+    def test_no_replacement_without_the_play_link_decision(self):
         with mock.patch.object(V, "android_apps", return_value={}):
             code, rep = self.go("plan")
         rows = self.by_id(rep)
         self.assertEqual(1, code)
-        self.assertEqual("blocked", rows[("telegram", "355")]["action"])
-        self.assertEqual("delete", rows[("telegram", "363")]["action"])   # inside the window it can still be deleted
+        for t in targets_of("telegram"):
+            self.assertEqual("blocked", rows[("telegram", t["id"])]["action"])
+            self.assertIn("Android snapshot", rows[("telegram", t["id"])]["problem"])
 
 
 class ApplyTests(Base):
@@ -252,30 +253,53 @@ class ApplyTests(Base):
             self.assertEqual("done", rows[(t["platform"], t["id"])]["action"], t)
         for t in targets_of("instagram"):
             self.assertEqual("handed_to_local", rows[("instagram", t["id"])]["action"])
-        self.assertEqual({"355", "363", "366", "373"}, self.f.tg_gone)
+        self.assertEqual({"355", "363", "366", "373"}, self.f.replaced)
+        self.assertEqual(set(), self.f.tg_gone)
+        self.assertFalse(any(c[0] == "tg" and c[1] == "deleteMessage" for c in self.f.calls))   # never deleted
         self.assertEqual({t["id"] for t in targets_of("threads")}, self.f.deleted)
         entries = self.entries()
+        want = {"telegram": "video_replaced", "instagram": "pending_local_archive", "threads": "deleted"}
         for t in V.TARGETS:
             mark = entries[(t["platform"], t["id"])]["taken_down"]
-            want = "pending_local_archive" if t["platform"] == "instagram" else "deleted"
-            self.assertEqual(want, mark["status"], t)
+            self.assertEqual(want[t["platform"]], mark["status"], t)
             self.assertEqual(V.SUMMARY_REPORT, mark["report"])
         self.assertNotIn("taken_down", entries[("telegram", "381")])   # a compliant clip stays as it is
         self.assertEqual(CAPTION, doc["receipts"]["telegram"]["355"]["caption_before"])
 
-    def test_a_refused_telegram_delete_swaps_the_video_for_the_icon_with_the_links(self):
-        self.f.tg_refuse_delete = {"355"}
+    def test_telegram_swaps_the_video_for_the_icon_with_the_caption_and_both_links(self):
         code, doc = self.go("apply", confirm=V.digest())
         self.assertEqual(0, code)
-        edit = next(c[2] for c in self.f.calls if c[0] == "tg" and c[1] == "editMessageMedia")
-        self.assertEqual(355, edit["message_id"])
+        edits = {c[2]["message_id"]: c[2] for c in self.f.calls if c[0] == "tg" and c[1] == "editMessageMedia"}
+        self.assertEqual({355, 363, 366, 373}, set(edits))
+        edit = edits[355]
         self.assertEqual(("photo", ICON), (edit["media"]["type"], edit["media"]["media"]))
+        caption = edit["media"]["caption"]
+        self.assertTrue(caption.startswith(CAPTION.split("\n")[0]))   # the post's own text stays
         store = "https://apps.apple.com/app/id6773017109"
-        self.assertTrue(DL.has_app_store_link(edit["media"]["caption"], store))
-        self.assertTrue(any("apps.apple.com" in b["url"] for b in edit["reply_markup"]["inline_keyboard"][0]))
+        play = "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin"   # Lumi Bopomofo is on Play
+        self.assertTrue(DL.has_app_store_link(caption, store))
+        self.assertIn(play, caption)
+        urls = [b["url"] for b in edit["reply_markup"]["inline_keyboard"][0]]
+        self.assertTrue(any("apps.apple.com" in u for u in urls) and any("play.google.com" in u for u in urls))
         receipt = doc["receipts"]["telegram"]["355"]
         self.assertEqual(("video_replaced", True), (receipt["status"], receipt["verified"]))
+        self.assertEqual(CAPTION, receipt["caption_before"])
         self.assertEqual("video_replaced", self.entries()[("telegram", "355")]["taken_down"]["status"])
+        self.assertTrue(self.entries()[("telegram", "355")]["taken_down"]["reversible"])
+
+    def test_an_edit_that_keeps_the_video_is_red_and_unmarked(self):
+        self.f.edit_keeps_video = {"366"}
+        code, doc = self.go("apply", confirm=V.digest())
+        self.assertEqual(1, code)
+        self.assertEqual("unverified", self.by_id(doc)[("telegram", "366")]["action"])
+        self.assertNotIn("taken_down", self.entries()[("telegram", "366")])
+
+    def test_not_modified_means_the_photo_is_there_already(self):
+        self.f.edit_not_modified = {"373"}
+        code, doc = self.go("apply", confirm=V.digest())
+        self.assertEqual(0, code)
+        self.assertEqual("done", self.by_id(doc)[("telegram", "373")]["action"])
+        self.assertEqual("video_replaced", self.entries()[("telegram", "373")]["taken_down"]["status"])
 
     def test_a_threads_delete_without_permission_is_red_and_unmarked(self):
         self.f.delete_error = OP.ApiError(403, 10, "Application does not have permission for this action")
@@ -297,9 +321,9 @@ class ApplyTests(Base):
         self.f.calls.clear()
         code, doc = self.go("apply", confirm=V.digest())
         self.assertEqual(0, code)
-        self.assertEqual("deleted", self.entries()[("telegram", "363")]["taken_down"]["status"])
+        self.assertEqual("video_replaced", self.entries()[("telegram", "363")]["taken_down"]["status"])
         self.assertTrue(doc["receipts"]["telegram"]["363"]["verified"])
-        # the rerun reads the preview ("Post not found") and writes nothing; done posts are not touched again
+        # the rerun reads the preview (no video any more) and writes nothing; done posts are not touched again
         self.assertEqual([], self.f.writes())
 
 

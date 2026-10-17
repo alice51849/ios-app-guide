@@ -10,10 +10,10 @@ plan and receipts of every platform 00_GrowthEngine reports/video_takedown_2026-
 and each one only when .github/growth/clip-posts.json records it under the same clip, id and link.
 
 Per platform, the most recoverable way the official API offers:
-- telegram: the bot deletes its channel message (deleteMessage). The Bot API lets a bot delete a message only
-  within 48 hours of sending; when Telegram refuses, the video is replaced instead (editMessageMedia): the
-  app's App Store icon as a photo, the post's own caption plus the direct download links (download_links), the
-  App Store / Google Play buttons. The original caption is kept in the report either way.
+- telegram: the video is replaced, not deleted (editMessageMedia; coordinator 2026-10-17: replacing is more
+  recoverable than deleting): the app's App Store icon as a photo, the post's own caption plus its direct App
+  Store link (and Google Play link when the app is on Android; download_links + post_qa), the App Store /
+  Google Play buttons. The original caption is kept in the report; editMessageMedia can put the video back.
 - threads: DELETE /{threads-media-id} (threads_delete). The download-link reply under it holds no video and stays.
 - instagram: nothing is written. The token is an Instagram Login token (graph.instagram.com); Meta's IG Media
   "Deleting" needs Facebook Login for Business (graph.facebook.com, instagram_manage_contents) and there is no
@@ -24,8 +24,9 @@ Modes:
         Threads post, the Telegram chat check (getChat) and the fallback caption a refused delete would get.
         Prints the digest of TARGETS.
 - apply: refused unless --confirm is that digest. Acts, reads every result back, keeps a receipt per post in
-        .github/growth/video-takedown.json and marks the post in clip-posts.json "taken_down" (the entry stays:
-        the clip is never posted again, and link_backfill.py / comment_replies.py skip the post).
+        .github/growth/video-takedown.json and marks the post in clip-posts.json "taken_down": the entry stays
+        (history), link_backfill.py / comment_replies.py skip the post, and clip_posts.already_posted ignores
+        it, so a new compliant real-recording cut of the same clip key can be planned and posted again.
 - mark:  copies the receipts of the saved report onto clip-posts.json (the workflow's commit loop runs it after
         resetting to origin/main, so a post logged meanwhile is never lost).
 
@@ -63,14 +64,12 @@ SUMMARY_REPORT = "00_GrowthEngine reports/video_takedown_2026-10-17.json"
 COMPLIANT_KEYS = frozenset({"claudeusagemini", "hourstaglite", "ledmovingtext"})
 CHANNEL = "LumiApps2026"          # the public Telegram channel the clips went to
 THREADS_USER = "hourstag.app"     # the Threads account the clips went to
-TG_DELETE_HOURS = 48              # Bot API deleteMessage: only messages sent less than 48 hours ago
 TG_CT = "bf_tg"                   # the attribution token of a link repaired on an old Telegram post (telegram_link_fix)
 CAPTION_MAX = post_qa.LIMITS["telegram"]
 GAP = 3                           # seconds between two writes
-PREVIEW_WAITS = (5, 10, 20, 30, 60)   # seconds before each public read-back of a deleted Telegram message
+PREVIEW_WAITS = (5, 10, 20)      # seconds before each public read-back of an edited Telegram message
 UA = "Mozilla/5.0 (compatible; lumi-video-takedown/1.0)"
-CANNOT_DELETE = ("message can't be deleted", "message can not be deleted", "message cannot be deleted")
-ALREADY_GONE = ("message to delete not found", "message not found")
+NOT_MODIFIED = "message is not modified"
 MARKS = {"deleted", "video_replaced", "pending_local_archive"}
 
 STORE_SHOT = "store_screenshot"
@@ -80,11 +79,12 @@ REASONS = {
     FREE_END_CARD: "已發布的 render 片尾卡寫「Free download／免費下載」（CLAUDE.md 影片規則）",
 }
 METHODS = {
-    "telegram": "deleteMessage（48 小時內）；被拒則 editMessageMedia 換成 App 圖示照片＋原文＋直接下載連結",
+    "telegram": "editMessageMedia：影片換成該款 App Store 圖示照片，保留原文並補 App Store（＋上架 Play 的款加 Play）"
+                "直接下載連結與按鈕；不刪除，可用 editMessageMedia 換回原影片",
     "threads": "DELETE /{threads-media-id}（threads_delete）",
     "instagram": "交本機：在 Instagram App 手動封存（Graph API 不能刪除／封存）",
 }
-REVERSIBLE = {"telegram": False, "threads": False, "instagram": True}
+REVERSIBLE = {"telegram": True, "threads": False, "instagram": True}
 END = "end card says Free download / 免費下載 (storyboard fixed 2026-10-17, the post is the old render)"
 
 
@@ -396,8 +396,6 @@ def base_row(target):
 
 
 def inspect_telegram(row, target, ctx):
-    deadline = parse_time(target["posted_at"]) + dt.timedelta(hours=TG_DELETE_HOURS)
-    row["delete_window_ends"] = stamp(deadline)
     seen = ctx.preview(target["id"])
     row["live"] = {k: seen.get(k) for k in ("state", "video", "photo")}
     if seen["state"] == "missing":
@@ -406,10 +404,9 @@ def inspect_telegram(row, target, ctx):
     if seen["state"] != "present":
         row.update(action="blocked", problem=f"public preview unreadable ({seen.get('error')})")
         return
-    row["caption"] = seen["text"]   # kept for the record: the message itself is deleted or edited
+    row["caption"] = seen["text"]   # kept for the record: the message's media and caption are replaced
     if not seen["video"]:
-        row["action"] = "none"
-        row["note"] = "the message carries no video any more"
+        row.update(action="none", replaced=True, note="the message carries no video any more")
         return
     payload, problems = tg_fallback(target, seen["text"], ctx.catalog, ctx.icon)
     row["fallback"] = {"ready": payload is not None, "problems": problems,
@@ -421,13 +418,11 @@ def inspect_telegram(row, target, ctx):
     if chat:
         row.update(action="blocked", problem=chat)
         return
-    in_window = ctx.now < deadline
-    row["action"] = "delete" if in_window else "delete_or_replace_video"
-    row["note"] = ("inside the 48 h delete window" if in_window
-                   else "past the 48 h window: deleteMessage is tried, a refusal swaps the video for the icon photo")
-    if not in_window and payload is None:
-        row.update(action="blocked", problem="past the 48 h window and the fallback is not ready: "
+    if payload is None:
+        row.update(action="blocked", problem="the replacement (icon photo + caption + links) is not ready: "
                    + "; ".join(problems))
+    else:
+        row["action"] = "replace_video"
 
 
 def inspect_graph(row, target, ctx):
@@ -482,50 +477,37 @@ def inspect_graph(row, target, ctx):
 
 
 def act_telegram(row, target, ctx, receipts):
-    payload = row.get("_fallback")
+    """editMessageMedia: the video becomes the app's icon photo, the caption keeps its text plus the links."""
+    payload = row["_fallback"]
     try:
-        ctx.tg(ctx.tg_token, "deleteMessage", {"chat_id": ctx.tg_chat, "message_id": int(target["id"])})
-        method = "deleted"
+        answer = ctx.tg(ctx.tg_token, "editMessageMedia",
+                        {"chat_id": ctx.tg_chat, "message_id": int(target["id"]), **payload})
     except RuntimeError as exc:
-        text = str(exc).lower()
-        if any(s in text for s in ALREADY_GONE):
-            method = "deleted"
-        elif any(s in text for s in CANNOT_DELETE) and payload:
-            row["delete_refused"] = str(exc)[:160]
-            try:
-                answer = ctx.tg(ctx.tg_token, "editMessageMedia",
-                                {"chat_id": ctx.tg_chat, "message_id": int(target["id"]), **payload})
-                answer = answer if isinstance(answer, dict) else {}
-            except RuntimeError as exc2:
-                row.update(action="failed", problem=f"delete refused and editMessageMedia failed ({str(exc2)[:120]})")
-                return
-            if "video" in answer or not answer.get("photo"):
-                row.update(action="unverified", problem="editMessageMedia answered a message that still has a video")
-                return
-            method = "video_replaced"
-        else:
-            row.update(action="failed", problem=f"deleteMessage failed ({str(exc)[:120]})")
+        if NOT_MODIFIED not in str(exc).lower():   # "not modified" = this very photo and caption are there
+            row.update(action="failed", problem=f"editMessageMedia failed ({str(exc)[:140]})")
             return
-    # Read-back: a deleted message must read "Post not found" on the public preview (the widget can lag a
-    # little, so it is asked a few times). An edited one is read back from the Bot API answer itself (the
-    # edited Message: a photo, no video); the preview is recorded next to it.
+        answer = None
+    # Read-back: the Bot API answers with the edited Message (a photo, no video); the public preview must show
+    # the message without a video too (the widget can lag, so it is asked a few times).
+    answered = isinstance(answer, dict) and bool(answer.get("photo")) and "video" not in answer
     seen = {"state": "unknown"}
     for wait in PREVIEW_WAITS:
         ctx.sleeper(wait)
         seen = ctx.preview(target["id"])
-        if (method == "deleted" and seen["state"] == "missing") or (
-                method == "video_replaced" and seen["state"] == "present" and seen["video"] is False):
+        if seen["state"] == "present" and seen["video"] is False:
             break
-    verified = seen["state"] == "missing" if method == "deleted" else True
-    row["readback"] = {k: seen.get(k) for k in ("state", "video", "photo")}
+    public_ok = seen["state"] == "present" and seen["video"] is False
+    verified = public_ok and (answered or answer is None)
+    row["readback"] = {"api_photo": answered, **{k: seen.get(k) for k in ("state", "video", "photo")}}
     row["action"] = "done" if verified else "unverified"
     if not verified:
-        row["problem"] = "deleteMessage answered ok but the public preview still shows the message (re-run apply)"
+        row["problem"] = ("editMessageMedia answered a message that still has a video" if answer and not answered
+                          else "the public preview still shows the video (re-run apply)")
     receipts.setdefault("telegram", {})[target["id"]] = {
-        "at": stamp(ctx.now), "clip": target["clip"], "status": method, "verified": verified,
-        "public_preview": row["readback"], "caption_before": row.get("caption", ""),
-        **({"caption_after": payload["media"]["caption"], "photo": payload["media"]["media"],
-            "delete_refused": row.get("delete_refused", "")} if method == "video_replaced" else {})}
+        "at": stamp(ctx.now), "clip": target["clip"], "status": "video_replaced", "verified": verified,
+        "readback": row["readback"], "caption_before": row.get("caption", ""),
+        "caption_after": payload["media"]["caption"], "photo": payload["media"]["media"],
+        "buttons": [b["url"] for b in payload["reply_markup"]["inline_keyboard"][0]]}
 
 
 def act_threads(row, target, ctx, receipts):
@@ -589,6 +571,12 @@ def run(mode, *, confirm="", ctx=None, posts_path=POSTS, report_path=REPORT, tar
         first = True
         for row, target in zip(rows, targets):
             book = receipts.setdefault(target["platform"], {})
+            if row.pop("replaced", False) and not (book.get(target["id"]) or {}).get("verified"):
+                # Already without its video when apply looked (an earlier run whose read-back lagged, or by hand).
+                book[target["id"]] = {"at": stamp(ctx.now), "clip": target["clip"], "status": "video_replaced",
+                                      "verified": True, "note": row.get("note", "")}
+                row["action"] = "done"
+                continue
             if row.pop("gone", False) and not (book.get(target["id"]) or {}).get("verified"):
                 # Already gone when apply looked (an earlier run's delete whose read-back lagged, or by hand):
                 # the read-back is this look itself.
@@ -596,7 +584,7 @@ def run(mode, *, confirm="", ctx=None, posts_path=POSTS, report_path=REPORT, tar
                                       "verified": True, "note": row.get("note", "found gone")}
                 row["action"] = "done"
                 continue
-            if row["action"] not in ("delete", "delete_or_replace_video", "local_archive"):
+            if row["action"] not in ("delete", "replace_video", "local_archive"):
                 continue
             if row["action"] == "local_archive":
                 book = receipts.setdefault("instagram", {})
@@ -617,6 +605,7 @@ def run(mode, *, confirm="", ctx=None, posts_path=POSTS, report_path=REPORT, tar
     for row in rows:
         row.pop("_fallback", None)
         row.pop("gone", None)
+        row.pop("replaced", None)
     handoff = [{"platform": r["platform"], "id": r["id"], "link": r["link"], "clip": r["clip"],
                 "username": (r.get("live") or {}).get("username"), "do": "archive (封存), not delete"}
                for r in rows if r["platform"] == "instagram" and r["action"] in ("local_archive", "handed_to_local")]
@@ -630,7 +619,7 @@ def run(mode, *, confirm="", ctx=None, posts_path=POSTS, report_path=REPORT, tar
         mark(posts_path, report_path, targets)
         ok = {"done", "none", "handed_to_local"}
     else:
-        ok = {"delete", "delete_or_replace_video", "local_archive", "none"}
+        ok = {"delete", "replace_video", "local_archive", "none"}
     return (0 if all(r["action"] in ok for r in rows) else 1), doc
 
 

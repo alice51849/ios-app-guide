@@ -1,8 +1,9 @@
 {
- "generated": "2026-10-16T21:48:28Z",
- "mode": "audit",
+ "generated": "2026-10-17T00:20:02Z",
+ "mode": "apply",
  "counts": {
-  "ok_caption": 32,
+  "backfilled": 3,
+  "ok_caption": 29,
   "draft_skipped": 13
  },
  "rows": [
@@ -11,27 +12,33 @@
    "id": "4648692",
    "permalink": "https://dev.to/cait518/lumi-trip-planet-world-travel-turn-every-family-trip-into-a-tiny-space-adventure-3ndp",
    "date": "2026-09-14",
-   "app": "",
-   "status": "ok_caption",
-   "text": "Lumi Trip Planet: World Travel — Turn every family trip into a tiny space adventure."
+   "app": "6787193643",
+   "status": "backfilled",
+   "text": "Lumi Trip Planet: World Travel — Turn every family trip into a tiny space adventure.",
+   "ios_id": "6787193643",
+   "locale": "en"
   },
   {
    "channel": "devto",
    "id": "4637226",
    "permalink": "https://dev.to/cait518/tripbee-pro-trip-planner-plan-every-trip-in-one-beautiful-private-offline-app-12n6",
    "date": "2026-09-12",
-   "app": "",
-   "status": "ok_caption",
-   "text": "TripBee Pro: Trip Planner — Plan every trip in one beautiful, private, offline app."
+   "app": "6787754435",
+   "status": "backfilled",
+   "text": "TripBee Pro: Trip Planner — Plan every trip in one beautiful, private, offline app.",
+   "ios_id": "6787754435",
+   "locale": "en"
   },
   {
    "channel": "devto",
    "id": "4628113",
    "permalink": "https://dev.to/cait518/lumi-letters-pro-abc-phonics-welcome-to-lumi-letters-1cpf",
    "date": "2026-09-11",
-   "app": "",
-   "status": "ok_caption",
-   "text": "Lumi Letters Pro: ABC Phonics — Welcome to Lumi Letters"
+   "app": "6778491147",
+   "status": "backfilled",
+   "text": "Lumi Letters Pro: ABC Phonics — Welcome to Lumi Letters",
+   "ios_id": "6778491147",
+   "locale": "en"
   },
   {
    "channel": "devto",

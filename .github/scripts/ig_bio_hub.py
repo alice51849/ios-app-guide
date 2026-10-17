@@ -566,6 +566,12 @@ def live(url=IGB.HUB_URL, opener=urllib.request.urlopen, data=None):
     return 0
 
 
+def same_page(a, b):
+    """'open.cait518.cc/ig', 'https://open.cait518.cc/ig/' and 'http://www.open.cait518.cc/IG' are one page."""
+    norm = lambda u: re.sub(r"^(?:https?://)?(?:www\.)?", "", str(u or "").strip(), flags=re.I).rstrip("/").lower()
+    return bool(norm(a)) and norm(a) == norm(b)
+
+
 TOKEN_RE = re.compile(r"(access_token=)[^&\s\"']+|\bIG[A-Za-z0-9_-]{20,}")
 
 
@@ -611,7 +617,7 @@ def whoami(opener=urllib.request.urlopen, token=None):
     print(f"username: {username}")
     print(f"website: {website if website is not None else '(not readable: ' + note + ')'}")
     if website is not None:
-        points = website.rstrip("/").lower() == IGB.HUB_URL.rstrip("/").lower()
+        points = same_page(website, IGB.HUB_URL)
         print(f"bio link points to the hub {IGB.HUB_URL}: {'yes' if points else 'NO'}")
         if not points:
             print(f"::warning::ig_bio_hub: the Instagram profile link is {website or '(empty)'}, not {IGB.HUB_URL}")

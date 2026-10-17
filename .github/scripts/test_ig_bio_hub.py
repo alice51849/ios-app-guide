@@ -277,6 +277,11 @@ class LiveAndWhoamiTest(unittest.TestCase):
         self.assertIn("fields=username%2Cwebsite", http.urls[0])
         self.assertNotIn(token, out.getvalue())
         self.assertIn("bio link points to the hub https://open.cait518.cc/ig/: yes", out.getvalue())
+        for typed in ("open.cait518.cc/ig", "https://open.cait518.cc/ig", "HTTPS://open.cait518.cc/IG/"):
+            self.assertTrue(H.same_page(typed, "https://open.cait518.cc/ig/"), typed)
+        for other in ("https://apps.apple.com/developer/guan-feng-lai/id1136144960", "", None,
+                      "https://open.cait518.cc/"):
+            self.assertFalse(H.same_page(other, "https://open.cait518.cc/ig/"), other)
 
     def test_whoami_says_so_when_the_api_does_not_give_the_website(self):
         token = "IGAAtesttoken1234567890abcdef"

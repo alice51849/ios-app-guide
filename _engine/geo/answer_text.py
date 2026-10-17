@@ -12,7 +12,7 @@ import re
 # 先用線上商店原文，避免把商店沒寫的宣稱寫進頁面。key 用 App 名稱（helper 只拿得到 app dict）。
 STORE_ALIGNED_OUTCOME = {
     # 2026-10-17 線上商店 en-US promotionalText 原句；舊 sub
-    # 「Daily L&R study plans, weak-spot drills & score tracking toward 990」商店沒有。
+    # 舊 sub（每日 L&R 計畫、弱點練習，外加一路追蹤到 990 分的分數功能）商店沒有寫分數追蹤。
     "Aim990": "An 8-minute diagnosis finds your 3 weakest skills, drills them daily and rechecks on Day 30",
 }
 

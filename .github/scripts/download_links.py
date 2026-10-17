@@ -18,6 +18,11 @@ the localized "download via the link in bio" line and a caption names the app in
 instagram_problems() / ensure_instagram_caption() below. Threads keeps its link in the first reply (account
 limit history), so its main text is not checked here - threads_reply_problems() checks the reply.
 
+Campaign tokens (ct) leave at channel level: coarse_campaign() turns any posting line's token into one of
+COARSE_CAMPAIGNS (threads, bluesky, telegram, instagram, youtube, web, social, outreach), because Apple hides a
+campaign's downloads below its privacy threshold. ensure_download_link() applies it to the text it returns, and the
+URL builders (social_post_common.campaign_app_store_url, clip_posts.with_campaign, the card store_url()s) mint it.
+
     python3 download_links.py check "text" --app-store https://apps.apple.com/app/id1   # exit 1 when missing
 """
 import json
@@ -150,9 +155,11 @@ def ensure_download_link(text, app_store_url, play_url=None, *, max_len=None, ap
 
     Raises MissingDownloadLink when the App Store link is not a valid apps.apple.com app link, or when
     the links do not fit `max_len` even after the body is trimmed (hashtag lines go first). `measure`
-    counts length the platform's way (graphemes, URL weights); default is len().
+    counts length the platform's way (graphemes, URL weights); default is len(). Every App Store link of the
+    result carries its channel-level ct (coarse_campaign).
     """
-    text = text or ""
+    text = coarsen_campaign_links(text)  # first, so the platform limit is measured on what is sent
+    app_store_url = coarse_campaign_url(app_store_url)
     if not app_store_id(app_store_url):
         raise MissingDownloadLink(f"{label}: no App Store link known for this app: {app_store_url!r}")
     block = _link_block(text, app_store_url, play_url, app_store_label, play_label)
@@ -203,6 +210,96 @@ def _verified(out, app_store_url, play_url, label):
 def threads_reply_problems(reply_text, app_store_url, play_url=None):
     """Threads posts keep links out of the main text; the first reply must carry them."""
     return link_problems(reply_text, app_store_url, play_url, label="Threads link reply")
+
+
+# ---------------------------------------------------------------- channel-level App Store campaign (ct)
+#
+# Apple's App Analytics shows a campaign's downloads per app only past its privacy threshold. Tokens cut per post,
+# page, locale, card type, clip variant or source family (h7_<app>_tg, ut_<app>_tg, soc_tg_<app>, cd_tg, bf_tg ...
+# on one Telegram channel) split the same few downloads into rows Apple never reveals: the 2026-10-17 audit found
+# 0 of 4,021 downloads in 30 days attributable. So every outbound App Store link leaves with ONE channel-level
+# token per app (the app is already Apple's row); which post, page, locale or variant it was stays in our own
+# posting logs (00_GrowthEngine agent/channel_proxy.py reads them). 00_GrowthEngine agent/ct_codes.py reads these
+# tokens and every older one; its test keeps the tables below in step with its channel table.
+COARSE_CAMPAIGNS = ("threads", "bluesky", "telegram", "instagram", "youtube", "web", "social", "outreach")
+# Platform codes the posting lines append as the last segment (h7_<app>[_b]_<pf>, ut_<app>_<pf>, cd_<pf>).
+_CLIP_CAMPAIGN = {
+    "th": "threads", "threads": "threads", "tg": "telegram", "telegram": "telegram", "ig": "instagram",
+    "igc": "instagram", "bs": "bluesky", "bsky": "bluesky", "yt": "youtube", "fb": "social", "pin": "social",
+    "tb": "social", "nv": "social", "pk": "social", "dm": "social", "ma": "social", "tt": "social",
+}
+# Hand-posted hero kits h_<app>_<market>_<channel>.
+_HERO_CAMPAIGN = dict(_CLIP_CAMPAIGN, **{
+    "x": "social", "rd": "social", "dc": "social", "pt": "social", "yc": "social", "nt": "social", "cm": "social",
+    "pi": "social", "li": "social", "kol": "outreach", "ln": "outreach", "at": "outreach", "kk": "outreach",
+    "ph": "outreach", "wa": "outreach",
+})
+# BM series bm_<app>_<market>_<channel>; a BM token without a known channel is its SEO intent page (web).
+_BM_CAMPAIGN = dict(_HERO_CAMPAIGN, seo="web", dir="outreach", zenn="social", gn="social", naver="social",
+                    note="social", qa="social", edu="outreach", gh="social")
+# Demand radar replies radar_<code>: the platform the reply was posted on.
+_RADAR_CAMPAIGN = {"th": "threads", "bs": "bluesky", "yt": "youtube", "rd": "social", "se": "social",
+                   "qr": "social", "pn": "social", "nv": "social", "fb": "social"}
+_CAMPAIGN_FAMILIES = (("h7_", _CLIP_CAMPAIGN, None), ("cd_", _CLIP_CAMPAIGN, None), ("ut_", _CLIP_CAMPAIGN, None),
+                      ("h_", _HERO_CAMPAIGN, None), ("bm_", _BM_CAMPAIGN, "web"))
+_CAMPAIGN_EXACT = {
+    "soc_th_guide": "threads", "rp_th": "threads", "bf_th": "threads",
+    "soc_tg_guide": "telegram", "soc_tg_digest": "telegram", "bf_tg": "telegram",
+    "rp_ig": "instagram", "bf_ig": "instagram", "yt_shorts": "youtube", "standard_site": "web",
+    "mastodon": "social", "nostr": "social", "devto": "social",
+}
+_CAMPAIGN_PREFIXES = (
+    ("soc_tg_", "telegram"), ("social_", "telegram"), ("tg_", "telegram"),
+    ("ig_bio_", "instagram"), ("geo_", "web"), ("iag_", "web"), ("img_", "web"), ("home_", "web"), ("sup_", "web"),
+    ("nostr_", "social"), ("devto_", "social"), ("qiita_", "social"), ("ml_", "social"),
+    ("appdir_", "outreach"), ("outreach", "outreach"),
+)
+# Sent as they are: experiment cells whose own contract reads the token back (gx_reach_*), the one long-form
+# YouTube token, and any token not listed above (00_GrowthEngine's inventory test names those).
+_CAMPAIGN_KEEP = ("gx_reach_", "yt_longform")
+_CT_PARAM = re.compile(r"(?<=[?&;])ct=([A-Za-z0-9_-]+)")
+
+
+def coarse_campaign(token):
+    """The channel-level campaign (one of COARSE_CAMPAIGNS) a ct token is sent as; a token kept on purpose
+    (_CAMPAIGN_KEEP) or not known here comes back unchanged."""
+    raw = str(token or "")
+    t = raw.strip().lower()
+    if not t or t in COARSE_CAMPAIGNS:
+        return t or raw
+    if t.startswith(_CAMPAIGN_KEEP):
+        return raw
+    if t in _CAMPAIGN_EXACT:
+        return _CAMPAIGN_EXACT[t]
+    if t.startswith("radar_"):
+        return _RADAR_CAMPAIGN.get(t[len("radar_"):], raw)
+    for prefix, platforms, own in _CAMPAIGN_FAMILIES:
+        if t.startswith(prefix):
+            return platforms.get(t.rsplit("_", 1)[-1]) or own or raw
+    for prefix, campaign in _CAMPAIGN_PREFIXES:
+        if t.startswith(prefix):
+            return campaign
+    if "_flyer" in t:
+        return "outreach"
+    return raw
+
+
+def coarse_campaign_url(url):
+    """An App Store link with its ct token sent at channel level (coarse_campaign); anything else unchanged."""
+    if not url or not APP_STORE_URL.match(url):
+        return url
+    return _CT_PARAM.sub(lambda m: "ct=" + coarse_campaign(m.group(1)), url)
+
+
+def coarsen_campaign_links(text):
+    """`text` with every App Store link's ct sent at channel level (idempotent; nothing else is touched)."""
+    return APP_STORE_URL.sub(lambda m: coarse_campaign_url(m.group(0)), text or "")
+
+
+def fine_campaigns(text):
+    """The ct tokens of App Store links in `text` that coarse_campaign would still merge ([] = all channel level)."""
+    return [m.group(1) for u in APP_STORE_URL.finditer(text or "") for m in _CT_PARAM.finditer(u.group(0))
+            if coarse_campaign(m.group(1)) != m.group(1)]
 
 
 # ---------------------------------------------------------------- Instagram: no URL, the profile (bio) link instead

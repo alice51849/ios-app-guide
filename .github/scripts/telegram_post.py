@@ -736,11 +736,18 @@ def telegram_campaign(item, with_locale=None):
     return f"soc_tg_{key[:TG_CT_MAX - len('soc_tg_') - len(suffix)]}{suffix}"
 
 
-def compose_text(item, android=True, review=True, ct=None, legacy_play=False):
+def compose_text(item, android=True, review=True, ct=None, legacy_play=False, channel_level=True):
+    """The post text. Its links carry the Telegram campaign (download_links.coarse_campaign turns the label,
+    soc_tg_<app> by default, into "telegram"); channel_level=False rebuilds a text sent before 2026-10-17 with the
+    label itself as ct, so _sent_digests still recognises it."""
     ct = telegram_campaign(item) if ct is None else ct
-    url = campaign_app_store_url(item.get("url"), ct)
-    play_link = legacy_play_store_url if legacy_play else play_store_url
-    play = play_link(item.get("app"), ct) if android else None
+    url = campaign_app_store_url(item.get("url"), ct, channel_level=channel_level)
+    if not android:
+        play = None
+    elif legacy_play:
+        play = legacy_play_store_url(item.get("app"), ct)
+    else:
+        play = play_store_url(item.get("app"), ct, channel_level=channel_level)
     links = f"👉 {url}" + (f"\n🤖 Google Play: {play}" if play else "")
     # Existing-user review link, only for the review_links.json pairs (category
     # leader with <= 20 ratings) in their own locale; no ct, no reward.
@@ -1020,13 +1027,15 @@ def page_unready_apps(app_ids, country=PAGE_READY_STOREFRONT, opener=None, sleep
 
 def _sent_digests(item):
     """Every payload digest this item has gone out as: the current text, and the texts sent before the
-    Google Play line, with the older Play referrer shape, before the review line (review_links.json), or
-    with the shared soc_tg_guide token."""
+    Google Play line, with the older Play referrer shape, before the review line (review_links.json), with the
+    shared soc_tg_guide token, or with a per-app / per-locale token as ct (before the channel-level campaign)."""
     return {
-        _digest(compose_text(item, android=android, review=review, ct=ct, legacy_play=legacy))
+        _digest(compose_text(item, android=android, review=review, ct=ct, legacy_play=legacy,
+                             channel_level=channel_level))
         for ct in dict.fromkeys((telegram_campaign(item), telegram_campaign(item, True), LEGACY_TG_CT))
         for android, legacy in ((True, False), (True, True), (False, False))
         for review in (True, False)
+        for channel_level in (True, False)
     }
 
 

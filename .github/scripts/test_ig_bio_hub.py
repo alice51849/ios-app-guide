@@ -154,7 +154,7 @@ class BioLineTest(unittest.TestCase):
         self.assertTrue(ig["text"].endswith("📲 Download via the link in bio"), ig["text"])
         self.assertNotIn("https://", ig["text"])
         self.assertNotIn("📲", th["text"])
-        self.assertIn("ct=rp_th", th["text"])
+        self.assertIn("ct=threads&", th["text"])
 
 
 class HubDataTest(unittest.TestCase):

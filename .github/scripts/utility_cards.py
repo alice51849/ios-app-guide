@@ -44,6 +44,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
 import countdown_cards as cd  # noqa: E402
+import download_links as DL  # noqa: E402
 from social_post_common import play_store_url  # noqa: E402
 
 GROWTH = HERE.parent / "growth"
@@ -223,7 +224,8 @@ def campaign(card, channel):
 
 
 def store_url(card, channel):
-    query = urllib.parse.urlencode({"pt": "118326163", "ct": campaign(card, channel), "mt": "8"})
+    # Sent at channel level (download_links.coarse_campaign): ut_<app>_<platform> stays the post log's label.
+    query = urllib.parse.urlencode({"pt": "118326163", "ct": DL.coarse_campaign(campaign(card, channel)), "mt": "8"})
     return f"https://apps.apple.com/{STORE[card['locale']]}/app/id{APPS[card['app']]['id']}?{query}"
 
 

@@ -153,7 +153,7 @@ class BackfillTest(unittest.TestCase):
         self.assertTrue(rows[0]["verified"])
         post, text = client.writes[0]
         self.assertEqual(post, "100")
-        self.assertIn(f"https://apps.apple.com/app/id{MOCHI}?pt=118326163&ct=bf_ig&mt=8", text)
+        self.assertIn(f"https://apps.apple.com/app/id{MOCHI}?pt=118326163&ct=instagram&mt=8", text)
         self.assertIn("https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo", text)  # Mochi is on Android
         self.assertIn("Get it on the App Store", text)
         # a second sweep: our own comment (and the state) mean nothing more is added
@@ -287,7 +287,7 @@ class BackfillTest(unittest.TestCase):
         rows = self.run_channel(client, apply=True)
         self.assertEqual(rows[0]["status"], "backfilled")
         self.assertEqual(client.writes[0][0], "200")
-        self.assertIn("ct=bf_th", client.writes[0][1])
+        self.assertIn("ct=threads&", client.writes[0][1])
 
     def test_summary_counts_and_merge(self):
         self.assertEqual(B.summarize([{"status": "missing"}, {"status": "missing"}, {"status": "write_failed:4"}]),
@@ -585,7 +585,7 @@ class InstagramNoWriteTest(unittest.TestCase):
         client = FakeClient("threads", [post])
         rows = self.run_channel(client, apply=True)
         self.assertEqual(rows[0]["status"], "backfilled")
-        self.assertIn(f"https://apps.apple.com/app/id{MOCHI}?pt=118326163&ct=bf_th&mt=8", client.writes[0][1])
+        self.assertIn(f"https://apps.apple.com/app/id{MOCHI}?pt=118326163&ct=threads&mt=8", client.writes[0][1])
 
     def test_an_audit_still_lists_instagram_and_a_profile_link_caption_is_fine(self):
         cta = B.DL.instagram_cta_line("en")

@@ -71,14 +71,15 @@ class PlanTest(unittest.TestCase):
         self.assertEqual("BM-11", chosen["series"])
         self.assertLessEqual(len(chosen["text"]), T.MAX_POST_CHARS)
         self.assertNotIn("http", chosen["text"])
-        self.assertIn("ct=bm_usagenow_us_x", __import__("threads_post").queued_links(chosen))
+        self.assertEqual("bm_usagenow_us_x", chosen["ct"])  # the series label stays on the plan / post log
+        # ...but the post goes out on Threads, so its link carries the Threads campaign
+        self.assertIn("ct=threads&", __import__("threads_post").queued_links(chosen))
 
-    def test_queued_posts_keep_bm_tokens_and_merge_the_rest(self):
+    def test_queued_posts_send_the_threads_campaign_whatever_their_label(self):
         tp = __import__("threads_post")
-        self.assertEqual("bm_mochi_us_th", tp.queued_campaign({"ct": "bm_mochi_us_th"}))
-        for ct in ("aim990_zhHant_1", "un_tw_threads_4", "", None):
-            self.assertEqual("soc_th_guide", tp.queued_campaign({"ct": ct}))
-        self.assertIn("ct=soc_th_guide", tp.queued_links({"app_id": "6784974530", "ct": "aim990_zhHant_1"}))
+        for ct in ("bm_mochi_us_th", "bm_usagenow_us_x", "aim990_zhHant_1", "un_tw_threads_4", "", None):
+            self.assertEqual("threads", tp.queued_campaign({"ct": ct}))
+        self.assertIn("ct=threads&", tp.queued_links({"app_id": "6784974530", "ct": "aim990_zhHant_1"}))
 
     def test_overlong_event_is_skipped(self):
         data = live_event(self.data)
@@ -139,8 +140,8 @@ class EveningQueueTest(unittest.TestCase):
     def test_queued_post_takes_the_slot_on_its_date(self):
         chosen = T.plan(DAY, self.data, MILD, queue=[QUEUED])
         self.assertEqual("CONV", chosen["series"])
-        self.assertEqual("bm_cyca_us_th", chosen["ct"])
-        self.assertIn("ct=bm_cyca_us_th", __import__("threads_post").queued_links(chosen))
+        self.assertEqual("bm_cyca_us_th", chosen["ct"])  # the series label stays on the plan / post log
+        self.assertIn("ct=threads&", __import__("threads_post").queued_links(chosen))
         self.assertNotIn("http", chosen["text"])
 
     def test_other_days_keep_the_rotation(self):
@@ -293,7 +294,7 @@ class EveningLinkReplyTest(unittest.TestCase):
         self.assertNotIn("http", main_call.args[2])
         self.assertEqual("m1", reply_call.kwargs["reply_to"])
         self.assertIn("apps.apple.com/app/id" + self.MOCHI, reply_call.args[2])
-        self.assertIn("ct=bm_x_us_th", reply_call.args[2])
+        self.assertIn("ct=threads&", reply_call.args[2])
         self.assertIn("play.google.com/store/apps/details?id=", reply_call.args[2])
         self.assertIn("fallback=none", self.out.getvalue())
         rc, posted, _ = self.evening(self.post(self.IOS_ONLY), ["m2", "r2"])

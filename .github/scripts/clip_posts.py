@@ -139,9 +139,11 @@ def clip_campaign(token):
 
 
 def with_campaign(url, channel):
+    """The clip's App Store link for one platform, with that channel's ct (download_links.coarse_campaign:
+    one campaign per app and channel; the clip, variant and locale stay in the post log)."""
     parts = urllib.parse.urlsplit(url)
     query = dict(urllib.parse.parse_qsl(parts.query))
-    query["ct"] = f"{clip_campaign(query.get('ct', 'h7'))}_{channel}"[:40]
+    query["ct"] = DL.coarse_campaign(f"{clip_campaign(query.get('ct', 'h7'))}_{channel}"[:40])
     return urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query)))
 
 

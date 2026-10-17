@@ -71,7 +71,7 @@ class ClipPostsTest(unittest.TestCase):
 
     def test_campaign_token_gets_channel_suffix_and_stays_short(self):
         url = C.with_campaign("https://apps.apple.com/tw/app/id1?pt=1&ct=h7_claudeusagemini_zh-Hant&mt=8", "tg")
-        self.assertIn("ct=h7_claudeusagemini_tg", url)  # the locale leaves the campaign token
+        self.assertIn("ct=telegram&", url)  # one campaign per app and channel: locale and clip stay in the post log
         long = C.with_campaign("https://apps.apple.com/us/app/id1?ct=" + "x" * 45, "ig")
         ct = dict(p.split("=") for p in long.split("?")[1].split("&"))["ct"]
         self.assertLessEqual(len(ct), 40)
@@ -81,7 +81,8 @@ class ClipPostsTest(unittest.TestCase):
                  "h7_mochi_th": "h7_mochi", "h7_mochi": "h7_mochi", "h7_mochi_b": "h7_mochi_b", "": "h7"}
         for token, merged in cases.items():
             self.assertEqual(C.clip_campaign(token), merged, token)
-        self.assertIn("ct=h7_mochi_b_yt", C.with_campaign("https://apps.apple.com/us/app/id1?ct=h7_mochi_b", "yt"))
+        # the variant clip goes out under the same YouTube campaign as the main one
+        self.assertIn("ct=youtube", C.with_campaign("https://apps.apple.com/us/app/id1?ct=h7_mochi_b", "yt"))
 
     def test_instagram_caption_points_to_search_and_bio_with_few_tags(self):
         text = C.caption(clip("mochi", "ja"), "instagram")
@@ -226,7 +227,7 @@ class ClipPostsTest(unittest.TestCase):
             self.assertEqual(C.post_telegram(clip("a", "en")), {"id": 7, "link": None})
         self.assertTrue(sent["endpoint"].endswith("/sendVideo"))
         button = json.loads(sent["reply_markup"])["inline_keyboard"][0][0]
-        self.assertIn("ct=h7_a_tg", button["url"])
+        self.assertIn("ct=telegram&", button["url"])
 
     def test_public_channel_post_gets_a_link(self):
         reply = {"ok": True, "result": {"message_id": 9, "chat": {"username": "lumiapps"}}}
@@ -265,18 +266,20 @@ class ClipPostsTest(unittest.TestCase):
         self.assertEqual(calls[0]["media_type"], "VIDEO")
         self.assertNotIn("https://", calls[0]["text"])
         self.assertEqual(calls[2]["reply_to_id"], "id2")
-        self.assertIn("ct=h7_a_th", calls[2]["text"])
+        self.assertIn("ct=threads&", calls[2]["text"])
 
     def test_play_link_uses_the_same_per_platform_ct_as_the_app_store_link(self):
-        # Mochi is Android-live in the snapshot: each platform's Play referrer is that platform's App Store ct.
+        # Mochi is Android-live in the snapshot: each platform's Play referrer is that platform's App Store ct
+        # (the channel-level campaign, download_links.coarse_campaign).
         mochi = dict(clip("mochi", "ja"), store_url="https://apps.apple.com/jp/app/id6785004775?pt=118326163"
                      "&ct=h7_mochi_ja&mt=8")
-        for channel in ("th", "tg", "yt", "bs", "fb", "tb"):
+        sent = {"th": "threads", "tg": "telegram", "yt": "youtube", "bs": "bluesky", "fb": "social", "tb": "social"}
+        for channel, campaign in sent.items():
             with self.subTest(channel=channel):
-                self.assertIn(f"ct=h7_mochi_{channel}", C.with_campaign(mochi["store_url"], channel))
+                self.assertIn(f"ct={campaign}&", C.with_campaign(mochi["store_url"], channel))
                 self.assertEqual(
                     "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
-                    f"&referrer=utm_source%3Dh7_mochi_{channel}%26utm_campaign%3Dmochi",
+                    f"&referrer=utm_source%3D{campaign}%26utm_campaign%3Dmochi",
                     C.play_url(mochi, channel))
         self.assertIsNone(C.play_url(clip("a", "en"), "th"))  # id1 is not on Android
 
@@ -296,9 +299,9 @@ class ClipPostsTest(unittest.TestCase):
             C.post_threads(mochi)
         self.assertNotIn("https://", calls[0]["text"])  # links never in the post body
         reply = calls[2]["text"].splitlines()
-        self.assertIn("ct=h7_mochi_th", reply[0])
+        self.assertIn("ct=threads&", reply[0])
         self.assertEqual("Google Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
-                         "&referrer=utm_source%3Dh7_mochi_th%26utm_campaign%3Dmochi", reply[1])
+                         "&referrer=utm_source%3Dthreads%26utm_campaign%3Dmochi", reply[1])
 
 
 class DownloadLinkTest(unittest.TestCase):
@@ -326,7 +329,7 @@ class DownloadLinkTest(unittest.TestCase):
 
     def test_telegram_caption_holds_the_urls_too_and_threads_text_does_not(self):
         text = C.caption(self.MOCHI, "telegram")
-        self.assertIn("ct=h7_mochi_tg", text)
+        self.assertIn("ct=telegram&", text)
         self.assertIn("play.google.com", text)
         self.assertNotIn("https://", C.caption(self.MOCHI, "threads"))  # Threads links go in the first reply
         self.assertEqual(C.post_qa.clip_problems(self.MOCHI, "threads", C.caption(self.MOCHI, "threads"), online=False), [])

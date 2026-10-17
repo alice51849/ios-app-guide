@@ -82,7 +82,7 @@ class CopyTest(unittest.TestCase):
         c = U.pick(DAY0 + dt.timedelta(days=1))
         url = U.store_url(c, "tg")
         self.assertTrue(url.startswith("https://apps.apple.com/tw/app/id6773017109?"))
-        self.assertIn("ct=ut_lumibopomofo_tg", url)
+        self.assertIn("ct=telegram&", url)
         self.assertLessEqual(len(U.campaign(c, "th")), 40)
 
 
@@ -144,7 +144,7 @@ class PostTest(unittest.TestCase):
             link = U.post_telegram("card.jpg", {"caption": "c"}, c)
         self.assertEqual(link, "https://t.me/lumiapps/9")
         row = send.call_args[0][2]
-        self.assertIn("ct=ut_aim990_tg", row[0]["url"])
+        self.assertIn("ct=telegram&", row[0]["url"])
         self.assertEqual(row[-1]["text"], "Google Play")  # Aim990 is on Android
 
     def test_posts_are_recorded_on_the_promotion_page(self):
@@ -254,7 +254,7 @@ class NewTypesTest(unittest.TestCase):
             self.assertIn(U.app_name(c), text)
             self.assertIsNone(banned.search(text), text)
             self.assertEqual(U.qa_problems({"caption": text}, c, "threads", online=False), [], text)
-        self.assertIn("ct=ut_mochidonestamp_th", U.store_url(U.pick(DAY0 + dt.timedelta(days=7)), "th"))
+        self.assertIn("ct=threads&", U.store_url(U.pick(DAY0 + dt.timedelta(days=7)), "th"))
         self.assertTrue(U.store_url(U.pick(DAY0 + dt.timedelta(days=6)), "tg").startswith(
             "https://apps.apple.com/tw/app/id6801956402?"))
         for app in U.APPS:
@@ -304,7 +304,7 @@ class DownloadLinkTest(unittest.TestCase):
         text = U.telegram_text(self.meta(card), card)
         store, play = U.download_urls(card, "telegram")
         self.assertIn(store, text)
-        self.assertIn("ct=ut_aim990_tg", store)
+        self.assertIn("ct=telegram&", store)
         self.assertTrue(play and play in text)
         # Instagram (owner 2026-10-17): no URL; the profile-link line and the brand hashtag instead.
         ig = U.instagram_text(self.meta(card), card)
@@ -361,7 +361,7 @@ class DownloadLinkTest(unittest.TestCase):
             U.cd.threads_image("https://x/card.jpg", "Head", links, label="utility")
             self.assertEqual(U.cd.LINK_FAILURES, [])
             self.assertEqual(len([c for c in calls if c.get("reply_to_id")]), 3)
-            self.assertIn("ct=ut_aim990_th", [c for c in calls if c.get("reply_to_id")][-1]["text"])
+            self.assertIn("ct=threads&", [c for c in calls if c.get("reply_to_id")][-1]["text"])
             calls.clear()
             out = io.StringIO()   # the refusal prints a ::error:: line; the daily workflow runs this test too (-q, no -b)
             with mock.patch.object(U.cd, "_post", side_effect=lambda url, f, timeout=60: (_ for _ in ()).throw(RuntimeError("x")) if f.get("reply_to_id") else {"id": "i"}), \

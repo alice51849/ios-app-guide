@@ -14,7 +14,7 @@ os.environ.setdefault("POST_QA_OFFLINE", "1")
 
 import download_links as D  # noqa: E402
 
-STORE = "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=h7_mochi_ig&mt=8"
+STORE = "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=telegram&mt=8"  # channel level, as composers send it
 PLAY = "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dx"
 
 
@@ -224,6 +224,58 @@ class InstagramRuleTest(unittest.TestCase):
         self.assertTrue(D.is_instagram("instagram") and D.is_instagram("instagram_feed"))
         for channel in ("telegram", "threads", "bluesky", "youtube", "facebook", ""):
             self.assertFalse(D.is_instagram(channel), channel)
+
+
+# Shared vectors: 00_GrowthEngine lib/test_outbound_links.py holds the same table for the mirrored core.
+CHANNEL_LEVEL = {
+    "h7_mochi_tg": "telegram", "h7_mochi_b_th": "threads", "ut_snapportlite_tg": "telegram", "cd_tg": "telegram",
+    "cd_pin": "social", "h7_mochi_tt": "social", "soc_tg_digest": "telegram", "soc_tg_gmoneylite": "telegram",
+    "soc_th_guide": "threads", "bf_tg": "telegram", "rp_ig": "instagram", "h7_mochi_yt": "youtube",
+    "yt_shorts": "youtube", "bm_usagenow_us_seo": "web", "bm_usagenow_us_th": "threads", "h_cvdesk_th_yt": "youtube",
+    "h_mochi_jp_kol": "outreach", "radar_bs": "bluesky", "radar_qr": "social", "geo_ask": "web", "iag_story": "web",
+    "sup_mochi_own": "web", "nostr_en-us": "social", "appdir_alternativeto_mochi": "outreach",
+    "mochi_flyer_ja": "outreach", "ig_bio_mochi": "instagram", "THREADS": "threads", "web": "web",
+}
+KEPT_AS_IS = ("gx_reach_b_v2_7c748bd2c62d6bf0", "yt_longform", "h7_mochi", "radar_zz", "wm_short15_lite", "")
+
+
+class ChannelLevelCampaignTest(unittest.TestCase):
+    """Apple hides a campaign below its privacy threshold: every link leaves with one ct per app and channel."""
+
+    def test_every_posting_line_token_leaves_at_channel_level(self):
+        for token, campaign in CHANNEL_LEVEL.items():
+            self.assertEqual(campaign, D.coarse_campaign(token), token)
+            self.assertIn(D.coarse_campaign(token), D.COARSE_CAMPAIGNS, token)
+        for token in KEPT_AS_IS:
+            self.assertEqual(token, D.coarse_campaign(token), token)
+        self.assertLessEqual(len(D.COARSE_CAMPAIGNS), 8)
+
+    def test_only_the_ct_of_app_store_links_changes(self):
+        text = ("Get it: https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=h7_mochi_tg&mt=8\n"
+                "<a href=\"https://apps.apple.com/app/id1?pt=1&amp;ct=ut_a_th&amp;mt=8\">x</a>\n"
+                "Play: https://play.google.com/store/apps/details?id=a&referrer=utm_source%3Dh7_mochi_tg\n"
+                "Rate: https://apps.apple.com/app/id6785004775?action=write-review\n"
+                "Other: https://example.com/?ct=h7_mochi_tg")
+        out = D.coarsen_campaign_links(text)
+        self.assertEqual(text.replace("ct=h7_mochi_tg&mt", "ct=telegram&mt").replace("ct=ut_a_th&", "ct=threads&"),
+                         out)
+        self.assertEqual(out, D.coarsen_campaign_links(out))  # idempotent
+        self.assertEqual(["h7_mochi_tg", "ut_a_th"], D.fine_campaigns(text))
+        self.assertEqual([], D.fine_campaigns(out))
+        self.assertIsNone(D.coarse_campaign_url(None))
+        self.assertEqual("https://example.com/?ct=h7_a_th", D.coarse_campaign_url("https://example.com/?ct=h7_a_th"))
+
+    def test_the_last_gate_sends_the_channel_campaign_and_still_fits(self):
+        fine = "https://apps.apple.com/app/id6785004775?pt=118326163&ct=rp_ig&mt=8"
+        sent = fine.replace("ct=rp_ig", "ct=instagram")
+        self.assertEqual(f"Hi\n\nApp Store: {sent}", D.ensure_download_link("Hi", fine))
+        self.assertEqual(f"Hi {sent}", D.ensure_download_link(f"Hi {fine}", STORE))
+        # The limit is measured on the text as sent (channel ct), so an appended link block still fits.
+        body = "word " * 20
+        out = D.ensure_download_link(body, fine, max_len=len(body) + len(sent) - 10)
+        self.assertLessEqual(len(out), len(body) + len(sent) - 10)
+        self.assertIn(sent, out)
+        self.assertEqual([], D.fine_campaigns(out))
 
 
 if __name__ == "__main__":

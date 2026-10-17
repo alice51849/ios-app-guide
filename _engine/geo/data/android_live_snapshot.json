@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-17T15:01:47+0800",
- "count": 49,
- "content_sha256": "55a2b1b770fdac2dc4dc9b9522dfe9cfde7337b4cdb1204b4f5a5586dd3550a4",
+ "source_generated": "2026-10-17T15:32:38+0800",
+ "count": 50,
+ "content_sha256": "037d70c198584a81c161ca218c231f689904138dcd4324caf14018eb9cfb1b3b",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -1028,6 +1028,27 @@
     "zh-TW": {
      "title": "Wordmate Lite 背單字：每天五個單字",
      "short_description": "英文單字、日文單字都能背：一次五個、一分鐘練完，可聽發音、離線也能背，養成每天背單字的習慣"
+    }
+   }
+  },
+  "zipbox": {
+   "ios_app_id": "6806776579",
+   "ios_name": "Zipbox",
+   "android_folder": "52_Zipbox",
+   "package": "com.alice51849.Zipbox",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox",
+   "paid": true,
+   "first_seen": "2026-10-17T15:32:38+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Zipbox: Unzip RAR, ZIP & 7z",
+     "short_description": "Unzip, unrar and 7z file extractor: preview inside, take out only what you need"
+    },
+    "zh-TW": {
+     "title": "Zipbox 解壓縮：RAR ZIP 7z",
+     "short_description": "解壓縮前先預覽壓縮檔內容，只取出需要的檔案；支援 13 種格式，也能開啟密碼保護的壓縮檔"
     }
    }
   }

@@ -24,29 +24,34 @@ class CountdownLinksTest(unittest.TestCase):
     def test_instagram_and_telegram_texts_hold_the_full_urls(self):
         for locale in ("zh-Hant", "ko", "ja", "en"):
             e = event(locale)
-            for channel, build in (("instagram", C.instagram_text), ("telegram", C.telegram_text)):
-                text = build(meta(e), e)
-                store, _play = C.download_urls(e, channel)
-                self.assertIn(store, text, (locale, channel))
-                self.assertIn("ct=cd_" + C.CHANNEL_CT[channel], store)
-                self.assertTrue(C.DL.has_download_link(text, store), (locale, channel))
-        self.assertIn("下載連結在個人檔案", C.instagram_text(meta(event()), event()))
+            text = C.telegram_text(meta(e), e)
+            store, _play = C.download_urls(e, "telegram")
+            self.assertIn(store, text, locale)
+            self.assertIn("ct=telegram&", store)
+            self.assertTrue(C.DL.has_download_link(text, store), locale)
+            # Instagram (owner 2026-10-17): no URL; the profile-link line and #CountDaysNow instead.
+            ig = C.instagram_text(meta(e), e)
+            self.assertNotIn("https://", ig, locale)
+            self.assertEqual(ig.splitlines()[-1].split()[0], "#CountDaysNow", locale)
+            self.assertEqual([], C.DL.instagram_problems(ig, "CountDaysNow", locale=e["locale"]), locale)
+        self.assertIn("📲 請到個人檔案（bio）的連結下載", C.instagram_text(meta(event()), event()))
 
     def test_qa_passes_the_real_texts_and_refuses_bare_ones(self):
         import post_qa
         e = event()
-        for channel in ("instagram", "telegram"):
-            self.assertFalse([p for p in C.qa_problems(meta(e), e, channel, online=False) if "download link" in p], channel)
+        for channel, missing in (("instagram", "profile-link line"), ("telegram", "download link")):
+            self.assertFalse([p for p in C.qa_problems(meta(e), e, channel, online=False)
+                              if "download link" in p or "profile-link" in p or "brand hashtag" in p], channel)
             bare = post_qa.card_problems("學測倒數\n連結在 bio", "zh-Hant", channel, store_url=C.store_url(e, "qa"),
                                          name="CountDaysNow", online=False)
-            self.assertTrue(any("download link" in p for p in bare), channel)
+            self.assertTrue(any(missing in p for p in bare), channel)
 
     def test_telegram_send_carries_the_link_in_the_caption_and_the_button(self):
         e = event()
         with mock.patch.object(C, "send_photo") as send:
             C.post_telegram("card.jpg", meta(e), e)
         self.assertIn(C.store_url(e, "tg"), send.call_args[0][1])
-        self.assertIn("ct=cd_tg", send.call_args[0][2][0]["url"])
+        self.assertIn("ct=telegram&", send.call_args[0][2][0]["url"])
         self.assertEqual(send.call_args[1]["guard"][0], C.store_url(e, "tg"))
 
     def test_the_guard_adds_a_missing_link_and_refuses_when_none_is_known(self):

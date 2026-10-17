@@ -1,9 +1,11 @@
 name: Download link backfill
 
-# Owner rule (2026-10-17): every promo post carries the app's direct download link. Instagram
-# captions and Threads posts cannot be edited through the API, so the link goes in ONE comment /
-# reply under OUR OWN post when it lacks one (link_backfill.py: only the token owner's media, once
-# per post, newest first, a few per run, read back after writing, stops on a rate-limit answer).
+# Owner rule (2026-10-17): every promo post carries the app's direct download link. Threads posts
+# cannot be edited through the API, so the link goes in ONE reply under OUR OWN post when it lacks one
+# (link_backfill.py: only the token owner's media, once per post, newest first, a few per run, read
+# back after writing, stops on a rate-limit answer). Instagram: nothing is added any more (owner,
+# the same day: Instagram texts carry no URL and point to the profile link; link_backfill.NO_WRITE) -
+# an apply run skips it, an audit still lists it, the comments added earlier stay.
 #   mode=audit  lists which posts have / lack the link and writes the report, posts nothing.
 #   mode=apply  adds the missing links (max_new per channel per run; `only` = a small first batch).
 #   mode=diag   read-only look at what the platform answers about the posts in `only`.

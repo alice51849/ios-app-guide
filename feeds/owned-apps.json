@@ -258,7 +258,7 @@
       "record_count": 53
     },
     "bn-BD": {
-      "date_modified": "2026-10-17T16:15:14Z",
+      "date_modified": "2026-10-17T17:49:35Z",
       "formats": {
         "atom": {
           "accepted_content_types": [
@@ -268,7 +268,7 @@
           ],
           "content_type": "application/atom+xml",
           "path": "bn-BD/feed.xml",
-          "sha256": "178a90b15b3fff06ae3425e2582a6d48bce34b6fe3ec3d6370f852044b963773",
+          "sha256": "6b6a6738af52b50e777f2d2903047da0b0275a791a3a335b1698cdf83a9018ac",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.xml"
         },
         "json_feed": {
@@ -278,7 +278,7 @@
           ],
           "content_type": "application/feed+json",
           "path": "bn-BD/feed.json",
-          "sha256": "2aae900c5caf3efba81d3b6634f470921375164dcbb463834726435fbba20fe7",
+          "sha256": "dfbaac9fcd35cabd6a74285d3f8fc41d1fd735c9f016095d69b3b047fda6929c",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/feed.json"
         },
         "rss": {
@@ -289,7 +289,7 @@
           ],
           "content_type": "application/rss+xml",
           "path": "bn-BD/rss.xml",
-          "sha256": "d5b536ff64041f4c9106eaf9ba524009f1b9dfbacc3e55b009c99ad5fc4a0bf2",
+          "sha256": "8ec23b6232c7774293d661f7c8e9b116eefa945c402010c05d2a734b4a319033",
           "url": "https://open.cait518.cc/ios-app-guide/bn-BD/rss.xml"
         }
       },
@@ -2218,7 +2218,7 @@
       "record_count": 53
     }
   },
-  "generation_digest": "dc1dc69a1413c32a7386330aac88424fd9ccda90b566a9a5288af914f01b7e6a",
+  "generation_digest": "f1bcbbf4c010c78f0bfc8d7412a2c50dd70a874b3db4e139fdaec5e24d71afe5",
   "locale_count": 50,
   "notification_feed_count": 147,
   "purchase_models": {
@@ -2233,7 +2233,7 @@
     "catalog_content_digest": "adaede8286c9e3187dc59d4ad57ee3a7351b1259fd4193ca828c755e41ea57d2",
     "roster_digest": "15b66ce58723f2f232a1fb7fabb382ec541c6c97925cbc351815601e8a3bde9d",
     "source_files": {
-      "../social/videogen/registry.py": "1dd10cdd194b868e6b15a6c3a686d86961ac4b97e24baf325022ad6c47a4a0b2",
+      "../social/videogen/registry.py": "6165683030366eabd5066ca31c63864e4d9adb9f87c47979e80dca3dc1a8f1f1",
       "app_store_storefronts.py": "5f6f065cfb94ff45613982b112a35876dd8396f814466700a6c960a8a8c50ad1",
       "build_pages_i18n.py": "dc043c1a2c9150ff96c2b069d2ad54eeb93784bde27af1b934cdb1a4c605be19",
       "data/paid_upfront_surface_repairs.json": "b7f48683121484d0327ae24b9d70ced2c48920debde420218de05dfa20e6fa1c",

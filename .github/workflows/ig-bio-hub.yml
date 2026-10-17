@@ -1,8 +1,9 @@
 name: Instagram profile-link hub
 
 # Instagram never turns a URL in a caption or a comment into a link (owner 2026-10-17: 「你IG貼文的留言
-# 都沒有成功變成連結耶 沒辦法直接點」); only the profile link can be tapped. So every Instagram text says
-# "Link in bio → tap <app>" (ig_bio.py) and the profile link is the hub https://open.cait518.cc/ig/: the apps
+# 都沒有成功變成連結耶 沒辦法直接點」); only the profile link can be tapped. So every Instagram text carries no URL,
+# closes with "📲 Download via the link in bio" (in its language) and names the app in one brand hashtag
+# (#Mochi; ig_bio.py), and the profile link is the hub https://open.cait518.cc/ig/: the apps
 # of the newest Instagram posts on top, every app below, one tap to the App Store (ct=ig_bio_<app>).
 # The "Record the post link" steps rebuild .github/growth/ig-hub/index.html after every Instagram post and
 # the root site (alice51849.github.io ig-hub.yml) mirrors it every 10 minutes. This run, daily and on demand:

@@ -181,17 +181,20 @@ class PlanTest(unittest.TestCase):
 
     def test_caption_and_campaign_follow_the_platform(self):
         it = S.clip_item("a/zh-Hant", clip("a", "zh-Hant"), "plurk")
-        self.assertIn("ct=h7_a_pk", it["store"])
+        self.assertIn("ct=social&", it["store"])  # Plurk: one of the smaller platforms, one campaign
         self.assertIn("a 鉤子 zh-Hant", it["caption"])
 
     def test_android_clip_play_link_carries_each_platforms_own_ct(self):
         mochi = dict(clip("mochi", "en"), store_url="https://apps.apple.com/us/app/id6785004775?pt=118326163"
                      "&ct=h7_mochi_en&mt=8")
-        for channel, ct in S.CT.items():
+        # each platform's channel-level campaign (download_links.coarse_campaign), the same on both stores
+        sent = {"bluesky": "bluesky", "youtube": "youtube"}
+        for channel in S.CT:
             with self.subTest(channel=channel):
+                ct = sent.get(channel, "social")
                 it = S.clip_item("mochi/en", mochi, channel)
-                self.assertIn(f"ct=h7_mochi_{ct}", it["store"])
-                self.assertTrue(it["play"].endswith(f"&referrer=utm_source%3Dh7_mochi_{ct}%26utm_campaign%3Dmochi"))
+                self.assertIn(f"ct={ct}&", it["store"])
+                self.assertTrue(it["play"].endswith(f"&referrer=utm_source%3D{ct}%26utm_campaign%3Dmochi"))
                 self.assertEqual(f"Google Play: {it['play']}", S.link_lines(it)[1])
         it = S.clip_item("mochi/en", mochi, "youtube")
         self.assertIn(f"Google Play: {it['play']}", S.yt_meta(it)[1])
@@ -273,7 +276,7 @@ class ServedElsewhereTest(unittest.TestCase):
         self.assertNotIn("tiktok", S.CHANNELS)  # the Mac posts it; nothing here ever calls TikTok
         it = mochi_item("tiktok")
         text = S.final_text(it, "tiktok")
-        self.assertIn("ct=h7_mochi_tt", it["store"])
+        self.assertIn("ct=social&", it["store"])
         self.assertIn(it["store"], text)
         self.assertIn(S.play_of(it), text)
         self.assertLessEqual(len(text), 2200)
@@ -287,7 +290,7 @@ class ServedElsewhereTest(unittest.TestCase):
         with mock.patch.object(S, "exists", return_value=True), mock.patch.object(S.SC, "winners", return_value={}):
             feed = S.export(DAY, data=data, perf={})
         tt = feed["pool"]["tiktok"][0]
-        self.assertIn("ct=h7_a_tt", tt["store"])
+        self.assertIn("ct=social&", tt["store"])
         self.assertIn(tt["store"], tt["tiktok"]["caption"])
         pin = feed["pool"]["pinterest"][0]
         self.assertEqual(pin["pinterest"]["link"], pin["store"])
@@ -316,13 +319,13 @@ class ServedElsewhereTest(unittest.TestCase):
         self.assertEqual(top["youtube"]["title"], "Hit your AI limit mid-task again? | UsageNow #Shorts")  # problem first
         self.assertEqual(top["variant"], "a")
         self.assertLessEqual(len(top["youtube"]["title"]), 100)
-        self.assertIn("ct=h7_b_yt", top["store"])
+        self.assertIn("ct=youtube&", top["store"])
         self.assertIn("quota · reset · countdown", top["youtube"]["description"])
         self.assertEqual(top["youtube"]["tags"][:3], ["quota", "reset", "countdown"])
         bs = feed["pool"]["bluesky"][-1]
         self.assertNotIn("boost_rank", bs)
         self.assertTrue(bs["alt"] and bs["variant"] and bs["keywords"])
-        self.assertIn("_bs", bs["store"])
+        self.assertIn("ct=bluesky&", bs["store"])
         self.assertEqual(feed["performance"], perf)
         json.dumps(feed)
 
@@ -411,7 +414,7 @@ class YoutubeLinksTest(unittest.TestCase):
         self.assertEqual([i["slot"] for i in bs if i["kind"] == "clip"], [1, 1, 15])
         self.assertTrue(any(i["kind"] == "card" for i in bs))
         self.assertFalse(any(i["kind"] == "card" for i in feed["items"]["youtube"]))
-        self.assertIn("_ma", feed["items"]["mastodon"][0]["store"])
+        self.assertIn("ct=social&", feed["items"]["mastodon"][0]["store"])
         json.dumps(feed)  # plain data only
         with mock.patch.object(S, "exists", return_value=False):
             feed = S.export(dt.date(2026, 11, 1), data={"clips": {}, "schedule": []})
@@ -462,8 +465,7 @@ class CardsTest(unittest.TestCase):
         self.assertIn("card", kinds)
         for c in cards:
             self.assertTrue(c["image"].startswith("https://raw.githubusercontent.com/"))
-            self.assertIn("_tb", c["store"])
-            self.assertRegex(c["store"], r"ct=(cd_tb|ut_[a-z0-9]+_tb)&")  # app x platform, no event / type id
+            self.assertIn("ct=social&", c["store"])  # Tumblr: app x channel, no card / event / type id
             self.assertTrue(c["caption"])
         self.assertTrue(all(c["locale"] == "ko" for c in S.todays_cards(dt.date(2026, 11, 1), "naver")))
 

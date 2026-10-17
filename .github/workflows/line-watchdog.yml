@@ -5,9 +5,16 @@ name: line-watchdog
 # the latest telegram-daily success must carry a Telegram message_id — plus a
 # recent successful run per scheduled workflow. Stale lines are re-triggered
 # at most twice per 24h; anything still red is kept in a single `line-health`
-# issue and announced once through the existing Telegram bot (alert failure
-# never turns the watchdog itself red). Only this repository's token is used;
+# issue and announced through the existing Telegram bot (alert failure never
+# turns the watchdog itself red). Only this repository's token is used;
 # nothing here types into a session or messages another agent.
+#
+# Telegram dedupe (2026-10-17): the judge step used to post on every red run
+# (`--telegram`), so a line that stayed red repeated twice a day. Now
+# `line_alert.py` posts only when the state changes — a line turns red that was
+# not notified yet, or every line is fresh again — using a state file carried
+# between runs by actions/cache; the state advances only after Telegram
+# accepted the message, so a failed send is retried on the next run.
 
 on:
   schedule:
@@ -36,11 +43,19 @@ jobs:
           sparse-checkout: |
             .github
           sparse-checkout-cone-mode: true
+      - name: Restore the alert state (which red lines were already notified)
+        timeout-minutes: 2
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/line-alert-state
+          key: line-alert-state-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            line-alert-state-
       - name: Self-test the judgement logic before trusting it
         timeout-minutes: 3
         run: |
           cd .github/scripts
-          python3 -m unittest test_line_watchdog
+          python3 -m unittest test_line_watchdog test_line_alert
       - name: Judge lines, heal stale ones, reconcile the line-health issue
         id: judge
         timeout-minutes: 8
@@ -50,11 +65,7 @@ jobs:
             --profile ios-app-guide \
             --repo "$GITHUB_REPOSITORY" \
             --root . \
-            --report "$RUNNER_TEMP/line-health.json" \
-            --telegram
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+            --report "$RUNNER_TEMP/line-health.json"
       - name: Preserve the judgement as an artifact
         if: always()
         timeout-minutes: 2
@@ -64,6 +75,26 @@ jobs:
           path: ${{ runner.temp }}/line-health.json
           if-no-files-found: warn
           retention-days: 14
+      - name: Telegram alert on state change (new red line, or all green again)
+        if: always()
+        timeout-minutes: 2
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python3 .github/scripts/line_alert.py \
+            --report "$RUNNER_TEMP/line-health.json" \
+            --state "$RUNNER_TEMP/line-alert-state/state.json" \
+            --label "ios-app-guide" \
+            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+      - name: Save the alert state for the next run
+        if: always()
+        timeout-minutes: 2
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ runner.temp }}/line-alert-state
+          key: line-alert-state-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Fail the run only when a line is still red
         timeout-minutes: 1
         run: test "${{ steps.judge.outcome }}" = "success"

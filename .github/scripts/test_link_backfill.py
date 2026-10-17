@@ -102,7 +102,19 @@ def fresh_state():
     return B.load_state(Path("/nonexistent"))
 
 
+def lift_no_write(case):
+    """The sweeper's own logic, driven with the Instagram fake (the platform whose post lists hide the account's own
+    comments, so every read-back path runs). In production Instagram is a NO_WRITE channel (owner 2026-10-17:
+    Instagram texts carry no URL); InstagramNoWriteTest checks that switch, these tests lift it."""
+    patcher = mock.patch.dict(B.NO_WRITE, clear=True)
+    patcher.start()
+    case.addCleanup(patcher.stop)
+
+
 class BackfillTest(unittest.TestCase):
+    def setUp(self):
+        lift_no_write(self)
+
     def run_channel(self, client, state=None, **kw):
         kw.setdefault("sleeper", lambda s: None)
         kw.setdefault("log", lambda *a: None)
@@ -141,7 +153,7 @@ class BackfillTest(unittest.TestCase):
         self.assertTrue(rows[0]["verified"])
         post, text = client.writes[0]
         self.assertEqual(post, "100")
-        self.assertIn(f"https://apps.apple.com/app/id{MOCHI}?pt=118326163&ct=bf_ig&mt=8", text)
+        self.assertIn(f"https://apps.apple.com/app/id{MOCHI}?pt=118326163&ct=instagram&mt=8", text)
         self.assertIn("https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo", text)  # Mochi is on Android
         self.assertIn("Get it on the App Store", text)
         # a second sweep: our own comment (and the state) mean nothing more is added
@@ -275,7 +287,7 @@ class BackfillTest(unittest.TestCase):
         rows = self.run_channel(client, apply=True)
         self.assertEqual(rows[0]["status"], "backfilled")
         self.assertEqual(client.writes[0][0], "200")
-        self.assertIn("ct=bf_th", client.writes[0][1])
+        self.assertIn("ct=threads&", client.writes[0][1])
 
     def test_summary_counts_and_merge(self):
         self.assertEqual(B.summarize([{"status": "missing"}, {"status": "missing"}, {"status": "write_failed:4"}]),
@@ -478,6 +490,9 @@ class UrlOkTest(unittest.TestCase):
 class ConflictAndCountTest(unittest.TestCase):
     """A link to another app already under the post, and a comment count that cannot be read, stop the write."""
 
+    def setUp(self):
+        lift_no_write(self)
+
     def run_channel(self, client, state=None, **kw):
         kw.setdefault("sleeper", lambda s: None)
         kw.setdefault("log", lambda *a: None)
@@ -541,6 +556,53 @@ class ConflictAndCountTest(unittest.TestCase):
         self.assertEqual(2, merged["failed"]["threads"]["9"]["n"])           # not lowered by an older copy
         self.assertEqual(1, merged["failed"]["threads"]["8"]["n"])
         self.assertEqual("ok_reply", merged["checked"]["threads"]["5"])
+
+
+class InstagramNoWriteTest(unittest.TestCase):
+    """Owner 2026-10-17 「改成原版的好了 請大家去個人檔案下載」: no link comment goes under an Instagram post any more (its
+    texts carry no URL and point to the profile link); the comments written before stay; Threads goes on as before."""
+
+    def run_channel(self, client, state=None, **kw):
+        kw.setdefault("sleeper", lambda s: None)
+        kw.setdefault("log", lambda *a: None)
+        return B.run(client, catalog(), state if state is not None else fresh_state(), **kw)
+
+    def test_instagram_is_a_no_write_channel_and_threads_is_not(self):
+        self.assertIn("instagram", B.NO_WRITE)
+        self.assertNotIn("threads", B.NO_WRITE)
+
+    def test_an_apply_run_neither_reads_nor_writes_on_instagram(self):
+        client, lines, state = ig([reel(), reel("101")]), [], fresh_state()
+        rows = self.run_channel(client, state, apply=True, log=lines.append)
+        self.assertEqual(rows, [])
+        self.assertEqual((client.writes, client.attempts, client.reads), ([], 0, 0))
+        self.assertEqual(state["done"], {}, "no receipt, nothing was written")
+        self.assertTrue(any(line.startswith("instagram: nothing is added") for line in lines), lines)
+
+    def test_threads_replies_still_get_the_link(self):
+        post = {"id": "200", "text": "Task list too boring?", "permalink": "https://www.threads.com/@b/post/BBB",
+                "timestamp": "2026-10-15T06:00:00+0000"}
+        client = FakeClient("threads", [post])
+        rows = self.run_channel(client, apply=True)
+        self.assertEqual(rows[0]["status"], "backfilled")
+        self.assertIn(f"https://apps.apple.com/app/id{MOCHI}?pt=118326163&ct=threads&mt=8", client.writes[0][1])
+
+    def test_an_audit_still_lists_instagram_and_a_profile_link_caption_is_fine(self):
+        cta = B.DL.instagram_cta_line("en")
+        client = ig([reel(caption=f"Task list too boring?\nSearch “Mochi” on the App Store\n{cta}\n\n#Mochi")])
+        rows = self.run_channel(client)
+        self.assertEqual([r["status"] for r in rows], ["ok_bio_link"])
+        self.assertEqual(client.reads, 0, "a caption that follows the rule needs no look at the comments")
+        old = ig([reel()])   # an older "Link in bio" caption is listed as it is; nothing goes under it
+        self.assertEqual([r["status"] for r in self.run_channel(old)], ["missing"])
+        self.assertEqual([r["status"] for r in self.run_channel(old, apply=True)], [])
+        self.assertEqual(old.writes, [])
+        with_url = ig([reel(caption=f"Hook\n{cta}\nhttps://apps.apple.com/app/id{MOCHI}")])   # a URL breaks the rule
+        self.assertNotEqual("ok_bio_link", self.run_channel(with_url)[0]["status"])
+
+    def test_the_sweeper_never_deletes_a_comment(self):
+        source = Path(B.__file__).read_text(encoding="utf-8")
+        self.assertNotRegex(source, r'"DELETE"|\.delete\(|method="DELETE"')
 
 
 class ThreadsPublishWaitTest(unittest.TestCase):

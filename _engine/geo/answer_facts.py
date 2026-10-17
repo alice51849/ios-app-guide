@@ -1364,7 +1364,7 @@ def _scenario_facts(q: str, key: str, name: str, bullets: list[str]) -> dict[str
              "Timed practice to build exam pace.", "Progress tracking over a study plan.", "Realistic, honest expectations — no guaranteed scores."],
             ["Take a short diagnostic to find weak areas.", f"Follow a daily plan in {name}.",
              "Drill your weakest Listening/Reading parts.", "Practice under timed conditions.", "Track your progress over the plan."],
-            f"{name} fits when you want a structured daily TOEIC L&R study routine with weak-spot drills and score tracking.",
+            f"{name} fits when you want a structured daily TOEIC L&R study routine with weak-spot drills and a Day 30 recheck.",
             [{"q": "How do I study for the TOEIC test?", "a": "Practice daily, focus on your weakest sections, and do timed drills to build pace; track progress over a plan."},
              {"q": "Can an app guarantee a TOEIC score?", "a": "No — no app can guarantee a score. TOEIC is a registered trademark of ETS; this is an independent study aid, not endorsed by ETS."},
              {"q": "How long does TOEIC prep take?", "a": "It varies by starting level and study time; steady daily practice over several weeks is a common approach."}])

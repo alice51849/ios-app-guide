@@ -381,10 +381,10 @@ def queued_today(day=None):
 
 
 def queued_campaign(post):
-    """A pre-registered BM series token (bm_*) stays; any other queued post counts under the guide's
-    Threads campaign (soc_th_guide), because per-post tokens never reach Apple's 5-download reveal."""
-    ct = str(post.get("ct") or "")
-    return ct if ct.startswith("bm_") else "soc_th_guide"
+    """Every queued / series post goes out on Threads, so its links carry the Threads campaign: a BM series
+    token (bm_*, even one named after another platform) or a per-post token stays in the queue and post log,
+    because Apple reveals a campaign only past its privacy threshold (download_links.coarse_campaign)."""
+    return "threads"
 
 
 def queued_link_urls(post):

@@ -374,7 +374,7 @@ APPS = {
                      "On-device", "Offline", "No ads"],
         purchase_model="free_with_lifetime_unlock",
         keywords=["toeic", "toeic prep", "toeic lr", "english test",
-                  "study plan", "score tracker", "business english"],
+                  "study plan", "toeic diagnosis", "business english"],
     ),
     "mochi": dict(
         name="Mochi", search="Mochi Checklist", category="productivity",

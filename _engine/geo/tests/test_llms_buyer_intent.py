@@ -260,7 +260,9 @@ class PublishedAnswerSectionTests(unittest.TestCase):
 
     def test_published_answers_carry_no_private_performance_data(self):
         """Only App Store ids, campaign parameters, and listing copy."""
-        allowed = {"8", "100", "44", "990", "30"}
+        # "0" and "100": Lumi Weather's listing copy ("outing score from 0 to
+        # 100"), carried by its store-aligned subtitle.
+        allowed = {"0", "8", "100", "44", "990", "30"}
         for text in (self.llms_text, self.full_text):
             for line in text.splitlines():
                 if not (line.startswith("  A: ")

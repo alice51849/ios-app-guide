@@ -114,6 +114,42 @@ jobs:
             --key-location "https://open.cait518.cc/ios-app-guide/$(basename "$keyfile")" \
             --state-file ".indexnow-state/app-pages-daily.json" \
             --incremental-receipt ".indexnow-state/accepted-receipt.json"
+      - name: Submit support-site pages (EXP-03)
+        # 各 App 支援站（/<app>-support/）從沒送過 IndexNow：上面兩步的 keyLocation 在 /ios-app-guide/，
+        # 依規格只涵蓋那個路徑。同一把 key 也在網域根目錄，這步用根目錄的 key 送支援站；
+        # 只送線上 200、沒轉址、沒 noindex、canonical 指回自己的頁，可見文字沒變就不重送。
+        # --extra-site：根目錄 robots.txt 漏列、但站上有 sitemap 的上架款支援站。
+        # 失敗不擋前面步驟的 durable state 保存；下一個排程會補送。
+        continue-on-error: true
+        run: |
+          script=".github/scripts/indexnow_support_sites.py"
+          if [ ! -f "$script" ]; then
+            echo "::notice::deployed tree has no $script yet; skipped"
+            exit 0
+          fi
+          python3 .github/scripts/test_indexnow_support_sites.py
+          keyfile="$(find . -maxdepth 1 -type f -name '*.txt' \
+            | grep -E '/[a-f0-9]{32}\.txt$' | head -1)"
+          test -n "$keyfile"
+          python3 "$script" \
+            --site https://open.cait518.cc \
+            --key-file "$keyfile" \
+            --key-location "https://open.cait518.cc/$(basename "$keyfile")" \
+            --extra-site usagenow-support \
+            --extra-site zipbox-support \
+            --extra-site dbhalo-support \
+            --extra-site countdaysnow-support \
+            --extra-site studydown-support \
+            --state-file ".indexnow-state/support-sites.json" \
+            --receipt-file ".indexnow-state/support-sites-receipt.json"
+      - name: Preserve support-site IndexNow receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-support-sites-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .indexnow-state/support-sites-receipt.json
+          if-no-files-found: ignore
+          retention-days: 90
       - name: Preserve IndexNow outcome (held is not accepted or indexed)
         if: success()
         uses: actions/upload-artifact@v4

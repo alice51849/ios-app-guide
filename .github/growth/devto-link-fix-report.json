@@ -1,10 +1,9 @@
 {
- "generated": "2026-10-17T20:40:37Z",
+ "generated": "2026-10-17T23:12:48Z",
  "mode": "apply",
  "counts": {
-  "ok_caption": 30,
+  "ok_caption": 31,
   "draft_skipped": 13,
-  "backfilled": 1,
   "ok_backfilled_earlier": 1
  },
  "rows": [
@@ -292,11 +291,9 @@
    "id": "4179270",
    "permalink": "https://dev.to/cait518/scan-documents-to-searchable-pdfs-offline-one-time-purchase-no-cloud-46hn",
    "date": "2026-07-19",
-   "app": "6779977651",
-   "status": "backfilled",
-   "text": "Scan documents to searchable PDFs offline — one-time purchase, no cloud",
-   "ios_id": "6779977651",
-   "locale": "en"
+   "app": "",
+   "status": "ok_caption",
+   "text": "Scan documents to searchable PDFs offline — one-time purchase, no cloud"
   },
   {
    "channel": "devto",

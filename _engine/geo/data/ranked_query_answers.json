@@ -15701,5 +15701,379 @@
     ]
    ]
   }
+ },
+ {
+  "key": "zipbox",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "開啟 rar 檔案",
+  "rank": 15,
+  "slug": "open-multi-part-rar-part1-on-iphone",
+  "loc": {
+   "title": "iPhone 開啟 RAR 檔案：分成 part1、part2 的分卷壓縮檔怎麼解？",
+   "meta": "下載到的 RAR 被切成 .part1.rar、.part2.rar 或 .r00、.r01，iPhone 點了沒反應？先把每一卷收齊放同一個資料夾，再從第一卷開啟。缺卷、檔名被改、密碼的處理方式一次整理。",
+   "h1": "iPhone 怎麼開啟分卷的 RAR 檔案（part1.rar、part2.rar）",
+   "lead": "大檔案常被切成好幾個 RAR 分卷傳送或下載。只要少一卷、或卷放在不同地方，就怎麼樣都解不開。這一頁教你先檢查、再從正確的那一卷打開。",
+   "answer": "iPhone 內建的檔案 App 不能解 RAR，分卷 RAR 更需要支援分卷的解壓縮 App。把所有分卷存到同一個資料夾、確認檔名沒被改，再用 App 開啟第一卷（.part1.rar 或沒有數字的 .rar），其餘分卷會一起被讀取。Zipbox 解壓縮：RAR ZIP 7z 支援 ZIP、RAR、7z 的分卷與密碼保護壓縮檔，全部在裝置本機處理。",
+   "paras": [
+    "分卷 RAR 有兩種常見的命名。新式是 檔名.part1.rar、檔名.part2.rar 一路往下；舊式是 檔名.rar 搭配 檔名.r00、檔名.r01。不管哪一種，它們都是同一個壓縮檔被切開的片段，單獨一卷沒辦法解出完整內容。7z 的分卷則長得像 檔名.7z.001、檔名.7z.002。",
+    "解不開的原因，九成是分卷沒收齊或沒放在一起：LINE 一次傳多個檔案時，每個檔案都要各自點開再「儲存到檔案」；Safari 下載的會集中在「下載項目」，但如果有一卷是從郵件存的，就可能落在別的資料夾。另一個常見問題是檔名被改，例如下載時被加上「(1)」，讓 part2 對不上 part1，把檔名改回一致就好。",
+    "收齊之後，用支援分卷的解壓縮 App 開啟第一卷。Zipbox 解壓縮：RAR ZIP 7z 可以從檔案 App、Safari 下載項目、郵件或分享選單直接開啟，不解壓就先瀏覽清單、預覽照片、影片、PDF 和文字，只取出需要的檔案；設了密碼的分卷也能輸入密碼解開。它不連網、沒有帳號也沒有廣告，是 App Store 付費下載，一次購買包含全部功能。"
+   ],
+   "look": [
+    "分卷是不是全部到齊，編號有沒有跳號",
+    "所有分卷是不是放在同一個資料夾",
+    "檔名是否一致，有沒有被加上「(1)」之類的字",
+    "App 有沒有明確寫出支援 RAR 分卷與密碼保護",
+    "解壓是在裝置上做，還是要上傳到網站"
+   ],
+   "steps": [
+    "把每一個分卷都存到檔案 App：LINE 的檔案逐一點開選「儲存到檔案」，Safari 下載的會在「下載項目」。",
+    "在檔案 App 建一個新資料夾，把所有分卷移進去，確認編號從 1 開始而且沒有缺。",
+    "檢查檔名，除了 part 編號或 .r00 這類副檔名之外，前面的檔名要一模一樣。",
+    "用 Zipbox 開啟第一卷（.part1.rar；舊式命名則是沒有數字的 .rar），有密碼就輸入對方給的密碼。",
+    "先在清單裡預覽，勾選需要的檔案取出，再匯出到檔案 App 或 iCloud 雲碟。"
+   ],
+   "rows": [
+    [
+     "分卷數量",
+     "編號是否連續、最後一卷有沒有到",
+     "少一卷就解不出完整內容，常見錯誤就是這個"
+    ],
+    [
+     "存放位置",
+     "所有分卷在不在同一個資料夾",
+     "解壓縮 App 會在第一卷旁邊找後面的分卷"
+    ],
+    [
+     "開啟哪一卷",
+     "part1 或沒有數字的 .rar",
+     "從中間的分卷開始，App 無法從頭接起"
+    ]
+   ],
+   "fits": "Zipbox 解壓縮：RAR ZIP 7z 適合在 iPhone 上收到或下載了分卷 RAR、7z，想直接在手機上打開的人：支援 ZIP、RAR、7z 的分卷與密碼保護壓縮檔，可以先預覽再只取出需要的檔案，13 種格式全部本機處理、不連網、零廣告。App Store 付費下載，一次購買包含全部功能。",
+   "faq": [
+    [
+     "只有 part1.rar 可以先解一部分嗎？",
+     "通常不行。分卷是同一個壓縮檔切開的片段，缺卷時解壓會在缺的地方中斷，最好先把全部分卷收齊。"
+    ],
+    [
+     "part2 打開後顯示錯誤怎麼辦？",
+     "改從第一卷開啟。分卷要從 part1（或沒有數字的 .rar）開始，App 才會依序讀後面的分卷。"
+    ],
+    [
+     "Zipbox 解壓縮：RAR ZIP 7z 會上傳我的檔案嗎？",
+     "不會。它不連網、沒有帳號也不用登入，13 種格式都在裝置本機處理。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to open a multi-part RAR (part1.rar, part2.rar) on iPhone",
+   "meta": "A download split into .part1.rar, .part2.rar or .r00, .r01 won't open on iPhone? Put every part in one folder, then open the first part. What to do about missing parts, renamed files and passwords.",
+   "h1": "How to open a multi-part RAR archive on iPhone",
+   "lead": "Large downloads are often split into several RAR parts. If one part is missing or sits in a different folder, nothing will extract. Here is how to check the parts and open the right one.",
+   "answer": "The Files app can't extract RAR, and split RAR archives need an extractor that handles multi-part archives. Save every part into the same folder, make sure the names still match, then open the first part (.part1.rar, or the .rar with no number) and the rest are read with it. Zipbox: Unzip RAR, ZIP & 7z handles password protected and multi part ZIP, RAR and 7z on your device.",
+   "paras": [
+    "Split RAR archives use one of two naming styles. The newer style is name.part1.rar, name.part2.rar and so on; the older style is name.rar alongside name.r00, name.r01. Either way they are pieces of a single archive, and no single part extracts the full contents on its own. Split 7z archives look like name.7z.001, name.7z.002.",
+    "Most failures come from parts that are missing or scattered. Files saved from Mail can land in a different folder from those downloaded in Safari, which go to Downloads. Another common problem is a renamed file, for example a download that picked up a \"(1)\" so part2 no longer matches part1; rename it back and it lines up again.",
+    "Once every part is together, open the first one in an extractor that supports split archives. Zipbox opens archives from Files, Safari downloads, Mail and the share sheet, lets you browse the list and preview photos, video, PDF and text before extracting, and pulls out only the items you need, including from password protected parts. It makes no network requests, has no account and no ads, and is a paid download with every feature included in one purchase."
+   ],
+   "look": [
+    "Whether every part has arrived, with no gaps in the numbering",
+    "Whether all parts sit in the same folder",
+    "Whether the names still match, with nothing like \"(1)\" added",
+    "Whether the app explicitly supports multi-part and password protected RAR",
+    "Whether extraction happens on the device or on a website"
+   ],
+   "steps": [
+    "Save every part to the Files app; Safari downloads go to the Downloads folder.",
+    "Create a new folder in Files, move all the parts into it and check the numbering starts at 1 with nothing missing.",
+    "Check the names: apart from the part number or the .r00-style extension, the base name must be identical.",
+    "Open the first part in Zipbox (.part1.rar, or the .rar with no number in the older style) and enter the password if there is one.",
+    "Preview the list, select what you need, then export it to Files or iCloud Drive."
+   ],
+   "rows": [
+    [
+     "Number of parts",
+     "Is the numbering continuous and did the last part arrive?",
+     "One missing part stops the extraction; it is the most common cause"
+    ],
+    [
+     "Location",
+     "Are all parts in the same folder?",
+     "The extractor looks for the later parts next to the first one"
+    ],
+    [
+     "Which part to open",
+     "part1, or the .rar with no number",
+     "Starting from a middle part leaves the app unable to read from the beginning"
+    ]
+   ],
+   "fits": "Zipbox: Unzip RAR, ZIP & 7z suits anyone who receives or downloads split RAR or 7z archives and wants to open them on the iPhone itself: password protected and multi part ZIP, RAR and 7z, previews before extracting, and all 13 formats handled on the device with no network requests and no ads. It is a paid App Store download; one purchase includes every feature.",
+   "faq": [
+    [
+     "Can I extract part of the archive with only part1.rar?",
+     "Usually not. The parts are slices of one archive, so extraction stops where a part is missing. Collect every part first."
+    ],
+    [
+     "Opening part2 shows an error. What now?",
+     "Open the first part instead. Starting from part1 (or the .rar with no number) lets the app read the following parts in order."
+    ],
+    [
+     "Does Zipbox upload my files?",
+     "No. It makes no network requests and has no account or sign in; all 13 formats are handled on your device."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "snapport",
+  "locale": "de-DE",
+  "market": "DE",
+  "term": "passbild 35x45",
+  "rank": 4,
+  "slug": "passbild-35x45-app-ohne-abo-einmal-kaufen",
+  "paid_context": "pay_once",
+  "loc": {
+   "title": "Passbild 35×45 per App ohne Abo: einmal kaufen statt jedes Mal zahlen",
+   "meta": "Passbilder 35×45 mm zu Hause aufnehmen, ohne Abo und ohne Upload: worauf du bei einer Passbild-App achten solltest, wann ein gedrucktes Foto noch reicht und wo Snapport passt.",
+   "h1": "Passbild 35×45 mm per App: ohne Abo, einmal gekauft",
+   "lead": "Viele Passbild-Apps verlangen ein Abo, obwohl man nur ab und zu ein Foto braucht. Wer öfter Bilder für die Familie, Visa oder Ausweise macht, fährt mit einer App besser, die man einmal kauft. Vorher lohnt sich ein Blick darauf, wofür ein selbst gedrucktes Foto überhaupt angenommen wird.",
+   "answer": "Für 35×45-mm-Fotos brauchst du eine App mit passender Vorlage, Hilfslinien für Kopf und Augen, Hintergrundwerkzeug und Druckbogen, die einmal gekauft wird statt im Abo. Für den deutschen Reisepass und Personalausweis gilt seit Mai 2025 das digitale Passbild, dort hilft ein gedrucktes Foto nicht mehr; für viele andere Anträge wird es weiterhin verlangt.",
+   "paras": [
+    "Zuerst der wichtigste Punkt: Für den deutschen Reisepass und Personalausweis werden seit dem 1. Mai 2025 nur noch digital übermittelte Passbilder angenommen, aufgenommen im Bürgeramt oder bei einem dafür registrierten Fotografen. Ein selbst gedrucktes Foto ersetzt das nicht. Gefragt bleibt das gedruckte 35×45-Bild bei vielen anderen Stellen, etwa bei Visa-Anträgen für andere Länder oder bei Ausweisen von Hochschulen, Vereinen und Arbeitgebern; prüfe immer die Vorgaben der Stelle, bei der du den Antrag stellst.",
+    "Bei der App selbst entscheidet das Bezahlmodell darüber, was es dich auf Dauer kostet. Ein Abo läuft weiter, auch wenn du nur einmal im Jahr ein Foto brauchst, und muss aktiv gekündigt werden. Eine App, die man einmal kauft, bleibt nutzbar, wenn später das Kind ein neues Foto braucht oder ein Visum für die nächste Reise ansteht. Achte außerdem darauf, ob In-App-Käufe nachgeschoben werden und ob deine Fotos auf einen Server hochgeladen werden.",
+    "Snapport wird einmal gekauft: kein Abo, keine In-App-Käufe, keine Werbung, kein Tracking, kein Konto. Es bietet Vorlagen für gängige Größen, darunter Deutschland/Schengen 35×45 mm, Hilfslinien für Kopfoberkante, Augen und Kinn per Gesichtserkennung auf dem Gerät, einen Hintergrund in Weiß, Grau, Blau oder Rot und Druckbögen für 10×15, A4 oder Letter mit Schnittlinien. Alles wird auf dem iPhone verarbeitet, die Fotos werden nie hochgeladen. Snapport liefert nur das Foto und garantiert keine Annahme; das Dokument stellt die zuständige Stelle aus."
+   ],
+   "look": [
+    "Ob du für deinen Antrag ein gedrucktes Foto brauchst oder ein digital übermitteltes",
+    "Einmalkauf oder Abo, und ob später In-App-Käufe dazukommen",
+    "Vorlage für 35×45 mm und Hilfslinien für Kopf, Augen und Kinn",
+    "Druckbogen für 10×15 mit Schnittlinien, damit mehrere Bilder auf einen Abzug passen",
+    "Ob die Fotos auf dem Gerät bleiben oder hochgeladen werden"
+   ],
+   "steps": [
+    "Frag bei der Stelle nach, bei der du den Antrag stellst, ob ein gedrucktes 35×45-Foto angenommen wird.",
+    "Stell dich mit gleichmäßigem Licht vor eine helle, einfarbige Wand und lass dich auf Augenhöhe fotografieren.",
+    "Wähle in der App die Vorlage 35×45 mm und richte Kopf, Augen und Kinn an den Hilfslinien aus.",
+    "Setz den Hintergrund auf die verlangte Farbe und prüf das Ergebnis in der Vorschau.",
+    "Exportiere einen Druckbogen 10×15 und lass ihn als normalen Fotoabzug drucken, dann entlang der Schnittlinien schneiden."
+   ],
+   "rows": [
+    [
+     "Bezahlmodell",
+     "Einmalkauf oder laufendes Abo",
+     "Ein Abo läuft weiter, auch wenn du nur selten ein Foto brauchst"
+    ],
+    [
+     "Antragsart",
+     "Gedrucktes oder digital übermitteltes Foto",
+     "Für Reisepass und Personalausweis zählt nur noch das digitale Passbild"
+    ],
+    [
+     "Datenschutz",
+     "Verarbeitung auf dem Gerät oder Upload",
+     "Ein Gesichtsfoto ist ein sensibles Datum"
+    ]
+   ],
+   "fits": "Snapport passt, wenn du Pass-, Visum- und Ausweisfotos öfter selbst machst und lieber einmal bezahlst als ein Abo zu führen: Vorlagen für gängige Größen inklusive 35×45 mm, Hilfslinien per Gesichtserkennung, Hintergrund in Weiß, Grau, Blau oder Rot, Export als JPEG, PNG oder PDF und Druckbögen für 10×15, A4 oder Letter. Kein Abo, keine In-App-Käufe, keine Werbung, kein Konto, alles auf dem Gerät.",
+   "faq": [
+    [
+     "Kann ich mit einem selbst gemachten Foto einen deutschen Reisepass beantragen?",
+     "Nein. Seit dem 1. Mai 2025 werden für Reisepass und Personalausweis nur noch digital übermittelte Passbilder angenommen, aufgenommen im Bürgeramt oder bei einem registrierten Fotografen."
+    ],
+    [
+     "Braucht Snapport ein Abo?",
+     "Nein. Snapport wird einmal gekauft, ohne Abo, ohne In-App-Käufe und ohne Werbung."
+    ],
+    [
+     "Garantiert die App, dass das Foto angenommen wird?",
+     "Nein. Die Anforderungen unterscheiden sich je nach Land, Behörde und Antragsart. Snapport bietet Vorlagen und Hilfen, prüfe vor dem Einreichen immer die offiziellen Vorgaben."
+    ]
+   ]
+  },
+  "en": {
+   "title": "35×45 mm passport photo app with no subscription: pay once",
+   "meta": "Take 35×45 mm passport and visa photos at home without a subscription or an upload: what to check in a passport photo app, when a printed photo is still accepted, and where Snapport fits.",
+   "h1": "A 35×45 mm passport photo app you pay for once",
+   "lead": "Many passport photo apps charge a subscription even though you only need a photo now and then. If you take photos for the whole family, for visas or for ID cards, an app you buy once makes more sense. First check whether your application still accepts a printed photo at all.",
+   "answer": "For 35×45 mm photos you want an app with the right template, guides for head and eyes, a background tool and a print sheet, bought once rather than by subscription. Some countries now take passport photos only digitally from approved sources, so check what your application accepts before you print.",
+   "paras": [
+    "Start with the application itself. Some authorities have moved to digital-only passport photos taken at the office or by an approved photographer; Germany did so for passports and ID cards in May 2025. Many other applications, such as visa applications at embassies and ID cards issued by universities, clubs or employers, still ask for a printed 35×45 mm photo. Always check the requirements of the office you apply to.",
+    "With the app, the payment model decides what it costs you over time. A subscription keeps running even if you need one photo a year, and you have to remember to cancel it. An app you buy once is still there when a child needs a new photo or the next trip needs a visa. Also check whether in-app purchases appear later and whether your photos are uploaded to a server.",
+    "Snapport is a one-time purchase: no subscription, no in-app purchases, no ads, no tracking, no account. It includes size templates such as UK/Schengen/Japan/Korea/Australia 35×45 mm and US 2×2, head-top, eye-line and chin guides from on-device face detection, white, gray, blue or red backgrounds, and 4×6, A4 or Letter print sheets with cut guides. Everything is processed on your iPhone and your photos are never uploaded. Snapport prepares the photo only and does not guarantee acceptance."
+   ],
+   "look": [
+    "Whether your application takes a printed photo or a digitally submitted one",
+    "One-time purchase or subscription, and whether in-app purchases appear later",
+    "A 35×45 mm template with guides for head, eyes and chin",
+    "A 4×6 print sheet with cut guides so several photos fit on one print",
+    "Whether photos stay on the device or are uploaded"
+   ],
+   "steps": [
+    "Ask the office you are applying to whether a printed 35×45 mm photo is accepted.",
+    "Stand in even light in front of a plain, light wall and have someone take the photo at eye level.",
+    "Choose the 35×45 mm template and line up head, eyes and chin with the guides.",
+    "Set the background to the required colour and check the result in the preview.",
+    "Export a 4×6 print sheet, print it as a normal photo print and cut along the guides."
+   ],
+   "rows": [
+    [
+     "Payment model",
+     "One-time purchase or ongoing subscription",
+     "A subscription keeps charging even if you rarely need a photo"
+    ],
+    [
+     "Application type",
+     "Printed photo or digital submission",
+     "Some passports now accept digital photos only"
+    ],
+    [
+     "Privacy",
+     "On-device processing or upload",
+     "A face photo is sensitive personal data"
+    ]
+   ],
+   "fits": "Snapport fits if you take passport, visa and ID photos yourself now and then and would rather pay once than keep a subscription: templates for common sizes including 35×45 mm, guides from face detection, white, gray, blue or red backgrounds, JPEG, PNG or PDF export and 4×6, A4 or Letter print sheets. No subscription, no in-app purchases, no ads, no account, everything on the device.",
+   "faq": [
+    [
+     "Does Snapport need a subscription?",
+     "No. You buy Snapport once, with no subscription, no in-app purchases and no ads."
+    ],
+    [
+     "Are my photos uploaded?",
+     "No. Everything is processed on your device and your photos are never uploaded."
+    ],
+    [
+     "Does the app guarantee my photo will be accepted?",
+     "No. Requirements vary by country, authority and application type. Snapport provides templates and guides; always check the official requirements before you submit."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "wordmate",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "單字 小工具",
+  "rank": 29,
+  "slug": "iphone-home-screen-vocabulary-widget-setup-pay-once",
+  "paid_context": "pay_once",
+  "loc": {
+   "title": "背單字小工具：iPhone 主畫面怎麼設定，一次購買不用訂閱",
+   "meta": "想解鎖手機時順便看一個單字？教你把背單字小工具加到 iPhone 主畫面、放在哪裡最常看到，以及挑 App 時要看是不是一次購買、能不能在小工具上直接收藏。",
+   "h1": "iPhone 背單字小工具怎麼設定？放對位置才會真的常看",
+   "lead": "一天解鎖手機的次數，比打開背單字 App 的次數多得多。把單字小工具放在主畫面第一頁，每次滑手機都多看一個字，累積起來比偶爾坐下來背一小時更穩定。",
+   "answer": "長按主畫面空白處進入編輯，從「加入小工具」找到背單字 App，選好尺寸放在第一頁。挑 App 時看三件事：小工具上能不能直接換下一個字、收藏單字，以及是一次購買還是每月訂閱。",
+   "paras": [
+    "只會顯示一個字的小工具，看久了容易視而不見。比較有用的是互動式小工具：在主畫面上就能換到下一個字、把不熟的字收藏起來，之後打開 App 集中複習。這樣小工具不只是裝飾，而是每天幾十次的微型複習。",
+    "位置比尺寸重要。放在主畫面第一頁、拇指最常停留的地方，或和每天必開的 App 放在一起；放在第三頁的小工具，很快就不會再被看到。如果同時在學兩種語言，最好選每種語言各自保留進度的 App，切換時才不會把兩邊的單字混在一起。",
+    "付費方式也值得先看清楚。背單字是長期的事，月訂閱會一直扣款；一次購買的 App 則是買了就能一直用下去。Wordmate：44 種語言背單字 是在 App Store 一次購買的完整 App，沒有訂閱、App 內購，也不需另付費升級；主畫面互動小工具可以查看、切換並收藏單字，也能在 Apple Watch 上學習。"
+   ],
+   "look": [
+    "小工具上能不能直接換到下一個字",
+    "能不能在小工具上收藏不熟的單字，之後集中複習",
+    "一次購買還是月訂閱，有沒有另外的內購",
+    "學多種語言時，每種語言的進度是不是分開保存",
+    "需不需要註冊帳號、有沒有廣告"
+   ],
+   "steps": [
+    "先在 App 裡選好要學的語言和主題，小工具才會顯示你正在學的單字。",
+    "回到主畫面，長按空白處直到圖示開始晃動，點左上角的「編輯」或「＋」，選「加入小工具」。",
+    "搜尋 App 名稱，選一個尺寸，點「加入小工具」，再把它拖到主畫面第一頁。",
+    "每次解鎖時看一個字，不熟的直接在小工具上收藏，熟的就換下一個。",
+    "每天找一個空檔打開 App，把收藏的單字集中複習一次。"
+   ],
+   "rows": [
+    [
+     "互動方式",
+     "小工具上能否換字、收藏",
+     "只能看不能按的小工具，很快就會被忽略"
+    ],
+    [
+     "擺放位置",
+     "是否放在主畫面第一頁",
+     "每天看到的次數決定了複習的次數"
+    ],
+    [
+     "付費方式",
+     "一次購買或月訂閱",
+     "背單字是長期習慣，訂閱會一直扣款"
+    ]
+   ],
+   "fits": "Wordmate：44 種語言背單字 適合想利用零碎時間背單字的人：14 個實用主題、84 個循序單元、初中高 3 個級別，學英文時每個單字都附例句，iPhone 與 iPad 可以聽發音；主畫面互動小工具可查看、切換並收藏單字，也能用 Apple Watch 學習。介面語言和學習語言可以分開設定，每種語言各自保留進度。一次購買，無訂閱、無內購，不用建立帳號，也不含第三方廣告。",
+   "faq": [
+    [
+     "小工具上可以直接收藏單字嗎？",
+     "Wordmate 的主畫面互動小工具可以查看、切換並收藏單字，收藏的字之後在 App 裡集中複習。"
+    ],
+    [
+     "Wordmate 要訂閱嗎？",
+     "不用。在 App Store 購買一次就包含 44 種語言、所有學習等級與全部功能，包含主畫面互動小工具及 Apple Watch，沒有訂閱或 App 內購。"
+    ],
+    [
+     "同時學兩種語言，小工具會混在一起嗎？",
+     "Wordmate 每種學習語言各自保留進度，不會互相混淆。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Vocabulary widget for the iPhone Home Screen: set it up, pay once",
+   "meta": "Want to see one new word every time you unlock your phone? How to add a vocabulary widget to the iPhone Home Screen, where to put it so you actually see it, and why to check for a one-time purchase.",
+   "h1": "How to set up a vocabulary widget on your iPhone Home Screen",
+   "lead": "You unlock your phone far more often than you open a vocabulary app. Put a vocabulary widget on the first Home Screen page and every unlock becomes one more word, which adds up to more than the occasional hour-long session.",
+   "answer": "Touch and hold an empty spot on the Home Screen, choose to add a widget, find your vocabulary app, pick a size and place it on the first page. When choosing the app, check three things: whether the widget lets you move to the next word, whether you can save words from it, and whether it is a one-time purchase or a subscription.",
+   "paras": [
+    "A widget that only shows a word soon fades into the background. An interactive widget is more useful: you move to the next word and save unfamiliar ones right from the Home Screen, then review the saved words in the app. That turns the widget into dozens of tiny reviews a day.",
+    "Placement matters more than size. Put it on the first page, where your thumb rests most, or next to the apps you open every day; a widget on the third page is quickly forgotten. If you study two languages, choose an app that keeps progress separate for each language so the words don't get mixed up when you switch.",
+    "Check how you pay, too. Building vocabulary is a long habit, and a monthly subscription keeps charging; an app you buy once stays yours. Wordmate: Learn 44 Languages is a paid download: one purchase includes all 44 languages, every level and every feature, with no subscriptions, in-app purchases or paid upgrades. Its interactive Home Screen widget lets you view a word, move to the next one or save it, and there is an Apple Watch app too."
+   ],
+   "look": [
+    "Whether the widget lets you move to the next word",
+    "Whether you can save unfamiliar words from the widget for later review",
+    "One-time purchase or subscription, and any extra in-app purchases",
+    "Whether progress is kept separately for each language you study",
+    "Whether it needs an account or shows ads"
+   ],
+   "steps": [
+    "In the app, pick the language and topic you are learning so the widget shows the right words.",
+    "On the Home Screen, touch and hold an empty area until the icons jiggle, tap Edit or + and choose Add Widget.",
+    "Search for the app, choose a size, tap Add Widget and drag it onto the first Home Screen page.",
+    "Look at one word each time you unlock; save the ones you don't know and move on from the ones you do.",
+    "Once a day, open the app and review your saved words together."
+   ],
+   "rows": [
+    [
+     "Interaction",
+     "Can you move to the next word and save words on the widget?",
+     "A widget you can only look at is soon ignored"
+    ],
+    [
+     "Placement",
+     "Is it on the first Home Screen page?",
+     "How often you see it decides how often you review"
+    ],
+    [
+     "Payment",
+     "One-time purchase or subscription",
+     "Vocabulary is a long habit and a subscription keeps charging"
+    ]
+   ],
+   "fits": "Wordmate: Learn 44 Languages suits people who want to learn vocabulary in spare minutes: 14 practical topics, 84 units and three levels, an example sentence for every English word and spoken pronunciation on iPhone and iPad. The interactive Home Screen widget lets you view, advance and save words, and there is an Apple Watch app. Interface and learning languages are set separately, and progress is kept for each language. One purchase, no subscription, no in-app purchases, no account and no third-party ads.",
+   "faq": [
+    [
+     "Can I save words from the widget?",
+     "Yes. Wordmate's interactive Home Screen widget lets you view a word, move to the next one or save it to favorites for review in the app."
+    ],
+    [
+     "Does Wordmate need a subscription?",
+     "No. One App Store purchase includes all 44 languages, every level and every feature, including the widget and Apple Watch, with no subscriptions or in-app purchases."
+    ],
+    [
+     "Will two languages get mixed up?",
+     "No. Wordmate keeps progress independent for each language you study."
+    ]
+   ]
+  }
  }
 ]

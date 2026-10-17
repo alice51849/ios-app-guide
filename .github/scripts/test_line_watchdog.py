@@ -581,5 +581,61 @@ class GuideProfileSlotRunTests(unittest.TestCase):
         self.assertEqual([], gh.dispatched())
 
 
+class IgBioHubLineTests(unittest.TestCase):
+    """ig-bio-hub.yml rebuilds the Instagram profile-link hub (cron 41 3 * * *) and reads it back live. It is a
+    daily workflow line: judged by a 30h window, re-dispatched with no inputs when it goes quiet."""
+
+    NAME = "ig-bio-hub.yml"
+    TITLE = "Instagram profile-link hub · all"
+
+    def runs(self, *runs):
+        # The specific key first: ScriptedGh answers with the first key found in the call.
+        return ScriptedGh({
+            f"workflows/{self.NAME}/runs?per_page=30&event": {"workflow_runs": []},
+            f"workflows/{self.NAME}/runs?per_page=30": {"workflow_runs": list(runs)},
+        })
+
+    def test_is_a_watched_daily_workflow_line_and_not_a_slot_line(self):
+        self.assertEqual(30, wd.PROFILES["ios-app-guide"]["workflows"][self.NAME])
+        self.assertNotIn(self.NAME, GUIDE_SLOTS)
+        self.assertTrue((WORKFLOW_DIR / self.NAME).is_file())
+        wd.validate_slot_policy("ios-app-guide")
+
+    def test_window_covers_the_workflows_own_daily_cron_and_it_accepts_a_bare_dispatch(self):
+        import re
+        text = (WORKFLOW_DIR / self.NAME).read_text(encoding="utf-8")
+        self.assertEqual(["41 3 * * *"], re.findall(r"cron:\s*['\"]([^'\"]+)['\"]", text))
+        window = wd.PROFILES["ios-app-guide"]["workflows"][self.NAME]
+        self.assertGreaterEqual(window, 24)  # a daily cron: never red between two runs
+        self.assertLessEqual(window, 30)  # a missed day is red at the first watchdog pass after it
+        # The healer dispatches with no inputs, so the workflow must run on its defaults.
+        self.assertIn("workflow_dispatch:", text)
+        self.assertNotIn("required: true", text)
+
+    def test_the_two_daily_watchdog_passes_judge_the_run_by_its_age(self):
+        for now, last_success, fresh in (
+            ("2026-10-17T00:41:00Z", "2026-10-16T03:44:00Z", True),   # 21h: today's 03:41 run is not due yet
+            ("2026-10-17T12:41:00Z", "2026-10-17T03:44:00Z", True),   # 9h
+            ("2026-10-17T12:41:00Z", "2026-10-16T03:44:00Z", False),  # the 03:41 run never came: 33h
+        ):
+            row = wd.judge_workflow(self.runs(slot_run(last_success, self.TITLE)), self.NAME, 30,
+                                    at(now), dispatch=False)
+            self.assertEqual(fresh, row["fresh"], (now, last_success))
+
+    def test_a_quiet_day_is_redispatched_with_no_inputs(self):
+        gh = self.runs(slot_run("2026-10-16T03:44:00Z", self.TITLE))
+        row = wd.judge_workflow(gh, self.NAME, 30, at("2026-10-17T12:41:00Z"), dispatch=True)
+        self.assertEqual("retriggered", row["action"])
+        self.assertEqual([self.NAME], gh.dispatched())
+        dispatch = next(argv for argv in gh.calls if argv[:3] == ["gh", "workflow", "run"])
+        self.assertNotIn("-f", dispatch)  # defaults: mode=all (rebuild, account read, live read-back)
+
+    def test_a_failed_live_read_back_never_counts_as_a_success(self):
+        gh = self.runs(slot_run("2026-10-17T11:00:00Z", self.TITLE, conclusion="failure"))
+        row = wd.judge_workflow(gh, self.NAME, 30, at("2026-10-17T12:41:00Z"), dispatch=False)
+        self.assertFalse(row["fresh"])
+        self.assertEqual("never", row["last_success"])
+
+
 if __name__ == "__main__":
     unittest.main()

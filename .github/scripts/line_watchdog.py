@@ -59,6 +59,11 @@ PROFILES: dict[str, dict] = {
             "telegram-daily.yml": 30,
             "software-heritage-daily.yml": 30,
             "growth-scoreboard.yml": 30,
+            # Instagram profile-link hub (open.cait518.cc/ig/). Cron 03:41 UTC daily; the rebuild after
+            # every Instagram post is a step of the posting workflows, not a run of this one. A green run
+            # read the live hub back (HTTP 200 + hub marker) and the account's username, so success is
+            # delivery evidence. Idempotent, so a stale line may be re-dispatched with no inputs.
+            "ig-bio-hub.yml": 30,
             "sov-weekly.yml": 8 * 24,
         },
         "evidence": ["guide_deployment", "telegram_message_id"],

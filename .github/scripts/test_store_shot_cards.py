@@ -72,8 +72,13 @@ class PickTest(unittest.TestCase):
     def test_card_lines_rotate_problem_benefit_keyline_search(self):
         c = clip("mochi", "zh-Hant")
         v = c["hooks"][0]
-        self.assertEqual([S.card_lines(c, v, i) for i in range(4)],
-                         ["待辦清單也可以這麼可愛", "每天打勾更開心", "可愛待辦清單", "在 App Store 搜尋「mochi」"])
+        with mock.patch.object(S.SC, "_terms", return_value={}):  # no rank data: the clip's own search phrase
+            self.assertEqual([S.card_lines(c, v, i) for i in range(4)],
+                             ["待辦清單也可以這麼可愛", "每天打勾更開心", "可愛待辦清單", "在 App Store 搜尋「mochi」"])
+        ranked = {"apps": {"mochi": {"TW": {"term": "待辦清單", "rank": 3, "date": S.SC.today().isoformat(),
+                                            "locale": "zh-Hant", "paid": True, "weight": 0.3}}}}
+        with mock.patch.object(S.SC, "_terms", return_value=ranked):  # rank data: the term closest to the top 3
+            self.assertEqual(S.card_lines(c, v, 3), "在 App Store 搜尋「待辦清單」")
 
     def test_shot_urls_use_the_slot_storefront_and_a_large_size(self):
         rec = {"screenshotUrls": [f"https://is1-ssl.mzstatic.com/image/thumb/x/{i}.png/320x480bb.jpg" for i in range(6)]}

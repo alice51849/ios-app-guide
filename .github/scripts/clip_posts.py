@@ -192,7 +192,7 @@ def caption(clip, channel, variant=None, tag=None):
     surface with its own row (default: the channel's, CHANNEL_CT)."""
     t = text_for(clip["locale"])
     lines = SC.body(clip, variant or SC.variants(clip)[0])
-    lines += [clip["name"], t["search"].format(s=clip["search"])]
+    lines += [clip["name"], t["search"].format(s=SC.clip_search(clip))]
     lines = SC.dedupe(lines)  # a keyline the app name already says ("可愛待辦清單" / "Mochi: 可愛待辦清單") goes
     if channel == "instagram":
         # The caption URL below cannot be tapped: say where to tap, the app on the profile-link hub (ig_bio.py).

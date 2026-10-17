@@ -254,7 +254,10 @@ def app_name(card):
 def store_line(card):
     app = APPS[card["app"]]
     t = TEXT[card["locale"]]
-    return (t["both"] if play_store_url(app["id"], "ut") else t["search"]).format(s=app_name(card))
+    if play_store_url(app["id"], "ut"):  # the rank data is App Store only: both stores get the store name
+        return t["both"].format(s=app_name(card))
+    import search_caption as SC
+    return t["search"].format(s=SC.search_term(card["app"], card["locale"], fallback=app_name(card)))
 
 
 def money(v):

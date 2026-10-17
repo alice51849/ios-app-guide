@@ -147,7 +147,7 @@ def card_lines(clip, variant, index):
     """Headline per card: the problem line, then the benefit, then the keyline, then the search line."""
     t = clip_posts.text_for(clip["locale"])
     pool = [SC.tidy(variant.get("lead", "")), SC.tidy(variant.get("benefit", "")), clip.get("keyline", ""),
-            t["search"].format(s=clip["search"])]
+            t["search"].format(s=SC.clip_search(clip))]
     pool = [x for i, x in enumerate(pool) if x and x not in pool[:i]]
     return pool[index % len(pool)]
 

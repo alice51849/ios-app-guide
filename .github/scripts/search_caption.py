@@ -28,6 +28,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 GROWTH = HERE.parent / "growth"
 CLIPS = GROWTH / "clips.json"
+SEARCH_TERMS = GROWTH / "search-terms.json"  # build_search_terms.py, from the keyword rank history
 PERFORMANCE = GROWTH / "performance.json"
 
 FIRST = 125  # characters Instagram / Threads show before "more"
@@ -184,6 +185,49 @@ def card_alt(name, caption, app, locale, data=None, limit=500):
     keyline = seo_for(app, locale, data).get("keyline", "")
     text = " — ".join(p for p in [name, *lines, keyline] if p)
     return text if len(text) <= limit else text[:limit - 1].rstrip() + "…"
+
+
+@lru_cache(maxsize=1)
+def _terms():
+    return _load(SEARCH_TERMS, {})
+
+
+STOREFRONT = re.compile(r"apps\.apple\.com/([a-z]{2})/", re.I)
+TERM_MAX_AGE = 21  # days: an older rank reading no longer says where the app stands
+
+
+def search_term(app, locale, store_url="", fallback="", data=None, day=None):
+    """The App Store search term for the caption's search line: the term the app is closest to the top 3 on
+    in the post's storefront (the clip's store link first, then the locale's other storefronts: paid there
+    in the last 7 days first, then the bigger market), from search-terms.json. `fallback` (the clip's own
+    search phrase / store name) when there is no fresh entry in that language."""
+    data = _terms() if data is None else data
+    app = str(app or "")
+    per = ((data.get("apps") or {}).get(app[:-2] if app.endswith("_b") else app) or {})
+    if not isinstance(per, dict) or not locale:
+        return fallback
+    m = STOREFRONT.search(store_url or "")
+    others = sorted((sf for sf, e in per.items() if isinstance(e, dict) and e.get("locale") == locale),
+                    key=lambda sf: (not per[sf].get("paid"), -float(per[sf].get("weight") or 0), sf))
+    day = day or today()
+    for sf in ([m.group(1).upper()] if m else []) + others:
+        entry = per.get(sf)
+        if not isinstance(entry, dict) or entry.get("locale") != locale:
+            continue
+        term = str(entry.get("term") or "").strip()
+        try:
+            age = (day - dt.date.fromisoformat(str(entry.get("date")))).days
+        except ValueError:
+            continue
+        if term and -1 <= age <= TERM_MAX_AGE:
+            return term
+    return fallback
+
+
+def clip_search(clip, data=None, day=None):
+    """search_term() for a hook clip; its planner search phrase when the rank data has nothing."""
+    return search_term(clip.get("app", ""), clip.get("locale", ""), clip.get("store_url", ""),
+                       clip.get("search", ""), data=data, day=day)
 
 
 def today():

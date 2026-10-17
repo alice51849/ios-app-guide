@@ -1,0 +1,338 @@
+{
+ "schema": "lumi.video-takedown/v1",
+ "mode": "plan",
+ "generated_at": "2026-10-17T09:07:06Z",
+ "digest": "a18330949ba6b3f25d4519a8710af56665bc06533981004e828a707301089159",
+ "targets": 10,
+ "summary_report": "00_GrowthEngine reports/video_takedown_2026-10-17.json",
+ "rows": [
+  {
+   "platform": "telegram",
+   "id": "355",
+   "link": "https://t.me/LumiApps2026/355",
+   "clip": "lumibopomofo/zh-Hant",
+   "app": "lumibopomofo",
+   "posted_at": "2026-10-15T05:47:26Z",
+   "reason": "free_download_end_card",
+   "reason_text": "已發布的 render 片尾卡寫「Free download／免費下載」（CLAUDE.md 影片規則）",
+   "detail": "end card says Free download / 免費下載 (storyboard fixed 2026-10-17, the post is the old render)",
+   "record": "ios-app-guide .github/growth/clip-posts.json",
+   "method": "deleteMessage（48 小時內）；被拒則 editMessageMedia 換成 App 圖示照片＋原文＋直接下載連結",
+   "reversible": false,
+   "delete_window_ends": "2026-10-17T05:47:26Z",
+   "live": {
+    "state": "present",
+    "video": true,
+    "photo": false
+   },
+   "caption": "收集 37 個 注音小夥伴\n聽聲音 選出對的注音\n注音・好玩學發音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#注音符號 #注音拼讀 #Lumi注音星球",
+   "fallback": {
+    "ready": true,
+    "problems": [],
+    "photo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/64/02/30/64023030-bf62-3c68-1b7e-28ad423e838c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+    "caption": "收集 37 個 注音小夥伴\n聽聲音 選出對的注音\n注音・好玩學發音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#注音符號 #注音拼讀 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/app/id6773017109?pt=118326163&ct=bf_tg&mt=8\nAndroid 版在 Google Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dlumibopomofo",
+    "buttons": [
+     "https://apps.apple.com/app/id6773017109?pt=118326163&ct=bf_tg&mt=8",
+     "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dlumibopomofo"
+    ]
+   },
+   "action": "delete_or_replace_video",
+   "note": "past the 48 h window: deleteMessage is tried, a refusal swaps the video for the icon photo"
+  },
+  {
+   "platform": "telegram",
+   "id": "363",
+   "link": "https://t.me/LumiApps2026/363",
+   "clip": "maskmyfile/cs",
+   "app": "maskmyfile",
+   "posted_at": "2026-10-15T18:58:44Z",
+   "reason": "store_screenshot",
+   "reason_text": "App 畫面是商店截圖，不是真實螢幕錄影（CLAUDE.md 影片規則／App Store 2.3.3）",
+   "detail": "beat 1 uses store screenshot 'maskmyfile/02.png', not a real screen recording",
+   "record": "ios-app-guide .github/growth/clip-posts.json",
+   "method": "deleteMessage（48 小時內）；被拒則 editMessageMedia 換成 App 圖示照片＋原文＋直接下載連結",
+   "reversible": false,
+   "delete_window_ends": "2026-10-17T18:58:44Z",
+   "live": {
+    "state": "present",
+    "video": true,
+    "photo": false
+   },
+   "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #MaskMyFile",
+   "fallback": {
+    "ready": true,
+    "problems": [],
+    "photo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8d/49/98/8d49986d-df1e-9d3d-b94c-419b2b937782/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+    "caption": "Něco chybí? Přidejte to\nUloží novou kopii, originál zůstane\nSkryjte citlivé informace\nMask My File: Odstraňte údaje\nVyhledejte „Mask My File“ v App Storu\nTaké na Google Play\n\n#OdstraňteÚdaje #Anonymizace #MaskMyFile\n\nStáhnout z App Storu: https://apps.apple.com/app/id6792850916?pt=118326163&ct=bf_tg&mt=8\nTaké na Google Play: https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dmaskmyfile",
+    "buttons": [
+     "https://apps.apple.com/app/id6792850916?pt=118326163&ct=bf_tg&mt=8",
+     "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dmaskmyfile"
+    ]
+   },
+   "action": "delete",
+   "note": "inside the 48 h delete window"
+  },
+  {
+   "platform": "telegram",
+   "id": "366",
+   "link": "https://t.me/LumiApps2026/366",
+   "clip": "wordmate/zh-Hant",
+   "app": "wordmate",
+   "posted_at": "2026-10-16T05:43:54Z",
+   "reason": "store_screenshot",
+   "reason_text": "App 畫面是商店截圖，不是真實螢幕錄影（CLAUDE.md 影片規則／App Store 2.3.3）",
+   "detail": "beat 1 uses store screenshot 'wordmate/02.png', not a real screen recording",
+   "record": "ios-app-guide .github/growth/clip-posts.json",
+   "method": "deleteMessage（48 小時內）；被拒則 editMessageMedia 換成 App 圖示照片＋原文＋直接下載連結",
+   "reversible": false,
+   "delete_window_ends": "2026-10-18T05:43:54Z",
+   "live": {
+    "state": "present",
+    "video": true,
+    "photo": false
+   },
+   "caption": "手腕上也能背\n連續學習不中斷\n44 種語言與單字小工具\nWordmate：44 種語言背單字\n在 App Store 搜尋「Wordmate 背單字」\nAndroid 版在 Google Play\n\n#44種語言背單字 #學英文 #Wordmate背單字",
+   "fallback": {
+    "ready": true,
+    "problems": [],
+    "photo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/97/35/b1/9735b11f-3365-789a-867b-9a8cac5f78e6/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+    "caption": "手腕上也能背\n連續學習不中斷\n44 種語言與單字小工具\nWordmate：44 種語言背單字\n在 App Store 搜尋「Wordmate 背單字」\nAndroid 版在 Google Play\n\n#44種語言背單字 #學英文 #Wordmate背單字\n\n在 App Store 下載: https://apps.apple.com/app/id6789917808?pt=118326163&ct=bf_tg&mt=8\nAndroid 版在 Google Play: https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dwordmate",
+    "buttons": [
+     "https://apps.apple.com/app/id6789917808?pt=118326163&ct=bf_tg&mt=8",
+     "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dwordmate"
+    ]
+   },
+   "action": "delete",
+   "note": "inside the 48 h delete window"
+  },
+  {
+   "platform": "telegram",
+   "id": "373",
+   "link": "https://t.me/LumiApps2026/373",
+   "clip": "mochi/en",
+   "app": "mochi",
+   "posted_at": "2026-10-16T20:07:38Z",
+   "reason": "store_screenshot",
+   "reason_text": "App 畫面是商店截圖，不是真實螢幕錄影（CLAUDE.md 影片規則／App Store 2.3.3）",
+   "detail": "beat 1 uses store screenshot 'mochi/s02.png', not a real screen recording",
+   "record": "ios-app-guide .github/growth/clip-posts.json",
+   "method": "deleteMessage（48 小時內）；被拒則 editMessageMedia 換成 App 圖示照片＋原文＋直接下載連結",
+   "reversible": false,
+   "delete_window_ends": "2026-10-18T20:07:38Z",
+   "live": {
+    "state": "present",
+    "video": true,
+    "photo": false
+   },
+   "caption": "Right on your Home Screen\nTap to check it off\nPlan your day with cozy calm\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CuteChecklist #Todo #MochiCuteChecklist",
+   "fallback": {
+    "ready": true,
+    "problems": [],
+    "photo": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fd/f4/0e/fdf40e2c-91e4-6f2d-52ff-e9123609ec51/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+    "caption": "Right on your Home Screen\nTap to check it off\nPlan your day with cozy calm\nMochi: Cute Checklist\nSearch “Mochi Cute Checklist” on the App Store\nAlso on Google Play\n\n#CuteChecklist #Todo #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/app/id6785004775?pt=118326163&ct=bf_tg&mt=8\nAlso on Google Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dmochi",
+    "buttons": [
+     "https://apps.apple.com/app/id6785004775?pt=118326163&ct=bf_tg&mt=8",
+     "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dbf_tg%26utm_campaign%3Dmochi"
+    ]
+   },
+   "action": "delete",
+   "note": "inside the 48 h delete window"
+  },
+  {
+   "platform": "instagram",
+   "id": "18037089620655985",
+   "link": "https://www.instagram.com/reel/DegQdxZjqGh/",
+   "clip": "lumibopomofo/zh-Hant",
+   "app": "lumibopomofo",
+   "posted_at": "2026-10-15T05:56:35Z",
+   "reason": "free_download_end_card",
+   "reason_text": "已發布的 render 片尾卡寫「Free download／免費下載」（CLAUDE.md 影片規則）",
+   "detail": "end card says Free download / 免費下載 (storyboard fixed 2026-10-17, the post is the old render)",
+   "record": "ios-app-guide .github/growth/clip-posts.json",
+   "method": "交本機：在 Instagram App 手動封存（Graph API 不能刪除／封存）",
+   "reversible": true,
+   "live": {
+    "state": "present",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "permalink": "https://www.instagram.com/reel/DegQdxZjqGh/",
+    "timestamp": "2026-10-15T05:56:30+0000",
+    "username": "aiviews.co"
+   },
+   "action": "local_archive",
+   "note": "Instagram Login token: no delete / archive call; archived by hand on the Mac"
+  },
+  {
+   "platform": "instagram",
+   "id": "18096617609140304",
+   "link": "https://www.instagram.com/reel/DehrpqjgFgN/",
+   "clip": "maskmyfile/cs",
+   "app": "maskmyfile",
+   "posted_at": "2026-10-15T19:13:18Z",
+   "reason": "store_screenshot",
+   "reason_text": "App 畫面是商店截圖，不是真實螢幕錄影（CLAUDE.md 影片規則／App Store 2.3.3）",
+   "detail": "beat 1 uses store screenshot 'maskmyfile/02.png', not a real screen recording",
+   "record": "ios-app-guide .github/growth/clip-posts.json",
+   "method": "交本機：在 Instagram App 手動封存（Graph API 不能刪除／封存）",
+   "reversible": true,
+   "live": {
+    "state": "present",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "permalink": "https://www.instagram.com/reel/DehrpqjgFgN/",
+    "timestamp": "2026-10-15T19:13:09+0000",
+    "username": "aiviews.co"
+   },
+   "action": "local_archive",
+   "note": "Instagram Login token: no delete / archive call; archived by hand on the Mac"
+  },
+  {
+   "platform": "instagram",
+   "id": "18339249130278269",
+   "link": "https://www.instagram.com/reel/DekN3a3gIif/",
+   "clip": "mochi/en",
+   "app": "mochi",
+   "posted_at": "2026-10-16T18:50:51Z",
+   "reason": "store_screenshot",
+   "reason_text": "App 畫面是商店截圖，不是真實螢幕錄影（CLAUDE.md 影片規則／App Store 2.3.3）",
+   "detail": "beat 1 uses store screenshot 'mochi/s02.png', not a real screen recording",
+   "record": "ios-app-guide .github/growth/clip-posts.json",
+   "method": "交本機：在 Instagram App 手動封存（Graph API 不能刪除／封存）",
+   "reversible": true,
+   "live": {
+    "state": "present",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "permalink": "https://www.instagram.com/reel/DekN3a3gIif/",
+    "timestamp": "2026-10-16T18:50:45+0000",
+    "username": "aiviews.co"
+   },
+   "action": "local_archive",
+   "note": "Instagram Login token: no delete / archive call; archived by hand on the Mac"
+  },
+  {
+   "platform": "instagram",
+   "id": "17973694440140548",
+   "link": "https://www.instagram.com/reel/DelGBbziQCg/",
+   "clip": "lumibopomofo_b/zh-Hant",
+   "app": "lumibopomofo_b",
+   "posted_at": "2026-10-17T03:01:21Z",
+   "reason": "store_screenshot",
+   "reason_text": "App 畫面是商店截圖，不是真實螢幕錄影（CLAUDE.md 影片規則／App Store 2.3.3）",
+   "detail": "beat 1 uses store screenshot 'lumibopomofo/01.png', not a real screen recording",
+   "record": "ios-app-guide .github/growth/clip-posts.json",
+   "method": "交本機：在 Instagram App 手動封存（Graph API 不能刪除／封存）",
+   "reversible": true,
+   "live": {
+    "state": "present",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "permalink": "https://www.instagram.com/reel/DelGBbziQCg/",
+    "timestamp": "2026-10-17T03:01:16+0000",
+    "username": "aiviews.co"
+   },
+   "action": "local_archive",
+   "note": "Instagram Login token: no delete / archive call; archived by hand on the Mac"
+  },
+  {
+   "platform": "threads",
+   "id": "18105193691312359",
+   "link": "https://www.threads.com/@hourstag.app/post/DegUA20Dah4",
+   "clip": "lumibopomofo/zh-Hant",
+   "app": "lumibopomofo",
+   "posted_at": "2026-10-15T06:28:04Z",
+   "reason": "free_download_end_card",
+   "reason_text": "已發布的 render 片尾卡寫「Free download／免費下載」（CLAUDE.md 影片規則）",
+   "detail": "end card says Free download / 免費下載 (storyboard fixed 2026-10-17, the post is the old render)",
+   "record": "ios-app-guide .github/growth/clip-posts.json",
+   "method": "DELETE /{threads-media-id}（threads_delete）",
+   "reversible": false,
+   "live": {
+    "state": "present",
+    "media_type": "VIDEO",
+    "permalink": "https://www.threads.com/@hourstag.app/post/DegUA20Dah4",
+    "timestamp": "2026-10-15T06:27:48+0000",
+    "username": "hourstag.app",
+    "shortcode": "DegUA20Dah4"
+   },
+   "action": "delete",
+   "own_replies_kept": [
+    {
+     "id": "17898348957398868",
+     "text": "在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=h7_lumibopomofo_zh-Hant_th&mt=8\nGoogle Play: "
+    }
+   ]
+  },
+  {
+   "platform": "threads",
+   "id": "18110538290595393",
+   "link": "https://www.threads.com/@hourstag.app/post/Dek9_ySlB4l",
+   "clip": "lumibopomofo_b/zh-Hant",
+   "app": "lumibopomofo_b",
+   "posted_at": "2026-10-17T01:52:23Z",
+   "reason": "store_screenshot",
+   "reason_text": "App 畫面是商店截圖，不是真實螢幕錄影（CLAUDE.md 影片規則／App Store 2.3.3）",
+   "detail": "beat 1 uses store screenshot 'lumibopomofo/01.png', not a real screen recording",
+   "record": "ios-app-guide .github/growth/clip-posts.json",
+   "method": "DELETE /{threads-media-id}（threads_delete）",
+   "reversible": false,
+   "live": {
+    "state": "present",
+    "media_type": "VIDEO",
+    "permalink": "https://www.threads.com/@hourstag.app/post/Dek9_ySlB4l",
+    "timestamp": "2026-10-17T01:51:25+0000",
+    "username": "hourstag.app",
+    "shortcode": "Dek9_ySlB4l"
+   },
+   "action": "delete",
+   "own_replies_kept": [
+    {
+     "id": "17998106798828841",
+     "text": "在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=h7_lumibopomofo_b_th&mt=8\nGoogle Play: https:"
+    }
+   ]
+  }
+ ],
+ "receipts": {},
+ "handoff_local": [
+  {
+   "platform": "instagram",
+   "id": "18037089620655985",
+   "link": "https://www.instagram.com/reel/DegQdxZjqGh/",
+   "clip": "lumibopomofo/zh-Hant",
+   "username": "aiviews.co",
+   "do": "archive (封存), not delete"
+  },
+  {
+   "platform": "instagram",
+   "id": "18096617609140304",
+   "link": "https://www.instagram.com/reel/DehrpqjgFgN/",
+   "clip": "maskmyfile/cs",
+   "username": "aiviews.co",
+   "do": "archive (封存), not delete"
+  },
+  {
+   "platform": "instagram",
+   "id": "18339249130278269",
+   "link": "https://www.instagram.com/reel/DekN3a3gIif/",
+   "clip": "mochi/en",
+   "username": "aiviews.co",
+   "do": "archive (封存), not delete"
+  },
+  {
+   "platform": "instagram",
+   "id": "17973694440140548",
+   "link": "https://www.instagram.com/reel/DelGBbziQCg/",
+   "clip": "lumibopomofo_b/zh-Hant",
+   "username": "aiviews.co",
+   "do": "archive (封存), not delete"
+  }
+ ],
+ "local_steps": [
+  "iPhone 開 Instagram App，確認登入的是發這些 Reels 的帳號（報告 rows[].live.username）。",
+  "逐一打開報告 handoff_local 裡的每個連結（或個人檔案 → Reels 分頁找到同一支片）。",
+  "點右上角「⋯」→「封存」（Archive）。不要按「刪除」：封存可以復原，刪除不行。",
+  "全部封存後，用無痕視窗打開每個連結，看到「無法使用這個頁面」就是完成；把結果回報雲端，由雲端把 clip-posts.json 的 taken_down.status 從 pending_local_archive 改成 archived。",
+  "要復原時：個人檔案 → 右上角選單 →「封存」→ 打開那支 Reel →「⋯」→「在個人檔案上顯示」。"
+ ]
+}

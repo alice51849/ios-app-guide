@@ -1,10 +1,11 @@
 {
- "generated": "2026-10-17T15:39:41Z",
+ "generated": "2026-10-17T20:40:37Z",
  "mode": "apply",
  "counts": {
-  "ok_caption": 25,
-  "backfilled": 7,
-  "draft_skipped": 13
+  "ok_caption": 30,
+  "draft_skipped": 13,
+  "backfilled": 1,
+  "ok_backfilled_earlier": 1
  },
  "rows": [
   {
@@ -102,11 +103,9 @@
    "id": "4553343",
    "permalink": "https://dev.to/cait518/picclear-pro-photo-cleaner-3edp",
    "date": "2026-09-02",
-   "app": "6780223070",
-   "status": "backfilled",
-   "text": "PicClear Pro: Photo Cleaner",
-   "ios_id": "6780223070",
-   "locale": "en"
+   "app": "",
+   "status": "ok_caption",
+   "text": "PicClear Pro: Photo Cleaner"
   },
   {
    "channel": "devto",
@@ -239,22 +238,18 @@
    "id": "4287115",
    "permalink": "https://dev.to/cait518/free-up-iphone-storage-find-duplicate-photos-and-huge-videos-3b21",
    "date": "2026-08-01",
-   "app": "6780223070",
-   "status": "backfilled",
-   "text": "Free up iPhone storage: find duplicate photos and huge videos",
-   "ios_id": "6780223070",
-   "locale": "en"
+   "app": "",
+   "status": "ok_caption",
+   "text": "Free up iPhone storage: find duplicate photos and huge videos"
   },
   {
    "channel": "devto",
    "id": "4257899",
    "permalink": "https://dev.to/cait518/get-your-resume-past-the-ats-filter-a-quick-checklist-10dd",
    "date": "2026-07-29",
-   "app": "6781337213",
-   "status": "backfilled",
-   "text": "Get your résumé past the ATS filter (a quick checklist)",
-   "ios_id": "6781337213",
-   "locale": "other"
+   "app": "",
+   "status": "ok_caption",
+   "text": "Get your résumé past the ATS filter (a quick checklist)"
   },
   {
    "channel": "devto",
@@ -279,11 +274,9 @@
    "id": "4223549",
    "permalink": "https://dev.to/cait518/track-spending-in-hours-of-your-life-not-dollars-376n",
    "date": "2026-07-24",
-   "app": "6754218117",
-   "status": "backfilled",
-   "text": "Track spending in hours of your life, not dollars",
-   "ios_id": "6754218117",
-   "locale": "en"
+   "app": "",
+   "status": "ok_caption",
+   "text": "Track spending in hours of your life, not dollars"
   },
   {
    "channel": "devto",
@@ -299,9 +292,11 @@
    "id": "4179270",
    "permalink": "https://dev.to/cait518/scan-documents-to-searchable-pdfs-offline-one-time-purchase-no-cloud-46hn",
    "date": "2026-07-19",
-   "app": "",
-   "status": "ok_caption",
-   "text": "Scan documents to searchable PDFs offline — one-time purchase, no cloud"
+   "app": "6779977651",
+   "status": "backfilled",
+   "text": "Scan documents to searchable PDFs offline — one-time purchase, no cloud",
+   "ios_id": "6779977651",
+   "locale": "en"
   },
   {
    "channel": "devto",
@@ -326,11 +321,9 @@
    "id": "4133446",
    "permalink": "https://dev.to/cait518/free-printable-zhuyin-bopomofo-practice-sheets-for-teaching-kids-chinese-1o1p",
    "date": "2026-07-13",
-   "app": "6773017109",
-   "status": "backfilled",
-   "text": "Free printable Zhuyin (Bopomofo) practice sheets for teaching kids Chinese",
-   "ios_id": "6773017109",
-   "locale": "zh-Hant"
+   "app": "",
+   "status": "ok_caption",
+   "text": "Free printable Zhuyin (Bopomofo) practice sheets for teaching kids Chinese"
   },
   {
    "channel": "devto",
@@ -364,22 +357,19 @@
    "id": "4099259",
    "permalink": "https://dev.to/cait518/make-a-passport-or-id-photo-at-home-on-your-iphone-no-photo-booth-5837",
    "date": "2026-07-08",
-   "app": "6780575828",
-   "status": "backfilled",
-   "text": "Make a passport or ID photo at home on your iPhone (no photo booth)",
-   "ios_id": "6780575828",
-   "locale": "en"
+   "app": "",
+   "status": "ok_caption",
+   "text": "Make a passport or ID photo at home on your iPhone (no photo booth)"
   },
   {
    "channel": "devto",
    "id": "4099241",
    "permalink": "https://dev.to/cait518/i-built-a-family-of-pay-once-ios-apps-no-subscriptions-no-ads-on-device-56b8",
    "date": "2026-07-08",
-   "app": "6754218117,6755782939,6773017109,6778269699,6778491147,6780107485,6780575828,6781337213,6781808054,6782275018,6785004775,6788236641",
-   "status": "backfilled",
+   "app": "6779552704,6779977651,6780223070",
+   "status": "ok_backfilled_earlier",
    "text": "I built a family of pay-once iOS apps — no subscriptions, no ads, on-device",
-   "ios_id": "6754218117,6755782939,6773017109,6778269699,6778491147,6780107485,6780575828,6781337213,6781808054,6782275018,6785004775,6788236641",
-   "locale": "other"
+   "ios_id": "6779552704,6779977651,6780223070"
   },
   {
    "channel": "devto",

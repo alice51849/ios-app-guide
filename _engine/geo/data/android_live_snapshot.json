@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-17T13:30:18+0800",
- "count": 45,
- "content_sha256": "b713a712eeba16af29cac69c62aaf5737433c86151fd4cf6da9f930a22e19050",
+ "source_generated": "2026-10-17T14:31:17+0800",
+ "count": 48,
+ "content_sha256": "eca87139892b085b83ffb33dd73acbcdafd938c94c4131d5251083603289fe1c",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -87,6 +87,26 @@
     }
    }
   },
+  "countdaysnow": {
+   "ios_app_id": "6807079789",
+   "ios_name": "CountDaysNow",
+   "android_folder": "50_CountDaysNow",
+   "package": "com.alice51849.CountDaysNow",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "paid": false,
+   "first_seen": "2026-10-17T14:31:17+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "CountDaysNow: Event Counter"
+    },
+    "zh-TW": {
+     "title": "CountDaysNow：倒數日與紀念日計數器",
+     "short_description": "倒數日與紀念日一次管理：生日、旅行、考試還有幾天，在一起已經幾天，放上手機桌面一眼看見"
+    }
+   }
+  },
   "cvdesk": {
    "ios_app_id": "6781337213",
    "ios_name": "CV Desk",
@@ -147,6 +167,27 @@
     "zh-TW": {
      "title": "DailyMate Lite：開口練習",
      "short_description": "出國點餐、問路、出差都用得上：英文、日語、韓語等 50 種語言的情境會話與口說練習"
+    }
+   }
+  },
+  "dbhalo": {
+   "ios_app_id": "6806826699",
+   "ios_name": "dB Halo",
+   "android_folder": "48_dBHalo",
+   "package": "com.alice51849.dBHalo",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.dBHalo",
+   "paid": false,
+   "first_seen": "2026-10-17T14:31:17+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "dB Halo: Decibel Sound Meter",
+     "short_description": "Check how loud it is with a live noise meter, spectrum view and sleep journal"
+    },
+    "zh-TW": {
+     "title": "dB Halo：分貝計與聲級計",
+     "short_description": "分貝計與噪音測量：即時看懂環境有多吵，還有頻譜分析與睡眠日誌"
     }
    }
   },
@@ -231,6 +272,27 @@
     "zh-TW": {
      "title": "HoursTag Lite",
      "short_description": "買東西前先換算要工作幾小時，標記必要、想要或衝動，花得清楚，存錢也更有方向"
+    }
+   }
+  },
+  "ledmovingtext": {
+   "ios_app_id": "6806639602",
+   "ios_name": "LED Moving Text",
+   "android_folder": "49_LEDMovingText",
+   "package": "com.alice51849.LEDMovingText",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LEDMovingText",
+   "paid": false,
+   "first_seen": "2026-10-17T14:31:17+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "LED Moving Text: Banner Sign",
+     "short_description": "Scrolling text LED banner: hold up your phone at concerts, pickups and events"
+    },
+    "zh-TW": {
+     "title": "LED Moving Text：跑馬燈電子看板",
+     "short_description": "手機秒變 LED 跑馬燈與應援燈牌：演唱會、接機舉牌、活動提示都看得清楚"
     }
    }
   },

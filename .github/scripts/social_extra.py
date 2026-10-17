@@ -288,7 +288,7 @@ def todays_clips(data, posts, channel, day, slot):
     out, seen = [], set()
     for key in keys:
         clip = data.get("clips", {}).get(key)
-        if key in seen or key in done or not clip or not clip.get("url"):
+        if key in seen or key in done or not clip or not clip.get("url") or post_qa.video_compliance_problems(clip):
             continue
         seen.add(key)
         if locales and clip["locale"] not in locales:
@@ -1207,7 +1207,8 @@ def public(item, channel):
     # `play` is the Google Play link whenever the app is on Android (None otherwise).
     out.update(store=item.get("store"), play=play_of(item), button=button_of(item))
     if item.get("clip"):
-        out.update(keywords=item["clip"].get("keywords") or [], keyline=item["clip"].get("keyline", ""))
+        out.update(keywords=item["clip"].get("keywords") or [], keyline=item["clip"].get("keyline", ""),
+                   compliance=item["clip"].get("compliance"))  # threads-autopilot / the YouTube runner check it
         if channel == "youtube":
             title, desc, words = yt_meta(item)
             out["youtube"] = {"title": title, "description": desc, "tags": words}
@@ -1234,6 +1235,8 @@ def pool(data, channel, day, perf=None):
     out = []
     for i in order:
         key, clip = clips[i]
+        if post_qa.video_compliance_problems(clip):  # no real-recording record: never offered (owner rule)
+            continue
         raw = clip_item(key, clip, channel, day)
         if not outgoing(raw, channel):  # a clip whose download link cannot be attached is not offered
             continue

@@ -713,7 +713,9 @@ class AppFinderRealDataTest(unittest.TestCase):
                         unknown += 1
                     else:
                         self.assertEqual(post["ios_id"], CP.ios_id(clip), f"{key} {variant['id']} {channel}")
-        self.assertGreater(total, 1000)
+        # Not vacuous: every clip of the real clips.json (only real-recording cuts since the 2026-10-17 video
+        # compliance gate, so far fewer than the 1000+ captions of the store-screenshot era), 3 channels each.
+        self.assertGreater(total, 100)
         self.assertLess(unknown / total, 0.05, "the finder should still know almost every caption of our own")
 
 

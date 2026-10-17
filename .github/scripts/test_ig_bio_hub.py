@@ -97,7 +97,8 @@ class BioLineTest(unittest.TestCase):
             self.assertEqual(post_qa.locale_problems(line, locale, ("Mochi",)), [], locale)
 
     def test_qa_refuses_an_instagram_caption_that_does_not_say_where_to_tap(self):
-        clip = dict(CLIPS["clips"]["mochi/en"], url="https://x/v.mp4", search="Mochi")
+        clip = dict(CLIPS["clips"]["mochi/en"], url="https://x/v.mp4", search="Mochi",
+                    compliance={"real_recording": True, "screen_text_ok": True, "board": "0123456789abcdef"})
         real = CP.caption(clip, "instagram")
         self.assertIn("📲 Link in bio → tap “Mochi”", real)
         self.assertEqual(post_qa.clip_problems(clip, "instagram", real, online=False), [])

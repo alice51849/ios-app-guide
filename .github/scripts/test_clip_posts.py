@@ -12,6 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 os.environ.setdefault("POST_QA_OFFLINE", "1")  # the pre-post QA gate makes no network calls in tests
 
 import clip_posts as C  # noqa: E402
+import post_qa as Q  # noqa: E402
 import clip_progress as P  # noqa: E402
 import review_links as R  # noqa: E402
 
@@ -19,7 +20,11 @@ import review_links as R  # noqa: E402
 def clip(app, locale):
     return {"app": app, "locale": locale, "url": f"https://files.catbox.moe/{app}_{locale}.mp4",
             "store_url": f"https://apps.apple.com/us/app/id1?pt=118326163&ct=h7_{app}_{locale}&mt=8",
-            "hook": f"{app} hook", "name": f"{app} name", "search": app}
+            "hook": f"{app} hook", "name": f"{app} name", "search": app, "compliance": COMPLIANT}
+
+
+# The record 00_GrowthEngine schedule_posts.py puts on a real-recording clip (post_qa.video_compliance_problems).
+COMPLIANT = {"real_recording": True, "screen_text_ok": True, "board": "0123456789abcdef"}
 
 
 DATA = {
@@ -694,6 +699,29 @@ class ReviewLinksTest(unittest.TestCase):
             self.assertNotIn("write-review", C.caption(c, channel, variant))
         other = clip("a", "ko")
         self.assertNotIn("write-review", C.caption(other, "telegram", {"id": "a", "lead": "훅"}))
+
+
+class VideoComplianceGateTest(unittest.TestCase):
+    """Owner rule: only real screen recordings with no price / Free / Pro on screen are ever posted."""
+
+    def test_a_clip_without_the_compliance_record_is_refused(self):
+        bad = {k: v for k, v in clip("a", "en").items() if k != "compliance"}
+        self.assertTrue(Q.video_compliance_problems(bad))
+        self.assertTrue(Q.clip_problems(bad, "telegram", "text", online=False)[0].startswith("clip has no video compliance"))
+
+    def test_an_incomplete_record_is_refused(self):
+        for rec in ({}, {"real_recording": True}, {"real_recording": True, "screen_text_ok": False, "board": "x"},
+                    {"real_recording": "yes", "screen_text_ok": True, "board": "x"}, "ok"):
+            self.assertTrue(Q.video_compliance_problems(dict(clip("a", "en"), compliance=rec)), rec)
+
+    def test_the_record_passes(self):
+        self.assertEqual(Q.video_compliance_problems(clip("a", "en")), [])
+
+    def test_qa_variant_never_picks_a_variant_for_a_non_compliant_clip(self):
+        bad = {k: v for k, v in clip("a", "en").items() if k != "compliance"}
+        variant, problems = C.qa_variant(bad, "telegram", {"id": "a", "lead": "a hook"}, online=False)
+        self.assertIsNone(variant)
+        self.assertTrue(problems)
 
 
 if __name__ == "__main__":

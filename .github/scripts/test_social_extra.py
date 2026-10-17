@@ -32,7 +32,11 @@ def clip(app, locale):
     return {"app": app, "locale": locale, "url": f"https://files.catbox.moe/{app}_{locale}.mp4",
             "store_url": f"https://apps.apple.com/us/app/id1?pt=118326163&ct=h7_{app}_{locale}&mt=8",
             "hook": f"{app} {HOOK.get(locale, 'hook')} {locale}", "name": f"{app} name", "search": app,
-            "tags": ["#a", "#b", "#c"]}
+            "tags": ["#a", "#b", "#c"], "compliance": COMPLIANT}
+
+
+# The record 00_GrowthEngine schedule_posts.py puts on a real-recording clip (post_qa.video_compliance_problems).
+COMPLIANT = {"real_recording": True, "screen_text_ok": True, "board": "0123456789abcdef"}
 
 
 HOOK = {"zh-Hant": "鉤子", "ko": "훅", "ja": "フック"}  # each locale's hook line is in its own script (post_qa)
@@ -1133,6 +1137,24 @@ class FeedLinksTest(LinkAsserts, unittest.TestCase):
         self.assertIn("a/en", [i["key"] for i in feed["pool"]["youtube"]])
         self.assertIn("download link", out.getvalue())
         json.dumps(feed)
+
+
+class VideoComplianceFeedTest(unittest.TestCase):
+    """A clip without its real-recording record never reaches the pool, the backlog or the feed."""
+
+    def test_pool_and_backlog_drop_a_clip_without_the_record(self):
+        bad = {k: v for k, v in clip("b", "en").items() if k != "compliance"}
+        data = {"clips": {"a/en": clip("a", "en"), "b/en": bad},
+                "schedule": [{"date": DAY.isoformat(), "slot": 1, "channel": "instagram", "clip": "b/en"},
+                             {"date": DAY.isoformat(), "slot": 1, "channel": "telegram", "clip": "a/en"}]}
+        with mock.patch.object(S, "outgoing", lambda item, channel: True):
+            keys = [i["key"] for i in S.pool(data, "bluesky", DAY)]
+        self.assertEqual(keys, ["a/en"])
+        self.assertEqual([i["key"] for i in S.todays_clips(data, [], "facebook", DAY, 1)], ["a/en"])
+
+    def test_feed_items_carry_the_record_for_the_other_posters(self):
+        item = S.clip_item("a/en", clip("a", "en"), "bluesky", DAY)
+        self.assertEqual(S.public(item, "bluesky")["compliance"], COMPLIANT)
 
 
 if __name__ == "__main__":

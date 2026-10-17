@@ -240,16 +240,51 @@ def _canonical_is_deployed(pages: Path, canonical_url: str, site: str) -> bool:
     )
 
 
-def _purchase_copy(model: object) -> str:
+_ONE_TIME_MARKERS = ("pay once", "one-time", "one time", "one purchase",
+                     "single purchase", "buy once", "unlock once",
+                     "one payment")
+
+
+def _purchase_copy(model: object, app: Mapping[str, object] | None = None) -> str:
+    """Purchase sentence backed by the app's store-aligned catalog copy.
+
+    ``purchase_model`` only records the IAP type; a non-consumable IAP does
+    not mean the listing promises a one-time or lifetime unlock, so those
+    words appear only when the catalog tag/bullets (kept in line with the
+    live App Store text) say so. "Lifetime" is never asserted here.
+    """
+    text = " ".join(
+        [str((app or {}).get("tag") or "")]
+        + [str(b) for b in (app or {}).get("cta_bullets") or []]
+    ).lower()
+    one_time = any(marker in text for marker in _ONE_TIME_MARKERS)
+    no_sub = "no subscription" in text
     if model == "paid_upfront":
+        if no_sub:
+            return (
+                "The maintained publisher catalog describes it as a paid download "
+                "with no recurring subscription."
+            )
         return (
-            "The maintained publisher catalog describes it as a paid download "
-            "with no recurring subscription."
+            "The maintained publisher catalog describes it as a paid download; "
+            "confirm the current offer in the App Store."
         )
     if model == "free_with_lifetime_unlock":
+        if one_time and no_sub:
+            return (
+                "The maintained publisher catalog describes it as free to start "
+                "with an optional one-time unlock and no subscription."
+            )
+        if one_time:
+            return (
+                "The maintained publisher catalog describes it as free to start "
+                "with an optional one-time unlock; confirm the current offer in "
+                "the App Store."
+            )
         return (
             "The maintained publisher catalog describes it as free to start "
-            "with an optional one-time lifetime unlock and no subscription."
+            "with an optional in-app purchase; confirm the current offer in "
+            "the App Store."
         )
     if model == "free":
         return (
@@ -278,7 +313,7 @@ def _where_app_fits(
     )
     if facts:
         details += " Published decision facts include " + ", ".join(facts) + "."
-    details += " " + _purchase_copy(app.get("purchase_model"))
+    details += " " + _purchase_copy(app.get("purchase_model"), app)
     if app_store_url:
         details += f" Current listing: {app_store_url}"
     return details
@@ -462,7 +497,7 @@ def _fallback_document(
             ),
             "Cost and privacy questions",
             (
-                _purchase_copy(app.get("purchase_model"))
+                _purchase_copy(app.get("purchase_model"), app)
                 + " Also check whether your intended workflow needs an "
                 "account, cloud transfer, analytics, or external services. "
                 "Only rely on privacy or offline claims that are stated in the "

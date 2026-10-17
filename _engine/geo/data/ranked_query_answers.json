@@ -12894,5 +12894,508 @@
     ]
    ]
   }
+ },
+ {
+  "key": "gmoney",
+  "locale": "ko",
+  "market": "KR",
+  "term": "아이패드 가계부 환율 계산기 오프라인",
+  "rank": 12,
+  "slug": "ipad-budget-app-with-offline-currency-converter-one-time-purchase",
+  "paid_context": "pay_once",
+  "experiment": "EXP-05 KR iPad paid Productivity",
+  "loc": {
+   "title": "iPad 가계부 + 오프라인 환율 계산기, 한 번 결제로 쓰는 앱",
+   "meta": "iPad에서 가계부와 환율 계산을 한 앱으로. G+Money는 50개 통화 환율 변환(오프라인 작동)과 카테고리별 가계부를 묶었고, 한 번 결제에 구독이 없으며 계정·광고·추적이 없습니다.",
+   "h1": "iPad 가계부와 오프라인 환율 계산기, 한 번 결제로 쓸 수 있는 앱은?",
+   "lead": "가계부 앱과 환율 앱을 따로 쓰면 해외에서 쓴 돈을 다시 원화로 계산해 옮겨 적어야 합니다. 두 기능이 한 앱에 있고 신호 없이도 돌아가는지부터 확인하세요.",
+   "answer": "가계부와 환율 변환이 한 앱에 있고, 오프라인에서 작동하며, 구독 없이 한 번 결제로 끝나는 앱을 고르세요.",
+   "paras": [
+    "여행이나 해외 결제가 잦으면 번거로운 것은 기록 자체보다 환산입니다. 현지 통화로 쓴 금액을 환율 앱에서 따로 계산하고 다시 가계부에 옮기면 지출 하나에 손이 두 번 갑니다. 환율 변환과 지출 기록이 같은 앱에 있으면 자국 통화 합계가 바로 보입니다.",
+    "오프라인 작동은 여행에서 특히 중요합니다. 기내나 로밍을 끈 상태에서도 자동 업데이트해 둔 환율이나 직접 입력한 수동 환율로 계산할 수 있어야 합니다. 화면이 큰 iPad에서는 여행별·카테고리별 요약을 한눈에 보기 좋습니다.",
+    "G+Money는 50개 통화 환율 변환과 카테고리별 가계부, 하루 한도, 여행·이벤트별 정리, 텍스트·CSV 내보내기를 한 앱에 담았습니다. 한 번 결제로 구독이 없고, 계정·가입·추적·광고가 없으며, 데이터는 기기에 저장됩니다(iCloud 동기화를 켜면 내 iCloud에도 저장)."
+   ],
+   "look": [
+    "가계부와 환율 변환이 한 앱에 있는지",
+    "신호가 없어도 환율 변환이 되는지(수동 환율 포함)",
+    "여행이나 이벤트별로 지출을 묶고 소계를 볼 수 있는지",
+    "텍스트나 CSV로 내보낼 수 있는지",
+    "구독·계정·광고·추적이 있는지"
+   ],
+   "steps": [
+    "여행이나 이벤트를 하나 만들고 아이콘과 색상을 정합니다.",
+    "출발 전에 환율을 업데이트하거나 수동 환율을 입력해 둡니다.",
+    "하루 한도를 정해 오늘 얼마 남았는지 확인합니다.",
+    "지출을 카테고리별로 기록하고 자국 통화 합계로 확인합니다.",
+    "여행이 끝나면 여행별 요약을 텍스트나 CSV로 내보냅니다."
+   ],
+   "rows": [
+    [
+     "환율 변환",
+     "오프라인 작동, 수동 환율 지원",
+     "해외에서는 신호가 없을 때가 많음"
+    ],
+    [
+     "기록 정리",
+     "여행·카테고리·날짜별 필터",
+     "어디에 썼는지 보여야 소비 습관이 보임"
+    ],
+    [
+     "결제 방식",
+     "한 번 결제인지 구독인지",
+     "오래 쓰는 가계부는 구독 비용이 계속 쌓임"
+    ]
+   ],
+   "fits": "G+Money는 일상 가계부와 여행 경비를 한 앱에서 관리하면서 환율 계산까지 오프라인으로 끝내고 싶은 사람에게 맞습니다. iPhone과 iPad에서 쓸 수 있고, 한 번 결제로 구독이 없습니다.",
+   "faq": [
+    [
+     "인터넷 없이도 환율 계산이 되나요?",
+     "네. 자동 업데이트해 둔 환율이나 직접 입력한 수동 환율로 신호가 없어도 변환됩니다."
+    ],
+    [
+     "구독이 필요한가요?",
+     "아니요. 한 번 결제이며 구독은 없습니다. 계정이나 가입도 필요 없습니다."
+    ],
+    [
+     "데이터는 어디에 저장되나요?",
+     "기기에 저장됩니다. iCloud 동기화를 켜면 내 iCloud에도 저장되며, 앱은 아무것도 수집하지 않습니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "iPad budget app with an offline currency converter, one-time purchase",
+   "meta": "Budgeting and currency conversion in one iPad app. G+Money pairs a 50-currency converter that works offline with a category expense tracker; one-time purchase, no subscription, no account, ads or tracking.",
+   "h1": "Which iPad budget app includes an offline currency converter and is a one-time purchase?",
+   "lead": "Using one app for expenses and another for exchange rates means converting every foreign purchase by hand before you log it. Check first that both jobs live in one app and still work with no signal.",
+   "answer": "Choose an app that keeps the expense tracker and the currency converter together, works offline, and is a one-time purchase rather than a subscription.",
+   "paras": [
+    "If you travel or pay in other currencies often, the tedious part is not logging but converting. Working out a foreign amount in a rate app and then copying it into a budget app doubles the effort for every purchase. With conversion and logging in the same app, home-currency totals appear instantly.",
+    "Offline operation matters most on the road. On a plane or with roaming off, you still need to convert with the last auto-updated rates or a manual rate you entered. On an iPad's larger screen, trip and category summaries are easy to read at a glance.",
+    "G+Money combines a 50-currency converter, a category expense tracker, a daily limit, trip and event grouping, and text or CSV export. It is a one-time purchase with no subscription; there is no account, sign-up, tracking or advertising, and data stays on the device (or in your own iCloud if you turn on iCloud Sync)."
+   ],
+   "look": [
+    "Expense tracking and currency conversion in the same app",
+    "Conversion that works with no signal, including manual rates",
+    "Grouping spending by trip or event, with subtotals",
+    "Export to text or CSV",
+    "Subscriptions, accounts, ads and tracking"
+   ],
+   "steps": [
+    "Create a trip or event and give it an icon and color.",
+    "Before you leave, update the rates or enter a manual rate.",
+    "Set a daily limit so you can see how much is left today.",
+    "Log each expense by category and read the home-currency total.",
+    "When the trip ends, export the trip summary to text or CSV."
+   ],
+   "rows": [
+    [
+     "Currency conversion",
+     "Works offline, supports manual rates",
+     "Abroad you are often without a signal"
+    ],
+    [
+     "Organizing records",
+     "Filters by trip, category and date",
+     "Habits only show when you can see where money went"
+    ],
+    [
+     "Payment model",
+     "One-time purchase or subscription",
+     "A budget app you use for years keeps charging if it is a subscription"
+    ]
+   ],
+   "fits": "G+Money fits people who want everyday budgeting and travel spending in one app, with currency conversion that still works offline. It runs on iPhone and iPad and is a one-time purchase with no subscription.",
+   "faq": [
+    [
+     "Does currency conversion work without internet?",
+     "Yes. It converts with the last auto-updated rates or a manual rate you enter, even with no signal."
+    ],
+    [
+     "Do I need a subscription?",
+     "No. It is a one-time purchase with no subscription, and no account or sign-up is required."
+    ],
+    [
+     "Where is my data stored?",
+     "On your device, or in your own iCloud if you turn on iCloud Sync. The app collects nothing."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "zipbox",
+  "locale": "vi",
+  "market": "VN",
+  "term": "giải nén rar 7z trên iphone không quảng cáo",
+  "rank": 32,
+  "slug": "extract-rar-and-7z-on-iphone-without-ads",
+  "experiment": "EXP-05 VN paid Utilities",
+  "loc": {
+   "title": "Giải nén RAR, 7z trên iPhone không quảng cáo",
+   "meta": "Mở tệp RAR, 7z, ZIP trên iPhone mà không bị quảng cáo chen ngang. Zipbox giải nén 13 định dạng ngay trên máy, mở được tệp có mật khẩu và chia nhiều phần; mua một lần, không thuê bao, không mua trong app.",
+   "h1": "Giải nén RAR và 7z trên iPhone mà không gặp quảng cáo: chọn app nào?",
+   "lead": "Tệp RAR tải bằng Safari nằm im trong Tệp mà không mở được, hoặc app giải nén miễn phí bắt xem quảng cáo trước khi lấy tệp. Hãy chọn app đọc được RAR/7z và không có quảng cáo ngay từ đầu.",
+   "answer": "Chọn app giải nén được RAR/RAR5 và 7z ngay trên máy, mở được tệp có mật khẩu, và không có quảng cáo hay thuê bao.",
+   "paras": [
+    "iPhone mở được ZIP trong app Tệp, nhưng RAR và 7z thì thường không. Đó là lúc người ta tải một app giải nén miễn phí rồi gặp banner, video toàn màn hình hoặc đồng hồ đếm ngược chen giữa mình và chính tệp của mình.",
+    "Điều cần kiểm tra trước là định dạng: RAR, RAR5, 7z, và các tệp đặt mật khẩu hoặc chia nhiều phần — loại hay gặp nhất trong thư công việc và ảnh bạn bè gửi. Sau đó là quyền riêng tư: giải nén nên diễn ra trên máy, không cần tài khoản.",
+    "Zipbox giải nén ZIP, RAR/RAR5, 7z, TAR, GZIP, BZIP2, XZ, LZMA, LZ4 và ISO ngay trên thiết bị, cho xem trước ảnh, video, PDF, văn bản và mã nguồn rồi chỉ lấy ra đúng tệp cần. App không gửi yêu cầu mạng nào, không có tài khoản. Zipbox là app trả phí: mua một lần có đủ mọi tính năng, không mua trong app, không thuê bao, không quảng cáo."
+   ],
+   "look": [
+    "Đọc được RAR/RAR5 và 7z, không chỉ ZIP",
+    "Mở được tệp có mật khẩu hoặc chia nhiều phần",
+    "Xem trước nội dung trước khi giải nén",
+    "Giải nén trên máy, không tài khoản, không gửi dữ liệu đi",
+    "Có quảng cáo, mua trong app hay thuê bao không"
+   ],
+   "steps": [
+    "Mở tệp nén từ app Tệp, mục tải xuống Safari, Mail hoặc trình đơn chia sẻ.",
+    "Nhập mật khẩu nếu tệp nén có mật khẩu.",
+    "Lướt danh sách và xem thử ảnh, PDF hoặc văn bản bên trong.",
+    "Lấy ra một tệp, một nhóm tệp chọn sẵn hoặc toàn bộ.",
+    "Xuất kết quả sang Tệp hoặc iCloud Drive, hoặc gửi đi qua trình đơn chia sẻ."
+   ],
+   "rows": [
+    [
+     "Định dạng",
+     "RAR/RAR5, 7z, tệp có mật khẩu, chia nhiều phần",
+     "ZIP thì Tệp mở được; RAR và 7z mới là chỗ kẹt"
+    ],
+    [
+     "Quảng cáo",
+     "Không banner, không video toàn màn hình",
+     "Quảng cáo chen giữa bạn và tệp của chính bạn"
+    ],
+    [
+     "Quyền riêng tư",
+     "Xử lý trên máy, không tài khoản",
+     "Tệp công việc và ảnh cá nhân không nên phải gửi đi đâu"
+    ]
+   ],
+   "fits": "Zipbox hợp với người thường nhận tệp RAR, 7z hoặc ZIP trên iPhone và muốn mở chúng ngay trên máy, không quảng cáo. Ngoài giải nén, app còn tạo ZIP và 7z với mã hóa AES-256. Mua một lần có đủ mọi tính năng.",
+   "faq": [
+    [
+     "Zipbox có quảng cáo không?",
+     "Không. Không banner, không video toàn màn hình, không đếm ngược. Mua một lần có đủ mọi tính năng, không mua trong app, không thuê bao."
+    ],
+    [
+     "Có mở được tệp RAR hoặc 7z đặt mật khẩu không?",
+     "Có. Zipbox mở được ZIP, RAR, 7z đặt mật khẩu hoặc chia nhiều phần, và xử lý ngay trên thiết bị."
+    ],
+    [
+     "Zipbox có gửi tệp của tôi lên mạng không?",
+     "Không. Zipbox không gửi yêu cầu mạng nào, không có tài khoản, không cần đăng nhập và không có mã phân tích hay theo dõi."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Extract RAR and 7z on iPhone without ads",
+   "meta": "Open RAR, 7z and ZIP files on iPhone without an ad standing in the way. Zipbox extracts 13 formats on-device, including password-protected and split archives; one purchase, no subscription, no in-app purchases.",
+   "h1": "Extracting RAR and 7z on iPhone without ads: which app?",
+   "lead": "A RAR downloaded in Safari sits in Files and nothing opens it, or the free extractor makes you watch an ad before you get your file. Pick an app that reads RAR and 7z and has no advertising to begin with.",
+   "answer": "Choose an app that extracts RAR/RAR5 and 7z on the device, handles password-protected archives, and has no ads or subscription.",
+   "paras": [
+    "The Files app opens ZIP, but RAR and 7z usually are not supported. That is when people install a free extractor and meet banners, full-screen videos or countdown timers between them and their own file.",
+    "Check formats first: RAR, RAR5, 7z, and password-protected or split archives, the kind that turn up in work mail and photo sets from friends. Then check privacy: extraction should happen on the device with no account.",
+    "Zipbox extracts ZIP, RAR/RAR5, 7z, TAR, GZIP, BZIP2, XZ, LZMA, LZ4 and ISO on-device, previews photos, video, PDF, text and source code, and lets you pull out just the file you need. It makes no network requests and has no account. Zipbox is a paid app: one purchase includes every feature, with no in-app purchases, subscription or advertising."
+   ],
+   "look": [
+    "Reads RAR/RAR5 and 7z, not only ZIP",
+    "Opens password-protected and split archives",
+    "Preview before extracting",
+    "On-device extraction, no account, nothing sent out",
+    "Ads, in-app purchases or a subscription"
+   ],
+   "steps": [
+    "Open the archive from Files, Safari downloads, Mail or the share sheet.",
+    "Enter the password if the archive is protected.",
+    "Browse the list and preview photos, PDFs or text inside.",
+    "Extract one file, a chosen set, or everything.",
+    "Export to Files or iCloud Drive, or send the result through the share sheet."
+   ],
+   "rows": [
+    [
+     "Formats",
+     "RAR/RAR5, 7z, password-protected, split",
+     "Files handles ZIP; RAR and 7z are where people get stuck"
+    ],
+    [
+     "Advertising",
+     "No banners, no full-screen video",
+     "An ad between you and your own file"
+    ],
+    [
+     "Privacy",
+     "On-device, no account",
+     "Work files and personal photos should not have to leave the phone"
+    ]
+   ],
+   "fits": "Zipbox fits people who receive RAR, 7z or ZIP files on iPhone and want to open them on the device without ads. Beyond extraction it creates ZIP and 7z with AES-256 encryption. One purchase includes every feature.",
+   "faq": [
+    [
+     "Does Zipbox show ads?",
+     "No. No banners, no full-screen video, no countdowns. One purchase includes every feature, with no in-app purchases or subscription."
+    ],
+    [
+     "Can it open password-protected RAR or 7z files?",
+     "Yes. Zipbox opens password-protected and split ZIP, RAR and 7z archives, on the device."
+    ],
+    [
+     "Does Zipbox upload my files?",
+     "No. Zipbox makes no network requests, has no account or sign-in, and contains no analytics or tracking code."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "tripbee",
+  "locale": "ar-SA",
+  "market": "QA/KW",
+  "term": "مخطط رحلات للآيباد بدون إنترنت",
+  "rank": null,
+  "slug": "offline-trip-planner-for-ipad-one-time-purchase",
+  "paid_context": "pay_once",
+  "experiment": "EXP-05 QA+KW iPad paid Travel (Gulf; ar-SA directory)",
+  "loc": {
+   "title": "مخطط رحلات للآيباد يعمل بدون إنترنت، بشراء لمرة واحدة",
+   "meta": "خطّط رحلتك على الآيباد دون إنترنت: جدول يومي، قائمة أمتعة ذكية، واتجاهات خرائط آبل بلمسة. TripBee شراء لمرة واحدة، بلا إعلانات أو تتبّع، مع مزامنة خاصة عبر iCloud.",
+   "h1": "ما أفضل مخطط رحلات للآيباد يعمل بدون إنترنت وبلا اشتراك؟",
+   "lead": "في المطار أو الطائرة أو مع إيقاف التجوال، لا يفيد مخطط رحلات يحتاج اتصالًا دائمًا. تحقّق أولًا من أن التخطيط الأساسي يعمل دون إنترنت وأن الدفع مرة واحدة.",
+   "answer": "اختر مخططًا يعمل تخطيطه الأساسي دون إنترنت، ويجمع الجدول اليومي وقائمة الأمتعة في مكان واحد، ويُشترى مرة واحدة بلا إعلانات أو تتبّع.",
+   "paras": [
+    "الرحلة تتعطّل غالبًا في اللحظات التي يغيب فيها الاتصال: عند الصعود إلى الطائرة، أو في مدينة جديدة قبل شراء شريحة، أو مع إيقاف التجوال لتجنّب الرسوم. لذلك يجب أن يبقى الجدول والملاحظات وقائمة الأمتعة متاحة دون إنترنت.",
+    "شاشة الآيباد الكبيرة مناسبة لترتيب الأيام: المواعيد وأيقونات النوع والمناطق الزمنية والملاحظات في جدول يومي واحد، مع شريط تقدّم يعرض اليوم كذا من كذا وعدّاد تنازلي قبل السفر.",
+    "يعمل التخطيط الأساسي في TripBee دون إنترنت. يضم التطبيق قائمة أمتعة ذكية حسب عدد الأيام والموسم وكل فرد في العائلة مع أعمار الأطفال، واتجاهات خرائط آبل بلمسة واحدة، وتخطيطًا يراعي الطقس مع أفكار بديلة للأيام الممطرة. عند تفعيل iCloud تُزامَن الرحلات في حسابك الخاص، ويمكنك دعوة الآخرين لتعديل رحلة مشتركة. شراء لمرة واحدة، بلا إعلانات أو تتبّع."
+   ],
+   "look": [
+    "هل يعمل الجدول وقائمة الأمتعة دون إنترنت؟",
+    "جدول يومي بالمواعيد والمناطق الزمنية والملاحظات والتذكيرات",
+    "قائمة أمتعة تراعي عدد الأيام والموسم وأفراد العائلة",
+    "أين تُحفظ بيانات الرحلة ومن يستطيع الوصول إليها",
+    "الاشتراكات والإعلانات والتتبّع"
+   ],
+   "steps": [
+    "أنشئ الرحلة وأضف الأيام قبل السفر وأنت متصل.",
+    "رتّب كل يوم بالمواعيد وأيقونات النوع والمنطقة الزمنية والملاحظات.",
+    "جهّز قائمة الأمتعة حسب عدد الأيام والموسم وكل فرد في العائلة.",
+    "ادعُ المسافرين معك لتعديل الرحلة المشتركة عبر iCloud إن رغبت.",
+    "خذ نسخة احتياطية محلية كاملة قبل الإقلاع، ثم استخدم الجدول دون إنترنت."
+   ],
+   "rows": [
+    [
+     "العمل دون إنترنت",
+     "التخطيط الأساسي متاح بلا اتصال",
+     "الطائرة والتجوال المتوقف لحظات بلا شبكة"
+    ],
+    [
+     "الخصوصية",
+     "المزامنة عبر iCloud الخاص بك فقط",
+     "لا يملك المطوّر خادمًا لبيانات السفر"
+    ],
+    [
+     "طريقة الدفع",
+     "شراء لمرة واحدة أم اشتراك",
+     "مخطط تستخدمه لكل رحلة لا يحتاج رسومًا متكررة"
+    ]
+   ],
+   "fits": "يناسب TripBee من يخطط رحلات عائلية أو سفرًا طويلًا ويريد جدولًا وقائمة أمتعة يعملان دون إنترنت على الآيفون والآيباد، مع مزامنة خاصة عبر iCloud. شراء لمرة واحدة، بلا إعلانات أو تتبّع.",
+   "faq": [
+    [
+     "هل يعمل TripBee دون إنترنت؟",
+     "نعم، يعمل التخطيط الأساسي دون إنترنت. المزامنة عبر iCloud ودعوة الآخرين تحتاج اتصالًا."
+    ],
+    [
+     "هل يحتاج إلى اشتراك؟",
+     "لا. TripBee شراء لمرة واحدة، بلا إعلانات أو تتبّع."
+    ],
+    [
+     "هل يستطيع المطوّر رؤية بيانات رحلتي؟",
+     "لا. تتولى Apple التخزين والمزامنة عبر iCloud الخاص بك، ولا يملك المطوّر خادمًا لبيانات السفر ولا يمكنه الوصول إلى هذا المحتوى."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Offline trip planner for iPad, one-time purchase",
+   "meta": "Plan trips on iPad without internet: a day-by-day itinerary, a smart packing list and one-tap Apple Maps directions. TripBee is a one-time purchase with no ads or tracking, and syncs privately through iCloud.",
+   "h1": "Which iPad trip planner works offline and has no subscription?",
+   "lead": "At the airport, on the plane or with roaming off, a planner that needs a constant connection does not help. Check first that core planning works offline and that you pay once.",
+   "answer": "Choose a planner whose core planning works offline, keeps the itinerary and packing list together, and is a one-time purchase with no ads or tracking.",
+   "paras": [
+    "Trips tend to break down exactly when the connection does: boarding a flight, arriving in a new city before buying a SIM, or turning roaming off to avoid charges. The itinerary, notes and packing list need to stay available offline.",
+    "An iPad's larger screen suits laying out days: times, type icons, time zones and notes in one day-by-day itinerary, with live Day X of Y progress and a countdown before you fly.",
+    "TripBee's core planning works offline. It adds a smart packing list by days, season and each family member (with kids' ages), one-tap Apple Maps directions, and weather-aware planning with rainy-day backup ideas. With iCloud on, trips sync in your private account and people you invite can edit a shared trip. One-time purchase, no ads and no tracking."
+   ],
+   "look": [
+    "Itinerary and packing list available offline",
+    "A day-by-day schedule with times, time zones, notes and reminders",
+    "A packing list that accounts for days, season and family members",
+    "Where trip data is stored and who can access it",
+    "Subscriptions, ads and tracking"
+   ],
+   "steps": [
+    "Create the trip and add the days while you are still online.",
+    "Lay out each day with times, type icons, time zone and notes.",
+    "Build the packing list by days, season and each family member.",
+    "Invite fellow travelers to edit the shared trip through iCloud if you like.",
+    "Take a full local backup before departure, then use the itinerary offline."
+   ],
+   "rows": [
+    [
+     "Offline use",
+     "Core planning works without a connection",
+     "Planes and roaming-off moments have no network"
+    ],
+    [
+     "Privacy",
+     "Sync only through your own iCloud",
+     "The developer has no travel-data server"
+    ],
+    [
+     "Payment model",
+     "One-time purchase or subscription",
+     "A planner you use for every trip should not keep charging"
+    ]
+   ],
+   "fits": "TripBee fits people planning family trips or longer travel who want an itinerary and packing list that work offline on iPhone and iPad, with private iCloud sync. One-time purchase, no ads and no tracking.",
+   "faq": [
+    [
+     "Does TripBee work offline?",
+     "Yes, core planning works offline. iCloud sync and inviting others need a connection."
+    ],
+    [
+     "Is there a subscription?",
+     "No. TripBee is a one-time purchase with no ads or tracking."
+    ],
+    [
+     "Can the developer see my trip data?",
+     "No. Apple handles storage and sync in your private iCloud; the developer has no travel-data server and cannot access this content."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumibopomofopro",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "iPad 注音學習 一次買斷",
+  "rank": null,
+  "slug": "ipad-zhuyin-learning-app-one-time-purchase-ages-3-to-7",
+  "paid_context": "pay_once",
+  "experiment": "EXP-05 TW iPad paid Education",
+  "loc": {
+   "title": "iPad 注音學習 App 推薦：一次買斷、3 到 7 歲適用",
+   "meta": "想在 iPad 上讓 3 到 7 歲孩子學注音？Lumi注音星球 Pro 一次購買全部解鎖 37 個注音符號與所有關卡，沒有廣告、沒有內購彈窗、不需登入也不需網路。",
+   "h1": "iPad 注音學習 App：哪一款一次買斷、適合 3 到 7 歲？",
+   "lead": "給孩子用的注音 App，最怕玩到一半跳出廣告或付費牆。先確認是不是一次購買就全部解鎖、孩子能不能自己操作，再看玩法夠不夠讓他天天想打開。",
+   "answer": "選一次購買就解鎖全部 37 個注音符號與所有關卡、沒有廣告和內購彈窗、不需要登入和網路的 App。",
+   "paras": [
+    "3 到 7 歲的孩子還不會分辨廣告和遊戲內容，一個彈窗就可能讓他點出 App 或亂按。所以學齡前的注音 App，第一個要看的是有沒有廣告、內購彈窗和外部連結，而不是關卡有多少。",
+    "iPad 的大螢幕適合孩子用手指描寫注音筆順，也更容易按到大按鈕。學習內容則要涵蓋從認符號、拼讀到聲調，幼兒園到小一的國語才有完整基礎。",
+    "Lumi注音星球 Pro 是注音學習遊戲的完整版：一次購買全部解鎖 37 個注音符號、所有關卡與遊戲；有配對餵食、魔法描寫、聲調雲霄飛車、注音釣魚、星際競賽五種玩法，還有家長頁看學習進度。沒有廣告、沒有內購彈窗、不需要登入、不需要網路，學習紀錄只存在孩子的裝置上，支援 iPhone 與 iPad。"
+   ],
+   "look": [
+    "是否一次購買就解鎖全部符號與關卡",
+    "有沒有廣告、內購彈窗、外部連結或社群功能",
+    "涵蓋認符號、拼讀、聲調與筆順",
+    "大按鈕、清楚語音，孩子能不能自己玩",
+    "是否需要登入或網路、學習紀錄存在哪裡"
+   ],
+   "steps": [
+    "在 iPad 上先由家長打開，確認沒有廣告和內購彈窗。",
+    "從認讀 37 個注音符號開始，一次玩一種玩法就好。",
+    "熟悉符號後加入拼讀，再用聲調雲霄飛車練習分辨聲調。",
+    "用魔法描寫跟著筆順描寫，熟悉正確字形。",
+    "每週到家長頁看一次學習進度，弱點留給弱點複習。"
+   ],
+   "rows": [
+    [
+     "付費方式",
+     "一次購買全部解鎖，還是分關卡收費",
+     "幼兒卡在付費牆會直接放棄"
+    ],
+    [
+     "干擾",
+     "廣告、內購彈窗、外部連結",
+     "孩子分不出廣告和遊戲"
+    ],
+    [
+     "學習範圍",
+     "符號、拼讀、聲調、筆順",
+     "上小一前要的是完整基礎，不只認符號"
+    ]
+   ],
+   "fits": "Lumi注音星球 Pro 適合正在啟蒙注音的學齡前孩子、準備上小一的孩子，以及想讓孩子打好中文發音基礎的海外華人家庭。支援 iPhone 與 iPad，一次購買、永久使用，適合家庭共用。",
+   "faq": [
+    [
+     "Lumi注音星球 Pro 要訂閱嗎？",
+     "不用。一次購買就全部解鎖 37 個注音符號、所有關卡與遊戲，一次付費永久使用。"
+    ],
+    [
+     "孩子用 iPad 玩會不會跳出廣告？",
+     "不會。App 沒有廣告、沒有內購彈窗、沒有外部連結，也沒有社群功能。"
+    ],
+    [
+     "需要網路或登入嗎？",
+     "不需要。不需登入也不需網路，不蒐集個人資料，學習紀錄只保存在孩子的裝置上。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "iPad Bopomofo (Zhuyin) learning app, one-time purchase, ages 3 to 7",
+   "meta": "Teaching Zhuyin to a 3-to-7-year-old on iPad? Lumi Bopomofo Pro unlocks all 37 sounds and every level with one purchase: no ads, no in-app purchase pop-ups, no sign-up and no internet required.",
+   "h1": "iPad Bopomofo learning app: which one is a one-time purchase for ages 3 to 7?",
+   "lead": "The worst thing in a kids' phonics app is an ad or paywall halfway through a game. Check first that one purchase unlocks everything and that a child can play alone, then whether the games make them want to come back.",
+   "answer": "Choose an app where one purchase unlocks all 37 Bopomofo sounds and every level, with no ads, no in-app purchase pop-ups, no sign-up and no internet required.",
+   "paras": [
+    "Children aged 3 to 7 cannot tell an ad from the game, and a single pop-up can send them out of the app. For a preschool Zhuyin app, the first thing to check is ads, in-app purchase pop-ups and outside links, not the number of levels.",
+    "An iPad's larger screen makes finger tracing of stroke order easier and big buttons easier to hit. The content should run from recognizing symbols to blending and tones, so preschool and first-grade Mandarin has a complete foundation.",
+    "Lumi Bopomofo Pro is the complete edition of the Zhuyin learning game: one purchase unlocks all 37 sounds, every level and every game. It has five games (Match and Feed, Magic Tracing, Tone Roller Coaster, Bopomofo Fishing, Star Race) and a parents page for progress. No ads, no in-app purchase pop-ups, no sign-up, no internet required; progress stays on the child's device. Universal app for iPhone and iPad."
+   ],
+   "look": [
+    "Whether one purchase unlocks every symbol and level",
+    "Ads, in-app purchase pop-ups, outside links or social features",
+    "Coverage of symbols, blending, tones and stroke order",
+    "Big buttons and clear voice prompts a child can use alone",
+    "Whether sign-up or internet is required, and where progress is stored"
+   ],
+   "steps": [
+    "Open it on the iPad yourself first and confirm there are no ads or pop-ups.",
+    "Start with recognizing the 37 symbols, one game at a time.",
+    "Add blending once the symbols are familiar, then tones with Tone Roller Coaster.",
+    "Use Magic Tracing to follow the strokes and learn the shapes.",
+    "Check the parents page weekly and leave weak spots to weak spot review."
+   ],
+   "rows": [
+    [
+     "Payment model",
+     "One purchase unlocks all, or paid per level",
+     "Young children give up at a paywall"
+    ],
+    [
+     "Distractions",
+     "Ads, in-app purchase pop-ups, outside links",
+     "Kids cannot tell ads from the game"
+    ],
+    [
+     "Learning scope",
+     "Symbols, blending, tones, stroke order",
+     "First grade needs a full base, not just symbol recognition"
+    ]
+   ],
+   "fits": "Lumi Bopomofo Pro fits preschoolers starting Bopomofo, kids getting ready for first grade, and Chinese heritage families building a pronunciation base. Universal for iPhone and iPad; buy once, use forever, and share with the whole family.",
+   "faq": [
+    [
+     "Does Lumi Bopomofo Pro need a subscription?",
+     "No. One purchase unlocks all 37 sounds, every level and every game. Pay once, play forever."
+    ],
+    [
+     "Will ads pop up while my child plays on iPad?",
+     "No. There are no ads, no in-app purchase pop-ups, no outside links and no social features."
+    ],
+    [
+     "Does it need internet or an account?",
+     "No. No sign-up and no internet required; it collects no personal data and progress stays on the child's device."
+    ]
+   ]
+  }
  }
 ]

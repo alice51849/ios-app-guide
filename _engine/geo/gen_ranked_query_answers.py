@@ -150,7 +150,31 @@ LABELS = {
         "fits": "Cuándo encaja {name}",
         "faq": "Preguntas frecuentes",
     },
+    # 2026-10-17 EXP-05 小國衝榜:海灣國家(QA/KW)的阿拉伯語頁放在 ar-SA 目錄
+    # (站上唯一有 answers 的阿拉伯語目錄),entry 的 market 註明實際目標國。
+    "ar-SA": {
+        "look": "ما الذي تتحقق منه قبل الاختيار",
+        "steps": "خطوات عملية",
+        "table": "مقارنة سريعة",
+        "cols": ("الحاجة", "ما الذي تتحقق منه", "لماذا يهم"),
+        "fits": "متى يناسبك {name}",
+        "faq": "أسئلة شائعة",
+    },
 }
+
+# 「品類需求語境導免費門」的唯一例外:付費買斷語境(使用者搜的就是「一次購買／
+# 買斷／不訂閱」)。reports/app_conversion_actions_2026-10-17.md:付費語境頁
+# (best pay-once、subscription vs pay-once)本來就導付費版。entry 要明寫
+# "paid_context": "pay_once",而且該國商店文案本身要寫一次購買 —— 這裡不替它判斷。
+PAID_CONTEXTS = frozenset({"pay_once"})
+
+# 英文母本的結構供體:answers/ 沒有這款的頁時(例如英文頁一律導免費版的 Pro 款),
+# 退到 en-US/answers/ 同款頁,並把 en-US 的網址、語言標記正規化成根目錄英文版。
+EN_FALLBACK_LOCALE = "en-US"
+INDEXABLE_ROBOTS = (
+    '<meta name="robots" content="index,follow,max-image-preview:large,'
+    'max-snippet:-1,max-video-preview:-1">'
+)
 
 LD_RE = re.compile(
     r'(<script type="application/ld\+json"[^>]*>)(.*?)(</script>)', re.S
@@ -202,8 +226,37 @@ def answers_dir(locale: str) -> Path:
 
 def donor_for(locale: str, key: str) -> Path:
     """同 App 同語系的既有 answers 頁,當成結構供體。"""
+    found = _find_donor(answers_dir(locale), key)
+    if found is None and locale == "en":
+        # en-US 的 Pro 款頁因為根目錄英文版導免費門而標 noindex(孤兒);只借結構,
+        # 正規化時換回可索引的 robots(新頁本身有根目錄母本、進 sitemap)。
+        found = _find_donor(
+            PAGES / EN_FALLBACK_LOCALE / "answers", key, allow_noindex=True
+        )
+    if found is None:
+        raise SystemExit(f"no structural donor for {key} in {locale}")
+    return found
+
+
+def normalize_en_fallback(text: str) -> str:
+    """en-US 供體 → 根目錄英文頁:站內網址、html lang、JSON-LD inLanguage。"""
+    text = text.replace(f"{SITE}/{EN_FALLBACK_LOCALE}/", f"{SITE}/")
+    text = text.replace(f'lang="{EN_FALLBACK_LOCALE}"', 'lang="en"')
+    text = text.replace(
+        '<meta name="robots" content="noindex,follow">', INDEXABLE_ROBOTS
+    )
+    text = re.sub(
+        r'("inLanguage"\s*:\s*)"' + re.escape(EN_FALLBACK_LOCALE) + '"',
+        r'\1"en"',
+        text,
+    )
+    return text
+
+
+def _find_donor(
+    directory: Path, key: str, *, allow_noindex: bool = False
+) -> Path | None:
     app_id = APPSTORE[key]
-    directory = answers_dir(locale)
     marker = f'data-app-id="{app_id}"'
     best = None
     for path in sorted(directory.glob("*.html")):
@@ -216,7 +269,7 @@ def donor_for(locale: str, key: str) -> Path:
             continue
         # noindex 的頁面照抄會讓新頁也帶 noindex,而 sitemap 又收錄它 ——
         # tests/test_sitemap_hygiene.py 的 closed-union 檢查會直接紅。
-        if NOINDEX_RE.search(text):
+        if NOINDEX_RE.search(text) and not allow_noindex:
             continue
         if not ARTICLE_RE.search(text) or not FAQ_SECTION_RE.search(text):
             continue
@@ -224,8 +277,6 @@ def donor_for(locale: str, key: str) -> Path:
             continue
         best = path
         break
-    if best is None:
-        raise SystemExit(f"no structural donor for {key} in {locale}")
     return best
 
 
@@ -362,6 +413,8 @@ def render(entry: dict, locale: str) -> str:
     canonical = page_url(locale, slug)
     donor_path = donor_for(locale, key)
     text = donor_path.read_text(encoding="utf-8")
+    if locale == "en" and donor_path.parent.parent.name == EN_FALLBACK_LOCALE:
+        text = normalize_en_fallback(text)
 
     donor_slug = donor_path.stem
     notice_match = NOTICE_RE.search(text)
@@ -516,7 +569,10 @@ def update_locale_index(locale: str, entries: list[dict]) -> bool:
     text = path.read_text(encoding="utf-8")
     match = FULL_HUB_RE.search(text)
     if match is None:
-        raise SystemExit(f"no managed link-hub list in {locale}/answers/index.html")
+        # vi、ar-SA 等語系的 answers 索引頁還沒有 gen_link_hubs 的受管理清單
+        # (2026-10-17 實查);索引不是這支的產物,不在這裡補造,頁面仍進 sitemap。
+        print(f"NOHUB {locale}/answers/index.html has no managed link-hub list; skipped", flush=True)
+        return False
     body = match.group(2)
     additions = []
     for entry in entries:
@@ -598,7 +654,10 @@ def main() -> int:
     for entry in entries:
         if args.only and entry["slug"] != args.only:
             continue
-        if entry["key"] != free_first_key(entry["key"]):
+        context = entry.get("paid_context")
+        if context is not None and context not in PAID_CONTEXTS:
+            raise SystemExit(f"{entry['slug']}: unknown paid_context {context!r}")
+        if entry["key"] != free_first_key(entry["key"]) and context is None:
             raise SystemExit(
                 f"{entry['slug']}: 品類語境必須導免費門 "
                 f"({entry['key']} -> {free_first_key(entry['key'])})"

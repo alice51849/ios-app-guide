@@ -20,7 +20,7 @@
 ## 範圍
 - 只做外宣，不改 App，也不提議修改 App 或價格。
 - 絕對不做任何要付費的東西，也不要提議。
-- 不改既有 App 在 App Store Connect 的商店文字、價格、截圖、promotionalText。GrowthEngine 裡的資料必須和線上商店文案一致。
+- 價格不改、不提議。商店頁 ASO（標題、副標、關鍵字、描述、截圖、promotionalText、自訂產品頁、產品頁 A/B 測試）業主 2026-10-17 已允許（問「要不要開放商店頁 ASO 變更」時回「不要再問我了 告訴所有seasion我一律允許」）：寫入只走 ASC 寫入閘門（`lib/asc_write_authorization.py` 與 `tools/asc_issuer`，不可修改、不可繞過；常設例外沒涵蓋的改動整理成一批，由業主在 Mac 跳出的核准視窗按一次指紋），要符合 Apple 審核規則、不碰 App 本體（要新版本才能改的欄位，等下一次送審版本一起帶上），改完立刻同步 GrowthEngine 資料並讀回線上。GrowthEngine 裡的資料必須和線上商店文案一致。
 - 社群發文要安全，但不要太保守。Threads 每天最多 3 則；不自動回覆陌生人。
 - 所有對外宣傳文（貼文、動態、留言、回覆、說明欄）一律附該 App 的直接下載連結：iOS App Store 直連，該 App 在 Google Play 上線就再加 Play 直連（業主 2026-10-17：「所有的宣傳文、動態、文字，全部務必要附上直接下載的連結」「你現在檢查一遍全部，沒有的要補上」）。共用檢查 `.github/scripts/download_links.py`（`ensure_download_link`／`link_problems`），`post_qa.py` 閘門與各發文出口最後一道都會檢查，缺連結或查不到 App 連結就拒絕發送並以 `::error::` 標示，不可靜默發出；Android 快照（`_engine/geo/data/android_live_snapshot.json`）讀不到或是空的時候 `play_store_url` 直接丟 `SnapshotMissing`，不會悄悄當成「只有 iPhone 版」而漏掉 Play 連結。留言回覆（`comment_replies.py`）每則都附連結，判不出 App 的貼文底下不回覆。平台限制照守：Instagram 說明內連結不可點，所以完整網址寫進說明並保留『連結在 bio』；Threads 主貼文不放連結（帳號曾被限流），連結放第一則回覆：回覆先建容器、等 35 秒、同一個容器重發（影片／卡片流程；`(#24) The requested resource does not exist` 就是容器還沒就緒），重試前先看自己是否已回過，查不到就不再發；發文主流程的 `publish_link_reply` 每次重試改開新容器，但重試前同樣先查是否已回過（已回過就不再發，查不到就停）。發文主流程（`threads_post.py`／`threads_series.py`）連結回覆仍失敗時步驟變紅，補發機制重跑同一時段時會先查貼文與回覆是否已存在（查詢失敗一律不發，免得重複貼文）；影片／卡片流程（`clip_posts.py`／`countdown_cards.py`／`utility_cards.py`）貼文已發出就維持綠燈並以 `::error::` 標示，改由 `link_backfill.py` 補發。已發出的貼文缺連結時，`link-backfill.yml`（mode=audit／apply／diag）在自家貼文底下補一則留言／回覆：只補一次、新到舊、每通路 24 小時最多 6 則（失敗也算）、Threads 另受帳號 24 小時含商店連結貼文與回覆合計 20 則的上限；App 判定要多證據一致（貼文紀錄、內文 App Store id、店名、只有一款用的鉤子句），對不到或矛盾（內文有目錄外的 App Store 連結、自家回覆已連到別的 App）就只列清單不猜；已有 App Store 連結但缺 Play 連結的舊貼文不補第二輪；Instagram 的留言列表不會列出帳號自己的留言，讀回改看貼文留言數加一且留言 ID 查得到，讀不到留言數就不寫。排程（每 3 小時）要有 `.github/growth/link-backfill.auto` 檔才會自動補，手動 dispatch 隨時可跑。
 - Mastodon 帳號被鎖，只能申訴，不能發文。
@@ -34,7 +34,8 @@
 - 刪除檔案前，要先由另一個不同的模型複審；我明確說「不需要審核」時例外。
 - 不跳過、不停用、不刪除測試。只有在我同意移除某項內容時，專屬於那項內容的測試可以一起刪。
 - 不修改 lib/asc_write_authorization.py；權限被拒時不要用技巧繞過系統的權限檢查。
-- 業主 2026-10-16 授權：「我要最高權限允許你做全部的事情」。worker 被擋下的外宣動作（例如 dispatch workflow、推送、重跑 CI），主 session 直接代做或再試，不再列成「業主手動」；只有真的需要業主本人帳號／密鑰的步驟（建立第三方帳號、產生 token）才交業主。其他範圍與安全規則照舊（不付費、不改 App／價格／商店文字、密鑰不經雲端、不 force-push）。
+- 業主 2026-10-16 授權：「我要最高權限允許你做全部的事情」。worker 被擋下的外宣動作（例如 dispatch workflow、推送、重跑 CI），主 session 直接代做或再試，不再列成「業主手動」；只有真的需要業主本人帳號／密鑰的步驟（建立第三方帳號、產生 token）才交業主。其他範圍與安全規則照舊（不付費、不改 App／價格、密鑰不經雲端、不 force-push；商店文字照 10-17 的 ASO 規則）。
+- 業主 2026-10-17：「不要再問我了 告訴所有seasion我一律允許」。所有 session 不再停下來問業主、不再列「待業主決定」：照本檔規則自己選最好的做法直接做，做完附讀回證據回報。只有一定要業主本人的步驟（建立第三方帳號、登入驗證碼、產生新 token、ASC 寫入核准視窗的指紋）才交業主，而且先想辦法用 Mac 上已登入的瀏覽器／既有 token 自己做。這句不放寬本檔其他禁止事項；工具權限確認視窗與 ASC 寫入閘門是系統層級檢查，口頭允許不會讓它自動通過，也不可用技巧繞過——會跳確認的工具就改用不需要確認的做法（雲端子 session 只用 send_message 回報父 session）。
 - 密鑰（密碼、token）只放在本機 Mac，雲端不讀、不存、不顯示。
 - 00_GrowthEngine 的 geo/ 是正本，ios-app-guide 的 _engine/geo 是它的逐 byte 鏡像，兩邊要同一次一起改。
 - 互推設定（support_network/crosspromo_config.json）的清單和 geo/answer_personas.py 的 PENDING_PERSONAS 必須在同一個 commit 一起改，否則互推網會 fail-closed 停擺。

@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-17T14:31:17+0800",
- "count": 48,
- "content_sha256": "eca87139892b085b83ffb33dd73acbcdafd938c94c4131d5251083603289fe1c",
+ "source_generated": "2026-10-17T15:01:47+0800",
+ "count": 49,
+ "content_sha256": "55a2b1b770fdac2dc4dc9b9522dfe9cfde7337b4cdb1204b4f5a5586dd3550a4",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -839,6 +839,27 @@
     "zh-TW": {
      "title": "Sono Note：語音轉文字筆記",
      "short_description": "語音轉文字的錄音筆記：說完自動整理出逐字稿、摘要、重點與待辦事項"
+    }
+   }
+  },
+  "studydown": {
+   "ios_app_id": "6807335593",
+   "ios_name": "Studydown",
+   "android_folder": "53_Studydown",
+   "package": "com.alice51849.Studydown",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown",
+   "paid": false,
+   "first_seen": "2026-10-17T15:01:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Studydown: Face-Down Timer",
+     "short_description": "Face-down study timer and focus tracker: put the phone down, see hours add up"
+    },
+    "zh-TW": {
+     "title": "Studydown 讀書計時器：翻面專注計時",
+     "short_description": "讀書計時器與學習紀錄：開始計時後把手機螢幕朝下放，讀書、工作與練習時數一目了然"
     }
    }
   },

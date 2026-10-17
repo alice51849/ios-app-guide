@@ -43,6 +43,7 @@
 - threads-autopilot 的 PUBLISHER_REVIEWED_SOURCE_DIGEST 要先經另一個模型複審，才能重新釘選。
 - AgentOffice（~/AgentOffice）和 ~/.growth-runtime 只在本機 Mac 上；要改這兩個地方，由雲端用 send_message 直接交給在線的本機 session 處理，不要叫我轉貼。
 - 「上線」只看線上實際狀態，不看綠燈：ios-app-guide 的 push 觸發的 Pages run 只跑 preflight，真正上傳要靠配對發布（00_GrowthEngine geo/pages gitlink 綁到新的 Guide main 再 dispatch）。回報「已上線」之前，必須確認線上 deployment generation（GitHub Deployments 的 github-pages 最新一筆，或 /.well-known/deployment.json）已包含該 commit；其他站與通路同理，要有讀回證據（網址 200、發文收據）才算完成（2026-10-16 guide 站 10-13 起沒上傳、3 天沒人發現，業主：「要確保之後不可以再發生」）。
+- GitHub Actions 免費分鐘有限（private repo 每月 2,000 分）：不要手動 dispatch guide-auto-release，推完 Guide main 就等它自己跑（cron 7,37，抽樣後最長約 2–3 小時一次），讀回 deployment.json 後才回報「已上線」。新增跑在 GitHub hosted 的 workflow 之前，先估算每月分鐘數；會超過免費額度就改用 self-hosted，或降低頻率（2026-10-17 稽核：每月約 6,000 分，已降到約 1,550 分）。
 
 ## 省 token（不犧牲速度與品質）
 業主 2026-10-16：「請一率使用節省token但不影響速度跟品質的方式運行」。所有 session、worker、排程一律照做：

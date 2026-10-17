@@ -262,7 +262,10 @@ class PublishedAnswerSectionTests(unittest.TestCase):
         """Only App Store ids, campaign parameters, and listing copy."""
         # "0" and "100": Lumi Weather's listing copy ("outing score from 0 to
         # 100"), carried by its store-aligned subtitle.
-        allowed = {"0", "8", "100", "44", "990", "30"}
+        # "8", "3" and "30": Aim990's US promotional text ("An 8-minute
+        # diagnosis finds your 3 weakest skills, drills them daily and
+        # rechecks on Day 30"), carried by its store-aligned subtitle.
+        allowed = {"0", "3", "8", "100", "44", "990", "30"}
         for text in (self.llms_text, self.full_text):
             for line in text.splitlines():
                 if not (line.startswith("  A: ")

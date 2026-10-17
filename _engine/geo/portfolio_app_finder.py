@@ -544,14 +544,70 @@ def localized_app_store_url(record: dict[str, object], locale: str) -> str | Non
     )
 
 
+SUMMARY_MAX_CHARS = 145
+_SENTENCE_ENDINGS = (".", "!", "?", "…", '"', "”", "'")
+_SENTENCE_BREAK = re.compile(r'(?<=[.!?…])\s+(?=[A-Z0-9"“‘(])')
+
+
+def _single_line(value: object) -> str:
+    return " ".join(str(value or "").split())
+
+
+def _lead_sentences(text: str, limit: int = SUMMARY_MAX_CHARS) -> str:
+    """Leading complete sentences of ``text``; never a mid-sentence cut."""
+    lead = ""
+    for sentence in _SENTENCE_BREAK.split(_single_line(text)):
+        if not sentence.endswith(_SENTENCE_ENDINGS):
+            break
+        candidate = f"{lead} {sentence}".strip()
+        if lead and len(candidate) > limit:
+            break
+        lead = candidate
+    return lead
+
+
+def store_copy_summary(key: str, locale: str, page_summary: str = "") -> str:
+    """Summary taken from the App Store description, not internal copy.
+
+    Registry ``sub``/``tag`` are video and campaign lines. They are reused
+    only when ``sub`` is verbatim in the stored App Store description;
+    otherwise the description's leading complete sentences are used.
+    """
+    import build_pages_i18n
+
+    try:
+        description = str(
+            build_pages_i18n.external_localized_values(key, locale)
+            .get("description") or ""
+        )
+    except ValueError:
+        description = ""
+    sub = _single_line(APPS[key].get("sub"))
+    if sub and sub in _single_line(description):
+        return sub
+    for paragraph in re.split(r"\n\s*\n", description):
+        lead = _lead_sentences(paragraph)
+        if len(lead) >= 20:
+            return lead
+    lead = _lead_sentences(page_summary)
+    if len(lead) >= 20:
+        return lead
+    raise ValueError(f"Missing store-copy finder summary: {key}/{locale}")
+
+
 def localized_summary(key: str, locale: str, pages: Path) -> str:
     summary = gen_app_catalog.localized_summary(key, locale, pages)
-    if (
-        locale == "en-US"
-        and len(summary) >= 145
-        and not summary.endswith((".", "!", "?", "…", '"', "”", "'"))
-    ):
-        return str(APPS[key].get("sub") or summary).strip()
+    if locale != "en-US":
+        return summary
+    truncated = (
+        len(summary) >= SUMMARY_MAX_CHARS
+        and not summary.endswith(_SENTENCE_ENDINGS)
+    )
+    internal = _single_line(summary) in {
+        _single_line(APPS[key].get(field)) for field in ("sub", "tag")
+    } - {""}
+    if truncated or internal:
+        return store_copy_summary(key, locale, summary if truncated else "")
     return summary
 
 

@@ -20154,6 +20154,93 @@ class GeneratorTests(unittest.TestCase):
         if matches is not None:
             self.assertEqual(["Snapport"], matches)
 
+    def test_portfolio_finder_summary_uses_store_copy_not_internal_sub(self):
+        key = "tripplanet"
+        store = (
+            "Turn every family trip into a tiny space adventure. Long "
+            "flights, car rides and hotel stays become missions your child "
+            "can finish, with collectible rewards and a passport stamp for "
+            "every completed trip.\n\nTrip Planet helps parents."
+        )
+        truncated_meta = (
+            "Turn every family trip into a tiny space adventure. Long "
+            "flights, car rides and hotel stays become missions your child "
+            "can finish, with collectible rewards"
+        )
+        internal = "Fun travel games, packing help & discovery for little explorers"
+
+        def store_values(description):
+            return mock.patch.object(
+                build_pages_i18n,
+                "external_localized_values",
+                return_value={"description": description},
+            )
+
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            page = pages / "en-US" / f"{key}.html"
+            page.parent.mkdir(parents=True)
+            page.write_text(
+                '<html><head><meta name="description" content="'
+                f'{html.escape(truncated_meta)}"></head></html>',
+                encoding="utf-8",
+            )
+            with mock.patch.dict(
+                portfolio_app_finder.APPS[key], {"sub": internal}
+            ), store_values(store):
+                summary = portfolio_app_finder.localized_summary(
+                    key, "en-US", pages
+                )
+            self.assertEqual(
+                "Turn every family trip into a tiny space adventure.",
+                summary,
+            )
+            self.assertNotEqual(internal, summary)
+
+            # A sub that is verbatim store copy keeps its prior behavior.
+            with mock.patch.dict(
+                portfolio_app_finder.APPS[key],
+                {"sub": "Turn every family trip into a tiny space adventure."},
+            ), store_values(store):
+                self.assertEqual(
+                    "Turn every family trip into a tiny space adventure.",
+                    portfolio_app_finder.localized_summary(
+                        key, "en-US", pages
+                    ),
+                )
+
+            # Without stored store copy, trim the page meta at a sentence
+            # boundary instead of falling back to the internal line.
+            with mock.patch.dict(
+                portfolio_app_finder.APPS[key], {"sub": internal}
+            ), mock.patch.object(
+                build_pages_i18n,
+                "external_localized_values",
+                side_effect=ValueError("missing"),
+            ):
+                self.assertEqual(
+                    "Turn every family trip into a tiny space adventure.",
+                    portfolio_app_finder.localized_summary(
+                        key, "en-US", pages
+                    ),
+                )
+
+        # A missing en-US page makes the catalog fall back to registry sub;
+        # the finder must still publish store copy.
+        with tempfile.TemporaryDirectory() as directory:
+            with mock.patch.dict(
+                portfolio_app_finder.APPS[key], {"sub": internal}
+            ), mock.patch.dict(
+                gen_app_catalog.APPS[key], {"sub": internal}
+            ), store_values(store):
+                summary = portfolio_app_finder.localized_summary(
+                    key, "en-US", Path(directory)
+                )
+        self.assertEqual(
+            "Turn every family trip into a tiny space adventure.",
+            summary,
+        )
+
     def test_portfolio_finder_covers_current_verified_live_apps(self):
         live = appstore_live.live_app_keys(
             APPSTORE,

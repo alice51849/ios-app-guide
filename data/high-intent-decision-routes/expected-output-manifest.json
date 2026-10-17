@@ -5,7 +5,7 @@
   "creative_count": 53,
   "current_inventory": {
     "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "07fcde5fdf5230d0a253abd19853aeb66e3bb2b4284dd30e0041ee29f280d52a",
+    "copy_sha256": "5fecc2453712c24cc7fe7348cf2880f3cf4769f159af68a5b38cbb37071905f8",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 53
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "85a365434161883c56dc9c67aaf26c7f8be87944b7f42753bc258f6f9e118179",
+      "generated_sha256": "2f981512ec85a39826705cd8a9dac946aacf0fb1076faf3f4389aa8cd4d2359e",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "e3b4ebe1d7e876769af9022473eb4de047097dd43fd72ecda7c51ce5bbe375b2",
+      "generated_sha256": "eb018e9ce37f9009ec5de45bed011b0d955dbd26c62abfecea866fc9093566cd",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -94,7 +94,7 @@
       "relative_path": "en-US/decide/dbhalo/measure-room-noise-without-sending-audio-off-device.html"
     },
     {
-      "generated_sha256": "5ed2d2b48723db99715c50c7309b1a85d88b91cc66abf4d60610d254bf61d1ed",
+      "generated_sha256": "6b0ca2d1ea7481d1d059c25a42f07a27515538376c14aa02157ba232dccb4913",
       "kind": "route_html",
       "relative_path": "en-US/decide/gmoney/convert-and-log-travel-spending-offline.html"
     },
@@ -169,7 +169,7 @@
       "relative_path": "en-US/decide/lumiweather/decide-what-child-wears-outside.html"
     },
     {
-      "generated_sha256": "a4d3282c8ba8b6eef7c86e038b2192df3ce96a3fc88e470a3c8576f3c5be4750",
+      "generated_sha256": "7cf4296cc1543dfced63f03e893ff69c3c725f1f695be4d243d49e29a053c4da",
       "kind": "route_html",
       "relative_path": "en-US/decide/maskmyfile/redact-client-files-before-sharing.html"
     },
@@ -199,7 +199,7 @@
       "relative_path": "en-US/decide/onepageppt/turn-meeting-notes-into-one-slide.html"
     },
     {
-      "generated_sha256": "74bb4d3d7d0f56d993fcf77f33e8a73dd096b1ce9cd6603149ad8e09d9ef4e81",
+      "generated_sha256": "32550684668cc245d13b9f860c0b27020ad1080212dc37d807baa2e0d70c2858",
       "kind": "route_html",
       "relative_path": "en-US/decide/photocream/film-look-editor-without-watermark.html"
     },
@@ -224,7 +224,7 @@
       "relative_path": "en-US/decide/scanto/scan-and-read-documents-on-device.html"
     },
     {
-      "generated_sha256": "948afee263bfa8f95a4df5b5bb5dcbc77922939188aaedafcbd597bd592cd128",
+      "generated_sha256": "74aa269da7577831ab1e1541fe3071488bc8c631fd32a83567a2263b80a6845c",
       "kind": "route_html",
       "relative_path": "en-US/decide/sereno/offline-sleep-sounds-without-subscription.html"
     },
@@ -254,7 +254,7 @@
       "relative_path": "en-US/decide/stayclock/always-on-bedside-clock-beyond-standby.html"
     },
     {
-      "generated_sha256": "fd4c53e54c251778e150ad052b64d3a68af0267f18c22c4e32f4127598a67fa1",
+      "generated_sha256": "68752ecfbd874fa98dde0a28f767b7c2eb38f87fbf57307152846806f28271ce",
       "kind": "route_html",
       "relative_path": "en-US/decide/studydown/focus-timer-that-stops-when-you-pick-up-your-phone.html"
     },
@@ -269,7 +269,7 @@
       "relative_path": "en-US/decide/tripbeelite/plan-one-upcoming-trip-without-clutter.html"
     },
     {
-      "generated_sha256": "0f765f3ec3ef91c5a395b59db51fdb398ed36c01820bde135386ce50465866a6",
+      "generated_sha256": "7444cbbc5e81cfceb21c154f75d67067925c4d4f85260daa0c4349c064493941",
       "kind": "route_html",
       "relative_path": "en-US/decide/tripplanet/turn-family-travel-waiting-into-observation.html"
     },
@@ -279,7 +279,7 @@
       "relative_path": "en-US/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "68f3008b5795b2991699ad6a4a667f6295ebdc09a1bc3a1d8879d1849900a612",
+      "generated_sha256": "5d2f55e609154923e01aebc45f4124176ca12e4469d6253f2f09f9bc8b3e1836",
       "kind": "route_html",
       "relative_path": "en-US/decide/wifiaid/separate-wifi-dns-and-website-failure.html"
     },
@@ -289,7 +289,7 @@
       "relative_path": "en-US/decide/wifiaidlite/free-check-wifi-versus-website.html"
     },
     {
-      "generated_sha256": "670f5b12f7c0b12d081ee9082d2ea3a21f4b51e76b89ec228603036ea5c47c8b",
+      "generated_sha256": "9be6f9a5a6749481abddc24b46ad307edf065746289c6d78f9e9794cbf355c2b",
       "kind": "route_html",
       "relative_path": "en-US/decide/wordmate/vocabulary-on-widget-and-watch.html"
     },
@@ -299,7 +299,7 @@
       "relative_path": "en-US/decide/wordmatelite/five-words-without-building-decks.html"
     },
     {
-      "generated_sha256": "32f63918c2281a5ec3e1854033c02cd3154f169e490574f23b9f68a215dcaacb",
+      "generated_sha256": "5572504de247b3333fa7e6b86ade6fe8a9c495b9d806e55b8465cac7ad7344a1",
       "kind": "route_html",
       "relative_path": "en-US/decide/zipbox/open-encrypted-and-split-archives-on-iphone.html"
     },
@@ -372,14 +372,14 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "07fcde5fdf5230d0a253abd19853aeb66e3bb2b4284dd30e0041ee29f280d52a",
+    "copy_sha256": "5fecc2453712c24cc7fe7348cf2880f3cf4769f159af68a5b38cbb37071905f8",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 53,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "fe7a614bbd661a5e1e969d20e7c2163259f763acdcde19117fc4dbbe01f97704",
+  "manifest_digest": "23eb5a608d2fdf0fcda500203c36f59969d046ad565d1e83d1e9b7a41f346eda",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "17fce3a8994dfd59fa476be22d6bc9ab7ddc33cc332f29bdffb1b0f267544108",
+  "release_contract_digest": "65146dc15e36e9ee111d26b33e33ca599acfafc1776f1c785f89dc909980f317",
   "release_state": "exact",
   "route_count": 66,
   "routes": [
@@ -597,8 +597,8 @@
       "creative_id": "gmoney:convert-and-log-travel-spending-offline:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "5ed2d2b48723db99715c50c7309b1a85d88b91cc66abf4d60610d254bf61d1ed",
-      "record_digest": "f68d8f7e374e6f2413710e413e1be9142ac018a66827aaf52ede5833813299f2",
+      "output_sha256": "6b0ca2d1ea7481d1d059c25a42f07a27515538376c14aa02157ba232dccb4913",
+      "record_digest": "629d887f591177648d6fa9b218844d2e97d376651a9b5a4294cf9e06a9187625",
       "relative_path": "en-US/decide/gmoney/convert-and-log-travel-spending-offline.html",
       "route_id": "en-US:gmoney:convert-and-log-travel-spending-offline",
       "route_slug": "convert-and-log-travel-spending-offline",
@@ -852,8 +852,8 @@
       "creative_id": "maskmyfile:redact-client-files-before-sharing:privacy_pay_once",
       "intent_type": "privacy_pay_once",
       "locale": "en-US",
-      "output_sha256": "a4d3282c8ba8b6eef7c86e038b2192df3ce96a3fc88e470a3c8576f3c5be4750",
-      "record_digest": "6aa0e1e289d74a42fcead42982ded2b10cc68f49a4907e0b7c52fee50b9a0bff",
+      "output_sha256": "7cf4296cc1543dfced63f03e893ff69c3c725f1f695be4d243d49e29a053c4da",
+      "record_digest": "b4c4e64dad3a6a20d3676f0be7c70cc374faa3d19d0125b2709f426a455ce544",
       "relative_path": "en-US/decide/maskmyfile/redact-client-files-before-sharing.html",
       "route_id": "en-US:maskmyfile:redact-client-files-before-sharing",
       "route_slug": "redact-client-files-before-sharing",
@@ -954,8 +954,8 @@
       "creative_id": "photocream:film-look-editor-without-watermark:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "74bb4d3d7d0f56d993fcf77f33e8a73dd096b1ce9cd6603149ad8e09d9ef4e81",
-      "record_digest": "202f69389ad51105f49e35dc0f5228cf1da6c070954fef075c7af7dc55708763",
+      "output_sha256": "32550684668cc245d13b9f860c0b27020ad1080212dc37d807baa2e0d70c2858",
+      "record_digest": "e07114aaf7fcb61fdebed70454ca7f9c434d8b91e9a70bc6ef37314211bd2543",
       "relative_path": "en-US/decide/photocream/film-look-editor-without-watermark.html",
       "route_id": "en-US:photocream:film-look-editor-without-watermark",
       "route_slug": "film-look-editor-without-watermark",
@@ -1039,8 +1039,8 @@
       "creative_id": "sereno:offline-sleep-sounds-without-subscription:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "948afee263bfa8f95a4df5b5bb5dcbc77922939188aaedafcbd597bd592cd128",
-      "record_digest": "7089f65376528d12bc84131a54a209df2ec9014cb28bfe3fa68bda225424e049",
+      "output_sha256": "74aa269da7577831ab1e1541fe3071488bc8c631fd32a83567a2263b80a6845c",
+      "record_digest": "3c57fdaae334796ee2992313459582b6597603cb46f51ff428d1ba3682073388",
       "relative_path": "en-US/decide/sereno/offline-sleep-sounds-without-subscription.html",
       "route_id": "en-US:sereno:offline-sleep-sounds-without-subscription",
       "route_slug": "offline-sleep-sounds-without-subscription",
@@ -1141,8 +1141,8 @@
       "creative_id": "studydown:focus-timer-that-stops-when-you-pick-up-your-phone:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "fd4c53e54c251778e150ad052b64d3a68af0267f18c22c4e32f4127598a67fa1",
-      "record_digest": "e5976e077e83bdf68477e8468b572b7b218eb4bc76310db0944c16cff813df6d",
+      "output_sha256": "68752ecfbd874fa98dde0a28f767b7c2eb38f87fbf57307152846806f28271ce",
+      "record_digest": "554ebbb0e9f72524eaa2d059942e811bafdf6e12ba60d96b080ed4db79bf4318",
       "relative_path": "en-US/decide/studydown/focus-timer-that-stops-when-you-pick-up-your-phone.html",
       "route_id": "en-US:studydown:focus-timer-that-stops-when-you-pick-up-your-phone",
       "route_slug": "focus-timer-that-stops-when-you-pick-up-your-phone",
@@ -1192,8 +1192,8 @@
       "creative_id": "tripplanet:turn-family-travel-waiting-into-observation:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "0f765f3ec3ef91c5a395b59db51fdb398ed36c01820bde135386ce50465866a6",
-      "record_digest": "afaa0facba77178d320b11c2d7d16ea996ed114518a2f559706161d9aa1d3886",
+      "output_sha256": "7444cbbc5e81cfceb21c154f75d67067925c4d4f85260daa0c4349c064493941",
+      "record_digest": "b8415ebc9cc40678827d135915917adc6c2bd323a7062e0ddd5922422e5fdd2e",
       "relative_path": "en-US/decide/tripplanet/turn-family-travel-waiting-into-observation.html",
       "route_id": "en-US:tripplanet:turn-family-travel-waiting-into-observation",
       "route_slug": "turn-family-travel-waiting-into-observation",
@@ -1226,8 +1226,8 @@
       "creative_id": "wifiaid:separate-wifi-dns-and-website-failure:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "68f3008b5795b2991699ad6a4a667f6295ebdc09a1bc3a1d8879d1849900a612",
-      "record_digest": "083f7b1ff368ddaaadee07b7a2b1974aa2eb5364e46048ce21a47a267da795c2",
+      "output_sha256": "5d2f55e609154923e01aebc45f4124176ca12e4469d6253f2f09f9bc8b3e1836",
+      "record_digest": "cba5e4e94e296fb65e408ef98f06eb137c556da34cebcc83a51df1b59e070ac7",
       "relative_path": "en-US/decide/wifiaid/separate-wifi-dns-and-website-failure.html",
       "route_id": "en-US:wifiaid:separate-wifi-dns-and-website-failure",
       "route_slug": "separate-wifi-dns-and-website-failure",
@@ -1260,8 +1260,8 @@
       "creative_id": "wordmate:vocabulary-on-widget-and-watch:privacy_pay_once",
       "intent_type": "privacy_pay_once",
       "locale": "en-US",
-      "output_sha256": "670f5b12f7c0b12d081ee9082d2ea3a21f4b51e76b89ec228603036ea5c47c8b",
-      "record_digest": "ea0dc678d6fc62d392802f657cedd4b570e8a5289b8994eb348eecee7bd7daba",
+      "output_sha256": "9be6f9a5a6749481abddc24b46ad307edf065746289c6d78f9e9794cbf355c2b",
+      "record_digest": "53969ed33d451335c1f11b9defa9c23ddc2868347d62dbdc8607c99c7c9a0914",
       "relative_path": "en-US/decide/wordmate/vocabulary-on-widget-and-watch.html",
       "route_id": "en-US:wordmate:vocabulary-on-widget-and-watch",
       "route_slug": "vocabulary-on-widget-and-watch",
@@ -1294,8 +1294,8 @@
       "creative_id": "zipbox:open-encrypted-and-split-archives-on-iphone:privacy_pay_once",
       "intent_type": "privacy_pay_once",
       "locale": "en-US",
-      "output_sha256": "32f63918c2281a5ec3e1854033c02cd3154f169e490574f23b9f68a215dcaacb",
-      "record_digest": "8899ebcd4c5b286de5d78df67ac6e0e975de55463d7c6933daf9c87f692a9237",
+      "output_sha256": "5572504de247b3333fa7e6b86ade6fe8a9c495b9d806e55b8465cac7ad7344a1",
+      "record_digest": "773647a11ea6a7f6a9b2b70e5168b5f6b1dcfe870bb31ea62f032d7a26bb339c",
       "relative_path": "en-US/decide/zipbox/open-encrypted-and-split-archives-on-iphone.html",
       "route_id": "en-US:zipbox:open-encrypted-and-split-archives-on-iphone",
       "route_slug": "open-encrypted-and-split-archives-on-iphone",
@@ -1508,5 +1508,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "1c227efdbec176b699ef781ad274865330798b446265ff0daea2db6ce62baf93"
+  "source_contract_digest": "911c6b9636486d4ce6368983d78f6539320014149d6a24544143a32329bca07d"
 }

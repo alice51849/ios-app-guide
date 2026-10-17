@@ -329,6 +329,28 @@ class Run(unittest.TestCase):
         self.assertEqual(R.replies_today(s, "instagram", NOW), 20)
         self.assertEqual(R.run_platform(FakeClient(media, comments), CATALOG, s, NOW, log=lambda _: None), [])
 
+    def test_a_taken_down_post_gets_no_reply_and_its_comments_are_not_read(self):
+        # video_takedown.py marks a non-compliant clip post (deleted, or waiting to be archived on the Mac).
+        catalog = O.Catalog(CLIPS, [
+            {"channel": "instagram", "clip": "a/en", "id": "GONE", "link": "https://www.instagram.com/reel/G/",
+             "taken_down": {"status": "pending_local_archive"}},
+            {"channel": "instagram", "clip": "a/en", "id": "LIVE", "link": "https://www.instagram.com/reel/L/"}],
+            {"apps": [{"key": "a", "name": "A App", "app_store_id": "111"}]})
+        media = [{"id": "GONE", "timestamp": TS, "caption": "Hit your limit again?"},
+                 {"id": "LIVE", "timestamp": TS, "caption": "Hit your limit again?"}]
+        client = FakeClient(media, {"GONE": [c("g1", "love it!")], "LIVE": [c("l1", "love it!")]})
+        read = []
+        original = client.comments
+        client.comments = lambda media_id, limit=50: read.append(media_id) or original(media_id, limit)
+        with mock.patch.object(R, "store_links", return_value=(
+                "https://apps.apple.com/app/id111?pt=1&ct=x&mt=8", None)):
+            R.run_platform(client, catalog, state(), NOW, sleeper=lambda _: None, log=lambda _: None)
+        self.assertEqual(["LIVE"], read)
+        self.assertEqual(["l1"], [cid for cid, _ in client.sent])
+        self.assertEqual({"status": "pending_local_archive"},
+                         catalog.taken_down("instagram", {"id": "GONE"}, ("instagram", "instagram_feed")))
+        self.assertIsNone(catalog.taken_down("instagram", {"id": "LIVE"}))
+
     def test_missing_comment_permission_is_logged_not_raised(self):
         logs = []
         fc = FakeClient([{"id": "M", "timestamp": TS}], {}, deny="comments")

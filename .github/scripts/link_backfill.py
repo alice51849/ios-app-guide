@@ -459,6 +459,11 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
     ios = ios_id_for(finder.catalog, post)
     row["app"] = (post or {}).get("app", "")
     row["why"] = (post or {}).get("why", "")   # which evidence named the app (ledger / url / brand / hook)
+    gone = finder.catalog.taken_down(channel, media, LEDGER_CHANNELS.get(channel, (channel,)))
+    if gone:   # a taken-down (non-compliant) clip post, or one waiting to be archived: no link goes under it
+        row["status"] = "taken_down"
+        row["takedown"] = gone.get("status", "")
+        return row, None
     if not ios:
         row["status"] = "unknown_app"
         return row, None

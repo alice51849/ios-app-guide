@@ -116,6 +116,17 @@ class BackfillTest(unittest.TestCase):
         self.assertIn("Task list too boring?", rows[0]["text"])
         self.assertEqual(client.writes, [])
 
+    def test_a_taken_down_post_gets_no_link_comment(self):
+        # video_takedown.py marks a non-compliant clip post in clip-posts.json; nothing is written under it.
+        cat = catalog()
+        cat.logged[("instagram", "100")]["taken_down"] = {"status": "pending_local_archive"}
+        client = ig([reel()])
+        rows = B.run(client, cat, fresh_state(), apply=True, sleeper=lambda s: None, log=lambda *a: None)
+        self.assertEqual(["taken_down"], [r["status"] for r in rows])
+        self.assertEqual("pending_local_archive", rows[0]["takedown"])
+        self.assertEqual(client.writes, [])
+        self.assertEqual(0, client.reads)
+
     def test_a_caption_that_has_both_links_is_fine(self):
         store, play = B.links_for("instagram", MOCHI)
         client = ig([reel(caption=f"Hook\nApp Store: {store}\nGoogle Play: {play}")])

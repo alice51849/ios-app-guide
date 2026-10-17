@@ -120,7 +120,7 @@ def build_section(clips, posts, names, now, hook_total=None, notes=(), android=N
         for k in keys:
             for ch in ("telegram", "instagram", "threads", *EXTRA_CHANNELS):
                 p = posted.get((ch, k))
-                if p and p.get("link"):
+                if p and p.get("link") and not p.get("taken_down"):   # a taken-down post's link is not shown
                     label = EXTRA_CHANNELS[ch][1] if ch in EXTRA_CHANNELS else CHANNEL_NAME[ch][0]
                     sent.append(f"[{label}]({p['link']})")
         mark = " 🤖" if app in android else ""

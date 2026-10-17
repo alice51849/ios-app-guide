@@ -1,0 +1,83 @@
+name: Hook clip takedown
+
+# The hook clips of 00_GrowthEngine reports/video_compliance_posted_2026-10-17.md show App Store screenshots instead
+# of a real screen recording, or an end card that says "Free download" (CLAUDE.md video rule; App Store 2.3.3).
+# .github/scripts/video_takedown.py takes down exactly the ten posts this repo logged: Telegram (deleteMessage;
+# past the Bot API's 48 h window the video is swapped for the app icon photo with the caption and the direct
+# download links), Threads (DELETE /{media-id}); the four Instagram Reels cannot be deleted or archived with an
+# Instagram Login token, so they are only listed for the Mac (archive in the app). Owner decision 2026-10-17
+# 「不要再問我了 告訴所有seasion我一律允許」. Manual only; nothing here runs on a schedule.
+#   mode=plan   read only: record check, public preview, Graph API read, the fallback caption. Prints the digest.
+#   mode=apply  needs confirm = that digest; acts, reads every post back, marks it in clip-posts.json "taken_down".
+# Report and receipts: .github/growth/video-takedown.json (all platforms: 00_GrowthEngine
+# reports/video_takedown_2026-10-17.json).
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "plan (read only) or apply (take the listed posts down)"
+        type: choice
+        options:
+          - plan
+          - apply
+        default: "plan"
+      confirm:
+        description: "apply only: the TARGETS digest the plan run printed"
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: video-takedown
+  cancel-in-progress: false
+
+jobs:
+  takedown:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write # the report, the receipts and the taken_down marks are committed
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main # a run that waited in the queue must see the receipts the run before it committed
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Test
+        run: |
+          python3 .github/scripts/test_video_takedown.py -q
+          python3 .github/scripts/test_download_links.py -q
+      - name: Plan / apply
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          MODE: ${{ inputs.mode }}
+          CONFIRM: ${{ inputs.confirm }}
+        run: |
+          case "$MODE" in plan|apply) ;; *) echo "::error::unknown mode $MODE"; exit 2;; esac
+          python3 .github/scripts/video_takedown.py "$MODE" --confirm "$CONFIRM"
+      - name: Save the report and the taken_down marks
+        if: always()
+        run: |
+          G=.github/growth
+          if [ -z "$(git status --porcelain -- $G/video-takedown.json $G/clip-posts.json)" ]; then echo "nothing new"; exit 0; fi
+          mkdir -p "$RUNNER_TEMP/save"
+          cp -f "$G/video-takedown.json" "$RUNNER_TEMP/save/video-takedown.json"
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp -f "$RUNNER_TEMP/save/video-takedown.json" "$G/video-takedown.json"
+            python3 .github/scripts/video_takedown.py mark
+            git add "$G/video-takedown.json" "$G/clip-posts.json"
+            if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "鉤子片下架：計畫／收據 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::error::could not save the takedown report"; exit 1

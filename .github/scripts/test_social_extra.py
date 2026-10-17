@@ -345,6 +345,30 @@ class YoutubeLinksTest(unittest.TestCase):
         self.assertIn("[YT](https://youtube.com/shorts/abcDEF12345)", section)
         self.assertIn("| YouTube Shorts | 自動 | 1 | — |", section)
 
+    def test_a_short_taken_down_on_the_mac_is_marked_here_and_its_link_leaves_the_page(self):
+        import youtube_links as YL
+        mark = {"at": "2026-10-17T10:00:00Z", "status": "private", "reversible": True}
+        posted = {"posted": {
+            "a/en": {"at": "2026-10-15T12:20:00Z", "videoId": "abcDEF12345",
+                     "url": "https://youtube.com/shorts/abcDEF12345", "taken_down": mark},
+            "c/en": {"at": "2026-10-15T13:20:00Z", "videoId": "keepME12345",
+                     "url": "https://youtube.com/shorts/keepME12345"}}}
+        log = {"posts": [{"channel": "youtube", "clip": "a/en", "link": "https://youtube.com/shorts/abcDEF12345",
+                          "posted_at": "2026-10-15T12:20:00Z", "id": "abcDEF12345"},
+                         {"channel": "instagram", "clip": "a/en", "link": "https://ig/1",
+                          "posted_at": "2026-10-15T01:20:00Z"}]}
+        self.assertEqual(YL.merge(posted, log), 1)   # c/en joins; a/en is there already
+        self.assertEqual(YL.carry_takedowns(posted, log), 1)
+        self.assertEqual(YL.carry_takedowns(posted, log), 0)   # never twice
+        by = {(p["channel"], p["clip"]): p for p in log["posts"]}
+        self.assertEqual(mark, by[("youtube", "a/en")]["taken_down"])
+        self.assertNotIn("taken_down", by[("instagram", "a/en")])
+        self.assertNotIn("taken_down", by[("youtube", "c/en")])
+        clips = {"clips": {"a/en": clip("a", "en")}, "schedule": []}
+        section = P.build_section(clips, log["posts"], {}, dt.datetime(2026, 10, 17, 11, tzinfo=dt.timezone.utc))
+        self.assertNotIn("abcDEF12345", section)
+        self.assertIn("https://ig/1", section)
+
     def test_missing_upload_log_leaves_the_page_alone(self):
         import youtube_links as YL
         with tempfile.TemporaryDirectory() as tmp, mock.patch.object(P, "POSTS", Path(tmp) / "posts.json"), \

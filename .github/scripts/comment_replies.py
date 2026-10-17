@@ -41,7 +41,7 @@ from pathlib import Path
 import download_links as DL
 import ig_bio as IGB
 import ig_bio_hub as HUB
-from link_backfill import AppFinder, ios_id_for
+from link_backfill import LEDGER_CHANNELS, AppFinder, ios_id_for
 from own_posts import (GROWTH, HERE, ApiError, Catalog, InstagramClient, ThreadsClient,
                        detect_language, load_json)
 from social_post_common import SnapshotMissing, campaign_app_store_url, play_store_url
@@ -372,6 +372,8 @@ def run_platform(client, catalog, state, now, dry_run=False, sleeper=time.sleep,
         ts = parse_time(m.get("timestamp"))
         if ts and now - ts > MAX_POST_AGE:
             continue
+        if finder.catalog.taken_down(channel, m, LEDGER_CHANNELS.get(channel, (channel,))):
+            continue   # a taken-down (non-compliant) clip post, or one waiting to be archived: no replies under it
         try:
             comments = client.comments(m["id"])
         except ApiError as exc:

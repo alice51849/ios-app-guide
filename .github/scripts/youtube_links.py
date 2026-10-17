@@ -54,6 +54,23 @@ def merge(posted, log):
     return added
 
 
+def carry_takedowns(posted, log):
+    """Copy the Mac's "taken_down" marks (00_GrowthEngine video_takedown_youtube.py: a non-compliant Short made
+    private) onto the same upload's entry here, so this repo's readers skip it too; returns how many changed."""
+    marks = {}
+    for key, url, _at, vid in uploads(posted):
+        mark = ((posted or {}).get("posted") or {}).get(key, {}).get("taken_down")
+        if isinstance(mark, dict):
+            marks[(key, url)] = mark
+    changed = 0
+    for p in log.get("posts", []):
+        mark = marks.get((p.get("clip"), p.get("link"))) if p.get("channel") == CHANNEL else None
+        if mark and p.get("taken_down") != mark:
+            p["taken_down"] = dict(mark)
+            changed += 1
+    return changed
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--posted", required=True, help="the Growth Engine's shorts/youtube-posted.json")
@@ -65,9 +82,11 @@ def main(argv=None):
         return 0
     log = clip_progress.load_json(clip_progress.POSTS, {"posts": [], "notes": []})
     added = merge(posted, log)
-    if added:
+    marked = carry_takedowns(posted, log)
+    if added or marked:
         clip_progress.POSTS.write_text(json.dumps(log, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"youtube-links: {added} new YouTube Shorts link(s) on the promotion page")
+    print(f"youtube-links: {added} new YouTube Shorts link(s) on the promotion page"
+          + (f", {marked} taken-down upload(s) marked" if marked else ""))
     return 0
 
 

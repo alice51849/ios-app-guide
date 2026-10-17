@@ -248,6 +248,19 @@ class Catalog:
                      for a in improvements.get("apps", []) if a.get("name")]
         self.apps.sort(key=lambda a: -len(a[0]))
 
+    def taken_down(self, channel, media, channels=None):
+        """The "taken_down" mark of a logged post (clip-posts.json, written by video_takedown.py), or None.
+
+        A marked post was taken down (a non-compliant hook clip) or handed to the Mac to be archived:
+        nothing is written under it any more (no link comment, no comment reply). `channels`: the log
+        channels to look in (Instagram listings also hold feed carousels, logged as instagram_feed)."""
+        for ch in channels or (channel,):
+            for k in (media.get("id"), media.get("permalink")):
+                p = self.logged.get((ch, str(k or "").rstrip("/")))
+                if p and p.get("taken_down"):
+                    return p["taken_down"]
+        return None
+
     def _clip(self, key, kind="clip", variant=None):
         if key.startswith("utility/"):  # utility_cards.py: utility/<type>/<app>/<item>/<locale>
             parts = key.split("/")

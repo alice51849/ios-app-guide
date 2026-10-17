@@ -246,6 +246,43 @@ class ServedElsewhereTest(unittest.TestCase):
             self.assertTrue(S.configured("youtube"))
             self.assertFalse(S.configured("bluesky"))  # one override never releases the other channel
 
+    def test_pinterest_is_left_to_the_mac_unless_forced(self):
+        with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.object(S, "http") as h, \
+                mock.patch.object(P, "record_post") as rec, mock.patch("sys.stdout", new_callable=io.StringIO) as out:
+            self.assertFalse(S.configured("pinterest"))
+            S.run(("pinterest",), DAY, 15, data=DATA)
+        h.assert_not_called()
+        rec.assert_not_called()
+        self.assertIn("served by 00_GrowthEngine social/feed_poster.py (Mac)", out.getvalue())
+        with mock.patch.dict(os.environ, dict(ENV_ALL, FORCE_GUIDE_PINTEREST="1"), clear=True):
+            self.assertTrue(S.configured("pinterest"))
+
+    def test_tiktok_is_export_only_with_every_link_written_out(self):
+        self.assertNotIn("tiktok", S.CHANNELS)  # the Mac posts it; nothing here ever calls TikTok
+        it = mochi_item("tiktok")
+        text = S.final_text(it, "tiktok")
+        self.assertIn("ct=h7_mochi_tt", it["store"])
+        self.assertIn(it["store"], text)
+        self.assertIn(S.play_of(it), text)
+        self.assertLessEqual(len(text), 2200)
+        self.assertEqual(S.qa_problems(it, "tiktok", online=False), [])
+        long = mochi_item("tiktok", caption="word " * 600)
+        self.assertLessEqual(len(S.final_text(long, "tiktok")), 2200)  # the caption gives way, never a link
+        self.assertIn(long["store"], S.final_text(long, "tiktok"))
+
+    def test_feed_carries_the_exact_pieces_the_mac_sends(self):
+        data = {"clips": {"a/en": search_clip("a", "en")}, "schedule": []}
+        with mock.patch.object(S, "exists", return_value=True), mock.patch.object(S.SC, "winners", return_value={}):
+            feed = S.export(DAY, data=data, perf={})
+        tt = feed["pool"]["tiktok"][0]
+        self.assertIn("ct=h7_a_tt", tt["store"])
+        self.assertIn(tt["store"], tt["tiktok"]["caption"])
+        pin = feed["pool"]["pinterest"][0]
+        self.assertEqual(pin["pinterest"]["link"], pin["store"])
+        self.assertIn(pin["store"], pin["pinterest"]["description"])
+        self.assertNotIn("tiktok", feed["pool"]["youtube"][0])
+        json.dumps(feed)
+
     def test_youtube_uses_a_known_winner_instead_of_the_problem_line(self):
         with mock.patch.object(S.SC, "winners", return_value={}):
             it = S.clip_item("u/en", dict(search_clip(), hook_best="b"), "youtube", DAY)
@@ -260,7 +297,7 @@ class ServedElsewhereTest(unittest.TestCase):
         perf = {"boost": ["b"]}
         with mock.patch.object(S, "exists", return_value=True), mock.patch.object(S.SC, "winners", return_value={}):
             feed = S.export(DAY, data=data, perf=perf)
-        self.assertEqual(set(feed["pool"]), {"bluesky", "youtube"})
+        self.assertEqual(set(feed["pool"]), {"bluesky", "youtube", "pinterest", "tiktok"})
         self.assertEqual([i["key"] for i in feed["pool"]["youtube"]], ["b/en", "b/ja", "a/en"])  # c has no video
         top = feed["pool"]["youtube"][0]
         self.assertEqual(top["boost_rank"], 1)
@@ -309,7 +346,7 @@ class YoutubeLinksTest(unittest.TestCase):
             feed = S.export(dt.date(2026, 11, 1), data={"clips": DATA["clips"], "schedule": [
                 dict(e, date="2026-11-01") if e["date"] == "2026-10-15" else e for e in DATA["schedule"]]})
         self.assertEqual(feed["schema"], S.FEED_SCHEMA)
-        self.assertEqual(set(feed["items"]), {"bluesky", "mastodon", "youtube"})
+        self.assertEqual(set(feed["items"]), {"bluesky", "mastodon", "youtube", "pinterest", "tiktok"})
         bs = feed["items"]["bluesky"]
         clips = [i["key"] for i in bs if i["kind"] == "clip"]
         self.assertEqual(clips, ["a/en", "a/zh-Hant", "b/en"])  # Instagram first, slot 1 then 15

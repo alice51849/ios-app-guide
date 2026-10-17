@@ -90,13 +90,19 @@ PLAN = {
     "dailymotion": {"cap": 1, "clips": True, "cards": False},
     # Export only (not in CHANNELS): posted by threads-autopilot from feed.json.
     "mastodon": {"cap": 2, "clips": True, "cards": True},
+    # Export only: posted from feed.json by the Mac (00_GrowthEngine social/feed_poster.py), whose TikTok token
+    # rotates on every refresh and stays on the Mac. A clip goes out only once 04's real-recording gate passed it.
+    "tiktok": {"cap": 2, "clips": True, "cards": False},
 }
 # Served by another repo from feed.json; this script never posts them unless forced
 # (FORCE_GUIDE_BLUESKY=1 / FORCE_GUIDE_YOUTUBE=1), so nothing is ever double-posted.
-SERVED_ELSEWHERE = {"bluesky": "threads-autopilot media.yml", "youtube": "00_GrowthEngine hook-shorts-youtube.yml"}
-EXPORT_CHANNELS = ("bluesky", "mastodon", "youtube")
+# Pinterest's refresh token rotates (60-day continuous refresh): only the Mac can write the new one back, so the
+# Mac posts the feed's Pinterest items (00_GrowthEngine social/feed_poster.py) and this runner leaves them alone.
+SERVED_ELSEWHERE = {"bluesky": "threads-autopilot media.yml", "youtube": "00_GrowthEngine hook-shorts-youtube.yml",
+                    "pinterest": "00_GrowthEngine social/feed_poster.py (Mac)"}
+EXPORT_CHANNELS = ("bluesky", "mastodon", "youtube", "pinterest", "tiktok")
 # Channels whose poster picks from the whole clip library (feed["pool"]), not only the day's schedule.
-POOL_CHANNELS = ("bluesky", "youtube")
+POOL_CHANNELS = ("bluesky", "youtube", "pinterest", "tiktok")
 FEED_SCHEMA = "lumi.social-feed/v1"
 SECRETS = {
     "facebook": ("FB_PAGE_ID", "FB_PAGE_TOKEN"),
@@ -110,7 +116,7 @@ SECRETS = {
 }
 # Campaign suffix per platform (App Store ct token / Play referrer).
 CT = {"facebook": "fb", "bluesky": "bs", "youtube": "yt", "pinterest": "pin", "tumblr": "tb",
-      "naver": "nv", "plurk": "pk", "dailymotion": "dm", "mastodon": "ma"}
+      "naver": "nv", "plurk": "pk", "dailymotion": "dm", "mastodon": "ma", "tiktok": "tt"}
 
 
 def env(name):
@@ -1101,9 +1107,16 @@ def render_mastodon(item):
     return {"final": text, "counted": text, "measure": fedi_len, "text": text, "checks": [("text", text)]}
 
 
+def render_tiktok(item):
+    """Posted by the Mac from the feed: TikTok caption links cannot be tapped, so every download link is written
+    out in full after the caption (hashtags give way first; 2200 characters in all)."""
+    text = with_links(item["caption"], item, post_qa.LIMITS["tiktok"], review=False, label=f"tiktok {item.get('key')}")
+    return {"final": text, "counted": text, "caption": text, "checks": [("caption", text)]}
+
+
 RENDER = {"facebook": render_facebook, "bluesky": render_bluesky, "youtube": render_youtube,
           "pinterest": render_pinterest, "tumblr": render_tumblr, "naver": render_naver, "plurk": render_plurk,
-          "dailymotion": render_dailymotion, "mastodon": render_mastodon}
+          "dailymotion": render_dailymotion, "mastodon": render_mastodon, "tiktok": render_tiktok}
 
 
 def render(item, channel):
@@ -1182,6 +1195,10 @@ def run(channels, day, slot, dry_run=False, data=None):
     return 0
 
 
+# The rendered pieces the Mac poster sends per channel (feed item[channel]).
+MAC_PIECES = {"tiktok": ("caption",), "pinterest": ("description", "link")}
+
+
 def public(item, channel):
     """An item as plain feed data: search fields kept (variant, alt, keywords, keyline; for YouTube the
     search-first title / description / tags), the internal clip and variant objects dropped."""
@@ -1194,6 +1211,10 @@ def public(item, channel):
         if channel == "youtube":
             title, desc, words = yt_meta(item)
             out["youtube"] = {"title": title, "description": desc, "tags": words}
+    if channel in MAC_PIECES:
+        # The Mac sends exactly these pieces (the QA gate checked the same render); it re-checks the links itself.
+        pieces = render(item, channel)
+        out[channel] = {k: pieces[k] for k in MAC_PIECES[channel]}
     return out
 
 

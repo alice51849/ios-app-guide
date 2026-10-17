@@ -46,9 +46,11 @@ UA = "lumi-post-qa/1.0"
 
 # Platform caption limits (characters; Bluesky counts graphemes, len() is close for our text).
 LIMITS = {"telegram": 1024, "instagram": 2200, "threads": 500, "bluesky": 300, "mastodon": 500, "plurk": 360,
-          "facebook": 5000, "pinterest": 800, "tumblr": 4096, "naver": 10000, "youtube": 5000, "dailymotion": 3000}
+          "facebook": 5000, "pinterest": 800, "tumblr": 4096, "naver": 10000, "youtube": 5000, "dailymotion": 3000,
+          "tiktok": 2200}
 MAX_TAGS = {"instagram": 5, "threads": 1, "telegram": 3, "bluesky": 3, "facebook": 3, "plurk": 3, "mastodon": 5,
-            "pinterest": 10, "tumblr": 10, "naver": 10, "youtube": 15, "dailymotion": 10}
+            "pinterest": 10, "tumblr": 10, "naver": 10, "youtube": 15, "dailymotion": 10,
+            "tiktok": 5}
 FIRST_LINE_MAX = 90  # the hook line has to fit the platforms' one-line preview
 
 HAN = re.compile(r"[㐀-䶿一-鿿]")

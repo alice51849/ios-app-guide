@@ -21886,7 +21886,9 @@ class GeneratorTests(unittest.TestCase):
         item = next(entry for entry in items if entry["query"] == question)
         serialized = json.dumps(item, ensure_ascii=False).lower()
 
-        self.assertIn("weekly recurring reminder", serialized)
+        # The live store listing says "Reminders", never repeating ones.
+        self.assertIn("set a reminder", serialized)
+        self.assertNotIn("recurring reminder", serialized)
         self.assertIn("does not automatically clear", serialized)
         self.assertIn("not the list contents", serialized)
         self.assertNotIn("automatically resets", serialized)

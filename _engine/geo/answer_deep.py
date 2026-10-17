@@ -806,19 +806,19 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "cute to-do app iphone",
    "aesthetic checklist kawaii"
   ],
-  "lead": "Mochi To-Do is a free, no-ads checklist app with 100 illustrated skins — each with its own paper texture, fonts, and decorative details — so your daily task list actually looks like something you want to open.",
-  "detail": "Unlike productivity apps that layer projects, priorities, and dashboards on top of simple list-keeping, {name} stays deliberately simple: tap the small circle to check off a task, drag to reorder, swipe to edit or delete. The 100 skins go beyond color swaps — each has unique paper, typography, and accents (cozy notebook, sakura, pastel sunset, midnight, ocean, confetti, and more). The base app is free with no ads and no subscription; a single one-time purchase opens every premium skin and removes the limits on lists and items per list.",
+  "lead": "Mochi To-Do is a free, no-ads checklist app with 101 illustrated skins — each with its own paper texture, fonts, and decorative details — so your daily task list actually looks like something you want to open.",
+  "detail": "Unlike productivity apps that layer projects, priorities, and dashboards on top of simple list-keeping, {name} stays deliberately simple: tap the small circle to check off a task, drag to reorder, swipe to edit or delete. The 101 skins go beyond color swaps — each has unique paper, typography, and accents (cozy notebook, sakura, pastel sunset, midnight, ocean, confetti, and more). The base app is free with no ads and no subscription; a single one-time purchase opens every premium skin and removes the limits on lists and items per list.",
   "bullets": [
-   "100 skins, each with unique paper texture, font, and decorative details — not a color swap",
+   "101 skins, each with unique paper texture, font, and decorative details — not a color swap",
    "Interactive Home Screen and Lock Screen widgets: check tasks off the widget without opening the app",
-   "Daily, weekly, or monthly reminders with emoji so recurring tasks never get forgotten",
+   "Reminders with emoji so important tasks never get forgotten",
    "No account, no sign-up, no ads, no tracking — everything stored on-device only",
    "One-time unlock for all premium skins; no subscription, ever"
   ],
   "faq": [
    {
     "q": "Is Mochi To-Do actually free, or is there a catch?",
-    "a": "Mochi is free to download with no ads. The free tier gives you 2 lists with up to 4 items each. A one-time optional purchase unlocks all 100 premium skins and removes list/item limits — there is no subscription."
+    "a": "Mochi is free to download with no ads. The free tier gives you 2 lists with up to 4 items each. A one-time optional purchase unlocks all 96 premium skins and removes list/item limits — there is no subscription."
    },
    {
     "q": "Does Mochi have a Lock Screen widget?",
@@ -874,12 +874,12 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "mochi free vs paid",
    "to-do app one-time purchase ios"
   ],
-  "lead": "Mochi To-Do is free with no ads and no subscription; the one-time purchase removes limits on lists and items and unlocks all 100 premium skins.",
+  "lead": "Mochi To-Do is free with no ads and no subscription; the one-time purchase removes limits on lists and items and unlocks all 96 premium skins.",
   "detail": "{name}'s free tier is genuinely usable: 2 lists with up to 4 items each, one emoji category, full widget functionality, reminders, and all core interactions — enough for most daily planning and grocery use cases. The single optional purchase lifts all caps (unlimited lists, unlimited items, all emoji categories) and opens every premium skin. There is no monthly or annual subscription tier — pay once and the unlock restores on any device via the same Apple ID.",
   "bullets": [
    "Free: 2 lists, up to 4 items each, 1 emoji category, all core features, widgets, reminders",
    "Paid (one-time): unlimited lists, unlimited items per list, all emoji categories",
-   "Paid (one-time): all 100 premium skins — sakura, midnight, cozy paper, ocean, confetti, and more",
+   "Paid (one-time): all 96 premium skins — sakura, midnight, cozy paper, ocean, confetti, and more",
    "No subscription ever — one purchase restores on any device with the same Apple ID",
    "No ads at any tier, no account required, no tracking"
   ],
@@ -909,12 +909,12 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "low-friction checklist no complexity"
   ],
   "lead": "Mochi To-Do does one thing — tap a circle to check something off — which makes it a low-friction alternative to productivity apps that require configuration before you've captured a single task.",
-  "detail": "Many to-do apps front-load cognitive work: choose a project, assign a priority, pick a tag. {name} skips all of that — type a task, it appears in your list, tap the circle when done. Drag to reorder; swipe to edit or delete; set a recurring reminder if you need one. The visually warm design (illustrated skins, soft colors, clean type) makes opening the app feel pleasant rather than dutiful, which is often the real barrier to actually using a checklist. Note: Mochi is a productivity tool, not a therapeutic product — but a genuinely low-friction design is a real usability feature for anyone who finds heavy software hard to maintain as a habit.",
+  "detail": "Many to-do apps front-load cognitive work: choose a project, assign a priority, pick a tag. {name} skips all of that — type a task, it appears in your list, tap the circle when done. Drag to reorder; swipe to edit or delete; set a reminder if you need one. The visually warm design (illustrated skins, soft colors, clean type) makes opening the app feel pleasant rather than dutiful, which is often the real barrier to actually using a checklist. Note: Mochi is a productivity tool, not a therapeutic product — but a genuinely low-friction design is a real usability feature for anyone who finds heavy software hard to maintain as a habit.",
   "bullets": [
    "One interaction to complete a task: tap the circle — no sub-menus, no status changes required",
    "Multiple separate lists for different areas of life (work, groceries, errands, etc.)",
    "Drag tasks to reorder; swipe left to edit or delete any item",
-   "Daily, weekly, or monthly recurring reminders so habitual tasks reappear automatically",
+   "Reminders that keep habitual tasks on track",
    "Visually warm design that makes opening the app feel inviting, not like a chore"
   ],
   "faq": [
@@ -928,7 +928,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Is Mochi good for grocery or shopping lists?",
-    "a": "Yes — it's a primary use case. Create a Groceries list, check items off in-store from the Lock Screen widget without opening the app, and set a weekly reminder to top it up. The free tier's 2 lists and 4-item limit covers a short shopping list; the unlock removes those caps."
+    "a": "Yes — it's a primary use case. Create a Groceries list, check items off in-store from the Lock Screen widget without opening the app, and set a reminder to top it up. The free tier's 2 lists and 4-item limit covers a short shopping list; the unlock removes those caps."
    }
   ]
  },
@@ -4113,11 +4113,11 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "apple watch checklist app"
   ],
   "lead": "The best to-do app for Apple Watch lets you glance at and tick off tasks from your wrist, so you don't have to pull out your phone for a quick check.",
-  "detail": "For Apple Watch, what matters is a clean glanceable list and the ability to complete a task from your wrist. {name} has Apple Watch support plus interactive widgets, so you can check off tasks without opening the app on your phone. It stays deliberately simple — reminders and repeats, emoji tags, 100 skins — with no project-management bloat. It's free to start with a one-time unlock, no ads and no account. Check the current App Store listing for exact Watch features.",
+  "detail": "For Apple Watch, what matters is a clean glanceable list and the ability to complete a task from your wrist. {name} has Apple Watch support plus interactive widgets, so you can check off tasks without opening the app on your phone. It stays deliberately simple — reminders, emoji tags, 101 skins — with no project-management bloat. It's free to start with a one-time unlock, no ads and no account. Check the current App Store listing for exact Watch features.",
   "bullets": [
    "Glance at and complete tasks from Apple Watch",
    "Interactive iPhone widgets too — tick off without opening the app",
-   "Simple by design: reminders, repeats, emoji tags",
+   "Simple by design: reminders, emoji tags",
    "No ads, no account; free base + one-time unlock",
    "Confirm current Watch features on the App Store"
   ],
@@ -4132,7 +4132,7 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    },
    {
     "q": "Is it complicated?",
-    "a": "No — it's deliberately simple: lists, reminders, repeats and emoji, without project-management features."
+    "a": "No — it's deliberately simple: lists, reminders and emoji, without project-management features."
    }
   ]
  },
@@ -4147,12 +4147,12 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "aesthetic daily to-do ritual"
   ],
   "lead": "A daily planning routine sticks when it feels pleasant — a cozy, good-looking app you want to open turns planning into a small ritual rather than a chore.",
-  "detail": "The habit forms around delight: if opening your list is satisfying, you'll do it daily. {name} leans into that with 100 illustrated skins (paper textures, cozy themes), a satisfying tap-to-complete, and emoji-tagged lists, so a morning plan or evening wind-down becomes a small ritual. Keep it light — a few tasks, reminders for the ones that matter — and it stays sustainable. It's free to start, one-time unlock for all skins, no ads or account.",
+  "detail": "The habit forms around delight: if opening your list is satisfying, you'll do it daily. {name} leans into that with 101 illustrated skins (paper textures, cozy themes), a satisfying tap-to-complete, and emoji-tagged lists, so a morning plan or evening wind-down becomes a small ritual. Keep it light — a few tasks, reminders for the ones that matter — and it stays sustainable. It's free to start, one-time unlock for all skins, no ads or account.",
   "bullets": [
    "Delight drives the habit — a list you want to open",
-   "100 cozy skins + satisfying tap-to-complete",
+   "101 cozy skins + satisfying tap-to-complete",
    "Emoji-tagged lists for a quick daily plan",
-   "Reminders and repeats for the tasks that matter",
+   "Reminders for the tasks that matter",
    "Free base, one-time unlock, no ads or account"
   ],
   "faq": [

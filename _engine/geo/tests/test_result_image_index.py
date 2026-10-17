@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+from collections import Counter
 import copy
 from datetime import date, datetime, timedelta, timezone
 from email.message import Message
@@ -479,6 +480,73 @@ class ResultImagesTests(unittest.TestCase):
                 patch.object(images.time, "sleep"):
             with self.assertRaisesRegex(ValueError, "public GET unavailable"):
                 images.fetch(url, images.MAX_ROBOTS_BYTES)
+
+    def _flaky_verifier(self, url, failures):
+        calls = Counter()
+
+        def transport(requested, limit):
+            if requested == url:
+                calls[requested] += 1
+                if failures is None or calls[requested] <= failures:
+                    raise ValueError("public GET unavailable")
+            return self.transport(requested, limit)
+
+        return images.PublicVerifier(transport), calls
+
+    def test_unanswered_approved_image_is_rechecked_with_full_verification(self):
+        url = self.manifest["images"][0]["canonical_asset_url"]
+        self.verifier, calls = self._flaky_verifier(url, failures=1)
+        with patch.object(images.time, "sleep") as sleep:
+            result = self.generate(require_approved=True)
+        self.assertEqual([60], [call.args[0] for call in sleep.call_args_list])
+        self.assertEqual(2, calls[url])
+        self.assertEqual(2, result["indexable_unique_images"])
+        self.assertNotIn("notes-handwriting", result["public_check_failures"])
+
+    def test_unanswered_approved_image_still_blocks_after_bounded_rechecks(self):
+        url = self.manifest["images"][0]["canonical_asset_url"]
+        before = (self.root / "index.html").read_bytes()
+        self.verifier, calls = self._flaky_verifier(url, failures=None)
+        with patch.object(images.time, "sleep") as sleep:
+            with self.assertRaisesRegex(ValueError, "(?s)blocks publication.*public GET unavailable"):
+                self.generate(require_approved=True)
+        self.assertEqual(list(images.TRANSIENT_RECHECK_DELAYS_SECONDS),
+                         [call.args[0] for call in sleep.call_args_list])
+        self.assertEqual(1 + len(images.TRANSIENT_RECHECK_DELAYS_SECONDS), calls[url])
+        self.assertEqual(before, (self.root / "index.html").read_bytes())
+        self.verifier, _ = self._flaky_verifier(url, failures=None)
+        with patch.object(images.time, "sleep"):
+            result = self.generate()
+        self.assertEqual(1, result["indexable_unique_images"])
+        self.assertEqual("public GET unavailable",
+                         result["public_check_failures"]["notes-handwriting"])
+
+    def test_answered_image_failures_are_final_without_rechecks(self):
+        self.rewrite_response(status=404)
+        with patch.object(images.time, "sleep") as sleep:
+            result = self.generate()
+            with self.assertRaisesRegex(ValueError, "blocks publication"):
+                self.generate(require_approved=True)
+        sleep.assert_not_called()
+        self.assertIn("direct HTTP 200", result["public_check_failures"]["notes-handwriting"])
+
+    def test_unavailable_origin_robots_is_asked_again_on_recheck(self):
+        parts = images.urlsplit(images.PUBLIC_SITE)
+        url = f"{parts.scheme}://{parts.netloc}/robots.txt"
+        answers = [images.Response(503, url, {}, b"")]
+
+        def transport(requested, limit):
+            if requested == url and answers:
+                self.requests.append((requested, limit))
+                return answers.pop()
+            return self.transport(requested, limit)
+
+        self.verifier = images.PublicVerifier(transport)
+        with patch.object(images.time, "sleep") as sleep:
+            result = self.generate(require_approved=True)
+        self.assertEqual([60], [call.args[0] for call in sleep.call_args_list])
+        self.assertEqual(2, result["indexable_unique_images"])
+        self.assertEqual(2, sum(1 for requested, _ in self.requests if requested == url))
 
     def test_authoritative_origin_robots_not_project_path_controls_crawling(self):
         url = "https://is1-ssl.mzstatic.com/robots.txt"

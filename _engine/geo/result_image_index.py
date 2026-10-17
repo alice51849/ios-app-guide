@@ -296,6 +296,14 @@ class _NoRedirect(HTTPRedirectHandler):
 # transient outcomes over ~a minute; the evidence still has to be a real 200.
 FETCH_ATTEMPTS = 6
 FETCH_MAX_BACKOFF_SECONDS = 30
+# Outages longer than the fetch window (geo-daily #1246: one approved image
+# got no answer for ~2.5 minutes, then the next one verified) get two later
+# full re-checks. Only "no answer" outcomes qualify; nothing is skipped.
+TRANSIENT_RECHECK_DELAYS_SECONDS = (60, 120)
+TRANSIENT_PUBLIC_CHECK_ERRORS = frozenset({
+    "public GET unavailable",
+    "authoritative origin robots is unavailable",
+})
 
 
 def _fetch_backoff(attempt: int) -> None:
@@ -372,6 +380,12 @@ class PublicVerifier:
     def __init__(self, transport: Callable[[str, int], Response] = fetch):
         self.transport = transport
         self.robots: dict[str, Response] = {}
+
+    def forget_unavailable_robots(self) -> None:
+        """Drop cached 429/5xx robots answers so a re-check asks the origin again."""
+        for url, response in list(self.robots.items()):
+            if response.status == 429 or response.status >= 500:
+                del self.robots[url]
 
     def crawlable(self, url: str, agent: str) -> None:
         parts = urlsplit(url)
@@ -633,17 +647,43 @@ def generate(
     ready: dict[str, list[dict]] = {}
     failed: dict[str, str] = {}
     image_readbacks = {}
+
+    def verify_asset(asset: dict) -> None:
+        image_readbacks[asset["id"]] = verifier.image(asset)
+        for locale in asset["localizations"]:
+            url = gallery_url(locale, site)
+            verifier.crawlable(url, "Googlebot")
+            verifier.crawlable(url, "Googlebot-Image")
+
     for asset in manifest["images"]:
         try:
-            image_readbacks[asset["id"]] = verifier.image(asset)
-            for locale in asset["localizations"]:
-                url = gallery_url(locale, site)
-                verifier.crawlable(url, "Googlebot")
-                verifier.crawlable(url, "Googlebot-Image")
-            for locale in asset["localizations"]:
-                ready.setdefault(locale, []).append(asset)
+            verify_asset(asset)
         except (ValueError, UnicodeError) as error:
             failed[asset["id"]] = str(error)
+    # A host that did not answer at all is re-checked later from scratch with
+    # the same full verification; any answered failure stays final.
+    for delay in TRANSIENT_RECHECK_DELAYS_SECONDS:
+        transient = [
+            asset for asset in manifest["images"]
+            if failed.get(asset["id"]) in TRANSIENT_PUBLIC_CHECK_ERRORS
+        ]
+        if not transient:
+            break
+        time.sleep(delay)
+        forget = getattr(verifier, "forget_unavailable_robots", None)
+        if forget is not None:
+            forget()
+        for asset in transient:
+            try:
+                verify_asset(asset)
+            except (ValueError, UnicodeError) as error:
+                failed[asset["id"]] = str(error)
+            else:
+                del failed[asset["id"]]
+    for asset in manifest["images"]:
+        if asset["id"] not in failed:
+            for locale in asset["localizations"]:
+                ready.setdefault(locale, []).append(asset)
     if require_approved and failed:
         raise ValueError("Approved image verification blocks publication: " + canonical_json(failed))
     outputs: dict[str, str] = {}

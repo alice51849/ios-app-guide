@@ -69,11 +69,62 @@ class DevtoLinkFixTest(unittest.TestCase):
         self.assertEqual(api.puts, ["1"])
         self.assertEqual(rows2[0]["status"], "ok_caption")
 
-    def test_an_article_that_links_its_store_page_is_left_alone(self):
-        api = FakeDevto([article(2, "Mochi", f"Get it: https://apps.apple.com/app/id{MOCHI}")])
+    def test_an_article_that_has_every_link_it_owes_is_left_alone(self):
+        play = "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
+        api = FakeDevto([article(2, "Mochi", f"Get it: https://apps.apple.com/app/id{MOCHI} and {play} ok"),
+                         article(7, "UsageNow", f"Get it: https://apps.apple.com/app/id{PLAIN}")])  # iOS only
         rows, _ = self.go(api, apply=True)
-        self.assertEqual(rows[0]["status"], "ok_caption")
+        self.assertEqual([r["status"] for r in rows], ["ok_caption", "ok_caption"])
         self.assertEqual(api.puts, [])
+
+    def test_an_article_with_only_the_app_store_link_of_an_android_app_gets_the_play_link_once(self):
+        # the Google Play link was added to the owner's rule after these were written (2026-10-17)
+        text = f"I built Mochi. It is on the App Store: https://apps.apple.com/us/app/id{MOCHI}?pt=1&ct=devto&mt=8\n\nLink:\n"
+        api = FakeDevto([article(8, "Why I built Mochi", text)])
+        audit, state = self.go(api)   # audit only: nothing is written
+        self.assertEqual((audit[0]["status"], api.puts), ("missing_play", []))
+        rows, state = self.go(api, state, apply=True)
+        self.assertEqual(rows[0]["status"], "backfilled")
+        body = api.articles["8"]["body_markdown"]
+        self.assertTrue(body.startswith(text.rstrip()), "the author's text is kept as it was")
+        play = "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
+        self.assertTrue(DL.has_download_link(body, f"https://apps.apple.com/app/id{MOCHI}", play))
+        self.assertIn("ct=bf_dv", body)
+        self.assertTrue(state["done"]["devto_play"]["8"]["verified"])
+        again, _ = self.go(api, state, apply=True)   # now it has everything: no second edit
+        self.assertEqual((again[0]["status"], api.puts), ("ok_caption", ["8"]))
+
+    def test_a_removed_play_link_is_not_added_a_second_time(self):
+        text = f"Mochi: https://apps.apple.com/app/id{MOCHI}"
+        api = FakeDevto([article(9, "Mochi", text)])
+        state = B.load_state(Path("/nonexistent"))
+        state["done"]["devto_play"] = {"9": {"at": "2026-10-17T00:00:00Z", "verified": True}}
+        rows, _ = self.go(api, state, apply=True)
+        self.assertEqual((rows[0]["status"], api.puts), ("ok_backfilled_earlier", []))
+
+    def test_a_lineup_gets_the_play_link_on_the_list_line_of_each_android_app_only(self):
+        lineup = (f"Here is the lineup:\n- [Mochi](https://apps.apple.com/app/id{MOCHI}) - checklists.\n"
+                  f"- [UsageNow](https://apps.apple.com/app/id{PLAIN}) - limits.\n\nMore: "
+                  "https://apps.apple.com/developer/id1136144960\n")
+        api = FakeDevto([article(11, "My apps", lineup)])
+        rows, state = self.go(api, apply=True)
+        body = api.articles["11"]["body_markdown"]
+        lines = body.split("\n")
+        self.assertEqual(rows[0]["status"], "backfilled")
+        self.assertIn("com.alice51849.MochiTodo", lines[1])
+        self.assertTrue(lines[1].startswith(f"- [Mochi](https://apps.apple.com/app/id{MOCHI}) - checklists. · [Google Play]("))
+        self.assertEqual(f"- [UsageNow](https://apps.apple.com/app/id{PLAIN}) - limits.", lines[2])  # iOS only: untouched
+        self.assertNotIn("---", body)   # every Play link found its own line: no closing block
+        self.assertTrue(state["done"]["devto_play"]["11"]["verified"])
+
+    def test_a_play_link_whose_app_has_no_list_line_goes_into_a_closing_block(self):
+        text = (f"Mochi: https://apps.apple.com/app/id{MOCHI}\nand UsageNow: https://apps.apple.com/app/id{PLAIN}\n")
+        body = D.with_play_links(text, {MOCHI: "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"},
+                                 "en", [MOCHI, PLAIN])
+        self.assertIn(f"https://apps.apple.com/app/id{MOCHI} · [Google Play](", body)   # the bare-link line counts
+        body = D.with_play_links("Mochi is great.\nSee the list.\n", {MOCHI: "https://play.google.com/x?id=a.b"}, "en",
+                                 [MOCHI, PLAIN])
+        self.assertTrue(body.rstrip().endswith("[Also on Google Play](https://play.google.com/x?id=a.b)"))
 
     def test_unknown_or_ambiguous_and_draft_articles_are_listed_not_touched(self):
         api = FakeDevto([article(3, "Notes on sleep", "No app named here."),

@@ -9,7 +9,8 @@ don't read like a bot.
 
 Every reply carries the direct download link of the app its post promotes (owner
 rule 2026-10-17): the App Store link, plus the Google Play link when the app is on
-Android - praise, language and how-to answers included. A reply is checked before it
+Android - praise, language and how-to answers included. On Instagram a reply URL cannot be
+tapped, so the reply also says where to tap: "📲 Link in bio → tap “<app>”" (ig_bio.py). A reply is checked before it
 goes out (download_links.py); one that does not carry the link, or does not fit the
 platform's length limit, is not sent and is reported with ::error::. A post that maps
 to no app of ours (link_backfill.AppFinder: several proofs must agree) gets no reply
@@ -38,6 +39,8 @@ import time
 from pathlib import Path
 
 import download_links as DL
+import ig_bio as IGB
+import ig_bio_hub as HUB
 from link_backfill import AppFinder, ios_id_for
 from own_posts import (GROWTH, HERE, ApiError, Catalog, InstagramClient, ThreadsClient,
                        detect_language, load_json)
@@ -315,6 +318,10 @@ def decide(comment, post, channel, own_username, state, media_id, now):
     reply = template.format(links=links).strip()
     if "{links}" not in template:  # praise / language / howto / android_none: link lines at the end
         reply = f"{reply}\n{links}"
+    if channel == "instagram":   # an Instagram reply URL cannot be tapped: say where to tap (ig_bio.py)
+        name = HUB.display_name(post["ios_id"], lang) or post.get("name") or ""
+        if name:
+            reply = f"{reply}\n{IGB.bio_line(lang, name)}"
     problems = DL.link_problems(reply, app, play, label=f"{channel} reply to comment {comment['id']}")
     limit = MAX_REPLY_CHARS.get(channel, 500)
     if len(reply) > limit:

@@ -11,6 +11,8 @@ social_extra.py) calls this right before it posts. A post is refused when:
 - the direct download link is missing (download_links.py): the caption must hold the app's App Store
   URL (and its Google Play URL when the app is on Android) - Threads is exempt, its links go in the
   first reply, which clip_posts.py / threads_series.py check themselves;
+- an Instagram caption does not say where to tap (its URL cannot be tapped): the profile-link step
+  naming the app, "Link in bio → tap “Mochi”" (ig_bio.py);
 - the text is in the wrong language: a ja caption without kana, a zh-Hant
   caption with Simplified-only characters or kana / Hangul, an English template
   line ("Search ... on the App Store", "Link in bio") in another locale;
@@ -363,6 +365,15 @@ def download_link_problems(text, store_url, channel, play_url=None):
     return DL.link_problems(text, store_url, play_url, label=f"{channel} text")
 
 
+def bio_problems(text, locale, name, channel):
+    """Instagram only: a caption URL cannot be tapped, so the text must say where to tap - the profile link,
+    then the app by name ("Link in bio → tap “Mochi”", ig_bio.py). Other channels have tappable links."""
+    if channel != "instagram":
+        return []
+    import ig_bio
+    return ig_bio.bio_problems(text, locale, name, label=f"{channel} text")
+
+
 def clip_problems(clip, channel, text, online=True, length=True):
     """Everything that should stop one hook clip post on one channel."""
     out = []
@@ -377,6 +388,8 @@ def clip_problems(clip, channel, text, online=True, length=True):
     allowed = (clip.get("name", ""), clip.get("search", ""))
     out += text_problems(text, clip.get("locale", ""), channel, allowed=allowed, facts=facts, price=price, length=length)
     out += download_link_problems(text, clip.get("store_url", ""), channel)
+    if clip.get("name"):
+        out += bio_problems(text, clip.get("locale", ""), clip["name"], channel)
     if online:
         live = facts != "\n".join(p for p in store_text if p)
         if live:  # counts are only checked against a live description
@@ -387,8 +400,9 @@ def clip_problems(clip, channel, text, online=True, length=True):
 
 
 def card_problems(text, locale, channel, *, store_url, name, image=None, extra_facts=(), online=True, length=True,
-                  require_link=True):
-    """Everything that should stop one image card post."""
+                  require_link=True, require_bio=False):
+    """Everything that should stop one image card post. require_bio: an Instagram text must also say where to
+    tap (bio_problems); the card posters whose captions carry that line pass it."""
     out = []
     if image is not None:
         p = Path(image)
@@ -398,6 +412,8 @@ def card_problems(text, locale, channel, *, store_url, name, image=None, extra_f
     out += text_problems(text, locale, channel, allowed=(name,), facts=facts, price=price, length=length)
     if require_link:
         out += download_link_problems(text, store_url, channel)
+    if require_bio:
+        out += bio_problems(text, locale, name, channel)
     if online:
         out += link_problems(store_url)
     return out

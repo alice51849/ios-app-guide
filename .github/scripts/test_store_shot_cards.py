@@ -115,7 +115,7 @@ class DrawTest(unittest.TestCase):
         # store link; this app is iOS-only, so no Google Play link. The drawn cards carry no URL at all
         # (a URL on an image is not tappable and reads as spam).
         self.assertEqual(STORE_LINK.findall(plan["caption"]),
-                         ["https://apps.apple.com/us/app/id1005?pt=118326163&ct=h7_mochi_ig&mt=8"])
+                         ["https://apps.apple.com/us/app/id1005?pt=118326163&ct=h7_mochi_igc&mt=8"])
         drawn_text = [t for c in drawn.call_args_list for t in (c.args[1], c.args[2].get("name", ""))]
         self.assertEqual(len(drawn.call_args_list), 3)
         self.assertFalse([t for t in drawn_text if "http" in t or "apps.apple.com" in t])
@@ -134,9 +134,9 @@ class DrawTest(unittest.TestCase):
                 mock.patch.object(S.volume_ramp, "load", return_value={}):
             plan = S.make(self.tmp.name, dt.date(2026, 10, 17), 7, data=d, posts=[], fetcher=lambda u: shot_png())
         self.assertEqual(STORE_LINK.findall(plan["caption"]), [
-            "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=h7_mochi_ig&mt=8",
+            "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=h7_mochi_igc&mt=8",
             "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
-            "&referrer=utm_source%3Dh7_mochi_ig%26utm_campaign%3Dmochi"])
+            "&referrer=utm_source%3Dh7_mochi_igc%26utm_campaign%3Dmochi"])
         self.assertEqual(S.qa(plan, online=False), [])
 
     def test_too_few_screenshots_or_failed_downloads_make_nothing(self):
@@ -156,7 +156,7 @@ class DrawTest(unittest.TestCase):
 
 class PostTest(unittest.TestCase):
     PLAN = {"key": "feed/mochi/en", "app": "mochi", "locale": "en", "slot": 19, "date": "2026-10-17", "variant": "a",
-            "cards": ["01.jpg", "02.jpg"], "caption": "hook\nGet it on the App Store: https://apps.apple.com/us/app/id1?pt=118326163&ct=h7_mochi_ig&mt=8\nLink in bio",
+            "cards": ["01.jpg", "02.jpg"], "caption": "hook\n📲 Link in bio → tap “Mochi”\nGet it on the App Store: https://apps.apple.com/us/app/id1?pt=118326163&ct=h7_mochi_igc&mt=8",
             "store_url": "https://apps.apple.com/us/app/id1",
             "name": "Mochi", "alt": "Mochi — hook"}
 
@@ -196,6 +196,10 @@ class PostTest(unittest.TestCase):
         self.assertIn("https://apps.apple.com/app/id1", caption.replace("/us/app/", "/app/"))
         self.assertTrue(S.post_qa.card_problems(bare["caption"], "en", "instagram", store_url=bare["store_url"], name="Mochi", online=False))
         self.assertEqual(S.post_qa.card_problems(self.PLAN["caption"], "en", "instagram", store_url=self.PLAN["store_url"], name="Mochi", online=False), [])
+        # An Instagram URL cannot be tapped: the gate also wants the step that names the app on the profile link.
+        self.assertEqual(S.qa(self.PLAN, online=False), [])
+        generic = dict(self.PLAN, caption=self.PLAN["caption"].replace("📲 Link in bio → tap “Mochi”", "Link in bio"))
+        self.assertTrue([p for p in S.qa(generic, online=False) if "profile-link step" in p])
 
     def test_main_posts_records_and_throttles_on_a_slow_down_answer(self):
         with tempfile.TemporaryDirectory() as tmp:

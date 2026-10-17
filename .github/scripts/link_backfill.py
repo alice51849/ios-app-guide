@@ -10,8 +10,10 @@ own post:
   in the text, then the app names in the text), and write a report of which posts have the link (caption,
   or our own comment / reply) and which do not. Writes nothing to the platforms.
 - apply: add ONE comment (Instagram) or reply (Threads) per post that lacks it - "<Get it on the App
-  Store>: <App Store URL>" plus the Google Play URL when the app is on Android - then read the comments
-  back and keep the receipt. A post is only ever done once (state + a look at our own comments first).
+  Store>: <App Store URL>" plus the Google Play URL when the app is on Android; on Instagram, where a
+  comment URL cannot be tapped either, first "📲 Link in bio → tap “<app>”" (ig_bio.py: the profile link
+  is the hub https://open.cait518.cc/ig/) - then read the comments back and keep the receipt. A post is
+  only ever done once (state + a look at our own comments first).
 
 Safety, because the Threads account was limited once for posting many linked posts:
 - the newest posts come first, at most --max-new writes per channel per run, GAP seconds between writes;
@@ -43,6 +45,8 @@ from pathlib import Path
 
 import clip_posts as CP
 import download_links as DL
+import ig_bio as IGB
+import ig_bio_hub as HUB
 import own_posts as OP
 import volume_ramp
 from social_post_common import android_apps, campaign_app_store_url, play_store_url
@@ -289,9 +293,13 @@ def links_for(channel, ios_id):
     return campaign_app_store_url(f"https://apps.apple.com/app/id{ios_id}", ct), play_store_url(ios_id, ct)
 
 
-def comment_text(locale, store, play, missing_store=True):
+def comment_text(locale, store, play, missing_store=True, channel=None, name=""):
+    """The links under a post; on Instagram (where a comment URL cannot be tapped either) first the line that
+    says where to tap: "📲 Link in bio → tap “<app>”" (ig_bio.py, the profile-link hub)."""
     t = CP.text_for(locale or "en")
     lines = []
+    if channel == "instagram" and name:
+        lines.append(IGB.bio_line(locale or "en", name, t["bio"]))
     if missing_store:
         lines.append(f"{t['button']}: {store}")
     if play:
@@ -602,8 +610,12 @@ def run(client, catalog, state, *, apply=False, max_new=5, only=None, sleeper=ti
                 "now; the next sweep looks again")
             continue
         attempts += 1
+        name = ""
+        if channel == "instagram":   # the app as the profile-link hub shows it in the post's language
+            name = HUB.display_name(row.get("ios_id"), row.get("locale")) or \
+                (finder.by_id.get(str(row.get("ios_id") or "")) or ("", ""))[1]
         text = comment_text(row.get("locale"), todo["store"], todo["play"] if todo["missing_play"] else None,
-                            todo["missing_store"])
+                            todo["missing_store"], channel=channel, name=name)
         try:
             before = comments_count(client, row["id"])   # the read-back of an Instagram comment is the count going up
             if channel == "instagram" and before is None:   # without the count nothing can be read back: write nothing

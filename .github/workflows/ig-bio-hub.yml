@@ -1,0 +1,67 @@
+name: Instagram profile-link hub
+
+# Instagram never turns a URL in a caption or a comment into a link (owner 2026-10-17: 「你IG貼文的留言
+# 都沒有成功變成連結耶 沒辦法直接點」); only the profile link can be tapped. So every Instagram text says
+# "Link in bio → tap <app>" (ig_bio.py) and the profile link is the hub https://open.cait518.cc/ig/: the apps
+# of the newest Instagram posts on top, every app below, one tap to the App Store (ct=ig_bio_<app>).
+# The "Record the post link" steps rebuild .github/growth/ig-hub/index.html after every Instagram post and
+# the root site (alice51849.github.io ig-hub.yml) mirrors it every 10 minutes. This run, daily and on demand:
+#   build  - rebuild the page (catalog, names or icons changed on a day without an Instagram post);
+#   whoami - print the Instagram account's username and profile website only (never the token), so it is
+#            visible whether the profile link points to the hub;
+#   live   - read the hub URL back: HTTP 200, the hub page, the newest post's app on top.
+run-name: ${{ format('Instagram profile-link hub · {0}', inputs.mode || 'all') }}
+on:
+  schedule:
+    - cron: "41 3 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "all | build | whoami | live"
+        default: "all"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ig-bio-hub
+  cancel-in-progress: false
+
+jobs:
+  hub:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Test
+        run: python3 .github/scripts/test_ig_bio_hub.py -q
+      - name: Rebuild the hub page
+        if: inputs.mode == '' || inputs.mode == 'all' || inputs.mode == 'build'
+        run: |
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 .github/scripts/ig_bio_hub.py build
+            if [ -z "$(git status --porcelain -- .github/growth/ig-hub)" ]; then echo "the hub page is current"; exit 0; fi
+            git add .github/growth/ig-hub
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "IG 個人檔案連結頁：每日重建 [skip ci]"
+            if git push -q origin HEAD:main; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::error::could not push the rebuilt hub page"; exit 1
+      - name: Instagram account (username and profile website only)
+        if: inputs.mode == '' || inputs.mode == 'all' || inputs.mode == 'whoami'
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          set -o pipefail
+          python3 .github/scripts/ig_bio_hub.py whoami | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Read the live hub back
+        if: inputs.mode == '' || inputs.mode == 'all' || inputs.mode == 'live'
+        run: |
+          set -o pipefail
+          python3 .github/scripts/ig_bio_hub.py live | tee -a "$GITHUB_STEP_SUMMARY"

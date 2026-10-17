@@ -561,9 +561,12 @@ def telegram_text(meta, card):
 
 
 def instagram_text(meta, card):
-    """The Instagram caption: the card text, the full download URL(s) (not tappable: the bio hint stays), tags."""
+    """The Instagram caption: the card text, where to tap (the URL is not tappable: the profile link, then the
+    app, ig_bio.py), the full download URL(s), tags."""
+    import ig_bio
     import search_caption as SC
-    text = meta["caption"] + "\n" + "\n".join(link_lines(card, "instagram")) + "\n" + TEXT[card["locale"]]["bio"]
+    bio = ig_bio.bio_line(card["locale"], app_name(card), TEXT[card["locale"]]["bio"])
+    text = meta["caption"] + "\n" + bio + "\n" + "\n".join(link_lines(card, "instagram"))
     tags = SC.card_tags(card["app"], card["locale"])  # keyword hashtags from the planner's seo table
     if tags:
         text += "\n\n" + " ".join(tags)
@@ -575,7 +578,7 @@ def qa_problems(meta, card, channel, image=None, online=True):
     import post_qa
     text = {"instagram": instagram_text, "telegram": telegram_text}.get(channel, lambda m, c: m["caption"])(meta, card)
     return post_qa.card_problems(text, card["locale"], channel, store_url=store_url(card, "qa"),
-                                 name=app_name(card), image=image, online=online)
+                                 name=app_name(card), image=image, online=online, require_bio=True)
 
 
 def post_instagram(url, meta, card):

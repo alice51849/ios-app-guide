@@ -17,8 +17,9 @@ first: the top revenue per download), 19 UTC = New York 15:20 / LA 12:20 ->
 English. Apps rotate in the planner's revenue order (the order of clips.json's
 schedule), one app at most once a week here, one (app, locale) carousel at
 most once in 60 days. The caption is clip_posts.caption (problem line,
-benefit, keyword line, App Store search line, the direct App Store link with
-ct=h7_<app>_ig plus Google Play when the app is on Android, the bio hint,
+benefit, keyword line, App Store search line, the profile-link step naming the app
+(ig_bio.py), the direct App Store link with ct=h7_<app>_igc - the carousels' own row,
+apart from the Reels' h7_<app>_ig - plus Google Play when the app is on Android,
 keyword tags); the drawn cards carry no URL (not tappable on an image).
 
     python3 store_shot_cards.py make --slot 7 --out-dir cards/      # cards + plan.json
@@ -193,8 +194,11 @@ def compose(shot_bytes, headline, clip, out):
     return out
 
 
+FEED_CT = "igc"   # ct suffix of the carousels (h7_<app>_igc; 00_GrowthEngine agent/ct_codes.py: instagram_feed)
+
+
 def caption(clip, variant):
-    return clip_posts.caption(clip, "instagram", variant)
+    return clip_posts.caption(clip, "instagram", variant, tag=FEED_CT)
 
 
 def make(out_dir, day, slot, data=None, posts=None, fetcher=fetch):
@@ -244,7 +248,7 @@ def checked_caption(plan):
     """The caption with the app's direct download link(s): the clip caption already holds them; this is the
     last guard before the send (a caption without the link raises MissingDownloadLink and nothing is posted)."""
     stub = {"store_url": plan["store_url"], "locale": plan["locale"]}
-    store, play = clip_posts.download_urls(stub, "instagram")
+    store, play = clip_posts.download_urls(stub, "instagram", FEED_CT)
     return DL.ensure_download_link(plan["caption"], store, play, max_len=post_qa.LIMITS["instagram"],
                                    app_store_label=clip_posts.text_for(plan["locale"])["button"],
                                    play_label=clip_posts.play_label(stub), label=f"feed {plan['key']}")
@@ -289,7 +293,7 @@ def post_instagram(plan, base_url, wait=PAUSE, tries=40):
 def qa(plan, online=True):
     """The pre-post QA gate on the exact caption (store name as the allowed brand word)."""
     return post_qa.card_problems(plan["caption"], plan["locale"], "instagram", store_url=plan["store_url"],
-                                 name=plan["name"], online=online)
+                                 name=plan["name"], online=online, require_bio=True)
 
 
 def main(argv=None):

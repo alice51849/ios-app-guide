@@ -430,11 +430,13 @@ def telegram_text(meta, e=None):
 
 
 def instagram_text(meta, e=None):
-    """The Instagram caption: the card text, the full download URL(s) (not tappable: the bio hint stays), tags."""
+    """The Instagram caption: the card text, where to tap (the URL is not tappable: the profile link, then the
+    app, ig_bio.py), the full download URL(s), tags."""
+    import ig_bio
     import search_caption as SC
     e = e or event_of(meta)
-    bio = {"ko": "링크는 프로필에", "zh-Hant": "下載連結在個人檔案", "ja": "リンクはプロフィールから"}.get(meta["locale"], "Link in bio")
-    text = meta["caption"] + "\n" + "\n".join(link_lines(e, "instagram")) + "\n" + bio
+    bio = ig_bio.bio_line(meta["locale"], "CountDaysNow")
+    text = meta["caption"] + "\n" + bio + "\n" + "\n".join(link_lines(e, "instagram"))
     tags = SC.card_tags("countdaysnow", meta["locale"])  # keyword hashtags from the planner's seo table
     if tags:
         text += "\n\n" + " ".join(tags)
@@ -446,7 +448,7 @@ def qa_problems(meta, e, channel, image=None, online=True):
     import post_qa
     text = {"instagram": instagram_text, "telegram": telegram_text}.get(channel, lambda m, ev: m["caption"])(meta, e)
     return post_qa.card_problems(text, e["locale"], channel, store_url=store_url(e, "qa"), name="CountDaysNow",
-                                 image=image, online=online)
+                                 image=image, online=online, require_bio=True)
 
 
 def post_instagram(url, meta, e=None):

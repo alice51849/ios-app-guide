@@ -24,7 +24,8 @@ post_performance.py can rank variants.
 
 Every post carries the app's direct download link (owner rule 2026-10-17, download_links.py): the
 Instagram and Telegram captions hold the full App Store URL (plus Google Play when the app is on
-Android; an Instagram caption link is not tappable, so "link in bio" stays), the Threads video keeps
+Android; an Instagram caption link is not tappable, so the caption also says "Link in bio → tap “<app>”",
+ig_bio.py, and the profile link is the hub ig_bio_hub.py builds), the Threads video keeps
 its links in the first reply (account-limit history) and that reply is retried and checked. The QA
 gate (post_qa.py) refuses a caption without the link and ensure_download_link() is the last guard at
 the send call, so a post never goes out without it silently.
@@ -47,6 +48,7 @@ from pathlib import Path
 
 import clip_progress
 import download_links as DL
+import ig_bio as IGB
 import post_qa
 import review_links
 import search_caption as SC
@@ -160,6 +162,8 @@ def play_url(clip, channel):
 
 
 CHANNEL_CT = {"instagram": "ig", "telegram": "tg", "threads": "th"}   # ct suffix per channel (agent/ct_codes.py)
+# An Instagram surface with its own row (store_shot_cards.py carousels: h7_<app>_igc), so Reels and carousels are
+# told apart in App Store Connect; pass it as caption(..., tag=...).
 LINK_IN_CAPTION = ("instagram", "telegram")   # Threads keeps its links in the first reply
 
 
@@ -167,34 +171,36 @@ def play_label(clip):
     return PLAY_LINE.get(clip["locale"]) or PLAY_LINE.get(clip["locale"].split("-")[0]) or PLAY_LINE["en"]
 
 
-def download_urls(clip, channel):
-    """(App Store URL, Google Play URL or None) with the channel's own ct token."""
-    tag = CHANNEL_CT.get(channel, channel)
+def download_urls(clip, channel, tag=None):
+    """(App Store URL, Google Play URL or None) with the channel's own ct token (tag: another surface's suffix)."""
+    tag = tag or CHANNEL_CT.get(channel, channel)
     return with_campaign(clip["store_url"], tag), play_url(clip, tag)
 
 
-def link_lines(clip, channel):
+def link_lines(clip, channel, tag=None):
     """The "label: URL" lines that carry the direct download link(s) in a caption."""
-    store, play = download_urls(clip, channel)
+    store, play = download_urls(clip, channel, tag)
     lines = [f"{text_for(clip['locale'])['button']}: {store}"]
     if play:
         lines.append(f"{play_label(clip)}: {play}")
     return lines
 
 
-def caption(clip, channel, variant=None):
+def caption(clip, channel, variant=None, tag=None):
     """Search-first caption (search_caption.py): problem line, benefit and keyword line inside the first
-    125 characters, app name + App Store search line, then a few keyword hashtags."""
+    125 characters, app name + App Store search line, then a few keyword hashtags. tag: the ct suffix of a
+    surface with its own row (default: the channel's, CHANNEL_CT)."""
     t = text_for(clip["locale"])
     lines = SC.body(clip, variant or SC.variants(clip)[0])
     lines += [clip["name"], t["search"].format(s=clip["search"])]
     lines = SC.dedupe(lines)  # a keyline the app name already says ("可愛待辦清單" / "Mochi: 可愛待辦清單") goes
+    if channel == "instagram":
+        # The caption URL below cannot be tapped: say where to tap, the app on the profile-link hub (ig_bio.py).
+        lines.append(IGB.bio_line(clip["locale"], clip["name"], t["bio"]))
     if channel in LINK_IN_CAPTION:
-        lines += link_lines(clip, channel)  # the direct download link(s), in the text itself
+        lines += link_lines(clip, channel, tag)  # the direct download link(s), in the text itself
     elif play_store_url(ios_id(clip), "h7"):
         lines.append(play_label(clip))  # Threads: the links are in the first reply
-    if channel == "instagram":
-        lines.append(t["bio"])  # the caption link is not tappable: point to the bio link as well
     if channel == "telegram":
         # Clickable existing-user review link, only for the review_links.json pairs in their locale
         # (Threads posts carry none).
@@ -205,7 +211,7 @@ def caption(clip, channel, variant=None):
     text = "\n".join(lines)
     if channel in LINK_IN_CAPTION:
         # Keeps the links when a long caption would pass the platform limit (hashtags go first).
-        store, play = download_urls(clip, channel)
+        store, play = download_urls(clip, channel, tag)
         text = DL.ensure_download_link(text, store, play, max_len=post_qa.LIMITS.get(channel),
                                        app_store_label=t["button"], play_label=play_label(clip),
                                        label=f"{clip.get('app')}/{clip.get('locale')} {channel}")

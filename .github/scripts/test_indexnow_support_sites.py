@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import json
 from pathlib import Path
 import sys
@@ -16,6 +17,9 @@ if str(HERE) not in sys.path:
 import indexnow_support_sites as sup  # noqa: E402
 
 SITE = "https://open.cait518.cc"
+DAY1 = dt.datetime(2026, 10, 17, 5, tzinfo=dt.timezone.utc)
+DAY2 = DAY1 + dt.timedelta(days=1)
+DAY3 = DAY1 + dt.timedelta(days=2)
 KEY = "0123456789abcdef0123456789abcdef"
 ROBOTS = (
     "User-agent: *\nAllow: /\n\n"
@@ -106,7 +110,7 @@ class SupportIndexNowTest(unittest.TestCase):
             return 202
 
         with tempfile.TemporaryDirectory() as tmp:
-            receipt = sup.run(args_for(tmp), fetcher=web, sender=sender)
+            receipt = sup.run(args_for(tmp), fetcher=web, sender=sender, now=DAY1)
             m = f"{SITE}/mochitodo-support"
             expected = sorted([f"{m}/", f"{m}/help.html", f"{m}/qaimat.ar-SA.html",
                                f"{SITE}/usagenow-support/claude-usage-limit.html"])
@@ -125,15 +129,28 @@ class SupportIndexNowTest(unittest.TestCase):
 
             # 第二次：內容沒變就不送；改了一頁就只送那一頁。
             sent.clear()
-            again = sup.run(args_for(tmp), fetcher=FakeWeb(base_routes()), sender=sender)
+            again = sup.run(args_for(tmp), fetcher=FakeWeb(base_routes()), sender=sender, now=DAY2)
             self.assertEqual(0, again["selected"])
             self.assertEqual([], sent)
             routes = base_routes()
             routes[f"{m}/help.html"] = page(f"{m}/help.html", text="changed")
-            third = sup.run(args_for(tmp), fetcher=FakeWeb(routes), sender=sender)
+            third = sup.run(args_for(tmp), fetcher=FakeWeb(routes), sender=sender, now=DAY3)
             self.assertEqual(1, third["selected"])
             self.assertEqual([[f"{m}/help.html"]] * len(sup.indexnow.ENDPOINTS),
                              [p["urlList"] for _, p in sent])
+
+    def test_second_trigger_on_the_same_utc_day_is_skipped_without_fetching(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            sup.run(args_for(tmp), fetcher=FakeWeb(base_routes()), sender=lambda e, p: 202, now=DAY1)
+            web = FakeWeb(base_routes())
+            later = DAY1 + dt.timedelta(hours=11)
+            receipt = sup.run(args_for(tmp), fetcher=web, sender=lambda e, p: self.fail("must not send"), now=later)
+            self.assertEqual("already_checked_today", receipt["skipped"])
+            self.assertEqual([], web.calls)
+            # --all 不受同日限制。
+            forced = sup.run(args_for(tmp, all=True), fetcher=FakeWeb(base_routes()), sender=lambda e, p: 202,
+                             now=later)
+            self.assertEqual(4, forced["selected"])
 
     def test_head_markup_changes_do_not_trigger_a_resubmit(self):
         body = page("https://x/a.html")

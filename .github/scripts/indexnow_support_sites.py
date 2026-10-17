@@ -15,6 +15,8 @@
 2. 只收該站目錄底下、副檔名 .html 或以 / 結尾的網址，去重排序。
 3. 逐一 GET：HTTP 200、沒有轉到別的網址、沒有 noindex、canonical（若有）指回自己，才送。
 4. 用可見文字的 sha256 跟上次 state 比，只送新的或內容有變的網址（``--all`` 全送）。
+   全部重讀一次約 6,500 頁要十幾分鐘，所以同一個 UTC 日只完整檢查一次（state 的 checked_date；
+   ``--all`` 不受限），之後同日的觸發直接略過，不佔 indexnow 的 concurrency group。
 5. 每個 endpoint 都要 200／202，否則 exit 1；收據寫網址數、網址集合 digest、各 endpoint 狀態。
    IndexNow 收下通知不等於已收錄；成效看各頁 ct 碼帶來的 App Store 下載。
 """
@@ -193,6 +195,18 @@ def read_state(path: Path | None) -> dict[str, str]:
     return {str(k): str(v) for k, v in digests.items()} if isinstance(digests, dict) else {}
 
 
+def read_checked_date(path: Path | None) -> str:
+    if not path or not path.is_file():
+        return ""
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except ValueError:
+        return ""
+    if payload.get("version") != STATE_VERSION or payload.get("kind") != STATE_KIND:
+        return ""
+    return str(payload.get("checked_date") or "")
+
+
 def write_json(path: Path, payload: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
@@ -204,6 +218,16 @@ def run(args, *, fetcher=fetch, sender=indexnow.submit_endpoint, now=None) -> di
     site = args.site.rstrip("/")
     key = indexnow.read_key(Path(args.key_file))
     key_location = indexnow.key_location_for(site, key, args.key_location)
+    now = now or dt.datetime.now(dt.timezone.utc)
+    today = now.strftime("%Y-%m-%d")
+    state_path = Path(args.state_file) if args.state_file else None
+    if state_path and not args.all and not args.dry_run and read_checked_date(state_path) == today:
+        receipt = {"schema": RECEIPT_SCHEMA, "generated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "site": site,
+                   "skipped": "already_checked_today", "checked_date": today, "selected": 0,
+                   "endpoints": {}, "dry_run": False}
+        if args.receipt_file:
+            write_json(Path(args.receipt_file), receipt)
+        return receipt
     status, _, robots = fetcher(f"{site}/robots.txt")
     if status != 200 or "Sitemap:" not in robots:
         raise SupportIndexNowError(f"root robots.txt unreadable (HTTP {status})")
@@ -232,10 +256,8 @@ def run(args, *, fetcher=fetch, sender=indexnow.submit_endpoint, now=None) -> di
     if not live:
         raise SupportIndexNowError("no support URL passed the live check")
 
-    state_path = Path(args.state_file) if args.state_file else None
     previous = {} if args.all else read_state(state_path)
     selected = sorted(u for u, d in live.items() if previous.get(u) != d)
-    now = now or dt.datetime.now(dt.timezone.utc)
     receipt = {
         "schema": RECEIPT_SCHEMA,
         "generated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -266,7 +288,7 @@ def run(args, *, fetcher=fetch, sender=indexnow.submit_endpoint, now=None) -> di
     if state_path and not args.dry_run:
         merged = {} if args.all else dict(previous)
         merged.update(live)
-        write_json(state_path, {"version": STATE_VERSION, "kind": STATE_KIND,
+        write_json(state_path, {"version": STATE_VERSION, "kind": STATE_KIND, "checked_date": today,
                                 "updated_at": receipt["generated_at"], "digests": merged})
     if args.receipt_file:
         write_json(Path(args.receipt_file), receipt)
@@ -298,8 +320,8 @@ def main(argv=None) -> int:
     except (SupportIndexNowError, indexnow.SubmissionError, ValueError) as error:
         print(f"::error::support IndexNow: {error}")
         return 1
-    print(json.dumps({k: receipt[k] for k in ("support_sites", "candidates", "live", "skipped", "selected",
-                                              "dry_run")}, ensure_ascii=False))
+    print(json.dumps({k: receipt.get(k) for k in ("support_sites", "candidates", "live", "skipped", "selected",
+                                                  "dry_run")}, ensure_ascii=False))
     for endpoint, rows in receipt["endpoints"].items():
         print(f"  {endpoint}: {[row['status'] for row in rows]}")
     return 0

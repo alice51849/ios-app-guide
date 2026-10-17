@@ -1,7 +1,448 @@
 {
-  "updated_at": "2026-10-17T08:16:36Z",
+  "updated_at": "2026-10-17T09:13:52Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
+    "lumibopomofo/en": {
+      "app": "lumibopomofo",
+      "locale": "en",
+      "url": "https://files.catbox.moe/393w13.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6773017109?pt=118326163&ct=h7_lumibopomofo&mt=8",
+      "hook": "Zhuyin, but make it a game",
+      "name": "Lumi Bopomofo",
+      "search": "Lumi Bopomofo",
+      "tags": [
+        "#ChineseForKids",
+        "#LearnChinese",
+        "#MandarinForKids",
+        "#Pinyin",
+        "#Mandarin",
+        "#LumiBopomofo"
+      ],
+      "keywords": [
+        "chinese for kids",
+        "learn chinese",
+        "mandarin for kids",
+        "pinyin",
+        "mandarin",
+        "chinese characters"
+      ],
+      "keyline": "Zhuyin: Chinese Phonics Fun",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "08aa14c32edc26c3"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Zhuyin, but make it a game",
+          "benefit": "Listen, then pick the right symbol"
+        },
+        {
+          "id": "b",
+          "lead": "Listen, then pick the right symbol",
+          "benefit": "Trace each stroke with a finger"
+        },
+        {
+          "id": "c",
+          "lead": "37 friends to collect",
+          "benefit": "Listen, then pick the right symbol"
+        }
+      ]
+    },
+    "lumibopomofo/zh-Hant": {
+      "app": "lumibopomofo",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/57wx2s.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=h7_lumibopomofo&mt=8",
+      "hook": "注音 原來這麼好玩！",
+      "name": "Lumi注音星球",
+      "search": "Lumi注音星球",
+      "tags": [
+        "#注音符號",
+        "#注音拼讀",
+        "#幼兒注音",
+        "#學注音",
+        "#注音遊戲",
+        "#Lumi注音星球"
+      ],
+      "keywords": [
+        "注音符號",
+        "注音拼讀",
+        "幼兒注音",
+        "學注音",
+        "注音遊戲",
+        "注音練習"
+      ],
+      "keyline": "注音・好玩學發音",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "08aa14c32edc26c3"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "注音 原來這麼好玩！",
+          "benefit": "聽聲音 選出正確的注音"
+        },
+        {
+          "id": "b",
+          "lead": "聽聲音 選出正確的注音",
+          "benefit": "用手指 描出筆順"
+        },
+        {
+          "id": "c",
+          "lead": "37 個注音小夥伴 等你收集",
+          "benefit": "聽聲音 選出正確的注音"
+        }
+      ]
+    },
+    "lumibopomofo/ja": {
+      "app": "lumibopomofo",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/pqpjxf.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6773017109?pt=118326163&ct=h7_lumibopomofo&mt=8",
+      "hook": "注音符号を ゲームで学ぼう",
+      "name": "Lumi ボポモフォ",
+      "search": "Lumi ボポモフォ",
+      "tags": [
+        "#Zhuyin",
+        "#ピンイン",
+        "#中国語発音",
+        "#子供中国語",
+        "#中国語学習",
+        "#Lumiボポモフォ"
+      ],
+      "keywords": [
+        "zhuyin",
+        "ピンイン",
+        "中国語発音",
+        "子供中国語",
+        "中国語学習",
+        "声調"
+      ],
+      "keyline": "注音・中国語フォニックス",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "08aa14c32edc26c3"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "注音符号を ゲームで学ぼう",
+          "benefit": "音を聞いて 正しい記号を選ぶ"
+        },
+        {
+          "id": "b",
+          "lead": "音を聞いて 正しい記号を選ぶ",
+          "benefit": "指でなぞって 筆順を覚える"
+        },
+        {
+          "id": "c",
+          "lead": "37の仲間を 集めよう",
+          "benefit": "音を聞いて 正しい記号を選ぶ"
+        }
+      ]
+    },
+    "lumibopomofo/ko": {
+      "app": "lumibopomofo",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/xwbipi.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=h7_lumibopomofo&mt=8",
+      "hook": "주음부호, 게임으로 배워요",
+      "name": "Lumi 보포모포",
+      "search": "Lumi 보포모포",
+      "tags": [
+        "#Zhuyin",
+        "#병음",
+        "#중국어발음",
+        "#어린이중국어",
+        "#중국어공부",
+        "#Lumi보포모포"
+      ],
+      "keywords": [
+        "zhuyin",
+        "병음",
+        "중국어발음",
+        "어린이중국어",
+        "중국어공부",
+        "성조"
+      ],
+      "keyline": "주음·중국어 파닉스 놀이",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "08aa14c32edc26c3"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "주음부호, 게임으로 배워요",
+          "benefit": "소리를 듣고 알맞은 기호 고르기"
+        },
+        {
+          "id": "b",
+          "lead": "소리를 듣고 알맞은 기호 고르기",
+          "benefit": "손가락으로 획순 따라 쓰기"
+        },
+        {
+          "id": "c",
+          "lead": "37명의 친구 모으기",
+          "benefit": "소리를 듣고 알맞은 기호 고르기"
+        }
+      ]
+    },
+    "lumibopomofo/vi": {
+      "app": "lumibopomofo",
+      "locale": "vi",
+      "url": "https://files.catbox.moe/2sdvwh.mp4",
+      "store_url": "https://apps.apple.com/vn/app/id6773017109?pt=118326163&ct=h7_lumibopomofo&mt=8",
+      "hook": "Học Zhuyin như chơi game",
+      "name": "Lumi Bopomofo",
+      "search": "Lumi Bopomofo",
+      "tags": [
+        "#tiếngtrungchobé",
+        "#họctiếngtrung",
+        "#tiếnghoa",
+        "#PhiênÂm",
+        "#Pinyin",
+        "#LumiBopomofo"
+      ],
+      "keywords": [
+        "tiếng trung cho bé",
+        "học tiếng trung",
+        "tiếng hoa",
+        "phiên âm",
+        "pinyin",
+        "thanh điệu"
+      ],
+      "keyline": "Zhuyin: ngữ âm tiếng Trung",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "08aa14c32edc26c3"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Học Zhuyin như chơi game",
+          "benefit": "Nghe rồi chọn ký hiệu đúng"
+        },
+        {
+          "id": "b",
+          "lead": "Nghe rồi chọn ký hiệu đúng",
+          "benefit": "Dùng ngón tay tô từng nét"
+        },
+        {
+          "id": "c",
+          "lead": "37 người bạn để sưu tầm",
+          "benefit": "Nghe rồi chọn ký hiệu đúng"
+        }
+      ]
+    },
+    "battai/en": {
+      "app": "battai",
+      "locale": "en",
+      "url": "https://files.catbox.moe/2yedq5.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=h7_battai&mt=8",
+      "hook": "When will battery health hit 80%?",
+      "name": "BattAI: Battery Health & Life",
+      "search": "BattAI Battery Health",
+      "tags": [
+        "#BatteryHealthScore",
+        "#MaximumCapacity",
+        "#Cycles",
+        "#ChargeCare",
+        "#ChargeRange",
+        "#BattAIBatteryHealth"
+      ],
+      "keywords": [
+        "Battery health score",
+        "Maximum capacity",
+        "Cycles",
+        "Charge care",
+        "Charge range",
+        "Charge rate"
+      ],
+      "keyline": "Clear rules, sources, and limits",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "922844988a1008d7"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "When will battery health hit 80%?",
+          "benefit": "A health score, and what shapes it"
+        },
+        {
+          "id": "b",
+          "lead": "A health score, and what shapes it",
+          "benefit": "Max capacity trend and cycle count"
+        },
+        {
+          "id": "c",
+          "lead": "A clear report for service or resale",
+          "benefit": "A health score, and what shapes it"
+        }
+      ]
+    },
+    "battai/zh-Hant": {
+      "app": "battai",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/n2ybth.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=h7_battai&mt=8",
+      "hook": "電池健康度 哪天掉到 80%？",
+      "name": "BattAI: 電池健康分數",
+      "search": "BattAI 電池健康",
+      "tags": [
+        "#電池健康分數",
+        "#最大容量",
+        "#循環次數",
+        "#充電保養",
+        "#充電區間",
+        "#BattAI電池健康"
+      ],
+      "keywords": [
+        "電池健康分數",
+        "最大容量",
+        "循環次數",
+        "充電保養",
+        "充電區間",
+        "充電速率"
+      ],
+      "keyline": "規則、來源與限制都說清楚",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "922844988a1008d7"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "電池健康度 哪天掉到 80%？",
+          "benefit": "電池健康分數 連評分依據都看得到"
+        },
+        {
+          "id": "b",
+          "lead": "電池健康分數 連評分依據都看得到",
+          "benefit": "最大容量趨勢 ＋循環次數"
+        },
+        {
+          "id": "c",
+          "lead": "送修、二手轉賣 都用得上的電池報告",
+          "benefit": "電池健康分數 連評分依據都看得到"
+        }
+      ]
+    },
+    "battai/ja": {
+      "app": "battai",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/tmc5xw.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=h7_battai&mt=8",
+      "hook": "バッテリー最大容量 いつ80%を切る？",
+      "name": "BattAI: バッテリー状態スコア",
+      "search": "BattAI バッテリー",
+      "tags": [
+        "#バッテリー状態スコア",
+        "#最大容量",
+        "#充放電回数",
+        "#充電ケア",
+        "#充電範囲",
+        "#BattAIバッテリー"
+      ],
+      "keywords": [
+        "バッテリー状態スコア",
+        "最大容量",
+        "充放電回数",
+        "充電ケア",
+        "充電範囲",
+        "充電速度"
+      ],
+      "keyline": "バッテリー状態スコア",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "922844988a1008d7"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "バッテリー最大容量 いつ80%を切る？",
+          "benefit": "状態スコアと その要因まで"
+        },
+        {
+          "id": "b",
+          "lead": "状態スコアと その要因まで",
+          "benefit": "最大容量の推移と サイクル数"
+        },
+        {
+          "id": "c",
+          "lead": "修理や売却に使える 電池レポート",
+          "benefit": "状態スコアと その要因まで"
+        }
+      ]
+    },
+    "battai/ko": {
+      "app": "battai",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/3o00cw.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=h7_battai&mt=8",
+      "hook": "배터리 성능 최대치 언제 80% 깨질까?",
+      "name": "BattAI: 배터리 상태 점수",
+      "search": "BattAI 배터리",
+      "tags": [
+        "#배터리상태점수",
+        "#성능최대치",
+        "#사이클수",
+        "#충전관리",
+        "#충전구간",
+        "#BattAI배터리"
+      ],
+      "keywords": [
+        "배터리 상태 점수",
+        "성능 최대치",
+        "사이클 수",
+        "충전 관리",
+        "충전 구간",
+        "충전 속도"
+      ],
+      "keyline": "배터리 상태 점수",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "922844988a1008d7"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "배터리 성능 최대치 언제 80% 깨질까?",
+          "benefit": "배터리 상태 점수와 점수를 만드는 요소"
+        },
+        {
+          "id": "b",
+          "lead": "배터리 상태 점수와 점수를 만드는 요소",
+          "benefit": "성능 최대치 추세와 사이클 수"
+        },
+        {
+          "id": "c",
+          "lead": "수리·중고 판매에 쓰는 배터리 리포트",
+          "benefit": "배터리 상태 점수와 점수를 만드는 요소"
+        }
+      ]
+    },
     "ledmovingtext/en": {
       "app": "ledmovingtext",
       "locale": "en",
@@ -293,6 +734,251 @@
           "id": "c",
           "lead": "ตัวอักษรสีรุ้งและไล่เฉดสี 108 สี",
           "benefit": "อยู่ไกลแค่ไหน ก็มองเห็นชัด"
+        }
+      ]
+    },
+    "snapport/en": {
+      "app": "snapport",
+      "locale": "en",
+      "url": "https://files.catbox.moe/151l96.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6780575828?pt=118326163&ct=h7_snapport&mt=8",
+      "hook": "Passport photo? Take it at home",
+      "name": "Snapport: Passport & ID Photos",
+      "search": "Snapport",
+      "tags": [
+        "#PassportIDPhotos",
+        "#Biometric",
+        "#GreenCardPhoto",
+        "#Student",
+        "#BadgePhoto",
+        "#Snapport"
+      ],
+      "keywords": [
+        "biometric",
+        "green card photo",
+        "student",
+        "badge photo",
+        "template",
+        "layout"
+      ],
+      "keyline": "Passport ID Visa Photos",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "411ada8d11fb0e9b"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Passport photo? Take it at home",
+          "benefit": "Guides for head, eyes and chin"
+        },
+        {
+          "id": "b",
+          "lead": "Guides for head, eyes and chin",
+          "benefit": "Background: white, gray, blue or red"
+        },
+        {
+          "id": "c",
+          "lead": "All on your iPhone, never uploaded",
+          "benefit": "Guides for head, eyes and chin"
+        }
+      ]
+    },
+    "snapport/zh-Hant": {
+      "app": "snapport",
+      "locale": "zh-Hant",
+      "url": "https://files.catbox.moe/fz2vi7.mp4",
+      "store_url": "https://apps.apple.com/tw/app/id6780575828?pt=118326163&ct=h7_snapport&mt=8",
+      "hook": "護照照片 在家就能拍",
+      "name": "Snapport: 護照證件照",
+      "search": "Snapport",
+      "tags": [
+        "#護照證件照",
+        "#證件照",
+        "#護照照片",
+        "#簽證照片",
+        "#大頭照",
+        "#Snapport"
+      ],
+      "keywords": [
+        "證件照",
+        "護照照片",
+        "簽證照片",
+        "大頭照",
+        "身分證照片",
+        "台胞證照片"
+      ],
+      "keyline": "大頭照排版・台胞證白底照片",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "411ada8d11fb0e9b"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "護照照片 在家就能拍",
+          "benefit": "頭頂、眼線、下巴 對齊線"
+        },
+        {
+          "id": "b",
+          "lead": "頭頂、眼線、下巴 對齊線",
+          "benefit": "背景換成白色 灰、藍、紅也行"
+        },
+        {
+          "id": "c",
+          "lead": "全程在 iPhone 處理 不上傳",
+          "benefit": "頭頂、眼線、下巴 對齊線"
+        }
+      ]
+    },
+    "snapport/ja": {
+      "app": "snapport",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/49woim.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=h7_snapport&mt=8",
+      "hook": "パスポート写真、 自宅で撮れる",
+      "name": "Snapport: パスポート証明写真",
+      "search": "Snapport",
+      "tags": [
+        "#パスポート証明写真",
+        "#パスポート写真",
+        "#ビザ写真",
+        "#履歴書写真",
+        "#マイナンバー写真",
+        "#Snapport"
+      ],
+      "keywords": [
+        "パスポート写真",
+        "ビザ写真",
+        "履歴書写真",
+        "マイナンバー写真",
+        "免許証写真",
+        "学生証写真"
+      ],
+      "keyline": "学生証・社員証の写真も自宅で撮影",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "411ada8d11fb0e9b"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "パスポート写真、自宅で撮れる",
+          "benefit": "頭頂・目線・あごの ガイドに合わせる"
+        },
+        {
+          "id": "b",
+          "lead": "頭頂・目線・あごの ガイドに合わせる",
+          "benefit": "背景を白に グレー・青・赤も"
+        },
+        {
+          "id": "c",
+          "lead": "すべてiPhone上で処理 アップロードなし",
+          "benefit": "頭頂・目線・あごの ガイドに合わせる"
+        }
+      ]
+    },
+    "snapport/ko": {
+      "app": "snapport",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/cz01r6.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=h7_snapport&mt=8",
+      "hook": "여권 사진, 집에서 찍어요",
+      "name": "Snapport: 여권·신분증 사진",
+      "search": "Snapport",
+      "tags": [
+        "#여권신분증사진",
+        "#여권사진",
+        "#비자사진",
+        "#신분증사진",
+        "#민증사진",
+        "#Snapport"
+      ],
+      "keywords": [
+        "여권사진",
+        "비자사진",
+        "신분증사진",
+        "민증사진",
+        "이력서사진",
+        "학생증사진"
+      ],
+      "keyline": "여권 비자 증명사진",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "411ada8d11fb0e9b"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "여권 사진, 집에서 찍어요",
+          "benefit": "머리 위, 눈높이, 턱 가이드에 맞춰요"
+        },
+        {
+          "id": "b",
+          "lead": "머리 위, 눈높이, 턱 가이드에 맞춰요",
+          "benefit": "배경을 흰색으로 회색·파랑·빨강도"
+        },
+        {
+          "id": "c",
+          "lead": "모두 아이폰 안에서 업로드 없음",
+          "benefit": "머리 위, 눈높이, 턱 가이드에 맞춰요"
+        }
+      ]
+    },
+    "snapport/de": {
+      "app": "snapport",
+      "locale": "de",
+      "url": "https://files.catbox.moe/ojgb2p.mp4",
+      "store_url": "https://apps.apple.com/de/app/id6780575828?pt=118326163&ct=h7_snapport&mt=8",
+      "hook": "Visumfoto? Mach es zu Hause",
+      "name": "Snapport: Pass- & Ausweisfoto",
+      "search": "Snapport",
+      "tags": [
+        "#PassAusweisfoto",
+        "#Passbild",
+        "#BiometrischesPassbild",
+        "#Passfoto",
+        "#VisumFoto",
+        "#Snapport"
+      ],
+      "keywords": [
+        "passbild",
+        "biometrisches passbild",
+        "passfoto",
+        "visum foto",
+        "ausweisfoto",
+        "bewerbungsfoto"
+      ],
+      "keyline": "Passbild für Ausweis Visum",
+      "duration": 13.5,
+      "compliance": {
+        "real_recording": true,
+        "screen_text_ok": true,
+        "board": "411ada8d11fb0e9b"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Visumfoto? Mach es zu Hause",
+          "benefit": "Linien für Kopf, Augen und Kinn"
+        },
+        {
+          "id": "b",
+          "lead": "Linien für Kopf, Augen und Kinn",
+          "benefit": "Hintergrund: Weiß, Grau, Blau oder Rot"
+        },
+        {
+          "id": "c",
+          "lead": "Alles auf dem iPhone, nie hochgeladen",
+          "benefit": "Linien für Kopf, Augen und Kinn"
         }
       ]
     },
@@ -892,84 +1578,6 @@
           "#독해",
           "#어법",
           "#Aim990"
-        ]
-      }
-    },
-    "battai": {
-      "en": {
-        "keywords": [
-          "Battery health score",
-          "Maximum capacity",
-          "Cycles",
-          "Charge care",
-          "Charge range",
-          "Charge rate"
-        ],
-        "keyline": "Battery health score",
-        "tags": [
-          "#BatteryHealthScore",
-          "#MaximumCapacity",
-          "#Cycles",
-          "#ChargeCare",
-          "#ChargeRange",
-          "#BattAIBatteryHealth"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "電池健康分數",
-          "最大容量",
-          "循環次數",
-          "充電保養",
-          "充電區間",
-          "充電速率"
-        ],
-        "keyline": "電池健康分數",
-        "tags": [
-          "#電池健康分數",
-          "#最大容量",
-          "#循環次數",
-          "#充電保養",
-          "#充電區間",
-          "#BattAI電池健康"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "バッテリー状態スコア",
-          "最大容量",
-          "充放電回数",
-          "充電ケア",
-          "充電範囲",
-          "充電速度"
-        ],
-        "keyline": "バッテリー状態スコア",
-        "tags": [
-          "#バッテリー状態スコア",
-          "#最大容量",
-          "#充放電回数",
-          "#充電ケア",
-          "#充電範囲",
-          "#BattAIバッテリー"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "배터리 상태 점수",
-          "성능 최대치",
-          "사이클 수",
-          "충전 관리",
-          "충전 구간",
-          "충전 속도"
-        ],
-        "keyline": "배터리 상태 점수",
-        "tags": [
-          "#배터리상태점수",
-          "#성능최대치",
-          "#사이클수",
-          "#충전관리",
-          "#충전구간",
-          "#BattAI배터리"
         ]
       }
     },
@@ -1828,84 +2436,6 @@
           "#스크린타임",
           "#뽀모도로",
           "#LockHourPro앱차단"
-        ]
-      }
-    },
-    "lumibopomofo": {
-      "en": {
-        "keywords": [
-          "chinese for kids",
-          "learn chinese",
-          "mandarin for kids",
-          "pinyin",
-          "mandarin",
-          "chinese characters"
-        ],
-        "keyline": "chinese for kids · learn chinese · mandarin for kids",
-        "tags": [
-          "#ChineseForKids",
-          "#LearnChinese",
-          "#MandarinForKids",
-          "#Pinyin",
-          "#Mandarin",
-          "#LumiBopomofo"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "注音符號",
-          "注音拼讀",
-          "幼兒注音",
-          "學注音",
-          "注音遊戲",
-          "注音練習"
-        ],
-        "keyline": "注音符號 · 注音拼讀 · 幼兒注音",
-        "tags": [
-          "#注音符號",
-          "#注音拼讀",
-          "#幼兒注音",
-          "#學注音",
-          "#注音遊戲",
-          "#Lumi注音星球"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "zhuyin",
-          "ピンイン",
-          "中国語発音",
-          "子供中国語",
-          "中国語学習",
-          "声調"
-        ],
-        "keyline": "zhuyin · ピンイン · 中国語発音",
-        "tags": [
-          "#Zhuyin",
-          "#ピンイン",
-          "#中国語発音",
-          "#子供中国語",
-          "#中国語学習",
-          "#Lumiボポモフォ"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "zhuyin",
-          "병음",
-          "중국어발음",
-          "어린이중국어",
-          "중국어공부",
-          "성조"
-        ],
-        "keyline": "zhuyin · 병음 · 중국어발음",
-        "tags": [
-          "#Zhuyin",
-          "#병음",
-          "#중국어발음",
-          "#어린이중국어",
-          "#중국어공부",
-          "#Lumi보포모포"
         ]
       }
     },
@@ -3547,84 +4077,6 @@
         ]
       }
     },
-    "snapport": {
-      "en": {
-        "keywords": [
-          "biometric",
-          "green card photo",
-          "student",
-          "badge photo",
-          "template",
-          "layout"
-        ],
-        "keyline": "Passport & ID Photos",
-        "tags": [
-          "#PassportIDPhotos",
-          "#Biometric",
-          "#GreenCardPhoto",
-          "#Student",
-          "#BadgePhoto",
-          "#Snapport"
-        ]
-      },
-      "zh-Hant": {
-        "keywords": [
-          "證件照",
-          "護照照片",
-          "簽證照片",
-          "大頭照",
-          "身分證照片",
-          "台胞證照片"
-        ],
-        "keyline": "大頭照排版・台胞證白底照片",
-        "tags": [
-          "#護照證件照",
-          "#證件照",
-          "#護照照片",
-          "#簽證照片",
-          "#大頭照",
-          "#Snapport"
-        ]
-      },
-      "ja": {
-        "keywords": [
-          "パスポート写真",
-          "ビザ写真",
-          "履歴書写真",
-          "マイナンバー写真",
-          "免許証写真",
-          "学生証写真"
-        ],
-        "keyline": "パスポート証明写真",
-        "tags": [
-          "#パスポート証明写真",
-          "#パスポート写真",
-          "#ビザ写真",
-          "#履歴書写真",
-          "#マイナンバー写真",
-          "#Snapport"
-        ]
-      },
-      "ko": {
-        "keywords": [
-          "여권사진",
-          "비자사진",
-          "신분증사진",
-          "민증사진",
-          "이력서사진",
-          "학생증사진"
-        ],
-        "keyline": "여권·신분증 사진",
-        "tags": [
-          "#여권신분증사진",
-          "#여권사진",
-          "#비자사진",
-          "#신분증사진",
-          "#민증사진",
-          "#Snapport"
-        ]
-      }
-    },
     "snapportlite": {
       "en": {
         "keywords": [
@@ -4755,25 +5207,63 @@
       "date": "2026-10-17",
       "slot": 15,
       "channel": "instagram",
-      "clip": "hourstaglite/en"
+      "clip": "snapport/en"
     },
     {
       "date": "2026-10-17",
       "slot": 15,
       "channel": "telegram",
-      "clip": "hourstaglite/en"
+      "clip": "snapport/en"
+    },
+    {
+      "date": "2026-10-18",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "battai/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-18",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "battai/zh-Hant"
     },
     {
       "date": "2026-10-18",
       "slot": 1,
       "channel": "threads",
-      "clip": "ledmovingtext/zh-Hant"
+      "clip": "snapport/zh-Hant"
+    },
+    {
+      "date": "2026-10-18",
+      "slot": 9,
+      "channel": "instagram",
+      "clip": "hourstaglite/en"
+    },
+    {
+      "date": "2026-10-18",
+      "slot": 9,
+      "channel": "telegram",
+      "clip": "lumibopomofo/en",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-18",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "hourstaglite/en"
+    },
+    {
+      "date": "2026-10-19",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumibopomofo/ja"
     },
     {
       "date": "2026-10-19",
       "slot": 1,
       "channel": "threads",
-      "clip": "hourstaglite/zh-Hant"
+      "clip": "ledmovingtext/zh-Hant"
     },
     {
       "date": "2026-10-19",
@@ -4786,7 +5276,7 @@
       "date": "2026-10-20",
       "slot": 1,
       "channel": "instagram",
-      "clip": "ledmovingtext/zh-Hant"
+      "clip": "snapport/zh-Hant"
     },
     {
       "date": "2026-10-20",
@@ -4799,13 +5289,19 @@
       "date": "2026-10-20",
       "slot": 1,
       "channel": "threads",
-      "clip": "claudeusagemini/en"
+      "clip": "battai/zh-Hant"
+    },
+    {
+      "date": "2026-10-20",
+      "slot": 9,
+      "channel": "telegram",
+      "clip": "snapport/de"
     },
     {
       "date": "2026-10-20",
       "slot": 12,
       "channel": "instagram",
-      "clip": "hourstaglite/zh-Hant"
+      "clip": "ledmovingtext/zh-Hant"
     },
     {
       "date": "2026-10-20",
@@ -4816,14 +5312,45 @@
     {
       "date": "2026-10-21",
       "slot": 1,
+      "channel": "instagram",
+      "clip": "lumibopomofo/ko"
+    },
+    {
+      "date": "2026-10-21",
+      "slot": 1,
       "channel": "telegram",
-      "clip": "hourstaglite/zh-Hant"
+      "clip": "lumibopomofo/ja",
+      "sprint": true
     },
     {
       "date": "2026-10-21",
       "slot": 1,
       "channel": "threads",
-      "clip": "hourstaglite/en"
+      "clip": "hourstaglite/zh-Hant"
+    },
+    {
+      "date": "2026-10-21",
+      "slot": 9,
+      "channel": "instagram",
+      "clip": "battai/zh-Hant"
+    },
+    {
+      "date": "2026-10-21",
+      "slot": 12,
+      "channel": "instagram",
+      "clip": "hourstaglite/zh-Hant"
+    },
+    {
+      "date": "2026-10-21",
+      "slot": 12,
+      "channel": "telegram",
+      "clip": "hourstaglite/zh-Hant"
+    },
+    {
+      "date": "2026-10-21",
+      "slot": 15,
+      "channel": "telegram",
+      "clip": "battai/en"
     },
     {
       "date": "2026-10-22",
@@ -4836,7 +5363,13 @@
       "date": "2026-10-22",
       "slot": 1,
       "channel": "threads",
-      "clip": "ledmovingtext/en"
+      "clip": "lumibopomofo/en"
+    },
+    {
+      "date": "2026-10-23",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumibopomofo/vi"
     },
     {
       "date": "2026-10-23",
@@ -4844,6 +5377,24 @@
       "channel": "telegram",
       "clip": "claudeusagemini/ko",
       "sprint": true
+    },
+    {
+      "date": "2026-10-23",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "hourstaglite/en"
+    },
+    {
+      "date": "2026-10-23",
+      "slot": 9,
+      "channel": "instagram",
+      "clip": "snapport/de"
+    },
+    {
+      "date": "2026-10-23",
+      "slot": 9,
+      "channel": "telegram",
+      "clip": "snapport/zh-Hant"
     },
     {
       "date": "2026-10-23",
@@ -4856,6 +5407,25 @@
       "slot": 15,
       "channel": "telegram",
       "clip": "ledmovingtext/en"
+    },
+    {
+      "date": "2026-10-24",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumibopomofo/ko",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-24",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "claudeusagemini/en"
+    },
+    {
+      "date": "2026-10-24",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "battai/en"
     },
     {
       "date": "2026-10-25",
@@ -4865,10 +5435,60 @@
       "sprint": true
     },
     {
+      "date": "2026-10-25",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "battai/ja",
+      "sprint": true
+    },
+    {
+      "date": "2026-10-25",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "snapport/en"
+    },
+    {
+      "date": "2026-10-26",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "snapport/ja"
+    },
+    {
+      "date": "2026-10-26",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumibopomofo/vi"
+    },
+    {
+      "date": "2026-10-26",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "ledmovingtext/en"
+    },
+    {
+      "date": "2026-10-26",
+      "slot": 9,
+      "channel": "instagram",
+      "clip": "lumibopomofo/en",
+      "sprint": true
+    },
+    {
       "date": "2026-10-26",
       "slot": 9,
       "channel": "telegram",
       "clip": "claudeusagemini/de"
+    },
+    {
+      "date": "2026-10-26",
+      "slot": 12,
+      "channel": "telegram",
+      "clip": "snapport/ja"
+    },
+    {
+      "date": "2026-10-27",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "battai/en"
     },
     {
       "date": "2026-10-28",
@@ -4877,7 +5497,19 @@
       "clip": "claudeusagemini/de"
     },
     {
-      "date": "2026-12-04",
+      "date": "2026-10-29",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "snapport/ko"
+    },
+    {
+      "date": "2026-10-29",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "snapport/ko"
+    },
+    {
+      "date": "2026-12-05",
       "slot": 1,
       "channel": "instagram",
       "clip": "hourstaglite/ja",
@@ -4902,6 +5534,20 @@
       "slot": 1,
       "channel": "telegram",
       "clip": "ledmovingtext/ja",
+      "variant_repost": true
+    },
+    {
+      "date": "2026-12-08",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "battai/ko",
+      "variant_repost": true
+    },
+    {
+      "date": "2026-12-09",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "battai/ko",
       "variant_repost": true
     }
   ]

@@ -22,6 +22,14 @@ name: Hook clip backup posts
 # crons): 1, 9, 12, 15, 18 and 22 UTC; a backup for a slot clips.json does not
 # plan (an earlier ramp stage) finds nothing and posts nothing. The 00:47 run
 # backs up the previous day's 22:xx slot.
+# run-name records the slot's cron (also on a catch-up the Mac's cron dispatcher,
+# 00_GrowthEngine tools/cron_dispatcher, starts when GitHub dropped the cron), so
+# social_slot_gate.py and the dispatcher tell which slot a run was for however
+# late it started.
+run-name: >-
+  ${{ (github.event.schedule || inputs.cron)
+  && format('Hook clip backup posts · cron {0}', github.event.schedule || inputs.cron)
+  || 'Hook clip backup posts' }}
 on:
   schedule:
     - cron: '47 0 * * *'    # after the 22:xx slot (US evening) of the day before
@@ -39,6 +47,9 @@ on:
       date:
         description: "UTC date YYYY-MM-DD of that clip slot (empty = today)"
         required: false
+        default: ""
+      cron:
+        description: "Cron dispatcher only: the missed schedule this run replaces, e.g. 47 3 * * *; runs like that scheduled run, slot gate included"
         default: ""
 
 permissions:
@@ -62,11 +73,12 @@ jobs:
       - name: Which slot
         id: slot
         env:
-          SCHEDULE: ${{ github.event.schedule }}
+          SCHEDULE: ${{ github.event.schedule || inputs.cron }}
           MANUAL_SLOT: ${{ inputs.slot }}
           MANUAL_DATE: ${{ inputs.date }}
         run: |
-          # The cron that fired decides the slot and its date, however late it runs.
+          # The cron that fired (or the one a catch-up dispatch names) decides the slot
+          # and its date, however late it runs.
           back=0
           case "$SCHEDULE" in
             "47 0 * * *")  s=22; fired="00:47"; back=1 ;;   # the slot was on the day before

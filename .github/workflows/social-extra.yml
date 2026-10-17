@@ -32,6 +32,14 @@ name: Social extra daily
 # FORCE_GUIDE_YOUTUBE=1 is set, so secrets added here cannot double-post.
 # Manual run: mode=whoami checks every configured account without posting;
 # dry_run=true prints what would go out.
+# run-name records the slot's cron (also on a catch-up the Mac's cron dispatcher,
+# 00_GrowthEngine tools/cron_dispatcher, starts when GitHub dropped the cron), so
+# social_slot_gate.py and the dispatcher tell which slot a run was for however
+# late it started.
+run-name: >-
+  ${{ (github.event.schedule || inputs.cron)
+  && format('Social extra daily · cron {0}', github.event.schedule || inputs.cron)
+  || 'Social extra daily' }}
 on:
   schedule:
     - cron: "50 1 * * *"   # slot 1: after the Asia-morning clip posts
@@ -53,6 +61,9 @@ on:
       slot:
         description: "clips.json slot (1 or 15); auto = by UTC hour"
         default: "auto"
+      cron:
+        description: "Cron dispatcher only: the missed schedule this run replaces, e.g. 50 1 * * *; runs like that scheduled run, slot gate included"
+        default: ""
 
 permissions:
   actions: read
@@ -77,19 +88,21 @@ jobs:
           python-version: "3.x"
       - name: Prevent duplicate UTC slot
         id: slot
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' || inputs.cron != ''
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          SLOT_SCHEDULE: ${{ github.event.schedule || inputs.cron }}
         run: >-
           python3 .github/scripts/social_slot_gate.py
           --workflow social-extra.yml
           --slots 1,15
+          --schedule "$SLOT_SCHEDULE"
       - name: Test
         run: |
           pip install -q pillow
           python3 .github/scripts/test_social_extra.py -q
       - name: Post
-        if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
+        if: (github.event_name == 'workflow_dispatch' && inputs.cron == '') || steps.slot.outputs.should_post == 'true'
         env:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
@@ -119,11 +132,11 @@ jobs:
           DM_API_SECRET: ${{ secrets.DM_API_SECRET }}
           DM_USERNAME: ${{ secrets.DM_USERNAME }}
           DM_PASSWORD: ${{ secrets.DM_PASSWORD }}
-          SCHEDULE: ${{ github.event.schedule }}
+          SCHEDULE: ${{ github.event.schedule || inputs.cron }}
           CHANNEL: ${{ inputs.channel }}
           MODE: ${{ inputs.mode }}
           DRY_RUN: ${{ inputs.dry_run }}
-          MANUAL_SLOT: ${{ inputs.slot }}
+          MANUAL_SLOT: ${{ inputs.cron == '' && inputs.slot || '' }}
         run: |
           SLOT="${MANUAL_SLOT:-$(echo "$SCHEDULE" | awk '{print $2}')}"
           python3 .github/scripts/social_extra.py "${MODE:-post}" --channel "${CHANNEL:-all}" --slot "${SLOT:-auto}" \
@@ -156,7 +169,7 @@ jobs:
           done
           echo "::warning::could not publish feed.json"; exit 1
       - name: Record the post links on the promotion page
-        if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
+        if: (github.event_name == 'workflow_dispatch' && inputs.cron == '') || steps.slot.outputs.should_post == 'true'
         continue-on-error: true
         run: |
           if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi

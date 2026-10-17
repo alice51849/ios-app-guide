@@ -69,6 +69,7 @@ TZ_LANGS = {
 REPOSITORY = "alice51849/ios-app-guide"
 PUBLIC_CHANNEL = "LumiApps2026"
 LEDGER_BRANCH = "telegram-native-ledger"
+PRODUCTION_EVENTS = ("schedule", "workflow_dispatch")
 LEDGER_FILE = "telegram-ledger.json"
 RUN_EVIDENCE = Path(".telegram-ledger-run")
 SLOT_HOURS = (1, 9, 15)
@@ -893,14 +894,18 @@ def production_context(now=None):
     now = now or _dt.datetime.now(_dt.timezone.utc)
     expected = {
         "GITHUB_ACTIONS": "true",
-        "GITHUB_EVENT_NAME": "schedule",
         "GITHUB_REPOSITORY": REPOSITORY,
         "GITHUB_REF": "refs/heads/main",
         "GITHUB_WORKFLOW_REF": (
             f"{REPOSITORY}/.github/workflows/telegram-daily.yml@refs/heads/main"
         ),
     }
-    if any(os.environ.get(key) != value for key, value in expected.items()):
+    # The natural slot, or the cron dispatcher's catch-up when GitHub dropped it
+    # (workflow_dispatch with cron = TELEGRAM_SCHEDULE). Either way the slot
+    # below must be the one the clock is in, and the ledger keeps one intent a slot.
+    if os.environ.get("GITHUB_EVENT_NAME") not in PRODUCTION_EVENTS or any(
+        os.environ.get(key) != value for key, value in expected.items()
+    ):
         raise ValueError("only the production scheduled Telegram owner may publish")
     slot = _timestamp(os.environ.get("TELEGRAM_SLOT"))
     if (
@@ -1488,14 +1493,28 @@ def self_test():
                 mock.patch.object(subprocess, "run"),
             ):
                 self.assertEqual("1" * 40, production_context(self.now)["source_sha"])
+                # The cron dispatcher's catch-up of the current slot is that slot's run.
+                with mock.patch.dict(os.environ, {"GITHUB_EVENT_NAME": "workflow_dispatch"}):
+                    self.assertEqual("1" * 40, production_context(self.now)["source_sha"])
+                other = (slot.hour + 8) % 24
                 for key, value in (
-                    ("GITHUB_EVENT_NAME", "workflow_dispatch"),
+                    ("GITHUB_EVENT_NAME", "push"),
+                    ("GITHUB_EVENT_NAME", "workflow_run"),
+                    ("GITHUB_EVENT_NAME", "pull_request"),
+                    ("GITHUB_EVENT_NAME", ""),
                     ("GITHUB_REF", "refs/heads/feature/test"),
                     ("GITHUB_SHA", "9" * 40),
                     ("TELEGRAM_SCHEDULE", "0 23 * * *"),
                     ("GITHUB_RUN_ATTEMPT", "0"),
                 ):
                     with self.subTest(key=key), mock.patch.dict(os.environ, {key: value}):
+                        with self.assertRaises(ValueError):
+                            production_context(self.now)
+                # A catch-up can never name another slot, or none.
+                for schedule in (f"0 {other} * * *", ""):
+                    with self.subTest(schedule=schedule), mock.patch.dict(
+                        os.environ, {"GITHUB_EVENT_NAME": "workflow_dispatch", "TELEGRAM_SCHEDULE": schedule},
+                    ):
                         with self.assertRaises(ValueError):
                             production_context(self.now)
 

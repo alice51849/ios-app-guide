@@ -12,6 +12,14 @@ name: Instagram Reels daily clip
 # 19:20, 18 = New York 14:20 / LA 11:20. clip_posts.py checks the day's
 # allowance before posting; a rate-limit / block answer from Instagram drops the
 # channel one stage (volume_ramp.py) and opens a volume-throttle issue.
+# run-name records the slot's cron (also on a catch-up the Mac's cron dispatcher,
+# 00_GrowthEngine tools/cron_dispatcher, starts when GitHub dropped the cron), so
+# social_slot_gate.py and the dispatcher tell which slot a run was for however
+# late it started.
+run-name: >-
+  ${{ (github.event.schedule || inputs.cron)
+  && format('Instagram Reels daily clip · cron {0}', github.event.schedule || inputs.cron)
+  || 'Instagram Reels daily clip' }}
 on:
   schedule:
     - cron: "20 1 * * *"   # 09:20 Taiwan / Japan / Korea
@@ -26,6 +34,9 @@ on:
       slot:
         description: "Audience slot (UTC hour: 1, 9, 12, 15, 18 or 22)"
         default: "1"
+      cron:
+        description: "Cron dispatcher only: the missed schedule this run replaces, e.g. 20 1 * * *; runs like that scheduled run, slot gate included"
+        default: ""
 
 permissions:
   actions: read
@@ -51,32 +62,36 @@ jobs:
           python-version: "3.x"
       - name: Prevent duplicate UTC slot
         id: slot
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' || inputs.cron != ''
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          SLOT_SCHEDULE: ${{ github.event.schedule || inputs.cron }}
         run: >-
           python3 .github/scripts/social_slot_gate.py
           --workflow reels-daily.yml
           --slots 1,9,12,15,18,22
+          --schedule "$SLOT_SCHEDULE"
       - name: Test
         run: |
           python3 .github/scripts/test_volume_ramp.py -q
           python3 .github/scripts/test_clip_posts.py -q
       - name: Post Reel
-        if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
+        if: (github.event_name == 'workflow_dispatch' && inputs.cron == '') || steps.slot.outputs.should_post == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          SCHEDULE: ${{ github.event.schedule }}
-          MANUAL_SLOT: ${{ inputs.slot }}
+          SCHEDULE: ${{ github.event.schedule || inputs.cron }}
+          MANUAL_SLOT: ${{ inputs.cron == '' && inputs.slot || '' }}
+          SLOT_DATE: ${{ steps.slot.outputs.date }}
         run: |
+          # The slot's own date: a 22:20 run that starts after UTC midnight posts that evening's clip.
           SLOT="${MANUAL_SLOT:-$(echo "$SCHEDULE" | awk '{print $2}')}"
-          python3 .github/scripts/clip_posts.py instagram --slot "$SLOT"
+          python3 .github/scripts/clip_posts.py instagram --slot "$SLOT" ${SLOT_DATE:+--date "$SLOT_DATE"}
       - name: Record the post link on the promotion page (and any throttle)
         # office.cait518.cc lists every clip post; clip_posts.py wrote the
         # link to clip-posts.json and refreshed app-improvements.json. Runs even
         # when the post failed, so a throttle written to volume-ramp.json lands.
-        if: always() && (github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true')
+        if: always() && ((github.event_name == 'workflow_dispatch' && inputs.cron == '') || steps.slot.outputs.should_post == 'true')
         continue-on-error: true
         run: |
           if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json .github/growth/volume-ramp.json)" ]; then echo "nothing posted"; exit 0; fi

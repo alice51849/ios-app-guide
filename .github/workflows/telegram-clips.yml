@@ -10,6 +10,14 @@ name: Telegram extra clip slots
 # day's allowance first, and never re-posts a clip (clip-posts.json). A "slow
 # down" answer from Telegram drops the channel one stage (volume_ramp.py) and
 # opens a volume-throttle issue. The text posts stay in telegram-daily.yml.
+# run-name records the slot's cron (also on a catch-up the Mac's cron dispatcher,
+# 00_GrowthEngine tools/cron_dispatcher, starts when GitHub dropped the cron), so
+# social_slot_gate.py and the dispatcher tell which slot a run was for however
+# late it started.
+run-name: >-
+  ${{ (github.event.schedule || inputs.cron)
+  && format('Telegram extra clip slots · cron {0}', github.event.schedule || inputs.cron)
+  || 'Telegram extra clip slots' }}
 on:
   schedule:
     - cron: "30 12 * * *"
@@ -22,6 +30,9 @@ on:
         default: "12"
       date:
         description: "UTC date YYYY-MM-DD of that slot (empty = today)"
+        default: ""
+      cron:
+        description: "Cron dispatcher only: the missed schedule this run replaces, e.g. 30 12 * * *; runs like that scheduled run, slot gate included"
         default: ""
 
 permissions:
@@ -48,31 +59,36 @@ jobs:
           python-version: "3.x"
       - name: Prevent duplicate UTC slot
         id: slot
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' || inputs.cron != ''
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          SLOT_SCHEDULE: ${{ github.event.schedule || inputs.cron }}
         run: >-
           python3 .github/scripts/social_slot_gate.py
           --workflow telegram-clips.yml
           --slots 12,18,22
+          --schedule "$SLOT_SCHEDULE"
       - name: Test
         run: |
           python3 .github/scripts/test_volume_ramp.py -q
           python3 .github/scripts/test_clip_posts.py -q
       - name: Post the slot's hook clip (video + App Store button)
-        if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
+        if: (github.event_name == 'workflow_dispatch' && inputs.cron == '') || steps.slot.outputs.should_post == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          SCHEDULE: ${{ github.event.schedule }}
-          MANUAL_SLOT: ${{ inputs.slot }}
-          MANUAL_DATE: ${{ inputs.date }}
+          SCHEDULE: ${{ github.event.schedule || inputs.cron }}
+          MANUAL_SLOT: ${{ inputs.cron == '' && inputs.slot || '' }}
+          MANUAL_DATE: ${{ inputs.cron == '' && inputs.date || '' }}
+          SLOT_DATE: ${{ steps.slot.outputs.date }}
         run: |
+          # The slot's own date: a 22:30 run that starts after UTC midnight posts that evening's clip.
           SLOT="${MANUAL_SLOT:-$(echo "$SCHEDULE" | awk '{print $2}')}"
-          python3 .github/scripts/clip_posts.py telegram --slot "$SLOT" ${MANUAL_DATE:+--date "$MANUAL_DATE"}
+          DATE="${MANUAL_DATE:-$SLOT_DATE}"
+          python3 .github/scripts/clip_posts.py telegram --slot "$SLOT" ${DATE:+--date "$DATE"}
       - name: Record the post link on the promotion page (and any throttle)
-        if: always() && (github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true')
+        if: always() && ((github.event_name == 'workflow_dispatch' && inputs.cron == '') || steps.slot.outputs.should_post == 'true')
         continue-on-error: true
         run: |
           if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json .github/growth/volume-ramp.json)" ]; then echo "nothing posted"; exit 0; fi

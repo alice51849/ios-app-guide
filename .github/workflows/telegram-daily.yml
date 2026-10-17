@@ -1,11 +1,25 @@
 name: Telegram daily post
 
+# run-name 記下這一輪是哪個 cron 的時段（補派那輪也一樣），social_slot_gate.py 與
+# 00_GrowthEngine tools/cron_dispatcher 靠它判斷時段，不管多晚才開跑。
+run-name: >-
+  ${{ (github.event.schedule || inputs.cron)
+  && format('Telegram daily post · cron {0}', github.event.schedule || inputs.cron)
+  || 'Telegram daily post' }}
 on:
   schedule:
     - cron: "0 1 * * *"    # 09:00 台灣 / 亞洲早
     - cron: "0 9 * * *"    # 歐洲早 / 中東
     - cron: "0 15 * * *"   # 美洲
-  # 僅由自然 slot 發文；本機／feature branch 只跑 --self-test。
+  # 只由時段發文：自然 slot，或 GitHub 把 cron 丟掉時 Mac 的排程補派器（00_GrowthEngine
+  # tools/cron_dispatcher）帶 cron 補派「現在這個時段」。telegram_post.py 只接受時鐘所在的時段，
+  # telegram-native-ledger 每個時段只有一筆 intent，已保留／已確認的時段永不重送。
+  # 本機／feature branch 只跑 --self-test。
+  workflow_dispatch:
+    inputs:
+      cron:
+        description: "Cron dispatcher only: the missed schedule of the current slot, e.g. 0 9 * * *"
+        required: true
 
 permissions:
   actions: read
@@ -17,7 +31,10 @@ concurrency:
 
 jobs:
   post:
-    if: github.event_name == 'schedule' && github.ref == 'refs/heads/main'
+    if: >-
+      github.ref == 'refs/heads/main'
+      && (github.event_name == 'schedule'
+      || (github.event_name == 'workflow_dispatch' && inputs.cron != ''))
     runs-on: ubuntu-latest
     timeout-minutes: 20
     outputs:
@@ -56,19 +73,19 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_SLOT: ${{ steps.slot.outputs.slot }}
-          TELEGRAM_SCHEDULE: ${{ github.event.schedule }}
+          TELEGRAM_SCHEDULE: ${{ github.event.schedule || inputs.cron }}
         run: python3 .github/scripts/telegram_post.py
       - name: Post today's 7-second hook clip (video + App Store button)
         # Asia morning (zh-Hant / ja / ko), Europe (de / fr / es / en) and Americas (en)
         # slots, as planned in clips.json by schedule_posts.py; a clip problem never
         # fails the daily post above.
-        if: steps.slot.outputs.should_post == 'true' && (github.event.schedule == '0 1 * * *' || github.event.schedule == '0 9 * * *' || github.event.schedule == '0 15 * * *')
+        if: steps.slot.outputs.should_post == 'true' && ((github.event.schedule || inputs.cron) == '0 1 * * *' || (github.event.schedule || inputs.cron) == '0 9 * * *' || (github.event.schedule || inputs.cron) == '0 15 * * *')
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          SCHEDULE: ${{ github.event.schedule }}
+          SCHEDULE: ${{ github.event.schedule || inputs.cron }}
         run: |
           python3 .github/scripts/test_volume_ramp.py -q
           python3 .github/scripts/test_clip_posts.py -q
@@ -77,7 +94,7 @@ jobs:
         # office.cait518.cc lists every clip post; clip_posts.py wrote the
         # link to clip-posts.json and refreshed app-improvements.json; a
         # volume_ramp.py throttle lands in volume-ramp.json.
-        if: steps.slot.outputs.should_post == 'true' && (github.event.schedule == '0 1 * * *' || github.event.schedule == '0 9 * * *' || github.event.schedule == '0 15 * * *')
+        if: steps.slot.outputs.should_post == 'true' && ((github.event.schedule || inputs.cron) == '0 1 * * *' || (github.event.schedule || inputs.cron) == '0 9 * * *' || (github.event.schedule || inputs.cron) == '0 15 * * *')
         continue-on-error: true
         run: |
           if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json .github/growth/volume-ramp.json)" ]; then echo "nothing posted"; exit 0; fi
@@ -113,7 +130,8 @@ jobs:
     needs: post
     if: >-
       always()
-      && github.event_name == 'schedule'
+      && (github.event_name == 'schedule'
+      || (github.event_name == 'workflow_dispatch' && inputs.cron != ''))
       && github.ref == 'refs/heads/main'
       && needs.post.outputs.should_post == 'true'
     runs-on: ubuntu-latest

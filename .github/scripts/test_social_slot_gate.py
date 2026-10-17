@@ -209,5 +209,47 @@ class DispatchBackfillTests(unittest.TestCase):
         )
 
 
+REELS = (1, 9, 12, 15, 18, 22)
+
+
+class CronDispatcherCatchUpTests(unittest.TestCase):
+    """GitHub dropped the cron; the Mac's cron dispatcher (00_GrowthEngine
+    tools/cron_dispatcher) dispatches the workflow with cron=<that schedule>.
+    The run-name says ``cron <schedule>`` like a scheduled run, and the gate
+    runs with --schedule, so the catch-up and a late scheduled run of the same
+    slot can never both post."""
+
+    def test_catch_up_claims_the_slot_of_its_cron(self):
+        catch_up = run(1, "2026-10-17T00:40:00Z", "Instagram Reels daily clip · cron 20 22 * * *",
+                       event="workflow_dispatch")
+        self.assertEqual(dt.datetime(2026, 10, 16, 22, tzinfo=UTC), gate.run_slot(catch_up, REELS))
+
+    def test_late_scheduled_run_skips_after_the_catch_up_posted(self):
+        catch_up = run(1, "2026-10-17T01:29:00Z", "Instagram Reels daily clip · cron 20 1 * * *",
+                       event="workflow_dispatch")
+        now = dt.datetime(2026, 10, 17, 5, 53, tzinfo=UTC)
+        slot = gate.resolve_slot(REELS, now, schedule="20 1 * * *")
+        allowed, current = gate.should_post([catch_up], "2", REELS, now, slot)
+        self.assertFalse(allowed)
+        self.assertEqual(dt.datetime(2026, 10, 17, 1, tzinfo=UTC), current)
+
+    def test_catch_up_skips_once_the_scheduled_run_posted(self):
+        scheduled = run(1, "2026-10-17T01:31:00Z", "Instagram Reels daily clip · cron 20 1 * * *")
+        now = dt.datetime(2026, 10, 17, 1, 32, tzinfo=UTC)
+        slot = gate.resolve_slot(REELS, now, schedule="20 1 * * *")
+        self.assertFalse(gate.should_post([scheduled], "2", REELS, now, slot)[0])
+
+    def test_a_late_catch_up_never_takes_the_next_slot(self):
+        late = run(1, "2026-10-17T09:25:00Z", "Instagram Reels daily clip · cron 20 1 * * *",
+                   event="workflow_dispatch")
+        now = dt.datetime(2026, 10, 17, 9, 30, tzinfo=UTC)
+        slot = gate.resolve_slot(REELS, now, schedule="20 9 * * *")
+        self.assertTrue(gate.should_post([late], "2", REELS, now, slot)[0])
+
+    def test_a_manual_run_without_cron_keeps_the_old_created_at_rule(self):
+        manual = run(1, "2026-10-17T10:00:00Z", "Instagram Reels daily clip", event="workflow_dispatch")
+        self.assertEqual(dt.datetime(2026, 10, 17, 9, tzinfo=UTC), gate.run_slot(manual, REELS))
+
+
 if __name__ == "__main__":
     unittest.main()

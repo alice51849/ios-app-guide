@@ -12,6 +12,14 @@ name: Instagram feed carousel daily
 # the utility cards. A "slow down" answer from Instagram drops both the
 # Reels and the feed one stage (volume_ramp.py) and opens a volume-throttle
 # issue.
+# run-name records the slot's cron (also on a catch-up the Mac's cron dispatcher,
+# 00_GrowthEngine tools/cron_dispatcher, starts when GitHub dropped the cron), so
+# social_slot_gate.py and the dispatcher tell which slot a run was for however
+# late it started.
+run-name: >-
+  ${{ (github.event.schedule || inputs.cron)
+  && format('Instagram feed carousel daily · cron {0}', github.event.schedule || inputs.cron)
+  || 'Instagram feed carousel daily' }}
 on:
   schedule:
     - cron: "20 7 * * *"
@@ -25,6 +33,9 @@ on:
         description: "Draw the cards and print the caption, post nothing"
         type: boolean
         default: false
+      cron:
+        description: "Cron dispatcher only: the missed schedule this run replaces, e.g. 20 7 * * *; runs like that scheduled run, slot gate included"
+        default: ""
 
 permissions:
   actions: read
@@ -50,16 +61,17 @@ jobs:
           python-version: "3.x"
       - name: Prevent duplicate UTC slot
         id: slot
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' || inputs.cron != ''
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python3 .github/scripts/social_slot_gate.py --workflow ig-feed-daily.yml --slots 7,19
+          SLOT_SCHEDULE: ${{ github.event.schedule || inputs.cron }}
+        run: python3 .github/scripts/social_slot_gate.py --workflow ig-feed-daily.yml --slots 7,19 --schedule "$SLOT_SCHEDULE"
       - name: Draw the cards
         id: cards
-        if: github.event_name == 'workflow_dispatch' || steps.slot.outputs.should_post == 'true'
+        if: (github.event_name == 'workflow_dispatch' && inputs.cron == '') || steps.slot.outputs.should_post == 'true'
         env:
-          SCHEDULE: ${{ github.event.schedule }}
-          MANUAL_SLOT: ${{ inputs.slot }}
+          SCHEDULE: ${{ github.event.schedule || inputs.cron }}
+          MANUAL_SLOT: ${{ inputs.cron == '' && inputs.slot || '' }}
         run: |
           sudo apt-get install -y -q fonts-noto-cjk >/dev/null
           pip install -q pillow

@@ -21,6 +21,8 @@ from __future__ import annotations
 import re
 from typing import Any
 
+from answer_text import answer_outcome
+
 try:
     from answer_faqs import FAQ_GROUPS
 except Exception:  # pragma: no cover
@@ -1458,7 +1460,7 @@ def _alternative_facts(q: str, key: str, name: str, app: dict[str, Any]) -> dict
     comp = comp_raw.title()
     bullets = app.get("cta_bullets", []) or []
     joined = " ".join(bullets) + " " + (app.get("tag", "") or "")
-    sub = (app.get("sub", "") or "").replace("\n", " ").strip().rstrip(".")
+    sub = answer_outcome(app).replace("\n", " ").strip().rstrip(".")
     noun = _CAT_NOUN.get(key, "iPhone app")
     is_free = "Free" in bullets
     is_payonce = ("Pay once" in joined) or ("No subscription" in joined)

@@ -6,6 +6,21 @@ from __future__ import annotations
 import re
 
 
+# 答案頁產生器（aeo_answers／gen_roundups／answer_facts）用的 App 一句話定位。
+# registry 的 sub 同時餵 App 查找器目錄（高意圖部署指紋）與 threads-autopilot
+# 封印，改 registry 會連動重封；線上商店已改版、registry 還沒重審的款，答案頁
+# 先用線上商店原文，避免把商店沒寫的宣稱寫進頁面。key 用 App 名稱（helper 只拿得到 app dict）。
+STORE_ALIGNED_OUTCOME = {
+    # 2026-10-17 線上商店 en-US promotionalText 原句；舊 sub
+    # 「Daily L&R study plans, weak-spot drills & score tracking toward 990」商店沒有。
+    "Aim990": "An 8-minute diagnosis finds your 3 weakest skills, drills them daily and rechecks on Day 30",
+}
+
+
+def answer_outcome(app: dict) -> str:
+    """答案頁用的一句話定位：商店對齊覆寫優先，其餘沿用 registry sub。"""
+    return STORE_ALIGNED_OUTCOME.get(str(app.get("name") or "")) or str(app.get("sub") or "")
+
 _DANGLING_END_WORDS = {
     "a",
     "an",

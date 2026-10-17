@@ -47,7 +47,7 @@ from appstore_live import live_app_keys  # noqa: E402
 import queries  # noqa: E402
 import answer_facts  # noqa: E402
 import sync_standard_site  # noqa: E402
-from answer_text import clause_snippet, concise_meta  # noqa: E402
+from answer_text import answer_outcome, clause_snippet, concise_meta  # noqa: E402
 from aeo_pages import alternative_hub_slug  # noqa: E402
 
 TEMPLATE = ANSWERS_DIR / "best-offline-document-scanner-app-for-iphone.html"
@@ -206,7 +206,7 @@ def prompt_for(question: str, key: str) -> list[dict[str, str]]:
         "category": app.get("category", "iOS app"),
         "search": app.get("search", ""),
         "tag": app.get("tag", ""),
-        "sub": app.get("sub", ""),
+        "sub": answer_outcome(app),
         "cta_bullets": app.get("cta_bullets", []),
         "keywords": app.get("keywords", []),
         "app_store_url": appstore_url(key, ANSWER_CAMPAIGN),
@@ -430,7 +430,7 @@ def ensure_app_leads_the_answer(
     if _ASKS_FOR_NATIVE.search(question or ""):
         return content
 
-    outcome = safe_text(app.get("sub")).rstrip(". ")
+    outcome = safe_text(answer_outcome(app)).rstrip(". ")
     access = safe_text(app.get("tag")).rstrip(". ")
     bridge = _bridge_sentence(name, outcome, access)
     opener = f"{name} — {outcome}." if outcome else f"{name}."
@@ -478,7 +478,7 @@ def ensure_answer_names_app(
     # prepended opener also satisfies the checks below -- running it afterwards
     # instead left the name at both ends of the same paragraph.
     content = ensure_app_leads_the_answer(content, app, question)
-    outcome = safe_text(app.get("sub")).rstrip(". ")
+    outcome = safe_text(answer_outcome(app)).rstrip(". ")
     access = safe_text(app.get("tag")).rstrip(". ")
 
     bridge = f"{_bridge_sentence(name, outcome, access)} {LISTING_DISCLAIMER}"
@@ -547,7 +547,7 @@ def ensure_answer_names_app(
 def default_content(question: str, key: str) -> dict[str, Any]:
     app = APPS[key]
     name = app["name"]
-    outcome = safe_text(app.get("sub")).rstrip(".")
+    outcome = safe_text(answer_outcome(app)).rstrip(".")
     access = safe_text(app.get("tag")).rstrip(".")
     lead = f"{name} — {outcome}."
     if access:

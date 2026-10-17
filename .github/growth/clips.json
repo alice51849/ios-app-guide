@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T09:13:52Z",
+  "updated_at": "2026-10-17T11:31:14Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "lumibopomofo/en": {
@@ -5207,13 +5207,15 @@
       "date": "2026-10-17",
       "slot": 15,
       "channel": "instagram",
-      "clip": "snapport/en"
+      "clip": "lumibopomofo/en",
+      "sprint": true
     },
     {
       "date": "2026-10-17",
       "slot": 15,
       "channel": "telegram",
-      "clip": "snapport/en"
+      "clip": "lumibopomofo/en",
+      "sprint": true
     },
     {
       "date": "2026-10-18",
@@ -5226,26 +5228,32 @@
       "date": "2026-10-18",
       "slot": 1,
       "channel": "telegram",
-      "clip": "battai/zh-Hant"
+      "clip": "battai/ja",
+      "sprint": true
     },
     {
       "date": "2026-10-18",
       "slot": 1,
       "channel": "threads",
-      "clip": "snapport/zh-Hant"
+      "clip": "lumibopomofo/zh-Hant"
     },
     {
       "date": "2026-10-18",
       "slot": 9,
       "channel": "instagram",
-      "clip": "hourstaglite/en"
+      "clip": "snapport/de"
     },
     {
       "date": "2026-10-18",
       "slot": 9,
       "channel": "telegram",
-      "clip": "lumibopomofo/en",
-      "sprint": true
+      "clip": "snapport/de"
+    },
+    {
+      "date": "2026-10-18",
+      "slot": 15,
+      "channel": "instagram",
+      "clip": "hourstaglite/en"
     },
     {
       "date": "2026-10-18",
@@ -5257,13 +5265,19 @@
       "date": "2026-10-19",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumibopomofo/ja"
+      "clip": "lumibopomofo/zh-Hant"
+    },
+    {
+      "date": "2026-10-19",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumibopomofo/zh-Hant"
     },
     {
       "date": "2026-10-19",
       "slot": 1,
       "channel": "threads",
-      "clip": "ledmovingtext/zh-Hant"
+      "clip": "snapport/zh-Hant"
     },
     {
       "date": "2026-10-19",
@@ -5276,7 +5290,7 @@
       "date": "2026-10-20",
       "slot": 1,
       "channel": "instagram",
-      "clip": "snapport/zh-Hant"
+      "clip": "ledmovingtext/zh-Hant"
     },
     {
       "date": "2026-10-20",
@@ -5289,18 +5303,6 @@
       "date": "2026-10-20",
       "slot": 1,
       "channel": "threads",
-      "clip": "battai/zh-Hant"
-    },
-    {
-      "date": "2026-10-20",
-      "slot": 9,
-      "channel": "telegram",
-      "clip": "snapport/de"
-    },
-    {
-      "date": "2026-10-20",
-      "slot": 12,
-      "channel": "instagram",
       "clip": "ledmovingtext/zh-Hant"
     },
     {
@@ -5313,14 +5315,13 @@
       "date": "2026-10-21",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumibopomofo/ko"
+      "clip": "lumibopomofo/ja"
     },
     {
       "date": "2026-10-21",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumibopomofo/ja",
-      "sprint": true
+      "clip": "lumibopomofo/ja"
     },
     {
       "date": "2026-10-21",
@@ -5332,25 +5333,25 @@
       "date": "2026-10-21",
       "slot": 9,
       "channel": "instagram",
-      "clip": "battai/zh-Hant"
+      "clip": "snapport/en"
+    },
+    {
+      "date": "2026-10-21",
+      "slot": 9,
+      "channel": "telegram",
+      "clip": "snapport/en"
     },
     {
       "date": "2026-10-21",
       "slot": 12,
       "channel": "instagram",
-      "clip": "hourstaglite/zh-Hant"
+      "clip": "battai/zh-Hant"
     },
     {
       "date": "2026-10-21",
       "slot": 12,
       "channel": "telegram",
-      "clip": "hourstaglite/zh-Hant"
-    },
-    {
-      "date": "2026-10-21",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "battai/en"
+      "clip": "battai/zh-Hant"
     },
     {
       "date": "2026-10-22",
@@ -5362,14 +5363,26 @@
     {
       "date": "2026-10-22",
       "slot": 1,
+      "channel": "telegram",
+      "clip": "hourstaglite/zh-Hant"
+    },
+    {
+      "date": "2026-10-22",
+      "slot": 1,
       "channel": "threads",
-      "clip": "lumibopomofo/en"
+      "clip": "battai/zh-Hant"
+    },
+    {
+      "date": "2026-10-22",
+      "slot": 12,
+      "channel": "instagram",
+      "clip": "hourstaglite/zh-Hant"
     },
     {
       "date": "2026-10-23",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumibopomofo/vi"
+      "clip": "lumibopomofo/ko"
     },
     {
       "date": "2026-10-23",
@@ -5382,31 +5395,25 @@
       "date": "2026-10-23",
       "slot": 1,
       "channel": "threads",
-      "clip": "hourstaglite/en"
+      "clip": "lumibopomofo/en"
     },
     {
       "date": "2026-10-23",
-      "slot": 9,
+      "slot": 15,
       "channel": "instagram",
-      "clip": "snapport/de"
+      "clip": "ledmovingtext/en"
     },
     {
       "date": "2026-10-23",
-      "slot": 9,
+      "slot": 15,
       "channel": "telegram",
+      "clip": "ledmovingtext/en"
+    },
+    {
+      "date": "2026-10-24",
+      "slot": 1,
+      "channel": "instagram",
       "clip": "snapport/zh-Hant"
-    },
-    {
-      "date": "2026-10-23",
-      "slot": 15,
-      "channel": "instagram",
-      "clip": "ledmovingtext/en"
-    },
-    {
-      "date": "2026-10-23",
-      "slot": 15,
-      "channel": "telegram",
-      "clip": "ledmovingtext/en"
     },
     {
       "date": "2026-10-24",
@@ -5419,12 +5426,24 @@
       "date": "2026-10-24",
       "slot": 1,
       "channel": "threads",
-      "clip": "claudeusagemini/en"
+      "clip": "hourstaglite/en"
+    },
+    {
+      "date": "2026-10-24",
+      "slot": 9,
+      "channel": "telegram",
+      "clip": "snapport/zh-Hant"
     },
     {
       "date": "2026-10-24",
       "slot": 15,
       "channel": "instagram",
+      "clip": "battai/en"
+    },
+    {
+      "date": "2026-10-24",
+      "slot": 15,
+      "channel": "telegram",
       "clip": "battai/en"
     },
     {
@@ -5437,21 +5456,14 @@
     {
       "date": "2026-10-25",
       "slot": 1,
-      "channel": "telegram",
-      "clip": "battai/ja",
-      "sprint": true
-    },
-    {
-      "date": "2026-10-25",
-      "slot": 1,
       "channel": "threads",
-      "clip": "snapport/en"
+      "clip": "claudeusagemini/en"
     },
     {
       "date": "2026-10-26",
       "slot": 1,
       "channel": "instagram",
-      "clip": "snapport/ja"
+      "clip": "lumibopomofo/vi"
     },
     {
       "date": "2026-10-26",
@@ -5463,14 +5475,7 @@
       "date": "2026-10-26",
       "slot": 1,
       "channel": "threads",
-      "clip": "ledmovingtext/en"
-    },
-    {
-      "date": "2026-10-26",
-      "slot": 9,
-      "channel": "instagram",
-      "clip": "lumibopomofo/en",
-      "sprint": true
+      "clip": "snapport/en"
     },
     {
       "date": "2026-10-26",
@@ -5479,13 +5484,25 @@
       "clip": "claudeusagemini/de"
     },
     {
-      "date": "2026-10-26",
-      "slot": 12,
+      "date": "2026-10-27",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "snapport/ja"
+    },
+    {
+      "date": "2026-10-27",
+      "slot": 1,
       "channel": "telegram",
       "clip": "snapport/ja"
     },
     {
       "date": "2026-10-27",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "ledmovingtext/en"
+    },
+    {
+      "date": "2026-10-28",
       "slot": 1,
       "channel": "threads",
       "clip": "battai/en"
@@ -5497,26 +5514,26 @@
       "clip": "claudeusagemini/de"
     },
     {
-      "date": "2026-10-29",
+      "date": "2026-10-30",
       "slot": 1,
       "channel": "instagram",
       "clip": "snapport/ko"
     },
     {
-      "date": "2026-10-29",
+      "date": "2026-10-30",
       "slot": 1,
       "channel": "telegram",
       "clip": "snapport/ko"
     },
     {
-      "date": "2026-12-05",
+      "date": "2026-12-06",
       "slot": 1,
       "channel": "instagram",
       "clip": "hourstaglite/ja",
       "variant_repost": true
     },
     {
-      "date": "2026-12-05",
+      "date": "2026-12-06",
       "slot": 1,
       "channel": "telegram",
       "clip": "hourstaglite/ja",
@@ -5544,7 +5561,7 @@
       "variant_repost": true
     },
     {
-      "date": "2026-12-09",
+      "date": "2026-12-08",
       "slot": 1,
       "channel": "telegram",
       "clip": "battai/ko",

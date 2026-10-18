@@ -224,7 +224,8 @@ class AlertChatTests(unittest.TestCase):
     def test_watchdog_workflows_pass_only_the_alert_chat(self):
         import re
         workflows = sorted((HERE.parent / "workflows").glob("*.yml"))
-        callers = [path for path in workflows if "line_alert.py" in path.read_text(encoding="utf-8")]
+        callers = [path for path in workflows
+                   if re.search(r"python3?\s+\S*line_alert\.py", path.read_text(encoding="utf-8"))]
         self.assertTrue(callers, "a workflow must run line_alert.py")
         for path in callers:
             text = path.read_text(encoding="utf-8")

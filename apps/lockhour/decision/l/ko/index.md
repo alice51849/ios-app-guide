@@ -1,17 +1,17 @@
 ---
-title: "공부할 때 소셜 미디어 차단용 최고의 앱 아이폰용"
+title: "공부할 때 SNS를 차단하는 최고의 iPhone 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/ko/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# 공부할 때 소셜 미디어 차단용 최고의 앱 아이폰용
+# 공부할 때 SNS를 차단하는 최고의 iPhone 앱
 
-시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다. 그래서 만든 것이 LockHour Pro입니다.
+시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다 — LockHour Pro는 이를 위해 만들어졌습니다.
 
 - 생산성
 - 무료로 시작 · 한 번 결제로 잠금 해제

@@ -2,7 +2,7 @@
 title: "iPhone için aboneliksiz en iyi basit yapılacaklar listesi uygulaması"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/tr/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # iPhone için aboneliksiz en iyi basit yapılacaklar listesi uygulaması
 
-Çoğu yapılacaklar uygulaması şişkin hissediyorsa, doğru olanı hatırlatıcılar, tekrar kuralları ve Watch komplikasyonu ile temiz bir kontrol listesidir — ve kasıtlı olarak proje yönetimi mekanizması yoktur. İşte Mochi bu yüzden ortaya çıktı.
+Çoğu yapılacaklar uygulaması şişkin hissediyorsa, doğru olanı hatırlatıcılar ve Apple Watch desteği ile temiz bir kontrol listesidir — ve kasıtlı olarak proje yönetimi mekanizması yoktur. İşte Mochi bu yüzden ortaya çıktı.
 
 - Verimlilik
 - Başlangıçta ücretsiz · tek seferlik açma
+- Hesap yok
 - Reklam yok
 - Apple Watch
 - App Store · Ücretsiz

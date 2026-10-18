@@ -1,17 +1,17 @@
 ---
-title: "ders çalışırken sosyal medyayı engellemek için en iyi uygulama iphone"
+title: "ders çalışırken sosyal medyayı engellemek için en iyi iPhone uygulaması"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/tr/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# ders çalışırken sosyal medyayı engellemek için en iyi uygulama iphone
+# ders çalışırken sosyal medyayı engellemek için en iyi iPhone uygulaması
 
-Sınavlarda irade gücü yeterli değildir — kesin zamanlı engelleme gerekir. İşte LockHour Pro bu yüzden ortaya çıktı.
+Sınavlarda irade gücü yeterli değildir — kesin zamanlı engelleme gerekir — LockHour Pro bunun için tasarlanmıştır.
 
 - Verimlilik
 - Başlangıçta ücretsiz · tek seferlik açma

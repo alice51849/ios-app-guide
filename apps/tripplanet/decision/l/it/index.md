@@ -2,7 +2,7 @@
 title: "miglior app attività viaggio per bambini in vacanza in famiglia"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/it/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ I genitori in viaggio con bambini piccoli hanno bisogno di attività che trasfor
 
 - Bambini e apprendimento
 - Gratis per iniziare · sblocco unico
-- Offline
 - Nessuna pubblicità
 - Privato / su dispositivo
 - App Store · Gratis

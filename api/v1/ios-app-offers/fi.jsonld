@@ -6,7 +6,7 @@
   "name": "Lumi Studio Julkaisijan Hakutarkoitusluettelo",
   "description": "Ensimmäisen osapuolen luettelo siitä, kenelle kukin sovellus on suunniteltu, mitä tehtävää he pyrkivät suorittamaan ja suora App Store -polku.",
   "inLanguage": "fi",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-mochi",
         "url": "https://apps.apple.com/fi/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla, toistosäännöillä ja Watch-komplikaatiolla — ja tarkoituksella ilman projektinhallinnan koneistoa. Siksi Mochi on olemassa.",
+        "description": "Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla ja Apple Watch -tuella — ja tarkoituksella ilman projektinhallinnan koneistoa. Siksi Mochi on olemassa.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "fi",
-          "description": "Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla, toistosäännöillä ja Watch-komplikaatiolla — ja tarkoituksella ilman projektinhallinnan koneistoa. Siksi Mochi on olemassa.",
+          "description": "Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla ja Apple Watch -tuella — ja tarkoituksella ilman projektinhallinnan koneistoa. Siksi Mochi on olemassa.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld#offer-mochi"
           },

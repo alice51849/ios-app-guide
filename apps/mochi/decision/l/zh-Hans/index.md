@@ -2,7 +2,7 @@
 title: "iPhone 上最佳简单待办事项应用，无订阅"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/zh-Hans/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # iPhone 上最佳简单待办事项应用，无订阅
 
-如果大多数待办应用感觉臃肿，合适的就是带提醒、重复规则和 Watch 复杂功能的干净清单——且刻意无项目管理功能。所以才有了 Mochi。
+如果大多数待办应用感觉臃肿，合适的就是带提醒和 Apple Watch 支持的干净清单——且刻意无项目管理功能。所以才有了 Mochi。
 
 - 效率
 - 免费开始使用 · 一次性解锁
+- 无需账户
 - 无广告
 - Apple Watch
 - App Store · 免费

@@ -2,7 +2,7 @@
 title: "najlepšia jednoduchá aplikácia na zoznam úloh na iPhone bez predplatného"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/sk/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # najlepšia jednoduchá aplikácia na zoznam úloh na iPhone bez predplatného
 
-Ak sa vám väčšina aplikácií na úlohy zdá preplnená, správna je čistý zoznam s pripomienkami, opakovaniami a komplikáciou na Apple Watch — a zámerne bez riadenia projektov. Práve preto Mochi vznikol.
+Ak sa vám väčšina aplikácií na úlohy zdá preplnená, správna je čistý zoznam s pripomienkami a podporou Apple Watch — a zámerne bez riadenia projektov. Práve preto Mochi vznikol.
 
 - Produktivita
 - Zadarmo na začiatok
+- Bez účtu
 - Bez reklám
 - Apple Watch
 - App Store · Zadarmo

@@ -2,7 +2,7 @@
 title: "najboljša aplikacija za potovalne aktivnosti za otroke na družinskih potovanjih"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/sl-SI/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Starši, ki potujejo z mlajšimi otroki, potrebujejo aktivnosti, ki pakiranje, �
 
 - Otroci in učenje
 - Brezplačen začetek
-- Brez povezave
 - Brez oglasov
 - Zasebno / na napravi
 - App Store · Brezplačno

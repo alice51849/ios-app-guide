@@ -2,7 +2,7 @@
 title: "QR Code Halo: skannaa ja luo — Avaa heti, tarkista myöhemmin | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/fi/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo toimii heti, kun koodi on luettu. Skannaa kameralla tai valitse kuv
 
 - Lisää
 - Ilmainen aloitus
-- Ei mainoksia
 - Yksityinen / laitteella
 - App Store · Ilmainen
 

@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: ਪਿਛਲੀ ਵਾਰ — ਕਦੋਂ ਕੀਤਾ ਸੀ? ਘਰ ਦੇ ਕੰਮ ਯਾਦ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/pa-IN/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - ਜੀਵਨ ਸ਼ੈਲੀ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
-- ਆਫਲਾਈਨ
 - ਕੋਈ ਖਾਤਾ ਨਹੀਂ
 - ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ

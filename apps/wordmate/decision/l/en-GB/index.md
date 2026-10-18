@@ -2,7 +2,7 @@
 title: "best vocabulary app for busy commuters with apple watch"
 lang: "en-GB"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/en-GB/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ Busy commuters need vocabulary practice that fits into spare minutes without req
 - Education
 - Paid download
 - No account
-- No adverts
 - No tracking
 - Private / on-device
 - Widget

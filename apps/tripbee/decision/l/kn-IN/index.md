@@ -2,7 +2,7 @@
 title: "iPhone ಗೆ ಉತ್ತಮ ಪ್ರವಾಸ ಯೋಜನಾ ಅಪ್ಲಿಕೇಶನ್"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/kn-IN/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ publisher: "Lumi Studio"
 - ಪ್ರಯಾಣ
 - ಪಾವತಿಸಿದ ಡೌನ್‌ಲೋಡ್
 - ಆಫ್‌ಲೈನ್
-- ಖಾತೆ ಇಲ್ಲ
 - ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - ಹಿಂಡಿಕೆ ಇಲ್ಲ
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ

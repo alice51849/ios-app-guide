@@ -2,7 +2,7 @@
 title: "MoneyTag: Recettes & dépenses — Projets · Tags · Rapport | iOS App"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/fr-FR/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Recettes & dépenses Chaque projet tient ses propres comptes : les recettes moin
 - Gratuit au départ · déblocage unique
 - Hors ligne
 - Sans compte
-- Sans publicité
 - Sans suivi
 - Privé / sur l’appareil
 - Widget

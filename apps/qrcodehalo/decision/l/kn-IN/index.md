@@ -2,7 +2,7 @@
 title: "QR Code Halo: ಸ್ಕ್ಯಾನ್, ರಚನೆ — ಕೂಡಲೇ ತೆರೆಯಿರಿ, ನಂತರ ಪರಿಶೀಲಿಸಿ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/kn-IN/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo ಕೋಡ್ ಓದಿದ ಕ್ಷಣವೇ ಕೆಲಸ ಮಾಡ
 
 - ಇನ್ನಷ್ಟು
 - ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
-- ಜಾಹೀರಾತುಗಳಿಲ್ಲ
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ಉಚಿತ
 

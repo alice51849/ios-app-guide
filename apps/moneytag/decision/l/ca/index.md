@@ -2,7 +2,7 @@
 title: "MoneyTag: Ingressos i despeses — Projectes · Etiquetes | iOS App"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/ca/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Ingressos i despeses Cada projecte porta els seus propis comptes: els ingressos 
 - Inici gratuït
 - Fora de línia
 - Sense compte
-- Sense anuncis
 - Sense seguiment
 - Privat / en el dispositiu
 - Widget

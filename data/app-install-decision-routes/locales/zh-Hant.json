@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "zh-Hant",
-  "dateModified": "2026-10-17",
-  "content_digest": "b6f281ecd8a7cf4a7a844dac8baa3522a115ea368d56cbe0094f42138c58cdcd",
-  "generation_digest": "a22202b1de352c33cad6f7e30b5f575d156523882164ad3331c9bc2f3b693d7b",
+  "dateModified": "2026-10-18",
+  "content_digest": "8227e4c40b0aa873cbaed9fbb75189f6fe9f9492a9eeaad57261be4ea047499d",
+  "generation_digest": "30f05dfd5432007545b1c731c574b482dac3a8b358b4cd4b7966893ffd63ed6c",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -168,7 +168,8 @@
         "無追蹤",
         "隱私優先／裝置端",
         "主畫面小工具",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hant/index.html",
@@ -181,7 +182,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -489,10 +492,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "免帳號",
+        "無廣告",
         "隱私優先／裝置端"
       ],
       "device_surfaces": [
@@ -507,6 +512,7 @@
         "效率工具",
         "免費開始 · 一次性解鎖",
         "免帳號",
+        "無廣告",
         "隱私優先／裝置端",
         "主畫面小工具",
         "Apple Watch",
@@ -1126,7 +1132,8 @@
         "無廣告",
         "無追蹤",
         "隱私優先／裝置端",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/led-scrolling-text-app-for-concerts-and-airport-pickups.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/zh-Hant/index.html",
@@ -1139,7 +1146,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",

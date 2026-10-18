@@ -2,7 +2,7 @@
 title: "開啟前先顯示連結的 QR Code 掃描 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/zh-Hant/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo — QR Code Halo 以「檢查、判斷、行動」為核心。免�
 
 - 更多
 - 免費開始 · 一次性解鎖
-- 無廣告
 - 隱私優先／裝置端
 - App Store · 免費
 

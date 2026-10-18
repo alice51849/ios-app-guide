@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na cestovateľské aktivity pre deti na rodinných výletoch"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/sk/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Rodičia cestujúci s malými deťmi potrebujú aktivity, ktoré premenia baleni
 
 - Deti a učenie
 - Zadarmo na začiatok
-- Offline
 - Bez reklám
 - Súkromné / v zariadení
 - App Store · Zadarmo

@@ -2,7 +2,7 @@
 title: "มีแอปจดโน้ตลายมือบน iPad ที่ใช้ออฟไลน์ได้ มาร์กอัป PDF ได้ และไม่ต้องสมัครสมาชิกรายเดือนไหม"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/th/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "MoneyTag: Prihodi i troškovi — Projekti · Oznake · Izvještaj | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/hr/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Prihodi i troškovi Svaki projekt vodi svoje knjige: prihodi minus troškovi daj
 - Besplatno za početak
 - Izvan mreže
 - Bez računa
-- Bez oglasa
 - Bez praćenja
 - Privatno / na uređaju
 - Widget

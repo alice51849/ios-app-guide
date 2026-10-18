@@ -2,7 +2,7 @@
 title: "qr code scanner app that shows the link before opening it"
 lang: "en-GB"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/en-GB/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo — QR Code Halo is built around Inspect, Decide, Act. Free to star
 
 - More
 - Free to start · one-time unlock
-- No adverts
 - Private / on-device
 - App Store · Free
 

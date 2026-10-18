@@ -2,7 +2,7 @@
 title: "QR Code Halo: Skann og lag — Åpner straks, sjekk etterpå | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/no/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo handler så snart en kode er lest. Skann med kameraet, eller velg e
 
 - Mer
 - Gratis å starte
-- Ingen annonser
 - Privat / på enheten
 - App Store · Gratis
 

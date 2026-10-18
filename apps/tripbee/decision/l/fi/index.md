@@ -2,7 +2,7 @@
 title: "paras matka-aikataulusuunnittelusovellus iPhonelle"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/fi/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ Hyvä aikataulusovellus muuttaa sekavan matkan selkeäksi päiväkohtaiseksi aik
 - Matkailu
 - Maksullinen lataus
 - Offline
-- Ei tiliä
 - Ei mainoksia
 - Ei seurantaa
 - Yksityinen / laitteella

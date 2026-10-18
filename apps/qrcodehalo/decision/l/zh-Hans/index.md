@@ -2,7 +2,7 @@
 title: "QR Code Halo：安全扫码与制作 — 扫完直接打开，稍后本机查风险 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/zh-Hans/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo 扫到就直接执行。用相机扫描或选择照片：网址直�
 
 - 更多
 - 免费开始使用 · 一次性解锁
-- 无广告
 - 私密 / 设备本地
 - App Store · 免费
 

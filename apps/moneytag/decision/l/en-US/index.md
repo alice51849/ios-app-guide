@@ -2,7 +2,7 @@
 title: "best income and expense tracker for freelance projects no subscription"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/en-US/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ A monthly budget cannot tell a freelancer whether one client project actually ma
 - Free to start · one-time unlock
 - Offline
 - No account
-- No ads
 - No tracking
 - Private / on-device
 - Widget

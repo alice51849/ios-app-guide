@@ -1,28 +1,27 @@
 ---
-title: "أفضل تطبيق مخطط مسار الرحلة على iPhone"
+title: "تطبيق أفضل مخطّط لبرنامج الرحلة لـ iPhone"
 lang: "ar-SA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ar-SA/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
 publisher: "Lumi Studio"
 ---
 
-# أفضل تطبيق مخطط مسار الرحلة على iPhone
+# تطبيق أفضل مخطّط لبرنامج الرحلة لـ iPhone
 
-تطبيق مسار جيد يحول رحلة فوضوية إلى جدول زمني يومي واضح — رحلات جوية، فنادق، أنشطة، مطاعم، ونقل — مع أيقونات نوع واضحة لتقرأ يومك بنظرة. إن كان هذا حالك، فألقِ نظرة على TripBee Pro: مخطط الرحلات.
+تطبيق مسار جيد يحول رحلة فوضوية إلى جدول زمني يومي واضح — رحلات جوية، فنادق، أنشطة، مطاعم، ونقل — مع أيقونات نوع واضحة لتقرأ يومك بنظرة — تم تصميم TripBee Pro: مخطط الرحلات لهذا.
 
 - السفر
 - تحميل مدفوع
 - دون اتصال
-- بدون حساب
 - بدون إعلانات
 - بدون تتبع
 - خاص / على الجهاز
 - App Store · SAR 24.99
 
-[احصل على TripBee Pro: مخطط الرحلات من متجر التطبيقات →](https://apps.apple.com/sa/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
+[احصل على TripBee Pro: مخطط الرحلات من متجر التطبيقات ←](https://apps.apple.com/sa/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
 
 [اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-trip-itinerary-planner-app-for-iphone.html)
 

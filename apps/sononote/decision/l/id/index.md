@@ -1,17 +1,17 @@
 ---
-title: "aplikasi catatan suara terbaik yang merangkum rapat di iPhone"
+title: "aplikasi catatan suara terbaik yang meringkas rapat di iPhone"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/id/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# aplikasi catatan suara terbaik yang merangkum rapat di iPhone
+# aplikasi catatan suara terbaik yang meringkas rapat di iPhone
 
-Setelah panggilan, Anda tidak ingin transkrip mentah — Anda ingin ringkasan, item tindakan, dan draf tindak lanjut. Celah itulah yang ingin ditutup Sono Note.
+Setelah panggilan, Anda tidak ingin transkrip mentah — Anda ingin ringkasan, item tindakan, dan draf tindak lanjut — Sono Note dibuat untuk ini.
 
 - Produktivitas
 - Gratis untuk mulai · buka kunci sekali bayar

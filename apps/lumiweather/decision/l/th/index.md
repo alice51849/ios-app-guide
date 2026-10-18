@@ -2,7 +2,7 @@
 title: "Lumi อากาศ: พยากรณ์วันนี้ — ดัชนีออกนอกบ้าน ใส่ชุดไหนดี | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/th/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

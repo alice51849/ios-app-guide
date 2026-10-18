@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Sidst — Hvornår var det? Husarbejde | iOS App"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/da/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Hvornår skiftede du sidst sengetøj, vandede en plante, ringede til familien, s
 
 - Livsstil
 - Gratis at komme i gang
-- Offline
 - Ingen konto
 - Ingen reklamer
 - Ingen sporing

@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: ଶେଷ ଥର — କେବେ କରିଥିଲି? ଘର କାମ ସ୍ମାରକ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/or-IN/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - ଜୀବନଶୈଳୀ
 - ମୁକ୍ତ ଆରମ୍ଭ
-- ଅଫଲାଇନ
 - କୌଣସି ଖାତା ନାହିଁ
 - କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ
 - କୌଣସି ଟ୍ରାକିଂ ନାହିଁ

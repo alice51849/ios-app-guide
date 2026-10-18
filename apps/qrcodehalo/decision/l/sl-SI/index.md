@@ -2,7 +2,7 @@
 title: "QR Code Halo: Čitalnik kod — Odpri takoj, preveri pozneje | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/sl-SI/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo ukrepa takoj, ko prebere kodo. Skenirajte s kamero ali izberite fot
 
 - Več
 - Brezplačen začetek
-- Brez oglasov
 - Zasebno / na napravi
 - App Store · Brezplačno
 

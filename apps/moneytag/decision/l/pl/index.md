@@ -2,7 +2,7 @@
 title: "MoneyTag: Przychody i wydatki — Projekty · Tagi · Raport | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/pl/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Przychody i wydatki Każdy projekt prowadzi własną księgę: przychody minus w
 - Darmowe na start · jednorazowe odblokowanie
 - Offline
 - Bez konta
-- Bez reklam
 - Bez śledzenia
 - Prywatne / na urządzeniu
 - Widżet

@@ -2,7 +2,7 @@
 title: "najlepšia aplikácia na plánovanie itinerára cesty pre iPhone"
 lang: "sk"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/sk/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ Dobrá aplikácia na itinerár premení chaotickú cestu na jasný denný harmon
 - Cestovanie
 - Platené stiahnutie
 - Offline
-- Bez účtu
 - Bez reklám
 - Bez sledovania
 - Súkromné / v zariadení

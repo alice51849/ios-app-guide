@@ -2,7 +2,7 @@
 title: "best simple to do list app iphone no subscription"
 lang: "en-US"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/en-US/mochi.html"
-modified: "2026-10-15"
+modified: "2026-10-17"
 video_url: "https://open.cait518.cc/ios-app-guide/media/app-videos/mochi-en-us.mp4"
 duration: "PT8.8S"
 app_store_id: "6785004775"
@@ -12,7 +12,7 @@ publisher: "Lumi Studio"
 
 # best simple to do list app iphone no subscription
 
-If most to-do apps feel bloated, the right one is a clean checklist with reminders, repeat rules and a Watch complication — and deliberately no project-management machinery. That is why Mochi exists.
+If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management machinery. That is why Mochi exists.
 
 [Watch video](https://open.cait518.cc/ios-app-guide/media/app-videos/mochi-en-us.mp4)
 

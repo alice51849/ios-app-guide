@@ -2,7 +2,7 @@
 title: "DailyMate Lite: സംസാരിക്കൂ — യാത്രാ സംഭാഷണം, 50 ഭാഷകളിൽ | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/ml-IN/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

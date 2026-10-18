@@ -2,7 +2,7 @@
 title: "QR Code Halo: ஸ்கேன் உருவாக்கு — உடனே திறக்கும், பிறகு சோதனை | iOS App"
 lang: "ta-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/ta-IN/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo குறியீட்டைப் படித்த உடன�
 
 - மேலும்
 - இலவசமாக தொடங்கவும்
-- விளம்பரங்கள் இல்லை
 - தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
 

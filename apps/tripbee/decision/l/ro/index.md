@@ -2,7 +2,7 @@
 title: "cea mai bună aplicație de planificare itinerar pentru iPhone"
 lang: "ro"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ro/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ O aplicație bună de itinerar transformă o călătorie dezordonată într-un c
 - Călătorii
 - Descărcare plătită
 - Offline
-- Fără cont
 - Fără reclame
 - Fără urmărire
 - Privat / pe dispozitiv

@@ -2,7 +2,7 @@
 title: "MoneyTag: Inkomsten & uitgaven — Projecten · Tags · Rapport | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/nl-NL/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Inkomsten & uitgaven Elk project houdt zijn eigen boekhouding bij: inkomsten min
 - Gratis te starten · eenmalige ontgrendeling
 - Offline
 - Geen account
-- Geen advertenties
 - Geen tracking
 - Privé / op apparaat
 - Widget

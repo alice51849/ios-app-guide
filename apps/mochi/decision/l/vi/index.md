@@ -2,7 +2,7 @@
 title: "ứng dụng danh sách việc cần làm đơn giản nhất trên iPhone không đăng ký"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/vi/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # ứng dụng danh sách việc cần làm đơn giản nhất trên iPhone không đăng ký
 
-Nếu hầu hết ứng dụng việc cần làm cảm thấy cồng kềnh, ứng dụng phù hợp là danh sách kiểm tra sạch sẽ với nhắc nhở, quy tắc lặp lại và hỗ trợ Watch — và không có công cụ quản lý dự án. Mochi ra đời chính vì thế.
+Nếu hầu hết ứng dụng việc cần làm cảm thấy cồng kềnh, ứng dụng phù hợp là danh sách kiểm tra sạch sẽ với nhắc nhở và hỗ trợ Apple Watch — và không có công cụ quản lý dự án. Mochi ra đời chính vì thế.
 
 - Năng suất
 - Bắt đầu miễn phí · mở khóa một lần
+- Không tài khoản
 - Không quảng cáo
 - Apple Watch
 - App Store · Miễn phí

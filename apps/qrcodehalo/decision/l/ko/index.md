@@ -2,7 +2,7 @@
 title: "QR Code Halo: QR코드 바로 실행 — 저장된 링크, 기기 안에서 보안 검사 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/ko/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo는 코드를 읽는 순간 바로 실행합니다. 카메라로 스
 
 - 더 보기
 - 무료로 시작 · 한 번 결제로 잠금 해제
-- 광고 없음
 - 프라이빗 / 기기 내
 - App Store · 무료
 

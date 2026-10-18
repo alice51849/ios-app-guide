@@ -2,7 +2,7 @@
 title: "MoneyTag — Proyek · Tag · Laporan | iOS App"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/id/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Pemasukan & Pengeluaran Setiap proyek punya pembukuannya sendiri: pemasukan diku
 - Gratis untuk mulai · buka kunci sekali bayar
 - Offline
 - Tanpa akun
-- Tanpa iklan
 - Tanpa pelacakan
 - Privat / di perangkat
 - Widget

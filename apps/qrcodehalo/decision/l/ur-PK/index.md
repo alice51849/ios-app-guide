@@ -2,7 +2,7 @@
 title: "QR Code Halo: اسکین اور تخلیق — فوراً کھولیں، بعد میں جانچیں | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/ur-PK/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - مزید
 - مفت آغاز
-- کوئی اشتہار نہیں
 - نجی / آلہ پر
 - App Store · مفت
 

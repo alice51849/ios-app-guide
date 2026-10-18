@@ -2,7 +2,7 @@
 title: "QR Code Halo: Quét & Tạo — Mở ngay, kiểm tra sau | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/vi/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo thực hiện ngay khi đọc được mã. Quét bằng camera ho�
 
 - Khác
 - Bắt đầu miễn phí · mở khóa một lần
-- Không quảng cáo
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí
 

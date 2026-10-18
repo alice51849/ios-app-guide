@@ -6,7 +6,7 @@
   "name": "Catàleg d'intencions de cerca de Lumi Studio Editor",
   "description": "Catàleg de primera mà que mostra per a qui està dissenyada cada app, la tasca que volen completar i el camí directe a l'App Store.",
   "inLanguage": "ca",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-mochi",
         "url": "https://apps.apple.com/es/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris, regles de repetició i una complicació per a Watch — i deliberadament sense maquinària de gestió de projectes. Per això existeix Mochi.",
+        "description": "Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris i compatibilitat amb l’Apple Watch — i deliberadament sense maquinària de gestió de projectes. Per això existeix Mochi.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "ca",
-          "description": "Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris, regles de repetició i una complicació per a Watch — i deliberadament sense maquinària de gestió de projectes. Per això existeix Mochi.",
+          "description": "Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris i compatibilitat amb l’Apple Watch — i deliberadament sense maquinària de gestió de projectes. Per això existeix Mochi.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld#offer-mochi"
           },

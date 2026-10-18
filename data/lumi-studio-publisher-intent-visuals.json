@@ -10,9 +10,9 @@
     "url": "https://open.cait518.cc/ios-app-guide"
   },
   "source_dataset": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json",
-  "source_sha256": "d875c46d16a467a9e9a91fb3ff61c3869fe3092da9675ee958efdf0d30bcf6f4",
-  "content_digest": "b2b33761b014845fcf0760d5255cc278fb033c3dc463c1ee5efd079b080808d8",
-  "generation_digest": "72e4f1a55e9f7d0177cad7a957dacaa2ab341a58a216c607ecd489fa9a35a2c1",
+  "source_sha256": "b1bc900b06bdcb03cefd05b67ea2c2e370a2205a59456ea743b6e252524d39a1",
+  "content_digest": "b77fa469913d751699952c943906ab0e84a5a21449e866174a846bbccc059282",
+  "generation_digest": "33e6156032938a12e530f69162fdfea31916f5a248fa0419e8ff6a7901031678",
   "ordering": "official_locale_order_then_alphabetical_app_name",
   "app_count": 53,
   "locale_count": 50,
@@ -34,8 +34,8 @@
     {
       "locale": "bn-BD",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
-      "sha256": "170197c2b6d6680b3d0da4c4d1eca05476da3ca29bf684ba1e9e92634b5d540f",
-      "dateModified": "2026-10-17"
+      "sha256": "fe580f975d992fb8fc464b5ade2569989221de37bad50f0577ef55e6322e45a0",
+      "dateModified": "2026-10-18"
     },
     {
       "locale": "ca",
@@ -64,7 +64,7 @@
     {
       "locale": "el",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
-      "sha256": "59f5e9f7851d1cc42a113a73e8e016decdbe5bb593f6b79fc8c735aa7b0c01ea",
+      "sha256": "bfb68e20e668f4de04aab0ffeb6fbef40c349a64c24912cb9ccee0f69b49b788",
       "dateModified": "2026-10-18"
     },
     {
@@ -250,7 +250,7 @@
     {
       "locale": "ru",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
-      "sha256": "bdf13f4286e55a4b5410d5e2113cec22c5f6438811827dd77dd5f1deab06f7dd",
+      "sha256": "2d236dd1918ba72f9941afa0995234776e5dbf39e2658572f324cca3e8e076f1",
       "dateModified": "2026-10-18"
     },
     {
@@ -298,7 +298,7 @@
     {
       "locale": "uk",
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
-      "sha256": "8d25e84eed5d2a972d84eceb9e094cead118f947802eaf283737b0723d2ed193",
+      "sha256": "2647482c8dd9b2fab0f2bd609fcef9d7552b164346a2910d615a6cb945aef789",
       "dateModified": "2026-10-18"
     },
     {
@@ -1544,7 +1544,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/bn-BD/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/lumimission.html",
       "app_store_url": null,
-      "sha256": "a77a63064b6224bbc3c592eb98af50db7c08ce1eead80c30e4608d4d35c3054f",
+      "sha256": "a550779cab5cb02879f94a1259ef8bbb9f913430af9cbd5fc4c8d9cdeae69ea5",
       "market_availability": {
         "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
         "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
@@ -5004,7 +5004,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/el/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/el/claudeusagemini.html",
       "app_store_url": "https://apps.apple.com/gr/app/id6818607603?pt=118326163&ct=iag_visual_el&mt=8",
-      "sha256": "11da5043649833cd62e3edce911a005f729abacb23328a27e4b0c4fbbe43ba79"
+      "sha256": "d85e4b5f9a0aa1c67b8db585c419ef93c3251cf888e43cb814ad51abee50f574"
     },
     {
       "locale": "el",
@@ -21434,7 +21434,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/ru/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/ru/claudeusagemini.html",
       "app_store_url": "https://apps.apple.com/ru/app/id6818607603?pt=118326163&ct=iag_visual_ru&mt=8",
-      "sha256": "892b1d427e8599ed7a23c3fc355badca9743e38d019a023a2e2f5c670f75e85f"
+      "sha256": "7db1cec005e6b9151d9a88e5f3d19a0d004ece06efd01002c03a6a93f375e22a"
     },
     {
       "locale": "ru",
@@ -25674,7 +25674,7 @@
       "gallery_url": "https://open.cait518.cc/ios-app-guide/uk/visuals/",
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/claudeusagemini.html",
       "app_store_url": "https://apps.apple.com/ua/app/id6818607603?pt=118326163&ct=iag_visual_uk&mt=8",
-      "sha256": "a8cde1ef19d0647afc198761ef6d57c1aaebdd3fd58cc26b330afc029f036051"
+      "sha256": "3510044f7b0d12750913793a7749810b1ed04128e164f8e070eb7fdbc3d3cf56"
     },
     {
       "locale": "uk",

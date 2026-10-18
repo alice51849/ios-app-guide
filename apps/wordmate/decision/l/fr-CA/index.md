@@ -2,7 +2,7 @@
 title: "meilleure app vocabulaire pour navetteurs occupés avec Apple Watch"
 lang: "fr-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/fr-CA/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ Les navetteurs occupés ont besoin de pratique vocabulaire qui s’insère dans 
 - Éducation
 - Téléchargement payant
 - Aucun compte
-- Aucune publicité
 - Aucun suivi
 - Privé / sur l'appareil
 - Widget

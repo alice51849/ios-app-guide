@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Ostatni raz — Kiedy to było? Przypomnienia | iOS App"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/pl/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Kiedy ostatnio zmieniono pościel, podlano roślinę, zadzwoniono do bliskich, z
 
 - Styl życia
 - Darmowe na start · jednorazowe odblokowanie
-- Offline
 - Bez konta
 - Bez reklam
 - Bez śledzenia

@@ -2,7 +2,7 @@
 title: "MoneyTag — Projekt · Taggar · Rapport | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/sv/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Intäkter och utgifter Varje projekt har sin egen bokföring: intäkter minus ut
 - Gratis att börja · engångsupplåsning
 - Offline
 - Inget konto
-- Inga annonser
 - Ingen spårning
 - Privat / på enheten
 - Widget

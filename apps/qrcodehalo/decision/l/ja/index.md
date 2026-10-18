@@ -2,7 +2,7 @@
 title: "開く前にリンクを表示する QR コードスキャナーアプリ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/ja/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo — QR Code Halo は「調べる、判断する、操作する」�
 
 - その他
 - 無料で開始・一度の購入でアンロック
-- 広告なし
 - プライベート／端末内
 - App Store · 無料
 

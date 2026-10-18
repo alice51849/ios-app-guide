@@ -2,7 +2,7 @@
 title: "WiFi Aid: Najděte chyby sítě — Router, mesh, DNS: diagnostika | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/cs/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

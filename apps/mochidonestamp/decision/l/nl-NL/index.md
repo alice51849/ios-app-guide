@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Laatste keer — Wanneer gedaan? Herinneringen | iOS App"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/nl-NL/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Wanneer verschoonde je voor het laatst het bed, gaf je een plant water, belde je
 
 - Leefstijl
 - Gratis te starten · eenmalige ontgrendeling
-- Offline
 - Geen account
 - Geen advertenties
 - Geen tracking

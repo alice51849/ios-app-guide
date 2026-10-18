@@ -2,7 +2,7 @@
 title: "MoneyTag: Příjmy a výdaje — Projekty · Štítky · Přehled | iOS App"
 lang: "cs"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/cs/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Příjmy a výdaje Každý projekt si vede vlastní účetnictví: příjmy minu
 - Zdarma na začátek
 - Offline
 - Bez účtu
-- Bez reklam
 - Bez sledování
 - Soukromé / v zařízení
 - Widget

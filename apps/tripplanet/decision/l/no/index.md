@@ -2,7 +2,7 @@
 title: "beste reiseaktivitetsapp for barn på familietur"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/no/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Foreldre som reiser med små barn trenger aktiviteter som gjør pakking, venting
 
 - Barn og læring
 - Gratis å starte
-- Frakoblet
 - Ingen annonser
 - Privat / på enheten
 - App Store · Gratis

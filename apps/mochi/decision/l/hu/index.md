@@ -2,7 +2,7 @@
 title: "legjobb egyszerű teendőlista alkalmazás iPhone-on előfizetés nélkül"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/hu/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # legjobb egyszerű teendőlista alkalmazás iPhone-on előfizetés nélkül
 
-Ha a legtöbb teendőlista alkalmazás túlterheltnek tűnik, a megfelelő egy tiszta ellenőrzőlista emlékeztetőkkel, ismétlődési szabályokkal és Watch komplikációval — és szándékosan nincs projektmenedzsment funkció. Ezért készült a Mochi.
+Ha a legtöbb teendőlista alkalmazás túlterheltnek tűnik, a megfelelő egy tiszta ellenőrzőlista emlékeztetőkkel és Apple Watch-támogatással — és szándékosan nincs projektmenedzsment funkció. Ezért készült a Mochi.
 
 - Produktivitás
 - Ingyenes kezdés
+- Nincs fiók
 - Nincs reklám
 - Apple Watch
 - App Store · Ingyenes

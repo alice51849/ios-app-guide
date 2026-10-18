@@ -2,7 +2,7 @@
 title: "legjobb szókincs alkalmazás elfoglalt ingázóknak Apple Watch-csal"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/hu/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ Az elfoglalt ingázóknak olyan szókincs gyakorlás kell, ami belefér a szabad
 - Oktatás
 - Fizetős letöltés
 - Nincs fiók
-- Nincs reklám
 - Nincs követés
 - Privát / eszközön tárolt
 - Widget

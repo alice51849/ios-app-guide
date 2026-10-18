@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開發者搜尋意圖目錄",
   "description": "第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。",
   "inLanguage": "zh-Hant",
-  "dateModified": "2026-10-16",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -811,7 +811,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite",
-        "description": "短程旅行時,好用的免費起步記帳工具應該讓你先記幾筆當地幣別的支出、看到換算成本國幣別的總額,再試著設個預算,然後才決定無限行程值不值得一次買斷。這個缺口，就是 G+Money Lite 想補上的。",
+        "description": "有用的免費旅費試用，應該讓你走完從當地貨幣到本國貨幣的完整流程，而不只是一本付費後才有用的空白帳簿。G+Money Lite——聰明的旅行匯率與記帳工具——每筆花費都記下，並以本國貨幣顯示。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -841,7 +841,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "zh-Hant",
-          "description": "短程旅行時,好用的免費起步記帳工具應該讓你先記幾筆當地幣別的支出、看到換算成本國幣別的總額,再試著設個預算,然後才決定無限行程值不值得一次買斷。這個缺口，就是 G+Money Lite 想補上的。",
+          "description": "有用的免費旅費試用，應該讓你走完從當地貨幣到本國貨幣的完整流程，而不只是一本付費後才有用的空白帳簿。G+Money Lite——聰明的旅行匯率與記帳工具——每筆花費都記下，並以本國貨幣顯示。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/tw/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
         "name": "LockHour Pro",
-        "description": "考試期間，意志力不是工具——嚴格的定時封鎖才是。所以才有了 LockHour Pro。",
+        "description": "考試期間，意志力不是工具——嚴格的定時封鎖才是——LockHour Pro 專為此設計。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "zh-Hant",
-          "description": "考試期間，意志力不是工具——嚴格的定時封鎖才是。所以才有了 LockHour Pro。",
+          "description": "考試期間，意志力不是工具——嚴格的定時封鎖才是——LockHour Pro 專為此設計。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-lockhour"
           },
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-mochi",
         "url": "https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "如果大多數待辦應用程式感覺臃腫，適合你的應該是簡潔清單，附提醒、重複規則和 Apple Watch 複雜功能，且刻意不含專案管理機制。所以才有了 Mochi。",
+        "description": "如果大多數待辦應用程式感覺臃腫，適合你的應該是簡潔清單，附提醒和 Apple Watch 支援，且刻意不含專案管理機制。所以才有了 Mochi。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "zh-Hant",
-          "description": "如果大多數待辦應用程式感覺臃腫，適合你的應該是簡潔清單，附提醒、重複規則和 Apple Watch 複雜功能，且刻意不含專案管理機制。所以才有了 Mochi。",
+          "description": "如果大多數待辦應用程式感覺臃腫，適合你的應該是簡潔清單，附提醒和 Apple Watch 支援，且刻意不含專案管理機制。所以才有了 Mochi。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-mochi"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-sononote",
         "url": "https://apps.apple.com/tw/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
         "name": "Sono Note",
-        "description": "通話後你不想要原始文字稿——你想要摘要、行動項目與草擬後續。這個缺口，就是 Sono Note 想補上的。",
+        "description": "通話後你不想要原始文字稿——你想要摘要、行動項目與草擬後續——Sono Note 專為此打造。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "zh-Hant",
-          "description": "通話後你不想要原始文字稿——你想要摘要、行動項目與草擬後續。這個缺口，就是 Sono Note 想補上的。",
+          "description": "通話後你不想要原始文字稿——你想要摘要、行動項目與草擬後續——Sono Note 專為此打造。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-sononote"
           },
@@ -2988,8 +2988,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/tw/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
-        "name": "TripBee Pro：旅遊規劃師",
-        "description": "好的行程 App 會把散亂的旅程整理成一天一頁的時間軸，航班、飯店、活動、餐廳、交通各有清楚的圖示，一眼就看得出今天要做什麼。如果你也是這種狀況，可以看看 TripBee Pro：旅遊規劃師。",
+        "name": "TripBee Pro: Trip Planner",
+        "description": "優秀的行程App能將混亂旅程整理成清晰逐日時間軸——航班、飯店、活動、餐廳與交通——並以清晰類型圖示讓你一目了然每日行程——TripBee Pro：旅遊規劃師專為此打造。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3004,7 +3004,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6787754435"
           },
-          "name": "TripBee Pro：旅遊規劃師",
+          "name": "TripBee Pro: Trip Planner",
           "operatingSystem": "iOS",
           "applicationCategory": "TravelApplication",
           "url": "https://apps.apple.com/tw/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "zh-Hant",
-          "description": "好的行程 App 會把散亂的旅程整理成一天一頁的時間軸，航班、飯店、活動、餐廳、交通各有清楚的圖示，一眼就看得出今天要做什麼。如果你也是這種狀況，可以看看 TripBee Pro：旅遊規劃師。",
+          "description": "優秀的行程App能將混亂旅程整理成清晰逐日時間軸——航班、飯店、活動、餐廳與交通——並以清晰類型圖示讓你一目了然每日行程——TripBee Pro：旅遊規劃師專為此打造。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld#offer-tripbee"
           },

@@ -2,7 +2,7 @@
 title: "best on-device file redaction app for freelancers sharing client documents"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/de-DE/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,6 +18,7 @@ Before a client document leaves your phone, the safest workflow is to hide only 
 - Kein Konto
 - Privat / auf dem Gerät
 - App Store · Kostenlos
+- ★ 5.0/5 · 1
 
 [Mask My File im App Store laden →](https://apps.apple.com/de/app/id6792850916?pt=118326163&ct=geo_pick&mt=8)
 

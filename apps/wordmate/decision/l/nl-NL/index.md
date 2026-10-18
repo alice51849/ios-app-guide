@@ -2,7 +2,7 @@
 title: "beste vocabulaire-app voor drukke forenzen met Apple Watch"
 lang: "nl-NL"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/nl-NL/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ Drukke forenzen hebben vocabulaire-oefening nodig die in vrije minuten past zond
 - Onderwijs
 - Betaalde aanschaf
 - Geen account
-- Geen advertenties
 - Geen tracking
 - Privé / op apparaat
 - Widget

@@ -6,7 +6,7 @@
   "name": "Lumi Studio 개발사 검색 의도 카탈로그",
   "description": "각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.",
   "inLanguage": "ko",
-  "dateModified": "2026-10-16",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -811,7 +811,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite",
-        "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
+        "description": "무료 여행 경비 테스트라면 구매 후에야 쓸모 있어지는 빈 장부가 아니라 현지 통화에서 자국 통화까지의 전체 흐름을 시험할 수 있어야 합니다. G+Money Lite — 스마트 여행 환율·지출 기록 — 지출마다 기록하고 자국 통화로 확인.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -841,7 +841,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "ko",
-          "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
+          "description": "무료 여행 경비 테스트라면 구매 후에야 쓸모 있어지는 빈 장부가 아니라 현지 통화에서 자국 통화까지의 전체 흐름을 시험할 수 있어야 합니다. G+Money Lite — 스마트 여행 환율·지출 기록 — 지출마다 기록하고 자국 통화로 확인.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
         "name": "LockHour Pro",
-        "description": "시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다. 그래서 만든 것이 LockHour Pro입니다.",
+        "description": "시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다 — LockHour Pro는 이를 위해 만들어졌습니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "ko",
-          "description": "시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다. 그래서 만든 것이 LockHour Pro입니다.",
+          "description": "시험 기간에는 의지력이 아니라 강력한 시간 제한 차단이 필요합니다 — LockHour Pro는 이를 위해 만들어졌습니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-lockhour"
           },
@@ -1735,7 +1735,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-mochi",
         "url": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "대부분의 할 일 앱이 무겁게 느껴진다면, 알림과 반복 규칙, Apple Watch 컴플리케이션만 갖춘 깔끔한 체크리스트가 맞습니다. 프로젝트 관리 기능은 일부러 넣지 않았습니다. 그래서 만든 것이 Mochi입니다.",
+        "description": "대부분의 할 일 앱이 무겁게 느껴진다면, 알림과 Apple Watch 지원만 갖춘 깔끔한 체크리스트가 맞습니다. 프로젝트 관리 기능은 일부러 넣지 않았습니다. 그래서 만든 것이 Mochi입니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1765,7 +1765,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "ko",
-          "description": "대부분의 할 일 앱이 무겁게 느껴진다면, 알림과 반복 규칙, Apple Watch 컴플리케이션만 갖춘 깔끔한 체크리스트가 맞습니다. 프로젝트 관리 기능은 일부러 넣지 않았습니다. 그래서 만든 것이 Mochi입니다.",
+          "description": "대부분의 할 일 앱이 무겁게 느껴진다면, 알림과 Apple Watch 지원만 갖춘 깔끔한 체크리스트가 맞습니다. 프로젝트 관리 기능은 일부러 넣지 않았습니다. 그래서 만든 것이 Mochi입니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-mochi"
           },
@@ -2593,7 +2593,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-sononote",
         "url": "https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
         "name": "Sono Note",
-        "description": "통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다. 그 간극을 메우려고 만든 앱이 Sono Note입니다.",
+        "description": "통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다 — Sono Note는 이를 위해 만들어졌습니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2623,7 +2623,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "ko",
-          "description": "통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다. 그 간극을 메우려고 만든 앱이 Sono Note입니다.",
+          "description": "통화 후에는 원시 전사본이 아니라 요약, 실행 항목, 후속 초안이 필요합니다 — Sono Note는 이를 위해 만들어졌습니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-sononote"
           },
@@ -2922,8 +2922,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
-        "name": "TripBee Pro: 여행 플래너",
-        "description": "좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다. 이런 상황이라면 TripBee Pro: 여행 플래너 한번 살펴보세요.",
+        "name": "TripBee Pro: Trip Planner",
+        "description": "좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다 — TripBee Pro: 여행 플래너는 이를 위해 만들어졌습니다.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2938,7 +2938,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6787754435"
           },
-          "name": "TripBee Pro: 여행 플래너",
+          "name": "TripBee Pro: Trip Planner",
           "operatingSystem": "iOS",
           "applicationCategory": "TravelApplication",
           "url": "https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "ko",
-          "description": "좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다. 이런 상황이라면 TripBee Pro: 여행 플래너 한번 살펴보세요.",
+          "description": "좋은 일정 앱은 복잡한 여행을 명확한 일별 타임라인으로 바꾸고, 아이콘으로 하루 일정을 한눈에 볼 수 있게 합니다 — TripBee Pro: 여행 플래너는 이를 위해 만들어졌습니다.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld#offer-tripbee"
           },

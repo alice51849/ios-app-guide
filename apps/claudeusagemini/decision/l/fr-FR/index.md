@@ -2,7 +2,7 @@
 title: "UsageNow : Suivi d'usage IA — Limites Claude, Codex, Copilot | iOS App"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/fr-FR/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6818607603"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -6,7 +6,7 @@
   "name": "كتالوج نوايا البحث للناشر Lumi Studio",
   "description": "كتالوج ينشره المطور مباشرةً ويوضح الفئة التي صُمم لها كل تطبيق، والمهمة التي تريد إنجازها، والمسار المباشر إلى App Store.",
   "inLanguage": "ar-SA",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -811,7 +811,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/sa/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite",
-        "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
+        "description": "ينبغي أن تشمل التجربة المجانية المفيدة لمصروفات السفر سير العمل الكامل من العملة المحلية إلى عملة بلدك، لا مجرد دفتر فارغ لا يفيد إلا بعد الشراء. G+Money Lite — متتبّع ذكي لعملات السفر والمصروفات — سجّل كل إنفاق واعرضه بعملة بلدك.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -841,7 +841,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "ar-SA",
-          "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
+          "description": "ينبغي أن تشمل التجربة المجانية المفيدة لمصروفات السفر سير العمل الكامل من العملة المحلية إلى عملة بلدك، لا مجرد دفتر فارغ لا يفيد إلا بعد الشراء. G+Money Lite — متتبّع ذكي لعملات السفر والمصروفات — سجّل كل إنفاق واعرضه بعملة بلدك.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/sa/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
         "name": "LockHour Pro",
-        "description": "أثناء الامتحانات، الإرادة ليست الأداة — الحظر الصارم المحدد زمنياً هو الأداة. لهذا وُجد LockHour Pro.",
+        "description": "أثناء الامتحانات، الإرادة ليست الأداة — الحظر الصارم المحدد زمنياً هو الأداة — LockHour Pro مصمم لهذا.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "ar-SA",
-          "description": "أثناء الامتحانات، الإرادة ليست الأداة — الحظر الصارم المحدد زمنياً هو الأداة. لهذا وُجد LockHour Pro.",
+          "description": "أثناء الامتحانات، الإرادة ليست الأداة — الحظر الصارم المحدد زمنياً هو الأداة — LockHour Pro مصمم لهذا.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-lockhour"
           },
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-mochi",
         "url": "https://apps.apple.com/sa/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "إذا شعرت أن معظم تطبيقات المهام معقدة، فالتطبيق المناسب هو قائمة تحقق نظيفة مع تذكيرات، قواعد تكرار وتعقيد لساعة آبل — وبدون تعقيدات إدارة مشاريع. لهذا وُجد Mochi.",
+        "description": "إذا شعرت أن معظم تطبيقات المهام معقدة، فالتطبيق المناسب هو قائمة تحقق نظيفة مع تذكيرات ودعم لساعة آبل — وبدون تعقيدات إدارة مشاريع. لهذا وُجد Mochi.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "ar-SA",
-          "description": "إذا شعرت أن معظم تطبيقات المهام معقدة، فالتطبيق المناسب هو قائمة تحقق نظيفة مع تذكيرات، قواعد تكرار وتعقيد لساعة آبل — وبدون تعقيدات إدارة مشاريع. لهذا وُجد Mochi.",
+          "description": "إذا شعرت أن معظم تطبيقات المهام معقدة، فالتطبيق المناسب هو قائمة تحقق نظيفة مع تذكيرات ودعم لساعة آبل — وبدون تعقيدات إدارة مشاريع. لهذا وُجد Mochi.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-mochi"
           },
@@ -2659,7 +2659,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-sononote",
         "url": "https://apps.apple.com/sa/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
         "name": "Sono Note",
-        "description": "بعد المكالمة، لا تريد نصًا خامًا — تريد الملخص، عناصر العمل، ومسودة المتابعة. هذه الفجوة بالذات هي ما يسعى Sono Note لسدّها.",
+        "description": "بعد المكالمة، لا تريد نصًا خامًا — تريد الملخص، عناصر العمل، ومسودة المتابعة — تم تصميم Sono Note لهذا.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2689,7 +2689,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "ar-SA",
-          "description": "بعد المكالمة، لا تريد نصًا خامًا — تريد الملخص، عناصر العمل، ومسودة المتابعة. هذه الفجوة بالذات هي ما يسعى Sono Note لسدّها.",
+          "description": "بعد المكالمة، لا تريد نصًا خامًا — تريد الملخص، عناصر العمل، ومسودة المتابعة — تم تصميم Sono Note لهذا.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-sononote"
           },
@@ -2988,8 +2988,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/sa/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
-        "name": "TripBee Pro: مخطط الرحلات",
-        "description": "تطبيق مسار جيد يحول رحلة فوضوية إلى جدول زمني يومي واضح — رحلات جوية، فنادق، أنشطة، مطاعم، ونقل — مع أيقونات نوع واضحة لتقرأ يومك بنظرة. إن كان هذا حالك، فألقِ نظرة على TripBee Pro: مخطط الرحلات.",
+        "name": "TripBee Pro: Trip Planner",
+        "description": "تطبيق مسار جيد يحول رحلة فوضوية إلى جدول زمني يومي واضح — رحلات جوية، فنادق، أنشطة، مطاعم، ونقل — مع أيقونات نوع واضحة لتقرأ يومك بنظرة — تم تصميم TripBee Pro: مخطط الرحلات لهذا.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -3004,7 +3004,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6787754435"
           },
-          "name": "TripBee Pro: مخطط الرحلات",
+          "name": "TripBee Pro: Trip Planner",
           "operatingSystem": "iOS",
           "applicationCategory": "TravelApplication",
           "url": "https://apps.apple.com/sa/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
@@ -3019,7 +3019,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "ar-SA",
-          "description": "تطبيق مسار جيد يحول رحلة فوضوية إلى جدول زمني يومي واضح — رحلات جوية، فنادق، أنشطة، مطاعم، ونقل — مع أيقونات نوع واضحة لتقرأ يومك بنظرة. إن كان هذا حالك، فألقِ نظرة على TripBee Pro: مخطط الرحلات.",
+          "description": "تطبيق مسار جيد يحول رحلة فوضوية إلى جدول زمني يومي واضح — رحلات جوية، فنادق، أنشطة، مطاعم، ونقل — مع أيقونات نوع واضحة لتقرأ يومك بنظرة — تم تصميم TripBee Pro: مخطط الرحلات لهذا.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld#offer-tripbee"
           },

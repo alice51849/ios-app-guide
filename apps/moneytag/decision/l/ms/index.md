@@ -2,7 +2,7 @@
 title: "MoneyTag — Projek · Tag · Laporan | iOS App"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/ms/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Pendapatan & Perbelanjaan Setiap projek menyimpan akaunnya sendiri: pendapatan t
 - Percuma untuk bermula · buka kunci sekali sahaja
 - Luar talian
 - Tiada akaun
-- Tiada iklan
 - Tiada penjejakan
 - Peribadi / pada peranti
 - Widjet

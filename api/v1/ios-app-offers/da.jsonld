@@ -6,7 +6,7 @@
   "name": "Lumi Studio – udgiverens katalog over søgeintentioner",
   "description": "Et katalog udgivet direkte af udvikleren, som viser, hvem hver app er udviklet til, hvilken opgave brugeren vil løse, og den direkte vej til App Store.",
   "inLanguage": "da",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-mochi",
         "url": "https://apps.apple.com/dk/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "Hvis de fleste to-do apps føles oppustede, er den rigtige en ren tjekliste med påmindelser, gentagelsesregler og en Watch-komplikation — og bevidst uden projektstyringsmaskineri. Det er derfor Mochi findes.",
+        "description": "Hvis de fleste to-do apps føles oppustede, er den rigtige en ren tjekliste med påmindelser og understøttelse af Apple Watch — og bevidst uden projektstyringsmaskineri. Det er derfor Mochi findes.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "da",
-          "description": "Hvis de fleste to-do apps føles oppustede, er den rigtige en ren tjekliste med påmindelser, gentagelsesregler og en Watch-komplikation — og bevidst uden projektstyringsmaskineri. Det er derfor Mochi findes.",
+          "description": "Hvis de fleste to-do apps føles oppustede, er den rigtige en ren tjekliste med påmindelser og understøttelse af Apple Watch — og bevidst uden projektstyringsmaskineri. Det er derfor Mochi findes.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/da.jsonld#offer-mochi"
           },

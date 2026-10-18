@@ -2,7 +2,7 @@
 title: "MoneyTag: آمدنی اور اخراجات — پروجیکٹ · ٹیگز · رپورٹ | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/ur-PK/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ publisher: "Lumi Studio"
 - مفت آغاز
 - آف لائن
 - کوئی اکاؤنٹ نہیں
-- کوئی اشتہار نہیں
 - کوئی نگرانی نہیں
 - نجی / آلہ پر
 - وجیٹ

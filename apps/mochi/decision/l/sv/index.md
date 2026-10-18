@@ -2,7 +2,7 @@
 title: "bästa enkla att-göra-lista-app på iPhone utan prenumeration"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/sv/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # bästa enkla att-göra-lista-app på iPhone utan prenumeration
 
-Om de flesta att-göra-appar känns överlastade är rätt app en ren checklista med påminnelser, upprepningsregler och en Watch-komplikation – och medvetet utan projektledningsmaskineri. Det är därför Mochi finns.
+Om de flesta att-göra-appar känns överlastade är rätt app en ren checklista med påminnelser och stöd för Apple Watch – och medvetet utan projektledningsmaskineri. Det är därför Mochi finns.
 
 - Produktivitet
 - Gratis att börja · engångsupplåsning
+- Inget konto
 - Inga annonser
 - Apple Watch
 - App Store · Gratis

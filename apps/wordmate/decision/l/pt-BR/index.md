@@ -2,7 +2,7 @@
 title: "melhor app de vocabulário para quem usa Apple Watch no transporte"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/pt-BR/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ Quem usa transporte precisa de prática de vocabulário que caiba em minutos liv
 - Educação
 - Download pago
 - Sem conta
-- Sem anúncios
 - Sem rastreamento
 - Privado / no dispositivo
 - Widget

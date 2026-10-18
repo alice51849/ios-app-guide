@@ -2,7 +2,7 @@
 title: "Beste Vokabel-App für Pendler mit Apple Watch"
 lang: "de-DE"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/de-DE/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ Pendler brauchen Vokabeltraining, das in freie Minuten passt, ohne eine vollstä
 - Bildung
 - Kostenpflichtiger Download
 - Kein Konto
-- Keine Werbung
 - Kein Tracking
 - Privat / auf dem Gerät
 - Widget

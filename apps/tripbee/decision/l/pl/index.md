@@ -2,7 +2,7 @@
 title: "najlepsza aplikacja do planowania planu podróży na iPhone"
 lang: "pl"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/pl/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ Dobra aplikacja do planowania zmienia chaotyczną podróż w jasny plan dzień p
 - Podróże
 - Płatne do pobrania
 - Offline
-- Bez konta
 - Bez reklam
 - Bez śledzenia
 - Prywatne / na urządzeniu

@@ -2,7 +2,7 @@
 title: "能儲存紀錄、可命名又可搜尋的最佳 iPhone 計算機 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/zh-Hant/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6794178671"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

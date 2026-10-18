@@ -2,7 +2,7 @@
 title: "QR Code Halo: Ler e Criar — Abre já, verifica depois | iOS App"
 lang: "pt-PT"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/pt-PT/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ O QR Code Halo age assim que lê um código. Digitalize com a câmara ou escolha
 
 - Mais
 - Grátis para começar · desbloqueio único
-- Sem anúncios
 - Privado / no dispositivo
 - App Store · Grátis
 

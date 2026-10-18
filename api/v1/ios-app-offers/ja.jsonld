@@ -6,7 +6,7 @@
   "name": "Lumi Studio 開発元検索意図カタログ",
   "description": "各アプリの対象ユーザー、達成したいタスク、App Store への直接の導線を、開発元が公開するカタログです。",
   "inLanguage": "ja",
-  "dateModified": "2026-10-16",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -811,7 +811,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-gmoneylite",
         "url": "https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "name": "G+Money Lite",
-        "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
+        "description": "無料で旅費の記録を試すなら、購入後にしか役に立たない空の帳簿ではなく、現地通貨から自国通貨までの一連の流れを試せるべきです。G+Money Lite — 旅行の通貨換算と支出記録 — 支出ごとに記録し、自国通貨で確認。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -841,7 +841,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6793436548",
           "inLanguage": "ja",
-          "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.",
+          "description": "無料で旅費の記録を試すなら、購入後にしか役に立たない空の帳簿ではなく、現地通貨から自国通貨までの一連の流れを試せるべきです。G+Money Lite — 旅行の通貨換算と支出記録 — 支出ごとに記録し、自国通貨で確認。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-gmoneylite"
           },
@@ -1075,7 +1075,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-lockhour",
         "url": "https://apps.apple.com/jp/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
         "name": "LockHour Pro",
-        "description": "試験中は意志力ではなく、強制的な時間制限ブロックが必要です。だからLockHour Proを作りました。",
+        "description": "試験中は意志力ではなく、強制的な時間制限ブロックが必要です。— LockHour Proはそれを実現します。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1105,7 +1105,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6780107485",
           "inLanguage": "ja",
-          "description": "試験中は意志力ではなく、強制的な時間制限ブロックが必要です。だからLockHour Proを作りました。",
+          "description": "試験中は意志力ではなく、強制的な時間制限ブロックが必要です。— LockHour Proはそれを実現します。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-lockhour"
           },
@@ -1735,7 +1735,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-mochi",
         "url": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "多くのToDoアプリが重く感じるなら、リマインダー、繰り返しルール、Watchコンプリケーションを備えたクリーンなチェックリストで。だからMochiを作りました。",
+        "description": "多くのToDoアプリが重く感じるなら、リマインダーとApple Watch対応を備えたクリーンなチェックリストで。だからMochiを作りました。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1765,7 +1765,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "ja",
-          "description": "多くのToDoアプリが重く感じるなら、リマインダー、繰り返しルール、Watchコンプリケーションを備えたクリーンなチェックリストで。だからMochiを作りました。",
+          "description": "多くのToDoアプリが重く感じるなら、リマインダーとApple Watch対応を備えたクリーンなチェックリストで。だからMochiを作りました。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-mochi"
           },
@@ -2593,7 +2593,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-sononote",
         "url": "https://apps.apple.com/jp/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
         "name": "Sono Note",
-        "description": "通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです。その隙間を埋めるためにSono Noteを作りました。",
+        "description": "通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです—Sono Noteはこれを念頭に作られています。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2623,7 +2623,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6782139553",
           "inLanguage": "ja",
-          "description": "通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです。その隙間を埋めるためにSono Noteを作りました。",
+          "description": "通話後に欲しいのは生の文字起こしではなく、要約、アクションアイテム、フォローアップの下書きです—Sono Noteはこれを念頭に作られています。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-sononote"
           },
@@ -2923,7 +2923,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-tripbee",
         "url": "https://apps.apple.com/jp/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
         "name": "TripBee Pro: 旅行プランナー",
-        "description": "優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムラインに整理し、フライト、ホテル、アクティビティ、レストラン、交通機関を種類別アイコンで一目で確認できるようにします。心当たりがあるなら、TripBee Pro: 旅行プランナーを試してみてください。",
+        "description": "優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムラインに整理し、フライト、ホテル、アクティビティ、レストラン、交通機関を種類別アイコンで一目で確認できるようにします — TripBee Pro: Trip Planner はこのために作られています。",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -2953,7 +2953,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6787754435",
           "inLanguage": "ja",
-          "description": "優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムラインに整理し、フライト、ホテル、アクティビティ、レストラン、交通機関を種類別アイコンで一目で確認できるようにします。心当たりがあるなら、TripBee Pro: 旅行プランナーを試してみてください。",
+          "description": "優れた旅程アプリは、まとまりのない旅行計画を明確な日別タイムラインに整理し、フライト、ホテル、アクティビティ、レストラン、交通機関を種類別アイコンで一目で確認できるようにします — TripBee Pro: Trip Planner はこのために作られています。",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld#offer-tripbee"
           },

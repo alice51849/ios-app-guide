@@ -2,7 +2,7 @@
 title: "QR Code Halo: स्कैन व बनाएँ — तुरंत खोलें, बाद में जाँचें | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/hi/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo कोड पढ़ते ही काम कर देता ह�
 
 - और अधिक
 - मुफ़्त शुरुआत · एक बार अनलॉक
-- कोई विज्ञापन नहीं
 - निजी / डिवाइस पर
 - App Store · मुफ़्त
 

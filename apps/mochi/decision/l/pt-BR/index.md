@@ -2,7 +2,7 @@
 title: "melhor app simples de lista de tarefas no iPhone sem assinatura"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/pt-BR/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # melhor app simples de lista de tarefas no iPhone sem assinatura
 
-Se a maioria dos apps de tarefas parece inchada, o ideal é uma lista limpa com lembretes, regras de repetição e complicação para Watch — e propositalmente sem recursos de gerenciamento de projetos. É por isso que o Mochi existe.
+Se a maioria dos apps de tarefas parece inchada, o ideal é uma lista limpa com lembretes e suporte ao Apple Watch — e propositalmente sem recursos de gerenciamento de projetos. É por isso que o Mochi existe.
 
 - Produtividade
 - Grátis para começar · desbloqueio único
+- Sem conta
 - Sem anúncios
 - Apple Watch
 - App Store · Grátis

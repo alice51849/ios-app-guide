@@ -2,7 +2,7 @@
 title: "best app to block social media while studying iphone"
 lang: "en-AU"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/en-AU/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best app to block social media while studying iphone
 
-During exams, willpower isn't the tool — a hard timed block is. That's why LockHour Pro exists.
+During exams, willpower isn't the tool — a hard timed block is — LockHour Pro is built for this.
 
 - Productivity
 - Free to start · one-time unlock

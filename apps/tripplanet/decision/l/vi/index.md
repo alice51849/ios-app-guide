@@ -2,7 +2,7 @@
 title: "ứng dụng hoạt động du lịch tốt nhất cho trẻ em khi đi cùng gia đình"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/vi/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787193643"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Phụ huynh đi du lịch cùng trẻ nhỏ cần hoạt động biến việc c
 
 - Trẻ em & học tập
 - Bắt đầu miễn phí · mở khóa một lần
-- Ngoại tuyến
 - Không quảng cáo
 - Riêng tư / trên thiết bị
 - App Store · Miễn phí

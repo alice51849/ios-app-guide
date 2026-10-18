@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Sist — Når var det? Påminnelser | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/no/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Når skiftet du sist sengetøy, vannet en plante, ringte familien, sikkerhetskop
 
 - Livsstil
 - Gratis å starte
-- Frakoblet
 - Ingen konto
 - Ingen annonser
 - Ingen sporing

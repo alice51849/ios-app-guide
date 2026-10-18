@@ -2,7 +2,7 @@
 title: "best free travel expense tracker with currency conversion for iphone"
 lang: "tr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/tr/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # best free travel expense tracker with currency conversion for iphone
 
-A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.
+Faydalı bir ücretsiz seyahat harcaması denemesi, yalnızca satın aldıktan sonra işe yarayan boş bir defter değil, yerel para biriminden kendi para biriminize kadar tüm akışı kapsamalıdır. G+Money Lite — Akıllı seyahat döviz ve harcama takipçisi — her harcamayı kaydedin ve kendi para biriminizde görün.
 
 - Para & seyahat
 - Başlangıçta ücretsiz · tek seferlik açma

@@ -2,7 +2,7 @@
 title: "Wordmate: শব্দভাণ্ডার শিখুন — শব্দ, ফ্ল্যাশকার্ড, উইজেট | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/bn-BD/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,6 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 - শিক্ষা
 - পেইড ডাউনলোড
 - কোনও অ্যাকাউন্ট নেই
-- কোনও বিজ্ঞাপন নেই
 - কোনও ট্র্যাকিং নেই
 - গোপনীয় / ডিভাইসে
 - উইজেট

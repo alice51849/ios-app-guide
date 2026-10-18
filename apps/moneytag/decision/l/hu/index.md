@@ -2,7 +2,7 @@
 title: "MoneyTag — Projektek · Címkék · Jelentés | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/hu/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Bevételek és kiadások Minden projekt külön könyvelést vezet: a bevétel m
 - Ingyenes kezdés
 - Offline
 - Nincs fiók
-- Nincs reklám
 - Nincs követés
 - Privát / eszközön tárolt
 - Widget

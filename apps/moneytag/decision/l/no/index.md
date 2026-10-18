@@ -2,7 +2,7 @@
 title: "MoneyTag — Prosjekter · Tagger · Rapport | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/no/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Inntekter og utgifter Hvert prosjekt fører sitt eget regnskap: inntekter minus 
 - Gratis å starte
 - Frakoblet
 - Ingen konto
-- Ingen annonser
 - Ingen sporing
 - Privat / på enheten
 - Widget

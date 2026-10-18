@@ -6,7 +6,7 @@
   "name": "Catalogo degli intenti di ricerca dell'editore Lumi Studio",
   "description": "Un catalogo pubblicato direttamente dallo sviluppatore che indica a chi è destinata ogni app, l'attività da completare e l'accesso diretto all'App Store.",
   "inLanguage": "it",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-10-17",
   "numberOfItems": 53,
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
   "itemListElement": [
@@ -1801,7 +1801,7 @@
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-mochi",
         "url": "https://apps.apple.com/it/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "name": "Mochi",
-        "description": "Se la maggior parte delle app per liste ti sembra troppo complessa, quella giusta è una lista pulita con promemoria, regole di ripetizione e una complicazione per Watch — e volutamente senza gestione progetti. È per questo che esiste Mochi.",
+        "description": "Se la maggior parte delle app per liste ti sembra troppo complessa, quella giusta è una lista pulita con promemoria e supporto per Apple Watch — e volutamente senza gestione progetti. È per questo che esiste Mochi.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -1831,7 +1831,7 @@
           },
           "sameAs": "https://apps.apple.com/app/id6785004775",
           "inLanguage": "it",
-          "description": "Se la maggior parte delle app per liste ti sembra troppo complessa, quella giusta è una lista pulita con promemoria, regole di ripetizione e una complicazione per Watch — e volutamente senza gestione progetti. È per questo che esiste Mochi.",
+          "description": "Se la maggior parte delle app per liste ti sembra troppo complessa, quella giusta è una lista pulita con promemoria e supporto per Apple Watch — e volutamente senza gestione progetti. È per questo che esiste Mochi.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/it.jsonld#offer-mochi"
           },

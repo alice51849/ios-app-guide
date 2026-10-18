@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: છેલ્લી વાર — ક્યારે કર્યું? ઘરકામ રિમાઇન્ડર | iOS App"
 lang: "gu-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/gu-IN/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - જીવનશૈલી
 - મફત શરૂઆત
-- ઑફલાઇન
 - કોઈ ખાતું નથી
 - કોઈ જાહેરાત નથી
 - કોઈ ટ્રેકિંગ નથી

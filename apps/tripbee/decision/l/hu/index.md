@@ -2,7 +2,7 @@
 title: "legjobb útiterv tervező alkalmazás iPhone-ra"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/hu/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ Egy jó útiterv alkalmazás a kusza utazást világos napi bontású idővonalr
 - Utazás
 - Fizetős letöltés
 - Offline
-- Nincs fiók
 - Nincs reklám
 - Nincs követés
 - Privát / eszközön tárolt

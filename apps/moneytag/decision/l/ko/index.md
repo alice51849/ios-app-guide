@@ -2,7 +2,7 @@
 title: "MoneyTag: 수입과 지출 — 프로젝트 · 태그 · 리포트 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/ko/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ publisher: "Lumi Studio"
 - 무료로 시작 · 한 번 결제로 잠금 해제
 - 오프라인
 - 계정 없음
-- 광고 없음
 - 추적 없음
 - 프라이빗 / 기기 내
 - 위젯

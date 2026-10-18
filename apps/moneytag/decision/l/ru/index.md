@@ -2,7 +2,7 @@
 title: "лучший трекер доходов и расходов для фриланс-проектов без подписки"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/ru/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ publisher: "Lumi Studio"
 - Бесплатно начать · разовая разблокировка
 - Автономно
 - Без учётной записи
-- Без рекламы
 - Без отслеживания
 - Лично / на устройстве
 - Виджет

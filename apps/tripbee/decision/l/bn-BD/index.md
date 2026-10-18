@@ -2,7 +2,7 @@
 title: "TripBee: ট্রিপ প্ল্যানার — গ্রুপ ভ্রমণ ও প্যাকিং লিস্ট | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/bn-BD/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -17,7 +17,6 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 - ভ্রমণ
 - পেইড ডাউনলোড
 - অফলাইন
-- কোনও অ্যাকাউন্ট নেই
 - কোনও বিজ্ঞাপন নেই
 - কোনও ট্র্যাকিং নেই
 - গোপনীয় / ডিভাইসে

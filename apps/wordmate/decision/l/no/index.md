@@ -2,7 +2,7 @@
 title: "beste vokabularapp for travle pendlere med Apple Watch"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/no/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ Travle pendlere trenger vokabularøving som passer inn i ledige minutter uten å
 - Utdanning
 - Betalt nedlasting
 - Ingen konto
-- Ingen annonser
 - Ingen sporing
 - Privat / på enheten
 - Widget

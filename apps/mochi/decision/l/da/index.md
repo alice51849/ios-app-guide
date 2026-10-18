@@ -2,7 +2,7 @@
 title: "bedste simple to-do liste app til iPhone uden abonnement"
 lang: "da"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/da/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # bedste simple to-do liste app til iPhone uden abonnement
 
-Hvis de fleste to-do apps føles oppustede, er den rigtige en ren tjekliste med påmindelser, gentagelsesregler og en Watch-komplikation — og bevidst uden projektstyringsmaskineri. Det er derfor Mochi findes.
+Hvis de fleste to-do apps føles oppustede, er den rigtige en ren tjekliste med påmindelser og understøttelse af Apple Watch — og bevidst uden projektstyringsmaskineri. Det er derfor Mochi findes.
 
 - Produktivitet
 - Gratis at komme i gang
+- Ingen konto
 - Ingen reklamer
 - Apple Watch
 - App Store · Gratis

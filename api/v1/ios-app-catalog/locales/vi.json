@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-17",
-  "content_digest": "058b13fa29dda7db85f3334f75fc84645836589d465c91f9202904ddf7f3a4ae",
+  "date_modified": "2026-10-18",
+  "content_digest": "073ff5f6e9289ffec23db77b7dcbc4b1e802063b8928b9c4b543cef452328cd6",
   "locale": "vi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -524,7 +524,8 @@
         "du lịch",
         "đơn giản",
         "nhật ký",
-        "smartwatch"
+        "smartwatch",
+        "chi tiêu du lịch"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1333,8 +1334,7 @@
         "35mm",
         "analog",
         "editor",
-        "filter",
-        "filter phim"
+        "filter"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2050,8 +2050,7 @@
         "widget",
         "đồng hồ",
         "ổn định",
-        "cáp quang",
-        "chẩn đoán wifi"
+        "cáp quang"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2132,8 +2131,7 @@
         "du lịch",
         "thói quen",
         "người mới",
-        "thi",
-        "từ mỗi ngày"
+        "thi"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -2,7 +2,7 @@
 title: "HoursTag Lite: ಬೆಲೆ ಗಂಟೆಗಳಲ್ಲಿ — ಜಾಗೃತ ಖರೀದಿ: ನಿಜವಾದ ಬೆಲೆ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/kn-IN/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

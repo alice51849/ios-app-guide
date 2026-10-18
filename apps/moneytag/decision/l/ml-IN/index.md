@@ -2,7 +2,7 @@
 title: "MoneyTag: വരവും ചെലവും — പ്രോജക്റ്റുകൾ · ടാഗുകൾ | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/ml-IN/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ publisher: "Lumi Studio"
 - സൗജന്യമായി ആരംഭിക്കുക
 - ഓഫ്‌ലൈൻ
 - അക്കൗണ്ട് ഇല്ല
-- വ്യാപനങ്ങൾ ഇല്ല
 - ട്രാക്കിംഗ് ഇല്ല
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - വിഡ്ജറ്റ്

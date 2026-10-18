@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: Nazadnje — Kdaj je bilo? Opomniki opravil | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/sl-SI/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ Kdaj ste nazadnje zamenjali posteljnino, zalili rastlino, poklicali družino, va
 
 - Življenjski slog
 - Brezplačen začetek
-- Brez povezave
 - Brez računa
 - Brez oglasov
 - Brez sledenja

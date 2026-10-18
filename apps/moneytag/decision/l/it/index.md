@@ -2,7 +2,7 @@
 title: "MoneyTag: Entrate e uscite — Progetti · Tag · Report | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/it/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Entrate e uscite Ogni progetto tiene la propria contabilità: entrate meno uscit
 - Gratis per iniziare · sblocco unico
 - Offline
 - Nessun account
-- Nessuna pubblicità
 - Nessun tracciamento
 - Privato / su dispositivo
 - Widget

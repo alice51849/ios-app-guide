@@ -2,7 +2,7 @@
 title: "millor app de llista de tasques simple per a iPhone sense subscripció"
 lang: "ca"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ca/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # millor app de llista de tasques simple per a iPhone sense subscripció
 
-Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris, regles de repetició i una complicació per a Watch — i deliberadament sense maquinària de gestió de projectes. Per això existeix Mochi.
+Si la majoria d’apps de tasques et semblen pesades, la correcta és una llista neta amb recordatoris i compatibilitat amb l’Apple Watch — i deliberadament sense maquinària de gestió de projectes. Per això existeix Mochi.
 
 - Productivitat
 - Inici gratuït
+- Sense compte
 - Sense anuncis
 - Apple Watch
 - App Store · Gratis

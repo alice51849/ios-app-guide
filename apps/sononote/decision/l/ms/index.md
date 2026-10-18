@@ -2,7 +2,7 @@
 title: "aplikasi nota suara terbaik yang meringkaskan mesyuarat di iPhone"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/ms/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6782139553"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # aplikasi nota suara terbaik yang meringkaskan mesyuarat di iPhone
 
-Selepas panggilan, anda tidak mahu transkrip mentah — anda mahu ringkasan, item tindakan, dan draf susulan. Itulah jurang yang cuba ditutup oleh Sono Note.
+Selepas panggilan, anda tidak mahu transkrip mentah — anda mahu ringkasan, item tindakan, dan draf susulan — Sono Note dibina untuk ini.
 
 - Produktiviti
 - Percuma untuk bermula · buka kunci sekali sahaja

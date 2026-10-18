@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: آخری بار — کب کیا تھا؟ گھر کے کام یاد | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/ur-PK/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ publisher: "Lumi Studio"
 
 - طرز زندگی
 - مفت آغاز
-- آف لائن
 - کوئی اکاؤنٹ نہیں
 - کوئی اشتہار نہیں
 - کوئی نگرانی نہیں

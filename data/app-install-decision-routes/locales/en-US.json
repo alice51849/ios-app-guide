@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "en-US",
-  "dateModified": "2026-10-17",
-  "content_digest": "b6f281ecd8a7cf4a7a844dac8baa3522a115ea368d56cbe0094f42138c58cdcd",
-  "generation_digest": "a22202b1de352c33cad6f7e30b5f575d156523882164ad3331c9bc2f3b693d7b",
+  "dateModified": "2026-10-18",
+  "content_digest": "8227e4c40b0aa873cbaed9fbb75189f6fe9f9492a9eeaad57261be4ea047499d",
+  "generation_digest": "30f05dfd5432007545b1c731c574b482dac3a8b358b4cd4b7966893ffd63ed6c",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -483,10 +483,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "No account",
+        "No ads",
         "Private / on-device"
       ],
       "device_surfaces": [
@@ -501,6 +503,7 @@
         "Productivity",
         "Free to start · one-time unlock",
         "No account",
+        "No ads",
         "Private / on-device",
         "Widget",
         "Apple Watch",
@@ -1738,7 +1741,7 @@
         "No ads",
         "Apple Watch",
         "App Store · Free",
-        "★ 4.2/5 · 28"
+        "★ 4.1/5 · 29"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/en-US/index.html",
@@ -1752,8 +1755,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
-        "rating_value": 4.2,
-        "rating_count": 28
+        "rating_value": 4.1,
+        "rating_count": 29
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",

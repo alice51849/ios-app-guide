@@ -2,7 +2,7 @@
 title: "QR Code Halo: ਸਕੈਨ ਤੇ ਬਣਾਓ — ਤੁਰੰਤ ਖੋਲ੍ਹੋ, ਬਾਅਦ ਵਿੱਚ ਜਾਂਚੋ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/pa-IN/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo ਕੋਡ ਪੜ੍ਹਦੇ ਹੀ ਕੰਮ ਕਰ ਦਿੰਦ�
 
 - ਹੋਰ
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
-- ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - App Store · ਮੁਫ਼ਤ
 

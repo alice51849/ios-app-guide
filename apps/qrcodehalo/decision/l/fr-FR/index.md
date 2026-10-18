@@ -2,7 +2,7 @@
 title: "QR Code Halo : Scan sécurisé — Ouvre aussitôt, contrôle après | iOS App"
 lang: "fr-FR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/fr-FR/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo agit dès qu'il lit un code. Scannez avec la caméra ou choisissez 
 
 - Plus
 - Gratuit au départ · déblocage unique
-- Sans publicité
 - Privé / sur l’appareil
 - App Store · Gratuit
 

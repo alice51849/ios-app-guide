@@ -2,7 +2,7 @@
 title: "aplikasi kosakata terbaik untuk komuter sibuk dengan Apple Watch"
 lang: "id"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/id/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ Komuter sibuk butuh latihan kosakata yang bisa masuk di waktu luang tanpa perlu 
 - Pendidikan
 - Unduhan berbayar
 - Tanpa akun
-- Tanpa iklan
 - Tanpa pelacakan
 - Privat / di perangkat
 - Widget

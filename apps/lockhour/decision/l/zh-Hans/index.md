@@ -1,17 +1,17 @@
 ---
-title: "学习时阻断社交媒体的最佳应用 iPhone"
+title: "学习时屏蔽社交媒体的最佳 iPhone App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/zh-Hans/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
 publisher: "Lumi Studio"
 ---
 
-# 学习时阻断社交媒体的最佳应用 iPhone
+# 学习时屏蔽社交媒体的最佳 iPhone App
 
-考试期间，意志力不是工具——硬性定时屏蔽才是。所以才有了 LockHour Pro。
+考试期间，意志力不是工具——硬性定时屏蔽才是——LockHour Pro专为此设计。
 
 - 效率
 - 免费开始使用 · 一次性解锁

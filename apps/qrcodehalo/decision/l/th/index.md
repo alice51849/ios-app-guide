@@ -2,7 +2,7 @@
 title: "QR Code Halo สแกน & สร้าง — เปิดทันที ตรวจทีหลังได้ | iOS App"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/th/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo ทำงานทันทีที่อ่านโค้ดไ�
 
 - เพิ่มเติม
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
-- ไม่มีโฆษณา
 - ส่วนตัว / บนอุปกรณ์
 - App Store · ฟรี
 

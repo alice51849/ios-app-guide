@@ -2,7 +2,7 @@
 title: "Lumi Math Pro：完整數學冒險、弱項練習與可列印學習單"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/zh-Hant/lumimathpro.html"
-modified: "2026-10-15"
+modified: "2026-10-17"
 video_url: "https://files.catbox.moe/n2pa81.mp4"
 duration: "PT16S"
 app_store_id: "6776958488"

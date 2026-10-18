@@ -2,7 +2,7 @@
 title: "лучшее приложение для планирования маршрута путешествия на iPhone"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ru/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ publisher: "Lumi Studio"
 - Путешествия
 - Платное скачивание
 - Автономно
-- Без учётной записи
 - Без рекламы
 - Без отслеживания
 - Лично / на устройстве

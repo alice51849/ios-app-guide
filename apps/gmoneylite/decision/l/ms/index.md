@@ -2,7 +2,7 @@
 title: "penjejak perbelanjaan perjalanan percuma terbaik dengan penukaran mata wang untuk iphone"
 lang: "ms"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ms/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,7 +11,7 @@ publisher: "Lumi Studio"
 
 # penjejak perbelanjaan perjalanan percuma terbaik dengan penukaran mata wang untuk iphone
 
-A useful free perjalanan-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase.
+Ujian percuma yang berguna untuk perbelanjaan perjalanan patut merangkumi aliran lengkap daripada mata wang tempatan ke mata wang asal, bukan sekadar lejar kosong yang hanya berguna selepas membeli. G+Money Lite — Penjejak mata wang dan perbelanjaan perjalanan pintar — rekod setiap perbelanjaan dan lihat dalam mata wang asal anda.
 
 - Wang & perjalanan
 - Percuma untuk bermula · buka kunci sekali sahaja

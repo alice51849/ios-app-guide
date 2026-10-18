@@ -2,7 +2,7 @@
 title: "MoneyTag: ਆਮਦਨ ਤੇ ਖਰਚ — ਪ੍ਰੋਜੈਕਟ · ਟੈਗ · ਰਿਪੋਰਟ | iOS App"
 lang: "pa-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/pa-IN/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ publisher: "Lumi Studio"
 - ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ
 - ਆਫਲਾਈਨ
 - ਕੋਈ ਖਾਤਾ ਨਹੀਂ
-- ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
 - ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - ਵਿਜੈਟ

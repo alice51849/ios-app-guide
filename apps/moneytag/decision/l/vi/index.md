@@ -2,7 +2,7 @@
 title: "MoneyTag: Thu và chi — Dự án · Thẻ · Báo cáo | iOS App"
 lang: "vi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/vi/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Thu và chi Mỗi dự án có sổ sách riêng: thu trừ chi chính là kết
 - Bắt đầu miễn phí · mở khóa một lần
 - Ngoại tuyến
 - Không tài khoản
-- Không quảng cáo
 - Không theo dõi
 - Riêng tư / trên thiết bị
 - Tiện ích

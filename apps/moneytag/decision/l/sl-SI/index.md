@@ -2,7 +2,7 @@
 title: "MoneyTag: Prihodki in stroški — Projekti · Oznake · Poročilo | iOS App"
 lang: "sl-SI"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/sl-SI/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Prihodki in stroški Vsak projekt vodi svoje knjige: prihodki minus stroški daj
 - Brezplačen začetek
 - Brez povezave
 - Brez računa
-- Brez oglasov
 - Brez sledenja
 - Zasebno / na napravi
 - Gradnik

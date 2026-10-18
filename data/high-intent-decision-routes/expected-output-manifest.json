@@ -5,7 +5,7 @@
   "creative_count": 53,
   "current_inventory": {
     "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "faedf3d73ac1b95dbffaa97bb8f8249d44ef13bc0d94421d1b0035bf649fa5a4",
+    "copy_sha256": "cacd37476a5bc1d745b52e66f229f8c52e45ecae67df30a2fce6adcfa93ab22f",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "public_apps": 53
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "f8078ebe221a26338d214f17046f4b35a7ede3ecef688bbb41ad1d7c0be1407e",
+      "generated_sha256": "ca6c6556304cdaa53810732c182ae3d86d01bef0ae3dbd51e7924bbd73b596f7",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "6b336f1c96053f8699f292d563c5035972ce53d79bdded8bb3f213c2272cd196",
+      "generated_sha256": "c572feeae58177a9c0bcea57812a7b1982162d24e7bb598a6d3ebdd95c440f14",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -54,7 +54,7 @@
       "relative_path": "en-US/decide/battai/decide-when-an-iphone-battery-needs-service.html"
     },
     {
-      "generated_sha256": "2f2bb3787181cdba5fab121207a570cbe7d9df55741b98b8d98873f179bcfeca",
+      "generated_sha256": "30e8194816a9566ec1f269eced3b94b351e143e410f4b39df9d50322e6d7b3da",
       "kind": "route_html",
       "relative_path": "en-US/decide/caldaily/save-name-search-calculation-history.html"
     },
@@ -134,17 +134,17 @@
       "relative_path": "en-US/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html"
     },
     {
-      "generated_sha256": "d1eb69eb3a76df58d6eee65a569a723c787cfa38ade136d0e76c6f94697e5b1c",
+      "generated_sha256": "52eb2c3224fe16c862858b141c40673afd29390416aca316846ba5ab5e72dbcd",
       "kind": "route_html",
       "relative_path": "en-US/decide/lumiletters/try-phonics-before-one-time-unlock.html"
     },
     {
-      "generated_sha256": "9ca3d8b94b136229cbdc41c7c53af2f78ff52c7a91ad10178d34f9541df27f3b",
+      "generated_sha256": "339aa46a070a4defcce3bc5f685fc00d81720213aea9b4d55addf3da789bd1dc",
       "kind": "route_html",
       "relative_path": "en-US/decide/lumiletterspro/complete-phonics-for-home-kindergarten.html"
     },
     {
-      "generated_sha256": "7004c13ef2a53d859575f9dc79d185f0474effe837c8bd492e867768c67254d3",
+      "generated_sha256": "55c93b37d0b37ace98cd5643e04b2ba48ad169f9a9746089e504b24bc03c2855",
       "kind": "route_html",
       "relative_path": "en-US/decide/lumimath/replace-math-resistance-with-short-play.html"
     },
@@ -259,7 +259,7 @@
       "relative_path": "en-US/decide/studydown/focus-timer-that-stops-when-you-pick-up-your-phone.html"
     },
     {
-      "generated_sha256": "cdd046fff1e1d9660c90142317bc9a9355c81cd351db428336f9bbc82c81f200",
+      "generated_sha256": "4832e0146b25d41e3908f7f1784c7fe49257f2d33eb591a536f2b2a49c94e8ae",
       "kind": "route_html",
       "relative_path": "en-US/decide/tripbee/private-offline-family-trip-plan.html"
     },
@@ -372,14 +372,14 @@
   "fallback_records": 0,
   "inventory": {
     "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "faedf3d73ac1b95dbffaa97bb8f8249d44ef13bc0d94421d1b0035bf649fa5a4",
+    "copy_sha256": "cacd37476a5bc1d745b52e66f229f8c52e45ecae67df30a2fce6adcfa93ab22f",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
     "public_apps": 53,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "8d58ba93ef4a54f895d90c22b07c78e6abf458947f07f665db0031ab3ba697ca",
+  "manifest_digest": "df5bf97c963981bafa702deba951823602ecdb86033dfe7c40634899d02a4908",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "8318321d9c6eab2ef966c279980c1a3c52e5bfe9715b5c30a2ba8a0a773f58f5",
+  "release_contract_digest": "02aa3ab4a2994a4ebc5fdf04675aef1070d9eadfa4ac32c04bc8849b49bb6a42",
   "release_state": "exact",
   "route_count": 66,
   "routes": [
@@ -461,8 +461,8 @@
       "creative_id": "caldaily:save-name-search-calculation-history:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "2f2bb3787181cdba5fab121207a570cbe7d9df55741b98b8d98873f179bcfeca",
-      "record_digest": "8c2c8c7bc4561ad13f756cf0a74e032ad28ab80c1c87fb178e221f1498796c77",
+      "output_sha256": "30e8194816a9566ec1f269eced3b94b351e143e410f4b39df9d50322e6d7b3da",
+      "record_digest": "5ed72ac2986d306497fb5b6d08e0cca877e95ff877d437e009ed574b5a74c02d",
       "relative_path": "en-US/decide/caldaily/save-name-search-calculation-history.html",
       "route_id": "en-US:caldaily:save-name-search-calculation-history",
       "route_slug": "save-name-search-calculation-history",
@@ -733,8 +733,8 @@
       "creative_id": "lumiletters:try-phonics-before-one-time-unlock:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "d1eb69eb3a76df58d6eee65a569a723c787cfa38ade136d0e76c6f94697e5b1c",
-      "record_digest": "7fcf4fdce4e6c12a96d6e930525b323e7ce577789556bec66f8fe2523d4c1989",
+      "output_sha256": "52eb2c3224fe16c862858b141c40673afd29390416aca316846ba5ab5e72dbcd",
+      "record_digest": "eaacc1bf21ea194fd6a766b4b7258102cb8cf70020fe4f11dec3c006d945ccea",
       "relative_path": "en-US/decide/lumiletters/try-phonics-before-one-time-unlock.html",
       "route_id": "en-US:lumiletters:try-phonics-before-one-time-unlock",
       "route_slug": "try-phonics-before-one-time-unlock",
@@ -750,8 +750,8 @@
       "creative_id": "lumiletterspro:complete-phonics-for-home-kindergarten:alternative",
       "intent_type": "alternative",
       "locale": "en-US",
-      "output_sha256": "9ca3d8b94b136229cbdc41c7c53af2f78ff52c7a91ad10178d34f9541df27f3b",
-      "record_digest": "4fdfe206484675b2145d6883b374f8b5f60a326460d34ac2b7cec62d937cc2a5",
+      "output_sha256": "339aa46a070a4defcce3bc5f685fc00d81720213aea9b4d55addf3da789bd1dc",
+      "record_digest": "b9c2e329d9dffa6a92c90f22a29bac5ca618f797293d7383a868256b431f4986",
       "relative_path": "en-US/decide/lumiletterspro/complete-phonics-for-home-kindergarten.html",
       "route_id": "en-US:lumiletterspro:complete-phonics-for-home-kindergarten",
       "route_slug": "complete-phonics-for-home-kindergarten",
@@ -767,8 +767,8 @@
       "creative_id": "lumimath:replace-math-resistance-with-short-play:problem_aware",
       "intent_type": "problem_aware",
       "locale": "en-US",
-      "output_sha256": "7004c13ef2a53d859575f9dc79d185f0474effe837c8bd492e867768c67254d3",
-      "record_digest": "060794b686dbe6c856d028e8e07b795142ad2d6d4bf3a9e781b7342ecfdd4af1",
+      "output_sha256": "55c93b37d0b37ace98cd5643e04b2ba48ad169f9a9746089e504b24bc03c2855",
+      "record_digest": "7f9d8ad5a6cb2ff5f6b7b3fb741ae0f4133b91b8934f2ade1afd22bf1f93166a",
       "relative_path": "en-US/decide/lumimath/replace-math-resistance-with-short-play.html",
       "route_id": "en-US:lumimath:replace-math-resistance-with-short-play",
       "route_slug": "replace-math-resistance-with-short-play",
@@ -1158,8 +1158,8 @@
       "creative_id": "tripbee:private-offline-family-trip-plan:workflow",
       "intent_type": "workflow",
       "locale": "en-US",
-      "output_sha256": "cdd046fff1e1d9660c90142317bc9a9355c81cd351db428336f9bbc82c81f200",
-      "record_digest": "38b90cbbae38146a062b9f3dee67aab78d5aee5ac029e05fb04bc05f9c5d1e1b",
+      "output_sha256": "4832e0146b25d41e3908f7f1784c7fe49257f2d33eb591a536f2b2a49c94e8ae",
+      "record_digest": "db6a1a89a6c3711ebf40f05bda0ad1df15974c043410c1438a30374a42fc0510",
       "relative_path": "en-US/decide/tripbee/private-offline-family-trip-plan.html",
       "route_id": "en-US:tripbee:private-offline-family-trip-plan",
       "route_slug": "private-offline-family-trip-plan",
@@ -1508,5 +1508,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "d307e1acd04b9ae726eea170034418994541effa2061a9b9c9428a48a7183e41"
+  "source_contract_digest": "5cec2a683e806bb7400b66c1674eae9654ec8a90f15687686e8202884a4ec675"
 }

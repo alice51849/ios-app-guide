@@ -2,7 +2,7 @@
 title: "paras yksinkertainen muistilistasovellus iPhonelle ilman tilausta"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/fi/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -11,10 +11,11 @@ publisher: "Lumi Studio"
 
 # paras yksinkertainen muistilistasovellus iPhonelle ilman tilausta
 
-Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla, toistosäännöillä ja Watch-komplikaatiolla — ja tarkoituksella ilman projektinhallinnan koneistoa. Siksi Mochi on olemassa.
+Jos useimmat muistilistasovellukset tuntuvat raskailta, oikea on selkeä tarkistuslista muistutuksilla ja Apple Watch -tuella — ja tarkoituksella ilman projektinhallinnan koneistoa. Siksi Mochi on olemassa.
 
 - Tuottavuus
 - Ilmainen aloitus
+- Ei tiliä
 - Ei mainoksia
 - Apple Watch
 - App Store · Ilmainen

@@ -2,7 +2,7 @@
 title: "MoneyTag: 收入与支出 — 项目 · 标签 · 报表 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/zh-Hans/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ publisher: "Lumi Studio"
 - 免费开始使用 · 一次性解锁
 - 离线
 - 无需账户
-- 无广告
 - 无跟踪
 - 私密 / 设备本地
 - 小组件

@@ -2,7 +2,7 @@
 title: "AI Brief: Filer till AI-prompt — Prompts från filer och PDF | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/sv/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

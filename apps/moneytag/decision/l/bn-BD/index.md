@@ -2,7 +2,7 @@
 title: "MoneyTag: আয় ও ব্যয় — প্রকল্প · ট্যাগ · রিপোর্ট | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/bn-BD/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -18,7 +18,6 @@ market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MA
 - বিনামূল্যে শুরু
 - অফলাইন
 - কোনও অ্যাকাউন্ট নেই
-- কোনও বিজ্ঞাপন নেই
 - কোনও ট্র্যাকিং নেই
 - গোপনীয় / ডিভাইসে
 - উইজেট

@@ -2,7 +2,7 @@
 title: "แอปติดตามรายรับรายจ่ายสำหรับโปรเจกต์ฟรีแลนซ์ที่ดีที่สุด ไม่มีสมัครสมาชิกรายเดือน"
 lang: "th"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/th/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ publisher: "Lumi Studio"
 - เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว
 - ออฟไลน์
 - ไม่มีบัญชี
-- ไม่มีโฆษณา
 - ไม่มีการติดตาม
 - ส่วนตัว / บนอุปกรณ์
 - วิดเจ็ต

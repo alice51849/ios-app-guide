@@ -2,7 +2,7 @@
 title: "miglior app vocabolario per pendolari con Apple Watch"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wordmate/decision/l/it/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6789917808"
 verified_live: true
 purchase_model: "paid_upfront"
@@ -16,7 +16,6 @@ I pendolari hanno bisogno di pratica vocabolario che si adatti ai minuti liberi 
 - Istruzione
 - Scaricamento a pagamento
 - Nessun account
-- Nessuna pubblicità
 - Nessun tracciamento
 - Privato / su dispositivo
 - Widget

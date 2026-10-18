@@ -4,9 +4,9 @@
   "name": "Lumi Studio App Install Decision Routes",
   "description": "First-party install decision routes for every verified live iOS app and Apple locale, with a direct App Store path, purchase model, privacy facts, device surfaces and provenance.",
   "identifier": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes.json",
-  "dateModified": "2026-10-17",
-  "content_digest": "b6f281ecd8a7cf4a7a844dac8baa3522a115ea368d56cbe0094f42138c58cdcd",
-  "generation_digest": "a22202b1de352c33cad6f7e30b5f575d156523882164ad3331c9bc2f3b693d7b",
+  "dateModified": "2026-10-18",
+  "content_digest": "8227e4c40b0aa873cbaed9fbb75189f6fe9f9492a9eeaad57261be4ea047499d",
+  "generation_digest": "30f05dfd5432007545b1c731c574b482dac3a8b358b4cd4b7966893ffd63ed6c",
   "publisher_disclosure": "First-party decision-support material published by Lumi Studio, the developer of every listed app; not an independent ranking or measured search-volume product.",
   "ordering": "official_locale_order_then_priority_then_alphabetical_app_name",
   "priority_app_keys": [
@@ -792,10 +792,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "بدون حساب",
+        "بدون إعلانات",
         "خاص / على الجهاز"
       ],
       "device_surfaces": [
@@ -810,6 +812,7 @@
         "الإنتاجية",
         "بدء مجاني · فتح مرة واحدة",
         "بدون حساب",
+        "بدون إعلانات",
         "خاص / على الجهاز",
         "عنصر واجهة",
         "Apple Watch",
@@ -4008,10 +4011,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
         "গোপনীয় / ডিভাইসে"
       ],
       "device_surfaces": [
@@ -4026,6 +4031,7 @@
         "উৎপাদনশীলতা",
         "বিনামূল্যে শুরু",
         "কোনও অ্যাকাউন্ট নেই",
+        "কোনও বিজ্ঞাপন নেই",
         "গোপনীয় / ডিভাইসে",
         "উইজেট",
         "Apple Watch"
@@ -5302,7 +5308,7 @@
       "app_name": "Lumi Mission Planet",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "Lumi Mission Planet — দৈনন্দিন রুটিন ও পুরস্কার চার্ট | iOS App",
+      "publisher_query": "Lumi Mission Planet — শিশুদের পুরস্কার স্টিকার চার্ট | iOS App",
       "decision_context": "ছোট্ট শিশুকে দাঁত ব্রাশ করানো, খাবার খাওয়ানো বা খেলনা গুছিয়ে রাখা যেন প্রতিদিনের যুদ্ধ না হয়। Lumi Mission Planet দৈনন্দিন রুটিনকে মজার মিশনে পরিণত করে। আপনার শিশু প্রতিটি ছোট জয়ে স্ক্রিনে ট্যাপ করে, আর একটি আদুরে খরগোশ বন্ধু তাদের সাথে লাফায়, উল্লাস করে এবং বড় হয়। মিশন শেষ হলে পুরো গ্রহ আনন্দ করে। প্রায় তিন থেকে সাত বছর বয়সী শিশুদের জন্য তৈরি এবং একসাথে ব্যবহারের জন্য ডিজাইন করা হয়েছে। কি এটিকে আলাদা করে প্রতিটি কামড়, প্রতিটি ব্রাশ করা দাঁত, প্রতিটি খেলনা ঝুড়িতে ফেরানো সাথে সাথে আনন্দদায়ক প্রতিক্রিয়া পায়। শিশুরা প্রেরণা পায় কারণ প্রতিক্রিয়া তাৎক্ষণিক, সপ্তাহ শেষে স্টিকার নয়। মূল বৈশিষ্ট্য দৈনিক মিশন: খাবার, দাঁত ব্রাশ, ঘুমের সময়, পরিষ্কার এবং স্কুল প্রস্তুতি আপনার শিশুর পছন্দের পটভূমি দিয়ে নিজস্ব কাস্টম মিশন তৈরি করুন ছয়টি বন্ধু চরিত্র সংগ্রহ করুন: খরগোশ, ভালুক, বিড়ালছানা, পান্ডা, ডাইনোসর এবং শিয়াল মিশন, স্ট্রিক্স, পারফেক্ট ডে এবং খেলার জন্য একশোটি অর্জন স্টিকার একটি বন্ধু আপনার শিশুকে ডাকনামে অভিবাদন জানায় এবং প্রতিদিন বড় হয় সুন্দর বিজয় কার্ড যা আপনি পরিবারে সংরক্ষণ ও শেয়ার করতে পারেন পিতামাতা ড্যাশবোর্ডে আজকের, সাত দিনের ক্যালেন্ডার এবং সম্পূর্ণ ইতিহাসের এক নজরে দেখুন প্রতিটি সম্পূর্ণতার সঠিক সময় সহ প্রতি-ট্যাপ লগ, CSV হিসাবে রপ্তানিযোগ্য আপনার পরিবারের জন্য উপযুক্ত সময়ে দৈনিক স্মরণ করিয়ে দেওয়া ব্যাকআপ রপ্তানি এবং আমদানি যাতে অগ্রগতি নিরাপদে নতুন ফোনে স্থানান্তরিত হয় ইংরেজি, প্রথাগত চীনা, জাপানি এবং কোরিয়ান ভাষায় উপলব্ধ গোপনীয়তা প্রথম কোনও অ্যাকাউন্ট নেই, বিজ্ঞাপন নেই, তৃতীয় পক্ষের বিশ্লেষণ নেই, ট্র্যাকিং নেই। সবকিছু আপনার ডিভাইসে থাকে। ঐচ্ছিক ডাকনাম শুধুমাত্র অ্যাপের ভিতরে ব্যবহৃত হয় এবং কখনও ফোন ছাড়ে না। এককালীন ক্রয় খাবার, দাঁত ব্রাশ, ঘুম এবং পরিষ্কার মিশন কেনাকাটা ছাড়াই ব্যবহার করা যায়, খরগোশ বন্ধু এবং প্রতিটি বিভাগের প্রথম স্টিকার সহ। একটি এককালীন ক্রয় স্কুল প্রস্তুতি মিশন, কাস্টম মিশন, সব ছয়টি বন্ধু এবং সম্পূর্ণ স্টিকার সংগ্রহ আনলক করে। কোন সাবস্ক্রিপশন নেই। বিছানার সময়, খাবারের সময় এবং পরিষ্কার করা সবার জন্য জয় হতে পারে। Lumi আপনার শিশুকে উৎসাহিত করুক। অ্যাপটি iPhone Duo-এর জন্য অপ্টিমাইজ করা। ডিভাইসের ভাঁজ খুলে ল্যান্ডস্কেপ মোডে ব্যবহার করলে ভেতরের স্ক্রিন সাধারণ ফোনের স্ক্রিনকে শুধু টেনে বড় করার বদলে বাড়তি জায়গা কাজে লাগানো দুই কলামের লেআউটে চলে যায়। ভাঁজ করলে অ্যাপ বাইরের স্ক্রিনে এক কলামের লেআউটে চলতে থাকে।",
       "category": "kids",
       "category_label": "শিশু ও শেখা",
@@ -7739,10 +7745,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Sense compte",
+        "Sense anuncis",
         "Privat / en el dispositiu"
       ],
       "device_surfaces": [
@@ -7757,6 +7765,7 @@
         "Productivitat",
         "Inici gratuït",
         "Sense compte",
+        "Sense anuncis",
         "Privat / en el dispositiu",
         "Widget",
         "Apple Watch",
@@ -10840,10 +10849,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Bez účtu",
+        "Bez reklam",
         "Soukromé / v zařízení"
       ],
       "device_surfaces": [
@@ -10858,6 +10869,7 @@
         "Produktivita",
         "Zdarma na začátek",
         "Bez účtu",
+        "Bez reklam",
         "Soukromé / v zařízení",
         "Widget",
         "Apple Watch",
@@ -13941,10 +13953,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Ingen konto",
+        "Ingen reklamer",
         "Privat / på enheden"
       ],
       "device_surfaces": [
@@ -13959,6 +13973,7 @@
         "Produktivitet",
         "Gratis at komme i gang",
         "Ingen konto",
+        "Ingen reklamer",
         "Privat / på enheden",
         "Widget",
         "Apple Watch",
@@ -16608,7 +16623,8 @@
         "Kostenloser Einstieg · einmalige Freischaltung",
         "Kein Konto",
         "Privat / auf dem Gerät",
-        "App Store · Kostenlos"
+        "App Store · Kostenlos",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/de-DE/index.html",
@@ -16621,7 +16637,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "EUR",
-        "formatted_price": "Kostenlos"
+        "formatted_price": "Kostenlos",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "Lesen Sie den vollständigen Leitfaden",
       "publisher_disclosure": "Ein vom App-Entwickler Lumi Studio selbst verfasster Ratgeber. App-Namen sind Marken ihrer jeweiligen Eigentümer und werden nur zur Identifikation verwendet. Bei Entscheidungen zu Dokumenten, Gesundheit, Schule und Produktivität prüfen Sie bitte gegebenenfalls die offiziellen Vorgaben.",
@@ -17045,10 +17063,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Kein Konto",
+        "Keine Werbung",
         "Privat / auf dem Gerät"
       ],
       "device_surfaces": [
@@ -17063,6 +17083,7 @@
         "Produktivität",
         "Kostenloser Einstieg · einmalige Freischaltung",
         "Kein Konto",
+        "Keine Werbung",
         "Privat / auf dem Gerät",
         "Widget",
         "Apple Watch",
@@ -20152,10 +20173,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Χωρίς λογαριασμό",
+        "Χωρίς διαφημίσεις",
         "Ιδιωτικό / στη συσκευή"
       ],
       "device_surfaces": [
@@ -20170,6 +20193,7 @@
         "Παραγωγικότητα",
         "Δωρεάν για αρχή",
         "Χωρίς λογαριασμό",
+        "Χωρίς διαφημίσεις",
         "Ιδιωτικό / στη συσκευή",
         "Γραφικό στοιχείο",
         "Apple Watch",
@@ -22507,7 +22531,7 @@
       "app_name": "UsageNow: Χρήση AI και όρια",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "UsageNow: Χρήση AI και όρια — Σας τελείωσε το όριο AI στη μέση μιας εργασίας; Το | iOS App",
+      "publisher_query": "UsageNow: Χρήση AI και όρια — Claude, Codex, Copilot, Gemini | iOS App",
       "decision_context": "Σας τελείωσε το όριο AI στη μέση μιας εργασίας; Το UsageNow δείχνει πόσο απομένει από κάθε πρόγραμμα AI και πότε ακριβώς γίνεται επαναφορά, κατευθείαν στην οθόνη Αφετηρίας. Σας ειδοποιεί πριν τελειώσει το όριο. ΟΛΑ ΤΑ ΟΡΙΑ ΜΕ ΜΙΑ ΜΑΤΙΑ Claude: η συνεδρία 5 ωρών και τα εβδομαδιαία όρια, μαζί με τα εβδομαδιαία όρια ανά μοντέλο ChatGPT Codex: τα παράθυρα 5 ωρών και εβδομάδας GitHub Copilot: αιτήματα premium, συνομιλία και συμπληρώσεις κώδικα Gemini: ημερήσιες ποσοστώσεις αιτημάτων για κάθε μοντέλο Ζωντανή αντίστροφη μέτρηση μέχρι κάθε επαναφορά, μαζί με την ακριβή ώρα στη μορφή της περιοχής σας ΕΙΔΟΠΟΙΗΣΕΙΣ ΠΡΙΝ ΣΑΣ ΤΕΛΕΙΩΣΕΙ ΤΟ ΟΡΙΟ Φτιάξτε τις δικές σας ειδοποιήσεις: διαλέξτε το όριο 5 ωρών, το εβδομαδιαίο όριο ή όλα τα όρια και πληκτρολογήστε το ποσοστό που σας ενδιαφέρει, όπως 90 ή 98. Προσθέστε όσες θέλετε. Κάθε ειδοποίηση έρχεται μία φορά ανά όριο και κύκλο, έτσι η οθόνη κλειδώματος μένει ήσυχη. Ενεργοποιήστε μια ειδοποίηση επαναφοράς για να μάθετε τη στιγμή που ένα όριο επιστρέφει. WIDGET ΠΟΥ ΚΑΝΟΥΝ ΠΕΡΙΣΣΟΤΕΡΑ Ξεφυλλίστε όλους τους λογαριασμούς σας απευθείας στο widget Αγγίξτε ένα widget για ανανέωση όποτε θέλετε τους πιο πρόσφατους αριθμούς Widget για την οθόνη Αφετηρίας και την οθόνη κλειδώματος σε όλα τα μεγέθη, καθώς και επιπλοκές για το Apple Watch ΟΛΟΙ ΟΙ ΛΟΓΑΡΙΑΣΜΟΙ ΣΑΣ, ΜΕ ΤΗ ΔΙΚΗ ΣΑΣ ΣΕΙΡΑ Δουλειά και προσωπικά, Pro και Max, δίπλα δίπλα. Ταξινομήστε κατά επαναφορά 5 ωρών, εβδομαδιαία επαναφορά, υψηλότερη ή χαμηλότερη χρήση, όνομα ή υπηρεσία, ή σύρετε τους λογαριασμούς στη δική σας σειρά. ΟΠΟΥ ΚΙ ΑΝ ΔΟΥΛΕΥΕΤΕ iPhone, iPad και Apple Watch. ΙΔΙΩΤΙΚΟΤΗΤΑ ΑΠΟ ΤΗ ΣΧΕΔΙΑΣΗ Συνδέεστε από τη σελίδα σύνδεσης της ίδιας της κάθε υπηρεσίας. Η σύνδεσή σας μένει στο Μπρελόκ της συσκευής σας και το UsageNow επικοινωνεί μόνο με τις ίδιες τις υπηρεσίες. Δεν υπάρχει διακομιστής UsageNow, δεν χρειάζεται λογαριασμός και δεν υπάρχει παρακολούθηση. ΣΤΗ ΓΛΩΣΣΑ ΣΑΣ Πλήρως μεταφρασμένο σε 50 γλώσσες, με ημερομηνίες και ώρες γραμμένες όπως συνηθίζεται στην περιοχή σας. Επιλέξτε γλώσσα από τις Ρυθμίσεις όποτε θέλετε. ΔΟΚΙΜΑΣΤΕ ΠΡΩΤΑ ΤΑ ΠΑΝΤΑ Ξεκινήστε στην εφαρμογή δωρεάν δοκιμή 24 ωρών και χρησιμοποιήστε κάθε λειτουργία, μαζί με τα widget. Για να συνεχίσετε να χρησιμοποιείτε το UsageNow και τα widget του μετά τη δοκιμή, ξεκλειδώστε το UsageNow Pro με μία εφάπαξ αγορά. Χωρίς συνδρομή. Το UsageNow είναι ανεξάρτητη εφαρμογή και δεν συνδέεται με τις Anthropic, OpenAI, GitHub, Microsoft ή Google. Τα Claude, ChatGPT, Codex, GitHub Copilot και Gemini είναι εμπορικά σήματα των αντίστοιχων κατόχων τους. Ερωτήσεις ή ιδέες; hourstag.app@gmail.com Η εφαρμογή είναι βελτιστοποιημένη για το iPhone Duo. Όταν ανοίξετε τη συσκευή και τη χρησιμοποιείτε οριζόντια, η εσωτερική οθόνη αλλάζει σε διάταξη δύο στηλών που αξιοποιεί τον επιπλέον χώρο, αντί να τεντώνει απλώς την οθόνη ενός συνηθισμένου κινητού. Όταν την κλείσετε, η εφαρμογή συνεχίζει στην εξωτερική οθόνη με διάταξη μίας στήλης.",
       "category": "productivity",
       "category_label": "Παραγωγικότητα",
@@ -23259,10 +23283,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "No account",
+        "No ads",
         "Private / on-device"
       ],
       "device_surfaces": [
@@ -23277,6 +23303,7 @@
         "Productivity",
         "Free to start · one-time unlock",
         "No account",
+        "No ads",
         "Private / on-device",
         "Widget",
         "Apple Watch",
@@ -26363,10 +26390,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "No account",
+        "No ads",
         "Private / on-device"
       ],
       "device_surfaces": [
@@ -26381,6 +26410,7 @@
         "Productivity",
         "Free to start · one-time unlock",
         "No account",
+        "No ads",
         "Private / on-device",
         "Widget",
         "Apple Watch",
@@ -29464,10 +29494,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "No account",
+        "No adverts",
         "Private / on-device"
       ],
       "device_surfaces": [
@@ -29482,6 +29514,7 @@
         "Productivity",
         "Free to start · one-time unlock",
         "No account",
+        "No adverts",
         "Private / on-device",
         "Widget",
         "Apple Watch",
@@ -32571,10 +32604,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "No account",
+        "No ads",
         "Private / on-device"
       ],
       "device_surfaces": [
@@ -32589,6 +32624,7 @@
         "Productivity",
         "Free to start · one-time unlock",
         "No account",
+        "No ads",
         "Private / on-device",
         "Widget",
         "Apple Watch",
@@ -33826,7 +33862,7 @@
         "No ads",
         "Apple Watch",
         "App Store · Free",
-        "★ 4.2/5 · 28"
+        "★ 4.1/5 · 29"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/en-US/index.html",
@@ -33840,8 +33876,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
-        "rating_value": 4.2,
-        "rating_count": 28
+        "rating_value": 4.1,
+        "rating_count": 29
       },
       "guide_cta_label": "Read the full guide",
       "publisher_disclosure": "Publisher-authored guide from Lumi Studio, the app developer. App names are trademarks of their owners and are used only for identification. For documents, health, school, and productivity decisions, verify official requirements where relevant.",
@@ -35687,10 +35723,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Sin cuenta",
+        "Sin anuncios",
         "Privado / en el dispositivo"
       ],
       "device_surfaces": [
@@ -35705,6 +35743,7 @@
         "Productividad",
         "Gratis para empezar · desbloqueo único",
         "Sin cuenta",
+        "Sin anuncios",
         "Privado / en el dispositivo",
         "Widget",
         "Apple Watch",
@@ -38788,10 +38827,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Sin cuenta",
+        "Sin anuncios",
         "Privado / en el dispositivo"
       ],
       "device_surfaces": [
@@ -38806,6 +38847,7 @@
         "Productividad",
         "Gratis para empezar · desbloqueo único",
         "Sin cuenta",
+        "Sin anuncios",
         "Privado / en el dispositivo",
         "Widget",
         "Apple Watch",
@@ -41892,10 +41934,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Ei tiliä",
+        "Ei mainoksia",
         "Yksityinen / laitteella"
       ],
       "device_surfaces": [
@@ -41910,6 +41954,7 @@
         "Tuottavuus",
         "Ilmainen aloitus",
         "Ei tiliä",
+        "Ei mainoksia",
         "Yksityinen / laitteella",
         "Widget",
         "Apple Watch",
@@ -44993,10 +45038,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Aucun compte",
+        "Aucune publicité",
         "Privé / sur l'appareil"
       ],
       "device_surfaces": [
@@ -45011,6 +45058,7 @@
         "Productivité",
         "Gratuit au départ · déblocage unique",
         "Aucun compte",
+        "Aucune publicité",
         "Privé / sur l'appareil",
         "Widget",
         "Apple Watch",
@@ -48094,10 +48142,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Sans compte",
+        "Sans publicité",
         "Privé / sur l’appareil"
       ],
       "device_surfaces": [
@@ -48112,6 +48162,7 @@
         "Productivité",
         "Gratuit au départ · déblocage unique",
         "Sans compte",
+        "Sans publicité",
         "Privé / sur l’appareil",
         "Widget",
         "Apple Watch",
@@ -51196,10 +51247,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "કોઈ ખાતું નથી",
+        "કોઈ જાહેરાત નથી",
         "ખાનગી / ઉપકરણ પર"
       ],
       "device_surfaces": [
@@ -51214,6 +51267,7 @@
         "ઉત્પાદકતા",
         "મફત શરૂઆત",
         "કોઈ ખાતું નથી",
+        "કોઈ જાહેરાત નથી",
         "ખાનગી / ઉપકરણ પર",
         "વિજેટ",
         "Apple Watch",
@@ -54297,10 +54351,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "ללא חשבון",
+        "ללא פרסומות",
         "פרטי / במכשיר"
       ],
       "device_surfaces": [
@@ -54315,6 +54371,7 @@
         "פרודוקטיביות",
         "התחלה ללא תשלום",
         "ללא חשבון",
+        "ללא פרסומות",
         "פרטי / במכשיר",
         "וידג'ט",
         "Apple Watch",
@@ -57398,10 +57455,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "कोई खाता नहीं",
+        "कोई विज्ञापन नहीं",
         "निजी / डिवाइस पर"
       ],
       "device_surfaces": [
@@ -57416,6 +57475,7 @@
         "उत्पादकता",
         "मुफ़्त शुरुआत · एक बार अनलॉक",
         "कोई खाता नहीं",
+        "कोई विज्ञापन नहीं",
         "निजी / डिवाइस पर",
         "विजेट",
         "Apple Watch",
@@ -60499,10 +60559,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Bez računa",
+        "Bez oglasa",
         "Privatno / na uređaju"
       ],
       "device_surfaces": [
@@ -60517,6 +60579,7 @@
         "Produktivnost",
         "Besplatno za početak",
         "Bez računa",
+        "Bez oglasa",
         "Privatno / na uređaju",
         "Widget",
         "Apple Watch",
@@ -63600,10 +63663,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Nincs fiók",
+        "Nincs reklám",
         "Privát / eszközön tárolt"
       ],
       "device_surfaces": [
@@ -63618,6 +63683,7 @@
         "Produktivitás",
         "Ingyenes kezdés",
         "Nincs fiók",
+        "Nincs reklám",
         "Privát / eszközön tárolt",
         "Widget",
         "Apple Watch",
@@ -66701,10 +66767,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Tanpa akun",
+        "Tanpa iklan",
         "Privat / di perangkat"
       ],
       "device_surfaces": [
@@ -66719,6 +66787,7 @@
         "Produktivitas",
         "Gratis untuk mulai · buka kunci sekali bayar",
         "Tanpa akun",
+        "Tanpa iklan",
         "Privat / di perangkat",
         "Widget",
         "Apple Watch",
@@ -69802,10 +69871,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Nessun account",
+        "Nessuna pubblicità",
         "Privato / su dispositivo"
       ],
       "device_surfaces": [
@@ -69820,6 +69891,7 @@
         "Produttività",
         "Gratis per iniziare · sblocco unico",
         "Nessun account",
+        "Nessuna pubblicità",
         "Privato / su dispositivo",
         "Widget",
         "Apple Watch",
@@ -72909,10 +72981,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "アカウント不要",
+        "広告なし",
         "プライベート／端末内"
       ],
       "device_surfaces": [
@@ -72927,6 +73001,7 @@
         "生産性",
         "無料で開始・一度の購入でアンロック",
         "アカウント不要",
+        "広告なし",
         "プライベート／端末内",
         "ウィジェット",
         "Apple Watch",
@@ -76025,10 +76100,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ"
       ],
       "device_surfaces": [
@@ -76043,6 +76120,7 @@
         "ಉತ್ಪಾದಕತೆ",
         "ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ",
         "ಖಾತೆ ಇಲ್ಲ",
+        "ಜಾಹೀರಾತುಗಳಿಲ್ಲ",
         "ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ",
         "ವಿಜೆಟ್",
         "Apple Watch",
@@ -79126,10 +79204,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "계정 없음",
+        "광고 없음",
         "프라이빗 / 기기 내"
       ],
       "device_surfaces": [
@@ -79144,6 +79224,7 @@
         "생산성",
         "무료로 시작 · 한 번 결제로 잠금 해제",
         "계정 없음",
+        "광고 없음",
         "프라이빗 / 기기 내",
         "위젯",
         "Apple Watch",
@@ -82227,10 +82308,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "അക്കൗണ്ട് ഇല്ല",
+        "വ്യാപനങ്ങൾ ഇല്ല",
         "സ്വകാര്യത / ഉപകരണത്തിൽ"
       ],
       "device_surfaces": [
@@ -82245,6 +82328,7 @@
         "ഉത്പാദനക്ഷമത",
         "സൗജന്യമായി ആരംഭിക്കുക",
         "അക്കൗണ്ട് ഇല്ല",
+        "വ്യാപനങ്ങൾ ഇല്ല",
         "സ്വകാര്യത / ഉപകരണത്തിൽ",
         "വിഡ്ജറ്റ്",
         "Apple Watch",
@@ -85328,10 +85412,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "खाते नाही",
+        "जाहिराती नाहीत",
         "खाजगी / उपकरणावर"
       ],
       "device_surfaces": [
@@ -85346,6 +85432,7 @@
         "उत्पादकता",
         "सुरुवात करण्यासाठी मोफत",
         "खाते नाही",
+        "जाहिराती नाहीत",
         "खाजगी / उपकरणावर",
         "विजेट",
         "Apple Watch",
@@ -88429,10 +88516,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Tiada akaun",
+        "Tiada iklan",
         "Peribadi / pada peranti"
       ],
       "device_surfaces": [
@@ -88447,6 +88536,7 @@
         "Produktiviti",
         "Percuma untuk bermula · buka kunci sekali sahaja",
         "Tiada akaun",
+        "Tiada iklan",
         "Peribadi / pada peranti",
         "Widjet",
         "Apple Watch",
@@ -91530,10 +91620,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Geen account",
+        "Geen advertenties",
         "Privé / op apparaat"
       ],
       "device_surfaces": [
@@ -91548,6 +91640,7 @@
         "Productiviteit",
         "Gratis te starten · eenmalige ontgrendeling",
         "Geen account",
+        "Geen advertenties",
         "Privé / op apparaat",
         "Widget",
         "Apple Watch",
@@ -94631,10 +94724,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Ingen konto",
+        "Ingen annonser",
         "Privat / på enheten"
       ],
       "device_surfaces": [
@@ -94649,6 +94744,7 @@
         "Produktivitet",
         "Gratis å starte",
         "Ingen konto",
+        "Ingen annonser",
         "Privat / på enheten",
         "Widget",
         "Apple Watch",
@@ -97732,10 +97828,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "କୌଣସି ଖାତା ନାହିଁ",
+        "କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ",
         "ଗୋପନୀୟ / ଉପକରଣରେ"
       ],
       "device_surfaces": [
@@ -97750,6 +97848,7 @@
         "ଦକ୍ଷତା",
         "ମୁକ୍ତ ଆରମ୍ଭ",
         "କୌଣସି ଖାତା ନାହିଁ",
+        "କୌଣସି ବିଜ୍ଞାପନ ନାହିଁ",
         "ଗୋପନୀୟ / ଉପକରଣରେ",
         "ଉଇଜେଟ",
         "Apple Watch",
@@ -100833,10 +100932,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "ਕੋਈ ਖਾਤਾ ਨਹੀਂ",
+        "ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ",
         "ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ"
       ],
       "device_surfaces": [
@@ -100851,6 +100952,7 @@
         "ਉਤਪਾਦਕਤਾ",
         "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ",
         "ਕੋਈ ਖਾਤਾ ਨਹੀਂ",
+        "ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ",
         "ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ",
         "ਵਿਜੈਟ",
         "Apple Watch",
@@ -103934,10 +104036,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Bez konta",
+        "Bez reklam",
         "Prywatne / na urządzeniu"
       ],
       "device_surfaces": [
@@ -103952,6 +104056,7 @@
         "Produktywność",
         "Darmowe na start · jednorazowe odblokowanie",
         "Bez konta",
+        "Bez reklam",
         "Prywatne / na urządzeniu",
         "Widżet",
         "Apple Watch",
@@ -107035,10 +107140,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Sem conta",
+        "Sem anúncios",
         "Privado / no dispositivo"
       ],
       "device_surfaces": [
@@ -107053,6 +107160,7 @@
         "Produtividade",
         "Grátis para começar · desbloqueio único",
         "Sem conta",
+        "Sem anúncios",
         "Privado / no dispositivo",
         "Widget",
         "Apple Watch",
@@ -110142,10 +110250,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Sem conta",
+        "Sem anúncios",
         "Privado / no dispositivo"
       ],
       "device_surfaces": [
@@ -110160,6 +110270,7 @@
         "Produtividade",
         "Grátis para começar · desbloqueio único",
         "Sem conta",
+        "Sem anúncios",
         "Privado / no dispositivo",
         "Widget",
         "Apple Watch",
@@ -113243,10 +113354,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Fără cont",
+        "Fără reclame",
         "Privat / pe dispozitiv"
       ],
       "device_surfaces": [
@@ -113261,6 +113374,7 @@
         "Productivitate",
         "Început gratuit",
         "Fără cont",
+        "Fără reclame",
         "Privat / pe dispozitiv",
         "Widget",
         "Apple Watch",
@@ -116350,10 +116464,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Без учётной записи",
+        "Без рекламы",
         "Лично / на устройстве"
       ],
       "device_surfaces": [
@@ -116368,6 +116484,7 @@
         "Работа и организация",
         "Бесплатно начать · разовая разблокировка",
         "Без учётной записи",
+        "Без рекламы",
         "Лично / на устройстве",
         "Виджет",
         "Apple Watch",
@@ -118699,7 +118816,7 @@
       "app_name": "UsageNow: Лимиты ИИ и расход",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "UsageNow: Лимиты ИИ и расход — Уперлись в лимит AI посреди задачи? | iOS App",
+      "publisher_query": "UsageNow: Лимиты ИИ и расход — Claude, Codex, Copilot, Gemini | iOS App",
       "decision_context": "Уперлись в лимит AI посреди задачи? UsageNow показывает, сколько осталось в каждом AI-тарифе и когда именно произойдет сброс, прямо на экране «Домой», и предупреждает заранее, пока лимит не закончился. ВСЕ ЛИМИТЫ С ОДНОГО ВЗГЛЯДА Claude: 5-часовой сеанс и недельные лимиты, включая недельные ограничения по моделям ChatGPT Codex: 5-часовое и недельное окна GitHub Copilot: премиум-запросы, чат и автодополнение кода Gemini: дневные квоты запросов для каждой модели Живой обратный отсчет до каждого сброса и точное время сброса в привычном для вас формате УВЕДОМЛЕНИЯ ДО УПОРА В ЛИМИТ Создайте свои уведомления: выберите 5-часовой лимит, недельный лимит или все лимиты, затем введите нужный вам процент, например 90 или 98. Добавляйте сколько угодно. Каждое уведомление приходит один раз для каждого лимита и цикла, поэтому экран блокировки остается тихим. Включите уведомление о сбросе, чтобы узнать в тот самый момент, когда лимит снова доступен. ВИДЖЕТЫ, КОТОРЫЕ УМЕЮТ БОЛЬШЕ Листайте все свои учетные записи прямо в виджете Коснитесь виджета, чтобы в любой момент получить свежие цифры Виджеты для экрана «Домой» и экрана блокировки всех размеров, а также расширения для Apple Watch ВСЕ УЧЕТНЫЕ ЗАПИСИ В ВАШЕМ ПОРЯДКЕ Рабочие и личные, Pro и Max рядом друг с другом. Сортируйте по сбросу 5-часового лимита, сбросу недельного лимита, наибольшему или наименьшему расходу, названию или сервису либо перетаскивайте записи в собственном порядке. ВЕЗДЕ, ГДЕ ВЫ РАБОТАЕТЕ iPhone, iPad и Apple Watch. КОНФИДЕНЦИАЛЬНОСТЬ В ОСНОВЕ Вы входите на собственной странице входа каждого сервиса. Данные входа остаются в связке ключей вашего устройства, а UsageNow обращается только к самим сервисам. Нет сервера UsageNow, не нужно создавать учетную запись, нет отслеживания. НА ВАШЕМ ЯЗЫКЕ Полностью переведено на 50 языков, а даты и время записаны так, как принято в вашем регионе. Язык можно сменить в Настройках в любой момент. СНАЧАЛА ПОПРОБУЙТЕ ВСЁ Запустите в приложении бесплатный пробный период на 24 часа и пользуйтесь всеми функциями, включая виджеты. Чтобы продолжить пользоваться UsageNow и его виджетами после пробного периода, откройте UsageNow Pro разовой покупкой. Без подписки. UsageNow является независимым приложением и не связано с Anthropic, OpenAI, GitHub, Microsoft или Google. Claude, ChatGPT, Codex, GitHub Copilot и Gemini являются товарными знаками соответствующих владельцев. Вопросы или идеи? hourstag.app@gmail.com Приложение оптимизировано для iPhone Duo. Когда вы раскрываете устройство и используете его в горизонтальной ориентации, на внутреннем экране включается макет в две колонки, рассчитанный на дополнительное пространство, а не просто растянутый экран обычного телефона. Когда вы складываете его, приложение продолжает работать на внешнем экране в одну колонку.",
       "category": "productivity",
       "category_label": "Работа и организация",
@@ -119451,10 +119568,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Bez účtu",
+        "Bez reklám",
         "Súkromné / v zariadení"
       ],
       "device_surfaces": [
@@ -119469,6 +119588,7 @@
         "Produktivita",
         "Zadarmo na začiatok",
         "Bez účtu",
+        "Bez reklám",
         "Súkromné / v zariadení",
         "Widget",
         "Apple Watch",
@@ -122552,10 +122672,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Brez računa",
+        "Brez oglasov",
         "Zasebno / na napravi"
       ],
       "device_surfaces": [
@@ -122570,6 +122692,7 @@
         "Produktivnost",
         "Brezplačen začetek",
         "Brez računa",
+        "Brez oglasov",
         "Zasebno / na napravi",
         "Gradnik",
         "Apple Watch",
@@ -125653,10 +125776,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Inget konto",
+        "Inga annonser",
         "Privat / på enheten"
       ],
       "device_surfaces": [
@@ -125671,6 +125796,7 @@
         "Produktivitet",
         "Gratis att börja · engångsupplåsning",
         "Inget konto",
+        "Inga annonser",
         "Privat / på enheten",
         "Widget",
         "Apple Watch",
@@ -128760,10 +128886,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "கணக்கு இல்லை",
+        "விளம்பரங்கள் இல்லை",
         "தனியுரிமை / சாதனத்தில்"
       ],
       "device_surfaces": [
@@ -128778,6 +128906,7 @@
         "தயாரிப்பு திறன்",
         "இலவசமாக தொடங்கவும்",
         "கணக்கு இல்லை",
+        "விளம்பரங்கள் இல்லை",
         "தனியுரிமை / சாதனத்தில்",
         "விட்ஜெட்",
         "Apple Watch",
@@ -131861,10 +131990,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
         "గోప్యంగా / పరికరంలో"
       ],
       "device_surfaces": [
@@ -131879,6 +132010,7 @@
         "ఉత్పాదకత",
         "ఉచితంగా ప్రారంభించండి",
         "ఖాతా అవసరం లేదు",
+        "ప్రకటనలు లేవు",
         "గోప్యంగా / పరికరంలో",
         "విడ్జెట్",
         "Apple Watch",
@@ -134962,10 +135094,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
         "ส่วนตัว / บนอุปกรณ์"
       ],
       "device_surfaces": [
@@ -134980,6 +135114,7 @@
         "เพิ่มประสิทธิภาพ",
         "เริ่มใช้ฟรี · ปลดล็อกครั้งเดียว",
         "ไม่มีบัญชี",
+        "ไม่มีโฆษณา",
         "ส่วนตัว / บนอุปกรณ์",
         "วิดเจ็ต",
         "Apple Watch",
@@ -138066,10 +138201,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Hesap yok",
+        "Reklam yok",
         "Gizli / cihazda"
       ],
       "device_surfaces": [
@@ -138084,6 +138221,7 @@
         "Verimlilik",
         "Başlangıçta ücretsiz · tek seferlik açma",
         "Hesap yok",
+        "Reklam yok",
         "Gizli / cihazda",
         "Araç takımı",
         "Apple Watch",
@@ -141167,10 +141305,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Без облікового запису",
+        "Без реклами",
         "Приватно / на пристрої"
       ],
       "device_surfaces": [
@@ -141185,6 +141325,7 @@
         "Продуктивність",
         "Безкоштовно для початку · разове розблокування",
         "Без облікового запису",
+        "Без реклами",
         "Приватно / на пристрої",
         "Віджет",
         "Apple Watch",
@@ -143519,7 +143660,7 @@
       "app_name": "UsageNow: Ліміти ШІ та витрата",
       "priority_rank": null,
       "priority_group": "baseline_coverage",
-      "publisher_query": "UsageNow: Ліміти ШІ та витрата — Уперлися в ліміт AI посеред задачі? | iOS App",
+      "publisher_query": "UsageNow: Ліміти ШІ та витрата — Claude, Codex, Copilot, Gemini | iOS App",
       "decision_context": "Уперлися в ліміт AI посеред задачі? UsageNow показує, скільки лишилося в кожному AI-тарифі і коли саме буде скидання, просто на екрані «Додому», і попереджає заздалегідь, до того як ліміт закінчиться. УСІ ЛІМІТИ З ОДНОГО ПОГЛЯДУ Claude: 5-годинний сеанс і тижневі ліміти, зокрема тижневі обмеження для окремих моделей ChatGPT Codex: 5-годинне і тижневе вікна GitHub Copilot: преміум-запити, чат і автодоповнення коду Gemini: денні квоти запитів для кожної моделі Живий зворотний відлік до кожного скидання і точний час скидання у звичному для вас форматі СПОВІЩЕННЯ, ПОКИ ЛІМІТ НЕ ЗАКІНЧИВСЯ Створіть власні сповіщення: оберіть 5-годинний ліміт, тижневий ліміт або всі ліміти, а тоді введіть потрібний вам відсоток, наприклад 90 або 98. Додавайте скільки завгодно. Кожне сповіщення приходить один раз для кожного ліміту й циклу, тож замкнений екран лишається тихим. Увімкніть сповіщення про скидання, щоб дізнатися саме в ту мить, коли ліміт знову доступний. ВІДЖЕТИ, ЯКІ ВМІЮТЬ БІЛЬШЕ Гортайте всі свої облікові записи просто у віджеті Торкніться віджета, щоб будь-коли отримати свіжі цифри Віджети для екрана «Додому» і замкненого екрана всіх розмірів, а також ускладнення для Apple Watch УСІ ОБЛІКОВІ ЗАПИСИ У ВАШОМУ ПОРЯДКУ Робочі й особисті, Pro і Max поруч. Сортуйте за скиданням 5-годинного ліміту, скиданням тижневого ліміту, найбільшим чи найменшим використанням, назвою або сервісом чи перетягуйте записи у власному порядку. СКРІЗЬ, ДЕ ВИ ПРАЦЮЄТЕ iPhone, iPad і Apple Watch. ПРИВАТНІСТЬ В ОСНОВІ Ви входите на власній сторінці входу кожного сервісу. Дані входу залишаються у Зв’язці ключів вашого пристрою, а UsageNow звертається лише до самих сервісів. Немає сервера UsageNow, не треба створювати обліковий запис, немає стеження. ВАШОЮ МОВОЮ Повністю перекладено 50 мовами, а дати й час записано так, як прийнято у вашому регіоні. Мову можна будь-коли змінити в Параметрах. СПЕРШУ СПРОБУЙТЕ ВСЕ Запустіть у застосунку безкоштовний 24-годинний пробний період і користуйтеся всіма функціями, зокрема віджетами. Щоб і далі користуватися UsageNow та його віджетами після пробного періоду, відкрийте UsageNow Pro одноразовою покупкою. Без підписки. UsageNow є незалежним застосунком і не пов’язаний з Anthropic, OpenAI, GitHub, Microsoft або Google. Claude, ChatGPT, Codex, GitHub Copilot і Gemini є товарними знаками відповідних власників. Питання чи ідеї? hourstag.app@gmail.com Застосунок оптимізовано для iPhone Duo. Коли ви розкриваєте пристрій і використовуєте його в горизонтальній орієнтації, на внутрішньому екрані вмикається макет у дві колонки, розрахований на додатковий простір, а не просто розтягнутий екран звичайного телефона. Коли ви складаєте його, застосунок продовжує працювати на зовнішньому екрані в одну колонку.",
       "category": "productivity",
       "category_label": "Продуктивність",
@@ -144271,10 +144412,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "کوئی اکاؤنٹ نہیں",
+        "کوئی اشتہار نہیں",
         "نجی / آلہ پر"
       ],
       "device_surfaces": [
@@ -144289,6 +144432,7 @@
         "پیداواریت",
         "مفت آغاز",
         "کوئی اکاؤنٹ نہیں",
+        "کوئی اشتہار نہیں",
         "نجی / آلہ پر",
         "وجیٹ",
         "Apple Watch",
@@ -147372,10 +147516,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "Không tài khoản",
+        "Không quảng cáo",
         "Riêng tư / trên thiết bị"
       ],
       "device_surfaces": [
@@ -147390,6 +147536,7 @@
         "Năng suất",
         "Bắt đầu miễn phí · mở khóa một lần",
         "Không tài khoản",
+        "Không quảng cáo",
         "Riêng tư / trên thiết bị",
         "Tiện ích",
         "Apple Watch",
@@ -150479,10 +150626,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "无需账户",
+        "无广告",
         "私密 / 设备本地"
       ],
       "device_surfaces": [
@@ -150497,6 +150646,7 @@
         "效率",
         "免费开始使用 · 一次性解锁",
         "无需账户",
+        "无广告",
         "私密 / 设备本地",
         "小组件",
         "Apple Watch",
@@ -153304,7 +153454,8 @@
         "無追蹤",
         "隱私優先／裝置端",
         "主畫面小工具",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/zh-Hant/index.html",
@@ -153317,7 +153468,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",
@@ -153625,10 +153778,12 @@
       "one_time_option": true,
       "privacy_facts": [
         "no_account",
+        "no_ads",
         "private_or_on_device"
       ],
       "privacy_labels": [
         "免帳號",
+        "無廣告",
         "隱私優先／裝置端"
       ],
       "device_surfaces": [
@@ -153643,6 +153798,7 @@
         "效率工具",
         "免費開始 · 一次性解鎖",
         "免帳號",
+        "無廣告",
         "隱私優先／裝置端",
         "主畫面小工具",
         "Apple Watch",
@@ -154262,7 +154418,8 @@
         "無廣告",
         "無追蹤",
         "隱私優先／裝置端",
-        "App Store · 免費"
+        "App Store · 免費",
+        "★ 5.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/led-scrolling-text-app-for-concerts-and-airport-pickups.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/ledmovingtext/decision/l/zh-Hant/index.html",
@@ -154275,7 +154432,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "TWD",
-        "formatted_price": "免費"
+        "formatted_price": "免費",
+        "rating_value": 5.0,
+        "rating_count": 1
       },
       "guide_cta_label": "閱讀完整指南",
       "publisher_disclosure": "由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。",

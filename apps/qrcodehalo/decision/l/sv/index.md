@@ -2,7 +2,7 @@
 title: "QR Code Halo: Skanna och skapa — Öppnar direkt, granska efteråt | iOS App"
 lang: "sv"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/sv/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo agerar direkt när en kod läses. Skanna med kameran eller välj en
 
 - Mer
 - Gratis att börja · engångsupplåsning
-- Inga annonser
 - Privat / på enheten
 - App Store · Gratis
 

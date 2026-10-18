@@ -2,7 +2,7 @@
 title: "melhor controle de receitas e despesas para projetos freelance sem assinatura"
 lang: "pt-BR"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/pt-BR/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ Um orçamento mensal não diz a um freelancer se um projeto de cliente realmente
 - Grátis para começar · desbloqueio único
 - Offline
 - Sem conta
-- Sem anúncios
 - Sem rastreamento
 - Privado / no dispositivo
 - Widget

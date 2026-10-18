@@ -2,7 +2,7 @@
 title: "QR Code Halo: Scansiona e Crea — Apri subito, controlla dopo | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/it/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo agisce nel momento in cui legge un codice. Scansiona con la fotocam
 
 - Altro
 - Gratis per iniziare · sblocco unico
-- Nessuna pubblicità
 - Privato / su dispositivo
 - App Store · Gratis
 

@@ -2,7 +2,7 @@
 title: "HoursTag: Ore per comprare — Paga oraria e spese | iOS App"
 lang: "it"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/it/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6754218117"
 verified_live: true
 purchase_model: "paid_upfront"

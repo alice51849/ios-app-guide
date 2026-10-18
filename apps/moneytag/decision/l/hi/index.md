@@ -2,7 +2,7 @@
 title: "MoneyTag: आय और व्यय — प्रोजेक्ट · टैग · रिपोर्ट | iOS App"
 lang: "hi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/moneytag/decision/l/hi/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6801956402"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -17,7 +17,6 @@ publisher: "Lumi Studio"
 - मुफ़्त शुरुआत · एक बार अनलॉक
 - ऑफ़लाइन
 - कोई खाता नहीं
-- कोई विज्ञापन नहीं
 - कोई ट्रैकिंग नहीं
 - निजी / डिवाइस पर
 - विजेट

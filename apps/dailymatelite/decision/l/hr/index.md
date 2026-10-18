@@ -2,7 +2,7 @@
 title: "DailyMate Lite: Govori danas — Razgovornik za put, 50 jezika | iOS App"
 lang: "hr"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/hr/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

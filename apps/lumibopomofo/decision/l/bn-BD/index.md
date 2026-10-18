@@ -2,7 +2,7 @@
 title: "Lumi Bopomofo — Zhuyin: শিশুদের চীনা ভাষা | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumibopomofo/decision/l/bn-BD/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6773017109"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ Lumi Bopomofo আপনার শিশুর জন্য ঝুয়িন �
 
 - শিশু ও শেখা
 - বিনামূল্যে শুরু
+- অফলাইন
 - কোনও অ্যাকাউন্ট নেই
 - কোনও বিজ্ঞাপন নেই
 

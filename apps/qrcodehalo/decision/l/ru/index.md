@@ -2,7 +2,7 @@
 title: "QR Code Halo: сканер кодов — Открывай сразу, проверяй потом | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/ru/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -15,7 +15,6 @@ QR Code Halo срабатывает в момент, когда считывае
 
 - Ещё
 - Бесплатно начать · разовая разблокировка
-- Без рекламы
 - Лично / на устройстве
 - App Store · Бесплатно
 

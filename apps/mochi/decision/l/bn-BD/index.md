@@ -2,7 +2,7 @@
 title: "Mochi: মিষ্টি টাস্ক লিস্ট — কাজ, রিমাইন্ডার ও উইজেট | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/bn-BD/index.html"
-modified: "2026-10-17"
+modified: "2026-10-18"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -16,6 +16,7 @@ Mochi আপনার দৈনন্দিন কাজের তালিক�
 
 - উৎপাদনশীলতা
 - বিনামূল্যে শুরু
+- কোনও অ্যাকাউন্ট নেই
 - কোনও বিজ্ঞাপন নেই
 - Apple Watch
 

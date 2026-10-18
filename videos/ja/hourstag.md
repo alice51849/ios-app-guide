@@ -2,7 +2,7 @@
 title: "best app to track where my money goes and save more"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/videos/ja/hourstag.html"
-modified: "2026-10-15"
+modified: "2026-10-17"
 video_url: "https://files.catbox.moe/e2vnm9.mp4"
 duration: "PT16S"
 app_store_id: "6754218117"

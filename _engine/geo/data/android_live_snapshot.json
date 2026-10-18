@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-17T17:34:41+0800",
- "count": 51,
- "content_sha256": "7dc4e1f48262f515f0f2cffd5cb1415ca401733c87fddd360b7db7d703054c12",
+ "source_generated": "2026-10-18T08:00:47+0800",
+ "count": 52,
+ "content_sha256": "1d279e44f324d0c22a5b387fdbbc7f1d493dd1f9b6d3fdf6f8034f5148077b32",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -125,6 +125,27 @@
     "zh-TW": {
      "title": "CV Desk ATS 履歷製作",
      "short_description": "打造 ATS 安全履歷，即時評分與關鍵字建議"
+    }
+   }
+  },
+  "cyca": {
+   "ios_app_id": "6782251621",
+   "ios_name": "Cyca",
+   "android_folder": "19_Cyca",
+   "package": "com.alice51849.cyca",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "paid": false,
+   "first_seen": "2026-10-18T08:00:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_casefold",
+   "copy": {
+    "en-US": {
+     "title": "Cyca: Period & Cycle Tracker",
+     "short_description": "Private period and cycle tracker with a daily body forecast and calm calendar"
+    },
+    "zh-TW": {
+     "title": "Cyca 經期週期追蹤・排卵",
+     "short_description": "私密生理期週期追蹤，搭配每日身體預報與舒緩日曆"
     }
    }
   },

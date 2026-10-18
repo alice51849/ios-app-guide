@@ -66,7 +66,7 @@ PUBLIC_CHAT_ENV_READ = re.compile(
 PUBLIC_SECRET = re.compile(r"secrets\.TELEGRAM_CHAT_ID\b")
 PUBLIC_SECRET_COMPARE_ONLY = re.compile(r"^\s*TELEGRAM_PUBLIC_CHAT_ID:\s*\$\{\{\s*secrets\.TELEGRAM_CHAT_ID\s*\}\}\s*$")
 ALERT_CHAT = re.compile(r"TELEGRAM_ALERT_CHAT_ID")
-GUARD_USE = re.compile(r"telegram_alert_guard|line_alert\.py")
+GUARD_USE = re.compile(r"telegram_alert_guard|\bline_alert\b")
 
 
 def repo_root() -> Path:
@@ -113,6 +113,7 @@ def scan(root: Path) -> dict[str, dict]:
             "alert_chat": bool(ALERT_CHAT.search(text)),
             "uses_guard": bool(GUARD_USE.search(text)),
             "workflow": workflow,
+            "text": text if workflow else "",
         }
         if hit["bot_api"] or hit["reads_public_chat"] or hit["public_secret_lines"] or hit["alert_chat"]:
             found[rel] = hit
@@ -159,10 +160,19 @@ class TelegramSendPointTests(unittest.TestCase):
                          "`TELEGRAM_PUBLIC_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}` (the guard's comparison)")
 
     def test_alert_chat_users_send_through_the_guard(self):
-        offenders = sorted(rel for rel, hit in self.found.items()
-                           if hit["alert_chat"] and rel != GUARD and not hit["uses_guard"]
-                           and SEND_POINTS.get(rel, ("",))[0] != "read_only")
-        self.assertEqual([], offenders, "TELEGRAM_ALERT_CHAT_ID is read only through telegram_alert_guard / line_alert.py")
+        # scripts that send through the gate (directly or via line_alert); a workflow passing
+        # TELEGRAM_ALERT_CHAT_ID must run one of them.
+        senders = {Path(rel).name for rel, hit in self.found.items() if not hit["workflow"] and hit["uses_guard"]}
+        senders |= {Path(GUARD).name, "line_alert.py"}
+        offenders = []
+        for rel, hit in self.found.items():
+            if not hit["alert_chat"] or rel == GUARD or SEND_POINTS.get(rel, ("",))[0] == "read_only":
+                continue
+            ok = any(name in hit["text"] for name in senders) if hit["workflow"] else hit["uses_guard"]
+            if not ok:
+                offenders.append(rel)
+        self.assertEqual([], sorted(offenders),
+                         "TELEGRAM_ALERT_CHAT_ID is used only through telegram_alert_guard (or line_alert)")
 
     def test_public_send_points_never_touch_the_internal_alert_chat(self):
         offenders = sorted(rel for rel, hit in self.found.items()

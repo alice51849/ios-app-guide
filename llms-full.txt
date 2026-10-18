@@ -4433,7 +4433,7 @@
 ## App hook clips (short video previews)
 - Video sitemap: https://open.cait518.cc/ios-app-guide/sitemap_hook_clips.xml
 - Manifest: https://open.cait518.cc/ios-app-guide/data/app-hook-clips.json
-- Coverage: 29 clips for 6 apps, embedded on 300 localized App pages (own-language clip where one exists, else English)
+- Coverage: 250 clips for 53 apps, embedded on 2650 localized App pages (own-language clip where one exists, else English)
 - Each App page carries a schema.org VideoObject with contentUrl, thumbnailUrl, uploadDate and duration (PT7S for the standard clips)
 
 ## Verified locale-aware App Store offers

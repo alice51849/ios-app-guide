@@ -32,11 +32,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
+      actions: read # growth_records.py: is geo-daily running?
       contents: write # the report and the receipts are committed
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main   # a run that waited in the queue must see the receipts the run before it committed
+      - name: Read records still waiting on the growth-records-pending branch
+        # geo-daily holds bot record pushes off main while it runs (growth_records.py);
+        # dedupe and the promotion page read them from here until they are merged.
+        run: python3 .github/scripts/growth_records.py overlay
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -52,6 +57,8 @@ jobs:
           python3 .github/scripts/telegram_link_fix.py "$MODE"
       - name: Save the report and the receipts
         if: always()
+        env:
+          GITHUB_TOKEN: ${{ github.token }} # growth_records.py checks whether geo-daily is running
         run: |
           G=.github/growth
           FILES="$G/telegram-link-fix-report.json $G/telegram-link-fix.json"
@@ -59,12 +66,12 @@ jobs:
           mkdir -p "$RUNNER_TEMP/save"
           for f in $FILES; do [ -f "$f" ] && cp -f "$f" "$RUNNER_TEMP/save/$(basename "$f")"; done
           for i in 1 2 3; do
-            git fetch -q origin main && git reset -q --hard origin/main
+            target="$(python3 .github/scripts/growth_records.py prepare)"
             for f in $FILES; do [ -f "$RUNNER_TEMP/save/$(basename "$f")" ] && cp -f "$RUNNER_TEMP/save/$(basename "$f")" "$f"; done
             for f in $FILES; do [ -f "$f" ] && git add "$f"; done
             git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "Telegram 補下載連結紀錄 [skip ci]"
-            if git push -q origin HEAD:main; then exit 0; fi
+            if python3 .github/scripts/growth_records.py push "$target"; then exit 0; fi
             sleep $((i * 5))
           done
           echo "::warning::could not save the telegram link fix reports"; exit 1

@@ -46,6 +46,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+import channel_rotation as CR
 import clip_progress
 import download_links as DL
 import ig_bio as IGB
@@ -488,6 +489,8 @@ def main():
         print("clip: no clips.json yet, nothing to post")
         return 0
     channel = "instagram" if args.channel == "preview" else args.channel
+    if args.channel != "preview" and CR.paused_notice(channel):  # channel rotation holdout week
+        return 0
     clip = scheduled(load(), day, args.slot, channel)
     if not clip:
         print(f"clip: nothing scheduled for {channel} on {day} slot {args.slot}")

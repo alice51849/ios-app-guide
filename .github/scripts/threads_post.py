@@ -10,6 +10,7 @@ import urllib.parse
 import urllib.request
 from typing import NamedTuple, Optional
 
+import channel_rotation as CR
 import download_links as DL
 import threads_cap
 from social_post_common import (
@@ -153,7 +154,10 @@ def pick_postable(pool, now=None):
 
 def publish_text(token, user_id, text, sleeper=time.sleep):
     """A top-level text post (portfolio_daily.py). The post id, or None when the account cap held it
-    (threads_cap.py printed why: the ⏸ line when full, ::warning:: when the count could not be read)."""
+    (threads_cap.py printed why: the ⏸ line when full, ::warning:: when the count could not be read).
+    In the Threads week of the channel rotation holdout nothing is posted either (None, the ::notice:: says why)."""
+    if CR.paused_notice("threads"):
+        return None
     if threads_cap.account_status(token, user_id, label="Threads text post") != threads_cap.ROOM:
         return None
     return publish_post(token, user_id, text, sleeper=sleeper)
@@ -373,6 +377,8 @@ def publish_linked(token, user_id, text, links_text, app_store_url, play_url=Non
             return ThreadsResult(post_id, True)
         print(f"{label}: this post is already up (id {post_id}); only its link reply is added")
     else:
+        if CR.paused_notice("threads"):  # channel rotation holdout week: no new top-level post, a skip
+            return ThreadsResult(None, True)
         status = threads_cap.account_status(token, user_id, label=label)
         if status != threads_cap.ROOM:
             return ThreadsResult(None, status == threads_cap.FULL)

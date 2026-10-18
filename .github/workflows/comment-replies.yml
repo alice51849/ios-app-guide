@@ -29,9 +29,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
+      actions: read # growth_records.py: is geo-daily running?
       contents: write # replied-comments.json keeps us from answering twice
     steps:
       - uses: actions/checkout@v4
+      - name: Read records still waiting on the growth-records-pending branch
+        # geo-daily holds bot record pushes off main while it runs (growth_records.py);
+        # dedupe and the promotion page read them from here until they are merged.
+        run: python3 .github/scripts/growth_records.py overlay
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -44,16 +49,18 @@ jobs:
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || vars.AUTO_REPLY_DRY_RUN }}
         run: python3 .github/scripts/comment_replies.py
       - name: Save which comments were answered
+        env:
+          GITHUB_TOKEN: ${{ github.token }} # growth_records.py checks whether geo-daily is running
         run: |
           if [ -z "$(git status --porcelain -- .github/growth/replied-comments.json)" ]; then echo "no new replies"; exit 0; fi
           cp .github/growth/replied-comments.json "$RUNNER_TEMP/replied.json"
           for i in 1 2 3; do
-            git fetch -q origin main && git reset -q --hard origin/main
+            target="$(python3 .github/scripts/growth_records.py prepare)"
             python3 .github/scripts/comment_replies.py --merge-state "$RUNNER_TEMP/replied.json"
             git add .github/growth/replied-comments.json
             git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "留言自動回覆紀錄 [skip ci]"
-            if git push -q origin HEAD:main; then exit 0; fi
+            if python3 .github/scripts/growth_records.py push "$target"; then exit 0; fi
             sleep $((i * 5))
           done
           echo "::warning::could not save replied-comments.json"; exit 1

@@ -1,9 +1,8 @@
 {
- "generated": "2026-10-18T04:42:03Z",
+ "generated": "2026-10-18T11:14:20Z",
  "mode": "apply",
  "counts": {
-  "ok_caption": 29,
-  "backfilled": 2,
+  "ok_caption": 31,
   "draft_skipped": 13,
   "ok_backfilled_earlier": 1
  },
@@ -40,11 +39,9 @@
    "id": "4623746",
    "permalink": "https://dev.to/cait518/cyca-period-cycle-tracker-meet-cyca-the-warm-private-way-to-understand-your-cycle-3l0l",
    "date": "2026-09-10",
-   "app": "6782251621",
-   "status": "backfilled",
-   "text": "Cyca: Period & Cycle Tracker — Meet Cyca — the warm, private way to understand your cycle.",
-   "ios_id": "6782251621",
-   "locale": "en"
+   "app": "",
+   "status": "ok_caption",
+   "text": "Cyca: Period & Cycle Tracker — Meet Cyca — the warm, private way to understand your cycle."
   },
   {
    "channel": "devto",
@@ -222,11 +219,9 @@
    "id": "4360233",
    "permalink": "https://dev.to/cait518/a-period-tracker-that-stays-on-your-device-no-account-no-data-selling-359a",
    "date": "2026-08-10",
-   "app": "6782251621",
-   "status": "backfilled",
-   "text": "A period tracker that stays on your device (no account, no data selling)",
-   "ios_id": "6782251621",
-   "locale": "en"
+   "app": "",
+   "status": "ok_caption",
+   "text": "A period tracker that stays on your device (no account, no data selling)"
   },
   {
    "channel": "devto",
@@ -368,10 +363,10 @@
    "id": "4099241",
    "permalink": "https://dev.to/cait518/i-built-a-family-of-pay-once-ios-apps-no-subscriptions-no-ads-on-device-56b8",
    "date": "2026-07-08",
-   "app": "6779552704,6779977651,6780223070",
+   "app": "6779552704,6779977651,6780223070,6782251621",
    "status": "ok_backfilled_earlier",
    "text": "I built a family of pay-once iOS apps — no subscriptions, no ads, on-device",
-   "ios_id": "6779552704,6779977651,6780223070"
+   "ios_id": "6779552704,6779977651,6780223070,6782251621"
   },
   {
    "channel": "devto",

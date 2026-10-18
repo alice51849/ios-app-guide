@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-18T04:41:40Z",
+ "generated": "2026-10-18T11:14:19Z",
  "mode": "apply",
  "counts": {
   "ok_reply": 7,
-  "ok_store_only": 718,
+  "ok_store_only": 719,
   "unknown_app": 46,
-  "ok_backfilled_earlier": 8,
-  "backfilled": 6,
-  "missing": 4
+  "ok_backfilled_earlier": 10,
+  "backfilled": 5,
+  "missing": 3
  },
  "rows": [
   {
@@ -21,6 +21,18 @@
    "why": "brand",
    "ios_id": "6773017109",
    "locale": "zh-Hant"
+  },
+  {
+   "channel": "threads",
+   "id": "18219731512346658",
+   "permalink": "https://www.threads.com/@hourstag.app/post/DelvJHInzTa",
+   "date": "2026-10-18",
+   "app": "stayclock",
+   "status": "ok_store_only",
+   "text": "Always-on time and calendar. Your iPhone or iPad becomes an always-on desk clock you can read from across the room. Stay Clock: Flip Desk Cl",
+   "why": "url+brand",
+   "ios_id": "6814035888",
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -9208,16 +9220,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Db28FWdkzsw",
    "date": "2026-08-10",
    "app": "snapport",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Snapport: صور جواز وهوية تأشيرة ومستندات وخلفية خصوصية أولاً، بلا إعلانات. ادفع مرة واحدة.",
    "why": "brand",
    "ios_id": "6780575828",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18106157621366484",
-   "at": "2026-10-18T04:39:13Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -9235,16 +9242,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Db22HXuk6CN",
    "date": "2026-08-10",
    "app": "snapport",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Snapport: صور جواز وهوية تأشيرة ومستندات وخلفية خصوصية أولاً، بلا إعلانات. ادفع مرة واحدة.",
    "why": "brand",
    "ios_id": "6780575828",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18179919892437660",
-   "at": "2026-10-18T04:39:13Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",
@@ -9252,12 +9254,16 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Db2wga3ky-W",
    "date": "2026-08-10",
    "app": "snapport",
-   "status": "missing",
+   "status": "backfilled",
    "text": "Snapport: صور جواز وهوية تأشيرة ومستندات وخلفية خصوصية أولاً، بلا إعلانات. ادفع مرة واحدة.",
    "why": "brand",
    "ios_id": "6780575828",
    "locale": "en",
-   "own_replies": []
+   "own_replies": [],
+   "comment_id": "18638757085037672",
+   "at": "2026-10-18T11:12:40Z",
+   "verified": true,
+   "via": "list"
   },
   {
    "channel": "threads",

@@ -239,6 +239,53 @@ CHANNEL_LEVEL = {
 KEPT_AS_IS = ("gx_reach_b_v2_7c748bd2c62d6bf0", "yt_longform", "h7_mochi", "radar_zz", "wm_short15_lite", "")
 
 
+class AppTierCampaignTest(unittest.TestCase):
+    """Per app, channel rows merge until they can pass Apple's threshold; never across apps."""
+
+    MOCHI, BATTAI, OTHER = "6785004775", "6802423998", "6754218117"  # A, B, not listed (C)
+
+    def url(self, app_id, ct):
+        return f"https://apps.apple.com/app/id{app_id}?pt=118326163&ct={ct}&mt=8"
+
+    def test_tiers(self):
+        self.assertEqual("A", D.app_ct_tier(self.MOCHI))
+        self.assertEqual("B", D.app_ct_tier(self.BATTAI))
+        self.assertEqual("C", D.app_ct_tier(self.OTHER))
+        self.assertEqual("C", D.app_ct_tier(""))
+        self.assertTrue(set(D.APP_CT_TIER.values()) <= {"A", "B"})
+
+    def test_each_tier_sends_its_own_rows(self):
+        cases = {  # token -> (A, B, C)
+            "h7_mochi_th": ("threads", "social", "social"), "radar_bs": ("bluesky", "social", "social"),
+            "soc_tg_guide": ("telegram", "social", "social"), "rp_ig": ("instagram", "social", "social"),
+            "yt_shorts": ("youtube", "youtube", "social"), "geo_pick": ("web", "web", "web"),
+            "h_x_tw_kol": ("outreach", "outreach", "outreach"), "social": ("social", "social", "social"),
+            "gx_reach_a1": ("gx_reach_a1", "gx_reach_a1", "gx_reach_a1"),
+            "yt_longform": ("yt_longform", "yt_longform", "yt_longform"),
+        }
+        for token, want in cases.items():
+            for app_id, expected in zip((self.MOCHI, self.BATTAI, self.OTHER), want):
+                with self.subTest(token=token, app=app_id):
+                    self.assertEqual(expected, D.app_campaign(token, app_id))
+                    self.assertEqual(self.url(app_id, expected), D.coarse_campaign_url(self.url(app_id, token)))
+
+    def test_merge_stays_inside_one_app(self):
+        text = "\n".join([self.url(self.MOCHI, "threads"), self.url(self.BATTAI, "threads"),
+                          self.url(self.OTHER, "yt_shorts")])
+        out = D.coarsen_campaign_links(text)
+        self.assertEqual([self.url(self.MOCHI, "threads"), self.url(self.BATTAI, "social"),
+                          self.url(self.OTHER, "social")], out.split("\n"))
+        self.assertEqual(out, D.coarsen_campaign_links(out))  # idempotent
+        self.assertEqual(["threads", "yt_shorts"], D.fine_campaigns(text))
+        self.assertEqual([], D.fine_campaigns(out))
+
+    def test_the_last_gate_sends_the_app_level_campaign(self):
+        out = D.ensure_download_link("hello", self.url(self.OTHER, "threads"))
+        self.assertIn(self.url(self.OTHER, "social"), out)
+        self.assertNotIn("ct=threads", out)
+        self.assertIn(self.url(self.MOCHI, "threads"), D.ensure_download_link("hello", self.url(self.MOCHI, "h7_mochi_th")))
+
+
 class ChannelLevelCampaignTest(unittest.TestCase):
     """Apple hides a campaign below its privacy threshold: every link leaves with one ct per app and channel."""
 
@@ -257,7 +304,7 @@ class ChannelLevelCampaignTest(unittest.TestCase):
                 "Rate: https://apps.apple.com/app/id6785004775?action=write-review\n"
                 "Other: https://example.com/?ct=h7_mochi_tg")
         out = D.coarsen_campaign_links(text)
-        self.assertEqual(text.replace("ct=h7_mochi_tg&mt", "ct=telegram&mt").replace("ct=ut_a_th&", "ct=threads&"),
+        self.assertEqual(text.replace("ct=h7_mochi_tg&mt", "ct=telegram&mt").replace("ct=ut_a_th&", "ct=social&"),
                          out)
         self.assertEqual(out, D.coarsen_campaign_links(out))  # idempotent
         self.assertEqual(["h7_mochi_tg", "ut_a_th"], D.fine_campaigns(text))

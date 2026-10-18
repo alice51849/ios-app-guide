@@ -12,6 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 os.environ.setdefault("POST_QA_OFFLINE", "1")  # the pre-post QA gate makes no network calls in tests
 
 import clip_posts as C  # noqa: E402
+import download_links as D  # noqa: E402
 import post_qa as Q  # noqa: E402
 import clip_progress as P  # noqa: E402
 import review_links as R  # noqa: E402
@@ -81,7 +82,7 @@ class ClipPostsTest(unittest.TestCase):
 
     def test_campaign_token_gets_channel_suffix_and_stays_short(self):
         url = C.with_campaign("https://apps.apple.com/tw/app/id1?pt=1&ct=h7_claudeusagemini_zh-Hant&mt=8", "tg")
-        self.assertIn("ct=telegram&", url)  # one campaign per app and channel: locale and clip stay in the post log
+        self.assertIn("ct=" + D.app_campaign("telegram", "1") + "&", url)  # one campaign per app and channel: locale and clip stay in the post log
         long = C.with_campaign("https://apps.apple.com/us/app/id1?ct=" + "x" * 45, "ig")
         ct = dict(p.split("=") for p in long.split("?")[1].split("&"))["ct"]
         self.assertLessEqual(len(ct), 40)
@@ -92,7 +93,7 @@ class ClipPostsTest(unittest.TestCase):
         for token, merged in cases.items():
             self.assertEqual(C.clip_campaign(token), merged, token)
         # the variant clip goes out under the same YouTube campaign as the main one
-        self.assertIn("ct=youtube", C.with_campaign("https://apps.apple.com/us/app/id1?ct=h7_mochi_b", "yt"))
+        self.assertIn("ct=" + D.app_campaign("youtube", "1"), C.with_campaign("https://apps.apple.com/us/app/id1?ct=h7_mochi_b", "yt"))
 
     def test_instagram_caption_points_to_search_and_bio_with_few_tags(self):
         text = C.caption(clip("mochi", "ja"), "instagram")
@@ -237,7 +238,7 @@ class ClipPostsTest(unittest.TestCase):
             self.assertEqual(C.post_telegram(clip("a", "en")), {"id": 7, "link": None})
         self.assertTrue(sent["endpoint"].endswith("/sendVideo"))
         button = json.loads(sent["reply_markup"])["inline_keyboard"][0][0]
-        self.assertIn("ct=telegram&", button["url"])
+        self.assertIn("ct=" + D.app_campaign("telegram", "1") + "&", button["url"])
 
     def test_public_channel_post_gets_a_link(self):
         reply = {"ok": True, "result": {"message_id": 9, "chat": {"username": "lumiapps"}}}
@@ -276,7 +277,7 @@ class ClipPostsTest(unittest.TestCase):
         self.assertEqual(calls[0]["media_type"], "VIDEO")
         self.assertNotIn("https://", calls[0]["text"])
         self.assertEqual(calls[2]["reply_to_id"], "id2")
-        self.assertIn("ct=threads&", calls[2]["text"])
+        self.assertIn("ct=" + D.app_campaign("threads", "1") + "&", calls[2]["text"])
 
     def test_play_link_uses_the_same_per_platform_ct_as_the_app_store_link(self):
         # Mochi is Android-live in the snapshot: each platform's Play referrer is that platform's App Store ct

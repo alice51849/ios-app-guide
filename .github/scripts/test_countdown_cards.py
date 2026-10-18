@@ -37,7 +37,7 @@ class CountdownLinksTest(unittest.TestCase):
             text = C.telegram_text(meta(e), e)
             store, _play = C.download_urls(e, "telegram")
             self.assertIn(store, text, locale)
-            self.assertIn("ct=telegram&", store)
+            self.assertIn("ct=" + C.DL.app_campaign("telegram", C.DL.app_store_id(store)) + "&", store)
             self.assertTrue(C.DL.has_download_link(text, store), locale)
             # Instagram (owner 2026-10-17): no URL; the profile-link line and #CountDaysNow instead.
             ig = C.instagram_text(meta(e), e)
@@ -61,7 +61,8 @@ class CountdownLinksTest(unittest.TestCase):
         with mock.patch.object(C, "send_photo") as send:
             C.post_telegram("card.jpg", meta(e), e)
         self.assertIn(C.store_url(e, "tg"), send.call_args[0][1])
-        self.assertIn("ct=telegram&", send.call_args[0][2][0]["url"])
+        btn = send.call_args[0][2][0]["url"]
+        self.assertIn("ct=" + C.DL.app_campaign("telegram", C.DL.app_store_id(btn)) + "&", btn)
         self.assertEqual(send.call_args[1]["guard"][0], C.store_url(e, "tg"))
 
     def test_the_guard_adds_a_missing_link_and_refuses_when_none_is_known(self):

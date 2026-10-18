@@ -93,7 +93,7 @@ class Decide(unittest.TestCase):
     def test_every_reply_carries_the_link_and_the_language_matches(self):
         # Threads: the direct link; Instagram (owner 2026-10-17, a URL cannot be tapped there): no URL, the
         # profile-link line in the commenter's language where the link would be.
-        for channel, ct in (("threads", "threads"), ("instagram", None)):
+        for channel, ct in (("threads", DL.app_campaign("threads", "111")), ("instagram", None)):
             s = state()
             with mock.patch.object(R, "play_store_url", return_value=None), mock.patch.object(R, "is_free", return_value=True):
                 price = R.decide(c("1", "is it free?"), self.post, channel, "lumi", s, "M", NOW)
@@ -187,7 +187,7 @@ class DownloadLinkOnEveryReply(unittest.TestCase):
                             s or state(), "M", NOW)
 
     def test_all_intents_get_the_app_store_link_and_ios_only_apps_no_play(self):
-        for channel, ct in (("instagram", None), ("threads", "threads")):
+        for channel, ct in (("instagram", None), ("threads", DL.app_campaign("threads", "111"))):
             for intent, text in ENGLISH.items():
                 with self.subTest(channel=channel, intent=intent):
                     d = self.decide(text, channel)

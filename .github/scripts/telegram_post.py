@@ -1035,7 +1035,7 @@ def _sent_digests(item):
         for ct in dict.fromkeys((telegram_campaign(item), telegram_campaign(item, True), LEGACY_TG_CT))
         for android, legacy in ((True, False), (True, True), (False, False))
         for review in (True, False)
-        for channel_level in (True, False)
+        for channel_level in (True, "channel", False)
     }
 
 

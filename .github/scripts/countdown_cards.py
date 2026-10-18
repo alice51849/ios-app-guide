@@ -38,6 +38,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
 from social_post_common import play_store_url  # noqa: E402
+import channel_rotation as CR  # noqa: E402
 import download_links as DL  # noqa: E402
 import threads_cap  # noqa: E402
 
@@ -494,6 +495,8 @@ def main():
                      ("threads", lambda: post_threads(args.url, meta, e)),
                      ("instagram", lambda: post_instagram(args.url, meta, e))):
         if args.only and name != args.only:
+            continue
+        if CR.paused_notice(name):  # channel rotation holdout week: only this channel sits out
             continue
         import post_qa
         if not post_qa.gate(qa_problems(meta, e, name, image=args.card), f"countdown {name}"):

@@ -40,6 +40,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
+import channel_rotation as CR  # noqa: E402
 import clip_posts  # noqa: E402
 import clip_progress  # noqa: E402
 import countdown_cards as cd  # noqa: E402
@@ -331,6 +332,8 @@ def main(argv=None):
         return 1
     if not post_qa.gate(qa(plan), f"feed {plan['key']}"):
         return 1
+    if CR.paused_notice("instagram"):  # channel rotation holdout week: no Instagram feed post, green
+        return 0
     try:
         posted = post_instagram(plan, args.base_url)
     except Exception as exc:

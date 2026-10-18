@@ -62,6 +62,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
+import channel_rotation as CR  # noqa: E402
 import clip_posts  # noqa: E402
 import download_links as DL  # noqa: E402
 import clip_progress  # noqa: E402
@@ -1153,6 +1154,8 @@ def run(channels, day, slot, dry_run=False, data=None):
     posts = load_posts()
     posted_any = False
     for ch in channels:
+        if not dry_run and CR.paused_notice(ch):  # channel rotation holdout week: only this channel sits out
+            continue
         ok = configured(ch)
         if not ok and not dry_run:
             print(not_configured(ch))

@@ -27,6 +27,11 @@ import urllib.request
 from pathlib import Path
 from typing import Callable
 
+try:  # channel rotation holdout (channel_rotation.py, fail-open): an off week expects no post
+    import channel_rotation as CR
+except Exception:  # noqa: BLE001 - without it every line is judged as before
+    CR = None
+
 HOUR = 3600.0
 MAX_RETRIGGERS_PER_DAY = 2
 ISSUE_TITLE = "line-health"
@@ -564,6 +569,34 @@ def telegram_message_id(gh: Gh) -> tuple[float | None, str]:
     )
 
 
+# Delivery evidence of a channel in the channel rotation holdout (00_GrowthEngine
+# reports/holdout/channel_rotation_plan.json, copied to .github/growth/). In the
+# week that channel sits out, "nothing went out" is expected: the row is shown as
+# 輪流停開週 instead of red, so neither the issue nor the Telegram alert fires.
+EVIDENCE_ROTATION_CHANNEL = {
+    "threads_receipts": "threads",
+    "bluesky_receipts": "bluesky",
+    "telegram_message_id": "telegram",
+}
+
+
+def rotation_holdout(row: dict, now: float, plan: dict | None = None) -> dict:
+    """A stale evidence row whose window reaches into its channel's off week turns into an expected quiet
+    row; every other row (and any problem reading the plan) is returned unchanged."""
+    channel = EVIDENCE_ROTATION_CHANNEL.get(row.get("line", ""))
+    if row.get("fresh") or not channel or CR is None:
+        return row
+    moment = dt.datetime.fromtimestamp(now, dt.timezone.utc)
+    week = CR.paused_within(channel, moment, float(row.get("max_age_hours") or 0), plan)
+    if week is None:
+        return row
+    return {
+        **row, "fresh": True, "action": "rotation_holdout",
+        "note": (f"輪流停開週 (channel rotation holdout: {channel} paused {week['start']}..{week['end']}); "
+                 f"no post expected. {row.get('note') or ''}").strip(),
+    }
+
+
 def judge_evidence(name: str, stamp: float | None, note: str, now: float) -> dict:
     max_age = EVIDENCE_MAX_AGE_HOURS[name]
     fresh = stamp is not None and now - stamp <= max_age * HOUR
@@ -584,7 +617,8 @@ def render_table(rows: list[dict], now: float) -> str:
         "|---|---|---|---|---|---|---|",
     ]
     for row in rows:
-        status = "🟢 fresh" if row["fresh"] else "🔴 stale"
+        status = ("⏸ 輪流停開週" if row.get("action") == "rotation_holdout"
+                  else "🟢 fresh" if row["fresh"] else "🔴 stale")
         lines.append(
             f"| {row['line']} | {row['kind']} | {status} | {row['last_success']} | "
             f"{row['max_age_hours']} | {row['action']} | {row['note'] or ''} |"
@@ -704,7 +738,7 @@ def run(profile_name: str, repo: str, root: Path, *, now: float, gh: Gh,
             stamp, note = telegram_message_id(gh)
         else:  # pragma: no cover
             raise WatchdogError(f"unknown evidence {name}")
-        rows.append(judge_evidence(name, stamp, note, now))
+        rows.append(rotation_holdout(judge_evidence(name, stamp, note, now), now))
     return rows
 
 

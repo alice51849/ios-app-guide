@@ -353,12 +353,11 @@ class SnapshotMissing(ValueError):
 
 
 def play_store_url(app_id, campaign, channel_level=True):
-    """Google Play link tracked with the App Store link's own ct token (sent at channel level, as the App Store
-    one: download_links.coarse_campaign; channel_level=False rebuilds a link sent before, for replay
-    protection only), or None if not on Android.
+    """Google Play link tracked with the App Store link's own ct token (sent at the app's level, as the App Store
+    one: download_links.app_campaign; channel_level="channel" rebuilds a link sent 2026-10-17..18 at plain channel
+    level and channel_level=False one sent before with the label itself, for replay protection only), or None if
+    not on Android.
     Raises SnapshotMissing (a ValueError) when the Android snapshot cannot be read: no post, no guess."""
-    from download_links import coarse_campaign
-
     apps = android_apps()
     if not apps:
         raise SnapshotMissing("the Android snapshot is empty or unreadable; the Google Play link cannot be decided")
@@ -368,7 +367,7 @@ def play_store_url(app_id, campaign, channel_level=True):
     token = str(campaign or "").strip()
     if PLAY_CAMPAIGN_RE.fullmatch(token) is None:
         raise ValueError(f"Invalid Google Play campaign token: {campaign!r}")
-    token = coarse_campaign(token) if channel_level else token
+    token = _sent_campaign(token, app_id, channel_level)
     key = str(entry.get("key") or "")
     if PLAY_APP_KEY_RE.fullmatch(key) is None:
         raise ValueError(f"Invalid Google Play app key: {key!r}")
@@ -389,17 +388,27 @@ def legacy_play_store_url(app_id, campaign):
     return f"{entry['play_url']}&referrer={referrer}"
 
 
+def _sent_campaign(token, app_id, channel_level):
+    """The ct a label leaves as: the app's level (True), plain channel level as sent 2026-10-17..18 ("channel"),
+    or the label itself (False); the last two only rebuild links sent before, for replay protection."""
+    from download_links import app_campaign, coarse_campaign
+
+    if channel_level == "channel":
+        return coarse_campaign(token)
+    return app_campaign(token, app_id) if channel_level else token
+
+
 def campaign_app_store_url(value, campaign, channel_level=True):
-    """Keep a direct App Store CTA while attaching one low-cardinality token: the caller's label is sent as
-    its channel-level campaign (download_links.coarse_campaign), so Apple counts one row per app and channel.
-    channel_level=False rebuilds a link sent before with the label itself (replay protection only)."""
-    from download_links import coarse_campaign
+    """Keep a direct App Store CTA while attaching one low-cardinality token: the caller's label is sent at
+    the app's level (download_links.app_campaign), so Apple counts one row per app and (merged) channel.
+    channel_level="channel" / False rebuild a link sent before (replay protection only; _sent_campaign)."""
+    from download_links import app_store_id
 
     canonical = canonical_app_store_url(value)
     token = str(campaign or "").strip()
     if APP_STORE_CAMPAIGN_RE.fullmatch(token) is None:
         raise ValueError(f"Invalid App Store campaign token: {campaign!r}")
-    token = coarse_campaign(token) if channel_level else token
+    token = _sent_campaign(token, app_store_id(canonical or ""), channel_level)
     provider = os.environ.get(
         "APP_STORE_PROVIDER_TOKEN",
         DEFAULT_APP_STORE_PROVIDER_TOKEN,

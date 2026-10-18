@@ -496,7 +496,7 @@ class FooterAndSelectionTests(unittest.TestCase):
                 self.assertEqual("apps.apple.com", parsed.netloc)
                 self.assertEqual("/app/id7000000000", parsed.path)
                 self.assertEqual(["118326163"], query["pt"])
-                self.assertEqual([token], query["ct"])
+                self.assertEqual([DL.app_campaign(token, "7000000000")], query["ct"])
                 self.assertEqual(["8"], query["mt"])
 
     def test_official_locale_partition_is_complete_and_disjoint(self):
@@ -1604,7 +1604,9 @@ class TelegramDailyCatalogTests(unittest.TestCase):
         ]
         self.assertEqual(len(self.apps), len(links))
         # the digest's label (soc_tg_digest) leaves as the Telegram channel's campaign, like every Telegram post
-        self.assertTrue(all("ct=telegram&" in link for link in links))
+        for link in links:
+            app_id = DL.app_store_id(link)
+            self.assertIn("ct=" + DL.app_campaign("telegram", app_id) + "&", link)
         self.assertNotIn("ct=soc_tg_", combined)
 
     def test_catalog_lists_the_tracked_play_link_of_every_android_app(self):
@@ -1628,7 +1630,7 @@ class TelegramDailyCatalogTests(unittest.TestCase):
             with self.subTest(app=key):
                 expected = (
                     f"Google Play: {android[app.app_id]['play_url']}&referrer="
-                    f"utm_source%3Dtelegram%26utm_campaign%3D{key}"
+                    f"utm_source%3D{DL.app_campaign('telegram', app.app_id)}%26utm_campaign%3D{key}"
                 )
                 self.assertIn(expected, play_lines)
                 # The Play line sits right under the App's own App Store line.
@@ -1746,7 +1748,7 @@ class PlayReferrerTests(unittest.TestCase):
         with mock.patch.object(common, "android_apps", return_value=apps):
             self.assertEqual(
                 "https://play.google.com/store/apps/details?id=com.a.B"
-                "&referrer=utm_source%3Dthreads%26utm_campaign%3Dusagenow",
+                "&referrer=utm_source%3D" + DL.app_campaign("threads", "77") + "%26utm_campaign%3Dusagenow",
                 common.play_store_url("77", "h7_usagenow_th"),
             )
 
@@ -1830,6 +1832,17 @@ class PlayReferrerTests(unittest.TestCase):
         self.assertIn(telegram_post._digest(telegram_post.compose_text(item, ct="soc_tg_guide", legacy_play=True,
                                                                        channel_level=False)),
                       telegram_post._sent_digests(item))
+
+    def test_a_c_tier_post_sent_at_channel_level_on_10_17_still_counts_as_sent(self):
+        # 10-17 to 10-18 the link went out as ct=telegram for every app; a C-tier app is now ct=social
+        item = self._item(self.IOS_ONLY)
+        sent = telegram_post.compose_text(item, channel_level="channel")
+        self.assertIn("ct=telegram&", sent)
+        now = telegram_post.compose_text(item)
+        self.assertIn("ct=" + DL.app_campaign("telegram", self.IOS_ONLY) + "&", now)
+        self.assertEqual("social", DL.app_campaign("telegram", self.IOS_ONLY))
+        self.assertNotEqual(sent, now)
+        self.assertIn(telegram_post._digest(sent), telegram_post._sent_digests(item))
 
 
 class DevToGateTests(unittest.TestCase):
@@ -2065,7 +2078,7 @@ class TelegramReviewLinkTests(unittest.TestCase):
         self.assertIn("📝 이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\n" + review, text)
         self.assertTrue(text.endswith(common.footer_for("ko")))
         first = next(part for part in text.split() if part.startswith("https://"))
-        self.assertIn("ct=telegram&", first)  # the download CTA stays first and attributed
+        self.assertIn("ct=" + DL.app_campaign("telegram", self.USAGENOW) + "&", first)  # the download CTA stays first and attributed
         self.assertNotIn("ct=", review)
         self.assertIn("write-review", telegram_post.compose_text(self.item(self.USAGENOW, "en-US")))
         for app, lang in ((self.USAGENOW, "ja"), (self.USAGENOW, "en-GB"), (self.MOCHI, "ko"),
@@ -2678,7 +2691,7 @@ class TelegramDownloadLinkTests(_LinkGuardCase):
         # A post with the existing-user review link still carries the download link first.
         reviewed = telegram_post.make_intent(self.item("6818607603", "ko"), self.CONTEXT)
         self.assertIn("write-review", reviewed["text"])
-        self.assertIn("ct=telegram&", reviewed["text"].split("👉 ")[1].split()[0])
+        self.assertIn("ct=" + DL.app_campaign("telegram", "6818607603") + "&", reviewed["text"].split("👉 ")[1].split()[0])
         android = telegram_post.make_intent(self.item(self.MOCHI), self.CONTEXT)
         self.assertIn("apps.apple.com/app/id" + self.MOCHI, android["text"])
         self.assertIn("play.google.com/store/apps/details?id=", android["text"])

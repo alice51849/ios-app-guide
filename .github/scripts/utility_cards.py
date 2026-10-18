@@ -225,8 +225,9 @@ def campaign(card, channel):
 
 
 def store_url(card, channel):
-    # Sent at channel level (download_links.coarse_campaign): ut_<app>_<platform> stays the post log's label.
-    query = urllib.parse.urlencode({"pt": "118326163", "ct": DL.coarse_campaign(campaign(card, channel)), "mt": "8"})
+    # Sent at the app's level (download_links.app_campaign): ut_<app>_<platform> stays the post log's label.
+    app_id = APPS[card["app"]]["id"]
+    query = urllib.parse.urlencode({"pt": "118326163", "ct": DL.app_campaign(campaign(card, channel), app_id), "mt": "8"})
     return f"https://apps.apple.com/{STORE[card['locale']]}/app/id{APPS[card['app']]['id']}?{query}"
 
 

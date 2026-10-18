@@ -84,13 +84,13 @@ class PlanTest(unittest.TestCase):
         self.assertNotIn("http", chosen["text"])
         self.assertEqual("bm_usagenow_us_x", chosen["ct"])  # the series label stays on the plan / post log
         # ...but the post goes out on Threads, so its link carries the Threads campaign
-        self.assertIn("ct=threads&", __import__("threads_post").queued_links(chosen))
+        self.assertIn("ct=" + DL.app_campaign("threads", chosen["app_id"]) + "&", __import__("threads_post").queued_links(chosen))
 
     def test_queued_posts_send_the_threads_campaign_whatever_their_label(self):
         tp = __import__("threads_post")
         for ct in ("bm_mochi_us_th", "bm_usagenow_us_x", "aim990_zhHant_1", "un_tw_threads_4", "", None):
             self.assertEqual("threads", tp.queued_campaign({"ct": ct}))
-        self.assertIn("ct=threads&", tp.queued_links({"app_id": "6784974530", "ct": "aim990_zhHant_1"}))
+        self.assertIn("ct=" + DL.app_campaign("threads", "6784974530") + "&", tp.queued_links({"app_id": "6784974530", "ct": "aim990_zhHant_1"}))
 
     def test_overlong_event_is_skipped(self):
         data = live_event(self.data)
@@ -152,7 +152,7 @@ class EveningQueueTest(unittest.TestCase):
         chosen = T.plan(DAY, self.data, MILD, queue=[QUEUED])
         self.assertEqual("CONV", chosen["series"])
         self.assertEqual("bm_cyca_us_th", chosen["ct"])  # the series label stays on the plan / post log
-        self.assertIn("ct=threads&", __import__("threads_post").queued_links(chosen))
+        self.assertIn("ct=" + DL.app_campaign("threads", chosen["app_id"]) + "&", __import__("threads_post").queued_links(chosen))
         self.assertNotIn("http", chosen["text"])
 
     def test_other_days_keep_the_rotation(self):

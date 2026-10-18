@@ -12,6 +12,7 @@ from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import link_backfill as B  # noqa: E402
+import download_links as DL  # noqa: E402
 import own_posts as OP  # noqa: E402
 import telegram_link_fix as T  # noqa: E402
 
@@ -79,7 +80,7 @@ class TelegramLinkFixTest(unittest.TestCase):
         row = payload["reply_markup"]["inline_keyboard"][0]
         self.assertEqual(2, len(row))
         self.assertIn(f"apps.apple.com/app/id{IOS}", row[0]["url"])
-        self.assertIn("ct=telegram&", row[0]["url"])
+        self.assertIn("ct=" + DL.app_campaign("telegram", IOS) + "&", row[0]["url"])
         self.assertEqual(PLAY, row[1]["url"])  # play_store_url is mocked here
         for button in row:
             self.assertNotRegex(button["text"], r"(?i)free|pro\b|\$|價|免費|買斷|試用")

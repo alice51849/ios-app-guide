@@ -57,7 +57,7 @@ jobs:
         timeout-minutes: 3
         run: |
           cd .github/scripts
-          python3 -m unittest test_line_watchdog test_line_alert test_telegram_alert_guard
+          python3 -m unittest test_line_watchdog test_line_alert test_line_alert_issue test_telegram_alert_guard
       - name: Judge lines, heal stale ones, reconcile the line-health issue
         id: judge
         timeout-minutes: 8
@@ -92,6 +92,24 @@ jobs:
           python3 .github/scripts/line_alert.py \
             --report "$RUNNER_TEMP/line-health.json" \
             --state "$RUNNER_TEMP/line-alert-state/state.json" \
+            --label "ios-app-guide" \
+            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+      # 2026-10-18: TELEGRAM_ALERT_CHAT_ID was never set, so red lines reached nobody
+      # (alert_chat_missing). While that private chat is missing the red lines go to one
+      # "外宣線紅燈警報" issue (label alert): opened once, one comment per newly red line, closed
+      # when all green. GitHub notifies the repository owner. Only the presence of the alert chat
+      # secret is checked; it is never printed and there is still no fallback to the public chat.
+      - name: Alert issue fallback (no private Telegram alert chat configured)
+        if: always()
+        timeout-minutes: 2
+        continue-on-error: true
+        env:
+          TELEGRAM_ALERT_CHAT_ID: ${{ secrets.TELEGRAM_ALERT_CHAT_ID }}
+          TELEGRAM_PUBLIC_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python3 .github/scripts/line_alert_issue.py \
+            --report "$RUNNER_TEMP/line-health.json" \
+            --repo "$GITHUB_REPOSITORY" \
             --label "ios-app-guide" \
             --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
       - name: Save the alert state for the next run

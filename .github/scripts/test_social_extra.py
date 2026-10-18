@@ -320,13 +320,13 @@ class ServedElsewhereTest(unittest.TestCase):
         self.assertEqual(top["youtube"]["title"], "Hit your AI limit mid-task again? | UsageNow #Shorts")  # problem first
         self.assertEqual(top["variant"], "a")
         self.assertLessEqual(len(top["youtube"]["title"]), 100)
-        self.assertIn("ct=youtube&", top["store"])
+        self.assertIn("ct=" + DL.app_campaign("youtube", DL.app_store_id(top["store"])) + "&", top["store"])
         self.assertIn("quota · reset · countdown", top["youtube"]["description"])
         self.assertEqual(top["youtube"]["tags"][:3], ["quota", "reset", "countdown"])
         bs = feed["pool"]["bluesky"][-1]
         self.assertNotIn("boost_rank", bs)
         self.assertTrue(bs["alt"] and bs["variant"] and bs["keywords"])
-        self.assertIn("ct=bluesky&", bs["store"])
+        self.assertIn("ct=" + DL.app_campaign("bluesky", DL.app_store_id(bs["store"])) + "&", bs["store"])
         self.assertEqual(feed["performance"], perf)
         json.dumps(feed)
 

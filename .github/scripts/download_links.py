@@ -156,7 +156,7 @@ def ensure_download_link(text, app_store_url, play_url=None, *, max_len=None, ap
     Raises MissingDownloadLink when the App Store link is not a valid apps.apple.com app link, or when
     the links do not fit `max_len` even after the body is trimmed (hashtag lines go first). `measure`
     counts length the platform's way (graphemes, URL weights); default is len(). Every App Store link of the
-    result carries its channel-level ct (coarse_campaign).
+    result carries the app's own ct level (app_campaign).
     """
     text = coarsen_campaign_links(text)  # first, so the platform limit is measured on what is sent
     app_store_url = coarse_campaign_url(app_store_url)
@@ -227,12 +227,15 @@ _CLIP_CAMPAIGN = {
     "th": "threads", "threads": "threads", "tg": "telegram", "telegram": "telegram", "ig": "instagram",
     "igc": "instagram", "bs": "bluesky", "bsky": "bluesky", "yt": "youtube", "fb": "social", "pin": "social",
     "tb": "social", "nv": "social", "pk": "social", "dm": "social", "ma": "social", "tt": "social",
+    "ln": "outreach",
 }
 # Hand-posted hero kits h_<app>_<market>_<channel>.
 _HERO_CAMPAIGN = dict(_CLIP_CAMPAIGN, **{
     "x": "social", "rd": "social", "dc": "social", "pt": "social", "yc": "social", "nt": "social", "cm": "social",
     "pi": "social", "li": "social", "kol": "outreach", "ln": "outreach", "at": "outreach", "kk": "outreach",
     "ph": "outreach", "wa": "outreach",
+    "l8": "social", "xhs": "social", "qr": "social", "md": "social", "dsc": "social", "sc": "social",
+    "lv": "social",
 })
 # BM series bm_<app>_<market>_<channel>; a BM token without a known channel is its SEO intent page (web).
 _BM_CAMPAIGN = dict(_HERO_CAMPAIGN, seo="web", dir="outreach", zenn="social", gn="social", naver="social",
@@ -258,6 +261,16 @@ _CAMPAIGN_PREFIXES = (
 # YouTube token, and any token not listed above (00_GrowthEngine's inventory test names those).
 _CAMPAIGN_KEEP = ("gx_reach_", "yt_longform")
 _CT_PARAM = re.compile(r"(?<=[?&;])ct=([A-Za-z0-9_-]+)")
+# Per app, the channel rows are merged further until they can pass Apple's threshold (owner 2026-10-18: every app
+# earns on its own, so each app gets its own split; merging only ever happens inside one app). Tier from
+# 00_GrowthEngine reports/per_app/build_growth_board.ct_tier (est. external first-time downloads a month):
+# A keeps every channel row; B sends the text socials (Threads, Bluesky, Telegram, Instagram) as one social row;
+# C sends YouTube there too. web and outreach always stay their own rows. An app not listed is C. Change a tier
+# on purpose only (a new token restarts Apple's count), in both cores in the same change.
+APP_CT_TIER = {"6785004775": "A", "6802423998": "B", "6782251621": "B"}  # App Store id -> tier
+_TEXT_SOCIAL = ("threads", "bluesky", "telegram", "instagram")
+_TIER_MERGE = {"A": {}, "B": dict.fromkeys(_TEXT_SOCIAL, "social"),
+               "C": dict.fromkeys(_TEXT_SOCIAL + ("youtube",), "social")}
 
 
 def coarse_campaign(token):
@@ -284,11 +297,23 @@ def coarse_campaign(token):
     return raw
 
 
+def app_ct_tier(app_id):
+    """The app's tracking-code tier (APP_CT_TIER; an app not listed is C)."""
+    return APP_CT_TIER.get(str(app_id or ""), "C")
+
+
+def app_campaign(token, app_id):
+    """The ct a token is sent as on this app's links: coarse_campaign, then the app's own tier merge."""
+    t = coarse_campaign(token)
+    return _TIER_MERGE[app_ct_tier(app_id)].get(t, t)
+
+
 def coarse_campaign_url(url):
-    """An App Store link with its ct token sent at channel level (coarse_campaign); anything else unchanged."""
+    """An App Store link with its ct token sent at this app's level (app_campaign); anything else unchanged."""
     if not url or not APP_STORE_URL.match(url):
         return url
-    return _CT_PARAM.sub(lambda m: "ct=" + coarse_campaign(m.group(1)), url)
+    app_id = app_store_id(url)
+    return _CT_PARAM.sub(lambda m: "ct=" + app_campaign(m.group(1), app_id), url)
 
 
 def coarsen_campaign_links(text):
@@ -297,9 +322,9 @@ def coarsen_campaign_links(text):
 
 
 def fine_campaigns(text):
-    """The ct tokens of App Store links in `text` that coarse_campaign would still merge ([] = all channel level)."""
+    """The ct tokens of App Store links in `text` that app_campaign would still merge ([] = all at app level)."""
     return [m.group(1) for u in APP_STORE_URL.finditer(text or "") for m in _CT_PARAM.finditer(u.group(0))
-            if coarse_campaign(m.group(1)) != m.group(1)]
+            if app_campaign(m.group(1), app_store_id(u.group(0))) != m.group(1)]
 
 
 # ---------------------------------------------------------------- Instagram: no URL, the profile (bio) link instead

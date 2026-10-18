@@ -91,6 +91,30 @@ class PublisherIntentVisualUnitTests(unittest.TestCase):
             )
             self.assertFalse(visuals.write_gallery_if_changed(path, page))
 
+    def test_root_gallery_digest_survives_feed_and_disclosure_passes(self) -> None:
+        # geo-daily #1253: the disclosure publisher block landed after the
+        # feed links, so gen_feed (which owns every top-level page, the root
+        # gallery included) moved them and the root digest drifted.
+        page = (
+            '<!doctype html>\n<html lang="en"><head><title>Visuals</title>'
+            '</head><body>\n<main><h1>Visuals</h1><a href="https://apps.apple.com'
+            '/us/app/id6798813048?pt=118326163&amp;ct=iag_visual_en_us&amp;mt=8">'
+            'App Store</a></main></body></html>\n'
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / "visuals" / "index.html"
+            path.parent.mkdir(parents=True)
+            self.assertTrue(visuals.write_gallery_if_changed(path, page))
+            recorded = visuals._gallery_manifest_record(
+                "en", path.read_text(encoding="utf-8")
+            )["sha256"]
+            self.assertEqual(0, gen_feed.ensure_site_feed_discovery(root))
+            self.assertEqual(0, first_party_disclosure.run(root)["changed"])
+            self.assertEqual(
+                recorded, hashlib.sha256(path.read_bytes()).hexdigest()
+            )
+
     def test_gallery_edited_after_build_is_redated(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

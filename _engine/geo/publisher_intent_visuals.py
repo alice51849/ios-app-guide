@@ -85,10 +85,15 @@ def _final_gallery_content(path: Path, content: str) -> str:
             label=str(path),
         )
     # The site-wide first-party disclosure pass runs after this generator; the
-    # manifest digest has to cover the page as that pass leaves it.
-    return first_party_disclosure.finalize_page(
-        render_feed_discovery(content),
-        _gallery_site_relative(path),
+    # manifest digest has to cover the page as that pass leaves it. Feed
+    # discovery goes last: the disclosure appends its publisher block before
+    # </head>, and gen_feed later moves the feed links back to the end of the
+    # head of every top-level page, the root gallery included (geo-daily #1253).
+    return render_feed_discovery(
+        first_party_disclosure.finalize_page(
+            content,
+            _gallery_site_relative(path),
+        )
     )
 
 

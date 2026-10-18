@@ -15,10 +15,24 @@ message, so a failed send or missing secrets is retried on the next run
 instead of being silently marked as notified. A missing or unreadable watchdog
 report is itself treated as a red line (the watchdog went dark).
 
+Internal alerts go only to ``TELEGRAM_ALERT_CHAT_ID`` (2026-10-18). The
+repository's ``TELEGRAM_CHAT_ID`` is the public promo channel (ios-app-guide's
+is t.me/LumiApps2026), and about 52 internal alerts leaked there while this
+script sent to it. So:
+
+* without ``TELEGRAM_ALERT_CHAT_ID`` nothing is sent (status
+  ``alert_chat_missing``, not a failure) and there is never a fallback to
+  ``TELEGRAM_CHAT_ID``;
+* a target that looks public is refused: an ``@username`` (only public
+  channels/groups have one), or a ``-100…`` id equal to the public promo chat
+  (``TELEGRAM_PUBLIC_CHAT_ID``, or ``TELEGRAM_CHAT_ID`` if a workflow still
+  exports it; both are read only for this comparison, never as a target);
+* anything that is not a numeric chat id is refused as invalid.
+
 Secrets come only from the environment (``TELEGRAM_BOT_TOKEN`` /
-``TELEGRAM_CHAT_ID``, referenced as ``${{ secrets.X }}`` in the workflow) and
-are never printed. The same file is committed to 00_GrowthEngine,
-ios-app-guide and threads-autopilot.
+``TELEGRAM_ALERT_CHAT_ID`` / ``TELEGRAM_PUBLIC_CHAT_ID``, referenced as
+``${{ secrets.X }}`` in the workflow) and are never printed. The same file is
+committed to 00_GrowthEngine, ios-app-guide and threads-autopilot.
 """
 from __future__ import annotations
 
@@ -175,6 +189,27 @@ def plan(report: dict | None, state: dict, now: float, *, label: str, run_url: s
             "recovered": recovered, "next_state": next_state}
 
 
+def alert_target_problem(chat_id: str, public_chat_ids: tuple[str, ...] = ()) -> str | None:
+    """Why ``chat_id`` must not receive an internal alert, or None when it may.
+
+    Internal alerts must never reach a public channel: an ``@username`` target is
+    public by definition, and a ``-100…`` (channel / supergroup) id equal to the
+    public promo chat is the promo channel itself. Anything that is not a
+    numeric id is refused as invalid rather than guessed at.
+    """
+    target = (chat_id or "").strip()
+    if not target:
+        return "alert_chat_missing"
+    if target.startswith("@"):
+        return "alert_chat_public_refused"
+    public = {value.strip() for value in public_chat_ids if value and value.strip()}
+    if target.startswith("-100") and target in public:
+        return "alert_chat_public_refused"
+    if not target.lstrip("-").isdigit():
+        return "alert_chat_invalid"
+    return None
+
+
 def telegram_post(token: str, chat_id: str, text: str) -> int | None:
     body = json.dumps({"chat_id": chat_id, "text": text, "disable_web_page_preview": True}).encode("utf-8")
     request = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMessage", data=body,
@@ -192,8 +227,14 @@ def write_state(path: Path, state: dict) -> None:
 
 
 def run(report_path: Path, state_path: Path, *, label: str, run_url: str, now: float,
-        token: str, chat_id: str, post: Callable[[str, str, str], int | None] = telegram_post) -> dict:
-    """Plan, send when the state changed, and advance the state only when nothing is left unsent."""
+        token: str, chat_id: str, public_chat_ids: tuple[str, ...] = (),
+        post: Callable[[str, str, str], int | None] = telegram_post) -> dict:
+    """Plan, send when the state changed, and advance the state only when nothing is left unsent.
+
+    ``chat_id`` is the internal alert chat (TELEGRAM_ALERT_CHAT_ID) and nothing
+    else; ``public_chat_ids`` are only compared against it so a public target is
+    refused.
+    """
     state = load_state(state_path)
     decision = plan(load_json(report_path), state, now, label=label, run_url=run_url)
     outcome = {"kind": decision["kind"], "new_red": decision["new_red"], "still_red": decision["still_red"],
@@ -202,7 +243,12 @@ def run(report_path: Path, state_path: Path, *, label: str, run_url: str, now: f
         write_state(state_path, decision["next_state"])
         outcome.update(state_advanced=True, status="no_state_change")
         return outcome
-    if not token or not chat_id:
+    problem = alert_target_problem(chat_id, public_chat_ids)
+    if problem:
+        write_state(state_path, state)  # keep the old memory so the change is sent once a private chat is set
+        outcome.update(status=problem)
+        return outcome
+    if not token:
         write_state(state_path, state)  # keep the old memory so the change is sent once secrets exist
         outcome.update(status="secrets_missing")
         return outcome
@@ -228,20 +274,33 @@ def main(argv: list[str] | None = None) -> int:
     outcome = run(args.report, args.state, label=args.label, run_url=args.run_url,
                   now=dt.datetime.now(dt.timezone.utc).timestamp(),
                   token=os.environ.get("TELEGRAM_BOT_TOKEN", "").strip(),
-                  chat_id=os.environ.get("TELEGRAM_CHAT_ID", "").strip())
+                  chat_id=os.environ.get("TELEGRAM_ALERT_CHAT_ID", "").strip(),
+                  public_chat_ids=(os.environ.get("TELEGRAM_PUBLIC_CHAT_ID", ""),
+                                   os.environ.get("TELEGRAM_CHAT_ID", "")))
     summary = (f"line alert: {outcome['status']} (change={outcome['kind']}, new red={len(outcome['new_red'])}, "
                f"still red={len(outcome['still_red'])}, recovered={len(outcome['recovered'])}, "
                f"state advanced={outcome['state_advanced']})")
     print(summary)
+    if outcome["status"] == "alert_chat_missing":
+        print("alert_chat_missing: repository secret TELEGRAM_ALERT_CHAT_ID is not set, so no internal alert "
+              "is sent (never to the public TELEGRAM_CHAT_ID); the change stays pending until a private alert "
+              "chat is configured. The line-health issue is unaffected.")
+    if outcome["status"] == "alert_chat_public_refused":
+        print("::error::TELEGRAM_ALERT_CHAT_ID points at a public channel (@username, or the public promo chat); "
+              "internal alert refused. Set it to a private chat id.")
+    if outcome["status"] == "alert_chat_invalid":
+        print("::error::TELEGRAM_ALERT_CHAT_ID is not a numeric Telegram chat id; internal alert refused.")
     if outcome["status"] == "secrets_missing":
-        print("Telegram skipped: repository secrets TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID are not set; "
-              "the change stays pending and is sent on the first run after they are added.")
+        print("Telegram skipped: repository secret TELEGRAM_BOT_TOKEN is not set; "
+              "the change stays pending and is sent on the first run after it is added.")
     step_summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if step_summary:
         with open(step_summary, "a", encoding="utf-8") as handle:
             handle.write(f"\n{summary}\n")
     if args.outcome:
         args.outcome.write_text(json.dumps(outcome, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    if outcome["status"] in {"alert_chat_public_refused", "alert_chat_invalid"}:
+        return 1
     if outcome["status"] == "send_failed":
         print(f"::warning::Telegram send failed ({outcome.get('error')}); will retry on the next run")
         return 1

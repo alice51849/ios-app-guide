@@ -227,12 +227,15 @@ _CLIP_CAMPAIGN = {
     "th": "threads", "threads": "threads", "tg": "telegram", "telegram": "telegram", "ig": "instagram",
     "igc": "instagram", "bs": "bluesky", "bsky": "bluesky", "yt": "youtube", "fb": "social", "pin": "social",
     "tb": "social", "nv": "social", "pk": "social", "dm": "social", "ma": "social", "tt": "social",
+    "ln": "outreach",
 }
 # Hand-posted hero kits h_<app>_<market>_<channel>.
 _HERO_CAMPAIGN = dict(_CLIP_CAMPAIGN, **{
     "x": "social", "rd": "social", "dc": "social", "pt": "social", "yc": "social", "nt": "social", "cm": "social",
     "pi": "social", "li": "social", "kol": "outreach", "ln": "outreach", "at": "outreach", "kk": "outreach",
     "ph": "outreach", "wa": "outreach",
+    "l8": "social", "xhs": "social", "qr": "social", "md": "social", "dsc": "social", "sc": "social",
+    "lv": "social",
 })
 # BM series bm_<app>_<market>_<channel>; a BM token without a known channel is its SEO intent page (web).
 _BM_CAMPAIGN = dict(_HERO_CAMPAIGN, seo="web", dir="outreach", zenn="social", gn="social", naver="social",

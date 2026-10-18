@@ -28,7 +28,13 @@ def inside(path):
     old = os.getcwd()
     os.chdir(path)
     try:
-        with mock.patch.dict(os.environ, {k: ENV[k] for k in ENV if k.startswith("GIT_")}), \
+        # The code under test runs like a fresh runner: no git identity anywhere, so every
+        # commit or merge it makes must carry its own (as the workflows' commits do).
+        bare = {k: v for k, v in os.environ.items()
+                if k not in ("GIT_AUTHOR_NAME", "GIT_AUTHOR_EMAIL", "GIT_COMMITTER_NAME",
+                             "GIT_COMMITTER_EMAIL", "EMAIL")}
+        bare.update(GIT_CONFIG_GLOBAL=os.devnull, GIT_CONFIG_NOSYSTEM="1")
+        with mock.patch.dict(os.environ, bare, clear=True), \
                 contextlib.redirect_stderr(io.StringIO()):
             yield
     finally:

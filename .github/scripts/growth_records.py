@@ -272,7 +272,7 @@ def prepare() -> str:
             git("reset", "-q", "--hard", PENDING_REF)
             if not ok("merge-base", "--is-ancestor", MAIN_REF, PENDING_REF):
                 # main moved on since pending forked: carry main's tree, with pending's records on top
-                git("merge", "-q", "--no-ff", "--no-commit", "-s", "ours", MAIN_REF)
+                git(*BOT, "merge", "-q", "--no-ff", "--no-commit", "-s", "ours", MAIN_REF)
                 git("read-tree", "-u", "--reset", MAIN_REF)
                 write_records(merged_records())
         else:
@@ -282,7 +282,7 @@ def prepare() -> str:
         target = "main"
         git("reset", "-q", "--hard", MAIN_REF)
         if ahead:
-            git("merge", "-q", "--no-ff", "--no-commit", "-s", "ours", PENDING_REF)
+            git(*BOT, "merge", "-q", "--no-ff", "--no-commit", "-s", "ours", PENDING_REF)
             write_records(merged_records())
             log(f"growth_records: merging the records waiting on {PENDING} into main")
     return target

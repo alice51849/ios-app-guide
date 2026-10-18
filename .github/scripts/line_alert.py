@@ -79,6 +79,8 @@ EVIDENCE_ADVICE = {
     "bluesky_text_posts": "Bluesky 帳號上沒有新的文字貼文：查 multi.yml 最近一輪與帳號狀態。",
     "crosspromo_audit_remote": "互推遠端稽核沒有通過：看 support-crosspromo 最近一輪 log 的 fail-closed 標記。",
     "coverage_floor": "外宣覆蓋率低於底線：看 reports/coverage_floor_latest.json 缺哪幾款，補上對應通路。",
+    "self_hosted_queue": "自架執行器卡住：有 job 排隊超過 45 分鐘，或 4 小時內沒有任何 job 在 Mac 上跑完。請在 Mac 上確認 runner（launchd 服務）在線、沒有過載；雲端無法代做。",
+    "promo_domain_http": "外宣主網域 open.cait518.cc 打不開（/robots.txt 沒有回 200）：本機 Mac 的通道服務可能停了，請在 Mac 上重啟通道；下載總頁、IG 個人檔案連結頁、指南站都受影響。",
 }
 DEFAULT_ADVICE = "看 line-health issue 的表格與該線最近一輪 run log。"
 SLOT_ADVICE = "這條只監看、不自動重派：看那個排程時段是否被 GitHub 丟掉或失敗，必要時手動 dispatch 一次。"

@@ -33,6 +33,7 @@ if str(ENGINE_SOCIAL) not in sys.path:
 
 from videogen.registry import APPS, APPSTORE  # noqa: E402
 
+import channel_rotation as CR  # noqa: E402
 import telegram_post  # noqa: E402
 import threads_post  # noqa: E402
 
@@ -723,6 +724,8 @@ def main(argv=None):
     )
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args(argv)
+    if not args.dry_run and CR.paused_notice(args.platform):  # channel rotation holdout week
+        return 0
     try:
         if not args.dry_run and already_published_today(args.platform):
             return 0

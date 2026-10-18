@@ -1,0 +1,117 @@
+{
+ "schema": "channel-rotation/v1",
+ "created_at": "2026-10-18T18:18:21Z",
+ "window_semantics": "[start,end) UTC",
+ "channels": [
+  "threads",
+  "bluesky",
+  "telegram",
+  "instagram",
+  "youtube"
+ ],
+ "never_paused": [
+  "web",
+  "reply_scout",
+  "link_backfill",
+  "outreach"
+ ],
+ "rounds": 3,
+ "seed": "74d4b44f28ff7a4ce2a552be58dcd53a",
+ "weeks": [
+  {
+   "week": 1,
+   "start": "2026-10-26",
+   "end": "2026-11-02",
+   "off": "telegram"
+  },
+  {
+   "week": 2,
+   "start": "2026-11-02",
+   "end": "2026-11-09",
+   "off": "instagram"
+  },
+  {
+   "week": 3,
+   "start": "2026-11-09",
+   "end": "2026-11-16",
+   "off": "bluesky"
+  },
+  {
+   "week": 4,
+   "start": "2026-11-16",
+   "end": "2026-11-23",
+   "off": "youtube"
+  },
+  {
+   "week": 5,
+   "start": "2026-11-23",
+   "end": "2026-11-30",
+   "off": "threads"
+  },
+  {
+   "week": 6,
+   "start": "2026-11-30",
+   "end": "2026-12-07",
+   "off": "youtube"
+  },
+  {
+   "week": 7,
+   "start": "2026-12-07",
+   "end": "2026-12-14",
+   "off": "threads"
+  },
+  {
+   "week": 8,
+   "start": "2026-12-14",
+   "end": "2026-12-21",
+   "off": "instagram"
+  },
+  {
+   "week": 9,
+   "start": "2026-12-21",
+   "end": "2026-12-28",
+   "off": "bluesky"
+  },
+  {
+   "week": 10,
+   "start": "2026-12-28",
+   "end": "2027-01-04",
+   "off": "telegram"
+  },
+  {
+   "week": 11,
+   "start": "2027-01-04",
+   "end": "2027-01-11",
+   "off": "threads"
+  },
+  {
+   "week": 12,
+   "start": "2027-01-11",
+   "end": "2027-01-18",
+   "off": "youtube"
+  },
+  {
+   "week": 13,
+   "start": "2027-01-18",
+   "end": "2027-01-25",
+   "off": "instagram"
+  },
+  {
+   "week": 14,
+   "start": "2027-01-25",
+   "end": "2027-02-01",
+   "off": "bluesky"
+  },
+  {
+   "week": 15,
+   "start": "2027-02-01",
+   "end": "2027-02-08",
+   "off": "telegram"
+  }
+ ],
+ "outcome": "Sales & Trends 每款每週首次下載與收益（log1p），有推的款對沒推的款",
+ "test": "週排列檢定，5 個通路 Bonferroni，整體 alpha=0.05",
+ "min_apps": 3,
+ "sales_lag_days": 2,
+ "digest": "371921137339d5960665c30233af4708e622f543172d34cd5f6df7473dc0875d"
+}

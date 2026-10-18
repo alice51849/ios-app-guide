@@ -34,6 +34,10 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+      - name: Read records still waiting on the growth-records-pending branch
+        # geo-daily holds bot record pushes off main while it runs (growth_records.py);
+        # dedupe and the promotion page read them from here until they are merged.
+        run: python3 .github/scripts/growth_records.py overlay
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -77,11 +81,13 @@ jobs:
       - name: Record the post links on the promotion page
         if: always() && steps.slot.outputs.should_post == 'true'
         continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }} # growth_records.py checks whether geo-daily is running
         run: |
           if [ -z "$(git status --porcelain -- .github/growth/clip-posts.json)" ]; then echo "nothing posted"; exit 0; fi
           cp .github/growth/clip-posts.json "$RUNNER_TEMP/clip-posts.json"
           for i in 1 2 3; do
-            git fetch -q origin main && git reset -q --hard origin/main
+            target="$(python3 .github/scripts/growth_records.py prepare)"
             python3 .github/scripts/clip_progress.py --merge-log "$RUNNER_TEMP/clip-posts.json"
             # The Instagram profile link https://open.cait518.cc/ig/: the new post's app on top (ig_bio_hub.py;
             # the root site mirrors it). Never blocks recording the post.
@@ -89,7 +95,7 @@ jobs:
             git add .github/growth/clip-posts.json .github/growth/app-improvements.json .github/growth/ig-hub
             git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "每日實用卡發文紀錄：外宣頁連結更新 [skip ci]"
-            if git push -q origin HEAD:main; then exit 0; fi
+            if python3 .github/scripts/growth_records.py push "$target"; then exit 0; fi
             sleep $((i * 5))
           done
           echo "::warning::could not record the utility card post"; exit 1

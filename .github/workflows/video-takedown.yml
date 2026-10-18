@@ -39,11 +39,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
+      actions: read # growth_records.py: is geo-daily running?
       contents: write # the report, the receipts and the taken_down marks are committed
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main # a run that waited in the queue must see the receipts the run before it committed
+      - name: Read records still waiting on the growth-records-pending branch
+        # geo-daily holds bot record pushes off main while it runs (growth_records.py);
+        # dedupe and the promotion page read them from here until they are merged.
+        run: python3 .github/scripts/growth_records.py overlay
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -64,20 +69,22 @@ jobs:
           python3 .github/scripts/video_takedown.py "$MODE" --confirm "$CONFIRM"
       - name: Save the report and the taken_down marks
         if: always()
+        env:
+          GITHUB_TOKEN: ${{ github.token }} # growth_records.py checks whether geo-daily is running
         run: |
           G=.github/growth
           if [ -z "$(git status --porcelain -- $G/video-takedown.json $G/clip-posts.json)" ]; then echo "nothing new"; exit 0; fi
           mkdir -p "$RUNNER_TEMP/save"
           cp -f "$G/video-takedown.json" "$RUNNER_TEMP/save/video-takedown.json"
           for i in 1 2 3; do
-            git fetch -q origin main && git reset -q --hard origin/main
+            target="$(python3 .github/scripts/growth_records.py prepare)"
             cp -f "$RUNNER_TEMP/save/video-takedown.json" "$G/video-takedown.json"
             python3 .github/scripts/video_takedown.py mark
             git add "$G/video-takedown.json" "$G/clip-posts.json"
             if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
             git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "鉤子片下架：計畫／收據 [skip ci]"
-            if git push -q origin HEAD:main; then exit 0; fi
+            if python3 .github/scripts/growth_records.py push "$target"; then exit 0; fi
             sleep $((i * 5))
           done
           echo "::error::could not save the takedown report"; exit 1

@@ -14,6 +14,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read # growth_records.py: is geo-daily running?
   contents: write
 
 concurrency:
@@ -26,13 +27,19 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - name: Read records still waiting on the growth-records-pending branch
+        # geo-daily holds bot record pushes off main while it runs (growth_records.py);
+        # dedupe and the promotion page read them from here until they are merged.
+        run: python3 .github/scripts/growth_records.py overlay
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
       - name: Refresh the promotion page
+        env:
+          GITHUB_TOKEN: ${{ github.token }} # growth_records.py checks whether geo-daily is running
         run: |
           for i in 1 2 3; do
-            git fetch -q origin main && git reset -q --hard origin/main
+            target="$(python3 .github/scripts/growth_records.py prepare)"
             # Compare the page minus its clock line (clip_progress.section_body).
             before="$(python3 .github/scripts/clip_progress.py --print-section-body)"
             python3 .github/scripts/clip_progress.py
@@ -42,7 +49,7 @@ jobs:
             git add .github/growth/app-improvements.json
             git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "外宣頁：Android 上線清單同步 [skip ci]"
-            if git push -q origin HEAD:main; then exit 0; fi
+            if python3 .github/scripts/growth_records.py push "$target"; then exit 0; fi
             sleep $((i * 5))
           done
           exit 1

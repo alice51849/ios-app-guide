@@ -18,6 +18,7 @@ import time
 import urllib.parse
 import urllib.request
 
+import channel_rotation as CR
 import download_links as DL
 from social_post_common import (
     AMERICAS_LOCALES,
@@ -1888,6 +1889,8 @@ def main(argv=None):
         return 1
     try:
         context = production_context()
+        if CR.paused_notice("telegram"):  # channel rotation holdout week: no Telegram main post, green
+            return 0
         pool = load_pool()
         store = GitHubLedger(os.environ.get("GITHUB_TOKEN", ""))
         store.assert_current_source(context["source_sha"])

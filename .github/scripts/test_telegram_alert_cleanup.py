@@ -55,6 +55,27 @@ class Fake:
         return True, "ok"
 
 
+class FakeEdit(Fake):
+    def __init__(self, live, refuse=frozenset(), stale_reads: int = 0):
+        super().__init__(live, refuse)
+        self.edited, self.stale_reads = [], stale_reads
+        self.old = {}
+
+    def preview(self, message_id):
+        if message_id in self.old and self.stale_reads > 0:
+            self.stale_reads -= 1  # the public preview is still cached
+            return tc.parse_preview(page(self.old[message_id]))
+        return tc.parse_preview(page(self.live.get(message_id)))
+
+    def edit(self, token, chat_id, message_id):
+        if message_id in self.refuse:
+            return False, "Bad Request: message can't be edited"
+        self.edited.append(message_id)
+        self.old[message_id] = self.live[message_id]
+        self.live[message_id] = tc.NEUTRAL_TEXT
+        return True, "ok"
+
+
 class TemplateTests(unittest.TestCase):
     def test_internal_templates_match_and_promo_does_not(self):
         self.assertEqual("line_alert.py:new_red", tc.template_of(NEW_RED))
@@ -131,6 +152,109 @@ class RunTests(unittest.TestCase):
                      delete=fake.delete, settle=0)
         self.assertEqual("delete_failed", out["results"][0]["result"])
         self.assertIn("can't be deleted", out["results"][0]["detail"])
+
+    def test_edit_neutralises_alerts_and_reads_them_back(self):
+        fake = FakeEdit({5: NEW_RED, 6: OLD})
+        out = tc.run(doc((5, NEW_RED), (6, OLD)), token="t", chat_id="c", apply=False, edit=True,
+                     preview=fake.preview, delete=fake.delete, edit_fn=fake.edit, settle=0, pace=0)
+        self.assertEqual({"edited": 2}, out["counts"])
+        self.assertEqual([5, 6], fake.edited)
+        self.assertEqual([], fake.deleted)
+        self.assertEqual(["neutral", "neutral"], [r["after"] for r in out["results"]])
+        self.assertEqual({5: tc.NEUTRAL_TEXT, 6: tc.NEUTRAL_TEXT}, fake.live)
+
+    def test_edit_never_touches_promo_or_gone_or_already_neutral_posts(self):
+        fake = FakeEdit({5: PROMO, 6: None, 7: tc.NEUTRAL_TEXT})
+        out = tc.run(doc((5, NEW_RED), (6, OLD), (7, OLD)), token="t", chat_id="c", apply=False, edit=True,
+                     preview=fake.preview, delete=fake.delete, edit_fn=fake.edit, settle=0, pace=0)
+        self.assertEqual({"refused_not_alert": 1, "already_gone": 1, "already_neutral": 1}, out["counts"])
+        self.assertEqual([], fake.edited)
+        self.assertEqual(PROMO, fake.live[5])
+
+    def test_edit_waits_out_a_cached_preview_and_flags_one_that_never_updates(self):
+        fake = FakeEdit({5: OLD}, stale_reads=2)
+        out = tc.run(doc((5, OLD)), token="t", chat_id="c", apply=False, edit=True, preview=fake.preview,
+                     delete=fake.delete, edit_fn=fake.edit, settle=0, pace=0, readback_rounds=4)
+        self.assertEqual({"edited": 1}, out["counts"])
+        fake = FakeEdit({5: OLD}, stale_reads=99)
+        out = tc.run(doc((5, OLD)), token="t", chat_id="c", apply=False, edit=True, preview=fake.preview,
+                     delete=fake.delete, edit_fn=fake.edit, settle=0, pace=0, readback_rounds=3)
+        self.assertEqual({"edited_but_not_read_back": 1}, out["counts"])
+
+    def test_edit_refusal_is_reported(self):
+        fake = FakeEdit({5: OLD}, refuse={5})
+        out = tc.run(doc((5, OLD)), token="t", chat_id="c", apply=False, edit=True, preview=fake.preview,
+                     delete=fake.delete, edit_fn=fake.edit, settle=0, pace=0)
+        self.assertEqual("edit_failed", out["results"][0]["result"])
+        self.assertIn("can't be edited", out["results"][0]["detail"])
+
+    def test_edit_message_sends_only_the_neutral_text_and_waits_out_flood_control(self):
+        bodies, replies = [], [
+            {"ok": False, "error_code": 429, "description": "Too Many Requests: retry after 3",
+             "parameters": {"retry_after": 3}},
+            {"ok": True, "result": {"message_id": 5, "text": tc.NEUTRAL_TEXT}},
+        ]
+
+        class Response(io.BytesIO):
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *exc):
+                return False
+
+        def fake_urlopen(request, timeout=20):
+            bodies.append((request.full_url, request.data.decode()))
+            return Response(json.dumps(replies.pop(0)).encode())
+
+        slept = []
+        with mock.patch.object(tc.urllib.request, "urlopen", fake_urlopen):
+            ok, detail = tc.edit_message("tok", "-100123", 5, sleep=slept.append)
+        self.assertEqual((True, "ok"), (ok, detail))
+        self.assertEqual([4.0], slept)
+        self.assertEqual(2, len(bodies))
+        for url, body in bodies:
+            self.assertTrue(url.endswith("/editMessageText"))
+            fields = dict(tc.urllib.parse.parse_qsl(body))
+            self.assertEqual({"chat_id": "-100123", "message_id": "5", "text": tc.NEUTRAL_TEXT,
+                              "disable_web_page_preview": "true"}, fields)
+
+    def test_edit_message_treats_not_modified_as_done_and_unconfirmed_text_as_failure(self):
+        class Response(io.BytesIO):
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *exc):
+                return False
+
+        for reply, expected in (
+            ({"ok": False, "error_code": 400, "description": "Bad Request: message is not modified"},
+             (True, "not_modified")),
+            ({"ok": True, "result": {"message_id": 5, "text": "something else"}},
+             (False, "edited text not confirmed")),
+        ):
+            with mock.patch.object(tc.urllib.request, "urlopen",
+                                   lambda request, timeout=20, r=reply: Response(json.dumps(r).encode())):
+                self.assertEqual(expected, tc.edit_message("tok", "-100123", 5, sleep=lambda s: None))
+
+    def test_neutral_text_is_not_promo_copy(self):
+        self.assertEqual("（此訊息已移除）", tc.NEUTRAL_TEXT)
+        self.assertNotIn("http", tc.NEUTRAL_TEXT)
+        self.assertIsNone(tc.template_of(tc.NEUTRAL_TEXT))
+
+    def test_cli_edit_mode_never_prints_the_secrets(self):
+        path, digest = write(doc((5, OLD)))
+        fake = FakeEdit({5: OLD})
+        buffer = io.StringIO()
+        env = {"TELEGRAM_BOT_TOKEN": "SECRET-TOKEN", "TELEGRAM_CHAT_ID": "SECRET-CHAT", "GITHUB_STEP_SUMMARY": ""}
+        with mock.patch.dict("os.environ", env), mock.patch.object(tc, "fetch_preview", fake.preview), \
+                mock.patch.object(tc, "edit_message", fake.edit), mock.patch.object(tc, "delete_message", fake.delete), \
+                mock.patch.object(tc.time, "sleep"), redirect_stdout(buffer):
+            rc = tc.main(["--list", str(path), "--confirm", digest, "--mode", "edit"])
+        self.assertEqual(0, rc)
+        self.assertNotIn("SECRET", buffer.getvalue())
+        self.assertIn("id 5: edited", buffer.getvalue())
+        self.assertEqual([5], fake.edited)
+        self.assertEqual([], fake.deleted)
 
     def test_cli_never_prints_the_secrets(self):
         path, digest = write(doc((5, OLD)))

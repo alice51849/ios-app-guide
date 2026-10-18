@@ -21,6 +21,14 @@ Safety, in order:
 Ids the Bot API refuses (e.g. its 48-hour deletion window) are reported with
 Telegram's error description. The token and chat id come only from the
 environment and are never printed.
+
+``--mode edit`` is for the posts the Bot API can no longer delete (older than
+48 hours): the same list, digest and live-text checks apply, and each such post
+gets ``editMessageText`` with the fixed neutral text ``（此訊息已移除）`` (never
+promo copy, so the channel does not suddenly show dozens of ads). The text is
+a constant of this module, not an input; a post that already reads neutral is
+skipped; each edit is confirmed by the API's returned text and read back on the
+public preview.
 """
 from __future__ import annotations
 
@@ -50,6 +58,8 @@ TEMPLATES_60 = TEMPLATES[:2] + (
     ("line_watchdog.py:telegram_alert", re.compile(r"^line-health 🔴 \d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ(\n|$)")),
 )
 NOT_FOUND = "Post not found"
+# The only text --mode edit ever writes. Neutral on purpose: not promo copy.
+NEUTRAL_TEXT = "（此訊息已移除）"
 
 
 def template_of(text: str, templates=TEMPLATES) -> str | None:
@@ -144,6 +154,38 @@ def delete_message(token: str, chat_id: str, message_id: int) -> tuple[bool, str
     return False, str(payload.get("description") or "rejected")[:200]
 
 
+def edit_message(token: str, chat_id: str, message_id: int, *, attempts: int = 4,
+                 sleep: Callable[[float], None] = time.sleep) -> tuple[bool, str]:
+    """Replace one post's text with NEUTRAL_TEXT; (ok, detail). Waits out 429 flood control."""
+    body = urllib.parse.urlencode({"chat_id": chat_id, "message_id": message_id, "text": NEUTRAL_TEXT,
+                                   "disable_web_page_preview": "true"}).encode()
+    detail = "rejected"
+    for _ in range(attempts):
+        request = urllib.request.Request(f"https://api.telegram.org/bot{token}/editMessageText", data=body)
+        try:
+            with urllib.request.urlopen(request, timeout=20) as response:
+                payload = json.load(response)
+        except urllib.error.HTTPError as error:
+            try:
+                payload = json.loads(error.read().decode("utf-8", "replace"))
+            except ValueError:
+                payload = {"ok": False, "description": f"HTTP {error.code}"}
+        except OSError as error:
+            return False, type(error).__name__
+        if payload.get("ok"):
+            text = (payload.get("result") or {}).get("text") if isinstance(payload.get("result"), dict) else None
+            return (True, "ok") if text == NEUTRAL_TEXT else (False, "edited text not confirmed")
+        detail = str(payload.get("description") or "rejected")[:200]
+        if "message is not modified" in detail:
+            return True, "not_modified"
+        retry_after = (payload.get("parameters") or {}).get("retry_after")
+        if payload.get("error_code") == 429 and isinstance(retry_after, (int, float)) and retry_after <= 120:
+            sleep(float(retry_after) + 1)
+            continue
+        return False, detail
+    return False, detail
+
+
 def load_list(path: Path, confirm: str) -> dict:
     raw = path.read_bytes()
     digest = hashlib.sha256(raw).hexdigest()
@@ -166,12 +208,22 @@ def load_list(path: Path, confirm: str) -> dict:
     return doc
 
 
+def _is_neutral(text: str) -> bool:
+    return (text or "").strip() == NEUTRAL_TEXT
+
+
 def run(doc: dict, *, token: str, chat_id: str, apply: bool,
         preview: Callable[[int], dict] | None = None,
         delete: Callable[[str, str, int], tuple[bool, str]] | None = None,
-        settle: float = 2.0) -> dict:
+        settle: float = 2.0, edit: bool = False,
+        edit_fn: Callable[[str, str, int], tuple[bool, str]] | None = None,
+        pace: float = 1.5, readback_rounds: int = 4) -> dict:
     preview = preview or fetch_preview  # looked up at call time so tests can never reach the network
     delete = delete or delete_message
+    edit_fn = edit_fn or edit_message
+    if edit:
+        return _run_edit(doc, token=token, chat_id=chat_id, preview=preview, edit_fn=edit_fn,
+                         settle=settle, pace=pace, readback_rounds=readback_rounds)
     results = []
     for item in doc["items"]:
         message_id = item["id"]
@@ -204,20 +256,67 @@ def run(doc: dict, *, token: str, chat_id: str, apply: bool,
     return {"listed": len(results), "counts": counts, "results": results}
 
 
+def _run_edit(doc: dict, *, token: str, chat_id: str, preview: Callable[[int], dict],
+              edit_fn: Callable[[str, str, int], tuple[bool, str]], settle: float, pace: float,
+              readback_rounds: int) -> dict:
+    """editMessageText(NEUTRAL_TEXT) on listed posts whose live text is still an internal alert."""
+    results = []
+    for item in doc["items"]:
+        message_id = item["id"]
+        before = preview(message_id)
+        row = {"id": message_id, "before": before["state"]}
+        if before["state"] == "missing":
+            row["result"] = "already_gone"
+        elif before["state"] != "present":
+            row["result"] = "refused_unreadable"
+        elif _is_neutral(before["text"]):
+            row["result"] = "already_neutral"
+        elif template_of(before["text"]) is None:
+            row["result"] = "refused_not_alert"
+        else:
+            ok, detail = edit_fn(token, chat_id, message_id)
+            row["result"] = "edited" if ok else "edit_failed"
+            row["detail"] = detail
+            if pace:
+                time.sleep(pace)
+        results.append(row)
+    pending = [row for row in results if row["result"] == "edited"]
+    for round_index in range(max(1, readback_rounds)):
+        if not pending:
+            break
+        if settle:
+            time.sleep(settle * (round_index + 1))
+        still = []
+        for row in pending:
+            after = preview(row["id"])
+            row["after"] = "neutral" if after["state"] == "present" and _is_neutral(after["text"]) else after["state"]
+            if row["after"] != "neutral":
+                still.append(row)
+        pending = still
+    for row in pending:
+        row["result"] = "edited_but_not_read_back"
+    counts: dict[str, int] = {}
+    for row in results:
+        counts[row["result"]] = counts.get(row["result"], 0) + 1
+    return {"listed": len(results), "counts": counts, "results": results, "neutral_text": NEUTRAL_TEXT}
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--list", type=Path, required=True)
     parser.add_argument("--confirm", required=True, help="sha256 of the reviewed list file")
-    parser.add_argument("--mode", choices=("plan", "apply"), default="plan")
+    parser.add_argument("--mode", choices=("plan", "apply", "edit"), default="plan",
+                        help="plan: read only; apply: deleteMessage; edit: editMessageText to the neutral text")
     parser.add_argument("--report", type=Path)
     args = parser.parse_args(argv)
     doc = load_list(args.list, args.confirm)
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
-    if args.mode == "apply" and (not token or not chat_id):
-        print("::error::TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID are not set; nothing was deleted")
+    if args.mode in ("apply", "edit") and (not token or not chat_id):
+        print("::error::TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID are not set; nothing was changed")
         return 1
-    outcome = run(doc, token=token, chat_id=chat_id, apply=args.mode == "apply")
+    outcome = run(doc, token=token, chat_id=chat_id, apply=args.mode == "apply", edit=args.mode == "edit",
+                  settle=5.0 if args.mode == "edit" else 2.0)
     for row in outcome["results"]:
         extra = f" ({row['detail']})" if row.get("detail") and row["detail"] != "ok" else ""
         after = f" after={row['after']}" if "after" in row else ""
@@ -229,7 +328,8 @@ def main(argv: list[str] | None = None) -> int:
     if step_summary:
         with open(step_summary, "a", encoding="utf-8") as handle:
             handle.write("telegram alert cleanup: " + json.dumps(outcome["counts"], sort_keys=True) + "\n")
-    bad = {"refused_unreadable", "refused_not_alert", "deleted_but_still_public"}
+    bad = {"refused_unreadable", "refused_not_alert", "deleted_but_still_public",
+           "edit_failed", "edited_but_not_read_back"}
     return 1 if any(row["result"] in bad for row in outcome["results"]) else 0
 
 

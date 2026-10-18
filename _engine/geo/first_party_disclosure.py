@@ -32,6 +32,7 @@ Usage: ``python3 first_party_disclosure.py --pages <site root> [--check]``.
 from __future__ import annotations
 
 import argparse
+from functools import lru_cache
 import html
 import json
 import os
@@ -485,6 +486,27 @@ def apply_to_page(source: str, *, locale: str | None = None) -> str:
         resolved, fallback = page_locale(source, "")
     updated = ensure_banner(source, resolved, lang="en" if fallback else None)
     return ensure_publisher(updated)
+
+
+@lru_cache(maxsize=1)
+def _default_legacy_faq() -> Mapping[str, str]:
+    return MappingProxyType(load_legacy_faq_answers())
+
+
+def finalize_page(source: str, relative: str,
+                  legacy_faq: Mapping[str, str] | None = None) -> str:
+    """The bytes run() leaves for one page it does not skip.
+
+    A generator that records its own output digests in a manifest calls this
+    before hashing, so the manifest seals the page as published and the later
+    site-wide run() finds nothing left to change on it.
+    """
+    if not is_promotional(source) or _owned_elsewhere(relative):
+        return source
+    locale, fallback = page_locale(source, relative)
+    if legacy_faq is None:
+        legacy_faq = _default_legacy_faq()
+    return transform(source, locale, legacy_faq, fallback=fallback)
 
 
 def digest_pinned(pages: Path) -> set[str]:

@@ -24,6 +24,7 @@ from app_store_storefronts import (
     normalize_app_store_campaign_url,
     validated_app_store_url,
 )
+import first_party_disclosure
 from gen_feed import feed_discovery_links, render_feed_discovery
 from official_locales import OFFICIAL_LOCALES
 import publisher_intent_catalog as catalog
@@ -83,7 +84,19 @@ def _final_gallery_content(path: Path, content: str) -> str:
             content,
             label=str(path),
         )
-    return render_feed_discovery(content)
+    # The site-wide first-party disclosure pass runs after this generator; the
+    # manifest digest has to cover the page as that pass leaves it.
+    return first_party_disclosure.finalize_page(
+        render_feed_discovery(content),
+        _gallery_site_relative(path),
+    )
+
+
+def _gallery_site_relative(path: Path) -> str:
+    parts = Path(path).parts
+    if len(parts) >= 3 and parts[-3] in OFFICIAL_LOCALES:
+        return "/".join(parts[-3:])
+    return "/".join(parts[-2:])
 
 
 def write_gallery_if_changed(path: Path, content: str) -> bool:

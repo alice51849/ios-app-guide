@@ -27,6 +27,7 @@ from app_store_storefronts import (
     validated_app_store_url,
 )
 from official_locales import OFFICIAL_LOCALES
+import first_party_disclosure
 import gen_feed
 import gen_sitemap_lastmod
 import publisher_intent_catalog as catalog
@@ -62,6 +63,33 @@ class PublisherIntentVisualUnitTests(unittest.TestCase):
                 hashlib.sha256(rendered.encode("utf-8")).hexdigest(),
                 identity["sha256"],
             )
+
+    def test_gallery_digest_survives_the_site_wide_disclosure_pass(self) -> None:
+        # geo-daily #1252: first_party_disclosure ran after this generator
+        # and rewrote visuals/index.html, so the manifest digest no longer
+        # matched the published gallery. The writer now emits the final page.
+        page = (
+            '<!doctype html>\n<html lang="ja"><head><title>Visuals</title>'
+            '</head><body>\n<main><h1>Visuals</h1><a href="https://apps.apple.com'
+            '/jp/app/id6798813048?pt=118326163&amp;ct=iag_visual_ja&amp;mt=8">'
+            'App Store</a></main></body></html>\n'
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / "ja" / "visuals" / "index.html"
+            path.parent.mkdir(parents=True)
+            self.assertTrue(visuals.write_gallery_if_changed(path, page))
+            written = path.read_text(encoding="utf-8")
+            self.assertIn(first_party_disclosure.MARKER, written)
+            self.assertIn(first_party_disclosure.banner_text("ja"), written)
+            recorded = visuals._gallery_manifest_record("ja", written)["sha256"]
+            stats = first_party_disclosure.run(root)
+            self.assertEqual(1, stats["promotional"])
+            self.assertEqual(0, stats["changed"])
+            self.assertEqual(
+                recorded, hashlib.sha256(path.read_bytes()).hexdigest()
+            )
+            self.assertFalse(visuals.write_gallery_if_changed(path, page))
 
     def test_gallery_edited_after_build_is_redated(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

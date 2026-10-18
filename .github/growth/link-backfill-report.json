@@ -1,15 +1,27 @@
 {
- "generated": "2026-10-18T11:14:19Z",
+ "generated": "2026-10-18T15:55:36Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 7,
+  "ok_reply": 8,
   "ok_store_only": 719,
   "unknown_app": 46,
-  "ok_backfilled_earlier": 10,
-  "backfilled": 5,
+  "ok_backfilled_earlier": 11,
+  "backfilled": 4,
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "18598144369068136",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Deo8NgfG8Rj",
+   "date": "2026-10-18",
+   "app": "lumiweather",
+   "status": "ok_reply",
+   "text": "明天（10/19 週一）穿什麼？ 台北 22–33°C 台中 24–33°C 高雄 25–31°C 以台北來說，炎熱：短袖、透氣材質，帽子、防曬和水都要帶。 日夜溫差 11 度，早上出門多帶一件。 明天穿什麼 #天氣 預報：MET Norway，僅供參考，出門前以實際天氣為準。 ",
+   "why": "brand",
+   "ios_id": "6779552704",
+   "locale": "zh-Hant"
+  },
   {
    "channel": "threads",
    "id": "18371417554209947",
@@ -9254,16 +9266,11 @@
    "permalink": "https://www.threads.com/@hourstag.app/post/Db2wga3ky-W",
    "date": "2026-08-10",
    "app": "snapport",
-   "status": "backfilled",
+   "status": "ok_backfilled_earlier",
    "text": "Snapport: صور جواز وهوية تأشيرة ومستندات وخلفية خصوصية أولاً، بلا إعلانات. ادفع مرة واحدة.",
    "why": "brand",
    "ios_id": "6780575828",
-   "locale": "en",
-   "own_replies": [],
-   "comment_id": "18638757085037672",
-   "at": "2026-10-18T11:12:40Z",
-   "verified": true,
-   "via": "list"
+   "locale": "en"
   },
   {
    "channel": "threads",

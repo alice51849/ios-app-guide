@@ -1,6 +1,8 @@
 """Unit tests for line_watchdog.py with a scripted ``gh`` runner (no network)."""
 from __future__ import annotations
 
+import contextlib
+import io
 import json
 import sys
 import tempfile
@@ -245,13 +247,40 @@ class ReportingTests(unittest.TestCase):
         self.assertEqual("all_fresh", wd.reconcile_issue(ScriptedGh({"issue list": []}), self.rows(False), NOW))
 
     def test_telegram_alert_only_fires_on_red_with_credentials(self):
-        sent = []
-        post = lambda url, payload: sent.append((url, payload))  # noqa: E731
-        self.assertFalse(wd.telegram_alert(self.rows(False), NOW, "t", "c", post))
-        self.assertFalse(wd.telegram_alert(self.rows(True), NOW, "", "c", post))
-        self.assertTrue(wd.telegram_alert(self.rows(True), NOW, "tok", "chat", post))
-        self.assertIn("post.yml", sent[0][1]["text"])
-        self.assertNotIn("tok", sent[0][1]["text"])
+        calls = []
+
+        def api(token, method, payload):
+            calls.append((method, payload))
+            return {"id": 123456789, "type": "private"} if method == "getChat" else {"message_id": 7}
+
+        self.assertFalse(wd.telegram_alert(self.rows(False), NOW, "t", "123456789", api))
+        self.assertFalse(wd.telegram_alert(self.rows(True), NOW, "", "123456789", api))
+        self.assertTrue(wd.telegram_alert(self.rows(True), NOW, "tok", "123456789", api))
+        sent = [payload for method, payload in calls if method == "sendMessage"]
+        self.assertEqual("123456789", sent[0]["chat_id"])
+        self.assertIn("post.yml", sent[0]["text"])
+        self.assertNotIn("tok", sent[0]["text"])
+
+    def test_telegram_alert_never_reaches_a_public_chat(self):
+        calls = []
+
+        def api(token, method, payload):
+            calls.append(method)
+            return {"type": "channel", "username": "LumiApps2026"} if method == "getChat" else {"message_id": 7}
+
+        with contextlib.redirect_stderr(io.StringIO()):
+            self.assertFalse(wd.telegram_alert(self.rows(True), NOW, "tok", "@LumiApps2026", api))
+            self.assertFalse(wd.telegram_alert(self.rows(True), NOW, "tok", "-1001234", api,
+                                               public_chat_ids=("-1001234",)))
+            self.assertFalse(wd.telegram_alert(self.rows(True), NOW, "tok", "-1005678", api))  # getChat: public
+        self.assertNotIn("sendMessage", calls)
+
+    def test_telegram_flag_reads_only_the_alert_chat(self):
+        source = Path(wd.__file__).read_text(encoding="utf-8")
+        main_source = source[source.index("def main("):]
+        self.assertIn('"TELEGRAM_ALERT_CHAT_ID"', main_source)
+        self.assertNotIn('os.environ.get("TELEGRAM_CHAT_ID"', main_source)
+        self.assertNotIn("api.telegram.org", source)
 
     def test_table_never_mentions_mastodon_as_a_line(self):
         table = wd.render_table(self.rows(True), NOW)

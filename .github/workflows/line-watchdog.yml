@@ -57,7 +57,7 @@ jobs:
         timeout-minutes: 3
         run: |
           cd .github/scripts
-          python3 -m unittest test_line_watchdog test_line_alert
+          python3 -m unittest test_line_watchdog test_line_alert test_telegram_alert_guard
       - name: Judge lines, heal stale ones, reconcile the line-health issue
         id: judge
         timeout-minutes: 8
@@ -101,6 +101,15 @@ jobs:
         with:
           path: ${{ runner.temp }}/line-alert-state
           key: line-alert-state-${{ github.run_id }}-${{ github.run_attempt }}
+      # Fails (red run) when a new Telegram send point bypasses telegram_alert_guard.py,
+      # i.e. an internal message that could reach the public promo channel. Runs last so
+      # the judgement and the line-health issue above are never blocked by it.
+      - name: Every Telegram send point is the internal-alert gate or a reviewed public one
+        if: always()
+        timeout-minutes: 3
+        run: |
+          cd .github/scripts
+          python3 -m unittest test_telegram_send_points
       - name: Fail the run only when a line is still red
         timeout-minutes: 1
         run: test "${{ steps.judge.outcome }}" = "success"

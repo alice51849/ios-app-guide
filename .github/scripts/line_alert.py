@@ -29,6 +29,10 @@ script sent to it. So:
   exports it; both are read only for this comparison, never as a target);
 * anything that is not a numeric chat id is refused as invalid.
 
+The checks and the send itself live in ``telegram_alert_guard.py`` (the one
+gate every internal Telegram message goes through; it also refuses a chat that
+``getChat`` reports as public). This script only decides when to send.
+
 Secrets come only from the environment (``TELEGRAM_BOT_TOKEN`` /
 ``TELEGRAM_ALERT_CHAT_ID`` / ``TELEGRAM_PUBLIC_CHAT_ID``, referenced as
 ``${{ secrets.X }}`` in the workflow) and are never printed. The same file is
@@ -41,9 +45,12 @@ import datetime as dt
 import json
 import os
 import sys
-import urllib.request
 from pathlib import Path
 from typing import Callable
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import telegram_alert_guard as guard  # noqa: E402
 
 STATE_SCHEMA = "line-watchdog.alert-state/v1"
 SELF_LINE = "line-watchdog（看門狗本身）"
@@ -189,36 +196,13 @@ def plan(report: dict | None, state: dict, now: float, *, label: str, run_url: s
             "recovered": recovered, "next_state": next_state}
 
 
-def alert_target_problem(chat_id: str, public_chat_ids: tuple[str, ...] = ()) -> str | None:
-    """Why ``chat_id`` must not receive an internal alert, or None when it may.
-
-    Internal alerts must never reach a public channel: an ``@username`` target is
-    public by definition, and a ``-100…`` (channel / supergroup) id equal to the
-    public promo chat is the promo channel itself. Anything that is not a
-    numeric id is refused as invalid rather than guessed at.
-    """
-    target = (chat_id or "").strip()
-    if not target:
-        return "alert_chat_missing"
-    if target.startswith("@"):
-        return "alert_chat_public_refused"
-    public = {value.strip() for value in public_chat_ids if value and value.strip()}
-    if target.startswith("-100") and target in public:
-        return "alert_chat_public_refused"
-    if not target.lstrip("-").isdigit():
-        return "alert_chat_invalid"
-    return None
+# Shared gate (telegram_alert_guard.py): the target checks and the only internal send.
+alert_target_problem = guard.alert_target_problem
 
 
 def telegram_post(token: str, chat_id: str, text: str) -> int | None:
-    body = json.dumps({"chat_id": chat_id, "text": text, "disable_web_page_preview": True}).encode("utf-8")
-    request = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMessage", data=body,
-                                     headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(request, timeout=20) as response:
-        payload = json.load(response)
-    if not payload.get("ok"):
-        raise RuntimeError("telegram rejected the message")
-    return (payload.get("result") or {}).get("message_id")
+    """Send through the shared gate (which re-checks the target and refuses a public chat)."""
+    return guard.post_alert(token, chat_id, text, public_chat_ids=guard.public_chat_ids_from_env())
 
 
 def write_state(path: Path, state: dict) -> None:
@@ -228,13 +212,14 @@ def write_state(path: Path, state: dict) -> None:
 
 def run(report_path: Path, state_path: Path, *, label: str, run_url: str, now: float,
         token: str, chat_id: str, public_chat_ids: tuple[str, ...] = (),
-        post: Callable[[str, str, str], int | None] = telegram_post) -> dict:
+        post: Callable[[str, str, str], int | None] | None = None) -> dict:
     """Plan, send when the state changed, and advance the state only when nothing is left unsent.
 
     ``chat_id`` is the internal alert chat (TELEGRAM_ALERT_CHAT_ID) and nothing
     else; ``public_chat_ids`` are only compared against it so a public target is
     refused.
     """
+    post = post or telegram_post  # looked up at call time so a patched telegram_post is honoured
     state = load_state(state_path)
     decision = plan(load_json(report_path), state, now, label=label, run_url=run_url)
     outcome = {"kind": decision["kind"], "new_red": decision["new_red"], "still_red": decision["still_red"],
@@ -254,6 +239,10 @@ def run(report_path: Path, state_path: Path, *, label: str, run_url: str, now: f
         return outcome
     try:
         message_id = post(token, chat_id, decision["message"])
+    except guard.AlertRefused as refused:  # e.g. getChat says the chat is public
+        write_state(state_path, state)
+        outcome.update(status=refused.status)
+        return outcome
     except Exception as error:  # noqa: BLE001 - a failed send is retried next run, never marked as notified
         write_state(state_path, state)
         outcome.update(status="send_failed", error=type(error).__name__)
@@ -273,10 +262,9 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     outcome = run(args.report, args.state, label=args.label, run_url=args.run_url,
                   now=dt.datetime.now(dt.timezone.utc).timestamp(),
-                  token=os.environ.get("TELEGRAM_BOT_TOKEN", "").strip(),
-                  chat_id=os.environ.get("TELEGRAM_ALERT_CHAT_ID", "").strip(),
-                  public_chat_ids=(os.environ.get("TELEGRAM_PUBLIC_CHAT_ID", ""),
-                                   os.environ.get("TELEGRAM_CHAT_ID", "")))
+                  token=os.environ.get(guard.TOKEN_ENV, "").strip(),
+                  chat_id=os.environ.get(guard.ALERT_CHAT_ENV, "").strip(),
+                  public_chat_ids=guard.public_chat_ids_from_env())
     summary = (f"line alert: {outcome['status']} (change={outcome['kind']}, new red={len(outcome['new_red'])}, "
                f"still red={len(outcome['still_red'])}, recovered={len(outcome['recovered'])}, "
                f"state advanced={outcome['state_advanced']})")

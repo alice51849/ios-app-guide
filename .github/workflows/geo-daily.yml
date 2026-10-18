@@ -398,7 +398,16 @@ jobs:
           if git diff --cached --quiet; then
             echo "No content changes."
           else
-            git commit -m "Daily GEO content: new answer pages + refreshed sitemaps"
+            # finder 目錄會被 threads-autopilot 同步（sync_live_apps.py）：改到 TA 讀的欄位就
+            # 在 log 與 commit 訊息標出「要排 TA 重封」。只提醒，失敗也不擋這次發布。
+            ta_trailer=""
+            if ! python3 .github/scripts/ta_finder_notice.py --staged \
+              --trailer-file "$RUNNER_TEMP/ta-finder-trailer.txt"; then
+              echo "::warning title=TA finder 提醒失敗::ta_finder_notice.py 沒跑完；照常發布"
+            elif [ -s "$RUNNER_TEMP/ta-finder-trailer.txt" ]; then
+              ta_trailer=$(cat "$RUNNER_TEMP/ta-finder-trailer.txt")
+            fi
+            git commit -m "Daily GEO content: new answer pages + refreshed sitemaps" ${ta_trailer:+-m "$ta_trailer"}
             source .github/scripts/remote-first-publish.sh
             reconcile_english_phase() {
               python3 _engine/geo/sync_standard_site.py \
@@ -627,7 +636,16 @@ jobs:
           if git diff --cached --quiet; then
             echo "No localized changes."
           else
-            git commit -m "Daily GEO content: localized answer pages"
+            # finder 目錄會被 threads-autopilot 同步（sync_live_apps.py）：改到 TA 讀的欄位就
+            # 在 log 與 commit 訊息標出「要排 TA 重封」。只提醒，失敗也不擋這次發布。
+            ta_trailer=""
+            if ! python3 .github/scripts/ta_finder_notice.py --staged \
+              --trailer-file "$RUNNER_TEMP/ta-finder-trailer.txt"; then
+              echo "::warning title=TA finder 提醒失敗::ta_finder_notice.py 沒跑完；照常發布"
+            elif [ -s "$RUNNER_TEMP/ta-finder-trailer.txt" ]; then
+              ta_trailer=$(cat "$RUNNER_TEMP/ta-finder-trailer.txt")
+            fi
+            git commit -m "Daily GEO content: localized answer pages" ${ta_trailer:+-m "$ta_trailer"}
             source .github/scripts/remote-first-publish.sh
             reconcile_localized_phase() {
               if python3 _engine/geo/verified_tree.py matches-head \

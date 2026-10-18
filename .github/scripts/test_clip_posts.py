@@ -34,7 +34,7 @@ def clip(app, locale):
 
 
 # The record 00_GrowthEngine schedule_posts.py puts on a real-recording clip (post_qa.video_compliance_problems).
-COMPLIANT = {"real_recording": True, "screen_text_ok": True, "board": "0123456789abcdef"}
+COMPLIANT = {"store_claims_ok": True, "screen_text_ok": True, "board": "0123456789abcdef", "real_recording": False}
 
 
 DATA = {
@@ -781,11 +781,16 @@ class VideoComplianceGateTest(unittest.TestCase):
 
     def test_an_incomplete_record_is_refused(self):
         for rec in ({}, {"real_recording": True}, {"real_recording": True, "screen_text_ok": False, "board": "x"},
-                    {"real_recording": "yes", "screen_text_ok": True, "board": "x"}, "ok"):
+                    {"real_recording": "yes", "screen_text_ok": True, "board": "x"}, "ok",
+                    {"store_claims_ok": False, "screen_text_ok": True, "board": "x", "real_recording": False},
+                    {"store_claims_ok": True, "screen_text_ok": True, "board": ""}):
             self.assertTrue(Q.video_compliance_problems(dict(clip("a", "en"), compliance=rec)), rec)
 
     def test_the_record_passes(self):
+        # Owner rule 2026-10-18: a store-screenshot cut (real_recording False) that passed both floors goes out.
         self.assertEqual(Q.video_compliance_problems(clip("a", "en")), [])
+        older = {"real_recording": True, "screen_text_ok": True, "board": "0123456789abcdef"}  # the stricter record
+        self.assertEqual(Q.video_compliance_problems(dict(clip("a", "en"), compliance=older)), [])
 
     def test_qa_variant_never_picks_a_variant_for_a_non_compliant_clip(self):
         bad = {k: v for k, v in clip("a", "en").items() if k != "compliance"}

@@ -383,15 +383,18 @@ def bio_problems(text, locale, name, channel, store_url=None):
 
 
 def video_compliance_problems(clip):
-    """Owner rule (00_GrowthEngine CLAUDE.md, App Store 2.3.3): the App on screen is a real screen recording and
-    the video shows no price / Free / Pro. 00_GrowthEngine shorts/scripts/video_compliance.py checks the
-    storyboard and its render, and schedule_posts.py puts its record on the clips.json entry ("compliance").
-    Fail-closed: a clip without that record is never posted, whatever its caption says."""
+    """Owner rule 2026-10-18 (CLAUDE.md): a real screen recording is no longer required (store-screenshot cuts go
+    out too); two false-advertising floors stay - no claim the store copy does not support, and no price / Free /
+    Pro that differs from the store. 00_GrowthEngine shorts/scripts/video_compliance.py checks them on the
+    storyboard the render was made from, and schedule_posts.py puts its record on the clips.json entry
+    ("compliance": store_claims_ok, screen_text_ok, board; a record of the stricter gate before it carries
+    real_recording instead of store_claims_ok). Fail-closed: a clip without that record is never posted."""
     rec = clip.get("compliance") if isinstance(clip, dict) else None
-    if not isinstance(rec, dict) or rec.get("real_recording") is not True or rec.get("screen_text_ok") is not True \
-            or not isinstance(rec.get("board"), str) or not rec["board"]:
-        return [f"clip has no video compliance record (real screen recording, no price / Free / Pro on screen): "
-                f"{(clip or {}).get('app')}/{(clip or {}).get('locale')}"]
+    if not isinstance(rec, dict) or rec.get("screen_text_ok") is not True \
+            or not isinstance(rec.get("board"), str) or not rec["board"] \
+            or (rec.get("store_claims_ok") is not True and rec.get("real_recording") is not True):
+        return [f"clip has no video compliance record (store claims and on-screen price / Free / Pro checked "
+                f"against the store): {(clip or {}).get('app')}/{(clip or {}).get('locale')}"]
     return []
 
 

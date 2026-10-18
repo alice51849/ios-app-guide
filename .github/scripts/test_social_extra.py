@@ -35,8 +35,9 @@ def clip(app, locale):
             "tags": ["#a", "#b", "#c"], "compliance": COMPLIANT}
 
 
-# The record 00_GrowthEngine schedule_posts.py puts on a real-recording clip (post_qa.video_compliance_problems).
-COMPLIANT = {"real_recording": True, "screen_text_ok": True, "board": "0123456789abcdef"}
+# The record 00_GrowthEngine schedule_posts.py puts on a clip that passed both floors (owner rule 2026-10-18;
+# post_qa.video_compliance_problems); the footage may be store screenshots.
+COMPLIANT = {"store_claims_ok": True, "screen_text_ok": True, "board": "0123456789abcdef", "real_recording": False}
 
 
 HOOK = {"zh-Hant": "鉤子", "ko": "훅", "ja": "フック"}  # each locale's hook line is in its own script (post_qa)

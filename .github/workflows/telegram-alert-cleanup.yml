@@ -1,0 +1,77 @@
+name: Telegram alert cleanup
+
+# Deletes the internal watchdog alerts that leaked into the public promo channel
+# t.me/LumiApps2026 (this repository's TELEGRAM_CHAT_ID) before 2026-10-18:
+# `line_watchdog.py --telegram` posts「line-health 🔴 …」and one `line_alert.py`
+# post「🔴 外宣線變紅…」. The ids are .github/growth/telegram_alert_cleanup_2026-10-18.json
+# (byte-identical to 00_GrowthEngine reports/ops/telegram_alert_cleanup_2026-10-18.json,
+# reviewed post by post by a second, different model: …review.json on that repo).
+# .github/scripts/telegram_alert_cleanup.py only calls deleteMessage on those ids, only
+# when `confirm` equals the list's sha256 and the post's live public text still starts
+# with an internal-alert template; every deletion is read back on the public preview.
+# Manual only, nothing scheduled; one run takes a few minutes at most on ubuntu-latest.
+#   mode=plan   read only: prints what would be deleted.
+#   mode=apply  deletes and reads back.
+#   mode=edit   for the posts the Bot API can no longer delete (older than 48 hours):
+#               editMessageText to the fixed neutral text「（此訊息已移除）」on the listed
+#               ids whose live text is still an internal alert (never promo copy, so the
+#               channel does not suddenly show dozens of ads), then reads each one back.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "plan (read only), apply (delete the listed alerts) or edit (replace their text with（此訊息已移除）)"
+        type: choice
+        options:
+          - plan
+          - apply
+          - edit
+        default: "plan"
+      confirm:
+        description: "sha256 of .github/growth/telegram_alert_cleanup_2026-10-18.json"
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: telegram-alert-cleanup
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            .github
+          sparse-checkout-cone-mode: true
+      - name: Test
+        run: |
+          cd .github/scripts
+          python3 -m unittest test_telegram_alert_cleanup
+      - name: Plan / apply
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MODE: ${{ inputs.mode }}
+          CONFIRM: ${{ inputs.confirm }}
+        run: |
+          python3 .github/scripts/telegram_alert_cleanup.py \
+            --list .github/growth/telegram_alert_cleanup_2026-10-18.json \
+            --confirm "$CONFIRM" \
+            --mode "$MODE" \
+            --report "$RUNNER_TEMP/telegram-alert-cleanup.json"
+      - name: Keep the per-id result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: telegram-alert-cleanup-${{ github.run_id }}
+          path: ${{ runner.temp }}/telegram-alert-cleanup.json
+          if-no-files-found: warn
+          retention-days: 30

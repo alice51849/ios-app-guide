@@ -618,16 +618,37 @@ def reconcile_issue(gh: Gh, rows: list[dict], now: float) -> str:
     return "all_fresh"
 
 
+def _alert_guard():
+    """telegram_alert_guard.py next to this file: the one gate for internal Telegram messages."""
+    here = str(Path(__file__).resolve().parent)
+    if here not in sys.path:
+        sys.path.insert(0, here)
+    import telegram_alert_guard
+
+    return telegram_alert_guard
+
+
 def telegram_alert(rows: list[dict], now: float, token: str, chat_id: str,
-                   post: Callable[[str, dict], None]) -> bool:
+                   api: Callable[[str, str, dict], dict] | None = None,
+                   public_chat_ids: tuple[str, ...] = ()) -> bool:
+    """Internal red-line alert (``--telegram``), only through telegram_alert_guard.
+
+    ``chat_id`` is TELEGRAM_ALERT_CHAT_ID; the gate refuses an @username, the
+    public promo chat (``public_chat_ids``) and any chat getChat reports as public.
+    Before 2026-10-18 this posted to TELEGRAM_CHAT_ID, the public promo channel.
+    """
     red = [row for row in rows if not row["fresh"]]
     if not red or not token or not chat_id:
         return False
     text = "line-health 🔴 " + iso(now) + "\n" + "\n".join(
         f"- {row['line']}: last {row['last_success']} ({row['action']})" for row in red
     )
-    post(f"https://api.telegram.org/bot{token}/sendMessage", {"chat_id": chat_id, "text": text[:3900]})
-    return True
+    guard = _alert_guard()
+    outcome = guard.send_internal_alert(text[:3900], token=token, chat_id=chat_id,
+                                        public_chat_ids=tuple(public_chat_ids), api=api)
+    if outcome["status"] != guard.SENT:
+        print(guard.explain(outcome, "line_watchdog --telegram")[0], file=sys.stderr)
+    return bool(outcome["sent"])
 
 
 def _http_get(url: str) -> bytes:
@@ -696,7 +717,8 @@ def main() -> int:
     parser.add_argument("--no-dispatch", action="store_true", help="judge only, never gh workflow run")
     parser.add_argument("--no-issue", action="store_true", help="judge only, never touch issues")
     parser.add_argument("--telegram", action="store_true",
-                        help="send a Telegram alert on red using TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID")
+                        help="send an internal Telegram alert on red to TELEGRAM_ALERT_CHAT_ID only "
+                             "(never the public TELEGRAM_CHAT_ID; nothing is sent without it)")
     args = parser.parse_args()
     now = dt.datetime.now(dt.timezone.utc).timestamp()
     gh = Gh(args.repo)
@@ -707,7 +729,8 @@ def main() -> int:
         try:
             alerted = telegram_alert(
                 rows, now, os.environ.get("TELEGRAM_BOT_TOKEN", "").strip(),
-                os.environ.get("TELEGRAM_CHAT_ID", "").strip(), _http_post,
+                os.environ.get("TELEGRAM_ALERT_CHAT_ID", "").strip(),
+                public_chat_ids=_alert_guard().public_chat_ids_from_env(),
             )
         except Exception as error:  # alerting must never turn the watchdog itself red
             print(f"telegram alert failed: {error}", file=sys.stderr)

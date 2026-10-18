@@ -14,6 +14,9 @@ import line_alert as la  # noqa: E402
 
 NOW = 1_800_000_000.0  # 2027-01-15T08:00:00Z
 H = la.HOUR
+PRIVATE_CHAT = "123456789"            # a private chat (owner DM): a valid internal alert target
+PRIVATE_GROUP = "-1009876543210"      # a private alert supergroup, not the promo channel
+PUBLIC_CHANNEL = "-1001111111111"     # stands in for the public promo channel (TELEGRAM_CHAT_ID)
 
 
 def row(line, fresh, *, kind="workflow", hours_ago=30.0, window=24, action="retriggered", note=""):
@@ -31,21 +34,23 @@ class Harness:
         self.report = self.dir / "line-health.json"
         self.state = self.dir / "state" / "state.json"
         self.sent: list[str] = []
+        self.targets: list[str] = []
         self.fail = False
 
     def post(self, token, chat_id, text):
         if self.fail:
             raise OSError("network down")
         self.sent.append(text)
+        self.targets.append(chat_id)
         return len(self.sent)
 
-    def run(self, rep, *, token="tok", chat="chat", now=NOW):
+    def run(self, rep, *, token="tok", chat=PRIVATE_CHAT, public=(PUBLIC_CHANNEL,), now=NOW):
         if rep is None:
             self.report.unlink(missing_ok=True)
         else:
             self.report.write_text(json.dumps(rep), encoding="utf-8")
         return la.run(self.report, self.state, label="00_GrowthEngine", run_url="https://x/runs/1",
-                      now=now, token=token, chat_id=chat, post=self.post)
+                      now=now, token=token, chat_id=chat, public_chat_ids=public, post=self.post)
 
 
 class StateChangeTests(unittest.TestCase):
@@ -98,7 +103,7 @@ class StateChangeTests(unittest.TestCase):
 class DeliveryTests(unittest.TestCase):
     def test_missing_secrets_keep_the_change_pending(self):
         h = Harness()
-        out = h.run(report(row("post.yml", False)), token="", chat="")
+        out = h.run(report(row("post.yml", False)), token="")
         self.assertEqual(("secrets_missing", False), (out["status"], out["state_advanced"]))
         self.assertEqual({}, la.load_state(h.state)["red"])
         later = h.run(report(row("post.yml", False)))
@@ -133,7 +138,9 @@ class DeliveryTests(unittest.TestCase):
         from contextlib import redirect_stdout
         from unittest import mock
         buffer = io.StringIO()
-        with mock.patch.dict("os.environ", {"TELEGRAM_BOT_TOKEN": "SECRET-TOKEN", "TELEGRAM_CHAT_ID": "SECRET-CHAT",
+        with mock.patch.dict("os.environ", {"TELEGRAM_BOT_TOKEN": "SECRET-TOKEN",
+                                            "TELEGRAM_ALERT_CHAT_ID": "SECRET-CHAT",
+                                            "TELEGRAM_PUBLIC_CHAT_ID": "SECRET-PUBLIC",
                                             "GITHUB_STEP_SUMMARY": ""}), redirect_stdout(buffer):
             code = la.main(["--report", str(h.report), "--state", str(h.state), "--label", "x",
                             "--outcome", str(h.dir / "outcome.json")])
@@ -141,6 +148,91 @@ class DeliveryTests(unittest.TestCase):
         output = buffer.getvalue() + (h.dir / "outcome.json").read_text(encoding="utf-8")
         self.assertNotIn("SECRET", output)
         self.assertIn("no_state_change", output)
+
+
+class AlertChatTests(unittest.TestCase):
+    """Internal alerts go only to TELEGRAM_ALERT_CHAT_ID and never to a public channel (2026-10-18 leak)."""
+
+    def test_missing_alert_chat_sends_nothing_and_is_not_a_failure(self):
+        h = Harness()
+        out = h.run(report(row("post.yml", False)), chat="")
+        self.assertEqual(("alert_chat_missing", False, False), (out["status"], out["sent"], out["state_advanced"]))
+        self.assertEqual([], h.sent)
+        self.assertEqual({}, la.load_state(h.state)["red"], "the change stays pending")
+
+    def test_cli_never_falls_back_to_the_public_chat_id(self):
+        import io
+        from contextlib import redirect_stdout
+        from unittest import mock
+        h = Harness()
+        h.report.write_text(json.dumps(report(row("post.yml", False))), encoding="utf-8")
+        buffer = io.StringIO()
+        env = {"TELEGRAM_BOT_TOKEN": "tok", "TELEGRAM_CHAT_ID": PUBLIC_CHANNEL, "GITHUB_STEP_SUMMARY": ""}
+        with mock.patch.dict("os.environ", env, clear=True), \
+                mock.patch.object(la, "telegram_post", side_effect=AssertionError("must not send")) as post, \
+                redirect_stdout(buffer):
+            code = la.main(["--report", str(h.report), "--state", str(h.state), "--label", "x"])
+        self.assertEqual(0, code, "a missing alert chat is not a failure")
+        post.assert_not_called()
+        self.assertIn("alert_chat_missing", buffer.getvalue())
+        self.assertNotIn(PUBLIC_CHANNEL, buffer.getvalue())
+
+    def test_username_target_is_refused_as_public(self):
+        h = Harness()
+        out = h.run(report(row("post.yml", False)), chat="@LumiApps2026")
+        self.assertEqual(("alert_chat_public_refused", False), (out["status"], out["sent"]))
+        self.assertEqual([], h.sent)
+
+    def test_channel_id_equal_to_the_public_chat_is_refused(self):
+        h = Harness()
+        out = h.run(report(row("post.yml", False)), chat=PUBLIC_CHANNEL, public=("", PUBLIC_CHANNEL))
+        self.assertEqual(("alert_chat_public_refused", False), (out["status"], out["sent"]))
+        self.assertEqual([], h.sent)
+
+    def test_cli_refuses_when_the_alert_chat_is_the_public_chat(self):
+        import io
+        from contextlib import redirect_stdout
+        from unittest import mock
+        h = Harness()
+        h.report.write_text(json.dumps(report(row("post.yml", False))), encoding="utf-8")
+        for env in ({"TELEGRAM_ALERT_CHAT_ID": PUBLIC_CHANNEL, "TELEGRAM_PUBLIC_CHAT_ID": PUBLIC_CHANNEL},
+                    {"TELEGRAM_ALERT_CHAT_ID": PUBLIC_CHANNEL, "TELEGRAM_CHAT_ID": PUBLIC_CHANNEL},
+                    {"TELEGRAM_ALERT_CHAT_ID": "@SomePublicChannel"}):
+            buffer = io.StringIO()
+            env = {"TELEGRAM_BOT_TOKEN": "tok", "GITHUB_STEP_SUMMARY": "", **env}
+            with mock.patch.dict("os.environ", env, clear=True), \
+                    mock.patch.object(la, "telegram_post", side_effect=AssertionError("must not send")) as post, \
+                    redirect_stdout(buffer):
+                code = la.main(["--report", str(h.report), "--state", str(h.state), "--label", "x"])
+            post.assert_not_called()
+            self.assertEqual(1, code)
+            self.assertIn("alert_chat_public_refused", buffer.getvalue())
+
+    def test_non_numeric_target_is_refused_as_invalid(self):
+        h = Harness()
+        out = h.run(report(row("post.yml", False)), chat="LumiApps2026")
+        self.assertEqual(("alert_chat_invalid", False), (out["status"], out["sent"]))
+        self.assertEqual([], h.sent)
+
+    def test_private_alert_targets_are_allowed(self):
+        for chat in (PRIVATE_CHAT, PRIVATE_GROUP, "-123456"):
+            h = Harness()
+            out = h.run(report(row("post.yml", False)), chat=chat)
+            self.assertEqual("sent", out["status"], chat)
+            self.assertEqual([chat], h.targets)
+
+    def test_watchdog_workflows_pass_only_the_alert_chat(self):
+        import re
+        workflows = sorted((HERE.parent / "workflows").glob("*.yml"))
+        callers = [path for path in workflows
+                   if re.search(r"python3?\s+\S*line_alert\.py", path.read_text(encoding="utf-8"))]
+        self.assertTrue(callers, "a workflow must run line_alert.py")
+        for path in callers:
+            text = path.read_text(encoding="utf-8")
+            self.assertIn("TELEGRAM_ALERT_CHAT_ID: ${{ secrets.TELEGRAM_ALERT_CHAT_ID }}", text, path.name)
+            self.assertIsNone(re.search(r"^\s*TELEGRAM_CHAT_ID\s*:", text, re.M),
+                              f"{path.name} must not export the public TELEGRAM_CHAT_ID to the alert step")
+            self.assertNotIn("TELEGRAM_ALERT_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}", text, path.name)
 
 
 class MessageTests(unittest.TestCase):

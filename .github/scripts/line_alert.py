@@ -15,10 +15,28 @@ message, so a failed send or missing secrets is retried on the next run
 instead of being silently marked as notified. A missing or unreadable watchdog
 report is itself treated as a red line (the watchdog went dark).
 
+Internal alerts go only to ``TELEGRAM_ALERT_CHAT_ID`` (2026-10-18). The
+repository's ``TELEGRAM_CHAT_ID`` is the public promo channel (ios-app-guide's
+is t.me/LumiApps2026), and about 52 internal alerts leaked there while this
+script sent to it. So:
+
+* without ``TELEGRAM_ALERT_CHAT_ID`` nothing is sent (status
+  ``alert_chat_missing``, not a failure) and there is never a fallback to
+  ``TELEGRAM_CHAT_ID``;
+* a target that looks public is refused: an ``@username`` (only public
+  channels/groups have one), or a ``-100…`` id equal to the public promo chat
+  (``TELEGRAM_PUBLIC_CHAT_ID``, or ``TELEGRAM_CHAT_ID`` if a workflow still
+  exports it; both are read only for this comparison, never as a target);
+* anything that is not a numeric chat id is refused as invalid.
+
+The checks and the send itself live in ``telegram_alert_guard.py`` (the one
+gate every internal Telegram message goes through; it also refuses a chat that
+``getChat`` reports as public). This script only decides when to send.
+
 Secrets come only from the environment (``TELEGRAM_BOT_TOKEN`` /
-``TELEGRAM_CHAT_ID``, referenced as ``${{ secrets.X }}`` in the workflow) and
-are never printed. The same file is committed to 00_GrowthEngine,
-ios-app-guide and threads-autopilot.
+``TELEGRAM_ALERT_CHAT_ID`` / ``TELEGRAM_PUBLIC_CHAT_ID``, referenced as
+``${{ secrets.X }}`` in the workflow) and are never printed. The same file is
+committed to 00_GrowthEngine, ios-app-guide and threads-autopilot.
 """
 from __future__ import annotations
 
@@ -27,9 +45,12 @@ import datetime as dt
 import json
 import os
 import sys
-import urllib.request
 from pathlib import Path
 from typing import Callable
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import telegram_alert_guard as guard  # noqa: E402
 
 STATE_SCHEMA = "line-watchdog.alert-state/v1"
 SELF_LINE = "line-watchdog（看門狗本身）"
@@ -175,15 +196,13 @@ def plan(report: dict | None, state: dict, now: float, *, label: str, run_url: s
             "recovered": recovered, "next_state": next_state}
 
 
+# Shared gate (telegram_alert_guard.py): the target checks and the only internal send.
+alert_target_problem = guard.alert_target_problem
+
+
 def telegram_post(token: str, chat_id: str, text: str) -> int | None:
-    body = json.dumps({"chat_id": chat_id, "text": text, "disable_web_page_preview": True}).encode("utf-8")
-    request = urllib.request.Request(f"https://api.telegram.org/bot{token}/sendMessage", data=body,
-                                     headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(request, timeout=20) as response:
-        payload = json.load(response)
-    if not payload.get("ok"):
-        raise RuntimeError("telegram rejected the message")
-    return (payload.get("result") or {}).get("message_id")
+    """Send through the shared gate (which re-checks the target and refuses a public chat)."""
+    return guard.post_alert(token, chat_id, text, public_chat_ids=guard.public_chat_ids_from_env())
 
 
 def write_state(path: Path, state: dict) -> None:
@@ -192,8 +211,15 @@ def write_state(path: Path, state: dict) -> None:
 
 
 def run(report_path: Path, state_path: Path, *, label: str, run_url: str, now: float,
-        token: str, chat_id: str, post: Callable[[str, str, str], int | None] = telegram_post) -> dict:
-    """Plan, send when the state changed, and advance the state only when nothing is left unsent."""
+        token: str, chat_id: str, public_chat_ids: tuple[str, ...] = (),
+        post: Callable[[str, str, str], int | None] | None = None) -> dict:
+    """Plan, send when the state changed, and advance the state only when nothing is left unsent.
+
+    ``chat_id`` is the internal alert chat (TELEGRAM_ALERT_CHAT_ID) and nothing
+    else; ``public_chat_ids`` are only compared against it so a public target is
+    refused.
+    """
+    post = post or telegram_post  # looked up at call time so a patched telegram_post is honoured
     state = load_state(state_path)
     decision = plan(load_json(report_path), state, now, label=label, run_url=run_url)
     outcome = {"kind": decision["kind"], "new_red": decision["new_red"], "still_red": decision["still_red"],
@@ -202,12 +228,21 @@ def run(report_path: Path, state_path: Path, *, label: str, run_url: str, now: f
         write_state(state_path, decision["next_state"])
         outcome.update(state_advanced=True, status="no_state_change")
         return outcome
-    if not token or not chat_id:
+    problem = alert_target_problem(chat_id, public_chat_ids)
+    if problem:
+        write_state(state_path, state)  # keep the old memory so the change is sent once a private chat is set
+        outcome.update(status=problem)
+        return outcome
+    if not token:
         write_state(state_path, state)  # keep the old memory so the change is sent once secrets exist
         outcome.update(status="secrets_missing")
         return outcome
     try:
         message_id = post(token, chat_id, decision["message"])
+    except guard.AlertRefused as refused:  # e.g. getChat says the chat is public
+        write_state(state_path, state)
+        outcome.update(status=refused.status)
+        return outcome
     except Exception as error:  # noqa: BLE001 - a failed send is retried next run, never marked as notified
         write_state(state_path, state)
         outcome.update(status="send_failed", error=type(error).__name__)
@@ -227,21 +262,33 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     outcome = run(args.report, args.state, label=args.label, run_url=args.run_url,
                   now=dt.datetime.now(dt.timezone.utc).timestamp(),
-                  token=os.environ.get("TELEGRAM_BOT_TOKEN", "").strip(),
-                  chat_id=os.environ.get("TELEGRAM_CHAT_ID", "").strip())
+                  token=os.environ.get(guard.TOKEN_ENV, "").strip(),
+                  chat_id=os.environ.get(guard.ALERT_CHAT_ENV, "").strip(),
+                  public_chat_ids=guard.public_chat_ids_from_env())
     summary = (f"line alert: {outcome['status']} (change={outcome['kind']}, new red={len(outcome['new_red'])}, "
                f"still red={len(outcome['still_red'])}, recovered={len(outcome['recovered'])}, "
                f"state advanced={outcome['state_advanced']})")
     print(summary)
+    if outcome["status"] == "alert_chat_missing":
+        print("alert_chat_missing: repository secret TELEGRAM_ALERT_CHAT_ID is not set, so no internal alert "
+              "is sent (never to the public TELEGRAM_CHAT_ID); the change stays pending until a private alert "
+              "chat is configured. The line-health issue is unaffected.")
+    if outcome["status"] == "alert_chat_public_refused":
+        print("::error::TELEGRAM_ALERT_CHAT_ID points at a public channel (@username, or the public promo chat); "
+              "internal alert refused. Set it to a private chat id.")
+    if outcome["status"] == "alert_chat_invalid":
+        print("::error::TELEGRAM_ALERT_CHAT_ID is not a numeric Telegram chat id; internal alert refused.")
     if outcome["status"] == "secrets_missing":
-        print("Telegram skipped: repository secrets TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID are not set; "
-              "the change stays pending and is sent on the first run after they are added.")
+        print("Telegram skipped: repository secret TELEGRAM_BOT_TOKEN is not set; "
+              "the change stays pending and is sent on the first run after it is added.")
     step_summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if step_summary:
         with open(step_summary, "a", encoding="utf-8") as handle:
             handle.write(f"\n{summary}\n")
     if args.outcome:
         args.outcome.write_text(json.dumps(outcome, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    if outcome["status"] in {"alert_chat_public_refused", "alert_chat_invalid"}:
+        return 1
     if outcome["status"] == "send_failed":
         print(f"::warning::Telegram send failed ({outcome.get('error')}); will retry on the next run")
         return 1

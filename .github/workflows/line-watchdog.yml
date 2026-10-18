@@ -15,6 +15,8 @@ name: line-watchdog
 # not notified yet, or every line is fresh again — using a state file carried
 # between runs by actions/cache; the state advances only after Telegram
 # accepted the message, so a failed send is retried on the next run.
+# 2026-10-18: alerts go only to TELEGRAM_ALERT_CHAT_ID. TELEGRAM_CHAT_ID is the
+# public promo channel t.me/LumiApps2026, where ~52 internal alerts leaked.
 
 on:
   schedule:
@@ -55,7 +57,7 @@ jobs:
         timeout-minutes: 3
         run: |
           cd .github/scripts
-          python3 -m unittest test_line_watchdog test_line_alert
+          python3 -m unittest test_line_watchdog test_line_alert test_telegram_alert_guard
       - name: Judge lines, heal stale ones, reconcile the line-health issue
         id: judge
         timeout-minutes: 8
@@ -81,7 +83,11 @@ jobs:
         continue-on-error: true
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Internal alerts go only to the private alert chat; without it nothing is sent
+          # (alert_chat_missing). The public promo chat is passed only so line_alert.py
+          # can refuse it as a target, never to send to it.
+          TELEGRAM_ALERT_CHAT_ID: ${{ secrets.TELEGRAM_ALERT_CHAT_ID }}
+          TELEGRAM_PUBLIC_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           python3 .github/scripts/line_alert.py \
             --report "$RUNNER_TEMP/line-health.json" \
@@ -95,6 +101,15 @@ jobs:
         with:
           path: ${{ runner.temp }}/line-alert-state
           key: line-alert-state-${{ github.run_id }}-${{ github.run_attempt }}
+      # Fails (red run) when a new Telegram send point bypasses telegram_alert_guard.py,
+      # i.e. an internal message that could reach the public promo channel. Runs last so
+      # the judgement and the line-health issue above are never blocked by it.
+      - name: Every Telegram send point is the internal-alert gate or a reviewed public one
+        if: always()
+        timeout-minutes: 3
+        run: |
+          cd .github/scripts
+          python3 -m unittest test_telegram_send_points
       - name: Fail the run only when a line is still red
         timeout-minutes: 1
         run: test "${{ steps.judge.outcome }}" = "success"

@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-10-17T04:11:29Z",
+  "updated_at": "2026-10-18T04:18:00Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
-    "instagram": "ok: 8 posts",
-    "threads": "ok: 23 posts"
+    "instagram": "ok: 12 posts",
+    "threads": "ok: 21 posts"
   },
   "boost": [
     "battai",
     "unblurry",
     "onepageppt",
     "lumibopomofo_b",
-    "notesstudio100"
+    "claudeusagemini"
   ],
   "demote": [
-    "hourstag",
-    "scanto",
-    "aim990",
     "dbhalo",
-    "qrcodehalo"
+    "aim990",
+    "snapportlite",
+    "qrcodehalo",
+    "ledmovingtext"
   ],
   "hook_winners": {
     "apps": {},
@@ -29,21 +29,21 @@
     "window": 14,
     "channels": {
       "instagram": {
-        "posts": 6,
-        "median_views": 1.5,
-        "keep_slot": 15,
+        "posts": 9,
+        "median_views": 2,
+        "keep_slot": 1,
         "daily": 2
       },
       "threads": {
         "posts": 3,
-        "median_views": 33,
+        "median_views": 38,
         "keep_slot": 1,
         "daily": 2
       }
     },
     "best": null,
     "reduced": [],
-    "decision": "等資料：每通路需 14 則有洞察的鉤子片（目前 Instagram 6、Threads 3）"
+    "decision": "等資料：每通路需 14 則有洞察的鉤子片（目前 Instagram 9、Threads 3）"
   },
   "best_hours": {
     "threads": {
@@ -54,16 +54,16 @@
         "hours": {
           "1": 9.3,
           "8": 14.5,
-          "13": 5.0,
+          "13": 5.5,
           "16": 7.5
         }
       },
       "zh-Hant": {
         "hour": 6,
-        "avg_views": 21.0,
+        "avg_views": 26.0,
         "posts": 10,
         "hours": {
-          "6": 21.0,
+          "6": 26.0,
           "16": 10.0,
           "23": 6.0
         }
@@ -71,7 +71,7 @@
     }
   },
   "best_hours_status": {
-    "instagram": "8/20 則"
+    "instagram": "12/20 則"
   },
   "ranking": {
     "apps": [
@@ -102,10 +102,18 @@
       {
         "key": "lumibopomofo_b",
         "posts": 2,
-        "views": 38,
-        "engagement": 1,
-        "score": 43,
-        "avg_score": 21.5
+        "views": 46,
+        "engagement": 2,
+        "score": 56,
+        "avg_score": 28.0
+      },
+      {
+        "key": "claudeusagemini",
+        "posts": 3,
+        "views": 50,
+        "engagement": 2,
+        "score": 60,
+        "avg_score": 20.0
       },
       {
         "key": "notesstudio100",
@@ -122,14 +130,6 @@
         "engagement": 0,
         "score": 20,
         "avg_score": 20.0
-      },
-      {
-        "key": "claudeusagemini",
-        "posts": 3,
-        "views": 38,
-        "engagement": 2,
-        "score": 48,
-        "avg_score": 16.0
       },
       {
         "key": "sononote",
@@ -150,10 +150,10 @@
       {
         "key": "mochi",
         "posts": 1,
-        "views": 3,
+        "views": 5,
         "engagement": 1,
-        "score": 8,
-        "avg_score": 8.0
+        "score": 10,
+        "avg_score": 10.0
       },
       {
         "key": "zipbox",
@@ -162,14 +162,6 @@
         "engagement": 0,
         "score": 15,
         "avg_score": 7.5
-      },
-      {
-        "key": "lumibopomofo",
-        "posts": 3,
-        "views": 11,
-        "engagement": 2,
-        "score": 21,
-        "avg_score": 7.0
       },
       {
         "key": "tripbee",
@@ -194,6 +186,14 @@
         "engagement": 1,
         "score": 20,
         "avg_score": 6.7
+      },
+      {
+        "key": "lumibopomofo",
+        "posts": 4,
+        "views": 16,
+        "engagement": 2,
+        "score": 26,
+        "avg_score": 6.5
       },
       {
         "key": "hourstaglite",
@@ -236,6 +236,14 @@
         "avg_score": 5.0
       },
       {
+        "key": "dbhalo",
+        "posts": 1,
+        "views": 5,
+        "engagement": 0,
+        "score": 5,
+        "avg_score": 5.0
+      },
+      {
         "key": "aim990",
         "posts": 1,
         "views": 0,
@@ -244,38 +252,46 @@
         "avg_score": 5.0
       },
       {
-        "key": "dbhalo",
+        "key": "snapportlite",
         "posts": 1,
-        "views": 4,
-        "engagement": 0,
-        "score": 4,
-        "avg_score": 4.0
+        "views": 0,
+        "engagement": 1,
+        "score": 5,
+        "avg_score": 5.0
       },
       {
         "key": "qrcodehalo",
         "posts": 1,
-        "views": 1,
+        "views": 2,
         "engagement": 0,
-        "score": 1,
-        "avg_score": 1.0
+        "score": 2,
+        "avg_score": 2.0
+      },
+      {
+        "key": "ledmovingtext",
+        "posts": 2,
+        "views": 0,
+        "engagement": 1,
+        "score": 3,
+        "avg_score": 1.5
       }
     ],
     "locales": [
       {
         "key": "zh-Hant",
-        "posts": 15,
-        "views": 283,
-        "engagement": 7,
-        "score": 318,
-        "avg_score": 21.2
+        "posts": 16,
+        "views": 303,
+        "engagement": 8,
+        "score": 343,
+        "avg_score": 21.4
       },
       {
         "key": "en",
-        "posts": 16,
-        "views": 174,
-        "engagement": 2,
-        "score": 182,
-        "avg_score": 11.4
+        "posts": 18,
+        "views": 183,
+        "engagement": 3,
+        "score": 196,
+        "avg_score": 10.9
       },
       {
         "key": "cs",
@@ -284,6 +300,14 @@
         "engagement": 1,
         "score": 7,
         "avg_score": 7.0
+      },
+      {
+        "key": "de",
+        "posts": 1,
+        "views": 0,
+        "engagement": 1,
+        "score": 3,
+        "avg_score": 3.0
       }
     ],
     "hooks": [
@@ -308,6 +332,16 @@
         "avg_score": 77.0
       },
       {
+        "app": "lumibopomofo_b",
+        "locale": "zh-Hant",
+        "hook": "今日複習 再練一次",
+        "posts": 1,
+        "views": 38,
+        "engagement": 1,
+        "score": 43,
+        "avg_score": 43.0
+      },
+      {
         "app": "onepageppt",
         "locale": "zh-Hant",
         "hook": "沒有人會讀完整份報告，大家只看那一頁簡報。",
@@ -322,20 +356,10 @@
         "locale": "zh-Hant",
         "hook": "Claude、Codex、Copilot、Gemini 一起看",
         "posts": 2,
-        "views": 38,
+        "views": 50,
         "engagement": 2,
-        "score": 48,
-        "avg_score": 24.0
-      },
-      {
-        "app": "lumibopomofo_b",
-        "locale": "zh-Hant",
-        "hook": "今日複習 再練一次",
-        "posts": 2,
-        "views": 38,
-        "engagement": 1,
-        "score": 43,
-        "avg_score": 21.5
+        "score": 60,
+        "avg_score": 30.0
       },
       {
         "app": "notesstudio100",
@@ -378,6 +402,26 @@
         "avg_score": 14.0
       },
       {
+        "app": "lumibopomofo_b",
+        "locale": "zh-Hant",
+        "hook": "",
+        "posts": 1,
+        "views": 8,
+        "engagement": 1,
+        "score": 13,
+        "avg_score": 13.0
+      },
+      {
+        "app": "mochi",
+        "locale": "en",
+        "hook": "",
+        "posts": 1,
+        "views": 5,
+        "engagement": 1,
+        "score": 10,
+        "avg_score": 10.0
+      },
+      {
         "app": "maskmyfile",
         "locale": "en",
         "hook": "You sent the bank statement. The account number was still on",
@@ -404,16 +448,6 @@
         "posts": 1,
         "views": 8,
         "engagement": 0,
-        "score": 8,
-        "avg_score": 8.0
-      },
-      {
-        "app": "mochi",
-        "locale": "en",
-        "hook": "Right on your Home Screen",
-        "posts": 1,
-        "views": 3,
-        "engagement": 1,
         "score": 8,
         "avg_score": 8.0
       },
@@ -460,7 +494,7 @@
       {
         "app": "maskmyfile",
         "locale": "cs",
-        "hook": "Něco chybí? Přidejte to",
+        "hook": "",
         "posts": 1,
         "views": 2,
         "engagement": 1,
@@ -518,8 +552,38 @@
         "avg_score": 5.0
       },
       {
+        "app": "dbhalo",
+        "locale": "en",
+        "hook": "Spectrum, Dose & Sleep Journal.",
+        "posts": 1,
+        "views": 5,
+        "engagement": 0,
+        "score": 5,
+        "avg_score": 5.0
+      },
+      {
+        "app": "lumibopomofo",
+        "locale": "en",
+        "hook": "37 friends to collect",
+        "posts": 1,
+        "views": 5,
+        "engagement": 0,
+        "score": 5,
+        "avg_score": 5.0
+      },
+      {
         "app": "aim990",
         "locale": "zh-Hant",
+        "hook": "",
+        "posts": 1,
+        "views": 0,
+        "engagement": 1,
+        "score": 5,
+        "avg_score": 5.0
+      },
+      {
+        "app": "snapportlite",
+        "locale": "en",
         "hook": "",
         "posts": 1,
         "views": 0,
@@ -538,16 +602,6 @@
         "avg_score": 4.0
       },
       {
-        "app": "dbhalo",
-        "locale": "en",
-        "hook": "Spectrum, Dose & Sleep Journal.",
-        "posts": 1,
-        "views": 4,
-        "engagement": 0,
-        "score": 4,
-        "avg_score": 4.0
-      },
-      {
         "app": "hourstag",
         "locale": "en",
         "hook": "That impulse buy did not cost you money. It cost you a whole",
@@ -558,14 +612,24 @@
         "avg_score": 3.0
       },
       {
+        "app": "ledmovingtext",
+        "locale": "de",
+        "hook": "Auch ganz hinten gut lesbar",
+        "posts": 1,
+        "views": 0,
+        "engagement": 1,
+        "score": 3,
+        "avg_score": 3.0
+      },
+      {
         "app": "qrcodehalo",
         "locale": "en",
         "hook": "Scanning never auto-opens a destination.",
         "posts": 1,
-        "views": 1,
+        "views": 2,
         "engagement": 0,
-        "score": 1,
-        "avg_score": 1.0
+        "score": 2,
+        "avg_score": 2.0
       },
       {
         "app": "claudeusagemini",
@@ -576,24 +640,34 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "ledmovingtext",
+        "locale": "zh-Hant",
+        "hook": "彩虹、漸層文字 108 種顏色",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
       {
         "key": "b",
-        "posts": 3,
-        "views": 40,
-        "engagement": 3,
-        "score": 55,
-        "avg_score": 18.3
+        "posts": 4,
+        "views": 52,
+        "engagement": 4,
+        "score": 70,
+        "avg_score": 17.5
       },
       {
         "key": "c",
-        "posts": 5,
-        "views": 51,
-        "engagement": 3,
-        "score": 66,
-        "avg_score": 13.2
+        "posts": 7,
+        "views": 66,
+        "engagement": 4,
+        "score": 86,
+        "avg_score": 12.3
       },
       {
         "key": "a",
@@ -1040,12 +1114,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 4,
+        "views": 5,
         "likes": 0,
         "replies": 0,
         "reposts": 0
       },
-      "score": 4
+      "score": 5
     },
     {
       "channel": "instagram",
@@ -1054,7 +1128,7 @@
       "posted_at": "2026-10-15T19:13:09",
       "app": "maskmyfile",
       "locale": "cs",
-      "hook": "Něco chybí? Přidejte to",
+      "hook": "",
       "clip": "maskmyfile/cs",
       "kind": "clip",
       "variant": "b",
@@ -1080,12 +1154,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 1,
+        "views": 2,
         "likes": 0,
         "replies": 0,
         "reposts": 0
       },
-      "score": 1
+      "score": 2
     },
     {
       "channel": "instagram",
@@ -1099,14 +1173,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 5,
-        "reach": 5,
+        "views": 7,
+        "reach": 7,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 1
       },
-      "score": 10
+      "score": 12
     },
     {
       "channel": "threads",
@@ -1120,12 +1194,12 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 33,
+        "views": 43,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 38
+      "score": 48
     },
     {
       "channel": "instagram",
@@ -1155,19 +1229,19 @@
       "posted_at": "2026-10-16T18:50:45",
       "app": "mochi",
       "locale": "en",
-      "hook": "Right on your Home Screen",
+      "hook": "",
       "clip": "mochi/en",
       "kind": "clip",
       "variant": "c",
       "metrics": {
-        "views": 3,
-        "reach": 4,
+        "views": 5,
+        "reach": 6,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 1
       },
-      "score": 8
+      "score": 10
     },
     {
       "channel": "instagram",
@@ -1216,8 +1290,29 @@
       "posted_at": "2026-10-17T03:01:16",
       "app": "lumibopomofo_b",
       "locale": "zh-Hant",
-      "hook": "今日複習 再練一次",
+      "hook": "",
       "clip": "lumibopomofo_b/zh-Hant",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 8,
+        "reach": 8,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 1
+      },
+      "score": 13
+    },
+    {
+      "channel": "instagram",
+      "id": "18117669248063939",
+      "link": "https://www.instagram.com/p/DelrG7KFqm_/",
+      "posted_at": "2026-10-17T08:25:14",
+      "app": "ledmovingtext",
+      "locale": "zh-Hant",
+      "hook": "彩虹、漸層文字 108 種顏色",
+      "clip": "ledmovingtext/zh-Hant",
       "kind": "clip",
       "variant": "c",
       "metrics": {
@@ -1229,6 +1324,69 @@
         "replies": 0
       },
       "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "17921064186443523",
+      "link": "https://www.instagram.com/p/DelxDUkFbSP/",
+      "posted_at": "2026-10-17T09:17:16",
+      "app": "snapportlite",
+      "locale": "en",
+      "hook": "",
+      "clip": "utility/photo/snapportlite/us_passport/en",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 1
+      },
+      "score": 5
+    },
+    {
+      "channel": "instagram",
+      "id": "18462154942137786",
+      "link": "https://www.instagram.com/reel/DemK9vFFKv7/",
+      "posted_at": "2026-10-17T13:03:51",
+      "app": "ledmovingtext",
+      "locale": "de",
+      "hook": "Auch ganz hinten gut lesbar",
+      "clip": "ledmovingtext/de",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 1,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 3
+    },
+    {
+      "channel": "instagram",
+      "id": "18116689243818916",
+      "link": "https://www.instagram.com/reel/DemsGLzlTNB/",
+      "posted_at": "2026-10-17T17:53:18",
+      "app": "lumibopomofo",
+      "locale": "en",
+      "hook": "37 friends to collect",
+      "clip": "lumibopomofo/en",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 5,
+        "reach": 4,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 5
     }
   ]
 }

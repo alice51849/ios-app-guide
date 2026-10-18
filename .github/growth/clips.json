@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T11:31:14Z",
+  "updated_at": "2026-10-18T04:56:31Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "lumibopomofo/en": {
@@ -11,22 +11,22 @@
       "name": "Lumi Bopomofo",
       "search": "Lumi Bopomofo",
       "tags": [
-        "#ChineseForKids",
-        "#LearnChinese",
-        "#MandarinForKids",
-        "#Pinyin",
         "#Mandarin",
+        "#Symbols",
+        "#Taiwanese",
+        "#Traditional",
+        "#Tones",
         "#LumiBopomofo"
       ],
       "keywords": [
-        "chinese for kids",
-        "learn chinese",
-        "mandarin for kids",
-        "pinyin",
         "mandarin",
-        "chinese characters"
+        "symbols",
+        "taiwanese",
+        "traditional",
+        "tones",
+        "pronunciation"
       ],
-      "keyline": "Zhuyin: Chinese Phonics Fun",
+      "keyline": "Zhuyin Games: Chinese Phonics",
       "duration": 13.5,
       "compliance": {
         "real_recording": true,
@@ -61,21 +61,21 @@
       "search": "Lumi注音星球",
       "tags": [
         "#注音符號",
-        "#注音拼讀",
-        "#幼兒注音",
         "#學注音",
-        "#注音遊戲",
+        "#注音練習",
+        "#台灣注音",
+        "#注音拼音",
         "#Lumi注音星球"
       ],
       "keywords": [
         "注音符號",
-        "注音拼讀",
-        "幼兒注音",
         "學注音",
-        "注音遊戲",
-        "注音練習"
+        "注音練習",
+        "台灣注音",
+        "注音拼音",
+        "拼音練習"
       ],
-      "keyline": "注音・好玩學發音",
+      "keyline": "注音遊戲：聽音、描寫、拼音",
       "duration": 13.5,
       "compliance": {
         "real_recording": true,
@@ -109,22 +109,22 @@
       "name": "Lumi ボポモフォ",
       "search": "Lumi ボポモフォ",
       "tags": [
-        "#Zhuyin",
-        "#ピンイン",
-        "#中国語発音",
-        "#子供中国語",
-        "#中国語学習",
+        "#台湾華語",
+        "#華語",
+        "#北京語",
+        "#台湾",
+        "#声調",
         "#Lumiボポモフォ"
       ],
       "keywords": [
-        "zhuyin",
-        "ピンイン",
-        "中国語発音",
-        "子供中国語",
-        "中国語学習",
-        "声調"
+        "台湾華語",
+        "華語",
+        "北京語",
+        "台湾",
+        "声調",
+        "書き順"
       ],
-      "keyline": "注音・中国語フォニックス",
+      "keyline": "注音符号で中国語の発音あそび",
       "duration": 13.5,
       "compliance": {
         "real_recording": true,
@@ -158,22 +158,22 @@
       "name": "Lumi 보포모포",
       "search": "Lumi 보포모포",
       "tags": [
-        "#Zhuyin",
-        "#병음",
-        "#중국어발음",
+        "#대만중국어",
+        "#성조",
+        "#사성",
         "#어린이중국어",
-        "#중국어공부",
+        "#유아중국어",
         "#Lumi보포모포"
       ],
       "keywords": [
-        "zhuyin",
-        "병음",
-        "중국어발음",
+        "대만중국어",
+        "성조",
+        "사성",
         "어린이중국어",
-        "중국어공부",
-        "성조"
+        "유아중국어",
+        "중국어기초"
       ],
-      "keyline": "주음·중국어 파닉스 놀이",
+      "keyline": "중국어 발음 놀이·주음부호 게임",
       "duration": 13.5,
       "compliance": {
         "real_recording": true,
@@ -207,22 +207,22 @@
       "name": "Lumi Bopomofo",
       "search": "Lumi Bopomofo",
       "tags": [
-        "#tiếngtrungchobé",
-        "#họctiếngtrung",
         "#tiếnghoa",
-        "#PhiênÂm",
-        "#Pinyin",
+        "#ĐàiLoan",
+        "#phồnthể",
+        "#thanhđiệu",
+        "#PhátÂm",
         "#LumiBopomofo"
       ],
       "keywords": [
-        "tiếng trung cho bé",
-        "học tiếng trung",
         "tiếng hoa",
-        "phiên âm",
-        "pinyin",
-        "thanh điệu"
+        "đài loan",
+        "phồn thể",
+        "thanh điệu",
+        "phát âm",
+        "chú âm"
       ],
-      "keyline": "Zhuyin: ngữ âm tiếng Trung",
+      "keyline": "Zhuyin: tiếng Trung cho bé",
       "duration": 13.5,
       "compliance": {
         "real_recording": true,
@@ -454,18 +454,18 @@
       "tags": [
         "#Banner",
         "#Scroller",
+        "#Scrolling",
         "#Billboard",
         "#Ticker",
-        "#Neon",
         "#LEDMovingText"
       ],
       "keywords": [
         "banner",
         "scroller",
+        "scrolling",
         "billboard",
         "ticker",
-        "neon",
-        "signage"
+        "neon"
       ],
       "keyline": "Cue flows and marquee signs",
       "duration": 13.0,
@@ -758,10 +758,10 @@
         "green card photo",
         "student",
         "badge photo",
-        "template",
-        "layout"
+        "layout",
+        "resume"
       ],
-      "keyline": "Passport ID Visa Photos",
+      "keyline": "2x2 35x45 Sizes, Print Sheet",
       "duration": 13.5,
       "compliance": {
         "real_recording": true,
@@ -796,19 +796,19 @@
       "search": "Snapport",
       "tags": [
         "#護照證件照",
-        "#證件照",
         "#護照照片",
         "#簽證照片",
-        "#大頭照",
+        "#身分證照片",
+        "#身份證照片",
         "#Snapport"
       ],
       "keywords": [
-        "證件照",
         "護照照片",
         "簽證照片",
-        "大頭照",
         "身分證照片",
-        "台胞證照片"
+        "身份證照片",
+        "履歷照",
+        "學生證照片"
       ],
       "keyline": "大頭照排版・台胞證白底照片",
       "duration": 13.5,
@@ -857,7 +857,7 @@
         "履歴書写真",
         "マイナンバー写真",
         "免許証写真",
-        "学生証写真"
+        "写真作成"
       ],
       "keyline": "学生証・社員証の写真も自宅で撮影",
       "duration": 13.5,
@@ -906,9 +906,9 @@
         "신분증사진",
         "민증사진",
         "이력서사진",
-        "학생증사진"
+        "흰색배경"
       ],
-      "keyline": "여권 비자 증명사진",
+      "keyline": "사원증·학생증 규격 사진",
       "duration": 13.5,
       "compliance": {
         "real_recording": true,
@@ -943,21 +943,21 @@
       "search": "Snapport",
       "tags": [
         "#PassAusweisfoto",
-        "#Passbild",
         "#BiometrischesPassbild",
         "#Passfoto",
         "#VisumFoto",
+        "#Ausweisfoto",
         "#Snapport"
       ],
       "keywords": [
-        "passbild",
         "biometrisches passbild",
         "passfoto",
         "visum foto",
         "ausweisfoto",
-        "bewerbungsfoto"
+        "bewerbungsfoto",
+        "lebenslauf foto"
       ],
-      "keyline": "Passbild für Ausweis Visum",
+      "keyline": "35x45 Passbild, Druckbogen",
       "duration": 13.5,
       "compliance": {
         "real_recording": true,
@@ -1141,17 +1141,17 @@
         "#AI사용량트래커",
         "#개발자",
         "#토큰",
-        "#할당량",
+        "#제한",
         "#리셋",
         "#UsageNow"
       ],
       "keywords": [
         "개발자",
         "토큰",
-        "할당량",
+        "제한",
         "리셋",
-        "초기화",
-        "남은양"
+        "알림",
+        "관리"
       ],
       "keyline": "Claude·Codex·Copilot·Gemini 한도",
       "duration": 13.5,
@@ -1237,21 +1237,21 @@
       "search": "HoursTag Lite",
       "tags": [
         "#PriceInHours",
+        "#Expense",
         "#Budget",
-        "#SpendingTracker",
-        "#Savings",
-        "#ExpenseTracker",
+        "#Money",
+        "#Spending",
         "#HoursTagLite"
       ],
       "keywords": [
+        "expense",
         "budget",
-        "spending tracker",
-        "savings",
-        "expense tracker",
-        "money manager",
-        "budget planner"
+        "money",
+        "spending",
+        "planner",
+        "finance"
       ],
-      "keyline": "See the real price of things",
+      "keyline": "Stop Impulse Buying & Save",
       "duration": 13.0,
       "compliance": {
         "real_recording": true,
@@ -1286,21 +1286,21 @@
       "search": "HoursTag Lite",
       "tags": [
         "#買前先算工時",
-        "#記帳",
-        "#預算",
+        "#存錢",
         "#省錢",
-        "#理財",
+        "#開銷",
+        "#預算",
         "#HoursTagLite"
       ],
       "keywords": [
-        "記帳",
-        "預算",
+        "存錢",
         "省錢",
+        "開銷",
+        "預算",
         "理財",
-        "儲蓄",
-        "存錢"
+        "支出"
       ],
-      "keyline": "買前先算工時",
+      "keyline": "衝動購物前，先換算成工時",
       "duration": 13.0,
       "compliance": {
         "real_recording": true,
@@ -1335,21 +1335,21 @@
       "search": "HoursTag Lite",
       "tags": [
         "#働く時間で見る値段",
-        "#節約",
-        "#家計簿",
-        "#予算",
-        "#貯金",
+        "#衝動買い",
+        "#防止",
+        "#無駄遣い",
+        "#浪費",
         "#HoursTagLite"
       ],
       "keywords": [
-        "節約",
-        "家計簿",
-        "予算",
-        "貯金",
-        "節約術",
-        "支出管理"
+        "衝動買い",
+        "防止",
+        "無駄遣い",
+        "浪費",
+        "散財",
+        "物欲"
       ],
-      "keyline": "働く時間で見る値段",
+      "keyline": "その値段は何時間分か見える",
       "duration": 13.0,
       "compliance": {
         "real_recording": true,
@@ -1384,21 +1384,21 @@
       "search": "HoursTag Lite",
       "tags": [
         "#노동시간으로보는가격",
-        "#절약",
-        "#가계부",
-        "#예산",
-        "#저축",
+        "#충동구매",
+        "#지름신",
+        "#쇼핑",
+        "#과소비",
         "#HoursTagLite"
       ],
       "keywords": [
-        "절약",
-        "가계부",
-        "예산",
-        "저축",
-        "소비",
-        "돈관리"
+        "충동구매",
+        "지름신",
+        "쇼핑",
+        "과소비",
+        "소비 습관",
+        "후회"
       ],
-      "keyline": "노동시간으로 보는 가격",
+      "keyline": "이 물건은 몇 시간의 값일까",
       "duration": 13.0,
       "compliance": {
         "real_recording": true,
@@ -1428,77 +1428,77 @@
     "aibriefpack": {
       "en": {
         "keywords": [
-          "prompt",
-          "summary",
-          "summarizer",
-          "document",
-          "notes",
-          "screenshot"
+          "context",
+          "generator",
+          "maker",
+          "chat",
+          "template",
+          "question"
         ],
         "keyline": "AI Prompt from Files",
         "tags": [
           "#AIPromptFromFiles",
-          "#Prompt",
-          "#Summary",
-          "#Summarizer",
-          "#Document",
+          "#Context",
+          "#Generator",
+          "#Maker",
+          "#Chat",
           "#AIBrief"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "總結",
-          "摘要",
+          "管理",
+          "圖片轉文字",
           "文件",
-          "筆記",
-          "截圖",
-          "文字擷取"
+          "生成式AI",
+          "範本",
+          "總結"
         ],
-        "keyline": "把資料整理成清晰脈絡",
+        "keyline": "檔案轉 AI 提示詞",
         "tags": [
           "#檔案轉AI提示詞",
-          "#總結",
-          "#摘要",
+          "#管理",
+          "#圖片轉文字",
           "#文件",
-          "#筆記",
+          "#生成式AI",
           "#AIBrief"
         ]
       },
       "ja": {
         "keywords": [
-          "要約",
           "まとめ",
-          "文書",
-          "ノート",
-          "スクリーンショット",
-          "文字抽出"
+          "テキスト抽出",
+          "生成AI",
+          "議事録",
+          "文字認識",
+          "資料整理"
         ],
         "keyline": "資料から AI プロンプト",
         "tags": [
           "#資料からAIプロンプト",
-          "#要約",
           "#まとめ",
-          "#文書",
-          "#ノート",
+          "#テキスト抽出",
+          "#生成AI",
+          "#議事録",
           "#AIBrief"
         ]
       },
       "ko": {
         "keywords": [
-          "요약",
-          "문서",
-          "메모",
-          "스크린샷",
+          "캡처",
+          "생성형AI",
+          "템플릿",
+          "정리",
           "텍스트추출",
-          "이미지문자인식"
+          "이미지텍스트"
         ],
         "keyline": "파일을 AI 프롬프트로",
         "tags": [
           "#파일을AI프롬프트로",
-          "#요약",
-          "#문서",
-          "#메모",
-          "#스크린샷",
+          "#캡처",
+          "#생성형AI",
+          "#템플릿",
+          "#정리",
           "#AIBrief"
         ]
       }
@@ -1506,77 +1506,77 @@
     "aim990": {
       "en": {
         "keywords": [
-          "TOEIC",
+          "grammar",
           "listening",
           "reading",
-          "grammar",
           "vocabulary",
-          "dictation"
+          "test",
+          "prep"
         ],
-        "keyline": "TOEIC L&R diagnosis in 8 min",
+        "keyline": "Fix English Weak Spots",
         "tags": [
           "#FixEnglishWeakSpots",
-          "#TOEIC",
+          "#Grammar",
           "#Listening",
           "#Reading",
-          "#Grammar",
+          "#Vocabulary",
           "#Aim990"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "多益",
           "聽力",
           "閱讀",
           "文法",
           "單字",
-          "聽寫"
+          "背單字",
+          "練習"
         ],
-        "keyline": "多益聽讀診斷與30天計畫",
+        "keyline": "英文弱點教練",
         "tags": [
           "#英文弱點教練",
-          "#多益",
           "#聽力",
           "#閱讀",
           "#文法",
+          "#單字",
           "#Aim990"
         ]
       },
       "ja": {
         "keywords": [
-          "TOEIC",
           "リスニング",
           "リーディング",
-          "文法",
           "単語",
+          "文法",
+          "長文",
           "ディクテーション"
         ],
-        "keyline": "TOEIC L&R 8分診断と弱点処方",
+        "keyline": "英語弱点コーチ",
         "tags": [
           "#英語弱点コーチ",
-          "#TOEIC",
           "#リスニング",
           "#リーディング",
+          "#単語",
           "#文法",
           "#Aim990"
         ]
       },
       "ko": {
         "keywords": [
-          "토익",
+          "문법",
           "듣기",
           "독해",
-          "어법",
+          "단어",
           "어휘",
           "받아쓰기"
         ],
-        "keyline": "토익 LC RC 8분 진단",
+        "keyline": "영어 약점 코치",
         "tags": [
           "#영어약점코치",
-          "#토익",
+          "#문법",
           "#듣기",
           "#독해",
-          "#어법",
+          "#단어",
           "#Aim990"
         ]
       }
@@ -1585,76 +1585,76 @@
       "en": {
         "keywords": [
           "percent",
+          "percentage",
           "split",
           "bill",
-          "loan",
-          "unit",
-          "convert"
+          "mortgage",
+          "unit"
         ],
         "keyline": "Calculator & Themes",
         "tags": [
           "#CalculatorThemes",
           "#Percent",
+          "#Percentage",
           "#Split",
           "#Bill",
-          "#Loan",
           "#CalDailyCalculator"
         ]
       },
       "zh-Hant": {
         "keywords": [
           "百分比",
-          "小費",
           "分帳",
-          "貸款",
+          "本金",
           "單位換算",
-          "打折"
+          "打折",
+          "稅率"
         ],
-        "keyline": "百分比 · 小費 · 分帳",
+        "keyline": "百分比 · 分帳 · 本金",
         "tags": [
           "#百分比",
-          "#小費",
           "#分帳",
-          "#貸款",
+          "#本金",
           "#單位換算",
+          "#打折",
           "#CalDaily計算機"
         ]
       },
       "ja": {
         "keywords": [
           "計算機",
-          "割引",
-          "消費税",
-          "チップ",
           "割り勘",
-          "ローン"
+          "ローン",
+          "単位換算",
+          "関数電卓",
+          "日数計算"
         ],
-        "keyline": "計算機 · 割引 · 消費税",
+        "keyline": "計算機 · 割り勘 · ローン",
         "tags": [
           "#計算機",
-          "#割引",
-          "#消費税",
-          "#チップ",
           "#割り勘",
+          "#ローン",
+          "#単位換算",
+          "#関数電卓",
           "#CalDaily電卓"
         ]
       },
       "ko": {
         "keywords": [
           "메모리",
-          "할인",
           "부가세",
           "더치페이",
           "대출",
-          "단위변환"
+          "단위변환",
+          "공학용"
         ],
-        "keyline": "메모리 · 할인 · 부가세",
+        "keyline": "메모리 · 부가세 · 더치페이",
         "tags": [
           "#메모리",
-          "#할인",
           "#부가세",
           "#더치페이",
           "#대출",
+          "#단위변환",
           "#CalDaily계산기"
         ]
       }
@@ -1662,77 +1662,77 @@
     "countdaysnow": {
       "en": {
         "keywords": [
+          "days",
+          "until",
           "since",
-          "lunar",
-          "lock screen",
-          "standby",
-          "apple watch",
-          "birthday"
+          "birthday",
+          "anniversary",
+          "lock"
         ],
         "keyline": "Event Counter",
         "tags": [
           "#EventCounter",
+          "#Days",
+          "#Until",
           "#Since",
-          "#Lunar",
-          "#LockScreen",
-          "#Standby",
+          "#Birthday",
           "#CountDaysNow"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "倒數",
+          "倒數日",
+          "倒數計時",
+          "紀念日",
           "生日",
-          "日期計算",
-          "提醒",
-          "農曆",
-          "鎖定畫面"
+          "還有幾天",
+          "農曆"
         ],
-        "keyline": "倒數 · 生日 · 日期計算",
+        "keyline": "倒數日 · 倒數計時 · 紀念日",
         "tags": [
-          "#倒數",
+          "#倒數日",
+          "#倒數計時",
+          "#紀念日",
           "#生日",
-          "#日期計算",
-          "#提醒",
-          "#農曆",
+          "#還有幾天",
           "#CountDaysNow"
         ]
       },
       "ja": {
         "keywords": [
-          "ロック画面",
+          "カウントダウン",
+          "あと何日",
           "経過日数",
-          "推し活",
-          "受験",
-          "買い切り",
-          "広告なし"
+          "日数計算",
+          "記念日",
+          "誕生日"
         ],
-        "keyline": "ロック画面 · 経過日数 · 推し活",
+        "keyline": "カウントダウン · あと何日 · 経過日数",
         "tags": [
-          "#ロック画面",
+          "#カウントダウン",
+          "#あと何日",
           "#経過日数",
-          "#推し活",
-          "#受験",
-          "#買い切り",
+          "#日数計算",
+          "#記念日",
           "#CountDaysNow"
         ]
       },
       "ko": {
         "keywords": [
+          "디데이",
           "카운트다운",
-          "생일",
           "날짜계산",
-          "알림",
-          "잠금화면",
-          "애플워치"
+          "기념일",
+          "생일",
+          "커플"
         ],
-        "keyline": "카운트다운 · 생일 · 날짜계산",
+        "keyline": "디데이 · 카운트다운 · 날짜계산",
         "tags": [
+          "#디데이",
           "#카운트다운",
-          "#생일",
           "#날짜계산",
-          "#알림",
-          "#잠금화면",
+          "#기념일",
+          "#생일",
           "#CountDaysNow"
         ]
       }
@@ -1740,77 +1740,77 @@
     "cvdesk": {
       "en": {
         "keywords": [
-          "resume maker",
-          "cv maker",
-          "resume templates",
-          "cover letter",
-          "resume pdf",
-          "resume format"
+          "maker",
+          "score",
+          "format",
+          "curriculum",
+          "vitae",
+          "career"
         ],
         "keyline": "ATS Resume Builder",
         "tags": [
           "#ATSResumeBuilder",
-          "#ResumeMaker",
-          "#CvMaker",
-          "#ResumeTemplates",
-          "#CoverLetter",
+          "#Maker",
+          "#Score",
+          "#Format",
+          "#Curriculum",
           "#CVDeskATSResume"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "履歷範本",
+          "ats履歷",
+          "履歷表",
           "自傳",
-          "履歷模板",
-          "簡歷",
-          "求職信",
-          "面試"
+          "求職",
+          "面試",
+          "履歷模板"
         ],
-        "keyline": "履歷範本 · 自傳 · 履歷模板",
+        "keyline": "ats履歷 · 履歷表 · 自傳",
         "tags": [
-          "#履歷範本",
+          "#ats履歷",
+          "#履歷表",
           "#自傳",
-          "#履歷模板",
-          "#簡歷",
-          "#求職信",
+          "#求職",
+          "#面試",
           "#CVDeskATS履歷"
         ]
       },
       "ja": {
         "keywords": [
-          "履歴書作成",
+          "レジュメ",
           "転職",
-          "履歴書テンプレート",
-          "自己pr",
           "就活",
-          "面接"
+          "自己pr",
+          "面接",
+          "職歴"
         ],
         "keyline": "ATS履歴書・職務経歴書",
         "tags": [
           "#ATS履歴書職務経歴書",
-          "#履歴書作成",
+          "#レジュメ",
           "#転職",
-          "#履歴書テンプレート",
+          "#就活",
           "#自己pr",
           "#CVDeskATS履歴書"
         ]
       },
       "ko": {
         "keywords": [
-          "이력서 양식",
-          "이력서 작성",
-          "이력서 템플릿",
+          "만들기",
+          "작성",
           "취업",
           "면접",
-          "경력기술서"
+          "이직",
+          "레쥬메"
         ],
         "keyline": "ATS 이력서 제작",
         "tags": [
           "#ATS이력서제작",
-          "#이력서양식",
-          "#이력서작성",
-          "#이력서템플릿",
+          "#만들기",
+          "#작성",
           "#취업",
+          "#면접",
           "#CVDeskATS이력서"
         ]
       }
@@ -1818,20 +1818,20 @@
     "cyca": {
       "en": {
         "keywords": [
-          "period tracker",
-          "cycle tracker",
+          "menstrual",
+          "calendar",
           "ovulation",
-          "fertile window",
-          "period calendar",
-          "menstrual calendar"
+          "fertility",
+          "calculator",
+          "symptom"
         ],
-        "keyline": "Ovulation, Calendar & PMS",
+        "keyline": "Period & Cycle Tracker",
         "tags": [
           "#PeriodCycleTracker",
-          "#PeriodTracker",
-          "#CycleTracker",
+          "#Menstrual",
+          "#Calendar",
           "#Ovulation",
-          "#FertileWindow",
+          "#Fertility",
           "#CycaPeriodTracker"
         ]
       },
@@ -1839,56 +1839,56 @@
         "keywords": [
           "經期追蹤",
           "月經週期",
+          "排卵期計算器",
           "排卵期",
-          "生理期",
           "經期記錄",
-          "排卵日"
+          "月經記錄"
         ],
-        "keyline": "排卵、生理期日曆與經前症候群",
+        "keyline": "經期追蹤 · 月經週期 · 排卵期計算器",
         "tags": [
           "#經期追蹤",
           "#月經週期",
+          "#排卵期計算器",
           "#排卵期",
-          "#生理期",
           "#經期記錄",
           "#Cyca經期"
         ]
       },
       "ja": {
         "keywords": [
-          "生理管理",
           "生理周期",
-          "排卵日",
           "排卵予測",
           "生理予測",
-          "生理日"
+          "月経",
+          "月経管理",
+          "生理カレンダー"
         ],
-        "keyline": "排卵・生理日・PMS予測カレンダー",
+        "keyline": "生理周期 · 排卵予測 · 生理予測",
         "tags": [
-          "#生理管理",
           "#生理周期",
-          "#排卵日",
           "#排卵予測",
           "#生理予測",
+          "#月経",
+          "#月経管理",
           "#Cyca生理"
         ]
       },
       "ko": {
         "keywords": [
           "생리주기",
-          "생리달력",
-          "배란일",
-          "가임기",
-          "생리예측",
-          "월경"
+          "생리캘린더",
+          "월경",
+          "월경주기",
+          "월경캘린더",
+          "가임기계산"
         ],
-        "keyline": "배란일·생리달력·PMS 예측",
+        "keyline": "생리주기 · 생리캘린더 · 월경",
         "tags": [
           "#생리주기",
-          "#생리달력",
-          "#배란일",
-          "#가임기",
-          "#생리예측",
+          "#생리캘린더",
+          "#월경",
+          "#월경주기",
+          "#월경캘린더",
           "#Cyca생리"
         ]
       }
@@ -1897,57 +1897,57 @@
       "en": {
         "keywords": [
           "conversation",
-          "speaking",
-          "pronunciation",
-          "listening",
-          "travel",
-          "beginner"
+          "sentences",
+          "speak",
+          "everyday",
+          "japanese",
+          "korean"
         ],
         "keyline": "Language Phrases",
         "tags": [
           "#LanguagePhrases",
           "#Conversation",
-          "#Speaking",
-          "#Pronunciation",
-          "#Listening",
+          "#Sentences",
+          "#Speak",
+          "#Everyday",
           "#DailyMatePhrases"
         ]
       },
       "zh-Hant": {
         "keywords": [
+          "實用會話",
+          "英文短句",
           "學英文",
-          "英文口說",
-          "旅遊英文",
-          "實用短句",
           "發音聆聽",
-          "聽力"
+          "學日文",
+          "學韓文"
         ],
         "keyline": "用句子學語言",
         "tags": [
           "#用句子學語言",
+          "#實用會話",
+          "#英文短句",
           "#學英文",
-          "#英文口說",
-          "#旅遊英文",
-          "#實用短句",
+          "#發音聆聽",
           "#DailyMate用句子學語言"
         ]
       },
       "ja": {
         "keywords": [
+          "実用フレーズ",
+          "フレーズ集",
           "英会話",
           "英語学習",
-          "旅行英語",
           "日常会話",
-          "発音",
-          "リスニング"
+          "発音"
         ],
         "keyline": "文で身につく語学",
         "tags": [
           "#文で身につく語学",
+          "#実用フレーズ",
+          "#フレーズ集",
           "#英会話",
           "#英語学習",
-          "#旅行英語",
-          "#日常会話",
           "#DailyMate文で身につく語学"
         ]
       },
@@ -1955,18 +1955,18 @@
         "keywords": [
           "영어회화",
           "영어공부",
-          "여행영어",
           "일상회화",
-          "발음듣기",
-          "리스닝"
+          "실전회화",
+          "상황별",
+          "예문"
         ],
         "keyline": "문장으로 배우는 언어",
         "tags": [
           "#문장으로배우는언어",
           "#영어회화",
           "#영어공부",
-          "#여행영어",
           "#일상회화",
+          "#실전회화",
           "#DailyMate문장으로배우는언어"
         ]
       }
@@ -1974,77 +1974,77 @@
     "dailymatelite": {
       "en": {
         "keywords": [
-          "conversation",
-          "practice",
-          "fluency",
-          "vocabulary",
-          "pronunciation",
-          "travel"
+          "phrases",
+          "greek",
+          "japanese",
+          "italian",
+          "german",
+          "chinese"
         ],
         "keyline": "Speak Today",
         "tags": [
           "#SpeakToday",
-          "#Conversation",
-          "#Practice",
-          "#Fluency",
-          "#Vocabulary",
+          "#Phrases",
+          "#Greek",
+          "#Japanese",
+          "#Italian",
           "#DailyMateLite"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "會話",
-          "口說",
-          "旅遊",
-          "發音",
-          "聽力",
-          "英語"
+          "自由行",
+          "旅行會話",
+          "日語",
+          "韓語",
+          "泰語",
+          "越南語"
         ],
         "keyline": "開口練習",
         "tags": [
           "#開口練習",
-          "#會話",
-          "#口說",
-          "#旅遊",
-          "#發音",
+          "#自由行",
+          "#旅行會話",
+          "#日語",
+          "#韓語",
           "#DailyMateLite開口練習"
         ]
       },
       "ja": {
         "keywords": [
-          "英会話",
-          "話す",
+          "フレーズ",
           "観光",
-          "発音",
-          "聞き取り",
-          "英語"
+          "旅先",
+          "空港",
+          "ホテル",
+          "レストラン"
         ],
         "keyline": "ひとこと練習",
         "tags": [
           "#ひとこと練習",
-          "#英会話",
-          "#話す",
+          "#フレーズ",
           "#観光",
-          "#発音",
+          "#旅先",
+          "#空港",
           "#DailyMateLiteひとこと練習"
         ]
       },
       "ko": {
         "keywords": [
-          "말하기",
-          "관광",
-          "발음",
-          "듣기",
-          "영어",
-          "일본어"
+          "일본",
+          "대만",
+          "태국",
+          "베트남",
+          "유럽",
+          "미국"
         ],
         "keyline": "바로 쓰는 한마디",
         "tags": [
           "#바로쓰는한마디",
-          "#말하기",
-          "#관광",
-          "#발음",
-          "#듣기",
+          "#일본",
+          "#대만",
+          "#태국",
+          "#베트남",
           "#DailyMateLite한마디"
         ]
       }
@@ -2052,58 +2052,58 @@
     "dbhalo": {
       "en": {
         "keywords": [
-          "decibel",
-          "noise",
           "analyzer",
           "frequency",
-          "octave",
-          "hearing"
+          "snoring",
+          "hearing",
+          "exposure",
+          "osha"
         ],
         "keyline": "Sound Meter",
         "tags": [
           "#SoundMeter",
-          "#Decibel",
-          "#Noise",
           "#Analyzer",
           "#Frequency",
+          "#Snoring",
+          "#Hearing",
           "#DBHaloSoundMeter"
         ]
       },
       "zh-Hant": {
         "keywords": [
           "噪音計",
-          "分貝測量",
           "音量測試",
-          "環境噪音",
-          "聲壓測量",
-          "頻率分析"
+          "環境音",
+          "聲壓",
+          "頻率分析",
+          "即時分析儀"
         ],
         "keyline": "分貝計",
         "tags": [
           "#分貝計",
           "#噪音計",
-          "#分貝測量",
           "#音量測試",
-          "#環境噪音",
+          "#環境音",
+          "#聲壓",
           "#dBHalo分貝計"
         ]
       },
       "ja": {
         "keywords": [
           "騒音計",
-          "音量測定",
+          "音量",
           "音圧レベル",
-          "騒音測定",
-          "周波数分析",
-          "スペクトル分析"
+          "分析",
+          "スペクトル",
+          "スペクトログラム"
         ],
         "keyline": "デシベル測定",
         "tags": [
           "#デシベル測定",
           "#騒音計",
-          "#音量測定",
+          "#音量",
           "#音圧レベル",
-          "#騒音測定",
+          "#分析",
           "#dBHaloデシベル測定"
         ]
       },
@@ -2111,7 +2111,7 @@
         "keywords": [
           "생활소음",
           "데시벨",
-          "음량측정",
+          "음량",
           "층간소음",
           "소음계",
           "주파수분석"
@@ -2121,7 +2121,7 @@
           "#소음측정기",
           "#생활소음",
           "#데시벨",
-          "#음량측정",
+          "#음량",
           "#층간소음",
           "#dBHalo소음측정기"
         ]
@@ -2130,77 +2130,77 @@
     "gmoney": {
       "en": {
         "keywords": [
-          "expense tracker",
-          "budget",
-          "money manager",
-          "currency converter",
-          "exchange rate",
-          "spending tracker"
+          "multicurrency",
+          "export",
+          "savings",
+          "finance",
+          "wallet",
+          "bookkeeping"
         ],
-        "keyline": "Budget, Expenses & Currency",
+        "keyline": "Spending & Budget",
         "tags": [
           "#SpendingBudget",
-          "#ExpenseTracker",
-          "#Budget",
-          "#MoneyManager",
-          "#CurrencyConverter",
+          "#Multicurrency",
+          "#Export",
+          "#Savings",
+          "#Finance",
           "#GMoney"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "記帳",
-          "記帳app",
-          "預算",
-          "理財",
-          "記帳軟體",
-          "開銷"
+          "多國貨幣",
+          "本機儲存",
+          "換匯",
+          "出差",
+          "收支",
+          "記帳日記"
         ],
-        "keyline": "記帳、預算、理財與匯率換算",
+        "keyline": "日常記帳·預算·匯率",
         "tags": [
           "#日常記帳預算匯率",
-          "#記帳",
-          "#記帳app",
-          "#預算",
-          "#理財",
+          "#多國貨幣",
+          "#本機儲存",
+          "#換匯",
+          "#出差",
           "#GMoney記帳"
         ]
       },
       "ja": {
         "keywords": [
-          "家計簿",
-          "家計簿アプリ",
-          "予算",
-          "支出管理",
-          "節約",
-          "お小遣い帳"
+          "お小遣い帳",
+          "通貨換算",
+          "貯金",
+          "支出記録",
+          "レート計算",
+          "家計管理"
         ],
-        "keyline": "家計簿・予算・節約・為替換算",
+        "keyline": "家計簿・予算・為替",
         "tags": [
           "#家計簿予算為替",
-          "#家計簿",
-          "#家計簿アプリ",
-          "#予算",
-          "#支出管理",
+          "#お小遣い帳",
+          "#通貨換算",
+          "#貯金",
+          "#支出記録",
           "#GMoney家計簿"
         ]
       },
       "ko": {
         "keywords": [
-          "가계부",
-          "예산",
-          "지출관리",
           "용돈기입장",
-          "환율",
-          "환율계산기"
+          "환율계산기",
+          "통화변환",
+          "가계부앱",
+          "돈관리",
+          "절약"
         ],
-        "keyline": "가계부·예산·환율 계산기",
+        "keyline": "가계부·예산·환율",
         "tags": [
           "#가계부예산환율",
-          "#가계부",
-          "#예산",
-          "#지출관리",
           "#용돈기입장",
+          "#환율계산기",
+          "#통화변환",
+          "#가계부앱",
           "#GMoney가계부"
         ]
       }
@@ -2208,77 +2208,77 @@
     "gmoneylite": {
       "en": {
         "keywords": [
-          "expense tracker",
-          "budget",
-          "money manager",
-          "currency converter",
-          "exchange rate",
-          "spending tracker"
+          "expense",
+          "converter",
+          "exchange",
+          "rate",
+          "vacation",
+          "abroad"
         ],
         "keyline": "Trip Spending",
         "tags": [
           "#TripSpending",
-          "#ExpenseTracker",
-          "#Budget",
-          "#MoneyManager",
-          "#CurrencyConverter",
+          "#Expense",
+          "#Converter",
+          "#Exchange",
+          "#Rate",
           "#GMoneyLite"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "記帳app",
-          "理財",
-          "記帳軟體",
+          "記帳本",
           "開銷",
+          "記帳軟體",
           "花費",
-          "帳本"
+          "消費記錄",
+          "支出紀錄"
         ],
-        "keyline": "旅行記帳·匯率換算",
+        "keyline": "出國預算・自由行花費・每日預算",
         "tags": [
           "#旅行記帳匯率換算",
-          "#記帳app",
-          "#理財",
-          "#記帳軟體",
+          "#記帳本",
           "#開銷",
+          "#記帳軟體",
+          "#花費",
           "#GMoneyLite旅行記帳"
         ]
       },
       "ja": {
         "keywords": [
-          "家計簿アプリ",
-          "支出管理",
-          "お小遣い帳",
-          "通貨換算",
-          "両替",
-          "旅行費用"
+          "支出",
+          "小遣い",
+          "クイック入力",
+          "手首",
+          "ホーム画面",
+          "スマートウォッチ"
         ],
         "keyline": "旅の家計簿・為替",
         "tags": [
           "#旅の家計簿為替",
-          "#家計簿アプリ",
-          "#支出管理",
-          "#お小遣い帳",
-          "#通貨換算",
+          "#支出",
+          "#小遣い",
+          "#クイック入力",
+          "#手首",
           "#GMoneyLite旅の家計簿"
         ]
       },
       "ko": {
         "keywords": [
-          "지출관리",
-          "용돈기입장",
-          "환율계산기",
-          "통화변환",
-          "여행경비",
-          "소비"
+          "지출",
+          "용돈",
+          "한도",
+          "빠른기록",
+          "손목",
+          "홈화면"
         ],
         "keyline": "여행 가계부·환율",
         "tags": [
           "#여행가계부환율",
-          "#지출관리",
-          "#용돈기입장",
-          "#환율계산기",
-          "#통화변환",
+          "#지출",
+          "#용돈",
+          "#한도",
+          "#빠른기록",
           "#GMoneyLite여행가계부"
         ]
       }
@@ -2286,77 +2286,77 @@
     "hourstag": {
       "en": {
         "keywords": [
-          "budget",
-          "spending tracker",
-          "savings",
-          "expense tracker",
-          "money manager",
-          "budget planner"
+          "salary",
+          "paycheck",
+          "calculator",
+          "income",
+          "wishlist",
+          "earnings"
         ],
-        "keyline": "Budget, Spending & Savings",
+        "keyline": "Hours to Buy",
         "tags": [
           "#HoursToBuy",
-          "#Budget",
-          "#SpendingTracker",
-          "#Savings",
-          "#ExpenseTracker",
+          "#Salary",
+          "#Paycheck",
+          "#Calculator",
+          "#Income",
           "#HoursTagHoursToBuy"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "記帳",
-          "預算",
-          "省錢",
-          "理財",
-          "儲蓄",
-          "存錢"
+          "薪水計算",
+          "工資計算",
+          "薪資計算",
+          "工作時數",
+          "願望清單",
+          "儲蓄目標"
         ],
-        "keyline": "預算、記帳、省錢與儲蓄",
+        "keyline": "價格換工時",
         "tags": [
           "#價格換工時",
-          "#記帳",
-          "#預算",
-          "#省錢",
-          "#理財",
+          "#薪水計算",
+          "#工資計算",
+          "#薪資計算",
+          "#工作時數",
           "#HoursTag價格換工時"
         ]
       },
       "ja": {
         "keywords": [
-          "節約",
           "家計簿",
-          "予算",
-          "貯金",
-          "節約術",
-          "支出管理"
+          "節約",
+          "支出管理",
+          "お金管理",
+          "浪費",
+          "貯金"
         ],
-        "keyline": "節約・家計簿・予算・貯金",
+        "keyline": "価格を時間に",
         "tags": [
           "#価格を時間に",
-          "#節約",
           "#家計簿",
-          "#予算",
-          "#貯金",
+          "#節約",
+          "#支出管理",
+          "#お金管理",
           "#HoursTag価格を時間に"
         ]
       },
       "ko": {
         "keywords": [
-          "절약",
-          "가계부",
-          "예산",
-          "저축",
           "소비",
-          "돈관리"
+          "절약",
+          "저축",
+          "근로시간",
+          "재테크",
+          "돈모으기"
         ],
-        "keyline": "절약·가계부·예산·저축",
+        "keyline": "가격을 시간으로",
         "tags": [
           "#가격을시간으로",
+          "#소비",
           "#절약",
-          "#가계부",
-          "#예산",
           "#저축",
+          "#근로시간",
           "#HoursTag가격을시간으로"
         ]
       }
@@ -2364,77 +2364,77 @@
     "lockhour": {
       "en": {
         "keywords": [
-          "app blocker",
-          "block apps",
-          "screen time",
           "focus",
-          "focus timer",
-          "pomodoro"
+          "timer",
+          "pomodoro",
+          "study",
+          "detox",
+          "phone"
         ],
-        "keyline": "App Blocker & Focus Timer",
+        "keyline": "Block Apps",
         "tags": [
           "#BlockApps",
-          "#AppBlocker",
-          "#ScreenTime",
           "#Focus",
-          "#FocusTimer",
+          "#Timer",
+          "#Pomodoro",
+          "#Study",
           "#LockHourProBlockApps"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "專注",
           "番茄鐘",
-          "螢幕使用時間",
-          "app鎖",
+          "專注力",
+          "讀書計時",
+          "自律",
           "時間管理",
-          "自律"
+          "手機成癮"
         ],
-        "keyline": "專注計時・App鎖與螢幕時間",
+        "keyline": "封鎖 App·專注計時",
         "tags": [
           "#封鎖App專注計時",
-          "#專注",
           "#番茄鐘",
-          "#螢幕使用時間",
-          "#app鎖",
+          "#專注力",
+          "#讀書計時",
+          "#自律",
           "#LockHourPro封鎖App"
         ]
       },
       "ja": {
         "keywords": [
-          "集中",
-          "ポモドーロ",
           "スクリーンタイム",
-          "アプリ制限",
-          "集中タイマー",
-          "時間管理"
+          "ポモドーロ",
+          "勉強タイマー",
+          "ロック",
+          "時間管理",
+          "デジタルデトックス"
         ],
-        "keyline": "アプリ制限＆集中タイマー",
+        "keyline": "アプリ制限・集中タイマー",
         "tags": [
           "#アプリ制限集中タイマー",
-          "#集中",
-          "#ポモドーロ",
           "#スクリーンタイム",
-          "#アプリ制限",
+          "#ポモドーロ",
+          "#勉強タイマー",
+          "#ロック",
           "#LockHourProアプリ制限"
         ]
       },
       "ko": {
         "keywords": [
-          "앱 차단",
-          "집중",
           "스크린타임",
           "뽀모도로",
-          "집중 타이머",
-          "시간 관리"
+          "방지",
+          "제한",
+          "공부",
+          "시간관리"
         ],
-        "keyline": "앱 차단 · 집중 타이머",
+        "keyline": "앱 차단·집중 타이머",
         "tags": [
           "#앱차단집중타이머",
-          "#앱차단",
-          "#집중",
           "#스크린타임",
           "#뽀모도로",
+          "#방지",
+          "#제한",
           "#LockHourPro앱차단"
         ]
       }
@@ -2442,39 +2442,39 @@
     "lumibopomofopro": {
       "en": {
         "keywords": [
-          "chinese for kids",
-          "learn chinese",
-          "mandarin for kids",
-          "chinese phonics",
-          "pinyin",
-          "mandarin"
+          "chinese",
+          "traditional",
+          "kids",
+          "blending",
+          "tracing",
+          "printable"
         ],
-        "keyline": "Zhuyin Phonics Game for Kids",
+        "keyline": "Zhuyin",
         "tags": [
           "#Zhuyin",
-          "#ChineseForKids",
-          "#LearnChinese",
-          "#MandarinForKids",
-          "#ChinesePhonics",
+          "#Chinese",
+          "#Traditional",
+          "#Kids",
+          "#Blending",
           "#LumiBopomofoPro"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "注音",
           "ㄅㄆㄇ",
-          "注音符號",
-          "幼兒學注音",
-          "學前教育",
-          "識字"
+          "符號",
+          "練習",
+          "一年級",
+          "小一",
+          "國小"
         ],
-        "keyline": "幼兒注音遊戲・拼讀聲調",
+        "keyline": "ㄅㄆㄇ · 符號 · 練習",
         "tags": [
-          "#注音",
           "#ㄅㄆㄇ",
-          "#注音符號",
-          "#幼兒學注音",
-          "#學前教育",
+          "#符號",
+          "#練習",
+          "#一年級",
+          "#小一",
           "#Lumi注音星球Pro"
         ]
       },
@@ -2482,37 +2482,37 @@
         "keywords": [
           "ボポモフォ",
           "中国語",
-          "ピンイン",
-          "中国語発音",
-          "子供中国語",
-          "中国語学習"
+          "音声",
+          "子供",
+          "幼児",
+          "キッズ"
         ],
-        "keyline": "ボポモフォ · 中国語 · ピンイン",
+        "keyline": "台湾華語",
         "tags": [
+          "#台湾華語",
           "#ボポモフォ",
           "#中国語",
-          "#ピンイン",
-          "#中国語発音",
-          "#子供中国語",
+          "#音声",
+          "#子供",
           "#LumiBopomofoPro"
         ]
       },
       "ko": {
         "keywords": [
           "보포모포",
+          "대만",
           "중국어",
-          "병음",
-          "중국어발음",
-          "어린이중국어",
-          "중국어공부"
+          "번체",
+          "발음",
+          "유아"
         ],
-        "keyline": "보포모포 · 중국어 · 병음",
+        "keyline": "보포모포 · 대만 · 중국어",
         "tags": [
           "#보포모포",
+          "#대만",
           "#중국어",
-          "#병음",
-          "#중국어발음",
-          "#어린이중국어",
+          "#번체",
+          "#발음",
           "#LumiBopomofoPro"
         ]
       }
@@ -2520,77 +2520,77 @@
     "lumiletters": {
       "en": {
         "keywords": [
-          "alphabet",
-          "letter sounds",
-          "learn to read",
           "handwriting",
-          "reading",
-          "writing"
+          "games",
+          "toddler",
+          "preschool",
+          "kindergarten",
+          "learning"
         ],
         "keyline": "ABC Kids",
         "tags": [
           "#ABCKids",
-          "#Alphabet",
-          "#LetterSounds",
-          "#LearnToRead",
           "#Handwriting",
+          "#Games",
+          "#Toddler",
+          "#Preschool",
           "#LumiLettersLite"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "英文字母",
-          "英文發音",
-          "拼讀",
-          "學英文",
-          "幼兒英文",
-          "英文啟蒙"
+          "學字母",
+          "寫字母",
+          "認字母",
+          "字母發音",
+          "大小寫",
+          "筆順"
         ],
         "keyline": "兒童英文ABC遊戲",
         "tags": [
           "#兒童英文ABC遊戲",
-          "#英文字母",
-          "#英文發音",
-          "#拼讀",
-          "#學英文",
+          "#學字母",
+          "#寫字母",
+          "#認字母",
+          "#字母發音",
           "#Lumi字母星球Lite"
         ]
       },
       "ja": {
         "keywords": [
-          "フォニックス",
-          "英語幼児",
-          "アルファベット",
-          "英語耳",
+          "幼児英語",
           "子供英語",
-          "発音"
+          "abcなぞり",
+          "知育",
+          "幼児教育",
+          "英語学習"
         ],
         "keyline": "こども英語ABC",
         "tags": [
           "#こども英語ABC",
-          "#フォニックス",
-          "#英語幼児",
-          "#アルファベット",
-          "#英語耳",
+          "#幼児英語",
+          "#子供英語",
+          "#abcなぞり",
+          "#知育",
           "#LumiレターLite"
         ]
       },
       "ko": {
         "keywords": [
-          "알파벳",
-          "글자",
-          "영어발음",
-          "읽기",
-          "영어학습",
-          "어린이영어"
+          "소문자",
+          "대문자",
+          "취학전",
+          "영어조기교육",
+          "유아영어",
+          "영어발음"
         ],
-        "keyline": "글자·따라쓰기 놀이",
+        "keyline": "어린이 영어 ABC",
         "tags": [
           "#어린이영어ABC",
-          "#알파벳",
-          "#글자",
-          "#영어발음",
-          "#읽기",
+          "#소문자",
+          "#대문자",
+          "#취학전",
+          "#영어조기교육",
           "#Lumi레터Lite"
         ]
       }
@@ -2598,77 +2598,77 @@
     "lumiletterspro": {
       "en": {
         "keywords": [
-          "alphabet",
-          "letter sounds",
-          "learn to read",
-          "tracing",
-          "handwriting",
-          "reading"
+          "short",
+          "vowel",
+          "kids",
+          "phonemic",
+          "awareness",
+          "alphabet"
         ],
-        "keyline": "ABC Phonics: Trace & Read",
+        "keyline": "ABC Phonics",
         "tags": [
           "#ABCPhonics",
-          "#Alphabet",
-          "#LetterSounds",
-          "#LearnToRead",
-          "#Tracing",
+          "#Short",
+          "#Vowel",
+          "#Kids",
+          "#Phonemic",
           "#LumiLettersPro"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "英文字母",
           "phonics",
-          "英文發音",
-          "學英文",
-          "兒童英文",
-          "幼兒英文"
+          "美語",
+          "英語",
+          "幼兒",
+          "國小",
+          "學前"
         ],
         "keyline": "ABC啟蒙",
         "tags": [
           "#ABC啟蒙",
-          "#英文字母",
           "#Phonics",
-          "#英文發音",
-          "#學英文",
+          "#美語",
+          "#英語",
+          "#幼兒",
           "#Lumi字母星球Pro"
         ]
       },
       "ja": {
         "keywords": [
           "アルファベット",
-          "英語",
           "えいご",
-          "文字",
-          "英語発音",
-          "なぞり書き"
+          "英単語",
+          "短母音",
+          "母音",
+          "子音"
         ],
-        "keyline": "ABCフォニックス読み書き",
+        "keyline": "ABCフォニックス",
         "tags": [
           "#ABCフォニックス",
           "#アルファベット",
-          "#英語",
           "#えいご",
-          "#文字",
+          "#英単語",
+          "#短母音",
           "#LumiレターPro"
         ]
       },
       "ko": {
         "keywords": [
           "알파벳",
-          "영어",
-          "글자",
-          "영어발음",
-          "영어학습",
-          "어린이영어"
+          "단모음",
+          "자음",
+          "모음",
+          "영단어",
+          "가운데소리"
         ],
-        "keyline": "ABC 파닉스 읽기·쓰기",
+        "keyline": "ABC 파닉스",
         "tags": [
           "#ABC파닉스",
           "#알파벳",
-          "#영어",
-          "#글자",
-          "#영어발음",
+          "#단모음",
+          "#자음",
+          "#모음",
           "#Lumi레터Pro"
         ]
       }
@@ -2676,77 +2676,77 @@
     "lumimath": {
       "en": {
         "keywords": [
-          "kids math",
-          "math for kids",
           "counting",
-          "numbers",
-          "number sense",
-          "addition"
+          "games",
+          "multiplication",
+          "times",
+          "tables",
+          "kindergarten"
         ],
         "keyline": "Explorer",
         "tags": [
           "#Explorer",
-          "#KidsMath",
-          "#MathForKids",
           "#Counting",
-          "#Numbers",
+          "#Games",
+          "#Multiplication",
+          "#Times",
           "#LumiMathPlanetExplorer"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "兒童數學",
-          "數數",
-          "加減法",
-          "數感",
-          "學前教育",
-          "幼稚園"
+          "啟蒙",
+          "學前",
+          "大班",
+          "中班",
+          "幼稚園",
+          "國小"
         ],
         "keyline": "探索版",
         "tags": [
           "#探索版",
-          "#兒童數學",
-          "#數數",
-          "#加減法",
-          "#數感",
+          "#啟蒙",
+          "#學前",
+          "#大班",
+          "#中班",
           "#Lumi數學星球探索版"
         ]
       },
       "ja": {
         "keywords": [
-          "さんすう",
-          "幼児数",
-          "数える",
           "たしざん",
-          "かずあそび",
-          "知育"
+          "ひきざん",
+          "かけざん",
+          "わりざん",
+          "足し算",
+          "引き算"
         ],
-        "keyline": "幼児向け算数知育ゲーム",
+        "keyline": "体験版",
         "tags": [
           "#体験版",
-          "#さんすう",
-          "#幼児数",
-          "#数える",
           "#たしざん",
+          "#ひきざん",
+          "#かけざん",
+          "#わりざん",
           "#Lumi算数プラネット体験版"
         ]
       },
       "ko": {
         "keywords": [
-          "유아수학",
-          "아동수학",
-          "수학게임",
+          "곱셈",
+          "나눗셈",
           "셈하기",
-          "덧셈",
-          "뺄셈"
+          "수세기",
+          "받아올림",
+          "유치원"
         ],
         "keyline": "체험판",
         "tags": [
           "#체험판",
-          "#유아수학",
-          "#아동수학",
-          "#수학게임",
+          "#곱셈",
+          "#나눗셈",
           "#셈하기",
+          "#수세기",
           "#Lumi수학행성체험판"
         ]
       }
@@ -2754,77 +2754,77 @@
     "lumimathpro": {
       "en": {
         "keywords": [
-          "logic",
           "reasoning",
-          "olympiad",
-          "multiplication",
-          "preschool",
-          "montessori"
+          "mental",
+          "competition",
+          "patterns",
+          "brain",
+          "teasers"
         ],
         "keyline": "Kids Numbers",
         "tags": [
           "#KidsNumbers",
-          "#Logic",
           "#Reasoning",
-          "#Olympiad",
-          "#Multiplication",
+          "#Mental",
+          "#Competition",
+          "#Patterns",
           "#LumiMathPro"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "幼兒數學",
-          "數學啟蒙",
-          "學前數學",
-          "加減乘除",
-          "珠心算",
-          "心算"
+          "思維",
+          "奧數",
+          "競賽",
+          "資優",
+          "規律",
+          "找規律"
         ],
         "keyline": "兒童數學",
         "tags": [
           "#兒童數學",
-          "#幼兒數學",
-          "#數學啟蒙",
-          "#學前數學",
-          "#加減乘除",
+          "#思維",
+          "#奧數",
+          "#競賽",
+          "#資優",
           "#Lumi數學星球兒童數學"
         ]
       },
       "ja": {
         "keywords": [
-          "さんすう",
-          "けいさん",
-          "幼児数",
-          "たしざん",
-          "ひきざん",
-          "かけ算"
+          "論理",
+          "推理",
+          "規則性",
+          "なぞなぞ",
+          "頭の体操",
+          "暗算"
         ],
         "keyline": "子供の算数",
         "tags": [
           "#子供の算数",
-          "#さんすう",
-          "#けいさん",
-          "#幼児数",
-          "#たしざん",
+          "#論理",
+          "#推理",
+          "#規則性",
+          "#なぞなぞ",
           "#Lumiさんすうプラネット"
         ]
       },
       "ko": {
         "keywords": [
-          "유아수학",
-          "숫자공부",
-          "구구단",
-          "셈하기",
-          "더하기",
-          "빼기"
+          "논리",
+          "추론",
+          "두뇌게임",
+          "창의력",
+          "문제해결",
+          "암산"
         ],
         "keyline": "아이 수학",
         "tags": [
           "#아이수학",
-          "#유아수학",
-          "#숫자공부",
-          "#구구단",
-          "#셈하기",
+          "#논리",
+          "#추론",
+          "#두뇌게임",
+          "#창의력",
           "#Lumi수학행성아이수학"
         ]
       }
@@ -2832,77 +2832,77 @@
     "lumimission": {
       "en": {
         "keywords": [
-          "chore chart",
-          "sticker chart",
-          "star chart",
-          "behavior chart",
-          "responsibility chart",
-          "daily routine"
+          "sticker",
+          "star",
+          "behavior",
+          "toddler",
+          "motivation",
+          "brushing"
         ],
-        "keyline": "Reward Chart & Kids Routines",
+        "keyline": "Routines",
         "tags": [
           "#Routines",
-          "#ChoreChart",
-          "#StickerChart",
-          "#StarChart",
-          "#BehaviorChart",
+          "#Sticker",
+          "#Star",
+          "#Behavior",
+          "#Toddler",
           "#LumiMissionPlanet"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "獎勵表",
-          "貼紙表",
-          "刷牙習慣",
-          "睡前習慣",
-          "收玩具",
-          "如廁訓練"
+          "集點卡",
+          "集星星",
+          "好寶寶",
+          "刷牙",
+          "吃飯",
+          "挑食"
         ],
         "keyline": "生活習慣養成",
         "tags": [
           "#生活習慣養成",
-          "#獎勵表",
-          "#貼紙表",
-          "#刷牙習慣",
-          "#睡前習慣",
+          "#集點卡",
+          "#集星星",
+          "#好寶寶",
+          "#刷牙",
           "#Lumi任務星球"
         ]
       },
       "ja": {
         "keywords": [
-          "ごほうび表",
-          "お手伝い表",
-          "習慣づけ",
-          "歯磨き",
-          "お片付け",
-          "トイレトレーニング"
+          "がんばり表",
+          "スタンプ",
+          "ほめる",
+          "やる気",
+          "偏食",
+          "完食"
         ],
-        "keyline": "ごほうび表 · お手伝い表 · 習慣づけ",
+        "keyline": "がんばり表 · スタンプ · ほめる",
         "tags": [
-          "#ごほうび表",
-          "#お手伝い表",
-          "#習慣づけ",
-          "#歯磨き",
-          "#お片付け",
+          "#がんばり表",
+          "#スタンプ",
+          "#ほめる",
+          "#やる気",
+          "#偏食",
           "#Lumiミッション星"
         ]
       },
       "ko": {
         "keywords": [
-          "칭찬스티커",
-          "칭찬판",
-          "스티커판",
-          "습관형성",
-          "양치질",
-          "배변훈련"
+          "참잘했어요",
+          "양치",
+          "편식",
+          "밥먹기",
+          "정리정돈",
+          "잠자리"
         ],
         "keyline": "생활습관 루틴",
         "tags": [
           "#생활습관루틴",
-          "#칭찬스티커",
-          "#칭찬판",
-          "#스티커판",
-          "#습관형성",
+          "#참잘했어요",
+          "#양치",
+          "#편식",
+          "#밥먹기",
           "#Lumi미션별"
         ]
       }
@@ -2910,77 +2910,77 @@
     "lumimissionpro": {
       "en": {
         "keywords": [
-          "routine chart",
-          "daily routine",
-          "chore chart",
-          "reward chart",
-          "sticker chart",
-          "morning routine"
+          "kids",
+          "daily",
+          "tasks",
+          "checklist",
+          "habit",
+          "toddler"
         ],
-        "keyline": "routine chart · daily routine · chore chart",
+        "keyline": "kids · daily · tasks",
         "tags": [
-          "#RoutineChart",
-          "#DailyRoutine",
-          "#ChoreChart",
-          "#RewardChart",
-          "#StickerChart",
+          "#Kids",
+          "#Daily",
+          "#Tasks",
+          "#Checklist",
+          "#Habit",
           "#LumiMissionPlanetPro"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "生活自理",
-          "幼兒作息",
-          "生活常規",
-          "獎勵表",
-          "貼紙表",
-          "集點獎勵"
+          "規律",
+          "起床",
+          "就寢",
+          "上床",
+          "刷牙",
+          "吃飯"
         ],
         "keyline": "好習慣養成遊戲",
         "tags": [
           "#好習慣養成遊戲",
-          "#生活自理",
-          "#幼兒作息",
-          "#生活常規",
-          "#獎勵表",
+          "#規律",
+          "#起床",
+          "#就寢",
+          "#上床",
           "#Lumi任務星球Pro"
         ]
       },
       "ja": {
         "keywords": [
-          "こども習慣",
-          "お支度ボード",
-          "習慣化",
-          "子育て",
-          "お手伝い",
-          "ごほうびシール"
+          "寝る前",
+          "寝かしつけ",
+          "はみがき",
+          "歯磨き",
+          "おかたづけ",
+          "片付け"
         ],
-        "keyline": "こども習慣 · お支度ボード · 習慣化",
+        "keyline": "寝る前 · 寝かしつけ · はみがき",
         "tags": [
-          "#こども習慣",
-          "#お支度ボード",
-          "#習慣化",
-          "#子育て",
-          "#お手伝い",
+          "#寝る前",
+          "#寝かしつけ",
+          "#はみがき",
+          "#歯磨き",
+          "#おかたづけ",
           "#Lumiミッション星Pro"
         ]
       },
       "ko": {
         "keywords": [
-          "유아 습관",
-          "습관형성",
+          "하루일과",
           "생활계획표",
-          "루틴",
+          "등원준비",
+          "등교준비",
           "양치",
-          "취침"
+          "정리정돈"
         ],
         "keyline": "생활습관 게임",
         "tags": [
           "#생활습관게임",
-          "#유아습관",
-          "#습관형성",
+          "#하루일과",
           "#생활계획표",
-          "#루틴",
+          "#등원준비",
+          "#등교준비",
           "#Lumi미션별Pro"
         ]
       }
@@ -2988,77 +2988,77 @@
     "lumiweather": {
       "en": {
         "keywords": [
-          "local weather",
-          "hourly forecast",
-          "weekly forecast",
-          "10 day forecast",
-          "rain radar",
-          "rain alert"
+          "forecast",
+          "rain",
+          "outfit",
+          "clothes",
+          "jacket",
+          "sunscreen"
         ],
-        "keyline": "Family Forecast",
+        "keyline": "What to Wear",
         "tags": [
-          "#FamilyForecast",
-          "#LocalWeather",
-          "#HourlyForecast",
-          "#WeeklyForecast",
-          "#10DayForecast",
+          "#WhatToWear",
+          "#Forecast",
+          "#Rain",
+          "#Outfit",
+          "#Clothes",
           "#LumiWeather"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "氣象",
-          "即時天氣",
-          "天氣 app",
-          "每小時天氣",
-          "一週天氣",
-          "降雨機率"
+          "氣象預報",
+          "台灣",
+          "下雨",
+          "體感溫度",
+          "氣溫",
+          "溫差"
         ],
-        "keyline": "氣象 · 即時天氣 · 天氣 app",
+        "keyline": "天氣預報與穿搭建議",
         "tags": [
-          "#氣象",
-          "#即時天氣",
-          "#天氣app",
-          "#每小時天氣",
-          "#一週天氣",
+          "#天氣預報與穿搭建議",
+          "#氣象預報",
+          "#台灣",
+          "#下雨",
+          "#體感溫度",
           "#Lumi天氣星球"
         ]
       },
       "ja": {
         "keywords": [
-          "天気予報",
-          "お出かけ",
-          "子供",
-          "天気",
-          "週間天気",
-          "雨雲レーダー"
+          "体感温度",
+          "日焼け止め",
+          "明日",
+          "週間",
+          "1時間ごと",
+          "通勤"
         ],
-        "keyline": "天気予報・雨雲レーダー",
+        "keyline": "天気予報・今日の服装",
         "tags": [
-          "#天気予報",
-          "#お出かけ",
-          "#子供",
-          "#天気",
-          "#週間天気",
+          "#天気予報今日の服装",
+          "#体感温度",
+          "#日焼け止め",
+          "#明日",
+          "#週間",
           "#ルミのおてんき星"
         ]
       },
       "ko": {
         "keywords": [
-          "일기예보",
-          "실시간 날씨",
-          "날씨 앱",
-          "시간별 날씨",
-          "주간 날씨",
-          "강수확률"
+          "기온",
+          "체감온도",
+          "강수확률",
+          "소나기",
+          "장마",
+          "태풍"
         ],
-        "keyline": "일기예보 · 실시간 날씨 · 날씨 앱",
+        "keyline": "외출 지수와 옷차림",
         "tags": [
-          "#일기예보",
-          "#실시간날씨",
-          "#날씨앱",
-          "#시간별날씨",
-          "#주간날씨",
+          "#외출지수와옷차림",
+          "#기온",
+          "#체감온도",
+          "#강수확률",
+          "#소나기",
           "#루미날씨"
         ]
       }
@@ -3067,19 +3067,19 @@
       "en": {
         "keywords": [
           "anonymize",
-          "censor",
           "black out",
           "hide text",
           "personal data",
-          "passport"
+          "passport",
+          "id card"
         ],
         "keyline": "Remove Your Info",
         "tags": [
           "#RemoveYourInfo",
           "#Anonymize",
-          "#Censor",
           "#BlackOut",
           "#HideText",
+          "#PersonalData",
           "#MaskMyFile"
         ]
       },
@@ -3104,20 +3104,20 @@
       },
       "ja": {
         "keywords": [
-          "墨消し",
           "マスキング",
           "塗りつぶし",
           "隠す",
-          "秘匿化",
-          "書類"
+          "書類",
+          "写真",
+          "身分証"
         ],
         "keyline": "共有前に個人情報を削除",
         "tags": [
           "#共有前に個人情報を削除",
-          "#墨消し",
           "#マスキング",
           "#塗りつぶし",
           "#隠す",
+          "#書類",
           "#MaskMyFile"
         ]
       },
@@ -3144,77 +3144,77 @@
     "mochi": {
       "en": {
         "keywords": [
-          "todo",
-          "list",
-          "reminder",
-          "planner",
-          "notes",
-          "habits"
+          "chore",
+          "chart",
+          "grocery",
+          "simple",
+          "routine",
+          "reminder"
         ],
-        "keyline": "Cute Checklist",
+        "keyline": "Kawaii To-Do List & Chores",
         "tags": [
           "#CuteChecklist",
-          "#Todo",
-          "#List",
-          "#Reminder",
-          "#Planner",
+          "#Chore",
+          "#Chart",
+          "#Grocery",
+          "#Simple",
           "#MochiCuteChecklist"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "待辦",
           "任務清單",
           "日程",
           "提醒",
           "備忘錄",
-          "小工具"
+          "習慣",
+          "計畫"
         ],
         "keyline": "可愛待辦清單",
         "tags": [
           "#可愛待辦清單",
-          "#待辦",
           "#任務清單",
           "#日程",
           "#提醒",
+          "#備忘錄",
           "#Mochi可愛待辦清單"
         ]
       },
       "ja": {
         "keywords": [
+          "ToDoリスト",
           "タスク",
           "チェックリスト",
           "リマインダー",
           "予定",
-          "メモ",
-          "習慣"
+          "メモ"
         ],
         "keyline": "かわいいToDo",
         "tags": [
           "#かわいいToDo",
+          "#ToDoリスト",
           "#タスク",
           "#チェックリスト",
           "#リマインダー",
-          "#予定",
           "#MochiかわいいToDo"
         ]
       },
       "ko": {
         "keywords": [
           "할일",
-          "체크리스트",
           "알림",
           "플래너",
           "메모",
-          "습관"
+          "습관",
+          "루틴"
         ],
-        "keyline": "귀여운 할 일 목록",
+        "keyline": "포근한 플래너로 하루 정리",
         "tags": [
-          "#귀여운할일목록",
+          "#귀여운할일목록체크리스트",
           "#할일",
-          "#체크리스트",
           "#알림",
           "#플래너",
+          "#메모",
           "#Mochi귀여운할일"
         ]
       }
@@ -3222,77 +3222,77 @@
     "mochidonestamp": {
       "en": {
         "keywords": [
-          "recurring",
-          "reminder",
-          "days since",
-          "maintenance",
-          "chores",
-          "interval"
+          "done",
+          "cleaning",
+          "family",
+          "plant",
+          "filter",
+          "maintenance"
         ],
         "keyline": "Last Time",
         "tags": [
           "#LastTime",
-          "#Recurring",
-          "#Reminder",
-          "#DaysSince",
-          "#Maintenance",
+          "#Done",
+          "#Cleaning",
+          "#Family",
+          "#Plant",
           "#MochiDoneStamp"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "循環提醒",
-          "經過天數",
-          "多久一次",
-          "家事管家",
-          "打掃計畫",
-          "定期保養"
+          "機車保養",
+          "換機油",
+          "家電",
+          "家人共享",
+          "週期",
+          "多久一次"
         ],
         "keyline": "上次何時",
         "tags": [
           "#上次何時",
-          "#循環提醒",
-          "#經過天數",
-          "#多久一次",
-          "#家事管家",
+          "#機車保養",
+          "#換機油",
+          "#家電",
+          "#家人共享",
           "#MochiDoneStamp上次何時"
         ]
       },
       "ja": {
         "keywords": [
-          "リマインダー",
-          "繰り返し",
-          "経過日数",
-          "家事管理",
-          "掃除記録",
-          "メンテナンス"
+          "最後にやった日",
+          "交換時期",
+          "家電",
+          "家族共有",
+          "忘れ防止",
+          "掃除"
         ],
         "keyline": "いつやった？",
         "tags": [
           "#いつやった",
-          "#リマインダー",
-          "#繰り返し",
-          "#経過日数",
-          "#家事管理",
+          "#最後にやった日",
+          "#交換時期",
+          "#家電",
+          "#家族共有",
           "#MochiDoneStampいつやった"
         ]
       },
       "ko": {
         "keywords": [
-          "주기 알림",
-          "반복 일정",
-          "경과일수",
-          "생활도우미",
-          "집안일",
-          "물주기"
+          "청소",
+          "청소알림",
+          "가족공유",
+          "엔진오일",
+          "물주기",
+          "침구교체"
         ],
         "keyline": "마지막 기록",
         "tags": [
           "#마지막기록",
-          "#주기알림",
-          "#반복일정",
-          "#경과일수",
-          "#생활도우미",
+          "#청소",
+          "#청소알림",
+          "#가족공유",
+          "#엔진오일",
           "#MochiDoneStamp마지막기록"
         ]
       }
@@ -3300,77 +3300,77 @@
     "moneytag": {
       "en": {
         "keywords": [
-          "P&L tracking",
-          "job costing",
-          "profit margin",
-          "client profitability",
-          "cost breakdown",
-          "freelance books"
+          "profit",
+          "loss",
+          "side hustle",
+          "freelance",
+          "business",
+          "accounting"
         ],
         "keyline": "Income & Expense",
         "tags": [
           "#IncomeExpense",
-          "#PLTracking",
-          "#JobCosting",
-          "#ProfitMargin",
-          "#ClientProfitability",
+          "#Profit",
+          "#Loss",
+          "#SideHustle",
+          "#Freelance",
           "#MoneyTag"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "損益表",
-          "工單成本",
-          "任務成本",
-          "毛利率",
-          "客戶獲利",
-          "成本分攤"
+          "記帳",
+          "損益",
+          "利潤",
+          "淨利",
+          "毛利",
+          "營收"
         ],
         "keyline": "收入與支出",
         "tags": [
           "#收入與支出",
-          "#損益表",
-          "#工單成本",
-          "#任務成本",
-          "#毛利率",
+          "#記帳",
+          "#損益",
+          "#利潤",
+          "#淨利",
           "#MoneyTag"
         ]
       },
       "ja": {
         "keywords": [
-          "損益計算書",
-          "案件別原価",
-          "ジョブコスト",
-          "利益率",
-          "顧客別採算",
-          "原価配賦"
+          "収支",
+          "損益",
+          "利益",
+          "売上",
+          "経費",
+          "副業"
         ],
         "keyline": "収入と支出",
         "tags": [
           "#収入と支出",
-          "#損益計算書",
-          "#案件別原価",
-          "#ジョブコスト",
-          "#利益率",
+          "#収支",
+          "#損益",
+          "#利益",
+          "#売上",
           "#MoneyTag"
         ]
       },
       "ko": {
         "keywords": [
-          "손익계산서",
-          "작업별 원가",
-          "잡 코스팅",
-          "이익률",
-          "고객별 수익성",
-          "원가 배분"
+          "장부",
+          "손익",
+          "순이익",
+          "매출",
+          "수익",
+          "부업"
         ],
         "keyline": "수입과 지출",
         "tags": [
           "#수입과지출",
-          "#손익계산서",
-          "#작업별원가",
-          "#잡코스팅",
-          "#이익률",
+          "#장부",
+          "#손익",
+          "#순이익",
+          "#매출",
           "#MoneyTag"
         ]
       }
@@ -3378,19 +3378,19 @@
     "notesstudio100": {
       "en": {
         "keywords": [
+          "notebook",
           "journal",
           "planner",
-          "flashcards",
           "annotate",
-          "school",
-          "exam"
+          "stylus",
+          "lecture"
         ],
         "keyline": "Pen & Paper",
         "tags": [
           "#PenPaper",
+          "#Notebook",
           "#Journal",
           "#Planner",
-          "#Flashcards",
           "#Annotate",
           "#100NotesStudio"
         ]
@@ -3402,7 +3402,7 @@
           "讀書計畫",
           "抽認卡",
           "文字辨識",
-          "貼紙膠帶"
+          "貼紙"
         ],
         "keyline": "手帳 · 日記 · 讀書計畫",
         "tags": [
@@ -3416,16 +3416,16 @@
       },
       "ja": {
         "keywords": [
-          "メモ帳",
           "手帳",
           "日記",
           "暗記",
           "単語帳",
-          "筆記"
+          "筆記",
+          "オフライン"
         ],
-        "keyline": "メモ帳 · 手帳 · 日記",
+        "keyline": "手書きノート",
         "tags": [
-          "#メモ帳",
+          "#手書きノート",
           "#手帳",
           "#日記",
           "#暗記",
@@ -3456,77 +3456,77 @@
     "onepageppt": {
       "en": {
         "keywords": [
-          "presentation",
           "deck",
-          "pptx",
-          "infographic",
-          "summary",
-          "pitch"
+          "pitch",
+          "chart",
+          "graph",
+          "diagram",
+          "generator"
         ],
-        "keyline": "AI Slide Maker",
+        "keyline": "Presentation & Infographic",
         "tags": [
           "#AISlideMaker",
-          "#Presentation",
           "#Deck",
-          "#Pptx",
-          "#Infographic",
+          "#Pitch",
+          "#Chart",
+          "#Graph",
           "#OnePagePPT"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "pptx",
+          "懶人包",
+          "重點整理",
+          "摘要",
+          "會議紀錄",
           "報告",
-          "提案",
-          "企劃書",
-          "圖表",
-          "長條圖"
+          "生成"
         ],
         "keyline": "AI 一頁簡報",
         "tags": [
           "#AI一頁簡報",
-          "#Pptx",
-          "#報告",
-          "#提案",
-          "#企劃書",
+          "#懶人包",
+          "#重點整理",
+          "#摘要",
+          "#會議紀錄",
           "#OnePagePPT一頁簡報"
         ]
       },
       "ja": {
         "keywords": [
-          "プレゼン",
-          "pptx",
-          "グラフ",
-          "図解",
+          "要約",
+          "議事録",
+          "会議",
           "企画書",
-          "提案書"
+          "報告書",
+          "レポート"
         ],
         "keyline": "AI資料作成",
         "tags": [
           "#AI資料作成",
-          "#プレゼン",
-          "#Pptx",
-          "#グラフ",
-          "#図解",
+          "#要約",
+          "#議事録",
+          "#会議",
+          "#企画書",
           "#OnePagePPTAI資料作成"
         ]
       },
       "ko": {
         "keywords": [
-          "pptx",
           "프레젠테이션",
+          "요약",
+          "회의록",
           "보고서",
-          "기획서",
-          "제안서",
-          "차트"
+          "차트",
+          "그래프"
         ],
         "keyline": "AI 발표자료",
         "tags": [
           "#AI발표자료",
-          "#Pptx",
           "#프레젠테이션",
+          "#요약",
+          "#회의록",
           "#보고서",
-          "#기획서",
           "#OnePagePPT발표자료"
         ]
       }
@@ -3534,77 +3534,77 @@
     "photocream": {
       "en": {
         "keywords": [
-          "film camera",
-          "retro filter",
-          "vintage camera",
-          "disposable camera",
-          "photo editor",
-          "beauty camera"
+          "retro",
+          "grain",
+          "analog",
+          "aesthetic",
+          "disposable",
+          "halation"
         ],
-        "keyline": "Film Camera & Retro Filters",
+        "keyline": "Film Filters",
         "tags": [
           "#FilmFilters",
-          "#FilmCamera",
-          "#RetroFilter",
-          "#VintageCamera",
-          "#DisposableCamera",
+          "#Retro",
+          "#Grain",
+          "#Analog",
+          "#Aesthetic",
           "#PhotoCreamPro"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "底片相機",
-          "復古濾鏡",
-          "修圖",
-          "美顏相機",
           "自拍",
-          "濾鏡"
+          "拍立得",
+          "老照片",
+          "美肌",
+          "文青濾鏡",
+          "照片編輯"
         ],
-        "keyline": "底片相機・復古濾鏡修圖",
+        "keyline": "底片濾鏡·復古修圖",
         "tags": [
           "#底片濾鏡復古修圖",
-          "#底片相機",
-          "#復古濾鏡",
-          "#修圖",
-          "#美顏相機",
+          "#自拍",
+          "#拍立得",
+          "#老照片",
+          "#美肌",
           "#PhotoCream底片濾鏡"
         ]
       },
       "ja": {
         "keywords": [
-          "フィルムカメラ",
           "レトロ",
-          "写真加工",
-          "自撮り",
-          "フィルター",
-          "盛れるカメラ"
+          "使い捨てカメラ",
+          "フィルム風",
+          "粒子",
+          "ヴィンテージ",
+          "オールド"
         ],
-        "keyline": "フィルムカメラ・レトロ加工",
+        "keyline": "フィルム風フィルター",
         "tags": [
           "#フィルム風フィルター",
-          "#フィルムカメラ",
           "#レトロ",
-          "#写真加工",
-          "#自撮り",
+          "#使い捨てカメラ",
+          "#フィルム風",
+          "#粒子",
           "#PhotoCreamフィルム"
         ]
       },
       "ko": {
         "keywords": [
-          "필름카메라",
-          "감성카메라",
+          "감성사진",
           "빈티지",
           "레트로",
           "사진편집",
-          "셀카"
+          "그레인",
+          "아날로그"
         ],
-        "keyline": "필름카메라·감성 사진편집",
+        "keyline": "필름 필터·감성 보정",
         "tags": [
           "#필름필터감성보정",
-          "#필름카메라",
-          "#감성카메라",
+          "#감성사진",
           "#빈티지",
           "#레트로",
+          "#사진편집",
           "#PhotoCream필름필터"
         ]
       }
@@ -3612,77 +3612,77 @@
     "picclear": {
       "en": {
         "keywords": [
-          "photo cleaner",
-          "storage cleaner",
-          "free space",
-          "duplicate photos",
-          "delete photos",
-          "clean gallery"
+          "duplicate",
+          "blurry",
+          "large",
+          "videos",
+          "delete",
+          "screenshots"
         ],
-        "keyline": "Photo cleaner frees storage",
+        "keyline": "Clean Up Photos & Storage",
         "tags": [
           "#PhotoCleaner",
-          "#StorageCleaner",
-          "#FreeSpace",
-          "#DuplicatePhotos",
-          "#DeletePhotos",
+          "#Duplicate",
+          "#Blurry",
+          "#Large",
+          "#Videos",
           "#PicClearPro"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "照片清理",
+          "重複照片",
+          "相似照片",
           "相片清理",
-          "手機清理",
-          "釋放空間",
-          "儲存空間",
-          "重複照片"
+          "刪除照片",
+          "相簿整理",
+          "圖庫清理"
         ],
-        "keyline": "照片清理，釋放空間",
+        "keyline": "照片清理·釋放空間",
         "tags": [
           "#照片清理釋放空間",
-          "#照片清理",
+          "#重複照片",
+          "#相似照片",
           "#相片清理",
-          "#手機清理",
-          "#釋放空間",
+          "#刪除照片",
           "#PicClear照片清理"
         ]
       },
       "ja": {
         "keywords": [
-          "写真整理",
-          "写真クリーナー",
-          "容量確保",
           "空き容量",
           "重複写真",
-          "類似写真"
+          "類似写真",
+          "写真削除",
+          "アルバム整理",
+          "ギャラリー整理"
         ],
-        "keyline": "写真クリーナーで容量確保",
+        "keyline": "写真整理・重複削除",
         "tags": [
           "#写真整理重複削除",
-          "#写真整理",
-          "#写真クリーナー",
-          "#容量確保",
           "#空き容量",
+          "#重複写真",
+          "#類似写真",
+          "#写真削除",
           "#PicClear写真整理"
         ]
       },
       "ko": {
         "keywords": [
-          "사진 정리",
-          "사진 클리너",
-          "저장공간 확보",
-          "용량 확보",
           "중복 사진",
-          "비슷한 사진"
+          "비슷한 사진",
+          "흐릿한 사진",
+          "갤러리 정리",
+          "앨범 정리",
+          "큰 동영상"
         ],
-        "keyline": "사진 클리너로 용량 확보",
+        "keyline": "사진 정리·중복 삭제",
         "tags": [
           "#사진정리중복삭제",
-          "#사진정리",
-          "#사진클리너",
-          "#저장공간확보",
-          "#용량확보",
+          "#중복사진",
+          "#비슷한사진",
+          "#흐릿한사진",
+          "#갤러리정리",
           "#PicClear사진정리"
         ]
       }
@@ -3690,77 +3690,77 @@
     "qrcodehalo": {
       "en": {
         "keywords": [
-          "link checker",
-          "phishing alert",
-          "domain safety",
-          "payload audit",
+          "scanner",
+          "reader",
           "barcode",
-          "reader"
+          "generator",
+          "maker",
+          "wifi"
         ],
         "keyline": "Scan & Create",
         "tags": [
           "#ScanCreate",
-          "#LinkChecker",
-          "#PhishingAlert",
-          "#DomainSafety",
-          "#PayloadAudit",
+          "#Scanner",
+          "#Reader",
+          "#Barcode",
+          "#Generator",
           "#QRCodeHalo"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "網址安全",
-          "釣魚辨識",
-          "風險檢測",
-          "仿冒網域",
-          "行動條碼",
-          "條碼"
+          "條碼",
+          "掃碼",
+          "產生器",
+          "讀取",
+          "辨識",
+          "網址"
         ],
         "keyline": "安全掃描與建立",
         "tags": [
           "#安全掃描與建立",
-          "#網址安全",
-          "#釣魚辨識",
-          "#風險檢測",
-          "#仿冒網域",
+          "#條碼",
+          "#掃碼",
+          "#產生器",
+          "#讀取",
           "#QRCodeHalo"
         ]
       },
       "ja": {
         "keywords": [
-          "危険url",
-          "フィッシング対策",
-          "安全確認",
-          "偽サイト判別",
           "読み取り",
-          "スキャン"
+          "リーダー",
+          "スキャン",
+          "バーコード",
+          "作成",
+          "ジェネレーター"
         ],
-        "keyline": "開く前に確認",
+        "keyline": "QRコードをすぐ開く",
         "tags": [
-          "#開く前に確認",
-          "#危険url",
-          "#フィッシング対策",
-          "#安全確認",
-          "#偽サイト判別",
+          "#QRコードをすぐ開く",
+          "#読み取り",
+          "#リーダー",
+          "#スキャン",
+          "#バーコード",
           "#QRCodeHalo"
         ]
       },
       "ko": {
         "keywords": [
-          "피싱방지",
-          "링크검사",
-          "도메인검증",
-          "보안확인",
           "큐알코드",
-          "바코드"
+          "바코드",
+          "스캐너",
+          "스캔",
+          "인식",
+          "리더"
         ],
-        "keyline": "열기 전 확인",
+        "keyline": "QR코드 바로 실행",
         "tags": [
-          "#열기전확인",
-          "#피싱방지",
-          "#링크검사",
-          "#도메인검증",
-          "#보안확인",
+          "#QR코드바로실행",
+          "#큐알코드",
+          "#바코드",
+          "#스캐너",
+          "#스캔",
           "#QRCodeHalo"
         ]
       }
@@ -3768,39 +3768,39 @@
     "savetag": {
       "en": {
         "keywords": [
+          "reading",
+          "list",
           "organizer",
           "collection",
-          "inbox",
-          "archive",
-          "clipboard",
-          "folder"
+          "wishlist",
+          "recipes"
         ],
-        "keyline": "AI Social Bookmarks",
+        "keyline": "Link Saver: Watch & Read Later",
         "tags": [
           "#AISocialBookmarks",
+          "#Reading",
+          "#List",
           "#Organizer",
           "#Collection",
-          "#Inbox",
-          "#Archive",
           "#SaveTag"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "書籤",
-          "待讀清單",
-          "存檔",
-          "網址",
-          "離線",
-          "標籤"
+          "影片",
+          "貼文",
+          "文章",
+          "稍後觀看",
+          "閱讀清單",
+          "網址"
         ],
         "keyline": "AI 連結收藏",
         "tags": [
           "#AI連結收藏",
-          "#書籤",
-          "#待讀清單",
-          "#存檔",
-          "#網址",
+          "#影片",
+          "#貼文",
+          "#文章",
+          "#稍後觀看",
           "#SaveTag"
         ]
       },
@@ -3825,20 +3825,20 @@
       },
       "ko": {
         "keywords": [
-          "북마크",
-          "즐겨찾기",
-          "스크랩",
-          "모아보기",
           "읽을거리",
-          "오프라인"
+          "모아보기",
+          "스크랩",
+          "즐겨찾기",
+          "위시리스트",
+          "레시피"
         ],
         "keyline": "AI 링크 보관함",
         "tags": [
           "#AI링크보관함",
-          "#북마크",
-          "#즐겨찾기",
-          "#스크랩",
+          "#읽을거리",
           "#모아보기",
+          "#스크랩",
+          "#즐겨찾기",
           "#SaveTag"
         ]
       }
@@ -3846,77 +3846,77 @@
     "scanto": {
       "en": {
         "keywords": [
-          "scanner",
           "scan",
-          "doc scanner",
-          "encrypt",
-          "face id",
-          "search"
+          "text",
+          "recognition",
+          "receipt",
+          "password",
+          "encrypted"
         ],
-        "keyline": "Offline PDF & OCR",
+        "keyline": "Private Document & ID Scanner",
         "tags": [
           "#OfflinePDFOCR",
-          "#Scanner",
           "#Scan",
-          "#DocScanner",
-          "#Encrypt",
+          "#Text",
+          "#Recognition",
+          "#Receipt",
           "#ScanToPro"
         ]
       },
       "zh-Hant": {
         "keywords": [
           "掃描器",
-          "掃描app",
-          "文件掃描",
-          "隱私",
-          "加密",
-          "辨識"
+          "掃描檔",
+          "圖片轉文字",
+          "文字掃描",
+          "名片",
+          "合約"
         ],
         "keyline": "離線PDF掃描",
         "tags": [
           "#離線PDF掃描",
           "#掃描器",
-          "#掃描app",
-          "#文件掃描",
-          "#隱私",
+          "#掃描檔",
+          "#圖片轉文字",
+          "#文字掃描",
           "#ScanToPro離線PDF掃描"
         ]
       },
       "ja": {
         "keywords": [
-          "スキャナー",
           "スキャン",
-          "スキャンアプリ",
-          "書類スキャン",
-          "暗号化",
-          "文字認識"
+          "pdf変換",
+          "レシート",
+          "領収書",
+          "名刺",
+          "免許証"
         ],
         "keyline": "オフラインPDF",
         "tags": [
           "#オフラインPDF",
-          "#スキャナー",
           "#スキャン",
-          "#スキャンアプリ",
-          "#書類スキャン",
+          "#pdf変換",
+          "#レシート",
+          "#領収書",
           "#ScanToProオフラインPDF"
         ]
       },
       "ko": {
         "keywords": [
-          "스캐너",
           "스캔",
-          "스캔앱",
           "문서스캔",
-          "암호화",
-          "문자인식"
+          "영수증",
+          "명함",
+          "신분증",
+          "계약서"
         ],
-        "keyline": "오프라인 PDF・OCR・구독 없음",
+        "keyline": "오프라인 PDF",
         "tags": [
           "#오프라인PDF",
-          "#스캐너",
           "#스캔",
-          "#스캔앱",
           "#문서스캔",
+          "#영수증",
+          "#명함",
           "#ScanToPro오프라인PDF"
         ]
       }
@@ -3924,77 +3924,77 @@
     "sereno": {
       "en": {
         "keywords": [
-          "white noise",
-          "sleep sounds",
-          "rain",
+          "machine",
+          "pink",
+          "ocean",
           "insomnia",
-          "focus",
-          "adhd"
+          "baby",
+          "tinnitus"
         ],
-        "keyline": "White noise for sleep & focus",
+        "keyline": "Sleep Sounds",
         "tags": [
           "#SleepSounds",
-          "#WhiteNoise",
-          "#Rain",
+          "#Machine",
+          "#Pink",
+          "#Ocean",
           "#Insomnia",
-          "#Focus",
           "#SerenoSleepSounds"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "雨聲",
-          "失眠",
-          "放鬆",
-          "注意力不足",
-          "放鬆音樂",
-          "冥想"
+          "熟睡",
+          "哄睡",
+          "胎內音",
+          "褐噪音",
+          "粉紅噪音",
+          "失眠"
         ],
         "keyline": "極致睡眠音效",
         "tags": [
           "#極致睡眠音效",
-          "#雨聲",
-          "#失眠",
-          "#放鬆",
-          "#注意力不足",
+          "#熟睡",
+          "#哄睡",
+          "#胎內音",
+          "#褐噪音",
           "#Sereno極致睡眠音效"
         ]
       },
       "ja": {
         "keywords": [
-          "雨音",
-          "不眠症",
-          "リラックス",
-          "瞑想",
-          "赤ちゃん",
-          "ADHD"
+          "睡眠導入",
+          "寝かしつけ",
+          "胎内音",
+          "作業用",
+          "ブラウンノイズ",
+          "ピンクノイズ"
         ],
         "keyline": "スリープサウンド",
         "tags": [
           "#スリープサウンド",
-          "#雨音",
-          "#不眠症",
-          "#リラックス",
-          "#瞑想",
+          "#睡眠導入",
+          "#寝かしつけ",
+          "#胎内音",
+          "#作業用",
           "#Serenoスリープサウンド"
         ]
       },
       "ko": {
         "keywords": [
-          "빗소리",
-          "불면증",
-          "집중력",
-          "명상",
-          "휴식",
-          "아기수면"
+          "화이트노이즈",
+          "수면유도",
+          "잠잘때",
+          "브라운노이즈",
+          "핑크노이즈",
+          "아기"
         ],
         "keyline": "수면 사운드",
         "tags": [
           "#수면사운드",
-          "#빗소리",
-          "#불면증",
-          "#집중력",
-          "#명상",
+          "#화이트노이즈",
+          "#수면유도",
+          "#잠잘때",
+          "#브라운노이즈",
           "#Sereno수면사운드"
         ]
       }
@@ -4022,19 +4022,19 @@
       "zh-Hant": {
         "keywords": [
           "相簿",
-          "整理",
-          "照片",
-          "清理",
           "重複",
-          "相似"
+          "相似",
+          "圖片",
+          "管理",
+          "歸檔"
         ],
-        "keyline": "相簿 · 整理 · 照片",
+        "keyline": "截圖整理",
         "tags": [
+          "#截圖整理",
           "#相簿",
-          "#整理",
-          "#照片",
-          "#清理",
           "#重複",
+          "#相似",
+          "#圖片",
           "#ShotInbox"
         ]
       },
@@ -4047,13 +4047,13 @@
           "重複",
           "類似"
         ],
-        "keyline": "スクリーンショット · 写真 · 整理",
+        "keyline": "スクショ整理",
         "tags": [
+          "#スクショ整理",
           "#スクリーンショット",
           "#写真",
           "#整理",
           "#アルバム",
-          "#重複",
           "#ShotInbox"
         ]
       },
@@ -4061,16 +4061,16 @@
         "keywords": [
           "캡처",
           "사진",
-          "정리",
           "앨범",
           "관리",
-          "중복"
+          "중복",
+          "유사"
         ],
-        "keyline": "캡처 · 사진 · 정리",
+        "keyline": "스크린샷 정리",
         "tags": [
+          "#스크린샷정리",
           "#캡처",
           "#사진",
-          "#정리",
           "#앨범",
           "#관리",
           "#ShotInbox"
@@ -4081,16 +4081,16 @@
       "en": {
         "keywords": [
           "passport photo",
-          "id photo",
           "visa photo",
           "headshot",
           "background",
-          "white"
+          "white",
+          "remover"
         ],
-        "keyline": "passport photo · id photo · visa photo",
+        "keyline": "Take ID Photos",
         "tags": [
+          "#TakeIDPhotos",
           "#PassportPhoto",
-          "#IdPhoto",
           "#VisaPhoto",
           "#Headshot",
           "#Background",
@@ -4099,37 +4099,37 @@
       },
       "zh-Hant": {
         "keywords": [
-          "證件照",
           "護照照片",
           "簽證照片",
-          "二吋",
-          "一吋",
-          "白底"
+          "背景移除",
+          "相片沖印",
+          "像素",
+          "解析度"
         ],
-        "keyline": "人像照精準裁成指定尺寸",
+        "keyline": "在家拍證件照",
         "tags": [
-          "#證件照",
+          "#在家拍證件照",
           "#護照照片",
           "#簽證照片",
-          "#二吋",
-          "#一吋",
+          "#背景移除",
+          "#相片沖印",
           "#SnapportLite"
         ]
       },
       "ja": {
         "keywords": [
-          "証明写真",
           "就活写真",
-          "受験写真",
+          "加工",
           "パスポート用写真",
           "履歴書",
-          "背景白"
+          "背景白",
+          "背景色"
         ],
-        "keyline": "証明写真 · 就活写真 · 受験写真",
+        "keyline": "自宅で証明写真",
         "tags": [
-          "#証明写真",
+          "#自宅で証明写真",
           "#就活写真",
-          "#受験写真",
+          "#加工",
           "#パスポート用写真",
           "#履歴書",
           "#SnapportLite"
@@ -4137,16 +4137,16 @@
       },
       "ko": {
         "keywords": [
-          "증명사진",
           "반명함",
           "여권용사진",
           "취업사진",
           "프로필",
-          "배경지우기"
+          "배경지우기",
+          "흰배경"
         ],
-        "keyline": "증명사진 · 반명함 · 여권용사진",
+        "keyline": "집에서 증명사진",
         "tags": [
-          "#증명사진",
+          "#집에서증명사진",
           "#반명함",
           "#여권용사진",
           "#취업사진",
@@ -4159,32 +4159,32 @@
       "en": {
         "keywords": [
           "transcription",
-          "speech to text",
-          "audio to text",
-          "transcribe",
+          "speech",
+          "audio",
           "dictation",
-          "voice recorder"
+          "class",
+          "interview"
         ],
-        "keyline": "transcription · speech to text · audio to text",
+        "keyline": "Voice to Text Notes",
         "tags": [
+          "#VoiceToTextNotes",
           "#Transcription",
-          "#SpeechToText",
-          "#AudioToText",
-          "#Transcribe",
+          "#Speech",
+          "#Audio",
           "#Dictation",
           "#SonoNote"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "錄音轉文字",
           "語音筆記",
           "逐字稿",
           "語音輸入",
           "會議記錄",
-          "聽打"
+          "會議紀錄",
+          "語音備忘錄"
         ],
-        "keyline": "錄音轉文字 · 語音筆記 · 逐字稿",
+        "keyline": "語音轉文字・錄音筆記",
         "tags": [
           "#錄音轉文字",
           "#語音筆記",
@@ -4196,39 +4196,39 @@
       },
       "ja": {
         "keywords": [
-          "文字起こし",
+          "音声文字変換",
+          "会議メモ",
           "ボイスレコーダー",
+          "音声入力",
           "音声認識",
-          "議事録",
-          "録音",
-          "メモ"
+          "書き起こし"
         ],
-        "keyline": "音声を文字起こし・ボイスメモ",
+        "keyline": "音声を文字起こし",
         "tags": [
-          "#文字起こし",
+          "#音声を文字起こし",
+          "#音声文字変換",
+          "#会議メモ",
           "#ボイスレコーダー",
-          "#音声認識",
-          "#議事録",
-          "#録音",
+          "#音声入力",
           "#SonoNote"
         ]
       },
       "ko": {
         "keywords": [
-          "음성녹음",
           "회의록",
-          "녹취",
           "받아쓰기",
           "음성인식",
-          "메모"
+          "녹음기",
+          "전사",
+          "요약"
         ],
-        "keyline": "음성을 텍스트로·음성 메모",
+        "keyline": "회의록 · 받아쓰기 · 음성인식",
         "tags": [
-          "#음성녹음",
           "#회의록",
-          "#녹취",
           "#받아쓰기",
           "#음성인식",
+          "#녹음기",
+          "#전사",
           "#SonoNote"
         ]
       }
@@ -4236,20 +4236,20 @@
     "stayclock": {
       "en": {
         "keywords": [
-          "nightstand",
           "standby",
-          "dock",
+          "alarm",
           "charging",
-          "bedside",
-          "oled"
+          "digital",
+          "aesthetic",
+          "night"
         ],
-        "keyline": "Flip Desk Clock",
+        "keyline": "Nightstand & Bedside Clock",
         "tags": [
           "#FlipDeskClock",
-          "#Nightstand",
           "#Standby",
-          "#Dock",
+          "#Alarm",
           "#Charging",
+          "#Digital",
           "#StayClock"
         ]
       },
@@ -4258,9 +4258,9 @@
           "數位時鐘",
           "床頭時鐘",
           "翻頁時鐘",
-          "充電座擺飾",
-          "桌面小工具",
-          "夜燈時鐘"
+          "全螢幕時鐘",
+          "待機時鐘",
+          "鬧鐘"
         ],
         "keyline": "翻頁桌鐘",
         "tags": [
@@ -4268,26 +4268,26 @@
           "#數位時鐘",
           "#床頭時鐘",
           "#翻頁時鐘",
-          "#充電座擺飾",
+          "#全螢幕時鐘",
           "#StayClock"
         ]
       },
       "ja": {
         "keywords": [
-          "置き時計",
           "デジタル時計",
           "目覚まし時計",
           "ナイトスタンド",
           "充電スタンド",
-          "ウィジェット"
+          "ウィジェット",
+          "壁紙時計"
         ],
         "keyline": "パタパタ卓上時計",
         "tags": [
           "#パタパタ卓上時計",
-          "#置き時計",
           "#デジタル時計",
           "#目覚まし時計",
           "#ナイトスタンド",
+          "#充電スタンド",
           "#StayClock"
         ]
       },
@@ -4314,77 +4314,77 @@
     "studydown": {
       "en": {
         "keywords": [
+          "study",
           "focus",
+          "flip",
           "productivity",
-          "streaks",
-          "habits",
-          "goals",
-          "deadline"
+          "hours",
+          "exam"
         ],
         "keyline": "Face-Down Timer",
         "tags": [
           "#FaceDownTimer",
+          "#Study",
           "#Focus",
+          "#Flip",
           "#Productivity",
-          "#Streaks",
-          "#Habits",
           "#Studydown"
         ]
       },
       "zh-Hant": {
         "keywords": [
+          "讀書",
+          "唸書",
+          "自習",
           "時間管理",
           "閱讀",
-          "習慣養成",
-          "每週目標",
-          "期限倒數",
-          "時數統計"
+          "習慣養成"
         ],
         "keyline": "翻面專注計時",
         "tags": [
           "#翻面專注計時",
+          "#讀書",
+          "#唸書",
+          "#自習",
           "#時間管理",
-          "#閱讀",
-          "#習慣養成",
-          "#每週目標",
           "#Studydown"
         ]
       },
       "ja": {
         "keywords": [
+          "勉強",
           "集中",
           "タイマー",
-          "勉強",
+          "自習",
           "読書",
-          "習慣化",
-          "目標管理"
+          "習慣化"
         ],
         "keyline": "伏せて時間記録",
         "tags": [
           "#伏せて時間記録",
+          "#勉強",
           "#集中",
           "#タイマー",
-          "#勉強",
-          "#読書",
+          "#自習",
           "#Studydown"
         ]
       },
       "ko": {
         "keywords": [
+          "공부",
+          "공부시간",
+          "스터디",
           "스톱워치",
           "생산성",
-          "습관",
-          "주간목표",
-          "마감일",
-          "독서"
+          "습관"
         ],
         "keyline": "집중 타이머",
         "tags": [
           "#집중타이머",
+          "#공부",
+          "#공부시간",
+          "#스터디",
           "#스톱워치",
-          "#생산성",
-          "#습관",
-          "#주간목표",
           "#Studydown"
         ]
       }
@@ -4392,77 +4392,77 @@
     "tripbee": {
       "en": {
         "keywords": [
-          "vacation",
-          "holiday",
-          "journey",
-          "organizer",
-          "checklist",
-          "family travel"
+          "family",
+          "friends",
+          "shared",
+          "notes",
+          "rainy",
+          "boarding"
         ],
         "keyline": "Trip Planner",
         "tags": [
           "#TripPlanner",
-          "#Vacation",
-          "#Holiday",
-          "#Journey",
-          "#Organizer",
+          "#Family",
+          "#Friends",
+          "#Shared",
+          "#Notes",
           "#TripBeePro"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "旅行",
-          "度假",
-          "出遊",
-          "自由行",
-          "自助",
-          "親子遊"
+          "旅伴",
+          "親友",
+          "家人",
+          "朋友",
+          "閨蜜",
+          "團體"
         ],
         "keyline": "旅遊行程規劃",
         "tags": [
           "#旅遊行程規劃",
-          "#旅行",
-          "#度假",
-          "#出遊",
-          "#自由行",
+          "#旅伴",
+          "#親友",
+          "#家人",
+          "#朋友",
           "#TripBee旅遊行程規劃"
         ]
       },
       "ja": {
         "keywords": [
-          "観光",
-          "休暇",
-          "温泉",
-          "ホテル",
-          "航空券",
-          "家族"
+          "グループ",
+          "仲間",
+          "共有",
+          "同期",
+          "子連れ",
+          "赤ちゃん"
         ],
         "keyline": "旅行プランナー",
         "tags": [
           "#旅行プランナー",
-          "#観光",
-          "#休暇",
-          "#温泉",
-          "#ホテル",
+          "#グループ",
+          "#仲間",
+          "#共有",
+          "#同期",
           "#TripBee旅行プランナー"
         ]
       },
       "ko": {
         "keywords": [
-          "휴가",
-          "관광",
-          "준비물",
-          "체크리스트",
-          "가족",
+          "단체",
+          "모임",
+          "동행",
+          "공유",
+          "동기화",
           "아이"
         ],
         "keyline": "여행 플래너",
         "tags": [
           "#여행플래너",
-          "#휴가",
-          "#관광",
-          "#준비물",
-          "#체크리스트",
+          "#단체",
+          "#모임",
+          "#동행",
+          "#공유",
           "#TripBee여행플래너"
         ]
       }
@@ -4470,77 +4470,77 @@
     "tripbeelite": {
       "en": {
         "keywords": [
-          "trip planner",
-          "itinerary",
-          "travel",
-          "packing list",
-          "vacation",
-          "tickets"
+          "agenda",
+          "holiday",
+          "schedule",
+          "timeline",
+          "tickets",
+          "road"
         ],
         "keyline": "Trip Planner",
         "tags": [
           "#TripPlanner",
-          "#Itinerary",
-          "#Travel",
-          "#PackingList",
-          "#Vacation",
+          "#Agenda",
+          "#Holiday",
+          "#Schedule",
+          "#Timeline",
           "#TripBeeLite"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "旅程規劃",
-          "行程表",
-          "自由行",
-          "旅遊",
-          "打包清單",
-          "機票"
+          "旅行",
+          "度假",
+          "出遊",
+          "假期",
+          "假日",
+          "連假"
         ],
         "keyline": "旅程規劃",
         "tags": [
           "#旅程規劃",
-          "#行程表",
-          "#自由行",
-          "#旅遊",
-          "#打包清單",
+          "#旅行",
+          "#度假",
+          "#出遊",
+          "#假期",
           "#TripBeeLite旅程規劃"
         ]
       },
       "ja": {
         "keywords": [
-          "旅行計画",
-          "旅程表",
-          "旅行",
-          "持ち物",
+          "旅先",
           "観光",
-          "チケット"
+          "休暇",
+          "連休",
+          "旅程表",
+          "日帰り"
         ],
-        "keyline": "いまの旅行ひとつに集中",
+        "keyline": "旅程プラン",
         "tags": [
           "#旅程プラン",
-          "#旅行計画",
-          "#旅程表",
-          "#旅行",
-          "#持ち物",
+          "#旅先",
+          "#観光",
+          "#休暇",
+          "#連休",
           "#TripBeeLite旅程プラン"
         ]
       },
       "ko": {
         "keywords": [
-          "여행계획",
           "여행일정",
           "자유여행",
-          "준비물",
-          "티켓",
-          "알림"
+          "해외여행",
+          "국내여행",
+          "휴가",
+          "주말"
         ],
         "keyline": "여행 플래너",
         "tags": [
           "#여행플래너",
-          "#여행계획",
           "#여행일정",
           "#자유여행",
-          "#준비물",
+          "#해외여행",
+          "#국내여행",
           "#TripBeeLite여행플래너"
         ]
       }
@@ -4548,77 +4548,77 @@
     "tripplanet": {
       "en": {
         "keywords": [
-          "road trip games for kids",
-          "travel bingo",
-          "kids travel missions",
-          "flight",
+          "vacation",
           "airplane",
-          "vacation"
+          "flight",
+          "road",
+          "toddler",
+          "preschool"
         ],
         "keyline": "Kids Quest",
         "tags": [
           "#KidsQuest",
-          "#RoadTripGamesForKids",
-          "#TravelBingo",
-          "#KidsTravelMissions",
+          "#Vacation",
+          "#Airplane",
           "#Flight",
+          "#Road",
           "#TripPlanet"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "帶小孩出國",
-          "飛機上 小孩",
-          "親子旅行",
-          "旅行任務",
-          "兒童",
-          "旅行遊戲"
+          "帶孩子",
+          "出遊",
+          "旅遊",
+          "國旅",
+          "家庭旅遊",
+          "長途飛行"
         ],
-        "keyline": "帶小孩出國搭飛機・任務集章獎勵",
+        "keyline": "帶孩子 · 出遊 · 旅遊",
         "tags": [
-          "#帶小孩出國",
-          "#飛機上小孩",
-          "#親子旅行",
-          "#旅行任務",
-          "#兒童",
+          "#帶孩子",
+          "#出遊",
+          "#旅遊",
+          "#國旅",
+          "#家庭旅遊",
           "#TripPlanet親子旅行遊戲"
         ]
       },
       "ja": {
         "keywords": [
-          "子連れ旅行",
-          "旅行 子ども",
-          "機内 子ども",
-          "子連れ 飛行機",
-          "ミッション",
-          "パスポート"
+          "飛行機",
+          "機内",
+          "ドライブ",
+          "車移動",
+          "帰省",
+          "夏休み"
         ],
-        "keyline": "子連れ旅のミッション＆スタンプ",
+        "keyline": "飛行機 · 機内 · ドライブ",
         "tags": [
-          "#子連れ旅行",
-          "#旅行子ども",
-          "#機内子ども",
-          "#子連れ飛行機",
-          "#ミッション",
+          "#飛行機",
+          "#機内",
+          "#ドライブ",
+          "#車移動",
+          "#帰省",
           "#TripPlanet子ども旅行ゲーム"
         ]
       },
       "ko": {
         "keywords": [
-          "아이와 여행",
-          "비행기 아이",
-          "가족 여행",
-          "여행 미션",
-          "여행 게임",
-          "어린이"
+          "아이랑",
+          "해외",
+          "가족",
+          "유아",
+          "기내",
+          "장거리"
         ],
-        "keyline": "비행기·나들이 미션 도장 모으기",
+        "keyline": "아이랑 · 해외 · 가족",
         "tags": [
-          "#아이와여행",
-          "#비행기아이",
-          "#가족여행",
-          "#여행미션",
-          "#여행게임",
+          "#아이랑",
+          "#해외",
+          "#가족",
+          "#유아",
+          "#기내",
           "#TripPlanet아이여행게임"
         ]
       }
@@ -4626,37 +4626,37 @@
     "unblurry": {
       "en": {
         "keywords": [
-          "unblur",
-          "deblur",
-          "sharpen photo",
-          "photo enhancer",
-          "fix blurry photo",
-          "clear photo"
+          "enhancer",
+          "image",
+          "picture",
+          "sharpen",
+          "clear",
+          "quality"
         ],
-        "keyline": "Unblur photos in HD",
+        "keyline": "Unblur & HD",
         "tags": [
           "#UnblurHD",
-          "#Unblur",
-          "#Deblur",
-          "#SharpenPhoto",
-          "#PhotoEnhancer",
+          "#Enhancer",
+          "#Image",
+          "#Picture",
+          "#Sharpen",
           "#UnblurryPro"
         ]
       },
       "zh-Hant": {
         "keywords": [
           "去模糊",
-          "照片變清晰",
+          "模糊變清晰",
           "模糊照片修復",
           "照片銳化",
           "照片增強",
           "高畫質"
         ],
-        "keyline": "模糊變清晰",
+        "keyline": "照片變清晰",
         "tags": [
-          "#模糊變清晰",
-          "#去模糊",
           "#照片變清晰",
+          "#去模糊",
+          "#模糊變清晰",
           "#模糊照片修復",
           "#照片銳化",
           "#Unblurry照片變清晰"
@@ -4666,37 +4666,37 @@
         "keywords": [
           "ぼかし除去",
           "写真鮮明化",
-          "写真をくっきり",
-          "ぼやけ補正",
-          "シャープ補正",
-          "写真高画質化"
+          "画像鮮明化",
+          "写真修復",
+          "画像修復",
+          "写真修正"
         ],
-        "keyline": "ぼやけ補正",
+        "keyline": "写真高画質化",
         "tags": [
-          "#ぼやけ補正",
+          "#写真高画質化",
           "#ぼかし除去",
           "#写真鮮明化",
-          "#写真をくっきり",
-          "#シャープ補正",
+          "#画像鮮明化",
+          "#写真修復",
           "#Unblurry写真高画質化"
         ]
       },
       "ko": {
         "keywords": [
-          "사진 선명하게",
+          "흐림 보정",
           "흐림 제거",
-          "흐린 사진 보정",
-          "사진 샤픈",
-          "사진 보정",
-          "사진 화질 개선"
+          "확대",
+          "노이즈",
+          "얼굴",
+          "어두운"
         ],
-        "keyline": "흐린 사진을 HD로 선명하게",
+        "keyline": "사진 선명하게",
         "tags": [
-          "#흐림보정",
           "#사진선명하게",
+          "#흐림보정",
           "#흐림제거",
-          "#흐린사진보정",
-          "#사진샤픈",
+          "#확대",
+          "#노이즈",
           "#Unblurry사진선명하게"
         ]
       }
@@ -4704,77 +4704,77 @@
     "wifiaid": {
       "en": {
         "keywords": [
-          "internet",
-          "outage",
-          "router",
-          "troubleshoot",
           "latency",
-          "jitter"
+          "jitter",
+          "ipv6",
+          "ipv4",
+          "roaming",
+          "access"
         ],
         "keyline": "Find WiFi Problems",
         "tags": [
           "#FindWiFiProblems",
-          "#Internet",
-          "#Outage",
-          "#Router",
-          "#Troubleshoot",
+          "#Latency",
+          "#Jitter",
+          "#Ipv6",
+          "#Ipv4",
           "#WiFiAid"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "網路故障",
-          "斷線",
-          "路由器",
-          "連線測試",
+          "中繼器",
+          "基地台",
           "延遲",
-          "抖動"
+          "穩定度",
+          "回應時間",
+          "連線品質"
         ],
         "keyline": "找出網路問題·診斷",
         "tags": [
           "#找出網路問題診斷",
-          "#網路故障",
-          "#斷線",
-          "#路由器",
-          "#連線測試",
+          "#中繼器",
+          "#基地台",
+          "#延遲",
+          "#穩定度",
           "#WiFiAid找出網路問題"
         ]
       },
       "ja": {
         "keywords": [
-          "インターネット障害",
-          "ルーター",
-          "接続テスト",
-          "高遅延",
+          "中継機",
+          "アクセスポイント",
+          "遅延",
           "ジッター",
-          "サイト確認"
+          "安定性",
+          "応答時間"
         ],
         "keyline": "ネット不調の原因を特定",
         "tags": [
           "#ネット不調の原因を特定",
-          "#インターネット障害",
-          "#ルーター",
-          "#接続テスト",
-          "#高遅延",
+          "#中継機",
+          "#アクセスポイント",
+          "#遅延",
+          "#ジッター",
           "#WiFiAidネット不調"
         ]
       },
       "ko": {
         "keywords": [
-          "인터넷장애",
-          "공유기",
-          "연결테스트",
-          "지연시간",
+          "라우터",
+          "중계기",
+          "액세스포인트",
           "지터",
-          "사이트확인"
+          "안정성",
+          "IPv6"
         ],
         "keyline": "네트워크 문제 진단",
         "tags": [
           "#네트워크문제진단",
-          "#인터넷장애",
-          "#공유기",
-          "#연결테스트",
-          "#지연시간",
+          "#라우터",
+          "#중계기",
+          "#액세스포인트",
+          "#지터",
           "#WiFiAid네트워크진단"
         ]
       }
@@ -4782,77 +4782,77 @@
     "wifiaidlite": {
       "en": {
         "keywords": [
-          "internet",
+          "ping",
+          "slow",
           "outage",
-          "router",
           "troubleshoot",
-          "latency",
-          "jitter"
+          "connection",
+          "test"
         ],
         "keyline": "Network Check",
         "tags": [
           "#NetworkCheck",
-          "#Internet",
+          "#Ping",
+          "#Slow",
           "#Outage",
-          "#Router",
           "#Troubleshoot",
           "#WiFiAidLite"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "網路故障",
           "斷線",
-          "路由器",
-          "連線測試",
-          "延遲",
-          "抖動"
+          "連不上",
+          "網路慢",
+          "網路卡卡",
+          "不穩",
+          "測試"
         ],
-        "keyline": "網路故障 · 斷線 · 路由器",
+        "keyline": "斷線 · 連不上 · 網路慢",
         "tags": [
-          "#網路故障",
           "#斷線",
-          "#路由器",
-          "#連線測試",
-          "#延遲",
+          "#連不上",
+          "#網路慢",
+          "#網路卡卡",
+          "#不穩",
           "#WiFiAidLite"
         ]
       },
       "ja": {
         "keywords": [
-          "インターネット障害",
-          "ルーター",
-          "接続テスト",
-          "高遅延",
-          "ジッター",
-          "サイト確認"
+          "繋がらない",
+          "インターネット",
+          "接続",
+          "遅い",
+          "重い",
+          "不安定"
         ],
-        "keyline": "インターネット障害 · ルーター · 接続テスト",
+        "keyline": "繋がらない · インターネット · 接続",
         "tags": [
-          "#インターネット障害",
-          "#ルーター",
-          "#接続テスト",
-          "#高遅延",
-          "#ジッター",
+          "#繋がらない",
+          "#インターネット",
+          "#接続",
+          "#遅い",
+          "#重い",
           "#WiFiAidLite"
         ]
       },
       "ko": {
         "keywords": [
-          "인터넷장애",
-          "공유기",
-          "연결테스트",
-          "지연시간",
-          "지터",
-          "사이트확인"
+          "와이파이",
+          "인터넷안됨",
+          "와이파이안됨",
+          "인터넷끊김",
+          "끊김",
+          "느림"
         ],
-        "keyline": "인터넷장애 · 공유기 · 연결테스트",
+        "keyline": "와이파이 · 인터넷안됨 · 와이파이안됨",
         "tags": [
-          "#인터넷장애",
-          "#공유기",
-          "#연결테스트",
-          "#지연시간",
-          "#지터",
+          "#와이파이",
+          "#인터넷안됨",
+          "#와이파이안됨",
+          "#인터넷끊김",
+          "#끊김",
           "#WiFiAidLite"
         ]
       }
@@ -4860,77 +4860,77 @@
     "wordmate": {
       "en": {
         "keywords": [
-          "flashcards",
-          "spanish",
-          "french",
-          "japanese",
-          "korean",
-          "german"
+          "italian",
+          "chinese",
+          "portuguese",
+          "russian",
+          "arabic",
+          "hindi"
         ],
         "keyline": "Learn 44 Languages",
         "tags": [
           "#Learn44Languages",
-          "#Flashcards",
-          "#Spanish",
-          "#French",
-          "#Japanese",
+          "#Italian",
+          "#Chinese",
+          "#Portuguese",
+          "#Russian",
           "#Wordmate"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "學英文",
           "學日文",
           "學韓文",
           "西班牙文",
           "法文",
-          "德文"
+          "德文",
+          "發音"
         ],
         "keyline": "44 種語言背單字",
         "tags": [
           "#44種語言背單字",
-          "#學英文",
           "#學日文",
           "#學韓文",
           "#西班牙文",
+          "#法文",
           "#Wordmate背單字"
         ]
       },
       "ja": {
         "keywords": [
-          "英語",
-          "韓国語",
-          "中国語",
-          "スペイン語",
-          "フランス語",
-          "ドイツ語"
+          "単語帳",
+          "復習",
+          "例文",
+          "発音",
+          "イタリア語",
+          "ロシア語"
         ],
         "keyline": "44言語の単語学習",
         "tags": [
           "#44言語の単語学習",
-          "#英語",
-          "#韓国語",
-          "#中国語",
-          "#スペイン語",
+          "#単語帳",
+          "#復習",
+          "#例文",
+          "#発音",
           "#Wordmate単語学習"
         ]
       },
       "ko": {
         "keywords": [
-          "영어공부",
-          "일본어공부",
-          "중국어공부",
-          "스페인어",
-          "프랑스어",
-          "독일어"
+          "다국어",
+          "독일어",
+          "이탈리아어",
+          "러시아어",
+          "베트남어",
+          "아랍어"
         ],
         "keyline": "44개 언어 단어 학습",
         "tags": [
           "#44개언어단어학습",
-          "#영어공부",
-          "#일본어공부",
-          "#중국어공부",
-          "#스페인어",
+          "#다국어",
+          "#독일어",
+          "#이탈리아어",
+          "#러시아어",
           "#Wordmate단어학습"
         ]
       }
@@ -4938,58 +4938,58 @@
     "wordmatelite": {
       "en": {
         "keywords": [
-          "language",
           "spanish",
           "french",
           "japanese",
-          "flashcard",
-          "phrase"
+          "korean",
+          "german",
+          "language"
         ],
         "keyline": "Vocabulary",
         "tags": [
           "#Vocabulary",
-          "#Language",
           "#Spanish",
           "#French",
           "#Japanese",
+          "#Korean",
           "#WordmateLite"
         ]
       },
       "zh-Hant": {
         "keywords": [
           "背單字",
+          "英文單字",
           "英文",
-          "學日文",
-          "韓文",
-          "西班牙文",
-          "法文"
+          "日文單字",
+          "韓文單字",
+          "離線"
         ],
-        "keyline": "背單字 · 英文 · 學日文",
+        "keyline": "背單字 · 英文單字 · 英文",
         "tags": [
           "#背單字",
+          "#英文單字",
           "#英文",
-          "#學日文",
-          "#韓文",
-          "#西班牙文",
+          "#日文單字",
+          "#韓文單字",
           "#WordmateLite單字"
         ]
       },
       "ja": {
         "keywords": [
           "英単語",
-          "単語帳",
           "ボキャブラリー",
-          "英会話",
           "韓国語",
-          "中国語"
+          "中国語",
+          "スペイン語",
+          "フランス語"
         ],
-        "keyline": "英単語 · 単語帳 · ボキャブラリー",
+        "keyline": "英単語 · ボキャブラリー · 韓国語",
         "tags": [
           "#英単語",
-          "#単語帳",
           "#ボキャブラリー",
-          "#英会話",
           "#韓国語",
+          "#中国語",
+          "#スペイン語",
           "#WordmateLite単語"
         ]
       },
@@ -4997,18 +4997,18 @@
         "keywords": [
           "영단어",
           "단어암기",
-          "어휘력",
           "영어공부",
           "일본어",
-          "중국어"
+          "중국어",
+          "스페인어"
         ],
-        "keyline": "영단어 · 단어암기 · 어휘력",
+        "keyline": "영단어 · 단어암기 · 영어공부",
         "tags": [
           "#영단어",
           "#단어암기",
-          "#어휘력",
           "#영어공부",
           "#일본어",
+          "#중국어",
           "#WordmateLite단어"
         ]
       }
@@ -5016,77 +5016,77 @@
     "zipbox": {
       "en": {
         "keywords": [
-          "extractor",
-          "unarchiver",
           "decompress",
           "unpack",
-          "7zip",
-          "unrar"
+          "unrar",
+          "gzip",
+          "password",
+          "manager"
         ],
-        "keyline": "Unzip RAR, ZIP & 7z",
+        "keyline": "Unarchiver & File Extractor",
         "tags": [
           "#UnzipRARZIP7z",
-          "#Extractor",
-          "#Unarchiver",
           "#Decompress",
           "#Unpack",
+          "#Unrar",
+          "#Gzip",
           "#Zipbox"
         ]
       },
       "zh-Hant": {
         "keywords": [
-          "壓縮檔",
-          "檔案管理員",
-          "中文亂碼",
-          "密碼保護",
-          "分卷",
-          "批次"
+          "檔案管理",
+          "密碼",
+          "分割壓縮",
+          "zip檔",
+          "rar檔",
+          "7z檔"
         ],
-        "keyline": "壓縮檔 · 檔案管理員 · 中文亂碼",
+        "keyline": "檔案管理 · 密碼 · 分割壓縮",
         "tags": [
-          "#壓縮檔",
-          "#檔案管理員",
-          "#中文亂碼",
-          "#密碼保護",
-          "#分卷",
+          "#檔案管理",
+          "#密碼",
+          "#分割壓縮",
+          "#zip檔",
+          "#rar檔",
           "#Zipbox解壓縮"
         ]
       },
       "ja": {
         "keywords": [
-          "圧縮",
-          "圧縮解凍",
-          "展開",
-          "アーカイブ",
-          "パスワード",
-          "暗号化"
+          "パスワード付き",
+          "暗号化",
+          "分割",
+          "文字化け",
+          "一括",
+          "展開"
         ],
-        "keyline": "広告なしで圧縮ファイルをすぐ開く",
+        "keyline": "ZIP RAR 7z対応",
         "tags": [
           "#ZIPRAR7z対応",
-          "#圧縮",
-          "#圧縮解凍",
-          "#展開",
-          "#アーカイブ",
+          "#パスワード付き",
+          "#暗号化",
+          "#分割",
+          "#文字化け",
           "#Zipbox解凍"
         ]
       },
       "ko": {
         "keywords": [
-          "압축파일",
-          "압축해제",
           "비밀번호",
-          "암호화",
+          "암호",
           "분할",
-          "일괄"
+          "일괄",
+          "파일관리",
+          "탐색기"
         ],
-        "keyline": "압축파일 · 압축해제 · 비밀번호",
+        "keyline": "압축 해제·압축파일 열기",
         "tags": [
-          "#압축파일",
-          "#압축해제",
           "#비밀번호",
-          "#암호화",
+          "#암호",
           "#분할",
+          "#일괄",
+          "#파일관리",
           "#Zipbox압축풀기"
         ]
       }
@@ -5277,7 +5277,7 @@
       "date": "2026-10-19",
       "slot": 1,
       "channel": "threads",
-      "clip": "snapport/zh-Hant"
+      "clip": "lumibopomofo/zh-Hant"
     },
     {
       "date": "2026-10-19",
@@ -5303,7 +5303,7 @@
       "date": "2026-10-20",
       "slot": 1,
       "channel": "threads",
-      "clip": "ledmovingtext/zh-Hant"
+      "clip": "snapport/zh-Hant"
     },
     {
       "date": "2026-10-20",
@@ -5370,7 +5370,7 @@
       "date": "2026-10-22",
       "slot": 1,
       "channel": "threads",
-      "clip": "battai/zh-Hant"
+      "clip": "ledmovingtext/zh-Hant"
     },
     {
       "date": "2026-10-22",
@@ -5395,7 +5395,7 @@
       "date": "2026-10-23",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumibopomofo/en"
+      "clip": "battai/zh-Hant"
     },
     {
       "date": "2026-10-23",
@@ -5426,7 +5426,7 @@
       "date": "2026-10-24",
       "slot": 1,
       "channel": "threads",
-      "clip": "hourstaglite/en"
+      "clip": "lumibopomofo/en"
     },
     {
       "date": "2026-10-24",
@@ -5457,7 +5457,7 @@
       "date": "2026-10-25",
       "slot": 1,
       "channel": "threads",
-      "clip": "claudeusagemini/en"
+      "clip": "hourstaglite/en"
     },
     {
       "date": "2026-10-26",
@@ -5475,7 +5475,7 @@
       "date": "2026-10-26",
       "slot": 1,
       "channel": "threads",
-      "clip": "snapport/en"
+      "clip": "claudeusagemini/en"
     },
     {
       "date": "2026-10-26",
@@ -5497,21 +5497,27 @@
     },
     {
       "date": "2026-10-27",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "snapport/en"
+    },
+    {
+      "date": "2026-10-28",
       "slot": 1,
       "channel": "threads",
       "clip": "ledmovingtext/en"
     },
     {
       "date": "2026-10-28",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "battai/en"
-    },
-    {
-      "date": "2026-10-28",
       "slot": 9,
       "channel": "instagram",
       "clip": "claudeusagemini/de"
+    },
+    {
+      "date": "2026-10-29",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "battai/en"
     },
     {
       "date": "2026-10-30",

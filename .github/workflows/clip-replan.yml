@@ -17,6 +17,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read # growth_records.py: is geo-daily running?
   contents: write
 
 concurrency:
@@ -29,6 +30,10 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - name: Read records still waiting on the growth-records-pending branch
+        # geo-daily holds bot record pushes off main while it runs (growth_records.py);
+        # dedupe and the promotion page read them from here until they are merged.
+        run: python3 .github/scripts/growth_records.py overlay
       - uses: actions/checkout@v4
         with:
           repository: alice51849/00_GrowthEngine
@@ -59,9 +64,11 @@ jobs:
         with:
           python-version: "3.x"
       - name: Re-plan and refresh the promotion page
+        env:
+          GITHUB_TOKEN: ${{ github.token }} # growth_records.py checks whether geo-daily is running
         run: |
           for i in 1 2 3; do
-            git fetch -q origin main && git reset -q --hard origin/main
+            target="$(python3 .github/scripts/growth_records.py prepare)"
             python3 .engine/shorts/scripts/schedule_posts.py --start 2026-10-13 \
               --ig-start 2026-10-15 --threads-start 2026-10-15 --out .github/growth/clips.json
             python3 .github/scripts/youtube_links.py --posted .engine/shorts/youtube-posted.json
@@ -75,7 +82,7 @@ jobs:
             git diff --cached --quiet && exit 0
             git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "鉤子片日程每日重排：小國衝榜、檔期、外宣頁 [skip ci]"
-            if git push -q origin HEAD:main; then exit 0; fi
+            if python3 .github/scripts/growth_records.py push "$target"; then exit 0; fi
             sleep $((i * 5))
           done
           exit 1

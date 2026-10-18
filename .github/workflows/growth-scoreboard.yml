@@ -19,6 +19,7 @@ on:
         default: "450"
 
 permissions:
+  actions: read # growth_records.py: is geo-daily running?
   contents: write # sprint-targets.json for the hook-clip scheduler
   issues: write
 
@@ -32,6 +33,10 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
+      - name: Read records still waiting on the growth-records-pending branch
+        # geo-daily holds bot record pushes off main while it runs (growth_records.py);
+        # dedupe and the promotion page read them from here until they are merged.
+        run: python3 .github/scripts/growth_records.py overlay
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -63,16 +68,18 @@ jobs:
       - name: Publish sprint targets for the hook-clip scheduler
         if: success() && hashFiles('.github/growth/sprint-targets.json') != ''
         continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }} # growth_records.py checks whether geo-daily is running
         run: |
           cp .github/growth/sprint-targets.json "$RUNNER_TEMP/sprint-targets.json"
           for i in 1 2 3; do
-            git fetch -q origin main && git reset -q --hard origin/main
+            target="$(python3 .github/scripts/growth_records.py prepare)"
             cp "$RUNNER_TEMP/sprint-targets.json" .github/growth/sprint-targets.json
             git add .github/growth/sprint-targets.json
             git diff --cached --quiet && exit 0
             git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "成績單：小國衝榜目標更新 [skip ci]"
-            if git push -q origin HEAD:main; then exit 0; fi
+            if python3 .github/scripts/growth_records.py push "$target"; then exit 0; fi
             sleep $((i * 5))
           done
           exit 1

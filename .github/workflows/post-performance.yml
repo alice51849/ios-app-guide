@@ -24,9 +24,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
+      actions: read # growth_records.py: is geo-daily running?
       contents: write # performance.json and the promotion page
     steps:
       - uses: actions/checkout@v4
+      - name: Read records still waiting on the growth-records-pending branch
+        # geo-daily holds bot record pushes off main while it runs (growth_records.py);
+        # dedupe and the promotion page read them from here until they are merged.
+        run: python3 .github/scripts/growth_records.py overlay
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -40,11 +45,13 @@ jobs:
           PERF_MIN_MEDIAN_VIEWS: ${{ vars.PERF_MIN_MEDIAN_VIEWS }}
         run: python3 .github/scripts/post_performance.py
       - name: Save the ranking and refresh the promotion page
+        env:
+          GITHUB_TOKEN: ${{ github.token }} # growth_records.py checks whether geo-daily is running
         run: |
           [ -f .github/growth/performance.json ] || { echo "no insights yet"; exit 0; }
           cp .github/growth/performance.json "$RUNNER_TEMP/performance.json"
           for i in 1 2 3; do
-            git fetch -q origin main && git reset -q --hard origin/main
+            target="$(python3 .github/scripts/growth_records.py prepare)"
             cp "$RUNNER_TEMP/performance.json" .github/growth/performance.json
             python3 .github/scripts/clip_progress.py
             python3 .github/scripts/test_app_improvements.py
@@ -52,7 +59,7 @@ jobs:
             git diff --cached --quiet && exit 0
             git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "貼文成效排行每日更新 [skip ci]"
-            if git push -q origin HEAD:main; then exit 0; fi
+            if python3 .github/scripts/growth_records.py push "$target"; then exit 0; fi
             sleep $((i * 5))
           done
           echo "::warning::could not save performance.json"; exit 1

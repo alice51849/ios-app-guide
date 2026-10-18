@@ -1291,6 +1291,193 @@ class TruthfulSitemapLastmodTests(unittest.TestCase):
                 high_intent_sitemap.read_text(encoding="utf-8"),
             )
 
+    def _offer_catalog_pages(
+        self,
+        pages: Path,
+        catalog_date: object,
+        index_date: object = "2026-07-17",
+    ) -> tuple[Path, Path, Path]:
+        import portfolio_offer_catalog
+
+        self.assertEqual(
+            portfolio_offer_catalog.API_RELATIVE.as_posix(),
+            gen_sitemap_lastmod.OFFER_CATALOG_DIRECTORY,
+        )
+        self.assertEqual(
+            portfolio_offer_catalog.INDEX_RELATIVE.as_posix(),
+            gen_sitemap_lastmod.OFFER_CATALOG_INDEX,
+        )
+        directory = pages / gen_sitemap_lastmod.OFFER_CATALOG_DIRECTORY
+        directory.mkdir(parents=True)
+        catalog = directory / "en-US.jsonld"
+        catalog.write_text(
+            json.dumps(
+                {"@type": "OfferCatalog", "dateModified": catalog_date}
+            ),
+            encoding="utf-8",
+        )
+        index = directory / "index.json"
+        index.write_text(
+            json.dumps({"schema_version": 1, "date_modified": index_date}),
+            encoding="utf-8",
+        )
+        (pages / "guides").mkdir()
+        (pages / "guides/app.html").write_text(
+            "<h1>ordinary page</h1>", encoding="utf-8"
+        )
+        sitemap = pages / "sitemap_app_offers.xml"
+        sitemap.write_text(
+            urlset(
+                f"<loc>{SITE}/{gen_sitemap_lastmod.OFFER_CATALOG_INDEX}</loc>"
+                "<lastmod>2026-07-01</lastmod>",
+                f"<loc>{SITE}/{gen_sitemap_lastmod.OFFER_CATALOG_DIRECTORY}"
+                "/en-US.jsonld</loc><lastmod>2026-07-01</lastmod>",
+                f"<loc>{SITE}/guides/app.html</loc>",
+            ),
+            encoding="utf-8",
+        )
+        return catalog, index, sitemap
+
+    def test_offer_catalog_lastmod_follows_declared_date_modified(
+        self,
+    ) -> None:
+        """geo-daily #1255/#1257/#1258: portfolio_offer_catalog rewrote 49
+        catalogs with the content-stable dateModified 2026-10-17, but the
+        rewritten files were dirty against a stale state, so lastmod became
+        the 2026-10-18 build date and the published catalog test failed."""
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            catalog, index, sitemap = self._offer_catalog_pages(
+                pages,
+                "2026-07-17",
+            )
+            catalog_url = f"{SITE}/{catalog.relative_to(pages).as_posix()}"
+            index_url = f"{SITE}/{index.relative_to(pages).as_posix()}"
+            catalog_relative = catalog.relative_to(pages).as_posix()
+            index_relative = index.relative_to(pages).as_posix()
+            state_path = pages / "state.json"
+            state_path.write_text(
+                json.dumps(
+                    {
+                        "version": 1,
+                        "urls": {
+                            catalog_url: {
+                                "path": catalog_relative,
+                                "sha256": "0" * 64,
+                                "lastmod": "2026-07-15",
+                            },
+                        },
+                        "sitemaps": {},
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            def observed() -> dict[str, str | None]:
+                namespace = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+                return {
+                    node.findtext(f"{namespace}loc"): node.findtext(
+                        f"{namespace}lastmod"
+                    )
+                    for node in ET.parse(sitemap).getroot().findall(
+                        f"{namespace}url"
+                    )
+                }
+
+            gen_sitemap_lastmod.generate(
+                pages,
+                state_path=state_path,
+                today="2026-07-18",
+                # A clean index committed on a later day than it declares.
+                history_dates={index_relative: "2026-07-18"},
+                dirty_paths={catalog_relative, "guides/app.html"},
+            )
+            self.assertEqual(
+                {
+                    index_url: "2026-07-17",
+                    catalog_url: "2026-07-17",
+                    f"{SITE}/guides/app.html": "2026-07-18",
+                },
+                observed(),
+            )
+            state = json.loads(state_path.read_text(encoding="utf-8"))
+            self.assertEqual(
+                "2026-07-17",
+                state["urls"][catalog_url]["lastmod"],
+            )
+
+            # A stored record for the same bytes cannot override the file.
+            state["urls"][catalog_url]["lastmod"] = "2026-07-15"
+            state_path.write_text(json.dumps(state), encoding="utf-8")
+            gen_sitemap_lastmod.generate(
+                pages,
+                state_path=state_path,
+                today="2026-07-20",
+                history_dates={},
+                dirty_paths=set(),
+            )
+            self.assertEqual("2026-07-17", observed()[catalog_url])
+
+            # A new declared date is followed as soon as the file changes.
+            catalog.write_text(
+                json.dumps(
+                    {"@type": "OfferCatalog", "dateModified": "2026-07-19"}
+                ),
+                encoding="utf-8",
+            )
+            gen_sitemap_lastmod.generate(
+                pages,
+                state_path=state_path,
+                today="2026-07-20",
+                history_dates={},
+                dirty_paths={catalog_relative},
+            )
+            self.assertEqual("2026-07-19", observed()[catalog_url])
+
+    def test_offer_catalog_without_valid_declared_date_fails_closed(
+        self,
+    ) -> None:
+        for catalog_date, message in (
+            (None, "Offer catalog has no valid dateModified"),
+            ("2026-13-01", "Offer catalog has no valid dateModified"),
+            ("2099-01-01", "Invalid derived lastmod"),
+        ):
+            with self.subTest(catalog_date=catalog_date):
+                with tempfile.TemporaryDirectory() as directory:
+                    pages = Path(directory)
+                    catalog, _index, _sitemap = self._offer_catalog_pages(
+                        pages,
+                        catalog_date,
+                    )
+                    with self.assertRaisesRegex(ValueError, message):
+                        gen_sitemap_lastmod.generate(
+                            pages,
+                            state_path=pages / "state.json",
+                            today="2026-07-18",
+                            history_dates={},
+                            dirty_paths={
+                                catalog.relative_to(pages).as_posix(),
+                                "guides/app.html",
+                            },
+                        )
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            _catalog, index, _sitemap = self._offer_catalog_pages(
+                pages,
+                "2026-07-17",
+            )
+            index.write_text("{not json", encoding="utf-8")
+            with self.assertRaisesRegex(
+                ValueError, "Invalid offer catalog document"
+            ):
+                gen_sitemap_lastmod.generate(
+                    pages,
+                    state_path=pages / "state.json",
+                    today="2026-07-18",
+                    history_dates={},
+                    dirty_paths={"guides/app.html"},
+                )
+
 
 if __name__ == "__main__":
     unittest.main()

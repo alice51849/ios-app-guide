@@ -40,6 +40,13 @@ PUBLISHER_VISUAL_SOURCE_DATASET = Path(
 )
 PUBLISHER_VISUAL_LOCALE_COUNT = 50
 PUBLISHER_VISUAL_GALLERY_COUNT = PUBLISHER_VISUAL_LOCALE_COUNT + 1
+# portfolio_offer_catalog.py owns these documents' dates: each catalog keeps
+# a content-stable dateModified (index.json: date_modified) that can be older
+# than the run that rewrites the file, and renders sitemap_app_offers.xml from
+# exactly those values. A Git/dirty-derived date here diverged from them
+# (geo-daily #1255/#1257/#1258: lastmod 2026-10-18 vs dateModified 2026-10-17).
+OFFER_CATALOG_DIRECTORY = "api/v1/ios-app-offers"
+OFFER_CATALOG_INDEX = f"{OFFER_CATALOG_DIRECTORY}/index.json"
 URL_BLOCK_RE = re.compile(
     r"(?P<open><url(?:\s[^>]*)?>)(?P<body>.*?)(?P<close></url>)",
     flags=re.DOTALL,
@@ -635,6 +642,34 @@ def _validate_publisher_visual_sitemap(
             )
 
 
+def _offer_catalog_date_field(relative: str) -> str | None:
+    if relative == OFFER_CATALOG_INDEX:
+        return "date_modified"
+    if (
+        relative.startswith(f"{OFFER_CATALOG_DIRECTORY}/")
+        and relative.endswith(".jsonld")
+        and "/" not in relative[len(OFFER_CATALOG_DIRECTORY) + 1 :]
+    ):
+        return "dateModified"
+    return None
+
+
+def _declared_offer_catalog_date(relative: str, target: Path) -> str | None:
+    field = _offer_catalog_date_field(relative)
+    if field is None:
+        return None
+    try:
+        payload = json.loads(target.read_text(encoding="utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError) as error:
+        raise ValueError(
+            f"Invalid offer catalog document: {relative}: {error}"
+        ) from error
+    value = payload.get(field) if isinstance(payload, dict) else None
+    if not _valid_date(value):
+        raise ValueError(f"Offer catalog has no valid {field}: {relative}")
+    return str(value)
+
+
 def _record_for(
     url: str,
     target: Path,
@@ -653,7 +688,10 @@ def _record_for(
             f"Sitemap state path changed unexpectedly for {url}: "
             f"{previous.get('path')} -> {relative}"
         )
-    if previous is not None and previous.get("sha256") == digest:
+    declared = _declared_offer_catalog_date(relative, target)
+    if declared is not None:
+        lastmod = declared
+    elif previous is not None and previous.get("sha256") == digest:
         lastmod = str(previous["lastmod"])
     elif relative in dirty_paths:
         lastmod = content_date
@@ -851,6 +889,7 @@ def generate(
             for url, target in targets.items()
             for path in (_relative_path(target, pages),)
             if path not in dirty_paths
+            and _offer_catalog_date_field(path) is None
             and (
                 url_previous[url] is None
                 or url_previous[url]["sha256"] != target_digests[path]

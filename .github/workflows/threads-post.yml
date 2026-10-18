@@ -17,7 +17,10 @@ name: Threads posts
 # filled with workflow_dispatch mode=post slot=<1|3|13> [date=YYYY-MM-DD]
 # (clip-backup.yml does that through threads_backfill.py; the Mac can too).
 # The slot gate stops a second run of the same slot, and every post path
-# checks the account cap (threads_series.py room) first.
+# checks the account cap (threads_series.py room) first. Right before each
+# top-level publish, threads_cap.py also reads Threads' own 24-hour count of
+# the account's top-level posts (threads-autopilot's included): 3 or more is
+# a skip (green, the ⏸ line); a count that cannot be read posts nothing.
 # run-name records the slot so social_slot_gate.py can read it back.
 run-name: >-
   ${{ github.event_name == 'workflow_dispatch'
@@ -111,6 +114,7 @@ jobs:
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
         run: |
+          python3 .github/scripts/test_threads_cap.py -q
           python3 .github/scripts/threads_series.py room && rc=0 || rc=$?
           if [ "$rc" = 0 ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; exit 0; fi
           if [ "$rc" = 1 ]; then echo "ok=false" >> "$GITHUB_OUTPUT"; echo "Threads: account at its daily cap; slot skipped"; exit 0; fi

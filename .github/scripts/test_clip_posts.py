@@ -15,6 +15,16 @@ import clip_posts as C  # noqa: E402
 import post_qa as Q  # noqa: E402
 import clip_progress as P  # noqa: E402
 import review_links as R  # noqa: E402
+import threads_cap  # noqa: E402
+
+
+def setUpModule():
+    # threads_cap.py reads the account's 24-hour post count right before each top-level Threads post. These tests
+    # are about other things, so the account has room here; test_threads_cap.py covers the cap itself. Entered
+    # directly rather than with start(), so a test's mock.patch.stopall cannot undo it for the tests after it.
+    room = mock.patch.object(threads_cap, "quota_usage", return_value=0)
+    room.__enter__()
+    unittest.addModuleCleanup(room.__exit__, None, None, None)
 
 
 def clip(app, locale):

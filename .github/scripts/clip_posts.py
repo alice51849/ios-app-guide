@@ -52,6 +52,7 @@ import ig_bio as IGB
 import post_qa
 import review_links
 import search_caption as SC
+import threads_cap
 import threads_series
 import volume_ramp
 from social_post_common import SnapshotMissing, play_store_url
@@ -358,7 +359,11 @@ def own_link_reply_exists(token, media, store, play):
 
 
 def post_threads(clip, variant=None, wait=5, tries=60):
-    """Video post with the hook caption; store links go in the first reply."""
+    """Video post with the hook caption; store links go in the first reply.
+
+    Right before the video is published, the account cap (threads_cap.py: 3 top-level posts in 24 hours, every
+    pipeline on the account included) is read: full -> None (a skip, the step stays green); count unknown ->
+    threads_cap.QuotaUnknown (nothing posted, main() ends the step red so the slot is run again)."""
     token = os.environ.get("THREADS_TOKEN", "").strip()
     user = os.environ.get("THREADS_USER_ID", "").strip()
     if not token or not user:
@@ -380,6 +385,11 @@ def post_threads(clip, variant=None, wait=5, tries=60):
         time.sleep(wait)
     else:
         raise RuntimeError("Threads processing timed out")
+    status = threads_cap.account_status(token, user, label=f"clip {clip.get('app')}/{clip.get('locale')} threads")
+    if status == threads_cap.FULL:
+        return None
+    if status != threads_cap.ROOM:
+        raise threads_cap.QuotaUnknown("the account's 24-hour post count could not be read")
     media = _post(f"{THREADS}/{user}/threads_publish", {"creation_id": container, "access_token": token})["id"]
     store, play = download_urls(clip, "threads")
     links = [f"{t['button']}: {store}"]
@@ -500,6 +510,10 @@ def main():
         return 0
     try:
         posted = {"telegram": post_telegram, "instagram": post_instagram, "threads": post_threads}[args.channel](clip, variant)
+    except threads_cap.QuotaUnknown:
+        # Nothing was posted (the ::warning:: says why). Red, so threads_backfill.py / the watchdog run the slot
+        # again later the same Taiwan day, through the same cap check.
+        return 1
     except Exception as exc:
         # A "slow down" answer drops the channel one ramp stage (committed by the workflow) and opens an issue;
         # any failure still fails the step so it shows red.

@@ -711,6 +711,8 @@ def publish(platform, messages):
         raise CoverageError("Missing THREADS_TOKEN / THREADS_USER_ID")
     for message in messages:
         post_id = threads_post.publish_text(token, user_id, message.text)
+        if not post_id:  # the account cap held it (threads_cap.py said why): the later batches wait too
+            return
         print("threads portfolio posted, id:", post_id)
 
 

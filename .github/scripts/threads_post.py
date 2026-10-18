@@ -11,6 +11,7 @@ import urllib.request
 from typing import NamedTuple, Optional
 
 import download_links as DL
+import threads_cap
 from social_post_common import (
     AMERICAS_LOCALES,
     ASIA_LOCALES,
@@ -151,6 +152,10 @@ def pick_postable(pool, now=None):
 
 
 def publish_text(token, user_id, text, sleeper=time.sleep):
+    """A top-level text post (portfolio_daily.py). The post id, or None when the account cap held it
+    (threads_cap.py printed why: the ⏸ line when full, ::warning:: when the count could not be read)."""
+    if threads_cap.account_status(token, user_id, label="Threads text post") != threads_cap.ROOM:
+        return None
     return publish_post(token, user_id, text, sleeper=sleeper)
 
 
@@ -338,6 +343,12 @@ def publish_linked(token, user_id, text, links_text, app_store_url, play_url=Non
     nothing is posted on a guess (the lookups are tri-state, see LookupFailed). Errors of the main post
     propagate as before; a link reply that still fails after its retries comes back as link_ok=False, the
     post already recorded as up, so the caller ends the step red without re-posting.
+
+    A new top-level post first passes the account cap (threads_cap.py: at most 3 top-level posts in 24 hours,
+    threads-autopilot's included). Full: nothing is posted and link_ok stays True (a skip is not a failure, the
+    step stays green). Count unknown: nothing is posted and link_ok is False, so the step ends red and the
+    watchdog / threads_backfill.py run the slot again later the same Taiwan day. Adding only the link reply
+    under a post that is already up is a reply, never held by the cap.
     """
     problems = DL.threads_reply_problems(links_text, app_store_url, play_url)
     if problems:
@@ -362,6 +373,9 @@ def publish_linked(token, user_id, text, links_text, app_store_url, play_url=Non
             return ThreadsResult(post_id, True)
         print(f"{label}: this post is already up (id {post_id}); only its link reply is added")
     else:
+        status = threads_cap.account_status(token, user_id, label=label)
+        if status != threads_cap.ROOM:
+            return ThreadsResult(None, status == threads_cap.FULL)
         post_id = publish_post(token, user_id, text, image_url=image_url, sleeper=sleeper)
     reply_id = publish_link_reply(token, user_id, post_id, links_text, app_store_url, play_url,
                                   sleeper=sleeper, label=label, find_reply=find_reply)

@@ -45,6 +45,7 @@ sys.path.insert(0, str(HERE))
 
 import countdown_cards as cd  # noqa: E402
 import download_links as DL  # noqa: E402
+import threads_cap  # noqa: E402
 from social_post_common import play_store_url  # noqa: E402
 
 GROWTH = HERE.parent / "growth"
@@ -63,7 +64,7 @@ TYPE_APP = {"zhuyin": "lumibopomofo", "photo": "snapportlite", "letter": "lumile
             "bedtime": "lumimission", "ledger": "moneytag", "chore": "mochidonestamp",
             "checklist": "mochi"}  # word: Aim990 / Wordmate
 EPOCH = dt.date(2026, 10, 15)  # day 0 of the rotation: first word, ㄅ, first photo size
-THREADS_CAP = 3  # posts a day on the Threads account, everything included
+THREADS_CAP = threads_cap.ACCOUNT_DAILY_CAP  # posts a day on the Threads account, everything included
 
 APPS = {
     "aim990": {"id": "6784974530", "name": "Aim990", "colors": ("#0b1d3a", "#1e4e8c", "#ffd166"),

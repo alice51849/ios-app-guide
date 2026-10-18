@@ -39,6 +39,7 @@ sys.path.insert(0, str(HERE))
 
 from social_post_common import play_store_url  # noqa: E402
 import download_links as DL  # noqa: E402
+import threads_cap  # noqa: E402
 
 LINK_FAILURES = []   # Threads posts whose link reply did not go out (::error:: now, link_backfill.py adds it later)
 # A new Threads container is not ready to publish at once (publishing answers "(#24) The requested resource does
@@ -358,6 +359,10 @@ def threads_image(url, text, links, label="countdown"):
     user = _get(f"{api}/me?fields=id&access_token={token}").get("id") or user  # secret may be stale
     c = _post(f"{api}/{user}/threads", {"media_type": "IMAGE", "image_url": url, "text": text, "access_token": token})["id"]
     time.sleep(30)
+    # Right before publishing: Threads' own 24-hour count of top-level posts (threads_cap.py, every pipeline on
+    # the account). Full is a skip; an unknown count posts nothing either (::warning::). The other channels go on.
+    if threads_cap.account_status(token, user, label=f"{label} threads") != threads_cap.ROOM:
+        return None
     media = _post(f"{api}/{user}/threads_publish", {"creation_id": c, "access_token": token})["id"]
     reply_ok, r = False, None
     for attempt in range(3):  # the image is up: the download link reply is retried, never silently dropped

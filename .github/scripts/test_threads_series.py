@@ -14,6 +14,17 @@ from unittest import mock
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import download_links as DL  # noqa: E402
 import threads_series as T  # noqa: E402
+import threads_cap  # noqa: E402
+
+
+def setUpModule():
+    # threads_cap.py reads the account's 24-hour post count right before each top-level Threads post. These tests
+    # are about other things, so the account has room here; test_threads_cap.py covers the cap itself. Entered
+    # directly rather than with start(), so a test's mock.patch.stopall cannot undo it for the tests after it.
+    room = mock.patch.object(threads_cap, "quota_usage", return_value=0)
+    room.__enter__()
+    unittest.addModuleCleanup(room.__exit__, None, None, None)
+
 
 WORKFLOWS = Path(__file__).resolve().parent.parent / "workflows"
 DAY = dt.date(2026, 10, 20)

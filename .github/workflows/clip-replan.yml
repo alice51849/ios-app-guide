@@ -48,7 +48,8 @@ jobs:
           # data/rank_watch/history.csv (keyword ranks) rebuilds search-terms.json: the caption's App Store search
           # term is the one each app is closest to the top 3 on per storefront (build_search_terms.py).
           # reports/coverage_floor_latest.json: the apps below the weekly promotion floor go first after
-          # UsageNow and Mochi (schedule_posts.floor_apps).
+          # UsageNow and Mochi (schedule_posts.floor_apps); ops/company/boost_list.json: the high-conversion apps
+          # go right after Mochi, before the floor apps (schedule_posts.boost_apps).
           sparse-checkout: |
             shorts/
             lib/outbound_links.py
@@ -58,6 +59,7 @@ jobs:
             reports/channel_funnel.json
             reports/decisions/latest.json
             reports/coverage_floor_latest.json
+            ops/company/boost_list.json
             data/rank_watch/history.csv
             data/*_full.json
             aso/keyword_baseline_20260923.json

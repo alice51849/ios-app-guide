@@ -1,11 +1,27 @@
 {
- "updated_at": "2026-10-18T07:25:01Z",
+ "updated_at": "2026-10-19T08:14:16Z",
  "targets": [
   {
    "app_id": "6792850916",
    "country": "cz",
    "locale": "cs",
    "keyword": "anonymizace pdf",
+   "rank": 2,
+   "leader_ratings": 0
+  },
+  {
+   "app_id": "6790418321",
+   "country": "cz",
+   "locale": "cs",
+   "keyword": "každodenní fráze",
+   "rank": 2,
+   "leader_ratings": 0
+  },
+  {
+   "app_id": "6779750237",
+   "country": "cz",
+   "locale": "cs",
+   "keyword": "motivační systém",
    "rank": 2,
    "leader_ratings": 0
   },
@@ -18,26 +34,10 @@
    "leader_ratings": 0
   },
   {
-   "app_id": "6782275018",
-   "country": "fi",
-   "locale": "fi",
-   "keyword": "terävöitä kuva",
-   "rank": 2,
-   "leader_ratings": 0
-  },
-  {
    "app_id": "6779750237",
    "country": "gr",
    "locale": "el",
    "keyword": "πίνακας ανταμοιβής",
-   "rank": 2,
-   "leader_ratings": 0
-  },
-  {
-   "app_id": "6793414462",
-   "country": "id",
-   "locale": "id",
-   "keyword": "wifi lemot",
    "rank": 2,
    "leader_ratings": 0
   },
@@ -122,14 +122,6 @@
    "leader_ratings": 2
   },
   {
-   "app_id": "6793414462",
-   "country": "id",
-   "locale": "id",
-   "keyword": "internet lemot",
-   "rank": 2,
-   "leader_ratings": 2
-  },
-  {
    "app_id": "6790800323",
    "country": "tw",
    "locale": "zh-Hant",
@@ -162,6 +154,14 @@
    "leader_ratings": 0
   },
   {
+   "app_id": "6794039979",
+   "country": "cz",
+   "locale": "cs",
+   "keyword": "impulzivní nákup",
+   "rank": 3,
+   "leader_ratings": 0
+  },
+  {
    "app_id": "6806639602",
    "country": "de",
    "locale": "de-DE",
@@ -178,28 +178,28 @@
    "leader_ratings": 0
   },
   {
+   "app_id": "6782275018",
+   "country": "fi",
+   "locale": "fi",
+   "keyword": "terävöitä kuva",
+   "rank": 3,
+   "leader_ratings": 0
+  },
+  {
+   "app_id": "6793414462",
+   "country": "id",
+   "locale": "id",
+   "keyword": "wifi lemot",
+   "rank": 3,
+   "leader_ratings": 0
+  },
+  {
    "app_id": "6793414462",
    "country": "kr",
    "locale": "ko",
    "keyword": "와이파이 느림",
    "rank": 3,
    "leader_ratings": 0
-  },
-  {
-   "app_id": "6779750237",
-   "country": "sa",
-   "locale": "ar-SA",
-   "keyword": "جدول المكافآت",
-   "rank": 3,
-   "leader_ratings": 0
-  },
-  {
-   "app_id": "6791299610",
-   "country": "my",
-   "locale": "ms",
-   "keyword": "pelan perjalanan",
-   "rank": 2,
-   "leader_ratings": 101
   }
  ]
 }

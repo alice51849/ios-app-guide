@@ -47,10 +47,6 @@ jobs:
       ASC_GROWTH_SIGNALS_B64: ${{ secrets.ASC_GROWTH_SIGNALS_B64 }}
     steps:
       - uses: actions/checkout@v4
-      - name: Read records still waiting on the growth-records-pending branch
-        # geo-daily holds bot record pushes off main while it runs (growth_records.py);
-        # dedupe and the promotion page read them from here until they are merged.
-        run: python3 .github/scripts/growth_records.py overlay
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -79,6 +75,13 @@ jobs:
           TELEGRAM_SLOT: ${{ steps.slot.outputs.slot }}
           TELEGRAM_SCHEDULE: ${{ github.event.schedule || inputs.cron }}
         run: python3 .github/scripts/telegram_post.py
+      - name: Read records still waiting on the growth-records-pending branch
+        # geo-daily holds bot record pushes off main while it runs (growth_records.py);
+        # the clip dedupe and the promotion page read them from here until they are merged.
+        # Runs after telegram_post.py: that publisher only posts from a clean checkout of
+        # the scheduled commit (HEAD == GITHUB_SHA), which the overlay's local commit breaks.
+        if: steps.slot.outputs.should_post == 'true'
+        run: python3 .github/scripts/growth_records.py overlay
       - name: Post today's 7-second hook clip (video + App Store button)
         # Asia morning (zh-Hant / ja / ko), Europe (de / fr / es / en) and Americas (en)
         # slots, as planned in clips.json by schedule_posts.py; a clip problem never

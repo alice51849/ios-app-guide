@@ -262,5 +262,16 @@ class MergeJsonTest(unittest.TestCase):
         self.assertEqual(b"T\n", gr.merge_file("x.md", b"B\n", b"O\n", b"T\n"))
 
 
+class WorkflowOrderTest(unittest.TestCase):
+    def test_overlay_never_runs_before_a_source_pinned_publisher(self):
+        # telegram_post.py refuses to post unless HEAD is the scheduled commit and the
+        # tree is clean; the overlay's local commit must come after it (2026-10-19 run
+        # 39207114294 was blocked when the overlay ran first).
+        wf = (Path(__file__).resolve().parents[1] / "workflows" / "telegram-daily.yml").read_text()
+        overlay = wf.index("growth_records.py overlay")
+        self.assertLess(wf.index("run: python3 .github/scripts/telegram_post.py\n"), overlay)
+        self.assertLess(overlay, wf.index("clip_posts.py telegram"))
+
+
 if __name__ == "__main__":
     unittest.main()

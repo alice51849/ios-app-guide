@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-10-19",
- "generated_at": "2026-10-19T07:06:34Z",
+ "generated_at": "2026-10-19T16:02:40Z",
  "items": {
   "bluesky": [
    {
@@ -167,6 +167,48 @@
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-10-19",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261019.jpg",
+    "caption": "2027학년도 수능 D-31\n남은 날을 계획으로\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이 #카운트다운 #날짜계산",
+    "title": "2027학년도 수능 D-31",
+    "alt": "CountDaysNow — 2027학년도 수능 D-31 — 남은 날을 계획으로 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 · 카운트다운 · 날짜계산",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-31",
+    "tags": [
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일",
+     "#생일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
+   },
+   {
+    "kind": "card",
+    "key": "utility/count/lumimath/count_1/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261019.jpg",
+    "caption": "今日數一數：1\n1 顆星星\n伸出 1 根手指\n\nLumi數學星球: 答對一題，小星球就亮起來\nApp Store／Google Play 搜尋「Lumi數學星球」\n\n#啟蒙 #學前 #大班",
+    "title": "今日數一數：1",
+    "alt": "Lumi Math Planet — 今日數一數：1 — 1 顆星星 — 伸出 1 根手指 — 探索版",
+    "name": "Lumi Math Planet",
+    "hook": "今日數一數：1",
+    "tags": [
+     "#啟蒙",
+     "#學前",
+     "#大班",
+     "#中班",
+     "#Lumi數學星球探索版"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6778269699?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimath"
    }
   ],
   "mastodon": [
@@ -333,6 +375,48 @@
      "rules": "2026-10-18"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-10-19",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261019.jpg",
+    "caption": "2027학년도 수능 D-31\n남은 날을 계획으로\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이 #카운트다운 #날짜계산 #기념일 #생일",
+    "title": "2027학년도 수능 D-31",
+    "alt": "CountDaysNow — 2027학년도 수능 D-31 — 남은 날을 계획으로 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 · 카운트다운 · 날짜계산",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-31",
+    "tags": [
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일",
+     "#생일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
+   },
+   {
+    "kind": "card",
+    "key": "utility/count/lumimath/count_1/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261019.jpg",
+    "caption": "今日數一數：1\n1 顆星星\n伸出 1 根手指\n\nLumi數學星球: 答對一題，小星球就亮起來\nApp Store／Google Play 搜尋「Lumi數學星球」\n\n#啟蒙 #學前 #大班 #中班 #Lumi數學星球探索版",
+    "title": "今日數一數：1",
+    "alt": "Lumi Math Planet — 今日數一數：1 — 1 顆星星 — 伸出 1 根手指 — 探索版",
+    "name": "Lumi Math Planet",
+    "hook": "今日數一數：1",
+    "tags": [
+     "#啟蒙",
+     "#學前",
+     "#大班",
+     "#中班",
+     "#Lumi數學星球探索版"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6778269699?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimath"
    }
   ],
   "youtube": [
@@ -738,6 +822,56 @@
      "link": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
+   },
+   {
+    "kind": "card",
+    "key": "card/suneung2027/2026-10-19",
+    "locale": "ko",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261019.jpg",
+    "caption": "2027학년도 수능 D-31\n남은 날을 계획으로\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이 #카운트다운 #날짜계산 #기념일 #생일",
+    "title": "2027학년도 수능 D-31",
+    "alt": "CountDaysNow — 2027학년도 수능 D-31 — 남은 날을 계획으로 — App Store · Google Play에서 'CountDaysNow' 검색 — 디데이 · 카운트다운 · 날짜계산",
+    "name": "CountDaysNow",
+    "hook": "2027학년도 수능 D-31",
+    "tags": [
+     "#디데이",
+     "#카운트다운",
+     "#날짜계산",
+     "#기념일",
+     "#생일"
+    ],
+    "button": "App Store에서 받기",
+    "store": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+    "pinterest": {
+     "description": "2027학년도 수능 D-31\n남은 날을 계획으로\n\nApp Store · Google Play에서 'CountDaysNow' 검색\n\n#디데이 #카운트다운 #날짜계산 #기념일 #생일\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
+     "link": "https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "card",
+    "key": "utility/count/lumimath/count_1/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261019.jpg",
+    "caption": "今日數一數：1\n1 顆星星\n伸出 1 根手指\n\nLumi數學星球: 答對一題，小星球就亮起來\nApp Store／Google Play 搜尋「Lumi數學星球」\n\n#啟蒙 #學前 #大班 #中班 #Lumi數學星球探索版",
+    "title": "今日數一數：1",
+    "alt": "Lumi Math Planet — 今日數一數：1 — 1 顆星星 — 伸出 1 根手指 — 探索版",
+    "name": "Lumi Math Planet",
+    "hook": "今日數一數：1",
+    "tags": [
+     "#啟蒙",
+     "#學前",
+     "#大班",
+     "#中班",
+     "#Lumi數學星球探索版"
+    ],
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6778269699?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimath",
+    "pinterest": {
+     "description": "今日數一數：1\n1 顆星星\n伸出 1 根手指\n\nLumi數學星球: 答對一題，小星球就亮起來\nApp Store／Google Play 搜尋「Lumi數學星球」\n\n#啟蒙 #學前 #大班 #中班 #Lumi數學星球探索版\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6778269699?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimath",
+     "link": "https://apps.apple.com/tw/app/id6778269699?pt=118326163&ct=social&mt=8"
+    }
    }
   ],
   "tiktok": [

@@ -2,7 +2,7 @@
 title: "G+Money Lite: Matkakulut — Päiväbudjetti kellossa | iOS App"
 lang: "fi"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/fi/index.html"
-modified: "2026-10-18"
+modified: "2026-10-19"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

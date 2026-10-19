@@ -2,7 +2,7 @@
 title: "UsageNow: AI استعمال ٹریکر — Claude, Codex, Copilot کی حد | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/ur-PK/index.html"
-modified: "2026-10-18"
+modified: "2026-10-19"
 app_store_id: "6818607603"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

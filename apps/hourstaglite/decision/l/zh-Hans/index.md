@@ -2,7 +2,7 @@
 title: "HoursTag Lite：买前先算工时 — 冲动消费前，先换算成工时 | iOS App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/zh-Hans/index.html"
-modified: "2026-10-18"
+modified: "2026-10-19"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -83,7 +83,7 @@ def fetch(attempts: int = 3) -> bool:
             git("fetch", "-q", "origin", f"+refs/heads/main:{MAIN_REF}")
             heads = git("ls-remote", "--heads", "origin", PENDING)
             if heads:
-                git("fetch", "-q", "origin", f"+refs/heads/{PENDING}:{PENDING_REF}")
+                git("fetch", "-q", *_history_window(), "origin", f"+refs/heads/{PENDING}:{PENDING_REF}")
             elif ok("rev-parse", "-q", "--verify", PENDING_REF):
                 git("update-ref", "-d", PENDING_REF)
             _ensure_base(bool(heads))
@@ -96,6 +96,21 @@ def fetch(attempts: int = 3) -> bool:
     return False
 
 
+def _history_window() -> tuple[str, ...]:
+    """Fetch flags that keep a shallow runner checkout from pulling the site's whole history.
+
+    The guide checkout is depth 1, so fetching pending unbounded walks every commit down to the
+    first one (2026-10-19 run 39269858414 spent 13.5 minutes in overlay). Bound it to 50 commits
+    and leave file contents on the server (a promisor remote hands over the few record blobs
+    merged_records reads, on demand)."""
+    if git("rev-parse", "--is-shallow-repository") != "true":
+        return ()
+    git("config", "extensions.partialClone", "origin")
+    git("config", "remote.origin.promisor", "true")
+    git("config", "remote.origin.partialclonefilter", "blob:none")
+    return ("--depth=50", "--filter=blob:none")
+
+
 def _ensure_base(has_pending: bool) -> None:
     """A shallow checkout may not reach main and pending's fork point; deepen until it does."""
     if not has_pending or ok("merge-base", MAIN_REF, PENDING_REF):
@@ -103,7 +118,7 @@ def _ensure_base(has_pending: bool) -> None:
     for deepen in ("--deepen=50", "--deepen=500", "--unshallow"):
         if git("rev-parse", "--is-shallow-repository") != "true":
             break
-        git("fetch", "-q", deepen, "origin",
+        git("fetch", "-q", deepen, "--filter=blob:none", "origin",
             f"+refs/heads/main:{MAIN_REF}", f"+refs/heads/{PENDING}:{PENDING_REF}")
         if ok("merge-base", MAIN_REF, PENDING_REF):
             return

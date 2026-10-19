@@ -189,6 +189,33 @@ class DeferTest(Repo):
             self.assertEqual(0, gr.main(["overlay"]))
         self.assertEqual(["p0", "p1"], [p["id"] for p in json.loads((runner / LOG).read_text())["posts"]])
 
+    def test_shallow_checkout_fetches_a_bounded_window_without_file_contents(self):
+        # run 39269858414: an unbounded fetch of pending from the depth-1 guide checkout walked
+        # the whole site history (13.5 minutes); the window stays at about 50 commits, no blobs.
+        sh(self.origin, "config", "uploadpack.allowFilter", "true")
+        old = self.clone("old")
+        for n in range(80):
+            (old / "page.html").write_text(f"old{n}\n")
+            sh(old, "commit", "-q", "-am", f"history {n}")
+        sh(old, "push", "-q", "origin", "HEAD:main")
+        self.record(self.clone("r1"), "p1", geo=True)  # pending forks here
+        other = self.clone("other")
+        for n in range(5):
+            (other / "page.html").write_text(f"v{n}\n")
+            sh(other, "commit", "-q", "-am", f"content {n}")
+        sh(other, "push", "-q", "origin", "HEAD:main")
+        runner = self.tmp / "shallow"
+        sh(self.tmp, "clone", "-q", "--depth", "1", f"file://{self.origin}", str(runner))
+        with inside(runner):
+            self.assertEqual(0, gr.main(["overlay"]))
+        self.assertEqual(["p0", "p1"], [p["id"] for p in json.loads((runner / LOG).read_text())["posts"]])
+        self.assertEqual("true", sh(runner, "rev-parse", "--is-shallow-repository"))
+        self.assertEqual("blob:none", sh(runner, "config", "remote.origin.partialclonefilter"))
+        with inside(runner):
+            self.assertEqual(("--depth=50", "--filter=blob:none"), gr._history_window())
+        with inside(self.clone("full")):
+            self.assertEqual((), gr._history_window())
+
     def test_refused_push_is_reported_for_the_retry_loop(self):
         runner = self.clone("r1")
         with inside(runner), mock.patch.object(gr, "geo_daily_active", return_value=False):

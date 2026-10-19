@@ -30,15 +30,6 @@
     "term": "托业 990",
     "weight": 0.45
    },
-   "FR": {
-    "date": "2026-10-16",
-    "locale": "fr",
-    "paid": false,
-    "rank": 9,
-    "results": 32,
-    "term": "toeic écoute",
-    "weight": 0.3
-   },
    "RU": {
     "date": "2026-10-17",
     "locale": "ru",
@@ -51,7 +42,7 @@
   },
   "battai": {
    "BR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "pt-BR",
     "paid": false,
     "rank": 6,
@@ -62,14 +53,14 @@
    "DE": {
     "date": "2026-10-18",
     "locale": "de",
-    "paid": false,
+    "paid": true,
     "rank": 8,
     "results": 9,
     "term": "akku kapazität",
     "weight": 0.4
    },
    "FR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "fr",
     "paid": false,
     "rank": 5,
@@ -78,11 +69,11 @@
     "weight": 0.3
    },
    "KR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "ko",
     "paid": false,
     "rank": 10,
-    "results": 183,
+    "results": 182,
     "term": "배터리",
     "weight": 0.3
    },
@@ -105,11 +96,11 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "zh-Hant",
     "paid": false,
     "rank": 4,
-    "results": 155,
+    "results": 160,
     "term": "電池檢測",
     "weight": 0.3
    },
@@ -125,7 +116,7 @@
   },
   "claudeusagemini": {
    "BR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "pt-BR",
     "paid": false,
     "rank": 2,
@@ -143,7 +134,7 @@
     "weight": 0.4
    },
    "FR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "fr",
     "paid": false,
     "rank": 3,
@@ -161,12 +152,12 @@
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "ko",
     "paid": false,
     "rank": 3,
-    "results": 3,
-    "term": "claude 사용량 제한",
+    "results": 5,
+    "term": "copilot 사용량",
     "weight": 0.3
    },
    "RU": {
@@ -188,7 +179,7 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "zh-Hant",
     "paid": false,
     "rank": 2,
@@ -208,11 +199,11 @@
   },
   "cvdesk": {
    "BR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "pt-BR",
     "paid": false,
-    "rank": 7,
-    "results": 87,
+    "rank": 6,
+    "results": 89,
     "term": "currículo ats",
     "weight": 0.2
    },
@@ -243,6 +234,15 @@
     "term": "ats 履歴書",
     "weight": 0.6
    },
+   "KR": {
+    "date": "2026-10-19",
+    "locale": "ko",
+    "paid": false,
+    "rank": 9,
+    "results": 45,
+    "term": "ats 이력서",
+    "weight": 0.3
+   },
    "TH": {
     "date": "2026-10-18",
     "locale": "th",
@@ -253,11 +253,11 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "zh-Hant",
     "paid": false,
-    "rank": 5,
-    "results": 53,
+    "rank": 8,
+    "results": 54,
     "term": "履歷範本",
     "weight": 0.3
    }
@@ -308,7 +308,7 @@
   },
   "hourstaglite": {
    "FR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "fr",
     "paid": false,
     "rank": 9,
@@ -336,6 +336,15 @@
    }
   },
   "ledmovingtext": {
+   "FR": {
+    "date": "2026-10-19",
+    "locale": "fr",
+    "paid": false,
+    "rank": 10,
+    "results": 19,
+    "term": "pancarte concert",
+    "weight": 0.3
+   },
    "JP": {
     "date": "2026-10-18",
     "locale": "ja",
@@ -348,7 +357,7 @@
   },
   "lumibopomofo": {
    "BR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "pt-BR",
     "paid": false,
     "rank": 2,
@@ -366,10 +375,10 @@
     "weight": 0.4
    },
    "FR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "fr",
     "paid": false,
-    "rank": 2,
+    "rank": 3,
     "results": 3,
     "term": "apprendre zhuyin",
     "weight": 0.3
@@ -393,7 +402,7 @@
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "ko",
     "paid": false,
     "rank": 4,
@@ -431,10 +440,10 @@
     "weight": 0.4
    },
    "KR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "ko",
     "paid": false,
-    "rank": 6,
+    "rank": 7,
     "results": 7,
     "term": "주음부호",
     "weight": 0.3
@@ -498,18 +507,18 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "zh-Hant",
     "paid": false,
-    "rank": 4,
-    "results": 126,
-    "term": "穿搭 天氣",
+    "rank": 5,
+    "results": 130,
+    "term": "天氣 穿搭",
     "weight": 0.3
    }
   },
   "maskmyfile": {
    "BR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "pt-BR",
     "paid": false,
     "rank": 6,
@@ -547,7 +556,7 @@
   },
   "mochi": {
    "BR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "pt-BR",
     "paid": true,
     "rank": 6,
@@ -565,11 +574,11 @@
     "weight": 0.45
    },
    "KR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "ko",
     "paid": false,
     "rank": 10,
-    "results": 75,
+    "results": 81,
     "term": "귀여운 플래너",
     "weight": 0.3
    },
@@ -612,20 +621,20 @@
   },
   "mochidonestamp": {
    "BR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "pt-BR",
     "paid": false,
-    "rank": 2,
-    "results": 11,
+    "rank": 3,
+    "results": 14,
     "term": "registro última vez",
     "weight": 0.2
    },
    "KR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "ko",
     "paid": false,
-    "rank": 10,
-    "results": 52,
+    "rank": 9,
+    "results": 54,
     "term": "마지막 기록",
     "weight": 0.3
    },
@@ -647,15 +656,6 @@
     "term": "บันทึกครั้งล่าสุด",
     "weight": 0.1
    },
-   "TW": {
-    "date": "2026-10-16",
-    "locale": "zh-Hant",
-    "paid": false,
-    "rank": 10,
-    "results": 15,
-    "term": "上次 什麼時候",
-    "weight": 0.3
-   },
    "VN": {
     "date": "2026-10-18",
     "locale": "vi",
@@ -668,11 +668,11 @@
   },
   "moneytag": {
    "BR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "pt-BR",
     "paid": false,
     "rank": 9,
-    "results": 25,
+    "results": 24,
     "term": "despesas do projeto",
     "weight": 0.2
    },
@@ -686,10 +686,10 @@
     "weight": 0.4
    },
    "TW": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "zh-Hant",
-    "paid": false,
-    "rank": 2,
+    "paid": true,
+    "rank": 1,
     "results": 8,
     "term": "專案支出",
     "weight": 0.3
@@ -724,11 +724,11 @@
     "weight": 0.1
    },
    "TW": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "zh-Hant",
-    "paid": true,
+    "paid": false,
     "rank": 1,
-    "results": 63,
+    "results": 67,
     "term": "一頁 摘要",
     "weight": 0.3
    },
@@ -744,7 +744,7 @@
   },
   "qrcodehalo": {
    "TW": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "zh-Hant",
     "paid": false,
     "rank": 5,
@@ -808,10 +808,10 @@
     "weight": 0.6
    },
    "TW": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "zh-Hant",
     "paid": false,
-    "rank": 6,
+    "rank": 5,
     "results": 24,
     "term": "小孩 旅行",
     "weight": 0.3
@@ -819,7 +819,7 @@
   },
   "unblurry": {
    "BR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "pt-BR",
     "paid": false,
     "rank": 4,
@@ -828,11 +828,11 @@
     "weight": 0.2
    },
    "KR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "ko",
     "paid": false,
     "rank": 5,
-    "results": 22,
+    "results": 21,
     "term": "흐린 사진 복구",
     "weight": 0.3
    },
@@ -847,15 +847,6 @@
    }
   },
   "wifiaid": {
-   "FR": {
-    "date": "2026-10-16",
-    "locale": "fr",
-    "paid": true,
-    "rank": 4,
-    "results": 170,
-    "term": "diagnostic wifi",
-    "weight": 0.3
-   },
    "VN": {
     "date": "2026-10-18",
     "locale": "vi",
@@ -886,7 +877,7 @@
     "weight": 0.6
    },
    "KR": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "ko",
     "paid": false,
     "rank": 1,
@@ -917,7 +908,7 @@
     "weight": 0.6
    },
    "TW": {
-    "date": "2026-10-16",
+    "date": "2026-10-19",
     "locale": "zh-Hant",
     "paid": false,
     "rank": 6,
@@ -936,7 +927,7 @@
    }
   }
  },
- "as_of": "2026-10-18",
+ "as_of": "2026-10-19",
  "fresh_days": 7,
  "schema": "lumi.search-terms/v1",
  "source": "00_GrowthEngine data/rank_watch/history.csv + reports/funnel-latest.json",

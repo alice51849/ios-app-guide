@@ -132,7 +132,10 @@ jobs:
         run: |
           # threads_post.py: queued post (growth/threads-queue.json) first, else the
           # countdown card takes the slot (countdown-daily.yml), else a picture post.
+          # On a date listed in .github/scripts/threads_mochi_trial.json (2026-10-20..11-01) the
+          # Mochi trial entry takes the slot first (no extra post: same slot, same cap).
           python3 .github/scripts/test_social_posting.py -q -b
+          python3 .github/scripts/test_threads_mochi_trial.py -q -b
           python3 .github/scripts/threads_post.py
       - name: Post today's hook clip to Threads
         if: steps.room.outputs.ok == 'true' && steps.slot.outputs.hour == '1'

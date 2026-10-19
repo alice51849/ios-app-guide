@@ -2,7 +2,7 @@
 title: "WiFi Aid: نیٹ ورک مسائل تلاش — راؤٹر، میش اور DNS جانچ | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/ur-PK/index.html"
-modified: "2026-10-18"
+modified: "2026-10-19"
 app_store_id: "6790467886"
 verified_live: true
 purchase_model: "paid_upfront"

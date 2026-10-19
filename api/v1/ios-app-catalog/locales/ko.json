@@ -1,8 +1,8 @@
 {
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
-  "date_modified": "2026-10-18",
-  "content_digest": "073ff5f6e9289ffec23db77b7dcbc4b1e802063b8928b9c4b543cef452328cd6",
+  "date_modified": "2026-10-19",
+  "content_digest": "2af0cd5d405a36988bda8443a278ff31c7e0430ef10a4a6700fd979910a75061",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
@@ -658,8 +658,7 @@
         "생활비관리",
         "위젯가계부",
         "외화지출",
-        "여행비",
-        "해외여행 예산"
+        "여행비"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1305,8 +1304,7 @@
         "알림",
         "매일",
         "키즈",
-        "영유아",
-        "아이 생활습관"
+        "영유아"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2525,10 +2523,7 @@
         "코딩",
         "에이전트",
         "llm",
-        "모니터",
-        "codex 사용량 제한",
-        "copilot 사용량",
-        "claude 사용량"
+        "모니터"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2785,7 +2780,9 @@
         "뷰어",
         "파일관리자",
         "분할압축",
-        "extractor"
+        "extractor",
+        "7z 압축 풀기",
+        "암호 zip 파일"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

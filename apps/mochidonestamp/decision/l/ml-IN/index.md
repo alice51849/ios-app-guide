@@ -2,7 +2,7 @@
 title: "Mochi DoneStamp: അവസാനമായി — എപ്പോൾ ചെയ്തു? വീട്ടുജോലി | iOS App"
 lang: "ml-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/ml-IN/index.html"
-modified: "2026-10-18"
+modified: "2026-10-19"
 app_store_id: "6790800323"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

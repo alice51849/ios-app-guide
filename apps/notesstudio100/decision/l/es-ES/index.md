@@ -2,7 +2,7 @@
 title: "¿Hay alguna app de notas a mano para iPad que funcione sin conexión, con anotación de PDF y sin suscripción?"
 lang: "es-ES"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/notesstudio100/decision/l/es-ES/index.html"
-modified: "2026-10-18"
+modified: "2026-10-19"
 app_store_id: "6798813048"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

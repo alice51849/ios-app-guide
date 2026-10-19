@@ -2,7 +2,7 @@
 title: "AI Brief: ଫାଇଲରୁ AI ପ୍ରମ୍ପ୍ଟ — ଫାଇଲ ଓ PDF ରୁ ପ୍ରମ୍ପ୍ଟ | iOS App"
 lang: "or-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/aibriefpack/decision/l/or-IN/index.html"
-modified: "2026-10-18"
+modified: "2026-10-19"
 app_store_id: "6791658210"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

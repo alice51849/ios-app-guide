@@ -18,6 +18,15 @@ os.environ.setdefault("POST_QA_OFFLINE", "1")  # the pre-post QA gate makes no n
 import threads_cap  # noqa: E402
 import threads_post  # noqa: E402
 
+
+def setUpModule():
+    # threads_post.main() gives the dates of the Mochi trial file to that trial (test_threads_mochi_trial.py); the
+    # main() tests here run on the real clock, so they see no trial day and keep testing the usual paths.
+    no_trial = mock.patch.object(threads_post, "load_trial", return_value={})
+    no_trial.__enter__()
+    unittest.addModuleCleanup(no_trial.__exit__, None, None, None)
+
+
 MOCHI = "6785004775"  # Android-live App Store id (App Store + Google Play link reply)
 
 

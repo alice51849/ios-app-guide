@@ -36,6 +36,11 @@ def setUpModule():
     room = mock.patch.object(threads_cap, "quota_usage", return_value=0)
     room.__enter__()
     unittest.addModuleCleanup(room.__exit__, None, None, None)
+    # threads_post.main() gives the dates of the Mochi trial file to that trial (test_threads_mochi_trial.py); the
+    # main() tests here run on the real clock, so they see no trial day and keep testing the usual paths.
+    no_trial = mock.patch.object(threads_post, "load_trial", return_value={})
+    no_trial.__enter__()
+    unittest.addModuleCleanup(no_trial.__exit__, None, None, None)
 
 
 class FakeResponse:

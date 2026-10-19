@@ -419,6 +419,96 @@ def queued_links(post):
     return f"App Store: {url}" + (f"\nGoogle Play: {play}" if play else "")
 
 
+# Mochi top-10 trial (decided 2026-10-19, copy from 00_GrowthEngine outreach/threads/mochi_top10_2026-10-19.json
+# at 07ded37a): on each date the file lists (Taiwan date, 2026-10-20 .. 2026-11-01, every other day) the picture
+# slot - the day's post of this script - goes to that entry instead of the queued / countdown / picture post. It
+# takes the slot, never adds one: the slot gate, the account cap and every link check stay as they are. A date the
+# file does not list (any day after 2026-11-02 included) runs the usual logic, with no code change needed.
+TRIAL_PATH = os.path.join(HERE, "threads_mochi_trial.json")
+TRIAL_APP_NAME = "Mochi"
+
+
+def load_trial(path=TRIAL_PATH):
+    """The trial file as a dict ({} when it is missing or unreadable: the usual logic then runs)."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, ValueError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def trial_post(day, trial=None):
+    """The trial entry dated `day` (a Taiwan date), or None on any other day."""
+    trial = load_trial() if trial is None else trial
+    if not day:
+        return None
+    return next((p for p in trial.get("posts") or [] if isinstance(p, dict) and p.get("date") == day.isoformat()), None)
+
+
+def trial_store_url(trial):
+    """The trial app's canonical App Store link (https://apps.apple.com/app/id<digits>)."""
+    app_id = DL.app_store_id(trial.get("app_store") or "")
+    if not app_id:
+        raise ValueError("trial file has no App Store link")
+    return f"https://apps.apple.com/app/id{app_id}"
+
+
+def trial_link_urls(trial, post):
+    """(App Store URL, Google Play URL or None) the trial reply must carry; Play only when the app is on Android."""
+    store = trial_store_url(trial)
+    return store, play_store_url(DL.app_store_id(store), post["ct"])
+
+
+def trial_links(trial, post):
+    """The link block that replaces {link}: the App Store link with the entry's own ct (th_mochi_<lang>_<nn>,
+    kept as is by download_links._CAMPAIGN_KEEP), plus the Google Play link when the app is on Android."""
+    store, _play = trial_link_urls(trial, post)
+    url = campaign_app_store_url(store, post["ct"])
+    play = play_store_url(DL.app_store_id(store), post["ct"])
+    return url + (f"\nGoogle Play: {play}" if play else "")
+
+
+def trial_reply(trial, post):
+    template = str(post.get("reply") or "")
+    if template.count("{link}") != 1:
+        raise ValueError(f"trial reply {post.get('ct')} must hold {{link}} exactly once")
+    return template.replace("{link}", trial_links(trial, post))
+
+
+def trial_problems(trial, post):
+    """post_qa's checks of the main text (length, hook line, language, claims and counts against the live product
+    page) and of the reply's words; download_links checks the reply's links again in publish_linked."""
+    import post_qa
+
+    store = trial_store_url(trial)
+    facts, price = post_qa.product_facts(store, (TRIAL_APP_NAME,))
+    text = str(post.get("text") or "")
+    out = post_qa.text_problems(text, post.get("lang") or "en-US", "threads", allowed=(TRIAL_APP_NAME,),
+                                facts=facts, price=price)
+    if post_qa.URL.search(text):
+        out.append("the main text carries a URL (Threads keeps links in the first reply)")
+    reply = trial_reply(trial, post)
+    out += post_qa.claim_problems(reply, (TRIAL_APP_NAME,), facts, price)
+    out += post_qa.link_problems(store)
+    return out
+
+
+def post_trial(tok, uid, trial, post, day):
+    """Publish one trial entry: main text without a link, then the reply with the link (publish_linked: the
+    account cap, the rerun lookups and the reply check all apply). 0 when green, 1 when red."""
+    import post_qa
+
+    label = f"Threads Mochi trial {post.get('ct')} {post.get('date')}"
+    if not post_qa.gate(trial_problems(trial, post), label):
+        return 1
+    store, play = trial_link_urls(trial, post)
+    result = publish_linked(tok, uid, post["text"], trial_reply(trial, post), store, play, day=day, label=label)
+    if result.post_id:
+        print("threads Mochi trial post ok, id:", result.post_id, "| ct:", post.get("ct"))
+    return 0 if result.link_ok else 1
+
+
 def main():
     tok = os.environ.get("THREADS_TOKEN", "").strip()
     uid = os.environ.get("THREADS_USER_ID", "").strip()
@@ -436,6 +526,15 @@ def main():
     # THREADS_SLOT (social_slot_gate.py's slot) keeps a run GitHub delayed, or
     # a backfill, on the content and audience of the slot it fills.
     slot = slot_time(os.environ.get("THREADS_SLOT", ""))
+    day = slot.astimezone(TW).date() if slot else _dt.datetime.now(TW).date()
+    trial = load_trial()
+    entry = trial_post(day, trial)
+    if entry:
+        try:
+            return post_trial(tok, uid, trial, entry, day)
+        except (HTTPStatusError, RequestError, ValueError, KeyError) as error:
+            print(f"Threads Mochi trial post failed: {error}", file=sys.stderr)
+            return 1
     post = queued_today(slot.astimezone(TW).date() if slot else None)
     if post:
         try:

@@ -792,5 +792,68 @@ class AppFinderRealDataTest(unittest.TestCase):
         self.assertLess(unknown / total, 0.05, "the finder should still know almost every caption of our own")
 
 
+class ThreadsMochiTrialTest(unittest.TestCase):
+    """A Threads Mochi trial post (threads_post.py) has no brand in its main text: the trial file names its app and
+    its own ct, so a link reply that failed is added once, read back, and never twice."""
+
+    TRIAL = B.trial_entries()
+
+    def entry(self, ct):
+        return next(e for e in self.TRIAL.values() if e["ct"] == ct)
+
+    def client(self, text, replies=None, post_id="300"):
+        media = [{"id": post_id, "text": text, "permalink": f"https://www.threads.com/@b/post/T{post_id}",
+                  "timestamp": "2026-10-20T03:01:00+0000"}]
+        return FakeClient("threads", media, {post_id: replies} if replies else None)
+
+    def run_channel(self, client, state, **kw):
+        return B.run(client, catalog(), state, sleeper=lambda s: None, log=lambda *a: None, **kw)
+
+    def test_every_trial_entry_is_known_by_its_text(self):
+        self.assertEqual(7, len(self.TRIAL))
+        finder = B.AppFinder(catalog())
+        for e in self.TRIAL.values():
+            post = finder.resolve("threads", {"id": "1", "caption": e["text"]})
+            self.assertEqual(("mochi", MOCHI, e["ct"], "trial"), (post["app"], post["ios_id"], post["ct"], post["why"]))
+            cut = finder.resolve("threads", {"id": "1", "caption": e["text"][:90] + "…"})   # the platform cut it off
+            self.assertEqual(e["ct"], cut["ct"])
+            self.assertIsNone(finder.resolve("instagram", {"id": "1", "caption": e["text"]}))  # Threads posts only
+
+    def test_a_missing_link_reply_is_added_once_with_the_entry_ct_and_read_back(self):
+        e = self.entry("th_mochi_en_01")
+        client, state = self.client(e["text"]), fresh_state()
+        rows = self.run_channel(client, state)   # audit: listed, nothing written
+        self.assertEqual(("missing", "mochi", "trial"), (rows[0]["status"], rows[0]["app"], rows[0]["why"]))
+        self.assertEqual([], client.writes)
+        rows = self.run_channel(client, state, apply=True)
+        self.assertEqual("backfilled", rows[0]["status"])
+        self.assertTrue(rows[0]["verified"])
+        [(post, text)] = client.writes
+        self.assertEqual("300", post)
+        self.assertIn(f"https://apps.apple.com/app/id{MOCHI}?pt=118326163&ct=th_mochi_en_01&mt=8", text)
+        self.assertIn("utm_source%3Dth_mochi_en_01", text)   # the Google Play link too (Mochi is on Android)
+        self.assertEqual("ok_backfilled_earlier", self.run_channel(client, state, apply=True)[0]["status"])
+        self.assertEqual("ok_reply", self.run_channel(client, fresh_state(), apply=True)[0]["status"])
+        self.assertEqual(1, len(client.writes))
+
+    def test_a_trial_post_whose_reply_went_out_is_left_alone(self):
+        e = self.entry("th_mochi_ko_01")
+        store, play = B.links_for("threads", MOCHI, e["ct"])
+        reply = {"id": "r1", "text": e["reply"].replace("{link}", f"{store}\nGoogle Play: {play}"), "user": "brand",
+                 "own": True}
+        client = self.client(e["text"], [reply])
+        self.assertEqual("ok_reply", self.run_channel(client, fresh_state(), apply=True)[0]["status"])
+        self.assertEqual([], client.writes)
+
+    def test_a_text_that_is_not_a_trial_entry_stays_unknown(self):
+        client = self.client("My to-do list used to stress me out. Some other words entirely, nothing like the file.")
+        rows = self.run_channel(client, fresh_state(), apply=True)
+        self.assertEqual("unknown_app", rows[0]["status"])
+        self.assertEqual([], client.writes)
+
+    def test_no_trial_file_means_no_trial_match(self):
+        self.assertEqual({}, B.trial_entries(Path("/nonexistent/threads_mochi_trial.json")))
+
+
 if __name__ == "__main__":
     unittest.main()

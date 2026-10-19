@@ -72,6 +72,9 @@ LINK_BUDGET_24H = {"threads": 20}
 # Channels the sweeper writes nothing to (the reason is logged). Owner 2026-10-17: 「ig 貼文沒辦法顯示連結的話你用很長的
 # 文字沒有比較好耶 改成原版的好了 請大家去個人檔案下載」 - Instagram texts carry no URL, so no link comment goes under an
 # Instagram post any more; the comments added earlier are left as they are (never deleted).
+# The Threads Mochi trial posts (threads_post.py, threads_mochi_trial.json, 2026-10-20 .. 11-01) carry no brand in
+# their main text, so the finder names them by that text: the trial file gives the app and the entry's own ct.
+TRIAL_PATH = Path(__file__).resolve().parent / "threads_mochi_trial.json"
 NO_WRITE = {"instagram": "Instagram texts point to the profile (bio) link and carry no URL (owner 2026-10-17); "
                          "no link comment is added any more, the ones added earlier stay"}
 
@@ -195,6 +198,18 @@ class AppFinder:
         owners.update(exact)      # an exact name beats the same word derived from another app's name
         self.brands = sorted(((b, next(iter(o))) for b, o in owners.items() if len(o) == 1), key=lambda x: -len(x[0]))
         self.leads = {l: next(iter(o)) for l, o in leads.items() if len(o) == 1}
+        self.trial = trial_entries()
+
+    def _trial(self, channel, media):
+        """A Threads trial post, by its main text (whole, or its first 80 characters when the platform cut it)."""
+        if channel != "threads" or not self.trial:
+            return None
+        got = _flat(media.get("caption"))
+        for want, entry in self.trial.items():
+            if got == want or (len(want) >= 40 and len(got) >= 40 and got[:80] == want[:80]):
+                return {"app": entry["app"], "locale": entry.get("lang") or "en", "hook": got[:60],
+                        "ios_id": entry["ios_id"], "kind": "trial", "clip": None, "ct": entry["ct"], "why": "trial"}
+        return None
 
     def _ledger(self, channel, media):
         for ch in LEDGER_CHANNELS.get(channel, (channel,)):
@@ -212,6 +227,9 @@ class AppFinder:
     def resolve(self, channel, media):
         post = self._ledger(channel, media)
         if post and ios_id_for(self.catalog, post):
+            return post
+        post = self._trial(channel, media)
+        if post:
             return post
         text = media.get("caption") or ""
         found = [(why, e) for why, e in (("url", self._by_url(text)), ("brand", self._by_brand(text)),
@@ -280,6 +298,29 @@ class AppFinder:
         return next(iter(owners)) if len(owners) == 1 else False
 
 
+def trial_entries(path=TRIAL_PATH):
+    """{squashed main text: entry} of the Threads trial file ({} when it is missing or unreadable). Each entry is
+    the file's post plus "ios_id" (from the file's App Store link) and "app" (the file's app key)."""
+    try:
+        data = json.loads(Path(path).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    if not isinstance(data, dict):
+        return {}
+    ios = DL.app_store_id(str(data.get("app_store") or ""))
+    key = str(data.get("app_key") or "")
+    out = {}
+    for p in data.get("posts") or []:
+        text = str((p or {}).get("text") or "").strip() if isinstance(p, dict) else ""
+        if ios and key and text and p.get("ct"):
+            out[_flat(text)] = dict(p, ios_id=ios, app=key)
+    return out
+
+
+def _flat(text):
+    return " ".join(squash(text or "").split())
+
+
 def ios_id_for(catalog, post):
     """The iOS app id a resolved post promotes ('' when unknown)."""
     if not post:
@@ -295,8 +336,9 @@ def ios_id_for(catalog, post):
 
 # ---------------------------------------------------------------- links and comments
 
-def links_for(channel, ios_id):
-    ct = CT[channel]
+def links_for(channel, ios_id, ct=None):
+    """(App Store URL, Google Play URL or None) with the channel's backfill ct, or the post's own (a trial post)."""
+    ct = ct or CT[channel]
     return campaign_app_store_url(f"https://apps.apple.com/app/id{ios_id}", ct), play_store_url(ios_id, ct)
 
 
@@ -474,7 +516,7 @@ def classify(client, media, finder, state, reads=None, read_gap=0, sleeper=time.
     if not ios:
         row["status"] = "unknown_app"
         return row, None
-    store, play = links_for(channel, ios)
+    store, play = links_for(channel, ios, (post or {}).get("ct"))
     row["ios_id"] = ios
     row["locale"] = (post or {}).get("locale") or OP.detect_language(text) or "en"
     if DL.is_instagram(channel) and DL.has_instagram_cta(text) and not DL.instagram_url_problems(text):

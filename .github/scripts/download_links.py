@@ -257,9 +257,10 @@ _CAMPAIGN_PREFIXES = (
     ("nostr_", "social"), ("devto_", "social"), ("qiita_", "social"), ("ml_", "social"),
     ("appdir_", "outreach"), ("outreach", "outreach"),
 )
-# Sent as they are: experiment cells whose own contract reads the token back (gx_reach_*), the one long-form
+# Sent as they are: experiment cells whose own contract reads the token back (gx_reach_*; th_mochi_<lang>_<nn>, the
+# 2026-10-20..11-01 Threads Mochi trial posts, threads_post.py), the one long-form
 # YouTube token, and any token not listed above (00_GrowthEngine's inventory test names those).
-_CAMPAIGN_KEEP = ("gx_reach_", "yt_longform")
+_CAMPAIGN_KEEP = ("gx_reach_", "yt_longform", "th_mochi_")
 _CT_PARAM = re.compile(r"(?<=[?&;])ct=([A-Za-z0-9_-]+)")
 # Per app, the channel rows are merged further until they can pass Apple's threshold (owner 2026-10-18: every app
 # earns on its own, so each app gets its own split; merging only ever happens inside one app). Tier from

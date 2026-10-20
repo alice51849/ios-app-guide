@@ -28,6 +28,7 @@ from app_store_storefronts import (  # noqa: E402
 )
 import gen_smart_app_banners  # noqa: E402
 import gen_store_attribution  # noqa: E402
+import purchase_types  # noqa: E402
 from official_locales import OFFICIAL_LOCALE_SET  # noqa: E402
 from videogen.registry import APPS, APPSTORE  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
@@ -369,7 +370,7 @@ def _store_link(
     raise ValueError(f"No App Store CTA found for app ID {app_id}")
 
 
-def _facts(source: str, answer: bool) -> list[str]:
+def _facts(source: str, answer: bool, key: str = "") -> list[str]:
     fragments: list[str]
     if answer:
         fragments = PILL_RE.findall(source)
@@ -377,6 +378,10 @@ def _facts(source: str, answer: bool) -> list[str]:
         feature_list = UL_RE.search(source)
         fragments = LI_RE.findall(feature_list.group(1)) if feature_list else []
     values = [_plain_text(fragment) for fragment in fragments]
+    # 「Pay once／No subscription／終生／買い切り」只給證實是一次購買的款；
+    # 訂閱款與不知道的款省略這格，不硬寫。
+    if not purchase_types.one_time_verified(key):
+        values = [value for value in values if not purchase_types.is_purchase_claim(value)]
     return list(dict.fromkeys(value for value in values if value))[:4]
 
 
@@ -482,7 +487,7 @@ def _page_content(
     return {
         "name": APPS[key]["name"] if answer else _plain_text(heading.group(1)),
         "promise": promise,
-        "facts": _facts(source, answer),
+        "facts": _facts(source, answer, key),
         "terms": _terms(source, answer),
         "storefront": _storefront_fact(source, answer),
         "store_url": store_url,

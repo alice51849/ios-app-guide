@@ -1,0 +1,221 @@
+{
+ "_doc": "由 geo/purchase_types.py --build 產生；只有 one_time_unlock／paid_upfront 可寫買斷字樣",
+ "apps": {
+  "aibriefpack": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.AIBriefPack.pro）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "aim990": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（aim990.fullunlock）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "battai": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.BattAI.pro）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "caldaily": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.CalDaily.premium）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "claudeusagemini": {
+   "evidence": "en-US 商店描述寫明一次購買解鎖、無訂閱字樣",
+   "type": "one_time_unlock"
+  },
+  "countdaysnow": {
+   "evidence": "en-US 商店描述寫明一次購買解鎖、無訂閱字樣",
+   "type": "one_time_unlock"
+  },
+  "cvdesk": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.cvdesk.unlock）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "cyca": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.Cyca.pro.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "dailymate": {
+   "evidence": "ASC 0 內購＋商店售價 USD 11.99（2026-09-06）",
+   "type": "paid_upfront"
+  },
+  "dailymatelite": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.DailyMateLite.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "dbhalo": {
+   "evidence": "en-US 商店描述寫明一次購買解鎖、無訂閱字樣",
+   "type": "one_time_unlock"
+  },
+  "gmoney": {
+   "evidence": "ASC 0 內購＋商店售價 USD 4.99（2026-09-06）",
+   "type": "paid_upfront"
+  },
+  "gmoneylite": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.GMoneyLite.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "hourstag": {
+   "evidence": "ASC 0 內購＋商店售價 USD 4.99（2026-09-06）",
+   "type": "paid_upfront"
+  },
+  "hourstaglite": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.HoursTagLite.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "ledmovingtext": {
+   "evidence": "en-US 商店描述寫明一次購買解鎖、無訂閱字樣",
+   "type": "one_time_unlock"
+  },
+  "lockhour": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（focuslockpro.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "lumibopomofo": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（full_unlock_lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "lumibopomofopro": {
+   "evidence": "ASC 0 內購＋商店售價 USD 8.99（2026-09-06）",
+   "type": "paid_upfront"
+  },
+  "lumiletters": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.LumiMathFree.unlockallGalaxy）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "lumiletterspro": {
+   "evidence": "ASC 0 內購＋商店售價 USD 8.99（2026-09-06）",
+   "type": "paid_upfront"
+  },
+  "lumimath": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.LumiMathFree.unlockall）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "lumimathpro": {
+   "evidence": "ASC 0 內購＋商店售價 USD 8.99（2026-09-06）",
+   "type": "paid_upfront"
+  },
+  "lumimission": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.lumimissionlite.full）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "lumimissionpro": {
+   "evidence": "ASC 0 內購＋商店售價 USD 5.99（2026-09-06）",
+   "type": "paid_upfront"
+  },
+  "lumiweather": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.LumiWeather.unlock）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "maskmyfile": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.MaskMyFile.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "mochi": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.MochiTodo.premium）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "mochidonestamp": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.MochiDoneStamp.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "moneytag": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.MoneyTag.pro）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "notesstudio100": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.NotesStudio100.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "onepageppt": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.OnePagePPT.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "photocream": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.photocream.unlock）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "picclear": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.picclear.app.unlock）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "qrcodehalo": {
+   "evidence": "en-US 商店描述寫明一次購買解鎖、無訂閱字樣",
+   "type": "one_time_unlock"
+  },
+  "savetag": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.SaveTag.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "scanto": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.OfflineScannerPro.fullunlock）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "sereno": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.Sereno.pro.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "shotinbox": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.ShotInbox.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "snapport": {
+   "evidence": "ASC 0 內購＋商店售價 USD 5.99（2026-09-06）",
+   "type": "paid_upfront"
+  },
+  "snapportlite": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.SnapportLite.premium）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "sononote": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.caitlyn.clearnotevoice.pro.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "stayclock": {
+   "evidence": "en-US 商店描述寫明一次購買解鎖、無訂閱字樣",
+   "type": "one_time_unlock"
+  },
+  "studydown": {
+   "evidence": "en-US 商店描述寫明一次購買解鎖、無訂閱字樣",
+   "type": "one_time_unlock"
+  },
+  "tripbee": {
+   "evidence": "ASC 0 內購＋商店售價 USD 5.99（2026-09-06）",
+   "type": "paid_upfront"
+  },
+  "tripbeelite": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.TripbeeLite.premium）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "tripplanet": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.TripPlanet.plus）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "unblurry": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.unblurry.app.pro）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "wifiaid": {
+   "evidence": "ASC 0 內購＋商店售價 USD 5.99（2026-09-06）",
+   "type": "paid_upfront"
+  },
+  "wifiaidlite": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.WiFiAidLite.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "wordmate": {
+   "evidence": "ASC 0 內購＋商店售價 USD 8.99（2026-09-06）",
+   "type": "paid_upfront"
+  },
+  "wordmatelite": {
+   "evidence": "ASC 核准 NON_CONSUMABLE（com.alice51849.WordmateLite.lifetime）、0 個訂閱群組（2026-09-06）",
+   "type": "one_time_unlock"
+  },
+  "zipbox": {
+   "evidence": "商店售價 USD 4.99＋en-US 商店描述寫明一次購買",
+   "type": "paid_upfront"
+  }
+ },
+ "sources": {
+  "monetization_cache_fetched": "2026-09-06",
+  "store_prices_fetched": "2026-10-18T16:52:06Z"
+ }
+}

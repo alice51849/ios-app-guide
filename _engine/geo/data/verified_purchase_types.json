@@ -45,6 +45,10 @@
    "evidence": "en-US 商店描述寫明一次購買解鎖、無訂閱字樣",
    "type": "one_time_unlock"
   },
+  "easyam": {
+   "evidence": "en-US 商店描述寫明一次購買解鎖、無訂閱字樣",
+   "type": "one_time_unlock"
+  },
   "gmoney": {
    "evidence": "ASC 0 內購＋商店售價 USD 4.99（2026-09-06）",
    "type": "paid_upfront"
@@ -216,6 +220,6 @@
  },
  "sources": {
   "monetization_cache_fetched": "2026-09-06",
-  "store_prices_fetched": "2026-10-18T16:52:06Z"
+  "store_prices_fetched": "2026-10-20T09:04:37Z"
  }
 }

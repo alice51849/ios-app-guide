@@ -174,6 +174,68 @@ def review_block(app_id: str, href: str, locale: str) -> str:
     )
 
 
+# Review-only sections (2026-10-20 coverage sample: about 9% of indexable
+# single-App pages had a download link but no review link, all in these
+# families). They get the review link and nothing else: this list is
+# deliberately separate from gen_smart_app_banners.BUYER_INTENT_SECTIONS so
+# the Smart App Banner, sticky CTA, QR card and share action keep their
+# current inventory. stories stays out: Web Stories are AMP documents whose
+# body may only hold <amp-story> and whose single CTA validate_webstories.py
+# pins, so a review block there would break the story.
+REVIEW_ONLY_SECTIONS = ("tools", "data", "tutorials")
+# apps/<key>/decision/l/<locale>/index.html (app_install_decision_routes.py).
+DECISION_PAGE_GLOB = "apps/*/decision/l/*/index.html"
+NOINDEX_RE = re.compile(
+    r"<meta\b(?=[^>]*\bname=[\"']robots[\"'])"
+    r"(?=[^>]*\bcontent=[\"'][^\"']*\bnoindex\b)[^>]*>",
+    re.IGNORECASE,
+)
+
+
+def review_only_pages(pages: Path) -> set[Path]:
+    """Candidate pages of the review-only families (root + official locales).
+
+    Section index pages stay out like in the buyer-intent inventory; whether a
+    candidate really gets the block (one live App, indexable, store locale) is
+    decided per page by the caller.
+    """
+    paths: set[Path] = set()
+    containers = [pages] + [
+        pages / locale for locale in OFFICIAL_LOCALES if (pages / locale).is_dir()
+    ]
+    for container in containers:
+        for section in REVIEW_ONLY_SECTIONS:
+            directory = container / section
+            if directory.is_dir():
+                paths.update(
+                    path.resolve()
+                    for path in directory.glob("*.html")
+                    if path.name != "index.html"
+                )
+    paths.update(
+        path.resolve()
+        for path in pages.glob(DECISION_PAGE_GLOB)
+        if path.parent.name in OFFICIAL_LOCALES
+    )
+    return paths
+
+
+def review_page_locale(path: Path, pages: Path) -> str | None:
+    """Official locale of a review-only page; ``None`` when it has none."""
+    parts = path.resolve().relative_to(pages.resolve()).parts
+    if len(parts) == 6 and parts[0] == "apps" and parts[2:4] == ("decision", "l"):
+        return parts[4] if parts[4] in OFFICIAL_LOCALES else None
+    if len(parts) == 3 and parts[0] in OFFICIAL_LOCALES:
+        return parts[0]
+    if len(parts) == 2:
+        return "en-US"
+    return None
+
+
+def is_noindex(source: str) -> bool:
+    return bool(NOINDEX_RE.search(source))
+
+
 def strip_review(source: str) -> str:
     return BLOCK_RE.sub("\n", source)
 

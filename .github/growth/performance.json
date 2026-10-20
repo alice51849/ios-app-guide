@@ -1,29 +1,33 @@
 {
-  "updated_at": "2026-10-19T04:27:20Z",
+  "updated_at": "2026-10-20T04:38:15Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
-    "instagram": "ok: 17 posts",
+    "instagram": "ok: 22 posts",
     "threads": "ok: 21 posts"
   },
   "boost": [
+    "onepageppt",
     "unblurry",
     "battai",
-    "onepageppt",
-    "lumibopomofo_b",
-    "notesstudio100"
+    "notesstudio100",
+    "wifiaidlite"
   ],
   "demote": [
-    "hourstaglite",
     "qrcodehalo",
-    "snapport",
     "ledmovingtext",
-    "lumiletters"
+    "wordmate",
+    "lumiletters",
+    "lumimath"
   ],
   "hook_winners": {
     "apps": {
-      "lumibopomofo/zh-Hant": "c"
+      "claudeusagemini/en": "c",
+      "lumibopomofo/zh-Hant": "c",
+      "lumibopomofo_b/zh-Hant": "c"
     },
-    "locales": {},
+    "locales": {
+      "zh-Hant": "b"
+    },
     "global": "b"
   },
   "allocation": {
@@ -31,8 +35,8 @@
     "window": 14,
     "channels": {
       "instagram": {
-        "posts": 13,
-        "median_views": 2,
+        "posts": 14,
+        "median_views": 2.0,
         "keep_slot": 1,
         "daily": 2
       },
@@ -45,9 +49,20 @@
     },
     "best": null,
     "reduced": [],
-    "decision": "等資料：每通路需 14 則有洞察的鉤子片（目前 Instagram 13、Threads 3）"
+    "decision": "各通路近 14 則觀看中位數皆 ≥ 20 或已是最佳，維持每天 2 則"
   },
   "best_hours": {
+    "instagram": {
+      "zh-Hant": {
+        "hour": 5,
+        "avg_views": 4.0,
+        "posts": 11,
+        "hours": {
+          "5": 4.0,
+          "9": 0.3
+        }
+      }
+    },
     "threads": {
       "en": {
         "hour": 8,
@@ -61,53 +76,44 @@
         }
       },
       "zh-Hant": {
-        "hour": 6,
-        "avg_views": 27.0,
-        "posts": 10,
+        "hour": 13,
+        "avg_views": 79.0,
+        "posts": 11,
         "hours": {
-          "6": 27.0,
+          "6": 27.5,
+          "13": 79.0,
           "16": 10.0,
           "23": 6.0
         }
       }
     }
   },
-  "best_hours_status": {
-    "instagram": "17/20 則"
-  },
+  "best_hours_status": {},
   "ranking": {
     "apps": [
       {
+        "key": "onepageppt",
+        "posts": 2,
+        "views": 158,
+        "engagement": 2,
+        "score": 168,
+        "avg_score": 84.0
+      },
+      {
         "key": "unblurry",
         "posts": 1,
-        "views": 74,
+        "views": 75,
         "engagement": 1,
-        "score": 77,
-        "avg_score": 77.0
+        "score": 78,
+        "avg_score": 78.0
       },
       {
         "key": "battai",
         "posts": 2,
-        "views": 134,
+        "views": 135,
         "engagement": 0,
-        "score": 134,
-        "avg_score": 67.0
-      },
-      {
-        "key": "onepageppt",
-        "posts": 1,
-        "views": 34,
-        "engagement": 1,
-        "score": 39,
-        "avg_score": 39.0
-      },
-      {
-        "key": "lumibopomofo_b",
-        "posts": 2,
-        "views": 46,
-        "engagement": 2,
-        "score": 56,
-        "avg_score": 28.0
+        "score": 135,
+        "avg_score": 67.5
       },
       {
         "key": "notesstudio100",
@@ -118,20 +124,28 @@
         "avg_score": 21.0
       },
       {
-        "key": "claudeusagemini",
-        "posts": 3,
-        "views": 52,
-        "engagement": 2,
-        "score": 62,
-        "avg_score": 20.7
-      },
-      {
         "key": "wifiaidlite",
         "posts": 1,
-        "views": 20,
+        "views": 21,
         "engagement": 0,
-        "score": 20,
+        "score": 21,
+        "avg_score": 21.0
+      },
+      {
+        "key": "lumibopomofo_b",
+        "posts": 3,
+        "views": 50,
+        "engagement": 2,
+        "score": 60,
         "avg_score": 20.0
+      },
+      {
+        "key": "claudeusagemini",
+        "posts": 4,
+        "views": 57,
+        "engagement": 2,
+        "score": 67,
+        "avg_score": 16.8
       },
       {
         "key": "sononote",
@@ -190,14 +204,6 @@
         "avg_score": 7.0
       },
       {
-        "key": "maskmyfile",
-        "posts": 3,
-        "views": 15,
-        "engagement": 1,
-        "score": 20,
-        "avg_score": 6.7
-      },
-      {
         "key": "shotinbox",
         "posts": 1,
         "views": 6,
@@ -220,6 +226,14 @@
         "engagement": 0,
         "score": 11,
         "avg_score": 5.5
+      },
+      {
+        "key": "maskmyfile",
+        "posts": 4,
+        "views": 15,
+        "engagement": 1,
+        "score": 20,
+        "avg_score": 5.0
       },
       {
         "key": "scanto",
@@ -270,15 +284,15 @@
         "avg_score": 3.0
       },
       {
-        "key": "qrcodehalo",
+        "key": "snapport",
         "posts": 1,
-        "views": 2,
+        "views": 3,
         "engagement": 0,
-        "score": 2,
-        "avg_score": 2.0
+        "score": 3,
+        "avg_score": 3.0
       },
       {
-        "key": "snapport",
+        "key": "qrcodehalo",
         "posts": 1,
         "views": 2,
         "engagement": 0,
@@ -294,7 +308,23 @@
         "avg_score": 1.5
       },
       {
+        "key": "wordmate",
+        "posts": 1,
+        "views": 1,
+        "engagement": 0,
+        "score": 1,
+        "avg_score": 1.0
+      },
+      {
         "key": "lumiletters",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "key": "lumimath",
         "posts": 1,
         "views": 0,
         "engagement": 0,
@@ -306,26 +336,26 @@
       {
         "key": "ja",
         "posts": 1,
-        "views": 24,
+        "views": 25,
         "engagement": 0,
-        "score": 24,
-        "avg_score": 24.0
+        "score": 25,
+        "avg_score": 25.0
       },
       {
         "key": "zh-Hant",
-        "posts": 18,
-        "views": 305,
-        "engagement": 8,
-        "score": 345,
-        "avg_score": 19.2
+        "posts": 22,
+        "views": 435,
+        "engagement": 9,
+        "score": 480,
+        "avg_score": 21.8
       },
       {
         "key": "en",
-        "posts": 20,
-        "views": 192,
+        "posts": 22,
+        "views": 198,
         "engagement": 3,
-        "score": 205,
-        "avg_score": 10.2
+        "score": 211,
+        "avg_score": 9.6
       },
       {
         "key": "cs",
@@ -338,13 +368,23 @@
       {
         "key": "de",
         "posts": 2,
-        "views": 2,
+        "views": 3,
         "engagement": 1,
-        "score": 5,
-        "avg_score": 2.5
+        "score": 6,
+        "avg_score": 3.0
       }
     ],
     "hooks": [
+      {
+        "app": "onepageppt",
+        "locale": "zh-Hant",
+        "hook": "笔记、截图、PDF一键生成PPT。",
+        "posts": 1,
+        "views": 124,
+        "engagement": 1,
+        "score": 129,
+        "avg_score": 129.0
+      },
       {
         "app": "battai",
         "locale": "zh-Hant",
@@ -360,10 +400,10 @@
         "locale": "en",
         "hook": "Unblur photos in HD.",
         "posts": 1,
-        "views": 74,
+        "views": 75,
         "engagement": 1,
-        "score": 77,
-        "avg_score": 77.0
+        "score": 78,
+        "avg_score": 78.0
       },
       {
         "app": "onepageppt",
@@ -380,10 +420,10 @@
         "locale": "zh-Hant",
         "hook": "Claude、Codex、Copilot、Gemini 一起看",
         "posts": 2,
-        "views": 52,
+        "views": 53,
         "engagement": 2,
-        "score": 62,
-        "avg_score": 31.0
+        "score": 63,
+        "avg_score": 31.5
       },
       {
         "app": "lumibopomofo_b",
@@ -400,10 +440,10 @@
         "locale": "ja",
         "hook": "状態スコアと その要因まで",
         "posts": 1,
-        "views": 24,
+        "views": 25,
         "engagement": 0,
-        "score": 24,
-        "avg_score": 24.0
+        "score": 25,
+        "avg_score": 25.0
       },
       {
         "app": "notesstudio100",
@@ -420,10 +460,10 @@
         "locale": "zh-Hant",
         "hook": "“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测",
         "posts": 1,
-        "views": 20,
+        "views": 21,
         "engagement": 0,
-        "score": 20,
-        "avg_score": 20.0
+        "score": 21,
+        "avg_score": 21.0
       },
       {
         "app": "sononote",
@@ -646,9 +686,39 @@
         "avg_score": 4.0
       },
       {
+        "app": "lumibopomofo_b",
+        "locale": "zh-Hant",
+        "hook": "選對注音 餵小夥伴",
+        "posts": 1,
+        "views": 4,
+        "engagement": 0,
+        "score": 4,
+        "avg_score": 4.0
+      },
+      {
+        "app": "claudeusagemini",
+        "locale": "en",
+        "hook": "Translated into 50 languages",
+        "posts": 1,
+        "views": 4,
+        "engagement": 0,
+        "score": 4,
+        "avg_score": 4.0
+      },
+      {
         "app": "hourstag",
         "locale": "en",
         "hook": "That impulse buy did not cost you money. It cost you a whole",
+        "posts": 1,
+        "views": 3,
+        "engagement": 0,
+        "score": 3,
+        "avg_score": 3.0
+      },
+      {
+        "app": "snapport",
+        "locale": "de",
+        "hook": "Alles auf dem iPhone, nie hochgeladen",
         "posts": 1,
         "views": 3,
         "engagement": 0,
@@ -676,14 +746,14 @@
         "avg_score": 2.0
       },
       {
-        "app": "snapport",
-        "locale": "de",
-        "hook": "Alles auf dem iPhone, nie hochgeladen",
+        "app": "wordmate",
+        "locale": "en",
+        "hook": "Pick from 44 languages",
         "posts": 1,
-        "views": 2,
+        "views": 1,
         "engagement": 0,
-        "score": 2,
-        "avg_score": 2.0
+        "score": 1,
+        "avg_score": 1.0
       },
       {
         "app": "claudeusagemini",
@@ -734,24 +804,44 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "lumimath",
+        "locale": "zh-Hant",
+        "hook": "",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "maskmyfile",
+        "locale": "zh-Hant",
+        "hook": "全程在裝置上處理",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
       {
         "key": "b",
-        "posts": 6,
-        "views": 78,
+        "posts": 7,
+        "views": 84,
         "engagement": 4,
-        "score": 96,
-        "avg_score": 16.0
+        "score": 102,
+        "avg_score": 14.6
       },
       {
         "key": "c",
-        "posts": 8,
-        "views": 70,
+        "posts": 11,
+        "views": 76,
         "engagement": 4,
-        "score": 90,
-        "avg_score": 11.2
+        "score": 96,
+        "avg_score": 8.7
       },
       {
         "key": "a",
@@ -1061,12 +1151,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 74,
+        "views": 75,
         "likes": 1,
         "replies": 0,
         "reposts": 0
       },
-      "score": 77
+      "score": 78
     },
     {
       "channel": "threads",
@@ -1080,12 +1170,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 20,
+        "views": 21,
         "likes": 0,
         "replies": 0,
         "reposts": 0
       },
-      "score": 20
+      "score": 21
     },
     {
       "channel": "threads",
@@ -1278,12 +1368,12 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 45,
+        "views": 46,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 50
+      "score": 51
     },
     {
       "channel": "instagram",
@@ -1484,14 +1574,14 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 24,
-        "reach": 23,
+        "views": 25,
+        "reach": 24,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 24
+      "score": 25
     },
     {
       "channel": "threads",
@@ -1566,14 +1656,14 @@
       "kind": "clip",
       "variant": "c",
       "metrics": {
-        "views": 2,
-        "reach": 3,
+        "views": 3,
+        "reach": 4,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 2
+      "score": 3
     },
     {
       "channel": "instagram",
@@ -1595,6 +1685,130 @@
         "replies": 0
       },
       "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18102504218036812",
+      "link": "https://www.instagram.com/reel/DeqnaEsivJ_/",
+      "posted_at": "2026-10-19T06:29:26",
+      "app": "lumibopomofo_b",
+      "locale": "zh-Hant",
+      "hook": "選對注音 餵小夥伴",
+      "clip": "lumibopomofo_b/zh-Hant",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 4,
+        "reach": 4,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 4
+    },
+    {
+      "channel": "instagram",
+      "id": "18120703888946268",
+      "link": "https://www.instagram.com/p/DerFyhRFhhC/",
+      "posted_at": "2026-10-19T10:54:40",
+      "app": "lumimath",
+      "locale": "zh-Hant",
+      "hook": "",
+      "clip": "utility/count/lumimath/count_1/zh-Hant",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "threads",
+      "id": "18012765272985453",
+      "link": "https://www.threads.com/@hourstag.app/post/DerWrQwGIBY",
+      "posted_at": "2026-10-19T13:24:20",
+      "app": "onepageppt",
+      "locale": "zh-Hant",
+      "hook": "笔记、截图、PDF一键生成PPT。",
+      "clip": null,
+      "kind": "image",
+      "variant": null,
+      "metrics": {
+        "views": 124,
+        "likes": 0,
+        "replies": 1,
+        "reposts": 0
+      },
+      "score": 129
+    },
+    {
+      "channel": "instagram",
+      "id": "18097126295662665",
+      "link": "https://www.instagram.com/p/DeriAUtoBou/",
+      "posted_at": "2026-10-19T15:01:09",
+      "app": "maskmyfile",
+      "locale": "zh-Hant",
+      "hook": "全程在裝置上處理",
+      "clip": "maskmyfile/zh-Hant",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18126934459868096",
+      "link": "https://www.instagram.com/reel/Derla2TCe8g/",
+      "posted_at": "2026-10-19T15:31:14",
+      "app": "wordmate",
+      "locale": "en",
+      "hook": "Pick from 44 languages",
+      "clip": "wordmate/en",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 1,
+        "reach": 1,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 1
+    },
+    {
+      "channel": "instagram",
+      "id": "18097125251639052",
+      "link": "https://www.instagram.com/reel/DersnBlIFMm/",
+      "posted_at": "2026-10-19T16:34:06",
+      "app": "claudeusagemini",
+      "locale": "en",
+      "hook": "Translated into 50 languages",
+      "clip": "claudeusagemini/en",
+      "kind": "clip",
+      "variant": "c",
+      "metrics": {
+        "views": 4,
+        "reach": 3,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 4
     }
   ]
 }

@@ -1683,6 +1683,8 @@ def apply_locale_text_overrides(
     out: dict[str, str] = {}
     for source, target in mapping.items():
         text = overrides.get(source, source if source in BRANDS else target)
+        if source == PURCHASE_LABEL_LIST and text == source:
+            text = localized_purchase_label_list(lang) or text
         # The per-locale word table exists to nativise leftover English inside
         # an already translated sentence.  Running it over a sentence that is
         # still English yields half-translated copy ("One-time buka kunci"),
@@ -1692,6 +1694,128 @@ def apply_locale_text_overrides(
             text = apply_locale_target_replacements(text, lang)
         out[source] = text
     return out
+
+
+# 「最適合」(Best for) 欄的購買模式標籤:aeo_answers.feature_list 以 "; " 串起
+# 付費買斷款 registry 的 cta_bullets。整串在多數語系字典裡沒有逐字條目,
+# 頁面就留著英文 `Paid download; Pay once; No subscription`。
+PURCHASE_LABEL_PARTS = ("Paid download", "Pay once", "No subscription")
+PURCHASE_LABEL_LIST = "; ".join(PURCHASE_LABEL_PARTS)
+# 依序試切既有長版條目的在地分隔符(fr 的 " ; " 要排在 "; " 前面)。
+_PURCHASE_LABEL_SEPARATORS = ("；", "、", "؛ ", " ; ", "; ", ", ")
+
+
+@functools.lru_cache(maxsize=None)
+def _locale_dictionary(lang: str) -> dict[str, str]:
+    path = Path(__file__).resolve().parent / "i18n_trans" / f"{lang}.json"
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def _purchase_label_from_dictionary(lang: str) -> str | None:
+    """只取字典**既有**的譯法,不機翻、不新造。
+
+    1. 逐字條目 `Paid download; Pay once; No subscription`;
+    2. 否則取同一欄較長條目(例如 `…; Home Screen widget`)的前三段,
+       段數要跟英文對得上才用。
+    """
+    dictionary = _locale_dictionary(lang)
+    exact = dictionary.get(PURCHASE_LABEL_LIST)
+    if exact:
+        return exact
+    prefix = PURCHASE_LABEL_LIST + "; "
+    for key in sorted(dictionary):
+        if not key.startswith(prefix):
+            continue
+        count = key.count("; ") + 1
+        value = dictionary[key]
+        for separator in _PURCHASE_LABEL_SEPARATORS:
+            parts = value.split(separator)
+            if len(parts) == count and all(part.strip() for part in parts):
+                return separator.join(
+                    part.strip() for part in parts[: len(PURCHASE_LABEL_PARTS)]
+                )
+    return None
+
+
+@functools.lru_cache(maxsize=None)
+def localized_purchase_label_list(lang: str) -> str | None:
+    """`Paid download; Pay once; No subscription` 在 lang 的既有說法;沒有就 None。
+
+    免費門守門:譯文裡的「付費下載」必須是 gen_free_first_links
+    purchase_model_rewrites(lang) 認得的在地付費說法。這樣日後該頁換成免費
+    加一次解鎖的門時,改寫器照樣能把它換成免費說法;認不得的語系維持英文
+    (英文 `Paid download` 改寫器一定認得),絕不留下把免費款寫成付費的在地字。
+    """
+    if not lang or lang in ENGLISH_LOCALES:
+        return None
+    label = _purchase_label_from_dictionary(lang)
+    if not label or label == PURCHASE_LABEL_LIST:
+        return None
+    try:
+        import gen_free_first_links
+        rewrites = gen_free_first_links.purchase_model_rewrites(lang)
+        english = gen_free_first_links.purchase_model_pairs().get("en", {})
+    except Exception:  # noqa: BLE001 - 判不準就不在地化
+        return None
+    if not any(
+        paid in label for paid, _free in rewrites if paid not in english
+    ):
+        return None
+    return label
+
+
+def relabel_purchase_label_lists(source: str, lang: str) -> tuple[str, int]:
+    """把既有在地化頁上仍是英文的購買模式標籤換成在地說法。
+
+    給 --refresh 用:頁面因整體覆蓋率門檻不重產時,這一欄仍要跟著頁面語系。
+    只換整段恰好等於 PURCHASE_LABEL_LIST 的文字/屬性/JSON-LD 字串;
+    免費門頁不動(那頁的購買模式歸 gen_free_first_links 管)。
+    回 (新 HTML, 換了幾處)。
+    """
+    label = localized_purchase_label_list(lang)
+    if not label or PURCHASE_LABEL_LIST not in source:
+        return source, 0
+    try:
+        import gen_free_first_links
+        if gen_free_first_links.is_free_door_page(source):
+            return source, 0
+    except Exception:  # noqa: BLE001 - 判不準就不動
+        return source, 0
+    _strings, spans, json_spans = extract_strings(source)
+    mapping = {PURCHASE_LABEL_LIST: label}
+    replacements: list[tuple[int, int, str]] = []
+    count = 0
+    for start, end, original, kind in spans:
+        if original != PURCHASE_LABEL_LIST:
+            continue
+        escaped = html.escape(label, quote=(kind == "content"))
+        if kind == "text":
+            raw = source[start:end]
+            leading = re.match(r"\s*", raw).group(0)
+            trailing = re.search(r"\s*$", raw).group(0)
+            escaped = f"{leading}{escaped}{trailing}"
+        replacements.append((start, end, escaped))
+        count += 1
+    for start, end, raw in json_spans:
+        if PURCHASE_LABEL_LIST not in raw:
+            continue
+        try:
+            obj = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+        patched = apply_json_mapping(obj, mapping)
+        if patched == obj:
+            continue
+        replacements.append(
+            (start, end, "\n" + json.dumps(patched, ensure_ascii=False, indent=2) + "\n")
+        )
+        count += 1
+    if not replacements:
+        return source, 0
+    return replace_spans(source, replacements), count
 
 
 def apply_locale_target_replacements(text: str, lang: str) -> str:
@@ -2937,7 +3061,7 @@ def run_refresh(
             q.stem for q in ANSWERS.glob("*.html") if q.name != "index.html"
         )
 
-    improved = unchanged = failed = renamed = 0
+    improved = unchanged = failed = renamed = relabeled = 0
     touched_slugs: list[str] = []
     for slug in candidates:
         src_path = ANSWERS / f"{slug}.html"
@@ -2966,10 +3090,21 @@ def run_refresh(
                 continue
             old_ratio = _existing_untranslated_ratio(existing, strings)
             if new_ratio > old_ratio - min_gain:
+                relabeled_text, relabel_count = relabel_purchase_label_lists(
+                    existing, lang
+                )
+                if relabel_count:
+                    target.write_text(relabeled_text, encoding="utf-8")
+                    relabeled += 1
+                    slug_touched = True
+                    print(
+                        f"relabeled purchase model in {lang}/{slug}.html",
+                        flush=True,
+                    )
                 if _refresh_brand_names(target, source, lang, slug):
                     renamed += 1
                     slug_touched = True
-                else:
+                elif not relabel_count:
                     unchanged += 1
                 continue
             try:
@@ -3003,6 +3138,7 @@ def run_refresh(
             {
                 "refreshed": improved,
                 "renamed": renamed,
+                "relabeled": relabeled,
                 "unchanged": unchanged,
                 "failed": failed,
             },

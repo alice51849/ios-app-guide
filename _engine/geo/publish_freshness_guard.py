@@ -53,6 +53,11 @@ GUIDE_MIRROR_PREFIX = "_engine/"
 
 DEFAULT_ALERT_DIR = "~/AgentOffice/deep_qa/state/GUIDE_PUBLISH_GUARD"
 
+# 指南站 repo 內的 _engine 鏡像：由同一個 checkout 的指南站主線提供，天然最新，
+# 而且本身不是 git checkout。只有完全確定是這種情況才跳過；判斷不了照舊擋。
+GUIDE_REPO_SLUG = "alice51849/ios-app-guide"
+GUIDE_MIRROR_DIRNAME = "_engine"
+
 
 class PublishFreshnessBlocked(RuntimeError):
     returncode = BLOCKED_RETURNCODE
@@ -110,6 +115,40 @@ def _is_toplevel(repo):
     if result.returncode != 0:
         return False
     return Path(result.stdout.strip()).resolve() == Path(repo).resolve()
+
+
+def _origin_is_guide_repo(repo):
+    result = _git(repo, "remote", "get-url", "origin", check=False)
+    if result.returncode != 0:
+        return False
+    url = result.stdout.strip().lower()
+    if url.endswith(".git"):
+        url = url[:-4]
+    url = url.rstrip("/")
+    return url.endswith("/" + GUIDE_REPO_SLUG) or url.endswith(":" + GUIDE_REPO_SLUG)
+
+
+def guide_mirror_reason(engine):
+    """Return why `engine` is certainly the _engine mirror inside an
+    ios-app-guide checkout, or None when that cannot be established."""
+    engine = Path(engine).resolve()
+    if engine.name != GUIDE_MIRROR_DIRNAME or _is_toplevel(engine):
+        return None
+    guide = engine.parent
+    if not (engine / "geo" / "publish_freshness_guard.py").is_file():
+        return None
+    if not _is_toplevel(guide) or not _origin_is_guide_repo(guide):
+        return None
+    tracked = _git(
+        guide, "ls-files", "--error-unmatch", "--",
+        f"{GUIDE_MIRROR_DIRNAME}/geo/publish_freshness_guard.py", check=False,
+    )
+    if tracked.returncode != 0:
+        return None
+    return (
+        f"{engine} 是指南站 repo（{GUIDE_REPO_SLUG}）內追蹤的 _engine 鏡像，"
+        "由同一個 checkout 的指南站主線提供，不是本機 00_GrowthEngine checkout"
+    )
 
 
 def _fetch(repo, label, fetch, problems):
@@ -265,6 +304,10 @@ def check(engine_root, pages_root, *, fetch=default_fetch):
 
 def _check(engine, pages, fetch, problems, facts):
     if not _is_toplevel(engine):
+        reason = guide_mirror_reason(engine)
+        if reason:
+            facts["guide_mirror"] = reason
+            return
         problems.append(f"00_GrowthEngine 不是獨立 git checkout：{engine}")
         return
     if not _is_toplevel(pages):
@@ -314,6 +357,12 @@ def write_alert(problems, facts, caller, alert_dir=None):
 
 def require_fresh(engine_root, pages_root, *, caller, fetch=default_fetch, alert_dir=None):
     problems, facts = check(engine_root, pages_root, fetch=fetch)
+    if not problems and facts.get("guide_mirror"):
+        print(
+            f"ℹ️ 新鮮度閘門跳過（{caller}）：{facts['guide_mirror']}；"
+            "本機 00_GrowthEngine checkout 照常檢查"
+        )
+        return facts
     if not problems:
         print(
             f"✅ 新鮮度閘門通過（{caller}）：00_GrowthEngine {str(facts.get('engine_head'))[:12]}、"
@@ -339,6 +388,8 @@ def main(argv=None):
     problems, facts = check(here.parent, pages)
     for problem in problems:
         print(f"- {problem}")
+    if facts.get("guide_mirror"):
+        print(f"跳過：{facts['guide_mirror']}")
     print("OK" if not problems else f"BLOCKED（{len(problems)} 項）")
     return 0 if not problems else BLOCKED_RETURNCODE
 

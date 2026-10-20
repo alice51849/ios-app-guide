@@ -104,7 +104,7 @@
     "subtitle": "Clear rules, sources, and limits",
     "keywords": "Battery health score,Maximum capacity,Cycles,Charge care,Charge range,Charge rate,Export data",
     "description": "BattAI\nBattAI uses five values from public iOS APIs: battery level, charge state, Low Power Mode, whole-device thermal state, and time. Other results are calculated from those readings or added by you. Each detail shows its source and limits.\n\nHealth\n• Battery health score\n• What shapes the score\n• Maximum capacity over time\n• Maximum capacity\n• Cycles\n\nCharging\n• Charge care\n• Charge range\n• Charge rate\n\nExport data\n• Create a file on this device. Nothing is uploaded.\n• Built on this device. No data is uploaded.\n\nPrivacy\n• No ads, analytics, tracking, third-party SDKs, or internet requests. Data stays here, except for a minimal snapshot sent directly to your paired Apple Watch.\n• BattAI reads only cycle count, nominal charge capacity, and design capacity. Other file data is discarded immediately and never stored or sent.\n\nUnderstand your battery over time\n• Unlock deeper history, planning, and reports.\n• One payment. No subscription.",
-    "promotionalText": "Understand your battery over time Clear rules, sources, and limits Unlock deeper history, planning, and reports. One payment. No subscription.",
+    "promotionalText": "Upgrading before the holidays? Make a clear battery report for resale or service, save it as a PNG, and see maximum capacity over time and the estimated time to 80%.",
     "supportUrl": "https://alice51849.github.io/battai-support/locales/en/",
     "marketingUrl": "https://alice51849.github.io/battai-support/locales/en/",
     "privacyPolicyUrl": "https://alice51849.github.io/battai-support/locales/en/privacy.html"
@@ -234,7 +234,7 @@
     "subtitle": "ルール、情報源、限界を明確に",
     "keywords": "バッテリー状態スコア,最大容量,充放電回数,充電ケア,充電範囲,充電速度,データを書き出す",
     "description": "BattAI\nBattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。\n\n状態\n• バッテリー状態スコア\n• スコアを形づくる要因\n• 最大容量の推移\n• 最大容量\n• 充放電回数\n\n充電\n• 充電ケア\n• 充電範囲\n• 充電速度\n\nデータを書き出す\n• このデバイスでファイルを作成します。アップロードはしません。\n• このデバイスで作成。データはアップロードしません。\n\nプライバシー\n• 広告、利用解析、追跡、他社SDK、通信はありません。データはここに保存し、ペアリング済みApple Watchへ最小スナップショットだけを直接送ります。\n• BattAIが読むのは充放電回数、公称充電容量、設計容量だけです。ほかの内容はすぐ破棄し、保存も送信もしません。\n\n電池の変化を長く見守る\n• より深い履歴、計画、レポートを使えます。\n• 支払いは一度だけ。サブスクリプションなし。",
-    "promotionalText": "電池の変化を長く見守る ルール、情報源、限界を明確に より深い履歴、計画、レポートを使えます。 支払いは一度だけ。サブスクリプションなし。",
+    "promotionalText": "年末の機種変更や売却の前に。サービスや売却に使えるわかりやすい電池レポートをPNGで保存し、最大容量の推移と80%までの推定期間もチェック。データは端末内だけ。",
     "supportUrl": "https://alice51849.github.io/battai-support/locales/ja/",
     "marketingUrl": "https://alice51849.github.io/battai-support/locales/ja/",
     "privacyPolicyUrl": "https://alice51849.github.io/battai-support/locales/ja/privacy.html"
@@ -254,7 +254,7 @@
     "subtitle": "규칙, 출처, 한계를 분명하게",
     "keywords": "배터리 상태 점수,성능 최대치,사이클 수,충전 관리,충전 구간,충전 속도,데이터 내보내기",
     "description": "BattAI\nBattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간까지 다섯 가지예요. 다른 결과는 기록에서 계산하거나 직접 추가해요. 각 항목에 출처와 한계를 표시해요.\n\n상태\n• 배터리 상태 점수\n• 점수를 만드는 요소\n• 성능 최대치 추세\n• 성능 최대치\n• 사이클 수\n\n충전\n• 충전 관리\n• 충전 구간\n• 충전 속도\n\n데이터 내보내기\n• 이 기기에서 파일을 만들어요. 업로드하지 않아요.\n• 이 기기에서 만들며 업로드하지 않아요.\n\n개인정보 보호\n• 광고, 분석, 추적, 타사 SDK, 네트워크 요청이 없어요. 데이터는 여기에 저장하고 페어링된 Apple Watch로 최소 스냅샷만 직접 보내요.\n• BattAI는 사이클 수, 공칭 충전 용량, 설계 용량만 읽어요. 다른 내용은 바로 버리고 저장하거나 보내지 않아요.\n\n시간에 따른 배터리 변화를 이해하세요\n• 더 깊은 기록, 계획, 리포트를 이용할 수 있어요.\n• 한 번만 결제하면 됩니다. 구독은 없어요.",
-    "promotionalText": "시간에 따른 배터리 변화를 이해하세요 규칙, 출처, 한계를 분명하게 더 깊은 기록, 계획, 리포트를 이용할 수 있어요. 한 번만 결제하면 됩니다. 구독은 없어요.",
+    "promotionalText": "연말에 폰을 바꾸고 중고로 팔 계획이라면? 중고 판매·서비스용 깔끔한 배터리 리포트를 PNG로 저장하고, 성능 최대치 추세와 80%까지 예상 기간도 확인하세요.",
     "supportUrl": "https://alice51849.github.io/battai-support/locales/ko/",
     "marketingUrl": "https://alice51849.github.io/battai-support/locales/ko/",
     "privacyPolicyUrl": "https://alice51849.github.io/battai-support/locales/ko/privacy.html"
@@ -374,7 +374,7 @@
     "subtitle": "Понятные правила, источники и ограничения",
     "keywords": "Оценка состояния аккумулятора,Максимальная ёмкость,Циклы,Бережная зарядка,Диапазон заряда,Скорость зарядки,Экспорт данных",
     "description": "BattAI\nBattAI использует пять значений из публичных API iOS: уровень заряда, состояние зарядки, режим энергосбережения, тепловое состояние всего устройства и время. Остальные результаты рассчитываются по этим показаниям или добавляются вами. У каждого показателя указаны источник и ограничения.\n\nСостояние\n• Оценка состояния аккумулятора\n• Что формирует оценку\n• Максимальная ёмкость со временем\n• Максимальная ёмкость\n• Циклы\n\nЗарядка\n• Бережная зарядка\n• Диапазон заряда\n• Скорость зарядки\n\nЭкспорт данных\n• Создайте файл на этом устройстве. Ничего не загружается.\n• Создаётся на этом устройстве. Данные не загружаются.\n\nКонфиденциальность\n• Без рекламы, аналитики, отслеживания, сторонних SDK и интернет-запросов. Данные остаются здесь, кроме минимального снимка, который отправляется напрямую на сопряжённые Apple Watch.\n• BattAI считывает только число циклов, номинальную зарядную ёмкость и проектную ёмкость. Остальные данные файла сразу отбрасываются, не сохраняются и не отправляются.\n\nПонимайте состояние аккумулятора со временем\n• Откройте подробную историю, планирование и отчёты.\n• Один платёж. Без подписки.",
-    "promotionalText": "Понимайте состояние аккумулятора со временем Понятные правила, источники и ограничения Откройте подробную историю, планирование и отчёты. Один платёж. Без подписки.",
+    "promotionalText": "Продаёте телефон перед праздниками? Создайте понятный отчёт об аккумуляторе для продажи или сервиса, сохраните его в PNG и следите за ёмкостью и временем до 80%.",
     "supportUrl": "https://alice51849.github.io/battai-support/locales/ru/",
     "marketingUrl": "https://alice51849.github.io/battai-support/locales/ru/",
     "privacyPolicyUrl": "https://alice51849.github.io/battai-support/locales/ru/privacy.html"
@@ -494,7 +494,7 @@
     "subtitle": "規則、來源與限制都說清楚",
     "keywords": "電池健康分數,最大容量,循環次數,充電保養,充電區間,充電速率,匯出資料",
     "description": "BattAI\nBattAI 只使用公開 iOS API 提供的五項資料：電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。其他結果由這些讀值計算，或由你補充。每一項都會顯示來源與限制。\n\n健康\n• 電池健康分數\n• 評分依據\n• 最大容量趨勢\n• 最大容量\n• 循環次數\n\n充電\n• 充電保養\n• 充電區間\n• 充電速率\n\n匯出資料\n• 在這台裝置上產生檔案，不會上傳。\n• 在這台裝置上產生，不會上傳資料。\n\n隱私權\n• 沒有廣告、分析、追蹤、第三方 SDK 或網路請求。資料儲存在這裡，只會把最小快照直接傳給已配對的 Apple Watch。\n• BattAI 只讀取循環次數、標稱充電容量與設計容量。其他內容會立即捨棄，不儲存也不傳送。\n\n看懂電池隨時間的變化\n• 解鎖更深入的記錄、規劃與報告。\n• 只付一次，絕無訂閱。",
-    "promotionalText": "看懂電池隨時間的變化 規則、來源與限制都說清楚 解鎖更深入的記錄、規劃與報告。 只付一次，絕無訂閱。",
+    "promotionalText": "年底想換新機、賣掉舊手機？建立清楚的電池報告，存成 PNG 給買家或檢修參考；還能看最大容量趨勢與預估到 80% 的時間。資料留在這台裝置上。",
     "supportUrl": "https://alice51849.github.io/battai-support/locales/zh-Hant/",
     "marketingUrl": "https://alice51849.github.io/battai-support/locales/zh-Hant/",
     "privacyPolicyUrl": "https://alice51849.github.io/battai-support/locales/zh-Hant/privacy.html"

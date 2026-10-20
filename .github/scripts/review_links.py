@@ -22,7 +22,8 @@ renamed clip key (UsageNow ships as claudeusagemini) still matches.
 Telegram (12 top-3 formula, 2026-10-20: ratings are the gap on every App) also asks every other App's
 existing users, once per post, after the download links: any_app=True falls back to the same neutral line of
 gen_app_store_review_ctas.py REVIEW_LABELS (read from the _engine/geo mirror as a literal, never imported) in
-the post's locale. The other channels keep the pairs only.
+the post's locale. The social_extra.py feed items do the same (for_clip(clip, any_app=True)); each channel
+there attaches the line only when it fits whole, never by trimming the caption or a download link.
 """
 import ast
 import json

@@ -267,9 +267,11 @@ def clip_item(key, clip, channel, day=None):
             "caption": clip_posts.caption(clip, channel, v), "button": t["button"], "variant": v["id"],
             "alt": SC.alt_text(clip, v), "clip": clip, "v": v,
             "store": clip_posts.with_campaign(clip["store_url"], ct), "play": clip_posts.play_url(clip, ct)}
-    # Existing-user review link (review_links.json pairs only): {"label", "url"}, no ct. It reaches the
-    # feed as is, so the YouTube Shorts description and threads-autopilot's Bluesky posts carry it too.
-    review = review_links.for_clip(clip)
+    # Existing-user review link, every App (12 top-3 formula, 2026-10-20: ratings are the gap on every App; the
+    # review_links.json pairs keep their own line, the others get the neutral any_app line): {"label", "url"}, no ct.
+    # It reaches the feed as is (the YouTube Shorts description, threads-autopilot's Bluesky posts). Every channel
+    # that reads it attaches it only when it fits whole: never by trimming the caption or a download link.
+    review = review_links.for_clip(clip, any_app=True)
     if review:
         item["review"] = review
     return item
@@ -393,12 +395,12 @@ def play_of(item):
         raise DL.MissingDownloadLink(f"the Google Play link cannot be decided: {exc}") from None
 
 
-def link_lines(item):
+def link_lines(item, review=True):
     lines = [f"{button_of(item)}: {item['store']}"]
     play = play_of(item)
     if play:
         lines.append(f"{GOOGLE_PLAY}: {play}")
-    return lines + review_links.lines(item.get("review"))
+    return lines + (review_links.lines(item.get("review")) if review else [])
 
 
 def link_problems(text, item, label):
@@ -500,8 +502,10 @@ def render_facebook(item):
     """Reel description = the caption plus every download link written out (Reel captions are not clickable, like
     Instagram's, so the full URLs are text a person can copy); the same links are the first comment (clickable),
     or - if commenting is refused - a link post. All three carry every download link."""
-    comment = "\n".join(link_lines(item))
-    fallback = "\n".join([item.get("name", ""), item.get("hook", ""), "", *link_lines(item)])
+    # The rating lines go only when the Reel description still fits the limit with them: the whole line or none.
+    review = len(f"{item['caption']}\n\n" + "\n".join(link_lines(item))) <= post_qa.LIMITS["facebook"]
+    comment = "\n".join(link_lines(item, review))
+    fallback = "\n".join([item.get("name", ""), item.get("hook", ""), "", *link_lines(item, review)])
     final = f"{item['caption']}\n\n{comment}"
     return {"final": final, "description": final, "comment": comment,
             "fallback": fallback, "link": item["store"],
@@ -616,12 +620,15 @@ def bsky_video(s, data, tries=60):
     raise RuntimeError("Bluesky video processing timed out")
 
 
-def bsky_links(item):
+def bsky_links(item, limit=None):
     links = [("App Store", item["store"])]
     if play_of(item):
         links.append((GOOGLE_PLAY, play_of(item)))
-    if item.get("review"):  # the review sentence is its own link facet (review_links.json pairs only)
-        links.append((item["review"]["label"], item["review"]["url"]))
+    review = item.get("review")
+    if review:  # the review sentence is its own link facet, only when the caption still fits whole with it
+        tail = "\n\n" + " · ".join(label for label, _ in [*links, (review["label"], review["url"])])
+        if len(item.get("caption") or "") + len(tail) <= (limit or post_qa.LIMITS["bluesky"]):
+            links.append((review["label"], review["url"]))
     return links
 
 
@@ -629,7 +636,7 @@ def render_bluesky(item):
     """The links are facets on their labels, so only the labels count towards the 300 characters; the facets'
     URIs are the link field of this post (part of `final`)."""
     limit = post_qa.LIMITS["bluesky"]
-    text, facets = bsky_rich(item["caption"], bsky_links(item), limit)
+    text, facets = bsky_rich(item["caption"], bsky_links(item, limit), limit)
     if len(text) > limit:
         raise DL.MissingDownloadLink(f"bluesky {item.get('key')}: the link labels do not fit {limit} characters")
     uris = [f["features"][0]["uri"] for f in facets if f["features"][0]["$type"].endswith("#link")]
@@ -697,8 +704,9 @@ def yt_meta(item):
     """(title, description, tags): search-first for clips (search_caption.youtube), the plain shape otherwise."""
     if item.get("clip"):
         links = [f"App Store: {item['store']}"] + ([f"{GOOGLE_PLAY}: {play_of(item)}"] if play_of(item) else [])
-        links += review_links.lines(item.get("review"))  # review_links.json pairs only
-        return SC.youtube(item["clip"], item["v"], links)
+        meta = SC.youtube(item["clip"], item["v"], links + review_links.lines(item.get("review")))
+        # The rating lines go only when the description still fits YouTube's limit with them.
+        return meta if len(meta[1]) <= post_qa.LIMITS["youtube"] else SC.youtube(item["clip"], item["v"], links)
     title, desc = yt_text(item["hook"], item["name"], item["store"], play_of(item), item["tags"])
     return title, desc, [t.lstrip("#") for t in item["tags"]][:10]
 
@@ -937,19 +945,32 @@ def naver_links(item):
     return links
 
 
+def naver_review(item, base):
+    """The item's rating link when `base` (the post without it) still fits Naver's limit with it, else None."""
+    review = item.get("review")
+    if review and len(base) + len("\n".join(["", *review_links.lines(review)])) <= post_qa.LIMITS["naver"]:
+        return review
+    return None
+
+
 def naver_body(item, media):
     text = "<br>".join(html.escape(line) for line in item["caption"].split("\n"))
     links = " · ".join(f'<a href="{html.escape(url)}">{html.escape(label)}</a>' for label, url in naver_links(item))
     body = f"<p>{text}</p>{media}<p>{links}</p>"
-    if item.get("review"):  # review_links.json pairs only (UsageNow / OnePage PPT / CV Desk in Korea)
-        body += (f'<p><a href="{html.escape(item["review"]["url"])}" rel="nofollow">'
-                 f'{html.escape(item["review"]["label"])}</a></p>')
+    review = item.get("review")
+    if review:  # the whole paragraph, only when the HTML still fits Naver's limit with it
+        para = (f'<p><a href="{html.escape(review["url"])}" rel="nofollow">'
+                f'{html.escape(review["label"])}</a></p>')
+        if len(body) + len(para) <= post_qa.LIMITS["naver"]:
+            body += para
     return body
 
 
 def render_naver(item):
-    text = "\n".join([item["caption"], *(f"{label}: {url}" for label, url in naver_links(item)),
-                      *review_links.lines(item.get("review"))])
+    text = "\n".join([item["caption"], *(f"{label}: {url}" for label, url in naver_links(item))])
+    review = naver_review(item, text)
+    if review:
+        text = "\n".join([text, *review_links.lines(review)])
     return {"final": text, "checks": [("text", text)]}
 
 
@@ -1009,14 +1030,15 @@ def base36(n):
 def plurk_content(item, media, limit=360):
     """The plurk: the caption, then the media link and every download link. The links come first and are never
     cut: the caption is trimmed to what is left of the limit (MissingDownloadLink when not even they fit).
-    review_links.json pairs only (OnePage PPT in Taiwan): the rating link follows Google Play, if there is room."""
+    The rating link (every App) follows Google Play only if the caption still fits whole with it."""
     tail = f"\n{media}\n{item['store']} ({button_of(item)})"
     if play_of(item):
         tail += f"\n{play_of(item)} ({GOOGLE_PLAY})"
     if len(tail) > limit:
         raise DL.MissingDownloadLink(f"plurk {item.get('key')}: the download links ({len(tail)} chars) do not fit {limit}")
     review = "\n".join(["", *review_links.lines(item.get("review"))]) if item.get("review") else ""
-    if review and len(tail) + len(review) < limit - 40:
+    # Only when the caption still fits whole with it: the rating link never costs a character of the caption.
+    if review and len(tail) + len(review) < limit - 40 and len(item["caption"]) + len(tail) + len(review) <= limit:
         tail += review
     return fit_head(item["caption"], limit - len(tail)) + tail
 

@@ -748,7 +748,9 @@ class ReviewLinkFeedTest(unittest.TestCase):
         it = S.clip_item("claudeusagemini/ko", pair_clip(), "youtube", DAY)
         self.assertEqual(it["review"]["url"], REVIEW_URL)
         self.assertEqual(it["review"]["label"], S.review_links.config()["labels"]["ko"])
-        self.assertNotIn("review", S.clip_item("claudeusagemini/de", pair_clip("de", "Limit erreicht?"), "youtube", DAY))
+        # Every other App / locale gets the neutral any_app line (2026-10-20); an item with no valid App ID none.
+        de = S.clip_item("claudeusagemini/de", pair_clip("de", "Limit erreicht?"), "youtube", DAY)
+        self.assertEqual(de["review"], {"label": S.review_links.any_app_label("de"), "url": REVIEW_URL})
         self.assertNotIn("review", S.clip_item("a/ko", clip("a", "ko"), "youtube", DAY))
         self.assertEqual(S.public(it, "youtube")["review"], it["review"])  # feed.json keeps it
 
@@ -799,11 +801,11 @@ class ReviewLinkFeedTest(unittest.TestCase):
         self.assertIn("6798814385", DL.store_ids_in(fields["content"]))
         self.assertIn("com.alice51849.OnePagePPT", DL.play_packages_in(fields["content"]))
         self.assertLessEqual(len(fields["content"]), 360)
-        # An app that is not on Android has room for the rating link as well (the original intent of this check).
+        # An app that is not on Android, with a caption that fits whole, has room for the rating link as well.
         fake = Fake([("POST", "/Timeline/plurkAdd", {"plurk_id": 1295})])
         with mock.patch.dict(os.environ, {k: "v" for k in S.SECRETS["plurk"]}, clear=True), \
                 mock.patch.object(S, "http", fake), mock.patch.object(S, "play_store_url", return_value=None):
-            S.post_plurk(dict(pk, play=None))
+            S.post_plurk(dict(pk, play=None, caption="落落長的筆記 變成一頁簡報\n#OnePagePPT"))
         fields = dict(urllib.parse.parse_qsl(fake.find("plurkAdd")[0]["data"].decode()))
         self.assertIn("https://apps.apple.com/app/id6798814385?action=write-review", fields["content"])
         self.assertIn("6798814385", DL.store_ids_in(fields["content"]))
@@ -894,7 +896,12 @@ class SentPayloadLinksTest(LinkAsserts, unittest.TestCase):
             raw = record["text"].encode()
             for f in record["facets"]:
                 if f["features"][0]["$type"].endswith("#link"):
-                    self.assertIn(raw[f["index"]["byteStart"]:f["index"]["byteEnd"]].decode(), ("App Store", "Google Play"))
+                    label = raw[f["index"]["byteStart"]:f["index"]["byteEnd"]].decode()
+                    if "write-review" in f["features"][0]["uri"]:  # the rating facet, only when the caption fits whole
+                        self.assertEqual((label, f["features"][0]["uri"]), (it["review"]["label"], RATING_ONLY))
+                        self.assertTrue(record["text"].startswith(it["caption"]))
+                    else:
+                        self.assertIn(label, ("App Store", "Google Play"))
 
     def test_youtube_description_carries_both_links(self):
         fake = Fake([("POST", "oauth2.googleapis.com/token", {"access_token": "at"}),
@@ -1049,7 +1056,10 @@ class FinalTextTest(LinkAsserts, unittest.TestCase):
         self.assertTrue(tb.startswith(mochi_item("tumblr")["caption"]))
         self.assertIn("https://play.google.com", tb)
         bs = S.final_text(mochi_item("bluesky"), "bluesky")  # the link facets' URIs
-        self.assertIn("https://apps.apple.com", bs.split("\n")[-2])
+        uris = bs.split("\n")[-3:]  # App Store, Google Play, then the rating link (Mochi's caption fits with it)
+        self.assertTrue(uris[0].startswith("https://apps.apple.com/us/"))
+        self.assertTrue(uris[1].startswith("https://play.google.com/"))
+        self.assertEqual(uris[2], RATING_ONLY)
         pin = S.final_text(mochi_item("pinterest"), "pinterest")  # description + the pin's link field
         self.assertTrue(pin.endswith(mochi_item("pinterest")["store"]))
 
@@ -1214,6 +1224,106 @@ class VideoComplianceFeedTest(unittest.TestCase):
     def test_feed_items_carry_the_record_for_the_other_posters(self):
         item = S.clip_item("a/en", clip("a", "en"), "bluesky", DAY)
         self.assertEqual(S.public(item, "bluesky")["compliance"], COMPLIANT)
+
+
+class ReviewEveryAppFitsTest(unittest.TestCase):
+    """Every App's feed item carries the rating link (any_app, 2026-10-20); each channel attaches it only when it fits
+    whole: the caption and every download link stay intact, nothing goes over the platform limit, and the channels
+    that take no rating link (Pinterest, Tumblr, Mastodon, TikTok) never get one."""
+
+    def item(self, channel, caption=None):
+        it = mochi_item(channel)  # Mochi is no review_links.json pair: the neutral any_app line
+        return dict(it, caption=caption) if caption is not None else it
+
+    def test_a_non_pair_app_carries_the_neutral_line(self):
+        it = self.item("bluesky")
+        self.assertEqual(it["review"], {"label": S.review_links.any_app_label("en"), "url": RATING_ONLY})
+        self.assertEqual(S.public(it, "bluesky")["review"], it["review"])
+
+    def assertWhole(self, text, it, channel):
+        self.assertEqual(S.link_problems(text, it, channel), [])
+        self.assertIn(it["caption"], text)
+
+    def test_fits_then_attached_everywhere_it_is_allowed(self):
+        for channel in ("facebook", "bluesky", "youtube", "naver", "dailymotion"):  # Plurk: its own test below
+            with self.subTest(channel=channel):
+                it = self.item(channel, "Mochi keeps today's list small\n#todo")
+                out = S.render(it, channel)
+                self.assertIn(RATING_ONLY, out["final"])
+                self.assertLessEqual(len(out.get("counted", out["final"])), S.post_qa.LIMITS[channel])
+                if channel != "youtube":  # YouTube's description is built from the clip, not item["caption"]
+                    self.assertWhole(out["final"], it, channel)
+
+    def test_never_on_the_channels_without_a_rating_link(self):
+        for channel in ("pinterest", "tumblr", "mastodon", "tiktok"):
+            with self.subTest(channel=channel):
+                self.assertNotIn("write-review", S.final_text(self.item(channel), channel))
+
+    def test_facebook_drops_the_whole_rating_line_when_the_description_is_full(self):
+        it = self.item("facebook")
+        room = S.post_qa.LIMITS["facebook"] - len("\n\n" + "\n".join(S.link_lines(it, review=False)))
+        it = dict(it, caption="a" * room)  # fits exactly without the rating line
+        out = S.render(it, "facebook")
+        self.assertLessEqual(len(out["description"]), S.post_qa.LIMITS["facebook"])
+        for piece in ("description", "comment", "fallback"):
+            self.assertNotIn("write-review", out[piece])
+            self.assertEqual(S.link_problems(out[piece], it, piece), [])
+        self.assertTrue(out["description"].startswith(it["caption"]))
+
+    def test_bluesky_drops_the_rating_facet_rather_than_cut_the_caption(self):
+        it = self.item("bluesky")
+        tail = "\n\n" + " · ".join(label for label, _ in S.bsky_links(dict(it, review=None)))
+        it = dict(it, caption="b" * (S.post_qa.LIMITS["bluesky"] - len(tail)))  # fits only without the rating label
+        out = S.render(it, "bluesky")
+        self.assertNotIn("write-review", out["final"])
+        self.assertTrue(out["text"].startswith(it["caption"] + "\n\n"))
+        self.assertLessEqual(len(out["text"]), S.post_qa.LIMITS["bluesky"])
+        self.assertEqual(S.link_problems(out["final"], it, "bluesky"), [])
+
+    def test_youtube_drops_the_rating_lines_when_the_description_is_full(self):
+        it = self.item("youtube")
+        base = S.yt_meta(dict(it, review=None))[1]
+        it["clip"] = dict(it["clip"], keywords=["k" * (S.post_qa.LIMITS["youtube"] - len(base) - 10)])
+        it["review"] = dict(it["review"])
+        _, desc, _ = S.yt_meta(it)
+        self.assertNotIn("write-review", desc)
+        self.assertLessEqual(len(desc), S.post_qa.LIMITS["youtube"])
+        self.assertEqual(S.link_problems(desc, it, "youtube"), [])
+        self.assertIn(RATING_ONLY, S.yt_meta(self.item("youtube"))[1])  # a normal description keeps it
+
+    def test_naver_drops_the_rating_paragraph_when_the_post_is_full(self):
+        it = self.item("naver")
+        base = S.render_naver(dict(it, review=None))["final"]
+        it = dict(it, caption=it["caption"] + "n" * (S.post_qa.LIMITS["naver"] - len(base) - 5))
+        self.assertNotIn("write-review", S.render_naver(it)["final"])
+        self.assertLessEqual(len(S.render_naver(it)["final"]), S.post_qa.LIMITS["naver"])
+        body = S.naver_body(dict(it, caption="x" * (S.post_qa.LIMITS["naver"] - 400)), "")
+        self.assertNotIn("write-review", body)
+        self.assertLessEqual(len(body), S.post_qa.LIMITS["naver"])
+        self.assertIn("write-review", S.naver_body(self.item("naver"), ""))
+
+    def test_plurk_never_cuts_the_caption_for_the_rating_link(self):
+        it = dict(self.item("plurk"), play=None)
+        with mock.patch.object(S, "play_store_url", return_value=None):
+            tail = len(f"\nm\n{it['store']} ({S.button_of(it)})")
+            it["caption"] = "p" * (360 - tail)  # fits whole only without the rating link
+            content = S.plurk_content(it, "m", 360)
+            short = S.plurk_content(dict(it, caption="Mochi keeps today's list small"), "m", 360)
+        self.assertNotIn("write-review", content)
+        self.assertTrue(content.startswith(it["caption"]))
+        self.assertLessEqual(len(content), 360)
+        self.assertIn(RATING_ONLY, short)  # a caption that fits whole with it keeps it
+        self.assertTrue(short.startswith("Mochi keeps today's list small\n"))
+        self.assertLessEqual(len(short), 360)
+
+    def test_dailymotion_keeps_its_existing_fit_check(self):
+        it = self.item("dailymotion")
+        links = "\n".join(S.link_lines(it, review=False))
+        it = dict(it, caption="d" * (S.post_qa.LIMITS["dailymotion"] - len(links) - 2))
+        text = S.final_text(it, "dailymotion")
+        self.assertNotIn("write-review", text)
+        self.assertLessEqual(len(text), S.post_qa.LIMITS["dailymotion"])
+        self.assertEqual(S.link_problems(text, it, "dailymotion"), [])
 
 
 if __name__ == "__main__":

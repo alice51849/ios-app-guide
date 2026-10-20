@@ -4637,7 +4637,7 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 "Add a day of your own time off and confirm the next alarm skips it.",
                 "Keep a backup alarm for anything critical, as with any alarm app.",
             ],
-            "fits": "fits people who want one alarm that already knows which days are holidays, make-up workdays or their own time off, and that rings through Apple's AlarmKit without a subscription. The free version includes one saved alarm; a one-time in-app purchase unlocks unlimited alarms and more clock themes.",
+            "fits": "fits people who want one alarm that already knows which days are holidays, make-up workdays or their own time off, and that rings through Apple's AlarmKit with no subscription. The download includes one saved alarm; a one-time in-app purchase unlocks unlimited alarms, shift and alternating-week patterns and more clock themes.",
             "faq": [
                 {
                     "q": "Will it ring on a make-up workday?",
@@ -4653,10 +4653,81 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
                 {
                     "q": "Is there a subscription?",
-                    "a": "No. The free version includes one saved alarm, and Pro is a single one-time in-app purchase that unlocks unlimited alarms and more clock themes.",
+                    "a": "No. The download includes one saved alarm, and a single one-time in-app purchase unlocks unlimited alarms, shift and alternating-week patterns and more clock themes.",
                 },
             ],
-        }
+        },
+        {
+            "query": "shift work alarm app for rotating shifts on iphone",
+            "guide_title": "A shift work alarm for rotating schedules: what to check",
+            "triggers": [
+                "shift work alarm",
+                "shift alarm app",
+                "rotating shift alarm",
+                "alarm for shift workers",
+                "alternating week alarm",
+                "night shift alarm",
+            ],
+            "persona": "nurses, factory and warehouse crews and other shift workers whose working days move around the week",
+            "lead": (
+                "A weekday alarm assumes Monday to Friday, so on a rotation "
+                "it rings on your days off and stays silent on the shifts "
+                "that fall on a weekend."
+            ),
+            "paras": [
+                (
+                    "Most shift workers end up rebuilding their alarms every "
+                    "time a new rota comes out, and one missed edit means a "
+                    "late start or a 5 a.m. wake-up on a rest day. A better "
+                    "alarm works the ring days out from a shift or "
+                    "alternating-week pattern you enter once, and lets you "
+                    "add extra working days such as overtime, night shifts "
+                    "or on-call days on top."
+                ),
+                (
+                    "Check that it shows the coming week in advance, so you "
+                    "can confirm the plan before bed, and that it schedules "
+                    "real system alarms through Apple's AlarmKit rather than "
+                    "notifications. Public holidays still matter on a rota: "
+                    "it helps when each alarm can follow its own holiday "
+                    "calendar, and when a date with unknown holiday data is "
+                    "treated as a workday so the alarm still rings."
+                ),
+            ],
+            "look": [
+                "A shift or alternating-week pattern entered once, not weekly edits.",
+                "Extra working days such as overtime, night shifts or on-call days, with your own labels.",
+                "A different ring time for one day or several in a row without touching the rest.",
+                "A preview of the next seven days so you can check which mornings ring.",
+                "Real system alarms through AlarmKit, with unknown holiday dates treated as workdays.",
+            ],
+            "steps": [
+                "Set your wake-up time, country and region, then enter your shift or alternating-week pattern once.",
+                "Add the overtime, night shifts or on-call days that are not part of the pattern.",
+                "Add your time off and confirm those mornings stay quiet in the seven-day preview.",
+                "Open the calendar and compare the next two weeks with your rota.",
+                "Keep a backup alarm for anything critical, as with any alarm app.",
+            ],
+            "fits": "fits shift workers who want one alarm that follows their rotation, their extra shifts and their time off, and that rings through Apple's AlarmKit with no subscription. The download includes one saved alarm; shift and alternating-week patterns and unlimited alarms come with a one-time in-app purchase.",
+            "faq": [
+                {
+                    "q": "Are shift patterns included in the download?",
+                    "a": "The download includes one saved alarm. Shift and alternating-week patterns, unlimited alarms, a holiday calendar for each alarm and more clock themes come with a one-time in-app purchase.",
+                },
+                {
+                    "q": "Can I add night shifts and on-call days?",
+                    "a": "Yes. Add them as extra working days, as single days or date ranges, each with your own label and icon.",
+                },
+                {
+                    "q": "Can I change the time for just one shift?",
+                    "a": "Yes. Give one day, or several in a row, its own ring time; the other workdays keep your usual time.",
+                },
+                {
+                    "q": "Does it work offline?",
+                    "a": "Yes. The holiday data is built into the app, so alarms are scheduled without a connection; newer data can be downloaded when you are online.",
+                },
+            ],
+        },
     ]
 }
 

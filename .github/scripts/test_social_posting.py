@@ -2086,7 +2086,7 @@ class TelegramReviewLinkTests(unittest.TestCase):
         self.assertIn("ct=" + DL.app_campaign("telegram", self.USAGENOW) + "&", first)  # the download CTA stays first and attributed
         self.assertNotIn("ct=", review)
         self.assertIn("write-review", telegram_post.compose_text(self.item(self.USAGENOW, "en-US")))
-        for app, lang in ((self.USAGENOW, "ja"), (self.USAGENOW, "en-GB"), (self.MOCHI, "ko"),
+        for app, lang in ((self.USAGENOW, "de-DE"), (self.USAGENOW, "en-GB"), (self.MOCHI, "ko"),
                           ("6798814385", "zh-Hans")):
             with self.subTest(app=app, lang=lang):
                 self.assertNotIn("write-review", telegram_post.compose_text(self.item(app, lang)))

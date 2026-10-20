@@ -17315,5 +17315,2361 @@
     ]
    ]
   }
+ },
+ {
+  "key": "gmoneylite",
+  "locale": "ms",
+  "market": "MY",
+  "term": "belanja jalan dan mata wang",
+  "rank": 1,
+  "slug": "travel-spending-in-two-currencies-what-to-record-on-a-trip",
+  "loc": {
+   "title": "Belanja jalan dan mata wang: cara merekod perbelanjaan percutian dalam dua mata wang",
+   "meta": "Rekod setiap belanja dalam mata wang tempatan dan lihat nilainya dalam mata wang rumah serta-merta. Kadar yang disimpan tetap berfungsi tanpa internet. G+Money Lite percuma untuk bermula, tanpa langganan.",
+   "h1": "Belanja jalan dan mata wang: cara merekod perbelanjaan percutian dalam dua mata wang",
+   "lead": "Masalah sebenar bukan mengira kadar tukaran, tetapi lupa merekod dan keliru antara dua mata wang pada hari ketiga perjalanan.",
+   "answer": "Rekod dalam mata wang tempat anda membayar, biar aplikasi menukarnya ke mata wang rumah, dan simpan kadar sebelum berlepas supaya rekod tetap berfungsi tanpa internet.",
+   "paras": [
+    "Ramai pelancong menukar harga dalam kepala, kemudian menulis jumlah dalam ringgit. Selepas beberapa hari, angka itu bercampur dengan kadar yang berbeza dan baki sebenar tidak lagi jelas. Merekod dalam mata wang asal mengekalkan angka yang sama seperti pada resit.",
+    "Kadar tukaran berubah setiap hari, dan kad serta wang tunai biasanya tidak menggunakan kadar rujukan pasaran. Jadi angka dalam mata wang rumah ialah anggaran untuk mengawal bajet, bukan penyata bank. Yang penting ialah konsisten sepanjang perjalanan.",
+    "G+Money Lite merekod setiap belanja dalam mata wang tempatan dan terus menunjukkan nilainya dalam mata wang rumah. Kadar boleh diambil secara automatik apabila aplikasi dibuka (kira-kira setiap 6 jam) atau ditetapkan sendiri, dan kadar yang disimpan terus digunakan di luar talian. Data kekal dalam peranti, tanpa akaun dan tanpa penjejakan."
+   ],
+   "look": [
+    "Rekod dalam mata wang tempatan, bukan hanya dalam mata wang rumah",
+    "Kadar tersimpan yang masih berfungsi tanpa internet",
+    "Pilihan untuk menetapkan kadar sendiri, contohnya kadar pengurup wang anda",
+    "Pecahan mengikut kategori dan mengikut perjalanan",
+    "Akaun, iklan dan langganan"
+   ],
+   "steps": [
+    "Sebelum berlepas, buka aplikasi sekali dengan internet supaya kadar terkini disimpan.",
+    "Tetapkan mata wang rumah dan mata wang destinasi untuk perjalanan itu.",
+    "Rekod setiap belanja sejurus selepas membayar, mengikut jumlah pada resit.",
+    "Jika anda menukar wang tunai, masukkan kadar yang benar-benar anda terima secara manual.",
+    "Setiap malam, semak jumlah hari itu mengikut kategori dan laraskan rancangan esok."
+   ],
+   "rows": [
+    [
+     "Kadar tukaran",
+     "Automatik atau manual",
+     "Kadar kad dan tunai berbeza daripada kadar rujukan"
+    ],
+    [
+     "Internet",
+     "Kadar disimpan dalam peranti",
+     "Data perayauan tidak selalu ada ketika membayar"
+    ],
+    [
+     "Rekod",
+     "Mata wang asal dan mata wang rumah",
+     "Mudah dipadankan semula dengan resit"
+    ]
+   ],
+   "fits": "G+Money Lite sesuai jika anda mahu merekod belanja percutian dengan cepat dalam dua mata wang, dengan widget dan Apple Watch untuk semakan pantas. Tanpa pembelian, anda boleh menggunakan kadar, bajet dan ringkasan untuk 1 perjalanan dan 3 perbelanjaan; satu pembayaran membuka perbelanjaan dan perjalanan tanpa had, tanpa langganan.",
+   "faq": [
+    [
+     "Adakah kadar dalam aplikasi sama dengan kadar bank saya?",
+     "Tidak semestinya. Kadar automatik ialah kadar rujukan pasaran; kad dan wang tunai mungkin berbeza. Tetapkan kadar sendiri jika anda mahu angka yang lebih hampir."
+    ],
+    [
+     "Bolehkah saya merekod tanpa internet?",
+     "Ya. Kadar yang sudah disimpan terus digunakan di luar talian."
+    ],
+    [
+     "Perlukah saya membuat akaun?",
+     "Tidak. Data disimpan dalam peranti dan boleh disandarkan serta dipulihkan."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Travel spending in two currencies: what to record on a trip",
+   "meta": "Log each purchase in the local currency and see it in your home currency right away. Saved rates keep working offline. G+Money Lite is free to start, with no subscription.",
+   "h1": "Travel spending in two currencies: what to record on a trip",
+   "lead": "The real problem is not the exchange maths. It is forgetting to log, and mixing up two currencies by day three of the trip.",
+   "answer": "Log in the currency you actually paid in, let the app convert it to your home currency, and save rates before you leave so logging still works without a connection.",
+   "paras": [
+    "Many travellers convert prices in their head and write down the home-currency figure. After a few days those numbers mix different rates and the real balance is no longer clear. Logging the original currency keeps the same figure that is on the receipt.",
+    "Rates move every day, and cards and cash rarely use the mid-market reference rate. So the home-currency figure is a budgeting estimate, not a bank statement. What matters is staying consistent across the trip.",
+    "G+Money Lite logs each purchase in the local currency and shows it in your home currency straight away. Rates can be fetched automatically when you open the app (about every 6 hours) or set by hand, and saved rates keep working offline. Data stays on the device, with no account and no tracking."
+   ],
+   "look": [
+    "Logging in the local currency, not only the home currency",
+    "Saved rates that still work without internet",
+    "The option to set your own rate, for example your money changer's",
+    "Breakdown by category and by trip",
+    "Account, ads and subscription"
+   ],
+   "steps": [
+    "Before you leave, open the app once while online so current rates are saved.",
+    "Set your home currency and the destination currency for the trip.",
+    "Log each purchase right after paying, using the amount on the receipt.",
+    "If you exchange cash, enter the rate you actually received by hand.",
+    "Each evening, check the day's total by category and adjust tomorrow's plan."
+   ],
+   "rows": [
+    [
+     "Exchange rate",
+     "Automatic or manual",
+     "Card and cash rates differ from the reference rate"
+    ],
+    [
+     "Internet",
+     "Rates saved on the device",
+     "Roaming data is not always there when you pay"
+    ],
+    [
+     "Records",
+     "Original and home currency",
+     "Easy to match back to receipts"
+    ]
+   ],
+   "fits": "G+Money Lite fits when you want to log trip spending quickly in two currencies, with a widget and Apple Watch for quick checks. Without a purchase you get rates, budget and summary for 1 trip and 3 expenses; one payment unlocks unlimited expenses and trips, with no subscription.",
+   "faq": [
+    [
+     "Is the in-app rate the same as my bank's?",
+     "Not necessarily. The automatic rate is a mid-market reference; cards and cash may differ. Set your own rate if you want a closer figure."
+    ],
+    [
+     "Can I log without internet?",
+     "Yes. Saved rates keep working offline."
+    ],
+    [
+     "Do I need an account?",
+     "No. Data stays on the device and can be backed up and restored."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "gmoneylite",
+  "locale": "ms",
+  "market": "MY",
+  "term": "bajet harian di jam",
+  "rank": 1,
+  "slug": "daily-travel-budget-on-apple-watch-check-before-you-pay",
+  "loc": {
+   "title": "Bajet harian di jam: semak bajet hari ini di Apple Watch sebelum membayar",
+   "meta": "Bajet harian berguna jika anda melihatnya sebelum membayar. Tetapkan had harian, rekod setiap belanja, dan semak di jam atau widget. G+Money Lite percuma untuk bermula, tanpa langganan.",
+   "h1": "Bajet harian di jam: semak bajet hari ini di Apple Watch sebelum membayar",
+   "lead": "Bajet harian hanya berkesan jika anda melihatnya sebelum membayar, bukan selepas pulang ke hotel.",
+   "answer": "Bahagikan bajet perjalanan kepada had harian, rekod setiap belanja sejurus selepas membayar, dan letakkan bajet hari ini pada jam atau widget supaya satu pandangan sudah cukup.",
+   "paras": [
+    "Bajet keseluruhan perjalanan sukar dirasa. Pada hari kedua, jumlah besar itu masih kelihatan selamat walaupun anda sudah berbelanja lebih. Had harian memberi satu angka kecil yang mudah dibandingkan dengan harga di depan mata.",
+    "Masalahnya ialah masa. Ketika beratur di kaunter atau di gerai makanan, mengeluarkan telefon, membuka aplikasi dan mencari laporan terasa terlalu panjang. Sebab itu bajet di pergelangan tangan atau di skrin utama lebih kerap dilihat.",
+    "G+Money Lite membolehkan anda menetapkan had harian secara pilihan dan melihat prestasi setiap hari berbanding had itu. Perbelanjaan direkod dalam mata wang tempatan dan ditukar ke mata wang rumah, dengan widget dan Apple Watch untuk semakan pantas. Semuanya kekal dalam peranti, tanpa akaun."
+   ],
+   "look": [
+    "Had harian yang boleh ditetapkan, bukan hanya jumlah keseluruhan",
+    "Paparan di Apple Watch atau widget, tanpa membuka aplikasi",
+    "Rekod dalam mata wang tempatan dengan nilai dalam mata wang rumah",
+    "Rekod yang cepat, beberapa saat sahaja selepas membayar",
+    "Akaun, iklan dan langganan"
+   ],
+   "steps": [
+    "Tolak tiket dan penginapan yang sudah dibayar, kemudian bahagikan baki dengan bilangan hari.",
+    "Tetapkan angka itu sebagai had harian untuk perjalanan.",
+    "Tambah widget di skrin utama atau semak di Apple Watch.",
+    "Rekod setiap belanja sejurus selepas membayar.",
+    "Jika satu hari melebihi had, kurangkan sedikit pada dua hari berikutnya, bukan sekali gus."
+   ],
+   "rows": [
+    [
+     "Had",
+     "Harian atau keseluruhan",
+     "Angka kecil lebih mudah dibandingkan dengan harga"
+    ],
+    [
+     "Paparan",
+     "Jam, widget atau dalam aplikasi",
+     "Semakan yang pantas lebih kerap dilakukan"
+    ],
+    [
+     "Mata wang",
+     "Tempatan dan rumah",
+     "Elak keliru apabila kadar berubah"
+    ]
+   ],
+   "fits": "G+Money Lite sesuai untuk perjalanan dengan had harian yang mahu anda semak di jam dan widget. Tanpa pembelian, anda boleh menggunakan kadar, bajet dan ringkasan untuk 1 perjalanan dan 3 perbelanjaan; satu pembayaran membuka perbelanjaan dan perjalanan tanpa had, tanpa langganan.",
+   "faq": [
+    [
+     "Wajibkah menetapkan had harian?",
+     "Tidak. Had harian adalah pilihan; anda masih boleh merekod dan melihat ringkasan tanpanya."
+    ],
+    [
+     "Bolehkah saya menyemak tanpa membuka telefon?",
+     "G+Money Lite menyokong Apple Watch dan widget untuk semakan pantas."
+    ],
+    [
+     "Adakah data dihantar ke pelayan?",
+     "Tidak. Data kekal dalam peranti, tanpa akaun dan tanpa penjejakan. Hanya kadar tukaran diambil daripada perkhidmatan kadar awam."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Daily travel budget on Apple Watch: check today's budget before you pay",
+   "meta": "A daily budget only helps if you see it before paying. Set a daily limit, log each purchase, and check it on your watch or a widget. G+Money Lite is free to start, with no subscription.",
+   "h1": "Daily travel budget on Apple Watch: check today's budget before you pay",
+   "lead": "A daily budget only works if you look at it before you pay, not after you are back at the hotel.",
+   "answer": "Split the trip budget into a daily limit, log each purchase right after paying, and keep today's budget on your watch or a widget so one glance is enough.",
+   "paras": [
+    "A whole-trip budget is hard to feel. On day two the big number still looks safe even if you have already overspent. A daily limit gives one small number that is easy to compare with the price in front of you.",
+    "The issue is timing. In a queue at the counter or a food stall, pulling out the phone, opening an app and finding a report feels too slow. That is why a budget on the wrist or the Home Screen gets checked more often.",
+    "G+Money Lite lets you set an optional daily limit and see how each day tracks against it. Purchases are logged in the local currency and converted to your home currency, with a widget and Apple Watch for quick checks. Everything stays on the device, with no account."
+   ],
+   "look": [
+    "A daily limit you can set, not only a trip total",
+    "A glance view on Apple Watch or a widget, without opening the app",
+    "Logging in the local currency with the home-currency value",
+    "Logging that takes seconds right after paying",
+    "Account, ads and subscription"
+   ],
+   "steps": [
+    "Subtract tickets and lodging you already paid, then divide the rest by the number of days.",
+    "Set that figure as the trip's daily limit.",
+    "Add the widget to your Home Screen or check it on Apple Watch.",
+    "Log each purchase right after you pay.",
+    "If one day goes over, trim a little over the next two days rather than all at once."
+   ],
+   "rows": [
+    [
+     "Limit",
+     "Daily or whole trip",
+     "A small number is easier to compare with a price"
+    ],
+    [
+     "Where you see it",
+     "Watch, widget or in the app",
+     "Quick checks happen more often"
+    ],
+    [
+     "Currency",
+     "Local and home",
+     "Avoids confusion as rates move"
+    ]
+   ],
+   "fits": "G+Money Lite fits trips with a daily limit you want to check on your watch and a widget. Without a purchase you get rates, budget and summary for 1 trip and 3 expenses; one payment unlocks unlimited expenses and trips, with no subscription.",
+   "faq": [
+    [
+     "Do I have to set a daily limit?",
+     "No. The daily limit is optional; you can still log and see summaries without it."
+    ],
+    [
+     "Can I check without opening my phone?",
+     "G+Money Lite supports Apple Watch and a widget for quick checks."
+    ],
+    [
+     "Is my data sent to a server?",
+     "No. Data stays on the device, with no account and no tracking. Only exchange rates are fetched from a public rate service."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumiletters",
+  "locale": "ar-SA",
+  "market": "SA",
+  "term": "Lumi حروف Lite",
+  "rank": 1,
+  "slug": "lumi-letters-lite-what-your-child-can-do-before-any-purchase",
+  "loc": {
+   "title": "Lumi حروف Lite: ماذا يستطيع طفلك أن يفعل قبل أي شراء؟",
+   "meta": "Lumi حروف Lite يعلّم الحروف الإنجليزية للأطفال من 3 إلى 7 سنوات: اسم الحرف وصوته وكتابته بترتيب الخطوط. حرف A وأول كوكب مفتوحان بالكامل دون شراء، بلا إعلانات ويعمل دون إنترنت.",
+   "h1": "Lumi حروف Lite: ماذا يستطيع طفلك أن يفعل قبل أي شراء؟",
+   "lead": "قبل أن تقرر، من المفيد أن تعرف بالضبط ما الذي يجربه طفلك مجانًا، وما الذي يضيفه الشراء الواحد.",
+   "answer": "دون شراء: جميع أنشطة حرف A، ومغامرة الكوكب الأول كاملة، وأول ثلاثة أنواع من الألعاب في صفحة الإنجازات. شراء واحد يفتح الحروف الستة والعشرين و14 كوكبًا و12 نوعًا من الألعاب.",
+   "paras": [
+    "يستمع الطفل إلى اسم الحرف وصوته، ثم يتتبع الحرف الكبير والصغير على خطوط إرشادية تتبع ترتيب الخطوط الصحيح. هذا الترتيب مهم لأن الطفل الذي يكتب الحرف من الأسفل إلى الأعلى يعتاد على ذلك ويصعب تصحيحه لاحقًا.",
+    "يكفي حرف واحد لتعرف هل يناسب التطبيق طفلك: هل يكرر الاستماع، وهل يكمل التتبع دون مساعدة، وهل يعود في اليوم التالي. إذا حدث ذلك، فالشراء يكمل نفس الطريقة لبقية الحروف بدل أن تبدأ مع تطبيق جديد.",
+    "بعد الفتح الكامل يتدرج التعلم من التعرف على الحرف إلى الصوت الأول والصوت الأخير والحرف المتحرك في الوسط، ومطابقة الحرف الكبير بالصغير، والحروف الناقصة وترتيب الحروف. التطبيق بلا إعلانات ويعمل دون إنترنت."
+   ],
+   "look": [
+    "اسم الحرف وصوته معًا، وليس الاسم وحده",
+    "تتبع الحرف الكبير والصغير بترتيب الخطوط",
+    "محتوى مفتوح بالكامل يكفي للتجربة قبل الشراء",
+    "عدم وجود إعلانات أو روابط مفاجئة",
+    "العمل دون إنترنت في السيارة أو السفر"
+   ],
+   "steps": [
+    "ابدأ مع طفلك بحرف A: استمعا إلى الاسم والصوت معًا.",
+    "اتركه يتتبع الحرف الكبير ثم الصغير، وراقب اتجاه الخطوط.",
+    "العبا لعبة الاستماع والنقر التي تربط الصوت بالشكل.",
+    "أكملا مغامرة الكوكب الأول وانظرا إلى صفحة الإنجازات.",
+    "بعد يومين أو ثلاثة، قرر بناءً على عودة الطفل للتطبيق من تلقاء نفسه."
+   ],
+   "rows": [
+    [
+     "الصوت",
+     "اسم الحرف وصوته",
+     "القراءة المبكرة تعتمد على الصوت أكثر من الاسم"
+    ],
+    [
+     "الكتابة",
+     "ترتيب الخطوط",
+     "العادة الخاطئة يصعب تصحيحها لاحقًا"
+    ],
+    [
+     "التجربة",
+     "حرف كامل وكوكب كامل",
+     "تعرف إن كان الطفل يحبه قبل الشراء"
+    ]
+   ],
+   "fits": "Lumi حروف Lite يناسب الأطفال من 3 إلى 7 سنوات الذين يبدأون بالحروف الإنجليزية في البيت، مع جلسات قصيرة يمكن للوالد مرافقتها. مجاني للبدء، وشراء واحد يفتح كل الحروف والكواكب.",
+   "faq": [
+    [
+     "هل يحتاج التطبيق إلى إنترنت؟",
+     "لا، يعمل دون اتصال."
+    ],
+    [
+     "هل توجد إعلانات؟",
+     "لا، لا توجد إعلانات."
+    ],
+    [
+     "ما الذي يفتحه الشراء؟",
+     "جميع الحروف الستة والعشرين بالحرفين الكبير والصغير، و14 مغامرة كوكب، و12 نوعًا من الألعاب."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Lumi Letters Lite: what can your child do before any purchase?",
+   "meta": "Lumi Letters Lite teaches the English alphabet to ages 3 to 7: letter name, sound and stroke-order tracing. The letter A and the first planet are fully open without a purchase, with no ads and offline play.",
+   "h1": "Lumi Letters Lite: what can your child do before any purchase?",
+   "lead": "Before deciding, it helps to know exactly what your child can try for free and what one purchase adds.",
+   "answer": "Without a purchase: every activity for the letter A, the full first planet adventure and the first three game types on the achievements page. One purchase opens all 26 letters, 14 planets and 12 game types.",
+   "paras": [
+    "Your child hears the letter's name and sound, then traces uppercase and lowercase letters along guide lines that follow the correct stroke order. Order matters: a child who draws a letter from the bottom up gets used to it, and it is hard to correct later.",
+    "One letter is enough to tell whether the app suits your child: do they replay the sounds, finish the tracing without help, and come back the next day? If so, the purchase continues the same method for the remaining letters instead of starting over with a new app.",
+    "After the full unlock, learning moves from recognising a letter to first sounds, ending sounds and middle vowels, matching uppercase to lowercase, missing letters and letter order. There are no ads and it works offline."
+   ],
+   "look": [
+    "Letter name and sound together, not the name alone",
+    "Uppercase and lowercase tracing in stroke order",
+    "Enough fully open content to try before buying",
+    "No ads or surprise links",
+    "Offline play for the car or a trip"
+   ],
+   "steps": [
+    "Start with the letter A together: listen to the name and sound.",
+    "Let your child trace the uppercase, then the lowercase, and watch the stroke direction.",
+    "Play the listen-and-tap game that links each sound to its shape.",
+    "Finish the first planet adventure and look at the achievements page.",
+    "After two or three days, decide based on whether your child returns on their own."
+   ],
+   "rows": [
+    [
+     "Sound",
+     "Letter name and sound",
+     "Early reading relies on sound more than name"
+    ],
+    [
+     "Writing",
+     "Stroke order",
+     "A wrong habit is hard to fix later"
+    ],
+    [
+     "Trial",
+     "A full letter and a full planet",
+     "You know whether your child likes it before paying"
+    ]
+   ],
+   "fits": "Lumi Letters Lite fits children aged 3 to 7 starting the English alphabet at home, in short sessions a parent can join. Free to start, and one purchase opens every letter and planet.",
+   "faq": [
+    [
+     "Does it need internet?",
+     "No, it works offline."
+    ],
+    [
+     "Are there ads?",
+     "No, there are no ads."
+    ],
+    [
+     "What does the purchase unlock?",
+     "All 26 letters in uppercase and lowercase, 14 planet adventures and 12 game types."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumimission",
+  "locale": "zh-Hans",
+  "market": "CN",
+  "term": "奖励 贴纸",
+  "rank": 1,
+  "slug": "reward-stickers-for-kids-instant-praise-or-end-of-week-chart",
+  "loc": {
+   "title": "奖励贴纸怎么用才有效：当下鼓励，还是周末结算？",
+   "meta": "三到七岁的孩子更在意当下的回应。奖励贴纸要配合即时鼓励和固定的小任务，才不会两周就失效。Lumi Mission Planet 把刷牙、吃饭、收玩具变成小任务，免费开始。",
+   "h1": "奖励贴纸怎么用才有效：当下鼓励，还是周末结算？",
+   "lead": "很多家庭的贴纸表撑不过两周。问题通常不是贴纸不够好看，而是奖励来得太晚。",
+   "answer": "对三到七岁的孩子，先给当下的回应，再用贴纸记录成果：每完成一个小动作就立刻有反馈，周末再一起看收集了多少，而不是把所有奖励留到周末。",
+   "paras": [
+    "年幼的孩子很难把周一刷牙和周日换到的奖励联系起来。等待太久，贴纸就变成父母的记账工具，而不是孩子的动力。即时的回应让“做了这件事”和“被看见”发生在同一刻。",
+    "任务也要够小、够具体。“乖一点”无法完成，“刷完牙”“把积木放回篮子”可以。每天固定三到五个任务，比列十几项更容易坚持；做不到的任务先拆小，而不是扣贴纸。",
+    "Lumi Mission Planet 把吃饭、刷牙、睡觉、收拾和上学准备做成每日任务，孩子每完成一小步点一下，小伙伴就会立刻跳起来欢呼。吃饭、刷牙、睡觉、收拾任务和每类的第一批贴纸免费可用；一次购买再解锁上学准备、自建任务、六个伙伴和完整的一百枚成就贴纸。家长面板可以看今天、近七天和完整记录。"
+   ],
+   "look": [
+    "每完成一步就有立即的回应，而不是只在周末结算",
+    "任务能否拆得够小、够具体",
+    "能否按家里的作息自建任务",
+    "家长能看到完成时间和历史记录",
+    "广告与弹窗是否会打断孩子"
+   ],
+   "steps": [
+    "选三个每天都会发生的任务，例如刷牙、吃完饭、收玩具。",
+    "每个任务只写一个动作，做完就立刻给回应。",
+    "前一周只加不减：做不到就把任务拆小，不扣贴纸。",
+    "周末和孩子一起看这一周收集到的贴纸，聊聊哪一项最容易。",
+    "孩子熟练后再换一个新任务，总数保持在三到五个。"
+   ],
+   "rows": [
+    [
+     "回应时机",
+     "当下还是周末",
+     "年幼的孩子很难把行为和延后的奖励联系起来"
+    ],
+    [
+     "任务大小",
+     "一个具体动作",
+     "“乖一点”无法判断是否完成"
+    ],
+    [
+     "记录",
+     "完成时间与历史",
+     "家长能看出哪个时段最容易卡住"
+    ]
+   ],
+   "fits": "Lumi Mission Planet 适合三到七岁、需要父母陪着建立日常作息的孩子：即时的角色回应、成就贴纸和每日提醒。基础任务免费开始，一次购买解锁自建任务与完整贴纸，不是订阅。",
+   "faq": [
+    [
+     "贴纸奖励会不会让孩子只为奖励才做？",
+     "把重点放在当下的鼓励和完成本身，贴纸只是记录。任务熟练后逐步换成新的任务，而不是不断加码奖励。"
+    ],
+    [
+     "可以按我们家的作息设置任务吗？",
+     "可以。吃饭、刷牙、睡觉、收拾是内置任务；自建任务和上学准备包含在一次购买的解锁内容里。"
+    ],
+    [
+     "换手机后进度会不见吗？",
+     "可以导出备份再导入新手机，进度不会丢失。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Reward stickers for kids: instant praise or an end-of-week chart?",
+   "meta": "Children aged three to seven respond to what happens right now. Reward stickers work when paired with instant praise and small fixed tasks. Lumi Mission Planet turns brushing, meals and tidying into small missions, free to start.",
+   "h1": "Reward stickers for kids: instant praise or an end-of-week chart?",
+   "lead": "Many families' sticker charts do not last two weeks. The problem is rarely the stickers; it is that the reward comes too late.",
+   "answer": "For ages three to seven, give the response in the moment and use stickers to record the result: instant feedback for every small action, then look at the collection together at the weekend rather than saving every reward for Sunday.",
+   "paras": [
+    "Young children struggle to link Monday's tooth brushing with a reward on Sunday. When the wait is long, the chart becomes a parent's ledger instead of a child's motivation. An instant response makes \"I did it\" and \"someone noticed\" happen at the same moment.",
+    "Tasks also need to be small and concrete. \"Be good\" cannot be completed; \"finish brushing\" or \"put the blocks back in the basket\" can. Three to five fixed tasks a day are easier to keep than a dozen; if one is too hard, make it smaller rather than taking stickers away.",
+    "Lumi Mission Planet turns meals, tooth brushing, sleep, tidy-up and school prep into daily missions. Your child taps for each small win and a buddy character cheers right away. Meals, brushing, sleep and tidy-up missions plus the first stickers in each category are free; one purchase adds school prep, custom missions, all six buddies and the full set of one hundred achievement stickers. A parent dashboard shows today, the last seven days and the full history."
+   ],
+   "look": [
+    "An instant response for each step, not only a weekly tally",
+    "Whether tasks can be broken down small enough",
+    "Whether you can create missions that match your routine",
+    "Completion times and history for parents",
+    "Ads or pop-ups that interrupt the child"
+   ],
+   "steps": [
+    "Pick three tasks that happen every day, such as brushing, finishing a meal and tidying toys.",
+    "Write each as a single action and respond the moment it is done.",
+    "For the first week only add, never subtract: if a task is too hard, make it smaller.",
+    "At the weekend, look at the stickers collected together and talk about the easiest task.",
+    "Once one is easy, swap in a new task and keep the total at three to five."
+   ],
+   "rows": [
+    [
+     "Timing",
+     "Now or at the weekend",
+     "Young children struggle to link behaviour with a delayed reward"
+    ],
+    [
+     "Task size",
+     "One concrete action",
+     "\"Be good\" cannot be judged as done"
+    ],
+    [
+     "Records",
+     "Completion time and history",
+     "Parents can see which part of the day gets stuck"
+    ]
+   ],
+   "fits": "Lumi Mission Planet fits children aged three to seven building daily routines with a parent: instant buddy reactions, achievement stickers and a daily reminder. The core missions are free to start; a one-time purchase adds custom missions and the full sticker set, with no subscription.",
+   "faq": [
+    [
+     "Will stickers make my child do things only for the reward?",
+     "Keep the focus on the praise in the moment and on finishing; the sticker is just a record. Rotate in new tasks as old ones become easy instead of raising the reward."
+    ],
+    [
+     "Can I set missions to fit our routine?",
+     "Yes. Meals, brushing, sleep and tidy-up are built in; custom missions and school prep are part of the one-time unlock."
+    ],
+    [
+     "Will progress be lost on a new phone?",
+     "You can export a backup and import it on the new phone."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "mochidonestamp",
+  "locale": "vi",
+  "market": "VN",
+  "term": "lần cuối",
+  "rank": 1,
+  "slug": "when-did-i-last-do-it-track-home-chores-by-last-done-date",
+  "loc": {
+   "title": "Lần cuối mình làm việc này là khi nào? Cách ghi lại việc nhà theo ngày làm gần nhất",
+   "meta": "Thay ga giường, tưới cây, thay lõi lọc: những việc lặp lại không cần danh sách việc cần làm, mà cần biết lần cuối là khi nào. Mochi DoneStamp ghi lại bằng một lần chạm, không cần tài khoản.",
+   "h1": "Lần cuối mình làm việc này là khi nào? Cách ghi lại việc nhà theo ngày làm gần nhất",
+   "lead": "Có những việc không có hạn chót rõ ràng, nhưng quên quá lâu thì phiền: thay ga giường, vệ sinh máy lọc nước, gọi điện cho bố mẹ.",
+   "answer": "Với việc lặp lại, hãy ghi lại thời điểm bạn thực sự làm xong thay vì đặt lịch cố định. Lần tiếp theo được tính từ lần cuối, nên làm trễ vài ngày cũng không làm lệch cả chu kỳ.",
+   "paras": [
+    "Danh sách việc cần làm hợp với việc làm một lần. Việc lặp lại thì khác: câu hỏi thật sự là “lần cuối là khi nào”. Nếu chỉ đặt nhắc nhở mỗi ngày 1, bạn sẽ nhận thông báo cả khi vừa làm hôm qua, và dần dần bỏ qua mọi thông báo.",
+    "Cách ổn định hơn là ghi lại ngay khi làm xong, rồi để nhịp lặp lại tính từ thời điểm đó. Có việc chỉ cần nhịp gần đúng, ví dụ “khoảng hai tuần”; có việc cần đúng giờ, ví dụ thuốc cho thú cưng. Phân biệt hai loại giúp nhắc nhở chỉ đến khi cần.",
+    "Mochi DoneStamp ghi thời điểm bằng một lần chạm, có hoàn tác, và cho phép ghi lùi ngày, sửa hoặc xóa từng lần. Nhịp có thể đặt từ vài phút đến vài năm, nhắc nhở cục bộ có nút Xong và Hoãn, kèm widget trên màn hình chính và màn hình khóa. Dữ liệu cốt lõi nằm trên máy, không cần tài khoản."
+   ],
+   "look": [
+    "Ghi lại thời điểm làm xong chỉ bằng một lần chạm",
+    "Lần tiếp theo tính từ lần làm thực tế, không theo lịch cố định",
+    "Có thể ghi lùi ngày khi quên bấm",
+    "Widget để xem nhanh mà không cần mở ứng dụng",
+    "Tài khoản, quảng cáo và gói đăng ký"
+   ],
+   "steps": [
+    "Liệt kê năm việc lặp lại bạn hay quên, ví dụ thay ga giường, tưới cây, sao lưu ảnh.",
+    "Với mỗi việc, ghi lần gần nhất bạn nhớ được, ghi lùi ngày nếu cần.",
+    "Đặt nhịp gần đúng cho việc linh hoạt, nhịp chính xác cho việc cần đúng giờ.",
+    "Mỗi khi làm xong, bấm một lần ngay tại chỗ.",
+    "Sau một tháng, xem khoảng cách thực tế giữa các lần và chỉnh nhịp cho sát."
+   ],
+   "rows": [
+    [
+     "Loại việc",
+     "Một lần hay lặp lại",
+     "Việc lặp lại cần biết lần cuối, không cần đánh dấu xong mãi mãi"
+    ],
+    [
+     "Nhịp",
+     "Gần đúng hay chính xác",
+     "Nhắc đúng lúc thay vì nhắc vô ích"
+    ],
+    [
+     "Lịch sử",
+     "Có sửa và ghi lùi ngày",
+     "Quên bấm một lần không làm hỏng dữ liệu"
+    ]
+   ],
+   "fits": "Mochi DoneStamp hợp với những việc lặp lại trong nhà và trong đời sống mà bạn chỉ cần biết lần cuối là khi nào. Miễn phí với một sự kiện đang theo dõi và lịch sử không giới hạn; mua một lần để mở không giới hạn sự kiện, không có gói đăng ký.",
+   "faq": [
+    [
+     "Khác gì với ứng dụng việc cần làm?",
+     "Ứng dụng việc cần làm đánh dấu xong rồi thôi. Mochi DoneStamp giữ lại lịch sử từng lần làm và tính lần tiếp theo từ lần cuối."
+    ],
+    [
+     "Quên bấm thì sao?",
+     "Bạn có thể ghi lùi ngày, sửa hoặc xóa bất kỳ lần nào."
+    ],
+    [
+     "Có cần tài khoản không?",
+     "Không. Không tài khoản, không quảng cáo, không theo dõi; dữ liệu cốt lõi nằm trên máy."
+    ]
+   ]
+  },
+  "en": {
+   "title": "When did I last do it? Track home chores by the last-done date",
+   "meta": "Changing sheets, watering plants, replacing a filter: repeating chores need the last-done date, not a to-do list. Mochi DoneStamp logs it with one tap, with no account.",
+   "h1": "When did I last do it? Track home chores by the last-done date",
+   "lead": "Some tasks have no clear deadline but become a problem if forgotten too long: changing the sheets, cleaning the water filter, calling your parents.",
+   "answer": "For repeating tasks, record when you actually finished instead of setting a fixed calendar date. The next one is counted from the last time, so doing it a few days late does not throw off the whole rhythm.",
+   "paras": [
+    "To-do lists suit one-off tasks. Repeating tasks are different: the real question is \"when was the last time?\". A reminder on the 1st of every month fires even if you did it yesterday, and soon you ignore every reminder.",
+    "A steadier method is to log the moment you finish and let the rhythm restart from there. Some tasks only need an approximate rhythm, such as \"about every two weeks\"; others need an exact one, such as a pet's medication. Separating the two means reminders arrive only when needed.",
+    "Mochi DoneStamp logs the time with one tap, with Undo, and lets you backdate, edit or delete any occurrence. Rhythms range from minutes to years, local reminders come with Done and Snooze actions, and there are Home and Lock Screen widgets. Core data stays on the device, with no account."
+   ],
+   "look": [
+    "One-tap logging of the moment you finish",
+    "Next due time counted from the real last time, not a fixed calendar",
+    "Backdating for when you forgot to tap",
+    "Widgets for a glance without opening the app",
+    "Account, ads and subscription"
+   ],
+   "steps": [
+    "List five repeating tasks you tend to forget, such as sheets, plants and photo backups.",
+    "For each, log the last time you remember, backdating if needed.",
+    "Use an approximate rhythm for flexible tasks and an exact one for time-critical ones.",
+    "Each time you finish, tap once on the spot.",
+    "After a month, look at the real gaps between occurrences and adjust the rhythm."
+   ],
+   "rows": [
+    [
+     "Task type",
+     "One-off or repeating",
+     "Repeating tasks need the last date, not a permanent tick"
+    ],
+    [
+     "Rhythm",
+     "Approximate or exact",
+     "Reminders at the right time instead of useless ones"
+    ],
+    [
+     "History",
+     "Editing and backdating",
+     "One missed tap does not spoil the data"
+    ]
+   ],
+   "fits": "Mochi DoneStamp fits repeating household and life tasks where you just need to know when you last did them. Free with one active event and unlimited history; a one-time purchase unlocks unlimited events, with no subscription.",
+   "faq": [
+    [
+     "How is it different from a to-do app?",
+     "A to-do app ticks a task off and forgets it. Mochi DoneStamp keeps every occurrence and counts the next one from the last."
+    ],
+    [
+     "What if I forget to tap?",
+     "You can backdate, edit or delete any occurrence."
+    ],
+    [
+     "Do I need an account?",
+     "No. No account, ads or tracking; core data stays on the device."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "wordmatelite",
+  "locale": "ar-SA",
+  "market": "AE",
+  "term": "تعلّم 44 لغة",
+  "rank": 1,
+  "slug": "learning-one-of-44-languages-five-words-a-day-where-to-start",
+  "loc": {
+   "title": "تعلّم 44 لغة: كيف تبدأ لغة جديدة بخمس كلمات في اليوم؟",
+   "meta": "اختيار لغة من بين 44 لغة أسهل من الاستمرار فيها. ابدأ بخمس كلمات في دقيقة كل يوم ضمن مسار يناسب حياتك. Wordmate Lite مجاني للبدء ويعمل دون إنترنت.",
+   "h1": "تعلّم 44 لغة: كيف تبدأ لغة جديدة بخمس كلمات في اليوم؟",
+   "lead": "معظم من يبدأ لغة جديدة لا يتوقف لأن اللغة صعبة، بل لأن الجلسة اليومية أطول مما يحتمل يومه.",
+   "answer": "اختر لغة واحدة ومسارًا واحدًا مرتبطًا بحياتك، مثل السفر أو العمل، وابدأ بخمس كلمات في اليوم. الاستمرار ثلاثين يومًا يفيد أكثر من جلسة طويلة واحدة ثم انقطاع.",
+   "paras": [
+    "وجود 44 لغة لا يعني أن تتعلم أكثر من لغة في البداية. القرار الأهم هو لماذا تتعلم: رحلة قادمة، أو مقابلة عمل، أو التحدث مع زملاء. المسار المرتبط بسبب حقيقي يجعل الكلمات تُستخدم بسرعة، وما يُستخدم يبقى.",
+    "خمس كلمات قد تبدو قليلة، لكنها تصبح نحو 150 كلمة في شهر إذا لم تنقطع. والأهم أن الجلسة القصيرة يمكن إكمالها حتى في يوم مزدحم، فلا تنكسر السلسلة عند أول أسبوع صعب.",
+    "يقدّم Wordmate Lite جلسة من خمس كلمات في دقيقة واحدة، مع 44 لغة تعلّم و14 مسارًا حياتيًا منها السفر والعمل والامتحانات والحياة اليومية، بمستويات مبتدئ ومتوسط ومتقدم. يمكنك سماع نطق أي كلمة بصوت النظام وحفظ الكلمات المهمة."
+   ],
+   "look": [
+    "جلسة يومية قصيرة يمكن إكمالها في أي يوم",
+    "مسارات مرتبطة بسبب تعلمك، لا قوائم عامة فقط",
+    "سماع النطق لكل كلمة",
+    "عرض واضح للكلمات التي تعلمتها اليوم",
+    "الحاجة إلى حساب أو اشتراك"
+   ],
+   "steps": [
+    "اختر لغة واحدة فقط للأيام الثلاثين الأولى.",
+    "اختر مسارًا واحدًا مرتبطًا بسبب حقيقي، مثل السفر أو العمل.",
+    "حدد هدفًا يوميًا من خمس كلمات، ولا ترفعه في الأسبوع الأول.",
+    "استمع إلى نطق كل كلمة وردده بصوت مسموع.",
+    "بعد شهر، ارفع الهدف إلى عشر كلمات إذا لم تنقطع السلسلة."
+   ],
+   "rows": [
+    [
+     "طول الجلسة",
+     "دقيقة أم نصف ساعة",
+     "الجلسة القصيرة تنجو من الأيام المزدحمة"
+    ],
+    [
+     "المحتوى",
+     "مسار مرتبط بحياتك",
+     "الكلمة المستخدمة تبقى في الذاكرة"
+    ],
+    [
+     "النطق",
+     "صوت لكل كلمة",
+     "تعرف الكلمة عندما تسمعها لا عندما تقرؤها فقط"
+    ]
+   ],
+   "fits": "Wordmate Lite يناسب من بدأ لغة أكثر من مرة وتوقف، ويريد عادة يومية قصيرة يمكن الاستمرار فيها. مجاني للبدء، وفتح المحتوى الكامل بشراء واحد دون اشتراك.",
+   "faq": [
+    [
+     "هل يمكنني تعلم أكثر من لغة في الوقت نفسه؟",
+     "يتتبع التطبيق التقدم في كل لغة، لكن البدء بلغة واحدة لمدة شهر يجعل العادة أثبت."
+    ],
+    [
+     "هل يعمل دون إنترنت؟",
+     "نعم، يمكن التعلم دون اتصال."
+    ],
+    [
+     "هل يمكنني رفع الهدف اليومي؟",
+     "نعم، يمكن اختيار 5 أو 10 أو 15 أو 20 كلمة في اليوم."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Learning one of 44 languages: how to start with five words a day",
+   "meta": "Picking a language from 44 is easier than sticking with it. Start with five words in one minute a day on a path that fits your life. Wordmate Lite is free to start and works offline.",
+   "h1": "Learning one of 44 languages: how to start with five words a day",
+   "lead": "Most people who start a new language do not quit because it is hard, but because the daily session is longer than their day allows.",
+   "answer": "Choose one language and one path tied to your life, such as travel or work, and start with five words a day. Thirty unbroken days do more than one long session followed by a gap.",
+   "paras": [
+    "Having 44 languages does not mean learning several at first. The key decision is why you are learning: an upcoming trip, a job interview, talking with colleagues. A path tied to a real reason puts words to use quickly, and words you use stay.",
+    "Five words can sound small, but it becomes about 150 words in a month if you do not stop. More importantly, a short session can be finished even on a busy day, so the streak survives the first hard week.",
+    "Wordmate Lite offers a five-word session in about a minute, with 44 learning languages and 14 life paths including travel, business, exams and daily life, at beginner, intermediate and advanced levels. You can hear any word read aloud by the system voice and save the words worth keeping."
+   ],
+   "look": [
+    "A short daily session you can finish on any day",
+    "Paths tied to your reason for learning, not only general lists",
+    "Pronunciation for every word",
+    "A clear view of the words you learned today",
+    "Whether an account or subscription is needed"
+   ],
+   "steps": [
+    "Choose just one language for the first thirty days.",
+    "Choose one path tied to a real reason, such as travel or work.",
+    "Set a daily goal of five words and do not raise it in week one.",
+    "Listen to each word and repeat it out loud.",
+    "After a month, raise the goal to ten words if the streak held."
+   ],
+   "rows": [
+    [
+     "Session length",
+     "A minute or half an hour",
+     "Short sessions survive busy days"
+    ],
+    [
+     "Content",
+     "A path tied to your life",
+     "Words you use stay in memory"
+    ],
+    [
+     "Pronunciation",
+     "Audio for each word",
+     "You recognise a word when you hear it, not only when you read it"
+    ]
+   ],
+   "fits": "Wordmate Lite fits people who have started a language more than once and stopped, and want a short daily habit they can keep. Free to start, with the full content unlocked by one purchase, no subscription.",
+   "faq": [
+    [
+     "Can I learn several languages at once?",
+     "Progress is tracked per language, but starting with one language for a month makes the habit stick."
+    ],
+    [
+     "Does it work offline?",
+     "Yes, you can learn without a connection."
+    ],
+    [
+     "Can I raise the daily goal?",
+     "Yes, you can pick 5, 10, 15 or 20 words a day."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "cvdesk",
+  "locale": "ar-SA",
+  "market": "SA",
+  "term": "صانع السيرة الذاتية وفحص ATS",
+  "rank": 2,
+  "slug": "resume-maker-with-ats-check-what-to-fix-before-you-apply",
+  "loc": {
+   "title": "صانع السيرة الذاتية وفحص ATS: ما الذي تصلحه قبل التقديم؟",
+   "meta": "كثير من بوابات التوظيف تقرأ السيرة الذاتية آليًا قبل أن يراها إنسان. عمود واحد، نص قابل للتحديد، وعناوين قياسية. CV Desk يبني السيرة ويعطي درجة ATS على جهازك، دون حساب ودون اشتراك.",
+   "h1": "صانع السيرة الذاتية وفحص ATS: ما الذي تصلحه قبل التقديم؟",
+   "lead": "السيرة الذاتية الجميلة قد تُرفض قبل أن يقرأها أحد، لأن نظام تتبع المتقدمين لم يستطع قراءتها.",
+   "answer": "اجعل السيرة في عمود واحد بنص حقيقي قابل للتحديد، واستخدم عناوين قياسية مثل الخبرة والتعليم والمهارات، وضع الكلمات المفتاحية من إعلان الوظيفة كما هي. ثم افحص النتيجة قبل الإرسال.",
+   "paras": [
+    "أنظمة تتبع المتقدمين (ATS) تحوّل ملفك إلى نص ثم توزعه على حقول. الجداول والأعمدة المتعددة والنص داخل الصور قد تختلط عند التحويل، فيظهر اسم الشركة في خانة المهارات أو يختفي تاريخ العمل تمامًا.",
+    "الكلمات المفتاحية لا تعني حشو السيرة بالمصطلحات. المقصود أن تستخدم نفس التسمية الموجودة في الإعلان: إذا طلب الإعلان إدارة المشاريع فلا تكتب فقط تنسيق المهام. وعدّل السيرة لكل وظيفة بدل إرسال نسخة واحدة للجميع.",
+    "يبني CV Desk السيرة على iPhone ويعطي درجة ATS تقديرية من 0 إلى 100 على الجهاز مع إصلاحات واضحة، ويصدّر ملف PDF بعمود واحد ونص قابل للتحديد، وملف Word قابلًا للتعديل. يمكنك إنشاء عدة نسخ، واحدة لكل وظيفة. السيرة لا تغادر جهازك."
+   ],
+   "look": [
+    "تصدير PDF بنص قابل للتحديد، لا صورة",
+    "تخطيط بعمود واحد وعناوين قياسية",
+    "فحص يشرح ما يجب إصلاحه، لا رقمًا فقط",
+    "نسخة قابلة للتعديل بصيغة Word عند الحاجة",
+    "علامة مائية أو اشتراك مفاجئ عند التصدير"
+   ],
+   "steps": [
+    "انسخ إعلان الوظيفة وحدد أهم ست إلى ثماني كلمات مفتاحية فيه.",
+    "اكتب الخبرة بأفعال ونتائج قابلة للقياس تحت عناوين قياسية.",
+    "أزل الجداول والأعمدة والنص داخل الصور.",
+    "افحص السيرة وطبّق الإصلاحات المقترحة واحدًا تلو الآخر.",
+    "صدّر PDF وتأكد أنك تستطيع تحديد النص ونسخه قبل الإرسال."
+   ],
+   "rows": [
+    [
+     "التخطيط",
+     "عمود واحد أم أعمدة",
+     "الأعمدة قد تختلط عند تحويل الملف إلى نص"
+    ],
+    [
+     "الملف",
+     "PDF بنص حقيقي",
+     "النص داخل صورة لا يُقرأ آليًا"
+    ],
+    [
+     "الكلمات",
+     "نفس تسمية الإعلان",
+     "النظام يطابق الكلمات قبل أن يقرأ المعنى"
+    ]
+   ],
+   "fits": "CV Desk يناسب من يريد بناء سيرة ذاتية آمنة لأنظمة ATS بالكامل على iPhone، مع درجة فحص على الجهاز وتصدير PDF وWord. البناء والمعاينة دون شراء، والتصدير دون علامة مائية بفتح لمرة واحدة، دون اشتراك ودون إعلانات.",
+   "faq": [
+    [
+     "هل درجة ATS في التطبيق هي نفس درجة الشركة؟",
+     "لا. هي تقدير على الجهاز لتحسين قابلية القراءة وتغطية الكلمات المفتاحية، وكل شركة تستخدم نظامها الخاص."
+    ],
+    [
+     "هل أضع صورة شخصية في السيرة؟",
+     "الصورة اختيارية ومطفأة افتراضيًا. اتبع ما يطلبه الإعلان أو البلد الذي تتقدم فيه."
+    ],
+    [
+     "هل تُرفع سيرتي إلى خادم؟",
+     "لا. السيرة تبقى على جهازك، ولا حاجة إلى حساب."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Resume maker with an ATS check: what to fix before you apply",
+   "meta": "Many job portals read your resume by machine before a person sees it. Use one column, selectable text and standard headings. CV Desk builds the resume and gives an ATS score on your device, with no account and no subscription.",
+   "h1": "Resume maker with an ATS check: what to fix before you apply",
+   "lead": "A good-looking resume can be rejected before anyone reads it, because the applicant tracking system could not parse it.",
+   "answer": "Keep the resume in one column with real, selectable text, use standard headings such as Experience, Education and Skills, and use the keywords from the job ad as written. Then check the result before you send it.",
+   "paras": [
+    "Applicant tracking systems turn your file into text and sort it into fields. Tables, multiple columns and text inside images can get scrambled in that conversion, so a company name lands in Skills or a work date disappears.",
+    "Keywords do not mean stuffing the resume with jargon. It means using the same wording as the ad: if it asks for project management, do not only write task coordination. Tailor the resume for each role instead of sending one version everywhere.",
+    "CV Desk builds the resume on iPhone and gives an on-device ATS estimate from 0 to 100 with clear fixes, then exports a single-column PDF with selectable text and an editable Word file. You can keep several resumes, one per job. Your resume never leaves the device."
+   ],
+   "look": [
+    "PDF export with selectable text, not an image",
+    "One-column layout with standard headings",
+    "A check that explains what to fix, not just a number",
+    "An editable Word version when you need it",
+    "A watermark or surprise subscription at export"
+   ],
+   "steps": [
+    "Copy the job ad and pick its six to eight most important keywords.",
+    "Write experience as actions and measurable results under standard headings.",
+    "Remove tables, columns and text inside images.",
+    "Run the check and apply the suggested fixes one by one.",
+    "Export the PDF and confirm you can select and copy the text before sending."
+   ],
+   "rows": [
+    [
+     "Layout",
+     "One column or several",
+     "Columns can scramble when the file becomes text"
+    ],
+    [
+     "File",
+     "PDF with real text",
+     "Text inside an image cannot be read by machine"
+    ],
+    [
+     "Wording",
+     "Same terms as the ad",
+     "The system matches words before it reads meaning"
+    ]
+   ],
+   "fits": "CV Desk fits anyone who wants to build an ATS-safe resume entirely on iPhone, with an on-device check and PDF and Word export. Build and preview without a purchase; a one-time unlock exports with no watermark, with no subscription and no ads.",
+   "faq": [
+    [
+     "Is the app's ATS score the same as the employer's?",
+     "No. It is an on-device estimate to improve parse safety and keyword coverage; each employer uses its own system."
+    ],
+    [
+     "Should I add a photo?",
+     "The header photo is optional and off by default. Follow what the ad or country you apply in expects."
+    ],
+    [
+     "Is my resume uploaded?",
+     "No. It stays on your device and no account is needed."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "scanto",
+  "locale": "ar-SA",
+  "market": "SA",
+  "term": "ماسح مستندات بلا إنترنت",
+  "rank": 3,
+  "slug": "offline-document-scanner-why-it-matters-for-ids-and-contracts",
+  "loc": {
+   "title": "ماسح مستندات بلا إنترنت: لماذا يهم ذلك عند مسح الهوية والعقود؟",
+   "meta": "الهوية والعقود وكشوف الرواتب لا تحتاج إلى رفعها لخادم كي تصبح PDF. ScanTo Pro يمسح ويقرأ النص على iPhone نفسه ويعمل في وضع الطيران. مجاني للبدء، وفتح لمرة واحدة دون اشتراك.",
+   "h1": "ماسح مستندات بلا إنترنت: لماذا يهم ذلك عند مسح الهوية والعقود؟",
+   "lead": "كثير من تطبيقات المسح ترسل الصفحات إلى السحابة لقراءة النص. هذا غير ضروري عندما يكون المستند هويتك أو عقدك.",
+   "answer": "اختر ماسحًا يقرأ النص على الجهاز نفسه ويعمل في وضع الطيران، ويصدّر PDF محميًا بكلمة مرور عند المشاركة. بهذا لا تغادر بياناتك هاتفك إلا عندما ترسلها أنت.",
+   "paras": [
+    "أبسط اختبار هو وضع الطيران: افتح التطبيق دون اتصال وامسح صفحة. إذا عمل المسح والتعرف على النص كما هو، فالمعالجة تتم على الجهاز. إذا توقف، فهناك جزء يحتاج إلى خادم.",
+    "المسح على الجهاز لا يعني الاستغناء عن الحماية عند المشاركة. عندما ترسل نسخة من الهوية أو العقد، يفيد تشفير ملف PDF بكلمة مرور ترسلها في قناة مختلفة.",
+    "يحوّل ScanTo Pro الورق إلى PDF واضح، ويقرأ النص على iPhone لتبحث داخل المستندات لاحقًا، ويرتبها تلقائيًا في فئات مثل الإيصالات والهويات والعقود. يمكن قفل التطبيق بـ Face ID، ولا يوجد حساب ولا سحابة ولا تتبع، ويعمل بالطريقة نفسها في وضع الطيران."
+   ],
+   "look": [
+    "يعمل المسح والتعرف على النص في وضع الطيران",
+    "بحث داخل نص المستندات لا في أسمائها فقط",
+    "تصدير PDF مشفر بكلمة مرور",
+    "قفل التطبيق بـ Face ID أو رمز الدخول",
+    "حساب أو رفع إلى السحابة"
+   ],
+   "steps": [
+    "فعّل وضع الطيران وجرّب مسح صفحة للتأكد من أن كل شيء يعمل على الجهاز.",
+    "امسح المستند على سطح داكن وإضاءة متساوية.",
+    "تحقق من النص المقروء وانسخه أو صدّره إذا احتجت إليه.",
+    "عند المشاركة، صدّر PDF بكلمة مرور وأرسل الكلمة في رسالة منفصلة.",
+    "فعّل قفل التطبيق إذا كان هاتفك يُستخدم من آخرين أحيانًا."
+   ],
+   "rows": [
+    [
+     "المعالجة",
+     "على الجهاز أم في السحابة",
+     "المستند الحساس لا يحتاج إلى مغادرة الهاتف"
+    ],
+    [
+     "البحث",
+     "داخل النص",
+     "تجد العقد بكلمة فيه لا باسم الملف"
+    ],
+    [
+     "المشاركة",
+     "PDF بكلمة مرور",
+     "الملف المرسل يبقى محميًا إذا أعيد توجيهه"
+    ]
+   ],
+   "fits": "ScanTo Pro يناسب من يمسح هويات وعقودًا وإيصالات ويريد أن يبقى كل شيء على iPhone. مجاني للبدء بأول مسح، وشراء واحد يفتح المسح غير المحدود ويزيل العلامة المائية ويفتح تصدير النص وPDF المشفر وتخطيط بطاقة الهوية، دون اشتراك.",
+   "faq": [
+    [
+     "كيف أتأكد أن التطبيق لا يرفع ملفاتي؟",
+     "جرّبه في وضع الطيران. ScanTo Pro يعمل بالطريقة نفسها دون اتصال."
+    ],
+    [
+     "هل يقرأ النص العربي؟",
+     "يعتمد التعرف على النص على إمكانات الجهاز؛ جرّب صفحة عربية في المسح الأول قبل الاعتماد عليه."
+    ],
+    [
+     "هل يوجد اشتراك؟",
+     "لا. شراء واحد لمرة واحدة يفتح الميزات المتقدمة."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Offline document scanner: why it matters when you scan IDs and contracts",
+   "meta": "IDs, contracts and payslips do not need to go to a server to become a PDF. ScanTo Pro scans and reads text on the iPhone itself and works in airplane mode. Free to start, with a one-time unlock and no subscription.",
+   "h1": "Offline document scanner: why it matters when you scan IDs and contracts",
+   "lead": "Many scanner apps send pages to the cloud to read the text. That is unnecessary when the document is your ID or your contract.",
+   "answer": "Choose a scanner that reads text on the device and works in airplane mode, and export a password-protected PDF when you share. That way your data leaves the phone only when you send it.",
+   "paras": [
+    "The simplest test is airplane mode: open the app offline and scan a page. If scanning and text recognition work as usual, the processing happens on the device. If it stops, part of it needs a server.",
+    "Scanning on-device does not remove the need for protection when sharing. When you send a copy of an ID or contract, it helps to encrypt the PDF with a password that you send through a different channel.",
+    "ScanTo Pro turns paper into clean PDFs, reads the text on iPhone so you can search inside documents later, and auto-sorts scans into categories such as Receipts, IDs and Contracts. You can lock the app with Face ID; there is no account, cloud or tracking, and it works the same in airplane mode."
+   ],
+   "look": [
+    "Scanning and text recognition that work in airplane mode",
+    "Search inside document text, not only file names",
+    "Password-encrypted PDF export",
+    "App lock with Face ID or passcode",
+    "An account or cloud upload"
+   ],
+   "steps": [
+    "Turn on airplane mode and scan a test page to confirm everything runs on the device.",
+    "Scan on a dark surface with even light.",
+    "Check the recognised text and copy or export it if you need it.",
+    "When sharing, export a password PDF and send the password in a separate message.",
+    "Turn on the app lock if others sometimes use your phone."
+   ],
+   "rows": [
+    [
+     "Processing",
+     "On device or in the cloud",
+     "A sensitive document does not need to leave the phone"
+    ],
+    [
+     "Search",
+     "Inside the text",
+     "Find a contract by a word in it, not by its file name"
+    ],
+    [
+     "Sharing",
+     "Password PDF",
+     "The sent file stays protected if forwarded"
+    ]
+   ],
+   "fits": "ScanTo Pro fits people who scan IDs, contracts and receipts and want everything to stay on iPhone. Free to start with your first scan; one purchase unlocks unlimited scanning, removes the watermark and opens text export, encrypted PDFs and the ID-card layout, with no subscription.",
+   "faq": [
+    [
+     "How can I be sure the app does not upload my files?",
+     "Try it in airplane mode. ScanTo Pro works the same offline."
+    ],
+    [
+     "Does it read Arabic text?",
+     "Text recognition depends on the device's capabilities; test an Arabic page with your first scan before relying on it."
+    ],
+    [
+     "Is there a subscription?",
+     "No. A single one-time purchase unlocks the advanced features."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "tripbeelite",
+  "locale": "id",
+  "market": "ID",
+  "term": "trip bareng",
+  "rank": 5,
+  "slug": "planning-a-trip-with-friends-one-itinerary-everyone-can-follow",
+  "loc": {
+   "title": "Trip bareng teman: cara bikin satu itinerary yang diikuti semua orang",
+   "meta": "Trip bareng sering kacau karena rencana tersebar di grup chat. Satu itinerary harian dengan jam, tiket, dan hotel membuat semua orang tahu harus ke mana. TripBee Lite gratis untuk satu perjalanan.",
+   "h1": "Trip bareng teman: cara bikin satu itinerary yang diikuti semua orang",
+   "lead": "Masalah trip bareng jarang soal tujuan. Masalahnya, jam kereta ada di satu chat, alamat hotel di chat lain, dan tidak ada yang yakin rencana terakhir yang mana.",
+   "answer": "Tunjuk satu orang sebagai pemegang rencana, susun itinerary per hari dengan jam, lokasi, dan nomor tiket di satu tempat, lalu bagikan versi itu saja. Perubahan dicatat di rencana, bukan hanya di grup chat.",
+   "paras": [
+    "Grup chat bagus untuk diskusi, tapi buruk sebagai arsip. Setelah seratus pesan, detail penting seperti kode booking atau jam check-in tenggelam. Rencana yang dipisahkan dari obrolan membuat semua orang melihat versi yang sama.",
+    "Itinerary yang berguna tidak harus padat. Untuk rombongan, sisakan jeda di antara kegiatan, karena berkumpul selalu lebih lama dari perkiraan. Cantumkan titik kumpul dan jam yang jelas, bukan sekadar nama tempat.",
+    "TripBee Lite dirancang untuk satu perjalanan aktif: susun setiap hari di timeline, simpan detail penerbangan dan hotel bersama, tambahkan catatan, pengingat, dan nomor tiket. Versi gratis menyimpan satu perjalanan; satu pembelian Premium membuka perjalanan tanpa batas, berbagi perjalanan, cadangan lengkap, dan daftar bawaan pintar."
+   ],
+   "look": [
+    "Timeline per hari dengan jam, bukan sekadar daftar tempat",
+    "Detail penerbangan, hotel, dan tiket tersimpan di satu tempat",
+    "Cara membagikan rencana ke teman satu rombongan",
+    "Pengingat untuk jam penting seperti check-in dan keberangkatan",
+    "Akun, iklan, dan langganan"
+   ],
+   "steps": [
+    "Sepakati tujuan dan tanggal di grup chat, lalu tunjuk satu pemegang rencana.",
+    "Susun itinerary per hari dengan jam, titik kumpul, dan jeda antar kegiatan.",
+    "Masukkan kode booking hotel dan nomor tiket ke rencana yang sama.",
+    "Bagikan rencana ke rombongan dan minta semua merujuk ke situ.",
+    "Kalau ada perubahan, perbarui rencana dulu, baru kabari grup."
+   ],
+   "rows": [
+    [
+     "Tempat rencana",
+     "Satu itinerary atau grup chat",
+     "Detail penting tenggelam di obrolan"
+    ],
+    [
+     "Jadwal",
+     "Jam dan jeda",
+     "Rombongan butuh waktu lebih untuk berkumpul"
+    ],
+    [
+     "Dokumen",
+     "Tiket dan booking bersama rencana",
+     "Tidak perlu mencari di email saat di lokasi"
+    ]
+   ],
+   "fits": "TripBee Lite cocok kalau kamu ingin merencanakan satu perjalanan dengan rapi tanpa akun dan tanpa iklan. Gratis untuk menyimpan satu perjalanan; berbagi perjalanan ke teman termasuk dalam satu pembelian Premium, tanpa langganan.",
+   "faq": [
+    [
+     "Apakah bisa berbagi rencana dengan teman di versi gratis?",
+     "Berbagi perjalanan termasuk dalam pembelian Premium. Versi gratis bisa menyimpan dan mengedit satu perjalanan."
+    ],
+    [
+     "Perlu bikin akun?",
+     "Tidak. Tidak ada akun, iklan, analitik, atau pelacakan."
+    ],
+    [
+     "Kalau rencana berubah?",
+     "Kamu bisa mengedit atau mengganti perjalanan kapan saja."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Planning a trip with friends: one itinerary everyone can follow",
+   "meta": "Group trips get messy when the plan is scattered across chats. One daily itinerary with times, tickets and hotels tells everyone where to be. TripBee Lite is free for one trip.",
+   "h1": "Planning a trip with friends: one itinerary everyone can follow",
+   "lead": "Group trips rarely go wrong over the destination. They go wrong when train times are in one chat, the hotel address in another, and no one is sure which plan is current.",
+   "answer": "Pick one person to hold the plan, lay out each day with times, places and ticket numbers in one place, and share only that version. Changes go into the plan, not only into the group chat.",
+   "paras": [
+    "Group chats are good for discussion but poor as an archive. After a hundred messages, key details such as booking codes or check-in times are buried. A plan kept apart from the chat lets everyone see the same version.",
+    "A useful itinerary does not have to be packed. For a group, leave gaps between activities, because gathering always takes longer than expected. Write a clear meeting point and time, not just a place name.",
+    "TripBee Lite is built around one active trip: shape each day on a timeline, keep flight and hotel details together, and add notes, reminders and ticket references. The free app saves one journey; a single Premium purchase unlocks unlimited journeys, trip sharing, full backup and the smart packing list."
+   ],
+   "look": [
+    "A daily timeline with times, not just a list of places",
+    "Flight, hotel and ticket details kept in one place",
+    "A way to share the plan with your group",
+    "Reminders for key times such as check-in and departure",
+    "Account, ads and subscription"
+   ],
+   "steps": [
+    "Agree on destination and dates in the group chat, then pick one plan holder.",
+    "Lay out each day with times, meeting points and gaps between activities.",
+    "Add hotel booking codes and ticket numbers to the same plan.",
+    "Share the plan with the group and ask everyone to refer to it.",
+    "When something changes, update the plan first, then tell the group."
+   ],
+   "rows": [
+    [
+     "Where the plan lives",
+     "One itinerary or the group chat",
+     "Key details get buried in chat"
+    ],
+    [
+     "Schedule",
+     "Times and gaps",
+     "Groups need extra time to gather"
+    ],
+    [
+     "Documents",
+     "Tickets and bookings with the plan",
+     "No digging through email on the spot"
+    ]
+   ],
+   "fits": "TripBee Lite fits when you want to plan one trip neatly with no account and no ads. Free to save one journey; sharing a trip with friends is part of the single Premium purchase, with no subscription.",
+   "faq": [
+    [
+     "Can I share the plan with friends in the free version?",
+     "Trip sharing is part of the Premium purchase. The free version saves and edits one journey."
+    ],
+    [
+     "Do I need an account?",
+     "No. There is no account, ads, analytics or tracking."
+    ],
+    [
+     "What if plans change?",
+     "You can edit or replace the journey at any time."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "aibriefpack",
+  "locale": "th",
+  "market": "TH",
+  "term": "พรอมต์ ai",
+  "rank": 7,
+  "slug": "better-ai-prompts-start-with-context-from-your-files",
+  "loc": {
+   "title": "พรอมต์ AI ที่ได้คำตอบดี เริ่มจากบริบทที่ครบ ไม่ใช่คำสั่งที่ยาวขึ้น",
+   "meta": "คำตอบ AI ผิดบ่อยเพราะได้ข้อมูลไม่ครบ ไม่ใช่เพราะพรอมต์สั้น รวมภาพหน้าจอ PDF และโน้ตเป็นบรีฟเดียว ตรวจข้อเท็จจริงก่อนส่ง AI Brief ทำงานบนเครื่อง ไม่มีโฆษณา",
+   "h1": "พรอมต์ AI ที่ได้คำตอบดี เริ่มจากบริบทที่ครบ ไม่ใช่คำสั่งที่ยาวขึ้น",
+   "lead": "หลายคนแก้พรอมต์ซ้ำไปมา แต่คำตอบยังไม่ตรง เพราะ AI ไม่เคยเห็นเอกสารที่เราเห็น",
+   "answer": "เขียนพรอมต์ให้มีสามส่วน: เป้าหมายที่ต้องการ บริบทที่ตรวจแล้วจากไฟล์จริง และรูปแบบคำตอบที่อยากได้ ส่วนที่มักขาดคือบริบท ให้รวบรวมเป็นบรีฟเดียวก่อนวางลงแชต",
+   "paras": [
+    "เมื่อบริบทกระจายอยู่ในภาพหน้าจอ PDF และข้อความที่คัดลอกมา เรามักส่งให้ AI แค่บางส่วน แล้วให้ AI เดาที่เหลือ ผลคือคำตอบที่ฟังดูมั่นใจแต่ใช้ข้อมูลผิดหรือเก่า",
+    "ก่อนส่ง ควรตรวจว่าข้อเท็จจริงสำคัญมาจากไหน ข้อมูลไหนขัดกัน และมีข้อมูลส่วนตัวที่ไม่ควรส่งออกไปหรือไม่ การใช้เวลาหนึ่งนาทีตรงนี้ช่วยลดการถามซ้ำหลายรอบ",
+    "AI Brief รวมภาพหน้าจอ PDF ไฟล์ ข้อความ โน้ต และลิงก์เป็นบรีฟเดียว ใช้ OCR การอ่าน PDF การตรวจข้อมูลซ้ำ และการตรวจข้อมูลส่วนตัวด้วยเฟรมเวิร์กของ Apple บนเครื่อง ทุกข้อเท็จจริงเก็บแหล่งที่มาและระดับความมั่นใจไว้ แล้วคัดลอกบรีฟไปวางในแชต AI ใดก็ได้ในครั้งเดียว"
+   ],
+   "look": [
+    "รวมหลายแหล่งข้อมูลเป็นบรีฟเดียวได้",
+    "เห็นแหล่งที่มาของแต่ละข้อเท็จจริงก่อนส่ง",
+    "ตรวจพบข้อมูลส่วนตัวให้เลือกเก็บ แทนที่ หรือลบเอง",
+    "ใช้กับแชต AI ใดก็ได้ ไม่ผูกกับบริการเดียว",
+    "โฆษณา การติดตาม และการส่งเนื้อหาออกไป"
+   ],
+   "steps": [
+    "เขียนเป้าหมายหนึ่งประโยค ว่าอยากให้ AI ช่วยทำอะไร",
+    "รวมภาพหน้าจอ PDF และโน้ตที่เกี่ยวข้องไว้ในบรีฟเดียว",
+    "ตรวจข้อเท็จจริงที่ขัดกัน และแก้ส่วนที่ต้องการบริบทเพิ่ม",
+    "เลือกเก็บ แทนที่ หรือลบข้อมูลส่วนตัวแต่ละรายการ",
+    "ระบุรูปแบบคำตอบที่ต้องการ แล้วคัดลอกบรีฟไปวางในแชต AI"
+   ],
+   "rows": [
+    [
+     "บริบท",
+     "ครบหรือส่งแค่บางส่วน",
+     "AI จะเดาส่วนที่ขาด"
+    ],
+    [
+     "ข้อเท็จจริง",
+     "มีแหล่งที่มาหรือไม่",
+     "ตรวจได้ว่าคำตอบอ้างอิงอะไร"
+    ],
+    [
+     "ข้อมูลส่วนตัว",
+     "ตรวจก่อนส่ง",
+     "ข้อมูลที่ส่งไปแล้วเรียกคืนไม่ได้"
+    ]
+   ],
+   "fits": "AI Brief เหมาะกับคนที่ใช้ AI กับงานจริงที่มีไฟล์ประกอบ และอยากส่งบริบทที่ตรวจแล้วในครั้งเดียว ไม่มีโฆษณาหรือการติดตาม และไม่ใช่การสมัครสมาชิก มีการปลดล็อกแบบซื้อครั้งเดียว",
+   "faq": [
+    [
+     "AI Brief ส่งไฟล์ของฉันไปให้ AI เองหรือไม่",
+     "ไม่ คุณเป็นคนคัดลอกบรีฟที่ตรวจแล้วไปวางในแชต AI เอง"
+    ],
+    [
+     "ข้อมูลส่วนตัวจะถูกลบอัตโนมัติไหม",
+     "ไม่ ระบบตรวจพบแล้วให้คุณเลือกเก็บ แทนที่ หรือลบทีละรายการ และไม่ได้รับประกันการไม่ระบุตัวตน"
+    ],
+    [
+     "ใช้กับ AI ตัวไหนได้บ้าง",
+     "บรีฟเป็นข้อความที่คัดลอกได้ จึงวางในแชต AI ใดก็ได้"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Better AI prompts start with complete context, not longer instructions",
+   "meta": "AI answers often go wrong because the context is incomplete, not because the prompt is short. Combine screenshots, PDFs and notes into one brief and check the facts before sending. AI Brief works on-device, with no ads.",
+   "h1": "Better AI prompts start with complete context, not longer instructions",
+   "lead": "Many people rewrite a prompt again and again, but the answer still misses, because the AI never saw the documents they saw.",
+   "answer": "Give the prompt three parts: the goal, checked context from the real files, and the answer format you want. The part usually missing is context, so gather it into one brief before pasting it into the chat.",
+   "paras": [
+    "When context is scattered across screenshots, PDFs and copied text, we tend to send the AI only part of it and let it guess the rest. The result sounds confident but uses wrong or outdated information.",
+    "Before sending, check where the key facts come from, which ones conflict, and whether there is personal data that should not go out. A minute here saves several rounds of follow-up questions.",
+    "AI Brief combines screenshots, PDFs, files, text, notes and links into one brief, using Apple frameworks on the device for OCR, PDF reading, duplicate checks and privacy detection. Every fact keeps its source and confidence, and you copy the finished brief into any AI chat in one tap."
+   ],
+   "look": [
+    "Several sources combined into one brief",
+    "The source of each fact visible before sending",
+    "Detected personal details you keep, replace or remove yourself",
+    "Works with any AI chat, not tied to one service",
+    "Ads, tracking and content upload"
+   ],
+   "steps": [
+    "Write the goal in one sentence: what you want the AI to do.",
+    "Gather the related screenshots, PDFs and notes into one brief.",
+    "Check conflicting facts and add context where needed.",
+    "Keep, replace or remove each personal detail.",
+    "State the answer format, then copy the brief into the AI chat."
+   ],
+   "rows": [
+    [
+     "Context",
+     "Complete or partial",
+     "The AI will guess what is missing"
+    ],
+    [
+     "Facts",
+     "Sourced or not",
+     "You can check what the answer relies on"
+    ],
+    [
+     "Personal data",
+     "Checked before sending",
+     "What has been sent cannot be recalled"
+    ]
+   ],
+   "fits": "AI Brief fits people who use AI on real work with supporting files and want to send checked context in one go. No ads or tracking, and no subscription; there is a one-time unlock.",
+   "faq": [
+    [
+     "Does AI Brief send my files to an AI itself?",
+     "No. You copy the checked brief and paste it into the AI chat yourself."
+    ],
+    [
+     "Is personal data removed automatically?",
+     "No. Detected items are shown so you can keep, replace or remove each one, and AI Brief never promises anonymity."
+    ],
+    [
+     "Which AI can I use it with?",
+     "The brief is copyable text, so it works with any AI chat."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "cyca",
+  "locale": "sk",
+  "market": "SK",
+  "term": "plodnosť",
+  "rank": 19,
+  "slug": "fertile-days-how-cycle-apps-estimate-them-and-their-limits",
+  "loc": {
+   "title": "Plodnosť a plodné dni: ako ich aplikácie na cyklus odhadujú a kde sú hranice",
+   "meta": "Plodné okno je odhad z dĺžky vašich cyklov, nie istota. Čím viac cyklov zaznamenáte, tým presnejší odhad. Cyca uchováva údaje len v iPhone, bez účtu. Nie je to zdravotnícka pomôcka ani antikoncepcia.",
+   "h1": "Plodnosť a plodné dni: ako ich aplikácie na cyklus odhadujú a kde sú hranice",
+   "lead": "Kalendár plodných dní vyzerá presne, ale za ním je výpočet z vašich doterajších cyklov. Je dobré vedieť, z čoho vychádza.",
+   "answer": "Aplikácia odhaduje ovuláciu podľa dĺžky vašich predchádzajúcich cyklov a okolo nej vyznačí plodné okno približne šiestich dní. Pri pravidelnom cykle je odhad užitočný na plánovanie, nie je však antikoncepciou ani lekárskou diagnózou.",
+   "paras": [
+    "Ovulácia nastáva zvyčajne približne dva týždne pred ďalšou menštruáciou, nie nutne v polovici cyklu. Preto má zmysel zaznamenávať skutočný začiatok každej menštruácie: odhad sa spresňuje až s niekoľkými cyklami.",
+    "Ak sú vaše cykly nepravidelné, po pôrode, pri dojčení alebo pri zmene liekov, odhad z kalendára je menej spoľahlivý. Vtedy je vhodné poradiť sa s lekárom, nie spoliehať sa len na aplikáciu.",
+    "Cyca zaznamenáva menštruáciu, príznaky, náladu a poznámky jedným ťuknutím a učí sa váš rytmus. Predpoveď ďalšej menštruácie, plodného okna a ovulácie sa prispôsobuje každému záznamu. Údaje zostávajú v iPhone, bez účtu, bez cloudu a bez sledovania, a aplikácia funguje úplne offline."
+   ],
+   "look": [
+    "Odhad, ktorý sa prispôsobuje vašim zaznamenaným cyklom",
+    "Jasné označenie, že ide o odhad, nie o antikoncepciu",
+    "Kde sú uložené citlivé údaje o zdraví",
+    "Rýchly záznam, ktorý vydržíte robiť každý mesiac",
+    "Účet, reklamy a predplatné"
+   ],
+   "steps": [
+    "Zaznamenajte prvý deň každej menštruácie hneď, keď začne.",
+    "Pridávajte aj príznaky a náladu, aby ste videli vlastné vzorce.",
+    "Po troch až šiestich cykloch porovnajte odhad so skutočnosťou.",
+    "Pri nepravidelných cykloch berte plodné okno len ako orientačné.",
+    "Pri snahe o otehotnenie alebo pri ťažkostiach sa poraďte s lekárom."
+   ],
+   "rows": [
+    [
+     "Podklad odhadu",
+     "Vaše cykly alebo priemer",
+     "Priemerný cyklus nemusí zodpovedať vášmu"
+    ],
+    [
+     "Účel",
+     "Plánovanie, nie antikoncepcia",
+     "Kalendárny odhad nie je spoľahlivá ochrana"
+    ],
+    [
+     "Súkromie",
+     "Údaje v zariadení",
+     "Údaje o cykle patria medzi citlivé údaje"
+    ]
+   ],
+   "fits": "Cyca sa hodí, ak chcete súkromný kalendár cyklu v iPhone bez účtu a cloudu. Záznam dňa a menštruácie je zadarmo; jednorazový nákup Cyca Pro odomkne budúce predpovede vrátane plodného okna, Personal Rhythm, Smart Planner a celú históriu, bez predplatného.",
+   "faq": [
+    [
+     "Môžem plodné dni použiť ako antikoncepciu?",
+     "Nie. Cyca poskytuje odhady na plánovanie a pohodu, nie je zdravotníckou pomôckou ani formou antikoncepcie."
+    ],
+    [
+     "Kde sú uložené moje údaje?",
+     "Len v iPhone. Cyca nemá servery ani účty a funguje offline."
+    ],
+    [
+     "Je predpoveď plodného okna zadarmo?",
+     "Budúce predpovede sú súčasťou jednorazového odomknutia Cyca Pro. Záznam dneška a menštruácie je zadarmo."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Fertility and fertile days: how cycle apps estimate them, and their limits",
+   "meta": "The fertile window is an estimate from your cycle lengths, not a certainty. The more cycles you log, the better the estimate. Cyca keeps data on your iPhone with no account. It is not a medical device or contraception.",
+   "h1": "Fertility and fertile days: how cycle apps estimate them, and their limits",
+   "lead": "A fertile-day calendar looks precise, but behind it is a calculation from your past cycles. It helps to know what it is based on.",
+   "answer": "The app estimates ovulation from the length of your previous cycles and marks a fertile window of roughly six days around it. With a regular cycle the estimate is useful for planning, but it is not contraception or a medical diagnosis.",
+   "paras": [
+    "Ovulation usually happens about two weeks before the next period, not necessarily mid-cycle. That is why it is worth logging the real start of each period: the estimate only sharpens after several cycles.",
+    "If your cycles are irregular, or after childbirth, while breastfeeding or with a change in medication, a calendar estimate is less reliable. In those cases it is wise to talk to a doctor rather than rely on an app alone.",
+    "Cyca logs your period, symptoms, mood and notes in a tap and learns your rhythm. Predictions for the next period, fertile window and ovulation adapt with every entry. Data stays on your iPhone, with no account, cloud or tracking, and the app works fully offline."
+   ],
+   "look": [
+    "An estimate that adapts to your logged cycles",
+    "Clear wording that it is an estimate, not contraception",
+    "Where sensitive health data is stored",
+    "Logging fast enough to keep up every month",
+    "Account, ads and subscription"
+   ],
+   "steps": [
+    "Log the first day of each period as soon as it starts.",
+    "Add symptoms and mood too, so your own patterns appear.",
+    "After three to six cycles, compare the estimate with what happened.",
+    "With irregular cycles, treat the fertile window as a rough guide only.",
+    "If you are trying to conceive or have concerns, talk to a doctor."
+   ],
+   "rows": [
+    [
+     "Basis of the estimate",
+     "Your cycles or an average",
+     "An average cycle may not match yours"
+    ],
+    [
+     "Purpose",
+     "Planning, not contraception",
+     "A calendar estimate is not reliable protection"
+    ],
+    [
+     "Privacy",
+     "Data on the device",
+     "Cycle data is sensitive"
+    ]
+   ],
+   "fits": "Cyca fits if you want a private cycle calendar on iPhone with no account or cloud. Logging today and your period is free; a one-time Cyca Pro purchase unlocks future predictions including the fertile window, Personal Rhythm, the Smart Planner and full history, with no subscription.",
+   "faq": [
+    [
+     "Can I use fertile days as contraception?",
+     "No. Cyca provides wellness and planning estimates and is not a medical device or a form of contraception."
+    ],
+    [
+     "Where is my data stored?",
+     "Only on your iPhone. Cyca has no servers or accounts and works offline."
+    ],
+    [
+     "Is the fertile-window prediction free?",
+     "Future predictions are part of the one-time Cyca Pro unlock. Logging today and your period is free."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "hourstaglite",
+  "locale": "zh-Hans",
+  "market": "CN",
+  "term": "理性消费",
+  "rank": 20,
+  "slug": "rational-spending-label-need-want-impulse-before-you-pay",
+  "loc": {
+   "title": "理性消费怎么做：付款前先分清需要、想要和冲动",
+   "meta": "理性消费不是不花钱，而是花得清楚。付款前把价格换算成工时，再标记是需要、想要还是冲动，一个月后就能看出自己的消费模式。HoursTag Lite 数据只在本机，不用账号。",
+   "h1": "理性消费怎么做：付款前先分清需要、想要和冲动",
+   "lead": "很多人记了账，月底还是不知道钱花到哪里去了。问题不在记录，而在付款那一刻没有停一下。",
+   "answer": "付款前做两件事：把价格换算成自己要工作几个小时，再给这笔消费贴上“需要、想要、冲动”其中一个标签。坚持一个月，就能看出哪一类在悄悄吃掉预算。",
+   "paras": [
+    "价格是抽象的数字，工时是具体的生活。一件看起来不贵的东西，换算成“要工作六个小时”之后，感受会完全不同。这一步不是为了禁止购买，而是让决定在清醒的时候做。",
+    "标签的作用在于事后回看。单看金额，很难分辨是生活必需还是一时冲动；有了标签，月底就能直接看到冲动消费占了多少，下个月只需要针对这一类调整。",
+    "HoursTag Lite 用你的实际到手时薪把价格换算成工作时间，把每笔消费标为需要、想要或冲动，显示你的价值模式，也能算出一个目标要用多少工时并追踪进度。支持小组件和 Apple Watch，数据只在本机，不用账号、不追踪。"
+   ],
+   "look": [
+    "用实际到手收入计算时薪，而不是税前工资",
+    "每笔消费能否标记为需要、想要或冲动",
+    "月底能否按标签回看消费模式",
+    "能否把储蓄目标换算成工时并追踪进度",
+    "账号、追踪与订阅"
+   ],
+   "steps": [
+    "用每月实际到手收入除以实际工作小时，算出自己的时薪。",
+    "付款前先换算成工时，停十秒再决定。",
+    "买下后立刻标记：需要、想要还是冲动。",
+    "月底只看冲动那一类，找出最常出现的场景。",
+    "下个月针对那个场景定一条规则，例如睡前不下单。"
+   ],
+   "rows": [
+    [
+     "换算基础",
+     "到手时薪",
+     "税前数字会让每样东西看起来更便宜"
+    ],
+    [
+     "分类",
+     "需要、想要、冲动",
+     "金额相同，处理方式不同"
+    ],
+    [
+     "回看",
+     "按月看标签",
+     "只改最大的那一类，比全面节省更容易坚持"
+    ]
+   ],
+   "fits": "HoursTag Lite 适合想在付款前停一下、看清自己消费模式的人。免费开始，一次付款解锁完整功能，没有订阅。",
+   "faq": [
+    [
+     "理性消费是不是什么都不买？",
+     "不是。重点是想清楚再买，想要的东西也可以买，只是要知道它花了多少工时。"
+    ],
+    [
+     "时薪怎么算比较准？",
+     "用每月实际到手收入除以实际工作时数，包括加班和通勤时间会更贴近真实感受。"
+    ],
+    [
+     "数据会上传吗？",
+     "不会。数据只在本机，不用账号，也不追踪。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Rational spending: label need, want or impulse before you pay",
+   "meta": "Rational spending is not about not spending; it is about spending clearly. Convert the price into work hours before paying, then label it need, want or impulse. HoursTag Lite keeps data on your device with no account.",
+   "h1": "Rational spending: label need, want or impulse before you pay",
+   "lead": "Many people track spending and still do not know where the money went by month end. The problem is not the record; it is not pausing at the moment of payment.",
+   "answer": "Before paying, do two things: convert the price into hours of your own work, and label the purchase as need, want or impulse. After a month you can see which category is quietly eating the budget.",
+   "paras": [
+    "A price is an abstract number; work hours are real life. Something that looks cheap feels different once it becomes six hours of work. This step is not about forbidding purchases but about deciding with a clear head.",
+    "Labels matter when you look back. Amounts alone do not show what was essential and what was a whim; with labels, at month end you can see how much went on impulse and adjust just that category next month.",
+    "HoursTag Lite converts prices into work time using your real take-home hourly value, labels each purchase as need, want or impulse, shows your value pattern, and can work out how many hours a goal costs and track progress. It has a widget and Apple Watch support, and data stays on the device with no account or tracking."
+   ],
+   "look": [
+    "An hourly rate based on take-home pay, not gross salary",
+    "A need, want or impulse label for each purchase",
+    "A monthly look back by label",
+    "Savings goals converted into work hours with progress",
+    "Account, tracking and subscription"
+   ],
+   "steps": [
+    "Divide your monthly take-home pay by the hours you actually work.",
+    "Before paying, convert the price into hours and pause for ten seconds.",
+    "Right after buying, label it need, want or impulse.",
+    "At month end, look only at impulse and find the most common situation.",
+    "Next month set one rule for that situation, such as no orders before bed."
+   ],
+   "rows": [
+    [
+     "Conversion basis",
+     "Take-home hourly rate",
+     "Gross figures make everything look cheaper"
+    ],
+    [
+     "Category",
+     "Need, want, impulse",
+     "Same amount, different response"
+    ],
+    [
+     "Review",
+     "Monthly by label",
+     "Changing the biggest category is easier than cutting everything"
+    ]
+   ],
+   "fits": "HoursTag Lite fits people who want to pause before paying and see their spending pattern clearly. Free to start, with one payment to unlock the full features and no subscription.",
+   "faq": [
+    [
+     "Does rational spending mean buying nothing?",
+     "No. It means deciding clearly; you can still buy things you want while knowing how many hours they cost."
+    ],
+    [
+     "How do I get an accurate hourly rate?",
+     "Divide your monthly take-home pay by the hours you actually work; including overtime and commuting makes it closer to how it feels."
+    ],
+    [
+     "Is my data uploaded?",
+     "No. It stays on the device, with no account and no tracking."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "stayclock",
+  "locale": "ja",
+  "market": "JP",
+  "term": "フリップ時計",
+  "rank": 23,
+  "slug": "flip-clock-on-iphone-or-ipad-keep-it-on-all-day-without-worry",
+  "loc": {
+   "title": "フリップ時計を iPhone・iPad で一日中表示するときに気をつけること",
+   "meta": "使わなくなった iPad や充電中の iPhone をフリップ時計にするなら、画面の常時点灯、バッテリー、有機 EL の焼き付き対策の三つを先に決めます。Stay Clock は文字盤一つが無料、アカウント不要です。",
+   "h1": "フリップ時計を iPhone・iPad で一日中表示するときに気をつけること",
+   "lead": "パタパタ表示の時計は見た目が良く、離れた場所からも読みやすい。ただ、一日中つけておくなら設定を先に決めておく必要があります。",
+   "answer": "充電中だけ常時点灯にするか、バッテリー残量の下限を決めて点灯させるかを選び、有機 EL 画面ならピクセルを少しずつずらす機能と夜の暗い表示を使います。これで画面とバッテリーへの負担を抑えられます。",
+   "paras": [
+    "iPhone や iPad は通常、しばらく操作しないと画面が消えます。時計として使うなら、充電中は点灯を続ける、または残量が一定以下になったら通常に戻す、といったルールがあると安心です。",
+    "有機 EL の iPhone で同じ数字を長時間表示すると、焼き付きが気になります。表示位置を少しずつずらす、何もしていないときは細部を控えめにする、夜は黒背景に暗い赤で表示する、といった工夫が負担を減らします。寝室では明るさの点でも夜の表示が役立ちます。",
+    "Stay Clock は iPhone と iPad を常時表示の卓上時計にするアプリです。充電を理解した点灯設定、有機 EL 向けのパネルケア、夜用の暗い赤の表示に加え、選んだ文字盤がスタンバイ、ロック画面とホーム画面のウィジェット、Apple Watch でも同じ見た目になります。アカウント、広告、追跡、通信はありません。"
+   ],
+   "look": [
+    "充電中だけ、またはバッテリー下限付きで点灯を続けられるか",
+    "有機 EL 画面向けの焼き付き対策があるか",
+    "寝室で眩しくない夜用の表示があるか",
+    "縦向き・横向き、iPad の大きな画面に対応しているか",
+    "アカウント、広告、通信の有無"
+   ],
+   "steps": [
+    "時計にする端末と置き場所を決め、充電ケーブルが届くか確認します。",
+    "点灯の設定を、充電中のみ、またはバッテリー下限付きに設定します。",
+    "有機 EL の iPhone ならパネルケアを有効にします。",
+    "寝室なら夜のスケジュールと暗い赤の表示を設定します。",
+    "日付やカレンダーの表示を文字盤ごとに選び、離れた場所から読めるか確かめます。"
+   ],
+   "rows": [
+    [
+     "点灯",
+     "充電中のみかバッテリー下限付きか",
+     "思わぬ電池切れを防ぐ"
+    ],
+    [
+     "画面",
+     "ピクセルずらしと夜の表示",
+     "有機 EL の焼き付きと眩しさを抑える"
+    ],
+    [
+     "表示場所",
+     "全画面、スタンバイ、ウィジェット",
+     "どこで見ても同じ文字盤で迷わない"
+    ]
+   ],
+   "fits": "Stay Clock は、デスクや棚、ベッドサイドで iPhone や iPad を時計として置いておきたい人に向いています。手書き風の文字盤一つが無料で、買い切りの一回購入で文字盤が 100 種類追加されます。サブスクリプションではありません。",
+   "faq": [
+    [
+     "一日中つけっぱなしでも大丈夫ですか？",
+     "充電中のみ点灯、またはバッテリー下限付きの設定と、有機 EL 向けのパネルケアを使うと負担を抑えられます。"
+    ],
+    [
+     "スタンバイでも同じデザインになりますか？",
+     "はい。選んだ文字盤は全画面の時計、スタンバイ、ウィジェット、Apple Watch で同じ見た目になります。"
+    ],
+    [
+     "インターネット接続は必要ですか？",
+     "いいえ。通信は行わず、すべて端末内で動作します。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Running a flip clock on iPhone or iPad all day: what to set first",
+   "meta": "If you turn a spare iPad or a charging iPhone into a flip clock, decide three things first: always-on behaviour, battery, and OLED burn-in care. Stay Clock includes one free face and needs no account.",
+   "h1": "Running a flip clock on iPhone or iPad all day: what to set first",
+   "lead": "A flip-style clock looks good and reads well from across the room. If it stays on all day, though, a few settings matter.",
+   "answer": "Choose whether the screen stays on only while charging or with a battery floor, and on OLED screens use gentle pixel shifting and a dim night face. That keeps the load on the screen and battery low.",
+   "paras": [
+    "iPhones and iPads normally turn the screen off after a while. To use one as a clock, it helps to have a rule such as staying on while charging, or returning to normal when the battery drops below a set level.",
+    "Showing the same digits for hours on an OLED iPhone raises burn-in concerns. Shifting the display slightly over time, softening details when idle and using a dim red face on black at night reduce the load, and the night face also helps with brightness in the bedroom.",
+    "Stay Clock turns iPhone and iPad into an always-on desk clock. It offers charging-aware Keep Awake, Panel Care for OLED screens and a dim red night face, and the face you pick looks the same in StandBy, on Lock Screen and Home Screen widgets and on Apple Watch. No account, ads, tracking or network."
+   ],
+   "look": [
+    "Staying on only while charging, or with a battery floor",
+    "Burn-in care for OLED screens",
+    "A night face that is not glaring in the bedroom",
+    "Portrait, landscape and large iPad layouts",
+    "Account, ads and network use"
+   ],
+   "steps": [
+    "Choose the device and its spot, and check the charging cable reaches.",
+    "Set Keep Awake to charging only, or always on with a battery floor.",
+    "On an OLED iPhone, turn on Panel Care.",
+    "In the bedroom, set the night schedule and the dim red face.",
+    "Pick the date or calendar view for each face and check it reads from a distance."
+   ],
+   "rows": [
+    [
+     "Keep awake",
+     "Charging only or battery floor",
+     "Avoids an unexpected flat battery"
+    ],
+    [
+     "Screen",
+     "Pixel shifting and night face",
+     "Reduces OLED burn-in and glare"
+    ],
+    [
+     "Where it shows",
+     "Full screen, StandBy, widgets",
+     "The same face everywhere"
+    ]
+   ],
+   "fits": "Stay Clock fits people who want an iPhone or iPad to sit on a desk, shelf or nightstand as a clock. One handwritten-look face is free, and a one-time purchase adds 100 more faces, with no subscription.",
+   "faq": [
+    [
+     "Is it fine to leave it on all day?",
+     "Using charging-only or battery-floor Keep Awake together with OLED Panel Care keeps the load down."
+    ],
+    [
+     "Does StandBy use the same design?",
+     "Yes. The face you pick looks the same on the full-screen clock, StandBy, widgets and Apple Watch."
+    ],
+    [
+     "Does it need an internet connection?",
+     "No. It uses no network and runs entirely on the device."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lockhour",
+  "locale": "ar-SA",
+  "market": "SA",
+  "term": "حظر التطبيقات ووقت الشاشة",
+  "rank": 43,
+  "slug": "block-apps-or-screen-time-limits-which-keeps-you-off-your-phone",
+  "loc": {
+   "title": "حظر التطبيقات أم حدود وقت الشاشة: أيهما يبعدك فعلًا عن الهاتف؟",
+   "meta": "حدود وقت الشاشة في iPhone سهلة التجاوز بنقرة. جلسة حظر بوقت محدد مع لحظة توقف قبل الإلغاء تعمل بشكل مختلف. LockHour Pro يحظر التطبيقات المشتتة ثم يفتحها تلقائيًا، دون حساب ودون اشتراك.",
+   "h1": "حظر التطبيقات أم حدود وقت الشاشة: أيهما يبعدك فعلًا عن الهاتف؟",
+   "lead": "كثيرون يضبطون حدود وقت الشاشة ثم يتجاهلونها في اليوم نفسه. المشكلة ليست في الإرادة، بل في أن التجاوز أسهل من الالتزام.",
+   "answer": "حدود وقت الشاشة تناسب مراقبة الاستخدام اليومي، أما عندما تحتاج ساعة تركيز للعمل أو المذاكرة أو النوم فجلسة حظر بوقت محدد أكثر فعالية، خاصة إذا كان الإلغاء المبكر يتطلب لحظة انتظار وتأكيد.",
+   "paras": [
+    "حد الاستخدام اليومي يقول لك متى تجاوزت الوقت، لكنه يظهر غالبًا في منتصف التصفح، وتجاوزه بنقرة واحدة. لذلك يفيد في معرفة أين يذهب الوقت أكثر من منعه.",
+    "جلسة الحظر تبدأ قبل أن يبدأ التشتت: تختار التطبيقات والمدة، فتُغلق خلال الجلسة ثم تُفتح تلقائيًا عند انتهائها. وعندما يتطلب الإيقاف المبكر فترة انتظار وتأكيدًا، يصبح قرار الرجوع للتطبيق قرارًا واعيًا لا حركة تلقائية.",
+    "يقدّم LockHour Pro أوضاع تركيز جاهزة: تركيز سريع، وعمل عميق، ووضع المذاكرة بدورات بومودورو مع استراحات، والاستعداد للنوم، وبداية الصباح، أو مدة مخصصة. يضيف الوضع الصارم لحظة انتظار وتأكيد قبل الإيقاف المبكر، ويعرض وقت التركيز اليوم والرسوم الأسبوعية والسلاسل، مع أدوات وعدّاد في Dynamic Island."
+   ],
+   "look": [
+    "جلسات بوقت محدد تُفتح بعدها التطبيقات تلقائيًا",
+    "حاجز قبل الإيقاف المبكر، لا زر تجاهل فوري",
+    "أوضاع مختلفة للعمل والمذاكرة والنوم والصباح",
+    "إحصاءات تُظهر وقت التركيز المستعاد",
+    "حساب أو إعلانات أو اشتراك"
+   ],
+   "steps": [
+    "راجع وقت الشاشة لأسبوع وحدد التطبيقين أو الثلاثة الأكثر تشتيتًا.",
+    "اختر وقتًا ثابتًا يوميًا للتركيز، مثل أول ساعة عمل أو مذاكرة.",
+    "ابدأ جلسة حظر لهذه التطبيقات طوال تلك الساعة.",
+    "فعّل الوضع الصارم إذا كنت توقف الجلسات مبكرًا كثيرًا.",
+    "أضف جلسة قبل النوم لإيقاف التصفح الليلي، وراجع السلسلة نهاية الأسبوع."
+   ],
+   "rows": [
+    [
+     "متى يعمل",
+     "قبل التشتت أم بعده",
+     "الحظر المسبق يمنع البداية لا يوقفها في المنتصف"
+    ],
+    [
+     "التجاوز",
+     "نقرة أم انتظار وتأكيد",
+     "الحاجز الصغير يحوّل العادة إلى قرار"
+    ],
+    [
+     "الهدف",
+     "مراقبة أم تركيز",
+     "لكل أداة استخدام مختلف"
+    ]
+   ],
+   "fits": "LockHour Pro يناسب من يريد ساعات تركيز محددة للعمل أو المذاكرة أو النوم دون الاعتماد على قوة الإرادة. شراء واحد يفتح كل شيء، دون اشتراك ودون حساب ودون إعلانات.",
+   "faq": [
+    [
+     "هل يغني عن وقت الشاشة في iPhone؟",
+     "لا يلغيه؛ وقت الشاشة مفيد لمعرفة الاستخدام، وLockHour Pro لجلسات تركيز محددة."
+    ],
+    [
+     "هل يمكنني إيقاف الجلسة في حالة طارئة؟",
+     "نعم. وفي الوضع الصارم يسبق الإيقاف وقت انتظار وتأكيد."
+    ],
+    [
+     "هل تغادر بياناتي الجهاز؟",
+     "لا. لا حساب ولا تتبع، والبيانات تبقى على جهازك."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Block apps or Screen Time limits: which actually keeps you off your phone?",
+   "meta": "iPhone Screen Time limits are easy to skip with a tap. A timed blocking session with a pause before cancelling works differently. LockHour Pro blocks distracting apps and unlocks them automatically, with no account and no subscription.",
+   "h1": "Block apps or Screen Time limits: which actually keeps you off your phone?",
+   "lead": "Many people set Screen Time limits and ignore them the same day. The problem is not willpower; it is that skipping is easier than sticking.",
+   "answer": "Screen Time limits suit monitoring daily use. When you need a focused hour for work, study or sleep, a timed blocking session works better, especially when stopping early requires a short wait and a confirmation.",
+   "paras": [
+    "A daily limit tells you when you have gone over, but it usually appears mid-scroll and can be dismissed with one tap. So it is better at showing where time goes than at stopping it.",
+    "A blocking session starts before the distraction does: you pick the apps and the length, they are shielded during the session and unlock automatically when it ends. When stopping early takes a cooldown and confirmation, going back to the app becomes a deliberate choice rather than a reflex.",
+    "LockHour Pro offers ready focus modes: Quick Focus, Deep Work, Study Mode with Pomodoro-style cycles and breaks, Sleep Wind Down, Morning Reset, or a custom length. Hard Mode adds a cooldown and confirmation before stopping early, and you see today's focused time, weekly charts and streaks, with widgets and a Dynamic Island countdown."
+   ],
+   "look": [
+    "Timed sessions after which apps unlock automatically",
+    "Friction before stopping early, not an instant ignore button",
+    "Separate modes for work, study, sleep and mornings",
+    "Stats that show reclaimed focus time",
+    "Account, ads or subscription"
+   ],
+   "steps": [
+    "Review a week of Screen Time and pick the two or three most distracting apps.",
+    "Choose a fixed daily focus time, such as the first hour of work or study.",
+    "Start a blocking session for those apps for that hour.",
+    "Turn on Hard Mode if you often stop sessions early.",
+    "Add a bedtime session to stop late-night scrolling, and check your streak at the weekend."
+   ],
+   "rows": [
+    [
+     "When it acts",
+     "Before or after distraction",
+     "Blocking ahead stops the start rather than the middle"
+    ],
+    [
+     "Skipping",
+     "A tap or a wait and confirmation",
+     "A little friction turns habit into a decision"
+    ],
+    [
+     "Goal",
+     "Monitoring or focus",
+     "Each tool has a different job"
+    ]
+   ],
+   "fits": "LockHour Pro fits people who want set hours of focus for work, study or sleep without relying on willpower. One purchase unlocks everything, with no subscription, account or ads.",
+   "faq": [
+    [
+     "Does it replace iPhone Screen Time?",
+     "No; Screen Time is useful for seeing usage, and LockHour Pro is for set focus sessions."
+    ],
+    [
+     "Can I stop a session in an emergency?",
+     "Yes. In Hard Mode, stopping is preceded by a cooldown and confirmation."
+    ],
+    [
+     "Does my data leave the device?",
+     "No. There is no account or tracking, and data stays on your device."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "snapportlite",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "護照 相片",
+  "rank": 45,
+  "slug": "passport-photo-at-home-in-taiwan-size-background-and-printing",
+  "loc": {
+   "title": "護照相片在家拍：尺寸、背景、沖印一次弄對",
+   "meta": "在家拍護照相片，關鍵是頭部比例、白色背景和正確的沖印尺寸。先查官方規定，再用裁切輔助線對齊，最後排成 4×6 相紙沖印。Snapport Lite 在手機上裁切，不上傳照片。",
+   "h1": "護照相片在家拍：尺寸、背景、沖印一次弄對",
+   "lead": "護照相片被退件，多半不是因為拍得不好看，而是頭部太大或太小、背景有陰影，或印出來的尺寸不對。",
+   "answer": "先查外交部領事事務局最新的照片規格，在白牆前用自然光正面拍攝，再用裁切輔助線把頭頂、眼睛和下巴對到規定位置，最後排版成相紙沖印。規格以申請機關公告為準。",
+   "paras": [
+    "護照照片的重點是比例：照片尺寸固定，頭頂到下巴佔多少也有規定。自己裁切時最常見的錯，是只把臉放在中間，卻沒有控制頭部大小。用有頭頂、眼睛、下巴輔助線的工具，比用肉眼估準確得多。",
+    "背景和光線也會影響審核。站在離牆一步的位置拍，可以減少身後的陰影；面向窗戶的自然光比頭頂燈均勻。修圖只做亮度和對比的輕微調整，不要改變五官或膚色。",
+    "Snapport Lite 內建 28 個國家與地區、35 種常用尺寸，包括 35×45 毫米，也能自訂毫米、英吋或像素。它用手機上的臉部偵測顯示頭頂、眼睛與下巴輔助線，背景可保留或換成白色等顏色，並能把多張排在 4×6 英吋、A4 或 Letter 相紙上，附裁切線。照片只在手機上處理，不會上傳。"
+   ],
+   "look": [
+    "尺寸是否和官方規定一致，而不是只寫「護照」",
+    "是否有頭頂、眼睛、下巴的對齊輔助線",
+    "背景能否處理成乾淨的白色",
+    "能否排版成相紙，一次印多張",
+    "照片是否會上傳到伺服器"
+   ],
+   "steps": [
+    "到外交部領事事務局網站確認最新的護照照片規格。",
+    "站在白牆前一步，面向窗戶，正面直視鏡頭拍攝，不戴帽子、不露齒笑。",
+    "選擇對應尺寸，依輔助線對齊頭頂、眼睛和下巴。",
+    "把背景處理成白色，只微調亮度與對比，比較前後差異。",
+    "排版到 4×6 相紙並附裁切線，存到檔案後拿去便利商店或相館沖印。"
+   ],
+   "rows": [
+    [
+     "尺寸",
+     "照片與頭部比例",
+     "頭部太大或太小是常見的退件原因"
+    ],
+    [
+     "背景",
+     "白色、無陰影",
+     "陰影和雜物會被要求重拍"
+    ],
+    [
+     "沖印",
+     "相紙排版與裁切線",
+     "裁切後的尺寸才會剛好"
+    ]
+   ],
+   "fits": "Snapport Lite 適合想在家先拍好、裁好再去沖印的人。所有尺寸與編輯工具免費使用，第一次匯出也包含在內；一次購買可無限匯出，沒有訂閱、廣告或帳號。它只編輯照片，不保證審核通過，也與任何政府機關無關。",
+   "faq": [
+    [
+     "自己拍的護照相片可以用嗎？",
+     "只要符合申請機關的規格就可以送件。各國與各機關規定不同，送件前請以官方公告為準。"
+    ],
+    [
+     "可以把背景換成白色嗎？",
+     "可以保留原背景，或換成白色、淺灰、藍色、紅色或自訂顏色，並調整邊緣。"
+    ],
+    [
+     "照片會上傳嗎？",
+     "不會。照片只在手機上處理，可離線使用。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Passport photo at home in Taiwan: size, background and printing done right",
+   "meta": "For a passport photo taken at home, what matters is head proportion, a white background and the right print size. Check the official rules, align with crop guides, then lay out a 4×6 print sheet. Snapport Lite crops on your phone without uploading.",
+   "h1": "Passport photo at home in Taiwan: size, background and printing done right",
+   "lead": "Passport photos are usually rejected not because they look bad, but because the head is too large or too small, the background has shadows, or the print is the wrong size.",
+   "answer": "Check the latest photo specification from the Bureau of Consular Affairs, shoot face-on in natural light in front of a white wall, align the top of the head, eyes and chin with crop guides, and lay the photo out on a print sheet. The issuing agency's rules always take precedence.",
+   "paras": [
+    "Passport photos are about proportion: the photo size is fixed, and so is how much of it the head should fill. The common mistake when cropping yourself is centring the face without controlling head size. A tool with head-top, eye-line and chin guides is far more accurate than judging by eye.",
+    "Background and light affect approval too. Standing a step away from the wall reduces shadows behind you, and facing a window gives more even light than a ceiling lamp. Keep edits to light brightness and contrast changes; do not alter features or skin tone.",
+    "Snapport Lite includes 35 common presets for 28 countries and regions, including 35×45 mm, plus custom sizes in millimetres, inches or pixels. On-device face detection shows head-top, eye-line and chin guides, the background can be kept or switched to white or another colour, and you can lay out several copies on 4×6 in, A4 or Letter paper with cut guides. Photos are processed on the phone and never uploaded."
+   ],
+   "look": [
+    "A size that matches the official rule, not just a label saying passport",
+    "Head-top, eye-line and chin alignment guides",
+    "A clean white background",
+    "Print-sheet layout with several copies",
+    "Whether photos are uploaded to a server"
+   ],
+   "steps": [
+    "Check the latest passport photo specification on the Bureau of Consular Affairs website.",
+    "Stand a step in front of a white wall facing a window, look straight at the camera, no hat and no open smile.",
+    "Choose the matching size and align the head top, eyes and chin with the guides.",
+    "Switch the background to white, make only light brightness and contrast tweaks, and compare before and after.",
+    "Lay it out on a 4×6 sheet with cut guides, save it to Files and print at a convenience store or photo shop."
+   ],
+   "rows": [
+    [
+     "Size",
+     "Photo and head proportion",
+     "A head that is too big or small is a common rejection reason"
+    ],
+    [
+     "Background",
+     "White, no shadows",
+     "Shadows and clutter lead to a retake"
+    ],
+    [
+     "Printing",
+     "Print sheet with cut guides",
+     "The cut photo comes out the exact size"
+    ]
+   ],
+   "fits": "Snapport Lite fits people who want to shoot and crop at home before printing. Every size preset and editing tool is free and the first export is included; a one-time purchase unlocks unlimited exports, with no subscription, ads or account. It only edits your photo, does not guarantee acceptance and is not affiliated with any government.",
+   "faq": [
+    [
+     "Can I use a passport photo I took myself?",
+     "Yes, if it meets the issuing agency's specification. Rules differ by country and agency, so check the official notice before submitting."
+    ],
+    [
+     "Can I change the background to white?",
+     "You can keep the original background or switch to white, light grey, blue, red or a custom colour, and refine the edges."
+    ],
+    [
+     "Are my photos uploaded?",
+     "No. Photos are processed on the phone and it works offline."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "wifiaidlite",
+  "locale": "vi",
+  "market": "VN",
+  "term": "kiểm tra mạng",
+  "rank": 49,
+  "slug": "network-check-on-iphone-read-wifi-dns-and-internet-results",
+  "loc": {
+   "title": "Kiểm tra mạng trên iPhone: đọc kết quả Wi-Fi, DNS và internet thế nào?",
+   "meta": "Mạng chậm hay mất kết nối có thể do Wi-Fi, DNS hoặc nhà mạng. Kiểm tra từng lớp để biết nên khởi động lại router hay gọi tổng đài. WiFi Aid Lite: một lần kiểm tra đầy đủ không cần mua, không quảng cáo.",
+   "h1": "Kiểm tra mạng trên iPhone: đọc kết quả Wi-Fi, DNS và internet thế nào?",
+   "lead": "“Mạng có vấn đề” có thể là ba chuyện khác nhau. Biết lỗi nằm ở lớp nào giúp bạn sửa đúng chỗ thay vì khởi động lại mọi thứ.",
+   "answer": "Kiểm tra theo thứ tự: iPhone có kết nối tốt với Wi-Fi không, DNS có phân giải được tên miền không, và internet bên ngoài có phản hồi không. Lớp đầu tiên bị lỗi chính là nơi cần xử lý.",
+   "paras": [
+    "Nếu Wi-Fi yếu hoặc chập chờn, vấn đề thường ở khoảng cách tới router hoặc nhiễu sóng. Nếu Wi-Fi ổn nhưng DNS lỗi, trang web không mở được dù đã kết nối, và đổi DNS hoặc khởi động lại router thường giúp được. Nếu cả hai ổn nhưng internet không phản hồi, khả năng cao là do đường truyền của nhà mạng.",
+    "Một kết quả đơn lẻ có thể gây hiểu lầm khi kết nối lúc được lúc không. Lấy thêm mẫu trong vài phút giúp thấy kết nối có dao động hay không, và kiểm tra riêng một trang web giúp phân biệt trang đó lỗi hay cả internet lỗi.",
+    "WiFi Aid Lite chạy kiểm tra Wi-Fi, DNS và internet bằng một lần chạm, có Kiểm tra sâu để thu thêm bằng chứng và mẫu ổn định, và có thể kiểm tra một trang web cụ thể. Bằng chứng gồm DNS, TCP, TLS, TTFB, HTTP, IP trực tiếp, IPv4 và IPv6. Lịch sử kiểm tra chỉ lưu trên máy."
+   ],
+   "look": [
+    "Tách riêng kết quả Wi-Fi, DNS và internet",
+    "Có lấy nhiều mẫu để thấy kết nối dao động",
+    "Kiểm tra được một trang web cụ thể",
+    "Lưu lịch sử để so sánh trước và sau khi sửa",
+    "Tài khoản, quảng cáo và theo dõi"
+   ],
+   "steps": [
+    "Đứng gần router rồi chạy một lần kiểm tra đầy đủ.",
+    "Xem lớp đầu tiên bị lỗi: Wi-Fi, DNS hay internet.",
+    "Nếu là Wi-Fi, đổi vị trí hoặc khởi động lại router; nếu là DNS, thử đổi DNS.",
+    "Nếu chỉ một trang lỗi, kiểm tra riêng trang đó trước khi gọi nhà mạng.",
+    "Nếu internet vẫn không phản hồi, gọi tổng đài và đọc kết quả kiểm tra cho họ."
+   ],
+   "rows": [
+    [
+     "Wi-Fi",
+     "Tín hiệu và độ ổn định",
+     "Lỗi ở đây thì gọi nhà mạng không giúp được"
+    ],
+    [
+     "DNS",
+     "Phân giải tên miền",
+     "Có kết nối nhưng không mở được trang"
+    ],
+    [
+     "Internet",
+     "Phản hồi từ bên ngoài",
+     "Lỗi ở đây thường thuộc về nhà mạng"
+    ]
+   ],
+   "fits": "WiFi Aid Lite hợp khi bạn muốn biết lỗi nằm ở đâu trước khi khởi động lại router hay gọi tổng đài. Một lần kiểm tra đầy đủ với bất kỳ công cụ nào không cần mua; mua một lần tùy chọn để kiểm tra không giới hạn và so sánh trước, sau khi sửa. Không có gói đăng ký, quảng cáo hay theo dõi.",
+   "faq": [
+    [
+     "Wi-Fi đầy vạch mà vẫn không vào mạng được là sao?",
+     "Thường là DNS hoặc đường truyền internet. Kiểm tra theo từng lớp sẽ cho biết lớp nào lỗi."
+    ],
+    [
+     "Có cần tài khoản không?",
+     "Không. Không tài khoản, quảng cáo, phân tích hay theo dõi; lịch sử chỉ lưu trên máy."
+    ],
+    [
+     "Tại sao ứng dụng xin quyền vị trí?",
+     "Vị trí chính xác được dùng để nhận biết mạng Wi-Fi và điểm kết nối hiện tại."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Network check on iPhone: how to read Wi-Fi, DNS and internet results",
+   "meta": "A slow or dropped connection can come from Wi-Fi, DNS or the provider. Check each layer to know whether to restart the router or call support. WiFi Aid Lite: one full check needs no purchase, with no ads.",
+   "h1": "Network check on iPhone: how to read Wi-Fi, DNS and internet results",
+   "lead": "\"The network is broken\" can mean three different things. Knowing which layer fails lets you fix the right thing instead of restarting everything.",
+   "answer": "Check in order: is the iPhone well connected to Wi-Fi, does DNS resolve domain names, and does the wider internet respond. The first layer that fails is the one to fix.",
+   "paras": [
+    "If Wi-Fi is weak or unstable, the cause is usually distance to the router or interference. If Wi-Fi is fine but DNS fails, websites will not open even though you are connected, and changing DNS or restarting the router often helps. If both are fine but the internet does not respond, the provider's line is the likely cause.",
+    "A single result can mislead when the connection comes and goes. Taking more samples over a few minutes shows whether the connection varies, and checking one site separately tells you whether that site or the whole internet is down.",
+    "WiFi Aid Lite runs Wi-Fi, DNS and internet checks in one tap, offers a Deep Check for more evidence and stability samples, and can check a specific website. Evidence covers DNS, TCP, TLS, TTFB, HTTP, direct IP, IPv4 and IPv6. Check history is stored only on the device."
+   ],
+   "look": [
+    "Separate Wi-Fi, DNS and internet results",
+    "Several samples to show whether the connection varies",
+    "A check for one specific website",
+    "History to compare before and after a fix",
+    "Account, ads and tracking"
+   ],
+   "steps": [
+    "Stand near the router and run one full check.",
+    "Find the first layer that fails: Wi-Fi, DNS or internet.",
+    "If it is Wi-Fi, move or restart the router; if it is DNS, try another DNS.",
+    "If only one site fails, check that site alone before calling the provider.",
+    "If the internet still does not respond, call support and read them the results."
+   ],
+   "rows": [
+    [
+     "Wi-Fi",
+     "Signal and stability",
+     "Calling the provider will not fix a problem here"
+    ],
+    [
+     "DNS",
+     "Name resolution",
+     "Connected but pages will not open"
+    ],
+    [
+     "Internet",
+     "Response from outside",
+     "Problems here usually belong to the provider"
+    ]
+   ],
+   "fits": "WiFi Aid Lite fits when you want to know where the fault is before restarting the router or calling support. One complete check with any tool needs no purchase; an optional one-time purchase unlocks unlimited checks and before-and-after comparison, with no subscription, ads or tracking.",
+   "faq": [
+    [
+     "Full Wi-Fi bars but no internet — why?",
+     "Usually DNS or the internet line. Checking layer by layer shows which one fails."
+    ],
+    [
+     "Do I need an account?",
+     "No. No account, ads, analytics or tracking; history stays on the device."
+    ],
+    [
+     "Why does the app ask for location?",
+     "Precise location is used to identify the Wi-Fi network and the current node."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "photocream",
+  "locale": "ru",
+  "market": "RU",
+  "term": "пленочная камера",
+  "rank": 76,
+  "slug": "film-camera-app-shoot-with-the-look-or-add-it-later",
+  "loc": {
+   "title": "Плёночная камера на iPhone: снимать сразу с эффектом или добавлять потом?",
+   "meta": "Плёночный вид можно получить двумя способами: снимать с живым предпросмотром фильтра или обрабатывать готовые фото. Разбираем, когда что удобнее. PhotoCream Pro обрабатывает всё на устройстве, без подписки.",
+   "h1": "Плёночная камера на iPhone: снимать сразу с эффектом или добавлять потом?",
+   "lead": "Приложения «плёночная камера» обещают одно и то же, но работают по-разному: одни применяют вид при съёмке, другие только при редактировании.",
+   "answer": "Снимайте с живым предпросмотром, когда важна атмосфера момента и вы хотите сразу видеть итог; обрабатывайте потом, когда важна точность цвета и кожи. Удобнее всего приложение, которое умеет и то и другое.",
+   "paras": [
+    "Живой предпросмотр меняет то, как вы снимаете: вы видите зерно, свечение и цвет до нажатия кнопки и выстраиваете кадр под этот вид. Это ближе к настоящей плёнке, где выбор сделан заранее.",
+    "Обработка после съёмки оставляет больше свободы. Один и тот же кадр можно попробовать в нескольких видах, а затем поправить экспозицию, кривые и цвет. Для портретов это особенно важно: сильный плёночный фильтр легко делает кожу серой или оранжевой.",
+    "PhotoCream Pro снимает с живым предпросмотром более чем 100 видов — ретро, кино, моментальные снимки, монохром — с зерном, ореолом, засветками и виньеткой. Затем фото можно доработать: экспозиция, контраст, кривые, HSL, раздельное тонирование и мягкая обработка кожи, сохраняющая резкость глаз и волос. Всё обрабатывается на устройстве, ничего не загружается."
+   ],
+   "look": [
+    "Живой предпросмотр вида до съёмки",
+    "Возможность редактировать уже снятые фото",
+    "Аккуратная работа с тоном кожи на портретах",
+    "Зерно, ореол и засветки, которые можно регулировать",
+    "Загрузка фото на сервер, реклама и подписка"
+   ],
+   "steps": [
+    "Выберите один-два вида для конкретной съёмки, а не перебирайте все.",
+    "Снимайте с живым предпросмотром, выстраивая свет и кадр под выбранный вид.",
+    "Для портретов проверьте тон кожи и при необходимости ослабьте эффект.",
+    "Поправьте экспозицию и кривые, если вид сделал кадр слишком тёмным.",
+    "Сохраните свою настройку и используйте её для всей серии."
+   ],
+   "rows": [
+    [
+     "Когда применяется вид",
+     "При съёмке или потом",
+     "Предпросмотр влияет на сам кадр"
+    ],
+    [
+     "Портреты",
+     "Тон кожи",
+     "Сильный фильтр портит цвет лица"
+    ],
+    [
+     "Приватность",
+     "Обработка на устройстве",
+     "Личные фото не покидают телефон"
+    ]
+   ],
+   "fits": "PhotoCream Pro подходит тем, кто хочет снимать с плёночным видом и дорабатывать фото в одном приложении. Скачивание бесплатное; одноразовая разблокировка убирает водяной знак и открывает все премиум-наборы. Без подписки и без рекламы.",
+   "faq": [
+    [
+     "Можно ли применить плёночный вид к старым фото?",
+     "Да. Кроме съёмки с предпросмотром, можно редактировать фото из галереи."
+    ],
+    [
+     "Загружаются ли фото на сервер?",
+     "Нет. Вся обработка происходит на устройстве, аккаунт не нужен."
+    ],
+    [
+     "Есть ли подписка?",
+     "Нет. Бесплатное скачивание и одноразовая разблокировка премиум-наборов."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Film camera app on iPhone: shoot with the look, or add it later?",
+   "meta": "You can get a film look two ways: shoot with a live filter preview or edit finished photos. Here is when each works better. PhotoCream Pro processes everything on-device, with no subscription.",
+   "h1": "Film camera app on iPhone: shoot with the look, or add it later?",
+   "lead": "Film camera apps promise the same thing but work differently: some apply the look as you shoot, others only when you edit.",
+   "answer": "Shoot with a live preview when the mood of the moment matters and you want to see the result right away; edit later when accurate colour and skin matter. The most convenient option is an app that does both.",
+   "paras": [
+    "A live preview changes how you shoot: you see grain, glow and colour before pressing the shutter and frame for that look. That is closer to real film, where the choice is made in advance.",
+    "Editing afterwards gives more freedom. You can try one frame in several looks, then adjust exposure, curves and colour. For portraits this matters most: a heavy film filter can easily turn skin grey or orange.",
+    "PhotoCream Pro shoots with a live preview of 100+ looks across retro, cinema, instant and mono, with grain, halation, light leaks and vignette. You can then refine the photo with exposure, contrast, curves, HSL, split toning and frequency-separation skin smoothing that keeps eyes and hair sharp. Everything is processed on the device; nothing is uploaded."
+   ],
+   "look": [
+    "A live preview of the look before shooting",
+    "Editing for photos you already took",
+    "Careful handling of skin tones in portraits",
+    "Adjustable grain, halation and light leaks",
+    "Uploads, ads and subscription"
+   ],
+   "steps": [
+    "Pick one or two looks for a given shoot rather than cycling through them all.",
+    "Shoot with the live preview, arranging light and framing for that look.",
+    "For portraits, check skin tone and soften the effect if needed.",
+    "Adjust exposure and curves if the look made the frame too dark.",
+    "Save your setting and use it for the whole series."
+   ],
+   "rows": [
+    [
+     "When the look applies",
+     "While shooting or later",
+     "The preview shapes the frame itself"
+    ],
+    [
+     "Portraits",
+     "Skin tone",
+     "A heavy filter ruins complexion"
+    ],
+    [
+     "Privacy",
+     "On-device processing",
+     "Personal photos never leave the phone"
+    ]
+   ],
+   "fits": "PhotoCream Pro fits people who want to shoot with a film look and refine photos in one app. Free to download; a single one-time unlock removes the watermark and opens every premium pack, with no subscription and no ads.",
+   "faq": [
+    [
+     "Can I apply a film look to older photos?",
+     "Yes. Besides shooting with the preview, you can edit photos from your library."
+    ],
+    [
+     "Are photos uploaded to a server?",
+     "No. All processing happens on the device and no account is needed."
+    ],
+    [
+     "Is there a subscription?",
+     "No. Free download and a one-time unlock for the premium packs."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lumimath",
+  "locale": "th",
+  "market": "TH",
+  "term": "ฝึกคณิต",
+  "rank": 92,
+  "slug": "daily-math-practice-for-young-kids-short-sessions-and-weak-spots",
+  "loc": {
+   "title": "ฝึกคณิตให้ลูกวันละสิบนาที: เริ่มจากภาพ แล้วค่อยฝึกจุดที่ยังอ่อน",
+   "meta": "เด็กเล็กเข้าใจเลขผ่านภาพก่อนตัวเลข ฝึกวันละสั้น ๆ ต่อเนื่อง และฝึกซ้ำเฉพาะจุดที่ยังไม่แม่น Lumi Math Planet ใช้โจทย์ภาพพร้อมเสียงอ่าน ไม่มีโฆษณา ไม่ใช่การสมัครสมาชิก",
+   "h1": "ฝึกคณิตให้ลูกวันละสิบนาที: เริ่มจากภาพ แล้วค่อยฝึกจุดที่ยังอ่อน",
+   "lead": "การให้ลูกทำแบบฝึกหัดหน้ายาว ๆ มักจบที่ความเบื่อ เด็กเล็กเรียนเลขได้ดีกว่าเมื่อเห็นภาพและได้ฝึกสั้น ๆ ทุกวัน",
+   "answer": "ฝึกวันละประมาณสิบนาที ใช้โจทย์ที่เป็นภาพ เช่น ลูกเต๋า กรอบสิบช่อง และเส้นจำนวน ก่อนไปถึงตัวเลขล้วน แล้วสัปดาห์ละครั้งให้ดูว่าทักษะไหนยังพลาดบ่อยเพื่อฝึกซ้ำเฉพาะเรื่องนั้น",
+   "paras": [
+    "เด็กที่ยังอ่านไม่คล่องจะเข้าใจ “แปดมากกว่าห้า” ได้เร็วขึ้นเมื่อเห็นจุดแปดจุดเทียบกับห้าจุด ภาพช่วยสร้างความรู้สึกเรื่องจำนวน ซึ่งเป็นพื้นฐานของการบวกลบที่มากกว่าการท่องจำ",
+    "ความต่อเนื่องสำคัญกว่าความยาว สิบนาทีทุกวันดีกว่าหนึ่งชั่วโมงในวันหยุด และการไม่ดุเมื่อตอบผิดทำให้เด็กกล้าลองต่อ สิ่งที่พ่อแม่ช่วยได้มากที่สุดคือดูว่าลูกพลาดเรื่องไหนซ้ำ ๆ แล้วฝึกเฉพาะเรื่องนั้น",
+    "Lumi Math Planet มีโจทย์กว่า 40 แบบ ทั้งนับเลข บวก ลบ คูณ หาร เวลา และเงิน ทุกข้อเป็นภาพและมีเสียงอ่าน ระดับปรับขึ้นเองตามความสามารถ ส่วนผู้ปกครองแสดงพัฒนาการห้าด้าน ชี้จุดที่ยังอ่อน และพิมพ์ใบงานพร้อมเฉลยได้ เสียงและโจทย์มีภาษาอังกฤษ จีน ญี่ปุ่น และเกาหลี"
+   ],
+   "look": [
+    "โจทย์เป็นภาพที่เด็กเข้าใจได้ก่อนอ่านออก",
+    "ระดับที่ปรับตามความสามารถของลูก",
+    "ผู้ปกครองเห็นได้ว่าทักษะไหนยังอ่อน",
+    "ไม่มีเสียงลงโทษเมื่อตอบผิด",
+    "โฆษณาและการสมัครสมาชิก"
+   ],
+   "steps": [
+    "เลือกช่วงเวลาเดิมทุกวัน เช่น หลังอาหารเย็น ประมาณสิบนาที",
+    "เริ่มจากโจทย์ภาพที่ลูกทำได้ เพื่อให้เริ่มต้นด้วยความมั่นใจ",
+    "นั่งข้าง ๆ ในสัปดาห์แรก ชมความพยายามมากกว่าความเร็ว",
+    "ทุกสัปดาห์เปิดดูทักษะที่ยังพลาดบ่อย และฝึกซ้ำเฉพาะเรื่องนั้น",
+    "พิมพ์ใบงานเรื่องเดียวกันมาทำบนกระดาษ เพื่อดูว่าเข้าใจจริงนอกจอ"
+   ],
+   "rows": [
+    [
+     "รูปแบบโจทย์",
+     "ภาพหรือตัวเลขล้วน",
+     "เด็กเล็กเข้าใจจำนวนผ่านภาพก่อน"
+    ],
+    [
+     "ความยาว",
+     "สั้นและทุกวัน",
+     "ความต่อเนื่องช่วยให้จำได้นานกว่า"
+    ],
+    [
+     "การติดตาม",
+     "จุดที่ยังอ่อน",
+     "ฝึกตรงจุดดีกว่าทำทุกเรื่องซ้ำ"
+    ]
+   ],
+   "fits": "Lumi Math Planet เหมาะกับเด็กเล็กที่เริ่มเรียนเลขที่บ้าน และพ่อแม่ที่อยากเห็นว่าลูกยังอ่อนเรื่องไหน เริ่มได้โดยไม่ต้องซื้อด้วยดาวเคราะห์ดวงแรกและภารกิจประจำวัน และปลดล็อกทั้งหมดด้วยการซื้อในแอปครั้งเดียว ไม่มีโฆษณา ไม่ใช่การสมัครสมาชิก",
+   "faq": [
+    [
+     "แอปมีภาษาไทยไหม",
+     "ตอนนี้โจทย์และเสียงอ่านมีภาษาอังกฤษ จีน ญี่ปุ่น และเกาหลี แต่โจทย์ทุกข้อเป็นภาพ เด็กเล็กจึงเข้าใจได้แม้ยังอ่านไม่ออก"
+    ],
+    [
+     "ลูกควรฝึกวันละเท่าไร",
+     "ประมาณสิบนาทีทุกวันเพียงพอสำหรับเด็กเล็ก ความต่อเนื่องสำคัญกว่าความยาว"
+    ],
+    [
+     "พิมพ์ใบงานได้ไหม",
+     "ได้ ผู้ปกครองพิมพ์ใบงานพร้อมเฉลยได้"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Ten minutes of math practice a day: start with pictures, then target weak spots",
+   "meta": "Young children understand numbers through pictures before digits. Practise briefly every day and repeat only what is not yet solid. Lumi Math Planet uses picture questions read aloud, with no ads and no subscription.",
+   "h1": "Ten minutes of math practice a day: start with pictures, then target weak spots",
+   "lead": "Long worksheets often end in boredom. Young children learn numbers better when they can see them and practise briefly every day.",
+   "answer": "Practise about ten minutes a day with picture-based questions such as dice, ten-frames and number lines before plain digits, and once a week check which skill is still missed often so you can repeat just that one.",
+   "paras": [
+    "A child who cannot yet read well understands \"eight is more than five\" faster when they see eight dots beside five. Pictures build number sense, which is the foundation for addition and subtraction more than memorising.",
+    "Consistency beats length. Ten minutes every day beats an hour at the weekend, and not scolding wrong answers keeps children willing to try. The most helpful thing a parent can do is notice which topic keeps going wrong and practise just that.",
+    "Lumi Math Planet has 40+ question types covering counting, addition, subtraction, multiplication, division, time and money. Every question is visual and read aloud, and levels adjust automatically. The Parent Zone shows learning across five skill domains, spots weak areas and prints worksheets with answer keys. Questions and voice come in English, Chinese, Japanese and Korean."
+   ],
+   "look": [
+    "Picture questions a child understands before reading",
+    "Levels that adapt to your child",
+    "A parent view of which skills are still weak",
+    "No buzzer or penalty for wrong answers",
+    "Ads and subscription"
+   ],
+   "steps": [
+    "Pick the same time every day, such as after dinner, for about ten minutes.",
+    "Start with picture questions your child can do, so they begin confident.",
+    "Sit alongside in the first week and praise effort more than speed.",
+    "Each week, check the skills still missed often and repeat just those.",
+    "Print a worksheet on the same topic to see whether the understanding holds off-screen."
+   ],
+   "rows": [
+    [
+     "Question format",
+     "Pictures or plain digits",
+     "Young children grasp quantity through pictures first"
+    ],
+    [
+     "Length",
+     "Short and daily",
+     "Consistency helps it stick"
+    ],
+    [
+     "Tracking",
+     "Weak spots",
+     "Targeted practice beats repeating everything"
+    ]
+   ],
+   "fits": "Lumi Math Planet fits young children starting numbers at home and parents who want to see which topics are still weak. Start without buying with the first planet and the daily challenge, and unlock the rest with a single one-time in-app purchase. No ads, no subscription.",
+   "faq": [
+    [
+     "Is the app in Thai?",
+     "Questions and voice currently come in English, Chinese, Japanese and Korean, but every question is a picture, so young children can follow before they read."
+    ],
+    [
+     "How long should my child practise?",
+     "About ten minutes a day is enough for young children; consistency matters more than length."
+    ],
+    [
+     "Can I print worksheets?",
+     "Yes, parents can print worksheets with answer keys."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "picclear",
+  "locale": "th",
+  "market": "TH",
+  "term": "ล้างเครื่อง iphone",
+  "rank": 101,
+  "slug": "clean-up-iphone-storage-check-photos-and-videos-first",
+  "loc": {
+   "title": "ล้างเครื่อง iPhone ให้พื้นที่กลับมา: เริ่มจากรูปและวิดีโอก่อน",
+   "meta": "ก่อนลบแอปหรือรีเซ็ตเครื่อง ให้ดูก่อนว่าพื้นที่หายไปกับอะไร ส่วนใหญ่คือรูปซ้ำ ภาพหน้าจอ และวิดีโอขนาดใหญ่ PicClear Pro สแกนบนเครื่อง ให้ตรวจก่อนลบทุกครั้ง ไม่มีการสมัครสมาชิก",
+   "h1": "ล้างเครื่อง iPhone ให้พื้นที่กลับมา: เริ่มจากรูปและวิดีโอก่อน",
+   "lead": "หลายคนเริ่มล้างเครื่องด้วยการลบแอป แต่พื้นที่ที่ได้คืนมักน้อยกว่าที่คิด เพราะส่วนที่ใหญ่ที่สุดอยู่ในคลังรูป",
+   "answer": "เปิด การตั้งค่า > ทั่วไป > พื้นที่จัดเก็บข้อมูล iPhone ดูว่าอะไรใช้พื้นที่มากที่สุด ถ้าเป็นรูปภาพ ให้เริ่มจากวิดีโอขนาดใหญ่ รูปซ้ำ และภาพหน้าจอเก่า ซึ่งลบได้โดยแทบไม่เสียความทรงจำ",
+   "paras": [
+    "วิดีโอไม่กี่คลิปอาจใหญ่กว่ารูปหลายพันรูป รูปถ่ายรัวที่เกือบเหมือนกันและภาพหน้าจอที่ไม่ได้ใช้แล้วก็สะสมเงียบ ๆ การเริ่มจากกลุ่มเหล่านี้ได้พื้นที่คืนมากที่สุดในเวลาน้อยที่สุด",
+    "สิ่งที่ต้องระวังคือการลบผิด ควรเห็นภาพตัวอย่างก่อนลบ เก็บรูปที่ดีที่สุดในแต่ละกลุ่ม และปกป้องรูปโปรดไว้ หลังลบ รูปจะไปอยู่ใน “ลบล่าสุด” ของแอปรูปภาพ จึงยังกู้คืนได้ภายในเวลาจำกัด ถ้าต้องการพื้นที่ทันทีต้องล้างโฟลเดอร์นั้นด้วย",
+    "PicClear Pro สแกนคลังรูปบนเครื่อง จัดกลุ่มรูปซ้ำ รูปคล้าย ภาพหน้าจอ รูปเบลอ วิดีโอและรูปขนาดใหญ่ แนะนำรูปที่ดีที่สุดให้เก็บในแต่ละกลุ่ม ไม่เลือกรูปโปรดอัตโนมัติ และไม่ลบอะไรจนกว่าคุณจะยืนยัน รูปไม่ถูกอัปโหลด ไม่ต้องมีบัญชี และทำงานออฟไลน์ได้ทั้งหมด"
+   ],
+   "look": [
+    "เห็นภาพตัวอย่างก่อนลบทุกครั้ง",
+    "แนะนำรูปที่ดีที่สุดให้เก็บในกลุ่มรูปคล้าย",
+    "ปกป้องรูปโปรดจากการเลือกอัตโนมัติ",
+    "สแกนบนเครื่อง ไม่อัปโหลดรูป",
+    "โฆษณาและการสมัครสมาชิก"
+   ],
+   "steps": [
+    "เปิดพื้นที่จัดเก็บข้อมูล iPhone เพื่อดูว่ารูปภาพใช้พื้นที่เท่าไร",
+    "เริ่มจากวิดีโอขนาดใหญ่ ตัดสินใจทีละคลิป",
+    "ลบรูปซ้ำและเก็บรูปที่ดีที่สุดในกลุ่มรูปคล้าย",
+    "ลบภาพหน้าจอเก่าที่ไม่ได้ใช้แล้ว",
+    "ล้างโฟลเดอร์ “ลบล่าสุด” เมื่อแน่ใจแล้ว เพื่อให้พื้นที่กลับมาจริง"
+   ],
+   "rows": [
+    [
+     "วิดีโอขนาดใหญ่",
+     "ขนาดต่อคลิป",
+     "ไม่กี่คลิปอาจใหญ่กว่ารูปนับพัน"
+    ],
+    [
+     "รูปคล้ายกัน",
+     "เก็บรูปที่ดีที่สุดหนึ่งรูป",
+     "ได้พื้นที่โดยไม่เสียช่วงเวลานั้น"
+    ],
+    [
+     "ลบล่าสุด",
+     "ล้างหลังตรวจแล้ว",
+     "พื้นที่จะยังไม่คืนจนกว่าจะล้าง"
+    ]
+   ],
+   "fits": "PicClear Pro เหมาะกับคนที่พื้นที่ iPhone เต็มเพราะคลังรูป และอยากตรวจทุกอย่างก่อนลบ สแกนและดูตัวอย่างได้ฟรี การลบปลดล็อกด้วยการซื้อครั้งเดียว ไม่มีการสมัครสมาชิกและไม่มีโฆษณา",
+   "faq": [
+    [
+     "ลบแล้วกู้คืนได้ไหม",
+     "รูปที่ลบจะไปอยู่ใน “ลบล่าสุด” ของแอปรูปภาพ และกู้คืนได้ภายในเวลาจำกัด"
+    ],
+    [
+     "รูปของฉันถูกส่งออกไปไหม",
+     "ไม่ การวิเคราะห์ทั้งหมดทำบนเครื่อง ไม่ต้องมีบัญชี และใช้งานออฟไลน์ได้"
+    ],
+    [
+     "แอปมีภาษาไทยไหม",
+     "หน้าจอแอปยังไม่มีภาษาไทย แต่การทำงานเป็นภาพตัวอย่างและปุ่มยืนยันที่เข้าใจได้ง่าย"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Cleaning up iPhone storage: check photos and videos first",
+   "meta": "Before deleting apps or resetting the phone, see what is actually using the space; usually it is duplicate photos, screenshots and large videos. PicClear Pro scans on-device and lets you review before anything is deleted, with no subscription.",
+   "h1": "Cleaning up iPhone storage: check photos and videos first",
+   "lead": "Many people start a cleanup by deleting apps, but recover less space than expected, because the biggest share is in the photo library.",
+   "answer": "Open Settings > General > iPhone Storage to see what uses the most space. If it is Photos, start with large videos, duplicates and old screenshots, which you can remove with almost no loss of memories.",
+   "paras": [
+    "A handful of videos can outweigh thousands of photos. Near-identical burst shots and screenshots you no longer need also pile up quietly. Starting with these groups recovers the most space in the least time.",
+    "The risk is deleting the wrong thing. You should see previews before deleting, keep the best shot in each group and protect your favourites. Deleted items go to Recently Deleted in Photos and can be recovered for a limited time; to get the space back immediately, empty that folder too.",
+    "PicClear Pro scans the photo library on the device and groups duplicates, similar photos, screenshots, blurry shots, large videos and large photos. It suggests the best shot to keep in each group, never auto-selects Favourites and deletes nothing until you confirm. Photos are not uploaded, no account is needed and it works fully offline."
+   ],
+   "look": [
+    "Previews before every deletion",
+    "A suggested best shot to keep among similar photos",
+    "Favourites protected from automatic selection",
+    "On-device scanning with no uploads",
+    "Ads and subscription"
+   ],
+   "steps": [
+    "Open iPhone Storage to see how much space Photos uses.",
+    "Start with large videos and decide clip by clip.",
+    "Remove duplicates and keep the best shot in each similar group.",
+    "Delete old screenshots you no longer need.",
+    "Empty Recently Deleted once you are sure, so the space really comes back."
+   ],
+   "rows": [
+    [
+     "Large videos",
+     "Size per clip",
+     "A few clips can outweigh thousands of photos"
+    ],
+    [
+     "Similar photos",
+     "Keep the best one",
+     "Space back without losing the moment"
+    ],
+    [
+     "Recently Deleted",
+     "Empty after review",
+     "Space does not return until it is emptied"
+    ]
+   ],
+   "fits": "PicClear Pro fits people whose iPhone is full because of the photo library and who want to review everything before deleting. Scanning and previews are free; deleting is unlocked with a one-time purchase, with no subscription and no ads.",
+   "faq": [
+    [
+     "Can I recover deleted photos?",
+     "Deleted items go to Recently Deleted in Photos and can be recovered for a limited time."
+    ],
+    [
+     "Are my photos sent anywhere?",
+     "No. All analysis happens on the device, no account is needed and it works offline."
+    ],
+    [
+     "Is the app in Thai?",
+     "The interface is not yet in Thai, but the workflow is built on previews and a clear confirm step."
+    ]
+   ]
+  }
  }
 ]

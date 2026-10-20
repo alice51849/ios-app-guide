@@ -37,6 +37,7 @@ from appstore_live import live_app_keys  # noqa: E402
 from answer_text import answer_outcome  # noqa: E402
 import gen_store_attribution  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
+import purchase_types  # noqa: E402
 
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
 ALT = os.path.join(PAGES, "alternatives")
@@ -633,18 +634,20 @@ def app_attrs(key):
     model = APPS[key].get("purchase_model", "neutral")
     out = {}
     for label, keys in ATTRS:
+        # 買斷／無訂閱字樣要有證據（geo/data/verified_purchase_types.json）；
+        # 訂閱款與不知道的款一律不寫，避免不實價格字樣。
         if label == "Pay once":
             out[label] = model in {
                 "paid_upfront",
                 "free_with_lifetime_unlock",
                 "flexible",
-            }
+            } and purchase_types.one_time_verified(key)
         elif label == "No subscription":
             out[label] = model in {
                 "paid_upfront",
                 "free_with_lifetime_unlock",
                 "free",
-            }
+            } and purchase_types.no_subscription_verified(key)
         else:
             out[label] = any(any(k in bb for bb in b) for k in keys)
     return out

@@ -1,0 +1,45 @@
+總結：全 PASS
+
+1. 每個讀 item["review"] 的通路都只在「整行放得下」時才附：PASS
+   - Facebook (line 506)：檢查完整描述（caption + 連結 + 評論）是否 ≤ 限制
+   - Bluesky (line 628-631)：檢查 caption + 所有標籤（含評論）是否 ≤ 300
+   - YouTube (line 707-709)：產生含評論版本，超過限制改用不含評論版本
+   - Naver (line 948-953, 960-965)：純文字與 HTML 雙重檢查，都不超限才附
+   - Plurk (line 1041)：雙重條件確保 caption 完整（不截正文）
+   - Dailymotion (line 1102, 417-419)：with_links() 的評論只在有空間時附加
+   所有通路都正確實作，評論連結不會擠掉或截斷 caption 與下載連結。
+
+2. pinterest、tumblr、mastodon、tiktok 仍完全不附評論連結：PASS
+   - Pinterest (line 809)：with_links(..., review=False)
+   - Tumblr (line 897)：用 tumblr_content()，無評論邏輯
+   - Mastodon (line 1128)：with_links(..., review=False)
+   - TikTok (line 1136)：with_links(..., review=False)
+   四個通路確實完全不讀 item["review"]。
+
+3. 下載連結閘門沒被繞過或放寬：PASS
+   - link_problems() (line 406-409) 仍用 DL.link_problems()，明確排除評論連結
+   - with_links() (line 412-420) 先確保下載連結，評論是最後才附加的可選項
+   - 各通路的 render 函數都先處理必要的下載連結，評論連結不影響閘門檢查
+   download_links.ensure_download_link 與 link_problems 的護欄照舊。
+
+4. 評論文案不含獎勵、星數：PASS
+   - review_links.py 的 INCENTIVE_RE (line 42-46) 與 SUPERLATIVE_RE (line 47) 規則不變
+   - neutral() (line 56-58) 檢查標籤合規
+   - any_app_labels() (line 75) 讀取時過濾，只保留通過 neutral() 的標籤
+   - validate() (line 114-116) 驗證配置檔也用同樣規則
+   review_links.neutral 規則完全照舊，any_app 標籤也受同樣限制。
+
+5. 新增與修改的測試真的覆蓋上述行為：PASS
+   - 新增 ReviewEveryAppFitsTest 類別（test_social_extra.py line 1229-1326）
+   - 測試內容：非配對 App 獲得中性行、各通路放得下時附上、四個通路不附評論連結
+   - 逐通路測試：Facebook、Bluesky、YouTube、Naver、Plurk、Dailymotion 各有專屬測試
+   - 既有測試調整（line 751-753）：de locale 現在應得 any_app 中性行而非 None，符合新行為
+   - 測試執行：969 tests 通過，2 failures 與 3 errors 都與本次改動無關（ig_bio_hub 語言集合、link_backfill 試用數量、utility_cards 字體載入）
+   所有與 social_extra.py 相關的測試通過，新測試覆蓋完整，既有斷言未弱化。
+
+6. 有沒有任何 bug：PASS
+   - Naver 的純文字版本（render_naver）與 HTML 版本（naver_body）分開計算長度，各自檢查不超限，是正確的保守做法
+   - Plurk 的雙重條件（line 1041）確保評論連結永遠不會犧牲 caption 的任何字元
+   - 所有通路的 None 處理、長度計算、限制參數都正確
+   - 測試覆蓋了邊界情況（caption 剛好放得下、放不下時的行為）
+   未發現 bug。

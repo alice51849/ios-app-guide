@@ -437,6 +437,24 @@ def main():
     require([PY, os.path.join(HERE, "hero_tasks.py")], env=env)
     require([PY, os.path.join(HERE, "gen_feed.py")], env=env)
     sync_standard_site(env)
+    # sync_standard_site 會替「本輪才新建」的路由頁補上 Standard.site 連結，而最前面
+    # 那次實體化寫下的 manifest 雜湊不含它；既有頁因 previous 已帶連結、由
+    # preserve_managed_links 保留，所以不受影響。新款（例如 easyam）的整批新路由頁
+    # 會因此在最後的閉合檢查判「manifest drifted」，追趕永遠完不成（2026-10-20 實測）。
+    # 這裡在連結落地後、用同一份輸入再實體化一次（冪等），讓 manifest 吸收保留的連結，
+    # 後面的稽核與閉合檢查看到的就是最終內容。路由頁屬 high_intent_decision_routes 管理，
+    # 這一步也會蓋掉 normalize_app_store_links／android_play 注入的 Play 連結，
+    # 與線上 Guide main（路由頁無 Play 連結）一致。
+    require(
+        [
+            PY,
+            os.path.join(HERE, "high_intent_decision_routes.py"),
+            "--output-dir",
+            PAGES,
+            "--materialize-current-inventory",
+        ],
+        env=env,
+    )
     require([PY, os.path.join(HERE, "reconcile_answer_semantics.py")], env=env)
     require([PY, os.path.join(HERE, "publisher_intent_visuals.py")], env=env)
     require([PY, os.path.join(HERE, "result_image_index.py")], env=env)

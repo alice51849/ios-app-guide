@@ -20168,5 +20168,253 @@
     ]
    ]
   }
+ },
+ {
+  "key": "battai",
+  "locale": "ko",
+  "market": "KR",
+  "term": "배터리 수명",
+  "rank": 22,
+  "slug": "iphone-battery-lifespan-charging-habits-that-matter",
+  "loc": {
+   "title": "아이폰 배터리 수명, 충전 습관 중 진짜 중요한 세 가지",
+   "meta": "아이폰 배터리 수명은 충전 구간, 열, 충전 속도에서 갈립니다. 습관 하나씩 바꾸고 사이클 수와 성능 최대치 추세로 효과를 확인하는 방법을 정리합니다. BattAI는 충전 관리·충전 구간·충전 속도와 배터리 상태 점수를 기기 안에서 보여 줍니다.",
+   "h1": "아이폰 배터리 수명: 충전 습관에서 바꿀 것 세 가지",
+   "lead": "배터리 수명을 늘리는 팁은 많지만 대부분은 효과를 확인할 방법이 없습니다. 세 가지만 바꾸고, 바뀌었는지는 숫자로 봅니다.",
+   "answer": "아이폰 배터리 수명은 충전 구간(완전 방전과 100% 유지 줄이기), 충전 중 열, 필요 이상 빠른 충전 세 가지에서 가장 크게 갈리며, BattAI 같은 앱으로 습관을 바꾼 뒤 사이클 수와 성능 최대치 추세를 같이 보면 효과가 있었는지 확인할 수 있습니다.",
+   "paras": [
+    "리튬이온 배터리는 쓰는 만큼 조금씩 닳습니다. 닳는 속도를 크게 바꾸는 것은 세 가지입니다. 첫째는 충전 구간입니다. 0% 가까이 자주 떨어뜨리거나 100%에서 오래 머무르면 같은 사용량이라도 더 빨리 닳습니다. 아이폰에는 기종과 iOS 버전에 따라 '최적화된 배터리 충전'이나 충전 한도 설정이 있으니 먼저 켜져 있는지 확인하세요.",
+    "둘째는 열입니다. 햇빛 아래 거치대, 뜨거운 차 안, 게임이나 내비게이션을 켠 채 충전하는 습관은 사이클 수와 별개로 배터리를 깎습니다. 셋째는 충전 속도입니다. 급할 때 고속 충전을 쓰는 것은 괜찮지만, 밤새 충전처럼 시간이 넉넉할 때는 굳이 빠를 필요가 없습니다. 열과 속도는 같이 움직이니 둘을 함께 봐야 합니다.",
+    "팁을 따라 했는지보다 중요한 것은 결과가 숫자로 보이는지입니다. BattAI는 공개 iOS API의 다섯 가지 값(배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간)만 쓰고 나머지는 기록에서 계산하며, 각 항목에 출처와 한계를 표시합니다. 충전 관리, 충전 구간, 충전 속도와 함께 배터리 상태 점수, 점수를 만드는 요소, 성능 최대치 추세, 사이클 수를 보여 주고, 광고·분석·추적·네트워크 요청이 없습니다."
+   ],
+   "look": [
+    "평소 몇 %에서 충전을 시작하고 몇 %까지 채우는지",
+    "충전하는 동안 기기가 뜨거워지는 상황이 언제인지",
+    "시간이 넉넉한 밤에도 고속 충전을 쓰고 있는지",
+    "'최적화된 배터리 충전'이나 충전 한도 설정이 켜져 있는지",
+    "앱이 값을 어디서 읽는지 출처와 한계를 표시하는지"
+   ],
+   "steps": [
+    "설정 > 배터리에서 충전 관련 옵션(최적화된 배터리 충전, 충전 한도)이 켜져 있는지 확인합니다.",
+    "일주일 동안 충전을 시작하는 %와 끝내는 %를 그대로 기록해 지금의 충전 구간을 봅니다.",
+    "0% 근처까지 쓰는 일을 줄이고, 중간중간 짧게 충전하는 쪽으로 바꿉니다.",
+    "뜨거운 곳에서는 충전을 멈추고, 충전하면서 게임이나 내비게이션을 오래 쓰지 않습니다.",
+    "한 달 뒤 사이클 수와 성능 최대치 추세를 다시 보고, 바꾸기 전 한 달과 비교합니다."
+   ],
+   "rows": [
+    [
+     "충전 구간",
+     "충전 시작 %와 끝 %",
+     "완전 방전과 100% 유지가 잦으면 더 빨리 닳습니다"
+    ],
+    [
+     "열",
+     "충전 중 기기 열 상태",
+     "사이클 수와 별개로 배터리를 깎습니다"
+    ],
+    [
+     "충전 속도",
+     "시간이 넉넉할 때도 빠르게 충전하는지",
+     "열과 함께 움직여서 둘을 같이 봐야 합니다"
+    ]
+   ],
+   "fits": "BattAI는 배터리 수명 팁을 따라 한 뒤 정말 효과가 있었는지 숫자로 확인하고 싶은 사람에게 맞습니다. 충전 관리·충전 구간·충전 속도, 배터리 상태 점수와 점수를 만드는 요소, 성능 최대치 추세, 사이클 수를 기기 안에서 보여 주고, 광고·분석·추적·네트워크 요청이 없으며, 한 번만 결제하면 되고 구독은 없습니다.",
+   "faq": [
+    [
+     "밤새 충전하면 배터리 수명이 줄어듭니까?",
+     "100%에서 오래 머무르는 시간이 길어지는 것이 문제입니다. 기종과 iOS 버전에 따라 있는 '최적화된 배터리 충전'이나 충전 한도를 켜 두면 그 시간을 줄일 수 있습니다."
+    ],
+    [
+     "고속 충전은 쓰면 안 됩니까?",
+     "급할 때는 써도 됩니다. 다만 고속 충전은 열을 더 만들기 쉬우니, 시간이 넉넉할 때나 기기가 뜨거울 때는 피하는 편이 낫습니다."
+    ],
+    [
+     "BattAI는 데이터를 어디로 보냅니까?",
+     "서버로 보내지 않습니다. 광고·분석·추적·네트워크 요청이 없고, 데이터는 기기에 저장하며 페어링된 Apple Watch로 최소 스냅샷만 직접 보냅니다. 내보내기 파일도 기기에서 만들고 업로드하지 않습니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "iPhone battery lifespan: the three charging habits that matter",
+   "meta": "iPhone battery lifespan comes down to charge range, heat and charge rate. Change one habit at a time and check the effect with cycle count and maximum capacity over time. BattAI shows charge care, charge range, charge rate and a battery health score on the device.",
+   "h1": "iPhone battery lifespan: three charging habits to change",
+   "lead": "There are plenty of battery lifespan tips, and most give you no way to tell whether they worked. Change three things and check the result in numbers.",
+   "answer": "iPhone battery lifespan depends most on charge range (less time at empty or sitting at 100 percent), heat while charging and charging faster than you need; after changing those habits, an app such as BattAI lets you read cycle count and maximum capacity over time together to see whether it helped.",
+   "paras": [
+    "A lithium-ion battery wears a little with use. Three things change how fast. The first is charge range: dropping close to 0 percent often or sitting at 100 percent for long periods wears it faster for the same use. Depending on the model and iOS version, iPhone has Optimized Battery Charging or a charge limit setting, so check that first.",
+    "The second is heat. A mount in direct sun, a hot car, or charging while gaming or navigating wears the battery independently of cycle count. The third is charge rate. Fast charging when you are in a hurry is fine, but overnight there is no reason to rush. Heat and rate move together, so read them together.",
+    "What matters more than following tips is whether the result shows up in numbers. BattAI uses five values from public iOS APIs, battery level, charge state, Low Power Mode, whole-device thermal state and time, calculates the rest from those readings, and shows the source and limits of each detail. It shows charge care, charge range and charge rate alongside a battery health score, what shapes the score, maximum capacity over time and cycles, with no ads, analytics, tracking or internet requests."
+   ],
+   "look": [
+    "At what percentage you usually start charging and where you stop",
+    "When the phone gets hot while charging",
+    "Whether you fast charge even overnight when there is time",
+    "Whether Optimized Battery Charging or a charge limit is on",
+    "Whether the app shows where each value comes from and its limits"
+   ],
+   "steps": [
+    "In Settings > Battery, check that charging options such as Optimized Battery Charging or a charge limit are on.",
+    "For one week, note the percentage where each charge starts and ends to see your current charge range.",
+    "Run down close to 0 percent less often and top up in shorter sessions instead.",
+    "Stop charging somewhere hot, and avoid long gaming or navigation sessions while charging.",
+    "After a month, look at cycle count and maximum capacity over time again and compare with the month before."
+   ],
+   "rows": [
+    [
+     "Charge range",
+     "Start and end percentage",
+     "Frequent empty batteries and long stays at 100 percent wear it faster"
+    ],
+    [
+     "Heat",
+     "Thermal state while charging",
+     "Wears the battery independently of cycle count"
+    ],
+    [
+     "Charge rate",
+     "Fast charging even when there is time",
+     "Moves with heat, so read the two together"
+    ]
+   ],
+   "fits": "BattAI is for people who want to see in numbers whether battery lifespan tips actually worked: charge care, charge range, charge rate, a battery health score and what shapes it, maximum capacity over time and cycles, all on the device, with no ads, analytics, tracking or internet requests. One payment, no subscription.",
+   "faq": [
+    [
+     "Does charging overnight shorten battery lifespan?",
+     "The issue is long stretches at 100 percent. Depending on the model and iOS version, Optimized Battery Charging or a charge limit cuts that time."
+    ],
+    [
+     "Should I avoid fast charging?",
+     "Use it when you are in a hurry. Fast charging tends to make more heat, so skip it when there is time or the phone is already hot."
+    ],
+    [
+     "Where does BattAI send my data?",
+     "Not to any server. There are no ads, analytics, tracking or internet requests; data stays on the device except a minimal snapshot sent directly to your paired Apple Watch, and export files are created on the device and never uploaded."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "cyca",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "排卵期",
+  "rank": 38,
+  "slug": "ovulation-signs-what-to-notice-and-log-each-cycle",
+  "loc": {
+   "title": "排卵期有什麼徵兆？每個週期值得記下的身體變化",
+   "meta": "排卵期常見的訊號有分泌物變得透明有彈性、單側下腹悶痛、胸部脹，但每個人不一樣。把訊號和日期一起記幾個週期，才看得出自己的排卵期。Cyca 依你的紀錄推估易孕期與排卵日，資料留在裝置上。",
+   "h1": "排卵期徵兆：哪些變化值得記、怎麼記才看得出規律",
+   "lead": "排卵期不一定是週期第 14 天，也不是每個人都有感覺。把身體訊號連同日期記下來，幾個週期後才看得出自己的排卵期大概落在哪裡。",
+   "answer": "排卵期常見的訊號是分泌物變多、變得透明有彈性，有些人會單側下腹悶痛或胸部脹痛，但訊號因人而異；把這些變化和日期一起記三到四個週期，再用 Cyca 這類依自己紀錄推估易孕期與排卵日的 App 對照，比套用固定的第 14 天更貼近自己。",
+   "paras": [
+    "排卵通常發生在下次月經來之前大約 14 天，所以週期 28 天的人大約落在第 14 天，週期 32 天的人就晚好幾天。易孕期一般抓排卵日前幾天到排卵當天，因為精子可以存活數天、卵子只有約一天。這也是為什麼週期長短不固定的人，用固定天數推算常常抓不準。",
+    "身體在排卵前後常有幾個變化：分泌物變多、變得透明有彈性；有些人會有一側下腹悶悶的痛，持續幾小時到一兩天；也有人胸部脹、情緒或食慾不同。不是每個人每次都有，單看一次也不準，連續幾個週期記下來對照日期，才看得出自己的模式。",
+    "記錄的重點是日期和你自己的感受。Cyca 可以幾秒記下經血量、症狀、心情與筆記，並在療癒系日曆上預見下次經期、易孕期與排卵日，每次記錄後持續調整；所有資料都留在你的 iPhone，不需帳號、沒有雲端。Cyca 提供的是估算，並非醫療器材，也不可作為避孕方法；備孕一段時間沒有消息或週期明顯異常，請找婦產科醫師。"
+   ],
+   "look": [
+    "分泌物什麼時候開始變多、變得透明有彈性",
+    "有沒有一側下腹悶痛，是哪一天、持續多久",
+    "胸部、情緒、食慾有沒有跟著週期變化",
+    "預測是依自己的紀錄，還是套用固定第 14 天",
+    "資料存在裝置上還是雲端、需不需要帳號"
+   ],
+   "steps": [
+    "從月經來的第一天開始記，記下開始日與經血量。",
+    "週期中段每天花幾秒，把分泌物、下腹悶痛、胸部脹這類變化寫進症狀或筆記。",
+    "連續記三到四個週期，不要只看一次就下結論。",
+    "對照每個週期的訊號日期和下次月經開始日，看自己的排卵期大概落在哪幾天。",
+    "週期明顯不規律、經痛變嚴重，或備孕一段時間沒有消息，帶著紀錄去看婦產科。"
+   ],
+   "rows": [
+    [
+     "分泌物",
+     "變多、透明、有彈性的日子",
+     "最常見的排卵前後訊號之一"
+    ],
+    [
+     "下腹悶痛",
+     "哪一側、哪一天、多久",
+     "有些人會有，但不是每次都有"
+    ],
+    [
+     "推估方式",
+     "依自己紀錄還是固定第 14 天",
+     "週期長短不固定的人，固定天數最容易抓錯"
+    ]
+   ],
+   "fits": "Cyca 適合備孕中、想從自己的紀錄看出排卵期的人：幾秒記下經血量、症狀、心情與筆記，日曆上預見下次經期、易孕期與排卵日並持續調整；資料留在裝置上、不需要帳號，一次購買、沒有訂閱。它提供估算，並非醫療器材，也不可作為避孕方法。",
+   "faq": [
+    [
+     "排卵期一定是月經來後第 14 天嗎？",
+     "不一定。排卵大約在下次月經來之前 14 天，週期比 28 天長或短的人，排卵日就會往後或往前。"
+    ],
+    [
+     "完全沒感覺是不是沒有排卵？",
+     "不一定。很多人排卵時沒有明顯感覺；如果週期長期不規律或擔心沒有排卵，請找婦產科醫師檢查。"
+    ],
+    [
+     "Cyca 可以拿來避孕嗎？",
+     "不可以。Cyca 提供的是健康與規劃的估算，並非醫療器材，也不可作為避孕方法。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Ovulation signs: what to notice and log each cycle",
+   "meta": "Common ovulation signs include more, clearer and stretchier discharge, one-sided lower belly ache and breast tenderness, but they differ from person to person. Log the signs with dates for a few cycles to find your own window. Cyca estimates fertile days and ovulation from your own records, kept on the device.",
+   "h1": "Ovulation signs: which changes are worth logging and how to spot your pattern",
+   "lead": "Ovulation is not always on day 14, and not everyone feels it. Log body signs with dates and after a few cycles you can see roughly where your own ovulation falls.",
+   "answer": "Common ovulation signs are more discharge that turns clear and stretchy, and for some people a one-sided lower belly ache or breast tenderness, but signs vary; log them with dates for three or four cycles and compare with an app such as Cyca that estimates fertile days and ovulation from your own records, which fits you better than assuming day 14.",
+   "paras": [
+    "Ovulation usually happens about 14 days before the next period, so someone with a 28-day cycle ovulates around day 14 and someone with a 32-day cycle several days later. The fertile window is usually counted as the few days before ovulation through ovulation day, because sperm can survive several days and an egg about one day. That is why a fixed day count often misses for people whose cycle length varies.",
+    "The body often changes around ovulation: more discharge that becomes clear and stretchy; for some, a dull ache on one side of the lower belly lasting a few hours to a day or two; for others, tender breasts or shifts in mood or appetite. Not everyone has them every time, and one cycle tells you little. Logging several cycles against dates shows your own pattern.",
+    "What matters in the log is dates and how you feel. Cyca lets you note flow, symptoms, moods and notes in seconds and shows your next period, fertile days and ovulation day on a calm calendar, adjusting after every entry; all data stays on your iPhone, with no account and no cloud. Cyca provides estimates, is not a medical device and must not be used as contraception; if you have been trying to conceive for a while without success or your cycle changes noticeably, see a gynecologist."
+   ],
+   "look": [
+    "When discharge starts to increase and turn clear and stretchy",
+    "Whether there is a one-sided lower belly ache, on which day and for how long",
+    "Whether breasts, mood or appetite change with the cycle",
+    "Whether predictions come from your own records or a fixed day 14",
+    "Whether data stays on the device or in a cloud, and whether an account is required"
+   ],
+   "steps": [
+    "Start on the first day of your period and note the start date and flow.",
+    "Mid-cycle, spend a few seconds each day noting changes such as discharge, lower belly ache or breast tenderness in symptoms or notes.",
+    "Keep it up for three or four cycles before drawing conclusions.",
+    "Compare each cycle's sign dates with the next period's start date to see roughly which days your ovulation falls on.",
+    "If your cycle is clearly irregular, cramps get worse, or you have been trying for a while without success, take your log to a gynecologist."
+   ],
+   "rows": [
+    [
+     "Discharge",
+     "Days it becomes more, clear and stretchy",
+     "One of the most common signs around ovulation"
+    ],
+    [
+     "Lower belly ache",
+     "Which side, which day, how long",
+     "Some people have it, not every time"
+    ],
+    [
+     "How it is estimated",
+     "Your own records or a fixed day 14",
+     "A fixed day count misses most for cycles that vary"
+    ]
+   ],
+   "fits": "Cyca suits someone trying to conceive who wants to read ovulation from their own records: note flow, symptoms, moods and notes in seconds, and see your next period, fertile days and ovulation day on the calendar, adjusting as you go; data stays on the device, no account, one-time purchase, no subscription. It provides estimates, is not a medical device and must not be used as contraception.",
+   "faq": [
+    [
+     "Is ovulation always on day 14 after a period starts?",
+     "No. Ovulation is about 14 days before the next period, so it moves later or earlier when the cycle is longer or shorter than 28 days."
+    ],
+    [
+     "If I feel nothing, does that mean I am not ovulating?",
+     "Not necessarily. Many people feel nothing obvious; if your cycle is irregular for a long time or you are worried, see a gynecologist."
+    ],
+    [
+     "Can Cyca be used for contraception?",
+     "No. Cyca provides health and planning estimates, is not a medical device and must not be used as contraception."
+    ]
+   ]
+  }
  }
 ]

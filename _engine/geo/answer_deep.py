@@ -2174,27 +2174,27 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "white noise app buy once no monthly fee",
    "sleep sounds app no recurring charge ios"
   ],
-  "lead": "Sereno is a sleep and ambient sounds app you pay for once — no subscription, no monthly charge, and no ads.",
-  "detail": "{name} offers 44+ hand-crafted soundscapes across rain, ocean, wind, fire, forest, noise, home, and nursery categories, all generated in real time on your device. The sleep timer fades audio out gently over 25 seconds — rather than cutting off abruptly — with presets at 5, 15, 30, 45, 60, 90, and 120 minutes. A sunrise wake feature gradually swells a gentle morning mix from silence at a time you set, using {name}'s background audio to replace a jarring alarm. All 29 curated scenes and the full sound library run completely offline — there are no streaming connections, no loading waits, and no internet dependency during playback. A small selection of scenes (Rainy Night, Deep Sleep, Flow, Summer Night, Campfire Night) and basic sounds are free to try before purchasing; one Pro unlock opens everything.",
+  "lead": "Sereno is a sleep and ambient sounds app with a one-time in-app unlock — no subscription, no ads, and no account.",
+  "detail": "{name} starts with dozens of sounds — colored noise (white, pink, brown), rain, ocean, wind, streams, fire, night crickets, fans, and more — that you can layer and tune into over 1000 unique soundscapes. Nature and ambient sounds are real field recordings, re-sequenced at random as you listen, while colored noise is generated live on your device, so there is no fixed loop. The sleep timer fades out softly instead of cutting off, and a sunrise wake swells in birdsong to greet the morning. Ready-made scenes cover sleep, deep focus, study, relaxation, meditation, baby sleep, travel, and more, and you can save and name your own. Everything works fully offline, with no account and no data collected. A one-time in-app unlock of Sereno Pro opens every sound, unlimited layers, all scenes, and the tuning controls — yours to keep, with no subscription.",
   "bullets": [
-   "44+ soundscapes: rain (22+ variants), ocean, wind, fire, forest, noise, home machines",
-   "29 curated scenes including dedicated sleep, focus, relax, nature, and nursery mixes",
-   "Sleep timer with 25-second soft fade; 5–120 minute presets",
-   "Sunrise wake: gentle morning mix that swells from silence at your chosen time",
-   "One-time Pro unlock — no subscription, no ads, fully offline"
+   "Dozens of sounds: colored noise, rain, ocean, wind, streams, fire, crickets, fans",
+   "Layer and tune them into 1000+ unique soundscapes",
+   "Ready-made scenes for sleep, focus, study, relaxation, and baby sleep; save your own",
+   "Sleep timer that fades out softly; sunrise wake with birdsong",
+   "One-time in-app unlock — no subscription, no ads, works fully offline"
   ],
   "faq": [
    {
     "q": "Will {name} keep playing when my phone screen turns off?",
-    "a": "{name} uses iOS background audio so playback continues when the screen locks. Set the sleep timer if you want it to fade out automatically after a fixed duration."
+    "a": "Yes. {name} supports background playback with lock-screen and AirPlay controls, so the sound keeps going when the screen locks. Set the sleep timer if you want it to fade out softly after a while."
    },
    {
     "q": "How many sounds are included in {name}?",
-    "a": "The curated library has 44+ individual soundscapes across 8 categories, organised into 29 preset scenes. Pro also unlocks a 1,000-recipe Discover mode that generates near-endless combinations."
+    "a": "{name} starts with dozens of sounds — colored noise (white, pink, brown), rain, ocean, wind, streams, fire, night crickets, fans, and more. You can layer and tune them into over 1000 unique soundscapes; the Sereno Pro unlock opens every sound and unlimited layers."
    },
    {
-    "q": "Is {name} a treatment for insomnia?",
-    "a": "No. {name} is a sound environment tool with no clinical efficacy claim. Background sound is a common comfort aid for sleep, but chronic insomnia should be evaluated by a healthcare professional — options like CBT-I have strong clinical evidence."
+    "q": "Do I need an account or an internet connection to use {name}?",
+    "a": "No. {name} needs no account and works fully offline. There is no tracking, no ads, and no data collected — everything stays on your device."
    }
   ]
  },
@@ -2210,27 +2210,27 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "pink brown noise focus app buy once",
    "adhd sound app one time purchase ios"
   ],
-  "lead": "Sereno has a dedicated ADHD Focus scene — brown noise layered with pink noise and gentle rain — plus a full noise palette and per-layer mixer, all behind a single one-time purchase.",
-  "detail": "{name}'s ADHD Focus scene layers brown noise at moderate volume, pink noise at lower volume, and a gentle rain bed to create a layered background texture that some people find reduces distraction without adding new interruptions. The full noise library includes six colours — white, pink, brown, blue, violet, and grey — all of which can be played individually or blended in the mixer. You can stack any combination, adjust each layer's volume independently, and save your own custom mix as a named scene for next time. The science around coloured noise and ADHD focus is mixed and genuinely individual: some people find it significantly helpful, others find it distracting — {name} gives you a wide range to experiment with without a subscription. One Pro purchase covers everything. Note: {name} is not a medical tool and is not a substitute for professional ADHD assessment or treatment.",
+  "lead": "Sereno has purpose-built focus scenes for work, study, and ADHD focus, built around steady brown and pink noise, plus a per-track mixer — all with a one-time in-app unlock.",
+  "detail": "{name}'s focus scenes for work, study, and ADHD focus are built around steady brown and pink noise, which can quiet a busy mind and help you stay on task. Colored noise (white, pink, brown) is generated live on your device, and you can layer it with nature sounds such as rain, streams, or a fan — these are real field recordings, re-sequenced at random as you listen. Layer as many sounds as you like and set the volume, balance, and EQ of every track, then save and name your mix as your own scene. How background noise feels differs from person to person, so it is worth trying a few blends to find yours. A one-time in-app unlock of Sereno Pro opens every sound, unlimited layers, all scenes, and the tuning controls, with no subscription.",
   "bullets": [
-   "Dedicated ADHD Focus scene: brown noise + pink noise + gentle rain (verified in source)",
-   "Full noise palette: white, pink, brown, blue, violet, grey",
-   "Per-layer mixer — layer any sounds and save custom blends",
-   "One-time Pro purchase; no monthly fee",
-   "Not a medical tool — consult a professional for ADHD assessment and treatment"
+   "Purpose-built focus scenes for work, study, and ADHD focus",
+   "Steady brown and pink noise, plus white noise, generated live on your device",
+   "Layer any sounds; set volume, balance, and EQ per track",
+   "Save and name your own mixes as scenes",
+   "One-time in-app unlock — no subscription, no ads"
   ],
   "faq": [
    {
-    "q": "Is brown noise proven to help ADHD?",
-    "a": "Evidence is preliminary and individual. Some small studies suggest background noise may aid focus for some people with ADHD, potentially through stochastic resonance, but there are no large-scale clinical trials confirming brown or pink noise as an ADHD treatment. Many people find it helpful; others find it distracting. Experiment carefully, and consult a professional for ADHD management."
+    "q": "Does brown noise help everyone focus?",
+    "a": "Not everyone. Some people find steady brown or pink noise helps them stay on task, while others find it distracting. {name} lets you try different noise colors and blends to see what works for you."
    },
    {
     "q": "Can I mix and save my own sounds in {name}?",
-    "a": "Yes. The {name} mixer lets you add multiple sound layers simultaneously — for example, brown noise and a gentle rain layer — adjust each volume independently, and save the result as a custom named scene."
+    "a": "Yes. Layer as many sounds as you like — for example, brown noise with rain — set the volume, balance, and EQ of each track, and save the result as your own named scene."
    },
    {
     "q": "Does {name} need an internet connection to play sounds?",
-    "a": "No. Every sound in {name} is synthesized in real time on your device. Nothing streams from the internet; {name} works in full airplane mode."
+    "a": "No. {name} works fully offline — nothing streams from the internet during playback, and it needs no account."
    }
   ]
  },
@@ -2246,27 +2246,27 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "ambient sound app looping vs generative",
    "high quality sleep sounds app ios"
   ],
-  "lead": "Sereno generates all its sounds in real time on your device — they never loop — but they are synthesized approximations, not studio field recordings; here is what that means in practice.",
-  "detail": "{name} uses real-time procedural synthesis: each soundscape is a hand-tuned recipe of noise generators, randomised transients, and tonal layers, not a looping audio file. Rain, for example, layers filtered pink noise with random raindrop transients to produce a texture that varies continuously and never restarts or clicks. This is why a 400-kilobyte preset pack can contain 1,000 distinct soundscapes with no downloads or storage footprint. The honest trade-off is that these are crafted sonic approximations — not high-fidelity field recordings from a studio microphone in an actual rainforest. Most people find them very natural and pleasant for sleep and focus; if you strongly prefer authentic nature recordings, try the free scenes first before purchasing. {name}'s library includes 22+ rain variants, 6 ocean types, 6+ wind and forest sounds, and multiple fire and home-machine options.",
+  "lead": "Sereno's rain, ocean, wind, fire, and other nature sounds are real field recordings, re-sequenced at random as you listen so there is no fixed loop; only the colored noise (white, pink, brown) is generated live on your device.",
+  "detail": "Rather than repeating one short audio file, {name} weaves its real field recordings together at random as you listen, so every play takes a fresh path through the recordings instead of a fixed loop. Colored noise — white, pink, and brown — is generated live on your device. Start with dozens of sounds, including rain, ocean, wind, streams, fire, night crickets, and fans, then layer and tune them into over 1000 unique soundscapes, setting the volume, balance, and EQ of every track — thunder over a crackling fire, or rain on a tent. A sleep timer fades out softly instead of cutting off, and everything works fully offline. A one-time in-app unlock of Sereno Pro opens every sound, unlimited layers, and all scenes, with no subscription.",
   "bullets": [
-   "Real-time synthesis — sounds never loop, never click or restart",
-   "22+ rain variants, 6 ocean types, 6+ fire/forest sounds, 6 noise colours",
-   "No audio file downloads — the entire 1,000-recipe library weighs ~400 KB",
-   "Honest: synthesized approximations, not studio field recordings",
-   "Free scenes (Rainy Night, Summer Night, Flow, Campfire Night, Deep Sleep) available to try before buying"
+   "Nature sounds are real field recordings, not synthesized imitations",
+   "Re-sequenced at random as you listen — no fixed loop",
+   "Colored noise (white, pink, brown) generated live on your device",
+   "Dozens of sounds, layered into 1000+ unique soundscapes",
+   "Works fully offline; one-time in-app unlock, no subscription"
   ],
   "faq": [
    {
     "q": "Do {name}'s sounds loop?",
-    "a": "No. {name} synthesizes all audio in real time, so sounds never loop, never restart, and never have the click or repeat artifact common in looping audio files. Each second of output is freshly generated."
+    "a": "There is no fixed loop. {name} re-sequences its field recordings at random as you listen, so every play takes a fresh path through the recordings, and colored noise is generated live on your device."
    },
    {
     "q": "Are {name}'s sounds real recordings of rain or ocean?",
-    "a": "No — they are high-quality synthesized approximations. The recipes are carefully tuned to be natural and pleasant for sleep and focus, but they are not recordings. Try the free scenes to judge for yourself before purchasing."
+    "a": "Yes. Rain, ocean, wind, fire, and the other nature and ambient sounds are real field recordings. Only the colored noise — white, pink, and brown — is generated live on your device."
    },
    {
-    "q": "How much storage does {name} use on my phone?",
-    "a": "Very little. Because all audio is synthesized on-device, {name} carries no large audio file library. The complete 1,000-recipe preset pack is approximately 400 KB — smaller than a single MP3."
+    "q": "Can I combine rain with other sounds in {name}?",
+    "a": "Yes. Layer as many sounds as you like — rain on a tent, thunder over a crackling fire, a fan behind soft brown noise — and set the volume, balance, and EQ of every track. Save and name the mix to use it again."
    }
   ]
  },
@@ -2282,27 +2282,27 @@ DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
    "white noise for baby ios app buy once",
    "nursery sound app one time purchase"
   ],
-  "lead": "Sereno's Nursery section includes womb, shush, and heartbeat sounds alongside fan and dryer — all synthesized continuously on-device with no looping, no streaming cost, and no subscription.",
-  "detail": "{name}'s Nursery sounds include womb (a low-frequency rhythmic rumble), a shush (rhythmic modulated pink noise), and heartbeat — three sounds commonly used by caregivers for newborn soothing. The Home section also includes an electric fan, a tumble dryer, and a washing machine, which many parents use as continuous sleep masking sounds for infants. Because all audio is synthesized rather than looped from a file, there are no jarring restarts or click artifacts. Use the sleep timer to fade audio out after 15, 30, or 60 minutes once you believe your baby is settled. One Pro purchase unlocks all Nursery and Home sounds. Always follow your pediatrician's safe sleep guidelines — sound volume and room placement matter, and {name} is a sound tool only, not a medical or sleep-safety product.",
+  "lead": "Sereno includes ready-made baby sleep scenes, plus white, pink, and brown noise, fans, rain, and other gentle sounds you can mix yourself — with a one-time in-app unlock, no subscription, and no ads.",
+  "detail": "{name}'s ready-made scenes include baby sleep, and you can build your own mix from dozens of sounds — white, pink, and brown noise, fans, rain, ocean, streams, and more. Colored noise is generated live on your device, while nature sounds are real field recordings re-sequenced at random as you listen, so there is no fixed loop with a noticeable restart. Set the volume, balance, and EQ of every track, then save and name your mix for the next nap. The sleep timer fades out softly instead of cutting off, and everything works fully offline with no account and no data collected. A one-time in-app unlock of Sereno Pro opens every sound, unlimited layers, and all scenes, with no subscription. Keep the volume low and the phone away from the crib, following safe-sleep guidance for your baby.",
   "bullets": [
-   "Womb, shush, and heartbeat sounds in the Nursery section",
-   "Fan, dryer, and washer sounds for masking background noise",
-   "No looping — continuous synthesized audio without restarts",
-   "Sleep timer with 25-second soft fade; 5–120 minute presets",
-   "Always follow pediatrician safe-sleep guidelines — {name} is not a medical product"
+   "Ready-made baby sleep scenes; save and name your own",
+   "White, pink, and brown noise, fans, rain, ocean, and more",
+   "No fixed loop — recordings re-sequenced at random as you listen",
+   "Sleep timer that fades out softly instead of cutting off",
+   "One-time in-app unlock — no subscription, no ads, fully offline"
   ],
   "faq": [
    {
     "q": "Is it safe to use {name} for a baby all night?",
-    "a": "Follow your pediatrician's guidance on safe sleep environments, including sound volume (generally recommended below 50 dB at the sleep surface) and device placement away from the crib. {name} is a sound tool and makes no medical or safety claims."
+    "a": "Keep the volume low, place the phone away from the crib, and follow safe-sleep guidance for your baby. {name} is a sound app and makes no safety claims; use the sleep timer if you prefer the sound to fade out softly after a while."
    },
    {
-    "q": "Are the Nursery sounds free or require a purchase in {name}?",
-    "a": "Most Nursery sounds (womb, shush, heartbeat) are in the Pro tier. A few sounds and scenes are free to try. One Pro purchase unlocks all Nursery and Home sounds — no subscription."
+    "q": "What does the one-time unlock include in {name}?",
+    "a": "Unlocking Sereno Pro once opens every sound, unlimited layers, all scenes, and the tuning controls — yours to keep, with no subscription."
    },
    {
     "q": "Does {name} work without Wi-Fi for overnight use?",
-    "a": "Yes. {name} synthesizes all audio locally and needs no internet connection during playback. It works reliably in airplane mode."
+    "a": "Yes. {name} works fully offline, so it keeps playing overnight in airplane mode with no Wi-Fi."
    }
   ]
  },

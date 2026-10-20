@@ -137,8 +137,23 @@ jobs:
           python3 .github/scripts/test_social_posting.py -q -b
           python3 .github/scripts/test_threads_mochi_trial.py -q -b
           python3 .github/scripts/threads_post.py
+      - name: Mochi trial entry first (01:40 / 21:00 slots)
+        # threads_mochi_trial.json: the trial entry takes the day's first slot with room (01:40 UTC), not the
+        # leftover of the 11:00 slot; a missed entry is made up once by the next slot with room, same ct.
+        # took=true: the slot is taken (same slot, same cap, no extra post). The 11:00 slot runs it inside
+        # threads_post.py. A red trial ends the job red at the end, after the slot's usual content.
+        id: trial
+        if: steps.room.outputs.ok == 'true' && (steps.slot.outputs.hour == '1' || steps.slot.outputs.hour == '13')
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          THREADS_SLOT: ${{ steps.slot.outputs.slot }}
+        run: |
+          python3 .github/scripts/test_threads_mochi_trial.py -q -b
+          python3 .github/scripts/threads_post.py trial && rc=0 || rc=$?
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
       - name: Post today's hook clip to Threads
-        if: steps.room.outputs.ok == 'true' && steps.slot.outputs.hour == '1'
+        if: steps.room.outputs.ok == 'true' && steps.slot.outputs.hour == '1' && steps.trial.outputs.took != 'true'
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
@@ -148,7 +163,7 @@ jobs:
           python3 .github/scripts/clip_posts.py threads --slot 1 --date "$SLOT_DATE"
       - name: Post tonight's series post (BM-11 / BM-17 / BM-22)
         id: series
-        if: steps.room.outputs.ok == 'true' && steps.slot.outputs.hour == '13'
+        if: steps.room.outputs.ok == 'true' && steps.slot.outputs.hour == '13' && steps.trial.outputs.took != 'true'
         env:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
@@ -184,3 +199,6 @@ jobs:
             sleep $((i * 5))
           done
           echo "::warning::could not record the clip post"; exit 1
+      - name: Fail when the Mochi trial entry ended red
+        if: always() && steps.trial.outputs.rc != '' && steps.trial.outputs.rc != '0'
+        run: echo "::error::the Mochi trial entry ended red (see the trial step)"; exit 1

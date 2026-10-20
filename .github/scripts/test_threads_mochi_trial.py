@@ -112,8 +112,8 @@ class TrialLinkTests(unittest.TestCase):
                 threads_post.trial_reply(TRIAL, dict(POSTS[0], reply=bad))
 
 
-class TrialMainTests(unittest.TestCase):
-    """threads_post.main() on the picture slot (03:00 UTC = 11:00 Taiwan, the same date)."""
+class MainHarness(unittest.TestCase):
+    """threads_post.main() on a slot (default: the picture slot, 03:00 UTC = 11:00 Taiwan, the same date)."""
 
     QUEUED = {"date": "", "app": "x", "app_id": MOCHI, "ct": "bm_mochi_us_th", "task": "t",
               "text": "Queued pain line, no URL."}
@@ -135,8 +135,10 @@ class TrialMainTests(unittest.TestCase):
         self.out = out.start()
         self.addCleanup(out.stop)
 
-    def run_main(self, day, *, used=0, publish=("m1", "r1"), find=None, queued=True):
-        env = {"THREADS_TOKEN": "tok", "THREADS_USER_ID": "uid", "THREADS_SLOT": f"{day}T03:00:00+00:00"}
+    def run_main(self, day, *, used=0, publish=("m1", "r1"), find=None, queued=True, up=None, hour="03:00",
+                 argv=()):
+        """`up`: what find_trial_post answers (None = the owed entry is not up; (id, UTC time) = it is up)."""
+        env = {"THREADS_TOKEN": "tok", "THREADS_USER_ID": "uid", "THREADS_SLOT": f"{day}T{hour}:00+00:00"}
         quota = (mock.patch.object(threads_cap, "quota_usage", side_effect=used) if isinstance(used, Exception)
                  else mock.patch.object(threads_cap, "quota_usage", return_value=used))
         queued_post = dict(self.QUEUED, date=day) if queued else None
@@ -145,10 +147,15 @@ class TrialMainTests(unittest.TestCase):
             quota,
             mock.patch.object(threads_post, "queued_today", return_value=queued_post) as queue,
             mock.patch.object(threads_post, "find_own_post", return_value=find),
+            mock.patch.object(threads_post, "find_trial_post",
+                              **({"side_effect": up} if isinstance(up, Exception) else {"return_value": up})),
             mock.patch.object(threads_post, "publish_post", side_effect=list(publish)) as posted,
         ):
-            return threads_post.main(), posted, queue
+            return threads_post.main(list(argv)), posted, queue
 
+
+
+class TrialMainTests(MainHarness):
     def test_a_trial_day_posts_the_trial_entry_and_its_link_reply(self):
         for p in POSTS:
             with self.subTest(day=p["date"]):
@@ -165,9 +172,10 @@ class TrialMainTests(unittest.TestCase):
                 self.assertIn("play.google.com", reply_call.args[2])
 
     def test_a_day_off_the_trial_runs_the_usual_logic(self):
+        earlier = ("m-old", dt.datetime(2026, 10, 1, tzinfo=dt.timezone.utc))  # the owed entry went out already
         for day in ("2026-10-19", "2026-10-21", "2026-10-31", "2026-11-02", "2026-11-03", "2026-11-04"):
             with self.subTest(day=day):
-                rc, posted, queue = self.run_main(day)
+                rc, posted, queue = self.run_main(day, up=earlier)
                 self.assertEqual(0, rc)
                 queue.assert_called_once()
                 self.assertEqual(self.QUEUED["text"], posted.call_args_list[0].args[2])
@@ -186,7 +194,8 @@ class TrialMainTests(unittest.TestCase):
         self.assertIn("::warning::", self.out.getvalue())
 
     def test_a_rerun_adds_only_the_missing_link_reply(self):
-        rc, posted, _ = self.run_main("2026-10-22", publish=("r1",), find="m-existing")
+        this_slot = ("m-existing", dt.datetime(2026, 10, 22, 3, 5, tzinfo=dt.timezone.utc))
+        rc, posted, _ = self.run_main("2026-10-22", publish=("r1",), find="m-existing", up=this_slot)
         self.assertEqual(0, rc)
         posted.assert_called_once()
         self.assertEqual("m-existing", posted.call_args.kwargs["reply_to"])
@@ -207,6 +216,98 @@ class TrialMainTests(unittest.TestCase):
         self.assertEqual(1, rc)
         self.assertEqual(1, sum(1 for c in posted.call_args_list if "reply_to" not in c.kwargs))
         self.assertIn("::error::", self.out.getvalue())
+
+
+class TrialSlotTests(MainHarness):
+    """The trial takes the day's first slot with room (01:40 UTC, `threads_post.py trial`), is made up once by the
+    next slot with room when it was missed (cap full), with the same ct, and never goes out twice."""
+
+    def run_trial(self, day, hour, **kw):
+        handle, out = tempfile.mkstemp()
+        os.close(handle)
+        self.addCleanup(os.unlink, out)
+        with mock.patch.dict(os.environ, {"GITHUB_OUTPUT": out}):
+            rc, posted, queue = self.run_main(day, hour=hour, argv=("trial",), **kw)
+        return rc, posted, queue, Path(out).read_text()
+
+    def test_a_trial_day_posts_the_entry_in_the_first_slot(self):
+        rc, posted, queue, out = self.run_trial("2026-10-20", "01:40")
+        self.assertEqual(0, rc)
+        self.assertIn("took=true", out)
+        queue.assert_not_called()
+        main_call, reply_call = posted.call_args_list
+        self.assertEqual(POSTS[0]["text"], main_call.args[2])
+        self.assertIn("ct=th_mochi_en_01&", reply_call.args[2])
+
+    def test_the_picture_slot_after_the_first_slot_runs_its_usual_post(self):
+        first_slot = ("m1", dt.datetime(2026, 10, 20, 1, 45, tzinfo=dt.timezone.utc))
+        rc, posted, queue = self.run_main("2026-10-20", up=first_slot)
+        self.assertEqual(0, rc)
+        queue.assert_called_once()   # no second copy of the trial; the 11:00 slot is the picture slot again
+        self.assertEqual(self.QUEUED["text"], posted.call_args_list[0].args[2])
+        self.assertTrue(all("th_mochi_" not in str(c.args[2]) for c in posted.call_args_list))
+
+    def test_cap_full_posts_nothing_and_the_next_slot_makes_it_up_with_the_same_ct(self):
+        rc, posted, _q, out = self.run_trial("2026-10-20", "01:40", used=threads_cap.ACCOUNT_DAILY_CAP)
+        self.assertEqual(0, rc)
+        posted.assert_not_called()   # held by the account cap: nothing goes out, nothing else instead
+        self.assertIn("took=true", out)
+        for day, hour in (("2026-10-20", "13:00"), ("2026-10-21", "01:40")):
+            with self.subTest(day=day, hour=hour):
+                rc, posted, _q, out = self.run_trial(day, hour, used=1)
+                self.assertEqual(0, rc)
+                self.assertIn("took=true", out)
+                main_call, reply_call = posted.call_args_list
+                self.assertEqual(POSTS[0]["text"], main_call.args[2])
+                self.assertIn("ct=th_mochi_en_01&", reply_call.args[2])
+        self.assertIn("made up now", self.out.getvalue())   # the day after: a make-up of the 10-20 entry
+        rc, posted, queue = self.run_main("2026-10-21", used=1)   # the 11:00 slot of the day after makes it up too
+        self.assertEqual(0, rc)
+        queue.assert_not_called()
+        self.assertIn("ct=th_mochi_en_01&", posted.call_args_list[1].args[2])
+
+    def test_the_make_up_goes_out_only_once(self):
+        made_up = ("m-late", dt.datetime(2026, 10, 20, 13, 2, tzinfo=dt.timezone.utc))
+        for day, hour in (("2026-10-21", "01:40"), ("2026-10-21", "13:00")):
+            with self.subTest(day=day, hour=hour):
+                rc, posted, _q, out = self.run_trial(day, hour, up=made_up)
+                self.assertEqual(0, rc)
+                self.assertIn("took=false", out)   # the slot runs its usual content
+                posted.assert_not_called()
+        rc, posted, queue = self.run_main("2026-10-21", up=made_up)
+        self.assertEqual(0, rc)
+        queue.assert_called_once()
+
+    def test_a_missed_entry_is_not_made_up_after_its_window(self):
+        days = {threads_post.trial_window_post(dt.date(2026, 10, 20) + dt.timedelta(days=i), TRIAL)["ct"]
+                for i in range(2)}
+        self.assertEqual({"th_mochi_en_01"}, days)
+        self.assertEqual("th_mochi_ko_01", threads_post.trial_window_post(dt.date(2026, 10, 22), TRIAL)["ct"])
+        self.assertEqual("th_mochi_en_03", threads_post.trial_window_post(dt.date(2026, 11, 2), TRIAL)["ct"])
+        self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 11, 3), TRIAL))
+        self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 10, 19), TRIAL))
+        self.assertIsNone(threads_post.trial_window_post(None, TRIAL))
+
+    def test_a_lookup_failure_posts_no_trial_and_leaves_the_slot_its_usual_content(self):
+        rc, posted, _q, out = self.run_trial("2026-10-20", "01:40", up=threads_post.LookupFailed("down"))
+        self.assertEqual(0, rc)
+        self.assertIn("took=false", out)
+        posted.assert_not_called()
+        self.assertIn("::warning::", self.out.getvalue())
+
+    def test_find_trial_post_reads_the_window_and_matches_the_text(self):
+        post = POSTS[0]
+        rows = {"data": [{"id": "x", "text": "other", "timestamp": "2026-10-20T02:00:00+0000"},
+                         {"id": "m9", "text": post["text"], "timestamp": "2026-10-20T13:01:00+0000"}]}
+        opener = mock.MagicMock()
+        opener.return_value.__enter__.return_value.read.return_value = json.dumps(rows).encode()
+        got = threads_post.find_trial_post("tok", post, dt.date(2026, 10, 21), opener=opener)
+        self.assertEqual(("m9", dt.datetime(2026, 10, 20, 13, 1, tzinfo=dt.timezone.utc)), got)
+        rows["data"] = rows["data"][:1]
+        opener.return_value.__enter__.return_value.read.return_value = json.dumps(rows).encode()
+        self.assertIsNone(threads_post.find_trial_post("tok", post, dt.date(2026, 10, 21), opener=opener))
+        with self.assertRaises(threads_post.LookupFailed):
+            threads_post.find_trial_post("tok", post, dt.date(2026, 10, 21), opener=mock.Mock(side_effect=OSError))
 
 
 if __name__ == "__main__":

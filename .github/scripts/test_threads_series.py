@@ -380,7 +380,7 @@ class WorkflowTest(unittest.TestCase):
         post = text.split("\n  post:", 1)[1]
         steps = post.split("      - name: ")[1:]
         posting = [s for s in steps if "THREADS_USER_ID" in s]
-        self.assertEqual(4, len(posting))
+        self.assertEqual(5, len(posting))  # picture, Mochi trial (01:40 / 21:00), hook clip, series, slot-15 clip
         for step in posting:
             self.assertIn("steps.room.outputs.ok == 'true'", step)
         self.assertIn("threads_series.py room", post)

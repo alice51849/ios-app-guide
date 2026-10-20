@@ -424,6 +424,11 @@ def queued_links(post):
 # slot - the day's post of this script - goes to that entry instead of the queued / countdown / picture post. It
 # takes the slot, never adds one: the slot gate, the account cap and every link check stay as they are. A date the
 # file does not list (any day after 2026-11-02 included) runs the usual logic, with no code change needed.
+# 2026-10-20 change (run 39362861445: the 11:00 slot found the account cap already used up and the entry was lost):
+# the entry gets the day's FIRST slot that posts (01:40 UTC hook-clip slot, `threads_post.py trial`), not the
+# leftover. A slot that finds the entry already up (an earlier slot posted it) runs its usual content; a missed
+# entry (cap full, lookup down) is made up once by the next slot that has room, until the next entry's date (the
+# last entry: one day after its date), with the same ct. Still one slot, one post, the same account cap.
 TRIAL_PATH = os.path.join(HERE, "threads_mochi_trial.json")
 TRIAL_APP_NAME = "Mochi"
 
@@ -444,6 +449,97 @@ def trial_post(day, trial=None):
     if not day:
         return None
     return next((p for p in trial.get("posts") or [] if isinstance(p, dict) and p.get("date") == day.isoformat()), None)
+
+
+def trial_window_post(day, trial=None):
+    """The entry a slot of Taiwan day `day` owes: the one whose window holds `day` (its date up to the next
+    entry's date, the last entry: its date and the day after), or None. A missed entry is made up only there."""
+    trial = load_trial() if trial is None else trial
+    if not day:
+        return None
+    posts = sorted((p for p in trial.get("posts") or [] if isinstance(p, dict) and p.get("date")),
+                   key=lambda p: p["date"])
+    for i, post in enumerate(posts):
+        try:
+            start = _dt.date.fromisoformat(post["date"])
+            end = (_dt.date.fromisoformat(posts[i + 1]["date"]) if i + 1 < len(posts)
+                   else start + _dt.timedelta(days=2))
+        except ValueError:
+            continue
+        if start <= day < end:
+            return post
+    return None
+
+
+def find_trial_post(token, post, day, opener=urllib.request.urlopen):
+    """(id, UTC timestamp) of our own top-level post of the trial entry `post` made between its date and the end of
+    Taiwan day `day`, or None when it is not up. Raises LookupFailed when the look failed or a copy of the text has
+    no readable timestamp (nothing is posted on a guess)."""
+    start = _dt.datetime.combine(_dt.date.fromisoformat(post["date"]), _dt.time(), TW)
+    end = _dt.datetime.combine(day, _dt.time(), TW) + _dt.timedelta(days=1)
+    query = urllib.parse.urlencode({"fields": "id,text,timestamp", "since": int(start.timestamp()),
+                                    "limit": 50, "access_token": token})
+    try:
+        with opener(f"https://graph.threads.net/v1.0/me/threads?{query}", timeout=30) as r:
+            rows = json.loads(r.read()).get("data", [])
+    except Exception as error:
+        print(f"Threads: could not look for the Mochi trial post ({_failure_note(error)})", file=sys.stderr)
+        raise LookupFailed(_failure_note(error)) from None
+    want = _norm(post.get("text"))
+    for row in rows:
+        if not (isinstance(row, dict) and row.get("id")):
+            continue
+        got = _norm(row.get("text"))
+        if not (got == want or (len(want) >= 40 and len(got) >= 40 and got[:80] == want[:80])):
+            continue
+        try:
+            when = _dt.datetime.strptime(str(row.get("timestamp") or ""), "%Y-%m-%dT%H:%M:%S%z")
+        except ValueError:
+            raise LookupFailed("no readable timestamp") from None
+        if start <= when < end:
+            return str(row["id"]), when.astimezone(_dt.timezone.utc)
+    return None
+
+
+def trial_state(token, day, slot, trial, find=None):
+    """(state, entry) for a slot of Taiwan day `day` starting at UTC `slot`:
+    ("post", e)  the entry is owed and not up: this slot posts it (first post of a trial day, or the make-up);
+    ("rerun", e) this slot already posted it (a rerun): publish_linked adds only a missing link reply;
+    ("done", e)  an earlier slot posted it: this slot runs its usual content (never a second copy);
+    (None, None) no entry owed. LookupFailed propagates."""
+    entry = trial_window_post(day, trial)
+    if not entry:
+        return None, None
+    up = (find or find_trial_post)(token, entry, day)
+    if not up:
+        return "post", entry
+    _post_id, when = up
+    if slot is not None and when >= slot:
+        return "rerun", entry
+    return "done", entry
+
+
+def run_trial(tok, uid, slot, day, trial=None):
+    """(took, rc): took is True when the trial entry takes this slot (posted, held by the cap, refused by the QA,
+    or a rerun of its own slot); the slot then posts nothing else. rc 0 green, 1 red."""
+    trial = load_trial() if trial is None else trial
+    try:
+        state, entry = trial_state(tok, day, slot, trial)
+    except LookupFailed as error:
+        print(f"::warning::Threads Mochi trial: could not tell whether the entry is up ({error}); it waits for a "
+              "later slot, this slot runs its usual content")
+        return False, 0
+    if state == "done":
+        print(f"Threads Mochi trial {entry.get('ct')} is already up (an earlier slot); usual content")
+    if state not in ("post", "rerun"):
+        return False, 0
+    if entry.get("date") != day.isoformat():
+        print(f"Threads Mochi trial {entry.get('ct')} ({entry.get('date')}) was not posted on its day; made up now")
+    try:
+        return True, post_trial(tok, uid, trial, entry, day)
+    except (HTTPStatusError, RequestError, ValueError, KeyError) as error:
+        print(f"Threads Mochi trial post failed: {error}", file=sys.stderr)
+        return True, 1
 
 
 def trial_store_url(trial):
@@ -509,7 +605,8 @@ def post_trial(tok, uid, trial, post, day):
     return 0 if result.link_ok else 1
 
 
-def main():
+def main(argv=None):
+    argv = sys.argv[1:] if argv is None else argv
     tok = os.environ.get("THREADS_TOKEN", "").strip()
     uid = os.environ.get("THREADS_USER_ID", "").strip()
     if not tok or not uid:
@@ -527,14 +624,17 @@ def main():
     # a backfill, on the content and audience of the slot it fills.
     slot = slot_time(os.environ.get("THREADS_SLOT", ""))
     day = slot.astimezone(TW).date() if slot else _dt.datetime.now(TW).date()
-    trial = load_trial()
-    entry = trial_post(day, trial)
-    if entry:
-        try:
-            return post_trial(tok, uid, trial, entry, day)
-        except (HTTPStatusError, RequestError, ValueError, KeyError) as error:
-            print(f"Threads Mochi trial post failed: {error}", file=sys.stderr)
-            return 1
+    took, rc = run_trial(tok, uid, slot, day)
+    if argv[:1] == ["trial"]:
+        # The 01:40 / 13:00 slots: the trial entry first; took=true tells the workflow the slot is taken.
+        out = os.environ.get("GITHUB_OUTPUT")
+        if out:
+            with open(out, "a", encoding="utf-8") as f:
+                f.write(f"took={'true' if took else 'false'}\n")
+        print(f"Threads Mochi trial: {'this slot is taken by the trial' if took else 'no trial post in this slot'}")
+        return rc
+    if took:
+        return rc
     post = queued_today(slot.astimezone(TW).date() if slot else None)
     if post:
         try:

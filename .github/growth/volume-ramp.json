@@ -8,10 +8,7 @@
       "kind": "reels",
       "start": "2026-10-17",
       "stages": [
-        3,
-        4,
-        5,
-        6
+        1
       ],
       "slots": [
         1,
@@ -24,17 +21,14 @@
       "slot_note": "UTC hours of reels-daily.yml (minute 20): 1 = TW/JP/KR morning, 9 = Europe morning / TW 17:20 / JP-KR 18:20 (coverage audit 2026-10-16: the third slot every listing needed), 15 = US East 11:20 / Europe afternoon, 12 = TW 20:20 / JP-KR 21:20 (top revenue per download: TW), 22 = US East 18:20 / West 15:20 / BR 19:20, 18 = US East 14:20 / West 11:20",
       "ceiling": null,
       "ceiling_until": null,
-      "events": []
+      "events": [],
+      "maintenance_note": "2026-10-20 maintenance (10 measurement dept): reels ~1 view each (reports/exposure/channel_views.json), stages [3,4,5,6] -> [1], no climb; capacity moved to Bluesky / YouTube Shorts quality"
     },
     "instagram_feed": {
       "kind": "carousel",
       "start": "2026-10-17",
       "stages": [
-        1,
-        1,
-        2,
-        2,
-        2
+        0
       ],
       "slots": [
         7,
@@ -43,15 +37,14 @@
       "slot_note": "ig-feed-daily.yml (minute 20): 7 = TW 15:20 / JP-KR 16:20 (Asia-locale store-screenshot carousel), 19 = US East 15:20 / West 12:20 (English)",
       "ceiling": null,
       "ceiling_until": null,
-      "events": []
+      "events": [],
+      "maintenance_note": "2026-10-20 maintenance: carousels paused [1,1,2,2,2] -> [0]; the account keeps 1 reel a day"
     },
     "telegram": {
       "kind": "clips",
       "start": "2026-10-17",
       "stages": [
-        3,
-        4,
-        6
+        1
       ],
       "slots": [
         1,
@@ -64,7 +57,8 @@
       "slot_note": "1, 9 and 15 = telegram-daily.yml (minute 0, with the day's text post); 12, 18, 22 = telegram-clips.yml (minute 30)",
       "ceiling": null,
       "ceiling_until": null,
-      "events": []
+      "events": [],
+      "maintenance_note": "2026-10-20 maintenance (10 measurement dept): ~1 view per post (reports/exposure/channel_views.json 74 posts / 74 views); clips [3,4,6] -> [1] (the 01:00 slot only, no climb), text posts 3 -> 1 a day (telegram-daily.yml keeps only the 01:00 cron); capacity moved to Bluesky / YouTube Shorts quality"
     },
     "threads": {
       "kind": "clips",

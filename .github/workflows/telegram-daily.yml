@@ -9,8 +9,7 @@ run-name: >-
 on:
   schedule:
     - cron: "0 1 * * *"    # 09:00 台灣 / 亞洲早
-    - cron: "0 9 * * *"    # 歐洲早 / 中東
-    - cron: "0 15 * * *"   # 美洲
+    # 2026-10-20 成效量測部門：Telegram 每則約 1 次觀看，降到維持量每天 1 則；09:00、15:00 兩個時段停發。
   # 只由時段發文：自然 slot，或 GitHub 把 cron 丟掉時 Mac 的排程補派器（00_GrowthEngine
   # tools/cron_dispatcher）帶 cron 補派「現在這個時段」。telegram_post.py 只接受時鐘所在的時段，
   # telegram-native-ledger 每個時段只有一筆 intent，已保留／已確認的時段永不重送。

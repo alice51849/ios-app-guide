@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-18T08:00:47+0800",
- "count": 52,
- "content_sha256": "1d279e44f324d0c22a5b387fdbbc7f1d493dd1f9b6d3fdf6f8034f5148077b32",
+ "source_generated": "2026-10-20T19:44:47+0800",
+ "count": 53,
+ "content_sha256": "08f147bc01c1602be4938b048f6348c948c3c73e1e1de81ae2c6b42e1c1a8a68",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -209,6 +209,25 @@
     "zh-TW": {
      "title": "dB Halo：分貝計與聲級計",
      "short_description": "分貝計與噪音測量：即時看懂環境有多吵，還有頻譜分析與睡眠日誌"
+    }
+   }
+  },
+  "easyam": {
+   "ios_app_id": "6821790092",
+   "ios_name": "EasyAM",
+   "android_folder": "57_OFFDAY",
+   "package": "com.alice51849.Offday",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "paid": false,
+   "first_seen": "2026-10-20T18:38:01+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "EasyAM: Holiday Alarm Clock"
+    },
+    "zh-TW": {
+     "title": "EasyAM: 國定假日、連假不響的智慧鬧鐘"
     }
    }
   },

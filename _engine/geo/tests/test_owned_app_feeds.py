@@ -70,7 +70,7 @@ class OwnedFeedTests(FeedFixture):
                 "notification_feed_count",
             )),
         )
-        self.assertEqual({"paid_upfront": 12, "free_with_lifetime_unlock": 41},
+        self.assertEqual({"paid_upfront": 12, "free_with_lifetime_unlock": 42},
                          manifest["purchase_models"])
         paths, pairs = set(), set()
         for locale in OFFICIAL_LOCALES:

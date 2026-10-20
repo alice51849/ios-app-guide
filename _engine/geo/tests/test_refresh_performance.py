@@ -139,7 +139,8 @@ class RefreshPerformanceTests(unittest.TestCase):
             root = Path(directory)
             sequential = root / "sequential"
             combined = root / "combined"
-            app_id = str(next(iter(APPSTORE.values())))
+            app_key, app_id = next(iter(APPSTORE.items()))
+            app_id = str(app_id)
             site = "https://example.test/site"
             source = (
                 '<html lang="en"><head><meta name="viewport" '
@@ -229,7 +230,9 @@ class RefreshPerformanceTests(unittest.TestCase):
             ) as build_inventory:
                 gen_app_store_conversion_surfaces.generate(
                     combined,
-                    live_keys={"app"},
+                    # The review-only pass maps live keys to App Store ids, so
+                    # the fixture must name a real roster key.
+                    live_keys={app_key},
                     site=site,
                 )
 

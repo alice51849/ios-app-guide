@@ -22335,6 +22335,10 @@ class GeneratorTests(unittest.TestCase):
             # en-US description offers a free 24-hour trial in the app, then
             # "a single one-time purchase" for UsageNow Pro, "No subscription".
             "claudeusagemini",
+            # Free download (store price 0, released 2026-10-20) whose en-US
+            # description unlocks unlimited alarms, shift patterns and 100 more
+            # clock themes "with a one-time in-app purchase".
+            "easyam",
         }
         self.assertEqual(paid_upfront | free_with_unlock, set(APPS))
         for key in paid_upfront:

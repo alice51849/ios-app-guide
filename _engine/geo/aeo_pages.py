@@ -491,6 +491,25 @@ CURATED_FALLBACK = {
             ["codexbar - usage of ai", 0],
         ],
     },
+    "easyam": {
+        "key": "easyam",
+        "gap_queries": [
+            "alarm clock app that skips public holidays automatically",
+            "iphone alarm that stays quiet on days off and rings on make-up workdays",
+            "shift work alarm app with holiday data for my country",
+            "holiday alarm clock with a one time unlock instead of a subscription",
+        ],
+        # Competitor titles read off the live US App Store search results for
+        # "holiday alarm clock" and "alarm skip holidays" on 2026-10-20; rank 0
+        # means the position was not measured, exactly as for the other
+        # curated fallbacks.
+        "top_competitors": [
+            ["holiday alarm clock", 0],
+            ["ok alarm: holiday & shift work", 0],
+            ["halo alarm: work & holiday", 0],
+            ["shift & holiday alarm clock", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [
@@ -569,6 +588,9 @@ BRAND = {
     "toeic vocabulary builder": "TOEIC Vocabulary Builder",
     "usage for claude": "Usage for Claude", "limits: ai usage tracker": "Limits: AI Usage Tracker",
     "ai limits & reset tracker": "AI Limits & Reset Tracker", "codexbar - usage of ai": "CodexBar - Usage of AI",
+    "ok alarm: holiday & shift work": "OK Alarm: Holiday & Shift Work",
+    "halo alarm: work & holiday": "Halo Alarm: Work & Holiday",
+    "shift & holiday alarm clock": "Shift & Holiday Alarm Clock",
 }
 
 ATTRS = [  # (顯示, cta_bullets 命中關鍵詞)

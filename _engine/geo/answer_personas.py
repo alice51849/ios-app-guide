@@ -4735,6 +4735,9 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
 # persona now participates in every live-roster consumer.
 PERSONAS["zipbox"] = PENDING_PERSONAS.pop("zipbox")
 
+# 假日鬧鐘（easyam）10-20 上架並由新款追趕登記；互推站 easyam-support 同一提交上架。
+PERSONAS["easyam"] = PENDING_PERSONAS.pop("easyam")
+
 AUTO_REGISTRY_PATH = (
     Path(__file__).resolve().parents[1] / "social" / "videogen" / "registry_auto.json"
 )

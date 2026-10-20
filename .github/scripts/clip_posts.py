@@ -82,6 +82,8 @@ TEXT = {
     "nb": {"search": "Søk etter «{s}» i App Store", "button": "Last ned i App Store"},
     "el": {"search": "Αναζητήστε «{s}» στο App Store", "button": "Λήψη από το App Store"},
     "ar": {"search": "ابحث عن «{s}» في App Store", "button": "حمّله من App Store"},
+    "ru": {"search": "Найдите «{s}» в App Store", "button": "Загрузить в App Store"},
+    "sk": {"search": "Vyhľadajte „{s}“ v App Store", "button": "Stiahnuť v App Store"},
 }
 
 
@@ -156,7 +158,8 @@ PLAY_LINE = {"en": "Also on Google Play", "zh-Hant": "Android 版在 Google Play
              "id": "Juga ada di Google Play", "vi": "Có cả trên Google Play", "th": "มีบน Google Play ด้วย",
              "zh-Hans": "安卓版在 Google Play", "cs": "Také na Google Play", "pl": "Także w Google Play",
              "nl": "Ook op Google Play", "da": "Også på Google Play", "nb": "Også på Google Play",
-             "el": "Και στο Google Play", "ar": "متوفر أيضًا على Google Play"}
+             "el": "Και στο Google Play", "ar": "متوفر أيضًا على Google Play",
+             "ru": "Также в Google Play", "sk": "Aj na Google Play"}
 
 
 def ios_id(clip):

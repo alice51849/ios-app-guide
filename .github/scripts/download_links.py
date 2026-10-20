@@ -359,6 +359,8 @@ INSTAGRAM_CTA = {
     "nb": "Last ned via lenken i bio",
     "el": "Λήψη από τον σύνδεσμο στο προφίλ (bio)",
     "ar": "حمّله من الرابط في الملف الشخصي (bio)",
+    "ru": "Скачать можно по ссылке в профиле (bio)",
+    "sk": "Stiahnite si ju cez odkaz v profile (bio)",
 }
 _CTA_ALIAS = {"zh": "zh-Hant", "zh-TW": "zh-Hant", "zh-HK": "zh-Hant", "zh-CN": "zh-Hans", "pt": "pt-BR", "no": "nb"}
 INSTAGRAM_CTA_MARK = "📲"

@@ -418,6 +418,149 @@ class ReviewBlockTests(unittest.TestCase):
                 with self.subTest(page=relative):
                     self.assertEqual(original, (pages / relative).read_text(encoding="utf-8"))
 
+    def test_review_only_families_get_the_review_link_and_nothing_else(self):
+        """tools, data, tutorials and App decision pages with one live App
+        get the review link only: no Smart App Banner, sticky CTA, QR card or
+        share action, and the buyer-intent list stays unchanged. Multi-App,
+        noindex, non-store-locale, section-index and Web Story pages stay
+        byte-identical; a stale block on a page that no longer qualifies is
+        removed."""
+        app_id = USAGENOW
+        other = str(APPSTORE["mochi"])
+        self.assertEqual(
+            ("answers", "alternatives", "hubs", "best-for", "vs", "reviews"),
+            gen_smart_app_banners.BUYER_INTENT_SECTIONS,
+        )
+        self.assertFalse(
+            set(review.REVIEW_ONLY_SECTIONS)
+            & set(gen_smart_app_banners.BUYER_INTENT_SECTIONS)
+        )
+
+        def document(lang, *ids, head="", main=True):
+            links = "".join(
+                f'<p><a href="https://apps.apple.com/app/id{value}">Get</a></p>'
+                for value in ids
+            )
+            body = f"<main>{links}</main>" if main else links
+            return (
+                f'<html lang="{lang}"><head><meta charset="utf-8">{head}</head>'
+                f"<body>{body}</body></html>"
+            )
+
+        noindex = '<meta name="robots" content="noindex,follow">'
+        story = (
+            '<html amp lang="en"><head><meta charset="utf-8"></head><body>'
+            '<amp-story><amp-story-page id="cta"><amp-story-cta-layer>'
+            f'<a href="https://apps.apple.com/app/id{app_id}">Get</a>'
+            "</amp-story-cta-layer></amp-story-page></amp-story></body></html>"
+        )
+        single = {
+            "tools/usage-tool.html": ("en-US", document("en", app_id)),
+            "de-DE/tools/usage-tool.html": ("de-DE", document("de-DE", app_id)),
+            "data/usage-data.html": ("en-US", document("en", app_id, main=False)),
+            "ja/tutorials/usage.html": ("ja", document("ja", app_id, main=False)),
+            "apps/claudeusagemini/decision/l/fr-FR/index.html": (
+                "fr-FR", document("fr-FR", app_id),
+            ),
+        }
+        stale_block = review.review_block(app_id, REVIEW, "en-US")
+        excluded = {
+            "tools/two-apps.html": document("en", app_id, other),
+            "tools/index.html": document("en", app_id),
+            "data/hidden.html": document("en", app_id, head=noindex),
+            "aa/tools/usage-tool.html": document("aa", app_id),
+            "apps/claudeusagemini/decision/l/aa/index.html": document("aa", app_id),
+            "stories/claudeusagemini.html": story,
+            "tools/no-app.html": document("en"),
+        }
+        with tempfile.TemporaryDirectory() as directory, mock.patch.dict(
+            os.environ, {stores.PROVIDER_TOKEN_ENV: PROVIDER},
+        ):
+            pages = Path(directory)
+            stale = pages / "tutorials" / "two-apps.html"
+            stale.parent.mkdir(parents=True)
+            stale.write_text(
+                document("en", app_id, other).replace(
+                    "</main>", f"{stale_block}\n</main>",
+                ),
+                encoding="utf-8",
+            )
+            for relative, source in {
+                **{key: value[1] for key, value in single.items()}, **excluded,
+            }.items():
+                path = pages / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(source, encoding="utf-8")
+            guide = pages / "guides" / "claudeusagemini.html"
+            guide.parent.mkdir()
+            guide.write_text(document("en", app_id), encoding="utf-8")
+            inventory = gen_smart_app_banners.SurfaceInventory(
+                targets={guide.resolve(): app_id},
+                app_count=1,
+                guide_pages=frozenset({guide.resolve()}),
+                answer_pages=frozenset(),
+                buyer_intent_pages=frozenset(),
+            )
+            with mock.patch.object(
+                gen_smart_app_banners, "build_surface_inventory",
+                return_value=inventory,
+            ):
+                result = surfaces.generate(
+                    pages, {"claudeusagemini"}, "https://example.test/site",
+                )
+                again = surfaces.generate(
+                    pages, {"claudeusagemini"}, "https://example.test/site",
+                )
+            counts = result["app_store_review_ctas"]
+            self.assertEqual(len(single), counts["review_only_pages"])
+            self.assertEqual(len(single) + 1, counts["pages"])
+            # The guide, the review-only pages and the stale block removal.
+            self.assertEqual(len(single) + 2, counts["changed_files"])
+            self.assertEqual(0, again["app_store_review_ctas"]["changed_files"])
+            self.assertEqual(1, result["smart_app_banners"]["guide_pages"])
+            self.assertEqual(1, result["app_store_qr_ctas"]["guide_pages"])
+            for relative, (locale, original) in single.items():
+                with self.subTest(page=relative):
+                    source = (pages / relative).read_text(encoding="utf-8")
+                    self.assertEqual(1, source.count(review.BLOCK_START))
+                    self.assertIn(html.escape(review.REVIEW_LABELS[locale]), source)
+                    self.assertIn(
+                        f'href="https://apps.apple.com/app/id{app_id}?action=write-review"',
+                        source,
+                    )
+                    self.assertEqual(
+                        original, review.strip_review(source).replace("\n", ""),
+                    )
+                    for marker in (
+                        gen_smart_app_banners.BLOCK_START,
+                        gen_smart_app_banners.MOBILE_CTA_BLOCK_START,
+                        gen_smart_app_banners.APP_STORE_QR_BLOCK_START,
+                        "app-store-share:start",
+                    ):
+                        self.assertNotIn(marker, source)
+            for relative, original in excluded.items():
+                with self.subTest(page=relative):
+                    self.assertEqual(original, (pages / relative).read_text(encoding="utf-8"))
+            self.assertNotIn(review.BLOCK_START, stale.read_text(encoding="utf-8"))
+
+    def test_review_only_page_locale(self):
+        pages = Path("/site")
+        cases = {
+            "tools/x.html": "en-US",
+            "ko/data/x.html": "ko",
+            "apps/mochi/decision/l/pt-BR/index.html": "pt-BR",
+            "apps/mochi/decision/l/aa/index.html": None,
+            "aa/tools/x.html": None,
+            "data/packages/x/index.html": None,
+        }
+        for relative, expected in cases.items():
+            with self.subTest(page=relative):
+                self.assertEqual(
+                    expected, review.review_page_locale(pages / relative, pages),
+                )
+        self.assertTrue(review.is_noindex('<meta content="noindex" name="robots">'))
+        self.assertFalse(review.is_noindex('<meta name="robots" content="index,follow">'))
+
     def test_cta_selectors_never_pick_the_review_link(self):
         download = f"https://apps.apple.com/us/app/id{USAGENOW}"
         source = review.render_review(

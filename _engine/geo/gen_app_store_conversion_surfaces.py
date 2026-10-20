@@ -165,6 +165,53 @@ def _render_target(
     )
 
 
+def _render_review_only(
+    path: Path,
+    *,
+    pages: Path,
+    live_ids: frozenset[str],
+    provider: str | None,
+    availability,
+):
+    """Review link alone for a review-only family page (no other surface).
+
+    Returns ``(updated, review_changed, app_id)``: ``updated`` is ``None``
+    when the page is unchanged, ``app_id`` is set only when the block is on.
+    Multi-App, non-live, noindex, non-store-locale and unavailable-market
+    pages lose a stale block and are otherwise left byte-identical.
+    """
+    source = path.read_text(encoding="utf-8")
+    locale = gen_app_store_review_ctas.review_page_locale(path, pages)
+    app_id = (
+        None
+        if locale is None or gen_app_store_review_ctas.is_noindex(source)
+        else gen_smart_app_banners.single_app_id(path, set(live_ids), source)
+    )
+    href = None
+    if (
+        app_id is not None
+        and gen_app_store_review_ctas.is_review_app(app_id)
+        and not market.is_unavailable(locale, app_id)
+    ):
+        href = final_store_url(
+            gen_app_store_review_ctas.review_target_url(app_id),
+            "", provider, locale=locale, availability=availability,
+            app_id=app_id,
+        )
+    if href is None:
+        current = gen_app_store_review_ctas.strip_review(source)
+        app_id = None
+    else:
+        current = gen_app_store_review_ctas.render_review(
+            path, source, app_id, href, locale,
+        )
+    changed = int(
+        gen_app_store_review_ctas.managed_block(current)
+        != gen_app_store_review_ctas.managed_block(source)
+    )
+    return (current if current != source else None), changed, app_id
+
+
 def _strip_surfaces(path: Path):
     """Remove every managed conversion block from a non-target page."""
     source = path.read_text(encoding="utf-8")
@@ -297,6 +344,36 @@ def generate(
         if updated is not None:
             path.write_text(updated, encoding="utf-8")
 
+    # Review-only families (tools, data, tutorials, App decision pages): the
+    # existing-user review link alone, from their own section list so the
+    # banner / CTA / QR / share inventory above is unchanged. Pages already
+    # owned by the surface inventory keep that pass's result.
+    review_only_items = sorted(
+        gen_app_store_review_ctas.review_only_pages(pages)
+        - set(targets)
+        - eligible_pages
+    )
+    review_only_installed: set[Path] = set()
+    for path, (updated, review, app_id) in zip(
+        review_only_items,
+        parallel_pages.ordered_map(
+            partial(
+                _render_review_only,
+                pages=pages,
+                live_ids=frozenset(str(APPSTORE[key]) for key in live_keys),
+                provider=provider,
+                availability=availability,
+            ),
+            review_only_items,
+        ),
+        strict=True,
+    ):
+        review_changed += review
+        if updated is not None:
+            path.write_text(updated, encoding="utf-8")
+        if app_id is not None:
+            review_only_installed.add(path)
+
     expected_ids = {
         app_id
         for path, app_id in conversion_targets.items()
@@ -367,7 +444,8 @@ def generate(
             "guide_pages": len(review_installed & guide_pages),
             "answer_pages": len(review_installed & answer_pages),
             "buyer_intent_pages": len(review_installed & buyer_intent_pages),
-            "pages": len(review_installed),
+            "review_only_pages": len(review_only_installed),
+            "pages": len(review_installed) + len(review_only_installed),
             "changed_files": review_changed,
         },
     }

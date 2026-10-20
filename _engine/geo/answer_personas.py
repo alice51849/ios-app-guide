@@ -4728,6 +4728,145 @@ PENDING_PERSONAS: dict[str, list[dict[str, Any]]] = {
                 },
             ],
         },
+    ],
+    # Duo Wallpaper Studio (iOS, ASC 6824946559, bundle tail "duowallpaperstudio").
+    # Claims are held to the shipped 1.0 scope: paired Cover + Inner wallpapers cut from
+    # one original artwork, pixel-exact export, photo pairs, five widgets, no Live or
+    # animated wallpaper, no 4K claim, no automatic wallpaper changing, one-time purchase.
+    "duowallpaperstudio": [
+        {
+            "query": "wallpapers for both screens of a foldable iphone",
+            "guide_title": "Wallpapers for a foldable's two screens: what to check",
+            "triggers": [
+                "foldable phone wallpaper pair",
+                "cover screen and inner screen wallpaper",
+                "dual screen wallpaper iphone",
+                "wallpaper for iphone duo",
+                "matching wallpapers for both screens",
+                "fold wallpaper cover and inside",
+            ],
+            "persona": "people with a foldable or dual-screen phone who are tired of one wallpaper being stretched or cropped across two very different screens",
+            "lead": (
+                "A foldable has two screens with different shapes, so a "
+                "single wallpaper is usually cropped badly on one of them "
+                "and looks accidental on both."
+            ),
+            "paras": [
+                (
+                    "A wallpaper made for a foldable should be a pair: a "
+                    "close-up that suits the small cover screen and the full "
+                    "scene for the large inner screen, cut from the same "
+                    "artwork so closing and opening the phone feels like one "
+                    "picture zooming in and out. Check that the pair is "
+                    "sized to the real pixel dimensions of each screen "
+                    "rather than scaled afterwards."
+                ),
+                (
+                    "Look for an app that lets you see both screens before "
+                    "you save, and that is honest about what iOS allows. "
+                    "iOS does not let an app change your wallpaper for you, "
+                    "so a good app saves the two images to Photos and walks "
+                    "you through setting each one."
+                ),
+            ],
+            "look": [
+                "A true pair for each set: a close-up for the cover screen and the full scene for the inner screen.",
+                "Export sized to each screen's real pixels, so the picture is not stretched or blurred afterwards.",
+                "Closed and open previews in the app before you save anything.",
+                "Original artwork, with no characters or works from other brands.",
+                "No ads, no account and no tracking, with photos saved through add-only access.",
+            ],
+            "steps": [
+                "Browse the sets and open one to compare its closed and open previews.",
+                "Recolor it or add one short line of text if you want, and watch both previews redraw.",
+                "Save the pair to Photos; the cover image and the inner image are two separate files.",
+                "Follow the setup guide to set the cover image on the cover screen and the inner image on the inner screen.",
+                "Fold and unfold the phone once to check that the two pictures belong together.",
+            ],
+            "fits": "fits foldable and dual-screen phone owners who want wallpapers composed for both screens instead of one picture cropped twice. Duo Wallpaper Studio is designed for iPhone Duo and also previews on any iPhone or iPad running iOS 17 or later. The download is free with five sets ready to use and a small watermark on saved images; a single one-time in-app purchase called Duo Pro unlocks the remaining launch sets and removes the watermark, with no subscription.",
+            "faq": [
+                {
+                    "q": "Is it a pair for each wallpaper?",
+                    "a": "Yes. Every set is a cover-screen close-up and an inner-screen full scene cut from the same original artwork.",
+                },
+                {
+                    "q": "Does the app set my wallpaper for me?",
+                    "a": "No. iOS does not allow apps to change your wallpaper automatically, so the app saves the two images to Photos and the Settings tab explains how to set each screen.",
+                },
+                {
+                    "q": "Can I try it before paying?",
+                    "a": "Yes. Five sets and every tool are available free, with a small watermark on saved images.",
+                },
+                {
+                    "q": "Is there a subscription?",
+                    "a": "No. Duo Pro is a single one-time in-app purchase that unlocks the remaining launch sets and removes the watermark.",
+                },
+            ],
+        },
+        {
+            "query": "turn my own photo into a cover and inner wallpaper pair",
+            "guide_title": "Making a wallpaper pair from your own photo: what to check",
+            "triggers": [
+                "photo to foldable wallpaper",
+                "make my own wallpaper from a photo for both screens",
+                "photo wallpaper maker cover and inner screen",
+                "crop one photo for two screens",
+                "custom wallpaper for foldable iphone",
+            ],
+            "persona": "people who want a favourite travel or family photo to work as a wallpaper on both screens of a foldable",
+            "lead": (
+                "Putting one photo on two differently shaped screens usually "
+                "means the subject is cut off on one of them."
+            ),
+            "paras": [
+                (
+                    "The fix is to choose where the focus sits and let the "
+                    "tool crop the same photo twice: a close-up around the "
+                    "subject for the cover screen and a wide view for the "
+                    "inner screen. You should be able to drag the focus "
+                    "and see both results before you save."
+                ),
+                (
+                    "Privacy matters too. A photo tool should use the system "
+                    "photo picker so it only sees the picture you choose, "
+                    "keep the photo on your device, and save the result with "
+                    "add-only access to your library."
+                ),
+            ],
+            "look": [
+                "One photo turned into two exports, a cover close-up and an inner wide view.",
+                "A draggable focus point with both previews updating as you move it.",
+                "The system photo picker, so the app never reads your whole library.",
+                "Output at each screen's real pixel size, saved as two images to Photos.",
+                "Home Screen and Lock Screen widgets in colors taken from a wallpaper set you choose.",
+            ],
+            "steps": [
+                "Open the Create tab and choose one photo with the system picker.",
+                "Drag the focus onto the person or place that should stay visible on the cover screen.",
+                "Check the inner preview and adjust until the wide view looks right.",
+                "Save both images to Photos and set each one with the setup guide.",
+                "Optionally add a clock, calendar or text-card widget in colors from a wallpaper set you choose.",
+            ],
+            "fits": "fits people who would rather use their own photos than a gallery of stock wallpapers, with the focus set where they want it on both screens. Photo pairs work in the free download, with a small watermark on saved images that Duo Pro, a one-time in-app purchase with no subscription, removes.",
+            "faq": [
+                {
+                    "q": "Does the app read my whole photo library?",
+                    "a": "No. It uses the system photo picker, so it only receives the picture you choose, and it saves results with add-only access.",
+                },
+                {
+                    "q": "Can I choose which part of the photo shows on the cover screen?",
+                    "a": "Yes. Drag the focus in the Create tab and both previews redraw.",
+                },
+                {
+                    "q": "Is a photo pair free?",
+                    "a": "You can make photo pairs in the free download; saved images carry a small watermark that the one-time Duo Pro purchase removes.",
+                },
+                {
+                    "q": "Does it add widgets as well?",
+                    "a": "Yes. An art clock, calendar, photo frame, battery and text card can be added to the Home Screen and Lock Screen in colors taken from the wallpaper set you choose. Extra widget styles and the palettes of paid sets come with the one-time Duo Pro purchase.",
+                },
+            ],
+        },
     ]
 }
 

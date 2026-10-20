@@ -151,6 +151,8 @@ SITUATIONS: dict[str, str] = {
     "studydown": "focus",
     "qrcodehalo": "utility",
     "claudeusagemini": "work",
+    "duowallpaperstudio": "creative",
+    "easyam": "utility",
 }
 DEFAULT_SITUATION = "utility"
 

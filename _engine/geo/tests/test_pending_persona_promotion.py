@@ -22,6 +22,7 @@ LAUNCH_CANDIDATES = {
     "gbago": ("6804564400", "GBAGo"),
     "studydown": ("6807335593", "Studydown"),
     "claudeusagemini": ("6818607603", "UsageNow"),
+    "duowallpaperstudio": ("6824946559", "Duo Wallpaper Studio"),
 }
 FIELDS = {"query", "guide_title", "triggers", "persona", "lead", "paras",
           "look", "steps", "fits", "faq"}
@@ -44,6 +45,10 @@ FORBIDDEN = {
                         "real-time"),
     "easyam": ("apple watch", "unlimited free", "android", "guaranteed",
                "never miss", "official holiday data from"),
+    "duowallpaperstudio": ("4k", "live wallpaper", "animated", "android",
+                           "unlimited free", "forever", "guaranteed",
+                           "changes your wallpaper automatically",
+                           "subscription required"),
 }
 REQUIRED = {
     "dbhalo": ("not a certified",),
@@ -55,6 +60,8 @@ REQUIRED = {
     "claudeusagemini": ("not affiliated with", "24-hour trial",
                         "one-time purchase", "no subscription"),
     "easyam": ("alarmkit", "workday", "offline", "no subscription"),
+    "duowallpaperstudio": ("iphone duo", "one-time", "no subscription",
+                           "add-only", "does not allow apps to change your wallpaper"),
 }
 
 

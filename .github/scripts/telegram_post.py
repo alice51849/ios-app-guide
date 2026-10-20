@@ -750,9 +750,9 @@ def compose_text(item, android=True, review=True, ct=None, legacy_play=False, ch
     else:
         play = play_store_url(item.get("app"), ct, channel_level=channel_level)
     links = f"👉 {url}" + (f"\n🤖 Google Play: {play}" if play else "")
-    # Existing-user review link, only for the review_links.json pairs (category
-    # leader with <= 20 ratings) in their own locale; no ct, no reward.
-    rate = review_links.for_official(item.get("app"), item.get("lang")) if review else None
+    # Existing-user review link: the review_links.json pair line, else the same neutral
+    # line for any App in a reviewed locale; one per post, no ct, no reward.
+    rate = review_links.for_official(item.get("app"), item.get("lang"), any_app=True) if review else None
     if rate:
         links += "\n📝 " + "\n".join(review_links.lines(rate))
     return (
@@ -1140,7 +1140,7 @@ def download_link_problems(item, text):
     ct = telegram_campaign(item)
     play = play_store_url(item.get("app"), ct)
     body = text
-    for line in review_links.lines(review_links.for_official(item.get("app"), item.get("lang"))):
+    for line in review_links.lines(review_links.for_official(item.get("app"), item.get("lang"), any_app=True)):
         body = body.replace(line, "")
     return DL.link_problems(body, f"https://apps.apple.com/app/id{item.get('app')}", play,
                             label=f"Telegram {item.get('app')}/{item.get('lang')}")

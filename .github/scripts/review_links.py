@@ -18,7 +18,13 @@ price, no superlative); the link is exactly
 https://apps.apple.com/app/id<N>?action=write-review (no pt / ct / mt: it is not
 a download CTA); a pair is matched by App Store ID, never by app key, so a
 renamed clip key (UsageNow ships as claudeusagemini) still matches.
+
+Telegram (12 top-3 formula, 2026-10-20: ratings are the gap on every App) also asks every other App's
+existing users, once per post, after the download links: any_app=True falls back to the same neutral line of
+gen_app_store_review_ctas.py REVIEW_LABELS (read from the _engine/geo mirror as a literal, never imported) in
+the post's locale. The other channels keep the pairs only.
 """
+import ast
 import json
 import re
 from functools import lru_cache
@@ -38,6 +44,49 @@ INCENTIVE_RE = re.compile(
     re.IGNORECASE,
 )
 SUPERLATIVE_RE = re.compile(r"\bbest\b|#\s?1\b|最好|最佳|第一|最高|최고|1위|beste", re.IGNORECASE)
+
+
+GEO_LABELS = HERE.parent.parent / "_engine" / "geo" / "gen_app_store_review_ctas.py"
+# A short clip / post locale ("en", "de") uses its official storefront locale's wording.
+LOCALE_VARIANT = {"ar": "ar-SA", "bn": "bn-BD", "de": "de-DE", "en": "en-US", "es": "es-ES", "fr": "fr-FR",
+                  "nb": "no", "nl": "nl-NL", "pt": "pt-BR", "sl": "sl-SI", "ur": "ur-PK"}
+
+
+def neutral(label):
+    return (isinstance(label, str) and bool(label.strip()) and "\n" not in label and "http" not in label
+            and len(label) <= 120 and not INCENTIVE_RE.search(label) and not SUPERLATIVE_RE.search(label))
+
+
+@lru_cache(maxsize=4)
+def any_app_labels(path=None):
+    """REVIEW_LABELS of gen_app_store_review_ctas.py that pass the same neutral-line rule ({} when unreadable)."""
+    try:
+        tree = ast.parse(Path(path or GEO_LABELS).read_text(encoding="utf-8"))
+    except (OSError, SyntaxError, ValueError):
+        return {}
+    for node in tree.body:
+        if (isinstance(node, ast.Assign) and len(node.targets) == 1
+                and getattr(node.targets[0], "id", "") == "REVIEW_LABELS"):
+            try:
+                labels = ast.literal_eval(node.value)
+            except ValueError:
+                return {}
+            return {k: v for k, v in labels.items() if isinstance(k, str) and neutral(v)}
+    return {}
+
+
+def any_app_label(locale):
+    labels, locale = any_app_labels(), locale or ""
+    base = locale.split("-")[0]
+    return labels.get(locale) or labels.get(LOCALE_VARIANT.get(locale, "")) or labels.get(LOCALE_VARIANT.get(base, base))
+
+
+def for_any_app(app_id, locale):
+    """{"label", "url"} for any App in a locale with a reviewed label, or None (no pair needed)."""
+    label = any_app_label(locale)
+    if not label or not APP_ID_RE.fullmatch(str(app_id or "")):
+        return None
+    return {"label": label, "url": review_url(app_id)}
 
 
 def review_url(app_id):
@@ -84,24 +133,26 @@ def _review(pair, cfg):
     return {"label": cfg["labels"][pair["official_locale"]], "url": review_url(pair["app_id"])}
 
 
-def for_official(app_id, locale, cfg=None):
-    """{"label", "url"} for a post in an official locale (telegram_post.py), or None."""
+def for_official(app_id, locale, cfg=None, any_app=False):
+    """{"label", "url"} for a post in an official locale (telegram_post.py), or None.
+    any_app=True: the neutral line for any other App too (Telegram)."""
     cfg = cfg or config()
     for pair in cfg["pairs"]:
         if pair["app_id"] == str(app_id) and pair["official_locale"] == locale:
             return _review(pair, cfg)
-    return None
+    return for_any_app(app_id, locale) if any_app else None
 
 
-def for_clip(clip, cfg=None):
-    """{"label", "url"} for a hook clip (clips.json entry: App ID from its store_url), or None."""
+def for_clip(clip, cfg=None, any_app=False):
+    """{"label", "url"} for a hook clip (clips.json entry: App ID from its store_url), or None.
+    any_app=True: the neutral line for any other App too (Telegram)."""
     cfg = cfg or config()
     app_id = store_app_id((clip or {}).get("store_url", ""))
     locale = (clip or {}).get("locale")
     for pair in cfg["pairs"]:
         if app_id and pair["app_id"] == app_id and pair["clip_locale"] == locale:
             return _review(pair, cfg)
-    return None
+    return for_any_app(app_id, locale) if any_app and app_id else None
 
 
 def lines(review):

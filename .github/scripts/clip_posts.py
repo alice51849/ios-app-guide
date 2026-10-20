@@ -214,9 +214,9 @@ def caption(clip, channel, variant=None, tag=None):
     elif play_store_url(ios_id(clip), "h7"):
         lines.append(play_label(clip))  # Threads: the links are in the first reply
     if channel == "telegram":
-        # Clickable existing-user review link, only for the review_links.json pairs in their locale
-        # (Threads posts carry none).
-        lines += review_links.lines(review_links.for_clip(clip))
+        # Clickable existing-user review link: the review_links.json pair line, else the same neutral
+        # line for any App in a reviewed locale (Threads posts carry none).
+        lines += review_links.lines(review_links.for_clip(clip, any_app=True))
     tags = SC.tags(clip, SC.TAG_LIMIT.get(channel, 5))
     if tags:
         lines += ["", " ".join(tags)]

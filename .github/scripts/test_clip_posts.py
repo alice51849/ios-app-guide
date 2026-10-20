@@ -784,6 +784,37 @@ class ReviewLinksTest(unittest.TestCase):
         other = clip("a", "ko")
         self.assertNotIn("write-review", C.caption(other, "telegram", {"id": "a", "lead": "훅"}))
 
+    def test_any_app_telegram_caption_gets_the_neutral_line_once_after_the_links(self):
+        c = self.pair_clip("6785004775", "de", "Süße Liste")  # Mochi in German: not a pair
+        variant = {"id": "a", "lead": c["hook"]}
+        self.assertIsNone(R.for_clip(c))                                  # pairs stay pairs for the other channels
+        cap = C.caption(c, "telegram", variant)
+        url = "https://apps.apple.com/app/id6785004775?action=write-review"
+        self.assertEqual(1, cap.count("action=write-review"))
+        self.assertIn(R.any_app_labels()["de-DE"] + "\n" + url, cap)
+        self.assertLess(cap.index("https://apps.apple.com/us/app/id6785004775"), cap.index(url))
+        self.assertEqual(C.post_qa.clip_problems(c, "telegram", cap, online=False), [])
+        for channel in ("instagram", "threads"):
+            self.assertNotIn("write-review", C.caption(c, channel, variant))
+        self.assertIsNone(R.for_clip(dict(c, locale="xx"), any_app=True))  # no reviewed label for that locale
+
+    def test_any_app_labels_are_the_geo_sentences_and_stay_neutral(self):
+        import ast
+        geo = Path(__file__).resolve().parents[2] / "_engine" / "geo" / "gen_app_store_review_ctas.py"
+        tree = ast.parse(geo.read_text(encoding="utf-8"))
+        labels = next(ast.literal_eval(n.value) for n in tree.body if isinstance(n, ast.Assign)
+                      and getattr(n.targets[0], "id", "") == "REVIEW_LABELS")
+        self.assertEqual(R.any_app_labels(), labels)
+        for label in labels.values():
+            self.assertTrue(R.neutral(label), label)
+        for bad in ("Leave 5 stars!", "Rate it ⭐", "給五星好評", "Rate it: https://x"):
+            self.assertFalse(R.neutral(bad))
+        self.assertEqual(R.any_app_labels.__wrapped__(geo.parent / "no-such-file.py"), {})
+        self.assertEqual(R.for_any_app("6785004775", "en")["url"],
+                         "https://apps.apple.com/app/id6785004775?action=write-review")
+        self.assertIsNone(R.for_any_app("1", "en"))
+        self.assertEqual(R.any_app_label("nb"), labels["no"])
+
 
 class VideoComplianceGateTest(unittest.TestCase):
     """Owner rule: only real screen recordings with no price / Free / Pro on screen are ever posted."""

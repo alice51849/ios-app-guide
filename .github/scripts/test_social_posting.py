@@ -2086,10 +2086,18 @@ class TelegramReviewLinkTests(unittest.TestCase):
         self.assertIn("ct=" + DL.app_campaign("telegram", self.USAGENOW) + "&", first)  # the download CTA stays first and attributed
         self.assertNotIn("ct=", review)
         self.assertIn("write-review", telegram_post.compose_text(self.item(self.USAGENOW, "en-US")))
+        # Every other App x locale carries the same neutral line (gen_app_store_review_ctas REVIEW_LABELS),
+        # once, after the download links (12 top-3 formula, 2026-10-20).
         for app, lang in ((self.USAGENOW, "de-DE"), (self.USAGENOW, "en-GB"), (self.MOCHI, "ko"),
                           ("6798814385", "zh-Hans")):
             with self.subTest(app=app, lang=lang):
-                self.assertNotIn("write-review", telegram_post.compose_text(self.item(app, lang)))
+                other = telegram_post.compose_text(self.item(app, lang))
+                url = f"https://apps.apple.com/app/id{app}?action=write-review"
+                self.assertEqual(1, other.count("action=write-review"))
+                self.assertIn("📝 " + telegram_post.review_links.any_app_label(lang) + "\n" + url, other)
+                self.assertLess(other.index("👉 https://apps.apple.com"), other.index(url))
+                self.assertEqual([], telegram_post.download_link_problems(self.item(app, lang), other))
+        self.assertNotIn("write-review", telegram_post.compose_text(self.item(self.MOCHI, "xx")))  # no reviewed label
         self.assertNotIn("write-review", telegram_post.compose_text(self.item(self.USAGENOW, "ko"), review=False))
         # The public-history reader still sees one App per post (both links name the same App ID).
         urls = [part for part in text.split() if part.startswith("https://apps.apple.com")]

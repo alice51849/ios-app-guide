@@ -14,6 +14,7 @@ import sys
 from official_locales import OFFICIAL_LOCALES
 from site_config import PUBLIC_SITE
 from live_app_manifest import runtime_manifest_path
+from publish_freshness_guard import PublishFreshnessBlocked, require_fresh
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PAGES = os.environ.get("GEO_PAGES", os.path.join(HERE, "pages"))
@@ -119,6 +120,14 @@ def reconcile_owned_feeds(env):
 
 
 def main():
+    if "--no-push" not in sys.argv:
+        # 2026-10-19 4bce9c82：過期的程式／資料推上指南站。入口先確認兩個 checkout
+        # 都跟 origin/main 一致，不一致就停止、不推送、寫紅燈警報檔。
+        try:
+            require_fresh(os.path.dirname(HERE), PAGES, caller="geo/publish.py")
+        except PublishFreshnessBlocked as error:
+            print(str(error), file=sys.stderr)
+            sys.exit(error.returncode)
     manifest_path = str(runtime_manifest_path())
     env = dict(
         os.environ, GEO_SITE=SITE, GROWTH_LIVE_MANIFEST=manifest_path,

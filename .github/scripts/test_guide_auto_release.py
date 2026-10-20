@@ -90,6 +90,25 @@ class DecideTests(unittest.TestCase):
         other_sha = [paired(conclusion="failure", sha="d" * 40)] * 2
         self.assertEqual("dispatch", ar.decide(self.pending, other_sha, GUIDE, trigger_ok=True))
 
+    def test_real_pages_runs_count_by_head_sha_not_title(self):
+        # pages.yml has no run-name: dispatched runs are titled with the workflow name.
+        def real(status="completed", conclusion="failure", sha=GUIDE):
+            return {"display_title": "Deploy static site to Pages", "head_sha": sha,
+                    "event": "workflow_dispatch", "status": status, "conclusion": conclusion}
+        self.assertTrue(ar.decide(self.pending, [real(status="in_progress", conclusion=None)], GUIDE,
+                                  trigger_ok=True).startswith("hold"))
+        self.assertEqual("dispatch", ar.decide(self.pending, [real()], GUIDE, trigger_ok=True))
+        self.assertIn("already failed", ar.decide(self.pending, [real(), real()], GUIDE, trigger_ok=True))
+        self.assertEqual("dispatch", ar.decide(self.pending, [real(sha="d" * 40)] * 2, GUIDE, trigger_ok=True))
+        self.assertEqual("dispatch", ar.decide(self.pending, [real(conclusion="success")] * 2, GUIDE,
+                                               trigger_ok=True))
+
+    def test_stuck_on_failures_turns_the_job_red(self):
+        self.assertEqual(1, ar.exit_code(f"hold: 2 paired releases of {GUIDE[:12]} already failed"))
+        for action in ("dispatched", "up_to_date", "hold: a paired release is already queued or running",
+                       "hold: gitlink bind failed (x)", "dispatch (dry run)"):
+            self.assertEqual(0, ar.exit_code(action))
+
     def test_failed_preflight_trigger_does_not_dispatch(self):
         self.assertIn("preflight", ar.decide(self.pending, [], GUIDE, trigger_ok=False))
 
@@ -158,6 +177,15 @@ class RunTests(unittest.TestCase):
         gh = self.gh()
         result = self.run_once(gh, git_runner=read_only_git)
         self.assertTrue(result["action"].startswith("hold: gitlink bind failed"))
+        self.assertFalse([argv for argv in gh.calls if argv[:3] == ["gh", "workflow", "run"]])
+        self.assertEqual("issue_created", result["issue"])
+
+    def test_untitled_pages_runs_of_this_guide_sha_stop_redispatch(self):
+        failed = {"display_title": "Deploy static site to Pages", "head_sha": GUIDE,
+                  "event": "workflow_dispatch", "status": "completed", "conclusion": "failure"}
+        gh = self.gh(runs=[failed, dict(failed)])
+        result = self.run_once(gh)
+        self.assertIn("already failed", result["action"])
         self.assertFalse([argv for argv in gh.calls if argv[:3] == ["gh", "workflow", "run"]])
         self.assertEqual("issue_created", result["issue"])
 

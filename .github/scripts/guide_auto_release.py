@@ -48,8 +48,17 @@ def paired_title(guide_sha: str) -> str:
 
 
 def paired_runs(gh: Gh) -> list[dict]:
-    runs = gh.runs("pages.yml", per_page=50, event="workflow_dispatch")
-    return [run for run in runs if str(run.get("display_title") or "").startswith(PAIRED_TITLE_PREFIX)]
+    # Every workflow_dispatch run of pages.yml is a release attempt.  pages.yml
+    # has no ``run-name``, so its runs are titled with the workflow name
+    # ("Deploy static site to Pages"), never PAIRED_TITLE_PREFIX; filtering on the
+    # title returned nothing and silently disabled both holds below (10-19..20:
+    # 14 failed dispatches in a row, each one reported as "dispatched").
+    return gh.runs("pages.yml", per_page=50, event="workflow_dispatch")
+
+
+def is_release_of(run: dict, guide_sha: str) -> bool:
+    """A dispatched Pages run builds the Guide main it started on (its head_sha)."""
+    return run.get("head_sha") == guide_sha or run.get("display_title") == paired_title(guide_sha)
 
 
 def decide(pending: list[gr.Pending], runs: list[dict], guide_sha: str, *, trigger_ok: bool) -> str:
@@ -60,7 +69,7 @@ def decide(pending: list[gr.Pending], runs: list[dict], guide_sha: str, *, trigg
         return "hold: a paired release is already queued or running"
     failed = [
         run for run in runs
-        if run.get("display_title") == paired_title(guide_sha)
+        if is_release_of(run, guide_sha)
         and run.get("status") == "completed" and run.get("conclusion") != "success"
     ]
     if len(failed) >= MAX_FAILED_PAIRED_PER_SHA:
@@ -216,6 +225,14 @@ def main() -> int:
     if summary:
         with open(summary, "a", encoding="utf-8") as handle:
             handle.write(f"## 指南站自動配對發布\n\n```json\n{text}\n```\n")
+    return exit_code(result["action"])
+
+
+def exit_code(action: str) -> int:
+    """Red when the release is stuck on failed paired runs, so a green job never hides it."""
+    if action.startswith("hold:") and "already failed" in action:
+        print(f"::error::指南站配對發布連續失敗，已停止重派：{action}")
+        return 1
     return 0
 
 

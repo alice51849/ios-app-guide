@@ -2,7 +2,7 @@
 title: "주파수 스펙트럼과 소음 노출량을 갖춘 iPhone용 소음 측정 앱"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dbhalo/decision/l/ko/index.html"
-modified: "2026-10-19"
+modified: "2026-10-20"
 app_store_id: "6806826699"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

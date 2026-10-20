@@ -2,7 +2,7 @@
 title: "G+Money Lite: ಪ್ರಯಾಣ ವೆಚ್ಚ — ವಾಚ್, ವಿಜೆಟ್‌ನಲ್ಲಿ ದಿನದ ಬಜೆಟ್ | iOS App"
 lang: "kn-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/kn-IN/index.html"
-modified: "2026-10-19"
+modified: "2026-10-20"
 app_store_id: "6793436548"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -15703,6 +15703,254 @@
   }
  },
  {
+  "key": "claudeusagemini",
+  "locale": "ja",
+  "market": "JP",
+  "term": "codex 使用制限",
+  "rank": 9,
+  "slug": "codex-usage-limit-alert-before-you-hit-it",
+  "loc": {
+   "title": "codex 使用制限：上限に当たる前に通知を受け取る設定",
+   "meta": "ChatGPT Codexの使用制限は5時間枠と週間枠の2つです。残りを何度も見に行くより、90や98など自分で決めたパーセンテージで通知が届くようにしておけば、作業の区切りを自分で選べます。",
+   "h1": "codex 使用制限：止まる前に知らせてもらう",
+   "lead": "上限に当たってから気づくと、作業の途中で手が止まります。気づくタイミングは、先に自分で決めておけます。",
+   "answer": "Codexの使用制限は5時間枠と週間枠を別々に見る必要があり、それぞれに90や98など気になるパーセンテージのアラートを作っておけば、上限に当たる前に作業の区切りをつけられます。",
+   "paras": [
+    "codex 使用制限で検索する方の多くは、長いタスクの途中で止まった経験があります。ChatGPT Codexには5時間枠と週間枠があり、別々に数えられます。5時間枠がまだ残っていても週間枠が先に尽きることがあり、どちらか一方だけを見ていると気づくのが遅れます。",
+    "UsageNowでは、5時間の上限、週間上限、またはすべての上限を選び、90や98など気になるパーセンテージを入力するだけでアラートを作れます。いくつでも追加でき、アラートは上限ごと・サイクルごとに1回だけ届くので、ロック画面が通知だらけになることはありません。リセットアラートをオンにすれば、上限が戻った瞬間にわかります。",
+    "通知が届いたあとに残りを確かめるのも、ホーム画面とロック画面のウィジェットやApple Watchのコンプリケーションで済みます。リセットまでのカウントダウンと正確なリセット時刻がお住まいの地域の表記で表示され、Claude、GitHub Copilot、Geminiの上限も同じ画面に並びます。サインインは各サービス公式のログインページで行い、サインイン情報はデバイスのキーチェーンに保存されます。"
+   ],
+   "look": [
+    "5時間枠と週間枠が別々に表示されるか",
+    "自分で決めたパーセンテージで通知を作れるか",
+    "同じ上限の通知が何度も届かないか",
+    "上限が戻ったときにも知らせてくれるか",
+    "サインイン情報がデバイスに残り、別のサーバを経由しないか"
+   ],
+   "steps": [
+    "ChatGPTの公式ログインページでサインインします。",
+    "5時間の上限、週間上限、またはすべての上限を選びます。",
+    "90や98など、作業の区切りをつけたいパーセンテージを入力してアラートを作ります。",
+    "リセットアラートをオンにして、上限が戻ったらすぐ再開できるようにします。",
+    "ホーム画面かロック画面にウィジェットを置き、通知が届いたら残りとリセット時刻を確認します。"
+   ],
+   "rows": [
+    [
+     "通知のタイミング",
+     "90や98など自分で決めた値",
+     "区切りのいいところで手を止められます"
+    ],
+    [
+     "通知の回数",
+     "上限ごと・サイクルごとに1回",
+     "ロック画面が通知で埋まりません"
+    ],
+    [
+     "リセット",
+     "戻った瞬間の通知と正確な時刻",
+     "いつ再開するかをすぐ決められます"
+    ]
+   ],
+   "fits": "UsageNowはCodex・Claude・Copilot・Geminiを毎日使う開発者に向いています。各プランの残りとリセット時刻をホーム画面・ロック画面のウィジェットとApple Watchのコンプリケーションで表示し、上限に届く前に自分で決めたパーセンテージで知らせます。24時間の無料トライアルのあとは1回限りの購入でUsageNow Proのロックを解除します。サブスクリプションはありません。",
+   "faq": [
+    [
+     "Codexの使用制限に当たる前に知る方法はありますか？",
+     "5時間枠と週間枠それぞれに、90や98など気になるパーセンテージのアラートを作っておけば、上限に当たる前に通知が届きます。"
+    ],
+    [
+     "通知が何度も届いてうるさくなりませんか？",
+     "アラートは上限ごと・サイクルごとに1回だけ届きます。ロック画面が同じ通知で埋まることはありません。"
+    ],
+    [
+     "UsageNowはサブスクリプションですか？",
+     "いいえ。24時間の無料トライアルですべての機能を試したあと、1回限りの購入でUsageNow Proのロックを解除します。サブスクリプションはありません。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Codex usage limit: get an alert before you hit it",
+   "meta": "ChatGPT Codex has two limits, a 5-hour window and a weekly window. Instead of checking again and again, set an alert at a percentage you choose, such as 90 or 98, and decide for yourself where to pause.",
+   "h1": "Codex usage limit: hear about it before it stops you",
+   "lead": "Find out at the limit and you are stopped mid-task. You can choose the moment you find out instead.",
+   "answer": "The Codex usage limit has to be watched as a 5-hour window and a weekly window, and an alert on each at a percentage you care about, such as 90 or 98, lets you wrap up before you hit it.",
+   "paras": [
+    "Most people searching for the Codex usage limit have been stopped partway through a long task. ChatGPT Codex counts a 5-hour window and a weekly window separately, and the weekly one can run out while the 5-hour one still has room, so watching only one of them means you notice too late.",
+    "In UsageNow you pick the 5-hour limit, the weekly limit or all limits, type a percentage such as 90 or 98, and the alert is set. Add as many as you like; each alert fires once per limit and cycle, so your Lock Screen does not fill up. Turn on the reset alert and you know the moment a limit is back.",
+    "When an alert arrives, checking what is left takes a glance at a Home Screen or Lock Screen widget or an Apple Watch complication, with a countdown to the reset and the exact reset time in your local format. Claude, GitHub Copilot and Gemini limits sit on the same screen. Sign-in happens on each service's official login page and stays in the device's Keychain."
+   ],
+   "look": [
+    "Whether the 5-hour and weekly windows are shown separately",
+    "Whether you can set alerts at a percentage you choose",
+    "Whether the same limit avoids alerting you over and over",
+    "Whether it also tells you when a limit is back",
+    "Whether sign-in stays on the device instead of passing through another server"
+   ],
+   "steps": [
+    "Sign in on ChatGPT's official login page.",
+    "Pick the 5-hour limit, the weekly limit or all limits.",
+    "Type the percentage where you want to wrap up, such as 90 or 98, to create the alert.",
+    "Turn on the reset alert so you can pick up again the moment a limit is back.",
+    "Put a widget on the Home Screen or Lock Screen and check what is left and the reset time when an alert arrives."
+   ],
+   "rows": [
+    [
+     "When you hear",
+     "A value you choose, such as 90 or 98",
+     "You stop at a natural break"
+    ],
+    [
+     "How often",
+     "Once per limit and cycle",
+     "Your Lock Screen does not fill up"
+    ],
+    [
+     "Reset",
+     "An alert when it is back, plus the exact time",
+     "You know right away when to resume"
+    ]
+   ],
+   "fits": "UsageNow is for developers who work with Codex, Claude, Copilot and Gemini daily: each plan's remaining share and reset time on Home Screen and Lock Screen widgets and Apple Watch complications, alerts at the percentage you choose before you hit a limit, a free 24-hour trial of everything, then a single one-time purchase of UsageNow Pro with no subscription.",
+   "faq": [
+    [
+     "Can I find out before I hit the Codex usage limit?",
+     "Create an alert on the 5-hour and weekly windows at a percentage you care about, such as 90 or 98, and it arrives before you hit the limit."
+    ],
+    [
+     "Will the alerts keep nagging me?",
+     "Each alert fires once per limit and cycle, so the same notification does not pile up on your Lock Screen."
+    ],
+    [
+     "Is UsageNow a subscription?",
+     "No. Try every feature with a free 24-hour trial, then unlock UsageNow Pro with a single one-time purchase. There is no subscription."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "claudeusagemini",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "claude 額度",
+  "rank": 1,
+  "slug": "claude-quota-check-whats-left-including-per-model-weekly-caps",
+  "loc": {
+   "title": "claude 額度：還剩多少怎麼查，連各模型的每週上限一起看",
+   "meta": "Claude 的額度不只一個數字：5 小時工作階段額度、每週額度，還有各模型個別的每週上限。把三個都放在主畫面小工具上，查額度不用再打開網頁，也不會被沒注意到的那一個擋下。",
+   "h1": "claude 額度：查剩多少，三個上限要一起看",
+   "lead": "明明 5 小時額度還有，卻還是被擋下來，通常是另一個上限先到了。",
+   "answer": "Claude 的額度要同時看 5 小時工作階段額度、每週額度和各模型個別的每週上限；把三者的剩餘量與重置時間放在主畫面或鎖定畫面小工具上，查額度只要看一眼。",
+   "paras": [
+    "搜尋 claude 額度的人，多半是想知道現在還剩多少、還能用多久。Claude 的額度分成 5 小時工作階段額度和每週額度，各模型另外還有個別的每週上限；只看其中一個，常常會被另一個先擋下來。查額度時三個一起看，才知道接下來的工作排不排得下。",
+    "UsageNow 在主畫面與鎖定畫面小工具顯示 Claude 的 5 小時額度、每週額度與各模型的每週上限，每次重置都有即時倒數，並依你所在地區的格式顯示確切重置時間。想看最新數字，點一下小工具就能更新；Apple Watch 複雜功能也看得到。",
+    "不想一直盯著看，可以自訂提醒：選 5 小時額度、每週額度或所有額度，輸入 90 或 98 這類百分比，每個額度在每個週期只提醒一次；開啟重置提醒，額度一恢復就馬上知道。登入在 Claude 官方登入頁面完成，登入資訊保存在裝置的鑰匙圈，沒有 UsageNow 伺服器。"
+   ],
+   "look": [
+    "5 小時額度和每週額度是否分開顯示",
+    "各模型個別的每週上限看不看得到",
+    "有沒有重置倒數和確切重置時間",
+    "能不能不開網頁，在主畫面或鎖定畫面直接看",
+    "登入資訊是否只留在裝置上"
+   ],
+   "steps": [
+    "在 Claude 官方登入頁面登入你的帳號。",
+    "在主畫面或鎖定畫面加上小工具，選你要的尺寸。",
+    "看 5 小時額度、每週額度和各模型的每週上限，哪一個剩最少。",
+    "看剩最少那一個的重置倒數，決定接下來的工作怎麼排。",
+    "設定 90 或 98 的提醒，再開啟重置提醒。"
+   ],
+   "rows": [
+    [
+     "5 小時額度",
+     "剩餘量與重置倒數",
+     "決定眼前這段工作做不做得完"
+    ],
+    [
+     "每週額度",
+     "剩餘量與確切重置時間",
+     "決定這週還能排多少工作"
+    ],
+    [
+     "各模型每週上限",
+     "每個模型分開顯示",
+     "常用的模型可能比總額度先用完"
+    ]
+   ],
+   "fits": "UsageNow 適合每天用 Claude、Codex、Copilot、Gemini 寫程式的開發者：每個方案還剩多少、什麼時候重置，都顯示在主畫面與鎖定畫面小工具和 Apple Watch 複雜功能上；先用 24 小時免費試用體驗全部功能，之後一次性購買解鎖 UsageNow Pro，沒有訂閱。",
+   "faq": [
+    [
+     "Claude 額度在哪裡查？",
+     "把 5 小時額度、每週額度和各模型的每週上限放在主畫面或鎖定畫面小工具上，看一眼就知道還剩多少，不用打開網頁。"
+    ],
+    [
+     "5 小時額度還有，為什麼還是被擋？",
+     "可能是每週額度或某個模型的每週上限先用完了。這幾個上限各自計算，要一起看。"
+    ],
+    [
+     "UsageNow 是訂閱制嗎？",
+     "不是。先用 24 小時免費試用體驗全部功能，之後一次性購買解鎖 UsageNow Pro，沒有訂閱。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Claude quota: check what is left, per-model weekly caps included",
+   "meta": "Your Claude quota is more than one number: a 5-hour session limit, a weekly limit and separate weekly caps per model. Put all three on a Home Screen widget and checking takes no web page, and the one you were not watching will not stop you.",
+   "h1": "Claude quota: read all three limits together",
+   "lead": "The 5-hour limit still has room and you get stopped anyway. Usually another limit got there first.",
+   "answer": "Your Claude quota has to be read as the 5-hour session limit, the weekly limit and the per-model weekly caps together; keep what is left and the reset time for each on a Home Screen or Lock Screen widget and checking takes one glance.",
+   "paras": [
+    "Most people searching for their Claude quota want to know how much is left and how long it will last. Claude splits it into a 5-hour session limit and a weekly limit, and each model also has its own weekly cap; watch only one and another often stops you first. Read all three together to know whether the next piece of work fits.",
+    "UsageNow shows Claude's 5-hour limit, weekly limit and per-model weekly caps on Home Screen and Lock Screen widgets, with a live countdown to every reset and the exact reset time in your local format. Tap the widget to refresh when you want the latest numbers; Apple Watch complications show them too.",
+    "If you would rather not keep looking, set your own alerts: pick the 5-hour limit, the weekly limit or all limits and type a percentage such as 90 or 98; each fires once per limit and cycle. Turn on the reset alert to know the moment a limit is back. Sign-in happens on Claude's official login page and stays in the device's Keychain; there is no UsageNow server."
+   ],
+   "look": [
+    "Whether the 5-hour and weekly limits are shown separately",
+    "Whether per-model weekly caps are visible",
+    "Whether there is a reset countdown and an exact reset time",
+    "Whether you can see it on the Home Screen or Lock Screen without opening a page",
+    "Whether sign-in stays on the device"
+   ],
+   "steps": [
+    "Sign in on Claude's official login page.",
+    "Add a widget to the Home Screen or Lock Screen in the size you want.",
+    "Look at the 5-hour limit, the weekly limit and the per-model weekly caps to see which has the least left.",
+    "Check that one's reset countdown and plan the next piece of work around it.",
+    "Set an alert at 90 or 98, then turn on the reset alert."
+   ],
+   "rows": [
+    [
+     "5-hour limit",
+     "What is left and the reset countdown",
+     "Tells you whether the task at hand will finish"
+    ],
+    [
+     "Weekly limit",
+     "What is left and the exact reset time",
+     "Tells you how much more fits this week"
+    ],
+    [
+     "Per-model weekly caps",
+     "Each model shown separately",
+     "The model you use most can run out before the overall limit"
+    ]
+   ],
+   "fits": "UsageNow is for developers who work with Claude, Codex, Copilot and Gemini daily: each plan's remaining share and reset time on Home Screen and Lock Screen widgets and Apple Watch complications, a free 24-hour trial of everything, then a single one-time purchase of UsageNow Pro with no subscription.",
+   "faq": [
+    [
+     "Where do I check my Claude quota?",
+     "Put the 5-hour limit, the weekly limit and the per-model weekly caps on a Home Screen or Lock Screen widget and one glance tells you what is left, with no web page to open."
+    ],
+    [
+     "The 5-hour limit has room, so why am I stopped?",
+     "The weekly limit or one model's weekly cap may have run out first. Each limit is counted on its own, so read them together."
+    ],
+    [
+     "Is UsageNow a subscription?",
+     "No. Try every feature with a free 24-hour trial, then unlock UsageNow Pro with a single one-time purchase. There is no subscription."
+    ]
+   ]
+  }
+ },
+ {
   "key": "zipbox",
   "locale": "zh-Hant",
   "market": "TW",

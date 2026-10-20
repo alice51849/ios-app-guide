@@ -160,6 +160,32 @@ LABELS = {
         "fits": "متى يناسبك {name}",
         "faq": "أسئلة شائعة",
     },
+    # 2026-10-20 頭部詞答案頁:馬來西亞、印尼、斯洛伐克的頭部詞落在這三個語系目錄
+    # (目錄裡已有同款 answers 頁可當結構供體)。
+    "ms": {
+        "look": "Perkara yang perlu disemak sebelum memilih",
+        "steps": "Langkah yang benar-benar berkesan",
+        "table": "Perbandingan ringkas",
+        "cols": ("Keperluan", "Apa yang perlu disemak", "Mengapa penting"),
+        "fits": "Bila {name} sesuai",
+        "faq": "Soalan lazim",
+    },
+    "id": {
+        "look": "Yang perlu dicek sebelum memilih",
+        "steps": "Langkah yang benar-benar berhasil",
+        "table": "Perbandingan singkat",
+        "cols": ("Kebutuhan", "Yang perlu dicek", "Kenapa penting"),
+        "fits": "Kapan {name} cocok",
+        "faq": "Pertanyaan umum",
+    },
+    "sk": {
+        "look": "Čo si overiť pred výberom",
+        "steps": "Postup, ktorý naozaj funguje",
+        "table": "Rýchle porovnanie",
+        "cols": ("Potreba", "Čo overiť", "Prečo na tom záleží"),
+        "fits": "Kedy sa hodí {name}",
+        "faq": "Časté otázky",
+    },
 }
 
 # 「品類需求語境導免費門」的唯一例外:付費買斷語境(使用者搜的就是「一次購買／

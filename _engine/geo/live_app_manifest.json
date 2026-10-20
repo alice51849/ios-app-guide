@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 11,
-  "roster_digest": "15b66ce58723f2f232a1fb7fabb382ec541c6c97925cbc351815601e8a3bde9d",
+  "revision": 12,
+  "roster_digest": "acd2b3a5d6f969a00f68ca6e6db0ae211afe435a202ef66e5abcebb7c06e268a",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -47,6 +47,10 @@
     "dbhalo": {
       "app_id": "6806826699",
       "name": "dB Halo"
+    },
+    "easyam": {
+      "app_id": "6821790092",
+      "name": "EasyAM"
     },
     "gmoney": {
       "app_id": "6755782939",

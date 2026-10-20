@@ -2,7 +2,7 @@
 title: "サブスクリプションなしのシンプルなToDoリストアプリiPhone版おすすめ"
 lang: "ja"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/ja/index.html"
-modified: "2026-10-19"
+modified: "2026-10-20"
 app_store_id: "6785004775"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"
@@ -19,7 +19,7 @@ publisher: "Lumi Studio"
 - 広告なし
 - Apple Watch
 - App Store · 無料
-- ★ 3.0/5 · 1
+- ★ 3.5/5 · 2
 
 [App StoreでMochiを入手 →](https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 

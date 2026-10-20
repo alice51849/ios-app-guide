@@ -2,9 +2,9 @@
   "schema_version": 1,
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "es-MX",
-  "dateModified": "2026-10-19",
-  "content_digest": "8227e4c40b0aa873cbaed9fbb75189f6fe9f9492a9eeaad57261be4ea047499d",
-  "generation_digest": "30f05dfd5432007545b1c731c574b482dac3a8b358b4cd4b7966893ffd63ed6c",
+  "dateModified": "2026-10-20",
+  "content_digest": "610ac599cdac3a6eb200ce4863ada524c3898d54316b5333ddd76624dd098649",
+  "generation_digest": "33e84ca012dc36f9d2f42e5bf73f5a868c680e0794de9da021b07f962363bd1e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
@@ -1731,7 +1731,8 @@
         "Sin cuenta",
         "Sin anuncios",
         "Apple Watch",
-        "App Store · Gratis"
+        "App Store · Gratis",
+        "★ 4.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/es-MX/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/es-MX/index.html",
@@ -1744,7 +1745,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "MXN",
-        "formatted_price": "Gratis"
+        "formatted_price": "Gratis",
+        "rating_value": 4.0,
+        "rating_count": 1
       },
       "guide_cta_label": "Lee la guía completa",
       "publisher_disclosure": "Guía escrita por Lumi Studio, el desarrollador de la app. Los nombres de las apps son marcas de sus dueños y se usan solo para identificarlas. Para decisiones sobre documentos, salud, escuela y productividad, revisa los requisitos oficiales cuando aplique.",

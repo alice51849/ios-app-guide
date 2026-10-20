@@ -2,7 +2,7 @@
 title: "在 iPhone 上無廣告開啟 RAR 與 7z 檔的付費 App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/zipbox/decision/l/zh-Hant/index.html"
-modified: "2026-10-19"
+modified: "2026-10-20"
 app_store_id: "6806776579"
 verified_live: true
 purchase_model: "paid_upfront"

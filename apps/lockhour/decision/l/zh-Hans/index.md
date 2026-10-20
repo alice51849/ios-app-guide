@@ -2,7 +2,7 @@
 title: "学习时屏蔽社交媒体的最佳 iPhone App"
 lang: "zh-Hans"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/zh-Hans/index.html"
-modified: "2026-10-19"
+modified: "2026-10-20"
 app_store_id: "6780107485"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

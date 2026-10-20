@@ -2,7 +2,7 @@
 title: "Lumi हवामान: आजचा अंदाज — बाहेर जाण्याचा स्कोअर व कपडे | iOS App"
 lang: "mr-IN"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiweather/decision/l/mr-IN/index.html"
-modified: "2026-10-19"
+modified: "2026-10-20"
 app_store_id: "6779552704"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

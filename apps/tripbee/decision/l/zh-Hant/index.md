@@ -2,7 +2,7 @@
 title: "行程規劃推薦 App(iPhone)"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/zh-Hant/index.html"
-modified: "2026-10-19"
+modified: "2026-10-20"
 app_store_id: "6787754435"
 verified_live: true
 purchase_model: "paid_upfront"

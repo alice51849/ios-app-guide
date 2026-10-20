@@ -2,7 +2,7 @@
 title: "OnePage PPT: AI 발표자료 — 피피티 만들기·슬라이드 자동 생성 | iOS App"
 lang: "ko"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/ko/index.html"
-modified: "2026-10-19"
+modified: "2026-10-20"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

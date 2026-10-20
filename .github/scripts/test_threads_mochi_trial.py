@@ -34,14 +34,18 @@ PRICE_WORDS = re.compile(r"[$€£¥￥₩]|\d+\s?(?:元|円|원|usd|dollars?)|\
 
 
 class TrialFileTests(unittest.TestCase):
-    def test_seven_entries_every_other_day_inside_the_trial(self):
+    def test_entries_every_day_from_10_22_inside_the_trial(self):
+        # 2026-10-20 (GE ops/company/mochi_no1_strategy.md C.1): one of the 3 Threads posts a day goes to Mochi.
+        # 10-21 stays empty so the 10-20 entry keeps its make-up day; daily from 10-22 to the end of the trial.
         self.assertEqual("mochi", TRIAL.get("app_key"))
         self.assertEqual(MOCHI, DL.app_store_id(TRIAL.get("app_store")))
         days = [dt.date.fromisoformat(p["date"]) for p in POSTS]
-        self.assertEqual(7, len(days))
+        self.assertEqual(13, len(days))
         self.assertEqual(sorted(set(days)), days)
         self.assertTrue(all(START <= d <= END for d in days), days)
-        self.assertTrue(all((b - a).days == 2 for a, b in zip(days, days[1:])), days)
+        self.assertTrue(all(1 <= (b - a).days <= 2 for a, b in zip(days, days[1:])), days)
+        self.assertEqual(dt.date(2026, 10, 22), days[1])
+        self.assertTrue(all((b - a).days == 1 for a, b in zip(days[1:], days[2:])), days)
 
     def test_each_entry_is_ready_to_post(self):
         seen = set()
@@ -283,8 +287,10 @@ class TrialSlotTests(MainHarness):
                 for i in range(2)}
         self.assertEqual({"th_mochi_en_01"}, days)
         self.assertEqual("th_mochi_ko_01", threads_post.trial_window_post(dt.date(2026, 10, 22), TRIAL)["ct"])
-        self.assertEqual("th_mochi_en_03", threads_post.trial_window_post(dt.date(2026, 11, 2), TRIAL)["ct"])
-        self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 11, 3), TRIAL))
+        self.assertEqual("th_mochi_en_03", threads_post.trial_window_post(dt.date(2026, 11, 1), TRIAL)["ct"])
+        self.assertEqual("th_mochi_zh_02", threads_post.trial_window_post(dt.date(2026, 10, 23), TRIAL)["ct"])
+        self.assertEqual("th_mochi_zh_03", threads_post.trial_window_post(dt.date(2026, 11, 3), TRIAL)["ct"])
+        self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 11, 4), TRIAL))
         self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 10, 19), TRIAL))
         self.assertIsNone(threads_post.trial_window_post(None, TRIAL))
 

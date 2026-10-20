@@ -748,7 +748,7 @@ class ReviewLinkFeedTest(unittest.TestCase):
         it = S.clip_item("claudeusagemini/ko", pair_clip(), "youtube", DAY)
         self.assertEqual(it["review"]["url"], REVIEW_URL)
         self.assertEqual(it["review"]["label"], S.review_links.config()["labels"]["ko"])
-        self.assertNotIn("review", S.clip_item("claudeusagemini/ja", pair_clip("ja", "また上限？"), "youtube", DAY))
+        self.assertNotIn("review", S.clip_item("claudeusagemini/de", pair_clip("de", "Limit erreicht?"), "youtube", DAY))
         self.assertNotIn("review", S.clip_item("a/ko", clip("a", "ko"), "youtube", DAY))
         self.assertEqual(S.public(it, "youtube")["review"], it["review"])  # feed.json keeps it
 

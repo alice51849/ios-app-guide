@@ -703,17 +703,22 @@ class ReviewLinksTest(unittest.TestCase):
 
     PAIRS = {("6818607603", "kr"), ("6806826699", "de"), ("6798814385", "tw"), ("6798814385", "kr"),
              ("6779552704", "de"), ("6818607603", "us"), ("6782275018", "jp"), ("6773017109", "us"),
-             ("6781337213", "kr")}
+             ("6781337213", "kr"),
+             # 2026-10-20 top10_targets.json (means 09): top-10 rivals under 1,000 ratings
+             ("6802423998", "kr"), ("6802423998", "jp"), ("6802423998", "tw"), ("6782251621", "tw"),
+             ("6778748533", "tw"), ("6814035888", "tw"), ("6814035888", "jp"), ("6818607603", "jp"),
+             ("6773017109", "tw")}
 
     @staticmethod
     def pair_clip(app_id, locale, hook):
         return dict(clip("claudeusagemini", locale), hook=hook, name="UsageNow", search="UsageNow",
                     store_url=f"https://apps.apple.com/us/app/id{app_id}?pt=118326163&ct=h7_x&mt=8")
 
-    def test_exactly_the_nine_pairs_with_their_own_locale(self):
+    def test_exactly_the_listed_pairs_with_their_own_locale(self):
         cfg = R.config()
         self.assertEqual({(p["app_id"], p["country"]) for p in cfg["pairs"]}, self.PAIRS)
-        self.assertTrue(all(p["top1_ratings"] <= 20 for p in cfg["pairs"]))
+        self.assertTrue(all(p["top1_ratings"] <= 20 if "top1_ratings" in p else p["weakest_top10_ratings"] < 1000
+                            for p in cfg["pairs"]))
         country_locale = {"kr": ("ko", "ko"), "de": ("de-DE", "de"), "tw": ("zh-Hant", "zh-Hant"),
                           "us": ("en-US", "en"), "jp": ("ja", "ja")}
         for p in cfg["pairs"]:
@@ -750,7 +755,7 @@ class ReviewLinksTest(unittest.TestCase):
     def test_matched_by_app_id_and_locale_never_by_key(self):
         self.assertIsNotNone(R.for_clip(self.pair_clip("6818607603", "ko", "AI 한도 초과?")))  # key claudeusagemini
         self.assertIsNotNone(R.for_clip(self.pair_clip("6818607603", "en", "Hit your AI limit?")))
-        self.assertIsNone(R.for_clip(self.pair_clip("6818607603", "ja", "上限？")))       # JP leader has 11,602
+        self.assertIsNone(R.for_clip(self.pair_clip("6818607603", "de", "Limit erreicht?")))  # DE: not a pair
         self.assertIsNone(R.for_clip(self.pair_clip("6785004775", "en", "Cute list")))  # Mochi: not a pair
         self.assertIsNone(R.for_clip(clip("a", "en")))
         self.assertEqual(R.for_official("6798814385", "zh-Hant")["url"],

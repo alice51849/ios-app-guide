@@ -1,7 +1,7 @@
 {
  "schema": "lumi.review-links/v1",
- "note": "Existing-user App Store review link (https://apps.apple.com/app/id<N>?action=write-review) on social posts, only for the App x country pairs whose category leader has 20 ratings or fewer (00_GrowthEngine reports/top1_gap_2026-10-16.md, common conclusion 1): one to three ratings can flip the category there. One neutral sentence per locale, reused verbatim from 00_GrowthEngine geo/gen_app_store_review_ctas.py REVIEW_LABELS: no reward, no star prompt, no price, no superlative. The link never carries pt/ct/mt (it is not a download CTA). official_locale matches telegram_post.py items, clip_locale matches clips.json clips; a pair is matched by App Store ID, never by app key.",
- "source": "reports/top1_gap_2026-10-16.md (2026-10-16)",
+ "note": "Existing-user App Store review link (https://apps.apple.com/app/id<N>?action=write-review) on social posts, only for the App x country pairs whose category leader has 20 ratings or fewer (00_GrowthEngine reports/top1_gap_2026-10-16.md, common conclusion 1): one to three ratings can flip the category there. Since 2026-10-20 also the 00_GrowthEngine ops/company/top10_targets.json pairs marked for 09 (a top-10 rival under 1,000 ratings; weakest_top10_ratings). One neutral sentence per locale, reused verbatim from 00_GrowthEngine geo/gen_app_store_review_ctas.py REVIEW_LABELS: no reward, no star prompt, no price, no superlative. The link never carries pt/ct/mt (it is not a download CTA). official_locale matches telegram_post.py items, clip_locale matches clips.json clips; a pair is matched by App Store ID, never by app key.",
+ "source": "reports/top1_gap_2026-10-16.md (2026-10-16); 00_GrowthEngine ops/company/top10_targets.json (2026-10-20, means 09: top-10 rivals under 1,000 ratings)",
  "pairs": [
   {"app": "UsageNow", "app_id": "6818607603", "country": "kr", "official_locale": "ko", "clip_locale": "ko", "keyword": "claude 사용량", "top1_ratings": 0},
   {"app": "dB Halo", "app_id": "6806826699", "country": "de", "official_locale": "de-DE", "clip_locale": "de", "keyword": "lärmmessgerät", "top1_ratings": 0},
@@ -11,7 +11,16 @@
   {"app": "UsageNow", "app_id": "6818607603", "country": "us", "official_locale": "en-US", "clip_locale": "en", "keyword": "claude usage", "top1_ratings": 5},
   {"app": "Unblurry", "app_id": "6782275018", "country": "jp", "official_locale": "ja", "clip_locale": "ja", "keyword": "ぼやけた 写真 修正", "top1_ratings": 8},
   {"app": "Lumi Bopomofo", "app_id": "6773017109", "country": "us", "official_locale": "en-US", "clip_locale": "en", "keyword": "bopomofo", "top1_ratings": 14},
-  {"app": "CV Desk", "app_id": "6781337213", "country": "kr", "official_locale": "ko", "clip_locale": "ko", "keyword": "이력서", "top1_ratings": 18}
+  {"app": "CV Desk", "app_id": "6781337213", "country": "kr", "official_locale": "ko", "clip_locale": "ko", "keyword": "이력서", "top1_ratings": 18},
+  {"app": "BattAI", "app_id": "6802423998", "country": "kr", "official_locale": "ko", "clip_locale": "ko", "keyword": "배터리", "weakest_top10_ratings": 1},
+  {"app": "BattAI", "app_id": "6802423998", "country": "jp", "official_locale": "ja", "clip_locale": "ja", "keyword": "バッテリー 劣化", "weakest_top10_ratings": 0},
+  {"app": "BattAI", "app_id": "6802423998", "country": "tw", "official_locale": "zh-Hant", "clip_locale": "zh-Hant", "keyword": "電池", "weakest_top10_ratings": 0},
+  {"app": "Cyca", "app_id": "6782251621", "country": "tw", "official_locale": "zh-Hant", "clip_locale": "zh-Hant", "keyword": "受孕期", "weakest_top10_ratings": 0},
+  {"app": "Lumi Letters Lite", "app_id": "6778748533", "country": "tw", "official_locale": "zh-Hant", "clip_locale": "zh-Hant", "keyword": "兒童 字母", "weakest_top10_ratings": 0},
+  {"app": "Stay Clock", "app_id": "6814035888", "country": "tw", "official_locale": "zh-Hant", "clip_locale": "zh-Hant", "keyword": "床頭時鐘", "weakest_top10_ratings": 0},
+  {"app": "Stay Clock", "app_id": "6814035888", "country": "jp", "official_locale": "ja", "clip_locale": "ja", "keyword": "フリップ時計", "weakest_top10_ratings": 0},
+  {"app": "UsageNow", "app_id": "6818607603", "country": "jp", "official_locale": "ja", "clip_locale": "ja", "keyword": "claude 使用量", "weakest_top10_ratings": 0},
+  {"app": "Lumi Bopomofo", "app_id": "6773017109", "country": "tw", "official_locale": "zh-Hant", "clip_locale": "zh-Hant", "keyword": "學注音", "weakest_top10_ratings": 0}
  ],
  "labels": {
   "de-DE": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",

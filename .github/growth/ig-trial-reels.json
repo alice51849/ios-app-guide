@@ -1,5 +1,5 @@
 {
-  "note": "Instagram Trial Reels (trial_params, clip_posts.trial_plan): shown to non-followers first; SS_PERFORMANCE shares to followers automatically when it performs well. Every Reel that tried it is marked ig_trial in clip-posts.json (result trial = accepted, fallback = refused and posted as an ordinary Reel) and counts toward max_posts. First check: one Cute To-Do List Reel from 2026-10-21; raise max_posts / add apps once the first one reads back as a trial.",
+  "note": "Instagram Trial Reels (trial_params, clip_posts.trial_plan): shown to non-followers first; SS_PERFORMANCE shares to followers automatically when it performs well. Every Reel that tried it is marked ig_trial in clip-posts.json (result trial = accepted; refused = refused and posted as an ordinary Reel; transient = server/network error or rate limit, posted as an ordinary Reel, not counted); trial and refused count toward max_posts, per app. First check: one Cute To-Do List Reel from 2026-10-21; raise max_posts / add apps once the first one reads back as a trial.",
   "enabled": true,
   "apps": ["mochi"],
   "start": "2026-10-21",

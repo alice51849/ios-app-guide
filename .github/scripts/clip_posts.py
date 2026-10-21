@@ -309,32 +309,49 @@ def trial_plan(clip, day=None, posts=None, cfg=None):
     Trial Reels (Instagram API, create media, "Applies to all versions" since 2025-12-03) are shown to
     non-followers first; graduation_strategy SS_PERFORMANCE shares one with followers automatically when it
     performs well. ig-trial-reels.json switches it on per app from a start date (the slot's date) for at most
-    max_posts Reels: every Reel whose try got an answer (accepted, or refused and posted as an ordinary Reel) is
-    marked "ig_trial" in clip-posts.json and counts, so the first check is one Reel and widening it is a config
+    max_posts Reels per app: every Reel whose try got a clear answer (result "trial" = accepted, "refused" =
+    refused and posted as an ordinary Reel) is marked "ig_trial" in clip-posts.json and counts; "transient" (server
+    or network error, rate limit, not ready) does not. So the first check is one Reel and widening it is a config
     change. Any config problem turns the trial off, it never blocks the post."""
     try:
         if cfg is None:
             cfg = json.loads(IG_TRIAL.read_text(encoding="utf-8"))
         strategy = cfg.get("graduation_strategy", "SS_PERFORMANCE")
         apps = cfg.get("apps")
-        if not cfg.get("enabled") or not isinstance(apps, list) or clip.get("app") not in apps \
+        if cfg.get("enabled") is not True or not isinstance(apps, list) or clip.get("app") not in apps \
                 or strategy not in TRIAL_STRATEGIES:
             return None
         day = day or dt.datetime.now(dt.timezone.utc).date()
         if cfg.get("start") and day < dt.date.fromisoformat(cfg["start"]):
             return None
-        limit = int(cfg.get("max_posts", 1))
+        limit = cfg.get("max_posts", 1)
+        if not isinstance(limit, int) or isinstance(limit, bool):
+            return None
         posts = posted_log() if posts is None else posts
     except (OSError, ValueError, TypeError, AttributeError):
         return None
-    tried = sum(1 for p in posts if p.get("channel") == "instagram"
+    prefix = f"{clip.get('app')}/"
+    tried = sum(1 for p in posts if p.get("channel") == "instagram" and str(p.get("clip", "")).startswith(prefix)
                 and (p.get("ig_trial") or {}).get("result") in COUNTED)
     return {"graduation_strategy": strategy} if tried < limit else None
 
 
+NOT_READY = {9007, 2207027}  # "media not ready for publishing": timing, not a refusal
+
+
 def _refusal(exc):
-    """True when Instagram answered with an error object (HTTP 4xx): the call did nothing on its side."""
-    return bool(re.match(r"HTTP 4\d\d\b", str(exc)))
+    """True when Instagram answered with a lasting error object (HTTP 4xx that is not a rate limit, a transient
+    error or "not ready"): a refusal of the trial that uses up the try. False = transient."""
+    text = str(exc)
+    if not re.match(r"HTTP 4\d\d\b", text) or re.match(r"HTTP (408|429)\b", text) or volume_ramp.is_throttle_error(exc):
+        return False
+    err = volume_ramp._error_json(text)
+    err = err.get("error") if isinstance(err.get("error"), dict) else err
+    try:
+        code = int(err.get("code") or 0)
+    except (TypeError, ValueError, AttributeError):
+        code = 0
+    return not (code in NOT_READY or code < 0 or (isinstance(err, dict) and err.get("is_transient")))
 
 
 def _reel(user, fields, token, wait, tries):
@@ -353,11 +370,11 @@ def _reel(user, fields, token, wait, tries):
 def _publish_reel(user, fields, token, trial, wait=5, tries=60):
     """Publish the Reel, as a Trial Reel first when `trial` is set; (media id, ig_trial note or None).
 
-    A trial that is refused (an HTTP 4xx on create or publish: account not eligible, trial limit, unknown
-    parameter) or that Instagram cannot process falls back once to an ordinary Reel: nothing was published, so
-    nothing goes out twice and today's post is not lost. A trial create that hits a server error (5xx, network)
-    also falls back but is noted "transient" and does not use up the try. A publish call that did not answer with
-    an error object may have gone out, so it is never retried (it fails red as before)."""
+    Any failure while the trial container is created or processed (refused, server or network error) falls back
+    once to an ordinary Reel: nothing was published, so nothing goes out twice and today's post is not lost. When
+    the trial's media_publish answers with an HTTP 4xx, the container's own status_code is read: only "FINISHED"
+    (not published) falls back; PUBLISHED, anything else or a failed read raises. A publish that did not answer
+    with an error object may have gone out, so it is never retried (it fails red as before)."""
     if not trial:
         container = _reel(user, fields, token, wait, tries)
         return _post(f"{GRAPH}/{user}/media_publish", {"creation_id": container, "access_token": token})["id"], None
@@ -367,16 +384,22 @@ def _publish_reel(user, fields, token, trial, wait=5, tries=60):
     trial_fields["trial_params"] = json.dumps(trial)
     try:
         container = _reel(user, trial_fields, token, wait, tries)
-    except RuntimeError as exc:
+    except DL.MissingDownloadLink:
+        raise
+    except Exception as exc:  # nothing is published yet: any failure here falls back
         result = "refused" if _refusal(exc) or "could not process" in str(exc) else "transient"
-        note.update(result=result, error=str(exc)[:200])
+        note.update(result=result, error=f"{exc.__class__.__name__}: {exc}"[:200])
     else:
         try:
             media = _post(f"{GRAPH}/{user}/media_publish", {"creation_id": container, "access_token": token})["id"]
         except RuntimeError as exc:
-            if not _refusal(exc):
+            if not re.match(r"HTTP 4\d\d\b", str(exc)):
                 raise
-            note.update(result="refused", error=str(exc)[:200])
+            # Did it go out after all? Only a container that is still FINISHED (unpublished) is safe to replace.
+            state = _get(f"{GRAPH}/{container}?fields=status_code&access_token={token}").get("status_code")
+            if state != "FINISHED":
+                raise
+            note.update(result="refused" if _refusal(exc) else "transient", error=str(exc)[:200])
         else:
             print(f"clip: Instagram accepted the Trial Reel ({trial['graduation_strategy']})")
             return media, {**note, "result": "trial"}

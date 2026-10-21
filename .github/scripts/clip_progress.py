@@ -282,7 +282,7 @@ def record_post(channel, key, link, now=None, media_id=None, variant=None, ig_tr
         entry["id"] = str(media_id)
     if variant:  # hook variant (search_caption.choose), ranked by post_performance.py
         entry["variant"] = variant
-    if ig_trial:  # Trial Reel try (clip_posts.trial_plan): {"graduation_strategy", "result": trial|fallback, ...}
+    if ig_trial:  # Trial Reel try (clip_posts.trial_plan): {"graduation_strategy", "result": trial|refused|transient, "error"}
         entry["ig_trial"] = ig_trial
     log.setdefault("posts", []).append(entry)
     POSTS.write_text(json.dumps(log, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

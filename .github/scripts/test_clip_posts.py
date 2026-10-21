@@ -554,10 +554,12 @@ class TrialReelsTest(unittest.TestCase):
         transient = [{"channel": "instagram", "clip": "mochi/en", "ig_trial": {"result": "transient"}}]
         self.assertIsNotNone(C.trial_plan(self.MOCHI, self.DAY, transient, self.CFG), "a server error does not count")
         self.assertIsNotNone(C.trial_plan(self.MOCHI, self.DAY, [{"channel": "instagram", "clip": "mochi/en"}], self.CFG))
+        other = [{"channel": "instagram", "clip": "zipbox/en", "ig_trial": {"result": "trial"}}]
+        self.assertIsNotNone(C.trial_plan(self.MOCHI, self.DAY, other, self.CFG), "max_posts counts per app")
 
     def test_a_broken_config_turns_the_trial_off_instead_of_failing(self):
         for bad in (dict(self.CFG, start="2026/10/21"), dict(self.CFG, max_posts="two"), dict(self.CFG, apps="mochi"),
-                    ["not", "a", "dict"]):
+                    dict(self.CFG, enabled="false"), dict(self.CFG, max_posts=True), ["not", "a", "dict"]):
             self.assertIsNone(C.trial_plan(self.MOCHI, self.DAY, [], bad), bad)
 
     def test_the_shipped_config_is_valid(self):
@@ -607,10 +609,39 @@ class TrialReelsTest(unittest.TestCase):
 
     def test_a_trial_refused_at_publish_falls_back_once(self):
         calls, post = self._recorder(lambda url, f: url.endswith("media_publish") and f["creation_id"] == "c1")
-        out = self._run(post, self.PLAN, statuses=("FINISHED", "FINISHED"))
+        # trial FINISHED, its status read after the refused publish (still FINISHED = not out), ordinary FINISHED
+        out = self._run(post, self.PLAN, statuses=("FINISHED", "FINISHED", "FINISHED"))
         self.assertEqual([c[0] for c in calls], ["media", "media_publish", "media", "media_publish"])
         self.assertEqual(calls[3][1]["creation_id"], "c3")
         self.assertEqual(out["ig_trial"]["result"], "refused")
+
+    def test_a_refused_publish_whose_trial_went_out_after_all_is_not_doubled(self):
+        calls, post = self._recorder(lambda url, f: url.endswith("media_publish"))
+        with self.assertRaises(RuntimeError):
+            self._run(post, self.PLAN, statuses=("FINISHED", "PUBLISHED"))
+        self.assertEqual([c[0] for c in calls], ["media", "media_publish"])
+
+    def test_timing_rate_limit_and_transient_answers_do_not_count_as_a_refusal(self):
+        self.assertTrue(C._refusal(RuntimeError(self.REFUSED)))
+        for text in ('HTTP 400: {"error":{"code":9007,"message":"Media ID is not available"}}',
+                     'HTTP 400: {"error":{"code":-2,"message":"Fatal","is_transient":true}}',
+                     'HTTP 400: {"error":{"code":1,"message":"x","is_transient":true}}',
+                     'HTTP 400: {"error":{"code":4,"message":"(#4) Application request limit reached"}}',
+                     "HTTP 429: slow down", "HTTP 500: oops", "read timed out"):
+            self.assertFalse(C._refusal(RuntimeError(text)), text)
+
+    def test_a_network_error_on_the_trial_create_falls_back(self):
+        calls = []
+
+        def post(url, fields, timeout=60):
+            calls.append(url)
+            if "trial_params" in fields:
+                raise C.urllib.error.URLError("timed out")
+            return {"id": "c2" if url.endswith("/media") else "m2"}
+
+        out = self._run(post, self.PLAN)
+        self.assertEqual(len(calls), 3)
+        self.assertEqual(out["ig_trial"]["result"], "transient")
 
     def test_a_trial_that_cannot_be_processed_falls_back(self):
         calls, post = self._recorder()

@@ -538,63 +538,114 @@ class TrialReelsTest(unittest.TestCase):
     MOCHI = DownloadLinkTest.MOCHI
     CFG = {"enabled": True, "apps": ["mochi"], "start": "2026-10-21", "max_posts": 1, "graduation_strategy": "SS_PERFORMANCE"}
     DAY = dt.date(2026, 10, 21)
+    PLAN = {"graduation_strategy": "SS_PERFORMANCE"}
+    REFUSED = 'HTTP 400: {"error":{"code":100,"message":"The user is not eligible to post trial reels"}}'
 
     def test_plan_only_for_the_listed_app_from_the_start_date_up_to_max_posts(self):
-        plan = C.trial_plan(self.MOCHI, self.DAY, [], self.CFG)
-        self.assertEqual(plan, {"graduation_strategy": "SS_PERFORMANCE"})
+        self.assertEqual(C.trial_plan(self.MOCHI, self.DAY, [], self.CFG), self.PLAN)
         self.assertIsNone(C.trial_plan(clip("zipbox", "en"), self.DAY, [], self.CFG))
         self.assertIsNone(C.trial_plan(self.MOCHI, dt.date(2026, 10, 20), [], self.CFG))
         self.assertIsNone(C.trial_plan(self.MOCHI, self.DAY, [], dict(self.CFG, enabled=False)))
         self.assertIsNone(C.trial_plan(self.MOCHI, self.DAY, [], dict(self.CFG, graduation_strategy="BOGUS")))
-        tried = [{"channel": "instagram", "clip": "mochi/en", "ig_trial": {"result": "fallback"}}]
-        self.assertIsNone(C.trial_plan(self.MOCHI, self.DAY, tried, self.CFG), "the one check is used up")
-        self.assertIsNotNone(C.trial_plan(self.MOCHI, self.DAY, tried, dict(self.CFG, max_posts=2)))
+        for used in ("trial", "refused"):
+            tried = [{"channel": "instagram", "clip": "mochi/en", "ig_trial": {"result": used}}]
+            self.assertIsNone(C.trial_plan(self.MOCHI, self.DAY, tried, self.CFG), "the one check is used up")
+            self.assertIsNotNone(C.trial_plan(self.MOCHI, self.DAY, tried, dict(self.CFG, max_posts=2)))
+        transient = [{"channel": "instagram", "clip": "mochi/en", "ig_trial": {"result": "transient"}}]
+        self.assertIsNotNone(C.trial_plan(self.MOCHI, self.DAY, transient, self.CFG), "a server error does not count")
         self.assertIsNotNone(C.trial_plan(self.MOCHI, self.DAY, [{"channel": "instagram", "clip": "mochi/en"}], self.CFG))
+
+    def test_a_broken_config_turns_the_trial_off_instead_of_failing(self):
+        for bad in (dict(self.CFG, start="2026/10/21"), dict(self.CFG, max_posts="two"), dict(self.CFG, apps="mochi"),
+                    ["not", "a", "dict"]):
+            self.assertIsNone(C.trial_plan(self.MOCHI, self.DAY, [], bad), bad)
 
     def test_the_shipped_config_is_valid(self):
         cfg = json.loads(C.IG_TRIAL.read_text(encoding="utf-8"))
         self.assertIn(cfg["graduation_strategy"], C.TRIAL_STRATEGIES)
-        self.assertEqual(cfg["apps"], ["mochi"])
-        self.assertEqual(cfg["max_posts"], 1)
+        self.assertIsInstance(cfg["apps"], list)
+        int(cfg["max_posts"])
+        dt.date.fromisoformat(cfg["start"])
 
-    def _run(self, post, plan):
-        gets = [{}, {"user_id": "u"}, {"status_code": "FINISHED"}, {"permalink": "https://www.instagram.com/reel/X/"}]
+    def _run(self, post, plan, statuses=("FINISHED",)):
+        gets = [{}, {"user_id": "u"}, *({"status_code": s} for s in statuses), {"permalink": "https://www.instagram.com/reel/X/"}]
         with mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t"}), mock.patch.object(C, "_post", side_effect=post), \
                 mock.patch.object(C, "_get", side_effect=gets), mock.patch.object(C.time, "sleep"), \
                 mock.patch.object(C, "trial_plan", return_value=plan), mock.patch("sys.stdout"):
             return C.post_instagram(self.MOCHI)
 
-    def test_an_accepted_trial_sends_the_parameter_and_publishes_once(self):
+    @staticmethod
+    def _recorder(refuse=None):
         calls = []
 
         def post(url, fields, timeout=60):
             calls.append((url.rsplit("/", 1)[-1], dict(fields)))
-            return {"id": "c1" if url.endswith("/media") else "m1"}
+            if refuse and refuse(url, fields):
+                raise RuntimeError(TrialReelsTest.REFUSED)
+            return {"id": f"c{len(calls)}" if url.endswith("/media") else "m1"}
+        return calls, post
 
-        out = self._run(post, {"graduation_strategy": "SS_PERFORMANCE"})
+    def test_an_accepted_trial_sends_the_parameter_and_publishes_once(self):
+        calls, post = self._recorder()
+        out = self._run(post, self.PLAN)
         self.assertEqual([c[0] for c in calls], ["media", "media_publish"])
-        self.assertEqual(json.loads(calls[0][1]["trial_params"]), {"graduation_strategy": "SS_PERFORMANCE"})
+        self.assertEqual(json.loads(calls[0][1]["trial_params"]), self.PLAN)
         self.assertEqual(calls[0][1]["media_type"], "REELS")
+        self.assertNotIn("share_to_feed", calls[0][1])
         self.assertEqual(out["ig_trial"], {"graduation_strategy": "SS_PERFORMANCE", "result": "trial"})
         self.assertEqual(out["id"], "m1")
 
     def test_a_refused_trial_falls_back_to_one_ordinary_reel(self):
+        calls, post = self._recorder(lambda url, f: "trial_params" in f)
+        out = self._run(post, self.PLAN)
+        self.assertEqual([c[0] for c in calls], ["media", "media", "media_publish"])
+        self.assertNotIn("trial_params", calls[1][1])
+        self.assertEqual(calls[1][1]["share_to_feed"], "true")
+        self.assertEqual(calls[2][1]["creation_id"], "c2")
+        self.assertEqual(out["ig_trial"]["result"], "refused")
+        self.assertIn("not eligible", out["ig_trial"]["error"])
+
+    def test_a_trial_refused_at_publish_falls_back_once(self):
+        calls, post = self._recorder(lambda url, f: url.endswith("media_publish") and f["creation_id"] == "c1")
+        out = self._run(post, self.PLAN, statuses=("FINISHED", "FINISHED"))
+        self.assertEqual([c[0] for c in calls], ["media", "media_publish", "media", "media_publish"])
+        self.assertEqual(calls[3][1]["creation_id"], "c3")
+        self.assertEqual(out["ig_trial"]["result"], "refused")
+
+    def test_a_trial_that_cannot_be_processed_falls_back(self):
+        calls, post = self._recorder()
+        out = self._run(post, self.PLAN, statuses=("ERROR", "FINISHED"))
+        self.assertEqual([c[0] for c in calls], ["media", "media", "media_publish"])
+        self.assertEqual(calls[2][1]["creation_id"], "c2")
+        self.assertEqual(out["ig_trial"]["result"], "refused")
+
+    def test_a_server_error_falls_back_without_using_up_the_try(self):
         calls = []
 
         def post(url, fields, timeout=60):
-            calls.append((url.rsplit("/", 1)[-1], dict(fields)))
+            calls.append(url)
             if "trial_params" in fields:
-                raise RuntimeError('HTTP 400: {"error":{"code":100,"message":"The user is not eligible to post trial reels"}}')
+                raise RuntimeError("HTTP 500: unexpected error")
             return {"id": "c2" if url.endswith("/media") else "m2"}
 
-        out = self._run(post, {"graduation_strategy": "SS_PERFORMANCE"})
-        self.assertEqual([c[0] for c in calls], ["media", "media", "media_publish"])
-        self.assertNotIn("trial_params", calls[1][1])
-        self.assertEqual(calls[2][1]["creation_id"], "c2")
-        self.assertEqual(out["ig_trial"]["result"], "fallback")
-        self.assertIn("not eligible", out["ig_trial"]["error"])
+        out = self._run(post, self.PLAN)
+        self.assertEqual(len(calls), 3)
+        self.assertEqual(out["ig_trial"]["result"], "transient")
 
-    def test_a_rate_limit_on_the_trial_is_not_retried(self):
+    def test_a_publish_without_an_error_answer_is_never_retried(self):
+        calls = []
+
+        def post(url, fields, timeout=60):
+            calls.append(url)
+            if url.endswith("media_publish"):
+                raise TimeoutError("read timed out")  # it may have gone out: no second Reel
+            return {"id": "c1"}
+
+        with self.assertRaises(TimeoutError):
+            self._run(post, self.PLAN)
+        self.assertEqual(sum(u.endswith("media_publish") for u in calls), 1)
+
+    def test_a_rate_limit_on_the_fallback_still_fails_red(self):
         calls = []
 
         def post(url, fields, timeout=60):
@@ -602,28 +653,31 @@ class TrialReelsTest(unittest.TestCase):
             raise RuntimeError('HTTP 400: {"error":{"code":4,"message":"(#4) Application request limit reached"}}')
 
         with self.assertRaises(RuntimeError):
-            self._run(post, {"graduation_strategy": "SS_PERFORMANCE"})
-        self.assertEqual(len(calls), 1)
+            self._run(post, self.PLAN)
+        self.assertEqual(len(calls), 2)
+        self.assertFalse(any(u.endswith("media_publish") for u in calls))
 
     def test_without_a_plan_no_trial_parameter_and_no_mark(self):
-        calls = []
-
-        def post(url, fields, timeout=60):
-            calls.append(dict(fields))
-            return {"id": "c3"}
-
+        calls, post = self._recorder()
         out = self._run(post, None)
-        self.assertNotIn("trial_params", calls[0])
+        self.assertNotIn("trial_params", calls[0][1])
+        self.assertEqual(calls[0][1]["share_to_feed"], "true")
         self.assertNotIn("ig_trial", out)
 
-    def test_the_try_is_recorded_in_clip_posts(self):
+    def test_main_passes_the_slot_date_and_records_the_try(self):
         import tempfile
+        with mock.patch.object(C, "trial_plan", return_value=None) as plan, mock.patch.object(C, "_publish_reel",
+                                                                                              return_value=("m", None)), \
+                mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t"}), mock.patch.object(C, "_get", return_value={"user_id": "u"}), \
+                mock.patch("sys.stdout"):
+            C.post_instagram(self.MOCHI, day=self.DAY)
+        self.assertEqual(plan.call_args[0][1], self.DAY)
         with tempfile.TemporaryDirectory() as d:
             path = Path(d) / "clip-posts.json"
             with mock.patch.object(P, "POSTS", path), mock.patch.object(P, "update"):
                 P.record_post("instagram", "mochi/en", "l", media_id="m1", variant="a",
                               ig_trial={"graduation_strategy": "SS_PERFORMANCE", "result": "trial"})
-                P.record_post("instagram", "zipbox/en", "l2")
+                P.record_post("instagram", "zipbox/en", "l2", ig_trial=None)
             posts = json.loads(path.read_text(encoding="utf-8"))["posts"]
         self.assertEqual(posts[0]["ig_trial"]["result"], "trial")
         self.assertNotIn("ig_trial", posts[1])

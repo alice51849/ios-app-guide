@@ -47,19 +47,28 @@ class SegmentTableTest(unittest.TestCase):
     def test_token_only_for_mochi_on_its_exits(self):
         day = dt.date(2026, 10, 21)
         for ch in ("ig", "tg", "bs", "yt"):
-            self.assertEqual(f"ln_mochi_exam_{ch}", M.segment_token("6785004775", ch, day))
-        self.assertEqual("ln_mochi_adhd_yt", M.segment_token("6785004775", "yt", dt.date(2026, 10, 25)))
-        self.assertIsNone(M.segment_token("6785004775", "th", day))   # Threads keeps th_mochi_* / its own token
-        self.assertIsNone(M.segment_token("6785004775", "igc", day))
-        self.assertIsNone(M.segment_token("6802423998", "ig", day))   # any other app keeps its token
-        self.assertIsNone(M.segment_token("", "ig", day))
+            self.assertEqual(f"ln_mochi_exam_br_{ch}_1021", M.segment_token("6785004775", ch, day, country="br"))
+        self.assertEqual("ln_mochi_adhd_us_yt_1025",
+                         M.segment_token("6785004775", "yt", dt.date(2026, 10, 25), country="US"))
+        self.assertEqual("ln_mochi_reset_jp_tg_0101",
+                         M.segment_token("6785004775", "tg", dt.date(2027, 1, 1), country="jp"))
+        for token in (M.segment_token("6785004775", "bs", dt.date(2026, 12, 18), country=cc) for cc in ("sa", "tw")):
+            self.assertLessEqual(len(token), 40)   # App Store ct limit (agent/ct_codes.TOKEN_RE)
+        self.assertIsNone(M.segment_token("6785004775", "th", day, country="us"))   # Threads keeps th_mochi_*
+        self.assertIsNone(M.segment_token("6785004775", "igc", day, country="us"))
+        self.assertIsNone(M.segment_token("6802423998", "ig", day, country="us"))   # any other app keeps its token
+        self.assertIsNone(M.segment_token("", "ig", day, country="us"))
+        for cc in (None, "", "usa", "u1"):   # no target storefront: the caller keeps its usual token
+            self.assertIsNone(M.segment_token("6785004775", "ig", day, country=cc))
 
     def test_unreadable_table_keeps_the_usual_token(self):
         self.assertEqual({}, M.load("/nonexistent/table.json"))
-        self.assertIsNone(M.segment_token("6785004775", "ig", dt.date(2026, 10, 21), cfg={}))
+        self.assertIsNone(M.segment_token("6785004775", "ig", dt.date(2026, 10, 21), cfg={}, country="us"))
         self.assertIsNone(M.segment_for(dt.date(2026, 10, 21), cfg={}))
         bad = dict(M.load(), token="ln_mochi_{segment}_{channel}_x_y")
-        self.assertIsNone(M.segment_token("6785004775", "ig", dt.date(2026, 10, 21), cfg=bad))
+        self.assertIsNone(M.segment_token("6785004775", "ig", dt.date(2026, 10, 21), cfg=bad, country="us"))
+        short = dict(M.load(), token="ln_mochi_{segment}_{channel}")   # the retired short form never leaves
+        self.assertIsNone(M.segment_token("6785004775", "ig", dt.date(2026, 10, 21), cfg=short, country="us"))
 
 
 if __name__ == "__main__":

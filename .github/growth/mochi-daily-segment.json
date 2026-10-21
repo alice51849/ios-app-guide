@@ -1,8 +1,8 @@
 {
   "schema": "growth.mochi-daily-segment/v1",
-  "note": "可愛待辦清單每天主攻族群（正本 ops/company/audience/mochi.md「未來 90 天時間軸」；做法 ops/company/mochi_blitz_playbook.md 二之一）。每天的固定量貼文（Instagram、Telegram、Bluesky、YouTube Shorts）送出追蹤碼 ln_mochi_<族群碼>_<通路碼>，不帶國碼與日期（蘋果行銷活動有隱私門檻，碼太細會被隱藏）。判斷順序：dates 指定日 → 落在哪個 windows 區間（含頭尾，世界時日期）：weekdays 指定星期 → rotate 依區間第幾天輪流；都不在 → default（依日序輪流）。正本在 00_GrowthEngine，ios-app-guide .github/growth/mochi-daily-segment.json 是逐 byte 鏡像，兩邊同一次一起改。讀取：00_GrowthEngine lib/mochi_segment.py、ios-app-guide .github/scripts/segment_ct.py。",
+  "note": "可愛待辦清單每天主攻族群（正本 ops/company/audience/mochi.md「未來 90 天時間軸」；做法 ops/company/mochi_blitz_playbook.md 二之一）。每天的固定量貼文（Instagram、Telegram、Bluesky、YouTube Shorts）送出追蹤碼 ln_mochi_<族群碼>_<國碼>_<通路碼>_<月日>（統籌 10-21 裁定用長碼；國碼＝該則貼文目標商店區，取連結 apps.apple.com/<國碼>/；月日＝發文當天世界時；後台判讀照前綴 ln_mochi_<族群> 合併）。判斷順序：dates 指定日 → 落在哪個 windows 區間（含頭尾，世界時日期）：weekdays 指定星期 → rotate 依區間第幾天輪流；都不在 → default（依日序輪流）。正本在 00_GrowthEngine，ios-app-guide .github/growth/mochi-daily-segment.json 是逐 byte 鏡像，兩邊同一次一起改。讀取：00_GrowthEngine lib/mochi_segment.py、ios-app-guide .github/scripts/segment_ct.py。",
   "app_id": "6785004775",
-  "token": "ln_mochi_{segment}_{channel}",
+  "token": "ln_mochi_{segment}_{country}_{channel}_{mmdd}",
   "segments": ["reset", "host", "adhd", "kids", "soft", "exam"],
   "channels": ["yt", "ig", "bs", "tg", "th", "rs", "gw", "sp"],
   "exits": ["ig", "tg", "bs", "yt"],

@@ -259,7 +259,7 @@ _CAMPAIGN_PREFIXES = (
 )
 # Sent as they are: experiment cells whose own contract reads the token back (gx_reach_*; th_mochi_<lang>_<nn>, the
 # 2026-10-20..11-01 Threads Mochi trial posts, threads_post.py), the one long-form YouTube token, the Cute To-Do
-# audience-segment links ln_mochi_<seg>_<ch> (segment_ct.py; 00_GrowthEngine ops/company/audience/mochi.md), and
+# audience-segment links ln_mochi_<seg>_<cc>_<ch>_<MMDD> (segment_ct.py; 00_GrowthEngine ops/company/audience/mochi.md), and
 # any token not listed above (00_GrowthEngine's inventory test names those).
 _CAMPAIGN_KEEP = ("gx_reach_", "yt_longform", "th_mochi_", "ln_mochi_")
 _CT_PARAM = re.compile(r"(?<=[?&;])ct=([A-Za-z0-9_-]+)")

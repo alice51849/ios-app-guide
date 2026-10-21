@@ -191,7 +191,7 @@ class PlanTest(unittest.TestCase):
         # each platform's channel-level campaign (download_links.coarse_campaign), the same on both stores; Mochi's
         # Bluesky and YouTube Shorts links carry the feed day's audience-segment token (segment_ct.py)
         day = dt.date(2026, 10, 21)
-        sent = {"bluesky": "ln_mochi_exam_bs", "youtube": "ln_mochi_exam_yt"}
+        sent = {"bluesky": "ln_mochi_exam_us_bs_1021", "youtube": "ln_mochi_exam_us_yt_1021"}
         for channel in S.CT:
             with self.subTest(channel=channel):
                 ct = sent.get(channel, "social")

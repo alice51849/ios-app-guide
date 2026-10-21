@@ -148,9 +148,13 @@ def clip_campaign(token):
 def clip_channel_campaign(url, channel, day=None):
     """The ct label a clip's link carries on one platform: h7_<app>[_b]_<channel>, or for Cute To-Do on its
     segment exits (Instagram, Telegram, Bluesky, YouTube Shorts) the day's audience-segment token
-    ln_mochi_<segment>_<channel> (segment_ct.py; 00_GrowthEngine ops/company/audience/mochi.md)."""
+    ln_mochi_<segment>_<country>_<channel>_<MMDD> (segment_ct.py; 00_GrowthEngine ops/company/audience/mochi.md):
+    the country is the post's target market, the link's own storefront (apps.apple.com/<cc>/), the date the posting
+    day (UTC)."""
     query = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(url or "").query))
-    return (segment_ct.segment_token(DL.app_store_id(url), channel, day)
+    storefront = SC.STOREFRONT.search(url or "")
+    return (segment_ct.segment_token(DL.app_store_id(url), channel, day,
+                                     country=storefront.group(1) if storefront else None)
             or f"{clip_campaign(query.get('ct', 'h7'))}_{channel}"[:40])
 
 

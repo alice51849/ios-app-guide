@@ -286,8 +286,9 @@ class ClipPostsTest(unittest.TestCase):
         mochi = dict(clip("mochi", "ja"), store_url="https://apps.apple.com/jp/app/id6785004775?pt=118326163"
                      "&ct=h7_mochi_ja&mt=8")
         day = dt.date(2026, 10, 21)
-        sent = {"th": "threads", "tg": "ln_mochi_exam_tg", "yt": "ln_mochi_exam_yt", "bs": "ln_mochi_exam_bs",
-                "ig": "ln_mochi_exam_ig", "igc": "instagram", "fb": "social", "tb": "social"}
+        sent = {"th": "threads", "tg": "ln_mochi_exam_jp_tg_1021", "yt": "ln_mochi_exam_jp_yt_1021",
+                "bs": "ln_mochi_exam_jp_bs_1021", "ig": "ln_mochi_exam_jp_ig_1021", "igc": "instagram",
+                "fb": "social", "tb": "social"}
         for channel, campaign in sent.items():
             with self.subTest(channel=channel):
                 self.assertIn(f"ct={campaign}&", C.with_campaign(mochi["store_url"], channel, day))
@@ -295,7 +296,14 @@ class ClipPostsTest(unittest.TestCase):
                     "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
                     f"&referrer=utm_source%3D{campaign}%26utm_campaign%3Dmochi",
                     C.play_url(mochi, channel, day))
-        self.assertIn("ct=ln_mochi_adhd_tg&", C.with_campaign(mochi["store_url"], "tg", dt.date(2026, 10, 25)))
+        self.assertIn("ct=ln_mochi_adhd_jp_tg_1025&", C.with_campaign(mochi["store_url"], "tg", dt.date(2026, 10, 25)))
+        # the country is each post's target market, the clip link's own storefront (pt-BR -> br, ar -> sa ...)
+        for cc in ("us", "br", "kr", "tw", "de", "fr", "sa"):
+            url = mochi["store_url"].replace("/jp/", f"/{cc}/")
+            self.assertIn(f"ct=ln_mochi_exam_{cc}_tg_1021&", C.with_campaign(url, "tg", day))
+        # a link with no storefront keeps the channel token, never a token without a country
+        bare = "https://apps.apple.com/app/id6785004775?pt=118326163&ct=h7_mochi&mt=8"
+        self.assertIn("ct=telegram&", C.with_campaign(bare, "tg", day))
         self.assertIsNone(C.play_url(clip("a", "en"), "th"))  # id1 is not on Android
         # any other app keeps its channel token on the same exits
         other = "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=h7_battai_en&mt=8"
@@ -350,7 +358,7 @@ class DownloadLinkTest(unittest.TestCase):
 
     def test_telegram_caption_holds_the_urls_too_and_threads_text_does_not(self):
         text = C.caption(self.MOCHI, "telegram")
-        self.assertRegex(text, r"ct=ln_mochi_[a-z]+_tg&")   # Mochi on Telegram: the day's segment token
+        self.assertRegex(text, r"ct=ln_mochi_[a-z]+_us_tg_\d{4}&")   # Mochi on Telegram: the day's segment token
         self.assertIn("play.google.com", text)
         self.assertNotIn("https://", C.caption(self.MOCHI, "threads"))  # Threads links go in the first reply
         self.assertEqual(C.post_qa.clip_problems(self.MOCHI, "threads", C.caption(self.MOCHI, "threads"), online=False), [])

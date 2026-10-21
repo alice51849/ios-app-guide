@@ -237,7 +237,7 @@ CHANNEL_LEVEL = {
     "mochi_flyer_ja": "outreach", "ig_bio_mochi": "instagram", "THREADS": "threads", "web": "web",
 }
 KEPT_AS_IS = ("gx_reach_b_v2_7c748bd2c62d6bf0", "yt_longform", "h7_mochi", "radar_zz", "wm_short15_lite", "",
-              "th_mochi_en_01", "th_mochi_ko_02", "ln_mochi_exam_yt", "ln_mochi_adhd_bs")
+              "th_mochi_en_01", "th_mochi_ko_02", "ln_mochi_exam_yt", "ln_mochi_adhd_bs", "ln_mochi_exam_br_tg_1021")
 
 
 class AppTierCampaignTest(unittest.TestCase):

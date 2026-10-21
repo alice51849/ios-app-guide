@@ -459,16 +459,46 @@ def trial_window_post(day, trial=None):
         return None
     posts = sorted((p for p in trial.get("posts") or [] if isinstance(p, dict) and p.get("date")),
                    key=lambda p: p["date"])
+    pool = trial_cycle_pool(trial)
     for i, post in enumerate(posts):
         try:
             start = _dt.date.fromisoformat(post["date"])
             end = (_dt.date.fromisoformat(posts[i + 1]["date"]) if i + 1 < len(posts)
-                   else start + _dt.timedelta(days=2))
+                   else start + _dt.timedelta(days=1 if pool else 2))
         except ValueError:
             continue
         if start <= day < end:
             return post
-    return None
+    return trial_cycle_post(day, posts, pool)
+
+
+# 2026-10-21 (00_GrowthEngine ops/company/mochi_no1_strategy.md C.1, owner 10-21 "every day"): after the last dated
+# entry the trial does not end. With "daily_after_end": {"cts": [...]} in the file, each later Taiwan day owes one
+# entry of that list, in turn (day 1 after the last date: the first ct), dated that day: same slot rule, same cap,
+# same QA and links, its own ct. Only evergreen entries go in the list (no dated season copy). A missed day is not
+# carried to the next day (that day owes its own). New dated entries appended to "posts" push the cycle later.
+def trial_cycle_pool(trial):
+    """The entries "daily_after_end" cycles through (in its order), or [] when the file sets no cycle."""
+    cfg = trial.get("daily_after_end")
+    if not isinstance(cfg, dict):
+        return []
+    by_ct = {p.get("ct"): p for p in trial.get("posts") or [] if isinstance(p, dict) and p.get("ct")}
+    return [by_ct[ct] for ct in cfg.get("cts") or [] if isinstance(ct, str) and ct in by_ct]
+
+
+def trial_cycle_post(day, posts, pool):
+    """The cycle entry Taiwan day `day` owes (a copy dated `day`), or None before / without a cycle."""
+    if not pool or not posts:
+        return None
+    try:
+        last = max(_dt.date.fromisoformat(p["date"]) for p in posts)
+    except ValueError:
+        return None
+    if day <= last:
+        return None
+    entry = dict(pool[((day - last).days - 1) % len(pool)])
+    entry["date"] = day.isoformat()
+    return entry
 
 
 def find_trial_post(token, post, day, opener=urllib.request.urlopen):

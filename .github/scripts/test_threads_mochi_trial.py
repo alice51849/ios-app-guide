@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""The Threads Mochi top-10 trial (threads_post.py TRIAL_PATH, 2026-10-20 .. 2026-11-01): the picture slot of each
-listed date goes to that entry; every other day, and every day after the trial, runs the usual logic; the entry's
-link reply carries the App Store link with its own ct; the account cap and the link checks still hold it."""
+"""The Threads Mochi top-10 trial (threads_post.py TRIAL_PATH): each listed date (2026-10-20 .. 2026-11-02) owes its
+entry, posted in the day's first slot with room; after the last date, each day owes the next entry of the file's
+daily_after_end list (without that list, the usual logic runs again); the entry's link reply carries the App Store
+link with its own ct; the account cap and the link checks still hold it."""
 import datetime as dt
 import io
 import json
@@ -27,6 +28,11 @@ import threads_post  # noqa: E402
 MOCHI = "6785004775"  # the cute to-do list (apps.json "Mochi"), on Google Play too
 TRIAL = threads_post.load_trial()
 POSTS = TRIAL.get("posts") or []
+# The file as it stood before 2026-10-21 (10-21 empty as the 10-20 entry's make-up day, no daily cycle after the
+# last date): the make-up and end-of-trial rules are still tested on it.
+LEGACY = {k: v for k, v in TRIAL.items() if k != "daily_after_end"}
+LEGACY["posts"] = [p for p in POSTS if p.get("date") != "2026-10-21"]
+CYCLE = (TRIAL.get("daily_after_end") or {}).get("cts") or []
 START, END = dt.date(2026, 10, 19), dt.date(2026, 11, 2)
 # Words that name a price or a paid tier the trial copy must not carry (owner's video rule (b), same for text).
 PRICE_WORDS = re.compile(r"[$€£¥￥₩]|\d+\s?(?:元|円|원|usd|dollars?)|\bfree\b|\bpro\b|\bpremium\b|免費|免费|進階|付費|"
@@ -34,18 +40,29 @@ PRICE_WORDS = re.compile(r"[$€£¥￥₩]|\d+\s?(?:元|円|원|usd|dollars?)|\
 
 
 class TrialFileTests(unittest.TestCase):
-    def test_entries_every_day_from_10_22_inside_the_trial(self):
+    def test_an_entry_every_day_from_10_20_inside_the_trial(self):
         # 2026-10-20 (GE ops/company/mochi_no1_strategy.md C.1): one of the 3 Threads posts a day goes to Mochi.
-        # 10-21 stays empty so the 10-20 entry keeps its make-up day; daily from 10-22 to the end of the trial.
+        # 2026-10-21: 10-21 filled too (the 10-20 entry went out on its day), so every day from 10-20 to 11-02.
         self.assertEqual("mochi", TRIAL.get("app_key"))
         self.assertEqual(MOCHI, DL.app_store_id(TRIAL.get("app_store")))
-        days = [dt.date.fromisoformat(p["date"]) for p in POSTS]
-        self.assertEqual(13, len(days))
+        days = sorted(dt.date.fromisoformat(p["date"]) for p in POSTS)
+        self.assertEqual(14, len(days))
         self.assertEqual(sorted(set(days)), days)
         self.assertTrue(all(START <= d <= END for d in days), days)
-        self.assertTrue(all(1 <= (b - a).days <= 2 for a, b in zip(days, days[1:])), days)
-        self.assertEqual(dt.date(2026, 10, 22), days[1])
-        self.assertTrue(all((b - a).days == 1 for a, b in zip(days[1:], days[2:])), days)
+        self.assertEqual(dt.date(2026, 10, 20), days[0])
+        self.assertEqual(END, days[-1])
+        self.assertTrue(all((b - a).days == 1 for a, b in zip(days, days[1:])), days)
+
+    def test_the_daily_cycle_lists_only_evergreen_entries_of_the_file(self):
+        # After 11-02 the trial goes on daily from this list: no season copy (Halloween, fall, year end).
+        by_ct = {p["ct"]: p for p in POSTS}
+        self.assertGreaterEqual(len(CYCLE), 7)
+        self.assertEqual(len(set(CYCLE)), len(CYCLE))
+        self.assertTrue(set(CYCLE) <= set(by_ct), set(CYCLE) - set(by_ct))
+        seasonal = re.compile(r"halloween|fall|autumn|christmas|年底|萬聖|秋|聖誕|ハロウィン|핼러윈", re.I)
+        for ct in CYCLE:
+            with self.subTest(ct=ct):
+                self.assertIsNone(seasonal.search(by_ct[ct]["text"]), ct)
 
     def test_each_entry_is_ready_to_post(self):
         seen = set()
@@ -252,6 +269,10 @@ class TrialSlotTests(MainHarness):
         self.assertTrue(all("th_mochi_" not in str(c.args[2]) for c in posted.call_args_list))
 
     def test_cap_full_posts_nothing_and_the_next_slot_makes_it_up_with_the_same_ct(self):
+        # On the pre-10-21 file, where 10-20's entry owned 10-21 too.
+        legacy = mock.patch.object(threads_post, "load_trial", return_value=LEGACY)
+        legacy.start()
+        self.addCleanup(legacy.stop)
         rc, posted, _q, out = self.run_trial("2026-10-20", "01:40", used=threads_cap.ACCOUNT_DAILY_CAP)
         self.assertEqual(0, rc)
         posted.assert_not_called()   # held by the account cap: nothing goes out, nothing else instead
@@ -283,16 +304,54 @@ class TrialSlotTests(MainHarness):
         queue.assert_called_once()
 
     def test_a_missed_entry_is_not_made_up_after_its_window(self):
-        days = {threads_post.trial_window_post(dt.date(2026, 10, 20) + dt.timedelta(days=i), TRIAL)["ct"]
+        days = {threads_post.trial_window_post(dt.date(2026, 10, 20) + dt.timedelta(days=i), LEGACY)["ct"]
                 for i in range(2)}
         self.assertEqual({"th_mochi_en_01"}, days)
-        self.assertEqual("th_mochi_ko_01", threads_post.trial_window_post(dt.date(2026, 10, 22), TRIAL)["ct"])
-        self.assertEqual("th_mochi_en_03", threads_post.trial_window_post(dt.date(2026, 11, 1), TRIAL)["ct"])
-        self.assertEqual("th_mochi_zh_02", threads_post.trial_window_post(dt.date(2026, 10, 23), TRIAL)["ct"])
-        self.assertEqual("th_mochi_zh_03", threads_post.trial_window_post(dt.date(2026, 11, 3), TRIAL)["ct"])
-        self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 11, 4), TRIAL))
+        self.assertEqual("th_mochi_ko_01", threads_post.trial_window_post(dt.date(2026, 10, 22), LEGACY)["ct"])
+        self.assertEqual("th_mochi_en_03", threads_post.trial_window_post(dt.date(2026, 11, 1), LEGACY)["ct"])
+        self.assertEqual("th_mochi_zh_02", threads_post.trial_window_post(dt.date(2026, 10, 23), LEGACY)["ct"])
+        self.assertEqual("th_mochi_zh_03", threads_post.trial_window_post(dt.date(2026, 11, 3), LEGACY)["ct"])
+        self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 11, 4), LEGACY))
+        self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 10, 19), LEGACY))
+        self.assertIsNone(threads_post.trial_window_post(None, LEGACY))
+        # The current file: 10-21 has its own entry; 11-02's entry owns only its day, the daily cycle follows.
+        self.assertEqual("th_mochi_en_01", threads_post.trial_window_post(dt.date(2026, 10, 20), TRIAL)["ct"])
+        self.assertEqual("th_mochi_en_06", threads_post.trial_window_post(dt.date(2026, 10, 21), TRIAL)["ct"])
+        self.assertEqual("th_mochi_zh_03", threads_post.trial_window_post(dt.date(2026, 11, 2), TRIAL)["ct"])
+        self.assertEqual(CYCLE[0], threads_post.trial_window_post(dt.date(2026, 11, 3), TRIAL)["ct"])
         self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 10, 19), TRIAL))
-        self.assertIsNone(threads_post.trial_window_post(None, TRIAL))
+
+    def test_after_the_last_date_every_day_owes_the_next_cycle_entry_dated_that_day(self):
+        by_ct = {p["ct"]: p for p in POSTS}
+        day = dt.date(2026, 11, 3)
+        for i in range(400):
+            with self.subTest(day=day):
+                entry = threads_post.trial_window_post(day, TRIAL)
+                self.assertEqual(CYCLE[i % len(CYCLE)], entry["ct"])
+                self.assertEqual(day.isoformat(), entry["date"])   # the rerun lookup starts that day
+                self.assertEqual(by_ct[entry["ct"]]["text"], entry["text"])
+            day += dt.timedelta(days=1)
+        self.assertEqual("2026-11-02", by_ct["th_mochi_zh_03"]["date"])   # the file's own entries stay as they are
+
+    def test_a_cycle_ct_the_file_does_not_hold_is_skipped_and_an_empty_cycle_ends_the_trial(self):
+        odd = dict(TRIAL, daily_after_end={"cts": ["th_mochi_xx_99", "th_mochi_ja_01"]})
+        self.assertEqual("th_mochi_ja_01", threads_post.trial_window_post(dt.date(2026, 11, 3), odd)["ct"])
+        self.assertEqual("th_mochi_ja_01", threads_post.trial_window_post(dt.date(2026, 11, 9), odd)["ct"])
+        for cfg in ({"cts": []}, {"cts": ["th_mochi_xx_99"]}, [], "on"):
+            with self.subTest(cfg=cfg):
+                off = dict(TRIAL, daily_after_end=cfg)
+                self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 11, 4), off))
+
+    def test_a_cycle_day_posts_its_entry_in_the_first_slot_with_its_own_ct(self):
+        rc, posted, queue, out = self.run_trial("2026-11-05", "01:40")
+        self.assertEqual(0, rc)
+        self.assertIn("took=true", out)
+        queue.assert_not_called()
+        ct = CYCLE[2 % len(CYCLE)]
+        main_call, reply_call = posted.call_args_list
+        self.assertEqual(next(p["text"] for p in POSTS if p["ct"] == ct), main_call.args[2])
+        self.assertIn(f"ct={ct}&", reply_call.args[2])
+        self.assertNotIn("made up now", self.out.getvalue())   # a cycle entry is dated its own day
 
     def test_a_lookup_failure_posts_no_trial_and_leaves_the_slot_its_usual_content(self):
         rc, posted, _q, out = self.run_trial("2026-10-20", "01:40", up=threads_post.LookupFailed("down"))

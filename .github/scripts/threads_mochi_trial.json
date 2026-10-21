@@ -1,12 +1,17 @@
 {
- "說明": "可愛待辦清單衝前十：統籌 10-19 決定指南站 Threads 名額每兩天撥 1 則給可愛待辦清單，試到 11-02（共 7 則）。12 部門提供題材與文案，05 實作排程。主貼文不放連結；第一則回覆放 App Store 直連（Play 上線就加 Play 直連）＋ct。功能只寫商店文案已有的（data/mochi_full.json：勾選清單、提醒、主畫面小工具、Apple Watch、101 款主題、表情符號組），不寫價格、免費、進階版字樣。評估：ct 點擊／下載＋reports/mochi_top10/ 對應詞名次，沒效就還原。 2026-10-20 04 部門：照 ops/company/mochi_no1_strategy.md C.1「Threads 每天 3 則裡固定 1 則給它」，10-22 起改成每天 1 則（10-21 空著，留給 10-20 那則補發），到 11-02 共 13 則；仍是同一格、同一上限，不多發。",
+ "說明": "可愛待辦清單衝前十：統籌 10-19 決定指南站 Threads 名額每兩天撥 1 則給可愛待辦清單，試到 11-02（共 7 則）。12 部門提供題材與文案，05 實作排程。主貼文不放連結；第一則回覆放 App Store 直連（Play 上線就加 Play 直連）＋ct。功能只寫商店文案已有的（data/mochi_full.json：勾選清單、提醒、主畫面小工具、Apple Watch、101 款主題、表情符號組），不寫價格、免費、進階版字樣。評估：ct 點擊／下載＋reports/mochi_top10/ 對應詞名次，沒效就還原。 2026-10-20 04 部門：照 ops/company/mochi_no1_strategy.md C.1「Threads 每天 3 則裡固定 1 則給它」，10-22 起改成每天 1 則（10-21 空著，留給 10-20 那則補發），到 11-02 共 13 則；仍是同一格、同一上限，不多發。 2026-10-21 05 部門（業主 10-21「每天都狂推 把它變每天的既定行程」）：10-21 補 1 則（th_mochi_en_06；10-20 那則已準時發出，補發日用不到）；11-02 之後不結束，照 daily_after_end.cts 的順序每天 1 則（只放不分季節的文案，萬聖節、秋季、年底那 3 則不放），同一格、同一上限；要換新文案就在 posts 追加有日期的新則，循環自動往後延。",
  "app_key": "mochi",
  "app_store": "https://apps.apple.com/app/id6785004775",
+ "daily_after_end": {"cts": ["th_mochi_en_01", "th_mochi_ko_01", "th_mochi_zh_02", "th_mochi_en_06", "th_mochi_ja_02", "th_mochi_zh_01", "th_mochi_en_02", "th_mochi_ko_03", "th_mochi_ja_01", "th_mochi_en_05", "th_mochi_ko_02"]},
  "posts": [
   {"slot": 1, "date": "2026-10-20", "market": "US", "lang": "en-US", "target_term": "checklist", "ct": "th_mochi_en_01",
    "pain": "長長的待辦讓人不想開始",
    "text": "My to-do list used to stress me out more than the tasks did.\n\nSo I switched to a tiny cute checklist: tap the little circle, watch it check off, feel weirdly calm.\n\nTurns out I just needed my list to not look like a spreadsheet.",
    "reply": "It's called Mochi: Cute Checklist 🍡 (iPhone + Apple Watch)\n{link}"},
+  {"slot": 14, "date": "2026-10-21", "market": "US", "lang": "en-US", "target_term": "to do list", "ct": "th_mochi_en_06",
+   "pain": "早上不知道從哪件事開始",
+   "text": "Tiny night routine that fixed my mornings:\n\nBefore bed I write tomorrow's three things in a cute checklist and set a reminder for the first one.\n\nWake up, glance at the Home Screen widget, and I already know where to start. No more staring at my phone wondering what I was supposed to do.",
+   "reply": "Mochi: Cute Checklist 🍡 (iPhone + Apple Watch)\n{link}"},
   {"slot": 2, "date": "2026-10-22", "market": "KR", "lang": "ko", "target_term": "투두리스트", "ct": "th_mochi_ko_01",
    "pain": "투두리스트 앱이 너무 딱딱해서 안 쓰게 됨",
    "text": "투두리스트 앱 깔아놓고 일주일 만에 안 여는 사람 나만 아니지…\n\n귀여우면 계속 열게 되더라. 동그라미 톡 눌러서 완료하는 맛에 오늘 할 일 다 끝냄.\n\n홈 화면 위젯으로 띄워두니까 까먹지도 않음.",

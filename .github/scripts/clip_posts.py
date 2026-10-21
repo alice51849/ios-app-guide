@@ -372,8 +372,8 @@ def _publish_reel(user, fields, token, trial, wait=5, tries=60):
 
     Any failure while the trial container is created or processed (refused, server or network error) falls back
     once to an ordinary Reel: nothing was published, so nothing goes out twice and today's post is not lost. When
-    the trial's media_publish answers with an HTTP 4xx, the container's own status_code is read: only "FINISHED"
-    (not published) falls back; PUBLISHED, anything else or a failed read raises. A publish that did not answer
+    the trial's media_publish answers with a lasting refusal (_refusal), the container's own status_code is read:
+    only "FINISHED" (not published) falls back; PUBLISHED, anything else, a failed read or a transient answer raises. A publish that did not answer
     with an error object may have gone out, so it is never retried (it fails red as before)."""
     if not trial:
         container = _reel(user, fields, token, wait, tries)
@@ -383,7 +383,8 @@ def _publish_reel(user, fields, token, trial, wait=5, tries=60):
     trial_fields = {k: v for k, v in fields.items() if k != "share_to_feed"}
     trial_fields["trial_params"] = json.dumps(trial)
     try:
-        container = _reel(user, trial_fields, token, wait, tries)
+        # A third of the poll budget: a stuck trial must leave room for the ordinary Reel inside the job timeout.
+        container = _reel(user, trial_fields, token, wait, max(1, tries // 3))
     except DL.MissingDownloadLink:
         raise
     except Exception as exc:  # nothing is published yet: any failure here falls back
@@ -393,13 +394,13 @@ def _publish_reel(user, fields, token, trial, wait=5, tries=60):
         try:
             media = _post(f"{GRAPH}/{user}/media_publish", {"creation_id": container, "access_token": token})["id"]
         except RuntimeError as exc:
-            if not re.match(r"HTTP 4\d\d\b", str(exc)):
+            if not _refusal(exc):  # transient / ambiguous: it may still go out, never replaced (red as before)
                 raise
-            # Did it go out after all? Only a container that is still FINISHED (unpublished) is safe to replace.
+            # A lasting refusal: did it go out after all? Only a container still FINISHED (unpublished) is replaced.
             state = _get(f"{GRAPH}/{container}?fields=status_code&access_token={token}").get("status_code")
             if state != "FINISHED":
                 raise
-            note.update(result="refused" if _refusal(exc) else "transient", error=str(exc)[:200])
+            note.update(result="refused", error=str(exc)[:200])
         else:
             print(f"clip: Instagram accepted the Trial Reel ({trial['graduation_strategy']})")
             return media, {**note, "result": "trial"}

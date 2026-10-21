@@ -621,6 +621,19 @@ class TrialReelsTest(unittest.TestCase):
             self._run(post, self.PLAN, statuses=("FINISHED", "PUBLISHED"))
         self.assertEqual([c[0] for c in calls], ["media", "media_publish"])
 
+    def test_a_transient_publish_error_on_the_trial_is_never_replaced(self):
+        calls = []
+
+        def post(url, fields, timeout=60):
+            calls.append(url.rsplit("/", 1)[-1])
+            if url.endswith("media_publish"):
+                raise RuntimeError('HTTP 400: {"error":{"code":-2,"message":"Fatal","is_transient":true}}')
+            return {"id": "c1"}
+
+        with self.assertRaises(RuntimeError):
+            self._run(post, self.PLAN)
+        self.assertEqual(calls, ["media", "media_publish"])
+
     def test_timing_rate_limit_and_transient_answers_do_not_count_as_a_refusal(self):
         self.assertTrue(C._refusal(RuntimeError(self.REFUSED)))
         for text in ('HTTP 400: {"error":{"code":9007,"message":"Media ID is not available"}}',

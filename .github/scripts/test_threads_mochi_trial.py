@@ -39,6 +39,19 @@ PRICE_WORDS = re.compile(r"[$€£¥￥₩]|\d+\s?(?:元|円|원|usd|dollars?)|\
                          r"無料|有料|プロ|무료|유료|프로|프리미엄", re.I)
 
 
+_NO_DUO = mock.patch.object(threads_post.duo_line, "line", return_value="")
+
+
+def setUpModule():
+    # The iPhone Duo line re-reads the live version over the network; these tests pin the trial text without it
+    # (test_duo_line.py covers the line, with_duo included).
+    _NO_DUO.start()
+
+
+def tearDownModule():
+    _NO_DUO.stop()
+
+
 class TrialFileTests(unittest.TestCase):
     def test_an_entry_every_day_from_10_20_inside_the_trial(self):
         # 2026-10-20 (GE ops/company/mochi_no1_strategy.md C.1): one of the 3 Threads posts a day goes to Mochi.

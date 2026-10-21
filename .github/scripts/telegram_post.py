@@ -47,6 +47,7 @@ if str(GEO_ENGINE) not in sys.path:
 
 import market_availability as market  # noqa: E402
 import review_links  # noqa: E402
+import duo_line  # noqa: E402
 
 INTENT_CATALOG_PATH = (
     REPO_ROOT
@@ -738,10 +739,28 @@ def telegram_campaign(item, with_locale=None):
     return f"soc_tg_{key[:TG_CT_MAX - len('soc_tg_') - len(suffix)]}{suffix}"
 
 
-def compose_text(item, android=True, review=True, ct=None, legacy_play=False, channel_level=True):
+TG_CAPTION_MAX = 1024   # sendPhoto caption
+TG_TEXT_MAX = 4096      # sendMessage text
+
+
+def with_duo(item, tail):
+    """The item's text with the iPhone Duo line after it (duo_line.py, copy of 00_GrowthEngine aso/duo/duo_line.py:
+    only an App duo_list.load() can claim, the reviewed social_line of its language, live version re-read), when the
+    whole post (`tail`: links and footer) still fits Telegram's limit (the caption one when the post has a picture).
+    Left as it is otherwise or on any error: no Duo line rather than a failed post or a dropped link."""
+    try:
+        limit = TG_CAPTION_MAX if item_image_url(item) else TG_TEXT_MAX
+        return duo_line.append(item["text"], item.get("app"), item.get("lang"), limit - len(tail))
+    except Exception as error:  # noqa: BLE001
+        print(f"Telegram: iPhone Duo line skipped ({error.__class__.__name__})", file=sys.stderr)
+        return item["text"]
+
+
+def compose_text(item, android=True, review=True, ct=None, legacy_play=False, channel_level=True, duo=True):
     """The post text. Its links carry the Telegram campaign (download_links.coarse_campaign turns the label,
     soc_tg_<app> by default, into "telegram"); channel_level=False rebuilds a text sent before 2026-10-17 with the
-    label itself as ct, so _sent_digests still recognises it."""
+    label itself as ct, so _sent_digests still recognises it; duo=False rebuilds a text without the iPhone Duo line
+    (texts sent before 2026-10-21, or while the line was not due)."""
     ct = telegram_campaign(item) if ct is None else ct
     url = campaign_app_store_url(item.get("url"), ct, channel_level=channel_level)
     if not android:
@@ -756,10 +775,8 @@ def compose_text(item, android=True, review=True, ct=None, legacy_play=False, ch
     rate = review_links.for_official(item.get("app"), item.get("lang"), any_app=True) if review else None
     if rate:
         links += "\n📝 " + "\n".join(review_links.lines(rate))
-    return (
-        f"{item['text']}\n\n{links}\n\n"
-        f"{item_footer(item)}"
-    )
+    tail = f"\n\n{links}\n\n{item_footer(item)}"
+    return f"{with_duo(item, tail) if duo else item['text']}{tail}"
 
 
 def pick_postable(pool, now=None):
@@ -1030,14 +1047,16 @@ def page_unready_apps(app_ids, country=PAGE_READY_STOREFRONT, opener=None, sleep
 def _sent_digests(item):
     """Every payload digest this item has gone out as: the current text, and the texts sent before the
     Google Play line, with the older Play referrer shape, before the review line (review_links.json), with the
-    shared soc_tg_guide token, or with a per-app / per-locale token as ct (before the channel-level campaign)."""
+    shared soc_tg_guide token, or with a per-app / per-locale token as ct (before the channel-level campaign), and
+    with or without the iPhone Duo line (so adding it never re-sends a text that went out without it)."""
     return {
         _digest(compose_text(item, android=android, review=review, ct=ct, legacy_play=legacy,
-                             channel_level=channel_level))
+                             channel_level=channel_level, duo=duo))
         for ct in dict.fromkeys((telegram_campaign(item), telegram_campaign(item, True), LEGACY_TG_CT))
         for android, legacy in ((True, False), (True, True), (False, False))
         for review in (True, False)
         for channel_level in (True, "channel", False)
+        for duo in (True, False)
     }
 
 

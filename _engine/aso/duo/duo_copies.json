@@ -1,0 +1,28 @@
+{
+ "schema": "duo-copies/v1",
+ "source_repo": "00_GrowthEngine",
+ "source_head": "869c1674ce50",
+ "note": "逐 byte 副本，正本在 00_GrowthEngine；用 aso/duo/sync_duo_copies.py 更新，不要手改",
+ "files": {
+  ".github/scripts/duo_line.py": {
+   "source": "aso/duo/duo_line.py",
+   "sha256": "a1d01f1ee93fccfa06dd6463c5244e79be2ebc5e1bd40fd9ef50e8cc2f3a9dd0"
+  },
+  "_engine/aso/duo/duo_list.py": {
+   "source": "aso/duo/duo_list.py",
+   "sha256": "a2c9279609007910710c1ab678ee50774b21a69efc1ca3c27a3dbaca42866655"
+  },
+  "_engine/aso/duo/claim_lines.json": {
+   "source": "aso/duo/claim_lines.json",
+   "sha256": "c22f1016863f4fc93bc8bd282cc627144be52dd3fbc4b79b6188cab518441f56"
+  },
+  "_engine/aso/duo/review_second_model.json": {
+   "source": "aso/duo/review_second_model.json",
+   "sha256": "1540c3228a68cc7075e9e8bb2259dfeb332b4bac26361bd39cbe84d39e32d51a"
+  },
+  "_engine/ops/company/duo_verified.json": {
+   "source": "ops/company/duo_verified.json",
+   "sha256": "3f6534af9460d15b745179281edb03fb7f2a54139450ba1c6643b4b27776c4b5"
+  }
+ }
+}

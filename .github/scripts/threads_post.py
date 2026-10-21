@@ -12,6 +12,7 @@ from typing import NamedTuple, Optional
 
 import channel_rotation as CR
 import download_links as DL
+import duo_line
 import threads_cap
 import threads_topics
 from social_post_common import (
@@ -112,10 +113,26 @@ def compose_text(item):
     return with_play if len(with_play) <= MAX_POST_CHARS else text
 
 
+def with_duo(text, app, lang, rest=""):
+    """The main text with the iPhone Duo line after it (duo_line.py, copy of 00_GrowthEngine aso/duo/duo_line.py:
+    only an App duo_list.load() can claim, the reviewed social_line of its language, live version re-read). Left as
+    it is when the post (with `rest`, the part that follows) would pass 500 characters, when the text is shorter than
+    the 40 characters a rerun needs to find the post by its first 80 (find_own_post / find_trial_post), or on any
+    error: no Duo line rather than a failed post. No URL in it, so the link stays in the first reply."""
+    try:
+        if len(_norm(text)) < 40:
+            return text
+        return duo_line.append(text, app, lang, MAX_POST_CHARS - len(rest))
+    except Exception as error:  # noqa: BLE001
+        print(f"Threads: iPhone Duo line skipped ({error.__class__.__name__})", file=sys.stderr)
+        return text
+
+
 def compose_body(item):
     """Post body without links: links go in the first reply (accounts posting a
     link in every post get limited)."""
-    return f"{item['text']}\n\n{item_footer(item)}"
+    footer = f"\n\n{item_footer(item)}"
+    return f"{with_duo(item['text'], item.get('app'), item.get('lang'), footer)}{footer}"
 
 
 def compose_links(item):
@@ -747,7 +764,8 @@ def post_trial(tok, uid, trial, post, day):
     if not post_qa.gate(trial_problems(trial, post), label):
         return 1
     store, play = trial_link_urls(trial, post)
-    result = publish_linked(tok, uid, post["text"], trial_reply(trial, post), store, play, day=day, label=label,
+    result = publish_linked(tok, uid, with_duo(post["text"], store, post.get("lang")), trial_reply(trial, post),
+                            store, play, day=day, label=label,
                             topic_tag=trial_topic(trial, post))
     if result.post_id:
         print("threads Mochi trial post ok, id:", result.post_id, "| ct:", post.get("ct"))
@@ -792,7 +810,8 @@ def main(argv=None):
     if post:
         try:
             store, play = queued_link_urls(post)
-            result = publish_linked(tok, uid, post["text"], queued_links(post), store, play,
+            result = publish_linked(tok, uid, with_duo(post["text"], post.get("app_id"), post.get("lang")),
+                                    queued_links(post), store, play,
                                     day=slot.astimezone(TW).date() if slot else None,
                                     label=f"Threads queued {post.get('app')} {post.get('date')}",
                                     topic_tag=queued_topic(post))

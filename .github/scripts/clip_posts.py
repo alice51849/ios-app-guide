@@ -49,6 +49,7 @@ from pathlib import Path
 import channel_rotation as CR
 import clip_progress
 import download_links as DL
+import duo_line
 import ig_bio as IGB
 import post_qa
 import review_links
@@ -209,14 +210,42 @@ def link_lines(clip, channel, tag=None):
     return lines
 
 
+# Channels whose caption this module sends as is. The feed's other channels (social_extra.py: Bluesky, ...) get no
+# line here: their sender adds its own text after the caption (threads-autopilot media_post.py adds the Duo line
+# itself, only when the whole post fits), so a line here could make it trim the caption.
+DUO_CHANNELS = ("telegram", "instagram", "threads")
+
+
 def caption(clip, channel, variant=None, tag=None):
     """Search-first caption (search_caption.py): problem line, benefit and keyword line inside the first
     125 characters, app name + App Store search line, then a few keyword hashtags. tag: the ct suffix of a
-    surface with its own row (default: the channel's, CHANNEL_CT)."""
+    surface with its own row (default: the channel's, CHANNEL_CT).
+
+    The iPhone Duo line (duo_line.py, copy of 00_GrowthEngine aso/duo/duo_line.py: only an App duo_list.load() can
+    claim, the reviewed social_line of the clip's language, live version re-read) goes after the search line, only
+    when the caption without it plus the line still fits the channel's limit (post_qa.LIMITS), so it never makes
+    the link guard cut a hashtag or a line; on any error the caption is the one without it. No URL in it."""
+    plain = _caption(clip, channel, variant, tag)
+    if channel not in DUO_CHANNELS:
+        return plain
+    try:
+        duo = duo_line.line(ios_id(clip), clip.get("locale"))
+        limit = post_qa.LIMITS.get(channel)
+        if not duo or duo_line.NAME in plain or (limit and len(plain) + len(duo) + 1 > limit):
+            return plain
+        return _caption(clip, channel, variant, tag, duo)
+    except Exception as error:  # noqa: BLE001 - no Duo line rather than no post
+        print(f"clip: iPhone Duo line skipped ({error.__class__.__name__})")
+        return plain
+
+
+def _caption(clip, channel, variant=None, tag=None, duo=""):
     t = text_for(clip["locale"])
     lines = SC.body(clip, variant or SC.variants(clip)[0])
     lines += [clip["name"], t["search"].format(s=SC.clip_search(clip))]
     lines = SC.dedupe(lines)  # a keyline the app name already says ("可愛待辦清單" / "Mochi: 可愛待辦清單") goes
+    if duo:
+        lines.append(duo)
     if channel == "instagram":
         return instagram_caption(clip, lines)
     if channel in LINK_IN_CAPTION:

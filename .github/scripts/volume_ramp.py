@@ -145,13 +145,44 @@ def posted_today(posts, name, day, exclude_prefixes=CARD_PREFIXES):
     return n
 
 
-def room(ramp, name, day, posts):
-    """(allowed, posted, room) for today; room is None when the channel is not ramped."""
+def priority_extra(ramp, name):
+    """(listings, per_day): the listings that get `per_day` posts a day on channel `name` on top of the stage
+    (ramp "priority_extra", owner 2026-10-21: 可愛待辦清單 every day on Instagram and Telegram, added slots that never
+    take another app's place). ((), 0) when the channel has none. The planner (00_GrowthEngine
+    shorts/scripts/schedule_posts.py DAILY_EXTRA) plans the extra slot; this only lets it post."""
+    cfg = (ramp or {}).get("priority_extra")
+    if not isinstance(cfg, dict) or name not in (cfg.get("channels") or []):
+        return (), 0
+    apps = tuple(a for a in cfg.get("apps") or [] if isinstance(a, str) and a)
+    try:
+        per_day = max(int(cfg.get("per_day") or 0), 0)
+    except (TypeError, ValueError):
+        per_day = 0
+    return (apps, per_day) if apps and per_day else ((), 0)
+
+
+def listing_of(clip_key):
+    """The listing a clip key promotes: "mochi_b/en" -> "mochi" (a hook variant counts as its listing)."""
+    return re.sub(r"_[a-z]$", "", str(clip_key or "").split("/")[0])
+
+
+def room(ramp, name, day, posts, clip=None):
+    """(allowed, posted, room) for today; room is None when the channel is not ramped.
+
+    A priority_extra listing's posts (up to its per_day) do not use the stage's allowance, so the extra post never
+    takes another app's place; `clip` (the clip key about to go out) of such a listing also gets the unused extra."""
     allowed = allowance(ramp, name, day)
     if allowed is None:
         return None, posted_today(posts, name, day), None
     done = posted_today(posts, name, day, exclude_prefixes=() if name == "instagram_feed" else CARD_PREFIXES)
-    left = max(allowed - done, 0)
+    apps, extra = priority_extra(ramp, name)
+    used_extra = min(sum(1 for p in posts or [] if p.get("channel") == name
+                         and str(p.get("posted_at", "")).startswith(day.isoformat())
+                         and not str(p.get("clip", "")).startswith(CARD_PREFIXES)
+                         and listing_of(p.get("clip")) in apps), extra) if apps else 0
+    left = max(allowed - (done - used_extra), 0)
+    if clip is not None and listing_of(clip) in apps:
+        left += extra - used_extra
     acc = account_of(name)
     if acc in ACCOUNT_DAILY_MAX:
         left = min(left, max(ACCOUNT_DAILY_MAX[acc] - account_posts_today(posts, name, day), 0))

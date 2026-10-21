@@ -503,7 +503,8 @@ def main():
         print(f"clip: Threads slot {args.slot} gives way to tonight's conversion post "
               f"({queued['app']} {queued['ct']}); Telegram and Instagram are unaffected")
         return 0
-    allowed, done, left = volume_ramp.room(volume_ramp.load(), channel, day, posted_log())
+    allowed, done, left = volume_ramp.room(volume_ramp.load(), channel, day, posted_log(),
+                                          clip=f"{clip['app']}/{clip['locale']}")
     if left is not None and left <= 0 and args.channel != "preview":
         print(f"clip: {channel} already made {done} of today's {allowed} clip posts (volume-ramp.json); slot skipped")
         return 0

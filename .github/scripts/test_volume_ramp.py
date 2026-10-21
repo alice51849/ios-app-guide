@@ -108,6 +108,24 @@ class PostedTest(unittest.TestCase):
         self.assertEqual(R.room(r, "instagram_feed", day, posts), (1, 1, 0))
         self.assertEqual(R.room(r, "telegram", day, posts), (None, 1, None))
 
+    def test_a_priority_extra_listing_posts_on_top_of_the_stage_and_never_takes_another_apps_place(self):
+        r = ramp(instagram={"stages": [1], "slots": [1, 18]}, telegram={"stages": [1], "slots": [1, 22]})
+        r["priority_extra"] = {"apps": ["mochi"], "channels": ["instagram"], "per_day": 1}
+        day = dt.date(2026, 10, 21)
+        posts = [{"channel": "instagram", "clip": "zipbox/zh-Hant", "posted_at": "2026-10-21T01:35:00Z"},
+                 {"channel": "telegram", "clip": "lumiweather/zh-Hant", "posted_at": "2026-10-21T04:00:00Z"}]
+        self.assertEqual(R.room(r, "instagram", day, posts), (1, 1, 0))                      # stage used up
+        self.assertEqual(R.room(r, "instagram", day, posts, clip="mochi_b/en"), (1, 1, 1))   # the extra Mochi post
+        self.assertEqual(R.room(r, "instagram", day, posts, clip="mochidonestamp/en")[2], 0)  # another listing
+        self.assertEqual(R.room(r, "telegram", day, posts, clip="mochi/en")[2], 0)           # channel not listed
+        posts.append({"channel": "instagram", "clip": "mochi_b/en", "posted_at": "2026-10-21T18:21:00Z"})
+        self.assertEqual(R.room(r, "instagram", day, posts, clip="mochi/de")[2], 0)          # one extra a day
+        # Mochi first: its post does not use the stage, so the other app still gets its slot.
+        early = [{"channel": "instagram", "clip": "mochi/en", "posted_at": "2026-10-21T01:21:00Z"}]
+        self.assertEqual(R.room(r, "instagram", day, early, clip="zipbox/en")[2], 1)
+        r["priority_extra"]["per_day"] = "x"
+        self.assertEqual(R.priority_extra(r, "instagram"), ((), 0))
+
     def test_the_account_cap_counts_every_kind_of_post_and_a_throttle_slows_every_channel_on_it(self):
         day = dt.date(2026, 10, 29)
         posts = [{"channel": "instagram", "clip": f"c{i}/en", "posted_at": "2026-10-29T01:21:00Z"} for i in range(5)]

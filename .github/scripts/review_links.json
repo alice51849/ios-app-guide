@@ -1,7 +1,7 @@
 {
  "schema": "lumi.review-links/v1",
  "note": "Existing-user App Store review link (https://apps.apple.com/app/id<N>?action=write-review) on social posts, only for the App x country pairs whose category leader has 20 ratings or fewer (00_GrowthEngine reports/top1_gap_2026-10-16.md, common conclusion 1): one to three ratings can flip the category there. Since 2026-10-20 also the 00_GrowthEngine ops/company/top10_targets.json pairs marked for 09 (a top-10 rival under 1,000 ratings; weakest_top10_ratings). One neutral sentence per locale, reused verbatim from 00_GrowthEngine geo/gen_app_store_review_ctas.py REVIEW_LABELS: no reward, no star prompt, no price, no superlative. The link never carries pt/ct/mt (it is not a download CTA). official_locale matches telegram_post.py items, clip_locale matches clips.json clips; a pair is matched by App Store ID, never by app key.",
- "source": "00_GrowthEngine reports/mochi_top10/latest.json (2026-10-21: Mochi pairs, weakest top-10 ratings of the term; br: keyword from data/mochi_full.json pt-BR, iTunes search br 2026-10-21 Mochi #7, weakest top-10 3 ratings); reports/top1_gap_2026-10-16.md (2026-10-16); 00_GrowthEngine ops/company/top10_targets.json (2026-10-20, means 09: top-10 rivals under 1,000 ratings)",
+ "source": "00_GrowthEngine reports/mochi_top10/latest.json (2026-10-21: Mochi pairs, weakest top-10 ratings of the term; br: keyword from data/mochi_full.json pt-BR, iTunes search br 2026-10-21 Mochi #7, weakest top-10 3 ratings; fr: iTunes search fr 2026-10-21 liste de tâches, weakest top-10 89 ratings (Mochi not yet in the top 10)); reports/top1_gap_2026-10-16.md (2026-10-16); 00_GrowthEngine ops/company/top10_targets.json (2026-10-20, means 09: top-10 rivals under 1,000 ratings)",
  "pairs": [
   {"app": "UsageNow", "app_id": "6818607603", "country": "kr", "official_locale": "ko", "clip_locale": "ko", "keyword": "claude 사용량", "top1_ratings": 0},
   {"app": "dB Halo", "app_id": "6806826699", "country": "de", "official_locale": "de-DE", "clip_locale": "de", "keyword": "lärmmessgerät", "top1_ratings": 0},
@@ -58,7 +58,8 @@
   {"app": "Mochi", "app_id": "6785004775", "country": "br", "official_locale": "pt-BR", "clip_locale": "pt-BR", "keyword": "lembrete", "weakest_top10_ratings": 3},
   {"app": "Mochi", "app_id": "6785004775", "country": "us", "official_locale": "en-US", "clip_locale": "en", "keyword": "checklist", "weakest_top10_ratings": 7},
   {"app": "Mochi", "app_id": "6785004775", "country": "jp", "official_locale": "ja", "clip_locale": "ja", "keyword": "かわいい todo", "weakest_top10_ratings": 2},
-  {"app": "Mochi", "app_id": "6785004775", "country": "tw", "official_locale": "zh-Hant", "clip_locale": "zh-Hant", "keyword": "待辦事項", "weakest_top10_ratings": 4}
+  {"app": "Mochi", "app_id": "6785004775", "country": "tw", "official_locale": "zh-Hant", "clip_locale": "zh-Hant", "keyword": "待辦事項", "weakest_top10_ratings": 4},
+  {"app": "Mochi", "app_id": "6785004775", "country": "fr", "official_locale": "fr-FR", "clip_locale": "fr", "keyword": "liste de tâches", "weakest_top10_ratings": 89}
  ],
  "labels": {
   "ar-SA": "هل تستخدم هذا التطبيق بالفعل؟ قيّمه أو اكتب مراجعة عنه في App Store",

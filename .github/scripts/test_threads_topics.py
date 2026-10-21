@@ -44,6 +44,10 @@ class DefaultTopicTests(unittest.TestCase):
         self.assertEqual("仕事効率化", TT.for_post(MOCHI, "やることリスト"))
         self.assertEqual("手帳", TT.for_post(MOCHI, "x", "zh-Hant", "手帳"))
         self.assertIsNone(TT.for_post("1", "hello"))
+        self.assertIsNone(TT.for_post(MOCHI, "Lista fofa", "pt-BR"))  # no Portuguese default: no topic
+        import review_links as R
+        for locale in ("ko", "fr-FR"):  # 2026-10-21: Korea and France first for the Mochi review line
+            self.assertEqual(R.review_url(MOCHI), R.for_official(MOCHI, locale)["url"])
 
     def test_every_category_topic_is_valid(self):
         for category, topics in TT.CATEGORY_TOPICS.items():

@@ -70,12 +70,10 @@ def clean(tag):
 
 
 def lang_of(text, lang=None):
-    """'en' / 'zh' / 'ja' / 'ko' from the post's locale, else from its script."""
+    """The post's base language ('en', 'zh', 'pt' ...) from its locale, else 'en' / 'zh' / 'ja' / 'ko' from its script."""
     base = (lang or "").split("-")[0].lower()
-    if base in ("en", "zh", "ja", "ko"):
-        return base
     if base:
-        return "en"
+        return base  # a language without a CATEGORY_TOPICS entry gets no default topic
     text = text or ""
     if HANGUL.search(text):
         return "ko"

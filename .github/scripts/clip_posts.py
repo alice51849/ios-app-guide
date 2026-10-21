@@ -487,7 +487,9 @@ def post_threads(clip, variant=None, wait=5, tries=60):
     if topic:  # threads_topics.py: one topic per post; a refused topic never stops the post
         try:
             container = _post(f"{THREADS}/{user}/threads", dict(fields, topic_tag=topic))["id"]
-        except Exception as exc:
+        except RuntimeError as exc:  # _open turns an HTTP error into "HTTP <code>: ..."; only a 4xx refusal retries
+            if not str(exc).startswith("HTTP 4"):
+                raise
             print(f"::warning::clip: Threads refused the topic tag {topic!r} ({exc.__class__.__name__}); "
                   "posted without a topic")
     if container is None:

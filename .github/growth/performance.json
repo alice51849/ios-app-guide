@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-20T04:38:15Z",
+  "updated_at": "2026-10-21T04:30:47Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
-    "instagram": "ok: 22 posts",
+    "instagram": "ok: 25 posts",
     "threads": "ok: 21 posts"
   },
   "boost": [
@@ -13,11 +13,11 @@
     "wifiaidlite"
   ],
   "demote": [
-    "qrcodehalo",
     "ledmovingtext",
     "wordmate",
     "lumiletters",
-    "lumimath"
+    "lumimath",
+    "lumimission"
   ],
   "hook_winners": {
     "apps": {
@@ -55,10 +55,10 @@
     "instagram": {
       "zh-Hant": {
         "hour": 5,
-        "avg_views": 4.0,
-        "posts": 11,
+        "avg_views": 2.7,
+        "posts": 14,
         "hours": {
-          "5": 4.0,
+          "5": 2.7,
           "9": 0.3
         }
       }
@@ -66,22 +66,22 @@
     "threads": {
       "en": {
         "hour": 8,
-        "avg_views": 11.7,
+        "avg_views": 12.0,
         "posts": 15,
         "hours": {
           "1": 9.3,
-          "8": 11.7,
+          "8": 12.0,
           "13": 6.0,
-          "16": 7.5
+          "16": 8.0
         }
       },
       "zh-Hant": {
         "hour": 13,
-        "avg_views": 79.0,
+        "avg_views": 80.5,
         "posts": 11,
         "hours": {
           "6": 27.5,
-          "13": 79.0,
+          "13": 80.5,
           "16": 10.0,
           "23": 6.0
         }
@@ -94,10 +94,10 @@
       {
         "key": "onepageppt",
         "posts": 2,
-        "views": 158,
+        "views": 161,
         "engagement": 2,
-        "score": 168,
-        "avg_score": 84.0
+        "score": 171,
+        "avg_score": 85.5
       },
       {
         "key": "unblurry",
@@ -118,10 +118,10 @@
       {
         "key": "notesstudio100",
         "posts": 1,
-        "views": 21,
+        "views": 22,
         "engagement": 0,
-        "score": 21,
-        "avg_score": 21.0
+        "score": 22,
+        "avg_score": 22.0
       },
       {
         "key": "wifiaidlite",
@@ -142,10 +142,10 @@
       {
         "key": "claudeusagemini",
         "posts": 4,
-        "views": 57,
+        "views": 62,
         "engagement": 2,
-        "score": 67,
-        "avg_score": 16.8
+        "score": 72,
+        "avg_score": 18.0
       },
       {
         "key": "sononote",
@@ -172,19 +172,19 @@
         "avg_score": 10.0
       },
       {
-        "key": "zipbox",
-        "posts": 2,
-        "views": 15,
-        "engagement": 0,
-        "score": 15,
-        "avg_score": 7.5
-      },
-      {
         "key": "tripbee",
         "posts": 1,
-        "views": 7,
+        "views": 8,
         "engagement": 0,
-        "score": 7,
+        "score": 8,
+        "avg_score": 8.0
+      },
+      {
+        "key": "zipbox",
+        "posts": 3,
+        "views": 21,
+        "engagement": 0,
+        "score": 21,
         "avg_score": 7.0
       },
       {
@@ -309,11 +309,11 @@
       },
       {
         "key": "wordmate",
-        "posts": 1,
+        "posts": 2,
         "views": 1,
         "engagement": 0,
         "score": 1,
-        "avg_score": 1.0
+        "avg_score": 0.5
       },
       {
         "key": "lumiletters",
@@ -325,6 +325,14 @@
       },
       {
         "key": "lumimath",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "key": "lumimission",
         "posts": 1,
         "views": 0,
         "engagement": 0,
@@ -343,19 +351,19 @@
       },
       {
         "key": "zh-Hant",
-        "posts": 22,
-        "views": 435,
+        "posts": 25,
+        "views": 444,
         "engagement": 9,
-        "score": 480,
-        "avg_score": 21.8
+        "score": 489,
+        "avg_score": 19.6
       },
       {
         "key": "en",
         "posts": 22,
-        "views": 198,
+        "views": 205,
         "engagement": 3,
-        "score": 211,
-        "avg_score": 9.6
+        "score": 218,
+        "avg_score": 9.9
       },
       {
         "key": "cs",
@@ -380,10 +388,10 @@
         "locale": "zh-Hant",
         "hook": "笔记、截图、PDF一键生成PPT。",
         "posts": 1,
-        "views": 124,
+        "views": 127,
         "engagement": 1,
-        "score": 129,
-        "avg_score": 129.0
+        "score": 132,
+        "avg_score": 132.0
       },
       {
         "app": "battai",
@@ -450,10 +458,10 @@
         "locale": "en",
         "hook": "Заметки от руки и PDF.",
         "posts": 1,
-        "views": 21,
+        "views": 22,
         "engagement": 0,
-        "score": 21,
-        "avg_score": 21.0
+        "score": 22,
+        "avg_score": 22.0
       },
       {
         "app": "wifiaidlite",
@@ -506,6 +514,26 @@
         "avg_score": 9.0
       },
       {
+        "app": "claudeusagemini",
+        "locale": "en",
+        "hook": "Translated into 50 languages",
+        "posts": 1,
+        "views": 9,
+        "engagement": 0,
+        "score": 9,
+        "avg_score": 9.0
+      },
+      {
+        "app": "tripbee",
+        "locale": "en",
+        "hook": "Six confirmation emails, two screenshots, one note — and no ",
+        "posts": 1,
+        "views": 8,
+        "engagement": 0,
+        "score": 8,
+        "avg_score": 8.0
+      },
+      {
         "app": "hourstag",
         "locale": "zh-Hant",
         "hook": "那筆衝動購物花的不是錢，是你一整天的工時。",
@@ -539,16 +567,6 @@
         "app": "zipbox",
         "locale": "en",
         "hook": "Nyahzip fail tanpa iklan.",
-        "posts": 1,
-        "views": 7,
-        "engagement": 0,
-        "score": 7,
-        "avg_score": 7.0
-      },
-      {
-        "app": "tripbee",
-        "locale": "en",
-        "hook": "Six confirmation emails, two screenshots, one note — and no ",
         "posts": 1,
         "views": 7,
         "engagement": 0,
@@ -609,6 +627,16 @@
         "app": "shotinbox",
         "locale": "zh-Hant",
         "hook": "本機截圖分類、OCR搜尋與時間軸。",
+        "posts": 1,
+        "views": 6,
+        "engagement": 0,
+        "score": 6,
+        "avg_score": 6.0
+      },
+      {
+        "app": "zipbox",
+        "locale": "zh-Hant",
+        "hook": "先看裡面有什麼 只取那一個",
         "posts": 1,
         "views": 6,
         "engagement": 0,
@@ -689,16 +717,6 @@
         "app": "lumibopomofo_b",
         "locale": "zh-Hant",
         "hook": "選對注音 餵小夥伴",
-        "posts": 1,
-        "views": 4,
-        "engagement": 0,
-        "score": 4,
-        "avg_score": 4.0
-      },
-      {
-        "app": "claudeusagemini",
-        "locale": "en",
-        "hook": "Translated into 50 languages",
         "posts": 1,
         "views": 4,
         "engagement": 0,
@@ -824,24 +842,44 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "lumimission",
+        "locale": "zh-Hant",
+        "hook": "",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
+      },
+      {
+        "app": "wordmate",
+        "locale": "zh-Hant",
+        "hook": "手腕上也能背",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
       {
         "key": "b",
-        "posts": 7,
-        "views": 84,
+        "posts": 9,
+        "views": 90,
         "engagement": 4,
-        "score": 102,
-        "avg_score": 14.6
+        "score": 108,
+        "avg_score": 12.0
       },
       {
         "key": "c",
         "posts": 11,
-        "views": 76,
+        "views": 81,
         "engagement": 4,
-        "score": 96,
-        "avg_score": 8.7
+        "score": 101,
+        "avg_score": 9.2
       },
       {
         "key": "a",
@@ -980,12 +1018,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 21,
+        "views": 22,
         "likes": 0,
         "replies": 0,
         "reposts": 0
       },
-      "score": 21
+      "score": 22
     },
     {
       "channel": "threads",
@@ -1018,12 +1056,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 7,
+        "views": 8,
         "likes": 0,
         "replies": 0,
         "reposts": 0
       },
-      "score": 7
+      "score": 8
     },
     {
       "channel": "threads",
@@ -1740,12 +1778,12 @@
       "kind": "image",
       "variant": null,
       "metrics": {
-        "views": 124,
+        "views": 127,
         "likes": 0,
         "replies": 1,
         "reposts": 0
       },
-      "score": 129
+      "score": 132
     },
     {
       "channel": "instagram",
@@ -1801,14 +1839,77 @@
       "kind": "clip",
       "variant": "c",
       "metrics": {
-        "views": 4,
-        "reach": 3,
+        "views": 9,
+        "reach": 5,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 4
+      "score": 9
+    },
+    {
+      "channel": "instagram",
+      "id": "18108743450626386",
+      "link": "https://www.instagram.com/p/DetE1p7FUY7/",
+      "posted_at": "2026-10-20T05:24:51",
+      "app": "lumimission",
+      "locale": "zh-Hant",
+      "hook": "",
+      "clip": "utility/bedtime/lumimission/bedtime_astronaut/zh-Hant",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "17951324298319674",
+      "link": "https://www.instagram.com/p/DetTn6dlcn9/",
+      "posted_at": "2026-10-20T07:33:57",
+      "app": "wordmate",
+      "locale": "zh-Hant",
+      "hook": "手腕上也能背",
+      "clip": "wordmate/zh-Hant",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
+    },
+    {
+      "channel": "instagram",
+      "id": "18098570315653190",
+      "link": "https://www.instagram.com/reel/DevPaWZlXF6/",
+      "posted_at": "2026-10-21T01:35:48",
+      "app": "zipbox",
+      "locale": "zh-Hant",
+      "hook": "先看裡面有什麼 只取那一個",
+      "clip": "zipbox/zh-Hant",
+      "kind": "clip",
+      "variant": "b",
+      "metrics": {
+        "views": 6,
+        "reach": 5,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 6
     }
   ]
 }

@@ -1,49 +1,49 @@
 {
  "schema": "lumi.social-feed/v1",
- "date": "2026-10-20",
- "generated_at": "2026-10-20T19:40:33Z",
+ "date": "2026-10-21",
+ "generated_at": "2026-10-21T02:02:28Z",
  "items": {
   "bluesky": [
    {
     "kind": "clip",
-    "key": "lumibopomofo_b/zh-Hant",
+    "key": "zipbox/zh-Hant",
     "locale": "zh-Hant",
-    "app": "lumibopomofo_b",
-    "video": "https://files.catbox.moe/nqp9gy.mp4",
-    "hook": "今日複習 再練一次",
-    "name": "Lumi注音星球",
-    "title": "今日複習 再練一次 | 注音遊戲：聽音、描寫、拼音 | Lumi注音星球",
+    "app": "zipbox",
+    "video": "https://files.catbox.moe/z5y69c.mp4",
+    "hook": "先看裡面有什麼 只取那一個",
+    "name": "Zipbox 解壓縮：RAR ZIP 7z",
+    "title": "先看裡面有什麼 只取那一個 | 開啟壓縮檔・預覽・加密壓縮 | Zipbox 解壓縮",
     "tags": [
-     "#台灣注音",
-     "#注音拼音",
-     "#拼音練習",
-     "#聲調",
-     "#聲母",
-     "#Lumi注音星球"
+     "#檔案管理",
+     "#密碼",
+     "#分割壓縮",
+     "#zip檔",
+     "#rar檔",
+     "#Zipbox解壓縮"
     ],
-    "caption": "今日複習 再練一次\n選對注音 餵小夥伴\n注音遊戲：聽音、描寫、拼音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #Lumi注音星球",
+    "caption": "先看裡面有什麼 只取那一個\n也能壓縮成 加密 ZIP\n開啟壓縮檔・預覽・加密壓縮\nZipbox 解壓縮：RAR ZIP 7z\n在 App Store 搜尋「密碼保護 zip」\nAndroid 版在 Google Play\n\n#檔案管理 #密碼 #Zipbox解壓縮",
     "button": "在 App Store 下載",
-    "variant": "c",
-    "alt": "Lumi注音星球 — 今日複習 再練一次 — 選對注音 餵小夥伴 — 注音遊戲：聽音、描寫、拼音",
-    "store": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
+    "variant": "b",
+    "alt": "Zipbox 解壓縮：RAR ZIP 7z — 先看裡面有什麼 只取那一個 — 也能壓縮成 加密 ZIP — 開啟壓縮檔・預覽・加密壓縮",
+    "store": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6773017109?action=write-review"
+     "url": "https://apps.apple.com/app/id6806776579?action=write-review"
     },
     "keywords": [
-     "注音符號",
-     "學注音",
-     "注音練習",
-     "台灣注音",
-     "注音拼音",
-     "拼音練習"
+     "檔案管理",
+     "密碼",
+     "分割壓縮",
+     "zip檔",
+     "rar檔",
+     "7z檔"
     ],
-    "keyline": "注音遊戲：聽音、描寫、拼音",
+    "keyline": "開啟壓縮檔・預覽・加密壓縮",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4c82ed8c08aa1014",
+     "board": "7663e4361616fba9",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -96,178 +96,136 @@
    },
    {
     "kind": "clip",
-    "key": "claudeusagemini/zh-Hant",
+    "key": "lumiweather/zh-Hant",
     "locale": "zh-Hant",
-    "app": "claudeusagemini",
-    "video": "https://files.catbox.moe/mm3euk.mp4",
-    "hook": "Claude、Codex、Copilot、Gemini 一起看",
-    "name": "UsageNow：AI 用量與額度追蹤",
-    "title": "Claude、Codex、Copilot、Gemini 一起看 | Claude、Codex、Copilot 重置倒數 | UsageNow",
+    "app": "lumiweather",
+    "video": "https://files.catbox.moe/dfotuw.mp4",
+    "hook": "穿什麼、帶什麼 直接告訴你",
+    "name": "Lumi天氣星球：天氣預報與穿搭建議",
+    "title": "穿什麼、帶什麼 直接告訴你 | 今天穿什麼・帶傘嗎・降雨機率與紫外線 | Lumi天氣星球",
     "tags": [
-     "#AI用量與額度追蹤",
-     "#開發者",
-     "#工程師",
-     "#使用量",
-     "#限額",
-     "#UsageNow"
+     "#天氣預報與穿搭建議",
+     "#氣象預報",
+     "#台灣",
+     "#下雨",
+     "#體感溫度",
+     "#Lumi天氣星球"
     ],
-    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#AI用量與額度追蹤 #開發者 #UsageNow",
+    "caption": "穿什麼、帶什麼 直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #Lumi天氣星球",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "UsageNow：AI 用量與額度追蹤 — Claude、Codex、Copilot、Gemini 一起看 — 剩多少、何時重置 一眼看清 — Claude、Codex、Copilot 重置倒數",
-    "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "alt": "Lumi天氣星球：天氣預報與穿搭建議 — 穿什麼、帶什麼 直接告訴你 — 適合出門嗎？看懂為什麼 — 今天穿什麼・帶傘嗎・降雨機率與紫外線",
+    "store": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6818607603?action=write-review"
+     "url": "https://apps.apple.com/app/id6779552704?action=write-review"
     },
     "keywords": [
-     "開發者",
-     "工程師",
-     "使用量",
-     "限額",
-     "配額",
-     "限制"
+     "氣象預報",
+     "台灣",
+     "下雨",
+     "體感溫度",
+     "氣溫",
+     "溫差"
     ],
-    "keyline": "Claude、Codex、Copilot 重置倒數",
+    "keyline": "今天穿什麼・帶傘嗎・降雨機率與紫外線",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "cf88bd5be14414ee",
-     "real_recording": true,
+     "board": "f7a5003af9c1539f",
+     "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 1
    },
    {
     "kind": "clip",
-    "key": "mochi_b/en",
-    "locale": "en",
-    "app": "mochi_b",
-    "video": "https://files.catbox.moe/c5k6l8.mp4",
-    "hook": "Work, errands, groceries in one place",
-    "name": "Mochi: Cute Checklist",
-    "title": "Work, errands, groceries in one place | Kawaii To-Do List & Chores | Mochi Cute Checklist",
+    "key": "mochi/pt-BR",
+    "locale": "pt-BR",
+    "app": "mochi",
+    "video": "https://files.catbox.moe/e7aq6y.mp4",
+    "hook": "Um toque e pronto",
+    "name": "Mochi: Lista fofa",
+    "title": "Um toque e pronto | Tarefas fofas e checklist | Mochi Lista fofa",
     "tags": [
-     "#Simple",
-     "#Routine",
-     "#Reminder",
+     "#ListaFofa",
+     "#Lembrete",
+     "#Afazeres",
      "#Planner",
-     "#Agenda",
-     "#MochiCuteChecklist"
+     "#Notas",
+     "#MochiListaFofa"
     ],
-    "caption": "Work, errands, groceries in one place\nTap the circle, feel the calm\nKawaii To-Do List & Chores\nMochi: Cute Checklist\nSearch “checklist” on the App Store\nAlso on Google Play\n\n#Simple #Routine #MochiCuteChecklist",
-    "button": "Get it on the App Store",
+    "caption": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #MochiListafofa",
+    "button": "Baixar na App Store",
     "variant": "b",
-    "alt": "Mochi: Cute Checklist — Work, errands, groceries in one place — Tap the circle, feel the calm — Kawaii To-Do List & Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=bluesky&mt=8",
+    "alt": "Mochi: Lista fofa — Um toque e pronto — 101 temas fofos — Tarefas fofas e checklist",
+    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=bluesky&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dbluesky%26utm_campaign%3Dmochi",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
      "url": "https://apps.apple.com/app/id6785004775?action=write-review"
     },
     "keywords": [
-     "chore",
-     "chart",
-     "grocery",
-     "simple",
-     "routine",
-     "reminder"
+     "lembrete",
+     "afazeres",
+     "planner",
+     "notas",
+     "hábitos",
+     "rotina"
     ],
-    "keyline": "Kawaii To-Do List & Chores",
+    "keyline": "Tarefas fofas e checklist",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "de911648f97ae007",
+     "board": "063389274bf4ea40",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
-   },
-   {
-    "kind": "card",
-    "key": "card/gsat2027/2026-10-20",
-    "locale": "zh-Hant",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261020.jpg",
-    "caption": "116 學測 倒數 94 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日",
-    "title": "116 學測 倒數 94 天",
-    "alt": "CountDaysNow — 116 學測 倒數 94 天 — 今天也前進一步 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
-    "name": "CountDaysNow",
-    "hook": "116 學測 倒數 94 天",
-    "tags": [
-     "#倒數日",
-     "#倒數計時",
-     "#紀念日",
-     "#生日",
-     "#還有幾天"
-    ],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
-   },
-   {
-    "kind": "card",
-    "key": "utility/bedtime/lumimission/bedtime_astronaut/zh-Hant",
-    "locale": "zh-Hant",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261020.jpg",
-    "caption": "今晚睡前 5 步：太空人睡前任務\n1. 把玩具收回家\n2. 洗澡\n3. 換上睡衣\n4. 刷牙\n5. 抱抱說晚安\n順序可依孩子習慣調整\n\nLumi 任務星球: 把每日生活常規變成溫柔的小任務\nApp Store／Google Play 搜尋「Lumi 任務星球」\n\n#生活習慣養成 #集點卡 #集星星",
-    "title": "今晚睡前 5 步：太空人睡前任務",
-    "alt": "Lumi Mission Planet — 今晚睡前 5 步：太空人睡前任務 — 1. 把玩具收回家 — 2. 洗澡 — 兒童作息表・生活常規・集點獎勵貼紙",
-    "name": "Lumi Mission Planet",
-    "hook": "今晚睡前 5 步：太空人睡前任務",
-    "tags": [
-     "#生活習慣養成",
-     "#集點卡",
-     "#集星星",
-     "#好寶寶",
-     "#刷牙"
-    ],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimission"
    }
   ],
   "mastodon": [
    {
     "kind": "clip",
-    "key": "lumibopomofo_b/zh-Hant",
+    "key": "zipbox/zh-Hant",
     "locale": "zh-Hant",
-    "app": "lumibopomofo_b",
-    "video": "https://files.catbox.moe/nqp9gy.mp4",
-    "hook": "今日複習 再練一次",
-    "name": "Lumi注音星球",
-    "title": "今日複習 再練一次 | 注音遊戲：聽音、描寫、拼音 | Lumi注音星球",
+    "app": "zipbox",
+    "video": "https://files.catbox.moe/z5y69c.mp4",
+    "hook": "先看裡面有什麼 只取那一個",
+    "name": "Zipbox 解壓縮：RAR ZIP 7z",
+    "title": "先看裡面有什麼 只取那一個 | 開啟壓縮檔・預覽・加密壓縮 | Zipbox 解壓縮",
     "tags": [
-     "#台灣注音",
-     "#注音拼音",
-     "#拼音練習",
-     "#聲調",
-     "#聲母",
-     "#Lumi注音星球"
+     "#檔案管理",
+     "#密碼",
+     "#分割壓縮",
+     "#zip檔",
+     "#rar檔",
+     "#Zipbox解壓縮"
     ],
-    "caption": "今日複習 再練一次\n選對注音 餵小夥伴\n注音遊戲：聽音、描寫、拼音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
+    "caption": "先看裡面有什麼 只取那一個\n也能壓縮成 加密 ZIP\n開啟壓縮檔・預覽・加密壓縮\nZipbox 解壓縮：RAR ZIP 7z\n在 App Store 搜尋「密碼保護 zip」\nAndroid 版在 Google Play\n\n#檔案管理 #密碼 #分割壓縮 #zip檔 #Zipbox解壓縮",
     "button": "在 App Store 下載",
-    "variant": "c",
-    "alt": "Lumi注音星球 — 今日複習 再練一次 — 選對注音 餵小夥伴 — 注音遊戲：聽音、描寫、拼音",
-    "store": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
+    "variant": "b",
+    "alt": "Zipbox 解壓縮：RAR ZIP 7z — 先看裡面有什麼 只取那一個 — 也能壓縮成 加密 ZIP — 開啟壓縮檔・預覽・加密壓縮",
+    "store": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6773017109?action=write-review"
+     "url": "https://apps.apple.com/app/id6806776579?action=write-review"
     },
     "keywords": [
-     "注音符號",
-     "學注音",
-     "注音練習",
-     "台灣注音",
-     "注音拼音",
-     "拼音練習"
+     "檔案管理",
+     "密碼",
+     "分割壓縮",
+     "zip檔",
+     "rar檔",
+     "7z檔"
     ],
-    "keyline": "注音遊戲：聽音、描寫、拼音",
+    "keyline": "開啟壓縮檔・預覽・加密壓縮",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4c82ed8c08aa1014",
+     "board": "7663e4361616fba9",
      "real_recording": false,
      "rules": "2026-10-18"
     },
@@ -320,194 +278,151 @@
    },
    {
     "kind": "clip",
-    "key": "claudeusagemini/zh-Hant",
+    "key": "lumiweather/zh-Hant",
     "locale": "zh-Hant",
-    "app": "claudeusagemini",
-    "video": "https://files.catbox.moe/mm3euk.mp4",
-    "hook": "Claude、Codex、Copilot、Gemini 一起看",
-    "name": "UsageNow：AI 用量與額度追蹤",
-    "title": "Claude、Codex、Copilot、Gemini 一起看 | Claude、Codex、Copilot 重置倒數 | UsageNow",
+    "app": "lumiweather",
+    "video": "https://files.catbox.moe/dfotuw.mp4",
+    "hook": "穿什麼、帶什麼 直接告訴你",
+    "name": "Lumi天氣星球：天氣預報與穿搭建議",
+    "title": "穿什麼、帶什麼 直接告訴你 | 今天穿什麼・帶傘嗎・降雨機率與紫外線 | Lumi天氣星球",
     "tags": [
-     "#AI用量與額度追蹤",
-     "#開發者",
-     "#工程師",
-     "#使用量",
-     "#限額",
-     "#UsageNow"
+     "#天氣預報與穿搭建議",
+     "#氣象預報",
+     "#台灣",
+     "#下雨",
+     "#體感溫度",
+     "#Lumi天氣星球"
     ],
-    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
+    "caption": "穿什麼、帶什麼 直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "UsageNow：AI 用量與額度追蹤 — Claude、Codex、Copilot、Gemini 一起看 — 剩多少、何時重置 一眼看清 — Claude、Codex、Copilot 重置倒數",
-    "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "alt": "Lumi天氣星球：天氣預報與穿搭建議 — 穿什麼、帶什麼 直接告訴你 — 適合出門嗎？看懂為什麼 — 今天穿什麼・帶傘嗎・降雨機率與紫外線",
+    "store": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6818607603?action=write-review"
+     "url": "https://apps.apple.com/app/id6779552704?action=write-review"
     },
     "keywords": [
-     "開發者",
-     "工程師",
-     "使用量",
-     "限額",
-     "配額",
-     "限制"
+     "氣象預報",
+     "台灣",
+     "下雨",
+     "體感溫度",
+     "氣溫",
+     "溫差"
     ],
-    "keyline": "Claude、Codex、Copilot 重置倒數",
+    "keyline": "今天穿什麼・帶傘嗎・降雨機率與紫外線",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "cf88bd5be14414ee",
-     "real_recording": true,
+     "board": "f7a5003af9c1539f",
+     "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 1
    },
    {
     "kind": "clip",
-    "key": "mochi_b/en",
-    "locale": "en",
-    "app": "mochi_b",
-    "video": "https://files.catbox.moe/c5k6l8.mp4",
-    "hook": "Work, errands, groceries in one place",
-    "name": "Mochi: Cute Checklist",
-    "title": "Work, errands, groceries in one place | Kawaii To-Do List & Chores | Mochi Cute Checklist",
+    "key": "mochi/pt-BR",
+    "locale": "pt-BR",
+    "app": "mochi",
+    "video": "https://files.catbox.moe/e7aq6y.mp4",
+    "hook": "Um toque e pronto",
+    "name": "Mochi: Lista fofa",
+    "title": "Um toque e pronto | Tarefas fofas e checklist | Mochi Lista fofa",
     "tags": [
-     "#Simple",
-     "#Routine",
-     "#Reminder",
+     "#ListaFofa",
+     "#Lembrete",
+     "#Afazeres",
      "#Planner",
-     "#Agenda",
-     "#MochiCuteChecklist"
+     "#Notas",
+     "#MochiListaFofa"
     ],
-    "caption": "Work, errands, groceries in one place\nTap the circle, feel the calm\nKawaii To-Do List & Chores\nMochi: Cute Checklist\nSearch “checklist” on the App Store\nAlso on Google Play\n\n#Simple #Routine #Reminder #Planner #MochiCuteChecklist",
-    "button": "Get it on the App Store",
+    "caption": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #Afazeres #Planner #MochiListafofa",
+    "button": "Baixar na App Store",
     "variant": "b",
-    "alt": "Mochi: Cute Checklist — Work, errands, groceries in one place — Tap the circle, feel the calm — Kawaii To-Do List & Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "alt": "Mochi: Lista fofa — Um toque e pronto — 101 temas fofos — Tarefas fofas e checklist",
+    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
      "url": "https://apps.apple.com/app/id6785004775?action=write-review"
     },
     "keywords": [
-     "chore",
-     "chart",
-     "grocery",
-     "simple",
-     "routine",
-     "reminder"
+     "lembrete",
+     "afazeres",
+     "planner",
+     "notas",
+     "hábitos",
+     "rotina"
     ],
-    "keyline": "Kawaii To-Do List & Chores",
+    "keyline": "Tarefas fofas e checklist",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "de911648f97ae007",
+     "board": "063389274bf4ea40",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "slot": 15
-   },
-   {
-    "kind": "card",
-    "key": "card/gsat2027/2026-10-20",
-    "locale": "zh-Hant",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261020.jpg",
-    "caption": "116 學測 倒數 94 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
-    "title": "116 學測 倒數 94 天",
-    "alt": "CountDaysNow — 116 學測 倒數 94 天 — 今天也前進一步 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
-    "name": "CountDaysNow",
-    "hook": "116 學測 倒數 94 天",
-    "tags": [
-     "#倒數日",
-     "#倒數計時",
-     "#紀念日",
-     "#生日",
-     "#還有幾天"
-    ],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow"
-   },
-   {
-    "kind": "card",
-    "key": "utility/bedtime/lumimission/bedtime_astronaut/zh-Hant",
-    "locale": "zh-Hant",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261020.jpg",
-    "caption": "今晚睡前 5 步：太空人睡前任務\n1. 把玩具收回家\n2. 洗澡\n3. 換上睡衣\n4. 刷牙\n5. 抱抱說晚安\n順序可依孩子習慣調整\n\nLumi 任務星球: 把每日生活常規變成溫柔的小任務\nApp Store／Google Play 搜尋「Lumi 任務星球」\n\n#生活習慣養成 #集點卡 #集星星 #好寶寶 #刷牙",
-    "title": "今晚睡前 5 步：太空人睡前任務",
-    "alt": "Lumi Mission Planet — 今晚睡前 5 步：太空人睡前任務 — 1. 把玩具收回家 — 2. 洗澡 — 兒童作息表・生活常規・集點獎勵貼紙",
-    "name": "Lumi Mission Planet",
-    "hook": "今晚睡前 5 步：太空人睡前任務",
-    "tags": [
-     "#生活習慣養成",
-     "#集點卡",
-     "#集星星",
-     "#好寶寶",
-     "#刷牙"
-    ],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimission"
    }
   ],
   "youtube": [
    {
     "kind": "clip",
-    "key": "lumibopomofo_b/zh-Hant",
+    "key": "zipbox/zh-Hant",
     "locale": "zh-Hant",
-    "app": "lumibopomofo_b",
-    "video": "https://files.catbox.moe/nqp9gy.mp4",
-    "hook": "今日複習 再練一次",
-    "name": "Lumi注音星球",
-    "title": "今日複習 再練一次 | 注音遊戲：聽音、描寫、拼音 | Lumi注音星球",
+    "app": "zipbox",
+    "video": "https://files.catbox.moe/z5y69c.mp4",
+    "hook": "先看裡面有什麼 只取那一個",
+    "name": "Zipbox 解壓縮：RAR ZIP 7z",
+    "title": "先看裡面有什麼 只取那一個 | 開啟壓縮檔・預覽・加密壓縮 | Zipbox 解壓縮",
     "tags": [
-     "#台灣注音",
-     "#注音拼音",
-     "#拼音練習",
-     "#聲調",
-     "#聲母",
-     "#Lumi注音星球"
+     "#檔案管理",
+     "#密碼",
+     "#分割壓縮",
+     "#zip檔",
+     "#rar檔",
+     "#Zipbox解壓縮"
     ],
-    "caption": "今日複習 再練一次\n選對注音 餵小夥伴\n注音遊戲：聽音、描寫、拼音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
+    "caption": "先看裡面有什麼 只取那一個\n也能壓縮成 加密 ZIP\n開啟壓縮檔・預覽・加密壓縮\nZipbox 解壓縮：RAR ZIP 7z\n在 App Store 搜尋「密碼保護 zip」\nAndroid 版在 Google Play\n\n#檔案管理 #密碼 #分割壓縮 #zip檔 #Zipbox解壓縮",
     "button": "在 App Store 下載",
-    "variant": "c",
-    "alt": "Lumi注音星球 — 今日複習 再練一次 — 選對注音 餵小夥伴 — 注音遊戲：聽音、描寫、拼音",
-    "store": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
+    "variant": "b",
+    "alt": "Zipbox 解壓縮：RAR ZIP 7z — 先看裡面有什麼 只取那一個 — 也能壓縮成 加密 ZIP — 開啟壓縮檔・預覽・加密壓縮",
+    "store": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6773017109?action=write-review"
+     "url": "https://apps.apple.com/app/id6806776579?action=write-review"
     },
     "keywords": [
-     "注音符號",
-     "學注音",
-     "注音練習",
-     "台灣注音",
-     "注音拼音",
-     "拼音練習"
+     "檔案管理",
+     "密碼",
+     "分割壓縮",
+     "zip檔",
+     "rar檔",
+     "7z檔"
     ],
-    "keyline": "注音遊戲：聽音、描寫、拼音",
+    "keyline": "開啟壓縮檔・預覽・加密壓縮",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4c82ed8c08aa1014",
+     "board": "7663e4361616fba9",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "今日複習 再練一次 | Lumi注音星球 #Shorts",
-     "description": "今日複習 再練一次\n選對注音 餵小夥伴\n注音遊戲：聽音、描寫、拼音\n\nLumi注音星球\nApp Store: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6773017109?action=write-review\n\n注音符號 · 學注音 · 注音練習 · 台灣注音 · 注音拼音 · 拼音練習\n\n#Shorts #台灣注音 #Lumi注音星球",
+     "title": "先看裡面有什麼 只取那一個 | Zipbox 解壓縮 #Shorts",
+     "description": "先看裡面有什麼 只取那一個\n也能壓縮成 加密 ZIP\n開啟壓縮檔・預覽・加密壓縮\n\nZipbox 解壓縮：RAR ZIP 7z\nApp Store: https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6806776579?action=write-review\n\n檔案管理 · 密碼 · 分割壓縮 · zip檔 · rar檔 · 7z檔\n\n#Shorts #檔案管理 #Zipbox解壓縮",
      "tags": [
-      "注音符號",
-      "學注音",
-      "注音練習",
-      "台灣注音",
-      "注音拼音",
-      "拼音練習",
-      "聲調",
-      "聲母",
-      "Lumi注音星球"
+      "檔案管理",
+      "密碼",
+      "分割壓縮",
+      "zip檔",
+      "rar檔",
+      "7z檔",
+      "Zipbox解壓縮",
+      "Zipbox 解壓縮"
      ]
     },
     "slot": 1
@@ -572,120 +487,119 @@
    },
    {
     "kind": "clip",
-    "key": "claudeusagemini/zh-Hant",
+    "key": "lumiweather/zh-Hant",
     "locale": "zh-Hant",
-    "app": "claudeusagemini",
-    "video": "https://files.catbox.moe/mm3euk.mp4",
-    "hook": "Claude、Codex、Copilot、Gemini 一起看",
-    "name": "UsageNow：AI 用量與額度追蹤",
-    "title": "Claude、Codex、Copilot、Gemini 一起看 | Claude、Codex、Copilot 重置倒數 | UsageNow",
+    "app": "lumiweather",
+    "video": "https://files.catbox.moe/dfotuw.mp4",
+    "hook": "穿什麼、帶什麼 直接告訴你",
+    "name": "Lumi天氣星球：天氣預報與穿搭建議",
+    "title": "穿什麼、帶什麼 直接告訴你 | 今天穿什麼・帶傘嗎・降雨機率與紫外線 | Lumi天氣星球",
     "tags": [
-     "#AI用量與額度追蹤",
-     "#開發者",
-     "#工程師",
-     "#使用量",
-     "#限額",
-     "#UsageNow"
+     "#天氣預報與穿搭建議",
+     "#氣象預報",
+     "#台灣",
+     "#下雨",
+     "#體感溫度",
+     "#Lumi天氣星球"
     ],
-    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
+    "caption": "穿什麼、帶什麼 直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "UsageNow：AI 用量與額度追蹤 — Claude、Codex、Copilot、Gemini 一起看 — 剩多少、何時重置 一眼看清 — Claude、Codex、Copilot 重置倒數",
-    "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "alt": "Lumi天氣星球：天氣預報與穿搭建議 — 穿什麼、帶什麼 直接告訴你 — 適合出門嗎？看懂為什麼 — 今天穿什麼・帶傘嗎・降雨機率與紫外線",
+    "store": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6818607603?action=write-review"
+     "url": "https://apps.apple.com/app/id6779552704?action=write-review"
     },
     "keywords": [
-     "開發者",
-     "工程師",
-     "使用量",
-     "限額",
-     "配額",
-     "限制"
+     "氣象預報",
+     "台灣",
+     "下雨",
+     "體感溫度",
+     "氣溫",
+     "溫差"
     ],
-    "keyline": "Claude、Codex、Copilot 重置倒數",
+    "keyline": "今天穿什麼・帶傘嗎・降雨機率與紫外線",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "cf88bd5be14414ee",
-     "real_recording": true,
+     "board": "f7a5003af9c1539f",
+     "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Claude、Codex、Copilot、Gemini 一起看 | UsageNow #Shorts",
-     "description": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\n\nUsageNow：AI 用量與額度追蹤\nApp Store: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6818607603?action=write-review\n\n開發者 · 工程師 · 使用量 · 限額 · 配額 · 限制\n\n#Shorts #AI用量與額度追蹤 #UsageNow",
+     "title": "穿什麼、帶什麼 直接告訴你 | Lumi天氣星球 #Shorts",
+     "description": "穿什麼、帶什麼 直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・帶傘嗎・降雨機率與紫外線\n\nLumi天氣星球：天氣預報與穿搭建議\nApp Store: https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6779552704?action=write-review\n\n氣象預報 · 台灣 · 下雨 · 體感溫度 · 氣溫 · 溫差\n\n#Shorts #天氣預報與穿搭建議 #Lumi天氣星球",
      "tags": [
-      "開發者",
-      "工程師",
-      "使用量",
-      "限額",
-      "配額",
-      "限制",
-      "AI用量與額度追蹤",
-      "UsageNow"
+      "氣象預報",
+      "台灣",
+      "下雨",
+      "體感溫度",
+      "氣溫",
+      "溫差",
+      "天氣預報與穿搭建議",
+      "Lumi天氣星球"
      ]
     },
     "slot": 1
    },
    {
     "kind": "clip",
-    "key": "mochi_b/en",
-    "locale": "en",
-    "app": "mochi_b",
-    "video": "https://files.catbox.moe/c5k6l8.mp4",
-    "hook": "Work, errands, groceries in one place",
-    "name": "Mochi: Cute Checklist",
-    "title": "Work, errands, groceries in one place | Kawaii To-Do List & Chores | Mochi Cute Checklist",
+    "key": "mochi/pt-BR",
+    "locale": "pt-BR",
+    "app": "mochi",
+    "video": "https://files.catbox.moe/e7aq6y.mp4",
+    "hook": "Um toque e pronto",
+    "name": "Mochi: Lista fofa",
+    "title": "Um toque e pronto | Tarefas fofas e checklist | Mochi Lista fofa",
     "tags": [
-     "#Simple",
-     "#Routine",
-     "#Reminder",
+     "#ListaFofa",
+     "#Lembrete",
+     "#Afazeres",
      "#Planner",
-     "#Agenda",
-     "#MochiCuteChecklist"
+     "#Notas",
+     "#MochiListaFofa"
     ],
-    "caption": "Work, errands, groceries in one place\nTap the circle, feel the calm\nKawaii To-Do List & Chores\nMochi: Cute Checklist\nSearch “checklist” on the App Store\nAlso on Google Play\n\n#Simple #Routine #Reminder #Planner #MochiCuteChecklist",
-    "button": "Get it on the App Store",
+    "caption": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #Afazeres #Planner #MochiListafofa",
+    "button": "Baixar na App Store",
     "variant": "b",
-    "alt": "Mochi: Cute Checklist — Work, errands, groceries in one place — Tap the circle, feel the calm — Kawaii To-Do List & Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=youtube&mt=8",
+    "alt": "Mochi: Lista fofa — Um toque e pronto — 101 temas fofos — Tarefas fofas e checklist",
+    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=youtube&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dyoutube%26utm_campaign%3Dmochi",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
      "url": "https://apps.apple.com/app/id6785004775?action=write-review"
     },
     "keywords": [
-     "chore",
-     "chart",
-     "grocery",
-     "simple",
-     "routine",
-     "reminder"
+     "lembrete",
+     "afazeres",
+     "planner",
+     "notas",
+     "hábitos",
+     "rotina"
     ],
-    "keyline": "Kawaii To-Do List & Chores",
+    "keyline": "Tarefas fofas e checklist",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "de911648f97ae007",
+     "board": "063389274bf4ea40",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "youtube": {
-     "title": "Work, errands, groceries in one place | Mochi Cute Checklist #Shorts",
-     "description": "Work, errands, groceries in one place\nTap the circle, feel the calm\nKawaii To-Do List & Chores\n\nMochi: Cute Checklist\nApp Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=youtube&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dyoutube%26utm_campaign%3Dmochi\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nchore · chart · grocery · simple · routine · reminder\n\n#Shorts #Simple #MochiCuteChecklist",
+     "title": "Um toque e pronto | Mochi Lista fofa #Shorts",
+     "description": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\n\nMochi: Lista fofa\nApp Store: https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=youtube&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dyoutube%26utm_campaign%3Dmochi\nJá usa este app? Avalie ou escreva uma resenha na App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nlembrete · afazeres · planner · notas · hábitos · rotina\n\n#Shorts #ListaFofa #MochiListafofa",
      "tags": [
-      "chore",
-      "chart",
-      "grocery",
-      "simple",
-      "routine",
-      "reminder",
-      "Planner",
-      "Agenda",
-      "MochiCuteChecklist",
-      "Mochi Cute Checklist"
+      "lembrete",
+      "afazeres",
+      "planner",
+      "notas",
+      "hábitos",
+      "rotina",
+      "ListaFofa",
+      "MochiListaFofa",
+      "Mochi Lista fofa"
      ]
     },
     "slot": 15
@@ -694,50 +608,50 @@
   "pinterest": [
    {
     "kind": "clip",
-    "key": "lumibopomofo_b/zh-Hant",
+    "key": "zipbox/zh-Hant",
     "locale": "zh-Hant",
-    "app": "lumibopomofo_b",
-    "video": "https://files.catbox.moe/nqp9gy.mp4",
-    "hook": "今日複習 再練一次",
-    "name": "Lumi注音星球",
-    "title": "今日複習 再練一次 | 注音遊戲：聽音、描寫、拼音 | Lumi注音星球",
+    "app": "zipbox",
+    "video": "https://files.catbox.moe/z5y69c.mp4",
+    "hook": "先看裡面有什麼 只取那一個",
+    "name": "Zipbox 解壓縮：RAR ZIP 7z",
+    "title": "先看裡面有什麼 只取那一個 | 開啟壓縮檔・預覽・加密壓縮 | Zipbox 解壓縮",
     "tags": [
-     "#台灣注音",
-     "#注音拼音",
-     "#拼音練習",
-     "#聲調",
-     "#聲母",
-     "#Lumi注音星球"
+     "#檔案管理",
+     "#密碼",
+     "#分割壓縮",
+     "#zip檔",
+     "#rar檔",
+     "#Zipbox解壓縮"
     ],
-    "caption": "今日複習 再練一次\n選對注音 餵小夥伴\n注音遊戲：聽音、描寫、拼音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
+    "caption": "先看裡面有什麼 只取那一個\n也能壓縮成 加密 ZIP\n開啟壓縮檔・預覽・加密壓縮\nZipbox 解壓縮：RAR ZIP 7z\n在 App Store 搜尋「密碼保護 zip」\nAndroid 版在 Google Play\n\n#檔案管理 #密碼 #分割壓縮 #zip檔 #Zipbox解壓縮",
     "button": "在 App Store 下載",
-    "variant": "c",
-    "alt": "Lumi注音星球 — 今日複習 再練一次 — 選對注音 餵小夥伴 — 注音遊戲：聽音、描寫、拼音",
-    "store": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
+    "variant": "b",
+    "alt": "Zipbox 解壓縮：RAR ZIP 7z — 先看裡面有什麼 只取那一個 — 也能壓縮成 加密 ZIP — 開啟壓縮檔・預覽・加密壓縮",
+    "store": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6773017109?action=write-review"
+     "url": "https://apps.apple.com/app/id6806776579?action=write-review"
     },
     "keywords": [
-     "注音符號",
-     "學注音",
-     "注音練習",
-     "台灣注音",
-     "注音拼音",
-     "拼音練習"
+     "檔案管理",
+     "密碼",
+     "分割壓縮",
+     "zip檔",
+     "rar檔",
+     "7z檔"
     ],
-    "keyline": "注音遊戲：聽音、描寫、拼音",
+    "keyline": "開啟壓縮檔・預覽・加密壓縮",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4c82ed8c08aa1014",
+     "board": "7663e4361616fba9",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "今日複習 再練一次\n選對注音 餵小夥伴\n注音遊戲：聽音、描寫、拼音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
-     "link": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8"
+     "description": "先看裡面有什麼 只取那一個\n也能壓縮成 加密 ZIP\n開啟壓縮檔・預覽・加密壓縮\nZipbox 解壓縮：RAR ZIP 7z\n在 App Store 搜尋「密碼保護 zip」\nAndroid 版在 Google Play\n\n#檔案管理 #密碼 #分割壓縮 #zip檔 #Zipbox解壓縮\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
+     "link": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=social&mt=8"
     },
     "slot": 1
    },
@@ -792,199 +706,149 @@
    },
    {
     "kind": "clip",
-    "key": "claudeusagemini/zh-Hant",
+    "key": "lumiweather/zh-Hant",
     "locale": "zh-Hant",
-    "app": "claudeusagemini",
-    "video": "https://files.catbox.moe/mm3euk.mp4",
-    "hook": "Claude、Codex、Copilot、Gemini 一起看",
-    "name": "UsageNow：AI 用量與額度追蹤",
-    "title": "Claude、Codex、Copilot、Gemini 一起看 | Claude、Codex、Copilot 重置倒數 | UsageNow",
+    "app": "lumiweather",
+    "video": "https://files.catbox.moe/dfotuw.mp4",
+    "hook": "穿什麼、帶什麼 直接告訴你",
+    "name": "Lumi天氣星球：天氣預報與穿搭建議",
+    "title": "穿什麼、帶什麼 直接告訴你 | 今天穿什麼・帶傘嗎・降雨機率與紫外線 | Lumi天氣星球",
     "tags": [
-     "#AI用量與額度追蹤",
-     "#開發者",
-     "#工程師",
-     "#使用量",
-     "#限額",
-     "#UsageNow"
+     "#天氣預報與穿搭建議",
+     "#氣象預報",
+     "#台灣",
+     "#下雨",
+     "#體感溫度",
+     "#Lumi天氣星球"
     ],
-    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
+    "caption": "穿什麼、帶什麼 直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "UsageNow：AI 用量與額度追蹤 — Claude、Codex、Copilot、Gemini 一起看 — 剩多少、何時重置 一眼看清 — Claude、Codex、Copilot 重置倒數",
-    "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "alt": "Lumi天氣星球：天氣預報與穿搭建議 — 穿什麼、帶什麼 直接告訴你 — 適合出門嗎？看懂為什麼 — 今天穿什麼・帶傘嗎・降雨機率與紫外線",
+    "store": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6818607603?action=write-review"
+     "url": "https://apps.apple.com/app/id6779552704?action=write-review"
     },
     "keywords": [
-     "開發者",
-     "工程師",
-     "使用量",
-     "限額",
-     "配額",
-     "限制"
+     "氣象預報",
+     "台灣",
+     "下雨",
+     "體感溫度",
+     "氣溫",
+     "溫差"
     ],
-    "keyline": "Claude、Codex、Copilot 重置倒數",
+    "keyline": "今天穿什麼・帶傘嗎・降雨機率與紫外線",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "cf88bd5be14414ee",
-     "real_recording": true,
+     "board": "f7a5003af9c1539f",
+     "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-     "link": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "description": "穿什麼、帶什麼 直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
+     "link": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8"
     },
     "slot": 1
    },
    {
     "kind": "clip",
-    "key": "mochi_b/en",
-    "locale": "en",
-    "app": "mochi_b",
-    "video": "https://files.catbox.moe/c5k6l8.mp4",
-    "hook": "Work, errands, groceries in one place",
-    "name": "Mochi: Cute Checklist",
-    "title": "Work, errands, groceries in one place | Kawaii To-Do List & Chores | Mochi Cute Checklist",
+    "key": "mochi/pt-BR",
+    "locale": "pt-BR",
+    "app": "mochi",
+    "video": "https://files.catbox.moe/e7aq6y.mp4",
+    "hook": "Um toque e pronto",
+    "name": "Mochi: Lista fofa",
+    "title": "Um toque e pronto | Tarefas fofas e checklist | Mochi Lista fofa",
     "tags": [
-     "#Simple",
-     "#Routine",
-     "#Reminder",
+     "#ListaFofa",
+     "#Lembrete",
+     "#Afazeres",
      "#Planner",
-     "#Agenda",
-     "#MochiCuteChecklist"
+     "#Notas",
+     "#MochiListaFofa"
     ],
-    "caption": "Work, errands, groceries in one place\nTap the circle, feel the calm\nKawaii To-Do List & Chores\nMochi: Cute Checklist\nSearch “checklist” on the App Store\nAlso on Google Play\n\n#Simple #Routine #Reminder #Planner #MochiCuteChecklist",
-    "button": "Get it on the App Store",
+    "caption": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #Afazeres #Planner #MochiListafofa",
+    "button": "Baixar na App Store",
     "variant": "b",
-    "alt": "Mochi: Cute Checklist — Work, errands, groceries in one place — Tap the circle, feel the calm — Kawaii To-Do List & Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "alt": "Mochi: Lista fofa — Um toque e pronto — 101 temas fofos — Tarefas fofas e checklist",
+    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
      "url": "https://apps.apple.com/app/id6785004775?action=write-review"
     },
     "keywords": [
-     "chore",
-     "chart",
-     "grocery",
-     "simple",
-     "routine",
-     "reminder"
+     "lembrete",
+     "afazeres",
+     "planner",
+     "notas",
+     "hábitos",
+     "rotina"
     ],
-    "keyline": "Kawaii To-Do List & Chores",
+    "keyline": "Tarefas fofas e checklist",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "de911648f97ae007",
+     "board": "063389274bf4ea40",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "pinterest": {
-     "description": "Work, errands, groceries in one place\nTap the circle, feel the calm\nKawaii To-Do List & Chores\nMochi: Cute Checklist\nSearch “checklist” on the App Store\nAlso on Google Play\n\n#Simple #Routine #Reminder #Planner #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-     "link": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8"
+     "description": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #Afazeres #Planner #MochiListafofa\n\nBaixar na App Store: https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
+     "link": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8"
     },
     "slot": 15
-   },
-   {
-    "kind": "card",
-    "key": "card/gsat2027/2026-10-20",
-    "locale": "zh-Hant",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/countdown-cards/card-20261020.jpg",
-    "caption": "116 學測 倒數 94 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天",
-    "title": "116 學測 倒數 94 天",
-    "alt": "CountDaysNow — 116 學測 倒數 94 天 — 今天也前進一步 — App Store／Google Play 搜尋「CountDaysNow」 — 倒數日 · 倒數計時 · 紀念日",
-    "name": "CountDaysNow",
-    "hook": "116 學測 倒數 94 天",
-    "tags": [
-     "#倒數日",
-     "#倒數計時",
-     "#紀念日",
-     "#生日",
-     "#還有幾天"
-    ],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
-    "pinterest": {
-     "description": "116 學測 倒數 94 天\n今天也前進一步\n\nApp Store／Google Play 搜尋「CountDaysNow」\n\n#倒數日 #倒數計時 #紀念日 #生日 #還有幾天\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow&referrer=utm_source%3Dsocial%26utm_campaign%3Dcountdaysnow",
-     "link": "https://apps.apple.com/tw/app/id6807079789?pt=118326163&ct=social&mt=8"
-    }
-   },
-   {
-    "kind": "card",
-    "key": "utility/bedtime/lumimission/bedtime_astronaut/zh-Hant",
-    "locale": "zh-Hant",
-    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261020.jpg",
-    "caption": "今晚睡前 5 步：太空人睡前任務\n1. 把玩具收回家\n2. 洗澡\n3. 換上睡衣\n4. 刷牙\n5. 抱抱說晚安\n順序可依孩子習慣調整\n\nLumi 任務星球: 把每日生活常規變成溫柔的小任務\nApp Store／Google Play 搜尋「Lumi 任務星球」\n\n#生活習慣養成 #集點卡 #集星星 #好寶寶 #刷牙",
-    "title": "今晚睡前 5 步：太空人睡前任務",
-    "alt": "Lumi Mission Planet — 今晚睡前 5 步：太空人睡前任務 — 1. 把玩具收回家 — 2. 洗澡 — 兒童作息表・生活常規・集點獎勵貼紙",
-    "name": "Lumi Mission Planet",
-    "hook": "今晚睡前 5 步：太空人睡前任務",
-    "tags": [
-     "#生活習慣養成",
-     "#集點卡",
-     "#集星星",
-     "#好寶寶",
-     "#刷牙"
-    ],
-    "button": "在 App Store 下載",
-    "store": "https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimission",
-    "pinterest": {
-     "description": "今晚睡前 5 步：太空人睡前任務\n1. 把玩具收回家\n2. 洗澡\n3. 換上睡衣\n4. 刷牙\n5. 抱抱說晚安\n順序可依孩子習慣調整\n\nLumi 任務星球: 把每日生活常規變成溫柔的小任務\nApp Store／Google Play 搜尋「Lumi 任務星球」\n\n#生活習慣養成 #集點卡 #集星星 #好寶寶 #刷牙\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumimission",
-     "link": "https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=social&mt=8"
-    }
    }
   ],
   "tiktok": [
    {
     "kind": "clip",
-    "key": "lumibopomofo_b/zh-Hant",
+    "key": "zipbox/zh-Hant",
     "locale": "zh-Hant",
-    "app": "lumibopomofo_b",
-    "video": "https://files.catbox.moe/nqp9gy.mp4",
-    "hook": "今日複習 再練一次",
-    "name": "Lumi注音星球",
-    "title": "今日複習 再練一次 | 注音遊戲：聽音、描寫、拼音 | Lumi注音星球",
+    "app": "zipbox",
+    "video": "https://files.catbox.moe/z5y69c.mp4",
+    "hook": "先看裡面有什麼 只取那一個",
+    "name": "Zipbox 解壓縮：RAR ZIP 7z",
+    "title": "先看裡面有什麼 只取那一個 | 開啟壓縮檔・預覽・加密壓縮 | Zipbox 解壓縮",
     "tags": [
-     "#台灣注音",
-     "#注音拼音",
-     "#拼音練習",
-     "#聲調",
-     "#聲母",
-     "#Lumi注音星球"
+     "#檔案管理",
+     "#密碼",
+     "#分割壓縮",
+     "#zip檔",
+     "#rar檔",
+     "#Zipbox解壓縮"
     ],
-    "caption": "今日複習 再練一次\n選對注音 餵小夥伴\n注音遊戲：聽音、描寫、拼音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球",
+    "caption": "先看裡面有什麼 只取那一個\n也能壓縮成 加密 ZIP\n開啟壓縮檔・預覽・加密壓縮\nZipbox 解壓縮：RAR ZIP 7z\n在 App Store 搜尋「密碼保護 zip」\nAndroid 版在 Google Play\n\n#檔案管理 #密碼 #分割壓縮 #zip檔 #Zipbox解壓縮",
     "button": "在 App Store 下載",
-    "variant": "c",
-    "alt": "Lumi注音星球 — 今日複習 再練一次 — 選對注音 餵小夥伴 — 注音遊戲：聽音、描寫、拼音",
-    "store": "https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo",
+    "variant": "b",
+    "alt": "Zipbox 解壓縮：RAR ZIP 7z — 先看裡面有什麼 只取那一個 — 也能壓縮成 加密 ZIP — 開啟壓縮檔・預覽・加密壓縮",
+    "store": "https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6773017109?action=write-review"
+     "url": "https://apps.apple.com/app/id6806776579?action=write-review"
     },
     "keywords": [
-     "注音符號",
-     "學注音",
-     "注音練習",
-     "台灣注音",
-     "注音拼音",
-     "拼音練習"
+     "檔案管理",
+     "密碼",
+     "分割壓縮",
+     "zip檔",
+     "rar檔",
+     "7z檔"
     ],
-    "keyline": "注音遊戲：聽音、描寫、拼音",
+    "keyline": "開啟壓縮檔・預覽・加密壓縮",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "4c82ed8c08aa1014",
+     "board": "7663e4361616fba9",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "今日複習 再練一次\n選對注音 餵小夥伴\n注音遊戲：聽音、描寫、拼音\n在 App Store 搜尋「Lumi注音星球」\nAndroid 版在 Google Play\n\n#台灣注音 #注音拼音 #拼音練習 #聲調 #Lumi注音星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6773017109?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumibopomofo"
+     "caption": "先看裡面有什麼 只取那一個\n也能壓縮成 加密 ZIP\n開啟壓縮檔・預覽・加密壓縮\nZipbox 解壓縮：RAR ZIP 7z\n在 App Store 搜尋「密碼保護 zip」\nAndroid 版在 Google Play\n\n#檔案管理 #密碼 #分割壓縮 #zip檔 #Zipbox解壓縮\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&referrer=utm_source%3Dsocial%26utm_campaign%3Dzipbox"
     },
     "slot": 1
    },
@@ -1038,97 +902,97 @@
    },
    {
     "kind": "clip",
-    "key": "claudeusagemini/zh-Hant",
+    "key": "lumiweather/zh-Hant",
     "locale": "zh-Hant",
-    "app": "claudeusagemini",
-    "video": "https://files.catbox.moe/mm3euk.mp4",
-    "hook": "Claude、Codex、Copilot、Gemini 一起看",
-    "name": "UsageNow：AI 用量與額度追蹤",
-    "title": "Claude、Codex、Copilot、Gemini 一起看 | Claude、Codex、Copilot 重置倒數 | UsageNow",
+    "app": "lumiweather",
+    "video": "https://files.catbox.moe/dfotuw.mp4",
+    "hook": "穿什麼、帶什麼 直接告訴你",
+    "name": "Lumi天氣星球：天氣預報與穿搭建議",
+    "title": "穿什麼、帶什麼 直接告訴你 | 今天穿什麼・帶傘嗎・降雨機率與紫外線 | Lumi天氣星球",
     "tags": [
-     "#AI用量與額度追蹤",
-     "#開發者",
-     "#工程師",
-     "#使用量",
-     "#限額",
-     "#UsageNow"
+     "#天氣預報與穿搭建議",
+     "#氣象預報",
+     "#台灣",
+     "#下雨",
+     "#體感溫度",
+     "#Lumi天氣星球"
     ],
-    "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow",
+    "caption": "穿什麼、帶什麼 直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球",
     "button": "在 App Store 下載",
     "variant": "b",
-    "alt": "UsageNow：AI 用量與額度追蹤 — Claude、Codex、Copilot、Gemini 一起看 — 剩多少、何時重置 一眼看清 — Claude、Codex、Copilot 重置倒數",
-    "store": "https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8",
-    "play": null,
+    "alt": "Lumi天氣星球：天氣預報與穿搭建議 — 穿什麼、帶什麼 直接告訴你 — 適合出門嗎？看懂為什麼 — 今天穿什麼・帶傘嗎・降雨機率與紫外線",
+    "store": "https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather",
     "review": {
      "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
-     "url": "https://apps.apple.com/app/id6818607603?action=write-review"
+     "url": "https://apps.apple.com/app/id6779552704?action=write-review"
     },
     "keywords": [
-     "開發者",
-     "工程師",
-     "使用量",
-     "限額",
-     "配額",
-     "限制"
+     "氣象預報",
+     "台灣",
+     "下雨",
+     "體感溫度",
+     "氣溫",
+     "溫差"
     ],
-    "keyline": "Claude、Codex、Copilot 重置倒數",
+    "keyline": "今天穿什麼・帶傘嗎・降雨機率與紫外線",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "cf88bd5be14414ee",
-     "real_recording": true,
+     "board": "f7a5003af9c1539f",
+     "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Claude、Codex、Copilot、Gemini 一起看\n剩多少、何時重置 一眼看清\nClaude、Codex、Copilot 重置倒數\nUsageNow：AI 用量與額度追蹤\n在 App Store 搜尋「ai 用量追蹤」\n\n#AI用量與額度追蹤 #開發者 #工程師 #使用量 #UsageNow\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=social&mt=8"
+     "caption": "穿什麼、帶什麼 直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather"
     },
     "slot": 1
    },
    {
     "kind": "clip",
-    "key": "mochi_b/en",
-    "locale": "en",
-    "app": "mochi_b",
-    "video": "https://files.catbox.moe/c5k6l8.mp4",
-    "hook": "Work, errands, groceries in one place",
-    "name": "Mochi: Cute Checklist",
-    "title": "Work, errands, groceries in one place | Kawaii To-Do List & Chores | Mochi Cute Checklist",
+    "key": "mochi/pt-BR",
+    "locale": "pt-BR",
+    "app": "mochi",
+    "video": "https://files.catbox.moe/e7aq6y.mp4",
+    "hook": "Um toque e pronto",
+    "name": "Mochi: Lista fofa",
+    "title": "Um toque e pronto | Tarefas fofas e checklist | Mochi Lista fofa",
     "tags": [
-     "#Simple",
-     "#Routine",
-     "#Reminder",
+     "#ListaFofa",
+     "#Lembrete",
+     "#Afazeres",
      "#Planner",
-     "#Agenda",
-     "#MochiCuteChecklist"
+     "#Notas",
+     "#MochiListaFofa"
     ],
-    "caption": "Work, errands, groceries in one place\nTap the circle, feel the calm\nKawaii To-Do List & Chores\nMochi: Cute Checklist\nSearch “checklist” on the App Store\nAlso on Google Play\n\n#Simple #Routine #Reminder #Planner #MochiCuteChecklist",
-    "button": "Get it on the App Store",
+    "caption": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #Afazeres #Planner #MochiListafofa",
+    "button": "Baixar na App Store",
     "variant": "b",
-    "alt": "Mochi: Cute Checklist — Work, errands, groceries in one place — Tap the circle, feel the calm — Kawaii To-Do List & Chores",
-    "store": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8",
+    "alt": "Mochi: Lista fofa — Um toque e pronto — 101 temas fofos — Tarefas fofas e checklist",
+    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8",
     "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
     "review": {
-     "label": "Already using this app? Rate or review it on the App Store",
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
      "url": "https://apps.apple.com/app/id6785004775?action=write-review"
     },
     "keywords": [
-     "chore",
-     "chart",
-     "grocery",
-     "simple",
-     "routine",
-     "reminder"
+     "lembrete",
+     "afazeres",
+     "planner",
+     "notas",
+     "hábitos",
+     "rotina"
     ],
-    "keyline": "Kawaii To-Do List & Chores",
+    "keyline": "Tarefas fofas e checklist",
     "compliance": {
      "store_claims_ok": true,
      "screen_text_ok": true,
-     "board": "de911648f97ae007",
+     "board": "063389274bf4ea40",
      "real_recording": false,
      "rules": "2026-10-18"
     },
     "tiktok": {
-     "caption": "Work, errands, groceries in one place\nTap the circle, feel the calm\nKawaii To-Do List & Chores\nMochi: Cute Checklist\nSearch “checklist” on the App Store\nAlso on Google Play\n\n#Simple #Routine #Reminder #Planner #MochiCuteChecklist\n\nGet it on the App Store: https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
+     "caption": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #Afazeres #Planner #MochiListafofa\n\nBaixar na App Store: https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
     },
     "slot": 15
    }

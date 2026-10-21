@@ -810,7 +810,7 @@ class ThreadsMochiTrialTest(unittest.TestCase):
         return B.run(client, catalog(), state, sleeper=lambda s: None, log=lambda *a: None, **kw)
 
     def test_every_trial_entry_is_known_by_its_text(self):
-        self.assertEqual(7, len(self.TRIAL))
+        self.assertEqual(14, len(self.TRIAL))   # every post in threads_mochi_trial.json (14 since 10-21)
         finder = B.AppFinder(catalog())
         for e in self.TRIAL.values():
             post = finder.resolve("threads", {"id": "1", "caption": e["text"]})

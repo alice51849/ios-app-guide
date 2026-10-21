@@ -52,6 +52,7 @@ import download_links as DL
 import ig_bio as IGB
 import post_qa
 import review_links
+import threads_topics
 import search_caption as SC
 import threads_cap
 import threads_series
@@ -378,9 +379,18 @@ def post_threads(clip, variant=None, wait=5, tries=60):
     user = _get(f"{THREADS}/me?fields=id&access_token={token}").get("id") or user
     t = text_for(clip["locale"])
     text = caption(clip, "threads", variant)
-    container = _post(f"{THREADS}/{user}/threads", {
-        "media_type": "VIDEO", "video_url": clip["url"], "text": text, "access_token": token,
-    })["id"]
+    fields = {"media_type": "VIDEO", "video_url": clip["url"], "text": text, "access_token": token}
+    app_id = review_links.store_app_id(clip.get("store_url", ""))
+    topic = threads_topics.for_post(app_id, text, clip.get("locale"), clip.get("topic_tag"))
+    container = None
+    if topic:  # threads_topics.py: one topic per post; a refused topic never stops the post
+        try:
+            container = _post(f"{THREADS}/{user}/threads", dict(fields, topic_tag=topic))["id"]
+        except Exception as exc:
+            print(f"::warning::clip: Threads refused the topic tag {topic!r} ({exc.__class__.__name__}); "
+                  "posted without a topic")
+    if container is None:
+        container = _post(f"{THREADS}/{user}/threads", fields)["id"]
     for _ in range(tries):
         status = _get(f"{THREADS}/{container}?fields=status,error_message&access_token={token}")
         if status.get("status") == "FINISHED":
@@ -400,7 +410,7 @@ def post_threads(clip, variant=None, wait=5, tries=60):
     links = [f"{t['button']}: {store}"]
     if play:
         links.append(f"Google Play: {play}")
-    reply_text = "\n".join(links)
+    reply_text = threads_topics.review_tail("\n".join(links), app_id, clip.get("locale"), text)
     reply_ok = False
     problems = DL.threads_reply_problems(reply_text, store, play)
     if problems:

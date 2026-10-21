@@ -1,0 +1,15 @@
+{
+ "schema": "lumi.threads-mochi-trial-status/v1",
+ "note": "threads_post.py: what each Mochi trial day posted (Taiwan date). A record only; whether an entry is up is read from the account, never from this file.",
+ "entries": {
+  "2026-10-20": {
+   "ct": "th_mochi_en_01",
+   "posted_day": "2026-10-20",
+   "post_id": "18131744458766668",
+   "posted_at": "2026-10-20T13:12:00Z",
+   "link_reply_id": null,
+   "link_ok": null,
+   "source": "backfilled 2026-10-21 from the posting run (post id 18131744458766668, 13:12Z); link reply id not recorded then"
+  }
+ }
+}

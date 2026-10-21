@@ -68,8 +68,8 @@ class TrialFileTests(unittest.TestCase):
         seen = set()
         for p in POSTS:
             with self.subTest(ct=p["ct"]):
-                self.assertIn(p["lang"], ("en-US", "ja", "ko", "zh-Hant"))
-                self.assertRegex(p["ct"], r"^th_mochi_(en|ja|ko|zh)_\d{2}$")
+                self.assertIn(p["lang"], ("en-US", "ja", "ko", "zh-Hant", "pt-BR"))
+                self.assertRegex(p["ct"], r"^th_mochi_(en|ja|ko|zh|pt)_\d{2}$")
                 self.assertTrue(p["ct"].startswith(f"th_mochi_{p['lang'][:2]}_"))
                 self.assertIsNotNone(common.APP_STORE_CAMPAIGN_RE.fullmatch(p["ct"]))
                 self.assertNotIn(p["ct"], seen)
@@ -220,7 +220,7 @@ class TrialMainTests(MainHarness):
         self.assertEqual(0, rc)
         posted.assert_called_once()
         self.assertEqual("m-existing", posted.call_args.kwargs["reply_to"])
-        self.assertIn("ct=th_mochi_ko_01&", posted.call_args.args[2])
+        self.assertIn("ct=th_mochi_ko_03&", posted.call_args.args[2])
 
     def test_an_entry_the_qa_refuses_posts_nothing_and_ends_red(self):
         bad = dict(TRIAL, posts=[dict(POSTS[0], text="The best free checklist app.")])
@@ -307,9 +307,9 @@ class TrialSlotTests(MainHarness):
         days = {threads_post.trial_window_post(dt.date(2026, 10, 20) + dt.timedelta(days=i), LEGACY)["ct"]
                 for i in range(2)}
         self.assertEqual({"th_mochi_en_01"}, days)
-        self.assertEqual("th_mochi_ko_01", threads_post.trial_window_post(dt.date(2026, 10, 22), LEGACY)["ct"])
-        self.assertEqual("th_mochi_en_03", threads_post.trial_window_post(dt.date(2026, 11, 1), LEGACY)["ct"])
-        self.assertEqual("th_mochi_zh_02", threads_post.trial_window_post(dt.date(2026, 10, 23), LEGACY)["ct"])
+        self.assertEqual("th_mochi_ko_03", threads_post.trial_window_post(dt.date(2026, 10, 22), LEGACY)["ct"])
+        self.assertEqual("th_mochi_en_12", threads_post.trial_window_post(dt.date(2026, 11, 1), LEGACY)["ct"])
+        self.assertEqual("th_mochi_en_07", threads_post.trial_window_post(dt.date(2026, 10, 23), LEGACY)["ct"])
         self.assertEqual("th_mochi_zh_03", threads_post.trial_window_post(dt.date(2026, 11, 3), LEGACY)["ct"])
         self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 11, 4), LEGACY))
         self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 10, 19), LEGACY))
@@ -334,9 +334,9 @@ class TrialSlotTests(MainHarness):
         self.assertEqual("2026-11-02", by_ct["th_mochi_zh_03"]["date"])   # the file's own entries stay as they are
 
     def test_a_cycle_ct_the_file_does_not_hold_is_skipped_and_an_empty_cycle_ends_the_trial(self):
-        odd = dict(TRIAL, daily_after_end={"cts": ["th_mochi_xx_99", "th_mochi_ja_01"]})
-        self.assertEqual("th_mochi_ja_01", threads_post.trial_window_post(dt.date(2026, 11, 3), odd)["ct"])
-        self.assertEqual("th_mochi_ja_01", threads_post.trial_window_post(dt.date(2026, 11, 9), odd)["ct"])
+        odd = dict(TRIAL, daily_after_end={"cts": ["th_mochi_xx_99", "th_mochi_en_09"]})
+        self.assertEqual("th_mochi_en_09", threads_post.trial_window_post(dt.date(2026, 11, 3), odd)["ct"])
+        self.assertEqual("th_mochi_en_09", threads_post.trial_window_post(dt.date(2026, 11, 9), odd)["ct"])
         for cfg in ({"cts": []}, {"cts": ["th_mochi_xx_99"]}, [], "on"):
             with self.subTest(cfg=cfg):
                 off = dict(TRIAL, daily_after_end=cfg)

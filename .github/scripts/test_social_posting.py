@@ -1819,7 +1819,11 @@ class PlayReferrerTests(unittest.TestCase):
             + "&referrer=utm_source%3Dthreads%26utm_campaign%3Dmochi",
             links[1],
         )
-        self.assertEqual(1, len(threads_post.compose_links(self._item(self.IOS_ONLY)).splitlines()))
+        ios_only = threads_post.compose_links(self._item(self.IOS_ONLY))
+        self.assertNotIn("play.google.com", ios_only)
+        # One download line; the neutral existing-user review line (threads_topics.review_tail) may follow it.
+        self.assertTrue(ios_only.splitlines()[0].startswith("App Store: "))
+        self.assertEqual(1, sum("ct=" in line for line in ios_only.splitlines()))
 
     def test_threads_queued_reply_uses_the_series_token_for_play_too(self):
         # a series post goes out on Threads: its BM label stays in the queue, the links carry the Threads campaign

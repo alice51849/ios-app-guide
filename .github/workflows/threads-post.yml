@@ -129,6 +129,7 @@ jobs:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
           THREADS_SLOT: ${{ steps.slot.outputs.slot }}
+          TRIAL_STATUS_OUT: ${{ runner.temp }}/trial-status.json
         run: |
           # threads_post.py: queued post (growth/threads-queue.json) first, else the
           # countdown card takes the slot (countdown-daily.yml), else a picture post.
@@ -148,6 +149,7 @@ jobs:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
           THREADS_SLOT: ${{ steps.slot.outputs.slot }}
+          TRIAL_STATUS_OUT: ${{ runner.temp }}/trial-status.json
         run: |
           python3 .github/scripts/test_threads_mochi_trial.py -q -b
           python3 .github/scripts/threads_post.py trial && rc=0 || rc=$?
@@ -199,6 +201,28 @@ jobs:
             sleep $((i * 5))
           done
           echo "::warning::could not record the clip post"; exit 1
+      - name: Record the Mochi trial post (post id, link reply id)
+        # threads_post.py writes $RUNNER_TEMP/trial-status.json (TRIAL_STATUS_OUT) after a trial entry is up;
+        # it is folded into .github/growth/threads-mochi-trial-status.json here.
+        # A record only (whether an entry is up is read from the account), so a failed push is a warning.
+        if: always() && steps.room.outputs.ok == 'true'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }} # growth_records.py checks whether geo-daily is running
+        run: |
+          f=.github/growth/threads-mochi-trial-status.json
+          if [ ! -s "$RUNNER_TEMP/trial-status.json" ]; then echo "no trial post recorded"; exit 0; fi
+          for i in 1 2 3; do
+            target="$(python3 .github/scripts/growth_records.py prepare)"
+            python3 .github/scripts/threads_post.py merge-trial-status "$RUNNER_TEMP/trial-status.json"
+            git add "$f"
+            if git diff --cached --quiet && [ ! -f .git/MERGE_HEAD ]; then echo "already recorded"; exit 0; fi
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "Threads 可愛待辦清單試行貼文紀錄 [skip ci]"
+            if python3 .github/scripts/growth_records.py push "$target"; then exit 0; fi
+            sleep $((i * 5))
+          done
+          echo "::warning::could not record the Mochi trial post"; exit 1
       - name: Fail when the Mochi trial entry ended red
         if: always() && steps.trial.outputs.rc != '' && steps.trial.outputs.rc != '0'
         run: echo "::error::the Mochi trial entry ended red (see the trial step)"; exit 1

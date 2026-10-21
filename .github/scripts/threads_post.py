@@ -13,6 +13,7 @@ from typing import NamedTuple, Optional
 import channel_rotation as CR
 import download_links as DL
 import threads_cap
+import threads_topics
 from social_post_common import (
     AMERICAS_LOCALES,
     ASIA_LOCALES,
@@ -120,7 +121,13 @@ def compose_body(item):
 def compose_links(item):
     url = campaign_app_store_url(item.get("url"), "soc_th_guide")
     play = play_store_url(item.get("app"), "soc_th_guide")
-    return f"App Store: {url}" + (f"\nGoogle Play: {play}" if play else "")
+    links = f"App Store: {url}" + (f"\nGoogle Play: {play}" if play else "")
+    return threads_topics.review_tail(links, item.get("app"), item.get("lang"), item.get("text") or "", MAX_POST_CHARS)
+
+
+def item_topic(item):
+    """The picture post's topic tag: the item's own "topic_tag", else its app category's default (or None)."""
+    return threads_topics.for_post(item.get("app"), item.get("text") or "", item.get("lang"), item.get("topic_tag"))
 
 
 def item_link_urls(item):
@@ -170,7 +177,11 @@ def publish_post(
     image_url=None,
     sleeper=time.sleep,
     reply_to=None,
+    topic_tag=None,
 ):
+    """Create and publish one Threads post. `topic_tag` (top-level posts only) is checked first
+    (threads_topics.clean: an invalid one is dropped with a warning); when Threads refuses the container
+    with the topic, it is created once more without it, so a topic never stops a post."""
     if len(text) > MAX_POST_CHARS:
         raise ValueError(
             f"Threads post exceeds {MAX_POST_CHARS} characters: {len(text)}"
@@ -186,11 +197,24 @@ def publish_post(
         image_url = canonical_social_image_url(image_url)
         payload["media_type"] = "IMAGE"
         payload["image_url"] = image_url
-    container = _post(
-        f"https://graph.threads.net/v1.0/{user_id}/threads",
-        payload,
-        label="Threads container",
-    )
+    topic = threads_topics.clean(topic_tag) if reply_to is None else None
+    container = None
+    if topic:
+        try:
+            container = _post(
+                f"https://graph.threads.net/v1.0/{user_id}/threads",
+                dict(payload, topic_tag=topic),
+                label="Threads container",
+            )
+        except HTTPStatusError as error:  # a container is not a post yet: try once more without the topic
+            print(f"::warning::Threads refused the topic tag {topic!r} ({error.__class__.__name__}); "
+                  "posted without a topic", file=sys.stderr)
+    if container is None:
+        container = _post(
+            f"https://graph.threads.net/v1.0/{user_id}/threads",
+            payload,
+            label="Threads container",
+        )
     container_id = container.get("id")
     if not container_id:
         raise RequestError("Threads container returned no id")
@@ -294,6 +318,17 @@ class ThreadsResult(NamedTuple):
     link_ok: bool           # the reply with the download link(s) is up
 
 
+class _LinkedResult(ThreadsResult):
+    """A ThreadsResult (still the 2-tuple) that also knows the link reply's id (`reply_id`, None when unknown)."""
+    reply_id = None
+
+
+def _linked(post_id, link_ok, reply_id):
+    result = _LinkedResult(post_id, link_ok)
+    result.reply_id = str(reply_id) if reply_id else None
+    return result
+
+
 def _norm(text):
     return " ".join(str(text or "").split())
 
@@ -338,7 +373,7 @@ def find_own_post(token, text, day=None, opener=urllib.request.urlopen):
 
 
 def publish_linked(token, user_id, text, links_text, app_store_url, play_url=None, *, image_url=None, day=None,
-                   sleeper=None, label="Threads", find=None, find_reply=None):
+                   sleeper=None, label="Threads", find=None, find_reply=None, topic_tag=None):
     """One Threads post with its download link: the main `text` (no URL in it), then the link reply.
 
     Nothing is posted when `links_text` does not carry this app's link (a promo post without its download
@@ -374,7 +409,7 @@ def publish_linked(token, user_id, text, links_text, app_store_url, play_url=Non
             return ThreadsResult(post_id, False)
         if existing:
             print(f"{label}: this post and its link reply are already up (post {post_id}, reply {existing}); nothing to post")
-            return ThreadsResult(post_id, True)
+            return _linked(post_id, True, existing)
         print(f"{label}: this post is already up (id {post_id}); only its link reply is added")
     else:
         if CR.paused_notice("threads"):  # channel rotation holdout week: no new top-level post, a skip
@@ -382,10 +417,13 @@ def publish_linked(token, user_id, text, links_text, app_store_url, play_url=Non
         status = threads_cap.account_status(token, user_id, label=label)
         if status != threads_cap.ROOM:
             return ThreadsResult(None, status == threads_cap.FULL)
-        post_id = publish_post(token, user_id, text, image_url=image_url, sleeper=sleeper)
+        if topic_tag is None:
+            post_id = publish_post(token, user_id, text, image_url=image_url, sleeper=sleeper)
+        else:
+            post_id = publish_post(token, user_id, text, image_url=image_url, sleeper=sleeper, topic_tag=topic_tag)
     reply_id = publish_link_reply(token, user_id, post_id, links_text, app_store_url, play_url,
                                   sleeper=sleeper, label=label, find_reply=find_reply)
-    return ThreadsResult(post_id, reply_id is not None)
+    return _linked(post_id, reply_id is not None, reply_id)
 
 
 def queued_today(day=None):
@@ -416,7 +454,13 @@ def queued_links(post):
     ct = queued_campaign(post)
     url = campaign_app_store_url(f"https://apps.apple.com/app/id{post['app_id']}", ct)
     play = play_store_url(post["app_id"], ct)
-    return f"App Store: {url}" + (f"\nGoogle Play: {play}" if play else "")
+    links = f"App Store: {url}" + (f"\nGoogle Play: {play}" if play else "")
+    return threads_topics.review_tail(links, post["app_id"], post.get("lang"), post.get("text") or "", MAX_POST_CHARS)
+
+
+def queued_topic(post):
+    """A queued / series post's topic tag: its own "topic_tag", else its app category's default (or None)."""
+    return threads_topics.for_post(post.get("app_id"), post.get("text") or "", post.get("lang"), post.get("topic_tag"))
 
 
 # Mochi top-10 trial (decided 2026-10-19, copy from 00_GrowthEngine outreach/threads/mochi_top10_2026-10-19.json
@@ -430,6 +474,13 @@ def queued_links(post):
 # entry (cap full, lookup down) is made up once by the next slot that has room, until the next entry's date (the
 # last entry: one day after its date), with the same ct. Still one slot, one post, the same account cap.
 TRIAL_PATH = os.path.join(HERE, "threads_mochi_trial.json")
+# What each trial entry posted (post id, first seen up, link reply id), keyed by the entry's Taiwan date. A record, never a
+# dedupe source: whether an entry is up is always read from the account (find_trial_post), so a record that could
+# not be written or pushed never makes a second copy. The workflow commits it through growth_records.py
+# (.github/growth only), so it lives beside the other bot records, not in the reviewed trial file.
+TRIAL_STATUS_PATH = os.path.join(HERE, "..", "growth", "threads-mochi-trial-status.json")
+TRIAL_STATUS_SCHEMA = "lumi.threads-mochi-trial-status/v1"
+RECORD_TRIAL_STATUS = False  # set by the command line run only: an imported module (the tests) writes no record
 TRIAL_APP_NAME = "Mochi"
 
 
@@ -599,7 +650,14 @@ def trial_reply(trial, post):
     template = str(post.get("reply") or "")
     if template.count("{link}") != 1:
         raise ValueError(f"trial reply {post.get('ct')} must hold {{link}} exactly once")
-    return template.replace("{link}", trial_links(trial, post))
+    reply = template.replace("{link}", trial_links(trial, post))
+    return threads_topics.review_tail(reply, DL.app_store_id(trial_store_url(trial)), post.get("lang"),
+                                      post.get("text") or "", MAX_POST_CHARS)
+
+
+def trial_topic(trial, post):
+    """The trial entry's own "topic_tag" (checked; None when it has none or it is not valid)."""
+    return threads_topics.clean(post.get("topic_tag"))
 
 
 def trial_problems(trial, post):
@@ -620,6 +678,66 @@ def trial_problems(trial, post):
     return out
 
 
+def _read_status(path):
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, ValueError):
+        return {}
+    entries = data.get("entries") if isinstance(data, dict) else None
+    return entries if isinstance(entries, dict) else {}
+
+
+def _write_status(entries, path):
+    data = {"schema": TRIAL_STATUS_SCHEMA,
+            "note": "threads_post.py: what each Mochi trial day posted (Taiwan date). A record only; "
+                    "whether an entry is up is read from the account, never from this file.",
+            "entries": dict(sorted(entries.items()))}
+    tmp = f"{path}.tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=1)
+        f.write("\n")
+    os.replace(tmp, path)
+
+
+def record_trial_status(post, day, result, path=None, now=None):
+    """Write the trial day's post id / link reply id. Never raises: a failed write is a ::warning:: only."""
+    if not result.post_id or not day or (path is None and not RECORD_TRIAL_STATUS):
+        return False
+    # The workflow sets TRIAL_STATUS_OUT (a file under $RUNNER_TEMP): growth_records.py prepare resets the tree
+    # before a record step commits, so the record waits outside it and merge-trial-status folds it in.
+    path = path or os.environ.get("TRIAL_STATUS_OUT", "").strip() or TRIAL_STATUS_PATH
+    try:
+        entries = dict(_read_status(TRIAL_STATUS_PATH), **_read_status(path))
+        key = str(post.get("date") or day.isoformat())  # the entry (the trial day it fills)
+        old = entries.get(key) if isinstance(entries.get(key), dict) else {}
+        same = old.get("post_id") == str(result.post_id)
+        stamp = (now or _dt.datetime.now(_dt.timezone.utc)).strftime("%Y-%m-%dT%H:%M:%SZ")
+        entries[key] = {
+            "ct": post.get("ct"),
+            "posted_day": old.get("posted_day") if same and old.get("posted_day") else day.isoformat(),
+            "post_id": str(result.post_id),
+            "posted_at": old.get("posted_at") if same and old.get("posted_at") else stamp,
+            "link_reply_id": (str(getattr(result, "reply_id", None)) if getattr(result, "reply_id", None)
+                              else (old.get("link_reply_id") if same else None)),
+            "link_ok": bool(result.link_ok),
+        }
+        _write_status(entries, path)
+        return True
+    except Exception as error:  # the post is up either way; the record is not worth a red step
+        print(f"::warning::Threads Mochi trial: status record not written ({error.__class__.__name__})",
+              file=sys.stderr)
+        return False
+
+
+def merge_trial_status(src, path=None):
+    """Fold the records of `src` (this run's copy, saved before growth_records.py prepare) into `path`."""
+    path = path or TRIAL_STATUS_PATH
+    entries = _read_status(path)
+    entries.update({k: v for k, v in _read_status(src).items() if isinstance(v, dict)})
+    _write_status(entries, path)
+
+
 def post_trial(tok, uid, trial, post, day):
     """Publish one trial entry: main text without a link, then the reply with the link (publish_linked: the
     account cap, the rerun lookups and the reply check all apply). 0 when green, 1 when red."""
@@ -629,14 +747,19 @@ def post_trial(tok, uid, trial, post, day):
     if not post_qa.gate(trial_problems(trial, post), label):
         return 1
     store, play = trial_link_urls(trial, post)
-    result = publish_linked(tok, uid, post["text"], trial_reply(trial, post), store, play, day=day, label=label)
+    result = publish_linked(tok, uid, post["text"], trial_reply(trial, post), store, play, day=day, label=label,
+                            topic_tag=trial_topic(trial, post))
     if result.post_id:
         print("threads Mochi trial post ok, id:", result.post_id, "| ct:", post.get("ct"))
+        record_trial_status(post, day, result)
     return 0 if result.link_ok else 1
 
 
 def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv
+    if argv[:1] == ["merge-trial-status"] and len(argv) == 2:
+        merge_trial_status(argv[1])
+        return 0
     tok = os.environ.get("THREADS_TOKEN", "").strip()
     uid = os.environ.get("THREADS_USER_ID", "").strip()
     if not tok or not uid:
@@ -671,7 +794,8 @@ def main(argv=None):
             store, play = queued_link_urls(post)
             result = publish_linked(tok, uid, post["text"], queued_links(post), store, play,
                                     day=slot.astimezone(TW).date() if slot else None,
-                                    label=f"Threads queued {post.get('app')} {post.get('date')}")
+                                    label=f"Threads queued {post.get('app')} {post.get('date')}",
+                                    topic_tag=queued_topic(post))
         except (HTTPStatusError, RequestError, ValueError, KeyError) as error:
             print(f"Threads queued post failed: {error}", file=sys.stderr)
             return 1
@@ -697,6 +821,7 @@ def main(argv=None):
             image_url=item_image_url(item),
             day=slot.astimezone(TW).date() if slot else None,
             label=f"Threads {item.get('app')}/{item.get('lang')}",
+            topic_tag=item_topic(item),
         )
         if result.post_id:
             print("threads posted ok, id:", result.post_id, "| app:", item.get("app"))
@@ -707,4 +832,5 @@ def main(argv=None):
 
 
 if __name__ == "__main__":
+    RECORD_TRIAL_STATUS = True
     sys.exit(main())

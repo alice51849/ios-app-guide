@@ -54,6 +54,7 @@ import post_qa
 import review_links
 import threads_topics
 import search_caption as SC
+import segment_ct
 import threads_cap
 import threads_series
 import volume_ramp
@@ -143,13 +144,22 @@ def clip_campaign(token):
     return token or "h7"
 
 
-def with_campaign(url, channel):
+def clip_channel_campaign(url, channel, day=None):
+    """The ct label a clip's link carries on one platform: h7_<app>[_b]_<channel>, or for Cute To-Do on its
+    segment exits (Instagram, Telegram, Bluesky, YouTube Shorts) the day's audience-segment token
+    ln_mochi_<segment>_<channel> (segment_ct.py; 00_GrowthEngine ops/company/audience/mochi.md)."""
+    query = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(url or "").query))
+    return (segment_ct.segment_token(DL.app_store_id(url), channel, day)
+            or f"{clip_campaign(query.get('ct', 'h7'))}_{channel}"[:40])
+
+
+def with_campaign(url, channel, day=None):
     """The clip's App Store link for one platform, with that channel's ct at the app's level
     (download_links.app_campaign: one campaign per app and merged channel; the clip, variant and locale stay in
-    the post log)."""
+    the post log; Cute To-Do's segment exits carry the day's segment token, clip_channel_campaign)."""
     parts = urllib.parse.urlsplit(url)
     query = dict(urllib.parse.parse_qsl(parts.query))
-    query["ct"] = DL.app_campaign(f"{clip_campaign(query.get('ct', 'h7'))}_{channel}"[:40], DL.app_store_id(url))
+    query["ct"] = DL.app_campaign(clip_channel_campaign(url, channel, day), DL.app_store_id(url))
     return urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query)))
 
 
@@ -168,10 +178,9 @@ def ios_id(clip):
     return m.group(1) if m else ""
 
 
-def play_url(clip, channel):
+def play_url(clip, channel, day=None):
     """Google Play link for the clip's app (same ct token), or None if not on Android."""
-    ct = urllib.parse.parse_qs(urllib.parse.urlsplit(clip.get("store_url", "")).query).get("ct", ["h7"])[0]
-    return play_store_url(ios_id(clip), f"{clip_campaign(ct)}_{channel}"[:40])
+    return play_store_url(ios_id(clip), clip_channel_campaign(clip.get("store_url", ""), channel, day))
 
 
 CHANNEL_CT = {"instagram": "ig", "telegram": "tg", "threads": "th"}   # ct suffix per channel (agent/ct_codes.py)

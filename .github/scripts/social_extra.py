@@ -266,7 +266,7 @@ def clip_item(key, clip, channel, day=None):
             "hook": v["lead"], "name": clip["name"], "title": SC.pin_title(clip, v), "tags": SC.tags(clip, 10),
             "caption": clip_posts.caption(clip, channel, v), "button": t["button"], "variant": v["id"],
             "alt": SC.alt_text(clip, v), "clip": clip, "v": v,
-            "store": clip_posts.with_campaign(clip["store_url"], ct), "play": clip_posts.play_url(clip, ct)}
+            "store": clip_posts.with_campaign(clip["store_url"], ct, day), "play": clip_posts.play_url(clip, ct, day)}
     # Existing-user review link, every App (12 top-3 formula, 2026-10-20: ratings are the gap on every App; the
     # review_links.json pairs keep their own line, the others get the neutral any_app line): {"label", "url"}, no ct.
     # It reaches the feed as is (the YouTube Shorts description, threads-autopilot's Bluesky posts). Every channel

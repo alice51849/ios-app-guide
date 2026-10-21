@@ -1,0 +1,31 @@
+{
+  "schema": "growth.mochi-daily-segment/v1",
+  "note": "可愛待辦清單每天主攻族群（正本 ops/company/audience/mochi.md「未來 90 天時間軸」；做法 ops/company/mochi_blitz_playbook.md 二之一）。每天的固定量貼文（Instagram、Telegram、Bluesky、YouTube Shorts）送出追蹤碼 ln_mochi_<族群碼>_<通路碼>，不帶國碼與日期（蘋果行銷活動有隱私門檻，碼太細會被隱藏）。判斷順序：dates 指定日 → 落在哪個 windows 區間（含頭尾，世界時日期）：weekdays 指定星期 → rotate 依區間第幾天輪流；都不在 → default（依日序輪流）。正本在 00_GrowthEngine，ios-app-guide .github/growth/mochi-daily-segment.json 是逐 byte 鏡像，兩邊同一次一起改。讀取：00_GrowthEngine lib/mochi_segment.py、ios-app-guide .github/scripts/segment_ct.py。",
+  "app_id": "6785004775",
+  "token": "ln_mochi_{segment}_{channel}",
+  "segments": ["reset", "host", "adhd", "kids", "soft", "exam"],
+  "channels": ["yt", "ig", "bs", "tg", "th", "rs", "gw", "sp"],
+  "exits": ["ig", "tg", "bs", "yt"],
+  "dates": {
+    "2027-01-18": "soft"
+  },
+  "windows": [
+    {"from": "2026-10-21", "to": "2026-11-15", "rotate": ["exam"], "weekdays": {"sun": "adhd", "mon": "adhd"},
+     "why": "巴西大考 11/8、11/15；修能 11/19：考生為主，週日晚到週一常年族群 adhd"},
+    {"from": "2026-11-16", "to": "2026-11-19", "rotate": ["host", "exam"], "weekdays": {"sun": "adhd", "mon": "adhd"},
+     "why": "感恩節主揪準備期開始，修能前最後幾天：兩族群按日輪流"},
+    {"from": "2026-11-20", "to": "2026-11-26", "rotate": ["host", "host", "exam"], "weekdays": {"sun": "adhd", "mon": "soft"},
+     "why": "感恩節主揪＋返鄉打包高峰；韓國考完要做的事"},
+    {"from": "2026-11-27", "to": "2026-12-09", "rotate": ["exam", "host"], "weekdays": {"sun": "adhd", "mon": "soft"},
+     "why": "美期末、年末大掃除（活動 11/30）"},
+    {"from": "2026-12-10", "to": "2026-12-17", "rotate": ["host", "exam"], "weekdays": {"sun": "adhd", "mon": "soft"},
+     "why": "聖誕聚餐主揪 12/10–24；期末"},
+    {"from": "2026-12-18", "to": "2026-12-25", "rotate": ["kids", "host"], "weekdays": {"sun": "adhd", "mon": "soft"},
+     "why": "寒暑假家事表 12/18–1/4；聖誕主揪"},
+    {"from": "2026-12-26", "to": "2027-01-08", "rotate": ["reset"],
+     "why": "全年最高峰：新年重開機每天主攻"},
+    {"from": "2027-01-09", "to": "2027-01-19", "rotate": ["reset", "exam"], "weekdays": {"sun": "adhd", "mon": "soft"},
+     "why": "放棄後重來；日台考試衝刺（共通測驗 1/16–17）；1/18 溫柔低能量"}
+  ],
+  "default": {"rotate": ["soft", "adhd"], "why": "時間軸外：常年族群輪流，更新 mochi.md 時間軸時補區間"}
+}

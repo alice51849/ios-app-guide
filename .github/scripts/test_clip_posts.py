@@ -281,18 +281,28 @@ class ClipPostsTest(unittest.TestCase):
 
     def test_play_link_uses_the_same_per_platform_ct_as_the_app_store_link(self):
         # Mochi is Android-live in the snapshot: each platform's Play referrer is that platform's App Store ct
-        # (the channel-level campaign, download_links.coarse_campaign).
+        # (the channel-level campaign, download_links.coarse_campaign; on Mochi's segment exits the day's
+        # audience-segment token, segment_ct.py: 2026-10-21 is an exam day).
         mochi = dict(clip("mochi", "ja"), store_url="https://apps.apple.com/jp/app/id6785004775?pt=118326163"
                      "&ct=h7_mochi_ja&mt=8")
-        sent = {"th": "threads", "tg": "telegram", "yt": "youtube", "bs": "bluesky", "fb": "social", "tb": "social"}
+        day = dt.date(2026, 10, 21)
+        sent = {"th": "threads", "tg": "ln_mochi_exam_tg", "yt": "ln_mochi_exam_yt", "bs": "ln_mochi_exam_bs",
+                "ig": "ln_mochi_exam_ig", "igc": "instagram", "fb": "social", "tb": "social"}
         for channel, campaign in sent.items():
             with self.subTest(channel=channel):
-                self.assertIn(f"ct={campaign}&", C.with_campaign(mochi["store_url"], channel))
+                self.assertIn(f"ct={campaign}&", C.with_campaign(mochi["store_url"], channel, day))
                 self.assertEqual(
                     "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"
                     f"&referrer=utm_source%3D{campaign}%26utm_campaign%3Dmochi",
-                    C.play_url(mochi, channel))
+                    C.play_url(mochi, channel, day))
+        self.assertIn("ct=ln_mochi_adhd_tg&", C.with_campaign(mochi["store_url"], "tg", dt.date(2026, 10, 25)))
         self.assertIsNone(C.play_url(clip("a", "en"), "th"))  # id1 is not on Android
+        # any other app keeps its channel token on the same exits
+        other = "https://apps.apple.com/us/app/id6802423998?pt=118326163&ct=h7_battai_en&mt=8"
+        self.assertIn("ct=social&", C.with_campaign(other, "tg", day))
+        # an unreadable segment table leaves Mochi on its channel token, never without one
+        with mock.patch.object(C.segment_ct, "load", return_value={}):
+            self.assertIn("ct=telegram&", C.with_campaign(mochi["store_url"], "tg", day))
 
     def test_threads_reply_lists_app_store_then_tracked_play(self):
         calls = []
@@ -340,7 +350,7 @@ class DownloadLinkTest(unittest.TestCase):
 
     def test_telegram_caption_holds_the_urls_too_and_threads_text_does_not(self):
         text = C.caption(self.MOCHI, "telegram")
-        self.assertIn("ct=telegram&", text)
+        self.assertRegex(text, r"ct=ln_mochi_[a-z]+_tg&")   # Mochi on Telegram: the day's segment token
         self.assertIn("play.google.com", text)
         self.assertNotIn("https://", C.caption(self.MOCHI, "threads"))  # Threads links go in the first reply
         self.assertEqual(C.post_qa.clip_problems(self.MOCHI, "threads", C.caption(self.MOCHI, "threads"), online=False), [])

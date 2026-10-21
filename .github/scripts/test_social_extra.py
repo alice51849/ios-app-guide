@@ -188,12 +188,14 @@ class PlanTest(unittest.TestCase):
     def test_android_clip_play_link_carries_each_platforms_own_ct(self):
         mochi = dict(clip("mochi", "en"), store_url="https://apps.apple.com/us/app/id6785004775?pt=118326163"
                      "&ct=h7_mochi_en&mt=8")
-        # each platform's channel-level campaign (download_links.coarse_campaign), the same on both stores
-        sent = {"bluesky": "bluesky", "youtube": "youtube"}
+        # each platform's channel-level campaign (download_links.coarse_campaign), the same on both stores; Mochi's
+        # Bluesky and YouTube Shorts links carry the feed day's audience-segment token (segment_ct.py)
+        day = dt.date(2026, 10, 21)
+        sent = {"bluesky": "ln_mochi_exam_bs", "youtube": "ln_mochi_exam_yt"}
         for channel in S.CT:
             with self.subTest(channel=channel):
                 ct = sent.get(channel, "social")
-                it = S.clip_item("mochi/en", mochi, channel)
+                it = S.clip_item("mochi/en", mochi, channel, day)
                 self.assertIn(f"ct={ct}&", it["store"])
                 self.assertTrue(it["play"].endswith(f"&referrer=utm_source%3D{ct}%26utm_campaign%3Dmochi"))
                 self.assertEqual(f"Google Play: {it['play']}", S.link_lines(it)[1])

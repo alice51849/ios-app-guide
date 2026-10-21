@@ -532,6 +532,104 @@ def real(locale="en", **kw):
     return c
 
 
+class TrialReelsTest(unittest.TestCase):
+    """Instagram Trial Reels (trial_params): one switched-on Reel tries it; a refusal falls back to one ordinary Reel."""
+
+    MOCHI = DownloadLinkTest.MOCHI
+    CFG = {"enabled": True, "apps": ["mochi"], "start": "2026-10-21", "max_posts": 1, "graduation_strategy": "SS_PERFORMANCE"}
+    DAY = dt.date(2026, 10, 21)
+
+    def test_plan_only_for_the_listed_app_from_the_start_date_up_to_max_posts(self):
+        plan = C.trial_plan(self.MOCHI, self.DAY, [], self.CFG)
+        self.assertEqual(plan, {"graduation_strategy": "SS_PERFORMANCE"})
+        self.assertIsNone(C.trial_plan(clip("zipbox", "en"), self.DAY, [], self.CFG))
+        self.assertIsNone(C.trial_plan(self.MOCHI, dt.date(2026, 10, 20), [], self.CFG))
+        self.assertIsNone(C.trial_plan(self.MOCHI, self.DAY, [], dict(self.CFG, enabled=False)))
+        self.assertIsNone(C.trial_plan(self.MOCHI, self.DAY, [], dict(self.CFG, graduation_strategy="BOGUS")))
+        tried = [{"channel": "instagram", "clip": "mochi/en", "ig_trial": {"result": "fallback"}}]
+        self.assertIsNone(C.trial_plan(self.MOCHI, self.DAY, tried, self.CFG), "the one check is used up")
+        self.assertIsNotNone(C.trial_plan(self.MOCHI, self.DAY, tried, dict(self.CFG, max_posts=2)))
+        self.assertIsNotNone(C.trial_plan(self.MOCHI, self.DAY, [{"channel": "instagram", "clip": "mochi/en"}], self.CFG))
+
+    def test_the_shipped_config_is_valid(self):
+        cfg = json.loads(C.IG_TRIAL.read_text(encoding="utf-8"))
+        self.assertIn(cfg["graduation_strategy"], C.TRIAL_STRATEGIES)
+        self.assertEqual(cfg["apps"], ["mochi"])
+        self.assertEqual(cfg["max_posts"], 1)
+
+    def _run(self, post, plan):
+        gets = [{}, {"user_id": "u"}, {"status_code": "FINISHED"}, {"permalink": "https://www.instagram.com/reel/X/"}]
+        with mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t"}), mock.patch.object(C, "_post", side_effect=post), \
+                mock.patch.object(C, "_get", side_effect=gets), mock.patch.object(C.time, "sleep"), \
+                mock.patch.object(C, "trial_plan", return_value=plan), mock.patch("sys.stdout"):
+            return C.post_instagram(self.MOCHI)
+
+    def test_an_accepted_trial_sends_the_parameter_and_publishes_once(self):
+        calls = []
+
+        def post(url, fields, timeout=60):
+            calls.append((url.rsplit("/", 1)[-1], dict(fields)))
+            return {"id": "c1" if url.endswith("/media") else "m1"}
+
+        out = self._run(post, {"graduation_strategy": "SS_PERFORMANCE"})
+        self.assertEqual([c[0] for c in calls], ["media", "media_publish"])
+        self.assertEqual(json.loads(calls[0][1]["trial_params"]), {"graduation_strategy": "SS_PERFORMANCE"})
+        self.assertEqual(calls[0][1]["media_type"], "REELS")
+        self.assertEqual(out["ig_trial"], {"graduation_strategy": "SS_PERFORMANCE", "result": "trial"})
+        self.assertEqual(out["id"], "m1")
+
+    def test_a_refused_trial_falls_back_to_one_ordinary_reel(self):
+        calls = []
+
+        def post(url, fields, timeout=60):
+            calls.append((url.rsplit("/", 1)[-1], dict(fields)))
+            if "trial_params" in fields:
+                raise RuntimeError('HTTP 400: {"error":{"code":100,"message":"The user is not eligible to post trial reels"}}')
+            return {"id": "c2" if url.endswith("/media") else "m2"}
+
+        out = self._run(post, {"graduation_strategy": "SS_PERFORMANCE"})
+        self.assertEqual([c[0] for c in calls], ["media", "media", "media_publish"])
+        self.assertNotIn("trial_params", calls[1][1])
+        self.assertEqual(calls[2][1]["creation_id"], "c2")
+        self.assertEqual(out["ig_trial"]["result"], "fallback")
+        self.assertIn("not eligible", out["ig_trial"]["error"])
+
+    def test_a_rate_limit_on_the_trial_is_not_retried(self):
+        calls = []
+
+        def post(url, fields, timeout=60):
+            calls.append(url)
+            raise RuntimeError('HTTP 400: {"error":{"code":4,"message":"(#4) Application request limit reached"}}')
+
+        with self.assertRaises(RuntimeError):
+            self._run(post, {"graduation_strategy": "SS_PERFORMANCE"})
+        self.assertEqual(len(calls), 1)
+
+    def test_without_a_plan_no_trial_parameter_and_no_mark(self):
+        calls = []
+
+        def post(url, fields, timeout=60):
+            calls.append(dict(fields))
+            return {"id": "c3"}
+
+        out = self._run(post, None)
+        self.assertNotIn("trial_params", calls[0])
+        self.assertNotIn("ig_trial", out)
+
+    def test_the_try_is_recorded_in_clip_posts(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "clip-posts.json"
+            with mock.patch.object(P, "POSTS", path), mock.patch.object(P, "update"):
+                P.record_post("instagram", "mochi/en", "l", media_id="m1", variant="a",
+                              ig_trial={"graduation_strategy": "SS_PERFORMANCE", "result": "trial"})
+                P.record_post("instagram", "zipbox/en", "l2")
+            posts = json.loads(path.read_text(encoding="utf-8"))["posts"]
+        self.assertEqual(posts[0]["ig_trial"]["result"], "trial")
+        self.assertNotIn("ig_trial", posts[1])
+        self.assertIsNone(C.trial_plan(self.MOCHI, self.DAY, posts, self.CFG))
+
+
 class PostQaTest(unittest.TestCase):
     """The pre-post QA gate (post_qa.py) refuses broken or non-compliant posts."""
 

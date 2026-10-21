@@ -298,6 +298,59 @@ def post_telegram(clip, variant=None):
     return {"id": message["message_id"], "link": link}
 
 
+IG_TRIAL = CLIPS.parent / "ig-trial-reels.json"
+TRIAL_STRATEGIES = ("MANUAL", "SS_PERFORMANCE")
+
+
+def trial_plan(clip, day=None, posts=None, cfg=None):
+    """The trial_params for this Reel, or None for an ordinary Reel.
+
+    Trial Reels (Instagram API, create media, "Applies to all versions" since 2025-12-03) are shown to
+    non-followers first; graduation_strategy SS_PERFORMANCE shares one with followers automatically when it
+    performs well. ig-trial-reels.json switches it on per app from a start date for at most max_posts Reels:
+    every Reel that tried it (accepted or fallen back) is marked "ig_trial" in clip-posts.json and counts, so the
+    first check is one Reel and widening it is a config change."""
+    if cfg is None:
+        try:
+            cfg = json.loads(IG_TRIAL.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            return None
+    strategy = cfg.get("graduation_strategy", "SS_PERFORMANCE")
+    if not cfg.get("enabled") or clip.get("app") not in (cfg.get("apps") or []) or strategy not in TRIAL_STRATEGIES:
+        return None
+    day = day or dt.datetime.now(dt.timezone.utc).date()
+    if cfg.get("start") and day < dt.date.fromisoformat(cfg["start"]):
+        return None
+    posts = posted_log() if posts is None else posts
+    tried = sum(1 for p in posts if p.get("channel") == "instagram" and p.get("ig_trial"))
+    if tried >= int(cfg.get("max_posts", 1)):
+        return None
+    return {"graduation_strategy": strategy}
+
+
+def _create_reel(user, fields, token, trial):
+    """Open the Reels container; with `trial`, as a Trial Reel first.
+
+    A refused trial (account not eligible, trial limit reached, unknown parameter) is retried once as an ordinary
+    Reel: the refused call opened no container, so nothing can go out twice, and today's post is not lost. A
+    rate-limit / block answer is not retried (main() hands it to volume_ramp). Returns (container id, note) where
+    note is None without a trial, else what clip-posts.json records under "ig_trial"."""
+    if not trial:
+        return _post(f"{GRAPH}/{user}/media", {**fields, "access_token": token})["id"], None
+    note = {"graduation_strategy": trial["graduation_strategy"]}
+    try:
+        cid = _post(f"{GRAPH}/{user}/media", {**fields, "trial_params": json.dumps(trial), "access_token": token})["id"]
+        print(f"clip: Instagram accepted the Trial Reel ({trial['graduation_strategy']})")
+        return cid, {**note, "result": "trial"}
+    except RuntimeError as exc:
+        if volume_ramp.is_throttle_error(exc):
+            raise
+        reason = str(exc)[:200]
+        print(f"::warning::Instagram refused the Trial Reel, posting an ordinary Reel instead: {reason}")
+    cid = _post(f"{GRAPH}/{user}/media", {**fields, "access_token": token})["id"]
+    return cid, {**note, "result": "fallback", "error": reason}
+
+
 def post_instagram(clip, variant=None, wait=5, tries=60):
     token = os.environ.get("IG_ACCESS_TOKEN", "").strip()
     if not token:
@@ -314,7 +367,7 @@ def post_instagram(clip, variant=None, wait=5, tries=60):
     text = IGB.caption(caption(clip, "instagram", variant), clip["name"], clip["locale"], clip.get("store_url"),
                        max_len=post_qa.LIMITS["instagram"], tag_limit=SC.TAG_LIMIT.get("instagram", 5),
                        label=f"{clip.get('app')}/{clip.get('locale')} instagram")
-    container = _post(f"{GRAPH}/{user}/media", {
+    container, trial = _create_reel(user, {
         "media_type": "REELS",
         "video_url": clip["url"],
         "caption": text,  # Reels take no alt_text (image posts only)
@@ -322,8 +375,7 @@ def post_instagram(clip, variant=None, wait=5, tries=60):
         # Cover = the hook frame once its slam has settled (frame 9), before the first cut: the pain point,
         # full size, inside the 3:4 profile-grid crop.
         "thumb_offset": str(COVER_MS),
-        "access_token": token,
-    })["id"]
+    }, token, trial_plan(clip))
     for _ in range(tries):
         status = _get(f"{GRAPH}/{container}?fields=status_code&access_token={token}").get("status_code")
         if status == "FINISHED":
@@ -339,7 +391,7 @@ def post_instagram(clip, variant=None, wait=5, tries=60):
     except Exception as exc:  # the Reel is up; a missing link must not fail the run
         print(f"clip: permalink lookup skipped ({exc.__class__.__name__})")
         link = None
-    return {"id": media, "link": link}
+    return {"id": media, "link": link, **({"ig_trial": trial} if trial else {})}
 
 
 THREADS = "https://graph.threads.net/v1.0"
@@ -532,7 +584,8 @@ def main():
         # The promotion page (office.cait518.cc) lists every post's link; the variant id feeds the
         # hook A/B ranking in post_performance.py.
         clip_progress.record_post(channel, f"{clip['app']}/{clip['locale']}", posted.get("link"),
-                                  media_id=posted.get("id"), variant=variant["id"])
+                                  media_id=posted.get("id"), variant=variant["id"],
+                                  **({"ig_trial": posted["ig_trial"]} if posted.get("ig_trial") else {}))
         if posted.get("link_reply") is False:
             # The post is up and recorded. A red step would only make the watchdog re-dispatch the slot and post
             # it twice, so the step stays green: the ::error:: above is the alert and link_backfill.py (the

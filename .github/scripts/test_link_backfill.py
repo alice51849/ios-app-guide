@@ -837,7 +837,7 @@ class ThreadsMochiTrialTest(unittest.TestCase):
         self.assertEqual(1, len(client.writes))
 
     def test_a_trial_post_whose_reply_went_out_is_left_alone(self):
-        e = self.entry("th_mochi_ko_01")
+        e = self.entry("th_mochi_ko_03")
         store, play = B.links_for("threads", MOCHI, e["ct"])
         reply = {"id": "r1", "text": e["reply"].replace("{link}", f"{store}\nGoogle Play: {play}"), "user": "brand",
                  "own": True}

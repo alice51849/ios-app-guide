@@ -908,7 +908,9 @@ class ReviewLinksTest(unittest.TestCase):
              ("6801956402", "jp"), ("6802423998", "jp"), ("6802423998", "kr"), ("6802423998", "tw"), ("6802505528", "cn"),
              ("6802505528", "vn"), ("6806776579", "tw"), ("6806776579", "vn"), ("6806826699", "de"), ("6806826699", "tw"),
              ("6814035888", "jp"), ("6814035888", "tw"), ("6814035888", "us"), ("6818607603", "jp"), ("6818607603", "kr"),
-             ("6818607603", "us")}
+             ("6818607603", "us"),
+             # 2026-10-21 Mochi (00_GrowthEngine reports/mochi_top10/latest.json)
+             ("6785004775", "kr"), ("6785004775", "br"), ("6785004775", "us"), ("6785004775", "jp"), ("6785004775", "tw")}
 
     @staticmethod
     def pair_clip(app_id, locale, hook):
@@ -960,7 +962,8 @@ class ReviewLinksTest(unittest.TestCase):
         self.assertIsNotNone(R.for_clip(self.pair_clip("6818607603", "ko", "AI 한도 초과?")))  # key claudeusagemini
         self.assertIsNotNone(R.for_clip(self.pair_clip("6818607603", "en", "Hit your AI limit?")))
         self.assertIsNone(R.for_clip(self.pair_clip("6818607603", "de", "Limit erreicht?")))  # DE: not a pair
-        self.assertIsNone(R.for_clip(self.pair_clip("6785004775", "en", "Cute list")))  # Mochi: not a pair
+        self.assertIsNotNone(R.for_clip(self.pair_clip("6785004775", "en", "Cute list")))  # Mochi x us (2026-10-21)
+        self.assertIsNone(R.for_clip(self.pair_clip("6785004775", "de", "Süße Liste")))  # Mochi in German: not a pair
         self.assertIsNone(R.for_clip(clip("a", "en")))
         self.assertEqual(R.for_official("6798814385", "zh-Hant")["url"],
                          "https://apps.apple.com/app/id6798814385?action=write-review")

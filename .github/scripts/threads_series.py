@@ -392,7 +392,7 @@ def main(argv=None):
         return 1
     result = threads_post.publish_linked(
         token, uid, chosen["text"], links, store, play,
-        image_url=chosen.get("image_url"), day=day, label=label)
+        image_url=chosen.get("image_url"), day=day, label=label, topic_tag=threads_post.queued_topic(chosen))
     if result.post_id:
         print(f"series: posted {chosen['series']} {chosen['app']} id {result.post_id}")
     _output("fallback", "none")  # the slot is taken, posted or not: no hook clip on top of it

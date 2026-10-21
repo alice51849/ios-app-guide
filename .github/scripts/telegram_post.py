@@ -154,7 +154,8 @@ EXACT47_APP_IDS = frozenset(LEGACY_APP_MESSAGES) | {
 }
 # Reviewed roster contract roster-20261012: the 53 verified-live Apps in the
 # deployed linkset, .appstore_live_state.json and the publisher intent catalog
-# (53 × 50 = 2,650 records). Versus exact47: Aim990 Plus (6792483140) retired;
+# (53 × 50 = 2,650 records). 2026-10-21: EasyAM (6821790092) went live and is in
+# the catalog (54 × 50 = 2,700 records). Versus exact47: Aim990 Plus (6792483140) retired;
 # 7 Apps added. EXACT47 stays the proof roster of the protected ledger snapshot.
 CURRENT_ROSTER_APP_IDS = frozenset({
     "6754218117", "6755782939", "6773017109", "6775773117", "6776958488",
@@ -167,9 +168,9 @@ CURRENT_ROSTER_APP_IDS = frozenset({
     "6794039979", "6794178671", "6794725568", "6797601720", "6798813048",
     "6798814385", "6801956402", "6802166527", "6802423998", "6802505528",
     "6806639602", "6806776579", "6806779853", "6806826699", "6807079789",
-    "6807335593", "6814035888", "6818607603",
+    "6807335593", "6814035888", "6818607603", "6821790092",
 })
-CURRENT_ROSTER_LOCALE_RECORDS = 2650
+CURRENT_ROSTER_LOCALE_RECORDS = 2700
 # Ledger intents may name a historical roster App or a current one.
 LEDGER_APP_IDS = EXACT47_APP_IDS | CURRENT_ROSTER_APP_IDS
 

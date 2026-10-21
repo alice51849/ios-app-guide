@@ -176,6 +176,10 @@ def room(ramp, name, day, posts, clip=None):
         return None, posted_today(posts, name, day), None
     done = posted_today(posts, name, day, exclude_prefixes=() if name == "instagram_feed" else CARD_PREFIXES)
     apps, extra = priority_extra(ramp, name)
+    cfg = channel(ramp, name) or {}
+    until = _date(cfg.get("ceiling_until"))
+    if isinstance(cfg.get("ceiling"), int) and until is not None and day <= until:
+        apps, extra = (), 0   # the platform said "slow down": no added post until the hold is over
     used_extra = min(sum(1 for p in posts or [] if p.get("channel") == name
                          and str(p.get("posted_at", "")).startswith(day.isoformat())
                          and not str(p.get("clip", "")).startswith(CARD_PREFIXES)

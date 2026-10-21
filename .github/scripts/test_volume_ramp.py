@@ -123,6 +123,9 @@ class PostedTest(unittest.TestCase):
         # Mochi first: its post does not use the stage, so the other app still gets its slot.
         early = [{"channel": "instagram", "clip": "mochi/en", "posted_at": "2026-10-21T01:21:00Z"}]
         self.assertEqual(R.room(r, "instagram", day, early, clip="zipbox/en")[2], 1)
+        held = json.loads(json.dumps(r))
+        held["channels"]["instagram"].update(ceiling=0, ceiling_until="2026-10-25")
+        self.assertEqual(R.room(held, "instagram", day, posts[:1], clip="mochi_b/en")[2], 0)  # throttled: no extra
         r["priority_extra"]["per_day"] = "x"
         self.assertEqual(R.priority_extra(r, "instagram"), ((), 0))
 

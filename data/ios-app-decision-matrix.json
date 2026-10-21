@@ -6,7 +6,7 @@
   "identifier": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json",
   "url": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-10-13",
+  "dateModified": "2026-10-21",
   "publisher": {
     "name": "Lumi Studio",
     "url": "https://open.cait518.cc/ios-app-guide/about.html"
@@ -18,7 +18,7 @@
   "price_source": "Apple App Store public lookup snapshot",
   "price_storefront": "US",
   "official_locale_count": 50,
-  "app_count": 53,
+  "app_count": 54,
   "columns": [
     {
       "name": "app_key",
@@ -253,11 +253,12 @@
     {
       "category": "utility",
       "label": "iPhone utilities",
-      "app_count": 8,
+      "app_count": 9,
       "app_keys": [
         "battai",
         "caldaily",
         "dbhalo",
+        "easyam",
         "ledmovingtext",
         "qrcodehalo",
         "stayclock",
@@ -296,7 +297,7 @@
       "category": "education",
       "category_label": "Study and exam practice",
       "buyer_intent": "best toeic prep app offline study plan for iphone",
-      "decision_context": "Part 5 looks short, but those incomplete-sentence questions can drain time if grammar and vocabulary are not automatic.",
+      "decision_context": "Part 5 looks short, but those incomplete-sentence questions can drain time if grammar and vocabulary are not automatic. Aim990 — An 8-minute diagnosis finds your 3 weakest skills, drills them daily and rechecks on Day 30.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -514,6 +515,28 @@
       "app_store_url": "https://apps.apple.com/us/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"
     },
     {
+      "app_key": "easyam",
+      "app_name": "EasyAM: Holiday Alarm Clock",
+      "app_store_id": "6821790092",
+      "category": "utility",
+      "category_label": "iPhone utilities",
+      "buyer_intent": "alarm clock app that skips holidays on iphone",
+      "decision_context": "Will your alarm ring tomorrow, and should it? EasyAM decides for you, day by day: it rings on workdays and stays quiet on public holidays and your days off",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_model_label": "free to start, one-time unlock, no subscription",
+      "one_time_option": true,
+      "free_to_download": true,
+      "subscription": false,
+      "us_price": "0",
+      "us_price_currency": "USD",
+      "verified_storefront_count": 39,
+      "sibling_app_keys": [],
+      "choose_when": "You are looking for alarm clock app that skips holidays on iphone, and you want free to start, one-time unlock, no subscription.",
+      "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/easyam.html",
+      "app_store_url": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=geo_pick&mt=8"
+    },
+    {
       "app_key": "gmoney",
       "app_name": "G+Money",
       "app_store_id": "6755782939",
@@ -544,7 +567,7 @@
       "category": "finance",
       "category_label": "Money, billing and time tracking",
       "buyer_intent": "best free travel expense tracker with currency conversion for iphone",
-      "decision_context": "For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock. That is the gap G+Money Lite was built to close.",
+      "decision_context": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase. G+Money Lite — Smart travel currency and expense tracker — log each spend and see it in your home currency.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -638,7 +661,7 @@
       "category": "productivity",
       "category_label": "Notes, documents and focus",
       "buyer_intent": "best app to block social media while studying iphone",
-      "decision_context": "During exams, willpower isn't the tool — a hard timed block is. That is why LockHour Pro exists.",
+      "decision_context": "During exams, willpower isn't the tool — a hard timed block is — LockHour Pro is built for this.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -847,12 +870,12 @@
     },
     {
       "app_key": "lumiweather",
-      "app_name": "Lumi Weather: What to Wear",
+      "app_name": "Lumi Weather",
       "app_store_id": "6779552704",
       "category": "kids",
       "category_label": "Kids learning and family routines",
       "buyer_intent": "weather app to help me plan when to go outside",
-      "decision_context": "Lumi Weather tells you in one glance whether now is a good time to go outside, what to wear, and whether you need an umbrella or sunscreen.",
+      "decision_context": "Anyone planning a walk, run, commute or errand needs more than a temperature: a quick read on whether conditions suit going out now and what clothing makes sense. That is why Lumi Weather exists.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -864,7 +887,7 @@
       "sibling_app_keys": [],
       "choose_when": "You are looking for weather app to help me plan when to go outside, and you want free to start, one-time unlock, no subscription.",
       "consider_instead_when": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete.",
-      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/lumiweather.html",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/answers/weather-app-to-help-me-plan-when-to-go-outside.html",
       "app_store_url": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
     },
     {
@@ -896,7 +919,7 @@
       "category": "productivity",
       "category_label": "Notes, documents and focus",
       "buyer_intent": "best simple to do list app iphone no subscription",
-      "decision_context": "If most to-do apps feel bloated, the right one is a clean checklist with reminders, repeat rules and a Watch complication — and deliberately no project-management machinery. That is why Mochi exists.",
+      "decision_context": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management machinery. That is why Mochi exists.",
       "purchase_model": "free_with_lifetime_unlock",
       "purchase_model_label": "free to start, one-time unlock, no subscription",
       "one_time_option": true,
@@ -1274,7 +1297,7 @@
       "category": "travel",
       "category_label": "Travel planning",
       "buyer_intent": "best trip itinerary planner app for iphone",
-      "decision_context": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance. If that is your situation, TripBee Pro: Trip Planner is worth a look.",
+      "decision_context": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance — TripBee Pro: Trip Planner is built for this.",
       "purchase_model": "paid_upfront",
       "purchase_model_label": "pay once, no subscription",
       "one_time_option": true,
@@ -1478,5 +1501,5 @@
       "app_store_url": "https://apps.apple.com/us/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
     }
   ],
-  "content_digest": "sha256:412696fce54fee885b400270111268e2604c8b77a4cfc0991449413238164b7a"
+  "content_digest": "sha256:857a8739fe9301164c8191f99d416e30b126535a534f2bc696633a092978b79d"
 }

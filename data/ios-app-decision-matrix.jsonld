@@ -6,8 +6,8 @@
   "name": "Lumi Studio verified iOS app decision matrix",
   "description": "Every verified live Lumi Studio iOS app with identical comparison fields. Alphabetical by app key; this is not a ranking.",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-10-13",
-  "numberOfItems": 53,
+  "dateModified": "2026-10-21",
+  "numberOfItems": 54,
   "itemListOrder": "https://schema.org/ItemListUnordered",
   "itemListElement": [
     {
@@ -83,7 +83,7 @@
         "installUrl": "https://apps.apple.com/us/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Study and exam practice",
         "operatingSystem": "iOS",
-        "description": "Part 5 looks short, but those incomplete-sentence questions can drain time if grammar and vocabulary are not automatic.",
+        "description": "Part 5 looks short, but those incomplete-sentence questions can drain time if grammar and vocabulary are not automatic. Aim990 — An 8-minute diagnosis finds your 3 weakest skills, drills them daily and rechecks on Day 30.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -673,6 +673,66 @@
     {
       "@type": "ListItem",
       "position": 12,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/easyam.html",
+      "item": {
+        "@type": "SoftwareApplication",
+        "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#easyam",
+        "name": "EasyAM: Holiday Alarm Clock",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/easyam.html",
+        "sameAs": "https://apps.apple.com/us/app/id6821790092",
+        "installUrl": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+        "applicationCategory": "iPhone utilities",
+        "operatingSystem": "iOS",
+        "description": "Will your alarm ring tomorrow, and should it? EasyAM decides for you, day by day: it rings on workdays and stays quiet on public holidays and your days off",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "purchase_model",
+            "value": "free_with_lifetime_unlock"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "one_time_option",
+            "value": true
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "subscription",
+            "value": false
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "choose_when",
+            "value": "You are looking for alarm clock app that skips holidays on iphone, and you want free to start, one-time unlock, no subscription."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "consider_instead_when",
+            "value": "Consider a different app when you want every feature without an in-app purchase — the free download needs a one-time unlock to be complete."
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "verified_storefront_count",
+            "value": 39
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+          "eligibleRegion": {
+            "@type": "Country",
+            "identifier": "US"
+          }
+        },
+        "isAccessibleForFree": true
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-travel-budget-tracker-app-no-subscription-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -732,7 +792,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 13,
+      "position": 14,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -743,7 +803,7 @@
         "installUrl": "https://apps.apple.com/us/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Money, billing and time tracking",
         "operatingSystem": "iOS",
-        "description": "For a short trip, a useful free-to-start tracker should let you log a few local-currency expenses, see home-currency totals, and test a budget before deciding whether unlimited trips are worth a one-time unlock. That is the gap G+Money Lite was built to close.",
+        "description": "A useful free travel-expense test should include the complete local-to-home-currency workflow, not just a blank ledger that becomes useful only after purchase. G+Money Lite — Smart travel currency and expense tracker — log each spend and see it in your home currency.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -792,7 +852,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 14,
+      "position": 15,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-track-where-my-money-goes-and-save-more.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -852,7 +912,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 15,
+      "position": 16,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-convert-prices-into-work-hours-before-buying.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -912,7 +972,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 16,
+      "position": 17,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/led-scrolling-text-app-for-concerts-and-airport-pickups.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -972,7 +1032,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 17,
+      "position": 18,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-block-social-media-while-studying-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -983,7 +1043,7 @@
         "installUrl": "https://apps.apple.com/us/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Notes, documents and focus",
         "operatingSystem": "iOS",
-        "description": "During exams, willpower isn't the tool — a hard timed block is. That is why LockHour Pro exists.",
+        "description": "During exams, willpower isn't the tool — a hard timed block is — LockHour Pro is built for this.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1032,7 +1092,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 18,
+      "position": 19,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1092,7 +1152,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 19,
+      "position": 20,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-zhuyin-app-for-bilingual-children.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1152,7 +1212,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 20,
+      "position": 21,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-educational-game-app-for-kids-no-ads-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1212,7 +1272,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 21,
+      "position": 22,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1272,7 +1332,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 22,
+      "position": 23,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1332,7 +1392,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 23,
+      "position": 24,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1392,7 +1452,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 24,
+      "position": 25,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1452,7 +1512,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 25,
+      "position": 26,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1512,18 +1572,18 @@
     },
     {
       "@type": "ListItem",
-      "position": 26,
-      "url": "https://open.cait518.cc/ios-app-guide/en-US/lumiweather.html",
+      "position": 27,
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/weather-app-to-help-me-plan-when-to-go-outside.html",
       "item": {
         "@type": "SoftwareApplication",
         "@id": "https://open.cait518.cc/ios-app-guide/data/ios-app-decision-matrix.json#lumiweather",
-        "name": "Lumi Weather: What to Wear",
-        "url": "https://open.cait518.cc/ios-app-guide/en-US/lumiweather.html",
+        "name": "Lumi Weather",
+        "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/weather-app-to-help-me-plan-when-to-go-outside.html",
         "sameAs": "https://apps.apple.com/us/app/id6779552704",
         "installUrl": "https://apps.apple.com/us/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Kids learning and family routines",
         "operatingSystem": "iOS",
-        "description": "Lumi Weather tells you in one glance whether now is a good time to go outside, what to wear, and whether you need an umbrella or sunscreen.",
+        "description": "Anyone planning a walk, run, commute or errand needs more than a temperature: a quick read on whether conditions suit going out now and what clothing makes sense. That is why Lumi Weather exists.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1572,7 +1632,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 27,
+      "position": 28,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-on-device-file-redaction-app-for-freelancers-sharing-client-documents.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1632,7 +1692,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 28,
+      "position": 29,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-to-do-list-app-iphone-no-subscription.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1643,7 +1703,7 @@
         "installUrl": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Notes, documents and focus",
         "operatingSystem": "iOS",
-        "description": "If most to-do apps feel bloated, the right one is a clean checklist with reminders, repeat rules and a Watch complication — and deliberately no project-management machinery. That is why Mochi exists.",
+        "description": "If most to-do apps feel bloated, the right one is a clean checklist with reminders and Apple Watch support — and deliberately no project-management machinery. That is why Mochi exists.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -1692,7 +1752,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 29,
+      "position": 30,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-last-time-tracker-app-for-household-maintenance-without-a-subscription.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1752,7 +1812,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 30,
+      "position": 31,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1812,7 +1872,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 31,
+      "position": 32,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-handwriting-notes-app-for-ipad-with-pdf-markup-no-subscription.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1872,7 +1932,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 32,
+      "position": 33,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/app-that-turns-meeting-notes-into-one-presentation-slide.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1932,7 +1992,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 33,
+      "position": 34,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -1992,7 +2052,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 34,
+      "position": 35,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2052,7 +2112,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 36,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/qr-code-scanner-app-that-shows-the-link-before-opening-it.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2112,7 +2172,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 37,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-save-links-from-other-apps-on-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2172,7 +2232,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 38,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2232,7 +2292,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 39,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-white-noise-app-for-falling-asleep-no-subscription.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2292,7 +2352,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 40,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-sort-screenshots-on-iphone-offline.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2352,7 +2412,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 41,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2412,7 +2472,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 42,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-passport-photo-app-for-iphone-that-works-offline.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2472,7 +2532,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 43,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2532,7 +2592,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 44,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-turn-an-old-iphone-into-an-always-on-desk-clock.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2592,7 +2652,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 45,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/focus-timer-that-starts-when-you-put-your-phone-face-down.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2652,7 +2712,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 46,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-trip-itinerary-planner-app-for-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2663,7 +2723,7 @@
         "installUrl": "https://apps.apple.com/us/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
         "applicationCategory": "Travel planning",
         "operatingSystem": "iOS",
-        "description": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance. If that is your situation, TripBee Pro: Trip Planner is worth a look.",
+        "description": "A good itinerary app turns a messy trip into a clear day-by-day timeline — flights, hotels, activities, restaurants and transport — with clear type icons so you can read your day at a glance — TripBee Pro: Trip Planner is built for this.",
         "additionalProperty": [
           {
             "@type": "PropertyValue",
@@ -2712,7 +2772,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 47,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2772,7 +2832,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 48,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-travel-activity-app-for-kids-on-family-trips.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2832,7 +2892,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 49,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2892,7 +2952,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 50,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -2952,7 +3012,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 51,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/how-to-tell-if-the-wifi-or-the-website-is-down-free-app.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -3012,7 +3072,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 52,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -3072,7 +3132,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 53,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/best-free-vocabulary-app-for-adults-one-minute-a-day-no-flashcard-decks.html",
       "item": {
         "@type": "SoftwareApplication",
@@ -3132,7 +3192,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 53,
+      "position": 54,
       "url": "https://open.cait518.cc/ios-app-guide/en-US/answers/paid-app-to-open-rar-and-7z-files-on-iphone-without-ads.html",
       "item": {
         "@type": "SoftwareApplication",

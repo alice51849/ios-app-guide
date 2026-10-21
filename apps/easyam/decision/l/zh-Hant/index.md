@@ -2,7 +2,7 @@
 title: "EasyAM: 國定假日、連假不響的智慧鬧鐘 — 明早要不要響？上班日、補班日照響，請假、特休自動跳過 | iOS App"
 lang: "zh-Hant"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/zh-Hant/index.html"
-modified: "2026-10-20"
+modified: "2026-10-21"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

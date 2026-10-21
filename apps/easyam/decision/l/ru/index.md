@@ -2,7 +2,7 @@
 title: "EasyAM: Умный будильник и часы — Звонит в будни, не в праздники | iOS App"
 lang: "ru"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/ru/index.html"
-modified: "2026-10-20"
+modified: "2026-10-21"
 app_store_id: "6821790092"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

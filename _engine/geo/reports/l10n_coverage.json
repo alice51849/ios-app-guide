@@ -1,58 +1,58 @@
 [
   {
-    "locale": "en-CA",
-    "pages": 2271,
+    "locale": "en-US",
+    "pages": 2297,
     "measured": 40,
-    "coverage": 6.4,
+    "coverage": 6.7,
     "native_ratio": null,
     "untranslated_pages": 37
   },
   {
     "locale": "en-AU",
-    "pages": 2271,
-    "measured": 40,
-    "coverage": 6.5,
-    "native_ratio": null,
-    "untranslated_pages": 37
-  },
-  {
-    "locale": "en-US",
-    "pages": 2271,
+    "pages": 2297,
     "measured": 40,
     "coverage": 6.9,
     "native_ratio": null,
-    "untranslated_pages": 35
+    "untranslated_pages": 36
+  },
+  {
+    "locale": "en-CA",
+    "pages": 2297,
+    "measured": 40,
+    "coverage": 6.9,
+    "native_ratio": null,
+    "untranslated_pages": 36
   },
   {
     "locale": "en-GB",
-    "pages": 2271,
+    "pages": 2297,
     "measured": 40,
-    "coverage": 7.3,
+    "coverage": 7.6,
     "native_ratio": null,
-    "untranslated_pages": 35
+    "untranslated_pages": 32
   },
   {
-    "locale": "ko",
-    "pages": 1736,
+    "locale": "zh-Hant",
+    "pages": 1975,
     "measured": 40,
-    "coverage": 64.6,
-    "native_ratio": 53.2,
+    "coverage": 67.2,
+    "native_ratio": 52.0,
     "untranslated_pages": 0
   },
   {
-    "locale": "th",
-    "pages": 1682,
+    "locale": "ko",
+    "pages": 1739,
     "measured": 40,
-    "coverage": 68.4,
-    "native_ratio": 55.1,
+    "coverage": 68.7,
+    "native_ratio": 54.1,
     "untranslated_pages": 0
   },
   {
     "locale": "ja",
-    "pages": 1797,
+    "pages": 1801,
     "measured": 40,
-    "coverage": 68.6,
-    "native_ratio": 57.0,
+    "coverage": 69.1,
+    "native_ratio": 60.3,
     "untranslated_pages": 0
   },
   {
@@ -64,34 +64,34 @@
     "untranslated_pages": 0
   },
   {
-    "locale": "zh-Hant",
-    "pages": 1968,
+    "locale": "th",
+    "pages": 1685,
     "measured": 40,
-    "coverage": 70.1,
-    "native_ratio": 51.7,
+    "coverage": 71.6,
+    "native_ratio": 57.2,
     "untranslated_pages": 0
   },
   {
     "locale": "ar-SA",
-    "pages": 1628,
+    "pages": 1633,
     "measured": 40,
-    "coverage": 71.7,
-    "native_ratio": 60.7,
+    "coverage": 73.5,
+    "native_ratio": 64.5,
     "untranslated_pages": 0
   },
   {
     "locale": "vi",
-    "pages": 1625,
+    "pages": 1627,
     "measured": 40,
-    "coverage": 71.9,
+    "coverage": 73.8,
     "native_ratio": null,
     "untranslated_pages": 0
   },
   {
-    "locale": "ms",
-    "pages": 1627,
+    "locale": "id",
+    "pages": 1618,
     "measured": 40,
-    "coverage": 72.5,
+    "coverage": 74.4,
     "native_ratio": null,
     "untranslated_pages": 0
   },
@@ -104,18 +104,18 @@
     "untranslated_pages": 0
   },
   {
-    "locale": "id",
-    "pages": 1617,
+    "locale": "ms",
+    "pages": 1629,
     "measured": 40,
-    "coverage": 77.5,
+    "coverage": 75.4,
     "native_ratio": null,
     "untranslated_pages": 0
   },
   {
     "locale": "de-DE",
-    "pages": 1745,
+    "pages": 1747,
     "measured": 40,
-    "coverage": 79.5,
+    "coverage": 79.4,
     "native_ratio": null,
     "untranslated_pages": 0
   },
@@ -129,9 +129,9 @@
   },
   {
     "locale": "fr-FR",
-    "pages": 1669,
+    "pages": 1671,
     "measured": 40,
-    "coverage": 81.0,
+    "coverage": 82.1,
     "native_ratio": null,
     "untranslated_pages": 0
   },
@@ -144,19 +144,19 @@
     "untranslated_pages": 0
   },
   {
+    "locale": "zh-Hans",
+    "pages": 289,
+    "measured": 40,
+    "coverage": 91.4,
+    "native_ratio": 72.1,
+    "untranslated_pages": 0
+  },
+  {
     "locale": "nl-NL",
     "pages": 128,
     "measured": 40,
     "coverage": 94.1,
     "native_ratio": null,
-    "untranslated_pages": 0
-  },
-  {
-    "locale": "zh-Hans",
-    "pages": 287,
-    "measured": 40,
-    "coverage": 94.4,
-    "native_ratio": 72.0,
     "untranslated_pages": 0
   },
   {
@@ -209,7 +209,7 @@
   },
   {
     "locale": "ru",
-    "pages": 206,
+    "pages": 207,
     "measured": 40,
     "coverage": 97.2,
     "native_ratio": 87.1,
@@ -361,7 +361,7 @@
   },
   {
     "locale": "sk",
-    "pages": 91,
+    "pages": 92,
     "measured": 40,
     "coverage": 98.4,
     "native_ratio": null,

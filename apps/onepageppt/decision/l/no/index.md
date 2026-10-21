@@ -2,7 +2,7 @@
 title: "OnePage PPT: AI-lysbilder — Ensides presentasjon fra PDF | iOS App"
 lang: "no"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/no/index.html"
-modified: "2026-10-20"
+modified: "2026-10-21"
 app_store_id: "6798814385"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

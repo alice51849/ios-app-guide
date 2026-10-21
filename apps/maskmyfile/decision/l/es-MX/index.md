@@ -2,7 +2,7 @@
 title: "Mask My File: Borra tus datos — Censurar fotos y PDF al enviar | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/maskmyfile/decision/l/es-MX/index.html"
-modified: "2026-10-20"
+modified: "2026-10-21"
 app_store_id: "6792850916"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

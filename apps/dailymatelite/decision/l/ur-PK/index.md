@@ -2,7 +2,7 @@
 title: "DailyMate Lite: آج ہی بولیں — بیرون ملک بات چیت، 50 زبانیں | iOS App"
 lang: "ur-PK"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/dailymatelite/decision/l/ur-PK/index.html"
-modified: "2026-10-20"
+modified: "2026-10-21"
 app_store_id: "6794725568"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

@@ -2,7 +2,7 @@
 title: "app to see Claude and Codex usage limits and reset times on iPhone"
 lang: "en-CA"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/en-CA/index.html"
-modified: "2026-10-20"
+modified: "2026-10-21"
 app_store_id: "6818607603"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

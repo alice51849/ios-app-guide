@@ -2174,34 +2174,38 @@
   },
   "en": {
    "title": "A checklist you still open in week three",
-   "meta": "Most checklists die because the list grows faster than it is finished. A daily item cap, one single place and visible completion fix it. Mochi is free to start, with no ads.",
+   "meta": "Most checklists die because the list grows faster than it gets finished. Cap today at four items, keep one place, keep it on your Home Screen. Mochi's free version holds 2 lists of 4 tasks.",
    "h1": "Checklists: how to build one that survives week three",
-   "lead": "Almost everyone has abandoned a list app. The app is rarely the problem — the list grew faster than it was finished.",
-   "answer": "Cap today's list at five items, keep everything in one place, and make completion visible immediately. Those three rules cover most abandonments.",
+   "lead": "Almost everyone has abandoned a checklist app. The app is rarely the problem — the list grew faster than it was finished, and it lived somewhere you stopped looking.",
+   "answer": "Keep a today list of four items and a second list for the rest of the week, put today where you see it without opening an app, and make every tick visible. Those rules fix most abandoned checklists, and they fit inside Mochi's free version, which holds 2 lists with up to 4 tasks each.",
    "paras": [
-    "A list that accumulates 60 items stops being a tool and becomes a guilt reminder. Five a day is what most people actually finish; the rest belongs on a separate someday list you look at once a week.",
-    "The second cause is having three places: phone notes, paper on the fridge, and an app. When information lives in three places none of them is trustworthy, and you stop checking all of them. Pick one and accept that it is incomplete for a few days.",
-    "Third is the feeling of finishing. Ticking has to return something immediately — a sound, an animation, the item leaving the screen. It sounds cosmetic, and it is what gets the app opened again tomorrow. Mochi is designed around that: simple lists with a satisfying tap to complete. Free to start, no ads, one-time unlock."
+    "A list that piles up to 60 items stops being a tool and turns into a guilt reminder. Four items is a number most people can actually finish on a weekday after work or class. Everything else goes on a second list for the rest of the week, which you look at in the evening and again on Sunday.",
+    "The second cause is having three places: phone notes, a paper list on the fridge, and an app. When the same errand lives in three places, none of them is trustworthy, so you stop checking all of them. Pick one place for a week and accept that it will be incomplete for the first few days while everything moves over.",
+    "The third cause is visibility. The checklist you forget is the one hidden two taps deep inside an app. A Home Screen widget puts today's items where you already look dozens of times a day, and checking the list from Apple Watch means you can see the next errand while your hands are full in a grocery aisle. Mochi supports both: widgets for the Home Screen and your list on Apple Watch, plus reminders that keep you on track.",
+    "Fourth is the feeling of finishing. Ticking has to return something right away. In Mochi you tap the little circle when a task is done, and the list visibly gets shorter. It sounds cosmetic; it is what gets the app opened again tomorrow, and a checklist only works if it is opened every day.",
+    "It helps to know the boundary before you download. The free version of Mochi includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set — exactly enough to run the today-plus-this-week method below. If you later want separate lists for groceries, school, chores and routines, Premium is an in-app purchase that unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets. Run the method for one week on the free version first; by Sunday you will know whether you need more lists."
    ],
    "look": [
-    "Whether the number of items shown today can be capped",
-    "Whether there is a separate someday list",
-    "Whether completing returns something immediately",
-    "How many taps adding an item costs",
-    "Ads, accounts and subscriptions"
+    "Whether you can keep today's list short and a second list for later",
+    "Whether a Home Screen widget shows today's tasks without opening the app",
+    "Whether you can check the list from Apple Watch",
+    "Whether completing a task gives immediate, visible feedback",
+    "How many taps adding a task costs",
+    "What the free version holds before you pay, and whether the upgrade is a subscription"
    ],
    "steps": [
-    "Collect everything currently written down into one place, unfiltered.",
-    "Split into two lists: today (five maximum) and someday.",
-    "For one week, add nothing to today once it is full.",
-    "On Sunday, move at most five items from someday into the week.",
-    "Anything sitting untouched in someday for three weeks should be deleted, not postponed."
+    "Spend ten minutes writing everything you are carrying in your head into one place, unfiltered.",
+    "Choose the four tasks that must happen today and put them on a list called Today. Everything else goes on a list called This week.",
+    "Add the Home Screen widget so Today is visible every time you unlock your phone.",
+    "For one week, nothing new enters Today once it holds four tasks; new things go to This week.",
+    "Each evening, tick what is done and move up to four tasks from This week into tomorrow's Today.",
+    "On Sunday, delete anything that has sat untouched on This week for three weeks instead of postponing it again."
    ],
    "rows": [
     [
-     "Items per day",
-     "Whether there is a cap",
-     "Above five, completion drops and the list becomes a guilt reminder"
+     "Tasks per day",
+     "Whether you cap today's list",
+     "Past four or five, completion drops and the list becomes a guilt reminder"
     ],
     [
      "Number of places",
@@ -2209,24 +2213,38 @@
      "Information in three places makes you stop trusting all of them"
     ],
     [
+     "Visibility",
+     "Widget and Apple Watch",
+     "A list you see without opening an app is a list you actually use"
+    ],
+    [
      "Completion feedback",
      "What happens on tick",
      "Immediate feedback is what gets the app opened again tomorrow"
+    ],
+    [
+     "Free version",
+     "How many lists and tasks before paying",
+     "Mochi's free version holds 2 lists of up to 4 tasks; Premium unlocks unlimited"
     ]
    ],
-   "fits": "Mochi fits people who tried complex task systems and quit: a short list, a pleasant tick, and not much else. Free to start, no ads, one-time unlock.",
+   "fits": "Mochi fits people who tried complex task systems and quit: a short list, a little circle to tap, a widget on the Home Screen, and not much else. It is free to start with 2 lists of up to 4 tasks; Premium is a one-time in-app purchase, not a subscription.",
    "faq": [
     [
-     "Isn't five items too few?",
-     "Deliberately. A finished list of five is worth more than a list of twenty with four crossed off."
+     "Isn't four tasks too few?",
+     "Deliberately. A finished list of four is worth more than a list of twenty with three crossed off. On a lighter day you can pull the next task from This week."
     ],
     [
      "Where do big tasks go?",
-     "On the someday list, broken into steps. Only the step that fits in one day moves into today."
+     "On This week, broken into steps. Only the step that fits in one day moves into Today."
+    ],
+    [
+     "Can I use the same app for groceries and chores?",
+     "Yes. Mochi is built for tasks, errands, groceries, chores and routines. On the free version that means choosing which 2 lists matter most; Premium removes the list and task limits."
     ],
     [
      "Does Mochi have a subscription?",
-     "No. Free to start, one-time unlock, no ads."
+     "No. Mochi is free to start; Premium is a one-time in-app purchase that unlocks unlimited lists and tasks, all 101 themes and all 11 emoji sets."
     ]
    ]
   }

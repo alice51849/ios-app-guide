@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-20T07:55:28Z",
+ "updated_at": "2026-10-21T07:59:16Z",
  "targets": [
   {
    "app_id": "6792850916",
@@ -30,6 +30,14 @@
    "country": "cz",
    "locale": "cs",
    "keyword": "rodinné cestování",
+   "rank": 2,
+   "leader_ratings": 0
+  },
+  {
+   "app_id": "6798814385",
+   "country": "de",
+   "locale": "de-DE",
+   "keyword": "onepager",
    "rank": 2,
    "leader_ratings": 0
   },
@@ -74,14 +82,6 @@
    "leader_ratings": 0
   },
   {
-   "app_id": "6802423998",
-   "country": "jp",
-   "locale": "ja",
-   "keyword": "バッテリー 交換時期",
-   "rank": 2,
-   "leader_ratings": 0
-  },
-  {
    "app_id": "6787193643",
    "country": "jp",
    "locale": "ja",
@@ -122,6 +122,14 @@
    "leader_ratings": 0
   },
   {
+   "app_id": "6794039979",
+   "country": "us",
+   "locale": "en-US",
+   "keyword": "price in hours",
+   "rank": 2,
+   "leader_ratings": 0
+  },
+  {
    "app_id": "6818607603",
    "country": "tw",
    "locale": "zh-Hant",
@@ -136,6 +144,14 @@
    "keyword": "palkintotaulu",
    "rank": 2,
    "leader_ratings": 2
+  },
+  {
+   "app_id": "6778748533",
+   "country": "tw",
+   "locale": "zh-Hant",
+   "keyword": "字母描寫",
+   "rank": 2,
+   "leader_ratings": 3
   },
   {
    "app_id": "6790800323",
@@ -182,22 +198,6 @@
    "country": "de",
    "locale": "de-DE",
    "keyword": "Leuchttafel",
-   "rank": 3,
-   "leader_ratings": 0
-  },
-  {
-   "app_id": "6779750237",
-   "country": "es",
-   "locale": "ca",
-   "keyword": "taula de recompenses",
-   "rank": 3,
-   "leader_ratings": 0
-  },
-  {
-   "app_id": "6782275018",
-   "country": "fi",
-   "locale": "fi",
-   "keyword": "terävöitä kuva",
    "rank": 3,
    "leader_ratings": 0
   }

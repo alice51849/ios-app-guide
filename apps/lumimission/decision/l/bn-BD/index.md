@@ -2,7 +2,7 @@
 title: "Lumi Mission Planet — শিশুদের পুরস্কার স্টিকার চার্ট | iOS App"
 lang: "bn-BD"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/bn-BD/index.html"
-modified: "2026-10-20"
+modified: "2026-10-21"
 app_store_id: "6779750237"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

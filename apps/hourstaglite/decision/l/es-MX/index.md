@@ -2,7 +2,7 @@
 title: "HoursTag Lite: Precio en horas — Compra consciente: precio real | iOS App"
 lang: "es-MX"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstaglite/decision/l/es-MX/index.html"
-modified: "2026-10-20"
+modified: "2026-10-21"
 app_store_id: "6794039979"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

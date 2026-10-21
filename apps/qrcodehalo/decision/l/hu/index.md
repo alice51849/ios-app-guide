@@ -2,7 +2,7 @@
 title: "QR Code Halo: vonalkódolvasó — Azonnal nyílik, később nézd át | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/qrcodehalo/decision/l/hu/index.html"
-modified: "2026-10-20"
+modified: "2026-10-21"
 app_store_id: "6806779853"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

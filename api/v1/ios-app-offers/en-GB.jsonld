@@ -744,8 +744,8 @@
         "@type": "Offer",
         "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-GB.jsonld#offer-easyam",
         "url": "https://apps.apple.com/gb/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
-        "name": "EasyAM: Workday Alarm Clock",
-        "description": "Will your alarm go off tomorrow, and should it? EasyAM works it out for you: it rings on working days and stays quiet on bank holidays and your days off",
+        "name": "EasyAM",
+        "description": "EasyAM — EasyAM decides for you, day by day: it rings on workdays and stays quiet on public holidays and your days off. Free to start · One-time unlock · No subscription.",
         "seller": {
           "@type": "Organization",
           "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
@@ -760,7 +760,7 @@
             "propertyID": "Apple App Store ID",
             "value": "6821790092"
           },
-          "name": "EasyAM: Workday Alarm Clock",
+          "name": "EasyAM",
           "operatingSystem": "iOS",
           "applicationCategory": "UtilitiesApplication",
           "url": "https://apps.apple.com/gb/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
@@ -771,11 +771,11 @@
             "target": "https://apps.apple.com/gb/app/id6821790092?pt=118326163&ct=geo_pick&mt=8"
           },
           "mainEntityOfPage": {
-            "@id": "https://open.cait518.cc/ios-app-guide/en-GB/easyam.html#webpage"
+            "@id": "https://open.cait518.cc/ios-app-guide/en-GB/answers/alarm-clock-app-that-skips-holidays-on-iphone.html#webpage"
           },
           "sameAs": "https://apps.apple.com/app/id6821790092",
           "inLanguage": "en-GB",
-          "description": "Will your alarm go off tomorrow, and should it? EasyAM works it out for you: it rings on working days and stays quiet on bank holidays and your days off",
+          "description": "EasyAM — EasyAM decides for you, day by day: it rings on workdays and stays quiet on public holidays and your days off. Free to start · One-time unlock · No subscription.",
           "offers": {
             "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-GB.jsonld#offer-easyam"
           },

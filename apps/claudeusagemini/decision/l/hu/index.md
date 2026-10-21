@@ -2,7 +2,7 @@
 title: "UsageNow: MI-használat követő — Claude, Codex, Copilot limitek | iOS App"
 lang: "hu"
 canonical: "https://open.cait518.cc/ios-app-guide/apps/claudeusagemini/decision/l/hu/index.html"
-modified: "2026-10-20"
+modified: "2026-10-21"
 app_store_id: "6818607603"
 verified_live: true
 purchase_model: "free_with_lifetime_unlock"

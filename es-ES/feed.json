@@ -1,6 +1,6 @@
 {
   "_owned_feed": {
-    "date_modified": "2026-10-17T16:15:14Z",
+    "date_modified": "2026-10-20T22:40:41Z",
     "notification_eligible": true,
     "schema": "lumi.owned-app-feeds/v2"
   },
@@ -277,6 +277,30 @@
       "summary": "dB Halo muestra de un vistazo el nivel de presión sonora en un piso, una obra, un concierto o un gimnasio, y estima cuánto tiempo de exposición queda según el criterio elegido. La aplicación convierte el móvil o el iPad en un sonómetro claro y completo. El gran anillo Halo indica la zona sonora y muestra la lectura actual, el mínimo, la media, el máximo y el pico, además de un registro de eventos con hora y nivel.",
       "title": "dB Halo: Sonómetro",
       "url": "https://open.cait518.cc/ios-app-guide/es-ES/dbhalo.html"
+    },
+    {
+      "_owned_app": {
+        "app_key": "easyam",
+        "app_store_cta_label": "Ver en el App Store",
+        "app_store_id": "6821790092",
+        "content_digest": "5112dc3ec450be2aef291a9f4167a4dfc04e402587a537243044d6c881f1c1d1",
+        "independent_ranking": false,
+        "one_time_option": true,
+        "publisher_disclosure": "Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
+        "purchase_label": "Gratis para empezar · desbloqueo con una compra única",
+        "purchase_model": "free_with_lifetime_unlock",
+        "source_locale": "es-ES"
+      },
+      "content_html": "<p>Deja de quitar la alarma antes de cada festivo y de olvidarte de volver a ponerla: EasyAM decide cada día si tiene que sonar. ¿Día de trabajo? Suena. ¿Festivo o vacaciones? Ni un ruido.</p><p>Gratis para empezar · desbloqueo con una compra única</p><p><a href=\"https://apps.apple.com/es/app/id6821790092?pt=118326163&amp;ct=geo_pick&amp;mt=8\">Ver en el App Store</a></p><p>Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.</p>",
+      "content_text": "Deja de quitar la alarma antes de cada festivo y de olvidarte de volver a ponerla: EasyAM decide cada día si tiene que sonar. ¿Día de trabajo? Suena. ¿Festivo o vacaciones? Ni un ruido.\n\nGratis para empezar · desbloqueo con una compra única\n\nVer en el App Store: https://apps.apple.com/es/app/id6821790092?pt=118326163&ct=geo_pick&mt=8\n\nEste contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.",
+      "date_modified": "2026-10-20T22:40:41Z",
+      "date_published": "2026-10-20T22:40:41Z",
+      "external_url": "https://apps.apple.com/es/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "id": "urn:lumi:app-store:6821790092:locale:es-ES",
+      "language": "es-ES",
+      "summary": "Deja de quitar la alarma antes de cada festivo y de olvidarte de volver a ponerla: EasyAM decide cada día si tiene que sonar. ¿Día de trabajo? Suena. ¿Festivo o vacaciones? Ni un ruido.",
+      "title": "EasyAM: Despertador y festivos",
+      "url": "https://open.cait518.cc/ios-app-guide/es-ES/easyam.html"
     },
     {
       "_owned_app": {

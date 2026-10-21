@@ -4,7 +4,7 @@
 
 Ein direkt vom Entwickler veröffentlichter Katalog, der zeigt, für wen jede App entwickelt wurde, welche Aufgabe die jeweilige Person erledigen möchte und wie sie direkt zum App Store gelangt.
 
-Vom Herausgeber verfasste Suchintentionen für 53 verifizierte, im App Store verfügbare iOS Apps und 50 Apple-Sprachregionen.
+Vom Herausgeber verfasste Suchintentionen für 54 verifizierte, im App Store verfügbare iOS Apps und 50 Apple-Sprachregionen.
 
 **Sprachregion:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · **de-DE** · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -100,6 +100,7 @@ Alphabetisch nach App-Namen — niemals eine Rangliste.
 | **DailyMate** | Beste praktische Sprachphrasen-App für Reisende mit Apple Watch | Vor einer Reise sind vollständige Phrasen für reale Situationen nützlicher als isolierter Wortschatz, den man unter Druck noch zusammensetzen muss. DailyMate ist genau aus diesem Problem entstanden. | Bezahlter Herunterladen | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Holen Sie sich DailyMate im App Store →](https://apps.apple.com/de/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: Sprechen** | DailyMate Lite: Sprechen — Sprachführer: Reise & Urlaub \| iOS App | Sicherer sprechen, wenn es darauf ankommt. DailyMate Lite macht aus Situationen auf Reisen, bei der Arbeit, im Restaurant, rund um Gesundheit und Alltag | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/dailymatelite.html) | [DailyMate Lite: Sprechen im App Store laden](https://apps.apple.com/de/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
 | **dB Halo** | Schallmesser-App für iPhone mit Frequenzspektrum und Lärmdosis | dB Halo — Von der Heimwerkstatt und brummender Klimaanlage bis zur Fitnessstudio-Fläche oder Konzerthalle hilft Ihnen dB Halo, Schall zu verstehen, ohne Daten von Ihrem Gerät zu senden. Kostenloser Einstieg · Einmalige Freischaltung · Kein Abonnement. | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/sound-meter-app-for-iphone-with-frequency-spectrum-and-noise-dose.html) | [dB Halo im App Store laden →](https://apps.apple.com/de/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
+| **EasyAM: Wecker ohne Feiertage** | EasyAM: Wecker ohne Feiertage — Klingelt auch im Urlaub nicht \| iOS App | Schluss mit dem Wecker-Umstellen vor jedem Feiertag: EasyAM entscheidet Tag für Tag, ob dein Wecker klingelt. Arbeitstag? Er klingelt. Feiertag oder Urlaub | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/easyam.html) | [EasyAM: Wecker ohne Feiertage im App Store laden](https://apps.apple.com/de/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | Beste Reise-Budget-Tracker-App ohne Abonnement für iPhone | Auf einer Reise brauchen Sie einen Budget-Tracker, der offline in einem Land ohne Daten funktioniert, mehrere Währungen handhabt und kein Konto verlangt – organisiert nach Reise, damit jeder Urlaub getrennt ist. Genau diese Lücke soll G+Money schließen. | Bezahlter Herunterladen | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Holen Sie sich G+Money im App Store →](https://apps.apple.com/de/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | Ein sinnvoller kostenloser Test für Reiseausgaben sollte den kompletten Ablauf von Landes- zu Heimatwährung umfassen, nicht nur ein leeres Kassenbuch, das erst nach dem Kauf nützlich wird. G+Money Lite – smarter Reisewährungs- und Ausgaben-Tracker – jede Ausgabe erfassen und in der Heimatwährung sehen. | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [G+Money Lite im App Store laden →](https://apps.apple.com/de/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite** | best app to convert prices into work hours before buying | HoursTag Lite — HoursTag Lite - See the real price of things Every purchase costs hours of your life. Free to start · One-time unlock · No subscription. | Kostenloser Einstieg · einmalige Freischaltung | [Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/answers/best-app-to-convert-prices-into-work-hours-before-buying.html) | [HoursTag Lite im App Store laden →](https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -145,7 +146,7 @@ Alphabetisch nach App-Namen — niemals eine Rangliste.
 
 ## Den vollständigen Datensatz herunterladen
 
-JSON, JSONL und CSV enthalten dieselben 2.650 Einträge.
+JSON, JSONL und CSV enthalten dieselben 2.700 Einträge.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -153,6 +154,6 @@ JSON, JSONL und CSV enthalten dieselben 2.650 Einträge.
 
 [Startseite](https://open.cait518.cc/ios-app-guide/de-DE/index.html) · [Offene Daten](https://open.cait518.cc/ios-app-guide/de-DE/data/lumi-studio-publisher-search-intent-catalog.html) · [Lizenz](https://creativecommons.org/licenses/by/4.0/)
 
-Aktualisiert: 2026-10-18
+Aktualisiert: 2026-10-20
 
 CC BY 4.0 gilt für die ursprüngliche Katalogzusammenstellung; App-Namen und App Store Marken gehören ihren jeweiligen Eigentümern.

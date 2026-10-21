@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "uk",
   "dateModified": "2026-10-20",
-  "content_digest": "610ac599cdac3a6eb200ce4863ada524c3898d54316b5333ddd76624dd098649",
-  "generation_digest": "33e84ca012dc36f9d2f42e5bf73f5a868c680e0794de9da021b07f962363bd1e",
+  "content_digest": "1b6a17c21d9f179a9860477b1687bb944f8ee30ca4132c0ce0987288f3041fba",
+  "generation_digest": "64515fcc1834987bd856e82e47fed33fd87a687dccd27bd7788abac5b978109e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 53,
+  "record_count": 54,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/uk.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/uk.rss.xml",
@@ -812,6 +812,73 @@
       "guide_cta_label": "Прочитати повний довідник",
       "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
       "source_persona_query": "sound meter app for iphone with frequency spectrum and noise dose",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "uk:easyam",
+      "locale": "uk",
+      "app_key": "easyam",
+      "app_name": "EasyAM: Будильник і свята",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "EasyAM: Будильник і свята — Будить лише в робочі дні | iOS App",
+      "decision_context": "Чи задзвонить будильник завтра й чи має він дзвонити? EasyAM вирішує це за вас день за днем: будить у робочі дні, мовчить у свята та ваші вихідні й показує найближчі сім днів з одного погляду. Більше не треба вимикати будильник перед святами чи відпусткою, а потім згадувати, що його слід увімкнути знову. Національні та регіональні свята обраної країни чи регіону пропускаються автоматично. Там, де є перенесені робочі дні, будильник дзвонить як зазвичай. Треба встати раніше чи пізніше лише одного дня? Змініть час тільки для нього, решта днів залишиться як є. Відпустки й відгули на день або на період, з власною назвою та значком, за бажання навіть із власним будильником. Хочете завтра поспати довше? Кнопка «Виспатися» вимикає лише найближчий дзвінок, а правило не змінюється. Якщо дані про свята невідомі або застарілі, день вважається робочим і будильник дзвонить. Кому підійде Тим, хто працює з понеділка до п'ятниці й хоче спокійний ранок у свята та у відпустці. Учителям і студентам, які позначають канікули як вихідні. Тим, хто працює змінами: графіки змін і чергування тижнів відкриваються покупкою в застосунку. Тим, хто живе або працює за кордоном: оберіть країну чи регіон, де ви зараз, і EasyAM враховуватиме місцеві свята. Можливості Будильник із повтором за днями тижня або одноразовий, з назвою та відкладенням дзвінка від 1 до 60 хвилин. Свята 67 країн і регіонів на 2026–2028 роки вбудовані в застосунок і працюють без інтернету, новіші файли можна завантажити. Календар на місяць зі святами, перенесеними робочими днями та вашими вихідними. Додаткові робочі дні й винятки з назвою та значком: понаднормова робота, відрядження, нічна зміна. До 12 власних категорій з назвою, кольором і одним із 59 значків. Справжні системні будильники iOS: позначка про готовність з'являється лише після того, як iOS підтвердить розклад. Під час дзвінка або відкладення будильник видно як Live Activity і в Dynamic Island. Віджети для початкового й замкненого екрана показують наступний будильник і свята. У середньому й великому віджетах завтрашній дзвінок можна пропустити одним дотиком, а малий працює також у режимі StandBy. На Apple Watch видно наступний будильник і найближчі 7 днів, а завтрашній дзвінок можна пропустити із зап'ястя. Будильники ставить спарений iPhone. 101 тема годинника в десяти колекціях, від перекидних карток і стрілочних циферблатів до табло відправлень. Стандартна тема вже є, а кожну тему можна переглянути на весь екран. Зі стрілочним циферблатом віджет на початковому екрані стає круглим годинником. Для iPhone та iPad, 50 мов; мова застосунку відповідає системній. Конфіденційність Без облікового запису, реклами, аналітики й відстеження. Будильники та налаштування зберігаються на пристрої, а інтернет потрібен лише для завантаження файлів зі святами. Необмежена кількість будильників, графіки змін і чергування тижнів, окремий календар свят для кожного будильника та ще 100 тем годинника відкриваються одноразовою покупкою в застосунку. Питання чи ідеї? Напишіть нам через посилання на підтримку на цій сторінці.",
+      "category": "utility",
+      "category_label": "Ще",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Безкоштовно для початку · разове розблокування",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Віджет",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Ще",
+        "Безкоштовно для початку · разове розблокування",
+        "Без облікового запису",
+        "Без реклами",
+        "Без відстеження",
+        "Приватно / на пристрої",
+        "Віджет",
+        "Apple Watch",
+        "App Store · Безкоштовно"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/uk/easyam.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/uk/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/uk/easyam.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Feasyam%2Fdecision%2Fl%2Fuk%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/uk.json",
+      "app_store_id": "6821790092",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6821790092",
+      "app_store_url": "https://apps.apple.com/ua/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Завантажте EasyAM: Будильник і свята з App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Безкоштовно"
+      },
+      "guide_cta_label": "Прочитати повний довідник",
+      "publisher_disclosure": "Це матеріали першої сторони, опубліковані Lumi Studio, розробником кожного з перелічених додатків.",
+      "source_persona_query": "alarm clock app that skips holidays on iphone",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

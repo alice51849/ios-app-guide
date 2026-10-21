@@ -3,7 +3,7 @@
 > 每個 iOS App 的結構化資訊 — 功能、價格與常見問題。
 
 locale: zh-Hant
-apps: 53
+apps: 54
 - App 目錄: https://open.cait518.cc/ios-app-guide/zh-Hant/tools/private-pay-once-iphone-app-finder.html
 - App 目錄 · PWA: https://open.cait518.cc/ios-app-guide/zh-Hant/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/zh-Hant.jsonld
@@ -28,11 +28,11 @@ apps: 53
 - App 目錄 · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/zh-Hant/notesstudio100.html) — 手寫筆記本、PDF標註、錄音與複習
-  - 手寫、打字、標註 PDF，還能把課堂錄音留在同一頁，全程離線。用抽認卡複習。免註冊，筆記只存在裝置裡。
+  - 入冬到期末考：手寫筆記、標註講義 PDF，把上課錄音留在同一頁，再用抽認卡複習。全程離線、免註冊，筆記只存在裝置裡。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief：檔案轉 AI 提示詞](https://open.cait518.cc/ios-app-guide/zh-Hant/aibriefpack.html) — 檔案、PDF 轉提示詞與摘要
-  - 脈絡越清楚，AI 回答越好。把截圖、PDF 和筆記丟進 AI Brief，在裝置上讀取、標出個資，整理成可直接貼進任何 AI 聊天的乾淨簡報。
+  - 年終報告、年底提案、跨年行程，資料散在截圖、PDF、筆記和連結裡？全部放進來，在裝置上讀取、標出個人資料，每項事實保留來源，整理成一份給 AI 的清楚簡報。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
 - [Aim990：英文弱點教練](https://open.cait518.cc/ios-app-guide/zh-Hant/aim990.html) — 多益聽讀診斷與30天計畫
@@ -40,7 +40,7 @@ apps: 53
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
 - [BattAI: 電池健康分數](https://open.cait518.cc/ios-app-guide/zh-Hant/battai.html) — 規則、來源與限制都說清楚
-  - 看懂電池隨時間的變化 規則、來源與限制都說清楚 解鎖更深入的記錄、規劃與報告。 只付一次，絕無訂閱。
+  - 年底想換新機、賣掉舊手機？建立清楚的電池報告，存成 PNG 給買家或檢修參考；還能看最大容量趨勢與預估到 80% 的時間。資料留在這台裝置上。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
 - [CalDaily 計算機與主題](https://open.cait518.cc/ios-app-guide/zh-Hant/caldaily.html) — 桌面小工具，貸款折扣小費都能算
@@ -64,15 +64,19 @@ apps: 53
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate：用句子學語言](https://open.cait518.cc/ios-app-guide/zh-Hant/dailymate.html) — 每日一句・情境短句與會話
-  - 會背單字卻開不了口？用完整句子學，每句都附自然回應。47 種語言、8,400 句生活短句、84 個真實情境，主畫面小工具與 Apple Watch 隨時複習，離線也能用，沒有訂閱。
+  - 單字背了一堆，真要開口還是卡住？DailyMate 用完整句子教，每句都附上對方自然的回應。47 種語言、8,400 句、84 個生活情境，主畫面小工具和 Apple Watch 隨時練。
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo：分貝計](https://open.cait518.cc/ios-app-guide/zh-Hant/dbhalo.html) — 噪音測量、頻譜與睡眠日誌
   - 一眼看清現在幾分貝，完整頻譜一覽無遺；估算每天的噪音暴露量，睡眠日誌還能記錄鼾聲。全部在裝置上完成，免註冊。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: 國定假日、連假不響的智慧鬧鐘](https://open.cait518.cc/ios-app-guide/zh-Hant/easyam.html) — 明早要不要響？上班日、補班日照響，請假、特休自動跳過
+  - 元旦三天連假、春節連假，國定假日早上自動不響；年底排休、特休設成休假也安靜。收假上班那天照常叫你，補班日也照響。接下來七天哪天響、幾點響，一打開就看清楚；明早想多睡，一鍵只跳過那一次。
+  - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
+  - App Store: https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite：旅行記帳·匯率換算](https://open.cait518.cc/ios-app-guide/zh-Hant/gmoneylite.html) — 出國預算・自由行花費・每日預算
-  - 設好每日預算，今天還剩多少，桌面小工具和 Apple Watch 一眼就知道。任何幣別都能記，即時換算，離線也行。不用註冊帳號。
+  - 出國玩一不小心就超支？每筆花費用當地幣別記，立刻換算成你的本國幣，離線也能用。設好每日預算，桌面小工具一眼看今天還剩多少。免註冊帳號。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money：日常記帳·預算·匯率](https://open.cait518.cc/ios-app-guide/zh-Hant/gmoney.html) — 多幣別・離線記帳・分類報表
@@ -80,7 +84,7 @@ apps: 53
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite：買前先算工時](https://open.cait518.cc/ios-app-guide/zh-Hant/hourstaglite.html) — 衝動購物前，先換算成工時
-  - 買之前先看這個價格等於你幾小時的工作，再標記成需要、想要或衝動。支援主畫面小工具和 Apple Watch。不用帳號，資料只存在手機裡。
+  - 年底購物季又想衝動下單？結帳前先看這個價格等於你幾小時的工作，再標記成需要、想要或衝動。還能算出目標要工作多久。免帳號，資料只存在手機裡。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag：價格換工時](https://open.cait518.cc/ios-app-guide/zh-Hant/hourstag.html) — 月薪時薪計算・花費記帳本
@@ -132,11 +136,11 @@ apps: 53
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
 - [Mask My File：分享前移除個資](https://open.cait518.cc/ios-app-guide/zh-Hant/maskmyfile.html) — 分享前遮蔽個資與私密資訊
-  - 傳送 PDF、照片或截圖前，自動找出姓名、電話、Email、卡號與人臉，永久塗黑並清除中繼資料。全程在裝置上處理，不需帳號。
+  - 年底換租要附薪資單、寒假出國要傳護照影本？傳送前先找出個資，只把你選的地方徹底塗黑，再清掉中繼資料。全部在手機上處理，不上傳。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp：上次何時](https://open.cait518.cc/ios-app-guide/zh-Hant/mochidonestamp.html) — 家事保養紀錄・到期循環提醒
-  - 再也不用猜「上次是什麼時候做的」。完成就蓋章，Mochi 幫你記住，時間到了再提醒你。床單、濾網、澆花、打電話回家，還能和家人共享。
+  - 上次換床單、換濾網是什麼時候？做完點一下，Mochi 記下準確時間，到期再提醒你，週期從你真正完成那天重新算。支援主畫面與鎖定畫面小工具，免帳號、無廣告。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
 - [Mochi: 可愛待辦清單](https://open.cait518.cc/ios-app-guide/zh-Hant/mochi.html) — 療癒手帳・購物清單小工具
@@ -144,7 +148,7 @@ apps: 53
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
 - [MoneyTag: 收入與支出](https://open.cait518.cc/ios-app-guide/zh-Hant/moneytag.html) — 專案 · 標籤 · 報表
-  - 每個專案都有自己的損益：收入減支出，一眼看出賺或賠。客戶、設備用標籤記一次，就能跨專案加總。不用註冊帳號。
+  - 接了好幾個案子，到底哪個有賺？MoneyTag 每個專案一本帳，收入減支出直接看到淨利，幣別也能各自設定。用標籤記客戶或設備，主畫面小工具與 Apple Watch 隨手記。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
 - [OnePage PPT: AI 一頁簡報](https://open.cait518.cc/ios-app-guide/zh-Hant/onepageppt.html) — 簡報製作・筆記截圖秒變投影片
@@ -164,7 +168,7 @@ apps: 53
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag:AI 連結收藏](https://open.cait518.cc/ios-app-guide/zh-Hant/savetag.html) — 書籤與稍後閱讀・購物願望清單・自動分類
-  - 從任何 App 一鍵存下連結。SaveTag 在裝置上依主題自動分類，用意思就搜得到，每天把還沒讀的翻出來。不用註冊、沒有廣告，也不上雲。
+  - 傳給自己的連結，後來都找不到？從任何 App 分享到 SaveTag，在裝置上自動貼主題標籤，記得大概意思就搜得到，每天再挑幾則沒讀的提醒你。免註冊、不上雲。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: 離線PDF掃描](https://open.cait518.cc/ios-app-guide/zh-Hant/scanto.html) — OCR文字辨識・文件證件收據
@@ -172,15 +176,15 @@ apps: 53
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
 - [Sereno: 極致睡眠音效](https://open.cait518.cc/ios-app-guide/zh-Hant/sereno.html) — 雨聲白噪音・助眠專注神器
-  - 雨聲、海浪、火焰等 140 多種舒緩聲音，適合睡眠與專注時聆聽。自由混音，入睡時音量漸弱，早晨用鳥鳴輕柔喚醒。100% 離線，免註冊。
+  - 躺了很久還是睡不著？真實錄製的雨聲、海浪、柴火，加上白噪音、粉紅噪音、棕噪音，能混出上千種聲景，不會重複循環，定時後慢慢淡出。完全離線、免註冊。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI：截圖整理](https://open.cait518.cc/ios-app-guide/zh-Hant/shotinbox.html) — OCR搜尋・自動分類・時間軸
-  - 截圖分類交給它:收據、票券、旅遊、對話自動歸類,裡面的文字都搜得到。開連結、加提醒、追蹤包裹,想刪除的截圖一次清掉。全在本機整理,不上傳任何內容。
+  - 年底購物、出遊，收據、車票、訂單截圖越存越多？自動分成購物、收據、旅遊、票券，圖裡的字都搜得到，追蹤包裹、加提醒，不要的截圖一次清掉。全在本機處理。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite：在家拍證件照](https://open.cait518.cc/ios-app-guide/zh-Hant/snapportlite.html) — 人像照精準裁成指定尺寸
-  - 需要特定尺寸的人像照？選好尺寸、對齊臉部、換上乾淨背景，還能預覽沖印排版。內建多種尺寸範本，可匯出 JPEG、PNG 或 PDF。
+  - 年底出國、換護照，或年後要準備履歷照？用現成尺寸範本把照片裁成精確規格，臉部輔助線幫你對齊，背景可換成白色或藍色，全程在裝置上處理。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
 - [Snapport: 護照證件照](https://open.cait518.cc/ios-app-guide/zh-Hant/snapport.html) — 大頭照排版・台胞證白底照片
@@ -192,7 +196,7 @@ apps: 53
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock:翻頁桌鐘](https://open.cait518.cc/ios-app-guide/zh-Hant/stayclock.html) — 全天顯示時間與行事曆
-  - 一款好看的全天候桌鐘，隔著房間也看得清楚。翻頁、LED、指針多種錶面，真正的月曆、鬧鐘與柔和夜間模式，全在裝置本機運作。
+  - 入冬到年底跨年，夜越來越長：充電時把手機放床頭，就是隔著房間也看得清楚的恆亮大時鐘。整月行事曆、整點報時、簡易鬧鐘都有，不用帳號、沒有廣告。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown：翻面專注計時](https://open.cait518.cc/ios-app-guide/zh-Hant/studydown.html) — 螢幕朝下蓋著放
@@ -204,11 +208,11 @@ apps: 53
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite：旅程規劃](https://open.cait518.cc/ios-app-guide/zh-Hant/tripbeelite.html) — 出國自由行・每日行程表
-  - 把下一趟旅程一天一天排清楚：時間、地點、提醒、票券與當地天氣，都在同一條時間軸。下一站在 Apple Watch 上也看得到，免註冊。
+  - 機票在信箱、飯店在訊息、票券在截圖裡？TripBee Lite 把下一趟旅程排成一條每日時間軸，航班、住宿、筆記、提醒和票券資訊都在一起。免註冊、無廣告。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: 旅遊行程規劃](https://open.cait518.cc/ios-app-guide/zh-Hant/tripbee.html) — 揪團出遊共編・行李打包清單
-  - 揪團出遊不用再傳來傳去：邀請家人朋友共同編輯同一趟行程，每天可加雨天備案，提醒依當地時間準時響起，打包清單還會依每位旅伴與孩子年齡自動產生。
+  - 揪團出遊，行程別再傳來傳去：邀家人朋友一起編同一份行程，雨天有備案，打包清單依每位旅伴與孩子年齡自動產生，離線也能規劃。想先試試？搜尋「TripBee Lite」
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
 - [Unblurry Pro：照片變清晰](https://open.cait518.cc/ios-app-guide/zh-Hant/unblurry.html) — 老照片修復・翻新舊相片
@@ -216,7 +220,7 @@ apps: 53
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
 - [UsageNow：AI 用量與額度追蹤](https://open.cait518.cc/ios-app-guide/zh-Hant/claudeusagemini.html) — Claude、Codex、Copilot 重置倒數
-  - 自訂任何百分比的提醒，可依 5 小時或每週重置時間排序，小工具還能翻看每個帳號。每個 AI 方案還剩多少，一眼就清楚。
+  - 年底趕專案，最怕 AI 額度做到一半用完。UsageNow 在主畫面顯示每個 AI 方案還剩多少與重置倒數，還能自訂任何百分比的提醒，用完之前先通知你。
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaidlite.html) — 無法上網？一鍵找出原因
@@ -224,7 +228,7 @@ apps: 53
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid：找出網路問題·診斷](https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaid.html) — 分享器・路由器・Mesh・DNS
-  - 一次查清是 DNS、電信業者、Wi-Fi 登入頁還是單一網站出問題，看得到目前連的是哪個 Mesh 節點，還能匯出 PDF 報告給客服。支援小工具與手錶。
+  - 網路時好時壞，到底是 Wi-Fi、DNS 還是網站本身？WiFi Aid 一鍵做 DNS、TCP、TLS、延遲與穩定度檢測，找出最可能的原因，也能單獨檢查某個網站。支援小工具與手錶。
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate Lite 每天五個單字](https://open.cait518.cc/ios-app-guide/zh-Hant/wordmatelite.html) — 44 種語言，一分鐘的字彙習慣
@@ -232,10 +236,10 @@ apps: 53
   - 價格: 免費下載,一次性購買即可解鎖全部功能,沒有訂閱陷阱。
   - App Store: https://apps.apple.com/tw/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate：44 種語言背單字](https://open.cait518.cc/ios-app-guide/zh-Hant/wordmate.html) — 單字卡・複習・單字小工具
-  - 通勤、排隊的零碎時間，也能背單字：44 種語言、14 個主題、初中高 3 個級別。主畫面小工具與 Apple Watch 都能直接背，離線可用、免註冊、無訂閱。
+  - 背了又忘、單字書翻不完？Wordmate 把 44 種語言的單字分成 14 個實用主題、84 個小單元，每個英文單字都有例句與發音。主畫面小工具和 Apple Watch 也能直接背。
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox 解壓縮：RAR ZIP 7z](https://open.cait518.cc/ios-app-guide/zh-Hant/zipbox.html) — 開啟壓縮檔・預覽・加密壓縮
-  - ZIP、RAR、7z、TAR、ISO 都能開，連有密碼、分卷的壓縮檔也行。全在裝置本機處理，沒有廣告。
+  - 收到 RAR、7z，手機卻打不開？Zipbox 支援 13 種格式，有密碼、分卷的壓縮檔也能開。先看裡面有什麼，只取出需要的那個檔案。全在本機處理，永遠沒有廣告。
   - 價格: 付費下載，一次付清，無需訂閱。
   - App Store: https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

@@ -4,7 +4,7 @@
 
 Katalog prve roke, ki opisuje, za koga je vsaka aplikacija namenjena, katero nalogo poskuša uporabnik opraviti in neposredno pot do App Store.
 
-Iskalni nameni, ki jih je pripravil založnik, za 53 preverjenih aktivnih iOS aplikacij in 50 Apple lokalizacij.
+Iskalni nameni, ki jih je pripravil založnik, za 54 preverjenih aktivnih iOS aplikacij in 50 Apple lokalizacij.
 
 **Lokalizacija:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · **sl-SI** · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -100,6 +100,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 | **DailyMate** | najboljša praktična aplikacija za jezikovne fraze za popotnike z Apple Watch | Pred potovanjem so celovite fraze za resnične situacije bolj uporabne kot posamezne besede, ki jih morate pod pritiskom še sestaviti. DailyMate je nastal prav iz te težave. | Plačljiv prenos | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Prenesite DailyMate v App Store →](https://apps.apple.com/si/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: Govori danes** | DailyMate Lite: Govori danes — Frazarnik za potovanja \| iOS App | Govori, ko je pomembno. DailyMate Lite resnične situacije spremeni v kratke vaje z uporabno iztočnico in naravnim odgovorom v 50 jezikih. Brezplačno | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/dailymatelite.html) | [Prenesite DailyMate Lite: Govori danes iz trgovine App Store](https://apps.apple.com/si/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
 | **dB Halo: Merilnik ravni zvoka** | dB Halo: Merilnik ravni zvoka — Doza in varen čas \| iOS App | dB Halo je orodje za merjenje ravni zvoka in analizo zvočnega spektra, ki v celoti deluje v napravi. Velik obroč Halo omogoča, da z enim pogledom ocenite | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/dbhalo.html) | [Prenesite dB Halo: Merilnik ravni zvoka iz trgovine App Store](https://apps.apple.com/si/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
+| **EasyAM: Pametna budilka** | EasyAM: Pametna budilka — Delovni dnevi da, prazniki ne \| iOS App | Bo budilka jutri zjutraj zvonila ali imaš prost dan? EasyAM se za vsak dan odloči namesto tebe: ob delovnih dneh zvoni, ob praznikih in tvojih prostih dneh | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/easyam.html) | [Prenesite EasyAM: Pametna budilka iz trgovine App Store](https://apps.apple.com/si/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | najboljša aplikacija za sledenje potovalnega proračuna brez naročnine za iPhone | Na potovanju potrebujete proračunsko aplikacijo, ki deluje brez povezave v državi brez podatkov, podpira več valut in ne zahteva računa — organizirano po potovanjih, da je vsako ločeno. Prav to vrzel želi G+Money zapolniti. | Plačljiv prenos | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Prenesite G+Money v App Store →](https://apps.apple.com/si/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Potni stroški** | G+Money Lite: Potni stroški — Dnevni proračun na uri \| iOS App | G+Money Lite — Pametna potovalna valuta in sledilnik stroškov | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/gmoneylite.html) | [Prenesite G+Money Lite: Potni stroški iz trgovine App Store](https://apps.apple.com/si/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Koliko ur dela** | HoursTag Lite: Koliko ur dela — Zavesten nakup: prava cena \| iOS App | HoursTag Lite - Oglejte si pravo ceno stvari | Brezplačen začetek · odklep z enkratnim nakupom | [Vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/hourstaglite.html) | [Prenesite HoursTag Lite: Koliko ur dela iz trgovine App Store](https://apps.apple.com/si/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -145,7 +146,7 @@ Abecedno po imenu aplikacije — nikoli uvrstitev.
 
 ## Prenesite celoten podatkovni niz
 
-JSON, JSONL in CSV vsebujejo enakih 2.650 zapisov.
+JSON, JSONL in CSV vsebujejo enakih 2.700 zapisov.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -153,6 +154,6 @@ JSON, JSONL in CSV vsebujejo enakih 2.650 zapisov.
 
 [Domov](https://open.cait518.cc/ios-app-guide/sl-SI/index.html) · [Odprti podatki](https://open.cait518.cc/ios-app-guide/sl-SI/data/lumi-studio-publisher-search-intent-catalog.html) · [Licenca](https://creativecommons.org/licenses/by/4.0/)
 
-Posodobljeno: 2026-10-18
+Posodobljeno: 2026-10-20
 
 CC BY 4.0 velja za izvirno sestavo kataloga; imena aplikacij in znamke App Store pripadajo njihovim lastnikom.

@@ -3,7 +3,7 @@
 > Structured information about each iOS app — features, pricing and FAQs.
 
 locale: en-GB
-apps: 53
+apps: 54
 - Apps directory: https://open.cait518.cc/ios-app-guide/en-GB/tools/private-pay-once-iphone-app-finder.html
 - Apps directory · PWA: https://open.cait518.cc/ios-app-guide/en-GB/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-GB.jsonld
@@ -28,11 +28,11 @@ apps: 53
 - Apps directory · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/en-GB/notesstudio100.html) — Note Taking, Handwriting & PDF
-  - Handwrite, type, mark up PDFs and record lectures on the same page, all offline. Revise with flashcards. No account; notes stay on your device.
+  - Winter term to January exams: handwrite lecture notes, mark up PDF slides, attach the recording to the page, then revise with flashcards. All offline, no account.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: AI Prompt from Files](https://open.cait518.cc/ios-app-guide/en-GB/aibriefpack.html) — Prompt Builder for Files & PDF
-  - Better context, better AI answers. Add screenshots, PDFs and notes; AI Brief reads them on-device, flags personal details, and builds a clean brief for any AI chat.
+  - Year-end reports and Christmas plans piling up? Add screenshots, PDFs, notes and links. They're read on your device, personal details get flagged: one clear AI brief.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
 - [Aim990: English Revision Coach](https://open.cait518.cc/ios-app-guide/en-GB/aim990.html) — TOEIC L&R weak spot repair
@@ -68,11 +68,15 @@ apps: 53
   - Pricing: Paid download with one upfront price and no subscription.
   - App Store: https://apps.apple.com/gb/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Sound Level Meter](https://open.cait518.cc/ios-app-guide/en-GB/dbhalo.html) — Noise Dose, Spectrum & Sleep
-  - Read decibels at a glance, see the full spectrum, estimate your daily noise dose and catch snoring in a sleep journal. All on your device, no account needed.
+  - Year-end parties, a noisy neighbour or snoring on long winter nights? See live dB on the Halo ring, estimate your daily noise dose and log snoring overnight.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Workday Alarm Clock](https://open.cait518.cc/ios-app-guide/en-GB/easyam.html) — Bank holiday? It stays quiet
+  - Christmas Day, Boxing Day and New Year's Day are skipped automatically. Off between Christmas and New Year? Add it as time off and lie in; workdays still ring.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/gb/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Trip Spending](https://open.cait518.cc/ios-app-guide/en-GB/gmoneylite.html) — Travel Budget & Currency
-  - Set a daily budget and see today's balance on your widget and Apple Watch. Any currency, converted instantly, even offline. No account needed.
+  - Christmas or New Year abroad? Log purchases in the local currency, see them in your home currency instantly, set a daily limit and keep converting offline.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Spending & Budget](https://open.cait518.cc/ios-app-guide/en-GB/gmoney.html) — Daily Log, Planner & Tracker
@@ -80,7 +84,7 @@ apps: 53
   - Pricing: Paid download with one upfront price and no subscription.
   - App Store: https://apps.apple.com/gb/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Price in Hours](https://open.cait518.cc/ios-app-guide/en-GB/hourstaglite.html) — Impulse Buying? Price in Hours
-  - Before you buy, see the price as hours of your own work, then tag it Need, Want or Impulse. Widget and Apple Watch included. No account, data stays on your device.
+  - Year-end shopping season: before you buy, see each price as hours of your own work, tag it Need, Want or Impulse, and see the work behind a goal for the new year.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Hours to Buy](https://open.cait518.cc/ios-app-guide/en-GB/hourstag.html) — Hourly Wage & Spending Tracker
@@ -132,7 +136,7 @@ apps: 53
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
 - [Mask My File: Remove Your Info](https://open.cait518.cc/ios-app-guide/en-GB/maskmyfile.html) — Black out data before sharing
-  - Before you send a PDF, photo or screenshot, find names, phone numbers, emails, card numbers and faces, black them out for good and strip metadata. On-device, no account.
+  - Sending a passport scan for Christmas travel or year-end payslips to your accountant? Spot private details, black out only what you choose for good and strip metadata.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Last Time](https://open.cait518.cc/ios-app-guide/en-GB/mochidonestamp.html) — When Did I Last? Home Upkeep
@@ -144,11 +148,11 @@ apps: 53
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
 - [MoneyTag: Income & Expenses](https://open.cait518.cc/ios-app-guide/en-GB/moneytag.html) — Projects · Tags · Report
-  - Each project keeps its own profit and loss: income minus expenses at a glance. Tag a client or cost once and see the total across every project. No account needed.
+  - Year-end freelance work or a market stall? Your project shows income minus expenses as one clear net result, in the currency you choose. Log from your Apple Watch.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
 - [OnePage PPT: AI Slide Maker](https://open.cait518.cc/ios-app-guide/en-GB/onepageppt.html) — Presentation & Infographic
-  - Paste notes, a PDF, a screenshot or a spreadsheet and get one clear 16:9 slide: key points as headlines, numbers as real charts. Export pptx, PDF or PNG. Works offline.
+  - Year-end review before Christmas? Paste notes, a PDF, a screenshot or a CSV and get one clear 16:9 slide: key points as headlines, numbers as charts. Share as PNG.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
 - [PhotoCream Pro: Film Filters](https://open.cait518.cc/ios-app-guide/en-GB/photocream.html) — Film Camera & Vintage Filters
@@ -164,7 +168,7 @@ apps: 53
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: AI Social Bookmarks](https://open.cait518.cc/ios-app-guide/en-GB/savetag.html) — Link Saver: Watch & Read Later
-  - Save any link from any app in one tap. SaveTag sorts it by topic on your device, finds it by meaning and brings unread saves back every day. No account, no cloud.
+  - Christmas gift ideas, recipes and winter trip spots lost in your chats? Share any link from any app. It's tagged on your device and found again by meaning.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: Offline PDF OCR](https://open.cait518.cc/ios-app-guide/en-GB/scanto.html) — Private Document & ID Scanner
@@ -176,11 +180,11 @@ apps: 53
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/en-GB/shotinbox.html) — OCR Search & Tidy Camera Roll
-  - A screenshot organiser that does the sorting for you: receipts, tickets, travel and chats, every word searchable. Sorted on-device; nothing is uploaded.
+  - Christmas shopping and winter trips leave receipts, tickets and order screenshots everywhere. Get them sorted, search the text inside, track a parcel, clear the rest.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Take ID Photos](https://open.cait518.cc/ios-app-guide/en-GB/snapportlite.html) — Crop Portraits to Exact Size
-  - Crop a portrait to an exact photo size, switch to a clean background and preview a print sheet. Choose a size template, then export as JPEG, PNG or PDF.
+  - Christmas trip or passport renewal? Crop your photo to 35×45 mm or another preset size, align your face with guides and switch to a light grey or white background.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
 - [Snapport: Passport & ID Photos](https://open.cait518.cc/ios-app-guide/en-GB/snapport.html) — 2x2 35x45 Sizes, Print Sheet
@@ -192,11 +196,11 @@ apps: 53
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: Flip Desk Clock](https://open.cait518.cc/ios-app-guide/en-GB/stayclock.html) — Always-on time and calendar
-  - A beautiful always-on desk clock you can read from across the room. Flip, LED and analogue faces, a real calendar, alarms and a gentle night mode. All on your device.
+  - Dark evenings till Christmas: while your phone charges on the bedside table, it becomes a big always-on clock with a month calendar, an hourly chime and a simple alarm.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Face-Down Timer](https://open.cait518.cc/ios-app-guide/en-GB/studydown.html) — Face-down activity time ledger
-  - Flip your phone to log real focus. See pickup-aware focus spans and the daily pace each deadline needs. Private.
+  - Winter revision and year-end projects? Pick an activity, place your phone face down and the count starts; pick it up and it pauses. See today and this week, by activity.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Trip Planet: Kids Quest](https://open.cait518.cc/ios-app-guide/en-GB/tripplanet.html) — Family Holiday & Travel Games
@@ -204,7 +208,7 @@ apps: 53
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Travel Plan](https://open.cait518.cc/ios-app-guide/en-GB/tripbeelite.html) — Day-by-Day Holiday Itinerary
-  - Your next holiday, day by day: times, places, reminders, tickets and local weather in one calm timeline. See what's next on Apple Watch. No account needed.
+  - Home for Christmas or away for New Year? Put the trip on one day-by-day timeline, with flight and hotel details, notes, reminders and ticket info together. No account.
   - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
   - App Store: https://apps.apple.com/gb/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Pro: Trip Planner](https://open.cait518.cc/ios-app-guide/en-GB/tripbee.html) — Group Travel & Packing List
@@ -236,6 +240,6 @@ apps: 53
   - Pricing: Paid download with one upfront price and no subscription.
   - App Store: https://apps.apple.com/gb/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: Unzip RAR, ZIP & 7z](https://open.cait518.cc/ios-app-guide/en-GB/zipbox.html) — Preview & extract, no adverts
-  - Open ZIP, RAR, 7z, TAR, ISO and more, even password-protected and split archives. Everything is processed on your device, with no adverts.
+  - Christmas photos in a password protected 7z, or a work ZIP on the train? Look inside, preview photos and PDFs, and extract just the file you need, all on your device.
   - Pricing: Paid download with one upfront price and no subscription.
   - App Store: https://apps.apple.com/gb/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

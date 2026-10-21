@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-20",
-  "content_digest": "1c5079d365ad75e3ba100a33fbd8d3a22a43852646c11f8acc83620097b11a8c",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
   "locale": "hi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 53,
+  "record_count": 54,
   "apps": [
     {
       "key": "notesstudio100",
@@ -464,6 +464,50 @@
         "currency": "INR",
         "formatted_price": "मुफ़्त",
         "storefront_url": "https://apps.apple.com/in/app/id6806826699"
+      }
+    },
+    {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: छुट्टी अलार्म घड़ी",
+      "summary": "छुट्टी से पहले अलार्म बंद करना और बाद में फिर चालू करना अब याद नहीं रखना पड़ेगा: EasyAM हर दिन खुद तय करता है कि कल बजना है या नहीं, काम के दिन आपके समय पर बजता है और सरकारी छुट्टियों व आपकी अपनी छुट्टियों पर चुप रहता है। ऐप खोलते ही अगले सात दिन एक नज़र में दिखते हैं, और किसी एक दिन का समय अलग रखना हो तो सिर्फ़ वही दिन बदलें।",
+      "category": "utility",
+      "search_terms": [
+        "सरकारी",
+        "सार्वजनिक",
+        "त्योहार",
+        "अवकाश",
+        "कैलेंडर",
+        "शिफ्ट",
+        "ऑफिस",
+        "सुबह",
+        "फ्लिप",
+        "क्लॉक",
+        "विजेट",
+        "थीम",
+        "holiday",
+        "workday",
+        "alarm"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hi/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "मुफ़्त",
+        "storefront_url": "https://apps.apple.com/in/app/id6821790092"
       }
     },
     {
@@ -1314,6 +1358,8 @@
         "price": "0",
         "currency": "INR",
         "formatted_price": "मुफ़्त",
+        "rating_value": 4.0,
+        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/in/app/id6798814385"
       }
     },

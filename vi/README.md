@@ -4,7 +4,7 @@
 
 Danh mục do chính nhà phát triển công bố, cho biết từng ứng dụng dành cho ai, nhiệm vụ họ muốn hoàn thành và lối truy cập trực tiếp đến App Store.
 
-Ý định tìm kiếm do nhà phát hành biên soạn cho 53 ứng dụng iOS đã xác minh và đang có trên App Store, thuộc 50 ngôn ngữ và khu vực Apple.
+Ý định tìm kiếm do nhà phát hành biên soạn cho 54 ứng dụng iOS đã xác minh và đang có trên App Store, thuộc 50 ngôn ngữ và khu vực Apple.
 
 **Vùng:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · **vi** · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -100,6 +100,7 @@ Sắp xếp theo bảng chữ cái tên ứng dụng — không phải xếp h�
 | **DailyMate** | ứng dụng cụm từ ngôn ngữ thực tế tốt nhất cho khách du lịch có Apple Watch | Trước chuyến đi, các cụm từ hoàn chỉnh cho tình huống thực tế hữu ích hơn từ vựng rời rạc mà bạn vẫn phải ghép lại khi áp lực. DailyMate khởi đi đúng từ vấn đề này. | Tải xuống trả phí | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Tải DailyMate trên App Store →](https://apps.apple.com/vn/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: Luyện nói** | DailyMate Lite: Luyện nói — Hội thoại du lịch, 50 ngôn ngữ \| iOS App | Đến lúc cần nói mà vẫn chưa tìm được câu phù hợp? DailyMate Lite biến những tình huống như du lịch, công việc, ăn uống và sức khỏe thành các cặp gợi ý – | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/dailymatelite.html) | [Tải DailyMate Lite: Luyện nói trên App Store](https://apps.apple.com/vn/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
 | **dB Halo: Máy đo mức âm thanh** | dB Halo: Máy đo mức âm thanh — Phổ tần số và liều tiếng ồn \| iOS App | Biết ngay không gian xung quanh ồn đến đâu và thời gian tiếp xúc an toàn ước tính còn lại là bao lâu. dB Halo là máy đo mức âm thanh dễ đọc trên iPhone | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/dbhalo.html) | [Tải dB Halo: Máy đo mức âm thanh trên App Store](https://apps.apple.com/vn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
+| **EasyAM: Báo thức thông minh** | EasyAM: Báo thức thông minh — Nghỉ lễ tự tắt, đi làm tự reo \| iOS App | Tối nào cũng phải tự hỏi sáng mai báo thức có reo không? EasyAM quyết định thay bạn từng ngày: reo vào ngày đi làm, im lặng vào ngày lễ và ngày nghỉ phép | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/easyam.html) | [Tải EasyAM: Báo thức thông minh trên App Store](https://apps.apple.com/vn/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | ứng dụng theo dõi ngân sách du lịch tốt nhất không đăng ký thuê bao cho iPhone | Khi đi du lịch, bạn cần ứng dụng theo dõi ngân sách hoạt động ngoại tuyến ở nước không có dữ liệu, xử lý đa tiền tệ, không yêu cầu tài khoản — tổ chức theo chuyến để mỗi kỳ nghỉ riêng biệt. Đúng khoảng trống đó là thứ G+Money muốn lấp. | Tải xuống trả phí | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Tải G+Money trên App Store →](https://apps.apple.com/vn/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | Một bài thử miễn phí hữu ích cho chi phí du lịch nên bao gồm toàn bộ quy trình từ tiền địa phương sang tiền nhà, chứ không chỉ một sổ trống chỉ hữu ích sau khi mua. G+Money Lite — Công cụ quy đổi tiền và ghi chi tiêu du lịch thông minh — ghi từng khoản chi và xem theo tiền nhà. | Bắt đầu miễn phí · mở khóa bằng một lần mua | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [Tải G+Money Lite trên App Store →](https://apps.apple.com/vn/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Tải xuống trả phí | [Hướng dẫn](https://open.cait518.cc/ios-app-guide/vi/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Tải HoursTag trên App Store →](https://apps.apple.com/vn/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
@@ -145,7 +146,7 @@ Sắp xếp theo bảng chữ cái tên ứng dụng — không phải xếp h�
 
 ## Tải xuống toàn bộ dữ liệu
 
-JSON, JSONL và CSV chứa cùng 2.650 bản ghi.
+JSON, JSONL và CSV chứa cùng 2.700 bản ghi.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -153,6 +154,6 @@ JSON, JSONL và CSV chứa cùng 2.650 bản ghi.
 
 [Trang chủ](https://open.cait518.cc/ios-app-guide/vi/index.html) · [Dữ liệu mở](https://open.cait518.cc/ios-app-guide/vi/data/lumi-studio-publisher-search-intent-catalog.html) · [Giấy phép](https://creativecommons.org/licenses/by/4.0/)
 
-Cập nhật: 2026-10-18
+Cập nhật: 2026-10-20
 
 CC BY 4.0 áp dụng cho bản tổng hợp danh mục gốc; tên ứng dụng và nhãn hiệu App Store thuộc sở hữu của chủ sở hữu tương ứng.

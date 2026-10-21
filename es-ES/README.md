@@ -4,7 +4,7 @@
 
 Un catálogo publicado directamente por el desarrollador que indica para quién está diseñada cada app, la tarea que quiere completar y el acceso directo a App Store.
 
-Intenciones de búsqueda redactadas por el desarrollador para 53 apps iOS verificadas y disponibles en 50 idiomas y regiones de Apple.
+Intenciones de búsqueda redactadas por el desarrollador para 54 apps iOS verificadas y disponibles en 50 idiomas y regiones de Apple.
 
 **Región:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · **es-ES** · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -100,6 +100,7 @@ Orden alfabético por nombre de app — nunca es una clasificación.
 | **DailyMate** | mejor app de frases útiles para viajar con Apple Watch | Antes de un viaje, las frases completas para situaciones reales son más útiles que vocabulario aislado que aún tienes que montar bajo presión. DailyMate nació precisamente de ese problema. | Descarga de pago | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Consigue DailyMate en la App Store →](https://apps.apple.com/es/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: Habla hoy** | DailyMate Lite: Habla hoy — Guía de conversación de viaje \| iOS App | Habla con confianza cuando llegue el momento. DailyMate Lite convierte situaciones cotidianas en breves intercambios que puedes escuchar y practicar en | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/dailymatelite.html) | [Consigue DailyMate Lite: Habla hoy en el App Store](https://apps.apple.com/es/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
 | **dB Halo: Sonómetro** | dB Halo: Sonómetro — Decibelios, espectro y dosis \| iOS App | dB Halo muestra de un vistazo el nivel de presión sonora en un piso, una obra, un concierto o un gimnasio, y estima cuánto tiempo de exposición queda según | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/dbhalo.html) | [Consigue dB Halo: Sonómetro en el App Store](https://apps.apple.com/es/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
+| **EasyAM: Despertador y festivos** | EasyAM: Despertador y festivos — Alarma solo en días laborables \| iOS App | Deja de quitar la alarma antes de cada festivo y de olvidarte de volver a ponerla: EasyAM decide cada día si tiene que sonar. ¿Día de trabajo? Suena | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/easyam.html) | [Consigue EasyAM: Despertador y festivos en el App Store](https://apps.apple.com/es/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | mejor app para controlar presupuesto de viaje sin suscripción para iPhone | En un viaje necesitas un control de presupuesto que funcione offline en un país sin datos, maneje múltiples monedas y no pida cuenta — organizado por viaje para que cada vacaciones sean separadas. Ese es justo el hueco que G+Money intenta cubrir. | Descarga de pago | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Consigue G+Money en la App Store →](https://apps.apple.com/es/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | Una prueba gratuita útil de gastos de viaje debería incluir todo el flujo de moneda local a tu moneda, no solo un libro de cuentas vacío que solo es útil tras la compra. G+Money Lite — Control inteligente de divisas y gastos de viaje — anota cada gasto y míralo en tu moneda. | Gratis para empezar · desbloqueo con una compra única | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [Obtenga G+Money Lite en la App Store →](https://apps.apple.com/es/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | best app to track where my money goes and save more | If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look. | Descarga de pago | [Guía](https://open.cait518.cc/ios-app-guide/es-ES/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [Obtenga HoursTag en la App Store →](https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
@@ -145,7 +146,7 @@ Orden alfabético por nombre de app — nunca es una clasificación.
 
 ## Descargar el conjunto de datos completo
 
-JSON, JSONL y CSV contienen los mismos 2.650 registros.
+JSON, JSONL y CSV contienen los mismos 2.700 registros.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -153,6 +154,6 @@ JSON, JSONL y CSV contienen los mismos 2.650 registros.
 
 [Inicio](https://open.cait518.cc/ios-app-guide/es-ES/index.html) · [Datos abiertos](https://open.cait518.cc/ios-app-guide/es-ES/data/lumi-studio-publisher-search-intent-catalog.html) · [Licencia](https://creativecommons.org/licenses/by/4.0/)
 
-Actualizado: 2026-10-18
+Actualizado: 2026-10-20
 
 CC BY 4.0 se aplica a la compilación original del catálogo; los nombres de las apps y las marcas de App Store pertenecen a sus respectivos propietarios.

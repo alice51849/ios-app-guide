@@ -38,9 +38,10 @@
       "intent_type": "problem_aware",
       "native_locales": [
         "en-US",
+        "ja",
         "zh-Hant"
       ],
-      "record_count": 2,
+      "record_count": 3,
       "route_slug": "see-claude-and-codex-limits-before-they-run-out"
     },
     "countdaysnow": {
@@ -91,6 +92,15 @@
       ],
       "record_count": 1,
       "route_slug": "measure-room-noise-without-sending-audio-off-device"
+    },
+    "easyam": {
+      "intent_type": "problem_aware",
+      "native_locales": [
+        "en-US",
+        "zh-Hant"
+      ],
+      "record_count": 2,
+      "route_slug": "stop-your-alarm-ringing-on-public-holidays-and-days-off"
     },
     "gmoney": {
       "intent_type": "workflow",
@@ -439,289 +449,289 @@
     }
   },
   "coverage": {
-    "abstained_pairs": 2584,
+    "abstained_pairs": 2631,
     "abstention_reasons": {
-      "missing_curated_native_copy": 2584
+      "missing_curated_native_copy": 2631
     },
     "app_coverage_percent": 100.0,
-    "candidate_app_locale_pairs": 2650,
-    "current_public_apps": 53,
+    "candidate_app_locale_pairs": 2700,
+    "current_public_apps": 54,
     "fallback_records": 0,
     "intent_type_counts": {
       "alternative": 13,
       "privacy_pay_once": 8,
-      "problem_aware": 16,
+      "problem_aware": 17,
       "workflow": 16
     },
-    "mapped_apps": 53,
+    "mapped_apps": 54,
     "missing_route_app_keys": [],
     "missing_route_apps": 0,
-    "native_locale_pair_coverage_percent": 2.49,
-    "native_locale_records": 66,
+    "native_locale_pair_coverage_percent": 2.56,
+    "native_locale_records": 69,
     "native_locales_with_records": 5,
     "official_locales_considered": 50,
-    "primary_routes": 53
+    "primary_routes": 54
   },
   "current_inventory": {
-    "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "cacd37476a5bc1d745b52e66f229f8c52e45ecae67df30a2fce6adcfa93ab22f",
+    "app_keys_sha256": "e113b81193a6a6edfbbc5aac051d54b81a8df04f147ba3598d487f7a40036706",
+    "copy_sha256": "f3363269f6338b33f9959e78f8aba04a21fa63df191e6fe7b476bccf657a2759",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 53
+    "public_apps": 54
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "inventory": {
-    "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "cacd37476a5bc1d745b52e66f229f8c52e45ecae67df30a2fce6adcfa93ab22f",
+    "app_keys_sha256": "e113b81193a6a6edfbbc5aac051d54b81a8df04f147ba3598d487f7a40036706",
+    "copy_sha256": "f3363269f6338b33f9959e78f8aba04a21fa63df191e6fe7b476bccf657a2759",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 53,
+    "public_apps": 54,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
   "locales": {
     "ar-SA": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "bn-BD": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "ca": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "cs": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "da": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "de-DE": {
-      "abstained": 52,
+      "abstained": 53,
       "emitted": 1
     },
     "el": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "en-AU": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "en-CA": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "en-GB": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "en-US": {
       "abstained": 0,
-      "emitted": 53
+      "emitted": 54
     },
     "es-ES": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "es-MX": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "fi": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "fr-CA": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "fr-FR": {
-      "abstained": 52,
+      "abstained": 53,
       "emitted": 1
     },
     "gu-IN": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "he": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "hi": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "hr": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "hu": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "id": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "it": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "ja": {
       "abstained": 51,
-      "emitted": 2
+      "emitted": 3
     },
     "kn-IN": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "ko": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "ml-IN": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "mr-IN": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "ms": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "nl-NL": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "no": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "or-IN": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "pa-IN": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "pl": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "pt-BR": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "pt-PT": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "ro": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "ru": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "sk": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "sl-SI": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "sv": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "ta-IN": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "te-IN": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "th": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "tr": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "uk": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "ur-PK": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "vi": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "zh-Hans": {
-      "abstained": 53,
+      "abstained": 54,
       "emitted": 0
     },
     "zh-Hant": {
       "abstained": 44,
-      "emitted": 9
+      "emitted": 10
     }
   },
   "publication": {
-    "abstained_pairs": 2584,
+    "abstained_pairs": 2631,
     "deployment_eligible": true,
-    "expected_route_pages": 66,
+    "expected_route_pages": 69,
     "fallback_records": 0,
-    "feed_items": 66,
+    "feed_items": 69,
     "managed_owner": "high_intent_decision_routes",
-    "sitemap_urls": 66,
+    "sitemap_urls": 69,
     "state": "exact"
   },
   "quality": {
     "all_gates_passed": true,
     "gates": {
       "complete_app_store_cta": {
-        "detail": "66/66 URLs use ordered pt/ct/mt=8",
+        "detail": "69/69 URLs use ordered pt/ct/mt=8",
         "passed": true
       },
       "cultural_route": {
-        "detail": "66/66 emitted records",
+        "detail": "69/69 emitted records",
         "passed": true
       },
       "current_inventory_coverage": {
-        "detail": "53/53 current public apps mapped; missing route copy=[]",
+        "detail": "54/54 current public apps mapped; missing route copy=[]",
         "passed": true
       },
       "exact_release_cardinality": {
-        "detail": "66 routes; 53 apps; 2650 pairs; 2584 abstentions",
+        "detail": "69 routes; 54 apps; 2700 pairs; 2631 abstentions",
         "passed": true
       },
       "intent_diversity": {
-        "detail": "{\"alternative\": 13, \"privacy_pay_once\": 8, \"problem_aware\": 16, \"workflow\": 16}",
+        "detail": "{\"alternative\": 13, \"privacy_pay_once\": 8, \"problem_aware\": 17, \"workflow\": 16}",
         "passed": true
       },
       "inventory_bound_claims": {
-        "detail": "267 evidence references resolved from inventory",
+        "detail": "281 evidence references resolved from inventory",
         "passed": true
       },
       "native_copy_or_abstain": {
-        "detail": "66 emitted; 2584 explicit abstentions; 0 fallbacks",
+        "detail": "69 emitted; 2631 explicit abstentions; 0 fallbacks",
         "passed": true
       },
       "non_template": {
-        "detail": "66/66 unique signatures; max Jaccard=0.263",
+        "detail": "69/69 unique signatures; max Jaccard=0.263",
         "passed": true
       },
       "non_thin": {
@@ -729,15 +739,15 @@
         "passed": true
       },
       "primary_intent_coverage": {
-        "detail": "53/53 apps have one primary route",
+        "detail": "54/54 apps have one primary route",
         "passed": true
       },
       "truthful_publisher_disclosure": {
-        "detail": "66/66 records disclose developer authorship",
+        "detail": "69/69 records disclose developer authorship",
         "passed": true
       },
       "versioned_app_coverage": {
-        "detail": "53/53 contracted apps mapped",
+        "detail": "54/54 contracted apps mapped",
         "passed": true
       }
     },
@@ -749,7 +759,7 @@
     ],
     "minimum_content_units": 200
   },
-  "release_contract_digest": "02aa3ab4a2994a4ebc5fdf04675aef1070d9eadfa4ac32c04bc8849b49bb6a42",
+  "release_contract_digest": "7d0a88d622fdf41547a5a42950bcfd0110e73085aeb74b079744b2d778dd46a3",
   "release_state": "exact",
   "schema_version": 1
 }

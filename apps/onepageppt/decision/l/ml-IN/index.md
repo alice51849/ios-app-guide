@@ -20,6 +20,7 @@ publisher: "Lumi Studio"
 - ട്രാക്കിംഗ് ഇല്ല
 - സ്വകാര്യത / ഉപകരണത്തിൽ
 - App Store · സൗജന്യം
+- ★ 4.0/5 · 1
 
 [App Store-ൽ നിന്ന് OnePage PPT: ഒറ്റ സ്ലൈഡ് നേടൂ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 

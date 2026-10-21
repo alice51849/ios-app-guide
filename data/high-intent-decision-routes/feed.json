@@ -183,6 +183,20 @@
     },
     {
       "_lumi_route": {
+        "app_key": "easyam",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "9c4980c2d0ff1c3999293c095ce7551d4c13ccdcc618696fca4c3d030d90b413"
+      },
+      "id": "en-US:easyam:stop-your-alarm-ringing-on-public-holidays-and-days-off",
+      "language": "en",
+      "summary": "A weekday repeat rings on public holidays, vacation days and school breaks unless you remember to change it the night before. The decision is whether an alarm that checks holiday data for your country and your own time off, and shows which of the next seven mornings will ring, fits your routine.",
+      "title": "Which alarm app skips public holidays and my days off automatically?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
+    },
+    {
+      "_lumi_route": {
         "app_key": "gmoney",
         "campaign_token": "geo_learn",
         "intent_type": "workflow",
@@ -785,6 +799,20 @@
     },
     {
       "_lumi_route": {
+        "app_key": "claudeusagemini",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "ja",
+        "record_digest": "6bc96bac1cd4caa65b037491fbfa2686a92d83779d8002f7c431cbf07799920a"
+      },
+      "id": "ja:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
+      "language": "ja",
+      "summary": "使用量は各サービスのページにばらばらに表示されるため、上限に気づくのはAIエージェントが作業の途中で止まったときになりがちです。Claude、Codex、Copilot、Geminiの上限を同じ画面に並べ、リセットまでのカウントダウンと自分で決めたパーセンテージのアラートを出してくれる専用アプリが、自分の働き方に合うかどうかを判断します。",
+      "title": "ClaudeやCodexの使用制限に当たる前に知らせてくれるアプリはありますか？",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
+    },
+    {
+      "_lumi_route": {
         "app_key": "lumiweather",
         "campaign_token": "geo_ask",
         "intent_type": "problem_aware",
@@ -852,6 +880,20 @@
       "summary": "經期資料是私密紀錄。挑選工具時，除了能否回看日期與變化，也需要知道哪些功能免費、哪些需要解鎖，以及資料如何處理。",
       "title": "想記錄經期與週期變化，有哪些不必訂閱的 iPhone App？",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/cyca/private-cycle-patterns-without-account.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "easyam",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "zh-Hant",
+        "record_digest": "833497b93d9f0df2817ee032c36407da80d8a8b2a7ad7f3d82f0b27dbd603216"
+      },
+      "id": "zh-Hant:easyam:stop-your-alarm-ringing-on-public-holidays-and-days-off",
+      "language": "zh-Hant",
+      "summary": "一般的平日重複鬧鐘，遇到國定假日、特休或寒暑假還是會響，補班日卻不會響，只能前一晚自己記得調整。要判斷的是：會依你所在國家的假日資料與你登記的休假自動決定要不要響，並列出接下來七天哪幾天會響的鬧鐘，是否符合你的作息。",
+      "title": "有沒有鬧鐘 App 會在國定假日和休假自動不響、補班日照響？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
     },
     {
       "_lumi_route": {

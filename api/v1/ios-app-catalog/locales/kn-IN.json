@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-20",
-  "content_digest": "1c5079d365ad75e3ba100a33fbd8d3a22a43852646c11f8acc83620097b11a8c",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
   "locale": "kn-IN",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 53,
+  "record_count": 54,
   "apps": [
     {
       "key": "notesstudio100",
@@ -458,6 +458,49 @@
         "currency": "INR",
         "formatted_price": "ಉಚಿತ",
         "storefront_url": "https://apps.apple.com/in/app/id6806826699"
+      }
+    },
+    {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: ಅಲಾರಂ ಗಡಿಯಾರ & ರಜಾದಿನ",
+      "summary": "ಪ್ರತಿ ರಜೆಗೂ ಮುನ್ನ ಅಲಾರಂ ಆಫ್ ಮಾಡಿ, ನಂತರ ಮತ್ತೆ ಆನ್ ಮಾಡುವುದನ್ನು ನೆನಪಿಡುವ ಅಗತ್ಯ ಇನ್ನಿಲ್ಲ: EasyAM ಪ್ರತಿ ದಿನಕ್ಕೂ ನಾಳೆ ರಿಂಗ್ ಆಗಬೇಕೇ ಬೇಡವೇ ಎಂದು ತಾನೇ ನಿರ್ಧರಿಸುತ್ತದೆ, ಕೆಲಸದ ದಿನ ನಿಮ್ಮ ಸಮಯಕ್ಕೆ ರಿಂಗ್ ಆಗುತ್ತದೆ ಮತ್ತು ಸಾರ್ವಜನಿಕ ರಜೆ ಹಾಗೂ ನಿಮ್ಮ ಸ್ವಂತ ರಜೆಯಲ್ಲಿ ಮೌನವಾಗಿರುತ್ತದೆ. ಆ್ಯಪ್ ತೆರೆದ ತಕ್ಷಣ ಮುಂದಿನ ಏಳು ದಿನಗಳು ಒಂದೇ ನೋಟದಲ್ಲಿ ಕಾಣುತ್ತವೆ, ಯಾವುದಾದರೂ ಒಂದು ದಿನದ ಸಮಯ ಬೇರೆ ಬೇಕಿದ್ದರೆ ಆ ದಿನವನ್ನು ಮಾತ್ರ ಬದಲಿಸಿ.",
+      "category": "utility",
+      "search_terms": [
+        "ಅಲಾರ್ಮ್",
+        "ರಜೆ",
+        "ಸಾರ್ವಜನಿಕ",
+        "ಸರ್ಕಾರಿ",
+        "ಹಬ್ಬ",
+        "ಕಚೇರಿ",
+        "ಆಫೀಸ್",
+        "ಶಿಫ್ಟ್",
+        "ಕ್ಯಾಲೆಂಡರ್",
+        "ಬೆಳಿಗ್ಗೆ",
+        "ವಿಜೆಟ್",
+        "ಥೀಮ್",
+        "ಫ್ಲಿಪ್",
+        "ಕ್ಯೂಟ್"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/in/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/kn-IN/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ಉಚಿತ",
+        "storefront_url": "https://apps.apple.com/in/app/id6821790092"
       }
     },
     {
@@ -1291,6 +1334,8 @@
         "price": "0",
         "currency": "INR",
         "formatted_price": "ಉಚಿತ",
+        "rating_value": 4.0,
+        "rating_count": 1,
         "storefront_url": "https://apps.apple.com/in/app/id6798814385"
       }
     },

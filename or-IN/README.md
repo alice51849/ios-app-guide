@@ -4,7 +4,7 @@
 
 ପ୍ରତ୍ୟେକ ଆପ୍ କାହା ପାଇଁ ଡିଜାଇନ୍ କରାଯାଇଛି, ସେମାନେ କେଉଁ କାର୍ଯ୍ୟ ସମ୍ପୂର୍ଣ୍ଣ କରିବାକୁ ଚେଷ୍ଟା କରୁଛନ୍ତି, ଏବଂ ସିଧା App Store ପଥର ପ୍ରଥମ-ପକ୍ଷ ସୂଚୀ।
 
-ପ୍ରକାଶକ ଦ୍ୱାରା ଲେଖାଯାଇଥିବା ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ 53ଟି ସତ୍ୟାପିତ ସଜୀବ iOS ଆପ୍ ଏବଂ 50ଟି Apple ଅଞ୍ଚଳରେ।
+ପ୍ରକାଶକ ଦ୍ୱାରା ଲେଖାଯାଇଥିବା ସନ୍ଧାନ ଉଦ୍ଦେଶ୍ୟ 54ଟି ସତ୍ୟାପିତ ସଜୀବ iOS ଆପ୍ ଏବଂ 50ଟି Apple ଅଞ୍ଚଳରେ।
 
 **ଅଞ୍ଚଳ:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · **or-IN** · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -100,6 +100,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **DailyMate** | ଆପଲ୍ ଓୟାଚ୍ ସହିତ ଯାତ୍ରୀଙ୍କ ପାଇଁ ସର୍ବୋତ୍ତମ ବ୍ୟବହାରିକ ଭାଷା ବାକ୍ୟାଂଶ ଆପ୍ | ଯାତ୍ରା ପୂର୍ବରୁ, ବିଚ୍ଛିନ୍ନ ଶବ୍ଦ ତୁଳନାରେ ବାସ୍ତବ ପରିସ୍ଥିତି ପାଇଁ ସମ୍ପୂର୍ଣ୍ଣ ବାକ୍ୟାଂଶ ଅଧିକ ଉପଯୋଗୀ। DailyMateର ଆରମ୍ଭ ଠିକ୍ ଏହି ସମସ୍ୟାରୁ ହିଁ। | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store ରୁ ଡେଲିମେଟ୍ ମିଳାନ୍ତୁ →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: ଆଜି କୁହନ୍ତୁ** | DailyMate Lite: ଆଜି କୁହନ୍ତୁ — ଯାତ୍ରା କଥାବାର୍ତ୍ତା, 50 ଭାଷା \| iOS App | ଠିକ୍ ସମୟରେ ଠିକ୍ କଥା କହନ୍ତୁ। DailyMate Lite ଦୈନନ୍ଦିନ ପରିସ୍ଥିତିକୁ 50ଟି ଭାଷାର ଛୋଟ ସଙ୍କେତ-ଉତ୍ତର ଅଭ୍ୟାସରେ ପରିଣତ କରେ। ଯେକୌଣସି ଭାଷା ବାଛି ଭ୍ରମଣକାରୀ ବିଷୟର ଆରମ୍ଭିକ | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/dailymatelite.html) | [App Store ରୁ DailyMate Lite: ଆଜି କୁହନ୍ତୁ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
 | **dB Halo: ଶବ୍ଦ ସ୍ତର ମାପକ** | dB Halo: ଶବ୍ଦ ସ୍ତର ମାପକ — FFT, RTA ଓ ବର୍ଣ୍ଣାଳୀ \| iOS App | dB Halo ସମ୍ପୂର୍ଣ୍ଣ ଭାବେ ଡିଭାଇସରେ ଚାଲୁଥିବା ଶବ୍ଦ ସ୍ତର ମାପକ ଓ ଅଡିଓ ବର୍ଣ୍ଣାଳୀ ଉପକରଣ। ବଡ଼ Halo ବଳୟ ବର୍ତ୍ତମାନର dB ଓ ତାହାର ସୁରକ୍ଷା ଅଞ୍ଚଳକୁ ଗୋଟିଏ ନଜରରେ ଦେଖାଏ। ସଜୀବ | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/dbhalo.html) | [App Store ରୁ dB Halo: ଶବ୍ଦ ସ୍ତର ମାପକ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
+| **EasyAM: ଛୁଟି ଆଲାର୍ମ ଘଡ଼ି** | EasyAM: ଛୁଟି ଆଲାର୍ମ ଘଡ଼ି — କାମ ଦିନରେ ବାଜେ, ଛୁଟିରେ ଚୁପ \| iOS App | କାଲି ସକାଳେ ଆଲାର୍ମ ବାଜିବା ଦରକାର କି ନାହିଁ, ଶୋଇବା ଆଗରୁ ଆଉ ଏହା ଭାବିବାକୁ ପଡ଼ିବ ନାହିଁ। EasyAM କାମ ଦିନରେ ବାଜେ, ସାଧାରଣ ଛୁଟି ଓ ଆପଣଙ୍କ ନିଜ ଛୁଟି ଦିନରେ ଚୁପ ରହେ | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/easyam.html) | [App Store ରୁ EasyAM: ଛୁଟି ଆଲାର୍ମ ଘଡ଼ି ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | iPhone ପାଇଁ ସର୍ବୋତ୍ତମ ଟ୍ରାଭେଲ୍ ବଜେଟ୍ ଟ୍ରାକର୍ ଆପ୍ କୌଣସି ସଦସ୍ୟତା ନାହିଁ | ଏକ ଯାତ୍ରାରେ ଆପଣଙ୍କୁ ଏମିତି ବଜେଟ୍ ଟ୍ରାକର୍ ଆବଶ୍ୟକ ଯାହା ଡାଟା ନଥିବା ଦେଶରେ ଅଫ୍ଲାଇନ୍ କାମ କରେ, ଅନେକ ମୁଦ୍ରା ସମ୍ଭାଳେ, ଏବଂ କୌଣସି ଖାତା ଚାହାଁନାହିଁ — ପ୍ରତ୍ୟେକ ଛୁଟିକୁ ଅଲଗା ଭାବେ ବ୍ୟବସ୍ଥିତ। ଏହି ଅଭାବକୁ ହିଁ G+Money ପୂରଣ କରିବାକୁ ଚାହେଁ। | ପୈସା ଦେଇ ଡାଉନଲୋଡ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [App Store ରୁ G+Money ପାଆନ୍ତୁ →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: ଯାତ୍ରା ଖର୍ଚ୍ଚ** | G+Money Lite: ଯାତ୍ରା ଖର୍ଚ୍ଚ — ଦୈନିକ ବଜେଟ୍ ୱାଚ୍ ଓ ୱିଜେଟରେ \| iOS App | G+Money Lite — ସମ୍ପ୍ରତି ଯାତ୍ରା ମୁଦ୍ରା ଏବଂ ଖର୍ଚ୍ଚ ଟ୍ରାକର | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/gmoneylite.html) | [App Store ରୁ G+Money Lite: ଯାତ୍ରା ଖର୍ଚ୍ଚ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: ମୂଲ୍ୟ ଘଣ୍ଟାରେ** | HoursTag Lite: ମୂଲ୍ୟ ଘଣ୍ଟାରେ — ସଚେତନ କିଣା: ପ୍ରକୃତ ମୂଲ୍ୟ \| iOS App | HoursTag Lite - ବସ୍ତୁଗୁଡିକର ସତ୍ୟ ମୂଲ୍ୟ ଦେଖନ୍ତୁ | ମୁକ୍ତ ଆରମ୍ଭ · ଏକାଥରକେ କିଣି ଅନଲକ୍ | [ଗାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/hourstaglite.html) | [App Store ରୁ HoursTag Lite: ମୂଲ୍ୟ ଘଣ୍ଟାରେ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -145,7 +146,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## ସମ୍ପୂର୍ଣ୍ଣ ତଥ୍ୟସେଟ୍ ଡାଉନଲୋଡ୍ କରନ୍ତୁ
 
-JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 2,650 ରେକର୍ଡ ସମାନ ରଖେ।
+JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 2,700 ରେକର୍ଡ ସମାନ ରଖେ।
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -153,6 +154,6 @@ JSON, JSONL ଏବଂ CSV ଏହି ସମସ୍ତ 2,650 ରେକର୍ଡ ସ
 
 [ହୋମ୍](https://open.cait518.cc/ios-app-guide/or-IN/index.html) · [ଖୋଲା ତଥ୍ୟ](https://open.cait518.cc/ios-app-guide/or-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [ଲାଇସେନ୍ସ](https://creativecommons.org/licenses/by/4.0/)
 
-ଅଦ୍ୟତିତ: 2026-10-18
+ଅଦ୍ୟତିତ: 2026-10-20
 
 CC BY 4.0 ମୂଳ ସୂଚୀ ସଂଗ୍ରହ ପାଇଁ ପ୍ରୟୋଗ ହୁଏ; ଆପ୍ ନାମ ଏବଂ App Store ଚିହ୍ନଗୁଡିକ ତାଙ୍କର ମାଲିକଙ୍କର ଅଟୁଟ ଅଧିକାର।

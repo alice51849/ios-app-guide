@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-20",
-  "content_digest": "1c5079d365ad75e3ba100a33fbd8d3a22a43852646c11f8acc83620097b11a8c",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
   "locale": "en-GB",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 53,
+  "record_count": 54,
   "apps": [
     {
       "key": "notesstudio100",
@@ -356,8 +356,7 @@
         "replies",
         "dialogue",
         "audio",
-        "levels",
-        "everyday phrases"
+        "levels"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -462,6 +461,52 @@
         "currency": "GBP",
         "formatted_price": "Free",
         "storefront_url": "https://apps.apple.com/gb/app/id6806826699"
+      }
+    },
+    {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: Workday Alarm Clock",
+      "summary": "Will your alarm go off tomorrow, and should it? EasyAM works it out for you: it rings on working days and stays quiet on bank holidays and your days off, so you can stop switching alarms off and on again. EasyAM opens on your next seven days, or 14 on iPad: which mornings will ring, and when.",
+      "category": "utility",
+      "search_terms": [
+        "shift",
+        "rota",
+        "night",
+        "work",
+        "public",
+        "annual",
+        "leave",
+        "calendar",
+        "uk",
+        "weekday",
+        "skip",
+        "widget",
+        "flip",
+        "digital",
+        "wake",
+        "up",
+        "cute"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/gb/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-GB/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "GBP",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/gb/app/id6821790092"
       }
     },
     {
@@ -777,9 +822,7 @@
         "printable",
         "pronunciation",
         "reception",
-        "quiz",
-        "zhuyin",
-        "bopomofo"
+        "quiz"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1997,8 +2040,7 @@
         "llm",
         "agent",
         "allowance",
-        "cli",
-        "ai usage tracker"
+        "cli"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

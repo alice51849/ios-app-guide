@@ -3,7 +3,7 @@
 > Informații structurate despre funcțiile, prețul și întrebările frecvente ale fiecărei aplicații iOS.
 
 locale: ro
-apps: 53
+apps: 54
 - Catalog de aplicații: https://open.cait518.cc/ios-app-guide/ro/tools/private-pay-once-iphone-app-finder.html
 - Catalog de aplicații · PWA: https://open.cait518.cc/ios-app-guide/ro/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ro.jsonld
@@ -28,11 +28,11 @@ apps: 53
 - Catalog de aplicații · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/ro/notesstudio100.html) — Notițe de mână și PDF
-  - Scrie de mână, tastează, adnotează PDF-uri și înregistrează cursul pe aceeași pagină, offline. Recapitulează cu fișe. Fără cont, notițele rămân pe dispozitiv.
+  - Iarna și sesiunea din ianuarie: notițe de mână, PDF-uri adnotate, înregistrarea cursului pe aceeași pagină și recapitulare cu cartonașe. Totul offline, fără cont.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Fișiere în prompt AI](https://open.cait518.cc/ios-app-guide/ro/aibriefpack.html) — Prompturi din fișiere și PDF
-  - Context mai bun, răspunsuri AI mai bune: AI Brief citește capturi, PDF-uri și notițe pe dispozitiv, marchează datele personale și creează un brief clar pentru chat AI.
+  - Rapoarte de final de an și planuri de sărbători? Adaugă capturi, PDF-uri, notițe și linkuri: citite pe dispozitiv, date personale marcate, un brief clar pentru AI.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
 - [Aim990: antrenor de engleză](https://open.cait518.cc/ios-app-guide/ro/aim990.html) — Diagnostic TOEIC în 8 minute
@@ -68,11 +68,15 @@ apps: 53
   - Preț: Descărcare plătită la un singur preț inițial, fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Sonometru](https://open.cait518.cc/ios-app-guide/ro/dbhalo.html) — Decibeli, doză și expunere
-  - Decibelii dintr-o privire, spectrul complet, doza zilnică de zgomot estimată și sforăitul prins în jurnalul de somn. Totul pe dispozitiv, fără cont.
+  - Petreceri de iarnă, vecini gălăgioși sau sforăit în nopțile de iarnă? Vezi dB live pe inelul Halo, estimează doza zilnică de zgomot și înregistrează sforăitul.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Ceas deșteptător](https://open.cait518.cc/ios-app-guide/ro/easyam.html) — Alarma care tace de sărbători
+  - Crăciunul și Anul Nou sunt sărite automat. Concediu între sărbători? Adaugă-l ca zile libere: alarma tace și sună din nou în prima zi de lucru.
+  - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
+  - App Store: https://apps.apple.com/ro/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Bani de vacanță](https://open.cait518.cc/ios-app-guide/ro/gmoneylite.html) — Buget zilnic pe ceas și widget
-  - Setează un buget zilnic și vezi pe widget și pe Apple Watch cât ți-a rămas azi. Orice monedă, convertită imediat, chiar și offline. Fără cont.
+  - Crăciun sau Revelion în străinătate? Notează cumpărăturile în moneda locală, vezi-le imediat în moneda ta, setează o limită zilnică și convertește offline.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Cheltuieli și buget](https://open.cait518.cc/ios-app-guide/ro/gmoney.html) — Cheltuieli călătorie și valute
@@ -80,7 +84,7 @@ apps: 53
   - Preț: Descărcare plătită la un singur preț inițial, fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Preț în ore](https://open.cait518.cc/ios-app-guide/ro/hourstaglite.html) — Cumpărare conștientă: preț
-  - Înainte să cumperi, vezi prețul în ore din munca ta și marchează-l ca nevoie, dorință sau impuls. Cu widget și Apple Watch. Fără cont, fără cloud.
+  - Cumpărăturile de final de an: înainte să cumperi, vezi prețul în ore din munca ta, marchează-l ca necesitate, dorință sau impuls și vezi munca din spatele unui obiectiv.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Ore pentru cumpărat](https://open.cait518.cc/ios-app-guide/ro/hourstag.html) — Salariu orar și cheltuieli
@@ -132,7 +136,7 @@ apps: 53
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
 - [Mask My File: Șterge datele](https://open.cait518.cc/ios-app-guide/ro/maskmyfile.html) — Ascunde datele private
-  - Înainte să trimiți un PDF, o poză sau o captură, găsește nume, numere, e-mailuri, carduri și fețe, acoperă-le definitiv și șterge metadatele. Pe dispozitiv, fără cont.
+  - Copie de pașaport pentru vacanța de iarnă sau fluturași de salariu de final de an? Găsește datele private, acoperă definitiv doar ce alegi și șterge metadatele.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Ultima dată](https://open.cait518.cc/ios-app-guide/ro/mochidonestamp.html) — Când am făcut-o? Memento-uri
@@ -144,11 +148,11 @@ apps: 53
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
 - [MoneyTag](https://open.cait518.cc/ios-app-guide/ro/moneytag.html) — Proiecte · Etichete · Raport
-  - Vezi imediat dacă fiecare proiect aduce profit: venituri minus cheltuieli. Etichetează un client sau un cost o dată și vezi totalul pe toate proiectele. Fără cont.
+  - Job extra sau tarabă la final de an? Proiectul tău arată venituri minus cheltuieli ca rezultat net clar, în moneda aleasă de tine. Adaugă de pe Apple Watch.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
 - [OnePage PPT: slide-uri AI](https://open.cait518.cc/ios-app-guide/ro/onepageppt.html) — Prezentare pe o singură pagină
-  - Lipește notițe, un PDF, o captură de ecran sau un tabel și primești un slide 16:9 clar: ideile cheie devin titluri, cifrele devin grafice. Exportă pptx, PDF sau PNG.
+  - Bilanțul anului înainte de Crăciun? Lipește notițe, un PDF, o captură de ecran sau un CSV și primești un slide 16:9 clar: ideile cheie devin titluri, cifrele grafice.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
 - [PhotoCream Pro: Filtre de film](https://open.cait518.cc/ios-app-guide/ro/photocream.html) — Cameră analogică, filtre retro
@@ -164,7 +168,7 @@ apps: 53
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: marcaje cu IA](https://open.cait518.cc/ios-app-guide/ro/savetag.html) — Linkuri de citit mai târziu
-  - Salvează un link din orice aplicație cu o atingere. SaveTag îl ordonează pe teme pe dispozitiv, îl găsește după sens și îți aduce zilnic ce n-ai citit. Fără cont.
+  - Idei de cadouri, rețete de sărbători și excursii pierdute prin chaturi? Partajează linkul din orice aplicație: primește etichete pe dispozitiv și îl găsești după sens.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF și OCR](https://open.cait518.cc/ios-app-guide/ro/scanto.html) — Scaner privat de documente
@@ -176,11 +180,11 @@ apps: 53
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/ro/shotinbox.html) — Organizează capturile de ecran
-  - Capturile de ecran se ordonează singure: bonuri, bilete, călătorii și conversații separate, iar fiecare cuvânt poate fi căutat. Totul pe dispozitiv, nimic încărcat.
+  - Cumpărăturile de Crăciun și călătoriile de iarnă lasă bonuri, bilete și comenzi în capturi. Se ordonează singure, cauți textul, urmărești coletele și cureți restul.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Poze de buletin](https://open.cait518.cc/ios-app-guide/ro/snapportlite.html) — Portrete la dimensiunea exactă
-  - Decupează un portret exact la mărimea dorită, alege un fundal curat și previzualizează o coală de tipărire. Alege un șablon de mărime și exportă în JPEG, PNG sau PDF.
+  - Călătorie de sărbători sau pașaport nou? Decupează fotografia la dimensiunea exactă cu șabloane gata făcute, ghidaje pentru față și fundal alb sau albastru.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
 - [Snapport: Foto Pașaport](https://open.cait518.cc/ios-app-guide/ro/snapport.html) — 35x45 și foaie de printat
@@ -192,11 +196,11 @@ apps: 53
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: Ceas de Birou](https://open.cait518.cc/ios-app-guide/ro/stayclock.html) — Ora și calendarul mereu activi
-  - Un ceas de birou frumos, mereu aprins, care se citește din celălalt capăt al camerei. Cadrane flip, LED și analogice, calendar adevărat, alarme și mod de noapte blând.
+  - Seri lungi până la Crăciun: cât se încarcă, telefonul devine un ceas mare, lizibil din celălalt capăt al camerei, cu calendar Lună, semnal orar și o alarmă simplă.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Cronometru](https://open.cait518.cc/ios-app-guide/ro/studydown.html) — Pune-l cu ecranul în jos
-  - Întoarce telefonul și înregistrează focus real. Vezi ridicările, intervalele continue și ritmul zilnic al fiecărui termen. Privat.
+  - Examene și termene la final de an? Alege o activitate, pune telefonul cu ecranul în jos și timpul curge; când îl ridici, se oprește. Vezi azi și săptămâna.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Trip Planet copii](https://open.cait518.cc/ios-app-guide/ro/tripplanet.html) — Misiuni de drum în familie
@@ -204,7 +208,7 @@ apps: 53
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Plan călătorie](https://open.cait518.cc/ios-app-guide/ro/tripbeelite.html) — Itinerar de vacanță zi de zi
-  - Următoarea călătorie, zi de zi: ore, locuri, mementouri, bilete și vremea locală pe o cronologie. Vezi ce urmează pe Apple Watch. Fără cont.
+  - Acasă de Crăciun sau plecat de Revelion? Pune călătoria pe o singură cronologie, zi cu zi: zboruri, cazare, notițe, mementouri și date despre bilete la un loc. Fără cont.
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Plan de Călătorie](https://open.cait518.cc/ios-app-guide/ro/tripbee.html) — Excursii în grup și bagaje
@@ -224,7 +228,7 @@ apps: 53
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid: Diagnoză de rețea](https://open.cait518.cc/ios-app-guide/ro/wifiaid.html) — Diagnoză router, mesh și DNS
-  - Află dacă problema e la DNS, la furnizor sau la o pagină de autentificare Wi-Fi, vezi nodul mesh conectat și exportă un raport PDF pentru suport. Widget și ceas.
+  - De sărbători toată familia pe același Wi-Fi? Când se blochează, verifică Wi-Fi, DNS și internetul cu o atingere și vezi cauza cea mai probabilă sau dacă pică un site.
   - Preț: Descărcare plătită la un singur preț inițial, fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate Lite: cuvinte zilnic](https://open.cait518.cc/ios-app-guide/ro/wordmatelite.html) — Un minut pe zi, vocabular nou
@@ -232,10 +236,10 @@ apps: 53
   - Preț: Descarcă gratuit. O singură achiziție deblochează toate funcțiile—fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Învață vocabular](https://open.cait518.cc/ios-app-guide/ro/wordmate.html) — Cuvinte, carduri și widget
-  - Învață cuvinte în 44 de limbi cu propoziții exemplu, 14 teme și 3 niveluri. Exersează din widget sau de pe Apple Watch. Merge offline, fără cont.
+  - Călătorie de sărbători sau rezoluție de Anul Nou? Învață cuvinte în 44 de limbi în pauze scurte: 14 teme practice, propoziții-exemplu și pronunție pe care o asculți.
   - Preț: Descărcare plătită la un singur preț inițial, fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: deschide RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/ro/zipbox.html) — Dezarhivare fără reclame
-  - Deschide ZIP, RAR, 7z, TAR, ISO și altele, chiar și arhive cu parolă sau împărțite. Totul se procesează pe dispozitiv, fără reclame.
+  - Pozele de Crăciun vin într-un 7z cu parolă sau într-o arhivă ZIP împărțită? Vezi ce conține, previzualizează poze și PDF și extrage doar ce-ți trebuie.
   - Preț: Descărcare plătită la un singur preț inițial, fără abonament.
   - App Store: https://apps.apple.com/ro/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

@@ -4,7 +4,7 @@
 
 Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.
 
-Намерения поиска, составленные издателем, для 53 проверенных приложений для iOS и 50 локалей Apple.
+Намерения поиска, составленные издателем, для 54 проверенных приложений для iOS и 50 локалей Apple.
 
 **Локаль:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · **ru** · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -100,6 +100,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **DailyMate** | лучшее практическое приложение с фразами для путешественников с Apple Watch | Перед поездкой полные фразы для реальных ситуаций полезнее, чем отдельные слова, которые нужно собирать под давлением. DailyMate вырос как раз из этой проблемы. | Платное скачивание | [Руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [Скачайте DailyMate в App Store →](https://apps.apple.com/ru/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: Живые фразы** | DailyMate Lite: Живые фразы — Разговорник туриста: 50 языков \| iOS App | Говорите уверенно именно тогда, когда это нужно. DailyMate Lite превращает жизненные ситуации в короткие тренировки: вы видите первую реплику и учитесь | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/dailymatelite.html) | [Установить DailyMate Lite: Живые фразы в App Store](https://apps.apple.com/ru/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
 | **dB Halo: Шумомер** | dB Halo: Шумомер — Доза и безопасное время \| iOS App | dB Halo — шумомер для iPhone, iPad и Apple Watch. Все данные обрабатываются на устройстве. Кольцо Halo помогает сразу оценить текущий уровень звука в дБ | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/dbhalo.html) | [Установить dB Halo: Шумомер в App Store](https://apps.apple.com/ru/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
+| **EasyAM: Умный будильник и часы** | EasyAM: Умный будильник и часы — Звонит в будни, не в праздники \| iOS App | Зазвонит ли завтра будильник? С EasyAM об этом больше не нужно думать: он сам решает, день за днём. В рабочие дни будит, в праздники и в отпуске молчит | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/easyam.html) | [Установить EasyAM: Умный будильник и часы в App Store](https://apps.apple.com/ru/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | лучшее приложение для учёта бюджета путешествий без подписки для iPhone | В поездке нужен бюджетный трекер, который работает офлайн в стране без данных, поддерживает несколько валют и не требует учётной записи — организованный по поездкам, чтобы каждый отпуск был отдельным. Именно этот пробел и закрывает G+Money. | Платное скачивание | [Руководство](https://open.cait518.cc/ios-app-guide/ru/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [Скачать G+Money в App Store →](https://apps.apple.com/ru/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: Траты в поездке** | G+Money Lite: Траты в поездке — Бюджет на день: часы и виджет \| iOS App | G+Money Lite — Умный трекер валюты и расходов для путешествий | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/gmoneylite.html) | [Установить G+Money Lite: Траты в поездке в App Store](https://apps.apple.com/ru/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: Цена в часах** | HoursTag Lite: Цена в часах — Осознанные покупки: цена \| iOS App | HoursTag Lite - Увидьте настоящую цену вещей | Бесплатно начать · разблокировка за одну покупку | [Руководство](https://open.cait518.cc/ios-app-guide/ru/hourstaglite.html) | [Установить HoursTag Lite: Цена в часах в App Store](https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -145,7 +146,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## Скачать полный набор данных
 
-JSON, JSONL и CSV содержат одинаковые 2650 записей.
+JSON, JSONL и CSV содержат одинаковые 2700 записей.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -153,6 +154,6 @@ JSON, JSONL и CSV содержат одинаковые 2650 записей.
 
 [Главная](https://open.cait518.cc/ios-app-guide/ru/index.html) · [Открытые данные](https://open.cait518.cc/ios-app-guide/ru/data/lumi-studio-publisher-search-intent-catalog.html) · [Лицензия](https://creativecommons.org/licenses/by/4.0/)
 
-Обновлено: 2026-10-18
+Обновлено: 2026-10-20
 
 CC BY 4.0 применяется к исходному составлению каталога; названия приложений и знаки App Store принадлежат их владельцам.

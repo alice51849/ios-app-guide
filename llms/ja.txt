@@ -3,7 +3,7 @@
 > 各 iOS アプリの構造化情報 — 機能・価格・FAQ。
 
 locale: ja
-apps: 53
+apps: 54
 - アプリ一覧: https://open.cait518.cc/ios-app-guide/ja/tools/private-pay-once-iphone-app-finder.html
 - アプリ一覧 · PWA: https://open.cait518.cc/ios-app-guide/ja/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ja.jsonld
@@ -28,11 +28,11 @@ apps: 53
 - アプリ一覧 · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio：手書きノート](https://open.cait518.cc/ios-app-guide/ja/notesstudio100.html) — メモ帳・PDF注釈・講義録音
-  - 手書き、タイピング、PDFへの書き込み、講義の録音まで同じページで、すべてオフライン。暗記カードで復習。アカウント不要、ノートは端末内に保存。
+  - 年末の期末から年明けの試験まで。手書きノートに講義PDFへの書き込み、録音もそのページに残して、暗記カードで復習。すべてオフライン、アカウント不要。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief：資料から AI プロンプト](https://open.cait518.cc/ios-app-guide/ja/aibriefpack.html) — ファイル・PDF・スクショの要約を作成
-  - 良い文脈が、良いAIの答えに。スクショ、PDF、メモを入れるだけ。AI Briefが端末内で読み取り、個人情報をチェックして、どのAIチャットにも貼れるクリーンなブリーフに。
+  - AIの答えがずれるのは、文脈が足りないから。スクショ、PDF、メモ、リンクを入れると、AI Briefが端末内で読み取り、個人情報を見つけて、ひとつの整理されたブリーフにまとめます。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
 - [Aim990: 英語弱点コーチ](https://open.cait518.cc/ios-app-guide/ja/aim990.html) — TOEIC L&R 8分診断と弱点処方
@@ -40,7 +40,7 @@ apps: 53
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
 - [BattAI: バッテリー状態スコア](https://open.cait518.cc/ios-app-guide/ja/battai.html) — ルール、情報源、限界を明確に
-  - 電池の変化を長く見守る ルール、情報源、限界を明確に より深い履歴、計画、レポートを使えます。 支払いは一度だけ。サブスクリプションなし。
+  - 年末の機種変更や売却の前に。サービスや売却に使えるわかりやすい電池レポートをPNGで保存し、最大容量の推移と80%までの推定期間もチェック。データは端末内だけ。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
 - [CalDaily 電卓とテーマ](https://open.cait518.cc/ios-app-guide/ja/caldaily.html) — ウィジェット・8つのツール・履歴
@@ -60,19 +60,23 @@ apps: 53
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate Lite：ひとこと練習](https://open.cait518.cc/ios-app-guide/ja/dailymatelite.html) — 旅行会話の受け答え・50言語
-  - 空港やホテル、レストランで現地の人に言われたひとことを聞き取り、自然な受け答えを身につけよう。旅行の入門コースは50言語すべてに対応、オフラインでも使えます。
+  - 旅先で話しかけられて固まらないように。空港・ホテル・レストランで言われるひとことと、自然な返し方をセットで練習。旅行の入門コースは50言語すべてに対応、音声つき。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
 - [DailyMate：文で身につく語学](https://open.cait518.cc/ios-app-guide/ja/dailymate.html) — 毎日一文で身につく実用会話
-  - 読めるのに話せない…を卒業。実際の場面で使う会話フレーズを、自然な返事つきで学べます。47言語・8,400フレーズ・84の生活シーン。ウィジェットとApple Watch対応、オフラインでも使えます。サブスクなし。
+  - 単語は覚えたのに、会話になると固まる。DailyMateは返事までセットの完全な文で学べます。47言語・8,400フレーズ・84の生活シーン。ウィジェットとApple Watchですきま時間に。
   - 価格: 有料ダウンロードの買い切りで、サブスクリプションはありません。
   - App Store: https://apps.apple.com/jp/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo：デシベル測定](https://open.cait518.cc/ios-app-guide/ja/dbhalo.html) — 騒音・周波数解析・睡眠日記
   - 今のデシベルがひと目でわかり、スペクトルも全部見られます。1日の騒音ばく露量を見積もり、睡眠日記でいびきも記録。すべて端末内で完結、アカウント不要。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム](https://open.cait518.cc/ios-app-guide/ja/easyam.html) — 明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ
+  - 元日や、成人の日の三連休は自動でスキップ。年末年始の会社の休みは休暇に登録すれば、その朝は鳴りません。仕事始めの日からは、いつも通り鳴ります。この先7日間、どの日の何時に鳴るかもひと目でわかります。
+  - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
+  - App Store: https://apps.apple.com/jp/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite：旅の家計簿・為替](https://open.cait518.cc/ios-app-guide/ja/gmoneylite.html) — 旅行費用・旅費管理・外貨換算
-  - 1日の予算を決めれば、今日あといくら使えるかがウィジェットとApple Watchにすぐ表示。どの通貨で記録しても即換算、オフラインでもOK。アカウント登録は不要です。
+  - 年末年始の海外旅行に。買い物を現地通貨で記録すると、すぐに自国通貨に換算して表示。1日の上限を決めて今日の使いすぎも防げます。自動取得または手動で設定したレートはオフラインでも使えます。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money：家計簿・予算・為替](https://open.cait518.cc/ios-app-guide/ja/gmoney.html) — 支出管理・お金管理・出費記録
@@ -80,7 +84,7 @@ apps: 53
   - 価格: 有料ダウンロードの買い切りで、サブスクリプションはありません。
   - App Store: https://apps.apple.com/jp/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite：働く時間で見る値段](https://open.cait518.cc/ios-app-guide/ja/hourstaglite.html) — その値段は何時間分か見える
-  - 買う前に、その値段が自分の何時間分の労働かを確認。必要・欲しい・衝動のタグで判断できます。ウィジェットとApple Watch対応。アカウント不要、データは端末内に保存。
+  - 年末の買い物シーズン、ついポチる前に。その値段は何時間分の労働？価格を自分の労働時間に換算し、必要・欲しい・衝動でタグ付け。来年の目標に必要な労働時間も見えます。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: 価格を時間に](https://open.cait518.cc/ios-app-guide/ja/hourstag.html) — 時給で見る買い物の本当の値段
@@ -128,11 +132,11 @@ apps: 53
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
 - [Mask My File：共有前に個人情報を削除](https://open.cait518.cc/ios-app-guide/ja/maskmyfile.html) — PDF・画像・スクショを黒塗り
-  - PDF・写真・スクショを送る前に、名前・電話番号・メール・カード番号・顔を見つけて完全に黒塗りし、メタデータも削除。端末内で処理、アカウント不要。
+  - 年末の旅行予約で送るパスポートの写し、年末調整の書類や給与明細。送る前に個人情報を見つけ、選んだ所だけを完全に黒塗りし、メタデータも削除。すべて端末内で処理。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp：いつやった？](https://open.cait518.cc/ios-app-guide/ja/mochidonestamp.html) — 前回の日付を記録・家事の周期リマインダー
-  - 「最後にいつやったっけ？」をなくす。完了したらスタンプ、Mochiが覚えて次の時期に知らせます。シーツ、フィルター、水やり、電話も。家族と共有もできます。
+  - シーツやフィルター、最後に替えたのはいつ？ 終わったらワンタップで記録。実際にやった日から次の時期を数えて知らせます。ホーム画面・ロック画面のウィジェット対応、アカウント不要。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
 - [Mochi: かわいいToDo](https://open.cait518.cc/ios-app-guide/ja/mochi.html) — やることリストをかわいく整える
@@ -140,11 +144,11 @@ apps: 53
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
 - [MoneyTag: 収入と支出](https://open.cait518.cc/ios-app-guide/ja/moneytag.html) — プロジェクト · タグ · レポート
-  - プロジェクトごとに収入と支出を分けて、利益が出ているかひと目でわかる。取引先や経費はタグで横断集計。アカウント登録は不要です。
+  - 副業や案件、本当に利益が出ているのはどれ？ MoneyTagならプロジェクトごとに収入と支出を分けて、純利益がすぐわかります。通貨もプロジェクト別。ウィジェットとApple Watch対応。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
 - [OnePage PPT: AI資料作成](https://open.cait518.cc/ios-app-guide/ja/onepageppt.html) — メモからプレゼン資料・スライドへ
-  - 会議メモやPDF、スクショ、表を貼るだけで、要点が見出しに、数字が本物のグラフになった16:9スライドが1枚完成。pptx・PDF・PNGで書き出せます。オフラインでも動作します。
+  - 年末の振り返りや年度報告に。会議メモやPDF、スクショ、CSVを入れるだけで、要点は見出しに、数値はグラフに、日付は年表になった16:9スライドが1枚完成。タップで直してPNGで共有。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
 - [PhotoCream Pro：フィルム風フィルター](https://open.cait518.cc/ios-app-guide/ja/photocream.html) — エモいフィルムカメラ・写真加工
@@ -160,7 +164,7 @@ apps: 53
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: AIであとで読む](https://open.cait518.cc/ios-app-guide/ja/savetag.html) — 記事保存・リンク整理・読みたいリスト
-  - どのアプリからでもワンタップでリンクを保存。SaveTagが端末内でテーマ別に整理し、意味で探せて、まだ読んでいないリンクを毎日出してくれます。アカウント不要、クラウドなし。
+  - 年末のプレゼント候補、年越しごはんのレシピ、冬休みの旅先リンクがトークに埋もれていませんか？どのアプリからも共有するだけで端末上で自動タグ付け、意味で探せます。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: オフラインPDF](https://open.cait518.cc/ios-app-guide/ja/scanto.html) — 書類スキャナー・OCR文字認識
@@ -168,15 +172,15 @@ apps: 53
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
 - [Sereno: スリープサウンド](https://open.cait518.cc/ios-app-guide/ja/sereno.html) — 雨音とホワイトノイズで快眠・集中
-  - 雨音や波の音、焚き火の音など、睡眠と集中のための140種類以上の心落ち着くサウンド。自由にミックスし、フェードアウトで眠りにつき、朝は鳥のさえずりで目覚め。完全オフライン、アカウント不要。
+  - 夜、なかなか寝つけない人に。本物の雨音・波・焚き火の録音と、ホワイト・ピンク・ブラウンノイズを重ねて1000通り以上。同じループにならず、タイマーでそっと消えます。オフライン対応。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI：スクショ整理](https://open.cait518.cc/ios-app-guide/ja/shotinbox.html) — スクショ分類・OCR検索・タイムライン
-  - スクショの文字検索も仕分けもおまかせ。レシート・チケット・旅行・チャットを自動で分類し、リンクを開く、リマインダーに追加、不要分の削除まで一気に。整理は端末内で完結し、何もアップロードされません。
+  - 年末の買い物や帰省で、レシート・チケット・注文画面のスクショがたまりがち。自動で分類、画像の中の文字も検索、荷物の追跡やリマインダー追加、不要分の整理まで。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite：自宅で証明写真](https://open.cait518.cc/ios-app-guide/ja/snapportlite.html) — 顔写真をぴったりのサイズに
-  - 必要なサイズにぴったり合わせて顔写真をトリミング。背景を整えて、印刷用シートもプレビューできます。サイズのテンプレートを選んで、JPEG・PNG・PDFで書き出せます。
+  - ビザやパスポートの写真、サイズで迷わない。35×45mmなど28の国と地域・35種類のサイズに顔ガイドで合わせ、背景は白や青に。4×6インチやA4の印刷シートも作れます。処理は端末内。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
 - [Snapport: パスポート証明写真](https://open.cait518.cc/ios-app-guide/ja/snapport.html) — 学生証・社員証の写真も自宅で撮影
@@ -188,7 +192,7 @@ apps: 53
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock:パタパタ卓上時計](https://open.cait518.cc/ios-app-guide/ja/stayclock.html) — 時計を常時表示・置き時計
-  - 部屋の向こうからでも読める、きれいな常時点灯のデスク時計。パタパタ、LED、アナログの文字盤、本物のカレンダー、アラーム、やさしいナイトモード。すべて端末内で完結。
+  - 夜が長くなる季節に。寝室では真っ黒な画面に赤いナイトフェイス、部屋の隅からでも読める大きな時刻、毎時のチャイムとシンプルなアラーム。アカウント不要、広告なし。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown：伏せて時間記録](https://open.cait518.cc/ios-app-guide/ja/studydown.html) — 机に伏せるだけ
@@ -200,7 +204,7 @@ apps: 53
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite：旅程プラン](https://open.cait518.cc/ios-app-guide/ja/tripbeelite.html) — 旅のしおり・日ごとのスケジュール
-  - 次の旅を一日ずつ、すっきり整理。時間・場所・リマインダー・チケット・現地の天気をひとつのタイムラインに。次の予定はApple Watchでも確認でき、アカウント登録は不要です。
+  - 年末年始の帰省や旅行に。次の旅を日ごとのタイムラインにまとめて、フライトとホテルの情報、メモ、リマインダー、チケット情報をひとつに。アカウント不要、広告もありません。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: 旅行プランナー](https://open.cait518.cc/ios-app-guide/ja/tripbee.html) — 家族や友達と共同編集・持ち物リスト
@@ -212,7 +216,7 @@ apps: 53
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
 - [UsageNow：AI使用量トラッカー](https://open.cait518.cc/ios-app-guide/ja/claudeusagemini.html) — Claude・Codex・Copilot・Gemini残量
-  - 好きなパーセントで作れるアラート、5時間・週間リセット順の並べ替え、全アカウントをめくれるウィジェット。各AIプランの残りがひと目でわかります。
+  - コーディング中、AIの使用上限にいつ当たるか分からない――その不安をなくします。5時間枠と週間上限の残り、リセット時刻をホーム画面で確認、使い切る前にお知らせ。24時間の無料トライアルで全機能を試せて、その後は1回の購入だけ。継続課金はありません。
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/ja/wifiaidlite.html) — ネットがつながらない原因を特定
@@ -220,7 +224,7 @@ apps: 53
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid：ネット不調の原因を特定](https://open.cait518.cc/ios-app-guide/ja/wifiaid.html) — ルーター・メッシュ・DNS診断
-  - DNS、回線業者、Wi-Fiのログイン画面、特定のサイトのどこが原因かを特定。今つながっているメッシュのノードも確認でき、サポートに送れるPDFレポートも作成。ウィジェットとウォッチ対応。
+  - ネットが急に遅い、つながらない。原因はWi-Fi？DNS？それともサイト側？ WiFi Aidならワンタップで経路・DNS・TLS・安定性をチェックし、最も可能性の高い原因を表示。ウィジェット対応。
   - 価格: 有料ダウンロードの買い切りで、サブスクリプションはありません。
   - App Store: https://apps.apple.com/jp/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate Lite 1日5単語](https://open.cait518.cc/ios-app-guide/ja/wordmatelite.html) — 毎日1分、44言語の語彙トレーニング
@@ -228,11 +232,11 @@ apps: 53
   - 価格: 無料ダウンロード。1回限りの購入で全機能を解除でき、定期課金はありません。
   - App Store: https://apps.apple.com/jp/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate：44言語の単語学習](https://open.cait518.cc/ios-app-guide/ja/wordmate.html) — 単語ウィジェットと暗記カード
-  - 通勤やすきま時間に、44言語の単語を。14テーマ・3レベルで、ウィジェットやApple Watchからそのまま学習できます。オフライン対応、アカウント登録不要、サブスクなし。
+  - 単語帳が続かない人へ。Wordmateは44言語の単語を14の実用テーマ・84ユニットに分け、英単語には例文と発音つき。ホーム画面のウィジェットやApple Watchからそのまま覚えられます。
   - 価格: 有料ダウンロードの買い切りで、サブスクリプションはありません。
   - App Store: https://apps.apple.com/jp/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox 解凍：ZIP RAR 7z対応](https://open.cait518.cc/ios-app-guide/ja/zipbox.html) — 圧縮・解凍ツール パスワード対応
-  - ZIP、RAR、7z、TAR、ISOなどをまとめて開けます。パスワード付きや分割された圧縮ファイルもOK。処理はすべて端末内で完結し、広告もありません。
+  - 届いたRARや7zがiPhoneで開けない？ Zipboxは13形式に対応し、パスワード付きや分割アーカイブもOK。中身をプレビューして、必要なファイルだけ取り出せます。広告は一切なし。
   - 価格: 有料ダウンロードの買い切りで、サブスクリプションはありません。
   - App Store: https://apps.apple.com/jp/app/id6806776579?pt=118326163&ct=geo_pick&mt=8
 - [ルミのおてんき星：天気予報・今日の服装](https://open.cait518.cc/ios-app-guide/ja/lumiweather.html) — おでかけ指数・傘・気温・紫外線・降水確率

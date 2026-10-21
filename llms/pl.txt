@@ -3,7 +3,7 @@
 > Uporządkowane informacje o każdej aplikacji iOS — funkcje, cena i FAQ.
 
 locale: pl
-apps: 53
+apps: 54
 - Katalog aplikacji: https://open.cait518.cc/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.html
 - Katalog aplikacji · PWA: https://open.cait518.cc/ios-app-guide/pl/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pl.jsonld
@@ -28,11 +28,11 @@ apps: 53
 - Katalog aplikacji · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/pl/notesstudio100.html) — Notatnik odręczny, PDF, nauka
-  - Pisz odręcznie lub na klawiaturze, zaznaczaj PDF-y i nagraj wykład na tej samej stronie, offline. Powtarzaj z fiszkami. Bez konta, notatki zostają na urządzeniu.
+  - Zima i sesja w styczniu: notatki odręczne, zaznaczone PDF-y z wykładów, nagranie zajęć na tej samej stronie i powtórki z fiszkami. Offline, bez konta.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Pliki na prompt AI](https://open.cait518.cc/ios-app-guide/pl/aibriefpack.html) — Prompty z plików i PDF
-  - Lepszy kontekst, lepsze odpowiedzi AI. Dodaj zrzuty ekranu, PDF-y i notatki: AI Brief czyta je na urządzeniu, oznacza dane osobowe i tworzy czysty brief do czatu AI.
+  - Raporty na koniec roku i plany na święta? Dodaj zrzuty ekranu, PDF-y, notatki i linki: czytane na urządzeniu, dane osobowe oznaczone, jeden jasny brief dla AI.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
 - [Aim990: trener angielskiego](https://open.cait518.cc/ios-app-guide/pl/aim990.html) — Diagnoza TOEIC w 8 minut
@@ -68,11 +68,15 @@ apps: 53
   - Cena: Płatne pobranie za jedną cenę z góry, bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Miernik hałasu](https://open.cait518.cc/ios-app-guide/pl/dbhalo.html) — Dawka i bezpieczny czas
-  - Decybele w mgnieniu oka, pełne spektrum, szacowana dzienna dawka hałasu i chrapanie w dzienniku snu. Wszystko na urządzeniu, bez konta.
+  - Zimowe imprezy, głośni sąsiedzi czy chrapanie w zimowe noce? Zobacz dB na żywo na pierścieniu Halo, oszacuj dzienną dawkę hałasu i zapisuj chrapanie.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Budzik na dni robocze](https://open.cait518.cc/ios-app-guide/pl/easyam.html) — Pomija święta, urlop i wolne
+  - Święta Bożego Narodzenia i Nowy Rok są pomijane automatycznie. Urlop między świętami? Dodaj go jako wolne: budzik milczy i zadzwoni w pierwszy dzień pracy.
+  - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
+  - App Store: https://apps.apple.com/pl/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Koszty podróży](https://open.cait518.cc/ios-app-guide/pl/gmoneylite.html) — Dzienny budżet na zegarku
-  - Ustaw dzienny budżet i sprawdzaj na widżecie i Apple Watch, ile zostało na dziś. Dowolna waluta, przeliczona od razu, także offline. Bez zakładania konta.
+  - Święta lub sylwester za granicą? Zapisuj zakupy w lokalnej walucie i od razu zobacz je w swojej, ustaw dzienny limit. Kursy działają też offline.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Wydatki i budżet](https://open.cait518.cc/ios-app-guide/pl/gmoney.html) — Wydatki w podróży i waluty
@@ -80,7 +84,7 @@ apps: 53
   - Cena: Płatne pobranie za jedną cenę z góry, bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Cena to godziny](https://open.cait518.cc/ios-app-guide/pl/hourstaglite.html) — Świadome zakupy: realna cena
-  - Zanim kupisz, zobacz cenę w godzinach własnej pracy i oznacz ją jako potrzebę, zachciankę lub impuls. Z widżetem i Apple Watch. Bez konta, dane na urządzeniu.
+  - Zakupy na koniec roku: zanim kupisz, zobacz cenę w godzinach własnej pracy, oznacz ją jako potrzebę, zachciankę lub impuls i zobacz pracę za celem na nowy rok.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Godziny zakupu](https://open.cait518.cc/ios-app-guide/pl/hourstag.html) — Stawka godzinowa i wydatki
@@ -132,7 +136,7 @@ apps: 53
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
 - [Mask My File: Usuń swoje dane](https://open.cait518.cc/ios-app-guide/pl/maskmyfile.html) — Ukryj dane przed wysłaniem
-  - Zanim wyślesz PDF, zdjęcie lub zrzut ekranu, znajdź imiona, numery, e-maile, numery kart i twarze, zaczernij je na stałe i usuń metadane. Na urządzeniu, bez konta.
+  - Kopia dowodu na zimowy wyjazd albo paski płacowe na koniec roku? Znajdź dane prywatne, zamaż na stałe tylko to, co wybierzesz, i usuń metadane. Wszystko na urządzeniu.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Ostatni raz](https://open.cait518.cc/ios-app-guide/pl/mochidonestamp.html) — Kiedy to było? Przypomnienia
@@ -144,11 +148,11 @@ apps: 53
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
 - [MoneyTag: Przychody i wydatki](https://open.cait518.cc/ios-app-guide/pl/moneytag.html) — Projekty · Tagi · Raport
-  - Od razu widać, czy każdy projekt przynosi zysk: przychody minus wydatki. Oznacz klienta lub koszt raz, a suma zbierze się ze wszystkich projektów. Bez zakładania konta.
+  - Zlecenie lub stoisko przed końcem roku? Twój projekt pokazuje przychody minus wydatki jako jeden czytelny wynik netto, w wybranej przez Ciebie walucie.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
 - [OnePage PPT: slajd z AI](https://open.cait518.cc/ios-app-guide/pl/onepageppt.html) — Notatki w gotową prezentację
-  - Wklej notatki, PDF, zrzut ekranu lub arkusz i otrzymaj czytelny slajd 16:9: najważniejsze punkty jako nagłówki, liczby jako prawdziwe wykresy. Eksport do pptx, PDF i PNG.
+  - Podsumowanie roku przed świętami? Wklej notatki, PDF, zrzut ekranu lub CSV i otrzymaj czytelny slajd 16:9: kluczowe punkty jako nagłówki, liczby jako wykresy.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
 - [PhotoCream Pro: Filtry filmowe](https://open.cait518.cc/ios-app-guide/pl/photocream.html) — Analogowy aparat, filtry retro
@@ -164,7 +168,7 @@ apps: 53
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: zakładki z AI](https://open.cait518.cc/ios-app-guide/pl/savetag.html) — Zapisz linki, przeczytaj potem
-  - Zapisz link z dowolnej aplikacji jednym dotknięciem. SaveTag układa według tematu na urządzeniu, znajduje po znaczeniu i codziennie przypomina nieprzeczytane.
+  - Pomysły na prezenty, świąteczne przepisy i wyjazdy giną w czatach? Udostępnij link z dowolnej aplikacji: sam dostanie tagi na urządzeniu, a znajdziesz go po znaczeniu.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF i OCR](https://open.cait518.cc/ios-app-guide/pl/scanto.html) — Prywatny skaner dokumentów
@@ -176,11 +180,11 @@ apps: 53
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/pl/shotinbox.html) — Organizator zrzutów ekranu
-  - Zrzuty ekranu same się porządkują: paragony, bilety, podróże i czaty osobno, a każde słowo da się wyszukać. Sortowanie na urządzeniu, nic nie jest wysyłane.
+  - Prezenty na święta i zimowe wyjazdy to stos paragonów, biletów i zamówień na zrzutach. Same się porządkują, wyszukasz tekst, śledzisz paczki i usuwasz resztę.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Foto do dowodu](https://open.cait518.cc/ios-app-guide/pl/snapportlite.html) — Portrety w dokładnym rozmiarze
-  - Przytnij portret do dokładnego rozmiaru zdjęcia, zmień tło na jednolite i zobacz podgląd arkusza do druku. Wybierz szablon rozmiaru i wyeksportuj do JPEG, PNG lub PDF.
+  - Świąteczny wyjazd albo nowy paszport? Przytnij zdjęcie do dokładnego rozmiaru z gotowych szablonów, z liniami pomocniczymi dla twarzy i białym lub niebieskim tłem.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
 - [Snapport: Zdjęcia do ID](https://open.cait518.cc/ios-app-guide/pl/snapport.html) — 35x45 i arkusz do druku
@@ -192,11 +196,11 @@ apps: 53
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: zegar z klapkami](https://open.cait518.cc/ios-app-guide/pl/stayclock.html) — Czas i kalendarz bez przerwy
-  - Piękny zegar na biurko, który zawsze świeci i widać go z drugiego końca pokoju. Tarcze z klapkami, LED i wskazówkowe, kalendarz, budziki i łagodny tryb nocny.
+  - Długie wieczory aż do świąt: podczas ładowania telefon staje się dużym zegarem widocznym z drugiego końca pokoju, z kalendarzem Miesiąc i prostym alarmem.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Pomiar czasu](https://open.cait518.cc/ios-app-guide/pl/studydown.html) — Połóż ekranem w dół
-  - Odwróć telefon i zapisuj prawdziwe skupienie. Sprawdzaj podniesienia, ciągłe odcinki i tempo dzienne każdego terminu. Prywatnie.
+  - Sesja zimowa i terminy? Wybierz aktywność, połóż telefon ekranem w dół i czas leci; podniesiesz go – pauza. Zobacz dziś i ten tydzień według aktywności.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Trip Planet dla dzieci](https://open.cait518.cc/ios-app-guide/pl/tripplanet.html) — Rodzinne misje w drodze
@@ -204,7 +208,7 @@ apps: 53
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Plan podróży](https://open.cait518.cc/ios-app-guide/pl/tripbeelite.html) — Wakacje dzień po dniu
-  - Następna podróż dzień po dniu: godziny, miejsca, przypomnienia, bilety i lokalna pogoda na jednej osi czasu. Kolejny punkt zobaczysz na Apple Watch. Bez konta.
+  - Do domu na święta czy w podróż na sylwestra? Ułóż wyjazd na jednej osi czasu dzień po dniu: loty, nocleg, notatki, przypomnienia i dane biletów w jednym miejscu.
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Planer Podróży](https://open.cait518.cc/ios-app-guide/pl/tripbee.html) — Wyjazd grupowy i lista rzeczy
@@ -224,7 +228,7 @@ apps: 53
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid: Znajdź błędy sieci](https://open.cait518.cc/ios-app-guide/pl/wifiaid.html) — Router, mesh i DNS: diagnoza
-  - Sprawdź, czy zawodzi DNS, dostawca czy strona logowania Wi-Fi, zobacz, z którym węzłem mesh się łączysz, i wyślij raport PDF do wsparcia. Widżet i zegarek.
+  - Święta i cała rodzina na jednym Wi-Fi? Gdy się tnie, jednym dotknięciem sprawdź Wi-Fi, DNS i internet i zobacz najbardziej prawdopodobną przyczynę albo jedną stronę.
   - Cena: Płatne pobranie za jedną cenę z góry, bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate Lite: nauka słówek](https://open.cait518.cc/ios-app-guide/pl/wordmatelite.html) — Minuta dziennie, 5 nowych słów
@@ -232,10 +236,10 @@ apps: 53
   - Cena: Darmowe pobranie, jednorazowy zakup odblokowuje wszystko. Bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Nauka słówek](https://open.cait518.cc/ios-app-guide/pl/wordmate.html) — Fiszki, widżet i zegarek
-  - Ucz się słówek w 44 językach z naturalnymi przykładami zdań, 14 tematami i 3 poziomami. Powtarzaj z widżetu lub Apple Watch. Działa offline, bez konta.
+  - Wyjazd na święta czy noworoczne postanowienie? Ucz się słówek w 44 językach w wolnych chwilach: 14 praktycznych tematów, przykładowe zdania i wymowa do odsłuchania.
   - Cena: Płatne pobranie za jedną cenę z góry, bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: otwórz RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/pl/zipbox.html) — Rozpakuj bez reklam
-  - Otwieraj ZIP, RAR, 7z, TAR, ISO i inne, także archiwa z hasłem lub podzielone na części. Wszystko przetwarzane na urządzeniu, bez reklam.
+  - Świąteczne zdjęcia w 7z z hasłem albo ZIP podzielony na części? Zajrzyj do środka, podejrzyj zdjęcia i PDF i rozpakuj tylko to, czego potrzebujesz. Bez reklam.
   - Cena: Płatne pobranie za jedną cenę z góry, bez subskrypcji.
   - App Store: https://apps.apple.com/pl/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

@@ -20,6 +20,7 @@ publisher: "Lumi Studio"
 - ट्रॅकिंग नाही
 - खाजगी / उपकरणावर
 - App Store · मोफत
+- ★ 4.0/5 · 1
 
 [App Store वरून OnePage PPT: स्लाइड मेकर मिळवा](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 

@@ -74,13 +74,13 @@
       "const": "official_locale_order_then_alphabetical_app_name"
     },
     "app_count": {
-      "const": 53
+      "const": 54
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2650
+      "const": 2700
     },
     "locales": {
       "type": "array",
@@ -144,8 +144,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2650,
-      "maxItems": 2650,
+      "minItems": 2700,
+      "maxItems": 2700,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -242,6 +242,7 @@
               "dailymate",
               "dailymatelite",
               "dbhalo",
+              "easyam",
               "gmoney",
               "gmoneylite",
               "hourstag",

@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-20",
-  "content_digest": "1c5079d365ad75e3ba100a33fbd8d3a22a43852646c11f8acc83620097b11a8c",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
   "locale": "hr",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 53,
+  "record_count": 54,
   "apps": [
     {
       "key": "notesstudio100",
@@ -447,6 +447,49 @@
         "currency": "EUR",
         "formatted_price": "Besplatno",
         "storefront_url": "https://apps.apple.com/hr/app/id6806826699"
+      }
+    },
+    {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: Pametna budilica",
+      "summary": "Treba li budilica sutra ujutro zvoniti ili imaš slobodan dan? EasyAM to odlučuje umjesto tebe, za svaki dan posebno: radnim danima zvoni, za praznike i tvoje slobodne dane šuti, a sljedećih sedam dana vidiš unaprijed. Više ne gasiš budilicu prije produženog vikenda i ne zaboravljaš je upaliti nakon njega: postaviš je jednom i gotovo.",
+      "category": "utility",
+      "search_terms": [
+        "alarm",
+        "budilnik",
+        "blagdani",
+        "smjene",
+        "smjenski",
+        "godišnji",
+        "odmor",
+        "neradni",
+        "kalendar",
+        "buđenje",
+        "widget",
+        "flip",
+        "sat",
+        "dan"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6821790092"
       }
     },
     {

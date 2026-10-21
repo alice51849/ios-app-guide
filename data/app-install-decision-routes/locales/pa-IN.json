@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "pa-IN",
   "dateModified": "2026-10-20",
-  "content_digest": "610ac599cdac3a6eb200ce4863ada524c3898d54316b5333ddd76624dd098649",
-  "generation_digest": "33e84ca012dc36f9d2f42e5bf73f5a868c680e0794de9da021b07f962363bd1e",
+  "content_digest": "1b6a17c21d9f179a9860477b1687bb944f8ee30ca4132c0ce0987288f3041fba",
+  "generation_digest": "64515fcc1834987bd856e82e47fed33fd87a687dccd27bd7788abac5b978109e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 53,
+  "record_count": 54,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/pa-IN.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/pa-IN.rss.xml",
@@ -812,6 +812,73 @@
       "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
       "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
       "source_persona_query": "sound meter app for iphone with frequency spectrum and noise dose",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "pa-IN:easyam",
+      "locale": "pa-IN",
+      "app_key": "easyam",
+      "app_name": "EasyAM: ਛੁੱਟੀ ਅਲਾਰਮ ਘੜੀ",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "EasyAM: ਛੁੱਟੀ ਅਲਾਰਮ ਘੜੀ — ਸਿਰਫ਼ ਕੰਮ ਵਾਲੇ ਦਿਨ ਵੱਜਦਾ ਹੈ | iOS App",
+      "decision_context": "ਕੱਲ੍ਹ ਸਵੇਰੇ ਅਲਾਰਮ ਵੱਜਣਾ ਚਾਹੀਦਾ ਹੈ ਜਾਂ ਨਹੀਂ, ਸੌਣ ਤੋਂ ਪਹਿਲਾਂ ਹੁਣ ਇਹ ਸੋਚਣ ਦੀ ਲੋੜ ਨਹੀਂ। EasyAM ਕੰਮ ਵਾਲੇ ਦਿਨ ਵੱਜਦਾ ਹੈ, ਜਨਤਕ ਛੁੱਟੀਆਂ ਅਤੇ ਤੁਹਾਡੀ ਨਿੱਜੀ ਛੁੱਟੀ ਵਾਲੇ ਦਿਨ ਚੁੱਪ ਰਹਿੰਦਾ ਹੈ; ਅਗਲੇ 7 ਦਿਨਾਂ ਵਿੱਚੋਂ ਕਿਹੜੇ ਦਿਨ ਅਤੇ ਕਿੰਨੇ ਵਜੇ ਅਲਾਰਮ ਵੱਜੇਗਾ, ਇਹ ਐਪ ਖੋਲ੍ਹਦੇ ਹੀ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ ਦਿਸਦਾ ਹੈ। EasyAM ਕਿਉਂ ਛੁੱਟੀ ਤੋਂ ਪਹਿਲਾਂ ਅਲਾਰਮ ਬੰਦ ਕਰਨਾ ਅਤੇ ਬਾਅਦ ਵਿੱਚ ਮੁੜ ਚਾਲੂ ਕਰਨਾ ਹੁਣ ਯਾਦ ਰੱਖਣ ਦੀ ਲੋੜ ਨਹੀਂ। ਤੁਹਾਡੇ ਦੇਸ਼ ਦੀਆਂ ਜਨਤਕ ਛੁੱਟੀਆਂ ਆਪਣੇ-ਆਪ ਛੱਡ ਦਿੱਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ; ਜਿੱਥੇ ਛੁੱਟੀ ਦੇ ਬਦਲੇ ਕੰਮ ਵਾਲਾ ਦਿਨ ਹੁੰਦਾ ਹੈ, ਉੱਥੇ ਉਸ ਦਿਨ ਅਲਾਰਮ ਆਮ ਵਾਂਗ ਵੱਜਦਾ ਹੈ। ਸਿਰਫ਼ ਇੱਕ ਦਿਨ ਜਲਦੀ ਜਾਂ ਦੇਰ ਨਾਲ ਉੱਠਣਾ ਹੈ? ਸਿਰਫ਼ ਉਸ ਦਿਨ ਦਾ ਸਮਾਂ ਬਦਲੋ, ਬਾਕੀ ਦਿਨ ਉਵੇਂ ਹੀ ਰਹਿੰਦੇ ਹਨ। ਲੀਵ, ਸਫ਼ਰ, ਪੜ੍ਹਾਈ ਵਰਗੀਆਂ ਛੁੱਟੀਆਂ ਇੱਕ ਦਿਨ ਜਾਂ ਤਾਰੀਖ਼ਾਂ ਦੀ ਮਿਆਦ ਵਜੋਂ ਆਪਣੇ ਨਾਮ ਅਤੇ ਆਈਕਨ ਨਾਲ ਜੋੜੋ; ਛੁੱਟੀ ਲਈ ਵੱਖਰਾ ਜਗਾਉਣ ਵਾਲਾ ਅਲਾਰਮ ਵੀ ਲਗਾ ਸਕਦੇ ਹੋ। ਕੱਲ੍ਹ ਥੋੜ੍ਹਾ ਹੋਰ ਸੌਣਾ ਹੈ? “ਦੇਰ ਨਾਲ ਉੱਠੋ” ਉੱਤੇ ਟੈਪ ਕਰੋ: ਸਿਰਫ਼ ਅਗਲੀ ਵਾਰ ਅਲਾਰਮ ਨਹੀਂ ਵੱਜੇਗਾ ਅਤੇ ਨਿਯਮ ਉਵੇਂ ਹੀ ਰਹੇਗਾ (ਇੱਕ ਦਿਨ ਪਹਿਲਾਂ ਤੋਂ ਉਪਲਬਧ)। ਜਿਸ ਦਿਨ ਦਾ ਛੁੱਟੀਆਂ ਵਾਲਾ ਡਾਟਾ ਨਾ ਹੋਵੇ ਜਾਂ ਪੁਰਾਣਾ ਹੋਵੇ, ਉਸ ਨੂੰ ਕੰਮ ਵਾਲਾ ਦਿਨ ਮੰਨਿਆ ਜਾਂਦਾ ਹੈ ਅਤੇ ਅਲਾਰਮ ਵੱਜਦਾ ਹੈ। ਇਹ ਕਿਸ ਲਈ ਹੈ ਦਫ਼ਤਰ ਜਾਣ ਵਾਲੇ, ਵਿਦਿਆਰਥੀ ਅਤੇ ਅਧਿਆਪਕ: ਕੰਮ ਜਾਂ ਕਲਾਸ ਵਾਲੇ ਦਿਨ ਹੀ ਅਲਾਰਮ। ਸ਼ਿਫਟਾਂ ਵਿੱਚ ਕੰਮ ਕਰਨ ਵਾਲੇ: ਓਵਰਟਾਈਮ, ਨਾਈਟ ਸ਼ਿਫਟ ਦੇ ਦਿਨ ਲੇਬਲ ਨਾਲ ਜੋੜੋ। ਵਿਦੇਸ਼ ਵਿੱਚ ਕੰਮ ਕਰਨ ਵਾਲੇ: ਐਪ ਦਾ ਦੇਸ਼ ਜਾਂ ਖੇਤਰ ਕਦੇ ਵੀ ਬਦਲੋ। ਖ਼ੂਬੀਆਂ ਹਫ਼ਤੇ ਦੇ ਦਿਨ ਚੁਣ ਕੇ ਦੁਹਰਾਉਣ ਵਾਲਾ ਜਾਂ ਇੱਕ ਵਾਰ ਵਾਲਾ ਅਲਾਰਮ, ਲੇਬਲ ਅਤੇ 1 ਤੋਂ 60 ਮਿੰਟ ਤੱਕ ਸਨੂਜ਼। 67 ਦੇਸ਼ਾਂ ਅਤੇ ਖੇਤਰਾਂ ਦੀਆਂ 2026 ਤੋਂ 2028 ਤੱਕ ਦੀਆਂ ਛੁੱਟੀਆਂ ਦਾ ਡਾਟਾ ਐਪ ਵਿੱਚ ਹੀ; ਇੰਟਰਨੈੱਟ ਤੋਂ ਬਿਨਾਂ ਵੀ ਚੱਲਦਾ ਹੈ ਅਤੇ ਨਵੀਆਂ ਫ਼ਾਈਲਾਂ ਡਾਊਨਲੋਡ ਹੋ ਸਕਦੀਆਂ ਹਨ। ਛੁੱਟੀਆਂ ਦਿਖਾਉਣ ਵਾਲਾ ਮਹੀਨੇ ਦਾ ਕੈਲੰਡਰ ਅਤੇ ਆਪਣੇ ਨਾਮ, ਰੰਗ ਤੇ ਆਈਕਨ ਵਾਲੀਆਂ 12 ਤੱਕ ਅਲਾਰਮ ਸ਼੍ਰੇਣੀਆਂ। iOS ਦੇ ਸਿਸਟਮ ਅਲਾਰਮ; iOS ਵੱਲੋਂ ਸ਼ਡਿਊਲ ਦੀ ਪੁਸ਼ਟੀ ਤੋਂ ਬਾਅਦ ਹੀ ਅਲਾਰਮ ਤਿਆਰ ਦਿਖਾਏ ਜਾਂਦੇ ਹਨ। ਅਲਾਰਮ ਵੱਜਦੇ ਸਮੇਂ ਜਾਂ ਸਨੂਜ਼ ਦੌਰਾਨ Live Activity ਅਤੇ Dynamic Island ਵਿੱਚ ਦਿਸਦਾ ਹੈ। ਹੋਮ ਸਕ੍ਰੀਨ ਅਤੇ ਲੌਕ ਸਕ੍ਰੀਨ ਵਿਜੇਟ; ਦਰਮਿਆਨੇ ਅਤੇ ਵੱਡੇ ਵਿਜੇਟ ਤੋਂ ਇੱਕ ਟੈਪ ਨਾਲ ਕੱਲ੍ਹ ਦਾ ਅਲਾਰਮ ਛੱਡ ਸਕਦੇ ਹੋ, ਛੋਟਾ ਵਿਜੇਟ StandBy ਵਿੱਚ ਵੀ ਦਿਸਦਾ ਹੈ। ਫਲਿੱਪ ਕਾਰਡ, ਐਨਾਲਾਗ ਡਾਇਲ ਵਰਗੇ 10 ਸੰਗ੍ਰਹਿਆਂ ਵਿੱਚ ਕੁੱਲ 101 ਘੜੀ ਥੀਮ, ਹਰ ਇੱਕ ਦਾ ਪੂਰੀ ਸਕ੍ਰੀਨ ਪ੍ਰੀਵਿਊ; ਐਨਾਲਾਗ ਡਾਇਲ ਥੀਮ ਨਾਲ ਹੋਮ ਸਕ੍ਰੀਨ ਵਿਜੇਟ ਗੋਲ ਘੜੀ ਬਣ ਜਾਂਦਾ ਹੈ। Apple Watch ਐਪ iPhone ਤੋਂ ਸਿੰਕ ਹੋਇਆ ਅਗਲਾ ਅਲਾਰਮ ਅਤੇ ਆਉਣ ਵਾਲੇ 7 ਦਿਨ ਦਿਖਾਉਂਦੀ ਹੈ; ਕੰਪਲੀਕੇਸ਼ਨ ਅਤੇ Smart Stack ਕਾਰਡ ਵੀ ਹਨ। ਗੁੱਟ ਤੋਂ ਕੱਲ੍ਹ ਦਾ ਅਲਾਰਮ ਛੱਡ ਸਕਦੇ ਹੋ; iOS ਦੀ ਪੁਸ਼ਟੀ ਤੋਂ ਬਾਅਦ ਹੀ ਪੂਰਾ ਹੋਇਆ ਦਿਸਦਾ ਹੈ। ਅਲਾਰਮ ਜੋੜੇ ਹੋਏ iPhone ਤੋਂ ਹੀ ਚੱਲਦੇ ਹਨ। iPhone ਅਤੇ iPad ਲਈ ਲੇਆਉਟ (iPad ਉੱਤੇ ਸਾਈਡਬਾਰ ਵਾਲਾ ਚੌੜਾ ਲੇਆਉਟ); 50 ਭਾਸ਼ਾਵਾਂ, ਸਿਸਟਮ ਦੀ ਭਾਸ਼ਾ ਮੁਤਾਬਕ; 12 ਜਾਂ 24 ਘੰਟੇ ਦਾ ਸਮਾਂ; ਲਾਈਟ ਅਤੇ ਡਾਰਕ ਦਿੱਖ। ਨਿੱਜਤਾ ਅਤੇ ਖ਼ਰੀਦ ਕੋਈ ਖਾਤਾ ਨਹੀਂ, ਕੋਈ ਇਸ਼ਤਿਹਾਰ ਨਹੀਂ, ਕੋਈ ਐਨਾਲਿਟਿਕਸ ਨਹੀਂ, ਕੋਈ ਟਰੈਕਿੰਗ ਨਹੀਂ; ਅਲਾਰਮ ਅਤੇ ਸੈਟਿੰਗਾਂ ਤੁਹਾਡੇ ਡਿਵਾਈਸ ਉੱਤੇ ਹੀ ਰਹਿੰਦੀਆਂ ਹਨ। ਇੰਟਰਨੈੱਟ ਸਿਰਫ਼ ਛੁੱਟੀਆਂ ਦੀਆਂ ਡਾਟਾ ਫ਼ਾਈਲਾਂ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ। ਇੱਕ ਅਲਾਰਮ ਅਤੇ ਇੱਕ ਘੜੀ ਥੀਮ ਸ਼ਾਮਲ ਹੈ। ਅਸੀਮਤ ਅਲਾਰਮ ਅਤੇ ਅਲਾਰਮ ਦੀ ਕਾਪੀ, ਸ਼ਿਫਟ ਅਤੇ ਹਰ ਦੂਜੇ ਹਫ਼ਤੇ ਵਾਲੇ ਪੈਟਰਨ, ਹਰ ਅਲਾਰਮ ਲਈ ਵੱਖਰਾ ਛੁੱਟੀਆਂ ਦਾ ਕੈਲੰਡਰ ਅਤੇ ਹੋਰ 100 ਘੜੀ ਥੀਮ ਇੱਕ ਵਾਰ ਦੀ ਇਨ-ਐਪ ਖ਼ਰੀਦ ਨਾਲ ਅਨਲੌਕ ਹੁੰਦੇ ਹਨ। ਸਹਾਇਤਾ ਕੋਈ ਸਵਾਲ ਜਾਂ ਸੁਝਾਅ ਹੈ? App Store ਪੰਨੇ ਉੱਤੇ ਦਿੱਤੇ ਸਹਾਇਤਾ ਲਿੰਕ ਰਾਹੀਂ ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।",
+      "category": "utility",
+      "category_label": "ਹੋਰ",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "ਕੋਈ ਖਾਤਾ ਨਹੀਂ",
+        "ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ",
+        "ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ",
+        "ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "ਵਿਜੈਟ",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "ਹੋਰ",
+        "ਮੁਫ਼ਤ ਸ਼ੁਰੂਆਤ",
+        "ਕੋਈ ਖਾਤਾ ਨਹੀਂ",
+        "ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ",
+        "ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ",
+        "ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ",
+        "ਵਿਜੈਟ",
+        "Apple Watch",
+        "App Store · ਮੁਫ਼ਤ"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/easyam.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/pa-IN/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/pa-IN/easyam.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Feasyam%2Fdecision%2Fl%2Fpa-IN%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/pa-IN.json",
+      "app_store_id": "6821790092",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6821790092",
+      "app_store_url": "https://apps.apple.com/in/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "App Store ਤੋਂ EasyAM: ਛੁੱਟੀ ਅਲਾਰਮ ਘੜੀ ਪ੍ਰਾਪਤ ਕਰੋ",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "INR",
+        "formatted_price": "ਮੁਫ਼ਤ"
+      },
+      "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
+      "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",
+      "source_persona_query": "alarm clock app that skips holidays on iphone",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,
@@ -1857,7 +1924,8 @@
         "ਕੋਈ ਖਾਤਾ ਨਹੀਂ",
         "ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ",
         "ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ",
-        "App Store · ਮੁਫ਼ਤ"
+        "App Store · ਮੁਫ਼ਤ",
+        "★ 4.0/5 · 1"
       ],
       "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/pa-IN/onepageppt.html",
       "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/onepageppt/decision/l/pa-IN/index.html",
@@ -1870,7 +1938,9 @@
       "storefront_facts": {
         "price": "0",
         "currency": "INR",
-        "formatted_price": "ਮੁਫ਼ਤ"
+        "formatted_price": "ਮੁਫ਼ਤ",
+        "rating_value": 4.0,
+        "rating_count": 1
       },
       "guide_cta_label": "ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ",
       "publisher_disclosure": "ਇਹ Lumi Studio ਵੱਲੋਂ ਪ੍ਰਕਾਸ਼ਿਤ ਪਹਿਲਾ-ਪੱਖ ਸਮੱਗਰੀ ਹੈ, ਜੋ ਹਰ ਦਰਜ ਕੀਤੇ ਐਪ ਦਾ ਡਿਵੈਲਪਰ ਹੈ।",

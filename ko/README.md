@@ -4,7 +4,7 @@
 
 각 앱의 대상 사용자, 완료하려는 작업, App Store로 바로 이동하는 경로를 개발사가 직접 공개한 카탈로그입니다.
 
-App Store 제공 여부를 확인한 53개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
+App Store 제공 여부를 확인한 54개 iOS 앱과 Apple의 50개 언어·지역에 맞춰 개발사가 작성한 검색 의도입니다.
 
 **언어·지역:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · **ko** · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -100,6 +100,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 | **DailyMate** | 애플 워치와 함께 여행자에게 가장 실용적인 언어 회화 앱 | 여행 전, 실제 상황에 맞는 완전한 문장이 압박 속에 조합해야 하는 단어보다 더 유용합니다. DailyMate, 바로 그 문제에서 출발했습니다. | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store에서 DailyMate 받기 →](https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite: 바로 쓰는 한마디** | DailyMate Lite: 바로 쓰는 한마디 — 50개 언어 상황별 여행 회화 \| iOS App | 막상 말하려는 순간, 알맞은 표현이 떠오르지 않나요? DailyMate Lite는 여행, 업무, 식사, 건강 등 실제 장면을 짧은 질문과 자연스러운 대답으로 구성해, 50개 언어를 한 차례의 온전한 대화로 연습할 수 있게 해 줍니다. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/dailymatelite.html) | [App Store에서 DailyMate Lite: 바로 쓰는 한마디 받기](https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
 | **dB Halo** | 주파수 스펙트럼과 소음 노출량을 갖춘 iPhone용 소음 측정 앱 | dB Halo — 집 작업실과 공조기 웅웅거림부터 헬스장이나 공연장까지, dB Halo는 데이터를 기기 밖으로 보내지 않고 소리를 이해하도록 도와줍니다. 무료 시작 · 한 번만 구매하는 해제 · 구독 없음. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/sound-meter-app-for-iphone-with-frequency-spectrum-and-noise-dose.html) | [App Store에서 dB Halo 받기 →](https://apps.apple.com/kr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
+| **EasyAM: 스마트 공휴일 알람 시계** | EasyAM: 스마트 공휴일 알람 시계 — 내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척 \| iOS App | 내일 아침 알람, 울려야 할까요? EasyAM이 날마다 알아서 정해요. 출근하는 날엔 울리고, 공휴일과 내가 등록한 휴가엔 조용히 쉬어요. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/easyam.html) | [App Store에서 EasyAM: 스마트 공휴일 알람 시계 받기](https://apps.apple.com/kr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | 구독 없이 사용할 수 있는 최고의 여행 예산 추적 앱 아이폰용 | 여행 중 데이터가 없는 나라에서도 작동하고, 여러 통화를 처리하며, 계정을 요구하지 않는 예산 추적기가 필요합니다 — 여행별로 정리되어 각 휴가가 분리됩니다. 그 간극을 메우려고 만든 앱이 G+Money입니다. | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [앱 스토어에서 G+Money 받기 →](https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | best free travel expense tracker with currency conversion for iphone | 무료 여행 경비 테스트라면 구매 후에야 쓸모 있어지는 빈 장부가 아니라 현지 통화에서 자국 통화까지의 전체 흐름을 시험할 수 있어야 합니다. G+Money Lite — 스마트 여행 환율·지출 기록 — 지출마다 기록하고 자국 통화로 확인. | 무료로 시작 · 한 번 구매로 잠금 해제 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [App Store에서 G+Money Lite 받기 →](https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag** | HoursTag: 지출을 근무 시간으로 바꾸고 월별 기록을 돌아보기 | HoursTag는 처음에 한 번 결제하는 유료 앱입니다. 시급이나 월급을 설정하고 지출을 근무 시간으로 환산한 뒤, 기록을 저장하고 필요·원함·충동 태그와 분류별 분석, 목표 진행 상황을 확인할 수 있습니다. 일회성 계산만 하는 앱이 아닙니다. | 유료 다운로드 | [가이드](https://open.cait518.cc/ios-app-guide/ko/answers/best-app-to-track-where-my-money-goes-and-save-more.html) | [App Store에서 HoursTag 받기 →](https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8) |
@@ -145,7 +146,7 @@ App Store에서 제공 중임을 확인한 각 앱마다 대표 구매자 페르
 
 ## 전체 데이터셋 다운로드
 
-JSON, JSONL, CSV 모두 동일한 2,650개 기록을 포함합니다.
+JSON, JSONL, CSV 모두 동일한 2,700개 기록을 포함합니다.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -153,6 +154,6 @@ JSON, JSONL, CSV 모두 동일한 2,650개 기록을 포함합니다.
 
 [홈](https://open.cait518.cc/ios-app-guide/ko/index.html) · [오픈 데이터](https://open.cait518.cc/ios-app-guide/ko/data/lumi-studio-publisher-search-intent-catalog.html) · [라이선스](https://creativecommons.org/licenses/by/4.0/)
 
-업데이트 날짜: 2026-10-18
+업데이트 날짜: 2026-10-20
 
 CC BY 4.0은 원본 카탈로그 편집에 적용되며, 앱 이름과 App Store 마크는 각 소유자의 권리입니다.

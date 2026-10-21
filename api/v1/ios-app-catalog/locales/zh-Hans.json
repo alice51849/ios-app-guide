@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-20",
-  "content_digest": "1c5079d365ad75e3ba100a33fbd8d3a22a43852646c11f8acc83620097b11a8c",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
   "locale": "zh-Hans",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 53,
+  "record_count": 54,
   "apps": [
     {
       "key": "notesstudio100",
@@ -602,6 +602,67 @@
       }
     },
     {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: 法定节假日闹钟·工作日智能闹钟",
+      "summary": "明早到底响不响？放假前关闹钟、节后再打开的麻烦，交给 EasyAM：法定节假日和你的休假不响，调休补班日照常叫醒，接下来七天哪天响、几点响，首页一眼看清。",
+      "category": "utility",
+      "search_terms": [
+        "倒班",
+        "轮班",
+        "排班",
+        "大小周",
+        "单双周",
+        "值班",
+        "夜班",
+        "加班",
+        "上班",
+        "打工人",
+        "假期",
+        "休假",
+        "年假",
+        "长假",
+        "轮休",
+        "周末",
+        "双休",
+        "闹铃",
+        "起床",
+        "早八",
+        "学生",
+        "日历",
+        "小组件",
+        "桌面",
+        "时钟",
+        "数字",
+        "翻页",
+        "表盘",
+        "锁屏",
+        "可爱",
+        "主题",
+        "外派"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/cn/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hans/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "CNY",
+        "formatted_price": "免费",
+        "storefront_url": "https://apps.apple.com/cn/app/id6821790092"
+      }
+    },
+    {
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money：日常记账·预算·汇率",
@@ -630,8 +691,7 @@
         "换汇",
         "旅费",
         "外汇",
-        "境外消费",
-        "出国预算"
+        "境外消费"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1328,8 +1388,7 @@
         "四岁",
         "五岁",
         "打卡",
-        "游戏",
-        "家务 表"
+        "游戏"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1897,8 +1956,7 @@
         "快递",
         "电话",
         "短信",
-        "邮件",
-        "二维码 安全检测"
+        "邮件"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

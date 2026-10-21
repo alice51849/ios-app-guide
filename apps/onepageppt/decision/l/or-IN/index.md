@@ -20,6 +20,7 @@ publisher: "Lumi Studio"
 - କୌଣସି ଟ୍ରାକିଂ ନାହିଁ
 - ଗୋପନୀୟ / ଉପକରଣରେ
 - App Store · ମାଗଣା
+- ★ 4.0/5 · 1
 
 [App Store ରୁ OnePage PPT: ଏକ ସ୍ଲାଇଡ୍ ପାଆନ୍ତୁ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 

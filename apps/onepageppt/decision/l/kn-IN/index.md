@@ -20,6 +20,7 @@ publisher: "Lumi Studio"
 - ಹಿಂಡಿಕೆ ಇಲ್ಲ
 - ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
 - App Store · ಉಚಿತ
+- ★ 4.0/5 · 1
 
 [App Store ನಲ್ಲಿ OnePage PPT: ಸ್ಲೈಡ್ ಮೇಕರ್ ಪಡೆಯಿರಿ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 

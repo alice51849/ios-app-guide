@@ -3,7 +3,7 @@
 > Áttekinthető információk minden iOS-alkalmazás funkcióiról, áráról és gyakori kérdéseiről.
 
 locale: hu
-apps: 53
+apps: 54
 - Alkalmazáskatalógus: https://open.cait518.cc/ios-app-guide/hu/tools/private-pay-once-iphone-app-finder.html
 - Alkalmazáskatalógus · PWA: https://open.cait518.cc/ios-app-guide/hu/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hu.jsonld
@@ -28,11 +28,11 @@ apps: 53
 - Alkalmazáskatalógus · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/hu/notesstudio100.html) — Kézírás, PDF-jelölés, tanulás
-  - Írj kézzel vagy gépelve, jelölj PDF-eket, és rögzítsd az előadást ugyanazon az oldalon, offline. Ismételj kártyákkal. Fiók nélkül, a jegyzetek a készüléken maradnak.
+  - Tél és januári vizsgaidőszak: kézzel írt jegyzet, kiemelt PDF-ek, az előadás felvétele ugyanazon az oldalon, ismétlés tanulókártyákkal. Offline, fiók nélkül.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Fájlokból AI-prompt](https://open.cait518.cc/ios-app-guide/hu/aibriefpack.html) — Promptok fájlokból és PDF-ből
-  - Jobb kontextus, jobb MI-válaszok: az AI Brief a készüléken olvassa be a képernyőképeket, PDF-eket és jegyzeteket, jelöli a személyes adatokat, és tiszta briefet készít.
+  - Év végi beszámolók, ünnepi tervek? Adj hozzá képernyőképeket, PDF-eket, jegyzeteket, linkeket: a készülék olvassa be, jelöli a személyes adatokat, átlátható összefoglaló.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
 - [Aim990: angol edző](https://open.cait518.cc/ios-app-guide/hu/aim990.html) — TOEIC-diagnózis 8 perc alatt
@@ -68,11 +68,15 @@ apps: 53
   - Ár: Fizetős letöltés egyetlen előre meghatározott áron, előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Zajszintmérő](https://open.cait518.cc/ios-app-guide/hu/dbhalo.html) — Spektrum, dózis és alvás
-  - Decibel egy pillantással, a teljes spektrum, a napi zajdózis becslése és a horkolás rögzítése az alvásnaplóban. Minden a készüléken, fiók nélkül.
+  - Év végi bulik, hangos szomszédok vagy horkolás a téli éjszakákon? Nézd élőben a dB-t a Halo gyűrűn, becsüld meg a napi zajdózist, és naplózd a horkolást.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Okos ébresztő óra](https://open.cait518.cc/ios-app-guide/hu/easyam.html) — Munkanap igen, ünnepnap nem
+  - A karácsonyi ünnepek és az újév automatikusan kimaradnak. Szabadság a két ünnep között? Vedd fel szabadnapként: az ébresztő hallgat, és az első munkanapon újra szól.
+  - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
+  - App Store: https://apps.apple.com/hu/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Utazási kiadások](https://open.cait518.cc/ios-app-guide/hu/gmoneylite.html) — Napi keret órán és widgeten
-  - Állíts be napi keretet, és lásd a widgeten és az Apple Watchon, mennyi maradt ma. Bármely pénznem, azonnali átváltás, offline is. Fiók nélkül.
+  - Karácsony vagy szilveszter külföldön? Rögzítsd a vásárlást helyi pénznemben, azonnal lásd a sajátodban, állíts napi keretet. Árfolyamok offline is.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Kiadások és büdzsé](https://open.cait518.cc/ios-app-guide/hu/gmoney.html) — Utazási költség és valuta
@@ -80,7 +84,7 @@ apps: 53
   - Ár: Fizetős letöltés egyetlen előre meghatározott áron, előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Ár munkaórában](https://open.cait518.cc/ios-app-guide/hu/hourstaglite.html) — Tudatos vásárlás: valós ár
-  - Vásárlás előtt lásd az árat a saját munkaóráidban, és jelöld szükségletnek, vágynak vagy impulzusnak. Widget és Apple Watch is. Fiók nélkül, adatok csak a telefonon.
+  - Évvégi bevásárlás: vásárlás előtt lásd az árat a saját munkaóráidban, jelöld meg Szükség, Akar vagy Impulzus címkével, és lásd a munkát egy újévi cél mögött.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Órák a vásárláshoz](https://open.cait518.cc/ios-app-guide/hu/hourstag.html) — Órabér és kiadások
@@ -132,7 +136,7 @@ apps: 53
   - Ár: Fizetős letöltés egyetlen előre meghatározott áron, előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
 - [Mask My File: Adatok törlése](https://open.cait518.cc/ios-app-guide/hu/maskmyfile.html) — Kitakarás megosztás előtt
-  - PDF, fotó vagy képernyőkép küldése előtt keresd meg a neveket, számokat, e-maileket, kártyaszámokat és arcokat, takard ki véglegesen, és töröld a metaadatokat.
+  - Útlevélmásolat a téli utazáshoz vagy év végi bérpapírok? Találd meg a személyes adatokat, takard ki véglegesen csak azt, amit választasz, és töröld a metaadatokat.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Legutóbb](https://open.cait518.cc/ios-app-guide/hu/mochidonestamp.html) — Mikor csináltam? Emlékeztetők
@@ -144,11 +148,11 @@ apps: 53
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
 - [MoneyTag](https://open.cait518.cc/ios-app-guide/hu/moneytag.html) — Projektek · Címkék · Jelentés
-  - Azonnal látod, hogy minden projekt nyereséges-e: bevétel mínusz kiadás. Címkézz fel egy ügyfelet vagy költséget egyszer, és összeadódik minden projektben.
+  - Év végi mellékmunka vagy piaci stand? A projekted a bevétel mínusz kiadás egyértelmű nettó eredményét mutatja, a választott pénznemben. Rögzíts az Apple Watchról is.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
 - [OnePage PPT: MI-dia](https://open.cait518.cc/ios-app-guide/hu/onepageppt.html) — Jegyzetből kész prezentáció
-  - Illessz be jegyzetet, PDF-et, képernyőképet vagy táblázatot, és kapsz egy átlátható 16:9-es diát: a lényeg címként, a számok grafikonként. Export pptx, PDF vagy PNG.
+  - Évértékelő karácsony előtt? Illessz be jegyzetet, PDF-et, képernyőképet vagy CSV-t, és kapsz egy átlátható 16:9-es diát: a lényeg címként, a számok grafikonként.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
 - [PhotoCream Pro: Filmszűrők](https://open.cait518.cc/ios-app-guide/hu/photocream.html) — Filmes kamera és retro szűrők
@@ -164,7 +168,7 @@ apps: 53
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: AI könyvjelzők](https://open.cait518.cc/ios-app-guide/hu/savetag.html) — Mentsd a linket, olvasd később
-  - Ments linket bármelyik appból egy koppintással. A SaveTag a készüléken téma szerint rendezi, jelentés alapján megtalálja, és naponta visszahozza az olvasatlanokat.
+  - Ajándékötletek, ünnepi receptek és úti célok elvesznek a chatben? Oszd meg a linket bármelyik appból: magától címkét kap a készüléken, és jelentés alapján is megtalálod.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF és OCR](https://open.cait518.cc/ios-app-guide/hu/scanto.html) — Privát dokumentum szkenner
@@ -176,11 +180,11 @@ apps: 53
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/hu/shotinbox.html) — Képernyőképek rendszerezése
-  - A képernyőképeid maguktól rendeződnek: nyugták, jegyek, utazás és chatek külön, minden szó kereshető. A rendezés a készüléken fut, semmi sem töltődik fel.
+  - Karácsonyi vásárlás és téli utak: nyugták, jegyek és rendelések gyűlnek a képernyőképeken. Maguktól rendeződnek, kereshetsz a szövegben, követed a csomagot.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Igazolványkép](https://open.cait518.cc/ios-app-guide/hu/snapportlite.html) — Portrék pontos méretre vágva
-  - Vágd a portrét pontosan a kívánt fotóméretre, válts letisztult háttérre, és nézd meg a nyomtatási ívet. Válassz méretsablont, majd exportálj JPEG, PNG vagy PDF fájlba.
+  - Ünnepi utazás vagy útlevélcsere? Vágd pontos méretre a fotót kész sablonokkal, arcvezető vonalakkal és fehér vagy kék háttérrel, közvetlenül a készülékeden.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
 - [Snapport: Útlevélfotó](https://open.cait518.cc/ios-app-guide/hu/snapport.html) — 35x45 és nyomtatási ív
@@ -192,11 +196,11 @@ apps: 53
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: Asztali Óra](https://open.cait518.cc/ios-app-guide/hu/stayclock.html) — Idő és naptár, mindig látható
-  - Szép asztali óra, amely mindig világít, és a szoba túlsó végéből is olvasható. Lapozós, LED és mutatós számlapok, valódi naptár, ébresztők és kíméletes éjszakai mód.
+  - Hosszú esték karácsonyig: töltés közben a telefon nagy, a szoba túlsó végéből is olvasható órává válik, havi naptárral, óránkénti hanggal és egyszerű ébresztővel.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Időmérés](https://open.cait518.cc/ios-app-guide/hu/studydown.html) — Fordítsd képernyővel lefelé
-  - Fordítsd le a telefont, és mérd a valódi fókuszt. Lásd a felemeléseket, egybefüggő időt és a határidők napi tempóját. Privát.
+  - Vizsgák és év végi határidők? Válassz tevékenységet, tedd a telefont kijelzővel lefelé, és megy az idő; ha felveszed, megáll. Mai nap és a hét tevékenységenként.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Trip Planet gyerekeknek](https://open.cait518.cc/ios-app-guide/hu/tripplanet.html) — Családi küldetés útközben
@@ -204,7 +208,7 @@ apps: 53
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Útiterv](https://open.cait518.cc/ios-app-guide/hu/tripbeelite.html) — Nyaralás napról napra
-  - Következő utad napról napra: időpontok, helyek, emlékeztetők, jegyek és helyi időjárás egy idővonalon. A következő programot az Apple Watch is mutatja. Fiók nélkül.
+  - Haza karácsonyra vagy el szilveszterre? Tedd az utat egy napokra bontott idővonalra: járatok, szállás, jegyzetek, emlékeztetők és jegyadatok egy helyen. Fiók nélkül.
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Utazástervező](https://open.cait518.cc/ios-app-guide/hu/tripbee.html) — Csoportos út és pakolólista
@@ -224,7 +228,7 @@ apps: 53
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid: Hálózati hibák](https://open.cait518.cc/ios-app-guide/hu/wifiaid.html) — Router, mesh, DNS diagnosztika
-  - Derítsd ki, hogy a DNS, a szolgáltató vagy egy Wi-Fi bejelentkező oldal a hibás, lásd a mesh csomópontodat, és küldj PDF jelentést a supportnak. Widget és óra.
+  - Ünnepek alatt az egész család ugyanazon a Wi-Fin? Ha akad, egy koppintással ellenőrizd a Wi-Fit, a DNS-t és az internetet, és nézd meg a legvalószínűbb okot.
   - Ár: Fizetős letöltés egyetlen előre meghatározott áron, előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate Lite: szótanulás](https://open.cait518.cc/ios-app-guide/hu/wordmatelite.html) — Napi öt szó egyetlen percben
@@ -232,10 +236,10 @@ apps: 53
   - Ár: Töltse le ingyen. Egyetlen vásárlással feloldhat minden funkciót—előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Szókincsfejlesztés](https://open.cait518.cc/ios-app-guide/hu/wordmate.html) — Szótanulás, szókártyák, widget
-  - Tanulj szavakat 44 nyelven természetes példamondatokkal, 14 témában, 3 szinten. Gyakorolj a widgetről vagy az Apple Watch-ról. Offline is működik, fiók nélkül.
+  - Téli utazás vagy újévi fogadalom? Tanulj szavakat 44 nyelven a szabad percekben: 14 gyakorlati téma, példamondatok és meghallgatható kiejtés. Folytasd a widgetből.
   - Ár: Fizetős letöltés egyetlen előre meghatározott áron, előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: RAR, ZIP, 7z kibontó](https://open.cait518.cc/ios-app-guide/hu/zipbox.html) — Kicsomagolás reklám nélkül
-  - Nyiss meg ZIP, RAR, 7z, TAR, ISO és más fájlokat, akár jelszavas vagy darabolt archívumot is. Minden a készüléken dolgozódik fel, reklám nélkül.
+  - Karácsonyi képek jelszavas 7z-ben vagy darabolt ZIP-ben? Nézz bele, nézd meg előnézetben a képeket és a PDF-eket, és csak azt bontsd ki, ami kell. Reklám nélkül.
   - Ár: Fizetős letöltés egyetlen előre meghatározott áron, előfizetés nélkül.
   - App Store: https://apps.apple.com/hu/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

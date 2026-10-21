@@ -3,7 +3,7 @@
 > Prehľadné informácie o každej aplikácii pre iOS — funkcie, cena a časté otázky.
 
 locale: sk
-apps: 53
+apps: 54
 - Katalóg aplikácií: https://open.cait518.cc/ios-app-guide/sk/tools/private-pay-once-iphone-app-finder.html
 - Katalóg aplikácií · PWA: https://open.cait518.cc/ios-app-guide/sk/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sk.jsonld
@@ -28,11 +28,11 @@ apps: 53
 - Katalóg aplikácií · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/sk/notesstudio100.html) — Ručné poznámky a PDF
-  - Píšte rukou aj na klávesnici, komentujte PDF a nahrajte prednášku na stránku, všetko offline. Opakujte s kartičkami. Bez účtu, poznámky zostávajú v zariadení.
+  - Zima a skúškové v januári: poznámky rukou, zvýraznené PDF z prednášok, nahrávka priamo na stránke a opakovanie s kartičkami. Všetko offline, bez účtu.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Súbory na AI prompt](https://open.cait518.cc/ios-app-guide/sk/aibriefpack.html) — Prompty zo súborov a PDF
-  - Lepší kontext, lepšie odpovede AI: AI Brief číta snímky obrazovky, PDF a poznámky v zariadení, označí osobné údaje a vytvorí čistý brief pre akýkoľvek AI chat.
+  - Výročné reporty a plány na Vianoce? Pridajte snímky obrazovky, PDF, poznámky a odkazy: čítajú sa v zariadení, osobné údaje sa označia, vznikne jasný podklad pre AI.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
 - [Aim990: tréner angličtiny](https://open.cait518.cc/ios-app-guide/sk/aim990.html) — Diagnóza TOEIC za 8 minút
@@ -68,11 +68,15 @@ apps: 53
   - Cena: Platené stiahnutie za jednu cenu vopred, bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Hlukomer](https://open.cait518.cc/ios-app-guide/sk/dbhalo.html) — Dávka a bezpečný čas
-  - Decibely na prvý pohľad, celé spektrum, odhad dennej dávky hluku a chrápanie v spánkovom denníku. Všetko priamo v zariadení, bez účtu.
+  - Zimné večierky, hluční susedia či chrápanie v zimných nociach? Sledujte dB naživo na prstenci Halo, odhadnite dennú dávku hluku a zaznamenajte chrápanie.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Budík na pracovné dni](https://open.cait518.cc/ios-app-guide/sk/easyam.html) — Sám preskočí sviatky aj voľno
+  - Vianočné sviatky a Nový rok sa preskočia samé. Voľno medzi sviatkami? Pridajte ho ako dovolenku: budík mlčí a znova zazvoní v prvý pracovný deň.
+  - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
+  - App Store: https://apps.apple.com/sk/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Výdavky na cesty](https://open.cait518.cc/ios-app-guide/sk/gmoneylite.html) — Denný rozpočet na hodinkách
-  - Nastav si denný rozpočet a sleduj na widgete aj Apple Watch, koľko ti dnes zostáva. Akákoľvek mena, okamžitý prepočet, aj offline. Bez účtu.
+  - Vianoce či Silvester v zahraničí? Zapíšte nákupy v miestnej mene a hneď ich uvidíte vo svojej, nastavte denný limit. Kurzy fungujú aj offline.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Výdavky a rozpočet](https://open.cait518.cc/ios-app-guide/sk/gmoney.html) — Výdavky na cesty a meny
@@ -80,7 +84,7 @@ apps: 53
   - Cena: Platené stiahnutie za jednu cenu vopred, bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Cena v hodinách](https://open.cait518.cc/ios-app-guide/sk/hourstaglite.html) — Vedomý nákup: skutočná cena
-  - Pred nákupom uvidíte cenu v hodinách vlastnej práce a označíte ju ako potrebu, túžbu alebo impulz. S widgetom a Apple Watch. Bez účtu, dáta zostávajú v zariadení.
+  - Nákupy na konci roka: pred nákupom uvidíte cenu v hodinách vlastnej práce, označíte ju ako potrebujem, chcem alebo impulzívne a uvidíte prácu za cieľom na nový rok.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Hodiny na nákup](https://open.cait518.cc/ios-app-guide/sk/hourstag.html) — Hodinová mzda a výdavky
@@ -132,7 +136,7 @@ apps: 53
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
 - [Mask My File: Odstráňte údaje](https://open.cait518.cc/ios-app-guide/sk/maskmyfile.html) — Skryte údaje pred zdieľaním
-  - Pred odoslaním PDF, fotky či snímky nájdite mená, čísla, e-maily, čísla kariet a tváre, natrvalo ich začiernite a odstráňte metadáta. V zariadení, bez účtu.
+  - Kópia pasu na zimnú cestu alebo výplatné pásky ku koncu roka? Nájdite súkromné údaje, natrvalo začiernite len to, čo zvolíte, a odstráňte metadáta. Všetko v zariadení.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: Naposledy](https://open.cait518.cc/ios-app-guide/sk/mochidonestamp.html) — Kedy to bolo? Pripomienky
@@ -144,11 +148,11 @@ apps: 53
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
 - [MoneyTag: Príjmy a výdavky](https://open.cait518.cc/ios-app-guide/sk/moneytag.html) — Projekty · Štítky · Prehľad
-  - Hneď uvidíte, či je každý projekt v zisku: príjmy mínus výdavky. Označte klienta alebo náklad raz štítkom a súčet sa zráta naprieč projektmi. Bez účtu.
+  - Brigáda alebo stánok do konca roka? Váš projekt ukazuje príjmy mínus výdavky ako jasný čistý výsledok v mene, ktorú si zvolíte. Zápisy z Apple Watch.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
 - [OnePage PPT: AI snímka](https://open.cait518.cc/ios-app-guide/sk/onepageppt.html) — Poznámky na hotovú prezentáciu
-  - Vložte poznámky, PDF, snímku obrazovky alebo tabuľku a získajte prehľadnú snímku 16:9: hlavné body ako nadpisy, čísla ako skutočné grafy. Export do pptx, PDF aj PNG.
+  - Ročné zhrnutie pred Vianocami? Vložte poznámky, PDF, snímku obrazovky alebo CSV a získajte prehľadnú snímku 16:9: hlavné body ako nadpisy, čísla ako grafy. Export do PNG.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
 - [PhotoCream Pro: Filmové filtre](https://open.cait518.cc/ios-app-guide/sk/photocream.html) — Analógový fotoaparát a filtre
@@ -164,7 +168,7 @@ apps: 53
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: záložky s AI](https://open.cait518.cc/ios-app-guide/sk/savetag.html) — Uložiť odkazy, čítať neskôr
-  - Uložte odkaz z akejkoľvek aplikácie jedným ťuknutím. SaveTag ho roztriedi podľa tém v zariadení, nájde podľa významu a denne pripomenie neprečítané. Bez účtu a cloudu.
+  - Tipy na darčeky, vianočné recepty a výlety stratené v chatoch? Zdieľajte odkaz z akejkoľvek aplikácie, štítky sa pridajú samy v zariadení a nájdete ho podľa významu.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF a OCR](https://open.cait518.cc/ios-app-guide/sk/scanto.html) — Súkromný skener dokumentov
@@ -176,11 +180,11 @@ apps: 53
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/sk/shotinbox.html) — Organizér snímok obrazovky
-  - Snímky obrazovky sa roztriedia samy: bločky, lístky, cestovanie aj chaty zvlášť a každé slovo sa dá vyhľadať. Triedi sa priamo v zariadení, nič sa nenahráva.
+  - Vianočné nákupy a zimné cesty nechávajú bločky, lístky a objednávky na snímkach. Roztriedia sa samy, hľadáte v texte, sledujete balíky a zvyšok upracete.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Foto na doklady](https://open.cait518.cc/ios-app-guide/sk/snapportlite.html) — Portréty v presnom rozmere
-  - Orežte portrét presne na veľkosť fotky, zmeňte pozadie na jednofarebné a pozrite si tlačový hárok. Vyberte šablónu veľkosti a exportujte do JPEG, PNG alebo PDF.
+  - Vianočná cesta alebo nový pas? Orežte fotku presne na veľkosť podľa predvolieb, s vodiacimi čiarami pre tvár a bielym či modrým pozadím. Všetko priamo vo vašom zariadení.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
 - [Snapport: Pasové Fotky](https://open.cait518.cc/ios-app-guide/sk/snapport.html) — 35x45 a hárok na tlač
@@ -192,11 +196,11 @@ apps: 53
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: sklápacie hodiny](https://open.cait518.cc/ios-app-guide/sk/stayclock.html) — Nepretržitý čas a kalendár
-  - Krásne stolové hodiny, ktoré stále svietia a prečítate ich aj z druhého konca izby. Sklápacie, LED aj ručičkové ciferníky, skutočný kalendár, budíky a jemný nočný režim.
+  - Dlhé večery až do Vianoc: telefón sa pri nabíjaní zmení na veľké hodiny čitateľné z druhého konca izby, s kalendárom Mesiac, hodinovým odbíjaním a jednoduchým budíkom.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Meranie času](https://open.cait518.cc/ios-app-guide/sk/studydown.html) — Polož ho displejom nadol
-  - Otočte telefón a zaznamenajte skutočné sústredenie. Sledujte zdvihnutia, súvislé úseky a denné tempo každého termínu. Súkromné.
+  - Skúškové a termíny na konci roka? Vyberte činnosť, položte telefón displejom nadol a čas beží; keď ho zdvihnete, pozastaví sa. Uvidíte dnešok a týždeň podľa činností.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Trip Planet pre deti](https://open.cait518.cc/ios-app-guide/sk/tripplanet.html) — Rodinné misie na cestách
@@ -204,7 +208,7 @@ apps: 53
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Plán cesty](https://open.cait518.cc/ios-app-guide/sk/tripbeelite.html) — Itinerár dovolenky deň po dni
-  - Vaša ďalšia cesta deň po dni: časy, miesta, pripomienky, lístky a miestne počasie na jednej časovej osi. Čo je na rade, uvidíte na Apple Watch. Bez účtu.
+  - Domov na Vianoce alebo preč na Silvestra? Dajte cestu na jednu dennú časovú os: lety, ubytovanie, poznámky, pripomienky aj údaje o lístkoch pokope. Bez účtu, bez reklám.
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Plánovač ciest](https://open.cait518.cc/ios-app-guide/sk/tripbee.html) — Výlet s partiou a zoznam vecí
@@ -224,7 +228,7 @@ apps: 53
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid: Nájdite chyby siete](https://open.cait518.cc/ios-app-guide/sk/wifiaid.html) — Router, mesh, DNS: diagnostika
-  - Zistite, či zlyháva DNS, poskytovateľ alebo prihlasovacia stránka Wi-Fi, pozrite si svoj uzol mesh a exportujte PDF správu pre podporu. Widget aj hodinky.
+  - Vianoce a celá rodina na jednej Wi-Fi? Keď to seká, jedným ťuknutím overte Wi-Fi, DNS aj internet a zistite najpravdepodobnejšiu príčinu, alebo overte jednu stránku.
   - Cena: Platené stiahnutie za jednu cenu vopred, bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate Lite: slovíčka denne](https://open.cait518.cc/ios-app-guide/sk/wordmatelite.html) — Jedna minúta, päť nových slov
@@ -232,10 +236,10 @@ apps: 53
   - Cena: Bezplatné stiahnutie; všetky funkcie odomknete jednorazovým nákupom. Bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: Učte sa slovíčka](https://open.cait518.cc/ios-app-guide/sk/wordmate.html) — Kartičky, widget a hodinky
-  - Učte sa slovíčka v 44 jazykoch s prirodzenými vzorovými vetami, 14 témami a 3 úrovňami. Opakujte z widgetu alebo Apple Watch. Funguje offline, bez účtu.
+  - Cesta na Vianoce alebo novoročné predsavzatie? Učte sa slovíčka zo 44 jazykov vo voľných chvíľach: 14 praktických tém, vzorové vety a výslovnosť na vypočutie.
   - Cena: Platené stiahnutie za jednu cenu vopred, bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: otvoriť RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/sk/zipbox.html) — Rozbaľte bez reklám
-  - Otvorte ZIP, RAR, 7z, TAR, ISO a ďalšie, aj archívy s heslom alebo rozdelené na časti. Všetko sa spracuje priamo v zariadení, bez reklám.
+  - Vianočné fotky v 7z s heslom alebo ZIP rozdelený na časti? Pozrite sa dovnútra, prezrite si fotky a PDF a rozbaľte len to, čo potrebujete. Bez reklám.
   - Cena: Platené stiahnutie za jednu cenu vopred, bez predplatného.
   - App Store: https://apps.apple.com/sk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

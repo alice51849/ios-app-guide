@@ -20,6 +20,7 @@ publisher: "Lumi Studio"
 - ਕੋਈ ਟ੍ਰੈਕਿੰਗ ਨਹੀਂ
 - ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
 - App Store · ਮੁਫ਼ਤ
+- ★ 4.0/5 · 1
 
 [App Store ਤੋਂ OnePage PPT: ਸਲਾਈਡ ਮੇਕਰ ਪ੍ਰਾਪਤ ਕਰੋ](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 

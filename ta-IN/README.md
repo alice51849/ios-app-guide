@@ -4,7 +4,7 @@
 
 ஒவ்வொரு செயலியும் யாருக்காக வடிவமைக்கப்பட்டுள்ளதோ, அவர்கள் நிறைவேற்ற முயற்சிக்கும் பணியோ, நேரடி App Store பாதையோ ஆகியவற்றின் முதல்-பார்ட்டி அட்டவணை.
 
-53 உறுதிப்படுத்தப்பட்ட நேரடி iOS செயலிகள் மற்றும் 50 Apple உள்ளூர் மொழிகளில் வெளியீட்டாளர் எழுதிய தேடல் நோக்கங்கள்.
+54 உறுதிப்படுத்தப்பட்ட நேரடி iOS செயலிகள் மற்றும் 50 Apple உள்ளூர் மொழிகளில் வெளியீட்டாளர் எழுதிய தேடல் நோக்கங்கள்.
 
 **உள்ளூர் மொழி:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · **ta-IN** · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · [zh-Hant](../zh-Hant/)
 
@@ -100,6 +100,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **DailyMate** | ஆப்பிள் வாட்சுடன் பயணிகளுக்கான சிறந்த நடைமுறை மொழி வாக்கிய பயன்பாடு | ஒரு பயணத்திற்கு முன், தனித்த சொற்களை அழுத்தத்தில் சேர்க்க வேண்டியதைவிட நிஜ சூழல்களுக்கு முழுமையான வாக்கியங்கள் அதிக பயனுள்ளதாக இருக்கும். DailyMate தொடங்கியதே இந்தச் சிக்கலில் இருந்துதான். | பணம் செலுத்தி பதிவிறக்கவும் | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html) | [App Store இல் இருந்து டெய்லிமேட்டை பெறுக →](https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8) |
 | **DailyMate Lite** | DailyMate Lite — வெளிநாட்டுப் பயண உரையாடல் \| iOS App | தேவையான தருணத்தில் சரியான வார்த்தைகளைப் பேசுங்கள். DailyMate Lite அன்றாடச் சூழல்களை 50 மொழிகளில் சிறிய உரையாடல் தொடக்கம்–பதில் பயிற்சியாக மாற்றுகிறது. எந்த | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/dailymatelite.html) | [App Store-இல் DailyMate Lite-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
 | **dB Halo: ஒலி அளவுமானி** | dB Halo: ஒலி அளவுமானி — நிறமாலை & இரைச்சல் அளவு \| iOS App | சுற்றியுள்ள ஒலி எவ்வளவு சத்தமாக உள்ளது, அந்தச் சூழலில் எவ்வளவு நேரம் இருப்பது பாதுகாப்பானது என்பதை உடனே புரிந்துகொள்ளுங்கள். dB Halo உங்கள் iPhone-ஐ | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/dbhalo.html) | [App Store-இல் dB Halo: ஒலி அளவுமானி-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
+| **EasyAM: விடுமுறை அலாரம்** | EasyAM: விடுமுறை அலாரம் — லீவு நாளில் ஒலிக்காத கடிகாரம் \| iOS App | நாளை காலை அலாரம் ஒலிக்குமா, ஒலிக்க வேண்டுமா? இனி அந்தக் கவலையே வேண்டாம். நீங்கள் தேர்ந்தெடுத்த நாடு அல்லது பகுதியின் பொது விடுமுறைகளையும் உங்கள் லீவு | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/easyam.html) | [App Store-இல் EasyAM: விடுமுறை அலாரம்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | சந்தா இல்லாத சிறந்த பயண பட்ஜெட் கண்காணிப்பாளர் செயலி iPhone க்கான | ஒரு பயணத்தில், தரவு இல்லாத நாட்டில் ஆஃப்லைனில் வேலை செய்யும், பல நாணயங்களை கையாளும், கணக்கு கேட்காத பட்ஜெட் கண்காணிப்பாளர் தேவை — பயண வாரியாக ஒழுங்குபடுத்தப்பட்டு ஒவ்வொரு விடுமுறையும் தனித்தனியாக இருக்கும். இந்த இடைவெளியைத்தான் G+Money நிரப்ப முயல்கிறது. | பணம் செலுத்தி பதிவிறக்கவும் | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [App Store இல் G+Money ஐ பெறவும் →](https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite: பயணச் செலவு** | G+Money Lite: பயணச் செலவு — தினசரி பட்ஜெட், வாட்ச்சில் \| iOS App | G+Money Lite — சிறந்த பயண நாணய மற்றும் செலவுகளை கண்காணிப்பான் | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/gmoneylite.html) | [App Store-இல் G+Money Lite: பயணச் செலவு-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **HoursTag Lite: விலை மணிநேரமாக** | HoursTag Lite: விலை மணிநேரமாக — விழிப்பு வாங்கல்: உண்மை விலை \| iOS App | HoursTag Lite - விஷயங்களின் உண்மையான விலையைப் பாருங்கள் | இலவசமாக தொடங்கவும் · ஒரே கொள்முதலில் திறப்பு | [வழிகாட்டி](https://open.cait518.cc/ios-app-guide/ta-IN/hourstaglite.html) | [App Store-இல் HoursTag Lite: விலை மணிநேரமாக-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8) |
@@ -145,7 +146,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## முழு தரவுத்தொகுப்பை பதிவிறக்கவும்
 
-JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 2,650 பதிவுகளை கொண்டுள்ளன.
+JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 2,700 பதிவுகளை கொண்டுள்ளன.
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 
@@ -153,6 +154,6 @@ JSON, JSONL மற்றும் CSV ஆகியவை ஒரே 2,650 பத�
 
 [முகப்பு](https://open.cait518.cc/ios-app-guide/ta-IN/index.html) · [திறந்த தரவு](https://open.cait518.cc/ios-app-guide/ta-IN/data/lumi-studio-publisher-search-intent-catalog.html) · [அனுமதி](https://creativecommons.org/licenses/by/4.0/)
 
-புதுப்பிக்கப்பட்டது: 2026-10-18
+புதுப்பிக்கப்பட்டது: 2026-10-20
 
 CC BY 4.0 அசல் அட்டவணை தொகுப்பிற்கு பொருந்தும்; செயலி பெயர்கள் மற்றும் App Store குறியீடுகள் உரிமையாளர்களுக்கு சொந்தமானவை.

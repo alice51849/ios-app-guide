@@ -20,6 +20,7 @@ publisher: "Lumi Studio"
 - பின்தொடர்வு இல்லை
 - தனியுரிமை / சாதனத்தில்
 - App Store · இலவசம்
+- ★ 4.0/5 · 1
 
 [App Store-இல் OnePage PPT: ஸ்லைடு மேக்கர்-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 

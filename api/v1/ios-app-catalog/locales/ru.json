@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-20",
-  "content_digest": "1c5079d365ad75e3ba100a33fbd8d3a22a43852646c11f8acc83620097b11a8c",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
   "locale": "ru",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 53,
+  "record_count": 54,
   "apps": [
     {
       "key": "notesstudio100",
@@ -65,9 +65,7 @@
         "OCR",
         "контекст",
         "чат",
-        "документы",
-        "краткое содержание pdf",
-        "промпт ии"
+        "документы"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -108,8 +106,7 @@
         "баллы",
         "тест",
         "слова",
-        "подготовка",
-        "toeic аудирование"
+        "подготовка"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -269,8 +266,7 @@
         "собеседование",
         "студент",
         "docx",
-        "пример",
-        "ats резюме"
+        "пример"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -456,6 +452,46 @@
       }
     },
     {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: Умный будильник и часы",
+      "summary": "Зазвонит ли завтра будильник? С EasyAM об этом больше не нужно думать: он сам решает, день за днём. В рабочие дни будит, в праздники и в отпуске молчит, а открыв приложение, вы сразу видите ближайшие семь дней: когда и во сколько он зазвонит.",
+      "category": "utility",
+      "search_terms": [
+        "производственный",
+        "календарь",
+        "график",
+        "смен",
+        "сменный",
+        "отпуск",
+        "выходные",
+        "виджет",
+        "цифровые",
+        "перекидные",
+        "аналоговые"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/ru/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ru/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "RUB",
+        "formatted_price": "Бесплатно",
+        "storefront_url": "https://apps.apple.com/ru/app/id6821790092"
+      }
+    },
+    {
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money: Расходы и бюджет",
@@ -475,9 +511,7 @@
         "поездки",
         "траты",
         "за",
-        "день",
-        "расходы в путешествии",
-        "деньги в путешествии"
+        "день"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -516,8 +550,7 @@
         "валюта",
         "путешествия",
         "кошелек",
-        "смартчасы",
-        "расходы в путешествии"
+        "смартчасы"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -556,8 +589,7 @@
         "транжира",
         "привычки",
         "сожаление",
-        "минимализм",
-        "импульсивные покупки"
+        "минимализм"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -843,8 +875,7 @@
         "прописи",
         "чтение",
         "задания",
-        "слова",
-        "фонетика для детей"
+        "слова"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1048,8 +1079,7 @@
         "что",
         "одеть",
         "погоде",
-        "воздуха",
-        "что надеть погода"
+        "воздуха"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1210,8 +1240,7 @@
         "выручка",
         "клиенты",
         "аренда",
-        "заказы",
-        "подработка доход"
+        "заказы"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1412,9 +1441,7 @@
         "подборка",
         "теги",
         "рецепты",
-        "желаний",
-        "сохранить статьи",
-        "читать позже"
+        "желаний"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1735,8 +1762,7 @@
         "егэ",
         "часы",
         "секундомер",
-        "прогресс",
-        "учет времени учебы"
+        "прогресс"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

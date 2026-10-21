@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-20",
-  "content_digest": "1c5079d365ad75e3ba100a33fbd8d3a22a43852646c11f8acc83620097b11a8c",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
   "locale": "fr-FR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 53,
+  "record_count": 54,
   "apps": [
     {
       "key": "notesstudio100",
@@ -108,8 +108,7 @@
         "test",
         "écoute",
         "niveau",
-        "préparation",
-        "toeic écoute"
+        "préparation"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -454,6 +453,48 @@
       }
     },
     {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: Réveil et jours fériés",
+      "summary": "Fini de couper votre réveil avant chaque jour férié et d'oublier de le remettre : EasyAM décide chaque jour s'il doit sonner. Jour de travail ? Il sonne. Férié ou congé ? Il reste muet.",
+      "category": "utility",
+      "search_terms": [
+        "travail",
+        "posté",
+        "congés",
+        "calendrier",
+        "vacances",
+        "RTT",
+        "planning",
+        "horloge",
+        "widget",
+        "flip",
+        "analogique",
+        "numérique",
+        "3x8"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fr-FR/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratuit",
+        "storefront_url": "https://apps.apple.com/fr/app/id6821790092"
+      }
+    },
+    {
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money: Dépenses et budget",
@@ -631,8 +672,7 @@
         "néon",
         "vitrine",
         "texte",
-        "panneau",
-        "pancarte concert"
+        "panneau"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -752,10 +792,7 @@
         "maternelle",
         "CP",
         "quiz",
-        "bilingue",
-        "zhuyin",
-        "bopomofo",
-        "mandarin enfants"
+        "bilingue"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1200,8 +1237,7 @@
         "trésorerie",
         "association",
         "cagnotte",
-        "location",
-        "dépenses projet"
+        "location"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1691,8 +1727,7 @@
         "polices",
         "écran verrouillé",
         "format 24h",
-        "réveil",
-        "horloge flip"
+        "réveil"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

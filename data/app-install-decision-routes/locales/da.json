@@ -3,14 +3,14 @@
   "name": "Lumi Studio App Install Decision Routes",
   "locale": "da",
   "dateModified": "2026-10-20",
-  "content_digest": "610ac599cdac3a6eb200ce4863ada524c3898d54316b5333ddd76624dd098649",
-  "generation_digest": "33e84ca012dc36f9d2f42e5bf73f5a868c680e0794de9da021b07f962363bd1e",
+  "content_digest": "1b6a17c21d9f179a9860477b1687bb944f8ee30ca4132c0ce0987288f3041fba",
+  "generation_digest": "64515fcc1834987bd856e82e47fed33fd87a687dccd27bd7788abac5b978109e",
   "priority_app_keys": [
     "maskmyfile",
     "wifiaid",
     "mochidonestamp"
   ],
-  "record_count": 53,
+  "record_count": 54,
   "syndication": {
     "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/da.atom.xml",
     "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/da.rss.xml",
@@ -812,6 +812,73 @@
       "guide_cta_label": "Læs hele vejledningen",
       "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
       "source_persona_query": "sound meter app for iphone with frequency spectrum and noise dose",
+      "source_surface": "app_guide_page",
+      "query_origin": "publisher_authored_editorially_localized",
+      "measured_search_volume": false,
+      "is_ranking": false,
+      "verified_live": true
+    },
+    {
+      "record_id": "da:easyam",
+      "locale": "da",
+      "app_key": "easyam",
+      "app_name": "EasyAM: Vækkeur med helligdage",
+      "priority_rank": null,
+      "priority_group": "baseline_coverage",
+      "publisher_query": "EasyAM: Vækkeur med helligdage — Alarm kun når du skal arbejde | iOS App",
+      "decision_context": "Skal vækkeuret ringe i morgen eller ej? EasyAM afgør det for dig, dag for dag: det ringer på arbejdsdage og er stille på helligdage og dine fridage. Så snart du åbner appen, ser du de næste 7 dage, på iPad hele 14: hvilke dage det ringer, og hvornår. Du slipper at slå alarmen fra før en forlænget weekend og huske at slå den til igen. Nationale og regionale helligdage springes automatisk over. Fridage eller en hel ferie lægger du ind med egen etiket og eget ikon. Skal du op tidligere eller senere en enkelt dag? Tryk på dagen, og giv kun den et andet tidspunkt. Vil du sove længe en morgen? Fra dagen før trykker du på »Sove længe«: kun næste alarm springes over, og din plan er uændret. EasyAM viser først, at dine alarmer er klar, når iOS har bekræftet planen. Sådan bruger du EasyAM På kontoret, i auditoriet eller foran klassen: vækkeuret følger din arbejdsuge og er stille på helligdage som Kristi himmelfartsdag og 2. pinsedag. Arbejder du på skiftehold eller hver anden uge, indstiller du mønstret én gang med købet i appen. Bor eller arbejder du i et andet land? Vælg et andet land eller en anden region i appen. Funktioner Én alarm på valgte ugedage eller én gang, med etiket og snooze fra 1 til 60 minutter. Helligdage for 67 lande og regioner (2026 til og med 2028), for 15 lande også efter delstat eller provins, indbygget og offline. Nyere filer kan hentes. Ekstra arbejdsdage, der erstatter fridage, for eksempel i Taiwan, regnes som arbejdsdage, ligesom dage med ukendte eller forældede helligdagsoplysninger. Fridage og ekstra arbejdsdage med etiket og ikon, for eksempel rejse, strand, overarbejde eller nattevagt. En hel periode ændrer eller sletter du på én gang. En separat alarm til en periode, hvor du har fri, og et andet vækketidspunkt for flere dage i træk. Op til 12 egne kategorier med navn, farve og et af 59 ikoner. Månedskalender med helligdage, ekstra arbejdsdage og dine fridage. Rigtige systemalarmer i iOS med en statusskærm for planen. Når alarmen ringer eller snoozer, vises den som Live-aktivitet og i Dynamic Island. Widgets og urtemaer En widget til hjemmeskærmen i lille, mellem og stor størrelse, på iPad også ekstra stor, viser næste alarm, helligdagsstatus og planstatus. På mellem og stor kan du sove længe i morgen med ét tryk. Til låseskærmen findes runde, rektangulære og inline-widgets, og den lille widget vises også i StandBy. 101 urtemaer i ti samlinger, fra flipure og glødende tal til analoge urskiver og afgangstavler. Ét tema er inkluderet, og alle kan ses live i fuld skærm. Med en analog urskive bliver widgetten på hjemmeskærmen et rundt ur, og temaet farver også dine widgets, Live-aktiviteten og uret på dit Apple Watch. Apple Watch Apple Watch-appen installeres sammen med iPhone-appen og viser næste alarm og de næste 7 dage. Du kan sove længe i morgen direkte fra håndleddet; uret viser først, at det er gjort, når iOS har bekræftet det på din iPhone. Med komplikationer og et kort i Smart stak. Dine alarmer styres fra den parrede iPhone. Til iPhone og iPad, på 50 sprog, der følger enhedens sprog. 12- eller 24-timers visning, lyst eller mørkt. Privatliv og køb Ingen konto, ingen reklamer, ingen analyse og ingen sporing. Dine alarmer og indstillinger bliver på enheden; EasyAM går kun online for at hente helligdagsfiler. Uden køb bruger du én alarm. Ubegrænset antal alarmer (også kopiering), skiftemønstre, mønstre med hver anden uge, en egen helligdagskalender for hver alarm og 100 flere urtemaer låses op med et engangskøb i appen. Support Spørgsmål eller idéer? Skriv til os via supportlinket på denne side.",
+      "category": "utility",
+      "category_label": "Mere",
+      "purchase_model": "free_with_lifetime_unlock",
+      "purchase_label": "Gratis at komme i gang",
+      "one_time_option": true,
+      "privacy_facts": [
+        "no_account",
+        "no_ads",
+        "no_tracking",
+        "private_or_on_device"
+      ],
+      "privacy_labels": [
+        "Ingen konto",
+        "Ingen reklamer",
+        "Ingen sporing",
+        "Privat / på enheden"
+      ],
+      "device_surfaces": [
+        "widget",
+        "apple_watch"
+      ],
+      "device_labels": [
+        "Widget",
+        "Apple Watch"
+      ],
+      "badge_labels": [
+        "Mere",
+        "Gratis at komme i gang",
+        "Ingen konto",
+        "Ingen reklamer",
+        "Ingen sporing",
+        "Privat / på enheden",
+        "Widget",
+        "Apple Watch",
+        "App Store · Gratis"
+      ],
+      "canonical_guide_url": "https://open.cait518.cc/ios-app-guide/da/easyam.html",
+      "decision_page_url": "https://open.cait518.cc/ios-app-guide/apps/easyam/decision/l/da/index.html",
+      "oembed_url": "https://open.cait518.cc/ios-app-guide/oembed/decision/da/easyam.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fapps%2Feasyam%2Fdecision%2Fl%2Fda%2Findex.html&format=json",
+      "locale_index_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/da.json",
+      "app_store_id": "6821790092",
+      "canonical_app_store_url": "https://apps.apple.com/app/id6821790092",
+      "app_store_url": "https://apps.apple.com/dk/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "app_store_cta_label": "Hent EasyAM: Vækkeur med helligdage i App Store",
+      "storefront_facts": {
+        "price": "0",
+        "currency": "DKK",
+        "formatted_price": "Gratis"
+      },
+      "guide_cta_label": "Læs hele vejledningen",
+      "publisher_disclosure": "Dette materiale er udgivet direkte af Lumi Studio, som har udviklet alle de viste apps.",
+      "source_persona_query": "alarm clock app that skips holidays on iphone",
       "source_surface": "app_guide_page",
       "query_origin": "publisher_authored_editorially_localized",
       "measured_search_volume": false,

@@ -3,7 +3,7 @@
 > Her iOS uygulaması için yapılandırılmış bilgi — özellikler, fiyat ve SSS.
 
 locale: tr
-apps: 53
+apps: 54
 - Uygulama dizini: https://open.cait518.cc/ios-app-guide/tr/tools/private-pay-once-iphone-app-finder.html
 - Uygulama dizini · PWA: https://open.cait518.cc/ios-app-guide/tr/tools/private-pay-once-iphone-app-finder.webmanifest
 - Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/tr.jsonld
@@ -28,11 +28,11 @@ apps: 53
 - Uygulama dizini · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
 
 - [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/tr/notesstudio100.html) — Not defteri, el yazısı ve PDF
-  - Elle yazın, klavyeyle yazın, PDF'lere not alın ve dersi aynı sayfaya kaydedin, hepsi çevrimdışı. Kartlarla tekrar edin. Hesap yok, notlar cihazında kalır.
+  - Kış dönemi ve final haftası: notları elle yazın, ders PDF'lerini işaretleyin, ders kaydını sayfaya ekleyin, bilgi kartlarıyla tekrar edin. Tamamen çevrimdışı, hesap yok.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
 - [AI Brief: Dosyadan AI istemi](https://open.cait518.cc/ios-app-guide/tr/aibriefpack.html) — Prompt oluşturucu: PDF, dosya
-  - Daha iyi bağlam, daha iyi yapay zekâ yanıtları. Ekran görüntüsü, PDF ve not ekle: AI Brief cihazda okur, kişisel verileri işaretler ve temiz bir brief hazırlar.
+  - Yıl sonu raporları ve yılbaşı planları birikti mi? Ekran görüntüsü, PDF, not ve bağlantı ekle; cihazda okunur, kişisel veriler işaretlenir, yapay zekâya net bir özet.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
 - [Aim990: İngilizce koçu](https://open.cait518.cc/ios-app-guide/tr/aim990.html) — 8 dakikada TOEIC teşhisi
@@ -68,11 +68,15 @@ apps: 53
   - Fiyat: Tek peşin fiyatlı ücretli indirme; abonelik yok.
   - App Store: https://apps.apple.com/tr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
 - [dB Halo: Desibel Ölçer](https://open.cait518.cc/ios-app-guide/tr/dbhalo.html) — Ses seviyesi, tayf ve doz
-  - Desibeli bir bakışta görün, tüm tayfı inceleyin, günlük gürültü dozunu tahmin edin ve horlamayı uyku günlüğünde yakalayın. Hepsi cihazda, hesap gerekmez.
+  - Yılbaşı partileri, gürültücü komşular ya da kış gecelerinde horlama mı? Halo halkasında canlı desibeli gör, günlük gürültü dozunu tahmin et, horlamayı kaydet.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Akıllı Çalar Saat](https://open.cait518.cc/ios-app-guide/tr/easyam.html) — Tatil ve izinde susan alarm
+  - Yılbaşı tatili kendiliğinden atlanır. Yılbaşı için izin mi aldınız? İzin günü olarak ekleyin: alarm susar, ilk iş gününde yeniden çalar. Önümüzdeki 7 gün tek bakışta.
+  - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
+  - App Store: https://apps.apple.com/tr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
 - [G+Money Lite: Gezi harcaması](https://open.cait518.cc/ios-app-guide/tr/gmoneylite.html) — Saat ve widgette günlük bütçe
-  - Günlük bütçe belirle, bugün ne kaldığını widgette ve Apple Watch'ta gör. Her para biriminde kaydet, anında çevrilsin, çevrimdışı da. Hesap gerekmez.
+  - Yılbaşı tatili yurt dışında mı? Alışverişi yerel para biriminde kaydet, anında kendi paran cinsinden gör, günlük limit koy. Canlı ya da elle girilen kurlar çevrimdışı da.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
 - [G+Money: Harcama ve bütçe](https://open.cait518.cc/ios-app-guide/tr/gmoney.html) — Seyahat harcaması ve döviz
@@ -80,7 +84,7 @@ apps: 53
   - Fiyat: Tek peşin fiyatlı ücretli indirme; abonelik yok.
   - App Store: https://apps.apple.com/tr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag Lite: Fiyat kaç saat](https://open.cait518.cc/ios-app-guide/tr/hourstaglite.html) — Satın almadan önce saate çevir
-  - Satın almadan önce fiyatı kendi çalışma saatlerinle gör; ihtiyaç, istek ya da dürtü olarak etiketle. Widget ve Apple Watch dahil. Hesap yok, veriler cihazda.
+  - Yıl sonu alışverişi: satın almadan önce fiyatı kendi çalışma saatlerinle gör, ihtiyaç, istek ya da anlık olarak etiketle ve yeni yıl hedefinin ardındaki emeği gör.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
 - [HoursTag: Alış saatleri](https://open.cait518.cc/ios-app-guide/tr/hourstag.html) — Saatlik ücret ve harcama
@@ -132,7 +136,7 @@ apps: 53
   - Fiyat: Tek peşin fiyatlı ücretli indirme; abonelik yok.
   - App Store: https://apps.apple.com/tr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
 - [Mask My File: Verilerini sil](https://open.cait518.cc/ios-app-guide/tr/maskmyfile.html) — Paylaşmadan önce koru
-  - PDF, fotoğraf ya da ekran görüntüsü göndermeden önce ad, telefon, e-posta, kart numarası ve yüzleri bulun, kalıcı olarak karartın, meta verileri silin. Cihazda, hesapsız.
+  - Yılbaşı tatili için pasaport kopyası ya da yıl sonu maaş bordrosu mu göndereceksiniz? Kişisel bilgileri bulun, yalnızca seçtiğinizi kalıcı karartın, meta verileri silin.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
 - [Mochi DoneStamp: En son](https://open.cait518.cc/ios-app-guide/tr/mochidonestamp.html) — Ne zaman yaptım? Ev işleri
@@ -144,11 +148,11 @@ apps: 53
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
 - [MoneyTag: Gelir ve gider](https://open.cait518.cc/ios-app-guide/tr/moneytag.html) — Projeler · Etiketler · Rapor
-  - Her projenin kâr mı zarar mı ettiğini anında görün: gelir eksi gider. Müşteriyi ya da masrafı bir kez etiketleyin, tüm projelerde toplansın. Hesap gerekmez.
+  - Yıl sonu öncesi ek iş ya da pazar tezgâhı mı? Projeniz geliri eksi gideri tek, net bir sonuç olarak, seçtiğiniz para biriminde gösterir. Apple Watch’tan kayıt ekleyin.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
 - [OnePage PPT: Yapay Zeka Slayt](https://open.cait518.cc/ios-app-guide/tr/onepageppt.html) — Tek sayfalık sunum hazırlama
-  - Notlarınızı, PDF'i, ekran görüntüsünü veya tabloyu yapıştırın: net bir 16:9 slayt hazır, ana fikirler başlık, sayılar gerçek grafik olur. pptx, PDF veya PNG dışa aktarın.
+  - Yıl sonu değerlendirmesi mi var? Notları, PDF'i, ekran görüntüsünü veya CSV'yi yapıştırın: net bir 16:9 slayt, ana fikirler başlık, sayılar grafik olur. PNG paylaşın.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
 - [PhotoCream Pro: Film filtresi](https://open.cait518.cc/ios-app-guide/tr/photocream.html) — Analog kamera ve vintage efekt
@@ -164,7 +168,7 @@ apps: 53
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
 - [SaveTag: yapay zekâlı yer imi](https://open.cait518.cc/ios-app-guide/tr/savetag.html) — Bağlantıları kaydet, sonra oku
-  - Her uygulamadan bir bağlantıyı tek dokunuşla kaydet. SaveTag onu cihazında konuya göre ayırır, anlamına göre bulur, okunmayanları her gün geri getirir. Hesap gerekmez.
+  - Yılbaşı hediye fikirleri, tarifler, gezi planları sohbette mi kayboluyor? Bağlantıyı istediğin uygulamadan paylaş; cihazında kendiliğinden etiketlenir, anlamıyla bulunur.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
 - [ScanTo Pro: PDF ve OCR](https://open.cait518.cc/ios-app-guide/tr/scanto.html) — Çevrimdışı belge tarayıcı
@@ -176,11 +180,11 @@ apps: 53
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
 - [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/tr/shotinbox.html) — Ekran görüntülerini düzenle
-  - Ekran görüntüleri kendi kendine düzenlenir: fişler, biletler, seyahat ve sohbetler ayrı ayrı, her kelime aranabilir. Sıralama cihazda yapılır, hiçbir şey yüklenmez.
+  - Yılbaşı alışverişi ve kış seyahatleri fiş, bilet ve sipariş ekran görüntüsü bırakır. Kendi kendine düzenlenir, yazıyı ararsınız, kargoyu takip eder, kalanı temizlersiniz.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
 - [Snapport Lite: Evde vesikalık](https://open.cait518.cc/ios-app-guide/tr/snapportlite.html) — Portreleri tam ölçüde kırpın
-  - Portreyi tam fotoğraf ölçüsüne kırpın, sade bir arka plana geçin ve baskı sayfasının önizlemesine bakın. Boyut şablonu seçip JPEG, PNG veya PDF olarak dışa aktarın.
+  - Yılbaşı seyahati ya da pasaport yenileme mi? Fotoğrafını hazır şablonlarla tam ölçüye kırp, yüz kılavuzlarıyla hizala, beyaz ya da mavi arka plan seç; hepsi cihazında.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
 - [Snapport: Biyometrik Fotoğraf](https://open.cait518.cc/ios-app-guide/tr/snapport.html) — 35x45 ve baskı sayfası
@@ -192,11 +196,11 @@ apps: 53
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
 - [Stay Clock: Çevirmeli Saat](https://open.cait518.cc/ios-app-guide/tr/stayclock.html) — Her An Açık Saat ve Takvim
-  - Odanın öbür ucundan bile okunan, hep açık, şık bir masa saati. Çevirmeli, LED ve analog kadranlar, gerçek takvim, alarmlar ve yumuşak gece modu. Hepsi cihazında.
+  - Yılbaşına kadar uzun akşamlar: şarj olurken telefonunuz odanın öbür ucundan okunan büyük bir saate dönüşür; Ay takvimi, saat başı sesi ve basit bir alarm da var.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
 - [Studydown: Odak Sayacı](https://open.cait518.cc/ios-app-guide/tr/studydown.html) — Yüzüstü bırak
-  - Telefonu ters çevirip gerçek odağı kaydedin. Kaldırmaları, kesintisiz süreleri ve her son tarihin günlük temposunu görün. Özel.
+  - Kış sınavları ve yıl sonu teslimleri mi? Bir etkinlik seç, telefonu ekranı aşağı bakacak şekilde bırak, süre işlesin; kaldırınca durur. Bugünü ve haftayı gör.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
 - [Trip Planet Çocuk](https://open.cait518.cc/ios-app-guide/tr/tripplanet.html) — Aile yolculuğu görevleri
@@ -204,7 +208,7 @@ apps: 53
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
 - [TripBee Lite: Gezi Planı](https://open.cait518.cc/ios-app-guide/tr/tripbeelite.html) — Tatil programı gün gün
-  - Sonraki gezin gün gün: saatler, yerler, hatırlatmalar, biletler ve hava durumu tek zaman çizelgesinde. Sıradakini Apple Watch'ta görün. Hesap gerekmez.
+  - Yıl sonu tatili mi, kış kaçamağı mı? Yolculuğu gün gün tek bir zaman çizelgesine koy: uçuş ve otel bilgileri, notlar, hatırlatıcılar ve bilet bilgileri bir arada.
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
 - [TripBee: Gezi Planlayıcı](https://open.cait518.cc/ios-app-guide/tr/tripbee.html) — Grupla seyahat, valiz listesi
@@ -224,7 +228,7 @@ apps: 53
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
 - [WiFi Aid: Ağ sorunlarını bul](https://open.cait518.cc/ios-app-guide/tr/wifiaid.html) — Modem, mesh ve DNS teşhisi
-  - Sorunun DNS'te mi, operatörde mi yoksa Wi-Fi giriş sayfasında mı olduğunu bul, bağlı olduğun mesh düğümünü gör ve destek için PDF rapor al. Widget ve saat desteği.
+  - Yılbaşında tüm aile aynı Wi-Fi'da mı? İnternet takılınca tek dokunuşla Wi-Fi, DNS ve interneti kontrol et, en olası nedeni gör ya da sorun tek bir sitede mi öğren.
   - Fiyat: Tek peşin fiyatlı ücretli indirme; abonelik yok.
   - App Store: https://apps.apple.com/tr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate Lite: Kelime Ezberle](https://open.cait518.cc/ios-app-guide/tr/wordmatelite.html) — Günde beş sözcük, bir dakika
@@ -232,10 +236,10 @@ apps: 53
   - Fiyat: Ücretsiz indir, tek seferlik satın alımla her şeyi aç. Abonelik tuzağı yok.
   - App Store: https://apps.apple.com/tr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
 - [Wordmate: 44 dil](https://open.cait518.cc/ios-app-guide/tr/wordmate.html) — Kelime ezberleme ve widget
-  - 44 dilde kelimeleri doğal örnek cümleler, 14 konu ve 3 seviyeyle öğrenin. Doğrudan widget'tan ya da Apple Watch'tan çalışın. Çevrimdışı çalışır, hesap gerekmez.
+  - Yılbaşı tatilinde yurt dışı mı, yeni yıl hedefi mi? Boş anlarında 44 dilde kelime öğren: 14 pratik konu, örnek cümleler ve dinleyebileceğin telaffuz. Widget'ta da.
   - Fiyat: Tek peşin fiyatlı ücretli indirme; abonelik yok.
   - App Store: https://apps.apple.com/tr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
 - [Zipbox: RAR, ZIP, 7z Açma](https://open.cait518.cc/ios-app-guide/tr/zipbox.html) — Reklamsız dosya çıkarma
-  - ZIP, RAR, 7z, TAR, ISO ve dahasını açın, şifreli ve parçalı arşivleri bile. Her şey cihazda işlenir, reklam yok.
+  - Yılbaşı fotoğrafları şifreli 7z ya da parçalı ZIP olarak mı geldi? İçine göz atın, fotoğraf ve PDF'leri önizleyin, yalnızca gerekeni çıkarın. Reklam yok.
   - Fiyat: Tek peşin fiyatlı ücretli indirme; abonelik yok.
   - App Store: https://apps.apple.com/tr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

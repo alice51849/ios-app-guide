@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-20",
-  "content_digest": "1c5079d365ad75e3ba100a33fbd8d3a22a43852646c11f8acc83620097b11a8c",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 53,
+  "record_count": 54,
   "apps": [
     {
       "key": "notesstudio100",
@@ -182,8 +182,7 @@
         "충전 관리",
         "충전 구간",
         "충전 속도",
-        "데이터 내보내기",
-        "배터리"
+        "데이터 내보내기"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -580,6 +579,62 @@
         "currency": "KRW",
         "formatted_price": "무료",
         "storefront_url": "https://apps.apple.com/kr/app/id6806826699"
+      }
+    },
+    {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: 스마트 공휴일 알람 시계",
+      "summary": "내일 아침 알람, 울려야 할까요? EasyAM이 날마다 알아서 정해요. 출근하는 날엔 울리고, 공휴일과 내가 등록한 휴가엔 조용히 쉬어요.",
+      "category": "utility",
+      "search_terms": [
+        "교대근무",
+        "평일",
+        "근무일",
+        "직장인",
+        "모닝콜",
+        "기상",
+        "빨간날",
+        "대체공휴일",
+        "연휴",
+        "명절",
+        "근무표",
+        "달력",
+        "캘린더",
+        "위젯",
+        "플립",
+        "아날로그",
+        "감성",
+        "귀여운",
+        "잠금화면",
+        "테마",
+        "야간근무",
+        "격주",
+        "휴무",
+        "요일",
+        "디지털",
+        "해외",
+        "당직"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/kr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ko/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료",
+        "storefront_url": "https://apps.apple.com/kr/app/id6821790092"
       }
     },
     {
@@ -1140,8 +1195,7 @@
         "5세",
         "연산",
         "숫자",
-        "사칙연산",
-        "수학 놀이"
+        "사칙연산"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1362,8 +1416,7 @@
         "일기예보",
         "눈",
         "옷",
-        "여행",
-        "옷차림 날씨"
+        "여행"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1525,8 +1578,7 @@
         "교체주기",
         "화분",
         "빨래",
-        "기한",
-        "마지막 기록"
+        "기한"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1638,8 +1690,7 @@
         "수업",
         "강의",
         "공부",
-        "프로젝트",
-        "발표 자료"
+        "프로젝트"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2471,8 +2522,7 @@
         "어플",
         "HD",
         "업스케일러",
-        "수정",
-        "흐린 사진 복구"
+        "수정"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2523,10 +2573,7 @@
         "코딩",
         "에이전트",
         "llm",
-        "모니터",
-        "codex 사용량 제한",
-        "claude 사용량",
-        "토큰 사용량"
+        "모니터"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2783,9 +2830,7 @@
         "뷰어",
         "파일관리자",
         "분할압축",
-        "extractor",
-        "7z 압축 풀기",
-        "암호 zip 파일"
+        "extractor"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-20",
-  "content_digest": "1c5079d365ad75e3ba100a33fbd8d3a22a43852646c11f8acc83620097b11a8c",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
   "locale": "vi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 53,
+  "record_count": 54,
   "apps": [
     {
       "key": "notesstudio100",
@@ -355,8 +355,7 @@
         "đối thoại",
         "pháp",
         "đức",
-        "tây ban nha",
-        "câu giao tiếp hàng ngày"
+        "tây ban nha"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -467,6 +466,55 @@
       }
     },
     {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: Báo thức thông minh",
+      "summary": "Tối nào cũng phải tự hỏi sáng mai báo thức có reo không? EasyAM quyết định thay bạn từng ngày: reo vào ngày đi làm, im lặng vào ngày lễ và ngày nghỉ phép của bạn, và cho xem trước 7 ngày tới, ngày nào reo, mấy giờ reo. Không còn phải tắt báo thức trước kỳ nghỉ lễ, Tết rồi lại nhớ bật lên khi đi làm.",
+      "category": "utility",
+      "search_terms": [
+        "đồng hồ",
+        "lịch",
+        "ngày",
+        "việc",
+        "ca",
+        "đêm",
+        "phép",
+        "tết",
+        "bù",
+        "widget",
+        "lật",
+        "kim",
+        "số",
+        "dễ thương",
+        "cute",
+        "dậy",
+        "sớm",
+        "học",
+        "trực",
+        "tuần"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/vn/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/vi/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí",
+        "storefront_url": "https://apps.apple.com/vn/app/id6821790092"
+      }
+    },
+    {
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money: Chi tiêu và ngân sách",
@@ -524,8 +572,7 @@
         "du lịch",
         "đơn giản",
         "nhật ký",
-        "smartwatch",
-        "chi tiêu du lịch"
+        "smartwatch"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -869,8 +916,7 @@
         "luyện nghe",
         "trẻ em",
         "mẫu giáo",
-        "bài tập",
-        "phonics cho bé"
+        "bài tập"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1122,8 +1168,7 @@
         "tài liệu",
         "văn bản",
         "pdf",
-        "quét",
-        "che thông tin"
+        "quét"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1290,8 +1335,7 @@
         "bảng",
         "maker",
         "pptx",
-        "pdf",
-        "tóm tắt một trang"
+        "pdf"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1597,8 +1641,7 @@
         "screenshot",
         "sort",
         "tìm",
-        "kiếm",
-        "sắp xếp ảnh chụp màn hình"
+        "kiếm"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2050,8 +2093,7 @@
         "widget",
         "đồng hồ",
         "ổn định",
-        "cáp quang",
-        "chẩn đoán wifi"
+        "cáp quang"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2213,10 +2255,7 @@
         "tar",
         "gz",
         "iso",
-        "aes",
-        "zip có mật khẩu",
-        "giải nén 7z",
-        "quản lý tệp nén"
+        "aes"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

@@ -20,6 +20,7 @@ publisher: "Lumi Studio"
 - ట్రాకింగ్ లేదు
 - గోప్యంగా / పరికరంలో
 - App Store · ఉచితం
+- ★ 4.0/5 · 1
 
 [App Store నుంచి OnePage PPT: స్లయిడ్ మేకర్ పొందండి](https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8)
 

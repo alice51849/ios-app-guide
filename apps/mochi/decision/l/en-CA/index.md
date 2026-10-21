@@ -19,6 +19,7 @@ If most to-do apps feel bloated, the right one is a clean checklist with reminde
 - No ads
 - Apple Watch
 - App Store · Free
+- ★ 5.0/5 · 1
 
 [Get Mochi on the App Store →](https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
 

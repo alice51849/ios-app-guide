@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-20",
-  "content_digest": "1c5079d365ad75e3ba100a33fbd8d3a22a43852646c11f8acc83620097b11a8c",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
   "locale": "zh-Hant",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 53,
+  "record_count": 54,
   "apps": [
     {
       "key": "notesstudio100",
@@ -96,8 +96,7 @@
         "懶人包",
         "複製貼上",
         "工作效率",
-        "掃描",
-        "提示詞管理"
+        "掃描"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -154,9 +153,7 @@
         "讀書",
         "求職",
         "畢業門檻",
-        "上班族",
-        "多益",
-        "英文檢定"
+        "上班族"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -194,10 +191,7 @@
         "充電保養",
         "充電區間",
         "充電速率",
-        "匯出資料",
-        "電池檢測",
-        "電池",
-        "電池健康度"
+        "匯出資料"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -364,9 +358,7 @@
         "工作經歷",
         "畢業生",
         "打工",
-        "實習",
-        "履歷範本",
-        "履歷製作"
+        "實習"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -419,9 +411,7 @@
         "生理痛",
         "日記",
         "症狀",
-        "心情",
-        "經期 追蹤",
-        "月經 app"
+        "心情"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -612,6 +602,66 @@
       }
     },
     {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: 國定假日、連假不響的智慧鬧鐘",
+      "summary": "明天早上的鬧鐘，到底要不要響？EasyAM 每天幫你判斷：上班日照響，國定假日和你的休假安靜不響，遇到補班日也會照常叫你起床。",
+      "category": "utility",
+      "search_terms": [
+        "假期",
+        "輪班",
+        "排班",
+        "班表",
+        "工作日",
+        "休假",
+        "補假",
+        "公眾",
+        "上班族",
+        "智能",
+        "行事曆",
+        "日曆",
+        "小工具",
+        "時鐘",
+        "翻頁",
+        "指針",
+        "桌面",
+        "數位",
+        "可愛",
+        "主題",
+        "鎖定畫面",
+        "起床",
+        "叫醒",
+        "颱風假",
+        "排休",
+        "夜班",
+        "值班",
+        "隔週",
+        "外派",
+        "台灣",
+        "返工"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/zh-Hant/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "TWD",
+        "formatted_price": "免費",
+        "storefront_url": "https://apps.apple.com/tw/app/id6821790092"
+      }
+    },
+    {
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money：日常記帳·預算·匯率",
@@ -750,8 +800,7 @@
         "儲蓄",
         "花費",
         "小資族",
-        "節流",
-        "衝動購物"
+        "節流"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -921,8 +970,7 @@
         "鎖手機",
         "防沉迷",
         "鎖機",
-        "定時",
-        "app 封鎖"
+        "定時"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -978,8 +1026,7 @@
         "注音發音",
         "寶寶",
         "注音符號遊戲",
-        "學注音符號",
-        "注音"
+        "學注音符號"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1092,8 +1139,7 @@
         "學英文",
         "幼稚園",
         "親子",
-        "幼兒學習",
-        "兒童 字母"
+        "幼兒學習"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1335,10 +1381,7 @@
         "蓋章",
         "教養",
         "幼兒園",
-        "早睡早起",
-        "兒童 習慣",
-        "睡前 習慣",
-        "獎勵 貼紙"
+        "早睡早起"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1454,9 +1497,7 @@
         "手錶",
         "即時",
         "逐時",
-        "一週",
-        "天氣 穿搭",
-        "穿搭 天氣"
+        "一週"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1570,8 +1611,7 @@
         "行事曆",
         "任務",
         "鎖定畫面",
-        "重複提醒",
-        "代辦事項"
+        "重複提醒"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1691,8 +1731,7 @@
         "團購",
         "活動",
         "家庭",
-        "流水帳",
-        "副業 記帳"
+        "流水帳"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1915,8 +1954,7 @@
         "郵件",
         "行事曆",
         "定位",
-        "聯絡人",
-        "qr code 連結 檢查"
+        "聯絡人"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2463,8 +2501,7 @@
         "搭車",
         "週末",
         "海島",
-        "動物園",
-        "小孩 旅行"
+        "動物園"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2739,8 +2776,7 @@
         "無線網路",
         "延遲測試",
         "連線測試",
-        "TCP",
-        "wifi 診斷"
+        "TCP"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2956,9 +2992,7 @@
         "批次解壓",
         "離線",
         "壓縮軟體",
-        "壓縮工具",
-        "密碼保護 zip",
-        "開啟 rar 檔案"
+        "壓縮工具"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

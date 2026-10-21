@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-20",
-  "content_digest": "1c5079d365ad75e3ba100a33fbd8d3a22a43852646c11f8acc83620097b11a8c",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
   "locale": "bn-BD",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 53,
+  "record_count": 54,
   "apps": [
     {
       "key": "notesstudio100",
@@ -595,6 +595,64 @@
       },
       "app_store_url": null,
       "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/dbhalo.html",
+      "verified_live": true,
+      "locale": "bn-BD",
+      "market_availability": {
+        "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+        "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+        "evidence": {
+          "source_url": "https://support.apple.com/en-us/118205",
+          "observed_at": "2026-09-12",
+          "country": "BD",
+          "apple_media_services_markets": 174,
+          "country_listed": false,
+          "lookup_app_results": 0,
+          "lookup_control_results": 0,
+          "redirect_market": "US"
+        },
+        "value": "N/A",
+        "content_retained": true,
+        "publishable": false,
+        "facts_allowed": false,
+        "outbox_count": 0
+      }
+    },
+    {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: অ্যালার্ম ঘড়ি ও ছুটি",
+      "summary": "ছুটির আগে অ্যালার্ম বন্ধ আর ছুটি শেষে আবার চালু করার কথা আর মনে রাখতে হবে না: EasyAM প্রতিটি দিনের জন্য নিজেই ঠিক করে কাল বাজবে কি না, কাজের দিনে আপনার সময়ে বাজে আর সরকারি ছুটি ও আপনার নিজের ছুটিতে চুপ থাকে। অ্যাপ খুললেই সামনের সাত দিন এক নজরে দেখা যায়, আর কোনো একদিনের সময় আলাদা চাইলে শুধু সেই দিনটাই বদলান।",
+      "category": "utility",
+      "search_terms": [
+        "এলার্ম",
+        "সরকারি",
+        "অফিস",
+        "কর্মদিবস",
+        "শিফট",
+        "ডিউটি",
+        "রোস্টার",
+        "ক্যালেন্ডার",
+        "সকাল",
+        "প্রবাসী",
+        "উইজেট",
+        "থিম",
+        "ফ্লিপ",
+        "কিউট",
+        "হলিডে"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": null,
+      "guide_url": "https://open.cait518.cc/ios-app-guide/bn-BD/easyam.html",
       "verified_live": true,
       "locale": "bn-BD",
       "market_availability": {

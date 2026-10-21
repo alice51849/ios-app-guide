@@ -18,8 +18,8 @@
   "enable_checkout": false,
   "checkout_note": "Purchase happens on the Apple App Store via app_store_url; this publisher operates no checkout endpoint.",
   "price_source": "Apple App Store public lookup snapshot",
-  "row_count": 2588,
-  "app_count": 53,
+  "row_count": 2637,
+  "app_count": 54,
   "locale_count": 49,
   "official_locale_count": 50,
   "blocked_markets": {
@@ -106,6 +106,7 @@
     "dailymate",
     "dailymatelite",
     "dbhalo",
+    "easyam",
     "gmoney",
     "gmoneylite",
     "hourstag",
@@ -177,5 +178,5 @@
     "one_time_purchase",
     "subscription"
   ],
-  "content_digest": "sha256:5152802b50ab9f3e42bd8ee915654d3a396af57f84dc75579478f0fdac86d70c"
+  "content_digest": "sha256:c931ba98fa55c18d96ddf5a5950d7a17e43039b539a217b8f1118c874e6955b1"
 }

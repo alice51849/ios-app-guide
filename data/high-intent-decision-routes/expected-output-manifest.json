@@ -1,14 +1,14 @@
 {
-  "abstained_pairs": 2584,
-  "app_count": 53,
-  "candidate_app_locale_pairs": 2650,
-  "creative_count": 53,
+  "abstained_pairs": 2631,
+  "app_count": 54,
+  "candidate_app_locale_pairs": 2700,
+  "creative_count": 54,
   "current_inventory": {
-    "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "cacd37476a5bc1d745b52e66f229f8c52e45ecae67df30a2fce6adcfa93ab22f",
+    "app_keys_sha256": "e113b81193a6a6edfbbc5aac051d54b81a8df04f147ba3598d487f7a40036706",
+    "copy_sha256": "f3363269f6338b33f9959e78f8aba04a21fa63df191e6fe7b476bccf657a2759",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 53
+    "public_apps": 54
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "deployment_state": "generated_not_deployed",
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "ca6c6556304cdaa53810732c182ae3d86d01bef0ae3dbd51e7924bbd73b596f7",
+      "generated_sha256": "cebacc3e498fdff0ad9516a181d20759533a6c6b76eb45ec4cbdb43401f24643",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "c572feeae58177a9c0bcea57812a7b1982162d24e7bb598a6d3ebdd95c440f14",
+      "generated_sha256": "776b84c34b72825379da3e9271d4dd2aa59fd435ca28034f718ba3dcd71804af",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -92,6 +92,11 @@
       "generated_sha256": "c11992631a5daa8a89645f60406ba290935937ae5e57d21a605e454f2a62afa9",
       "kind": "route_html",
       "relative_path": "en-US/decide/dbhalo/measure-room-noise-without-sending-audio-off-device.html"
+    },
+    {
+      "generated_sha256": "18bb1b323b2d554729643252e5b9ce681e14bcf9a25ca6984876c2963037072c",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
     },
     {
       "generated_sha256": "6b0ca2d1ea7481d1d059c25a42f07a27515538376c14aa02157ba232dccb4913",
@@ -309,6 +314,11 @@
       "relative_path": "fr-FR/decide/aim990/toeic-part-five-time-pressure.html"
     },
     {
+      "generated_sha256": "b3bd153fb36e616f16b4f52350a5180d1c815c538a2eefc4304cd59da1a53ecc",
+      "kind": "route_html",
+      "relative_path": "ja/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
+    },
+    {
       "generated_sha256": "5b9c7a57768b16954be9d22d594c58bcf1915a4098cd3ac137848f2491c93403",
       "kind": "route_html",
       "relative_path": "ja/decide/lumiweather/decide-what-child-wears-outside.html"
@@ -319,7 +329,7 @@
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "6851c8097673ea592f7db7bac6b01e5fa4e5f6dfe8bed9e229aab8bd5fa44ae7",
+      "generated_sha256": "1156f5bb96d2894c2d93baaf852a2ac3ceca8fc447d978f50b5a1b5943ef904d",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -337,6 +347,11 @@
       "generated_sha256": "5cebc9ccb1aa3ccd4a79ff1e1bba51f8579db40fd603312374e1d7e13c925f4a",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/cyca/private-cycle-patterns-without-account.html"
+    },
+    {
+      "generated_sha256": "1b4d1a083a02ac06b311513f658d9bdabaa54a007538aa7ea8814f38920ab1e8",
+      "kind": "route_html",
+      "relative_path": "zh-Hant/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
     },
     {
       "generated_sha256": "7f4a5f4fa9388eef082901a2d57c23f727f49e0da3a321154de55a65a7f6deae",
@@ -371,17 +386,17 @@
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "aff3e22502d6ff3dfa606d28acb04e8113e6323c268eae3a53fd2a838d216f9e",
-    "copy_sha256": "cacd37476a5bc1d745b52e66f229f8c52e45ecae67df30a2fce6adcfa93ab22f",
+    "app_keys_sha256": "e113b81193a6a6edfbbc5aac051d54b81a8df04f147ba3598d487f7a40036706",
+    "copy_sha256": "f3363269f6338b33f9959e78f8aba04a21fa63df191e6fe7b476bccf657a2759",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 53,
+    "public_apps": 54,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "b58ebe07664f7f02f4f841d2f877c4e90c2d7d3b3c540e6bef435a491597c1b5",
+  "manifest_digest": "7488cd1d24181cbd2278610ba9b829d89e1de27522b75c5c6acf0dd019892743",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "02aa3ab4a2994a4ebc5fdf04675aef1070d9eadfa4ac32c04bc8849b49bb6a42",
+  "release_contract_digest": "7d0a88d622fdf41547a5a42950bcfd0110e73085aeb74b079744b2d778dd46a3",
   "release_state": "exact",
-  "route_count": 66,
+  "route_count": 69,
   "routes": [
     {
       "app_key": "mochidonestamp",
@@ -586,6 +601,23 @@
       "route_id": "en-US:dbhalo:measure-room-noise-without-sending-audio-off-device",
       "route_slug": "measure-room-noise-without-sending-audio-off-device",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/dbhalo/measure-room-noise-without-sending-audio-off-device.html"
+    },
+    {
+      "app_key": "easyam",
+      "app_store_id": "6821790092",
+      "app_store_url": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "f5cd65e5cb67744886b13ef501d7e993f61506ec6af06ac86814c283653141d5",
+      "creative_id": "easyam:stop-your-alarm-ringing-on-public-holidays-and-days-off:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "en-US",
+      "output_sha256": "18bb1b323b2d554729643252e5b9ce681e14bcf9a25ca6984876c2963037072c",
+      "record_digest": "9c4980c2d0ff1c3999293c095ce7551d4c13ccdcc618696fca4c3d030d90b413",
+      "relative_path": "en-US/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html",
+      "route_id": "en-US:easyam:stop-your-alarm-ringing-on-public-holidays-and-days-off",
+      "route_slug": "stop-your-alarm-ringing-on-public-holidays-and-days-off",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
     },
     {
       "app_key": "gmoney",
@@ -1319,6 +1351,23 @@
       "url": "https://open.cait518.cc/ios-app-guide/fr-FR/decide/aim990/toeic-part-five-time-pressure.html"
     },
     {
+      "app_key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "app_store_url": "https://apps.apple.com/jp/app/id6818607603?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "23eda032482981fc384d64e3ec8b941a585910066f88256cb5e552f4ccaad310",
+      "creative_id": "claudeusagemini:see-claude-and-codex-limits-before-they-run-out:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "ja",
+      "output_sha256": "b3bd153fb36e616f16b4f52350a5180d1c815c538a2eefc4304cd59da1a53ecc",
+      "record_digest": "6bc96bac1cd4caa65b037491fbfa2686a92d83779d8002f7c431cbf07799920a",
+      "relative_path": "ja/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html",
+      "route_id": "ja:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
+      "route_slug": "see-claude-and-codex-limits-before-they-run-out",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
+    },
+    {
       "app_key": "lumiweather",
       "app_store_id": "6779552704",
       "app_store_url": "https://apps.apple.com/jp/app/id6779552704?pt=118326163&ct=geo_ask&mt=8",
@@ -1402,6 +1451,23 @@
       "route_id": "zh-Hant:cyca:private-cycle-patterns-without-account",
       "route_slug": "private-cycle-patterns-without-account",
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/cyca/private-cycle-patterns-without-account.html"
+    },
+    {
+      "app_key": "easyam",
+      "app_store_id": "6821790092",
+      "app_store_url": "https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "f5cd65e5cb67744886b13ef501d7e993f61506ec6af06ac86814c283653141d5",
+      "creative_id": "easyam:stop-your-alarm-ringing-on-public-holidays-and-days-off:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "zh-Hant",
+      "output_sha256": "1b4d1a083a02ac06b311513f658d9bdabaa54a007538aa7ea8814f38920ab1e8",
+      "record_digest": "833497b93d9f0df2817ee032c36407da80d8a8b2a7ad7f3d82f0b27dbd603216",
+      "relative_path": "zh-Hant/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html",
+      "route_id": "zh-Hant:easyam:stop-your-alarm-ringing-on-public-holidays-and-days-off",
+      "route_slug": "stop-your-alarm-ringing-on-public-holidays-and-days-off",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
     },
     {
       "app_key": "lumibopomofo",
@@ -1508,5 +1574,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "dff220d6a78e53eb65eb8ee5a3d6904eb7145f289a0112a06983cc293403f1ed"
+  "source_contract_digest": "cae177a99d6ba0bf3f32ef479e47adf7c99fd285068eeffd16d0ba081d7b1553"
 }

@@ -456,7 +456,7 @@ def normalize_campaign_token(campaign):
     return token
 
 
-def _cpp_deeplink(url, key):
+def _cpp_deeplink(url, key, intent=None):
     """Route an outreach link to an approved Custom Product Page, if there is one.
 
     Fail-closed by construction: ``aso/cpp_links.py`` only hands back a ``ppid``
@@ -472,28 +472,31 @@ def _cpp_deeplink(url, key):
             sys.path.append(aso)
         import cpp_links
 
-        return cpp_links.decorate(url, key)
+        return cpp_links.decorate(url, key, intent=intent)
     except Exception:  # noqa: BLE001 - routing must never break a link
         return url
 
 
-def appstore_url(key, campaign=None):
-    """Direct App Store link, with attribution only when a provider token exists."""
+def appstore_url(key, campaign=None, intent=None):
+    """Direct App Store link, with attribution only when a provider token exists.
+
+    ``intent`` (e.g. "chore") routes content about that search intent to the app's
+    approved custom product page for it; without it the link is unchanged."""
     aid = APPSTORE.get(key)
     if not aid:
         return ""
     url = f"https://apps.apple.com/app/id{aid}"
     if not campaign:
-        return _cpp_deeplink(url, key)
+        return _cpp_deeplink(url, key, intent)
     provider = os.environ.get("APP_STORE_PROVIDER_TOKEN", "").strip()
     if not provider:
-        return _cpp_deeplink(url, key)
+        return _cpp_deeplink(url, key, intent)
     if not re.fullmatch(r"[0-9]{1,20}", provider):
         raise ValueError(f"Invalid App Store provider token: {provider!r}")
     token = normalize_campaign_token(campaign)
     if not re.fullmatch(r"[A-Za-z0-9_]{1,30}", token):
         raise ValueError(f"Invalid App Store campaign token: {campaign!r}")
-    return _cpp_deeplink(f"{url}?pt={provider}&ct={token}&mt=8", key)
+    return _cpp_deeplink(f"{url}?pt={provider}&ct={token}&mt=8", key, intent)
 
 
 def longform_appstore_url(key, provider_token=None):

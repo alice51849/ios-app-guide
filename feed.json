@@ -1,7 +1,7 @@
 {
  "schema": "lumi.social-feed/v1",
  "date": "2026-10-21",
- "generated_at": "2026-10-21T02:02:28Z",
+ "generated_at": "2026-10-21T06:37:58Z",
  "items": {
   "bluesky": [
    {
@@ -140,49 +140,25 @@
     "slot": 1
    },
    {
-    "kind": "clip",
-    "key": "mochi/pt-BR",
-    "locale": "pt-BR",
-    "app": "mochi",
-    "video": "https://files.catbox.moe/e7aq6y.mp4",
-    "hook": "Um toque e pronto",
-    "name": "Mochi: Lista fofa",
-    "title": "Um toque e pronto | Tarefas fofas e checklist | Mochi Lista fofa",
+    "kind": "card",
+    "key": "utility/ledger/moneytag/market_stall/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261021.jpg",
+    "caption": "專案損益小算式：市集擺攤\n+ 銷售 8,000\n− 攤位費 1,500\n− 材料 2,300\n= 淨額 4,200\n示例數字，只示範算式\n\nMoneyTag: 每個專案各自算淨額，同一標籤跨專案合計\nApp Store／Google Play 搜尋「MoneyTag」\n\n#收入與支出 #記帳 #損益",
+    "title": "專案損益小算式：市集擺攤",
+    "alt": "MoneyTag — 專案損益小算式：市集擺攤 — + 銷售 8,000 — − 攤位費 1,500 — 專案 · 標籤 · 報表",
+    "name": "MoneyTag",
+    "hook": "專案損益小算式：市集擺攤",
     "tags": [
-     "#ListaFofa",
-     "#Lembrete",
-     "#Afazeres",
-     "#Planner",
-     "#Notas",
-     "#MochiListaFofa"
+     "#收入與支出",
+     "#記帳",
+     "#損益",
+     "#利潤",
+     "#淨利"
     ],
-    "caption": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #MochiListafofa",
-    "button": "Baixar na App Store",
-    "variant": "b",
-    "alt": "Mochi: Lista fofa — Um toque e pronto — 101 temas fofos — Tarefas fofas e checklist",
-    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=bluesky&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dbluesky%26utm_campaign%3Dmochi",
-    "review": {
-     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
-     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
-    },
-    "keywords": [
-     "lembrete",
-     "afazeres",
-     "planner",
-     "notas",
-     "hábitos",
-     "rotina"
-    ],
-    "keyline": "Tarefas fofas e checklist",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "063389274bf4ea40",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag"
    }
   ],
   "mastodon": [
@@ -322,49 +298,25 @@
     "slot": 1
    },
    {
-    "kind": "clip",
-    "key": "mochi/pt-BR",
-    "locale": "pt-BR",
-    "app": "mochi",
-    "video": "https://files.catbox.moe/e7aq6y.mp4",
-    "hook": "Um toque e pronto",
-    "name": "Mochi: Lista fofa",
-    "title": "Um toque e pronto | Tarefas fofas e checklist | Mochi Lista fofa",
+    "kind": "card",
+    "key": "utility/ledger/moneytag/market_stall/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261021.jpg",
+    "caption": "專案損益小算式：市集擺攤\n+ 銷售 8,000\n− 攤位費 1,500\n− 材料 2,300\n= 淨額 4,200\n示例數字，只示範算式\n\nMoneyTag: 每個專案各自算淨額，同一標籤跨專案合計\nApp Store／Google Play 搜尋「MoneyTag」\n\n#收入與支出 #記帳 #損益 #利潤 #淨利",
+    "title": "專案損益小算式：市集擺攤",
+    "alt": "MoneyTag — 專案損益小算式：市集擺攤 — + 銷售 8,000 — − 攤位費 1,500 — 專案 · 標籤 · 報表",
+    "name": "MoneyTag",
+    "hook": "專案損益小算式：市集擺攤",
     "tags": [
-     "#ListaFofa",
-     "#Lembrete",
-     "#Afazeres",
-     "#Planner",
-     "#Notas",
-     "#MochiListaFofa"
+     "#收入與支出",
+     "#記帳",
+     "#損益",
+     "#利潤",
+     "#淨利"
     ],
-    "caption": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #Afazeres #Planner #MochiListafofa",
-    "button": "Baixar na App Store",
-    "variant": "b",
-    "alt": "Mochi: Lista fofa — Um toque e pronto — 101 temas fofos — Tarefas fofas e checklist",
-    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-    "review": {
-     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
-     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
-    },
-    "keywords": [
-     "lembrete",
-     "afazeres",
-     "planner",
-     "notas",
-     "hábitos",
-     "rotina"
-    ],
-    "keyline": "Tarefas fofas e checklist",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "063389274bf4ea40",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "slot": 15
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag"
    }
   ],
   "youtube": [
@@ -543,66 +495,6 @@
      ]
     },
     "slot": 1
-   },
-   {
-    "kind": "clip",
-    "key": "mochi/pt-BR",
-    "locale": "pt-BR",
-    "app": "mochi",
-    "video": "https://files.catbox.moe/e7aq6y.mp4",
-    "hook": "Um toque e pronto",
-    "name": "Mochi: Lista fofa",
-    "title": "Um toque e pronto | Tarefas fofas e checklist | Mochi Lista fofa",
-    "tags": [
-     "#ListaFofa",
-     "#Lembrete",
-     "#Afazeres",
-     "#Planner",
-     "#Notas",
-     "#MochiListaFofa"
-    ],
-    "caption": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #Afazeres #Planner #MochiListafofa",
-    "button": "Baixar na App Store",
-    "variant": "b",
-    "alt": "Mochi: Lista fofa — Um toque e pronto — 101 temas fofos — Tarefas fofas e checklist",
-    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=youtube&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dyoutube%26utm_campaign%3Dmochi",
-    "review": {
-     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
-     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
-    },
-    "keywords": [
-     "lembrete",
-     "afazeres",
-     "planner",
-     "notas",
-     "hábitos",
-     "rotina"
-    ],
-    "keyline": "Tarefas fofas e checklist",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "063389274bf4ea40",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "youtube": {
-     "title": "Um toque e pronto | Mochi Lista fofa #Shorts",
-     "description": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\n\nMochi: Lista fofa\nApp Store: https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=youtube&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dyoutube%26utm_campaign%3Dmochi\nJá usa este app? Avalie ou escreva uma resenha na App Store\nhttps://apps.apple.com/app/id6785004775?action=write-review\n\nlembrete · afazeres · planner · notas · hábitos · rotina\n\n#Shorts #ListaFofa #MochiListafofa",
-     "tags": [
-      "lembrete",
-      "afazeres",
-      "planner",
-      "notas",
-      "hábitos",
-      "rotina",
-      "ListaFofa",
-      "MochiListaFofa",
-      "Mochi Lista fofa"
-     ]
-    },
-    "slot": 15
    }
   ],
   "pinterest": [
@@ -754,53 +646,29 @@
     "slot": 1
    },
    {
-    "kind": "clip",
-    "key": "mochi/pt-BR",
-    "locale": "pt-BR",
-    "app": "mochi",
-    "video": "https://files.catbox.moe/e7aq6y.mp4",
-    "hook": "Um toque e pronto",
-    "name": "Mochi: Lista fofa",
-    "title": "Um toque e pronto | Tarefas fofas e checklist | Mochi Lista fofa",
+    "kind": "card",
+    "key": "utility/ledger/moneytag/market_stall/zh-Hant",
+    "locale": "zh-Hant",
+    "image": "https://raw.githubusercontent.com/alice51849/ios-app-guide/utility-cards/card-20261021.jpg",
+    "caption": "專案損益小算式：市集擺攤\n+ 銷售 8,000\n− 攤位費 1,500\n− 材料 2,300\n= 淨額 4,200\n示例數字，只示範算式\n\nMoneyTag: 每個專案各自算淨額，同一標籤跨專案合計\nApp Store／Google Play 搜尋「MoneyTag」\n\n#收入與支出 #記帳 #損益 #利潤 #淨利",
+    "title": "專案損益小算式：市集擺攤",
+    "alt": "MoneyTag — 專案損益小算式：市集擺攤 — + 銷售 8,000 — − 攤位費 1,500 — 專案 · 標籤 · 報表",
+    "name": "MoneyTag",
+    "hook": "專案損益小算式：市集擺攤",
     "tags": [
-     "#ListaFofa",
-     "#Lembrete",
-     "#Afazeres",
-     "#Planner",
-     "#Notas",
-     "#MochiListaFofa"
+     "#收入與支出",
+     "#記帳",
+     "#損益",
+     "#利潤",
+     "#淨利"
     ],
-    "caption": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #Afazeres #Planner #MochiListafofa",
-    "button": "Baixar na App Store",
-    "variant": "b",
-    "alt": "Mochi: Lista fofa — Um toque e pronto — 101 temas fofos — Tarefas fofas e checklist",
-    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-    "review": {
-     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
-     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
-    },
-    "keywords": [
-     "lembrete",
-     "afazeres",
-     "planner",
-     "notas",
-     "hábitos",
-     "rotina"
-    ],
-    "keyline": "Tarefas fofas e checklist",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "063389274bf4ea40",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
+    "button": "在 App Store 下載",
+    "store": "https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
     "pinterest": {
-     "description": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #Afazeres #Planner #MochiListafofa\n\nBaixar na App Store: https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-     "link": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8"
-    },
-    "slot": 15
+     "description": "專案損益小算式：市集擺攤\n+ 銷售 8,000\n− 攤位費 1,500\n− 材料 2,300\n= 淨額 4,200\n示例數字，只示範算式\n\nMoneyTag: 每個專案各自算淨額，同一標籤跨專案合計\nApp Store／Google Play 搜尋「MoneyTag」\n\n#收入與支出 #記帳 #損益 #利潤 #淨利\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag&referrer=utm_source%3Dsocial%26utm_campaign%3Dmoneytag",
+     "link": "https://apps.apple.com/tw/app/id6801956402?pt=118326163&ct=social&mt=8"
+    }
    }
   ],
   "tiktok": [
@@ -947,54 +815,6 @@
      "caption": "穿什麼、帶什麼 直接告訴你\n適合出門嗎？看懂為什麼\n今天穿什麼・帶傘嗎・降雨機率與紫外線\nLumi天氣星球：天氣預報與穿搭建議\n在 App Store 搜尋「天氣 穿搭」\nAndroid 版在 Google Play\n\n#天氣預報與穿搭建議 #氣象預報 #台灣 #下雨 #Lumi天氣星球\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6779552704?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather&referrer=utm_source%3Dsocial%26utm_campaign%3Dlumiweather"
     },
     "slot": 1
-   },
-   {
-    "kind": "clip",
-    "key": "mochi/pt-BR",
-    "locale": "pt-BR",
-    "app": "mochi",
-    "video": "https://files.catbox.moe/e7aq6y.mp4",
-    "hook": "Um toque e pronto",
-    "name": "Mochi: Lista fofa",
-    "title": "Um toque e pronto | Tarefas fofas e checklist | Mochi Lista fofa",
-    "tags": [
-     "#ListaFofa",
-     "#Lembrete",
-     "#Afazeres",
-     "#Planner",
-     "#Notas",
-     "#MochiListaFofa"
-    ],
-    "caption": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #Afazeres #Planner #MochiListafofa",
-    "button": "Baixar na App Store",
-    "variant": "b",
-    "alt": "Mochi: Lista fofa — Um toque e pronto — 101 temas fofos — Tarefas fofas e checklist",
-    "store": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8",
-    "play": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi",
-    "review": {
-     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
-     "url": "https://apps.apple.com/app/id6785004775?action=write-review"
-    },
-    "keywords": [
-     "lembrete",
-     "afazeres",
-     "planner",
-     "notas",
-     "hábitos",
-     "rotina"
-    ],
-    "keyline": "Tarefas fofas e checklist",
-    "compliance": {
-     "store_claims_ok": true,
-     "screen_text_ok": true,
-     "board": "063389274bf4ea40",
-     "real_recording": false,
-     "rules": "2026-10-18"
-    },
-    "tiktok": {
-     "caption": "Um toque e pronto\n101 temas fofos\nTarefas fofas e checklist\nMochi: Lista fofa\nPesquise “lista de tarefas” na App Store\nTambém no Google Play\n\n#ListaFofa #Lembrete #Afazeres #Planner #MochiListafofa\n\nBaixar na App Store: https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo&referrer=utm_source%3Dsocial%26utm_campaign%3Dmochi"
-    },
-    "slot": 15
    }
   ]
  },
@@ -16054,6 +15874,270 @@
      "store_claims_ok": true,
      "screen_text_ok": true,
      "board": "202242012d5b8176",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/en",
+    "locale": "en",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/8n1x9x.mp4",
+    "hook": "Holidays skipped automatically",
+    "name": "EasyAM: Holiday Alarm Clock",
+    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "tags": [
+     "#HolidayAlarmClock",
+     "#Workday",
+     "#Shift",
+     "#Public",
+     "#Calendar",
+     "#EasyAMHolidayAlarm"
+    ],
+    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “EasyAM holiday alarm” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #EasyAMholidayalarm",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
+    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "workday",
+     "shift",
+     "public",
+     "calendar",
+     "weekday",
+     "vacation"
+    ],
+    "keyline": "Rings for work, skips days off",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/18smia.mp4",
+    "hook": "國定假日 自動跳過",
+    "name": "EasyAM: 國定假日、連假不響的智慧鬧鐘",
+    "title": "國定假日 自動跳過 | 明早要不要響？上班日、補班日照響，請假、特休自動跳過 | EasyAM 假日鬧鐘",
+    "tags": [
+     "#國定假日連假不響的智慧鬧鐘",
+     "#假期",
+     "#輪班",
+     "#排班",
+     "#班表",
+     "#EasyAM假日鬧鐘"
+    ],
+    "caption": "國定假日 自動跳過\n請假、出遊 加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「EasyAM 假日鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #EasyAM假日鬧鐘",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "EasyAM: 國定假日、連假不響的智慧鬧鐘 — 國定假日 自動跳過 — 請假、出遊 加進休假就不響 — 明早要不要響？上班日、補班日照響，請假、特休自動跳過",
+    "store": "https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "假期",
+     "輪班",
+     "排班",
+     "班表",
+     "工作日",
+     "休假"
+    ],
+    "keyline": "明早要不要響？上班日、補班日照響，請假、特休自動跳過",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/ja",
+    "locale": "ja",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/v2z4m8.mp4",
+    "hook": "祝日は 自動でスキップ",
+    "name": "EasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム",
+    "title": "祝日は 自動でスキップ | 明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ | EasyAM 祝日 目覚まし",
+    "tags": [
+     "#祝日は鳴らない目覚まし時計シフトアラーム",
+     "#交代勤務",
+     "#夜勤",
+     "#休日",
+     "#振替",
+     "#EasyAM祝日目覚まし"
+    ],
+    "caption": "祝日は 自動でスキップ\n休暇を入れれば その日も鳴らない\n明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ\nEasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム\nApp Storeで「EasyAM 祝日 目覚まし」を検索\nAndroidはGoogle Playで\n\n#祝日は鳴らない目覚まし時計シフトアラーム #交代勤務 #EasyAM祝日目覚まし",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "EasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム — 祝日は 自動でスキップ — 休暇を入れれば その日も鳴らない — 明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ",
+    "store": "https://apps.apple.com/jp/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "交代勤務",
+     "夜勤",
+     "休日",
+     "振替",
+     "有休",
+     "休暇"
+    ],
+    "keyline": "明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/ko",
+    "locale": "ko",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/ymwmnq.mp4",
+    "hook": "공휴일은 자동으로 건너뛰기",
+    "name": "EasyAM: 스마트 공휴일 알람 시계",
+    "title": "공휴일은 자동으로 건너뛰기 | 내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척 | EasyAM 공휴일 알람",
+    "tags": [
+     "#스마트공휴일알람시계",
+     "#교대근무",
+     "#평일",
+     "#근무일",
+     "#직장인",
+     "#EasyAM공휴일알람"
+    ],
+    "caption": "공휴일은 자동으로 건너뛰기\n휴가를 넣으면 그날도 조용히\n내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척\nEasyAM: 스마트 공휴일 알람 시계\nApp Store에서 'EasyAM 공휴일 알람' 검색\nAndroid는 Google Play에서\n\n#스마트공휴일알람시계 #교대근무 #EasyAM공휴일알람",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "EasyAM: 스마트 공휴일 알람 시계 — 공휴일은 자동으로 건너뛰기 — 휴가를 넣으면 그날도 조용히 — 내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척",
+    "store": "https://apps.apple.com/kr/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "교대근무",
+     "평일",
+     "근무일",
+     "직장인",
+     "모닝콜",
+     "기상"
+    ],
+    "keyline": "내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/de",
+    "locale": "de",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/0wklpa.mp4",
+    "hook": "Feiertage automatisch übersprungen",
+    "name": "EasyAM: Wecker ohne Feiertage",
+    "title": "Feiertage automatisch übersprungen | Klingelt auch im Urlaub nicht | EasyAM Wecker",
+    "tags": [
+     "#WeckerOhneFeiertage",
+     "#Schichtwecker",
+     "#Schicht",
+     "#Schichtplan",
+     "#Schichtdienst",
+     "#EasyAMWecker"
+    ],
+    "caption": "Feiertage automatisch übersprungen\nUrlaub eintragen, der Wecker bleibt still\nKlingelt auch im Urlaub nicht\nEasyAM: Wecker ohne Feiertage\nIm App Store nach „EasyAM Wecker“ suchen\nAuch bei Google Play\n\n#WeckerOhneFeiertage #Schichtwecker #EasyAMWecker",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "EasyAM: Wecker ohne Feiertage — Feiertage automatisch übersprungen — Urlaub eintragen, der Wecker bleibt still — Klingelt auch im Urlaub nicht",
+    "store": "https://apps.apple.com/de/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "Schichtwecker",
+     "Schicht",
+     "Schichtplan",
+     "Schichtdienst",
+     "Arbeit",
+     "Brückentage"
+    ],
+    "keyline": "Klingelt auch im Urlaub nicht",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/pt-BR",
+    "locale": "pt-BR",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/kw4hys.mp4",
+    "hook": "Feriados pulados automaticamente",
+    "name": "EasyAM: Despertador e Feriados",
+    "title": "Feriados pulados automaticamente | Alarme que só toca em dia útil | EasyAM despertador",
+    "tags": [
+     "#DespertadorEFeriados",
+     "#Feriado",
+     "#Folga",
+     "#Escala",
+     "#Turno",
+     "#EasyAMDespertador"
+    ],
+    "caption": "Feriados pulados automaticamente\nAdicione folgas e o alarme não toca\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “EasyAM despertador” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Feriado #EasyAMdespertador",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "EasyAM: Despertador e Feriados — Feriados pulados automaticamente — Adicione folgas e o alarme não toca — Alarme que só toca em dia útil",
+    "store": "https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "feriado",
+     "folga",
+     "escala",
+     "turno",
+     "plantão",
+     "trabalho"
+    ],
+    "keyline": "Alarme que só toca em dia útil",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
      "real_recording": false,
      "rules": "2026-10-18"
     }
@@ -36292,6 +36376,360 @@
       "Unblurry 写真高画質化"
      ]
     }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/en",
+    "locale": "en",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/8n1x9x.mp4",
+    "hook": "Holidays skipped automatically",
+    "name": "EasyAM: Holiday Alarm Clock",
+    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "tags": [
+     "#HolidayAlarmClock",
+     "#Workday",
+     "#Shift",
+     "#Public",
+     "#Calendar",
+     "#EasyAMHolidayAlarm"
+    ],
+    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “EasyAM holiday alarm” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
+    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "workday",
+     "shift",
+     "public",
+     "calendar",
+     "weekday",
+     "vacation"
+    ],
+    "keyline": "Rings for work, skips days off",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Holidays skipped automatically | EasyAM holiday alarm #Shorts",
+     "description": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\n\nEasyAM: Holiday Alarm Clock\nApp Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam\nAlready using this app? Rate or review it on the App Store\nhttps://apps.apple.com/app/id6821790092?action=write-review\n\nworkday · shift · public · calendar · weekday · vacation\n\n#Shorts #HolidayAlarmClock #EasyAMholidayalarm",
+     "tags": [
+      "workday",
+      "shift",
+      "public",
+      "calendar",
+      "weekday",
+      "vacation",
+      "HolidayAlarmClock",
+      "EasyAMHolidayAlarm",
+      "EasyAM holiday alarm"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/18smia.mp4",
+    "hook": "國定假日 自動跳過",
+    "name": "EasyAM: 國定假日、連假不響的智慧鬧鐘",
+    "title": "國定假日 自動跳過 | 明早要不要響？上班日、補班日照響，請假、特休自動跳過 | EasyAM 假日鬧鐘",
+    "tags": [
+     "#國定假日連假不響的智慧鬧鐘",
+     "#假期",
+     "#輪班",
+     "#排班",
+     "#班表",
+     "#EasyAM假日鬧鐘"
+    ],
+    "caption": "國定假日 自動跳過\n請假、出遊 加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「EasyAM 假日鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "EasyAM: 國定假日、連假不響的智慧鬧鐘 — 國定假日 自動跳過 — 請假、出遊 加進休假就不響 — 明早要不要響？上班日、補班日照響，請假、特休自動跳過",
+    "store": "https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "假期",
+     "輪班",
+     "排班",
+     "班表",
+     "工作日",
+     "休假"
+    ],
+    "keyline": "明早要不要響？上班日、補班日照響，請假、特休自動跳過",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "國定假日 自動跳過 | EasyAM 假日鬧鐘 #Shorts",
+     "description": "國定假日 自動跳過\n請假、出遊 加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\n\nEasyAM: 國定假日、連假不響的智慧鬧鐘\nApp Store: https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam\n已經在用這款 App？可以到 App Store 評分或撰寫評論\nhttps://apps.apple.com/app/id6821790092?action=write-review\n\n假期 · 輪班 · 排班 · 班表 · 工作日 · 休假\n\n#Shorts #國定假日連假不響的智慧鬧鐘 #EasyAM假日鬧鐘",
+     "tags": [
+      "假期",
+      "輪班",
+      "排班",
+      "班表",
+      "工作日",
+      "休假",
+      "國定假日連假不響的智慧鬧鐘",
+      "EasyAM假日鬧鐘",
+      "EasyAM 假日鬧鐘"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/ja",
+    "locale": "ja",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/v2z4m8.mp4",
+    "hook": "祝日は 自動でスキップ",
+    "name": "EasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム",
+    "title": "祝日は 自動でスキップ | 明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ | EasyAM 祝日 目覚まし",
+    "tags": [
+     "#祝日は鳴らない目覚まし時計シフトアラーム",
+     "#交代勤務",
+     "#夜勤",
+     "#休日",
+     "#振替",
+     "#EasyAM祝日目覚まし"
+    ],
+    "caption": "祝日は 自動でスキップ\n休暇を入れれば その日も鳴らない\n明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ\nEasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム\nApp Storeで「EasyAM 祝日 目覚まし」を検索\nAndroidはGoogle Playで\n\n#祝日は鳴らない目覚まし時計シフトアラーム #交代勤務 #夜勤 #休日 #EasyAM祝日目覚まし",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "EasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム — 祝日は 自動でスキップ — 休暇を入れれば その日も鳴らない — 明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ",
+    "store": "https://apps.apple.com/jp/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "交代勤務",
+     "夜勤",
+     "休日",
+     "振替",
+     "有休",
+     "休暇"
+    ],
+    "keyline": "明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "祝日は 自動でスキップ | EasyAM 祝日 目覚まし #Shorts",
+     "description": "祝日は 自動でスキップ\n休暇を入れれば その日も鳴らない\n明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ\n\nEasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム\nApp Store: https://apps.apple.com/jp/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam\nこのアプリをお使いですか？App Store で評価・レビューできます\nhttps://apps.apple.com/app/id6821790092?action=write-review\n\n交代勤務 · 夜勤 · 休日 · 振替 · 有休 · 休暇\n\n#Shorts #祝日は鳴らない目覚まし時計シフトアラーム #EasyAM祝日目覚まし",
+     "tags": [
+      "交代勤務",
+      "夜勤",
+      "休日",
+      "振替",
+      "有休",
+      "休暇",
+      "祝日は鳴らない目覚まし時計シフトアラーム",
+      "EasyAM祝日目覚まし",
+      "EasyAM 祝日 目覚まし"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/ko",
+    "locale": "ko",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/ymwmnq.mp4",
+    "hook": "공휴일은 자동으로 건너뛰기",
+    "name": "EasyAM: 스마트 공휴일 알람 시계",
+    "title": "공휴일은 자동으로 건너뛰기 | 내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척 | EasyAM 공휴일 알람",
+    "tags": [
+     "#스마트공휴일알람시계",
+     "#교대근무",
+     "#평일",
+     "#근무일",
+     "#직장인",
+     "#EasyAM공휴일알람"
+    ],
+    "caption": "공휴일은 자동으로 건너뛰기\n휴가를 넣으면 그날도 조용히\n내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척\nEasyAM: 스마트 공휴일 알람 시계\nApp Store에서 'EasyAM 공휴일 알람' 검색\nAndroid는 Google Play에서\n\n#스마트공휴일알람시계 #교대근무 #평일 #근무일 #EasyAM공휴일알람",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "EasyAM: 스마트 공휴일 알람 시계 — 공휴일은 자동으로 건너뛰기 — 휴가를 넣으면 그날도 조용히 — 내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척",
+    "store": "https://apps.apple.com/kr/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "교대근무",
+     "평일",
+     "근무일",
+     "직장인",
+     "모닝콜",
+     "기상"
+    ],
+    "keyline": "내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "공휴일은 자동으로 건너뛰기 | EasyAM 공휴일 알람 #Shorts",
+     "description": "공휴일은 자동으로 건너뛰기\n휴가를 넣으면 그날도 조용히\n내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척\n\nEasyAM: 스마트 공휴일 알람 시계\nApp Store: https://apps.apple.com/kr/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam\n이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다\nhttps://apps.apple.com/app/id6821790092?action=write-review\n\n교대근무 · 평일 · 근무일 · 직장인 · 모닝콜 · 기상\n\n#Shorts #스마트공휴일알람시계 #EasyAM공휴일알람",
+     "tags": [
+      "교대근무",
+      "평일",
+      "근무일",
+      "직장인",
+      "모닝콜",
+      "기상",
+      "스마트공휴일알람시계",
+      "EasyAM공휴일알람",
+      "EasyAM 공휴일 알람"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/de",
+    "locale": "de",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/0wklpa.mp4",
+    "hook": "Feiertage automatisch übersprungen",
+    "name": "EasyAM: Wecker ohne Feiertage",
+    "title": "Feiertage automatisch übersprungen | Klingelt auch im Urlaub nicht | EasyAM Wecker",
+    "tags": [
+     "#WeckerOhneFeiertage",
+     "#Schichtwecker",
+     "#Schicht",
+     "#Schichtplan",
+     "#Schichtdienst",
+     "#EasyAMWecker"
+    ],
+    "caption": "Feiertage automatisch übersprungen\nUrlaub eintragen, der Wecker bleibt still\nKlingelt auch im Urlaub nicht\nEasyAM: Wecker ohne Feiertage\nIm App Store nach „EasyAM Wecker“ suchen\nAuch bei Google Play\n\n#WeckerOhneFeiertage #Schichtwecker #Schicht #Schichtplan #EasyAMWecker",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "EasyAM: Wecker ohne Feiertage — Feiertage automatisch übersprungen — Urlaub eintragen, der Wecker bleibt still — Klingelt auch im Urlaub nicht",
+    "store": "https://apps.apple.com/de/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "Schichtwecker",
+     "Schicht",
+     "Schichtplan",
+     "Schichtdienst",
+     "Arbeit",
+     "Brückentage"
+    ],
+    "keyline": "Klingelt auch im Urlaub nicht",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Feiertage automatisch übersprungen | EasyAM Wecker #Shorts",
+     "description": "Feiertage automatisch übersprungen\nUrlaub eintragen, der Wecker bleibt still\nKlingelt auch im Urlaub nicht\n\nEasyAM: Wecker ohne Feiertage\nApp Store: https://apps.apple.com/de/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam\nSie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store\nhttps://apps.apple.com/app/id6821790092?action=write-review\n\nSchichtwecker · Schicht · Schichtplan · Schichtdienst · Arbeit · Brückentage\n\n#Shorts #WeckerOhneFeiertage #EasyAMWecker",
+     "tags": [
+      "Schichtwecker",
+      "Schicht",
+      "Schichtplan",
+      "Schichtdienst",
+      "Arbeit",
+      "Brückentage",
+      "WeckerOhneFeiertage",
+      "EasyAMWecker",
+      "EasyAM Wecker"
+     ]
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/pt-BR",
+    "locale": "pt-BR",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/kw4hys.mp4",
+    "hook": "Feriados pulados automaticamente",
+    "name": "EasyAM: Despertador e Feriados",
+    "title": "Feriados pulados automaticamente | Alarme que só toca em dia útil | EasyAM despertador",
+    "tags": [
+     "#DespertadorEFeriados",
+     "#Feriado",
+     "#Folga",
+     "#Escala",
+     "#Turno",
+     "#EasyAMDespertador"
+    ],
+    "caption": "Feriados pulados automaticamente\nAdicione folgas e o alarme não toca\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “EasyAM despertador” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Feriado #Folga #Escala #EasyAMdespertador",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "EasyAM: Despertador e Feriados — Feriados pulados automaticamente — Adicione folgas e o alarme não toca — Alarme que só toca em dia útil",
+    "store": "https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "feriado",
+     "folga",
+     "escala",
+     "turno",
+     "plantão",
+     "trabalho"
+    ],
+    "keyline": "Alarme que só toca em dia útil",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "youtube": {
+     "title": "Feriados pulados automaticamente | EasyAM despertador #Shorts",
+     "description": "Feriados pulados automaticamente\nAdicione folgas e o alarme não toca\nAlarme que só toca em dia útil\n\nEasyAM: Despertador e Feriados\nApp Store: https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam\nJá usa este app? Avalie ou escreva uma resenha na App Store\nhttps://apps.apple.com/app/id6821790092?action=write-review\n\nferiado · folga · escala · turno · plantão · trabalho\n\n#Shorts #DespertadorEFeriados #EasyAMdespertador",
+     "tags": [
+      "feriado",
+      "folga",
+      "escala",
+      "turno",
+      "plantão",
+      "trabalho",
+      "DespertadorEFeriados",
+      "EasyAMDespertador",
+      "EasyAM despertador"
+     ]
+    }
    }
   ],
   "pinterest": [
@@ -52720,6 +53158,294 @@
      "description": "ぼやけた1枚を 選んで\nAIが端末内で補正\n古い写真の復元・ぼやけ補正\nUnblurry Pro：写真高画質化\nApp Storeで「Unblurry 写真高画質化」を検索\nAndroidはGoogle Playで\n\n#写真修復 #画像修復 #写真修正 #画質改善 #Unblurry写真高画質化\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry",
      "link": "https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8"
     }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/en",
+    "locale": "en",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/8n1x9x.mp4",
+    "hook": "Holidays skipped automatically",
+    "name": "EasyAM: Holiday Alarm Clock",
+    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "tags": [
+     "#HolidayAlarmClock",
+     "#Workday",
+     "#Shift",
+     "#Public",
+     "#Calendar",
+     "#EasyAMHolidayAlarm"
+    ],
+    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “EasyAM holiday alarm” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
+    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "workday",
+     "shift",
+     "public",
+     "calendar",
+     "weekday",
+     "vacation"
+    ],
+    "keyline": "Rings for work, skips days off",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “EasyAM holiday alarm” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm\n\nGet it on the App Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+     "link": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/18smia.mp4",
+    "hook": "國定假日 自動跳過",
+    "name": "EasyAM: 國定假日、連假不響的智慧鬧鐘",
+    "title": "國定假日 自動跳過 | 明早要不要響？上班日、補班日照響，請假、特休自動跳過 | EasyAM 假日鬧鐘",
+    "tags": [
+     "#國定假日連假不響的智慧鬧鐘",
+     "#假期",
+     "#輪班",
+     "#排班",
+     "#班表",
+     "#EasyAM假日鬧鐘"
+    ],
+    "caption": "國定假日 自動跳過\n請假、出遊 加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「EasyAM 假日鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "EasyAM: 國定假日、連假不響的智慧鬧鐘 — 國定假日 自動跳過 — 請假、出遊 加進休假就不響 — 明早要不要響？上班日、補班日照響，請假、特休自動跳過",
+    "store": "https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "假期",
+     "輪班",
+     "排班",
+     "班表",
+     "工作日",
+     "休假"
+    ],
+    "keyline": "明早要不要響？上班日、補班日照響，請假、特休自動跳過",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "國定假日 自動跳過\n請假、出遊 加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「EasyAM 假日鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+     "link": "https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/ja",
+    "locale": "ja",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/v2z4m8.mp4",
+    "hook": "祝日は 自動でスキップ",
+    "name": "EasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム",
+    "title": "祝日は 自動でスキップ | 明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ | EasyAM 祝日 目覚まし",
+    "tags": [
+     "#祝日は鳴らない目覚まし時計シフトアラーム",
+     "#交代勤務",
+     "#夜勤",
+     "#休日",
+     "#振替",
+     "#EasyAM祝日目覚まし"
+    ],
+    "caption": "祝日は 自動でスキップ\n休暇を入れれば その日も鳴らない\n明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ\nEasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム\nApp Storeで「EasyAM 祝日 目覚まし」を検索\nAndroidはGoogle Playで\n\n#祝日は鳴らない目覚まし時計シフトアラーム #交代勤務 #夜勤 #休日 #EasyAM祝日目覚まし",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "EasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム — 祝日は 自動でスキップ — 休暇を入れれば その日も鳴らない — 明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ",
+    "store": "https://apps.apple.com/jp/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "交代勤務",
+     "夜勤",
+     "休日",
+     "振替",
+     "有休",
+     "休暇"
+    ],
+    "keyline": "明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "祝日は 自動でスキップ\n休暇を入れれば その日も鳴らない\n明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ\nEasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム\nApp Storeで「EasyAM 祝日 目覚まし」を検索\nAndroidはGoogle Playで\n\n#祝日は鳴らない目覚まし時計シフトアラーム #交代勤務 #夜勤 #休日 #EasyAM祝日目覚まし\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+     "link": "https://apps.apple.com/jp/app/id6821790092?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/ko",
+    "locale": "ko",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/ymwmnq.mp4",
+    "hook": "공휴일은 자동으로 건너뛰기",
+    "name": "EasyAM: 스마트 공휴일 알람 시계",
+    "title": "공휴일은 자동으로 건너뛰기 | 내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척 | EasyAM 공휴일 알람",
+    "tags": [
+     "#스마트공휴일알람시계",
+     "#교대근무",
+     "#평일",
+     "#근무일",
+     "#직장인",
+     "#EasyAM공휴일알람"
+    ],
+    "caption": "공휴일은 자동으로 건너뛰기\n휴가를 넣으면 그날도 조용히\n내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척\nEasyAM: 스마트 공휴일 알람 시계\nApp Store에서 'EasyAM 공휴일 알람' 검색\nAndroid는 Google Play에서\n\n#스마트공휴일알람시계 #교대근무 #평일 #근무일 #EasyAM공휴일알람",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "EasyAM: 스마트 공휴일 알람 시계 — 공휴일은 자동으로 건너뛰기 — 휴가를 넣으면 그날도 조용히 — 내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척",
+    "store": "https://apps.apple.com/kr/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "교대근무",
+     "평일",
+     "근무일",
+     "직장인",
+     "모닝콜",
+     "기상"
+    ],
+    "keyline": "내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "공휴일은 자동으로 건너뛰기\n휴가를 넣으면 그날도 조용히\n내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척\nEasyAM: 스마트 공휴일 알람 시계\nApp Store에서 'EasyAM 공휴일 알람' 검색\nAndroid는 Google Play에서\n\n#스마트공휴일알람시계 #교대근무 #평일 #근무일 #EasyAM공휴일알람\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+     "link": "https://apps.apple.com/kr/app/id6821790092?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/de",
+    "locale": "de",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/0wklpa.mp4",
+    "hook": "Feiertage automatisch übersprungen",
+    "name": "EasyAM: Wecker ohne Feiertage",
+    "title": "Feiertage automatisch übersprungen | Klingelt auch im Urlaub nicht | EasyAM Wecker",
+    "tags": [
+     "#WeckerOhneFeiertage",
+     "#Schichtwecker",
+     "#Schicht",
+     "#Schichtplan",
+     "#Schichtdienst",
+     "#EasyAMWecker"
+    ],
+    "caption": "Feiertage automatisch übersprungen\nUrlaub eintragen, der Wecker bleibt still\nKlingelt auch im Urlaub nicht\nEasyAM: Wecker ohne Feiertage\nIm App Store nach „EasyAM Wecker“ suchen\nAuch bei Google Play\n\n#WeckerOhneFeiertage #Schichtwecker #Schicht #Schichtplan #EasyAMWecker",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "EasyAM: Wecker ohne Feiertage — Feiertage automatisch übersprungen — Urlaub eintragen, der Wecker bleibt still — Klingelt auch im Urlaub nicht",
+    "store": "https://apps.apple.com/de/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "Schichtwecker",
+     "Schicht",
+     "Schichtplan",
+     "Schichtdienst",
+     "Arbeit",
+     "Brückentage"
+    ],
+    "keyline": "Klingelt auch im Urlaub nicht",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Feiertage automatisch übersprungen\nUrlaub eintragen, der Wecker bleibt still\nKlingelt auch im Urlaub nicht\nEasyAM: Wecker ohne Feiertage\nIm App Store nach „EasyAM Wecker“ suchen\nAuch bei Google Play\n\n#WeckerOhneFeiertage #Schichtwecker #Schicht #Schichtplan #EasyAMWecker\n\nIm App Store laden: https://apps.apple.com/de/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+     "link": "https://apps.apple.com/de/app/id6821790092?pt=118326163&ct=social&mt=8"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/pt-BR",
+    "locale": "pt-BR",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/kw4hys.mp4",
+    "hook": "Feriados pulados automaticamente",
+    "name": "EasyAM: Despertador e Feriados",
+    "title": "Feriados pulados automaticamente | Alarme que só toca em dia útil | EasyAM despertador",
+    "tags": [
+     "#DespertadorEFeriados",
+     "#Feriado",
+     "#Folga",
+     "#Escala",
+     "#Turno",
+     "#EasyAMDespertador"
+    ],
+    "caption": "Feriados pulados automaticamente\nAdicione folgas e o alarme não toca\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “EasyAM despertador” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Feriado #Folga #Escala #EasyAMdespertador",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "EasyAM: Despertador e Feriados — Feriados pulados automaticamente — Adicione folgas e o alarme não toca — Alarme que só toca em dia útil",
+    "store": "https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "feriado",
+     "folga",
+     "escala",
+     "turno",
+     "plantão",
+     "trabalho"
+    ],
+    "keyline": "Alarme que só toca em dia útil",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "pinterest": {
+     "description": "Feriados pulados automaticamente\nAdicione folgas e o alarme não toca\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “EasyAM despertador” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Feriado #Folga #Escala #EasyAMdespertador\n\nBaixar na App Store: https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+     "link": "https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=social&mt=8"
+    }
    }
   ],
   "tiktok": [
@@ -68806,6 +69532,288 @@
     "tiktok": {
      "caption": "ぼやけた1枚を 選んで\nAIが端末内で補正\n古い写真の復元・ぼやけ補正\nUnblurry Pro：写真高画質化\nApp Storeで「Unblurry 写真高画質化」を検索\nAndroidはGoogle Playで\n\n#写真修復 #画像修復 #写真修正 #画質改善 #Unblurry写真高画質化\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6782275018?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.unblurry.app&referrer=utm_source%3Dsocial%26utm_campaign%3Dunblurry"
     }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/en",
+    "locale": "en",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/8n1x9x.mp4",
+    "hook": "Holidays skipped automatically",
+    "name": "EasyAM: Holiday Alarm Clock",
+    "title": "Holidays skipped automatically | Rings for work, skips days off | EasyAM holiday alarm",
+    "tags": [
+     "#HolidayAlarmClock",
+     "#Workday",
+     "#Shift",
+     "#Public",
+     "#Calendar",
+     "#EasyAMHolidayAlarm"
+    ],
+    "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “EasyAM holiday alarm” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm",
+    "button": "Get it on the App Store",
+    "variant": "b",
+    "alt": "EasyAM: Holiday Alarm Clock — Holidays skipped automatically — Add time off, vacations stay quiet — Rings for work, skips days off",
+    "store": "https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "Already using this app? Rate or review it on the App Store",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "workday",
+     "shift",
+     "public",
+     "calendar",
+     "weekday",
+     "vacation"
+    ],
+    "keyline": "Rings for work, skips days off",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Holidays skipped automatically\nAdd time off, vacations stay quiet\nRings for work, skips days off\nEasyAM: Holiday Alarm Clock\nSearch “EasyAM holiday alarm” on the App Store\nAlso on Google Play\n\n#HolidayAlarmClock #Workday #Shift #Public #EasyAMholidayalarm\n\nGet it on the App Store: https://apps.apple.com/us/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/zh-Hant",
+    "locale": "zh-Hant",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/18smia.mp4",
+    "hook": "國定假日 自動跳過",
+    "name": "EasyAM: 國定假日、連假不響的智慧鬧鐘",
+    "title": "國定假日 自動跳過 | 明早要不要響？上班日、補班日照響，請假、特休自動跳過 | EasyAM 假日鬧鐘",
+    "tags": [
+     "#國定假日連假不響的智慧鬧鐘",
+     "#假期",
+     "#輪班",
+     "#排班",
+     "#班表",
+     "#EasyAM假日鬧鐘"
+    ],
+    "caption": "國定假日 自動跳過\n請假、出遊 加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「EasyAM 假日鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘",
+    "button": "在 App Store 下載",
+    "variant": "b",
+    "alt": "EasyAM: 國定假日、連假不響的智慧鬧鐘 — 國定假日 自動跳過 — 請假、出遊 加進休假就不響 — 明早要不要響？上班日、補班日照響，請假、特休自動跳過",
+    "store": "https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "已經在用這款 App？可以到 App Store 評分或撰寫評論",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "假期",
+     "輪班",
+     "排班",
+     "班表",
+     "工作日",
+     "休假"
+    ],
+    "keyline": "明早要不要響？上班日、補班日照響，請假、特休自動跳過",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "國定假日 自動跳過\n請假、出遊 加進休假就不響\n明早要不要響？上班日、補班日照響，請假、特休自動跳過\nEasyAM: 國定假日、連假不響的智慧鬧鐘\n在 App Store 搜尋「EasyAM 假日鬧鐘」\nAndroid 版在 Google Play\n\n#國定假日連假不響的智慧鬧鐘 #假期 #輪班 #排班 #EasyAM假日鬧鐘\n\n在 App Store 下載: https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/ja",
+    "locale": "ja",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/v2z4m8.mp4",
+    "hook": "祝日は 自動でスキップ",
+    "name": "EasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム",
+    "title": "祝日は 自動でスキップ | 明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ | EasyAM 祝日 目覚まし",
+    "tags": [
+     "#祝日は鳴らない目覚まし時計シフトアラーム",
+     "#交代勤務",
+     "#夜勤",
+     "#休日",
+     "#振替",
+     "#EasyAM祝日目覚まし"
+    ],
+    "caption": "祝日は 自動でスキップ\n休暇を入れれば その日も鳴らない\n明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ\nEasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム\nApp Storeで「EasyAM 祝日 目覚まし」を検索\nAndroidはGoogle Playで\n\n#祝日は鳴らない目覚まし時計シフトアラーム #交代勤務 #夜勤 #休日 #EasyAM祝日目覚まし",
+    "button": "App Storeで入手",
+    "variant": "b",
+    "alt": "EasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム — 祝日は 自動でスキップ — 休暇を入れれば その日も鳴らない — 明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ",
+    "store": "https://apps.apple.com/jp/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "このアプリをお使いですか？App Store で評価・レビューできます",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "交代勤務",
+     "夜勤",
+     "休日",
+     "振替",
+     "有休",
+     "休暇"
+    ],
+    "keyline": "明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "祝日は 自動でスキップ\n休暇を入れれば その日も鳴らない\n明日鳴るかは自動で判断。平日だけ鳴り、有給・連休はスキップ\nEasyAM: 祝日は鳴らない目覚まし時計・シフトアラーム\nApp Storeで「EasyAM 祝日 目覚まし」を検索\nAndroidはGoogle Playで\n\n#祝日は鳴らない目覚まし時計シフトアラーム #交代勤務 #夜勤 #休日 #EasyAM祝日目覚まし\n\nApp Storeで入手: https://apps.apple.com/jp/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/ko",
+    "locale": "ko",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/ymwmnq.mp4",
+    "hook": "공휴일은 자동으로 건너뛰기",
+    "name": "EasyAM: 스마트 공휴일 알람 시계",
+    "title": "공휴일은 자동으로 건너뛰기 | 내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척 | EasyAM 공휴일 알람",
+    "tags": [
+     "#스마트공휴일알람시계",
+     "#교대근무",
+     "#평일",
+     "#근무일",
+     "#직장인",
+     "#EasyAM공휴일알람"
+    ],
+    "caption": "공휴일은 자동으로 건너뛰기\n휴가를 넣으면 그날도 조용히\n내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척\nEasyAM: 스마트 공휴일 알람 시계\nApp Store에서 'EasyAM 공휴일 알람' 검색\nAndroid는 Google Play에서\n\n#스마트공휴일알람시계 #교대근무 #평일 #근무일 #EasyAM공휴일알람",
+    "button": "App Store에서 받기",
+    "variant": "b",
+    "alt": "EasyAM: 스마트 공휴일 알람 시계 — 공휴일은 자동으로 건너뛰기 — 휴가를 넣으면 그날도 조용히 — 내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척",
+    "store": "https://apps.apple.com/kr/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "이미 이 앱을 사용 중이신가요? App Store에서 평가하거나 리뷰를 작성할 수 있습니다",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "교대근무",
+     "평일",
+     "근무일",
+     "직장인",
+     "모닝콜",
+     "기상"
+    ],
+    "keyline": "내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "공휴일은 자동으로 건너뛰기\n휴가를 넣으면 그날도 조용히\n내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척\nEasyAM: 스마트 공휴일 알람 시계\nApp Store에서 'EasyAM 공휴일 알람' 검색\nAndroid는 Google Play에서\n\n#스마트공휴일알람시계 #교대근무 #평일 #근무일 #EasyAM공휴일알람\n\nApp Store에서 받기: https://apps.apple.com/kr/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/de",
+    "locale": "de",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/0wklpa.mp4",
+    "hook": "Feiertage automatisch übersprungen",
+    "name": "EasyAM: Wecker ohne Feiertage",
+    "title": "Feiertage automatisch übersprungen | Klingelt auch im Urlaub nicht | EasyAM Wecker",
+    "tags": [
+     "#WeckerOhneFeiertage",
+     "#Schichtwecker",
+     "#Schicht",
+     "#Schichtplan",
+     "#Schichtdienst",
+     "#EasyAMWecker"
+    ],
+    "caption": "Feiertage automatisch übersprungen\nUrlaub eintragen, der Wecker bleibt still\nKlingelt auch im Urlaub nicht\nEasyAM: Wecker ohne Feiertage\nIm App Store nach „EasyAM Wecker“ suchen\nAuch bei Google Play\n\n#WeckerOhneFeiertage #Schichtwecker #Schicht #Schichtplan #EasyAMWecker",
+    "button": "Im App Store laden",
+    "variant": "b",
+    "alt": "EasyAM: Wecker ohne Feiertage — Feiertage automatisch übersprungen — Urlaub eintragen, der Wecker bleibt still — Klingelt auch im Urlaub nicht",
+    "store": "https://apps.apple.com/de/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "Sie nutzen diese App bereits? Bewerten oder rezensieren Sie sie im App Store",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "Schichtwecker",
+     "Schicht",
+     "Schichtplan",
+     "Schichtdienst",
+     "Arbeit",
+     "Brückentage"
+    ],
+    "keyline": "Klingelt auch im Urlaub nicht",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Feiertage automatisch übersprungen\nUrlaub eintragen, der Wecker bleibt still\nKlingelt auch im Urlaub nicht\nEasyAM: Wecker ohne Feiertage\nIm App Store nach „EasyAM Wecker“ suchen\nAuch bei Google Play\n\n#WeckerOhneFeiertage #Schichtwecker #Schicht #Schichtplan #EasyAMWecker\n\nIm App Store laden: https://apps.apple.com/de/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
+    }
+   },
+   {
+    "kind": "clip",
+    "key": "easyam/pt-BR",
+    "locale": "pt-BR",
+    "app": "easyam",
+    "video": "https://files.catbox.moe/kw4hys.mp4",
+    "hook": "Feriados pulados automaticamente",
+    "name": "EasyAM: Despertador e Feriados",
+    "title": "Feriados pulados automaticamente | Alarme que só toca em dia útil | EasyAM despertador",
+    "tags": [
+     "#DespertadorEFeriados",
+     "#Feriado",
+     "#Folga",
+     "#Escala",
+     "#Turno",
+     "#EasyAMDespertador"
+    ],
+    "caption": "Feriados pulados automaticamente\nAdicione folgas e o alarme não toca\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “EasyAM despertador” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Feriado #Folga #Escala #EasyAMdespertador",
+    "button": "Baixar na App Store",
+    "variant": "b",
+    "alt": "EasyAM: Despertador e Feriados — Feriados pulados automaticamente — Adicione folgas e o alarme não toca — Alarme que só toca em dia útil",
+    "store": "https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=social&mt=8",
+    "play": "https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam",
+    "review": {
+     "label": "Já usa este app? Avalie ou escreva uma resenha na App Store",
+     "url": "https://apps.apple.com/app/id6821790092?action=write-review"
+    },
+    "keywords": [
+     "feriado",
+     "folga",
+     "escala",
+     "turno",
+     "plantão",
+     "trabalho"
+    ],
+    "keyline": "Alarme que só toca em dia útil",
+    "compliance": {
+     "store_claims_ok": true,
+     "screen_text_ok": true,
+     "board": "f45a7a4e972af86c",
+     "real_recording": false,
+     "rules": "2026-10-18"
+    },
+    "tiktok": {
+     "caption": "Feriados pulados automaticamente\nAdicione folgas e o alarme não toca\nAlarme que só toca em dia útil\nEasyAM: Despertador e Feriados\nPesquise “EasyAM despertador” na App Store\nTambém no Google Play\n\n#DespertadorEFeriados #Feriado #Folga #Escala #EasyAMdespertador\n\nBaixar na App Store: https://apps.apple.com/br/app/id6821790092?pt=118326163&ct=social&mt=8\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.Offday&referrer=utm_source%3Dsocial%26utm_campaign%3Deasyam"
+    }
    }
   ]
  },
@@ -68818,11 +69826,11 @@
    "wifiaidlite"
   ],
   "demote": [
-   "qrcodehalo",
    "ledmovingtext",
    "wordmate",
    "lumiletters",
-   "lumimath"
+   "lumimath",
+   "lumimission"
   ],
   "hook_winners": {
    "apps": {
@@ -68839,10 +69847,10 @@
    "instagram": {
     "zh-Hant": {
      "hour": 5,
-     "avg_views": 4.0,
-     "posts": 11,
+     "avg_views": 2.7,
+     "posts": 14,
      "hours": {
-      "5": 4.0,
+      "5": 2.7,
       "9": 0.3
      }
     }
@@ -68850,28 +69858,28 @@
    "threads": {
     "en": {
      "hour": 8,
-     "avg_views": 11.7,
+     "avg_views": 12.0,
      "posts": 15,
      "hours": {
       "1": 9.3,
-      "8": 11.7,
+      "8": 12.0,
       "13": 6.0,
-      "16": 7.5
+      "16": 8.0
      }
     },
     "zh-Hant": {
      "hour": 13,
-     "avg_views": 79.0,
+     "avg_views": 80.5,
      "posts": 11,
      "hours": {
       "6": 27.5,
-      "13": 79.0,
+      "13": 80.5,
       "16": 10.0,
       "23": 6.0
      }
     }
    }
   },
-  "updated_at": "2026-10-20T04:38:15Z"
+  "updated_at": "2026-10-21T04:30:47Z"
  }
 }

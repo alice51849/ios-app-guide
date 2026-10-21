@@ -743,11 +743,15 @@ TG_CAPTION_MAX = 1024   # sendPhoto caption
 TG_TEXT_MAX = 4096      # sendMessage text
 
 
-def with_duo(item, tail):
+def with_duo(item, tail, known=None):
     """The item's text with the iPhone Duo line after it (duo_line.py, copy of 00_GrowthEngine aso/duo/duo_line.py:
     only an App duo_list.load() can claim, the reviewed social_line of its language, live version re-read), when the
     whole post (`tail`: links and footer) still fits Telegram's limit (the caption one when the post has a picture).
-    Left as it is otherwise or on any error: no Duo line rather than a failed post or a dropped link."""
+    Left as it is otherwise or on any error: no Duo line rather than a failed post or a dropped link. known: a line
+    of duo_line.known_lines() put after the text with no list / live-version check, only to rebuild a text that may
+    have gone out with it (_sent_digests), never to send."""
+    if known is not None:
+        return f"{item['text']}\n\n{known}"
     try:
         limit = TG_CAPTION_MAX if item_image_url(item) else TG_TEXT_MAX
         return duo_line.append(item["text"], item.get("app"), item.get("lang"), limit - len(tail))
@@ -757,6 +761,7 @@ def with_duo(item, tail):
 
 
 def compose_text(item, android=True, review=True, ct=None, legacy_play=False, channel_level=True, duo=True):
+    # duo: True (the line when due), False (none), or a line of duo_line.known_lines() (rebuild only, see with_duo)
     """The post text. Its links carry the Telegram campaign (download_links.coarse_campaign turns the label,
     soc_tg_<app> by default, into "telegram"); channel_level=False rebuilds a text sent before 2026-10-17 with the
     label itself as ct, so _sent_digests still recognises it; duo=False rebuilds a text without the iPhone Duo line
@@ -776,6 +781,8 @@ def compose_text(item, android=True, review=True, ct=None, legacy_play=False, ch
     if rate:
         links += "\n📝 " + "\n".join(review_links.lines(rate))
     tail = f"\n\n{links}\n\n{item_footer(item)}"
+    if isinstance(duo, str):
+        return f"{with_duo(item, tail, known=duo)}{tail}"
     return f"{with_duo(item, tail) if duo else item['text']}{tail}"
 
 
@@ -1056,8 +1063,18 @@ def _sent_digests(item):
         for android, legacy in ((True, False), (True, True), (False, False))
         for review in (True, False)
         for channel_level in (True, "channel", False)
-        for duo in (True, False)
+        for duo in (True, False, *_known_duo_lines(item))
     }
+
+
+def _known_duo_lines(item):
+    """The iPhone Duo lines a text of this item may have gone out with (duo_line.known_lines: no list or live-version
+    check), so a text sent with the line still counts as sent when the line is not due any more (live version not
+    readable, App off the list)."""
+    try:
+        return tuple(duo_line.known_lines(item.get("lang")))
+    except Exception:  # noqa: BLE001
+        return ()
 
 
 # Paying markets first (00_GrowthEngine reports/conversion_focus_2026-10-16.md: 7-day paid storefronts

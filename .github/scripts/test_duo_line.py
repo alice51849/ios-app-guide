@@ -75,7 +75,7 @@ LINE = "Got an iPhone Duo? The app now fills the whole inner screen, folded or o
 MOCHI = "6785004775"
 
 
-def pool_item(text="My to-do list used to stress me out more than the tasks did. Now it is cute."):
+def pool_item(text="My to-do list used to stress me out more than the tasks did. Now it is cute, and I check it."):
     return {"app": MOCHI, "url": f"https://apps.apple.com/app/id{MOCHI}", "lang": "en-US", "text": text,
             "app_key": "mochi"}
 
@@ -103,14 +103,15 @@ class DuoOutletTest(unittest.TestCase):
 
     def test_threads_body_carries_the_line_and_no_url(self):
         body = TP.compose_body(pool_item())
-        self.assertIn(f"Now it is cute.\n\n{LINE}\n\n", body)
+        self.assertIn(f"and I check it.\n\n{LINE}\n\n", body)
         self.assertNotIn("http", body)
         self.assertLessEqual(len(body), TP.MAX_POST_CHARS)
 
     def test_threads_no_line_when_too_long_short_other_app_or_error(self):
         long = "x" * (TP.MAX_POST_CHARS - 60)
         self.assertNotIn("iPhone Duo", TP.compose_body(pool_item(long)))                 # would pass 500
-        self.assertEqual(TP.with_duo("Short text", MOCHI, "en-US"), "Short text")        # < 40: rerun lookup
+        self.assertEqual(TP.with_duo("Short text", MOCHI, "en-US"), "Short text")        # < 80: rerun lookup
+        self.assertEqual(TP.with_duo("s" * 79, MOCHI, "en-US"), "s" * 79)
         self.assertEqual(TP.with_duo("y" * 60, "1", "en-US"), "y" * 60)                  # not claimable
         self.assertEqual(TP.with_duo("y" * 60, MOCHI, "ja"), "y" * 60)                   # no line in that language
         with mock.patch.object(D, "append", side_effect=RuntimeError("boom")):
@@ -123,6 +124,29 @@ class DuoOutletTest(unittest.TestCase):
         self.assertEqual(T.download_link_problems(item, text), [])
         self.assertIn(T._digest(T.compose_text(item, duo=False)), T._sent_digests(item))
         self.assertIn(T._digest(text), T._sent_digests(item))
+        with mock.patch.object(D, "line", return_value=""):                               # line not due any more
+            self.assertIn(T._digest(text), T._sent_digests(item))                          # still counts as sent
+
+    def test_threads_rerun_without_the_line_still_finds_the_post(self):
+        posted = TP.compose_body(pool_item())
+        self.assertIn(LINE, posted)
+        rows = [{"id": "p1", "text": posted, "timestamp": "2026-10-21T03:00:00+0000"}]
+
+        class Resp:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+            def read(self):
+                return json.dumps({"data": rows}).encode()
+
+        with mock.patch.object(D, "line", return_value=""):
+            again = TP.compose_body(pool_item())
+        self.assertNotIn("iPhone Duo", again)
+        import datetime as _dt
+        self.assertEqual(TP.find_own_post("t", again, _dt.date(2026, 10, 21), opener=lambda *a, **k: Resp()), "p1")
 
     def test_telegram_caption_limit_with_a_picture(self):
         item = dict(pool_item("z" * 700), image_url="https://example.com/a.jpg")

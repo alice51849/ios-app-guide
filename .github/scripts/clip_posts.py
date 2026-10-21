@@ -231,9 +231,13 @@ def caption(clip, channel, variant=None, tag=None):
     try:
         duo = duo_line.line(ios_id(clip), clip.get("locale"))
         limit = post_qa.LIMITS.get(channel)
-        if not duo or duo_line.NAME in plain or (limit and len(plain) + len(duo) + 1 > limit):
+        if not duo or duo_line.NAME in plain:
             return plain
-        return _caption(clip, channel, variant, tag, duo)
+        with_line = _caption(clip, channel, variant, tag, duo)
+        # Taken only when it is the plain caption with the one line added: nothing trimmed, within the limit.
+        if (limit and len(with_line) > limit) or with_line.replace(f"\n{duo}", "", 1) != plain:
+            return plain
+        return with_line
     except Exception as error:  # noqa: BLE001 - no Duo line rather than no post
         print(f"clip: iPhone Duo line skipped ({error.__class__.__name__})")
         return plain

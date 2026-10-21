@@ -144,6 +144,14 @@ def line(app, lang, lookup=None):
     return passed[loc]
 
 
+def known_lines(lang):
+    """claim_lines.json 裡這個語系的 social_line（不看清單、複審、線上版本）：只給「已發過沒」的比對用，
+    讓一則帶句發出的貼文在之後查不到線上版本時仍認得出來（不重發）；不可拿來發文。"""
+    _by, lines, _passed = _state()
+    loc = locale_of(lang, lines)
+    return [lines[loc].strip()] if loc and lines[loc].strip() else []
+
+
 def fits(text, duo, limit, sep="\n\n"):
     return bool(duo) and NAME not in (text or "") and (limit is None or len(text or "") + len(sep) + len(duo) <= limit)
 

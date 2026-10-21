@@ -117,10 +117,11 @@ def with_duo(text, app, lang, rest=""):
     """The main text with the iPhone Duo line after it (duo_line.py, copy of 00_GrowthEngine aso/duo/duo_line.py:
     only an App duo_list.load() can claim, the reviewed social_line of its language, live version re-read). Left as
     it is when the post (with `rest`, the part that follows) would pass 500 characters, when the text is shorter than
-    the 40 characters a rerun needs to find the post by its first 80 (find_own_post / find_trial_post), or on any
-    error: no Duo line rather than a failed post. No URL in it, so the link stays in the first reply."""
+    80 characters (a rerun finds the post by its first 80, find_own_post / find_trial_post: with a longer text the
+    line falls past them, so a rerun that could not add it still finds the post), or on any error: no Duo line
+    rather than a failed post. No URL in it, so the link stays in the first reply."""
     try:
-        if len(_norm(text)) < 40:
+        if len(_norm(text)) < 80:
             return text
         return duo_line.append(text, app, lang, MAX_POST_CHARS - len(rest))
     except Exception as error:  # noqa: BLE001

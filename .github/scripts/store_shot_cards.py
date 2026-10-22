@@ -202,6 +202,183 @@ def caption(clip, variant):
     return clip_posts.caption(clip, "instagram", variant, tag=FEED_CT)
 
 
+# ---------------------------------------------------------------- "5 apps" list carousels (methods50 #32)
+#
+# 2026-10-22 (50 methods dept, via the coordinator): the "must-have top 5" list format. A list that names only our
+# own apps is not believed, so every list carries at least 3 apps of other developers and ours is one of the 5.
+# Nothing is ranked by us: the list is Apple's own App Store search order for the app's head term, copied from the
+# app's live comparison page (support_network/gen_market_snapshot.py, open.cait518.cc/<site>/compare*.html: rank,
+# name, developer, rating, rating count, last update, fetch date). Our app is in the top 5 there, or it is shown
+# as the fifth card with its real search position. No prices, no "best", no links to the other apps.
+# The first carousel after the 10-22 restore uses this format, then one a week (TOP5_EVERY_DAYS).
+TOP5_EVERY_DAYS = 7
+TOP5_MIN_OTHERS = 3
+COMPARE_ROOT = "https://open.cait518.cc"
+COMPARE_SUFFIX = {"en": "", "zh-Hant": ".zh-Hant", "ja": ".ja", "ko": ".ko"}
+SUPPORT_SITE = {"mochi": "mochitodo-support", "claudeusagemini": "usagenow-support", "sereno": "sereno-support",
+                "lumibopomofo": "lumi-support"}
+TOP5_TEXT = {
+    "en": {"hook": "“{term}” on the App Store: 5 apps, in Apple's search order",
+           "sub": "Apple's search order · {date} · We made one of these 5",
+           "line": "{rank}. {app} ({dev}) ★{rating}", "ours": "← made by us",
+           "badge": "Made by us", "rating": "★ {rating} · {count} ratings", "updated": "Updated {date}",
+           "pos": "App Store search position {rank}",
+           "honest": "The order is Apple's own search result ({date}); we did not score anything and have no ties with the other developers."},
+    "zh-Hant": {"hook": "「{term}」在 App Store 搜得到的 5 款 App（照 Apple 實際順序）",
+                "sub": "Apple 搜尋實際順序・{date}・其中一款是我們做的",
+                "line": "{rank}. {app}（{dev}）★{rating}", "ours": "← 我們做的",
+                "badge": "我們做的 App", "rating": "★ {rating}・{count} 則評分", "updated": "最近更新 {date}",
+                "pos": "App Store 搜尋順序 {rank}",
+                "honest": "排列照 App Store 搜尋實際順序（{date}），我們沒有另外打分，也和其他開發者沒有任何關係。"},
+    "ja": {"hook": "「{term}」App Store 検索で出てくる5本（Apple の表示順）",
+           "sub": "Apple の検索表示順・{date}・うち1本は私たちのアプリです",
+           "line": "{rank}. {app}（{dev}）★{rating}", "ours": "← 私たちのアプリ",
+           "badge": "私たちのアプリ", "rating": "★ {rating}・評価 {count} 件", "updated": "最終更新 {date}",
+           "pos": "App Store 検索の表示順 {rank}",
+           "honest": "並びは App Store 検索の実際の表示順（{date}）で、私たちは採点しておらず、他の開発者とは無関係です。"},
+}
+TOP5_PALETTE = ((54, 64, 120), (122, 82, 160))
+TOP5_FIRST = ("mochi",)   # the flagship (owner 2026-10-20: Cute To-Do first) gets the list first when it fits
+
+
+def compare_url(app, locale):
+    site = SUPPORT_SITE.get(app) or f"{app}-support"
+    return f"{COMPARE_ROOT}/{site}/compare{COMPARE_SUFFIX.get(locale, '.' + locale)}.html"
+
+
+def parse_compare(page):
+    """The comparison page as {"term", "date", "rows": [{rank, app, dev, rating, count, updated, ours}]}; None when
+    the page is not one (no table, no own row)."""
+    import html as _html
+    rows = []
+    for m in re.finditer(r"<tr( class=\"ours\")?>(.*?)</tr>", page or "", re.S):
+        cells = [re.sub(r"\s+", " ", _html.unescape(re.sub(r"<[^>]+>", " ", c))).strip()
+                 for c in re.findall(r"<td[^>]*>(.*?)</td>", m.group(2), re.S)]
+        if len(cells) < 7 or not cells[0].isdigit():
+            continue
+        app = re.sub(r"<[^>]+>", "", re.sub(r'<span class="tag">.*?</span>', "", re.findall(r"<td[^>]*>(.*?)</td>", m.group(2), re.S)[1]))
+        rows.append({"rank": int(cells[0]), "app": _html.unescape(app).strip(), "dev": cells[2], "rating": cells[3],
+                     "count": cells[4], "updated": cells[6], "ours": bool(m.group(1))})
+    h1 = re.search(r"<h1[^>]*>(.*?)</h1>", page or "", re.S)
+    term = re.search(r"[「“\"](.+?)[」”\"]", _html.unescape(h1.group(1))) if h1 else None
+    date = re.search(r'"dateModified":\s*"(\d{4}-\d{2}-\d{2})', page or "") or re.search(r"(\d{4}-\d{2}-\d{2})", page or "")
+    if not rows or not any(r["ours"] for r in rows) or not term:
+        return None
+    return {"term": term.group(1), "date": date.group(1) if date else "", "rows": rows}
+
+
+def top5_rows(rows):
+    """Apple's first 5 when ours is among them, else the first 4 others + ours (with its real position).
+    None when fewer than TOP5_MIN_OTHERS other developers' apps would be on the list."""
+    ours = next((r for r in rows if r["ours"]), None)
+    others = [r for r in rows if not r["ours"]]
+    if not ours:
+        return None
+    picks = rows[:5] if ours["rank"] <= 5 and ours in rows[:5] else others[:4] + [ours]
+    if sum(1 for r in picks if not r["ours"]) < TOP5_MIN_OTHERS:
+        return None
+    return picks
+
+
+def top5_due(posts, day):
+    cutoff = (day - dt.timedelta(days=TOP5_EVERY_DAYS)).isoformat()
+    return not any(p.get("channel") == CHANNEL and "/top5/" in str(p.get("clip", ""))
+                   and str(p.get("posted_at", ""))[:10] >= cutoff for p in posts or [])
+
+
+def top5_caption(clip, snap, picks):
+    t = TOP5_TEXT.get(clip["locale"]) or TOP5_TEXT["en"]
+    lines = [t["hook"].format(term=snap["term"]), ""]
+    for r in picks:
+        line = t["line"].format(rank=r["rank"], app=r["app"], dev=r["dev"], rating=r["rating"])
+        if r["rating"] in ("", "—", "-"):
+            line = line.rsplit(" ★", 1)[0]
+        lines.append(f"{line} {t['ours']}" if r["ours"] else line)
+    lines += ["", t["honest"].format(date=snap["date"]), IGB.bio_line(clip["locale"])]
+    limit = SC.TAG_LIMIT.get("instagram", 5)
+    tags = IGB.hashtags(lambda n: SC.tags(clip, n), clip["name"], clip.get("store_url"), limit)
+    text = "\n".join(lines + (["", " ".join(tags)] if tags else []))
+    return IGB.caption(text, clip["name"], clip["locale"], clip.get("store_url"), max_len=post_qa.LIMITS["instagram"],
+                       tag_limit=limit, label=f"feed top5 {clip.get('app')}/{clip.get('locale')}")
+
+
+def compose_text_card(lines, clip, out, badge=None, footer=False):
+    """A 1080x1350 text card on the list palette: big first line, then the smaller lines; an optional badge.
+    footer=True prints our app's name at the bottom (the cover and our own card only, never another app's card)."""
+    from PIL import Image, ImageDraw, ImageFont
+    img = Image.new("RGB", (W, H))
+    cd.gradient(ImageDraw.Draw(img), W, H, *TOP5_PALETTE)
+    draw = ImageDraw.Draw(img)
+    idx = cd.FONT_INDEX.get(clip["locale"], 0)
+    f = lambda size: ImageFont.truetype(cd.FONT, size, index=idx)
+    y = 170
+    for n, text in enumerate(lines):
+        start = 120 if n == 0 else 56
+        wrapped, size = cd.wrap(draw, text, f, start, W - 160)
+        for line in wrapped[:4]:
+            draw.text(((W - draw.textlength(line, font=f(size))) / 2, y), line, font=f(size), fill=cd.WHITE)
+            y += int(size * 1.3)
+        y += 40
+    if badge:
+        size = 48
+        bw = draw.textlength(badge, font=f(size)) + 80
+        x0, y0 = (W - bw) / 2, H - 260
+        draw.rounded_rectangle([x0, y0, x0 + bw, y0 + 96], radius=48, fill=(255, 214, 102))
+        draw.text((x0 + 40, y0 + 22), badge, font=f(size), fill=(40, 30, 60))
+    if footer:
+        name = clip.get("name", "")
+        draw.text(((W - draw.textlength(name, font=f(36))) / 2, H - 110), name, font=f(36), fill=cd.WHITE)
+    img.save(out, "JPEG", quality=90)
+    return out
+
+
+def make_top5(out_dir, day, slot, data, posts, page_fetcher=None):
+    """The week's list carousel: the first app (planner order, not featured this week) whose comparison page in a
+    slot locale has our row and at least 3 other developers in the 5. None when no app fits."""
+    page_fetcher = page_fetcher or (lambda url: fetch(url, timeout=30).decode("utf-8"))
+    week_apps, _ = recent(posts, day, APP_COOLDOWN_DAYS)
+    clips = data.get("clips", {})
+    order = app_order(data)
+    order = [a for a in TOP5_FIRST if a in order] + [a for a in order if a not in TOP5_FIRST]
+    for app in order:
+        if app in week_apps or app.endswith("_b"):
+            continue
+        for locale in SLOT_LOCALES.get(slot) or SLOT_LOCALES[19]:
+            clip = clips.get(f"{app}/{locale}")
+            if not clip or not clip.get("store_url") or locale not in TOP5_TEXT:
+                continue
+            try:
+                snap = parse_compare(page_fetcher(compare_url(app, locale)))
+            except Exception:
+                continue
+            picks = top5_rows(snap["rows"]) if snap else None
+            if not picks:
+                continue
+            t = TOP5_TEXT[locale]
+            out_dir = Path(out_dir)
+            out_dir.mkdir(parents=True, exist_ok=True)
+            cards = [compose_text_card([t["hook"].format(term=snap["term"]), t["sub"].format(date=snap["date"])],
+                                       clip, out_dir / "01.jpg", footer=True).name]
+            for i, r in enumerate(picks):
+                body = [f"{r['rank']}", r["app"], r["dev"]]
+                if r["rating"] not in ("", "—", "-"):
+                    body.append(t["rating"].format(rating=r["rating"], count=r["count"]))
+                body.append(t["updated"].format(date=r["updated"]))
+                if r["ours"] and r["rank"] > 5:
+                    body.insert(1, t["pos"].format(rank=r["rank"]))
+                cards.append(compose_text_card(body, clip, out_dir / f"{i + 2:02d}.jpg",
+                                               badge=t["badge"] if r["ours"] else None, footer=r["ours"]).name)
+            listed = sorted({x for r in picks if not r["ours"] for x in (r["app"], r["dev"])})
+            plan = {"key": f"{KEY_PREFIX}{app}/{locale}/top5/{day.isoformat()}", "app": app, "locale": locale,
+                    "slot": slot, "date": day.isoformat(), "variant": "top5", "cards": cards,
+                    "caption": top5_caption(clip, snap, picks), "store_url": clip["store_url"],
+                    "name": clip.get("name", ""), "alt": t["hook"].format(term=snap["term"]), "listed": listed,
+                    "source": compare_url(app, locale)}
+            (out_dir / "plan.json").write_text(json.dumps(plan, ensure_ascii=False, indent=1), encoding="utf-8")
+            return plan
+    return None
+
+
 def make(out_dir, day, slot, data=None, posts=None, fetcher=fetch):
     """Render the slot's carousel into out_dir (NN.jpg + plan.json). Returns the plan, or None (nothing due,
     allowance used up, no screenshots)."""
@@ -211,6 +388,13 @@ def make(out_dir, day, slot, data=None, posts=None, fetcher=fetch):
     if left is not None and left <= 0:
         print(f"feed: {done} of today's {allowed} carousels already out (volume-ramp.json); nothing to make")
         return None
+    if top5_due(posts, day):
+        plan = make_top5(out_dir, day, slot, data, posts,
+                         page_fetcher=lambda url: fetcher(url).decode("utf-8", "replace"))
+        if plan:
+            print(f"feed: list carousel {plan['key']} from {plan['source']}")
+            return plan
+        print("feed: no list carousel fits this slot; the screenshot carousel instead")
     key, clip = pick(data, posts, day, slot)
     if not clip:
         print("feed: no app fits this slot (all featured recently)")
@@ -294,7 +478,7 @@ def post_instagram(plan, base_url, wait=PAUSE, tries=40):
 def qa(plan, online=True):
     """The pre-post QA gate on the exact caption (store name as the allowed brand word)."""
     return post_qa.card_problems(plan["caption"], plan["locale"], "instagram", store_url=plan["store_url"],
-                                 name=plan["name"], online=online, require_bio=True)
+                                 name=plan["name"], online=online, require_bio=True, listed=tuple(plan.get("listed", ())))
 
 
 def main(argv=None):

@@ -246,5 +246,93 @@ class PostTest(unittest.TestCase):
         self.assertIn("--slots " + ",".join(str(h) for h in sorted(slots)), text)
 
 
+def compare_page(ours_rank=8, others=8):
+    """A comparison page shaped like support_network/gen_market_snapshot.py writes it."""
+    names = [("提醒事項", "Apple"), ("極簡待辦", "InnerGrow"), ("LockDay: 待辦清單與計畫", "Dat Pham"),
+             ("今日待辦", "冬魁 岳"), ("便利貼 - 日程計劃清單、便簽小组件", "楠 唐"), ("To Do List", "BetterApp Tech Co., Limited"),
+             ("共用行事曆：TimeTree", "TimeTree, Inc."), ("Yondo 待辦清單", "Ryunosuke Nagase")][:others]
+    rows, rank = [], 1
+    for i, (app, dev) in enumerate(names):
+        if rank == ours_rank:
+            rows.append('<tr class="ours"><td>%d</td><td><a href="https://apps.apple.com/app/id1?ct=sup_x_cmp">'
+                        'mochi name</a> <span class="tag">本站的 App</span></td><td>Guan Feng Lai</td><td>5.0</td>'
+                        '<td>4</td><td>免費</td><td>2026-10-09</td></tr>' % rank)
+            rank += 1
+        rows.append(f"<tr><td>{rank}</td><td>{app}</td><td>{dev}</td><td>4.8</td><td>1,234</td><td>免費</td><td>2026-10-19</td></tr>")
+        rank += 1
+    return ('<html><script type="application/ld+json">{"dateModified": "2026-10-20"}</script>'
+            '<h1>「代辦事項」在台灣 App Store 的前 9 名搜尋結果</h1><table><tr><th>名次</th></tr>' + "".join(rows) + "</table></html>")
+
+
+class Top5Test(unittest.TestCase):
+    def test_the_list_has_ours_and_at_least_three_other_developers(self):
+        snap = S.parse_compare(compare_page(ours_rank=8))
+        self.assertEqual(snap["term"], "代辦事項")
+        self.assertEqual(snap["date"], "2026-10-20")
+        picks = S.top5_rows(snap["rows"])
+        self.assertEqual(len(picks), 5)
+        self.assertEqual([r["rank"] for r in picks], [1, 2, 3, 4, 8])      # ours is shown with its real position
+        self.assertTrue(picks[-1]["ours"])
+        inside = S.top5_rows(S.parse_compare(compare_page(ours_rank=2))["rows"])
+        self.assertEqual([r["rank"] for r in inside], [1, 2, 3, 4, 5])
+        self.assertIsNone(S.top5_rows(S.parse_compare(compare_page(ours_rank=1, others=2))["rows"]))
+        self.assertIsNone(S.parse_compare("<h1>「x」</h1><table><tr><td>1</td></tr></table>"))   # no own row
+
+    def test_due_once_a_week(self):
+        day = dt.date(2026, 10, 23)
+        self.assertTrue(S.top5_due([], day))
+        posts = [{"channel": S.CHANNEL, "clip": "feed/mochi/zh-Hant/top5/2026-10-20", "posted_at": "2026-10-20T07:30:00Z"}]
+        self.assertFalse(S.top5_due(posts, day))
+        self.assertTrue(S.top5_due(posts, dt.date(2026, 10, 28)))
+
+    def test_make_builds_the_list_plan_and_its_caption_passes_the_gate(self):
+        d = data(("mochi", "zh-Hant"))
+        with tempfile.TemporaryDirectory() as tmp, \
+                mock.patch.object(S, "compose_text_card", side_effect=lambda lines, clip, out, badge=None, footer=False: Path(out)), \
+                mock.patch.object(S.volume_ramp, "room", return_value=(1, 0, 1)):
+            plan = S.make(tmp, dt.date(2026, 10, 23), 7, data=d, posts=[],
+                          fetcher=lambda url: compare_page().encode() if "compare" in url else b"")
+        self.assertIn("/top5/", plan["key"])
+        self.assertEqual(len(plan["cards"]), 6)                               # cover + 5 apps
+        self.assertIn("TimeTree, Inc.", plan["listed"]) if "TimeTree" in plan["caption"] else None
+        cap = plan["caption"]
+        self.assertIn("8. mochi name（Guan Feng Lai）", cap)
+        self.assertIn("1. 提醒事項（Apple）", cap)
+        self.assertNotRegex(cap, r"https?://")                               # Instagram: no URL, the bio line instead
+        self.assertNotIn("免費", cap)                                          # no price words
+        self.assertEqual(S.qa(plan, online=False), [])
+
+    def test_a_list_naming_a_known_competitor_passes_only_through_the_listed_names(self):
+        d = data(("mochi", "zh-Hant"))
+        page = compare_page(ours_rank=8).replace("<td>提醒事項</td>", "<td>TimeTree</td>")
+        with tempfile.TemporaryDirectory() as tmp, \
+                mock.patch.object(S, "compose_text_card", side_effect=lambda lines, clip, out, badge=None, footer=False: Path(out)):
+            plan = S.make_top5(tmp, dt.date(2026, 10, 23), 7, d, [], page_fetcher=lambda url: page)
+        self.assertIn("TimeTree", plan["caption"])
+        self.assertEqual(S.qa(plan, online=False), [])
+        self.assertTrue(S.qa(dict(plan, listed=[]), online=False))         # without them the gate refuses it
+
+    def test_no_comparison_page_falls_back_to_the_screenshot_carousel(self):
+        d = data(("mochi", "zh-Hant"))
+        def fetcher(url):
+            if "compare" in url:
+                raise OSError("404")
+            return shot_png()
+        with tempfile.TemporaryDirectory() as tmp, \
+                mock.patch.object(S, "shot_urls", return_value=["https://x/1.jpg", "https://x/2.jpg"]), \
+                mock.patch.object(S, "compose", side_effect=lambda b, h, c, out: Path(out)):
+            plan = S.make(tmp, dt.date(2026, 10, 23), 7, data=d, posts=[], fetcher=fetcher)
+        self.assertNotIn("/top5/", plan["key"])
+
+    @unittest.skipUnless(FONT, "needs a TrueType font")
+    def test_text_cards_are_drawn(self):
+        index = cd.FONT_INDEX if "NotoSansCJK" in FONT else {}
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(cd, "FONT", FONT), \
+                mock.patch.object(cd, "FONT_INDEX", index):
+            out = S.compose_text_card(["8", "mochi name", "Guan Feng Lai"], clip("mochi", "zh-Hant"),
+                                      Path(tmp) / "c.jpg", badge="我們做的 App")
+            self.assertGreater(out.stat().st_size, 10_000)
+
+
 if __name__ == "__main__":
     unittest.main()

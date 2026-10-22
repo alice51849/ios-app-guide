@@ -425,7 +425,7 @@ def clip_problems(clip, channel, text, online=True, length=True):
 
 
 def card_problems(text, locale, channel, *, store_url, name, image=None, extra_facts=(), online=True, length=True,
-                  require_link=True, require_bio=False):
+                  require_link=True, require_bio=False, listed=()):
     """Everything that should stop one image card post. An Instagram text is always held to the Instagram rule
     (no URL, the profile-link line, the brand hashtag: bio_problems); require_bio is kept for the callers and
     asks for nothing more since that rule (owner 2026-10-17) covers every Instagram text."""
@@ -434,8 +434,10 @@ def card_problems(text, locale, channel, *, store_url, name, image=None, extra_f
         p = Path(image)
         if not p.is_file() or p.stat().st_size < 10_000:
             out.append(f"card image missing or empty: {image}")
-    facts, price = product_facts(store_url, (name, *extra_facts)) if online else ("\n".join((name, *extra_facts)), None)
-    out += text_problems(text, locale, channel, allowed=(name,), facts=facts, price=price, length=length)
+    # listed: other apps' names and developers copied from Apple's own search results (the "top 5" list carousels,
+    # store_shot_cards.make_top5): words the caption may carry verbatim, never a claim of ours.
+    facts, price = product_facts(store_url, (name, *extra_facts, *listed)) if online else ("\n".join((name, *extra_facts, *listed)), None)
+    out += text_problems(text, locale, channel, allowed=(name, *listed), facts=facts, price=price, length=length)
     if require_link or DL.is_instagram(channel):
         out += download_link_problems(text, store_url, channel)
     if require_bio or DL.is_instagram(channel):

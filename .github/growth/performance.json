@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-21T04:30:47Z",
+  "updated_at": "2026-10-22T04:29:05Z",
   "note": "Insights of our own IG / Threads posts by .github/scripts/post_performance.py. score = views + 3*likes + 5*replies + 8*(saves+shares+reposts). boost = best apps, read by 00_GrowthEngine shorts/scripts/schedule_posts.py.",
   "sources": {
-    "instagram": "ok: 25 posts",
-    "threads": "ok: 21 posts"
+    "instagram": "ok: 26 posts",
+    "threads": "ok: 20 posts"
   },
   "boost": [
     "onepageppt",
@@ -13,11 +13,11 @@
     "wifiaidlite"
   ],
   "demote": [
-    "ledmovingtext",
     "wordmate",
     "lumiletters",
     "lumimath",
-    "lumimission"
+    "lumimission",
+    "moneytag"
   ],
   "hook_winners": {
     "apps": {
@@ -55,10 +55,10 @@
     "instagram": {
       "zh-Hant": {
         "hour": 5,
-        "avg_views": 2.7,
-        "posts": 14,
+        "avg_views": 2.0,
+        "posts": 15,
         "hours": {
-          "5": 2.7,
+          "5": 2.0,
           "9": 0.3
         }
       }
@@ -142,10 +142,10 @@
       {
         "key": "claudeusagemini",
         "posts": 4,
-        "views": 62,
+        "views": 63,
         "engagement": 2,
-        "score": 72,
-        "avg_score": 18.0
+        "score": 73,
+        "avg_score": 18.2
       },
       {
         "key": "sononote",
@@ -172,20 +172,20 @@
         "avg_score": 10.0
       },
       {
+        "key": "zipbox",
+        "posts": 3,
+        "views": 27,
+        "engagement": 0,
+        "score": 27,
+        "avg_score": 9.0
+      },
+      {
         "key": "tripbee",
         "posts": 1,
         "views": 8,
         "engagement": 0,
         "score": 8,
         "avg_score": 8.0
-      },
-      {
-        "key": "zipbox",
-        "posts": 3,
-        "views": 21,
-        "engagement": 0,
-        "score": 21,
-        "avg_score": 7.0
       },
       {
         "key": "caldaily",
@@ -204,20 +204,20 @@
         "avg_score": 7.0
       },
       {
+        "key": "lumibopomofo",
+        "posts": 5,
+        "views": 18,
+        "engagement": 3,
+        "score": 31,
+        "avg_score": 6.2
+      },
+      {
         "key": "shotinbox",
         "posts": 1,
         "views": 6,
         "engagement": 0,
         "score": 6,
         "avg_score": 6.0
-      },
-      {
-        "key": "lumibopomofo",
-        "posts": 5,
-        "views": 18,
-        "engagement": 2,
-        "score": 28,
-        "avg_score": 5.6
       },
       {
         "key": "hourstag",
@@ -338,6 +338,14 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "key": "moneytag",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "locales": [
@@ -351,19 +359,19 @@
       },
       {
         "key": "zh-Hant",
-        "posts": 25,
-        "views": 444,
-        "engagement": 9,
-        "score": 489,
-        "avg_score": 19.6
+        "posts": 26,
+        "views": 450,
+        "engagement": 10,
+        "score": 498,
+        "avg_score": 19.2
       },
       {
         "key": "en",
         "posts": 22,
-        "views": 205,
+        "views": 206,
         "engagement": 3,
-        "score": 218,
-        "avg_score": 9.9
+        "score": 219,
+        "avg_score": 10.0
       },
       {
         "key": "cs",
@@ -494,6 +502,26 @@
         "avg_score": 14.0
       },
       {
+        "app": "zipbox",
+        "locale": "zh-Hant",
+        "hook": "先看裡面有什麼 只取那一個",
+        "posts": 1,
+        "views": 12,
+        "engagement": 0,
+        "score": 12,
+        "avg_score": 12.0
+      },
+      {
+        "app": "claudeusagemini",
+        "locale": "en",
+        "hook": "Translated into 50 languages",
+        "posts": 1,
+        "views": 10,
+        "engagement": 0,
+        "score": 10,
+        "avg_score": 10.0
+      },
+      {
         "app": "mochi",
         "locale": "en",
         "hook": "Right on your Home Screen",
@@ -507,16 +535,6 @@
         "app": "maskmyfile",
         "locale": "en",
         "hook": "You sent the bank statement. The account number was still on",
-        "posts": 1,
-        "views": 9,
-        "engagement": 0,
-        "score": 9,
-        "avg_score": 9.0
-      },
-      {
-        "app": "claudeusagemini",
-        "locale": "en",
-        "hook": "Translated into 50 languages",
         "posts": 1,
         "views": 9,
         "engagement": 0,
@@ -634,16 +652,6 @@
         "avg_score": 6.0
       },
       {
-        "app": "zipbox",
-        "locale": "zh-Hant",
-        "hook": "先看裡面有什麼 只取那一個",
-        "posts": 1,
-        "views": 6,
-        "engagement": 0,
-        "score": 6,
-        "avg_score": 6.0
-      },
-      {
         "app": "lumibopomofo",
         "locale": "zh-Hant",
         "hook": "",
@@ -754,6 +762,16 @@
         "avg_score": 3.0
       },
       {
+        "app": "lumibopomofo",
+        "locale": "zh-Hant",
+        "hook": "注音 原來這麼好玩！",
+        "posts": 1,
+        "views": 0,
+        "engagement": 1,
+        "score": 3,
+        "avg_score": 3.0
+      },
+      {
         "app": "qrcodehalo",
         "locale": "en",
         "hook": "Scanning never auto-opens a destination.",
@@ -797,16 +815,6 @@
         "app": "lumiletters",
         "locale": "zh-Hant",
         "hook": "",
-        "posts": 1,
-        "views": 0,
-        "engagement": 0,
-        "score": 0,
-        "avg_score": 0.0
-      },
-      {
-        "app": "lumibopomofo",
-        "locale": "zh-Hant",
-        "hook": "注音 原來這麼好玩！",
         "posts": 1,
         "views": 0,
         "engagement": 0,
@@ -862,32 +870,42 @@
         "engagement": 0,
         "score": 0,
         "avg_score": 0.0
+      },
+      {
+        "app": "moneytag",
+        "locale": "zh-Hant",
+        "hook": "",
+        "posts": 1,
+        "views": 0,
+        "engagement": 0,
+        "score": 0,
+        "avg_score": 0.0
       }
     ],
     "variants": [
       {
         "key": "b",
         "posts": 9,
-        "views": 90,
+        "views": 96,
         "engagement": 4,
-        "score": 108,
-        "avg_score": 12.0
+        "score": 114,
+        "avg_score": 12.7
       },
       {
         "key": "c",
         "posts": 11,
-        "views": 81,
+        "views": 82,
         "engagement": 4,
-        "score": 101,
-        "avg_score": 9.2
+        "score": 102,
+        "avg_score": 9.3
       },
       {
         "key": "a",
         "posts": 2,
         "views": 0,
-        "engagement": 0,
-        "score": 0,
-        "avg_score": 0.0
+        "engagement": 1,
+        "score": 3,
+        "avg_score": 1.5
       }
     ]
   },
@@ -1675,12 +1693,12 @@
       "metrics": {
         "views": 0,
         "reach": 0,
-        "likes": 0,
+        "likes": 1,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 0
+      "score": 3
     },
     {
       "channel": "instagram",
@@ -1839,14 +1857,14 @@
       "kind": "clip",
       "variant": "c",
       "metrics": {
-        "views": 9,
-        "reach": 5,
+        "views": 10,
+        "reach": 6,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 9
+      "score": 10
     },
     {
       "channel": "instagram",
@@ -1902,14 +1920,35 @@
       "kind": "clip",
       "variant": "b",
       "metrics": {
-        "views": 6,
-        "reach": 5,
+        "views": 12,
+        "reach": 10,
         "likes": 0,
         "saves": 0,
         "shares": 0,
         "replies": 0
       },
-      "score": 6
+      "score": 12
+    },
+    {
+      "channel": "instagram",
+      "id": "18141223282621514",
+      "link": "https://www.instagram.com/p/Devpm_TG74X/",
+      "posted_at": "2026-10-21T05:24:39",
+      "app": "moneytag",
+      "locale": "zh-Hant",
+      "hook": "",
+      "clip": "utility/ledger/moneytag/market_stall/zh-Hant",
+      "kind": "utility",
+      "variant": null,
+      "metrics": {
+        "views": 0,
+        "reach": 0,
+        "likes": 0,
+        "saves": 0,
+        "shares": 0,
+        "replies": 0
+      },
+      "score": 0
     }
   ]
 }

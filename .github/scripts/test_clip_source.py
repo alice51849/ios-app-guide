@@ -120,6 +120,14 @@ class ClipSourceTest(unittest.TestCase):
         self.assertEqual(path.read_bytes(), CLIP)
         self.assertEqual([p for p, _ in Host.log], ["/r/a.mp4", "/f/a.mp4"])
 
+    def test_the_served_url_has_the_redirect_followed(self):
+        with mock.patch.object(CS, "sources", return_value=[f"{self.base}/404/s.mp4", f"{self.base}/r/s.mp4"]), \
+                mock.patch("sys.stdout"):
+            path, served = CS.fetch_clip_url("https://files.catbox.moe/abc123.mp4", self.dir, label="t",
+                                             sleep=lambda s: None)
+        self.assertEqual(path.read_bytes(), CLIP)
+        self.assertEqual(served, f"{self.base}/f/s.mp4")
+
     def test_a_dropped_transfer_resumes_with_range(self):
         path = self.fetch_clip(f"{self.base}/cut/b.mp4")
         self.assertEqual(path.read_bytes(), CLIP)

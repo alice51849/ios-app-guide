@@ -20,8 +20,6 @@ import clip_progress as P  # noqa: E402
 import review_links as R  # noqa: E402
 import threads_cap  # noqa: E402
 
-REAL_RUPLOAD = C._rupload  # setUpModule puts a no-network stand-in on C._rupload
-
 
 def setUpModule():
     # threads_cap.py reads the account's 24-hour post count right before each top-level Threads post. These tests
@@ -30,16 +28,20 @@ def setUpModule():
     room = mock.patch.object(threads_cap, "quota_usage", return_value=0)
     room.__enter__()
     unittest.addModuleCleanup(room.__exit__, None, None, None)
-    # The clip is downloaded to the runner and uploaded as bytes (clip_source.py, _rupload): no network in these
-    # tests, so every post gets this stand-in file and the Instagram byte upload answers "success".
-    # ClipUploadTest covers the download, the multipart body and the resumable upload themselves.
+    # The clip is downloaded to the runner and checked before any platform sees it (clip_source.py): no network
+    # in these tests, so every post gets this stand-in file (and, for Instagram, the url that served it).
+    # ClipUploadTest covers the Telegram multipart body and the Instagram url; test_clip_source.py the download.
     global FAKE_CLIP
     FAKE_CLIP = Path(tempfile.mkdtemp(prefix="clip-test-")) / "clip.mp4"
     FAKE_CLIP.write_bytes(b"\x00\x00\x00\x10ftypisom\x00\x00\x00\x00fake-mp4-bytes")
     for patch in (mock.patch.object(C.CS, "fetch_clip", return_value=FAKE_CLIP),
-                  mock.patch.object(C, "_rupload", return_value=None)):
+                  mock.patch.object(C.CS, "fetch_clip_url", return_value=(FAKE_CLIP, SERVED_URL))):
         patch.__enter__()
         unittest.addModuleCleanup(patch.__exit__, None, None, None)
+
+
+# The address that served the checked clip (the release's signed download url, redirect already followed).
+SERVED_URL = "https://release-assets.githubusercontent.com/github-production-release-asset/1/x?se=2026-10-22&sig=s"
 
 
 def clip(app, locale):
@@ -1124,74 +1126,30 @@ class ClipUploadTest(unittest.TestCase):
         self.assertIsNone(seen["ctype"])
         self.assertEqual(seen["body"], b"creation_id=c1")
 
-    def test_reels_go_by_resumable_upload_to_the_containers_address(self):
+    def test_reels_get_the_checked_clips_served_url_not_the_redirect(self):
         calls = []
 
         def post(url, fields, timeout=60):
             calls.append((url.rsplit("/", 1)[-1], dict(fields)))
-            if url.endswith("/media"):
-                return {"id": "c1", "uri": "https://rupload.facebook.com/ig-api-upload/v21.0/c1"}
-            return {"id": "m1"}
+            return {"id": "c1" if url.endswith("/media") else "m1"}
 
         with mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t"}), mock.patch.object(C, "_post", side_effect=post), \
                 mock.patch.object(C, "_get", side_effect=[{}, {"user_id": "u"}, {"status_code": "FINISHED"}, {"permalink": "p"}]), \
                 mock.patch.object(C, "trial_plan", return_value=None), mock.patch.object(C.time, "sleep"), \
-                mock.patch.object(C, "_rupload") as up:
+                mock.patch.object(C.CS, "fetch_clip_url", return_value=(FAKE_CLIP, SERVED_URL)) as fetch:
             out = C.post_instagram(self.MOCHI)
+        self.assertEqual(fetch.call_args[0][0], self.MOCHI["url"])  # downloaded and checked before Instagram is asked
         self.assertEqual([c[0] for c in calls], ["media", "media_publish"])
-        media = calls[0][1]
-        self.assertEqual(media["upload_type"], "resumable")
-        self.assertNotIn("video_url", media)
-        self.assertNotIn("video", media)
-        self.assertEqual(up.call_args[0][0], "https://rupload.facebook.com/ig-api-upload/v21.0/c1")
-        self.assertEqual(up.call_args[0][1].path, FAKE_CLIP)
+        self.assertEqual(calls[0][1]["video_url"], SERVED_URL)
         self.assertEqual(out["id"], "m1")
-        # a container answer without "uri": the documented address for that container
-        calls.clear()
-        with mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t"}), \
-                mock.patch.object(C, "_post", side_effect=lambda u, f, timeout=60: {"id": "c9"} if u.endswith("/media") else {"id": "m"}), \
-                mock.patch.object(C, "_get", side_effect=[{}, {"user_id": "u"}, {"status_code": "FINISHED"}, {"permalink": "p"}]), \
-                mock.patch.object(C, "trial_plan", return_value=None), mock.patch.object(C, "_rupload") as up:
-            C.post_instagram(self.MOCHI)
-        self.assertEqual(up.call_args[0][0], f"{C.RUPLOAD}/c9")
 
-    def _rupload(self, answers, uri="https://rupload.facebook.com/ig-api-upload/v21.0/c1"):
-        seen = []
-
-        def urlopen(req, timeout):
-            seen.append({k.lower(): v for k, v in req.header_items()} | {"_body": req.data, "_url": req.full_url})
-            answer = answers.pop(0)
-            if isinstance(answer, Exception):
-                raise answer
-            return io.BytesIO(json.dumps(answer).encode())
-
-        with mock.patch.object(C.urllib.request, "urlopen", side_effect=urlopen), mock.patch.object(C.time, "sleep"):
-            REAL_RUPLOAD(uri, C.CS.Upload(FAKE_CLIP), "TOKEN")  # the real function, not the module-wide stand-in
-        return seen
-
-    def test_rupload_sends_the_bytes_with_the_documented_headers(self):
-        seen = self._rupload([{"success": True, "message": "Upload successful."}])
-        self.assertEqual(len(seen), 1)
-        self.assertEqual(seen[0]["authorization"], "OAuth TOKEN")
-        self.assertEqual(seen[0]["offset"], "0")
-        self.assertEqual(seen[0]["file_size"], str(FAKE_CLIP.stat().st_size))
-        self.assertEqual(seen[0]["_body"], FAKE_CLIP.read_bytes())
-
-    def test_rupload_retries_a_server_error_and_stops_on_a_refusal(self):
-        err = lambda code: C.urllib.error.HTTPError("u", code, "x", {}, io.BytesIO(b'{"debug_info":{"message":"x"}}'))  # noqa: E731
-        seen = self._rupload([err(503), C.urllib.error.URLError("reset"), {"success": True}])
-        self.assertEqual(len(seen), 3)
-        with self.assertRaises(RuntimeError) as ctx:
-            self._rupload([err(400)])
-        self.assertIn("HTTP 400", str(ctx.exception))
-        self.assertNotIn("TOKEN", str(ctx.exception))
-        with self.assertRaises(RuntimeError):
-            self._rupload([{"success": False}])
-
-    def test_rupload_never_sends_the_token_to_another_host(self):
-        for uri in ("https://example.com/ig-api-upload/c1", "http://rupload.facebook.com/x", "https://facebook.com.evil.io/x", ""):
-            with self.assertRaises(RuntimeError, msg=uri):
-                self._rupload([], uri=uri)
+    def test_a_clip_no_source_serves_never_reaches_instagram(self):
+        with mock.patch.dict(os.environ, {"IG_ACCESS_TOKEN": "t"}), mock.patch.object(C, "_post") as post, \
+                mock.patch.object(C, "_get", side_effect=[{}, {"user_id": "u"}]), \
+                mock.patch.object(C.CS, "fetch_clip_url", side_effect=C.CS.ClipUnavailable("no source")):
+            with self.assertRaises(C.CS.ClipUnavailable):
+                C.post_instagram(self.MOCHI)
+        post.assert_not_called()
 
     def test_a_clip_no_source_serves_is_red_posts_nothing_and_does_not_throttle(self):
         data = {"clips": {"a/en": clip("a", "en")},

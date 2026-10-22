@@ -4,11 +4,13 @@
 Why (2026-10-22): the posters handed clips.json "url" to the platform (Telegram sendVideo video=<url>,
 Instagram Reels video_url) and let the platform fetch it. files.catbox.moe stopped answering on 10-21, and the
 clips-mirror release that replaced it answers a GET with a 302 to a signed download host, serves
-application/octet-stream and refuses HEAD: Telegram answered "failed to get HTTP URL content" and Instagram
-"could not process the video". Now the runner fetches the clip itself and the posters upload the bytes
-(Telegram multipart sendVideo, Instagram resumable upload, YouTube videos.insert as before).
+application/octet-stream and refuses HEAD: Telegram answered "failed to get HTTP URL content". Now the runner
+fetches the clip itself first: Telegram gets the bytes (multipart sendVideo), YouTube uploads them as before,
+and Instagram (Instagram Login has no byte upload; resumable upload is for Facebook Login apps only) gets the
+url that just served the checked clip, with the redirect already followed.
 
-  fetch_clip(url, dest_dir, label)  -> Path of a checked mp4, or ClipUnavailable
+  fetch_clip(url, dest_dir, label)      -> Path of a checked mp4, or ClipUnavailable
+  fetch_clip_url(url, dest_dir, label)  -> (Path, the final url that served it, redirects followed)
       sources: the clips-mirror release first, catbox second (same id), any other url as it is;
       each source: redirects followed, a dropped transfer resumed with Range, retried with backoff;
       the file must be an ISO-BMFF mp4 whose top-level boxes start with ftyp, hold moov and mdat and end
@@ -123,9 +125,11 @@ def _open(url, start, timeout):
     return urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=timeout)
 
 
-def fetch(url, dest, tries=4, timeout=60, sleep=time.sleep):
-    """Download url to dest: '' when the whole body arrived, else the reason (no url, no secret in it)."""
+def fetch(url, dest, tries=4, timeout=60, sleep=time.sleep, info=None):
+    """Download url to dest: '' when the whole body arrived, else the reason (no url, no secret in it).
+    info (a dict), when given, gets "url": the address that served the last answer, after redirects."""
     dest = Path(dest)
+    info = {} if info is None else info
     dest.write_bytes(b"")
     have, total, last = 0, None, "no answer"
     for attempt in range(tries):
@@ -148,6 +152,7 @@ def fetch(url, dest, tries=4, timeout=60, sleep=time.sleep):
                     total = int(length) if length.isdigit() else None
                 if total is not None and total > MAX_BYTES:
                     return f"too large ({total} bytes)"
+                info["url"] = r.geturl()
                 with dest.open(mode) as out:
                     while True:
                         chunk = r.read(CHUNK)
@@ -174,16 +179,23 @@ def fetch(url, dest, tries=4, timeout=60, sleep=time.sleep):
 
 def fetch_clip(url, dest_dir=None, label="clip", tries=4, sleep=time.sleep):
     """The clip as a checked local mp4 (Path); ClipUnavailable when no source gives one."""
+    return fetch_clip_url(url, dest_dir, label, tries, sleep)[0]
+
+
+def fetch_clip_url(url, dest_dir=None, label="clip", tries=4, sleep=time.sleep):
+    """(checked local mp4, the url that served it after redirects); ClipUnavailable when no source gives one.
+    The served url of the clips-mirror release is a signed download address that lasts about an hour."""
     dest_dir = Path(dest_dir) if dest_dir else Path(tempfile.mkdtemp(prefix="clip-src-"))
     dest_dir.mkdir(parents=True, exist_ok=True)
     reasons = []
     for i, src in enumerate(sources(url)):
         dest = dest_dir / f"clip-{i}.mp4"
         host = urllib.parse.urlsplit(src).hostname or "?"
-        err = fetch(src, dest, tries=tries, sleep=sleep) or mp4_problem(dest)
+        info = {}
+        err = fetch(src, dest, tries=tries, sleep=sleep, info=info) or mp4_problem(dest)
         if not err:
             print(f"clip: {label} video fetched from {host} ({dest.stat().st_size} bytes, mp4 checked)")
-            return dest
+            return dest, info.get("url") or src
         reasons.append(f"{host}: {err}")
         dest.unlink(missing_ok=True)
     raise ClipUnavailable(f"{label}: no source gave a whole mp4 ({'; '.join(reasons) or 'no clip url'})")

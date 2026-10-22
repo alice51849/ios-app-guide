@@ -6,12 +6,13 @@ The clips are rendered and uploaded by the private Growth Engine
 public video URLs, the App Store link with a per-clip campaign token, the
 hook line and the App Store search term shown on the end card.
 
-The video goes to Telegram and Instagram as bytes, never as a url the platform has to fetch (2026-10-22: the
-clips-mirror release url redirects and serves application/octet-stream, and Telegram / Instagram could not
-fetch it): clip_source.py downloads the clip to the runner (clips-mirror first, catbox second, redirects,
-Range resume, retries) and checks it is a whole mp4; Telegram gets it as a multipart sendVideo file and
-Instagram by resumable upload (a container with upload_type=resumable, then the bytes to its rupload address).
-A clip no source serves is red and posts nothing. Threads still takes video_url (its API has no byte upload).
+The runner fetches every clip itself before a platform sees it (2026-10-22: the clips-mirror release url
+answers with a 302 and application/octet-stream, and Telegram answered "failed to get HTTP URL content"):
+clip_source.py downloads it (clips-mirror first, catbox second, redirects, Range resume, retries) and checks it
+is a whole mp4. Telegram gets the bytes as a multipart sendVideo file. Instagram Login has no byte upload
+(resumable upload is for Facebook Login apps only), so the Reel's video_url is the address that just served the
+checked clip, redirect already followed (the release's signed download url, valid about an hour). A clip no
+source serves is red and posts nothing. Threads still takes the clips.json url.
 
 clips.json carries a pre-planned schedule: every entry names the date, the
 slot and the channel of exactly one clip. A clip is scheduled at most once per
@@ -43,7 +44,6 @@ ig_bio.caption() are the last guards at the send call, so nothing goes out wrong
 """
 import argparse
 import datetime as dt
-import http.client
 import json
 import os
 import re
@@ -75,9 +75,6 @@ from social_post_common import SnapshotMissing, play_store_url
 HERE = Path(__file__).resolve().parent
 CLIPS = HERE.parent / "growth" / "clips.json"
 GRAPH = "https://graph.instagram.com/v21.0"
-# Instagram's resumable upload host; the container's own "uri" answer is used when it gives one.
-RUPLOAD = "https://rupload.facebook.com/ig-api-upload/v21.0"
-RUPLOAD_HOSTS = ("rupload.facebook.com", ".facebook.com", ".instagram.com")
 
 TEXT = {
     "en": {"search": "Search “{s}” on the App Store", "button": "Get it on the App Store"},
@@ -351,10 +348,18 @@ def _get(url, timeout=60):
 
 
 def local_clip(clip, channel):
-    """The clip downloaded to this runner and checked as a whole mp4 (clip_source.py), as an Upload: the
-    platforms get the bytes, never the url (Telegram and Instagram could not fetch the clips-mirror url)."""
+    """The clip downloaded to this runner and checked as a whole mp4 (clip_source.py), as an Upload: Telegram
+    gets the bytes, never the url (it could not fetch the clips-mirror url)."""
     label = f"{clip.get('app')}/{clip.get('locale')} {channel}"
     return CS.Upload(CS.fetch_clip(clip["url"], tempfile.mkdtemp(prefix="clip-"), label=label))
+
+
+def checked_clip_url(clip, channel):
+    """The url Instagram fetches: the clip is downloaded and checked here first, and the address that served it,
+    redirect already followed, is handed on (no 302 for Instagram to follow; a clip no source serves raises
+    clip_source.ClipUnavailable before Instagram is asked)."""
+    label = f"{clip.get('app')}/{clip.get('locale')} {channel}"
+    return CS.fetch_clip_url(clip["url"], tempfile.mkdtemp(prefix="clip-"), label=label)[1]
 
 
 def post_telegram(clip, variant=None):
@@ -444,46 +449,9 @@ def _refusal(exc):
     return not (code in NOT_READY or code < 0 or (isinstance(err, dict) and err.get("is_transient")))
 
 
-def _rupload(uri, video, token, tries=3, wait=5, timeout=300):
-    """Send the clip's bytes to the container's resumable upload address (Instagram API resumable upload)."""
-    parts = urllib.parse.urlsplit(uri or "")
-    host = parts.hostname or ""
-    if parts.scheme != "https" or not any(host == h or (h.startswith(".") and host.endswith(h)) for h in RUPLOAD_HOSTS):
-        raise RuntimeError(f"Instagram gave an unexpected upload address ({host or 'none'}); nothing sent")
-    data = video.read()
-    last = "no answer"
-    for attempt in range(tries):
-        if attempt:
-            time.sleep(wait * attempt)
-        req = urllib.request.Request(uri, data=data, method="POST", headers={
-            "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(len(data)),
-            "Content-Type": "application/octet-stream", "User-Agent": "lumi-clip-poster/1.0"})
-        try:
-            answer = _open(req, timeout)
-        except RuntimeError as exc:  # "HTTP <code>: <reason>" from _open; a 4xx other than 408/429 is lasting
-            if re.match(r"HTTP 4\d\d\b", str(exc)) and not re.match(r"HTTP (408|429)\b", str(exc)):
-                raise
-            last = str(exc)[:200]
-        except (urllib.error.URLError, http.client.HTTPException, OSError) as exc:
-            last = f"{exc.__class__.__name__}: {str(getattr(exc, 'reason', None) or exc)[:120]}"
-        else:
-            if answer.get("success") is True:
-                return
-            raise RuntimeError(f"Instagram did not take the video upload: {json.dumps(answer)[:200]}")
-    raise RuntimeError(f"Instagram video upload failed: {last}")
-
-
 def _reel(user, fields, token, wait, tries):
-    """Open one Reels container and wait for it; the container id. A clip_source.Upload in fields["video"] goes
-    by resumable upload (container with upload_type=resumable, then the bytes to its upload address)."""
-    fields = dict(fields)
-    video = fields.pop("video", None)
-    if isinstance(video, CS.Upload):
-        fields["upload_type"] = "resumable"
-    created = _post(f"{GRAPH}/{user}/media", {**fields, "access_token": token})
-    container = created["id"]
-    if isinstance(video, CS.Upload):
-        _rupload(created.get("uri") or f"{RUPLOAD}/{container}", video, token)
+    """Open one Reels container and wait for it; the container id."""
+    container = _post(f"{GRAPH}/{user}/media", {**fields, "access_token": token})["id"]
     for _ in range(tries):
         status = _get(f"{GRAPH}/{container}?fields=status_code&access_token={token}").get("status_code")
         if status == "FINISHED":
@@ -555,7 +523,7 @@ def post_instagram(clip, variant=None, wait=5, tries=60, day=None):
                        label=f"{clip.get('app')}/{clip.get('locale')} instagram")
     media, trial = _publish_reel(user, {
         "media_type": "REELS",
-        "video": local_clip(clip, "instagram"),  # resumable upload of the bytes (_reel), not a url to fetch
+        "video_url": checked_clip_url(clip, "instagram"),  # downloaded and checked first, redirect followed
         "caption": text,  # Reels take no alt_text (image posts only)
         "share_to_feed": "true",
         # Cover = the hook frame once its slam has settled (frame 9), before the first cut: the pain point,

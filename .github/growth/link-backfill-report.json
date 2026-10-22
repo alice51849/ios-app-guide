@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-21T17:17:23Z",
+ "generated": "2026-10-22T04:55:15Z",
  "mode": "apply",
  "counts": {
-  "ok_reply": 14,
+  "ok_reply": 15,
   "ok_store_only": 719,
   "unknown_app": 46,
   "ok_backfilled_earlier": 11,
@@ -10,6 +10,18 @@
   "missing": 3
  },
  "rows": [
+  {
+   "channel": "threads",
+   "id": "17934462726144984",
+   "permalink": "https://www.threads.com/@hourstag.app/post/Dex2Bc-DDc4",
+   "date": "2026-10-22",
+   "app": "mochi",
+   "status": "ok_reply",
+   "text": "시험 전 투두리스트는 작게 쪼개는 게 답이더라 ✏️ '영어 공부' 말고 '단어 30개', '기출 1회'처럼 나눠서 적고, 하나 끝낼 때마다 톡 체크. 귀여운 테마로 바꿔두니까 앱 여는 게 덜 부담스러움. 오늘도 체크 하나씩. iPhone Duo 쓰시나",
+   "why": "trial",
+   "ios_id": "6785004775",
+   "locale": "ko"
+  },
   {
    "channel": "threads",
    "id": "18033020180887361",

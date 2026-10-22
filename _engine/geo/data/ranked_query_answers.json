@@ -24794,5 +24794,1157 @@
     ]
    ]
   }
+ },
+ {
+  "key": "countdaysnow",
+  "locale": "ko",
+  "market": "KR",
+  "term": "디데이",
+  "rank": null,
+  "slug": "d-day-counter-app-korea-couple-100-days-suneung-discharge-lock-screen",
+  "loc": {
+   "title": "디데이 앱 고르는 법: 사귄 날·수능·전역일을 잠금화면 위젯으로 세기",
+   "meta": "커플 100일, 수능, 전역일, 출산예정일까지 디데이를 세고 싶다면? 잠금화면·홈 화면 위젯, 다이내믹 아일랜드, 100일·1주년 알림, 음력 표시까지 확인할 것과 CountDaysNow 설정 방법.",
+   "h1": "디데이 앱: 다가올 날은 D-, 지난날은 D+로 한눈에",
+   "lead": "앱스토어에서 ‘디데이’를 검색하는 사람은 대개 하나만 세지 않습니다. 사귄 날부터 며칠째인지, 수능이나 전역일까지 며칠 남았는지, 친구 생일과 결혼기념일까지 한꺼번에 보고 싶어 합니다.",
+   "answer": "다가올 날(D-)과 지난날(D+)을 같은 앱에서 세고, 가장 자주 보는 날짜는 잠금화면이나 홈 화면 위젯에 올려 두세요. 100일·1주년 같은 기념일은 자동 알림으로 받고, 부모님 생신처럼 음력으로 챙기는 날은 음력을 함께 표시하면 놓치지 않습니다.",
+   "paras": [
+    "디데이 앱을 고를 때 가장 먼저 볼 것은 ‘지난날’도 셀 수 있는지입니다. 커플이 쓰는 ‘사귄 날 +312일’, 금연이나 운동을 시작한 날부터의 날짜는 카운트다운이 아니라 카운트업이죠. CountDaysNow는 다가올 날·오늘·지난날을 세 가지 보기로 나눠 정확한 날짜 수를 보여 주고, 날짜를 더하고 빼거나 두 날짜 사이를 비교하는 계산기도 들어 있습니다.",
+    "두 번째는 보이는 곳입니다. 디데이는 앱을 열어야 보이면 금방 잊힙니다. 잠금화면 위젯과 홈 화면 위젯에 가장 중요한 날을 올려 두고, 시험이나 전역처럼 진행 중인 카운트다운은 다이내믹 아일랜드에서 실시간으로 이어지게 하면 하루에도 여러 번 자연스럽게 눈에 들어옵니다. ‘다음 3개’ 위젯은 가장 가까운 세 날짜를 한 번에 보여 줘서 생일이 몰린 달에 특히 편합니다.",
+    "세 번째는 알림입니다. 7일·3일·1일 전과 당일, 100일, 그리고 매년 돌아오는 날에 알려 주면 선물이나 예약을 미리 준비할 수 있습니다. 반복 이벤트로 설정해 두면 매년 날짜를 다시 입력할 필요가 없고, 부모님 생신이나 제사처럼 음력으로 챙기는 날은 양력 옆에 음력을 함께 표시해 헷갈리지 않습니다.",
+    "수능을 앞둔 수험생이라면 수능 디데이를 잠금화면에 고정하고, 모의고사와 원서 접수일을 함께 넣어 두세요. CountDaysNow는 광고도 구독도 계정도 없이 시작할 수 있고, 무료 버전에서 활성 이벤트 3개, 카테고리 3개, 이벤트마다 미리 알림 1개, 선택한 이벤트 위젯 1개를 쓸 수 있습니다. 한 번만 구매하는 Lifetime Pro는 이벤트 무제한, 100가지 스킨, 모든 위젯과 애플워치, iCloud 동기화, 다른 CountDaysNow 사용자와 함께 갱신하는 공유 디데이를 엽니다."
+   ],
+   "look": [
+    "다가올 날(D-)과 지난날(D+)을 모두 셀 수 있는지",
+    "잠금화면·홈 화면 위젯과 다이내믹 아일랜드를 지원하는지",
+    "100일·1주년·7일 전 같은 기념일 알림이 자동으로 오는지",
+    "음력 날짜를 함께 표시할 수 있는지",
+    "매년 돌아오는 날을 반복 이벤트로 설정할 수 있는지",
+    "광고나 정기 구독 없이 쓸 수 있는지"
+   ],
+   "steps": [
+    "가장 자주 보고 싶은 날 하나(사귄 날, 수능, 전역일 등)를 먼저 등록합니다.",
+    "지난날이면 D+로, 다가올 날이면 D-로 표시되는지 확인합니다.",
+    "그 날짜를 잠금화면이나 홈 화면 위젯에 올립니다.",
+    "생일·기념일은 반복 이벤트로 바꾸고, 음력으로 챙기는 날은 음력 표시를 켭니다.",
+    "7일 전·당일 알림을 켜 두고 선물이나 예약은 알림이 올 때 준비합니다."
+   ],
+   "rows": [
+    [
+     "커플·기념일",
+     "D+ 카운트업과 100일·1주년 알림",
+     "며칠째인지 계산하지 않아도 바로 보임"
+    ],
+    [
+     "수능·전역일",
+     "잠금화면 위젯과 다이내믹 아일랜드",
+     "하루에도 여러 번 남은 날을 확인"
+    ],
+    [
+     "가족 생일",
+     "반복 이벤트와 음력 표시",
+     "매년 다시 입력하지 않고 음력도 헷갈리지 않음"
+    ]
+   ],
+   "fits": "CountDaysNow는 커플 기념일, 수능, 전역일, 출산예정일처럼 여러 디데이를 한 번에 세고 싶은 사람에게 맞습니다. 다가올 날·오늘·지난날 보기, 날짜 계산기, 잠금화면·홈 화면 위젯과 다이내믹 아일랜드, 100일·매년 알림, 음력을 포함한 15가지 달력을 지원합니다. 광고·구독·계정 없이 시작하고, Lifetime Pro는 한 번만 구매합니다.",
+   "faq": [
+    [
+     "사귄 날부터 며칠째인지도 셀 수 있나요?",
+     "네. 지난날은 D+로 경과일을 보여 주고, 100일과 매년 돌아오는 날에 알림을 받을 수 있습니다."
+    ],
+    [
+     "연인과 같은 디데이를 함께 볼 수 있나요?",
+     "Lifetime Pro에서는 선택한 디데이를 다른 CountDaysNow 사용자와 공유해 함께 갱신할 수 있습니다. 초대받은 사람은 제목·날짜 같은 표시 항목만 보고 편집합니다."
+    ],
+    [
+     "음력 생일은 어떻게 챙기나요?",
+     "이벤트마다 양력 옆에 음력을 두 번째 달력으로 표시할 수 있어서, 음력으로 챙기는 생신이나 기념일도 날짜를 헷갈리지 않습니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Choosing a D-day app: count anniversaries, exams and discharge dates on your Lock Screen",
+   "meta": "Want to count down to an exam or discharge date and up from the day you started dating? What to check in a D-day app (Lock Screen and Home Screen widgets, Dynamic Island, 100-day and yearly alerts, lunar dates) and how to set up CountDaysNow.",
+   "h1": "A D-day app that shows days left (D-) and days since (D+) at a glance",
+   "lead": "People searching for a D-day app in Korea rarely count just one date. They want to see how many days since they started dating, how many days until the college entrance exam or the end of military service, and friends' birthdays and anniversaries, all together.",
+   "answer": "Count upcoming days (D-) and days since (D+) in the same app, and put the date you check most on a Lock Screen or Home Screen widget. Get automatic alerts for milestones such as 100 days and each anniversary, and show the lunar date next to dates you celebrate by the lunar calendar so you never miss them.",
+   "paras": [
+    "The first thing to check is whether it can count days since, not just days left. A couple's \"day 312\" or the days since you quit smoking or started exercising are count-ups, not countdowns. CountDaysNow splits upcoming, today and past events into three clear views with exact day counts, and includes a calculator to add or subtract days or compare two dates.",
+    "The second is visibility. A D-day you only see inside the app is soon forgotten. Put the most important date on a Lock Screen or Home Screen widget, and keep an active countdown like an exam or a discharge date running live in the Dynamic Island, so you see it many times a day without trying. The Next 3 widget shows your three closest dates at once, which helps in months full of birthdays.",
+    "The third is alerts. Reminders 7, 3 and 1 day before, on the day, at day 100 and on every anniversary give you time to prepare gifts or bookings. Set yearly dates as repeating events so you never re-enter them, and show the lunar date beside the Gregorian one for parents' birthdays and other days observed by the lunar calendar.",
+    "Students facing the college entrance exam can pin the exam D-day to the Lock Screen and add mock exams and application deadlines. CountDaysNow starts with no ads, no subscription and no account; the free version includes up to 3 active events, 3 categories, 1 reminder per event and 1 widget for a chosen event. The one-time Lifetime Pro purchase unlocks unlimited events, 100 skins, every widget and Apple Watch, iCloud sync, and shared D-days you update together with another CountDaysNow user."
+   ],
+   "look": [
+    "Whether it counts both days left (D-) and days since (D+)",
+    "Whether it supports Lock Screen and Home Screen widgets and the Dynamic Island",
+    "Whether 100-day, yearly and 7-days-before alerts arrive automatically",
+    "Whether it can show lunar dates alongside",
+    "Whether yearly dates can repeat automatically",
+    "Whether it works without ads or a recurring subscription"
+   ],
+   "steps": [
+    "Add the one date you most want to see (the day you started dating, an exam, a discharge date).",
+    "Check that past dates show as D+ and upcoming ones as D-.",
+    "Put that date on a Lock Screen or Home Screen widget.",
+    "Make birthdays and anniversaries repeating events and turn on the lunar date where needed.",
+    "Turn on 7-days-before and same-day alerts and prepare gifts or bookings when they arrive."
+   ],
+   "rows": [
+    [
+     "Couples and anniversaries",
+     "D+ count-up with 100-day and yearly alerts",
+     "See the day number without doing the math"
+    ],
+    [
+     "Exams and discharge dates",
+     "Lock Screen widget and Dynamic Island",
+     "Check the days left many times a day"
+    ],
+    [
+     "Family birthdays",
+     "Repeating events and lunar dates",
+     "No re-entering each year, no lunar mix-ups"
+    ]
+   ],
+   "fits": "CountDaysNow suits people who want to count several D-days at once, from couple anniversaries to exams, discharge dates and due dates: upcoming, today and past views, a date calculator, Lock Screen and Home Screen widgets and the Dynamic Island, 100-day and yearly alerts, and 15 calendars including the Chinese lunar calendar. Start with no ads, subscription or account; Lifetime Pro is a one-time purchase.",
+   "faq": [
+    [
+     "Can it count how many days since we started dating?",
+     "Yes. Past dates show the days since as D+, and you can get alerts at day 100 and every anniversary."
+    ],
+    [
+     "Can my partner and I see the same D-day?",
+     "With Lifetime Pro you can share a chosen D-day with another CountDaysNow user and update it together. The invited person sees and edits only the visible fields such as title and date."
+    ],
+    [
+     "How do I keep track of lunar birthdays?",
+     "Each event can show the lunar date as a second calendar beside the Gregorian date, so lunar birthdays and anniversaries don't get mixed up."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "dailymatelite",
+  "locale": "ja",
+  "market": "JP",
+  "term": "旅行英会話",
+  "rank": null,
+  "slug": "travel-english-conversation-japan-airport-hotel-reply-pairs-before-the-trip",
+  "loc": {
+   "title": "旅行英会話は「返し方」から：空港・ホテル・レストランで固まらない出発前の練習法",
+   "meta": "旅行英会話のフレーズ集を覚えても、聞き返されると固まる。空港・ホテル・レストランでよく聞かれる一言と自然な返答をセットで練習し、出発前の1週間で口に慣らす方法。DailyMate Liteの使い方。",
+   "h1": "旅行英会話：言う一言より「聞かれたときの返し方」を先に練習する",
+   "lead": "年末年始や連休に海外旅行を控えて「旅行英会話」と検索する人の悩みは、たいてい単語不足ではありません。入国審査やホテルのフロントで何か聞かれた瞬間、どう返せばいいかわからず固まってしまうことです。",
+   "answer": "フレーズを単体で覚えるより、「よく聞かれる一言」と「自然な返答」をセットで練習します。空港、ホテル、レストラン、道を聞く場面だけに絞り、出発前の1週間、毎日10分ずつ声に出して往復させるのが効率的です。発音は端末の音声で確認し、速度を落として聞き取りから慣らします。",
+   "paras": [
+    "旅行先の会話は、自分から話しかけるより、相手から聞かれて答える場面のほうがずっと多いものです。入国審査の「How long are you staying?」、ホテルの「Do you have a reservation?」、レストランの「For here or to go?」。フレーズ集で「チェックインをお願いします」を覚えても、その次に来る質問に返せないと会話は止まります。だから練習は、問いかけと返答を一枚のカードにまとめた「一往復」単位でするのがいちばん実戦的です。",
+    "場面は欲張らないこと。初めての海外ならまず空港、ホテル、レストラン、道案内、買い物の5つで十分です。1日目は空港とホテル、2日目はレストラン、3日目は道案内と買い物、4日目以降は苦手な場面の繰り返し。1回10分、声に出して相手役の一言を聞き、自分の返答を言う。これを出発前の1週間続けると、現地で同じ質問を聞いたとき、頭で訳さずに口が先に動くようになります。",
+    "聞き取りが不安な人は、速度を落として何度か聞いてから通常の速さに戻します。英語圏以外に行く人も同じやり方が使えます。タイやベトナム、イタリアなど、旅行先の言葉で「ありがとう」「これをください」の返し方だけでも練習しておくと、現地の人との距離が一気に縮まります。",
+    "DailyMate Liteは、この「一往復」の練習のためのアプリです。旅行、仕事、食事、健康などの場面を、短い問いかけと自然な返答のペアにまとめ、50の学習言語、14テーマ・84場面、初級・中級・上級で8,400組を収録。端末のシステム音声で発音を確認でき、速度も調整できます。どの言語でも「旅行」テーマの初級はすべて無料で使え、ほかのテーマやレベルは買い切りで解放されます。アカウント登録、第三者広告、追跡はありません。"
+   ],
+   "look": [
+    "フレーズ単体ではなく、問いかけと返答がセットになっているか",
+    "空港・ホテル・レストランなど場面別に練習できるか",
+    "発音を音声で確認でき、速度を落とせるか",
+    "英語以外の旅行先の言語にも対応しているか",
+    "出発前に無料で試せる範囲があるか",
+    "アカウント登録や広告なしで使えるか"
+   ],
+   "steps": [
+    "行き先の言語を選び、「旅行」テーマの初級を開く。",
+    "空港とホテルの場面から、聞かれる一言と返答を声に出して往復させる。",
+    "聞き取りにくい文は速度を落として3回聞き、通常の速さに戻す。",
+    "2日目以降はレストラン、道案内、買い物の順に1日10分ずつ進める。",
+    "出発前日は、言えなかったカードだけをもう一度通しで練習する。"
+   ],
+   "rows": [
+    [
+     "固まる原因",
+     "問いかけと返答のセット練習",
+     "現地では聞かれて答える場面がほとんど"
+    ],
+    [
+     "時間がない",
+     "5場面×1日10分を1週間",
+     "出発前の短期間でも口が慣れる"
+    ],
+    [
+     "聞き取れない",
+     "音声の速度を落として反復",
+     "まず遅い速度で耳を慣らしてから戻す"
+    ]
+   ],
+   "fits": "DailyMate Liteは、旅行先で話しかけられて固まりたくない人向けのアプリです。問いかけと自然な返答のペアを場面ごとに練習でき、50言語・14テーマ・84場面・8,400組、3つのレベル、速度調整できる音声、ウィジェットとApple Watchに対応。どの言語でも旅行テーマの初級は無料、残りは買い切りで解放、アカウント不要です。",
+   "faq": [
+    [
+     "フレーズ集アプリとの違いは？",
+     "フレーズ集は自分が言う一文を集めたものです。DailyMate Liteは相手の問いかけとそれへの自然な返答を一枚にまとめているので、実際の受け答えの流れごと練習できます。"
+    ],
+    [
+     "無料でどこまで練習できますか？",
+     "どの学習言語でも「旅行」テーマの初級はすべて無料です。空港やホテルなど旅行の基本場面は、出発前に無料の範囲で練習できます。"
+    ],
+    [
+     "英語以外も練習できますか？",
+     "50の学習言語に対応しています。タイ語、ベトナム語、イタリア語など、旅行先の言葉で同じ場面を練習できます。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Travel English starts with replies: practice airport, hotel and restaurant exchanges before your trip",
+   "meta": "You memorized a travel phrasebook, then froze when someone asked a follow-up. Practice the questions you'll actually hear at airports, hotels and restaurants together with natural replies, ten minutes a day for a week before you leave. How to use DailyMate Lite.",
+   "h1": "Travel conversation: practice how to reply before what to say",
+   "lead": "Japanese travelers searching for travel English before a year-end trip rarely lack vocabulary. The real problem is the moment an immigration officer or hotel clerk asks something and they don't know how to answer.",
+   "answer": "Instead of memorizing phrases alone, practice the questions you'll hear together with a natural reply. Limit it to airports, hotels, restaurants and asking directions, and say each exchange out loud for ten minutes a day in the week before you leave. Check pronunciation with the device voice and slow it down to train your ear first.",
+   "paras": [
+    "On a trip you answer far more than you start conversations: \"How long are you staying?\" at immigration, \"Do you have a reservation?\" at the hotel, \"For here or to go?\" at a café. You can memorize \"I'd like to check in\" from a phrasebook, but if you can't answer the next question the conversation stops. That's why practice works best one exchange at a time, with the question and the reply on the same card.",
+    "Don't try to cover everything. For a first trip abroad, airports, hotels, restaurants, directions and shopping are enough. Day one: airport and hotel. Day two: restaurants. Day three: directions and shopping. After that, repeat the scenes you find hard. Ten minutes at a time, listen to the other person's line and say your reply aloud. After a week, when you hear the same question abroad your mouth moves before you translate in your head.",
+    "If listening worries you, slow the audio, listen a few times, then go back to normal speed. The same approach works beyond English: practicing just how to reply with \"thank you\" or \"this one, please\" in Thai, Vietnamese or Italian brings you much closer to the people you meet.",
+    "DailyMate Lite is built for this one-exchange practice. It turns travel, work, food, health and other situations into short cue-and-reply pairs: 8,400 pairs across 50 learning languages, 14 topics and 84 situations, at Beginner, Intermediate and Advanced levels. Pronunciation uses the device's system voices with adjustable speed. In every language the Traveler topic at Beginner level is free; other topics and levels unlock with a one-time purchase. No account, third-party ads or tracking."
+   ],
+   "look": [
+    "Whether questions and replies come as pairs, not isolated phrases",
+    "Whether you can practice by scene: airport, hotel, restaurant",
+    "Whether you can hear pronunciation and slow it down",
+    "Whether it covers languages beyond English for your destination",
+    "Whether there's a free range to try before you leave",
+    "Whether it works without an account or ads"
+   ],
+   "steps": [
+    "Choose your destination's language and open the Traveler topic at Beginner level.",
+    "Start with airport and hotel scenes, saying each question and reply aloud.",
+    "Slow down any line you can't catch, listen three times, then return to normal speed.",
+    "From day two, add restaurants, directions and shopping, ten minutes a day.",
+    "The day before you leave, run through only the cards you couldn't answer."
+   ],
+   "rows": [
+    [
+     "Why you freeze",
+     "Practice question-and-reply pairs",
+     "Abroad you mostly answer questions"
+    ],
+    [
+     "No time",
+     "Five scenes, ten minutes a day, one week",
+     "Your mouth gets used to it even in a short run-up"
+    ],
+    [
+     "Can't catch it",
+     "Slow the audio and repeat",
+     "Train the ear at low speed, then speed up"
+    ]
+   ],
+   "fits": "DailyMate Lite is for travelers who don't want to freeze when spoken to: practice cue-and-reply pairs scene by scene across 50 languages, 14 topics, 84 situations and 8,400 pairs, with three levels, adjustable-speed audio, a widget and Apple Watch. The Traveler topic at Beginner level is free in every language; the rest unlocks with a one-time purchase, no account needed.",
+   "faq": [
+    [
+     "How is it different from a phrasebook app?",
+     "A phrasebook collects lines you say. DailyMate Lite pairs what the other person says with a natural reply on one card, so you practice the whole exchange."
+    ],
+    [
+     "How much can I practice for free?",
+     "In every learning language, the Traveler topic at Beginner level is free, which covers airports, hotels and other basic travel scenes before you leave."
+    ],
+    [
+     "Can I practice languages other than English?",
+     "Yes, 50 learning languages, so you can practice the same scenes in Thai, Vietnamese, Italian or wherever you're going."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "hourstaglite",
+  "locale": "ja",
+  "market": "JP",
+  "term": "衝動買い",
+  "rank": null,
+  "slug": "stop-impulse-buying-japan-price-in-work-hours-before-you-tap-buy",
+  "loc": {
+   "title": "衝動買いをやめたい人へ：「ポチる前に何時間分の労働か」を見るだけの防止法",
+   "meta": "ついポチって後悔する衝動買いは、値段を自分の労働時間に置き換えると止まりやすくなります。手取りから時給を出す方法、必要・欲しい・衝動のタグ付け、年末セール前の使い方をHoursTag Liteで。",
+   "h1": "衝動買いを止めるいちばん簡単な方法：値段を「自分の労働時間」で見る",
+   "lead": "「衝動買い」で検索する人は、家計簿をきっちりつけたいというより、セールの通知やタイムラインの広告を見てついポチってしまい、届いてから後悔するのを止めたい人がほとんどです。",
+   "answer": "買う前の数秒で、その値段を自分の手取りベースの時給で割り、「何時間働いた分か」を見てから決めます。さらに「必要・欲しい・衝動」のどれかにタグを付けておくと、どんな場面で衝動買いしているかが見えてきます。我慢するのではなく、判断の材料を一つ増やすやり方です。",
+   "paras": [
+    "衝動買いがやめにくいのは、値段が「円」のままだと痛みを感じにくいからです。4,980円は安く見えても、手取りの時給が1,500円の人にとっては3時間以上の労働です。仕事終わりの疲れた夜、スマホでセールのページを開いているときこそ、この換算が効きます。カートに入れたら、決済ボタンを押す前に一度だけ「これは何時間分？」を確認する。それだけで、半分くらいの買い物は翌日に回せます。",
+    "大事なのは時給を額面ではなく手取りから出すことです。月の手取りを実際に働いた時間（残業や通勤も入れたいなら入れる）で割ると、「自分の1時間の値段」が出ます。思っていたより低く出る人が多く、それがそのまま衝動買いのブレーキになります。ボーナス月や副業の収入は、毎月の手取りとは分けて考えたほうが判断がぶれません。",
+    "次に、買ったものに「必要」「欲しい」「衝動」のタグを付けます。1か月たつと、衝動の買い物が深夜に多い、送料無料ラインに合わせたついで買いが多い、といった自分のパターンが見えてきます。欲しいものをやめる必要はありません。貯金や旅行の目標に何時間分の労働が必要かを並べて見ると、どちらを優先するか自然に選べるようになります。",
+    "HoursTag Liteはこの使い方のためのアプリです。値段を自分の労働時間に換算し、必要・欲しい・衝動でタグ付けし、目標に必要な労働時間と進捗を表示します。価値傾向の分析、ウィジェットとApple Watch、収入・支出・目標のバックアップにも対応。データは端末内だけに保存され、アカウント登録や追跡はありません。すべての機能は買い切りで使え、サブスクリプションはありません。"
+   ],
+   "look": [
+    "値段を手取りベースの時給で労働時間に換算できるか",
+    "買い物に「必要・欲しい・衝動」のようなタグを付けられるか",
+    "目標に必要な労働時間と進捗を見られるか",
+    "買う直前にすぐ開けるウィジェットがあるか",
+    "アカウント登録なしで、データが端末内に残るか",
+    "サブスクではなく買い切りかどうか"
+   ],
+   "steps": [
+    "月の手取りと実際に働いた時間を入れて、自分の1時間の値段を出す。",
+    "カートに入れたら、決済の前に値段を労働時間で確認する。",
+    "買ったものには必要・欲しい・衝動のどれかのタグを付ける。",
+    "貯金や旅行など一つ目標を作り、何時間分の労働が必要かを見えるようにする。",
+    "1か月後に衝動タグの買い物を見返し、時間帯やきっかけの共通点を探す。"
+   ],
+   "rows": [
+    [
+     "値段の感じ方",
+     "円ではなく労働時間で見る",
+     "数千円でも何時間分かがわかると手が止まる"
+    ],
+    [
+     "時給の出し方",
+     "額面ではなく手取りから計算",
+     "自分の1時間の本当の値段に近づく"
+    ],
+    [
+     "パターン",
+     "必要・欲しい・衝動のタグ",
+     "どんな場面で衝動買いするかが見える"
+    ]
+   ],
+   "fits": "HoursTag Liteは、ついポチる衝動買いを減らしたい人向けのアプリです。値段を手取りベースの労働時間に換算し、必要・欲しい・衝動でタグ付けし、目標に必要な労働時間と進捗、価値傾向の分析を表示します。ウィジェットとApple Watchに対応し、データは端末内のみ、アカウント不要。買い切りでサブスクリプションはありません。",
+   "faq": [
+    [
+     "家計簿アプリと何が違いますか？",
+     "家計簿は使ったお金を記録して振り返るものです。HoursTag Liteは買う前に値段を労働時間で見せ、必要・欲しい・衝動のタグで判断のくせを見えるようにすることに重点があります。"
+    ],
+    [
+     "時給がわからないパートや副業でも使えますか？",
+     "月の手取りと働いた時間がわかれば、自分の1時間の値段を出せます。時給制の人はそのまま入力すれば使えます。"
+    ],
+    [
+     "我慢ばかりで疲れませんか？",
+     "やめるかどうかを決めるのはあなたです。労働時間とタグは判断材料を一つ増やすだけなので、本当に欲しいものは納得して買えます。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Want to stop impulse buying? See how many work hours it costs before you tap buy",
+   "meta": "Impulse buys you regret are easier to stop when the price becomes your own work hours. How to work out your take-home hourly value, tag purchases Need, Want or Impulse, and use HoursTag Lite before year-end sales.",
+   "h1": "The simplest way to stop impulse buying: see the price in your own work hours",
+   "lead": "Most people who search for help with impulse buying aren't trying to keep a perfect budget. They want to stop tapping buy after a sale notification or a social ad, and regretting it when the parcel arrives.",
+   "answer": "In the few seconds before you pay, divide the price by your take-home hourly value and see how many hours of work it is. Tag each purchase Need, Want or Impulse and you'll start to see when you buy on impulse. It isn't about willpower; it adds one more piece of information to the decision.",
+   "paras": [
+    "Impulse buys are hard to stop because a price in money barely hurts. Something at 4,980 yen looks cheap, but at a take-home 1,500 yen an hour it is more than three hours of work. The conversion works best exactly when you're tired after work and scrolling a sale page. Put the item in the cart, then check \"how many hours is this?\" once before paying. That alone pushes about half of those purchases to tomorrow.",
+    "Work out the hourly value from take-home pay, not gross salary. Divide monthly take-home pay by the hours you actually worked (add overtime or commuting if you like) and you get the price of one hour of your life. It is usually lower than people expect, and that is the brake. Keep bonus months or side income separate from the monthly figure so your judgement stays steady.",
+    "Next, tag what you buy as Need, Want or Impulse. After a month you'll see patterns: impulse buys cluster late at night, or extra items get added to reach a free-shipping threshold. You don't have to give up what you want. Put a goal such as savings or a trip next to it in work hours and choosing between them becomes natural.",
+    "HoursTag Lite is built for this. It converts prices into your work time, tags purchases Need, Want or Impulse, and shows the work hours a goal needs and your progress. It also has value insights, a widget and Apple Watch, and backup of income, spending and goals. Data stays on your device, with no account and no tracking. Everything is unlocked with one payment, with no subscription."
+   ],
+   "look": [
+    "Whether it converts prices into work hours using your take-home hourly value",
+    "Whether you can tag purchases Need, Want or Impulse",
+    "Whether it shows the work hours a goal needs and your progress",
+    "Whether there's a widget you can open right before buying",
+    "Whether it works without an account and keeps data on the device",
+    "Whether it's a one-time purchase rather than a subscription"
+   ],
+   "steps": [
+    "Enter monthly take-home pay and hours worked to get the price of your hour.",
+    "When something is in your cart, check the price in work hours before paying.",
+    "Tag each purchase Need, Want or Impulse.",
+    "Set one goal, such as savings or a trip, and see how many work hours it takes.",
+    "After a month, review Impulse purchases and look for common times and triggers."
+   ],
+   "rows": [
+    [
+     "How the price feels",
+     "Work hours instead of money",
+     "A small price stops looking small once you see the hours"
+    ],
+    [
+     "Hourly value",
+     "From take-home pay, not gross",
+     "Closer to the real price of your hour"
+    ],
+    [
+     "Patterns",
+     "Need, Want and Impulse tags",
+     "Shows the situations where you buy on impulse"
+    ]
+   ],
+   "fits": "HoursTag Lite is for people who want fewer regret purchases: it converts prices into take-home work hours, tags purchases Need, Want or Impulse, and shows goal hours, progress and value insights. It works with a widget and Apple Watch, keeps data on the device with no account, and is a one-time purchase with no subscription.",
+   "faq": [
+    [
+     "How is it different from a budgeting app?",
+     "A budget records money already spent. HoursTag Lite shows the price in work hours before you buy and makes your decision habits visible with Need, Want and Impulse tags."
+    ],
+    [
+     "Does it work for part-time or side jobs?",
+     "If you know your monthly take-home pay and the hours worked, you can get your hourly value. Hourly workers can enter their rate directly."
+    ],
+    [
+     "Won't constant self-denial get tiring?",
+     "You still decide. Work hours and tags just add information, so the things you really want you can buy without regret."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "lockhour",
+  "locale": "zh-Hans",
+  "market": "CN",
+  "term": "戒手机",
+  "rank": null,
+  "slug": "quit-phone-scrolling-china-lock-apps-during-study-and-before-bed",
+  "loc": {
+   "title": "戒手机靠意志力总失败？用“锁住分心应用＋到点自动解锁”的方法",
+   "meta": "想戒手机、少刷短视频，却总是拿起来就停不下？把分心的应用在学习、工作和睡前锁住，时间到自动恢复，再用严格模式和连续天数坚持下去。LockHour Pro 的设置步骤。",
+   "h1": "戒手机：不靠硬撑，把分心应用在固定时段锁起来",
+   "lead": "在 App Store 搜“戒手机”的人，大多试过把手机放远一点、删掉应用、给自己定规矩，结果几天后又回到原样：说好只看一分钟，回过神来一个小时已经没了。",
+   "answer": "与其每次都和自己较劲，不如提前决定哪几个应用在哪几个时段不能打开：学习、深度工作和睡前各设一个专注时段，选中的应用在时段内被屏蔽，时间一到自动解锁。想提前结束时多加一道冷静缓冲，再用连续天数和省下的小时数给自己正反馈。",
+   "paras": [
+    "戒手机最难的不是“知道该少玩”，而是拿起手机那一瞬间的自动反应：解锁、点开短视频、往下划。靠意志力意味着每一次都要重新做决定，一天下来要赢几十次，累了就会输。把决定提前做好，让被选中的应用在某段时间里根本打不开，就把几十次决定变成了一次。",
+    "时段怎么设比较容易坚持？先从最想改的一个开始。学生可以用学习模式，番茄钟式的专注与休息循环，一节课的长度就够；上班族可以先护住上午最重要的一段深度工作；睡不好的人从“睡前放松”开始，上床前一小时把短视频和社交应用锁住；习惯一睁眼就刷手机的人，用“晨间重启”把起床后的第一段时间留给自己。",
+    "第二个关键是提前结束要有门槛。完全不能结束的工具容易让人干脆卸载，随时能结束的又形同虚设。比较好的做法是允许结束，但先经过一段倒计时和一次输入确认，让冲动过去再决定。最后是看得见的进步：今天专注了多久、这周的图表、连续几天做到、一共夺回了多少小时，比单纯的屏幕使用时间更能让人继续下去。",
+    "LockHour Pro 就是按这个思路设计的：一键开始专注时段，选定的应用立即被屏蔽、时间到自动解锁；有快速专注、深度工作、学习模式、睡前放松、晨间重启和自定义；强制模式在提前结束前加入冷静倒计时与确认；还有今日专注时长、每周图表、连续记录、主屏幕与锁定屏幕小组件和灵动岛倒计时。不需要账号，没有广告和跟踪，数据不离开设备；一次购买解锁全部功能，没有订阅。"
+   ],
+   "look": [
+    "能不能只锁住选定的应用，时间到自动解锁",
+    "有没有学习、深度工作、睡前等不同时段的模式",
+    "想提前结束时有没有冷静缓冲，而不是一键就能关掉",
+    "能不能看到专注时长、连续天数和夺回的小时数",
+    "需不需要注册账号，数据会不会上传",
+    "是一次购买还是按月订阅"
+   ],
+   "steps": [
+    "写下最常让你停不下来的 2～3 个应用（短视频、社交、游戏）。",
+    "先选一个最想改的时段：学习、上午工作，或上床前一小时。",
+    "开启对应的专注模式，把这几个应用加入屏蔽，开始第一个时段。",
+    "打开强制模式，让提前结束要先经过倒计时和确认。",
+    "把小组件放到主屏幕，每晚看一眼今天的专注时长和连续天数。"
+   ],
+   "rows": [
+    [
+     "拿起就停不下",
+     "时段内屏蔽选定应用",
+     "把几十次临时决定变成一次提前决定"
+    ],
+    [
+     "半途放弃",
+     "强制模式的冷静倒计时与确认",
+     "给冲动一点时间过去"
+    ],
+    [
+     "坚持不下去",
+     "连续记录与夺回的小时数",
+     "看得见的进步比说教更有用"
+    ]
+   ],
+   "fits": "LockHour Pro 适合想戒手机、少刷短视频，又不想每次都硬撑的人：按学习、深度工作、睡前、晨间等时段锁住分心应用，时间到自动解锁；强制模式、每周图表、连续记录、小组件和灵动岛倒计时帮你坚持。无需账号、无广告无跟踪，一次购买解锁全部功能，没有订阅。",
+   "faq": [
+    [
+     "和系统自带的屏幕使用时间有什么不同？",
+     "屏幕使用时间按每天的总量限制，到了上限点一下就能延长。LockHour Pro 按你开始的专注时段屏蔽选定应用，时间一到自动解锁，提前结束前还有冷静缓冲，更适合学习和睡前这种固定时段。"
+    ],
+    [
+     "锁住期间还能接电话、看消息吗？",
+     "只有你选中的应用会被屏蔽，没选中的应用和系统功能照常使用，所以可以只锁短视频和社交，保留通讯工具。"
+    ],
+    [
+     "一开始应该锁多久？",
+     "先从一节课或一个番茄钟的长度开始，连续几天做到后再拉长。睡前时段建议从上床前 30～60 分钟开始。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Trying to quit your phone with willpower alone? Lock distracting apps and let them unlock on time",
+   "meta": "Want to quit doomscrolling short videos but can't stop once you pick up the phone? Lock distracting apps during study, work and bedtime, let them return automatically, and keep going with Hard Mode and streaks. How to set up LockHour Pro.",
+   "h1": "Quit phone scrolling without white-knuckling it: lock distracting apps on a schedule",
+   "lead": "People searching for ways to quit their phone have usually tried putting it in another room, deleting apps or setting rules. A few days later they're back: \"just one minute\" becomes an hour.",
+   "answer": "Instead of fighting yourself every time, decide in advance which apps can't open during which periods. Set a focus session for study, deep work and bedtime; the apps you choose are blocked during the session and return automatically when it ends. Add a calm cooldown before stopping early, and use streaks and reclaimed hours as positive feedback.",
+   "paras": [
+    "The hard part isn't knowing you should scroll less. It's the reflex when you pick the phone up: unlock, open short videos, swipe. Relying on willpower means making the decision again every time, dozens of times a day, and losing when you're tired. Deciding in advance, so the chosen apps simply won't open for a while, turns dozens of decisions into one.",
+    "Which sessions are easiest to keep? Start with the one you most want to change. Students can use Study Mode, Pomodoro-style cycles with breaks, one class long. Office workers can protect the most important morning block for deep work. Poor sleepers can start with Sleep Wind Down, locking short-video and social apps an hour before bed, and people who scroll the moment they wake can use Morning Reset.",
+    "The second key is a threshold for stopping early. A tool you can never stop gets uninstalled; one you can stop with a tap does nothing. It works better to allow stopping, but only after a cooldown and a confirmation, so the urge passes before you decide. Last is visible progress: focused time today, weekly charts, streaks and total hours reclaimed keep people going better than a raw screen-time number.",
+    "LockHour Pro is designed this way: start a session with one tap, chosen apps are shielded immediately and unlock automatically when time is up; modes include Quick Focus, Deep Work, Study Mode, Sleep Wind Down, Morning Reset and Custom; Hard Mode adds a cooldown and confirmation before stopping early; and you get today's focused time, weekly charts, streaks, Home and Lock Screen widgets and a Dynamic Island countdown. No account, no ads, no tracking, and data never leaves the device. One purchase unlocks everything, with no subscription."
+   ],
+   "look": [
+    "Whether it locks only the apps you choose and unlocks them automatically",
+    "Whether there are modes for study, deep work and bedtime",
+    "Whether stopping early has a cooldown instead of a one-tap exit",
+    "Whether you can see focused time, streaks and reclaimed hours",
+    "Whether it needs an account or uploads your data",
+    "Whether it's a one-time purchase or a monthly subscription"
+   ],
+   "steps": [
+    "Write down the two or three apps you can't put down (short video, social, games).",
+    "Pick one period to change first: study, a morning work block or the hour before bed.",
+    "Start the matching focus mode, add those apps to the block list and run the first session.",
+    "Turn on Hard Mode so stopping early takes a cooldown and confirmation.",
+    "Put the widget on your Home Screen and check today's focused time and streak each night."
+   ],
+   "rows": [
+    [
+     "Can't stop once you start",
+     "Block chosen apps during a session",
+     "One decision in advance replaces dozens in the moment"
+    ],
+    [
+     "Giving up halfway",
+     "Hard Mode cooldown and confirmation",
+     "Gives the urge time to pass"
+    ],
+    [
+     "Not sticking with it",
+     "Streaks and reclaimed hours",
+     "Visible progress beats lectures"
+    ]
+   ],
+   "fits": "LockHour Pro suits people who want to quit doomscrolling without forcing it every time: lock distracting apps during study, deep work, bedtime or morning sessions and let them unlock automatically, with Hard Mode, weekly charts, streaks, widgets and a Dynamic Island countdown to keep going. No account, no ads or tracking; one purchase unlocks everything, with no subscription.",
+   "faq": [
+    [
+     "How is it different from built-in Screen Time?",
+     "Screen Time limits a daily total, and one tap extends it. LockHour Pro blocks chosen apps during the focus session you start, unlocks them automatically at the end and adds a cooldown before stopping early, which suits fixed periods like study and bedtime."
+    ],
+    [
+     "Can I still take calls and read messages while apps are locked?",
+     "Only the apps you choose are blocked. Everything else works as usual, so you can lock short-video and social apps and keep messaging."
+    ],
+    [
+     "How long should I lock at first?",
+     "Start with one class or one Pomodoro and lengthen it after a few days in a row. For bedtime, start 30 to 60 minutes before you go to bed."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "mochi",
+  "locale": "ko",
+  "market": "KR",
+  "term": "투두리스트 위젯",
+  "rank": null,
+  "slug": "todo-list-widget-korea-home-screen-today-list-you-actually-see",
+  "loc": {
+   "title": "투두리스트 위젯: 홈 화면에 오늘 할 일을 두면 정말 덜 잊을까?",
+   "meta": "투두리스트 앱을 깔아도 열지 않으면 소용없죠. 홈 화면 위젯에 오늘 목록만 올리고, 애플워치로 확인하고, 짧은 목록으로 끝까지 체크하는 방법. 귀여운 체크리스트 Mochi 설정법.",
+   "h1": "투두리스트 위젯: 앱을 열지 않아도 오늘 할 일이 보이게",
+   "lead": "앱스토어에서 ‘투두리스트 위젯’을 찾는 사람은 이미 투두 앱을 몇 번 깔았다 지운 사람이 많습니다. 목록을 열심히 적어도 앱을 열지 않으면 하루가 끝날 때까지 한 번도 안 보게 되니까요.",
+   "answer": "오늘 할 일만 담은 짧은 목록을 하나 만들고, 그 목록을 홈 화면 위젯으로 첫 페이지에 올려 두세요. 휴대폰을 켤 때마다 저절로 눈에 들어오고, 애플워치가 있다면 손목에서도 확인할 수 있습니다. 목록은 4개 안팎으로 짧게 유지해야 끝까지 체크하게 됩니다.",
+   "paras": [
+    "투두리스트가 실패하는 가장 흔한 이유는 ‘안 보여서’입니다. 아침에 할 일을 적고 앱을 닫으면, 점심쯤엔 무엇을 적었는지 기억나지 않죠. 위젯은 이 문제를 바로 해결합니다. 알림처럼 울리지 않으면서도, 카톡이나 인스타를 열러 갈 때마다 오늘 목록이 먼저 보이니까요. 위젯은 홈 화면 첫 페이지, 엄지가 가장 쉽게 닿는 아래쪽에 두는 것이 좋습니다.",
+    "두 번째는 목록의 길이입니다. 위젯에 15개를 띄우면 보기만 해도 지칩니다. ‘오늘’ 목록은 4개 안팎, 나머지는 ‘나중에’ 목록으로 나누세요. 시험 기간이라면 ‘오늘’에는 과목별로 1개씩만, 장보기는 따로 목록을 만들어 마트에서만 꺼내 보면 됩니다. 끝낸 일은 바로 체크해서 위젯에 남은 일이 줄어드는 걸 보는 것이 꾸준히 쓰게 만드는 힘입니다.",
+    "세 번째는 기분입니다. 귀여운 투두리스트를 찾는 이유는 단순히 예뻐서가 아니라, 열고 싶어지기 때문이에요. Mochi는 할 일을 적고 끝나면 작은 동그라미를 탭하는 체크리스트로, 홈 화면 위젯과 애플워치, 중요한 일 알림을 지원하고 101가지 테마로 꾸밀 수 있습니다. 공부, 업무, 장보기, 루틴, 습관을 한곳에서 관리할 수 있어요.",
+    "무료 버전에서는 목록 2개(목록당 항목 최대 4개), 테마 5가지, 이모지 1세트를 쓸 수 있어서 ‘오늘’과 ‘나중에’ 두 목록으로 시작하기에 딱 맞습니다. 목록이나 항목이 더 필요해지면 앱 내 구입 항목인 프리미엄으로 목록과 항목 제한을 없애고 테마 101가지와 이모지 11세트를 모두 쓸 수 있어요."
+   ],
+   "look": [
+    "오늘 목록을 홈 화면 위젯으로 바로 볼 수 있는지",
+    "할 일을 적고 체크하는 데 몇 번 탭해야 하는지",
+    "애플워치에서도 할 일을 확인할 수 있는지",
+    "알림을 중요한 일에만 걸 수 있는지",
+    "무료 버전에서 목록과 항목을 몇 개까지 쓸 수 있는지",
+    "앱 내 구입이 앱스토어 페이지에 분명히 적혀 있는지"
+   ],
+   "steps": [
+    "‘오늘’ 목록을 만들고 오늘 꼭 할 일 4개 안팎만 적습니다.",
+    "나머지는 ‘나중에’ 목록으로 옮깁니다.",
+    "홈 화면 첫 페이지에 Mochi 위젯을 추가하고 ‘오늘’ 목록을 고릅니다.",
+    "시간이 정해진 일(학원, 마감)에만 알림을 겁니다.",
+    "끝낸 일은 바로 작은 동그라미를 탭하고, 밤에 내일 목록으로 옮길 것만 고릅니다."
+   ],
+   "rows": [
+    [
+     "잊어버림",
+     "홈 화면 첫 페이지 위젯",
+     "앱을 열지 않아도 휴대폰을 켤 때마다 보임"
+    ],
+    [
+     "지침",
+     "‘오늘’ 4개 안팎＋‘나중에’ 목록",
+     "끝이 보이는 목록이라 끝까지 체크함"
+    ],
+    [
+     "손이 바쁠 때",
+     "애플워치에서 확인",
+     "휴대폰을 꺼내다 SNS로 새지 않음"
+    ]
+   ],
+   "fits": "Mochi는 홈 화면 위젯으로 오늘 할 일을 늘 보이게 두고 싶은 사람을 위한 귀여운 체크리스트입니다. 할 일을 적고 작은 동그라미를 탭해 완료하고, 애플워치와 알림, 101가지 테마를 지원합니다. 무료 버전은 목록 2개(목록당 4개), 테마 5가지, 이모지 1세트이며, 프리미엄은 앱 내 구입입니다.",
+   "faq": [
+    [
+     "위젯에서 무엇이 보이나요?",
+     "홈 화면 위젯에서 고른 목록의 할 일을 확인할 수 있어서, 앱을 열지 않아도 오늘 해야 할 일이 보입니다."
+    ],
+    [
+     "무료로 어디까지 쓸 수 있나요?",
+     "목록 2개, 목록당 항목 최대 4개, 테마 5가지, 이모지 1세트입니다. ‘오늘’과 ‘나중에’ 두 목록으로 시작하기에 충분합니다."
+    ],
+    [
+     "애플워치에서도 되나요?",
+     "네. Apple Watch에서 할 일을 확인할 수 있어서 휴대폰을 꺼내지 않고도 다음 할 일을 볼 수 있습니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "To-do list widget: does putting today's list on your Home Screen really help?",
+   "meta": "A to-do app you never open doesn't help. Put only today's list on a Home Screen widget, check it on Apple Watch and keep lists short enough to finish. How to set up Mochi, the cute checklist.",
+   "h1": "To-do list widget: see today's tasks without opening the app",
+   "lead": "Many people searching for a to-do list widget have already installed and deleted several to-do apps. However carefully you write the list, if you never open the app you don't look at it again until the day is over.",
+   "answer": "Make one short list with only today's tasks and put it on the first page of your Home Screen as a widget. You see it every time you unlock the phone, and on Apple Watch if you have one. Keep that list to about four items so you actually finish it.",
+   "paras": [
+    "The most common reason to-do lists fail is that they're out of sight. Write tasks in the morning, close the app, and by lunchtime you can't remember what you wrote. A widget fixes that directly: it doesn't ring like a notification, but today's list is the first thing you see on your way to open a messaging or social app. Put it on the first page, near the bottom where your thumb reaches easily.",
+    "The second factor is length. Fifteen items on a widget are exhausting to look at. Keep a Today list of about four items and move the rest to a Later list. In exam season, put one task per subject on Today; keep groceries in a separate list you only open at the store. Ticking finished items right away and watching the widget shrink is what keeps you coming back.",
+    "The third is mood. People look for a cute to-do list not just because it's pretty but because they want to open it. Mochi is a checklist where you add a task and tap a little circle when it's done, with Home Screen widgets, Apple Watch, reminders for important tasks and 101 themes. School, work, groceries, routines and habits fit in one place.",
+    "The free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set, which fits a Today list and a Later list perfectly. If you need more lists or tasks, Premium, an in-app purchase, removes those limits and unlocks all 101 themes and 11 emoji sets."
+   ],
+   "look": [
+    "Whether today's list can sit on the Home Screen as a widget",
+    "How many taps it takes to add and check off a task",
+    "Whether tasks show up on Apple Watch",
+    "Whether reminders can be limited to important tasks",
+    "How many lists and tasks the free version allows",
+    "Whether the in-app purchase is clearly listed on the App Store page"
+   ],
+   "steps": [
+    "Create a Today list with only about four things you must do today.",
+    "Move everything else to a Later list.",
+    "Add the Mochi widget to the first page of your Home Screen and pick the Today list.",
+    "Set reminders only for tasks with a fixed time (classes, deadlines).",
+    "Tap the little circle as soon as something is done; at night choose what moves to tomorrow."
+   ],
+   "rows": [
+    [
+     "Forgetting",
+     "Widget on the first Home Screen page",
+     "Visible every time you unlock, without opening the app"
+    ],
+    [
+     "Burnout",
+     "About four on Today plus a Later list",
+     "A list with a visible end gets finished"
+    ],
+    [
+     "Busy hands",
+     "Check tasks on Apple Watch",
+     "No pulling out the phone and drifting into social apps"
+    ]
+   ],
+   "fits": "Mochi is a cute checklist for people who want today's tasks always in view on a Home Screen widget. Add tasks, tap the little circle to finish, and use Apple Watch, reminders and 101 themes. The free version includes 2 lists with up to 4 tasks each, 5 themes and 1 emoji set; Premium is an in-app purchase.",
+   "faq": [
+    [
+     "What does the widget show?",
+     "The Home Screen widget shows tasks from the list you choose, so you see what's left today without opening the app."
+    ],
+    [
+     "How much can I do for free?",
+     "2 lists with up to 4 tasks each, 5 themes and 1 emoji set, enough to start with a Today list and a Later list."
+    ],
+    [
+     "Does it work on Apple Watch?",
+     "Yes. You can check your tasks on Apple Watch and see the next one without taking out your phone."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "mochidonestamp",
+  "locale": "ja",
+  "market": "JP",
+  "term": "いつやった",
+  "rank": null,
+  "slug": "itsu-yatta-app-log-last-done-date-sheets-filters-japan",
+  "loc": {
+   "title": "「いつやった？」を一瞬で答えるアプリ：シーツ交換・フィルター掃除・水やりの前回日を記録する方法",
+   "meta": "シーツを替えたのはいつ？エアコンのフィルターは？「いつやった」をすぐ答えるには、終わった瞬間に1タップで日時を残すのがいちばん。周期リマインダーとの使い分けと、Mochi DoneStampでの始め方。",
+   "h1": "「いつやった？」に毎回すぐ答える：前回の日付を1タップで残す記録術",
+   "lead": "App Storeで「いつやった」と検索する人の多くは、やることリストが欲しいのではありません。シーツ交換、歯ブラシの交換、エアコンのフィルター掃除のように、毎日ではないけれど忘れると困ることの「前回」を思い出したいのです。",
+   "answer": "コツは、終わったその場で1タップして日時を残すことです。予定を先に決めてリマインダーを積むより、実際にやった日を記録して「前回から何日たったか」を見るほうが続きます。間隔が決まっているものだけに周期を付け、次の時期は実際に終えた日から数え直すようにします。",
+   "paras": [
+    "「いつやった？」が答えられなくなる理由はシンプルで、記録するタイミングが「やった後」ではなく「思い出した時」になっているからです。カレンダーにあとから書こうとしても、日付はもうあいまい。リマインダーは「やる日」を知らせてくれますが、遅れて済ませた場合や早めに済ませた場合、次の予定がずれていきます。だから記録は、作業が終わったその瞬間にワンタップで日時を残すだけ、という形がいちばん続きます。",
+    "記録しておくと便利なのは、2週間から半年くらいの間隔でやるものです。たとえばシーツやまくらカバーの交換、浴室の排水口の掃除、エアコンや換気扇のフィルター、浄水器のカートリッジ、観葉植物の水やりと植え替え、歯ブラシやスポンジの交換、実家への電話、スマホ写真のバックアップ、散髪、歯医者の定期検診。どれも「たしか先月…いや先々月？」となりやすい項目です。",
+    "次に考えるのは周期です。全部に期限を付けると通知が多すぎて無視するようになるので、「だいたい2週間ごと」のようなゆるい周期と、「90日ごと」のような正確な周期を、本当に必要なものだけに付けます。大事なのは、次の時期を予定日ではなく実際に終えた日から数え直すこと。3日遅れてシーツを替えたなら、次もそこから2週間後です。",
+    "Mochi DoneStampはこの使い方のために作られています。済ませたら1タップで記録して取り消しもでき、過去の日時の追加・修正もできます。分から年までの周期、完了とスヌーズ付きの通知、ホーム画面とロック画面のウィジェット、Siriとショートカット、メモと写真の添付にも対応。無料版は進行中のイベント1件と無制限の履歴から始められ、Lifetime Proを一度購入するとイベント数の制限がなくなります。アカウント、広告、追跡はなく、サブスクリプションもありません。"
+   ],
+   "look": [
+    "終わった瞬間に1タップで日時を残せるか",
+    "記録し忘れた日をあとから追加・修正できるか",
+    "次の時期を実際にやった日から数え直してくれるか",
+    "ゆるい周期と正確な周期を使い分けられるか",
+    "ホーム画面やロック画面のウィジェットから記録できるか",
+    "アカウント登録や広告なしで使えるか"
+   ],
+   "steps": [
+    "「前回いつだっけ」と最近迷ったことを3つ書き出す（例：シーツ、フィルター、歯ブラシ）。",
+    "いちばん困っている1つをイベントとして登録する。",
+    "次にそれを済ませた瞬間に1タップで記録する。覚えている過去の日付があれば追加する。",
+    "間隔が決まっているものだけに周期を付け、通知は本当に必要なものに絞る。",
+    "ホーム画面かロック画面にウィジェットを置き、終わったらその場で押せるようにする。"
+   ],
+   "rows": [
+    [
+     "前回の日付",
+     "終わった瞬間の1タップ記録",
+     "あとから書くと日付があいまいになる"
+    ],
+    [
+     "次の時期",
+     "実際に終えた日から数え直す周期",
+     "遅れても早めても予定がずれない"
+    ],
+    [
+     "通知の数",
+     "周期は必要なものだけに付ける",
+     "通知が多いと全部無視するようになる"
+    ]
+   ],
+   "fits": "Mochi DoneStampは、シーツやフィルターの交換、水やり、実家への電話など「前回いつやった？」を記録したい人向けのアプリです。1タップ記録と取り消し、過去日時の追加・編集、分から年までの周期、完了・スヌーズ付き通知、ホーム画面とロック画面のウィジェット、Siriとショートカットに対応。無料版はイベント1件と無制限の履歴、Lifetime Proは一度の購入で制限解除、サブスクリプションはありません。",
+   "faq": [
+    [
+     "やることリストやリマインダーと何が違いますか？",
+     "やることリストは「これからやること」、リマインダーは「やる予定の日」を管理します。Mochi DoneStampは「実際にやった日」を残し、前回から何日たったかと、そこから数えた次の時期を見せます。"
+    ],
+    [
+     "記録し忘れたらどうなりますか？",
+     "過去の日時を追加したり、記録を編集・削除したりできます。覚えている範囲で前回の日付を入れておけば、次の時期もその日から計算されます。"
+    ],
+    [
+     "家族で同じ家事を記録できますか？",
+     "記録は端末内に保存され、アカウントは不要です。共有したい場合は、同じ端末のウィジェットから押すなど、家族で記録する場所を決めておくと迷いません。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "An app that answers \"when did I last do that?\": log the last date for sheets, filters and watering",
+   "meta": "When did you last change the sheets or clean the AC filter? The easiest answer is a one-tap log of the moment you finish. How it differs from recurring reminders, and how to start with Mochi DoneStamp.",
+   "h1": "Answer \"when did I last?\" every time: one-tap logs of the last date",
+   "lead": "Most people searching for a \"when did I last\" app don't want another to-do list. They want to remember the last time they did things that aren't daily but matter when forgotten: changing the sheets, replacing a toothbrush, cleaning an air-conditioner filter.",
+   "answer": "Log the date and time with one tap the moment you finish. Recording what you actually did and seeing how many days have passed works better than piling up reminders in advance. Add a rhythm only to things with a real interval, and count the next time from the day you actually finished.",
+   "paras": [
+    "You lose track because you record when you remember, not when you finish. Writing it into a calendar later means the date is already fuzzy. Reminders tell you the day something is due, but if you do it late or early, every later date drifts. So the habit that lasts is a single tap that stamps the time the moment the job is done.",
+    "It pays off most for things done every two weeks to every six months: changing sheets and pillowcases, cleaning the shower drain, AC or range-hood filters, water-filter cartridges, watering and repotting plants, replacing toothbrushes and sponges, calling family, backing up phone photos, haircuts and dental checkups. Each is a classic \"last month… or the month before?\" item.",
+    "Then think about rhythms. Put a deadline on everything and you'll get so many alerts you start ignoring them, so add a loose rhythm such as \"about every two weeks\" or an exact one such as \"every 90 days\" only where it matters. The key is that the next time is counted from the day you actually finished. Change the sheets three days late and the next change is two weeks from then.",
+    "Mochi DoneStamp is built for exactly this. One tap logs a finished task, with Undo, and you can add or edit past dates. It supports rhythms from minutes to years, local reminders with Done and Snooze, Home and Lock Screen widgets, Siri and Shortcuts, and optional notes and photos. The free version starts with one active event and unlimited history; a one-time Lifetime Pro purchase removes the event limit. No account, no ads, no tracking and no subscription."
+   ],
+   "look": [
+    "Whether one tap records the date and time the moment you finish",
+    "Whether you can add or fix dates you forgot to log",
+    "Whether the next due time restarts from the day you actually finished",
+    "Whether you can choose loose or exact rhythms",
+    "Whether you can log from Home Screen or Lock Screen widgets",
+    "Whether it works without an account or ads"
+   ],
+   "steps": [
+    "Write down three things you recently couldn't remember doing (for example sheets, filters, toothbrush).",
+    "Add the one that bothers you most as an event.",
+    "The next time you finish it, tap once to log it, and add any past date you remember.",
+    "Give a rhythm only to things with a fixed interval, and keep alerts to the ones you need.",
+    "Put a widget on the Home Screen or Lock Screen so you can log it on the spot."
+   ],
+   "rows": [
+    [
+     "Last date",
+     "One-tap log the moment you finish",
+     "Dates written later are fuzzy"
+    ],
+    [
+     "Next time",
+     "Rhythm counted from when you actually finished",
+     "Doing it late or early doesn't shift every later date"
+    ],
+    [
+     "Number of alerts",
+     "Rhythms only where they matter",
+     "Too many alerts and you ignore them all"
+    ]
+   ],
+   "fits": "Mochi DoneStamp is for people who want to answer \"when did I last…?\" for sheets, filters, watering, family calls and other repeating chores: one-tap logging with Undo, past dates you can add or edit, rhythms from minutes to years, reminders with Done and Snooze, Home and Lock Screen widgets, and Siri and Shortcuts. Start free with one active event and unlimited history; Lifetime Pro is a one-time purchase that removes the limit, with no subscription.",
+   "faq": [
+    [
+     "How is it different from a to-do list or reminders?",
+     "A to-do list tracks what you still have to do and reminders track the day something is due. Mochi DoneStamp keeps the day you actually did it, shows how many days have passed, and counts the next time from there."
+    ],
+    [
+     "What if I forget to log it?",
+     "You can add past dates and edit or delete entries. Enter the last date you remember and the next time is calculated from it."
+    ],
+    [
+     "Can a family log the same chores?",
+     "Records are stored on the device and no account is needed. If several people log, agree on one device and widget for it so nobody wonders where the latest date is."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "notesstudio100",
+  "locale": "ru",
+  "market": "RU",
+  "term": "конспект",
+  "rank": null,
+  "slug": "lecture-notes-on-ipad-russia-handwritten-konspekt-with-audio-before-exam-session",
+  "loc": {
+   "title": "Конспект лекций на iPad: от руки, с PDF преподавателя и аудиозаписью к нужной странице",
+   "meta": "Как вести конспект лекций на iPad так, чтобы перед сессией быстро найти тему: рукописные записи поверх PDF, аудио, привязанное к странице, поиск по почерку и карточки с интервальным повторением. Пошагово в 100 Notes Studio.",
+   "h1": "Конспект на iPad, который пригодится в сессию",
+   "lead": "Тот, кто ищет в App Store «конспект», обычно уже пробовал писать лекции в обычных заметках или фотографировать доску. Перед сессией выясняется, что записи есть, а найти нужную тему и понять, что имел в виду преподаватель, невозможно.",
+   "answer": "Ведите одну тетрадь на предмет, пишите от руки поверх PDF-презентации преподавателя, включайте аудиозапись на странице, где идёт лекция, и сразу превращайте определения в карточки. Тогда перед экзаменом вы ищете по почерку, слушаете объяснение именно к этой странице и повторяете карточки по расписанию, а не перечитываете всё подряд.",
+   "paras": [
+    "Главная ошибка — смешивать все предметы в одном месте. Заведите отдельную тетрадь на каждый курс и выберите для неё подходящую бумагу: клетку для математики, линейку для гуманитарных предметов, нотный стан для сольфеджио. Если преподаватель выкладывает слайды, импортируйте PDF и пишите прямо поверх: выделения, подчёркивания и рукописные пометки остаются рядом с исходным текстом, а не в отдельном файле.",
+    "Второе — звук. Быстро говорящего лектора невозможно записать дословно, поэтому включайте аудиозапись на той странице, где сейчас конспектируете. Запись прикрепляется к странице и воспроизводится оттуда же, и через месяц вы откроете не «Запись 37», а нужную тему вместе с объяснением. Распознавание почерка и поиск по заголовкам, тексту, рукописи и вложениям выполняются на устройстве и работают без интернета, даже в аудитории со слабой сетью.",
+    "Третье — повторение. Конспект сам по себе не готовит к экзамену. Определения, формулы и даты лучше сразу переносить в карточки учебного режима: с пропусками и интервальным повторением по алгоритму FSRS, который показывает карточку тогда, когда вы начинаете её забывать. За две-три недели до сессии вы повторяете 15–20 минут в день, а не пытаетесь выучить всё в последнюю ночь.",
+    "В 100 Notes Studio всё это собрано в одном приложении: 29 перьев и кистей с поддержкой нажима и наклона для совместимых стилусов, 100 стилей тетрадей, импорт и разметка PDF, аудио, привязанное к странице, распознавание почерка, учебный режим с карточками и FSRS, папки, теги и история версий. Учётная запись не нужна, рекламы и отслеживания нет. Бесплатный режим включает редактор, 1 активную тетрадь до 5 страниц и 2 стиля; дополнительная разблокировка добавляет другие тетради, неограниченные страницы и остальные стили."
+   ],
+   "look": [
+    "Можно ли писать от руки прямо поверх PDF преподавателя",
+    "Прикрепляется ли аудиозапись к конкретной странице",
+    "Есть ли поиск по рукописному тексту и работает ли он без интернета",
+    "Можно ли сделать карточки с интервальным повторением из конспекта",
+    "Поддерживаются ли нажим, наклон и защита от касаний ладонью",
+    "Нужна ли учётная запись и есть ли реклама"
+   ],
+   "steps": [
+    "Создайте отдельную тетрадь на каждый предмет и выберите подходящую бумагу.",
+    "Импортируйте слайды преподавателя в PDF и пишите пометки поверх них.",
+    "На лекции включайте аудиозапись на странице, которую сейчас ведёте.",
+    "После занятия переносите определения и формулы в карточки учебного режима.",
+    "За 2–3 недели до сессии повторяйте карточки по расписанию 15–20 минут в день."
+   ],
+   "rows": [
+    [
+     "Не найти тему",
+     "Тетрадь на предмет и поиск по почерку",
+     "Нужная страница находится за секунды"
+    ],
+    [
+     "Не успеваю записать",
+     "Аудио, привязанное к странице",
+     "Объяснение лежит рядом с конспектом"
+    ],
+    [
+     "Забываю к экзамену",
+     "Карточки с повторением по FSRS",
+     "Повторение по расписанию вместо зубрёжки"
+    ]
+   ],
+   "fits": "100 Notes Studio подходит студентам, которые ведут конспекты на iPad: рукописные записи 29 перьями, PDF преподавателя с пометками, аудио к странице, распознавание почерка и поиск на устройстве, карточки с FSRS, 100 стилей тетрадей. Без учётной записи и рекламы; бесплатно — 1 тетрадь до 5 страниц и 2 стиля, остальное открывает дополнительная разблокировка.",
+   "faq": [
+    [
+     "Работает ли приложение без интернета?",
+     "Да. Основные функции, включая письмо, распознавание почерка и поиск, выполняются на устройстве, поэтому слабая сеть в аудитории не мешает."
+    ],
+    [
+     "Как найти место в аудиозаписи лекции?",
+     "Запись прикрепляется к странице, на которой вы её начали, и воспроизводится с этой страницы. Открыв тему в конспекте, вы сразу слышите объяснение к ней."
+    ],
+    [
+     "Хватит ли бесплатного режима на семестр?",
+     "Бесплатный режим включает 1 активную тетрадь до 5 страниц и 2 стиля, этого достаточно, чтобы попробовать. Для конспектов по нескольким предметам нужна дополнительная разблокировка."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Lecture notes on iPad: handwritten, on top of the lecturer's PDF, with audio on the right page",
+   "meta": "How to take lecture notes on iPad so you can find any topic before exams: handwriting over PDF slides, audio attached to the page, handwriting search and spaced-repetition flashcards. Step by step in 100 Notes Studio.",
+   "h1": "iPad lecture notes that still help at exam time",
+   "lead": "Students searching for a lecture-notes app have usually tried a basic notes app or photos of the whiteboard. Before exams they find they have notes, but can't locate the topic or remember what the lecturer meant.",
+   "answer": "Keep one notebook per course, handwrite on top of the lecturer's PDF slides, record audio on the page you're writing, and turn definitions into flashcards right away. Before the exam you search your handwriting, play the explanation attached to that exact page and review cards on a schedule instead of rereading everything.",
+   "paras": [
+    "The main mistake is mixing every course in one place. Create a notebook per course and pick paper that suits it: grid for math, lines for humanities, staves for music theory. If the lecturer shares slides, import the PDF and write right on top: highlights, underlines and handwritten notes stay next to the source instead of in a separate file.",
+    "Second, sound. You can't write down a fast lecturer word for word, so record audio on the page you're currently writing. The recording is attached to that page and plays from it, so a month later you open the topic itself, not \"Recording 37\". Handwriting recognition and search across titles, text, handwriting and attachments run on the device and work offline, even in a lecture hall with poor signal.",
+    "Third, review. Notes alone don't prepare you for an exam. Move definitions, formulas and dates into study-mode flashcards with cloze deletions and FSRS spaced repetition, which shows a card when you're about to forget it. Two or three weeks before exams you review 15 to 20 minutes a day instead of cramming the night before.",
+    "100 Notes Studio puts all of this in one app: 29 pens and brushes with pressure and tilt for supported styluses, 100 notebook styles, PDF import and markup, audio attached to pages, handwriting recognition, a study mode with flashcards and FSRS, folders, tags and version history. No account, no ads, no tracking. The free mode includes the editor, 1 active notebook of up to 5 pages and 2 styles; an additional unlock adds more notebooks, unlimited pages and the remaining styles."
+   ],
+   "look": [
+    "Whether you can handwrite directly on the lecturer's PDF",
+    "Whether audio recordings attach to a specific page",
+    "Whether handwriting is searchable, and whether search works offline",
+    "Whether notes can become spaced-repetition flashcards",
+    "Whether pressure, tilt and palm rejection are supported",
+    "Whether it needs an account or shows ads"
+   ],
+   "steps": [
+    "Create a notebook per course with suitable paper.",
+    "Import the lecturer's slides as PDF and annotate on top.",
+    "In class, record audio on the page you're writing.",
+    "After class, move definitions and formulas into study-mode flashcards.",
+    "Two to three weeks before exams, review the cards on schedule for 15 to 20 minutes a day."
+   ],
+   "rows": [
+    [
+     "Can't find the topic",
+     "One notebook per course plus handwriting search",
+     "The right page in seconds"
+    ],
+    [
+     "Can't write fast enough",
+     "Audio attached to the page",
+     "The explanation sits next to the notes"
+    ],
+    [
+     "Forget by exam day",
+     "FSRS spaced-repetition cards",
+     "Scheduled review instead of cramming"
+    ]
+   ],
+   "fits": "100 Notes Studio suits students taking lecture notes on iPad: handwriting with 29 pens, annotated lecturer PDFs, audio attached to pages, on-device handwriting recognition and search, FSRS flashcards and 100 notebook styles. No account and no ads; free mode includes 1 notebook of up to 5 pages and 2 styles, and an additional unlock opens the rest.",
+   "faq": [
+    [
+     "Does it work offline?",
+     "Yes. Core features including writing, handwriting recognition and search run on the device, so weak signal in a lecture hall doesn't matter."
+    ],
+    [
+     "How do I find the right spot in a lecture recording?",
+     "The recording is attached to the page where you started it and plays from that page, so opening the topic gives you its explanation."
+    ],
+    [
+     "Is the free mode enough for a semester?",
+     "Free mode includes 1 active notebook of up to 5 pages and 2 styles, enough to try it. Notes for several courses need the additional unlock."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "stayclock",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "床頭時鐘",
+  "rank": 26,
+  "slug": "bedside-clock-app-iphone-stays-on-dim-red-at-night-taiwan",
+  "loc": {
+   "title": "床頭時鐘 App：手機放床頭整晚亮著、半夜看時間不刺眼的設定法",
+   "meta": "想把 iPhone 或 iPad 當床頭時鐘？充電時恆亮、夜間自動換成純黑底紅字、OLED 防烙印、整點報時與簡易鬧鐘要怎麼設，一次講清楚。Stay Clock 翻頁桌鐘，無帳號無廣告。",
+   "h1": "床頭時鐘 App：讓手機整晚亮著，又不會半夜把你照醒",
+   "lead": "在 App Store 搜「床頭時鐘」的人，多半不是想買一顆新鬧鐘，而是睡前把手機插上充電、放在床頭櫃，希望半夜睜眼就看得到幾點，又不想被一整片白光弄醒。",
+   "answer": "選一款「充電時自動恆亮」的時鐘 App，晚上排程切換成純黑底、暗紅色數字的夜間錶面，亮度調到躺在枕頭上剛好看得清楚；OLED 螢幕的手機再開像素偏移防烙印。這樣不用把自動鎖定改成「永不」，拔掉充電線也不會一直耗電。",
+   "paras": [
+    "很多人第一個做法是到「螢幕顯示與亮度」把自動鎖定改成永不，結果白天拔線出門忘了改回來，電一下就掉光；或是用內建的 StandBy，卻發現只有橫放充電時才會出現，換個角度就熄了。床頭時鐘真正需要的是「看充電狀態決定要不要亮」：插著線就恆亮，拔掉就照系統設定，或是保留一個電量下限，低於那個電量就讓螢幕休息。",
+    "第二件事是夜裡的光。凌晨三點睜開眼，白底黑字的時鐘幾乎等於開了一盞小燈，伴侶也會被照到。比較舒服的做法是到了睡覺時間自動換成純黑背景上的暗紅色數字，紅光在暗處最不刺眼，亮度再壓到最低還讀得出來的程度。OLED 螢幕的 iPhone 有另一個顧慮：同樣的數字固定在同一個位置亮八小時，久了可能留下殘影，所以要選有像素微幅偏移、閒置時細節變淡的時鐘。",
+    "第三件事是早上。床頭時鐘如果同時有整點報時和簡易鬧鐘，就不用再另外開一個 App 設鬧鐘；不想被打擾的人可以把整點報時只留給白天。Stay Clock 翻頁桌鐘就是照這個情境做的：充電時恆亮（可設電量下限或跟隨系統）、夜間排程切換純黑底紅色錶面、像素偏移保護 OLED、整點報時與簡易鬧鐘，選好的錶面也會同步到 StandBy、鎖定畫面、主畫面小工具和 Apple Watch。內建 1 款完整錶面可直接用，沒有帳號、沒有廣告、不連網；想換更多錶面，再一次性選購 Lifetime 解鎖 100 款，沒有訂閱。",
+    "最後是擺放。iPhone 直放在窄小的床頭櫃比較穩，iPad 橫放則隔著整個房間都看得到。時間要選 12 或 24 小時制、要不要顯示日期星期或整月行事曆，都可以照每款錶面分開設定；家裡有人在國外的，也能切到別的時區。睡前把螢幕擦一下，黑底上的指紋其實很明顯。"
+   ],
+   "look": [
+    "插著充電線時會不會自動恆亮，而不必把自動鎖定改成「永不」",
+    "有沒有夜間排程，能自動換成純黑底、暗紅色的錶面",
+    "OLED 螢幕有沒有像素偏移之類的防烙印保護",
+    "整點報時和鬧鐘能不能在同一個 App 裡設定",
+    "要不要註冊帳號、有沒有廣告，資料會不會上傳",
+    "選好的錶面能不能同步到 StandBy、鎖定畫面和小工具"
+   ],
+   "steps": [
+    "把要放床頭的 iPhone 或閒置的 iPad 接上床邊的充電線。",
+    "在時鐘 App 裡開「充電時恆亮」，或設定電量下限。",
+    "排好夜間時段，讓錶面在睡前自動換成純黑底暗紅色。",
+    "關燈躺下，把亮度調到在枕頭上剛好看得清楚的最低值。",
+    "OLED 機型保持像素偏移開啟；白天要用再把整點報時打開。"
+   ],
+   "rows": [
+    [
+     "整晚亮著",
+     "充電時恆亮、可設電量下限",
+     "不用改「永不鎖定」，拔線後也不會一直耗電"
+    ],
+    [
+     "不刺眼",
+     "夜間排程＋純黑底暗紅錶面",
+     "半夜睜眼看時間不會被白光完全弄醒"
+    ],
+    [
+     "保護螢幕",
+     "OLED 像素偏移、閒置淡化",
+     "同一組數字亮一整晚，容易留下殘影"
+    ]
+   ],
+   "fits": "Stay Clock 翻頁桌鐘適合想把手機或舊 iPad 放在床頭、整晚當時鐘用的人：全螢幕大時間、充電時恆亮、夜間純黑底紅色錶面、OLED 像素偏移、整點報時與簡易鬧鐘，錶面同步到 StandBy、鎖定畫面、小工具與 Apple Watch。內建 1 款完整錶面，沒有帳號、廣告與追蹤；更多錶面是一次性的 Lifetime 選購，沒有訂閱。",
+   "faq": [
+    [
+     "手機整晚插著充電放床頭會不會傷電池？",
+     "iPhone 會自己管理充電，「最佳化電池充電」開著時會在你起床前才充滿。重點是用狀況良好的充電線、不要蓋住手機；時鐘只在插著線時恆亮，拔掉就回到系統設定，也比較不會白天耗電。"
+    ],
+    [
+     "內建的 StandBy 不夠用嗎？",
+     "StandBy 只在橫放充電時出現；直放、放在 iPad 上，或想要固定的夜間紅色錶面與整點報時時，就需要專門的時鐘 App。Stay Clock 選好的錶面也會同步到 StandBy，兩邊看起來一樣。"
+    ],
+    [
+     "要多暗才不會影響睡眠？",
+     "以躺在枕頭上剛好讀得出數字為準，紅色數字配純黑背景在暗處最不刺眼。有伴侶同房的話，可以把手機轉個角度，讓螢幕朝向自己這一側。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Bedside clock app on iPhone: stays on all night, dim red so it won't wake you",
+   "meta": "Using an iPhone or iPad as a bedside clock? How to keep it on while charging, switch to a dim red face on true black at night, protect OLED screens and set a chime and alarm. Stay Clock: no account, no ads.",
+   "h1": "A bedside clock app that stays on all night without waking you up",
+   "lead": "People who search for a bedside clock usually don't want to buy a new alarm clock. They plug the phone in at bedtime, put it on the nightstand and want to see the time at 3 a.m. without a wall of white light.",
+   "answer": "Pick a clock app that stays on automatically while charging, schedule a night face with dim red digits on true black, and lower the brightness until you can just read it from the pillow. On OLED phones, keep pixel shifting on. You never need to set Auto-Lock to Never, and unplugging won't drain the battery.",
+   "paras": [
+    "The usual first try is setting Auto-Lock to Never. Then you unplug in the morning, forget to change it back and the battery drains by lunch. StandBy only appears when the phone is charging on its side, so a different angle turns it off. A bedside clock needs to follow charging: on while the cable is in, back to the system setting when it's out, or on until the battery reaches a floor you choose.",
+    "The second issue is the light. A white face at 3 a.m. is basically a small lamp, and it wakes your partner too. It is easier on the eyes to switch automatically at bedtime to dim red digits on a true black background, with the brightness at the lowest level you can still read. OLED iPhones add one more worry: the same digits lit in the same place for eight hours can leave marks, so choose a clock with gentle pixel shifting and details that soften when idle.",
+    "The third is the morning. If the bedside clock also has an hourly chime and a simple alarm, you don't need another app; keep the chime for daytime if it would disturb you. Stay Clock: Flip Desk Clock is built for this: Keep Awake while charging with a battery floor or the system setting, a night schedule with a dim red face on true black, pixel shifting for OLED, an hourly chime and a simple alarm, and the face you pick also appears in StandBy, on the Lock Screen, in Home Screen widgets and on Apple Watch. One complete face is included free, with no account, no ads and no network. An optional one-time Lifetime unlock adds 100 more faces, with no subscription.",
+    "Finally, placement. An iPhone standing upright fits a narrow nightstand; an iPad in landscape reads from across the room. 12 or 24 hour time, the date and weekday or a full month calendar can be set separately for each face, and you can switch to another time zone if family lives abroad. Wipe the screen before bed: fingerprints stand out on black."
+   ],
+   "look": [
+    "Whether it stays on automatically while charging, without setting Auto-Lock to Never",
+    "Whether a night schedule switches to a dim red face on true black",
+    "Whether OLED screens get pixel shifting or similar protection",
+    "Whether the hourly chime and an alarm live in the same app",
+    "Whether it needs an account, shows ads or uploads data",
+    "Whether the face you pick also appears in StandBy, on the Lock Screen and in widgets"
+   ],
+   "steps": [
+    "Plug the iPhone or spare iPad you'll keep on the nightstand into the bedside charger.",
+    "Turn on Keep Awake while charging in the clock app, or set a battery floor.",
+    "Schedule the night hours so the face switches to dim red on true black before bed.",
+    "Turn the lights off, lie down and lower the brightness until you can just read it.",
+    "On OLED models leave pixel shifting on; turn the hourly chime on for daytime only."
+   ],
+   "rows": [
+    [
+     "Staying on",
+     "Keep Awake while charging, with a battery floor",
+     "No Auto-Lock Never, and no drain once unplugged"
+    ],
+    [
+     "Not dazzling",
+     "Night schedule plus dim red face on true black",
+     "Checking the time at night doesn't fully wake you"
+    ],
+    [
+     "Sparing the screen",
+     "OLED pixel shifting and idle dimming",
+     "Digits lit all night in one place can leave marks"
+    ]
+   ],
+   "fits": "Stay Clock: Flip Desk Clock suits anyone keeping a phone or an old iPad on the nightstand as an all-night clock: big full-screen time, Keep Awake while charging, a dim red face on true black at night, OLED pixel shifting, an hourly chime and a simple alarm, with the same face in StandBy, on the Lock Screen, in widgets and on Apple Watch. One complete face is included free, with no account, ads or tracking; more faces are an optional one-time Lifetime purchase with no subscription.",
+   "faq": [
+    [
+     "Is it bad for the battery to charge on the nightstand all night?",
+     "iPhone manages charging itself, and Optimized Battery Charging finishes topping up shortly before you usually wake. Use a cable in good condition and don't cover the phone. A clock that only stays on while plugged in returns to your system setting once you unplug."
+    ],
+    [
+     "Isn't StandBy enough?",
+     "StandBy only appears when the phone charges on its side. If it stands upright, sits on an iPad, or you want a fixed dim red night face and an hourly chime, a dedicated clock app helps. The Stay Clock face you choose also appears in StandBy, so both look the same."
+    ],
+    [
+     "How dim is dim enough for sleep?",
+     "Aim for the lowest level at which you can still read the digits from the pillow; red digits on true black are the gentlest in the dark. If you share the room, angle the screen toward your side of the bed."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "studydown",
+  "locale": "zh-Hant",
+  "market": "TW",
+  "term": "讀書計時",
+  "rank": null,
+  "slug": "study-timer-taiwan-phone-face-down-counts-only-real-study-time",
+  "loc": {
+   "title": "讀書計時 App：手機蓋著放才算時間，拿起來就暫停的計時法",
+   "meta": "讀書計時最怕「計時器在跑、人在滑手機」。把手機螢幕朝下放才開始累計，拿起就依寬限時間暫停，再看拿起次數、連續專注時長和期限配速。Studydown 翻面專注計時的用法。",
+   "h1": "讀書計時：只算手機蓋著的時間，才是真正讀進去的時數",
+   "lead": "在 App Store 搜「讀書計時」的人，通常已經用過碼表或番茄鐘，卻發現一個問題：計時器在跑，手卻拿著手機在滑。記下來的時數很好看，成績卻沒跟上。",
+   "answer": "讓計時和手機的狀態綁在一起：選好科目後把手機螢幕朝下平放在桌上才開始累計，一拿起來就在你設定的寬限時間後暫停，離開 App 也不再累計。每次結束看一眼拿起手機的次數和平均連續專注時長，再用每週目標和考試期限算出每天該讀多久。",
+   "paras": [
+    "一般碼表式的讀書計時，問題在於它只知道「開始」和「結束」，不知道中間發生什麼事。回個訊息、看一下限時動態，十分鐘就過去了，但時數照算。翻面計時反過來：手機蓋著放才算，拿起來就停，所以記下來的每一分鐘，都是手機沒被你拿在手上的時間。很多人第一次用才發現，自己以為讀了三小時，其實連續不碰手機的時間只有四十分鐘。",
+    "第二個重點是看「品質」而不只是「時數」。每次翻面計時結束，Studydown 會留下專注簽名：這段時間拿起手機幾次、平均能連續專注多久。目標不是一次衝五小時，而是讓平均連續時間慢慢從 15 分鐘拉到 40 分鐘。科目也可以自己建，數學、英文、國文、刷題，各自一個顏色，今天和本週的時數、連續記錄天數、各科分布一眼就看得到；忘了記也能手動補登或修正。",
+    "第三個重點是期限。學測、統測、國考、證照考試都有固定日期，把考試設成期限、再給它一個投入目標，Studydown 會依已記錄的時數算出接下來每天需要的配速。落後了就知道要補多少，超前了也不用焦慮。提醒可以設每天一次或每隔幾小時，不想被打擾時隨時關掉。",
+    "要先知道的限制：計時時要讓 App 保持開啟，手機要平穩放在桌面。免費版可建立最多 3 個項目，有累計 5 分鐘的體驗額度（不是每天重置），已開始的計時會完整保留；一次購買 Pro 就能解鎖不限項目與時數、進階統計、目標、期限、小工具、Apple Watch 與完整備份，沒有訂閱。不用註冊、沒有廣告，紀錄都在裝置上。"
+   ],
+   "look": [
+    "是不是手機蓋著才計時、拿起來就暫停",
+    "能不能看到拿起手機的次數和平均連續專注時長",
+    "能不能自己建科目、看今天與本週各科時數",
+    "能不能設考試期限，算出每天需要的讀書配速",
+    "忘了計時能不能手動補登",
+    "要不要註冊帳號、有沒有廣告與訂閱"
+   ],
+   "steps": [
+    "把這學期要讀的科目建成項目，各給一個顏色。",
+    "設定拿起手機後多久暫停的寬限時間，例如 10 秒。",
+    "選科目、按開始，把手機螢幕朝下平放在桌上，App 保持開啟。",
+    "讀完看專注簽名：拿起幾次、平均連續多久，下一次試著少拿一次。",
+    "把學測、統測或國考設成期限並給投入目標，每天照配速讀。"
+   ],
+   "rows": [
+    [
+     "時數灌水",
+     "翻面才計時、拿起依寬限時間暫停",
+     "只記錄手機沒被拿在手上的時間"
+    ],
+    [
+     "讀書品質",
+     "拿起次數與平均連續專注時長",
+     "看得出是真的讀還是一直分心"
+    ],
+    [
+     "考前規劃",
+     "期限＋投入目標算每日配速",
+     "知道每天要讀多久才來得及"
+    ]
+   ],
+   "fits": "Studydown 翻面專注計時適合準備學測、統測、國考或證照，想知道自己真正讀了多久的人：螢幕朝下才累計、拿起依寬限時間暫停、專注簽名、自訂科目、今天與本週統計、連續天數、每週目標與期限配速。免費版可試 3 個項目與累計 5 分鐘，Pro 一次購買解鎖全部，沒有訂閱、廣告與帳號。",
+   "faq": [
+    [
+     "和番茄鐘有什麼不同？",
+     "番茄鐘只負責提醒你何時休息；翻面計時把累計時數和手機有沒有被拿起綁在一起，記下來的是真正沒碰手機的時間，並顯示拿起次數。"
+    ],
+    [
+     "計時時可以切到別的 App 嗎？",
+     "計時時請讓 Studydown 保持開啟；離開 App 後就不再累計，這是為了不把滑手機的時間算成讀書時間。"
+    ],
+    [
+     "免費版能用多久？",
+     "免費版最多 3 個項目，提供累計 5 分鐘的體驗額度，不是每天重置；已開始的那次計時會完整保留。要長期使用再一次購買 Pro，沒有訂閱。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Study timer app: it only counts while your phone is face down and pauses when you pick it up",
+   "meta": "The problem with study timers is the clock keeps running while you scroll. Count time only while the phone lies face down, pause after a grace period when you pick it up, and see pickups, focus streaks and deadline pace. How to use Studydown.",
+   "h1": "Study timer: count only the time your phone stays face down",
+   "lead": "People searching for a study timer have usually tried a stopwatch or a Pomodoro app and hit the same problem: the timer runs while their hand is on the phone, scrolling. The logged hours look great; the grades don't follow.",
+   "answer": "Tie the timer to the phone itself. Pick a subject, then place the phone face down on the desk to start counting; pick it up and it pauses after your grace period, and leaving the app stops further counting. After each session, check how many times you picked the phone up and your average uninterrupted time, then use weekly goals and the exam deadline to see how much to study each day.",
+   "paras": [
+    "A stopwatch-style study timer only knows start and stop, not what happened in between. Reply to a message, glance at stories, and ten minutes are gone but still counted. Face-down timing flips this: time only counts while the phone is down, and stops when it's picked up, so every logged minute is time the phone wasn't in your hand. Many people discover that three hours of \"studying\" contained only forty minutes without touching the phone.",
+    "The second point is quality, not just hours. Each face-down session in Studydown leaves a Focus Signature: how many times you picked up the phone and your average uninterrupted time. The goal isn't one five-hour marathon but nudging that average from 15 minutes to 40. Create your own subjects (math, English, past papers) each with a color, and see today and this week, consecutive days and a breakdown by subject; forgot to time a session? Add it manually or correct entries.",
+    "The third point is the deadline. Entrance exams, civil service exams and certifications have fixed dates. Set the exam as a deadline with an effort target and Studydown uses logged time to show the daily pace still required. Behind, you know how much to catch up; ahead, there's no need to panic. Reminders can come once a day or every few hours, and you can turn them off any time.",
+    "Limits worth knowing: keep the app open while timing and the phone on a steady surface. The free version includes up to 3 activities and 5 recorded minutes in total, not a daily allowance, and a session already started is kept in full. A one-time Pro purchase unlocks unlimited activities and recording, advanced statistics, goals, deadlines, widgets, Apple Watch and backups, with no subscription. No account, no ads, and records stay on the device."
+   ],
+   "look": [
+    "Whether it only counts while the phone is face down and pauses when picked up",
+    "Whether you can see phone pickups and average uninterrupted focus",
+    "Whether you can create subjects and see today's and this week's hours by subject",
+    "Whether an exam deadline turns into a daily study pace",
+    "Whether you can add missed time manually",
+    "Whether it needs an account, shows ads or requires a subscription"
+   ],
+   "steps": [
+    "Create this term's subjects as activities, each with its own color.",
+    "Set a grace period before pausing when you pick up the phone, for example 10 seconds.",
+    "Choose a subject, tap start and place the phone face down on the desk with the app open.",
+    "After studying, check the Focus Signature (pickups and average streak) and aim for one fewer pickup next time.",
+    "Set your exam as a deadline with an effort target and follow the daily pace."
+   ],
+   "rows": [
+    [
+     "Inflated hours",
+     "Counts face down, pauses after a grace period",
+     "Logs only time the phone wasn't in your hand"
+    ],
+    [
+     "Study quality",
+     "Pickups and average uninterrupted time",
+     "Shows real study versus constant distraction"
+    ],
+    [
+     "Exam planning",
+     "Deadline plus effort target gives a daily pace",
+     "You know how much is needed each day"
+    ]
+   ],
+   "fits": "Studydown: Face-Down Timer suits students preparing for entrance, civil service or certification exams who want to know how long they really studied: counts only face down, pauses after a grace period, Focus Signature, custom subjects, today and weekly stats, streaks, weekly goals and deadline pace. Try 3 activities and 5 total minutes free; Pro is a one-time purchase with no subscription, ads or account.",
+   "faq": [
+    [
+     "How is it different from a Pomodoro timer?",
+     "A Pomodoro timer tells you when to take breaks. Face-down timing ties the logged time to whether the phone was picked up, so it records time you really didn't touch the phone and shows how many pickups there were."
+    ],
+    [
+     "Can I switch to another app while timing?",
+     "Keep Studydown open while timing. Leaving the app stops further counting, so scrolling time is never logged as study time."
+    ],
+    [
+     "How long does the free version last?",
+     "The free version allows up to 3 activities and 5 recorded minutes in total, not per day; a session already started is kept in full. For long-term use, Pro is a one-time purchase with no subscription."
+    ]
+   ]
+  }
  }
 ]

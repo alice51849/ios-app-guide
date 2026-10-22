@@ -42,6 +42,14 @@ class DataContractTests(unittest.TestCase):
         slugs = [entry["slug"] for entry in self.entries]
         self.assertEqual(len(slugs), len(set(slugs)))
 
+    def test_english_market_entries_have_one_english_body(self):
+        # 英語市場詞(locale "en")只寫根目錄英文頁一份:loc 與 en 必須同一份內容,市場是英語店面。
+        for entry in self.entries:
+            if entry["locale"] != "en":
+                continue
+            self.assertEqual(entry["loc"], entry["en"], entry["slug"])
+            self.assertIn(entry["market"], {"US", "GB", "CA", "AU", "NZ", "IE", "SG", "IN"}, entry["slug"])
+
 
 class EnFallbackNormalizationTests(unittest.TestCase):
     def test_en_us_donor_becomes_root_english(self):

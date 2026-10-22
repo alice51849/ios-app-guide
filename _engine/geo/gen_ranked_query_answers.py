@@ -482,11 +482,17 @@ def render(entry: dict, locale: str) -> str:
         text,
         "og:url",
     )
+    # 英語市場的詞(美、英…)entry locale 寫 "en":只有根目錄英文頁一份,不重複 hreflang。
+    local_alt = (
+        ""
+        if entry["locale"] == "en"
+        else f'<link rel="alternate" hreflang="{entry["locale"]}"'
+        f' href="{page_url(entry["locale"], slug)}">\n'
+    )
     alternates = (
         f'<link rel="alternate" hreflang="en" href="{page_url("en", slug)}">\n'
-        f'<link rel="alternate" hreflang="{entry["locale"]}"'
-        f' href="{page_url(entry["locale"], slug)}">\n'
-        f'<link rel="alternate" hreflang="x-default" href="{page_url("en", slug)}">\n'
+        + local_alt
+        + f'<link rel="alternate" hreflang="x-default" href="{page_url("en", slug)}">\n'
     )
     text = sub_once(ALTERNATE_RUN_RE, lambda _m: alternates, text, "hreflang block")
     # 這條是 sync_standard_site.py 為那一頁登記的 AT Protocol 紀錄,不可沿用。
@@ -694,7 +700,7 @@ def main() -> int:
             print(f"SKIP {entry['slug']}: {why} (waiting for aeo_answers_i18n)", flush=True)
             skipped.append(entry)
             continue
-        for locale in ("en", entry["locale"]):
+        for locale in dict.fromkeys(("en", entry["locale"])):  # 英語市場詞只寫根目錄英文頁
             rendered = render(entry, locale)
             target = answers_dir(locale) / f"{entry['slug']}.html"
             if args.dry_run:
@@ -714,7 +720,7 @@ def main() -> int:
         entries = [entry for entry in entries if entry not in skipped]
     if update_english_index(entries):
         print("INDEX answers/index.html updated", flush=True)
-    for locale in sorted({entry["locale"] for entry in entries}):
+    for locale in sorted({entry["locale"] for entry in entries} - {"en"}):  # 英文索引上面已處理
         rows = [entry for entry in entries if entry["locale"] == locale]
         if update_locale_index(locale, rows):
             print(f"INDEX {locale}/answers/index.html updated", flush=True)

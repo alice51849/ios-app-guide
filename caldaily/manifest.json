@@ -1,0 +1,5892 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "caldaily",
+ "app_id": "6794178671",
+ "app_store_url": "https://apps.apple.com/app/id6794178671",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "caldaily/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 61,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "حاسبة تتذكر كل نتيجة",
+   "line2": "سمِّ النتائج وابحث عنها لاحقًا",
+   "chips": [
+    "سمِّ النتائج وابحث عنها لاحقًا",
+    "ويدجت وأدوات وسجل مرتب"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        560,
+        72,
+        1008,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        562,
+        184,
+        1008,
+        818
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.7,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        679,
+        842,
+        1008,
+        985
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.46,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "حاسبة تتذكر كل نتيجة\nسمِّ النتائج وابحث عنها لاحقًا\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#CalDaily",
+   "caption_link": "حاسبة تتذكر كل نتيجة\nسمِّ النتائج وابحث عنها لاحقًا\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "caldaily/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "Every Result, Saved",
+   "line2": "Name and search any calculation",
+   "chips": [
+    "Name and search any calculation",
+    "Widget, Tip, Discount & Loan"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        477,
+        801
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.0,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        825,
+        457,
+        945
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.66,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Every Result, Saved\nName and search any calculation\n\n📲 Download via the link in bio\n\n#CalDaily",
+   "caption_link": "Every Result, Saved\nName and search any calculation\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "caldaily/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Cada resultat, desat",
+   "line2": "Posa-hi nom i cerca'l després",
+   "chips": [
+    "Posa-hi nom i cerca'l després",
+    "Widget, eines i historial"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        529,
+        713
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.29,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        737,
+        409,
+        857
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.75,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Cada resultat, desat\nPosa-hi nom i cerca'l després\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#CalDaily",
+   "caption_link": "Cada resultat, desat\nPosa-hi nom i cerca'l després\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "caldaily/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Každý výpočet najdete",
+   "line2": "Názvy, hledání a osm nástrojů",
+   "chips": [
+    "Názvy, hledání a osm nástrojů",
+    "Widget, nástroje a historie"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        536,
+        754
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.48,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        778,
+        460,
+        898
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.51,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Každý výpočet najdete\nNázvy, hledání a osm nástrojů\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#CalDaily",
+   "caption_link": "Každý výpočet najdete\nNázvy, hledání a osm nástrojů\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "caldaily/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Hvert resultat gemt",
+   "line2": "Navngiv, søg og otte værktøjer",
+   "chips": [
+    "Navngiv, søg og otte værktøjer",
+    "Widget, værktøjer, historik"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        535,
+        748
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.91,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        772,
+        494,
+        901
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.51,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Hvert resultat gemt\nNavngiv, søg og otte værktøjer\n\n📲 Download via linket i bio\n\n#CalDaily",
+   "caption_link": "Hvert resultat gemt\nNavngiv, søg og otte værktøjer\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "caldaily/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.235<0.24)"
+   ],
+   "line1": "Jede Rechnung bleibt",
+   "line2": "Ergebnisse benennen und wiederfinden",
+   "chips": [
+    "Ergebnisse benennen und wiederfinden",
+    "Widget, Tools, Verlauf"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        272,
+        72,
+        809,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.54,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        124,
+        184,
+        955,
+        618
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Jede Rechnung bleibt\nErgebnisse benennen und wiederfinden\n\n📲 Download über den Link in der Bio\n\n#CalDaily",
+   "caption_link": "Jede Rechnung bleibt\nErgebnisse benennen und wiederfinden\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "caldaily/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 33,
+    "mixed_english_words": {
+     "2": [
+      "Dinner"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Dinner']]",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Θυμάται κάθε πράξη",
+   "line2": "Όνομα, αναζήτηση, 8 εργαλεία",
+   "chips": [
+    "Όνομα, αναζήτηση, 8 εργαλεία",
+    "Widget, εργαλεία, 100 θέματα"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        304,
+        72,
+        777,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        216,
+        184,
+        864,
+        632
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Θυμάται κάθε πράξη\nΌνομα, αναζήτηση, 8 εργαλεία\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#CalDaily",
+   "caption_link": "Θυμάται κάθε πράξη\nΌνομα, αναζήτηση, 8 εργαλεία\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "caldaily/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Every Result, Saved",
+   "line2": "Name and search any calculation",
+   "chips": [
+    "Name and search any calculation",
+    "Widget, GST, Discount & Loan"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        477,
+        801
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.0,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        825,
+        457,
+        945
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.66,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Every Result, Saved\nName and search any calculation\n\n📲 Download via the link in bio\n\n#CalDaily",
+   "caption_link": "Every Result, Saved\nName and search any calculation\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "caldaily/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Every Result, Saved",
+   "line2": "Name and search any calculation",
+   "chips": [
+    "Name and search any calculation",
+    "Widget, Tip, Discount & Loan"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        477,
+        801
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.0,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        825,
+        457,
+        945
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.66,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Every Result, Saved\nName and search any calculation\n\n📲 Download via the link in bio\n\n#CalDaily",
+   "caption_link": "Every Result, Saved\nName and search any calculation\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "caldaily/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Every Result, Saved",
+   "line2": "Name and search any calculation",
+   "chips": [
+    "Name and search any calculation",
+    "Widget, VAT, Discount & Loan"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        477,
+        801
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.0,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        825,
+        457,
+        945
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.66,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Every Result, Saved\nName and search any calculation\n\n📲 Download via the link in bio\n\n#CalDaily",
+   "caption_link": "Every Result, Saved\nName and search any calculation\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "caldaily/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Every Result, Saved",
+   "line2": "Name and search any calculation",
+   "chips": [
+    "Name and search any calculation",
+    "Widget, Tip, Discount & Loan"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        477,
+        801
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.0,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        825,
+        457,
+        945
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.66,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Every Result, Saved\nName and search any calculation\n\n📲 Download via the link in bio\n\n#CalDaily",
+   "caption_link": "Every Result, Saved\nName and search any calculation\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "caldaily/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Cada cálculo, guardado",
+   "line2": "Ponle nombre, búscalo, expórtalo a CSV",
+   "chips": [
+    "Ponle nombre, búscalo, expórtalo a CSV",
+    "Widget, utilidades e historial"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        261,
+        72,
+        819,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.54,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        178,
+        184,
+        903,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Cada cálculo, guardado\nPonle nombre, búscalo, expórtalo a CSV\n\n📲 Descárgala desde el enlace de la bio\n\n#CalDaily",
+   "caption_link": "Cada cálculo, guardado\nPonle nombre, búscalo, expórtalo a CSV\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "caldaily/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Cada cálculo, guardado",
+   "line2": "Ponle nombre, búscalo, expórtalo a CSV",
+   "chips": [
+    "Ponle nombre, búscalo, expórtalo a CSV",
+    "Widget, utilidades e historial"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        261,
+        72,
+        819,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.54,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        178,
+        184,
+        903,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Cada cálculo, guardado\nPonle nombre, búscalo, expórtalo a CSV\n\n📲 Descárgala desde el enlace de la bio\n\n#CalDaily",
+   "caption_link": "Cada cálculo, guardado\nPonle nombre, búscalo, expórtalo a CSV\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "caldaily/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Jokainen tulos tallessa",
+   "line2": "Nimeä, hae ja kahdeksan työkalua",
+   "chips": [
+    "Nimeä, hae ja kahdeksan työkalua",
+    "Widget, työkalut ja historia"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        530,
+        753
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.09,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        777,
+        463,
+        906
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.51,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Jokainen tulos tallessa\nNimeä, hae ja kahdeksan työkalua\n\n📲 Lataa bion linkistä\n\n#CalDaily",
+   "caption_link": "Jokainen tulos tallessa\nNimeä, hae ja kahdeksan työkalua\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "caldaily/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Chaque calcul gardé",
+   "line2": "Nommez, retrouvez, exportez en CSV",
+   "chips": [
+    "Nommez, retrouvez, exportez en CSV",
+    "Widget, outils, 100 thèmes"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.04,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        202,
+        184,
+        878,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Chaque calcul gardé\nNommez, retrouvez, exportez en CSV\n\n📲 Téléchargez-la via le lien dans la bio\n\n#CalDaily",
+   "caption_link": "Chaque calcul gardé\nNommez, retrouvez, exportez en CSV\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "caldaily/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Chaque calcul gardé",
+   "line2": "Nommez, retrouvez, exportez en CSV",
+   "chips": [
+    "Nommez, retrouvez, exportez en CSV",
+    "Widget, outils, 100 thèmes"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.04,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        202,
+        184,
+        878,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Chaque calcul gardé\nNommez, retrouvez, exportez en CSV\n\n📲 Téléchargez-la via le lien dans la bio\n\n#CalDaily",
+   "caption_link": "Chaque calcul gardé\nNommez, retrouvez, exportez en CSV\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "caldaily/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 22,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "દરેક ગણતરી સચવાય",
+   "line2": "વિજેટ પોતે જ પૂર્ણ કેલ્ક્યુલેટર",
+   "chips": [
+    "વિજેટ પોતે જ પૂર્ણ કેલ્ક્યુલેટર",
+    "વિજેટ, ટૂલ્સ અને ઇતિહાસ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "closeup2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        299,
+        72,
+        781,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.0,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        184,
+        993,
+        496
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.91,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "દરેક ગણતરી સચવાય\nવિજેટ પોતે જ પૂર્ણ કેલ્ક્યુલેટર\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#CalDaily",
+   "caption_link": "દરેક ગણતરી સચવાય\nવિજેટ પોતે જ પૂર્ણ કેલ્ક્યુલેટર\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "caldaily/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 64,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "מחשבון שזוכר הכול",
+   "line2": "לכל תוצאה שם, וחיפוש גם אחרי שבוע",
+   "chips": [
+    "לכל תוצאה שם, וחיפוש גם אחרי שבוע",
+    "וידג'ט, כלים והיסטוריה"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "closeup2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        300,
+        72,
+        779,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.02,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        184,
+        1001,
+        443
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.98,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        314,
+        467,
+        765,
+        552
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 16.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "מחשבון שזוכר הכול\nלכל תוצאה שם, וחיפוש גם אחרי שבוע\n\n📲 הורדה דרך הקישור בביו\n\n#CalDaily",
+   "caption_link": "מחשבון שזוכר הכול\nלכל תוצאה שם, וחיפוש גם אחרי שבוע\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "caldaily/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 18,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "हर हिसाब सहेजा हुआ",
+   "line2": "नतीजे को नाम दें, बाद में खोजें",
+   "chips": [
+    "नतीजे को नाम दें, बाद में खोजें",
+    "विजेट, टूल और साफ़ हिसाब"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.282,
+    "family": "closeup2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        293,
+        72,
+        787,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        184,
+        994,
+        479
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.85,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "हर हिसाब सहेजा हुआ\nनतीजे को नाम दें, बाद में खोजें\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#CalDaily",
+   "caption_link": "हर हिसाब सहेजा हुआ\nनतीजे को नाम दें, बाद में खोजें\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "caldaily/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Svaki izračun pronađeš",
+   "line2": "Naziv, pretraga i osam alata",
+   "chips": [
+    "Naziv, pretraga i osam alata",
+    "Widget, alati i povijest"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        534,
+        664
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.52,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        688,
+        392,
+        817
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.3,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Svaki izračun pronađeš\nNaziv, pretraga i osam alata\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#CalDaily",
+   "caption_link": "Svaki izračun pronađeš\nNaziv, pretraga i osam alata\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "caldaily/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Minden számítás megvan",
+   "line2": "Név, keresés és nyolc eszköz",
+   "chips": [
+    "Név, keresés és nyolc eszköz",
+    "Widget, eszközök, előzmények"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        528,
+        695
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        719,
+        485,
+        848
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.94,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Minden számítás megvan\nNév, keresés és nyolc eszköz\n\n📲 Töltsd le a bio linkjéről\n\n#CalDaily",
+   "caption_link": "Minden számítás megvan\nNév, keresés és nyolc eszköz\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "caldaily/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Hitungan tersimpan",
+   "line2": "Beri nama hasil, cari lagi nanti",
+   "chips": [
+    "Beri nama hasil, cari lagi nanti",
+    "Widget, alat, riwayat rapi"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        249,
+        184,
+        831,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Hitungan tersimpan\nBeri nama hasil, cari lagi nanti\n\n📲 Unduh lewat link di bio\n\n#CalDaily",
+   "caption_link": "Hitungan tersimpan\nBeri nama hasil, cari lagi nanti\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "caldaily/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Ogni calcolo, salvato",
+   "line2": "Dagli un nome, ritrovalo, esporta in CSV",
+   "chips": [
+    "Dagli un nome, ritrovalo, esporta in CSV",
+    "Widget, strumenti, cronologia"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        513,
+        819
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.11,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        843,
+        499,
+        972
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.6,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Ogni calcolo, salvato\nDagli un nome, ritrovalo, esporta in CSV\n\n📲 Scaricala dal link nella bio\n\n#CalDaily",
+   "caption_link": "Ogni calcolo, salvato\nDagli un nome, ritrovalo, esporta in CSV\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "caldaily/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 34,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "計算結果を全部残す",
+   "line2": "名前を付けて、あとから検索",
+   "chips": [
+    "名前を付けて、あとから検索",
+    "ウィジェット・8つのツール・履歴"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.263,
+    "family": "closeup2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        324,
+        72,
+        756,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.07,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        184,
+        987,
+        426
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.05,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        210,
+        450,
+        870,
+        536
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.72,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "計算結果を全部残す\n名前を付けて、あとから検索\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#CalDaily",
+   "caption_link": "計算結果を全部残す\n名前を付けて、あとから検索\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "caldaily/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 43,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "ಪ್ರತಿ ಲೆಕ್ಕ ಉಳಿಯುತ್ತದೆ",
+   "line2": "ಪ್ರತಿ ಫಲಿತಾಂಶಕ್ಕೆ ಹೆಸರು ನೀಡಿ",
+   "chips": [
+    "ಪ್ರತಿ ಫಲಿತಾಂಶಕ್ಕೆ ಹೆಸರು ನೀಡಿ",
+    "ವಿಜೆಟ್, ಪರಿಕರ, 100 ಥೀಮ್"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "closeup2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        326,
+        72,
+        754,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.04,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        184,
+        1003,
+        467
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.38,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        279,
+        491,
+        801,
+        583
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 16.13,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ಪ್ರತಿ ಲೆಕ್ಕ ಉಳಿಯುತ್ತದೆ\nಪ್ರತಿ ಫಲಿತಾಂಶಕ್ಕೆ ಹೆಸರು ನೀಡಿ\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#CalDaily",
+   "caption_link": "ಪ್ರತಿ ಲೆಕ್ಕ ಉಳಿಯುತ್ತದೆ\nಪ್ರತಿ ಫಲಿತಾಂಶಕ್ಕೆ ಹೆಸರು ನೀಡಿ\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "caldaily/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 23,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "계산 결과를 모두 남겨요",
+   "line2": "이름을 붙이고 나중에 검색",
+   "chips": [
+    "이름을 붙이고 나중에 검색",
+    "위젯, 도구, 기록 정리"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "closeup2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        324,
+        72,
+        756,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.0,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        89,
+        184,
+        991,
+        408
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        336,
+        432,
+        745,
+        522
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 16.12,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "계산 결과를 모두 남겨요\n이름을 붙이고 나중에 검색\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#CalDaily",
+   "caption_link": "계산 결과를 모두 남겨요\n이름을 붙이고 나중에 검색\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "caldaily/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 43,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.2<0.24; closeup2×1.08: screen_area=0.216<0.24; closeup2×1.16: screen_area=0.231<0.24)"
+   ],
+   "line1": "കണക്ക് സൂക്ഷിക്കും",
+   "line2": "ഫലങ്ങൾക്ക് പേരും തരവും നൽകാം",
+   "chips": [
+    "ഫലങ്ങൾക്ക് പേരും തരവും നൽകാം",
+    "വിജറ്റ്, ടൂളുകൾ, 100 തീം"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "closeup2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        286,
+        72,
+        794,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.78,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        176,
+        184,
+        905,
+        719
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.79,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "കണക്ക് സൂക്ഷിക്കും\nഫലങ്ങൾക്ക് പേരും തരവും നൽകാം\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#CalDaily",
+   "caption_link": "കണക്ക് സൂക്ഷിക്കും\nഫലങ്ങൾക്ക് പേരും തരവും നൽകാം\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "caldaily/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 26,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "प्रत्येक हिशेब जपलेला",
+   "line2": "निकालाला नाव द्या, नंतर शोधा",
+   "chips": [
+    "निकालाला नाव द्या, नंतर शोधा",
+    "विजेट, साधने आणि इतिहास"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        451,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        459,
+        868
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.04,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        892,
+        366,
+        1035
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.09,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "प्रत्येक हिशेब जपलेला\nनिकालाला नाव द्या, नंतर शोधा\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#CalDaily",
+   "caption_link": "प्रत्येक हिशेब जपलेला\nनिकालाला नाव द्या, नंतर शोधा\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "caldaily/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Setiap kiraan disimpan",
+   "line2": "Namakan keputusan, cari semula nanti",
+   "chips": [
+    "Namakan keputusan, cari semula nanti",
+    "Widget, alatan, sejarah kemas"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        524,
+        719
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.08,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        743,
+        436,
+        872
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.74,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Setiap kiraan disimpan\nNamakan keputusan, cari semula nanti\n\n📲 Muat turun melalui pautan dalam bio\n\n#CalDaily",
+   "caption_link": "Setiap kiraan disimpan\nNamakan keputusan, cari semula nanti\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "caldaily/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Elke som bewaard",
+   "line2": "Geef resultaten een naam en vind ze terug",
+   "chips": [
+    "Geef resultaten een naam en vind ze terug",
+    "Widget, tools, geschiedenis"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        527,
+        643
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.59,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        667,
+        412,
+        796
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.72,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Elke som bewaard\nGeef resultaten een naam en vind ze terug\n\n📲 Download via de link in bio\n\n#CalDaily",
+   "caption_link": "Elke som bewaard\nGeef resultaten een naam en vind ze terug\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "caldaily/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Hvert resultat lagret",
+   "line2": "Navngi, søk og åtte verktøy",
+   "chips": [
+    "Navngi, søk og åtte verktøy",
+    "Widget, verktøy og historikk"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        535,
+        748
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        772,
+        450,
+        901
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.52,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Hvert resultat lagret\nNavngi, søk og åtte verktøy\n\n📲 Last ned via lenken i bio\n\n#CalDaily",
+   "caption_link": "Hvert resultat lagret\nNavngi, søk og åtte verktøy\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "caldaily/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 25,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ପ୍ରତି ହିସାବ ସଞ୍ଚିତ",
+   "line2": "ୱିଜେଟ୍ ନିଜେ ଏକ ପୂର୍ଣ୍ଣ କାଲକୁଲେଟର",
+   "chips": [
+    "ୱିଜେଟ୍ ନିଜେ ଏକ ପୂର୍ଣ୍ଣ କାଲକୁଲେଟର",
+    "ୱିଜେଟ, ଉପକରଣ ଓ ଇତିହାସ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        499,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        533,
+        678
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.53,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        702,
+        431,
+        839
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.98,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "ପ୍ରତି ହିସାବ ସଞ୍ଚିତ\nୱିଜେଟ୍ ନିଜେ ଏକ ପୂର୍ଣ୍ଣ କାଲକୁଲେଟର\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#CalDaily",
+   "caption_link": "ପ୍ରତି ହିସାବ ସଞ୍ଚିତ\nୱିଜେଟ୍ ନିଜେ ଏକ ପୂର୍ଣ୍ଣ କାଲକୁଲେଟର\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "caldaily/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 16,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ਹਰ ਹਿਸਾਬ ਸੰਭਾਲਿਆ",
+   "line2": "ਵਿਜੇਟ ਆਪ ਹੀ ਪੂਰਾ ਕੈਲਕੁਲੇਟਰ",
+   "chips": [
+    "ਵਿਜੇਟ ਆਪ ਹੀ ਪੂਰਾ ਕੈਲਕੁਲੇਟਰ",
+    "ਵਿਜੇਟ, ਸੰਦ ਅਤੇ ਇਤਿਹਾਸ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        442,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        528,
+        707
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        731,
+        496,
+        823
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.89,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "ਹਰ ਹਿਸਾਬ ਸੰਭਾਲਿਆ\nਵਿਜੇਟ ਆਪ ਹੀ ਪੂਰਾ ਕੈਲਕੁਲੇਟਰ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#CalDaily",
+   "caption_link": "ਹਰ ਹਿਸਾਬ ਸੰਭਾਲਿਆ\nਵਿਜੇਟ ਆਪ ਹੀ ਪੂਰਾ ਕੈਲਕੁਲੇਟਰ\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "caldaily/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Każdy wynik zapisany",
+   "line2": "Nazwij, wyszukaj i osiem narzędzi",
+   "chips": [
+    "Nazwij, wyszukaj i osiem narzędzi",
+    "Widżet, narzędzia, historia"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        528,
+        694
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.53,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        718,
+        489,
+        838
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.92,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Każdy wynik zapisany\nNazwij, wyszukaj i osiem narzędzi\n\n📲 Pobierz przez link w bio\n\n#CalDaily",
+   "caption_link": "Każdy wynik zapisany\nNazwij, wyszukaj i osiem narzędzi\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "caldaily/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Cada conta guardada",
+   "line2": "Dê nome ao resultado e ache depois",
+   "chips": [
+    "Dê nome ao resultado e ache depois",
+    "Widget, ferramentas, histórico"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        260,
+        72,
+        819,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        230,
+        184,
+        851,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Cada conta guardada\nDê nome ao resultado e ache depois\n\n📲 Baixe pelo link na bio\n\n#CalDaily",
+   "caption_link": "Cada conta guardada\nDê nome ao resultado e ache depois\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "caldaily/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Cada conta guardada",
+   "line2": "Dê nome ao resultado e encontre-o depois",
+   "chips": [
+    "Dê nome ao resultado e encontre-o depois",
+    "Widget, ferramentas, histórico"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        260,
+        72,
+        819,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        230,
+        184,
+        851,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Cada conta guardada\nDê nome ao resultado e encontre-o depois\n\n📲 Download via the link in bio\n\n#CalDaily",
+   "caption_link": "Cada conta guardada\nDê nome ao resultado e encontre-o depois\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "caldaily/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Regăsești orice calcul",
+   "line2": "Nume, căutare și opt instrumente",
+   "chips": [
+    "Nume, căutare și opt instrumente",
+    "Widget, instrumente, istoric"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        802,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        224,
+        184,
+        856,
+        632
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.79,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Regăsești orice calcul\nNume, căutare și opt instrumente\n\n📲 Descarcă din linkul din bio\n\n#CalDaily",
+   "caption_link": "Regăsești orice calcul\nNume, căutare și opt instrumente\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "caldaily/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 31,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.232<0.24)"
+   ],
+   "line1": "Калькулятор помнит",
+   "line2": "Названия, поиск и 8 инструментов",
+   "chips": [
+    "Названия, поиск и 8 инструментов",
+    "Виджет, научный режим, история"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        827,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.31,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        172,
+        184,
+        907,
+        625
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.75,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Калькулятор помнит\nНазвания, поиск и 8 инструментов\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#CalDaily",
+   "caption_link": "Калькулятор помнит\nНазвания, поиск и 8 инструментов\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "caldaily/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Každý výpočet nájdete",
+   "line2": "Názvy, hľadanie a osem nástrojov",
+   "chips": [
+    "Názvy, hľadanie a osem nástrojov",
+    "Widget, nástroje, história"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        536,
+        819
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.45,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        843,
+        469,
+        972
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.55,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Každý výpočet nájdete\nNázvy, hľadanie a osem nástrojov\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#CalDaily",
+   "caption_link": "Každý výpočet nájdete\nNázvy, hľadanie a osem nástrojov\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "caldaily/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Vsak izračun najdete",
+   "line2": "Ime, iskanje in osem orodij",
+   "chips": [
+    "Ime, iskanje in osem orodij",
+    "Pripomoček, orodja, zgodovina"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        519,
+        753
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.24,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        777,
+        483,
+        906
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.52,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Vsak izračun najdete\nIme, iskanje in osem orodij\n\n📲 Prenesite prek povezave v biu\n\n#CalDaily",
+   "caption_link": "Vsak izračun najdete\nIme, iskanje in osem orodij\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "caldaily/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Kalkylatorn som minns",
+   "line2": "Namnge, sök och åtta verktyg",
+   "chips": [
+    "Namnge, sök och åtta verktyg",
+    "Widget, verktyg, historik"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        830,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.29,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        216,
+        184,
+        864,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Kalkylatorn som minns\nNamnge, sök och åtta verktyg\n\n📲 Ladda ner via länken i bion\n\n#CalDaily",
+   "caption_link": "Kalkylatorn som minns\nNamnge, sök och åtta verktyg\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "caldaily/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 92,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.199<0.24; closeup2×1.08: screen_area=0.214<0.24; closeup2×1.16: screen_area=0.229<0.24)"
+   ],
+   "line1": "கணக்கு வரலாறு",
+   "line2": "விட்ஜெட்டே முழு கால்குலேட்டர்",
+   "chips": [
+    "விட்ஜெட்டே முழு கால்குலேட்டர்",
+    "விட்ஜெட், கருவிகள், வரலாறு"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "closeup2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        292,
+        72,
+        787,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.0,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        262,
+        184,
+        817,
+        723
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "கணக்கு வரலாறு\nவிட்ஜெட்டே முழு கால்குலேட்டர்\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#CalDaily",
+   "caption_link": "கணக்கு வரலாறு\nவிட்ஜெட்டே முழு கால்குலேட்டர்\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "caldaily/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 33,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "లెక్కలన్నీ భద్రం",
+   "line2": "ప్రతి ఫలితానికి పేరు, రకం",
+   "chips": [
+    "ప్రతి ఫలితానికి పేరు, రకం",
+    "విడ్జెట్, సాధనాలు, చరిత్ర"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        506,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        539,
+        717
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        741,
+        524,
+        834
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.81,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "లెక్కలన్నీ భద్రం\nప్రతి ఫలితానికి పేరు, రకం\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#CalDaily",
+   "caption_link": "లెక్కలన్నీ భద్రం\nప్రతి ఫలితానికి పేరు, రకం\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "caldaily/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 75,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ทุกผลลัพธ์ถูกเก็บไว้",
+   "line2": "ตั้งชื่อและค้นหาได้ เครื่องมือ 8 แบบ",
+   "chips": [
+    "ตั้งชื่อและค้นหาได้ เครื่องมือ 8 แบบ",
+    "วิดเจ็ต, วิทยาศาสตร์, ประวัติ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        488,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        534,
+        640
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.59,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        664,
+        464,
+        802
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.55,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "ทุกผลลัพธ์ถูกเก็บไว้\nตั้งชื่อและค้นหาได้ เครื่องมือ 8 แบบ\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#CalDaily",
+   "caption_link": "ทุกผลลัพธ์ถูกเก็บไว้\nตั้งชื่อและค้นหาได้ เครื่องมือ 8 แบบ\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "caldaily/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Her sonucu hatırlar",
+   "line2": "Widget, araçlar ve geçmiş",
+   "chips": [
+    "Widget, araçlar ve geçmiş"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        521,
+        748
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.38,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Her sonucu hatırlar\nWidget, araçlar ve geçmiş\n\n📲 Biyografideki bağlantıdan indirin\n\n#CalDaily",
+   "caption_link": "Her sonucu hatırlar\nWidget, araçlar ve geçmiş\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "caldaily/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 75,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.232<0.24)"
+   ],
+   "line1": "Калькулятор пам'ятає",
+   "line2": "Назви, пошук і 8 інструментів",
+   "chips": [
+    "Назви, пошук і 8 інструментів",
+    "Віджет, інструменти, історія"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        261,
+        72,
+        819,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        172,
+        184,
+        907,
+        625
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.75,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Калькулятор пам'ятає\nНазви, пошук і 8 інструментів\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#CalDaily",
+   "caption_link": "Калькулятор пам'ятає\nНазви, пошук і 8 інструментів\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "caldaily/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 41,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ہر حساب محفوظ",
+   "line2": "نتیجے کو نام دیں اور بعد میں تلاش کریں",
+   "chips": [
+    "نتیجے کو نام دیں اور بعد میں تلاش کریں",
+    "ویجٹ، اوزار اور ریکارڈ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        646,
+        72,
+        1008,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.11,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        550,
+        184,
+        1008,
+        655
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.56,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        585,
+        679,
+        1008,
+        767
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.2,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "ہر حساب محفوظ\nنتیجے کو نام دیں اور بعد میں تلاش کریں\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#CalDaily",
+   "caption_link": "ہر حساب محفوظ\nنتیجے کو نام دیں اور بعد میں تلاش کریں\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "caldaily/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Tính xong vẫn nhớ",
+   "line2": "Đặt tên, tìm lại, 8 công cụ",
+   "chips": [
+    "Đặt tên, tìm lại, 8 công cụ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        306,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        538,
+        734
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.93,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Tính xong vẫn nhớ\nĐặt tên, tìm lại, 8 công cụ\n\n📲 Tải về qua link ở bio\n\n#CalDaily",
+   "caption_link": "Tính xong vẫn nhớ\nĐặt tên, tìm lại, 8 công cụ\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "caldaily/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 24,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "算过的都找得到",
+   "line2": "可命名・可搜索・8种工具",
+   "chips": [
+    "可命名・可搜索・8种工具",
+    "桌面小组件，贷款折扣小费都能算"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        505,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        532,
+        629
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.64,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        653,
+        460,
+        781
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.13,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "算过的都找得到\n可命名・可搜索・8种工具\n\n📲 请到个人主页（bio）的链接下载\n\n#CalDaily",
+   "caption_link": "算过的都找得到\n可命名・可搜索・8种工具\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "caldaily/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 27,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "算過的都找得到",
+   "line2": "命名・搜尋・8種進階工具",
+   "chips": [
+    "命名・搜尋・8種進階工具",
+    "桌面小工具，貸款折扣小費都能算"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        505,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        532,
+        629
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        653,
+        460,
+        781
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.13,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "算過的都找得到\n命名・搜尋・8種進階工具\n\n📲 請到個人檔案（bio）的連結下載\n\n#CalDaily",
+   "caption_link": "算過的都找得到\n命名・搜尋・8種進階工具\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/zh-Hant.jpg"
+  }
+ ]
+}

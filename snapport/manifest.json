@@ -1,0 +1,5814 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "snapport",
+ "app_id": "6780575828",
+ "app_store_url": "https://apps.apple.com/app/id6780575828",
+ "play_url": "https://play.google.com/store/apps/details?id=com.snapport.app",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "snapport/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 230,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "صورة الجواز في البيت",
+   "line2": "قوالب مقاسات وخلفية بيضاء وصفحات للطباعة",
+   "chips": [
+    "قوالب مقاسات وخلفية بيضاء وصفحات للطباعة",
+    "35x45 وورقة للطباعة",
+    "صدّر JPEG أو PNG أو PDF"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.26,
+    "family": "stagger2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        302,
+        72,
+        778,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.85,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        176,
+        987,
+        451
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.95,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "صورة الجواز في البيت\nقوالب مقاسات وخلفية بيضاء وصفحات للطباعة\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#Snapport",
+   "caption_link": "صورة الجواز في البيت\nقوالب مقاسات وخلفية بيضاء وصفحات للطباعة\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "snapport/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback stagger2->split2 (stagger2: screen_area=0.21<0.24; stagger2×1.08: screen_area=0.226<0.24; stagger2×1.16: screen_area=0.228<0.24; stagger2×1.25: screen_area=0.225<0.24)"
+   ],
+   "line1": "Passport Photos at Home",
+   "line2": "2x2 in, 35x45 mm and more templates",
+   "chips": [
+    "2x2 in, 35x45 mm and more templates",
+    "2x2 35x45 Sizes, Print Sheet",
+    "Export JPEG, PNG, or PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        321,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        524,
+        748
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.49,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        772,
+        449,
+        892
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.48,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        916,
+        384,
+        1040
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.7,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "Passport Photos at Home\n2x2 in, 35x45 mm and more templates\n\n📲 Download via the link in bio\n\n#Snapport",
+   "caption_link": "Passport Photos at Home\n2x2 in, 35x45 mm and more templates\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "snapport/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Foto de passaport",
+   "line2": "Feta a casa, amb plantilles de mida",
+   "chips": [
+    "Feta a casa, amb plantilles de mida",
+    "35x45 i full per imprimir",
+    "Exporta en JPEG, PNG o PDF"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.27,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        284,
+        72,
+        796,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        993,
+        418
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Foto de passaport\nFeta a casa, amb plantilles de mida\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#Snapport",
+   "caption_link": "Foto de passaport\nFeta a casa, amb plantilles de mida\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "snapport/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Pasová fotka doma",
+   "line2": "35×45 mm, bílé pozadí, arch k tisku",
+   "chips": [
+    "35×45 mm, bílé pozadí, arch k tisku",
+    "35x45 a arch k tisku",
+    "Export do JPEG, PNG nebo PDF"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.275,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        306,
+        72,
+        775,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.72,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        98,
+        176,
+        983,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Pasová fotka doma\n35×45 mm, bílé pozadí, arch k tisku\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#Snapport",
+   "caption_link": "Pasová fotka doma\n35×45 mm, bílé pozadí, arch k tisku\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "snapport/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "headline shortened to a shorter store hook: 35x45 og printark",
+    "layout fallback stagger2->stagger2 (stagger2: screen_area=0.208<0.24; stagger2×1.08: screen_area=0.224<0.24; stagger2×1.16: screen_area=0.226<0.24; stagger2×1.25: screen_area=0.223<0.24)"
+   ],
+   "line1": "35x45 og printark",
+   "line2": "35×45 mm-skabeloner · printark",
+   "chips": [
+    "35×45 mm-skabeloner · printark",
+    "35x45 og printark",
+    "Eksportér JPEG, PNG eller PDF"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.27,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        294,
+        72,
+        785,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.67,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        991,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 stagger2）"
+   },
+   "caption_instagram": "35x45 og printark\n35×45 mm-skabeloner · printark\n\n📲 Download via linket i bio\n\n#Snapport",
+   "caption_link": "35x45 og printark\n35×45 mm-skabeloner · printark\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "snapport/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Passbild zu Hause",
+   "line2": "Vorlagen und Hilfslinien fürs Gesicht",
+   "chips": [
+    "Vorlagen und Hilfslinien fürs Gesicht",
+    "35x45 Passbild, Druckbogen",
+    "Export als JPEG, PNG oder PDF"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.27,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        828,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        176,
+        989,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Passbild zu Hause\nVorlagen und Hilfslinien fürs Gesicht\n\n📲 Download über den Link in der Bio\n\n#Snapport",
+   "caption_link": "Passbild zu Hause\nVorlagen und Hilfslinien fürs Gesicht\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "snapport/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 293,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->stagger2 (stagger2: screen_area=0.239<0.24)"
+   ],
+   "line1": "Φωτό διαβατηρίου σπίτι",
+   "line2": "35×45 mm και πρότυπα πολλών χωρών",
+   "chips": [
+    "35×45 mm και πρότυπα πολλών χωρών",
+    "35x45 και φύλλο εκτύπωσης",
+    "Εξαγωγή JPEG, PNG ή PDF"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.258,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        801,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        997,
+        521
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 stagger2）"
+   },
+   "caption_instagram": "Φωτό διαβατηρίου σπίτι\n35×45 mm και πρότυπα πολλών χωρών\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#Snapport",
+   "caption_link": "Φωτό διαβατηρίου σπίτι\n35×45 mm και πρότυπα πολλών χωρών\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "snapport/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->split2 (stagger2: screen_area=0.21<0.24; stagger2×1.08: screen_area=0.226<0.24; stagger2×1.16: screen_area=0.228<0.24; stagger2×1.25: screen_area=0.225<0.24)"
+   ],
+   "line1": "Passport Photos at Home",
+   "line2": "35×45 mm and more size templates",
+   "chips": [
+    "35×45 mm and more size templates",
+    "2x2 35x45 Sizes, Print Sheet",
+    "Export JPEG, PNG or PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        321,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        524,
+        748
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.34,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        772,
+        449,
+        892
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.48,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        916,
+        384,
+        1035
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.7,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "Passport Photos at Home\n35×45 mm and more size templates\n\n📲 Download via the link in bio\n\n#Snapport",
+   "caption_link": "Passport Photos at Home\n35×45 mm and more size templates\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "snapport/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->split2 (stagger2: screen_area=0.21<0.24; stagger2×1.08: screen_area=0.226<0.24; stagger2×1.16: screen_area=0.228<0.24; stagger2×1.25: screen_area=0.225<0.24)"
+   ],
+   "line1": "Passport Photos at Home",
+   "line2": "35×45 mm and more size templates",
+   "chips": [
+    "35×45 mm and more size templates",
+    "2x2 35x45 Sizes, Print Sheet",
+    "Export JPEG, PNG or PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        321,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        524,
+        748
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.34,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        772,
+        449,
+        892
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.48,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        916,
+        384,
+        1035
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.7,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "Passport Photos at Home\n35×45 mm and more size templates\n\n📲 Download via the link in bio\n\n#Snapport",
+   "caption_link": "Passport Photos at Home\n35×45 mm and more size templates\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "snapport/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->split2 (stagger2: screen_area=0.21<0.24; stagger2×1.08: screen_area=0.226<0.24; stagger2×1.16: screen_area=0.228<0.24; stagger2×1.25: screen_area=0.225<0.24)"
+   ],
+   "line1": "Passport Photos at Home",
+   "line2": "35×45 mm and more size templates",
+   "chips": [
+    "35×45 mm and more size templates",
+    "2x2 35x45 Sizes, Print Sheet",
+    "Export JPEG, PNG or PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        321,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        524,
+        748
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.34,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        772,
+        449,
+        892
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.48,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        916,
+        384,
+        1035
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.7,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "Passport Photos at Home\n35×45 mm and more size templates\n\n📲 Download via the link in bio\n\n#Snapport",
+   "caption_link": "Passport Photos at Home\n35×45 mm and more size templates\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "snapport/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->split2 (stagger2: screen_area=0.21<0.24; stagger2×1.08: screen_area=0.226<0.24; stagger2×1.16: screen_area=0.228<0.24; stagger2×1.25: screen_area=0.225<0.24)"
+   ],
+   "line1": "Passport Photos at Home",
+   "line2": "2x2 in, 35x45 mm and more templates",
+   "chips": [
+    "2x2 in, 35x45 mm and more templates",
+    "2x2 35x45 Sizes, Print Sheet",
+    "Export JPEG, PNG, or PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        321,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        524,
+        748
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.49,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        772,
+        449,
+        892
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.48,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        916,
+        384,
+        1040
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.7,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "Passport Photos at Home\n2x2 in, 35x45 mm and more templates\n\n📲 Download via the link in bio\n\n#Snapport",
+   "caption_link": "Passport Photos at Home\n2x2 in, 35x45 mm and more templates\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "snapport/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->stagger2 (stagger2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Foto de carné en casa",
+   "line2": "35x45 y hoja para imprimir",
+   "chips": [
+    "35x45 y hoja para imprimir",
+    "Exporta JPEG, PNG o PDF",
+    "Guarda en Fotos o Archivos, o comparte"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.246,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        797,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        166,
+        176,
+        915,
+        558
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 stagger2）"
+   },
+   "caption_instagram": "Foto de carné en casa\n35x45 y hoja para imprimir\n\n📲 Descárgala desde el enlace de la bio\n\n#Snapport",
+   "caption_link": "Foto de carné en casa\n35x45 y hoja para imprimir\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "snapport/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->stagger2 (stagger2: screen_area=0.236<0.24)"
+   ],
+   "line1": "Foto de pasaporte en casa",
+   "line2": "35x45 y hoja para imprimir",
+   "chips": [
+    "35x45 y hoja para imprimir",
+    "Exporta JPEG, PNG o PDF",
+    "Guarda en Fotos o Archivos, o comparte"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.254,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        283,
+        72,
+        797,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        997,
+        532
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 stagger2）"
+   },
+   "caption_instagram": "Foto de pasaporte en casa\n35x45 y hoja para imprimir\n\n📲 Descárgala desde el enlace de la bio\n\n#Snapport",
+   "caption_link": "Foto de pasaporte en casa\n35x45 y hoja para imprimir\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "snapport/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Passikuva kotona",
+   "line2": "35×45 mm -pohjat · tulostusarkit",
+   "chips": [
+    "35×45 mm -pohjat · tulostusarkit",
+    "35x45 ja tulostusarkki",
+    "Vie JPEG-, PNG- tai PDF-muodossa"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.27,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        325,
+        72,
+        755,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        176,
+        986,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Passikuva kotona\n35×45 mm -pohjat · tulostusarkit\n\n📲 Lataa bion linkistä\n\n#Snapport",
+   "caption_link": "Passikuva kotona\n35×45 mm -pohjat · tulostusarkit\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "snapport/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->closeup2 (stagger2: screen_area=0.208<0.24; stagger2×1.08: screen_area=0.224<0.24; stagger2×1.16: screen_area=0.226<0.24; stagger2×1.25: screen_area=0.223<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Photo d'identité maison",
+   "line2": "Format 35x45, planche à imprimer",
+   "chips": [
+    "Format 35x45, planche à imprimer",
+    "Exportez en JPEG, PNG ou PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        272,
+        72,
+        808,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        96,
+        184,
+        983,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.55,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Photo d'identité maison\nFormat 35x45, planche à imprimer\n\n📲 Téléchargez-la via le lien dans la bio\n\n#Snapport",
+   "caption_link": "Photo d'identité maison\nFormat 35x45, planche à imprimer\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "snapport/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(1, ['how', 'many'])]; dropped",
+    "layout fallback stagger2->closeup2 (stagger2: screen_area=0.208<0.24; stagger2×1.08: screen_area=0.224<0.24; stagger2×1.16: screen_area=0.226<0.24; stagger2×1.25: screen_area=0.223<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Photo d'identité maison",
+   "line2": "Format 35x45, planche à imprimer",
+   "chips": [
+    "Format 35x45, planche à imprimer",
+    "Exportez en JPEG, PNG ou PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        283,
+        72,
+        797,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        96,
+        184,
+        983,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.55,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Photo d'identité maison\nFormat 35x45, planche à imprimer\n\n📲 Téléchargez-la via le lien dans la bio\n\n#Snapport",
+   "caption_link": "Photo d'identité maison\nFormat 35x45, planche à imprimer\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "snapport/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 236,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->stagger2 (stagger2: screen_area=0.228<0.24)"
+   ],
+   "line1": "ઘરે જ પાસપોર્ટ ફોટો",
+   "line2": "લોકપ્રિય સાઇઝ, સફેદ બૅકગ્રાઉન્ડ, પ્રિન્ટ શીટ",
+   "chips": [
+    "લોકપ્રિય સાઇઝ, સફેદ બૅકગ્રાઉન્ડ, પ્રિન્ટ શીટ",
+    "35x45 અને પ્રિન્ટ શીટ",
+    "JPEG, PNG, અથવા PDF નિકાસ"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.245,
+    "family": "stagger2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        294,
+        72,
+        787,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.67,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        122,
+        176,
+        959,
+        559
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.24,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 stagger2）"
+   },
+   "caption_instagram": "ઘરે જ પાસપોર્ટ ફોટો\nલોકપ્રિય સાઇઝ, સફેદ બૅકગ્રાઉન્ડ, પ્રિન્ટ શીટ\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#Snapport",
+   "caption_link": "ઘરે જ પાસપોર્ટ ફોટો\nલોકપ્રિય સાઇઝ, સફેદ બૅકગ્રાઉન્ડ, પ્રિન્ટ શીટ\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "snapport/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 207,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "תמונת דרכון בבית",
+   "line2": "תבניות מידות, קווי עזר ורקע לבן",
+   "chips": [
+    "תבניות מידות, קווי עזר ורקע לבן",
+    "35x45 וגיליון להדפסה",
+    "ייצוא JPEG, PNG או PDF"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.267,
+    "family": "stagger2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        302,
+        72,
+        779,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.86,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        102,
+        176,
+        978,
+        429
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.75,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "תמונת דרכון בבית\nתבניות מידות, קווי עזר ורקע לבן\n\n📲 הורדה דרך הקישור בביו\n\n#Snapport",
+   "caption_link": "תמונת דרכון בבית\nתבניות מידות, קווי עזר ורקע לבן\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "snapport/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 225,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->stagger2 (stagger2: screen_area=0.227<0.24)"
+   ],
+   "line1": "घर पर पासपोर्ट फ़ोटो",
+   "line2": "35x45 टेम्पलेट, चेहरे की गाइड और प्रिंट शीट",
+   "chips": [
+    "35x45 टेम्पलेट, चेहरे की गाइड और प्रिंट शीट",
+    "35x45 और प्रिंट शीट",
+    "JPEG, PNG या PDF एक्सपोर्ट करें"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.245,
+    "family": "stagger2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        326,
+        72,
+        755,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        176,
+        989,
+        561
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.2,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 stagger2）"
+   },
+   "caption_instagram": "घर पर पासपोर्ट फ़ोटो\n35x45 टेम्पलेट, चेहरे की गाइड और प्रिंट शीट\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#Snapport",
+   "caption_link": "घर पर पासपोर्ट फ़ोटो\n35x45 टेम्पलेट, चेहरे की गाइड और प्रिंट शीट\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "snapport/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "headline shortened to a shorter store hook: 35x45 i list za ispis",
+    "layout fallback stagger2->stagger2 (stagger2: screen_area=0.208<0.24; stagger2×1.08: screen_area=0.224<0.24; stagger2×1.16: screen_area=0.226<0.24; stagger2×1.25: screen_area=0.223<0.24)"
+   ],
+   "line1": "35x45 i list za ispis",
+   "line2": "35×45 mm, bijela pozadina, list za ispis",
+   "chips": [
+    "35×45 mm, bijela pozadina, list za ispis",
+    "35x45 i list za ispis",
+    "Izvezite JPEG, PNG ili PDF"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.27,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        268,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.61,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        77,
+        176,
+        1003,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.76,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 stagger2）"
+   },
+   "caption_instagram": "35x45 i list za ispis\n35×45 mm, bijela pozadina, list za ispis\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#Snapport",
+   "caption_link": "35x45 i list za ispis\n35×45 mm, bijela pozadina, list za ispis\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "snapport/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Útlevélfotó otthon",
+   "line2": "35×45 mm, fehér háttér, nyomtatási ív",
+   "chips": [
+    "35×45 mm, fehér háttér, nyomtatási ív",
+    "35x45 és nyomtatási ív",
+    "Export JPEG, PNG vagy PDF formátumban"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.267,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        322,
+        72,
+        758,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.77,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        176,
+        991,
+        428
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Útlevélfotó otthon\n35×45 mm, fehér háttér, nyomtatási ív\n\n📲 Töltsd le a bio linkjéről\n\n#Snapport",
+   "caption_link": "Útlevélfotó otthon\n35×45 mm, fehér háttér, nyomtatási ív\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "snapport/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Pasfoto dari rumah",
+   "line2": "Template ukuran dan panduan wajah",
+   "chips": [
+    "Template ukuran dan panduan wajah",
+    "35x45 dan lembar cetak",
+    "Ekspor JPEG, PNG, atau PDF"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.275,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        247,
+        72,
+        833,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        176,
+        987,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.81,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Pasfoto dari rumah\nTemplate ukuran dan panduan wajah\n\n📲 Unduh lewat link di bio\n\n#Snapport",
+   "caption_link": "Pasfoto dari rumah\nTemplate ukuran dan panduan wajah\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "snapport/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Foto tessera a casa",
+   "line2": "35x45 e foglio da stampare",
+   "chips": [
+    "35x45 e foglio da stampare",
+    "Esporta JPEG, PNG o PDF",
+    "Salva in Foto o File, oppure condividi"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.273,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        312,
+        72,
+        768,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.73,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        176,
+        999,
+        408
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.7,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Foto tessera a casa\n35x45 e foglio da stampare\n\n📲 Scaricala dal link nella bio\n\n#Snapport",
+   "caption_link": "Foto tessera a casa\n35x45 e foglio da stampare\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "snapport/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 132,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "証明写真を自宅で",
+   "line2": "35×45mmなど各国サイズのテンプレート",
+   "chips": [
+    "35×45mmなど各国サイズのテンプレート",
+    "学生証・社員証の写真も自宅で撮影",
+    "JPEG、PNG、PDF で書き出し"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.246,
+    "family": "stagger2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        267,
+        72,
+        813,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.61,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        108,
+        176,
+        973,
+        498
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "証明写真を自宅で\n35×45mmなど各国サイズのテンプレート\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#Snapport",
+   "caption_link": "証明写真を自宅で\n35×45mmなど各国サイズのテンプレート\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "snapport/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 239,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->closeup2 (stagger2: screen_area=0.18<0.24; stagger2×1.08: screen_area=0.194<0.24; stagger2×1.16: screen_area=0.194<0.24; stagger2×1.25: screen_area=0.192<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.198<0.24; closeup2×1.08: screen_area=0.213<0.24; closeup2×1.16: screen_area=0.228<0.24)"
+   ],
+   "line1": "ಮನೆಯಲ್ಲೇ ವೀಸಾ ಫೋಟೋ",
+   "line2": "35×45 ಮತ್ತು ಸಾಮಾನ್ಯ ಗಾತ್ರದ ಟೆಂಪ್ಲೇಟ್",
+   "chips": [
+    "35×45 ಮತ್ತು ಸಾಮಾನ್ಯ ಗಾತ್ರದ ಟೆಂಪ್ಲೇಟ್",
+    "35x45 ಮತ್ತು ಪ್ರಿಂಟ್ ಶೀಟ್",
+    "JPEG, PNG, ಅಥವಾ PDF ರಫ್ತು ಮಾಡಿ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.244,
+    "family": "closeup2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        238,
+        72,
+        843,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.54,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        130,
+        184,
+        951,
+        726
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.29,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ಮನೆಯಲ್ಲೇ ವೀಸಾ ಫೋಟೋ\n35×45 ಮತ್ತು ಸಾಮಾನ್ಯ ಗಾತ್ರದ ಟೆಂಪ್ಲೇಟ್\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#Snapport",
+   "caption_link": "ಮನೆಯಲ್ಲೇ ವೀಸಾ ಫೋಟೋ\n35×45 ಮತ್ತು ಸಾಮಾನ್ಯ ಗಾತ್ರದ ಟೆಂಪ್ಲೇಟ್\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "snapport/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 77,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "증명사진, 집에서 찍어요",
+   "line2": "35×45mm 등 국가별 규격 템플릿",
+   "chips": [
+    "35×45mm 등 국가별 규격 템플릿",
+    "사원증·학생증 규격 사진",
+    "기기 내 인물 분할로 전후 결과 확인"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.276,
+    "family": "stagger2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        296,
+        72,
+        785,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.68,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        995,
+        400
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.72,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "증명사진, 집에서 찍어요\n35×45mm 등 국가별 규격 템플릿\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#Snapport",
+   "caption_link": "증명사진, 집에서 찍어요\n35×45mm 등 국가별 규격 템플릿\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "snapport/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 311,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->split2 (stagger2: screen_area=0.179<0.24; stagger2×1.08: screen_area=0.193<0.24; stagger2×1.16: screen_area=0.194<0.24; stagger2×1.25: screen_area=0.191<0.24)"
+   ],
+   "line1": "വീട്ടിൽ വിസ ഫോട്ടോ",
+   "line2": "35×45 ഉൾപ്പെടെ സൈസ് ടെംപ്ലേറ്റുകൾ",
+   "chips": [
+    "35×45 ഉൾപ്പെടെ സൈസ് ടെംപ്ലേറ്റുകൾ",
+    "35x45 ഉം പ്രിന്റ് ഷീറ്റും"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        322,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        523,
+        871
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 8.76,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        895,
+        388,
+        1036
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.67,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "വീട്ടിൽ വിസ ഫോട്ടോ\n35×45 ഉൾപ്പെടെ സൈസ് ടെംപ്ലേറ്റുകൾ\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#Snapport",
+   "caption_link": "വീട്ടിൽ വിസ ഫോട്ടോ\n35×45 ഉൾപ്പെടെ സൈസ് ടെംപ്ലേറ്റുകൾ\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "snapport/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 240,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->stagger2 (stagger2: screen_area=0.227<0.24)"
+   ],
+   "line1": "घरीच पासपोर्ट फोटो",
+   "line2": "35x45 टेम्पलेट, चेहरा गाइड आणि प्रिंट शीट",
+   "chips": [
+    "35x45 टेम्पलेट, चेहरा गाइड आणि प्रिंट शीट",
+    "35x45 आणि प्रिंट शीट",
+    "JPEG, PNG, किंवा PDF एक्सपोर्ट करा"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.245,
+    "family": "stagger2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        326,
+        72,
+        755,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        108,
+        176,
+        971,
+        561
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.41,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 stagger2）"
+   },
+   "caption_instagram": "घरीच पासपोर्ट फोटो\n35x45 टेम्पलेट, चेहरा गाइड आणि प्रिंट शीट\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#Snapport",
+   "caption_link": "घरीच पासपोर्ट फोटो\n35x45 टेम्पलेट, चेहरा गाइड आणि प्रिंट शीट\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "snapport/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->split2 (stagger2: screen_area=0.21<0.24; stagger2×1.08: screen_area=0.226<0.24; stagger2×1.16: screen_area=0.228<0.24; stagger2×1.25: screen_area=0.225<0.24)"
+   ],
+   "line1": "Foto pasport di rumah",
+   "line2": "Templat saiz dan panduan wajah",
+   "chips": [
+    "Templat saiz dan panduan wajah",
+    "35x45 dan helaian cetak",
+    "Eksport JPEG, PNG atau PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        321,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        517,
+        668
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.23,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        692,
+        408,
+        812
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 6.71,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        836,
+        414,
+        956
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.52,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "Foto pasport di rumah\nTemplat saiz dan panduan wajah\n\n📲 Muat turun melalui pautan dalam bio\n\n#Snapport",
+   "caption_link": "Foto pasport di rumah\nTemplat saiz dan panduan wajah\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "snapport/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Pasfoto van thuis",
+   "line2": "Sjablonen en hulplijnen voor je gezicht",
+   "chips": [
+    "Sjablonen en hulplijnen voor je gezicht",
+    "35x45 en afdrukvel",
+    "Exporteer JPEG, PNG of PDF"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.248,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        274,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        998,
+        490
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.81,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Pasfoto van thuis\nSjablonen en hulplijnen voor je gezicht\n\n📲 Download via de link in bio\n\n#Snapport",
+   "caption_link": "Pasfoto van thuis\nSjablonen en hulplijnen voor je gezicht\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "snapport/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->closeup2 (stagger2: screen_area=0.212<0.24; stagger2×1.08: screen_area=0.228<0.24; stagger2×1.16: screen_area=0.23<0.24; stagger2×1.25: screen_area=0.227<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "Ta passbildet hjemme",
+   "line2": "35×45 mm-maler · utskriftsark",
+   "chips": [
+    "35×45 mm-maler · utskriftsark",
+    "35x45 og utskriftsark",
+    "Eksporter JPEG, PNG eller PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        286,
+        72,
+        793,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        176,
+        184,
+        903,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Ta passbildet hjemme\n35×45 mm-maler · utskriftsark\n\n📲 Last ned via lenken i bio\n\n#Snapport",
+   "caption_link": "Ta passbildet hjemme\n35×45 mm-maler · utskriftsark\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "snapport/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 204,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "ଘରେ ପାସପୋର୍ଟ ଫଟୋ",
+   "line2": "ସାଧାରଣ ଆକାର, ଧଳା ପୃଷ୍ଠଭୂମି, ପ୍ରିଣ୍ଟ ସିଟ୍",
+   "chips": [
+    "ସାଧାରଣ ଆକାର, ଧଳା ପୃଷ୍ଠଭୂମି, ପ୍ରିଣ୍ଟ ସିଟ୍",
+    "35x45 ଏବଂ ପ୍ରିଣ୍ଟ ସିଟ୍",
+    "JPEG, PNG, କିମ୍ବା PDF ରେ ନିର୍ଗତ କରନ୍ତୁ"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.259,
+    "family": "stagger2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        176,
+        993,
+        456
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.91,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "ଘରେ ପାସପୋର୍ଟ ଫଟୋ\nସାଧାରଣ ଆକାର, ଧଳା ପୃଷ୍ଠଭୂମି, ପ୍ରିଣ୍ଟ ସିଟ୍\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#Snapport",
+   "caption_link": "ଘରେ ପାସପୋର୍ଟ ଫଟୋ\nସାଧାରଣ ଆକାର, ଧଳା ପୃଷ୍ଠଭୂମି, ପ୍ରିଣ୍ଟ ସିଟ୍\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "snapport/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 192,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "ਘਰ ਵਿੱਚ ਪਾਸਪੋਰਟ ਫੋਟੋ",
+   "line2": "ਦੇਸ਼ ਮੁਤਾਬਕ ਸਾਈਜ਼, ਸਾਫ਼ ਬੈਕਗ੍ਰਾਊਂਡ, ਪ੍ਰਿੰਟ ਸ਼ੀਟ",
+   "chips": [
+    "ਦੇਸ਼ ਮੁਤਾਬਕ ਸਾਈਜ਼, ਸਾਫ਼ ਬੈਕਗ੍ਰਾਊਂਡ, ਪ੍ਰਿੰਟ ਸ਼ੀਟ",
+    "35x45 ਅਤੇ ਪ੍ਰਿੰਟ ਸ਼ੀਟ",
+    "JPEG, PNG ਜਾਂ PDF ਨਿਰਯਾਤ ਕਰੋ"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.252,
+    "family": "stagger2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        293,
+        72,
+        787,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.67,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        996,
+        479
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "ਘਰ ਵਿੱਚ ਪਾਸਪੋਰਟ ਫੋਟੋ\nਦੇਸ਼ ਮੁਤਾਬਕ ਸਾਈਜ਼, ਸਾਫ਼ ਬੈਕਗ੍ਰਾਊਂਡ, ਪ੍ਰਿੰਟ ਸ਼ੀਟ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#Snapport",
+   "caption_link": "ਘਰ ਵਿੱਚ ਪਾਸਪੋਰਟ ਫੋਟੋ\nਦੇਸ਼ ਮੁਤਾਬਕ ਸਾਈਜ਼, ਸਾਫ਼ ਬੈਕਗ੍ਰਾਊਂਡ, ਪ੍ਰਿੰਟ ਸ਼ੀਟ\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "snapport/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "layout fallback stagger2->closeup2 (stagger2: screen_area=0.212<0.24; stagger2×1.08: screen_area=0.228<0.24; stagger2×1.16: screen_area=0.23<0.24; stagger2×1.25: screen_area=0.227<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "Zdjęcia do ID w domu",
+   "line2": "Szablony 35×45 mm · arkusze do druku",
+   "chips": [
+    "Szablony 35×45 mm · arkusze do druku",
+    "35x45 i arkusz do druku",
+    "Eksport JPEG, PNG lub PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        309,
+        72,
+        771,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.72,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        238,
+        184,
+        843,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.4,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Zdjęcia do ID w domu\nSzablony 35×45 mm · arkusze do druku\n\n📲 Pobierz przez link w bio\n\n#Snapport",
+   "caption_link": "Zdjęcia do ID w domu\nSzablony 35×45 mm · arkusze do druku\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "snapport/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Foto 3x4 em casa",
+   "line2": "Passaporte e visto com guias para o rosto",
+   "chips": [
+    "Passaporte e visto com guias para o rosto",
+    "3x4, 5x7 e folha de impressão",
+    "Exporte JPEG, PNG ou PDF"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.25,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        176,
+        988,
+        486
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Foto 3x4 em casa\nPassaporte e visto com guias para o rosto\n\n📲 Baixe pelo link na bio\n\n#Snapport",
+   "caption_link": "Foto 3x4 em casa\nPassaporte e visto com guias para o rosto\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "snapport/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->split2 (stagger2: screen_area=0.208<0.24; stagger2×1.08: screen_area=0.224<0.24; stagger2×1.16: screen_area=0.226<0.24; stagger2×1.25: screen_area=0.223<0.24)"
+   ],
+   "line1": "Foto tipo passe em casa",
+   "line2": "Passaporte e visto com guias para o rosto",
+   "chips": [
+    "Passaporte e visto com guias para o rosto",
+    "35x45 e folha de impressão",
+    "Exporte JPEG, PNG ou PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        321,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        533,
+        753
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.23,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        777,
+        406,
+        906
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.48,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        930,
+        405,
+        1049
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.71,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "Foto tipo passe em casa\nPassaporte e visto com guias para o rosto\n\n📲 Download via the link in bio\n\n#Snapport",
+   "caption_link": "Foto tipo passe em casa\nPassaporte e visto com guias para o rosto\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "snapport/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->split2 (stagger2: screen_area=0.208<0.24; stagger2×1.08: screen_area=0.224<0.24; stagger2×1.16: screen_area=0.225<0.24; stagger2×1.25: screen_area=0.222<0.24)"
+   ],
+   "line1": "Poză de pașaport acasă",
+   "line2": "35×45 mm, fundal alb, coli de tipărit",
+   "chips": [
+    "35×45 mm, fundal alb, coli de tipărit",
+    "35x45 și foaie de printat",
+    "Export JPEG, PNG sau PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        321,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        534,
+        696
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.47,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        720,
+        408,
+        849
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.73,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        873,
+        396,
+        992
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.58,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "Poză de pașaport acasă\n35×45 mm, fundal alb, coli de tipărit\n\n📲 Descarcă din linkul din bio\n\n#Snapport",
+   "caption_link": "Poză de pașaport acasă\n35×45 mm, fundal alb, coli de tipărit\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "snapport/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 206,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->split2 (stagger2: screen_area=0.209<0.24; stagger2×1.08: screen_area=0.226<0.24; stagger2×1.16: screen_area=0.227<0.24; stagger2×1.25: screen_area=0.224<0.24)"
+   ],
+   "line1": "Фото на паспорт дома",
+   "line2": "35×45 мм и шаблоны многих стран",
+   "chips": [
+    "35×45 мм и шаблоны многих стран",
+    "35x45 и лист для печати",
+    "Экспорт в JPEG, PNG или PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        321,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        525,
+        770
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.32,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        794,
+        399,
+        919
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.45,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        943,
+        446,
+        1062
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.71,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "Фото на паспорт дома\n35×45 мм и шаблоны многих стран\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#Snapport",
+   "caption_link": "Фото на паспорт дома\n35×45 мм и шаблоны многих стран\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "snapport/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Pasová fotka doma",
+   "line2": "35×45 mm, biele pozadie, hárok na tlač",
+   "chips": [
+    "35×45 mm, biele pozadie, hárok na tlač",
+    "35x45 a hárok na tlač",
+    "Export do JPEG, PNG alebo PDF"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.275,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        306,
+        72,
+        775,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.72,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        98,
+        176,
+        983,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Pasová fotka doma\n35×45 mm, biele pozadie, hárok na tlač\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#Snapport",
+   "caption_link": "Pasová fotka doma\n35×45 mm, biele pozadie, hárok na tlač\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "snapport/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->split2 (stagger2: screen_area=0.208<0.24; stagger2×1.08: screen_area=0.224<0.24; stagger2×1.16: screen_area=0.226<0.24; stagger2×1.25: screen_area=0.223<0.24; stagger2: screen_area=0.208<0.24; stagger2×1.08: screen_area=0.224<0.24; stagger2×1.16: screen_area=0.226<0.24; stagger2×1.25: screen_area=0.223<0.24)"
+   ],
+   "line1": "Foto za potni list doma",
+   "line2": "35×45 mm, belo ozadje, pola za tisk",
+   "chips": [
+    "35×45 mm, belo ozadje, pola za tisk",
+    "35x45 in pola za tisk",
+    "Izvozite JPEG, PNG ali PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        321,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        534,
+        690
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.32,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        714,
+        524,
+        803
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 6.4,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        827,
+        404,
+        947
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.5,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "Foto za potni list doma\n35×45 mm, belo ozadje, pola za tisk\n\n📲 Prenesite prek povezave v biu\n\n#Snapport",
+   "caption_link": "Foto za potni list doma\n35×45 mm, belo ozadje, pola za tisk\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "snapport/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->closeup2 (stagger2: screen_area=0.212<0.24; stagger2×1.08: screen_area=0.228<0.24; stagger2×1.16: screen_area=0.23<0.24; stagger2×1.25: screen_area=0.227<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "Ta passfotot hemma",
+   "line2": "35×45 mm-mallar · utskriftsklara ark",
+   "chips": [
+    "35×45 mm-mallar · utskriftsklara ark",
+    "35x45 och utskriftsark",
+    "Exportera JPEG, PNG eller PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        802,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        197,
+        184,
+        883,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Ta passfotot hemma\n35×45 mm-mallar · utskriftsklara ark\n\n📲 Ladda ner via länken i bion\n\n#Snapport",
+   "caption_link": "Ta passfotot hemma\n35×45 mm-mallar · utskriftsklara ark\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "snapport/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 310,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->closeup2 (stagger2: screen_area=0.185<0.24; stagger2×1.08: screen_area=0.199<0.24; stagger2×1.16: screen_area=0.2<0.24; stagger2×1.25: screen_area=0.197<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.203<0.24; closeup2×1.08: screen_area=0.219<0.24; closeup2×1.16: screen_area=0.235<0.24)"
+   ],
+   "line1": "வீட்டிலேயே விசா படம்",
+   "line2": "35×45 உட்பட அளவு டெம்ப்ளேட்கள்",
+   "chips": [
+    "35×45 உட்பட அளவு டெம்ப்ளேட்கள்",
+    "35x45 மற்றும் அச்சு தாள்"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        217,
+        72,
+        863,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        182,
+        184,
+        898,
+        709
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.17,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "வீட்டிலேயே விசா படம்\n35×45 உட்பட அளவு டெம்ப்ளேட்கள்\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#Snapport",
+   "caption_link": "வீட்டிலேயே விசா படம்\n35×45 உட்பட அளவு டெம்ப்ளேட்கள்\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "snapport/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 291,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ఇంట్లోనే వీసా ఫోటో",
+   "line2": "35×45 సహా సైజు టెంప్లేట్లు",
+   "chips": [
+    "35×45 సహా సైజు టెంప్లేట్లు",
+    "35x45 మరియు ప్రింట్ షీట్",
+    "JPEG, PNG, లేదా PDF గా ఎగుమతి చేయండి"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.247,
+    "family": "stagger2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        310,
+        72,
+        769,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.73,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        89,
+        176,
+        991,
+        493
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.98,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "ఇంట్లోనే వీసా ఫోటో\n35×45 సహా సైజు టెంప్లేట్లు\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#Snapport",
+   "caption_link": "ఇంట్లోనే వీసా ఫోటో\n35×45 సహా సైజు టెంప్లేట్లు\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "snapport/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 213,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "ถ่ายรูปพาสปอร์ตที่บ้าน",
+   "line2": "เทมเพลต 35x45 และชีตสำหรับพิมพ์",
+   "chips": [
+    "เทมเพลต 35x45 และชีตสำหรับพิมพ์",
+    "ส่งออก JPEG, PNG หรือ PDF",
+    "บันทึกลงรูปภาพหรือไฟล์ หรือแชร์"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.26,
+    "family": "stagger2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        272,
+        72,
+        807,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        995,
+        451
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.95,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "ถ่ายรูปพาสปอร์ตที่บ้าน\nเทมเพลต 35x45 และชีตสำหรับพิมพ์\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#Snapport",
+   "caption_link": "ถ่ายรูปพาสปอร์ตที่บ้าน\nเทมเพลต 35x45 และชีตสำหรับพิมพ์\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "snapport/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Evde vesikalık",
+   "line2": "35×45 mm ve ülke şablonları",
+   "chips": [
+    "35×45 mm ve ülke şablonları",
+    "35x45 ve baskı sayfası",
+    "JPEG, PNG veya PDF olarak dışa aktar"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.265,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        248,
+        72,
+        831,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        148,
+        176,
+        932,
+        435
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.01,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Evde vesikalık\n35×45 mm ve ülke şablonları\n\n📲 Biyografideki bağlantıdan indirin\n\n#Snapport",
+   "caption_link": "Evde vesikalık\n35×45 mm ve ülke şablonları\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "snapport/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 235,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->split2 (stagger2: screen_area=0.209<0.24; stagger2×1.08: screen_area=0.226<0.24; stagger2×1.16: screen_area=0.227<0.24; stagger2×1.25: screen_area=0.224<0.24)"
+   ],
+   "line1": "Фото на паспорт удома",
+   "line2": "35×45 мм і шаблони багатьох країн",
+   "chips": [
+    "35×45 мм і шаблони багатьох країн",
+    "35x45 і аркуш для друку",
+    "Експорт JPEG, PNG або PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        321,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        525,
+        770
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.31,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        794,
+        419,
+        923
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.47,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        947,
+        412,
+        1066
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.68,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "Фото на паспорт удома\n35×45 мм і шаблони багатьох країн\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#Snapport",
+   "caption_link": "Фото на паспорт удома\n35×45 мм і шаблони багатьох країн\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "snapport/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 107,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback stagger2->stagger2 (stagger2: screen_area=0.234<0.24)"
+   ],
+   "line1": "گھر پر پاسپورٹ فوٹو",
+   "line2": "سائز ٹیمپلیٹ، چہرے کی گائیڈ اور سفید پس منظر",
+   "chips": [
+    "سائز ٹیمپلیٹ، چہرے کی گائیڈ اور سفید پس منظر",
+    "35x45 اور پرنٹ شیٹ",
+    "JPEG, PNG, یا PDF ایکسپورٹ کریں"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.252,
+    "family": "stagger2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        312,
+        72,
+        767,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.9,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        75,
+        176,
+        1005,
+        538
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 stagger2）"
+   },
+   "caption_instagram": "گھر پر پاسپورٹ فوٹو\nسائز ٹیمپلیٹ، چہرے کی گائیڈ اور سفید پس منظر\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#Snapport",
+   "caption_link": "گھر پر پاسپورٹ فوٹو\nسائز ٹیمپلیٹ، چہرے کی گائیڈ اور سفید پس منظر\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "snapport/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback stagger2->split2 (stagger2: screen_area=0.205<0.24; stagger2×1.08: screen_area=0.221<0.24; stagger2×1.16: screen_area=0.222<0.24; stagger2×1.25: screen_area=0.219<0.24)"
+   ],
+   "line1": "Ảnh hộ chiếu tại nhà",
+   "line2": "35×45 mm, 4×6 và nhiều mẫu khác",
+   "chips": [
+    "35×45 mm, 4×6 và nhiều mẫu khác",
+    "35x45 và trang in sẵn",
+    "Xuất JPEG, PNG hoặc PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        321,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        487,
+        831
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.18,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        855,
+        380,
+        984
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.54,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        1008,
+        418,
+        1137
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 5.63,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "Ảnh hộ chiếu tại nhà\n35×45 mm, 4×6 và nhiều mẫu khác\n\n📲 Tải về qua link ở bio\n\n#Snapport",
+   "caption_link": "Ảnh hộ chiếu tại nhà\n35×45 mm, 4×6 và nhiều mẫu khác\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "snapport/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 79,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "在家拍证件照",
+   "line2": "多国常用尺寸模板・一键换底",
+   "chips": [
+    "多国常用尺寸模板・一键换底",
+    "证件照排版・白底签证照",
+    "汇出 JPEG、PNG、PDF"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.245,
+    "family": "stagger2",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        299,
+        72,
+        781,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.71,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        209,
+        176,
+        871,
+        500
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.26,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "在家拍证件照\n多国常用尺寸模板・一键换底\n\n📲 请到个人主页（bio）的链接下载\n\n#Snapport",
+   "caption_link": "在家拍证件照\n多国常用尺寸模板・一键换底\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "snapport/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 72,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "在家拍證件照",
+   "line2": "35×45mm等多國範本",
+   "chips": [
+    "35×45mm等多國範本",
+    "大頭照排版・台胞證白底照片",
+    "裝置端人物分割，可檢視前後效果"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.265,
+    "family": "stagger2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        331,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        209,
+        176,
+        871,
+        434
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.26,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "在家拍證件照\n35×45mm等多國範本\n\n📲 請到個人檔案（bio）的連結下載\n\n#Snapport",
+   "caption_link": "在家拍證件照\n35×45mm等多國範本\n\nApp Store: https://apps.apple.com/app/id6780575828\nGoogle Play: https://play.google.com/store/apps/details?id=com.snapport.app",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/zh-Hant.jpg"
+  }
+ ]
+}

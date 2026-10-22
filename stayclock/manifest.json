@@ -1,0 +1,5698 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "stayclock",
+ "app_id": "6814035888",
+ "app_store_url": "https://apps.apple.com/app/id6814035888",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "stayclock/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 71,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.212<0.24; closeup2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "ساعة كبيرة بجانب السرير",
+   "line2": "واضحة من طرف الغرفة أثناء الشحن",
+   "chips": [
+    "واضحة من طرف الغرفة أثناء الشحن",
+    "الوقت والتقويم بلا انقطاع"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.244,
+    "family": "closeup2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.52,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        274,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.4,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        204,
+        184,
+        877,
+        685
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.98,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ساعة كبيرة بجانب السرير\nواضحة من طرف الغرفة أثناء الشحن\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#StayClock",
+   "caption_link": "ساعة كبيرة بجانب السرير\nواضحة من طرف الغرفة أثناء الشحن\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "stayclock/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "A Big Bedside Clock",
+   "line2": "Always on, readable across the room",
+   "chips": [
+    "Always on, readable across the room",
+    "Nightstand & Bedside Clock"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        797,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        184,
+        997,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        246,
+        435,
+        833,
+        524
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.6,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "A Big Bedside Clock\nAlways on, readable across the room\n\n📲 Download via the link in bio\n\n#StayClock",
+   "caption_link": "A Big Bedside Clock\nAlways on, readable across the room\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "stayclock/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Gran rellotge de nit",
+   "line2": "Llegible des de l'altra punta",
+   "chips": [
+    "Llegible des de l'altra punta",
+    "Hora i calendari sempre actius"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        266,
+        72,
+        813,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        184,
+        994,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.86,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        224,
+        435,
+        856,
+        524
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Gran rellotge de nit\nLlegible des de l'altra punta\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#StayClock",
+   "caption_link": "Gran rellotge de nit\nLlegible des de l'altra punta\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "stayclock/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Velké hodiny u postele",
+   "line2": "Čitelné přes celou místnost",
+   "chips": [
+    "Čitelné přes celou místnost",
+    "Nepřetržitý čas a kalendář"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        803,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        176,
+        184,
+        905,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.5,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Velké hodiny u postele\nČitelné přes celou místnost\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#StayClock",
+   "caption_link": "Velké hodiny u postele\nČitelné přes celou místnost\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "stayclock/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.236<0.24)"
+   ],
+   "line1": "Et stort ur ved sengen",
+   "line2": "Kan læses fra den anden ende af rummet",
+   "chips": [
+    "Kan læses fra den anden ende af rummet",
+    "Tid og kalender, altid tændt"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.255,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        290,
+        72,
+        790,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.61,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        219,
+        184,
+        861,
+        613
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.88,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Et stort ur ved sengen\nKan læses fra den anden ende af rummet\n\n📲 Download via linket i bio\n\n#StayClock",
+   "caption_link": "Et stort ur ved sengen\nKan læses fra den anden ende af rummet\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "stayclock/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Große Uhr am Bett",
+   "line2": "Quer durchs Zimmer lesbar",
+   "chips": [
+    "Quer durchs Zimmer lesbar",
+    "Nachttischuhr & Wecker"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.266,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        284,
+        72,
+        796,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.57,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        81,
+        184,
+        999,
+        418
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.86,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        276,
+        442,
+        803,
+        527
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.37,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Große Uhr am Bett\nQuer durchs Zimmer lesbar\n\n📲 Download über den Link in der Bio\n\n#StayClock",
+   "caption_link": "Große Uhr am Bett\nQuer durchs Zimmer lesbar\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "stayclock/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 142,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Μεγάλο ρολόι",
+   "line2": "Διαβάζεται από άκρη σε άκρη",
+   "chips": [
+    "Διαβάζεται από άκρη σε άκρη",
+    "Ώρα και ημερολόγιο πάντα"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        156,
+        184,
+        924,
+        510
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.02,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Μεγάλο ρολόι\nΔιαβάζεται από άκρη σε άκρη\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#StayClock",
+   "caption_link": "Μεγάλο ρολόι\nΔιαβάζεται από άκρη σε άκρη\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "stayclock/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "A Big Bedside Clock",
+   "line2": "Always on, readable across the room",
+   "chips": [
+    "Always on, readable across the room",
+    "Always-on time and calendar"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        797,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        184,
+        997,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        236,
+        435,
+        844,
+        524
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.27,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "A Big Bedside Clock\nAlways on, readable across the room\n\n📲 Download via the link in bio\n\n#StayClock",
+   "caption_link": "A Big Bedside Clock\nAlways on, readable across the room\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "stayclock/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "A Big Bedside Clock",
+   "line2": "Always on, readable across the room",
+   "chips": [
+    "Always on, readable across the room",
+    "Always-on time and calendar"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        797,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        184,
+        997,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        236,
+        435,
+        844,
+        524
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.27,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "A Big Bedside Clock\nAlways on, readable across the room\n\n📲 Download via the link in bio\n\n#StayClock",
+   "caption_link": "A Big Bedside Clock\nAlways on, readable across the room\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "stayclock/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "A Big Bedside Clock",
+   "line2": "Always on, readable across the room",
+   "chips": [
+    "Always on, readable across the room",
+    "Always-on time and calendar"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        797,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        184,
+        997,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        236,
+        435,
+        844,
+        524
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.27,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "A Big Bedside Clock\nAlways on, readable across the room\n\n📲 Download via the link in bio\n\n#StayClock",
+   "caption_link": "A Big Bedside Clock\nAlways on, readable across the room\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "stayclock/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "A Big Bedside Clock",
+   "line2": "Always on, readable across the room",
+   "chips": [
+    "Always on, readable across the room",
+    "Nightstand & Bedside Clock"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        797,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        184,
+        997,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        246,
+        435,
+        833,
+        524
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.6,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "A Big Bedside Clock\nAlways on, readable across the room\n\n📲 Download via the link in bio\n\n#StayClock",
+   "caption_link": "A Big Bedside Clock\nAlways on, readable across the room\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "stayclock/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Se lee desde lejos",
+   "line2": "Reloj siempre encendido para la mesilla",
+   "chips": [
+    "Reloj siempre encendido para la mesilla",
+    "Hora y calendario permanentes"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        337,
+        72,
+        743,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.67,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        79,
+        184,
+        1001,
+        498
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.0,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Se lee desde lejos\nReloj siempre encendido para la mesilla\n\n📲 Descárgala desde el enlace de la bio\n\n#StayClock",
+   "caption_link": "Se lee desde lejos\nReloj siempre encendido para la mesilla\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "stayclock/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Se lee desde lejos",
+   "line2": "Reloj siempre encendido para el buró",
+   "chips": [
+    "Reloj siempre encendido para el buró",
+    "Siempre con hora y calendario"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        337,
+        72,
+        743,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.67,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        79,
+        184,
+        1001,
+        498
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.0,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Se lee desde lejos\nReloj siempre encendido para el buró\n\n📲 Descárgala desde el enlace de la bio\n\n#StayClock",
+   "caption_link": "Se lee desde lejos\nReloj siempre encendido para el buró\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "stayclock/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Suuri kello yöpöydälle",
+   "line2": "Näkyy huoneen toiselle puolelle",
+   "chips": [
+    "Näkyy huoneen toiselle puolelle",
+    "Aika ja kalenteri, aina päällä"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        318,
+        72,
+        761,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        230,
+        184,
+        849,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.88,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Suuri kello yöpöydälle\nNäkyy huoneen toiselle puolelle\n\n📲 Lataa bion linkistä\n\n#StayClock",
+   "caption_link": "Suuri kello yöpöydälle\nNäkyy huoneen toiselle puolelle\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "stayclock/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Lisible de loin",
+   "line2": "Horloge toujours allumée, au chevet",
+   "chips": [
+    "Horloge toujours allumée, au chevet",
+    "Heure et calendrier permanents"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.274,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        311,
+        72,
+        769,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        164,
+        184,
+        917,
+        503
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.29,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Lisible de loin\nHorloge toujours allumée, au chevet\n\n📲 Téléchargez-la via le lien dans la bio\n\n#StayClock",
+   "caption_link": "Lisible de loin\nHorloge toujours allumée, au chevet\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "stayclock/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Lisible de loin",
+   "line2": "Horloge toujours allumée, au chevet",
+   "chips": [
+    "Horloge toujours allumée, au chevet",
+    "Heure et calendrier en continu"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.274,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        311,
+        72,
+        769,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        164,
+        184,
+        917,
+        503
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.29,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Lisible de loin\nHorloge toujours allumée, au chevet\n\n📲 Téléchargez-la via le lien dans la bio\n\n#StayClock",
+   "caption_link": "Lisible de loin\nHorloge toujours allumée, au chevet\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "stayclock/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 112,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "પલંગ પાસે મોટી ઘડિયાળ",
+   "line2": "હંમેશાં ચાલુ, સ્પષ્ટ સમય",
+   "chips": [
+    "હંમેશાં ચાલુ, સ્પષ્ટ સમય",
+    "હંમેશાં ચાલુ સમય અને કૅલેન્ડર"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "closeup2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        320,
+        72,
+        759,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        76,
+        184,
+        1005,
+        466
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        292,
+        490,
+        789,
+        581
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "પલંગ પાસે મોટી ઘડિયાળ\nહંમેશાં ચાલુ, સ્પષ્ટ સમય\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#StayClock",
+   "caption_link": "પલંગ પાસે મોટી ઘડિયાળ\nહંમેશાં ચાલુ, સ્પષ્ટ સમય\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "stayclock/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 101,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "שעון גדול ליד המיטה",
+   "line2": "קוראים מהצד השני של החדר בזמן הטעינה",
+   "chips": [
+    "קוראים מהצד השני של החדר בזמן הטעינה",
+    "שעון ולוח שנה תמידיים"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.261,
+    "family": "closeup2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        320,
+        72,
+        761,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        184,
+        993,
+        429
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.16,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        308,
+        453,
+        772,
+        540
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.9,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "שעון גדול ליד המיטה\nקוראים מהצד השני של החדר בזמן הטעינה\n\n📲 הורדה דרך הקישור בביו\n\n#StayClock",
+   "caption_link": "שעון גדול ליד המיטה\nקוראים מהצד השני של החדר בזמן הטעינה\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "stayclock/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 105,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "बिस्तर के पास बड़ी घड़ी",
+   "line2": "चार्ज होते समय हमेशा ऑन, साफ़",
+   "chips": [
+    "चार्ज होते समय हमेशा ऑन, साफ़",
+    "हमेशा ऑन समय और कैलेंडर"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.285,
+    "family": "closeup2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        290,
+        72,
+        791,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        184,
+        1001,
+        471
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.68,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "बिस्तर के पास बड़ी घड़ी\nचार्ज होते समय हमेशा ऑन, साफ़\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#StayClock",
+   "caption_link": "बिस्तर के पास बड़ी घड़ी\nचार्ज होते समय हमेशा ऑन, साफ़\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "stayclock/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Veliki sat uz krevet",
+   "line2": "Čitljiv s drugog kraja sobe",
+   "chips": [
+    "Čitljiv s drugog kraja sobe",
+    "Sat i kalendar bez prekida"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.263,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        297,
+        72,
+        783,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        74,
+        184,
+        1005,
+        421
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.86,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        264,
+        445,
+        815,
+        534
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.04,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Veliki sat uz krevet\nČitljiv s drugog kraja sobe\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#StayClock",
+   "caption_link": "Veliki sat uz krevet\nČitljiv s drugog kraja sobe\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "stayclock/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Nagy óra az ágy mellé",
+   "line2": "A szoba túlsó végéből is olvasható",
+   "chips": [
+    "A szoba túlsó végéből is olvasható",
+    "Idő és naptár, mindig látható"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        317,
+        72,
+        763,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        212,
+        184,
+        868,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.79,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Nagy óra az ágy mellé\nA szoba túlsó végéből is olvasható\n\n📲 Töltsd le a bio linkjéről\n\n#StayClock",
+   "caption_link": "Nagy óra az ágy mellé\nA szoba túlsó végéből is olvasható\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "stayclock/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Jam besar di meja",
+   "line2": "Terbaca dari ujung kamar",
+   "chips": [
+    "Terbaca dari ujung kamar",
+    "Jam dan kalender selalu aktif"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.262,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        297,
+        72,
+        783,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.61,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        184,
+        997,
+        427
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.89,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        234,
+        451,
+        846,
+        538
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.22,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Jam besar di meja\nTerbaca dari ujung kamar\n\n📲 Unduh lewat link di bio\n\n#StayClock",
+   "caption_link": "Jam besar di meja\nTerbaca dari ujung kamar\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "stayclock/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.232<0.24)"
+   ],
+   "line1": "Leggibile da lontano",
+   "line2": "Orologio sempre acceso, sul comodino",
+   "chips": [
+    "Orologio sempre acceso, sul comodino",
+    "Ora e calendario permanenti"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        306,
+        72,
+        773,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        238,
+        184,
+        843,
+        625
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.03,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Leggibile da lontano\nOrologio sempre acceso, sul comodino\n\n📲 Scaricala dal link nella bio\n\n#StayClock",
+   "caption_link": "Leggibile da lontano\nOrologio sempre acceso, sul comodino\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "stayclock/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 57,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "大きな常時点灯の時計",
+   "line2": "部屋の隅からでも読める時刻",
+   "chips": [
+    "部屋の隅からでも読める時刻",
+    "時計を常時表示・置き時計"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.268,
+    "family": "closeup2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        275,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.5,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        184,
+        998,
+        410
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        274,
+        434,
+        805,
+        520
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "大きな常時点灯の時計\n部屋の隅からでも読める時刻\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#StayClock",
+   "caption_link": "大きな常時点灯の時計\n部屋の隅からでも読める時刻\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "stayclock/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 99,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback closeup2->split2 (closeup2: text does not fit at minimum sizes)"
+   ],
+   "line1": "ಹಾಸಿಗೆ ಬಳಿ ದೊಡ್ಡ ಗಡಿಯಾರ",
+   "line2": "ಸದಾ ಆನ್ · ತಿಂಗಳ ಕ್ಯಾಲೆಂಡರ್ · ಅಲಾರಮ್",
+   "chips": [
+    "ಸದಾ ಆನ್ · ತಿಂಗಳ ಕ್ಯಾಲೆಂಡರ್ · ಅಲಾರಮ್",
+    "ಸದಾ ಆನ್ ಸಮಯ ಮತ್ತು ಕ್ಯಾಲೆಂಡರ್"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "split2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        330,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.47,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        534,
+        828
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 8.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        852,
+        456,
+        998
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.52,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 split2）"
+   },
+   "caption_instagram": "ಹಾಸಿಗೆ ಬಳಿ ದೊಡ್ಡ ಗಡಿಯಾರ\nಸದಾ ಆನ್ · ತಿಂಗಳ ಕ್ಯಾಲೆಂಡರ್ · ಅಲಾರಮ್\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#StayClock",
+   "caption_link": "ಹಾಸಿಗೆ ಬಳಿ ದೊಡ್ಡ ಗಡಿಯಾರ\nಸದಾ ಆನ್ · ತಿಂಗಳ ಕ್ಯಾಲೆಂಡರ್ · ಅಲಾರಮ್\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "stayclock/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 70,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "항상 켜지는 큰 탁상시계",
+   "line2": "방 저편에서도 잘 보여요",
+   "chips": [
+    "방 저편에서도 잘 보여요",
+    "항상 켜지는 시계와 캘린더"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "closeup2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        312,
+        72,
+        768,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        184,
+        989,
+        408
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        297,
+        432,
+        783,
+        517
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.84,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "항상 켜지는 큰 탁상시계\n방 저편에서도 잘 보여요\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#StayClock",
+   "caption_link": "항상 켜지는 큰 탁상시계\n방 저편에서도 잘 보여요\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "stayclock/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 135,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "വലിയ ക്ലോക്ക്",
+   "line2": "എപ്പോഴും ഓൺ · മാസ കലണ്ടർ · അലാറം",
+   "chips": [
+    "എപ്പോഴും ഓൺ · മാസ കലണ്ടർ · അലാറം",
+    "എപ്പോഴുമുള്ള സമയവും കലണ്ടറും"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.255,
+    "family": "closeup2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        288,
+        72,
+        793,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        100,
+        184,
+        980,
+        559
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.03,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "വലിയ ക്ലോക്ക്\nഎപ്പോഴും ഓൺ · മാസ കലണ്ടർ · അലാറം\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#StayClock",
+   "caption_link": "വലിയ ക്ലോക്ക്\nഎപ്പോഴും ഓൺ · മാസ കലണ്ടർ · അലാറം\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "stayclock/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 110,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "पलंगाजवळ मोठे घड्याळ",
+   "line2": "चार्ज होताना नेहमी सुरू, स्पष्ट",
+   "chips": [
+    "चार्ज होताना नेहमी सुरू, स्पष्ट",
+    "नेहमी सुरू वेळ व कॅलेंडर"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "closeup2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        322,
+        72,
+        758,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.65,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        184,
+        990,
+        457
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        326,
+        481,
+        754,
+        573
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.92,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "पलंगाजवळ मोठे घड्याळ\nचार्ज होताना नेहमी सुरू, स्पष्ट\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#StayClock",
+   "caption_link": "पलंगाजवळ मोठे घड्याळ\nचार्ज होताना नेहमी सुरू, स्पष्ट\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "stayclock/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Jam besar di meja",
+   "line2": "Boleh dibaca dari hujung bilik",
+   "chips": [
+    "Boleh dibaca dari hujung bilik",
+    "Jam, kalendar sentiasa aktif"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.262,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        297,
+        72,
+        783,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.61,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        184,
+        997,
+        427
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.7,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        246,
+        451,
+        835,
+        538
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Jam besar di meja\nBoleh dibaca dari hujung bilik\n\n📲 Muat turun melalui pautan dalam bio\n\n#StayClock",
+   "caption_link": "Jam besar di meja\nBoleh dibaca dari hujung bilik\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "stayclock/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.212<0.24; closeup2×1.08: screen_area=0.229<0.24)"
+   ],
+   "line1": "Grote klok bij je bed",
+   "line2": "Leesbaar vanaf de andere kant van de kamer",
+   "chips": [
+    "Leesbaar vanaf de andere kant van de kamer",
+    "Tijd en kalender, altijd aan"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.52,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        310,
+        72,
+        770,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        242,
+        184,
+        837,
+        683
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.07,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Grote klok bij je bed\nLeesbaar vanaf de andere kant van de kamer\n\n📲 Download via de link in bio\n\n#StayClock",
+   "caption_link": "Grote klok bij je bed\nLeesbaar vanaf de andere kant van de kamer\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "stayclock/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.235<0.24)"
+   ],
+   "line1": "Stor klokke ved sengen",
+   "line2": "Kan leses fra andre siden av rommet",
+   "chips": [
+    "Kan leses fra andre siden av rommet",
+    "Tid og kalender, alltid på"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        254,
+        72,
+        825,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        216,
+        184,
+        863,
+        618
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.73,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Stor klokke ved sengen\nKan leses fra andre siden av rommet\n\n📲 Last ned via lenken i bio\n\n#StayClock",
+   "caption_link": "Stor klokke ved sengen\nKan leses fra andre siden av rommet\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "stayclock/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 95,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ଶଯ୍ୟା ପାଖରେ ବଡ଼ ଘଡ଼ି",
+   "line2": "ସବୁବେଳେ ଚାଲୁ, ସହଜରେ ପଢ଼ିହେବା ସମୟ",
+   "chips": [
+    "ସବୁବେଳେ ଚାଲୁ, ସହଜରେ ପଢ଼ିହେବା ସମୟ",
+    "ସବୁବେଳେ ସମୟ ଓ କ୍ୟାଲେଣ୍ଡର୍"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.251,
+    "family": "closeup2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        340,
+        72,
+        740,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.67,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        184,
+        996,
+        457
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.32,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        264,
+        481,
+        815,
+        571
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.03,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "ଶଯ୍ୟା ପାଖରେ ବଡ଼ ଘଡ଼ି\nସବୁବେଳେ ଚାଲୁ, ସହଜରେ ପଢ଼ିହେବା ସମୟ\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#StayClock",
+   "caption_link": "ଶଯ୍ୟା ପାଖରେ ବଡ଼ ଘଡ଼ି\nସବୁବେଳେ ଚାଲୁ, ସହଜରେ ପଢ଼ିହେବା ସମୟ\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "stayclock/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 91,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ਮੰਜੇ ਕੋਲ ਵੱਡੀ ਘੜੀ",
+   "line2": "ਹਮੇਸ਼ਾ ਚਾਲੂ, ਪੜ੍ਹਨਯੋਗ ਸਮਾਂ",
+   "chips": [
+    "ਹਮੇਸ਼ਾ ਚਾਲੂ, ਪੜ੍ਹਨਯੋਗ ਸਮਾਂ",
+    "ਹਮੇਸ਼ਾ ਚਾਲੂ ਸਮਾਂ ਤੇ ਕੈਲੰਡਰ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.276,
+    "family": "closeup2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        339,
+        72,
+        741,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        160,
+        184,
+        920,
+        498
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.2,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "ਮੰਜੇ ਕੋਲ ਵੱਡੀ ਘੜੀ\nਹਮੇਸ਼ਾ ਚਾਲੂ, ਪੜ੍ਹਨਯੋਗ ਸਮਾਂ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#StayClock",
+   "caption_link": "ਮੰਜੇ ਕੋਲ ਵੱਡੀ ਘੜੀ\nਹਮੇਸ਼ਾ ਚਾਲੂ, ਪੜ੍ਹਨਯੋਗ ਸਮਾਂ\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "stayclock/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Duży zegar przy łóżku",
+   "line2": "Widoczny z drugiego końca pokoju",
+   "chips": [
+    "Widoczny z drugiego końca pokoju",
+    "Czas i kalendarz bez przerwy"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        268,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.54,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        232,
+        184,
+        849,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Duży zegar przy łóżku\nWidoczny z drugiego końca pokoju\n\n📲 Pobierz przez link w bio\n\n#StayClock",
+   "caption_link": "Duży zegar przy łóżku\nWidoczny z drugiego końca pokoju\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "stayclock/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Relógio grande na mesa",
+   "line2": "Legível do outro lado do quarto",
+   "chips": [
+    "Legível do outro lado do quarto",
+    "Sempre com hora e calendário"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        273,
+        72,
+        807,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.52,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        125,
+        184,
+        955,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Relógio grande na mesa\nLegível do outro lado do quarto\n\n📲 Baixe pelo link na bio\n\n#StayClock",
+   "caption_link": "Relógio grande na mesa\nLegível do outro lado do quarto\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "stayclock/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Relógio grande na mesa",
+   "line2": "Legível do outro lado do quarto",
+   "chips": [
+    "Legível do outro lado do quarto",
+    "Hora e calendário em contínuo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        273,
+        72,
+        807,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.52,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        125,
+        184,
+        955,
+        566
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Relógio grande na mesa\nLegível do outro lado do quarto\n\n📲 Download via the link in bio\n\n#StayClock",
+   "caption_link": "Relógio grande na mesa\nLegível do outro lado do quarto\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "stayclock/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.232<0.24)"
+   ],
+   "line1": "Ceas mare la noptieră",
+   "line2": "Lizibil din celălalt capăt al camerei",
+   "chips": [
+    "Lizibil din celălalt capăt al camerei",
+    "Ora și calendarul mereu activi"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        296,
+        72,
+        785,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.61,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        236,
+        184,
+        844,
+        626
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.88,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Ceas mare la noptieră\nLizibil din celălalt capăt al camerei\n\n📲 Descarcă din linkul din bio\n\n#StayClock",
+   "caption_link": "Ceas mare la noptieră\nLizibil din celălalt capăt al camerei\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "stayclock/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 165,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "Крупные часы у кровати",
+   "line2": "Видно с другого конца комнаты",
+   "chips": [
+    "Видно с другого конца комнаты",
+    "Часы и календарь без перерыва"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        254,
+        72,
+        827,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.49,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        130,
+        184,
+        950,
+        620
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.15,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Крупные часы у кровати\nВидно с другого конца комнаты\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#StayClock",
+   "caption_link": "Крупные часы у кровати\nВидно с другого конца комнаты\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "stayclock/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Veľké hodiny pri posteli",
+   "line2": "Čitateľné z druhého konca izby",
+   "chips": [
+    "Čitateľné z druhého konca izby",
+    "Nepretržitý čas a kalendár"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        268,
+        72,
+        812,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        174,
+        184,
+        907,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Veľké hodiny pri posteli\nČitateľné z druhého konca izby\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#StayClock",
+   "caption_link": "Veľké hodiny pri posteli\nČitateľné z druhého konca izby\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "stayclock/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "Velika ura ob postelji",
+   "line2": "Berljiva z drugega konca sobe",
+   "chips": [
+    "Berljiva z drugega konca sobe",
+    "Ura in koledar vedno prižgana"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        297,
+        72,
+        783,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        247,
+        184,
+        833,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Velika ura ob postelji\nBerljiva z drugega konca sobe\n\n📲 Prenesite prek povezave v biu\n\n#StayClock",
+   "caption_link": "Velika ura ob postelji\nBerljiva z drugega konca sobe\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "stayclock/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.235<0.24)"
+   ],
+   "line1": "En stor klocka vid sängen",
+   "line2": "Syns från andra sidan rummet",
+   "chips": [
+    "Syns från andra sidan rummet",
+    "Tid och kalender, alltid på"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        305,
+        72,
+        775,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        153,
+        184,
+        927,
+        618
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "En stor klocka vid sängen\nSyns från andra sidan rummet\n\n📲 Ladda ner via länken i bion\n\n#StayClock",
+   "caption_link": "En stor klocka vid sängen\nSyns från andra sidan rummet\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "stayclock/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 112,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "பெரிய கடிகாரம்",
+   "line2": "எப்போதும்-ஆன் · மாத நாட்காட்டி · அலாரம்",
+   "chips": [
+    "எப்போதும்-ஆன் · மாத நாட்காட்டி · அலாரம்",
+    "எப்போதும் நேரம், நாட்காட்டி"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.263,
+    "family": "closeup2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        822,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.5,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        184,
+        989,
+        534
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "பெரிய கடிகாரம்\nஎப்போதும்-ஆன் · மாத நாட்காட்டி · அலாரம்\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#StayClock",
+   "caption_link": "பெரிய கடிகாரம்\nஎப்போதும்-ஆன் · மாத நாட்காட்டி · அலாரம்\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "stayclock/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 104,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "మంచం పక్కన పెద్ద క్లాక్",
+   "line2": "ఎప్పుడూ-ఆన్ · నెల క్యాలెండర్ · అలారం",
+   "chips": [
+    "ఎప్పుడూ-ఆన్ · నెల క్యాలెండర్ · అలారం",
+    "ఎప్పుడూ వెలిగే సమయం క్యాలెండర్"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        284,
+        72,
+        797,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        79,
+        184,
+        1001,
+        460
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        230,
+        484,
+        851,
+        578
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "మంచం పక్కన పెద్ద క్లాక్\nఎప్పుడూ-ఆన్ · నెల క్యాలెండర్ · అలారం\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#StayClock",
+   "caption_link": "మంచం పక్కన పెద్ద క్లాక్\nఎప్పుడూ-ఆన్ · నెల క్యాలెండర్ · అలారం\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "stayclock/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 125,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "นาฬิกาตั้งโต๊ะเปิดค้าง",
+   "line2": "อ่านได้แม้อยู่อีกฝั่งของห้อง",
+   "chips": [
+    "อ่านได้แม้อยู่อีกฝั่งของห้อง",
+    "เวลาและปฏิทินที่เปิดค้างตลอด"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.279,
+    "family": "closeup2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        285,
+        72,
+        795,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        184,
+        1000,
+        489
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "นาฬิกาตั้งโต๊ะเปิดค้าง\nอ่านได้แม้อยู่อีกฝั่งของห้อง\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#StayClock",
+   "caption_link": "นาฬิกาตั้งโต๊ะเปิดค้าง\nอ่านได้แม้อยู่อีกฝั่งของห้อง\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "stayclock/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Büyük başucu saati",
+   "line2": "Odanın öbür ucundan okunur",
+   "chips": [
+    "Odanın öbür ucundan okunur",
+    "Her An Açık Saat ve Takvim"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        288,
+        72,
+        792,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        184,
+        990,
+        401
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.71,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        254,
+        425,
+        825,
+        514
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Büyük başucu saati\nOdanın öbür ucundan okunur\n\n📲 Biyografideki bağlantıdan indirin\n\n#StayClock",
+   "caption_link": "Büyük başucu saati\nOdanın öbür ucundan okunur\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "stayclock/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 138,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Великий годинник",
+   "line2": "Біля ліжка, видно з іншого кінця кімнати",
+   "chips": [
+    "Біля ліжка, видно з іншого кінця кімнати",
+    "Час і календар без перерви"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        230,
+        72,
+        849,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.28,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        87,
+        184,
+        993,
+        464
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        242,
+        488,
+        839,
+        577
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.36,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "Великий годинник\nБіля ліжка, видно з іншого кінця кімнати\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#StayClock",
+   "caption_link": "Великий годинник\nБіля ліжка, видно з іншого кінця кімнати\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "stayclock/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 56,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.213<0.24; closeup2×1.08: screen_area=0.23<0.24)"
+   ],
+   "line1": "بستر کے پاس بڑی گھڑی",
+   "line2": "چارج ہوتے ہوئے ہمیشہ روشن اور واضح",
+   "chips": [
+    "چارج ہوتے ہوئے ہمیشہ روشن اور واضح",
+    "ہمیشہ روشن وقت اور کیلنڈر"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "closeup2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.52,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        316,
+        72,
+        763,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        210,
+        184,
+        869,
+        680
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.93,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "بستر کے پاس بڑی گھڑی\nچارج ہوتے ہوئے ہمیشہ روشن اور واضح\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#StayClock",
+   "caption_link": "بستر کے پاس بڑی گھڑی\nچارج ہوتے ہوئے ہمیشہ روشن اور واضح\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "stayclock/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback closeup2->closeup2 (closeup2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Đồng hồ lớn đầu giường",
+   "line2": "Đọc được từ góc bên kia phòng",
+   "chips": [
+    "Đọc được từ góc bên kia phòng",
+    "Đồng hồ và lịch luôn sáng"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        253,
+        72,
+        827,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        202,
+        184,
+        879,
+        636
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.58,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Đồng hồ lớn đầu giường\nĐọc được từ góc bên kia phòng\n\n📲 Tải về qua link ở bio\n\n#StayClock",
+   "caption_link": "Đồng hồ lớn đầu giường\nĐọc được từ góc bên kia phòng\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "stayclock/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 28,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "床头常亮大时钟",
+   "line2": "隔着房间也看得清",
+   "chips": [
+    "隔着房间也看得清",
+    "常亮时间与日历显示"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "closeup2",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        308,
+        72,
+        773,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.61,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        158,
+        184,
+        922,
+        442
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.14,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        329,
+        466,
+        751,
+        552
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.92,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "床头常亮大时钟\n隔着房间也看得清\n\n📲 请到个人主页（bio）的链接下载\n\n#StayClock",
+   "caption_link": "床头常亮大时钟\n隔着房间也看得清\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "stayclock/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 37,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "床頭恆亮大時鐘",
+   "line2": "隔著房間也看得清楚",
+   "chips": [
+    "隔著房間也看得清楚",
+    "全天顯示時間與行事曆"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "closeup2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        339,
+        72,
+        741,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        157,
+        184,
+        923,
+        442
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.2,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        310,
+        466,
+        769,
+        552
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.88,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／時鐘／倒數型（新標準）：上文下機，手機特寫出血"
+   },
+   "caption_instagram": "床頭恆亮大時鐘\n隔著房間也看得清楚\n\n📲 請到個人檔案（bio）的連結下載\n\n#StayClock",
+   "caption_link": "床頭恆亮大時鐘\n隔著房間也看得清楚\n\nApp Store: https://apps.apple.com/app/id6814035888\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/zh-Hant.jpg"
+  }
+ ]
+}

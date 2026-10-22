@@ -1,0 +1,45 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "apps": {
+  "mochi": {
+   "items": 50,
+   "manifest": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/manifest.json"
+  },
+  "lumimath": {
+   "items": 50,
+   "manifest": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/manifest.json"
+  },
+  "gmoney": {
+   "items": 50,
+   "manifest": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/manifest.json"
+  },
+  "stayclock": {
+   "items": 50,
+   "manifest": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/stayclock/manifest.json"
+  },
+  "snapport": {
+   "items": 50,
+   "manifest": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/snapport/manifest.json"
+  },
+  "aibriefpack": {
+   "items": 50,
+   "manifest": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/manifest.json"
+  },
+  "aim990": {
+   "items": 50,
+   "manifest": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/manifest.json"
+  },
+  "battai": {
+   "items": 49,
+   "manifest": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/manifest.json"
+  },
+  "caldaily": {
+   "items": 50,
+   "manifest": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/manifest.json"
+  },
+  "claudeusagemini": {
+   "items": 50,
+   "manifest": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/manifest.json"
+  }
+ }
+}

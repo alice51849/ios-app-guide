@@ -1,0 +1,5527 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "gmoney",
+ "app_id": "6755782939",
+ "app_store_url": "https://apps.apple.com/app/id6755782939",
+ "play_url": "https://play.google.com/store/apps/details?id=com.caitlai.globi",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "gmoney/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 79,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.239<0.24)"
+   ],
+   "line1": "كم بقي لك اليوم؟",
+   "line2": "حد يومي وتحويل العملات حتى دون اتصال",
+   "chips": [
+    "حد يومي وتحويل العملات حتى دون اتصال",
+    "مصاريف السفر وتحويل العملات"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.258,
+    "family": "fan3_2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.11,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        291,
+        72,
+        789,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        124,
+        176,
+        957,
+        553
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.49,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "كم بقي لك اليوم؟\nحد يومي وتحويل العملات حتى دون اتصال\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#GMoney",
+   "caption_link": "كم بقي لك اليوم؟\nحد يومي وتحويل العملات حتى دون اتصال\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "gmoney/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "gmoney/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Fixa un límit diari",
+   "line2": "Despeses i divises, sense connexió",
+   "chips": [
+    "Despeses i divises, sense connexió",
+    "Despeses de viatge i divises"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.279,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        234,
+        72,
+        846,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.71,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        428
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.07,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Fixa un límit diari\nDespeses i divises, sense connexió\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#GMoney",
+   "caption_link": "Fixa un límit diari\nDespeses i divises, sense connexió\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "gmoney/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Hlídejte denní limit",
+   "line2": "Výdaje a převod měn i offline",
+   "chips": [
+    "Výdaje a převod měn i offline",
+    "Výdaje na cesty a měny"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.284,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        269,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.77,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        998,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.43,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Hlídejte denní limit\nVýdaje a převod měn i offline\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#GMoney",
+   "caption_link": "Hlídejte denní limit\nVýdaje a převod měn i offline\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "gmoney/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "Se, hvad der er tilbage",
+   "line2": "Daglig grænse · 50 valutaer offline",
+   "chips": [
+    "Daglig grænse · 50 valutaer offline",
+    "Rejseudgifter og valuta",
+    "Eksportér til tekst eller CSV"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        257,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        202,
+        176,
+        877,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Se, hvad der er tilbage\nDaglig grænse · 50 valutaer offline\n\n📲 Download via linket i bio\n\n#GMoney",
+   "caption_link": "Se, hvad der er tilbage\nDaglig grænse · 50 valutaer offline\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "gmoney/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Was bleibt heute?",
+   "line2": "Ausgaben, Tageslimit, 50 Währungen",
+   "chips": [
+    "Ausgaben, Tageslimit, 50 Währungen",
+    "Haushaltsbuch & Geld verwalten",
+    "Export als Text oder CSV"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.282,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        234,
+        72,
+        847,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.71,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        989,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.15,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Was bleibt heute?\nAusgaben, Tageslimit, 50 Währungen\n\n📲 Download über den Link in der Bio\n\n#GMoney",
+   "caption_link": "Was bleibt heute?\nAusgaben, Tageslimit, 50 Währungen\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "gmoney/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "katnyopia"
+     ],
+     "0": [
+      "Autopato",
+      "Tokyo",
+      "Katnyopia",
+      "katnyopias",
+      "Ramen",
+      "lunch"
+     ],
+     "2": [
+      "tootipies",
+      "Tokyo",
+      "katnyopias"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "mixed English strings on all localized screenshots [['katnyopia'], ['Autopato', 'Tokyo', 'Katnyopia', 'katnyopias'], ['tootipies', 'Tokyo', 'katnyopias']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "gmoney/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Set a Daily Budget",
+   "line2": "Log spending, convert even offline",
+   "chips": [
+    "Log spending, convert even offline",
+    "Travel Budget, Currency Rates"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.282,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        995,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Set a Daily Budget\nLog spending, convert even offline\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "Set a Daily Budget\nLog spending, convert even offline\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "gmoney/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Set a Daily Budget",
+   "line2": "Log spending, convert even offline",
+   "chips": [
+    "Log spending, convert even offline",
+    "Travel Budget, Currency Rates"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.282,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        995,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Set a Daily Budget\nLog spending, convert even offline\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "Set a Daily Budget\nLog spending, convert even offline\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "gmoney/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "gmoney/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "gmoney/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Lo que te queda hoy",
+   "line2": "Límite diario y 50 divisas sin conexión",
+   "chips": [
+    "Límite diario y 50 divisas sin conexión",
+    "Gastos de viaje y divisas",
+    "Exporta a texto o CSV"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.287,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        238,
+        72,
+        841,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.72,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        77,
+        176,
+        1003,
+        402
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Lo que te queda hoy\nLímite diario y 50 divisas sin conexión\n\n📲 Descárgala desde el enlace de la bio\n\n#GMoney",
+   "caption_link": "Lo que te queda hoy\nLímite diario y 50 divisas sin conexión\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "gmoney/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.219<0.24; fan3_2×1.08: screen_area=0.236<0.24)"
+   ],
+   "line1": "Tu presupuesto del día",
+   "line2": "Gastos por categoría y divisas sin conexión",
+   "chips": [
+    "Gastos por categoría y divisas sin conexión",
+    "Gastos de viaje y divisas"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.253,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        238,
+        72,
+        841,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.72,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        118,
+        176,
+        963,
+        617
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.75,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Tu presupuesto del día\nGastos por categoría y divisas sin conexión\n\n📲 Descárgala desde el enlace de la bio\n\n#GMoney",
+   "caption_link": "Tu presupuesto del día\nGastos por categoría y divisas sin conexión\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "gmoney/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Paljonko on jäljellä?",
+   "line2": "Päiväraja · 50 valuuttaa offline",
+   "chips": [
+    "Päiväraja · 50 valuuttaa offline",
+    "Matkakulut ja valuutta",
+    "Vie tekstinä tai CSV:nä"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.287,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        272,
+        72,
+        807,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.77,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        995,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.42,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Paljonko on jäljellä?\nPäiväraja · 50 valuuttaa offline\n\n📲 Lataa bion linkistä\n\n#GMoney",
+   "caption_link": "Paljonko on jäljellä?\nPäiväraja · 50 valuuttaa offline\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "gmoney/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.218<0.24; fan3_2×1.08: screen_area=0.234<0.24)"
+   ],
+   "line1": "Votre budget du jour",
+   "line2": "Dépenses par catégorie, devises hors ligne",
+   "chips": [
+    "Dépenses par catégorie, devises hors ligne",
+    "Argent et budget de voyage"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.251,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        176,
+        176,
+        905,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Votre budget du jour\nDépenses par catégorie, devises hors ligne\n\n📲 Téléchargez-la via le lien dans la bio\n\n#GMoney",
+   "caption_link": "Votre budget du jour\nDépenses par catégorie, devises hors ligne\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "gmoney/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.217<0.24; fan3_2×1.08: screen_area=0.234<0.24)"
+   ],
+   "line1": "Ce qu'il reste à dépenser",
+   "line2": "Limite quotidienne et 50 devises hors ligne",
+   "chips": [
+    "Limite quotidienne et 50 devises hors ligne",
+    "Suivi, gestion & convertisseur",
+    "Export en texte ou CSV"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.251,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        185,
+        176,
+        895,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.68,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Ce qu'il reste à dépenser\nLimite quotidienne et 50 devises hors ligne\n\n📲 Téléchargez-la via le lien dans la bio\n\n#GMoney",
+   "caption_link": "Ce qu'il reste à dépenser\nLimite quotidienne et 50 devises hors ligne\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "gmoney/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 164,
+    "mixed_english_words": {
+     "0": [
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi",
+      "dinner"
+     ],
+     "2": [
+      "Tokyo"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "dropped screenshots [0, 2] with mixed English strings [['Ramen', 'lunch', 'TOKYO', 'Sushi'], ['Tokyo']]"
+   ],
+   "line1": "આજે કેટલું બાકી?",
+   "line2": "ખર્ચ નોંધો, મુદ્રા બદલો",
+   "chips": [
+    "ખર્ચ નોંધો, મુદ્રા બદલો",
+    "પ્રવાસ ખર્ચ અને ચલણ દર",
+    "એક નજરમાં ઘર મુદ્રામાં તરત જ કુલ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.26,
+    "family": "fan3_2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        269,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.77,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        159,
+        176,
+        921,
+        488
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.55,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "આજે કેટલું બાકી?\nખર્ચ નોંધો, મુદ્રા બદલો\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#GMoney",
+   "caption_link": "આજે કેટલું બાકી?\nખર્ચ નોંધો, મુદ્રા બદલો\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "gmoney/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 205,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "כמה נשאר להיום?",
+   "line2": "תקציב יומי והמרת מטבעות גם בלי חיבור",
+   "chips": [
+    "תקציב יומי והמרת מטבעות גם בלי חיבור",
+    "הוצאות טיול והמרת מטבע"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "fan3_2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        302,
+        72,
+        777,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.85,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        100,
+        176,
+        979,
+        509
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.56,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "כמה נשאר להיום?\nתקציב יומי והמרת מטבעות גם בלי חיבור\n\n📲 הורדה דרך הקישור בביו\n\n#GMoney",
+   "caption_link": "כמה נשאר להיום?\nתקציב יומי והמרת מטבעות גם בלי חיבור\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "gmoney/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 172,
+    "mixed_english_words": {
+     "0": [
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi",
+      "dinner"
+     ],
+     "2": [
+      "WATWD",
+      "Tokyo"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "dropped screenshots [0, 2] with mixed English strings [['Ramen', 'lunch', 'TOKYO', 'Sushi'], ['WATWD', 'Tokyo']]"
+   ],
+   "line1": "आज कितना बचा है?",
+   "line2": "दैनिक बजट और करेंसी बदलें, ऑफलाइन भी",
+   "chips": [
+    "दैनिक बजट और करेंसी बदलें, ऑफलाइन भी",
+    "यात्रा खर्च और मुद्रा दर"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.262,
+    "family": "fan3_2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        268,
+        72,
+        812,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.77,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        483
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.89,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "आज कितना बचा है?\nदैनिक बजट और करेंसी बदलें, ऑफलाइन भी\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#GMoney",
+   "caption_link": "आज कितना बचा है?\nदैनिक बजट और करेंसी बदलें, ऑफलाइन भी\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "gmoney/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Drži dnevni limit",
+   "line2": "Troškovi i pretvorba valuta i offline",
+   "chips": [
+    "Troškovi i pretvorba valuta i offline",
+    "Putni troškovi i valute"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.26,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        275,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.78,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        96,
+        176,
+        984,
+        489
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.49,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Drži dnevni limit\nTroškovi i pretvorba valuta i offline\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#GMoney",
+   "caption_link": "Drži dnevni limit\nTroškovi i pretvorba valuta i offline\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "gmoney/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "Tartsd a napi keretet",
+   "line2": "Kiadások és valutaváltás offline is",
+   "chips": [
+    "Kiadások és valutaváltás offline is",
+    "Utazási költség és valuta"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        825,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        200,
+        176,
+        880,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.91,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Tartsd a napi keretet\nKiadások és valutaváltás offline is\n\n📲 Töltsd le a bio linkjéről\n\n#GMoney",
+   "caption_link": "Tartsd a napi keretet\nKiadások és valutaváltás offline is\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "gmoney/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Sisa uang hari ini?",
+   "line2": "Catat per kategori, atur anggaran harian",
+   "chips": [
+    "Catat per kategori, atur anggaran harian",
+    "Pengeluaran wisata dan kurs"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.263,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        232,
+        72,
+        848,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.71,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        89,
+        176,
+        991,
+        479
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Sisa uang hari ini?\nCatat per kategori, atur anggaran harian\n\n📲 Unduh lewat link di bio\n\n#GMoney",
+   "caption_link": "Sisa uang hari ini?\nCatat per kategori, atur anggaran harian\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "gmoney/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Quanto resta oggi",
+   "line2": "Limite giornaliero e 50 valute offline",
+   "chips": [
+    "Limite giornaliero e 50 valute offline",
+    "Spese di viaggio e valute",
+    "Esporta in testo o CSV"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.282,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        288,
+        72,
+        791,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.78,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Quanto resta oggi\nLimite giornaliero e 50 valute offline\n\n📲 Scaricala dal link nella bio\n\n#GMoney",
+   "caption_link": "Quanto resta oggi\nLimite giornaliero e 50 valute offline\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "gmoney/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Seoul"
+     ],
+     "0": [
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi",
+      "dinner"
+     ],
+     "2": [
+      "WATWD",
+      "Tokyo"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Seoul'], ['Ramen', 'lunch', 'TOKYO', 'Sushi'], ['WATWD', 'Tokyo']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "gmoney/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Tokyo",
+      "Seoul"
+     ],
+     "0": [
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi",
+      "dinner"
+     ],
+     "2": [
+      "Tokyo"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Tokyo', 'Seoul'], ['Ramen', 'lunch', 'TOKYO', 'Sushi'], ['Tokyo']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "gmoney/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Tokyo",
+      "Seoul"
+     ],
+     "0": [
+      "Tokyo",
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi",
+      "dinner"
+     ],
+     "2": [
+      "WATWD",
+      "Tokyo"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Tokyo', 'Seoul'], ['Tokyo', 'Ramen', 'lunch', 'TOKYO'], ['WATWD', 'Tokyo']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "gmoney/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 218,
+    "mixed_english_words": {
+     "0": [
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi",
+      "dinner"
+     ],
+     "2": [
+      "WATWD",
+      "Tokyo"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "dropped screenshots [0, 2] with mixed English strings [['Ramen', 'lunch', 'TOKYO', 'Sushi'], ['WATWD', 'Tokyo']]",
+    "layout fallback fan3_2->split2 (fan3_2: screen_area=0.188<0.24; fan3_2×1.08: screen_area=0.202<0.24; fan3_2×1.16: screen_area=0.217<0.24; fan3_2×1.25: screen_area=0.233<0.24)"
+   ],
+   "line1": "ഇന്ന് എത്ര ബാക്കി?",
+   "line2": "വിഭാഗം തിരിച്ച് ചെലവ് · കറൻസി മാറ്റം",
+   "chips": [
+    "വിഭാഗം തിരിച്ച് ചെലവ് · കറൻസി മാറ്റം",
+    "യാത്രാ ചെലവും കറൻസിയും",
+    "ആഭ്യന്തര കറൻസി മൊത്തം തൽക്ഷണം കാണുക"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        326,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        520,
+        843
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.91,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        867,
+        474,
+        999
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.44,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 split2）"
+   },
+   "caption_instagram": "ഇന്ന് എത്ര ബാക്കി?\nവിഭാഗം തിരിച്ച് ചെലവ് · കറൻസി മാറ്റം\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#GMoney",
+   "caption_link": "ഇന്ന് എത്ര ബാക്കി?\nവിഭാഗം തിരിച്ച് ചെലവ് · കറൻസി മാറ്റം\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "gmoney/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Tokyo",
+      "Seoul"
+     ],
+     "0": [
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi",
+      "dinner"
+     ],
+     "2": [
+      "Tokyo",
+      "sitet"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Tokyo', 'Seoul'], ['Ramen', 'lunch', 'TOKYO', 'Sushi'], ['Tokyo', 'sitet']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "gmoney/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Duit ke mana?",
+   "line2": "Belanjawan harian dan tukar mata wang",
+   "chips": [
+    "Belanjawan harian dan tukar mata wang",
+    "Belanja jalan dan mata wang"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        243,
+        72,
+        837,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.73,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        150,
+        176,
+        931,
+        501
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Duit ke mana?\nBelanjawan harian dan tukar mata wang\n\n📲 Muat turun melalui pautan dalam bio\n\n#GMoney",
+   "caption_link": "Duit ke mana?\nBelanjawan harian dan tukar mata wang\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "gmoney/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Wat is er nog over?",
+   "line2": "Per categorie, daglimiet en 50 valuta's",
+   "chips": [
+    "Per categorie, daglimiet en 50 valuta's",
+    "Reisuitgaven en valuta",
+    "Exporteer naar tekst of CSV"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.284,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        176,
+        999,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.32,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Wat is er nog over?\nPer categorie, daglimiet en 50 valuta's\n\n📲 Download via de link in bio\n\n#GMoney",
+   "caption_link": "Wat is er nog over?\nPer categorie, daglimiet en 50 valuta's\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "gmoney/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "Se hva som er igjen i dag",
+   "line2": "Daglig grense · 50 valutaer offline",
+   "chips": [
+    "Daglig grense · 50 valutaer offline",
+    "Reiseutgifter og valuta",
+    "Eksporter til tekst eller CSV"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        188,
+        176,
+        893,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 9.71,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Se hva som er igjen i dag\nDaglig grense · 50 valutaer offline\n\n📲 Last ned via lenken i bio\n\n#GMoney",
+   "caption_link": "Se hva som er igjen i dag\nDaglig grense · 50 valutaer offline\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "gmoney/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Tokyo",
+      "Seoul"
+     ],
+     "0": [
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi",
+      "dinner"
+     ],
+     "2": [
+      "Tokyo"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Tokyo', 'Seoul'], ['Ramen', 'lunch', 'TOKYO', 'Sushi'], ['Tokyo']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "gmoney/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Tokyo",
+      "Seoul"
+     ],
+     "0": [
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi",
+      "dinner"
+     ],
+     "2": [
+      "WATWD",
+      "Tokyo"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Tokyo', 'Seoul'], ['Ramen', 'lunch', 'TOKYO', 'Sushi'], ['WATWD', 'Tokyo']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "gmoney/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Ile zostało na dziś?",
+   "line2": "Dzienny limit · 50 walut offline",
+   "chips": [
+    "Dzienny limit · 50 walut offline",
+    "Wydatki w podróży i waluty",
+    "Eksportuj do tekstu lub CSV"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.284,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.78,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        989,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.39,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Ile zostało na dziś?\nDzienny limit · 50 walut offline\n\n📲 Pobierz przez link w bio\n\n#GMoney",
+   "caption_link": "Ile zostało na dziś?\nDzienny limit · 50 walut offline\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "gmoney/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Quanto resta hoje?",
+   "line2": "Gastos por categoria e 50 moedas",
+   "chips": [
+    "Gastos por categoria e 50 moedas",
+    "Orçamento e dinheiro de viagem",
+    "Exporte em texto ou CSV"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.284,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        251,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        996,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.19,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Quanto resta hoje?\nGastos por categoria e 50 moedas\n\n📲 Baixe pelo link na bio\n\n#GMoney",
+   "caption_link": "Quanto resta hoje?\nGastos por categoria e 50 moedas\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "gmoney/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Orçamento do dia",
+   "line2": "Gastos por categoria e conversor offline",
+   "chips": [
+    "Gastos por categoria e conversor offline",
+    "Orçamento e dinheiro de viagem"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.266,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        251,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        176,
+        987,
+        468
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.53,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Orçamento do dia\nGastos por categoria e conversor offline\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "Orçamento do dia\nGastos por categoria e conversor offline\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "gmoney/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Ține bugetul zilnic",
+   "line2": "Cheltuieli și conversie valutară offline",
+   "chips": [
+    "Cheltuieli și conversie valutară offline",
+    "Cheltuieli călătorie și valute"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.282,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        265,
+        72,
+        815,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.75,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        176,
+        997,
+        418
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.27,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Ține bugetul zilnic\nCheltuieli și conversie valutară offline\n\n📲 Descarcă din linkul din bio\n\n#GMoney",
+   "caption_link": "Ține bugetul zilnic\nCheltuieli și conversie valutară offline\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "gmoney/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Seoul",
+      "CYMMA"
+     ],
+     "0": [
+      "Cymma",
+      "Tokyo",
+      "Kateropua",
+      "Ramen",
+      "lunch",
+      "TOKYO"
+     ],
+     "2": [
+      "Hactponku",
+      "CuctemHaa",
+      "CBetnaa",
+      "TemHaa",
+      "OBMEHA",
+      "Bantota"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Seoul', 'CYMMA'], ['Cymma', 'Tokyo', 'Kateropua', 'Ramen'], ['Hactponku', 'CuctemHaa', 'CBetnaa', 'TemHaa']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "gmoney/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.217<0.24; fan3_2×1.08: screen_area=0.234<0.24)"
+   ],
+   "line1": "Držte denný rozpočet",
+   "line2": "Výdavky a prepočet mien aj offline",
+   "chips": [
+    "Výdavky a prepočet mien aj offline",
+    "Výdavky na cesty a meny"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.251,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        255,
+        72,
+        825,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        206,
+        176,
+        875,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Držte denný rozpočet\nVýdavky a prepočet mien aj offline\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#GMoney",
+   "caption_link": "Držte denný rozpočet\nVýdavky a prepočet mien aj offline\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "gmoney/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Držite dnevni limit",
+   "line2": "Stroški in valute tudi brez povezave",
+   "chips": [
+    "Stroški in valute tudi brez povezave",
+    "Potovalni stroški in valute",
+    "Enkraten nakup — brez naročnine, nikoli"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.282,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        260,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        79,
+        176,
+        1001,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.33,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Držite dnevni limit\nStroški in valute tudi brez povezave\n\n📲 Prenesite prek povezave v biu\n\n#GMoney",
+   "caption_link": "Držite dnevni limit\nStroški in valute tudi brez povezave\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "gmoney/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "Se vad som är kvar idag",
+   "line2": "Daglig gräns · 50 valutor offline",
+   "chips": [
+    "Daglig gräns · 50 valutor offline",
+    "Reseutgifter och valuta",
+    "Exportera till text eller CSV"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        212,
+        176,
+        869,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.03,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Se vad som är kvar idag\nDaglig gräns · 50 valutor offline\n\n📲 Ladda ner via länken i bion\n\n#GMoney",
+   "caption_link": "Se vad som är kvar idag\nDaglig gräns · 50 valutor offline\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "gmoney/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 210,
+    "mixed_english_words": {
+     "0": [
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi",
+      "dinner"
+     ],
+     "2": [
+      "Tokyo"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "dropped screenshots [0, 2] with mixed English strings [['Ramen', 'lunch', 'TOKYO', 'Sushi'], ['Tokyo']]",
+    "layout fallback fan3_2->closeup2 (fan3_2: screen_area=0.188<0.24; fan3_2×1.08: screen_area=0.202<0.24; fan3_2×1.16: screen_area=0.216<0.24; fan3_2×1.25: screen_area=0.233<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.198<0.24; closeup2×1.08: screen_area=0.213<0.24; closeup2×1.16: screen_area=0.228<0.24)"
+   ],
+   "line1": "இன்று மீதி எவ்வளவு?",
+   "line2": "வகைப்படி செலவு · நாணய மாற்று",
+   "chips": [
+    "வகைப்படி செலவு · நாணய மாற்று",
+    "பயணச் செலவு, நாணய மாற்று",
+    "ஒருமுறை கொள்முதல் — சந்தா இல்லை"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        200,
+        72,
+        879,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.66,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        189,
+        184,
+        891,
+        725
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.35,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "இன்று மீதி எவ்வளவு?\nவகைப்படி செலவு · நாணய மாற்று\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#GMoney",
+   "caption_link": "இன்று மீதி எவ்வளவு?\nவகைப்படி செலவு · நாணய மாற்று\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "gmoney/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 274,
+    "mixed_english_words": {
+     "1": [
+      "Tokyo",
+      "Seoul"
+     ],
+     "0": [
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi",
+      "dinner"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "dropped screenshots [1, 0] with mixed English strings [['Tokyo', 'Seoul'], ['Ramen', 'lunch', 'TOKYO', 'Sushi']]"
+   ],
+   "line1": "నేడు ఎంత మిగిలింది?",
+   "line2": "కేటగిరీ ఖర్చు · కరెన్సీ మార్పిడి",
+   "chips": [
+    "కేటగిరీ ఖర్చు · కరెన్సీ మార్పిడి",
+    "ప్రయాణ ఖర్చు, కరెన్సీ మార్పిడి",
+    "టెక్స్ట్ లేదా CSVకి ఎగుమతి చేయండి"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "fan3_2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        176,
+        988,
+        460
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.43,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "నేడు ఎంత మిగిలింది?\nకేటగిరీ ఖర్చు · కరెన్సీ మార్పిడి\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#GMoney",
+   "caption_link": "నేడు ఎంత మిగిలింది?\nకేటగిరీ ఖర్చు · కరెన్సీ మార్పిడి\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "gmoney/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 218,
+    "mixed_english_words": {
+     "0": [
+      "uilas",
+      "Tokyo",
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi"
+     ],
+     "2": [
+      "Tokyo"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "dropped screenshots [0, 2] with mixed English strings [['uilas', 'Tokyo', 'Ramen', 'lunch'], ['Tokyo']]",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.239<0.24)"
+   ],
+   "line1": "เงินไปไหนเห็นทันที",
+   "line2": "ตั้งงบต่อวัน แปลงสกุลเงินได้แม้ไม่มีเน็ต",
+   "chips": [
+    "ตั้งงบต่อวัน แปลงสกุลเงินได้แม้ไม่มีเน็ต",
+    "บันทึกค่าใช้จ่ายเที่ยว"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.258,
+    "family": "fan3_2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 1.11,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        822,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        118,
+        176,
+        962,
+        554
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.58,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "เงินไปไหนเห็นทันที\nตั้งงบต่อวัน แปลงสกุลเงินได้แม้ไม่มีเน็ต\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#GMoney",
+   "caption_link": "เงินไปไหนเห็นทันที\nตั้งงบต่อวัน แปลงสกุลเงินได้แม้ไม่มีเน็ต\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "gmoney/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.218<0.24; fan3_2×1.08: screen_area=0.235<0.24)"
+   ],
+   "line1": "Bugün ne kadar kaldı?",
+   "line2": "Harcama takibi ve döviz çevirici",
+   "chips": [
+    "Harcama takibi ve döviz çevirici",
+    "Seyahat harcaması ve döviz",
+    "Metin veya CSV olarak dışa aktar"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.252,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        266,
+        72,
+        813,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.75,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        204,
+        176,
+        877,
+        621
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.85,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "Bugün ne kadar kaldı?\nHarcama takibi ve döviz çevirici\n\n📲 Biyografideki bağlantıdan indirin\n\n#GMoney",
+   "caption_link": "Bugün ne kadar kaldı?\nHarcama takibi ve döviz çevirici\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "gmoney/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "KOHBepTep",
+      "TpeKep",
+      "Seoul",
+      "Tokyo",
+      "Hanoi",
+      "CEPEQHE"
+     ],
+     "0": [
+      "KOHBepTep",
+      "Kateropia",
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi"
+     ],
+     "2": [
+      "TemHa",
+      "OBMIHHI",
+      "Bantota",
+      "WATWD",
+      "KypciB",
+      "KypciB"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "mixed English strings on all localized screenshots [['KOHBepTep', 'TpeKep', 'Seoul', 'Tokyo'], ['KOHBepTep', 'Kateropia', 'Ramen', 'lunch'], ['TemHa', 'OBMIHHI', 'Bantota', 'WATWD']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "gmoney/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 108,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.238<0.24)"
+   ],
+   "line1": "آج کتنا باقی ہے؟",
+   "line2": "روزانہ حد اور آف لائن کرنسی تبدیلی",
+   "chips": [
+    "روزانہ حد اور آف لائن کرنسی تبدیلی",
+    "سفری اخراجات اور کرنسی",
+    "ایک نظر میں فوری گھر کی کرنسی کے کل"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.11,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        292,
+        72,
+        787,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        162,
+        176,
+        918,
+        559
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "آج کتنا باقی ہے؟\nروزانہ حد اور آف لائن کرنسی تبدیلی\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#GMoney",
+   "caption_link": "آج کتنا باقی ہے؟\nروزانہ حد اور آف لائن کرنسی تبدیلی\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "gmoney/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "Ngân sách mỗi ngày",
+   "line2": "Ghi chi tiêu và đổi tiền tệ",
+   "chips": [
+    "Ghi chi tiêu và đổi tiền tệ",
+    "Ngân sách và chi tiêu du lịch"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.284,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.96,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        242,
+        72,
+        839,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.73,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        76,
+        176,
+        1004,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.36,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板"
+   },
+   "caption_instagram": "Ngân sách mỗi ngày\nGhi chi tiêu và đổi tiền tệ\n\n📲 Tải về qua link ở bio\n\n#GMoney",
+   "caption_link": "Ngân sách mỗi ngày\nGhi chi tiêu và đổi tiền tệ\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "gmoney/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Tokyo",
+      "Seoul"
+     ],
+     "0": [
+      "Tokyo",
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi",
+      "dinner"
+     ],
+     "2": [
+      "Tokyo"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Tokyo', 'Seoul'], ['Tokyo', 'Ramen', 'lunch', 'TOKYO'], ['Tokyo']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "gmoney/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Tokyo",
+      "Seoul"
+     ],
+     "0": [
+      "Ramen",
+      "lunch",
+      "TOKYO",
+      "Sushi",
+      "dinner"
+     ],
+     "2": [
+      "Tokyo"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Tokyo', 'Seoul'], ['Ramen', 'lunch', 'TOKYO', 'Sushi'], ['Tokyo']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback fan3_2->fan3_2 (fan3_2: screen_area=0.221<0.24; fan3_2×1.08: screen_area=0.238<0.24)"
+   ],
+   "line1": "See What's Left Today",
+   "line2": "Log spending + 50 currencies",
+   "chips": [
+    "Log spending + 50 currencies",
+    "Daily Log, Planner & Tracker",
+    "Export to text or CSV to share or keep"
+   ],
+   "layout": {
+    "phones": 3,
+    "screen_area_ratio": 0.256,
+    "family": "fan3_2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.29,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        823,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 10.74,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        176,
+        843,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "fan3_2",
+    "layout_reason": "財務／數據多畫面型：三機扇形，文字進玻璃板（自檢未過改用 fan3_2）"
+   },
+   "caption_instagram": "See What's Left Today\nLog spending + 50 currencies\n\n📲 Download via the link in bio\n\n#GMoney",
+   "caption_link": "See What's Left Today\nLog spending + 50 currencies\n\nApp Store: https://apps.apple.com/app/id6755782939\nGoogle Play: https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/gmoney/zh-Hant.jpg"
+  }
+ ]
+}

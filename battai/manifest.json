@@ -1,0 +1,2300 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "battai",
+ "app_id": "6802423998",
+ "app_store_url": "https://apps.apple.com/app/id6802423998",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "battai/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 127,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "افهم بطاريتك",
+   "line2": "نتيجة صحة البطارية مع المصدر والحدود",
+   "chips": [
+    "نتيجة صحة البطارية مع المصدر والحدود",
+    "قواعد ومصادر وحدود واضحة",
+    "ما الذي يشكّل النتيجة"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "افهم بطاريتك\nنتيجة صحة البطارية مع المصدر والحدود\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#BattAI",
+   "caption_link": "افهم بطاريتك\nنتيجة صحة البطارية مع المصدر والحدود\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "battai/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "Battery Health Score",
+   "line2": "Every source and limit shown",
+   "chips": [
+    "Every source and limit shown",
+    "Clear rules, sources, and limits",
+    "Battery health score"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Battery Health Score\nEvery source and limit shown\n\n📲 Download via the link in bio\n\n#BattAI",
+   "caption_link": "Battery Health Score\nEvery source and limit shown\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "battai/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Salut de la bateria",
+   "line2": "Cada dada, amb font i límits",
+   "chips": [
+    "Cada dada, amb font i límits",
+    "Regles, fonts i límits clars",
+    "Puntuació de salut de la bateria"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Salut de la bateria\nCada dada, amb font i límits\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#BattAI",
+   "caption_link": "Salut de la bateria\nCada dada, amb font i límits\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "battai/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Skóre kondice baterie",
+   "line2": "U každého údaje zdroj a omezení",
+   "chips": [
+    "U každého údaje zdroj a omezení",
+    "Jasná pravidla, zdroje a omezení",
+    "Co tvoří skóre"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Skóre kondice baterie\nU každého údaje zdroj a omezení\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#BattAI",
+   "caption_link": "Skóre kondice baterie\nU každého údaje zdroj a omezení\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "battai/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Batteriets tilstandsscore",
+   "line2": "Hver detalje viser kilde og grænser",
+   "chips": [
+    "Hver detalje viser kilde og grænser",
+    "Klare regler, kilder og grænser",
+    "Batteritilstandsscore"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Batteriets tilstandsscore\nHver detalje viser kilde og grænser\n\n📲 Download via linket i bio\n\n#BattAI",
+   "caption_link": "Batteriets tilstandsscore\nHver detalje viser kilde og grænser\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "battai/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Akkuzustand klar",
+   "line2": "Jedes Detail zeigt Quelle und Grenzen",
+   "chips": [
+    "Jedes Detail zeigt Quelle und Grenzen",
+    "Klare Regeln, Quellen und Grenzen",
+    "Batteriezustandswert"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Akkuzustand klar\nJedes Detail zeigt Quelle und Grenzen\n\n📲 Download über den Link in der Bio\n\n#BattAI",
+   "caption_link": "Akkuzustand klar\nJedes Detail zeigt Quelle und Grenzen\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "battai/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 184,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "Βαθμός μπαταρίας",
+   "line2": "Πηγή και όρια σε κάθε στοιχείο",
+   "chips": [
+    "Πηγή και όρια σε κάθε στοιχείο",
+    "Σαφείς κανόνες, πηγές και όρια",
+    "Βαθμολογία υγείας μπαταρίας"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Βαθμός μπαταρίας\nΠηγή και όρια σε κάθε στοιχείο\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#BattAI",
+   "caption_link": "Βαθμός μπαταρίας\nΠηγή και όρια σε κάθε στοιχείο\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "battai/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Battery Health Score",
+   "line2": "Every source and limit shown",
+   "chips": [
+    "Every source and limit shown",
+    "Clear rules, sources, and limits",
+    "Battery health score"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Battery Health Score\nEvery source and limit shown\n\n📲 Download via the link in bio\n\n#BattAI",
+   "caption_link": "Battery Health Score\nEvery source and limit shown\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "battai/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Battery Health Score",
+   "line2": "Every source and limit shown",
+   "chips": [
+    "Every source and limit shown",
+    "Clear rules, sources, and limits",
+    "Battery health score"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Battery Health Score\nEvery source and limit shown\n\n📲 Download via the link in bio\n\n#BattAI",
+   "caption_link": "Battery Health Score\nEvery source and limit shown\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "battai/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Battery Health Score",
+   "line2": "Every source and limit shown",
+   "chips": [
+    "Every source and limit shown",
+    "Clear rules, sources, and limits",
+    "Battery health score"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Battery Health Score\nEvery source and limit shown\n\n📲 Download via the link in bio\n\n#BattAI",
+   "caption_link": "Battery Health Score\nEvery source and limit shown\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "battai/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Battery Health Score",
+   "line2": "Every source and limit shown",
+   "chips": [
+    "Every source and limit shown",
+    "Clear rules, sources, and limits",
+    "Battery health score"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Battery Health Score\nEvery source and limit shown\n\n📲 Download via the link in bio\n\n#BattAI",
+   "caption_link": "Battery Health Score\nEvery source and limit shown\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "battai/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Salud de la batería",
+   "line2": "Cada dato muestra su fuente y límites",
+   "chips": [
+    "Cada dato muestra su fuente y límites",
+    "Reglas, fuentes y límites claros",
+    "Puntuación de salud de la batería"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Salud de la batería\nCada dato muestra su fuente y límites\n\n📲 Descárgala desde el enlace de la bio\n\n#BattAI",
+   "caption_link": "Salud de la batería\nCada dato muestra su fuente y límites\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "battai/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Salud de la batería",
+   "line2": "Cada dato muestra su fuente y límites",
+   "chips": [
+    "Cada dato muestra su fuente y límites",
+    "Reglas, fuentes y límites claros",
+    "Puntaje de condición de la batería"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Salud de la batería\nCada dato muestra su fuente y límites\n\n📲 Descárgala desde el enlace de la bio\n\n#BattAI",
+   "caption_link": "Salud de la batería\nCada dato muestra su fuente y límites\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "battai/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Akun kuntotulos",
+   "line2": "Jokainen tieto kertoo lähteen ja rajat",
+   "chips": [
+    "Jokainen tieto kertoo lähteen ja rajat",
+    "Selkeät säännöt, lähteet ja rajat",
+    "Mistä tulos muodostuu"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Akun kuntotulos\nJokainen tieto kertoo lähteen ja rajat\n\n📲 Lataa bion linkistä\n\n#BattAI",
+   "caption_link": "Akun kuntotulos\nJokainen tieto kertoo lähteen ja rajat\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "battai/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Santé de la batterie",
+   "line2": "Chaque détail indique source et limites",
+   "chips": [
+    "Chaque détail indique source et limites",
+    "Règles, sources et limites claires",
+    "Note de santé de la batterie"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Santé de la batterie\nChaque détail indique source et limites\n\n📲 Téléchargez-la via le lien dans la bio\n\n#BattAI",
+   "caption_link": "Santé de la batterie\nChaque détail indique source et limites\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "battai/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Santé de la batterie",
+   "line2": "Chaque détail indique source et limites",
+   "chips": [
+    "Chaque détail indique source et limites",
+    "Règles, sources et limites claires",
+    "Note de santé de la batterie"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Santé de la batterie\nChaque détail indique source et limites\n\n📲 Téléchargez-la via le lien dans la bio\n\n#BattAI",
+   "caption_link": "Santé de la batterie\nChaque détail indique source et limites\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "battai/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 54,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "બેટરીની તબિયત સમજો",
+   "line2": "સ્પષ્ટ નિયમો, સ્રોતો અને મર્યાદાઓ",
+   "chips": [
+    "સ્પષ્ટ નિયમો, સ્રોતો અને મર્યાદાઓ",
+    "બેટરી હેલ્થ સ્કોર",
+    "સ્કોર શું બનાવે છે"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "બેટરીની તબિયત સમજો\nસ્પષ્ટ નિયમો, સ્રોતો અને મર્યાદાઓ\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#BattAI",
+   "caption_link": "બેટરીની તબિયત સમજો\nસ્પષ્ટ નિયમો, સ્રોતો અને મર્યાદાઓ\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "battai/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 155,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "מבינים את הסוללה",
+   "line2": "ליד כל פרט מוצגים המקור והמגבלות",
+   "chips": [
+    "ליד כל פרט מוצגים המקור והמגבלות",
+    "כללים, מקורות ומגבלות ברורים",
+    "ציון בריאות הסוללה"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "מבינים את הסוללה\nליד כל פרט מוצגים המקור והמגבלות\n\n📲 הורדה דרך הקישור בביו\n\n#BattAI",
+   "caption_link": "מבינים את הסוללה\nליד כל פרט מוצגים המקור והמגבלות\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "battai/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 170,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "अपनी बैटरी समझें",
+   "line2": "हर जानकारी अपना स्रोत और सीमा दिखाए",
+   "chips": [
+    "हर जानकारी अपना स्रोत और सीमा दिखाए",
+    "साफ़ नियम, स्रोत और सीमाएँ",
+    "बैटरी स्वास्थ्य स्कोर"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "अपनी बैटरी समझें\nहर जानकारी अपना स्रोत और सीमा दिखाए\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#BattAI",
+   "caption_link": "अपनी बैटरी समझें\nहर जानकारी अपना स्रोत और सीमा दिखाए\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "battai/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Ocjena stanja baterije",
+   "line2": "Svaki podatak s izvorom i ograničenjima",
+   "chips": [
+    "Svaki podatak s izvorom i ograničenjima",
+    "Jasna pravila, izvori i ograničenja",
+    "Što oblikuje ocjenu"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Ocjena stanja baterije\nSvaki podatak s izvorom i ograničenjima\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#BattAI",
+   "caption_link": "Ocjena stanja baterije\nSvaki podatak s izvorom i ograničenjima\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "battai/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Akkuállapot-pontszám",
+   "line2": "Minden adatnál forrás és korlát",
+   "chips": [
+    "Minden adatnál forrás és korlát",
+    "Akkumulátorállapot-pontszám",
+    "Mi alakítja a pontszámot"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Akkuállapot-pontszám\nMinden adatnál forrás és korlát\n\n📲 Töltsd le a bio linkjéről\n\n#BattAI",
+   "caption_link": "Akkuállapot-pontszám\nMinden adatnál forrás és korlát\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "battai/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Kesehatan baterai jelas",
+   "line2": "Tiap detail tunjukkan sumber dan batasnya",
+   "chips": [
+    "Tiap detail tunjukkan sumber dan batasnya",
+    "Aturan, sumber, dan batas yang jelas",
+    "Skor kesehatan baterai"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Kesehatan baterai jelas\nTiap detail tunjukkan sumber dan batasnya\n\n📲 Unduh lewat link di bio\n\n#BattAI",
+   "caption_link": "Kesehatan baterai jelas\nTiap detail tunjukkan sumber dan batasnya\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "battai/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Salute della batteria",
+   "line2": "Ogni dettaglio mostra fonte e limiti",
+   "chips": [
+    "Ogni dettaglio mostra fonte e limiti",
+    "Regole, fonti e limiti chiari",
+    "Punteggio di salute della batteria"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Salute della batteria\nOgni dettaglio mostra fonte e limiti\n\n📲 Scaricala dal link nella bio\n\n#BattAI",
+   "caption_link": "Salute della batteria\nOgni dettaglio mostra fonte e limiti\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "battai/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 70,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "電池の状態をスコア化",
+   "line2": "各項目に情報源と限界を表示",
+   "chips": [
+    "各項目に情報源と限界を表示",
+    "ルール、情報源、限界を明確に",
+    "バッテリー状態スコア"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "電池の状態をスコア化\n各項目に情報源と限界を表示\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#BattAI",
+   "caption_link": "電池の状態をスコア化\n各項目に情報源と限界を表示\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "battai/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 227,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "ಬ್ಯಾಟರಿ ಆರೋಗ್ಯ ಅರಿಯಿರಿ",
+   "line2": "ಸ್ಪಷ್ಟ ನಿಯಮಗಳು, ಮೂಲಗಳು ಮತ್ತು ಮಿತಿಗಳು",
+   "chips": [
+    "ಸ್ಪಷ್ಟ ನಿಯಮಗಳು, ಮೂಲಗಳು ಮತ್ತು ಮಿತಿಗಳು",
+    "ಬ್ಯಾಟರಿ ಆರೋಗ್ಯ ಅಂಕ",
+    "ಅಂಕವನ್ನು ರೂಪಿಸುವುದು"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "ಬ್ಯಾಟರಿ ಆರೋಗ್ಯ ಅರಿಯಿರಿ\nಸ್ಪಷ್ಟ ನಿಯಮಗಳು, ಮೂಲಗಳು ಮತ್ತು ಮಿತಿಗಳು\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#BattAI",
+   "caption_link": "ಬ್ಯಾಟರಿ ಆರೋಗ್ಯ ಅರಿಯಿರಿ\nಸ್ಪಷ್ಟ ನಿಯಮಗಳು, ಮೂಲಗಳು ಮತ್ತು ಮಿತಿಗಳು\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "battai/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 60,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "배터리 상태를 점수로",
+   "line2": "각 항목에 출처와 한계 표시",
+   "chips": [
+    "각 항목에 출처와 한계 표시",
+    "규칙, 출처, 한계를 분명하게",
+    "배터리 상태 점수"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "배터리 상태를 점수로\n각 항목에 출처와 한계 표시\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#BattAI",
+   "caption_link": "배터리 상태를 점수로\n각 항목에 출처와 한계 표시\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "battai/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 194,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "ബാറ്ററി ആരോഗ്യം",
+   "line2": "ഓരോ വിവരത്തിനും ഉറവിടവും പരിധിയും",
+   "chips": [
+    "ഓരോ വിവരത്തിനും ഉറവിടവും പരിധിയും",
+    "വ്യക്തമായ നിയമങ്ങൾ, ഉറവിടങ്ങൾ, പരിധികൾ",
+    "ബാറ്ററി ആരോഗ്യ സ്കോർ"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "ബാറ്ററി ആരോഗ്യം\nഓരോ വിവരത്തിനും ഉറവിടവും പരിധിയും\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#BattAI",
+   "caption_link": "ബാറ്ററി ആരോഗ്യം\nഓരോ വിവരത്തിനും ഉറവിടവും പരിധിയും\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "battai/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 201,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "तुमची बॅटरी समजा",
+   "line2": "प्रत्येक तपशील स्रोत आणि मर्यादा दाखवतो",
+   "chips": [
+    "प्रत्येक तपशील स्रोत आणि मर्यादा दाखवतो",
+    "स्पष्ट नियम, स्रोत आणि मर्यादा",
+    "बॅटरी आरोग्य गुण"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "तुमची बॅटरी समजा\nप्रत्येक तपशील स्रोत आणि मर्यादा दाखवतो\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#BattAI",
+   "caption_link": "तुमची बॅटरी समजा\nप्रत्येक तपशील स्रोत आणि मर्यादा दाखवतो\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "battai/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Kesihatan bateri jelas",
+   "line2": "Setiap butiran tunjuk sumber dan batas",
+   "chips": [
+    "Setiap butiran tunjuk sumber dan batas",
+    "Peraturan, sumber dan batas yang jelas",
+    "Skor kesihatan bateri"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Kesihatan bateri jelas\nSetiap butiran tunjuk sumber dan batas\n\n📲 Muat turun melalui pautan dalam bio\n\n#BattAI",
+   "caption_link": "Kesihatan bateri jelas\nSetiap butiran tunjuk sumber dan batas\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "battai/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Batterij helder",
+   "line2": "Elk detail toont bron en grenzen",
+   "chips": [
+    "Elk detail toont bron en grenzen",
+    "Heldere regels, bronnen en grenzen",
+    "Batterijconditiescore"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Batterij helder\nElk detail toont bron en grenzen\n\n📲 Download via de link in bio\n\n#BattAI",
+   "caption_link": "Batterij helder\nElk detail toont bron en grenzen\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "battai/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Batteriets tilstand",
+   "line2": "Hver detalj viser kilde og grenser",
+   "chips": [
+    "Hver detalj viser kilde og grenser",
+    "Klare regler, kilder og grenser",
+    "Poengsum for batteritilstand"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Batteriets tilstand\nHver detalj viser kilde og grenser\n\n📲 Last ned via lenken i bio\n\n#BattAI",
+   "caption_link": "Batteriets tilstand\nHver detalj viser kilde og grenser\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "battai/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 187,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "ବ୍ୟାଟେରୀକୁ ବୁଝନ୍ତୁ",
+   "line2": "ସ୍ପଷ୍ଟ ନିୟମ, ଉତ୍ସ ଓ ସୀମା",
+   "chips": [
+    "ସ୍ପଷ୍ଟ ନିୟମ, ଉତ୍ସ ଓ ସୀମା",
+    "ବ୍ୟାଟେରୀ ସ୍ୱାସ୍ଥ୍ୟ ସ୍କୋର",
+    "ସ୍କୋର କେଉଁଥିରୁ ତିଆରି"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "ବ୍ୟାଟେରୀକୁ ବୁଝନ୍ତୁ\nସ୍ପଷ୍ଟ ନିୟମ, ଉତ୍ସ ଓ ସୀମା\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#BattAI",
+   "caption_link": "ବ୍ୟାଟେରୀକୁ ବୁଝନ୍ତୁ\nସ୍ପଷ୍ଟ ନିୟମ, ଉତ୍ସ ଓ ସୀମା\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "battai/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 111,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "ਬੈਟਰੀ ਨੂੰ ਸਮਝੋ",
+   "line2": "ਸਾਫ਼ ਨਿਯਮ, ਸਰੋਤ ਅਤੇ ਹੱਦਾਂ",
+   "chips": [
+    "ਸਾਫ਼ ਨਿਯਮ, ਸਰੋਤ ਅਤੇ ਹੱਦਾਂ",
+    "ਬੈਟਰੀ ਸਿਹਤ ਸਕੋਰ",
+    "ਸਕੋਰ ਕਿਹੜੀਆਂ ਗੱਲਾਂ ਤੋਂ ਬਣਦਾ ਹੈ"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "ਬੈਟਰੀ ਨੂੰ ਸਮਝੋ\nਸਾਫ਼ ਨਿਯਮ, ਸਰੋਤ ਅਤੇ ਹੱਦਾਂ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#BattAI",
+   "caption_link": "ਬੈਟਰੀ ਨੂੰ ਸਮਝੋ\nਸਾਫ਼ ਨਿਯਮ, ਸਰੋਤ ਅਤੇ ਹੱਦਾਂ\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "battai/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Wynik kondycji baterii",
+   "line2": "Każdy szczegół pokazuje źródło",
+   "chips": [
+    "Każdy szczegół pokazuje źródło",
+    "Jasne zasady, źródła i granice",
+    "Co wpływa na wynik"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Wynik kondycji baterii\nKażdy szczegół pokazuje źródło\n\n📲 Pobierz przez link w bio\n\n#BattAI",
+   "caption_link": "Wynik kondycji baterii\nKażdy szczegół pokazuje źródło\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "battai/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Saúde da bateria clara",
+   "line2": "Cada dado mostra fonte e limites",
+   "chips": [
+    "Cada dado mostra fonte e limites",
+    "Regras, fontes e limites claros",
+    "Pontuação de saúde da bateria"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Saúde da bateria clara\nCada dado mostra fonte e limites\n\n📲 Baixe pelo link na bio\n\n#BattAI",
+   "caption_link": "Saúde da bateria clara\nCada dado mostra fonte e limites\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "battai/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Saúde da bateria clara",
+   "line2": "Cada dado mostra a fonte e os limites",
+   "chips": [
+    "Cada dado mostra a fonte e os limites",
+    "Regras, fontes e limites claros",
+    "Pontuação de saúde da bateria"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Saúde da bateria clara\nCada dado mostra a fonte e os limites\n\n📲 Download via the link in bio\n\n#BattAI",
+   "caption_link": "Saúde da bateria clara\nCada dado mostra a fonte e os limites\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "battai/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Scorul sănătății bateriei",
+   "line2": "Fiecare detaliu cu sursă și limite",
+   "chips": [
+    "Fiecare detaliu cu sursă și limite",
+    "Reguli, surse și limite clare",
+    "Ce formează scorul"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Scorul sănătății bateriei\nFiecare detaliu cu sursă și limite\n\n📲 Descarcă din linkul din bio\n\n#BattAI",
+   "caption_link": "Scorul sănătății bateriei\nFiecare detaliu cu sursă și limite\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "battai/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 136,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Оценка батареи",
+   "line2": "Источник и ограничения у каждого",
+   "chips": [
+    "Источник и ограничения у каждого",
+    "Оценка состояния аккумулятора",
+    "Что формирует оценку"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Оценка батареи\nИсточник и ограничения у каждого\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#BattAI",
+   "caption_link": "Оценка батареи\nИсточник и ограничения у каждого\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "battai/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Skóre kondície batérie",
+   "line2": "Pri každom údaji zdroj a obmedzenia",
+   "chips": [
+    "Pri každom údaji zdroj a obmedzenia",
+    "Jasné pravidlá, zdroje a obmedzenia",
+    "Čo tvorí skóre"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Skóre kondície batérie\nPri každom údaji zdroj a obmedzenia\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#BattAI",
+   "caption_link": "Skóre kondície batérie\nPri každom údaji zdroj a obmedzenia\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "battai/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Ocena stanja baterije",
+   "line2": "Vsak podatek z virom in omejitvami",
+   "chips": [
+    "Vsak podatek z virom in omejitvami",
+    "Jasna pravila, viri in omejitve",
+    "Kaj oblikuje oceno"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Ocena stanja baterije\nVsak podatek z virom in omejitvami\n\n📲 Prenesite prek povezave v biu\n\n#BattAI",
+   "caption_link": "Ocena stanja baterije\nVsak podatek z virom in omejitvami\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "battai/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Batteriets hälsopoäng",
+   "line2": "Varje uppgift visar källa och gränser",
+   "chips": [
+    "Varje uppgift visar källa och gränser",
+    "Tydliga regler, källor och gränser",
+    "Det som formar poängen"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Batteriets hälsopoäng\nVarje uppgift visar källa och gränser\n\n📲 Ladda ner via länken i bion\n\n#BattAI",
+   "caption_link": "Batteriets hälsopoäng\nVarje uppgift visar källa och gränser\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "battai/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 284,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "பேட்டரி நலம்",
+   "line2": "ஒவ்வொரு விவரத்துக்கும் ஆதாரம், வரம்பு",
+   "chips": [
+    "ஒவ்வொரு விவரத்துக்கும் ஆதாரம், வரம்பு",
+    "தெளிவான விதிகள், ஆதாரங்கள், வரம்புகள்",
+    "பேட்டரி ஆரோக்கிய மதிப்பெண்"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "பேட்டரி நலம்\nஒவ்வொரு விவரத்துக்கும் ஆதாரம், வரம்பு\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#BattAI",
+   "caption_link": "பேட்டரி நலம்\nஒவ்வொரு விவரத்துக்கும் ஆதாரம், வரம்பு\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "battai/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 185,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "బ్యాటరీ ఆరోగ్యం",
+   "line2": "ప్రతి వివరంలో మూలం, పరిమితి",
+   "chips": [
+    "ప్రతి వివరంలో మూలం, పరిమితి",
+    "స్పష్టమైన నియమాలు, మూలాలు, పరిమితులు",
+    "బ్యాటరీ ఆరోగ్య స్కోర్"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "బ్యాటరీ ఆరోగ్యం\nప్రతి వివరంలో మూలం, పరిమితి\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#BattAI",
+   "caption_link": "బ్యాటరీ ఆరోగ్యం\nప్రతి వివరంలో మూలం, పరిమితి\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "battai/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 252,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "คะแนนสุขภาพแบตเตอรี่",
+   "line2": "บอกแหล่งข้อมูลและข้อจำกัดชัดเจน",
+   "chips": [
+    "บอกแหล่งข้อมูลและข้อจำกัดชัดเจน",
+    "กฎ แหล่งข้อมูล และข้อจำกัดที่ชัดเจน",
+    "ปัจจัยที่สร้างคะแนน"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "คะแนนสุขภาพแบตเตอรี่\nบอกแหล่งข้อมูลและข้อจำกัดชัดเจน\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#BattAI",
+   "caption_link": "คะแนนสุขภาพแบตเตอรี่\nบอกแหล่งข้อมูลและข้อจำกัดชัดเจน\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "battai/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Pil sağlığı puanı",
+   "line2": "Her ayrıntıda kaynak ve sınır",
+   "chips": [
+    "Her ayrıntıda kaynak ve sınır",
+    "Açık kurallar, kaynaklar ve sınırlar",
+    "Puanı neler oluşturuyor"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Pil sağlığı puanı\nHer ayrıntıda kaynak ve sınır\n\n📲 Biyografideki bağlantıdan indirin\n\n#BattAI",
+   "caption_link": "Pil sağlığı puanı\nHer ayrıntıda kaynak ve sınır\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "battai/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 213,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "Оцінка батареї",
+   "line2": "Джерело й обмеження в кожного",
+   "chips": [
+    "Джерело й обмеження в кожного",
+    "Чіткі правила, джерела й обмеження",
+    "Оцінка стану акумулятора"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Оцінка батареї\nДжерело й обмеження в кожного\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#BattAI",
+   "caption_link": "Оцінка батареї\nДжерело й обмеження в кожного\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/uk.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "battai/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Điểm tình trạng pin",
+   "line2": "Mỗi mục nêu nguồn và giới hạn",
+   "chips": [
+    "Mỗi mục nêu nguồn và giới hạn",
+    "Quy tắc, nguồn và giới hạn rõ ràng",
+    "Yếu tố tạo nên điểm"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "Điểm tình trạng pin\nMỗi mục nêu nguồn và giới hạn\n\n📲 Tải về qua link ở bio\n\n#BattAI",
+   "caption_link": "Điểm tình trạng pin\nMỗi mục nêu nguồn và giới hạn\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "battai/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 49,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "电池健康打个分",
+   "line2": "每项都标明来源和限制",
+   "chips": [
+    "每项都标明来源和限制",
+    "规则、来源和限制都说清楚",
+    "电池健康评分"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "电池健康打个分\n每项都标明来源和限制\n\n📲 请到个人主页（bio）的链接下载\n\n#BattAI",
+   "caption_link": "电池健康打个分\n每项都标明来源和限制\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "battai/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 42,
+    "mixed_english_words": {
+     "1": [
+      "factor"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1] with mixed English strings [['factor']]"
+   ],
+   "line1": "電池健康打分數",
+   "line2": "每項來源與限制都標明",
+   "chips": [
+    "每項來源與限制都標明",
+    "規則、來源與限制都說清楚",
+    "電池健康分數"
+   ],
+   "layout": {
+    "phones": 1,
+    "family": "split",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 1.0,
+    "cards_over_screen": [],
+    "typography_check": {
+     "legacy": true,
+     "note": "BattAI 已核准樣張，沿用舊排版；副標 30／晶片 28／名稱 30 低於新硬下限，只記錄不改"
+    },
+    "layout_family": "split",
+    "layout_reason": "工具／系統／科技型：左文右機，資訊層次清楚"
+   },
+   "caption_instagram": "電池健康打分數\n每項來源與限制都標明\n\n📲 請到個人檔案（bio）的連結下載\n\n#BattAI",
+   "caption_link": "電池健康打分數\n每項來源與限制都標明\n\nApp Store: https://apps.apple.com/app/id6802423998\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/battai/zh-Hant.jpg"
+  }
+ ]
+}

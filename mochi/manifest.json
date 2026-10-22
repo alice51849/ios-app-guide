@@ -1,0 +1,6832 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "mochi",
+ "app_id": "6785004775",
+ "app_store_url": "https://apps.apple.com/app/id6785004775",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "mochi/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 71,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "قائمة مهام لطيفة",
+   "line2": "تذكيرات متكررة وودجت للشاشة",
+   "chips": [
+    "تذكيرات متكررة وودجت للشاشة",
+    "قوائم مهام سهلة وسريعة",
+    "تذكيرات تساعدك على عدم النسيان"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "orbit2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        318,
+        72,
+        761,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        120,
+        176,
+        959,
+        483
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.29,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        804,
+        584,
+        1040,
+        760
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.8,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        822,
+        269,
+        1053
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.88,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "قائمة مهام لطيفة\nتذكيرات متكررة وودجت للشاشة\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#Mochi",
+   "caption_link": "قائمة مهام لطيفة\nتذكيرات متكررة وودجت للشاشة\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "mochi/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "To-Dos, but Cute",
+   "line2": "Kawaii To-Do List & Chores",
+   "chips": [
+    "Kawaii To-Do List & Chores",
+    "Simple checklist for tasks and errands",
+    "Reminders that keep you on track"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        322,
+        72,
+        759,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        423
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.07,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        530,
+        223,
+        826
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.78,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        823,
+        785,
+        1040,
+        1036
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.16,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "To-Dos, but Cute\nKawaii To-Do List & Chores\n\n📲 Download via the link in bio\n\n#Mochi",
+   "caption_link": "To-Dos, but Cute\nKawaii To-Do List & Chores\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "mochi/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Tasques boniques",
+   "line2": "Tasques, recordatoris i widget",
+   "chips": [
+    "Tasques, recordatoris i widget",
+    "Checklist ràpida i agradable",
+    "Recordatoris per no oblidar res"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        336,
+        72,
+        744,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        989,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.11,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        526,
+        245,
+        741
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.09,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Tasques boniques\nTasques, recordatoris i widget\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#Mochi",
+   "caption_link": "Tasques boniques\nTasques, recordatoris i widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "mochi/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Roztomilé úkoly",
+   "line2": "Checklist, připomínky a widget",
+   "chips": [
+    "Checklist, připomínky a widget",
+    "Rychlý a přehledný checklist",
+    "Připomínky, které tě podrží"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        306,
+        72,
+        773,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        96,
+        176,
+        984,
+        436
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        542,
+        278,
+        748
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.01,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Roztomilé úkoly\nChecklist, připomínky a widget\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#Mochi",
+   "caption_link": "Roztomilé úkoly\nChecklist, připomínky a widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "mochi/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "En sød huskeliste",
+   "line2": "Tjekliste, opgaver og widget",
+   "chips": [
+    "Tjekliste, opgaver og widget",
+    "Enkel tjekliste til hverdagens opgaver",
+    "Påmindelser, så du husker det vigtige"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        321,
+        72,
+        759,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        997,
+        428
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.1,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        535,
+        275,
+        795
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.16,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "En sød huskeliste\nTjekliste, opgaver og widget\n\n📲 Download via linket i bio\n\n#Mochi",
+   "caption_link": "En sød huskeliste\nTjekliste, opgaver og widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "mochi/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Süße To-do-Liste",
+   "line2": "Checkliste, Aufgaben & Widget",
+   "chips": [
+    "Checkliste, Aufgaben & Widget",
+    "Einfache Checkliste für Aufgaben",
+    "Erinnerungen für wichtige Dinge"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        306,
+        72,
+        775,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        176,
+        991,
+        436
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.05,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        542,
+        249,
+        802
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.23,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Süße To-do-Liste\nCheckliste, Aufgaben & Widget\n\n📲 Download über den Link in der Bio\n\n#Mochi",
+   "caption_link": "Süße To-do-Liste\nCheckliste, Aufgaben & Widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "mochi/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 135,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Χαριτωμένη λίστα",
+   "line2": "Λίστα εργασιών & υπενθυμίσεις",
+   "chips": [
+    "Λίστα εργασιών & υπενθυμίσεις",
+    "Απλή checklist για κάθε μέρα",
+    "Υπενθυμίσεις για τα σημαντικά"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        802,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        89,
+        176,
+        991,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.16,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        521,
+        223,
+        781
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.66,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Χαριτωμένη λίστα\nΛίστα εργασιών & υπενθυμίσεις\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#Mochi",
+   "caption_link": "Χαριτωμένη λίστα\nΛίστα εργασιών & υπενθυμίσεις\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "mochi/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "To-Dos, but Cute",
+   "line2": "Kawaii To-Do List & Chores",
+   "chips": [
+    "Kawaii To-Do List & Chores",
+    "Simple checklist for tasks and errands",
+    "Reminders that help you stay on track"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        322,
+        72,
+        759,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        423
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.07,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        530,
+        223,
+        826
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.78,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        823,
+        785,
+        1040,
+        1036
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.93,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "To-Dos, but Cute\nKawaii To-Do List & Chores\n\n📲 Download via the link in bio\n\n#Mochi",
+   "caption_link": "To-Dos, but Cute\nKawaii To-Do List & Chores\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "mochi/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "To-Dos, but Cute",
+   "line2": "Kawaii To-Do List & Errands",
+   "chips": [
+    "Kawaii To-Do List & Errands",
+    "Fast checklist for tasks and errands",
+    "Helpful reminders for busy days"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        322,
+        72,
+        759,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        423
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        530,
+        223,
+        826
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.73,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        831,
+        785,
+        1040,
+        1045
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.2,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "To-Dos, but Cute\nKawaii To-Do List & Errands\n\n📲 Download via the link in bio\n\n#Mochi",
+   "caption_link": "To-Dos, but Cute\nKawaii To-Do List & Errands\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "mochi/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "To-Dos, but Cute",
+   "line2": "Kawaii To-Do List & Reminders",
+   "chips": [
+    "Kawaii To-Do List & Reminders",
+    "Simple checklist for tasks and errands",
+    "Reminders for important moments"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        322,
+        72,
+        759,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        423
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.05,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        530,
+        223,
+        826
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.78,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        823,
+        785,
+        1040,
+        1036
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.75,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "To-Dos, but Cute\nKawaii To-Do List & Reminders\n\n📲 Download via the link in bio\n\n#Mochi",
+   "caption_link": "To-Dos, but Cute\nKawaii To-Do List & Reminders\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "mochi/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "To-Dos, but Cute",
+   "line2": "Kawaii To-Do List & Chores",
+   "chips": [
+    "Kawaii To-Do List & Chores",
+    "Simple checklist for tasks and errands",
+    "Reminders that keep you on track"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        322,
+        72,
+        759,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        423
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.07,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        530,
+        223,
+        826
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.78,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        823,
+        785,
+        1040,
+        1036
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.16,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "To-Dos, but Cute\nKawaii To-Do List & Chores\n\n📲 Download via the link in bio\n\n#Mochi",
+   "caption_link": "To-Dos, but Cute\nKawaii To-Do List & Chores\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "mochi/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Una lista monísima",
+   "line2": "Checklist y tareas con widget",
+   "chips": [
+    "Checklist y tareas con widget",
+    "Checklist sencilla para el día a día",
+    "Recordatorios para lo importante"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        315,
+        72,
+        765,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        176,
+        986,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.22,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        228,
+        763
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.72,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Una lista monísima\nChecklist y tareas con widget\n\n📲 Descárgala desde el enlace de la bio\n\n#Mochi",
+   "caption_link": "Una lista monísima\nChecklist y tareas con widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "mochi/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Una lista súper cute",
+   "line2": "Tareas, pendientes y widget",
+   "chips": [
+    "Tareas, pendientes y widget",
+    "Checklist simple para pendientes",
+    "Recordatorios para no olvidar"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        310,
+        72,
+        771,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        242,
+        176,
+        839,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.35,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Una lista súper cute\nTareas, pendientes y widget\n\n📲 Descárgala desde el enlace de la bio\n\n#Mochi",
+   "caption_link": "Una lista súper cute\nTareas, pendientes y widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "mochi/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Söpö tehtävälista",
+   "line2": "Tehtävät, muistutukset, widget",
+   "chips": [
+    "Tehtävät, muistutukset, widget",
+    "Helppo checklist arkeen",
+    "Muistutukset tärkeille asioille"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        297,
+        72,
+        783,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        176,
+        1002,
+        428
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.03,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        535,
+        223,
+        741
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.05,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Söpö tehtävälista\nTehtävät, muistutukset, widget\n\n📲 Lataa bion linkistä\n\n#Mochi",
+   "caption_link": "Söpö tehtävälista\nTehtävät, muistutukset, widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "mochi/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Une liste trop cute",
+   "line2": "Tâches, rappels et widget",
+   "chips": [
+    "Tâches, rappels et widget",
+    "Checklist simple pour les tâches",
+    "Rappels pratiques au quotidien"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        321,
+        72,
+        759,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        91,
+        176,
+        989,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.23,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        521,
+        279,
+        727
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.06,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        842,
+        779,
+        1040,
+        1039
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.24,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Une liste trop cute\nTâches, rappels et widget\n\n📲 Téléchargez-la via le lien dans la bio\n\n#Mochi",
+   "caption_link": "Une liste trop cute\nTâches, rappels et widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "mochi/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Une liste toute mignonne",
+   "line2": "Checklist, tâches et rappels",
+   "chips": [
+    "Checklist, tâches et rappels",
+    "Checklist simple et rapide",
+    "Rappels pour rester sur la bonne voie"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        264,
+        72,
+        815,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.47,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        132,
+        176,
+        949,
+        558
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.32,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        652,
+        228,
+        867
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        840,
+        869,
+        1040,
+        1165
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.1,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Une liste toute mignonne\nChecklist, tâches et rappels\n\n📲 Téléchargez-la via le lien dans la bio\n\n#Mochi",
+   "caption_link": "Une liste toute mignonne\nChecklist, tâches et rappels\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "mochi/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 97,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "ક્યૂટ કામની યાદી",
+   "line2": "સુંદર કાર્યો અને વિજેટ",
+   "chips": [
+    "સુંદર કાર્યો અને વિજેટ",
+    "સરળ checklist અને task list",
+    "જરૂરી કામ માટે reminders"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "orbit2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        340,
+        72,
+        740,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.42,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        187,
+        176,
+        893,
+        488
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.64,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        589,
+        272,
+        813
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.38,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        815,
+        825,
+        1040,
+        995
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.65,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ક્યૂટ કામની યાદી\nસુંદર કાર્યો અને વિજેટ\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#Mochi",
+   "caption_link": "ક્યૂટ કામની યાદી\nસુંદર કાર્યો અને વિજેટ\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "mochi/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 105,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "רשימה חמודה ורגועה",
+   "line2": "צ'קליסט, תזכורות וווידג'ט",
+   "chips": [
+    "צ'קליסט, תזכורות וווידג'ט",
+    "צ׳קליסט פשוט ונוח",
+    "תזכורות לדברים החשובים"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "orbit2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        998,
+        407
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.34,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        855,
+        516,
+        1040,
+        686
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.4,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        775,
+        212,
+        995
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.04,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "רשימה חמודה ורגועה\nצ'קליסט, תזכורות וווידג'ט\n\n📲 הורדה דרך הקישור בביו\n\n#Mochi",
+   "caption_link": "רשימה חמודה ורגועה\nצ'קליסט, תזכורות וווידג'ט\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "mochi/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 125,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "प्यारी सी टू-डू लिस्ट",
+   "line2": "प्यारे काम और विजेट",
+   "chips": [
+    "प्यारे काम और विजेट",
+    "आसान checklist और task list",
+    "जरूरी कामों के reminders"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "orbit2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        330,
+        72,
+        751,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.41,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        129,
+        176,
+        951,
+        475
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.47,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        577,
+        272,
+        802
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.28,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        805,
+        817,
+        1040,
+        987
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.73,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "प्यारी सी टू-डू लिस्ट\nप्यारे काम और विजेट\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#Mochi",
+   "caption_link": "प्यारी सी टू-डू लिस्ट\nप्यारे काम और विजेट\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "mochi/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Slatki popis zadataka",
+   "line2": "Obaveze, podsjetnici i widget",
+   "chips": [
+    "Obaveze, podsjetnici i widget",
+    "Jednostavan checklist",
+    "Podsjetnici za važne obveze"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        338,
+        72,
+        743,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        216,
+        176,
+        865,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.52,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Slatki popis zadataka\nObaveze, podsjetnici i widget\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#Mochi",
+   "caption_link": "Slatki popis zadataka\nObaveze, podsjetnici i widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "mochi/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Cuki feladatlista",
+   "line2": "Teendők, emlékeztetők, widget",
+   "chips": [
+    "Teendők, emlékeztetők, widget",
+    "Egyszerű checklist a mindennapokra",
+    "Emlékeztetők fontos feladatokhoz"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        306,
+        72,
+        774,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        436
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.05,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Cuki feladatlista\nTeendők, emlékeztetők, widget\n\n📲 Töltsd le a bio linkjéről\n\n#Mochi",
+   "caption_link": "Cuki feladatlista\nTeendők, emlékeztetők, widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "mochi/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "To-do list yang lucu",
+   "line2": "To do list, pengingat & widget",
+   "chips": [
+    "To do list, pengingat & widget",
+    "Checklist mudah untuk tugas harian",
+    "Reminder agar tidak lupa"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        322,
+        72,
+        759,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.42,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        92,
+        176,
+        988,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.26,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        228,
+        808
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.47,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        836,
+        773,
+        1040,
+        988
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.44,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "To-do list yang lucu\nTo do list, pengingat & widget\n\n📲 Unduh lewat link di bio\n\n#Mochi",
+   "caption_link": "To-do list yang lucu\nTo do list, pengingat & widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "mochi/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Una lista carina",
+   "line2": "To do list, promemoria, widget",
+   "chips": [
+    "To do list, promemoria, widget",
+    "Checklist semplice e veloce",
+    "Promemoria per non dimenticare"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        344,
+        72,
+        736,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        112,
+        176,
+        968,
+        436
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.11,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        542,
+        228,
+        748
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.05,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Una lista carina\nTo do list, promemoria, widget\n\n📲 Scaricala dal link nella bio\n\n#Mochi",
+   "caption_link": "Una lista carina\nTo do list, promemoria, widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "mochi/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 50,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "やることをかわいく",
+   "line2": "やることリストをかわいく整える",
+   "chips": [
+    "やることリストをかわいく整える",
+    "直感的で使いやすいチェックリスト",
+    "忘れ物を防ぐリマインダー"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "orbit2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        334,
+        72,
+        746,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        101,
+        176,
+        979,
+        414
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.22,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "やることをかわいく\nやることリストをかわいく整える\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#Mochi",
+   "caption_link": "やることをかわいく\nやることリストをかわいく整える\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "mochi/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 143,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "ಮುದ್ದಾದ ಕೆಲಸದ ಪಟ್ಟಿ",
+   "line2": "ಮುದ್ದಾದ ಕೆಲಸ ಮತ್ತು ವಿಜೆಟ್",
+   "chips": [
+    "ಮುದ್ದಾದ ಕೆಲಸ ಮತ್ತು ವಿಜೆಟ್",
+    "ಸುಲಭ checklist ಮತ್ತು task list",
+    "ಮುಖ್ಯ ಕೆಲಸಗಳಿಗೆ reminders"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.258,
+    "family": "orbit2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        304,
+        72,
+        775,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.42,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        76,
+        176,
+        1003,
+        458
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.05,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        562,
+        215,
+        836
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.36,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        838,
+        807,
+        1040,
+        1027
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.01,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ಮುದ್ದಾದ ಕೆಲಸದ ಪಟ್ಟಿ\nಮುದ್ದಾದ ಕೆಲಸ ಮತ್ತು ವಿಜೆಟ್\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#Mochi",
+   "caption_link": "ಮುದ್ದಾದ ಕೆಲಸದ ಪಟ್ಟಿ\nಮುದ್ದಾದ ಕೆಲಸ ಮತ್ತು ವಿಜೆಟ್\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "mochi/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 35,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "귀여운 투두리스트",
+   "line2": "포근한 플래너로 하루 정리",
+   "chips": [
+    "포근한 플래너로 하루 정리",
+    "간단하고 직관적인 체크리스트",
+    "중요한 일을 위한 알림"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.266,
+    "family": "orbit2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        231,
+        72,
+        849,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        129,
+        176,
+        951,
+        431
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.27,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        537,
+        235,
+        748
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.05,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        837,
+        790,
+        1040,
+        956
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "귀여운 투두리스트\n포근한 플래너로 하루 정리\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#Mochi",
+   "caption_link": "귀여운 투두리스트\n포근한 플래너로 하루 정리\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "mochi/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 157,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "ക്യൂട്ട് ജോലി ലിസ്റ്റ്",
+   "line2": "ജോലികളും വിജറ്റും",
+   "chips": [
+    "ജോലികളും വിജറ്റും",
+    "എളുപ്പമുള്ള checklist, task list",
+    "പ്രധാന കാര്യങ്ങൾക്ക് reminders"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.258,
+    "family": "orbit2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        348,
+        72,
+        732,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.41,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        995,
+        458
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ക്യൂട്ട് ജോലി ലിസ്റ്റ്\nജോലികളും വിജറ്റും\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#Mochi",
+   "caption_link": "ക്യൂട്ട് ജോലി ലിസ്റ്റ്\nജോലികളും വിജറ്റും\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "mochi/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 87,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "क्यूट टू-डू लिस्ट",
+   "line2": "गोंडस कामे आणि विजेट",
+   "chips": [
+    "गोंडस कामे आणि विजेट",
+    "सोपी checklist आणि task list",
+    "महत्त्वाच्या कामांसाठी reminders"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "orbit2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        333,
+        72,
+        747,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.41,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        210,
+        176,
+        869,
+        474
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.65,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        576,
+        223,
+        854
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.34,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        831,
+        817,
+        1040,
+        1041
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.9,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "क्यूट टू-डू लिस्ट\nगोंडस कामे आणि विजेट\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#Mochi",
+   "caption_link": "क्यूट टू-डू लिस्ट\nगोंडस कामे आणि विजेट\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "mochi/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Senarai tugas comel",
+   "line2": "Tugas, peringatan dan widget",
+   "chips": [
+    "Tugas, peringatan dan widget",
+    "Checklist mudah untuk tugasan harian",
+    "Peringatan supaya tidak terlupa"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        322,
+        72,
+        757,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        200,
+        176,
+        881,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.25,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        228,
+        1006
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.21,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Senarai tugas comel\nTugas, peringatan dan widget\n\n📲 Muat turun melalui pautan dalam bio\n\n#Mochi",
+   "caption_link": "Senarai tugas comel\nTugas, peringatan dan widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "mochi/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Schattige takenlijst",
+   "line2": "Takenlijst, checklist, widget",
+   "chips": [
+    "Takenlijst, checklist, widget",
+    "Snelle en duidelijke checklist",
+    "Herinneringen voor belangrijke dingen"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        311,
+        72,
+        769,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        997,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.28,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        241,
+        718
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.11,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Schattige takenlijst\nTakenlijst, checklist, widget\n\n📲 Download via de link in bio\n\n#Mochi",
+   "caption_link": "Schattige takenlijst\nTakenlijst, checklist, widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "mochi/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "En søt huskeliste",
+   "line2": "Gjøremål, sjekkliste og widget",
+   "chips": [
+    "Gjøremål, sjekkliste og widget",
+    "Enkel checklist for hverdagen",
+    "Påminnelser for viktige ting"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        324,
+        72,
+        756,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        176,
+        987,
+        428
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.09,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        535,
+        255,
+        795
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.13,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "En søt huskeliste\nGjøremål, sjekkliste og widget\n\n📲 Last ned via lenken i bio\n\n#Mochi",
+   "caption_link": "En søt huskeliste\nGjøremål, sjekkliste og widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "mochi/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 64,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "ସୁନ୍ଦର କାମ ତାଲିକା",
+   "line2": "ସୁନ୍ଦର କାମ ଓ ୱିଜେଟ୍",
+   "chips": [
+    "ସୁନ୍ଦର କାମ ଓ ୱିଜେଟ୍",
+    "ସହଜ checklist ଏବଂ task list",
+    "ଦରକାରୀ reminders"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "orbit2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        339,
+        72,
+        741,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        116,
+        176,
+        965,
+        478
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.34,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        580,
+        224,
+        863
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.55,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        830,
+        819,
+        1040,
+        994
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.81,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ସୁନ୍ଦର କାମ ତାଲିକା\nସୁନ୍ଦର କାମ ଓ ୱିଜେଟ୍\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#Mochi",
+   "caption_link": "ସୁନ୍ଦର କାମ ତାଲିକା\nସୁନ୍ଦର କାମ ଓ ୱିଜେଟ୍\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "mochi/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 74,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "ਕਿਊਟ ਕੰਮਾਂ ਦੀ ਲਿਸਟ",
+   "line2": "ਪਿਆਰੇ ਕੰਮ ਤੇ ਵਿਜੇਟ",
+   "chips": [
+    "ਪਿਆਰੇ ਕੰਮ ਤੇ ਵਿਜੇਟ",
+    "ਆਸਾਨ checklist ਅਤੇ task list",
+    "ਜ਼ਰੂਰੀ ਕੰਮਾਂ ਲਈ reminders"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "orbit2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        320,
+        72,
+        761,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        101,
+        176,
+        979,
+        474
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.41,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        576,
+        267,
+        800
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.24,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        800,
+        817,
+        1040,
+        987
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.65,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ਕਿਊਟ ਕੰਮਾਂ ਦੀ ਲਿਸਟ\nਪਿਆਰੇ ਕੰਮ ਤੇ ਵਿਜੇਟ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#Mochi",
+   "caption_link": "ਕਿਊਟ ਕੰਮਾਂ ਦੀ ਲਿਸਟ\nਪਿਆਰੇ ਕੰਮ ਤੇ ਵਿਜੇਟ\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "mochi/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Urocza lista zadań",
+   "line2": "To do, checklista i widżet",
+   "chips": [
+    "To do, checklista i widżet",
+    "Prosta checklist do codziennych spraw",
+    "Przypomnienia o ważnych rzeczach"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        292,
+        72,
+        788,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        997,
+        414
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.17,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Urocza lista zadań\nTo do, checklista i widżet\n\n📲 Pobierz przez link w bio\n\n#Mochi",
+   "caption_link": "Urocza lista zadań\nTo do, checklista i widżet\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "mochi/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Tarefas mais fofas",
+   "line2": "Tarefas fofas e checklist",
+   "chips": [
+    "Tarefas fofas e checklist",
+    "Checklist simples para o dia a dia",
+    "Lembretes para não esquecer"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        362,
+        72,
+        718,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        176,
+        1000,
+        408
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.19,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        517,
+        228,
+        768
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.52,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        825,
+        776,
+        1040,
+        991
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.22,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Tarefas mais fofas\nTarefas fofas e checklist\n\n📲 Baixe pelo link na bio\n\n#Mochi",
+   "caption_link": "Tarefas mais fofas\nTarefas fofas e checklist\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "mochi/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Tarefas mais giras",
+   "line2": "Checklist de tarefas giras",
+   "chips": [
+    "Checklist de tarefas giras",
+    "Checklist simples para o dia a dia",
+    "Lembretes para o que importa"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        324,
+        72,
+        755,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        998,
+        419
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.17,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        526,
+        228,
+        777
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.22,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        825,
+        783,
+        1040,
+        998
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.06,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Tarefas mais giras\nChecklist de tarefas giras\n\n📲 Download via the link in bio\n\n#Mochi",
+   "caption_link": "Tarefas mais giras\nChecklist de tarefas giras\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "mochi/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Listă drăguță de sarcini",
+   "line2": "Sarcini, memento-uri și widget",
+   "chips": [
+    "Sarcini, memento-uri și widget",
+    "Checklist simplu pentru fiecare zi",
+    "Mementouri pentru lucruri importante"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        330,
+        72,
+        749,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        172,
+        176,
+        907,
+        624
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.47,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        711,
+        228,
+        962
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.12,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Listă drăguță de sarcini\nSarcini, memento-uri și widget\n\n📲 Descarcă din linkul din bio\n\n#Mochi",
+   "caption_link": "Listă drăguță de sarcini\nSarcini, memento-uri și widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "mochi/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 123,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Милый список дел",
+   "line2": "Чек-лист, задачи и виджет",
+   "chips": [
+    "Чек-лист, задачи и виджет",
+    "Простая checklist для дел",
+    "Напоминания о важном"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        280,
+        72,
+        799,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        89,
+        176,
+        991,
+        401
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.26,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        510,
+        223,
+        722
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.06,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Милый список дел\nЧек-лист, задачи и виджет\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#Mochi",
+   "caption_link": "Милый список дел\nЧек-лист, задачи и виджет\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "mochi/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Milé úlohy",
+   "line2": "Checklist, pripomienky, widget",
+   "chips": [
+    "Checklist, pripomienky, widget",
+    "Jednoduchý checklist na každý deň",
+    "Pripomienky pre dôležité veci"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        352,
+        72,
+        728,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        246,
+        176,
+        834,
+        501
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.71,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        600,
+        282,
+        815
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.37,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Milé úlohy\nChecklist, pripomienky, widget\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#Mochi",
+   "caption_link": "Milé úlohy\nChecklist, pripomienky, widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "mochi/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Ljubek seznam opravil",
+   "line2": "Ljubki opravki in gradnik",
+   "chips": [
+    "Ljubki opravki in gradnik",
+    "Preprost checklist za vsak dan",
+    "Opomniki za pomembne stvari"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        318,
+        72,
+        763,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        131,
+        176,
+        949,
+        557
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.46,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        651,
+        223,
+        902
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.46,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Ljubek seznam opravil\nLjubki opravki in gradnik\n\n📲 Prenesite prek povezave v biu\n\n#Mochi",
+   "caption_link": "Ljubek seznam opravil\nLjubki opravki in gradnik\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "mochi/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "En söt att-göra-lista",
+   "line2": "Checklista, sysslor & widget",
+   "chips": [
+    "Checklista, sysslor & widget",
+    "Enkel checklist för vardagen",
+    "Påminnelser för viktiga saker"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        302,
+        72,
+        778,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        995,
+        403
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.22,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        512,
+        235,
+        772
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.41,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "En söt att-göra-lista\nChecklista, sysslor & widget\n\n📲 Ladda ner via länken i bion\n\n#Mochi",
+   "caption_link": "En söt att-göra-lista\nChecklista, sysslor & widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "mochi/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 135,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "க்யூட் பட்டியல்",
+   "line2": "அழகான பணிகள் விட்ஜெட்",
+   "chips": [
+    "அழகான பணிகள் விட்ஜெட்",
+    "எளிய checklist மற்றும் task list",
+    "முக்கிய வேலைகளுக்கு reminders"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "orbit2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        264,
+        72,
+        817,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        108,
+        176,
+        971,
+        486
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.24,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        587,
+        223,
+        865
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.55,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "க்யூட் பட்டியல்\nஅழகான பணிகள் விட்ஜெட்\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#Mochi",
+   "caption_link": "க்யூட் பட்டியல்\nஅழகான பணிகள் விட்ஜெட்\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "mochi/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 155,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "క్యూట్ పనుల లిస్ట్",
+   "line2": "ముద్దైన పనులు విడ్జెట్",
+   "chips": [
+    "ముద్దైన పనులు విడ్జెట్",
+    "సులభమైన checklist మరియు task list",
+    "ముఖ్యమైన పనులకు reminders"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        320,
+        72,
+        761,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.42,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        122,
+        176,
+        958,
+        498
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.28,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        598,
+        231,
+        874
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.44,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        831,
+        832,
+        1040,
+        1054
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.74,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "క్యూట్ పనుల లిస్ట్\nముద్దైన పనులు విడ్జెట్\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#Mochi",
+   "caption_link": "క్యూట్ పనుల లిస్ట్\nముద్దైన పనులు విడ్జెట్\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "mochi/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 135,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.205<0.24; orbit2×1.08: screen_area=0.221<0.24; orbit2×1.16: screen_area=0.237<0.24)"
+   ],
+   "line1": "ลิสต์สิ่งที่ต้องทำแสนน่ารัก",
+   "line2": "สิ่งที่ต้องทำ พร้อมวิดเจ็ต",
+   "chips": [
+    "สิ่งที่ต้องทำ พร้อมวิดเจ็ต",
+    "เช็กลิสต์ง่ายสำหรับทุกวัน",
+    "เตือนความจำเรื่องสำคัญ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.255,
+    "family": "orbit2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 1.37,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        346,
+        72,
+        733,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.41,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        232,
+        176,
+        849,
+        633
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.61,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        719,
+        187,
+        1008
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.11,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.5
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "ลิสต์สิ่งที่ต้องทำแสนน่ารัก\nสิ่งที่ต้องทำ พร้อมวิดเจ็ต\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#Mochi",
+   "caption_link": "ลิสต์สิ่งที่ต้องทำแสนน่ารัก\nสิ่งที่ต้องทำ พร้อมวิดเจ็ต\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "mochi/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Sevimli yapılacaklar",
+   "line2": "Yapılacaklar listesi ve widget",
+   "chips": [
+    "Yapılacaklar listesi ve widget",
+    "Kolay checklist ve görev listesi",
+    "Önemli işler için hatırlatıcılar"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        337,
+        72,
+        743,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        192,
+        176,
+        887,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.27,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        223,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.0,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Sevimli yapılacaklar\nYapılacaklar listesi ve widget\n\n📲 Biyografideki bağlantıdan indirin\n\n#Mochi",
+   "caption_link": "Sevimli yapılacaklar\nYapılacaklar listesi ve widget\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "mochi/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 157,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.229<0.24)"
+   ],
+   "line1": "Милий список справ",
+   "line2": "Чекліст, завдання та віджет",
+   "chips": [
+    "Чекліст, завдання та віджет",
+    "Простий checklist для щоденних справ",
+    "Щоденний планер, agenda і розклад"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        264,
+        72,
+        815,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        160,
+        176,
+        921,
+        554
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.18,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        648,
+        257,
+        953
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.91,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Милий список справ\nЧекліст, завдання та віджет\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#Mochi",
+   "caption_link": "Милий список справ\nЧекліст, завдання та віджет\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "mochi/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 36,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.215<0.24; orbit2×1.08: screen_area=0.232<0.24)"
+   ],
+   "line1": "پیاری سی کاموں کی لسٹ",
+   "line2": "پیارے کام اور ویجٹ",
+   "chips": [
+    "پیارے کام اور ویجٹ",
+    "آسان checklist اور task list",
+    "ضروری کاموں کے reminders"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "orbit2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        311,
+        72,
+        769,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        152,
+        176,
+        929,
+        599
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.09,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        857,
+        688,
+        1040,
+        956
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.24,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.4
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "پیاری سی کاموں کی لسٹ\nپیارے کام اور ویجٹ\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#Mochi",
+   "caption_link": "پیاری سی کاموں کی لسٹ\nپیارے کام اور ویجٹ\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "mochi/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.207<0.24; orbit2×1.08: screen_area=0.223<0.24; orbit2×1.16: screen_area=0.239<0.24)"
+   ],
+   "line1": "Việc cần làm dễ thương",
+   "line2": "Checklist đơn giản cho mỗi ngày",
+   "chips": [
+    "Checklist đơn giản cho mỗi ngày",
+    "Nhắc nhở để không bỏ lỡ",
+    "Daily planner, agenda và lịch trình"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.37,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        274,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        190,
+        176,
+        890,
+        628
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.44,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        715,
+        191,
+        966
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.06,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        873,
+        912,
+        1040,
+        1208
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.65,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Việc cần làm dễ thương\nChecklist đơn giản cho mỗi ngày\n\n📲 Tải về qua link ở bio\n\n#Mochi",
+   "caption_link": "Việc cần làm dễ thương\nChecklist đơn giản cho mỗi ngày\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "mochi/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 31,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "待办也能很可爱",
+   "line2": "治愈手帐・购物清单小组件",
+   "chips": [
+    "治愈手帐・购物清单小组件",
+    "简单顺手的任务清单",
+    "提醒与每日计划"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.266,
+    "family": "orbit2",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        342,
+        72,
+        739,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.42,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        158,
+        176,
+        921,
+        433
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.33,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        539,
+        250,
+        706
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.06,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        867,
+        791,
+        1040,
+        958
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.07,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "待办也能很可爱\n治愈手帐・购物清单小组件\n\n📲 请到个人主页（bio）的链接下载\n\n#Mochi",
+   "caption_link": "待办也能很可爱\n治愈手帐・购物清单小组件\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "mochi/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 35,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "待辦也能很可愛",
+   "line2": "療癒手帳・購物清單小工具",
+   "chips": [
+    "療癒手帳・購物清單小工具",
+    "直覺好用的待辦清單",
+    "提醒與每日計畫"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.266,
+    "family": "orbit2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        342,
+        72,
+        739,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.41,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        158,
+        176,
+        923,
+        433
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.34,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        539,
+        250,
+        706
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.06,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        866,
+        791,
+        1040,
+        958
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.04,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "待辦也能很可愛\n療癒手帳・購物清單小工具\n\n📲 請到個人檔案（bio）的連結下載\n\n#Mochi",
+   "caption_link": "待辦也能很可愛\n療癒手帳・購物清單小工具\n\nApp Store: https://apps.apple.com/app/id6785004775\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/mochi/zh-Hant.jpg"
+  }
+ ]
+}

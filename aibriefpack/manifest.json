@@ -1,0 +1,7025 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "aibriefpack",
+ "app_id": "6791658210",
+ "app_store_url": "https://apps.apple.com/app/id6791658210",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "aibriefpack/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 223,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.201<0.24; closeup2×1.08: screen_area=0.217<0.24; closeup2×1.16: screen_area=0.232<0.24)"
+   ],
+   "line1": "سياق أفضل، إجابات أفضل",
+   "line2": "لقطات وملفات وملاحظات في موجز واحد",
+   "chips": [
+    "لقطات وملفات وملاحظات في موجز واحد",
+    "حوّل ملفات PDF إلى برومبت",
+    "عناوين منظمة وتنسيق جاهز للمصادر"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        290,
+        72,
+        790,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        212,
+        184,
+        868,
+        715
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.21,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "سياق أفضل، إجابات أفضل\nلقطات وملفات وملاحظات في موجز واحد\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#AIBrief",
+   "caption_link": "سياق أفضل، إجابات أفضل\nلقطات وملفات وملاحظات في موجز واحد\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "aibriefpack/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "Give AI the Full Picture",
+   "line2": "Screenshots, PDFs and notes in one brief",
+   "chips": [
+    "Screenshots, PDFs and notes in one brief",
+    "Summarize PDF & Screenshots",
+    "Build context once. Reuse it anytime."
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        507,
+        807
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.87,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        831,
+        445,
+        951
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.93,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        975,
+        506,
+        1104
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.16,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Give AI the Full Picture\nScreenshots, PDFs and notes in one brief\n\n📲 Download via the link in bio\n\n#AIBrief",
+   "caption_link": "Give AI the Full Picture\nScreenshots, PDFs and notes in one brief\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "aibriefpack/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Millor context",
+   "line2": "Captures, PDF i notes en un resum",
+   "chips": [
+    "Captures, PDF i notes en un resum",
+    "Crea prompts des de fitxers",
+    "Plantilles creades amb un propòsit"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        522,
+        684
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.25,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        708,
+        410,
+        827
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.15,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        851,
+        477,
+        980
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Millor context\nCaptures, PDF i notes en un resum\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#AIBrief",
+   "caption_link": "Millor context\nCaptures, PDF i notes en un resum\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "aibriefpack/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Vše v jednom podkladu",
+   "line2": "Snímky, PDF, poznámky i odkazy",
+   "chips": [
+    "Snímky, PDF, poznámky i odkazy",
+    "Prompty ze souborů a PDF"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        533,
+        673
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.43,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        697,
+        425,
+        816
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.41,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Vše v jednom podkladu\nSnímky, PDF, poznámky i odkazy\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#AIBrief",
+   "caption_link": "Vše v jednom podkladu\nSnímky, PDF, poznámky i odkazy\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "aibriefpack/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Ét klart brief til AI",
+   "line2": "Skærmbilleder, PDF'er og noter",
+   "chips": [
+    "Skærmbilleder, PDF'er og noter",
+    "Prompts fra filer og PDF",
+    "Find fakta, konflikter og åbne spørgsmål"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        505,
+        771
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.59,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        795,
+        377,
+        924
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.88,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        948,
+        540,
+        1077
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.13,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Ét klart brief til AI\nSkærmbilleder, PDF'er og noter\n\n📲 Download via linket i bio\n\n#AIBrief",
+   "caption_link": "Ét klart brief til AI\nSkærmbilleder, PDF'er og noter\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "aibriefpack/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Klarer Kontext für KI",
+   "line2": "Screenshots, PDFs, Notizen in einem Briefing",
+   "chips": [
+    "Screenshots, PDFs, Notizen in einem Briefing",
+    "Prompts aus Dateien und PDFs",
+    "Zweckgebundene Vorlagen"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        521,
+        796
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.89,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        820,
+        481,
+        939
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.02,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        963,
+        482,
+        1092
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.24,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Klarer Kontext für KI\nScreenshots, PDFs, Notizen in einem Briefing\n\n📲 Download über den Link in der Bio\n\n#AIBrief",
+   "caption_link": "Klarer Kontext für KI\nScreenshots, PDFs, Notizen in einem Briefing\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "aibriefpack/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 399,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Πλήρες πλαίσιο για AI",
+   "line2": "Στιγμιότυπα, PDF, σημειώσεις μαζί",
+   "chips": [
+    "Στιγμιότυπα, PDF, σημειώσεις μαζί",
+    "Prompts από αρχεία και PDF",
+    "Πρότυπα ειδικού σκοπού"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        524,
+        798
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        822,
+        434,
+        952
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.61,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        976,
+        447,
+        1097
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.02,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Πλήρες πλαίσιο για AI\nΣτιγμιότυπα, PDF, σημειώσεις μαζί\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#AIBrief",
+   "caption_link": "Πλήρες πλαίσιο για AI\nΣτιγμιότυπα, PDF, σημειώσεις μαζί\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "aibriefpack/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Better Context for AI",
+   "line2": "Screenshots, PDFs and notes in one brief",
+   "chips": [
+    "Screenshots, PDFs and notes in one brief",
+    "Prompt Builder for Files & PDF",
+    "Build context once. Reuse it anytime."
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        534,
+        801
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        825,
+        439,
+        945
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.34,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        969,
+        506,
+        1098
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.13,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Better Context for AI\nScreenshots, PDFs and notes in one brief\n\n📲 Download via the link in bio\n\n#AIBrief",
+   "caption_link": "Better Context for AI\nScreenshots, PDFs and notes in one brief\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "aibriefpack/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Better Context for AI",
+   "line2": "Screenshots, PDFs and notes in one brief",
+   "chips": [
+    "Screenshots, PDFs and notes in one brief",
+    "Prompt Builder for Files & PDF",
+    "Build context once. Reuse it anytime."
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        534,
+        801
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        825,
+        439,
+        945
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.34,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        969,
+        506,
+        1098
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.13,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Better Context for AI\nScreenshots, PDFs and notes in one brief\n\n📲 Download via the link in bio\n\n#AIBrief",
+   "caption_link": "Better Context for AI\nScreenshots, PDFs and notes in one brief\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "aibriefpack/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Better Context for AI",
+   "line2": "Screenshots, PDFs and notes in one brief",
+   "chips": [
+    "Screenshots, PDFs and notes in one brief",
+    "Prompt Builder for Files & PDF",
+    "Build context once. Reuse it anytime."
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        534,
+        801
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        825,
+        439,
+        945
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.34,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        969,
+        506,
+        1098
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.13,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Better Context for AI\nScreenshots, PDFs and notes in one brief\n\n📲 Download via the link in bio\n\n#AIBrief",
+   "caption_link": "Better Context for AI\nScreenshots, PDFs and notes in one brief\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "aibriefpack/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Give AI the Full Picture",
+   "line2": "Screenshots, PDFs and notes in one brief",
+   "chips": [
+    "Screenshots, PDFs and notes in one brief",
+    "Summarize PDF & Screenshots",
+    "Build context once. Reuse it anytime."
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        507,
+        807
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.87,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        831,
+        445,
+        951
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.93,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        975,
+        506,
+        1104
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.16,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Give AI the Full Picture\nScreenshots, PDFs and notes in one brief\n\n📲 Download via the link in bio\n\n#AIBrief",
+   "caption_link": "Give AI the Full Picture\nScreenshots, PDFs and notes in one brief\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "aibriefpack/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Todo listo para la IA",
+   "line2": "Capturas, PDF, notas y enlaces juntos",
+   "chips": [
+    "Capturas, PDF, notas y enlaces juntos",
+    "Crea prompts desde archivos",
+    "Plantillas diseñadas para cada propósito"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        533,
+        728
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.64,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        752,
+        432,
+        871
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.64,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        895,
+        521,
+        1025
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.86,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Todo listo para la IA\nCapturas, PDF, notas y enlaces juntos\n\n📲 Descárgala desde el enlace de la bio\n\n#AIBrief",
+   "caption_link": "Todo listo para la IA\nCapturas, PDF, notas y enlaces juntos\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "aibriefpack/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Todo listo para la IA",
+   "line2": "Capturas, PDF, notas y enlaces juntos",
+   "chips": [
+    "Capturas, PDF, notas y enlaces juntos",
+    "Crea prompts desde archivos",
+    "Plantillas diseñadas para tu propósito"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        533,
+        728
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.64,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        752,
+        432,
+        871
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.64,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        895,
+        518,
+        1025
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.85,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Todo listo para la IA\nCapturas, PDF, notas y enlaces juntos\n\n📲 Descárgala desde el enlace de la bio\n\n#AIBrief",
+   "caption_link": "Todo listo para la IA\nCapturas, PDF, notas y enlaces juntos\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "aibriefpack/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Selkeä kooste tekoälylle",
+   "line2": "Kuvakaappaukset, PDF:t ja muistiot",
+   "chips": [
+    "Kuvakaappaukset, PDF:t ja muistiot",
+    "Tee prompteja tiedostoista",
+    "Käyttötarkoitukseen tehdyt mallit"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        258,
+        72,
+        821,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.59,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        154,
+        184,
+        927,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.1,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Selkeä kooste tekoälylle\nKuvakaappaukset, PDF:t ja muistiot\n\n📲 Lataa bion linkistä\n\n#AIBrief",
+   "caption_link": "Selkeä kooste tekoälylle\nKuvakaappaukset, PDF:t ja muistiot\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "aibriefpack/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Un brief clair pour l'IA",
+   "line2": "Captures, PDF, notes et liens réunis",
+   "chips": [
+    "Captures, PDF, notes et liens réunis",
+    "Prompts depuis PDF et fichiers",
+    "Modèles conçus sur mesure"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        538,
+        763
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        787,
+        446,
+        907
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.57,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        931,
+        451,
+        1051
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.94,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Un brief clair pour l'IA\nCaptures, PDF, notes et liens réunis\n\n📲 Téléchargez-la via le lien dans la bio\n\n#AIBrief",
+   "caption_link": "Un brief clair pour l'IA\nCaptures, PDF, notes et liens réunis\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "aibriefpack/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Un brief clair pour l'IA",
+   "line2": "Captures, PDF, notes et liens réunis",
+   "chips": [
+    "Captures, PDF, notes et liens réunis",
+    "Prompts depuis PDF et fichiers",
+    "Modèles conçus sur mesure"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        538,
+        763
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        787,
+        446,
+        907
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.57,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        931,
+        451,
+        1051
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.94,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Un brief clair pour l'IA\nCaptures, PDF, notes et liens réunis\n\n📲 Téléchargez-la via le lien dans la bio\n\n#AIBrief",
+   "caption_link": "Un brief clair pour l'IA\nCaptures, PDF, notes et liens réunis\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "aibriefpack/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 270,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "એઆઈ માટે સ્પષ્ટ બ્રીફ",
+   "line2": "સ્ક્રીનશૉટ, પીડીએફ, નોંધો અને લિંક એકસાથે",
+   "chips": [
+    "સ્ક્રીનશૉટ, પીડીએફ, નોંધો અને લિંક એકસાથે",
+    "ફાઇલ, PDF પરથી પ્રોમ્પ્ટ",
+    "હેતુપૂર્ણ નમૂનાઓ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        526,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.01,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        527,
+        637
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        661,
+        503,
+        752
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.75,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        776,
+        397,
+        867
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.85,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "એઆઈ માટે સ્પષ્ટ બ્રીફ\nસ્ક્રીનશૉટ, પીડીએફ, નોંધો અને લિંક એકસાથે\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#AIBrief",
+   "caption_link": "એઆઈ માટે સ્પષ્ટ બ્રીફ\nસ્ક્રીનશૉટ, પીડીએફ, નોંધો અને લિંક એકસાથે\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "aibriefpack/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 242,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "תקציר אחד וברור",
+   "line2": "צילומי מסך, קבצים, הערות וקישורים",
+   "chips": [
+    "צילומי מסך, קבצים, הערות וקישורים",
+    "פרומפטים מקבצים ומ-PDF",
+    "מצא עובדות, סתירות ושאלות פתוחות"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        785,
+        72,
+        1008,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.61,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        558,
+        184,
+        1008,
+        580
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.87,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        661,
+        604,
+        1008,
+        731
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.45,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        582,
+        755,
+        1008,
+        876
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.56,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "תקציר אחד וברור\nצילומי מסך, קבצים, הערות וקישורים\n\n📲 הורדה דרך הקישור בביו\n\n#AIBrief",
+   "caption_link": "תקציר אחד וברור\nצילומי מסך, קבצים, הערות וקישורים\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "aibriefpack/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 267,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "बेहतर संदर्भ, बेहतर उत्तर",
+   "line2": "स्क्रीनशॉट, PDF, नोट्स और लिंक एक ब्रीफ़ में",
+   "chips": [
+    "स्क्रीनशॉट, PDF, नोट्स और लिंक एक ब्रीफ़ में",
+    "फ़ाइल, PDF से प्रॉम्प्ट बनाएँ",
+    "संरचित शीर्षक और स्रोत-तैयार स्वरूपण"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        533,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.89,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        539,
+        819
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        843,
+        366,
+        975
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.79,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        999,
+        436,
+        1135
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.66,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "बेहतर संदर्भ, बेहतर उत्तर\nस्क्रीनशॉट, PDF, नोट्स और लिंक एक ब्रीफ़ में\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#AIBrief",
+   "caption_link": "बेहतर संदर्भ, बेहतर उत्तर\nस्क्रीनशॉट, PDF, नोट्स और लिंक एक ब्रीफ़ में\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "aibriefpack/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Jedan jasan sažetak",
+   "line2": "Snimke zaslona, PDF, bilješke, poveznice",
+   "chips": [
+    "Snimke zaslona, PDF, bilješke, poveznice",
+    "Promptovi iz datoteka i PDF-a",
+    "Namjenski predlošci"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        535,
+        818
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.93,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        842,
+        458,
+        962
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.67,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        986,
+        526,
+        1075
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.37,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Jedan jasan sažetak\nSnimke zaslona, PDF, bilješke, poveznice\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#AIBrief",
+   "caption_link": "Jedan jasan sažetak\nSnimke zaslona, PDF, bilješke, poveznice\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "aibriefpack/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Egyetlen összefoglaló",
+   "line2": "Képernyőképek, PDF, jegyzetek, linkek",
+   "chips": [
+    "Képernyőképek, PDF, jegyzetek, linkek",
+    "Promptok fájlokból és PDF-ből",
+    "Célorientált sablonok"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        266,
+        72,
+        815,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.64,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        194,
+        184,
+        885,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.36,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Egyetlen összefoglaló\nKépernyőképek, PDF, jegyzetek, linkek\n\n📲 Töltsd le a bio linkjéről\n\n#AIBrief",
+   "caption_link": "Egyetlen összefoglaló\nKépernyőképek, PDF, jegyzetek, linkek\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "aibriefpack/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Konteks jelas untuk AI",
+   "line2": "Tangkapan layar, PDF, catatan jadi satu",
+   "chips": [
+    "Tangkapan layar, PDF, catatan jadi satu",
+    "Buat prompt dari file & PDF",
+    "Berstruktur judul dan format siap sumber"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        531,
+        752
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.91,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        776,
+        418,
+        895
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.06,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Konteks jelas untuk AI\nTangkapan layar, PDF, catatan jadi satu\n\n📲 Unduh lewat link di bio\n\n#AIBrief",
+   "caption_link": "Konteks jelas untuk AI\nTangkapan layar, PDF, catatan jadi satu\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "aibriefpack/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Un brief chiaro per l'IA",
+   "line2": "Screenshot, PDF, note e link insieme",
+   "chips": [
+    "Screenshot, PDF, note e link insieme",
+    "Crea prompt da file e PDF",
+    "Trova fatti, conflitti e domande aperte"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        533,
+        786
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.75,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        810,
+        392,
+        929
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.77,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        953,
+        505,
+        1082
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.13,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Un brief chiaro per l'IA\nScreenshot, PDF, note e link insieme\n\n📲 Scaricala dal link nella bio\n\n#AIBrief",
+   "caption_link": "Un brief chiaro per l'IA\nScreenshot, PDF, note e link insieme\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "aibriefpack/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 190,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "AIに渡す資料を1つに",
+   "line2": "スクショ・PDF・メモ・リンクを整理",
+   "chips": [
+    "スクショ・PDF・メモ・リンクを整理",
+    "ファイル・PDF・スクショの要約を作成",
+    "事実、矛盾、および未解決の質問を検出する"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.266,
+    "family": "closeup2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        263,
+        72,
+        817,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.75,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        184,
+        997,
+        416
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.38,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        168,
+        440,
+        913,
+        526
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.72,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "AIに渡す資料を1つに\nスクショ・PDF・メモ・リンクを整理\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#AIBrief",
+   "caption_link": "AIに渡す資料を1つに\nスクショ・PDF・メモ・リンクを整理\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "aibriefpack/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 360,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: chip: vertical margin 1146/58)"
+   ],
+   "line1": "ಎಐಗೆ ಸ್ಪಷ್ಟ ಬ್ರೀಫ್",
+   "line2": "ಸ್ಕ್ರೀನ್‌ಶಾಟ್, ಪಿಡಿಎಫ್, ಟಿಪ್ಪಣಿ, ಲಿಂಕ್",
+   "chips": [
+    "ಸ್ಕ್ರೀನ್‌ಶಾಟ್, ಪಿಡಿಎಫ್, ಟಿಪ್ಪಣಿ, ಲಿಂಕ್",
+    "ಫೈಲ್, PDF ನಿಂದ ಪ್ರಾಂಪ್ಟ್ ರಚನೆ",
+    "ಉದ್ದೇಶಪೂರ್ವಕವಾಗಿ ರೂಪಿಸಿದ ಟೆಂಪ್ಲೇಟ್ಗಳು"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.273,
+    "family": "closeup2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        802,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.64,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        106,
+        184,
+        974,
+        506
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ಎಐಗೆ ಸ್ಪಷ್ಟ ಬ್ರೀಫ್\nಸ್ಕ್ರೀನ್‌ಶಾಟ್, ಪಿಡಿಎಫ್, ಟಿಪ್ಪಣಿ, ಲಿಂಕ್\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#AIBrief",
+   "caption_link": "ಎಐಗೆ ಸ್ಪಷ್ಟ ಬ್ರೀಫ್\nಸ್ಕ್ರೀನ್‌ಶಾಟ್, ಪಿಡಿಎಫ್, ಟಿಪ್ಪಣಿ, ಲಿಂಕ್\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "aibriefpack/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 151,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "AI용 브리프 하나로",
+   "line2": "스크린샷·PDF·메모·링크를 정리",
+   "chips": [
+    "스크린샷·PDF·메모·링크를 정리",
+    "파일·PDF로 프롬프트 만들기",
+    "사실, 충돌, 미해결 질문 찾기"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "closeup2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        288,
+        72,
+        793,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.68,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        112,
+        184,
+        967,
+        439
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.47,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        272,
+        463,
+        807,
+        548
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.88,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "AI용 브리프 하나로\n스크린샷·PDF·메모·링크를 정리\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#AIBrief",
+   "caption_link": "AI용 브리프 하나로\n스크린샷·PDF·메모·링크를 정리\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "aibriefpack/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Context",
+      "links"
+     ],
+     "0": [
+      "context"
+     ],
+     "2": [
+      "Optional",
+      "optional"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Context', 'links'], ['context'], ['Optional', 'optional']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "Give AI the Full Picture",
+   "line2": "Screenshots, PDFs and notes in one brief",
+   "chips": [
+    "Screenshots, PDFs and notes in one brief",
+    "Summarize PDF & Screenshots",
+    "Build context once. Reuse it anytime."
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        507,
+        807
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.87,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        831,
+        445,
+        951
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.93,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        975,
+        506,
+        1104
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.16,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Give AI the Full Picture\nScreenshots, PDFs and notes in one brief\n\n📲 Download via the link in bio\n\n#AIBrief",
+   "caption_link": "Give AI the Full Picture\nScreenshots, PDFs and notes in one brief\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "aibriefpack/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 298,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "सगळा संदर्भ एका ब्रीफमध्ये",
+   "line2": "स्क्रीनशॉट, PDF, नोट्स आणि लिंक",
+   "chips": [
+    "स्क्रीनशॉट, PDF, नोट्स आणि लिंक",
+    "फाइल आणि PDF मधून प्रॉम्प्ट",
+    "तथ्ये, विरोधाभास आणि खुले प्रश्न शोधा"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        523,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.95,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        538,
+        822
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.75,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        846,
+        401,
+        991
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        1015,
+        454,
+        1161
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.07,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "सगळा संदर्भ एका ब्रीफमध्ये\nस्क्रीनशॉट, PDF, नोट्स आणि लिंक\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#AIBrief",
+   "caption_link": "सगळा संदर्भ एका ब्रीफमध्ये\nस्क्रीनशॉट, PDF, नोट्स आणि लिंक\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "aibriefpack/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Konteks jelas untuk AI",
+   "line2": "Tangkapan skrin, PDF, nota jadi satu",
+   "chips": [
+    "Tangkapan skrin, PDF, nota jadi satu",
+    "Prompt daripada fail & PDF",
+    "Cari fakta, konflik, dan soalan terbuka"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        531,
+        694
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.42,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        718,
+        467,
+        838
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.76,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        862,
+        510,
+        982
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.61,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Konteks jelas untuk AI\nTangkapan skrin, PDF, nota jadi satu\n\n📲 Muat turun melalui pautan dalam bio\n\n#AIBrief",
+   "caption_link": "Konteks jelas untuk AI\nTangkapan skrin, PDF, nota jadi satu\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "aibriefpack/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Heldere context voor AI",
+   "line2": "Screenshots, pdf's en notities in één brief",
+   "chips": [
+    "Screenshots, pdf's en notities in één brief",
+    "Prompts maken van bestanden",
+    "Zoek feiten, conflicten en open vragen"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        530,
+        806
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.92,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        830,
+        449,
+        950
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.14,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Heldere context voor AI\nScreenshots, pdf's en notities in één brief\n\n📲 Download via de link in bio\n\n#AIBrief",
+   "caption_link": "Heldere context voor AI\nScreenshots, pdf's en notities in één brief\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "aibriefpack/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.224<0.24)"
+   ],
+   "line1": "Én tydelig brief til KI",
+   "line2": "Skjermbilder, PDF-er og notater",
+   "chips": [
+    "Skjermbilder, PDF-er og notater",
+    "Prompts fra filer og PDF",
+    "Finn fakta, konflikter og åpne spørsmål"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.242,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        797,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.68,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        258,
+        184,
+        823,
+        648
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.33,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Én tydelig brief til KI\nSkjermbilder, PDF-er og notater\n\n📲 Last ned via lenken i bio\n\n#AIBrief",
+   "caption_link": "Én tydelig brief til KI\nSkjermbilder, PDF-er og notater\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "aibriefpack/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 326,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ଏଆଇ ପାଇଁ ସ୍ପଷ୍ଟ ବ୍ରିଫ",
+   "line2": "ସ୍କ୍ରିନସଟ, ପିଡିଏଫ, ନୋଟ ଓ ଲିଙ୍କ ଏକାଠି",
+   "chips": [
+    "ସ୍କ୍ରିନସଟ, ପିଡିଏଫ, ନୋଟ ଓ ଲିଙ୍କ ଏକାଠି",
+    "ଫାଇଲ ଓ PDF ରୁ ପ୍ରମ୍ପ୍ଟ",
+    "ତଥ୍ୟ, ମତଭେଦ ଏବଂ ଖୋଲା ପ୍ରଶ୍ନ ଖୋଜନ୍ତୁ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        545,
+        634
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        658,
+        506,
+        748
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.65,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        772,
+        469,
+        910
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.28,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "ଏଆଇ ପାଇଁ ସ୍ପଷ୍ଟ ବ୍ରିଫ\nସ୍କ୍ରିନସଟ, ପିଡିଏଫ, ନୋଟ ଓ ଲିଙ୍କ ଏକାଠି\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#AIBrief",
+   "caption_link": "ଏଆଇ ପାଇଁ ସ୍ପଷ୍ଟ ବ୍ରିଫ\nସ୍କ୍ରିନସଟ, ପିଡିଏଫ, ନୋଟ ଓ ଲିଙ୍କ ଏକାଠି\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "aibriefpack/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    5
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 220,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ਏਆਈ ਲਈ ਸਾਫ਼ ਬ੍ਰੀਫ਼",
+   "line2": "ਸਕ੍ਰੀਨਸ਼ਾਟ, ਪੀਡੀਐਫ, ਨੋਟਸ ਤੇ ਲਿੰਕ ਇਕੱਠੇ",
+   "chips": [
+    "ਸਕ੍ਰੀਨਸ਼ਾਟ, ਪੀਡੀਐਫ, ਨੋਟਸ ਤੇ ਲਿੰਕ ਇਕੱਠੇ",
+    "ਫਾਈਲ ਤੇ PDF ਤੋਂ ਪ੍ਰੋਂਪਟ ਬਣਾਓ",
+    "ਤੱਥ, ਟਕਰਾਅ ਅਤੇ ਖੁੱਲ੍ਹੇ ਸਵਾਲ ਲੱਭੋ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        524,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.9,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        525,
+        638
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.73,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        662,
+        366,
+        808
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.16,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        832,
+        398,
+        979
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.53,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "ਏਆਈ ਲਈ ਸਾਫ਼ ਬ੍ਰੀਫ਼\nਸਕ੍ਰੀਨਸ਼ਾਟ, ਪੀਡੀਐਫ, ਨੋਟਸ ਤੇ ਲਿੰਕ ਇਕੱਠੇ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#AIBrief",
+   "caption_link": "ਏਆਈ ਲਈ ਸਾਫ਼ ਬ੍ਰੀਫ਼\nਸਕ੍ਰੀਨਸ਼ਾਟ, ਪੀਡੀਐਫ, ਨੋਟਸ ਤੇ ਲਿੰਕ ਇਕੱਠੇ\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "aibriefpack/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Jasny brief dla AI",
+   "line2": "Zrzuty ekranu, PDF-y i notatki",
+   "chips": [
+    "Zrzuty ekranu, PDF-y i notatki",
+    "Prompty z plików i PDF",
+    "Specjalnie zaprojektowane szablony"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.258,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        799,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.65,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        184,
+        995,
+        436
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.38,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        291,
+        460,
+        789,
+        549
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 14.05,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Jasny brief dla AI\nZrzuty ekranu, PDF-y i notatki\n\n📲 Pobierz przez link w bio\n\n#AIBrief",
+   "caption_link": "Jasny brief dla AI\nZrzuty ekranu, PDF-y i notatki\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "aibriefpack/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Contexto claro para a IA",
+   "line2": "Capturas, PDFs e notas num só resumo",
+   "chips": [
+    "Capturas, PDFs e notas num só resumo",
+    "Crie prompts a partir de PDFs",
+    "Modelos criados para fins específicos"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        525,
+        714
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.87,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        738,
+        429,
+        867
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.1,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        891,
+        526,
+        1020
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.85,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Contexto claro para a IA\nCapturas, PDFs e notas num só resumo\n\n📲 Baixe pelo link na bio\n\n#AIBrief",
+   "caption_link": "Contexto claro para a IA\nCapturas, PDFs e notas num só resumo\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "aibriefpack/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Contexto claro para a IA",
+   "line2": "Capturas, PDF e notas num só resumo",
+   "chips": [
+    "Capturas, PDF e notas num só resumo",
+    "Crie prompts a partir de PDFs",
+    "Modelos criados para fins específicos"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        525,
+        714
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.87,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        738,
+        429,
+        867
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.1,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        891,
+        526,
+        1020
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.85,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Contexto claro para a IA\nCapturas, PDF e notas num só resumo\n\n📲 Download via the link in bio\n\n#AIBrief",
+   "caption_link": "Contexto claro para a IA\nCapturas, PDF e notas num só resumo\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "aibriefpack/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.231<0.24)"
+   ],
+   "line1": "Un brief clar pentru AI",
+   "line2": "Capturi, PDF-uri, notițe și linkuri",
+   "chips": [
+    "Capturi, PDF-uri, notițe și linkuri",
+    "Prompturi din fișiere și PDF",
+    "Șabloane create cu un scop"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        268,
+        72,
+        812,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.64,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        196,
+        184,
+        885,
+        629
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.22,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Un brief clar pentru AI\nCapturi, PDF-uri, notițe și linkuri\n\n📲 Descarcă din linkul din bio\n\n#AIBrief",
+   "caption_link": "Un brief clar pentru AI\nCapturi, PDF-uri, notițe și linkuri\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "aibriefpack/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 417,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Полный контекст для ИИ",
+   "line2": "Скриншоты, PDF и заметки в одном",
+   "chips": [
+    "Скриншоты, PDF и заметки в одном",
+    "Промпты из файлов и PDF",
+    "Специализированные шаблоны"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        532,
+        672
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        696,
+        418,
+        824
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.48,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Полный контекст для ИИ\nСкриншоты, PDF и заметки в одном\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#AIBrief",
+   "caption_link": "Полный контекст для ИИ\nСкриншоты, PDF и заметки в одном\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "aibriefpack/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Jeden jasný podklad",
+   "line2": "Snímky, PDF, poznámky aj odkazy",
+   "chips": [
+    "Snímky, PDF, poznámky aj odkazy",
+    "Prompty zo súborov a PDF",
+    "Nájdi fakty, rozpory a otvorené otázky"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        530,
+        796
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        820,
+        420,
+        939
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.86,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        963,
+        516,
+        1092
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.11,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Jeden jasný podklad\nSnímky, PDF, poznámky aj odkazy\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#AIBrief",
+   "caption_link": "Jeden jasný podklad\nSnímky, PDF, poznámky aj odkazy\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "aibriefpack/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "En jasen povzetek",
+   "line2": "Posnetki zaslona, PDF, zapiski, povezave",
+   "chips": [
+    "Posnetki zaslona, PDF, zapiski, povezave",
+    "Pozivi iz datotek in PDF",
+    "Namensko izdelane predloge"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        529,
+        625
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.03,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        649,
+        428,
+        769
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.75,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        793,
+        484,
+        922
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.06,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "En jasen povzetek\nPosnetki zaslona, PDF, zapiski, povezave\n\n📲 Prenesite prek povezave v biu\n\n#AIBrief",
+   "caption_link": "En jasen povzetek\nPosnetki zaslona, PDF, zapiski, povezave\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "aibriefpack/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "En tydlig brief till AI",
+   "line2": "Skärmbilder, PDF:er och anteckningar",
+   "chips": [
+    "Skärmbilder, PDF:er och anteckningar",
+    "Prompts från filer och PDF",
+    "Hitta fakta, konflikter och öppna frågor"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        518,
+        753
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.65,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        777,
+        400,
+        901
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.11,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "En tydlig brief till AI\nSkärmbilder, PDF:er och anteckningar\n\n📲 Ladda ner via länken i bion\n\n#AIBrief",
+   "caption_link": "En tydlig brief till AI\nSkärmbilder, PDF:er och anteckningar\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "aibriefpack/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 428,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "ஒரே பிரீஃப்",
+   "line2": "ஸ்கிரீன்ஷாட், குறிப்பு, இணைப்பு சேர்க்கவும்",
+   "chips": [
+    "ஸ்கிரீன்ஷாட், குறிப்பு, இணைப்பு சேர்க்கவும்",
+    "கோப்பிலிருந்து ப்ராம்ப்ட்"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "closeup2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        236,
+        72,
+        845,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.59,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        179,
+        184,
+        901,
+        574
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.1,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ஒரே பிரீஃப்\nஸ்கிரீன்ஷாட், குறிப்பு, இணைப்பு சேர்க்கவும்\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#AIBrief",
+   "caption_link": "ஒரே பிரீஃப்\nஸ்கிரீன்ஷாட், குறிப்பு, இணைப்பு சேர்க்கவும்\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "aibriefpack/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 370,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "ఏఐ కోసం బ్రీఫ్",
+   "line2": "స్క్రీన్‌షాట్లు, నోట్స్, లింక్‌లు జోడించండి",
+   "chips": [
+    "స్క్రీన్‌షాట్లు, నోట్స్, లింక్‌లు జోడించండి",
+    "ఫైల్, PDF నుంచి ప్రాంప్ట్",
+    "ప్రత్యేకంగా రూపొందించిన టెంప్లేట్‌లు"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        299,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.1,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        532,
+        692
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        716,
+        507,
+        809
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.1,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        833,
+        532,
+        980
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.61,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "ఏఐ కోసం బ్రీఫ్\nస్క్రీన్‌షాట్లు, నోట్స్, లింక్‌లు జోడించండి\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#AIBrief",
+   "caption_link": "ఏఐ కోసం బ్రీఫ్\nస్క్రీన్‌షాట్లు, నోట్స్, లింక్‌లు జోడించండి\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "aibriefpack/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 403,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "บริบทครบ AI ตอบตรง",
+   "line2": "รวมภาพหน้าจอ PDF โน้ต และลิงก์",
+   "chips": [
+    "รวมภาพหน้าจอ PDF โน้ต และลิงก์",
+    "สร้างสรุปจากเอกสารและ PDF",
+    "การแทนที่และการลบจะถูกนำไปใช้เมื่อส่งออก"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        299,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.1,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        497,
+        837
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.93,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        861,
+        413,
+        993
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.02,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        1017,
+        504,
+        1165
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.15,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "บริบทครบ AI ตอบตรง\nรวมภาพหน้าจอ PDF โน้ต และลิงก์\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#AIBrief",
+   "caption_link": "บริบทครบ AI ตอบตรง\nรวมภาพหน้าจอ PDF โน้ต และลิงก์\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "aibriefpack/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "AI için tam bağlam",
+   "line2": "Ekran görüntüsü, PDF, not bir arada",
+   "chips": [
+    "Ekran görüntüsü, PDF, not bir arada",
+    "Prompt oluşturucu: PDF, dosya",
+    "Özel amaçlı şablonlar"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.263,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        272,
+        72,
+        809,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.64,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        184,
+        999,
+        422
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.36,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        222,
+        446,
+        858,
+        535
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.47,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "AI için tam bağlam\nEkran görüntüsü, PDF, not bir arada\n\n📲 Biyografideki bağlantıdan indirin\n\n#AIBrief",
+   "caption_link": "AI için tam bağlam\nEkran görüntüsü, PDF, not bir arada\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "aibriefpack/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 402,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Повний контекст для ШІ",
+   "line2": "Скриншоти, PDF і нотатки разом",
+   "chips": [
+    "Скриншоти, PDF і нотатки разом",
+    "Промпти з файлів і PDF",
+    "Спеціалізовані шаблони"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        532,
+        675
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.53,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        699,
+        421,
+        827
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.33,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        851,
+        438,
+        971
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.93,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Повний контекст для ШІ\nСкриншоти, PDF і нотатки разом\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#AIBrief",
+   "caption_link": "Повний контекст для ШІ\nСкриншоти, PDF і нотатки разом\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "aibriefpack/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 129,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "بہتر سیاق، بہتر جواب",
+   "line2": "اسکرین شاٹس، فائلیں، نوٹس اور لنکس ایک بریف میں",
+   "chips": [
+    "اسکرین شاٹس، فائلیں، نوٹس اور لنکس ایک بریف میں",
+    "فائل اور PDF سے پرامپٹ بنائیں",
+    "حقائق، تضادات، اور کھلے سوالات تلاش کریں"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        785,
+        72,
+        1008,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.61,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        548,
+        184,
+        1008,
+        798
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.85,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        651,
+        822,
+        1008,
+        961
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.42,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        542,
+        985,
+        1008,
+        1122
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.66,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "بہتر سیاق، بہتر جواب\nاسکرین شاٹس، فائلیں، نوٹس اور لنکس ایک بریف میں\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#AIBrief",
+   "caption_link": "بہتر سیاق، بہتر جواب\nاسکرین شاٹس، فائلیں، نوٹس اور لنکس ایک بریف میں\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "aibriefpack/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Đủ ngữ cảnh cho AI",
+   "line2": "Ảnh màn hình, PDF, ghi chú gom một",
+   "chips": [
+    "Ảnh màn hình, PDF, ghi chú gom một",
+    "Tạo prompt từ tệp và PDF",
+    "Các mẫu được xây dựng theo mục đích"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        298,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        513,
+        825
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.73,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        849,
+        406,
+        977
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.42,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        1001,
+        523,
+        1136
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.55,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Đủ ngữ cảnh cho AI\nẢnh màn hình, PDF, ghi chú gom một\n\n📲 Tải về qua link ở bio\n\n#AIBrief",
+   "caption_link": "Đủ ngữ cảnh cho AI\nẢnh màn hình, PDF, ghi chú gom một\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "aibriefpack/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 102,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "给AI的清楚简报",
+   "line2": "截图・PDF・笔记・链接全收",
+   "chips": [
+    "截图・PDF・笔记・链接全收",
+    "文件、PDF 转提示词与摘要",
+    "查找事实、冲突及待决问题"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        533,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.85,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        531,
+        628
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.06,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        652,
+        423,
+        780
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.91,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        804,
+        423,
+        932
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.87,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "给AI的清楚简报\n截图・PDF・笔记・链接全收\n\n📲 请到个人主页（bio）的链接下载\n\n#AIBrief",
+   "caption_link": "给AI的清楚简报\n截图・PDF・笔记・链接全收\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "aibriefpack/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 100,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "給AI的完整簡報",
+   "line2": "截圖、PDF、筆記全收",
+   "chips": [
+    "截圖、PDF、筆記全收",
+    "檔案、PDF 轉提示詞與摘要",
+    "尋找事實、衝突與待解問題"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.275,
+    "family": "split2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        533,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.85,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        532,
+        628
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.01,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        652,
+        423,
+        780
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.9,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        804,
+        424,
+        932
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.97,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "給AI的完整簡報\n截圖、PDF、筆記全收\n\n📲 請到個人檔案（bio）的連結下載\n\n#AIBrief",
+   "caption_link": "給AI的完整簡報\n截圖、PDF、筆記全收\n\nApp Store: https://apps.apple.com/app/id6791658210\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aibriefpack/zh-Hant.jpg"
+  }
+ ]
+}

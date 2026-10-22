@@ -1,0 +1,6362 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "claudeusagemini",
+ "app_id": "6818607603",
+ "app_store_url": "https://apps.apple.com/app/id6818607603",
+ "play_url": null,
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "claudeusagemini/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 49,
+    "mixed_english_words": {
+     "0": [
+      "Gemini",
+      "Copilot",
+      "Flash",
+      "Flash"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['Gemini', 'Copilot', 'Flash', 'Flash']]"
+   ],
+   "line1": "كل الحدود في نظرة واحدة",
+   "line2": "المتبقي وموعد إعادة التعيين على الشاشة",
+   "chips": [
+    "المتبقي وموعد إعادة التعيين على الشاشة",
+    "حدود Claude وCodex وCopilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        736,
+        72,
+        1008,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.65,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        551,
+        184,
+        1008,
+        743
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.93,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        632,
+        767,
+        1008,
+        902
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.34,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "كل الحدود في نظرة واحدة\nالمتبقي وموعد إعادة التعيين على الشاشة\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#UsageNow",
+   "caption_link": "كل الحدود في نظرة واحدة\nالمتبقي وموعد إعادة التعيين على الشاشة\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "claudeusagemini/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "claudeusagemini/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Quant et queda d'IA?",
+   "line2": "I quan es reinicia, exactament",
+   "chips": [
+    "I quan es reinicia, exactament",
+    "Límits Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        524,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        424,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.33,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Quant et queda d'IA?\nI quan es reinicia, exactament\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#UsageNow",
+   "caption_link": "Quant et queda d'IA?\nI quan es reinicia, exactament\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "claudeusagemini/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Limity AI na ploše",
+   "line2": "Kolik zbývá a kdy se obnoví",
+   "chips": [
+    "Kolik zbývá a kdy se obnoví",
+    "Limity Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        522,
+        570
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        594,
+        424,
+        723
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.52,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Limity AI na ploše\nKolik zbývá a kdy se obnoví\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#UsageNow",
+   "caption_link": "Limity AI na ploše\nKolik zbývá a kdy se obnoví\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "claudeusagemini/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "Se din AI-grænse straks",
+   "line2": "Hvad der er tilbage, og hvornår det nulstilles",
+   "chips": [
+    "Hvad der er tilbage, og hvornår det nulstilles",
+    "Claude, Codex, Copilot grænser"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        827,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        184,
+        1003,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.31,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Se din AI-grænse straks\nHvad der er tilbage, og hvornår det nulstilles\n\n📲 Download via linket i bio\n\n#UsageNow",
+   "caption_link": "Se din AI-grænse straks\nHvad der er tilbage, og hvornår det nulstilles\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "claudeusagemini/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "KI-Limits im Blick",
+   "line2": "Was bleibt und wann es zurückgesetzt wird",
+   "chips": [
+    "Was bleibt und wann es zurückgesetzt wird",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        534,
+        644
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.15,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        668,
+        449,
+        797
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.26,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "KI-Limits im Blick\nWas bleibt und wann es zurückgesetzt wird\n\n📲 Download über den Link in der Bio\n\n#UsageNow",
+   "caption_link": "KI-Limits im Blick\nWas bleibt und wann es zurückgesetzt wird\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "claudeusagemini/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "2": [
+      "Fable"
+     ],
+     "3": [
+      "Copilot",
+      "Gemini"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Copilot'], ['Fable'], ['Copilot', 'Gemini']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "claudeusagemini/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "claudeusagemini/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "claudeusagemini/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "claudeusagemini/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "claudeusagemini/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "Tus límites de IA a la vista",
+   "line2": "Cuánto queda y cuándo se restablece",
+   "chips": [
+    "Cuánto queda y cuándo se restablece",
+    "Límites Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        825,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        158,
+        184,
+        922,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.44,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Tus límites de IA a la vista\nCuánto queda y cuándo se restablece\n\n📲 Descárgala desde el enlace de la bio\n\n#UsageNow",
+   "caption_link": "Tus límites de IA a la vista\nCuánto queda y cuándo se restablece\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "claudeusagemini/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "Tus límites de IA a la vista",
+   "line2": "Cuánto queda y cuándo se restablece",
+   "chips": [
+    "Cuánto queda y cuándo se restablece",
+    "Límites Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        825,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        158,
+        184,
+        922,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.44,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Tus límites de IA a la vista\nCuánto queda y cuándo se restablece\n\n📲 Descárgala desde el enlace de la bio\n\n#UsageNow",
+   "caption_link": "Tus límites de IA a la vista\nCuánto queda y cuándo se restablece\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "claudeusagemini/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "AI-raja silmäyksellä",
+   "line2": "Paljonko on jäljellä ja milloin nollautuu",
+   "chips": [
+    "Paljonko on jäljellä ja milloin nollautuu",
+    "Claude, Codex ja Copilot rajat"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        271,
+        72,
+        809,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.47,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        184,
+        999,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.0,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        233,
+        435,
+        847,
+        524
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.68,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "AI-raja silmäyksellä\nPaljonko on jäljellä ja milloin nollautuu\n\n📲 Lataa bion linkistä\n\n#UsageNow",
+   "caption_link": "AI-raja silmäyksellä\nPaljonko on jäljellä ja milloin nollautuu\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "claudeusagemini/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Vos limites IA en vue",
+   "line2": "Ce qu'il reste, et quand ça repart à zéro",
+   "chips": [
+    "Ce qu'il reste, et quand ça repart à zéro",
+    "Limites Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        536,
+        724
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        748,
+        438,
+        877
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.99,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Vos limites IA en vue\nCe qu'il reste, et quand ça repart à zéro\n\n📲 Téléchargez-la via le lien dans la bio\n\n#UsageNow",
+   "caption_link": "Vos limites IA en vue\nCe qu'il reste, et quand ça repart à zéro\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "claudeusagemini/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Vos limites IA en vue",
+   "line2": "Ce qu'il reste, et quand ça repart à zéro",
+   "chips": [
+    "Ce qu'il reste, et quand ça repart à zéro",
+    "Limites Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        536,
+        724
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        748,
+        438,
+        877
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.99,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Vos limites IA en vue\nCe qu'il reste, et quand ça repart à zéro\n\n📲 Téléchargez-la via le lien dans la bio\n\n#UsageNow",
+   "caption_link": "Vos limites IA en vue\nCe qu'il reste, et quand ça repart à zéro\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "claudeusagemini/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "0": [
+      "Copilot",
+      "Flash",
+      "Flash"
+     ],
+     "2": [
+      "Fable"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Copilot'], ['Copilot', 'Flash', 'Flash'], ['Fable']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "claudeusagemini/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 34,
+    "mixed_english_words": {
+     "0": [
+      "Gemini",
+      "Copilot",
+      "Flash",
+      "Flash"
+     ],
+     "2": [
+      "Fable"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [0, 2] with mixed English strings [['Gemini', 'Copilot', 'Flash', 'Flash'], ['Fable']]",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.22<0.24; closeup2×1.08: screen_area=0.237<0.24)"
+   ],
+   "line1": "כל המגבלות במבט אחד",
+   "line2": "כמה נשאר ומתי מתאפס, במסך הבית",
+   "chips": [
+    "כמה נשאר ומתי מתאפס, במסך הבית",
+    "מגבלות Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "closeup2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 1.52,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        270,
+        72,
+        810,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.57,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        237,
+        184,
+        843,
+        660
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "כל המגבלות במבט אחד\nכמה נשאר ומתי מתאפס, במסך הבית\n\n📲 הורדה דרך הקישור בביו\n\n#UsageNow",
+   "caption_link": "כל המגבלות במבט אחד\nכמה נשאר ומתי מתאפס, במסך הבית\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "claudeusagemini/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "0": [
+      "Copilot",
+      "Flash",
+      "Gemini",
+      "Flash"
+     ],
+     "2": [
+      "Fable"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Copilot'], ['Copilot', 'Flash', 'Gemini', 'Flash'], ['Fable']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "claudeusagemini/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "AI limiti na zaslonu",
+   "line2": "Koliko je ostalo i kad se obnavlja",
+   "chips": [
+    "Koliko je ostalo i kad se obnavlja",
+    "Limiti Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        518,
+        734
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.91,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        758,
+        424,
+        887
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.23,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI limiti na zaslonu\nKoliko je ostalo i kad se obnavlja\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#UsageNow",
+   "caption_link": "AI limiti na zaslonu\nKoliko je ostalo i kad se obnavlja\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "claudeusagemini/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "AI-keret a főképernyőn",
+   "line2": "Mennyi maradt, és mikor újul meg",
+   "chips": [
+    "Mennyi maradt, és mikor újul meg",
+    "Claude, Codex, Copilot limitek"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        236,
+        72,
+        844,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        182,
+        184,
+        898,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.47,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "AI-keret a főképernyőn\nMennyi maradt, és mikor újul meg\n\n📲 Töltsd le a bio linkjéről\n\n#UsageNow",
+   "caption_link": "AI-keret a főképernyőn\nMennyi maradt, és mikor újul meg\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "claudeusagemini/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Kuota AI sekilas",
+   "line2": "Sisa kuota dan kapan diatur ulang",
+   "chips": [
+    "Sisa kuota dan kapan diatur ulang",
+    "Batas Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        522,
+        639
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        663,
+        424,
+        792
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.15,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Kuota AI sekilas\nSisa kuota dan kapan diatur ulang\n\n📲 Unduh lewat link di bio\n\n#UsageNow",
+   "caption_link": "Kuota AI sekilas\nSisa kuota dan kapan diatur ulang\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "claudeusagemini/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "I limiti IA sott'occhio",
+   "line2": "Quanto resta e quando si azzera",
+   "chips": [
+    "Quanto resta e quando si azzera",
+    "Limiti Claude, Codex e Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        830,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        232,
+        184,
+        848,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.58,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "I limiti IA sott'occhio\nQuanto resta e quando si azzera\n\n📲 Scaricala dal link nella bio\n\n#UsageNow",
+   "caption_link": "I limiti IA sott'occhio\nQuanto resta e quando si azzera\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "claudeusagemini/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "0": [
+      "Copilot",
+      "Flash",
+      "Gemini",
+      "Flash"
+     ],
+     "2": [
+      "Fable"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Copilot'], ['Copilot', 'Flash', 'Gemini', 'Flash'], ['Fable']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "claudeusagemini/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "0": [
+      "Copilot",
+      "Gemini",
+      "Flash",
+      "Flash"
+     ],
+     "2": [
+      "Fable"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Copilot'], ['Copilot', 'Gemini', 'Flash', 'Flash'], ['Fable']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "claudeusagemini/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 74,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "0": [
+      "Copilot",
+      "Flash",
+      "Flash"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [1, 0] with mixed English strings [['Copilot'], ['Copilot', 'Flash', 'Flash']]"
+   ],
+   "line1": "AI 남은 사용량 한눈에",
+   "line2": "정확한 초기화 시각도 홈 화면에",
+   "chips": [
+    "정확한 초기화 시각도 홈 화면에",
+    "Claude·Codex·Copilot·Gemini 한도"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        342,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        431,
+        814
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.36,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI 남은 사용량 한눈에\n정확한 초기화 시각도 홈 화면에\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#UsageNow",
+   "caption_link": "AI 남은 사용량 한눈에\n정확한 초기화 시각도 홈 화면에\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "claudeusagemini/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "0": [
+      "Copilot",
+      "Gemini",
+      "Flash",
+      "Gemini",
+      "Flash"
+     ],
+     "2": [
+      "Fable"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Copilot'], ['Copilot', 'Gemini', 'Flash', 'Gemini'], ['Fable']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "claudeusagemini/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "0": [
+      "Copilot",
+      "Flash",
+      "Gemini",
+      "Flash"
+     ],
+     "3": [
+      "Copilot",
+      "Gemini"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Copilot'], ['Copilot', 'Flash', 'Gemini', 'Flash'], ['Copilot', 'Gemini']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "claudeusagemini/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Had AI sekali pandang",
+   "line2": "Baki dan bila ia diset semula",
+   "chips": [
+    "Baki dan bila ia diset semula",
+    "Had Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        523,
+        683
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        707,
+        424,
+        836
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.1,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Had AI sekali pandang\nBaki dan bila ia diset semula\n\n📲 Muat turun melalui pautan dalam bio\n\n#UsageNow",
+   "caption_link": "Had AI sekali pandang\nBaki dan bila ia diset semula\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "claudeusagemini/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "AI-limieten in één blik",
+   "line2": "Wat er over is en wanneer het herstelt",
+   "chips": [
+    "Wat er over is en wanneer het herstelt",
+    "Claude, Codex & Copilot limiet"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        224,
+        184,
+        855,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "AI-limieten in één blik\nWat er over is en wanneer het herstelt\n\n📲 Download via de link in bio\n\n#UsageNow",
+   "caption_link": "AI-limieten in één blik\nWat er over is en wanneer het herstelt\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "claudeusagemini/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.236<0.24)"
+   ],
+   "line1": "Se AI-grensen straks",
+   "line2": "Hva som er igjen, og når den nullstilles",
+   "chips": [
+    "Hva som er igjen, og når den nullstilles",
+    "Claude, Codex, Copilot grenser"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.254,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        827,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        158,
+        184,
+        921,
+        614
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.48,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Se AI-grensen straks\nHva som er igjen, og når den nullstilles\n\n📲 Last ned via lenken i bio\n\n#UsageNow",
+   "caption_link": "Se AI-grensen straks\nHva som er igjen, og når den nullstilles\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "claudeusagemini/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "0": [
+      "Copilot",
+      "Gemini",
+      "Flash",
+      "Gemini",
+      "Flash"
+     ],
+     "2": [
+      "Fable"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Copilot'], ['Copilot', 'Gemini', 'Flash', 'Gemini'], ['Fable']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "claudeusagemini/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 33,
+    "mixed_english_words": {
+     "0": [
+      "Copilot",
+      "Flash",
+      "Flash"
+     ],
+     "2": [
+      "Fable"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [0, 2] with mixed English strings [['Copilot', 'Flash', 'Flash'], ['Fable']]"
+   ],
+   "line1": "ਏਆਈ ਸੀਮਾ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ",
+   "line2": "ਕਿੰਨਾ ਬਾਕੀ, ਕਦੋਂ ਰੀਸੈੱਟ",
+   "chips": [
+    "ਕਿੰਨਾ ਬਾਕੀ, ਕਦੋਂ ਰੀਸੈੱਟ",
+    "Claude, Codex, Copilot ਸੀਮਾ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        525,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.7,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        529,
+        861
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.26,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        885,
+        428,
+        1023
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.56,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "ਏਆਈ ਸੀਮਾ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ\nਕਿੰਨਾ ਬਾਕੀ, ਕਦੋਂ ਰੀਸੈੱਟ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#UsageNow",
+   "caption_link": "ਏਆਈ ਸੀਮਾ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ\nਕਿੰਨਾ ਬਾਕੀ, ਕਦੋਂ ਰੀਸੈੱਟ\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "claudeusagemini/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Limit AI na widoku",
+   "line2": "Ile zostało i kiedy się odnowi",
+   "chips": [
+    "Ile zostało i kiedy się odnowi",
+    "Limity Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        503,
+        807
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.6,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        831,
+        424,
+        960
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.29,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Limit AI na widoku\nIle zostało i kiedy się odnowi\n\n📲 Pobierz przez link w bio\n\n#UsageNow",
+   "caption_link": "Limit AI na widoku\nIle zostało i kiedy się odnowi\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "claudeusagemini/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Limites de IA num olhar",
+   "line2": "Quanto resta e quando reinicia",
+   "chips": [
+    "Quanto resta e quando reinicia",
+    "Limites Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        232,
+        72,
+        849,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        174,
+        184,
+        906,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.49,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Limites de IA num olhar\nQuanto resta e quando reinicia\n\n📲 Baixe pelo link na bio\n\n#UsageNow",
+   "caption_link": "Limites de IA num olhar\nQuanto resta e quando reinicia\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "claudeusagemini/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Limites de IA à vista",
+   "line2": "Quanto resta e quando é reposto",
+   "chips": [
+    "Quanto resta e quando é reposto",
+    "Limites Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        506,
+        819
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.73,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        843,
+        438,
+        972
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.85,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Limites de IA à vista\nQuanto resta e quando é reposto\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "Limites de IA à vista\nQuanto resta e quando é reposto\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "claudeusagemini/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Limite AI pe ecran",
+   "line2": "Cât a rămas și când se resetează",
+   "chips": [
+    "Cât a rămas și când se resetează",
+    "Limite Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        524,
+        560
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.81,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        584,
+        424,
+        713
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.49,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Limite AI pe ecran\nCât a rămas și când se resetează\n\n📲 Descarcă din linkul din bio\n\n#UsageNow",
+   "caption_link": "Limite AI pe ecran\nCât a rămas și când se resetează\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "claudeusagemini/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "0": [
+      "Copilot",
+      "Gemini",
+      "Flash",
+      "Gemini",
+      "Flash"
+     ],
+     "2": [
+      "Fable"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Copilot'], ['Copilot', 'Gemini', 'Flash', 'Gemini'], ['Fable']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "claudeusagemini/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Limity AI na ploche",
+   "line2": "Koľko zostáva a kedy sa obnoví",
+   "chips": [
+    "Koľko zostáva a kedy sa obnoví",
+    "Claude, Codex, Copilot, Gemini"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        466,
+        807
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.41,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        831,
+        439,
+        960
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.3,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Limity AI na ploche\nKoľko zostáva a kedy sa obnoví\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#UsageNow",
+   "caption_link": "Limity AI na ploche\nKoľko zostáva a kedy sa obnoví\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "claudeusagemini/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Omejitve UI na zaslonu",
+   "line2": "Koliko ostane in kdaj se ponastavi",
+   "chips": [
+    "Koliko ostane in kdaj se ponastavi",
+    "Claude, Codex, Copilot, Gemini"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        674
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.43,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        698,
+        439,
+        827
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.49,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Omejitve UI na zaslonu\nKoliko ostane in kdaj se ponastavi\n\n📲 Prenesite prek povezave v biu\n\n#UsageNow",
+   "caption_link": "Omejitve UI na zaslonu\nKoliko ostane in kdaj se ponastavi\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "claudeusagemini/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Se din AI-gräns direkt",
+   "line2": "Vad som är kvar och när det återställs",
+   "chips": [
+    "Vad som är kvar och när det återställs",
+    "Claude, Codex, Copilot gränser"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        527,
+        763
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.42,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        787,
+        443,
+        916
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.57,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Se din AI-gräns direkt\nVad som är kvar och när det återställs\n\n📲 Ladda ner via länken i bion\n\n#UsageNow",
+   "caption_link": "Se din AI-gräns direkt\nVad som är kvar och när det återställs\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "claudeusagemini/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "0": [
+      "Copilot",
+      "Gemini",
+      "Flash"
+     ],
+     "2": [
+      "Fable"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Copilot'], ['Copilot', 'Gemini', 'Flash'], ['Fable']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "claudeusagemini/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "0": [
+      "Flash",
+      "Flash"
+     ],
+     "2": [
+      "Fable"
+     ],
+     "5": [
+      "English",
+      "English",
+      "English",
+      "English"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Flash', 'Flash'], ['Fable'], ['English', 'English', 'English', 'English']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "claudeusagemini/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "0": [
+      "Copilot",
+      "Flash",
+      "Gemini",
+      "Flash"
+     ],
+     "2": [
+      "Fable"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Copilot'], ['Copilot', 'Flash', 'Gemini', 'Flash'], ['Fable']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "claudeusagemini/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "AI limitleri tek bakışta",
+   "line2": "Kalan hak ve sıfırlama saati",
+   "chips": [
+    "Kalan hak ve sıfırlama saati",
+    "Claude, Codex, Copilot limiti"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        230,
+        72,
+        851,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        223,
+        184,
+        857,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "AI limitleri tek bakışta\nKalan hak ve sıfırlama saati\n\n📲 Biyografideki bağlantıdan indirin\n\n#UsageNow",
+   "caption_link": "AI limitleri tek bakışta\nKalan hak ve sıfırlama saati\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "claudeusagemini/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "0": [
+      "Copilot",
+      "Gemini",
+      "Flash",
+      "Flash"
+     ],
+     "2": [
+      "Fable"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Copilot'], ['Copilot', 'Gemini', 'Flash', 'Flash'], ['Fable']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "claudeusagemini/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 26,
+    "mixed_english_words": {
+     "0": [
+      "Gemini",
+      "Copilot",
+      "Flash",
+      "Flash"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['Gemini', 'Copilot', 'Flash', 'Flash']]"
+   ],
+   "line1": "ہر حد ایک نظر میں",
+   "line2": "کتنا باقی ہے اور کب ری سیٹ ہوگا",
+   "chips": [
+    "کتنا باقی ہے اور کب ری سیٹ ہوگا",
+    "Claude, Codex, Copilot کی حد"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        736,
+        72,
+        1008,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.65,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        543,
+        184,
+        1008,
+        656
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.63,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        651,
+        680,
+        1008,
+        815
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.07,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "ہر حد ایک نظر میں\nکتنا باقی ہے اور کب ری سیٹ ہوگا\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#UsageNow",
+   "caption_link": "ہر حد ایک نظر میں\nکتنا باقی ہے اور کب ری سیٹ ہوگا\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "claudeusagemini/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Hạn mức AI rõ ràng",
+   "line2": "Còn bao nhiêu, khi nào đặt lại",
+   "chips": [
+    "Còn bao nhiêu, khi nào đặt lại",
+    "Hạn mức Claude, Codex, Copilot"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        498,
+        745
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        769,
+        470,
+        899
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.48,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Hạn mức AI rõ ràng\nCòn bao nhiêu, khi nào đặt lại\n\n📲 Tải về qua link ở bio\n\n#UsageNow",
+   "caption_link": "Hạn mức AI rõ ràng\nCòn bao nhiêu, khi nào đặt lại\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "claudeusagemini/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "claudeusagemini/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {
+     "1": [
+      "Copilot"
+     ],
+     "2": [
+      "Fable"
+     ],
+     "3": [
+      "Gemini"
+     ]
+    },
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "mixed English strings on all localized screenshots [['Copilot'], ['Fable'], ['Gemini']]; whole card in en-US",
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "AI Limits at a Glance",
+   "line2": "What's left and when it resets",
+   "chips": [
+    "What's left and when it resets",
+    "Claude, Codex & Copilot Limits"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        347,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        449,
+        832
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "AI Limits at a Glance\nWhat's left and when it resets\n\n📲 Download via the link in bio\n\n#UsageNow",
+   "caption_link": "AI Limits at a Glance\nWhat's left and when it resets\n\nApp Store: https://apps.apple.com/app/id6818607603",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/claudeusagemini/zh-Hant.jpg"
+  }
+ ]
+}

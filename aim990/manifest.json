@@ -1,0 +1,6684 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "aim990",
+ "app_id": "6784974530",
+ "app_store_url": "https://apps.apple.com/app/id6784974530",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "aim990/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 320,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.205<0.24; closeup2×1.08: screen_area=0.221<0.24; closeup2×1.16: screen_area=0.236<0.24)"
+   ],
+   "line1": "اعرف أضعف ثلاث مهارات",
+   "line2": "تشخيص في ثماني دقائق ثم خطة مخصصة",
+   "chips": [
+    "تشخيص في ثماني دقائق ثم خطة مخصصة",
+    "تشخيص TOEIC وخطة 30 يومًا",
+    "سجل بيانات يحفظ الدقة والإيقاع لكل مهارة"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        316,
+        72,
+        764,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 19.05,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        228,
+        184,
+        851,
+        705
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.14,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "اعرف أضعف ثلاث مهارات\nتشخيص في ثماني دقائق ثم خطة مخصصة\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#Aim990",
+   "caption_link": "اعرف أضعف ثلاث مهارات\nتشخيص في ثماني دقائق ثم خطة مخصصة\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "aim990/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Find Weak Spots in 8 Min",
+   "line2": "Fix the 3 skills costing you points",
+   "chips": [
+    "Fix the 3 skills costing you points",
+    "TOEIC L&R diagnosis in 8 min",
+    "Reading time trainer for long passages"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        245,
+        72,
+        835,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.37,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        156,
+        184,
+        924,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.87,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Find Weak Spots in 8 Min\nFix the 3 skills costing you points\n\n📲 Download via the link in bio\n\n#Aim990",
+   "caption_link": "Find Weak Spots in 8 Min\nFix the 3 skills costing you points\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "aim990/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Punts febles en 8 min",
+   "line2": "Les 3 habilitats més febles",
+   "chips": [
+    "Les 3 habilitats més febles",
+    "Diagnòstic TOEIC en 8 minuts"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        534,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        528,
+        698
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.72,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        722,
+        471,
+        842
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.93,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Punts febles en 8 min\nLes 3 habilitats més febles\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#Aim990",
+   "caption_link": "Punts febles en 8 min\nLes 3 habilitats més febles\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "aim990/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Slabiny za 8 minut",
+   "line2": "Tři nejslabší dovednosti a plán oprav",
+   "chips": [
+    "Tři nejslabší dovednosti a plán oprav",
+    "Diagnóza TOEIC za 8 minut",
+    "Cvičný test s odhadem pásma"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        293,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        522,
+        819
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        843,
+        448,
+        963
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.17,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        987,
+        490,
+        1116
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.86,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Slabiny za 8 minut\nTři nejslabší dovednosti a plán oprav\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#Aim990",
+   "caption_link": "Slabiny za 8 minut\nTři nejslabší dovednosti a plán oprav\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "aim990/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Diagnose på 8 minutter",
+   "line2": "Dine 3 svageste færdigheder først",
+   "chips": [
+    "Dine 3 svageste færdigheder først",
+    "TOEIC-diagnose på 8 minutter",
+    "Svaghedsradar med dine tre vigtigste mål"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        538,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        530,
+        674
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        698,
+        447,
+        827
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.69,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Diagnose på 8 minutter\nDine 3 svageste færdigheder først\n\n📲 Download via linket i bio\n\n#Aim990",
+   "caption_link": "Diagnose på 8 minutter\nDine 3 svageste færdigheder først\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "aim990/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Schwächen in 8 Min.",
+   "line2": "Deine 3 schwächsten Fähigkeiten zuerst",
+   "chips": [
+    "Deine 3 schwächsten Fähigkeiten zuerst",
+    "TOEIC-Diagnose in 8 Minuten",
+    "Lesezeit-Training für lange Texte"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        298,
+        72,
+        782,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 18.01,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        226,
+        184,
+        854,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.68,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Schwächen in 8 Min.\nDeine 3 schwächsten Fähigkeiten zuerst\n\n📲 Download über den Link in der Bio\n\n#Aim990",
+   "caption_link": "Schwächen in 8 Min.\nDeine 3 schwächsten Fähigkeiten zuerst\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "aim990/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 297,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Αδυναμίες σε 8 λεπτά",
+   "line2": "Εξάσκηση στις 3 πιο αδύναμες",
+   "chips": [
+    "Εξάσκηση στις 3 πιο αδύναμες",
+    "Διάγνωση TOEIC σε 8 λεπτά"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        245,
+        72,
+        835,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.37,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        241,
+        184,
+        839,
+        632
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.76,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Αδυναμίες σε 8 λεπτά\nΕξάσκηση στις 3 πιο αδύναμες\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#Aim990",
+   "caption_link": "Αδυναμίες σε 8 λεπτά\nΕξάσκηση στις 3 πιο αδύναμες\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "aim990/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Find Weak Spots in 8 Min",
+   "line2": "Your 3 weakest skills, drilled daily",
+   "chips": [
+    "Your 3 weakest skills, drilled daily",
+    "8-min TOEIC L&R weak spot fix",
+    "Reading time trainer for long passages"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        268,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.62,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        156,
+        184,
+        924,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Find Weak Spots in 8 Min\nYour 3 weakest skills, drilled daily\n\n📲 Download via the link in bio\n\n#Aim990",
+   "caption_link": "Find Weak Spots in 8 Min\nYour 3 weakest skills, drilled daily\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "aim990/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Find Weak Spots in 8 Min",
+   "line2": "Your 3 weakest skills, drilled daily",
+   "chips": [
+    "Your 3 weakest skills, drilled daily",
+    "TOEIC L&R 30-day repair plan",
+    "Reading time trainer for long passages"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        280,
+        72,
+        799,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.75,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        156,
+        184,
+        924,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Find Weak Spots in 8 Min\nYour 3 weakest skills, drilled daily\n\n📲 Download via the link in bio\n\n#Aim990",
+   "caption_link": "Find Weak Spots in 8 Min\nYour 3 weakest skills, drilled daily\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "aim990/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Find Weak Spots in 8 Min",
+   "line2": "Your 3 weakest skills, then a plan",
+   "chips": [
+    "Your 3 weakest skills, then a plan",
+    "TOEIC L&R weak spot repair",
+    "Reading time trainer for long passages"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        245,
+        72,
+        835,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.37,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        156,
+        184,
+        924,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Find Weak Spots in 8 Min\nYour 3 weakest skills, then a plan\n\n📲 Download via the link in bio\n\n#Aim990",
+   "caption_link": "Find Weak Spots in 8 Min\nYour 3 weakest skills, then a plan\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "aim990/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Find Weak Spots in 8 Min",
+   "line2": "Fix the 3 skills costing you points",
+   "chips": [
+    "Fix the 3 skills costing you points",
+    "TOEIC L&R diagnosis in 8 min",
+    "Reading time trainer for long passages"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        245,
+        72,
+        835,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.37,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        156,
+        184,
+        924,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.87,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Find Weak Spots in 8 Min\nFix the 3 skills costing you points\n\n📲 Download via the link in bio\n\n#Aim990",
+   "caption_link": "Find Weak Spots in 8 Min\nFix the 3 skills costing you points\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "aim990/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "Diagnóstico en 8 minutos",
+   "line2": "Tus 3 puntos débiles, entrenados a diario",
+   "chips": [
+    "Tus 3 puntos débiles, entrenados a diario",
+    "TOEIC L&R: diagnóstico 8 min",
+    "Simulacro de práctica con banda estimada"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        260,
+        72,
+        820,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        180,
+        184,
+        901,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.75,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Diagnóstico en 8 minutos\nTus 3 puntos débiles, entrenados a diario\n\n📲 Descárgala desde el enlace de la bio\n\n#Aim990",
+   "caption_link": "Diagnóstico en 8 minutos\nTus 3 puntos débiles, entrenados a diario\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "aim990/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "Diagnóstico en 8 minutos",
+   "line2": "Tus 3 puntos débiles, entrenados a diario",
+   "chips": [
+    "Tus 3 puntos débiles, entrenados a diario",
+    "Diagnóstico TOEIC en 8 min",
+    "Simulacro de práctica con banda estimada"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        304,
+        72,
+        776,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 18.15,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        180,
+        184,
+        901,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.75,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Diagnóstico en 8 minutos\nTus 3 puntos débiles, entrenados a diario\n\n📲 Descárgala desde el enlace de la bio\n\n#Aim990",
+   "caption_link": "Diagnóstico en 8 minutos\nTus 3 puntos débiles, entrenados a diario\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "aim990/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "Diagnoosi 8 minuutissa",
+   "line2": "Kolme heikointa taitoa ensin",
+   "chips": [
+    "Kolme heikointa taitoa ensin",
+    "TOEIC-diagnoosi 8 minuutissa",
+    "Harjoituskoe arvioidulla tasolla"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        829,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.41,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        216,
+        184,
+        863,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.16,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Diagnoosi 8 minuutissa\nKolme heikointa taitoa ensin\n\n📲 Lataa bion linkistä\n\n#Aim990",
+   "caption_link": "Diagnoosi 8 minuutissa\nKolme heikointa taitoa ensin\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "aim990/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Diagnostic en 8 minutes",
+   "line2": "Vos 3 points faibles, entraînés chaque jour",
+   "chips": [
+    "Vos 3 points faibles, entraînés chaque jour",
+    "Diagnostic TOEIC en 8 minutes",
+    "Test d'entraînement avec palier estimé"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        304,
+        72,
+        775,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 18.16,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        180,
+        184,
+        899,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.86,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Diagnostic en 8 minutes\nVos 3 points faibles, entraînés chaque jour\n\n📲 Téléchargez-la via le lien dans la bio\n\n#Aim990",
+   "caption_link": "Diagnostic en 8 minutes\nVos 3 points faibles, entraînés chaque jour\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "aim990/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Diagnostic en 8 minutes",
+   "line2": "Vos 3 points faibles, et quoi réparer d'abord",
+   "chips": [
+    "Vos 3 points faibles, et quoi réparer d'abord",
+    "TOEIC L&R : diagnostic 8 min",
+    "Test d'entraînement avec palier estimé"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        279,
+        72,
+        801,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.75,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        180,
+        184,
+        899,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.86,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Diagnostic en 8 minutes\nVos 3 points faibles, et quoi réparer d'abord\n\n📲 Téléchargez-la via le lien dans la bio\n\n#Aim990",
+   "caption_link": "Diagnostic en 8 minutes\nVos 3 points faibles, et quoi réparer d'abord\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "aim990/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 315,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]"
+   ],
+   "line1": "8 મિનિટમાં નબળાઈ શોધો",
+   "line2": "3 સૌથી નબળી કુશળતા પહેલાં સુધારો",
+   "chips": [
+    "3 સૌથી નબળી કુશળતા પહેલાં સુધારો",
+    "8 મિનિટમાં નબળાઈ નિદાન",
+    "લાંબા ફકરા માટે સમય વ્યવસ્થાપનની તાલીમ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "split2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        448,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        536,
+        850
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        874,
+        526,
+        965
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.79,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        989,
+        459,
+        1124
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.86,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "8 મિનિટમાં નબળાઈ શોધો\n3 સૌથી નબળી કુશળતા પહેલાં સુધારો\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#Aim990",
+   "caption_link": "8 મિનિટમાં નબળાઈ શોધો\n3 સૌથી નબળી કુશળતા પહેલાં સુધારો\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "aim990/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 280,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]"
+   ],
+   "line1": "מוצאים את החולשות",
+   "line2": "אבחון קצר ותוכנית תיקון יומית",
+   "chips": [
+    "אבחון קצר ותוכנית תיקון יומית",
+    "אבחון TOEIC ב-8 דקות",
+    "יומן נתונים ששומר דיוק וקצב לכל מיומנות"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        593,
+        72,
+        1008,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 19.88,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        545,
+        184,
+        1008,
+        760
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.85,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        547,
+        784,
+        1008,
+        871
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.21,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.4
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        554,
+        895,
+        1008,
+        1022
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.95,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "מוצאים את החולשות\nאבחון קצר ותוכנית תיקון יומית\n\n📲 הורדה דרך הקישור בביו\n\n#Aim990",
+   "caption_link": "מוצאים את החולשות\nאבחון קצר ותוכנית תיקון יומית\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "aim990/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 290,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]"
+   ],
+   "line1": "कमज़ोरी पहले पकड़ें",
+   "line2": "8 मिनट में 3 सबसे कमज़ोर स्किल",
+   "chips": [
+    "8 मिनट में 3 सबसे कमज़ोर स्किल",
+    "8 मिनट में कमज़ोरी जाँच",
+    "लंबे गद्यांशों के लिए समय प्रबंधन अभ्यास"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        451,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        533,
+        679
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.09,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        703,
+        503,
+        795
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        819,
+        455,
+        956
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.91,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "कमज़ोरी पहले पकड़ें\n8 मिनट में 3 सबसे कमज़ोर स्किल\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#Aim990",
+   "caption_link": "कमज़ोरी पहले पकड़ें\n8 मिनट में 3 सबसे कमज़ोर स्किल\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "aim990/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Slabosti za 8 minuta",
+   "line2": "Tri najslabije vještine i plan popravka",
+   "chips": [
+    "Tri najslabije vještine i plan popravka",
+    "TOEIC dijagnoza u 8 minuta",
+    "Diktat i ponavljanje za glasom uređaja"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        293,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        529,
+        753
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        777,
+        454,
+        897
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.65,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        921,
+        512,
+        1050
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.29,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Slabosti za 8 minuta\nTri najslabije vještine i plan popravka\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#Aim990",
+   "caption_link": "Slabosti za 8 minuta\nTri najslabije vještine i plan popravka\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "aim990/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Gyengeségek 8 perc alatt",
+   "line2": "3 leggyengébb készség és javítási terv",
+   "chips": [
+    "3 leggyengébb készség és javítási terv",
+    "TOEIC-diagnózis 8 perc alatt",
+    "Gyakorlóteszt becsült sávval"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        340,
+        72,
+        741,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 18.68,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        164,
+        184,
+        916,
+        631
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.46,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Gyengeségek 8 perc alatt\n3 leggyengébb készség és javítási terv\n\n📲 Töltsd le a bio linkjéről\n\n#Aim990",
+   "caption_link": "Gyengeségek 8 perc alatt\n3 leggyengébb készség és javítási terv\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "aim990/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Cek kelemahan 8 menit",
+   "line2": "Latih dulu 3 kemampuan terlemah",
+   "chips": [
+    "Latih dulu 3 kemampuan terlemah",
+    "Diagnosis TOEIC 8 menit"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        309,
+        72,
+        771,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 18.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        116,
+        184,
+        965,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.49,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Cek kelemahan 8 menit\nLatih dulu 3 kemampuan terlemah\n\n📲 Unduh lewat link di bio\n\n#Aim990",
+   "caption_link": "Cek kelemahan 8 menit\nLatih dulu 3 kemampuan terlemah\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "aim990/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Diagnosi in 8 minuti",
+   "line2": "Le tue 3 abilità più deboli, ogni giorno",
+   "chips": [
+    "Le tue 3 abilità più deboli, ogni giorno",
+    "Diagnosi TOEIC in 8 minuti"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        293,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        519,
+        753
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.52,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        777,
+        438,
+        897
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.83,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Diagnosi in 8 minuti\nLe tue 3 abilità più deboli, ogni giorno\n\n📲 Scaricala dal link nella bio\n\n#Aim990",
+   "caption_link": "Diagnosi in 8 minuti\nLe tue 3 abilità più deboli, ogni giorno\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "aim990/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 123,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "8分で弱点がわかる",
+   "line2": "弱点スキル3つを特定・毎日集中練習",
+   "chips": [
+    "弱点スキル3つを特定・毎日集中練習",
+    "TOEIC L&R 8分診断と弱点処方",
+    "弱点トップ3を示すレーダー表示"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "closeup2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        314,
+        72,
+        765,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 18.33,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        184,
+        998,
+        443
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.49,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        240,
+        467,
+        840,
+        553
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.39,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "8分で弱点がわかる\n弱点スキル3つを特定・毎日集中練習\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#Aim990",
+   "caption_link": "8分で弱点がわかる\n弱点スキル3つを特定・毎日集中練習\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "aim990/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 274,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]",
+    "headline shortened to a shorter store hook: 8 ನಿಮಿಷದ ದೌರ್ಬಲ್ಯ ಪತ್ತೆ",
+    "layout fallback split2->split2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "8 ನಿಮಿಷದ ದೌರ್ಬಲ್ಯ ಪತ್ತೆ",
+   "line2": "3 ದುರ್ಬಲ ಕೌಶಲ ಮೊದಲು ಸರಿಪಡಿಸಿ",
+   "chips": [
+    "3 ದುರ್ಬಲ ಕೌಶಲ ಮೊದಲು ಸರಿಪಡಿಸಿ",
+    "8 ನಿಮಿಷದ ದೌರ್ಬಲ್ಯ ಪತ್ತೆ",
+    "ಉದ್ದ ಪಠ್ಯಗಳಿಗೆ ಸಮಯ ನಿರ್ವಹಣೆ ತರಬೇತಿ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        521,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        535,
+        761
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.68,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        785,
+        376,
+        931
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.23,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        955,
+        529,
+        1088
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.62,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 split2）"
+   },
+   "caption_instagram": "8 ನಿಮಿಷದ ದೌರ್ಬಲ್ಯ ಪತ್ತೆ\n3 ದುರ್ಬಲ ಕೌಶಲ ಮೊದಲು ಸರಿಪಡಿಸಿ\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#Aim990",
+   "caption_link": "8 ನಿಮಿಷದ ದೌರ್ಬಲ್ಯ ಪತ್ತೆ\n3 ದುರ್ಬಲ ಕೌಶಲ ಮೊದಲು ಸರಿಪಡಿಸಿ\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "aim990/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 107,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "8분 진단으로 약점 찾기",
+   "line2": "가장 약한 3개 영역·매일 맞춤 훈련",
+   "chips": [
+    "가장 약한 3개 영역·매일 맞춤 훈련",
+    "토익 LC RC 8분 진단",
+    "15초 힌트가 붙는 어법 속도 훈련"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        490,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        512,
+        811
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.76,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        835,
+        480,
+        920
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.47,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        944,
+        428,
+        1071
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.34,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "8분 진단으로 약점 찾기\n가장 약한 3개 영역·매일 맞춤 훈련\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#Aim990",
+   "caption_link": "8분 진단으로 약점 찾기\n가장 약한 3개 영역·매일 맞춤 훈련\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "aim990/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 291,
+    "mixed_english_words": {
+     "2": [
+      "manager",
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['manager', 'Friday', 'before', 'review']]",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.198<0.24; closeup2×1.08: screen_area=0.214<0.24; closeup2×1.16: screen_area=0.229<0.24)"
+   ],
+   "line1": "8 മിനിറ്റിൽ ദൗർബല്യം",
+   "line2": "3 ദുർബല ശേഷികൾ ആദ്യം തിരുത്തൂ",
+   "chips": [
+    "3 ദുർബല ശേഷികൾ ആദ്യം തിരുത്തൂ",
+    "8 മിനിറ്റ് ദൗർബല്യ പരിശോധന",
+    "നീണ്ട ഖണ്ഡികകൾക്കുള്ള സമയക്രമ പരിശീലനം"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        298,
+        72,
+        782,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 18.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        222,
+        184,
+        859,
+        724
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.85,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "8 മിനിറ്റിൽ ദൗർബല്യം\n3 ദുർബല ശേഷികൾ ആദ്യം തിരുത്തൂ\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#Aim990",
+   "caption_link": "8 മിനിറ്റിൽ ദൗർബല്യം\n3 ദുർബല ശേഷികൾ ആദ്യം തിരുത്തൂ\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "aim990/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 305,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]"
+   ],
+   "line1": "कमजोरी आधी ओळखा",
+   "line2": "8 मिनिटांत 3 सर्वात कमकुवत कौशल्ये",
+   "chips": [
+    "8 मिनिटांत 3 सर्वात कमकुवत कौशल्ये",
+    "8 मिनिटांत कमजोरी निदान",
+    "अंदाजित पातळी देणारी सराव चाचणी"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.259,
+    "family": "split2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        440,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        472,
+        940
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.29,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        964,
+        534,
+        1055
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.23,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        1079,
+        444,
+        1217
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.11,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "कमजोरी आधी ओळखा\n8 मिनिटांत 3 सर्वात कमकुवत कौशल्ये\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#Aim990",
+   "caption_link": "कमजोरी आधी ओळखा\n8 मिनिटांत 3 सर्वात कमकुवत कौशल्ये\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "aim990/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Titik lemah 8 minit",
+   "line2": "Latih dahulu 3 kemahiran terlemah",
+   "chips": [
+    "Latih dahulu 3 kemahiran terlemah",
+    "Diagnosis TOEIC 8 minit",
+    "Ujian latihan dengan julat anggaran"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        293,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        486,
+        807
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.32,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        831,
+        408,
+        951
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 14.83,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        975,
+        536,
+        1104
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.8,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Titik lemah 8 minit\nLatih dahulu 3 kemahiran terlemah\n\n📲 Muat turun melalui pautan dalam bio\n\n#Aim990",
+   "caption_link": "Titik lemah 8 minit\nLatih dahulu 3 kemahiran terlemah\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "aim990/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Zwakke punten in 8 min",
+   "line2": "Eerst je 3 zwakste vaardigheden",
+   "chips": [
+    "Eerst je 3 zwakste vaardigheden",
+    "TOEIC-check in 8 minuten",
+    "Tijdtraining voor lange leesteksten"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        506,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        531,
+        818
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.71,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        842,
+        392,
+        962
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 14.97,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        986,
+        481,
+        1115
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.99,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Zwakke punten in 8 min\nEerst je 3 zwakste vaardigheden\n\n📲 Download via de link in bio\n\n#Aim990",
+   "caption_link": "Zwakke punten in 8 min\nEerst je 3 zwakste vaardigheden\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "aim990/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Diagnose på 8 minutter",
+   "line2": "De 3 svakeste ferdighetene først",
+   "chips": [
+    "De 3 svakeste ferdighetene først",
+    "8-minutters TOEIC-sjekk",
+    "Tidstrening for lange lesetekster"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        527,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        530,
+        674
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        698,
+        380,
+        827
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 14.43,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        851,
+        476,
+        980
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 14.02,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Diagnose på 8 minutter\nDe 3 svakeste ferdighetene først\n\n📲 Last ned via lenken i bio\n\n#Aim990",
+   "caption_link": "Diagnose på 8 minutter\nDe 3 svakeste ferdighetene først\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "aim990/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 212,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]"
+   ],
+   "line1": "8 ମିନିଟ୍‌ରେ ଦୁର୍ବଳତା ଖୋଜନ୍ତୁ",
+   "line2": "3ଟି ଦୁର୍ବଳ ଦକ୍ଷତା ଆଗେ ସୁଧାରନ୍ତୁ",
+   "chips": [
+    "3ଟି ଦୁର୍ବଳ ଦକ୍ଷତା ଆଗେ ସୁଧାରନ୍ତୁ",
+    "8 ମିନିଟ୍ ଦୁର୍ବଳତା ନିରୂପଣ",
+    "ଲମ୍ବା ଅନୁଚ୍ଛେଦ ପାଇଁ ସମୟ ପରିଚାଳନା ତାଲିମ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        492,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        536,
+        794
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        818,
+        528,
+        912
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        936,
+        523,
+        1075
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.26,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "8 ମିନିଟ୍‌ରେ ଦୁର୍ବଳତା ଖୋଜନ୍ତୁ\n3ଟି ଦୁର୍ବଳ ଦକ୍ଷତା ଆଗେ ସୁଧାରନ୍ତୁ\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#Aim990",
+   "caption_link": "8 ମିନିଟ୍‌ରେ ଦୁର୍ବଳତା ଖୋଜନ୍ତୁ\n3ଟି ଦୁର୍ବଳ ଦକ୍ଷତା ଆଗେ ସୁଧାରନ୍ତୁ\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "aim990/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 223,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]"
+   ],
+   "line1": "8 ਮਿੰਟ ਵਿੱਚ ਕਮਜ਼ੋਰੀ ਲੱਭੋ",
+   "line2": "3 ਸਭ ਤੋਂ ਕਮਜ਼ੋਰ ਹੁਨਰ ਪਹਿਲਾਂ ਸੁਧਾਰੋ",
+   "chips": [
+    "3 ਸਭ ਤੋਂ ਕਮਜ਼ੋਰ ਹੁਨਰ ਪਹਿਲਾਂ ਸੁਧਾਰੋ",
+    "8 ਮਿੰਟ ਵਿੱਚ ਕਮਜ਼ੋਰੀ ਜਾਂਚ",
+    "ਲੰਮੇ ਪੈਰ੍ਹਿਆਂ ਲਈ ਸਮਾਂ ਪ੍ਰਬੰਧਨ ਦੀ ਸਿਖਲਾਈ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        457,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        526,
+        646
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.79,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        670,
+        497,
+        762
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.34,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        786,
+        451,
+        932
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.89,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "8 ਮਿੰਟ ਵਿੱਚ ਕਮਜ਼ੋਰੀ ਲੱਭੋ\n3 ਸਭ ਤੋਂ ਕਮਜ਼ੋਰ ਹੁਨਰ ਪਹਿਲਾਂ ਸੁਧਾਰੋ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#Aim990",
+   "caption_link": "8 ਮਿੰਟ ਵਿੱਚ ਕਮਜ਼ੋਰੀ ਲੱਭੋ\n3 ਸਭ ਤੋਂ ਕਮਜ਼ੋਰ ਹੁਨਰ ਪਹਿਲਾਂ ਸੁਧਾਰੋ\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "aim990/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+   ],
+   "line1": "Diagnoza w 8 minut",
+   "line2": "Najpierw 3 najsłabsze umiejętności",
+   "chips": [
+    "Najpierw 3 najsłabsze umiejętności",
+    "Diagnoza TOEIC w 8 minut"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.267,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.13,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        270,
+        72,
+        810,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.65,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        184,
+        999,
+        411
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.39,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        260,
+        435,
+        821,
+        524
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Diagnoza w 8 minut\nNajpierw 3 najsłabsze umiejętności\n\n📲 Pobierz przez link w bio\n\n#Aim990",
+   "caption_link": "Diagnoza w 8 minut\nNajpierw 3 najsłabsze umiejętności\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "aim990/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Pontos fracos em 8 min",
+   "line2": "Treine primeiro as 3 habilidades mais fracas",
+   "chips": [
+    "Treine primeiro as 3 habilidades mais fracas",
+    "Diagnóstico TOEIC em 8 min",
+    "Simulado de treino com faixa estimada"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        293,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        523,
+        714
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.97,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        738,
+        447,
+        858
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.86,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        882,
+        512,
+        1002
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.77,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Pontos fracos em 8 min\nTreine primeiro as 3 habilidades mais fracas\n\n📲 Baixe pelo link na bio\n\n#Aim990",
+   "caption_link": "Pontos fracos em 8 min\nTreine primeiro as 3 habilidades mais fracas\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "aim990/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Pontos fracos em 8 min",
+   "line2": "Treine primeiro as 3 competências mais fracas",
+   "chips": [
+    "Treine primeiro as 3 competências mais fracas",
+    "TOEIC L&R: diagnóstico rápido",
+    "Simulação de treino com nível estimado"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        293,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        523,
+        714
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        738,
+        498,
+        866
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.43,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        890,
+        519,
+        1011
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.39,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Pontos fracos em 8 min\nTreine primeiro as 3 competências mais fracas\n\n📲 Download via the link in bio\n\n#Aim990",
+   "caption_link": "Pontos fracos em 8 min\nTreine primeiro as 3 competências mais fracas\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "aim990/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Puncte slabe în 8 minute",
+   "line2": "Cele 3 competențe slabe și planul",
+   "chips": [
+    "Cele 3 competențe slabe și planul",
+    "Diagnostic TOEIC în 8 minute",
+    "Test de exersare cu nivel estimat"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        293,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        530,
+        690
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.29,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        714,
+        471,
+        834
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.15,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        858,
+        456,
+        978
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.96,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Puncte slabe în 8 minute\nCele 3 competențe slabe și planul\n\n📲 Descarcă din linkul din bio\n\n#Aim990",
+   "caption_link": "Puncte slabe în 8 minute\nCele 3 competențe slabe și planul\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "aim990/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 316,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]"
+   ],
+   "line1": "Слабые места за 8 минут",
+   "line2": "Тренируйте 3 самых слабых навыка",
+   "chips": [
+    "Тренируйте 3 самых слабых навыка",
+    "Диагностика TOEIC за 8 минут",
+    "Диктант и повтор за голосом устройства"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        293,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        528,
+        742
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        766,
+        478,
+        894
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.44,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Слабые места за 8 минут\nТренируйте 3 самых слабых навыка\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#Aim990",
+   "caption_link": "Слабые места за 8 минут\nТренируйте 3 самых слабых навыка\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "aim990/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Slabiny za 8 minút",
+   "line2": "Tri najslabšie zručnosti a plán opráv",
+   "chips": [
+    "Tri najslabšie zručnosti a plán opráv",
+    "Diagnóza TOEIC za 8 minút",
+    "Cvičný test s odhadom pásma"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.269,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        293,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        522,
+        819
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.43,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        843,
+        448,
+        963
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.17,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        987,
+        491,
+        1116
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.85,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Slabiny za 8 minút\nTri najslabšie zručnosti a plán opráv\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#Aim990",
+   "caption_link": "Slabiny za 8 minút\nTri najslabšie zručnosti a plán opráv\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "aim990/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.224<0.24)"
+   ],
+   "line1": "Šibke točke v 8 minutah",
+   "line2": "Tri najšibkejše veščine in načrt popravkov",
+   "chips": [
+    "Tri najšibkejše veščine in načrt popravkov",
+    "Diagnoza TOEIC v 8 minutah",
+    "Slovnica na čas z namigi po 15 sekundah"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.242,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        286,
+        72,
+        794,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.83,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        206,
+        184,
+        873,
+        648
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.31,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Šibke točke v 8 minutah\nTri najšibkejše veščine in načrt popravkov\n\n📲 Prenesite prek povezave v biu\n\n#Aim990",
+   "caption_link": "Šibke točke v 8 minutah\nTri najšibkejše veščine in načrt popravkov\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "aim990/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "Diagnos på 8 minuter",
+   "line2": "Dina 3 svagaste färdigheter först",
+   "chips": [
+    "Dina 3 svagaste färdigheter först",
+    "TOEIC-diagnos på 8 minuter",
+    "Tidsträning för långa lästexter"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        293,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        532,
+        734
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.7,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        758,
+        426,
+        887
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.91,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        911,
+        435,
+        1040
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.55,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Diagnos på 8 minuter\nDina 3 svagaste färdigheter först\n\n📲 Ladda ner via länken i bion\n\n#Aim990",
+   "caption_link": "Diagnos på 8 minuter\nDina 3 svagaste färdigheter först\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "aim990/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 279,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.198<0.24; closeup2×1.08: screen_area=0.213<0.24; closeup2×1.16: screen_area=0.228<0.24)"
+   ],
+   "line1": "8 நிமிடத்தில் பலவீனம்",
+   "line2": "3 பலவீனத் திறன்களை முதலில் சரிசெய்",
+   "chips": [
+    "3 பலவீனத் திறன்களை முதலில் சரிசெய்",
+    "8 நிமிட பலவீன கண்டறிதல்"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "closeup2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        291,
+        72,
+        789,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 17.97,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        134,
+        184,
+        946,
+        725
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "8 நிமிடத்தில் பலவீனம்\n3 பலவீனத் திறன்களை முதலில் சரிசெய்\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#Aim990",
+   "caption_link": "8 நிமிடத்தில் பலவீனம்\n3 பலவீனத் திறன்களை முதலில் சரிசெய்\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "aim990/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 217,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]"
+   ],
+   "line1": "8 నిమిషాల్లో బలహీనత",
+   "line2": "3 బలహీన నైపుణ్యాలు ముందుగా సరిచేయండి",
+   "chips": [
+    "3 బలహీన నైపుణ్యాలు ముందుగా సరిచేయండి",
+    "8 నిమిషాల బలహీనత నిర్ధారణ",
+    "15 సెకన్ల సూచనలతో వ్యాకరణ వేగ సాధన"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        450,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        530,
+        769
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.51,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        793,
+        447,
+        940
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.16,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        964,
+        483,
+        1112
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.55,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "8 నిమిషాల్లో బలహీనత\n3 బలహీన నైపుణ్యాలు ముందుగా సరిచేయండి\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#Aim990",
+   "caption_link": "8 నిమిషాల్లో బలహీనత\n3 బలహీన నైపుణ్యాలు ముందుగా సరిచేయండి\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "aim990/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 300,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]"
+   ],
+   "line1": "8 นาทีรู้จุดอ่อน",
+   "line2": "ชี้จุดอ่อน 3 ข้อ ฝึกทุกวัน",
+   "chips": [
+    "ชี้จุดอ่อน 3 ข้อ ฝึกทุกวัน",
+    "วินิจฉัย TOEIC ใน 8 นาที",
+    "ตัวฝึกบริหารเวลาอ่านสำหรับบทความยาว"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        520,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        442,
+        713
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.84,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        737,
+        532,
+        823
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.17,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": 1.5
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        847,
+        478,
+        979
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 13.24,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "8 นาทีรู้จุดอ่อน\nชี้จุดอ่อน 3 ข้อ ฝึกทุกวัน\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#Aim990",
+   "caption_link": "8 นาทีรู้จุดอ่อน\nชี้จุดอ่อน 3 ข้อ ฝึกทุกวัน\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "aim990/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "8 dakikada zayıf yön",
+   "line2": "En zayıf 3 beceriye odaklan",
+   "chips": [
+    "En zayıf 3 beceriye odaklan",
+    "8 dakikada TOEIC teşhisi",
+    "Cihazdaki sesle dikte ve tekrar etme"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        518,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        527,
+        670
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 14.9,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        694,
+        398,
+        823
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 14.33,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        847,
+        529,
+        967
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.8,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "8 dakikada zayıf yön\nEn zayıf 3 beceriye odaklan\n\n📲 Biyografideki bağlantıdan indirin\n\n#Aim990",
+   "caption_link": "8 dakikada zayıf yön\nEn zayıf 3 beceriye odaklan\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "aim990/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 313,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]"
+   ],
+   "line1": "Слабкі місця за 8 хвилин",
+   "line2": "Тренуйте три найслабші навички",
+   "chips": [
+    "Тренуйте три найслабші навички",
+    "Діагностика TOEIC за 8 хвилин",
+    "Диктант і повторення за голосом пристрою"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        293,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        527,
+        719
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.88,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        3
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        743,
+        494,
+        863
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.51,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "Слабкі місця за 8 хвилин\nТренуйте три найслабші навички\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#Aim990",
+   "caption_link": "Слабкі місця за 8 хвилин\nТренуйте три найслабші навички\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "aim990/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 167,
+    "mixed_english_words": {
+     "2": [
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['before', 'review']]"
+   ],
+   "line1": "کمزوریاں پہلے پکڑیں",
+   "line2": "مختصر تشخیص اور اصلاح کا روزانہ منصوبہ",
+   "chips": [
+    "مختصر تشخیص اور اصلاح کا روزانہ منصوبہ",
+    "8 منٹ میں کمزوری کی تشخیص",
+    "ڈیوائس کی آواز کے ساتھ املا اور دہرائی"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        616,
+        72,
+        1008,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 19.93,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        557,
+        184,
+        1008,
+        682
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 17.41,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        3
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        610,
+        706,
+        1008,
+        840
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.97,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        616,
+        864,
+        1008,
+        1003
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.61,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "کمزوریاں پہلے پکڑیں\nمختصر تشخیص اور اصلاح کا روزانہ منصوبہ\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#Aim990",
+   "caption_link": "کمزوریاں پہلے پکڑیں\nمختصر تشخیص اور اصلاح کا روزانہ منصوبہ\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "aim990/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0,
+    2
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "8 phút tìm điểm yếu",
+   "line2": "Sửa 3 kỹ năng kéo điểm xuống",
+   "chips": [
+    "Sửa 3 kỹ năng kéo điểm xuống",
+    "Chẩn đoán TOEIC trong 8 phút"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.271,
+    "family": "split2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        293,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        533,
+        694
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 13.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        3,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        718,
+        473,
+        852
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.92,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "8 phút tìm điểm yếu\nSửa 3 kỹ năng kéo điểm xuống\n\n📲 Tải về qua link ở bio\n\n#Aim990",
+   "caption_link": "8 phút tìm điểm yếu\nSửa 3 kỹ năng kéo điểm xuống\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "aim990/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 112,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]"
+   ],
+   "line1": "8分钟找出弱点",
+   "line2": "先补最拖分的3项",
+   "chips": [
+    "先补最拖分的3项",
+    "托业听读诊断与30天计划",
+    "逐项记录正确率与答题节奏的学习证据台账"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        493,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        531,
+        563
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.27,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        587,
+        387,
+        715
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 15.05,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        739,
+        532,
+        867
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.1,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "8分钟找出弱点\n先补最拖分的3项\n\n📲 请到个人主页（bio）的链接下载\n\n#Aim990",
+   "caption_link": "8分钟找出弱点\n先补最拖分的3项\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "aim990/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    0
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 106,
+    "mixed_english_words": {
+     "2": [
+      "Friday",
+      "before",
+      "review"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "dropped screenshots [2] with mixed English strings [['Friday', 'before', 'review']]"
+   ],
+   "line1": "8分鐘找出弱點",
+   "line2": "先補最拖分的3項",
+   "chips": [
+    "先補最拖分的3項",
+    "多益聽讀診斷與30天計畫",
+    "逐項記錄正確率與作答節奏的學習證據紀錄"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.27,
+    "family": "split2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 0.86,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        72,
+        72,
+        493,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.55,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        72,
+        184,
+        531,
+        564
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.43,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 420
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        588,
+        423,
+        715
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 14.77,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      },
+      {
+       "kind": "chip",
+       "plate": [
+        72,
+        739,
+        532,
+        867
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 12.16,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "split2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+   },
+   "caption_instagram": "8分鐘找出弱點\n先補最拖分的3項\n\n📲 請到個人檔案（bio）的連結下載\n\n#Aim990",
+   "caption_link": "8分鐘找出弱點\n先補最拖分的3項\n\nApp Store: https://apps.apple.com/app/id6784974530\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/aim990/zh-Hant.jpg"
+  }
+ ]
+}

@@ -1,0 +1,5962 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "lumimath",
+ "app_id": "6778269699",
+ "app_store_url": "https://apps.apple.com/app/id6778269699",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-23",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "lumimath/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 32,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [],
+   "line1": "أجب فيضيء كوكب",
+   "line2": "أسئلة مصوّرة تُقرأ بصوت عالٍ",
+   "chips": [
+    "أسئلة مصوّرة تُقرأ بصوت عالٍ",
+    "ألعاب رياضيات للأطفال والروضة",
+    "صوت لطيف وأزرار كبيرة مناسبة للصغار"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.243,
+    "family": "orbit2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        803,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        93,
+        176,
+        987,
+        509
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.36,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        878,
+        608,
+        1040,
+        885
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.5,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.4
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        838,
+        260,
+        1115
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.97,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.4
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "أجب فيضيء كوكب\nأسئلة مصوّرة تُقرأ بصوت عالٍ\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#LumiMathPlanet",
+   "caption_link": "أجب فيضيء كوكب\nأسئلة مصوّرة تُقرأ بصوت عالٍ\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "lumimath/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Answers Light Planets",
+   "line2": "Read aloud, no buzzer, no shame",
+   "chips": [
+    "Read aloud, no buzzer, no shame",
+    "Kids Addition & Subtraction"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.244,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        176,
+        176,
+        903,
+        612
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Answers Light Planets\nRead aloud, no buzzer, no shame\n\n📲 Download via the link in bio\n\n#LumiMathPlanet",
+   "caption_link": "Answers Light Planets\nRead aloud, no buzzer, no shame\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "lumimath/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Encerta i s'encén",
+   "line2": "Mates d'infantil i primària",
+   "chips": [
+    "Mates d'infantil i primària"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        997,
+        436
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.48,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        542,
+        237,
+        757
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.38,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Encerta i s'encén\nMates d'infantil i primària\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#LumiMathPlanet",
+   "caption_link": "Encerta i s'encén\nMates d'infantil i primària\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "lumimath/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Správně? Planeta svítí!",
+   "line2": "Úlohy s obrázky a předčítáním",
+   "chips": [
+    "Úlohy s obrázky a předčítáním"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        180,
+        176,
+        899,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.68,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Správně? Planeta svítí!\nÚlohy s obrázky a předčítáním\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#LumiMathPlanet",
+   "caption_link": "Správně? Planeta svítí!\nÚlohy s obrázky a předčítáním\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "lumimath/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Regn og tænd planeter",
+   "line2": "Matematik for børn: regnespil",
+   "chips": [
+    "Matematik for børn: regnespil",
+    "Blid stemme og børnevenlige knapper"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        158,
+        176,
+        921,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.86,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Regn og tænd planeter\nMatematik for børn: regnespil\n\n📲 Download via linket i bio\n\n#LumiMathPlanet",
+   "caption_link": "Regn og tænd planeter\nMatematik for børn: regnespil\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "lumimath/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.232<0.24)"
+   ],
+   "line1": "Gelöst, Planet leuchtet",
+   "line2": "Rechnen lernen für Kinder",
+   "chips": [
+    "Rechnen lernen für Kinder"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        240,
+        72,
+        841,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.37,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        154,
+        176,
+        925,
+        545
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.71,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        640,
+        244,
+        846
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.79,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Gelöst, Planet leuchtet\nRechnen lernen für Kinder\n\n📲 Download über den Link in der Bio\n\n#LumiMathPlanet",
+   "caption_link": "Gelöst, Planet leuchtet\nRechnen lernen für Kinder\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "lumimath/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 50,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.231<0.24)"
+   ],
+   "line1": "Σωστό, πλανήτης λάμπει",
+   "line2": "Μαθηματικά για παιδιά",
+   "chips": [
+    "Μαθηματικά για παιδιά"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        76,
+        176,
+        1004,
+        547
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.5,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Σωστό, πλανήτης λάμπει\nΜαθηματικά για παιδιά\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#LumiMathPlanet",
+   "caption_link": "Σωστό, πλανήτης λάμπει\nΜαθηματικά για παιδιά\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "lumimath/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.213<0.24; orbit2×1.08: screen_area=0.23<0.24)"
+   ],
+   "line1": "Answers Light Planets",
+   "line2": "Picture questions, read aloud",
+   "chips": [
+    "Picture questions, read aloud",
+    "Maths Games: Prep to Year 3"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        176,
+        176,
+        903,
+        606
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        695,
+        198,
+        946
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.43,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Answers Light Planets\nPicture questions, read aloud\n\n📲 Download via the link in bio\n\n#LumiMathPlanet",
+   "caption_link": "Answers Light Planets\nPicture questions, read aloud\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "lumimath/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.213<0.24; orbit2×1.08: screen_area=0.23<0.24)"
+   ],
+   "line1": "Answers Light Planets",
+   "line2": "Picture questions, read aloud",
+   "chips": [
+    "Picture questions, read aloud",
+    "Addition & Subtraction Games"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        176,
+        176,
+        903,
+        606
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Answers Light Planets\nPicture questions, read aloud\n\n📲 Download via the link in bio\n\n#LumiMathPlanet",
+   "caption_link": "Answers Light Planets\nPicture questions, read aloud\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "lumimath/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.213<0.24; orbit2×1.08: screen_area=0.23<0.24)"
+   ],
+   "line1": "Answers Light Planets",
+   "line2": "Picture questions, read aloud",
+   "chips": [
+    "Picture questions, read aloud",
+    "KS1 Maths & Times Tables"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        176,
+        176,
+        903,
+        606
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.74,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        695,
+        209,
+        946
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.78,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Answers Light Planets\nPicture questions, read aloud\n\n📲 Download via the link in bio\n\n#LumiMathPlanet",
+   "caption_link": "Answers Light Planets\nPicture questions, read aloud\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "lumimath/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Answers Light Planets",
+   "line2": "Read aloud, no buzzer, no shame",
+   "chips": [
+    "Read aloud, no buzzer, no shame",
+    "Kids Addition & Subtraction"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.244,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        176,
+        176,
+        903,
+        612
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Answers Light Planets\nRead aloud, no buzzer, no shame\n\n📲 Download via the link in bio\n\n#LumiMathPlanet",
+   "caption_link": "Answers Light Planets\nRead aloud, no buzzer, no shame\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "lumimath/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(1, ['how', 'many'])]; dropped",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.229<0.24)"
+   ],
+   "line1": "Resuelve y se ilumina",
+   "line2": "Con imágenes y lectura en voz alta",
+   "chips": [
+    "Con imágenes y lectura en voz alta",
+    "Mates para infantil y primaria"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        240,
+        176,
+        841,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.86,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        698,
+        224,
+        958
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.82,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Resuelve y se ilumina\nCon imágenes y lectura en voz alta\n\n📲 Descárgala desde el enlace de la bio\n\n#LumiMathPlanet",
+   "caption_link": "Resuelve y se ilumina\nCon imágenes y lectura en voz alta\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "lumimath/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(1, ['how', 'many'])]; dropped",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.229<0.24)"
+   ],
+   "line1": "Resuelve y se ilumina",
+   "line2": "Con imágenes y lectura en voz alta",
+   "chips": [
+    "Con imágenes y lectura en voz alta",
+    "Sumas y restas para niños",
+    "Ritmo tranquilo inspirado en Montessori"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        240,
+        176,
+        841,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.86,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        698,
+        207,
+        949
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.91,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Resuelve y se ilumina\nCon imágenes y lectura en voz alta\n\n📲 Descárgala desde el enlace de la bio\n\n#LumiMathPlanet",
+   "caption_link": "Resuelve y se ilumina\nCon imágenes y lectura en voz alta\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "lumimath/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Laske ja sytytä planeetta",
+   "line2": "Matikkapelit lapsille",
+   "chips": [
+    "Matikkapelit lapsille",
+    "Lempeä ääni ja pienille sopivat ohjaimet"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        130,
+        176,
+        950,
+        557
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.71,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        651,
+        226,
+        956
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.04,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Laske ja sytytä planeetta\nMatikkapelit lapsille\n\n📲 Lataa bion linkistä\n\n#LumiMathPlanet",
+   "caption_link": "Laske ja sytytä planeetta\nMatikkapelit lapsille\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "lumimath/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Une réponse, une planète",
+   "line2": "En images, lues à voix haute",
+   "chips": [
+    "En images, lues à voix haute",
+    "Maths maternelle à 3e année",
+    "Rythme calme inspiré de Montessori"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        176,
+        176,
+        903,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Une réponse, une planète\nEn images, lues à voix haute\n\n📲 Téléchargez-la via le lien dans la bio\n\n#LumiMathPlanet",
+   "caption_link": "Une réponse, une planète\nEn images, lues à voix haute\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "lumimath/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    3,
+    4
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Une réponse, une planète",
+   "line2": "En images, lues à voix haute",
+   "chips": [
+    "En images, lues à voix haute",
+    "Jeux de maths maternelle-CE2"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        176,
+        176,
+        903,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Une réponse, une planète\nEn images, lues à voix haute\n\n📲 Téléchargez-la via le lien dans la bio\n\n#LumiMathPlanet",
+   "caption_link": "Une réponse, une planète\nEn images, lues à voix haute\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "lumimath/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 19,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "સાચા જવાબે ગ્રહ ઝળહળે",
+   "line2": "બાળકો માટે ગણિત રમતો",
+   "chips": [
+    "બાળકો માટે ગણિત રમતો"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.263,
+    "family": "orbit2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        275,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.49,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        76,
+        176,
+        1004,
+        443
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.49,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        548,
+        241,
+        724
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.48,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "સાચા જવાબે ગ્રહ ઝળહળે\nબાળકો માટે ગણિત રમતો\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#LumiMathPlanet",
+   "caption_link": "સાચા જવાબે ગ્રહ ઝળહળે\nબાળકો માટે ગણિત રમતો\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "lumimath/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 19,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.204<0.24; orbit2×1.08: screen_area=0.22<0.24; orbit2×1.16: screen_area=0.236<0.24)"
+   ],
+   "line1": "תשובה נכונה, כוכב נדלק",
+   "line2": "שאלות בתמונות עם הקראה בקול",
+   "chips": [
+    "שאלות בתמונות עם הקראה בקול",
+    "משחקי חשבון לגן ולכיתות א׳-ג׳",
+    "קול עדין וכפתורים גדולים לילדים צעירים"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "orbit2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 1.37,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        278,
+        72,
+        801,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        205,
+        176,
+        875,
+        636
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        889,
+        722,
+        1040,
+        1044
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.19,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.4
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        917,
+        211,
+        1239
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.97,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.4
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "תשובה נכונה, כוכב נדלק\nשאלות בתמונות עם הקראה בקול\n\n📲 הורדה דרך הקישור בביו\n\n#LumiMathPlanet",
+   "caption_link": "תשובה נכונה, כוכב נדלק\nשאלות בתמונות עם הקראה בקול\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "lumimath/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 21,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "सही जवाब, चमकता ग्रह",
+   "line2": "LKG से कक्षा 3 तक गणित खेल",
+   "chips": [
+    "LKG से कक्षा 3 तक गणित खेल",
+    "नरम आवाज़ और बच्चों के लिए आसान नियंत्रण",
+    "मोंटेसरी से प्रेरित शांत सीखना"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.261,
+    "family": "orbit2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        803,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        81,
+        176,
+        999,
+        449
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.43,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        554,
+        245,
+        833
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.06,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        869,
+        801,
+        1040,
+        1026
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.11,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "सही जवाब, चमकता ग्रह\nLKG से कक्षा 3 तक गणित खेल\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#LumiMathPlanet",
+   "caption_link": "सही जवाब, चमकता ग्रह\nLKG से कक्षा 3 तक गणित खेल\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "lumimath/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Točan odgovor, planet sja",
+   "line2": "Zadaci sa slikama i čitanjem naglas",
+   "chips": [
+    "Zadaci sa slikama i čitanjem naglas",
+    "Matematičke igre za djecu",
+    "Nježan glas i kontrole za male ruke"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        128,
+        176,
+        951,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        844,
+        909,
+        1040,
+        1205
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.01,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Točan odgovor, planet sja\nZadaci sa slikama i čitanjem naglas\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#LumiMathPlanet",
+   "caption_link": "Točan odgovor, planet sja\nZadaci sa slikama i čitanjem naglas\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "lumimath/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Jó válasz, ég a bolygó",
+   "line2": "Képes feladatok, felolvasással",
+   "chips": [
+    "Képes feladatok, felolvasással",
+    "Matek játékok gyerekeknek",
+    "Nyugodt Montessori-ihletésű tanulás"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        219,
+        176,
+        861,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.75,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Jó válasz, ég a bolygó\nKépes feladatok, felolvasással\n\n📲 Töltsd le a bio linkjéről\n\n#LumiMathPlanet",
+   "caption_link": "Jó válasz, ég a bolygó\nKépes feladatok, felolvasással\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "lumimath/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.229<0.24)"
+   ],
+   "line1": "Benar, planet menyala",
+   "line2": "Belajar berhitung anak TK & SD",
+   "chips": [
+    "Belajar berhitung anak TK & SD",
+    "Suara lembut dan kontrol ramah anak",
+    "Ritme tenang bergaya Montessori"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        175,
+        176,
+        905,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Benar, planet menyala\nBelajar berhitung anak TK & SD\n\n📲 Unduh lewat link di bio\n\n#LumiMathPlanet",
+   "caption_link": "Benar, planet menyala\nBelajar berhitung anak TK & SD\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "lumimath/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['add', 'how', 'many'])]; dropped",
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Rispondi e si illumina",
+   "line2": "Giochi matematici per bambini",
+   "chips": [
+    "Giochi matematici per bambini"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        248,
+        176,
+        831,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Rispondi e si illumina\nGiochi matematici per bambini\n\n📲 Scaricala dal link nella bio\n\n#LumiMathPlanet",
+   "caption_link": "Rispondi e si illumina\nGiochi matematici per bambini\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "lumimath/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 9,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "正解で星が灯る",
+   "line2": "絵でわかる問題・音声で読み上げ",
+   "chips": [
+    "絵でわかる問題・音声で読み上げ",
+    "たし算・ひき算・九九の知育ゲーム"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        338,
+        72,
+        741,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.11,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        164,
+        176,
+        917,
+        500
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "正解で星が灯る\n絵でわかる問題・音声で読み上げ\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#LumiMathPlanet",
+   "caption_link": "正解で星が灯る\n絵でわかる問題・音声で読み上げ\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "lumimath/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 49,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "no layout fits the hard minimum font sizes with the localized copy; whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Answers Light Planets",
+   "line2": "Read aloud, no buzzer, no shame",
+   "chips": [
+    "Read aloud, no buzzer, no shame",
+    "Kids Addition & Subtraction"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.244,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        176,
+        176,
+        903,
+        612
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Answers Light Planets\nRead aloud, no buzzer, no shame\n\n📲 Download via the link in bio\n\n#LumiMathPlanet",
+   "caption_link": "Answers Light Planets\nRead aloud, no buzzer, no shame\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "lumimath/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 8,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.226<0.24)"
+   ],
+   "line1": "맞히면 행성에 불이 켜져요",
+   "line2": "그림으로 보고 소리로 읽어 줘요",
+   "chips": [
+    "그림으로 보고 소리로 읽어 줘요",
+    "유아·초등 덧셈 뺄셈 구구단 놀이"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.242,
+    "family": "orbit2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        384,
+        72,
+        697,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.08,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        227,
+        176,
+        853,
+        619
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        706,
+        223,
+        962
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.0,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "맞히면 행성에 불이 켜져요\n그림으로 보고 소리로 읽어 줘요\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#LumiMathPlanet",
+   "caption_link": "맞히면 행성에 불이 켜져요\n그림으로 보고 소리로 읽어 줘요\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "lumimath/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 28,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "ഗ്രഹം തിളങ്ങും",
+   "line2": "കുട്ടികൾക്ക് ഗണിത കളികൾ",
+   "chips": [
+    "കുട്ടികൾക്ക് ഗണിത കളികൾ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "orbit2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        273,
+        72,
+        807,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.46,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        998,
+        486
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.3,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ഗ്രഹം തിളങ്ങും\nകുട്ടികൾക്ക് ഗണിത കളികൾ\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#LumiMathPlanet",
+   "caption_link": "ഗ്രഹം തിളങ്ങും\nകുട്ടികൾക്ക് ഗണിത കളികൾ\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "lumimath/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 4,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "बरोबर उत्तर, ग्रह उजळतो",
+   "line2": "मुलांसाठी बेरीज वजाबाकी खेळ",
+   "chips": [
+    "मुलांसाठी बेरीज वजाबाकी खेळ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.261,
+    "family": "orbit2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        338,
+        72,
+        742,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.97,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        176,
+        992,
+        449
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.48,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        554,
+        271,
+        779
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.17,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "बरोबर उत्तर, ग्रह उजळतो\nमुलांसाठी बेरीज वजाबाकी खेळ\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#LumiMathPlanet",
+   "caption_link": "बरोबर उत्तर, ग्रह उजळतो\nमुलांसाठी बेरीज वजाबाकी खेळ\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "lumimath/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(1, ['how', 'many']), (2, ['how', 'many'])]; dropped",
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.229<0.24)"
+   ],
+   "line1": "Betul, planet menyala",
+   "line2": "Matematik tadika dan sekolah",
+   "chips": [
+    "Matematik tadika dan sekolah",
+    "Gaya tenang berinspirasikan Montessori"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        183,
+        176,
+        897,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Betul, planet menyala\nMatematik tadika dan sekolah\n\n📲 Muat turun melalui pautan dalam bio\n\n#LumiMathPlanet",
+   "caption_link": "Betul, planet menyala\nMatematik tadika dan sekolah\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "lumimath/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Goed? Planeet licht op",
+   "line2": "Rekenen groep 1 tot en met 5",
+   "chips": [
+    "Rekenen groep 1 tot en met 5"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        146,
+        176,
+        935,
+        557
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.75,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        651,
+        220,
+        902
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.5,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Goed? Planeet licht op\nRekenen groep 1 tot en met 5\n\n📲 Download via de link in bio\n\n#LumiMathPlanet",
+   "caption_link": "Goed? Planeet licht op\nRekenen groep 1 tot en met 5\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "lumimath/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.229<0.24)"
+   ],
+   "line1": "Regn og tenn planeter",
+   "line2": "Matematikkspill for barn",
+   "chips": [
+    "Matematikkspill for barn",
+    "Mild stemme og barnevennlige kontroller",
+    "Rolig Montessori-inspirert læring"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        174,
+        176,
+        906,
+        553
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Regn og tenn planeter\nMatematikkspill for barn\n\n📲 Last ned via lenken i bio\n\n#LumiMathPlanet",
+   "caption_link": "Regn og tenn planeter\nMatematikkspill for barn\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "lumimath/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 25,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "ଠିକ୍ ଉତ୍ତରେ ଗ୍ରହ ଝଲସେ",
+   "line2": "ପିଲାଙ୍କ ଯୋଗ ବିୟୋଗ ଖେଳ",
+   "chips": [
+    "ପିଲାଙ୍କ ଯୋଗ ବିୟୋଗ ଖେଳ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.266,
+    "family": "orbit2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        310,
+        72,
+        771,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.67,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        176,
+        1001,
+        432
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.55,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        538,
+        272,
+        717
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.8,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ଠିକ୍ ଉତ୍ତରେ ଗ୍ରହ ଝଲସେ\nପିଲାଙ୍କ ଯୋଗ ବିୟୋଗ ଖେଳ\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#LumiMathPlanet",
+   "caption_link": "ଠିକ୍ ଉତ୍ତରେ ଗ୍ରହ ଝଲସେ\nପିଲାଙ୍କ ଯୋଗ ବିୟୋଗ ଖେଳ\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "lumimath/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 18,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "ਸਹੀ ਜਵਾਬ, ਗ੍ਰਹਿ ਚਮਕੇ",
+   "line2": "ਬੱਚਿਆਂ ਲਈ ਗਣਿਤ ਖੇਡਾਂ",
+   "chips": [
+    "ਬੱਚਿਆਂ ਲਈ ਗਣਿਤ ਖੇਡਾਂ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.256,
+    "family": "orbit2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        316,
+        72,
+        765,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.56,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        80,
+        176,
+        1000,
+        464
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.47,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        567,
+        234,
+        737
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.42,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ਸਹੀ ਜਵਾਬ, ਗ੍ਰਹਿ ਚਮਕੇ\nਬੱਚਿਆਂ ਲਈ ਗਣਿਤ ਖੇਡਾਂ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#LumiMathPlanet",
+   "caption_link": "ਸਹੀ ਜਵਾਬ, ਗ੍ਰਹਿ ਚਮਕੇ\nਬੱਚਿਆਂ ਲਈ ਗਣਿਤ ਖੇਡਾਂ\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "lumimath/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Licz i zapalaj planety",
+   "line2": "Gry matematyczne dla dzieci",
+   "chips": [
+    "Gry matematyczne dla dzieci",
+    "Łagodny głos i proste sterowanie",
+    "Spokojny styl inspirowany Montessori"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        194,
+        176,
+        885,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.78,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Licz i zapalaj planety\nGry matematyczne dla dzieci\n\n📲 Pobierz przez link w bio\n\n#LumiMathPlanet",
+   "caption_link": "Licz i zapalaj planety\nGry matematyczne dla dzieci\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "lumimath/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.229<0.24)"
+   ],
+   "line1": "Acertou? Planeta acende",
+   "line2": "Jogos de matemática infantil",
+   "chips": [
+    "Jogos de matemática infantil",
+    "Voz suave e controles para pequenos",
+    "Ritmo calmo inspirado em Montessori"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        118,
+        176,
+        962,
+        553
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.39,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        647,
+        241,
+        952
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.0,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Acertou? Planeta acende\nJogos de matemática infantil\n\n📲 Baixe pelo link na bio\n\n#LumiMathPlanet",
+   "caption_link": "Acertou? Planeta acende\nJogos de matemática infantil\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "lumimath/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.229<0.24)"
+   ],
+   "line1": "Acertaste? Planeta aceso",
+   "line2": "Jogos de matemática infantis",
+   "chips": [
+    "Jogos de matemática infantis",
+    "Ritmo calmo inspirado em Montessori"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        153,
+        176,
+        927,
+        553
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.47,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Acertaste? Planeta aceso\nJogos de matemática infantis\n\n📲 Download via the link in bio\n\n#LumiMathPlanet",
+   "caption_link": "Acertaste? Planeta aceso\nJogos de matemática infantis\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "lumimath/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "Planeta se aprinde",
+   "line2": "Jocuri matematice pentru copii",
+   "chips": [
+    "Jocuri matematice pentru copii",
+    "Voce blândă și controale pentru cei mici",
+    "Ritm calm inspirat de Montessori"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.272,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        176,
+        991,
+        413
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.49,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        521,
+        236,
+        817
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.14,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      },
+      {
+       "kind": "card",
+       "plate": [
+        816,
+        779,
+        1040,
+        985
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.16,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "Planeta se aprinde\nJocuri matematice pentru copii\n\n📲 Descarcă din linkul din bio\n\n#LumiMathPlanet",
+   "caption_link": "Planeta se aprinde\nJocuri matematice pentru copii\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "lumimath/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 45,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.229<0.24)"
+   ],
+   "line1": "Ответ — и планета горит",
+   "line2": "Математические игры для детей",
+   "chips": [
+    "Математические игры для детей",
+    "Мягкий голос и управление для малышей",
+    "Спокойный подход в духе Монтессори"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.247,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        995,
+        553
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 10.96,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Ответ — и планета горит\nМатематические игры для детей\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#LumiMathPlanet",
+   "caption_link": "Ответ — и планета горит\nМатематические игры для детей\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "lumimath/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Správne? Planéta svieti!",
+   "line2": "Úlohy s obrázkami a čítaním nahlas",
+   "chips": [
+    "Úlohy s obrázkami a čítaním nahlas",
+    "Matematické hry pre deti",
+    "Jemný hlas a ovládanie pre malé deti"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        149,
+        176,
+        931,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.62,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Správne? Planéta svieti!\nÚlohy s obrázkami a čítaním nahlas\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#LumiMathPlanet",
+   "caption_link": "Správne? Planéta svieti!\nÚlohy s obrázkami a čítaním nahlas\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "lumimath/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Pravilno in planet zasveti",
+   "line2": "Matematične igre za otroke",
+   "chips": [
+    "Matematične igre za otroke"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        242,
+        72,
+        839,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        154,
+        176,
+        927,
+        558
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.57,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Pravilno in planet zasveti\nMatematične igre za otroke\n\n📲 Prenesite prek povezave v biu\n\n#LumiMathPlanet",
+   "caption_link": "Pravilno in planet zasveti\nMatematične igre za otroke\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "lumimath/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Räkna och tänd planeter",
+   "line2": "Matte: förskola & lågstadiet",
+   "chips": [
+    "Matte: förskola & lågstadiet",
+    "Mjuk röst och kontroller för små barn",
+    "Lugnt Montessori-inspirerat tempo"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.246,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        156,
+        176,
+        924,
+        557
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.53,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        651,
+        244,
+        947
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.53,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Räkna och tänd planeter\nMatte: förskola & lågstadiet\n\n📲 Ladda ner via länken i bion\n\n#LumiMathPlanet",
+   "caption_link": "Räkna och tänd planeter\nMatte: förskola & lågstadiet\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "lumimath/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 29,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "கோள் ஒளிரும்",
+   "line2": "கூட்டல் கழித்தல் விளையாட்டு",
+   "chips": [
+    "கூட்டல் கழித்தல் விளையாட்டு"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.252,
+    "family": "orbit2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        210,
+        72,
+        871,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        995,
+        479
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.23,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "கோள் ஒளிரும்\nகூட்டல் கழித்தல் விளையாட்டு\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#LumiMathPlanet",
+   "caption_link": "கோள் ஒளிரும்\nகூட்டல் கழித்தல் விளையாட்டு\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "lumimath/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 20,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)"
+   ],
+   "line1": "జవాబుకు గ్రహం వెలుగు",
+   "line2": "పిల్లల కూడిక తీసివేత ఆటలు",
+   "chips": [
+    "పిల్లల కూడిక తీసివేత ఆటలు"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.263,
+    "family": "orbit2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        286,
+        72,
+        793,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.54,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        176,
+        1001,
+        440
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.57,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        545,
+        256,
+        767
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.42,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "జవాబుకు గ్రహం వెలుగు\nపిల్లల కూడిక తీసివేత ఆటలు\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#LumiMathPlanet",
+   "caption_link": "జవాబుకు గ్రహం వెలుగు\nపిల్లల కూడిక తీసివేత ఆటలు\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "lumimath/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 17,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "ตอบถูก ดาวก็สว่าง",
+   "line2": "โจทย์ภาพพร้อมเสียงอ่าน",
+   "chips": [
+    "โจทย์ภาพพร้อมเสียงอ่าน",
+    "เกมคณิตศาสตร์เด็ก อนุบาล-ประถม",
+    "เสียงนุ่มนวล ปุ่มใหญ่เหมาะกับเด็ก"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "orbit2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        275,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.5,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        114,
+        176,
+        966,
+        463
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        566,
+        249,
+        846
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.86,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.5
+      },
+      {
+       "kind": "card",
+       "plate": [
+        829,
+        810,
+        1040,
+        1036
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.95,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ตอบถูก ดาวก็สว่าง\nโจทย์ภาพพร้อมเสียงอ่าน\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#LumiMathPlanet",
+   "caption_link": "ตอบถูก ดาวก็สว่าง\nโจทย์ภาพพร้อมเสียงอ่าน\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "lumimath/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Bil, gezegen ışıldasın",
+   "line2": "Okul öncesi matematik oyunları",
+   "chips": [
+    "Okul öncesi matematik oyunları",
+    "Yumuşak ses ve çocuk dostu kontroller",
+    "Montessori esintili sakin öğrenme"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        207,
+        176,
+        873,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Bil, gezegen ışıldasın\nOkul öncesi matematik oyunları\n\n📲 Biyografideki bağlantıdan indirin\n\n#LumiMathPlanet",
+   "caption_link": "Bil, gezegen ışıldasın\nOkul öncesi matematik oyunları\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "lumimath/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 51,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Відповів — планета сяє",
+   "line2": "Математичні ігри для дітей",
+   "chips": [
+    "Математичні ігри для дітей",
+    "М’який голос і керування для малюків",
+    "Спокійний підхід у дусі Монтессорі"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        200,
+        176,
+        881,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.9,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Відповів — планета сяє\nМатематичні ігри для дітей\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#LumiMathPlanet",
+   "caption_link": "Відповів — планета сяє\nМатематичні ігри для дітей\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "lumimath/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 11,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "warnings": [
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.196<0.24; orbit2×1.08: screen_area=0.211<0.24; orbit2×1.16: screen_area=0.226<0.24)"
+   ],
+   "line1": "درست جواب، روشن سیارہ",
+   "line2": "گنتی، جمع، تفریق اور گھڑی کے تصویری سوال",
+   "chips": [
+    "گنتی، جمع، تفریق اور گھڑی کے تصویری سوال",
+    "بچوں کے لیے ریاضی کھیل"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.243,
+    "family": "orbit2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 1.37,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        275,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        199,
+        176,
+        881,
+        665
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.69,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        912,
+        748,
+        1040,
+        1025
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.04,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.4
+      }
+     ]
+    },
+    "phone_scale": 1.25,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "درست جواب، روشن سیارہ\nگنتی، جمع، تفریق اور گھڑی کے تصویری سوال\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#LumiMathPlanet",
+   "caption_link": "درست جواب، روشن سیارہ\nگنتی، جمع، تفریق اور گھڑی کے تصویری سوال\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "lumimath/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [
+    "English UI on localized screenshots [(2, ['how', 'many'])]; dropped",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Đúng là hành tinh sáng",
+   "line2": "Bài bằng hình, có đọc to cho bé",
+   "chips": [
+    "Bài bằng hình, có đọc to cho bé",
+    "Mầm non, tiểu học: cộng trừ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        249,
+        72,
+        831,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.38,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        172,
+        176,
+        909,
+        620
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        707,
+        224,
+        967
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 7.93,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Đúng là hành tinh sáng\nBài bằng hình, có đọc to cho bé\n\n📲 Tải về qua link ở bio\n\n#LumiMathPlanet",
+   "caption_link": "Đúng là hành tinh sáng\nBài bằng hình, có đọc to cho bé\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "lumimath/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Answers Light Planets",
+   "line2": "Read aloud, no buzzer, no shame",
+   "chips": [
+    "Read aloud, no buzzer, no shame",
+    "Kids Addition & Subtraction"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.244,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        804,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        176,
+        176,
+        903,
+        612
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.8,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Answers Light Planets\nRead aloud, no buzzer, no shame\n\n📲 Download via the link in bio\n\n#LumiMathPlanet",
+   "caption_link": "Answers Light Planets\nRead aloud, no buzzer, no shame\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "lumimath/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    1,
+    2,
+    3
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 11,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "warnings": [],
+   "line1": "答對就點亮星球",
+   "line2": "看圖題目・會念給孩子聽",
+   "chips": [
+    "看圖題目・會念給孩子聽",
+    "幼兒加減法遊戲・九九乘法・數數"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.265,
+    "family": "orbit2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        333,
+        72,
+        747,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 11.8,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        157,
+        176,
+        923,
+        434
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.72,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        540,
+        250,
+        797
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.37,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "答對就點亮星球\n看圖題目・會念給孩子聽\n\n📲 請到個人檔案（bio）的連結下載\n\n#LumiMathPlanet",
+   "caption_link": "答對就點亮星球\n看圖題目・會念給孩子聽\n\nApp Store: https://apps.apple.com/app/id6778269699\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimath/zh-Hant.jpg"
+  }
+ ]
+}

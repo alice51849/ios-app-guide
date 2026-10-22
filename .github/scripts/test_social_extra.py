@@ -1330,3 +1330,112 @@ class ReviewEveryAppFitsTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Platform50Test(unittest.TestCase):
+    """2026-10-22 (owner: 50 platforms a day): every new adapter sends the App Store link in what it posts."""
+
+    NEW = ("misskey", "pixelfed", "telegraph", "writeas", "hatena", "wordpress", "blogger", "whitewind")
+
+    def run_post(self, channel, routes, it=None, env=None):
+        fake = Fake(routes)
+        values = {k: "v" for k in S.SECRETS[channel]}
+        values.update(env or {})
+        with mock.patch.dict(os.environ, values, clear=True), mock.patch.object(S, "http", fake), \
+                mock.patch.object(S, "fetch_bytes", return_value=b"\xff\xd8\xffjpg"), \
+                mock.patch.object(S, "to_jpeg", side_effect=lambda b: b):
+            res = S.POSTERS[channel](it or S.clip_item("a/en", clip("a", "en"), channel))
+        return res, fake
+
+    def test_every_new_channel_is_wired_and_secret_gated(self):
+        for ch in self.NEW:
+            self.assertIn(ch, S.CHANNELS)
+            for table in (S.PLAN, S.SECRETS, S.CT, S.RENDER, S.POSTERS, S.WHOAMI):
+                self.assertIn(ch, table, ch)
+            self.assertEqual(DL.coarse_campaign(f"h7_a_{S.CT[ch]}"), "social", ch)
+            with mock.patch.dict(os.environ, {}, clear=True):
+                self.assertFalse(S.configured(ch), ch)
+
+    def test_every_new_channel_renders_the_download_link_it_sends(self):
+        for ch in self.NEW:
+            for it in (S.clip_item("a/en", clip("a", "en"), ch), dict(item("card"), store=item("card")["store"])):
+                out = S.render(it, ch)
+                self.assertIn(it["store"], out["final"], ch)
+                for _, text in out["checks"]:
+                    self.assertEqual(S.link_problems(text, it, ch), [], ch)
+
+    def test_misskey_card_uploads_to_the_drive_then_notes_with_the_links(self):
+        res, fake = self.run_post("misskey", [("POST", "/api/drive/files/create", {"id": "f1"}),
+                                              ("POST", "/api/notes/create", {"createdNote": {"id": "n1"}})],
+                                  it=item("card", "ja"))
+        self.assertEqual(res["link"], "https://misskey.io/notes/n1")
+        note = json.loads(fake.find("notes/create")[0]["data"])
+        self.assertEqual(note["fileIds"], ["f1"])
+        self.assertIn("apps.apple.com", note["text"])
+        self.assertLessEqual(len(note["text"]), S.post_qa.LIMITS["misskey"])
+
+    def test_pixelfed_uploads_the_video_and_posts_without_the_link_line(self):
+        res, fake = self.run_post("pixelfed", [("POST", "/api/v1/media", {"id": "m1"}),
+                                               ("POST", "/api/v1/statuses", {"id": 9, "url": "https://pixelfed.social/p/x/9"})])
+        self.assertEqual(res["link"], "https://pixelfed.social/p/x/9")
+        status = json.loads(fake.find("statuses")[0]["data"])
+        self.assertEqual(status["media_ids"], ["m1"])
+        self.assertIn("apps.apple.com", status["status"])
+        self.assertNotIn("catbox", status["status"])
+
+    def test_telegraph_page_links_both_stores(self):
+        res, fake = self.run_post("telegraph", [("POST", "/createPage", {"ok": True, "result": {"path": "p-1", "url": "https://telegra.ph/p-1"}})])
+        self.assertEqual(res["link"], "https://telegra.ph/p-1")
+        sent = dict(urllib.parse.parse_qsl(fake.calls[0]["data"].decode()))
+        self.assertIn("apps.apple.com", sent["content"])
+        self.assertEqual(sent["author_url"], "https://open.cait518.cc/ig/")
+
+    def test_writeas_posts_markdown_to_the_blog(self):
+        res, fake = self.run_post("writeas", [("POST", "/collections/lumi/posts", {"data": {"id": "i1", "slug": "s1"}})],
+                                  env={"WRITEAS_BLOG": "lumi"})
+        self.assertEqual(res["link"], "https://write.as/lumi/s1")
+        body = json.loads(fake.calls[0]["data"])["body"]
+        self.assertIn("](https://apps.apple.com", body)
+
+    def test_hatena_atom_entry_is_published_and_its_link_read_back(self):
+        answer = (200, {}, '<entry><id>tag:x-1</id><link rel="alternate" type="text/html" href="https://lumi.hatenablog.com/entry/1"/></entry>'.encode())
+        res, fake = self.run_post("hatena", [("POST", "/atom/entry", answer)], it=S.clip_item("a/ja", clip("a", "ja"), "hatena"),
+                                  env={"HATENA_ID": "lumi", "HATENA_BLOG_ID": "lumi.hatenablog.com"})
+        self.assertEqual(res["link"], "https://lumi.hatenablog.com/entry/1")
+        sent = fake.calls[0]["data"].decode()
+        self.assertIn("<app:draft>no</app:draft>", sent)
+        self.assertIn("apps.apple.com", html_unescape(sent))
+        self.assertTrue(fake.calls[0]["headers"]["Authorization"].startswith("Basic "))
+
+    def test_wordpress_and_blogger_publish_html_with_the_links(self):
+        res, fake = self.run_post("wordpress", [("POST", "/posts/new", {"ID": 5, "URL": "https://lumi.wordpress.com/5"})],
+                                  env={"WPCOM_SITE": "lumi.wordpress.com"})
+        self.assertEqual(res["link"], "https://lumi.wordpress.com/5")
+        self.assertIn("apps.apple.com", urllib.parse.unquote(fake.calls[0]["data"].decode()))
+        res, fake = self.run_post("blogger", [("POST", "oauth2.googleapis.com/token", {"access_token": "t"}),
+                                              ("POST", "/blogs/v/posts/", {"id": "7", "url": "https://lumi.blogspot.com/7"})])
+        self.assertEqual(res["link"], "https://lumi.blogspot.com/7")
+        self.assertIn("apps.apple.com", json.loads(fake.calls[1]["data"])["content"])
+
+    def test_whitewind_entry_on_the_bluesky_account(self):
+        session = {"accessJwt": "j", "did": "did:plc:x", "handle": "lumi.bsky.social"}
+        res, fake = self.run_post("whitewind", [("POST", "createSession", session),
+                                                ("POST", "repo.createRecord", {"uri": "at://did:plc:x/com.whtwnd.blog.entry/3k"})])
+        self.assertEqual(res["link"], "https://whtwnd.com/lumi.bsky.social/3k")
+        rec = json.loads(fake.calls[1]["data"])
+        self.assertEqual(rec["collection"], "com.whtwnd.blog.entry")
+        self.assertEqual(rec["record"]["visibility"], "public")
+        self.assertIn("](https://apps.apple.com", rec["record"]["content"])
+
+    def test_an_app_without_a_store_link_is_refused_on_every_new_channel(self):
+        bad = dict(S.clip_item("a/en", clip("a", "en"), "misskey"), store="https://example.com/x")
+        for ch in self.NEW:
+            fake = Fake([])
+            with mock.patch.dict(os.environ, {k: "v" for k in S.SECRETS[ch]}, clear=True), mock.patch.object(S, "http", fake):
+                self.assertIsNone(S.POSTERS[ch](bad), ch)
+            self.assertEqual(fake.calls, [], ch)
+
+
+def html_unescape(text):
+    import html as _html
+    return _html.unescape(text)

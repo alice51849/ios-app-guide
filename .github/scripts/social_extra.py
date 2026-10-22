@@ -77,7 +77,8 @@ REPO = os.environ.get("GITHUB_REPOSITORY") or "alice51849/ios-app-guide"
 PAUSE = 5  # seconds between polls (tests set 0)
 STAGGER = 20  # seconds between two platforms that posted
 
-CHANNELS = ("facebook", "bluesky", "youtube", "pinterest", "tumblr", "naver", "plurk", "dailymotion")
+CHANNELS = ("facebook", "bluesky", "youtube", "pinterest", "tumblr", "naver", "plurk", "dailymotion",
+            "misskey", "pixelfed", "telegraph", "writeas", "hatena", "wordpress", "blogger", "whitewind")
 # X is pay-per-post: the owner never uses paid channels, so it is not a channel here.
 # cap = posts a day; clips/cards = what the platform takes; locales = allowed caption locales.
 PLAN = {
@@ -94,6 +95,15 @@ PLAN = {
     # Export only: posted from feed.json by the Mac (00_GrowthEngine social/feed_poster.py), whose TikTok token
     # rotates on every refresh and stays on the Mac. A clip goes out only once 04's real-recording gate passed it.
     "tiktok": {"cap": 2, "clips": True, "cards": False},
+    # 2026-10-22 (owner: 50 platforms a day): one or two a day each, the safe pace of a new account.
+    "misskey": {"cap": 2, "clips": True, "cards": True, "locales": ("ja",)},
+    "pixelfed": {"cap": 2, "clips": True, "cards": True},
+    "telegraph": {"cap": 2, "clips": True, "cards": True},
+    "writeas": {"cap": 1, "clips": True, "cards": True},
+    "hatena": {"cap": 1, "clips": True, "cards": True, "locales": ("ja",)},
+    "wordpress": {"cap": 1, "clips": True, "cards": True},
+    "blogger": {"cap": 1, "clips": True, "cards": True},
+    "whitewind": {"cap": 1, "clips": True, "cards": True},
 }
 # Served by another repo from feed.json; this script never posts them unless forced
 # (FORCE_GUIDE_BLUESKY=1 / FORCE_GUIDE_YOUTUBE=1), so nothing is ever double-posted.
@@ -114,10 +124,20 @@ SECRETS = {
     "naver": ("NAVER_ID", "NAVER_BLOG_API_PASSWORD"),
     "plurk": ("PLURK_APP_KEY", "PLURK_APP_SECRET", "PLURK_TOKEN", "PLURK_TOKEN_SECRET"),
     "dailymotion": ("DM_API_KEY", "DM_API_SECRET", "DM_USERNAME", "DM_PASSWORD"),
+    "misskey": ("MISSKEY_TOKEN",),
+    "pixelfed": ("PIXELFED_TOKEN",),
+    "telegraph": ("TELEGRAPH_TOKEN",),
+    "writeas": ("WRITEAS_TOKEN",),
+    "hatena": ("HATENA_ID", "HATENA_BLOG_ID", "HATENA_API_KEY"),
+    "wordpress": ("WPCOM_SITE", "WPCOM_TOKEN"),
+    "blogger": ("BLOGGER_BLOG_ID", "BLOGGER_REFRESH_TOKEN"),
+    "whitewind": ("BSKY_HANDLE", "BSKY_APP_PASSWORD"),
 }
 # Campaign suffix per platform (App Store ct token / Play referrer).
 CT = {"facebook": "fb", "bluesky": "bs", "youtube": "yt", "pinterest": "pin", "tumblr": "tb",
-      "naver": "nv", "plurk": "pk", "dailymotion": "dm", "mastodon": "ma", "tiktok": "tt"}
+      "naver": "nv", "plurk": "pk", "dailymotion": "dm", "mastodon": "ma", "tiktok": "tt",
+      "misskey": "mk", "pixelfed": "pxf", "telegraph": "tph", "writeas": "wrt", "hatena": "htn", "wordpress": "wp",
+      "blogger": "blg", "whitewind": "ww"}
 
 
 def env(name):
@@ -1120,6 +1140,335 @@ def whoami_dailymotion():
     print(f"dailymotion: {r.get('username')} ({r.get('screenname')})")
 
 
+# ---------------------------------------------------------------- more platforms (owner 2026-10-22: 50 platforms)
+#
+# Owner 2026-10-22: "所有社群跟影片我要求你每天至少發五十個通路" -> 50 different platforms posting every day.
+# Each one below is secret-gated like the rest (not configured -> logged, nothing sent) and goes through the same
+# render() / outgoing() / QA gate: the App Store link (+ Google Play when the app is on Android) in the text that
+# is really sent. The Mac opens the accounts with its signed-in browser and sets the secrets
+# (00_GrowthEngine ops/handoff/LOCAL_QUEUE_2026-10-22_platform50.md); then `social-extra.yml` channel=<name>
+# mode=whoami / post reads them back.
+
+def media_url(item):
+    return item.get("video") or item.get("image") or ""
+
+
+def blog_title(item):
+    return f"{item['name']} — {item['title']}"[:200]
+
+
+def link_pairs(item, review=True):
+    """(label, url) of every link a blog post carries: App Store, Google Play when on Android, then the rating
+    link (never a download link)."""
+    pairs = [(button_of(item), item["store"])]
+    play = play_of(item)
+    if play:
+        pairs.append((GOOGLE_PLAY, play))
+    if review and item.get("review"):
+        pairs.append((item["review"]["label"], item["review"]["url"]))
+    return pairs
+
+
+def blog_markdown(item):
+    if item["kind"] == "card":
+        media = f"![{(item.get('alt') or item['hook']).replace(']', ')')}]({item['image']})"
+    else:
+        media = f"[▶ {item['hook']}]({item['video']})"
+    links = "\n".join(f"- [{label}]({url})" for label, url in link_pairs(item))
+    return "\n\n".join([item["caption"], media, links])
+
+
+def blog_html(item):
+    text = "<br>".join(html.escape(line) for line in item["caption"].split("\n"))
+    if item["kind"] == "card":
+        media = f'<p><img src="{html.escape(item["image"])}" alt="{html.escape(item.get("alt") or item["hook"])}"></p>'
+    else:
+        src = html.escape(item["video"])
+        media = (f'<p><video src="{src}" controls playsinline width="360"></video></p>'
+                 f'<p><a href="{src}">▶ {html.escape(item["hook"])}</a></p>')
+    links = "<br>".join(f'<a href="{html.escape(url)}">{html.escape(label)}</a>' for label, url in link_pairs(item))
+    return f"<p>{text}</p>{media}<p>{links}</p>"
+
+
+def html_text(body):
+    """What a reader gets of an HTML body, link targets included (for the link check of the HTML sent)."""
+    hrefs = re.findall(r'href="([^"]+)"', body)
+    return "\n".join([re.sub(r"<[^>]+>", " ", body), *(html.unescape(h) for h in hrefs)])
+
+
+def render_blog(item, fmt):
+    body = blog_markdown(item) if fmt == "markdown" else blog_html(item)
+    final = "\n".join([item["caption"], media_url(item), *(f"{label}: {url}" for label, url in link_pairs(item))])
+    shown = body if fmt == "markdown" else html_text(body)
+    return {"final": final, "title": blog_title(item), "body": body, "checks": [("body", shown)]}
+
+
+def render_microblog(item, channel, media_line=True):
+    """Caption + download links within the platform's limit (hashtags give way first, a link never), then the
+    clip's video link when it still fits (media_line=False: the platform gets the video itself)."""
+    limit = post_qa.LIMITS[channel]
+    text = with_links(item["caption"], item, limit, label=f"{channel} {item.get('key')}")
+    if media_line and item["kind"] == "clip" and len(text) + len(item["video"]) + 3 <= limit:
+        text += f"\n▶ {item['video']}"
+    return {"final": text, "counted": text, "text": text, "checks": [("text", text)]}
+
+
+# Misskey (misskey.io, Japan's largest fediverse server): notes API with an access token (Settings -> API).
+def misskey_host():
+    return "https://" + re.sub(r"^https?://", "", env("MISSKEY_HOST") or "misskey.io").strip("/")
+
+
+def misskey_call(path, payload):
+    return http("POST", f"{misskey_host()}/api/{path}", jbody({"i": env("MISSKEY_TOKEN"), **payload}),
+                {"Content-Type": "application/json"})
+
+
+def render_misskey(item):
+    return render_microblog(item, "misskey")
+
+
+def post_misskey(item):
+    out = outgoing(item, "misskey")
+    if not out:
+        return None
+    files = []
+    if item["kind"] == "card":
+        body, ctype = multipart([("i", env("MISSKEY_TOKEN")),
+                                 ("file", to_jpeg(fetch_bytes(item["image"])), "card.jpg", "image/jpeg")])
+        files = [http("POST", f"{misskey_host()}/api/drive/files/create", body, {"Content-Type": ctype})["id"]]
+    note = misskey_call("notes/create", {"text": out["text"], "visibility": "public", **({"fileIds": files} if files else {})})
+    nid = note["createdNote"]["id"]
+    return {"id": nid, "link": f"{misskey_host()}/notes/{nid}"}
+
+
+def whoami_misskey():
+    me = misskey_call("i", {})
+    print(f"misskey: @{me.get('username')} on {misskey_host()}")
+
+
+# Pixelfed (pixelfed.social, photo fediverse): Mastodon-compatible API with a personal access token.
+def pixelfed_host():
+    return "https://" + re.sub(r"^https?://", "", env("PIXELFED_HOST") or "pixelfed.social").strip("/")
+
+
+def render_pixelfed(item):
+    return render_microblog(item, "pixelfed", media_line=False)
+
+
+def post_pixelfed(item):
+    out = outgoing(item, "pixelfed")
+    if not out:
+        return None
+    auth = {"Authorization": f"Bearer {env('PIXELFED_TOKEN')}"}
+    if item["kind"] == "card":
+        upload = ("file", to_jpeg(fetch_bytes(item["image"])), "card.jpg", "image/jpeg")
+    else:
+        upload = ("file", fetch_bytes(item["video"]), "clip.mp4", "video/mp4")
+    body, ctype = multipart([upload, ("description", (item.get("alt") or item["hook"])[:1000])])
+    media = http("POST", f"{pixelfed_host()}/api/v1/media", body, {**auth, "Content-Type": ctype}, timeout=600)
+    r = http("POST", f"{pixelfed_host()}/api/v1/statuses",
+             jbody({"status": out["text"], "media_ids": [media["id"]], "visibility": "public"}),
+             {**auth, "Content-Type": "application/json"})
+    return {"id": str(r["id"]), "link": r.get("url") or f"{pixelfed_host()}/p/{r['id']}"}
+
+
+def whoami_pixelfed():
+    me = http("GET", f"{pixelfed_host()}/api/v1/accounts/verify_credentials",
+              headers={"Authorization": f"Bearer {env('PIXELFED_TOKEN')}"})
+    print(f"pixelfed: @{me.get('username')} on {pixelfed_host()}")
+
+
+# Telegraph (telegra.ph, Telegram's instant-view pages; no sign-up: createAccount gives the token).
+TELEGRAPH = "https://api.telegra.ph"
+
+
+def telegraph_nodes(item):
+    nodes = [{"tag": "p", "children": [line]} for line in item["caption"].split("\n") if line.strip()]
+    if item["kind"] == "card":
+        nodes.append({"tag": "figure", "children": [{"tag": "img", "attrs": {"src": item["image"]}}]})
+    else:
+        nodes.append({"tag": "p", "children": [{"tag": "a", "attrs": {"href": item["video"]}, "children": [f"▶ {item['hook']}"]}]})
+    for label, url in link_pairs(item):
+        nodes.append({"tag": "p", "children": [{"tag": "a", "attrs": {"href": url}, "children": [label]}]})
+    return nodes
+
+
+def nodes_text(nodes):
+    out = []
+    for node in nodes:
+        for child in node.get("children", []):
+            if isinstance(child, str):
+                out.append(child)
+            else:
+                out += [child.get("attrs", {}).get("href", ""), *[c for c in child.get("children", []) if isinstance(c, str)]]
+    return "\n".join(x for x in out if x)
+
+
+def render_telegraph(item):
+    nodes = telegraph_nodes(item)
+    out = render_blog(item, "markdown")
+    return dict(out, nodes=nodes, checks=[("page", nodes_text(nodes))])
+
+
+def post_telegraph(item):
+    out = outgoing(item, "telegraph")
+    if not out:
+        return None
+    r = http("POST", f"{TELEGRAPH}/createPage", form({
+        "access_token": env("TELEGRAPH_TOKEN"), "title": out["title"][:256], "author_name": "Lumi Apps",
+        "author_url": "https://open.cait518.cc/ig/", "content": json.dumps(out["nodes"], ensure_ascii=False)}))
+    if not r.get("ok"):
+        raise RuntimeError(f"telegraph: {r.get('error')}")
+    return {"id": r["result"]["path"], "link": r["result"]["url"]}
+
+
+def whoami_telegraph():
+    r = http("GET", f"{TELEGRAPH}/getAccountInfo?" + urllib.parse.urlencode({"access_token": env("TELEGRAPH_TOKEN")}))
+    print(f"telegraph: {r.get('result', {}).get('short_name')}")
+
+
+# Write.as (write.as / WriteFreely, federated long-form): API token from POST /api/auth/login.
+WRITEAS = "https://write.as/api"
+
+
+def render_writeas(item):
+    return render_blog(item, "markdown")
+
+
+def post_writeas(item):
+    out = outgoing(item, "writeas")
+    if not out:
+        return None
+    blog = env("WRITEAS_BLOG")
+    url = f"{WRITEAS}/collections/{blog}/posts" if blog else f"{WRITEAS}/posts"
+    r = http("POST", url, jbody({"title": out["title"], "body": out["body"], "lang": (item["locale"] or "en").split("-")[0]}),
+             {"Authorization": f"Token {env('WRITEAS_TOKEN')}", "Content-Type": "application/json"})["data"]
+    link = f"https://write.as/{blog}/{r['slug']}" if blog and r.get("slug") else f"https://write.as/{r['id']}"
+    return {"id": r["id"], "link": link}
+
+
+def whoami_writeas():
+    me = http("GET", f"{WRITEAS}/me", headers={"Authorization": f"Token {env('WRITEAS_TOKEN')}"})
+    print(f"writeas: {me.get('data', {}).get('username')} blog {env('WRITEAS_BLOG') or '(anonymous posts)'}")
+
+
+# Hatena Blog (Japan): AtomPub with the blog's API key (Settings -> 詳細設定 -> AtomPub).
+def hatena_root():
+    return f"https://blog.hatena.ne.jp/{env('HATENA_ID')}/{env('HATENA_BLOG_ID')}/atom"
+
+
+def hatena_auth():
+    token = base64.b64encode(f"{env('HATENA_ID')}:{env('HATENA_API_KEY')}".encode()).decode()
+    return {"Authorization": f"Basic {token}"}
+
+
+def render_hatena(item):
+    return render_blog(item, "html")
+
+
+def post_hatena(item):
+    out = outgoing(item, "hatena")
+    if not out:
+        return None
+    cats = "".join(f'<category term="{html.escape(t.lstrip("#"))}" />' for t in item["tags"][:5])
+    entry = ('<?xml version="1.0" encoding="utf-8"?>'
+             '<entry xmlns="http://www.w3.org/2005/Atom" xmlns:app="http://www.w3.org/2007/app">'
+             f'<title>{html.escape(out["title"])}</title><author><name>{html.escape(env("HATENA_ID"))}</name></author>'
+             f'<content type="text/html">{html.escape(out["body"])}</content>{cats}'
+             '<app:control><app:draft>no</app:draft></app:control></entry>')
+    raw = http("POST", f"{hatena_root()}/entry", entry.encode("utf-8"),
+               {**hatena_auth(), "Content-Type": "application/xml; charset=utf-8"}, raw=True)[2].decode("utf-8", "replace")
+    link = re.search(r'<link rel="alternate" type="text/html" href="([^"]+)"', raw)
+    eid = re.search(r"<id>([^<]+)</id>", raw)
+    if not link:
+        raise RuntimeError("hatena: no entry link in the answer")
+    return {"id": eid.group(1) if eid else link.group(1), "link": html.unescape(link.group(1))}
+
+
+def whoami_hatena():
+    raw = http("GET", hatena_root(), headers=hatena_auth(), raw=True)[2].decode("utf-8", "replace")
+    title = re.search(r"<atom:title>([^<]+)</atom:title>|<title>([^<]+)</title>", raw)
+    print(f"hatena: {env('HATENA_ID')} / {env('HATENA_BLOG_ID')} {(title.group(1) or title.group(2)) if title else ''}")
+
+
+# WordPress.com (free blog; REST v1.1 with an OAuth2 token of the site's own app).
+WPCOM = "https://public-api.wordpress.com/rest/v1.1"
+
+
+def render_wordpress(item):
+    return render_blog(item, "html")
+
+
+def post_wordpress(item):
+    out = outgoing(item, "wordpress")
+    if not out:
+        return None
+    r = http("POST", f"{WPCOM}/sites/{urllib.parse.quote(env('WPCOM_SITE'), safe='')}/posts/new", form({
+        "title": out["title"], "content": out["body"], "status": "publish",
+        "tags": ",".join(t.lstrip("#") for t in item["tags"][:5])}), {"Authorization": f"Bearer {env('WPCOM_TOKEN')}"})
+    return {"id": str(r["ID"]), "link": r["URL"]}
+
+
+def whoami_wordpress():
+    me = http("GET", f"{WPCOM}/me", headers={"Authorization": f"Bearer {env('WPCOM_TOKEN')}"})
+    print(f"wordpress: {me.get('username')} site {env('WPCOM_SITE')}")
+
+
+# Blogger (Google): the Mac's Google OAuth client with the blogger scope (refresh token BLOGGER_REFRESH_TOKEN).
+BLOGGER = "https://www.googleapis.com/blogger/v3"
+
+
+def blogger_token():
+    return http("POST", "https://oauth2.googleapis.com/token", form({
+        "client_id": env("BLOGGER_CLIENT_ID") or env("YT_CLIENT_ID"),
+        "client_secret": env("BLOGGER_CLIENT_SECRET") or env("YT_CLIENT_SECRET"),
+        "refresh_token": env("BLOGGER_REFRESH_TOKEN"), "grant_type": "refresh_token"}))["access_token"]
+
+
+def render_blogger(item):
+    return render_blog(item, "html")
+
+
+def post_blogger(item):
+    out = outgoing(item, "blogger")
+    if not out:
+        return None
+    r = http("POST", f"{BLOGGER}/blogs/{env('BLOGGER_BLOG_ID')}/posts/",
+             jbody({"kind": "blogger#post", "title": out["title"], "content": out["body"],
+                    "labels": [t.lstrip("#") for t in item["tags"][:5]]}),
+             {"Authorization": f"Bearer {blogger_token()}", "Content-Type": "application/json"})
+    return {"id": str(r["id"]), "link": r["url"]}
+
+
+def whoami_blogger():
+    r = http("GET", f"{BLOGGER}/blogs/{env('BLOGGER_BLOG_ID')}", headers={"Authorization": f"Bearer {blogger_token()}"})
+    print(f"blogger: {r.get('name')} {r.get('url')}")
+
+
+# WhiteWind (whtwnd.com, Markdown blog on the AT Protocol): the Bluesky account's app password.
+def render_whitewind(item):
+    return render_blog(item, "markdown")
+
+
+def post_whitewind(item):
+    out = outgoing(item, "whitewind")
+    if not out:
+        return None
+    s = bsky_session()
+    record = {"$type": "com.whtwnd.blog.entry", "title": out["title"], "content": out["body"],
+              "createdAt": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z"), "visibility": "public"}
+    r = http("POST", f"{s['pds']}/xrpc/com.atproto.repo.createRecord",
+             jbody({"repo": s["did"], "collection": "com.whtwnd.blog.entry", "record": record}),
+             {"Authorization": f"Bearer {s['jwt']}", "Content-Type": "application/json"})
+    rkey = r["uri"].rsplit("/", 1)[-1]
+    return {"id": r["uri"], "link": f"https://whtwnd.com/{s['handle']}/{rkey}"}
+
+
+def whoami_whitewind():
+    s = bsky_session()
+    print(f"whitewind: {s['handle']} ({s['did']})")
+
+
 # ---------------------------------------------------------------- what really goes out
 
 def render_mastodon(item):
@@ -1139,7 +1488,10 @@ def render_tiktok(item):
 
 RENDER = {"facebook": render_facebook, "bluesky": render_bluesky, "youtube": render_youtube,
           "pinterest": render_pinterest, "tumblr": render_tumblr, "naver": render_naver, "plurk": render_plurk,
-          "dailymotion": render_dailymotion, "mastodon": render_mastodon, "tiktok": render_tiktok}
+          "dailymotion": render_dailymotion, "mastodon": render_mastodon, "tiktok": render_tiktok,
+          "misskey": render_misskey, "pixelfed": render_pixelfed, "telegraph": render_telegraph,
+          "writeas": render_writeas, "hatena": render_hatena, "wordpress": render_wordpress,
+          "blogger": render_blogger, "whitewind": render_whitewind}
 
 
 def render(item, channel):
@@ -1153,10 +1505,14 @@ def render(item, channel):
 # ---------------------------------------------------------------- runner
 
 POSTERS = {"facebook": post_facebook, "bluesky": post_bluesky, "youtube": post_youtube, "pinterest": post_pinterest,
-           "tumblr": post_tumblr, "naver": post_naver, "plurk": post_plurk, "dailymotion": post_dailymotion}
+           "tumblr": post_tumblr, "naver": post_naver, "plurk": post_plurk, "dailymotion": post_dailymotion,
+           "misskey": post_misskey, "pixelfed": post_pixelfed, "telegraph": post_telegraph, "writeas": post_writeas,
+           "hatena": post_hatena, "wordpress": post_wordpress, "blogger": post_blogger, "whitewind": post_whitewind}
 WHOAMI = {"facebook": whoami_facebook, "bluesky": whoami_bluesky, "youtube": whoami_youtube,
           "pinterest": whoami_pinterest, "tumblr": whoami_tumblr, "naver": whoami_naver, "plurk": whoami_plurk,
-          "dailymotion": whoami_dailymotion}
+          "dailymotion": whoami_dailymotion, "misskey": whoami_misskey, "pixelfed": whoami_pixelfed,
+          "telegraph": whoami_telegraph, "writeas": whoami_writeas, "hatena": whoami_hatena,
+          "wordpress": whoami_wordpress, "blogger": whoami_blogger, "whitewind": whoami_whitewind}
 
 
 def whoami(channels):

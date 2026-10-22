@@ -47,7 +47,7 @@ on:
   workflow_dispatch:
     inputs:
       channel:
-        description: "Platform (all, facebook, bluesky, youtube, pinterest, tumblr, naver, plurk, dailymotion, x; comma list ok)"
+        description: "Platform (all, facebook, bluesky, youtube, pinterest, tumblr, naver, plurk, dailymotion, misskey, pixelfed, telegraph, writeas, hatena, wordpress, blogger, whitewind; comma list ok)"
         default: "all"
       mode:
         description: "post or whoami"
@@ -136,6 +136,23 @@ jobs:
           DM_API_SECRET: ${{ secrets.DM_API_SECRET }}
           DM_USERNAME: ${{ secrets.DM_USERNAME }}
           DM_PASSWORD: ${{ secrets.DM_PASSWORD }}
+          # 2026-10-22 platform 50 (social_extra.py; the Mac sets these, 00_GrowthEngine ops/handoff/LOCAL_QUEUE_2026-10-22_platform50.md)
+          MISSKEY_HOST: ${{ secrets.MISSKEY_HOST }}
+          MISSKEY_TOKEN: ${{ secrets.MISSKEY_TOKEN }}
+          PIXELFED_HOST: ${{ secrets.PIXELFED_HOST }}
+          PIXELFED_TOKEN: ${{ secrets.PIXELFED_TOKEN }}
+          TELEGRAPH_TOKEN: ${{ secrets.TELEGRAPH_TOKEN }}
+          WRITEAS_TOKEN: ${{ secrets.WRITEAS_TOKEN }}
+          WRITEAS_BLOG: ${{ secrets.WRITEAS_BLOG }}
+          HATENA_ID: ${{ secrets.HATENA_ID }}
+          HATENA_BLOG_ID: ${{ secrets.HATENA_BLOG_ID }}
+          HATENA_API_KEY: ${{ secrets.HATENA_API_KEY }}
+          WPCOM_SITE: ${{ secrets.WPCOM_SITE }}
+          WPCOM_TOKEN: ${{ secrets.WPCOM_TOKEN }}
+          BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
+          BLOGGER_REFRESH_TOKEN: ${{ secrets.BLOGGER_REFRESH_TOKEN }}
+          BLOGGER_CLIENT_ID: ${{ secrets.BLOGGER_CLIENT_ID }}
+          BLOGGER_CLIENT_SECRET: ${{ secrets.BLOGGER_CLIENT_SECRET }}
           SCHEDULE: ${{ github.event.schedule || inputs.cron }}
           CHANNEL: ${{ inputs.channel }}
           MODE: ${{ inputs.mode }}

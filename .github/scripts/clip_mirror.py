@@ -9,6 +9,12 @@ asset of this public repo brings every channel back without touching posting log
       download each catbox clip, check it is a real mp4, upload it to the release as
       <catbox id>.mp4 (--clobber), then read the release back: only an asset that is there
       with the same byte size counts as mirrored.
+  clip_mirror.py recover [--results mirror-results.json] --published PUBLISHED.json --history CLIPS_OUT_CLONE
+      (without a results file: every clip clips.json still has on catbox)
+      for the clips catbox no longer serves (empty or missing file), take the render from the
+      Growth Engine's clips-out branch history: the blob whose sha256 (first 16 hex) equals the
+      sha recorded in shorts/published.json, so it is byte for byte what was once uploaded.
+      Upload it under the same catbox id and mark it mirrored.
   clip_mirror.py rewrite [--results mirror-results.json]
       in clips.json, swap the catbox url of every mirrored clip for the release url. Plain
       text replacement of the quoted url, so the file's formatting stays byte for byte, and
@@ -22,6 +28,7 @@ schedule posts between 2026-10-22 and 2026-10-26, then the rest.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -182,6 +189,20 @@ def upload(path: Path) -> str:
     return err
 
 
+def verify(results: dict[str, dict]) -> int:
+    """Read the release back: a clip counts only when its asset is there at the size we sent.
+    Marks the rest not ok and returns how many are mirrored."""
+    final = release_assets()
+    good = 0
+    for cid, r in results.items():
+        if r["ok"]:
+            if final.get(f"{cid}.mp4", 0) >= MIN_BYTES and final[f"{cid}.mp4"] == r.get("bytes"):
+                good += 1
+            else:
+                r.update(ok=False, err="asset missing or wrong size after upload")
+    return good
+
+
 def cmd_mirror(args) -> int:
     data = json.loads(CLIPS.read_text())
     todo = ordered(data)
@@ -226,16 +247,7 @@ def cmd_mirror(args) -> int:
     with ThreadPoolExecutor(max_workers=args.jobs) as pool:
         list(pool.map(one, todo))
 
-    # Read the release back: a clip counts only when its asset is there at the size we sent.
-    final = release_assets()
-    good = 0
-    for cid, r in results.items():
-        if r["ok"]:
-            if final.get(f"{cid}.mp4", 0) >= MIN_BYTES and (
-                    "note" in r or final[f"{cid}.mp4"] == r.get("bytes")):
-                good += 1
-            else:
-                r.update(ok=False, err="asset missing or wrong size after upload")
+    good = verify(results)
     Path(args.results).write_text(json.dumps(results, indent=1, sort_keys=True))
     failed = [c for c, r in results.items() if not r["ok"]]
     print(f"mirrored {good} / {len(todo)}; failed {len(failed)}", flush=True)
@@ -243,6 +255,67 @@ def cmd_mirror(args) -> int:
         print("::error::catbox did not answer from this runner (first clips all failed); nothing to commit")
         return 3
     return 0 if good else 1
+
+
+def git_bytes(repo: Path, *a: str) -> tuple[int, bytes]:
+    r = subprocess.run(["git", "-C", str(repo), *a], capture_output=True)
+    return r.returncode, r.stdout
+
+
+def from_history(repo: Path, path: str, sha16: str, dest: Path) -> str:
+    """Write to dest the version of path in repo's history whose sha256[:16] is sha16. '' on success."""
+    code, out = git_bytes(repo, "log", "--format=%H", "--", path)
+    if code != 0:
+        return "git log failed"
+    seen: set[str] = set()
+    for commit in out.decode().split():
+        code, blob = git_bytes(repo, "rev-parse", f"{commit}:{path}")
+        blob_id = blob.decode().strip()
+        if code != 0 or not blob_id or blob_id in seen:  # the commit that removed the file has no blob
+            continue
+        seen.add(blob_id)
+        code, data = git_bytes(repo, "cat-file", "blob", blob_id)
+        if code == 0 and hashlib.sha256(data).hexdigest()[:16] == sha16:
+            dest.write_bytes(data)
+            return ""
+    return f"no version of {path} in clips-out matches sha {sha16} ({len(seen)} checked)"
+
+
+def cmd_recover(args) -> int:
+    rp = Path(args.results)
+    if rp.exists():
+        results = json.loads(rp.read_text())
+    else:  # no results file: every clip clips.json still has on catbox is one to recover
+        results = {cid: {"key": key, "ok": False, "err": "still on catbox"}
+                   for cid, key, _url in ordered(json.loads(CLIPS.read_text()))}
+    published = json.loads(Path(args.published).read_text())
+    hist = Path(args.history)
+    work = Path(tempfile.mkdtemp(prefix="clip-recover-"))
+    todo = [(cid, r["key"]) for cid, r in results.items() if not r["ok"]]
+    print(f"recovering {len(todo)} clips from clips-out history", flush=True)
+    for cid, key in todo:
+        app, _, locale = key.partition("/")
+        sha16 = ((published.get(app) or {}).get(locale) or {}).get("sha")
+        dest = work / f"{cid}.mp4"
+        if not sha16:
+            err = "no sha in published.json"
+        else:
+            err = from_history(hist, f"{app}/{app}_{locale}.mp4", sha16, dest)
+        if not err:
+            err = _check(dest, None) or upload(dest)
+        size = dest.stat().st_size if dest.exists() else 0
+        dest.unlink(missing_ok=True)
+        if err:
+            results[cid]["err"] = f"{results[cid].get('err', '')} | clips-out: {err}"[-300:]
+            print(f"FAIL {cid} {key}: {err}", flush=True)
+        else:
+            results[cid] = {"key": key, "ok": True, "bytes": size, "note": "from clips-out"}
+            print(f"ok   {cid} {key} {size} (clips-out)", flush=True)
+    good = verify(results)
+    Path(args.results).write_text(json.dumps(results, indent=1, sort_keys=True))
+    left = [r["key"] for r in results.values() if not r["ok"]]
+    print(f"mirrored {good} / {len(results)}; still missing {len(left)}: {', '.join(left[:20])}", flush=True)
+    return 0
 
 
 def rewrite_text(text: str, mirrored: set[str]) -> tuple[str, int]:
@@ -281,6 +354,11 @@ def main(argv=None) -> int:
     m.add_argument("--jobs", type=int, default=6)
     m.add_argument("--limit", type=int, default=0)
     m.set_defaults(fn=cmd_mirror)
+    rc = sub.add_parser("recover")
+    rc.add_argument("--results", default="mirror-results.json")
+    rc.add_argument("--published", required=True)
+    rc.add_argument("--history", required=True)
+    rc.set_defaults(fn=cmd_recover)
     w = sub.add_parser("rewrite")
     w.add_argument("--results", default="mirror-results.json")
     w.set_defaults(fn=cmd_rewrite)

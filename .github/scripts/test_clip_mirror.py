@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Tests for clip_mirror.py (no network)."""
+import hashlib
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -87,6 +89,42 @@ class CheckTest(unittest.TestCase):
             self.assertIn("content-length", M._check(good, 99))
             self.assertIn("not an mp4", M._check(html, None))
             self.assertIn("too small", M._check(tiny, None))
+
+
+class RecoverTest(unittest.TestCase):
+    def _repo(self, d):
+        git = lambda *a: subprocess.run(["git", "-C", d, "-c", "user.name=t", "-c", "user.email=t@t", *a],
+                                        check=True, capture_output=True)
+        git("init", "-q")
+        path = Path(d) / "app" / "app_en.mp4"
+        path.parent.mkdir()
+        old = b"\x00\x00\x00\x18ftypmp42" + b"1" * 30_000
+        new = b"\x00\x00\x00\x18ftypmp42" + b"2" * 30_000
+        path.write_bytes(old)
+        git("add", "-A"); git("commit", "-q", "-m", "one")
+        path.write_bytes(new)
+        git("add", "-A"); git("commit", "-q", "-m", "two")
+        path.unlink()
+        git("add", "-A"); git("commit", "-q", "-m", "removed")
+        return old, new
+
+    def test_finds_the_version_with_the_published_sha_even_after_it_was_replaced_and_removed(self):
+        with tempfile.TemporaryDirectory() as d, tempfile.TemporaryDirectory() as out:
+            old, new = self._repo(d)
+            for want in (old, new):
+                dest = Path(out) / "x.mp4"
+                dest.unlink(missing_ok=True)
+                err = M.from_history(Path(d), "app/app_en.mp4", hashlib.sha256(want).hexdigest()[:16], dest)
+                self.assertEqual(err, "")
+                self.assertEqual(dest.read_bytes(), want)
+            self.assertIn("no version", M.from_history(Path(d), "app/app_en.mp4", "0" * 16, Path(out) / "y.mp4"))
+
+    def test_verify_counts_only_assets_that_read_back_at_the_uploaded_size(self):
+        results = {"aaaaaa": {"ok": True, "bytes": 50_000}, "bbbbbb": {"ok": True, "bytes": 50_000},
+                   "cccccc": {"ok": False, "err": "x"}}
+        with mock.patch.object(M, "release_assets", return_value={"aaaaaa.mp4": 50_000, "bbbbbb.mp4": 49_000}):
+            self.assertEqual(M.verify(results), 1)
+        self.assertFalse(results["bbbbbb"]["ok"])
 
 
 if __name__ == "__main__":

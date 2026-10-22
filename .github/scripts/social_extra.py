@@ -375,10 +375,10 @@ def todays_cards(day, channel):
 # localized text cards (00_GrowthEngine social/carousel/build_carousels.py; pain -> fix -> app, and "5 apps for X"
 # lists with at least 3 other developers' apps, names and objective facts only). The images live on the public
 # release "carousel-cards"; the queue is .github/growth/carousels.json. Each entry opens on its `start` day and stays
-# offered for CAROUSEL_WINDOW_DAYS; the posters keep their own caps and never post a key twice. A card item carries
+# offered for CAROUSEL_WINDOW_DAYS (the generator opens about 6 a day); the posters keep their own caps and never post a key twice. A card item carries
 # `images` (all cards, in order) besides `image` (the cover): Bluesky takes up to 4, single-image posters the cover.
 CAROUSELS = HERE.parent / "growth" / "carousels.json"
-CAROUSEL_WINDOW_DAYS = 21
+CAROUSEL_WINDOW_DAYS = 14   # bounds the feed (and its online QA) to the last two weeks of the queue
 
 
 def carousel_store_url(entry, channel):

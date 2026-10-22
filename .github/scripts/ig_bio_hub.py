@@ -187,6 +187,22 @@ WORDS = {
            "c_productivity": "الإنتاجية", "c_photo-utility": "الصور والأدوات", "c_kids": "الأطفال والتعلّم",
            "c_education": "التعليم", "c_finance": "المال والسفر", "c_travel": "السفر", "c_health": "الصحة",
            "c_lifestyle": "نمط الحياة", "c_sleep-sound": "النوم والتركيز", "c_utility": "المزيد"},
+    # 2026-10-22: clip_posts.TEXT gained ru / sk captions (10-21 small-country push); without their words the
+    # page test failed and ig-bio-hub.yml stopped rebuilding the page (it kept serving the 10-20 build).
+    "ru": {"title": "Lumi Studio · Приложения", "h1": "Приложения Lumi Studio",
+           "lead": "Нажмите на приложение из нашего поста — оно сразу откроется в App Store.",
+           "latest": "Из наших последних постов", "all": "Все приложения", "home": "Подробнее о Lumi Studio",
+           "c_productivity": "Продуктивность", "c_photo-utility": "Фото и инструменты", "c_kids": "Дети и обучение",
+           "c_education": "Образование", "c_finance": "Деньги и путешествия", "c_travel": "Путешествия",
+           "c_health": "Здоровье", "c_lifestyle": "Образ жизни", "c_sleep-sound": "Сон и концентрация",
+           "c_utility": "Ещё"},
+    "sk": {"title": "Lumi Studio · Aplikácie", "h1": "Aplikácie od Lumi Studio",
+           "lead": "Ťuknite na aplikáciu z nášho príspevku – otvorí sa priamo v App Store.",
+           "latest": "Z našich najnovších príspevkov", "all": "Všetky aplikácie", "home": "Viac o Lumi Studio",
+           "c_productivity": "Produktivita", "c_photo-utility": "Fotky a nástroje", "c_kids": "Deti a učenie",
+           "c_education": "Vzdelávanie", "c_finance": "Peniaze a cestovanie", "c_travel": "Cestovanie",
+           "c_health": "Zdravie", "c_lifestyle": "Životný štýl", "c_sleep-sound": "Spánok a sústredenie",
+           "c_utility": "Ďalšie"},
 }
 
 
@@ -346,7 +362,11 @@ def display_name(ios_id, locale):
 
 
 def play_link(ios_id, key):
-    return play_store_url(ios_id, campaign(key))   # None when not on Android; SnapshotMissing when unreadable
+    """The Google Play button with utm_source=ig_bio_<app>, the same token as the page's App Store ct (the hub keeps
+    its own per-app row, like the App Store buttons, and the root-site mirror ig_hub_sync.py refuses any other
+    referrer: the coarse "social" token sent since 10-17 kept the live page stuck on the 10-17 build).
+    None when not on Android; SnapshotMissing when unreadable."""
+    return play_store_url(ios_id, campaign(key), channel_level=False)
 
 
 def fetch_artwork(ids, opener=urllib.request.urlopen, countries=("us", "tw", "jp")):
@@ -490,6 +510,11 @@ def problems(page, min_links=10):
         out.append(f"only {len(links)} App Store buttons")
     if bad:
         out.append(f"App Store links without pt / ct=ig_bio_<app>: {bad[:3]}")
+    plays = re.findall(r'href="(https://play\.google\.com/[^"]+)"', page)
+    bad = [u for u in plays if not re.fullmatch(r"https://play\.google\.com/store/apps/details\?id=[A-Za-z0-9_.]+"
+                                                r"&amp;referrer=utm_source%3Dig_bio_[a-z0-9]{1,23}%26utm_campaign%3D[a-z0-9_]+", u)]
+    if bad:
+        out.append(f"Google Play links without the ig_bio referrer: {bad[:3]}")
     if re.search(r"<script[^>]+src=|<iframe|<form|javascript:", page, re.I):
         out.append("external script, frame or form in the page")
     if re.search(r"""href=["']http://""", page):

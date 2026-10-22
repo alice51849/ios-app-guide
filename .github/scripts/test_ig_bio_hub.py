@@ -65,8 +65,12 @@ def data(**over):
     return H.Data(**kw)
 
 
-def play_for(ios_id, ct):
-    """Mochi and Mask My File are on Android in this fixture; the real referrer shape."""
+def play_for(ios_id, ct, channel_level=True):
+    """Mochi and Mask My File are on Android in this fixture; the real referrer shape. The hub sends the ig_bio_<app>
+    label itself (channel_level=False): the app-level coarsening would turn it into "social", which the root-site
+    mirror refuses (the live page stayed on the 10-17 build until 10-22)."""
+    if channel_level is not False:
+        ct = "social"
     pkg = {MOCHI_ID: "com.alice51849.MochiTodo", MASK_ID: "com.alice51849.MaskMyFile"}.get(str(ios_id))
     if not pkg:
         return None
@@ -203,6 +207,15 @@ class HubPageTest(unittest.TestCase):
         plays = re.findall(r'href="(https://play\.google\.com/[^"]+)"', page)
         self.assertEqual(len(plays), 4)                                       # Mochi and Mask My File, twice each
         self.assertTrue(all("utm_source%3Dig_bio_" in p for p in plays))
+        self.assertIn("Google Play links without the ig_bio referrer",
+                      " ".join(H.problems(page.replace("utm_source%3Dig_bio_mochi", "utm_source%3Dsocial"))))
+
+    def test_the_real_play_link_keeps_the_ig_bio_label(self):
+        import social_post_common as common
+        snapshot = {MOCHI_ID: {"key": "mochitodo", "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo"}}
+        with mock.patch.object(common, "android_apps", return_value=snapshot):
+            link = H.play_link(MOCHI_ID, "mochi")
+        self.assertIn("utm_source%3Dig_bio_mochi%26", link)
 
     def test_the_page_is_light_static_and_the_same_for_the_same_data(self):
         page = self.page()

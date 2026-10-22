@@ -17,9 +17,12 @@
   "channels": {
     "instagram": {
       "kind": "reels",
-      "start": "2026-10-17",
+      "start": "2026-10-22",
       "stages": [
-        1
+        3,
+        4,
+        5,
+        6
       ],
       "slots": [
         1,
@@ -33,13 +36,17 @@
       "ceiling": null,
       "ceiling_until": null,
       "events": [],
-      "maintenance_note": "2026-10-20 maintenance (10 measurement dept): reels ~1 view each (reports/exposure/channel_views.json), stages [3,4,5,6] -> [1], no climb; capacity moved to Bluesky / YouTube Shorts quality"
+      "maintenance_note": "2026-10-20 maintenance (10 measurement dept): reels ~1 view each (reports/exposure/channel_views.json), stages [3,4,5,6] -> [1], no climb; capacity moved to Bluesky / YouTube Shorts quality",
+      "restore_note": "2026-10-22 業主「所有社群跟影片…全部啟動」：回到安全上限爬坡（每 3 天升一階，平台限流仍自動退階）；Reels 1 → 3→4→5→6（帳號每天總量 ≤10 含輪播與卡片）"
     },
     "instagram_feed": {
       "kind": "carousel",
-      "start": "2026-10-17",
+      "start": "2026-10-22",
       "stages": [
-        0
+        1,
+        1,
+        2,
+        2
       ],
       "slots": [
         7,
@@ -49,13 +56,16 @@
       "ceiling": null,
       "ceiling_until": null,
       "events": [],
-      "maintenance_note": "2026-10-20 maintenance: carousels paused [1,1,2,2,2] -> [0]; the account keeps 1 reel a day"
+      "maintenance_note": "2026-10-20 maintenance: carousels paused [1,1,2,2,2] -> [0]; the account keeps 1 reel a day",
+      "restore_note": "2026-10-22 業主「所有社群跟影片…全部啟動」：回到安全上限爬坡（每 3 天升一階，平台限流仍自動退階）；圖文輪播 0 → 1→2"
     },
     "telegram": {
       "kind": "clips",
-      "start": "2026-10-17",
+      "start": "2026-10-22",
       "stages": [
-        1
+        3,
+        4,
+        6
       ],
       "slots": [
         1,
@@ -69,7 +79,8 @@
       "ceiling": null,
       "ceiling_until": null,
       "events": [],
-      "maintenance_note": "2026-10-20 maintenance (10 measurement dept): ~1 view per post (reports/exposure/channel_views.json 74 posts / 74 views); clips [3,4,6] -> [1] (the 01:00 slot only, no climb), text posts 3 -> 1 a day (telegram-daily.yml keeps only the 01:00 cron); capacity moved to Bluesky / YouTube Shorts quality"
+      "maintenance_note": "2026-10-20 maintenance (10 measurement dept): ~1 view per post (reports/exposure/channel_views.json 74 posts / 74 views); clips [3,4,6] -> [1] (the 01:00 slot only, no climb), text posts 3 -> 1 a day (telegram-daily.yml keeps only the 01:00 cron); capacity moved to Bluesky / YouTube Shorts quality",
+      "restore_note": "2026-10-22 業主「所有社群跟影片…全部啟動」：回到安全上限爬坡（每 3 天升一階，平台限流仍自動退階）；短片 1 → 3→4→6，telegram-daily.yml 恢復 09:00、15:00 兩個時段（文字帖回到每天 3 則）"
     },
     "threads": {
       "kind": "clips",

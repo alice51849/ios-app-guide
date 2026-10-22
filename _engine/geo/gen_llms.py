@@ -9141,6 +9141,7 @@ def build_sitemap_index():
         high_intent_decision_routes.SITEMAP_RELATIVE.as_posix(),
         "sitemap_maskmyfile.xml",
         "sitemap_orphans.xml",
+        "sitemap_android.xml",
     ])
     app_sitemaps = (Path(PAGES) / "apps").glob("*/sitemap*.xml")
     maps.extend(

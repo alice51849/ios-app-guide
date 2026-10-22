@@ -48,7 +48,8 @@ UA = "lumi-post-qa/1.0"
 # Platform caption limits (characters; Bluesky counts graphemes, len() is close for our text).
 LIMITS = {"telegram": 1024, "instagram": 2200, "threads": 500, "bluesky": 300, "mastodon": 500, "plurk": 360,
           "facebook": 5000, "pinterest": 800, "tumblr": 4096, "naver": 10000, "youtube": 5000, "dailymotion": 3000,
-          "tiktok": 2200}
+          "tiktok": 2200, "misskey": 3000, "pixelfed": 2000, "telegraph": 60000, "writeas": 60000, "hatena": 60000,
+          "wordpress": 60000, "blogger": 60000, "whitewind": 60000}
 MAX_TAGS = {"instagram": 5, "threads": 1, "telegram": 3, "bluesky": 3, "facebook": 3, "plurk": 3, "mastodon": 5,
             "pinterest": 10, "tumblr": 10, "naver": 10, "youtube": 15, "dailymotion": 10,
             "tiktok": 5}

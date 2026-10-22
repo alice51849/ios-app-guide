@@ -57,7 +57,10 @@ SERVED_ROWS = [("Mastodon", "停權冷卻（鎖定）")]
 EXTRA_CHANNELS = {"instagram_feed": ("Instagram 圖文輪播", "IGf"),
                   "facebook": ("Facebook", "FB"), "bluesky": ("Bluesky", "Bs"), "youtube": ("YouTube Shorts", "YT"),
                   "pinterest": ("Pinterest", "Pin"), "tumblr": ("Tumblr", "Tb"), "naver": ("Naver Blog", "Nv"),
-                  "plurk": ("Plurk", "Pk"), "dailymotion": ("Dailymotion", "DM")}
+                  "plurk": ("Plurk", "Pk"), "dailymotion": ("Dailymotion", "DM"),
+                  "misskey": ("Misskey", "Mk"), "pixelfed": ("Pixelfed", "Pxf"), "telegraph": ("Telegraph", "Tph"),
+                  "writeas": ("Write.as", "Wa"), "hatena": ("Hatena Blog", "Htn"), "wordpress": ("WordPress.com", "WP"),
+                  "blogger": ("Blogger", "Blg"), "whitewind": ("WhiteWind", "WW")}
 
 
 def load_json(path, default):

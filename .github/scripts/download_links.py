@@ -228,6 +228,10 @@ _CLIP_CAMPAIGN = {
     "igc": "instagram", "bs": "bluesky", "bsky": "bluesky", "yt": "youtube", "fb": "social", "pin": "social",
     "tb": "social", "nv": "social", "pk": "social", "dm": "social", "ma": "social", "tt": "social",
     "ln": "outreach",
+    # 2026-10-22 platform 50 (social_extra.py): Misskey, Pixelfed, Telegraph, Write.as, Hatena Blog,
+    # WordPress.com, Blogger, WhiteWind.
+    "mk": "social", "pxf": "social", "tph": "social", "wrt": "social", "htn": "social", "wp": "social",
+    "blg": "social", "ww": "social",
 }
 # Hand-posted hero kits h_<app>_<market>_<channel>.
 _HERO_CAMPAIGN = dict(_CLIP_CAMPAIGN, **{

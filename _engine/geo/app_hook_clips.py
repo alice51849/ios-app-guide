@@ -54,7 +54,13 @@ START = "<!-- app-hook-clip:start -->"
 END = "<!-- app-hook-clip:end -->"
 BLOCK_RE = re.compile(re.escape(START) + r".*?" + re.escape(END) + r"\n?", re.S)
 QR_END = "<!-- app-store-qr:end -->"
-CLIP_URL_RE = re.compile(r"https://files\.catbox\.moe/([a-z0-9]+)\.mp4")
+# A clip lives on catbox, or (since 2026-10-22, catbox unreachable) on the clips-mirror release of the guide
+# repo under the same id, so both urls name the same clip.
+MIRROR_BASE = "https://github.com/alice51849/ios-app-guide/releases/download/clips-mirror"
+CLIP_URL_RE = re.compile(
+    r"https://(?:files\.catbox\.moe|github\.com/alice51849/ios-app-guide/releases/download/clips-mirror)"
+    r"/([a-z0-9]+)\.mp4"
+)
 KEY_RE = re.compile(r"[a-z0-9]+")
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 VIDEO_NS = "http://www.google.com/schemas/sitemap-video/1.1"
@@ -227,11 +233,17 @@ def load_upload_dates(pages: Path) -> dict[str, str]:
     if not path.is_file():
         return {}
     payload = json.loads(path.read_text(encoding="utf-8"))
-    return {
-        str(clip["url"]): str(clip["upload_date"])
-        for clip in payload.get("clips", [])
-        if clip.get("url") and clip.get("upload_date")
-    }
+    dates: dict[str, str] = {}
+    for clip in payload.get("clips", []):
+        if not (clip.get("url") and clip.get("upload_date")):
+            continue
+        url, date = str(clip["url"]), str(clip["upload_date"])
+        dates[url] = date
+        match = CLIP_URL_RE.fullmatch(url)
+        if match:  # the same clip moved between hosts keeps the day it was first seen
+            dates.setdefault(f"https://files.catbox.moe/{match.group(1)}.mp4", date)
+            dates.setdefault(f"{MIRROR_BASE}/{match.group(1)}.mp4", date)
+    return dates
 
 
 def render_sitemap(records: list[dict]) -> str:

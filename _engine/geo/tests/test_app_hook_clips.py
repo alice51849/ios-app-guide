@@ -107,6 +107,22 @@ class AppHookClipsTest(unittest.TestCase):
         en = (self.pages / "en-US" / "demo.html").read_text(encoding="utf-8")
         self.assertIn("social/img/demo-share.jpg", en)
 
+    def test_mirror_release_url_is_the_same_clip_and_keeps_its_upload_date(self):
+        app_hook_clips.build(self.pages, today="2026-10-14")
+        growth = self.pages / ".github" / "growth" / "clips.json"
+        data = json.loads(growth.read_text(encoding="utf-8"))
+        data["clips"]["demo/ja"]["url"] = f"{app_hook_clips.MIRROR_BASE}/bbb222.mp4"
+        growth.write_text(json.dumps(data), encoding="utf-8")
+        posters = self.pages / app_hook_clips.POSTER_RELATIVE
+        posters.mkdir(parents=True)
+        (posters / "bbb222.jpg").write_bytes(b"jpg")
+        app_hook_clips.build(self.pages, today="2026-10-22")
+        ja = (self.pages / "ja" / "demo.html").read_text(encoding="utf-8")
+        self.assertIn(f"{app_hook_clips.MIRROR_BASE}/bbb222.mp4", ja)
+        self.assertIn("assets/hook-clips/bbb222.jpg", ja)
+        self.assertIn("2026-10-14", ja)
+        self.assertNotIn("2026-10-22", ja)
+
 
 if __name__ == "__main__":
     unittest.main()

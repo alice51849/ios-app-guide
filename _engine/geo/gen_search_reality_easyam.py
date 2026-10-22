@@ -158,7 +158,7 @@ PAGE_SPECS: list[dict] = [
             ("easyam", "EasyAMが毎日判断して、出勤日は鳴らし、祝日や自分の休みの日は鳴らしません。この先7日間（iPadでは14日間）のどの日に何時に鳴るかがひと目でわかり、次のアラームはウィジェット、ロック画面、Apple Watchでも確認できます。アカウント登録は不要で、広告・分析・トラッキングはありません。アラーム数の制限なし、シフト・隔週パターン、アラームごとの祝日カレンダー、さらに100種類の時計テーマは、1回限りのApp内課金で利用できるようになります。"),
         ],
         "faqs": [
-            ("祝日に鳴らない設定は、毎年やり直す必要がありますか？", "ありません。67の国と地域の祝日データ（2026年から2028年）を内蔵しており、新しいデータのダウンロードにも対応しています。"),
+            ("祝日は自分で入力する必要がありますか？", "必要ありません。67の国と地域の祝日データ（2026年から2028年）を内蔵しており、新しいデータのダウンロードにも対応しています。"),
             ("シフト勤務でも使えますか？", "使えます。App内課金でシフトや隔週のパターンを一度設定すれば、その通りに鳴ります。夜勤やオンコールなどの追加の出勤日も登録できます。"),
             ("明日だけ鳴らしたくないときは？", "次の1回だけをワンタップでスキップできます。いつものルールはそのままです。"),
             ("祝日データがない日はどうなりますか？", "祝日データが不明または古い日は出勤日とみなし、アラームは鳴ります。"),
@@ -208,7 +208,7 @@ PAGE_SPECS: list[dict] = [
             ("easyam", "EasyAM이 날마다 알아서 정해요. 출근하는 날엔 울리고, 공휴일과 내가 등록한 휴가엔 조용히 쉬어요. 앞으로 7일(iPad는 14일) 동안 어느 날 몇 시에 울리는지 한눈에 보이고, 다음 알람은 위젯, 잠금 화면, Apple Watch에서도 확인할 수 있어요. 계정이 필요 없고 광고, 분석, 추적이 없어요. 알람 개수 제한 해제, 교대근무·격주 패턴, 알람별 공휴일 달력, 시계 테마 100종 추가는 한 번의 앱 내 구입으로 잠금 해제돼요."),
         ],
         "faqs": [
-            ("공휴일 설정을 해마다 다시 해야 하나요?", "아니요. 67개 국가·지역의 공휴일 데이터(2026년부터 2028년까지)가 들어 있고, 새 데이터 파일도 받을 수 있어요."),
+            ("공휴일을 직접 입력해야 하나요?", "아니요. 67개 국가·지역의 공휴일 데이터(2026년부터 2028년까지)가 들어 있고, 새 데이터 파일도 받을 수 있어요."),
             ("교대근무자도 쓸 수 있나요?", "네. 앱 내 구입으로 교대근무·격주 패턴을 한 번만 설정해 두면 알아서 울려요. 야간근무나 당직 같은 추가 근무일도 등록할 수 있어요."),
             ("내일 하루만 안 울리게 하려면요?", "탭 한 번으로 다음 알람만 건너뛰면 돼요. 원래 규칙은 그대로예요."),
             ("공휴일 정보가 없는 날은 어떻게 되나요?", "공휴일 정보가 없거나 오래된 날은 근무일로 간주해 알람이 울려요."),
@@ -242,7 +242,7 @@ PAGE_SPECS: list[dict] = [
                 "Lehrkräfte und Studierende: Ferien als freie Tage eintragen, der Wecker richtet sich danach und meldet sich am ersten Schultag von selbst zurück.",
             ], []),
             ("Gesetzliche und regionale Feiertage: lieber vorher nachsehen", [
-                "In Deutschland unterscheiden sich viele Feiertage von Bundesland zu Bundesland. EasyAM bringt Feiertage für 67 Länder und Regionen für 2026 bis 2028 mit, in 15 Ländern auch regionale, nutzbar ohne Internet und mit neueren Dateien zum Herunterladen. Im Monatskalender siehst du vorab, welche Feiertage und freien Tage eingetragen sind. Fehlt ein Tag, den du frei hast, trägst du ihn einfach als freien Tag ein.",
+                "In Deutschland unterscheiden sich viele Feiertage von Bundesland zu Bundesland. EasyAM bringt Feiertage für 67 Länder und Regionen für 2026 bis 2028 mit, nutzbar ohne Internet und mit neueren Dateien zum Herunterladen. Im Monatskalender siehst du vorab, welche Feiertage und freien Tage eingetragen sind. Fehlt ein regionaler Feiertag, den du frei hast, trägst du ihn einfach als freien Tag ein.",
                 "Wichtig für die Sicherheit: Fehlen Feiertagsdaten oder sind sie veraltet, zählt der Tag als Arbeitstag und der Wecker klingelt. Geplant wird über echte iOS-Systemwecker, die erst als bereit angezeigt werden, wenn iOS die Planung bestätigt hat. Beim Klingeln und Schlummern erscheint der Wecker als Live-Aktivität und in der Dynamic Island.",
             ], []),
         ],
@@ -258,7 +258,7 @@ PAGE_SPECS: list[dict] = [
             ("easyam", "EasyAM entscheidet Tag für Tag, ob dein Wecker klingelt: am Arbeitstag ja, an Feiertagen und im Urlaub nein. Die 7-Tage-Vorschau zeigt, an welchen Tagen und um wie viel Uhr es klingelt. Feiertage für 67 Länder und Regionen (2026 bis 2028), offline nutzbar. Schichtmuster und Wechselwochen gibt es per In-App-Kauf. Widgets für Home-Bildschirm und Sperrbildschirm sowie eine App für die Apple Watch."),
         ],
         "faqs": [
-            ("Muss ich die Feiertage jedes Jahr neu eintragen?", "Nein. EasyAM bringt Feiertage für 67 Länder und Regionen für 2026 bis 2028 mit, offline nutzbar, und neuere Dateien lassen sich laden."),
+            ("Muss ich die Feiertage selbst eintragen?", "Nein. EasyAM bringt Feiertage für 67 Länder und Regionen für 2026 bis 2028 mit, offline nutzbar, und neuere Dateien lassen sich laden."),
             ("Funktioniert das auch im Schichtdienst?", "Ja. Schichtmuster oder Wechselwochen legst du per In-App-Kauf einmal fest; zusätzliche Arbeitstage wie Nachtschichten oder Bereitschaft trägst du mit Namen und Symbol ein."),
             ("Wie lasse ich nur morgen aus?", "Ein Tippen lässt nur den nächsten Wecker aus. Deine Regel bleibt, wie sie ist."),
             ("Was passiert, wenn Feiertagsdaten fehlen?", "Dann zählt der Tag als Arbeitstag und der Wecker klingelt. Im Zweifel wird geweckt."),
@@ -308,7 +308,7 @@ PAGE_SPECS: list[dict] = [
             ("easyam", "O EasyAM decide, dia a dia, se o alarme deve tocar: dia útil toca, feriado ou folga não toca. A prévia dos próximos 7 dias mostra em quais dias ele toca e em que horário. Feriados de 67 países e regiões (2026 a 2028), funciona offline. Padrão de turnos e semanas alternadas com compra dentro do app. Widgets da Tela de Início e da Tela Bloqueada e app para o Apple Watch."),
         ],
         "faqs": [
-            ("Preciso cadastrar os feriados todo ano?", "Não. O EasyAM traz feriados de 67 países e regiões de 2026 a 2028, funciona offline e permite baixar arquivos mais recentes."),
+            ("Preciso cadastrar os feriados sozinho?", "Não. O EasyAM traz feriados de 67 países e regiões de 2026 a 2028, funciona offline e permite baixar arquivos mais recentes."),
             ("Funciona para quem trabalha em escala?", "Sim. Defina uma vez o padrão de turnos ou de semanas alternadas (compra dentro do app); dias extras como turno da noite ou sobreaviso também podem ser marcados."),
             ("Como faço para não tocar só amanhã?", "Um toque pula só o próximo alarme. A regra continua igual."),
             ("E se faltar o dado de algum feriado?", "Nesse caso o dia conta como dia útil e o alarme toca. Na dúvida, toca."),
@@ -325,7 +325,7 @@ PAGE_SPECS: list[dict] = [
         "h1": "Shift work alarm that skips public holidays: what to check before you choose",
         "lead": "People who search the App Store for \"shift work alarm\" or \"alarm skip holidays\" have usually overslept once after a long weekend, because the alarm they switched off on Friday was still off on Tuesday.",
         "intro": [
-            "The built-in Clock app on iPhone repeats by weekday and nothing else. It does not know that Monday is a public holiday, it does not know about your vacation, and it certainly does not know your rotating roster. So the routine becomes: turn the alarm off before the holiday, then remember to turn it back on. The second half is the part that eventually fails, and it fails on the one morning that matters.",
+            "The built-in Clock app on iPhone repeats by weekday and nothing else. It does not know that Monday is a public holiday, it does not know about your vacation, and it certainly does not know your rotating schedule. So the routine becomes: turn the alarm off before the holiday, then remember to turn it back on. The second half is the part that eventually fails, and it fails on the one morning that matters.",
             "We looked at the US and UK App Store in October 2026. Typing \"shift\" or \"shift alarm\" brings up a whole row of shift work alarm apps, and typing \"holiday alarm\" surfaces holiday alarm clocks right away, so plenty of people are looking. Before you pick one, it is worth checking the points below.",
         ],
         "sections": [
@@ -337,9 +337,9 @@ PAGE_SPECS: list[dict] = [
                 "A clear view of which mornings will ring and at what time over the next few days.",
             ]),
             ("Office hours, rotating shifts and school terms", [
-                "Office workers: one weekday alarm is enough. Long weekends take care of themselves, with nothing to switch off the night before, and the first workday back rings as usual. Thanksgiving, Christmas and New Year's Day are the obvious test. If a public holiday on the list is a normal workday for you, add it as an extra working day and that morning rings.",
+                "Office workers: one weekday alarm is enough. Long weekends take care of themselves, with nothing to switch off the night before, and the first workday back rings as usual. Thanksgiving, Christmas and New Year's Day are the obvious test.",
                 "Shift workers in nursing, manufacturing, security, hospitality or emergency services: set a shift or alternating-week pattern once, available with the in-app purchase, and let the app work out the right mornings. Extra working days such as overtime, business trips, night shifts or on-call days can carry their own label and icon, so the calendar shows them at a glance.",
-                "Students and teachers: ring on class days and add school breaks as time off; the alarm returns by itself on the first day of term.",
+                "Students and teachers: ring on class days and add school breaks as time off; the alarm returns by itself on the first day of school.",
             ], []),
             ("When in doubt, it rings", [
                 "The worst thing an alarm can do is stay quiet on a morning you need it. EasyAM treats days with unknown or outdated holiday data as workdays, so the alarm rings. It carries holiday data for 67 countries and regions for 2026 to 2028, usable offline, with newer data files to download, and the calendar tab shows public holidays, make-up working days and your days off by month.",
@@ -358,7 +358,7 @@ PAGE_SPECS: list[dict] = [
             ("easyam", "EasyAM decides day by day whether your alarm should ring: it rings on workdays and stays quiet on public holidays and your days off. The seven-day preview shows which mornings ring and at what time (14 days on iPad), and your next alarm is on your widgets, Lock Screen and Apple Watch. No account, no ads, no tracking. Unlimited alarms, shift and alternating-week patterns, a holiday calendar per alarm and 100 more clock themes unlock with a one-time in-app purchase."),
         ],
         "faqs": [
-            ("Do I have to enter the holidays every year?", "No. EasyAM includes holiday data for 67 countries and regions for 2026 to 2028, works offline and can download newer data files."),
+            ("Do I have to enter public holidays myself?", "No. EasyAM includes holiday data for 67 countries and regions for 2026 to 2028, works offline and can download newer data files."),
             ("Does it work for rotating shifts?", "Yes. Set a shift or alternating-week pattern once with the in-app purchase; extra working days such as night shifts or on-call days can be added with a label and icon."),
             ("How do I skip just tomorrow?", "One tap skips only the next ring. Your weekly routine stays as it is."),
             ("What if holiday data is missing for a day?", "Days with unknown or outdated holiday data count as workdays, so the alarm rings."),

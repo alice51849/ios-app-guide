@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-22T23:25:07+0800",
+ "source_generated": "2026-10-23T00:25:27+0800",
  "count": 54,
- "content_sha256": "add0e8f93f9af71bf22898a5e9fe8d7321391983725606d96bdfcffd792ef15f",
+ "content_sha256": "d37f6148c72a357732ec94d201c80186dae200960fdfec2ced783a5974ec92ba",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -17,8 +17,8 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "AI Brief",
-     "short_description": "Turn screenshots, files and notes into one clear brief for any AI assistant"
+     "title": "AI Brief: AI Prompt Generator",
+     "short_description": "Turn screenshots, PDFs and notes into one AI prompt with facts checked on device"
     },
     "zh-TW": {
      "title": "AI Brief",
@@ -42,8 +42,8 @@
      "short_description": "TOEIC test prep: an 8-minute diagnosis, a 30-day plan and vocabulary practice"
     },
     "zh-TW": {
-     "title": "Aim990：多益英文弱點教練",
-     "short_description": "8 分鐘多益聽讀診斷，找出 3 個最弱技能，再用 30 天處方計畫、多益單字與模擬練習逐一修復"
+     "title": "Aim990：多益單字・多益英文弱點",
+     "short_description": "8 分鐘多益診斷找出 3 個弱點，30 天計畫、多益單字與模擬練習逐一修復"
     }
    }
   },
@@ -59,8 +59,8 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "BattAI: Battery health score",
-     "short_description": "Estimated time to 80%"
+     "title": "BattAI: Battery Health & Life",
+     "short_description": "Battery health checker: health score, capacity over time and time to 80%"
     },
     "zh-TW": {
      "title": "BattAI: 電池健康分數",
@@ -80,7 +80,7 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "CalDaily: Calculator & Themes"
+     "title": "CalDaily: Calculator & History"
     },
     "zh-TW": {
      "title": "CalDaily 計算機與主題"
@@ -98,9 +98,6 @@
    "launch_wave": "new",
    "match": "bundle_id_exact",
    "copy": {
-    "en-US": {
-     "title": "CountDaysNow: Event Counter"
-    },
     "zh-TW": {
      "title": "CountDaysNow：倒數日與紀念日計數器",
      "short_description": "倒數日與紀念日一次管理：生日、旅行、考試還有幾天，在一起已經幾天，放上手機桌面一眼看見"
@@ -120,7 +117,7 @@
    "copy": {
     "en-US": {
      "title": "CV Desk: ATS Resume Builder",
-     "short_description": "Resume & CV maker: clean templates, an instant ATS score and PDF export"
+     "short_description": "Resume builder & CV maker with an ATS score and ATS friendly resume templates"
     },
     "zh-TW": {
      "title": "CV Desk ATS 履歷製作",
@@ -141,7 +138,7 @@
    "copy": {
     "en-US": {
      "title": "Cyca: Period & Cycle Tracker",
-     "short_description": "Private period and cycle tracker with a daily body forecast and calm calendar"
+     "short_description": "Private period tracker & ovulation calendar with a daily body forecast"
     },
     "zh-TW": {
      "title": "Cyca 經期週期追蹤・排卵",
@@ -161,8 +158,8 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "DailyMate: Language Phrases",
-     "short_description": "Learn 8,400 everyday phrases in 47 languages, organized by topic and level"
+     "title": "DailyMate: Language Phrasebook",
+     "short_description": "Phrasebook app with 8,400 everyday phrases in 47 languages, by topic and level"
     },
     "zh-TW": {
      "title": "DailyMate：用句子學語言",
@@ -182,7 +179,7 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "DailyMate Lite: Speak Today",
+     "title": "DailyMate Lite: Phrasebook",
      "short_description": "Travel phrasebook and speaking practice in 50 languages with natural replies"
     },
     "zh-TW": {
@@ -204,7 +201,7 @@
    "copy": {
     "en-US": {
      "title": "dB Halo: Decibel Sound Meter",
-     "short_description": "Check how loud it is with a live noise meter, spectrum view and sleep journal"
+     "short_description": "Decibel meter & sound meter: live dB, spectrum, noise log and a sleep journal"
     },
     "zh-TW": {
      "title": "dB Halo：分貝計與聲級計",
@@ -264,12 +261,12 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "G+Money: Expense Tracker",
-     "short_description": "Travel budget and expense tracker with a currency converter for 50 currencies"
+     "title": "G+Money Travel Expense Tracker",
+     "short_description": "Travel expense tracker & currency converter for 50 currencies, works offline"
     },
     "zh-TW": {
-     "title": "G+Money：旅遊記帳",
-     "short_description": "出國旅遊與日常記帳，搭配 50 種貨幣匯率換算，依旅程記錄花費、設每日預算"
+     "title": "G+Money：旅遊記帳・匯率換算",
+     "short_description": "出國旅遊記帳＋匯率換算一次搞定，50 種貨幣，沒網路也能換算台幣"
     }
    }
   },
@@ -289,8 +286,8 @@
      "short_description": "Log travel expenses in local currency and see them in your home currency"
     },
     "zh-TW": {
-     "title": "G+Money Lite",
-     "short_description": "出國旅遊記帳：用當地幣別記一筆，馬上換算成台幣，每日預算和旅程花費一目了然"
+     "title": "G+Money Lite：旅遊記帳・匯率",
+     "short_description": "出國用當地貨幣記帳，馬上換算台幣；離線也能用已存匯率，設每日預算"
     }
    }
   },
@@ -306,12 +303,12 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "HoursTag: Hours to Buy",
-     "short_description": "Expense tracker with an hourly wage calculator: see any price as hours of work"
+     "title": "HoursTag: Stop Impulse Buying",
+     "short_description": "Expense tracker that turns prices into hours of work so you stop impulse buying"
     },
     "zh-TW": {
-     "title": "HoursTag：價格換工時記帳本",
-     "short_description": "記帳 App 加上時薪換算：輸入價格就知道要工作幾小時，標記必要、想要、衝動，少點衝動購物"
+     "title": "HoursTag：記帳・時薪換算",
+     "short_description": "把價格換算成工作時數的記帳 App：設定時薪，標記必要、想要或衝動，花得清楚"
     }
    }
   },
@@ -328,7 +325,7 @@
    "copy": {
     "en-US": {
      "title": "HoursTag Lite: Impulse Buying",
-     "short_description": "Turn prices into hours of work to stop impulse buying and stay on budget"
+     "short_description": "Stop impulse buying: see any price as hours of work before you pay"
     },
     "zh-TW": {
      "title": "HoursTag Lite",
@@ -348,8 +345,8 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "LED Moving Text: Banner Sign",
-     "short_description": "Scrolling text LED banner: hold up your phone at concerts, pickups and events"
+     "title": "LED Moving Text: LED Banner",
+     "short_description": "LED scroller & scrolling text app: hold up your phone at concerts and pickups"
     },
     "zh-TW": {
      "title": "LED Moving Text：跑馬燈電子看板",
@@ -390,12 +387,12 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "Lumi Bopomofo",
+     "title": "Lumi Bopomofo: Learn Zhuyin",
      "short_description": "Kids learn Bopomofo (Zhuyin) Chinese sounds with feeding, tracing and tone games"
     },
     "zh-TW": {
-     "title": "Lumi注音星球",
-     "short_description": "幼兒學注音好幫手：餵食小夥伴、描寫筆順、聲調與拼音遊戲，輕鬆認讀 37 個符號"
+     "title": "Lumi注音星球：注音符號學習遊戲",
+     "short_description": "幼兒學注音好幫手：餵食小夥伴、描寫筆順、聲調與拼音遊戲，輕鬆認讀 37 個注音符號"
     }
    }
   },
@@ -415,7 +412,7 @@
      "short_description": "Learn Zhuyin (Bopomofo) through play: sounds, blending, tones and tracing"
     },
     "zh-TW": {
-     "title": "Lumi注音星球 Pro",
+     "title": "Lumi注音星球 Pro：ㄅㄆㄇ注音遊戲",
      "short_description": "用遊戲學注音：ㄅㄆㄇ發音、拼讀、聲調與筆順，幼兒到小一都適用"
     }
    }
@@ -433,7 +430,7 @@
    "copy": {
     "en-US": {
      "title": "Lumi Letters Lite: ABC Kids",
-     "short_description": "Trace the ABCs, hear letter sounds and play phonics games for kids ages 3 to 7"
+     "short_description": "ABC kids game: trace the alphabet, hear letter sounds and play phonics, ages 3-7"
     },
     "zh-TW": {
      "title": "Lumi 字母星球 Lite：兒童英文ABC遊戲",
@@ -474,8 +471,8 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "Lumi Math Planet: Explorer",
-     "short_description": "Space adventure math for kids: counting, adding, patterns and logic puzzles"
+     "title": "Lumi Math Planet: Kids Math",
+     "short_description": "Math games for kids: counting, adding, patterns and logic puzzles in space"
     },
     "zh-TW": {
      "title": "Lumi數學星球：探索版",
@@ -496,7 +493,7 @@
    "copy": {
     "en-US": {
      "title": "Lumi Math Pro: Kids Numbers",
-     "short_description": "Space adventure math for kids 5–8: logic puzzles, patterns and number sense"
+     "short_description": "Math for kids 5–8: logic puzzles, patterns and number sense in a space adventure"
     },
     "zh-TW": {
      "title": "Lumi 數學星球：兒童數學",
@@ -517,11 +514,11 @@
    "copy": {
     "en-US": {
      "title": "Lumi Mission Planet: Routines",
-     "short_description": "Turn brushing, meals, bedtime and tidy-up into fun missions with star rewards"
+     "short_description": "Chore chart for kids: brushing, meals, bedtime and tidy-up missions with stars"
     },
     "zh-TW": {
-     "title": "Lumi 任務星球：生活習慣養成",
-     "short_description": "刷牙、吃飯、睡覺、收玩具都變成好玩的任務，用集點貼紙陪孩子養成好習慣"
+     "title": "Lumi 任務星球：生活常規・集點獎勵",
+     "short_description": "刷牙、吃飯、睡覺、收玩具都變成好玩的任務，用集點貼紙陪孩子養成生活常規"
     }
    }
   },
@@ -538,7 +535,7 @@
    "copy": {
     "en-US": {
      "title": "Lumi Mission Planet Pro",
-     "short_description": "Turn teeth brushing, meals and bedtime into happy missions for kids aged 3 to 7"
+     "short_description": "Visual schedule for kids 3–7: teeth brushing, meals and bedtime as missions"
     },
     "zh-TW": {
      "title": "Lumi 任務星球 Pro：好習慣養成遊戲",
@@ -559,7 +556,7 @@
    "copy": {
     "en-US": {
      "title": "Lumi Weather: What to Wear",
-     "short_description": "Hourly weather forecast with an outing score, umbrella and sunscreen tips"
+     "short_description": "What to wear weather app: hourly forecast, outing score and umbrella tips"
     },
     "zh-TW": {
      "title": "Lumi天氣星球：天氣預報、外出指數與穿搭建議",
@@ -580,7 +577,7 @@
    "copy": {
     "en-US": {
      "title": "Mask My File: Redact PDF",
-     "short_description": "Redact PDF, photo and text files: black out private data and remove metadata"
+     "short_description": "Redact PDF, photos and text: black out private data and remove metadata"
     },
     "zh-TW": {
      "title": "Mask My File：PDF 個資遮蔽",
@@ -600,12 +597,12 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "Mochi: Cute Checklist",
-     "short_description": "Cute to-do list and checklist with 100 cozy skins and repeating reminders"
+     "title": "Mochi: Cute To Do List",
+     "short_description": "Aesthetic to do list & checklist with 100 cozy skins and repeating reminders"
     },
     "zh-TW": {
-     "title": "Mochi: 可愛待辦清單",
-     "short_description": "可愛又療癒的待辦清單，寫下待辦事項輕點打勾，100 款主題外觀與重複提醒"
+     "title": "Mochi: 可愛待辦清單・待辦事項",
+     "short_description": "可愛又療癒的待辦事項清單，寫下待辦輕點打勾，100 款主題外觀與重複提醒"
     }
    }
   },
@@ -622,7 +619,7 @@
    "copy": {
     "en-US": {
      "title": "Mochi DoneStamp: Last Time",
-     "short_description": "Last time tracker for chores and upkeep, with days since and recurring reminders"
+     "short_description": "Last time tracker for chores and upkeep: days since, plus recurring reminders"
     },
     "zh-TW": {
      "title": "Mochi DoneStamp：上次何時",
@@ -685,7 +682,7 @@
    "copy": {
     "en-US": {
      "title": "OnePage PPT: AI Slide Maker",
-     "short_description": "Notes to one perfect slide"
+     "short_description": "AI slide maker: turn notes, PDFs and photos into one presentation-ready slide"
     },
     "zh-TW": {
      "title": "OnePage PPT: AI 一頁簡報",
@@ -706,7 +703,7 @@
    "copy": {
     "en-US": {
      "title": "PhotoCream Pro: Film Camera",
-     "short_description": "Retro and vintage film filters with grain and light leaks, plus a photo editor"
+     "short_description": "Film camera app with retro and vintage filters, grain, light leaks and an editor"
     },
     "zh-TW": {
      "title": "PhotoCream Pro：底片相機",
@@ -747,8 +744,8 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "QR Code Halo: Scan & Create",
-     "short_description": "QR code scanner and barcode reader with a QR generator and on-device link check"
+     "title": "QR Code Halo: Barcode Scanner",
+     "short_description": "QR code scanner & barcode reader with QR code generator and on-device link check"
     },
     "zh-TW": {
      "title": "QR Code Halo：條碼掃描、建立與安全檢查",
@@ -768,7 +765,7 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "SaveTag: AI Social Bookmarks",
+     "title": "SaveTag: AI Link Saver",
      "short_description": "Link saver and bookmark manager: auto-tagged saves to watch and read later"
     },
     "zh-TW": {
@@ -789,8 +786,8 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "ScanTo Pro: Offline PDF & OCR",
-     "short_description": "Document scanner and PDF scanner with on-device OCR text search"
+     "title": "ScanTo Pro: PDF Scanner & OCR",
+     "short_description": "Document scanner & PDF scanner with on-device OCR: search text, nothing uploaded"
     },
     "zh-TW": {
      "title": "ScanTo Pro: 離線PDF掃描器",
@@ -810,8 +807,8 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "Sereno: Sleep Sounds",
-     "short_description": "White noise, brown noise and rain sounds that never loop, for sleep and focus"
+     "title": "Sereno: White Noise for Sleep",
+     "short_description": "Sleep sounds, brown noise & rain sounds that never loop, for sleep and focus"
     },
     "zh-TW": {
      "title": "Sereno: 睡眠音效・白噪音",
@@ -832,7 +829,7 @@
    "copy": {
     "en-US": {
      "title": "ShotInbox AI: Sort Screenshots",
-     "short_description": "OCR Search & Photo Cleaner"
+     "short_description": "Screenshot organizer: on-device OCR search, auto categories and cleanup"
     },
     "zh-TW": {
      "title": "ShotInbox AI: Sort Screenshots",
@@ -895,7 +892,7 @@
    "copy": {
     "en-US": {
      "title": "Sono Note: Voice to Text Notes",
-     "short_description": "Voice recorder with speech to text that turns notes into summaries and tasks"
+     "short_description": "Voice recorder with speech to text: transcribe notes into summaries and tasks"
     },
     "zh-TW": {
      "title": "Sono Note：語音轉文字筆記",
@@ -980,7 +977,7 @@
      "short_description": "Trip planner with a day-by-day itinerary for flights, hotels, tickets and notes"
     },
     "zh-TW": {
-     "title": "TripBee Lite：旅程規劃與每日行程表",
+     "title": "TripBee Lite：行程規劃・旅遊行程表",
      "short_description": "用每日時間軸做旅遊行程規劃，航班、住宿、票券與備註集中在同一趟旅程"
     }
    }
@@ -998,11 +995,11 @@
    "copy": {
     "en-US": {
      "title": "Trip Planet: Kids Quest",
-     "short_description": "Family Travel Missions"
+     "short_description": "Family travel missions for kids 3–10: turn every trip into a space adventure"
     },
     "zh-TW": {
-     "title": "Trip Planet 親子旅行遊戲",
-     "short_description": "兒童帶娃出遊任務獎勵星圖"
+     "title": "Trip Planet：親子旅遊・出遊任務",
+     "short_description": "親子出遊變成孩子的太空冒險：3～10 歲的旅行任務、星座地圖與旅行護照印章"
     }
    }
   },
@@ -1040,7 +1037,7 @@
    "copy": {
     "en-US": {
      "title": "WiFi Aid: Network Diagnostics",
-     "short_description": "WiFi checker and DNS test: find the most likely cause of a bad connection"
+     "short_description": "WiFi analyzer and DNS test: find the most likely cause of a bad connection"
     },
     "zh-TW": {
      "title": "WiFi Aid：網路診斷",
@@ -1081,8 +1078,8 @@
    "match": "bundle_id_exact",
    "copy": {
     "en-US": {
-     "title": "Wordmate: Learn 44 Languages",
-     "short_description": "Build useful vocabulary in 44 languages with focused lessons and pronunciation"
+     "title": "Wordmate: Vocabulary Builder",
+     "short_description": "Vocabulary builder for 44 languages: focused lessons, example sentences, audio"
     },
     "zh-TW": {
      "title": "Wordmate：44 種語言背單字",
@@ -1124,7 +1121,7 @@
    "copy": {
     "en-US": {
      "title": "Zipbox: Unzip RAR, ZIP & 7z",
-     "short_description": "Unzip, unrar and 7z file extractor: preview inside, take out only what you need"
+     "short_description": "Unzip, RAR extractor & 7z file extractor: preview inside, take out what you need"
     },
     "zh-TW": {
      "title": "Zipbox 解壓縮：RAR ZIP 7z",

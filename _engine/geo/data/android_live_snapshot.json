@@ -1,9 +1,9 @@
 {
  "schema": "lumi.android-live-snapshot/v1",
  "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
- "source_generated": "2026-10-20T19:44:47+0800",
- "count": 53,
- "content_sha256": "08f147bc01c1602be4938b048f6348c948c3c73e1e1de81ae2c6b42e1c1a8a68",
+ "source_generated": "2026-10-22T23:25:07+0800",
+ "count": 54,
+ "content_sha256": "add0e8f93f9af71bf22898a5e9fe8d7321391983725606d96bdfcffd792ef15f",
  "apps": {
   "aibriefpack": {
    "ios_app_id": "6791658210",
@@ -228,6 +228,27 @@
     },
     "zh-TW": {
      "title": "EasyAM: 國定假日、連假不響的智慧鬧鐘"
+    }
+   }
+  },
+  "gbago": {
+   "ios_app_id": "6804564400",
+   "ios_name": "GBAGo",
+   "android_folder": "51_GBAGo",
+   "package": "com.alice51849.GBAGo",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.GBAGo",
+   "paid": true,
+   "first_seen": "2026-10-17T17:34:41+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "GBAGo Emulator: Visual Saves",
+     "short_description": "Retro handheld emulator with Recovery Map, Auto Snapshots and visual save states"
+    },
+    "zh-TW": {
+     "title": "GBAGo 掌機模擬器：視覺存檔",
+     "short_description": "懷舊掌機模擬器：復原地圖、即時存檔縮圖與自動快照，金手指、快轉、手把都支援"
     }
    }
   },
@@ -1112,12 +1133,6 @@
    }
   }
  },
- "unmapped": [
-  {
-   "folder": "51_GBAGo",
-   "package": "com.alice51849.GBAGo",
-   "reason": "no_unique_ios_match"
-  }
- ],
+ "unmapped": [],
  "baseline_first_seen": "2026-10-11T14:26:56+0800"
 }

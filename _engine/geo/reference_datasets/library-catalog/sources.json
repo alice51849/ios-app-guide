@@ -1,0 +1,31 @@
+{
+  "retrieved": "2026-07-11",
+  "purpose": "Pinned offline validation inputs for the Bopomofo EPUB library catalog package.",
+  "files": [
+    {
+      "filename": "MARC21slim.xsd",
+      "url": "https://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd",
+      "sha256": "6befa853d5762985a3c23f40400a9b828fbf9b18e330c41808d072b0ed0a8d76"
+    },
+    {
+      "filename": "mods-3-8.xsd",
+      "url": "https://www.loc.gov/standards/mods/v3/mods-3-8.xsd",
+      "sha256": "ded45d61d3378d4bed750d8f80633bb0b37e1883afd3a106eef6225c54737a18"
+    },
+    {
+      "filename": "xml.xsd",
+      "url": "https://www.loc.gov/mods/xml.xsd",
+      "sha256": "8ef35874d6947cfd6dc2de1667ac9b70cdee666c3571dd05cfcc7881576f73ae"
+    },
+    {
+      "filename": "xlink.xsd",
+      "url": "https://www.loc.gov/standards/mods/xlink.xsd",
+      "sha256": "f1f5bb6003165cdd8f6c1fcc32f8fd1f965e1681010f3b9806d9460bcffa8a3c"
+    },
+    {
+      "filename": "bibframe.rdf",
+      "url": "https://id.loc.gov/ontologies/bibframe.rdf",
+      "sha256": "bac76ca817071521f8ef6e49a71cc2044d4ff4b019e7b7fefa1f5847ec6c69ca"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://open.cait518.cc/ios-app-guide/data/verified-ios-app-finder-catalog.schema.json",
+  "title": "Lumi Studio Publisher-Verified iOS App Catalogue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "description",
+    "question",
+    "date_modified",
+    "license",
+    "publisher_disclosure",
+    "ordering",
+    "availability_verification",
+    "record_count",
+    "apps",
+    "schema_version",
+    "generated_at",
+    "expires_at",
+    "source_digests",
+    "document_digest"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "growth-finder-evidence/1"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "document_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_digests": {
+      "type": "object",
+      "required": [
+        "live_roster",
+        "catalog"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "live_roster": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "catalog": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "question": {
+      "const": "How can I find a privacy-first iPhone app with a one-time purchase?"
+    },
+    "date_modified": {
+      "type": "string",
+      "format": "date"
+    },
+    "license": {
+      "type": "string",
+      "format": "uri"
+    },
+    "publisher_disclosure": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ordering": {
+      "const": "alphabetical_by_app_name_not_a_ranking"
+    },
+    "availability_verification": {
+      "type": "object",
+      "required": [
+        "source",
+        "markets",
+        "retirement_rule",
+        "verified_at"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "verified_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "markets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "retirement_rule": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "record_count": {
+      "const": 54
+    },
+    "apps": {
+      "type": "array",
+      "minItems": 54,
+      "maxItems": 54,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "key",
+          "app_store_id",
+          "name",
+          "category",
+          "category_labels",
+          "summaries",
+          "purchase_model",
+          "purchase_labels",
+          "one_time_option",
+          "features",
+          "keywords",
+          "capabilities",
+          "canonical_app_store_url",
+          "app_store_url",
+          "verified_live",
+          "verified_at",
+          "availability_status",
+          "availability_issues",
+          "metadata_status"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "app_store_id": {
+            "type": "string",
+            "pattern": "^[0-9]{9,12}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category_labels": {
+            "$ref": "#/$defs/localizedText"
+          },
+          "summaries": {
+            "$ref": "#/$defs/localizedText"
+          },
+          "purchase_model": {
+            "enum": [
+              "flexible",
+              "free",
+              "free_with_lifetime_unlock",
+              "neutral",
+              "paid_upfront"
+            ]
+          },
+          "purchase_labels": {
+            "$ref": "#/$defs/localizedText"
+          },
+          "one_time_option": {
+            "type": "boolean"
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "capabilities": {
+            "type": "object",
+            "required": [
+              "offline",
+              "no_account",
+              "no_ads",
+              "no_tracking",
+              "private_or_on_device",
+              "widget",
+              "apple_watch"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "offline": {
+                "type": "boolean"
+              },
+              "no_account": {
+                "type": "boolean"
+              },
+              "no_ads": {
+                "type": "boolean"
+              },
+              "no_tracking": {
+                "type": "boolean"
+              },
+              "private_or_on_device": {
+                "type": "boolean"
+              },
+              "widget": {
+                "type": "boolean"
+              },
+              "apple_watch": {
+                "type": "boolean"
+              }
+            }
+          },
+          "canonical_app_store_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "app_store_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "verified_live": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "verified_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "availability_status": {
+            "enum": [
+              "verified",
+              "unknown"
+            ]
+          },
+          "availability_issues": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "metadata_status": {
+            "enum": [
+              "verified",
+              "unknown"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": [
+        "en",
+        "zh-Hant"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "zh-Hant": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

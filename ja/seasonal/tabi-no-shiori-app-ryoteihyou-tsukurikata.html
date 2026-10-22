@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>旅のしおりアプリの作り方｜予約メール・スクショを1日ごとの旅程表にまとめる</title>
+<meta name="description" content="「旅のしおり」で探している人へ。航空券・ホテル・チケットの情報が散らばっていても、1日ごとの旅程表にまとめるコツと、しおりに入れておきたい項目。TripBee Liteの使い方つき。">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/ja/seasonal/tabi-no-shiori-app-ryoteihyou-tsukurikata.html">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="旅のしおりアプリの作り方｜予約メール・スクショを1日ごとの旅程表にまとめる">
+<meta property="og:description" content="「旅のしおり」で探している人へ。航空券・ホテル・チケットの情報が散らばっていても、1日ごとの旅程表にまとめるコツと、しおりに入れておきたい項目。TripBee Liteの使い方つき。">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/ja/seasonal/tabi-no-shiori-app-ryoteihyou-tsukurikata.html">
+<meta property="article:modified_time" content="2026-10-23">
+<meta name="apple-itunes-app" content="app-id=6791299610">
+<style>
+:root{--bg:#f7f7fb;--card:#fff;--ink:#161622;--muted:#5d6370;--line:#e6e7ef;--brand:#5b5ff2;--ok:#0f8f5f}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Hiragino Sans","Noto Sans TC","Noto Sans JP","Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}
+a{color:var(--brand)}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+header.top{background:#fff;border-bottom:1px solid var(--line)}
+.nav{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding:12px 16px}
+.nav a{text-decoration:none;font-weight:600}
+.breadcrumb{font-size:.85rem;color:var(--muted);margin:18px 0 4px}
+h1{font-size:1.6rem;line-height:1.35;margin:.3rem 0 .6rem}
+h2{font-size:1.2rem;margin:2rem 0 .8rem}
+h3{font-size:1.02rem;margin:0 0 .35rem}
+.lead{font-size:1.05rem;color:#30323d}
+.updated{font-size:.82rem;color:var(--muted)}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:.92rem;margin:1rem 0}
+.points{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 18px 12px 34px}
+.points li{margin:.4rem 0}
+.steps{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px 14px 36px}
+.steps li{margin:.35rem 0}
+.cards{display:grid;gap:12px}
+.app{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.app p{margin:.3rem 0}
+.cta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:.5rem}
+.dl{display:inline-block;background:var(--brand);color:#fff;padding:.45rem 1rem;border-radius:10px;text-decoration:none;font-weight:600;font-size:.92rem}
+.android-play{font-size:.85rem;margin:.2rem 0 0}
+.more{font-size:.88rem}
+details.faq{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.7rem 1rem;margin:.6rem 0}
+details.faq summary{cursor:pointer;font-weight:600}
+.related ul{padding-left:1.2rem}
+.legal{font-size:.78rem;color:var(--muted);margin:2rem 0 2.5rem}
+@media (prefers-color-scheme:dark){:root{--bg:#121218;--card:#1c1c24;--ink:#ececf3;--muted:#a3a7b3;--line:#2c2d38;--brand:#8f93ff;--ok:#5fd3a0}
+header.top{background:#16161d}.lead{color:#d6d8e0}}
+</style>
+<script type="application/ld+json">
+[
+ {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+   {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "iOS アプリガイド",
+    "item": "https://open.cait518.cc/ios-app-guide/ja/index.html"
+   },
+   {
+    "@type": "ListItem",
+    "position": 2,
+    "name": "旅のしおりをアプリで作る：予約情報を1日ごとの旅程表に",
+    "item": "https://open.cait518.cc/ios-app-guide/ja/seasonal/tabi-no-shiori-app-ryoteihyou-tsukurikata.html"
+   }
+  ]
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "旅のしおりをアプリで作る：予約情報を1日ごとの旅程表に",
+  "inLanguage": "ja",
+  "dateModified": "2026-10-23",
+  "mainEntityOfPage": "https://open.cait518.cc/ios-app-guide/ja/seasonal/tabi-no-shiori-app-ryoteihyou-tsukurikata.html",
+  "keywords": "旅のしおり, 旅程, 旅行 計画",
+  "about": {
+   "@type": "SoftwareApplication",
+   "name": "TripBee Lite：旅程プラン",
+   "operatingSystem": "iOS",
+   "applicationCategory": "MobileApplication",
+   "url": "https://open.cait518.cc/ios-app-guide/ja/tripbeelite.html"
+  }
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "アカウント登録は必要ですか？",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "不要です。広告、解析、トラッキングもなく、旅の計画は自分で管理できます。"
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "複数の旅を同時に保存できますか？",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "一度に1件の旅を保存して、次の旅へ入れ替えながら使えます。保存件数無制限は一度の購入で使えます。"
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "家族と一緒に編集したいときは？",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "共同編集が必要なら、同じシリーズのTripBeeが共有旅程の共同編集に対応しています。"
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "サブスクリプションですか？",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "いいえ。一度の購入で、アプリの提供期間中ずっと利用できます。"
+    }
+   }
+  ]
+ }
+]
+</script>
+<script type="application/ld+json" data-first-party-disclosure="publisher">{"@context":"https://schema.org","@type":"WebSite","@id":"https://open.cait518.cc/ios-app-guide/#website","url":"https://open.cait518.cc/ios-app-guide","publisher":{"@type":"Organization","@id":"https://open.cait518.cc/ios-app-guide/#organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide/about.html","description":"Developer of the featured apps and operator of this site."}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://open.cait518.cc/ios-app-guide/ja/index.html">iOS アプリガイド</a><nav><a href="https://open.cait518.cc/ios-app-guide/ja/answers/index.html">回答</a> · <a href="https://open.cait518.cc/ios-app-guide/about.html">概要</a></nav></div></header>
+<p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">当サイトは掲載アプリの開発者であるLumi Studioが運営し、自社アプリを紹介しています。</p>
+<main class="wrap">
+<div class="breadcrumb"><a href="https://open.cait518.cc/ios-app-guide/ja/index.html">ホーム</a> / おすすめ</div>
+<h1>旅のしおりをアプリで作る：予約情報を1日ごとの旅程表に</h1>
+<p class="lead">App Storeで「旅のしおり」と検索する人の多くは、航空券は予約メール、ホテルは予約サイト、チケットはスクショ…と情報が散らばっていて、それを一つの旅程表にまとめたい人です。</p>
+<p class="updated">更新日: 2026-10-23</p>
+<p>2026年10月に日本のApp Storeで「旅のしおり」を検索すると、上位には共有型のしおり作成アプリや、観光スポット検索と一体になったアプリが並んでいました。グループで作り込むなら便利ですが、「次の帰省や旅行の予定を、自分のために1画面で見たい」だけなら、機能が多すぎると感じる人も少なくありません。</p><p>海外の大手旅行計画アプリのレビューでも、いちばんほめられていたのは「予約情報が一か所にまとまること」と「シンプルさ」でした。しおりに本当に必要なのは、日ごとの時間の流れと、その場で必要な情報（便名、予約番号、住所、メモ）がすぐに出てくることです。</p>
+<nav class="toc" aria-label="目次"><a href="#s1">旅のしおりに入れておきたい項目</a> · <a href="#s2">年末年始の帰省・温泉旅行での使い方</a> · <a href="#steps">しおりを作る手順</a></nav>
+<section id="s1"><h2>旅のしおりに入れておきたい項目</h2><ul class="points"><li>日ごとの時間の流れ：何時にどこを出て、どこへ向かうか。</li><li>フライトや新幹線：便名、出発時刻、座席、乗り換え。</li><li>宿泊：ホテル名、住所、チェックイン時刻、予約番号。</li><li>予定とチケット：入場時間、予約番号、受け取り方法。</li><li>メモとリマインダー：持ち物、集合場所、出発前にやること。</li></ul></section>
+<section id="s2"><h2>年末年始の帰省・温泉旅行での使い方</h2><p>年末年始の帰省は、新幹線の時刻、実家への到着時間、親戚との予定、温泉宿のチェックインなど、細かい時刻がいくつも重なります。予約メールを毎回探す代わりに、出発の数日前に日ごとのタイムラインへ並べておくと、当日は画面を一つ見るだけで済みます。</p><p>連休の温泉旅行なら、1日目は移動とチェックイン、2日目は観光、3日目はチェックアウトと帰りの便、というように一日ずつ組み立てます。チケットの情報や予約番号は、その予定の中にメモしておくと、窓口や受付でスクショを探さずに済みます。</p><p>旅が終わったら、その旅程は次の旅に入れ替えて使えます。毎回ゼロから作るより、前回の流れを参考にできるので準備が早くなります。</p></section>
+<section id="steps"><h2>しおりを作る手順</h2><ol class="steps"><li>次の旅を一つ作り、日付を入れる。</li><li>日ごとのタイムラインに、フライト、宿泊、予定を時間順に並べる。</li><li>予約番号やチケット情報、住所はそれぞれの予定のメモにまとめる。</li><li>出発前日や集合時刻にリマインダーを設定する。</li><li>旅が終わったら、次の旅に入れ替えて使う。</li></ol></section>
+<section id="apps"><div class="cards">
+<article class="app" id="app-tripbeelite">
+<h3>TripBee Lite：旅程プラン</h3>
+<p>TripBee Liteは、いま準備する一つの旅をすっきり整える旅行プランナーです。日ごとのタイムラインにフライト、宿泊、予定を並べ、メモ、リマインダー、チケット情報も必要な場所にまとめられます。アカウント登録は不要で、広告、解析、トラッキングはありません。旅の保存件数無制限、共有、完全なバックアップと復元、スマート持ち物リストは一度の購入で使え、サブスクリプションではありません。</p>
+<p class="cta"><a class="dl" href="https://apps.apple.com/jp/app/id6791299610?pt=118326163&amp;ct=ln_tripbeelite_sr_jp_gw_1023&amp;mt=8" rel="noopener">App Store でダウンロード →</a> <a class="more" href="https://open.cait518.cc/ios-app-guide/ja/tripbeelite.html">アプリの詳しい紹介</a></p>
+  <p class="android-play" data-android-play="com.alice51849.TripbeeLite">Android: <a href="https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite&amp;referrer=utm_source%3Dln_tripbeelite_sr_jp_gw_1023%26utm_campaign%3Dtripbeelite" rel="noopener">Google Play</a></p>
+</article>
+<article class="app" id="app-tripbee">
+<h3>TripBee: 旅行プランナー</h3>
+<p>家族や友達と同じ旅程を共同編集したいなら、TripBeeは共有旅程の共同編集、雨の日の代案づくり、持ち物リストに対応しています。</p>
+<p class="cta"><a class="dl" href="https://apps.apple.com/jp/app/id6787754435?pt=118326163&amp;ct=ln_tripbee_sr_jp_gw_1023&amp;mt=8" rel="noopener">App Store でダウンロード →</a> <a class="more" href="https://open.cait518.cc/ios-app-guide/ja/tripbee.html">アプリの詳しい紹介</a></p>
+  <p class="android-play" data-android-play="com.alice51849.Tripbee">Android: <a href="https://play.google.com/store/apps/details?id=com.alice51849.Tripbee&amp;referrer=utm_source%3Dln_tripbee_sr_jp_gw_1023%26utm_campaign%3Dtripbee" rel="noopener">Google Play</a></p>
+</article>
+</div></section>
+<section><h2>よくある質問</h2><details class="faq"><summary>アカウント登録は必要ですか？</summary><p>不要です。広告、解析、トラッキングもなく、旅の計画は自分で管理できます。</p></details><details class="faq"><summary>複数の旅を同時に保存できますか？</summary><p>一度に1件の旅を保存して、次の旅へ入れ替えながら使えます。保存件数無制限は一度の購入で使えます。</p></details><details class="faq"><summary>家族と一緒に編集したいときは？</summary><p>共同編集が必要なら、同じシリーズのTripBeeが共有旅程の共同編集に対応しています。</p></details><details class="faq"><summary>サブスクリプションですか？</summary><p>いいえ。一度の購入で、アプリの提供期間中ずっと利用できます。</p></details></section>
+<section class="related"><h2>関連ページ</h2><ul><li><a href="https://open.cait518.cc/ios-app-guide/ja/tripbeelite.html">TripBee Lite の詳しい紹介</a></li><li><a href="https://open.cait518.cc/ios-app-guide/ja/tripbee.html">TripBee の詳しい紹介</a></li></ul></section>
+
+</main>
+</body>
+</html>

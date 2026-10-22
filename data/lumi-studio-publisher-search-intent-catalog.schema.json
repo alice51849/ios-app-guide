@@ -1,0 +1,539 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.schema.json",
+  "title": "Lumi Studio Publisher Search Intent Catalog",
+  "type": "object",
+  "required": [
+    "name",
+    "description",
+    "identifier",
+    "dateModified",
+    "content_digest",
+    "generation_digest",
+    "publisher_disclosure",
+    "measured_search_volume",
+    "is_ranking",
+    "app_count",
+    "locale_count",
+    "record_count",
+    "records"
+  ],
+  "properties": {
+    "name": {
+      "const": "Lumi Studio Publisher Search Intent Catalog"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 20
+    },
+    "identifier": {
+      "type": "string",
+      "format": "uri"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "dateModified": {
+      "type": "string",
+      "format": "date"
+    },
+    "content_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "generation_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "license": {
+      "type": "string",
+      "format": "uri"
+    },
+    "creator": {
+      "type": "object"
+    },
+    "publisher_disclosure": {
+      "type": "string",
+      "minLength": 20
+    },
+    "methodology": {
+      "type": "string",
+      "minLength": 20
+    },
+    "query_origin": {
+      "const": "publisher_authored_editorially_localized"
+    },
+    "measured_search_volume": {
+      "const": false
+    },
+    "is_ranking": {
+      "const": false
+    },
+    "ordering": {
+      "const": "official_locale_order_then_alphabetical_app_name"
+    },
+    "app_count": {
+      "const": 54
+    },
+    "locale_count": {
+      "const": 50
+    },
+    "record_count": {
+      "const": 2700
+    },
+    "locales": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "ar-SA",
+          "bn-BD",
+          "ca",
+          "cs",
+          "da",
+          "de-DE",
+          "el",
+          "en-AU",
+          "en-CA",
+          "en-GB",
+          "en-US",
+          "es-ES",
+          "es-MX",
+          "fi",
+          "fr-CA",
+          "fr-FR",
+          "gu-IN",
+          "he",
+          "hi",
+          "hr",
+          "hu",
+          "id",
+          "it",
+          "ja",
+          "kn-IN",
+          "ko",
+          "ml-IN",
+          "mr-IN",
+          "ms",
+          "nl-NL",
+          "no",
+          "or-IN",
+          "pa-IN",
+          "pl",
+          "pt-BR",
+          "pt-PT",
+          "ro",
+          "ru",
+          "sk",
+          "sl-SI",
+          "sv",
+          "ta-IN",
+          "te-IN",
+          "th",
+          "tr",
+          "uk",
+          "ur-PK",
+          "vi",
+          "zh-Hans",
+          "zh-Hant"
+        ]
+      },
+      "minItems": 50,
+      "maxItems": 50,
+      "uniqueItems": true
+    },
+    "records": {
+      "type": "array",
+      "minItems": 2700,
+      "maxItems": 2700,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "record_id",
+          "locale",
+          "app_key",
+          "app_name",
+          "app_store_id",
+          "publisher_query",
+          "decision_context",
+          "purchase_model",
+          "one_time_option",
+          "source_persona_query",
+          "canonical_guide_url",
+          "canonical_app_store_url",
+          "app_store_url",
+          "publisher_disclosure",
+          "query_origin",
+          "measured_search_volume",
+          "is_ranking",
+          "verified_live",
+          "app_store_cta_label"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string",
+            "minLength": 10
+          },
+          "locale": {
+            "enum": [
+              "ar-SA",
+              "bn-BD",
+              "ca",
+              "cs",
+              "da",
+              "de-DE",
+              "el",
+              "en-AU",
+              "en-CA",
+              "en-GB",
+              "en-US",
+              "es-ES",
+              "es-MX",
+              "fi",
+              "fr-CA",
+              "fr-FR",
+              "gu-IN",
+              "he",
+              "hi",
+              "hr",
+              "hu",
+              "id",
+              "it",
+              "ja",
+              "kn-IN",
+              "ko",
+              "ml-IN",
+              "mr-IN",
+              "ms",
+              "nl-NL",
+              "no",
+              "or-IN",
+              "pa-IN",
+              "pl",
+              "pt-BR",
+              "pt-PT",
+              "ro",
+              "ru",
+              "sk",
+              "sl-SI",
+              "sv",
+              "ta-IN",
+              "te-IN",
+              "th",
+              "tr",
+              "uk",
+              "ur-PK",
+              "vi",
+              "zh-Hans",
+              "zh-Hant"
+            ]
+          },
+          "app_key": {
+            "enum": [
+              "aibriefpack",
+              "aim990",
+              "battai",
+              "caldaily",
+              "claudeusagemini",
+              "countdaysnow",
+              "cvdesk",
+              "cyca",
+              "dailymate",
+              "dailymatelite",
+              "dbhalo",
+              "easyam",
+              "gmoney",
+              "gmoneylite",
+              "hourstag",
+              "hourstaglite",
+              "ledmovingtext",
+              "lockhour",
+              "lumibopomofo",
+              "lumibopomofopro",
+              "lumiletters",
+              "lumiletterspro",
+              "lumimath",
+              "lumimathpro",
+              "lumimission",
+              "lumimissionpro",
+              "lumiweather",
+              "maskmyfile",
+              "mochi",
+              "mochidonestamp",
+              "moneytag",
+              "notesstudio100",
+              "onepageppt",
+              "photocream",
+              "picclear",
+              "qrcodehalo",
+              "savetag",
+              "scanto",
+              "sereno",
+              "shotinbox",
+              "snapport",
+              "snapportlite",
+              "sononote",
+              "stayclock",
+              "studydown",
+              "tripbee",
+              "tripbeelite",
+              "tripplanet",
+              "unblurry",
+              "wifiaid",
+              "wifiaidlite",
+              "wordmate",
+              "wordmatelite",
+              "zipbox"
+            ]
+          },
+          "app_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "app_store_id": {
+            "type": "string",
+            "pattern": "^[0-9]{9,12}$"
+          },
+          "publisher_query": {
+            "type": "string",
+            "minLength": 10
+          },
+          "decision_context": {
+            "type": "string",
+            "minLength": 20
+          },
+          "purchase_model": {
+            "enum": [
+              "free_with_lifetime_unlock",
+              "paid_upfront"
+            ]
+          },
+          "one_time_option": {
+            "type": "boolean"
+          },
+          "source_persona_query": {
+            "type": "string",
+            "minLength": 10
+          },
+          "canonical_guide_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "canonical_app_store_url": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "app_store_url": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uri"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "app_store_cta_label": {
+            "type": "string",
+            "minLength": 3
+          },
+          "publisher_disclosure": {
+            "type": "string",
+            "minLength": 20
+          },
+          "query_origin": {
+            "const": "publisher_authored_editorially_localized"
+          },
+          "measured_search_volume": {
+            "const": false
+          },
+          "is_ranking": {
+            "const": false
+          },
+          "verified_live": {
+            "const": true
+          },
+          "market_availability": {
+            "enum": [
+              {
+                "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+                "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+                "evidence": {
+                  "source_url": "https://support.apple.com/en-us/118205",
+                  "observed_at": "2026-09-12",
+                  "country": "BD",
+                  "apple_media_services_markets": 174,
+                  "country_listed": false,
+                  "lookup_app_results": 0,
+                  "lookup_control_results": 0,
+                  "redirect_market": "US"
+                },
+                "value": "N/A",
+                "content_retained": true,
+                "publishable": false,
+                "facts_allowed": false,
+                "outbox_count": 0
+              },
+              {
+                "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+                "reason": "MARKET_APP_NOT_SOLD",
+                "evidence": {
+                  "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+                  "observed_at": "2026-09-12",
+                  "country": "CN",
+                  "lookup_app_results": 0,
+                  "lookup_control_app_id": "6791658210",
+                  "lookup_control_results": 1,
+                  "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+                  "app_store_id": "6776958488"
+                },
+                "value": "N/A",
+                "content_retained": true,
+                "publishable": false,
+                "facts_allowed": false,
+                "outbox_count": 0
+              },
+              {
+                "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+                "reason": "MARKET_APP_NOT_SOLD",
+                "evidence": {
+                  "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+                  "observed_at": "2026-09-12",
+                  "country": "CN",
+                  "lookup_app_results": 0,
+                  "lookup_control_app_id": "6791658210",
+                  "lookup_control_results": 1,
+                  "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+                  "app_store_id": "6778269699"
+                },
+                "value": "N/A",
+                "content_retained": true,
+                "publishable": false,
+                "facts_allowed": false,
+                "outbox_count": 0
+              },
+              {
+                "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+                "reason": "MARKET_APP_NOT_SOLD",
+                "evidence": {
+                  "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+                  "observed_at": "2026-09-12",
+                  "country": "CN",
+                  "lookup_app_results": 0,
+                  "lookup_control_app_id": "6791658210",
+                  "lookup_control_results": 1,
+                  "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+                  "app_store_id": "6778748533"
+                },
+                "value": "N/A",
+                "content_retained": true,
+                "publishable": false,
+                "facts_allowed": false,
+                "outbox_count": 0
+              },
+              {
+                "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+                "reason": "MARKET_APP_NOT_SOLD",
+                "evidence": {
+                  "source_url": "https://itunes.apple.com/lookup?id=6791658210,6778748533,6778269699,6776958488,6787193643&country=cn&entity=software",
+                  "observed_at": "2026-09-12",
+                  "country": "CN",
+                  "lookup_app_results": 0,
+                  "lookup_control_app_id": "6791658210",
+                  "lookup_control_results": 1,
+                  "response_sha256": "2ce68ecb1c48c973a91f0308994315ac779c5a76d8c97d281eb20e7e97a035db",
+                  "app_store_id": "6787193643"
+                },
+                "value": "N/A",
+                "content_retained": true,
+                "publishable": false,
+                "facts_allowed": false,
+                "outbox_count": 0
+              }
+            ]
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "anyOf": [
+                {
+                  "properties": {
+                    "locale": {
+                      "enum": [
+                        "bn-BD"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "locale"
+                  ]
+                },
+                {
+                  "properties": {
+                    "locale": {
+                      "const": "zh-Hans"
+                    },
+                    "app_store_id": {
+                      "enum": [
+                        "6776958488",
+                        "6778269699",
+                        "6778748533",
+                        "6787193643"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "locale",
+                    "app_store_id"
+                  ]
+                }
+              ]
+            },
+            "then": {
+              "required": [
+                "market_availability",
+                "canonical_app_store_url",
+                "app_store_url"
+              ],
+              "properties": {
+                "canonical_app_store_url": {
+                  "type": "null"
+                },
+                "app_store_url": {
+                  "type": "null"
+                }
+              }
+            },
+            "else": {
+              "not": {
+                "required": [
+                  "market_availability"
+                ]
+              },
+              "properties": {
+                "canonical_app_store_url": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "app_store_url": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

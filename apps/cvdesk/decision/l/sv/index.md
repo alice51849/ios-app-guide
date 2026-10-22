@@ -1,0 +1,26 @@
+---
+title: "bästa CV-byggarappen för karriärbytare 2026"
+lang: "sv"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/sv/index.html"
+modified: "2026-10-21"
+app_store_id: "6781337213"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# bästa CV-byggarappen för karriärbytare 2026
+
+När du byter bransch är CV-problemet annorlunda: din erfarenhet är verklig men 'orelaterad' på papper, och ATS-filter avvisar dig innan en människa läser det. Det är precis den luckan CV Desk ska fylla.
+
+- Produktivitet
+- Gratis att börja · engångsupplåsning
+- Inget konto
+- Inga annonser
+- App Store · Gratis
+
+[Hämta CV Desk på App Store →](https://apps.apple.com/se/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
+
+[Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/answers/best-resume-builder-app-for-career-changers-2026.html)
+
+> Guide skriven av utgivaren Lumi Studio, som också har utvecklat appen. Appnamn är varumärken som tillhör sina respektive ägare och används endast för identifiering. När det gäller dokument, hälsa, skola och produktivitet bör du kontrollera de officiella kraven där det är relevant.

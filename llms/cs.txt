@@ -1,0 +1,245 @@
+# Katalog aplikací — iOS App Guide
+
+> Přehledné informace o funkcích, cenách a častých dotazech ke každé aplikaci pro iOS.
+
+locale: cs
+apps: 54
+- Katalog aplikací: https://open.cait518.cc/ios-app-guide/cs/tools/private-pay-once-iphone-app-finder.html
+- Katalog aplikací · PWA: https://open.cait518.cc/ios-app-guide/cs/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/cs.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/cs.json
+- Katalog aplikací · SVG: https://open.cait518.cc/ios-app-guide/cs/visuals/
+- Katalog aplikací · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Katalog aplikací · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Katalog aplikací · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Katalog aplikací · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Katalog aplikací · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- Katalog aplikací · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- Katalog aplikací · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Katalog aplikací · Agent Skill · cs: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/cs.json
+- Katalog aplikací · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Katalog aplikací · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Katalog aplikací · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Katalog aplikací · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Katalog aplikací · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Katalog aplikací · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Katalog aplikací · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Katalog aplikací · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Katalog aplikací · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/cs/notesstudio100.html) — Rukopis, poznámky a PDF
+  - Zima a zkouškové v lednu: poznámky rukou, zvýrazněná PDF z přednášek, nahrávka přímo na stránce a opakování s kartičkami. Vše offline, bez účtu.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: Ze souborů AI prompt](https://open.cait518.cc/ios-app-guide/cs/aibriefpack.html) — Prompty ze souborů a PDF
+  - Výroční reporty a plány na Vánoce? Přidejte snímky obrazovky, PDF, poznámky a odkazy. Čtou se v zařízení, osobní údaje se označí a vznikne jeden jasný podklad.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: trenér angličtiny](https://open.cait518.cc/ios-app-guide/cs/aim990.html) — Diagnóza TOEIC za 8 minut
+  - Osmiminutová diagnóza pojmenuje tři nejslabší dovednosti, sepíše plán oprav, denně ho procvičí a 30. den vše přeměří. Offline a bez účtu.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: Skóre kondice baterie](https://open.cait518.cc/ios-app-guide/cs/battai.html) — Jasná pravidla, zdroje a omezení
+  - Poznejte svou baterii v čase Jasná pravidla, zdroje a omezení Odemkněte delší historii, plánování a zprávy. Jedna platba. Žádné předplatné.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily: kalkulačka a motivy](https://open.cait518.cc/ios-app-guide/cs/caldaily.html) — Widget, nástroje a historie
+  - Počítejte přímo na ploše: widget je plnohodnotná kalkulačka. Spropitné, sleva, půjčka a dalších 5 vestavěných nástrojů.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/cs/countdaysnow.html) — Denní zaměření
+  - Denní zaměření: soukromě si zvolte Odtehdy, Dnes nebo Vpřed a vraťte se ke třem posledním volbám vedle důležitých milníků.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: ATS životopis](https://open.cait518.cc/ios-app-guide/cs/cvdesk.html) — Tvorba životopisu a šablona
+  - Okamžité ATS skóre, jasné opravy a pohled náboráře na prvních 6 sekund. Náhled výsledného PDF kdykoli. Bez účtu.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: Menstruační kalendář](https://open.cait518.cc/ios-app-guide/cs/cyca.html) — Ovulace a plodné dny bez účtu
+  - Vánoční shon, cesty a večírky? Zapište si menstruaci, krvácení, příznaky, náladu i poznámky za pár vteřin. Vše zůstává v zařízení, bez účtu a cloudu, i offline.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: Mluvte jistě](https://open.cait518.cc/ios-app-guide/cs/dailymatelite.html) — Konverzace na cesty: 50 jazyků
+  - Pochopte, co vám lidé říkají na letišti, v hotelu nebo restauraci, a naučte se přirozenou odpověď. Základy na cesty ve všech 50 jazycích, i offline.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: Věty pro život](https://open.cait518.cc/ios-app-guide/cs/dailymate.html) — Angličtina a němčina v praxi
+  - Naučte se, co lidé opravdu říkají: 8 400 každodenních vět s přirozenými odpověďmi ve 47 jazycích a 84 situacích. S widgetem i Apple Watch. Funguje offline.
+  - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: Hlukoměr](https://open.cait518.cc/ios-app-guide/cs/dbhalo.html) — Decibely a zvukové spektrum
+  - Zimní večírky, hluční sousedé nebo chrápání v dlouhých zimních nocích? Sledujte dB živě na prstenci Halo, odhadněte denní dávku hluku a zaznamenejte chrápání.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Budík na pracovní dny](https://open.cait518.cc/ios-app-guide/cs/easyam.html) — Přeskočí státní svátky i volno
+  - Vánoční svátky a Nový rok se přeskočí samy. Volno mezi svátky? Přidejte ho jako dovolenou: budík mlčí a znovu zazvoní první pracovní den.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: Výdaje na cesty](https://open.cait518.cc/ios-app-guide/cs/gmoneylite.html) — Denní limit: hodinky a widget
+  - Vánoce či silvestr v zahraničí? Zapište nákup v místní měně a hned ho uvidíte ve své, nastavte denní limit. Živé či ruční kurzy fungují i offline.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: Výdaje a rozpočet](https://open.cait518.cc/ios-app-guide/cs/gmoney.html) — Výdaje na cesty a měny
+  - Adventní trhy, Vánoce a silvestr na cestách? Zapisujte výdaje podle kategorií či cest, hlídejte denní limit a převádějte měny s živými či ručními kurzy i offline.
+  - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: Cena v hodinách](https://open.cait518.cc/ios-app-guide/cs/hourstaglite.html) — Vědomý nákup: skutečná cena
+  - Nákupy na konci roku: než koupíte, uvidíte cenu v hodinách vlastní práce, označíte ji jako potřebu, chci nebo impuls a zjistíte, kolik práce stojí cíl na nový rok.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: Hodiny na nákup](https://open.cait518.cc/ios-app-guide/cs/hourstag.html) — Hodinová mzda a výdaje
+  - Vánoční dárky a nákupy do konce roku? Než zaplatíte, uvidíte každou cenu v hodinách práce. Označte Potřeba, Přání nebo Impuls a plánujte svá přání v hodinách.
+  - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/cs/ledmovingtext.html) — Běžící text na displeji
+  - Proměňte displej během pár sekund v zářící běžící nápis, nebo sestavte sekvenci zpráv a přepínejte je klepnutím či časovačem. Celá obrazovka, offline a soukromě.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: Blokace aplikací](https://open.cait518.cc/ios-app-guide/cs/lockhour.html) — Blokace aplikací, méně mobilu
+  - Zamkni aplikace a weby, které ti kradou čas, dokud neskončí časovač. Režimy soustředění, učení a spánku, přísný režim, statistiky a série. Bez účtu.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo](https://open.cait518.cc/ios-app-guide/cs/lumibopomofo.html) — Zhuyin: čínština pro děti
+  - Krm kamarády-symboly podle zvuku, obtahuj tahy ve správném pořadí, projeď se na horské dráze tónů a spojuj hlásky ve vláčku. Funguje i offline.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/cs/lumibopomofopro.html) — Čínské tóny a pracovní listy
+  - Všech 37 zvuků zhuyin najednou: horská dráha tónů, vláček slabik, rybaření, obtahování a hvězdný závod. Rodiče vidí pokrok a tisknou pracovní listy. Bez reklam.
+  - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Lite: ABC Kids](https://open.cait518.cc/ios-app-guide/cs/lumiletters.html) — Anglická abeceda: obtahování
+  - Vyzkoušejte písmeno A a první planetu: dítě slyší hlásku, obtahuje písmeno prstem a hraje planetární kvízy. Později odemknete všech 26 písmen. Bez reklam, offline.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Pro: ABC Phonics](https://open.cait518.cc/ios-app-guide/cs/lumiletterspro.html) — Angličtina pro děti: hlásky
+  - Dítě uslyší slovo, najde první, prostřední nebo poslední hlásku a obtáhne písmeno. 26 písmen, 14 planet a pracovní listy k tisku. Bez reklam, funguje i offline.
+  - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Planet: Explorer](https://open.cait518.cc/ios-app-guide/cs/lumimath.html) — Matematické hry pro děti
+  - Správná odpověď a planeta se rozsvítí. 46 typů obrázkových úloh: počítání, sčítání, odčítání, násobilka, hodiny, peníze. Bez reklam a předplatného.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Pro: Čísla](https://open.cait518.cc/ios-app-guide/cs/lumimathpro.html) — Logika a slovní úlohy
+  - Logika, posloupnosti a slovní úlohy ve 46 typech otázek. Procvičení slabin, přehled pokroku a pracovní listy k tisku. Bez reklam a nákupů v aplikaci.
+  - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet](https://open.cait518.cc/ios-app-guide/cs/lumimission.html) — Odměnová tabulka pro děti
+  - Méně dohadování, víc úspěchů: každá splněná mise přinese hvězdičky, nakrmí Lumiho a doplní album se 100 samolepkami. Přidejte vlastní úkoly. Bez reklam.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet Pro](https://open.cait518.cc/ios-app-guide/cs/lumimissionpro.html) — Ranní a večerní rutina
+  - Všechny rutiny v balíčku: jídlo, čištění zubů, spánek, úklid a cesta do školy, vlastní úkoly, přehled 7 dní a večerní připomenutí. Bez reklam, funguje i offline.
+  - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Počasí: Předpověď na dnes](https://open.cait518.cc/ios-app-guide/cs/lumiweather.html) — Ven, nebo ne? Déšť, UV a vítr
+  - Jít ven hned, nebo počkat? Lumi promění předpověď v index venku 0–100 a poradí, co si obléct a kdy vzít deštník nebo opalovací krém. Hodinová i 7denní předpověď.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: Odstraňte údaje](https://open.cait518.cc/ios-app-guide/cs/maskmyfile.html) — Skryjte citlivé informace
+  - Kopie pasu na zimní cestu nebo výplatní pásky ke konci roku? Najděte soukromé údaje, natrvalo začerněte jen to, co zvolíte, a odstraňte metadata. Vše v zařízení.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: Naposledy](https://open.cait518.cc/ios-app-guide/cs/mochidonestamp.html) — Kdy to bylo? Péče o domácnost
+  - Už žádné dohady, kdy jste to dělali naposledy. Orazítkujte hotovo, Mochi si to pamatuje a připomene, až bude zase čas. Povlečení, filtry, kytky, hovory, i s rodinou.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: Roztomilé úkoly](https://open.cait518.cc/ios-app-guide/cs/mochi.html) — Checklist, připomínky a widget
+  - Od Dušiček po Vánoce v klidu a roztomile: škola, práce i nákupy dárků. Po dokončení klepni na malé kolečko, vyber si motiv a přidej widgety na plochu.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag: Příjmy a výdaje](https://open.cait518.cc/ios-app-guide/cs/moneytag.html) — Projekty · Štítky · Přehled
+  - Přivýdělek nebo stánek do konce roku? Projekt ukazuje příjmy minus výdaje jako jasný čistý výsledek v měně, kterou si zvolíte. Zápisy přímo z Apple Watch.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: AI snímek](https://open.cait518.cc/ios-app-guide/cs/onepageppt.html) — Poznámky v hotovou prezentaci
+  - Roční bilance před Vánoci? Vložte poznámky, PDF, snímek obrazovky nebo CSV a máte přehledný snímek 16:9: hlavní body jako nadpisy, čísla jako grafy. Uložte jako PNG.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: Filmové filtry](https://open.cait518.cc/ios-app-guide/cs/photocream.html) — Analogový foťák a retro filtry
+  - Vánoční světýlka a rodinné večeře v teplém světle? Dolaďte světlo, barvy a křivky, retušujte pleť bez ztráty detailů a přidejte filmové zrno do alba roku.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: Čištění fotek](https://open.cait518.cc/ios-app-guide/cs/picclear.html) — Smazat snímky, uvolnit místo
+  - Plná paměť? Uvolněte gigabajty: najděte duplicitní fotky, podobné snímky, staré screenshoty a velká videa a vše zkontrolujte před smazáním. Skenuje se přímo v zařízení.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: čtečka a tvorba](https://open.cait518.cc/ios-app-guide/cs/qrcodehalo.html) — Otevři hned, prověř později
+  - Naskenujete a hotovo: odkazy se otevřou, Wi-Fi zobrazí dotaz iOS, hovory a e-maily jsou připravené. Každé uložené skenování má Kontrolu bezpečnosti v Historii.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: záložky s AI](https://open.cait518.cc/ios-app-guide/cs/savetag.html) — Uložit odkazy, číst později
+  - Tipy na dárky, vánoční recepty a místa na výlet ztracené v chatech? Sdílejte odkaz z jakékoli aplikace, štítky se přidají samy v zařízení a najdete ho podle smyslu.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: PDF a OCR](https://open.cait518.cc/ios-app-guide/cs/scanto.html) — Soukromý skener dokumentů
+  - Účtenky od vánočních dárků, záruční listy a faktury ke konci roku? Naskenujte je do ostrých PDF a OCR v zařízení najde každou podle jednoho slova. Offline, bez účtu.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: Zvuky pro spánek](https://open.cait518.cc/ios-app-guide/cs/sereno.html) — Bílý šum, déšť a moře
+  - Déšť, oceán, oheň a další: 140+ uklidňujících zvuků pro spánek a soustředění. Míchejte, usínejte s plynulým ztlumením, vstávejte se zpěvem ptáků. Offline, bez účtu.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/cs/shotinbox.html) — Organizátor snímků obrazovky
+  - Vánoční nákupy a zimní cesty nechávají účtenky, vstupenky a objednávky na snímcích. Roztřídí se samy, hledáte v textu, sledujete balíky a zbytek uklidíte.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: Foto na doklady](https://open.cait518.cc/ios-app-guide/cs/snapportlite.html) — Portréty v přesném rozměru
+  - Cesta na Vánoce nebo nový pas? Ořízněte fotku přesně na velikost podle předvoleb, s vodítky obličeje a bílým či modrým pozadím. Vše přímo ve vašem zařízení.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: Pasové Fotky](https://open.cait518.cc/ios-app-guide/cs/snapport.html) — 35x45 a arch k tisku
+  - Cesta na Vánoce, nebo nový pas? Fotku na pas či vízum uděláte doma: šablony běžných rozměrů, vodítka k zarovnání obličeje, bílé pozadí a archy k tisku. Bez účtu.
+  - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/cs/sononote.html) — Řeč na text · Diktafon
+  - Mluvte a Sono Note z toho udělá čistý přepis, shrnutí, klíčové body i úkoly, dokonce návrh e-mailu. Pro porady, přednášky i hovory. Bez účtu.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: sklápěcí hodiny](https://open.cait518.cc/ios-app-guide/cs/stayclock.html) — Nepřetržitý čas a kalendář
+  - Dlouhé večery až do Vánoc: telefon se při nabíjení změní ve velké hodiny čitelné přes celou místnost. Kalendář Měsíc, hodinové odbíjení a jednoduchý budík.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: Měření času](https://open.cait518.cc/ios-app-guide/cs/studydown.html) — Polož ho displejem dolů
+  - Zkouškové a termíny na konci roku? Vyberte činnost, položte telefon displejem dolů a čas běží; zvednete-li ho, pozastaví se. Uvidíte dnešek a týden podle činností.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet pro děti](https://open.cait518.cc/ios-app-guide/cs/tripplanet.html) — Rodinné mise na cestách
+  - Lety, dlouhé cesty autem a nová místa se mění v mise: připoutat se, poděkovat posádce, ochutnat sousto. Každá mise dá odměnu a každý dokončený výlet razítko. Bez reklam.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: Plán cesty](https://open.cait518.cc/ios-app-guide/cs/tripbeelite.html) — Itinerář dovolené den po dni
+  - Domů na Vánoce, nebo pryč na Silvestra? Dejte cestu na jednu denní časovou osu: lety, ubytování, poznámky, připomínky i údaje o vstupenkách pohromadě. Bez účtu.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: Plánovač cest](https://open.cait518.cc/ios-app-guide/cs/tripbee.html) — Výlet s partou a seznam věcí
+  - Upravujte stejnou cestu s rodinou nebo přáteli, přidejte plán na deštivý den a dostávejte připomínky v místním čase. Seznam věcí se přizpůsobí každému, i dětem.
+  - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: Ostré fotky](https://open.cait518.cc/ios-app-guide/cs/unblurry.html) — Obnova starých fotek
+  - Vánoční večírky, silvestr a dlouhé zimní večery: rozmazané nebo tmavé fotky? Doostřete je, odstraňte šum a zachraňte tmavé snímky přímo v iPhonu, bez cloudu a bez účtu.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: Sledování využití AI](https://open.cait518.cc/ios-app-guide/cs/claudeusagemini.html) — Limity Claude, Codex, Copilot
+  - Vlastní upozornění na libovolné procento, řazení podle 5hodinového či týdenního obnovení a widgety listující všemi účty. Podívejte se, kolik zbývá z každého plánu AI.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/cs/wifiaidlite.html) — Nejde internet? Zjistěte proč
+  - Nejde internet? Je to Wi-Fi, poskytovatel, nebo jen jeden web? Jedno klepnutí spustí nezávislé testy a ukáže nejpravděpodobnější příčinu i další kroky.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: Najděte chyby sítě](https://open.cait518.cc/ios-app-guide/cs/wifiaid.html) — Router, mesh, DNS: diagnostika
+  - O Vánocích celá rodina na jedné Wi-Fi? Když se to seká, jedním klepnutím otestujte Wi-Fi, DNS i internet a zjistěte nejpravděpodobnější příčinu. Nebo jeden web.
+  - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite: slovíčka denně](https://open.cait518.cc/ios-app-guide/cs/wordmatelite.html) — Jedna minuta, pět nových slov
+  - Pět slov, jedna minuta denně, v kterémkoli ze 44 jazyků. Poslechněte si každé slovo, uvidíte ho ve větě a udržíte sérii. Funguje offline, bez účtu.
+  - Cena: Stáhněte zdarma. Jednorázovým nákupem odemknete všechny funkce—bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: Slovní zásoba](https://open.cait518.cc/ios-app-guide/cs/wordmate.html) — Slovíčka, kartičky a widget
+  - Cesta na vánoční trhy nebo novoroční předsevzetí? Učte se slovíčka ze 44 jazyků ve volných chvílích: 14 praktických témat, příkladové věty a výslovnost. I z widgetu.
+  - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: otevřít RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/cs/zipbox.html) — Rozbalte bez reklam
+  - Vánoční fotky v 7z s heslem nebo ZIP rozdělený na části? Podívejte se dovnitř, prohlédněte si fotky a PDF a rozbalte jen to, co potřebujete. Žádné reklamy.
+  - Cena: Placené stažení za jednu pevnou cenu, bez předplatného.
+  - App Store: https://apps.apple.com/cz/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

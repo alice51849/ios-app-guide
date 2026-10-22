@@ -1,0 +1,26 @@
+---
+title: "BattAI: ব্যাটারির স্বাস্থ্য — স্পষ্ট নিয়ম, উৎস ও সীমা | iOS App"
+lang: "bn-BD"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/battai/decision/l/bn-BD/index.html"
+modified: "2026-10-21"
+app_store_id: "6802423998"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+market_availability: {"state": "MARKET_UNAVAILABLE_OR_UNVERIFIED", "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES", "evidence": {"source_url": "https://support.apple.com/en-us/118205", "observed_at": "2026-09-12", "country": "BD", "apple_media_services_markets": 174, "country_listed": false, "lookup_app_results": 0, "lookup_control_results": 0, "redirect_market": "US"}, "value": "N/A", "content_retained": true, "publishable": false, "facts_allowed": false, "outbox_count": 0}
+---
+
+# BattAI: ব্যাটারির স্বাস্থ্য — স্পষ্ট নিয়ম, উৎস ও সীমা | iOS App
+
+BattAI BattAI সর্বজনীন iOS API থেকে পাঁচটি মান ব্যবহার করে: ব্যাটারির স্তর, চার্জের অবস্থা, লো পাওয়ার মোড, পুরো ডিভাইসের তাপীয় অবস্থা ও সময়। অন্য ফল এই পরিমাপ থেকে হিসাব করা হয় বা আপনি যোগ করেন। প্রতিটি তথ্য তার উৎস ও সীমা দেখায়। স্বাস্থ্য • ব্যাটারি স্বাস্থ্য স্কোর • স্কোর যেসব বিষয় দিয়ে তৈরি • সময়ের সঙ্গে সর্বোচ্চ ধারণক্ষমতা • সর্বোচ্চ ধারণক্ষমতা • চার্জ চক্র চার্জিং • চার্জিং যত্ন • চার্জের পরিসর • চার্জের হার ডেটা রপ্তানি করুন • এই ডিভাইসে একটি ফাইল তৈরি করুন। কিছু আপলোড হয় না। • এই ডিভাইসেই তৈরি হয়। কোনো ডেটা আপলোড হয় না। গোপনীয়তা • কোনো বিজ্ঞাপন, অ্যানালিটিক্স, ট্র্যাকিং, তৃতীয় পক্ষের SDK বা ইন্টারনেট অনুরোধ নেই। ডেটা এখানেই থাকে, শুধু ছোট একটি সারাংশ সরাসরি সংযুক্ত Apple Watch-এ যায়। • BattAI শুধু চক্রসংখ্যা, নামমাত্র চার্জ ধারণক্ষমতা ও নকশা ধারণক্ষমতা পড়ে। ফাইলের অন্য ডেটা সঙ্গে সঙ্গে বাদ যায়, কখনো সংরক্ষণ বা পাঠানো হয় না। সময়ের সঙ্গে আপনার ব্যাটারি বুঝুন • আরও গভীর ইতিহাস, পরিকল্পনা ও রিপোর্ট খুলুন। • একবার পরিশোধ। কোনো সদস্যতা নেই।
+
+- আরও
+- বিনামূল্যে শুরু
+- কোনও বিজ্ঞাপন নেই
+- Apple Watch
+
+Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে BattAI: ব্যাটারির স্বাস্থ্য-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।
+
+[সম্পূর্ণ গাইড পড়ুন](https://open.cait518.cc/ios-app-guide/bn-BD/battai.html)
+
+> এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।

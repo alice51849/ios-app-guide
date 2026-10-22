@@ -1,0 +1,5 @@
+﻿"Device","Purchase month","Maximum capacity %","Cycle count","Age (months)","Wear % per month (low)","Wear % per month (high)","Months to 80% (low)","Months to 80% (high)","Source"
+"Device 1","2024-09","88","412","24","0.38","0.63","12","22","You provided: Purchase month, Maximum capacity %, Cycle count; Estimated: Age (months), Wear % per month, Months to 80%"
+"Device 2","2026-08","100","","1","0.00","0.00","No measurable wear yet","No measurable wear yet","You provided: Purchase month, Maximum capacity %; Estimated: Age (months), Wear % per month, Months to 80%"
+"Device 3","2021-03","79","","66","0.24","0.40","Already at or below 80%","Already at or below 80%","You provided: Purchase month, Maximum capacity %; Estimated: Age (months), Wear % per month, Months to 80%"
+"Current month","2026-09","","","","","","","",""

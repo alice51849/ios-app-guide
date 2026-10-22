@@ -1,0 +1,3578 @@
+{
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#catalog",
+  "url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld",
+  "name": "Lumi Studio پبلشر سرچ انٹینٹ کیٹلاگ",
+  "description": "ایسا کیٹلاگ جسے ڈویلپر براہ راست شائع کرتا ہے اور جو بتاتا ہے کہ ہر ایپ کس کے لیے بنائی گئی ہے، صارف کون سا کام مکمل کرنا چاہتا ہے اور App Store تک براہ راست کیسے پہنچنا ہے۔",
+  "inLanguage": "ur-PK",
+  "dateModified": "2026-10-20",
+  "numberOfItems": 54,
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "url": "https://apps.apple.com/pk/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-notesstudio100",
+        "url": "https://apps.apple.com/pk/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+        "name": "100 Notes Studio: Pen & Paper",
+        "description": "100 Notes Studio ہاتھ سے لکھنے، ٹائپ کرنے، PDF پر تشریح، صفحے سے منسلک آواز اور مطالعے کے اوزار کو آف لائن کام کے بہاؤ میں یکجا کرتا ہے۔ مواد کو نوٹ بکس،",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6798813048",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6798813048"
+          },
+          "name": "100 Notes Studio: Pen & Paper",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/pk/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6798813048?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/notesstudio100.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6798813048",
+          "inLanguage": "ur-PK",
+          "description": "100 Notes Studio ہاتھ سے لکھنے، ٹائپ کرنے، PDF پر تشریح، صفحے سے منسلک آواز اور مطالعے کے اوزار کو آف لائن کام کے بہاؤ میں یکجا کرتا ہے۔ مواد کو نوٹ بکس،",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-notesstudio100"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "url": "https://apps.apple.com/pk/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-aibriefpack",
+        "url": "https://apps.apple.com/pk/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+        "name": "AI Brief: فائل سے AI پرامپٹ",
+        "description": "بہتر سیاق و سباق۔ بہتر جوابات۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6791658210",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6791658210"
+          },
+          "name": "AI Brief: فائل سے AI پرامپٹ",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/pk/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6791658210?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/aibriefpack.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6791658210",
+          "inLanguage": "ur-PK",
+          "description": "بہتر سیاق و سباق۔ بہتر جوابات۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-aibriefpack"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "url": "https://apps.apple.com/pk/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-aim990",
+        "url": "https://apps.apple.com/pk/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Aim990",
+        "description": "پارٹ 5 چھوٹا لگتا ہے، لیکن وہ نامکمل جملے والے سوالات وقت ضائع کر سکتے ہیں اگر گرامر اور الفاظ خودکار نہ ہوں۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6784974530",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6784974530"
+          },
+          "name": "Aim990",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6784974530?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6784974530",
+          "inLanguage": "ur-PK",
+          "description": "پارٹ 5 چھوٹا لگتا ہے، لیکن وہ نامکمل جملے والے سوالات وقت ضائع کر سکتے ہیں اگر گرامر اور الفاظ خودکار نہ ہوں۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-aim990"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "url": "https://apps.apple.com/pk/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-battai",
+        "url": "https://apps.apple.com/pk/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+        "name": "BattAI: بیٹری کی صحت کا اسکور",
+        "description": "BattAI ⁦BattAI⁩ عوامی ⁦iOS API⁩ سے پانچ قدریں لیتا ہے: بیٹری کی سطح، چارج کی حالت، کم پاور موڈ، پورے فون کی حرارتی حالت اور وقت۔ دوسرے نتائج ان پیمائشوں سے حساب ہوتے ہیں یا آپ شامل کرتے ہیں۔ ہر تفصیل اپنا ماخذ اور حد دکھاتی ہے۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802423998",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802423998"
+          },
+          "name": "BattAI: بیٹری کی صحت کا اسکور",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/pk/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6802423998?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/battai.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802423998",
+          "inLanguage": "ur-PK",
+          "description": "BattAI ⁦BattAI⁩ عوامی ⁦iOS API⁩ سے پانچ قدریں لیتا ہے: بیٹری کی سطح، چارج کی حالت، کم پاور موڈ، پورے فون کی حرارتی حالت اور وقت۔ دوسرے نتائج ان پیمائشوں سے حساب ہوتے ہیں یا آپ شامل کرتے ہیں۔ ہر تفصیل اپنا ماخذ اور حد دکھاتی ہے۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-battai"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "url": "https://apps.apple.com/pk/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-caldaily",
+        "url": "https://apps.apple.com/pk/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+        "name": "CalDaily: کیلکولیٹر",
+        "description": "ایک ایسا کیلکولیٹر جسے آپ واقعی استعمال کرتے رہیں گے، کیونکہ یہ ہر عدد کے پیچھے کی سوچ بھی یاد رکھتا ہے۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794178671",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794178671"
+          },
+          "name": "CalDaily: کیلکولیٹر",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/pk/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6794178671?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/caldaily.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794178671",
+          "inLanguage": "ur-PK",
+          "description": "ایک ایسا کیلکولیٹر جسے آپ واقعی استعمال کرتے رہیں گے، کیونکہ یہ ہر عدد کے پیچھے کی سوچ بھی یاد رکھتا ہے۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-caldaily"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "url": "https://apps.apple.com/pk/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-countdaysnow",
+        "url": "https://apps.apple.com/pk/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+        "name": "CountDaysNow: Event Counter",
+        "description": "• آج کی توجہ تب سے · آج · آگے — محفوظ کریں",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6807079789",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6807079789"
+          },
+          "name": "CountDaysNow: Event Counter",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/pk/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6807079789?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/countdaysnow.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6807079789",
+          "inLanguage": "ur-PK",
+          "description": "• آج کی توجہ تب سے · آج · آگے — محفوظ کریں",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-countdaysnow"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "url": "https://apps.apple.com/pk/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-cvdesk",
+        "url": "https://apps.apple.com/pk/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+        "name": "CV ڈیسک",
+        "description": "جب آپ شعبہ بدل رہے ہوں، تو ریزیومے کا مسئلہ مختلف ہوتا ہے: آپ کا تجربہ حقیقی ہے لیکن کاغذ پر 'غیر متعلقہ' ہے، اور ATS فلٹر آپ کو انسان کے پڑھنے سے پہلے مسترد کر دیتے ہیں۔ یہی خلا CV ڈیسک پُر کرنا چاہتا ہے۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6781337213",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6781337213"
+          },
+          "name": "CV ڈیسک",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/pk/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6781337213?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6781337213",
+          "inLanguage": "ur-PK",
+          "description": "جب آپ شعبہ بدل رہے ہوں، تو ریزیومے کا مسئلہ مختلف ہوتا ہے: آپ کا تجربہ حقیقی ہے لیکن کاغذ پر 'غیر متعلقہ' ہے، اور ATS فلٹر آپ کو انسان کے پڑھنے سے پہلے مسترد کر دیتے ہیں۔ یہی خلا CV ڈیسک پُر کرنا چاہتا ہے۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-cvdesk"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "url": "https://apps.apple.com/pk/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-cyca",
+        "url": "https://apps.apple.com/pk/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Cyca",
+        "description": "ایسی کیٹیگری جہاں ڈیٹا کی حساسیت پوری کہانی ہے، صحیح پیریڈ ٹریکر سب کچھ — بہاؤ، مزاج، علامات، درجہ حرارت، قربت — آپ کے ڈیوائس پر رکھتا ہے، بغیر اکاؤنٹ اور بغیر کلاؤڈ سنک کے۔ Cyca صرف یہی ایک کام کرتا ہے، باقی چھوڑ دیتا ہے۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6782251621",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6782251621"
+          },
+          "name": "Cyca",
+          "operatingSystem": "iOS",
+          "applicationCategory": "HealthApplication",
+          "url": "https://apps.apple.com/pk/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6782251621?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6782251621",
+          "inLanguage": "ur-PK",
+          "description": "ایسی کیٹیگری جہاں ڈیٹا کی حساسیت پوری کہانی ہے، صحیح پیریڈ ٹریکر سب کچھ — بہاؤ، مزاج، علامات، درجہ حرارت، قربت — آپ کے ڈیوائس پر رکھتا ہے، بغیر اکاؤنٹ اور بغیر کلاؤڈ سنک کے۔ Cyca صرف یہی ایک کام کرتا ہے، باقی چھوڑ دیتا ہے۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-cyca"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "url": "https://apps.apple.com/pk/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-dailymate",
+        "url": "https://apps.apple.com/pk/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+        "name": "DailyMate",
+        "description": "سفر سے پہلے، حقیقی حالات کے مکمل جملے تنہا الفاظ سے زیادہ مفید ہوتے ہیں جنہیں آپ کو دباؤ میں خود جوڑنا پڑتا ہے۔ DailyMate کی شروعات بالکل اسی مسئلے سے ہوئی۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790418321",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790418321"
+          },
+          "name": "DailyMate",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6790418321?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790418321",
+          "inLanguage": "ur-PK",
+          "description": "سفر سے پہلے، حقیقی حالات کے مکمل جملے تنہا الفاظ سے زیادہ مفید ہوتے ہیں جنہیں آپ کو دباؤ میں خود جوڑنا پڑتا ہے۔ DailyMate کی شروعات بالکل اسی مسئلے سے ہوئی۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-dailymate"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "3500",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "url": "https://apps.apple.com/pk/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-dailymatelite",
+        "url": "https://apps.apple.com/pk/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+        "name": "DailyMate Lite: آج ہی بولیں",
+        "description": "موقع آئے تو اعتماد سے بولیں۔ DailyMate Lite روزمرہ حالات کو مختصر مشق میں بدلتا ہے: ایک عملی جملہ اور اس کا قدرتی جواب۔ 50 زبانوں میں سے کوئی بھی منتخب",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794725568",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794725568"
+          },
+          "name": "DailyMate Lite: آج ہی بولیں",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6794725568?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/dailymatelite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794725568",
+          "inLanguage": "ur-PK",
+          "description": "موقع آئے تو اعتماد سے بولیں۔ DailyMate Lite روزمرہ حالات کو مختصر مشق میں بدلتا ہے: ایک عملی جملہ اور اس کا قدرتی جواب۔ 50 زبانوں میں سے کوئی بھی منتخب",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-dailymatelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "url": "https://apps.apple.com/pk/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-dbhalo",
+        "url": "https://apps.apple.com/pk/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+        "name": "dB Halo: صوتی سطح میٹر",
+        "description": "فوراً جانیں کہ آس پاس کی آواز کتنی بلند ہے اور اندازاً محفوظ وقت کتنا باقی ہے۔ dB Halo iPhone، iPad اور Apple Watch کے لیے مکمل طور پر ڈیوائس پر چلنے",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806826699",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806826699"
+          },
+          "name": "dB Halo: صوتی سطح میٹر",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/pk/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/dbhalo.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806826699",
+          "inLanguage": "ur-PK",
+          "description": "فوراً جانیں کہ آس پاس کی آواز کتنی بلند ہے اور اندازاً محفوظ وقت کتنا باقی ہے۔ dB Halo iPhone، iPad اور Apple Watch کے لیے مکمل طور پر ڈیوائس پر چلنے",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-dbhalo"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "url": "https://apps.apple.com/pk/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-easyam",
+        "url": "https://apps.apple.com/pk/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+        "name": "EasyAM: الارم گھڑی اور چھٹیاں",
+        "description": "کیا کل صبح الارم بجے گا؟ اور کیا اسے بجنا چاہیے؟ EasyAM یہ فیصلہ ہر دن آپ کے لیے خود کرتا ہے: کام کے دنوں میں جگاتا ہے، عام تعطیلات اور آپ کی چھٹیوں پر",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6821790092",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6821790092"
+          },
+          "name": "EasyAM: الارم گھڑی اور چھٹیاں",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/pk/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6821790092?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/easyam.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6821790092",
+          "inLanguage": "ur-PK",
+          "description": "کیا کل صبح الارم بجے گا؟ اور کیا اسے بجنا چاہیے؟ EasyAM یہ فیصلہ ہر دن آپ کے لیے خود کرتا ہے: کام کے دنوں میں جگاتا ہے، عام تعطیلات اور آپ کی چھٹیوں پر",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-easyam"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "url": "https://apps.apple.com/pk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-gmoney",
+        "url": "https://apps.apple.com/pk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+        "name": "G+Money",
+        "description": "سفر پر آپ کو ایسا بجٹ ٹریکر چاہیے جو بغیر ڈیٹا کے ملک میں آف لائن کام کرے، متعدد کرنسیاں سنبھالے، اور اکاؤنٹ کا مطالبہ نہ کرے — ہر چھٹی الگ منظم ہو۔ یہی خلا G+Money پُر کرنا چاہتا ہے۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6755782939",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6755782939"
+          },
+          "name": "G+Money",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/pk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6755782939?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6755782939",
+          "inLanguage": "ur-PK",
+          "description": "سفر پر آپ کو ایسا بجٹ ٹریکر چاہیے جو بغیر ڈیٹا کے ملک میں آف لائن کام کرے، متعدد کرنسیاں سنبھالے، اور اکاؤنٹ کا مطالبہ نہ کرے — ہر چھٹی الگ منظم ہو۔ یہی خلا G+Money پُر کرنا چاہتا ہے۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-gmoney"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "1300",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "url": "https://apps.apple.com/pk/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-gmoneylite",
+        "url": "https://apps.apple.com/pk/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+        "name": "G+Money Lite: سفری اخراجات",
+        "description": "G+Money Lite — سمارٹ سفر کرنسی اور خرچ ٹریکر",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6793436548",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6793436548"
+          },
+          "name": "G+Money Lite: سفری اخراجات",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/pk/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6793436548?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/gmoneylite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6793436548",
+          "inLanguage": "ur-PK",
+          "description": "G+Money Lite — سمارٹ سفر کرنسی اور خرچ ٹریکر",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-gmoneylite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "url": "https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-hourstaglite",
+        "url": "https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+        "name": "HoursTag Lite: قیمت گھنٹوں میں",
+        "description": "HoursTag Lite - چیزوں کی اصل قیمت دیکھیں",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794039979",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794039979"
+          },
+          "name": "HoursTag Lite: قیمت گھنٹوں میں",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6794039979?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/hourstaglite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794039979",
+          "inLanguage": "ur-PK",
+          "description": "HoursTag Lite - چیزوں کی اصل قیمت دیکھیں",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-hourstaglite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "url": "https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-hourstag",
+        "url": "https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+        "name": "HoursTag: وقت کی قیمت",
+        "description": "حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6754218117",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6754218117"
+          },
+          "name": "HoursTag: وقت کی قیمت",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/hourstag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6754218117",
+          "inLanguage": "ur-PK",
+          "description": "حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-hourstag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "1300",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "url": "https://apps.apple.com/pk/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-ledmovingtext",
+        "url": "https://apps.apple.com/pk/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+        "name": "LED Moving Text",
+        "description": "ایک جملہ لکھیں اور آئی فون اٹھا لیں۔ پچھلی قطار سے، آمد کے ہال کے دوسرے سرے سے یا کاؤنٹر کے اوپر سے ایک نظر میں پڑھا جاتا ہے۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806639602",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806639602"
+          },
+          "name": "LED Moving Text",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/pk/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6806639602?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/ledmovingtext.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806639602",
+          "inLanguage": "ur-PK",
+          "description": "ایک جملہ لکھیں اور آئی فون اٹھا لیں۔ پچھلی قطار سے، آمد کے ہال کے دوسرے سرے سے یا کاؤنٹر کے اوپر سے ایک نظر میں پڑھا جاتا ہے۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-ledmovingtext"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "url": "https://apps.apple.com/pk/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lockhour",
+        "url": "https://apps.apple.com/pk/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+        "name": "LockHour Pro",
+        "description": "امتحانات کے دوران، حوصلہ نہیں بلکہ سخت وقت پر مبنی بلاک ضروری ہے۔ اسی لیے LockHour Pro بنایا گیا۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6780107485",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6780107485"
+          },
+          "name": "LockHour Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/pk/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6780107485?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6780107485",
+          "inLanguage": "ur-PK",
+          "description": "امتحانات کے دوران، حوصلہ نہیں بلکہ سخت وقت پر مبنی بلاک ضروری ہے۔ اسی لیے LockHour Pro بنایا گیا۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lockhour"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "url": "https://apps.apple.com/pk/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumibopomofo",
+        "url": "https://apps.apple.com/pk/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Bopomofo",
+        "description": "جو بچہ پہلی بار ژوئین سیکھ رہا ہو، ایپ کو تمام 37 علامات کو ٹریسنگ اور کھیل کے ذریعے کور کرنا چاہیے — 4–7 سال کی پہلی سیکھنے کی عمر کے لیے، بغیر اشتہارات اور کوئی ڈیٹا جمع کیے۔ یہی خلا Lumi Bopomofo پُر کرنا چاہتا ہے۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6773017109",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6773017109"
+          },
+          "name": "Lumi Bopomofo",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6773017109?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6773017109",
+          "inLanguage": "ur-PK",
+          "description": "جو بچہ پہلی بار ژوئین سیکھ رہا ہو، ایپ کو تمام 37 علامات کو ٹریسنگ اور کھیل کے ذریعے کور کرنا چاہیے — 4–7 سال کی پہلی سیکھنے کی عمر کے لیے، بغیر اشتہارات اور کوئی ڈیٹا جمع کیے۔ یہی خلا Lumi Bopomofo پُر کرنا چاہتا ہے۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumibopomofo"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "url": "https://apps.apple.com/pk/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumibopomofopro",
+        "url": "https://apps.apple.com/pk/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Bopomofo Pro",
+        "description": "گھر پر ژوئین سیکھنے والے بائی لنگوئل بچوں کو آوازوں، سمبلز، ٹونز اور بلینڈنگ کا مکمل راستہ چاہیے، جس میں اتنی کھیل کے انداز کی تکرار ہو کہ سسٹم مانوس ہو جائے۔ یہی خلا Lumi Bopomofo Pro پُر کرنا چاہتا ہے۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6775773117",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6775773117"
+          },
+          "name": "Lumi Bopomofo Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6775773117?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6775773117",
+          "inLanguage": "ur-PK",
+          "description": "گھر پر ژوئین سیکھنے والے بائی لنگوئل بچوں کو آوازوں، سمبلز، ٹونز اور بلینڈنگ کا مکمل راستہ چاہیے، جس میں اتنی کھیل کے انداز کی تکرار ہو کہ سسٹم مانوس ہو جائے۔ یہی خلا Lumi Bopomofo Pro پُر کرنا چاہتا ہے۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumibopomofopro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "2500",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "url": "https://apps.apple.com/pk/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiletters",
+        "url": "https://apps.apple.com/pk/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Letters",
+        "description": "چھوٹے بچے کے لیے سب سے بڑا مسئلہ اشتہارات اور ڈیٹا جمع کرنا ہے — ایک تعلیمی ایپ کو گیم لوپ میں بغیر اشتہارات کے، بچے سے کچھ بھی جمع کیے بغیر، اور والدین کے لیے قابل اعتماد ایک بار انلاک کے ساتھ سکھانا چاہیے۔ اسی لیے Lumi Letters بنایا گیا۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6778748533",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6778748533"
+          },
+          "name": "Lumi Letters",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6778748533?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6778748533",
+          "inLanguage": "ur-PK",
+          "description": "چھوٹے بچے کے لیے سب سے بڑا مسئلہ اشتہارات اور ڈیٹا جمع کرنا ہے — ایک تعلیمی ایپ کو گیم لوپ میں بغیر اشتہارات کے، بچے سے کچھ بھی جمع کیے بغیر، اور والدین کے لیے قابل اعتماد ایک بار انلاک کے ساتھ سکھانا چاہیے۔ اسی لیے Lumi Letters بنایا گیا۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiletters"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "url": "https://apps.apple.com/pk/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiletterspro",
+        "url": "https://apps.apple.com/pk/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Letters Pro",
+        "description": "کنڈرگارٹن کی تیاری کرنے والی فیملیز کو مکمل ابتدائی ریڈنگ راستہ چاہیے جو حرف کی آوازوں، ٹریسنگ اور لفظ سازی کو جوڑے بجائے کہ الگ الگ الفابیٹ گیمز۔ یہی خلا Lumi Letters Pro پُر کرنا چاہتا ہے۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6778491147",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6778491147"
+          },
+          "name": "Lumi Letters Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6778491147?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6778491147",
+          "inLanguage": "ur-PK",
+          "description": "کنڈرگارٹن کی تیاری کرنے والی فیملیز کو مکمل ابتدائی ریڈنگ راستہ چاہیے جو حرف کی آوازوں، ٹریسنگ اور لفظ سازی کو جوڑے بجائے کہ الگ الگ الفابیٹ گیمز۔ یہی خلا Lumi Letters Pro پُر کرنا چاہتا ہے۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiletterspro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "2500",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "url": "https://apps.apple.com/pk/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimath",
+        "url": "https://apps.apple.com/pk/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Math Planet",
+        "description": "بچوں کے لیے بہترین ریاضی کی ایپ استدلال کی تربیت دیتی ہے — پیٹرنز، سلسلے، مکانی سوچ — صرف حساب کتاب کی مشق نہیں، اور یہ اسے ایک گیم میں چھپاتی ہے جو بچہ کھیلنا چاہتا ہے۔ اسی لیے Lumi Math Planet بنایا گیا۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6778269699",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6778269699"
+          },
+          "name": "Lumi Math Planet",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6778269699?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6778269699",
+          "inLanguage": "ur-PK",
+          "description": "بچوں کے لیے بہترین ریاضی کی ایپ استدلال کی تربیت دیتی ہے — پیٹرنز، سلسلے، مکانی سوچ — صرف حساب کتاب کی مشق نہیں، اور یہ اسے ایک گیم میں چھپاتی ہے جو بچہ کھیلنا چاہتا ہے۔ اسی لیے Lumi Math Planet بنایا گیا۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimath"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "url": "https://apps.apple.com/pk/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimathpro",
+        "url": "https://apps.apple.com/pk/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Math Pro",
+        "description": "ایک مکمل ابتدائی میتھ ایپ کو گنتی، نمبر سینس اور ابتدائی آپریشنز کو ایک جڑے ہوئے ایڈونچر کی طرح بنانا چاہیے بجائے کہ الگ الگ مشقیں۔ اسی لیے Lumi Math Pro بنایا گیا۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6776958488",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6776958488"
+          },
+          "name": "Lumi Math Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6776958488?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6776958488",
+          "inLanguage": "ur-PK",
+          "description": "ایک مکمل ابتدائی میتھ ایپ کو گنتی، نمبر سینس اور ابتدائی آپریشنز کو ایک جڑے ہوئے ایڈونچر کی طرح بنانا چاہیے بجائے کہ الگ الگ مشقیں۔ اسی لیے Lumi Math Pro بنایا گیا۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimathpro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "2500",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "url": "https://apps.apple.com/pk/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimission",
+        "url": "https://apps.apple.com/pk/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Mission Planet",
+        "description": "پری اسکول بچے کے لیے سونے کی روٹین اس وقت بہتر کام کرتی ہے جب وہ مختصر، بصری اور اتنی پیش گوئی کے قابل ہو کہ بچہ بغیر کسی اضافی یاد دہانی کے اس پر عمل کر سکے۔ اگر بات جانی پہچانی لگے تو Lumi Mission Planet پر ایک نظر ڈالیں۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779750237",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779750237"
+          },
+          "name": "Lumi Mission Planet",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6779750237?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779750237",
+          "inLanguage": "ur-PK",
+          "description": "پری اسکول بچے کے لیے سونے کی روٹین اس وقت بہتر کام کرتی ہے جب وہ مختصر، بصری اور اتنی پیش گوئی کے قابل ہو کہ بچہ بغیر کسی اضافی یاد دہانی کے اس پر عمل کر سکے۔ اگر بات جانی پہچانی لگے تو Lumi Mission Planet پر ایک نظر ڈالیں۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimission"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "url": "https://apps.apple.com/pk/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimissionpro",
+        "url": "https://apps.apple.com/pk/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Mission Planet Pro",
+        "description": "دانت صاف کرنا اور بیڈ ٹائم اکثر ہر رات ایک ہی وقت ناکام ہوتے ہیں: بچہ تھکا ہوا، والدین تھکے ہوئے، اور اگلا قدم کافی نمایاں نہیں۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779745474",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779745474"
+          },
+          "name": "Lumi Mission Planet Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6779745474?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779745474",
+          "inLanguage": "ur-PK",
+          "description": "دانت صاف کرنا اور بیڈ ٹائم اکثر ہر رات ایک ہی وقت ناکام ہوتے ہیں: بچہ تھکا ہوا، والدین تھکے ہوئے، اور اگلا قدم کافی نمایاں نہیں۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumimissionpro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "1700",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "url": "https://apps.apple.com/pk/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiweather",
+        "url": "https://apps.apple.com/pk/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi موسم: آج کی پیش گوئی",
+        "description": "کیا آج باہر نکلنے کا صحیح وقت ہے؟ Lumi موسم ایک نظر میں بتا دیتا ہے: 0 سے 100 تک باہر جانے کا اسکور اور ایک واضح جملہ، تاکہ آپ چند سیکنڈ میں فیصلہ کر سکیں۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779552704",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779552704"
+          },
+          "name": "Lumi موسم: آج کی پیش گوئی",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/lumiweather.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779552704",
+          "inLanguage": "ur-PK",
+          "description": "کیا آج باہر نکلنے کا صحیح وقت ہے؟ Lumi موسم ایک نظر میں بتا دیتا ہے: 0 سے 100 تک باہر جانے کا اسکور اور ایک واضح جملہ، تاکہ آپ چند سیکنڈ میں فیصلہ کر سکیں۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-lumiweather"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "url": "https://apps.apple.com/pk/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-maskmyfile",
+        "url": "https://apps.apple.com/pk/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Mask My File: معلومات ہٹائیں",
+        "description": "مفید سیاق کھوئے بغیر محفوظ طریقے سے شیئر کریں۔ Mask My File فائل بھیجنے سے پہلے نجی تفصیلات ڈھونڈتا ہے، انہیں ہمیشہ کے لیے چھپاتا ہے، پھر تیار فائل",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6792850916",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6792850916"
+          },
+          "name": "Mask My File: معلومات ہٹائیں",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/pk/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6792850916?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/maskmyfile.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6792850916",
+          "inLanguage": "ur-PK",
+          "description": "مفید سیاق کھوئے بغیر محفوظ طریقے سے شیئر کریں۔ Mask My File فائل بھیجنے سے پہلے نجی تفصیلات ڈھونڈتا ہے، انہیں ہمیشہ کے لیے چھپاتا ہے، پھر تیار فائل",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-maskmyfile"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "url": "https://apps.apple.com/pk/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-mochi",
+        "url": "https://apps.apple.com/pk/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Mochi",
+        "description": "اگر زیادہ تر ٹو ڈو ایپس بھاری محسوس ہوتی ہیں، تو صحیح ایپ ایک صاف چیک لسٹ ہے جس میں یاد دہانیاں اور Apple Watch سپورٹ ہے — اور جان بوجھ کر کوئی پروجیکٹ مینجمنٹ کا نظام نہیں۔ اسی لیے Mochi بنایا گیا۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6785004775",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6785004775"
+          },
+          "name": "Mochi",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/pk/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6785004775?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6785004775",
+          "inLanguage": "ur-PK",
+          "description": "اگر زیادہ تر ٹو ڈو ایپس بھاری محسوس ہوتی ہیں، تو صحیح ایپ ایک صاف چیک لسٹ ہے جس میں یاد دہانیاں اور Apple Watch سپورٹ ہے — اور جان بوجھ کر کوئی پروجیکٹ مینجمنٹ کا نظام نہیں۔ اسی لیے Mochi بنایا گیا۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-mochi"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "url": "https://apps.apple.com/pk/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-mochidonestamp",
+        "url": "https://apps.apple.com/pk/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Mochi DoneStamp: آخری بار",
+        "description": "آپ نے آخری بار چادر کب بدلی، پودے کو پانی کب دیا، گھر والوں کو فون، تصاویر کا بیک اپ یا فلٹر کب بدلا؟",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790800323",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790800323"
+          },
+          "name": "Mochi DoneStamp: آخری بار",
+          "operatingSystem": "iOS",
+          "applicationCategory": "LifestyleApplication",
+          "url": "https://apps.apple.com/pk/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6790800323?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/mochidonestamp.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790800323",
+          "inLanguage": "ur-PK",
+          "description": "آپ نے آخری بار چادر کب بدلی، پودے کو پانی کب دیا، گھر والوں کو فون، تصاویر کا بیک اپ یا فلٹر کب بدلا؟",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-mochidonestamp"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "url": "https://apps.apple.com/pk/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-moneytag",
+        "url": "https://apps.apple.com/pk/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+        "name": "MoneyTag: آمدنی اور اخراجات",
+        "description": "آمدنی اور اخراجات ہر پروجیکٹ کا اپنا کھاتہ ہوتا ہے: آمدنی میں سے اخراجات نکال کر اس کی خالص رقم بنتی ہے۔ سب سے زیادہ پوچھے جانے والے سوال یہ رہے۔ آپ کا سوال یہاں نہ ملے تو ہمیں لکھیے — ہر پیغام ایک حقیقی شخص پڑھتا ہے۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6801956402",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6801956402"
+          },
+          "name": "MoneyTag: آمدنی اور اخراجات",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/pk/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6801956402?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/moneytag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6801956402",
+          "inLanguage": "ur-PK",
+          "description": "آمدنی اور اخراجات ہر پروجیکٹ کا اپنا کھاتہ ہوتا ہے: آمدنی میں سے اخراجات نکال کر اس کی خالص رقم بنتی ہے۔ سب سے زیادہ پوچھے جانے والے سوال یہ رہے۔ آپ کا سوال یہاں نہ ملے تو ہمیں لکھیے — ہر پیغام ایک حقیقی شخص پڑھتا ہے۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-moneytag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "url": "https://apps.apple.com/pk/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-onepageppt",
+        "url": "https://apps.apple.com/pk/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+        "name": "OnePage PPT: سلائیڈ میکر",
+        "description": "متن کے ڈھیر کو ایک ایسی سلائیڈ میں بدلیں جسے لوگ واقعی پڑھیں۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6798814385",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6798814385"
+          },
+          "name": "OnePage PPT: سلائیڈ میکر",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/pk/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6798814385?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/onepageppt.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6798814385",
+          "inLanguage": "ur-PK",
+          "description": "متن کے ڈھیر کو ایک ایسی سلائیڈ میں بدلیں جسے لوگ واقعی پڑھیں۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-onepageppt"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "url": "https://apps.apple.com/pk/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-photocream",
+        "url": "https://apps.apple.com/pk/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+        "name": "PhotoCream",
+        "description": "سفر کرنے والے کریئیٹرز کو ایک ایسا فلم لک چاہیے جو گرین، ہیلیشن اور کلر کیریکٹر شامل کرے بغیر ہر منزل کو ایک جیسے فلیٹ فلٹر میں نہ بدل دے",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6781808054",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6781808054"
+          },
+          "name": "PhotoCream",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/pk/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6781808054?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6781808054",
+          "inLanguage": "ur-PK",
+          "description": "سفر کرنے والے کریئیٹرز کو ایک ایسا فلم لک چاہیے جو گرین، ہیلیشن اور کلر کیریکٹر شامل کرے بغیر ہر منزل کو ایک جیسے فلیٹ فلٹر میں نہ بدل دے",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-photocream"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "url": "https://apps.apple.com/pk/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-picclear",
+        "url": "https://apps.apple.com/pk/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+        "name": "PicClear",
+        "description": "جلدی جگہ خالی کرنے کے لیے سب سے بڑے فائدے پہلے ہدف بنائیں: بالکل نقل شدہ تصاویر، قریب قریب ایک جیسی برسٹ شاٹس، دھندلی تصاویر، اور بڑے ویڈیوز",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6780223070",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6780223070"
+          },
+          "name": "PicClear",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/pk/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6780223070?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6780223070",
+          "inLanguage": "ur-PK",
+          "description": "جلدی جگہ خالی کرنے کے لیے سب سے بڑے فائدے پہلے ہدف بنائیں: بالکل نقل شدہ تصاویر، قریب قریب ایک جیسی برسٹ شاٹس، دھندلی تصاویر، اور بڑے ویڈیوز",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-picclear"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "url": "https://apps.apple.com/pk/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-qrcodehalo",
+        "url": "https://apps.apple.com/pk/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+        "name": "QR Code Halo: اسکین اور تخلیق",
+        "description": "کوڈ پڑھتے ہی QR Code Halo فوراً عمل کرتا ہے۔ کیمرے سے اسکین کریں یا تصویر منتخب کریں: لنک آپ کے براؤزر میں کھلتے ہیں، پاس کی سے سائن ان کے کوڈ اور ایپ",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806779853",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806779853"
+          },
+          "name": "QR Code Halo: اسکین اور تخلیق",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/pk/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6806779853?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/qrcodehalo.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806779853",
+          "inLanguage": "ur-PK",
+          "description": "کوڈ پڑھتے ہی QR Code Halo فوراً عمل کرتا ہے۔ کیمرے سے اسکین کریں یا تصویر منتخب کریں: لنک آپ کے براؤزر میں کھلتے ہیں، پاس کی سے سائن ان کے کوڈ اور ایپ",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-qrcodehalo"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "url": "https://apps.apple.com/pk/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-savetag",
+        "url": "https://apps.apple.com/pk/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+        "name": "SaveTag: AI بک مارکس",
+        "description": "ابھی محفوظ کریں۔ اور اس بار واقعی پڑھیں۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802505528",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802505528"
+          },
+          "name": "SaveTag: AI بک مارکس",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/pk/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6802505528?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/savetag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802505528",
+          "inLanguage": "ur-PK",
+          "description": "ابھی محفوظ کریں۔ اور اس بار واقعی پڑھیں۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-savetag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "url": "https://apps.apple.com/pk/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-scanto",
+        "url": "https://apps.apple.com/pk/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+        "name": "ScanTo Pro",
+        "description": "اگر آپ مریض کی رضامندی کے فارم، ڈسچارج کاغذات یا ریفرلز اسکین کرتے ہیں، تو اسکینر کو یہ کاغذات ڈیوائس پر رکھنا چاہیے — کبھی کسی اور کے کلاؤڈ پر اپ لوڈ نہیں۔ ScanTo Pro کی شروعات بالکل اسی مسئلے سے ہوئی۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779977651",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779977651"
+          },
+          "name": "ScanTo Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/pk/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6779977651?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779977651",
+          "inLanguage": "ur-PK",
+          "description": "اگر آپ مریض کی رضامندی کے فارم، ڈسچارج کاغذات یا ریفرلز اسکین کرتے ہیں، تو اسکینر کو یہ کاغذات ڈیوائس پر رکھنا چاہیے — کبھی کسی اور کے کلاؤڈ پر اپ لوڈ نہیں۔ ScanTo Pro کی شروعات بالکل اسی مسئلے سے ہوئی۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-scanto"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
+      "url": "https://apps.apple.com/pk/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-sereno",
+        "url": "https://apps.apple.com/pk/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Sereno",
+        "description": "نیند کے لیے، ہر ماہ پریشان کرنے والا سبسکرپشن آرام کے بالکل برعکس ہے۔ اگر بات جانی پہچانی لگے تو Sereno پر ایک نظر ڈالیں۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6788236641",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6788236641"
+          },
+          "name": "Sereno",
+          "operatingSystem": "iOS",
+          "applicationCategory": "LifestyleApplication",
+          "url": "https://apps.apple.com/pk/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6788236641?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6788236641",
+          "inLanguage": "ur-PK",
+          "description": "نیند کے لیے، ہر ماہ پریشان کرنے والا سبسکرپشن آرام کے بالکل برعکس ہے۔ اگر بات جانی پہچانی لگے تو Sereno پر ایک نظر ڈالیں۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-sereno"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 39,
+      "url": "https://apps.apple.com/pk/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-shotinbox",
+        "url": "https://apps.apple.com/pk/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+        "name": "ShotInbox AI: Sort Screenshots",
+        "description": "آپ کے اسکرین شاٹس، ترتیب سے",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802166527",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802166527"
+          },
+          "name": "ShotInbox AI: Sort Screenshots",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/pk/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6802166527?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/shotinbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802166527",
+          "inLanguage": "ur-PK",
+          "description": "آپ کے اسکرین شاٹس، ترتیب سے",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-shotinbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "url": "https://apps.apple.com/pk/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-snapport",
+        "url": "https://apps.apple.com/pk/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Snapport",
+        "description": "بچے کے پاسپورٹ فوٹو میں کوئی دوسرا شخص تصویر میں نہیں ہونا چاہیے اور پس منظر سادہ ہونا چاہیے۔ Snapport کی شروعات بالکل اسی مسئلے سے ہوئی۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6780575828",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6780575828"
+          },
+          "name": "Snapport",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/pk/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6780575828?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6780575828",
+          "inLanguage": "ur-PK",
+          "description": "بچے کے پاسپورٹ فوٹو میں کوئی دوسرا شخص تصویر میں نہیں ہونا چاہیے اور پس منظر سادہ ہونا چاہیے۔ Snapport کی شروعات بالکل اسی مسئلے سے ہوئی۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-snapport"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "1700",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 41,
+      "url": "https://apps.apple.com/pk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-snapportlite",
+        "url": "https://apps.apple.com/pk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Snapport Lite: شناختی تصاویر",
+        "description": "کسی خاص سائز کی تصویر چاہیے؟ Snapport Lite آپ کے پورٹریٹ کو آپ کے منتخب کردہ سائز میں بالکل درست کراپ کرتا ہے، براہِ راست آپ کے ڈیوائس پر۔ نئی تصویر",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6792856304",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6792856304"
+          },
+          "name": "Snapport Lite: شناختی تصاویر",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/pk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6792856304?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/snapportlite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6792856304",
+          "inLanguage": "ur-PK",
+          "description": "کسی خاص سائز کی تصویر چاہیے؟ Snapport Lite آپ کے پورٹریٹ کو آپ کے منتخب کردہ سائز میں بالکل درست کراپ کرتا ہے، براہِ راست آپ کے ڈیوائس پر۔ نئی تصویر",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-snapportlite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
+      "url": "https://apps.apple.com/pk/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-sononote",
+        "url": "https://apps.apple.com/pk/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Sono Note",
+        "description": "کال کے بعد آپ کو خام تحریر نہیں چاہیے — آپ کو خلاصہ، ایکشن آئٹمز اور فالو اپ کا مسودہ چاہیے۔ یہی خلا Sono Note پُر کرنا چاہتا ہے۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6782139553",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6782139553"
+          },
+          "name": "Sono Note",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/pk/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6782139553?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6782139553",
+          "inLanguage": "ur-PK",
+          "description": "کال کے بعد آپ کو خام تحریر نہیں چاہیے — آپ کو خلاصہ، ایکشن آئٹمز اور فالو اپ کا مسودہ چاہیے۔ یہی خلا Sono Note پُر کرنا چاہتا ہے۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-sononote"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
+      "url": "https://apps.apple.com/pk/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-stayclock",
+        "url": "https://apps.apple.com/pk/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Stay Clock: ڈیسک گھڑی",
+        "description": "Stay Clock آپ کے آئی فون یا آئی پیڈ کو ایک ایسی ہمیشہ روشن ڈیسک گھڑی میں بدل دیتا ہے جسے آپ کمرے کے دوسرے کونے سے بھی آسانی سے پڑھ سکتے ہیں۔ بڑا وقت، ہر",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6814035888",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6814035888"
+          },
+          "name": "Stay Clock: ڈیسک گھڑی",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/pk/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6814035888?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/stayclock.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6814035888",
+          "inLanguage": "ur-PK",
+          "description": "Stay Clock آپ کے آئی فون یا آئی پیڈ کو ایک ایسی ہمیشہ روشن ڈیسک گھڑی میں بدل دیتا ہے جسے آپ کمرے کے دوسرے کونے سے بھی آسانی سے پڑھ سکتے ہیں۔ بڑا وقت، ہر",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-stayclock"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "url": "https://apps.apple.com/pk/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-studydown",
+        "url": "https://apps.apple.com/pk/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Studydown: فوکس ٹائمر",
+        "description": "اہم چیزوں کے لیے وقت نکالیں اور اپنی محنت کا حساب دیکھیں۔ کام کا منصوبہ، مطالعہ یا کوئی شوق—Studydown ہر سرگرمی کو دیا گیا وقت الگ ریکارڈ کرتا ہے۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6807335593",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6807335593"
+          },
+          "name": "Studydown: فوکس ٹائمر",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/pk/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6807335593?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/studydown.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6807335593",
+          "inLanguage": "ur-PK",
+          "description": "اہم چیزوں کے لیے وقت نکالیں اور اپنی محنت کا حساب دیکھیں۔ کام کا منصوبہ، مطالعہ یا کوئی شوق—Studydown ہر سرگرمی کو دیا گیا وقت الگ ریکارڈ کرتا ہے۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-studydown"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 45,
+      "url": "https://apps.apple.com/pk/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-tripplanet",
+        "url": "https://apps.apple.com/pk/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Trip Planet: Kids Quest",
+        "description": "چھوٹے بچوں کے ساتھ سفر کرنے والے والدین کو ایسی سرگرمیاں چاہیے جو پیکنگ، انتظار اور نئی جگہ کی دریافت کو ایڈونچر کا حصہ بنا دیں بجائے کہ ایک اور وجہ بن جائے اسٹریس کی۔ اسی لیے Trip Planet: Kids Quest بنایا گیا۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6787193643",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6787193643"
+          },
+          "name": "Trip Planet: Kids Quest",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6787193643?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6787193643",
+          "inLanguage": "ur-PK",
+          "description": "چھوٹے بچوں کے ساتھ سفر کرنے والے والدین کو ایسی سرگرمیاں چاہیے جو پیکنگ، انتظار اور نئی جگہ کی دریافت کو ایڈونچر کا حصہ بنا دیں بجائے کہ ایک اور وجہ بن جائے اسٹریس کی۔ اسی لیے Trip Planet: Kids Quest بنایا گیا۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-tripplanet"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 46,
+      "url": "https://apps.apple.com/pk/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-tripbeelite",
+        "url": "https://apps.apple.com/pk/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+        "name": "TripBee Lite",
+        "description": "اگر آپ ایک آنے والے سفر کی منصوبہ بندی کر رہے ہیں تو اس سفر کے لیے ایک پرسکون ٹائم لائن ہر ممکنہ سفر کے بھرے ہوئے آرکائیو سے زیادہ مفید ہے۔ اگر بات جانی پہچانی لگے تو TripBee Lite پر ایک نظر ڈالیں۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6791299610",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6791299610"
+          },
+          "name": "TripBee Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/pk/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6791299610?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6791299610",
+          "inLanguage": "ur-PK",
+          "description": "اگر آپ ایک آنے والے سفر کی منصوبہ بندی کر رہے ہیں تو اس سفر کے لیے ایک پرسکون ٹائم لائن ہر ممکنہ سفر کے بھرے ہوئے آرکائیو سے زیادہ مفید ہے۔ اگر بات جانی پہچانی لگے تو TripBee Lite پر ایک نظر ڈالیں۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-tripbeelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/pk/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-tripbee",
+        "url": "https://apps.apple.com/pk/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+        "name": "TripBee Pro: سفر کا منصوبہ ساز",
+        "description": "ایک اچھی آئیٹینری ایپ ایک الجھی ہوئی سفر کو واضح روزانہ کی ٹائم لائن میں بدل دیتی ہے — پروازیں، ہوٹلز، سرگرمیاں، ریستوران اور ٹرانسپورٹ — واضح قسم کے آئیکنز کے ساتھ تاکہ آپ ایک نظر میں اپنا دن پڑھ سکیں۔ اگر بات جانی پہچانی لگے تو TripBee Pro: سفر کا منصوبہ ساز پر ایک نظر ڈالیں۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6787754435",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6787754435"
+          },
+          "name": "TripBee Pro: سفر کا منصوبہ ساز",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/pk/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6787754435?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6787754435",
+          "inLanguage": "ur-PK",
+          "description": "ایک اچھی آئیٹینری ایپ ایک الجھی ہوئی سفر کو واضح روزانہ کی ٹائم لائن میں بدل دیتی ہے — پروازیں، ہوٹلز، سرگرمیاں، ریستوران اور ٹرانسپورٹ — واضح قسم کے آئیکنز کے ساتھ تاکہ آپ ایک نظر میں اپنا دن پڑھ سکیں۔ اگر بات جانی پہچانی لگے تو TripBee Pro: سفر کا منصوبہ ساز پر ایک نظر ڈالیں۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-tripbee"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "1700",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 48,
+      "url": "https://apps.apple.com/pk/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-unblurry",
+        "url": "https://apps.apple.com/pk/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Unblurry",
+        "description": "بچے کبھی بھی آرام سے نہیں بیٹھتے، اس لیے نرم فوکس اور کیمرہ ہلچل والی تصاویر ناگزیر ہیں",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6782275018",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6782275018"
+          },
+          "name": "Unblurry",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/pk/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6782275018?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6782275018",
+          "inLanguage": "ur-PK",
+          "description": "بچے کبھی بھی آرام سے نہیں بیٹھتے، اس لیے نرم فوکس اور کیمرہ ہلچل والی تصاویر ناگزیر ہیں",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-unblurry"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 49,
+      "url": "https://apps.apple.com/pk/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-claudeusagemini",
+        "url": "https://apps.apple.com/pk/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+        "name": "UsageNow: AI استعمال ٹریکر",
+        "description": "کام کے بیچ میں AI کی حد ختم ہو گئی؟ UsageNow آپ کی ہوم اسکرین پر ہی دکھاتا ہے کہ ہر AI پلان میں کتنا باقی ہے اور وہ ٹھیک کب ری سیٹ ہوگا، اور ختم ہونے سے",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6818607603",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6818607603"
+          },
+          "name": "UsageNow: AI استعمال ٹریکر",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/pk/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6818607603?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/claudeusagemini.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6818607603",
+          "inLanguage": "ur-PK",
+          "description": "کام کے بیچ میں AI کی حد ختم ہو گئی؟ UsageNow آپ کی ہوم اسکرین پر ہی دکھاتا ہے کہ ہر AI پلان میں کتنا باقی ہے اور وہ ٹھیک کب ری سیٹ ہوگا، اور ختم ہونے سے",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-claudeusagemini"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 50,
+      "url": "https://apps.apple.com/pk/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-wifiaidlite",
+        "url": "https://apps.apple.com/pk/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+        "name": "WiFi Aid Lite",
+        "description": "اصل مسئلہ تلاش کریں. خریداری کے بغیر کسی بھی ٹول سے کل ایک بار مکمل جانچ کی جا سکتی ہے۔ اختیاری ایک بار کی اِن ایپ خریداری سے لامحدود جانچ اور ٹھیک کرنے سے",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6793414462",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6793414462"
+          },
+          "name": "WiFi Aid Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/pk/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6793414462?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/wifiaidlite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6793414462",
+          "inLanguage": "ur-PK",
+          "description": "اصل مسئلہ تلاش کریں. خریداری کے بغیر کسی بھی ٹول سے کل ایک بار مکمل جانچ کی جا سکتی ہے۔ اختیاری ایک بار کی اِن ایپ خریداری سے لامحدود جانچ اور ٹھیک کرنے سے",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-wifiaidlite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 51,
+      "url": "https://apps.apple.com/pk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-wifiaid",
+        "url": "https://apps.apple.com/pk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+        "name": "WiFi Aid: نیٹ ورک مسائل تلاش",
+        "description": "ایک ٹیپ میں Wi‑Fi اور انٹرنیٹ کا مسئلہ جانچیں۔ DNS، TCP، TLS، رفتار، جٹر، IPv4 اور IPv6 کے واضح ثبوت سے درست حل چنیں—کوئی اشتہار یا سبسکرپشن نہیں۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790467886",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790467886"
+          },
+          "name": "WiFi Aid: نیٹ ورک مسائل تلاش",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/pk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6790467886?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/wifiaid.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790467886",
+          "inLanguage": "ur-PK",
+          "description": "ایک ٹیپ میں Wi‑Fi اور انٹرنیٹ کا مسئلہ جانچیں۔ DNS، TCP، TLS، رفتار، جٹر، IPv4 اور IPv6 کے واضح ثبوت سے درست حل چنیں—کوئی اشتہار یا سبسکرپشن نہیں۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-wifiaid"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "1700",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 52,
+      "url": "https://apps.apple.com/pk/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-wordmatelite",
+        "url": "https://apps.apple.com/pk/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Wordmate Lite: روزانہ الفاظ",
+        "description": "زیادہ تر منصوبے اس لیے ٹوٹ جاتے ہیں کہ وہ شروع ہی سے بہت بڑے ہوتے ہیں۔ Wordmate Lite دوسری طرف سے شروع کرتا ہے: ایک منٹ، پانچ الفاظ، اور راستے پر ایک نظر",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6797601720",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6797601720"
+          },
+          "name": "Wordmate Lite: روزانہ الفاظ",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6797601720?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/wordmatelite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6797601720",
+          "inLanguage": "ur-PK",
+          "description": "زیادہ تر منصوبے اس لیے ٹوٹ جاتے ہیں کہ وہ شروع ہی سے بہت بڑے ہوتے ہیں۔ Wordmate Lite دوسری طرف سے شروع کرتا ہے: ایک منٹ، پانچ الفاظ، اور راستے پر ایک نظر",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-wordmatelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 53,
+      "url": "https://apps.apple.com/pk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-wordmate",
+        "url": "https://apps.apple.com/pk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Wordmate: Learn 44 Languages",
+        "description": "مصروف سفر کرنے والوں کو وکیبلری پریکٹس چاہیے جو فارغ لمحات میں فٹ ہو جائے بغیر مکمل سبق، نئے اکاؤنٹ یا ہر ریویو کے لیے فون کی ضرورت کے۔ Wordmate: Learn 44 Languages کی شروعات بالکل اسی مسئلے سے ہوئی۔",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6789917808",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6789917808"
+          },
+          "name": "Wordmate: Learn 44 Languages",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/pk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6789917808?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6789917808",
+          "inLanguage": "ur-PK",
+          "description": "مصروف سفر کرنے والوں کو وکیبلری پریکٹس چاہیے جو فارغ لمحات میں فٹ ہو جائے بغیر مکمل سبق، نئے اکاؤنٹ یا ہر ریویو کے لیے فون کی ضرورت کے۔ Wordmate: Learn 44 Languages کی شروعات بالکل اسی مسئلے سے ہوئی۔",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-wordmate"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "2500",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 54,
+      "url": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-zipbox",
+        "url": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Zipbox: RAR, ZIP, 7z کھولیں",
+        "description": "Zipbox، App Store کی بامعاوضہ ایپ ہے۔ ایک خریداری میں تمام خصوصیات شامل ہیں؛ ایپ کے اندر مزید خریداری، سبسکرپشن یا اشتہار نہیں۔ تمام 13 فارمیٹ آلے پر ہی",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806776579",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806776579"
+          },
+          "name": "Zipbox: RAR, ZIP, 7z کھولیں",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/pk/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ur-PK/zipbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806776579",
+          "inLanguage": "ur-PK",
+          "description": "Zipbox، App Store کی بامعاوضہ ایپ ہے۔ ایک خریداری میں تمام خصوصیات شامل ہیں؛ ایپ کے اندر مزید خریداری، سبسکرپشن یا اشتہار نہیں۔ تمام 13 فارمیٹ آلے پر ہی",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ur-PK.jsonld#offer-zipbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "1300",
+        "priceCurrency": "PKR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "PK"
+        }
+      }
+    }
+  ]
+}

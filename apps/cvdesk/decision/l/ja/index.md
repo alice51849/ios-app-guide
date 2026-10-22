@@ -1,0 +1,26 @@
+---
+title: "2026年版キャリアチェンジャー向け最高の履歴書作成アプリ"
+lang: "ja"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/ja/index.html"
+modified: "2026-10-21"
+app_store_id: "6781337213"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# 2026年版キャリアチェンジャー向け最高の履歴書作成アプリ
+
+分野を変えると履歴書の問題は異なります。経験は実際のものでも紙上では「関連性なし」と見なされ、ATSが人間に読まれる前に弾きます。その隙間を埋めるためにCV Deskを作りました。
+
+- 生産性
+- 無料で開始・一度の購入でアンロック
+- アカウント不要
+- 広告なし
+- App Store · 無料
+
+[App StoreでCV Deskを入手 →](https://apps.apple.com/jp/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
+
+[完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/answers/best-resume-builder-app-for-career-changers-2026.html)
+
+> アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。

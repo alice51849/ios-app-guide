@@ -1,0 +1,26 @@
+{
+  "schema": "lumi.scaled-content-gate/v1",
+  "purpose": "Conservative scaled-content / doorway guard for localized Guide pages. A page is gated only when the same content already has an indexable English URL. Applied by gen_locale_indexation.py; audit with scaled_content_gate.py --report.",
+  "boilerplate_min_pages": 8,
+  "same_storefront_copies": {
+    "en-US": ""
+  },
+  "same_storefront_min_identity": 0.9,
+  "regional_variants": {
+    "en-AU": "",
+    "en-CA": "",
+    "en-GB": "",
+    "es-MX": "es-ES",
+    "fr-CA": "fr-FR",
+    "pt-PT": "pt-BR"
+  },
+  "untranslated_min_core_chars": 200,
+  "untranslated_min_identity": 0.8,
+  "thin_max_segments": 12,
+  "thin_max_ratio": 0.25,
+  "search_evidence_path": "data/search_console_page_evidence.json",
+  "protected_paths": [],
+  "gated_page_types": [
+    "answers"
+  ]
+}

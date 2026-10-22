@@ -1,0 +1,780 @@
+"use strict";
+
+const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
+const os = require("node:os");
+const http = require("node:http");
+const {spawn} = require("node:child_process");
+
+const pages = path.resolve(process.argv[2]);
+const workspace = path.resolve(process.argv[3]);
+const chrome = process.env.CHROME_BINARY || [
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "/Applications/Chromium.app/Contents/MacOS/Chromium",
+  "/usr/bin/google-chrome", "/usr/bin/chromium", "/usr/bin/chromium-browser"
+].find((file) => fs.existsSync(file));
+if (!chrome || !fs.existsSync(chrome)) {
+  throw new Error("No Chromium browser is installed. Set CHROME_BINARY to an existing isolated test browser.");
+}
+
+const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+// Browser-state waits run on shared CI runners alongside hundreds of
+// tests; 15s is enough on a laptop but not under that load.
+const STATE_TIMEOUT_MS = Number(process.env.HERO_STATE_TIMEOUT_MS || 60000);
+// Which page / which wait is in flight, so a timeout names the culprit
+// instead of leaving a 400-page run to be bisected by hand.
+let waitContext = "";
+async function until(predicate, limit = STATE_TIMEOUT_MS, label = "browser state") {
+  const start = Date.now();
+  while (Date.now() - start < limit) {
+    const result = await predicate();
+    if (result) return result;
+    await pause(100);
+  }
+  throw new Error(`Timed out waiting for ${label} after ${limit}ms (${waitContext || "no page"}).`);
+}
+
+async function connect(url) {
+  const socket = new WebSocket(url);
+  const pending = new Map();
+  const listeners = new Map();
+  let sequence = 0;
+  await new Promise((resolve, reject) => {
+    socket.addEventListener("open", resolve, {once: true});
+    socket.addEventListener("error", reject, {once: true});
+  });
+  socket.addEventListener("message", (event) => {
+    const message = JSON.parse(event.data);
+    if (message.id && pending.has(message.id)) {
+      const {resolve, reject, timer} = pending.get(message.id);
+      clearTimeout(timer);
+      pending.delete(message.id);
+      if (message.error) reject(new Error(JSON.stringify(message.error)));
+      else resolve(message.result);
+    } else if (listeners.has(message.method)) {
+      for (const listener of listeners.get(message.method)) listener(message.params);
+    }
+  });
+  socket.addEventListener("close", () => {
+    for (const {reject, timer} of pending.values()) {
+      clearTimeout(timer);
+      reject(new Error("Browser connection closed."));
+    }
+    pending.clear();
+  });
+  return {
+    socket,
+    on(method, listener) {
+      if (!listeners.has(method)) listeners.set(method, []);
+      listeners.get(method).push(listener);
+    },
+    send(method, params = {}) {
+      return new Promise((resolve, reject) => {
+        const id = ++sequence;
+        const timer = setTimeout(() => { pending.delete(id); reject(new Error(method + " timed out")); }, Number(process.env.HERO_CDP_TIMEOUT_MS || 60000));
+        pending.set(id, {resolve, reject, timer});
+        socket.send(JSON.stringify({id, method, params}));
+      });
+    }
+  };
+}
+
+(async () => {
+  const manifest = JSON.parse(fs.readFileSync(path.join(pages, "data/hero-tasks/manifest.json"), "utf8"));
+  const prefix = new URL(manifest.records[0].url).pathname.split("/").slice(0, -3).join("/");
+  const requests = [];
+  const server = http.createServer((request, response) => {
+    const pathname = decodeURIComponent(new URL(request.url, "http://127.0.0.1").pathname);
+    const relative = pathname.startsWith(prefix + "/") ? pathname.slice(prefix.length + 1) : "";
+    const filename = path.resolve(pages, relative);
+    requests.push(pathname);
+    if (!filename.startsWith(pages + path.sep) || !fs.existsSync(filename) || !fs.statSync(filename).isFile()) {
+      response.writeHead(404).end();
+      return;
+    }
+    const mime = {".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".csv": "text/csv", ".json": "application/json"};
+    response.writeHead(200, {"Content-Type": (mime[path.extname(filename)] || "application/octet-stream") + ";charset=utf-8", "Cache-Control": "no-store"});
+    response.end(fs.readFileSync(filename));
+  });
+  await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
+  const origin = "http://127.0.0.1:" + server.address().port;
+  // Chromium's singleton lock is a Unix socket, and its path is capped near
+  // 108 bytes; a profile under the repo checkout blows that cap and the
+  // browser dies with "Socket path too long" before it ever opens a page.
+  // TMPDIR is deliberately pointed at the workspace for the downloads, so
+  // os.tmpdir() is long too; take the shortest base that exists.
+  const shortTmp = process.env.HERO_BROWSER_TMPDIR || (fs.existsSync("/tmp") ? "/tmp" : os.tmpdir());
+  const profile = fs.mkdtempSync(path.join(shortTmp, "hero-"));
+  const downloads = path.join(workspace, "downloads");
+  fs.mkdirSync(downloads, {recursive: true});
+  const child = spawn(chrome, [
+    // CI containers run as root with a tiny /dev/shm; without these two the
+    // browser never writes DevToolsActivePort and the run dies on a timeout
+    // that names no page (that is exactly how it failed on the runner).
+    "--no-sandbox", "--disable-dev-shm-usage",
+    "--headless=new", "--no-first-run", "--no-default-browser-check",
+    "--disable-background-networking", "--disable-component-update", "--disable-sync",
+    "--disable-breakpad", "--disable-crash-reporter", "--metrics-recording-only", "--no-proxy-server",
+    "--password-store=basic", "--use-mock-keychain",
+    "--user-data-dir=" + profile, "--remote-debugging-port=0",
+    "--remote-debugging-address=127.0.0.1", "about:blank"
+    // Chromium builds its singleton socket under TMPDIR, so pointing TMPDIR at
+    // the deep workspace path reintroduces "Socket path too long" even with a
+    // short profile. Downloads are directed by Browser.setDownloadBehavior,
+    // not by TMPDIR, so the short base is safe here.
+  ], {stdio: ["ignore", "ignore", "pipe"], env: {...process.env, TMPDIR: shortTmp}});
+  let stderr = "";
+  child.stderr.on("data", (chunk) => { stderr = (stderr + chunk.toString()).slice(-4000); });
+  let browser, page;
+  try {
+    const portFile = path.join(profile, "DevToolsActivePort");
+    let port;
+    try {
+      port = await until(() => {
+        if (child.exitCode !== null) throw new Error("Chromium exited: " + stderr);
+        return fs.existsSync(portFile) && fs.readFileSync(portFile, "utf8").split("\n")[0];
+      }, STATE_TIMEOUT_MS, "Chromium DevTools port");
+    } catch (error) {
+      // Without the browser's own words a launch failure is unfixable from CI logs.
+      throw new Error(`${error.message} chrome=${chrome} stderr=${stderr.slice(-1200) || "(silent)"}`);
+    }
+    const info = await (await fetch("http://127.0.0.1:" + port + "/json/version")).json();
+    browser = await connect(info.webSocketDebuggerUrl);
+    await browser.send("Browser.setDownloadBehavior", {behavior: "allow", downloadPath: downloads});
+    const targets = await (await fetch("http://127.0.0.1:" + port + "/json/list")).json();
+    page = await connect(targets.find((target) => target.type === "page").webSocketDebuggerUrl);
+    await page.send("Page.enable");
+    await page.send("Runtime.enable");
+    let acceptDialog = true;
+    page.on("Page.javascriptDialogOpening", () => {
+      page.send("Page.handleJavaScriptDialog", {accept: acceptDialog}).catch(() => {});
+    });
+    await page.send("Network.enable");
+    await page.send("Fetch.enable", {patterns: [{urlPattern: "*"}]});
+    const external = [];
+    const failures = [];
+    page.on("Network.loadingFailed", (event) => failures.push(event.errorText));
+    page.on("Fetch.requestPaused", (event) => {
+      if (event.request.url.startsWith(origin + "/")) {
+        page.send("Fetch.continueRequest", {requestId: event.requestId}).catch(() => {});
+      } else {
+        external.push(event.request.url);
+        page.send("Fetch.failRequest", {requestId: event.requestId, errorReason: "BlockedByClient"}).catch(() => {});
+      }
+    });
+    const evaluate = async (expression) => {
+      const result = await page.send("Runtime.evaluate", {expression, returnByValue: true, awaitPromise: true});
+      if (result.exceptionDetails) throw new Error(JSON.stringify(result.exceptionDetails));
+      return result.result.value;
+    };
+    // Every locale/task whose primary labels overflow, not just the first.
+    // These widths come from the runner's own font stack and have never
+    // reproduced on a laptop, so a rebuild that names one page at a time
+    // costs a ~90 minute round per string. Collect them, fail once.
+    const layoutIssues = [];
+    const headlineWidths = [];
+    async function navigate(record, width = 360) {
+      waitContext = `${record.locale} ${record.path}`;
+      await page.send("Emulation.setDeviceMetricsOverride", {width, height: 568, deviceScaleFactor: 1, mobile: false});
+      const navigation = await page.send("Page.navigate", {url: origin + prefix + "/" + record.path});
+      if (navigation.errorText) throw new Error(navigation.errorText);
+      try {
+        await until(async () => {
+          try {
+            return await evaluate(`document.documentElement?.lang===${JSON.stringify(record.locale)} &&
+              document.readyState!=="loading" && document.getElementById("hero-form")?.dataset.ready==="true"`);
+          } catch (error) {
+            if (/context|navigat/i.test(error.message)) return false;
+            throw error;
+          }
+        }, Math.max(30000, STATE_TIMEOUT_MS), "page ready (lang + hero-form)");
+      } catch (error) {
+        throw new Error(error.message + " " + JSON.stringify({locale: record.locale, requests: requests.slice(-8), external: external.slice(-8), failures}));
+      }
+      const state = await evaluate(`({
+        locale:document.documentElement.lang,
+        ready:typeof HeroTaskCore==="object"&&!document.getElementById("download-csv").disabled,
+        overflow:document.documentElement.scrollWidth>innerWidth+1,
+        wide:[...document.querySelectorAll("body *")].filter(e=>e.getBoundingClientRect().right>innerWidth+1||e.getBoundingClientRect().left<-1||e.scrollWidth>e.clientWidth+1)
+          .slice(0,6).map(e=>e.tagName.toLowerCase()+(e.id?"#"+e.id:"")+(e.className&&typeof e.className==="string"?"."+e.className.split(" ").join("."):"")+"="+Math.round(e.getBoundingClientRect().width)+"px:"+(e.textContent||"").trim().slice(0,40)),
+        scripts:[...document.scripts].filter(s=>s.src).length,
+        name:document.querySelector("[data-field=name],[data-field=point]").value
+      })`);
+      assert.equal(state.locale, record.locale);
+      assert.equal(state.ready, true, record.locale);
+      assert.equal(state.overflow, false, record.locale + "/" + record.task_id + " overflow at " + width + " " + JSON.stringify(state.wide));
+      assert.equal(state.scripts, 2);
+      const tableOverflow = await evaluate(`([...document.querySelectorAll(".table-scroll")]).filter(
+        element=>element.getBoundingClientRect().left<-1||
+          element.getBoundingClientRect().right>document.documentElement.clientWidth+1||
+          (element.scrollWidth>element.clientWidth+1&&
+            !["auto","scroll"].includes(getComputedStyle(element).overflowX))
+      ).map(element=>({width:element.clientWidth,scroll:element.scrollWidth}))`);
+      assert.deepEqual(tableOverflow, [], record.locale + "/" + record.task_id + " tables stay inside their scrollports");
+      const clipped = await evaluate(`([...document.querySelectorAll("h1,.fields label,.totals p")]).filter(
+        element=>!(element.scrollWidth<=element.clientWidth+1&&
+          element.getBoundingClientRect().height<=parseFloat(getComputedStyle(element).lineHeight)+1)
+      ).map(element=>element.tagName.toLowerCase()+":"+element.textContent.trim()+"="+element.scrollWidth+"/"+element.clientWidth)`);
+      if (clipped.length) layoutIssues.push(record.locale + "/" + record.task_id + "@" + width + " " + JSON.stringify(clipped));
+      const headline = await evaluate(`(()=>{const h=document.querySelector("h1");return {sw:h.scrollWidth,cw:h.clientWidth};})()`);
+      headlineWidths.push({page: record.locale + "/" + record.task_id, width, sw: headline.sw, cw: headline.cw});
+      assert.equal(await evaluate(`(()=>{
+        const rect=document.getElementById("download-csv").getBoundingClientRect();
+        return rect.height>=44&&rect.top>=0&&rect.bottom<=innerHeight;
+      })()`), true, record.locale + " primary action is visible");
+      const firstScreen = await evaluate(`(()=>{
+        const result=document.querySelector(".totals").getBoundingClientRect();
+        const action=document.getElementById("download-csv").getBoundingClientRect();
+        const rows=[...document.querySelectorAll(".totals>div")].map(e=>Math.round(e.getBoundingClientRect().height));
+        const children=[...document.getElementById("hero-fields").children].filter(e=>e.tagName!=="TEMPLATE").map(e=>{const r=e.getBoundingClientRect();return (e.id||e.className||e.tagName.toLowerCase())+"@"+Math.round(r.top)+"-"+Math.round(r.bottom)+"/o"+getComputedStyle(e).order;});
+        return {ok:result.top>=0&&result.bottom+8<=action.top,top:Math.round(result.top),bottom:Math.round(result.bottom),action:Math.round(action.top),rows,inner:innerHeight,children};
+      })()`);
+      assert.equal(firstScreen.ok, true, record.locale + "/" + record.task_id + " first-screen results are not covered " + JSON.stringify(firstScreen));
+    }
+    for (const record of manifest.records) {
+      await navigate(record, 320);
+      if (process.env.HERO_SCREENSHOT_DIR && ["en-US", "ar-SA", "bn-BD"].includes(record.locale)) {
+        const directory = path.resolve(process.env.HERO_SCREENSHOT_DIR);
+        assert(directory.startsWith(path.dirname(workspace) + path.sep));
+        fs.mkdirSync(directory, {recursive: true});
+        const screenshot = await page.send("Page.captureScreenshot", {format: "png"});
+        fs.writeFileSync(path.join(directory, record.locale + ".png"), Buffer.from(screenshot.data, "base64"));
+      }
+      await page.send("Emulation.setDeviceMetricsOverride", {width: 1366, height: 1024, deviceScaleFactor: 1, mobile: false});
+      assert.equal(await evaluate("document.documentElement.scrollWidth>innerWidth+1"), false, record.locale);
+      assert.equal(await evaluate("Object.keys(localStorage).length+Object.keys(sessionStorage).length"), 0);
+    }
+    const gujaratiBandwidth = manifest.records.find((record) => record.locale === "gu-IN" && record.task_id === "bandwidth-need");
+    await navigate(gujaratiBandwidth, 320);
+    const wideTable = await evaluate(`(()=>{
+      const scrollport=document.querySelector(".table-scroll");
+      const table=scrollport.querySelector("table");
+      const first=table.querySelector("tbody td");
+      const original=first.textContent;
+      first.textContent="W".repeat(128);
+      scrollport.scrollLeft=scrollport.scrollWidth;
+      const last=table.querySelector("tbody tr:first-child td:last-child").getBoundingClientRect();
+      const bounds=scrollport.getBoundingClientRect();
+      const state={
+        tableWiderThanViewport:table.getBoundingClientRect().width>innerWidth,
+        pageFits:document.documentElement.scrollWidth<=innerWidth+1,
+        canReachLastColumn:scrollport.scrollLeft>0&&last.left>=bounds.left-1&&last.right<=bounds.right+1
+      };
+      first.textContent=original;
+      scrollport.scrollLeft=0;
+      return state;
+    })()`);
+    assert.deepEqual(wideTable, {
+      tableWiderThanViewport:true, pageFits:true, canReachLastColumn:true
+    }, "Gujarati bandwidth tables scroll without widening the page or hiding columns");
+    // The measured headline widths for every locale, worst first. Fonts are
+    // the runner's, not the laptop's, so this table is the only place these
+    // numbers exist -- print it before the assertion so a red run still
+    // hands over the budget for every string that has to be shortened.
+    console.log(JSON.stringify({headline_widths: headlineWidths
+      .sort((a, b) => b.sw / b.cw - a.sw / a.cw).slice(0, 40)}));
+    assert.deepEqual(layoutIssues, [], "primary labels remain complete on one line");
+    const english = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "purchase-worktime");
+    await navigate(english);
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("hourly-income");input.value="0";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true);
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-purchase").click()');
+    assert.equal(await evaluate('document.getElementById("purchase-rows").children.length'), 4);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#purchase-rows .purchase-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("purchase-rows").children.length'), 4);
+    await evaluate('document.getElementById("reset-example").click()');
+    assert.equal(await evaluate('document.getElementById("purchase-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#purchase-rows .purchase-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("purchase-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      const row=document.querySelector(".purchase-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.querySelector("[data-field=quantity]").value='2';
+      row.querySelector("[data-field=price]").value='10.50';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    const filename = path.join(downloads, "purchase-worktime-sheet.csv");
+    await until(() => fs.existsSync(filename), STATE_TIMEOUT_MS, "download filename");
+    const csv = fs.readFileSync(filename, "utf8");
+    assert(csv.includes(`"'=1+1"`));
+    assert(csv.includes('"21.00"'));
+    assert(csv.includes('"201.00"'));
+    assert(!csv.includes("<script>"));
+    await evaluate('document.getElementById("reset-example").click()');
+    assert.notEqual(await evaluate('document.querySelector("[data-field=name]").value'), "=1+1");
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale));
+      assert.equal(await evaluate(`(()=>{
+        const input=document.getElementById("hourly-income");
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false}).format(20.5);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native decimal input");
+    }
+    const maintenance = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "maintenance-next-due");
+    await navigate(maintenance);
+    assert.equal(await evaluate('document.getElementById("today-date").value.length'), 10, "live sheet starts from the visitor's own day");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("today-date");input.value="";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "an invalid date disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-task").click()');
+    assert.equal(await evaluate('document.getElementById("maintenance-rows").children.length'), 4);
+    assert.equal(await evaluate('document.getElementById("today-date").value'), maintenance.example_today || "2026-09-05");
+    acceptDialog = false;
+    await evaluate('document.querySelector("#maintenance-rows .maintenance-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("maintenance-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#maintenance-rows .maintenance-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("maintenance-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      const row=document.querySelector(".maintenance-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.querySelector("[data-field=last_done]").value='2024-01-31';
+      row.querySelector("[data-field=interval_value]").value='1';
+      row.querySelector("[data-field=interval_unit]").value='month';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    const maintenanceFile = path.join(downloads, "maintenance-next-due-sheet.csv");
+    await until(() => fs.existsSync(maintenanceFile), STATE_TIMEOUT_MS, "download maintenanceFile");
+    const maintenanceCsv = fs.readFileSync(maintenanceFile, "utf8");
+    assert(maintenanceCsv.includes(`"'=1+1"`));
+    assert(maintenanceCsv.includes('"2024-02-29"'));
+    assert(maintenanceCsv.includes('"Overdue"'));
+    assert(!maintenanceCsv.includes("<script>"));
+    assert.equal(await evaluate('document.querySelector(".maintenance-row [data-output=status]").dataset.status'), "overdue");
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "maintenance-next-due"));
+      assert.equal(await evaluate(`(()=>{
+        const input=document.querySelector(".maintenance-row [data-field=interval_value]");
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false}).format(12);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native digit interval input");
+    }
+    const profit = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "project-profit");
+    await navigate(profit);
+    assert.equal(await evaluate('document.getElementById("profit-rows").children.length'), 3);
+    assert.equal(await evaluate('document.getElementById("hourly-net").textContent'), "87.97");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("hours-spent");input.value="12.3";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "hours outside quarter-hour steps disable the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-expense").click()');
+    assert.equal(await evaluate('document.getElementById("profit-rows").children.length'), 4);
+    assert.equal(await evaluate('document.querySelector("#profit-rows .profit-row:last-child").dataset.kind'), "expense");
+    acceptDialog = false;
+    await evaluate('document.querySelector("#profit-rows .profit-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("profit-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#profit-rows .profit-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("profit-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      const row=document.querySelector(".profit-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.querySelector("[data-field=amount]").value='100';
+      document.getElementById("hours-spent").value='';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    assert.equal(await evaluate('document.getElementById("hourly-net").textContent'), "—", "no hours means no hourly figure");
+    const profitFile = path.join(downloads, "project-profit-sheet.csv");
+    await until(() => fs.existsSync(profitFile) && fs.statSync(profitFile).size > 0, STATE_TIMEOUT_MS, "download profitFile");
+    await until(async () => { const size = fs.statSync(profitFile).size; await pause(150); return fs.statSync(profitFile).size === size; });
+    const profitCsv = fs.readFileSync(profitFile, "utf8");
+    assert(profitCsv.includes(`"'=1+1"`), "profit csv: " + profitCsv.slice(0, 500));
+    assert(profitCsv.includes('"-300.39"'), "negative profit stays a plain number: " + profitCsv.slice(0, 500));
+    assert(!profitCsv.includes(`"'-300.39"`));
+    assert(!profitCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "project-profit"));
+      assert.equal(await evaluate(`(()=>{
+        const input=document.querySelector(".profit-row [data-field=amount]");
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false}).format(20.5);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native decimal amount input");
+    }
+    const battery = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "battery-wear");
+    await navigate(battery);
+    assert.equal(await evaluate('document.getElementById("today-month").value.length'), 7, "live sheet starts from the visitor's own month");
+    assert.equal(await evaluate('document.getElementById("battery-rows").children.length'), 3);
+    assert.equal(await evaluate(`(()=>{
+      const input=document.querySelector(".battery-row [data-field=max_capacity_pct]");input.value="59";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "a capacity outside 60-100 disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-device").click()');
+    assert.equal(await evaluate('document.getElementById("battery-rows").children.length'), 4);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#battery-rows .battery-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("battery-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#battery-rows .battery-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("battery-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      document.getElementById("today-month").value='2026-09';
+      const row=document.querySelector(".battery-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.querySelector("[data-field=purchase_month]").value='2024-09';
+      row.querySelector("[data-field=max_capacity_pct]").value='88';
+      row.querySelector("[data-field=cycle_count]").value='412';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    assert.equal(await evaluate('document.querySelector(".battery-row [data-output=wear]").textContent.includes("0.38")'), true);
+    assert.equal(await evaluate('document.querySelector(".battery-row [data-output=months]").textContent.includes("12")'), true);
+    assert.equal(await evaluate('document.getElementById("device-count").textContent'), "3");
+    assert.equal(await evaluate('document.getElementById("soonest-80").textContent'), "Already at or below 80%", "a device already at 80% makes the soonest figure a fact");
+    const batteryFile = path.join(downloads, "battery-wear-range-sheet.csv");
+    await until(() => fs.existsSync(batteryFile) && fs.statSync(batteryFile).size > 0, STATE_TIMEOUT_MS, "download batteryFile");
+    await until(async () => { const size = fs.statSync(batteryFile).size; await pause(150); return fs.statSync(batteryFile).size === size; });
+    const batteryCsv = fs.readFileSync(batteryFile, "utf8");
+    assert(batteryCsv.includes(`"'=1+1"`));
+    assert(batteryCsv.includes('"0.38"') && batteryCsv.includes('"0.63"'), "wear stays a band");
+    assert(batteryCsv.includes("; Estimated: Age (months), Wear % per month, Months to 80%"), "every derived figure carries its estimate marker: " + batteryCsv.slice(0, 500));
+    assert(batteryCsv.includes("You provided: Purchase month, Maximum capacity %, Cycle count;"), "typed-in values are marked as provided");
+    assert(!batteryCsv.toLowerCase().includes("score"));
+    assert(!batteryCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "battery-wear"));
+      assert.equal(await evaluate(`(()=>{
+        const input=document.querySelector(".battery-row [data-field=max_capacity_pct]");
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false}).format(91);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native digit capacity input");
+    }
+    const bandwidth = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "bandwidth-need");
+    await navigate(bandwidth);
+    assert.equal(await evaluate('document.getElementById("bandwidth-rows").children.length'), 3);
+    assert.equal(await evaluate('document.getElementById("status-total").dataset.status'), "ok");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("plan-down");input.value="0.4";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "a plan speed outside 0.5-10000 disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-row").click()');
+    assert.equal(await evaluate('document.getElementById("bandwidth-rows").children.length'), 4);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#bandwidth-rows .bandwidth-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("bandwidth-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#bandwidth-rows .bandwidth-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("bandwidth-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      document.getElementById("plan-down").value='10';
+      const row=document.querySelector(".bandwidth-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.querySelector("[data-field=activity]").value='uhd_stream';
+      row.querySelector("[data-field=devices]").value='2';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    assert.equal(await evaluate('document.getElementById("status-total").dataset.status'), "short", "over-committed plan shows the honest verdict");
+    const bandwidthFile = path.join(downloads, "bandwidth-need-sheet.csv");
+    await until(() => fs.existsSync(bandwidthFile) && fs.statSync(bandwidthFile).size > 0, STATE_TIMEOUT_MS, "download bandwidthFile");
+    await until(async () => { const size = fs.statSync(bandwidthFile).size; await pause(150); return fs.statSync(bandwidthFile).size === size; });
+    const bandwidthCsv = fs.readFileSync(bandwidthFile, "utf8");
+    assert(bandwidthCsv.includes(`"'=1+1"`), "bandwidth csv: " + bandwidthCsv.slice(0, 500));
+    assert(bandwidthCsv.includes('"Not enough"'), "verdict is written in words: " + bandwidthCsv.slice(0, 500));
+    assert(/"-\d+\.\d"/.test(bandwidthCsv) && !bandwidthCsv.includes(`"'-`), "negative headroom stays a plain number");
+    assert(!bandwidthCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "bandwidth-need"));
+      assert.equal(await evaluate(`(()=>{
+        const input=document.getElementById("plan-down");
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false}).format(50.5);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native decimal plan input");
+    }
+    const trip = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "trip-budget");
+    await navigate(trip);
+    assert.equal(await evaluate('document.getElementById("fixed-rows").children.length'), 2);
+    assert.equal(await evaluate('document.getElementById("per-person-day").textContent'), "124.95");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("share-food");input.value="41";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "shares that do not add up to 100 disable the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-fixed").click()');
+    assert.equal(await evaluate('document.getElementById("fixed-rows").children.length'), 3);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#fixed-rows .fixed-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("fixed-rows").children.length'), 3);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#fixed-rows .fixed-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("fixed-rows").children.length'), 2);
+    await evaluate(`(()=>{
+      const row=document.querySelector(".fixed-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.querySelector("[data-field=amount]").value='1000';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    assert.equal(await evaluate('document.getElementById("variable-total").textContent'), "1,149.50");
+    const tripFile = path.join(downloads, "trip-budget-sheet.csv");
+    await until(() => fs.existsSync(tripFile) && fs.statSync(tripFile).size > 0, STATE_TIMEOUT_MS, "download tripFile");
+    await until(async () => { const size = fs.statSync(tripFile).size; await pause(150); return fs.statSync(tripFile).size === size; });
+    const tripCsv = fs.readFileSync(tripFile, "utf8");
+    assert(tripCsv.includes(`"'=1+1"`), "trip csv: " + tripCsv.slice(0, 500));
+    assert(tripCsv.includes('"1149.50"') && tripCsv.includes('"100%"'), "left to spend reconciles: " + tripCsv.slice(0, 500));
+    assert(!tripCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "trip-budget"));
+      assert.equal(await evaluate(`(()=>{
+        const input=document.getElementById("budget-total");
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false}).format(2500.5);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native decimal budget input");
+    }
+    const itinerary = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "day-itinerary");
+    await navigate(itinerary);
+    assert.equal(await evaluate('document.getElementById("stop-rows").children.length'), 3);
+    assert.equal(await evaluate('document.getElementById("status-total").dataset.status'), "fits");
+    assert.equal(await evaluate('document.getElementById("total-minutes").textContent'), "455");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("end-time");input.value="9:00";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "a time that is not HH:MM disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-stop").click()');
+    assert.equal(await evaluate('document.getElementById("stop-rows").children.length'), 4);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#stop-rows .stop-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("stop-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#stop-rows .stop-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("stop-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      document.getElementById("start-time").value='22:00';
+      document.getElementById("end-time").value='02:00';
+      document.getElementById("end-time").dispatchEvent(new Event("input",{bubbles:true}));
+    })()`);
+    assert.equal(await evaluate('document.querySelector("#stop-rows .stop-row [data-output=leave]").textContent'), "00:00 +1", "past midnight carries a day marker");
+    assert.equal(await evaluate('document.getElementById("available-minutes").textContent'), "240");
+    await evaluate(`(()=>{
+      const row=document.querySelector(".stop-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.querySelector("[data-field=stay_min]").value='600';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    assert.equal(await evaluate('document.getElementById("status-total").dataset.status'), "overrun", "a day that does not fit shows the honest verdict");
+    const itineraryFile = path.join(downloads, "day-itinerary-sheet.csv");
+    await until(() => fs.existsSync(itineraryFile) && fs.statSync(itineraryFile).size > 0, STATE_TIMEOUT_MS, "download itineraryFile");
+    await until(async () => { const size = fs.statSync(itineraryFile).size; await pause(150); return fs.statSync(itineraryFile).size === size; });
+    const itineraryCsv = fs.readFileSync(itineraryFile, "utf8");
+    assert(itineraryCsv.includes(`"'=1+1"`), "itinerary csv: " + itineraryCsv.slice(0, 500));
+    assert(itineraryCsv.includes('"Over time"') && itineraryCsv.includes(' +1"'), "verdict in words and day marker kept: " + itineraryCsv.slice(0, 500));
+    assert(!itineraryCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "day-itinerary"));
+      assert.equal(await evaluate(`(()=>{
+        const digits=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false,minimumIntegerDigits:2});
+        const input=document.getElementById("start-time");
+        input.value=digits.format(8)+":"+digits.format(30);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native digit clock input");
+    }
+    const outline = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "one-page-outline");
+    await navigate(outline);
+    assert.equal(await evaluate('document.getElementById("point-rows").children.length'), 3);
+    assert.equal(await evaluate('document.getElementById("point-count").textContent'), "3");
+    assert.equal(await evaluate('document.querySelector("#point-rows [data-remove]").disabled'), true, "three points is the minimum");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("headline");input.value="   ";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "an empty headline disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-point").click()');
+    assert.equal(await evaluate('document.getElementById("point-rows").children.length'), 4);
+    assert.equal(await evaluate('document.getElementById("download-csv").disabled'), true, "a new empty point must be filled in first");
+    acceptDialog = false;
+    await evaluate('document.querySelector("#point-rows .point-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("point-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#point-rows .point-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("point-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      document.getElementById("headline").value='=1+1';
+      document.getElementById("metric").value='-3%';
+      document.getElementById("metric").dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    assert.equal(await evaluate('document.getElementById("preview-headline").textContent'), "=1+1", "the preview shows the text verbatim");
+    assert.equal(await evaluate('document.getElementById("preview-metric").hidden'), false);
+    const outlineFile = path.join(downloads, "one-page-outline-sheet.csv");
+    await until(() => fs.existsSync(outlineFile) && fs.statSync(outlineFile).size > 0, STATE_TIMEOUT_MS, "download outlineFile");
+    await until(async () => { const size = fs.statSync(outlineFile).size; await pause(150); return fs.statSync(outlineFile).size === size; });
+    const outlineCsv = fs.readFileSync(outlineFile, "utf8");
+    assert(outlineCsv.includes(`"'=1+1"`), "outline csv: " + outlineCsv.slice(0, 500));
+    assert(outlineCsv.includes('"-3%"') && !outlineCsv.includes(`"'-3%"`), "a negative percentage stays a plain value");
+    assert(!outlineCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "one-page-outline"));
+      assert.equal(await evaluate(`(()=>{
+        const headline=document.getElementById("headline").value;
+        return headline==="Ship the checkout redesign by 30 September"?"english":document.getElementById("download-csv").disabled?"disabled":"native";
+      })()`), "native", locale + " worked example is native prose and valid");
+    }
+    const split = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "bill-split");
+    await navigate(split);
+    assert.equal(await evaluate('document.getElementById("split-rows").children.length'), 3);
+    assert.equal(await evaluate('document.getElementById("grand-total-value").textContent'), "94.04");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("tax-pct");input.value="101";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "a tax percentage above 100 disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-person").click()');
+    assert.equal(await evaluate('document.getElementById("split-rows").children.length'), 4);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#split-rows .split-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("split-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#split-rows .split-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("split-rows").children.length'), 3);
+    assert.equal(await evaluate(`(()=>{
+      const rows=[...document.getElementById("split-rows").children];
+      const cents=rows.map((row)=>Math.round(parseFloat(row.querySelector("[data-output=due]").textContent.replace(/[^0-9.]/g,""))*100));
+      const total=Math.round(parseFloat(document.getElementById("grand-total-value").textContent.replace(/[^0-9.]/g,""))*100);
+      return cents.reduce((sum,value)=>sum+value,0)===total;
+    })()`), true, "the shares still add back up to the bill in the browser");
+    await evaluate(`(()=>{
+      const row=document.querySelector(".split-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    const splitFile = path.join(downloads, "bill-split-sheet.csv");
+    await until(() => fs.existsSync(splitFile) && fs.statSync(splitFile).size > 0, STATE_TIMEOUT_MS, "download splitFile");
+    await until(async () => { const size = fs.statSync(splitFile).size; await pause(150); return fs.statSync(splitFile).size === size; });
+    const splitCsv = fs.readFileSync(splitFile, "utf8");
+    assert(splitCsv.includes(`"'=1+1"`), "split csv: " + splitCsv.slice(0, 500));
+    assert(splitCsv.includes('"94.04"') && splitCsv.includes('"8.25%"'), "bill total and rate kept: " + splitCsv.slice(0, 500));
+    assert(!splitCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "bill-split"));
+      assert.equal(await evaluate(`(()=>{
+        const row=document.querySelector(".split-row");
+        const input=row.querySelector("[data-field=amount]");
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false}).format(12.5);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native decimal amount input");
+    }
+    const backlog = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "reading-backlog");
+    await navigate(backlog);
+    assert.equal(await evaluate('document.getElementById("backlog-rows").children.length'), 4);
+    assert.equal(await evaluate('document.getElementById("total-days").textContent'), "5");
+    assert.equal(await evaluate('document.getElementById("finish-date").textContent'), "2026-09-11");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("start-date");input.value="2026-9-7";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "a date that is not YYYY-MM-DD disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-item").click()');
+    assert.equal(await evaluate('document.getElementById("backlog-rows").children.length'), 5);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#backlog-rows .backlog-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("backlog-rows").children.length'), 5);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#backlog-rows .backlog-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("backlog-rows").children.length'), 4);
+    await evaluate(`(()=>{
+      const row=document.querySelector(".backlog-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    const backlogFile = path.join(downloads, "reading-backlog-sheet.csv");
+    await until(() => fs.existsSync(backlogFile) && fs.statSync(backlogFile).size > 0, STATE_TIMEOUT_MS, "download backlogFile");
+    await until(async () => { const size = fs.statSync(backlogFile).size; await pause(150); return fs.statSync(backlogFile).size === size; });
+    const backlogCsv = fs.readFileSync(backlogFile, "utf8");
+    assert(backlogCsv.includes(`"'=1+1"`), "backlog csv: " + backlogCsv.slice(0, 500));
+    assert(backlogCsv.includes('"2026-09-11"') && backlogCsv.includes('"95"'), "finish date and total kept: " + backlogCsv.slice(0, 500));
+    assert(!backlogCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "reading-backlog"));
+      assert.equal(await evaluate(`(()=>{
+        const digits=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false});
+        const input=document.getElementById("daily-minutes");
+        input.value=digits.format(45);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native digit minutes input");
+    }
+    const review = manifest.records.find((record) => record.locale === "en-US" && record.task_id === "review-schedule");
+    await navigate(review);
+    assert.equal(await evaluate('document.getElementById("note-rows").children.length'), 3);
+    assert.equal(await evaluate('document.getElementById("review-count").textContent'), "15");
+    assert.equal(await evaluate('document.getElementById("next-review").textContent'), "2026-09-07");
+    assert.equal(await evaluate('document.querySelector("#note-rows .note-row:nth-child(2) [data-output=status]").dataset.status'), "today");
+    assert.equal(await evaluate(`(()=>{
+      const input=document.getElementById("today-date");input.value="2026-02-30";
+      input.dispatchEvent(new Event("input",{bubbles:true}));
+      return document.getElementById("download-csv").disabled&&document.getElementById("hero-status").textContent.length>0;
+    })()`), true, "a date that never existed disables the download");
+    await evaluate('document.getElementById("reset-example").click();document.getElementById("add-note").click()');
+    assert.equal(await evaluate('document.getElementById("note-rows").children.length'), 4);
+    acceptDialog = false;
+    await evaluate('document.querySelector("#note-rows .note-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("note-rows").children.length'), 4);
+    acceptDialog = true;
+    await evaluate('document.querySelector("#note-rows .note-row:last-child [data-remove]").click()');
+    assert.equal(await evaluate('document.getElementById("note-rows").children.length'), 3);
+    await evaluate(`(()=>{
+      const row=document.querySelector(".note-row");
+      row.querySelector("[data-field=name]").value='=1+1';
+      row.dispatchEvent(new Event("input",{bubbles:true}));
+      document.getElementById("download-csv").click();
+    })()`);
+    const reviewFile = path.join(downloads, "review-schedule-sheet.csv");
+    await until(() => fs.existsSync(reviewFile) && fs.statSync(reviewFile).size > 0, STATE_TIMEOUT_MS, "download reviewFile");
+    await until(async () => { const size = fs.statSync(reviewFile).size; await pause(150); return fs.statSync(reviewFile).size === size; });
+    const reviewCsv = fs.readFileSync(reviewFile, "utf8");
+    assert(reviewCsv.includes(`"'=1+1"`), "review csv: " + reviewCsv.slice(0, 500));
+    assert(reviewCsv.includes('"-17"') && !reviewCsv.includes(`"'-17"`), "a passed date keeps a plain negative number");
+    assert(reviewCsv.includes('"2026-09-24"'), "the whole ladder is written out: " + reviewCsv.slice(0, 500));
+    assert(!reviewCsv.includes("<script>"));
+    for (const locale of ["de-DE", "ar-SA", "bn-BD"]) {
+      await navigate(manifest.records.find((record) => record.locale === locale && record.task_id === "review-schedule"));
+      assert.equal(await evaluate(`(()=>{
+        const row=document.querySelector(".note-row");
+        const input=row.querySelector("[data-field=studied_on]");
+        const digits=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false,minimumIntegerDigits:2});
+        input.value=new Intl.NumberFormat(document.documentElement.lang,{useGrouping:false,minimumIntegerDigits:4}).format(2026)
+          +"-"+digits.format(9)+"-"+digits.format(3);
+        input.dispatchEvent(new Event("input",{bubbles:true}));
+        return document.getElementById("download-csv").disabled;
+      })()`), false, locale + " native digit date input");
+    }
+    assert.deepEqual(layoutIssues, [], "primary labels remain complete on one line");
+    assert.deepEqual(external.filter((url) => !url.startsWith("data:")), []);
+    console.log(JSON.stringify({locales: manifest.locale_count, records: manifest.records.length, tasks: manifest.task_count, viewports: 2, downloads: 11, external_requests: external.length}));
+  } finally {
+    if (browser) await browser.send("Browser.close").catch(() => {});
+    if (page) page.socket.close();
+    if (browser) browser.socket.close();
+    if (child.exitCode === null) {
+      child.kill("SIGTERM");
+      await Promise.race([new Promise((resolve) => child.once("exit", resolve)), pause(5000)]);
+      if (child.exitCode === null) child.kill("SIGKILL");
+    }
+    await new Promise((resolve) => server.close(resolve));
+  }
+})().catch((error) => { console.error(error.stack); process.exitCode = 1; });

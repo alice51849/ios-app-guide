@@ -1,0 +1,3578 @@
+{
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#catalog",
+  "url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld",
+  "name": "Katalog namjera pretraživanja izdavača Lumi Studio",
+  "description": "Katalog iz prve ruke o tome za koga je svaka aplikacija namijenjena, koji zadatak žele izvršiti i izravnom putu do App Storea.",
+  "inLanguage": "hr",
+  "dateModified": "2026-10-20",
+  "numberOfItems": 54,
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "url": "https://apps.apple.com/hr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-notesstudio100",
+        "url": "https://apps.apple.com/hr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+        "name": "100 Notes Studio: Pen & Paper",
+        "description": "100 Notes Studio povezuje rukopis, tipkanje, označavanje PDF dokumenata, organizaciju bilježnica i učenje u miran radni prostor koji radi i bez mreže.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6798813048",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6798813048"
+          },
+          "name": "100 Notes Studio: Pen & Paper",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/hr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/notesstudio100.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6798813048",
+          "inLanguage": "hr",
+          "description": "100 Notes Studio povezuje rukopis, tipkanje, označavanje PDF dokumenata, organizaciju bilježnica i učenje u miran radni prostor koji radi i bez mreže.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-notesstudio100"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "url": "https://apps.apple.com/hr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-aibriefpack",
+        "url": "https://apps.apple.com/hr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+        "name": "AI Brief: Datoteke u AI upit",
+        "description": "Bolji kontekst. Bolji odgovori.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6791658210",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6791658210"
+          },
+          "name": "AI Brief: Datoteke u AI upit",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/hr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/aibriefpack.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6791658210",
+          "inLanguage": "hr",
+          "description": "Bolji kontekst. Bolji odgovori.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-aibriefpack"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "url": "https://apps.apple.com/hr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-aim990",
+        "url": "https://apps.apple.com/hr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Aim990",
+        "description": "Dio 5 izgleda kratak, ali pitanja s nepotpunim rečenicama mogu oduzeti vrijeme ako gramatika i vokabular nisu automatski.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6784974530",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6784974530"
+          },
+          "name": "Aim990",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6784974530",
+          "inLanguage": "hr",
+          "description": "Dio 5 izgleda kratak, ali pitanja s nepotpunim rečenicama mogu oduzeti vrijeme ako gramatika i vokabular nisu automatski.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-aim990"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "url": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-battai",
+        "url": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+        "name": "BattAI: Ocjena stanja baterije",
+        "description": "BattAI BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802423998",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802423998"
+          },
+          "name": "BattAI: Ocjena stanja baterije",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/battai.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802423998",
+          "inLanguage": "hr",
+          "description": "BattAI BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-battai"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "url": "https://apps.apple.com/hr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-caldaily",
+        "url": "https://apps.apple.com/hr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+        "name": "CalDaily: kalkulator i teme",
+        "description": "Kalkulator koji ćete zaista nastaviti koristiti, jer pamti razmišljanje iza svakog broja.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794178671",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794178671"
+          },
+          "name": "CalDaily: kalkulator i teme",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/hr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/caldaily.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794178671",
+          "inLanguage": "hr",
+          "description": "Kalkulator koji ćete zaista nastaviti koristiti, jer pamti razmišljanje iza svakog broja.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-caldaily"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "url": "https://apps.apple.com/hr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-countdaysnow",
+        "url": "https://apps.apple.com/hr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+        "name": "CountDaysNow: Event Counter",
+        "description": "• Dnevni fokus Otad · Danas · Slijedi — Spremi",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6807079789",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6807079789"
+          },
+          "name": "CountDaysNow: Event Counter",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/hr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/countdaysnow.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6807079789",
+          "inLanguage": "hr",
+          "description": "• Dnevni fokus Otad · Danas · Slijedi — Spremi",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-countdaysnow"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "url": "https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-cvdesk",
+        "url": "https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+        "name": "CV Desk",
+        "description": "Kada mijenjate područje rada, problem s životopisom je drugačiji: vaše iskustvo je stvarno, ali na papiru 'nepovezano', a ATS filteri vas odbacuju prije nego što ga čovjek pročita. Upravo tu prazninu CV Desk želi popuniti.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6781337213",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6781337213"
+          },
+          "name": "CV Desk",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6781337213",
+          "inLanguage": "hr",
+          "description": "Kada mijenjate područje rada, problem s životopisom je drugačiji: vaše iskustvo je stvarno, ali na papiru 'nepovezano', a ATS filteri vas odbacuju prije nego što ga čovjek pročita. Upravo tu prazninu CV Desk želi popuniti.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-cvdesk"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "url": "https://apps.apple.com/hr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-cyca",
+        "url": "https://apps.apple.com/hr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Cyca",
+        "description": "U kategoriji gdje je osjetljivost podataka najvažnija, prava aplikacija za praćenje menstruacije čuva sve — protok, raspoloženje, simptome, temperaturu, intimnost — na vašem uređaju, bez računa i sinkronizacije u oblaku. Cyca radi samo to jedno i ostalo izostavlja.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6782251621",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6782251621"
+          },
+          "name": "Cyca",
+          "operatingSystem": "iOS",
+          "applicationCategory": "HealthApplication",
+          "url": "https://apps.apple.com/hr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6782251621",
+          "inLanguage": "hr",
+          "description": "U kategoriji gdje je osjetljivost podataka najvažnija, prava aplikacija za praćenje menstruacije čuva sve — protok, raspoloženje, simptome, temperaturu, intimnost — na vašem uređaju, bez računa i sinkronizacije u oblaku. Cyca radi samo to jedno i ostalo izostavlja.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-cyca"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "url": "https://apps.apple.com/hr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-dailymate",
+        "url": "https://apps.apple.com/hr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+        "name": "DailyMate",
+        "description": "Prije putovanja, kompletne fraze za stvarne situacije korisnije su od izoliranih riječi koje još morate sastaviti pod pritiskom. DailyMate je nastao točno iz tog problema.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790418321",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790418321"
+          },
+          "name": "DailyMate",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790418321",
+          "inLanguage": "hr",
+          "description": "Prije putovanja, kompletne fraze za stvarne situacije korisnije su od izoliranih riječi koje još morate sastaviti pod pritiskom. DailyMate je nastao točno iz tog problema.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-dailymate"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "12.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "url": "https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-dailymatelite",
+        "url": "https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+        "name": "DailyMate Lite: Govori danas",
+        "description": "Govori kad je važno. DailyMate Lite pretvara stvarne situacije u kratke vježbe s korisnom replikom i prirodnim odgovorom na 50 jezika. Besplatno započni",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794725568",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794725568"
+          },
+          "name": "DailyMate Lite: Govori danas",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/dailymatelite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794725568",
+          "inLanguage": "hr",
+          "description": "Govori kad je važno. DailyMate Lite pretvara stvarne situacije u kratke vježbe s korisnom replikom i prirodnim odgovorom na 50 jezika. Besplatno započni",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-dailymatelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "url": "https://apps.apple.com/hr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-dbhalo",
+        "url": "https://apps.apple.com/hr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+        "name": "dB Halo: Mjerač razine zvuka",
+        "description": "Odmah provjerite koliko je okolina glasna, koje frekvencije prevladavaju i koliko je procijenjenog sigurnog vremena ostalo. dB Halo mjeri razinu zvuka i",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806826699",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806826699"
+          },
+          "name": "dB Halo: Mjerač razine zvuka",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/hr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/dbhalo.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806826699",
+          "inLanguage": "hr",
+          "description": "Odmah provjerite koliko je okolina glasna, koje frekvencije prevladavaju i koliko je procijenjenog sigurnog vremena ostalo. dB Halo mjeri razinu zvuka i",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-dbhalo"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "url": "https://apps.apple.com/hr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-easyam",
+        "url": "https://apps.apple.com/hr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+        "name": "EasyAM: Pametna budilica",
+        "description": "Treba li budilica sutra ujutro zvoniti ili imaš slobodan dan? EasyAM to odlučuje umjesto tebe, za svaki dan posebno: radnim danima zvoni, za praznike i",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6821790092",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6821790092"
+          },
+          "name": "EasyAM: Pametna budilica",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/hr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/easyam.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6821790092",
+          "inLanguage": "hr",
+          "description": "Treba li budilica sutra ujutro zvoniti ili imaš slobodan dan? EasyAM to odlučuje umjesto tebe, za svaki dan posebno: radnim danima zvoni, za praznike i",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-easyam"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "url": "https://apps.apple.com/hr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-gmoney",
+        "url": "https://apps.apple.com/hr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+        "name": "G+Money",
+        "description": "Na putovanju vam treba aplikacija za praćenje budžeta koja radi offline u zemlji bez podataka, podržava više valuta i ne traži račun — organizirana po putovanjima tako da je svaki odmor zaseban. Upravo tu prazninu G+Money želi popuniti.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6755782939",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6755782939"
+          },
+          "name": "G+Money",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/hr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6755782939",
+          "inLanguage": "hr",
+          "description": "Na putovanju vam treba aplikacija za praćenje budžeta koja radi offline u zemlji bez podataka, podržava više valuta i ne traži račun — organizirana po putovanjima tako da je svaki odmor zaseban. Upravo tu prazninu G+Money želi popuniti.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-gmoney"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "5.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "url": "https://apps.apple.com/hr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-gmoneylite",
+        "url": "https://apps.apple.com/hr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+        "name": "G+Money Lite: Putni troškovi",
+        "description": "G+Money Lite — Pametan putni konverter valuta i praćenje troškova",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6793436548",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6793436548"
+          },
+          "name": "G+Money Lite: Putni troškovi",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/hr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/gmoneylite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6793436548",
+          "inLanguage": "hr",
+          "description": "G+Money Lite — Pametan putni konverter valuta i praćenje troškova",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-gmoneylite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "url": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-hourstaglite",
+        "url": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+        "name": "HoursTag Lite: Cijena u satima",
+        "description": "HoursTag Lite - Pogledaj pravu cijenu stvari",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794039979",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794039979"
+          },
+          "name": "HoursTag Lite: Cijena u satima",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/hourstaglite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794039979",
+          "inLanguage": "hr",
+          "description": "HoursTag Lite - Pogledaj pravu cijenu stvari",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-hourstaglite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "url": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-hourstag",
+        "url": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+        "name": "HoursTag: Sati za kupnju",
+        "description": "Koliko to stvarno košta? Ne u eurima, nego u satima vašeg života.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6754218117",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6754218117"
+          },
+          "name": "HoursTag: Sati za kupnju",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/hourstag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6754218117",
+          "inLanguage": "hr",
+          "description": "Koliko to stvarno košta? Ne u eurima, nego u satima vašeg života.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-hourstag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "5.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "url": "https://apps.apple.com/hr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-ledmovingtext",
+        "url": "https://apps.apple.com/hr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+        "name": "LED Moving Text",
+        "description": "Upiši rečenicu i podigni iPhone. Iz zadnjeg reda, s druge strane dolazne dvorane ili preko pulta pročita se jednim pogledom.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806639602",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806639602"
+          },
+          "name": "LED Moving Text",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/hr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/ledmovingtext.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806639602",
+          "inLanguage": "hr",
+          "description": "Upiši rečenicu i podigni iPhone. Iz zadnjeg reda, s druge strane dolazne dvorane ili preko pulta pročita se jednim pogledom.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-ledmovingtext"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "url": "https://apps.apple.com/hr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lockhour",
+        "url": "https://apps.apple.com/hr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+        "name": "LockHour Pro",
+        "description": "Tijekom ispita, snaga volje nije alat — stroga vremenski ograničena blokada jest. Upravo zato LockHour Pro postoji.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6780107485",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6780107485"
+          },
+          "name": "LockHour Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/hr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6780107485",
+          "inLanguage": "hr",
+          "description": "Tijekom ispita, snaga volje nije alat — stroga vremenski ograničena blokada jest. Upravo zato LockHour Pro postoji.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lockhour"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "url": "https://apps.apple.com/hr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumibopomofo",
+        "url": "https://apps.apple.com/hr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Bopomofo",
+        "description": "Za dijete koje prvi put uči Zhuyin, aplikacija treba pokrivati svih 37 simbola kroz praćenje poteza i igru — dizajnirana za dob od 4 do 7 godina, bez oglasa i bez prikupljanja podataka. Upravo tu prazninu Lumi Bopomofo želi popuniti.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6773017109",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6773017109"
+          },
+          "name": "Lumi Bopomofo",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6773017109",
+          "inLanguage": "hr",
+          "description": "Za dijete koje prvi put uči Zhuyin, aplikacija treba pokrivati svih 37 simbola kroz praćenje poteza i igru — dizajnirana za dob od 4 do 7 godina, bez oglasa i bez prikupljanja podataka. Upravo tu prazninu Lumi Bopomofo želi popuniti.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumibopomofo"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "url": "https://apps.apple.com/hr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumibopomofopro",
+        "url": "https://apps.apple.com/hr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Bopomofo Pro",
+        "description": "Dvojezičnoj djeci koja uče Zhuyin kod kuće treba potpuni put kroz zvukove, simbole, tonove i spajanje, uz dovoljno razigranog ponavljanja da sustav postane poznat. Upravo tu prazninu Lumi Bopomofo Pro želi popuniti.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6775773117",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6775773117"
+          },
+          "name": "Lumi Bopomofo Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6775773117",
+          "inLanguage": "hr",
+          "description": "Dvojezičnoj djeci koja uče Zhuyin kod kuće treba potpuni put kroz zvukove, simbole, tonove i spajanje, uz dovoljno razigranog ponavljanja da sustav postane poznat. Upravo tu prazninu Lumi Bopomofo Pro želi popuniti.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumibopomofopro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "9.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "url": "https://apps.apple.com/hr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiletters",
+        "url": "https://apps.apple.com/hr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Letters",
+        "description": "Za malo dijete presudno su oglasi i prikupljanje podataka — edukativna aplikacija treba učiti unutar igre bez oglasa, bez prikupljanja podataka i s jednokratnim otključavanjem kojem roditelji mogu vjerovati. Upravo zato Lumi Letters postoji.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6778748533",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6778748533"
+          },
+          "name": "Lumi Letters",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6778748533",
+          "inLanguage": "hr",
+          "description": "Za malo dijete presudno su oglasi i prikupljanje podataka — edukativna aplikacija treba učiti unutar igre bez oglasa, bez prikupljanja podataka i s jednokratnim otključavanjem kojem roditelji mogu vjerovati. Upravo zato Lumi Letters postoji.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiletters"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "url": "https://apps.apple.com/hr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiletterspro",
+        "url": "https://apps.apple.com/hr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Letters Pro",
+        "description": "Obitelji koje se pripremaju za vrtić trebaju cjelovit put ranog čitanja koji povezuje glasove slova, iscrtavanje i slaganje riječi umjesto zbirke nepovezanih igara s abecedom. Upravo tu prazninu Lumi Letters Pro želi popuniti.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6778491147",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6778491147"
+          },
+          "name": "Lumi Letters Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6778491147",
+          "inLanguage": "hr",
+          "description": "Obitelji koje se pripremaju za vrtić trebaju cjelovit put ranog čitanja koji povezuje glasove slova, iscrtavanje i slaganje riječi umjesto zbirke nepovezanih igara s abecedom. Upravo tu prazninu Lumi Letters Pro želi popuniti.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiletterspro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "9.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "url": "https://apps.apple.com/hr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimath",
+        "url": "https://apps.apple.com/hr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Math Planet",
+        "description": "Najbolja dječja matematička aplikacija trenira razmišljanje — obrasce, nizove, prostorno razmišljanje — ne samo aritmetičke vježbe, i skriva to unutar igre koju dijete želi igrati. Upravo zato Lumi Math Planet postoji.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6778269699",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6778269699"
+          },
+          "name": "Lumi Math Planet",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6778269699",
+          "inLanguage": "hr",
+          "description": "Najbolja dječja matematička aplikacija trenira razmišljanje — obrasce, nizove, prostorno razmišljanje — ne samo aritmetičke vježbe, i skriva to unutar igre koju dijete želi igrati. Upravo zato Lumi Math Planet postoji.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimath"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "url": "https://apps.apple.com/hr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimathpro",
+        "url": "https://apps.apple.com/hr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Math Pro",
+        "description": "Kompletna aplikacija za ranu matematiku treba učiniti brojanje, razumijevanje brojeva i prve operacije povezanim iskustvom, a ne izoliranim vježbama. Upravo zato Lumi Math Pro postoji.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6776958488",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6776958488"
+          },
+          "name": "Lumi Math Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6776958488",
+          "inLanguage": "hr",
+          "description": "Kompletna aplikacija za ranu matematiku treba učiniti brojanje, razumijevanje brojeva i prve operacije povezanim iskustvom, a ne izoliranim vježbama. Upravo zato Lumi Math Pro postoji.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimathpro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "9.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "url": "https://apps.apple.com/hr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimission",
+        "url": "https://apps.apple.com/hr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Mission Planet",
+        "description": "Za predškolca, večernja rutina najbolje funkcionira kada je kratka, vizualna i dovoljno predvidljiva da je dijete može pratiti bez dodatnih podsjetnika. Ako vam to zvuči poznato, pogledajte Lumi Mission Planet.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779750237",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779750237"
+          },
+          "name": "Lumi Mission Planet",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779750237",
+          "inLanguage": "hr",
+          "description": "Za predškolca, večernja rutina najbolje funkcionira kada je kratka, vizualna i dovoljno predvidljiva da je dijete može pratiti bez dodatnih podsjetnika. Ako vam to zvuči poznato, pogledajte Lumi Mission Planet.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimission"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "url": "https://apps.apple.com/hr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimissionpro",
+        "url": "https://apps.apple.com/hr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Mission Planet Pro",
+        "description": "Pranje zubi i odlazak na spavanje često zapnu u istom trenutku svake večeri: dijete je umorno, roditelj je umoran, a sljedeći korak nije dovoljno vidljiv.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779745474",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779745474"
+          },
+          "name": "Lumi Mission Planet Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779745474",
+          "inLanguage": "hr",
+          "description": "Pranje zubi i odlazak na spavanje često zapnu u istom trenutku svake večeri: dijete je umorno, roditelj je umoran, a sljedeći korak nije dovoljno vidljiv.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumimissionpro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "6.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "url": "https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiweather",
+        "url": "https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Vrijeme: Prognoza danas",
+        "description": "Lumi Vrijeme u sekundi pokazuje je li danas pravi dan za izlazak: ocjenu izlaska od 0 do 100 i kratku procjenu koju pročitate u prolazu.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779552704",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779552704"
+          },
+          "name": "Lumi Vrijeme: Prognoza danas",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/lumiweather.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779552704",
+          "inLanguage": "hr",
+          "description": "Lumi Vrijeme u sekundi pokazuje je li danas pravi dan za izlazak: ocjenu izlaska od 0 do 100 i kratku procjenu koju pročitate u prolazu.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-lumiweather"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "url": "https://apps.apple.com/hr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-maskmyfile",
+        "url": "https://apps.apple.com/hr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Mask My File: Ukloni podatke",
+        "description": "Dijelite bez brige i zadržite koristan kontekst. Mask My File pronalazi privatne podatke prije nego što pošaljete datoteku, trajno prekriva ono što",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6792850916",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6792850916"
+          },
+          "name": "Mask My File: Ukloni podatke",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/hr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/maskmyfile.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6792850916",
+          "inLanguage": "hr",
+          "description": "Dijelite bez brige i zadržite koristan kontekst. Mask My File pronalazi privatne podatke prije nego što pošaljete datoteku, trajno prekriva ono što",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-maskmyfile"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "url": "https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-mochi",
+        "url": "https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Mochi",
+        "description": "Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima i podrškom za Apple Watch — i namjerno bez upravljanja projektima. Upravo zato Mochi postoji.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6785004775",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6785004775"
+          },
+          "name": "Mochi",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6785004775",
+          "inLanguage": "hr",
+          "description": "Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima i podrškom za Apple Watch — i namjerno bez upravljanja projektima. Upravo zato Mochi postoji.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-mochi"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "url": "https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-mochidonestamp",
+        "url": "https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Mochi DoneStamp: Zadnji put",
+        "description": "Kada ste zadnji put promijenili posteljinu, zalili biljku, nazvali obitelj, sigurnosno kopirali fotografije ili zamijenili filtar?",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790800323",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790800323"
+          },
+          "name": "Mochi DoneStamp: Zadnji put",
+          "operatingSystem": "iOS",
+          "applicationCategory": "LifestyleApplication",
+          "url": "https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/mochidonestamp.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790800323",
+          "inLanguage": "hr",
+          "description": "Kada ste zadnji put promijenili posteljinu, zalili biljku, nazvali obitelj, sigurnosno kopirali fotografije ili zamijenili filtar?",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-mochidonestamp"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "url": "https://apps.apple.com/hr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-moneytag",
+        "url": "https://apps.apple.com/hr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+        "name": "MoneyTag: Prihodi i troškovi",
+        "description": "Prihodi i troškovi Svaki projekt vodi svoje knjige: prihodi minus troškovi daju njegov neto rezultat. Ovdje su pitanja koja najčešće dobivamo. Ako vašeg nema, javite nam se — svaku poruku čita stvarna osoba.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6801956402",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6801956402"
+          },
+          "name": "MoneyTag: Prihodi i troškovi",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/hr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/moneytag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6801956402",
+          "inLanguage": "hr",
+          "description": "Prihodi i troškovi Svaki projekt vodi svoje knjige: prihodi minus troškovi daju njegov neto rezultat. Ovdje su pitanja koja najčešće dobivamo. Ako vašeg nema, javite nam se — svaku poruku čita stvarna osoba.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-moneytag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "url": "https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-onepageppt",
+        "url": "https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+        "name": "OnePage PPT: AI slajd",
+        "description": "Od zida teksta nastaje JEDAN slajd koji ljudi doista pročitaju.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6798814385",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6798814385"
+          },
+          "name": "OnePage PPT: AI slajd",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/onepageppt.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6798814385",
+          "inLanguage": "hr",
+          "description": "Od zida teksta nastaje JEDAN slajd koji ljudi doista pročitaju.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-onepageppt"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "url": "https://apps.apple.com/hr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-photocream",
+        "url": "https://apps.apple.com/hr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+        "name": "PhotoCream",
+        "description": "Travel kreatorima treba ponovljiv filmski izgled koji dodaje zrnatost, halaciju i karakter boje bez da svaku destinaciju svede na isti filter",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6781808054",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6781808054"
+          },
+          "name": "PhotoCream",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/hr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6781808054",
+          "inLanguage": "hr",
+          "description": "Travel kreatorima treba ponovljiv filmski izgled koji dodaje zrnatost, halaciju i karakter boje bez da svaku destinaciju svede na isti filter",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-photocream"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "url": "https://apps.apple.com/hr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-picclear",
+        "url": "https://apps.apple.com/hr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+        "name": "PicClear",
+        "description": "Za brzo oslobađanje prostora ciljajte na najveće dobitke prvo: točne duplikate fotografija, gotovo identične serije snimaka, mutne odbacene i velike videozapise",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6780223070",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6780223070"
+          },
+          "name": "PicClear",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/hr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6780223070",
+          "inLanguage": "hr",
+          "description": "Za brzo oslobađanje prostora ciljajte na najveće dobitke prvo: točne duplikate fotografija, gotovo identične serije snimaka, mutne odbacene i velike videozapise",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-picclear"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "url": "https://apps.apple.com/hr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-qrcodehalo",
+        "url": "https://apps.apple.com/hr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+        "name": "QR Code Halo: Skener kodova",
+        "description": "QR Code Halo djeluje čim pročita kod. Skenirajte kamerom ili odaberite sliku: poveznice se otvaraju u pregledniku, kodovi za prijavu pristupnim ključem i",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806779853",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806779853"
+          },
+          "name": "QR Code Halo: Skener kodova",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/hr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/qrcodehalo.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806779853",
+          "inLanguage": "hr",
+          "description": "QR Code Halo djeluje čim pročita kod. Skenirajte kamerom ili odaberite sliku: poveznice se otvaraju u pregledniku, kodovi za prijavu pristupnim ključem i",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-qrcodehalo"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "url": "https://apps.apple.com/hr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-savetag",
+        "url": "https://apps.apple.com/hr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+        "name": "SaveTag: AI oznake",
+        "description": "Spremi sada. I ovaj put stvarno pročitaj.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802505528",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802505528"
+          },
+          "name": "SaveTag: AI oznake",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/hr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/savetag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802505528",
+          "inLanguage": "hr",
+          "description": "Spremi sada. I ovaj put stvarno pročitaj.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-savetag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "url": "https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-scanto",
+        "url": "https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+        "name": "ScanTo Pro",
+        "description": "Ako skenirate obrasce pristanka pacijenata, otpustne papire ili upute, skener mora zadržati te dokumente na uređaju — nikada ih ne smije slati u tuđi oblak. ScanTo Pro je nastao točno iz tog problema.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779977651",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779977651"
+          },
+          "name": "ScanTo Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779977651",
+          "inLanguage": "hr",
+          "description": "Ako skenirate obrasce pristanka pacijenata, otpustne papire ili upute, skener mora zadržati te dokumente na uređaju — nikada ih ne smije slati u tuđi oblak. ScanTo Pro je nastao točno iz tog problema.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-scanto"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
+      "url": "https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-sereno",
+        "url": "https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Sereno",
+        "description": "Za spavanje, pretplata koja vas svaki mjesec gnjavi je suprotno od odmora. Ako vam to zvuči poznato, pogledajte Sereno.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6788236641",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6788236641"
+          },
+          "name": "Sereno",
+          "operatingSystem": "iOS",
+          "applicationCategory": "LifestyleApplication",
+          "url": "https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6788236641",
+          "inLanguage": "hr",
+          "description": "Za spavanje, pretplata koja vas svaki mjesec gnjavi je suprotno od odmora. Ako vam to zvuči poznato, pogledajte Sereno.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-sereno"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 39,
+      "url": "https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-shotinbox",
+        "url": "https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+        "name": "ShotInbox AI: Sort Screenshots",
+        "description": "Vaše snimke, uredno složene",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802166527",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802166527"
+          },
+          "name": "ShotInbox AI: Sort Screenshots",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/shotinbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802166527",
+          "inLanguage": "hr",
+          "description": "Vaše snimke, uredno složene",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-shotinbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "url": "https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-snapport",
+        "url": "https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Snapport",
+        "description": "Za bebinu fotografiju putovnice nitko drugi ne smije biti u kadru, a pozadina mora biti jednobojna. Snapport je nastao točno iz tog problema.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6780575828",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6780575828"
+          },
+          "name": "Snapport",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6780575828",
+          "inLanguage": "hr",
+          "description": "Za bebinu fotografiju putovnice nitko drugi ne smije biti u kadru, a pozadina mora biti jednobojna. Snapport je nastao točno iz tog problema.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-snapport"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "6.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 41,
+      "url": "https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-snapportlite",
+        "url": "https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Snapport Lite: Slike za osobnu",
+        "description": "Trebate fotografiju točno određene veličine? Snapport Lite obrezuje vaš portret točno na odabranu veličinu, izravno na vašem uređaju. Snimite novu",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6792856304",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6792856304"
+          },
+          "name": "Snapport Lite: Slike za osobnu",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/snapportlite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6792856304",
+          "inLanguage": "hr",
+          "description": "Trebate fotografiju točno određene veličine? Snapport Lite obrezuje vaš portret točno na odabranu veličinu, izravno na vašem uređaju. Snimite novu",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-snapportlite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
+      "url": "https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-sononote",
+        "url": "https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Sono Note",
+        "description": "Nakon poziva ne želite sirovi transkript — želite sažetak, zadatke i nacrt praćenja. Upravo tu prazninu Sono Note želi popuniti.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6782139553",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6782139553"
+          },
+          "name": "Sono Note",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6782139553",
+          "inLanguage": "hr",
+          "description": "Nakon poziva ne želite sirovi transkript — želite sažetak, zadatke i nacrt praćenja. Upravo tu prazninu Sono Note želi popuniti.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-sononote"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
+      "url": "https://apps.apple.com/hr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-stayclock",
+        "url": "https://apps.apple.com/hr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Stay Clock: preklopni sat",
+        "description": "Stay Clock pretvara vaš iPhone ili iPad u stolni sat koji svijetli bez prekida i čita se s drugog kraja sobe. Velik prikaz vremena, kalendar prilagođen",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6814035888",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6814035888"
+          },
+          "name": "Stay Clock: preklopni sat",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/hr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/stayclock.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6814035888",
+          "inLanguage": "hr",
+          "description": "Stay Clock pretvara vaš iPhone ili iPad u stolni sat koji svijetli bez prekida i čita se s drugog kraja sobe. Velik prikaz vremena, kalendar prilagođen",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-stayclock"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "url": "https://apps.apple.com/hr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-studydown",
+        "url": "https://apps.apple.com/hr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Studydown: Praćenje vremena",
+        "description": "Odvojite vrijeme za ono što vam je važno. Studydown bilježi koliko ulažete u projekt, čitanje ili hobi: dovoljno je odabrati aktivnost i položiti telefon",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6807335593",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6807335593"
+          },
+          "name": "Studydown: Praćenje vremena",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/hr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/studydown.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6807335593",
+          "inLanguage": "hr",
+          "description": "Odvojite vrijeme za ono što vam je važno. Studydown bilježi koliko ulažete u projekt, čitanje ili hobi: dovoljno je odabrati aktivnost i položiti telefon",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-studydown"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 45,
+      "url": "https://apps.apple.com/hr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-tripplanet",
+        "url": "https://apps.apple.com/hr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Trip Planet: Kids Quest",
+        "description": "Roditeljima koji putuju s malom djecom trebaju aktivnosti koje pakiranje, čekanje i otkrivanje novog mjesta pretvaraju u dio avanture umjesto još jednog izvora stresa. Upravo zato Trip Planet: Kids Quest postoji.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6787193643",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6787193643"
+          },
+          "name": "Trip Planet: Kids Quest",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6787193643",
+          "inLanguage": "hr",
+          "description": "Roditeljima koji putuju s malom djecom trebaju aktivnosti koje pakiranje, čekanje i otkrivanje novog mjesta pretvaraju u dio avanture umjesto još jednog izvora stresa. Upravo zato Trip Planet: Kids Quest postoji.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-tripplanet"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 46,
+      "url": "https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-tripbeelite",
+        "url": "https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+        "name": "TripBee Lite",
+        "description": "Ako planirate jedno nadolazeće putovanje, mirna vremenska linija za to putovanje korisnija je od pretrpanog arhiva svih putovanja koja biste mogli napraviti jednog dana. Ako vam to zvuči poznato, pogledajte TripBee Lite.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6791299610",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6791299610"
+          },
+          "name": "TripBee Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6791299610",
+          "inLanguage": "hr",
+          "description": "Ako planirate jedno nadolazeće putovanje, mirna vremenska linija za to putovanje korisnija je od pretrpanog arhiva svih putovanja koja biste mogli napraviti jednog dana. Ako vam to zvuči poznato, pogledajte TripBee Lite.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-tripbeelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/hr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-tripbee",
+        "url": "https://apps.apple.com/hr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+        "name": "TripBee Pro: Planer putovanja",
+        "description": "Dobra aplikacija za planiranje pretvara kaotično putovanje u jasan dnevni raspored — letovi, hoteli, aktivnosti, restorani i prijevoz — s jasnim ikonama tipova da možete na prvi pogled vidjeti svoj dan. Ako vam to zvuči poznato, pogledajte TripBee Pro: Planer putovanja.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6787754435",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6787754435"
+          },
+          "name": "TripBee Pro: Planer putovanja",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/hr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6787754435",
+          "inLanguage": "hr",
+          "description": "Dobra aplikacija za planiranje pretvara kaotično putovanje u jasan dnevni raspored — letovi, hoteli, aktivnosti, restorani i prijevoz — s jasnim ikonama tipova da možete na prvi pogled vidjeti svoj dan. Ako vam to zvuči poznato, pogledajte TripBee Pro: Planer putovanja.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-tripbee"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "6.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 48,
+      "url": "https://apps.apple.com/hr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-unblurry",
+        "url": "https://apps.apple.com/hr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Unblurry",
+        "description": "Djeca se nikad ne drže mirno, pa su blago zamućene i podrhtale fotografije neizbježne",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6782275018",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6782275018"
+          },
+          "name": "Unblurry",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/hr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6782275018",
+          "inLanguage": "hr",
+          "description": "Djeca se nikad ne drže mirno, pa su blago zamućene i podrhtale fotografije neizbježne",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-unblurry"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 49,
+      "url": "https://apps.apple.com/hr/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-claudeusagemini",
+        "url": "https://apps.apple.com/hr/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+        "name": "UsageNow: Potrošnja AI-ja",
+        "description": "AI limit potrošen usred zadatka? UsageNow pokazuje koliko ti je ostalo na svakom AI planu i točno kada se obnavlja, izravno na početnom zaslonu. Upozorit",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6818607603",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6818607603"
+          },
+          "name": "UsageNow: Potrošnja AI-ja",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/hr/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6818607603?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/claudeusagemini.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6818607603",
+          "inLanguage": "hr",
+          "description": "AI limit potrošen usred zadatka? UsageNow pokazuje koliko ti je ostalo na svakom AI planu i točno kada se obnavlja, izravno na početnom zaslonu. Upozorit",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-claudeusagemini"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 50,
+      "url": "https://apps.apple.com/hr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wifiaidlite",
+        "url": "https://apps.apple.com/hr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+        "name": "WiFi Aid Lite",
+        "description": "Pronađi stvarni problem. Bez kupnje možete ukupno jednom provesti potpunu provjeru bilo kojim alatom. Neobavezna jednokratna kupnja u aplikaciji otključava",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6793414462",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6793414462"
+          },
+          "name": "WiFi Aid Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/hr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/wifiaidlite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6793414462",
+          "inLanguage": "hr",
+          "description": "Pronađi stvarni problem. Bez kupnje možete ukupno jednom provesti potpunu provjeru bilo kojim alatom. Neobavezna jednokratna kupnja u aplikaciji otključava",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wifiaidlite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 51,
+      "url": "https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wifiaid",
+        "url": "https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+        "name": "WiFi Aid: Dijagnostika mreže",
+        "description": "Pronađite najvjerojatniji uzrok neovisnim provjerama putanja, DNS-a, TCP-a, TLS-a, vremena i stabilnosti. Jedno plaćanje unaprijed, bez pretplate, oglasa i",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790467886",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790467886"
+          },
+          "name": "WiFi Aid: Dijagnostika mreže",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/wifiaid.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790467886",
+          "inLanguage": "hr",
+          "description": "Pronađite najvjerojatniji uzrok neovisnim provjerama putanja, DNS-a, TCP-a, TLS-a, vremena i stabilnosti. Jedno plaćanje unaprijed, bez pretplate, oglasa i",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wifiaid"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "6.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 52,
+      "url": "https://apps.apple.com/hr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wordmatelite",
+        "url": "https://apps.apple.com/hr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Wordmate Lite: vokabular",
+        "description": "Želiš napokon pomaknuti strani jezik s mrtve točke, ali večer opet prođe bez ijedne nove riječi. Wordmate Lite svodi učenje na jednu minutu dnevno",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6797601720",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6797601720"
+          },
+          "name": "Wordmate Lite: vokabular",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/wordmatelite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6797601720",
+          "inLanguage": "hr",
+          "description": "Želiš napokon pomaknuti strani jezik s mrtve točke, ali večer opet prođe bez ijedne nove riječi. Wordmate Lite svodi učenje na jednu minutu dnevno",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wordmatelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 53,
+      "url": "https://apps.apple.com/hr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wordmate",
+        "url": "https://apps.apple.com/hr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Wordmate: Learn 44 Languages",
+        "description": "Zaposlenim putnicima treba vježba vokabulara koja stane u slobodne minute bez potrebe za cijelom lekcijom, novim računom ili telefonom u ruci za svako ponavljanje. Wordmate: Learn 44 Languages je nastao točno iz tog problema.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6789917808",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6789917808"
+          },
+          "name": "Wordmate: Learn 44 Languages",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/hr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6789917808",
+          "inLanguage": "hr",
+          "description": "Zaposlenim putnicima treba vježba vokabulara koja stane u slobodne minute bez potrebe za cijelom lekcijom, novim računom ili telefonom u ruci za svako ponavljanje. Wordmate: Learn 44 Languages je nastao točno iz tog problema.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-wordmate"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "9.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 54,
+      "url": "https://apps.apple.com/hr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-zipbox",
+        "url": "https://apps.apple.com/hr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Zipbox: otvori RAR, ZIP, 7z",
+        "description": "Zipbox se plaća pri preuzimanju s App Storea. Sve su funkcije uključene, bez kupnji u aplikaciji, pretplata i oglasa. Svih 13 formata obrađuje se na",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806776579",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806776579"
+          },
+          "name": "Zipbox: otvori RAR, ZIP, 7z",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/hr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/hr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/hr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/hr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/hr/zipbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806776579",
+          "inLanguage": "hr",
+          "description": "Zipbox se plaća pri preuzimanju s App Storea. Sve su funkcije uključene, bez kupnji u aplikaciji, pretplata i oglasa. Svih 13 formata obrađuje se na",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hr.jsonld#offer-zipbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "5.99",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "HR"
+        }
+      }
+    }
+  ]
+}

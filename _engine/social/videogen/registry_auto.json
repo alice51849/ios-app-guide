@@ -1,0 +1,967 @@
+{
+  "tripbee": {
+    "appstore_id": "6787754435",
+    "name": "TripBee Pro: Trip Planner",
+    "search": "TripBee Pro Trip Planner",
+    "category": "travel",
+    "sub": "Private offline day-by-day trip planner with smart family packing lists and one-tap Apple Maps directions",
+    "tag": "Pay once · No ads · Plan offline",
+    "cta_bullets": [
+      "Pay once",
+      "Plan offline",
+      "Private iCloud sync",
+      "Shared trips",
+      "No ads",
+      "No tracking"
+    ],
+    "purchase_model": "paid_upfront",
+    "keywords": [
+      "trip planner",
+      "travel itinerary",
+      "family packing list",
+      "offline travel",
+      "vacation planner",
+      "trip organizer"
+    ],
+    "shots_dir": "~/00_GrowthEngine/social/assets/tripbee",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
+  },
+  "sereno": {
+    "appstore_id": "6788236641",
+    "name": "Sereno",
+    "search": "Sereno",
+    "category": "sleep-sound",
+    "sub": "A high-end sound machine for sleep, focus & calm — free to try, unlock once",
+    "tag": "Free to start · One-time unlock · Offline",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "No ads",
+      "Offline",
+      "On-device",
+      "No account",
+      "No tracking"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "white noise",
+      "sleep sounds",
+      "brown noise",
+      "focus",
+      "rain sounds",
+      "tinnitus",
+      "ocean",
+      "meditation"
+    ],
+    "shots_dir": "~/00_GrowthEngine/social/assets/sereno",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
+  },
+  "wordmate": {
+    "appstore_id": "6789917808",
+    "name": "Wordmate: Learn 44 Languages",
+    "search": "Wordmate Learn 44 Languages",
+    "category": "education",
+    "kicker": "VOCABULARY EVERYWHERE",
+    "title": "Turn spare minutes into vocabulary practice",
+    "sub": "Learn useful vocabulary in 44 languages with natural examples, a Home Screen widget and Apple Watch",
+    "tag": "Paid download · No subscription · Everything included",
+    "cta_bullets": [
+      "Pay once",
+      "44 languages",
+      "Widget + Watch",
+      "No account",
+      "No tracking",
+      "No third-party ads",
+      "On-device"
+    ],
+    "purchase_model": "paid_upfront",
+    "keywords": [
+      "vocabulary app",
+      "language learning",
+      "flashcards",
+      "home screen widget",
+      "apple watch",
+      "pronunciation",
+      "example sentences",
+      "no subscription"
+    ],
+    "shots_dir": "~/00_GrowthEngine/social/assets/wordmate",
+    "shots": [
+      "01",
+      "02",
+      "03",
+      "10"
+    ]
+  },
+  "tripbeelite": {
+    "appstore_id": "6791299610",
+    "name": "TripBee Lite",
+    "search": "TripBee Lite",
+    "category": "travel",
+    "sub": "Give one upcoming journey your full attention. TripBee Lite is a calm, polished planner for a single trip.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "No account",
+      "No ads"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "one upcoming trip",
+      "one active trip",
+      "simple trip planner",
+      "occasional traveler",
+      "first trip plan",
+      "best simple trip planner app for one upcoming trip iphone"
+    ],
+    "keyword_source": "reviewed_persona",
+    "shots_dir": "~/00_GrowthEngine/social/assets/tripbeelite",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
+  },
+  "dailymate": {
+    "appstore_id": "6790418321",
+    "name": "DailyMate",
+    "search": "DailyMate",
+    "category": "kids",
+    "sub": "Learn a language in the form you actually use it: complete sentences, not isolated vocabulary.",
+    "tag": "Paid download · Pay once · No subscription",
+    "cta_bullets": [
+      "Paid download",
+      "Pay once",
+      "No subscription",
+      "Home Screen widget"
+    ],
+    "purchase_model": "paid_upfront",
+    "keywords": [
+      "practical language phrase",
+      "travel phrases with apple watch",
+      "complete sentences for travel",
+      "phrases in 47 languages",
+      "real life language phrases",
+      "best practical language phrase app for travelers with apple watch"
+    ],
+    "keyword_source": "reviewed_persona",
+    "shots_dir": "~/00_GrowthEngine/social/assets/dailymate",
+    "shots": [
+      "01",
+      "02",
+      "03",
+      "10"
+    ]
+  },
+  "wifiaid": {
+    "appstore_id": "6790467886",
+    "name": "WiFi Aid",
+    "search": "WiFi Aid",
+    "category": "photo-utility",
+    "sub": "Find the most likely connection problem with independent path, DNS, TCP, TLS, timing and stability checks.",
+    "tag": "Paid download · Pay once · No subscription",
+    "cta_bullets": [
+      "Paid download",
+      "Pay once",
+      "No subscription",
+      "No account",
+      "Apple Watch"
+    ],
+    "purchase_model": "paid_upfront",
+    "keywords": [
+      "wifi",
+      "aid",
+      "utilities"
+    ],
+    "shots_dir": "~/00_GrowthEngine/social/assets/wifiaid",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
+  },
+  "gmoneylite": {
+    "appstore_id": "6793436548",
+    "name": "G+Money Lite",
+    "search": "G+Money Lite",
+    "category": "finance",
+    "sub": "Smart travel currency and expense tracker — log each spend and see it in your home currency.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "1 trip and 3 expenses free",
+      "One-time unlock",
+      "No subscription",
+      "Offline with saved rates",
+      "Private on-device storage",
+      "No account",
+      "No tracking",
+      "Home Screen widget",
+      "Apple Watch"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "free travel expense tracker",
+      "travel expenses with currency conversion",
+      "track spending in local currency",
+      "travel budget in home currency",
+      "offline trip expense tracker",
+      "travel money app no subscription"
+    ],
+    "keyword_source": "reviewed_persona",
+    "shots_dir": "~/00_GrowthEngine/social/assets/gmoneylite",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
+  },
+  "mochidonestamp": {
+    "appstore_id": "6790800323",
+    "name": "Mochi DoneStamp",
+    "search": "Mochi DoneStamp",
+    "category": "lifestyle",
+    "sub": "When did you last change the sheets, water a plant, call family, or back up photos?",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "On-device",
+      "No account",
+      "No ads",
+      "No tracking",
+      "Home Screen widget"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "last time tracker",
+      "when did i last",
+      "household maintenance tracker",
+      "days since tracker",
+      "recurring life event history",
+      "routine reminder no subscription"
+    ],
+    "keyword_source": "reviewed_persona",
+    "shots_dir": "~/00_GrowthEngine/social/assets/mochidonestamp",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
+  },
+  "aibriefpack": {
+    "appstore_id": "6791658210",
+    "name": "AI Brief",
+    "search": "AI Brief",
+    "category": "productivity",
+    "sub": "Better context, better answers. Turn screenshots, files, notes and documents into one clear brief.",
+    "tag": "Free to start · AI Brief Pro in-app purchase",
+    "cta_bullets": [
+      "Free to start",
+      "AI Brief Pro in-app purchase",
+      "Reads files on-device"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "organize context for ai",
+      "turn screenshots into ai brief",
+      "summarize pdf and notes before ai",
+      "private ocr brief app",
+      "ai prompt context organizer",
+      "source tracking for ai prompts"
+    ],
+    "keyword_source": "reviewed_persona",
+    "shots_dir": "~/00_GrowthEngine/social/assets/aibriefpack",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
+  },
+  "hourstaglite": {
+    "appstore_id": "6794039979",
+    "name": "HoursTag Lite",
+    "search": "HoursTag Lite",
+    "category": "finance",
+    "sub": "See the real price of things — every purchase costs hours of your life.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "On-device privacy",
+      "No account",
+      "No tracking",
+      "Home Screen widget",
+      "Apple Watch"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "price in work hours",
+      "purchase cost in work hours",
+      "stop impulse buying",
+      "mindful spending before buying",
+      "need want impulse tracker",
+      "life cost calculator"
+    ],
+    "keyword_source": "reviewed_persona",
+    "shots_dir": "~/00_GrowthEngine/social/assets/hourstaglite",
+    "shots": [
+      "01"
+    ]
+  },
+  "maskmyfile": {
+    "appstore_id": "6792850916",
+    "name": "Mask My File",
+    "search": "Mask My File",
+    "category": "photo-utility",
+    "sub": "Share safely without losing the context people actually need. Mask My File finds private details before you share.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "No account"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "mask",
+      "file",
+      "utilities"
+    ],
+    "shots_dir": "~/00_GrowthEngine/social/assets/maskmyfile",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
+  },
+  "dailymatelite": {
+    "appstore_id": "6794725568",
+    "name": "DailyMate Lite",
+    "search": "DailyMate Lite",
+    "category": "kids",
+    "sub": "Be ready when it is your turn to speak.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "No account",
+      "Apple Watch"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "travel phrasebook free",
+      "situational travel phrases",
+      "speaking practice 50 languages",
+      "cue and reply dialogues",
+      "free language phrasebook",
+      "travel phrases no subscription"
+    ],
+    "keyword_source": "reviewed_persona",
+    "icon": "~/37_DailyMateLite/ios/DailyMateLite/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png",
+    "shots_dir": "~/00_GrowthEngine/social/assets/dailymatelite",
+    "locale": "",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
+  },
+  "snapportlite": {
+    "appstore_id": "6792856304",
+    "name": "Snapport Lite",
+    "search": "Snapport Lite",
+    "category": "photo-utility",
+    "sub": "Snapport Lite crops your portrait to the size you choose, right on your device.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "On-device",
+      "No account",
+      "No ads",
+      "No tracking"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "free passport photo app",
+      "id photo at home free",
+      "visa photo maker free",
+      "passport photo no subscription",
+      "print passport photos at home",
+      "offline passport photo app"
+    ],
+    "keyword_source": "reviewed_persona",
+    "icon": "~/35_SnapportLite/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+    "shots_dir": "~/00_GrowthEngine/social/assets/snapportlite",
+    "locale": "",
+    "shots": [
+      "01",
+      "02",
+      "03"
+    ]
+  },
+  "wordmatelite": {
+    "appstore_id": "6797601720",
+    "name": "Wordmate Lite",
+    "search": "Wordmate Lite",
+    "category": "education",
+    "sub": "Five words.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "On-device",
+      "No account",
+      "No tracking"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "free vocabulary app adults",
+      "learn five words a day",
+      "vocabulary without building decks",
+      "offline vocabulary practice",
+      "daily streak language habit",
+      "vocabulary app no subscription"
+    ],
+    "keyword_source": "reviewed_persona",
+    "icon": "~/36_WordmateLite/ios/WordmateLite/Images.xcassets/AppIcon.appiconset/App-Icon-1024x1024@1x.png",
+    "shots_dir": "~/00_GrowthEngine/social/assets/wordmatelite",
+    "locale": "",
+    "shots": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  },
+  "caldaily": {
+    "appstore_id": "6794178671",
+    "name": "CalDaily",
+    "search": "CalDaily",
+    "category": "utility",
+    "sub": "A calculator you will actually keep using, because it remembers the thinking behind each number.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "On-device",
+      "No account"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "calculator with saved history",
+      "name and tag a calculation",
+      "tip split discount tax tools",
+      "calculator home screen widget",
+      "export calculations to csv",
+      "calculator no subscription"
+    ],
+    "keyword_source": "reviewed_persona",
+    "icon": "~/41_CalDaily/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+    "shots_dir": "~/00_GrowthEngine/social/assets/caldaily",
+    "locale": "",
+    "shots": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  },
+  "onepageppt": {
+    "appstore_id": "6798814385",
+    "name": "OnePage PPT",
+    "search": "OnePage PPT",
+    "category": "productivity",
+    "sub": "Turn a wall of text into ONE slide people actually read.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "On-device",
+      "Offline",
+      "No account",
+      "No tracking"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "turn notes into a slide",
+      "one slide summary of a report",
+      "executive summary slide maker",
+      "meeting recap single slide",
+      "make a slide from a pdf",
+      "editable pptx export from notes"
+    ],
+    "keyword_source": "reviewed_persona",
+    "icon": "~/43_OnePagePPT/OnePagePPT/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+    "shots_dir": "~/00_GrowthEngine/social/assets/onepageppt",
+    "locale": "",
+    "shots": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  },
+  "notesstudio100": {
+    "appstore_id": "6798813048",
+    "name": "100 Notes Studio",
+    "search": "100 Notes Studio",
+    "category": "productivity",
+    "sub": "100 Notes Studio is a private, offline workspace for handwriting, typed notes, PDF markup, page-attached audio recordings and study.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "handwriting notes app ipad",
+      "pdf markup and handwriting in one app",
+      "notes app no subscription",
+      "offline notes app no account",
+      "annotate lecture pdfs by hand",
+      "apple pencil note taking app"
+    ],
+    "keyword_source": "reviewed_persona",
+    "icon": "~/41_100NotesStudio/Resources/Assets.xcassets/AppIcon.appiconset/NotesStudio100-1024.png",
+    "shots_dir": "~/00_GrowthEngine/social/assets/notesstudio100",
+    "shots": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ]
+  },
+  "wifiaidlite": {
+    "appstore_id": "6793414462",
+    "name": "WiFi Aid Lite",
+    "search": "WiFi Aid Lite",
+    "category": "utility",
+    "icon": "~/38_WiFiAidLite/LinkLumen/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+    "shots_dir": "~/00_GrowthEngine/social/assets/wifiaidlite",
+    "locale": "",
+    "shots": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06"
+    ],
+    "sub": "Find the real problem.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "No account"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "is it my wifi or the website",
+      "wifi or the website",
+      "wifi connected but no internet",
+      "wi-fi connected but no internet",
+      "connected but no internet",
+      "check if a website is down"
+    ],
+    "keyword_source": "reviewed_persona"
+  },
+  "moneytag": {
+    "appstore_id": "6801956402",
+    "name": "MoneyTag: Income & Expense",
+    "search": "MoneyTag Income Expense",
+    "category": "finance",
+    "sub": "Give every project its own income, expenses and net result, then analyze tags across projects.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "1 project and 5 entries free",
+      "Project income, expenses and net result",
+      "Cross-project tag analysis",
+      "One-time lifetime unlock",
+      "No subscription",
+      "Private on-device ledger data",
+      "Apple Watch",
+      "Home Screen widget",
+      "Offline with saved or manual exchange rates",
+      "No account",
+      "No tracking"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "income and expense tracker for freelance projects",
+      "freelance project income and expenses",
+      "track profit by client project",
+      "side hustle income expense tracker",
+      "project bookkeeping no subscription",
+      "tag expenses across projects"
+    ],
+    "keyword_source": "reviewed_persona",
+    "icon": "~/45_MoneyTag/assets/app-icon.png",
+    "shots_dir": "~/45_MoneyTag/marketing/moneytag_raw/iphone",
+    "locale": "",
+    "shots": [
+      "en_01_home",
+      "en_02_entry",
+      "en_03_tags",
+      "en_04_report",
+      "en_07_projects",
+      "en_09_privacy"
+    ]
+  },
+  "shotinbox": {
+    "appstore_id": "6802166527",
+    "name": "ShotInbox AI",
+    "search": "ShotInbox AI",
+    "category": "photo-utility",
+    "sub": "Your Screenshots, Sorted Find, act on, and clear every screenshot.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "On-device"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "sort screenshots",
+      "organize screenshots",
+      "screenshot organizer",
+      "clean up screenshots",
+      "too many screenshots",
+      "find text in screenshots"
+    ],
+    "keyword_source": "reviewed_persona"
+  },
+  "savetag": {
+    "appstore_id": "6802505528",
+    "name": "SaveTag",
+    "search": "SaveTag",
+    "category": "productivity",
+    "sub": "Save it now.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "On-device",
+      "No account",
+      "No ads",
+      "No tracking",
+      "Home Screen widget"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "save links",
+      "bookmark manager",
+      "read later",
+      "link organizer",
+      "saved links",
+      "save articles to read later"
+    ],
+    "keyword_source": "reviewed_persona"
+  },
+  "battai": {
+    "appstore_id": "6802423998",
+    "name": "BattAI",
+    "search": "BattAI",
+    "category": "utility",
+    "sub": "See what is measured, estimated, or yours, then follow the battery trend over time.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "No ads",
+      "Apple Watch"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "battery health app",
+      "battery health report",
+      "time to 80",
+      "replace iphone battery",
+      "battery replacement",
+      "sell iphone battery"
+    ],
+    "keyword_source": "reviewed_persona"
+  },
+  "zipbox": {
+    "appstore_id": "6806776579",
+    "name": "Zipbox",
+    "search": "Zipbox",
+    "category": "utility",
+    "sub": "Open encrypted and split ZIP, RAR, RAR5 and 7z archives on-device, create ZIP or 7z, and pay once with every feature included.",
+    "tag": "Paid download · All features included · No IAP or subscription",
+    "cta_bullets": [
+      "13 archive formats",
+      "Encrypted + split archives",
+      "Create ZIP + 7z",
+      "On-device",
+      "Offline",
+      "No account",
+      "No ads",
+      "No tracking"
+    ],
+    "purchase_model": "paid_upfront",
+    "keywords": [
+      "open rar files on iphone",
+      "extract 7z files on iphone",
+      "unzip password protected zip iphone",
+      "archive extractor no ads no subscription",
+      "open split archive on iphone",
+      "paid app to open rar and 7z files on iphone without ads"
+    ],
+    "keyword_source": "reviewed_persona"
+  },
+  "ledmovingtext": {
+    "appstore_id": "6806639602",
+    "name": "LED Moving Text",
+    "search": "LED Moving Text",
+    "category": "utility",
+    "sub": "Cue Flow handles moments that need more than one sign.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "Offline",
+      "Private",
+      "No account",
+      "No ads",
+      "No tracking"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "led banner app iphone",
+      "scrolling text sign app",
+      "concert sign app for phone",
+      "airport pickup sign on phone",
+      "marquee text full screen iphone",
+      "digital cheer board app"
+    ],
+    "keyword_source": "reviewed_persona"
+  },
+  "dbhalo": {
+    "appstore_id": "6806826699",
+    "name": "dB Halo",
+    "search": "dB Halo",
+    "category": "utility",
+    "sub": "From a home workshop and HVAC rumble to a gym floor or concert venue, dB Halo helps you understand sound without sending data off your device.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "On-device",
+      "No account",
+      "No ads",
+      "No tracking",
+      "Home Screen widget",
+      "Apple Watch"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "decibel meter app iphone",
+      "measure noise level at home",
+      "spl meter with spectrum analyzer",
+      "noise dose niosh osha app",
+      "rta octave band analyzer iphone",
+      "sleep sound journal app"
+    ],
+    "keyword_source": "reviewed_persona"
+  },
+  "stayclock": {
+    "appstore_id": "6814035888",
+    "name": "Stay Clock",
+    "search": "Stay Clock",
+    "category": "utility",
+    "sub": "Stay Clock turns your iPhone or iPad into an always-on desk clock you can read from across the room.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "On-device",
+      "Offline",
+      "No account",
+      "No ads",
+      "No tracking",
+      "Home Screen widget",
+      "Apple Watch"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "always on desk clock app",
+      "turn iphone into nightstand clock",
+      "charging dock clock display app",
+      "oled screen burn in clock app",
+      "full screen digital clock no ads",
+      "flip clock app for iphone"
+    ],
+    "keyword_source": "reviewed_persona"
+  },
+  "studydown": {
+    "appstore_id": "6807335593",
+    "name": "Studydown",
+    "search": "Studydown",
+    "category": "productivity",
+    "sub": "A little time for a project, a book or a skill you want to develop.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "On-device",
+      "No account",
+      "No ads",
+      "Home Screen widget",
+      "Apple Watch"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "turn phone over to focus timer",
+      "face down phone timer app",
+      "study time tracker no subscription",
+      "focus hours log by activity",
+      "phone down timer for reading",
+      "log focused hours on iphone"
+    ],
+    "keyword_source": "reviewed_persona"
+  },
+  "countdaysnow": {
+    "appstore_id": "6807079789",
+    "name": "CountDaysNow",
+    "search": "CountDaysNow",
+    "category": "productivity",
+    "sub": "Plan backwards from the dates that matter.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "On-device",
+      "No account",
+      "No ads",
+      "Home Screen widget",
+      "Apple Watch"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "days until countdown widget",
+      "days since counter app",
+      "anniversary countdown iphone",
+      "exam countdown widget",
+      "countdown on lock screen iphone",
+      "birthday countdown app no ads"
+    ],
+    "keyword_source": "reviewed_persona"
+  },
+  "qrcodehalo": {
+    "appstore_id": "6806779853",
+    "name": "QR Code Halo",
+    "search": "QR Code Halo",
+    "category": "utility",
+    "sub": "QR Code Halo is built around Inspect, Decide, Act.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "On-device"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "qr scanner that does not open links automatically",
+      "check qr code link before opening",
+      "check a qr code link before opening it",
+      "stop a qr scanner from opening links automatically",
+      "suspicious qr code link checker",
+      "create wifi qr code iphone"
+    ],
+    "keyword_source": "reviewed_persona"
+  },
+  "claudeusagemini": {
+    "appstore_id": "6818607603",
+    "name": "UsageNow",
+    "search": "UsageNow",
+    "category": "productivity",
+    "sub": "UsageNow shows how much of each AI plan you have left and exactly when it resets, right on your Home Screen, and warns you before you run out.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "Home Screen widget",
+      "Apple Watch",
+      "No tracking",
+      "Private"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "claude usage limit",
+      "claude weekly limit",
+      "codex usage limit",
+      "copilot premium requests",
+      "ai plan reset countdown",
+      "ai usage limit widget"
+    ],
+    "keyword_source": "reviewed_persona"
+  },
+  "easyam": {
+    "appstore_id": "6821790092",
+    "name": "EasyAM",
+    "search": "EasyAM",
+    "category": "utility",
+    "sub": "EasyAM decides for you, day by day: it rings on workdays and stays quiet on public holidays and your days off.",
+    "tag": "Free to start · One-time unlock · No subscription",
+    "cta_bullets": [
+      "Free to start",
+      "One-time unlock",
+      "No subscription",
+      "Home Screen widget",
+      "Apple Watch",
+      "On-device",
+      "No account",
+      "No ads",
+      "No tracking"
+    ],
+    "purchase_model": "free_with_lifetime_unlock",
+    "keywords": [
+      "alarm skip holidays",
+      "alarm clock skip public holidays",
+      "holiday alarm clock",
+      "alarm off on holidays",
+      "make-up workday alarm",
+      "alarm skip days off"
+    ],
+    "keyword_source": "reviewed_persona"
+  }
+}

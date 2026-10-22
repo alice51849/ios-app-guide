@@ -1,0 +1,2188 @@
+{
+  "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
+  "api_version": "1.2.0",
+  "date_modified": "2026-10-21",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "locale": "nl-NL",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "ordering": "alphabetical_by_app_name_not_a_ranking",
+  "record_count": 54,
+  "apps": [
+    {
+      "key": "notesstudio100",
+      "app_store_id": "6798813048",
+      "name": "100 Notes Studio: Pen & Paper",
+      "summary": "100 Notes Studio brengt handschrift, getypte tekst, pdf-annotatie, notitieboekstructuur en studeren samen in een rustige werkruimte die ook offline werkt.",
+      "category": "productivity",
+      "search_terms": [
+        "schrijfboek",
+        "dagboek",
+        "agenda",
+        "leerkaarten",
+        "markeren",
+        "schets",
+        "college",
+        "tentamen",
+        "planner",
+        "offline",
+        "ocr",
+        "opname"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/notesstudio100.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6798813048"
+      }
+    },
+    {
+      "key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "name": "AI Brief: Bestand naar prompt",
+      "summary": "Betere context. Betere antwoorden.",
+      "category": "productivity",
+      "search_terms": [
+        "PDF",
+        "generator",
+        "afbeelding naar tekst",
+        "sjabloon",
+        "samenvatting",
+        "samenvatten",
+        "screenshot",
+        "OCR",
+        "context",
+        "chat"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/aibriefpack.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6791658210"
+      }
+    },
+    {
+      "key": "aim990",
+      "app_store_id": "6784974530",
+      "name": "Aim990: Engels-coach",
+      "summary": "Aim990 is een diagnostische coach voor voorbereiding in de stijl van TOEIC Listening & Reading. Het is geen stapel willekeurige vragen: elke sessie die je opent, wordt voorgeschreven op basis van je eigen antwoorden.",
+      "category": "education",
+      "search_terms": [
+        "grammatica",
+        "luisteren",
+        "lezen",
+        "woordenschat",
+        "dictee",
+        "examen",
+        "oefenen",
+        "zakelijk",
+        "score",
+        "toets",
+        "leren",
+        "zinsbouw"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/aim990.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6784974530"
+      }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: Batterijconditiescore",
+      "summary": "BattAI BattAI gebruikt vijf waarden uit openbare iOS-API’s: batterijniveau, laadstatus, Energiebesparing, warmtestatus van het hele toestel en tijd. Andere resultaten worden uit die metingen berekend of door jou toegevoegd. Elk detail toont bron en grenzen.",
+      "category": "utility",
+      "search_terms": [
+        "Batterijconditiescore",
+        "Maximale capaciteit",
+        "Cycli",
+        "Zorgvuldig laden",
+        "Laadbereik",
+        "Laadsnelheid",
+        "Gegevens exporteren"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/battai.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6802423998"
+      }
+    },
+    {
+      "key": "caldaily",
+      "app_store_id": "6794178671",
+      "name": "CalDaily: rekenmachine+thema's",
+      "summary": "Een rekenmachine die je houdt, omdat hij onthoudt waar elk getal over ging.",
+      "category": "utility",
+      "search_terms": [
+        "procent",
+        "fooi",
+        "rekening",
+        "delen",
+        "lening",
+        "rente",
+        "eenheden",
+        "omrekenen",
+        "korting",
+        "btw",
+        "datum",
+        "werkdagen",
+        "brandstof"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/caldaily.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6794178671"
+      }
+    },
+    {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Event Counter",
+      "summary": "• Dagfocus Sinds · Vandaag · Vooruit — Bewaren",
+      "category": "productivity",
+      "search_terms": [
+        "aftellen",
+        "dagen",
+        "verjaardag",
+        "jubileum",
+        "herinnering",
+        "widget",
+        "vergrendelscherm",
+        "bruiloft",
+        "examen",
+        "vakantie"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/countdaysnow.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6807079789"
+      }
+    },
+    {
+      "key": "cvdesk",
+      "app_store_id": "6781337213",
+      "name": "CV Desk: ATS cv-maker",
+      "summary": "Maak een ATS-veilig cv dat de systemen van recruiters echt lezen — volledig op je iPhone. Geen account. Geen upload. Geen abonnement.",
+      "category": "productivity",
+      "search_terms": [
+        "sollicitatie",
+        "sjabloon",
+        "curriculum",
+        "vitae",
+        "voorbeeld",
+        "resume",
+        "vacature",
+        "carrière",
+        "werk",
+        "baan",
+        "student",
+        "stage"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/cvdesk.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6781337213"
+      }
+    },
+    {
+      "key": "cyca",
+      "app_store_id": "6782251621",
+      "name": "Cyca: Menstruatiekalender",
+      "summary": "Cyca is een warme, privé manier om je cyclus te begrijpen. Leg menstruatie, flow, symptomen, stemming en notities in seconden vast en bekijk je volgende menstruatie, vruchtbare dagen en ovulatie in een rustige kalender.",
+      "category": "health",
+      "search_terms": [
+        "menstruatie",
+        "ongesteldheid",
+        "cyclus",
+        "vruchtbaarheid",
+        "zwanger",
+        "symptomen",
+        "stemming",
+        "dagboek",
+        "pms",
+        "kinderwens"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/cyca.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6782251621"
+      }
+    },
+    {
+      "key": "dailymate",
+      "app_store_id": "6790418321",
+      "name": "DailyMate: talen in context",
+      "summary": "Een taal leer je in volledige zinnen, niet als een verzameling losse woorden. DailyMate bevat 8.400 praktische zinnen in 47 leertalen, verdeeld over 14 alledaagse onderwerpen en 84 concrete situaties. Eén aankoop geeft toegang tot de volledige app. Geen abonnement.",
+      "category": "kids",
+      "search_terms": [
+        "uitdrukkingen",
+        "gesprekken",
+        "antwoorden",
+        "situaties",
+        "uitspraak",
+        "beginner",
+        "frans",
+        "japans",
+        "koreaans",
+        "dagelijks"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/dailymate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "12.99",
+        "currency": "EUR",
+        "formatted_price": "€ 12,99",
+        "storefront_url": "https://apps.apple.com/nl/app/id6790418321"
+      }
+    },
+    {
+      "key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "name": "DailyMate Lite: Spreek nu",
+      "summary": "Spreek met meer vertrouwen wanneer het ertoe doet. DailyMate Lite zet situaties op reis, op het werk, in restaurants, rond gezondheid en in het dagelijks leven om in korte oefeningen met een aanzet en een natuurlijk antwoord, in 50 talen. Het onderwerp Reizen op beginnersniveau is gratis; de complete bibliotheek is beschikbaar met één aankoop.",
+      "category": "kids",
+      "search_terms": [
+        "vakantie",
+        "italiaans",
+        "duits",
+        "grieks",
+        "portugees",
+        "turks",
+        "kroatisch",
+        "thais",
+        "luchthaven",
+        "restaurant",
+        "hotel",
+        "offline"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/dailymatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6794725568"
+      }
+    },
+    {
+      "key": "dbhalo",
+      "app_store_id": "6806826699",
+      "name": "dB Halo: Geluidsniveaumeter",
+      "summary": "Zie in één oogopslag hoe luid het om je heen is, welke frequenties overheersen en hoeveel veiligere blootstellingstijd naar schatting resteert. dB Halo meet geluidsniveau en audiospectrum volledig op je apparaat, thuis, op het werk, tijdens evenementen, bij studie, muziek of slaap.",
+      "category": "utility",
+      "search_terms": [
+        "decibelmeter",
+        "geluidsmeter",
+        "geluidsdruk",
+        "lawaainiveau",
+        "snurken",
+        "slaap",
+        "spectrogram",
+        "kalibratie",
+        "FFT",
+        "RTA"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/dbhalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6806826699"
+      }
+    },
+    {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: Wekker voor werkdagen",
+      "summary": "Moet je wekker morgen nou wel of niet aan? EasyAM beslist het elke dag voor je: hij gaat af op werkdagen en blijft stil op feestdagen en je vrije dagen. Meteen bij het openen zie je de komende 7 dagen, op iPad zelfs 14: welke dagen hij gaat en hoe laat.",
+      "category": "utility",
+      "search_terms": [
+        "ploegendienst",
+        "rooster",
+        "verlof",
+        "alarm",
+        "slimme",
+        "digitale",
+        "klok",
+        "widget",
+        "flip",
+        "kalender",
+        "nederland",
+        "expat",
+        "werk"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6821790092"
+      }
+    },
+    {
+      "key": "gmoney",
+      "app_store_id": "6755782939",
+      "name": "G+Money: Uitgaven en budget",
+      "summary": "G+Money verenigt twee dagelijkse hulpmiddelen in één — een bliksemsnelle valutaomrekenaar en een mooie uitgaven-tracker — voor het dagelijks leven én op reis. Volledig offline. Volledig privé.",
+      "category": "finance",
+      "search_terms": [
+        "uitgaven",
+        "bijhouden",
+        "huishoudboekje",
+        "financiën",
+        "omrekenen",
+        "wisselkoers",
+        "geld",
+        "sparen",
+        "reiskosten",
+        "vakantie"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/gmoney.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "€ 5,99",
+        "storefront_url": "https://apps.apple.com/nl/app/id6755782939"
+      }
+    },
+    {
+      "key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "name": "G+Money Lite: Reisuitgaven",
+      "summary": "G+Money Lite — Slimme reisvaluta- & uitgaventracker",
+      "category": "finance",
+      "search_terms": [
+        "uitgavenlimiet",
+        "zakgeld",
+        "snel",
+        "noteren",
+        "pols",
+        "beginscherm",
+        "valuta",
+        "reis",
+        "eenvoudig",
+        "kasboek",
+        "smartwatch",
+        "cash"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/gmoneylite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6793436548"
+      }
+    },
+    {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite: Prijs in uren",
+      "summary": "HoursTag Lite - De echte prijs van dingen",
+      "category": "finance",
+      "search_terms": [
+        "impulsaankoop",
+        "het waard",
+        "nodig",
+        "willen",
+        "shoppen",
+        "verspilling",
+        "gewoontes",
+        "spijt",
+        "minimalisme",
+        "levenstijd"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6794039979"
+      }
+    },
+    {
+      "key": "hourstag",
+      "app_store_id": "6754218117",
+      "name": "HoursTag: Uren om te kopen",
+      "summary": "Wat kost het echt? Niet in euro's, maar in uren van je leven.",
+      "category": "finance",
+      "search_terms": [
+        "bijhouden",
+        "besparen",
+        "financiën",
+        "geld",
+        "minder",
+        "uitgeven",
+        "werkuren",
+        "beheren",
+        "budget",
+        "salaris",
+        "inkomen",
+        "doelen"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/hourstag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "€ 5,99",
+        "storefront_url": "https://apps.apple.com/nl/app/id6754218117"
+      }
+    },
+    {
+      "key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "name": "LED Moving Text",
+      "summary": "Typ een zin en houd je iPhone omhoog. Vanaf de achterste rij, dwars door de aankomsthal of over de toonbank heen lees je hem in één oogopslag.",
+      "category": "utility",
+      "search_terms": [
+        "tekstbord",
+        "spandoek",
+        "lichtbak",
+        "reclamebord",
+        "naambord",
+        "neon",
+        "luchthaven",
+        "ophalen",
+        "concert",
+        "supporter",
+        "etalage"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/ledmovingtext.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6806639602"
+      }
+    },
+    {
+      "key": "lockhour",
+      "app_store_id": "6780107485",
+      "name": "LockHour Pro: Apps blokkeren",
+      "summary": "Bescherm de uren waarin je echt vooruitkomt. LockHour Pro helpt je rustige focussessies te starten, telefoonafleiding te verminderen en productieve gewoontes op te bouwen zonder rommel. Ideaal voor studie, diep werk, schrijven en plannen.",
+      "category": "productivity",
+      "search_terms": [
+        "focus",
+        "concentratie",
+        "pomodoro",
+        "timer",
+        "telefoonverslaving",
+        "sociale",
+        "media",
+        "websites",
+        "productiviteit",
+        "slaap"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/lockhour.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6780107485"
+      }
+    },
+    {
+      "key": "lumibopomofo",
+      "app_store_id": "6773017109",
+      "name": "Lumi Bopomofo",
+      "summary": "Een lieve eerste stap in de klanken van Mandarijn-Chinees. Lumi Bopomofo maakt van Zhuyin, het Chinese fonetische systeem, een charmant planetenspel voor kinderen van 3 tot 6 jaar. Korte opdrachten helpen bij het herkennen van symbolen, klanken en combinaties.",
+      "category": "kids",
+      "search_terms": [
+        "mandarijn",
+        "leren",
+        "taiwan",
+        "traditioneel",
+        "tonen",
+        "uitspraak",
+        "klanken",
+        "lettergrepen",
+        "symbolen",
+        "schrijven",
+        "kleuters"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/lumibopomofo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6773017109"
+      }
+    },
+    {
+      "key": "lumibopomofopro",
+      "app_store_id": "6775773117",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "summary": "Een lieve eerste stap in de klanken van Mandarijn-Chinees. Lumi Bopomofo Pro maakt van Zhuyin, het Chinese fonetische systeem, een charmant planetenspel voor kinderen van 3 tot 6 jaar. Korte opdrachten helpen bij het herkennen van symbolen, klanken en combinaties.",
+      "category": "kids",
+      "search_terms": [
+        "chinees",
+        "taiwan",
+        "kinderen",
+        "uitspraak",
+        "klanken",
+        "overtrekken",
+        "printen",
+        "kleuter",
+        "basisschool",
+        "oefenen",
+        "tweetalig"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/lumibopomofopro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "€ 9,99",
+        "storefront_url": "https://apps.apple.com/nl/app/id6775773117"
+      }
+    },
+    {
+      "key": "lumiletters",
+      "app_store_id": "6778748533",
+      "name": "Lumi Letters Lite: ABC Kids",
+      "summary": "Begin met de letter A en de eerste planeet en ontgrendel de rest alleen als jullie gezin het leuk vindt. Lumi Letters Lite maakt van het Engelse alfabet een sterrenavontuur voor kinderen van 3 tot 7 jaar: ze horen de naam en klank van elke letter, trekken hoofdletters en kleine letters over langs de schrijfhulplijnen en verzamelen schattige letter-vriendjes. Geen advertenties en ook offline te spelen.",
+      "category": "kids",
+      "search_terms": [
+        "klanken",
+        "kinderen",
+        "kleuter",
+        "peuter",
+        "schrijven",
+        "leren",
+        "lezen",
+        "spelletjes",
+        "educatief",
+        "groep 1",
+        "groep 2",
+        "kleine"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/lumiletters.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6778748533"
+      }
+    },
+    {
+      "key": "lumiletterspro",
+      "app_store_id": "6778491147",
+      "name": "Lumi Letters Pro: ABC Phonics",
+      "summary": "Hoor de klank, vind hem in het woord en trek de letter over: leren lezen met klanken voor de allerkleinsten. Met Lumi Letters Pro reizen kinderen langs 14 planeten, 12 soorten opdrachten en 26 lettervriendjes om te verzamelen. Ze horen de begin-, midden- en eindklank van een woord, koppelen hoofdletters en kleine letters en trekken elke letter over langs hulplijnen. In het ouderdeel zie je de voortgang in vier vaardigheden en print je een dagelijks werkblad. Zonder reclame, zonder abonnement, zonder dataverzameling en ook offline te gebruiken.",
+      "category": "kids",
+      "search_terms": [
+        "alfabet",
+        "klinkers",
+        "uitspraak",
+        "kleuters",
+        "groep",
+        "1",
+        "2",
+        "schrijven",
+        "overtrekken",
+        "werkbladen",
+        "lezen",
+        "woordjes",
+        "leren"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/lumiletterspro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "€ 9,99",
+        "storefront_url": "https://apps.apple.com/nl/app/id6778491147"
+      }
+    },
+    {
+      "key": "lumimath",
+      "app_store_id": "6778269699",
+      "name": "Lumi Math Planet: Explorer",
+      "summary": "Goed antwoord, en een klein planeetje licht op. Lumi Math Planet maakt van tellen, optellen, aftrekken, de tafels, de klok en geld een gezellig ruimteavontuur: 46 soorten vragen met plaatjes die ook worden voorgelezen. Ouders volgen de voortgang, oefenen zwakke punten en printen werkbladen met antwoorden. Zonder advertenties, zonder abonnement.",
+      "category": "kids",
+      "search_terms": [
+        "rekenspelletjes",
+        "kleuters",
+        "tellen",
+        "getallen",
+        "optellen",
+        "aftrekken",
+        "tafels",
+        "sommen",
+        "kinderen",
+        "klok",
+        "geld",
+        "2",
+        "3",
+        "4"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/lumimath.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6778269699"
+      }
+    },
+    {
+      "key": "lumimathpro",
+      "app_store_id": "6776958488",
+      "name": "Lumi Math Pro: Kids Numbers",
+      "summary": "Maak wiskundig denken een warm ruimteavontuur. Lumi Math Pro helpt kinderen van 3–6 jaar oefenen met tellen, getalbegrip, optellen, patronen, vormen en logica via korte, duidelijke opdrachten.",
+      "category": "kids",
+      "search_terms": [
+        "rekenen",
+        "verhaaltjessommen",
+        "puzzels",
+        "raadsels",
+        "patronen",
+        "reeksen",
+        "hoofdrekenen",
+        "kinderen",
+        "werkbladen",
+        "logica"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/lumimathpro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "€ 9,99",
+        "storefront_url": "https://apps.apple.com/nl/app/id6776958488"
+      }
+    },
+    {
+      "key": "lumimission",
+      "app_store_id": "6779750237",
+      "name": "Lumi Mission Planet",
+      "summary": "Maak dagelijkse gewoontes rustig, duidelijk en leuk. Lumi Mission Planet helpt kinderen van 3–6 jaar met tandenpoetsen, aankleden, opruimen, bedtijd en kleine klusjes in huis. Zachte missies en sterren belonen inzet, zodat kinderen groeien in zelfstandigheid zonder advertenties, drukte of druk.",
+      "category": "kids",
+      "search_terms": [
+        "beloningssysteem",
+        "sterrenkaart",
+        "routine",
+        "kinderen",
+        "peuter",
+        "tandenpoetsen",
+        "opruimen",
+        "motivatie",
+        "gedrag",
+        "lof"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/lumimission.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6779750237"
+      }
+    },
+    {
+      "key": "lumimissionpro",
+      "app_store_id": "6779745474",
+      "name": "Lumi Mission Planet Pro",
+      "summary": "Lumi Mission Planet Pro is een betaalde download: één aankoop bevat de volledige app, zonder proefperiode, in-app aankopen of abonnement. Ouders en kinderen kunnen samen een visuele routine afwerken, met directe feedback en bewaarde voortgang.",
+      "category": "kids",
+      "search_terms": [
+        "ochtendroutine",
+        "kinderen",
+        "peuter",
+        "dagritme",
+        "bedtijd",
+        "tandenpoetsen",
+        "opruimen",
+        "zelfstandig",
+        "gewoontes",
+        "slapen"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/lumimissionpro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "€ 6,99",
+        "storefront_url": "https://apps.apple.com/nl/app/id6779745474"
+      }
+    },
+    {
+      "key": "lumiweather",
+      "app_store_id": "6779552704",
+      "name": "Lumi Weer: Wat trek ik aan?",
+      "summary": "Lumi Weer laat je in één oogopslag zien of het een goed moment is om naar buiten te gaan, wat je aantrekt en of je een paraplu of zonnebrand nodig hebt.",
+      "category": "kids",
+      "search_terms": [
+        "weersverwachting",
+        "weerbericht",
+        "kleding",
+        "paraplu",
+        "zonnebrand",
+        "temperatuur",
+        "morgen",
+        "widget",
+        "jas",
+        "fietsen",
+        "buien"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/lumiweather.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6779552704"
+      }
+    },
+    {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "name": "Mask My File: Wis je gegevens",
+      "summary": "Deel veilig zonder de nuttige context te verliezen. Mask My File vindt privégegevens voordat u een bestand verstuurt, maakt permanent onleesbaar wat u kiest en opent en verifieert daarna de nieuwe kopie voordat Private Ready verschijnt.",
+      "category": "photo-utility",
+      "search_terms": [
+        "anonimiseren",
+        "censureren",
+        "persoonsgegevens",
+        "bsn",
+        "paspoort",
+        "medisch dossier",
+        "contract",
+        "metadata",
+        "privacy"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/maskmyfile.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6792850916"
+      }
+    },
+    {
+      "key": "mochi",
+      "app_store_id": "6785004775",
+      "name": "Mochi: Schattige taken",
+      "summary": "Mochi maakt plannen zachter, leuker en overzichtelijker. Schrijf je taken op, tik op het kleine rondje wanneer je klaar bent en geniet van dat fijne gevoel dat je dag stap voor stap lichter wordt.",
+      "category": "productivity",
+      "search_terms": [
+        "herinnering",
+        "todo",
+        "dagelijks",
+        "planner",
+        "notities",
+        "gewoontes",
+        "routine",
+        "schema",
+        "boodschappen",
+        "agenda",
+        "kalender"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/mochi.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6785004775"
+      }
+    },
+    {
+      "key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "name": "Mochi DoneStamp: Laatste keer",
+      "summary": "Wanneer verschoonde je voor het laatst het bed, gaf je een plant water, belde je familie, maakte je een fotoback-up of verving je een filter?",
+      "category": "lifestyle",
+      "search_terms": [
+        "huishouden",
+        "klusjes",
+        "schoonmaken",
+        "onderhoud",
+        "terugkerend",
+        "interval",
+        "geschiedenis",
+        "widget",
+        "logboek",
+        "planten"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/mochidonestamp.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6790800323"
+      }
+    },
+    {
+      "key": "moneytag",
+      "app_store_id": "6801956402",
+      "name": "MoneyTag: Inkomsten & uitgaven",
+      "summary": "Inkomsten & uitgaven",
+      "category": "finance",
+      "search_terms": [
+        "boekhouding",
+        "zzp",
+        "winst",
+        "verlies",
+        "kasboek",
+        "omzet",
+        "klanten",
+        "bijbaan",
+        "verhuur",
+        "vereniging",
+        "potje",
+        "verbouwing"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/moneytag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6801956402"
+      }
+    },
+    {
+      "key": "onepageppt",
+      "app_store_id": "6798814385",
+      "name": "OnePage PPT: AI-dia maker",
+      "summary": "Maak van een muur tekst ÉÉN dia die mensen echt lezen.",
+      "category": "productivity",
+      "search_terms": [
+        "maken",
+        "vergadering",
+        "samenvatting",
+        "pptx",
+        "spreekbeurt",
+        "werkstuk",
+        "grafiek",
+        "verslag",
+        "schema",
+        "infographic",
+        "tabel"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/onepageppt.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6798814385"
+      }
+    },
+    {
+      "key": "photocream",
+      "app_store_id": "6781808054",
+      "name": "PhotoCream Pro: Filmfilters",
+      "summary": "PhotoCream Pro verandert je telefoon in een filmcamera: zie korrel, halatie en lichtlekken live, nog voordat je afdrukt. Meer dan 100 filmlooks, de kleuren van elke foto kopiëren, huidretouche en een complete editor voor licht, kleur en curves. Alles draait op je toestel: geen abonnement, geen advertenties en je foto's worden nooit geüpload.",
+      "category": "photo-utility",
+      "search_terms": [
+        "vintage",
+        "film",
+        "korrel",
+        "foto",
+        "bewerken",
+        "selfie",
+        "beauty",
+        "retoucheren",
+        "esthetisch",
+        "35mm",
+        "wegwerpcamera",
+        "effect",
+        "y2k"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/photocream.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6781808054"
+      }
+    },
+    {
+      "key": "picclear",
+      "app_store_id": "6780223070",
+      "name": "PicClear Pro: Foto's opruimen",
+      "summary": "Win gigabytes aan opslag terug door foto’s op te ruimen die je niet meer nodig hebt: dubbele beelden, oude screenshots, wazige opnamen en grote video’s.",
+      "category": "photo-utility",
+      "search_terms": [
+        "screenshots",
+        "opslag",
+        "vrijmaken",
+        "opschonen",
+        "geheugen vol",
+        "galerij",
+        "opruimen",
+        "wazige",
+        "vergelijkbare",
+        "fotorol"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/picclear.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6780223070"
+      }
+    },
+    {
+      "key": "qrcodehalo",
+      "app_store_id": "6806779853",
+      "name": "QR Code Halo: Scanner",
+      "summary": "QR Code Halo komt in actie zodra het een code leest. Scan met de camera of kies een foto: links openen in je browser, codes om in te loggen met een toegangssleutel en app-links gaan direct naar iOS, Wi-Fi-codes tonen de iOS-melding om verbinding te maken, en bellen, berichten, e-mail en locaties openen in hun eigen app. Contacten en afspraken openen het iOS-scherm om toe te voegen, waar jij bevestigt. Tekst wordt gekopieerd met een korte melding, en codes met javascript:, data: of file: worden nooit geopend. Wil je elke code eerst bekijken, zet dan ‘Actie uitvoeren na scannen’ uit in Instellingen; batchscan verzamelt alleen.",
+      "category": "utility",
+      "search_terms": [
+        "lezer",
+        "scannen",
+        "streepjescode",
+        "maken",
+        "generator",
+        "wifi",
+        "link",
+        "veilig",
+        "phishing",
+        "oplichting",
+        "visitekaartje",
+        "url"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/qrcodehalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6806779853"
+      }
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: AI-bladwijzers",
+      "summary": "Nu bewaren. En deze keer ook echt lezen.",
+      "category": "productivity",
+      "search_terms": [
+        "leeslijst",
+        "artikelen",
+        "opslaan",
+        "verzamelen",
+        "labels",
+        "recepten",
+        "verlanglijst",
+        "video",
+        "kijken",
+        "favorieten",
+        "posts"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/savetag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6802505528"
+      }
+    },
+    {
+      "key": "scanto",
+      "app_store_id": "6779977651",
+      "name": "ScanTo Pro: PDF & OCR",
+      "summary": "De documentscanner die alles op je apparaat doet — inclusief tekstherkenning.",
+      "category": "productivity",
+      "search_terms": [
+        "scannen",
+        "scan",
+        "bonnetje",
+        "bon",
+        "factuur",
+        "id",
+        "kaart",
+        "visitekaartje",
+        "contract",
+        "tekst",
+        "herkenning",
+        "wachtwoord",
+        "slot"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/scanto.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6779977651"
+      }
+    },
+    {
+      "key": "sereno",
+      "app_store_id": "6788236641",
+      "name": "Sereno: Slaapgeluiden",
+      "summary": "Sereno verandert je telefoon in een hoogwaardige geluidsmachine voor slaap, focus en rust. Regen, oceaan, wind, vuur en meer zijn echte veldopnames, gemengd tot meer dan 1000 unieke geluidslandschappen en willekeurig met elkaar verweven terwijl je luistert — geen vaste loop, maar een zachte mix die je de hele nacht begeleidt.",
+      "category": "sleep-sound",
+      "search_terms": [
+        "bruine",
+        "roze",
+        "inslapen",
+        "onweer",
+        "golven",
+        "slapeloosheid",
+        "baby",
+        "tinnitus",
+        "ADHD",
+        "focus",
+        "ontspanning",
+        "meditatie"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/sereno.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6788236641"
+      }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "Je screenshots, netjes geordend Vind, verwerk en ruim elk screenshot op.",
+      "category": "photo-utility",
+      "search_terms": [
+        "foto's",
+        "dubbele",
+        "opruimen",
+        "OCR",
+        "tekstherkenning",
+        "zoeken",
+        "tijdlijn",
+        "soortgelijke",
+        "privé",
+        "bonnetjes",
+        "tickets"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/shotinbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6802166527"
+      }
+    },
+    {
+      "key": "snapport",
+      "app_store_id": "6780575828",
+      "name": "Snapport: Pasfoto & ID-foto",
+      "summary": "Maak paspoort-, visum- en ID-foto’s thuis, rustig en privé. Snapport maakt alleen de foto; het document zelf wordt uitgegeven door de bevoegde instantie of organisatie. Snapport biedt sjablonen voor gangbare formaten, hulplijnen voor gezichtsuitlijning, achtergrondtools en printklare layouts. Alles wordt direct op je iPhone verwerkt.",
+      "category": "photo-utility",
+      "search_terms": [
+        "paspoortfoto",
+        "visum foto",
+        "id foto",
+        "identiteitsfoto",
+        "biometrische foto",
+        "documentfoto",
+        "cv foto",
+        "badge foto",
+        "cv"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/snapport.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "€ 6,99",
+        "storefront_url": "https://apps.apple.com/nl/app/id6780575828"
+      }
+    },
+    {
+      "key": "snapportlite",
+      "app_store_id": "6792856304",
+      "name": "Snapport Lite: Pasfoto's maken",
+      "summary": "Een foto nodig in een precies formaat? Snapport Lite snijdt je portret direct op je apparaat exact bij tot het formaat dat je kiest. Neem een nieuwe foto of kies er een uit je bibliotheek, lijn je gezicht uit met de hulplijnen, werk de achtergrond bij en exporteer.",
+      "category": "photo-utility",
+      "search_terms": [
+        "pasfoto",
+        "sollicitatiefoto",
+        "bijsnijden",
+        "afmeting",
+        "witte achtergrond",
+        "uitknippen",
+        "printen",
+        "10x15",
+        "pixels",
+        "dpi"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/snapportlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6792856304"
+      }
+    },
+    {
+      "key": "sononote",
+      "app_store_id": "6782139553",
+      "name": "Sono Note",
+      "summary": "Spreek natuurlijk. Loop weg met een tekst waar je trots op bent.",
+      "category": "productivity",
+      "search_terms": [
+        "transcriptie",
+        "dicteren",
+        "dictafoon",
+        "memo",
+        "opname",
+        "notulen",
+        "vergadering",
+        "samenvatting",
+        "college",
+        "interview",
+        "taken"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/sononote.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6782139553"
+      }
+    },
+    {
+      "key": "stayclock",
+      "app_store_id": "6814035888",
+      "name": "Stay Clock: Bureauklok",
+      "summary": "Stay Clock maakt van je iPhone of iPad een klok die altijd aan blijft en van ver leesbaar is. Grote tijd, een kalender die bij elke wijzerplaat past, en één look die meegaat naar StandBy, het toegangsscherm, widgets op het beginscherm en Apple Watch.",
+      "category": "utility",
+      "search_terms": [
+        "oled",
+        "smartwatch",
+        "widgets",
+        "opladen",
+        "nachtmodus",
+        "toegangsscherm",
+        "nachtkastje",
+        "tijdzone",
+        "24-uursnotatie",
+        "dock"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/stayclock.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6814035888"
+      }
+    },
+    {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "name": "Studydown: Urenregistratie",
+      "summary": "Maak tijd voor wat je belangrijk vindt en zie wat je erin steekt. Studydown houdt de tijd bij die je aan een project, een boek of een hobby besteedt, met je telefoon ondersteboven op tafel.",
+      "category": "productivity",
+      "search_terms": [
+        "studeren",
+        "leren",
+        "focus",
+        "timer",
+        "productiviteit",
+        "gewoontes",
+        "weekdoelen",
+        "deadline",
+        "lezen",
+        "toets",
+        "examen",
+        "uren"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/studydown.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6807335593"
+      }
+    },
+    {
+      "key": "tripplanet",
+      "app_store_id": "6787193643",
+      "name": "Trip Planet reizen kids",
+      "summary": "Maak van elke gezinsreis een klein ruimteavontuur. Trip Planet verandert lange vluchten, volgepakte auto's en hotelnachten in missies voor kinderen van 3 tot 10 jaar, met beloningen om te verzamelen en een paspoortstempel voor elke afgeronde reis. Twee ouders kunnen dezelfde reis delen. Geen advertenties en geen tracking door derden.",
+      "category": "kids",
+      "search_terms": [
+        "vakantie",
+        "vliegen",
+        "vliegtuig",
+        "auto",
+        "autorit",
+        "peuter",
+        "kleuter",
+        "beloning",
+        "paspoort",
+        "stempels",
+        "herinneringen",
+        "foto"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/tripplanet.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6787193643"
+      }
+    },
+    {
+      "key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "name": "TripBee Lite: Reisplanner",
+      "summary": "Geef je volgende reis alle aandacht. TripBee Lite is een rustige, verzorgde reisplanner rond precies één actieve reis.",
+      "category": "travel",
+      "search_terms": [
+        "reis",
+        "stedentrip",
+        "uitje",
+        "agenda",
+        "planning",
+        "vlucht",
+        "hotel",
+        "tickets",
+        "boeking",
+        "herinnering",
+        "weer",
+        "aftellen",
+        "kaart"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/tripbeelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6791299610"
+      }
+    },
+    {
+      "key": "tripbee",
+      "app_store_id": "6787754435",
+      "name": "TripBee: Reisplanner",
+      "summary": "Plan offline, synchroniseer privé via iCloud en nodig anderen uit om samen een reis te bewerken. Eenmalige aankoop, zonder advertenties of tracking.",
+      "category": "travel",
+      "search_terms": [
+        "familie",
+        "vrienden",
+        "delen",
+        "regen",
+        "tijdzone",
+        "instapkaart",
+        "koffer",
+        "inpakken",
+        "bagage",
+        "baby",
+        "kinderen",
+        "checklist"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/tripbee.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "€ 6,99",
+        "storefront_url": "https://apps.apple.com/nl/app/id6787754435"
+      }
+    },
+    {
+      "key": "unblurry",
+      "app_store_id": "6782275018",
+      "name": "Unblurry Pro: Scherpe foto",
+      "summary": "Wazige foto? Maak hem helder en scherp.",
+      "category": "photo-utility",
+      "search_terms": [
+        "verscherpen",
+        "onscherp",
+        "verbeteren",
+        "enhancer",
+        "4k",
+        "vergroten",
+        "kwaliteit",
+        "helder",
+        "resolutie",
+        "hd",
+        "restaureren"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/unblurry.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6782275018"
+      }
+    },
+    {
+      "key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "name": "UsageNow: AI-gebruik tracker",
+      "summary": "Midden in je werk tegen je AI-limiet aangelopen? UsageNow laat direct op je beginscherm zien hoeveel je van elk AI-abonnement nog over hebt en precies wanneer het wordt hersteld, en UsageNow waarschuwt je voordat het op is.",
+      "category": "productivity",
+      "search_terms": [
+        "code",
+        "dev",
+        "ontwikkelaar",
+        "usage",
+        "verbruik",
+        "quota",
+        "teller",
+        "token",
+        "widget",
+        "reset",
+        "meter",
+        "monitor",
+        "llm",
+        "aftellen",
+        "api"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/claudeusagemini.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6818607603"
+      }
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "name": "WiFi Aid: Vind netwerkfouten",
+      "summary": "Vind de waarschijnlijke oorzaak met tests van routes, DNS, TCP, TLS, timing en stabiliteit. Eenmalig vooraf betalen, zonder abonnement, reclame of tracking.",
+      "category": "photo-utility",
+      "search_terms": [
+        "latentie",
+        "jitter",
+        "ipv6",
+        "tcp",
+        "knooppunt",
+        "repeater",
+        "rapport",
+        "pdf",
+        "geschiedenis",
+        "widget",
+        "horloge",
+        "stabiliteit"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/wifiaid.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "€ 6,99",
+        "storefront_url": "https://apps.apple.com/nl/app/id6790467886"
+      }
+    },
+    {
+      "key": "wifiaidlite",
+      "app_store_id": "6793414462",
+      "name": "WiFi Aid Lite",
+      "summary": "Vind het echte probleem. Zonder aankoop kun je in totaal één volledige controle doen, met een tool naar keuze. Een optionele eenmalige in-app-aankoop ontgrendelt onbeperkte controles en de voor-en-na-vergelijking na je herstel—geen abonnement, advertenties of tracking.",
+      "category": "utility",
+      "search_terms": [
+        "netwerk",
+        "verbinding",
+        "traag",
+        "storing",
+        "ping",
+        "test",
+        "probleem",
+        "oplossen",
+        "website",
+        "plat",
+        "hotspot",
+        "provider",
+        "modem"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/wifiaidlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6793414462"
+      }
+    },
+    {
+      "key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "name": "Wordmate Lite: Woordenschat",
+      "summary": "Vijf woorden. Eén minuut. Een pad dat je echt ziet liggen.",
+      "category": "education",
+      "search_terms": [
+        "talen",
+        "leren",
+        "engels",
+        "duits",
+        "frans",
+        "spaans",
+        "overhoren",
+        "stampen",
+        "gewoonte",
+        "beginners",
+        "minuut",
+        "offline",
+        "dagelijks"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/wordmatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/nl/app/id6797601720"
+      }
+    },
+    {
+      "key": "wordmate",
+      "app_store_id": "6789917808",
+      "name": "Wordmate: Woordenschat",
+      "summary": "Maak van korte momenten een kans om je woordenschat uit te breiden. Wordmate bundelt 44 talen in 14 praktische onderwerpen en drie niveaus, met een voorbeeldzin bij elk Engels woord en uitspraak om te beluisteren. Oefen vanuit de interactieve widget op je beginscherm of op je horloge. Je betaalt één keer: geen abonnement, geen in-appaankopen.",
+      "category": "education",
+      "search_terms": [
+        "woorden",
+        "italiaans",
+        "japans",
+        "koreaans",
+        "chinees",
+        "turks",
+        "arabisch",
+        "voorbeeldzinnen",
+        "uitspraak",
+        "niveaus",
+        "gevorderd"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/wordmate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "€ 9,99",
+        "storefront_url": "https://apps.apple.com/nl/app/id6789917808"
+      }
+    },
+    {
+      "key": "zipbox",
+      "app_store_id": "6806776579",
+      "name": "Zipbox: RAR, ZIP en 7z openen",
+      "summary": "Zipbox is een betaalde app uit de App Store. Eén aankoop geeft alle functies, zonder in-app aankopen, abonnementen of reclame. 13 formaten worden lokaal verwerkt.",
+      "category": "utility",
+      "search_terms": [
+        "uitpakker",
+        "archief",
+        "wachtwoord",
+        "versleutelen",
+        "bestandsbeheer",
+        "inpakken",
+        "preview",
+        "unrar",
+        "tar",
+        "gz",
+        "iso",
+        "map",
+        "rar5"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/nl/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/nl-NL/zipbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "€ 5,99",
+        "storefront_url": "https://apps.apple.com/nl/app/id6806776579"
+      }
+    }
+  ]
+}

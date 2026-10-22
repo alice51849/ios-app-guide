@@ -1,0 +1,27 @@
+---
+title: "najboljši enkrat plačljiv filmski urejevalnik fotografij za popotniške ustvarjalce na iPhonu"
+lang: "sl-SI"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/photocream/decision/l/sl-SI/index.html"
+modified: "2026-10-21"
+app_store_id: "6781808054"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# najboljši enkrat plačljiv filmski urejevalnik fotografij za popotniške ustvarjalce na iPhonu
+
+Popotniški ustvarjalci potrebujejo ponovljiv filmski videz, ki doda zrnatost, halacijo in barvni značaj, ne da bi vsako destinacijo spremenil v enak filter
+
+- Fotografija in pripomočki
+- Brezplačen začetek
+- Brez računa
+- Brez oglasov
+- Zasebno / na napravi
+- App Store · Brezplačno
+
+[Pridobite PhotoCream v trgovini App Store →](https://apps.apple.com/si/app/id6781808054?pt=118326163&ct=geo_pick&mt=8)
+
+[Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html)
+
+> Vodnik je napisal razvijalec aplikacije Lumi Studio. Imena aplikacij so blagovne znamke svojih lastnikov in so navedena zgolj za identifikacijo. Pri odločitvah glede dokumentov, zdravja, šole in produktivnosti tam, kjer je to pomembno, preverite uradne zahteve.

@@ -1,0 +1,2056 @@
+#!/usr/bin/env python3
+"""Generate full-roster evidence and a 50-locale, verified-only local finder."""
+
+from __future__ import annotations
+
+import html
+import json
+import market_availability as market
+import market_surface_policy
+import os
+from pathlib import Path
+import re
+import sys
+from urllib.parse import urlencode, urlsplit
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+sys.path.insert(0, str(ROOT / "social"))
+
+import answer_portfolio  # noqa: E402
+import appstore_live  # noqa: E402
+import aso_evidence_contract as contract  # noqa: E402
+from app_store_storefronts import (  # noqa: E402
+    campaign_app_store_url,
+    required_campaign_app_store_url,
+)
+from appstore_live import (  # noqa: E402
+    LOOKUP_COUNTRIES,
+    STATE_FILE,
+    live_app_keys,
+)
+import gen_app_catalog  # noqa: E402
+from gen_calculator import write_tools_sitemap  # noqa: E402
+from gen_feed import feed_discovery_links  # noqa: E402
+import gen_mobile_app_identity  # noqa: E402
+from official_locales import OFFICIAL_LOCALES  # noqa: E402
+import publisher_intent_catalog  # noqa: E402
+import portfolio_offer_catalog  # noqa: E402
+import queries  # noqa: E402
+from videogen.registry import (  # noqa: E402
+    APPS,
+    APPSTORE,
+    VALID_PURCHASE_MODELS,
+    appstore_url,
+)
+from site_config import PUBLIC_SITE  # noqa: E402
+
+PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
+SITE = os.environ.get(
+    "GEO_SITE", PUBLIC_SITE
+).rstrip("/")
+SLUG = "private-pay-once-iphone-app-finder"
+DATA_SLUG = "verified-ios-app-finder-catalog"
+CATALOG_NAME = "Lumi Studio Publisher-Verified iOS App Catalogue"
+LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
+CONTENT_DATE = "2026-07-20"
+APP_CATALOG_API = f"{SITE}/api/v1/ios-app-catalog"
+I18N_PATH = HERE / "portfolio_app_finder_i18n.json"
+RTL_LOCALES = frozenset({"ar-SA", "he", "ur-PK"})
+PWA_ICON_SOURCE = HERE / "assets" / "app-finder"
+PWA_ICON_FILES = (
+    "app-finder-icon.svg",
+    "app-finder-icon-180.png",
+    "app-finder-icon-192.png",
+    "app-finder-icon-512.png",
+)
+PWA_THEME_COLOR = "#126b57"
+PWA_BACKGROUND_COLOR = "#f8fbf9"
+
+UI = {
+    "en": {
+        "home": f"{SITE}/index.html",
+        "tools": f"{SITE}/tools/",
+        "switch": "繁體中文",
+        "eyebrow": "Verified live apps · filters stay in your browser",
+        "verified": "{count} verified live apps",
+        "alphabetical": "Alphabetical · never a ranking",
+        "private": "No account, storage or analytics",
+        "search": "What do you need to do?",
+        "search_placeholder": "Try passport photo, kids math, PDF scan or sleep",
+        "category": "Category",
+        "purchase": "Purchase model",
+        "privacy": "Privacy or offline fact",
+        "device": "Apple device or feature",
+        "all_categories": "Every category",
+        "all_purchase": "Every current model",
+        "one_time": "Any one-time option",
+        "paid_upfront": "Paid download",
+        "free_with_lifetime_unlock": "Free to start · one-time unlock",
+        "free": "Free",
+        "flexible": "Flexible · check listing",
+        "neutral": "Check current listing",
+        "all_privacy": "Any published privacy fact",
+        "offline": "Offline",
+        "no_account": "No account",
+        "no_ads": "No ads",
+        "no_tracking": "No tracking",
+        "private_or_on_device": "Private or on-device",
+        "all_devices": "Any iPhone app",
+        "widget": "Home Screen widget",
+        "apple_watch": "Apple Watch",
+        "clear": "Clear all filters",
+        "count": "{shown} of {total} apps match",
+        "empty": "No exact match. Clear one filter to broaden the verified results.",
+        "why": "Why it may fit",
+        "store": "View on the App Store",
+        "category_labels": gen_app_catalog.L10N["en"]["categories"],
+        "purchase_labels": {
+            "paid_upfront": "Paid download",
+            "free_with_lifetime_unlock": "Free to start · one-time unlock",
+            "free": "Free",
+            "flexible": "Flexible · check listing",
+            "neutral": "Check current listing",
+        },
+        "capability_labels": {
+            "offline": "Offline",
+            "no_account": "No account",
+            "no_ads": "No ads",
+            "no_tracking": "No tracking",
+            "private_or_on_device": "Private / on-device",
+            "widget": "Widget",
+            "apple_watch": "Apple Watch",
+        },
+        "data_title": "Agent-readable verified catalogue",
+        "data_text": (
+            "Download the same alphabetical records as JSON with a JSON Schema. "
+            "The catalogue contains no invented price, rank, rating or review."
+        ),
+        "download_json": "JSON catalogue",
+        "download_intents": "50-locale buyer intents",
+        "download_schema": "JSON Schema",
+        "download_openapi": "50-locale OpenAPI",
+        "copy": "Copy finder link",
+        "share": "Share finder",
+        "copied": "Finder link copied.",
+        "copy_failed": "Copy is unavailable. Copy the URL from the address bar.",
+        "share_cancelled": "Sharing was cancelled.",
+        "sources_title": "Specifications and App Store link policy",
+        "sources_text": (
+            "App availability is checked against Apple's public lookup service in "
+            "the US, Taiwan, Japan and UK. App links stay clean unless a real "
+            "Apple provider token enables complete campaign attribution. "
+            "The machine graph uses ItemList and MobileApplication without fake offers or ratings."
+        ),
+        "apple_source": "Apple campaign-link guidance",
+        "google_source": "Google software-app structured data",
+        "schema_source": "Schema.org ItemList",
+        "webmcp_source": "Chrome WebMCP imperative API",
+        "webmcp_description": (
+            "Filter the verified live iOS app portfolio by task and published "
+            "facts. Return alphabetical matches with truthful fit text and one "
+            "clean direct App Store URL per result; never "
+            "treat the order as a ranking."
+        ),
+        "webmcp_query_description": (
+            "Plain-language task or feature, such as passport photo, kids math, "
+            "offline scan, travel plan or sleep."
+        ),
+        "license_text": (
+            "CC BY 4.0 covers this original catalogue compilation, not Apple or app trademarks."
+        ),
+        "faq_title": "Questions",
+        "index_title": "Private & Pay-Once iPhone App Finder",
+        "index_description": (
+            "Filter every verified live app by task, purchase model, privacy fact "
+            "and Apple device or feature."
+        ),
+        "footer": (
+            "Free client-side finder. Results are alphabetical and factual, not a "
+            "ranking, endorsement score or guarantee."
+        ),
+    },
+    "zh-Hant": {
+        "home": f"{SITE}/zh-Hant/index.html",
+        "tools": f"{SITE}/zh-Hant/tools/",
+        "switch": "English",
+        "eyebrow": "已驗證上架 App · 篩選只在瀏覽器內執行",
+        "verified": "{count} 款已驗證上架 App",
+        "alphabetical": "依名稱排序 · 絕非排行榜",
+        "private": "免帳號、不儲存、無分析",
+        "search": "你想完成什麼？",
+        "search_placeholder": "輸入證件照、兒童數學、PDF 掃描或睡眠",
+        "category": "類別",
+        "purchase": "購買模式",
+        "privacy": "隱私或離線事實",
+        "device": "Apple 裝置或功能",
+        "all_categories": "全部類別",
+        "all_purchase": "全部目前模式",
+        "one_time": "任何一次性付費選項",
+        "paid_upfront": "付費下載",
+        "free_with_lifetime_unlock": "免費開始 · 一次購買解鎖",
+        "free": "免費",
+        "flexible": "彈性模式 · 查看上架頁",
+        "neutral": "查看目前上架頁",
+        "all_privacy": "任何已公開隱私事實",
+        "offline": "離線使用",
+        "no_account": "免帳號",
+        "no_ads": "無廣告",
+        "no_tracking": "無追蹤",
+        "private_or_on_device": "隱私優先或裝置端",
+        "all_devices": "任何 iPhone App",
+        "widget": "主畫面小工具",
+        "apple_watch": "Apple Watch",
+        "clear": "清除全部篩選",
+        "count": "符合 {shown}／{total} 款 App",
+        "empty": "沒有完全符合的項目；清除一項篩選即可放寬已驗證結果。",
+        "why": "可能適合的原因",
+        "store": "前往 App Store 查看",
+        "category_labels": gen_app_catalog.L10N["zh-Hant"]["categories"],
+        "purchase_labels": {
+            "paid_upfront": "付費下載",
+            "free_with_lifetime_unlock": "免費開始 · 一次購買解鎖",
+            "free": "免費",
+            "flexible": "彈性模式 · 查看上架頁",
+            "neutral": "查看目前上架頁",
+        },
+        "capability_labels": {
+            "offline": "離線使用",
+            "no_account": "免帳號",
+            "no_ads": "無廣告",
+            "no_tracking": "無追蹤",
+            "private_or_on_device": "隱私優先／裝置端",
+            "widget": "主畫面小工具",
+            "apple_watch": "Apple Watch",
+        },
+        "data_title": "Agent 可讀的已驗證目錄",
+        "data_text": "可下載相同的依名稱排序 JSON 資料與 JSON Schema；目錄不包含捏造的價格、名次、評分或評論。",
+        "download_json": "JSON 目錄",
+        "download_intents": "50 語購買意圖資料",
+        "download_schema": "JSON Schema",
+        "download_openapi": "50 語系 OpenAPI",
+        "copy": "複製篩選器連結",
+        "share": "分享篩選器",
+        "copied": "已複製篩選器連結。",
+        "copy_failed": "無法自動複製，請從網址列複製本頁連結。",
+        "share_cancelled": "已取消分享。",
+        "sources_title": "規格與 App Store 連結政策",
+        "sources_text": (
+            "App 供應狀態會透過 Apple 公開 lookup service 核對美國、台灣、日本與英國；沒有真實 Apple provider token 時，App 連結保持乾淨直達，不附無效活動參數。機器圖譜使用 ItemList 與 MobileApplication，不加入虛假 offers 或評分。"
+        ),
+        "apple_source": "Apple campaign link 指南",
+        "google_source": "Google 軟體 App 結構化資料",
+        "schema_source": "Schema.org ItemList",
+        "webmcp_source": "Chrome WebMCP imperative API",
+        "webmcp_description": (
+            "依任務與公開事實篩選已驗證上架的 iOS App；回傳依名稱排序的符合項目、"
+            "真實適用原因及每筆一個乾淨的 App Store 直連，不得把順序視為排名。"
+        ),
+        "webmcp_query_description": (
+            "以白話描述任務或功能，例如證件照、兒童數學、離線掃描、旅遊規劃或睡眠。"
+        ),
+        "license_text": "CC BY 4.0 僅涵蓋這份原創目錄彙編，不涵蓋 Apple 或各 App 商標。",
+        "faq_title": "常見問題",
+        "index_title": "隱私優先、一次買斷 iPhone App 篩選器",
+        "index_description": "依任務、購買模式、隱私事實與 Apple 裝置或功能，篩選每款已驗證上架 App。",
+        "footer": "免費瀏覽器端篩選器。結果依事實與名稱排序，不是排行、推薦分數或成果保證。",
+    },
+}
+
+
+def _localized_tree(value: object, mapping: dict[str, str]) -> object:
+    if isinstance(value, str):
+        translated = mapping.get(value)
+        if not isinstance(translated, str) or not translated.strip():
+            raise ValueError(f"Missing portfolio finder translation: {value!r}")
+        return translated
+    if isinstance(value, list):
+        return [_localized_tree(item, mapping) for item in value]
+    if isinstance(value, dict):
+        return {
+            key: _localized_tree(item, mapping)
+            for key, item in value.items()
+        }
+    raise TypeError(f"Unsupported portfolio finder i18n value: {type(value)}")
+
+
+def load_i18n(path: Path = I18N_PATH) -> tuple[
+    dict[str, dict[str, object]],
+    dict[str, dict[str, object]],
+]:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if payload.get("schema_version") != 1 or payload.get("source_locale") != "en":
+        raise ValueError(f"Invalid portfolio finder i18n metadata: {path}")
+    source = payload.get("source")
+    localizations = payload.get("localizations")
+    if not isinstance(source, dict) or not isinstance(localizations, dict):
+        raise ValueError(f"Invalid portfolio finder i18n structure: {path}")
+    if set(localizations) != set(OFFICIAL_LOCALES):
+        raise ValueError(
+            "Portfolio finder i18n must cover the official 50 locales: "
+            f"missing={sorted(set(OFFICIAL_LOCALES) - set(localizations))}, "
+            f"extra={sorted(set(localizations) - set(OFFICIAL_LOCALES))}"
+        )
+
+    source_ui = source.get("ui")
+    source_answer = source.get("answer")
+    if not isinstance(source_ui, dict) or not isinstance(source_answer, dict):
+        raise ValueError(f"Invalid portfolio finder source copy: {path}")
+
+    ui: dict[str, dict[str, object]] = {"en": dict(source_ui)}
+    answers: dict[str, dict[str, object]] = {"en": dict(source_answer)}
+    for locale in OFFICIAL_LOCALES:
+        mapping = localizations.get(locale)
+        if not isinstance(mapping, dict):
+            raise ValueError(f"Invalid portfolio finder locale mapping: {locale}")
+        ui[locale] = _localized_tree(source_ui, mapping)
+        answers[locale] = _localized_tree(source_answer, mapping)
+
+    for locale, copy in ui.items():
+        prefix = "" if locale == "en" else f"{locale}/"
+        copy["home"] = f"{SITE}/{prefix}index.html"
+        copy["tools"] = f"{SITE}/tools/"
+        copy["switch"] = (
+            "繁體中文" if locale == "en" else copy["switch_english"]
+        )
+        answers[locale]["html_lang"] = locale
+    return ui, answers
+
+
+UI, FINDER_COPY = load_i18n()
+
+
+def canonical(locale: str) -> str:
+    if locale != "en" and locale not in OFFICIAL_LOCALES:
+        raise ValueError(f"Unsupported portfolio finder locale: {locale}")
+    prefix = "" if locale == "en" else f"{locale}/"
+    return f"{SITE}/{prefix}tools/{SLUG}.html"
+
+
+def install_decision_url(app_key: str, locale: str) -> str:
+    decision_locale = "en-US" if locale == "en" else locale
+    if decision_locale not in OFFICIAL_LOCALES:
+        raise ValueError(f"Unsupported portfolio finder locale: {locale}")
+    return (
+        f"{SITE}/apps/{app_key}/decision/l/"
+        f"{decision_locale}/index.html"
+    )
+
+
+def hreflang_links() -> str:
+    links = [
+        f'<link rel="alternate" hreflang="en" href="{canonical("en")}">'
+    ]
+    links.extend(
+        f'<link rel="alternate" hreflang="{locale}" '
+        f'href="{canonical(locale)}">'
+        for locale in OFFICIAL_LOCALES
+    )
+    links.append(
+        f'<link rel="alternate" hreflang="x-default" '
+        f'href="{canonical("en")}">'
+    )
+    return "\n".join(links)
+
+
+def opensearch_relative(locale: str) -> Path:
+    relative = Path("tools") / f"{SLUG}.opensearch.xml"
+    return relative if locale == "en" else Path(locale) / relative
+
+
+def opensearch_url(locale: str) -> str:
+    return f"{SITE}/{opensearch_relative(locale).as_posix()}"
+
+
+def opensearch_document(locale: str) -> str:
+    answer = FINDER_COPY[locale]
+    template = f"{canonical(locale)}?q={{searchTerms}}"
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">\n'
+        "  <ShortName>Lumi App Finder</ShortName>\n"
+        f"  <Description>{html.escape(answer['description'])}</Description>\n"
+        f'  <Url type="text/html" template="{html.escape(template)}"/>\n'
+        f"  <Language>{html.escape(answer['html_lang'])}</Language>\n"
+        "  <InputEncoding>UTF-8</InputEncoding>\n"
+        "  <OutputEncoding>UTF-8</OutputEncoding>\n"
+        "</OpenSearchDescription>\n"
+    )
+
+
+def manifest_relative(locale: str) -> Path:
+    relative = Path("tools") / f"{SLUG}.webmanifest"
+    return relative if locale == "en" else Path(locale) / relative
+
+
+def manifest_url(locale: str) -> str:
+    return f"{SITE}/{manifest_relative(locale).as_posix()}"
+
+
+def _site_scope() -> str:
+    site_path = urlsplit(SITE).path.rstrip("/")
+    return f"{site_path}/" if site_path else "/"
+
+
+def _pwa_asset_url(filename: str) -> str:
+    return f"{SITE}/assets/{filename}"
+
+
+def manifest_document(locale: str) -> str:
+    answer = FINDER_COPY[locale]
+    copy = UI[locale]
+    page_path = urlsplit(canonical(locale)).path
+    icon_192 = _pwa_asset_url("app-finder-icon-192.png")
+    one_time_name = copy["one_time"]
+    shortcuts = [
+        {
+            "name": one_time_name,
+            "short_name": one_time_name,
+            "url": f"{page_path}?{urlencode({'purchase': 'one_time'})}",
+            "icons": [
+                {
+                    "src": icon_192,
+                    "sizes": "192x192",
+                    "type": "image/png",
+                }
+            ],
+        }
+    ]
+    for category in (
+        "kids",
+        "productivity",
+        "photo-utility",
+        "travel",
+        "sleep-sound",
+    ):
+        name = copy["category_labels"][category]
+        shortcuts.append(
+            {
+                "name": name,
+                "short_name": name,
+                "url": f"{page_path}?{urlencode({'category': category})}",
+                "icons": [
+                    {
+                        "src": icon_192,
+                        "sizes": "192x192",
+                        "type": "image/png",
+                    }
+                ],
+            }
+        )
+    payload = {
+        "id": page_path,
+        "name": answer["title"],
+        "short_name": "Lumi Finder",
+        "description": answer["description"],
+        "lang": answer["html_lang"],
+        "dir": "rtl" if locale in RTL_LOCALES else "ltr",
+        "start_url": page_path,
+        "scope": _site_scope(),
+        "display": "standalone",
+        "background_color": PWA_BACKGROUND_COLOR,
+        "theme_color": PWA_THEME_COLOR,
+        "categories": ["education", "productivity", "utilities"],
+        "icons": [
+            {
+                "src": icon_192,
+                "sizes": "192x192",
+                "type": "image/png",
+                "purpose": "any",
+            },
+            {
+                "src": _pwa_asset_url("app-finder-icon-512.png"),
+                "sizes": "512x512",
+                "type": "image/png",
+                "purpose": "any maskable",
+            },
+        ],
+        "shortcuts": shortcuts,
+        "share_target": {
+            "action": page_path,
+            "method": "GET",
+            "enctype": "application/x-www-form-urlencoded",
+            "params": {
+                "title": "shared_title",
+                "text": "shared_text",
+                "url": "shared_url",
+            },
+        },
+        "prefer_related_applications": False,
+    }
+    return json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+
+
+def webmcp_description(locale: str) -> str:
+    copy = UI[locale]
+    return f"{copy['index_description']} {copy['footer']}"
+
+
+def data_url(suffix: str) -> str:
+    return f"{SITE}/data/{DATA_SLUG}{suffix}"
+
+
+def _fact_text(app: dict[str, object]) -> str:
+    values = [
+        app.get("sub", ""),
+        app.get("tag", ""),
+        *app.get("cta_bullets", []),
+        *app.get("keywords", []),
+    ]
+    return " ".join(str(value) for value in values if value).casefold()
+
+
+_NO_ADS_CLAIM = re.compile(r"(?<![\w-])no ads\b")
+
+
+def _claim_text(app: dict[str, object]) -> str:
+    """Claims only (sub, tag, bullets); search keywords are not claims."""
+    values = [app.get("sub", ""), app.get("tag", ""), *app.get("cta_bullets", [])]
+    return " ".join(str(value) for value in values if value).casefold()
+
+
+def explicit_capabilities(app: dict[str, object]) -> dict[str, bool]:
+    facts = _fact_text(app)
+    return {
+        "offline": "offline" in facts,
+        "no_account": "no account" in facts,
+        # Only a plain "no ads" claim counts: "no third-party ads" is a
+        # narrower store promise and must not become a generic No ads chip,
+        # and a search keyword such as "scanner no ads" is not a claim.
+        "no_ads": bool(_NO_ADS_CLAIM.search(_claim_text(app))),
+        "no_tracking": "no tracking" in facts,
+        "private_or_on_device": (
+            "private" in facts or "on-device" in facts
+        ),
+        "widget": (
+            "home screen widget" in facts or "widget + watch" in facts
+        ),
+        "apple_watch": (
+            "apple watch" in facts or "widget + watch" in facts
+        ),
+    }
+
+
+def _campaign_url(key: str) -> str:
+    return campaign_app_store_url(appstore_url(key), finder_campaign_token("en"))
+
+
+def finder_campaign_token(locale: str) -> str:
+    from gen_store_attribution import campaign_token as surface_campaign_token
+    from official_locales import OFFICIAL_LOCALES
+
+    if locale not in ("en", *OFFICIAL_LOCALES):
+        raise ValueError(f"Invalid localized finder campaign locale: {locale}")
+    return surface_campaign_token(f"{locale}/tools/ios-app-finder.html")
+
+
+def localized_app_store_url(record: dict[str, object], locale: str) -> str | None:
+    if locale == "en":
+        return _campaign_url(str(record["key"]))
+    intent = localized_intent(record, locale)
+    if not market.validate_record({**intent, "locale": locale}, url_fields=("app_store_url",)):
+        return None
+    return campaign_app_store_url(
+        str(intent["app_store_url"]),
+        finder_campaign_token(locale),
+    )
+
+
+SUMMARY_MAX_CHARS = 145
+_SENTENCE_ENDINGS = (".", "!", "?", "…", '"', "”", "'")
+_SENTENCE_BREAK = re.compile(r'(?<=[.!?…])\s+(?=[A-Z0-9"“‘(])')
+
+
+def _single_line(value: object) -> str:
+    return " ".join(str(value or "").split())
+
+
+def _lead_sentences(text: str, limit: int = SUMMARY_MAX_CHARS) -> str:
+    """Leading complete sentences of ``text``; never a mid-sentence cut."""
+    lead = ""
+    for sentence in _SENTENCE_BREAK.split(_single_line(text)):
+        if not sentence.endswith(_SENTENCE_ENDINGS):
+            break
+        candidate = f"{lead} {sentence}".strip()
+        if lead and len(candidate) > limit:
+            break
+        lead = candidate
+    return lead
+
+
+def store_copy_summary(key: str, locale: str, page_summary: str = "") -> str:
+    """Summary taken from the App Store description, not internal copy.
+
+    Registry ``sub``/``tag`` are video and campaign lines. They are reused
+    only when ``sub`` is verbatim in the stored App Store description;
+    otherwise the description's leading complete sentences are used.
+    """
+    import build_pages_i18n
+
+    try:
+        description = str(
+            build_pages_i18n.external_localized_values(key, locale)
+            .get("description") or ""
+        )
+    except ValueError:
+        description = ""
+    sub = _single_line(APPS[key].get("sub"))
+    if sub and sub in _single_line(description):
+        return sub
+    for paragraph in re.split(r"\n\s*\n", description):
+        lead = _lead_sentences(paragraph)
+        if len(lead) >= 20:
+            return lead
+    lead = _lead_sentences(page_summary)
+    if len(lead) >= 20:
+        return lead
+    raise ValueError(f"Missing store-copy finder summary: {key}/{locale}")
+
+
+def localized_summary(key: str, locale: str, pages: Path) -> str:
+    summary = gen_app_catalog.localized_summary(key, locale, pages)
+    if locale != "en-US":
+        return summary
+    truncated = (
+        len(summary) >= SUMMARY_MAX_CHARS
+        and not summary.endswith(_SENTENCE_ENDINGS)
+    )
+    internal = _single_line(summary) in {
+        _single_line(APPS[key].get(field)) for field in ("sub", "tag")
+    } - {""}
+    if truncated or internal:
+        return store_copy_summary(key, locale, summary if truncated else "")
+    return summary
+
+
+def catalog_records(
+    live_keys: set[str] | list[str],
+    pages: Path = PAGES,
+    *,
+    allow_unknown_summaries: bool = False,
+) -> list[dict[str, object]]:
+    live = set(live_keys)
+    if not live:
+        raise ValueError("Portfolio finder requires at least one verified live app")
+    unknown = live - set(APPS)
+    if unknown:
+        raise ValueError(f"Unknown verified app keys: {sorted(unknown)}")
+    records = []
+    for key in live:
+        app = APPS[key]
+        app_id = APPSTORE.get(key)
+        if not app_id:
+            raise ValueError(f"Verified app is missing an App Store ID: {key}")
+        model = app.get("purchase_model", "neutral")
+        if model not in VALID_PURCHASE_MODELS:
+            raise ValueError(f"Invalid purchase model for {key}: {model}")
+        bullets = [
+            str(value).strip()
+            for value in app.get("cta_bullets", [])
+            if str(value).strip()
+        ]
+        keywords = [
+            str(value).strip()
+            for value in app.get("keywords", [])
+            if str(value).strip()
+        ]
+        category = str(app.get("category", "other"))
+        summaries = {}
+        for label, locale in (("en", "en-US"), ("zh-Hant", "zh-Hant")):
+            try:
+                summaries[label] = localized_summary(key, locale, pages)
+            except ValueError:
+                if not allow_unknown_summaries:
+                    raise
+                summaries[label] = None
+        records.append(
+            {
+                "key": key,
+                "app_store_id": str(app_id),
+                "name": str(app["name"]),
+                "category": category,
+                "category_labels": {
+                    "en": UI["en"]["category_labels"].get(
+                        category, UI["en"]["category_labels"]["other"]
+                    ),
+                    "zh-Hant": UI["zh-Hant"]["category_labels"].get(
+                        category,
+                        UI["zh-Hant"]["category_labels"]["other"],
+                    ),
+                },
+                "summaries": summaries,
+                "purchase_model": model,
+                "purchase_labels": {
+                    "en": UI["en"]["purchase_labels"][model],
+                    "zh-Hant": UI["zh-Hant"]["purchase_labels"][model],
+                },
+                "one_time_option": model
+                in {"paid_upfront", "free_with_lifetime_unlock"},
+                "features": bullets,
+                "keywords": keywords,
+                "capabilities": explicit_capabilities(app),
+                "canonical_app_store_url": (
+                    gen_mobile_app_identity.canonical_store_url(str(app_id))
+                ),
+                "verified_live": True,
+            }
+        )
+    return sorted(
+        records,
+        key=lambda record: (
+            str(record["name"]).casefold(),
+            str(record["key"]),
+        ),
+    )
+
+
+def localized_page_records(
+    records: list[dict[str, object]],
+    pages: Path,
+) -> list[dict[str, object]]:
+    path = (
+        pages
+        / "data"
+        / f"{publisher_intent_catalog.SLUG}.json"
+    )
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    intent_records = payload.get("records")
+    if not isinstance(intent_records, list):
+        raise ValueError(f"Invalid publisher intent records: {path}")
+
+    expected_keys = {str(record["key"]) for record in records}
+    by_pair: dict[tuple[str, str], dict[str, object]] = {}
+    for intent in intent_records:
+        if not isinstance(intent, dict):
+            raise ValueError(f"Invalid publisher intent record: {path}")
+        key = str(intent.get("app_key", ""))
+        locale = str(intent.get("locale", ""))
+        if key not in expected_keys:
+            continue
+        pair = (locale, key)
+        if pair in by_pair:
+            raise ValueError(f"Duplicate publisher intent pair: {pair}")
+        if locale not in OFFICIAL_LOCALES:
+            raise ValueError(f"Unexpected publisher intent locale: {locale}")
+        if (
+            not intent.get("verified_live")
+            or intent.get("is_ranking")
+            or intent.get("measured_search_volume")
+        ):
+            raise ValueError(f"Unsafe publisher intent record: {pair}")
+        by_pair[pair] = intent
+
+    expected_pairs = {
+        (locale, key)
+        for locale in OFFICIAL_LOCALES
+        for key in expected_keys
+    }
+    if set(by_pair) != expected_pairs:
+        raise ValueError(
+            "Incomplete portfolio finder intent coverage: "
+            f"missing={len(expected_pairs - set(by_pair))}, "
+            f"extra={len(set(by_pair) - expected_pairs)}"
+        )
+
+    enriched = []
+    for record in records:
+        key = str(record["key"])
+        localized = {
+            locale: by_pair[(locale, key)]
+            for locale in OFFICIAL_LOCALES
+        }
+        app_id = str(record["app_store_id"])
+        if any(
+            str(intent.get("app_store_id")) != app_id
+            or str(intent.get("purchase_model")) != record["purchase_model"]
+            or bool(intent.get("one_time_option"))
+            != bool(record["one_time_option"])
+            for intent in localized.values()
+        ):
+            raise ValueError(f"Localized finder facts differ for {key}")
+        enriched.append({**record, "localized_intents": localized})
+    return enriched
+
+
+def localized_intent(
+    record: dict[str, object],
+    locale: str,
+) -> dict[str, object]:
+    summaries = record.get("summaries")
+    if locale == "en" or (
+        not isinstance(record.get("localized_intents"), dict)
+        and isinstance(summaries, dict)
+        and locale in summaries
+    ):
+        guide_locale = "en-US" if locale == "en" else locale
+        return {
+            "publisher_query": record["name"],
+            "decision_context": summaries[locale],
+            "canonical_guide_url": (
+                f"{SITE}/{guide_locale}/{record['key']}.html"
+            ),
+            "app_store_url": None if market.is_unavailable(locale, str(record["app_store_id"])) else _campaign_url(str(record["key"])),
+            "app_store_cta_label": UI[locale]["store"],
+            **market.record_fields(locale, str(record["app_store_id"])),
+        }
+    localized = record.get("localized_intents")
+    if not isinstance(localized, dict) or locale not in localized:
+        raise ValueError(
+            f"Missing localized finder intent: {locale}/{record['key']}"
+        )
+    intent = localized[locale]
+    if not isinstance(intent, dict):
+        raise ValueError(
+            f"Invalid localized finder intent: {locale}/{record['key']}"
+        )
+    return intent
+
+
+def verify_availability(*, roster=None, lookup=None, clock=None) -> dict:
+    """GET-only observations; a cached live-key set is not a fresh receipt."""
+    roster = contract.live_roster() if roster is None else roster
+    lookup = lookup or appstore_live._lookup_country
+    clock = clock or contract.utc_now
+    wanted = {row["track_id"] for row in roster.values()}
+    live_ids = set()
+    verified_by_id = {}
+    observations = []
+    for country in LOOKUP_COUNTRIES:
+        try:
+            observed_ids = {str(value) for value in lookup(wanted, country)}
+        except (OSError, RuntimeError, TypeError, ValueError):
+            continue
+        live_ids.update(observed_ids & wanted)
+        observed_at = clock()
+        observations.append(observed_at)
+        for app_id in observed_ids & wanted:
+            verified_by_id.setdefault(app_id, observed_at.isoformat())
+    return {
+        "source": "Apple iTunes Lookup API",
+        "checked_at": clock().isoformat(),
+        "verified_at": min(observations).isoformat() if observations else None,
+        "live_ids": sorted(live_ids),
+        "verified_at_by_id": verified_by_id,
+    }
+
+
+def dataset_payload(
+    records: list[dict[str, object]], *, availability=None, roster=None, now=None, pages=PAGES,
+) -> dict[str, object]:
+    roster = contract.live_roster() if roster is None else roster
+    now = now or contract.utc_now()
+    indexed = {}
+    for record in records:
+        key = record.get("key")
+        if key not in roster or key in indexed:
+            raise contract.ContractError("finder_producer_roster_invalid")
+        indexed[key] = dict(record)
+    missing = set(roster) - set(indexed)
+    if missing:
+        indexed.update({row["key"]: row for row in catalog_records(missing, pages, allow_unknown_summaries=True)})
+    availability = availability or {
+        "source": "Apple iTunes Lookup API", "checked_at": now.isoformat(),
+        "verified_at": None, "live_ids": [], "verified_at_by_id": {},
+    }
+    if availability.get("source") != "Apple iTunes Lookup API":
+        raise contract.ContractError("finder_verification_source_invalid")
+    generated = contract.timestamp(availability.get("checked_at"))
+    verified = availability.get("verified_at")
+    verified_time = contract.timestamp(verified) if verified is not None else None
+    if generated > now or verified_time is not None and verified_time > generated:
+        raise contract.ContractError("future_availability_evidence")
+    live_ids = set(availability.get("live_ids") or [])
+    verified_by_id = availability.get("verified_at_by_id") or {}
+    output = []
+    for key, expected in roster.items():
+        record = indexed[key]
+        identity_matches = record.get("app_store_id") == expected["track_id"]
+        app_verified = verified_by_id.get(expected["track_id"])
+        known = identity_matches and expected["track_id"] in live_ids and verified_time is not None and app_verified is not None
+        if known and contract.timestamp(app_verified) > generated:
+            raise contract.ContractError("future_app_availability")
+        if not identity_matches:
+            record = catalog_records({key}, pages, allow_unknown_summaries=True)[0]
+        output.append({
+            **record, "app_store_id": expected["track_id"],
+            "app_store_url": required_campaign_app_store_url(
+                str(record["canonical_app_store_url"]),
+                finder_campaign_token("en"),
+                expected_app_id=str(expected["track_id"]),
+            ),
+            "verified_live": True if known else None,
+            "verified_at": app_verified if known else None,
+            "metadata_status": "verified" if all(record["summaries"].values()) else "unknown",
+            "availability_status": "verified" if known else "unknown",
+            "availability_issues": [] if known else [
+                "identity_mismatch" if not identity_matches else "availability_not_observed",
+            ],
+        })
+    output.sort(key=lambda row: (str(row["name"]).casefold(), str(row["key"])))
+    document = {
+        "name": CATALOG_NAME,
+        "description": FINDER_COPY["en"]["description"],
+        "question": answer_portfolio.PORTFOLIO_QUERY,
+        "date_modified": CONTENT_DATE,
+        "license": LICENSE_URL,
+        "publisher_disclosure": (
+            "First-party catalogue of the complete Lumi Studio live-app roster. "
+            "Availability is reported per app; unknown is not verified live. "
+            "Not an independent review or third-party ranking."
+        ),
+        "ordering": "alphabetical_by_app_name_not_a_ranking",
+        "availability_verification": {
+            "source": "Apple iTunes Lookup API",
+            "markets": [country.upper() for country in LOOKUP_COUNTRIES],
+            "retirement_rule": "Retire after three consecutive verified misses",
+            "verified_at": verified,
+        },
+        "record_count": len(output),
+        "apps": output,
+    }
+    document = contract.seal(
+        document, contract.FINDER_SCHEMA, roster=roster, generated_at=generated,
+        expires_at=(verified_time or generated) + contract.MAX_AGE[contract.FINDER_SCHEMA],
+        sources={"catalog": contract.canonical_digest(output)},
+    )
+    return contract.validate_finder(document, roster=roster, now=now)
+
+
+def dataset_json(records: list[dict[str, object]], **kwargs) -> str:
+    return json.dumps(
+        dataset_payload(records, **kwargs),
+        ensure_ascii=False,
+        indent=2,
+    ) + "\n"
+
+
+def legacy_apps_payload(
+    records: list[dict[str, object]],
+    pages: Path,
+) -> list[dict[str, object]]:
+    """Keep the original apps.json contract in sync with the verified catalog."""
+    from gen_store_attribution import campaign_token as surface_campaign_token
+
+    output = []
+    for record in records:
+        key = str(record["key"])
+        guide_path = pages / "en-US" / f"{key}.html"
+        if not guide_path.is_file():
+            raise RuntimeError(f"Verified app is missing its English guide: {key}")
+
+        attributes = [str(record["purchase_labels"]["en"])]
+        attributes.extend(str(value) for value in record["features"])
+        for capability, enabled in record["capabilities"].items():
+            if enabled:
+                attributes.append(UI["en"]["capability_labels"][capability])
+        deduplicated_attributes = []
+        seen_attributes = set()
+        for value in attributes:
+            value = value.strip()
+            marker = value.casefold()
+            if value and marker not in seen_attributes:
+                seen_attributes.add(marker)
+                deduplicated_attributes.append(value)
+
+        related_urls = []
+        for relative in (
+            Path("guides") / f"{key}.html",
+            Path("hubs") / f"{key}.html",
+            Path("alternatives") / f"{key}-no-subscription.html",
+        ):
+            if (pages / relative).is_file():
+                related_urls.append(f"{SITE}/{relative.as_posix()}")
+
+        output.append(
+            {
+                "name": record["name"],
+                "valueProp": record["summaries"]["en"],
+                "category": record["category_labels"]["en"],
+                "attributes": deduplicated_attributes,
+                "appStoreUrl": campaign_app_store_url(
+                    str(record["canonical_app_store_url"]),
+                    surface_campaign_token("api/apps.json"),
+                ),
+                "guideUrl": f"{SITE}/en-US/{key}.html",
+                "relatedUrls": related_urls,
+            }
+        )
+    return output
+
+
+def legacy_apps_json(
+    records: list[dict[str, object]],
+    pages: Path,
+) -> str:
+    return json.dumps(
+        legacy_apps_payload(records, pages),
+        ensure_ascii=False,
+        indent=2,
+    ) + "\n"
+
+
+def dataset_schema() -> str:
+    live_app_count = len(contract.live_roster())
+    app_required = [
+        "key",
+        "app_store_id",
+        "name",
+        "category",
+        "category_labels",
+        "summaries",
+        "purchase_model",
+        "purchase_labels",
+        "one_time_option",
+        "features",
+        "keywords",
+        "capabilities",
+        "canonical_app_store_url",
+        "app_store_url",
+        "verified_live",
+        "verified_at",
+        "availability_status",
+        "availability_issues",
+        "metadata_status",
+    ]
+    schema = {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": data_url(".schema.json"),
+        "title": CATALOG_NAME,
+        "type": "object",
+        "additionalProperties": False,
+        "required": [
+            "name",
+            "description",
+            "question",
+            "date_modified",
+            "license",
+            "publisher_disclosure",
+            "ordering",
+            "availability_verification",
+            "record_count",
+            "apps",
+            "schema_version",
+            "generated_at",
+            "expires_at",
+            "source_digests",
+            "document_digest",
+        ],
+        "properties": {
+            "schema_version": {"const": contract.FINDER_SCHEMA},
+            "generated_at": {"type": "string", "format": "date-time"},
+            "expires_at": {"type": "string", "format": "date-time"},
+            "document_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "source_digests": {
+                "type": "object", "required": ["live_roster", "catalog"], "additionalProperties": False,
+                "properties": {
+                    name: {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+                    for name in ("live_roster", "catalog")
+                },
+            },
+            "name": {"type": "string"},
+            "description": {"type": "string"},
+            "question": {"const": answer_portfolio.PORTFOLIO_QUERY},
+            "date_modified": {"type": "string", "format": "date"},
+            "license": {"type": "string", "format": "uri"},
+            "publisher_disclosure": {"type": "string", "minLength": 1},
+            "ordering": {
+                "const": "alphabetical_by_app_name_not_a_ranking"
+            },
+            "availability_verification": {
+                "type": "object",
+                "required": ["source", "markets", "retirement_rule", "verified_at"],
+                "properties": {
+                    "source": {"type": "string"},
+                    "verified_at": {"type": ["string", "null"], "format": "date-time"},
+                    "markets": {
+                        "type": "array",
+                        "items": {"type": "string"},
+                        "minItems": 1,
+                        "uniqueItems": True,
+                    },
+                    "retirement_rule": {"type": "string"},
+                },
+                "additionalProperties": False,
+            },
+            "record_count": {"const": live_app_count},
+            "apps": {
+                "type": "array",
+                "minItems": live_app_count,
+                "maxItems": live_app_count,
+                "uniqueItems": True,
+                "items": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "required": app_required,
+                    "properties": {
+                        "key": {"type": "string", "minLength": 1},
+                        "app_store_id": {
+                            "type": "string",
+                            "pattern": "^[0-9]{9,12}$",
+                        },
+                        "name": {"type": "string", "minLength": 1},
+                        "category": {"type": "string", "minLength": 1},
+                        "category_labels": {
+                            "$ref": "#/$defs/localizedText"
+                        },
+                        "summaries": {"$ref": "#/$defs/localizedText"},
+                        "purchase_model": {
+                            "enum": sorted(VALID_PURCHASE_MODELS)
+                        },
+                        "purchase_labels": {
+                            "$ref": "#/$defs/localizedText"
+                        },
+                        "one_time_option": {"type": "boolean"},
+                        "features": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "uniqueItems": True,
+                        },
+                        "keywords": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "uniqueItems": True,
+                        },
+                        "capabilities": {
+                            "type": "object",
+                            "required": [
+                                "offline",
+                                "no_account",
+                                "no_ads",
+                                "no_tracking",
+                                "private_or_on_device",
+                                "widget",
+                                "apple_watch",
+                            ],
+                            "additionalProperties": False,
+                            "properties": {
+                                name: {"type": "boolean"}
+                                for name in (
+                                    "offline",
+                                    "no_account",
+                                    "no_ads",
+                                    "no_tracking",
+                                    "private_or_on_device",
+                                    "widget",
+                                    "apple_watch",
+                                )
+                            },
+                        },
+                        "canonical_app_store_url": {
+                            "type": "string",
+                            "format": "uri",
+                        },
+                        "app_store_url": {
+                            "type": "string",
+                            "format": "uri",
+                        },
+                        "verified_live": {"type": ["boolean", "null"]},
+                        "verified_at": {"type": ["string", "null"], "format": "date-time"},
+                        "availability_status": {"enum": ["verified", "unknown"]},
+                        "availability_issues": {"type": "array", "items": {"type": "string"}},
+                        "metadata_status": {"enum": ["verified", "unknown"]},
+                    },
+                },
+            },
+        },
+        "$defs": {
+            "localizedText": {
+                "type": "object",
+                "required": ["en", "zh-Hant"],
+                "additionalProperties": False,
+                "properties": {
+                    "en": {"type": ["string", "null"], "minLength": 1},
+                    "zh-Hant": {"type": ["string", "null"], "minLength": 1},
+                },
+            }
+        },
+    }
+    return json.dumps(schema, ensure_ascii=False, indent=2) + "\n"
+
+
+def verified_records(records: list[dict[str, object]]) -> list[dict[str, object]]:
+    return [
+        row for row in records
+        if row.get("verified_live") is True and row.get("metadata_status", "verified") == "verified"
+    ]
+
+
+def structured_data(
+    locale: str,
+    records: list[dict[str, object]],
+) -> str:
+    records = verified_records(records)
+    copy = FINDER_COPY[locale]
+    ui = UI[locale]
+    app_items = []
+    for record in records:
+        intent = localized_intent(record, locale)
+        store_url = localized_app_store_url(record, locale)
+        entity = gen_mobile_app_identity.mobile_app_schema(
+            record["app_store_id"],
+            record["name"],
+            record["category"],
+        )
+        entity.pop("@context")
+        entity["url"] = store_url
+        entity["installUrl"] = store_url
+        entity["downloadUrl"] = store_url
+        entity["potentialAction"] = {
+            "@type": "InstallAction",
+            "target": store_url,
+        }
+        entity["description"] = intent["decision_context"]
+        entity["featureList"] = record["features"]
+        entity["additionalProperty"] = [
+            {
+                "@type": "PropertyValue",
+                "name": ui["purchase"],
+                "value": ui["purchase_labels"][record["purchase_model"]],
+            },
+            {
+                "@type": "PropertyValue",
+                "name": ui["verified"].replace(
+                    "{count}", str(len(records))
+                ),
+                "value": "Apple lookup: US, TW, JP and GB",
+            },
+        ]
+        app_items.append(
+            {
+                "@type": "ListItem",
+                "@id": f"{canonical(locale)}#app-{record['key']}",
+                "url": store_url,
+                "item": entity,
+            }
+        )
+    faq = [
+        {
+            "@type": "Question",
+            "name": question,
+            "acceptedAnswer": {"@type": "Answer", "text": answer},
+        }
+        for question, answer in copy["faqs"]
+    ]
+    data = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "CollectionPage",
+                "@id": f"{canonical(locale)}#webpage",
+                "name": copy["title"],
+                "description": copy["description"],
+                "url": canonical(locale),
+                "inLanguage": copy["html_lang"],
+                "dateModified": CONTENT_DATE,
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": (
+                            f"{canonical(locale)}"
+                            "?q={search_term_string}"
+                        ),
+                    },
+                    "query-input": (
+                        "required name=search_term_string"
+                    ),
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "@id": f"{canonical(locale)}#verified-apps",
+                    "name": "Verified apps in alphabetical order",
+                    "numberOfItems": len(records),
+                    "itemListOrder": (
+                        "https://schema.org/ItemListOrderAscending"
+                    ),
+                    "itemListElement": app_items,
+                },
+            },
+            {
+                "@type": "Dataset",
+                "name": CATALOG_NAME,
+                "description": copy["description"],
+                "url": canonical(locale),
+                "license": LICENSE_URL,
+                "creator": {
+                    "@type": "Organization",
+                    "name": "Lumi Studio",
+                    "url": f"{SITE}/about.html",
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Lumi Studio",
+                    "url": f"{SITE}/about.html",
+                },
+                "isAccessibleForFree": True,
+                "inLanguage": list(OFFICIAL_LOCALES),
+                "dateModified": CONTENT_DATE,
+                "distribution": [
+                    {
+                        "@type": "DataDownload",
+                        "encodingFormat": "application/json",
+                        "contentUrl": data_url(".json"),
+                    },
+                    {
+                        "@type": "DataDownload",
+                        "encodingFormat": "application/schema+json",
+                        "contentUrl": data_url(".schema.json"),
+                    },
+                ],
+            },
+            {
+                "@type": "WebApplication",
+                "name": copy["title"],
+                "url": canonical(locale),
+                "applicationCategory": "UtilitiesApplication",
+                "operatingSystem": "Any modern browser",
+                "browserRequirements": "JavaScript",
+                "isAccessibleForFree": True,
+                "inLanguage": copy["html_lang"],
+                "dateModified": CONTENT_DATE,
+                "featureList": [
+                    ui["search"],
+                    ui["alphabetical"],
+                    ui["verified"].replace("{count}", str(len(records))),
+                    ui["private"],
+                    webmcp_description(locale),
+                ],
+            },
+            {
+                "@type": "FAQPage",
+                "inLanguage": copy["html_lang"],
+                "mainEntity": faq,
+            },
+        ],
+    }
+    return json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+
+
+def category_options(locale: str, records: list[dict[str, object]]) -> str:
+    copy = UI[locale]
+    categories = sorted(
+        {record["category"] for record in records},
+        key=lambda value: copy["category_labels"].get(
+            value, copy["category_labels"]["other"]
+        ).casefold(),
+    )
+    return "\n".join(
+        f'<option value="{html.escape(category)}">'
+        f'{html.escape(copy["category_labels"].get(category, copy["category_labels"]["other"]))}'
+        "</option>"
+        for category in categories
+    )
+
+
+def webmcp_input_schema(
+    locale: str,
+    records: list[dict[str, object]],
+) -> dict[str, object]:
+    records = verified_records(records)
+    copy = UI[locale]
+    categories = sorted({record["category"] for record in records})
+    purchase_models = sorted(
+        {record["purchase_model"] for record in records}
+    )
+    privacy_facts = sorted(
+        {
+            key
+            for record in records
+            for key, enabled in record["capabilities"].items()
+            if enabled
+            and key
+            in {
+                "offline",
+                "no_account",
+                "no_ads",
+                "no_tracking",
+                "private_or_on_device",
+            }
+        }
+    )
+    device_surfaces = sorted(
+        {
+            key
+            for record in records
+            for key in ("widget", "apple_watch")
+            if record["capabilities"][key]
+        }
+    )
+    properties = {
+        "query": {
+            "type": "string",
+            "maxLength": 120,
+            "description": copy["webmcp_query_description"],
+        },
+        "category": {
+            "type": "string",
+            "enum": categories,
+            "description": copy["category"],
+        },
+        "purchase_model": {
+            "type": "string",
+            "enum": ["one_time", *purchase_models],
+            "description": copy["purchase"],
+        },
+    }
+    if privacy_facts:
+        properties["privacy_fact"] = {
+            "type": "string",
+            "enum": privacy_facts,
+            "description": copy["privacy"],
+        }
+    if device_surfaces:
+        properties["device_surface"] = {
+            "type": "string",
+            "enum": device_surfaces,
+            "description": copy["device"],
+        }
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": properties,
+    }
+
+
+def _record_search_text(
+    record: dict[str, object],
+    locale: str,
+) -> str:
+    intent = localized_intent(record, locale)
+    copy = UI[locale]
+    return " ".join(
+        [
+            str(record["key"]),
+            str(record["name"]),
+            str(record["category"]),
+            str(
+                copy["category_labels"].get(
+                    record["category"],
+                    copy["category_labels"]["other"],
+                )
+            ),
+            str(intent["publisher_query"]),
+            str(intent["decision_context"]),
+            *record["features"],
+            *record["keywords"],
+        ]
+    ).casefold()
+
+
+def _record_privacy_facts(record: dict[str, object]) -> list[str]:
+    return [
+        key
+        for key, enabled in record["capabilities"].items()
+        if enabled
+        and key
+        in {
+            "offline",
+            "no_account",
+            "no_ads",
+            "no_tracking",
+            "private_or_on_device",
+        }
+    ]
+
+
+def _record_device_surfaces(record: dict[str, object]) -> list[str]:
+    return [
+        key
+        for key in ("widget", "apple_watch")
+        if record["capabilities"][key]
+    ]
+
+
+def webmcp_records(
+    locale: str,
+    records: list[dict[str, object]],
+) -> list[dict[str, object]]:
+    records = verified_records(records)
+    return [
+        {
+            "search": _record_search_text(record, locale),
+            "category": record["category"],
+            "purchase_model": record["purchase_model"],
+            "one_time_option": record["one_time_option"],
+            "privacy_facts": _record_privacy_facts(record),
+            "device_surfaces": _record_device_surfaces(record),
+            "name": record["name"],
+            "why_it_may_fit": localized_intent(
+                record, locale
+            )["decision_context"],
+            "app_store_url": localized_app_store_url(record, locale),
+            **market.record_fields(locale, str(record["app_store_id"])),
+        }
+        for record in records
+    ]
+
+
+def app_cards(
+    locale: str,
+    records: list[dict[str, object]],
+) -> str:
+    records = verified_records(records)
+    copy = UI[locale]
+    cards = []
+    for record in records:
+        intent = localized_intent(record, locale)
+        capabilities = [
+            key
+            for key, enabled in record["capabilities"].items()
+            if enabled
+        ]
+        badges = [
+            copy["category_labels"].get(
+                record["category"], copy["category_labels"]["other"]
+            ),
+            copy["purchase_labels"][record["purchase_model"]],
+            *[
+                copy["capability_labels"][key]
+                for key in capabilities
+            ],
+        ]
+        badge_html = "".join(
+            f'<span class="fact">{html.escape(value)}</span>'
+            for value in dict.fromkeys(badges)
+        )
+        search_text = _record_search_text(record, locale)
+        devices = ["iphone"]
+        if record["capabilities"]["widget"]:
+            devices.append("widget")
+        if record["capabilities"]["apple_watch"]:
+            devices.append("apple_watch")
+        cards.append(
+            f'<article class="app-card" data-app-card '
+            f'data-search="{html.escape(search_text)}" '
+            f'data-category="{html.escape(record["category"])}" '
+            f'data-purchase="{html.escape(record["purchase_model"])}" '
+            f'data-one-time="{str(record["one_time_option"]).lower()}" '
+            f'data-privacy="{html.escape(" ".join(capabilities))}" '
+            f'data-device="{html.escape(" ".join(devices))}">'
+            f'<h2>{html.escape(record["name"])}</h2>'
+            f'<div class="facts">{badge_html}</div>'
+            f'<p class="intent"><strong>{html.escape(copy["intent"])}:</strong> '
+            f'<a class="intent-link" '
+            f'href="{html.escape(install_decision_url(str(record["key"]), locale))}">'
+            f'{html.escape(intent["publisher_query"])}</a></p>'
+            f'<p class="why"><strong>{html.escape(copy["why"])}:</strong> '
+            f'{html.escape(intent["decision_context"])}</p>'
+            f'<div class="app-actions"><a class="guide" '
+            f'href="{html.escape(intent["canonical_guide_url"])}">'
+            f'{html.escape(copy["guide"])}</a>'
+            + ('<span class="market-blocked">N/A</span>' if market.is_unavailable(locale, str(record["app_store_id"])) else
+            f'<a class="store" rel="nofollow noopener" '
+            f'href="{html.escape(localized_app_store_url(record, locale))}">'
+            f'{html.escape(intent["app_store_cta_label"])}</a>') + '</div></article>'
+        )
+    return "\n".join(cards)
+
+
+def render_page(
+    locale: str,
+    records: list[dict[str, object]],
+) -> str:
+    records = verified_records(records)
+    copy = UI[locale]
+    answer = FINDER_COPY[locale]
+    other_locale = "zh-Hant" if locale == "en" else "en"
+    method_items = list(answer["method"])
+    if len(method_items) > 3:
+        if locale in answer_portfolio.COPY:
+            method_items[3] = answer_portfolio.COPY[locale]["method"][3]
+        else:
+            method_items.pop(3)
+    method = "".join(
+        f"<li>{html.escape(item)}</li>" for item in method_items
+    )
+    boundaries = "".join(
+        f"<li>{html.escape(item)}</li>" for item in answer["boundaries"]
+    )
+    faq = "".join(
+        f"<details><summary>{html.escape(question)}</summary>"
+        f"<p>{html.escape(response)}</p></details>"
+        for question, response in answer["faqs"]
+    )
+    js_copy = json.dumps(
+        {
+            "count": copy["count"],
+            "empty": copy["empty"],
+            "copied": copy["copied"],
+            "copy_failed": copy["copy_failed"],
+            "share_cancelled": copy["share_cancelled"],
+        },
+        ensure_ascii=False,
+        separators=(",", ":"),
+    )
+    page = r"""<!doctype html>
+<html lang="__HTML_LANG__"__DIRECTION__>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="__THEME_COLOR__">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Lumi Finder">
+<title>__TITLE__</title>
+<meta name="description" content="__DESCRIPTION__">
+<link rel="canonical" href="__CANONICAL__">
+__HREFLANG__
+<link rel="manifest" href="__MANIFEST_URL__">
+<link rel="icon" type="image/svg+xml" href="__ICON_SVG_URL__">
+<link rel="icon" type="image/png" sizes="192x192" href="__ICON_192_URL__">
+<link rel="apple-touch-icon" sizes="180x180" href="__ICON_180_URL__">
+<link rel="search" type="application/opensearchdescription+xml" title="__TITLE__" href="__OPENSEARCH_URL__">
+<link rel="service" type="application/vnd.oai.openapi+json;version=3.1" href="__OPENAPI_URL__">
+<link rel="alternate" type="application/ld+json" href="__OFFER_CATALOG_URL__">
+__FEEDS__
+<meta property="og:type" content="website">
+<meta property="og:title" content="__TITLE__">
+<meta property="og:description" content="__DESCRIPTION__">
+<meta property="og:url" content="__CANONICAL__">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">__SCHEMA__</script>
+<style>
+:root{--ink:#17201d;--muted:#5d6864;--line:#dce7e2;--paper:#fff;--mint:#e9f8f1;--teal:#126b57;--violet:#6750c9;--shadow:0 22px 70px rgba(27,68,57,.11);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 7% 2%,#e3fff3 0,transparent 31%),radial-gradient(circle at 94% 9%,#eee9ff 0,transparent 34%),#f8fbf9;color:var(--ink);line-height:1.58}a{color:var(--teal)}.wrap{width:min(1180px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:5;border-bottom:1px solid rgba(220,231,226,.84);background:rgba(248,251,249,.92);backdrop-filter:blur(18px)}.nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px}.nav a{font-weight:850;text-decoration:none;white-space:nowrap}
+.hero{padding:64px 0 28px}.eyebrow{margin:0 0 9px;color:var(--teal);font-size:.78rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}h1{margin:0;font-size:clamp(.78rem,4vw,3.65rem);line-height:1.05;letter-spacing:-.045em;white-space:nowrap}.lead{max-width:860px;margin:18px 0 0;color:var(--muted);font-size:clamp(1rem,2vw,1.2rem)}
+.badges,.facts,.actions{display:flex;gap:8px;flex-wrap:wrap}.badges{margin-top:20px}.badge,.fact{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:7px 11px;background:rgba(255,255,255,.86);font-size:.8rem;font-weight:850;white-space:nowrap}.fact{padding:5px 9px;background:#f5faf7}
+.card{border:1px solid var(--line);border-radius:28px;background:rgba(255,255,255,.94);box-shadow:var(--shadow);padding:clamp(20px,4vw,32px);margin-bottom:22px}.filters{display:grid;grid-template-columns:1fr;gap:14px}@media(min-width:700px){.filters{grid-template-columns:2fr 1fr 1fr}}@media(min-width:1020px){.filters{grid-template-columns:2fr 1fr 1fr 1fr 1fr}}
+label{display:block;font-weight:850;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}input,select{width:100%;min-height:50px;margin-top:6px;border:1px solid #c8d7d0;border-radius:15px;padding:11px 38px 11px 13px;background:#fff;color:var(--ink);font:inherit}
+button,.download,.store,.guide{min-height:48px;border-radius:999px;padding:12px 18px;font:inherit;font-weight:900;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}button,.download,.guide{border:1px solid #c8d7d0;background:#fff;color:var(--teal)}.store{display:flex;align-items:center;justify-content:center;border:0;background:linear-gradient(135deg,var(--teal),#178c70);color:#fff!important;box-shadow:0 10px 28px rgba(18,107,87,.2)}.app-actions{display:grid;gap:9px;margin-top:auto}.guide{display:flex;align-items:center;justify-content:center}
+.clear{width:100%;margin-top:14px}.status{min-height:1.4em;margin:14px 0 0;color:var(--teal);font-weight:850}.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;margin-bottom:22px}.app-card{display:flex;flex-direction:column;gap:13px;min-width:0;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.96);box-shadow:0 14px 40px rgba(27,68,57,.08);padding:22px}.app-card h2{margin:0;font-size:1.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.app-card p{margin:0;color:var(--muted)}.intent-link{color:var(--teal);font-weight:760}.why strong{color:var(--ink)}[hidden]{display:none!important}
+.two{display:grid;gap:20px}@media(min-width:820px){.two{grid-template-columns:1fr 1fr}}h2.section-title,.card>h2{margin:0 0 10px;font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.025em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.list{padding-left:1.25rem}.list li{margin:.58rem 0}.actions{margin-top:18px}.source a{font-weight:850}details{border-top:1px solid var(--line);padding:14px 0}summary{font-weight:850;cursor:pointer}footer{padding:28px 0 52px;color:var(--muted);font-size:.9rem}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid rgba(103,80,201,.42);outline-offset:3px}@media(max-width:520px){.card{border-radius:22px}.nav{font-size:.88rem}.results{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="__HOME__">iOS App Guide</a><nav><a href="__TOOLS__">__TOOLS_LABEL__</a> · <a href="__SWITCH_URL__">__SWITCH__</a></nav></div></header>
+<main>
+<section class="hero wrap"><p class="eyebrow">__EYEBROW__</p><h1>__HEADING__</h1><p class="lead">__LEAD__</p>
+<div class="badges"><span class="badge">__VERIFIED__</span><span class="badge">__ALPHABETICAL__</span><span class="badge">__PRIVATE__</span></div></section>
+<section class="wrap card">
+  <div class="filters">
+    <label>__SEARCH__<input id="search" type="search" autocomplete="off" maxlength="120" placeholder="__SEARCH_PLACEHOLDER__"></label>
+    <label>__CATEGORY__<select id="category"><option value="">__ALL_CATEGORIES__</option>__CATEGORY_OPTIONS__</select></label>
+    <label>__PURCHASE__<select id="purchase"><option value="">__ALL_PURCHASE__</option><option value="one_time">__ONE_TIME__</option><option value="paid_upfront">__PAID_UPFRONT__</option><option value="free_with_lifetime_unlock">__LIFETIME__</option><option value="free">__FREE__</option><option value="flexible">__FLEXIBLE__</option><option value="neutral">__NEUTRAL__</option></select></label>
+    <label>__PRIVACY_LABEL__<select id="privacy"><option value="">__ALL_PRIVACY__</option><option value="offline">__OFFLINE__</option><option value="no_account">__NO_ACCOUNT__</option><option value="no_ads">__NO_ADS__</option><option value="no_tracking">__NO_TRACKING__</option><option value="private_or_on_device">__PRIVATE_DEVICE__</option></select></label>
+    <label>__DEVICE__<select id="device"><option value="">__ALL_DEVICES__</option><option value="widget">__WIDGET__</option><option value="apple_watch">__APPLE_WATCH__</option></select></label>
+  </div>
+  <button class="clear" id="clear" type="button">__CLEAR__</button>
+  <p class="status" id="result-count" role="status"></p><p class="status" id="empty" hidden></p>
+</section>
+<section class="wrap results" id="results">__APP_CARDS__</section>
+<section class="wrap two"><article class="card"><h2>__METHOD_TITLE__</h2><ul class="list">__METHOD__</ul></article><article class="card"><h2>__BOUNDARIES_TITLE__</h2><ul class="list">__BOUNDARIES__</ul></article></section>
+<section class="wrap card"><h2>__DATA_TITLE__</h2><p>__DATA_TEXT__</p><div class="actions"><a class="download" href="__DATA_URL__" download>__DOWNLOAD_JSON__</a><a class="download" href="__INTENTS_URL__" download>__DOWNLOAD_INTENTS__</a><a class="download" href="__SCHEMA_URL__">__DOWNLOAD_SCHEMA__</a><a class="download" href="__OPENAPI_URL__">__DOWNLOAD_OPENAPI__</a><button id="copy" type="button">__COPY__</button><button id="share" type="button">__SHARE__</button></div><p class="status" id="share-status" role="status"></p></section>
+<section class="wrap card source"><h2>__SOURCES_TITLE__</h2><p>__SOURCES_TEXT__</p><p><a href="__APPLE_SOURCE_URL__">__APPLE_SOURCE__</a> · <a href="__GOOGLE_SOURCE_URL__">__GOOGLE_SOURCE__</a> · <a href="__SCHEMA_SOURCE_URL__">__SCHEMA_SOURCE__</a> · <a href="__WEBMCP_SOURCE_URL__">__WEBMCP_SOURCE__</a> · <a href="__LICENSE_URL__">CC BY 4.0</a></p><p>__LICENSE_TEXT__</p></section>
+<section class="wrap card"><h2>__FAQ_TITLE__</h2>__FAQ__</section>
+</main>
+<footer><div class="wrap">__FOOTER__</div></footer>
+<script>
+const I18N=__JS_COPY__;
+const WEBMCP_INPUT_SCHEMA=__WEBMCP_INPUT_SCHEMA__;
+const WEBMCP_RECORDS=__WEBMCP_RECORDS__;
+const WEBMCP_MARKET_FIELDS=__WEBMCP_MARKET_FIELDS__;
+const WEBMCP_TOOL_DESCRIPTION=__WEBMCP_DESCRIPTION__;
+const cards=[...document.querySelectorAll("[data-app-card]")];
+const fields=["search","category","purchase","privacy","device"].map(id=>document.getElementById(id));
+const count=document.getElementById("result-count");
+const empty=document.getElementById("empty");
+const shareStatus=document.getElementById("share-status");
+const locale=document.documentElement.lang;
+const substitutions=new Map([["ß","ss"],["ς","σ"],["æ","ae"],["œ","oe"],["ø","o"],["ł","l"],["đ","d"],["ð","d"],["þ","th"]]);
+function fold(value){
+  let result=String(value).toLocaleLowerCase(locale).normalize("NFKD").replace(/([\p{Script=Latin}\p{Script=Greek}\p{Script=Hebrew}\p{Script=Arabic}])\p{M}+/gu,"$1").normalize("NFC").replace(/\u0640/g,"");
+  substitutions.forEach((replacement,source)=>{result=result.split(source).join(replacement);});
+  return result.replace(/[^\p{L}\p{M}\p{N}]+/gu," ").trim();
+}
+const SEARCH_CORPUS=WEBMCP_RECORDS.map(item=>fold(item.search));
+const segmenter=typeof Intl.Segmenter==="function"?new Intl.Segmenter(locale,{granularity:"word"}):null;
+function queryTerms(value){
+  const parts=segmenter?[...segmenter.segment(value)].filter(part=>part.isWordLike).map(part=>part.segment):value.split(" ");
+  return [...new Set(parts.map(fold).filter(token=>[...token].length>=2||/\d/u.test(token)))];
+}
+function createQueryMatcher(value){
+  const query=fold(value);
+  if(!query)return()=>true;
+  const weightedTerms=queryTerms(query).map(term=>{
+    const frequency=SEARCH_CORPUS.reduce((total,text)=>total+Number(text.includes(term)),0);
+    const weight=frequency?Math.log((SEARCH_CORPUS.length+1)/frequency)*Math.log2([...term].length+1):0;
+    return {term,weight};
+  }).filter(item=>item.weight>0);
+  if(!weightedTerms.length)return text=>fold(text).includes(query);
+  const score=text=>weightedTerms.reduce((total,item)=>total+(text.includes(item.term)?item.weight:0),0);
+  const minimum=Math.max(...SEARCH_CORPUS.map(score))*.9;
+  return text=>{const folded=fold(text);return folded.includes(query)||score(folded)>=minimum;};
+}
+function tokens(value){return value.split(" ").filter(Boolean);}
+function update(){
+  const queryMatches=createQueryMatcher(fields[0].value.trim());
+  const category=fields[1].value;
+  const purchase=fields[2].value;
+  const privacy=fields[3].value;
+  const device=fields[4].value;
+  let shown=0;
+  const matches=[];
+  for(const card of cards){
+    const purchaseMatch=!purchase||(purchase==="one_time"?card.dataset.oneTime==="true":card.dataset.purchase===purchase);
+    const visible=queryMatches(card.dataset.search)&&(!category||card.dataset.category===category)&&purchaseMatch&&(!privacy||tokens(card.dataset.privacy).includes(privacy))&&(!device||tokens(card.dataset.device).includes(device));
+    card.hidden=!visible;if(visible){shown++;matches.push(card);}
+  }
+  count.textContent=I18N.count.replace("{shown}",String(shown)).replace("{total}",String(cards.length));
+  empty.textContent=I18N.empty;empty.hidden=shown!==0;
+  return matches;
+}
+function applyUrlFilters(){
+  const params=new URLSearchParams(location.search);
+  const sharedNames=["shared_title","shared_text","shared_url"];
+  const queryParts=["q",...sharedNames].map(name=>(params.get(name)||"").trim()).filter(Boolean);
+  fields[0].value=[...[...new Set(queryParts)].join(" ")].slice(0,120).join("");
+  for(const [field,name] of [[fields[1],"category"],[fields[2],"purchase"],[fields[3],"privacy"],[fields[4],"device"]]){
+    const value=params.get(name)||"";
+    field.value=[...field.options].some(option=>option.value===value)?value:"";
+  }
+  return sharedNames.some(name=>params.has(name));
+}
+function syncUrl(){
+  const params=new URLSearchParams();
+  const values=[["q",fields[0].value.trim()],["category",fields[1].value],["purchase",fields[2].value],["privacy",fields[3].value],["device",fields[4].value]];
+  for(const [name,value] of values)if(value)params.set(name,value);
+  const query=params.toString();
+  history.replaceState(null,"",location.pathname+(query?`?${query}`:"")+location.hash);
+}
+function currentUrl(){return location.href;}
+function toolText(input,name){const value=input[name];if(value===undefined)return"";if(typeof value!=="string")throw new TypeError(`${name} must be a string.`);return value;}
+function toolSelectValue(value,name){if(!value)return"";const values=WEBMCP_INPUT_SCHEMA.properties[name]?.enum||[];if(!values.includes(value))throw new RangeError(`${name} is not a supported filter value.`);return value;}
+async function registerWebMcp(){
+  if(!document.modelContext?.registerTool)return;
+  await document.modelContext.registerTool({
+    name:"find_verified_ios_apps",
+    description:WEBMCP_TOOL_DESCRIPTION,
+    inputSchema:WEBMCP_INPUT_SCHEMA,
+    annotations:{readOnlyHint:true,untrustedContentHint:false},
+    execute:async(input={})=>{
+      if(input===null||typeof input!=="object"||Array.isArray(input))throw new TypeError("WebMCP input must be an object.");
+      const query=toolText(input,"query").trim();
+      if([...query].length>120)throw new RangeError("query exceeds 120 characters.");
+      const category=toolSelectValue(toolText(input,"category"),"category");
+      const purchase=toolSelectValue(toolText(input,"purchase_model"),"purchase_model");
+      const privacy=toolSelectValue(toolText(input,"privacy_fact"),"privacy_fact");
+      const device=toolSelectValue(toolText(input,"device_surface"),"device_surface");
+      const queryMatches=createQueryMatcher(query);
+      const matches=WEBMCP_RECORDS.filter(item=>
+        queryMatches(item.search)&&
+        (!category||item.category===category)&&
+        (!purchase||(purchase==="one_time"?item.one_time_option:item.purchase_model===purchase))&&
+        (!privacy||item.privacy_facts.includes(privacy))&&
+        (!device||item.device_surfaces.includes(device))
+      );
+      return JSON.stringify({
+        result_type:"verified_ios_app_matches",
+        ordering:"alphabetical_by_app_name_not_a_ranking",
+        match_count:matches.length,
+        ...WEBMCP_MARKET_FIELDS,
+        matches:matches.map(({name,why_it_may_fit,app_store_url,market_availability})=>({
+          name,why_it_may_fit,app_store_url,
+          ...(market_availability?{market_availability}:{})
+        }))
+      });
+    }
+  });
+}
+async function copyLink(){try{await navigator.clipboard.writeText(currentUrl());shareStatus.textContent=I18N.copied;}catch(error){shareStatus.textContent=I18N.copy_failed;}}
+async function shareLink(){if(navigator.share){try{await navigator.share({title:document.title,url:currentUrl()});return;}catch(error){if(error&&error.name==="AbortError"){shareStatus.textContent=I18N.share_cancelled;return;}}}await copyLink();}
+for(const field of fields)field.addEventListener("input",()=>{update();syncUrl();});
+document.getElementById("clear").addEventListener("click",()=>{for(const field of fields)field.value="";update();syncUrl();fields[0].focus();});
+document.getElementById("copy").addEventListener("click",copyLink);
+document.getElementById("share").addEventListener("click",shareLink);
+const receivedShare=applyUrlFilters();
+update();
+if(receivedShare)syncUrl();
+registerWebMcp().catch(error=>console.error("WebMCP tool registration failed.",error));
+</script>
+</body></html>
+"""
+    replacements = {
+        "__HTML_LANG__": html.escape(answer["html_lang"]),
+        "__DIRECTION__": ' dir="rtl"' if locale in RTL_LOCALES else "",
+        "__TITLE__": html.escape(answer["title"]),
+        "__DESCRIPTION__": html.escape(answer["description"]),
+        "__THEME_COLOR__": PWA_THEME_COLOR,
+        "__CANONICAL__": canonical(locale),
+        "__HREFLANG__": hreflang_links(),
+        "__MANIFEST_URL__": manifest_url(locale),
+        "__ICON_SVG_URL__": _pwa_asset_url("app-finder-icon.svg"),
+        "__ICON_192_URL__": _pwa_asset_url("app-finder-icon-192.png"),
+        "__ICON_180_URL__": _pwa_asset_url("app-finder-icon-180.png"),
+        "__OPENSEARCH_URL__": opensearch_url(locale),
+        "__FEEDS__": feed_discovery_links(),
+        "__SCHEMA__": structured_data(locale, records),
+        "__HOME__": html.escape(copy["home"]),
+        "__TOOLS__": html.escape(copy["tools"]),
+        "__TOOLS_LABEL__": html.escape(copy["tools_label"]),
+        "__SWITCH_URL__": canonical(other_locale),
+        "__SWITCH__": html.escape(copy["switch"]),
+        "__EYEBROW__": html.escape(copy["eyebrow"]),
+        "__HEADING__": html.escape(answer["heading"]),
+        "__LEAD__": html.escape(answer["lead"]),
+        "__VERIFIED__": html.escape(
+            copy["verified"].replace("{count}", str(len(records)))
+        ),
+        "__ALPHABETICAL__": html.escape(copy["alphabetical"]),
+        "__PRIVATE__": html.escape(copy["private"]),
+        "__SEARCH__": html.escape(copy["search"]),
+        "__SEARCH_PLACEHOLDER__": html.escape(copy["search_placeholder"]),
+        "__CATEGORY__": html.escape(copy["category"]),
+        "__PURCHASE__": html.escape(copy["purchase"]),
+        "__PRIVACY_LABEL__": html.escape(copy["privacy"]),
+        "__DEVICE__": html.escape(copy["device"]),
+        "__ALL_CATEGORIES__": html.escape(copy["all_categories"]),
+        "__CATEGORY_OPTIONS__": category_options(locale, records),
+        "__ALL_PURCHASE__": html.escape(copy["all_purchase"]),
+        "__ONE_TIME__": html.escape(copy["one_time"]),
+        "__PAID_UPFRONT__": html.escape(copy["paid_upfront"]),
+        "__LIFETIME__": html.escape(copy["free_with_lifetime_unlock"]),
+        "__FREE__": html.escape(copy["free"]),
+        "__FLEXIBLE__": html.escape(copy["flexible"]),
+        "__NEUTRAL__": html.escape(copy["neutral"]),
+        "__ALL_PRIVACY__": html.escape(copy["all_privacy"]),
+        "__OFFLINE__": html.escape(copy["offline"]),
+        "__NO_ACCOUNT__": html.escape(copy["no_account"]),
+        "__NO_ADS__": html.escape(copy["no_ads"]),
+        "__NO_TRACKING__": html.escape(copy["no_tracking"]),
+        "__PRIVATE_DEVICE__": html.escape(copy["private_or_on_device"]),
+        "__ALL_DEVICES__": html.escape(copy["all_devices"]),
+        "__WIDGET__": html.escape(copy["widget"]),
+        "__APPLE_WATCH__": html.escape(copy["apple_watch"]),
+        "__CLEAR__": html.escape(copy["clear"]),
+        "__APP_CARDS__": app_cards(locale, records),
+        "__METHOD_TITLE__": html.escape(answer["method_title"]),
+        "__METHOD__": method,
+        "__BOUNDARIES_TITLE__": html.escape(answer["boundaries_title"]),
+        "__BOUNDARIES__": boundaries,
+        "__DATA_TITLE__": html.escape(copy["data_title"]),
+        "__DATA_TEXT__": html.escape(copy["data_text"]),
+        "__DATA_URL__": data_url(".json"),
+        "__INTENTS_URL__": (
+            f"{SITE}/data/{publisher_intent_catalog.SLUG}.json"
+        ),
+        "__SCHEMA_URL__": data_url(".schema.json"),
+        "__OPENAPI_URL__": f"{APP_CATALOG_API}/openapi.json",
+        "__OFFER_CATALOG_URL__": portfolio_offer_catalog.catalog_url(
+            "en-US" if locale == "en" else locale
+        ),
+        "__DOWNLOAD_JSON__": html.escape(copy["download_json"]),
+        "__DOWNLOAD_INTENTS__": html.escape(copy["download_intents"]),
+        "__DOWNLOAD_SCHEMA__": html.escape(copy["download_schema"]),
+        "__DOWNLOAD_OPENAPI__": html.escape(copy["download_openapi"]),
+        "__COPY__": html.escape(copy["copy"]),
+        "__SHARE__": html.escape(copy["share"]),
+        "__SOURCES_TITLE__": html.escape(copy["apple_source"]),
+        "__SOURCES_TEXT__": html.escape(answer["boundaries"][3]),
+        "__APPLE_SOURCE_URL__": answer_portfolio.APPLE_CAMPAIGN_SOURCE,
+        "__APPLE_SOURCE__": html.escape(copy["apple_source"]),
+        "__GOOGLE_SOURCE_URL__": answer_portfolio.GOOGLE_SCHEMA_SOURCE,
+        "__GOOGLE_SOURCE__": html.escape(copy["google_source"]),
+        "__SCHEMA_SOURCE_URL__": answer_portfolio.SCHEMA_ITEM_LIST_SOURCE,
+        "__SCHEMA_SOURCE__": html.escape(copy["schema_source"]),
+        "__WEBMCP_SOURCE_URL__": answer_portfolio.WEBMCP_SOURCE,
+        "__WEBMCP_SOURCE__": html.escape(copy["webmcp_source"]),
+        "__LICENSE_URL__": LICENSE_URL,
+        "__LICENSE_TEXT__": html.escape(copy["license_text"]),
+        "__FAQ_TITLE__": html.escape(copy["faq_title"]),
+        "__FAQ__": faq,
+        "__FOOTER__": html.escape(copy["footer"]),
+        "__JS_COPY__": js_copy,
+        "__WEBMCP_INPUT_SCHEMA__": json.dumps(
+            webmcp_input_schema(locale, records),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ),
+        "__WEBMCP_RECORDS__": json.dumps(
+            webmcp_records(locale, records),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ),
+        "__WEBMCP_MARKET_FIELDS__": json.dumps(market.record_fields(locale), ensure_ascii=False),
+        "__WEBMCP_DESCRIPTION__": json.dumps(
+            webmcp_description(locale),
+            ensure_ascii=False,
+        ),
+    }
+    for marker, value in replacements.items():
+        page = page.replace(marker, value)
+    unresolved = sorted(set(re.findall(r"__[A-Z][A-Z_]+__", page)))
+    if unresolved:
+        raise ValueError(f"Unresolved template markers: {unresolved}")
+    return market_surface_policy.enforce_html(page, locale)
+
+
+def write_text_if_changed(path: Path, content: str) -> bool:
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
+def write_bytes_if_changed(path: Path, content: bytes) -> bool:
+    if path.exists() and path.read_bytes() == content:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(content)
+    return True
+
+
+def copy_pwa_icons(pages: Path) -> None:
+    for filename in PWA_ICON_FILES:
+        source = PWA_ICON_SOURCE / filename
+        if not source.is_file():
+            raise FileNotFoundError(f"Missing App Finder PWA icon: {source}")
+        write_bytes_if_changed(
+            pages / "assets" / filename,
+            source.read_bytes(),
+        )
+
+
+def _update_one_index(path: Path, locale: str) -> bool:
+    if not path.exists():
+        return False
+    text = path.read_text(encoding="utf-8")
+    copy = UI[locale]
+    card = (
+        f'<article class="card third" data-tool="{SLUG}">'
+        f'<h2><a href="{SLUG}.html">{html.escape(copy["index_title"])}</a></h2>'
+        f'<p>{html.escape(copy["index_description"])}</p></article>'
+    )
+    pattern = re.compile(
+        rf'<article class="card third"(?: data-tool="{re.escape(SLUG)}")?>'
+        rf'<h2><a href="{re.escape(SLUG)}\.html">.*?</article>',
+        re.S,
+    )
+    if pattern.search(text):
+        updated = pattern.sub(card, text, count=1)
+    else:
+        # Two tools-index layouts exist: the original finder grid
+        # (<section class="wrap grid">) and the newer localized tools
+        # generator (<main class="wrap"><div class="grid">). Inject the
+        # finder card as the first grid child in whichever is present.
+        for marker in ('<section class="wrap grid">', '<div class="grid">'):
+            if marker in text:
+                updated = text.replace(marker, marker + card, 1)
+                break
+        else:
+            raise RuntimeError(f"{path} is missing its tools grid")
+    if updated == text:
+        return False
+    path.write_text(updated, encoding="utf-8")
+    return True
+
+
+def build(
+    pages: Path = PAGES,
+    *,
+    live_keys: set[str] | list[str],
+    availability: dict | None = None,
+    now=None,
+) -> list[str]:
+    if queries.PORTFOLIO_CURATED.count(
+        answer_portfolio.PORTFOLIO_QUERY
+    ) != 1:
+        raise ValueError("Portfolio finder query must be unique")
+    roster = contract.live_roster()
+    uncovered = set(live_keys) - set(roster)
+    if uncovered:
+        raise ValueError(f"Live apps are missing from the versioned roster: {sorted(uncovered)}")
+    availability = verify_availability(roster=roster) if availability is None else availability
+    document = dataset_payload(
+        catalog_records(set(roster), pages, allow_unknown_summaries=True),
+        availability=availability, roster=roster, now=now, pages=pages,
+    )
+    data_dir = pages / "data"
+    write_text_if_changed(
+        data_dir / f"{DATA_SLUG}.json",
+        json.dumps(document, ensure_ascii=False, indent=2) + "\n",
+    )
+    write_text_if_changed(
+        data_dir / f"{DATA_SLUG}.schema.json",
+        dataset_schema(),
+    )
+    # Unknown availability stays in the full-roster evidence catalog, not in a
+    # recommendation carrying a "verified live" badge or install action.
+    records = verified_records(document["apps"])
+    if not records:
+        return []
+    write_text_if_changed(
+        pages / "apps.json",
+        legacy_apps_json(records, pages),
+    )
+    # Evidence always covers the full roster, but the 50-locale intent
+    # artifact may only be rebuilt when every record is actually verified
+    # and has its required localized metadata.
+    live_set = {str(row["key"]) for row in records}
+    expected_live = set(publisher_intent_catalog.PERSONAS)
+    uncovered = live_set - expected_live
+    if uncovered:
+        raise ValueError(
+            "Live apps are missing from the 50-locale buyer-intent catalog: "
+            f"{sorted(uncovered)}"
+        )
+    if live_set == expected_live:
+        publisher_intent_catalog.build(pages)
+        page_records = localized_page_records(records, pages)
+        page_locales = ["en", *OFFICIAL_LOCALES]
+    else:
+        page_records = records
+        page_locales = ["en", "zh-Hant"]
+
+    copy_pwa_icons(pages)
+    outputs = []
+    for locale in page_locales:
+        relative = Path("tools") / f"{SLUG}.html"
+        if locale != "en":
+            relative = Path(locale) / relative
+        page = render_page(locale, page_records)
+        write_text_if_changed(
+            pages / relative,
+            page,
+        )
+        write_text_if_changed(
+            pages / opensearch_relative(locale),
+            opensearch_document(locale),
+        )
+        write_text_if_changed(
+            pages / manifest_relative(locale),
+            manifest_document(locale),
+        )
+        if locale == "en":
+            write_text_if_changed(pages / "find-app.html", page)
+        outputs.append(canonical(locale))
+    for locale in page_locales:
+        index = pages / "tools" / "index.html"
+        if locale != "en":
+            index = pages / locale / "tools" / "index.html"
+        _update_one_index(index, locale)
+    return outputs
+
+
+def main() -> None:
+    live = live_app_keys(APPSTORE, str(PAGES), refresh=False)
+    expected = set(publisher_intent_catalog.PERSONAS)
+    uncovered = set(live) - expected
+    if uncovered:
+        raise RuntimeError(
+            "Live apps are missing from the 50-locale buyer-intent catalog: "
+            f"{sorted(uncovered)} — add their personas to answer_personas."
+        )
+    # The cached set is only a hint. build performs fresh GETs for the full
+    # versioned roster and retains unobserved apps as explicitly unknown.
+    for output in build(live_keys=live):
+        print(f"portfolio app finder -> {output}")
+    print(f"catalog JSON -> {data_url('.json')}")
+    print(f"catalog schema -> {data_url('.schema.json')}")
+    print(f"tools sitemap -> {write_tools_sitemap()} urls")
+
+
+if __name__ == "__main__":
+    main()

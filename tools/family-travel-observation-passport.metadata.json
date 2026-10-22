@@ -1,0 +1,179 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LearningResource",
+      "@id": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.html#resource",
+      "name": "Free Family Travel Observation Passport",
+      "description": "Download a privacy-first, print-ready 14-page family travel observation passport for 12 settings, with A4 and US Letter PDFs.",
+      "url": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.html",
+      "datePublished": "2026-07-11",
+      "dateModified": "2026-09-04",
+      "version": "1.0.0",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "learningResourceType": [
+        "Activity",
+        "Printable"
+      ],
+      "educationalUse": "Family-guided observation and bilingual travel vocabulary practice",
+      "interactivityType": "active",
+      "accessMode": [
+        "textual",
+        "visual"
+      ],
+      "accessModeSufficient": {
+        "@type": "ItemList",
+        "itemListElement": [
+          "textual"
+        ]
+      },
+      "audience": [
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "student"
+        },
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "parent"
+        },
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "teacher"
+        }
+      ],
+      "keywords": "family travel observation passport, printable travel activity, privacy-first travel worksheet, open educational resource",
+      "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.html",
+      "citation": [
+        "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.html",
+        "https://www.tsa.gov/travel/frequently-asked-questions/can-i-film-and-take-photos-security-checkpoint",
+        "https://www.faa.gov/travelers/fly_children/child_safety_seat_tips",
+        "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats",
+        "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/tips-families-and-links-airline-webpages",
+        "https://www.nps.gov/kids/junior-rangers.htm",
+        "https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy"
+      ],
+      "creator": {
+        "@type": "Organization",
+        "name": "Lumi Apps - iOS App Guide",
+        "url": "https://open.cait518.cc/ios-app-guide"
+      },
+      "encoding": [
+        {
+          "@type": "MediaObject",
+          "name": "A4 PDF — Free Family Travel Observation Passport",
+          "contentUrl": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport-en-a4.pdf",
+          "encodingFormat": "application/pdf",
+          "contentSize": "27859 bytes",
+          "inLanguage": "en",
+          "additionalProperty": {
+            "@type": "PropertyValue",
+            "name": "SHA-256",
+            "value": "caf17ef834e2ed13fd637db0e445bd53ff81ac8192e3fdb09da12bf00ff418d2"
+          }
+        },
+        {
+          "@type": "MediaObject",
+          "name": "US Letter PDF — Free Family Travel Observation Passport",
+          "contentUrl": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport-en-letter.pdf",
+          "encodingFormat": "application/pdf",
+          "contentSize": "27890 bytes",
+          "inLanguage": "en",
+          "additionalProperty": {
+            "@type": "PropertyValue",
+            "name": "SHA-256",
+            "value": "bf5e4503428e1b0da92d846c52e494080d8befc06715343cd6039cd4abd45c02"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html#resource",
+      "name": "免費親子旅行觀察護照",
+      "description": "下載隱私優先、可直接列印的 14 頁親子旅行觀察護照，涵蓋 12 種情境，提供 A4 與 US Letter PDF。",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html",
+      "datePublished": "2026-07-11",
+      "dateModified": "2026-09-04",
+      "version": "1.0.0",
+      "inLanguage": "zh-Hant",
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "learningResourceType": [
+        "Activity",
+        "Printable"
+      ],
+      "educationalUse": "家庭陪同觀察與英繁雙語旅行詞彙練習",
+      "interactivityType": "active",
+      "accessMode": [
+        "textual",
+        "visual"
+      ],
+      "accessModeSufficient": {
+        "@type": "ItemList",
+        "itemListElement": [
+          "textual"
+        ]
+      },
+      "audience": [
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "student"
+        },
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "parent"
+        },
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "teacher"
+        }
+      ],
+      "keywords": "親子旅行觀察護照, 可列印旅行活動, 隱私優先旅行學習單, 開放教育資源",
+      "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.html",
+      "citation": [
+        "https://open.cait518.cc/ios-app-guide/data/family-travel-missions.html",
+        "https://www.tsa.gov/travel/frequently-asked-questions/can-i-film-and-take-photos-security-checkpoint",
+        "https://www.faa.gov/travelers/fly_children/child_safety_seat_tips",
+        "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats",
+        "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/tips-families-and-links-airline-webpages",
+        "https://www.nps.gov/kids/junior-rangers.htm",
+        "https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy"
+      ],
+      "creator": {
+        "@type": "Organization",
+        "name": "Lumi Apps - iOS App Guide",
+        "url": "https://open.cait518.cc/ios-app-guide"
+      },
+      "encoding": [
+        {
+          "@type": "MediaObject",
+          "name": "A4 PDF — 免費親子旅行觀察護照",
+          "contentUrl": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport-zh-hant-a4.pdf",
+          "encodingFormat": "application/pdf",
+          "contentSize": "32687 bytes",
+          "inLanguage": "zh-Hant",
+          "additionalProperty": {
+            "@type": "PropertyValue",
+            "name": "SHA-256",
+            "value": "1f790a3ff9cd35fb01f3818d00998992815ab8c216e394c9c2f330016bd3e33e"
+          }
+        },
+        {
+          "@type": "MediaObject",
+          "name": "US Letter PDF — 免費親子旅行觀察護照",
+          "contentUrl": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport-zh-hant-letter.pdf",
+          "encodingFormat": "application/pdf",
+          "contentSize": "32682 bytes",
+          "inLanguage": "zh-Hant",
+          "additionalProperty": {
+            "@type": "PropertyValue",
+            "name": "SHA-256",
+            "value": "0732d12b5365ee954bf6f3771e20352eed1d28d3574fc4cde7261a78f30cf95e"
+          }
+        }
+      ]
+    }
+  ]
+}

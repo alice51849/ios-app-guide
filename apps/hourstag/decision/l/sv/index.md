@@ -1,0 +1,28 @@
+---
+title: "HoursTag: Timmar att köpa — Timlön och utgifter | iOS App"
+lang: "sv"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/sv/index.html"
+modified: "2026-10-21"
+app_store_id: "6754218117"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# HoursTag: Timmar att köpa — Timlön och utgifter | iOS App
+
+Vad kostar det egentligen? Inte i kronor – i timmar av ditt liv.
+
+- Ekonomi & resor
+- Betald nedladdning
+- Inget konto
+- Inga annonser
+- Ingen spårning
+- Privat / på enheten
+- App Store · 69,00 kr
+
+[Hämta HoursTag: Timmar att köpa i App Store](https://apps.apple.com/se/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
+
+[Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/hourstag.html)
+
+> Detta är förstapartsinnehåll publicerat av Lumi Studio, utvecklaren av varje listad app.

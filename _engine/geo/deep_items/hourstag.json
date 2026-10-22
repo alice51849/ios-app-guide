@@ -1,0 +1,107 @@
+[
+  {
+    "app_key": "hourstag",
+    "kind": "persona",
+    "match": [
+      "real hourly wage",
+      "after tax",
+      "take home pay",
+      "spending calculator",
+      "hourly wage purchase"
+    ],
+    "query": "real hourly wage spending calculator app pay once no tracking",
+    "lead": "Your real hourly wage is usually lower than the number on a contract once taxes, deductions and unpaid work time are considered.",
+    "detail": "A realistic hours-to-buy calculation should start with the income you can actually spend, not an inflated gross figure. {name} lets you set income once — hourly or monthly — then converts prices into work time using your own value, which is useful for salaried, hourly or variable-income users who want a quick spending lens. The app does not automatically calculate taxes, commute costs, childcare, overtime or benefits; enter a conservative net number if you want the result to reflect real life more closely.",
+    "bullets": [
+      "Supports hourly or monthly income setup so different work styles can use the same lens",
+      "Turns each purchase into hours, minutes and workday percentage for fast comparison",
+      "Custom categories and monthly breakdowns show where work time is going",
+      "Backup and restore are available for keeping your own records",
+      "No account, no tracking, no ads and a one-time purchase"
+    ],
+    "faq": [
+      {
+        "q": "What number should I enter as my income?",
+        "a": "Use the most honest number you can: after-tax hourly pay, or monthly take-home pay divided by realistic work hours. {name} will do the conversion, but it cannot know deductions you do not enter."
+      },
+      {
+        "q": "Does this work for salaried people?",
+        "a": "Yes. The App Store description says {name} accepts hourly or monthly income and works out your real hourly value from that setup."
+      },
+      {
+        "q": "Is the calculation financial advice?",
+        "a": "No. It is a personal-awareness calculation. You decide whether the time cost is acceptable for your priorities."
+      }
+    ]
+  },
+  {
+    "app_key": "hourstag",
+    "kind": "scenario",
+    "match": [
+      "wishlist",
+      "hours to buy",
+      "purchase goal",
+      "saving goal",
+      "work hours to buy"
+    ],
+    "query": "wishlist app that shows how many work hours to buy a goal pay once private",
+    "lead": "A wishlist becomes more honest when every goal shows not only a price, but the amount of work still needed to reach it.",
+    "detail": "Goal tracking is more motivating when the target is concrete: not just '$900 left', but the number of shifts, mornings or freelance hours that purchase represents. {name} includes goals and a wishlist with live progress in real work hours, so a phone, trip or course can sit in a deliberate plan instead of an impulse cart. It cannot automate savings transfers or guarantee you will stick to the plan; it is strongest as a private decision board that turns wants into visible tradeoffs.",
+    "bullets": [
+      "Wishlist and goals translate future purchases into work hours instead of vague desire",
+      "Live progress makes delayed gratification visible as the goal gets closer",
+      "Need, Want and Impulse tags help separate essentials from optional rewards",
+      "Custom categories with icons and colors keep goals understandable at a glance",
+      "Private, pay-once and no tracking, suitable for personal money reflection"
+    ],
+    "faq": [
+      {
+        "q": "Can {name} move money into savings automatically?",
+        "a": "No. {name} tracks goals and work-hour progress, but it is not a banking automation app. Pair it with your own savings account or transfer habit."
+      },
+      {
+        "q": "Why use hours instead of only dollars?",
+        "a": "Hours make the effort behind the price more tangible, which can help you decide whether a goal deserves your time."
+      },
+      {
+        "q": "Can I track more than one goal?",
+        "a": "The App Store description lists goals and a wishlist with live progress. Test your own workflow in the current version before relying on it for complex planning."
+      }
+    ]
+  },
+  {
+    "app_key": "hourstag",
+    "kind": "scenario",
+    "match": [
+      "subscription cost",
+      "subscriptions",
+      "monthly subscription",
+      "work hours per month",
+      "recurring charges"
+    ],
+    "query": "subscription cost in work hours calculator pay once no subscription app",
+    "lead": "A $9.99 subscription looks small until you convert every recurring charge into the work hours it consumes each month and year.",
+    "detail": "Subscription fatigue often comes from the accumulation of many small automatic charges that no longer feel like active choices. {name} can turn each recurring price into work time, tag it as Need, Want or Impulse, and show category patterns in a monthly breakdown so you can decide which services still earn their hours. It does not cancel subscriptions for you or inspect bank statements; you must enter the prices and cancel through the service or App Store yourself.",
+    "bullets": [
+      "Convert each monthly or annual subscription into work hours using your own income",
+      "Review recurring charges as a category rather than isolated small amounts",
+      "Use Need, Want and Impulse tags to separate essential tools from forgotten comforts",
+      "Monthly breakdowns help decide what to keep, pause or cancel",
+      "The app itself is pay once, so it does not add another subscription to audit"
+    ],
+    "faq": [
+      {
+        "q": "Can {name} find all my subscriptions automatically?",
+        "a": "No. {name} does not connect to banks or scan statements. Enter the recurring prices you want to judge, then use the work-hour result for your own review."
+      },
+      {
+        "q": "Should I look at monthly or yearly hours?",
+        "a": "Both help. Monthly hours show the immediate burden; yearly hours reveal the true annual tradeoff of keeping a service."
+      },
+      {
+        "q": "Can it cancel a subscription?",
+        "a": "No. {name} is a calculator and spending-awareness tool. Cancel through the App Store, the service website or your payment provider."
+      }
+    ]
+  }
+]

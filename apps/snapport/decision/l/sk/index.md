@@ -1,0 +1,28 @@
+---
+title: "najlepšia aplikácia na pasové fotografie pre bábätká a batoľatá doma"
+lang: "sk"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/sk/index.html"
+modified: "2026-10-21"
+app_store_id: "6780575828"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# najlepšia aplikácia na pasové fotografie pre bábätká a batoľatá doma
+
+Pre pasovú fotografiu bábätka nesmie byť v zábere nikto iný a pozadie musí byť jednoliate. Snapport vznikol presne z tohto problému.
+
+- Fotografia a nástroje
+- Platené stiahnutie
+- Bez účtu
+- Bez reklám
+- Bez sledovania
+- Súkromné / v zariadení
+- App Store · 6,99 €
+
+[Stiahnite si Snapport v App Store →](https://apps.apple.com/sk/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
+
+[Prečítať celý sprievodca](https://open.cait518.cc/ios-app-guide/sk/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
+
+> Sprievodcu napísal vývojár aplikácie, štúdio Lumi Studio. Názvy aplikácií sú ochrannými známkami svojich vlastníkov a používajú sa len na identifikáciu. Pri rozhodnutiach týkajúcich sa dokumentov, zdravia, školy a produktivity si tam, kde je to potrebné, overte oficiálne požiadavky.

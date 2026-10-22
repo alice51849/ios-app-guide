@@ -1,0 +1,245 @@
+# Direktori aplikasi — iOS App Guide
+
+> Informasi terstruktur tiap aplikasi iOS — fitur, harga, dan FAQ.
+
+locale: id
+apps: 54
+- Direktori aplikasi: https://open.cait518.cc/ios-app-guide/id/tools/private-pay-once-iphone-app-finder.html
+- Direktori aplikasi · PWA: https://open.cait518.cc/ios-app-guide/id/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/id.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/id.json
+- Direktori aplikasi · SVG: https://open.cait518.cc/ios-app-guide/id/visuals/
+- Direktori aplikasi · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Direktori aplikasi · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Direktori aplikasi · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Direktori aplikasi · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Direktori aplikasi · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- Direktori aplikasi · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- Direktori aplikasi · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Direktori aplikasi · Agent Skill · id: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/id.json
+- Direktori aplikasi · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Direktori aplikasi · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Direktori aplikasi · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Direktori aplikasi · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Direktori aplikasi · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Direktori aplikasi · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Direktori aplikasi · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Direktori aplikasi · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Direktori aplikasi · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/id/notesstudio100.html) — Catatan tulis tangan & PDF
+  - Akhir tahun waktunya UAS: catat dengan tulisan tangan, tandai PDF materi, simpan rekaman kuliah di halaman yang sama, lalu ulangi dengan kartu hafalan. Tanpa akun.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: File jadi prompt AI](https://open.cait518.cc/ios-app-guide/id/aibriefpack.html) — Buat prompt dari file & PDF
+  - Laporan akhir tahun dan rencana libur Natal? Tambahkan tangkapan layar, PDF, catatan, dan tautan; dibaca di perangkat, data pribadi ditandai, jadi ringkasan jelas.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: pelatih Inggris](https://open.cait518.cc/ios-app-guide/id/aim990.html) — Diagnosis TOEIC 8 menit
+  - Latih kelemahan, bukan yang sudah dikuasai. Diagnosis 8 menit menemukan 3 kemampuan terlemah, dilatih tiap hari dan diukur ulang di hari ke-30. Offline, tanpa akun.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: Skor kesehatan baterai](https://open.cait518.cc/ios-app-guide/id/battai.html) — Aturan, sumber, dan batas yang jelas
+  - Pahami baterai Anda dari waktu ke waktu Aturan, sumber, dan batas yang jelas Buka riwayat lebih dalam, perencanaan, dan laporan Sekali bayar. Tanpa langganan.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily: kalkulator & tema](https://open.cait518.cc/ios-app-guide/id/caldaily.html) — Widget, alat, riwayat rapi
+  - Hitung langsung di Layar Utama: widget-nya kalkulator lengkap. Tip, diskon, pinjaman, dan 5 alat bawaan lainnya. Tanpa iklan.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/id/countdaysnow.html) — Fokus Harian · Arah Pribadi
+  - Fokus Harian: pilih Sejak, Hari ini, atau Ke depan secara pribadi, lalu lihat tiga pilihan terbaru bersama tanggal penting Anda.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: Pembuat CV ATS](https://open.cait518.cc/ios-app-guide/id/cvdesk.html) — Buat CV lamaran kerja & PDF
+  - Skor ATS instan, perbaikan yang jelas, dan pandangan 6 detik ala perekrut. Pratinjau PDF akhir kapan saja. Tanpa akun.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: Kalender Menstruasi](https://open.cait518.cc/ios-app-guide/id/cyca.html) — Masa subur & ovulasi, privat
+  - Liburan Natal dan Tahun Baru yang padat? Catat haid, aliran, gejala, suasana hati, dan catatan dalam hitungan detik. Semua tersimpan di perangkatmu, tanpa akun.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite](https://open.cait518.cc/ios-app-guide/id/dailymatelite.html) — Percakapan liburan, 50 bahasa
+  - Pahami ucapan orang di bandara, hotel, atau restoran, lalu pelajari cara menjawab yang wajar. Dasar-dasar traveling di semua 50 bahasa, bisa offline.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: Kalimat Sehari-hari](https://open.cait518.cc/ios-app-guide/id/dailymate.html) — Belajar bahasa Inggris praktis
+  - Tahu kosakata tapi kaku saat bicara? Pelajari kalimat utuh dengan balasan alami: 8.400 kalimat, 47 bahasa, 84 situasi. Ada widget & Apple Watch, offline. Tanpa langganan.
+  - Harga: Unduhan berbayar dengan satu harga di muka dan tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: Pengukur desibel](https://open.cait518.cc/ios-app-guide/id/dbhalo.html) — Dosis bising dan jurnal tidur
+  - Pesta akhir tahun, tetangga berisik, atau dengkuran di malam hari? Lihat dB langsung di cincin Halo, perkirakan dosis kebisingan harian, dan catat dengkuran.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Jam Alarm Hari Kerja](https://open.cait518.cc/ios-app-guide/id/easyam.html) — Otomatis lewati libur nasional
+  - Natal dan Tahun Baru dilewati otomatis. Ambil cuti bersama atau liburan akhir tahun? Tambahkan sebagai hari libur: alarm diam dan berbunyi lagi di hari kerja pertama.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: Biaya perjalanan](https://open.cait518.cc/ios-app-guide/id/gmoneylite.html) — Anggaran harian di jam tangan
+  - Liburan Natal dan Tahun Baru ke luar negeri? Catat belanja dalam mata uang lokal, langsung lihat dalam mata uangmu, atur batas harian, dan tetap konversi saat offline.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: Catat & atur anggaran](https://open.cait518.cc/ios-app-guide/id/gmoney.html) — Pengeluaran wisata dan kurs
+  - Libur Natal dan Tahun Baru sudah dekat? Catat pengeluaran per kategori atau perjalanan, atur anggaran harian, dan konversi mata uang dengan kurs live atau manual.
+  - Harga: Unduhan berbayar dengan satu harga di muka dan tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: Harga dalam jam](https://open.cait518.cc/ios-app-guide/id/hourstaglite.html) — Belanja sadar: harga asli
+  - Musim belanja akhir tahun: sebelum beli, lihat harganya dalam jam kerjamu, tandai Perlu, Ingin, atau Impulsif, dan lihat kerja di balik tujuanmu untuk tahun baru.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: Jam untuk Membeli](https://open.cait518.cc/ios-app-guide/id/hourstag.html) — Upah per jam & pengeluaran
+  - Belanja akhir tahun dan kado Natal? Sebelum beli, lihat setiap harga dalam jam kerja, tandai Perlu, Ingin, atau Impuls, dan rencanakan wishlist dalam jam kerja.
+  - Harga: Unduhan berbayar dengan satu harga di muka dan tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/id/ledmovingtext.html) — Papan teks menyala di layar
+  - Ubah layar jadi papan tulisan berjalan yang terang dalam hitungan detik, atau susun urutan pesan dan ganti dengan sekali ketuk atau timer. Layar penuh, tanpa internet.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: Blokir aplikasi](https://open.cait518.cc/ios-app-guide/id/lockhour.html) — Blokir Aplikasi & Waktu Layar
+  - Kunci aplikasi dan situs yang menyita waktumu sampai timer selesai. Mode fokus, belajar, dan tidur, mode ketat, statistik, dan streak. Tanpa akun.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo](https://open.cait518.cc/ios-app-guide/id/lumibopomofo.html) — Zhuyin: mandarin untuk anak
+  - Beri makan teman simbol sesuai bunyinya, tebalkan setiap goresan berurutan, naiki roller coaster nada, dan gabungkan bunyi di kereta. Bisa dipakai offline.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/id/lumibopomofopro.html) — Nada Mandarin & lembar kerja
+  - Semua 37 bunyi zhuyin: roller coaster nada, kereta suku kata, memancing, menebalkan huruf, balapan bintang. Orang tua pantau kemajuan dan cetak lembar kerja. Tanpa iklan.
+  - Harga: Unduhan berbayar dengan satu harga di muka dan tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Cuaca: Prakiraan Hari Ini](https://open.cait518.cc/ios-app-guide/id/lumiweather.html) — Skor Keluar Rumah & Pakaian
+  - Keluar sekarang atau nanti? Lumi mengubah prakiraan jadi skor keluar rumah 0–100 dan memberi tahu baju yang pas, perlu payung atau sunscreen. Per jam & 7 hari.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Lite: ABC Kids](https://open.cait518.cc/ios-app-guide/id/lumiletters.html) — Belajar menulis huruf Inggris
+  - Coba huruf A dan planet pertama: anak mendengar bunyi huruf, menebalkannya dengan jari, dan bermain kuis planet. Nanti bisa membuka 26 huruf. Tanpa iklan, bisa offline.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Pro: ABC Phonics](https://open.cait518.cc/ios-app-guide/id/lumiletterspro.html) — Inggris anak: bunyi huruf
+  - Anak mendengar kata, mencari bunyi awal, tengah, atau akhir, lalu menebalkan huruf. 26 huruf, 14 planet, lembar kerja siap cetak. Tanpa iklan, bisa dipakai offline.
+  - Harga: Unduhan berbayar dengan satu harga di muka dan tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Planet: Explorer](https://open.cait518.cc/ios-app-guide/id/lumimath.html) — Belajar berhitung anak TK & SD
+  - Jawab benar, planet pun menyala. 46 jenis soal bergambar: berhitung, penjumlahan, pengurangan, perkalian, jam, uang. Tanpa iklan, tanpa langganan.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Pro: Angka Anak](https://open.cait518.cc/ios-app-guide/id/lumimathpro.html) — Asah logika & soal cerita
+  - Logika, pola, dan soal cerita dalam 46 jenis soal. Latihan titik lemah, laporan belajar, dan lembar kerja siap cetak. Tanpa iklan dan tanpa pembelian dalam aplikasi.
+  - Harga: Unduhan berbayar dengan satu harga di muka dan tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet](https://open.cait518.cc/ios-app-guide/id/lumimission.html) — Papan hadiah & stiker bintang
+  - Tak perlu mengomel terus: setiap misi selesai memberi bintang, memberi makan Lumi, dan mengisi album 100 stiker. Tambahkan tugas sendiri. Tanpa iklan, tanpa daftar.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet Pro](https://open.cait518.cc/ios-app-guide/id/lumimissionpro.html) — Rutinitas pagi & malam anak
+  - Semua rutinitas termasuk: makan, sikat gigi, tidur, merapikan mainan, siap sekolah, tugas sendiri, ringkasan 7 hari, dan pengingat malam. Tanpa iklan, bisa offline.
+  - Harga: Unduhan berbayar dengan satu harga di muka dan tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: Hapus data Anda](https://open.cait518.cc/ios-app-guide/id/maskmyfile.html) — Samarkan data sebelum berbagi
+  - Kirim salinan paspor untuk liburan akhir tahun atau slip gaji untuk sewa rumah? Temukan data pribadi, tutup permanen hanya bagian yang dipilih, dan hapus metadata.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: Terakhir](https://open.cait518.cc/ios-app-guide/id/mochidonestamp.html) — Kapan dikerjakan? Pengingat
+  - Tak perlu mengingat kapan terakhir melakukannya. Cap selesai, Mochi mengingat dan memberi tahu saat jatuh tempo. Sprei, filter, tanaman, telepon, bagikan ke keluarga.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: Checklist Lucu](https://open.cait518.cc/ios-app-guide/id/mochi.html) — To do list, pengingat & widget
+  - Dari UAS sampai libur akhir tahun, atur kuliah, kerja, dan belanja di checklist lucu. Ketuk lingkaran kecil saat selesai, pilih tema, dan pasang widget di Home Screen.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag](https://open.cait518.cc/ios-app-guide/id/moneytag.html) — Proyek · Tag · Laporan
+  - Jualan akhir tahun atau proyek sampingan jelang tutup buku? Proyekmu menampilkan pemasukan dikurangi pengeluaran sebagai hasil bersih, dalam mata uang pilihanmu.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: Slide AI](https://open.cait518.cc/ios-app-guide/id/onepageppt.html) — Presentasi dari catatan & PDF
+  - Rapat evaluasi akhir tahun? Tempel catatan, PDF, tangkapan layar, atau CSV, lalu dapatkan slide 16:9 rapi: poin utama jadi judul, angka jadi grafik. Simpan sebagai PNG.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: Filter film](https://open.cait518.cc/ios-app-guide/id/photocream.html) — Kamera analog & efek vintage
+  - Foto kumpul akhir tahun dan lampu Natal di bawah cahaya kuning? Atur cahaya, warna, dan kurva, haluskan kulit tanpa kehilangan detail, lalu tambahkan grain film.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: Bersihkan foto](https://open.cait518.cc/ios-app-guide/id/picclear.html) — Bersihkan foto duplikat
+  - Memori penuh? Kosongkan ruang bergiga-giga: temukan foto duplikat, foto mirip, tangkapan layar lama, dan video besar, lalu periksa sebelum dihapus. Dipindai di perangkat.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: Pindai & Buat](https://open.cait518.cc/ios-app-guide/id/qrcodehalo.html) — Langsung buka, cek belakangan
+  - Pindai dan beres: tautan terbuka, Wi-Fi memunculkan permintaan iOS, panggilan dan email siap. Setiap pindaian tersimpan punya Cek keamanan di Riwayat.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: markah buku AI](https://open.cait518.cc/ios-app-guide/id/savetag.html) — Simpan tautan, baca nanti
+  - Ide kado, resep akhir tahun, dan tempat liburan hilang di chat? Bagikan link dari aplikasi mana pun, otomatis diberi tag di perangkat dan bisa dicari lewat maknanya.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: PDF & OCR](https://open.cait518.cc/ios-app-guide/id/scanto.html) — Pemindai Dokumen Offline
+  - Struk belanja akhir tahun, kartu garansi, dan dokumen tutup buku menumpuk? Pindai jadi PDF tajam; OCR di perangkat menemukan tiap dokumen lewat satu kata. Tanpa internet.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: Suara Tidur](https://open.cait518.cc/ios-app-guide/id/sereno.html) — White noise, hujan & ombak
+  - Hujan, laut, api, dan lainnya: 140+ suara menenangkan untuk tidur dan fokus. Racik sendiri, timer memudar saat terlelap, bangun dengan kicau burung. Offline, tanpa akun.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/id/shotinbox.html) — Tangkapan layar mudah dicari
+  - Belanja akhir tahun dan liburan bikin struk, tiket, dan pesanan menumpuk di tangkapan layar. Semua rapi sendiri, teksnya bisa dicari, dan paket bisa dilacak.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: Ambil pasfoto](https://open.cait518.cc/ios-app-guide/id/snapportlite.html) — Potret presisi sesuai ukuran
+  - Liburan akhir tahun ke luar negeri atau perpanjang paspor? Potong foto ke ukuran tepat dengan template, panduan wajah, dan latar putih, biru, atau merah, di perangkat.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: Pasfoto, Foto Paspor](https://open.cait518.cc/ios-app-guide/id/snapport.html) — 35x45 dan lembar cetak
+  - Liburan akhir tahun ke luar negeri atau perpanjang paspor? Buat foto paspor dan visa di rumah: template ukuran umum, panduan wajah, latar putih, dan lembar siap cetak.
+  - Harga: Unduhan berbayar dengan satu harga di muka dan tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/id/sononote.html) — Suara jadi teks · Catatan
+  - Bicara saja, Sono Note mengubahnya jadi transkrip rapi, ringkasan, poin penting, dan tugas, bahkan draf email. Untuk rapat, kuliah, dan telepon. Tanpa akun.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: Jam Meja Flip](https://open.cait518.cc/ios-app-guide/id/stayclock.html) — Jam dan kalender selalu aktif
+  - Menjelang akhir tahun: saat mengisi daya, ponsel jadi jam besar yang terbaca dari ujung kamar, lengkap dengan kalender Bulan, lonceng setiap jam, dan alarm sederhana.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: Pencatat Waktu](https://open.cait518.cc/ios-app-guide/id/studydown.html) — Telungkupkan
+  - Ujian akhir semester dan tugas akhir tahun? Pilih aktivitas, letakkan ponsel menghadap ke bawah dan waktu dihitung; diangkat, jeda. Lihat hari ini dan minggu ini.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet Liburan Anak](https://open.cait518.cc/ios-app-guide/id/tripplanet.html) — Misi seru di pesawat & mobil
+  - Penerbangan, perjalanan mobil, tempat baru jadi misi: pakai sabuk, terima kasih ke kru, coba sesuap. Tiap misi buka hadiah, tiap perjalanan dapat stempel. Tanpa iklan.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: Rencana Trip](https://open.cait518.cc/ios-app-guide/id/tripbeelite.html) — Itinerary liburan harian
+  - Pulang kampung atau liburan akhir tahun? Susun perjalanan di satu linimasa harian, lengkap dengan detail penerbangan dan hotel, catatan, pengingat, dan info tiket.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: Rencana Perjalanan](https://open.cait518.cc/ios-app-guide/id/tripbee.html) — Trip bareng & daftar bawaan
+  - Trip bareng tanpa ribet: keluarga dan teman edit perjalanan yang sama, ada ide cadangan saat hujan dan daftar bawaan tiap orang. Mau coba dulu? Cari “TripBee Lite”
+  - Harga: Unduhan berbayar dengan satu harga di muka dan tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: Foto Jernih](https://open.cait518.cc/ios-app-guide/id/unblurry.html) — Restorasi foto lama offline
+  - Liburan akhir tahun, Natal, dan malam Tahun Baru: foto buram atau gelap? Pertajam, kurangi noise, dan cerahkan foto cahaya rendah langsung di iPhone kamu.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: Pelacak Pemakaian AI](https://open.cait518.cc/ios-app-guide/id/claudeusagemini.html) — Batas Claude, Codex, Copilot
+  - Peringatan kustom di persentase mana pun, urutan menurut pengaturan ulang 5 jam atau mingguan, dan widget yang menggeser semua akun. Lihat sisa kuota setiap paket AI.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/id/wifiaidlite.html) — Internet mati? Cek penyebab
+  - Internet mati? Masalahnya di Wi-Fi, provider, atau cuma satu situs? Sekali ketuk menjalankan tes independen dan menunjukkan penyebab paling mungkin serta langkah lanjut.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: Temukan masalah WiFi](https://open.cait518.cc/ios-app-guide/id/wifiaid.html) — Diagnosis router, mesh & DNS
+  - Libur akhir tahun, semua di rumah pakai Wi-Fi yang sama? Saat lemot, cek Wi-Fi, DNS, dan internet sekali ketuk untuk tahu penyebab paling mungkin, atau cek satu situs.
+  - Harga: Unduhan berbayar dengan satu harga di muka dan tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite 5 Kata Sehari](https://open.cait518.cc/ios-app-guide/id/wordmatelite.html) — 44 bahasa, satu menit per hari
+  - Lima kata, satu menit sehari, dalam salah satu dari 44 bahasa. Dengar tiap kata, lihat dalam kalimat, dan jaga runtutanmu. Bisa offline, tanpa akun.
+  - Harga: Unduh gratis, beli sekali untuk membuka semua fitur. Tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: Belajar 44 Bahasa](https://open.cait518.cc/ios-app-guide/id/wordmate.html) — Kosakata, kartu kata, widget
+  - Liburan akhir tahun ke luar negeri atau resolusi Tahun Baru? Pelajari kata dalam 44 bahasa di waktu luang: 14 topik praktis, contoh kalimat, dan dengar pelafalannya.
+  - Harga: Unduhan berbayar dengan satu harga di muka dan tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: Ekstrak RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/id/zipbox.html) — Buka arsip tanpa iklan
+  - Foto liburan akhir tahun datang dalam 7z berkata sandi? Intip isinya, pratinjau foto dan PDF, lalu ekstrak hanya file yang kamu perlukan. Tanpa iklan.
+  - Harga: Unduhan berbayar dengan satu harga di muka dan tanpa langganan.
+  - App Store: https://apps.apple.com/id/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

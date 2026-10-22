@@ -1,0 +1,25 @@
+---
+title: "WiFi Aid Lite: WLAN-Test — Kein Internet? Ursache finden | iOS App"
+lang: "de-DE"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaidlite/decision/l/de-DE/index.html"
+modified: "2026-10-21"
+app_store_id: "6793414462"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# WiFi Aid Lite: WLAN-Test — Kein Internet? Ursache finden | iOS App
+
+Das echte Problem. Ohne Kauf ist insgesamt eine vollständige Prüfung möglich, mit einem beliebigen Tool. Ein optionaler Einmalkauf schaltet unbegrenzte Prüfungen und den Vorher-nachher-Vergleich nach der Behebung frei—kein Abo, keine Werbung oder Tracking. • Check starten — WLAN, DNS und Internet mit einem Tipp • Deep Check — Mehr Fakten und Stabilität • Website prüfen — Eine Seite oder das ganze Web • Fakten — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • Verbindung instabil — Schwankung • Test-Verlauf — Daten bleiben lokal auf deinem Gerät • Verbundener Knoten — Genauer Standort erkennt WLAN und aktuellen Knoten Kein Konto, keine Werbung, kein Tracking. Daten bleiben lokal auf deinem Gerät. Ohne Kauf ist insgesamt eine vollständige Prüfung möglich, mit einem beliebigen Tool. Ein optionaler Einmalkauf schaltet unbegrenzte Prüfungen und den Vorher-nachher-Vergleich nach der Behebung frei—kein Abo, keine Werbung oder Tracking.
+
+- Mehr
+- Kostenloser Einstieg · einmalige Freischaltung
+- Kein Konto
+- App Store · Kostenlos
+
+[WiFi Aid Lite: WLAN-Test im App Store laden](https://apps.apple.com/de/app/id6793414462?pt=118326163&ct=geo_pick&mt=8)
+
+[Lesen Sie den vollständigen Leitfaden](https://open.cait518.cc/ios-app-guide/de-DE/wifiaidlite.html)
+
+> Dieses Material wird direkt von Lumi Studio veröffentlicht, dem Entwickler aller aufgeführten Apps.

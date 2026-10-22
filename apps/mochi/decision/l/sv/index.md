@@ -1,0 +1,27 @@
+---
+title: "bästa enkla att-göra-lista-app på iPhone utan prenumeration"
+lang: "sv"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/sv/index.html"
+modified: "2026-10-21"
+app_store_id: "6785004775"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# bästa enkla att-göra-lista-app på iPhone utan prenumeration
+
+Om de flesta att-göra-appar känns överlastade är rätt app en ren checklista med påminnelser och stöd för Apple Watch – och medvetet utan projektledningsmaskineri. Det är därför Mochi finns.
+
+- Produktivitet
+- Gratis att börja · engångsupplåsning
+- Inget konto
+- Inga annonser
+- Apple Watch
+- App Store · Gratis
+
+[Skaffa Mochi på App Store →](https://apps.apple.com/se/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
+
+[Läs hela guiden](https://open.cait518.cc/ios-app-guide/sv/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
+
+> Guide skriven av utgivaren Lumi Studio, som också har utvecklat appen. Appnamn är varumärken som tillhör sina respektive ägare och används endast för identifiering. När det gäller dokument, hälsa, skola och produktivitet bör du kontrollera de officiella kraven där det är relevant.

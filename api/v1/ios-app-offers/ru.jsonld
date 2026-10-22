@@ -1,0 +1,3578 @@
+{
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#catalog",
+  "url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld",
+  "name": "Каталог намерений поиска издателя Lumi Studio",
+  "description": "Каталог, созданный издателем, с информацией о целевой аудитории каждого приложения, задачах, которые оно помогает решать, и прямой ссылкой в App Store.",
+  "inLanguage": "ru",
+  "dateModified": "2026-10-20",
+  "numberOfItems": 54,
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "url": "https://apps.apple.com/ru/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-notesstudio100",
+        "url": "https://apps.apple.com/ru/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+        "name": "100 Notes Studio",
+        "description": "100 Notes Studio — 100 Notes Studio — это приватное офлайн-пространство для рукописных и печатных заметок, разметки PDF, аудиозаписей, привязанных к странице, и учёбы. Бесплатное начало · Разовая разблокировка · Без подписки.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6798813048",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6798813048"
+          },
+          "name": "100 Notes Studio",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ru/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6798813048?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-offline-handwriting-notes-app-for-ipad-with-pdf-markup-no-subscription.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6798813048",
+          "inLanguage": "ru",
+          "description": "100 Notes Studio — 100 Notes Studio — это приватное офлайн-пространство для рукописных и печатных заметок, разметки PDF, аудиозаписей, привязанных к странице, и учёбы. Бесплатное начало · Разовая разблокировка · Без подписки.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-notesstudio100"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "url": "https://apps.apple.com/ru/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-aibriefpack",
+        "url": "https://apps.apple.com/ru/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+        "name": "AI Brief: Файлы в промпт ИИ",
+        "description": "Лучший контекст. Лучшие ответы.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6791658210",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6791658210"
+          },
+          "name": "AI Brief: Файлы в промпт ИИ",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ru/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6791658210?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/aibriefpack.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6791658210",
+          "inLanguage": "ru",
+          "description": "Лучший контекст. Лучшие ответы.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-aibriefpack"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "url": "https://apps.apple.com/ru/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-aim990",
+        "url": "https://apps.apple.com/ru/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Aim990",
+        "description": "Часть 5 кажется короткой, но вопросы с неполными предложениями могут отнимать много времени, если грамматика и словарный запас не автоматизированы.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6784974530",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6784974530"
+          },
+          "name": "Aim990",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6784974530?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6784974530",
+          "inLanguage": "ru",
+          "description": "Часть 5 кажется короткой, но вопросы с неполными предложениями могут отнимать много времени, если грамматика и словарный запас не автоматизированы.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-aim990"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "url": "https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-battai",
+        "url": "https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+        "name": "BattAI: Состояние батареи",
+        "description": "BattAI BattAI использует пять значений из публичных API iOS: уровень заряда, состояние зарядки, режим энергосбережения, тепловое состояние всего устройства и время. Остальные результаты рассчитываются по этим показаниям или добавляются вами. У каждого показателя указаны источник и ограничения.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802423998",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802423998"
+          },
+          "name": "BattAI: Состояние батареи",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/battai.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802423998",
+          "inLanguage": "ru",
+          "description": "BattAI BattAI использует пять значений из публичных API iOS: уровень заряда, состояние зарядки, режим энергосбережения, тепловое состояние всего устройства и время. Остальные результаты рассчитываются по этим показаниям или добавляются вами. У каждого показателя указаны источник и ограничения.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-battai"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "url": "https://apps.apple.com/ru/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-caldaily",
+        "url": "https://apps.apple.com/ru/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+        "name": "CalDaily: калькулятор и темы",
+        "description": "Калькулятор, который остаётся с вами, потому что помнит, о чём было каждое число.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794178671",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794178671"
+          },
+          "name": "CalDaily: калькулятор и темы",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ru/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6794178671?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/caldaily.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794178671",
+          "inLanguage": "ru",
+          "description": "Калькулятор, который остаётся с вами, потому что помнит, о чём было каждое число.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-caldaily"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "url": "https://apps.apple.com/ru/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-countdaysnow",
+        "url": "https://apps.apple.com/ru/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+        "name": "CountDaysNow: Event Counter",
+        "description": "• Фокус дня Прошло · Сегодня · Впереди — Сохранить",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6807079789",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6807079789"
+          },
+          "name": "CountDaysNow: Event Counter",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ru/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6807079789?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/countdaysnow.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6807079789",
+          "inLanguage": "ru",
+          "description": "• Фокус дня Прошло · Сегодня · Впереди — Сохранить",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-countdaysnow"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "url": "https://apps.apple.com/ru/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-cvdesk",
+        "url": "https://apps.apple.com/ru/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+        "name": "CV Desk",
+        "description": "При смене сферы проблема с резюме иная: ваш опыт реальный, но на бумаге «несвязанный», и фильтры ATS отбрасывают вас ещё до того, как резюме прочитает человек. Именно этот пробел и закрывает CV Desk.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6781337213",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6781337213"
+          },
+          "name": "CV Desk",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ru/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6781337213?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6781337213",
+          "inLanguage": "ru",
+          "description": "При смене сферы проблема с резюме иная: ваш опыт реальный, но на бумаге «несвязанный», и фильтры ATS отбрасывают вас ещё до того, как резюме прочитает человек. Именно этот пробел и закрывает CV Desk.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-cvdesk"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "url": "https://apps.apple.com/ru/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-cyca",
+        "url": "https://apps.apple.com/ru/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Cyca",
+        "description": "В категории, где важна конфиденциальность данных, правильное приложение для отслеживания цикла хранит всё — поток, настроение, симптомы, температуру, интимные данные — на вашем устройстве, без учётной записи и облачной синхронизации. Cyca делает только это и не берётся за остальное.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6782251621",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6782251621"
+          },
+          "name": "Cyca",
+          "operatingSystem": "iOS",
+          "applicationCategory": "HealthApplication",
+          "url": "https://apps.apple.com/ru/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6782251621?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6782251621",
+          "inLanguage": "ru",
+          "description": "В категории, где важна конфиденциальность данных, правильное приложение для отслеживания цикла хранит всё — поток, настроение, симптомы, температуру, интимные данные — на вашем устройстве, без учётной записи и облачной синхронизации. Cyca делает только это и не берётся за остальное.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-cyca"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "url": "https://apps.apple.com/ru/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-dailymate",
+        "url": "https://apps.apple.com/ru/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+        "name": "DailyMate",
+        "description": "Перед поездкой полные фразы для реальных ситуаций полезнее, чем отдельные слова, которые нужно собирать под давлением. DailyMate вырос как раз из этой проблемы.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790418321",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790418321"
+          },
+          "name": "DailyMate",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6790418321?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790418321",
+          "inLanguage": "ru",
+          "description": "Перед поездкой полные фразы для реальных ситуаций полезнее, чем отдельные слова, которые нужно собирать под давлением. DailyMate вырос как раз из этой проблемы.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-dailymate"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "999",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "url": "https://apps.apple.com/ru/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-dailymatelite",
+        "url": "https://apps.apple.com/ru/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+        "name": "DailyMate Lite: Живые фразы",
+        "description": "Говорите уверенно именно тогда, когда это нужно. DailyMate Lite превращает жизненные ситуации в короткие тренировки: вы видите первую реплику и учитесь",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794725568",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794725568"
+          },
+          "name": "DailyMate Lite: Живые фразы",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6794725568?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/dailymatelite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794725568",
+          "inLanguage": "ru",
+          "description": "Говорите уверенно именно тогда, когда это нужно. DailyMate Lite превращает жизненные ситуации в короткие тренировки: вы видите первую реплику и учитесь",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-dailymatelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "url": "https://apps.apple.com/ru/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-dbhalo",
+        "url": "https://apps.apple.com/ru/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+        "name": "dB Halo: Шумомер",
+        "description": "dB Halo — шумомер для iPhone, iPad и Apple Watch. Все данные обрабатываются на устройстве. Кольцо Halo помогает сразу оценить текущий уровень звука в дБ",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806826699",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806826699"
+          },
+          "name": "dB Halo: Шумомер",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ru/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/dbhalo.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806826699",
+          "inLanguage": "ru",
+          "description": "dB Halo — шумомер для iPhone, iPad и Apple Watch. Все данные обрабатываются на устройстве. Кольцо Halo помогает сразу оценить текущий уровень звука в дБ",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-dbhalo"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "url": "https://apps.apple.com/ru/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-easyam",
+        "url": "https://apps.apple.com/ru/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+        "name": "EasyAM: Умный будильник и часы",
+        "description": "Зазвонит ли завтра будильник? С EasyAM об этом больше не нужно думать: он сам решает, день за днём. В рабочие дни будит, в праздники и в отпуске молчит",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6821790092",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6821790092"
+          },
+          "name": "EasyAM: Умный будильник и часы",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ru/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6821790092?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/easyam.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6821790092",
+          "inLanguage": "ru",
+          "description": "Зазвонит ли завтра будильник? С EasyAM об этом больше не нужно думать: он сам решает, день за днём. В рабочие дни будит, в праздники и в отпуске молчит",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-easyam"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "url": "https://apps.apple.com/ru/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-gmoney",
+        "url": "https://apps.apple.com/ru/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+        "name": "G+Money",
+        "description": "В поездке нужен бюджетный трекер, который работает офлайн в стране без данных, поддерживает несколько валют и не требует учётной записи — организованный по поездкам, чтобы каждый отпуск был отдельным. Именно этот пробел и закрывает G+Money.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6755782939",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6755782939"
+          },
+          "name": "G+Money",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/ru/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6755782939?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6755782939",
+          "inLanguage": "ru",
+          "description": "В поездке нужен бюджетный трекер, который работает офлайн в стране без данных, поддерживает несколько валют и не требует учётной записи — организованный по поездкам, чтобы каждый отпуск был отдельным. Именно этот пробел и закрывает G+Money.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-gmoney"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "449",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "url": "https://apps.apple.com/ru/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-gmoneylite",
+        "url": "https://apps.apple.com/ru/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+        "name": "G+Money Lite: Траты в поездке",
+        "description": "G+Money Lite — Умный трекер валюты и расходов для путешествий",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6793436548",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6793436548"
+          },
+          "name": "G+Money Lite: Траты в поездке",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/ru/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6793436548?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/gmoneylite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6793436548",
+          "inLanguage": "ru",
+          "description": "G+Money Lite — Умный трекер валюты и расходов для путешествий",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-gmoneylite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "url": "https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-hourstaglite",
+        "url": "https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+        "name": "HoursTag Lite: Цена в часах",
+        "description": "HoursTag Lite - Увидьте настоящую цену вещей",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794039979",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794039979"
+          },
+          "name": "HoursTag Lite: Цена в часах",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/hourstaglite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794039979",
+          "inLanguage": "ru",
+          "description": "HoursTag Lite - Увидьте настоящую цену вещей",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-hourstaglite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "url": "https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-hourstag",
+        "url": "https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+        "name": "HoursTag: Часы для покупки",
+        "description": "Сколько это стоит на самом деле? Не в рублях, а в часах вашей жизни.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6754218117",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6754218117"
+          },
+          "name": "HoursTag: Часы для покупки",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/hourstag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6754218117",
+          "inLanguage": "ru",
+          "description": "Сколько это стоит на самом деле? Не в рублях, а в часах вашей жизни.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-hourstag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "449",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "url": "https://apps.apple.com/ru/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-ledmovingtext",
+        "url": "https://apps.apple.com/ru/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+        "name": "LED Moving Text",
+        "description": "Наберите фразу и поднимите iPhone. Из последнего ряда, через весь зал прилёта или поверх стойки её прочитают с одного взгляда.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806639602",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806639602"
+          },
+          "name": "LED Moving Text",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ru/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6806639602?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/ledmovingtext.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806639602",
+          "inLanguage": "ru",
+          "description": "Наберите фразу и поднимите iPhone. Из последнего ряда, через весь зал прилёта или поверх стойки её прочитают с одного взгляда.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-ledmovingtext"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "url": "https://apps.apple.com/ru/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lockhour",
+        "url": "https://apps.apple.com/ru/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+        "name": "LockHour Pro",
+        "description": "Во время экзаменов сила воли — не инструмент, нужен жёсткий тайм-блок. Ради этого LockHour Pro и сделан.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6780107485",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6780107485"
+          },
+          "name": "LockHour Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ru/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6780107485?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6780107485",
+          "inLanguage": "ru",
+          "description": "Во время экзаменов сила воли — не инструмент, нужен жёсткий тайм-блок. Ради этого LockHour Pro и сделан.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lockhour"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "url": "https://apps.apple.com/ru/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumibopomofo",
+        "url": "https://apps.apple.com/ru/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Bopomofo",
+        "description": "Для ребёнка, который впервые учит чжуинь, приложение должно охватывать все 37 символов через трассировку и игру — для возраста 4–7 лет, без рекламы и сбора данных. Именно этот пробел и закрывает Lumi Bopomofo.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6773017109",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6773017109"
+          },
+          "name": "Lumi Bopomofo",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6773017109?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6773017109",
+          "inLanguage": "ru",
+          "description": "Для ребёнка, который впервые учит чжуинь, приложение должно охватывать все 37 символов через трассировку и игру — для возраста 4–7 лет, без рекламы и сбора данных. Именно этот пробел и закрывает Lumi Bopomofo.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumibopomofo"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "url": "https://apps.apple.com/ru/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumibopomofopro",
+        "url": "https://apps.apple.com/ru/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Bopomofo Pro",
+        "description": "Билингвальные дети, изучающие Zhuyin дома, нуждаются в полном пути через звуки, символы, тоны и смешивание, с достаточной игровой повторяемостью для освоения системы. Именно этот пробел и закрывает Lumi Bopomofo Pro.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6775773117",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6775773117"
+          },
+          "name": "Lumi Bopomofo Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6775773117?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6775773117",
+          "inLanguage": "ru",
+          "description": "Билингвальные дети, изучающие Zhuyin дома, нуждаются в полном пути через звуки, символы, тоны и смешивание, с достаточной игровой повторяемостью для освоения системы. Именно этот пробел и закрывает Lumi Bopomofo Pro.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumibopomofopro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "799",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "url": "https://apps.apple.com/ru/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumiletters",
+        "url": "https://apps.apple.com/ru/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Letters",
+        "description": "Для маленького ребёнка критично отсутствие рекламы и сбора данных — обучающее приложение должно учить в игровом цикле без рекламы, без сбора данных и с единовременной разблокировкой, которой родители могут доверять. Ради этого Lumi Letters и сделан.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6778748533",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6778748533"
+          },
+          "name": "Lumi Letters",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6778748533?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6778748533",
+          "inLanguage": "ru",
+          "description": "Для маленького ребёнка критично отсутствие рекламы и сбора данных — обучающее приложение должно учить в игровом цикле без рекламы, без сбора данных и с единовременной разблокировкой, которой родители могут доверять. Ради этого Lumi Letters и сделан.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumiletters"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "url": "https://apps.apple.com/ru/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumiletterspro",
+        "url": "https://apps.apple.com/ru/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Letters Pro",
+        "description": "Семьям, готовящим ребёнка к детскому саду, нужен полный путь раннего чтения, соединяющий звуки букв, обводку и составление слов, а не набор разрозненных алфавитных игр. Именно этот пробел и закрывает Lumi Letters Pro.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6778491147",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6778491147"
+          },
+          "name": "Lumi Letters Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6778491147?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6778491147",
+          "inLanguage": "ru",
+          "description": "Семьям, готовящим ребёнка к детскому саду, нужен полный путь раннего чтения, соединяющий звуки букв, обводку и составление слов, а не набор разрозненных алфавитных игр. Именно этот пробел и закрывает Lumi Letters Pro.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumiletterspro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "799",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "url": "https://apps.apple.com/ru/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumimath",
+        "url": "https://apps.apple.com/ru/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Math Planet",
+        "description": "Лучшее детское математическое приложение развивает логику — паттерны, последовательности, пространственное мышление — а не просто арифметику, и скрывает это в игре, в которую ребёнок хочет играть. Ради этого Lumi Math Planet и сделан.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6778269699",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6778269699"
+          },
+          "name": "Lumi Math Planet",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6778269699?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6778269699",
+          "inLanguage": "ru",
+          "description": "Лучшее детское математическое приложение развивает логику — паттерны, последовательности, пространственное мышление — а не просто арифметику, и скрывает это в игре, в которую ребёнок хочет играть. Ради этого Lumi Math Planet и сделан.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumimath"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "url": "https://apps.apple.com/ru/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumimathpro",
+        "url": "https://apps.apple.com/ru/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Math Pro",
+        "description": "Полное приложение ранней математики должно объединять счёт, понимание чисел и первые операции в одно приключение, а не разрозненные упражнения. Ради этого Lumi Math Pro и сделан.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6776958488",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6776958488"
+          },
+          "name": "Lumi Math Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6776958488?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6776958488",
+          "inLanguage": "ru",
+          "description": "Полное приложение ранней математики должно объединять счёт, понимание чисел и первые операции в одно приключение, а не разрозненные упражнения. Ради этого Lumi Math Pro и сделан.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumimathpro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "799",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "url": "https://apps.apple.com/ru/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumimission",
+        "url": "https://apps.apple.com/ru/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Mission Planet",
+        "description": "Для дошкольника вечерний ритуал работает лучше всего, когда он короткий, визуальный и достаточно предсказуемый, чтобы ребенок мог следовать без очередного напоминания. Если это про вас, посмотрите Lumi Mission Planet.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779750237",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779750237"
+          },
+          "name": "Lumi Mission Planet",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6779750237?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779750237",
+          "inLanguage": "ru",
+          "description": "Для дошкольника вечерний ритуал работает лучше всего, когда он короткий, визуальный и достаточно предсказуемый, чтобы ребенок мог следовать без очередного напоминания. Если это про вас, посмотрите Lumi Mission Planet.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumimission"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "url": "https://apps.apple.com/ru/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumimissionpro",
+        "url": "https://apps.apple.com/ru/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Mission Planet Pro",
+        "description": "Чистка зубов и вечерняя рутина часто не удаются в один и тот же момент: ребёнок устал, родитель устал, а следующий шаг недостаточно виден.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779745474",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779745474"
+          },
+          "name": "Lumi Mission Planet Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6779745474?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779745474",
+          "inLanguage": "ru",
+          "description": "Чистка зубов и вечерняя рутина часто не удаются в один и тот же момент: ребёнок устал, родитель устал, а следующий шаг недостаточно виден.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumimissionpro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "499",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "url": "https://apps.apple.com/ru/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumiweather",
+        "url": "https://apps.apple.com/ru/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Погода: прогноз и одежда",
+        "description": "Lumi Погода за секунду показывает, стоит ли сегодня выходить из дома: индекс прогулки от 0 до 100 и короткий вывод, который можно прочитать на ходу.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779552704",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779552704"
+          },
+          "name": "Lumi Погода: прогноз и одежда",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/lumiweather.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779552704",
+          "inLanguage": "ru",
+          "description": "Lumi Погода за секунду показывает, стоит ли сегодня выходить из дома: индекс прогулки от 0 до 100 и короткий вывод, который можно прочитать на ходу.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-lumiweather"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "url": "https://apps.apple.com/ru/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-maskmyfile",
+        "url": "https://apps.apple.com/ru/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Mask My File: Удалите данные",
+        "description": "Делитесь безопасно, не теряя нужного контекста. Mask My File находит личные данные до того, как вы отправите файл, навсегда скрывает только то, что вы",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6792850916",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6792850916"
+          },
+          "name": "Mask My File: Удалите данные",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ru/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6792850916?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/maskmyfile.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6792850916",
+          "inLanguage": "ru",
+          "description": "Делитесь безопасно, не теряя нужного контекста. Mask My File находит личные данные до того, как вы отправите файл, навсегда скрывает только то, что вы",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-maskmyfile"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "url": "https://apps.apple.com/ru/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-mochi",
+        "url": "https://apps.apple.com/ru/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Mochi",
+        "description": "Если большинство приложений для списка дел кажутся перегруженными, правильное — это чистый чек-лист с напоминаниями и поддержкой Apple Watch — и сознательно без функций управления проектами. Ради этого Mochi и сделан.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6785004775",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6785004775"
+          },
+          "name": "Mochi",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ru/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6785004775?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6785004775",
+          "inLanguage": "ru",
+          "description": "Если большинство приложений для списка дел кажутся перегруженными, правильное — это чистый чек-лист с напоминаниями и поддержкой Apple Watch — и сознательно без функций управления проектами. Ради этого Mochi и сделан.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-mochi"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "url": "https://apps.apple.com/ru/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-mochidonestamp",
+        "url": "https://apps.apple.com/ru/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Mochi DoneStamp: Когда было",
+        "description": "Когда вы в последний раз меняли постельное бельё, поливали цветы, звонили близким, сохраняли фотографии или меняли фильтр?",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790800323",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790800323"
+          },
+          "name": "Mochi DoneStamp: Когда было",
+          "operatingSystem": "iOS",
+          "applicationCategory": "LifestyleApplication",
+          "url": "https://apps.apple.com/ru/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6790800323?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/mochidonestamp.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790800323",
+          "inLanguage": "ru",
+          "description": "Когда вы в последний раз меняли постельное бельё, поливали цветы, звонили близким, сохраняли фотографии или меняли фильтр?",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-mochidonestamp"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "url": "https://apps.apple.com/ru/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-moneytag",
+        "url": "https://apps.apple.com/ru/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+        "name": "MoneyTag: Income & Expense",
+        "description": "Месячный бюджет не покажет фрилансеру, принёс ли конкретный проект клиента деньги — каждому проекту нужны свои доходы, расходы и итоговый результат. MoneyTag: Income & Expense создано именно для этого.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6801956402",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6801956402"
+          },
+          "name": "MoneyTag: Income & Expense",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/ru/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6801956402?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-income-and-expense-tracker-for-freelance-projects-no-subscription.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6801956402",
+          "inLanguage": "ru",
+          "description": "Месячный бюджет не покажет фрилансеру, принёс ли конкретный проект клиента деньги — каждому проекту нужны свои доходы, расходы и итоговый результат. MoneyTag: Income & Expense создано именно для этого.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-moneytag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "url": "https://apps.apple.com/ru/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-onepageppt",
+        "url": "https://apps.apple.com/ru/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+        "name": "OnePage PPT: ИИ-слайды",
+        "description": "Превратите стену текста в ОДИН слайд, который правда прочитают.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6798814385",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6798814385"
+          },
+          "name": "OnePage PPT: ИИ-слайды",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ru/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6798814385?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/onepageppt.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6798814385",
+          "inLanguage": "ru",
+          "description": "Превратите стену текста в ОДИН слайд, который правда прочитают.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-onepageppt"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "url": "https://apps.apple.com/ru/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-photocream",
+        "url": "https://apps.apple.com/ru/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+        "name": "PhotoCream",
+        "description": "Тревел-креаторам нужен повторяемый пленочный стиль с зерном, галацией и цветовым характером, который не превращает каждое место в одинаковый фильтр",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6781808054",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6781808054"
+          },
+          "name": "PhotoCream",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ru/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6781808054?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6781808054",
+          "inLanguage": "ru",
+          "description": "Тревел-креаторам нужен повторяемый пленочный стиль с зерном, галацией и цветовым характером, который не превращает каждое место в одинаковый фильтр",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-photocream"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "url": "https://apps.apple.com/ru/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-picclear",
+        "url": "https://apps.apple.com/ru/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+        "name": "PicClear",
+        "description": "Чтобы быстро освободить место, сначала удаляйте самые большие файлы: точные дубликаты фото, почти идентичные серийные снимки, размытые кадры и большие видео",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6780223070",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6780223070"
+          },
+          "name": "PicClear",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ru/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6780223070?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6780223070",
+          "inLanguage": "ru",
+          "description": "Чтобы быстро освободить место, сначала удаляйте самые большие файлы: точные дубликаты фото, почти идентичные серийные снимки, размытые кадры и большие видео",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-picclear"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "url": "https://apps.apple.com/ru/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-qrcodehalo",
+        "url": "https://apps.apple.com/ru/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+        "name": "QR Code Halo: сканер кодов",
+        "description": "QR Code Halo срабатывает в момент, когда считывает код. Сканируйте камерой или выберите фото: ссылки открываются в браузере, коды для входа с ключом",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806779853",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806779853"
+          },
+          "name": "QR Code Halo: сканер кодов",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ru/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6806779853?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/qrcodehalo.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806779853",
+          "inLanguage": "ru",
+          "description": "QR Code Halo срабатывает в момент, когда считывает код. Сканируйте камерой или выберите фото: ссылки открываются в браузере, коды для входа с ключом",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-qrcodehalo"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "url": "https://apps.apple.com/ru/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-savetag",
+        "url": "https://apps.apple.com/ru/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+        "name": "SaveTag: закладки с ИИ",
+        "description": "Сохраните сейчас. И в этот раз действительно прочитайте.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802505528",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802505528"
+          },
+          "name": "SaveTag: закладки с ИИ",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ru/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6802505528?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/savetag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802505528",
+          "inLanguage": "ru",
+          "description": "Сохраните сейчас. И в этот раз действительно прочитайте.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-savetag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "url": "https://apps.apple.com/ru/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-scanto",
+        "url": "https://apps.apple.com/ru/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+        "name": "ScanTo Pro",
+        "description": "Если вы сканируете формы согласия пациентов, выписки или направления, сканер должен хранить документы на устройстве — никогда не загружать в чужое облако. ScanTo Pro вырос как раз из этой проблемы.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779977651",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779977651"
+          },
+          "name": "ScanTo Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ru/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6779977651?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779977651",
+          "inLanguage": "ru",
+          "description": "Если вы сканируете формы согласия пациентов, выписки или направления, сканер должен хранить документы на устройстве — никогда не загружать в чужое облако. ScanTo Pro вырос как раз из этой проблемы.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-scanto"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
+      "url": "https://apps.apple.com/ru/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-sereno",
+        "url": "https://apps.apple.com/ru/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Sereno",
+        "description": "Для сна подписка с ежемесячными напоминаниями — противоположность отдыху. Если это про вас, посмотрите Sereno.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6788236641",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6788236641"
+          },
+          "name": "Sereno",
+          "operatingSystem": "iOS",
+          "applicationCategory": "LifestyleApplication",
+          "url": "https://apps.apple.com/ru/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6788236641?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6788236641",
+          "inLanguage": "ru",
+          "description": "Для сна подписка с ежемесячными напоминаниями — противоположность отдыху. Если это про вас, посмотрите Sereno.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-sereno"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 39,
+      "url": "https://apps.apple.com/ru/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-shotinbox",
+        "url": "https://apps.apple.com/ru/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+        "name": "ShotInbox AI: Sort Screenshots",
+        "description": "Все снимки по местам",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802166527",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802166527"
+          },
+          "name": "ShotInbox AI: Sort Screenshots",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ru/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6802166527?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/shotinbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802166527",
+          "inLanguage": "ru",
+          "description": "Все снимки по местам",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-shotinbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "url": "https://apps.apple.com/ru/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-snapport",
+        "url": "https://apps.apple.com/ru/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Snapport",
+        "description": "Для фото на паспорт ребёнка в кадре не должно быть других людей, фон должен быть однотонным. Snapport вырос как раз из этой проблемы.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6780575828",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6780575828"
+          },
+          "name": "Snapport",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ru/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6780575828?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6780575828",
+          "inLanguage": "ru",
+          "description": "Для фото на паспорт ребёнка в кадре не должно быть других людей, фон должен быть однотонным. Snapport вырос как раз из этой проблемы.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-snapport"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "499",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 41,
+      "url": "https://apps.apple.com/ru/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-snapportlite",
+        "url": "https://apps.apple.com/ru/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Snapport Lite: Паспортное фото",
+        "description": "Нужно фото определённого размера? Snapport Lite обрезает ваш портрет точно до выбранного размера прямо на устройстве. Снимите новое фото или выберите его",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6792856304",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6792856304"
+          },
+          "name": "Snapport Lite: Паспортное фото",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ru/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6792856304?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/snapportlite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6792856304",
+          "inLanguage": "ru",
+          "description": "Нужно фото определённого размера? Snapport Lite обрезает ваш портрет точно до выбранного размера прямо на устройстве. Снимите новое фото или выберите его",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-snapportlite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
+      "url": "https://apps.apple.com/ru/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-sononote",
+        "url": "https://apps.apple.com/ru/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Sono Note",
+        "description": "После звонка вам не нужен сырой транскрипт — вам нужно резюме, пункты действий и черновик письма. Именно этот пробел и закрывает Sono Note.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6782139553",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6782139553"
+          },
+          "name": "Sono Note",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ru/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6782139553?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6782139553",
+          "inLanguage": "ru",
+          "description": "После звонка вам не нужен сырой транскрипт — вам нужно резюме, пункты действий и черновик письма. Именно этот пробел и закрывает Sono Note.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-sononote"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
+      "url": "https://apps.apple.com/ru/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-stayclock",
+        "url": "https://apps.apple.com/ru/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Stay Clock: перекидные часы",
+        "description": "Stay Clock превращает ваш iPhone или iPad в настольные часы, которые светятся без перерыва и читаются с другого конца комнаты. Крупное время, календарь",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6814035888",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6814035888"
+          },
+          "name": "Stay Clock: перекидные часы",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ru/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6814035888?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/stayclock.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6814035888",
+          "inLanguage": "ru",
+          "description": "Stay Clock превращает ваш iPhone или iPad в настольные часы, которые светятся без перерыва и читаются с другого конца комнаты. Крупное время, календарь",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-stayclock"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "url": "https://apps.apple.com/ru/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-studydown",
+        "url": "https://apps.apple.com/ru/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Studydown: Учёт времени",
+        "description": "Находите время для важного и замечайте свои усилия. Studydown записывает время для рабочих проектов, чтения и увлечений, когда вы кладёте телефон экраном",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6807335593",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6807335593"
+          },
+          "name": "Studydown: Учёт времени",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ru/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6807335593?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/studydown.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6807335593",
+          "inLanguage": "ru",
+          "description": "Находите время для важного и замечайте свои усилия. Studydown записывает время для рабочих проектов, чтения и увлечений, когда вы кладёте телефон экраном",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-studydown"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 45,
+      "url": "https://apps.apple.com/ru/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-tripplanet",
+        "url": "https://apps.apple.com/ru/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Trip Planet: Kids Quest",
+        "description": "Родителям, путешествующим с маленькими детьми, нужны активности, превращающие сбор вещей, ожидание и открытие нового места в часть приключения, а не в дополнительный стресс. Ради этого Trip Planet: Kids Quest и сделан.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6787193643",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6787193643"
+          },
+          "name": "Trip Planet: Kids Quest",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6787193643?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6787193643",
+          "inLanguage": "ru",
+          "description": "Родителям, путешествующим с маленькими детьми, нужны активности, превращающие сбор вещей, ожидание и открытие нового места в часть приключения, а не в дополнительный стресс. Ради этого Trip Planet: Kids Quest и сделан.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-tripplanet"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 46,
+      "url": "https://apps.apple.com/ru/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-tripbeelite",
+        "url": "https://apps.apple.com/ru/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+        "name": "TripBee Lite",
+        "description": "Если вы планируете одну предстоящую поездку, спокойная временная шкала для этой поездки полезнее, чем загромождённый архив всех поездок, которые вы могли бы совершить когда-нибудь. Если это про вас, посмотрите TripBee Lite.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6791299610",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6791299610"
+          },
+          "name": "TripBee Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/ru/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6791299610?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6791299610",
+          "inLanguage": "ru",
+          "description": "Если вы планируете одну предстоящую поездку, спокойная временная шкала для этой поездки полезнее, чем загромождённый архив всех поездок, которые вы могли бы совершить когда-нибудь. Если это про вас, посмотрите TripBee Lite.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-tripbeelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/ru/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-tripbee",
+        "url": "https://apps.apple.com/ru/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+        "name": "TripBee Pro: Планировщик путешествий",
+        "description": "Хорошее приложение для маршрутов превращает хаотичное путешествие в понятный день за днём план — рейсы, отели, активности, рестораны и транспорт — с понятными иконками, чтобы вы могли быстро ориентироваться. Если это про вас, посмотрите TripBee Pro: Планировщик путешествий.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6787754435",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6787754435"
+          },
+          "name": "TripBee Pro: Планировщик путешествий",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/ru/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6787754435?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6787754435",
+          "inLanguage": "ru",
+          "description": "Хорошее приложение для маршрутов превращает хаотичное путешествие в понятный день за днём план — рейсы, отели, активности, рестораны и транспорт — с понятными иконками, чтобы вы могли быстро ориентироваться. Если это про вас, посмотрите TripBee Pro: Планировщик путешествий.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-tripbee"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "499",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 48,
+      "url": "https://apps.apple.com/ru/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-unblurry",
+        "url": "https://apps.apple.com/ru/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Unblurry",
+        "description": "Дети не могут долго стоять на месте, поэтому мягкое размытие и дрожание камеры неизбежны",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6782275018",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6782275018"
+          },
+          "name": "Unblurry",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ru/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6782275018?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6782275018",
+          "inLanguage": "ru",
+          "description": "Дети не могут долго стоять на месте, поэтому мягкое размытие и дрожание камеры неизбежны",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-unblurry"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 49,
+      "url": "https://apps.apple.com/ru/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-claudeusagemini",
+        "url": "https://apps.apple.com/ru/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+        "name": "UsageNow: Лимиты ИИ и расход",
+        "description": "Уперлись в лимит AI посреди задачи? UsageNow показывает, сколько осталось в каждом AI-тарифе и когда именно произойдет сброс, прямо на экране «Домой», и",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6818607603",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6818607603"
+          },
+          "name": "UsageNow: Лимиты ИИ и расход",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ru/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6818607603?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/claudeusagemini.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6818607603",
+          "inLanguage": "ru",
+          "description": "Уперлись в лимит AI посреди задачи? UsageNow показывает, сколько осталось в каждом AI-тарифе и когда именно произойдет сброс, прямо на экране «Домой», и",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-claudeusagemini"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 50,
+      "url": "https://apps.apple.com/ru/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wifiaidlite",
+        "url": "https://apps.apple.com/ru/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+        "name": "WiFi Aid Lite",
+        "description": "Найдите реальную проблему. Без покупки доступна всего одна полная проверка любым инструментом. Необязательная разовая покупка в приложении открывает",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6793414462",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6793414462"
+          },
+          "name": "WiFi Aid Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ru/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6793414462?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/wifiaidlite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6793414462",
+          "inLanguage": "ru",
+          "description": "Найдите реальную проблему. Без покупки доступна всего одна полная проверка любым инструментом. Необязательная разовая покупка в приложении открывает",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wifiaidlite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 51,
+      "url": "https://apps.apple.com/ru/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wifiaid",
+        "url": "https://apps.apple.com/ru/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+        "name": "WiFi Aid: Поиск проблем сети",
+        "description": "Найдите вероятную причину с помощью независимых проверок маршрутов, DNS, TCP, TLS, времени отклика и стабильности. Разовая оплата, без подписки, рекламы",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790467886",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790467886"
+          },
+          "name": "WiFi Aid: Поиск проблем сети",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ru/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6790467886?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/wifiaid.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790467886",
+          "inLanguage": "ru",
+          "description": "Найдите вероятную причину с помощью независимых проверок маршрутов, DNS, TCP, TLS, времени отклика и стабильности. Разовая оплата, без подписки, рекламы",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wifiaid"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "499",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 52,
+      "url": "https://apps.apple.com/ru/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wordmatelite",
+        "url": "https://apps.apple.com/ru/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Wordmate Lite: 5 слов в день",
+        "description": "Большинство планов по изучению языка срывается просто потому, что они слишком большие. Wordmate Lite начинает с другого конца: одна минута, пять слов и",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6797601720",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6797601720"
+          },
+          "name": "Wordmate Lite: 5 слов в день",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6797601720?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/wordmatelite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6797601720",
+          "inLanguage": "ru",
+          "description": "Большинство планов по изучению языка срывается просто потому, что они слишком большие. Wordmate Lite начинает с другого конца: одна минута, пять слов и",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wordmatelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 53,
+      "url": "https://apps.apple.com/ru/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wordmate",
+        "url": "https://apps.apple.com/ru/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Wordmate: изучение 44 языков",
+        "description": "Занятым пассажирам нужна практика словарного запаса, которая помещается в свободные минуты без полного урока, нового аккаунта или телефона в руках для каждого повторения. Wordmate: изучение 44 языков вырос как раз из этой проблемы.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6789917808",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6789917808"
+          },
+          "name": "Wordmate: изучение 44 языков",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ru/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6789917808?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6789917808",
+          "inLanguage": "ru",
+          "description": "Занятым пассажирам нужна практика словарного запаса, которая помещается в свободные минуты без полного урока, нового аккаунта или телефона в руках для каждого повторения. Wordmate: изучение 44 языков вырос как раз из этой проблемы.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-wordmate"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "799",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 54,
+      "url": "https://apps.apple.com/ru/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-zipbox",
+        "url": "https://apps.apple.com/ru/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Zipbox: открыть RAR, ZIP, 7z",
+        "description": "Zipbox: платное приложение из App Store. Одна покупка включает все функции: без встроенных покупок, подписок и рекламы. Все 13 форматов обрабатываются на",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806776579",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806776579"
+          },
+          "name": "Zipbox: открыть RAR, ZIP, 7z",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ru/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ru/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ru/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ru/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/ru/zipbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806776579",
+          "inLanguage": "ru",
+          "description": "Zipbox: платное приложение из App Store. Одна покупка включает все функции: без встроенных покупок, подписок и рекламы. Все 13 форматов обрабатываются на",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld#offer-zipbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "449",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "RU"
+        }
+      }
+    }
+  ]
+}

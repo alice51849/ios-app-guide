@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "identifier": "https://open.cait518.cc/ios-app-guide/opds/family-travel-observation-passport.json",
+    "title": "Family Travel Observation Passport OER Catalog",
+    "description": "Open-access English and Traditional Chinese editions of a privacy-first family travel observation passport.",
+    "modified": "2026-09-04T00:00:00Z",
+    "numberOfItems": 2
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://open.cait518.cc/ios-app-guide/opds/family-travel-observation-passport.json",
+      "type": "application/opds+json"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://open.cait518.cc/ios-app-guide/opds/family-travel-observation-passport.xml",
+      "type": "application/atom+xml;profile=opds-catalog;kind=acquisition",
+      "title": "OPDS 1.2 catalog"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.html",
+      "type": "text/html",
+      "title": "Free Family Travel Observation Passport"
+    }
+  ],
+  "publications": [
+    {
+      "metadata": {
+        "@type": "https://schema.org/LearningResource",
+        "identifier": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.html#resource",
+        "title": "Free Family Travel Observation Passport",
+        "description": "Download a privacy-first, print-ready 14-page family travel observation passport for 12 settings, with A4 and US Letter PDFs.",
+        "language": "en",
+        "published": "2026-07-11",
+        "modified": "2026-09-04T00:00:00Z",
+        "author": {
+          "name": "Lumi Apps - iOS App Guide",
+          "identifier": "https://open.cait518.cc/ios-app-guide"
+        },
+        "publisher": {
+          "name": "Lumi Apps - iOS App Guide",
+          "identifier": "https://open.cait518.cc/ios-app-guide"
+        },
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "isAccessibleForFree": true,
+        "educationalUse": "Family-guided observation and bilingual travel vocabulary practice",
+        "numberOfPages": 14,
+        "version": "1.0.0",
+        "accessibility": {
+          "accessMode": [
+            "textual",
+            "visual"
+          ],
+          "accessModeSufficient": [
+            "textual"
+          ],
+          "hazard": [
+            "noFlashingHazard",
+            "noMotionSimulationHazard",
+            "noSoundHazard"
+          ],
+          "summary": "Each PDF has selectable text, and the linked HTML edition provides the same instructions and prompts. No PDF/UA conformance is claimed."
+        }
+      },
+      "links": [
+        {
+          "rel": "alternate",
+          "href": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.html",
+          "type": "text/html",
+          "title": "Free Family Travel Observation Passport"
+        },
+        {
+          "rel": "describedby",
+          "href": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.metadata.json",
+          "type": "application/ld+json",
+          "title": "Schema.org LearningResource metadata"
+        },
+        {
+          "rel": "http://opds-spec.org/acquisition/open-access",
+          "href": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport-en-a4.pdf",
+          "type": "application/pdf",
+          "title": "A4 PDF",
+          "size": 27859,
+          "language": "en",
+          "properties": {
+            "checksum": {
+              "algorithm": "sha-256",
+              "encoding": "hex",
+              "value": "caf17ef834e2ed13fd637db0e445bd53ff81ac8192e3fdb09da12bf00ff418d2"
+            }
+          }
+        },
+        {
+          "rel": "http://opds-spec.org/acquisition/open-access",
+          "href": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport-en-letter.pdf",
+          "type": "application/pdf",
+          "title": "US Letter PDF",
+          "size": 27890,
+          "language": "en",
+          "properties": {
+            "checksum": {
+              "algorithm": "sha-256",
+              "encoding": "hex",
+              "value": "bf5e4503428e1b0da92d846c52e494080d8befc06715343cd6039cd4abd45c02"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "@type": "https://schema.org/LearningResource",
+        "identifier": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html#resource",
+        "title": "免費親子旅行觀察護照",
+        "description": "下載隱私優先、可直接列印的 14 頁親子旅行觀察護照，涵蓋 12 種情境，提供 A4 與 US Letter PDF。",
+        "language": "zh-Hant",
+        "published": "2026-07-11",
+        "modified": "2026-09-04T00:00:00Z",
+        "author": {
+          "name": "Lumi Apps - iOS App Guide",
+          "identifier": "https://open.cait518.cc/ios-app-guide"
+        },
+        "publisher": {
+          "name": "Lumi Apps - iOS App Guide",
+          "identifier": "https://open.cait518.cc/ios-app-guide"
+        },
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "isAccessibleForFree": true,
+        "educationalUse": "家庭陪同觀察與英繁雙語旅行詞彙練習",
+        "numberOfPages": 14,
+        "version": "1.0.0",
+        "accessibility": {
+          "accessMode": [
+            "textual",
+            "visual"
+          ],
+          "accessModeSufficient": [
+            "textual"
+          ],
+          "hazard": [
+            "noFlashingHazard",
+            "noMotionSimulationHazard",
+            "noSoundHazard"
+          ],
+          "summary": "每份 PDF 均有可選取文字，連結的 HTML 版本提供相同指示與提示。本資源不宣稱符合 PDF/UA。"
+        }
+      },
+      "links": [
+        {
+          "rel": "alternate",
+          "href": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/family-travel-observation-passport.html",
+          "type": "text/html",
+          "title": "免費親子旅行觀察護照"
+        },
+        {
+          "rel": "describedby",
+          "href": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport.metadata.json",
+          "type": "application/ld+json",
+          "title": "Schema.org LearningResource metadata"
+        },
+        {
+          "rel": "http://opds-spec.org/acquisition/open-access",
+          "href": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport-zh-hant-a4.pdf",
+          "type": "application/pdf",
+          "title": "A4 PDF",
+          "size": 32687,
+          "language": "zh-Hant",
+          "properties": {
+            "checksum": {
+              "algorithm": "sha-256",
+              "encoding": "hex",
+              "value": "1f790a3ff9cd35fb01f3818d00998992815ab8c216e394c9c2f330016bd3e33e"
+            }
+          }
+        },
+        {
+          "rel": "http://opds-spec.org/acquisition/open-access",
+          "href": "https://open.cait518.cc/ios-app-guide/tools/family-travel-observation-passport-zh-hant-letter.pdf",
+          "type": "application/pdf",
+          "title": "US Letter PDF",
+          "size": 32682,
+          "language": "zh-Hant",
+          "properties": {
+            "checksum": {
+              "algorithm": "sha-256",
+              "encoding": "hex",
+              "value": "0732d12b5365ee954bf6f3771e20352eed1d28d3574fc4cde7261a78f30cf95e"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

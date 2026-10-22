@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>iPhone 開啟 RAR 檔案：分成 part1、part2 的分卷壓縮檔怎麼解？</title><meta name="description" content="下載到的 RAR 被切成 .part1.rar、.part2.rar 或 .r00、.r01，iPhone 點了沒反應？先把每一卷收齊放同一個資料夾，再從第一卷開啟。缺卷、檔名被改、密碼的處理方式一次整理。"><link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/open-multi-part-rar-part1-on-iphone.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/answers/open-multi-part-rar-part1-on-iphone.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/open-multi-part-rar-part1-on-iphone.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/answers/open-multi-part-rar-part1-on-iphone.html">
+<meta property="og:type" content="article"><meta property="og:title" content="iPhone 開啟 RAR 檔案：分成 part1、part2 的分卷壓縮檔怎麼解？"><meta property="og:description" content="下載到的 RAR 被切成 .part1.rar、.part2.rar 或 .r00、.r01，iPhone 點了沒反應？先把每一卷收齊放同一個資料夾，再從第一卷開啟。缺卷、檔名被改、密碼的處理方式一次整理。"><meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/open-multi-part-rar-part1-on-iphone.html">
+<!-- smart-app-banner:start -->
+<meta name="apple-itunes-app" content="app-id=6806776579, affiliate-data=pt=118326163&amp;ct=geo_ask&amp;mt=8">
+<!-- smart-app-banner:end -->
+<!-- answer-social-preview:start -->
+<meta property="og:image" content="https://open.cait518.cc/ios-app-guide/social/img/zipbox-share.jpg">
+<meta property="og:image:secure_url" content="https://open.cait518.cc/ios-app-guide/social/img/zipbox-share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Zipbox iOS app preview">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://open.cait518.cc/ios-app-guide/social/img/zipbox-share.jpg">
+<meta name="twitter:image:alt" content="Zipbox iOS app preview">
+<!-- answer-social-preview:end -->
+<style>
+:root{--bg:#f7f7fb;--card:#fff;--ink:#161622;--muted:#5d6370;--line:#e6e7ef;--brand:#5b5ff2;--brand2:#8b5cf6;--ok:#0f8f5f}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#fff,var(--bg));color:var(--ink);line-height:1.6}a{color:#3840d0}.wrap{width:min(1040px,100% - 32px);margin:auto}.top{padding:18px 0;border-bottom:1px solid var(--line);background:rgba(255,255,255,.86);backdrop-filter:blur(12px);position:sticky;top:0;z-index:3}.nav{display:flex;justify-content:space-between;gap:16px;align-items:center}.nav a{text-decoration:none;font-weight:700}.hero{padding:46px 0 24px}.eyebrow{color:var(--brand);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem}h1{font-size:clamp(2rem,6vw,3.8rem);line-height:1.04;margin:.2em 0}h2{font-size:clamp(1.3rem,3vw,2rem);margin:1.2em 0 .55em}h3{margin:1em 0 .35em}p.lead{font-size:1.15rem;color:var(--muted);max-width:790px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{grid-column:span 12;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 8px 30px rgba(31,34,78,.06)}@media(min-width:760px){.half{grid-column:span 6}.third{grid-column:span 4}.two{grid-column:span 8}.side{grid-column:span 4}}.cta{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:white!important;text-decoration:none;font-weight:850;padding:13px 18px;box-shadow:0 8px 22px rgba(91,95,242,.22)}.ghost{background:#fff!important;color:#3840d0!important;border:1px solid #cfd2df;box-shadow:none}.muted{color:var(--muted)}.pill{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;margin:3px;font-weight:700}.checklist li{margin:.45em 0}.footer{margin-top:40px;padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}.notice{font-size:.92rem;color:#626875}table{border-collapse:collapse;width:100%;background:#fff;border-radius:16px;overflow:hidden}th,td{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}th{background:#f2f5ff}.answer{font-size:1.04rem}.breadcrumb{font-size:.92rem;color:var(--muted);margin-top:18px}.breadcrumb a{color:inherit}.toc a{display:block;margin:.25em 0}.small{font-size:.92rem}.ok{color:var(--ok);font-weight:800}
+</style><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "iOS App 指南",
+      "item": "https://open.cait518.cc/ios-app-guide/zh-Hant/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "答案",
+      "item": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "iPhone 怎麼開啟分卷的 RAR 檔案（part1.rar、part2.rar）",
+      "item": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/open-multi-part-rar-part1-on-iphone.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "只有 part1.rar 可以先解一部分嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "通常不行。分卷是同一個壓縮檔切開的片段，缺卷時解壓會在缺的地方中斷，最好先把全部分卷收齊。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "part2 打開後顯示錯誤怎麼辦？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "改從第一卷開啟。分卷要從 part1（或沒有數字的 .rar）開始，App 才會依序讀後面的分卷。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zipbox 解壓縮：RAR ZIP 7z 會上傳我的檔案嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不會。它不連網、沒有帳號也不用登入，13 種格式都在裝置本機處理。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "iPhone 怎麼開啟分卷的 RAR 檔案（part1.rar、part2.rar）",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "把每一個分卷都存到檔案 App",
+      "text": "把每一個分卷都存到檔案 App：LINE 的檔案逐一點開選「儲存到檔案」，Safari 下載的會在「下載項目」。"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "在檔案 App 建一個新資料夾，把所有分卷移進去，確認編號從 1 開始而且沒有缺。",
+      "text": "在檔案 App 建一個新資料夾，把所有分卷移進去，確認編號從 1 開始而且沒有缺。"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "檢查檔名，除了 part 編號或 .r00 這類副檔名之外，前面的檔名要一模一樣。",
+      "text": "檢查檔名，除了 part 編號或 .r00 這類副檔名之外，前面的檔名要一模一樣。"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "用 Zipbox 開啟第一卷（.part1.rar；舊式命名則是沒有數字的 .rar），有密碼就輸入對方給的密碼。",
+      "text": "用 Zipbox 開啟第一卷（.part1.rar；舊式命名則是沒有數字的 .rar），有密碼就輸入對方給的密碼。"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "先在清單裡預覽，勾選需要的檔案取出，再匯出到檔案 App 或 iCloud 雲碟。",
+      "text": "先在清單裡預覽，勾選需要的檔案取出，再匯出到檔案 App 或 iCloud 雲碟。"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Zipbox","operatingSystem":"iOS","applicationCategory":"UtilitiesApplication","url":"https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_ask&mt=8","installUrl":"https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_ask&mt=8","description":"下載到的 RAR 被切成 .part1.rar、.part2.rar 或 .r00、.r01，iPhone 點了沒反應？先把每一卷收齊放同一個資料夾，再從第一卷開啟。缺卷、檔名被改、密碼的處理方式一次整理。","featureList":["13 種壓縮格式","加密＋分卷壓縮檔","建立 ZIP＋7z","裝置端處理","可離線使用"],"@id":"https://apps.apple.com/app/id6806776579","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6806776579"},"downloadUrl":"https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_ask&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_ask&mt=8"}}</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://open.cait518.cc/ios-app-guide/#organization",
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide/about.html"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://open.cait518.cc/ios-app-guide/#website",
+      "url": "https://open.cait518.cc/ios-app-guide",
+      "name": "iOS App 指南",
+      "publisher": {
+        "@id": "https://open.cait518.cc/ios-app-guide/#organization"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json" data-mobile-app-webpage="1">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/open-multi-part-rar-part1-on-iphone.html#webpage",
+  "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/answers/open-multi-part-rar-part1-on-iphone.html",
+  "inLanguage": "zh-Hant",
+  "mentions": {
+    "@id": "https://apps.apple.com/app/id6806776579"
+  }
+}
+</script>
+<!-- app-store-qr-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
+<!-- app-store-qr-style:end -->
+<!-- app-decision-card-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-decision-card-v1.css">
+<!-- app-decision-card-style:end -->
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body><!-- answer-microformat:start --><div class="h-entry hentry"><data class="u-url u-uid" value="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/open-multi-part-rar-part1-on-iphone.html"></data><header class="top"><div class="wrap nav"><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/index.html">iOS App 指南</a><nav><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/index.html">答案</a> · <a href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/">免費工具</a> · <a href="https://open.cait518.cc/ios-app-guide/zh-Hant/alternatives/">替代方案</a> · <a href="https://open.cait518.cc/ios-app-guide/about.html">關於</a></nav></div></header>
+<!-- answer-content:start --><div class="e-content entry-content"><p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">本站由這些 App 的開發者 Lumi Studio 營運，介紹的是我們自己的 App。</p>
+<main><section class="hero wrap"><div class="breadcrumb"><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/index.html">首頁</a> / <a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/index.html">答案</a></div><div class="eyebrow">精準解答</div><h1 class="p-name entry-title">iPhone 怎麼開啟分卷的 RAR 檔案（part1.rar、part2.rar）</h1><p class="lead p-summary entry-summary">大檔案常被切成好幾個 RAR 分卷傳送或下載。只要少一卷、或卷放在不同地方，就怎麼樣都解不開。這一頁教你先檢查、再從正確的那一卷打開。</p><p><a class="cta" href="https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_ask&mt=8" rel="nofollow noopener">到 App Store 下載 Zipbox →</a> <a class="cta ghost" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/index.html">免費工具 →</a></p>
+  <p class="android-play" data-android-play="com.alice51849.Zipbox">Android: <a href="https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&amp;referrer=utm_source%3Dgeo_ask%26utm_campaign%3Dzipbox" rel="noopener">Google Play</a></p></section>
+<!-- app-decision-card:start -->
+<aside class="iag-decision-card" data-app-id="6806776579" aria-label="Zipbox">
+  <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/zipbox-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
+  <div class="iag-decision-card__body">
+    <strong class="iag-decision-card__title" title="Zipbox">Zipbox</strong>
+    <p class="iag-decision-card__promise" title="開啟壓縮檔・預覽・加密壓縮">開啟壓縮檔・預覽・加密壓縮</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="13 種壓縮格式">13 種壓縮格式</span><span class="iag-decision-card__fact" title="加密＋分卷壓縮檔">加密＋分卷壓縮檔</span><span class="iag-decision-card__fact" title="建立 ZIP＋7z">建立 ZIP＋7z</span><span class="iag-decision-card__fact" title="裝置端處理">裝置端處理</span></div>
+
+    <a class="iag-decision-card__cta" href="https://apps.apple.com/tw/app/id6806776579?pt=118326163&amp;ct=geo_ask&amp;mt=8" rel="nofollow noopener" aria-label="到 App Store 下載 Zipbox →" title="到 App Store 下載 Zipbox →">到 App Store 下載 Zipbox →</a>
+  </div>
+</aside>
+<!-- app-decision-card:end -->
+<!-- app-store-qr:start -->
+<section class="app-store-qr-card" style="display:none" aria-label="到 App Store 下載 Zipbox →">
+<a class="app-store-qr-card__link" href="https://apps.apple.com/tw/app/id6806776579?pt=118326163&amp;ct=geo_ask&amp;mt=8" rel="nofollow noopener">
+<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6806776579-cdbb173d2475cd4485c6.svg" width="164" height="164" alt="" decoding="async">
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">到 App Store 下載 Zipbox →</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/tw/app/id6806776579" aria-hidden="true"></span><span class="app-store-qr-card__badge-wrap"><img class="app-store-qr-card__badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/zh-tw?size=250x83" width="120" height="40" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span></span>
+</a>
+</section>
+<!-- app-store-qr:end -->
+<!-- app-store-review:start -->
+<div class="app-store-review" data-app-store-review="6806776579" style="margin:1rem 0;font-size:.9em;text-align:center"><a class="app-store-review__link" href="https://apps.apple.com/tw/app/id6806776579?action=write-review" rel="nofollow noopener">已經在用這款 App？可以到 App Store 評分或撰寫評論</a></div>
+<!-- app-store-review:end -->
+<section class="wrap grid"><article class="card two answer"><h2>iPhone 內建的檔案 App 不能解 RAR，分卷 RAR 更需要支援分卷的解壓縮 App。把所有分卷存到同一個資料夾、確認檔名沒被改，再用 App 開啟第一卷（.part1.rar 或沒有數字的 .rar），其餘分卷會一起被讀取。Zipbox 解壓縮：RAR ZIP 7z 支援 ZIP、RAR、7z 的分卷與密碼保護壓縮檔，全部在裝置本機處理。</h2><p>分卷 RAR 有兩種常見的命名。新式是 檔名.part1.rar、檔名.part2.rar 一路往下；舊式是 檔名.rar 搭配 檔名.r00、檔名.r01。不管哪一種，它們都是同一個壓縮檔被切開的片段，單獨一卷沒辦法解出完整內容。7z 的分卷則長得像 檔名.7z.001、檔名.7z.002。</p><p>解不開的原因，九成是分卷沒收齊或沒放在一起：LINE 一次傳多個檔案時，每個檔案都要各自點開再「儲存到檔案」；Safari 下載的會集中在「下載項目」，但如果有一卷是從郵件存的，就可能落在別的資料夾。另一個常見問題是檔名被改，例如下載時被加上「(1)」，讓 part2 對不上 part1，把檔名改回一致就好。</p><p>收齊之後，用支援分卷的解壓縮 App 開啟第一卷。Zipbox 解壓縮：RAR ZIP 7z 可以從檔案 App、Safari 下載項目、郵件或分享選單直接開啟，不解壓就先瀏覽清單、預覽照片、影片、PDF 和文字，只取出需要的檔案；設了密碼的分卷也能輸入密碼解開。它不連網、沒有帳號也沒有廣告，是 App Store 付費下載，一次購買包含全部功能。</p><h2>選之前先確認這幾件事</h2><ul class="checklist"><li>分卷是不是全部到齊，編號有沒有跳號</li><li>所有分卷是不是放在同一個資料夾</li><li>檔名是否一致，有沒有被加上「(1)」之類的字</li><li>App 有沒有明確寫出支援 RAR 分卷與密碼保護</li><li>解壓是在裝置上做，還是要上傳到網站</li></ul><h2>照著做的步驟</h2><ol class="checklist"><li>把每一個分卷都存到檔案 App：LINE 的檔案逐一點開選「儲存到檔案」，Safari 下載的會在「下載項目」。</li><li>在檔案 App 建一個新資料夾，把所有分卷移進去，確認編號從 1 開始而且沒有缺。</li><li>檢查檔名，除了 part 編號或 .r00 這類副檔名之外，前面的檔名要一模一樣。</li><li>用 Zipbox 開啟第一卷（.part1.rar；舊式命名則是沒有數字的 .rar），有密碼就輸入對方給的密碼。</li><li>先在清單裡預覽，勾選需要的檔案取出，再匯出到檔案 App 或 iCloud 雲碟。</li></ol><h2>快速比較</h2><table><thead><tr><th>需求</th><th>要檢查什麼</th><th>為什麼重要</th></tr></thead><tbody><tr><td>分卷數量</td><td>編號是否連續、最後一卷有沒有到</td><td>少一卷就解不出完整內容，常見錯誤就是這個</td></tr><tr><td>存放位置</td><td>所有分卷在不在同一個資料夾</td><td>解壓縮 App 會在第一卷旁邊找後面的分卷</td></tr><tr><td>開啟哪一卷</td><td>part1 或沒有數字的 .rar</td><td>從中間的分卷開始，App 無法從頭接起</td></tr></tbody></table><h2>Zipbox 適合的情況</h2><p>Zipbox 解壓縮：RAR ZIP 7z 適合在 iPhone 上收到或下載了分卷 RAR、7z，想直接在手機上打開的人：支援 ZIP、RAR、7z 的分卷與密碼保護壓縮檔，可以先預覽再只取出需要的檔案，13 種格式全部本機處理、不連網、零廣告。App Store 付費下載，一次購買包含全部功能。</p><p><span class="pill">13 種壓縮格式</span><span class="pill">加密＋分卷壓縮檔</span><span class="pill">建立 ZIP＋7z</span><span class="pill">裝置端處理</span><span class="pill">可離線使用</span></p><p class="notice">這是由 App 開發團隊親自撰寫的購買指南。App Store 的功能與價格可能會有變動，請在購買前至商店頁面確認詳細資訊。</p></article><aside class="card side"><h2>實用連結</h2><div class="toc"><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/index.html">免費工具</a><a href="https://apps.apple.com/tw/app/id6806776579?pt=118326163&ct=geo_ask&mt=8" rel="nofollow noopener">到 App Store 下載 Zipbox</a><a href="https://open.cait518.cc/ios-app-guide/guides/zipbox.html">Zipbox App 指南</a></div><h2>最適合</h2><p class="muted">13 種壓縮格式；加密＋分卷壓縮檔；建立 ZIP＋7z；裝置端處理；離線可用</p></aside></section>
+<section class="wrap card"><h2>常見問題</h2><div itemscope itemtype="https://schema.org/Question"><h3 itemprop="name">只有 part1.rar 可以先解一部分嗎？</h3><div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p itemprop="text">通常不行。分卷是同一個壓縮檔切開的片段，缺卷時解壓會在缺的地方中斷，最好先把全部分卷收齊。</p></div></div><div itemscope itemtype="https://schema.org/Question"><h3 itemprop="name">part2 打開後顯示錯誤怎麼辦？</h3><div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p itemprop="text">改從第一卷開啟。分卷要從 part1（或沒有數字的 .rar）開始，App 才會依序讀後面的分卷。</p></div></div><div itemscope itemtype="https://schema.org/Question"><h3 itemprop="name">Zipbox 解壓縮：RAR ZIP 7z 會上傳我的檔案嗎？</h3><div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p itemprop="text">不會。它不連網、沒有帳號也不用登入，13 種格式都在裝置本機處理。</p></div></div></section><section class="wrap related-tools"><h2>免費工具</h2><ul><li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/private-pay-once-iphone-app-finder.html">找到真正符合任務的 iPhone App</a></li><li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/subscription-cost-calculator.html">App 訂閱費用計算器</a></li></ul></section><section class="wrap related-answers"><h2>延伸閱讀</h2><ul><li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/open-rar-files-on-iphone-app-for-iphone.html">iPhone 開啟 RAR 檔 App</a></li><li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/open-rar-files-on-iphone-app-for-iphone-free.html">iPhone 開啟 RAR 檔 App（免費）</a></li><li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-open-rar-files-on-iphone-app.html">最好用的 iPhone 開啟 RAR 檔 App</a></li><li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/how-to-choose-a-open-rar-files-on-iphone-app.html">如何挑選 iPhone 開啟 RAR 檔 App</a></li></ul></section></main></div><!-- answer-content:end --><footer class="footer"><data class="p-author h-card vcard" value="Lumi Studio"><data class="p-name p-org fn org" value="Lumi Studio"></data><data class="u-url url" value="https://open.cait518.cc/ios-app-guide/about.html"></data></data><div class="wrap" data-publisher-disclosure="true">由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。</div></footer></div><!-- answer-microformat:end -->
+<!-- mobile-store-cta:start -->
+<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
+<a class="mobile-store-cta__link" href="https://apps.apple.com/tw/app/id6806776579?pt=118326163&amp;ct=geo_ask&amp;mt=8" rel="nofollow noopener" tabindex="-1" aria-label="到 App Store 下載 Zipbox →" title="到 App Store 下載 Zipbox →"><span class="mobile-store-cta__label">App Store</span></a>
+</div>
+<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
+<!-- mobile-store-cta:end -->
+<!-- app-store-share:start -->
+<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6806776579" data-app-store-url="https://apps.apple.com/tw/app/id6806776579?pt=118326163&amp;ct=geo_ask&amp;mt=8" defer></script>
+<!-- app-store-share:end -->
+</body></html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LED Scrolling Text Online — Free Dot-Matrix Banner Preview</title>
+<meta name="description" content="Type a message and watch it scroll across a dot-matrix LED board in your browser: eight colours, speed, left or right, still, blink, mirrored text and full screen. Nothing is uploaded.">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/tools/led-scrolling-text-preview.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/led-scrolling-text-preview.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/led-scrolling-text-preview.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/led-scrolling-text-preview.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/led-scrolling-text-preview.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/led-scrolling-text-preview.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/led-scrolling-text-preview.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LED scrolling text preview">
+<meta property="og:description" content="Type a message and watch it scroll across a dot-matrix LED board in your browser: eight colours, speed, left or right, still, blink, mirrored text and full screen. Nothing is uploaded.">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/tools/led-scrolling-text-preview.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#3d3223;--muted:#8a7a5f;--line:#e9dcc3;--paper:#fff;--bg:#faf3e4;--brand:#9a6b16;--gold:#c8922a;--soft:#fdf6e8;--good:#2e7d4f;--bad:#b3452e;--warn:#fff6d9;--shadow:0 22px 60px rgba(122,90,35,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 88% 0,#fff 0,var(--bg) 55%,#f3e6cd 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC",sans-serif;line-height:1.62}
+a{color:#8a5c10}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.top{position:sticky;top:0;z-index:8;background:#fffdf8f2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}
+.hero{padding:56px 0 26px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--brand);white-space:nowrap}
+.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif TC",serif}
+.hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.06;letter-spacing:-.03em;margin:.3em 0 .22em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);margin:0}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.tool,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+.tool{padding:clamp(20px,4vw,34px);margin:14px auto 28px}
+.tool h2,.card h2,.app-card h2{font-size:clamp(22px,3.4vw,31px);line-height:1.15;margin:0 0 6px}
+.intro{color:var(--muted);margin:0 0 8px}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--brand);margin-bottom:6px;white-space:nowrap}
+select,input,button,textarea{font:inherit;color:var(--ink)}
+select,input:not([type=range]):not([type=file]),textarea{width:100%;border:1px solid #dcc9a4;border-radius:13px;background:#fff;padding:10px 12px}
+select,input:not([type=range]):not([type=file]){min-height:46px}
+textarea{min-height:74px;resize:vertical}
+.button{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--gold));color:#fff;text-decoration:none;font-weight:850;padding:12px 19px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(154,107,22,.24)}
+.button.ghost{background:#fff;color:var(--brand);border:1px solid var(--line);box-shadow:none}
+.button[disabled]{opacity:.45;cursor:not-allowed}
+.results{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:18px}
+.result{background:var(--soft);border:1px solid #ecd9b4;border-radius:16px;padding:13px;min-width:0}
+.result strong{display:block;font-size:12px;color:#96793d;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.result span{display:block;font-size:16px;font-weight:780;margin-top:5px;white-space:nowrap;overflow-x:auto}
+.result.ok span{color:var(--good)}.result.err span{color:var(--bad)}
+.note{background:var(--warn);border:1px solid #ead9a7;border-radius:15px;padding:12px 15px;margin:14px 0 0;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+.card,.app-card{padding:clamp(20px,3.4vw,28px)}.card.wide{grid-column:1/-1}
+.card ul,.card ol{padding-left:22px;margin:8px 0}.card li{margin:7px 0}
+.app-card{margin:0 auto 34px;background:linear-gradient(135deg,#fffdf7,#f7ecd6)}
+.app-card .button{margin-top:8px}
+.faq{margin-bottom:28px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}
+.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}
+canvas.stage{max-width:100%;height:auto;border:1px solid var(--line);border-radius:14px;background:#fff;touch-action:none}
+.filedrop{border:2px dashed #dcc9a4;border-radius:18px;padding:26px;text-align:center;background:var(--soft);margin-top:14px}
+.filedrop input{width:auto}
+.footer{background:#4a3a1e;color:#f6eeda;text-align:center;padding:26px 0}
+.footer a{color:#f0ddb4}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}
+@media(max-width:560px){.controls,.results{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1080px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+@media print{.top,.hero,.app-card,.footer,.faq,.grid{display:none!important}body{background:#fff}.tool{box-shadow:none;border:0}}
+
+.led-wrap{background:#050505;border-radius:18px;padding:10px;margin-top:18px;overflow:hidden}
+.led-wrap canvas{display:block;width:100%;height:auto}
+.led-wrap:fullscreen{display:flex;align-items:center;justify-content:center;border-radius:0;padding:0}
+.swatches{display:flex;gap:8px;flex-wrap:wrap}.swatches button{width:34px;height:34px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);cursor:pointer}
+.swatches button[aria-pressed=true]{box-shadow:0 0 0 3px var(--brand)}
+@media (max-width:720px){.controls{grid-template-columns:1fr 1fr}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"LED scrolling text preview","description":"Type a message and watch it scroll across a dot-matrix LED board in your browser: eight colours, speed, left or right, still, blink, mirrored text and full screen. Nothing is uploaded.","url":"https://open.cait518.cc/ios-app-guide/tools/led-scrolling-text-preview.html","inLanguage":"en","datePublished":"2026-08-09","dateModified":"2026-08-09","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Any text, including Chinese, Japanese and Korean","Scroll left, right or hold still, with adjustable speed","Eight LED colours, blink and mirrored text","Full-screen board in the browser"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Can I use emoji or Chinese characters?","acceptedAnswer":{"@type":"Answer","text":"Yes. Any character your browser can draw is rasterised onto the board; very detailed characters are simplified by the 16-LED height."}},{"@type":"Question","name":"How do I make it bigger?","acceptedAnswer":{"@type":"Answer","text":"Use Full screen, or turn a phone sideways in full screen to give the letters more height."}},{"@type":"Question","name":"Why does my message look mirrored?","acceptedAnswer":{"@type":"Answer","text":"The Mirror option is on. Turn it off unless you are showing the board through a window."}}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="index.html">← Free tools</a><a href="https://open.cait518.cc/ios-app-guide/" >iOS App Guide</a></div></header>
+<section class="hero wrap">
+<span class="eyebrow">Dot-matrix board · full screen · free</span>
+<h1>LED scrolling text preview</h1>
+<p class="lead">Try a message the way it will look on an LED sign before a concert, an airport pickup or a counter notice — then go full screen on a laptop or tablet.</p>
+<div class="badges"><span class="badge">Dot-matrix look</span><span class="badge">8 colours</span><span class="badge">Left, right or still</span><span class="badge">Full screen</span></div>
+</section>
+<main class="wrap">
+<section class="tool" id="tool">
+<h2>Your message</h2>
+<p class="intro">Type it, pick a colour and speed, then go full screen.</p>
+<div class="controls">
+<div class="field" style="grid-column:1/-1"><label for="txt">Text</label><input type="text" id="txt" maxlength="120" value="WELCOME HOME!"></div>
+</div>
+<div class="controls" style="margin-top:10px">
+<div class="field"><label for="spd">Speed</label><input type="range" id="spd" min="0" max="10" value="4"></div>
+<div class="field"><label for="dir">Direction</label><select id="dir"><option value="-1">Scroll left</option><option value="1">Scroll right</option><option value="0">Still</option></select></div>
+<div class="field"><label for="blink">Blink</label><select id="blink"><option value="0">Off</option><option value="1">On</option></select></div>
+</div>
+<div class="controls" style="margin-top:10px">
+<div class="field"><label>Colour</label><div class="swatches" id="sw"></div></div>
+<div class="field"><label for="mir">Mirror</label><select id="mir"><option value="0">Off</option><option value="1">On</option></select></div>
+<div class="field" style="align-self:end"><button class="button" id="fs" type="button">Full screen</button></div>
+</div>
+<div class="led-wrap" id="wrap"><canvas id="led" width="960" height="200"></canvas></div>
+<p class="note">Browser preview only. Brightness depends on your screen; nothing you type is stored.</p>
+</section>
+<section class="grid">
+<article class="card"><h2>How it works</h2><ol><li>Your text is drawn once into a 16-pixel-high image, and every lit pixel becomes one round LED on the board.</li><li>Scrolling moves that bitmap one LED column at a time, timed by the browser’s animation clock so speed stays steady on fast and slow screens.</li><li>Mirror flips the board left to right so the message reads correctly from outside a window or in a rear-view mirror.</li><li>Full screen uses the browser’s own full-screen mode; press Esc or the button again to leave.</li></ol></article>
+<article class="card"><h2>What it will never do</h2><ul><li>It is a browser preview, not a phone app: there are no saved boards, fonts or effect packs.</li><li>It does not keep the screen awake on every device — check your display settings for long use.</li><li>No account, no tracking, nothing uploaded.</li></ul></article>
+<article class="card wide"><h2>More free tools</h2><ul><li><a href="image-compressor.html">Compress an image</a></li><li><a href="white-noise-generator.html">White, pink and brown noise</a></li><li><a href="sleep-cycle-calculator.html">What time should I go to bed?</a></li><li><a href="currency-converter.html">Currency converter</a></li></ul></article>
+</section>
+<section class="faq"><h2>Questions</h2><details><summary>Can I use emoji or Chinese characters?</summary><p>Yes. Any character your browser can draw is rasterised onto the board; very detailed characters are simplified by the 16-LED height.</p></details><details><summary>How do I make it bigger?</summary><p>Use Full screen, or turn a phone sideways in full screen to give the letters more height.</p></details><details><summary>Why does my message look mirrored?</summary><p>The Mirror option is on. Turn it off unless you are showing the board through a window.</p></details></section>
+<section class="app-card"><h2>Want a full-screen LED board on your iPhone?</h2>
+<p>LED Moving Text is optional — this free tool runs entirely in your browser and works without it. Check the app’s current App Store listing for exact features, pricing and availability before downloading.</p>
+<a class="button" href="https://apps.apple.com/us/app/id6806639602?pt=118326163&ct=geo_learn&mt=8" rel="nofollow noopener">View LED Moving Text on the App Store</a>
+      <a class="android-play" data-android-play="com.alice51849.LEDMovingText" href="https://play.google.com/store/apps/details?id=com.alice51849.LEDMovingText&amp;referrer=utm_source%3Diag_play%26utm_campaign%3Dledmovingtext" rel="noopener">Google Play</a></section>
+<section class="wrap tool-email-capture" style="border:1px solid rgba(120,100,70,.25);border-radius:14px;padding:18px 20px;margin:28px 0;background:rgba(255,250,240,.55)"><h2>Get told when a new free tool goes up</h2><p>I build these tools one at a time and put them here for free. If you want an email when a new one is ready, leave your address — that is the only thing it is used for.</p><form action="https://buttondown.com/api/emails/embed-subscribe/hourstag" method="post" target="_blank" style="display:flex;gap:8px;flex-wrap:wrap"><label for="tec-email" class="visually-hidden" style="position:absolute;left:-9999px">Email address</label><input id="tec-email" type="email" required name="email" placeholder="you@example.com" style="flex:1 1 220px;padding:10px 12px;border-radius:10px;border:1px solid rgba(120,100,70,.35)"><input type="hidden" name="embed" value="1"><button type="submit" style="padding:10px 18px;border-radius:10px;border:0;background:#7a5c2e;color:#fff;cursor:pointer">Notify me</button></form><p><small>New free tools only. Buttondown processes the subscription to deliver these notices; no app marketing or address sale. Unsubscribe in one click.</small></p></section></main>
+<footer class="footer"><div class="wrap">Runs in your browser · nothing is uploaded or stored · <a href="index.html">all free tools</a></div></footer>
+<script>var L={"h2":"Your message","intro":"Type it, pick a colour and speed, then go full screen.","l_text":"Text","sample":"WELCOME HOME!","l_speed":"Speed","l_dir":"Direction","d_left":"Scroll left","d_right":"Scroll right","d_still":"Still","l_blink":"Blink","l_color":"Colour","l_mirror":"Mirror","on":"On","off":"Off","b_full":"Full screen","note":"Browser preview only. Brightness depends on your screen; nothing you type is stored."};
+
+var $=function(i){return document.getElementById(i);};
+var COLORS=['#ff3b30','#ff9500','#ffd60a','#34c759','#00c7be','#0a84ff','#bf5af2','#ffffff'];
+var color=COLORS[0],off=0,last=0,ROWS=16,cols=0,bitmap=null,textW=0;
+var sw=$('sw');COLORS.forEach(function(c,i){var b=document.createElement('button');b.type='button';b.style.background=c;
+  b.setAttribute('aria-label',c);b.setAttribute('aria-pressed',i===0?'true':'false');
+  b.addEventListener('click',function(){color=c;[].forEach.call(sw.children,function(x){x.setAttribute('aria-pressed','false');});
+    b.setAttribute('aria-pressed','true');});sw.appendChild(b);});
+function rasterize(){var t=$('txt').value||' ',c=document.createElement('canvas'),x=c.getContext('2d');
+  var font='bold '+(ROWS-2)+'px "Helvetica Neue",Arial,"PingFang TC","Hiragino Sans","Noto Sans CJK TC",sans-serif';
+  x.font=font;textW=Math.ceil(x.measureText(t).width)+4;c.width=textW;c.height=ROWS;x.font=font;
+  x.fillStyle='#000';x.fillRect(0,0,c.width,c.height);x.fillStyle='#fff';x.textBaseline='middle';x.fillText(t,2,ROWS/2+1);
+  var d=x.getImageData(0,0,c.width,c.height).data;bitmap=new Uint8Array(c.width*ROWS);
+  for(var i=0;i<c.width*ROWS;i++)bitmap[i]=d[i*4]>110?1:0;window.__led={text:t,width:textW};}
+function frame(ts){var cv=$('led'),x=cv.getContext('2d'),W=cv.width,H=cv.height,cell=H/ROWS;cols=Math.floor(W/cell);
+  var dt=last?Math.min(100,ts-last):16;last=ts;var dir=parseInt($('dir').value,10),speed=parseInt($('spd').value,10);
+  off+=dir*speed*dt*0.004;var span=textW+cols;if(off<-span)off+=span;if(off>span)off-=span;
+  var lit=!($('blink').value==='1'&&Math.floor(ts/450)%2===1),mir=$('mir').value==='1';
+  x.fillStyle='#050505';x.fillRect(0,0,W,H);
+  var start=dir===0?Math.floor((cols-textW)/2):Math.round(off)+(dir<0?cols:-textW);
+  if(dir===0)start=Math.floor((cols-textW)/2);
+  for(var cx=0;cx<cols;cx++){var tx=(mir?cols-1-cx:cx)-start;
+    if(dir!==0){tx=((tx%span)+span)%span;}
+    for(var cy=0;cy<ROWS;cy++){var on=lit&&tx>=0&&tx<textW&&bitmap[cy*textW+tx];
+      x.beginPath();x.arc(cx*cell+cell/2,cy*cell+cell/2,cell*0.38,0,6.2832);
+      x.fillStyle=on?color:'#1b1b1b';x.fill();}}
+  requestAnimationFrame(frame);}
+$('txt').addEventListener('input',rasterize);
+$('fs').addEventListener('click',function(){var w=$('wrap');
+  if(document.fullscreenElement){document.exitFullscreen();return;}
+  if(w.requestFullscreen)w.requestFullscreen().catch(function(){});});
+rasterize();requestAnimationFrame(frame);
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+---
+title: "najbolja jednostavna aplikacija za popis zadataka na iPhoneu bez pretplate"
+lang: "hr"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/hr/index.html"
+modified: "2026-10-21"
+app_store_id: "6785004775"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# najbolja jednostavna aplikacija za popis zadataka na iPhoneu bez pretplate
+
+Ako vam većina aplikacija za zadatke djeluje pretrpano, prava je čista lista zadataka s podsjetnicima i podrškom za Apple Watch — i namjerno bez upravljanja projektima. Upravo zato Mochi postoji.
+
+- Produktivnost
+- Besplatno za početak
+- Bez računa
+- Bez oglasa
+- Apple Watch
+- App Store · Besplatno
+
+[Preuzmite Mochi u App Storeu →](https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
+
+[Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
+
+> Vodič je napisao Lumi Studio, razvojni tim aplikacije. Nazivi aplikacija zaštitni su znakovi svojih vlasnika i navode se samo radi identifikacije. Kod odluka vezanih uz dokumente, zdravlje, školu i produktivnost provjerite službene zahtjeve ondje gdje je to važno.

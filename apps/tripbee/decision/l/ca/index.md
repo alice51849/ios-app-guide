@@ -1,0 +1,28 @@
+---
+title: "Millor app per planificar itineraris de viatge per iPhone"
+lang: "ca"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbee/decision/l/ca/index.html"
+modified: "2026-10-21"
+app_store_id: "6787754435"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# Millor app per planificar itineraris de viatge per iPhone
+
+Una bona app d’itineraris converteix un viatge desordenat en una línia de temps clara dia a dia — vols, hotels, activitats, restaurants i transport — amb icones clares per tipus perquè puguis llegir el teu dia d’un cop d’ull. Si t'hi veus reflectit, dona-li un cop d'ull a TripBee Pro: Planificador de Viatges.
+
+- Viatges
+- Descàrrega de pagament
+- Fora de línia
+- Sense anuncis
+- Sense seguiment
+- Privat / en el dispositiu
+- App Store · 6,99 €
+
+[Descarrega TripBee Pro: Planificador de Viatges a l’App Store →](https://apps.apple.com/es/app/id6787754435?pt=118326163&ct=geo_pick&mt=8)
+
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/answers/best-trip-itinerary-planner-app-for-iphone.html)
+
+> Guia escrita per Lumi Studio, el desenvolupador de l'aplicació. Els noms de les aplicacions són marques dels seus propietaris i s'utilitzen només per identificar-les. Per a decisions sobre documents, salut, escola i productivitat, comprova els requisits oficials quan sigui rellevant.

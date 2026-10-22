@@ -1,0 +1,306 @@
+{
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    }
+  ],
+  "feed_url": "https://open.cait518.cc/ios-app-guide/he/tools/hero-tasks.feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/he/index.html",
+  "items": [
+    {
+      "_hero_task": {
+        "adapter": "purchase-worktime-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6794039979?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstaglite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6754218117?pt=118326163&ct=geo_learn&mt=8",
+            "key": "hourstag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 438,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/purchase-worktime-sheet.csv"
+        }
+      ],
+      "content_text": "השוו קניות לפי ההכנסה נטו לשעה והורידו קובץ CSV משלכם. סך הכול = כמות × מחיר סופי. שעות עבודה = הסכום ÷ הכנסה נטו לשעה. ימי עבודה = שעות ÷ שעות ביום עבודה. הזינו מחירים הכוללים מס. ללא המרת מטבע, חישוב שכר, תחזית חיסכון או עצת קנייה. מוצגות שתי ספרות עשרוניות; הסכומים מחושבים ללא עיגול ביניים.",
+      "date_modified": "2026-10-21T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/purchase-worktime-sheet.html",
+      "language": "he",
+      "title": "השוואת קניות בשעות עבודה",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/purchase-worktime-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "maintenance-next-due-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6790800323?pt=118326163&ct=geo_learn&mt=8",
+            "key": "mochidonestamp"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 381,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/maintenance-next-due-sheet.csv"
+        }
+      ],
+      "content_text": "רשמו מתי ביצעתם לאחרונה כל משימה בבית, ברכב או לבריאות ובאיזו תדירות היא חוזרת: תקבלו את המועד הבא, הימים שנותרו ומה שבפיגור בטבלה להורדה. מועד הבא = בוצע לאחרונה + מרווח. בחודשים נשמר אותו יום בחודש; אם אינו קיים, נבחר היום האחרון בחודש (כולל שנים מעוברות). ימים שנותרו = מועד − היום. מתחת ל-0 בפיגור; 0 עד 7 בקרוב. מרווחים של 1 עד 3650 ימים, שבועות או חודשים. תאריכים בין 1900-01-01 ל-2999-12-31. עד 30 משימות. ללא תזכורות, התראות או סנכרון יומן; שום דבר לא יוצא מהעמוד הזה.",
+      "date_modified": "2026-10-21T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/maintenance-next-due-sheet.html",
+      "language": "he",
+      "title": "טבלת מועדי תחזוקה הבאים",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/maintenance-next-due-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "project-profit-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6801956402?pt=118326163&ct=geo_learn&mt=8",
+            "key": "moneytag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 368,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/project-profit-sheet.csv"
+        }
+      ],
+      "content_text": "רשמו מה הכניס ומה עלה פרויקט פרילנס או עבודה קטנה, והורידו דף עם רווח גולמי, שולי רווח ונטו לשעה. רווח = סך הכנסות − סך הוצאות. שולי רווח = רווח ÷ סך הכנסות. נטו לשעה = רווח ÷ שעות שהושקעו. הסכומים נסכמים באגורות שלמות, ולכן הסיכומים לא נסחפים. סכומים בין 0 ל‑100,000,000 עם שתי ספרות עשרוניות לכל היותר, עד 20 שורות הכנסה ו‑20 שורות הוצאה, שעות בין 0.25 ל‑2000 בקפיצות של רבע שעה. מטבע אחד, ללא המרה, ללא ייעוץ מס או חשבונאות.",
+      "date_modified": "2026-10-21T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/project-profit-sheet.html",
+      "language": "he",
+      "title": "גיליון רווח לפרויקט",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/project-profit-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "battery-wear-range-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6802423998?pt=118326163&ct=geo_learn&mt=8",
+            "key": "battai"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1100,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/battery-wear-range-sheet.csv"
+        }
+      ],
+      "content_text": "הקלידו את הקיבולת המרבית מהגדרות ה‑iPhone ואם יש, את מספר המחזורים, והורידו דף עם טווח הבלאי החודשי והחודשים שנותרו עד 80% – תמיד כטווח, לעולם לא כציון. בלאי לחודש = (100 − קיבולת) ÷ גיל בחודשים, מוצג עם רצועה של ±25%. חודשים עד 80% = (קיבולת − 80) ÷ בלאי; הגבול הנמוך מהקצב הגבוה והגבוה מהקצב הנמוך. מחזורים לחודש = מחזורים ÷ גיל. קיבולת 60 עד 100 כאחוז שלם, מחזורים 0 עד 3000, חודש רכישה בין 2007 ל‑2099 בגיל של 1 עד 240 חודשים, עד 10 מכשירים. חודשים בפורמט YYYY-MM. הנתונים נשארים בלשונית זו; דבר לא נמדד או נקרא מהטלפון.",
+      "date_modified": "2026-10-21T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/battery-wear-range-sheet.html",
+      "language": "he",
+      "title": "גיליון טווח בלאי סוללה",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/battery-wear-range-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bandwidth-need-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6793414462?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaidlite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6790467886?pt=118326163&ct=geo_learn&mt=8",
+            "key": "wifiaid"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 631,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/bandwidth-need-sheet.csv"
+        }
+      ],
+      "content_text": "רשמו מה בני הבית עושים ברשת בו-זמנית ובכמה מכשירים, והורידו גיליון עם ה-Mbps הדרושים והמרווח שנשאר בחבילה שלכם. סה״כ בשורה = מכשירים × ערך למכשיר. נדרש = סכום השורות. מרווח = חבילה − נדרש; פחות מ-20% מהחבילה זה גבולי, מתחת לאפס לא מספיק. מסכמים בעשיריות Mbps שלמות, כך שהסכומים לעולם לא סוטים. מהירויות חבילה בין 0.5 ל-10000 Mbps עם ספרה עשרונית אחת לכל היותר, 1 עד 50 מכשירים בשורה, עד 20 שורות. כיסוי Wi‑Fi, השהיה והמהירות שהספק מספק בפועל אינם חלק מהגיליון.",
+      "date_modified": "2026-10-21T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/bandwidth-need-sheet.html",
+      "language": "he",
+      "title": "גיליון צורכי רוחב הפס בבית",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/bandwidth-need-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "trip-budget-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6793436548?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoneylite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6755782939?pt=118326163&ct=geo_learn&mt=8",
+            "key": "gmoney"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 496,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/trip-budget-sheet.csv"
+        }
+      ],
+      "content_text": "הזינו את תקציב הטיול הכולל, הימים, המטיילים וההוצאות שכבר ידועות, והורידו גיליון עם כמה כל אחד יכול להוציא ביום ואיך זה מתחלק בין אוכל, תחבורה, כרטיסים וקניות. נשאר להוצאה = תקציב כולל − הוצאות קבועות. ליום = נשאר להוצאה ÷ ימים. לאדם ליום = ליום ÷ מטיילים. כל קטגוריה = ליום × החלק שלה. הסכומים מחוברים באגורות שלמות; הערכים היומיים מעוגלים רק בתצוגה. סכומים בין 0 ל-100,000,000 עם עד שתי ספרות עשרוניות, 1 עד 120 ימים, 1 עד 20 מטיילים, עד 15 הוצאות קבועות, ארבעה חלקים שסכומם בדיוק 100. אותו מטבע לאורך כל הדרך, בלי שערי חליפין, בלי ייעוץ מחירים או הזמנות.",
+      "date_modified": "2026-10-21T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/trip-budget-sheet.html",
+      "language": "he",
+      "title": "תקציב טיול ליום",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/trip-budget-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "day-itinerary-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6791299610?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbeelite"
+          },
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6787754435?pt=118326163&ct=geo_learn&mt=8",
+            "key": "tripbee"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 385,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/day-itinerary-sheet.csv"
+        }
+      ],
+      "content_text": "רשמו את המקומות ליום אחד עם משך השהייה וזמן הנסיעה למקום הבא, והורידו גיליון עם שעות הגעה ויציאה שמראה אם הכול נכנס בין ההתחלה לסיום שלכם. הגעה = יציאה קודמת + נסיעה. יציאה = הגעה + שהייה. סה״כ = כל השהיות + כל הנסיעות. זמין = סיום − התחלה; סיום מוקדם מההתחלה נחשב ליום הבא. חריגה = סה״כ − זמין; מעל אפס חורג. חשבון דקות פשוט, בלי אזורי זמן. שעות בפורמט 24 שעות HH:MM, שהייה 5 עד 720 דקות, נסיעה 0 עד 600 דקות, עד 25 מקומות. שעות פתיחה, תנועה אמיתית, מפות, ניווט והזמנות אינם חלק מהגיליון.",
+      "date_modified": "2026-10-21T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/day-itinerary-sheet.html",
+      "language": "he",
+      "title": "גיליון זמנים ליום אחד",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/day-itinerary-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "one-page-outline-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6798814385?pt=118326163&ct=geo_learn&mt=8",
+            "key": "onepageppt"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 431,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/one-page-outline-sheet.csv"
+        }
+      ],
+      "content_text": "הפכו רשימות פגישה מבולגנות למתווה של עמוד אחד: כותרת אחת, שלוש עד שתים-עשרה נקודות מפתח, פעולה הבאה אחת ומדד אופציונלי, והורידו גיליון שאפשר להדביק בשקופית או בסיכום. הגיליון שומר על המילים שלכם כפי שהן: כותרת, אחר כך הנקודות בסדר שהקלדתם, אחר כך הפעולה הבאה ולבסוף המדד. הוא סופר את הנקודות ומסיר רווחים בקצוות; שום דבר לא נכתב מחדש, לא מתומצת ולא מדורג. כותרת עד 80 תווים, 3 עד 12 נקודות של עד 160 תווים כל אחת, פעולה הבאה עד 160 תווים, מדד עד 60 תווים. כל שורה חייבת להיות טקסט בשורה אחת. הגיליון לא קורא קבצים, הקלטות או יומנים.",
+      "date_modified": "2026-10-21T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/one-page-outline-sheet.html",
+      "language": "he",
+      "title": "מסיכום פגישה לעמוד אחד",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/one-page-outline-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "bill-split-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6794178671?pt=118326163&ct=geo_learn&mt=8",
+            "key": "caldaily"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 346,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/bill-split-sheet.csv"
+        }
+      ],
+      "content_text": "רשמו כמה הזמין כל אחד, הוסיפו אחוזי מס וטיפ, וקבלו בדיוק כמה כל אחד חייב. המס והטיפ מתחלקים עד האגורה האחרונה לפי ההזמנה, והטבלה יורדת כקובץ CSV. סכום ביניים = כל ההזמנות יחד. מס = סכום ביניים × אחוז המס. טיפ = סכום ביניים × אחוז הטיפ. החלק של כל אחד הוא ההזמנה שלו ÷ סכום הביניים; האגורות שנשארות הולכות קודם לשברים הגדולים ביותר, כך שסכום החלקים תמיד יוצא בדיוק החשבון. השתמשו במטבע אחד, והזינו מס וטיפ כאחוז מסכום הביניים. בלי המרת מטבע, בלי כללי דמי שירות, בלי המלצה כמה טיפ להשאיר ובלי תשלומים. התצוגה מעגלת לשתי ספרות; החישוב עצמו נעשה באגורות שלמות.",
+      "date_modified": "2026-10-21T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/bill-split-sheet.html",
+      "language": "he",
+      "title": "חלוקת חשבון",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/bill-split-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "reading-backlog-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6802505528?pt=118326163&ct=geo_learn&mt=8",
+            "key": "savetag"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 413,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/reading-backlog-sheet.csv"
+        }
+      ],
+      "content_text": "רשמו מה שמרתם וכמה זמן כל דבר לוקח, הזינו כמה דקות אתם באמת קוראים ביום, וראו באיזה יום כל פריט נגמר. את התוכנית מורידים כקובץ CSV. סכום מצטבר = הדקות של הפריט הזה ועוד כל מה שמעליו. יום = סכום מצטבר ÷ דקות ביום, בעיגול כלפי מעלה. מסתיים ב = תאריך ההתחלה + יום − 1. דקות פנויות = ימים × דקות ביום − סך הדקות. הסדר שהקלדתם הוא סדר הקריאה: שום דבר לא מסודר מחדש, לא מדולג ולא מאוחד. פעם ביום, בדיוק לפי המכסה שלכם, בלי ימי חופש, בלי לפתוח או להוריד קישורים ובלי לנחש את מהירות הקריאה שלכם.",
+      "date_modified": "2026-10-21T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/reading-backlog-sheet.html",
+      "language": "he",
+      "title": "תוכנית «לקרוא אחר כך»",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/reading-backlog-sheet.html"
+    },
+    {
+      "_hero_task": {
+        "adapter": "review-schedule-v1",
+        "optional_apps": [
+          {
+            "app_store_url": "https://apps.apple.com/il/app/id6798813048?pt=118326163&ct=geo_learn&mt=8",
+            "key": "notesstudio100"
+          }
+        ]
+      },
+      "attachments": [
+        {
+          "mime_type": "text/csv",
+          "size_in_bytes": 1311,
+          "title": "הורדת CSV לדוגמה",
+          "url": "https://open.cait518.cc/ios-app-guide/he/tools/results/review-schedule-sheet.csv"
+        }
+      ],
+      "content_text": "הזינו מתי כתבתם כל סיכום, וקבלו את חמשת מועדי החזרה שאחריו, כמה ימים נשארו ואילו כבר עברו. את הלוח מורידים כקובץ CSV. תאריך חזרה = תאריך הכתיבה + 1, 3, 7, 16 ו-35 ימים. ימים שנותרו = תאריך החזרה − היום; מספר שלילי הוא תאריך שכבר עבר. החזרה הבאה = התאריך הראשון שחל היום או אחריו. זהו סולם מרווחים קבוע, לא מודל זיכרון: שום דבר כאן לא חוזה מה תזכרו, לא נותן ציון לסיכום ולא בודק תשובות. תאריכים בלבד, בלי שעות, אזורי זמן, תזכורות או התראות.",
+      "date_modified": "2026-10-21T00:00:00Z",
+      "id": "https://open.cait518.cc/ios-app-guide/he/tools/review-schedule-sheet.html",
+      "language": "he",
+      "title": "לוח חזרות לסיכומים",
+      "url": "https://open.cait518.cc/ios-app-guide/he/tools/review-schedule-sheet.html"
+    }
+  ],
+  "language": "he",
+  "title": "תוצאות משימות בחינם",
+  "version": "https://jsonfeed.org/version/1.1"
+}

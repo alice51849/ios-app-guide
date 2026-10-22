@@ -1,0 +1,26 @@
+---
+title: "bedste simple rejseplanlægningsapp til én kommende rejse til iPhone"
+lang: "da"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/da/index.html"
+modified: "2026-10-21"
+app_store_id: "6791299610"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# bedste simple rejseplanlægningsapp til én kommende rejse til iPhone
+
+Hvis du planlægger én kommende rejse, er en rolig tidslinje for den rejse mere nyttig end et overfyldt arkiv med alle rejser, du måske tager en dag. Lyder det bekendt, så kig på TripBee Lite.
+
+- Rejse
+- Gratis at komme i gang
+- Ingen konto
+- Ingen reklamer
+- App Store · Gratis
+
+[Hent TripBee Lite i App Store →](https://apps.apple.com/dk/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
+
+[Læs hele vejledningen](https://open.cait518.cc/ios-app-guide/da/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
+
+> Guide skrevet af Lumi Studio, som har udviklet appen. Appnavne er varemærker tilhørende deres ejere og bruges udelukkende til identifikation. Når det gælder dokumenter, sundhed, skole og produktivitet, bør du tjekke de officielle krav, hvor det er relevant.

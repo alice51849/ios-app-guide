@@ -1,0 +1,26 @@
+---
+title: "ਪ੍ਰੀ-ਸਕੂਲ ਅਤੇ ਸ਼ੁਰੂਆਤੀ ਜਮਾਤਾਂ ਲਈ ਪੂਰੀ ਗਣਿਤ ਸਿੱਖਣ ਐਪ"
+lang: "pa-IN"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/pa-IN/index.html"
+modified: "2026-10-21"
+app_store_id: "6776958488"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# ਪ੍ਰੀ-ਸਕੂਲ ਅਤੇ ਸ਼ੁਰੂਆਤੀ ਜਮਾਤਾਂ ਲਈ ਪੂਰੀ ਗਣਿਤ ਸਿੱਖਣ ਐਪ
+
+ਇੱਕ ਪੂਰੀ ਸ਼ੁਰੂਆਤੀ-ਗਣਿਤ ਐਪ ਗਿਣਤੀ, ਨੰਬਰ ਸੰਵੇਦਨਾ ਅਤੇ ਪਹਿਲੀ ਗਣਿਤ ਨੂੰ ਇੱਕ-ਜਿਹੇ ਐਡਵੈਂਚਰ ਵਜੋਂ ਮਹਿਸੂਸ ਕਰਵਾਉਣੀ ਚਾਹੀਦੀ ਹੈ, ਨਾ ਕਿ ਵੱਖ-ਵੱਖ ਡ੍ਰਿਲ। ਇਸੇ ਲਈ Lumi Math Pro ਬਣਿਆ।
+
+- ਬੱਚੇ ਅਤੇ ਸਿੱਖਿਆ
+- ਭੁਗਤਾਨ ਵਾਲਾ ਡਾਊਨਲੋਡ
+- ਕੋਈ ਵਿਗਿਆਪਨ ਨਹੀਂ
+- ਨਿੱਜੀ / ਡਿਵਾਈਸ 'ਤੇ
+- App Store · ₹ 999
+
+[Lumi Math Pro App Store 'ਤੇ ਲਵੋ →](https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)
+
+[ਪੂਰਾ ਮਾਰਗਦਰਸ਼ਨ ਪੜ੍ਹੋ](https://open.cait518.cc/ios-app-guide/pa-IN/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
+
+> ਐਪ ਬਣਾਉਣ ਵਾਲੇ Lumi Studio ਵੱਲੋਂ ਲਿਖੀ ਗਾਈਡ। ਐਪਾਂ ਦੇ ਨਾਂ ਉਹਨਾਂ ਦੇ ਮਾਲਕਾਂ ਦੇ ਟ੍ਰੇਡਮਾਰਕ ਹਨ ਅਤੇ ਸਿਰਫ਼ ਪਛਾਣ ਲਈ ਵਰਤੇ ਗਏ ਹਨ। ਦਸਤਾਵੇਜ਼, ਸਿਹਤ, ਸਕੂਲ ਅਤੇ ਕੰਮਕਾਜ ਨਾਲ ਜੁੜੇ ਫ਼ੈਸਲਿਆਂ ਵਿੱਚ ਜਿੱਥੇ ਲੋੜ ਹੋਵੇ ਉੱਥੇ ਸਰਕਾਰੀ ਜਾਂ ਅਧਿਕਾਰਤ ਸ਼ਰਤਾਂ ਦੇਖ ਲਵੋ।

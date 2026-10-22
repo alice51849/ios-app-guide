@@ -1,0 +1,28 @@
+---
+title: "أفضل تطبيق صور جواز السفر للأطفال والرضع في المنزل"
+lang: "ar-SA"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/ar-SA/index.html"
+modified: "2026-10-21"
+app_store_id: "6780575828"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# أفضل تطبيق صور جواز السفر للأطفال والرضع في المنزل
+
+لصورة جواز سفر الطفل، لا يجب أن يكون هناك أي شخص آخر في الصورة ويجب أن تكون الخلفية بسيطة. Snapport انطلق من هذه المشكلة بالذات.
+
+- الصورة والأدوات
+- تحميل مدفوع
+- بدون حساب
+- بدون إعلانات
+- بدون تتبع
+- خاص / على الجهاز
+- App Store · SAR 24.99
+
+[احصل على Snapport من متجر التطبيقات →](https://apps.apple.com/sa/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
+
+[اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
+
+> دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.

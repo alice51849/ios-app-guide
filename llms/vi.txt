@@ -1,0 +1,245 @@
+# Danh mục ứng dụng — iOS App Guide
+
+> Thông tin có cấu trúc cho từng ứng dụng iOS — tính năng, giá và FAQ.
+
+locale: vi
+apps: 54
+- Danh mục ứng dụng: https://open.cait518.cc/ios-app-guide/vi/tools/private-pay-once-iphone-app-finder.html
+- Danh mục ứng dụng · PWA: https://open.cait518.cc/ios-app-guide/vi/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/vi.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/vi.json
+- Danh mục ứng dụng · SVG: https://open.cait518.cc/ios-app-guide/vi/visuals/
+- Danh mục ứng dụng · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Danh mục ứng dụng · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Danh mục ứng dụng · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Danh mục ứng dụng · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Danh mục ứng dụng · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- Danh mục ứng dụng · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- Danh mục ứng dụng · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Danh mục ứng dụng · Agent Skill · vi: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/vi.json
+- Danh mục ứng dụng · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Danh mục ứng dụng · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Danh mục ứng dụng · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Danh mục ứng dụng · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Danh mục ứng dụng · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Danh mục ứng dụng · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Danh mục ứng dụng · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Danh mục ứng dụng · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Danh mục ứng dụng · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/vi/notesstudio100.html) — Ghi chú viết tay và PDF
+  - Mùa đông và thi cuối kỳ: viết tay, chú thích PDF bài giảng, gắn bản ghi âm ngay trên trang và ôn bằng thẻ ghi nhớ. Hoàn toàn ngoại tuyến, không cần tài khoản.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: Tệp thành prompt AI](https://open.cait518.cc/ios-app-guide/vi/aibriefpack.html) — Tạo prompt từ tệp và PDF
+  - Báo cáo cuối năm và kế hoạch nghỉ lễ? Thêm ảnh chụp màn hình, PDF, ghi chú và liên kết; đọc ngay trên máy, đánh dấu thông tin cá nhân, gom thành bản tóm tắt cho AI.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: Gia sư tiếng Anh](https://open.cait518.cc/ios-app-guide/vi/aim990.html) — Chẩn đoán TOEIC trong 8 phút
+  - Điểm tiếng Anh mãi không lên? Chẩn đoán 8 phút chỉ ra 3 kỹ năng kéo điểm xuống và nên sửa cái nào trước. Có chế độ nước rút 14 ngày cuối. Ngoại tuyến, không tài khoản.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: Điểm tình trạng pin](https://open.cait518.cc/ios-app-guide/vi/battai.html) — Quy tắc, nguồn và giới hạn rõ ràng
+  - Hiểu pin của bạn theo thời gian Quy tắc, nguồn và giới hạn rõ ràng Mở khóa lịch sử sâu hơn, công cụ lập kế hoạch và báo cáo Thanh toán một lần. Không đăng ký
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily: máy tính và chủ đề](https://open.cait518.cc/ios-app-guide/vi/caldaily.html) — Widget, giảm giá, chia hóa đơn
+  - Tính xong lại quên con số đó là gì? CalDaily lưu mọi kết quả, đặt tên và tìm lại được. 8 công cụ: chia hóa đơn, thuế, khoản vay, đổi đơn vị, tính ngày. Có cả widget.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/vi/countdaysnow.html) — Trọng tâm hôm nay
+  - Trọng tâm hôm nay: chọn riêng Từ đó, Hôm nay hoặc Sắp tới, rồi xem lại ba lựa chọn gần nhất bên cạnh các ngày quan trọng.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: Tạo CV chuẩn ATS](https://open.cait518.cc/ios-app-guide/vi/cvdesk.html) — Mẫu CV, hồ sơ xin việc & PDF
+  - Chấm điểm ATS ngay, gợi ý sửa rõ ràng và góc nhìn 6 giây đầu của nhà tuyển dụng. Xem trước bản PDF hoàn chỉnh bất cứ lúc nào. Không cần tài khoản.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: Theo dõi kinh nguyệt](https://open.cait518.cc/ios-app-guide/vi/cyca.html) — Lịch kinh, ngày rụng trứng
+  - Chu kỳ của bạn, riêng tư thật sự. Từng giai đoạn, ngày dễ thụ thai và dự báo cơ thể mỗi ngày, tất cả trên máy. Không tài khoản, đám mây hay quảng cáo. Khóa Face ID.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: Luyện nói](https://open.cait518.cc/ios-app-guide/vi/dailymatelite.html) — Hội thoại du lịch, 50 ngôn ngữ
+  - Sắp đi du lịch mà sợ không nghe kịp người bản xứ? Luyện câu họ nói kèm câu đáp tự nhiên ở sân bay, khách sạn, nhà hàng. Du lịch cơ bản có ở cả 50 ngôn ngữ, có phát âm.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: Câu nói đời thường](https://open.cait518.cc/ios-app-guide/vi/dailymate.html) — Tiếng Anh giao tiếp hằng ngày
+  - Biết từ vựng mà vẫn đứng hình khi nói? Học cả câu kèm câu đáp tự nhiên: 8.400 câu, 47 ngôn ngữ, 84 tình huống. Có widget, Apple Watch, dùng offline. Không có gói đăng ký.
+  - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: Máy đo mức âm thanh](https://open.cait518.cc/ios-app-guide/vi/dbhalo.html) — Phổ tần số và liều tiếng ồn
+  - Tiệc cuối năm, hàng xóm ồn ào hay tiếng ngáy đêm đông? Xem dB trực tiếp trên vòng Halo, ước tính liều tiếng ồn mỗi ngày và ghi lại tiếng ngáy trong nhật ký giấc ngủ.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Báo thức thông minh](https://open.cait518.cc/ios-app-guide/vi/easyam.html) — Nghỉ lễ tự tắt, đi làm tự reo
+  - Tết Dương lịch tự động không reo. Nghỉ Tết hay đi chơi cuối năm? Thêm những ngày đó làm ngày nghỉ: báo thức im lặng và reo lại vào ngày làm việc đầu tiên.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: Chi tiêu du lịch](https://open.cait518.cc/ios-app-guide/vi/gmoneylite.html) — Hạn mức ngày trên đồng hồ
+  - Du lịch nước ngoài dịp Giáng sinh, năm mới? Ghi khoản mua bằng tiền địa phương, xem ngay bằng tiền của bạn, đặt hạn mức mỗi ngày. Tỷ giá dùng được cả khi ngoại tuyến.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: Chi tiêu và ngân sách](https://open.cait518.cc/ios-app-guide/vi/gmoney.html) — Ngân sách và chi tiêu du lịch
+  - Giáng sinh, Tết Dương lịch, chuyến đi cuối năm? Ghi chi tiêu theo danh mục hoặc chuyến đi, đặt ngân sách mỗi ngày và đổi tiền tệ ngay cả khi ngoại tuyến.
+  - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: Giá quy ra giờ](https://open.cait518.cc/ios-app-guide/vi/hourstaglite.html) — Mua sắm tỉnh táo: giá thật
+  - Mùa mua sắm cuối năm: trước khi mua, xem giá bằng số giờ làm việc của chính bạn, gắn nhãn Cần, Muốn hoặc Bốc đồng, và xem công sức phía sau mục tiêu cho năm mới.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: Giờ để mua](https://open.cait518.cc/ios-app-guide/vi/hourstag.html) — Lương giờ & chi tiêu
+  - Mua sắm cuối năm, quà Giáng sinh và năm mới? Trước khi mua, xem mỗi mức giá bằng giờ làm việc, gắn nhãn Cần, Muốn hoặc Bốc đồng và lên kế hoạch wishlist theo giờ.
+  - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/vi/ledmovingtext.html) — Dòng đèn chạy trên màn hình
+  - Biến màn hình thành bảng chữ chạy rực sáng chỉ trong vài giây, hoặc tạo chuỗi thông điệp và chuyển bằng một chạm hay hẹn giờ. Toàn màn hình, không cần mạng.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: Chặn ứng dụng](https://open.cait518.cc/ios-app-guide/vi/lockhour.html) — Chặn ứng dụng, giới hạn giờ
+  - Khóa ứng dụng và trang web làm bạn mất thời gian cho đến khi hết giờ. Chế độ tập trung, học bài, ngủ, chế độ nghiêm ngặt, thống kê và chuỗi ngày. Mở khóa một lần.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo](https://open.cait518.cc/ios-app-guide/vi/lumibopomofo.html) — Zhuyin: tiếng Trung cho bé
+  - Cho bạn ký hiệu ăn theo âm thanh, tô từng nét đúng thứ tự, đi tàu lượn thanh điệu và ghép âm trên đoàn tàu. Dùng được cả khi không có mạng.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/vi/lumibopomofopro.html) — Thanh điệu, ghép vần, tô chữ
+  - Trọn 37 âm chú âm Zhuyin: tàu lượn thanh điệu, đoàn tàu ghép vần, câu cá, tô chữ và đua sao. Bố mẹ xem tiến độ, danh sách cần ôn và in phiếu bài tập. Không quảng cáo.
+  - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Chữ Cái Lite](https://open.cait518.cc/ios-app-guide/vi/lumiletters.html) — Bé tập tô chữ ABC tiếng Anh
+  - Thử chữ A và hành tinh đầu tiên: bé nghe âm chữ cái, tô theo bằng ngón tay và chơi đố vui. Sau đó mở khóa cả 26 chữ cái. Không quảng cáo, chơi không cần mạng.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Hành Tinh Nhiệm Vụ](https://open.cait518.cc/ios-app-guide/vi/lumimission.html) — Bảng sao khen thưởng cho bé
+  - Bớt nhắc nhở, thêm niềm vui: mỗi nhiệm vụ hoàn thành được sao, cho Lumi ăn và lấp đầy album 100 nhãn dán. Tự thêm việc riêng của nhà bạn. Không quảng cáo.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Hành Tinh Nhiệm Vụ Pro](https://open.cait518.cc/ios-app-guide/vi/lumimissionpro.html) — Nề nếp sinh hoạt sáng tối
+  - Đủ mọi nề nếp: ăn, đánh răng, ngủ, dọn đồ chơi, chuẩn bị đi học, thêm việc riêng, xem lại 7 ngày và nhắc nhở buổi tối. Không quảng cáo, không cần mạng.
+  - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Pro: ABC Phonics](https://open.cait518.cc/ios-app-guide/vi/lumiletterspro.html) — Tiếng Anh cho bé: âm chữ cái
+  - Bé nghe một từ, tìm âm đầu, âm giữa hoặc âm cuối rồi tô theo chữ cái. 26 chữ cái, 14 hành tinh và phiếu bài tập để in. Không quảng cáo, không cần mạng.
+  - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Planet: Toán cho bé](https://open.cait518.cc/ios-app-guide/vi/lumimath.html) — Mầm non, tiểu học: cộng trừ
+  - Trả lời đúng, một hành tinh sáng lên. 46 dạng câu hỏi bằng hình: đếm số, cộng, trừ, bảng cửu chương, đồng hồ và tiền. Không quảng cáo, không gói đăng ký.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Pro: Số cho bé](https://open.cait518.cc/ios-app-guide/vi/lumimathpro.html) — Toán tư duy và giải đố logic
+  - Tư duy logic, quy luật và toán có lời văn trong 46 dạng câu hỏi. Luyện điểm yếu, báo cáo học tập và phiếu bài tập để in. Không quảng cáo, không mua trong ứng dụng.
+  - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Thời tiết: Dự báo mưa](https://open.cait518.cc/ios-app-guide/vi/lumiweather.html) — Chỉ số ra ngoài và mặc gì
+  - Ra ngoài bây giờ hay đợi chút? Lumi biến dự báo thành chỉ số ra ngoài từ 0 đến 100, cho bạn biết nên mặc gì, có cần mang ô hay bôi kem chống nắng không.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: Xóa thông tin](https://open.cait518.cc/ios-app-guide/vi/maskmyfile.html) — Che dữ liệu trước khi chia sẻ
+  - Sắp gửi hồ sơ thuê nhà, bảng lương hay bệnh án? Mask My File tìm thông tin riêng tư, che vĩnh viễn đúng phần bạn chọn, xóa siêu dữ liệu và kiểm tra lại bản mới trên máy.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: Lần cuối](https://open.cait518.cc/ios-app-guide/vi/mochidonestamp.html) — Làm khi nào? Nhắc việc nhà
+  - Lần cuối thay ga giường, thay lõi lọc là khi nào? Xong việc chạm một lần, Mochi ghi lại thời điểm và nhắc khi đến hạn, tính từ lúc bạn thật sự làm. Có widget tiện xem.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: Checklist dễ thương](https://open.cait518.cc/ios-app-guide/vi/mochi.html) — Việc cần làm dễ thương
+  - Từ 20/11 đến Tết dương lịch, gom việc học, công việc, mua sắm vào danh sách dễ thương. Chạm vòng tròn nhỏ khi xong, chọn chủ đề xinh xắn và đặt widget lên Màn hình chính.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag: Thu và chi](https://open.cait518.cc/ios-app-guide/vi/moneytag.html) — Dự án · Thẻ · Báo cáo
+  - Cuối năm làm thêm việc tay trái hay bán hàng? Dự án của bạn hiện thu trừ chi thành số ròng, theo đồng tiền bạn chọn, tỷ giá tự động hoặc nhập tay. Ghi từ Apple Watch.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: Slide AI](https://open.cait518.cc/ios-app-guide/vi/onepageppt.html) — Ghi chú thành bài thuyết trình
+  - Họp tổng kết cuối năm? Dán ghi chú, PDF, ảnh chụp màn hình hoặc CSV và nhận một slide 16:9 rõ ràng: ý chính thành tiêu đề, số liệu thành biểu đồ. Xuất ảnh PNG.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: Màu phim retro](https://open.cait518.cc/ios-app-guide/vi/photocream.html) — Máy ảnh film & bộ lọc vintage
+  - Ảnh tiệc cuối năm, đèn Giáng sinh dưới ánh vàng? Chỉnh ánh sáng, màu và đường cong, làm mịn da mà vẫn giữ chi tiết, rồi thêm hạt phim cho album cả năm.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: Dọn ảnh trùng](https://open.cait518.cc/ios-app-guide/vi/picclear.html) — Xóa ảnh trùng lặp, dọn bộ nhớ
+  - Bộ nhớ đầy, không chụp thêm được? PicClear tìm ảnh trùng, ảnh chụp màn hình cũ, ảnh mờ và video lớn ngay trên máy. Xem lại trước khi xóa, ảnh Yêu thích được bảo vệ.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: Quét & Tạo](https://open.cait518.cc/ios-app-guide/vi/qrcodehalo.html) — Mở ngay, kiểm tra sau
+  - Quét là xong: liên kết mở ngay, Wi-Fi hiện lời nhắc của iOS, cuộc gọi và email sẵn sàng. Mỗi lần quét đã lưu có Kiểm tra an toàn trong Lịch sử, ngay trên máy.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: dấu trang bằng AI](https://open.cait518.cc/ios-app-guide/vi/savetag.html) — Lưu link, bài viết để đọc sau
+  - Link tự gửi cho mình rồi quên mất? Chia sẻ vào SaveTag từ bất kỳ ứng dụng nào. SaveTag tự gắn thẻ ngay trên máy, tìm lại theo ý nghĩa và mỗi ngày nhắc vài link chưa đọc.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: PDF & OCR](https://open.cait518.cc/ios-app-guide/vi/scanto.html) — Máy quét tài liệu ngoại tuyến
+  - Hóa đơn mua sắm cuối năm, phiếu bảo hành và giấy tờ quyết toán chất đống? Quét thành PDF sắc nét, OCR ngay trên máy tìm ra từng tờ chỉ bằng một từ. Không cần mạng.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: Âm Thanh Ngủ Ngon](https://open.cait518.cc/ios-app-guide/vi/sereno.html) — Tiếng ồn trắng, mưa, sóng biển
+  - Nằm mãi không ngủ được? Tiếng mưa, sóng biển, lửa thu âm thật cùng tiếng ồn trắng, hồng, nâu, phối thành hơn 1000 không gian âm thanh không lặp lại. Dùng ngoại tuyến.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Sắp xếp ảnh](https://open.cait518.cc/ios-app-guide/vi/shotinbox.html) — Hình chụp màn hình và OCR
+  - Hàng nghìn ảnh chụp màn hình mà tìm mãi không ra? ShotInbox tự xếp vào hóa đơn, vé, du lịch, tin nhắn, tìm được cả chữ bên trong và dọn tấm không cần. Xử lý trên máy.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: Ảnh thẻ tại nhà](https://open.cait518.cc/ios-app-guide/vi/snapportlite.html) — Cắt chân dung đúng kích cỡ
+  - Cần ảnh 35x45 mm hay 2x2 inch làm visa, hộ chiếu? Snapport Lite có 35 mẫu kích thước cho 28 quốc gia, đường căn mặt và đổi nền trắng, xanh. In nhiều ảnh trên một trang.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: Ảnh thẻ hộ chiếu](https://open.cait518.cc/ios-app-guide/vi/snapport.html) — 35x45 và trang in sẵn
+  - Du lịch cuối năm hay làm hộ chiếu mới? Chụp ảnh hộ chiếu, visa ngay tại nhà: mẫu kích thước phổ biến, khung căn chỉnh khuôn mặt, nền trắng và trang in sẵn.
+  - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/vi/sononote.html) — Giọng nói thành văn bản
+  - Chỉ cần nói, Sono Note chuyển thành bản ghi gọn gàng, tóm tắt, ý chính và việc cần làm, cả email phản hồi. Hợp cho cuộc họp, lớp học, cuộc gọi. Không cần tài khoản.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: Đồng hồ lật để bàn](https://open.cait518.cc/ios-app-guide/vi/stayclock.html) — Đồng hồ và lịch luôn sáng
+  - Từ mùa đông đến Tết Dương lịch: khi sạc, điện thoại thành đồng hồ lớn đọc được từ góc bên kia phòng, kèm lịch Tháng, chuông báo giờ và báo thức đơn giản.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: Đếm giờ tập trung](https://open.cait518.cc/ios-app-guide/vi/studydown.html) — Úp màn hình xuống
+  - Mùa thi cuối kỳ và dự án cuối năm? Chọn một hoạt động, úp điện thoại xuống là bắt đầu tính giờ; nhấc lên là tạm dừng. Xem hôm nay và tuần này theo từng hoạt động.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet Trẻ Du Lịch](https://open.cait518.cc/ios-app-guide/vi/tripplanet.html) — Game nhiệm vụ cho bé đi chơi
+  - Cho bé đi chơi cuối năm mà sợ bé quấy trên máy bay? Biến lúc chờ thành nhiệm vụ: dũng cảm ở sân bay, nói cảm ơn, thử món mới. Có quà và dấu hộ chiếu. Bé 3–10 tuổi.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: Lịch trình](https://open.cait518.cc/ios-app-guide/vi/tripbeelite.html) — Kỳ nghỉ sắp xếp từng ngày
+  - Về quê dịp cuối năm hay đi chơi Tết Dương lịch? Gom chuyến đi vào một dòng thời gian theo từng ngày: chuyến bay, khách sạn, ghi chú, lời nhắc và thông tin vé ở một chỗ.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: Kế Hoạch Du Lịch](https://open.cait518.cc/ios-app-guide/vi/tripbee.html) — Đi chơi nhóm & danh sách đồ
+  - Đi chơi nhóm không còn rối: cả nhà và bạn bè cùng sửa một chuyến đi, có ý tưởng dự phòng ngày mưa, danh sách đồ cho từng người. Muốn thử trước? Tìm “TripBee Lite”
+  - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: Ảnh sắc nét](https://open.cait518.cc/ios-app-guide/vi/unblurry.html) — Phục hồi ảnh cũ, làm nét
+  - Tất niên, Noel và đêm giao thừa: ảnh bị mờ, rung hay thiếu sáng? Làm sắc nét, khử nhiễu và cứu ảnh thiếu sáng ngay trên iPhone, không đám mây, không tài khoản.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: Theo dõi dùng AI](https://open.cait518.cc/ios-app-guide/vi/claudeusagemini.html) — Hạn mức Claude, Codex, Copilot
+  - Cảnh báo tùy chỉnh ở bất kỳ phần trăm nào, sắp xếp theo lần đặt lại 5 giờ hoặc hằng tuần, và tiện ích lướt qua mọi tài khoản. Xem mỗi gói AI còn lại bao nhiêu.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite: Kiểm tra mạng](https://open.cait518.cc/ios-app-guide/vi/wifiaidlite.html) — Mất kết nối? Tìm nguyên nhân
+  - Mạng chập chờn mà không biết lỗi ở Wi-Fi, nhà mạng hay trang web? Một chạm kiểm tra Wi-Fi, DNS và internet, chỉ ra nguyên nhân khả dĩ nhất trước khi bạn gọi tổng đài.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: Tìm lỗi mạng WiFi](https://open.cait518.cc/ios-app-guide/vi/wifiaid.html) — Chẩn đoán router, mesh, DNS
+  - Cuối năm cả nhà dùng chung một Wi-Fi? Khi mạng chậm, chạm một lần để kiểm tra Wi-Fi, DNS và internet, xem nguyên nhân khả dĩ nhất, hoặc chỉ một trang web bị lỗi.
+  - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite 5 từ mỗi ngày](https://open.cait518.cc/ios-app-guide/vi/wordmatelite.html) — Học 44 ngôn ngữ trong 1 phút
+  - Mỗi ngày 5 từ trong 1 phút, chọn 1 trong 44 ngôn ngữ. Nghe từng từ, xem trong câu ví dụ và giữ chuỗi ngày học. Dùng offline, không cần tài khoản.
+  - Giá: Tải miễn phí, mua một lần để mở khóa tất cả. Không bẫy đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: Học 44 ngoại ngữ](https://open.cait518.cc/ios-app-guide/vi/wordmate.html) — Từ vựng, widget và đồng hồ
+  - Học từ vựng 44 ngôn ngữ với câu ví dụ tự nhiên, 14 chủ đề và 3 cấp độ. Học ngay trên widget hoặc Apple Watch. Dùng offline, không cần tài khoản.
+  - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: Giải nén RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/vi/zipbox.html) — Mở file nén, không quảng cáo
+  - Nhận file RAR, 7z mà iPhone không mở được? Zipbox mở 13 định dạng, cả file có mật khẩu và chia nhiều phần. Xem trước bên trong rồi chỉ lấy đúng file cần. Không quảng cáo.
+  - Giá: Tải xuống trả phí với một mức giá trả trước, không đăng ký.
+  - App Store: https://apps.apple.com/vn/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

@@ -1,0 +1,28 @@
+---
+title: "HoursTag: Timer å kjøpe — Timelønn og forbruk | iOS App"
+lang: "no"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/no/index.html"
+modified: "2026-10-21"
+app_store_id: "6754218117"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# HoursTag: Timer å kjøpe — Timelønn og forbruk | iOS App
+
+Hva koster det egentlig? Ikke i kroner – i timer av livet ditt.
+
+- Økonomi og reise
+- Betalt nedlasting
+- Ingen konto
+- Ingen annonser
+- Ingen sporing
+- Privat / på enheten
+- App Store · 59,00 kr
+
+[Last ned HoursTag: Timer å kjøpe fra App Store](https://apps.apple.com/no/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
+
+[Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/hourstag.html)
+
+> Dette er førsteparts materiale publisert av Lumi Studio, utvikleren av hver oppført app.

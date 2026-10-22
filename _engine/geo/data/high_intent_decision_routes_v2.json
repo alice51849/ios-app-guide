@@ -1,0 +1,2398 @@
+{
+  "schema_version": 4,
+  "dataset_name": "Lumi Studio High-Intent Decision Routes",
+  "inventory_contract": {
+    "relative_path": "data/verified-ios-app-finder-catalog.json",
+    "expected_app_count": 54,
+    "app_keys_sha256": "e113b81193a6a6edfbbc5aac051d54b81a8df04f147ba3598d487f7a40036706",
+    "copy_sha256": "f3363269f6338b33f9959e78f8aba04a21fa63df191e6fe7b476bccf657a2759",
+    "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
+  },
+  "publisher": {
+    "name": "Lumi Studio",
+    "relationship": "developer_of_every_listed_app",
+    "disclosures": {
+      "en-US": "This decision guide is published by Lumi Studio, the developer of the app discussed. It is first-party decision support, not an independent review or ranking.",
+      "zh-Hant": "本決策指南由所介紹 App 的開發者 Lumi Studio 發布，屬第一方決策資訊，並非獨立評測或排行榜。",
+      "fr-FR": "Ce guide est publié par Lumi Studio, le développeur de l’application présentée. Il s’agit d’informations de première main pour vous aider à choisir, et non d’un avis ou d’un classement indépendant.",
+      "ja": "このガイドは、紹介しているアプリの開発元である Lumi Studio が公開しています。製品選びの参考情報であり、独立した第三者によるレビューやランキングではありません。",
+      "de-DE": "Diese Entscheidungshilfe veröffentlicht Lumi Studio, der Entwickler der vorgestellten App. Sie bietet Produktinformationen aus erster Hand und ist weder eine unabhängige Bewertung noch eine Rangliste."
+    }
+  },
+  "routes": [
+    {
+      "app_key": "notesstudio100",
+      "route_slug": "handwrite-mark-up-and-review-offline",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US college, certification, and continuing-education workflows often mix lecture PDFs, Apple Pencil notes, and recorded review material.",
+          "query": "How can I handwrite on lecture PDFs and review everything offline on iPad?",
+          "buyer_problem": "A class or study session becomes fragmented when handwriting, typed notes, PDF markup, and review audio live in separate places. The buying decision is whether one calm workspace can reduce that switching without requiring an account.",
+          "decision_rule": "One active notebook, unlimited pages and two styles are free. Upgrade once when you need more notebooks and styles.",
+          "workflow_checks": [
+            "Can the study flow begin with a lecture PDF and keep annotations close to the source?",
+            "Can handwriting and typed follow-up notes stay useful when campus Wi-Fi is unreliable?",
+            "Can a learner review the same material later without reconstructing where each piece belongs?"
+          ],
+          "alternative_lens": "Compare a cloud-first team notebook when simultaneous collaboration is the central requirement. Compare a plain PDF editor when handwritten study notes and review context are not part of the job.",
+          "verify_before_install": [
+            "Confirm the current iPad and Apple Pencil requirements on the App Store listing.",
+            "Test one real lecture packet before importing a semester of material."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        }
+      },
+      "conversion_contract": "notesstudio100"
+    },
+    {
+      "app_key": "aibriefpack",
+      "route_slug": "organize-source-context-before-ai",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US knowledge workers often assemble client screenshots, PDFs, meeting notes, and links before using an external AI assistant under workplace privacy rules.",
+          "query": "How do I organize screenshots, PDFs, and notes into traceable context before using AI?",
+          "buyer_problem": "Sending a pile of disconnected files to an AI assistant makes omissions and source confusion hard to notice. The decision is whether to prepare a reviewable brief first instead of repeatedly rebuilding context inside a chat.",
+          "decision_rule": "Choose a preparation workflow when source traceability and a deliberate privacy review matter more than one-tap automation. Keep the final decision about what leaves the device with the person doing the work.",
+          "workflow_checks": [
+            "Can every input be reviewed before it becomes part of the brief?",
+            "Can the resulting context preserve enough source information to check an answer later?",
+            "Can sensitive details be found and handled before anything is shared with another service?"
+          ],
+          "alternative_lens": "Use a general file folder when organization alone is enough. Use an AI service directly only when its upload, retention, and workspace policies already match the material being handled.",
+          "verify_before_install": [
+            "Run a small mixed-source brief and inspect the exported structure.",
+            "Review the destination AI service's separate privacy terms before sending the brief."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "aim990",
+      "route_slug": "toeic-part-five-time-pressure",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "English learners using the US storefront may be preparing for TOEIC for an overseas employer, transfer, or return-to-Asia career path rather than a US admissions test.",
+          "query": "How can I practise TOEIC-style English offline a little each day?",
+          "buyer_problem": "Incomplete-sentence questions feel short but repeatedly consume time when grammar and business vocabulary are not automatic. A useful decision route starts with the learner's weak pattern, not a promise of a particular score.",
+          "decision_rule": "Start with the available free practice. One purchase unlocks the complete training.",
+          "workflow_checks": [
+            "Does the daily workload fit the actual number of minutes available?",
+            "Can weak areas be revisited instead of receiving only a broad mixed quiz?",
+            "Can progress be inspected without turning the target score into a promise?"
+          ],
+          "alternative_lens": "Choose a live tutor when feedback on reasoning and speaking is the main gap. Choose official ETS material when the immediate need is exam-format familiarization rather than a daily planning habit.",
+          "verify_before_install": [
+            "Confirm the current content scope and purchase terms on the listing.",
+            "Pair any study plan with current official TOEIC test information."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        },
+        "fr-FR": {
+          "language": "fr",
+          "market": "France",
+          "culture_route": "En France, préparer une candidature, une mobilité interne ou un diplôme peut amener à travailler l’anglais en parallèle d’un emploi ou des cours. Une pratique courte et régulière peut alors être plus réaliste qu’une longue séance le week-end.",
+          "query": "Comment préparer le TOEIC hors ligne avec une pratique quotidienne ?",
+          "buyer_problem": "Vous souhaitez vous entraîner dans les transports ou entre deux rendez-vous, sans dépendre d’une connexion. L’enjeu est de choisir des exercices adaptés au temps disponible, puis de garder une routine que vous pouvez réellement suivre.",
+          "decision_rule": "Commencez gratuitement avec les exercices proposés. Un achat unique débloque l’entraînement complet.",
+          "workflow_checks": [
+            "Pouvez-vous intégrer une courte séance d’anglais à une journée de travail ou d’études ?",
+            "Les exercices proposés correspondent-ils aux compétences que vous voulez travailler ?",
+            "La pratique hors ligne répond-elle à votre besoin pendant les trajets ?"
+          ],
+          "alternative_lens": "Si vous cherchez les sujets officiels ou une préparation encadrée par un enseignant, privilégiez les ressources officielles ou un cours adapté. Des exercices originaux peuvent compléter ce travail, mais ne remplacent ni un accompagnement personnalisé ni une évaluation officielle.",
+          "verify_before_install": [
+            "Vérifiez la compatibilité indiquée sur l’App Store avant de commencer votre préparation.",
+            "Essayez une séance gratuite et consultez les consignes officielles de l’examen pour son format et ses conditions."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        }
+      },
+      "conversion_contract": "aim990"
+    },
+    {
+      "app_key": "battai",
+      "route_slug": "decide-when-an-iphone-battery-needs-service",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US iPhone owners often notice shorter runtime before a trip, trade-in, or workday and need to separate ordinary aging from a battery that may justify service.",
+          "query": "How can I understand recorded iPhone battery behaviour without guessing at sensors?",
+          "buyer_problem": "Battery percentage alone does not explain long-term condition, while an impressive temperature, voltage, or cycle-count screen may rely on data ordinary iPhone apps cannot directly read. The decision is whether a transparent review can organize observable behavior and user-provided evidence without creating false precision.",
+          "decision_rule": "Start with the basic battery readings. Lifetime Pro is an optional one-time purchase; its export scope is unverified here.",
+          "workflow_checks": [
+            "Does every value distinguish direct observation, estimation, and information supplied by the owner?",
+            "Can a trend be reviewed over time instead of treating one battery percentage as a diagnosis?",
+            "Does the replacement decision stay tied to current Apple guidance and the phone's real behavior?"
+          ],
+          "alternative_lens": "Apple's built-in Battery Health screen is the simplest authority for maximum-capacity and service messages. A repair provider is the better route when hardware inspection, a formal diagnostic, or immediate replacement is needed.",
+          "verify_before_install": [
+            "Confirm the current free scope and one-time unlock details on the App Store listing.",
+            "Do not rely on any third-party iPhone app that claims direct access to unavailable private battery sensors."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣 iPhone 使用者常在出國、換機估價或一整天外出前，察覺續航縮短，這時需要把正常老化、使用情境與可能值得送修的訊號分開判斷。",
+          "query": "如何判斷 iPhone 電池是否該更換，又不被 App 無法直接量到的數值誤導？",
+          "buyer_problem": "單看剩餘電量無法說明長期健康狀況，但若畫面直接宣稱能讀取溫度、電壓、電流或循環次數，也可能製造不實的精準感；真正的選擇是能否把可觀察變化與使用者提供的資料清楚分層。",
+          "decision_rule": "可先從基本電池讀值開始。 Lifetime Pro 是可選的一次性購買；本頁尚未核實其報告匯出範圍。",
+          "workflow_checks": [
+            "每一個數值是否清楚區分直接量測、推估與使用者提供？",
+            "是否能看一段時間的趨勢，而不是把單次電量當成診斷？",
+            "是否把更換判斷連回 Apple 現行指引與手機實際表現？"
+          ],
+          "alternative_lens": "只想快速確認最大容量與維修提示時，iOS 內建電池健康頁最直接；需要硬體檢查、正式診斷或立即更換時，Apple 或授權維修中心更合適。",
+          "verify_before_install": [
+            "先在 App Store 確認目前免費範圍與一次性解鎖內容。",
+            "不要信任任何宣稱可直接取得 iPhone 私有電池感測數值的第三方 App。"
+          ],
+          "evidence_refs": [
+            "feature.0",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
+        }
+      },
+      "conversion_contract": "battai"
+    },
+    {
+      "app_key": "caldaily",
+      "route_slug": "save-name-search-calculation-history",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US freelancers, households, and small teams often repeat tax, tip, discount, unit-cost, and split calculations whose assumptions matter later.",
+          "query": "Which iPhone calculator keeps named, searchable history for calculations I need to revisit?",
+          "buyer_problem": "A correct result is still hard to trust later when the reason for the calculation is gone. The decision is whether saved context, naming, and retrieval matter enough to replace a disposable calculator tape.",
+          "decision_rule": "Choose persistent calculation history when the same figures must be explained, tagged, or exported later. Choose a scientific calculator when advanced functions matter more than remembering everyday reasoning.",
+          "workflow_checks": [
+            "Can a result be named so its purpose remains clear next week?",
+            "Can related calculations be found without scrolling through an anonymous tape?",
+            "Can useful history leave the phone in a practical format when needed?"
+          ],
+          "alternative_lens": "A spreadsheet is better for shared models and linked formulas. A basic calculator is enough for one-off arithmetic that will never need context or retrieval.",
+          "verify_before_install": [
+            "Try naming and finding one real household or client calculation.",
+            "Confirm the current free limit and export behavior on the listing."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "cvdesk",
+      "route_slug": "ats-resume-on-iphone-without-upload",
+      "intent_type": "privacy_pay_once",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US applicants commonly need a concise resume rather than a long academic CV, and many employers screen the document through an applicant-tracking system.",
+          "query": "How can I build an ATS-safe US resume on iPhone without uploading personal details?",
+          "buyer_problem": "A visually elaborate template can fail when a recruiting system cannot read its structure, while cloud builders may ask for sensitive work history. The decision combines machine readability, export needs, and control of personal information.",
+          "decision_rule": "Prioritize straightforward document structure and local handling when applying through US job portals. Compare design-heavy services only when a human-facing portfolio is more important than ATS parsing.",
+          "workflow_checks": [
+            "Can each section remain readable after the file passes through a plain-text check?",
+            "Can the final document be delivered in the formats requested by recruiters?",
+            "Can employment and contact details stay under the applicant's control during drafting?"
+          ],
+          "alternative_lens": "Use a career coach when positioning and accomplishment writing need human review. Use a desktop layout tool when the role explicitly expects a highly designed portfolio resume.",
+          "verify_before_install": [
+            "Test an exported sample with the actual application portal before a deadline.",
+            "Confirm current export formats and any free limits on the App Store listing."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "cyca",
+      "route_slug": "private-cycle-patterns-without-account",
+      "intent_type": "privacy_pay_once",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US users making post-Dobbs privacy choices may weigh account creation and data handling alongside ordinary cycle awareness.",
+          "query": "Which private iPhone cycle tracker avoids an account and recurring subscription?",
+          "buyer_problem": "Cycle history is intimate, and a friendly forecast is not enough if the user cannot understand where data is handled. The purchase decision should separate personal pattern awareness from medical advice or guaranteed fertility predictions.",
+          "decision_rule": "Start with cycle recording without creating an account. Optional lifetime Pro unlocks future planning and fuller history.",
+          "workflow_checks": [
+            "Is the minimum data needed for a useful pattern clear before logging begins?",
+            "Can the privacy model be understood without accepting vague wellness claims?",
+            "Can the purchase choice be evaluated without assuming a subscription is necessary?"
+          ],
+          "alternative_lens": "Use a clinician-directed tool when care-team integration is required. Use a paper calendar when digital reminders and pattern views do not justify entering sensitive data.",
+          "verify_before_install": [
+            "Read the current privacy policy and App Privacy label before entering history.",
+            "Do not use a consumer tracker as a substitute for diagnosis or emergency care."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣使用者希望用繁體中文記錄經期，先看清楚資料處理與免費範圍，再決定是否需要一次性解鎖；不應把週期預測當成醫療結論。",
+          "query": "想記錄經期與週期變化，有哪些不必訂閱的 iPhone App？",
+          "buyer_problem": "經期資料是私密紀錄。挑選工具時，除了能否回看日期與變化，也需要知道哪些功能免費、哪些需要解鎖，以及資料如何處理。",
+          "decision_rule": "先看清楚免費與進階功能的界線：不用先建立帳號，就能開始記錄經期。 進階規劃與更完整歷史，可選擇一次性 Pro 解鎖。",
+          "workflow_checks": [
+            "能否容易記下日期，並回看自己的週期變化？",
+            "免費功能與需要解鎖的項目是否分得清楚？",
+            "是否理解資料處理方式，並避免將預測當作醫療建議？"
+          ],
+          "alternative_lens": "如果目的是診斷、治療或與照護團隊合作，應先詢問醫療專業人員；只需要簡單日期紀錄時，也可以使用紙本月曆。",
+          "verify_before_install": [
+            "輸入紀錄前，先閱讀目前的隱私政策與 App 隱私標示。",
+            "確認目前免費與一次性解鎖的界線；不要把一般追蹤工具當成診斷或緊急照護。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
+        }
+      },
+      "conversion_contract": "cyca"
+    },
+    {
+      "app_key": "dailymate",
+      "route_slug": "complete-travel-sentences-on-watch",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US outbound travelers often need a complete sentence at a counter, station, restaurant, or hotel while the phone is packed away.",
+          "query": "Which travel phrase app puts complete practical sentences on Apple Watch?",
+          "buyer_problem": "Knowing isolated vocabulary does not always produce the sentence needed when another person is waiting. The decision is whether situational phrases and wrist access are more useful than a long course before a near-term trip.",
+          "decision_rule": "Choose a phrase workflow for immediate travel interactions and repeated rehearsal. Choose a structured course when grammar, conversation feedback, and long-term proficiency are the real goals.",
+          "workflow_checks": [
+            "Can a traveler find the sentence for the current situation quickly?",
+            "Can useful language be practiced as a complete utterance rather than a loose word list?",
+            "Does wrist access reduce friction in moments when holding a phone is awkward?"
+          ],
+          "alternative_lens": "A translation service is better for unpredictable free-form exchanges with connectivity. A tutor is better when pronunciation feedback and spontaneous conversation are essential.",
+          "verify_before_install": [
+            "Confirm the current language list and Apple Watch requirements.",
+            "Practice critical phrases before travel instead of relying on first use at the counter."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "dailymatelite",
+      "route_slug": "free-situational-phrasebook-before-trip",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        3
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Occasional US travelers may want to rehearse airport, hotel, transit, and dining exchanges for one trip without committing to a full language curriculum.",
+          "query": "What is a free-to-start alternative to flashcards for real travel dialogues on iPhone?",
+          "buyer_problem": "Flashcards can build recognition while leaving the traveler unsure what to say next in a live exchange. The decision is whether cue-and-reply practice better matches the upcoming situations.",
+          "decision_rule": "Favor practical dialogue rehearsal when readiness for a specific trip matters more than broad vocabulary coverage. Keep a general translation fallback for situations outside the prepared set.",
+          "workflow_checks": [
+            "Do prompts resemble the moments likely to happen on the next journey?",
+            "Can a reply be rehearsed aloud before the traveler is under pressure?",
+            "Is the free starting experience enough to test the teaching style honestly?"
+          ],
+          "alternative_lens": "Choose a vocabulary deck for self-selected words and spaced repetition. Choose a full language course when the objective extends beyond travel exchanges.",
+          "verify_before_install": [
+            "Check whether the needed destination language is currently included.",
+            "Test one complete dialogue before considering the one-time unlock."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "gmoney",
+      "route_slug": "convert-and-log-travel-spending-offline",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US travelers often pay in several local currencies but need to understand the trip total in dollars when mobile data is limited.",
+          "query": "How can I convert and log travel expenses in one flow while offline?",
+          "buyer_problem": "Switching between a currency converter and a separate expense list creates missed entries and unclear totals. The decision is whether a focused offline travel ledger is enough without a bank-connected budgeting system.",
+          "decision_rule": "Choose a manual travel workflow when speed, offline use, and control matter more than automatic account syncing. Choose connected finance software when reconciliation across banks and household budgets is required.",
+          "workflow_checks": [
+            "Can an amount be understood in the home currency at the moment of purchase?",
+            "Can the same action preserve the expense for the trip total?",
+            "Can the workflow continue when roaming data or Wi-Fi is unavailable?"
+          ],
+          "alternative_lens": "A bank app is better for posted transactions in one account. A spreadsheet is better for custom shared models when manual setup is acceptable.",
+          "verify_before_install": [
+            "Confirm how saved exchange rates are updated before departure.",
+            "Test the workflow in airplane mode with a sample trip."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "gmoneylite",
+      "route_slug": "test-multi-currency-trip-budget-free",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US vacationers planning one international trip may want to test a local-currency ledger before paying, then glance at totals from a widget or watch.",
+          "query": "Which free-to-start iPhone travel expense tracker converts local currency and works offline?",
+          "buyer_problem": "Receipts arrive in local currency while the travel budget exists in dollars, and waiting until home hides overspending. The decision is whether a small free trial proves the logging habit before a one-time unlock.",
+          "decision_rule": "Test the complete input-to-total loop with a real trip budget. Prefer manual privacy and offline continuity when bank imports would add complexity or fail abroad.",
+          "workflow_checks": [
+            "Can a traveler log the amount in the currency shown on the receipt?",
+            "Can the home-currency impact be checked without reopening every entry?",
+            "Can the free allowance demonstrate the full workflow rather than a static preview?"
+          ],
+          "alternative_lens": "Use a shared spreadsheet for group editing. Use bank aggregation when automatic posted transactions matter more than immediate local-currency awareness.",
+          "verify_before_install": [
+            "Check the listed free allowance and one-time unlock terms.",
+            "Confirm rate behavior offline before relying on it during travel."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.3",
+            "feature.4"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "hourstag",
+      "route_slug": "translate-price-into-life-hours",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        3,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US shoppers facing buy-now-pay-later prompts and frequent online sales may benefit from reframing a price in take-home work time before checkout.",
+          "query": "How many hours of my life does this purchase really cost?",
+          "buyer_problem": "A dollar price can feel abstract when it is detached from the time needed to earn it. The decision route is a pause before purchase, not another after-the-fact expense category.",
+          "decision_rule": "Use a work-hours frame when the main problem is impulse and value clarity. Use a full budget when recurring bills, debt, and cash flow require account-level planning.",
+          "workflow_checks": [
+            "Is the hourly figure based on take-home reality rather than a flattering gross number?",
+            "Does the pause happen before checkout while the decision can still change?",
+            "Can the buyer distinguish a meaningful need from a short-lived impulse?"
+          ],
+          "alternative_lens": "A budgeting ledger is better for monthly planning and reconciliation. A cooling-off list is enough when no calculation is needed to interrupt the purchase.",
+          "verify_before_install": [
+            "Set a realistic work-hour value before comparing purchases.",
+            "Confirm current privacy and purchase details on the listing."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "hourstaglite",
+      "route_slug": "pause-impulse-buy-with-work-hours",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US consumers comparing everyday wants across hourly wages, taxes, and side-hustle income may need a fast pre-purchase check rather than a new financial account.",
+          "query": "Can a free iPhone tool convert a price into work hours before I impulse-buy?",
+          "buyer_problem": "The hardest moment is often the few seconds between wanting an item and tapping Buy. The decision is whether a visible time cost creates enough friction without requiring bank access.",
+          "decision_rule": "Start with a free, low-data pause when mindful spending is the target. Move to a full financial plan if the issue is affordability across rent, debt, savings, and variable income.",
+          "workflow_checks": [
+            "Can the price-to-hours result appear before the checkout decision?",
+            "Can needs, wants, and impulses remain distinguishable over repeated checks?",
+            "Can the habit work without opening or linking a financial account?"
+          ],
+          "alternative_lens": "A banking tool is better for transaction history and balances. A browser wish list is simpler when waiting, not calculation, is the only useful intervention.",
+          "verify_before_install": [
+            "Use after-tax earning power for a more realistic comparison.",
+            "Confirm widget, watch, and lifetime-unlock availability on the current listing."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.3",
+            "feature.4"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "lockhour",
+      "route_slug": "stop-social-apps-during-study-blocks",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US students and remote workers often study on the same iPhone that delivers social, shopping, and entertainment interruptions.",
+          "query": "How do I block distracting social apps during a study or deep-work block on iPhone?",
+          "buyer_problem": "Good intentions compete with apps designed to be reopened automatically. The decision is whether an on-device blocking routine can create a clear boundary without adding ads or another recurring fee.",
+          "decision_rule": "Choose a focused blocker when access friction is the missing piece. Pair it with a realistic schedule; blocking alone does not decide what work should fill the protected time.",
+          "workflow_checks": [
+            "Can the distracting set be defined before concentration begins?",
+            "Can a focus block be started with less effort than reopening the distraction?",
+            "Does the routine remain understandable when a legitimate exception is needed?"
+          ],
+          "alternative_lens": "Use Apple's built-in Screen Time when its controls are sufficient. Use coaching or environmental changes when the problem extends beyond a device boundary.",
+          "verify_before_install": [
+            "Confirm current iOS permission requirements for app blocking.",
+            "Test the strictness with a short session before relying on it for an exam or deadline."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "lumibopomofo",
+      "route_slug": "gentle-zhuyin-practice-for-bilingual-child",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US heritage-Chinese families may balance English-dominant school days with weekend or home Zhuyin practice for communication with relatives and Taiwan materials.",
+          "query": "What is a gentle, ad-free Zhuyin practice alternative for a young bilingual child?",
+          "buyer_problem": "A child can recognize spoken Mandarin yet feel lost when Bopomofo symbols appear in books or family learning materials. The decision is whether playful, short practice fits better than worksheets or an English-first phonics app.",
+          "decision_rule": "Try the sound and tracing activities for ㄅ. Parents can unlock all 37 Zhuyin companions once. No ads or subscriptions.",
+          "workflow_checks": [
+            "Does the child meet Zhuyin symbols in sessions short enough to end positively?",
+            "Can a caregiver connect practice to familiar Mandarin words at home?",
+            "Is the learning environment free from third-party advertising pressure?"
+          ],
+          "alternative_lens": "Printed cards work well for screen-free family practice. A classroom program is better for live correction, peer interaction, and a complete literacy sequence.",
+          "verify_before_install": [
+            "Try the free starting experience with the child rather than deciding from screenshots alone.",
+            "Confirm the current parent-gate and one-time unlock details."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "適合台灣學齡前與低年級家庭，把注音練習接到親子共讀、聯絡簿與日常看字情境，而不是只背單一符號。",
+          "query": "台灣家長如何挑選溫和、無廣告的幼兒注音學習 App？",
+          "buyer_problem": "孩子聽得懂中文，看到注音符號卻容易失去耐心；家長需要判斷短時間遊戲練習是否比反覆寫紙本更適合目前階段。",
+          "decision_rule": "先試玩確認是否符合需求，再依實際免費與買斷範圍決定。先試 ㄅ 的聽音與描寫。 喜歡再一次解鎖 37 個注音小夥伴；無廣告、無訂閱。",
+          "workflow_checks": [
+            "一次練習能否在孩子仍有成就感時結束？",
+            "家長能否把當天符號接到熟悉的中文詞語？",
+            "畫面是否維持無第三方廣告的兒童使用環境？"
+          ],
+          "alternative_lens": "想減少螢幕時間時可改用注音卡與共讀；需要系統化進度、同儕互動與即時糾音時，實體課程更合適。",
+          "verify_before_install": [
+            "先陪孩子實際試玩免費內容，再判斷是否需要一次性解鎖。",
+            "於目前 App Store 頁面確認家長閘門與購買方式。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
+        }
+      },
+      "conversion_contract": "lumibopomofo"
+    },
+    {
+      "app_key": "lumibopomofopro",
+      "route_slug": "complete-zhuyin-path-for-heritage-family",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        6
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US bilingual families maintaining Taiwan-oriented literacy may prefer one complete Zhuyin path that can be revisited between heritage-school sessions.",
+          "query": "Which pay-once Zhuyin learning path suits a bilingual child without ads?",
+          "buyer_problem": "Scattered videos and worksheets make it hard to sustain a coherent Bopomofo routine at home. The decision is whether a complete paid download is preferable to assembling free activities week by week.",
+          "decision_rule": "Choose a complete path when the family already knows the child responds to playful screen practice and wants a single purchase. Start smaller when interest, symbol readiness, or family teaching time is still uncertain.",
+          "workflow_checks": [
+            "Can practice continue between weekend-school or family reading sessions?",
+            "Does the sequence feel coherent enough that caregivers know what comes next?",
+            "Is the environment suitable for a child without advertising interruptions?"
+          ],
+          "alternative_lens": "A teacher-led heritage program is better for live pronunciation correction and peer use. The free-to-start edition is better when the family still needs to test fit.",
+          "verify_before_install": [
+            "Confirm device compatibility and current included content.",
+            "Compare the paid-upfront edition with the free-to-start edition before purchase."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "適合希望在家建立完整注音節奏的台灣親子，把練習安排在共讀、作業與生活識字之間，避免每天臨時找素材。",
+          "query": "想一次買斷完整注音內容，台灣雙語家庭該怎麼選？",
+          "buyer_problem": "影片、學習單與零散小遊戲各自有用，卻不容易形成可持續的家庭練習順序；家長要判斷孩子是否已適合完整路徑。",
+          "decision_rule": "若孩子已喜歡遊戲式注音練習，且家庭希望固定內容與一次付費，可優先比較完整版；若仍在測試興趣，先從可試用版本開始。",
+          "workflow_checks": [
+            "家長能否清楚知道下一次要練哪一組注音？",
+            "內容能否自然接到親子共讀與學校正在學的符號？",
+            "孩子使用時是否不受第三方廣告打斷？"
+          ],
+          "alternative_lens": "需要真人即時糾音、班級互動與完整語文課綱時，實體教學更合適；仍不確定孩子接受度時，先比較可免費開始的版本。",
+          "verify_before_install": [
+            "購買前確認目前版本所含內容與支援裝置。",
+            "先比較完整版與免費開始版的現行 App Store 說明。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "capability.no_ads"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "lumiletters",
+      "route_slug": "try-phonics-before-one-time-unlock",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US preschool families often encounter recurring subscriptions in early-reading apps before knowing whether a child enjoys the teaching style.",
+          "query": "What is a no-ads phonics app a preschooler can try before a one-time unlock?",
+          "buyer_problem": "Parents cannot judge a reading activity from a store page, and a recurring plan can feel premature for a young child's changing interests. The decision is whether play-first access gives enough evidence of fit.",
+          "decision_rule": "Watch for voluntary return, comfortable challenge, and shared parent-child use before unlocking. Prefer teacher-led support when speech, hearing, or reading concerns need individualized assessment.",
+          "workflow_checks": [
+            "Does the child choose to continue after the first short activity?",
+            "Can a caregiver connect the sounds to books already read at home?",
+            "Does the experience stay free of third-party advertising?"
+          ],
+          "alternative_lens": "Library books and physical letter play are strong screen-free alternatives. A subscription library may fit families wanting many subjects and frequent new content.",
+          "verify_before_install": [
+            "Try the available free content with the child present.",
+            "Confirm the current one-time unlock scope and parental controls."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2",
+            "feature.3",
+            "feature.4"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "lumiletterspro",
+      "route_slug": "complete-phonics-for-home-kindergarten",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US homeschool and kindergarten-prep families may want a complete phonics purchase they can weave into read-alouds without monthly content billing.",
+          "query": "Which complete pay-once phonics app fits homeschool kindergarten preparation?",
+          "buyer_problem": "A collection of unrelated alphabet games can entertain without giving a family a stable home-learning rhythm. The decision is whether a complete edition fits the child's readiness and the caregiver's teaching plan.",
+          "decision_rule": "Choose a complete paid path after the family has confirmed that playful phonics practice works for the child. Keep real books, conversation, and handwriting in the wider literacy routine.",
+          "workflow_checks": [
+            "Can the family establish a short repeatable practice time?",
+            "Can sounds and letters be reinforced immediately in a familiar picture book?",
+            "Will the child use the environment without advertising interruptions?"
+          ],
+          "alternative_lens": "A boxed curriculum is better when lesson plans and assessment records are required. The free-to-start edition is better when fit has not yet been observed.",
+          "verify_before_install": [
+            "Check current content coverage against the child's learning stage.",
+            "Compare the paid edition and free-to-start edition before buying."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "lumimath",
+      "route_slug": "replace-math-resistance-with-short-play",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US preschool families often want playful number practice that complements, rather than imitates, worksheets sent home from school.",
+          "query": "My preschooler resists math practice: is a short no-ads logic game a better starting point?",
+          "buyer_problem": "When every number activity feels like a test, resistance can arrive before the child begins thinking. The decision is whether low-pressure play can rebuild curiosity without replacing hands-on counting.",
+          "decision_rule": "Prioritize willingness to return and explain a choice, not speed or a promised grade advantage. Stop or switch formats when frustration grows instead of extending screen time.",
+          "workflow_checks": [
+            "Does the child engage with quantities and choices rather than tap randomly?",
+            "Can the same idea be repeated later with toys, snacks, or household objects?",
+            "Is the experience protected from third-party advertising?"
+          ],
+          "alternative_lens": "Counters, blocks, and board games are better for tactile learning. A teacher or specialist is better when persistent difficulty needs individualized assessment.",
+          "verify_before_install": [
+            "Observe one free session rather than judging only completion.",
+            "Confirm current age guidance and unlock terms on the listing."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.3",
+            "feature.4"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "lumimathpro",
+      "route_slug": "complete-math-thinking-space-adventure",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        3,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US families seeking early enrichment may want competition-style mathematical thinking presented as play rather than another worksheet subscription.",
+          "query": "What pay-once math game offers a complete early-learning path beyond counting drills?",
+          "buyer_problem": "Children who already enjoy numbers can outgrow repetitive counting games, while formal competition worksheets may feel dry too early. The decision is whether a richer playful path matches readiness.",
+          "decision_rule": "Choose the complete edition when the child has already shown sustained interest in math play. Keep manipulatives and conversation in the routine so screen success transfers to reasoning away from the device.",
+          "workflow_checks": [
+            "Does the child have to think about a relationship rather than memorize a tap pattern?",
+            "Can a caregiver ask how an answer was reached after the session?",
+            "Can practice stay short, positive, and free of advertising?"
+          ],
+          "alternative_lens": "Hands-on math circles are better for peer explanation. The free-to-start edition is better when challenge level and interest are still unknown.",
+          "verify_before_install": [
+            "Check the current content range against the child's stage.",
+            "Compare both Lumi Math editions before an upfront purchase."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "lumimission",
+      "route_slug": "end-daily-routine-battles-with-play",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        3
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US preschool mornings and bedtimes often compress toothbrushing, dressing, meals, and cleanup into stressful transitions around work and school schedules.",
+          "query": "How can I reduce preschool morning and bedtime routine battles without ads?",
+          "buyer_problem": "Repeated verbal reminders can turn ordinary care tasks into a power struggle for both child and caregiver. The decision is whether playful mission framing can support a predictable routine without becoming another reward negotiation.",
+          "decision_rule": "Use a simple visual routine when the child understands the tasks but resists transitions. Seek professional guidance when sensory, developmental, sleep, or feeding concerns make the routine more than a motivation problem.",
+          "workflow_checks": [
+            "Can the caregiver choose a few concrete tasks instead of an overwhelming list?",
+            "Can completion feel like progress without tying every task to a material prize?",
+            "Does the child-facing environment avoid third-party advertising?"
+          ],
+          "alternative_lens": "A printed picture chart is better for a fully screen-free household. Family coaching is better when conflict patterns persist across settings.",
+          "verify_before_install": [
+            "Test one routine for several days before adding more tasks.",
+            "Confirm current free content, parent controls, and one-time unlock details."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.3",
+            "feature.4"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "lumimissionpro",
+      "route_slug": "complete-morning-and-bedtime-routine",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        3,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US families coordinating preschool drop-off and fixed bedtimes may need the same child-friendly routine structure every day without subscription churn.",
+          "query": "Which complete pay-once routine app covers both preschool mornings and bedtimes?",
+          "buyer_problem": "A morning chart that differs from the bedtime system creates extra rules for a young child to remember. The decision is whether one complete routine environment can support both transitions consistently.",
+          "decision_rule": "Choose a complete edition when the child already responds well to mission-style cues and the family wants a stable one-purchase setup. Keep the number of active steps developmentally manageable.",
+          "workflow_checks": [
+            "Can morning and bedtime each use a short sequence the child recognizes?",
+            "Can caregivers apply the same language and expectations across days?",
+            "Can the child use the routine without advertising interruptions?"
+          ],
+          "alternative_lens": "A magnetic chart is better when physical tokens drive engagement. The free-to-start edition is better before the family has observed fit.",
+          "verify_before_install": [
+            "Compare included content and current device support with the free edition.",
+            "Start with one transition and expand only after it feels calm."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "tripplanet",
+      "route_slug": "turn-family-travel-waiting-into-observation",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US family road trips and airport days include long waits where parents may prefer travel-specific observation play over passive video.",
+          "query": "How can I turn road-trip and airport waiting time into a playful activity for a preschooler?",
+          "buyer_problem": "Unstructured waiting can make a family trip feel long before the destination arrives. The decision is whether a travel-themed activity can direct attention back to the surroundings instead of simply filling time.",
+          "decision_rule": "Choose short travel play when the goal is curiosity and shared noticing. Download media or pack physical activities when quiet independent entertainment is the higher priority.",
+          "workflow_checks": [
+            "Can an activity begin and end around a boarding call or rest stop?",
+            "Can a caregiver connect the prompt to something visible on the journey?",
+            "Is the child-facing experience free of third-party ads?"
+          ],
+          "alternative_lens": "Sticker books and scavenger cards are better for screen-free travel. Downloaded video is more predictable when a child needs quiet rest rather than interaction.",
+          "verify_before_install": [
+            "Try one activity before departure so the interaction is familiar.",
+            "Confirm current free content and parent-gated purchase details."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "lumiweather",
+      "route_slug": "decide-what-child-wears-outside",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        3
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US families may face large temperature swings between daycare drop-off, recess, and the afternoon pickup, making a raw forecast hard to translate for a small child.",
+          "query": "Is it too cold, hot, or wet to take my toddler outside, and what should they wear?",
+          "buyer_problem": "A forecast number does not directly answer the parent standing by the door with a wriggling child. The decision is whether a family-oriented view can turn conditions into a calmer outing conversation.",
+          "decision_rule": "The Today home screen is free. Unlock hourly and weekly forecasts, checklists, more locations and widgets once.",
+          "workflow_checks": [
+            "Can the caregiver understand the immediate outing decision at a glance?",
+            "Can clothing choices be adjusted for the child's activity and local conditions?",
+            "Can the child engage without third-party advertising or tracking?"
+          ],
+          "alternative_lens": "Use the National Weather Service for official alerts and hazardous conditions. Use a detailed meteorology app when radar layers and advanced forecasts are the real need.",
+          "verify_before_install": [
+            "Check official local alerts before severe-weather outings.",
+            "Confirm location, data-source, and purchase details on the current listing."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        },
+        "ja": {
+          "language": "ja",
+          "market": "日本",
+          "culture_route": "日本では、登園前や公園へ出かける前に、雨だけでなく紫外線や風、気温に合わせて持ち物を考える場面があります。親子の外遊びは、予報と実際の様子を合わせて判断することが大切です。",
+          "query": "子どもの外遊びと服装を、天気予報からどう考える？",
+          "buyer_problem": "短い時間で出発の準備をするとき、気温だけでは上着や持ち物を決めにくいことがあります。いくつかの気象要因をまとめて見られると、家族の予定に合わせて準備を考えやすくなります。",
+          "decision_rule": "「今日」のホーム画面は無料です。 時間別・週間予報、チェックリスト、複数の場所、ウィジェットは一度の購入で使えます。",
+          "workflow_checks": [
+            "気温だけでなく、雨・紫外線・風も確認して準備を考えられますか？",
+            "子どもの服装や持ち物を、予報と実際の体調に合わせて見直せますか？",
+            "出発前に予報の変化と現地の様子をもう一度確かめられますか？"
+          ],
+          "alternative_lens": "雨雲の細かな動きを調べたい場合は、専門的なレーダーや公的な気象情報が向いています。暑さへの対応や体調については、天気アプリだけで判断せず、公的機関や医療の案内も参考にしてください。",
+          "verify_before_install": [
+            "予報の提供元は Apple WeatherKit です。更新時刻と現地の状況も確認してください。",
+            "対応端末と購入内容は App Store で確認し、まず無料の「今日」画面を試してください。"
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "capability.no_ads"
+          ]
+        }
+      },
+      "conversion_contract": "lumiweather"
+    },
+    {
+      "app_key": "maskmyfile",
+      "route_slug": "redact-client-files-before-sharing",
+      "intent_type": "privacy_pay_once",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US freelancers and small practices often need to share a useful contract, pay stub, intake form, or case file while withholding SSNs, addresses, faces, or account details.",
+          "query": "How can I permanently redact sensitive details from a client file on iPhone before sharing?",
+          "buyer_problem": "Drawing a black shape over a document may only hide pixels visually while leaving original text, metadata, or an editable layer behind. The decision is whether a local review-and-verification workflow is worth using before a file leaves the device.",
+          "decision_rule": "Prioritize permanent output verification and selective redaction when useful context must remain. Use a specialist compliance process when law, court rules, healthcare policy, or contractual controls govern the disclosure.",
+          "workflow_checks": [
+            "Can every proposed private region be reviewed before the output is created?",
+            "Can the new copy be reopened and inspected instead of trusting an overlay?",
+            "Can the original remain separate from the share-ready result?"
+          ],
+          "alternative_lens": "A desktop redaction suite is better for enterprise review queues and formal audit systems. Sending a cropped screenshot is only appropriate when it truly removes all unnecessary information and metadata.",
+          "verify_before_install": [
+            "Test a disposable sample and attempt text selection on the exported result.",
+            "Confirm supported file formats and the current one-time unlock terms."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "mochi",
+      "route_slug": "cozy-checklist-without-project-overhead",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US students and home users may want a visually comforting daily list without importing a workplace project-management system into personal life.",
+          "query": "What is a simple, cozy alternative to a complex task manager on iPhone?",
+          "buyer_problem": "A productivity system can become another project when every small task needs dates, priorities, contexts, and team fields. The decision is whether a satisfying lightweight checklist is enough to support follow-through.",
+          "decision_rule": "Checklists and Home Screen check-offs are free. Premium skins are optional and unlock with one purchase.",
+          "workflow_checks": [
+            "Can today's list be understood without configuring a methodology?",
+            "Does completion feedback encourage return without creating pressure?",
+            "Can personal planning stay free from ads and recurring billing?"
+          ],
+          "alternative_lens": "Apple Reminders is a strong built-in choice for Siri, sharing, and location triggers. A team task manager is better for assigned work and multi-step projects.",
+          "verify_before_install": [
+            "Try one normal week before moving every recurring task.",
+            "Confirm the current free limit and one-time purchase scope."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣的日常待辦常是下班順路買菜、打電話或澆花；把幾件小事留在 iPhone 主畫面，比開一套專案系統更順手，也更容易隨手完成。",
+          "query": "想用可愛待辦小工具，在 iPhone 桌面直接勾選清單？",
+          "buyer_problem": "事情不多，卻散在訊息和腦中時，重點是隨時看得到、做完就能勾選。若還得先設定專案、指派人員或研究複雜看板，反而容易放棄記錄。",
+          "decision_rule": "基本清單與主畫面小工具勾選都免費。 Premium 主題是可選的一次性購買，不影響免費清單。",
+          "workflow_checks": [
+            "主畫面清單能否幫你記住今天真正要做的小事？",
+            "事情完成後，直接勾選是否比打開專案工具更方便？",
+            "只使用免費清單時，是否已能完成你的日常整理？"
+          ],
+          "alternative_lens": "若需要多人指派、專案依賴或企業報表，應改看專案管理工具；若重點是日期行程，行事曆更合適；若想分析習慣連勝，也應選擇專門的紀錄方式。",
+          "verify_before_install": [
+            "先確認 App Store 列出的 iPhone、iPad 與小工具相容條件。",
+            "用自己的短清單試一次主畫面操作，再決定是否選購喜歡的主題。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
+        }
+      },
+      "conversion_contract": "mochi"
+    },
+    {
+      "app_key": "mochidonestamp",
+      "route_slug": "remember-when-household-task-was-done",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US households juggle filters, smoke-alarm checks, bedding, pet care, photo backups, and family calls whose timing matters but rarely belongs on a fixed weekly checklist.",
+          "query": "When did I last replace the filter, wash the sheets, or back up photos?",
+          "buyer_problem": "A recurring reminder assumes life happens on schedule, while many maintenance tasks should restart from the day they were actually completed. The decision is whether an event history answers the real question better than another to-do list.",
+          "decision_rule": "One active event and unlimited history are free. Unlock more active events with a one-time purchase.",
+          "workflow_checks": [
+            "Can completion be recorded quickly enough that the habit survives?",
+            "Can an overdue rhythm restart from the actual completion date?",
+            "Can earlier occurrences be corrected without losing the history?"
+          ],
+          "alternative_lens": "A calendar is better for appointments tied to a fixed date. A shared home-maintenance service is better when multiple people need assignments and vendor records.",
+          "verify_before_install": [
+            "Start with one meaningful household event and inspect its history.",
+            "Confirm current free limits, backup behavior, and lifetime-unlock details."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣家庭的換濾芯、洗冷氣濾網和更換床單，不一定需要每天打卡；比較實際的問題，是上次到底什麼時候做過，以及下一次該從哪一天算起。",
+          "query": "上次換濾芯是什麼時候？如何在完成後重新計算提醒？",
+          "buyer_problem": "家事常是想起來才做，固定星期幾的通知未必反映真正的完成時間。能回看最後一次和歷史紀錄，通常比維持每日連勝更有用，也比較沒有壓力。",
+          "decision_rule": "先試玩確認是否符合需求，再依實際免費與買斷範圍決定。1 個使用中事件、無限歷史紀錄免費。 需要更多使用中事件時，再一次購買解鎖。",
+          "workflow_checks": [
+            "記錄的時間是否真的是這次家事完成的時間？",
+            "下次提醒是否適合從實際完成時間重新計算？",
+            "回看不限筆數的歷史，是否足以回答上次何時做過？"
+          ],
+          "alternative_lens": "需要固定工作班表或複雜專案排程時，應選排程工具；想追求每日連勝時，習慣追蹤器更合適。這裡聚焦生活事件的完成時間，不額外承諾未核對的家庭同步能力。",
+          "verify_before_install": [
+            "先以換濾芯或床單等真實事件測試記錄與回看流程。",
+            "通知仍受系統權限與設定影響，安裝後應確認所需權限。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
+        },
+        "de-DE": {
+          "language": "de",
+          "market": "Deutschland",
+          "culture_route": "In Haushalten in Deutschland geht es bei Filtern, Bettwäsche und Datensicherungen oft nicht um tägliche Serien, sondern um die letzte tatsächliche Erledigung und einen passenden nächsten Termin.",
+          "query": "Wann habe ich zuletzt den Filter gewechselt, und welche App merkt sich das?",
+          "buyer_problem": "Ein wiederkehrender Kalendereintrag sagt nicht, wann etwas wirklich erledigt wurde. Für unregelmäßige Aufgaben ist ein Verlauf der tatsächlichen Erledigungen oft hilfreicher als eine weitere To-do-Liste.",
+          "decision_rule": "Ein aktives Ereignis und ein unbegrenzter Verlauf sind kostenlos. Weitere aktive Ereignisse lassen sich mit einem einmaligen Kauf freischalten.",
+          "workflow_checks": [
+            "Lässt sich die tatsächliche Erledigung schnell mit Datum festhalten?",
+            "Kann die nächste Erinnerung von der wirklichen Erledigung ausgehen?",
+            "Können frühere Einträge überprüft werden, ohne den Verlauf zu verlieren?"
+          ],
+          "alternative_lens": "Ein Kalender eignet sich für feste Termine. Ein Aufgabenmanager ist besser, wenn Zuweisungen und Projektplanung benötigt werden; hier steht die Frage nach der letzten Erledigung im Mittelpunkt.",
+          "verify_before_install": [
+            "Beginnen Sie mit einem konkreten Haushaltsereignis und prüfen Sie den Verlauf.",
+            "Prüfen Sie die aktuellen Gratisgrenzen, den einmaligen Kauf und die Mitteilungseinstellungen."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        }
+      },
+      "conversion_contract": "mochidonestamp"
+    },
+    {
+      "app_key": "moneytag",
+      "route_slug": "measure-profit-by-freelance-project",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US freelancers and side-hustle operators often need a quick project-level view of income, expenses, and tags before handing formal tax records to a professional.",
+          "query": "How can I track income, expenses, and net result by freelance project without a subscription?",
+          "buyer_problem": "A personal spending category does not show whether one client project actually earned money after its direct costs. The decision is whether a private project ledger is enough before adopting full accounting software.",
+          "decision_rule": "Choose project-based manual tracking when fast profit visibility matters more than bank feeds, invoicing, payroll, or tax filing. Keep receipts and official records required by the IRS or a tax professional separately.",
+          "workflow_checks": [
+            "Can income and costs be attached to the same client project?",
+            "Can tags reveal spending patterns across several projects?",
+            "Can the net result be checked without granting bank-account access?"
+          ],
+          "alternative_lens": "Accounting software is better for reconciliation, invoices, and tax workflows. A spreadsheet is better when custom formulas and accountant collaboration outweigh mobile speed.",
+          "verify_before_install": [
+            "Test one completed project against records you already trust.",
+            "Confirm export, backup, free-limit, and lifetime-unlock details."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2",
+            "feature.3"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "onepageppt",
+      "route_slug": "turn-meeting-notes-into-one-slide",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US managers and consultants often need a single executive-summary slide that can survive a meeting, email, or PowerPoint handoff without becoming a miniature report.",
+          "query": "How do I turn meeting notes into one 16:9 slide, not a whole deck?",
+          "buyer_problem": "Copying paragraphs into a deck produces a wall of text, while aggressive trimming can remove the decision, evidence, or owner. The buying question is whether a one-slide constraint creates a clearer handoff.",
+          "decision_rule": "Try the slide-making workflow free. PPTX export is a one-time Pro feature.",
+          "workflow_checks": [
+            "Can the source material be reduced to one governing message?",
+            "Can evidence and next action remain visible without shrinking into unreadable text?",
+            "Can the output be edited after it enters the team's presentation workflow?"
+          ],
+          "alternative_lens": "A full presentation tool is better for narrative decks and brand systems. A document summary is better when the audience needs searchable detail rather than a visual briefing.",
+          "verify_before_install": [
+            "Test a real meeting recap and open the exported file in the target presentation app.",
+            "Confirm current input and export support on the listing."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        }
+      },
+      "conversion_contract": "onepageppt"
+    },
+    {
+      "app_key": "photocream",
+      "route_slug": "film-look-editor-without-watermark",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US travel creators may want consistent film-inspired color, grain, halation, and light-leak treatments without turning every edit into a preset subscription.",
+          "query": "What pay-once iPhone photo editor offers film looks at full resolution without a watermark?",
+          "buyer_problem": "A trendy preset can look convincing on a thumbnail yet produce a low-resolution or watermarked export. The decision is whether a focused film-look editor provides enough variety and output quality for a creator's own style.",
+          "decision_rule": "Choose a specialized aesthetic tool when film character is the goal and a one-time purchase is preferred. Choose a full editor when masking, compositing, catalog management, or detailed color correction is central.",
+          "workflow_checks": [
+            "Can several looks be tested against the same representative travel image?",
+            "Do grain and light effects support the photo rather than obscure its subject?",
+            "Can the final result retain the resolution needed for its destination?"
+          ],
+          "alternative_lens": "A camera profile workflow is better for repeatable professional color. A general editor is better when film styling is only one step in a complex retouch.",
+          "verify_before_install": [
+            "Export one detailed image and inspect it at full size.",
+            "Confirm current unlock scope, output resolution, and watermark policy."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "picclear",
+      "route_slug": "recover-storage-from-photo-clutter",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US iPhone owners often hit storage pressure before a trip, school event, or iOS update because screenshots, duplicate bursts, blurry shots, and long videos accumulated silently.",
+          "query": "My iPhone storage is full: how do I review duplicates, screenshots, blurry photos, and large videos safely?",
+          "buyer_problem": "A one-tap cleanup promise can feel risky when family photos are involved, but manual review across thousands of items is exhausting. The decision is whether grouped, on-device review makes deletion deliberate enough.",
+          "decision_rule": "Prioritize review and recoverable deletion over a headline gigabyte estimate. Back up irreplaceable media first and remember that recently deleted items may continue using storage until cleared.",
+          "workflow_checks": [
+            "Can likely clutter be grouped without deleting anything automatically?",
+            "Can the owner compare similar photos before choosing what to keep?",
+            "Can large videos be reviewed separately from sentimental images?"
+          ],
+          "alternative_lens": "Apple Photos manual review is enough for a small library. Cloud storage helps preserve originals but does not by itself decide which local clutter is unwanted.",
+          "verify_before_install": [
+            "Back up irreplaceable photos before a large cleanup.",
+            "Start with screenshots or one small group and verify the Recently Deleted result."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "scanto",
+      "route_slug": "scan-and-read-documents-on-device",
+      "intent_type": "privacy_pay_once",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        3
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US nurses, field workers, students, and small offices may scan forms or notes in places where cloud upload is undesirable or connectivity is unreliable.",
+          "query": "How can I scan a contract to PDF and extract text on my iPhone without uploading it?",
+          "buyer_problem": "A quick scan can contain patient, client, school, or identity information that should not be sent to an unknown server. The decision joins capture quality, OCR needs, offline use, and the destination's document rules.",
+          "decision_rule": "Try your first scan and preview free. Unlock unlimited scanning and advanced exports with one purchase.",
+          "workflow_checks": [
+            "Can the page be captured and checked before it becomes a PDF?",
+            "Can needed text be read without requiring a cloud round trip?",
+            "Can the output be opened by the actual portal or recipient?"
+          ],
+          "alternative_lens": "A multifunction printer is better for high-volume feeder scanning. An organization-managed capture service is better for regulated workflows and shared records.",
+          "verify_before_install": [
+            "Test a non-sensitive sample with the final destination.",
+            "Confirm supported formats, OCR scope, and current purchase details."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        }
+      },
+      "conversion_contract": "scanto"
+    },
+    {
+      "app_key": "savetag",
+      "route_slug": "turn-saved-links-into-a-readable-queue",
+      "intent_type": "privacy_pay_once",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US readers collect articles, videos, recipes, places, and social posts from newsletters, group chats, and fast-moving feeds, then lose the useful item inside a growing bookmark pile.",
+          "query": "Which pay-once read-later workflow helps me find and finish links saved from social apps?",
+          "buyer_problem": "Saving a link takes one tap, but returning to it requires enough context to recognize why it mattered and a small queue that does not become another inbox. The purchase question is whether organization and rediscovery are useful enough to justify a one-time unlock instead of recurring billing.",
+          "decision_rule": "Choose a focused bookmark workflow when capture, topic grouping, search, and a visible reading state solve the real backlog. Choose a full research system when citations, shared workspaces, annotation, or team review are more important than quick personal retrieval.",
+          "workflow_checks": [
+            "Can a link be captured from the apps where useful material actually appears?",
+            "Can the saved item be found later by topic or remembered meaning rather than an exact title?",
+            "Can unread, later, and completed states keep a small review habit visible?"
+          ],
+          "alternative_lens": "Safari Reading List is enough for a simple browser-only queue. A collaborative knowledge base is better when several people must annotate, cite, and maintain the same collection.",
+          "verify_before_install": [
+            "Save a few real links from different sources and test whether retrieval feels faster.",
+            "Confirm the current free limit, export options, and one-time unlock scope on the listing."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣使用者常從 Threads、LINE 群組、PTT、YouTube、食譜網站與地圖先存下文章、影片或店家，之後卻在大量收藏中忘記當初為什麼要看。",
+          "query": "想把社群連結整理成真的會讀完的清單，哪種買斷制稍後閱讀流程比較適合？",
+          "buyer_problem": "儲存只要一秒，但回頭閱讀時必須認得內容、記得用途，還要避免未讀清單變成另一個壓力來源；購買判斷應放在整理、搜尋與重新發現是否真的節省時間，而不是只看收藏數量。",
+          "decision_rule": "若主要困擾是跨來源快速保存、依主題找回與管理閱讀狀態，優先比較專注的收藏流程；若工作需要多人共編、正式引用、逐段註解或研究資料庫，完整知識管理工具更合適。",
+          "workflow_checks": [
+            "能否從平常看到內容的 App 直接保存連結？",
+            "之後能否用主題或記得的大意找回，而不必背下完整標題？",
+            "未讀、稍後與完成狀態是否有助於建立可維持的小型回顧習慣？"
+          ],
+          "alternative_lens": "只整理 Safari 網頁時，內建閱讀列表可能已足夠；需要團隊共同註解、引用與維護同一套資料時，協作型知識庫會更適合。",
+          "verify_before_install": [
+            "先用幾個不同來源的真實連結測試保存與找回流程。",
+            "在 App Store 確認目前免費額度、匯出方式與一次性解鎖範圍。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "sereno",
+      "route_slug": "offline-sleep-sounds-without-subscription",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US sleepers, parents, students, and remote workers may need steady sound in bedrooms, hotels, dorms, or flights where streaming and recurring plans add friction.",
+          "query": "What is an offline, no-ads alternative to a subscription white-noise app?",
+          "buyer_problem": "A sleep sound should not stop because hotel Wi-Fi fails, an ad interrupts, or a monthly plan expires. The decision is whether an offline sound machine with a one-time unlock fits better than a streaming wellness library.",
+          "decision_rule": "Choose focused offline sound when reliability and a stable purchase model are the priorities. Choose a broader service when guided programs, new spoken content, or cross-platform syncing matter more.",
+          "workflow_checks": [
+            "Can the chosen sound continue without a network connection?",
+            "Can the listener test comfort and looping before paying?",
+            "Can the nighttime experience remain free from advertising?"
+          ],
+          "alternative_lens": "A physical sound machine is better when the phone should stay outside the bedroom. A streaming service is better for frequently changing guided content.",
+          "verify_before_install": [
+            "Test volume and looping at the bedside before relying on it overnight.",
+            "Protect hearing and seek medical advice for persistent sleep or tinnitus concerns."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2",
+            "feature.3",
+            "feature.4"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "shotinbox",
+      "route_slug": "sort-search-and-finish-screenshot-backlog",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US iPhone owners often keep screenshots of tickets, receipts, products, maps, recipes, messages, and error codes until the Photos grid becomes an accidental task list.",
+          "query": "How can I sort and search too many screenshots before safely deleting anything from Photos?",
+          "buyer_problem": "A screenshot may represent something to buy, visit, remember, or finish, so bulk cleanup can remove useful context while ordinary albums still leave the owner scanning thumbnails. The decision is whether a screenshot-specific inbox can make review and follow-through more deliberate.",
+          "decision_rule": "Use a screenshot organizer when classification, text search, and review states address unfinished information. Use a general photo cleaner when the main goal is comparing duplicates and recovering storage across the entire library.",
+          "workflow_checks": [
+            "Can screenshots be reviewed as information rather than mixed with camera photos?",
+            "Can remembered text help retrieve a ticket, address, product, or error later?",
+            "Does every real deletion remain an explicit Photos action instead of an automatic cleanup?"
+          ],
+          "alternative_lens": "Manual albums work for a small, stable collection. A general photo-cleaning tool is better when duplicate camera shots, videos, and storage recovery matter more than screenshot content.",
+          "verify_before_install": [
+            "Test search and classification on a varied sample before relying on a bulk workflow.",
+            "Confirm the current free history and lifetime-unlock scope on the App Store listing."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣 iPhone 使用者常把票券、收據、商品、地圖、食譜、對話與錯誤訊息截圖保存，久了 Photos 縮圖牆就變成沒有期限、也難以搜尋的待辦清單。",
+          "query": "iPhone 截圖太多時，如何先分類與搜尋，再安全決定哪些要刪除？",
+          "buyer_problem": "每張截圖背後可能是要購買、要前往、要回覆或要處理的事情，直接批次清理容易刪掉仍有用途的資訊；但只靠相簿又必須反覆滑縮圖，難以找回記得文字卻忘記日期的內容。",
+          "decision_rule": "若核心問題是截圖內容的分類、文字搜尋與處理狀態，優先比較截圖專用收件匣；若重點是整個照片圖庫的重複照片、長影片與容量回收，一般照片清理工具更適合。",
+          "workflow_checks": [
+            "截圖能否脫離一般相機照片，以資訊項目逐張檢視？",
+            "只記得票券、地址、商品或錯誤文字時，能否搜尋找回？",
+            "任何真正刪除是否仍由使用者明確選擇並交給 Photos 確認？"
+          ],
+          "alternative_lens": "數量少且分類長期固定時，手動相簿已足夠；主要想處理重複相機照片、影片與儲存空間時，完整照片清理工具會更直接。",
+          "verify_before_install": [
+            "先用內容差異大的實際截圖測試分類與搜尋效果。",
+            "在 App Store 確認目前免費歷史範圍與一次性解鎖內容。"
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "snapport",
+      "route_slug": "make-passport-photo-at-home",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US families may need a passport, visa, or ID photo outside retail hours, especially when photographing a baby or coordinating several applicants.",
+          "query": "How can I prepare a passport or visa photo at home on iPhone without a subscription?",
+          "buyer_problem": "A convenient home photo still has to match the exact document authority's current size, background, pose, and print or upload rules. The decision is whether an on-device preparation workflow saves a trip without creating false confidence.",
+          "decision_rule": "Use a home photo tool for preparation and layout, then verify every requirement against the issuing authority. Use a professional service when the applicant, lighting, or deadline makes a compliant capture difficult.",
+          "workflow_checks": [
+            "Can the original be captured with even light and a neutral expression?",
+            "Can the result be checked against the correct country's current specification?",
+            "Can the final file or print layout match the submission channel?"
+          ],
+          "alternative_lens": "A pharmacy or photo studio is better when physical printing and retakes must be handled together. An official acceptance service remains the authority on compliance.",
+          "verify_before_install": [
+            "Check the destination government's current official photo rules.",
+            "Confirm current supported formats and device requirements on the listing."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "snapportlite",
+      "route_slug": "test-passport-photo-layout-free",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US applicants comparing a home photo with a pharmacy visit may want to test the complete preparation flow before buying an unlimited tool.",
+          "query": "What free-to-start iPhone alternative can prepare and print passport photos at home?",
+          "buyer_problem": "A free web cropper may not make its privacy, offline behavior, or print layout clear. The decision is whether a free app trial provides enough evidence before a one-time unlock.",
+          "decision_rule": "Test one non-urgent photo against official dimensions and the intended print or upload path. Choose in-person service when fast professional lighting, printing, and retakes are worth more than home convenience.",
+          "workflow_checks": [
+            "Can the user complete one representative photo before paying?",
+            "Can the layout be compared with the exact official specification?",
+            "Can the workflow continue without sending the portrait to a web service?"
+          ],
+          "alternative_lens": "A retail passport service is better for a guided capture and immediate print. An official online checker, where available, is the better final validation step.",
+          "verify_before_install": [
+            "Use only the issuing authority's current requirements.",
+            "Confirm the free allowance and one-time unlock terms on the listing."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "sononote",
+      "route_slug": "speak-then-shape-usable-notes",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US professionals and students may capture ideas while walking, commuting, or leaving a meeting, then need writing rather than an untouched audio archive.",
+          "query": "How can I speak naturally and turn the recording into useful meeting or study notes on iPhone?",
+          "buyer_problem": "Voice capture is fast, but a folder of recordings shifts the work of finding decisions and ideas to the future. The decision is whether a voice-to-writing flow reduces that backlog while keeping review in the user's hands.",
+          "decision_rule": "Choose spoken capture when typing interrupts thinking and a written result is the desired endpoint. Keep consent, workplace policy, and local recording law in the workflow whenever other people are recorded.",
+          "workflow_checks": [
+            "Can the speaker capture a complete thought without formatting it mid-sentence?",
+            "Can the written result be reviewed against what was actually said?",
+            "Can important notes leave the workflow in a useful form?"
+          ],
+          "alternative_lens": "A dedicated recorder is better for evidentiary audio quality. A human transcription service is better when speaker attribution and high-stakes accuracy require professional review.",
+          "verify_before_install": [
+            "Test with the accent, room noise, and vocabulary typical of real use.",
+            "Get required consent and confirm current transcription and export details."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "tripbeelite",
+      "route_slug": "plan-one-upcoming-trip-without-clutter",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        3
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Occasional US travelers may need one calm place for the next journey without maintaining a lifetime archive of past and hypothetical trips.",
+          "query": "What is a simple iPhone trip-planner alternative for one upcoming journey?",
+          "buyer_problem": "A feature-heavy itinerary system can create more setup than value for a traveler planning one vacation. The decision is whether a deliberately narrow active-trip model matches the real frequency of travel.",
+          "decision_rule": "Choose a one-trip focus when clarity and low setup matter more than an archive. Choose a broader planner when several concurrent trips, team coordination, or business records are required.",
+          "workflow_checks": [
+            "Can the next trip be understood without navigating old journeys?",
+            "Can essential plans be entered before optional detail?",
+            "Can the free starting experience prove the complete planning rhythm?"
+          ],
+          "alternative_lens": "A shared document is better for open-ended group editing. A full travel platform is better for bookings, multiple itineraries, and long-term archives.",
+          "verify_before_install": [
+            "Build one real day of the upcoming trip before importing everything.",
+            "Confirm free limits, export, and lifetime-unlock details."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "tripbee",
+      "route_slug": "private-offline-family-trip-plan",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        3
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US families taking road trips or international vacations may need itineraries and packing context where cellular service is weak and account creation is undesirable.",
+          "query": "How can I keep a complete family itinerary and packing plan private and offline?",
+          "buyer_problem": "Bookings, daily plans, and packing notes become fragile when they are split across email, screenshots, and cloud-only services. The decision is whether one offline trip workspace is worth an upfront purchase.",
+          "decision_rule": "Choose a private offline planner when the family wants durable access and no account. Choose a collaborative web platform when live multi-person editing and automatic booking imports are essential.",
+          "workflow_checks": [
+            "Can the itinerary still be read during a no-service travel day?",
+            "Can family packing needs live beside the relevant journey?",
+            "Can the plan remain usable without opening an online account?"
+          ],
+          "alternative_lens": "A shared cloud document is better for simultaneous editing. An airline or booking app is better for live operational alerts from the provider.",
+          "verify_before_install": [
+            "Test offline access before leaving reliable connectivity.",
+            "Keep official booking confirmations and emergency details in their authoritative sources."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2",
+            "feature.3",
+            "feature.4"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "unblurry",
+      "route_slug": "improve-soft-family-photo-realistically",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        3,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US parents often discover a soft birthday, sports, or school photo only after the moment cannot be recreated, making privacy and realistic expectations important.",
+          "query": "Can I improve a blurry photo of my child on iPhone without uploading it?",
+          "buyer_problem": "A cherished image may be soft from motion, focus, or low light, but no enhancer can recover detail the camera never captured. The decision is whether a private enhancement produces a more usable version without pretending to restore ground truth.",
+          "decision_rule": "Start by comparing the enhancement preview. Full-resolution, watermark-free export requires a one-time Pro unlock.",
+          "workflow_checks": [
+            "Can the original remain available for side-by-side comparison?",
+            "Does the result look natural at the size where it will be viewed or printed?",
+            "Can processing stay on the device for a private family image?"
+          ],
+          "alternative_lens": "A professional retoucher is better for a critical print and nuanced manual work. Keeping the original may be the most honest choice when enhancement introduces distracting artifacts.",
+          "verify_before_install": [
+            "Test one representative image before unlocking or batch work.",
+            "Inspect faces, text, and fine edges closely for generated-looking artifacts."
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0"
+          ]
+        },
+        "ja": {
+          "language": "ja",
+          "market": "日本",
+          "culture_route": "日本の家族写真では、室内の光や子どもの動きで少しぼけてしまうことがあります。大切な一枚を残したいときも、加工した部分と元の情報を区別しながら仕上がりを見ることが大切です。",
+          "query": "少しぼけた家族写真を、購入前に補正プレビューで比較できる？",
+          "buyer_problem": "残したい写真が少し柔らかく写っていると、補正が役立つか判断しにくいものです。購入前に同じ写真の前後を見比べられれば、顔や細部が自然に見えるか、自分で確かめられます。",
+          "decision_rule": "補正プレビューの比較から試せます。 元の解像度・透かしなしでの書き出しには、一度の Pro 購入が必要です。",
+          "workflow_checks": [
+            "同じ写真の補正前と補正後を見比べて、違いを確認できますか？",
+            "顔や細部が不自然になっていないか、自分で判断できますか？",
+            "元の解像度と透かしなしの書き出しが、本当に必要ですか？"
+          ],
+          "alternative_lens": "手ぶれが強い場合や細部が記録されていない場合は、撮り直せるなら撮り直すほうが適切です。記録の正確さが重要な本人確認や鑑識では、補正画像ではなく元データと専門的な手続きを優先してください。",
+          "verify_before_install": [
+            "大切な元写真は残したまま、一枚でプレビューを試してください。",
+            "App Store の対応端末と、実際の購入画面に表示される内容を確認してください。"
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "capability.private_or_on_device"
+          ]
+        }
+      },
+      "conversion_contract": "unblurry"
+    },
+    {
+      "app_key": "wifiaid",
+      "route_slug": "separate-wifi-dns-and-website-failure",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US remote workers troubleshooting home broadband need evidence quickly enough to decide whether to restart local gear, change DNS, contact an ISP, or wait for one site.",
+          "query": "Wi-Fi says connected but there is no internet: is the problem Wi-Fi, DNS, TLS, or one website?",
+          "buyer_problem": "A single failed page does not reveal whether the local network, name resolution, secure connection, route, or destination is responsible. The decision is whether independent checks can narrow the next action without pretending to repair the network automatically.",
+          "decision_rule": "Use layered diagnostics when the goal is evidence and isolation. Use router administration or ISP support when a confirmed infrastructure problem requires configuration, line testing, or account action.",
+          "workflow_checks": [
+            "Can local connectivity be separated from wider internet reachability?",
+            "Can DNS, TCP, TLS, and destination timing be inspected independently?",
+            "Can repeated samples distinguish a stable failure from intermittent variation?"
+          ],
+          "alternative_lens": "A router vendor app is better for changing that router's settings. An enterprise network analyzer is better for packet capture, managed fleets, and formal monitoring.",
+          "verify_before_install": [
+            "Run checks against more than one destination before concluding a site is down.",
+            "Confirm current diagnostic scope and purchase terms on the listing."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "wifiaidlite",
+      "route_slug": "free-check-wifi-versus-website",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US home users may need one complete diagnostic during an outage before deciding whether unlimited network tools justify a purchase.",
+          "query": "How can I check for free whether my Wi-Fi, DNS, internet, or the website is down?",
+          "buyer_problem": "Restarting everything can hide the original failure without explaining it, while generic speed tests may succeed even when one path is broken. The decision is whether a free complete use provides enough evidence for the next step.",
+          "decision_rule": "Start with a bounded diagnostic that compares multiple layers and destinations. Escalate to the ISP, router vendor, employer, or website only after the evidence points in that direction.",
+          "workflow_checks": [
+            "Can one free run show more than a generic connected status?",
+            "Can a destination-specific failure be separated from a broad outage?",
+            "Can the user understand which test failed before changing settings?"
+          ],
+          "alternative_lens": "Built-in network settings are enough for forgetting and rejoining Wi-Fi. A professional tool is better for packet-level investigation or managed networks.",
+          "verify_before_install": [
+            "Compare at least two websites and another device when possible.",
+            "Confirm the single free check shared across all tools and the lifetime-unlock scope."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "zipbox",
+      "route_slug": "open-encrypted-and-split-archives-on-iphone",
+      "intent_type": "privacy_pay_once",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US iPhone and iPad users often receive a password-protected or split archive through email, chat or cloud storage when no desktop computer is nearby.",
+          "query": "Which pay-once iPhone app can open encrypted or split ZIP, RAR and 7z archives without ads?",
+          "buyer_problem": "A basic ZIP opener stops being useful when a client, coworker or download sends RAR5, encrypted 7z, ZIP64 or multiple split volumes. The decision is whether one on-device archive tool covers the formats that actually arrive without adding an account, advertising or a recurring payment.",
+          "decision_rule": "Choose a paid-upfront archive utility when broad extraction support, password handling and predictable ownership matter more than cloud collaboration. Confirm creation separately from extraction because RAR and RAR5 can be opened but not created.",
+          "workflow_checks": [
+            "Can the app preview and extract encrypted ZIP or 7z without uploading the archive?",
+            "Can it join split ZIP, RAR or 7z volumes that arrive as several files?",
+            "Can it create ZIP or 7z when a smaller outgoing archive is needed?"
+          ],
+          "alternative_lens": "Apple's Files app is enough for an ordinary ZIP. A desktop archive suite is better for unsupported formats such as standalone Zstandard (.zst) or CAB, or when a large batch needs advanced repair and automation.",
+          "verify_before_install": [
+            "Match the sender's exact format, encryption and split-volume requirements against the supported list.",
+            "Confirm the current paid download price and remember that RAR and RAR5 are extraction-only."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "feature.0",
+            "feature.1",
+            "feature.2",
+            "feature.3",
+            "capability.no_ads"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "wordmatelite",
+      "route_slug": "five-words-without-building-decks",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Busy US adults studying around a commute, coffee break, or school pickup may need a visible one-minute habit rather than the setup work of building flashcard decks.",
+          "query": "What is a free vocabulary alternative for learning five words a day without making decks?",
+          "buyer_problem": "A powerful flashcard system can stall before study begins because choosing, formatting, and maintaining cards becomes the task. The decision is whether a tiny prepared daily trail creates more consistency.",
+          "decision_rule": "Choose the smallest repeatable habit when initiation is the bottleneck. Choose a custom deck when specialized vocabulary, personal examples, and precise spaced-repetition controls are essential.",
+          "workflow_checks": [
+            "Can one session fit honestly into about a minute?",
+            "Can progress remain visible without requiring deck maintenance?",
+            "Can study continue offline during a commute or short break?"
+          ],
+          "alternative_lens": "A custom SRS deck is better for exams and field-specific terminology. Reading with a dictionary is better when learning from rich context is the main preference.",
+          "verify_before_install": [
+            "Try the daily rhythm for a week before unlocking more.",
+            "Confirm current language coverage and lifetime-unlock terms."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "wordmate",
+      "route_slug": "vocabulary-on-widget-and-watch",
+      "intent_type": "privacy_pay_once",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        3
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US commuters and shift workers may learn in brief glances from an iPhone widget or Apple Watch, where account-free access is more practical than a long lesson.",
+          "query": "Which pay-once vocabulary app teaches useful words across many languages on widget and Apple Watch?",
+          "buyer_problem": "A language habit disappears when every review requires opening a course, signing in, and finding the next lesson. The decision is whether glanceable examples across phone and wrist justify an upfront purchase.",
+          "decision_rule": "Choose vocabulary exposure when frequent small encounters fit the schedule and no account is preferred. Choose a full course or tutor when speaking feedback, grammar sequencing, and conversation are the primary goals.",
+          "workflow_checks": [
+            "Can a useful word appear during an existing commute or daily transition?",
+            "Can natural examples add more context than an isolated translation?",
+            "Can the routine work without an account, ads, or tracking?"
+          ],
+          "alternative_lens": "A custom flashcard system is better for personal word lists and exam targets. A live course is better for interactive speaking and correction.",
+          "verify_before_install": [
+            "Confirm the needed language and current Apple Watch requirements.",
+            "Test whether glance-based review fits the learner before replacing another study method."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "feature.0",
+            "feature.1",
+            "feature.2",
+            "feature.3",
+            "feature.4",
+            "feature.5"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "ledmovingtext",
+      "route_slug": "hold-up-a-message-people-can-read-across-a-crowd",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US arrivals halls, standing-room venues and busy service counters all need a name or an instruction that reads from far away, and the phone already in hand is usually the only screen there.",
+          "query": "How do I turn an iPhone screen into a sign people can read from across a crowd?",
+          "buyer_problem": "A note typed into a notes app stops being readable past the first row, and a printed card cannot be changed once the name, gate or order number changes. The decision is whether a phone screen can carry one message at a readable size, and whether the next message can be queued instead of retyped between moments.",
+          "decision_rule": "Choose a full-screen scrolling board when the message has to be read at a distance and is likely to change during the same event. The board itself is free to try, and the extra controls for running several prepared messages are one one-time unlock, not a subscription.",
+          "workflow_checks": [
+            "Can the message still be read from the back of the room or the far end of an arrivals hall?",
+            "Can several prepared messages be stepped through without leaving the full-screen board?",
+            "Can a message be corrected on the spot when a name, gate or order number changes?"
+          ],
+          "alternative_lens": "A printed sign is still better in outdoor daylight, or when the phone has to stay free for calls. A dedicated LED panel is better when one unchanging message has to run unattended for hours.",
+          "verify_before_install": [
+            "Check the current listing for which controls are free and which need the one-time unlock.",
+            "Try one real message at the distance it actually has to be read from before the event."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0",
+            "feature.1"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "dbhalo",
+      "route_slug": "measure-room-noise-without-sending-audio-off-device",
+      "intent_type": "privacy_pay_once",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        3
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US workshop owners, gym-goers and concertgoers checking whether a loud space is still safe to stay in often want the reading and the exposure estimate to stay on the phone, not travel to a server they cannot see.",
+          "query": "How do I check if a room is too loud without sending audio to the cloud?",
+          "buyer_problem": "A phone that only shows one number cannot say whether staying in a loud room for another hour is still within a recognized safety guideline, and many meter apps require an account or upload audio to work at all. The decision is whether a local, on-device reading with a NIOSH or OSHA based dose estimate is enough, or whether a certified handheld meter is required instead.",
+          "decision_rule": "Choose a local dB reading with a NIOSH or OSHA based Noise Dose estimate when the goal is everyday awareness of how loud a space is and how long it stays safer to remain in it. The live meter, spectrum views and sleep journal are free to try, and the full toolkit unlocks with one one-time purchase, not a subscription.",
+          "workflow_checks": [
+            "Does the live reading update instantly without creating an account first?",
+            "Can the Noise Dose estimate be checked against a NIOSH or OSHA basis before trusting it?",
+            "Does a session or sleep log stay on the device instead of uploading raw audio automatically?"
+          ],
+          "alternative_lens": "A certified handheld sound level meter is still required for occupational compliance reporting or legal documentation. A hearing-protection fit test from an audiologist is better when the question is about an individual's hearing health rather than the space itself.",
+          "verify_before_install": [
+            "Check the current listing for which views and logs are free and which need the one-time unlock.",
+            "Compare a live reading against a known reference source before relying on it for a safety decision."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0",
+            "feature.1"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "stayclock",
+      "route_slug": "always-on-bedside-clock-beyond-standby",
+      "intent_type": "alternative",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        3
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Many US households keep an older iPhone or iPad on a nightstand or desk dock and want the time readable from across the room all night, without a monthly fee for one screen.",
+          "query": "What is a better always-on bedside clock than iPhone StandBy, without a subscription?",
+          "buyer_problem": "StandBy only takes over while the phone charges on its side, offers a small set of faces, and on iPhone models without an always-on display it turns off after a short time. The decision is whether a dedicated full-screen clock that stays lit, protects an OLED panel and matches the Lock Screen and watch is worth adding for that one job.",
+          "decision_rule": "Favor a dedicated always-on clock when a phone or tablet will sit on a desk or nightstand for hours and the time must stay readable from across the room. Start with the one free face and treat the one-time unlock as optional, since there is no subscription.",
+          "workflow_checks": [
+            "Does the screen stay lit while charging, with a battery floor for when it is unplugged?",
+            "Can the same face appear in StandBy, on the Lock Screen, in Home Screen widgets and on an Apple Watch?",
+            "Does it shift pixels and switch to a dim red face at night to spare an OLED screen?"
+          ],
+          "alternative_lens": "Keep using the built-in StandBy mode when the phone always charges on its side and the included faces are enough. Choose a physical alarm clock when the goal is to keep the phone out of reach at night.",
+          "verify_before_install": [
+            "Check the current listing for which faces are free and which need the one-time unlock.",
+            "Confirm the device supports StandBy and Lock Screen widgets before relying on them."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "countdaysnow",
+      "route_slug": "countdown-that-plans-steps-before-each-date",
+      "intent_type": "workflow",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        3
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Many US families and students track trips, birthdays, anniversaries and exam dates, and the real work is the preparation that has to happen days or weeks before each one.",
+          "query": "What countdown app also plans the steps I need to finish before a date, without a subscription?",
+          "buyer_problem": "Most countdown apps only show how many days are left. The harder part is remembering what must be done 30 days or 7 days before the date, and keeping those steps correct when the date moves or the event repeats.",
+          "decision_rule": "Favor a countdown with a built-in preparation plan when each date carries tasks that must happen on time before it and the plan should move with the date. Start with the free plan and treat the one-time purchase as optional, since there is no subscription.",
+          "workflow_checks": [
+            "Can each event carry its own steps that fall due a set number of days before it and move when the date changes?",
+            "Does one view show what is late, due today, due in the next 7 days and done across every event?",
+            "Can a live countdown stay on the Lock Screen, in the Dynamic Island and in Home Screen widgets?"
+          ],
+          "alternative_lens": "Keep using a calendar app with a single reminder when a date needs only one alert. Choose a shared project tool when several people must assign and track the same preparation tasks together.",
+          "verify_before_install": [
+            "Check the current listing for what the free plan includes and what the one-time purchase unlocks.",
+            "Confirm the iPhone has a Dynamic Island before relying on the live countdown there."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "studydown",
+      "route_slug": "focus-timer-that-stops-when-you-pick-up-your-phone",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Many US students and remote workers study, read or practice a language with the phone on the desk, and want an honest record of the hours they actually spent without picking it up.",
+          "query": "Which focus timer only counts time while my phone stays face down, without a subscription?",
+          "buyer_problem": "A countdown or Pomodoro timer keeps running after the phone is back in hand, so the logged hours can overstate real focus. The decision is whether a timer that pauses when the phone is lifted and logs time per activity gives a more truthful record.",
+          "decision_rule": "Favor a face-down timer when the goal is an honest log of hours per activity rather than a fixed work and break rhythm. Try the free allowance first, but note it covers up to 3 activities and 5 recorded minutes in total, so regular use needs the one-time Pro purchase.",
+          "workflow_checks": [
+            "Does the count pause after a short grace period when the phone is picked up?",
+            "Can time be logged per activity and compared across today and this week?",
+            "Can records be exported as CSV so the history is not locked in?"
+          ],
+          "alternative_lens": "Keep a Pomodoro timer when fixed work and break intervals matter more than a per-activity log. Use Screen Time or a Focus mode when the goal is to block distracting apps rather than measure effort.",
+          "verify_before_install": [
+            "Check the current listing for the free allowance and what the one-time Pro purchase adds.",
+            "Confirm the app can stay open on a steady surface while timing, since leaving the app stops the count."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0",
+            "feature.2"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "qrcodehalo",
+      "route_slug": "qr-scanner-that-shows-the-full-link-before-opening",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        4
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Many US drivers, diners and shoppers scan QR codes on parking meters, restaurant tables, posters and parcels, and want to see where a code points before anything opens.",
+          "query": "Which QR code scanner shows me the full link before it opens anything?",
+          "buyer_problem": "Many scanners jump straight to a website or action after the scan, so a sticker placed over a real code is one tap away from the browser. The decision is whether a scanner that shows the complete payload with an on-device rule check fits how you scan. By default the scanned action runs right away; turn off “Run action after scanning” in Settings to inspect first, then tap Security Check in History.",
+          "decision_rule": "Favor a preview-first scanner when codes come from public places you do not control. The free allowance is three successful scans per device, so regular scanning needs the one-time Lifetime Pro purchase; creating QR codes and keeping local history stay free, and there is no subscription.",
+          "workflow_checks": [
+            "With automatic action turned off, does every result show the full content, link scheme and host before you act?",
+            "Can you turn off “Run action after scanning” in Settings and inspect a result first, then use Security Check in History?",
+            "Can history be searched, filtered and exported as CSV?"
+          ],
+          "alternative_lens": "Keep the built-in Camera scanner when you only scan codes you already trust. The on-device check does not look up link reputation online, so treat an unfamiliar sign-in or payment page with the same care as any other link.",
+          "verify_before_install": [
+            "Check the current listing for the free scan allowance and what Lifetime Pro adds.",
+            "Confirm the barcode formats you need are among the 20 the listing names."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.0",
+            "feature.3"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "claudeusagemini",
+      "route_slug": "see-claude-and-codex-limits-before-they-run-out",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        2,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "US developers who code with Claude, Codex or Copilot all day often juggle a work plan and a personal plan, and a Claude or Codex 5-hour or weekly limit, or running out of Copilot premium requests, can cut off an agent halfway through a change.",
+          "query": "Which app warns me before my Claude or Codex usage limit runs out?",
+          "buyer_problem": "Each service shows usage on its own page, so the first sign of a limit is often the agent stopping mid-task. The decision is whether one tracker that puts Claude, Codex, Copilot and Gemini limits side by side, with reset countdowns and alerts at your own percentage, fits how you work.",
+          "decision_rule": "Favor a dedicated tracker when you hit 5-hour or weekly limits often or switch between several accounts. Every feature, widgets included, is free during a 24-hour trial started in the app; keeping it after that takes the one-time Pro purchase, and there is no subscription.",
+          "workflow_checks": [
+            "Does it cover the exact limits you hit, such as Claude's 5-hour and weekly caps or Copilot premium requests?",
+            "Can you set an alert at your own percentage and get it only once per limit and cycle?",
+            "Can work and personal accounts sit side by side and be sorted by 5-hour or weekly reset?"
+          ],
+          "alternative_lens": "If you use one service and rarely hit a cap, that service's own usage page may be enough. A tracker like this reads only the services it lists, is not affiliated with Anthropic, OpenAI, GitHub, Microsoft or Google, and cannot raise or reset a limit.",
+          "verify_before_install": [
+            "Check the current listing for the services and limit types it supports before you rely on it.",
+            "Start the 24-hour trial in the app and confirm each account signs in on that service's own login page."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "feature.3",
+            "feature.5"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣有不少開發者白天用公司的 AI 方案、晚上用個人帳號寫自己的專案，Claude 或 Codex 的 5 小時、每週額度，或 Copilot 的進階請求一用完，正在跑的 AI 任務就得停下來。",
+          "query": "有沒有 App 能在 Claude 或 Codex 額度用完前先提醒我？",
+          "buyer_problem": "各服務的用量分散在各自的網頁，常常要等 AI 代理做到一半停下來，才發現額度已經見底。要判斷的是：把 Claude、Codex、Copilot 與 Gemini 的額度放在同一個畫面、附上重置倒數，並在你設定的百分比先提醒的工具，是否符合你的工作方式。",
+          "decision_rule": "如果你常撞到 5 小時或每週額度，或要在好幾個帳號之間切換，專用的額度追蹤工具比較合適。在 App 內開始 24 小時免費試用，就能使用包含小工具在內的所有功能；之後要繼續使用需一次性購買 Pro，沒有訂閱。",
+          "workflow_checks": [
+            "它涵蓋你實際會撞到的額度嗎？例如 Claude 的 5 小時與每週上限，或 Copilot 的進階請求？",
+            "能不能用你自己的百分比設定提醒，而且每個額度每個週期只提醒一次？",
+            "工作和個人帳號能不能並排顯示，並依 5 小時或每週重置時間排序？"
+          ],
+          "alternative_lens": "如果你只用一個服務、也很少撞到上限，直接看該服務自己的用量頁面可能就夠了。這類工具只讀取它列出的服務，與 Anthropic、OpenAI、GitHub、Microsoft 或 Google 皆無關聯，也不能幫你提高或重置額度。",
+          "verify_before_install": [
+            "先在 App Store 頁面確認支援的服務與額度類型，再決定要不要依賴它。",
+            "在 App 內開始 24 小時試用，確認每個帳號都是在該服務自己的官方登入頁面登入。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "capability.widget",
+            "capability.no_tracking"
+          ]
+        },
+        "ja": {
+          "language": "ja",
+          "market": "日本",
+          "culture_route": "日本でも、仕事ではチームのAIプラン、夜は個人アカウントで自分の開発を進める開発者が増えています。ClaudeやCodexの5時間・週間の上限、Copilotのプレミアムリクエストにいつ当たるか分からないまま作業していると、AIエージェントが変更の途中で止まってしまいます。",
+          "query": "ClaudeやCodexの使用制限に当たる前に知らせてくれるアプリはありますか？",
+          "buyer_problem": "使用量は各サービスのページにばらばらに表示されるため、上限に気づくのはAIエージェントが作業の途中で止まったときになりがちです。Claude、Codex、Copilot、Geminiの上限を同じ画面に並べ、リセットまでのカウントダウンと自分で決めたパーセンテージのアラートを出してくれる専用アプリが、自分の働き方に合うかどうかを判断します。",
+          "decision_rule": "5時間や週間の上限によく当たる人、複数のアカウントを切り替えて使う人には、専用のトラッカーが向いています。アプリ内で24時間のトライアルを始めれば、ウィジェットを含むすべての機能を使えます。その後も使い続けるには1回限りのPro購入が必要で、サブスクリプションはありません。",
+          "workflow_checks": [
+            "Claudeの5時間・週間の上限やCopilotのプレミアムリクエストなど、実際に当たる上限をカバーしていますか？",
+            "自分で決めたパーセンテージでアラートを作れて、上限ごと・サイクルごとに1回だけ届きますか？",
+            "仕事用と個人用のアカウントを並べて、5時間リセットや週間リセットが近い順に並べ替えられますか？"
+          ],
+          "alternative_lens": "使うサービスがひとつだけで上限にもめったに当たらないなら、そのサービス自身の使用量ページで十分かもしれません。この種のアプリは表示しているサービスの情報を読むだけで、Anthropic、OpenAI、GitHub、Microsoft、Googleとは提携しておらず、上限を増やしたりリセットしたりはできません。",
+          "verify_before_install": [
+            "使う前に、App Storeのページで対応しているサービスと上限の種類を確認してください。",
+            "アプリ内で24時間のトライアルを始め、各アカウントがそのサービス公式のログインページでサインインすることを確認してください。"
+          ],
+          "evidence_refs": [
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "capability.widget",
+            "capability.no_tracking"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "easyam",
+      "route_slug": "stop-your-alarm-ringing-on-public-holidays-and-days-off",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        2
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Many people in the US switch alarms off by hand before Thanksgiving, Christmas or a long weekend and then forget to switch them back on, while shift workers and teachers juggle schedules that a plain weekday repeat cannot follow.",
+          "query": "Which alarm app skips public holidays and my days off automatically?",
+          "buyer_problem": "A weekday repeat rings on public holidays, vacation days and school breaks unless you remember to change it the night before. The decision is whether an alarm that checks holiday data for your country and your own time off, and shows which of the next seven mornings will ring, fits your routine.",
+          "decision_rule": "Favor a holiday-aware alarm when you often turn alarms off for days off and back on afterwards, or when your workdays change. It is free to start; unlimited alarms, shift and alternating-week patterns and more clock themes take a one-time in-app purchase, with no subscription.",
+          "workflow_checks": [
+            "Does it include holiday data for your country or region, and what happens on days its data does not cover?",
+            "Can you add vacations, sick days or school breaks as time off so those mornings stay quiet?",
+            "Can you skip only tomorrow's ring, or change one day's time, without editing the whole schedule?"
+          ],
+          "alternative_lens": "If your workdays never change and you rarely take days off, the built-in Clock app with a weekday repeat may be enough. An alarm like this follows the holiday data and time off it has; days with unknown or outdated holiday data count as workdays, so it still rings.",
+          "verify_before_install": [
+            "Check the current listing for your country or region among the 67 with built-in holiday data before you rely on it.",
+            "Look at the seven-day preview after setup to confirm which mornings will ring and at what time."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "capability.widget",
+            "capability.apple_watch"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣有國定假日、連假與補班日，颱風假也常臨時宣布；很多上班族連假前要一個個關掉鬧鐘，收假後又怕忘了打開，週六補班還得另外設一個。",
+          "query": "有沒有鬧鐘 App 會在國定假日和休假自動不響、補班日照響？",
+          "buyer_problem": "一般的平日重複鬧鐘，遇到國定假日、特休或寒暑假還是會響，補班日卻不會響，只能前一晚自己記得調整。要判斷的是：會依你所在國家的假日資料與你登記的休假自動決定要不要響，並列出接下來七天哪幾天會響的鬧鐘，是否符合你的作息。",
+          "decision_rule": "如果你常在連假前關鬧鐘、收假後再打開，或上班日常有變動，會自動判斷假日的鬧鐘比較合適。免費開始使用；不限鬧鐘數量、輪班與隔週模式和更多時鐘主題，需要一次性 App 內購買解鎖，沒有訂閱。",
+          "workflow_checks": [
+            "它有沒有你所在國家或地區的假日資料？資料沒涵蓋的日子會怎麼處理？",
+            "請假、特休或寒暑假能不能設成休假，讓那幾天早上安靜不響？",
+            "能不能只跳過明天早上那一次，或只改某一天的響鈴時間，而不用改整個排程？"
+          ],
+          "alternative_lens": "如果你的上班日從不變動、也很少請假，iPhone 內建時鐘的平日重複鬧鐘可能就夠用。這類鬧鐘依它內建的假日資料與你登記的休假判斷；假日資料不明或過舊的日子一律算作上班日，鬧鐘照常響。",
+          "verify_before_install": [
+            "先在 App Store 頁面確認內建假日資料的 67 個國家與地區包含你所在的地方，再決定要不要依賴它。",
+            "設定好之後看一下接下來七天的預覽，確認哪幾天早上會響、幾點響。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option",
+            "capability.widget",
+            "capability.apple_watch"
+          ]
+        }
+      }
+    }
+  ]
+}

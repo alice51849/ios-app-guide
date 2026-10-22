@@ -1,0 +1,3578 @@
+{
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#catalog",
+  "url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld",
+  "name": "Catalogue des intentions de recherche de l’éditeur Lumi Studio",
+  "description": "Un catalogue publié directement par le développeur qui indique à qui chaque app est destinée, la tâche à accomplir et l’accès direct à l’App Store.",
+  "inLanguage": "fr-CA",
+  "dateModified": "2026-10-20",
+  "numberOfItems": 54,
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "url": "https://apps.apple.com/ca/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-notesstudio100",
+        "url": "https://apps.apple.com/ca/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+        "name": "100 Notes Studio: Pen & Paper",
+        "description": "100 Notes Studio réunit l’écriture à la main, la saisie de texte, l’annotation de PDF, les enregistrements joints aux pages et les outils d’étude dans un",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6798813048",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6798813048"
+          },
+          "name": "100 Notes Studio: Pen & Paper",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ca/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6798813048?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/notesstudio100.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6798813048",
+          "inLanguage": "fr-CA",
+          "description": "100 Notes Studio réunit l’écriture à la main, la saisie de texte, l’annotation de PDF, les enregistrements joints aux pages et les outils d’étude dans un",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-notesstudio100"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "url": "https://apps.apple.com/ca/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-aibriefpack",
+        "url": "https://apps.apple.com/ca/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+        "name": "AI Brief: Fichiers en prompt",
+        "description": "Un meilleur contexte. De meilleures réponses.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6791658210",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6791658210"
+          },
+          "name": "AI Brief: Fichiers en prompt",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ca/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6791658210?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/aibriefpack.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6791658210",
+          "inLanguage": "fr-CA",
+          "description": "Un meilleur contexte. De meilleures réponses.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-aibriefpack"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "url": "https://apps.apple.com/ca/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-aim990",
+        "url": "https://apps.apple.com/ca/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Aim990",
+        "description": "La partie 5 semble courte, mais ces questions à phrase incomplète peuvent prendre du temps si la grammaire et le vocabulaire ne sont pas automatiques.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6784974530",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6784974530"
+          },
+          "name": "Aim990",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6784974530?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-toeic-prep-app-offline-study-plan-for-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6784974530",
+          "inLanguage": "fr-CA",
+          "description": "La partie 5 semble courte, mais ces questions à phrase incomplète peuvent prendre du temps si la grammaire et le vocabulaire ne sont pas automatiques.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-aim990"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "url": "https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-battai",
+        "url": "https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+        "name": "BattAI: Santé de la batterie",
+        "description": "BattAI BattAI utilise cinq valeurs fournies par les API publiques d’iOS : niveau de batterie, état de recharge, mode économie d’énergie, état thermique de l’appareil et heure. Les autres résultats sont calculés à partir de ces relevés ou ajoutés par vous. Chaque détail indique sa source et ses limites.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802423998",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802423998"
+          },
+          "name": "BattAI: Santé de la batterie",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/battai.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802423998",
+          "inLanguage": "fr-CA",
+          "description": "BattAI BattAI utilise cinq valeurs fournies par les API publiques d’iOS : niveau de batterie, état de recharge, mode économie d’énergie, état thermique de l’appareil et heure. Les autres résultats sont calculés à partir de ces relevés ou ajoutés par vous. Chaque détail indique sa source et ses limites.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-battai"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "url": "https://apps.apple.com/ca/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-caldaily",
+        "url": "https://apps.apple.com/ca/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+        "name": "CalDaily : calculatrice",
+        "description": "Une calculatrice que vous gardez, parce qu'elle se souvient du contexte de chaque nombre.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794178671",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794178671"
+          },
+          "name": "CalDaily : calculatrice",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ca/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6794178671?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/caldaily.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794178671",
+          "inLanguage": "fr-CA",
+          "description": "Une calculatrice que vous gardez, parce qu'elle se souvient du contexte de chaque nombre.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-caldaily"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "url": "https://apps.apple.com/ca/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-countdaysnow",
+        "url": "https://apps.apple.com/ca/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+        "name": "CountDaysNow: Event Counter",
+        "description": "• Priorité du jour Depuis · Auj. · À venir",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6807079789",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6807079789"
+          },
+          "name": "CountDaysNow: Event Counter",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ca/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6807079789?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/countdaysnow.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6807079789",
+          "inLanguage": "fr-CA",
+          "description": "• Priorité du jour Depuis · Auj. · À venir",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-countdaysnow"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "url": "https://apps.apple.com/ca/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-cvdesk",
+        "url": "https://apps.apple.com/ca/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+        "name": "CV Desk",
+        "description": "Quand vous changez de domaine, le problème du CV est différent : votre expérience est réelle mais « non liée » sur papier, et les filtres ATS vous rejettent avant qu’un humain ne le lise. C'est exactement ce manque que CV Desk cherche à combler.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6781337213",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6781337213"
+          },
+          "name": "CV Desk",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ca/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6781337213?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-resume-builder-app-for-career-changers-2026.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6781337213",
+          "inLanguage": "fr-CA",
+          "description": "Quand vous changez de domaine, le problème du CV est différent : votre expérience est réelle mais « non liée » sur papier, et les filtres ATS vous rejettent avant qu’un humain ne le lise. C'est exactement ce manque que CV Desk cherche à combler.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-cvdesk"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "url": "https://apps.apple.com/ca/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-cyca",
+        "url": "https://apps.apple.com/ca/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Cyca",
+        "description": "Dans une catégorie où la sensibilité des données est primordiale, le bon suivi des règles garde tout — flux, humeur, symptômes, température, intimité — sur votre appareil, sans compte ni synchronisation cloud. Cyca fait seulement ça et laisse le reste de côté.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6782251621",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6782251621"
+          },
+          "name": "Cyca",
+          "operatingSystem": "iOS",
+          "applicationCategory": "HealthApplication",
+          "url": "https://apps.apple.com/ca/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6782251621?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-period-tracker-app-no-account-required-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6782251621",
+          "inLanguage": "fr-CA",
+          "description": "Dans une catégorie où la sensibilité des données est primordiale, le bon suivi des règles garde tout — flux, humeur, symptômes, température, intimité — sur votre appareil, sans compte ni synchronisation cloud. Cyca fait seulement ça et laisse le reste de côté.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-cyca"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "url": "https://apps.apple.com/ca/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-dailymate",
+        "url": "https://apps.apple.com/ca/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+        "name": "DailyMate",
+        "description": "Avant un voyage, des phrases complètes pour des situations réelles sont plus utiles que du vocabulaire isolé que vous devez encore assembler sous pression. DailyMate est né précisément de ce problème.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790418321",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790418321"
+          },
+          "name": "DailyMate",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6790418321?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-practical-language-phrase-app-for-travelers-with-apple-watch.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790418321",
+          "inLanguage": "fr-CA",
+          "description": "Avant un voyage, des phrases complètes pour des situations réelles sont plus utiles que du vocabulaire isolé que vous devez encore assembler sous pression. DailyMate est né précisément de ce problème.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-dailymate"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "14.99",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "url": "https://apps.apple.com/ca/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-dailymatelite",
+        "url": "https://apps.apple.com/ca/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+        "name": "DailyMate Lite",
+        "description": "Parlez avec assurance quand ça compte. DailyMate Lite transforme des situations courantes en courts échanges à écouter et à pratiquer dans 50 langues",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794725568",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794725568"
+          },
+          "name": "DailyMate Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6794725568?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/dailymatelite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794725568",
+          "inLanguage": "fr-CA",
+          "description": "Parlez avec assurance quand ça compte. DailyMate Lite transforme des situations courantes en courts échanges à écouter et à pratiquer dans 50 langues",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-dailymatelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "url": "https://apps.apple.com/ca/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-dbhalo",
+        "url": "https://apps.apple.com/ca/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+        "name": "dB Halo: Sonomètre",
+        "description": "Que ce soit au sous-sol, à la garderie, à l’aréna ou au chalet, dB Halo vous aide à garder le niveau sonore à l’œil, même près d’une motoneige ou sur un",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806826699",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806826699"
+          },
+          "name": "dB Halo: Sonomètre",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ca/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6806826699?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/dbhalo.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806826699",
+          "inLanguage": "fr-CA",
+          "description": "Que ce soit au sous-sol, à la garderie, à l’aréna ou au chalet, dB Halo vous aide à garder le niveau sonore à l’œil, même près d’une motoneige ou sur un",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-dbhalo"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "url": "https://apps.apple.com/ca/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-easyam",
+        "url": "https://apps.apple.com/ca/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+        "name": "EasyAM: Réveil jours fériés",
+        "description": "Votre réveil va-t-il sonner demain matin, et faut-il vraiment qu’il sonne? EasyAM tranche pour vous : il sonne les jours de travail et reste muet les jours",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6821790092",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6821790092"
+          },
+          "name": "EasyAM: Réveil jours fériés",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ca/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6821790092?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/easyam.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6821790092",
+          "inLanguage": "fr-CA",
+          "description": "Votre réveil va-t-il sonner demain matin, et faut-il vraiment qu’il sonne? EasyAM tranche pour vous : il sonne les jours de travail et reste muet les jours",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-easyam"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "url": "https://apps.apple.com/ca/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-gmoney",
+        "url": "https://apps.apple.com/ca/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+        "name": "G+Money",
+        "description": "En voyage, vous avez besoin d’un suivi de budget qui fonctionne hors ligne dans un pays sans données, gère plusieurs devises, et ne demande pas de compte — organisé par voyage pour que chaque séjour soit séparé. C'est exactement ce manque que G+Money cherche à combler.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6755782939",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6755782939"
+          },
+          "name": "G+Money",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/ca/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6755782939?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-travel-budget-tracker-app-no-subscription-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6755782939",
+          "inLanguage": "fr-CA",
+          "description": "En voyage, vous avez besoin d’un suivi de budget qui fonctionne hors ligne dans un pays sans données, gère plusieurs devises, et ne demande pas de compte — organisé par voyage pour que chaque séjour soit séparé. C'est exactement ce manque que G+Money cherche à combler.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-gmoney"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "6.99",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "url": "https://apps.apple.com/ca/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-gmoneylite",
+        "url": "https://apps.apple.com/ca/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+        "name": "G+Money Lite: Frais de voyage",
+        "description": "G+Money Lite — Convertisseur de devises & suivi de dépenses de voyage",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6793436548",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6793436548"
+          },
+          "name": "G+Money Lite: Frais de voyage",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/ca/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6793436548?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/gmoneylite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6793436548",
+          "inLanguage": "fr-CA",
+          "description": "G+Money Lite — Convertisseur de devises & suivi de dépenses de voyage",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-gmoneylite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-hourstag",
+        "url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+        "name": "HoursTag : Heures d’achat",
+        "description": "Ça coûte vraiment combien? Pas seulement en dollars, mais en heures de votre vie.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6754218117",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6754218117"
+          },
+          "name": "HoursTag : Heures d’achat",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/hourstag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6754218117",
+          "inLanguage": "fr-CA",
+          "description": "Ça coûte vraiment combien? Pas seulement en dollars, mais en heures de votre vie.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-hourstag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "6.99",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-hourstaglite",
+        "url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+        "name": "HoursTag Lite: Prix en heures",
+        "description": "HoursTag Lite - Le vrai prix des choses",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6794039979",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6794039979"
+          },
+          "name": "HoursTag Lite: Prix en heures",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/hourstaglite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6794039979",
+          "inLanguage": "fr-CA",
+          "description": "HoursTag Lite - Le vrai prix des choses",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-hourstaglite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "url": "https://apps.apple.com/ca/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-ledmovingtext",
+        "url": "https://apps.apple.com/ca/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+        "name": "LED Moving Text",
+        "description": "Tapez une phrase et levez votre iPhone. Depuis le fond de l'aréna, à travers le hall d'arrivée ou par-dessus un comptoir, elle se lit d'un seul coup d'œil.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806639602",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806639602"
+          },
+          "name": "LED Moving Text",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ca/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6806639602?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/ledmovingtext.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806639602",
+          "inLanguage": "fr-CA",
+          "description": "Tapez une phrase et levez votre iPhone. Depuis le fond de l'aréna, à travers le hall d'arrivée ou par-dessus un comptoir, elle se lit d'un seul coup d'œil.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-ledmovingtext"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "url": "https://apps.apple.com/ca/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lockhour",
+        "url": "https://apps.apple.com/ca/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+        "name": "LockHour Pro",
+        "description": "Pendant les examens, la volonté n'est pas le bon outil — un blocage strict et minuté l'est — LockHour Pro est conçue pour ça.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6780107485",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6780107485"
+          },
+          "name": "LockHour Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ca/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6780107485?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-app-to-block-social-media-while-studying-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6780107485",
+          "inLanguage": "fr-CA",
+          "description": "Pendant les examens, la volonté n'est pas le bon outil — un blocage strict et minuté l'est — LockHour Pro est conçue pour ça.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lockhour"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "url": "https://apps.apple.com/ca/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumibopomofo",
+        "url": "https://apps.apple.com/ca/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Bopomofo",
+        "description": "Pour un enfant qui apprend le Zhuyin, l’application doit couvrir les 37 symboles par le traçage et le jeu — conçue pour la tranche d’âge 4–7 ans, sans publicité, sans collecte de données. C'est exactement ce manque que Lumi Bopomofo cherche à combler.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6773017109",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6773017109"
+          },
+          "name": "Lumi Bopomofo",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6773017109?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-bopomofo-app-for-kids-to-learn-zhuyin-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6773017109",
+          "inLanguage": "fr-CA",
+          "description": "Pour un enfant qui apprend le Zhuyin, l’application doit couvrir les 37 symboles par le traçage et le jeu — conçue pour la tranche d’âge 4–7 ans, sans publicité, sans collecte de données. C'est exactement ce manque que Lumi Bopomofo cherche à combler.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumibopomofo"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "url": "https://apps.apple.com/ca/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumibopomofopro",
+        "url": "https://apps.apple.com/ca/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Bopomofo Pro",
+        "description": "Les enfants bilingues qui apprennent Zhuyin à la maison ont besoin d’un parcours complet à travers sons, symboles, tons et assemblage, avec assez de répétition ludique pour rendre le système familier. C'est exactement ce manque que Lumi Bopomofo Pro cherche à combler.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6775773117",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6775773117"
+          },
+          "name": "Lumi Bopomofo Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6775773117?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-complete-zhuyin-app-for-bilingual-children.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6775773117",
+          "inLanguage": "fr-CA",
+          "description": "Les enfants bilingues qui apprennent Zhuyin à la maison ont besoin d’un parcours complet à travers sons, symboles, tons et assemblage, avec assez de répétition ludique pour rendre le système familier. C'est exactement ce manque que Lumi Bopomofo Pro cherche à combler.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumibopomofopro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "11.99",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "url": "https://apps.apple.com/ca/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumiletters",
+        "url": "https://apps.apple.com/ca/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Letters",
+        "description": "Pour un jeune enfant, le facteur décisif est l’absence de publicité et de collecte de données — une application d’apprentissage doit enseigner dans une boucle de jeu sans publicité, sans collecte de données auprès de l’enfant, avec un déblocage unique fiable pour les parents. C'est pour ça que Lumi Letters existe.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6778748533",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6778748533"
+          },
+          "name": "Lumi Letters",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6778748533?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-educational-game-app-for-kids-no-ads-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6778748533",
+          "inLanguage": "fr-CA",
+          "description": "Pour un jeune enfant, le facteur décisif est l’absence de publicité et de collecte de données — une application d’apprentissage doit enseigner dans une boucle de jeu sans publicité, sans collecte de données auprès de l’enfant, avec un déblocage unique fiable pour les parents. C'est pour ça que Lumi Letters existe.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumiletters"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "url": "https://apps.apple.com/ca/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumiletterspro",
+        "url": "https://apps.apple.com/ca/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Letters Pro",
+        "description": "Les familles qui préparent la maternelle ont besoin d’un parcours complet de lecture précoce qui relie sons de lettres, tracé et construction de mots plutôt qu’une collection de jeux alphabétiques séparés. C'est exactement ce manque que Lumi Letters Pro cherche à combler.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6778491147",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6778491147"
+          },
+          "name": "Lumi Letters Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6778491147?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6778491147",
+          "inLanguage": "fr-CA",
+          "description": "Les familles qui préparent la maternelle ont besoin d’un parcours complet de lecture précoce qui relie sons de lettres, tracé et construction de mots plutôt qu’une collection de jeux alphabétiques séparés. C'est exactement ce manque que Lumi Letters Pro cherche à combler.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumiletterspro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "11.99",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "url": "https://apps.apple.com/ca/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumimath",
+        "url": "https://apps.apple.com/ca/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Math Planet",
+        "description": "La meilleure application mathématique pour enfants entraîne le raisonnement — motifs, séquences, pensée spatiale — pas seulement l’arithmétique, et elle cache cela dans un jeu que l’enfant veut jouer. C'est pour ça que Lumi Math Planet existe.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6778269699",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6778269699"
+          },
+          "name": "Lumi Math Planet",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6778269699?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6778269699",
+          "inLanguage": "fr-CA",
+          "description": "La meilleure application mathématique pour enfants entraîne le raisonnement — motifs, séquences, pensée spatiale — pas seulement l’arithmétique, et elle cache cela dans un jeu que l’enfant veut jouer. C'est pour ça que Lumi Math Planet existe.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumimath"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "url": "https://apps.apple.com/ca/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumimathpro",
+        "url": "https://apps.apple.com/ca/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Math Pro",
+        "description": "Une app mathématique complète doit rendre le comptage, le sens du nombre et les premières opérations comme une aventure connectée plutôt que des exercices isolés. C'est pour ça que Lumi Math Pro existe.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6776958488",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6776958488"
+          },
+          "name": "Lumi Math Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6776958488?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6776958488",
+          "inLanguage": "fr-CA",
+          "description": "Une app mathématique complète doit rendre le comptage, le sens du nombre et les premières opérations comme une aventure connectée plutôt que des exercices isolés. C'est pour ça que Lumi Math Pro existe.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumimathpro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "11.99",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "url": "https://apps.apple.com/ca/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumimission",
+        "url": "https://apps.apple.com/ca/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Mission Planet",
+        "description": "Pour un enfant d’âge préscolaire, une routine du coucher fonctionne mieux lorsqu’elle est courte, visuelle et assez prévisible pour que l’enfant puisse la suivre sans autre rappel. Si ça vous ressemble, jetez un coup d'œil à Lumi Mission Planet.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779750237",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779750237"
+          },
+          "name": "Lumi Mission Planet",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6779750237?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779750237",
+          "inLanguage": "fr-CA",
+          "description": "Pour un enfant d’âge préscolaire, une routine du coucher fonctionne mieux lorsqu’elle est courte, visuelle et assez prévisible pour que l’enfant puisse la suivre sans autre rappel. Si ça vous ressemble, jetez un coup d'œil à Lumi Mission Planet.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumimission"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "url": "https://apps.apple.com/ca/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumimissionpro",
+        "url": "https://apps.apple.com/ca/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Mission Planet Pro",
+        "description": "Le brossage des dents et le coucher échouent souvent au même moment chaque soir : l’enfant est fatigué, le parent aussi, et la prochaine étape n’est pas assez visible.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779745474",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779745474"
+          },
+          "name": "Lumi Mission Planet Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6779745474?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-complete-morning-and-bedtime-routine-app-for-kids.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779745474",
+          "inLanguage": "fr-CA",
+          "description": "Le brossage des dents et le coucher échouent souvent au même moment chaque soir : l’enfant est fatigué, le parent aussi, et la prochaine étape n’est pas assez visible.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumimissionpro"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "7.99",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "url": "https://apps.apple.com/ca/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumiweather",
+        "url": "https://apps.apple.com/ca/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Lumi Météo: Comment m'habiller",
+        "description": "Lumi Météo vous dit en un coup d'œil si c'est le bon moment pour sortir, comment vous habiller et s'il faut prendre un parapluie ou de la crème solaire.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779552704",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779552704"
+          },
+          "name": "Lumi Météo: Comment m'habiller",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6779552704?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/lumiweather.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779552704",
+          "inLanguage": "fr-CA",
+          "description": "Lumi Météo vous dit en un coup d'œil si c'est le bon moment pour sortir, comment vous habiller et s'il faut prendre un parapluie ou de la crème solaire.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-lumiweather"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "url": "https://apps.apple.com/ca/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-maskmyfile",
+        "url": "https://apps.apple.com/ca/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Mask My File: Ôter vos infos",
+        "description": "Partagez en toute confiance sans perdre le contexte utile. Mask My File repère les renseignements privés avant que vous envoyiez un fichier, masque de",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6792850916",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6792850916"
+          },
+          "name": "Mask My File: Ôter vos infos",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ca/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6792850916?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/maskmyfile.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6792850916",
+          "inLanguage": "fr-CA",
+          "description": "Partagez en toute confiance sans perdre le contexte utile. Mask My File repère les renseignements privés avant que vous envoyiez un fichier, masque de",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-maskmyfile"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "url": "https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-mochi",
+        "url": "https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Mochi",
+        "description": "Si la plupart des applications de tâches vous semblent lourdes, la bonne est une liste propre avec rappels et prise en charge de l'Apple Watch — et volontairement sans gestion de projet. C'est pour ça que Mochi existe.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6785004775",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6785004775"
+          },
+          "name": "Mochi",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-simple-to-do-list-app-iphone-no-subscription.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6785004775",
+          "inLanguage": "fr-CA",
+          "description": "Si la plupart des applications de tâches vous semblent lourdes, la bonne est une liste propre avec rappels et prise en charge de l'Apple Watch — et volontairement sans gestion de projet. C'est pour ça que Mochi existe.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-mochi"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "url": "https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-mochidonestamp",
+        "url": "https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Mochi DoneStamp : Mémo",
+        "description": "Quand avez-vous changé le filtre de la fournaise, hivérisé le robinet extérieur, appelé la famille, changé la literie ou sauvegardé les photos du chalet",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790800323",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790800323"
+          },
+          "name": "Mochi DoneStamp : Mémo",
+          "operatingSystem": "iOS",
+          "applicationCategory": "LifestyleApplication",
+          "url": "https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/mochidonestamp.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790800323",
+          "inLanguage": "fr-CA",
+          "description": "Quand avez-vous changé le filtre de la fournaise, hivérisé le robinet extérieur, appelé la famille, changé la literie ou sauvegardé les photos du chalet",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-mochidonestamp"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "url": "https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-moneytag",
+        "url": "https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+        "name": "MoneyTag: Revenus et dépenses",
+        "description": "Revenus et dépenses Chaque projet tient ses propres livres : les revenus moins les dépenses donnent son résultat net. Voici les questions les plus courantes. Si la vôtre ne s’y trouve pas, écrivez-nous — une vraie personne lit chaque courriel.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6801956402",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6801956402"
+          },
+          "name": "MoneyTag: Revenus et dépenses",
+          "operatingSystem": "iOS",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/moneytag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6801956402",
+          "inLanguage": "fr-CA",
+          "description": "Revenus et dépenses Chaque projet tient ses propres livres : les revenus moins les dépenses donnent son résultat net. Voici les questions les plus courantes. Si la vôtre ne s’y trouve pas, écrivez-nous — une vraie personne lit chaque courriel.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-moneytag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "url": "https://apps.apple.com/ca/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-onepageppt",
+        "url": "https://apps.apple.com/ca/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+        "name": "OnePage PPT : diapos par IA",
+        "description": "Transformez un mur de texte en UNE diapo qui se lit vraiment.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6798814385",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6798814385"
+          },
+          "name": "OnePage PPT : diapos par IA",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ca/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6798814385?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/onepageppt.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6798814385",
+          "inLanguage": "fr-CA",
+          "description": "Transformez un mur de texte en UNE diapo qui se lit vraiment.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-onepageppt"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "url": "https://apps.apple.com/ca/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-photocream",
+        "url": "https://apps.apple.com/ca/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+        "name": "PhotoCream",
+        "description": "Les créateurs voyage ont besoin d’un style film répétable qui ajoute grain, halation et caractère couleur sans rendre chaque destination uniforme",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6781808054",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6781808054"
+          },
+          "name": "PhotoCream",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ca/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6781808054?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-pay-once-film-photo-editor-for-travel-creators-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6781808054",
+          "inLanguage": "fr-CA",
+          "description": "Les créateurs voyage ont besoin d’un style film répétable qui ajoute grain, halation et caractère couleur sans rendre chaque destination uniforme",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-photocream"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "url": "https://apps.apple.com/ca/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-picclear",
+        "url": "https://apps.apple.com/ca/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+        "name": "PicClear",
+        "description": "Pour libérer de l’espace rapidement, ciblez d’abord les plus gros gains : photos en double exactes, rafales quasi identiques, flous rejetés et vidéos volumineuses",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6780223070",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6780223070"
+          },
+          "name": "PicClear",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ca/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6780223070?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-app-to-free-up-iphone-storage-deleting-duplicate-photos.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6780223070",
+          "inLanguage": "fr-CA",
+          "description": "Pour libérer de l’espace rapidement, ciblez d’abord les plus gros gains : photos en double exactes, rafales quasi identiques, flous rejetés et vidéos volumineuses",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-picclear"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "url": "https://apps.apple.com/ca/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-qrcodehalo",
+        "url": "https://apps.apple.com/ca/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+        "name": "QR Code Halo : Scan sécurisé",
+        "description": "QR Code Halo agit dès qu'un code est lu. Numérisez avec la caméra ou choisissez une photo : les liens s'ouvrent dans votre navigateur, les codes de",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806779853",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806779853"
+          },
+          "name": "QR Code Halo : Scan sécurisé",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ca/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6806779853?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/qrcodehalo.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806779853",
+          "inLanguage": "fr-CA",
+          "description": "QR Code Halo agit dès qu'un code est lu. Numérisez avec la caméra ou choisissez une photo : les liens s'ouvrent dans votre navigateur, les codes de",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-qrcodehalo"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "url": "https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-savetag",
+        "url": "https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+        "name": "SaveTag : signets par IA",
+        "description": "Gardez-le maintenant. Lisez-le pour vrai plus tard.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802505528",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802505528"
+          },
+          "name": "SaveTag : signets par IA",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/savetag.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802505528",
+          "inLanguage": "fr-CA",
+          "description": "Gardez-le maintenant. Lisez-le pour vrai plus tard.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-savetag"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "url": "https://apps.apple.com/ca/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-scanto",
+        "url": "https://apps.apple.com/ca/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+        "name": "ScanTo Pro",
+        "description": "Si vous scannez des formulaires de consentement, des documents de sortie ou des références, le scanner doit garder ces documents sur l’appareil — jamais téléversés sur un cloud tiers. ScanTo Pro est né précisément de ce problème.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6779977651",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6779977651"
+          },
+          "name": "ScanTo Pro",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ca/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6779977651?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-offline-document-scanner-app-no-cloud-for-nurses.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6779977651",
+          "inLanguage": "fr-CA",
+          "description": "Si vous scannez des formulaires de consentement, des documents de sortie ou des références, le scanner doit garder ces documents sur l’appareil — jamais téléversés sur un cloud tiers. ScanTo Pro est né précisément de ce problème.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-scanto"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
+      "url": "https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-sereno",
+        "url": "https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Sereno",
+        "description": "Pour le sommeil, un abonnement qui vous harcèle chaque mois est l’opposé du repos. Si ça vous ressemble, jetez un coup d'œil à Sereno.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6788236641",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6788236641"
+          },
+          "name": "Sereno",
+          "operatingSystem": "iOS",
+          "applicationCategory": "LifestyleApplication",
+          "url": "https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-white-noise-app-for-falling-asleep-no-subscription.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6788236641",
+          "inLanguage": "fr-CA",
+          "description": "Pour le sommeil, un abonnement qui vous harcèle chaque mois est l’opposé du repos. Si ça vous ressemble, jetez un coup d'œil à Sereno.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-sereno"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 39,
+      "url": "https://apps.apple.com/ca/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-shotinbox",
+        "url": "https://apps.apple.com/ca/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+        "name": "ShotInbox AI: Sort Screenshots",
+        "description": "Vos captures, enfin rangées",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6802166527",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6802166527"
+          },
+          "name": "ShotInbox AI: Sort Screenshots",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ca/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6802166527?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/shotinbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6802166527",
+          "inLanguage": "fr-CA",
+          "description": "Vos captures, enfin rangées",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-shotinbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "url": "https://apps.apple.com/ca/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-snapport",
+        "url": "https://apps.apple.com/ca/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Snapport",
+        "description": "Pour une photo passeport de bébé, personne d’autre ne doit apparaître et l’arrière-plan doit être uni — mais pour les nourrissons, les yeux n’ont pas besoin d’être complètement ouverts.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6780575828",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6780575828"
+          },
+          "name": "Snapport",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ca/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6780575828?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6780575828",
+          "inLanguage": "fr-CA",
+          "description": "Pour une photo passeport de bébé, personne d’autre ne doit apparaître et l’arrière-plan doit être uni — mais pour les nourrissons, les yeux n’ont pas besoin d’être complètement ouverts.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-snapport"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "7.99",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 41,
+      "url": "https://apps.apple.com/ca/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-snapportlite",
+        "url": "https://apps.apple.com/ca/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Snapport Lite: Photo passeport",
+        "description": "Besoin d’une photo à un format précis ? Snapport Lite recadre votre portrait exactement à la taille choisie, directement sur votre appareil. Prenez une",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6792856304",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6792856304"
+          },
+          "name": "Snapport Lite: Photo passeport",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ca/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6792856304?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/snapportlite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6792856304",
+          "inLanguage": "fr-CA",
+          "description": "Besoin d’une photo à un format précis ? Snapport Lite recadre votre portrait exactement à la taille choisie, directement sur votre appareil. Prenez une",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-snapportlite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
+      "url": "https://apps.apple.com/ca/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-sononote",
+        "url": "https://apps.apple.com/ca/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Sono Note",
+        "description": "Après un appel, vous ne voulez pas une transcription brute — vous voulez le résumé, les actions à faire et une ébauche de suivi — Sono Note est conçue pour ça.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6782139553",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6782139553"
+          },
+          "name": "Sono Note",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ca/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6782139553?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6782139553",
+          "inLanguage": "fr-CA",
+          "description": "Après un appel, vous ne voulez pas une transcription brute — vous voulez le résumé, les actions à faire et une ébauche de suivi — Sono Note est conçue pour ça.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-sononote"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
+      "url": "https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-stayclock",
+        "url": "https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Stay Clock : horloge flip",
+        "description": "Avec Stay Clock, votre iPhone ou iPad devient une horloge de bureau toujours allumée, facile à lire même de l’autre bout de la pièce. Une heure grande et",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6814035888",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6814035888"
+          },
+          "name": "Stay Clock : horloge flip",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/stayclock.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6814035888",
+          "inLanguage": "fr-CA",
+          "description": "Avec Stay Clock, votre iPhone ou iPad devient une horloge de bureau toujours allumée, facile à lire même de l’autre bout de la pièce. Une heure grande et",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-stayclock"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "url": "https://apps.apple.com/ca/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-studydown",
+        "url": "https://apps.apple.com/ca/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Studydown : Suivi du temps",
+        "description": "Faites de la place à ce qui compte pour vous. Studydown garde une trace du temps consacré à un projet, à la lecture ou à une nouvelle habileté",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6807335593",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6807335593"
+          },
+          "name": "Studydown : Suivi du temps",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ca/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6807335593?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/studydown.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6807335593",
+          "inLanguage": "fr-CA",
+          "description": "Faites de la place à ce qui compte pour vous. Studydown garde une trace du temps consacré à un projet, à la lecture ou à une nouvelle habileté",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-studydown"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 45,
+      "url": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-tripplanet",
+        "url": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Trip Planet: Kids Quest",
+        "description": "Les parents qui voyagent avec de jeunes enfants ont besoin d’activités qui transforment le bagage, l’attente et la découverte d’un nouvel endroit en partie de l’aventure plutôt qu’une source de stress. C'est pour ça que Trip Planet: Kids Quest existe.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6787193643",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6787193643"
+          },
+          "name": "Trip Planet: Kids Quest",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-travel-activity-app-for-kids-on-family-trips.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6787193643",
+          "inLanguage": "fr-CA",
+          "description": "Les parents qui voyagent avec de jeunes enfants ont besoin d’activités qui transforment le bagage, l’attente et la découverte d’un nouvel endroit en partie de l’aventure plutôt qu’une source de stress. C'est pour ça que Trip Planet: Kids Quest existe.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-tripplanet"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 46,
+      "url": "https://apps.apple.com/ca/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-tripbeelite",
+        "url": "https://apps.apple.com/ca/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+        "name": "TripBee Lite",
+        "description": "Si vous planifiez un voyage à venir, une chronologie claire pour ce voyage est plus utile qu’une archive encombrée de tous les voyages que vous pourriez faire un jour. Si ça vous ressemble, jetez un coup d'œil à TripBee Lite.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6791299610",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6791299610"
+          },
+          "name": "TripBee Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/ca/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6791299610?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6791299610",
+          "inLanguage": "fr-CA",
+          "description": "Si vous planifiez un voyage à venir, une chronologie claire pour ce voyage est plus utile qu’une archive encombrée de tous les voyages que vous pourriez faire un jour. Si ça vous ressemble, jetez un coup d'œil à TripBee Lite.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-tripbeelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "url": "https://apps.apple.com/ca/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-tripbee",
+        "url": "https://apps.apple.com/ca/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+        "name": "TripBee Pro: Trip Planner",
+        "description": "Une bonne application d'itinéraire transforme un voyage désordonné en une chronologie claire jour par jour — vols, hôtels, activités, restaurants et transport — avec des icônes claires par type pour lire votre journée d'un coup d'œil — TripBee Pro: Trip Planner est conçue pour ça.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6787754435",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6787754435"
+          },
+          "name": "TripBee Pro: Trip Planner",
+          "operatingSystem": "iOS",
+          "applicationCategory": "TravelApplication",
+          "url": "https://apps.apple.com/ca/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6787754435?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-trip-itinerary-planner-app-for-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6787754435",
+          "inLanguage": "fr-CA",
+          "description": "Une bonne application d'itinéraire transforme un voyage désordonné en une chronologie claire jour par jour — vols, hôtels, activités, restaurants et transport — avec des icônes claires par type pour lire votre journée d'un coup d'œil — TripBee Pro: Trip Planner est conçue pour ça.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-tripbee"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "7.99",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 48,
+      "url": "https://apps.apple.com/ca/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-unblurry",
+        "url": "https://apps.apple.com/ca/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Unblurry",
+        "description": "Les enfants ne tiennent jamais en place, donc les photos floues ou tremblantes sont inévitables",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6782275018",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6782275018"
+          },
+          "name": "Unblurry",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ca/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6782275018?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6782275018",
+          "inLanguage": "fr-CA",
+          "description": "Les enfants ne tiennent jamais en place, donc les photos floues ou tremblantes sont inévitables",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-unblurry"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 49,
+      "url": "https://apps.apple.com/ca/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-claudeusagemini",
+        "url": "https://apps.apple.com/ca/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+        "name": "UsageNow : Suivi d'usage IA",
+        "description": "Vous frappez votre limite d’IA en plein milieu d’une tâche? UsageNow vous montre ce qu’il reste de chaque forfait IA et le moment exact de sa remise à zéro",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6818607603",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6818607603"
+          },
+          "name": "UsageNow : Suivi d'usage IA",
+          "operatingSystem": "iOS",
+          "applicationCategory": "BusinessApplication",
+          "url": "https://apps.apple.com/ca/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6818607603?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/claudeusagemini.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6818607603",
+          "inLanguage": "fr-CA",
+          "description": "Vous frappez votre limite d’IA en plein milieu d’une tâche? UsageNow vous montre ce qu’il reste de chaque forfait IA et le moment exact de sa remise à zéro",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-claudeusagemini"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 50,
+      "url": "https://apps.apple.com/ca/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-wifiaidlite",
+        "url": "https://apps.apple.com/ca/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+        "name": "WiFi Aid Lite",
+        "description": "Une vérification complète au total, avec l'outil de votre choix, est possible sans achat. Un achat intégré unique et facultatif débloque les",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6793414462",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6793414462"
+          },
+          "name": "WiFi Aid Lite",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ca/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6793414462?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/wifiaidlite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6793414462",
+          "inLanguage": "fr-CA",
+          "description": "Une vérification complète au total, avec l'outil de votre choix, est possible sans achat. Un achat intégré unique et facultatif débloque les",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-wifiaidlite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 51,
+      "url": "https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-wifiaid",
+        "url": "https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+        "name": "WiFi Aid: Diagnostic réseau",
+        "description": "Repérez la cause probable grâce aux vérifications indépendantes des chemins, DNS, TCP, TLS, délais et stabilité. Un seul achat initial, sans abonnement",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6790467886",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6790467886"
+          },
+          "name": "WiFi Aid: Diagnostic réseau",
+          "operatingSystem": "iOS",
+          "applicationCategory": "PhotographyApplication",
+          "url": "https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/wifiaid.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6790467886",
+          "inLanguage": "fr-CA",
+          "description": "Repérez la cause probable grâce aux vérifications indépendantes des chemins, DNS, TCP, TLS, délais et stabilité. Un seul achat initial, sans abonnement",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-wifiaid"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "7.99",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 52,
+      "url": "https://apps.apple.com/ca/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-wordmate",
+        "url": "https://apps.apple.com/ca/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Wordmate : Apprendre 44 langues",
+        "description": "Les navetteurs occupés ont besoin de pratique vocabulaire qui s’insère dans les moments libres sans exiger une leçon complète, un nouveau compte ou un téléphone en main pour chaque révision. Wordmate : Apprendre 44 langues est né précisément de ce problème.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6789917808",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6789917808"
+          },
+          "name": "Wordmate : Apprendre 44 langues",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6789917808?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/answers/best-vocabulary-app-for-busy-commuters-with-apple-watch.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6789917808",
+          "inLanguage": "fr-CA",
+          "description": "Les navetteurs occupés ont besoin de pratique vocabulaire qui s’insère dans les moments libres sans exiger une leçon complète, un nouveau compte ou un téléphone en main pour chaque révision. Wordmate : Apprendre 44 langues est né précisément de ce problème.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-wordmate"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "11.99",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 53,
+      "url": "https://apps.apple.com/ca/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-wordmatelite",
+        "url": "https://apps.apple.com/ca/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Wordmate Lite: 5 mots par jour",
+        "description": "Cinq mots, une minute, un pas de plus sur ton chemin. Wordmate Lite prend la vieille résolution d'apprendre une langue et la coupe en morceaux assez petits",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6797601720",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6797601720"
+          },
+          "name": "Wordmate Lite: 5 mots par jour",
+          "operatingSystem": "iOS",
+          "applicationCategory": "EducationalApplication",
+          "url": "https://apps.apple.com/ca/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6797601720?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/wordmatelite.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6797601720",
+          "inLanguage": "fr-CA",
+          "description": "Cinq mots, une minute, un pas de plus sur ton chemin. Wordmate Lite prend la vieille résolution d'apprendre une langue et la coupe en morceaux assez petits",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-wordmatelite"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "free_with_lifetime_unlock"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": true
+        },
+        "price": "0",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 54,
+      "url": "https://apps.apple.com/ca/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "item": {
+        "@type": "Offer",
+        "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-zipbox",
+        "url": "https://apps.apple.com/ca/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+        "name": "Zipbox : décompresser RAR, ZIP",
+        "description": "Zipbox est une app payante de l’App Store. Un achat comprend tout, sans achats intégrés, abonnements ni pubs. Les 13 formats sont traités sur l’appareil.",
+        "seller": {
+          "@type": "Organization",
+          "@id": "https://open.cait518.cc/ios-app-guide/about.html#organization",
+          "name": "Lumi Studio",
+          "url": "https://open.cait518.cc/ios-app-guide/about.html"
+        },
+        "itemOffered": {
+          "@type": "MobileApplication",
+          "@id": "https://apps.apple.com/app/id6806776579",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "Apple App Store ID",
+            "value": "6806776579"
+          },
+          "name": "Zipbox : décompresser RAR, ZIP",
+          "operatingSystem": "iOS",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://apps.apple.com/ca/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "installUrl": "https://apps.apple.com/ca/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "downloadUrl": "https://apps.apple.com/ca/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+          "potentialAction": {
+            "@type": "InstallAction",
+            "target": "https://apps.apple.com/ca/app/id6806776579?pt=118326163&ct=geo_pick&mt=8"
+          },
+          "mainEntityOfPage": {
+            "@id": "https://open.cait518.cc/ios-app-guide/fr-CA/zipbox.html#webpage"
+          },
+          "sameAs": "https://apps.apple.com/app/id6806776579",
+          "inLanguage": "fr-CA",
+          "description": "Zipbox est une app payante de l’App Store. Un achat comprend tout, sans achats intégrés, abonnements ni pubs. Les 13 formats sont traités sur l’appareil.",
+          "offers": {
+            "@id": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fr-CA.jsonld#offer-zipbox"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "purchase_model",
+              "value": "paid_upfront"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "one_time_option",
+              "value": true
+            }
+          ],
+          "isAccessibleForFree": false
+        },
+        "price": "6.99",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock",
+        "eligibleRegion": {
+          "@type": "Country",
+          "identifier": "CA"
+        }
+      }
+    }
+  ]
+}

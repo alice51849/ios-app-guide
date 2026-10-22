@@ -1,0 +1,28 @@
+---
+title: "HoursTag: Horas para comprar — Salario por hora y gastos | iOS App"
+lang: "es-MX"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/es-MX/index.html"
+modified: "2026-10-21"
+app_store_id: "6754218117"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# HoursTag: Horas para comprar — Salario por hora y gastos | iOS App
+
+¿Cuánto cuesta de verdad? No solo en pesos, sino en horas de tu vida.
+
+- Dinero y viajes
+- Descarga de pago
+- Sin cuenta
+- Sin anuncios
+- Sin rastreo
+- Privado / en el dispositivo
+- App Store · $99.00
+
+[Consigue HoursTag: Horas para comprar en el App Store](https://apps.apple.com/mx/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
+
+[Lee la guía completa](https://open.cait518.cc/ios-app-guide/es-MX/hourstag.html)
+
+> Este contenido lo publica directamente Lumi Studio, desarrollador de todas las apps incluidas.

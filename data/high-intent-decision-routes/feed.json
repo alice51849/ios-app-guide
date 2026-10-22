@@ -1,0 +1,985 @@
+{
+  "description": "First-party, source-bound app decision routes published by Lumi Studio.",
+  "feed_url": "https://open.cait518.cc/ios-app-guide/data/high-intent-decision-routes/feed.json",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide",
+  "hubs": [
+    {
+      "type": "WebSub",
+      "url": "https://pubsubhubbub.appspot.com/"
+    },
+    {
+      "type": "WebSub",
+      "url": "https://pubsubhubbub.superfeedr.com/"
+    }
+  ],
+  "items": [
+    {
+      "_lumi_route": {
+        "app_key": "mochidonestamp",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "de-DE",
+        "record_digest": "6685e7a6d5c6ce99432cd78662cd6807853dfce5f34bab4bb409555bf2aa98db"
+      },
+      "id": "de-DE:mochidonestamp:remember-when-household-task-was-done",
+      "language": "de",
+      "summary": "Ein wiederkehrender Kalendereintrag sagt nicht, wann etwas wirklich erledigt wurde. Für unregelmäßige Aufgaben ist ein Verlauf der tatsächlichen Erledigungen oft hilfreicher als eine weitere To-do-Liste.",
+      "title": "Wann habe ich zuletzt den Filter gewechselt, und welche App merkt sich das?",
+      "url": "https://open.cait518.cc/ios-app-guide/de-DE/decide/mochidonestamp/remember-when-household-task-was-done.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "aibriefpack",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "7167c1c911e677df3a8bb63f68d82e13ef812f2076c40aa3d7e53a877cec7294"
+      },
+      "id": "en-US:aibriefpack:organize-source-context-before-ai",
+      "language": "en",
+      "summary": "Sending a pile of disconnected files to an AI assistant makes omissions and source confusion hard to notice. The decision is whether to prepare a reviewable brief first instead of repeatedly rebuilding context inside a chat.",
+      "title": "How do I organize screenshots, PDFs, and notes into traceable context before using AI?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/aibriefpack/organize-source-context-before-ai.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "aim990",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "49317fdd4ebb73a61f80033d0c790f55b84186c22cfd5afcc5b38129ccbfe36b"
+      },
+      "id": "en-US:aim990:toeic-part-five-time-pressure",
+      "language": "en",
+      "summary": "Incomplete-sentence questions feel short but repeatedly consume time when grammar and business vocabulary are not automatic. A useful decision route starts with the learner's weak pattern, not a promise of a particular score.",
+      "title": "How can I practise TOEIC-style English offline a little each day?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/aim990/toeic-part-five-time-pressure.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "battai",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "efcd5240daca4b8e81b8fc0fb3e7d67e15e40b57b2ad8c45e138af5499d8cf61"
+      },
+      "id": "en-US:battai:decide-when-an-iphone-battery-needs-service",
+      "language": "en",
+      "summary": "Battery percentage alone does not explain long-term condition, while an impressive temperature, voltage, or cycle-count screen may rely on data ordinary iPhone apps cannot directly read. The decision is whether a transparent review can organize observable behavior and user-provided evidence without creating false precision.",
+      "title": "How can I understand recorded iPhone battery behaviour without guessing at sensors?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/battai/decide-when-an-iphone-battery-needs-service.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "caldaily",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "5ed72ac2986d306497fb5b6d08e0cca877e95ff877d437e009ed574b5a74c02d"
+      },
+      "id": "en-US:caldaily:save-name-search-calculation-history",
+      "language": "en",
+      "summary": "A correct result is still hard to trust later when the reason for the calculation is gone. The decision is whether saved context, naming, and retrieval matter enough to replace a disposable calculator tape.",
+      "title": "Which iPhone calculator keeps named, searchable history for calculations I need to revisit?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/caldaily/save-name-search-calculation-history.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "claudeusagemini",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "f403cd2023bea1ef3304be7ea9490acdc24add41acac8972739b372cb340d4e1"
+      },
+      "id": "en-US:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
+      "language": "en",
+      "summary": "Each service shows usage on its own page, so the first sign of a limit is often the agent stopping mid-task. The decision is whether one tracker that puts Claude, Codex, Copilot and Gemini limits side by side, with reset countdowns and alerts at your own percentage, fits how you work.",
+      "title": "Which app warns me before my Claude or Codex usage limit runs out?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "countdaysnow",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "6fbc868cf0ea097cba963dfc5623ff7cf1d5e26fde157ae76f67d6c2141004e2"
+      },
+      "id": "en-US:countdaysnow:countdown-that-plans-steps-before-each-date",
+      "language": "en",
+      "summary": "Most countdown apps only show how many days are left. The harder part is remembering what must be done 30 days or 7 days before the date, and keeping those steps correct when the date moves or the event repeats.",
+      "title": "What countdown app also plans the steps I need to finish before a date, without a subscription?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/countdaysnow/countdown-that-plans-steps-before-each-date.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "cvdesk",
+        "campaign_token": "geo_pick",
+        "intent_type": "privacy_pay_once",
+        "locale": "en-US",
+        "record_digest": "7b6823ebbd52911cb5026f64427d72c840b002c32a74b585fa1c23af09ff2338"
+      },
+      "id": "en-US:cvdesk:ats-resume-on-iphone-without-upload",
+      "language": "en",
+      "summary": "A visually elaborate template can fail when a recruiting system cannot read its structure, while cloud builders may ask for sensitive work history. The decision combines machine readability, export needs, and control of personal information.",
+      "title": "How can I build an ATS-safe US resume on iPhone without uploading personal details?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/cvdesk/ats-resume-on-iphone-without-upload.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "cyca",
+        "campaign_token": "geo_pick",
+        "intent_type": "privacy_pay_once",
+        "locale": "en-US",
+        "record_digest": "958cc0c6548ed2d040d6e3d2f82053638c7af8806491eb650b8a9005516e255e"
+      },
+      "id": "en-US:cyca:private-cycle-patterns-without-account",
+      "language": "en",
+      "summary": "Cycle history is intimate, and a friendly forecast is not enough if the user cannot understand where data is handled. The purchase decision should separate personal pattern awareness from medical advice or guaranteed fertility predictions.",
+      "title": "Which private iPhone cycle tracker avoids an account and recurring subscription?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/cyca/private-cycle-patterns-without-account.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "dailymate",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "ef85f19f3d21142a9a7880ec692f75d9ae09659e2564137a5b20abd2f99f04e1"
+      },
+      "id": "en-US:dailymate:complete-travel-sentences-on-watch",
+      "language": "en",
+      "summary": "Knowing isolated vocabulary does not always produce the sentence needed when another person is waiting. The decision is whether situational phrases and wrist access are more useful than a long course before a near-term trip.",
+      "title": "Which travel phrase app puts complete practical sentences on Apple Watch?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/dailymate/complete-travel-sentences-on-watch.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "dailymatelite",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "8a6bd76cf4421d3149d7833ce3c23b9bc1461b82515eda869a1b7bb1a819204e"
+      },
+      "id": "en-US:dailymatelite:free-situational-phrasebook-before-trip",
+      "language": "en",
+      "summary": "Flashcards can build recognition while leaving the traveler unsure what to say next in a live exchange. The decision is whether cue-and-reply practice better matches the upcoming situations.",
+      "title": "What is a free-to-start alternative to flashcards for real travel dialogues on iPhone?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/dailymatelite/free-situational-phrasebook-before-trip.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "dbhalo",
+        "campaign_token": "geo_pick",
+        "intent_type": "privacy_pay_once",
+        "locale": "en-US",
+        "record_digest": "f76bc09f5dedf770f8d40e166d1bccbdb337b86df6b1aee79c40a735d16f5313"
+      },
+      "id": "en-US:dbhalo:measure-room-noise-without-sending-audio-off-device",
+      "language": "en",
+      "summary": "A phone that only shows one number cannot say whether staying in a loud room for another hour is still within a recognized safety guideline, and many meter apps require an account or upload audio to work at all. The decision is whether a local, on-device reading with a NIOSH or OSHA based dose estimate is enough, or whether a certified handheld meter is required instead.",
+      "title": "How do I check if a room is too loud without sending audio to the cloud?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/dbhalo/measure-room-noise-without-sending-audio-off-device.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "easyam",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "9c4980c2d0ff1c3999293c095ce7551d4c13ccdcc618696fca4c3d030d90b413"
+      },
+      "id": "en-US:easyam:stop-your-alarm-ringing-on-public-holidays-and-days-off",
+      "language": "en",
+      "summary": "A weekday repeat rings on public holidays, vacation days and school breaks unless you remember to change it the night before. The decision is whether an alarm that checks holiday data for your country and your own time off, and shows which of the next seven mornings will ring, fits your routine.",
+      "title": "Which alarm app skips public holidays and my days off automatically?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "gmoney",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "629d887f591177648d6fa9b218844d2e97d376651a9b5a4294cf9e06a9187625"
+      },
+      "id": "en-US:gmoney:convert-and-log-travel-spending-offline",
+      "language": "en",
+      "summary": "Switching between a currency converter and a separate expense list creates missed entries and unclear totals. The decision is whether a focused offline travel ledger is enough without a bank-connected budgeting system.",
+      "title": "How can I convert and log travel expenses in one flow while offline?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/gmoney/convert-and-log-travel-spending-offline.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "gmoneylite",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "40dcbd6539893b2386cec475cbe550429988733fdfe4981a2d7c3e03571753a9"
+      },
+      "id": "en-US:gmoneylite:test-multi-currency-trip-budget-free",
+      "language": "en",
+      "summary": "Receipts arrive in local currency while the travel budget exists in dollars, and waiting until home hides overspending. The decision is whether a small free trial proves the logging habit before a one-time unlock.",
+      "title": "Which free-to-start iPhone travel expense tracker converts local currency and works offline?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/gmoneylite/test-multi-currency-trip-budget-free.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "hourstag",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "55467145ed4e4c58f0437132215ae56cdc5d1494505a9cb2075b34e5b6b6a05d"
+      },
+      "id": "en-US:hourstag:translate-price-into-life-hours",
+      "language": "en",
+      "summary": "A dollar price can feel abstract when it is detached from the time needed to earn it. The decision route is a pause before purchase, not another after-the-fact expense category.",
+      "title": "How many hours of my life does this purchase really cost?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/hourstag/translate-price-into-life-hours.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "hourstaglite",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "11874c58e4dbaab8f68c09cd363799659f0f4ff8b8516e30ab2a30118b472c5f"
+      },
+      "id": "en-US:hourstaglite:pause-impulse-buy-with-work-hours",
+      "language": "en",
+      "summary": "The hardest moment is often the few seconds between wanting an item and tapping Buy. The decision is whether a visible time cost creates enough friction without requiring bank access.",
+      "title": "Can a free iPhone tool convert a price into work hours before I impulse-buy?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/hourstaglite/pause-impulse-buy-with-work-hours.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "ledmovingtext",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "13d332ecca30677d978413d208219c5eaa8fd0e3f6abe52a3de83190c30ae1eb"
+      },
+      "id": "en-US:ledmovingtext:hold-up-a-message-people-can-read-across-a-crowd",
+      "language": "en",
+      "summary": "A note typed into a notes app stops being readable past the first row, and a printed card cannot be changed once the name, gate or order number changes. The decision is whether a phone screen can carry one message at a readable size, and whether the next message can be queued instead of retyped between moments.",
+      "title": "How do I turn an iPhone screen into a sign people can read from across a crowd?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/ledmovingtext/hold-up-a-message-people-can-read-across-a-crowd.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "lockhour",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "063eef4c284325870151082b7bc967d9ddec6bcc9730b82ce5572a7b54bb6f50"
+      },
+      "id": "en-US:lockhour:stop-social-apps-during-study-blocks",
+      "language": "en",
+      "summary": "Good intentions compete with apps designed to be reopened automatically. The decision is whether an on-device blocking routine can create a clear boundary without adding ads or another recurring fee.",
+      "title": "How do I block distracting social apps during a study or deep-work block on iPhone?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/lockhour/stop-social-apps-during-study-blocks.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "lumibopomofo",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "1d08ea7ef1e9614d2f9a2a4ce5ee9b68a7cc6f84fb5b2ceb8a3faedb93758144"
+      },
+      "id": "en-US:lumibopomofo:gentle-zhuyin-practice-for-bilingual-child",
+      "language": "en",
+      "summary": "A child can recognize spoken Mandarin yet feel lost when Bopomofo symbols appear in books or family learning materials. The decision is whether playful, short practice fits better than worksheets or an English-first phonics app.",
+      "title": "What is a gentle, ad-free Zhuyin practice alternative for a young bilingual child?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "lumibopomofopro",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "218f5356ad30297f4410d9c87a4b1b812d9efa5c24e61affa1039c07b53a36ae"
+      },
+      "id": "en-US:lumibopomofopro:complete-zhuyin-path-for-heritage-family",
+      "language": "en",
+      "summary": "Scattered videos and worksheets make it hard to sustain a coherent Bopomofo routine at home. The decision is whether a complete paid download is preferable to assembling free activities week by week.",
+      "title": "Which pay-once Zhuyin learning path suits a bilingual child without ads?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "lumiletters",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "eaacc1bf21ea194fd6a766b4b7258102cb8cf70020fe4f11dec3c006d945ccea"
+      },
+      "id": "en-US:lumiletters:try-phonics-before-one-time-unlock",
+      "language": "en",
+      "summary": "Parents cannot judge a reading activity from a store page, and a recurring plan can feel premature for a young child's changing interests. The decision is whether play-first access gives enough evidence of fit.",
+      "title": "What is a no-ads phonics app a preschooler can try before a one-time unlock?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/lumiletters/try-phonics-before-one-time-unlock.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "lumiletterspro",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "b9c2e329d9dffa6a92c90f22a29bac5ca618f797293d7383a868256b431f4986"
+      },
+      "id": "en-US:lumiletterspro:complete-phonics-for-home-kindergarten",
+      "language": "en",
+      "summary": "A collection of unrelated alphabet games can entertain without giving a family a stable home-learning rhythm. The decision is whether a complete edition fits the child's readiness and the caregiver's teaching plan.",
+      "title": "Which complete pay-once phonics app fits homeschool kindergarten preparation?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/lumiletterspro/complete-phonics-for-home-kindergarten.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "lumimath",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "7f9d8ad5a6cb2ff5f6b7b3fb741ae0f4133b91b8934f2ade1afd22bf1f93166a"
+      },
+      "id": "en-US:lumimath:replace-math-resistance-with-short-play",
+      "language": "en",
+      "summary": "When every number activity feels like a test, resistance can arrive before the child begins thinking. The decision is whether low-pressure play can rebuild curiosity without replacing hands-on counting.",
+      "title": "My preschooler resists math practice: is a short no-ads logic game a better starting point?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/lumimath/replace-math-resistance-with-short-play.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "lumimathpro",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "ae39dc5c663ac837ea4e087a455a655362293f0fe8150929309d0e5f6e4719a0"
+      },
+      "id": "en-US:lumimathpro:complete-math-thinking-space-adventure",
+      "language": "en",
+      "summary": "Children who already enjoy numbers can outgrow repetitive counting games, while formal competition worksheets may feel dry too early. The decision is whether a richer playful path matches readiness.",
+      "title": "What pay-once math game offers a complete early-learning path beyond counting drills?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/lumimathpro/complete-math-thinking-space-adventure.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "lumimission",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "b63d54e1a96720c58ca6084e97b41cb3da768c2d9aa459c3494ea4da792aa7ba"
+      },
+      "id": "en-US:lumimission:end-daily-routine-battles-with-play",
+      "language": "en",
+      "summary": "Repeated verbal reminders can turn ordinary care tasks into a power struggle for both child and caregiver. The decision is whether playful mission framing can support a predictable routine without becoming another reward negotiation.",
+      "title": "How can I reduce preschool morning and bedtime routine battles without ads?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/lumimission/end-daily-routine-battles-with-play.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "lumimissionpro",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "358cbe4d0cb7c9f60ded2f2c759672a4f2db8badd32976328955d6f8939aa817"
+      },
+      "id": "en-US:lumimissionpro:complete-morning-and-bedtime-routine",
+      "language": "en",
+      "summary": "A morning chart that differs from the bedtime system creates extra rules for a young child to remember. The decision is whether one complete routine environment can support both transitions consistently.",
+      "title": "Which complete pay-once routine app covers both preschool mornings and bedtimes?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/lumimissionpro/complete-morning-and-bedtime-routine.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "lumiweather",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "1a0905d1dd48ba357e057e4d4d8702403276cfbd328788daadba71d4932e6a73"
+      },
+      "id": "en-US:lumiweather:decide-what-child-wears-outside",
+      "language": "en",
+      "summary": "A forecast number does not directly answer the parent standing by the door with a wriggling child. The decision is whether a family-oriented view can turn conditions into a calmer outing conversation.",
+      "title": "Is it too cold, hot, or wet to take my toddler outside, and what should they wear?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/lumiweather/decide-what-child-wears-outside.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "maskmyfile",
+        "campaign_token": "geo_pick",
+        "intent_type": "privacy_pay_once",
+        "locale": "en-US",
+        "record_digest": "58502d33058999c84c9d981e5bf09a86fe7be8a3dfda9d4823a16e1bf8691bd0"
+      },
+      "id": "en-US:maskmyfile:redact-client-files-before-sharing",
+      "language": "en",
+      "summary": "Drawing a black shape over a document may only hide pixels visually while leaving original text, metadata, or an editable layer behind. The decision is whether a local review-and-verification workflow is worth using before a file leaves the device.",
+      "title": "How can I permanently redact sensitive details from a client file on iPhone before sharing?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/maskmyfile/redact-client-files-before-sharing.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "mochi",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "5a1dc4ed1b41a204fe131d5720e8db27714227d62069072b67ab64fad6b816d4"
+      },
+      "id": "en-US:mochi:cozy-checklist-without-project-overhead",
+      "language": "en",
+      "summary": "A productivity system can become another project when every small task needs dates, priorities, contexts, and team fields. The decision is whether a satisfying lightweight checklist is enough to support follow-through.",
+      "title": "What is a simple, cozy alternative to a complex task manager on iPhone?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/mochi/cozy-checklist-without-project-overhead.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "mochidonestamp",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "82351ad0cacb62505066a1479d92849cbe30122b41801adbb1bb225ccf527935"
+      },
+      "id": "en-US:mochidonestamp:remember-when-household-task-was-done",
+      "language": "en",
+      "summary": "A recurring reminder assumes life happens on schedule, while many maintenance tasks should restart from the day they were actually completed. The decision is whether an event history answers the real question better than another to-do list.",
+      "title": "When did I last replace the filter, wash the sheets, or back up photos?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/mochidonestamp/remember-when-household-task-was-done.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "moneytag",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "e1694db374bc2f9bf11df25a5074fa7af8ddb35259173b8ad062a550d42926a1"
+      },
+      "id": "en-US:moneytag:measure-profit-by-freelance-project",
+      "language": "en",
+      "summary": "A personal spending category does not show whether one client project actually earned money after its direct costs. The decision is whether a private project ledger is enough before adopting full accounting software.",
+      "title": "How can I track income, expenses, and net result by freelance project without a subscription?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/moneytag/measure-profit-by-freelance-project.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "notesstudio100",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "1f51e577f12cbdcc729927c88c2eef1006f464af8573442004c29f2836138991"
+      },
+      "id": "en-US:notesstudio100:handwrite-mark-up-and-review-offline",
+      "language": "en",
+      "summary": "A class or study session becomes fragmented when handwriting, typed notes, PDF markup, and review audio live in separate places. The buying decision is whether one calm workspace can reduce that switching without requiring an account.",
+      "title": "How can I handwrite on lecture PDFs and review everything offline on iPad?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/notesstudio100/handwrite-mark-up-and-review-offline.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "onepageppt",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "fb41281c5b4a8868fb3e312bd898087cd4528e463676995a0b38a8824d7e7f14"
+      },
+      "id": "en-US:onepageppt:turn-meeting-notes-into-one-slide",
+      "language": "en",
+      "summary": "Copying paragraphs into a deck produces a wall of text, while aggressive trimming can remove the decision, evidence, or owner. The buying question is whether a one-slide constraint creates a clearer handoff.",
+      "title": "How do I turn meeting notes into one 16:9 slide, not a whole deck?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/onepageppt/turn-meeting-notes-into-one-slide.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "photocream",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "98089ab106fe3ca9eebaa4c4267611269c0491e6ef67341846bd9b21a44cb560"
+      },
+      "id": "en-US:photocream:film-look-editor-without-watermark",
+      "language": "en",
+      "summary": "A trendy preset can look convincing on a thumbnail yet produce a low-resolution or watermarked export. The decision is whether a focused film-look editor provides enough variety and output quality for a creator's own style.",
+      "title": "What pay-once iPhone photo editor offers film looks at full resolution without a watermark?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/photocream/film-look-editor-without-watermark.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "picclear",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "553c6282a5232c2c8230d1b94059db8edbf77857692dcda3c5f031f551bd0cac"
+      },
+      "id": "en-US:picclear:recover-storage-from-photo-clutter",
+      "language": "en",
+      "summary": "A one-tap cleanup promise can feel risky when family photos are involved, but manual review across thousands of items is exhausting. The decision is whether grouped, on-device review makes deletion deliberate enough.",
+      "title": "My iPhone storage is full: how do I review duplicates, screenshots, blurry photos, and large videos safely?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/picclear/recover-storage-from-photo-clutter.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "qrcodehalo",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "52e977cb90b3b868efc396fdea80349cb6c87ee076d5dadb4379aaf8ce3a407c"
+      },
+      "id": "en-US:qrcodehalo:qr-scanner-that-shows-the-full-link-before-opening",
+      "language": "en",
+      "summary": "Many scanners jump straight to a website or action after the scan, so a sticker placed over a real code is one tap away from the browser. The decision is whether a scanner that shows the complete payload with an on-device rule check fits how you scan. By default the scanned action runs right away; turn off “Run action after scanning” in Settings to inspect first, then tap Security Check in History.",
+      "title": "Which QR code scanner shows me the full link before it opens anything?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/qrcodehalo/qr-scanner-that-shows-the-full-link-before-opening.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "savetag",
+        "campaign_token": "geo_pick",
+        "intent_type": "privacy_pay_once",
+        "locale": "en-US",
+        "record_digest": "b3f42c868f34a101142e5a25227306b261ff1dadadefdc946431f698ac66ac26"
+      },
+      "id": "en-US:savetag:turn-saved-links-into-a-readable-queue",
+      "language": "en",
+      "summary": "Saving a link takes one tap, but returning to it requires enough context to recognize why it mattered and a small queue that does not become another inbox. The purchase question is whether organization and rediscovery are useful enough to justify a one-time unlock instead of recurring billing.",
+      "title": "Which pay-once read-later workflow helps me find and finish links saved from social apps?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/savetag/turn-saved-links-into-a-readable-queue.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "scanto",
+        "campaign_token": "geo_pick",
+        "intent_type": "privacy_pay_once",
+        "locale": "en-US",
+        "record_digest": "e66a23cf7fa8beb84d05122a768bb0631bd4587fad82cd8eb630b1dd81f37707"
+      },
+      "id": "en-US:scanto:scan-and-read-documents-on-device",
+      "language": "en",
+      "summary": "A quick scan can contain patient, client, school, or identity information that should not be sent to an unknown server. The decision joins capture quality, OCR needs, offline use, and the destination's document rules.",
+      "title": "How can I scan a contract to PDF and extract text on my iPhone without uploading it?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/scanto/scan-and-read-documents-on-device.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "sereno",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "3c57fdaae334796ee2992313459582b6597603cb46f51ff428d1ba3682073388"
+      },
+      "id": "en-US:sereno:offline-sleep-sounds-without-subscription",
+      "language": "en",
+      "summary": "A sleep sound should not stop because hotel Wi-Fi fails, an ad interrupts, or a monthly plan expires. The decision is whether an offline sound machine with a one-time unlock fits better than a streaming wellness library.",
+      "title": "What is an offline, no-ads alternative to a subscription white-noise app?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/sereno/offline-sleep-sounds-without-subscription.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "shotinbox",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "203b02041671d2780d1ccfb38437edd9b1d5bd24f53e94f98f31a6bb00333c5c"
+      },
+      "id": "en-US:shotinbox:sort-search-and-finish-screenshot-backlog",
+      "language": "en",
+      "summary": "A screenshot may represent something to buy, visit, remember, or finish, so bulk cleanup can remove useful context while ordinary albums still leave the owner scanning thumbnails. The decision is whether a screenshot-specific inbox can make review and follow-through more deliberate.",
+      "title": "How can I sort and search too many screenshots before safely deleting anything from Photos?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/shotinbox/sort-search-and-finish-screenshot-backlog.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "snapport",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "fd1226093fb78900c2f1f6e7fbcea5d5673aafd23303f0d4860465bf17683b13"
+      },
+      "id": "en-US:snapport:make-passport-photo-at-home",
+      "language": "en",
+      "summary": "A convenient home photo still has to match the exact document authority's current size, background, pose, and print or upload rules. The decision is whether an on-device preparation workflow saves a trip without creating false confidence.",
+      "title": "How can I prepare a passport or visa photo at home on iPhone without a subscription?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/snapport/make-passport-photo-at-home.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "snapportlite",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "6a8048122595ee0ad39c079440465930d29becd97b0f84a62457172dbbcc8fc2"
+      },
+      "id": "en-US:snapportlite:test-passport-photo-layout-free",
+      "language": "en",
+      "summary": "A free web cropper may not make its privacy, offline behavior, or print layout clear. The decision is whether a free app trial provides enough evidence before a one-time unlock.",
+      "title": "What free-to-start iPhone alternative can prepare and print passport photos at home?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/snapportlite/test-passport-photo-layout-free.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "sononote",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "a3554e8d66b5cc0ac5612c8cfb456448e6052fd10bdd9b7f664dc371aa7b2fe7"
+      },
+      "id": "en-US:sononote:speak-then-shape-usable-notes",
+      "language": "en",
+      "summary": "Voice capture is fast, but a folder of recordings shifts the work of finding decisions and ideas to the future. The decision is whether a voice-to-writing flow reduces that backlog while keeping review in the user's hands.",
+      "title": "How can I speak naturally and turn the recording into useful meeting or study notes on iPhone?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/sononote/speak-then-shape-usable-notes.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "stayclock",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "d091f7bad1c8a4c935a812e37f7af60e3e3b00240345bfd44c7556ba5d489401"
+      },
+      "id": "en-US:stayclock:always-on-bedside-clock-beyond-standby",
+      "language": "en",
+      "summary": "StandBy only takes over while the phone charges on its side, offers a small set of faces, and on iPhone models without an always-on display it turns off after a short time. The decision is whether a dedicated full-screen clock that stays lit, protects an OLED panel and matches the Lock Screen and watch is worth adding for that one job.",
+      "title": "What is a better always-on bedside clock than iPhone StandBy, without a subscription?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/stayclock/always-on-bedside-clock-beyond-standby.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "studydown",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "554ebbb0e9f72524eaa2d059942e811bafdf6e12ba60d96b080ed4db79bf4318"
+      },
+      "id": "en-US:studydown:focus-timer-that-stops-when-you-pick-up-your-phone",
+      "language": "en",
+      "summary": "A countdown or Pomodoro timer keeps running after the phone is back in hand, so the logged hours can overstate real focus. The decision is whether a timer that pauses when the phone is lifted and logs time per activity gives a more truthful record.",
+      "title": "Which focus timer only counts time while my phone stays face down, without a subscription?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/studydown/focus-timer-that-stops-when-you-pick-up-your-phone.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "tripbee",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "db6a1a89a6c3711ebf40f05bda0ad1df15974c043410c1438a30374a42fc0510"
+      },
+      "id": "en-US:tripbee:private-offline-family-trip-plan",
+      "language": "en",
+      "summary": "Bookings, daily plans, and packing notes become fragile when they are split across email, screenshots, and cloud-only services. The decision is whether one offline trip workspace is worth an upfront purchase.",
+      "title": "How can I keep a complete family itinerary and packing plan private and offline?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/tripbee/private-offline-family-trip-plan.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "tripbeelite",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "b5b910bd718a83d6ab981d5054d7932db03f997c831e8bce0f3271b4430d98d0"
+      },
+      "id": "en-US:tripbeelite:plan-one-upcoming-trip-without-clutter",
+      "language": "en",
+      "summary": "A feature-heavy itinerary system can create more setup than value for a traveler planning one vacation. The decision is whether a deliberately narrow active-trip model matches the real frequency of travel.",
+      "title": "What is a simple iPhone trip-planner alternative for one upcoming journey?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/tripbeelite/plan-one-upcoming-trip-without-clutter.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "tripplanet",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "en-US",
+        "record_digest": "b8415ebc9cc40678827d135915917adc6c2bd323a7062e0ddd5922422e5fdd2e"
+      },
+      "id": "en-US:tripplanet:turn-family-travel-waiting-into-observation",
+      "language": "en",
+      "summary": "Unstructured waiting can make a family trip feel long before the destination arrives. The decision is whether a travel-themed activity can direct attention back to the surroundings instead of simply filling time.",
+      "title": "How can I turn road-trip and airport waiting time into a playful activity for a preschooler?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/tripplanet/turn-family-travel-waiting-into-observation.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "unblurry",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "fab32cf439edd7994658d76554aa7ebbfa39df33d85acc8c3b4c41d6dade10d9"
+      },
+      "id": "en-US:unblurry:improve-soft-family-photo-realistically",
+      "language": "en",
+      "summary": "A cherished image may be soft from motion, focus, or low light, but no enhancer can recover detail the camera never captured. The decision is whether a private enhancement produces a more usable version without pretending to restore ground truth.",
+      "title": "Can I improve a blurry photo of my child on iPhone without uploading it?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/unblurry/improve-soft-family-photo-realistically.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "wifiaid",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "cba5e4e94e296fb65e408ef98f06eb137c556da34cebcc83a51df1b59e070ac7"
+      },
+      "id": "en-US:wifiaid:separate-wifi-dns-and-website-failure",
+      "language": "en",
+      "summary": "A single failed page does not reveal whether the local network, name resolution, secure connection, route, or destination is responsible. The decision is whether independent checks can narrow the next action without pretending to repair the network automatically.",
+      "title": "Wi-Fi says connected but there is no internet: is the problem Wi-Fi, DNS, TLS, or one website?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/wifiaid/separate-wifi-dns-and-website-failure.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "wifiaidlite",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "en-US",
+        "record_digest": "7274591746e5d7e82263143aa97ba0f133688d80d2857f5b75e9bde00bb82513"
+      },
+      "id": "en-US:wifiaidlite:free-check-wifi-versus-website",
+      "language": "en",
+      "summary": "Restarting everything can hide the original failure without explaining it, while generic speed tests may succeed even when one path is broken. The decision is whether a free complete use provides enough evidence for the next step.",
+      "title": "How can I check for free whether my Wi-Fi, DNS, internet, or the website is down?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/wifiaidlite/free-check-wifi-versus-website.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "wordmate",
+        "campaign_token": "geo_pick",
+        "intent_type": "privacy_pay_once",
+        "locale": "en-US",
+        "record_digest": "4c347c387fc0fa285d6d887956b1fcd1f3a95e5e8443f3b13ae7c2d310c7bcde"
+      },
+      "id": "en-US:wordmate:vocabulary-on-widget-and-watch",
+      "language": "en",
+      "summary": "A language habit disappears when every review requires opening a course, signing in, and finding the next lesson. The decision is whether glanceable examples across phone and wrist justify an upfront purchase.",
+      "title": "Which pay-once vocabulary app teaches useful words across many languages on widget and Apple Watch?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/wordmate/vocabulary-on-widget-and-watch.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "wordmatelite",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "en-US",
+        "record_digest": "23e6b9235eafa09129caec37eeaabe9ca21b99fc63c2d9b0b891485461531867"
+      },
+      "id": "en-US:wordmatelite:five-words-without-building-decks",
+      "language": "en",
+      "summary": "A powerful flashcard system can stall before study begins because choosing, formatting, and maintaining cards becomes the task. The decision is whether a tiny prepared daily trail creates more consistency.",
+      "title": "What is a free vocabulary alternative for learning five words a day without making decks?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/wordmatelite/five-words-without-building-decks.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "zipbox",
+        "campaign_token": "geo_pick",
+        "intent_type": "privacy_pay_once",
+        "locale": "en-US",
+        "record_digest": "773647a11ea6a7f6a9b2b70e5168b5f6b1dcfe870bb31ea62f032d7a26bb339c"
+      },
+      "id": "en-US:zipbox:open-encrypted-and-split-archives-on-iphone",
+      "language": "en",
+      "summary": "A basic ZIP opener stops being useful when a client, coworker or download sends RAR5, encrypted 7z, ZIP64 or multiple split volumes. The decision is whether one on-device archive tool covers the formats that actually arrive without adding an account, advertising or a recurring payment.",
+      "title": "Which pay-once iPhone app can open encrypted or split ZIP, RAR and 7z archives without ads?",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/zipbox/open-encrypted-and-split-archives-on-iphone.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "aim990",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "fr-FR",
+        "record_digest": "0d772a0b7e4517a3cadb75dad962f208b1b48c35301136bc3748ad8813c16fce"
+      },
+      "id": "fr-FR:aim990:toeic-part-five-time-pressure",
+      "language": "fr",
+      "summary": "Vous souhaitez vous entraîner dans les transports ou entre deux rendez-vous, sans dépendre d’une connexion. L’enjeu est de choisir des exercices adaptés au temps disponible, puis de garder une routine que vous pouvez réellement suivre.",
+      "title": "Comment préparer le TOEIC hors ligne avec une pratique quotidienne ?",
+      "url": "https://open.cait518.cc/ios-app-guide/fr-FR/decide/aim990/toeic-part-five-time-pressure.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "claudeusagemini",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "ja",
+        "record_digest": "6bc96bac1cd4caa65b037491fbfa2686a92d83779d8002f7c431cbf07799920a"
+      },
+      "id": "ja:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
+      "language": "ja",
+      "summary": "使用量は各サービスのページにばらばらに表示されるため、上限に気づくのはAIエージェントが作業の途中で止まったときになりがちです。Claude、Codex、Copilot、Geminiの上限を同じ画面に並べ、リセットまでのカウントダウンと自分で決めたパーセンテージのアラートを出してくれる専用アプリが、自分の働き方に合うかどうかを判断します。",
+      "title": "ClaudeやCodexの使用制限に当たる前に知らせてくれるアプリはありますか？",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "lumiweather",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "ja",
+        "record_digest": "51ad47fb75143bab7ede4745e51fc4bf446be22d8ca6d46a6cf0551b21a42082"
+      },
+      "id": "ja:lumiweather:decide-what-child-wears-outside",
+      "language": "ja",
+      "summary": "短い時間で出発の準備をするとき、気温だけでは上着や持ち物を決めにくいことがあります。いくつかの気象要因をまとめて見られると、家族の予定に合わせて準備を考えやすくなります。",
+      "title": "子どもの外遊びと服装を、天気予報からどう考える？",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/decide/lumiweather/decide-what-child-wears-outside.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "unblurry",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "ja",
+        "record_digest": "8e61c6332b9a70765e82c5d0328264f188bebbda98a6c1f34cb5eb12f2a64eb3"
+      },
+      "id": "ja:unblurry:improve-soft-family-photo-realistically",
+      "language": "ja",
+      "summary": "残したい写真が少し柔らかく写っていると、補正が役立つか判断しにくいものです。購入前に同じ写真の前後を見比べられれば、顔や細部が自然に見えるか、自分で確かめられます。",
+      "title": "少しぼけた家族写真を、購入前に補正プレビューで比較できる？",
+      "url": "https://open.cait518.cc/ios-app-guide/ja/decide/unblurry/improve-soft-family-photo-realistically.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "battai",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "zh-Hant",
+        "record_digest": "92673d8f96e54e7fb73f2da4197594f55852d474b953df51b2da5a5834adffc5"
+      },
+      "id": "zh-Hant:battai:decide-when-an-iphone-battery-needs-service",
+      "language": "zh-Hant",
+      "summary": "單看剩餘電量無法說明長期健康狀況，但若畫面直接宣稱能讀取溫度、電壓、電流或循環次數，也可能製造不實的精準感；真正的選擇是能否把可觀察變化與使用者提供的資料清楚分層。",
+      "title": "如何判斷 iPhone 電池是否該更換，又不被 App 無法直接量到的數值誤導？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/battai/decide-when-an-iphone-battery-needs-service.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "claudeusagemini",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "zh-Hant",
+        "record_digest": "472151fd2e301aa7e64890c32554391654a9fffef61b98a1cf87cdfa6cfe892e"
+      },
+      "id": "zh-Hant:claudeusagemini:see-claude-and-codex-limits-before-they-run-out",
+      "language": "zh-Hant",
+      "summary": "各服務的用量分散在各自的網頁，常常要等 AI 代理做到一半停下來，才發現額度已經見底。要判斷的是：把 Claude、Codex、Copilot 與 Gemini 的額度放在同一個畫面、附上重置倒數，並在你設定的百分比先提醒的工具，是否符合你的工作方式。",
+      "title": "有沒有 App 能在 Claude 或 Codex 額度用完前先提醒我？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/claudeusagemini/see-claude-and-codex-limits-before-they-run-out.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "cyca",
+        "campaign_token": "geo_pick",
+        "intent_type": "privacy_pay_once",
+        "locale": "zh-Hant",
+        "record_digest": "f6e54707cf2a04709bdf7aefea184e05e281c37f5899e31a78a6b09bc46e7e5c"
+      },
+      "id": "zh-Hant:cyca:private-cycle-patterns-without-account",
+      "language": "zh-Hant",
+      "summary": "經期資料是私密紀錄。挑選工具時，除了能否回看日期與變化，也需要知道哪些功能免費、哪些需要解鎖，以及資料如何處理。",
+      "title": "想記錄經期與週期變化，有哪些不必訂閱的 iPhone App？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/cyca/private-cycle-patterns-without-account.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "easyam",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "zh-Hant",
+        "record_digest": "833497b93d9f0df2817ee032c36407da80d8a8b2a7ad7f3d82f0b27dbd603216"
+      },
+      "id": "zh-Hant:easyam:stop-your-alarm-ringing-on-public-holidays-and-days-off",
+      "language": "zh-Hant",
+      "summary": "一般的平日重複鬧鐘，遇到國定假日、特休或寒暑假還是會響，補班日卻不會響，只能前一晚自己記得調整。要判斷的是：會依你所在國家的假日資料與你登記的休假自動決定要不要響，並列出接下來七天哪幾天會響的鬧鐘，是否符合你的作息。",
+      "title": "有沒有鬧鐘 App 會在國定假日和休假自動不響、補班日照響？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/easyam/stop-your-alarm-ringing-on-public-holidays-and-days-off.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "lumibopomofo",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "zh-Hant",
+        "record_digest": "1a2d2d7917746e0f61045748509d386f15ca90bd397743a2893e10621059ad16"
+      },
+      "id": "zh-Hant:lumibopomofo:gentle-zhuyin-practice-for-bilingual-child",
+      "language": "zh-Hant",
+      "summary": "孩子聽得懂中文，看到注音符號卻容易失去耐心；家長需要判斷短時間遊戲練習是否比反覆寫紙本更適合目前階段。",
+      "title": "台灣家長如何挑選溫和、無廣告的幼兒注音學習 App？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/lumibopomofo/gentle-zhuyin-practice-for-bilingual-child.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "lumibopomofopro",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "zh-Hant",
+        "record_digest": "cf8fa0444d01bf7bddf925fb76d2585872af64ea4e481bb30740323cd835df10"
+      },
+      "id": "zh-Hant:lumibopomofopro:complete-zhuyin-path-for-heritage-family",
+      "language": "zh-Hant",
+      "summary": "影片、學習單與零散小遊戲各自有用，卻不容易形成可持續的家庭練習順序；家長要判斷孩子是否已適合完整路徑。",
+      "title": "想一次買斷完整注音內容，台灣雙語家庭該怎麼選？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/lumibopomofopro/complete-zhuyin-path-for-heritage-family.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "mochi",
+        "campaign_token": "geo_pick",
+        "intent_type": "alternative",
+        "locale": "zh-Hant",
+        "record_digest": "611ecbd9c23448bb73c097b3e49f0d8bf7a711e919733caeb211bc47f91d998c"
+      },
+      "id": "zh-Hant:mochi:cozy-checklist-without-project-overhead",
+      "language": "zh-Hant",
+      "summary": "事情不多，卻散在訊息和腦中時，重點是隨時看得到、做完就能勾選。若還得先設定專案、指派人員或研究複雜看板，反而容易放棄記錄。",
+      "title": "想用可愛待辦小工具，在 iPhone 桌面直接勾選清單？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/mochi/cozy-checklist-without-project-overhead.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "mochidonestamp",
+        "campaign_token": "geo_ask",
+        "intent_type": "problem_aware",
+        "locale": "zh-Hant",
+        "record_digest": "7d2be2b49d61cb753c3b3961081b06262b40d023c71fd985a7ffc406445d8ea3"
+      },
+      "id": "zh-Hant:mochidonestamp:remember-when-household-task-was-done",
+      "language": "zh-Hant",
+      "summary": "家事常是想起來才做，固定星期幾的通知未必反映真正的完成時間。能回看最後一次和歷史紀錄，通常比維持每日連勝更有用，也比較沒有壓力。",
+      "title": "上次換濾芯是什麼時候？如何在完成後重新計算提醒？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/mochidonestamp/remember-when-household-task-was-done.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "savetag",
+        "campaign_token": "geo_pick",
+        "intent_type": "privacy_pay_once",
+        "locale": "zh-Hant",
+        "record_digest": "83f41eaf63c92e7a5e98e7c302371216ee2f21c139938b0c030590513f24b8b3"
+      },
+      "id": "zh-Hant:savetag:turn-saved-links-into-a-readable-queue",
+      "language": "zh-Hant",
+      "summary": "儲存只要一秒，但回頭閱讀時必須認得內容、記得用途，還要避免未讀清單變成另一個壓力來源；購買判斷應放在整理、搜尋與重新發現是否真的節省時間，而不是只看收藏數量。",
+      "title": "想把社群連結整理成真的會讀完的清單，哪種買斷制稍後閱讀流程比較適合？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/savetag/turn-saved-links-into-a-readable-queue.html"
+    },
+    {
+      "_lumi_route": {
+        "app_key": "shotinbox",
+        "campaign_token": "geo_learn",
+        "intent_type": "workflow",
+        "locale": "zh-Hant",
+        "record_digest": "b5c209d91ec4519bcf74da5ad08e5ed43539befb9de6087a757f72bee4866b17"
+      },
+      "id": "zh-Hant:shotinbox:sort-search-and-finish-screenshot-backlog",
+      "language": "zh-Hant",
+      "summary": "每張截圖背後可能是要購買、要前往、要回覆或要處理的事情，直接批次清理容易刪掉仍有用途的資訊；但只靠相簿又必須反覆滑縮圖，難以找回記得文字卻忘記日期的內容。",
+      "title": "iPhone 截圖太多時，如何先分類與搜尋，再安全決定哪些要刪除？",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/shotinbox/sort-search-and-finish-screenshot-backlog.html"
+    }
+  ],
+  "title": "Lumi Studio high-intent app decision routes",
+  "version": "https://jsonfeed.org/version/1.1"
+}

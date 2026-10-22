@@ -1,0 +1,1113 @@
+#!/usr/bin/env python3
+"""Tests for strict IndexNow sitemap delivery."""
+
+from __future__ import annotations
+
+import importlib.util
+import io
+import json
+import os
+from datetime import datetime, timezone
+from pathlib import Path
+import tempfile
+import unittest
+from unittest import mock
+import urllib.error
+from types import SimpleNamespace
+
+
+MODULE_PATH = Path(__file__).resolve().parents[1] / "indexnow_submit.py"
+
+
+def _site_workflow(name: str) -> str:
+    """Read a pages-repo workflow from either engine layout.
+
+    Cloud runs execute this file as ``<site>/_engine/geo/tests/...`` so the
+    workflows sit three levels up; the 00_GrowthEngine checkout keeps the site
+    in ``geo/pages`` — which is also the path the GEO workflow symlinks
+    ``_engine/geo/pages`` to. Probing both keeps one copy of this file valid
+    on both sides of the mirror.
+    """
+    here = Path(__file__).resolve()
+    configured = os.environ.get("GEO_GUIDE_ROOT", "").strip()
+    candidates = (
+        *((Path(configured).expanduser().resolve(),) if configured else ()),
+        here.parents[3],
+        here.parents[1] / "pages",
+    )
+    for candidate in candidates:
+        path = candidate / ".github" / "workflows" / name
+        if path.is_file():
+            return path.read_text(encoding="utf-8")
+    raise unittest.SkipTest(f"{name} is not reachable from this checkout")
+SPEC = importlib.util.spec_from_file_location("indexnow_submit", MODULE_PATH)
+indexnow = importlib.util.module_from_spec(SPEC)
+assert SPEC and SPEC.loader
+SPEC.loader.exec_module(indexnow)
+
+
+def sitemap(*urls: str) -> str:
+    entries = "".join(f"<url><loc>{url}</loc></url>" for url in urls)
+    return f'<?xml version="1.0"?><urlset>{entries}</urlset>'
+
+
+class Response:
+    def __init__(self, status: int = 200, body: bytes = b"") -> None:
+        self.status = status
+        self.body = body
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *_args):
+        return False
+
+    def read(self, _limit: int) -> bytes:
+        return self.body
+
+
+class IndexNowTests(unittest.TestCase):
+    def test_reads_every_unique_subsitemap_url(self) -> None:
+        site = "https://example.com/apps"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "sitemap_index.xml").write_text(
+                sitemap(
+                    f"{site}/sitemap-a.xml",
+                    f"{site}/sitemap-b.xml",
+                ),
+                encoding="utf-8",
+            )
+            (root / "sitemap-a.xml").write_text(
+                sitemap(f"{site}/", f"{site}/one.html"),
+                encoding="utf-8",
+            )
+            (root / "sitemap-b.xml").write_text(
+                sitemap(f"{site}/one.html", f"{site}/two.html"),
+                encoding="utf-8",
+            )
+            urls = indexnow.read_urls(root, site)
+        self.assertEqual(
+            [f"{site}/", f"{site}/one.html", f"{site}/two.html"],
+            urls,
+        )
+
+    def test_reads_localized_sitemaps_even_when_not_in_index(self) -> None:
+        site = "https://example.com/apps"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "sitemap_index.xml").write_text(
+                sitemap(f"{site}/sitemap.xml"),
+                encoding="utf-8",
+            )
+            (root / "sitemap.xml").write_text(
+                sitemap(f"{site}/root.html"),
+                encoding="utf-8",
+            )
+            localized = root / "ja"
+            localized.mkdir()
+            (localized / "sitemap.xml").write_text(
+                sitemap(f"{site}/ja/localized.html"),
+                encoding="utf-8",
+            )
+            urls = indexnow.read_urls(root, site)
+        self.assertEqual(
+            [f"{site}/root.html", f"{site}/ja/localized.html"],
+            urls,
+        )
+
+    def test_collects_registered_decision_route_sitemap_inventory(self) -> None:
+        site = "https://example.com/apps"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            decision_urls = [
+                f"{site}/apps/app-{number}/decision/l/en-US/index.html"
+                for number in range(1600)
+            ]
+            asset_urls = [
+                f"{site}/data/app-install-decision-routes.json",
+                f"{site}/data/app-install-decision-routes.schema.json",
+                *[
+                    f"{site}/data/app-install-decision-routes/locales/"
+                    f"locale-{number}.json"
+                    for number in range(50)
+                ],
+            ]
+            (root / "sitemap_index.xml").write_text(
+                sitemap(
+                    f"{site}/sitemap.xml",
+                    f"{site}/sitemap_app_install_decisions.xml",
+                ),
+                encoding="utf-8",
+            )
+            baseline = [
+                f"{site}/existing/{number}.html" for number in range(14_891)
+            ]
+            (root / "sitemap.xml").write_text(
+                sitemap(*baseline),
+                encoding="utf-8",
+            )
+            (root / "sitemap_app_install_decisions.xml").write_text(
+                sitemap(*decision_urls, *asset_urls),
+                encoding="utf-8",
+            )
+            urls = indexnow.read_urls(root, site)
+        self.assertEqual(14_891 + 1_600 + 52, len(urls))
+        self.assertEqual(1_600, sum("/decision/l/" in url for url in urls))
+        self.assertEqual(
+            52,
+            sum(
+                "app-install-decision-routes" in url and "/decision/l/" not in url
+                for url in urls
+            ),
+        )
+        self.assertEqual(decision_urls[0], urls[14_891])
+        self.assertEqual(asset_urls[-1], urls[-1])
+
+    def test_rejects_foreign_or_tracking_urls(self) -> None:
+        site = "https://example.com/apps"
+        for url in (
+            "https://other.example/apps/one.html",
+            "https://example.com/apps/one.html?tracking=1",
+            "https://example.com/outside.html",
+        ):
+            with self.subTest(url=url), self.assertRaises(ValueError):
+                indexnow.validate_public_url(url, site)
+
+    def test_excludes_and_reports_same_host_url_outside_key_scope(self) -> None:
+        site = "https://example.com/apps"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "sitemap.xml").write_text(
+                sitemap(
+                    f"{site}/one.html",
+                    "https://example.com/.well-known/resourcesync",
+                ),
+                encoding="utf-8",
+            )
+            output = io.StringIO()
+            with mock.patch("sys.stdout", output):
+                urls = indexnow.read_urls(root, site)
+        self.assertEqual([f"{site}/one.html"], urls)
+        self.assertIn("excluded_out_of_scope=1", output.getvalue())
+
+    def test_foreign_sitemap_url_still_fails(self) -> None:
+        site = "https://example.com/apps"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "sitemap.xml").write_text(
+                sitemap(
+                    f"{site}/one.html",
+                    "https://other.example/apps/two.html",
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaises(ValueError):
+                indexnow.read_urls(root, site)
+
+    def test_reads_net_change_set_from_first_parent_baseline(self) -> None:
+        runner = mock.Mock(
+            side_effect=[
+                SimpleNamespace(stdout="base-sha\n"),
+                SimpleNamespace(
+                    stdout=(
+                        "one.html\0"
+                        "nested/two.html\0"
+                        "one.html\0"
+                        "gone.html\0"
+                    )
+                ),
+            ]
+        )
+        baseline, paths = indexnow.git_change_set(
+            Path("/tmp/site"),
+            "25 hours ago",
+            runner=runner,
+        )
+        self.assertEqual("base-sha", baseline)
+        self.assertEqual(
+            [
+                Path("gone.html"),
+                Path("nested/two.html"),
+                Path("one.html"),
+            ],
+            paths,
+        )
+        baseline_command = runner.call_args_list[0].args[0]
+        self.assertIn("--first-parent", baseline_command)
+        self.assertIn("--before=25 hours ago", baseline_command)
+        diff_command = runner.call_args_list[1].args[0]
+        self.assertIn("base-sha..HEAD", diff_command)
+        self.assertIn("--no-renames", diff_command)
+
+    def test_changed_urls_include_only_indexed_files_and_public_deletions(
+        self,
+    ) -> None:
+        site = "https://example.com/apps"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "nested").mkdir()
+            (root / ".well-known").mkdir()
+            (root / "one.html").write_text("one", encoding="utf-8")
+            (root / ".well-known" / "api-catalog").write_text(
+                "catalog",
+                encoding="utf-8",
+            )
+            (root / "nested" / "index.html").write_text(
+                "nested",
+                encoding="utf-8",
+            )
+            (root / "unlisted.html").write_text("private", encoding="utf-8")
+            (root / "sitemap.xml").write_text(
+                sitemap(
+                    f"{site}/.well-known/api-catalog",
+                    f"{site}/one.html",
+                    f"{site}/nested/",
+                ),
+                encoding="utf-8",
+            )
+            urls = indexnow.changed_urls(
+                root,
+                site,
+                [
+                    Path(".github/workflows/deploy.yml"),
+                    Path("_engine/private.py"),
+                    Path(".well-known/api-catalog"),
+                    Path("archive.zip"),
+                    Path("gone.jsonld"),
+                    Path("nested/index.html"),
+                    Path("one.html"),
+                    Path("styles.css"),
+                    Path("unlisted.html"),
+                ],
+                previous_urls=[
+                    f"{site}/archive.zip",
+                    f"{site}/gone.jsonld",
+                ],
+            )
+        self.assertEqual(
+            [
+                f"{site}/.well-known/api-catalog",
+                f"{site}/archive.zip",
+                f"{site}/gone.jsonld",
+                f"{site}/nested/",
+                f"{site}/one.html",
+            ],
+            urls,
+        )
+
+    def test_incremental_reader_reports_empty_public_change_set(self) -> None:
+        site = "https://example.com/apps"
+        runner = mock.Mock(
+            side_effect=[
+                SimpleNamespace(stdout="base-sha\n"),
+                SimpleNamespace(stdout="_engine/private.py\0"),
+                SimpleNamespace(
+                    stdout=f"<loc>{site}/one.html</loc>\n",
+                    stderr="",
+                    returncode=0,
+                    args=["git", "grep"],
+                ),
+            ]
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "sitemap.xml").write_text(
+                sitemap(f"{site}/one.html"),
+                encoding="utf-8",
+            )
+            urls = indexnow.read_changed_urls(
+                root,
+                site,
+                "25 hours ago",
+                runner=runner,
+            )
+        self.assertEqual([], urls)
+
+    def test_successful_sha_is_durable_and_same_sha_replay_is_zero(self) -> None:
+        site = "https://example.com/apps"
+        sha = "a" * 40
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            key_file = root / "indexnow-key.txt"
+            key_file.write_text("valid-key-123", encoding="utf-8")
+            state_file = root / "state" / "last-submitted-sha"
+            runner = mock.Mock(
+                return_value=SimpleNamespace(stdout=f"{sha}\n")
+            )
+            sender = mock.Mock()
+            with mock.patch.object(
+                indexnow,
+                "read_changed_urls",
+                return_value=[f"{site}/one.html"],
+            ):
+                accepted = indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    state_file=state_file,
+                    runner=runner,
+                    sender=sender,
+                )
+            self.assertEqual(1, accepted)
+            self.assertEqual(2, sender.call_count)
+            self.assertEqual(sha, state_file.read_text(encoding="utf-8").strip())
+
+            sender.reset_mock()
+            output = io.StringIO()
+            with mock.patch("sys.stdout", output):
+                accepted = indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    state_file=state_file,
+                    runner=runner,
+                    sender=sender,
+                )
+        self.assertEqual(0, accepted)
+        sender.assert_not_called()
+        self.assertIn("changed_public_urls=0", output.getvalue())
+        self.assertIn("nothing to submit", output.getvalue())
+
+    def test_full_refresh_is_never_gated_by_the_content_state(self) -> None:
+        site = "https://example.com/apps"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "one.html").write_text(
+                "<html><body>first</body></html>",
+                encoding="utf-8",
+            )
+            (root / "sitemap.xml").write_text(
+                sitemap(f"{site}/one.html"),
+                encoding="utf-8",
+            )
+            key_file = root / "indexnow-key.txt"
+            key_file.write_text("valid-key-123", encoding="utf-8")
+            content_state = root / "state" / "content-digests.json"
+            indexnow.write_content_state(
+                content_state,
+                {
+                    "one.html": indexnow.indexable_content_digest(
+                        root / "one.html"
+                    )
+                },
+            )
+            sender = mock.Mock()
+            accepted = indexnow.run(
+                root,
+                site,
+                key_file,
+                content_state_file=content_state,
+                sender=sender,
+            )
+        self.assertEqual(1, accepted)
+        self.assertEqual(2, sender.call_count)
+
+    def test_content_gate_ignores_head_churn_but_keeps_real_edits(self) -> None:
+        site = "https://example.com/apps"
+        page = (
+            '<html><head><title>T</title>'
+            '<meta name="description" content="D">'
+            '<link rel="canonical" href="https://example.com/apps/one.html">'
+            "{head}</head><body><p>{body}</p></body></html>"
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            target = root / "one.html"
+            target.write_text(page.format(head="", body="Hello"), encoding="utf-8")
+            first = indexnow.indexable_content_digest(target)
+            target.write_text(
+                page.format(
+                    head=(
+                        '<link rel="alternate" hreflang="de" '
+                        'href="https://example.com/apps/de/one.html">'
+                        '<script>var built="2026-09-07";</script>'
+                    ),
+                    body="Hello",
+                ),
+                encoding="utf-8",
+            )
+            self.assertEqual(first, indexnow.indexable_content_digest(target))
+            target.write_text(
+                page.format(head="", body="Hello again"),
+                encoding="utf-8",
+            )
+            self.assertNotEqual(first, indexnow.indexable_content_digest(target))
+
+    def test_content_gate_keeps_new_and_deleted_urls(self) -> None:
+        site = "https://example.com/apps"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "kept.html").write_text(
+                "<html><body>same</body></html>",
+                encoding="utf-8",
+            )
+            (root / "edited.html").write_text(
+                "<html><body>new words</body></html>",
+                encoding="utf-8",
+            )
+            unchanged = indexnow.indexable_content_digest(root / "kept.html")
+            urls = [
+                f"{site}/kept.html",
+                f"{site}/edited.html",
+                f"{site}/gone.html",
+            ]
+            selected, measured = indexnow.select_content_changed_urls(
+                root,
+                site,
+                urls,
+                {"kept.html": unchanged, "edited.html": "0" * 64},
+            )
+        self.assertEqual(
+            [f"{site}/edited.html", f"{site}/gone.html"],
+            selected,
+        )
+        self.assertEqual({"kept.html", "edited.html"}, set(measured))
+
+    def test_result_image_source_alt_srcset_and_pixel_hash_are_real_changes(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            target = root / "result.html"
+            original = (
+                '<html><head><title>Published result</title></head><body>'
+                '<img src="https://images.example/result.jpg" alt="A filled note page" '
+                f'data-result-image-sha256="{"a" * 64}" '
+                'width="295" height="640" loading="lazy"></body></html>'
+            )
+            target.write_text(original, encoding="utf-8")
+            baseline = indexnow.indexable_content_digest(target)
+            for changed in (
+                original.replace("result.jpg", "updated-result.jpg"),
+                original.replace("A filled note page", "A handwritten note and diagram"),
+                original.replace('width="295"', 'srcset="https://images.example/result-2x.jpg 2x" width="295"'),
+                original.replace("a" * 64, "b" * 64),
+            ):
+                with self.subTest(markup=changed):
+                    target.write_text(changed, encoding="utf-8")
+                    selected, measured = indexnow.select_content_changed_urls(
+                        root, "https://example.com", ["https://example.com/result.html"],
+                        {"result.html": baseline},
+                    )
+                    self.assertEqual(["https://example.com/result.html"], selected)
+                    self.assertNotEqual(baseline, measured["result.html"])
+            target.write_text(
+                original.replace('loading="lazy"', 'loading="eager" style="border:0"')
+                .replace('width="295"', 'width="590"'), encoding="utf-8",
+            )
+            self.assertEqual(baseline, indexnow.indexable_content_digest(target))
+
+    def test_result_image_attribute_order_and_encoding_are_normalized_once(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            target = Path(directory) / "result.html"
+            first = f'<img src="result.jpg" alt="Notes &amp; sketches" data-result-image-sha256="{"a" * 64}">'
+            target.write_text(first, encoding="utf-8")
+            baseline = indexnow.indexable_content_digest(target)
+            target.write_text(
+                f"<IMG data-result-image-sha256='{'a' * 64}' alt='Notes &#38; sketches' src='result.jpg'>",
+                encoding="utf-8",
+            )
+            self.assertEqual(baseline, indexnow.indexable_content_digest(target))
+            target.write_text(first.replace("&amp;", "&amp;amp;"), encoding="utf-8")
+            self.assertNotEqual(baseline, indexnow.indexable_content_digest(target))
+
+    def test_content_state_round_trips_and_rejects_foreign_documents(
+        self,
+    ) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "state" / "content-digests.json"
+            self.assertEqual({}, indexnow.read_content_state(path))
+            indexnow.write_content_state(path, {"one.html": "a" * 64})
+            self.assertEqual(
+                {"one.html": "a" * 64},
+                indexnow.read_content_state(path),
+            )
+            path.write_text('{"version": 1}', encoding="utf-8")
+            with self.assertRaises(ValueError):
+                indexnow.read_content_state(path)
+            with self.assertRaises(ValueError):
+                indexnow.write_content_state(path, {"one.html": "nope"})
+
+    def test_run_suppresses_unchanged_urls_on_the_second_pass(self) -> None:
+        site = "https://example.com/apps"
+        sha = "b" * 40
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "one.html").write_text(
+                "<html><body>first</body></html>",
+                encoding="utf-8",
+            )
+            key_file = root / "indexnow-key.txt"
+            key_file.write_text("valid-key-123", encoding="utf-8")
+            content_state = root / "state" / "content-digests.json"
+            runner = mock.Mock(return_value=SimpleNamespace(stdout=f"{sha}\n"))
+            sender = mock.Mock()
+            with mock.patch.object(
+                indexnow,
+                "read_changed_urls",
+                return_value=[f"{site}/one.html"],
+            ):
+                first = indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    content_state_file=content_state,
+                    runner=runner,
+                    sender=sender,
+                )
+                self.assertEqual(1, first)
+                sender.reset_mock()
+                output = io.StringIO()
+                with mock.patch("sys.stdout", output):
+                    second = indexnow.run(
+                        root,
+                        site,
+                        key_file,
+                        git_since="25 hours ago",
+                        content_state_file=content_state,
+                        runner=runner,
+                        sender=sender,
+                    )
+                self.assertEqual(0, second)
+                sender.assert_not_called()
+                self.assertIn("unchanged_suppressed=1", output.getvalue())
+
+                (root / "one.html").write_text(
+                    "<html><body>second</body></html>",
+                    encoding="utf-8",
+                )
+                sender.reset_mock()
+                third = indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    content_state_file=content_state,
+                    runner=runner,
+                    sender=sender,
+                )
+        self.assertEqual(1, third)
+        self.assertEqual(2, sender.call_count)
+
+    def test_successful_delivery_writes_owner_only_acceptance_receipt(self) -> None:
+        site = "https://example.com/apps"
+        sha = "c" * 40
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            key_file = root / "indexnow-key.txt"
+            key_file.write_text("valid-key-123", encoding="utf-8")
+            catalog = (
+                root / "data" / "verified-ios-app-finder-catalog.json"
+            )
+            catalog.parent.mkdir()
+            catalog.write_text(
+                json.dumps(
+                    {
+                        "apps": [
+                            {
+                                "key": "sample",
+                                "app_store_id": "1234567890",
+                                "verified_live": True,
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            urls = [
+                f"{site}/en-US/sample.html",
+                f"{site}/ja/sample.html",
+            ]
+            state_file = root / "private" / "last-submitted-sha"
+            receipt_file = root / "private" / "accepted-receipt.json"
+            fixed_time = datetime(2026, 9, 2, 12, tzinfo=timezone.utc)
+            with (
+                mock.patch.object(
+                    indexnow,
+                    "OFFICIAL_LOCALES",
+                    ("en-US", "ja"),
+                ),
+                mock.patch.object(
+                    indexnow,
+                    "read_changed_urls",
+                    return_value=urls,
+                ),
+            ):
+                accepted = indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    state_file=state_file,
+                    receipt_file=receipt_file,
+                    runner=mock.Mock(
+                        return_value=SimpleNamespace(stdout=f"{sha}\n")
+                    ),
+                    sender=mock.Mock(return_value=202),
+                    clock=lambda: fixed_time,
+                )
+
+            self.assertEqual(2, accepted)
+            receipt = json.loads(receipt_file.read_text(encoding="utf-8"))
+            self.assertEqual(
+                "accepted_by_endpoints_not_indexed",
+                receipt["semantics"],
+            )
+            self.assertEqual(sha, receipt["pages_sha"])
+            self.assertEqual("accepted", receipt["disposition"])
+            self.assertEqual(2, receipt["url_count"])
+            self.assertEqual(2, len(receipt["endpoints"]))
+            self.assertTrue(
+                all(
+                    endpoint["batches"][0]["http_status"] == 202
+                    for endpoint in receipt["endpoints"]
+                )
+            )
+            self.assertEqual(
+                [
+                    {
+                        "key": "sample",
+                        "app_store_id": "1234567890",
+                        "required_url_count": 2,
+                        "accepted_url_count": 2,
+                        "complete": True,
+                        "required_url_set_sha256": indexnow.url_set_digest(urls),
+                        "accepted_url_set_sha256": indexnow.url_set_digest(urls),
+                    }
+                ],
+                receipt["app_acceptances"],
+            )
+            self.assertEqual(0o600, receipt_file.stat().st_mode & 0o777)
+            self.assertEqual(0o700, receipt_file.parent.stat().st_mode & 0o777)
+
+            next_sha = "e" * 40
+            next_time = datetime(2026, 9, 2, 13, tzinfo=timezone.utc)
+            with mock.patch.object(
+                indexnow,
+                "read_changed_urls",
+                return_value=[],
+            ):
+                accepted = indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    state_file=state_file,
+                    receipt_file=receipt_file,
+                    runner=mock.Mock(
+                        return_value=SimpleNamespace(stdout=f"{next_sha}\n")
+                    ),
+                    sender=mock.Mock(),
+                    clock=lambda: next_time,
+                )
+            self.assertEqual(0, accepted)
+            carried = json.loads(receipt_file.read_text(encoding="utf-8"))
+            self.assertEqual(sha, carried["pages_sha"])
+            self.assertEqual(next_sha, carried["processed_through_sha"])
+            self.assertEqual(
+                receipt["app_acceptances"],
+                carried["app_acceptances"],
+            )
+
+    def test_failed_delivery_does_not_replace_existing_receipt(self) -> None:
+        site = "https://example.com/apps"
+        sha = "d" * 40
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            key_file = root / "indexnow-key.txt"
+            key_file.write_text("valid-key-123", encoding="utf-8")
+            receipt_file = root / "receipt.json"
+            receipt_file.write_text('{"previous":true}\n', encoding="utf-8")
+            with (
+                mock.patch.object(
+                    indexnow,
+                    "read_changed_urls",
+                    return_value=[f"{site}/en-US/sample.html"],
+                ),
+                self.assertRaises(indexnow.SubmissionError),
+            ):
+                indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    receipt_file=receipt_file,
+                    runner=mock.Mock(
+                        return_value=SimpleNamespace(stdout=f"{sha}\n")
+                    ),
+                    sender=mock.Mock(
+                        side_effect=indexnow.SubmissionError("offline")
+                    ),
+                )
+            self.assertEqual(
+                {"previous": True},
+                json.loads(receipt_file.read_text(encoding="utf-8")),
+            )
+
+    def test_durable_sha_replaces_the_time_window_baseline(self) -> None:
+        site = "https://example.com/apps"
+        previous_sha = "a" * 40
+        current_sha = "b" * 40
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            state_file = root / "state" / "last-submitted-sha"
+            indexnow.write_last_submitted_sha(state_file, previous_sha)
+            reader = mock.Mock(return_value=[])
+            runner = mock.Mock(
+                return_value=SimpleNamespace(stdout=f"{current_sha}\n")
+            )
+            with mock.patch.object(indexnow, "read_changed_urls", reader):
+                accepted = indexnow.run(
+                    root,
+                    site,
+                    root / "unused-key.txt",
+                    git_since="25 hours ago",
+                    state_file=state_file,
+                    runner=runner,
+                )
+            self.assertEqual(
+                current_sha,
+                state_file.read_text(encoding="utf-8").strip(),
+            )
+        self.assertEqual(0, accepted)
+        reader.assert_called_once_with(
+            root,
+            site,
+            "25 hours ago",
+            baseline_sha=previous_sha,
+            runner=runner,
+        )
+
+    def test_failed_delivery_does_not_advance_submission_sha(self) -> None:
+        site = "https://example.com/apps"
+        sha = "b" * 40
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            key_file = root / "indexnow-key.txt"
+            key_file.write_text("valid-key-123", encoding="utf-8")
+            state_file = root / "state" / "last-submitted-sha"
+            with (
+                mock.patch.object(
+                    indexnow,
+                    "read_changed_urls",
+                    return_value=[f"{site}/one.html"],
+                ),
+                self.assertRaises(indexnow.SubmissionError),
+            ):
+                indexnow.run(
+                    root,
+                    site,
+                    key_file,
+                    git_since="25 hours ago",
+                    state_file=state_file,
+                    runner=mock.Mock(
+                        return_value=SimpleNamespace(stdout=f"{sha}\n")
+                    ),
+                    sender=mock.Mock(
+                        side_effect=indexnow.SubmissionError("offline")
+                    ),
+                )
+            self.assertFalse(state_file.exists())
+
+    def _held_receipt(self, root: Path, receipt_file: Path) -> dict:
+        import notification_release
+
+        policy_path = root / "held-policy.json"
+        policy = {
+            **notification_release.read_policy(),
+            "notification_release_hold": True,
+        }
+        policy_path.write_text(json.dumps(policy), encoding="utf-8")
+        return notification_release.held_result(
+            "indexnow",
+            receipt_file=receipt_file,
+            policy_path=policy_path,
+        )
+
+    def _released_noop(self, root: Path, receipt_file: Path, state_file: Path):
+        return indexnow.run(
+            root,
+            "https://example.com/apps",
+            root / "unused-key.txt",
+            git_since="25 hours ago",
+            state_file=state_file,
+            receipt_file=receipt_file,
+            runner=mock.Mock(
+                return_value=SimpleNamespace(stdout=f"{'b' * 40}\n")
+            ),
+            sender=mock.Mock(side_effect=AssertionError("no-op must not send")),
+            clock=lambda: datetime(2026, 9, 30, 12, tzinfo=timezone.utc),
+        )
+
+    def test_first_released_noop_replaces_the_held_receipt(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            catalog = root / "data" / "verified-ios-app-finder-catalog.json"
+            catalog.parent.mkdir()
+            catalog.write_text('{"apps": []}', encoding="utf-8")
+            state_file = root / "state" / "last-submitted-sha"
+            receipt_file = root / "state" / "accepted-receipt.json"
+            indexnow.write_last_submitted_sha(state_file, "a" * 40)
+            self.assertTrue(self._held_receipt(root, receipt_file))
+            with mock.patch.object(indexnow, "read_changed_urls", return_value=[]):
+                self.assertEqual(
+                    0, self._released_noop(root, receipt_file, state_file)
+                )
+            receipt = json.loads(receipt_file.read_text(encoding="utf-8"))
+            self.assertEqual("indexnow_submission_receipt", receipt["kind"])
+            self.assertEqual("no_changed_public_urls", receipt["disposition"])
+            self.assertEqual("b" * 40, receipt["pages_sha"])
+            self.assertEqual("a" * 40, receipt["baseline_sha"])
+            self.assertEqual(0, receipt["url_count"])
+            self.assertEqual(0o600, receipt_file.stat().st_mode & 0o777)
+            self.assertEqual(
+                "b" * 40,
+                state_file.read_text(encoding="utf-8").strip(),
+            )
+
+    def test_noop_still_rejects_receipts_that_are_not_a_zero_request_hold(
+        self,
+    ) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            state_file = root / "state" / "last-submitted-sha"
+            receipt_file = root / "state" / "accepted-receipt.json"
+            indexnow.write_last_submitted_sha(state_file, "a" * 40)
+            held = self._held_receipt(root, receipt_file)
+            for change in (
+                {"provider_requests": 1},
+                {"accepted_ack": 1},
+                {"protocol": "websub"},
+                {"notification_release_hold": False},
+            ):
+                with self.subTest(change=change):
+                    receipt_file.write_text(
+                        json.dumps({**held, **change}), encoding="utf-8"
+                    )
+                    with (
+                        mock.patch.object(
+                            indexnow, "read_changed_urls", return_value=[]
+                        ),
+                        self.assertRaisesRegex(
+                            ValueError, "Invalid existing IndexNow receipt"
+                        ),
+                    ):
+                        self._released_noop(root, receipt_file, state_file)
+                    self.assertEqual(
+                        "a" * 40,
+                        state_file.read_text(encoding="utf-8").strip(),
+                    )
+
+    def test_released_main_refuses_runs_without_durable_bindings(self) -> None:
+        import notification_release
+
+        released = {
+            **notification_release.read_policy(),
+            "notification_release_hold": False,
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for extra in (
+                [],
+                ["--git-since", "25 hours ago"],
+                [
+                    "--state-file",
+                    str(root / "last-submitted-sha"),
+                    "--receipt-file",
+                    str(root / "accepted-receipt.json"),
+                ],
+            ):
+                argv = ["indexnow_submit.py", "--pages-dir", str(root), *extra]
+                output = io.StringIO()
+                with (
+                    self.subTest(argv=argv),
+                    mock.patch.object(
+                        notification_release,
+                        "read_policy",
+                        return_value=released,
+                    ),
+                    mock.patch("sys.argv", argv),
+                    mock.patch.object(
+                        indexnow,
+                        "run",
+                        side_effect=AssertionError("unbound run"),
+                    ),
+                    mock.patch("sys.stdout", new=output),
+                ):
+                    indexnow.main()
+                result = json.loads(output.getvalue())
+                self.assertEqual(indexnow.UNBOUND_RUN_SCHEMA, result["schema"])
+                self.assertEqual(0, result["provider_requests"])
+                self.assertEqual(0, result["accepted_ack"])
+            self.assertEqual([], list(root.iterdir()))
+
+    def test_workflow_waits_for_exact_pages_deployment(self) -> None:
+        workflow = _site_workflow("indexnow-daily.yml")
+        pages_workflow = _site_workflow("pages.yml")
+        self.assertIn(
+            'workflows: ["Deploy static site to Pages"]',
+            workflow,
+        )
+        self.assertIn(
+            "github.event.workflow_run.conclusion == 'success'",
+            workflow,
+        )
+        self.assertIn(".well-known/deployment.json", workflow)
+        self.assertIn('git checkout --detach "$deployed_sha"', workflow)
+        self.assertIn("live_app_guard.py --site-root .", workflow)
+        self.assertIn("actions/cache/restore@v4", workflow)
+        self.assertIn("actions/cache/save@v4", workflow)
+        self.assertIn('--state-file "$state_file"', workflow)
+        # Only a run carrying every durable binding may submit once released.
+        self.assertIn('--receipt-file "$receipt_file"', workflow)
+        self.assertIn('--content-state "$content_state"', workflow)
+        self.assertIn("queue: max", workflow)
+        self.assertIn('- cron: "17 5 1 * *"', workflow)
+        self.assertIn(
+            '"${{ github.event.schedule }}" == "17 5 1 * *"',
+            workflow,
+        )
+        self.assertIn(
+            "Prepare externally bound high-intent deployment",
+            pages_workflow,
+        )
+        self.assertIn("--prepare-pages-deployment", pages_workflow)
+        self.assertIn("--current-source-root", pages_workflow)
+        self.assertIn("--engine-source-revision", pages_workflow)
+        self.assertIn(".version == 4", pages_workflow)
+        self.assertIn("route_manifest_digest", pages_workflow)
+        self.assertIn("Verify exact deployment is live", pages_workflow)
+        self.assertIn("Exact deployment is live", pages_workflow)
+        self.assertIn("steps.verify_live.outcome == 'success'", pages_workflow)
+
+    def test_local_burst_refuses_unpublished_or_dirty_tree(self) -> None:
+        script = MODULE_PATH.with_name("promo_burst.sh")
+        if not script.is_file():
+            raise unittest.SkipTest("promo_burst.sh is canonical-only")
+        source = script.read_text(encoding="utf-8")
+        self.assertIn("LIVE_SHA", source)
+        self.assertIn("unsafe unpublished tree", source)
+        self.assertIn('--pages-dir "$PAGES"', source)
+
+    def test_submit_all_requires_every_endpoint_and_chunks_safely(self) -> None:
+        calls: list[tuple[str, int]] = []
+
+        def sender(endpoint: str, payload: bytes) -> None:
+            calls.append((endpoint, len(payload)))
+
+        urls = [
+            f"https://example.com/apps/{number}.html"
+            for number in range(2501)
+        ]
+        accepted = indexnow.submit_all(
+            urls,
+            "abcdefgh",
+            "https://example.com/apps",
+            batch_size=1000,
+            endpoints=("first", "second"),
+            sender=sender,
+        )
+        self.assertEqual(2501, accepted)
+        self.assertEqual(
+            ["first", "second"] * 3,
+            [endpoint for endpoint, _ in calls],
+        )
+
+    def test_default_batch_covers_portfolio_in_two_requests_per_endpoint(
+        self,
+    ) -> None:
+        calls = []
+
+        def sender(endpoint: str, _payload: bytes) -> None:
+            calls.append(endpoint)
+
+        urls = [
+            f"https://example.com/apps/{number}.html"
+            for number in range(14_891)
+        ]
+        accepted = indexnow.submit_all(
+            urls,
+            "abcdefgh",
+            "https://example.com/apps",
+            endpoints=("first", "second"),
+            sender=sender,
+        )
+
+        self.assertEqual(len(urls), accepted)
+        self.assertEqual(["first", "second"] * 2, calls)
+
+    def test_endpoint_request_timeout_is_bounded(self) -> None:
+        opener = mock.Mock(return_value=Response(202))
+
+        indexnow.submit_endpoint(
+            "https://api.example",
+            b"{}",
+            opener=opener,
+            sleeper=lambda _delay: None,
+        )
+
+        self.assertEqual(
+            indexnow.REQUEST_TIMEOUT_SECONDS,
+            opener.call_args.kwargs["timeout"],
+        )
+        self.assertEqual(30, indexnow.REQUEST_TIMEOUT_SECONDS)
+
+    def test_nonretryable_http_error_fails_immediately_with_body(self) -> None:
+        error = urllib.error.HTTPError(
+            "https://api.example",
+            422,
+            "Unprocessable",
+            {},
+            io.BytesIO(b"invalid URL"),
+        )
+        opener = mock.Mock(side_effect=error)
+        with self.assertRaisesRegex(
+            indexnow.SubmissionError, "422: invalid URL"
+        ):
+            indexnow.submit_endpoint(
+                "https://api.example",
+                b"{}",
+                opener=opener,
+                sleeper=lambda _delay: None,
+            )
+        self.assertEqual(1, opener.call_count)
+
+    def test_transient_http_error_retries_then_succeeds(self) -> None:
+        error = urllib.error.HTTPError(
+            "https://api.example",
+            503,
+            "Unavailable",
+            {},
+            io.BytesIO(b"retry"),
+        )
+        opener = mock.Mock(side_effect=[error, Response(202)])
+        indexnow.submit_endpoint(
+            "https://api.example",
+            b"{}",
+            opener=opener,
+            sleeper=lambda _delay: None,
+        )
+        self.assertEqual(2, opener.call_count)
+
+    def test_compatibility_submit_tries_every_endpoint(self) -> None:
+        calls = []
+
+        def sender(endpoint: str, _payload: bytes) -> None:
+            calls.append(endpoint)
+            raise indexnow.SubmissionError("offline")
+
+        accepted = indexnow.submit(
+            ["https://example.com/apps/one.html"],
+            "abcdefgh",
+            "https://example.com/apps",
+            endpoints=("first", "second"),
+            sender=sender,
+        )
+        self.assertFalse(accepted)
+        self.assertEqual(["first", "second"], calls)
+
+
+if __name__ == "__main__":
+    unittest.main()

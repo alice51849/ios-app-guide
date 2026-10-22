@@ -1,0 +1,537 @@
+#!/usr/bin/env python3
+"""Regression tests for GitHub-native localized App discovery READMEs."""
+
+from __future__ import annotations
+
+import base64
+import json
+from market_contract_assertions import assert_blocked_record
+import os
+from pathlib import Path
+import re
+import shlex
+import sys
+import unittest
+from unittest import mock
+from urllib.parse import parse_qs, unquote, urlparse
+
+
+GEO = Path(__file__).resolve().parents[1]
+if str(GEO) not in sys.path:
+    sys.path.insert(0, str(GEO))
+
+import gen_github_discovery_readmes as discovery
+from official_locales import OFFICIAL_LOCALES
+import publisher_intent_catalog as catalog
+from live_app_manifest import canonical_manifest
+
+# Derived from the canonical roster, not spelled out: a new App changes this
+# count the day it ships, and a hand-written number silently goes stale.
+PUBLISHABLE_CELL_COUNT = sum(
+    not discovery.market.is_unavailable(locale, app["app_id"])
+    for locale in OFFICIAL_LOCALES
+    for app in canonical_manifest()["apps"].values()
+)
+
+
+class GitHubDiscoveryContractTests(unittest.TestCase):
+    def test_registry_url_uses_the_exact_version_endpoint(self) -> None:
+        parsed = urlparse(discovery.MCP_REGISTRY_URL)
+        self.assertEqual("https", parsed.scheme)
+        self.assertEqual("registry.modelcontextprotocol.io", parsed.netloc)
+        self.assertEqual(
+            (
+                "/v0.1/servers/io.github.alice51849%2F"
+                f"lumi-app-finder/versions/{discovery.MCP_VERSION}"
+            ),
+            parsed.path,
+        )
+        self.assertEqual("", parsed.query)
+        latest = urlparse(catalog.MCP_REGISTRY_LATEST_URL)
+        self.assertEqual(
+            (
+                "/v0.1/servers/io.github.alice51849%2F"
+                "lumi-app-finder/versions/latest"
+            ),
+            latest.path,
+        )
+
+    def test_host_installer_urls_decode_to_the_exact_stdio_package(self) -> None:
+        expected_config = {
+            "type": "stdio",
+            "command": "npx",
+            "args": ["-y", discovery.MCP_NPX_URL],
+        }
+        self.assertEqual(
+            (
+                "https://github.com/alice51849/lumi-mcp/releases/"
+                f"download/v{discovery.MCP_VERSION}/"
+                "lumi-app-finder-npx.tgz"
+            ),
+            discovery.MCP_NPX_URL,
+        )
+        self.assertNotIn("/latest/", discovery.MCP_NPX_URL)
+        self.assertNotIn("/latest/", discovery.MCP_BUNDLE_URL)
+        self.assertEqual(
+            (
+                "https://github.com/alice51849/lumi-mcp/releases/"
+                f"download/v{discovery.MCP_VERSION}/SHA256SUMS"
+            ),
+            discovery.MCP_CHECKSUMS_URL,
+        )
+
+        vscode = urlparse(discovery.MCP_VSCODE_INSTALL_URL)
+        self.assertEqual(
+            ("https", "vscode.dev", "/redirect"),
+            (vscode.scheme, vscode.netloc, vscode.path),
+        )
+        vscode_uri = parse_qs(vscode.query)["url"]
+        self.assertEqual(1, len(vscode_uri))
+        prefix = "vscode:mcp/install?"
+        self.assertTrue(vscode_uri[0].startswith(prefix))
+        vscode_config = json.loads(
+            unquote(vscode_uri[0][len(prefix):])
+        )
+        self.assertEqual(
+            {"name": "lumi-app-finder", **expected_config},
+            vscode_config,
+        )
+
+        cursor = urlparse(discovery.MCP_CURSOR_INSTALL_URL)
+        self.assertEqual(
+            ("https", "cursor.com", "/en/install-mcp"),
+            (cursor.scheme, cursor.netloc, cursor.path),
+        )
+        cursor_query = parse_qs(cursor.query)
+        self.assertEqual(["lumi-app-finder"], cursor_query["name"])
+        self.assertEqual(
+            expected_config,
+            json.loads(
+                base64.b64decode(
+                    cursor_query["config"][0],
+                    validate=True,
+                )
+            ),
+        )
+        self.assertEqual(
+            [
+                "claude",
+                "mcp",
+                "add",
+                "--transport",
+                "stdio",
+                "--scope",
+                "user",
+                "lumi-app-finder",
+                "--",
+                "npx",
+                "-y",
+                discovery.MCP_NPX_URL,
+            ],
+            shlex.split(discovery.MCP_INSTALL_COMMANDS["claude_code"]),
+        )
+        self.assertEqual(
+            [
+                "codex",
+                "mcp",
+                "add",
+                "lumi-app-finder",
+                "--",
+                "npx",
+                "-y",
+                discovery.MCP_NPX_URL,
+            ],
+            shlex.split(discovery.MCP_INSTALL_COMMANDS["codex"]),
+        )
+        self.assertEqual(
+            [
+                "gemini",
+                "mcp",
+                "add",
+                "--scope",
+                "user",
+                "lumi-app-finder",
+                "npx",
+                "-y",
+                discovery.MCP_NPX_URL,
+            ],
+            shlex.split(discovery.MCP_INSTALL_COMMANDS["gemini_cli"]),
+        )
+
+    def test_agent_skill_routes_are_version_pinned_for_every_host(self) -> None:
+        self.assertEqual(discovery.MCP_VERSION, discovery.AGENT_SKILL_VERSION)
+        self.assertEqual(
+            (
+                "https://github.com/alice51849/lumi-mcp/tree/"
+                f"v{discovery.MCP_VERSION}/skills/lumi-app-finder"
+            ),
+            discovery.AGENT_SKILL_URL,
+        )
+        base = [
+            "gh",
+            "skill",
+            "install",
+            "alice51849/lumi-mcp",
+            f"lumi-app-finder@v{discovery.MCP_VERSION}",
+            "--scope",
+            "user",
+        ]
+        expected_agents = {
+            "github_copilot": None,
+            "claude_code": "claude-code",
+            "cursor": "cursor",
+            "codex": "codex",
+            "gemini_cli": "gemini-cli",
+        }
+        self.assertEqual(
+            {*expected_agents, "vercel_skills"},
+            set(discovery.AGENT_SKILL_INSTALL_COMMANDS),
+        )
+        for key, agent in expected_agents.items():
+            expected = base if agent is None else [*base, "--agent", agent]
+            self.assertEqual(
+                expected,
+                shlex.split(discovery.AGENT_SKILL_INSTALL_COMMANDS[key]),
+            )
+        self.assertEqual(
+            [
+                "npx",
+                "-y",
+                f"skills@{catalog.VERCEL_SKILLS_CLI_VERSION}",
+                "add",
+                discovery.AGENT_SKILL_URL,
+                "--skill",
+                catalog.AGENT_SKILL_NAME,
+                "-g",
+                "-y",
+            ],
+            shlex.split(
+                discovery.AGENT_SKILL_INSTALL_COMMANDS["vercel_skills"]
+            ),
+        )
+
+    def test_campaign_tokens_share_the_existing_intent_bucket(self) -> None:
+        tokens = [
+            discovery.campaign_token(locale)
+            for locale in OFFICIAL_LOCALES
+        ]
+        self.assertEqual({"geo_pick"}, set(tokens))
+        for token in tokens:
+            self.assertLessEqual(len(token), 30)
+            self.assertRegex(token, r"^[a-z0-9_]+$")
+
+    def test_guide_url_accepts_answer_and_matching_product_fallback(self) -> None:
+        discovery._validate_guide_url(
+            (
+                "https://open.cait518.cc/ios-app-guide/"
+                "ar-SA/answers/offline-exam-practice.html"
+            ),
+            "ar-SA",
+            "aim990",
+        )
+        discovery._validate_guide_url(
+            (
+                "https://open.cait518.cc/ios-app-guide/"
+                "ar-SA/aim990.html"
+            ),
+            "ar-SA",
+            "aim990",
+        )
+
+    def test_guide_url_rejects_another_apps_product_fallback(self) -> None:
+        with self.assertRaises(ValueError):
+            discovery._validate_guide_url(
+                (
+                    "https://open.cait518.cc/ios-app-guide/"
+                    "ar-SA/scanto.html"
+                ),
+                "ar-SA",
+                "aim990",
+            )
+
+    def test_store_url_fails_closed_without_a_provider_token(self) -> None:
+        # A README link is a CTA Apple reports on; without the provider token
+        # it cannot carry pt+ct+mt, and a silently clean link would publish an
+        # unattributable install path. The contract is to refuse, not degrade.
+        record = {
+            "locale": "ja",
+            "app_store_id": "6780575828",
+            "app_store_url": (
+                "https://apps.apple.com/jp/app/id6780575828"
+                "?ct=iag_data_ja"
+            ),
+        }
+        with mock.patch.dict(
+            os.environ,
+            {"APP_STORE_PROVIDER_TOKEN": ""},
+        ), self.assertRaisesRegex(
+            ValueError, "Missing App Store campaign attribution"
+        ):
+            discovery.github_store_url(record)
+
+
+class GitHubDiscoveryOutputTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        possible_pages = [
+            GEO / "pages",
+            GEO.parents[1],
+        ]
+        cls.pages = next(
+            (
+                path
+                for path in possible_pages
+                if (
+                    path
+                    / "data"
+                    / f"{catalog.SLUG}.json"
+                ).exists()
+            ),
+            None,
+        )
+        if cls.pages is None:
+            raise unittest.SkipTest("Generated Pages catalog is not present")
+        cls.payload = json.loads(
+            (
+                cls.pages
+                / "data"
+                / f"{catalog.SLUG}.json"
+            ).read_text(encoding="utf-8")
+        )
+        cls.records = discovery.validate_dataset(cls.payload)
+
+    def test_root_and_all_locale_readmes_exist(self) -> None:
+        expected = {
+            self.pages / "README.md",
+            *{
+                self.pages / locale / "README.md"
+                for locale in OFFICIAL_LOCALES
+            },
+        }
+        self.assertTrue(all(path.is_file() for path in expected))
+        self.assertEqual(
+            {path for path in self.pages.glob("*/README.md")},
+            expected - {self.pages / "README.md"},
+        )
+
+    def test_every_readme_exposes_the_public_ai_distributions(self) -> None:
+        paths = [
+            self.pages / "README.md",
+            *[
+                self.pages / locale / "README.md"
+                for locale in OFFICIAL_LOCALES
+            ],
+        ]
+        for path in paths:
+            with self.subTest(path=path):
+                source = path.read_text(encoding="utf-8")
+                self.assertEqual(
+                    1,
+                    source.count(
+                        f"[MCP Registry]({discovery.MCP_REGISTRY_URL})"
+                    ),
+                )
+                self.assertEqual(
+                    1,
+                    source.count(f"[GitHub]({discovery.MCP_REPOSITORY_URL})"),
+                )
+                self.assertEqual(
+                    1,
+                    source.count(
+                        f"[Agent Skill]({discovery.AGENT_SKILL_URL})"
+                    ),
+                )
+                self.assertEqual(
+                    1,
+                    source.count(
+                        "[VS Code]"
+                        f"({discovery.MCP_VSCODE_INSTALL_URL})"
+                    ),
+                )
+                self.assertEqual(
+                    1,
+                    source.count(
+                        "[Cursor]"
+                        f"({discovery.MCP_CURSOR_INSTALL_URL})"
+                    ),
+                )
+                self.assertEqual(
+                    1,
+                    source.count(
+                        "[Claude Desktop (MCPB)]"
+                        f"({discovery.MCP_BUNDLE_URL})"
+                    ),
+                )
+                self.assertEqual(
+                    1,
+                    source.count(
+                        "[MCP client config]"
+                        f"({discovery.MCP_CLIENT_CONFIG_URL})"
+                    ),
+                )
+                self.assertEqual(
+                    1,
+                    source.count(
+                        "[SHA256SUMS]"
+                        f"({discovery.MCP_CHECKSUMS_URL})"
+                    ),
+                )
+                self.assertIn(f"MCP v{discovery.MCP_VERSION}", source)
+                for command in discovery.MCP_INSTALL_COMMANDS.values():
+                    self.assertEqual(1, source.count(command))
+                lines = source.splitlines()
+                for command in discovery.AGENT_SKILL_INSTALL_COMMANDS.values():
+                    self.assertEqual(1, lines.count(command))
+                self.assertEqual(
+                    1,
+                    source.count(
+                        "[MLCommons Croissant 1.1]"
+                        f"({catalog.CROISSANT_URL})"
+                    ),
+                )
+
+    def test_every_readme_has_complete_native_buyer_intent_rows(self) -> None:
+        for locale in OFFICIAL_LOCALES:
+            with self.subTest(locale=locale):
+                source = (
+                    self.pages / locale / "README.md"
+                ).read_text(encoding="utf-8")
+                records = [
+                    record
+                    for record in self.records
+                    if record["locale"] == locale
+                ]
+                self.assertTrue(source.startswith(discovery.GENERATED_MARKER))
+                table_lines = [
+                    line for line in source.splitlines() if line.startswith("| ")
+                ]
+                self.assertEqual(
+                    catalog.EXPECTED_APP_COUNT + 2,
+                    len(table_lines),
+                )
+                for record in records:
+                    self.assertIn(
+                        discovery._markdown_text(record["app_name"]),
+                        source,
+                    )
+                    self.assertIn(
+                        discovery._markdown_text(record["publisher_query"]),
+                        source,
+                    )
+                    self.assertIn(
+                        discovery._markdown_text(record["decision_context"]),
+                        source,
+                    )
+                for option in OFFICIAL_LOCALES:
+                    if option == locale:
+                        self.assertIn(f"**{option}**", source)
+                    else:
+                        self.assertIn(f"[{option}](../{option}/)", source)
+
+    def test_store_links_preserve_verified_routes_and_use_valid_direct_links(
+        self,
+    ) -> None:
+        source_by_pair = {
+            (record["locale"], record["app_store_id"]): record
+            for record in self.records
+        }
+        seen_pairs = set()
+        generic = 0
+        for locale in OFFICIAL_LOCALES:
+            source = (
+                self.pages / locale / "README.md"
+            ).read_text(encoding="utf-8")
+            urls = re.findall(
+                r"https://apps\.apple\.com/"
+                r"(?:[a-z]{2}/)?app/id[0-9]{9,12}(?:\?[^)\s]+)?",
+                source,
+            )
+            blocked_records = [
+                record
+                for (language, _app_id), record in source_by_pair.items()
+                if language == locale
+                and discovery.market.is_unavailable(
+                    locale,
+                    record["app_store_id"],
+                )
+            ]
+            if blocked_records:
+                self.assertEqual(
+                    len(urls),
+                    catalog.EXPECTED_APP_COUNT - len(blocked_records),
+                )
+                for record in blocked_records:
+                    assert_blocked_record(self, record)
+                    self.assertIn(record["canonical_guide_url"], source)
+                    self.assertIn(
+                        discovery.market.unavailable_reason(
+                            locale,
+                            record["app_store_id"],
+                        ),
+                        source,
+                    )
+            if locale == "bn-BD":
+                self.assertEqual(len(urls), 0)
+                self.assertIn("MARKET_UNAVAILABLE_OR_UNVERIFIED", source)
+                self.assertIn("MARKET_NOT_IN_APPLE_MEDIA_SERVICES", source)
+                self.assertIn("Apple App Store এখনো বাংলাদেশে", source)
+                continue
+            if not blocked_records:
+                self.assertEqual(catalog.EXPECTED_APP_COUNT, len(urls))
+            for url in urls:
+                parsed = urlparse(url)
+                app_id_match = re.search(r"/app/id([0-9]{9,12})$", parsed.path)
+                self.assertIsNotNone(app_id_match)
+                app_id = app_id_match.group(1)
+                record = source_by_pair[(locale, app_id)]
+                expected_path = urlparse(record["app_store_url"]).path
+                self.assertEqual(expected_path, parsed.path)
+                self.assertEqual(
+                    discovery.github_store_url(record),
+                    url,
+                )
+                discovery.validated_app_store_url(url, app_id)
+                generic += parsed.path == f"/app/id{app_id}"
+                seen_pairs.add((locale, app_id))
+        self.assertEqual(PUBLISHABLE_CELL_COUNT, len(seen_pairs))
+        self.assertEqual(
+            sum(
+                urlparse(record["app_store_url"]).path
+                == f"/app/id{record['app_store_id']}"
+                for record in self.records
+                if not discovery.market.is_unavailable(
+                    record["locale"],
+                    record["app_store_id"],
+                )
+            ),
+            generic,
+        )
+
+    def test_root_readme_is_an_english_full_portfolio_landing(self) -> None:
+        source = (self.pages / "README.md").read_text(encoding="utf-8")
+        self.assertTrue(source.startswith(discovery.GENERATED_MARKER))
+        self.assertEqual(
+            catalog.EXPECTED_APP_COUNT + 2,
+            len(
+                [
+                    line
+                    for line in source.splitlines()
+                    if line.startswith("| ")
+                ]
+            ),
+        )
+        for locale in OFFICIAL_LOCALES:
+            self.assertIn(f"[{locale}](./{locale}/)", source)
+        for record in self.records:
+            if record["locale"] == "en-US":
+                self.assertIn(
+                    discovery._markdown_text(record["publisher_query"]),
+                    source,
+                )
+
+    def test_generation_is_idempotent(self) -> None:
+        self.assertEqual((), discovery.build(self.pages))
+
+
+if __name__ == "__main__":
+    unittest.main()

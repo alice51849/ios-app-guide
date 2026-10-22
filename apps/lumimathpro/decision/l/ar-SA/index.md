@@ -1,0 +1,26 @@
+---
+title: "أفضل تطبيق تعلم رياضيات كامل للأطفال قبل المدرسة والصفوف المبكرة"
+lang: "ar-SA"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimathpro/decision/l/ar-SA/index.html"
+modified: "2026-10-21"
+app_store_id: "6776958488"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# أفضل تطبيق تعلم رياضيات كامل للأطفال قبل المدرسة والصفوف المبكرة
+
+تطبيق الرياضيات المبكر الكامل يجب أن يجعل العد، الإحساس بالأرقام والعمليات الأولى مغامرة متصلة بدلاً من تدريبات منفصلة. لهذا وُجد Lumi Math Pro.
+
+- الأطفال والتعلم
+- تحميل مدفوع
+- بدون إعلانات
+- خاص / على الجهاز
+- App Store · SAR 39.99
+
+[احصل على Lumi Math Pro من App Store →](https://apps.apple.com/sa/app/id6776958488?pt=118326163&ct=geo_pick&mt=8)
+
+[اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-complete-math-learning-app-for-preschool-and-early-grades.html)
+
+> دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.

@@ -1,0 +1,245 @@
+# ऐप निर्देशिका — iOS App Guide
+
+> हर iOS ऐप की संरचित जानकारी — फ़ीचर, कीमत और FAQ।
+
+locale: hi
+apps: 54
+- ऐप निर्देशिका: https://open.cait518.cc/ios-app-guide/hi/tools/private-pay-once-iphone-app-finder.html
+- ऐप निर्देशिका · PWA: https://open.cait518.cc/ios-app-guide/hi/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/hi.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/hi.json
+- ऐप निर्देशिका · SVG: https://open.cait518.cc/ios-app-guide/hi/visuals/
+- ऐप निर्देशिका · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- ऐप निर्देशिका · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- ऐप निर्देशिका · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- ऐप निर्देशिका · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- ऐप निर्देशिका · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- ऐप निर्देशिका · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- ऐप निर्देशिका · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- ऐप निर्देशिका · Agent Skill · hi: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/hi.json
+- ऐप निर्देशिका · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- ऐप निर्देशिका · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- ऐप निर्देशिका · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- ऐप निर्देशिका · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- ऐप निर्देशिका · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- ऐप निर्देशिका · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- ऐप निर्देशिका · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ऐप निर्देशिका · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ऐप निर्देशिका · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/hi/notesstudio100.html) — हस्तलेखन और PDF टिप्पणी
+  - सर्दियों में सेमेस्टर परीक्षाएँ: हाथ से नोट्स लिखें, लेक्चर PDF पर निशान लगाएँ, रिकॉर्डिंग उसी पेज पर रखें और फ्लैशकार्ड से दोहराएँ। पूरी तरह ऑफलाइन, अकाउंट नहीं।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: फाइल से AI प्रॉम्प्ट](https://open.cait518.cc/ios-app-guide/hi/aibriefpack.html) — फ़ाइल, PDF से प्रॉम्प्ट बनाएँ
+  - साल के अंत की रिपोर्ट और छुट्टियों की योजना? स्क्रीनशॉट, PDF, नोट्स और लिंक जोड़ें; डिवाइस पर ही पढ़े जाते हैं, निजी जानकारी चिह्नित होती है, AI के लिए साफ़ ब्रीफ़।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: अंग्रेज़ी कोच](https://open.cait518.cc/ios-app-guide/hi/aim990.html) — 8 मिनट में कमज़ोरी जाँच
+  - 8 मिनट की जाँच आपकी 3 सबसे कमज़ोर स्किल बताती है, सुधार की योजना लिखती है, रोज़ अभ्यास कराती है और 30वें दिन दोबारा मापती है। ऑफ़लाइन, बिना अकाउंट।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: बैटरी स्वास्थ्य स्कोर](https://open.cait518.cc/ios-app-guide/hi/battai.html) — साफ़ नियम, स्रोत और सीमाएँ
+  - समय के साथ अपनी बैटरी समझें साफ़ नियम, स्रोत और सीमाएँ गहरा इतिहास, योजना और रिपोर्ट खोलें। एक भुगतान। कोई सदस्यता नहीं।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily कैलकुलेटर और थीम](https://open.cait518.cc/ios-app-guide/hi/caldaily.html) — विजेट, टूल और साफ़ हिसाब
+  - सीधे होम स्क्रीन पर हिसाब लगाएँ: विजेट खुद एक पूरा कैलकुलेटर है। टिप, छूट, लोन और 5 और टूल ऐप में ही।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/hi/countdaysnow.html) — आज का फ़ोकस
+  - आज का फ़ोकस: हर दिन निजी तौर पर तब से, आज या आगे चुनें। महत्वपूर्ण तारीखों के साथ पिछली तीन पसंद फिर देखें।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: ATS रिज़्यूमे मेकर](https://open.cait518.cc/ios-app-guide/hi/cvdesk.html) — बायोडाटा और रिज्यूमे टेम्पलेट
+  - तुरंत ATS स्कोर, साफ़ सुधार और रिक्रूटर की पहली 6 सेकंड वाली नज़र। अंतिम PDF का प्रीव्यू कभी भी देखें। किसी अकाउंट की ज़रूरत नहीं।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: पीरियड ट्रैकर](https://open.cait518.cc/ios-app-guide/hi/cyca.html) — मासिक धर्म कैलेंडर, ओव्यूलेशन
+  - साल के अंत की भागदौड़ में भी पीरियड का हिसाब रखें। फ्लो, लक्षण, मूड और नोट्स सेकंडों में लिखें। सब आपके फ़ोन पर: न अकाउंट, न क्लाउड, ऑफलाइन भी चलता है।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: रोज़ बोलें](https://open.cait518.cc/ios-app-guide/hi/dailymatelite.html) — सफ़र की बातचीत, 50 भाषाएँ
+  - एयरपोर्ट, होटल या रेस्तरां में लोग क्या कहते हैं, समझें और स्वाभाविक जवाब सीखें। सफ़र की बुनियादी बातें सभी 50 भाषाओं में, ऑफ़लाइन भी।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: रोज़मर्रा के वाक्य](https://open.cait518.cc/ios-app-guide/hi/dailymate.html) — अंग्रेज़ी बोलना सीखें, हर दिन
+  - सीखें लोग असल में क्या बोलते हैं: 47 भाषाओं में 8,400 रोज़मर्रा के वाक्य और स्वाभाविक जवाब, 84 असली स्थितियों में। विजेट और Apple Watch शामिल।
+  - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।
+  - App Store: https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: ध्वनि स्तर मापक](https://open.cait518.cc/ios-app-guide/hi/dbhalo.html) — स्पेक्ट्रम और शोर की खुराक
+  - शादियों का सीज़न, शोर करते पड़ोसी या सर्दियों की रातों में खर्राटे? Halo रिंग पर लाइव dB देखें, रोज़ की शोर खुराक का अनुमान लगाएँ और स्लीप जर्नल में खर्राटे दर्ज करें।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: छुट्टी अलार्म घड़ी](https://open.cait518.cc/ios-app-guide/hi/easyam.html) — कल बजेगा? सिर्फ़ काम के दिन
+  - सर्दियों की छुट्टियाँ या साल के आखिर की ट्रिप? उन दिनों को छुट्टी के रूप में जोड़ें, अलार्म चुप रहेगा और पहले कामकाजी दिन फिर बजेगा। अगले 7 दिन एक नज़र में।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: यात्रा खर्च](https://open.cait518.cc/ios-app-guide/hi/gmoneylite.html) — दैनिक बजट वॉच और विजेट पर
+  - सर्दियों की छुट्टियों में विदेश यात्रा? स्थानीय मुद्रा में खरीदारी दर्ज करें, तुरंत अपनी मुद्रा में देखें, दैनिक सीमा रखें। लाइव या मैनुअल दरें ऑफलाइन भी चलती हैं।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: रोज़ का खर्च और बजट](https://open.cait518.cc/ios-app-guide/hi/gmoney.html) — यात्रा खर्च और मुद्रा दर
+  - साल के अंत में यात्रा और शॉपिंग? खर्च श्रेणी या यात्रा के अनुसार दर्ज करें, दैनिक बजट सेट करें और लाइव या मैनुअल दरों से करेंसी बदलें, ऑफलाइन भी।
+  - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।
+  - App Store: https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: कीमत घंटों में](https://open.cait518.cc/ios-app-guide/hi/hourstaglite.html) — सोच-समझकर खरीद: असली कीमत
+  - साल के आख़िर की ख़रीदारी का मौसम: ख़रीदने से पहले कीमत को अपने काम के घंटों में देखें, उसे जरूरत, चाहत या आवेग टैग करें, और नए साल के लक्ष्य के पीछे का काम देखें।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: खरीदने के घंटे](https://open.cait518.cc/ios-app-guide/hi/hourstag.html) — प्रति घंटा वेतन और खर्च
+  - साल के अंत की शॉपिंग और तोहफ़े? खरीदने से पहले हर कीमत काम के घंटों में देखें, ज़रूरत, चाहत या आवेग टैग करें और विशलिस्ट काम के समय में प्लान करें।
+  - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।
+  - App Store: https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/hi/ledmovingtext.html) — स्क्रीन पर चलती रोशन पट्टी
+  - कुछ ही सेकंड में स्क्रीन को चमकता चलता साइन बनाएँ, या संदेश क्रम बनाकर संदेश एक टैप या टाइमर से बदलें। फुल स्क्रीन, ऑफ़लाइन और निजी।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: ऐप ब्लॉकर](https://open.cait518.cc/ios-app-guide/hi/lockhour.html) — स्क्रीन टाइम और ऐप लॉक
+  - समय बर्बाद करने वाले ऐप और वेबसाइट टाइमर खत्म होने तक लॉक रखें। फोकस, पढ़ाई और नींद मोड, हार्ड मोड, आंकड़े और स्ट्रीक। किसी अकाउंट की ज़रूरत नहीं।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/hi/lumibopomofopro.html) — चीनी टोन और वर्कशीट अभ्यास
+  - सभी 37 झूयिन ध्वनियाँ शामिल: टोन रोलर कोस्टर, ध्वनि ट्रेन, मछली पकड़ना, ट्रेसिंग और स्टार रेस। माता-पिता प्रगति देखें और वर्कशीट प्रिंट करें। कोई विज्ञापन नहीं।
+  - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।
+  - App Store: https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Pro: ABC Phonics](https://open.cait518.cc/ios-app-guide/hi/lumiletterspro.html) — अंग्रेज़ी अक्षरों की ध्वनियाँ
+  - बच्चा शब्द सुनता है, पहली, बीच की या आख़िरी ध्वनि ढूँढता है और अक्षर पर ट्रेस करता है। 26 अक्षर, 14 ग्रह, प्रिंट करने लायक वर्कशीट। कोई विज्ञापन नहीं।
+  - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।
+  - App Store: https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Planet: Explorer](https://open.cait518.cc/ios-app-guide/hi/lumimath.html) — LKG से कक्षा 3 तक गणित खेल
+  - सही जवाब दो और एक ग्रह चमक उठता है। गिनती, जोड़, घटाव, पहाड़े, घड़ी, पैसे के 46 तरह के चित्र वाले सवाल। प्रिंट वाली वर्कशीट। कोई विज्ञापन नहीं, कोई सब्सक्रिप्शन नहीं।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Pro: Kids Numbers](https://open.cait518.cc/ios-app-guide/hi/lumimathpro.html) — तर्क पहेलियाँ और इबारती सवाल
+  - तर्क पहेलियाँ, पैटर्न और इबारती सवाल, 46 तरह के प्रश्नों में। कमज़ोर हिस्सों का अभ्यास, प्रगति रिपोर्ट और प्रिंट होने वाली वर्कशीट। कोई विज्ञापन नहीं।
+  - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।
+  - App Store: https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi अक्षर Lite](https://open.cait518.cc/ios-app-guide/hi/lumiletters.html) — ABC लिखना और फोनिक्स सीखें
+  - पहले अक्षर A और पहला ग्रह आज़माएँ: बच्चा ध्वनि सुनता है, उंगली से लिखता है और ग्रहों के क्विज़ खेलता है। बाद में सभी 26 अक्षर अनलॉक करें। कोई विज्ञापन नहीं।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi बोपोमोफो](https://open.cait518.cc/ios-app-guide/hi/lumibopomofo.html) — Zhuyin: बच्चों की चीनी
+  - आवाज़ सुनकर सिंबल दोस्तों को खाना खिलाएँ, हर स्ट्रोक क्रम से ट्रेस करें, टोन रोलर-कोस्टर पर चढ़ें और ट्रेन में ध्वनियाँ जोड़ें। इंटरनेट के बिना भी चलता है।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi मिशन ग्रह](https://open.cait518.cc/ios-app-guide/hi/lumimission.html) — बच्चों का इनाम और स्टिकर चार्ट
+  - कम डांट, ज़्यादा जीत: हर पूरा मिशन सितारे देता है, Lumi को खाना खिलाता है और 100 स्टिकर वाली एल्बम भरता है। अपने काम भी जोड़ें। कोई विज्ञापन नहीं।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi मिशन ग्रह Pro](https://open.cait518.cc/ios-app-guide/hi/lumimissionpro.html) — सुबह-शाम की दिनचर्या
+  - सभी रूटीन शामिल: खाना, दांत ब्रश, सोना, खिलौने समेटना और स्कूल की तैयारी, अपने काम, 7 दिन का सार और शाम का रिमाइंडर। न विज्ञापन, इंटरनेट के बिना भी चलता है।
+  - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।
+  - App Store: https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Lumi मौसम: आज का पूर्वानुमान](https://open.cait518.cc/ios-app-guide/hi/lumiweather.html) — बाहर जाने का स्कोर व पहनावा
+  - अभी बाहर जाएं या रुकें? Lumi पूर्वानुमान को 0–100 आउटिंग स्कोर में बदलता है और बताता है क्या पहनें, छाता या सनस्क्रीन चाहिए या नहीं। घंटेवार और 7 दिन का पूर्वानुमान।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: जानकारी हटाएँ](https://open.cait518.cc/ios-app-guide/hi/maskmyfile.html) — भेजने से पहले विवरण छिपाएँ
+  - सर्दियों की यात्रा के लिए पासपोर्ट की कॉपी या साल के आखिर में सैलरी स्लिप भेजनी है? निजी जानकारी ढूंढें, सिर्फ़ चुना हिस्सा हमेशा के लिए छिपाएं और मेटाडेटा हटाएं।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: पिछली बार](https://open.cait518.cc/ios-app-guide/hi/mochidonestamp.html) — कब किया था? घर के काम याद रखें
+  - अब यह सोचने की ज़रूरत नहीं कि पिछली बार कब किया था। पूरा होने पर स्टैम्प लगाएँ, Mochi याद रखेगा और समय आने पर याद दिलाएगा। चादर, फ़िल्टर, पौधे, परिवार के साथ भी।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: प्यारी टास्क लिस्ट](https://open.cait518.cc/ios-app-guide/hi/mochi.html) — प्यारे काम और विजेट
+  - दिवाली की सफ़ाई से साल के आख़िर तक, पढ़ाई, काम और खरीदारी सब एक प्यारी लिस्ट में। काम पूरा होने पर छोटे गोले पर टैप करें, सुंदर थीम चुनें और Home Screen पर widgets लगाएँ।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag: आय और व्यय](https://open.cait518.cc/ios-app-guide/hi/moneytag.html) — प्रोजेक्ट · टैग · रिपोर्ट
+  - सर्दियों और साल के आखिर में साइड काम या मेले का स्टॉल? आपका प्रोजेक्ट आय घटा व्यय को एक साफ़ शुद्ध राशि में, आपकी चुनी मुद्रा में दिखाता है। Apple Watch से एंट्री करें।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: स्लाइड मेकर](https://open.cait518.cc/ios-app-guide/hi/onepageppt.html) — टेक्स्ट से परफेक्ट प्रस्तुति
+  - साल के आख़िर की रिव्यू मीटिंग? नोट्स, PDF, स्क्रीनशॉट या CSV डालें और एक साफ़ 16:9 स्लाइड पाएँ: मुख्य बातें हेडलाइन, आंकड़े चार्ट। PNG में शेयर करें।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: फिल्म फिल्टर](https://open.cait518.cc/ios-app-guide/hi/photocream.html) — फिल्म कैमरा और विंटेज फिल्टर
+  - शादियों के सीज़न और साल के आखिर की पार्टियों की तस्वीरें पीली रोशनी में? रोशनी, रंग और कर्व्स बारीकी से ठीक करें, डिटेल खोए बिना त्वचा निखारें, फ़िल्म ग्रेन जोड़ें।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: फोटो क्लीनर](https://open.cait518.cc/ios-app-guide/hi/picclear.html) — स्क्रीनशॉट हटाएं, जगह बनाएं
+  - स्टोरेज फुल? गीगाबाइट जगह खाली करें: डुप्लिकेट और मिलती-जुलती फ़ोटो, पुराने स्क्रीनशॉट और बड़े वीडियो ढूँढें, हटाने से पहले सब जाँचें। स्कैन डिवाइस पर ही होता है।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: स्कैन व बनाएँ](https://open.cait518.cc/ios-app-guide/hi/qrcodehalo.html) — तुरंत खोलें, बाद में जाँचें
+  - स्कैन कीजिए और काम हो गया: लिंक खुलते हैं, Wi-Fi पर iOS का संदेश आता है, कॉल और ईमेल तैयार। हर सहेजे गए स्कैन की इतिहास में सुरक्षा जाँच, आपके डिवाइस पर।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: AI बुकमार्क](https://open.cait518.cc/ios-app-guide/hi/savetag.html) — लिंक सेव करें, बाद में पढ़ें
+  - सर्दियों की छुट्टियों के गिफ़्ट आइडिया, रेसिपी और घूमने की जगहों के लिंक चैट में खो जाते हैं? किसी भी ऐप से शेयर करें, डिवाइस पर अपने-आप टैग होंगे फिर मतलब से खोजें।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: PDF और OCR](https://open.cait518.cc/ios-app-guide/hi/scanto.html) — ऑफलाइन डॉक्यूमेंट स्कैनर
+  - साल के आखिर के बिल, वारंटी कार्ड और कॉन्ट्रैक्ट जमा हो गए? इन्हें साफ़ PDF में स्कैन करें, डिवाइस पर OCR एक शब्द से सही दस्तावेज़ ढूंढ देता है। ऑफ़लाइन, बिना अकाउंट।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: स्लीप साउंड्स](https://open.cait518.cc/ios-app-guide/hi/sereno.html) — व्हाइट नॉइज़, बारिश और समुद्र
+  - बारिश, समुद्र, आग समेत 140+ सुकून भरी आवाज़ें, नींद और फ़ोकस के लिए। खुद मिक्स करें, धीरे-धीरे बंद होने वाला टाइमर, चिड़ियों की चहचहाहट से जागें। ऑफलाइन, बिना अकाउंट।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/hi/shotinbox.html) — स्क्रीनशॉट छँटाई और OCR खोज
+  - साल के आख़िर की शॉपिंग और सर्दियों के सफ़र में रसीद, टिकट और ऑर्डर के स्क्रीनशॉट जमा हो जाते हैं। सब अपने आप छँटते हैं, अंदर का टेक्स्ट खोजें, पैकेज ट्रैक करें।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: घर पर ID फोटो](https://open.cait518.cc/ios-app-guide/hi/snapportlite.html) — सही साइज़ में पोर्ट्रेट फोटो
+  - सर्दी की छुट्टियों में विदेश यात्रा या पासपोर्ट रिन्यू? तैयार साइज़ टेम्पलेट से फ़ोटो सही नाप में काटें, चेहरे की गाइड और सफ़ेद या नीले बैकग्राउंड के साथ, फ़ोन पर ही।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: पासपोर्ट फोटो](https://open.cait518.cc/ios-app-guide/hi/snapport.html) — 35x45 और प्रिंट शीट
+  - छुट्टियों में विदेश यात्रा या पासपोर्ट रिन्यू? घर पर ही पासपोर्ट और वीज़ा फ़ोटो बनाएँ: आम साइज़ के टेम्पलेट, चेहरा सही जगह रखने की गाइड, सफ़ेद बैकग्राउंड और प्रिंट शीट।
+  - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।
+  - App Store: https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/hi/sononote.html) — वॉइस टू टेक्स्ट · नोट्स
+  - बोलिए, Sono Note उसे साफ़ ट्रांसक्रिप्ट, सारांश, मुख्य बिंदु और टू-डू में बदल देता है, फ़ॉलो-अप ईमेल भी। मीटिंग, क्लास और कॉल के लिए। किसी अकाउंट की ज़रूरत नहीं।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: फ़्लिप डेस्क क्लॉक](https://open.cait518.cc/ios-app-guide/hi/stayclock.html) — हमेशा ऑन समय और कैलेंडर
+  - सर्दी की लंबी रातों से साल के आखिर तक: चार्ज होते समय फ़ोन बन जाए बिस्तर के पास बड़ी, साफ़ हमेशा ऑन क्लॉक। महीना कैलेंडर, हर घंटे की घंटी और एक सरल अलार्म भी।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: फ़ोकस टाइमर](https://open.cait518.cc/ios-app-guide/hi/studydown.html) — स्क्रीन नीचे करके रखें
+  - सर्दियों की परीक्षाएँ और साल के आख़िर के प्रोजेक्ट? कोई गतिविधि चुनें, फ़ोन उल्टा रखें और समय गिनना शुरू; उठाते ही रुक जाएगा। आज और इस हफ़्ते का समय गतिविधि अनुसार देखें।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet: Kids Quest](https://open.cait518.cc/ios-app-guide/hi/tripplanet.html) — फ्लाइट और रोड ट्रिप मिशन
+  - फ्लाइट, लंबी कार यात्रा और नई जगहें बनें मिशन: सीट बेल्ट, क्रू को धन्यवाद, एक कौर चखना। हर मिशन पर इनाम, हर पूरी यात्रा पर पासपोर्ट में मुहर। कोई विज्ञापन नहीं।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: यात्रा प्लानर](https://open.cait518.cc/ios-app-guide/hi/tripbeelite.html) — छुट्टियों का रोज़ का शेड्यूल
+  - सर्दियों की छुट्टियों या नए साल की यात्रा पर? पूरा सफ़र एक दिन-ब-दिन टाइमलाइन पर रखें: फ़्लाइट और होटल की जानकारी, नोट्स, रिमाइंडर और टिकट की जानकारी एक साथ।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: यात्रा प्लानर](https://open.cait518.cc/ios-app-guide/hi/tripbee.html) — ग्रुप ट्रिप और पैकिंग लिस्ट
+  - परिवार या दोस्तों के साथ एक ही ट्रिप मिलकर एडिट करें, हर दिन के लिए बारिश का प्लान बी जोड़ें और लोकल टाइम पर रिमाइंडर पाएं। पैकिंग लिस्ट हर यात्री के हिसाब से बनती है।
+  - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।
+  - App Store: https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: फ़ोटो साफ़](https://open.cait518.cc/ios-app-guide/hi/unblurry.html) — पुरानी फोटो ठीक करें
+  - सर्दियों की शादी का सीज़न और साल के आख़िर की पार्टियाँ: धुंधली या हिली तस्वीरें? शार्पन से फोकस लौटाएँ, डीनॉइज़ से ग्रेन हटाएँ, लो लाइट से अंधेरी फोटो रोशन करें।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: AI उपयोग ट्रैकर](https://open.cait518.cc/ios-app-guide/hi/claudeusagemini.html) — Claude, Codex, Copilot लिमिट
+  - किसी भी प्रतिशत पर अपने अलर्ट, 5 घंटे या साप्ताहिक रीसेट के हिसाब से क्रम, और ऐसे विजेट जो सारे अकाउंट पलटकर दिखाएँ। देखें हर AI प्लान में कितना बचा है।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/hi/wifiaidlite.html) — नेट नहीं चल रहा? वजह जानें
+  - नेट नहीं चल रहा? वाई-फ़ाई, प्रोवाइडर या सिर्फ़ एक वेबसाइट? एक टैप में अलग-अलग जांच चलती हैं और सबसे संभावित वजह व आगे क्या करें, वह दिखता है।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: नेटवर्क समस्या खोजें](https://open.cait518.cc/ios-app-guide/hi/wifiaid.html) — राउटर, मेश और DNS जांच
+  - सर्दी की छुट्टियों में पूरा परिवार एक ही वाई-फाई पर? नेट अटके तो एक टैप में वाई-फाई, डीएनएस और इंटरनेट जाँचें और सबसे संभावित कारण जानें, या सिर्फ़ एक वेबसाइट जाँचें।
+  - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।
+  - App Store: https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite: इंग्लिश सीखें](https://open.cait518.cc/ios-app-guide/hi/wordmatelite.html) — रोज़ 5 नए शब्द, एक मिनट
+  - रोज़ एक मिनट में 5 शब्द, 44 भाषाओं में से किसी में भी। हर शब्द सुनें, वाक्य में देखें और अपनी स्ट्रीक बनाए रखें। ऑफलाइन भी चलता है, अकाउंट की ज़रूरत नहीं।
+  - कीमत: मुफ़्त डाउनलोड, एक बार की खरीद से सब कुछ अनलॉक। कोई सब्सक्रिप्शन नहीं।
+  - App Store: https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: 44 भाषाएँ सीखें](https://open.cait518.cc/ios-app-guide/hi/wordmate.html) — शब्द याद करें, विजेट और वॉच
+  - सर्दियों की छुट्टियों में सफ़र या नए साल का संकल्प? खाली पलों में 44 भाषाओं के शब्द सीखें: 14 व्यावहारिक विषय, उदाहरण वाक्य और उच्चारण सुनने की सुविधा। विजेट से भी।
+  - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।
+  - App Store: https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: ZIP, RAR, 7z अनज़िप](https://open.cait518.cc/ios-app-guide/hi/zipbox.html) — बिना विज्ञापन, अंदर झाँकिए
+  - साल के आखिर की तस्वीरें पासवर्ड वाले 7z में आईं? खोलने से पहले अंदर देखें, फ़ोटो और PDF का पूर्वावलोकन करें और बस ज़रूरी फ़ाइल निकालें। सब डिवाइस पर, विज्ञापन नहीं।
+  - कीमत: एक अग्रिम कीमत वाला सशुल्क डाउनलोड, बिना किसी सदस्यता के।
+  - App Store: https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

@@ -1,0 +1,23 @@
+---
+title: "лучшее приложение для исправления размытых фото детей на iPhone"
+lang: "ru"
+canonical: "https://open.cait518.cc/ios-app-guide/videos/ru/unblurry.html"
+modified: "2026-10-17"
+video_url: "https://files.catbox.moe/3algui.mp4"
+duration: "PT16S"
+app_store_id: "6782275018"
+verified_live: true
+publisher: "Lumi Studio"
+---
+
+# лучшее приложение для исправления размытых фото детей на iPhone
+
+Дети не могут долго стоять на месте, поэтому мягкое размытие и дрожание камеры неизбежны
+
+[Смотреть видео](https://files.catbox.moe/3algui.mp4)
+
+[Скачайте Unblurry в App Store →](https://apps.apple.com/ru/app/id6782275018?pt=118326163&ct=iag_video_ru&mt=8)
+
+[Открыть руководство по приложению](https://open.cait518.cc/ios-app-guide/ru/answers/best-app-to-fix-blurry-photos-of-kids-on-iphone.html)
+
+> Руководство подготовлено издателем Lumi Studio, разработчиком приложения. Названия приложений являются товарными знаками их владельцев и используются только для идентификации. Принимая решения, связанные с документами, здоровьем, учёбой и работой, сверяйтесь с официальными требованиями там, где это важно.

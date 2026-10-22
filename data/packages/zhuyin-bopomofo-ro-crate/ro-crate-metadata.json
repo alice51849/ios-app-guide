@@ -1,0 +1,246 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.3/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.3"
+      }
+    },
+    {
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
+      "@type": [
+        "Dataset",
+        "LearningResource"
+      ],
+      "name": "Bopomofo 37-Symbol Open Reference RO-Crate",
+      "alternateName": "完整 37 注音符號開放參考資料 RO-Crate",
+      "description": "An attached RO-Crate 1.3 research object containing the complete 37-symbol Bopomofo table plus JSON Lines, Croissant 1.1, W3C CSVW and SKOS JSON-LD metadata.",
+      "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
+      "identifier": {
+        "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/#identifier"
+      },
+      "cite-as": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
+      "version": "1.0.0",
+      "datePublished": "2026-07-11",
+      "dateModified": "2026-09-05",
+      "inLanguage": [
+        "en",
+        "zh-Hant"
+      ],
+      "keywords": [
+        "Bopomofo",
+        "Zhuyin",
+        "Mandarin phonetics",
+        "RO-Crate",
+        "open data",
+        "research object"
+      ],
+      "isAccessibleForFree": true,
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "creator": {
+        "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/#publisher"
+      },
+      "publisher": {
+        "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/#publisher"
+      },
+      "hasPart": [
+        {
+          "@id": "data/zhuyin-bopomofo-ml-dataset.csv"
+        },
+        {
+          "@id": "data/zhuyin-bopomofo-ml-dataset.jsonl"
+        },
+        {
+          "@id": "data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
+        },
+        {
+          "@id": "data/zhuyin-bopomofo-ml-dataset.csv-metadata.json"
+        },
+        {
+          "@id": "data/zhuyin-bopomofo-vocabulary.jsonld"
+        },
+        {
+          "@id": "README.txt"
+        },
+        {
+          "@id": "LICENSE.txt"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://www.researchobject.org/ro-crate/specification/1.3/"
+        },
+        {
+          "@id": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+        }
+      ],
+      "creditText": "Bopomofo 37-Symbol Open Reference Data, iOS App Guide Open Resources, https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/"
+    },
+    {
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/#identifier",
+      "@type": "PropertyValue",
+      "name": "Canonical web identifier",
+      "propertyID": "URL",
+      "value": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
+      "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/"
+    },
+    {
+      "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/#publisher",
+      "@type": "Organization",
+      "name": "iOS App Guide Open Resources",
+      "url": "https://open.cait518.cc/ios-app-guide"
+    },
+    {
+      "@id": "https://creativecommons.org/licenses/by/4.0/",
+      "@type": "CreativeWork",
+      "name": "Creative Commons Attribution 4.0 International",
+      "description": "Permits sharing and adaptation for any purpose with attribution."
+    },
+    {
+      "@id": "https://w3id.org/ro/crate/1.3",
+      "@type": "CreativeWork",
+      "name": "RO-Crate Metadata Specification 1.3.0",
+      "url": "https://www.researchobject.org/ro-crate/specification/1.3/"
+    },
+    {
+      "@id": "https://w3id.org/ro/crate/1.3/context",
+      "@type": "CreativeWork",
+      "name": "RO-Crate 1.3 JSON-LD Context",
+      "encodingFormat": "application/ld+json",
+      "version": "1.3.0",
+      "license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "@id": "https://www.researchobject.org/ro-crate/specification/1.3/",
+      "@type": "CreativeWork",
+      "name": "RO-Crate Metadata Specification 1.3.0",
+      "isBasedOn": {
+        "@id": "https://github.com/ResearchObject/ro-crate/commit/4b4f939c18022550ae0b992b7ddfb2cb5b2e8608"
+      }
+    },
+    {
+      "@id": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html",
+      "@type": "CreativeWork",
+      "name": "Taiwan Ministry of Education Bopomofo reference",
+      "publisher": {
+        "@id": "https://www.edu.tw/"
+      }
+    },
+    {
+      "@id": "https://www.edu.tw/",
+      "@type": "Organization",
+      "name": "Ministry of Education, Taiwan"
+    },
+    {
+      "@id": "ro-crate-preview.html",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/"
+      },
+      "name": "Static RO-Crate preview",
+      "encodingFormat": "text/html"
+    },
+    {
+      "@id": "data/zhuyin-bopomofo-ml-dataset.csv",
+      "@type": "File",
+      "name": "Canonical 37-row Bopomofo table",
+      "description": "UTF-8 table covering all 37 Bopomofo symbols with stable IDs, Unicode notation, Hanyu Pinyin, broad IPA, categories and examples.",
+      "encodingFormat": "text/csv",
+      "contentSize": "7980",
+      "sha256": "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "data/zhuyin-bopomofo-ml-dataset.jsonl",
+      "@type": "File",
+      "name": "Equivalent Bopomofo JSON Lines records",
+      "description": "One UTF-8 JSON object per Bopomofo symbol in canonical display order.",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "14364",
+      "sha256": "d9be72584419f591af4bbf94cab7d28625ab635140da6a0e68e3888639355cd7",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+      "@type": "File",
+      "name": "MLCommons Croissant metadata",
+      "description": "Croissant 1.1 metadata describing the canonical CSV and JSON Lines records, fields, source provenance and CC BY 4.0 reuse terms.",
+      "encodingFormat": "application/ld+json",
+      "contentSize": "13637",
+      "sha256": "7a3f9b535b1f032c5f5dace8e013187ef07d63d927e7906765f17666edef4b35",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "conformsTo": {
+        "@id": "http://mlcommons.org/croissant/1.1"
+      }
+    },
+    {
+      "@id": "data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+      "@type": "File",
+      "name": "W3C CSVW metadata",
+      "description": "CSV on the Web metadata describing the canonical table dialect, required columns, datatypes, primary key and URI templates.",
+      "encodingFormat": "application/csvm+json",
+      "contentSize": "7631",
+      "sha256": "8fa9e6bc32d3286d08c7e00f96ffd0cc6d9a60ea22e7bcc0b35a289a14fc3677",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "conformsTo": {
+        "@id": "https://www.w3.org/TR/tabular-metadata/"
+      }
+    },
+    {
+      "@id": "data/zhuyin-bopomofo-vocabulary.jsonld",
+      "@type": "File",
+      "name": "Bopomofo SKOS vocabulary",
+      "description": "JSON-LD SKOS concept scheme for all 37 Bopomofo symbols with stable concept IRIs, bilingual labels and phonetic notation.",
+      "encodingFormat": "application/ld+json",
+      "contentSize": "78997",
+      "sha256": "88d6a5115cebd1f4936211ac8efab38ea18550409e8177de329242b03cf77f49",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "conformsTo": {
+        "@id": "https://www.w3.org/TR/skos-reference/"
+      }
+    },
+    {
+      "@id": "README.txt",
+      "@type": "File",
+      "name": "Bilingual RO-Crate reuse guide",
+      "description": "Plain-text English and Traditional Chinese validation and reuse guide.",
+      "encodingFormat": "text/plain",
+      "contentSize": "1459",
+      "sha256": "2fe44f82052394c17a79e2d3a1d12a092e3c94c64b41540b3eabb4a5c3efeee9",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "LICENSE.txt",
+      "@type": "File",
+      "name": "CC BY 4.0 attribution notice",
+      "description": "License URL and requested attribution for the packaged open data.",
+      "encodingFormat": "text/plain",
+      "contentSize": "509",
+      "sha256": "7e80de9c04fa0316a5db5630c5925191dec40715e865e6f8a26469a77206520c",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    }
+  ]
+}

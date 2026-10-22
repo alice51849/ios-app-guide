@@ -1,0 +1,28 @@
+---
+title: "beste app for leggetid-rutine for barnehagebarn uten reklame"
+lang: "no"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/no/index.html"
+modified: "2026-10-21"
+app_store_id: "6779750237"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# beste app for leggetid-rutine for barnehagebarn uten reklame
+
+For barnehagebarn fungerer en leggetid-rutine best når den er kort, visuell og forutsigbar nok til at barnet kan følge den uten flere påminnelser. Kjenner du deg igjen, ta en titt på Lumi Mission Planet.
+
+- Barn og læring
+- Gratis å starte
+- Ingen konto
+- Ingen annonser
+- Ingen sporing
+- Privat / på enheten
+- App Store · Gratis
+
+[Få Lumi Mission Planet på App Store →](https://apps.apple.com/no/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
+
+[Les hele veiledningen](https://open.cait518.cc/ios-app-guide/no/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
+
+> Guide skrevet av Lumi Studio, utvikleren av appen. Appnavn er varemerker som tilhører sine eiere og brukes bare til identifikasjon. Når det gjelder dokumenter, helse, skole og produktivitet, bør du sjekke de offisielle kravene der det er relevant.

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="bn-BD">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>UsageNow: AI ব্যবহার ট্র্যাকার — Claude, Codex, Copilot সীমা | iOS App</title>
+<meta name="description" content="কাজের মাঝপথে AI-এর সীমা শেষ? UsageNow আপনার হোম স্ক্রিনেই দেখায় প্রতিটি AI প্ল্যানে কতটা বাকি আর ঠিক কখন তা রিসেট হবে, সঙ্গে সীমা শেষ হওয়ার আগে সতর্কও">
+<meta name="keywords" content="usage, tracker, code, dev, developer, quota, token, widget, টোকেন, কোটা, উইজেট, রিসেট, সাপ্তাহিক, বাকি, reset, llm">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/bn-BD/claudeusagemini.html">
+<!-- social-preview:start -->
+<meta property="og:title" content="UsageNow: AI ব্যবহার ট্র্যাকার — Claude, Codex, Copilot সীমা | iOS App">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/bn-BD/claudeusagemini.html">
+<meta property="og:image" content="https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg">
+<meta property="og:image:secure_url" content="https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="UsageNow: AI ব্যবহার ট্র্যাকার — Claude, Codex, Copilot সীমা | iOS App">
+<meta property="og:description" content="কাজের মাঝপথে AI-এর সীমা শেষ? UsageNow আপনার হোম স্ক্রিনেই দেখায় প্রতিটি AI প্ল্যানে কতটা বাকি আর ঠিক কখন তা রিসেট হবে, সঙ্গে সীমা শেষ হওয়ার আগে সতর্কও">
+<meta property="og:locale" content="bn_BD">
+<meta property="og:site_name" content="iOS App Guide">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<script type="application/ld+json" data-iag="primary-image">{"@context":"https://schema.org","@type":"WebPage","@id":"https://open.cait518.cc/ios-app-guide/bn-BD/claudeusagemini.html#webpage","url":"https://open.cait518.cc/ios-app-guide/bn-BD/claudeusagemini.html","name":"UsageNow: AI ব্যবহার ট্র্যাকার — Claude, Codex, Copilot সীমা | iOS App","description":"কাজের মাঝপথে AI-এর সীমা শেষ? UsageNow আপনার হোম স্ক্রিনেই দেখায় প্রতিটি AI প্ল্যানে কতটা বাকি আর ঠিক কখন তা রিসেট হবে, সঙ্গে সীমা শেষ হওয়ার আগে সতর্কও","inLanguage":"bn-BD","primaryImageOfPage":{"@type":"ImageObject","@id":"https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg#primaryimage","contentUrl":"https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg","url":"https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg","width":1200,"height":675,"encodingFormat":"image/jpeg","caption":"UsageNow: AI ব্যবহার ট্র্যাকার — Claude, Codex, Copilot সীমা | iOS App","representativeOfPage":true},"mainEntity":{"@id":"urn:apple:app:id6818607603"}}</script>
+<style>
+.iag-app-preview{margin:clamp(1rem,3vw,1.5rem) 0 clamp(1.5rem,4vw,2.25rem)}
+.iag-app-preview__link{display:block;position:relative;width:100%;max-width:1200px;margin:0 auto;overflow:hidden;border-radius:clamp(14px,2.2vw,24px);background:#0b1020;box-shadow:0 18px 50px rgba(15,23,42,.22);line-height:0}
+.iag-app-preview__link::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.28);border-radius:inherit;pointer-events:none}
+.iag-app-preview__link:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
+.iag-app-preview__image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+@media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
+</style>
+<meta name="twitter:card" content="app">
+<meta name="twitter:title" content="UsageNow: AI ব্যবহার ট্র্যাকার — Claude, Codex, Copilot সীমা | iOS App">
+<meta name="twitter:description" content="কাজের মাঝপথে AI-এর সীমা শেষ? UsageNow আপনার হোম স্ক্রিনেই দেখায় প্রতিটি AI প্ল্যানে কতটা বাকি আর ঠিক কখন তা রিসেট হবে, সঙ্গে সীমা শেষ হওয়ার আগে সতর্কও">
+<meta name="twitter:image" content="https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg">
+<meta name="twitter:image:alt" content="UsageNow: AI ব্যবহার ট্র্যাকার — Claude, Codex, Copilot সীমা | iOS App">
+<meta name="twitter:app:name:iphone" content="UsageNow">
+<meta name="twitter:app:id:iphone" content="6818607603">
+<meta name="twitter:app:name:ipad" content="UsageNow">
+<meta name="twitter:app:id:ipad" content="6818607603">
+<link rel="alternate" type="application/json+oembed" href="https://open.cait518.cc/ios-app-guide/oembed/bn-BD/claudeusagemini.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fbn-BD%2Fclaudeusagemini.html&amp;format=json" title="UsageNow: AI ব্যবহার ট্র্যাকার — Claude, Codex, Copilot সীমা | iOS App">
+<!-- social-preview:end -->
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/claudeusagemini.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/claudeusagemini.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/claudeusagemini.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/claudeusagemini.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/claudeusagemini.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/claudeusagemini.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/claudeusagemini.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/claudeusagemini.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/claudeusagemini.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/claudeusagemini.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/claudeusagemini.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/claudeusagemini.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/claudeusagemini.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/claudeusagemini.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/claudeusagemini.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/claudeusagemini.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/claudeusagemini.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/claudeusagemini.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/claudeusagemini.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/claudeusagemini.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/claudeusagemini.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/claudeusagemini.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/claudeusagemini.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/claudeusagemini.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/claudeusagemini.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/claudeusagemini.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/claudeusagemini.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/claudeusagemini.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/claudeusagemini.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/claudeusagemini.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/claudeusagemini.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/claudeusagemini.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/claudeusagemini.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/claudeusagemini.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/claudeusagemini.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/claudeusagemini.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/claudeusagemini.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/claudeusagemini.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/claudeusagemini.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/claudeusagemini.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/claudeusagemini.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/claudeusagemini.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/claudeusagemini.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"UsageNow: AI ব্যবহার ট্র্যাকার","operatingSystem":"iOS","applicationCategory":"BusinessApplication","inLanguage":"bn-BD","description":"কাজের মাঝপথে AI-এর সীমা শেষ? UsageNow আপনার হোম স্ক্রিনেই দেখায় প্রতিটি AI প্ল্যানে কতটা বাকি আর ঠিক কখন তা রিসেট হবে, সঙ্গে সীমা শেষ হওয়ার আগে সতর্কও করে।\n\nসব সীমা এক নজরে\nClaude: ৫ ঘণ্টার সেশন ও সাপ্তাহিক সীমা, প্রতিটি মডেলের আলাদা সাপ্তাহিক সীমাসহ\nChatGPT Codex: ৫ ঘণ্টা ও সাপ্তাহিক উইন্ডো\nGitHub Copilot: প্রিমিয়াম অনুরোধ, চ্যাট ও কোড কমপ্লিশন\nGemini: প্রতিটি মডেলের দৈনিক অনুরোধ কোটা\nপ্রতিটি রিসেট পর্যন্ত লাইভ কাউন্টডাউন, সঙ্গে আপনার অঞ্চলের ফরম্যাটে রিসেটের সঠিক সময়\n\nসীমা ছোঁয়ার আগেই সতর্কবার্তা\nনিজের মতো সতর্কবার্তা বানান: ৫ ঘণ্টার সীমা, সাপ্তাহিক সীমা বা সব সীমা বেছে নিন, তারপর আপনার কাছে জরুরি শতাংশটি লিখুন, যেমন ৯০ বা ৯৮। যত খুশি যোগ করুন।\nপ্রতিটি সতর্কবার্তা প্রতিটি সীমা ও প্রতিটি চক্রে একবারই আসে, তাই আপনার লক স্ক্রিন শান্ত থাকে। রিসেট সতর্কবার্তা চালু করুন, সীমা ফিরে আসার মুহূর্তেই জানতে পারবেন।\n\nআরও কাজের উইজেট\nউইজেটেই আপনার সব অ্যাকাউন্ট একে একে উল্টে দেখুন\nসর্বশেষ হিসাব চাইলে যেকোনো সময় উইজেটে ট্যাপ করে রিফ্রেশ করুন\nহোম স্ক্রিন ও লক স্ক্রিনের জন্য সব আকারের উইজেট, সঙ্গে Apple Watch কমপ্লিকেশন\n\nসব অ্যাকাউন্ট, আপনার সাজানো ক্রমে\nকাজ ও ব্যক্তিগত, Pro ও Max, পাশাপাশি। ৫ ঘণ্টার রিসেট, সাপ্তাহিক রিসেট, সবচেয়ে বেশি বা সবচেয়ে কম ব্যবহার, নাম বা সেবা অনুযায়ী সাজান, কিংবা টেনে এনে নিজের মতো ক্রম ঠিক করুন।\n\nযেখানেই কাজ করুন\niPhone, iPad আর Apple Watch।\n\nগোপনীয়তা শুরু থেকেই\nপ্রতিটি সেবার নিজস্ব লগইন পেজেই সাইন ইন করেন। আপনার লগইন থাকে ডিভাইসের কিচেইনে, আর UsageNow শুধু সেবাগুলোর সঙ্গেই যোগাযোগ করে। কোনো UsageNow সার্ভার নেই, নতুন অ্যাকাউন্ট খুলতে হয় না, কোনো ট্র্যাকিং নেই।\n\nআপনার ভাষায়\n৫০টি ভাষায় সম্পূর্ণ অনুবাদ, তারিখ ও সময় আপনার অঞ্চলের রীতিতে লেখা। ভাষা যেকোনো সময় সেটিংসে বদলান।\n\nআগে সবকিছু চালিয়ে দেখুন\nঅ্যাপে ২৪ ঘণ্টার ফ্রি ট্রায়াল শুরু করুন, উইজেটসহ সব ফিচার ব্যবহার করুন। ট্রায়ালের পরেও UsageNow ও এর উইজেট ব্যবহার চালিয়ে যেতে একবারের কেনাকাটায় UsageNow Pro আনলক করুন। কোনো সাবস্ক্রিপশন নেই।\n\nUsageNow একটি স্বাধীন অ্যাপ এবং Anthropic, OpenAI, GitHub, Microsoft বা Google-এর সঙ্গে সম্পর্কিত নয়। Claude, ChatGPT, Codex, GitHub Copilot ও Gemini তাদের নিজ নিজ মালিকের ট্রেডমার্ক।\n\nপ্রশ্ন বা ভাবনা? hourstag.app@gmail.com\n\nঅ্যাপটি iPhone Duo-এর জন্য অপ্টিমাইজ করা। ডিভাইসের ভাঁজ খুলে ল্যান্ডস্কেপ মোডে ব্যবহার করলে ভেতরের স্ক্রিন সাধারণ ফোনের স্ক্রিনকে শুধু টেনে বড় করার বদলে বাড়তি জায়গা কাজে লাগানো দুই কলামের লেআউটে চলে যায়। ভাঁজ করলে অ্যাপ বাইরের স্ক্রিনে এক কলামের লেআউটে চলতে থাকে।","featureList":["usage","tracker","code","dev","developer","quota","token","widget"],"keywords":"usage, tracker, code, dev, developer, quota, token, widget, টোকেন, কোটা, উইজেট, রিসেট, সাপ্তাহিক, বাকি, reset, llm","@id":"urn:apple:app:id6818607603","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6818607603"},"market_availability":{"state":"MARKET_UNAVAILABLE_OR_UNVERIFIED","reason":"MARKET_NOT_IN_APPLE_MEDIA_SERVICES","evidence":{"source_url":"https://support.apple.com/en-us/118205","observed_at":"2026-09-12","country":"BD","apple_media_services_markets":174,"country_listed":false,"lookup_app_results":0,"lookup_control_results":0,"redirect_market":"US"},"value":"N/A","content_retained":true,"publishable":false,"facts_allowed":false,"outbox_count":0}}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<main>
+  <h1>UsageNow: AI ব্যবহার ট্র্যাকার</h1>
+  <p><strong>Claude, Codex, Copilot সীমা</strong></p>
+
+  <!-- app-hook-clip:start -->
+<figure class="app-hook-clip" data-app-key="claudeusagemini" lang="en" style="margin:18px 0;max-width:300px">
+<video controls playsinline muted loop preload="none" poster="https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg" width="1080" height="1920" style="display:block;width:100%;aspect-ratio:9/16;border-radius:18px;background:#111;object-fit:contain" aria-label="AI limit hit mid-task again? | UsageNow: AI Usage Tracker"><source src="https://files.catbox.moe/7j8u68.mp4" type="video/mp4"></video>
+<figcaption style="margin-top:6px;font-size:14px;color:#6b6257">AI limit hit mid-task again?</figcaption>
+</figure>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"AI limit hit mid-task again? | UsageNow: AI Usage Tracker","description":"কাজের মাঝপথে AI-এর সীমা শেষ? UsageNow আপনার হোম স্ক্রিনেই দেখায় প্রতিটি AI প্ল্যানে কতটা বাকি আর ঠিক কখন তা রিসেট হবে, সঙ্গে সীমা শেষ হওয়ার আগে সতর্কও","thumbnailUrl":["https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg"],"uploadDate":"2026-10-18T00:00:00+00:00","contentUrl":"https://files.catbox.moe/7j8u68.mp4","duration":"PT13.5S","inLanguage":"en"}</script>
+<!-- app-hook-clip:end -->
+<h2>UsageNow: AI ব্যবহার ট্র্যাকার কী?</h2>
+  <p>UsageNow: AI ব্যবহার ট্র্যাকার একটি iOS অ্যাপ। Claude, Codex, Copilot সীমা</p>
+  <p>কাজের মাঝপথে AI-এর সীমা শেষ? UsageNow আপনার হোম স্ক্রিনেই দেখায় প্রতিটি AI প্ল্যানে কতটা বাকি আর ঠিক কখন তা রিসেট হবে, সঙ্গে সীমা শেষ হওয়ার আগে সতর্কও করে।</p>
+  <p>সব সীমা এক নজরে</p>
+  <p>Claude: ৫ ঘণ্টার সেশন ও সাপ্তাহিক সীমা, প্রতিটি মডেলের আলাদা সাপ্তাহিক সীমাসহ</p>
+  <p>ChatGPT Codex: ৫ ঘণ্টা ও সাপ্তাহিক উইন্ডো</p>
+  <p>GitHub Copilot: প্রিমিয়াম অনুরোধ, চ্যাট ও কোড কমপ্লিশন</p>
+  <p>Gemini: প্রতিটি মডেলের দৈনিক অনুরোধ কোটা</p>
+  <p>প্রতিটি রিসেট পর্যন্ত লাইভ কাউন্টডাউন, সঙ্গে আপনার অঞ্চলের ফরম্যাটে রিসেটের সঠিক সময়</p>
+  <p>সীমা ছোঁয়ার আগেই সতর্কবার্তা</p>
+  <p>নিজের মতো সতর্কবার্তা বানান: ৫ ঘণ্টার সীমা, সাপ্তাহিক সীমা বা সব সীমা বেছে নিন, তারপর আপনার কাছে জরুরি শতাংশটি লিখুন, যেমন ৯০ বা ৯৮। যত খুশি যোগ করুন।</p>
+  <p>প্রতিটি সতর্কবার্তা প্রতিটি সীমা ও প্রতিটি চক্রে একবারই আসে, তাই আপনার লক স্ক্রিন শান্ত থাকে। রিসেট সতর্কবার্তা চালু করুন, সীমা ফিরে আসার মুহূর্তেই জানতে পারবেন।</p>
+  <p>আরও কাজের উইজেট</p>
+  <p>উইজেটেই আপনার সব অ্যাকাউন্ট একে একে উল্টে দেখুন</p>
+  <p>সর্বশেষ হিসাব চাইলে যেকোনো সময় উইজেটে ট্যাপ করে রিফ্রেশ করুন</p>
+  <p>হোম স্ক্রিন ও লক স্ক্রিনের জন্য সব আকারের উইজেট, সঙ্গে Apple Watch কমপ্লিকেশন</p>
+  <p>সব অ্যাকাউন্ট, আপনার সাজানো ক্রমে</p>
+  <p>কাজ ও ব্যক্তিগত, Pro ও Max, পাশাপাশি। ৫ ঘণ্টার রিসেট, সাপ্তাহিক রিসেট, সবচেয়ে বেশি বা সবচেয়ে কম ব্যবহার, নাম বা সেবা অনুযায়ী সাজান, কিংবা টেনে এনে নিজের মতো ক্রম ঠিক করুন।</p>
+  <p>যেখানেই কাজ করুন</p>
+  <p>iPhone, iPad আর Apple Watch।</p>
+  <p>গোপনীয়তা শুরু থেকেই</p>
+  <p>প্রতিটি সেবার নিজস্ব লগইন পেজেই সাইন ইন করেন। আপনার লগইন থাকে ডিভাইসের কিচেইনে, আর UsageNow শুধু সেবাগুলোর সঙ্গেই যোগাযোগ করে। কোনো UsageNow সার্ভার নেই, নতুন অ্যাকাউন্ট খুলতে হয় না, কোনো ট্র্যাকিং নেই।</p>
+  <p>আপনার ভাষায়</p>
+  <p>৫০টি ভাষায় সম্পূর্ণ অনুবাদ, তারিখ ও সময় আপনার অঞ্চলের রীতিতে লেখা। ভাষা যেকোনো সময় সেটিংসে বদলান।</p>
+  <p>আগে সবকিছু চালিয়ে দেখুন</p>
+  <p>অ্যাপে ২৪ ঘণ্টার ফ্রি ট্রায়াল শুরু করুন, উইজেটসহ সব ফিচার ব্যবহার করুন। ট্রায়ালের পরেও UsageNow ও এর উইজেট ব্যবহার চালিয়ে যেতে একবারের কেনাকাটায় UsageNow Pro আনলক করুন। কোনো সাবস্ক্রিপশন নেই।</p>
+  <p>UsageNow একটি স্বাধীন অ্যাপ এবং Anthropic, OpenAI, GitHub, Microsoft বা Google-এর সঙ্গে সম্পর্কিত নয়। Claude, ChatGPT, Codex, GitHub Copilot ও Gemini তাদের নিজ নিজ মালিকের ট্রেডমার্ক।</p>
+  <p><!--email_off-->প্রশ্ন বা ভাবনা? hourstag.app@gmail.com<!--/email_off--></p>
+  <p>অ্যাপটি iPhone Duo-এর জন্য অপ্টিমাইজ করা। ডিভাইসের ভাঁজ খুলে ল্যান্ডস্কেপ মোডে ব্যবহার করলে ভেতরের স্ক্রিন সাধারণ ফোনের স্ক্রিনকে শুধু টেনে বড় করার বদলে বাড়তি জায়গা কাজে লাগানো দুই কলামের লেআউটে চলে যায়। ভাঁজ করলে অ্যাপ বাইরের স্ক্রিনে এক কলামের লেআউটে চলতে থাকে।</p>
+
+  <h2>মূল বৈশিষ্ট্য</h2>
+  <ul>
+    <li>usage</li>
+    <li>tracker</li>
+    <li>code</li>
+    <li>dev</li>
+    <li>developer</li>
+    <li>quota</li>
+    <li>token</li>
+    <li>widget</li>
+  </ul>
+
+  <h2>মূল্য</h2>
+  <p>বিনামূল্যে ডাউনলোড করুন। একবার কিনলেই সব ফিচার আনলক হবে—কোনো সাবস্ক্রিপশন নেই।</p>
+
+  <h2>ডাউনলোড</h2>
+  <p class="market-availability" data-market-state="MARKET_UNAVAILABLE_OR_UNVERIFIED" data-market-reason="MARKET_NOT_IN_APPLE_MEDIA_SERVICES" data-market-evidence="https://support.apple.com/en-us/118205">Apple App Store এখনো বাংলাদেশে চালু হয়নি, তাই এখান থেকে UsageNow-এর সরাসরি ডাউনলোড লিঙ্ক দেওয়া সম্ভব নয়। অ্যাপটির সব তথ্য নিচে বাংলায় দেওয়া আছে।</p><p><a href="https://open.cait518.cc/ios-app-guide/alternatives/">বিকল্প অ্যাপ</a></p>
+<p class="publisher-disclosure" data-publisher-disclosure="true"><small>এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।</small></p>
+</main>
+<!-- webmcp-install-tool:start -->
+<script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6818607603","app_name":"UsageNow","page_language":"bn-BD","page_url":"https://open.cait518.cc/ios-app-guide/bn-BD/claudeusagemini.html","app_store_url":null,"localized_description":"কাজের মাঝপথে AI-এর সীমা শেষ?","market_availability":{"state":"MARKET_UNAVAILABLE_OR_UNVERIFIED","reason":"MARKET_NOT_IN_APPLE_MEDIA_SERVICES","evidence":{"source_url":"https://support.apple.com/en-us/118205","observed_at":"2026-09-12","country":"BD","apple_media_services_markets":174,"country_listed":false,"lookup_app_results":0,"lookup_control_results":0,"redirect_market":"US"},"value":"N/A","content_retained":true,"publishable":false,"facts_allowed":false,"outbox_count":0}}</script>
+<script src="https://open.cait518.cc/ios-app-guide/assets/webmcp-install-tool-v2.js" data-webmcp-install="iag-webmcp-install-data" defer></script>
+<!-- webmcp-install-tool:end -->
+</body>
+</html>

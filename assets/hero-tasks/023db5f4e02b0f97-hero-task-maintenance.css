@@ -1,0 +1,12 @@
+select{display:block;width:100%;min-width:0;min-height:46px;border:1px solid #bbb1ca;border-radius:10px;padding:9px 10px;color:var(--ink);background:#fff;font:inherit}
+select:focus-visible{outline:3px solid #ab86e8;outline-offset:3px}
+input[type=date],input[data-field=interval_value]{direction:ltr;text-align:start}
+.maintenance-row{display:grid;grid-template-columns:minmax(120px,2fr) minmax(150px,1.2fr) minmax(76px,.8fr) minmax(110px,1fr) minmax(110px,1fr) minmax(70px,.7fr) minmax(110px,1fr) auto;gap:12px;align-items:end;padding:12px 0;border-bottom:1px solid var(--line)}
+.maintenance-row output{display:block;min-height:46px;padding:10px 0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.status-badge{display:inline-block;border-radius:999px;padding:4px 10px;background:var(--soft);font-size:.9rem}
+.status-badge[data-status=overdue]{background:#fbe3ea;color:#8b1e3d}
+.status-badge[data-status=due_soon]{background:#fff1d6;color:#7a4b00}
+.status-badge[data-status=ok]{background:#e2f5ea;color:#1d5c39}
+#maintenance-rows{order:3}
+@media(max-width:780px){.maintenance-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.maintenance-row>.name-field{grid-column:1/-1}.maintenance-row>[data-remove]{grid-column:1/-1;justify-self:end}}
+@media(max-width:420px){.maintenance-row{grid-template-columns:1fr}}

@@ -1,0 +1,30 @@
+---
+title: "G+Money Lite: Diners de viatge — Límit diari, rellotge i widget | iOS App"
+lang: "ca"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ca/index.html"
+modified: "2026-10-21"
+app_store_id: "6793436548"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# G+Money Lite: Diners de viatge — Límit diari, rellotge i widget | iOS App
+
+G+Money Lite — Conversor de moneda de viatge intel·ligent i rastrejador de despeses Dinero de viatge, fet senzill Registra cada compra en la moneda local i veuràs-ho instantàniament en la teva moneda d'inici — en línia o fora de línia. Converteix • Tipus en viu o manuals: Podem obtenir els tipus més recents automàticament, o tu mateix els pots establir. Sempre funciona sense connexió. • Obté els tipus més recents quan obris l'aplicació (aproximadament cada 6 hores). Sempre funciona sense connexió amb els teus tipus desats. • Tipus de referència del mercat mitjà. Les targetes i efectiu poden diferir. Despeses • Límit diari: Opcional. Veure com cada dia es compara amb això. • Per categoria · Viatges · Filtres · Registres • Còpia de seguretat i restauració: Inclou despeses, tipus, categories i configuracions. • Widget · Apple Watch Tot es queda al teu dispositiu. Sense compte, sense seguiment. Els tipus utilitzen un servei públic de tipus de canvi. Sense compra: canvi, pressupost i resum · 1 viatge · 3 despeses Un sol pagament · Sense subscripció Desbloqueja despeses i viatges il·limitats. Optimitzada per a l'iPhone Duo.
+
+- Diners i viatges
+- Inici gratuït
+- Fora de línia
+- Sense compte
+- Sense seguiment
+- Privat / en el dispositiu
+- Widget
+- Apple Watch
+- App Store · Gratis
+
+[Descarrega G+Money Lite: Diners de viatge a l’App Store](https://apps.apple.com/es/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
+
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/gmoneylite.html)
+
+> Aquest és material de primera mà publicat per Lumi Studio, el desenvolupador de totes les apps llistades.

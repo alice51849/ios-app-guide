@@ -1,0 +1,29 @@
+---
+title: "適合學齡前兒童且無廣告的最佳睡前習慣應用程式"
+lang: "zh-Hant"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/zh-Hant/index.html"
+modified: "2026-10-21"
+app_store_id: "6779750237"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# 適合學齡前兒童且無廣告的最佳睡前習慣應用程式
+
+對學齡前兒童而言，睡前流程以簡短、視覺化且可預期為佳，讓孩子能自行完成而無需再次提醒。如果你也是這種狀況，可以看看 Lumi Mission Planet。
+
+- 兒童與學習
+- 免費開始 · 一次性解鎖
+- 免帳號
+- 無廣告
+- 無追蹤
+- 隱私優先／裝置端
+- App Store · 免費
+- ★ 5.0/5 · 1
+
+[在App Store取得Lumi Mission Planet →](https://apps.apple.com/tw/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
+
+[閱讀完整指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
+
+> 由 App 開發團隊 Lumi Studio 親自撰寫的指南。App 名稱為其各自所有權人的商標，僅供識別使用。若涉及文件、健康、學校及生產力相關的決定，請視情況核對相關單位的正式規定。

@@ -1,0 +1,28 @@
+---
+title: "HoursTag: Hodiny na nákup — Hodinová mzda a výdaje | iOS App"
+lang: "cs"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/cs/index.html"
+modified: "2026-10-21"
+app_store_id: "6754218117"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# HoursTag: Hodiny na nákup — Hodinová mzda a výdaje | iOS App
+
+Kolik to opravdu stojí? Ne v korunách, ale v hodinách vašeho života.
+
+- Finance a cestování
+- Placené stažení
+- Bez účtu
+- Bez reklam
+- Bez sledování
+- Soukromé / v zařízení
+- App Store · 129,00 Kč
+
+[Stáhněte si HoursTag: Hodiny na nákup v App Storu](https://apps.apple.com/cz/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
+
+[Přečtěte si celý průvodce](https://open.cait518.cc/ios-app-guide/cs/hourstag.html)
+
+> Toto je materiál od první strany publikovaný Lumi Studio, vývojářem všech uvedených aplikací.

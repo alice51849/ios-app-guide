@@ -1,0 +1,245 @@
+# Directori d’apps — iOS App Guide
+
+> Informació estructurada sobre les funcions, el preu i les preguntes freqüents de cada app per a iOS.
+
+locale: ca
+apps: 54
+- Directori d’apps: https://open.cait518.cc/ios-app-guide/ca/tools/private-pay-once-iphone-app-finder.html
+- Directori d’apps · PWA: https://open.cait518.cc/ios-app-guide/ca/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ca.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ca.json
+- Directori d’apps · SVG: https://open.cait518.cc/ios-app-guide/ca/visuals/
+- Directori d’apps · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Directori d’apps · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Directori d’apps · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Directori d’apps · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Directori d’apps · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- Directori d’apps · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- Directori d’apps · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Directori d’apps · Agent Skill · ca: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/ca.json
+- Directori d’apps · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Directori d’apps · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Directori d’apps · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Directori d’apps · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Directori d’apps · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Directori d’apps · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Directori d’apps · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Directori d’apps · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Directori d’apps · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/ca/notesstudio100.html) — Quadern a mà, PDF i estudi
+  - De l’hivern als exàmens de gener: apunts a mà, PDF del temari subratllats, la gravació de la classe a la mateixa pàgina i repàs amb fitxes. Sense connexió i sense compte.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: Fitxers a prompt IA](https://open.cait518.cc/ios-app-guide/ca/aibriefpack.html) — Crea prompts des de fitxers
+  - Informes de final d'any i plans de Nadal? Afegeix captures, PDF, notes i enllaços: lectura al dispositiu, dades personals marcades i un sol resum clar per a la IA.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: coach d'anglès](https://open.cait518.cc/ios-app-guide/ca/aim990.html) — Diagnòstic TOEIC en 8 minuts
+  - Un diagnòstic de 8 minuts detecta les 3 habilitats més febles, escriu el pla de reparació i torna a mesurar el dia 30. Sense connexió, sense anuncis ni compte.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: Salut de la bateria](https://open.cait518.cc/ios-app-guide/ca/battai.html) — Regles, fonts i límits clars
+  - Entén la bateria amb el pas del temps Regles, fonts i límits clars Desbloqueja més historial, planificació i informes. Un sol pagament. Sense subscripció.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily: calculadora i temes](https://open.cait518.cc/ios-app-guide/ca/caldaily.html) — Widget, eines i historial
+  - Calcula a la pantalla d'inici: el widget és una calculadora completa. Propina, descompte, préstec i 5 eines més integrades.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/ca/countdaysnow.html) — Focus del dia
+  - Focus del dia: tria en privat Des de, Avui o Propers i revisa les tres decisions més recents al costat de les dates que t’importen.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: CV ATS](https://open.cait518.cc/ios-app-guide/ca/cvdesk.html) — Currículum: plantilles i PDF
+  - Puntuació ATS a l'instant, correccions clares i la vista de 6 segons d'un reclutador. Previsualitza el PDF final quan vulguis. Sense compte.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: Calendari Menstrual](https://open.cait518.cc/ios-app-guide/ca/cyca.html) — Ovulació i dies fèrtils
+  - Desembre ple de sopars, viatges i festes? Apunta la regla, el flux, els símptomes, l'ànim i notes en segons. Tot queda al dispositiu, sense compte ni núvol.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: Parla avui](https://open.cait518.cc/ios-app-guide/ca/dailymatelite.html) — Guia de conversa per viatjar
+  - Entén què et diuen a l'aeroport, a l'hotel o al restaurant i aprèn la resposta natural. Les bases per viatjar, en 50 llengües i sense connexió.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: frases quotidianes](https://open.cait518.cc/ios-app-guide/ca/dailymate.html) — Aprèn anglès, francès, alemany
+  - Aprèn el que la gent diu de debò: 8.400 frases quotidianes amb respostes naturals en 47 idiomes i 84 situacions reals. Widget i Apple Watch inclosos. Funciona offline.
+  - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: Sonòmetre](https://open.cait518.cc/ios-app-guide/ca/dbhalo.html) — Decibels i espectre en directe
+  - Festes de final d’any, veïns sorollosos o roncs les nits d’hivern? Mira els dB en directe a l’anell Halo, estima la dosi de soroll diària i registra els roncs.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Despertador i festius](https://open.cait518.cc/ios-app-guide/ca/easyam.html) — Alarma només els dies de feina
+  - Nadal i Cap d'Any se salten sols. Vacances entre festes? Afegeix-les com a dies lliures: l'alarma calla i torna a sonar el primer dia de feina.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: Diners de viatge](https://open.cait518.cc/ios-app-guide/ca/gmoneylite.html) — Límit diari, rellotge i widget
+  - Nadal o Cap d'Any a l'estranger? Apunta les compres en moneda local i veu-les al moment en la teva, fixa un límit diari i converteix amb tipus en directe o manuals.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: Despeses i pressupost](https://open.cait518.cc/ios-app-guide/ca/gmoney.html) — Despeses de viatge i divises
+  - Nadal, Reis i escapades d'hivern? Registra les despeses per categoria o viatge, fixa un límit diari i converteix divises amb tipus en directe o manuals, sense connexió.
+  - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: Preu en hores](https://open.cait518.cc/ios-app-guide/ca/hourstaglite.html) — Compra conscient: preu real
+  - Compres de final d'any: abans de comprar, mira el preu en hores de la teva feina, marca'l com a necessitat, desig o impuls i veu la feina darrere d'un objectiu.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: Hores per comprar](https://open.cait518.cc/ios-app-guide/ca/hourstag.html) — Salari per hora i despeses
+  - Regals de Nadal i de Reis? Abans de comprar, mira cada preu en hores de feina, classifica'l com a Necessitat, Desig o Impuls i planifica la llista de desitjos en hores.
+  - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/ca/ledmovingtext.html) — Rètol lluminós en moviment
+  - Converteix la pantalla en un rètol lluminós en segons o crea un guió de missatges: ordena'ls i passa'ls amb un toc o amb temporitzador. Pantalla completa, sense connexió.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: Bloqueig d'apps](https://open.cait518.cc/ios-app-guide/ca/lockhour.html) — Bloqueja apps, menys pantalla
+  - Bloqueja les apps i webs que et roben temps fins que acabi el temporitzador. Modes de concentració, estudi i son, mode estricte, estadístiques i ratxes. Sense compte.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo](https://open.cait518.cc/ios-app-guide/ca/lumibopomofo.html) — Zhuyin: xinès per a nens
+  - Alimenta els amics símbol pel so, repassa cada traç en ordre, puja a la muntanya russa dels tons i uneix sons al tren. Funciona sense connexió.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/ca/lumibopomofopro.html) — Tons del mandarí i fitxes
+  - Els 37 sons del zhuyin: muntanya russa dels tons, tren de síl·labes, pesca, traçat i cursa d'estrelles. Els pares veuen el progrés i imprimeixen fitxes. Sense anuncis.
+  - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Lite: ABC Kids](https://open.cait518.cc/ios-app-guide/ca/lumiletters.html) — Abecedari en anglès per traçar
+  - Prova la lletra A i el primer planeta: l’infant escolta el so, la traça amb el dit i juga a reptes. Després desbloqueja les 26 lletres. Sense anuncis, funciona offline.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Pro: ABC Phonics](https://open.cait518.cc/ios-app-guide/ca/lumiletterspro.html) — Anglès per a nens: sons
+  - L'infant escolta una paraula, troba el so inicial, del mig o final i repassa la lletra. 26 lletres, 14 planetes i fitxes per imprimir. Sense anuncis i funciona offline.
+  - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Planet: Explorer](https://open.cait518.cc/ios-app-guide/ca/lumimath.html) — Mates d'infantil i primària
+  - Encerta i un planeta s'encén. 46 tipus de preguntes amb imatges: comptar, sumes, restes, taules, rellotge, diners. Sense anuncis ni subscripció.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Pro: Números nens](https://open.cait518.cc/ios-app-guide/ca/lumimathpro.html) — Lògica i problemes per pensar
+  - Lògica, sèries i problemes en 46 tipus de preguntes. Pràctica dels punts febles, informe de progrés i fitxes per imprimir. Sense anuncis ni compres.
+  - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet](https://open.cait518.cc/ios-app-guide/ca/lumimission.html) — Taula de recompenses nens
+  - Menys discussions, més èxits: cada missió completada dona estrelles, alimenta el Lumi i omple un àlbum de 100 adhesius. Afegeix les teves tasques. Sense anuncis.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet Pro](https://open.cait518.cc/ios-app-guide/ca/lumimissionpro.html) — Rutina de matí i de nit
+  - Totes les rutines incloses: àpats, dents, dormir, endreçar i escola, tasques pròpies, resum de 7 dies i recordatori al vespre. Sense anuncis i funciona offline.
+  - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Temps: Previsió i roba](https://open.cait518.cc/ios-app-guide/ca/lumiweather.html) — Sortim? Pluja, UV i vent
+  - Surto ara o m'espero? Lumi converteix la previsió en un índex de sortida del 0 al 100 i et diu què posar-te, si cal paraigua o crema solar. Per hores i a 7 dies.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: Esborra dades](https://open.cait518.cc/ios-app-guide/ca/maskmyfile.html) — Oculta dades abans d'enviar
+  - Envies el DNI per al viatge de Nadal o nòmines de final d’any? Detecta dades privades, tapa per sempre només el que triïs i elimina les metadades. Tot al dispositiu.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: Última vegada](https://open.cait518.cc/ios-app-guide/ca/mochidonestamp.html) — Quan va ser? Avisos de casa
+  - Prou de dubtar quan ho vas fer. Segella-ho: Mochi ho recorda i t'avisa quan torna a tocar. Llençols, filtres, plantes, trucades, i en família.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: Llista bonica](https://open.cait518.cc/ios-app-guide/ca/mochi.html) — Tasques, recordatoris i widget
+  - De la Castanyada a Nadal, tot amb calma i gràcia: estudis, feina i la compra. Toca el petit cercle quan acabis, tria un tema i afegeix widgets a la pantalla d’inici.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag: Ingressos i despeses](https://open.cait518.cc/ios-app-guide/ca/moneytag.html) — Projectes · Etiquetes
+  - Feina extra o parada a final d’any? El projecte mostra ingressos menys despeses com un resultat net clar, en la moneda que triïs. Apunta des de l’Apple Watch.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: diapositives IA](https://open.cait518.cc/ios-app-guide/ca/onepageppt.html) — Presentació d'una sola pàgina
+  - Balanç de final d'any abans de Nadal? Enganxa apunts, un PDF, una captura o un CSV i tindràs una diapositiva 16:9 clara: idees clau en títols, xifres en gràfics.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: Filtres retro](https://open.cait518.cc/ios-app-guide/ca/photocream.html) — Càmera analògica, filtre retro
+  - Llums de Nadal i dinars familiars amb llum càlida? Ajusta llum, color i corbes, retoca la pell sense perdre detall i afegeix gra de pel·lícula a l’àlbum de l’any.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: Neteja de fotos](https://open.cait518.cc/ios-app-guide/ca/picclear.html) — Esborra captures i fes espai
+  - Memòria plena? Allibera gigues: troba fotos duplicades, semblants, captures antigues i vídeos enormes, i revisa-ho tot abans d'esborrar. L'anàlisi es fa al dispositiu.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: Escàner](https://open.cait518.cc/ios-app-guide/ca/qrcodehalo.html) — Obre a l'acte, revisa després
+  - Escaneja i fet: els enllaços s'obren, el Wi-Fi mostra l'avís d'iOS i trucades i correus queden a punt. Cada escaneig desat té Revisió de seguretat a l'Historial.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: marcadors amb IA](https://open.cait518.cc/ios-app-guide/ca/savetag.html) — Enllaços per llegir més tard
+  - Idees de regals, receptes de Nadal i llocs per al viatge perduts als xats? Comparteix l'enllaç des de qualsevol app: s'etiqueta sol al dispositiu i el trobes pel sentit.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: PDF i OCR](https://open.cait518.cc/ios-app-guide/ca/scanto.html) — Escàner de documents privat
+  - Tiquets dels regals de Nadal, garanties i factures de final d’any? Escaneja’ls en PDF nítids i l’OCR del dispositiu troba cadascun amb una paraula. Sense connexió.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: Sons per Dormir](https://open.cait518.cc/ios-app-guide/ca/sereno.html) — Soroll blanc, pluja i mar
+  - Pluja, mar, foc i més: 140+ sons relaxants per dormir i concentrar-te. Fes les teves mescles, adorm-te amb fosa suau i desperta't amb ocells. Sense connexió ni compte.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/ca/shotinbox.html) — Ordena captures i cerca text
+  - Compres de Nadal i viatges d'hivern: rebuts, entrades i comandes s'acumulen en captures. S'ordenen soles, cerques el text de dins, segueixes paquets i neteges la resta.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: Fotos de carnet](https://open.cait518.cc/ios-app-guide/ca/snapportlite.html) — Retrats a la mida exacta
+  - Viatge de Nadal o passaport per renovar? Retalla la foto a la mida exacta amb plantilles, guies per a la cara i fons blanc o blau. Tot es fa al teu dispositiu.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: Fotos Passaport](https://open.cait518.cc/ios-app-guide/ca/snapport.html) — 35x45 i full per imprimir
+  - Viatge de Nadal o passaport nou? Fes la foto de passaport o visat a casa: plantilles de mides habituals, guies per a la cara, fons blanc i fulls a punt per imprimir.
+  - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/ca/sononote.html) — Veu a text · Notes de veu
+  - Parla i Sono Note ho converteix en transcripció neta, resum, punts clau i tasques, fins i tot un correu de seguiment. Ideal per a reunions, classes i trucades.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: Rellotge de Taula](https://open.cait518.cc/ios-app-guide/ca/stayclock.html) — Hora i calendari sempre actius
+  - Nits llargues fins a Nadal: mentre carrega, el mòbil es torna un rellotge gran que es llegeix des de l'altra punta de l'habitació, amb calendari Mes i alarma.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: Cronòmetre](https://open.cait518.cc/ios-app-guide/ca/studydown.html) — Deixa’l de cara avall
+  - Exàmens i entregues de final d’any? Tria una activitat, posa el mòbil cap per avall i comença a comptar; si l’aixeques, es pausa. Mira avui i aquesta setmana.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet nens](https://open.cait518.cc/ios-app-guide/ca/tripplanet.html) — Missions per a les vacances
+  - Vols, viatges llargs en cotxe i llocs nous es tornen missions: cordar-se, donar les gràcies, tastar una mica. Cada missió dona un premi i cada viatge acabat, un segell.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: Pla de viatge](https://open.cait518.cc/ios-app-guide/ca/tripbeelite.html) — Vacances: itinerari diari
+  - Tornes a casa per Nadal o marxes per Cap d'Any? Posa el viatge en una línia de temps dia a dia, amb vols, allotjament, notes, recordatoris i dades dels bitllets.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: Planifica Viatges](https://open.cait518.cc/ios-app-guide/ca/tripbee.html) — Escapades en grup i equipatge
+  - Editeu el mateix viatge amb la família o els amics, afegiu un pla B per als dies de pluja i rebeu recordatoris a l'hora local. La llista d'equipatge s'adapta a cadascú.
+  - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: Foto nítida](https://open.cait518.cc/ios-app-guide/ca/unblurry.html) — Restaura fotos antigues
+  - Dels dinars de Nadal als sopars de cap d'any: fotos mogudes o fosques? Enfoca-les, treu el soroll i recupera les fotos amb poca llum al teu iPhone, sense núvol.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: Monitor d'ús d'IA](https://open.cait518.cc/ios-app-guide/ca/claudeusagemini.html) — Límits Claude, Codex, Copilot
+  - Avisos personalitzats amb qualsevol percentatge, ordre pel reinici de 5 hores o setmanal i ginys que passen per tots els comptes. Mira quant et queda de cada pla d’IA.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/ca/wifiaidlite.html) — Sense internet? Troba la causa
+  - Sense internet? És el Wi-Fi, l'operador o només un web? Un toc fa proves independents i mostra la causa més probable i els passos següents.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: Diagnòstic de xarxa](https://open.cait518.cc/ios-app-guide/ca/wifiaid.html) — Diagnosi de router, mesh i DNS
+  - Per Nadal tothom a casa i al mateix Wi-Fi? Si va lent, comprova Wi-Fi, DNS i internet amb un toc i descobreix la causa més probable, o mira si falla només un web.
+  - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite: vocabulari](https://open.cait518.cc/ios-app-guide/ca/wordmatelite.html) — Cinc paraules al dia, offline
+  - Cinc paraules, un minut al dia, en qualsevol de 44 idiomes. Escolta cada paraula, veu-la en una frase i mantén la ratxa. Funciona sense connexió i sense compte.
+  - Preu: Descàrrega gratuïta. Amb una compra única desbloqueges totes les funcions, sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: Aprèn vocabulari](https://open.cait518.cc/ios-app-guide/ca/wordmate.html) — Paraules, targetes i widget
+  - Viatge per Nadal o propòsit d'any nou? Aprèn paraules en 44 idiomes en estones lliures: 14 temes pràctics, frases d'exemple i pronunciació. També des del widget.
+  - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: obrir RAR, ZIP i 7z](https://open.cait518.cc/ios-app-guide/ca/zipbox.html) — Descomprimeix-ho sense anuncis
+  - Les fotos de Nadal arriben en un 7z amb contrasenya? Mira què hi ha a dins, previsualitza fotos i PDF i extreu només el que necessites, tot al dispositiu. Cap anunci.
+  - Preu: Descàrrega de pagament amb un únic preu inicial i sense subscripció.
+  - App Store: https://apps.apple.com/es/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

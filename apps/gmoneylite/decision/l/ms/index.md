@@ -1,0 +1,30 @@
+---
+title: "penjejak perbelanjaan perjalanan percuma terbaik dengan penukaran mata wang untuk iphone"
+lang: "ms"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/ms/index.html"
+modified: "2026-10-21"
+app_store_id: "6793436548"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# penjejak perbelanjaan perjalanan percuma terbaik dengan penukaran mata wang untuk iphone
+
+Ujian percuma yang berguna untuk perbelanjaan perjalanan patut merangkumi aliran lengkap daripada mata wang tempatan ke mata wang asal, bukan sekadar lejar kosong yang hanya berguna selepas membeli. G+Money Lite — Penjejak mata wang dan perbelanjaan perjalanan pintar — rekod setiap perbelanjaan dan lihat dalam mata wang asal anda.
+
+- Wang & perjalanan
+- Percuma untuk bermula · buka kunci sekali sahaja
+- Luar talian
+- Tiada akaun
+- Tiada penjejakan
+- Peribadi / pada peranti
+- Widjet
+- Apple Watch
+- App Store · Percuma
+
+[Dapatkan G+Money Lite di App Store →](https://apps.apple.com/my/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
+
+[Baca panduan penuh](https://open.cait518.cc/ios-app-guide/ms/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html)
+
+> Panduan ini diterbitkan oleh Lumi Studio, pembangun app ini. Nama app ialah tanda dagangan pemilik masing-masing dan digunakan untuk tujuan pengenalan sahaja. Untuk keputusan berkaitan dokumen, kesihatan, sekolah dan produktiviti, sila sahkan keperluan rasmi yang berkenaan.

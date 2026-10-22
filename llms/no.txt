@@ -1,0 +1,245 @@
+# Appkatalog — iOS App Guide
+
+> Strukturert informasjon om funksjoner, priser og vanlige spørsmål for hver iOS-app.
+
+locale: no
+apps: 54
+- Appkatalog: https://open.cait518.cc/ios-app-guide/no/tools/private-pay-once-iphone-app-finder.html
+- Appkatalog · PWA: https://open.cait518.cc/ios-app-guide/no/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/no.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/no.json
+- Appkatalog · SVG: https://open.cait518.cc/ios-app-guide/no/visuals/
+- Appkatalog · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Appkatalog · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Appkatalog · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Appkatalog · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Appkatalog · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- Appkatalog · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- Appkatalog · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Appkatalog · Agent Skill · no: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/no.json
+- Appkatalog · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Appkatalog · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Appkatalog · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Appkatalog · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Appkatalog · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Appkatalog · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Appkatalog · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Appkatalog · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Appkatalog · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/no/notesstudio100.html) — Notatbok, håndskrift og PDF
+  - Vinter og eksamensperiode: skriv notater for hånd, marker PDF-lysbilder, legg opptaket av forelesningen på siden og øv med kort. Helt offline, uten konto.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: Filer til AI-prompt](https://open.cait518.cc/ios-app-guide/no/aibriefpack.html) — Prompts fra filer og PDF
+  - Årsoppgjør og juleplaner hoper seg opp? Legg til skjermbilder, PDF-er, notater og lenker: lest på enheten, personopplysninger markert, én tydelig brief til KI.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: engelsktrener](https://open.cait518.cc/ios-app-guide/no/aim990.html) — 8-minutters TOEIC-sjekk
+  - En diagnose på 8 minutter finner de 3 svakeste ferdighetene dine, skriver planen, trener den daglig og måler på nytt dag 30. Frakoblet og uten konto.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: Batteritilstand](https://open.cait518.cc/ios-app-guide/no/battai.html) — Klare regler, kilder og grenser
+  - Forstå batteriet ditt over tid Klare regler, kilder og grenser Lås opp dypere historikk, planlegging og rapporter. Én betaling. Ikke noe abonnement.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily: kalkulator og temaer](https://open.cait518.cc/ios-app-guide/no/caldaily.html) — Widget, verktøy og historikk
+  - Regn rett på Hjem-skjermen: widgeten er en full kalkulator. Tips, rabatt, lån og 5 innebygde verktøy til. Ingen reklame.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/no/countdaysnow.html) — Dagens fokus · Retning
+  - Dagens fokus: velg Siden, I dag eller Foran privat og se de tre siste valgene sammen med datoene som betyr mest.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: ATS CV-bygger](https://open.cait518.cc/ios-app-guide/no/cvdesk.html) — Lag CV: maler, sjekk og PDF
+  - Umiddelbar ATS-poengsum, tydelige forbedringer og rekruttererens blikk de første 6 sekundene. Forhåndsvis den ferdige PDF-en når som helst. Ingen konto nødvendig.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: Mensenkalender](https://open.cait518.cc/ios-app-guide/no/cyca.html) — Eggløsning og fruktbare dager
+  - Julebord, reiser og travle desemberdager? Noter mens, blødning, symptomer, humør og notater på sekunder. Alt blir på enheten din, uten konto, også offline.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: Snakk i dag](https://open.cait518.cc/ios-app-guide/no/dailymatelite.html) — Parlør for reisen, 50 språk
+  - Forstå hva folk sier på flyplassen, hotellet eller restauranten, og lær det naturlige svaret. Reisegrunnlaget på alle 50 språk, også uten nett.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: Setninger for livet](https://open.cait518.cc/ios-app-guide/no/dailymate.html) — Lær engelsk, fransk og spansk
+  - Lær det folk faktisk sier: 8 400 hverdagssetninger med naturlige svar på 47 språk i 84 ekte situasjoner. Widget og Apple Watch er med. Virker uten nett.
+  - Pris: Betalt nedlasting til én fast pris uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: Lydnivåmåler](https://open.cait518.cc/ios-app-guide/no/dbhalo.html) — Spekter, støydose og søvn
+  - Vinterfester, bråkete naboer eller snorking i lange vinternetter? Se dB i sanntid på Halo-ringen, anslå den daglige støydosen og logg snorking om natten.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Vekkerklokke & alarm](https://open.cait518.cc/ios-app-guide/no/easyam.html) — Stille på helligdager og ferie
+  - Juledagene og første nyttårsdag hoppes over automatisk. Fri i romjulen? Legg dagene inn som fri: vekkerklokken er stille og ringer igjen første arbeidsdag.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: Reiseutgifter](https://open.cait518.cc/ios-app-guide/no/gmoneylite.html) — Dagsbudsjett, klokke og widget
+  - Jul eller nyttår i utlandet? Før kjøp i lokal valuta og se dem straks i din egen, sett en daglig grense. Live eller manuelle kurser virker også offline.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: Utgifter og budsjett](https://open.cait518.cc/ios-app-guide/no/gmoney.html) — Reiseutgifter og valuta
+  - Julemarked, julebord og nyttår på tur? Registrer utgifter etter kategori, sett en daglig grense og se hva som er igjen i dag. Regn om valuta, også offline.
+  - Pris: Betalt nedlasting til én fast pris uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: Pris i timer](https://open.cait518.cc/ios-app-guide/no/hourstaglite.html) — Bevisste kjøp: reell pris
+  - Handelen ved årsskiftet: før du kjøper, se prisen i egne arbeidstimer, merk den som behov, ønske eller impuls, og se arbeidet bak et mål for det nye året.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: Timer å kjøpe](https://open.cait518.cc/ios-app-guide/no/hourstag.html) — Timelønn og forbruk
+  - Julegaver og nyttårsforsetter? Se hver pris i arbeidstimer før du kjøper, merk den Behov, Lyst eller Impuls, og planlegg ønskelisten i timer.
+  - Pris: Betalt nedlasting til én fast pris uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/no/ledmovingtext.html) — Rullende lysskilt på mobilen
+  - Gjør skjermen om til et lysende rulleskilt på sekunder, eller lag en meldingsrekke som du blar gjennom med et trykk eller en tidtaker. Fullskjerm, offline og privat.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: App-blokkering](https://open.cait518.cc/ios-app-guide/no/lockhour.html) — Skjermtid og appblokkering
+  - Lås appene og nettsidene som stjeler tiden din, til timeren er ute. Moduser for fokus, studier og søvn, streng modus, statistikk og rekker. Ingen konto nødvendig.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo](https://open.cait518.cc/ios-app-guide/no/lumibopomofo.html) — Zhuyin: kinesisk for barn
+  - Gi symbolvennene mat etter lyden, spor hver strek i riktig rekkefølge, kjør tone-berg-og-dal-banen og sett sammen lyder i toget. Virker uten nett.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/no/lumibopomofopro.html) — Mandarintoner og øveark
+  - Alle 37 zhuyin-lyder: berg-og-dal-bane for toner, lydtog, fisking, skriveøvelser og stjerneløp. Foreldre ser fremgang og en repetisjonsliste og skriver ut øveark.
+  - Pris: Betalt nedlasting til én fast pris uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Lite: ABC Kids](https://open.cait518.cc/ios-app-guide/no/lumiletters.html) — Engelsk alfabet: skrivetrening
+  - Prøv bokstaven A og den første planeten: barnet hører lyden, skriver etter med fingeren og spiller planetquiz. Senere låser du opp alle 26 bokstaver. Ingen reklame.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Pro: ABC Phonics](https://open.cait518.cc/ios-app-guide/no/lumiletterspro.html) — Engelsk for barn: bokstavlyder
+  - Barnet hører et ord, finner første, midterste eller siste lyd og sporer bokstaven. 26 bokstaver, 14 planeter, oppgaveark til utskrift. Ingen reklame, virker uten nett.
+  - Pris: Betalt nedlasting til én fast pris uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Planet: Explorer](https://open.cait518.cc/ios-app-guide/no/lumimath.html) — Matematikkspill for barn
+  - Riktig svar, og en planet lyser opp. 46 typer bildeoppgaver: telle, pluss, minus, gangetabell, klokka, penger. Uten reklame og abonnement.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Pro: Kids Numbers](https://open.cait518.cc/ios-app-guide/no/lumimathpro.html) — Logikk, gåter og tekstoppgaver
+  - Logikk, mønstre og tekstoppgaver i 46 oppgavetyper. Øv på svake områder, se en læringsrapport og skriv ut oppgaveark. Ingen reklame eller kjøp i appen.
+  - Pris: Betalt nedlasting til én fast pris uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet](https://open.cait518.cc/ios-app-guide/no/lumimission.html) — Belønningstavle og stjerner
+  - Mindre maset, flere seire: hvert fullførte oppdrag gir stjerner, mater Lumi og fyller en bok med 100 klistremerker. Legg til egne oppgaver. Ingen reklame, ingen konto.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet Pro](https://open.cait518.cc/ios-app-guide/no/lumimissionpro.html) — Morgen- og kveldsrutiner
+  - Alle rutiner er med: måltid, tannpuss, leggetid, rydding og skolestart, egne oppgaver, 7-dagersoversikt og kveldspåminnelse. Ingen reklame, virker uten nett.
+  - Pris: Betalt nedlasting til én fast pris uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Vær: Værvarsel & klær](https://open.cait518.cc/ios-app-guide/no/lumiweather.html) — Skal du ut? Regn, UV og vind
+  - Ut nå eller vente? Lumi gjør værvarselet om til en utescore fra 0 til 100 og sier hva du bør ha på deg, og om du trenger paraply eller solkrem. Time- og 7-dagersvarsel.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: Fjern dine data](https://open.cait518.cc/ios-app-guide/no/maskmyfile.html) — Skjul private data før deling
+  - Passkopi til juleturen eller lønnsslipper til en ny leilighet i januar? Finn private opplysninger, sladd bare det du velger for godt, og fjern metadata. Alt på enheten.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: Sist](https://open.cait518.cc/ios-app-guide/no/mochidonestamp.html) — Når var det? Påminnelser
+  - Slutt å lure på når du sist gjorde det. Stemple det som gjort, Mochi husker og minner deg på når det er tid igjen. Sengetøy, filtre, planter, samtaler, også med familien.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: Søt huskeliste](https://open.cait518.cc/ios-app-guide/no/mochi.html) — Gjøremål, sjekkliste og widget
+  - Fra Halloween til jul: skole, jobb og handlelister i en søt liste. Trykk på den lille sirkelen når noe er gjort, velg et tema og legg widgeter på Hjem-skjermen.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag](https://open.cait518.cc/ios-app-guide/no/moneytag.html) — Prosjekter · Tagger · Rapport
+  - Ekstrajobb eller bod fram mot nyttår? Prosjektet ditt viser inntekter minus utgifter som ett tydelig nettoresultat, i valutaen du velger. Før inn rett fra Apple Watch.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: AI-lysbilder](https://open.cait518.cc/ios-app-guide/no/onepageppt.html) — Ensides presentasjon fra PDF
+  - Årsoppsummering før jul? Lim inn notater, en PDF, et skjermbilde eller en CSV og få ett tydelig 16:9-lysbilde: hovedpunkter som titler, tall som diagrammer. Del som PNG.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: Filmfiltre](https://open.cait518.cc/ios-app-guide/no/photocream.html) — Filmkamera og vintagefiltre
+  - Julelys og familiemiddager i varmt innelys? Finjuster lys, farger og kurver, retusjer huden uten å miste detaljer, og legg til filmkorn i årets album.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: Fotoopprydding](https://open.cait518.cc/ios-app-guide/no/picclear.html) — Slett duplikater og få plass
+  - Fullt lager? Frigjør gigabyte: finn duplikater, lignende bilder, gamle skjermbilder og store videoer, og sjekk alt før det slettes. Skanningen skjer på enheten.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: Skann og lag](https://open.cait518.cc/ios-app-guide/no/qrcodehalo.html) — Åpner straks, sjekk etterpå
+  - Skann, så er det gjort: lenker åpnes, Wi-Fi viser iOS-spørsmålet, anrop og e-post er klare. Hver lagrede skanning får en Sikkerhetssjekk i Historikk.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: AI-bokmerker](https://open.cait518.cc/ios-app-guide/no/savetag.html) — Lagre lenker, les dem senere
+  - Gaveideer, juleoppskrifter og reisemål forsvinner i chatten? Del lenken fra hvilken som helst app: den tagges automatisk på enheten, og du finner den etter betydning.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: PDF og OCR](https://open.cait518.cc/ios-app-guide/no/scanto.html) — Privat dokumentskanner offline
+  - Kvitteringer for julegaver, garantibevis og papirer før nyttår? Skann dem til skarpe PDF-er, og OCR på enheten finner hver av dem med ett ord. Offline, uten konto.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: Sovelyder](https://open.cait518.cc/ios-app-guide/no/sereno.html) — Hvit støy, regn og hav
+  - Regn, hav, ild og mer: 140+ beroligende lyder for søvn og fokus. Miks selv, sovn med myk nedtoning, og våkn til fuglesang. 100 % offline, uten konto.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/no/shotinbox.html) — Finn og organiser skjermbilder
+  - Julegaver og vinterturer gir kvitteringer, billetter og bestillinger som skjermbilder. De sorterer seg selv, du søker i teksten, sporer pakker og rydder resten.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: Passfoto hjemme](https://open.cait518.cc/ios-app-guide/no/snapportlite.html) — Portretter i eksakt størrelse
+  - Juletur eller nytt pass? Beskjær bildet til nøyaktig størrelse med ferdige maler, hjelpelinjer for ansiktet og hvit eller blå bakgrunn, rett på enheten din.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: Pass- og ID-foto](https://open.cait518.cc/ios-app-guide/no/snapport.html) — 35x45 og utskriftsark
+  - Juletur utenlands eller nytt pass? Ta pass- og visumbilde hjemme: maler i vanlige størrelser, hjelpelinjer for ansiktet, hvit bakgrunn og ark klare til utskrift.
+  - Pris: Betalt nedlasting til én fast pris uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/no/sononote.html) — Tale til tekst · Talememo
+  - Snakk, så gjør Sono Note det til en ren transkripsjon, sammendrag, nøkkelpunkter og gjøremål, til og med en oppfølgingsmail. For møter, forelesninger og samtaler.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: Skrivebordsklokke](https://open.cait518.cc/ios-app-guide/no/stayclock.html) — Tid og kalender, alltid på
+  - Mørke kvelder frem mot jul: mens telefonen lader, blir den en stor klokke du kan lese fra andre siden av rommet. Månedskalender, timeslag og en enkel alarm.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: Tidsregistrering](https://open.cait518.cc/ios-app-guide/no/studydown.html) — Legg den med skjermen ned
+  - Eksamen og innleveringer i vinter? Velg en aktivitet, legg telefonen med skjermen ned, og tiden teller; løfter du den, pauser den. Se i dag og denne uken per aktivitet.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet: Reiseeventyr](https://open.cait518.cc/ios-app-guide/no/tripplanet.html) — Feriemisjoner for familien
+  - Fly, lange bilturer og nye steder blir oppdrag: fest beltet, takk mannskapet, smak en bit. Hvert oppdrag gir en belønning, hver fullført reise et stempel. Ingen reklame.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: Reiseplan](https://open.cait518.cc/ios-app-guide/no/tripbeelite.html) — Ferie planlagt dag for dag
+  - Hjem til jul eller bort i nyttår? Samle turen på én tidslinje dag for dag, med fly, overnatting, notater, påminnelser og billettinfo samlet. Ingen konto, ingen reklame.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: Reiseplanlegger](https://open.cait518.cc/ios-app-guide/no/tripbee.html) — Gruppetur og smart pakkeliste
+  - Rediger den samme reisen med familie eller venner, legg inn en regnværsplan for hver dag og få påminnelser i lokal tid. Pakkelisten tilpasses hver reisende, også barna.
+  - Pris: Betalt nedlasting til én fast pris uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: Skarpe foto](https://open.cait518.cc/ios-app-guide/no/unblurry.html) — Gjenopprett gamle bilder
+  - Julebord, nyttårsaften og mørke vinterkvelder: uskarpe eller mørke bilder? Skjerp, reduser støy og redd bilder tatt i lite lys direkte på iPhone. Ingen sky, ingen konto.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: AI-forbruk tracker](https://open.cait518.cc/ios-app-guide/no/claudeusagemini.html) — Claude, Codex, Copilot grenser
+  - Egne varsler ved enhver prosent, sortering etter 5-timers- eller ukentlig nullstilling og widgeter som blar gjennom kontoene. Se hva som er igjen av hvert AI-abonnement.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/no/wifiaidlite.html) — Ikke internett? Finn årsaken
+  - Ikke internett? Er det wifi, leverandøren eller bare én nettside? Ett trykk kjører uavhengige sjekker og viser den mest sannsynlige årsaken og neste steg.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: Finn nettverksfeil](https://open.cait518.cc/ios-app-guide/no/wifiaid.html) — Ruter-, mesh- og DNS-diagnose
+  - Juleferie med hele familien på samme wifi? Når det hakker, sjekk wifi, DNS og internett med ett trykk og se den mest sannsynlige årsaken, eller test ett nettsted.
+  - Pris: Betalt nedlasting til én fast pris uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite: Ordforråd](https://open.cait518.cc/ios-app-guide/no/wordmatelite.html) — Fem nye ord hver dag
+  - Fem ord, ett minutt om dagen, på ett av 44 språk. Hør hvert ord, se det i en setning og hold rekken. Virker uten nett, ingen konto.
+  - Pris: Last ned gratis. Ett engangskjøp låser opp alle funksjoner—uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: Lær 44 språk](https://open.cait518.cc/ios-app-guide/no/wordmate.html) — Gloser, widget og klokke
+  - Juleferie i utlandet eller nyttårsforsett? Lær ord på 44 språk i små pauser: 14 praktiske emner, eksempelsetninger og uttale du kan høre. Fortsett rett fra widgeten.
+  - Pris: Betalt nedlasting til én fast pris uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: åpne RAR, ZIP og 7z](https://open.cait518.cc/ios-app-guide/no/zipbox.html) — Pakk ut uten reklame
+  - Julebilder i en 7z med passord eller en ZIP i flere deler? Se hva som ligger der, forhåndsvis bilder og PDF og pakk ut bare det du trenger, rett på enheten.
+  - Pris: Betalt nedlasting til én fast pris uten abonnement.
+  - App Store: https://apps.apple.com/no/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

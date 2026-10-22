@@ -1,0 +1,55 @@
+{
+  "retrieved": "2026-07-11",
+  "purpose": "Pinned offline validation inputs for the Bopomofo OER repository metadata package.",
+  "notice": {
+    "filename": "NOTICE-DCMI.txt",
+    "source": "https://www.dublincore.org/about/copyright/#schema-use",
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "files": [
+    {
+      "filename": "oai_dc.xsd",
+      "url": "https://www.openarchives.org/OAI/2.0/oai_dc.xsd",
+      "sha256": "7383d21bca49c1186627e820a5da7ec209febfc5b4295fada39720ad0cebee9a"
+    },
+    {
+      "filename": "simpledc20021212.xsd",
+      "url": "https://www.dublincore.org/schemas/xmls/simpledc20021212.xsd",
+      "sha256": "e9542e0cd08b59ad3ad994f50226dd7e6707792327b08f46eaa6250dd728d3aa"
+    },
+    {
+      "filename": "xml.xsd",
+      "url": "https://www.w3.org/2001/03/xml.xsd",
+      "sha256": "0ed94db44402526e7a683424d0bd4b65e5bc50e65d9b9a762b11b30bae06d0c8"
+    },
+    {
+      "filename": "dcmi-terms.ttl",
+      "url": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl",
+      "sha256": "13df401072dd7015bf9d75162f3e41c8138075304b7b9cc1aa1e9c16db976797"
+    },
+    {
+      "filename": "lrmi-terms.ttl",
+      "url": "https://www.dublincore.org/specifications/lrmi/lrmi_terms/2022-06-14/lrmi-terms.ttl",
+      "sha256": "223f68bab4b0d3b2fa0a5f6a520fdbf3b6a5fa3e0b59cf791e6b92e16246fe6e"
+    },
+    {
+      "filename": "learningResourceType.ttl",
+      "url": "https://www.dublincore.org/vocabs/learningResourceType.ttl",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "sha256": "fcbb2a5ef778bd2edc3a46e80fc4b70a8372eb0862ea1ebb70cb99e0fb29885e"
+    },
+    {
+      "filename": "educationalUse.ttl",
+      "url": "https://www.dublincore.org/vocabs/educationalUse.ttl",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "sha256": "a81268cbd50a0db8c67324e3adab0abe9ca03aa33174e37a69d3ee2f2dc11d2f"
+    }
+  ],
+  "excluded": [
+    {
+      "name": "IMS Learning Resource Meta-data 1.2.4 XML schema",
+      "url": "https://www.imsglobal.org/xsd/imsmd_v1p2p4.xsd",
+      "reason": "The official distribution notice requires license registration before redistribution, so this zero-account package does not bundle the schema or claim IMS or IEEE LOM conformance."
+    }
+  ]
+}

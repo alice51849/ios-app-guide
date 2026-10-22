@@ -1,0 +1,38 @@
+{
+  "retrieved": "2026-07-11",
+  "purpose": "Pinned offline context and vocabulary for validating the Bopomofo CSVW metadata.",
+  "notice": {
+    "filename": "NOTICE-W3C.txt",
+    "documentLicense": "https://www.w3.org/copyright/document-license-2023/",
+    "softwareLicense": "https://www.w3.org/copyright/software-license/"
+  },
+  "recommendations": [
+    "https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/",
+    "https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/",
+    "https://www.w3.org/TR/2015/REC-csv2rdf-20151217/"
+  ],
+  "files": [
+    {
+      "filename": "csvw.jsonld",
+      "url": "https://www.w3.org/ns/csvw.jsonld",
+      "sha256": "c0f4f6bb53d745222187444702298e257f2b519da249423a83739535c878fa5c"
+    },
+    {
+      "filename": "csvw.ttl",
+      "url": "https://www.w3.org/ns/csvw.ttl",
+      "sha256": "ad9296569d3203c771a0ca51ac7c4180d8ad2bdd85adec5c7881555ddb409f3a"
+    }
+  ],
+  "mediaTypes": [
+    {
+      "name": "CSVW metadata",
+      "value": "application/csvm+json",
+      "registry": "https://www.iana.org/assignments/media-types/application/csvm+json"
+    },
+    {
+      "name": "CSV",
+      "value": "text/csv",
+      "registry": "https://www.iana.org/assignments/media-types/text/csv"
+    }
+  ]
+}

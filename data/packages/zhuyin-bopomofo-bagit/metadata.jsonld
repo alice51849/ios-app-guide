@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/#dataset",
+  "name": "RFC 8493 BagIt package for complete Bopomofo reference data",
+  "alternateName": "完整注音參考資料 BagIt 數位保存套件",
+  "description": "Download a deterministic BagIt 1.0 preservation package for the complete 37-symbol Bopomofo dataset, with SHA-256 and SHA-512 payload and tag manifests.",
+  "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/",
+  "identifier": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/",
+  "version": "1.0.0",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-09-04",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "inLanguage": [
+    "en",
+    "zh-Hant",
+    "zh-Bopo"
+  ],
+  "conformsTo": "https://www.rfc-editor.org/rfc/rfc8493",
+  "creator": {
+    "@type": "Organization",
+    "name": "Lumi Apps - iOS App Guide",
+    "url": "https://open.cait518.cc/ios-app-guide"
+  },
+  "measurementTechnique": "RFC 8493 BagIt 1.0 with SHA-256 and SHA-512 payload and tag manifests",
+  "size": "295895.10",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Deterministic RFC 8493 BagIt ZIP",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/bopomofo-37-symbols-bagit-rfc8493.zip",
+      "encodingFormat": "application/zip",
+      "contentSize": "302881 B",
+      "sha256": "adca89022c1a439e93be4ededc34fc05273a6507367a2aafb15d74647850ddf3"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Outer SHA-256 checksum",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/checksums-sha256.txt",
+      "encodingFormat": "text/plain",
+      "contentSize": "104 B",
+      "sha256": "eab80e0a6fcba7c443533d0c0294df19f9cfecdbf89f37b248f3f223021ad650"
+    }
+  ],
+  "hasPart": [
+    {
+      "@type": "DigitalDocument",
+      "name": "data/LICENSE.txt",
+      "description": "CC BY 4.0 license notice",
+      "encodingFormat": "text/plain",
+      "contentSize": "386 B",
+      "sha256": "db5f000803644221be3bfc429590674421606ca5d4dd0ead328a6316b0927ffa",
+      "isBasedOn": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/README.md",
+      "description": "Preservation and validation guide",
+      "encodingFormat": "text/markdown",
+      "contentSize": "835 B",
+      "sha256": "2021e1e3d3fea3adf4fb25d9db99560374c31bb76543710ff500067df2d496ce",
+      "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-ml-dataset.croissant.jsonld",
+      "description": "MLCommons Croissant 1.1 metadata",
+      "encodingFormat": "application/ld+json; profile=\"http://mlcommons.org/croissant/1.1\"",
+      "contentSize": "13637 B",
+      "sha256": "7a3f9b535b1f032c5f5dace8e013187ef07d63d927e7906765f17666edef4b35",
+      "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-ml-dataset.csv",
+      "description": "Canonical 37-row UTF-8 table",
+      "encodingFormat": "text/csv",
+      "contentSize": "7980 B",
+      "sha256": "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514",
+      "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-ml-dataset.csv-metadata.json",
+      "description": "W3C CSVW metadata",
+      "encodingFormat": "application/csvm+json",
+      "contentSize": "7631 B",
+      "sha256": "8fa9e6bc32d3286d08c7e00f96ffd0cc6d9a60ea22e7bcc0b35a289a14fc3677",
+      "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-ml-dataset.jsonl",
+      "description": "Equivalent JSON Lines records",
+      "encodingFormat": "application/x-ndjson",
+      "contentSize": "14364 B",
+      "sha256": "d9be72584419f591af4bbf94cab7d28625ab635140da6a0e68e3888639355cd7",
+      "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-vocabulary.jsonld",
+      "description": "SKOS vocabulary in JSON-LD",
+      "encodingFormat": "application/ld+json",
+      "contentSize": "78997 B",
+      "sha256": "88d6a5115cebd1f4936211ac8efab38ea18550409e8177de329242b03cf77f49",
+      "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-vocabulary.nt",
+      "description": "SKOS vocabulary in N-Triples",
+      "encodingFormat": "application/n-triples",
+      "contentSize": "135781 B",
+      "sha256": "3a4c90d1d87817bd98c1b25410f60206707b617a07e161a7d74b00bbe39493a4",
+      "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-vocabulary.shacl.ttl",
+      "description": "SHACL validation shapes",
+      "encodingFormat": "text/turtle",
+      "contentSize": "4065 B",
+      "sha256": "4cb7e675397fbbf77401a226f5c9b21a79df4120d8447f05bb2ddd0704fcfca1",
+      "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl"
+    },
+    {
+      "@type": "DigitalDocument",
+      "name": "data/zhuyin-bopomofo-vocabulary.ttl",
+      "description": "SKOS vocabulary in Turtle",
+      "encodingFormat": "text/turtle",
+      "contentSize": "32219 B",
+      "sha256": "943bc26a91d3619119e04914db5247a1869e55d18ac73c0f89483945c1a476e1",
+      "isBasedOn": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl"
+    }
+  ]
+}

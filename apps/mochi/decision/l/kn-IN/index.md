@@ -1,0 +1,27 @@
+---
+title: "ಸರಳ ಟು ಡು ಲಿಸ್ಟ್ ಆಪ್ iPhone ಚಂದಾದಾರಿಕೆ ಇಲ್ಲದೆ"
+lang: "kn-IN"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochi/decision/l/kn-IN/index.html"
+modified: "2026-10-21"
+app_store_id: "6785004775"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# ಸರಳ ಟು ಡು ಲಿಸ್ಟ್ ಆಪ್ iPhone ಚಂದಾದಾರಿಕೆ ಇಲ್ಲದೆ
+
+ಬಹುತೇಕ ಟು ಡು ಆಪ್‌ಗಳು ಭಾರವಾಗಿರುವಂತೆ ಭಾಸವಾದರೆ, ಸರಿಯಾದದು ನೆನಪಿನ ಸೂಚನೆಗಳು ಮತ್ತು Apple Watch ಬೆಂಬಲ ಹೊಂದಿರುವ ಸ್ವಚ್ಛ ಚೆಕ್‌ಲಿಸ್ಟ್ — ಮತ್ತು ಉದ್ದೇಶಪೂರ್ವಕವಾಗಿ ಯಾವುದೇ ಯೋಜನಾ ನಿರ್ವಹಣಾ ಯಂತ್ರವಿಲ್ಲ. ಅದಕ್ಕಾಗಿಯೇ Mochi ರೂಪುಗೊಂಡಿತು.
+
+- ಉತ್ಪಾದಕತೆ
+- ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಖಾತೆ ಇಲ್ಲ
+- ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- Apple Watch
+- App Store · ಉಚಿತ
+
+[App Store ನಲ್ಲಿ Mochi ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8)
+
+[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-simple-to-do-list-app-iphone-no-subscription.html)
+
+> ಆ್ಯಪ್ ಡೆವಲಪರ್ Lumi Studio ಬರೆದ ಮಾರ್ಗದರ್ಶಿ. ಆ್ಯಪ್‌ಗಳ ಹೆಸರುಗಳು ಅವುಗಳ ಮಾಲೀಕರ ವ್ಯಾಪಾರ ಚಿಹ್ನೆಗಳು; ಗುರುತಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗಿದೆ. ದಾಖಲೆ, ಆರೋಗ್ಯ, ಶಾಲೆ ಮತ್ತು ಉತ್ಪಾದಕತೆಗೆ ಸಂಬಂಧಿಸಿದ ನಿರ್ಧಾರಗಳಲ್ಲಿ ಅಗತ್ಯವಿರುವ ಕಡೆ ಅಧಿಕೃತ ನಿಯಮಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.

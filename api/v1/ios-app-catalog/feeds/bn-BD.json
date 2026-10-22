@@ -1,0 +1,41 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "অ্যাপ ডিরেক্টরি | iOS",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/bn-BD/index.html",
+  "feed_url": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/feeds/bn-BD.json",
+  "language": "bn-BD",
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide/about.html"
+    }
+  ],
+  "_lumi_catalog": {
+    "apiVersion": "1.2.0",
+    "dateModified": "2026-10-21",
+    "contentDigest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "ordering": "alphabetical_by_app_name_not_a_ranking",
+    "recordCount": 54,
+    "market_availability": {
+      "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+      "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+      "evidence": {
+        "source_url": "https://support.apple.com/en-us/118205",
+        "observed_at": "2026-09-12",
+        "country": "BD",
+        "apple_media_services_markets": 174,
+        "country_listed": false,
+        "lookup_app_results": 0,
+        "lookup_control_results": 0,
+        "redirect_market": "US"
+      },
+      "value": "N/A",
+      "content_retained": true,
+      "publishable": false,
+      "facts_allowed": false,
+      "outbox_count": 0
+    }
+  },
+  "items": []
+}

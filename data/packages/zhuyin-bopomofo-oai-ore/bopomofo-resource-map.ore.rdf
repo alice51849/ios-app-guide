@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:spdx="http://spdx.org/rdf/terms#">
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json">
+    <dcterms:format>application/json</dcterms:format>
+    <dcterms:title xml:lang="en">Static Bopomofo API collection</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9563</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">2825e472d5696cc6ab9eb433fcb9ed3c685db442a72ade187c820d84b0d109c7</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json">
+    <dcterms:format>application/vnd.oai.openapi+json;version=3.1</dcterms:format>
+    <dcterms:title xml:lang="en">OpenAPI 3.1 description for the static API</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22649</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">7eeb5ff6b81d04dd4e7efc29ce6d0fb3e52abf70db830e245a9013e9b9b4fdee</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld">
+    <dcterms:format>application/ld+json</dcterms:format>
+    <dcterms:title xml:lang="en">Canonical LDES 1.0 JSON-LD event-stream entry point</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10968</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">dc464aa5b2be753f0f1e3660254fcf1d1e798d542bc4703aff389c6cdcfeb6c6</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl">
+    <dcterms:format>text/turtle</dcterms:format>
+    <dcterms:title xml:lang="en">Turtle discovery overview for the LDES event stream</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14709</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">76edfd00371fb4b4ab425a87ec2ed56a1c1195740ef8b12dfc633af0de96443e</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher">
+    <rdf:type rdf:resource="http://purl.org/dc/terms/Agent" />
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization" />
+    <foaf:name>iOS App Guide Open Resources</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf">
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-11T00:00:00Z</dcterms:created>
+    <dcterms:creator rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher" />
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-09-10T23:27:50Z</dcterms:modified>
+    <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by/4.0/" />
+    <ore:describes rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation">
+    <dcterms:conformsTo rdf:resource="https://www.openarchives.org/ore/1.0/datamodel" />
+    <dcterms:conformsTo rdf:resource="https://www.openarchives.org/ore/1.0/vocabulary" />
+    <dcterms:creator rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher" />
+    <dcterms:description xml:lang="en">A finite compound object containing sixteen machine-readable representations and metadata resources for all 37 Bopomofo symbols.</dcterms:description>
+    <dcterms:description xml:lang="zh-Hant">包含完整 37 個注音符號之 16 項機器可讀資料與 metadata 的有限複合物件。</dcterms:description>
+    <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by/4.0/" />
+    <dcterms:title xml:lang="en">Bopomofo 37-symbol open-data aggregation</dcterms:title>
+    <dcterms:title xml:lang="zh-Hant">注音 37 符號開放資料聚合</dcterms:title>
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl" />
+    <ore:aggregates rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json" />
+    <ore:isDescribedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld" />
+    <ore:isDescribedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf" />
+    <ore:isDescribedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl" />
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json">
+    <dcterms:format>application/json</dcterms:format>
+    <dcterms:title xml:lang="en">Frictionless Data Package 2.0 descriptor</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2145</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">fc7819fffb1d9513472ba86a8269df9fc9a7598a546160dc5839b6a8fe275a88</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv">
+    <dcterms:format>text/csv</dcterms:format>
+    <dcterms:title xml:lang="en">Frictionless package CSV resource</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7980</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json">
+    <dcterms:format>application/json</dcterms:format>
+    <dcterms:title xml:lang="en">Frictionless Table Schema 2.0</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5445</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">25762f51439d14bf191d9eff2f422721b9cba703c1e67736d7eadec45b152206</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld">
+    <dcterms:format>application/ld+json</dcterms:format>
+    <dcterms:title xml:lang="en">MLCommons Croissant 1.1 metadata</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13637</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">7a3f9b535b1f032c5f5dace8e013187ef07d63d927e7906765f17666edef4b35</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv">
+    <dcterms:format>text/csv</dcterms:format>
+    <dcterms:title xml:lang="en">Canonical 37-row Bopomofo CSV</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7980</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json">
+    <dcterms:format>application/csvm+json</dcterms:format>
+    <dcterms:title xml:lang="en">W3C CSVW metadata</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7631</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">8fa9e6bc32d3286d08c7e00f96ffd0cc6d9a60ea22e7bcc0b35a289a14fc3677</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl">
+    <dcterms:format>text/plain</dcterms:format>
+    <dcterms:title xml:lang="en">Equivalent Bopomofo JSON Lines records</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14364</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">d9be72584419f591af4bbf94cab7d28625ab635140da6a0e68e3888639355cd7</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld">
+    <dcterms:format>application/ld+json</dcterms:format>
+    <dcterms:title xml:lang="en">Bopomofo SKOS vocabulary in JSON-LD</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78997</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">88d6a5115cebd1f4936211ac8efab38ea18550409e8177de329242b03cf77f49</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt">
+    <dcterms:format>application/n-triples</dcterms:format>
+    <dcterms:title xml:lang="en">Bopomofo SKOS vocabulary in N-Triples</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">135781</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">3a4c90d1d87817bd98c1b25410f60206707b617a07e161a7d74b00bbe39493a4</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl">
+    <dcterms:format>text/turtle</dcterms:format>
+    <dcterms:title xml:lang="en">SHACL validation shapes for the SKOS vocabulary</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4065</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">4cb7e675397fbbf77401a226f5c9b21a79df4120d8447f05bb2ddd0704fcfca1</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl">
+    <dcterms:format>text/turtle</dcterms:format>
+    <dcterms:title xml:lang="en">Bopomofo SKOS vocabulary in Turtle</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32219</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">943bc26a91d3619119e04914db5247a1869e55d18ac73c0f89483945c1a476e1</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json">
+    <dcterms:format>application/json</dcterms:format>
+    <dcterms:title xml:lang="en">Canonical 37-symbol Bopomofo JSON</dcterms:title>
+    <spdx:checksum rdf:resource="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json#sha256" />
+    <ore:isAggregatedBy rdf:resource="https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation" />
+    <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9700</dcat:byteSize>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json#sha256">
+    <spdx:algorithm rdf:resource="http://spdx.org/rdf/terms#checksumAlgorithm_sha256" />
+    <spdx:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">81b1a221d2e85e6df40f7b66f75b8905567e974aef5b50d7d0646b0feea1aac9</spdx:checksumValue>
+    <rdf:type rdf:resource="http://spdx.org/rdf/terms#Checksum" />
+  </rdf:Description>
+</rdf:RDF>

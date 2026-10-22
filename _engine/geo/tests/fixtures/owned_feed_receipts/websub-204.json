@@ -1,0 +1,45 @@
+{
+  "accepted_ack": true,
+  "attempt_id": "cccccccccccccccccccccccccccccccc",
+  "endpoint": "https://pubsubhubbub.appspot.com/",
+  "fixture": true,
+  "indexing_verified": false,
+  "intent_id": "575dcb4da2fe3fd95575168b121570fef6a8a0159cce416936b6c20b86588a0b",
+  "outcome": "accepted_ack",
+  "protocol": "websub",
+  "receipt_id": "4b79e8152ee4fc643c58728753c190b9476b560376274c42239d422425ecf7fc",
+  "request": {
+    "content_type": "application/x-www-form-urlencoded; charset=utf-8",
+    "deployment_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "engine_source_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "feed_generation_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "feed_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "generation_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "inventory_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "method": "POST",
+    "request_body": "hub.mode=publish&hub.url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fen-US%2Ffeed.xml",
+    "request_sha256": "76cf8d745cfb224c9e0890f96ed50e02029fa42775e02dc9bd12ba5892d6e904",
+    "source_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "started_at": "2026-09-01T00:00:00Z",
+    "topics": [
+      "https://open.cait518.cc/ios-app-guide/en-US/feed.xml"
+    ]
+  },
+  "response": {
+    "ack_body": "",
+    "ack_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "endpoint": "https://pubsubhubbub.appspot.com/",
+    "final_url": "https://pubsubhubbub.appspot.com/",
+    "http_status": 204,
+    "observed_at": "2026-09-01T00:00:01Z",
+    "request_sha256": "76cf8d745cfb224c9e0890f96ed50e02029fa42775e02dc9bd12ba5892d6e904",
+    "retry_after_seconds": null,
+    "topics": [
+      "https://open.cait518.cc/ios-app-guide/en-US/feed.xml"
+    ],
+    "transport_error": null
+  },
+  "schema": "lumi.owned-feed-receipt/v1",
+  "subscriber_delivery_verified": false,
+  "topic": "https://open.cait518.cc/ios-app-guide/en-US/feed.xml"
+}

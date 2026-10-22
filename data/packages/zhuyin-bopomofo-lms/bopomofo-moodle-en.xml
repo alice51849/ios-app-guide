@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/top/Bopomofo 37 Symbols - English</text></category>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 01</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "b"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄅ. Example: 爸 (bà, father).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3105</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html"><text>ㄅ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄆ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄇ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄈ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 02</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "p"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄆ. Example: 怕 (pà, afraid).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3106</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄇ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄈ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄉ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄆ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 03</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "m"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄇ. Example: 媽 (mā, mother).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3107</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄉ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄊ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄇ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄈ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 04</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "f"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄈ. Example: 飛 (fēi, to fly).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3108</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄋ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄈ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄉ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄊ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 05</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "d"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄉ. Example: 大 (dà, big).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3109</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html"><text>ㄉ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄊ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄋ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄌ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 06</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "t"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄊ. Example: 天 (tiān, sky).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u310a</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄋ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄌ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄍ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄊ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 07</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "n"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄋ. Example: 你 (nǐ, you).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u310b</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄍ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄎ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄋ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄌ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 08</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "l"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄌ. Example: 來 (lái, to come).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u310c</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄏ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄌ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄍ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄎ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 09</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "g"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄍ. Example: 狗 (gǒu, dog).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u310d</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html"><text>ㄍ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄎ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄏ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄐ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 10</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "k"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄎ. Example: 看 (kàn, to look).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u310e</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄏ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄐ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄑ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄎ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 11</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "h"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄏ. Example: 好 (hǎo, good).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u310f</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄑ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄒ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄏ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄐ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 12</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "j"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄐ. Example: 家 (jiā, home).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3110</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄓ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄐ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄑ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄒ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 13</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "q"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄑ. Example: 去 (qù, to go).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3111</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html"><text>ㄑ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄒ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄓ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄔ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 14</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "x"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄒ. Example: 小 (xiǎo, small).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3112</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄓ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄔ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄕ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄒ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 15</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "zh"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄓ. Example: 中 (zhōng, middle).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3113</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄕ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄖ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄓ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄔ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 16</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "ch"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄔ. Example: 吃 (chī, to eat).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3114</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄗ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄔ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄕ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄖ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 17</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "sh"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄕ. Example: 是 (shì, to be).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3115</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html"><text>ㄕ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄖ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄗ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄘ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 18</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "r"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄖ. Example: 人 (rén, person).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3116</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄗ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄘ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄙ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄖ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 19</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "z"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄗ. Example: 早 (zǎo, early).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3117</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄙ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄅ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄗ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄘ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 20</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "c"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄘ. Example: 菜 (cài, vegetable).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3118</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄆ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄘ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄙ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄅ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo initial 21</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo initial corresponds to Hanyu Pinyin "s"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄙ. Example: 三 (sān, three).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3119</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html"><text>ㄙ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄅ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄆ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄇ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo medial 22</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo medial corresponds to Hanyu Pinyin "i / yi"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄧ. Example: 一 (yī, one).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3127</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html"><text>ㄧ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄨ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄩ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo medial 23</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo medial corresponds to Hanyu Pinyin "u / wu"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄨ. Example: 五 (wǔ, five).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3128</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄩ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄧ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄨ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo medial 24</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo medial corresponds to Hanyu Pinyin "ü / yu"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄩ. Example: 魚 (yú, fish).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3129</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄨ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄩ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄧ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo final 25</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo final corresponds to Hanyu Pinyin "a"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄚ. Example: 大 (dà, big).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u311a</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html"><text>ㄚ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄛ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄜ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄝ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo final 26</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo final corresponds to Hanyu Pinyin "o"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄛ. Example: 波 (bō, wave).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u311b</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄜ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄝ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄞ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄛ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo final 27</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo final corresponds to Hanyu Pinyin "e"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄜ. Example: 喝 (hē, to drink).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u311c</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄞ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄟ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄜ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄝ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo final 28</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo final corresponds to Hanyu Pinyin "ê"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄝ. Example: 誒 (ề, hey (interjection)).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u311d</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄠ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄝ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄞ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄟ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo final 29</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo final corresponds to Hanyu Pinyin "ai"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄞ. Example: 愛 (ài, love).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u311e</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html"><text>ㄞ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄟ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄠ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄡ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo final 30</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo final corresponds to Hanyu Pinyin "ei"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄟ. Example: 給 (gěi, to give).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u311f</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄠ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄡ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄢ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄟ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo final 31</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo final corresponds to Hanyu Pinyin "ao"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄠ. Example: 好 (hǎo, good).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3120</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄢ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄣ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄠ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄡ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo final 32</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo final corresponds to Hanyu Pinyin "ou"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄡ. Example: 有 (yǒu, to have).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3121</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄤ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄡ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄢ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄣ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo final 33</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo final corresponds to Hanyu Pinyin "an"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄢ. Example: 安 (ān, peace).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3122</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html"><text>ㄢ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄣ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄤ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄥ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo final 34</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo final corresponds to Hanyu Pinyin "en"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄣ. Example: 恩 (ēn, grace).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3123</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄤ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄥ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄦ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄣ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo final 35</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo final corresponds to Hanyu Pinyin "ang"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄤ. Example: 忙 (máng, busy).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3124</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄦ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄚ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄤ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄥ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo final 36</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo final corresponds to Hanyu Pinyin "eng"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄥ. Example: 冷 (lěng, cold).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3125</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="0" format="html"><text>ㄛ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="100" format="html"><text>ㄥ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄦ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄚ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+  <question type="multichoice">
+    <name><text>Bopomofo final 37</text></name>
+    <questiontext format="html"><text>&lt;p&gt;Which Bopomofo final corresponds to Hanyu Pinyin "er"?&lt;/p&gt;</text></questiontext>
+    <generalfeedback format="html"><text>&lt;p&gt;Correct answer: ㄦ. Example: 二 (èr, two).&lt;/p&gt;</text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>bopomofo_u3126</idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html"><text>ㄦ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄚ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄛ</text><feedback format="html"><text></text></feedback></answer>
+    <answer fraction="0" format="html"><text>ㄜ</text><feedback format="html"><text></text></feedback></answer>
+  </question>
+</quiz>

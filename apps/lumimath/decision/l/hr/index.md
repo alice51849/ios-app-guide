@@ -1,0 +1,26 @@
+---
+title: "najbolja matematička igra za djecu za razvoj logičkih vještina na iPhoneu"
+lang: "hr"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimath/decision/l/hr/index.html"
+modified: "2026-10-21"
+app_store_id: "6778269699"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# najbolja matematička igra za djecu za razvoj logičkih vještina na iPhoneu
+
+Najbolja dječja matematička aplikacija trenira razmišljanje — obrasce, nizove, prostorno razmišljanje — ne samo aritmetičke vježbe, i skriva to unutar igre koju dijete želi igrati. Upravo zato Lumi Math Planet postoji.
+
+- Djeca i učenje
+- Besplatno za početak
+- Bez računa
+- Bez oglasa
+- App Store · Besplatno
+
+[Preuzmite Lumi Math Planet u App Storeu →](https://apps.apple.com/hr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8)
+
+[Pročitajte cijeli vodič](https://open.cait518.cc/ios-app-guide/hr/answers/best-math-game-app-for-kids-to-build-logic-skills-iphone.html)
+
+> Vodič je napisao Lumi Studio, razvojni tim aplikacije. Nazivi aplikacija zaštitni su znakovi svojih vlasnika i navode se samo radi identifikacije. Kod odluka vezanih uz dokumente, zdravlje, školu i produktivnost provjerite službene zahtjeve ondje gdje je to važno.

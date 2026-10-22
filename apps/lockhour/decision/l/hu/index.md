@@ -1,0 +1,28 @@
+---
+title: "legjobb alkalmazás a közösségi média blokkolására tanulás közben iPhone-on"
+lang: "hu"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lockhour/decision/l/hu/index.html"
+modified: "2026-10-21"
+app_store_id: "6780107485"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# legjobb alkalmazás a közösségi média blokkolására tanulás közben iPhone-on
+
+Vizsgák alatt az akaraterő nem elég — kemény, időzített blokkolás kell. Ezért készült a LockHour Pro.
+
+- Produktivitás
+- Ingyenes kezdés
+- Nincs fiók
+- Nincs reklám
+- Nincs követés
+- Privát / eszközön tárolt
+- App Store · Ingyenes
+
+[Szerezze be a LockHour Pro-t az App Store-ból →](https://apps.apple.com/hu/app/id6780107485?pt=118326163&ct=geo_pick&mt=8)
+
+[Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/answers/best-app-to-block-social-media-while-studying-iphone.html)
+
+> Az útmutatót az alkalmazás fejlesztője, a Lumi Studio írta. Az alkalmazásnevek tulajdonosaik védjegyei, és kizárólag azonosítás céljából szerepelnek. Dokumentumokkal, egészséggel, iskolával és munkaszervezéssel kapcsolatos döntéseknél ellenőrizd a hivatalos követelményeket ott, ahol ez lényeges.

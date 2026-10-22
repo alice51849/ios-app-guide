@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>WiFi Aid：找出網路問題·診斷 — 分享器・路由器・Mesh・DNS | iOS App</title>
+<meta name="description" content="「網路又卡住了」——問題到底出在路由器、DNS、ISP,還是網站本身?WiFi Aid 用多條獨立路徑同時檢測 DNS、TCP、TLS、回應時間與穩定度,交叉比對各項證據,告訴你最可能的故障原因,不必再瞎猜、重開機碰運氣。">
+<meta name="keywords" content="中繼器, 基地台, 延遲, 穩定度, 回應時間, 連線品質, 掉線, IPv6, IPv4, TLS, PDF, 小工具, 寬頻, 光纖, 數據機, 分析, 疑難排解, 網路延遲, 無線網路, 延遲測試, 連線測試, TCP">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaid.html">
+<!-- smart-app-banner:start -->
+<meta name="apple-itunes-app" content="app-id=6790467886, affiliate-data=pt=118326163&amp;ct=geo_pick&amp;mt=8">
+<!-- smart-app-banner:end -->
+<!-- social-preview:start -->
+<meta property="og:title" content="WiFi Aid：找出網路問題·診斷 — 分享器・路由器・Mesh・DNS | iOS App">
+<meta property="og:type" content="product">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaid.html">
+<meta property="og:image" content="https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg">
+<meta property="og:image:secure_url" content="https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="WiFi Aid：找出網路問題·診斷 — 分享器・路由器・Mesh・DNS | iOS App">
+<meta property="og:description" content="App Store · $190.00. 「網路又卡住了」——問題到底出在路由器、DNS、ISP,還是網站本身?WiFi Aid 用多條獨立路徑同時檢測 DNS、TCP、TLS、回應時間與穩定度,交叉比對各項證據,告訴你最可能的故障原因,不必再瞎猜、重開機碰運氣。">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="iOS App Guide">
+<meta property="product:price:amount" content="190">
+<meta property="product:price:currency" content="TWD">
+<meta property="product:availability" content="instock">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<script type="application/ld+json" data-iag="primary-image">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaid.html#webpage",
+  "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaid.html",
+  "name": "WiFi Aid：找出網路問題·診斷 — 分享器・路由器・Mesh・DNS | iOS App",
+  "description": "「網路又卡住了」——問題到底出在路由器、DNS、ISP,還是網站本身?WiFi Aid 用多條獨立路徑同時檢測 DNS、TCP、TLS、回應時間與穩定度,交叉比對各項證據,告訴你最可能的故障原因,不必再瞎猜、重開機碰運氣。",
+  "inLanguage": "zh-Hant",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "@id": "https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg#primaryimage",
+    "contentUrl": "https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg",
+    "url": "https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg",
+    "width": 1200,
+    "height": 675,
+    "encodingFormat": "image/jpeg",
+    "caption": "WiFi Aid：找出網路問題·診斷 — 分享器・路由器・Mesh・DNS | iOS App",
+    "representativeOfPage": true
+  },
+  "mainEntity": {
+    "@id": "https://apps.apple.com/app/id6790467886"
+  }
+}
+</script>
+<style>
+.iag-app-preview{margin:clamp(1rem,3vw,1.5rem) 0 clamp(1.5rem,4vw,2.25rem)}
+.iag-app-preview__link{display:block;position:relative;width:100%;max-width:1200px;margin:0 auto;overflow:hidden;border-radius:clamp(14px,2.2vw,24px);background:#0b1020;box-shadow:0 18px 50px rgba(15,23,42,.22);line-height:0}
+.iag-app-preview__link::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.28);border-radius:inherit;pointer-events:none}
+.iag-app-preview__link:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
+.iag-app-preview__image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+@media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
+</style>
+<meta name="twitter:card" content="app">
+<meta name="twitter:title" content="WiFi Aid：找出網路問題·診斷 — 分享器・路由器・Mesh・DNS | iOS App">
+<meta name="twitter:description" content="App Store · $190.00. 「網路又卡住了」——問題到底出在路由器、DNS、ISP,還是網站本身?WiFi Aid 用多條獨立路徑同時檢測 DNS、TCP、TLS、回應時間與穩定度,交叉比對各項證據,告訴你最可能的故障原因,不必再瞎猜、重開機碰運氣。">
+<meta name="twitter:image" content="https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg">
+<meta name="twitter:image:alt" content="WiFi Aid：找出網路問題·診斷 — 分享器・路由器・Mesh・DNS | iOS App">
+<meta name="twitter:app:name:iphone" content="WiFi Aid">
+<meta name="twitter:app:id:iphone" content="6790467886">
+<meta name="twitter:app:name:ipad" content="WiFi Aid">
+<meta name="twitter:app:id:ipad" content="6790467886">
+<meta name="twitter:label1" content="App Store">
+<meta name="twitter:data1" content="$190.00">
+<link rel="alternate" type="application/json+oembed" href="https://open.cait518.cc/ios-app-guide/oembed/zh-Hant/wifiaid.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fzh-Hant%2Fwifiaid.html&amp;format=json" title="WiFi Aid：找出網路問題·診斷 — 分享器・路由器・Mesh・DNS | iOS App">
+<!-- social-preview:end -->
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/wifiaid.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/wifiaid.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/wifiaid.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/wifiaid.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/wifiaid.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/wifiaid.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/wifiaid.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/wifiaid.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/wifiaid.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/wifiaid.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/wifiaid.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/wifiaid.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/wifiaid.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/wifiaid.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/wifiaid.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/wifiaid.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/wifiaid.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/wifiaid.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/wifiaid.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/wifiaid.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/wifiaid.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/wifiaid.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/wifiaid.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/wifiaid.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/wifiaid.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/wifiaid.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/wifiaid.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/wifiaid.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/wifiaid.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/wifiaid.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/wifiaid.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/wifiaid.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/wifiaid.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/wifiaid.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/wifiaid.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/wifiaid.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/wifiaid.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/wifiaid.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/wifiaid.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/wifiaid.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/wifiaid.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/wifiaid.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/wifiaid.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/wifiaid.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/wifiaid.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/wifiaid.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/wifiaid.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/wifiaid.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaid.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaid.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/wifiaid.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"WiFi Aid：找出網路問題·診斷","operatingSystem":"iOS","applicationCategory":"PhotographyApplication","description":"「網路又卡住了」——問題到底出在路由器、DNS、ISP,還是網站本身?WiFi Aid 用多條獨立路徑同時檢測 DNS、TCP、TLS、回應時間與穩定度,交叉比對各項證據,告訴你最可能的故障原因,不必再瞎猜、重開機碰運氣。\n\n• 執行檢查:一鍵完成 Wi-Fi、DNS 與網際網路連線的完整檢測,幾秒內就能看到結果與診斷結論。\n• 深度檢查:蒐集更多證據與穩定度樣本,適合排查時好時壞的間歇性問題。\n• 網站檢查:輸入任一網址,立刻判斷是單一網站出狀況,還是整條網路都有問題。\n• 完整證據:DNS、TCP、TLS、TTFB、HTTP、直連 IP、IPv4 與 IPv6 逐項列出,每個結論都有依據。\n• 穩定度分析:透過連續取樣觀察延遲抖動,揪出「看起來有連上、用起來卻很卡」的不穩定連線。\n• 檢查紀錄:歷次結果自動保存,方便比對網路狀況的變化;所有紀錄僅儲存在你的裝置上。\n• Apple Watch:抬起手腕即可直接執行檢查,不必掏出 iPhone。\n• 小工具與 iPad:主畫面小工具隨時顯示連線狀態並可快速檢查,iPad 版面完整支援。\n\n無需帳號,沒有廣告、沒有分析工具、沒有任何追蹤;檢查紀錄僅存於本機,不上傳雲端。\n\nApp Store 一次付費買斷,終身使用,絕無訂閱。\n\n針對 iPhone Duo 最佳化。","url":"https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","featureList":["中繼器","基地台","延遲","穩定度","回應時間","連線品質","掉線","IPv6"],"keywords":"中繼器, 基地台, 延遲, 穩定度, 回應時間, 連線品質, 掉線, IPv6, IPv4, TLS, PDF, 小工具, 寬頻, 光纖, 數據機, 分析, 疑難排解, 網路延遲, 無線網路, 延遲測試, 連線測試, TCP","@id":"https://apps.apple.com/app/id6790467886","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6790467886"},"downloadUrl":"https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaid.html#webpage"},"offers":{"@type":"Offer","price":"190","priceCurrency":"TWD","url":"https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
+<!-- app-store-facts-style:start -->
+<link rel="stylesheet" href="https://open.cait518.cc/ios-app-guide/assets/app-store-facts-v1.css">
+<!-- app-store-facts-style:end -->
+<script type="application/ld+json" data-first-party-disclosure="publisher">{"@context":"https://schema.org","@type":"WebSite","@id":"https://open.cait518.cc/ios-app-guide/#website","url":"https://open.cait518.cc/ios-app-guide","publisher":{"@type":"Organization","@id":"https://open.cait518.cc/ios-app-guide/#organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide/about.html","description":"Developer of the featured apps and operator of this site."}}</script>
+<!-- app-store-qr-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
+<!-- app-store-qr-style:end -->
+<!-- app-decision-card-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-decision-card-v1.css">
+<!-- app-decision-card-style:end -->
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<main>
+  <h1>WiFi Aid：找出網路問題·診斷</h1>
+  <p><strong>分享器・路由器・Mesh・DNS</strong></p>
+<!-- app-decision-card:start -->
+<aside class="iag-decision-card" data-app-id="6790467886" aria-label="WiFi Aid：找出網路問題·診斷">
+  <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/wifiaid-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
+  <div class="iag-decision-card__body">
+    <strong class="iag-decision-card__title" title="WiFi Aid：找出網路問題·診斷">WiFi Aid：找出網路問題·診斷</strong>
+    <p class="iag-decision-card__promise" title="分享器・路由器・Mesh・DNS">分享器・路由器・Mesh・DNS</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="中繼器">中繼器</span><span class="iag-decision-card__fact" title="基地台">基地台</span><span class="iag-decision-card__fact" title="延遲">延遲</span><span class="iag-decision-card__fact" title="穩定度">穩定度</span></div>
+    <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="190">$190.00</data></div>
+    <p class="iag-decision-card__terms" title="付費下載，一次付清，無需訂閱。">付費下載，一次付清，無需訂閱。</p>
+    <a class="iag-decision-card__cta" href="https://apps.apple.com/tw/app/id6790467886?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="在 App Store 取得 WiFi Aid：找出網路問題·診斷" title="在 App Store 取得 WiFi Aid：找出網路問題·診斷">在 App Store 取得 WiFi Aid：找出網路問題·診斷</a>
+  </div>
+</aside>
+<!-- app-decision-card:end -->
+<!-- app-store-qr:start -->
+<section class="app-store-qr-card" style="display:none" aria-label="在 App Store 取得 WiFi Aid：找出網路問題·診斷">
+<a class="app-store-qr-card__link" href="https://apps.apple.com/tw/app/id6790467886?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener">
+<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6790467886-b3373dfd8de214d926b6.svg" width="164" height="164" alt="" decoding="async">
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">在 App Store 取得 WiFi Aid：找出網路問題·診斷</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/tw/app/id6790467886" aria-hidden="true"></span><span class="app-store-qr-card__badge-wrap"><img class="app-store-qr-card__badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/zh-tw?size=250x83" width="120" height="40" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span></span>
+</a>
+</section>
+<!-- app-store-qr:end -->
+<!-- app-hook-clip:start -->
+<figure class="app-hook-clip" data-app-key="wifiaid" style="margin:18px 0;max-width:300px">
+<video controls playsinline muted loop preload="none" poster="https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg" width="1080" height="1920" style="display:block;width:100%;aspect-ratio:9/16;border-radius:18px;background:#111;object-fit:contain" aria-label="網路問題別再猜 直接看證據 | WiFi Aid：找出網路問題·診斷"><source src="https://files.catbox.moe/elrj8r.mp4" type="video/mp4"></video>
+<figcaption style="margin-top:6px;font-size:14px;color:#6b6257">網路問題別再猜 直接看證據</figcaption>
+</figure>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"網路問題別再猜 直接看證據 | WiFi Aid：找出網路問題·診斷","description":"「網路又卡住了」——問題到底出在路由器、DNS、ISP,還是網站本身?WiFi Aid 用多條獨立路徑同時檢測 DNS、TCP、TLS、回應時間與穩定度,交叉比對各項證據,告訴你最可能的故障原因,不必再瞎猜、重開機碰運氣。","thumbnailUrl":["https://open.cait518.cc/ios-app-guide/social/img/wifiaid-share.jpg"],"uploadDate":"2026-10-18T00:00:00+00:00","contentUrl":"https://files.catbox.moe/elrj8r.mp4","duration":"PT7S","inLanguage":"zh-Hant"}</script>
+<!-- app-hook-clip:end -->
+<h2>WiFi Aid：找出網路問題·診斷 是什麼?</h2>
+  <p>WiFi Aid：找出網路問題·診斷 是一款 iOS App。 分享器・路由器・Mesh・DNS</p>
+  <p>「網路又卡住了」——問題到底出在路由器、DNS、ISP,還是網站本身?WiFi Aid 用多條獨立路徑同時檢測 DNS、TCP、TLS、回應時間與穩定度,交叉比對各項證據,告訴你最可能的故障原因,不必再瞎猜、重開機碰運氣。</p>
+  <p>• 執行檢查:一鍵完成 Wi-Fi、DNS 與網際網路連線的完整檢測,幾秒內就能看到結果與診斷結論。</p>
+  <p>• 深度檢查:蒐集更多證據與穩定度樣本,適合排查時好時壞的間歇性問題。</p>
+  <p>• 網站檢查:輸入任一網址,立刻判斷是單一網站出狀況,還是整條網路都有問題。</p>
+  <p>• 完整證據:DNS、TCP、TLS、TTFB、HTTP、直連 IP、IPv4 與 IPv6 逐項列出,每個結論都有依據。</p>
+  <p>• 穩定度分析:透過連續取樣觀察延遲抖動,揪出「看起來有連上、用起來卻很卡」的不穩定連線。</p>
+  <p>• 檢查紀錄:歷次結果自動保存,方便比對網路狀況的變化;所有紀錄僅儲存在你的裝置上。</p>
+  <p>• Apple Watch:抬起手腕即可直接執行檢查,不必掏出 iPhone。</p>
+  <p>• 小工具與 iPad:主畫面小工具隨時顯示連線狀態並可快速檢查,iPad 版面完整支援。</p>
+  <p>無需帳號,沒有廣告、沒有分析工具、沒有任何追蹤;檢查紀錄僅存於本機,不上傳雲端。</p>
+  <p>App Store 一次付費買斷,終身使用,絕無訂閱。</p>
+  <p>針對 iPhone Duo 最佳化。</p>
+
+  <h2>主要功能</h2>
+  <ul>
+    <li>中繼器</li>
+    <li>基地台</li>
+    <li>延遲</li>
+    <li>穩定度</li>
+    <li>回應時間</li>
+    <li>連線品質</li>
+    <li>掉線</li>
+    <li>IPv6</li>
+  </ul>
+
+  <h2>價格</h2>
+  <p>付費下載，一次付清，無需訂閱。</p>
+
+  <h2>下載</h2>
+  <p><a href="https://apps.apple.com/tw/app/id6790467886?pt=118326163&amp;ct=geo_pick&amp;mt=8">在 App Store 取得 WiFi Aid：找出網路問題·診斷</a></p>
+  <p class="android-play" data-android-play="com.alice51849.WiFiAid">Android: <a href="https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid&amp;referrer=utm_source%3Dgeo_pick%26utm_campaign%3Dwifiaid" rel="noopener">Google Play</a></p>
+<p class="publisher-disclosure" data-publisher-disclosure="true"><small>這是由 Lumi Studio 發布的第一方資料；Lumi Studio 是每款列出 App 的開發者。</small></p>
+<!-- app-store-facts:start -->
+<aside class="iag-store-facts" aria-label="App Store">
+<a class="iag-store-facts__link" href="https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=geo_pick&mt=8" rel="nofollow noopener">
+<span>App Store</span><span aria-hidden="true">&middot;</span><data value="190">$190.00</data><span aria-hidden="true">&middot;</span><span class="iag-store-facts__rating"><span aria-hidden="true">&#9733;</span> <data value="5.0">5.0</data>/5 <span aria-hidden="true">&middot;</span> <data value="1">1</data></span>
+</a>
+</aside>
+<!-- app-store-facts:end -->
+</main>
+<!--iag-app-related-->
+<section class="wrap app-related">
+<h2>關於這款 App 的問答</h2>
+<ul>
+  <li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-wifi-troubleshooting-app-for-remote-workers-with-connected-but-no-internet.html">best wifi troubleshooting app for remote workers with connected but no internet</a></li>
+  <li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/how-to-troubleshoot-wi-fi-connected-but-no-internet-on-iphone.html">how to troubleshoot wi-fi connected but no internet on iphone</a></li>
+  <li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/how-to-document-intermittent-internet-problems-on-iphone-for-isp-support.html">how to document intermittent internet problems on iphone for isp support</a></li>
+  <li><a href="https://open.cait518.cc/ios-app-guide/zh-Hant/answers/how-to-tell-if-one-website-is-down-or-my-whole-internet-connection-on-iphone.html">how to tell if one website is down or my whole internet connection on iphone</a></li>
+</ul>
+</section>
+<!--/iag-app-related-->
+
+<!-- webmcp-install-tool:start -->
+<script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6790467886","app_name":"WiFi Aid","page_language":"zh-Hant","page_url":"https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaid.html","app_store_url":"https://apps.apple.com/tw/app/id6790467886?pt=118326163&ct=geo_pick&mt=8","localized_description":"「網路又卡住了」——問題到底出在路由器、DNS、ISP,還是網站本身?WiFi Aid 用多條獨立路徑同時檢測 DNS、TCP、TLS、回應時間與穩定度,交叉比對各項證據,告訴你最可能的故障原因,不必再瞎猜、重開機碰運氣。","storefront_facts":{"price":"190","currency":"TWD","formatted_price":"$190.00","rating_value":5.0,"rating_count":1}}</script>
+<script src="https://open.cait518.cc/ios-app-guide/assets/webmcp-install-tool-v2.js" data-webmcp-install="iag-webmcp-install-data" defer></script>
+<!-- webmcp-install-tool:end -->
+<!-- mobile-store-cta:start -->
+<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
+<a class="mobile-store-cta__link" href="https://apps.apple.com/tw/app/id6790467886?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" tabindex="-1" aria-label="在 App Store 取得 WiFi Aid：找出網路問題·診斷" title="在 App Store 取得 WiFi Aid：找出網路問題·診斷"><span class="mobile-store-cta__label">App Store</span></a>
+</div>
+<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
+<!-- mobile-store-cta:end -->
+<!-- app-store-share:start -->
+<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6790467886" data-app-store-url="https://apps.apple.com/tw/app/id6790467886?pt=118326163&amp;ct=geo_pick&amp;mt=8" defer></script>
+<!-- app-store-share:end -->
+</body>
+</html>

@@ -1,0 +1,173 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json> <http://purl.org/dc/terms/format> "application/json" .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json> <http://purl.org/dc/terms/title> "Static Bopomofo API collection"@en .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256> .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json> <http://www.w3.org/ns/dcat#byteSize> "9563"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256> <http://spdx.org/rdf/terms#checksumValue> "2825e472d5696cc6ab9eb433fcb9ed3c685db442a72ade187c820d84b0d109c7"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json> <http://purl.org/dc/terms/format> "application/vnd.oai.openapi+json;version=3.1" .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json> <http://purl.org/dc/terms/title> "OpenAPI 3.1 description for the static API"@en .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256> .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json> <http://www.w3.org/ns/dcat#byteSize> "22649"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256> <http://spdx.org/rdf/terms#checksumValue> "7eeb5ff6b81d04dd4e7efc29ce6d0fb3e52abf70db830e245a9013e9b9b4fdee"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld> <http://purl.org/dc/terms/format> "application/ld+json" .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld> <http://purl.org/dc/terms/title> "Canonical LDES 1.0 JSON-LD event-stream entry point"@en .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld> <http://www.w3.org/ns/dcat#byteSize> "10968"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256> <http://spdx.org/rdf/terms#checksumValue> "dc464aa5b2be753f0f1e3660254fcf1d1e798d542bc4703aff389c6cdcfeb6c6"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl> <http://purl.org/dc/terms/format> "text/turtle" .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl> <http://purl.org/dc/terms/title> "Turtle discovery overview for the LDES event stream"@en .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl> <http://www.w3.org/ns/dcat#byteSize> "14709"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256> <http://spdx.org/rdf/terms#checksumValue> "76edfd00371fb4b4ab425a87ec2ed56a1c1195740ef8b12dfc633af0de96443e"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher> <http://xmlns.com/foaf/0.1/name> "iOS App Guide Open Resources" .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/conformsTo> <https://www.openarchives.org/ore/1.0/datamodel> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/conformsTo> <https://www.openarchives.org/ore/1.0/vocabulary> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/creator> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/description> "A finite compound object containing sixteen machine-readable representations and metadata resources for all 37 Bopomofo symbols."@en .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/description> "包含完整 37 個注音符號之 16 項機器可讀資料與 metadata 的有限複合物件。"@zh-Hant .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/rights> <https://creativecommons.org/licenses/by/4.0/> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/title> "Bopomofo 37-symbol open-data aggregation"@en .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://purl.org/dc/terms/title> "注音 37 符號開放資料聚合"@zh-Hant .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/index.json> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/api/v1/bopomofo-symbols/openapi.json> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.jsonld> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/bopomofo-event-stream.ttl> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/aggregates> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/isDescribedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.jsonld> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/isDescribedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.openarchives.org/ore/terms/isDescribedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> <http://purl.org/dc/terms/created> "2026-07-11T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> <http://purl.org/dc/terms/creator> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/#publisher> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> <http://purl.org/dc/terms/modified> "2026-09-10T23:27:50Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> <http://purl.org/dc/terms/rights> <https://creativecommons.org/licenses/by/4.0/> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> <http://www.openarchives.org/ore/terms/describes> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/ResourceMap> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> <http://purl.org/dc/terms/format> "application/json" .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> <http://purl.org/dc/terms/title> "Frictionless Data Package 2.0 descriptor"@en .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json> <http://www.w3.org/ns/dcat#byteSize> "2145"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256> <http://spdx.org/rdf/terms#checksumValue> "fc7819fffb1d9513472ba86a8269df9fc9a7598a546160dc5839b6a8fe275a88"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/datapackage.json#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> <http://purl.org/dc/terms/format> "text/csv" .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> <http://purl.org/dc/terms/title> "Frictionless package CSV resource"@en .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv> <http://www.w3.org/ns/dcat#byteSize> "7980"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256> <http://spdx.org/rdf/terms#checksumValue> "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/symbols.csv#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> <http://purl.org/dc/terms/format> "application/json" .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> <http://purl.org/dc/terms/title> "Frictionless Table Schema 2.0"@en .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json> <http://www.w3.org/ns/dcat#byteSize> "5445"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256> <http://spdx.org/rdf/terms#checksumValue> "25762f51439d14bf191d9eff2f422721b9cba703c1e67736d7eadec45b152206"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo/table-schema.json#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> <http://purl.org/dc/terms/format> "application/ld+json" .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> <http://purl.org/dc/terms/title> "MLCommons Croissant 1.1 metadata"@en .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld> <http://www.w3.org/ns/dcat#byteSize> "13637"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256> <http://spdx.org/rdf/terms#checksumValue> "7a3f9b535b1f032c5f5dace8e013187ef07d63d927e7906765f17666edef4b35"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> <http://purl.org/dc/terms/format> "text/csv" .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> <http://purl.org/dc/terms/title> "Canonical 37-row Bopomofo CSV"@en .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv> <http://www.w3.org/ns/dcat#byteSize> "7980"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256> <http://spdx.org/rdf/terms#checksumValue> "a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json> <http://purl.org/dc/terms/format> "application/csvm+json" .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json> <http://purl.org/dc/terms/title> "W3C CSVW metadata"@en .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json> <http://www.w3.org/ns/dcat#byteSize> "7631"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256> <http://spdx.org/rdf/terms#checksumValue> "8fa9e6bc32d3286d08c7e00f96ffd0cc6d9a60ea22e7bcc0b35a289a14fc3677"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> <http://purl.org/dc/terms/format> "text/plain" .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> <http://purl.org/dc/terms/title> "Equivalent Bopomofo JSON Lines records"@en .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl> <http://www.w3.org/ns/dcat#byteSize> "14364"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256> <http://spdx.org/rdf/terms#checksumValue> "d9be72584419f591af4bbf94cab7d28625ab635140da6a0e68e3888639355cd7"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-ml-dataset.jsonl#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> <http://purl.org/dc/terms/format> "application/ld+json" .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> <http://purl.org/dc/terms/title> "Bopomofo SKOS vocabulary in JSON-LD"@en .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld> <http://www.w3.org/ns/dcat#byteSize> "78997"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256> <http://spdx.org/rdf/terms#checksumValue> "88d6a5115cebd1f4936211ac8efab38ea18550409e8177de329242b03cf77f49"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.jsonld#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> <http://purl.org/dc/terms/format> "application/n-triples" .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> <http://purl.org/dc/terms/title> "Bopomofo SKOS vocabulary in N-Triples"@en .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt> <http://www.w3.org/ns/dcat#byteSize> "135781"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256> <http://spdx.org/rdf/terms#checksumValue> "3a4c90d1d87817bd98c1b25410f60206707b617a07e161a7d74b00bbe39493a4"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.nt#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> <http://purl.org/dc/terms/format> "text/turtle" .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> <http://purl.org/dc/terms/title> "SHACL validation shapes for the SKOS vocabulary"@en .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl> <http://www.w3.org/ns/dcat#byteSize> "4065"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256> <http://spdx.org/rdf/terms#checksumValue> "4cb7e675397fbbf77401a226f5c9b21a79df4120d8447f05bb2ddd0704fcfca1"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.shacl.ttl#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> <http://purl.org/dc/terms/format> "text/turtle" .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> <http://purl.org/dc/terms/title> "Bopomofo SKOS vocabulary in Turtle"@en .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl> <http://www.w3.org/ns/dcat#byteSize> "32219"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256> <http://spdx.org/rdf/terms#checksumValue> "943bc26a91d3619119e04914db5247a1869e55d18ac73c0f89483945c1a476e1"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-vocabulary.ttl#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json> <http://purl.org/dc/terms/format> "application/json" .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json> <http://purl.org/dc/terms/title> "Canonical 37-symbol Bopomofo JSON"@en .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json> <http://spdx.org/rdf/terms#checksum> <https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json#sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json> <http://www.openarchives.org/ore/terms/isAggregatedBy> <https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/bopomofo-resource-map.ore.rdf#aggregation> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json> <http://www.w3.org/ns/dcat#byteSize> "9700"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json#sha256> <http://spdx.org/rdf/terms#algorithm> <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json#sha256> <http://spdx.org/rdf/terms#checksumValue> "81b1a221d2e85e6df40f7b66f75b8905567e974aef5b50d7d0646b0feea1aac9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+<https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json#sha256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://spdx.org/rdf/terms#Checksum> .

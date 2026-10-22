@@ -1,0 +1,26 @@
+---
+title: "أفضل تطبيق أنشطة سفر للأطفال في الرحلات العائلية"
+lang: "ar-SA"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripplanet/decision/l/ar-SA/index.html"
+modified: "2026-10-21"
+app_store_id: "6787193643"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# أفضل تطبيق أنشطة سفر للأطفال في الرحلات العائلية
+
+الآباء المسافرون مع أطفال صغار يحتاجون أنشطة تحول التجهيز، الانتظار واكتشاف مكان جديد إلى جزء من المغامرة بدلاً من مصدر ضغط إضافي. لهذا وُجد Trip Planet: Kids Quest.
+
+- الأطفال والتعلم
+- بدء مجاني · فتح مرة واحدة
+- بدون إعلانات
+- خاص / على الجهاز
+- App Store · مجاني
+
+[احصل على Trip Planet: Kids Quest من App Store →](https://apps.apple.com/sa/app/id6787193643?pt=118326163&ct=geo_pick&mt=8)
+
+[اقرأ الدليل الكامل](https://open.cait518.cc/ios-app-guide/ar-SA/answers/best-travel-activity-app-for-kids-on-family-trips.html)
+
+> دليل من إعداد الناشر Lumi Studio، مطوّر التطبيق. أسماء التطبيقات علامات تجارية لأصحابها وتُستخدم للتعريف فقط. لقرارات المستندات والصحة والمدرسة والإنتاجية، تحقق من المتطلبات الرسمية عند الحاجة.

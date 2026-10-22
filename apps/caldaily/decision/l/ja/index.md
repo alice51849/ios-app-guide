@@ -1,0 +1,27 @@
+---
+title: "名前を付けて検索できる履歴を保存する iPhone 電卓アプリのおすすめ"
+lang: "ja"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/caldaily/decision/l/ja/index.html"
+modified: "2026-10-21"
+app_store_id: "6794178671"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# 名前を付けて検索できる履歴を保存する iPhone 電卓アプリのおすすめ
+
+CalDaily — 使い続けたくなる電卓。数字の背景まで覚えているからです。無料で始められる · 一度きりの解放 · サブスクリプションなし。
+
+- その他
+- 無料で開始・一度の購入でアンロック
+- アカウント不要
+- プライベート／端末内
+- ウィジェット
+- App Store · 無料
+
+[App Store で CalDaily を入手 →](https://apps.apple.com/jp/app/id6794178671?pt=118326163&ct=geo_pick&mt=8)
+
+[完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/answers/best-calculator-app-iphone-that-saves-history-you-can-name-and-search.html)
+
+> アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。

@@ -1,0 +1,177 @@
+[
+ {
+  "app_key": "sononote",
+  "kind": "faq",
+  "match": [
+   "private voice to text",
+   "offline voice to text",
+   "voice to text offline",
+   "no subscription",
+   "airplane mode"
+  ],
+  "query": "private voice to text offline iphone pay once no subscription",
+  "lead": "Voice notes often contain unfinished thoughts, client details, or personal information, so sending every recording to a cloud bot is not always acceptable.",
+  "detail": "The privacy-first choice is an app that can record, transcribe, and organize speech on the iPhone without requiring an account or network connection. {name} runs on device, works in airplane mode, and turns speech into a structured note with summary, key points, action items, and export options, while the Pro unlock is a one-time purchase rather than a subscription. Generated text still needs review, and the clearest results come from clear single-speaker recordings in a quiet place.",
+  "bullets": [
+   "On-device transcription and note generation with no cloud account required",
+   "Works offline or in airplane mode for private rooms, flights, and low-signal places",
+   "Produces usable notes, not only a raw wall of transcript text",
+   "Exports to text, Markdown, or PDF when you need to share the result",
+   "Pay once for Pro, with no monthly transcription subscription"
+  ],
+  "faq": [
+   {
+    "q": "Does offline transcription mean perfect privacy?",
+    "a": "It means {name} is designed to process on your iPhone without cloud upload, but you still need to protect the device, manage backups, and be careful when exporting notes."
+   },
+   {
+    "q": "Will it work for every language offline?",
+    "a": "{name} supports dozens of languages, but offline recognition quality can vary by device, language, accent, and audio clarity, so important notes should be reviewed."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No. {name} starts free with limits, and Pro is unlocked with a single one-time purchase."
+   }
+  ]
+ },
+ {
+  "app_key": "sononote",
+  "kind": "scenario",
+  "match": [
+   "doctor visit",
+   "medical appointment",
+   "doctor notes",
+   "clinic visit",
+   "health appointment"
+  ],
+  "query": "doctor visit notes recorder iphone private offline pay once",
+  "lead": "After a medical appointment, the hardest part is often remembering the dosage, warning signs, follow-up steps, and the questions you meant to ask.",
+  "detail": "A private recorder can help turn a doctor visit into a summary, key points, and action items you can review later, especially when you are stressed or taking care of someone else. {name} records and processes on your iPhone, works offline, and can create a structured note instead of leaving you with a long audio file, with Pro available as a one-time purchase. Always ask permission before recording, follow clinic policies and local law, and treat the output as a memory aid to review, not medical advice.",
+  "bullets": [
+   "Private on-device workflow for sensitive health conversations",
+   "Summary and action items that make follow-up steps easier to check",
+   "Original audio replay inside the note for reviewing uncertain phrases",
+   "PDF or text export if you need to share a cleaned-up note with a caregiver",
+   "One-time Pro unlock instead of a recurring fee for occasional appointments"
+  ],
+  "faq": [
+   {
+    "q": "Can I record my doctor without asking?",
+    "a": "Do not assume so. Recording laws and clinic policies vary, so ask first and get clear consent before using {name} in a medical appointment."
+   },
+   {
+    "q": "Can {name} replace medical instructions?",
+    "a": "No. {name} helps organize what was said, but you should verify important details with your clinician and official after-visit summary."
+   },
+   {
+    "q": "Why offline for doctor notes?",
+    "a": "Health conversations are sensitive. {name}'s on-device design avoids sending the recording to a cloud service just to create notes."
+   }
+  ]
+ },
+ {
+  "app_key": "sononote",
+  "kind": "persona",
+  "match": [
+   "interview",
+   "interview transcription",
+   "journalist",
+   "research interview",
+   "on device interview"
+  ],
+  "query": "interview transcription on device iphone pay once no subscription",
+  "lead": "Interviews are full of names, quotes, hesitations, and context; raw audio alone is slow to search when the story or research memo is due.",
+  "detail": "For journalists, students, researchers, and creators, a good interview app should preserve the recording and produce a reviewable transcript or structured note without forcing every conversation through a cloud service. {name} records, transcribes on device, summarizes key points, keeps the original audio available, and exports text, Markdown, or PDF for drafting, with a one-time Pro purchase. It is not a court-certified transcription service, so verify quotes, names, and sensitive claims before publishing.",
+  "bullets": [
+   "On-device transcription for interviews that should stay private",
+   "Original recording remains available for checking exact quotes",
+   "Summary and key points help find the useful parts faster",
+   "Markdown and text export fit writing, research, and note-taking workflows",
+   "Pay once instead of paying per minute or subscribing during every project"
+  ],
+  "faq": [
+   {
+    "q": "Is {name} accurate enough for published quotes?",
+    "a": "Use it to speed up review, then check important quotes against the original recording before publishing or submitting work."
+   },
+   {
+    "q": "Do I still need consent for interviews?",
+    "a": "Yes. Consent rules vary by place and context, so tell participants you are recording and follow local law and professional standards."
+   },
+   {
+    "q": "Why choose on-device transcription?",
+    "a": "It reduces exposure for sensitive interviews because {name} does the work on your iPhone rather than requiring a cloud account."
+   }
+  ]
+ },
+ {
+  "app_key": "sononote",
+  "kind": "scenario",
+  "match": [
+   "markdown",
+   "voice notes to markdown",
+   "markdown notes",
+   "export markdown",
+   "writer notes"
+  ],
+  "query": "voice notes to markdown iphone offline pay once",
+  "lead": "Writers, developers, and researchers often think out loud, but a voice memo is useless if it cannot become clean Markdown for the next draft.",
+  "detail": "The useful workflow is speak once, then leave with a structured note you can paste into a document, issue, README, blog outline, or research log. {name} turns recordings into polished notes with summary, key points, action items, and Markdown export, while keeping processing on the iPhone and working offline. It will not magically know project-specific jargon unless the audio is clear and you review the result, but Pro includes advanced templates and custom vocabulary after a one-time unlock.",
+  "bullets": [
+   "Markdown export for writers, developers, researchers, and note systems",
+   "Offline recording and processing when ideas happen away from Wi-Fi",
+   "Structured output with summary, key points, and action items",
+   "Custom vocabulary in Pro for names, product terms, or recurring jargon",
+   "One-time purchase instead of a subscription just to export your own notes"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} export Markdown?",
+    "a": "Yes. The official feature list includes export as text, Markdown, or PDF."
+   },
+   {
+    "q": "Is this better than a plain voice recorder?",
+    "a": "If you want a usable note, yes. {name} is built to turn speech into structured writing rather than only storing audio."
+   },
+   {
+    "q": "Will technical terms be perfect?",
+    "a": "Not always. Clear audio and custom vocabulary help, but you should review Markdown output before using it in important work."
+   }
+  ]
+ },
+ {
+  "app_key": "sononote",
+  "kind": "faq",
+  "match": [
+   "single speaker",
+   "clear audio",
+   "transcription accuracy",
+   "solo recording",
+   "dictation app"
+  ],
+  "query": "single speaker transcription app iphone offline pay once",
+  "lead": "The most reliable transcription setup is often the least glamorous: one person, close microphone, quiet room, and no cross-talk.",
+  "detail": "Automatic transcription improves when the recording has a clear speaker, minimal background noise, and fewer interruptions, which is why solo voice notes, lecture summaries, and spoken drafts are strong fits. {name} is honest about this: generated text is meant to be reviewed, and the clearest results come from clear single-speaker recordings, while the app turns those recordings into summaries, key points, action items, and follow-up drafts offline. If you need speaker diarization for a chaotic multi-person meeting, verify whether the output is good enough before relying on it.",
+  "bullets": [
+   "Best for clear solo recordings, spoken drafts, lectures, and focused updates",
+   "On-device processing keeps the workflow private and usable offline",
+   "Structured note output reduces cleanup compared with raw transcription only",
+   "Replay the original recording when a word, name, or number matters",
+   "Pay once for unlimited Pro use rather than subscribing to a meeting bot"
+  ],
+  "faq": [
+   {
+    "q": "Why does single-speaker audio matter?",
+    "a": "Overlapping voices, distance, and noise make automated transcription less reliable. {name} works best when one speaker is clear and close to the microphone."
+   },
+   {
+    "q": "Can I use {name} for meetings?",
+    "a": "Yes, especially for clear meetings, but review the output carefully when multiple people talk over one another or use specialized terminology."
+   },
+   {
+    "q": "Does {name} include the original audio?",
+    "a": "Yes. You can replay the original recording inside the note, which is important for checking names, quotes, and numbers."
+   }
+  ]
+ }
+]

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>注音符号宾果卡生成器｜免费打印 4×4、5×5 卡片</title>
+<meta name="description" content="免费生成 1–6 张 4×4 或 5×5 注音符号宾果卡；相同组别编号每次都能重现同一套卡片，无需登录、不收集儿童数据、不计分，也不使用即时随机洗牌。">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/zhuyin-bingo.html">
+<link rel="alternate" hreflang="en" href="https://open.cait518.cc/ios-app-guide/tools/zhuyin-bingo.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/tools/zhuyin-bingo.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/tools/zhuyin-bingo.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/tools/zhuyin-bingo.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/tools/zhuyin-bingo.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/tools/zhuyin-bingo.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/tools/zhuyin-bingo.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-bingo.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/zhuyin-bingo.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/tools/zhuyin-bingo.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="可重现的注音符号宾果卡">
+<meta property="og:description" content="免费生成 1–6 张 4×4 或 5×5 注音符号宾果卡；相同组别编号每次都能重现同一套卡片，无需登录、不收集儿童数据、不计分，也不使用即时随机洗牌。">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/zhuyin-bingo.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#1f2840;--muted:#667087;--line:#dce2ef;--paper:#fff;--bg:#f3f6fc;--indigo:#3949a3;--violet:#7865d5;--gold:#f3b23f;--soft:#edf0ff;--shadow:0 22px 60px rgba(48,57,110,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 90% 0,#fff 0,var(--bg) 58%,#e8edf8 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",sans-serif;line-height:1.62}
+a{color:var(--indigo)}.wrap{width:min(1140px,calc(100% - 30px));margin:auto}.top{position:sticky;top:0;z-index:8;background:#fffffff2;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{text-decoration:none;font-weight:850;white-space:nowrap}.links{display:flex;gap:15px;overflow-x:auto}
+.hero{padding:64px 0 30px}.eyebrow,.badge{display:inline-flex;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:850;color:var(--indigo);white-space:nowrap}.hero h1,h2{font-family:ui-serif,Georgia,"Noto Serif",serif}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-.035em;margin:.3em 0 .22em;white-space:nowrap;overflow-x:auto}.lead{font-size:clamp(17px,2.2vw,21px);color:var(--muted);margin:0;white-space:nowrap;overflow-x:auto}.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.planner,.card,.app-card{background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}.planner{padding:clamp(20px,4vw,36px);margin:16px auto 30px}.planner h2,.card h2,.app-card h2{font-size:clamp(24px,3.6vw,34px);line-height:1.14;margin:0;white-space:nowrap;overflow-x:auto}.intro{color:var(--muted);white-space:nowrap;overflow-x:auto}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}.field{min-width:0}.field label{display:block;font-size:13px;font-weight:850;color:var(--indigo);margin-bottom:6px;white-space:nowrap;overflow-x:auto}select,input,button{font:inherit}select,input[type=number]{width:100%;min-height:46px;border:1px solid #c9d1e3;border-radius:13px;background:#fff;color:var(--ink);padding:9px 11px}.button{border:0;border-radius:999px;background:linear-gradient(135deg,var(--indigo),var(--violet));color:#fff;text-decoration:none;font-weight:850;padding:11px 17px;cursor:pointer;white-space:nowrap;box-shadow:0 9px 22px rgba(57,73,163,.2)}.button.ghost{background:#fff;color:var(--indigo);border:1px solid var(--line);box-shadow:none}.note{background:#fff7dc;border:1px solid #ead7a0;border-radius:16px;padding:13px 15px;white-space:nowrap;overflow-x:auto}
+.bingo-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:20px}.bingo-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:17px;box-shadow:0 14px 34px rgba(48,57,110,.09);break-inside:avoid;page-break-inside:avoid}.bingo-head{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:9px;margin-bottom:11px}.bingo-head h3{margin:0;font-size:19px;white-space:nowrap}.bingo-meta{font-size:12px;color:var(--muted);font-weight:800;white-space:nowrap}.board{display:grid;gap:6px}.board.size-4{grid-template-columns:repeat(4,minmax(0,1fr))}.board.size-5{grid-template-columns:repeat(5,minmax(0,1fr))}.cell{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border:2px solid #d8deec;border-radius:14px;background:linear-gradient(180deg,#fff,#f9faff);font-size:clamp(28px,5vw,48px);font-weight:900;line-height:1}.cell.free{background:linear-gradient(135deg,var(--gold),#ef7c5a);color:#fff;font-size:clamp(12px,2vw,18px);white-space:nowrap}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:30px}.card,.app-card{padding:clamp(20px,3.5vw,30px)}.card.wide{grid-column:1/-1}.card p,.card li,.app-card p,.faq details p,.faq summary{white-space:nowrap;overflow-x:auto}.card ol,.card ul{padding-left:22px}.card li{margin:8px 0}.app-card{margin:0 auto 38px;background:linear-gradient(135deg,#fff,#edf0ff)}.app-card .button{display:inline-flex;margin-top:5px}.faq{margin-bottom:30px}.faq details{border:1px solid var(--line);border-radius:15px;background:#fff;padding:11px 14px;margin-top:9px}.faq summary{font-weight:830;cursor:pointer}.faq details p{color:var(--muted)}.footer{background:var(--indigo);color:#f5f6ff;text-align:center;padding:27px 0;white-space:nowrap;overflow-x:auto}
+@media(max-width:850px){.bingo-list,.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}}@media(max-width:680px){.controls{grid-template-columns:1fr}.wrap{width:min(100% - 22px,1140px)}.cell{border-radius:10px}.bingo-head{display:block}.bingo-meta{margin-top:3px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.top,.hero,.planner form,.planner>.intro,.note,.button,.app-card,.footer,.grid,.faq{display:none!important}body{background:#fff}.wrap{width:100%}.planner{box-shadow:none;border:0;padding:0;margin:0}.bingo-list{display:block}.bingo-card{border:0;border-radius:0;box-shadow:none;padding:0;margin:0;page-break-after:always}.bingo-card:last-child{page-break-after:auto}.cell{border-color:#111;border-radius:2mm;background:#fff!important;color:#000!important}.cell.free{background:#eee!important}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"可重现的注音符号宾果卡","description":"免费生成 1–6 张 4×4 或 5×5 注音符号宾果卡；相同组别编号每次都能重现同一套卡片，无需登录、不收集儿童数据、不计分，也不使用即时随机洗牌。","url":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/zhuyin-bingo.html","inLanguage":"zh-Hans","datePublished":"2026-07-15","dateModified":"2026-07-15","applicationCategory":"EducationalApplication","operatingSystem":"Any","isAccessibleForFree":true,"featureList":["设置相同，卡片相同","不收集儿童数据、不写入浏览器","不计分、不排名、不诊断"],"citation":["https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html","https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=1","https://www.unicode.org/charts/PDF/U3100.pdf"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"成人带领的简单玩法","step":[{"@type":"HowToStep","position":1,"text":"每位参与者或每个小组打印一张不同卡片。"},{"@type":"HowToStep","position":2,"text":"由成人每次选择并读出一个注音符号；需要确认读音时请查台湾教育部官方资料。"},{"@type":"HowToStep","position":3,"text":"参与者用可重复使用的棋子盖住对应符号。"},{"@type":"HowToStep","position":4,"text":"开始前约定横线、竖线或斜线完成一局；不要把活动换算成成绩。"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"相同组别编号会生成相同卡片吗？","acceptedAnswer":{"@type":"Answer","text":"会，只要格数和卡片数量也相同。工具使用固定整数算法，不会每次随机洗牌。"}},{"@type":"Question","name":"会收集或保存儿童数据吗？","acceptedAnswer":{"@type":"Answer","text":"不会。三项设置只在当前页面使用，不会上载或保存。"}},{"@type":"Question","name":"宾果能评估注音程度或发音吗？","acceptedAnswer":{"@type":"Answer","text":"不能。这只是可打印活动，不会收音、计分、分级、排名、评估或诊断。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"免费工具","item":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/index.html"},{"@type":"ListItem","position":2,"name":"可重现的注音符号宾果卡","item":"https://open.cait518.cc/ios-app-guide/zh-Hans/tools/zhuyin-bingo.html"}]}</script>
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<header class="top"><div class="wrap nav"><a href="https://open.cait518.cc/ios-app-guide/zh-Hans/index.html">iOS App Guide</a><nav class="links"><a href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/index.html">免费工具</a><a href="https://open.cait518.cc/ios-app-guide/tools/zhuyin-bingo.html">繁體中文</a></nav></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">免费打印 · 无需登录 · 不计分</div><h1>可重现的注音符号宾果卡</h1><p class="lead">选择格数、卡片数量和私人组别编号；相同设置始终生成同一套卡片，适合由成人带领，在家或课堂进行离线听音、找符号活动。</p><div class="badges"><span class="badge">设置相同，卡片相同</span><span class="badge">不收集儿童数据、不写入浏览器</span><span class="badge">不计分、不排名、不诊断</span></div></section>
+<section class="planner wrap"><h2>创建注音符号宾果组</h2><p class="intro">只使用下方三项设置；不会要求儿童的姓名、年龄、学校、声音、笔迹、作答或分数。</p>
+<form id="bopomofo-bingo-planner"><div class="controls">
+<div class="field"><label for="grid-size">格数</label><select id="grid-size"><option value="4">4×4</option><option value="5" selected>5×5</option></select></div>
+<div class="field"><label for="card-count">不同卡片数量</label><select id="card-count"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option><option value="5">5</option><option value="6">6</option></select></div>
+<div class="field"><label for="set-number">私人组别编号（1–999）</label><input id="set-number" type="number" min="1" max="999" step="1" value="1" required></div>
+</div><p><button class="button" type="submit">生成宾果卡</button> <button class="button ghost" type="button" id="print-cards">打印这组卡片</button></p>
+<p class="intro">保留组别编号可重建这套卡片；更换编号会创建另一套固定卡片。</p></form>
+<p id="result-summary" class="note" role="status" aria-live="polite"></p>
+<div id="bingo-list" class="bingo-list"></div>
+</section>
+<section class="wrap grid"><article class="card"><h2>生成器会做什么、不会做什么</h2><p>它只把 37 个基本注音符号排成可打印宾果卡；不会收音、判断发音、记录作答、给儿童计分或诊断，也不承诺学习成果或记忆力提升。</p></article><article class="card"><h2>固定卡片如何生成</h2><ol><li>4×4 每张使用 16 个不同符号；5×5 使用 24 个不同符号和中央自由格。</li><li>格数、卡片编号和组别编号进入公开的整数算法，不使用即时随机洗牌。</li><li>每张卡片分别排列；三项设置相同时，整批卡片每次都能完整重现。</li></ol></article><article class="card wide"><h2>成人带领的简单玩法</h2><ol><li>每位参与者或每个小组打印一张不同卡片。</li><li>由成人每次选择并读出一个注音符号；需要确认读音时请查台湾教育部官方资料。</li><li>参与者用可重复使用的棋子盖住对应符号。</li><li>开始前约定横线、竖线或斜线完成一局；不要把活动换算成成绩。</li></ol></article><article class="card wide"><h2>注音官方资料来源</h2><p>这些信息与链接来自台湾教育部与 Unicode 联盟，并非本站提供。</p><ul><li><a href="https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html" rel="noopener">台湾教育部《国语注音符号手册》</a></li><li><a href="https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=1" rel="noopener">台湾教育部官方注音笔顺入口网站</a></li><li><a href="https://www.unicode.org/charts/PDF/U3100.pdf" rel="noopener">Unicode 官方注音符号名称表</a></li></ul><p><a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api" rel="noopener">Chrome WebMCP 命令式 API 预览版（内容可能变动）</a></p></article></section>
+<section class="wrap card faq"><h2>注音符号宾果卡常见问题</h2><details><summary>相同组别编号会生成相同卡片吗？</summary><p>会，只要格数和卡片数量也相同。工具使用固定整数算法，不会每次随机洗牌。</p></details><details><summary>会收集或保存儿童数据吗？</summary><p>不会。三项设置只在当前页面使用，不会上载或保存。</p></details><details><summary>宾果能评估注音程度或发音吗？</summary><p>不能。这只是可打印活动，不会收音、计分、分级、排名、评估或诊断。</p></details></section>
+<section class="app-card wrap"><h2>想要可选的注音引导 App 吗？</h2><p>Lumi 注音是可选的。目前 App Store 页面说明其提供有趣的注音符号、发音与组合活动，以及描红与声调游戏；免费下载，App 内一次性解锁即可使用，可离线运行，无广告、无订阅，并标示不收集数据。功能可能会变动，决定前请确认目前页面内容。这些可打印卡片不需要这款 App 也能完整使用。</p><a class="button" href="https://apps.apple.com/app/id6773017109?pt=118326163&amp;ct=geo_learn&amp;mt=8" rel="nofollow noopener">在 App Store 查看 Lumi 注音</a>
+      <a class="android-play" data-android-play="com.alice51849.LumiZhuyin" href="https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin&amp;referrer=utm_source%3Dgeo_learn%26utm_campaign%3Dlumibopomofo" rel="noopener">Google Play</a></section>
+<section class="wrap tool-email-capture" style="border:1px solid rgba(120,100,70,.25);border-radius:14px;padding:18px 20px;margin:28px 0;background:rgba(255,250,240,.55)"><h2>新工具上線時通知我</h2><p>這些小工具是一個一個做的,做好就免費放上來。想在有新工具時收到通知,留個信箱就好——只會用在這件事。</p><form action="https://buttondown.com/api/emails/embed-subscribe/hourstag" method="post" target="_blank" style="display:flex;gap:8px;flex-wrap:wrap"><label for="tec-email" class="visually-hidden" style="position:absolute;left:-9999px">電子郵件</label><input id="tec-email" type="email" required name="email" placeholder="you@example.com" style="flex:1 1 220px;padding:10px 12px;border-radius:10px;border:1px solid rgba(120,100,70,.35)"><input type="hidden" name="embed" value="1"><button type="submit" style="padding:10px 18px;border-radius:10px;border:0;background:#7a5c2e;color:#fff;cursor:pointer">通知我</button></form><p><small>只寄新工具上線通知。訂閱由 Buttondown 代為處理;不做 App 行銷、不出售信箱,隨時一鍵取消。</small></p></section>
+<!-- app-store-review:start -->
+<div class="app-store-review" data-app-store-review="6773017109" style="margin:1rem 0;font-size:.9em;text-align:center"><a class="app-store-review__link" href="https://apps.apple.com/app/id6773017109?action=write-review" rel="nofollow noopener">已经在用这款 App？可以在 App Store 评分或撰写评论</a></div>
+<!-- app-store-review:end -->
+</main>
+<footer class="footer"><div class="wrap">只使用私人组别编号 · 不收集儿童数据 · 不计分 · 成人带领的离线活动</div></footer>
+<script type="application/json" id="bopomofo-bingo-config">{"inputSchema":{"type":"object","properties":{"grid_size":{"type":"integer","enum":[4,5],"description":"格数"},"card_count":{"type":"integer","minimum":1,"maximum":6,"description":"不同卡片数量"},"set_number":{"type":"integer","minimum":1,"maximum":999,"description":"私人组别编号（1–999）"}},"required":["grid_size","card_count","set_number"],"additionalProperties":false},"symbols":["ㄅ","ㄆ","ㄇ","ㄈ","ㄉ","ㄊ","ㄋ","ㄌ","ㄍ","ㄎ","ㄏ","ㄐ","ㄑ","ㄒ","ㄓ","ㄔ","ㄕ","ㄖ","ㄗ","ㄘ","ㄙ","ㄚ","ㄛ","ㄜ","ㄝ","ㄞ","ㄟ","ㄠ","ㄡ","ㄢ","ㄣ","ㄤ","ㄥ","ㄦ","ㄧ","ㄨ","ㄩ"],"labels":{"result":"已生成 {count} 张可重现的宾果卡","free":"自由格","card":"宾果卡","setWord":"组别","invalid":"请选择支持的格数、卡片数量和组别编号。"},"toolDescription":"按格数、卡片数量和组别编号返回可重现的注音符号宾果卡内容。只读工具：不接收儿童数据、不记录作答、不计分、不评估、不诊断，也不承诺学习成果。","officialSources":[{"label":"台湾教育部《国语注音符号手册》","url":"https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"},{"label":"台湾教育部官方注音笔顺入口网站","url":"https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=1"},{"label":"Unicode 官方注音符号名称表","url":"https://www.unicode.org/charts/PDF/U3100.pdf"}],"webmcpSource":"https://developer.chrome.com/docs/ai/webmcp/imperative-api","optionalApp":{"label":"在 App Store 查看 Lumi 注音","boundary":"Lumi 注音是可选的。目前 App Store 页面说明其提供有趣的注音符号、发音与组合活动，以及描红与声调游戏；免费下载，App 内一次性解锁即可使用，可离线运行，无广告、无订阅，并标示不收集数据。功能可能会变动，决定前请确认目前页面内容。这些可打印卡片不需要这款 App 也能完整使用。","app_store_url":"https://apps.apple.com/app/id6773017109?pt=118326163&ct=geo_learn&mt=8"}}</script>
+<script>
+(() => {
+  const config = JSON.parse(document.getElementById("bopomofo-bingo-config").textContent);
+  const form = document.getElementById("bopomofo-bingo-planner");
+  const fields = {
+    grid_size: document.getElementById("grid-size"),
+    card_count: document.getElementById("card-count"),
+    set_number: document.getElementById("set-number")
+  };
+  const summary = document.getElementById("result-summary");
+  const list = document.getElementById("bingo-list");
+  const printButton = document.getElementById("print-cards");
+  const LCG_MULTIPLIER = 214013;
+  const LCG_INCREMENT = 2531011;
+  const LCG_MODULUS = 2147483648;
+
+  function nextState(state) {
+    return (state * LCG_MULTIPLIER + LCG_INCREMENT) % LCG_MODULUS;
+  }
+
+  function drawValue(state) {
+    return Math.floor(state / 65536) % 32768;
+  }
+
+  function integerValue(input, name) {
+    if (!Object.prototype.hasOwnProperty.call(input, name)) {
+      throw new TypeError(`${name} is required.`);
+    }
+    const value = input[name];
+    const schema = config.inputSchema.properties[name];
+    if (typeof value !== "number" || !Number.isInteger(value)) {
+      throw new TypeError(`${name} must be an integer.`);
+    }
+    if (schema.enum && !schema.enum.includes(value)) {
+      throw new RangeError(`${name} is not a supported value.`);
+    }
+    if (schema.minimum !== undefined &&
+        (value < schema.minimum || value > schema.maximum)) {
+      throw new RangeError(`${name} is outside the supported range.`);
+    }
+    return value;
+  }
+
+  function cardSymbols(gridSize, setNumber, cardNumber) {
+    const values = [...config.symbols];
+    let state = gridSize * 1000000 + setNumber * 100 + cardNumber;
+    for (let index = values.length - 1; index > 0; index -= 1) {
+      state = nextState(state);
+      const selected = drawValue(state) % (index + 1);
+      const temporary = values[index];
+      values[index] = values[selected];
+      values[selected] = temporary;
+    }
+    const needed = gridSize * gridSize - (gridSize === 5 ? 1 : 0);
+    return values.slice(0, needed);
+  }
+
+  function buildBingo(input) {
+    const gridSize = integerValue(input, "grid_size");
+    const cardCount = integerValue(input, "card_count");
+    const setNumber = integerValue(input, "set_number");
+    const cards = [];
+    for (let cardNumber = 1; cardNumber <= cardCount; cardNumber += 1) {
+      const cells = cardSymbols(gridSize, setNumber, cardNumber).map(
+        (symbol) => ({kind: "symbol", symbol}));
+      if (gridSize === 5) cells.splice(12, 0, {kind: "free"});
+      cards.push({card_number: cardNumber, cells});
+    }
+    return {
+      selected_inputs: {
+        grid_size: gridSize,
+        card_count: cardCount,
+        set_number: setNumber
+      },
+      cards
+    };
+  }
+
+  function validateInput(input) {
+    if (input === null || typeof input !== "object" || Array.isArray(input)) {
+      throw new TypeError("WebMCP input must be an object.");
+    }
+    const allowed = new Set(Object.keys(config.inputSchema.properties));
+    for (const name of Object.keys(input)) {
+      if (!allowed.has(name)) {
+        throw new RangeError(`${name} is not a supported input.`);
+      }
+    }
+    for (const name of config.inputSchema.required) {
+      if (!Object.prototype.hasOwnProperty.call(input, name)) {
+        throw new TypeError(`${name} is required.`);
+      }
+    }
+    return buildBingo(input);
+  }
+
+  function humanIntegerValue(field, name) {
+    const raw = String(field.value).trim();
+    const value = raw === "" ? Number.NaN : Number(raw);
+    return integerValue({[name]: value}, name);
+  }
+
+  function makeCard(card, selectedInputs) {
+    const article = document.createElement("article");
+    article.className = "bingo-card";
+    const header = document.createElement("div");
+    header.className = "bingo-head";
+    const title = document.createElement("h3");
+    title.textContent = `${config.labels.card} ${card.card_number}`;
+    const meta = document.createElement("div");
+    meta.className = "bingo-meta";
+    meta.textContent = `${config.labels.setWord} ${selectedInputs.set_number} · ${selectedInputs.grid_size}×${selectedInputs.grid_size}`;
+    header.append(title, meta);
+    const board = document.createElement("div");
+    board.className = `board size-${selectedInputs.grid_size}`;
+    for (const cell of card.cells) {
+      const element = document.createElement("div");
+      element.className = cell.kind === "free" ? "cell free" : "cell";
+      element.textContent = cell.kind === "free" ? config.labels.free : cell.symbol;
+      board.appendChild(element);
+    }
+    article.append(header, board);
+    return article;
+  }
+
+  function render() {
+    let result;
+    try {
+      result = buildBingo({
+        grid_size: humanIntegerValue(fields.grid_size, "grid_size"),
+        card_count: humanIntegerValue(fields.card_count, "card_count"),
+        set_number: humanIntegerValue(fields.set_number, "set_number")
+      });
+    } catch (error) {
+      if (error instanceof TypeError || error instanceof RangeError) {
+        summary.textContent = config.labels.invalid;
+        list.replaceChildren();
+        return;
+      }
+      throw error;
+    }
+    summary.textContent = config.labels.result.replace(
+      "{count}", String(result.cards.length));
+    const fragment = document.createDocumentFragment();
+    for (const card of result.cards) {
+      fragment.appendChild(makeCard(card, result.selected_inputs));
+    }
+    list.replaceChildren(fragment);
+  }
+
+  async function registerWebMcp() {
+    if (!document.modelContext?.registerTool) return;
+    await document.modelContext.registerTool({
+      name: "create_private_bopomofo_bingo_cards",
+      description: config.toolDescription,
+      inputSchema: config.inputSchema,
+      annotations: {readOnlyHint: true, untrustedContentHint: false},
+      execute: async (input) => {
+        const cards = validateInput(input);
+        const result = {
+          result_type: "private_bopomofo_bingo_cards",
+          deterministic: true,
+          is_not_assessment: true,
+          no_score_grade_rank_or_diagnosis: true,
+          no_child_data_received: true,
+          cards,
+          official_sources: config.officialSources,
+          webmcp_preview_source: config.webmcpSource
+        };
+        if (config.optionalApp) result.optional_lumibopomofo = config.optionalApp;
+        return JSON.stringify(result);
+      }
+    });
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    render();
+  });
+  for (const field of Object.values(fields)) {
+    field.addEventListener("change", render);
+  }
+  printButton.addEventListener("click", () => window.print());
+  render();
+  registerWebMcp().catch((error) =>
+    console.error("WebMCP tool registration failed.", error));
+})();
+</script>
+</body>
+</html>

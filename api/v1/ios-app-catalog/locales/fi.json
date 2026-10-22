@@ -1,0 +1,2163 @@
+{
+  "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
+  "api_version": "1.2.0",
+  "date_modified": "2026-10-21",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "locale": "fi",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "ordering": "alphabetical_by_app_name_not_a_ranking",
+  "record_count": 54,
+  "apps": [
+    {
+      "key": "notesstudio100",
+      "app_store_id": "6798813048",
+      "name": "100 Notes Studio: Pen & Paper",
+      "summary": "100 Notes Studio yhdistää käsinkirjoituksen, näppäimistöllä kirjoitetut muistiinpanot, PDF-merkinnät, sivuihin liitetyt äänitteet ja opiskelutyökalut yksityiseen työtilaan, joka toimii ilman verkkoyhteyttä.",
+      "category": "productivity",
+      "search_terms": [
+        "muistiinpanot",
+        "päiväkirja",
+        "opiskelu",
+        "sanakortit",
+        "luonnos",
+        "merkintä",
+        "luennot",
+        "äänitys",
+        "tentti",
+        "ocr",
+        "offline"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/notesstudio100.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6798813048"
+      }
+    },
+    {
+      "key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "name": "AI Brief: Tiedostot promptiksi",
+      "summary": "Parempi konteksti. Paremmat vastaukset.",
+      "category": "productivity",
+      "search_terms": [
+        "tekoäly",
+        "PDF",
+        "tiivistelmä",
+        "tiivistää",
+        "kuvakaappaus",
+        "tekstintunnistus",
+        "OCR",
+        "konteksti",
+        "generaattori",
+        "chat"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/aibriefpack.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6791658210"
+      }
+    },
+    {
+      "key": "aim990",
+      "app_store_id": "6784974530",
+      "name": "Aim990: englannin valmentaja",
+      "summary": "Aim990 on diagnostinen valmentaja TOEIC Listening & Reading -tyyliseen valmistautumiseen. Tämä ei ole satunnaisten tehtävien varasto: jokainen avaamasi harjoitus määrätään omien vastaustesi perusteella.",
+      "category": "education",
+      "search_terms": [
+        "kielioppi",
+        "kuuntelu",
+        "lukeminen",
+        "sanasto",
+        "sanelu",
+        "koe",
+        "harjoittelu",
+        "pisteet",
+        "testi",
+        "opiskelu",
+        "bisnesenglanti"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/aim990.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6784974530"
+      }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: Akun kuntotulos",
+      "summary": "BattAI BattAI käyttää viittä julkisten iOS-API:en arvoa: akun varaustasoa, lataustilaa, virransäästötilaa, koko laitteen lämpötilaa kuvaavaa tilaa ja aikaa. Muut tulokset lasketaan näistä lukemista tai lisäämistäsi tiedoista. Jokainen tieto kertoo lähteen ja rajat.",
+      "category": "utility",
+      "search_terms": [
+        "Akun kuntotulos",
+        "Enimmäiskapasiteetti",
+        "Lataussyklit",
+        "Lataushuolto",
+        "Latausväli",
+        "Latausnopeus",
+        "Vie tiedot"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/battai.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6802423998"
+      }
+    },
+    {
+      "key": "caldaily",
+      "app_store_id": "6794178671",
+      "name": "CalDaily: laskin ja teemat",
+      "summary": "Laskin, jonka käyttöä todella jatkat, koska se muistaa jokaisen luvun taustan.",
+      "category": "utility",
+      "search_terms": [
+        "alennus",
+        "arvonlisävero",
+        "tippi",
+        "laskun",
+        "jako",
+        "laina",
+        "yksikkömuunnin",
+        "arkipäivät",
+        "prosentti",
+        "polttoaine",
+        "korko"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/caldaily.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6794178671"
+      }
+    },
+    {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Event Counter",
+      "summary": "• Päivän fokus Siitä · Tänään · Tulossa — Tallenna",
+      "category": "productivity",
+      "search_terms": [
+        "lähtölaskenta",
+        "päivälaskuri",
+        "päivät",
+        "syntymäpäivä",
+        "vuosipäivä",
+        "muistutus",
+        "widget",
+        "lukitusnäyttö",
+        "häät",
+        "tentti"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/countdaysnow.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6807079789"
+      }
+    },
+    {
+      "key": "cvdesk",
+      "app_store_id": "6781337213",
+      "name": "CV Desk: ATS-ansioluettelo",
+      "summary": "Tee ATS-yhteensopiva ansioluettelo, jonka rekrytoijien järjestelmät oikeasti lukevat — kokonaan iPhonella. Ei tiliä. Ei lähetystä. Ei tilausta.",
+      "category": "productivity",
+      "search_terms": [
+        "hakemus",
+        "resume",
+        "työnhaku",
+        "työhaastattelu",
+        "työpaikka",
+        "ura",
+        "opiskelija",
+        "kesätyö",
+        "esimerkki",
+        "osaaminen",
+        "kokemus"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/cvdesk.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6781337213"
+      }
+    },
+    {
+      "key": "cyca",
+      "app_store_id": "6782251621",
+      "name": "Cyca: Kuukautiskalenteri",
+      "summary": "Cyca on lempeä ja yksityinen tapa ymmärtää omaa kiertoa. Kirjaa kuukautiset, vuoto, oireet, mieliala ja muistiinpanot sekunneissa ja näe seuraavat kuukautiset, hedelmälliset päivät ja ovulaatio rauhallisessa kalenterissa.",
+      "category": "health",
+      "search_terms": [
+        "kuukautiset",
+        "kierto",
+        "hedelmälliset",
+        "päivät",
+        "hedelmällisyys",
+        "raskaus",
+        "oireet",
+        "mieliala",
+        "naisten",
+        "terveys",
+        "pms"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/cyca.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6782251621"
+      }
+    },
+    {
+      "key": "dailymate",
+      "app_store_id": "6790418321",
+      "name": "DailyMate: Lauseita elämään",
+      "summary": "Älä pänttää irrallisia sanoja. DailyMate opettaa 8 400 kokonaista lausetta, jotka sopivat luontevasti matkalle, töihin, ravintolaan, ostoksille, terveysasioihin ja sosiaalisiin tilanteisiin. Maksat kerran, eikä tilausta ole.",
+      "category": "kids",
+      "search_terms": [
+        "arjen lauseet",
+        "ilmaisut",
+        "keskustelu",
+        "vastaukset",
+        "tilanteet",
+        "ääntäminen",
+        "aloittelija",
+        "englanti",
+        "ranska",
+        "japani"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/dailymate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "12.99",
+        "currency": "EUR",
+        "formatted_price": "12,99 €",
+        "storefront_url": "https://apps.apple.com/fi/app/id6790418321"
+      }
+    },
+    {
+      "key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "name": "DailyMate Lite: Puhu tänään",
+      "summary": "Puhu luontevasti silloin, kun tilanne tulee vastaan. DailyMate Lite auttaa harjoittelemaan kokonaisia keskusteluvuoroja arjen tilanteissa – luontevia aloituksia ja niihin sopivia vastauksia. Opit käyttökelpoisia ilmauksia osana keskustelua, et irrallisia sanoja.",
+      "category": "kids",
+      "search_terms": [
+        "fraasisanakirja",
+        "loma",
+        "italia",
+        "saksa",
+        "kreikka",
+        "portugali",
+        "thai",
+        "kiina",
+        "lentokenttä",
+        "ravintola",
+        "hotelli",
+        "offline"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/dailymatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6794725568"
+      }
+    },
+    {
+      "key": "dbhalo",
+      "app_store_id": "6806826699",
+      "name": "dB Halo: Äänitasomittari",
+      "summary": "Tee iPhonesta tai iPadista selkeä ja yksityinen äänitasomittari. Suuri Halo-rengas näyttää reaaliaikaisen äänitason ja turva-alueen sekä pienimmän, keskimääräisen, suurimman ja huipputason. Aikaleimattu tapahtumaloki tallentaa ääniympäristön muutokset. Valitse A-, C- tai Z-painotus, käytä ulkoista mikrofonia ja tallenna eri mikrofoneille useita kalibrointiprofiileja.",
+      "category": "utility",
+      "search_terms": [
+        "desibelit",
+        "melumittari",
+        "äänenvoimakkuus",
+        "kuorsaus",
+        "spektrogrammi",
+        "kalibrointi",
+        "kuulonsuojaus",
+        "FFT",
+        "RTA",
+        "melu"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/dbhalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6806826699"
+      }
+    },
+    {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: Herätyskello arkeen",
+      "summary": "Älä enää mieti illalla, soiko herätys huomenna: EasyAM soi työpäivinä ja pysyy hiljaa pyhäpäivinä ja omina vapaapäivinäsi. Herätystä ei tarvitse sammuttaa ennen pitkää viikonloppua eikä muistaa laittaa sitä takaisin päälle. Etusivulta näet heti seuraavat seitsemän päivää (iPadilla 14): minä päivinä herätys soi ja mihin aikaan.",
+      "category": "utility",
+      "search_terms": [
+        "pyhäpäivä",
+        "arkipyhä",
+        "juhlapyhä",
+        "vapaapäivä",
+        "työpäivä",
+        "vuorotyö",
+        "työvuoro",
+        "kalenteri",
+        "kello",
+        "widget",
+        "alarm",
+        "flip"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6821790092"
+      }
+    },
+    {
+      "key": "gmoney",
+      "app_store_id": "6755782939",
+      "name": "G+Money: Menot ja budjetti",
+      "summary": "G+Money yhdistää kaksi arjen työkalua yhdeksi — salamannopean valuuttamuuntimen ja kauniin menojen seurannan — arkeen ja matkalle. Täysin offline. Täysin yksityinen.",
+      "category": "finance",
+      "search_terms": [
+        "talous",
+        "menojen",
+        "seuranta",
+        "valuuttamuunnin",
+        "valuuttakurssi",
+        "kotitalous",
+        "raha",
+        "säästäminen",
+        "kulut",
+        "budjetti"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/gmoney.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €",
+        "storefront_url": "https://apps.apple.com/fi/app/id6755782939"
+      }
+    },
+    {
+      "key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "name": "G+Money Lite: Matkakulut",
+      "summary": "G+Money Lite — Älykäs matkavaluutta- & kululaskuri",
+      "category": "finance",
+      "search_terms": [
+        "menot",
+        "kulutus",
+        "viikkoraha",
+        "nopea kirjaus",
+        "ranne",
+        "kotinäyttö",
+        "widget",
+        "valuutta",
+        "matka",
+        "helppo",
+        "älykello",
+        "arki"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/gmoneylite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6793436548"
+      }
+    },
+    {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite: Hinta tunteina",
+      "summary": "HoursTag Lite - Asioiden todellinen hinta",
+      "category": "finance",
+      "search_terms": [
+        "heräteostos",
+        "kannattaako",
+        "tarve",
+        "halu",
+        "shoppailu",
+        "kulutus",
+        "tavat",
+        "katumus",
+        "minimalismi",
+        "elämän aika",
+        "widget"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6794039979"
+      }
+    },
+    {
+      "key": "hourstag",
+      "app_store_id": "6754218117",
+      "name": "HoursTag: Ostotunnit",
+      "summary": "Mitä se oikeasti maksaa? Ei euroina – vaan elämäsi tunteina.",
+      "category": "finance",
+      "search_terms": [
+        "säästäminen",
+        "talous",
+        "säästä",
+        "rahaa",
+        "työtunnit",
+        "palkka",
+        "tulot",
+        "budjetti",
+        "tavoite",
+        "ostokset",
+        "hinta",
+        "laskuri",
+        "raha"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/hourstag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €",
+        "storefront_url": "https://apps.apple.com/fi/app/id6754218117"
+      }
+    },
+    {
+      "key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "name": "LED Moving Text",
+      "summary": "Kirjoita lause ja nosta iPhone ylös. Takarivistä, saapumisaulan toiselta puolelta tai tiskin yli sen lukee yhdellä silmäyksellä.",
+      "category": "utility",
+      "search_terms": [
+        "kyltti",
+        "taulu",
+        "banneri",
+        "juliste",
+        "konsertti",
+        "kannustus",
+        "lentoasema",
+        "nouto",
+        "ilmoitus",
+        "neon",
+        "näyteikkuna",
+        "yleisö"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/ledmovingtext.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6806639602"
+      }
+    },
+    {
+      "key": "lockhour",
+      "app_store_id": "6780107485",
+      "name": "LockHour Pro: Sovellusten esto",
+      "summary": "Suojaa hetket, jolloin saat eniten aikaan. LockHour Pro auttaa aloittamaan rauhallisia keskittymissessioita, vähentämään puhelimen häiriöitä ja rakentamaan kestäviä työskentelytapoja. Sopii opiskeluun, kirjoittamiseen, suunnitteluun ja syvään työhön.",
+      "category": "productivity",
+      "search_terms": [
+        "keskittyminen",
+        "pomodoro",
+        "ajastin",
+        "opiskelu",
+        "puhelinriippuvuus",
+        "some",
+        "verkkosivut",
+        "tuottavuus",
+        "uni",
+        "itsekuri"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/lockhour.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6780107485"
+      }
+    },
+    {
+      "key": "lumibopomofo",
+      "app_store_id": "6773017109",
+      "name": "Lumi Bopomofo",
+      "summary": "Lempeä aloitus mandariinikiinan äänteisiin. Lumi Bopomofo muuttaa Zhuyinin, mandariinikiinan foneettisen järjestelmän, suloiseksi planeettapeliksi 3–6-vuotiaille lapsille. Lyhyet tehtävät auttavat tunnistamaan merkkejä, ääniä ja yhdistelmiä.",
+      "category": "kids",
+      "search_terms": [
+        "mandariini",
+        "oppia",
+        "taiwan",
+        "perinteinen",
+        "toonit",
+        "ääntäminen",
+        "äänteet",
+        "tavut",
+        "merkit",
+        "kirjoittaminen",
+        "esikoulu"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/lumibopomofo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6773017109"
+      }
+    },
+    {
+      "key": "lumibopomofopro",
+      "app_store_id": "6775773117",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "summary": "Lempeä aloitus mandariinikiinan äänteisiin. Lumi Bopomofo Pro muuttaa Zhuyinin, mandariinikiinan foneettisen järjestelmän, suloiseksi planeettapeliksi 3–6-vuotiaille lapsille. Lyhyet tehtävät auttavat tunnistamaan merkkejä, ääniä ja yhdistelmiä.",
+      "category": "kids",
+      "search_terms": [
+        "kiina",
+        "taiwan",
+        "lapset",
+        "ääntäminen",
+        "kirjoitusharjoitus",
+        "tulostettava",
+        "esikoulu",
+        "ekaluokka",
+        "kaksikielinen"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/lumibopomofopro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/fi/app/id6775773117"
+      }
+    },
+    {
+      "key": "lumiletters",
+      "app_store_id": "6778748533",
+      "name": "Lumi Letters Lite: ABC Kids",
+      "summary": "Aloittakaa kirjaimesta A ja ensimmäisestä planeetasta ja avatkaa loput vain, jos perheellenne sopii. Lumi Letters Lite muuttaa englannin aakkoset tähtiseikkailuksi 3–7-vuotiaille: lapsi kuulee jokaisen kirjaimen nimen ja äänteen, jäljentää isot ja pienet kirjaimet ohjausviivojen avulla ja kerää söpöjä kirjainkavereita. Ei mainoksia, ja toimii ilman verkkoyhteyttä.",
+      "category": "kids",
+      "search_terms": [
+        "aakkoset",
+        "äänteet",
+        "englanti",
+        "lukeminen",
+        "kirjoittaminen",
+        "esikoulu",
+        "eskari",
+        "oppiminen",
+        "peli",
+        "tehtävät",
+        "opettelu"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/lumiletters.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6778748533"
+      }
+    },
+    {
+      "key": "lumiletterspro",
+      "app_store_id": "6778491147",
+      "name": "Lumi Letters Pro: ABC Phonics",
+      "summary": "Kuuntele äänne, löydä se sanasta ja jäljitä kirjain: oikeaa foniikkaa pienille oppijoille. Lumi Letters Pro vie lapset läpi 14 planeetan, 12 tehtävätyypin ja 26 kerättävän kirjainystävän. He kuuntelevat sanan alku-, keski- ja loppuäänteen, yhdistävät isot ja pienet kirjaimet ja jäljittävät jokaisen kirjaimen apuviivojen avulla. Vanhempien osiossa näet edistymisen neljässä taidossa ja voit tulostaa päivittäisen tehtäväarkin. Ei mainoksia, ei tilausta, ei tietojen keräämistä, ja toimii ilman nettiyhteyttä.",
+      "category": "kids",
+      "search_terms": [
+        "ääntäminen",
+        "vokaalit",
+        "konsonantit",
+        "sanat",
+        "sanasto",
+        "kuuntelu",
+        "ekaluokka",
+        "kaksikielinen",
+        "aloittelija",
+        "englantia"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/lumiletterspro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/fi/app/id6778491147"
+      }
+    },
+    {
+      "key": "lumimath",
+      "app_store_id": "6778269699",
+      "name": "Lumi Math Planet: Explorer",
+      "summary": "Oikea vastaus, ja pieni planeetta syttyy. Lumi Math Planet muuttaa laskemisen, yhteen- ja vähennyslaskun, kertotaulun, kellon ja rahan lempeäksi avaruusseikkailuksi: 46 kuvallista tehtävätyyppiä, jotka voi myös kuunnella. Vanhemmat seuraavat edistymistä, harjoituttavat heikkoja kohtia ja tulostavat tehtäväarkit vastauksineen. Ei mainoksia, ei tilausta.",
+      "category": "kids",
+      "search_terms": [
+        "esikoulu",
+        "matematiikka",
+        "vähennyslasku",
+        "yhteenlasku",
+        "laskeminen",
+        "numerot",
+        "kertotaulu",
+        "eskari",
+        "kello",
+        "raha"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/lumimath.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6778269699"
+      }
+    },
+    {
+      "key": "lumimathpro",
+      "app_store_id": "6776958488",
+      "name": "Lumi Math Pro: Numerot",
+      "summary": "Tee matemaattisesta ajattelusta lempeä avaruusseikkailu. Lumi Math Pro auttaa 3–6-vuotiaita harjoittelemaan laskemista, lukukäsitystä, yhteenlaskua, sarjoja, muotoja ja logiikkaa lyhyissä tehtävissä.",
+      "category": "kids",
+      "search_terms": [
+        "matematiikka",
+        "matikka",
+        "päättely",
+        "pulmat",
+        "aivopähkinät",
+        "lukujonot",
+        "päässälasku",
+        "lapsille",
+        "haasteet",
+        "tehtävät"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/lumimathpro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/fi/app/id6776958488"
+      }
+    },
+    {
+      "key": "lumimission",
+      "app_store_id": "6779750237",
+      "name": "Lumi Mission Planet",
+      "summary": "Tee arjen pienistä tehtävistä lempeitä onnistumisia. Lumi Mission Planet auttaa 3–6-vuotiaita lapsia hampaiden pesussa, pukeutumisessa, tavaroiden keräämisessä, iltatoimissa ja pienissä kotitöissä. Rauhalliset tehtävät ja tähdet kannustavat yrittämään ilman mainoksia, kiirettä tai painetta.",
+      "category": "kids",
+      "search_terms": [
+        "palkkiojärjestelmä",
+        "tähtitaulu",
+        "rutiinit",
+        "lapset",
+        "taapero",
+        "hampaiden",
+        "pesu",
+        "siivous",
+        "ruoka",
+        "motivaatio",
+        "käytös"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/lumimission.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6779750237"
+      }
+    },
+    {
+      "key": "lumimissionpro",
+      "app_store_id": "6779745474",
+      "name": "Lumi Mission Planet Pro",
+      "summary": "Tee arjen pienistä tehtävistä lempeitä onnistumisia. Lumi Mission Planet auttaa 3–6-vuotiaita lapsia hampaiden pesussa, pukeutumisessa, tavaroiden keräämisessä, iltatoimissa ja pienissä kotitöissä. Rauhalliset tehtävät ja tähdet kannustavat yrittämään ilman mainoksia, kiirettä tai painetta.",
+      "category": "kids",
+      "search_terms": [
+        "aamurutiini",
+        "lapset",
+        "taapero",
+        "päivärytmi",
+        "nukkumaanmeno",
+        "hampaiden pesu",
+        "siivous",
+        "itsenäisyys",
+        "päiväkoti"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/lumimissionpro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/fi/app/id6779745474"
+      }
+    },
+    {
+      "key": "lumiweather",
+      "app_store_id": "6779552704",
+      "name": "Lumi Sää: Ennuste ja vaatteet",
+      "summary": "Lumi Sää kertoo yhdellä silmäyksellä, kannattaako tänään lähteä ulos: ulkoiluindeksi asteikolla 0–100 ja lyhyt arvio, jonka ehtii lukea ohimennen.",
+      "category": "kids",
+      "search_terms": [
+        "lämpötila",
+        "sateenvarjo",
+        "aurinkovoide",
+        "pukeutuminen",
+        "widget",
+        "huomenna",
+        "tänään",
+        "tunneittain",
+        "viikko",
+        "ukkonen"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/lumiweather.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6779552704"
+      }
+    },
+    {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "name": "Mask My File: Poista tietosi",
+      "summary": "Jaa turvallisesti menettämättä hyödyllistä asiayhteyttä. Mask My File löytää yksityiset tiedot ennen kuin lähetät tiedoston, peittää pysyvästi valitsemasi kohdat ja avaa sitten uuden kopion sekä tarkistaa sen, ennen kuin Private Ready näkyy.",
+      "category": "photo-utility",
+      "search_terms": [
+        "anonymisointi",
+        "sensurointi",
+        "henkilötiedot",
+        "henkilötunnus",
+        "passi",
+        "potilastiedot",
+        "sopimus",
+        "pdf",
+        "yksityisyys"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/maskmyfile.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6792850916"
+      }
+    },
+    {
+      "key": "mochi",
+      "app_store_id": "6785004775",
+      "name": "Mochi: Söpö tehtävälista",
+      "summary": "Mochi tekee tehtävälistasta söpön, rauhallisen ja helposti lähestyttävän. Kirjoita päivän tehtävät, napauta pientä ympyrää kun jokin valmistuu ja nauti selkeämmän päivän tuomasta hyvästä tunteesta.",
+      "category": "productivity",
+      "search_terms": [
+        "lista",
+        "suunnittelija",
+        "muistiinpanot",
+        "tavat",
+        "rutiini",
+        "aikataulu",
+        "ostokset",
+        "agenda",
+        "kalenteri",
+        "päivittäin",
+        "koulu"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/mochi.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6785004775"
+      }
+    },
+    {
+      "key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "name": "Mochi DoneStamp: Viimeksi",
+      "summary": "Milloin viimeksi vaihdoit lakanat, kastelit kasvin, soitit läheisille, varmuuskopioit kuvat tai vaihdoit suodattimen?",
+      "category": "lifestyle",
+      "search_terms": [
+        "siivous",
+        "kastelu",
+        "jakaminen",
+        "huolto",
+        "toistuva",
+        "kotityöt",
+        "väli",
+        "historia",
+        "widget",
+        "loki",
+        "öljynvaihto",
+        "suodatin"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/mochidonestamp.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6790800323"
+      }
+    },
+    {
+      "key": "moneytag",
+      "app_store_id": "6801956402",
+      "name": "MoneyTag: Tulot ja menot",
+      "summary": "Jokainen projekti pitää omaa kirjanpitoaan: tulot miinus menot on sen nettotulos. Tässä ovat useimmin kysytyt kysymykset. Jos omaasi ei löydy, laita viestiä — jokaisen viestin lukee oikea ihminen.",
+      "category": "finance",
+      "search_terms": [
+        "kirjanpito",
+        "voitto",
+        "tappio",
+        "kassakirja",
+        "toiminimi",
+        "freelancer",
+        "sivutyö",
+        "vuokra",
+        "asiakkaat",
+        "yhdistys",
+        "remontti"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/moneytag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6801956402"
+      }
+    },
+    {
+      "key": "onepageppt",
+      "app_store_id": "6798814385",
+      "name": "OnePage PPT: tekoälyesitys",
+      "summary": "Muuta tekstiseinä YHDEKSI diaksi, jonka joku oikeasti lukee.",
+      "category": "productivity",
+      "search_terms": [
+        "esitys",
+        "yhteenveto",
+        "tiivistelmä",
+        "pptx",
+        "kalvot",
+        "kaavio",
+        "raportti",
+        "taulukko",
+        "pdf",
+        "kokous",
+        "koulu",
+        "infografiikka"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/onepageppt.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6798814385"
+      }
+    },
+    {
+      "key": "photocream",
+      "app_store_id": "6781808054",
+      "name": "PhotoCream Pro: Filmifiltterit",
+      "summary": "PhotoCream Pro muuttaa puhelimesi filmikameraksi: näet rakeen, halaation ja valovuodot livenä jo ennen laukaisua. Yli 100 filmilookia, värien kopiointi mistä tahansa kuvasta, ihon retusointi ja täysi editori valolle, väreille ja käyrille. Kaikki tapahtuu laitteellasi: ei tilausta, ei mainoksia, eikä kuviasi ladata minnekään.",
+      "category": "photo-utility",
+      "search_terms": [
+        "vintage",
+        "analoginen",
+        "rae",
+        "kuvankäsittely",
+        "selfie",
+        "kauneus",
+        "retusointi",
+        "estetiikka",
+        "35mm",
+        "kertakäyttökamera"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/photocream.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6781808054"
+      }
+    },
+    {
+      "key": "picclear",
+      "app_store_id": "6780223070",
+      "name": "PicClear Pro: Kuvien siivous",
+      "summary": "Vapauta gigatavuja poistamalla kuvat, joita et enää tarvitse: duplikaatit, vanhat kuvakaappaukset, sumeat otokset ja suuret videot.",
+      "category": "photo-utility",
+      "search_terms": [
+        "kaksoiskuvat",
+        "kuvien siivous",
+        "vapauta tilaa",
+        "muisti täynnä",
+        "tallennustila",
+        "samankaltaiset",
+        "sumeat",
+        "galleria"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/picclear.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6780223070"
+      }
+    },
+    {
+      "key": "qrcodehalo",
+      "app_store_id": "6806779853",
+      "name": "QR Code Halo: skannaa ja luo",
+      "summary": "QR Code Halo toimii heti, kun koodi on luettu. Skannaa kameralla tai valitse kuva: linkit avautuvat selaimessa, pääsyavaimella kirjautumisen koodit ja appien linkit siirtyvät suoraan iOS:lle, Wi-Fi-koodit näyttävät iOS:n liittymiskyselyn, ja puhelut, viestit, sähköpostit ja paikat avautuvat omissa apeissaan. Yhteystiedot ja tapahtumat avaavat iOS:n lisäysnäkymän, jossa vahvistat itse. Teksti kopioidaan lyhyen ilmoituksen kera, eikä koodeja, jotka alkavat javascript:, data: tai file:, avata koskaan. Jos haluat tarkistaa jokaisen koodin ensin, kytke Asetuksista pois ”Automaattinen suoritus”; eräskannaus vain kerää.",
+      "category": "utility",
+      "search_terms": [
+        "lukija",
+        "skanneri",
+        "viivakoodi",
+        "generaattori",
+        "wifi",
+        "linkki",
+        "turva",
+        "tietojenkalastelu",
+        "huijaus",
+        "käyntikortti"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/qrcodehalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6806779853"
+      }
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: tekoälykirjanmerkit",
+      "summary": "Tallenna nyt. Lue oikeasti myöhemmin.",
+      "category": "productivity",
+      "search_terms": [
+        "lukulista",
+        "tunnisteet",
+        "suosikit",
+        "artikkelit",
+        "videot",
+        "katso",
+        "julkaisut",
+        "kokoelma",
+        "reseptit",
+        "toivelista",
+        "haku"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/savetag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6802505528"
+      }
+    },
+    {
+      "key": "scanto",
+      "app_store_id": "6779977651",
+      "name": "ScanTo Pro: PDF ja OCR",
+      "summary": "Asiakirjaskanneri, joka tekee kaiken laitteellasi — myös tekstintunnistuksen.",
+      "category": "productivity",
+      "search_terms": [
+        "skannaa",
+        "skannaus",
+        "kuitti",
+        "lasku",
+        "henkilökortti",
+        "käyntikortti",
+        "sopimus",
+        "teksti",
+        "tunnistus",
+        "salasana",
+        "lukitus"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/scanto.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6779977651"
+      }
+    },
+    {
+      "key": "sereno",
+      "app_store_id": "6788236641",
+      "name": "Sereno: Uniäänet",
+      "summary": "Sereno muuttaa puhelimesi huippuluokan äänikoneeksi unta, keskittymistä ja rauhoittumista varten. Sade, meri, tuuli, tuli ja muut ovat aitoja kenttä-äänityksiä, jotka yhdistyvät yli 1000 ainutlaatuiseksi äänimaisemaksi ja punoutuvat kuunnellessasi satunnaisesti yhteen — ei kiinteää silmukkaa, vain lempeä sekoitus, joka kantaa sinut yön läpi.",
+      "category": "sleep-sound",
+      "search_terms": [
+        "nukahtaminen",
+        "ukkonen",
+        "aallot",
+        "ruskea",
+        "vaaleanpunainen",
+        "unettomuus",
+        "vauva",
+        "rentoutus",
+        "meditaatio",
+        "opiskelu"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/sereno.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6788236641"
+      }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "Näyttökuvat järjestykseen Löydä, hoida ja siivoa jokainen näyttökuva.",
+      "category": "photo-utility",
+      "search_terms": [
+        "kuvakaappaus",
+        "kaksoiskappaleet",
+        "siivous",
+        "OCR",
+        "tekstihaku",
+        "kategoriat",
+        "aikajana",
+        "samanlaiset",
+        "kuitit",
+        "liput"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/shotinbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6802166527"
+      }
+    },
+    {
+      "key": "snapport",
+      "app_store_id": "6780575828",
+      "name": "Snapport: Passikuvat",
+      "summary": "Ota passi-, viisumi- ja henkilökorttikuvat kotona rauhallisesti ja yksityisesti. Snapport valmistaa vain kuvan; itse asiakirjan myöntää asianomainen viranomainen tai organisaatio. Snapport tarjoaa yleiset kokopohjat, kasvojen kohdistusohjeet, taustatyökalut ja tulostusvalmiit asettelut. Kaikki käsitellään suoraan iPhonellasi.",
+      "category": "photo-utility",
+      "search_terms": [
+        "passikuva netissä",
+        "viisumikuva",
+        "id kuva",
+        "henkilökorttikuva",
+        "biometrinen kuva",
+        "asiakirjakuva",
+        "cv kuva",
+        "35x45"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/snapport.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/fi/app/id6780575828"
+      }
+    },
+    {
+      "key": "snapportlite",
+      "app_store_id": "6792856304",
+      "name": "Snapport Lite: Ota passikuvat",
+      "summary": "Tarvitsetko kuvan tarkassa koossa? Snapport Lite rajaa muotokuvasi juuri valitsemaasi kokoon suoraan laitteellasi. Ota uusi kuva tai valitse kirjastosta, kohdista kasvot apuviivoihin, siisti tausta ja vie kuva.",
+      "category": "photo-utility",
+      "search_terms": [
+        "passikuva",
+        "työhakemus",
+        "rajaus",
+        "mitat",
+        "valkoinen tausta",
+        "taustan poisto",
+        "tulostus",
+        "10x15",
+        "pikselit",
+        "dpi",
+        "selfie"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/snapportlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6792856304"
+      }
+    },
+    {
+      "key": "sononote",
+      "app_store_id": "6782139553",
+      "name": "Sono Note",
+      "summary": "Puhu vapaasti. Lähde kirjoituksen kanssa, josta voit olla ylpeä.",
+      "category": "productivity",
+      "search_terms": [
+        "litterointi",
+        "sanelu",
+        "transkriptio",
+        "puhemuistiinpanot",
+        "kokousmuistio",
+        "luento",
+        "yhteenveto",
+        "tehtävät",
+        "äänitys"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/sononote.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6782139553"
+      }
+    },
+    {
+      "key": "stayclock",
+      "app_store_id": "6814035888",
+      "name": "Stay Clock: Pöytäkello",
+      "summary": "Stay Clock muuttaa iPhonesi tai iPadisi pöytäkelloksi, joka on aina päällä ja luettavissa huoneen toiselta puolelta. Suuri kellonaika, jokaiseen kellotauluun sopiva kalenteri ja yksi ilme, joka seuraa mukana StandBy-tilaan, lukittuun näyttöön, aloitusnäytön widgetteihin ja Apple Watchiin.",
+      "category": "utility",
+      "search_terms": [
+        "oled",
+        "smartwatch",
+        "widgetit",
+        "laturi",
+        "yötila",
+        "lukittu näyttö",
+        "yöpöytä",
+        "aikavyöhyke",
+        "24 tunnin kello",
+        "teemat"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/stayclock.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6814035888"
+      }
+    },
+    {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "name": "Studydown: Ajastin",
+      "summary": "Varaa aikaa tärkeille asioille ja näe, mihin se kuluu. Studydown kirjaa projektiin, lukemiseen tai harrastukseen käyttämäsi ajan, kun asetat puhelimen näyttö alaspäin.",
+      "category": "productivity",
+      "search_terms": [
+        "opiskelu",
+        "lukuaika",
+        "keskittyminen",
+        "ajanseuranta",
+        "tavoite",
+        "takaraja",
+        "lukeminen",
+        "tentti",
+        "tilastot",
+        "tunnit",
+        "koe"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/studydown.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6807335593"
+      }
+    },
+    {
+      "key": "tripplanet",
+      "app_store_id": "6787193643",
+      "name": "Trip Planet: Matkaseikkailu",
+      "summary": "Tee jokaisesta perhematkasta pieni avaruusseikkailu. Trip Planet muuttaa pitkät lennot, täydet autot ja hotelliyöt tehtäviksi 3–10-vuotiaille lapsille, ja mukana on kerättäviä palkintoja sekä passileima jokaisesta valmistuneesta matkasta. Kaksi vanhempaa voi jakaa saman matkan. Ei mainoksia eikä kolmansien osapuolten seurantaa.",
+      "category": "kids",
+      "search_terms": [
+        "loma",
+        "lento",
+        "lentokone",
+        "automatka",
+        "lapset",
+        "taapero",
+        "palkinto",
+        "passi",
+        "leimat",
+        "muistot",
+        "hotelli",
+        "museo",
+        "matka"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/tripplanet.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6787193643"
+      }
+    },
+    {
+      "key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "name": "TripBee Lite: Matkasuunnitelma",
+      "summary": "Keskity täysin seuraavaan matkaan. TripBee Lite on rauhallinen ja viimeistelty suunnittelija yhdelle aktiiviselle matkalle.",
+      "category": "travel",
+      "search_terms": [
+        "loma",
+        "matka",
+        "reissu",
+        "viikonloppu",
+        "aikataulu",
+        "lento",
+        "hotelli",
+        "liput",
+        "varaus",
+        "muistutus",
+        "sää",
+        "kartta",
+        "offline"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/tripbeelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6791299610"
+      }
+    },
+    {
+      "key": "tripbee",
+      "app_store_id": "6787754435",
+      "name": "TripBee: Matkasuunnittelu",
+      "summary": "Suunnittele offline, synkronoi yksityisesti iCloudilla ja kutsu muut muokkaamaan yhteistä matkaa. Kertaosto, ei mainoksia eikä seurantaa.",
+      "category": "travel",
+      "search_terms": [
+        "perhe",
+        "ystävät",
+        "yhdessä",
+        "sade",
+        "varasuunnitelma",
+        "aikavyöhyke",
+        "matkalaukku",
+        "vauva",
+        "lapset",
+        "ranta",
+        "tarkistuslista"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/tripbee.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/fi/app/id6787754435"
+      }
+    },
+    {
+      "key": "unblurry",
+      "app_store_id": "6782275018",
+      "name": "Unblurry Pro: Terävät kuvat",
+      "summary": "Sumea kuva? Tee siitä kirkas ja terävä.",
+      "category": "photo-utility",
+      "search_terms": [
+        "terävöitä kuva",
+        "sumea kuva",
+        "poista sumeus",
+        "paranna kuvaa",
+        "photo enhancer",
+        "HD kuva",
+        "4K kuva",
+        "suurenna kuva"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/unblurry.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6782275018"
+      }
+    },
+    {
+      "key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "name": "UsageNow: Tekoälyn käyttö",
+      "summary": "Loppuiko AI-raja kesken työn? UsageNow näyttää, paljonko kustakin AI-paketista on jäljellä ja tarkalleen milloin se nollautuu, suoraan Koti-valikossa. Varoittaa sinua ennen kuin raja tulee vastaan.",
+      "category": "productivity",
+      "search_terms": [
+        "ai",
+        "code",
+        "dev",
+        "kehittäjä",
+        "usage",
+        "tracker",
+        "kulutus",
+        "kiintiö",
+        "laskuri",
+        "token",
+        "widget",
+        "reset",
+        "quota",
+        "meter",
+        "monitor"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/claudeusagemini.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6818607603"
+      }
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "name": "WiFi Aid: Löydä verkon viat",
+      "summary": "Löydä todennäköisin syy riippumattomilla reitti-, DNS-, TCP-, TLS-, ajoitus- ja vakaustesteillä. Yksi ennakkomaksu, ei tilausta, mainoksia eikä seurantaa.",
+      "category": "photo-utility",
+      "search_terms": [
+        "viive",
+        "värinä",
+        "ipv6",
+        "ipv4",
+        "tcp",
+        "tls",
+        "solmu",
+        "toistin",
+        "raportti",
+        "pdf",
+        "historia",
+        "widget",
+        "kello",
+        "vakaus",
+        "valokuitu"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/wifiaid.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/fi/app/id6790467886"
+      }
+    },
+    {
+      "key": "wifiaidlite",
+      "app_store_id": "6793414462",
+      "name": "WiFi Aid Lite",
+      "summary": "Löydä oikea ongelma. Ilman ostoa voit tehdä yhteensä yhden täyden tarkistuksen millä tahansa työkalulla. Valinnainen kertaosto sovelluksessa avaa rajattomat tarkistukset sekä vertailun ennen ja jälkeen korjauksen—ei tilausta, mainoksia tai seurantaa.",
+      "category": "utility",
+      "search_terms": [
+        "internet",
+        "verkko",
+        "yhteys",
+        "hidas",
+        "katko",
+        "ping",
+        "testi",
+        "ongelma",
+        "vianhaku",
+        "sivusto",
+        "alhaalla",
+        "operaattori",
+        "modeemi"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/wifiaidlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6793414462"
+      }
+    },
+    {
+      "key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "name": "Wordmate Lite: Sanasto",
+      "summary": "Viisi sanaa. Yksi minuutti. Polku, jonka todella näet.",
+      "category": "education",
+      "search_terms": [
+        "kielet",
+        "englanti",
+        "ruotsi",
+        "saksa",
+        "espanja",
+        "ranska",
+        "opiskelu",
+        "ulkoa",
+        "tapa",
+        "aloittelija",
+        "minuutti",
+        "offline",
+        "matka"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/wordmatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Ilmainen",
+        "storefront_url": "https://apps.apple.com/fi/app/id6797601720"
+      }
+    },
+    {
+      "key": "wordmate",
+      "app_store_id": "6789917808",
+      "name": "Wordmate: Opi 44 kieltä",
+      "summary": "Käytä jokainen vapaa hetki sanaston kartuttamiseen. Wordmatessa on 44 kieltä, 14 käytännön aihetta ja kolme tasoa, esimerkkilause jokaiselle englanninkieliselle sanalle sekä kuunneltava ääntäminen. Opiskele aloitusnäytön interaktiivisella widgetillä tai kellosta. Maksat kerran: ei tilausta eikä sovelluksensisäisiä ostoja.",
+      "category": "education",
+      "search_terms": [
+        "sanavarasto",
+        "sanat",
+        "japani",
+        "korea",
+        "kiina",
+        "italia",
+        "venäjä",
+        "esimerkkilauseet",
+        "ääntäminen",
+        "tasot",
+        "kertaus",
+        "arabia"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/wordmate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/fi/app/id6789917808"
+      }
+    },
+    {
+      "key": "zipbox",
+      "app_store_id": "6806776579",
+      "name": "Zipbox: avaa RAR, ZIP, 7z",
+      "summary": "Zipbox on maksullinen App Store -appi. Yksi osto sisältää kaikki ominaisuudet: ei sovelluksen sisäisiä ostoja, tilauksia eikä mainoksia. 13 muotoa käsitellään laitteella.",
+      "category": "utility",
+      "search_terms": [
+        "purku",
+        "tiedostonhallinta",
+        "salasana",
+        "salaus",
+        "pakkaus",
+        "arkisto",
+        "esikatselu",
+        "unrar",
+        "tar",
+        "gz",
+        "iso",
+        "offline",
+        "rar5"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/fi/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/fi/zipbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €",
+        "storefront_url": "https://apps.apple.com/fi/app/id6806776579"
+      }
+    }
+  ]
+}

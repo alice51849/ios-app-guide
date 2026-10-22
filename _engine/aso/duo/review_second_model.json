@@ -1,0 +1,2546 @@
+{
+ "schema": "duo-review/v1",
+ "reviewer": "second_model",
+ "reviewed_at": "2026-10-21T17:21:25+00:00",
+ "claim_lines_sha256": "8d2e2beb437e9177b3c963a30cbb8dd4cde57f4243d77ca57dd7354aedf8e5c9",
+ "fields": {
+  "promo_line": {
+   "en-US": {
+    "verdict": "PASS",
+    "note": "len=44，自然、無多宣稱、產品名原樣"
+   },
+   "en-CA": {
+    "verdict": "PASS",
+    "note": "len=44，自然、無多宣稱、產品名原樣"
+   },
+   "en-GB": {
+    "verdict": "PASS",
+    "note": "len=44，自然、無多宣稱、產品名原樣"
+   },
+   "en-AU": {
+    "verdict": "PASS",
+    "note": "len=44，自然、無多宣稱、產品名原樣"
+   },
+   "zh-Hant": {
+    "verdict": "PASS",
+    "note": "len=24，自然、無多宣稱、產品名原樣"
+   },
+   "zh-Hans": {
+    "verdict": "PASS",
+    "note": "len=23，自然、無多宣稱、產品名原樣"
+   },
+   "ja": {
+    "verdict": "PASS",
+    "note": "len=23，自然、無多宣稱、產品名原樣"
+   },
+   "ko": {
+    "verdict": "PASS",
+    "note": "len=24，自然、無多宣稱、產品名原樣"
+   },
+   "de-DE": {
+    "verdict": "PASS",
+    "note": "len=46，自然、無多宣稱、產品名原樣"
+   },
+   "fr-FR": {
+    "verdict": "PASS",
+    "note": "len=49，自然、無多宣稱、產品名原樣"
+   },
+   "fr-CA": {
+    "verdict": "PASS",
+    "note": "len=49，自然、無多宣稱、產品名原樣"
+   },
+   "es-ES": {
+    "verdict": "PASS",
+    "note": "len=54，自然、無多宣稱、產品名原樣"
+   },
+   "es-MX": {
+    "verdict": "PASS",
+    "note": "len=54，自然、無多宣稱、產品名原樣"
+   },
+   "it": {
+    "verdict": "PASS",
+    "note": "len=48，自然、無多宣稱、產品名原樣"
+   },
+   "pt-BR": {
+    "verdict": "PASS",
+    "note": "len=49，自然、無多宣稱、產品名原樣"
+   },
+   "pt-PT": {
+    "verdict": "PASS",
+    "note": "len=52，自然、無多宣稱、產品名原樣"
+   },
+   "nl-NL": {
+    "verdict": "PASS",
+    "note": "len=52，自然、無多宣稱、產品名原樣"
+   },
+   "sv": {
+    "verdict": "PASS",
+    "note": "len=40，自然、無多宣稱、產品名原樣"
+   },
+   "da": {
+    "verdict": "PASS",
+    "note": "len=42，自然、無多宣稱、產品名原樣"
+   },
+   "no": {
+    "verdict": "PASS",
+    "note": "len=45，自然、無多宣稱、產品名原樣"
+   },
+   "fi": {
+    "verdict": "PASS",
+    "note": "len=51，自然、無多宣稱、產品名原樣"
+   },
+   "pl": {
+    "verdict": "PASS",
+    "note": "len=54，自然、無多宣稱、產品名原樣"
+   },
+   "cs": {
+    "verdict": "PASS",
+    "note": "改句第二模型重審 PASS（與格 zařízení，55 字元，不含 pro）",
+    "suggestion": "Optimalizováno pro iPhone Duo: skutečně celá obrazovka."
+   },
+   "sk": {
+    "verdict": "PASS",
+    "note": "len=55，自然、無多宣稱、產品名原樣"
+   },
+   "sl-SI": {
+    "verdict": "PASS",
+    "note": "len=55，自然、無多宣稱、產品名原樣"
+   },
+   "hr": {
+    "verdict": "PASS",
+    "note": "len=46，自然、無多宣稱、產品名原樣"
+   },
+   "hu": {
+    "verdict": "PASS",
+    "note": "len=53，自然、無多宣稱、產品名原樣"
+   },
+   "ro": {
+    "verdict": "PASS",
+    "note": "len=53，自然、無多宣稱、產品名原樣；「ecran complet adevărat」略直譯但可接受"
+   },
+   "el": {
+    "verdict": "PASS",
+    "note": "len=54，自然、無多宣稱、產品名原樣"
+   },
+   "ru": {
+    "verdict": "PASS",
+    "note": "len=54，自然、無多宣稱、產品名原樣"
+   },
+   "uk": {
+    "verdict": "PASS",
+    "note": "len=52，自然、無多宣稱、產品名原樣"
+   },
+   "tr": {
+    "verdict": "PASS",
+    "note": "len=50，自然、無多宣稱、產品名原樣"
+   },
+   "ar-SA": {
+    "verdict": "PASS",
+    "note": "len=40，自然、無多宣稱、產品名原樣"
+   },
+   "he": {
+    "verdict": "PASS",
+    "note": "len=39，自然、無多宣稱、產品名原樣；「מותאם」=調整/適配，可接受"
+   },
+   "ca": {
+    "verdict": "PASS",
+    "note": "len=55，自然、無多宣稱、產品名原樣"
+   },
+   "id": {
+    "verdict": "PASS",
+    "note": "len=53，自然、無多宣稱、產品名原樣"
+   },
+   "ms": {
+    "verdict": "PASS",
+    "note": "len=51，自然、無多宣稱、產品名原樣"
+   },
+   "vi": {
+    "verdict": "PASS",
+    "note": "len=45，自然、無多宣稱、產品名原樣"
+   },
+   "th": {
+    "verdict": "PASS",
+    "note": "len=38，自然、無多宣稱、產品名原樣"
+   },
+   "hi": {
+    "verdict": "PASS",
+    "note": "len=53，自然、無多宣稱、產品名原樣"
+   },
+   "bn-BD": {
+    "verdict": "PASS",
+    "note": "len=53，自然、無多宣稱、產品名原樣"
+   },
+   "gu-IN": {
+    "verdict": "PASS",
+    "note": "len=53，自然、無多宣稱、產品名原樣"
+   },
+   "kn-IN": {
+    "verdict": "PASS",
+    "note": "len=51，自然、無多宣稱、產品名原樣"
+   },
+   "ml-IN": {
+    "verdict": "PASS",
+    "note": "len=52，自然、無多宣稱、產品名原樣"
+   },
+   "mr-IN": {
+    "verdict": "PASS",
+    "note": "len=53，自然、無多宣稱、產品名原樣"
+   },
+   "or-IN": {
+    "verdict": "PASS",
+    "note": "len=55，自然、無多宣稱、產品名原樣"
+   },
+   "pa-IN": {
+    "verdict": "PASS",
+    "note": "len=47，自然、無多宣稱、產品名原樣"
+   },
+   "ta-IN": {
+    "verdict": "PASS",
+    "note": "len=53，自然、無多宣稱、產品名原樣"
+   },
+   "te-IN": {
+    "verdict": "PASS",
+    "note": "len=55，自然、無多宣稱、產品名原樣"
+   },
+   "ur-PK": {
+    "verdict": "PASS",
+    "note": "len=50，自然、無多宣稱、產品名原樣"
+   }
+  },
+  "promo_line_long": {
+   "en-US": {
+    "verdict": "PASS",
+    "note": "len=78，自然、無多宣稱、產品名原樣"
+   },
+   "en-CA": {
+    "verdict": "PASS",
+    "note": "len=78，自然、無多宣稱、產品名原樣"
+   },
+   "en-GB": {
+    "verdict": "PASS",
+    "note": "len=78，自然、無多宣稱、產品名原樣"
+   },
+   "en-AU": {
+    "verdict": "PASS",
+    "note": "len=78，自然、無多宣稱、產品名原樣"
+   },
+   "zh-Hant": {
+    "verdict": "PASS",
+    "note": "len=32，自然、無多宣稱、產品名原樣"
+   },
+   "zh-Hans": {
+    "verdict": "PASS",
+    "note": "len=30，自然、無多宣稱、產品名原樣"
+   },
+   "ja": {
+    "verdict": "PASS",
+    "note": "len=46，自然、無多宣稱、產品名原樣"
+   },
+   "ko": {
+    "verdict": "PASS",
+    "note": "len=46，自然、無多宣稱、產品名原樣"
+   },
+   "de-DE": {
+    "verdict": "PASS",
+    "note": "len=79，自然、無多宣稱、產品名原樣"
+   },
+   "fr-FR": {
+    "verdict": "PASS",
+    "note": "len=76，自然、無多宣稱、產品名原樣"
+   },
+   "fr-CA": {
+    "verdict": "PASS",
+    "note": "len=76，自然、無多宣稱、產品名原樣"
+   },
+   "es-ES": {
+    "verdict": "PASS",
+    "note": "len=73，自然、無多宣稱、產品名原樣"
+   },
+   "es-MX": {
+    "verdict": "PASS",
+    "note": "len=73，自然、無多宣稱、產品名原樣"
+   },
+   "it": {
+    "verdict": "PASS",
+    "note": "len=69，自然、無多宣稱、產品名原樣"
+   },
+   "pt-BR": {
+    "verdict": "PASS",
+    "note": "len=72，自然、無多宣稱、產品名原樣"
+   },
+   "pt-PT": {
+    "verdict": "PASS",
+    "note": "len=77，自然、無多宣稱、產品名原樣"
+   },
+   "nl-NL": {
+    "verdict": "PASS",
+    "note": "len=77，自然、無多宣稱、產品名原樣"
+   },
+   "sv": {
+    "verdict": "PASS",
+    "note": "len=73，自然、無多宣稱、產品名原樣"
+   },
+   "da": {
+    "verdict": "PASS",
+    "note": "len=75，自然、無多宣稱、產品名原樣"
+   },
+   "no": {
+    "verdict": "PASS",
+    "note": "len=80，自然、無多宣稱、產品名原樣"
+   },
+   "fi": {
+    "verdict": "PASS",
+    "note": "len=86，自然、無多宣稱、產品名原樣"
+   },
+   "pl": {
+    "verdict": "PASS",
+    "note": "len=99，自然、無多宣稱、產品名原樣"
+   },
+   "cs": {
+    "verdict": "PASS",
+    "note": "len=98，自然、無多宣稱、產品名原樣"
+   },
+   "sk": {
+    "verdict": "PASS",
+    "note": "len=92，自然、無多宣稱、產品名原樣"
+   },
+   "sl-SI": {
+    "verdict": "PASS",
+    "note": "len=85，自然、無多宣稱、產品名原樣"
+   },
+   "hr": {
+    "verdict": "PASS",
+    "note": "len=74，自然、無多宣稱、產品名原樣"
+   },
+   "hu": {
+    "verdict": "PASS",
+    "note": "len=88，自然、無多宣稱、產品名原樣"
+   },
+   "ro": {
+    "verdict": "PASS",
+    "note": "len=77，自然、無多宣稱、產品名原樣；「ecran complet adevărat」略直譯但可接受"
+   },
+   "el": {
+    "verdict": "PASS",
+    "note": "len=84，自然、無多宣稱、產品名原樣"
+   },
+   "ru": {
+    "verdict": "PASS",
+    "note": "len=87，自然、無多宣稱、產品名原樣"
+   },
+   "uk": {
+    "verdict": "PASS",
+    "note": "len=89，自然、無多宣稱、產品名原樣"
+   },
+   "tr": {
+    "verdict": "PASS",
+    "note": "len=79，自然、無多宣稱、產品名原樣"
+   },
+   "ar-SA": {
+    "verdict": "PASS",
+    "note": "len=69，自然、無多宣稱、產品名原樣"
+   },
+   "he": {
+    "verdict": "PASS",
+    "note": "len=63，自然、無多宣稱、產品名原樣；「מותאם」=調整/適配，可接受"
+   },
+   "ca": {
+    "verdict": "PASS",
+    "note": "len=86，自然、無多宣稱、產品名原樣"
+   },
+   "id": {
+    "verdict": "PASS",
+    "note": "len=83，自然、無多宣稱、產品名原樣"
+   },
+   "ms": {
+    "verdict": "PASS",
+    "note": "len=81，自然、無多宣稱、產品名原樣"
+   },
+   "vi": {
+    "verdict": "PASS",
+    "note": "len=72，自然、無多宣稱、產品名原樣"
+   },
+   "th": {
+    "verdict": "PASS",
+    "note": "len=66，自然、無多宣稱、產品名原樣"
+   },
+   "hi": {
+    "verdict": "PASS",
+    "note": "len=95，自然、無多宣稱、產品名原樣"
+   },
+   "bn-BD": {
+    "verdict": "PASS",
+    "note": "len=82，自然、無多宣稱、產品名原樣"
+   },
+   "gu-IN": {
+    "verdict": "PASS",
+    "note": "len=80，自然、無多宣稱、產品名原樣"
+   },
+   "kn-IN": {
+    "verdict": "PASS",
+    "note": "len=92，自然、無多宣稱、產品名原樣"
+   },
+   "ml-IN": {
+    "verdict": "PASS",
+    "note": "len=98，自然、無多宣稱、產品名原樣"
+   },
+   "mr-IN": {
+    "verdict": "PASS",
+    "note": "len=86，自然、無多宣稱、產品名原樣"
+   },
+   "or-IN": {
+    "verdict": "PASS",
+    "note": "len=99，自然、無多宣稱、產品名原樣"
+   },
+   "pa-IN": {
+    "verdict": "PASS",
+    "note": "len=75，自然、無多宣稱、產品名原樣"
+   },
+   "ta-IN": {
+    "verdict": "PASS",
+    "note": "len=96，自然、無多宣稱、產品名原樣"
+   },
+   "te-IN": {
+    "verdict": "PASS",
+    "note": "len=97，自然、無多宣稱、產品名原樣"
+   },
+   "ur-PK": {
+    "verdict": "PASS",
+    "note": "len=81，自然、無多宣稱、產品名原樣"
+   }
+  },
+  "description_block": {
+   "en-US": {
+    "verdict": "PASS",
+    "note": "len=166，自然、無多宣稱、產品名原樣"
+   },
+   "en-CA": {
+    "verdict": "PASS",
+    "note": "len=166，自然、無多宣稱、產品名原樣"
+   },
+   "en-GB": {
+    "verdict": "PASS",
+    "note": "len=166，自然、無多宣稱、產品名原樣"
+   },
+   "en-AU": {
+    "verdict": "PASS",
+    "note": "len=166，自然、無多宣稱、產品名原樣"
+   },
+   "zh-Hant": {
+    "verdict": "PASS",
+    "note": "len=59，自然、無多宣稱、產品名原樣"
+   },
+   "zh-Hans": {
+    "verdict": "PASS",
+    "note": "len=57，自然、無多宣稱、產品名原樣"
+   },
+   "ja": {
+    "verdict": "PASS",
+    "note": "len=76，自然、無多宣稱、產品名原樣"
+   },
+   "ko": {
+    "verdict": "PASS",
+    "note": "len=83，自然、無多宣稱、產品名原樣"
+   },
+   "de-DE": {
+    "verdict": "PASS",
+    "note": "套用複審員改正句（主 session 2026-10-21）",
+    "suggestion": "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt."
+   },
+   "fr-FR": {
+    "verdict": "PASS",
+    "note": "套用複審員改正句（主 session 2026-10-21）",
+    "suggestion": "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert."
+   },
+   "fr-CA": {
+    "verdict": "PASS",
+    "note": "套用複審員改正句（主 session 2026-10-21）",
+    "suggestion": "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert."
+   },
+   "es-ES": {
+    "verdict": "PASS",
+    "note": "len=178，自然、無多宣稱、產品名原樣"
+   },
+   "es-MX": {
+    "verdict": "PASS",
+    "note": "len=178，自然、無多宣稱、產品名原樣"
+   },
+   "it": {
+    "verdict": "PASS",
+    "note": "len=165，自然、無多宣稱、產品名原樣"
+   },
+   "pt-BR": {
+    "verdict": "PASS",
+    "note": "len=158，自然、無多宣稱、產品名原樣"
+   },
+   "pt-PT": {
+    "verdict": "PASS",
+    "note": "len=166，自然、無多宣稱、產品名原樣"
+   },
+   "nl-NL": {
+    "verdict": "PASS",
+    "note": "len=164，自然、無多宣稱、產品名原樣"
+   },
+   "sv": {
+    "verdict": "PASS",
+    "note": "len=154，自然、無多宣稱、產品名原樣"
+   },
+   "da": {
+    "verdict": "PASS",
+    "note": "len=156，自然、無多宣稱、產品名原樣"
+   },
+   "no": {
+    "verdict": "PASS",
+    "note": "len=166，自然、無多宣稱、產品名原樣"
+   },
+   "fi": {
+    "verdict": "PASS",
+    "note": "len=169，自然、無多宣稱、產品名原樣"
+   },
+   "pl": {
+    "verdict": "PASS",
+    "note": "len=204，自然、無多宣稱、產品名原樣"
+   },
+   "cs": {
+    "verdict": "PASS",
+    "note": "len=180，自然、無多宣稱、產品名原樣"
+   },
+   "sk": {
+    "verdict": "PASS",
+    "note": "len=179，自然、無多宣稱、產品名原樣"
+   },
+   "sl-SI": {
+    "verdict": "PASS",
+    "note": "len=186，自然、無多宣稱、產品名原樣"
+   },
+   "hr": {
+    "verdict": "PASS",
+    "note": "len=181，自然、無多宣稱、產品名原樣"
+   },
+   "hu": {
+    "verdict": "PASS",
+    "note": "len=207，自然、無多宣稱、產品名原樣"
+   },
+   "ro": {
+    "verdict": "PASS",
+    "note": "len=173，自然、無多宣稱、產品名原樣"
+   },
+   "el": {
+    "verdict": "PASS",
+    "note": "len=193，自然、無多宣稱、產品名原樣"
+   },
+   "ru": {
+    "verdict": "PASS",
+    "note": "len=176，自然、無多宣稱、產品名原樣"
+   },
+   "uk": {
+    "verdict": "PASS",
+    "note": "len=164，自然、無多宣稱、產品名原樣；「створено з найновішим SDK」可更自然為「за допомогою」，不扣"
+   },
+   "tr": {
+    "verdict": "PASS",
+    "note": "len=160，自然、無多宣稱、產品名原樣"
+   },
+   "ar-SA": {
+    "verdict": "PASS",
+    "note": "len=142，自然、無多宣稱、產品名原樣"
+   },
+   "he": {
+    "verdict": "PASS",
+    "note": "len=146，自然、無多宣稱、產品名原樣"
+   },
+   "ca": {
+    "verdict": "PASS",
+    "note": "len=177，自然、無多宣稱、產品名原樣"
+   },
+   "id": {
+    "verdict": "PASS",
+    "note": "len=199，自然、無多宣稱、產品名原樣"
+   },
+   "ms": {
+    "verdict": "PASS",
+    "note": "len=179，自然、無多宣稱、產品名原樣"
+   },
+   "vi": {
+    "verdict": "PASS",
+    "note": "len=157，自然、無多宣稱、產品名原樣"
+   },
+   "th": {
+    "verdict": "PASS",
+    "note": "len=145，自然、無多宣稱、產品名原樣"
+   },
+   "hi": {
+    "verdict": "PASS",
+    "note": "len=156，自然、無多宣稱、產品名原樣"
+   },
+   "bn-BD": {
+    "verdict": "PASS",
+    "note": "len=176，自然、無多宣稱、產品名原樣"
+   },
+   "gu-IN": {
+    "verdict": "PASS",
+    "note": "len=149，自然、無多宣稱、產品名原樣"
+   },
+   "kn-IN": {
+    "verdict": "PASS",
+    "note": "len=182，自然、無多宣稱、產品名原樣"
+   },
+   "ml-IN": {
+    "verdict": "PASS",
+    "note": "len=193，自然、無多宣稱、產品名原樣"
+   },
+   "mr-IN": {
+    "verdict": "PASS",
+    "note": "len=159，自然、無多宣稱、產品名原樣"
+   },
+   "or-IN": {
+    "verdict": "PASS",
+    "note": "len=160，自然、無多宣稱、產品名原樣"
+   },
+   "pa-IN": {
+    "verdict": "PASS",
+    "note": "len=148，自然、無多宣稱、產品名原樣"
+   },
+   "ta-IN": {
+    "verdict": "PASS",
+    "note": "len=201，自然、無多宣稱、產品名原樣"
+   },
+   "te-IN": {
+    "verdict": "PASS",
+    "note": "len=188，自然、無多宣稱、產品名原樣"
+   },
+   "ur-PK": {
+    "verdict": "PASS",
+    "note": "len=156，自然、無多宣稱、產品名原樣"
+   }
+  },
+  "social_line": {
+   "en-US": {
+    "verdict": "PASS",
+    "note": "len=76，自然、無多宣稱、產品名原樣"
+   },
+   "en-CA": {
+    "verdict": "PASS",
+    "note": "len=76，自然、無多宣稱、產品名原樣"
+   },
+   "en-GB": {
+    "verdict": "PASS",
+    "note": "len=76，自然、無多宣稱、產品名原樣"
+   },
+   "en-AU": {
+    "verdict": "PASS",
+    "note": "len=76，自然、無多宣稱、產品名原樣"
+   },
+   "zh-Hant": {
+    "verdict": "PASS",
+    "note": "len=41，自然、無多宣稱、產品名原樣"
+   },
+   "zh-Hans": {
+    "verdict": "PASS",
+    "note": "len=41，自然、無多宣稱、產品名原樣"
+   },
+   "ja": {
+    "verdict": "PASS",
+    "note": "len=58，自然、無多宣稱、產品名原樣"
+   },
+   "ko": {
+    "verdict": "PASS",
+    "note": "len=56，自然、無多宣稱、產品名原樣"
+   },
+   "de-DE": {
+    "verdict": "PASS",
+    "note": "len=71，自然、無多宣稱、產品名原樣"
+   },
+   "fr-FR": {
+    "verdict": "PASS",
+    "note": "len=73，自然、無多宣稱、產品名原樣"
+   },
+   "fr-CA": {
+    "verdict": "PASS",
+    "note": "len=73，自然、無多宣稱、產品名原樣"
+   },
+   "es-ES": {
+    "verdict": "PASS",
+    "note": "len=68，自然、無多宣稱、產品名原樣"
+   },
+   "es-MX": {
+    "verdict": "PASS",
+    "note": "len=68，自然、無多宣稱、產品名原樣"
+   },
+   "it": {
+    "verdict": "PASS",
+    "note": "len=79，自然、無多宣稱、產品名原樣"
+   },
+   "pt-BR": {
+    "verdict": "PASS",
+    "note": "len=60，自然、無多宣稱、產品名原樣"
+   },
+   "pt-PT": {
+    "verdict": "PASS",
+    "note": "len=58，自然、無多宣稱、產品名原樣"
+   },
+   "nl-NL": {
+    "verdict": "PASS",
+    "note": "len=75，自然、無多宣稱、產品名原樣"
+   },
+   "sv": {
+    "verdict": "PASS",
+    "note": "len=80，自然、無多宣稱、產品名原樣"
+   },
+   "da": {
+    "verdict": "PASS",
+    "note": "len=59，自然、無多宣稱、產品名原樣"
+   },
+   "no": {
+    "verdict": "PASS",
+    "note": "len=62，自然、無多宣稱、產品名原樣"
+   },
+   "fi": {
+    "verdict": "PASS",
+    "note": "len=62，自然、無多宣稱、產品名原樣"
+   },
+   "pl": {
+    "verdict": "PASS",
+    "note": "len=75，自然、無多宣稱、產品名原樣"
+   },
+   "cs": {
+    "verdict": "PASS",
+    "note": "len=58，自然、無多宣稱、產品名原樣"
+   },
+   "sk": {
+    "verdict": "PASS",
+    "note": "len=62，自然、無多宣稱、產品名原樣"
+   },
+   "sl-SI": {
+    "verdict": "PASS",
+    "note": "len=66，自然、無多宣稱、產品名原樣"
+   },
+   "hr": {
+    "verdict": "PASS",
+    "note": "len=68，自然、無多宣稱、產品名原樣"
+   },
+   "hu": {
+    "verdict": "PASS",
+    "note": "len=71，自然、無多宣稱、產品名原樣"
+   },
+   "ro": {
+    "verdict": "PASS",
+    "note": "len=60，自然、無多宣稱、產品名原樣"
+   },
+   "el": {
+    "verdict": "PASS",
+    "note": "len=67，自然、無多宣稱、產品名原樣"
+   },
+   "ru": {
+    "verdict": "PASS",
+    "note": "len=68，自然、無多宣稱、產品名原樣"
+   },
+   "uk": {
+    "verdict": "PASS",
+    "note": "len=66，自然、無多宣稱、產品名原樣"
+   },
+   "tr": {
+    "verdict": "PASS",
+    "note": "len=75，自然、無多宣稱、產品名原樣"
+   },
+   "ar-SA": {
+    "verdict": "PASS",
+    "note": "len=56，自然、無多宣稱、產品名原樣"
+   },
+   "he": {
+    "verdict": "PASS",
+    "note": "len=59，自然、無多宣稱、產品名原樣"
+   },
+   "ca": {
+    "verdict": "PASS",
+    "note": "len=62，自然、無多宣稱、產品名原樣"
+   },
+   "id": {
+    "verdict": "PASS",
+    "note": "len=76，自然、無多宣稱、產品名原樣"
+   },
+   "ms": {
+    "verdict": "PASS",
+    "note": "len=59，自然、無多宣稱、產品名原樣"
+   },
+   "vi": {
+    "verdict": "PASS",
+    "note": "len=68，自然、無多宣稱、產品名原樣"
+   },
+   "th": {
+    "verdict": "PASS",
+    "note": "len=56，自然、無多宣稱、產品名原樣"
+   },
+   "hi": {
+    "verdict": "PASS",
+    "note": "len=75，自然、無多宣稱、產品名原樣"
+   },
+   "bn-BD": {
+    "verdict": "PASS",
+    "note": "len=76，自然、無多宣稱、產品名原樣"
+   },
+   "gu-IN": {
+    "verdict": "PASS",
+    "note": "len=63，自然、無多宣稱、產品名原樣"
+   },
+   "kn-IN": {
+    "verdict": "PASS",
+    "note": "len=74，自然、無多宣稱、產品名原樣"
+   },
+   "ml-IN": {
+    "verdict": "PASS",
+    "note": "len=87，自然、無多宣稱、產品名原樣"
+   },
+   "mr-IN": {
+    "verdict": "PASS",
+    "note": "len=64，自然、無多宣稱、產品名原樣"
+   },
+   "or-IN": {
+    "verdict": "PASS",
+    "note": "len=82，自然、無多宣稱、產品名原樣"
+   },
+   "pa-IN": {
+    "verdict": "PASS",
+    "note": "len=65，自然、無多宣稱、產品名原樣"
+   },
+   "ta-IN": {
+    "verdict": "PASS",
+    "note": "len=88，自然、無多宣稱、產品名原樣"
+   },
+   "te-IN": {
+    "verdict": "PASS",
+    "note": "len=84，自然、無多宣稱、產品名原樣"
+   },
+   "ur-PK": {
+    "verdict": "PASS",
+    "note": "len=78，自然、無多宣稱、產品名原樣"
+   }
+  },
+  "review_reply_line": {
+   "en-US": {
+    "verdict": "PASS",
+    "note": "len=88，自然、無多宣稱、產品名原樣"
+   },
+   "en-CA": {
+    "verdict": "PASS",
+    "note": "len=88，自然、無多宣稱、產品名原樣"
+   },
+   "en-GB": {
+    "verdict": "PASS",
+    "note": "len=88，自然、無多宣稱、產品名原樣"
+   },
+   "en-AU": {
+    "verdict": "PASS",
+    "note": "len=88，自然、無多宣稱、產品名原樣"
+   },
+   "zh-Hant": {
+    "verdict": "PASS",
+    "note": "len=34，自然、無多宣稱、產品名原樣"
+   },
+   "zh-Hans": {
+    "verdict": "PASS",
+    "note": "len=33，自然、無多宣稱、產品名原樣"
+   },
+   "ja": {
+    "verdict": "PASS",
+    "note": "len=56，自然、無多宣稱、產品名原樣"
+   },
+   "ko": {
+    "verdict": "PASS",
+    "note": "len=54，自然、無多宣稱、產品名原樣"
+   },
+   "de-DE": {
+    "verdict": "PASS",
+    "note": "len=99，自然、無多宣稱、產品名原樣"
+   },
+   "fr-FR": {
+    "verdict": "PASS",
+    "note": "len=98，自然、無多宣稱、產品名原樣"
+   },
+   "fr-CA": {
+    "verdict": "PASS",
+    "note": "len=98，自然、無多宣稱、產品名原樣"
+   },
+   "es-ES": {
+    "verdict": "PASS",
+    "note": "len=83，自然、無多宣稱、產品名原樣"
+   },
+   "es-MX": {
+    "verdict": "PASS",
+    "note": "len=83，自然、無多宣稱、產品名原樣"
+   },
+   "it": {
+    "verdict": "PASS",
+    "note": "len=76，自然、無多宣稱、產品名原樣"
+   },
+   "pt-BR": {
+    "verdict": "PASS",
+    "note": "len=82，自然、無多宣稱、產品名原樣"
+   },
+   "pt-PT": {
+    "verdict": "PASS",
+    "note": "len=79，自然、無多宣稱、產品名原樣"
+   },
+   "nl-NL": {
+    "verdict": "PASS",
+    "note": "len=87，自然、無多宣稱、產品名原樣"
+   },
+   "sv": {
+    "verdict": "PASS",
+    "note": "len=92，自然、無多宣稱、產品名原樣"
+   },
+   "da": {
+    "verdict": "PASS",
+    "note": "len=86，自然、無多宣稱、產品名原樣"
+   },
+   "no": {
+    "verdict": "PASS",
+    "note": "len=86，自然、無多宣稱、產品名原樣"
+   },
+   "fi": {
+    "verdict": "PASS",
+    "note": "len=91，自然、無多宣稱、產品名原樣"
+   },
+   "pl": {
+    "verdict": "PASS",
+    "note": "len=107，自然、無多宣稱、產品名原樣"
+   },
+   "cs": {
+    "verdict": "PASS",
+    "note": "len=91，自然、無多宣稱、產品名原樣"
+   },
+   "sk": {
+    "verdict": "PASS",
+    "note": "len=96，自然、無多宣稱、產品名原樣"
+   },
+   "sl-SI": {
+    "verdict": "PASS",
+    "note": "len=99，自然、無多宣稱、產品名原樣"
+   },
+   "hr": {
+    "verdict": "PASS",
+    "note": "len=95，自然、無多宣稱、產品名原樣"
+   },
+   "hu": {
+    "verdict": "PASS",
+    "note": "len=111，自然、無多宣稱、產品名原樣"
+   },
+   "ro": {
+    "verdict": "PASS",
+    "note": "len=84，自然、無多宣稱、產品名原樣"
+   },
+   "el": {
+    "verdict": "PASS",
+    "note": "len=102，自然、無多宣稱、產品名原樣"
+   },
+   "ru": {
+    "verdict": "PASS",
+    "note": "len=97，自然、無多宣稱、產品名原樣"
+   },
+   "uk": {
+    "verdict": "PASS",
+    "note": "len=95，自然、無多宣稱、產品名原樣"
+   },
+   "tr": {
+    "verdict": "PASS",
+    "note": "len=100，自然、無多宣稱、產品名原樣"
+   },
+   "ar-SA": {
+    "verdict": "PASS",
+    "note": "len=91，自然、無多宣稱、產品名原樣"
+   },
+   "he": {
+    "verdict": "PASS",
+    "note": "len=84，自然、無多宣稱、產品名原樣"
+   },
+   "ca": {
+    "verdict": "PASS",
+    "note": "len=84，自然、無多宣稱、產品名原樣"
+   },
+   "id": {
+    "verdict": "PASS",
+    "note": "len=110，自然、無多宣稱、產品名原樣"
+   },
+   "ms": {
+    "verdict": "PASS",
+    "note": "len=97，自然、無多宣稱、產品名原樣"
+   },
+   "vi": {
+    "verdict": "PASS",
+    "note": "len=102，自然、無多宣稱、產品名原樣"
+   },
+   "th": {
+    "verdict": "PASS",
+    "note": "len=84，自然、無多宣稱、產品名原樣"
+   },
+   "hi": {
+    "verdict": "PASS",
+    "note": "len=92，自然、無多宣稱、產品名原樣"
+   },
+   "bn-BD": {
+    "verdict": "PASS",
+    "note": "len=91，自然、無多宣稱、產品名原樣"
+   },
+   "gu-IN": {
+    "verdict": "PASS",
+    "note": "len=77，自然、無多宣稱、產品名原樣"
+   },
+   "kn-IN": {
+    "verdict": "PASS",
+    "note": "len=99，自然、無多宣稱、產品名原樣"
+   },
+   "ml-IN": {
+    "verdict": "PASS",
+    "note": "len=103，自然、無多宣稱、產品名原樣"
+   },
+   "mr-IN": {
+    "verdict": "PASS",
+    "note": "len=83，自然、無多宣稱、產品名原樣"
+   },
+   "or-IN": {
+    "verdict": "PASS",
+    "note": "len=98，自然、無多宣稱、產品名原樣"
+   },
+   "pa-IN": {
+    "verdict": "PASS",
+    "note": "len=78，自然、無多宣稱、產品名原樣"
+   },
+   "ta-IN": {
+    "verdict": "PASS",
+    "note": "len=103，自然、無多宣稱、產品名原樣"
+   },
+   "te-IN": {
+    "verdict": "PASS",
+    "note": "len=106，自然、無多宣稱、產品名原樣"
+   },
+   "ur-PK": {
+    "verdict": "PASS",
+    "note": "len=90，自然、無多宣稱、產品名原樣"
+   }
+  }
+ },
+ "summary": {
+  "promo_line": {
+   "pass": 50,
+   "fail": 0
+  },
+  "promo_line_long": {
+   "pass": 50,
+   "fail": 0
+  },
+  "description_block": {
+   "pass": 50,
+   "fail": 0
+  },
+  "social_line": {
+   "pass": 50,
+   "fail": 0
+  },
+  "review_reply_line": {
+   "pass": 50,
+   "fail": 0
+  }
+ },
+ "items": [
+  {
+   "field": "promo_line",
+   "locale": "en-US",
+   "verdict": "PASS",
+   "text": "Optimized for iPhone Duo: truly full screen."
+  },
+  {
+   "field": "promo_line",
+   "locale": "en-CA",
+   "verdict": "PASS",
+   "text": "Optimized for iPhone Duo: truly full screen."
+  },
+  {
+   "field": "promo_line",
+   "locale": "en-GB",
+   "verdict": "PASS",
+   "text": "Optimised for iPhone Duo: truly full screen."
+  },
+  {
+   "field": "promo_line",
+   "locale": "en-AU",
+   "verdict": "PASS",
+   "text": "Optimised for iPhone Duo: truly full screen."
+  },
+  {
+   "field": "promo_line",
+   "locale": "zh-Hant",
+   "verdict": "PASS",
+   "text": "已針對 iPhone Duo 最佳化，真正滿版。"
+  },
+  {
+   "field": "promo_line",
+   "locale": "zh-Hans",
+   "verdict": "PASS",
+   "text": "已针对 iPhone Duo 优化，真正全屏。"
+  },
+  {
+   "field": "promo_line",
+   "locale": "ja",
+   "verdict": "PASS",
+   "text": "iPhone Duoに最適化。真の全画面表示。"
+  },
+  {
+   "field": "promo_line",
+   "locale": "ko",
+   "verdict": "PASS",
+   "text": "iPhone Duo 최적화, 진짜 전체화면."
+  },
+  {
+   "field": "promo_line",
+   "locale": "de-DE",
+   "verdict": "PASS",
+   "text": "Optimiert für das iPhone Duo: echtes Vollbild."
+  },
+  {
+   "field": "promo_line",
+   "locale": "fr-FR",
+   "verdict": "PASS",
+   "text": "Optimisé pour l’iPhone Duo : un vrai plein écran."
+  },
+  {
+   "field": "promo_line",
+   "locale": "fr-CA",
+   "verdict": "PASS",
+   "text": "Optimisé pour l’iPhone Duo : un vrai plein écran."
+  },
+  {
+   "field": "promo_line",
+   "locale": "es-ES",
+   "verdict": "PASS",
+   "text": "Optimizada para el iPhone Duo: pantalla completa real."
+  },
+  {
+   "field": "promo_line",
+   "locale": "es-MX",
+   "verdict": "PASS",
+   "text": "Optimizada para el iPhone Duo: pantalla completa real."
+  },
+  {
+   "field": "promo_line",
+   "locale": "it",
+   "verdict": "PASS",
+   "text": "Ottimizzata per iPhone Duo: vero schermo intero."
+  },
+  {
+   "field": "promo_line",
+   "locale": "pt-BR",
+   "verdict": "PASS",
+   "text": "Otimizado para iPhone Duo: tela cheia de verdade."
+  },
+  {
+   "field": "promo_line",
+   "locale": "pt-PT",
+   "verdict": "PASS",
+   "text": "Otimizada para iPhone Duo: verdadeiro ecrã completo."
+  },
+  {
+   "field": "promo_line",
+   "locale": "nl-NL",
+   "verdict": "PASS",
+   "text": "Geoptimaliseerd voor iPhone Duo: echt schermvullend."
+  },
+  {
+   "field": "promo_line",
+   "locale": "sv",
+   "verdict": "PASS",
+   "text": "Optimerad för iPhone Duo: äkta helskärm."
+  },
+  {
+   "field": "promo_line",
+   "locale": "da",
+   "verdict": "PASS",
+   "text": "Optimeret til iPhone Duo: ægte fuld skærm."
+  },
+  {
+   "field": "promo_line",
+   "locale": "no",
+   "verdict": "PASS",
+   "text": "Optimalisert for iPhone Duo: ekte fullskjerm."
+  },
+  {
+   "field": "promo_line",
+   "locale": "fi",
+   "verdict": "PASS",
+   "text": "Optimoitu iPhone Duo -laitteelle: aito koko näyttö."
+  },
+  {
+   "field": "promo_line",
+   "locale": "pl",
+   "verdict": "PASS",
+   "text": "Zoptymalizowana pod iPhone Duo: prawdziwy pełny ekran."
+  },
+  {
+   "field": "promo_line",
+   "locale": "cs",
+   "verdict": "PASS",
+   "text": "Přizpůsobeno zařízení iPhone Duo: opravdu celý displej."
+  },
+  {
+   "field": "promo_line",
+   "locale": "sk",
+   "verdict": "PASS",
+   "text": "Optimalizované pre iPhone Duo: skutočne celá obrazovka."
+  },
+  {
+   "field": "promo_line",
+   "locale": "sl-SI",
+   "verdict": "PASS",
+   "text": "Optimizirano za iPhone Duo: pravi celozaslonski prikaz."
+  },
+  {
+   "field": "promo_line",
+   "locale": "hr",
+   "verdict": "PASS",
+   "text": "Optimizirano za iPhone Duo: pravi puni zaslon."
+  },
+  {
+   "field": "promo_line",
+   "locale": "hu",
+   "verdict": "PASS",
+   "text": "iPhone Duo készülékre szabva: valódi teljes képernyő."
+  },
+  {
+   "field": "promo_line",
+   "locale": "ro",
+   "verdict": "PASS",
+   "text": "Optimizată pentru iPhone Duo: ecran complet adevărat."
+  },
+  {
+   "field": "promo_line",
+   "locale": "el",
+   "verdict": "PASS",
+   "text": "Βελτιστοποιημένη για iPhone Duo: αληθινή πλήρης οθόνη."
+  },
+  {
+   "field": "promo_line",
+   "locale": "ru",
+   "verdict": "PASS",
+   "text": "Оптимизировано для iPhone Duo: настоящий полный экран."
+  },
+  {
+   "field": "promo_line",
+   "locale": "uk",
+   "verdict": "PASS",
+   "text": "Оптимізовано для iPhone Duo: справжній повний екран."
+  },
+  {
+   "field": "promo_line",
+   "locale": "tr",
+   "verdict": "PASS",
+   "text": "iPhone Duo için optimize edildi: gerçek tam ekran."
+  },
+  {
+   "field": "promo_line",
+   "locale": "ar-SA",
+   "verdict": "PASS",
+   "text": "محسَّن لجهاز iPhone Duo: ملء شاشة حقيقي."
+  },
+  {
+   "field": "promo_line",
+   "locale": "he",
+   "verdict": "PASS",
+   "text": "מותאם למכשיר iPhone Duo: מסך מלא אמיתי."
+  },
+  {
+   "field": "promo_line",
+   "locale": "ca",
+   "verdict": "PASS",
+   "text": "Optimitzada per a l’iPhone Duo: pantalla completa real."
+  },
+  {
+   "field": "promo_line",
+   "locale": "id",
+   "verdict": "PASS",
+   "text": "Dioptimalkan untuk iPhone Duo: layar penuh sungguhan."
+  },
+  {
+   "field": "promo_line",
+   "locale": "ms",
+   "verdict": "PASS",
+   "text": "Dioptimumkan untuk iPhone Duo: skrin penuh sebenar."
+  },
+  {
+   "field": "promo_line",
+   "locale": "vi",
+   "verdict": "PASS",
+   "text": "Tối ưu cho iPhone Duo: toàn màn hình thật sự."
+  },
+  {
+   "field": "promo_line",
+   "locale": "th",
+   "verdict": "PASS",
+   "text": "ปรับให้เหมาะกับ iPhone Duo: เต็มจอจริง"
+  },
+  {
+   "field": "promo_line",
+   "locale": "hi",
+   "verdict": "PASS",
+   "text": "iPhone Duo डिवाइस के लिए अनुकूलित: असली फ़ुल स्क्रीन।"
+  },
+  {
+   "field": "promo_line",
+   "locale": "bn-BD",
+   "verdict": "PASS",
+   "text": "iPhone Duo ডিভাইসের জন্য অপ্টিমাইজড: আসল ফুল স্ক্রিন।"
+  },
+  {
+   "field": "promo_line",
+   "locale": "gu-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ડિવાઇસ માટે ઑપ્ટિમાઇઝ્ડ: સાચી ફુલ સ્ક્રીન."
+  },
+  {
+   "field": "promo_line",
+   "locale": "kn-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ಸಾಧನಕ್ಕೆ ಆಪ್ಟಿಮೈಸ್ಡ್: ನಿಜವಾದ ಪೂರ್ಣ ಪರದೆ."
+  },
+  {
+   "field": "promo_line",
+   "locale": "ml-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ഫോണിന് ഒപ്റ്റിമൈസ്ഡ്: യഥാർത്ഥ ഫുൾസ്ക്രീൻ."
+  },
+  {
+   "field": "promo_line",
+   "locale": "mr-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo डिव्हाइससाठी ऑप्टिमाइझ्ड: खरी फुल स्क्रीन."
+  },
+  {
+   "field": "promo_line",
+   "locale": "or-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ଡିଭାଇସ ପାଇଁ ଅପ୍ଟିମାଇଜ୍ଡ: ପ୍ରକୃତ ଫୁଲ ସ୍କ୍ରିନ।"
+  },
+  {
+   "field": "promo_line",
+   "locale": "pa-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ਡਿਵਾਈਸ ਲਈ ਅਨੁਕੂਲਿਤ: ਅਸਲ ਫੁੱਲ ਸਕ੍ਰੀਨ।"
+  },
+  {
+   "field": "promo_line",
+   "locale": "ta-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo சாதனத்திற்கு உகந்தது: உண்மையான முழுத்திரை."
+  },
+  {
+   "field": "promo_line",
+   "locale": "te-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo పరికరానికి ఆప్టిమైజ్డ్: అసలైన ఫుల్ స్క్రీన్."
+  },
+  {
+   "field": "promo_line",
+   "locale": "ur-PK",
+   "verdict": "PASS",
+   "text": "iPhone Duo ڈیوائس کے لیے آپٹمائزڈ: اصل فُل اسکرین۔"
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "en-US",
+   "verdict": "PASS",
+   "text": "Optimized for iPhone Duo: truly full screen, filling the entire inner display."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "en-CA",
+   "verdict": "PASS",
+   "text": "Optimized for iPhone Duo: truly full screen, filling the entire inner display."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "en-GB",
+   "verdict": "PASS",
+   "text": "Optimised for iPhone Duo: truly full screen, filling the entire inner display."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "en-AU",
+   "verdict": "PASS",
+   "text": "Optimised for iPhone Duo: truly full screen, filling the entire inner display."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "zh-Hant",
+   "verdict": "PASS",
+   "text": "已針對 iPhone Duo 最佳化：真正滿版，填滿整個內螢幕。"
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "zh-Hans",
+   "verdict": "PASS",
+   "text": "已针对 iPhone Duo 优化：真正全屏，铺满整块内屏。"
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "ja",
+   "verdict": "PASS",
+   "text": "iPhone Duoに最適化。内側のディスプレイいっぱいに表示する本当のフルスクリーンです。"
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "ko",
+   "verdict": "PASS",
+   "text": "iPhone Duo에 최적화: 안쪽 디스플레이 전체를 가득 채우는 진짜 전체 화면."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "de-DE",
+   "verdict": "PASS",
+   "text": "Optimiert für das iPhone Duo: echtes Vollbild auf dem gesamten inneren Display."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "fr-FR",
+   "verdict": "PASS",
+   "text": "Optimisé pour l’iPhone Duo : un vrai plein écran sur tout l’écran intérieur."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "fr-CA",
+   "verdict": "PASS",
+   "text": "Optimisé pour l’iPhone Duo : un vrai plein écran sur tout l’écran intérieur."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "es-ES",
+   "verdict": "PASS",
+   "text": "Optimizada para el iPhone Duo: ocupa de verdad toda la pantalla interior."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "es-MX",
+   "verdict": "PASS",
+   "text": "Optimizada para el iPhone Duo: ocupa de verdad toda la pantalla interior."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "it",
+   "verdict": "PASS",
+   "text": "Ottimizzata per iPhone Duo: riempie davvero tutto lo schermo interno."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "pt-BR",
+   "verdict": "PASS",
+   "text": "Otimizado para iPhone Duo: tela cheia de verdade em toda a tela interna."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "pt-PT",
+   "verdict": "PASS",
+   "text": "Otimizada para iPhone Duo: verdadeiro ecrã completo, em todo o ecrã interior."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "nl-NL",
+   "verdict": "PASS",
+   "text": "Geoptimaliseerd voor iPhone Duo: echt schermvullend op het hele binnenscherm."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "sv",
+   "verdict": "PASS",
+   "text": "Optimerad för iPhone Duo: äkta helskärm som fyller hela den inre skärmen."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "da",
+   "verdict": "PASS",
+   "text": "Optimeret til iPhone Duo: ægte fuld skærm, der fylder hele den indre skærm."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "no",
+   "verdict": "PASS",
+   "text": "Optimalisert for iPhone Duo: ekte fullskjerm som fyller hele den indre skjermen."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "fi",
+   "verdict": "PASS",
+   "text": "Optimoitu iPhone Duo -laitteelle: aito koko näytön tila, joka täyttää koko sisänäytön."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "pl",
+   "verdict": "PASS",
+   "text": "Zoptymalizowana dla urządzenia iPhone Duo: prawdziwy pełny ekran na całym wewnętrznym wyświetlaczu."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "cs",
+   "verdict": "PASS",
+   "text": "Optimalizováno s ohledem na iPhone Duo: skutečný celoobrazovkový režim na celém vnitřním displeji."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "sk",
+   "verdict": "PASS",
+   "text": "Optimalizované pre iPhone Duo: skutočný režim na celú obrazovku na celom vnútornom displeji."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "sl-SI",
+   "verdict": "PASS",
+   "text": "Optimizirano za iPhone Duo: pravi celozaslonski prikaz na celotnem notranjem zaslonu."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "hr",
+   "verdict": "PASS",
+   "text": "Optimizirano za iPhone Duo: pravi prikaz preko cijelog unutarnjeg zaslona."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "hu",
+   "verdict": "PASS",
+   "text": "Optimalizálva az iPhone Duo készülékhez: valódi teljes képernyő a teljes belső kijelzőn."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "ro",
+   "verdict": "PASS",
+   "text": "Optimizată pentru iPhone Duo: ecran complet adevărat pe tot ecranul interior."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "el",
+   "verdict": "PASS",
+   "text": "Βελτιστοποιημένη για iPhone Duo: πραγματική πλήρης οθόνη σε όλη την εσωτερική οθόνη."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "ru",
+   "verdict": "PASS",
+   "text": "Оптимизировано для iPhone Duo: настоящий полноэкранный режим на всём внутреннем экране."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "uk",
+   "verdict": "PASS",
+   "text": "Оптимізовано для iPhone Duo: справжній повноекранний режим на всьому внутрішньому екрані."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "tr",
+   "verdict": "PASS",
+   "text": "iPhone Duo için optimize edildi: iç ekranın tamamını dolduran gerçek tam ekran."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "ar-SA",
+   "verdict": "PASS",
+   "text": "محسَّن لجهاز iPhone Duo: ملء شاشة حقيقي يغطي الشاشة الداخلية بالكامل."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "he",
+   "verdict": "PASS",
+   "text": "מותאם למכשיר iPhone Duo: מסך מלא אמיתי שממלא את כל המסך הפנימי."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "ca",
+   "verdict": "PASS",
+   "text": "Optimitzada per a l’iPhone Duo: pantalla completa de debò a tota la pantalla interior."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "id",
+   "verdict": "PASS",
+   "text": "Dioptimalkan untuk iPhone Duo: layar penuh sungguhan di seluruh layar bagian dalam."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "ms",
+   "verdict": "PASS",
+   "text": "Dioptimumkan untuk iPhone Duo: skrin penuh sebenar merentasi seluruh skrin dalam."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "vi",
+   "verdict": "PASS",
+   "text": "Tối ưu cho iPhone Duo: toàn màn hình thật sự, lấp đầy cả màn hình trong."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "th",
+   "verdict": "PASS",
+   "text": "ปรับให้เหมาะกับ iPhone Duo: เต็มจอจริง ครอบคลุมหน้าจอด้านในทั้งหมด"
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "hi",
+   "verdict": "PASS",
+   "text": "iPhone Duo डिवाइस के लिए ऑप्टिमाइज़ किया गया: पूरी अंदरूनी स्क्रीन भरने वाला असली फ़ुल स्क्रीन।"
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "bn-BD",
+   "verdict": "PASS",
+   "text": "iPhone Duo ডিভাইসের জন্য অপ্টিমাইজ করা: ভেতরের পুরো স্ক্রিন জুড়ে আসল ফুল স্ক্রিন।"
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "gu-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ડિવાઇસ માટે ઑપ્ટિમાઇઝ કરેલ: આખી અંદરની સ્ક્રીન ભરતી સાચી ફુલ સ્ક્રીન."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "kn-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ಸಾಧನಕ್ಕಾಗಿ ಆಪ್ಟಿಮೈಸ್ ಮಾಡಲಾಗಿದೆ: ಒಳಗಿನ ಸಂಪೂರ್ಣ ಪರದೆಯನ್ನು ತುಂಬುವ ನಿಜವಾದ ಪೂರ್ಣ ಪರದೆ."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "ml-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ഉപകരണത്തിനായി ഒപ്റ്റിമൈസ് ചെയ്തത്: ഉള്ളിലെ സ്ക്രീൻ മുഴുവൻ നിറയുന്ന യഥാർത്ഥ ഫുൾ സ്ക്രീൻ."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "mr-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo डिव्हाइससाठी ऑप्टिमाइझ केलेले: संपूर्ण आतील स्क्रीन भरणारी खरी फुल स्क्रीन."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "or-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ଡିଭାଇସ୍ ପାଇଁ ଅପ୍ଟିମାଇଜ୍ କରାଯାଇଛି: ଭିତର ସମ୍ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ୍ ଭରୁଥିବା ପ୍ରକୃତ ଫୁଲ୍ ସ୍କ୍ରିନ୍।"
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "pa-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ਡਿਵਾਈਸ ਲਈ ਅਨੁਕੂਲਿਤ: ਪੂਰੀ ਅੰਦਰਲੀ ਸਕ੍ਰੀਨ ਭਰਨ ਵਾਲੀ ਅਸਲ ਫੁੱਲ ਸਕ੍ਰੀਨ।"
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "ta-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo சாதனத்திற்காக மேம்படுத்தப்பட்டது: உள் திரை முழுவதையும் நிரப்பும் உண்மையான முழுத்திரை."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "te-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo పరికరం కోసం ఆప్టిమైజ్ చేయబడింది: లోపలి స్క్రీన్ మొత్తాన్ని నింపే నిజమైన ఫుల్ స్క్రీన్."
+  },
+  {
+   "field": "promo_line_long",
+   "locale": "ur-PK",
+   "verdict": "PASS",
+   "text": "iPhone Duo ڈیوائس کے لیے آپٹمائزڈ: پوری اندرونی اسکرین بھرنے والی اصل فُل اسکرین۔"
+  },
+  {
+   "field": "description_block",
+   "locale": "en-US",
+   "verdict": "PASS",
+   "text": "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open."
+  },
+  {
+   "field": "description_block",
+   "locale": "en-CA",
+   "verdict": "PASS",
+   "text": "Optimized for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open."
+  },
+  {
+   "field": "description_block",
+   "locale": "en-GB",
+   "verdict": "PASS",
+   "text": "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open."
+  },
+  {
+   "field": "description_block",
+   "locale": "en-AU",
+   "verdict": "PASS",
+   "text": "Optimised for iPhone Duo. Built with the latest SDK, the app fills the entire inner display and automatically adjusts its layout whether the device is folded or open."
+  },
+  {
+   "field": "description_block",
+   "locale": "zh-Hant",
+   "verdict": "PASS",
+   "text": "已針對 iPhone Duo 最佳化。本 App 以最新開發套件建置，填滿整個內螢幕，無論摺起或打開都會自動調整版面。"
+  },
+  {
+   "field": "description_block",
+   "locale": "zh-Hans",
+   "verdict": "PASS",
+   "text": "已针对 iPhone Duo 优化。本应用使用最新开发工具包构建，铺满整块内屏，无论折叠还是展开都会自动调整布局。"
+  },
+  {
+   "field": "description_block",
+   "locale": "ja",
+   "verdict": "PASS",
+   "text": "iPhone Duoに最適化。最新の開発キットでビルドしており、内側のディスプレイ全体に表示され、折りたたんでも開いても自動でレイアウトが調整されます。"
+  },
+  {
+   "field": "description_block",
+   "locale": "ko",
+   "verdict": "PASS",
+   "text": "iPhone Duo에 최적화되었습니다. 최신 개발 도구로 빌드되어 안쪽 디스플레이 전체를 가득 채우며, 접거나 펼쳐도 레이아웃이 자동으로 조정됩니다."
+  },
+  {
+   "field": "description_block",
+   "locale": "de-DE",
+   "verdict": "PASS",
+   "text": "Optimiert für das iPhone Duo. Die mit dem neuesten SDK entwickelte App füllt das gesamte innere Display und passt das Layout automatisch an, egal ob zugeklappt oder aufgeklappt."
+  },
+  {
+   "field": "description_block",
+   "locale": "fr-FR",
+   "verdict": "PASS",
+   "text": "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert."
+  },
+  {
+   "field": "description_block",
+   "locale": "fr-CA",
+   "verdict": "PASS",
+   "text": "Optimisée pour l’iPhone Duo. Conçue avec le SDK le plus récent, l’app remplit tout l’écran intérieur et adapte automatiquement sa mise en page, appareil plié ou ouvert."
+  },
+  {
+   "field": "description_block",
+   "locale": "es-ES",
+   "verdict": "PASS",
+   "text": "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado."
+  },
+  {
+   "field": "description_block",
+   "locale": "es-MX",
+   "verdict": "PASS",
+   "text": "Optimizada para el iPhone Duo. Creada con el SDK más reciente, la app ocupa toda la pantalla interior y ajusta su diseño automáticamente, con el dispositivo plegado o desplegado."
+  },
+  {
+   "field": "description_block",
+   "locale": "it",
+   "verdict": "PASS",
+   "text": "Ottimizzata per iPhone Duo. Realizzata con l’SDK più recente, l’app riempie tutto lo schermo interno e adatta il layout automaticamente, sia da chiuso che da aperto."
+  },
+  {
+   "field": "description_block",
+   "locale": "pt-BR",
+   "verdict": "PASS",
+   "text": "Otimizado para iPhone Duo. Criado com o SDK mais recente, o app ocupa toda a tela interna e ajusta o layout automaticamente, com o aparelho dobrado ou aberto."
+  },
+  {
+   "field": "description_block",
+   "locale": "pt-PT",
+   "verdict": "PASS",
+   "text": "Otimizada para iPhone Duo. Criada com o SDK mais recente, a app ocupa todo o ecrã interior e ajusta a disposição automaticamente, com o dispositivo dobrado ou aberto."
+  },
+  {
+   "field": "description_block",
+   "locale": "nl-NL",
+   "verdict": "PASS",
+   "text": "Geoptimaliseerd voor iPhone Duo. De app is gebouwd met de nieuwste SDK, vult het hele binnenscherm en past de indeling automatisch aan, dichtgeklapt of opengeklapt."
+  },
+  {
+   "field": "description_block",
+   "locale": "sv",
+   "verdict": "PASS",
+   "text": "Optimerad för iPhone Duo. Appen är byggd med den senaste SDK:n, fyller hela den inre skärmen och anpassar layouten automatiskt, både hopfälld och utfälld."
+  },
+  {
+   "field": "description_block",
+   "locale": "da",
+   "verdict": "PASS",
+   "text": "Optimeret til iPhone Duo. Appen er bygget med den nyeste SDK, fylder hele den indre skærm og tilpasser layoutet automatisk, både foldet sammen og foldet ud."
+  },
+  {
+   "field": "description_block",
+   "locale": "no",
+   "verdict": "PASS",
+   "text": "Optimalisert for iPhone Duo. Appen er bygget med den nyeste SDK-en, fyller hele den indre skjermen og tilpasser oppsettet automatisk, både sammenbrettet og utbrettet."
+  },
+  {
+   "field": "description_block",
+   "locale": "fi",
+   "verdict": "PASS",
+   "text": "Optimoitu iPhone Duo -laitteelle. Uusimmalla SDK:lla rakennettu sovellus täyttää koko sisänäytön ja mukauttaa asettelunsa automaattisesti, oli laite suljettuna tai auki."
+  },
+  {
+   "field": "description_block",
+   "locale": "pl",
+   "verdict": "PASS",
+   "text": "Zoptymalizowana dla urządzenia iPhone Duo. Zbudowana przy użyciu najnowszego SDK aplikacja wypełnia cały wewnętrzny wyświetlacz i automatycznie dopasowuje układ, gdy urządzenie jest złożone lub rozłożone."
+  },
+  {
+   "field": "description_block",
+   "locale": "cs",
+   "verdict": "PASS",
+   "text": "Optimalizováno s ohledem na iPhone Duo. Aplikace je sestavena s nejnovějším SDK, vyplní celý vnitřní displej a automaticky upraví rozvržení, ať je zařízení složené, nebo rozložené."
+  },
+  {
+   "field": "description_block",
+   "locale": "sk",
+   "verdict": "PASS",
+   "text": "Optimalizované pre iPhone Duo. Aplikácia je zostavená s najnovším SDK, vyplní celý vnútorný displej a automaticky prispôsobí rozloženie, či je zariadenie zložené, alebo rozložené."
+  },
+  {
+   "field": "description_block",
+   "locale": "sl-SI",
+   "verdict": "PASS",
+   "text": "Optimizirano za iPhone Duo. Aplikacija je izdelana z najnovejšim SDK, zapolni celoten notranji zaslon in samodejno prilagodi postavitev, ne glede na to, ali je naprava zaprta ali odprta."
+  },
+  {
+   "field": "description_block",
+   "locale": "hr",
+   "verdict": "PASS",
+   "text": "Optimizirano za iPhone Duo. Aplikacija je izrađena s najnovijim SDK-om, ispunjava cijeli unutarnji zaslon i automatski prilagođava raspored, bilo da je uređaj sklopljen ili otvoren."
+  },
+  {
+   "field": "description_block",
+   "locale": "hu",
+   "verdict": "PASS",
+   "text": "Optimalizálva az iPhone Duo készülékhez. A legújabb SDK-val készült alkalmazás kitölti a teljes belső kijelzőt, és automatikusan igazítja az elrendezést, akár össze van hajtva a készülék, akár ki van nyitva."
+  },
+  {
+   "field": "description_block",
+   "locale": "ro",
+   "verdict": "PASS",
+   "text": "Optimizată pentru iPhone Duo. Creată cu cel mai recent SDK, aplicația umple tot ecranul interior și își ajustează automat aspectul, fie că dispozitivul e pliat, fie deschis."
+  },
+  {
+   "field": "description_block",
+   "locale": "el",
+   "verdict": "PASS",
+   "text": "Βελτιστοποιημένη για iPhone Duo. Δημιουργημένη με το πιο πρόσφατο SDK, η εφαρμογή γεμίζει όλη την εσωτερική οθόνη και προσαρμόζει αυτόματα τη διάταξη, είτε η συσκευή είναι κλειστή είτε ανοιχτή."
+  },
+  {
+   "field": "description_block",
+   "locale": "ru",
+   "verdict": "PASS",
+   "text": "Оптимизировано для iPhone Duo. Приложение создано на последней версии SDK, заполняет весь внутренний экран и само подстраивает интерфейс, когда устройство сложено или раскрыто."
+  },
+  {
+   "field": "description_block",
+   "locale": "uk",
+   "verdict": "PASS",
+   "text": "Оптимізовано для iPhone Duo. Застосунок створено з найновішим SDK, він заповнює весь внутрішній екран і сам підлаштовує макет, коли пристрій складено чи розкладено."
+  },
+  {
+   "field": "description_block",
+   "locale": "tr",
+   "verdict": "PASS",
+   "text": "iPhone Duo için optimize edildi. En yeni SDK ile geliştirilen uygulama tüm iç ekranı doldurur ve cihaz katlıyken de açıkken de düzenini otomatik olarak ayarlar."
+  },
+  {
+   "field": "description_block",
+   "locale": "ar-SA",
+   "verdict": "PASS",
+   "text": "محسَّن لجهاز iPhone Duo. بُني التطبيق بأحدث حزمة تطوير، فيملأ الشاشة الداخلية بالكامل ويضبط تخطيطه تلقائيًا سواء كان الجهاز مطويًا أو مفتوحًا."
+  },
+  {
+   "field": "description_block",
+   "locale": "he",
+   "verdict": "PASS",
+   "text": "מותאם למכשיר iPhone Duo. האפליקציה נבנתה עם ערכת הפיתוח העדכנית ביותר, ממלאת את כל המסך הפנימי ומתאימה את הפריסה אוטומטית, כשהמכשיר מקופל או פתוח."
+  },
+  {
+   "field": "description_block",
+   "locale": "ca",
+   "verdict": "PASS",
+   "text": "Optimitzada per a l’iPhone Duo. Creada amb l’SDK més recent, l’app ocupa tota la pantalla interior i n’ajusta el disseny automàticament, tant amb el dispositiu plegat com obert."
+  },
+  {
+   "field": "description_block",
+   "locale": "id",
+   "verdict": "PASS",
+   "text": "Dioptimalkan untuk iPhone Duo. Dibangun dengan SDK terbaru, aplikasi ini memenuhi seluruh layar bagian dalam dan menyesuaikan tata letaknya secara otomatis, baik saat perangkat dilipat maupun dibuka."
+  },
+  {
+   "field": "description_block",
+   "locale": "ms",
+   "verdict": "PASS",
+   "text": "Dioptimumkan untuk iPhone Duo. Dibina dengan SDK terkini, apl ini memenuhi seluruh skrin dalam dan melaraskan susun aturnya secara automatik, sama ada peranti dilipat atau dibuka."
+  },
+  {
+   "field": "description_block",
+   "locale": "vi",
+   "verdict": "PASS",
+   "text": "Tối ưu cho iPhone Duo. Ứng dụng được xây dựng bằng bộ công cụ phát triển mới nhất, lấp đầy toàn bộ màn hình trong và tự điều chỉnh bố cục khi máy gập hay mở."
+  },
+  {
+   "field": "description_block",
+   "locale": "th",
+   "verdict": "PASS",
+   "text": "ปรับให้เหมาะกับ iPhone Duo แอปนี้สร้างด้วยชุดพัฒนาซอฟต์แวร์รุ่นล่าสุด แสดงเต็มหน้าจอด้านในทั้งหมด และปรับเลย์เอาต์ให้อัตโนมัติทั้งตอนพับและตอนกาง"
+  },
+  {
+   "field": "description_block",
+   "locale": "hi",
+   "verdict": "PASS",
+   "text": "iPhone Duo डिवाइस के लिए ऑप्टिमाइज़ किया गया। नवीनतम SDK से बना यह ऐप पूरी अंदरूनी स्क्रीन भरता है और डिवाइस मुड़ा हो या खुला, लेआउट अपने आप ठीक कर लेता है।"
+  },
+  {
+   "field": "description_block",
+   "locale": "bn-BD",
+   "verdict": "PASS",
+   "text": "iPhone Duo ডিভাইসের জন্য অপ্টিমাইজ করা। সর্বশেষ SDK দিয়ে তৈরি এই অ্যাপ ভেতরের পুরো স্ক্রিন জুড়ে থাকে, আর ডিভাইস ভাঁজ করা বা খোলা যেভাবেই থাকুক, লেআউট নিজে থেকেই মানিয়ে নেয়।"
+  },
+  {
+   "field": "description_block",
+   "locale": "gu-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ડિવાઇસ માટે ઑપ્ટિમાઇઝ કરેલ. નવીનતમ SDKથી બનેલી આ ઍપ આખી અંદરની સ્ક્રીન ભરે છે અને ડિવાઇસ વાળેલું હોય કે ખુલ્લું, લેઆઉટ આપમેળે ગોઠવી લે છે."
+  },
+  {
+   "field": "description_block",
+   "locale": "kn-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ಸಾಧನಕ್ಕಾಗಿ ಆಪ್ಟಿಮೈಸ್ ಮಾಡಲಾಗಿದೆ. ಇತ್ತೀಚಿನ SDK ಬಳಸಿ ನಿರ್ಮಿಸಲಾದ ಈ ಆ್ಯಪ್ ಒಳಗಿನ ಸಂಪೂರ್ಣ ಪರದೆಯನ್ನು ತುಂಬುತ್ತದೆ ಮತ್ತು ಸಾಧನ ಮಡಚಿದ್ದರೂ ತೆರೆದಿದ್ದರೂ ಲೇಔಟ್ ಅನ್ನು ತಾನಾಗಿಯೇ ಹೊಂದಿಸುತ್ತದೆ."
+  },
+  {
+   "field": "description_block",
+   "locale": "ml-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ഉപകരണത്തിനായി ഒപ്റ്റിമൈസ് ചെയ്തത്. ഏറ്റവും പുതിയ SDK ഉപയോഗിച്ച് നിർമ്മിച്ച ഈ ആപ്പ് ഉള്ളിലെ സ്ക്രീൻ മുഴുവൻ നിറയ്ക്കുന്നു, ഉപകരണം മടക്കിയാലും തുറന്നാലും ലേഔട്ട് സ്വയം ക്രമീകരിക്കുന്നു."
+  },
+  {
+   "field": "description_block",
+   "locale": "mr-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo डिव्हाइससाठी ऑप्टिमाइझ केलेले. नवीनतम SDK वापरून बनवलेले हे ॲप संपूर्ण आतील स्क्रीन भरते आणि डिव्हाइस दुमडलेले असो वा उघडे, लेआउट आपोआप जुळवून घेते."
+  },
+  {
+   "field": "description_block",
+   "locale": "or-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ଡିଭାଇସ୍ ପାଇଁ ଅପ୍ଟିମାଇଜ୍ କରାଯାଇଛି। ନୂତନତମ SDK ରେ ତିଆରି ଏହି ଆପ୍ ଭିତର ସମ୍ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ୍ ଭରିଦିଏ ଏବଂ ଡିଭାଇସ୍ ଫୋଲ୍ଡ ହେଉ କି ଖୋଲା, ଲେଆଉଟ୍ ନିଜେ ଠିକ୍ କରିନିଏ।"
+  },
+  {
+   "field": "description_block",
+   "locale": "pa-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ਡਿਵਾਈਸ ਲਈ ਅਨੁਕੂਲਿਤ। ਨਵੀਨਤਮ SDK ਨਾਲ ਬਣੀ ਇਹ ਐਪ ਪੂਰੀ ਅੰਦਰਲੀ ਸਕ੍ਰੀਨ ਭਰਦੀ ਹੈ ਅਤੇ ਡਿਵਾਈਸ ਮੋੜਿਆ ਹੋਵੇ ਜਾਂ ਖੁੱਲ੍ਹਾ, ਲੇਆਊਟ ਆਪਣੇ ਆਪ ਠੀਕ ਕਰ ਲੈਂਦੀ ਹੈ।"
+  },
+  {
+   "field": "description_block",
+   "locale": "ta-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo சாதனத்திற்காக மேம்படுத்தப்பட்டது. சமீபத்திய SDK கொண்டு உருவாக்கப்பட்ட இந்த ஆப் உள் திரை முழுவதையும் நிரப்புகிறது; சாதனம் மடித்திருந்தாலும் திறந்திருந்தாலும் தளவமைப்பைத் தானாகச் சரிசெய்கிறது."
+  },
+  {
+   "field": "description_block",
+   "locale": "te-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo పరికరం కోసం ఆప్టిమైజ్ చేయబడింది. తాజా SDKతో రూపొందించిన ఈ యాప్ లోపలి స్క్రీన్ మొత్తాన్ని నింపుతుంది, పరికరం మడిచి ఉన్నా తెరిచి ఉన్నా లేఅవుట్‌ను ఆటోమేటిక్‌గా సర్దుబాటు చేస్తుంది."
+  },
+  {
+   "field": "description_block",
+   "locale": "ur-PK",
+   "verdict": "PASS",
+   "text": "iPhone Duo ڈیوائس کے لیے آپٹمائزڈ۔ جدید ترین SDK سے بنی یہ ایپ پوری اندرونی اسکرین بھر دیتی ہے، اور ڈیوائس فولڈ ہو یا کھلی، لے آؤٹ خود بخود ٹھیک کر لیتی ہے۔"
+  },
+  {
+   "field": "social_line",
+   "locale": "en-US",
+   "verdict": "PASS",
+   "text": "Got an iPhone Duo? The app now fills the whole inner screen, folded or open."
+  },
+  {
+   "field": "social_line",
+   "locale": "en-CA",
+   "verdict": "PASS",
+   "text": "Got an iPhone Duo? The app now fills the whole inner screen, folded or open."
+  },
+  {
+   "field": "social_line",
+   "locale": "en-GB",
+   "verdict": "PASS",
+   "text": "Got an iPhone Duo? The app now fills the whole inner screen, folded or open."
+  },
+  {
+   "field": "social_line",
+   "locale": "en-AU",
+   "verdict": "PASS",
+   "text": "Got an iPhone Duo? The app now fills the whole inner screen, folded or open."
+  },
+  {
+   "field": "social_line",
+   "locale": "zh-Hant",
+   "verdict": "PASS",
+   "text": "用 iPhone Duo 嗎？這款現在填滿整個內螢幕，摺起或打開版面都會自動調整。"
+  },
+  {
+   "field": "social_line",
+   "locale": "zh-Hans",
+   "verdict": "PASS",
+   "text": "在用 iPhone Duo 吗？这款现在铺满整块内屏，折叠或展开布局都会自动调整。"
+  },
+  {
+   "field": "social_line",
+   "locale": "ja",
+   "verdict": "PASS",
+   "text": "iPhone Duoをお使いの方へ。内側の画面いっぱいに表示され、閉じても開いてもレイアウトが自動で切り替わります。"
+  },
+  {
+   "field": "social_line",
+   "locale": "ko",
+   "verdict": "PASS",
+   "text": "iPhone Duo 쓰시나요? 이제 안쪽 화면을 꽉 채우고, 접든 펼치든 레이아웃이 알아서 맞춰져요."
+  },
+  {
+   "field": "social_line",
+   "locale": "de-DE",
+   "verdict": "PASS",
+   "text": "Du hast ein iPhone Duo? Die App füllt jetzt den ganzen Innenbildschirm."
+  },
+  {
+   "field": "social_line",
+   "locale": "fr-FR",
+   "verdict": "PASS",
+   "text": "Vous avez un iPhone Duo ? L’app remplit désormais tout l’écran intérieur."
+  },
+  {
+   "field": "social_line",
+   "locale": "fr-CA",
+   "verdict": "PASS",
+   "text": "Vous avez un iPhone Duo? L’app remplit maintenant tout l’écran intérieur."
+  },
+  {
+   "field": "social_line",
+   "locale": "es-ES",
+   "verdict": "PASS",
+   "text": "¿Tienes un iPhone Duo? Ahora la app ocupa toda la pantalla interior."
+  },
+  {
+   "field": "social_line",
+   "locale": "es-MX",
+   "verdict": "PASS",
+   "text": "¿Tienes un iPhone Duo? Ahora la app ocupa toda la pantalla interior."
+  },
+  {
+   "field": "social_line",
+   "locale": "it",
+   "verdict": "PASS",
+   "text": "Hai un iPhone Duo? Ora l’app riempie tutto lo schermo interno, chiuso o aperto."
+  },
+  {
+   "field": "social_line",
+   "locale": "pt-BR",
+   "verdict": "PASS",
+   "text": "Tem um iPhone Duo? Agora o app ocupa a tela interna inteira."
+  },
+  {
+   "field": "social_line",
+   "locale": "pt-PT",
+   "verdict": "PASS",
+   "text": "Tem um iPhone Duo? Agora a app ocupa todo o ecrã interior."
+  },
+  {
+   "field": "social_line",
+   "locale": "nl-NL",
+   "verdict": "PASS",
+   "text": "Heb je een iPhone Duo? De app vult nu het hele binnenscherm, dicht of open."
+  },
+  {
+   "field": "social_line",
+   "locale": "sv",
+   "verdict": "PASS",
+   "text": "Har du en iPhone Duo? Nu fyller appen hela innerskärmen, hopfälld eller utfälld."
+  },
+  {
+   "field": "social_line",
+   "locale": "da",
+   "verdict": "PASS",
+   "text": "Har du en iPhone Duo? Nu fylder appen hele den indre skærm."
+  },
+  {
+   "field": "social_line",
+   "locale": "no",
+   "verdict": "PASS",
+   "text": "Har du en iPhone Duo? Nå fyller appen hele den indre skjermen."
+  },
+  {
+   "field": "social_line",
+   "locale": "fi",
+   "verdict": "PASS",
+   "text": "Onko sinulla iPhone Duo? Sovellus täyttää nyt koko sisänäytön."
+  },
+  {
+   "field": "social_line",
+   "locale": "pl",
+   "verdict": "PASS",
+   "text": "Masz urządzenie iPhone Duo? Aplikacja wypełnia teraz cały wewnętrzny ekran."
+  },
+  {
+   "field": "social_line",
+   "locale": "cs",
+   "verdict": "PASS",
+   "text": "Máte iPhone Duo? Aplikace teď vyplní celý vnitřní displej."
+  },
+  {
+   "field": "social_line",
+   "locale": "sk",
+   "verdict": "PASS",
+   "text": "Máte iPhone Duo? Aplikácia teraz vyplní celý vnútorný displej."
+  },
+  {
+   "field": "social_line",
+   "locale": "sl-SI",
+   "verdict": "PASS",
+   "text": "Imate iPhone Duo? Aplikacija zdaj zapolni celoten notranji zaslon."
+  },
+  {
+   "field": "social_line",
+   "locale": "hr",
+   "verdict": "PASS",
+   "text": "Imate iPhone Duo? Aplikacija sada ispunjava cijeli unutarnji zaslon."
+  },
+  {
+   "field": "social_line",
+   "locale": "hu",
+   "verdict": "PASS",
+   "text": "iPhone Duo készüléked van? Az app most kitölti a teljes belső kijelzőt."
+  },
+  {
+   "field": "social_line",
+   "locale": "ro",
+   "verdict": "PASS",
+   "text": "Ai un iPhone Duo? Acum aplicația umple tot ecranul interior."
+  },
+  {
+   "field": "social_line",
+   "locale": "el",
+   "verdict": "PASS",
+   "text": "Έχεις iPhone Duo; Η εφαρμογή γεμίζει πλέον όλη την εσωτερική οθόνη."
+  },
+  {
+   "field": "social_line",
+   "locale": "ru",
+   "verdict": "PASS",
+   "text": "У вас iPhone Duo? Теперь приложение заполняет весь внутренний экран."
+  },
+  {
+   "field": "social_line",
+   "locale": "uk",
+   "verdict": "PASS",
+   "text": "Маєте iPhone Duo? Тепер застосунок заповнює весь внутрішній екран."
+  },
+  {
+   "field": "social_line",
+   "locale": "tr",
+   "verdict": "PASS",
+   "text": "iPhone Duo kullanıyor musun? Uygulama artık iç ekranın tamamını dolduruyor."
+  },
+  {
+   "field": "social_line",
+   "locale": "ar-SA",
+   "verdict": "PASS",
+   "text": "عندك iPhone Duo؟ التطبيق الآن يملأ الشاشة الداخلية كلها."
+  },
+  {
+   "field": "social_line",
+   "locale": "he",
+   "verdict": "PASS",
+   "text": "יש לכם iPhone Duo? האפליקציה ממלאת עכשיו את כל המסך הפנימי."
+  },
+  {
+   "field": "social_line",
+   "locale": "ca",
+   "verdict": "PASS",
+   "text": "Tens un iPhone Duo? Ara l’app ocupa tota la pantalla interior."
+  },
+  {
+   "field": "social_line",
+   "locale": "id",
+   "verdict": "PASS",
+   "text": "Pakai iPhone Duo? Sekarang aplikasi ini memenuhi seluruh layar bagian dalam."
+  },
+  {
+   "field": "social_line",
+   "locale": "ms",
+   "verdict": "PASS",
+   "text": "Guna iPhone Duo? Kini apl ini memenuhi seluruh skrin dalam."
+  },
+  {
+   "field": "social_line",
+   "locale": "vi",
+   "verdict": "PASS",
+   "text": "Bạn dùng iPhone Duo? Giờ ứng dụng đã lấp đầy toàn bộ màn hình trong."
+  },
+  {
+   "field": "social_line",
+   "locale": "th",
+   "verdict": "PASS",
+   "text": "ใช้ iPhone Duo อยู่ไหม ตอนนี้แอปแสดงเต็มหน้าจอด้านในแล้ว"
+  },
+  {
+   "field": "social_line",
+   "locale": "hi",
+   "verdict": "PASS",
+   "text": "iPhone Duo डिवाइस इस्तेमाल करते हैं? अब यह ऐप पूरी अंदरूनी स्क्रीन भरता है।"
+  },
+  {
+   "field": "social_line",
+   "locale": "bn-BD",
+   "verdict": "PASS",
+   "text": "iPhone Duo ডিভাইস ব্যবহার করেন? এখন এই অ্যাপ ভেতরের পুরো স্ক্রিন জুড়ে থাকে।"
+  },
+  {
+   "field": "social_line",
+   "locale": "gu-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ડિવાઇસ વાપરો છો? હવે આ ઍપ આખી અંદરની સ્ક્રીન ભરે છે."
+  },
+  {
+   "field": "social_line",
+   "locale": "kn-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ಸಾಧನ ಬಳಸುತ್ತೀರಾ? ಈಗ ಈ ಆ್ಯಪ್ ಒಳಗಿನ ಸಂಪೂರ್ಣ ಪರದೆಯನ್ನು ತುಂಬುತ್ತದೆ."
+  },
+  {
+   "field": "social_line",
+   "locale": "ml-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ഉപകരണം ഉപയോഗിക്കുന്നുണ്ടോ? ഇപ്പോൾ ഈ ആപ്പ് ഉള്ളിലെ സ്ക്രീൻ മുഴുവൻ നിറയ്ക്കും."
+  },
+  {
+   "field": "social_line",
+   "locale": "mr-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo डिव्हाइस वापरता? आता हे ॲप संपूर्ण आतील स्क्रीन भरते."
+  },
+  {
+   "field": "social_line",
+   "locale": "or-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ଡିଭାଇସ୍ ବ୍ୟବହାର କରନ୍ତି କି? ଏବେ ଏହି ଆପ୍ ଭିତର ସମ୍ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ୍ ଭରିଦିଏ।"
+  },
+  {
+   "field": "social_line",
+   "locale": "pa-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ਡਿਵਾਈਸ ਵਰਤਦੇ ਹੋ? ਹੁਣ ਇਹ ਐਪ ਪੂਰੀ ਅੰਦਰਲੀ ਸਕ੍ਰੀਨ ਭਰਦੀ ਹੈ।"
+  },
+  {
+   "field": "social_line",
+   "locale": "ta-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo சாதனம் பயன்படுத்துகிறீர்களா? இப்போது இந்த ஆப் உள் திரை முழுவதையும் நிரப்பும்."
+  },
+  {
+   "field": "social_line",
+   "locale": "te-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo పరికరం వాడుతున్నారా? ఇప్పుడు ఈ యాప్ లోపలి స్క్రీన్ మొత్తాన్ని నింపుతుంది."
+  },
+  {
+   "field": "social_line",
+   "locale": "ur-PK",
+   "verdict": "PASS",
+   "text": "iPhone Duo ڈیوائس استعمال کرتے ہیں؟ اب یہ ایپ پوری اندرونی اسکرین بھر دیتی ہے۔"
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "en-US",
+   "verdict": "PASS",
+   "text": "Thanks for using the app on iPhone Duo too. We've made it fill the entire inner display."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "en-CA",
+   "verdict": "PASS",
+   "text": "Thanks for using the app on iPhone Duo too. We've made it fill the entire inner display."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "en-GB",
+   "verdict": "PASS",
+   "text": "Thanks for using the app on iPhone Duo too. We've made it fill the entire inner display."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "en-AU",
+   "verdict": "PASS",
+   "text": "Thanks for using the app on iPhone Duo too. We've made it fill the entire inner display."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "zh-Hant",
+   "verdict": "PASS",
+   "text": "也謝謝您在 iPhone Duo 上使用，我們已讓它填滿整個內螢幕。"
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "zh-Hans",
+   "verdict": "PASS",
+   "text": "也感谢您在 iPhone Duo 上使用，我们已让它铺满整块内屏。"
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "ja",
+   "verdict": "PASS",
+   "text": "iPhone Duoでもご利用いただきありがとうございます。内側のディスプレイ全体に表示されるよう対応しました。"
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "ko",
+   "verdict": "PASS",
+   "text": "iPhone Duo에서도 사용해 주셔서 감사합니다. 안쪽 디스플레이 전체를 채우도록 만들었습니다."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "de-DE",
+   "verdict": "PASS",
+   "text": "Danke, dass Sie die App auch auf dem iPhone Duo nutzen. Sie füllt jetzt das gesamte innere Display."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "fr-FR",
+   "verdict": "PASS",
+   "text": "Merci d’utiliser aussi l’app sur votre iPhone Duo : elle remplit désormais tout l’écran intérieur."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "fr-CA",
+   "verdict": "PASS",
+   "text": "Merci d’utiliser aussi l’app sur votre iPhone Duo : elle remplit désormais tout l’écran intérieur."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "es-ES",
+   "verdict": "PASS",
+   "text": "Gracias por usarla también en tu iPhone Duo: ahora ocupa toda la pantalla interior."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "es-MX",
+   "verdict": "PASS",
+   "text": "Gracias por usarla también en tu iPhone Duo: ahora ocupa toda la pantalla interior."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "it",
+   "verdict": "PASS",
+   "text": "Grazie per usarla anche su iPhone Duo: ora riempie tutto lo schermo interno."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "pt-BR",
+   "verdict": "PASS",
+   "text": "Obrigado por usar o app também no iPhone Duo: agora ele ocupa toda a tela interna."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "pt-PT",
+   "verdict": "PASS",
+   "text": "Obrigado por usar a app também no iPhone Duo: agora ocupa todo o ecrã interior."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "nl-NL",
+   "verdict": "PASS",
+   "text": "Bedankt dat je de app ook op je iPhone Duo gebruikt: hij vult nu het hele binnenscherm."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "sv",
+   "verdict": "PASS",
+   "text": "Tack för att du använder appen på din iPhone Duo också. Nu fyller den hela den inre skärmen."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "da",
+   "verdict": "PASS",
+   "text": "Tak, fordi du også bruger appen på din iPhone Duo. Nu fylder den hele den indre skærm."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "no",
+   "verdict": "PASS",
+   "text": "Takk for at du også bruker appen på iPhone Duo. Nå fyller den hele den indre skjermen."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "fi",
+   "verdict": "PASS",
+   "text": "Kiitos, että käytät sovellusta myös iPhone Duo -laitteella. Se täyttää nyt koko sisänäytön."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "pl",
+   "verdict": "PASS",
+   "text": "Dziękujemy, że korzystasz z aplikacji także na urządzeniu iPhone Duo. Teraz wypełnia cały wewnętrzny ekran."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "cs",
+   "verdict": "PASS",
+   "text": "Děkujeme, že aplikaci používáte i na zařízení iPhone Duo. Nyní vyplní celý vnitřní displej."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "sk",
+   "verdict": "PASS",
+   "text": "Ďakujeme, že aplikáciu používate aj na zariadení iPhone Duo. Teraz vyplní celý vnútorný displej."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "sl-SI",
+   "verdict": "PASS",
+   "text": "Hvala, ker aplikacijo uporabljate tudi na napravi iPhone Duo. Zdaj zapolni celoten notranji zaslon."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "hr",
+   "verdict": "PASS",
+   "text": "Hvala što aplikaciju koristite i na uređaju iPhone Duo. Sada ispunjava cijeli unutarnji zaslon."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "hu",
+   "verdict": "PASS",
+   "text": "Köszönjük, hogy az iPhone Duo készüléken is használja az alkalmazást. Most már kitölti a teljes belső kijelzőt."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "ro",
+   "verdict": "PASS",
+   "text": "Vă mulțumim că folosiți aplicația și pe iPhone Duo. Acum umple tot ecranul interior."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "el",
+   "verdict": "PASS",
+   "text": "Ευχαριστούμε που χρησιμοποιείτε την εφαρμογή και σε iPhone Duo. Πλέον γεμίζει όλη την εσωτερική οθόνη."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "ru",
+   "verdict": "PASS",
+   "text": "Спасибо, что пользуетесь приложением и на iPhone Duo. Теперь оно заполняет весь внутренний экран."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "uk",
+   "verdict": "PASS",
+   "text": "Дякуємо, що користуєтеся застосунком і на iPhone Duo. Тепер він заповнює весь внутрішній екран."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "tr",
+   "verdict": "PASS",
+   "text": "Uygulamayı iPhone Duo cihazınızda da kullandığınız için teşekkürler. Artık tüm iç ekranı dolduruyor."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "ar-SA",
+   "verdict": "PASS",
+   "text": "شكرًا لاستخدامك التطبيق على جهاز iPhone Duo أيضًا، فقد جعلناه يملأ الشاشة الداخلية بالكامل."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "he",
+   "verdict": "PASS",
+   "text": "תודה שאתם משתמשים באפליקציה גם במכשיר iPhone Duo. היא ממלאת עכשיו את כל המסך הפנימי."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "ca",
+   "verdict": "PASS",
+   "text": "Gràcies per fer-la servir també a l’iPhone Duo: ara ocupa tota la pantalla interior."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "id",
+   "verdict": "PASS",
+   "text": "Terima kasih sudah memakai aplikasi ini juga di iPhone Duo. Kini aplikasi memenuhi seluruh layar bagian dalam."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "ms",
+   "verdict": "PASS",
+   "text": "Terima kasih kerana menggunakan apl ini di iPhone Duo juga. Kini ia memenuhi seluruh skrin dalam."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "vi",
+   "verdict": "PASS",
+   "text": "Cảm ơn bạn đã dùng ứng dụng trên iPhone Duo. Chúng tôi đã cho ứng dụng lấp đầy toàn bộ màn hình trong."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "th",
+   "verdict": "PASS",
+   "text": "ขอบคุณที่ใช้แอปบน iPhone Duo ด้วย ตอนนี้เราปรับให้แอปแสดงเต็มหน้าจอด้านในทั้งหมดแล้ว"
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "hi",
+   "verdict": "PASS",
+   "text": "iPhone Duo डिवाइस पर भी ऐप इस्तेमाल करने के लिए धन्यवाद। अब यह पूरी अंदरूनी स्क्रीन भरता है।"
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "bn-BD",
+   "verdict": "PASS",
+   "text": "iPhone Duo ডিভাইসেও অ্যাপটি ব্যবহারের জন্য ধন্যবাদ। এখন এটি ভেতরের পুরো স্ক্রিন জুড়ে থাকে।"
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "gu-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ડિવાઇસ પર પણ ઍપ વાપરવા બદલ આભાર. હવે તે આખી અંદરની સ્ક્રીન ભરે છે."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "kn-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ಸಾಧನದಲ್ಲೂ ಆ್ಯಪ್ ಬಳಸುತ್ತಿರುವುದಕ್ಕೆ ಧನ್ಯವಾದಗಳು. ಈಗ ಇದು ಒಳಗಿನ ಸಂಪೂರ್ಣ ಪರದೆಯನ್ನು ತುಂಬುತ್ತದೆ."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "ml-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ഉപകരണത്തിലും ആപ്പ് ഉപയോഗിക്കുന്നതിന് നന്ദി. ഇപ്പോൾ ഇത് ഉള്ളിലെ സ്ക്രീൻ മുഴുവൻ നിറയ്ക്കുന്നു."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "mr-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo डिव्हाइसवरही ॲप वापरल्याबद्दल धन्यवाद. आता ते संपूर्ण आतील स्क्रीन भरते."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "or-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ଡିଭାଇସ୍‌ରେ ମଧ୍ୟ ଆପ୍ ବ୍ୟବହାର କରିଥିବାରୁ ଧନ୍ୟବାଦ। ଏବେ ଏହା ଭିତର ସମ୍ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ୍ ଭରିଦିଏ।"
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "pa-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo ਡਿਵਾਈਸ 'ਤੇ ਵੀ ਐਪ ਵਰਤਣ ਲਈ ਧੰਨਵਾਦ। ਹੁਣ ਇਹ ਪੂਰੀ ਅੰਦਰਲੀ ਸਕ੍ਰੀਨ ਭਰਦੀ ਹੈ।"
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "ta-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo சாதனத்திலும் ஆப்பைப் பயன்படுத்துவதற்கு நன்றி. இப்போது இது உள் திரை முழுவதையும் நிரப்புகிறது."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "te-IN",
+   "verdict": "PASS",
+   "text": "iPhone Duo పరికరంలో కూడా యాప్ వాడుతున్నందుకు ధన్యవాదాలు. ఇప్పుడు ఇది లోపలి స్క్రీన్ మొత్తాన్ని నింపుతుంది."
+  },
+  {
+   "field": "review_reply_line",
+   "locale": "ur-PK",
+   "verdict": "PASS",
+   "text": "iPhone Duo ڈیوائس پر بھی ایپ استعمال کرنے کا شکریہ۔ اب یہ پوری اندرونی اسکرین بھر دیتی ہے۔"
+  }
+ ]
+}

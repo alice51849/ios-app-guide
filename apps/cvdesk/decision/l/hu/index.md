@@ -1,0 +1,26 @@
+---
+title: "legjobb önéletrajz készítő alkalmazás karrierváltóknak 2026"
+lang: "hu"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/cvdesk/decision/l/hu/index.html"
+modified: "2026-10-21"
+app_store_id: "6781337213"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# legjobb önéletrajz készítő alkalmazás karrierváltóknak 2026
+
+Amikor területet váltasz, az önéletrajz problémája más: a tapasztalat valós, de papíron 'nem kapcsolódó', és az ATS szűrők elutasítanak, mielőtt egy ember elolvasná. Pontosan ezt a hiányt szeretné betölteni a CV Desk.
+
+- Produktivitás
+- Ingyenes kezdés
+- Nincs fiók
+- Nincs reklám
+- App Store · Ingyenes
+
+[Szerezd be a CV Desk-et az App Store-ból →](https://apps.apple.com/hu/app/id6781337213?pt=118326163&ct=geo_pick&mt=8)
+
+[Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/answers/best-resume-builder-app-for-career-changers-2026.html)
+
+> Az útmutatót az alkalmazás fejlesztője, a Lumi Studio írta. Az alkalmazásnevek tulajdonosaik védjegyei, és kizárólag azonosítás céljából szerepelnek. Dokumentumokkal, egészséggel, iskolával és munkaszervezéssel kapcsolatos döntéseknél ellenőrizd a hivatalos követelményeket ott, ahol ez lényeges.

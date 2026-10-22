@@ -1,0 +1,26 @@
+---
+title: "ಒಂದು ಬರುವ ಪ್ರಯಾಣಕ್ಕಾಗಿ ಅತ್ಯುತ್ತಮ ಸರಳ ಪ್ರಯಾಣ ಯೋಜಕ ಆಪ್ iPhone ಗೆ"
+lang: "kn-IN"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/tripbeelite/decision/l/kn-IN/index.html"
+modified: "2026-10-21"
+app_store_id: "6791299610"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# ಒಂದು ಬರುವ ಪ್ರಯಾಣಕ್ಕಾಗಿ ಅತ್ಯುತ್ತಮ ಸರಳ ಪ್ರಯಾಣ ಯೋಜಕ ಆಪ್ iPhone ಗೆ
+
+ನೀವು ಒಂದು ಬರುವ ಪ್ರಯಾಣವನ್ನು ಯೋಜಿಸುತ್ತಿದ್ದರೆ, ಆ ಪ್ರಯಾಣದ ಶಾಂತ ಟೈಮ್‌ಲೈನ್ ಪ್ರತಿಯೊಂದು ಪ್ರಯಾಣದ ಗದ್ದಲದ ಸಂಗ್ರಹಕ್ಕಿಂತ ಹೆಚ್ಚು ಉಪಯುಕ್ತವಾಗಿದೆ. ಪರಿಚಿತ ಎನಿಸಿದರೆ TripBee Lite ಒಮ್ಮೆ ನೋಡಿ.
+
+- ಪ್ರಯಾಣ
+- ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಖಾತೆ ಇಲ್ಲ
+- ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- App Store · ಉಚಿತ
+
+[App Store ನಲ್ಲಿ ಟ್ರಿಪ್‌ಬೀ ಲೈಟ್ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8)
+
+[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-simple-trip-planner-app-for-one-upcoming-trip-iphone.html)
+
+> ಆ್ಯಪ್ ಡೆವಲಪರ್ Lumi Studio ಬರೆದ ಮಾರ್ಗದರ್ಶಿ. ಆ್ಯಪ್‌ಗಳ ಹೆಸರುಗಳು ಅವುಗಳ ಮಾಲೀಕರ ವ್ಯಾಪಾರ ಚಿಹ್ನೆಗಳು; ಗುರುತಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗಿದೆ. ದಾಖಲೆ, ಆರೋಗ್ಯ, ಶಾಲೆ ಮತ್ತು ಉತ್ಪಾದಕತೆಗೆ ಸಂಬಂಧಿಸಿದ ನಿರ್ಧಾರಗಳಲ್ಲಿ ಅಗತ್ಯವಿರುವ ಕಡೆ ಅಧಿಕೃತ ನಿಯಮಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.

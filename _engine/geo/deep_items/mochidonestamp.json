@@ -1,0 +1,35 @@
+[
+ {
+  "app_key": "mochidonestamp",
+  "kind": "scenario",
+  "query": "How to remember when you last changed the air filter or water filter",
+  "match": [
+   "last changed the air filter",
+   "last changed the water filter",
+   "filter replacement reminder"
+  ],
+  "lead": "The simplest way to remember when you last changed a filter is to log the change the moment you make it and let the next reminder count from that real date.",
+  "detail": "{name} is a life-event memory rather than another to-do list: change the filter, tap once, and the exact time is saved to that event's history. Add an approximate or exact rhythm when it helps, and the next due time restarts from when you actually finished, not from a fixed calendar day. Local reminders come with Done and Snooze actions, and interactive Home and Lock Screen widgets keep the event in view. You can backdate a change you forgot to log, keep a note or photo of the filter size, and export a complete backup as JSON. It has no account, no ads and no tracking; start free with one active event and unlimited history, or unlock Lifetime Pro once for unlimited events, with no subscription.",
+  "bullets": [
+   "Log the change right away, with Undo if you tap by mistake",
+   "Use a rhythm that restarts from the real change date, not a fixed calendar day",
+   "Backdate the last change if you only remember it afterwards",
+   "Keep the filter size or model in a note or photo for the next purchase",
+   "Follow the manufacturer's recommended interval for your filter; it varies by filter type and home"
+  ],
+  "faq": [
+   {
+    "q": "How often should a filter be changed?",
+    "a": "It depends on the filter and your home, so follow the manufacturer's guidance. {name} does not decide the interval for you: you set the rhythm, and it reminds you from the date you actually changed the filter."
+   },
+   {
+    "q": "Can I track more than one filter?",
+    "a": "The free version keeps one active event with unlimited history. Lifetime Pro, a one-time purchase, unlocks unlimited events, for example the air filter, the fridge water filter and the range hood."
+   },
+   {
+    "q": "Does my data leave my iPhone?",
+    "a": "There is no account, no ads, no analytics and no tracking, and your core data stays on your device."
+   }
+  ]
+ }
+]

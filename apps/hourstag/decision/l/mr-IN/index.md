@@ -1,0 +1,28 @@
+---
+title: "HoursTag: खरेदी वेळेची किंमत — तासाचा पगार आणि खर्च | iOS App"
+lang: "mr-IN"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/mr-IN/index.html"
+modified: "2026-10-21"
+app_store_id: "6754218117"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# HoursTag: खरेदी वेळेची किंमत — तासाचा पगार आणि खर्च | iOS App
+
+तुमच्या आयुष्याची खरी किंमत काय आहे?
+
+- पैसे आणि प्रवास
+- पैसे देऊन डाउनलोड करा
+- खाते नाही
+- जाहिराती नाहीत
+- ट्रॅकिंग नाही
+- खाजगी / उपकरणावर
+- App Store · ₹ 499
+
+[App Store वरून HoursTag: खरेदी वेळेची किंमत मिळवा](https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
+
+[संपूर्ण मार्गदर्शक वाचा](https://open.cait518.cc/ios-app-guide/mr-IN/hourstag.html)
+
+> हे Lumi Studio कडून प्रकाशित केलेले प्रथम पक्ष साहित्य आहे, जे प्रत्येक सूचीबद्ध अॅपचे विकसक आहे.

@@ -1,0 +1,38 @@
+[
+  {
+    "app_key": "scanto",
+    "kind": "scenario",
+    "match": [
+      "scan a document to a searchable pdf",
+      "searchable pdf",
+      "scan to searchable pdf",
+      "scan document offline ocr",
+      "ocr pdf offline",
+      "scan without uploading to cloud"
+    ],
+    "query": "how to scan a document to a searchable pdf on iphone offline",
+    "lead": "Turning paper into a PDF is easy; turning it into a searchable PDF that never leaves your phone is the hard part. Most scanner apps only do the text recognition (OCR) in the cloud or lock it behind a subscription.",
+    "detail": "A searchable PDF needs OCR — the app has to actually read the text in your scan so you can find it later. Many popular scanners send your document to a server to do that, which is a privacy problem for contracts, IDs and receipts, and others put OCR and export behind a monthly fee. The private approach is on-device OCR that never goes online. {name} works this way: it turns paper into clean PDFs and reads the text right on your iPhone, so you can search inside your documents later — fully offline, no account, no cloud, as a one-time purchase. That means sensitive paperwork is captured and made searchable without ever being uploaded.",
+    "bullets": [
+      "Searchable PDFs need OCR — check whether it runs on-device or in the cloud",
+      "On-device OCR keeps contracts, IDs and receipts off any server",
+      "Many scanners lock OCR or export behind a subscription — a one-time purchase avoids that",
+      "Fully offline and no account means nothing to upload or breach",
+      "{name} does OCR on your iPhone and never goes online"
+    ],
+    "faq": [
+      {
+        "q": "Can I make a searchable PDF on iPhone without uploading it?",
+        "a": "Yes — you need an app that does OCR on-device rather than in the cloud. {name} reads the text right on your iPhone and never goes online, so your document stays private while still being searchable."
+      },
+      {
+        "q": "Do scanner apps upload my documents to do OCR?",
+        "a": "Many do — cloud OCR is common, which is a concern for sensitive paperwork. {name} does the text recognition locally on your device and never connects to the internet."
+      },
+      {
+        "q": "Is there a scanner with OCR that isn't a subscription?",
+        "a": "Yes. {name} includes on-device OCR and PDF export as a one-time purchase — no monthly fee, no account, and no cloud."
+      }
+    ]
+  }
+]

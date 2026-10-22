@@ -1,0 +1,245 @@
+# Каталог приложений — iOS App Guide
+
+> Структурированная информация о каждом приложении iOS — функции, цена и FAQ.
+
+locale: ru
+apps: 54
+- Каталог приложений: https://open.cait518.cc/ios-app-guide/ru/tools/private-pay-once-iphone-app-finder.html
+- Каталог приложений · PWA: https://open.cait518.cc/ios-app-guide/ru/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ru.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ru.json
+- Каталог приложений · SVG: https://open.cait518.cc/ios-app-guide/ru/visuals/
+- Каталог приложений · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Каталог приложений · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Каталог приложений · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Каталог приложений · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Каталог приложений · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- Каталог приложений · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- Каталог приложений · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Каталог приложений · Agent Skill · ru: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/ru.json
+- Каталог приложений · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Каталог приложений · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Каталог приложений · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Каталог приложений · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Каталог приложений · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Каталог приложений · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Каталог приложений · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Каталог приложений · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Каталог приложений · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Заметки](https://open.cait518.cc/ios-app-guide/ru/notesstudio100.html) — Электронная тетрадь, конспекты
+  - Сессия близко? Пишите от руки, размечайте PDF, прикрепляйте аудиозапись к странице и повторяйте по карточкам с расписанием FSRS. Учётная запись не нужна.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: Файлы в промпт ИИ](https://open.cait518.cc/ios-app-guide/ru/aibriefpack.html) — Промпты из файлов и PDF
+  - Годовые отчёты и планы на новогодние праздники? Добавьте скриншоты, PDF, заметки и ссылки: чтение на устройстве, личные данные отмечены, ясная сводка для ИИ.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: тренер английского](https://open.cait518.cc/ios-app-guide/ru/aim990.html) — Диагностика TOEIC за 8 минут
+  - Хватит повторять то, что уже знаете. Диагностика за 8 минут находит 3 самых слабых навыка, тренирует их ежедневно и замеряет снова на 30-й день. Офлайн, без регистрации.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: Состояние батареи](https://open.cait518.cc/ios-app-guide/ru/battai.html) — Понятные правила, источники и ограничения
+  - Продаёте телефон перед праздниками? Создайте понятный отчёт об аккумуляторе для продажи или сервиса, сохраните его в PNG и следите за ёмкостью и временем до 80%.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily: калькулятор и темы](https://open.cait518.cc/ios-app-guide/ru/caldaily.html) — Виджет, научный режим, история
+  - Посчитали и забыли, что это было за число? CalDaily сохраняет каждый результат с названием и поиском. Чаевые и деление счёта, налог, кредит, единицы и даты в виджете.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/ru/countdaysnow.html) — Фокус дня · Личный выбор
+  - Фокус дня: лично выберите Прошло, Сегодня или Впереди и сверьте три последних решения с важными датами.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: резюме для ATS](https://open.cait518.cc/ios-app-guide/ru/cvdesk.html) — Создать резюме: шаблоны и PDF
+  - Мгновенная оценка ATS, понятные исправления и взгляд рекрутера за первые 6 секунд. Предпросмотр готового PDF в любой момент. Без регистрации.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: календарь цикла](https://open.cait518.cc/ios-app-guide/ru/cyca.html) — Месячные и овуляция, приватно
+  - Предновогодняя суета, корпоративы и поездки? Отмечайте месячные, симптомы, настроение и заметки за секунды. Всё хранится на устройстве, без аккаунта, офлайн.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: Живые фразы](https://open.cait518.cc/ios-app-guide/ru/dailymatelite.html) — Разговорник туриста: 50 языков
+  - Понимайте, что вам говорят в аэропорту, отеле или ресторане, и учите естественный ответ. Основы для путешествий на всех 50 языках, даже офлайн.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: Фразы для жизни](https://open.cait518.cc/ios-app-guide/ru/dailymate.html) — Живой разговорный английский
+  - Слова знаете, а в разговоре зависаете? Целые фразы с естественными ответами: 8 400 фраз, 47 языков, 84 ситуации. Виджет и Apple Watch. Офлайн. Без подписки.
+  - Цена: Платная загрузка по единой цене, без подписки.
+  - App Store: https://apps.apple.com/ru/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: Шумомер](https://open.cait518.cc/ios-app-guide/ru/dbhalo.html) — Доза и безопасное время
+  - Зимние вечеринки, шумные соседи или храп зимними ночами? Смотрите дБ в реальном времени на кольце Halo, оценивайте дневную шумовую дозу и записывайте храп.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Умный будильник и часы](https://open.cait518.cc/ios-app-guide/ru/easyam.html) — Звонит в будни, не в праздники
+  - Новогодние каникулы? Добавьте их как выходные: будильник промолчит, а в первый рабочий день снова зазвонит. Следующие 7 дней видно сразу, без ручного выключения.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: Траты в поездке](https://open.cait518.cc/ios-app-guide/ru/gmoneylite.html) — Бюджет на день: часы и виджет
+  - Новогодние каникулы за границей? Записывайте покупки в местной валюте и сразу смотрите сумму в своей, задайте дневной лимит. Живые или ручные курсы работают и офлайн.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: Расходы и бюджет](https://open.cait518.cc/ios-app-guide/ru/gmoney.html) — Расходы и деньги в путешествии
+  - Новогодние каникулы и поездки? Записывайте расходы по категориям и поездкам, задайте дневной бюджет и пересчитывайте валюту по онлайн- или ручному курсу офлайн.
+  - Цена: Платная загрузка по единой цене, без подписки.
+  - App Store: https://apps.apple.com/ru/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: Цена в часах](https://open.cait518.cc/ios-app-guide/ru/hourstaglite.html) — Осознанные покупки: цена
+  - Покупки в конце года: перед покупкой посмотрите цену в часах своей работы, отметьте её как «нужно», «хочется» или «импульс» и увидьте работу за целью на новый год.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: Часы для покупки](https://open.cait518.cc/ios-app-guide/ru/hourstag.html) — Почасовая ставка и траты
+  - Новогодние подарки и покупки к праздникам? Перед покупкой смотрите цену в рабочих часах, помечайте Нужно, Хочу или Импульс и планируйте список желаний в часах.
+  - Цена: Платная загрузка по единой цене, без подписки.
+  - App Store: https://apps.apple.com/ru/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/ru/ledmovingtext.html) — Бегущая строка на экране
+  - Превратите экран в яркую бегущую строку за секунды или соберите цепочку сообщений и переключайте их касанием или по таймеру. Полный экран, без интернета.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: Лимит приложений](https://open.cait518.cc/ios-app-guide/ru/lockhour.html) — Экранное время и блокировка
+  - Заблокируйте приложения и сайты, которые крадут время, пока не истечёт таймер. Режимы фокуса, учёбы и сна, жёсткий режим, статистика и серии. Без регистрации.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/ru/lumibopomofopro.html) — Тоны китайского и прописи
+  - Все 37 звуков чжуинь сразу: горки тонов, поезд слогов, рыбалка, обводка и звёздная гонка. Родители видят прогресс и список на повторение и печатают прописи. Без рекламы.
+  - Цена: Платная загрузка по единой цене, без подписки.
+  - App Store: https://apps.apple.com/ru/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Pro: ABC Phonics](https://open.cait518.cc/ios-app-guide/ru/lumiletterspro.html) — Английский для детей: звуки
+  - Ребёнок слышит слово, находит первый, средний или последний звук и обводит букву. 26 букв, 14 планет и задания для печати. Без рекламы, работает без интернета.
+  - Цена: Платная загрузка по единой цене, без подписки.
+  - App Store: https://apps.apple.com/ru/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Planet: Explorer](https://open.cait518.cc/ios-app-guide/ru/lumimath.html) — Математические игры для детей
+  - Верный ответ — и планета загорается. 46 типов заданий с картинками: счёт, сложение, вычитание, таблица умножения, часы, деньги. Без рекламы и подписки.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Pro: Цифры детям](https://open.cait518.cc/ios-app-guide/ru/lumimathpro.html) — Логика и текстовые задачи
+  - Задачи на логику и смекалку, закономерности и текстовые задачи в 46 видах заданий. Тренировка слабых мест, отчёт о прогрессе, листы для печати. Без рекламы и покупок.
+  - Цена: Платная загрузка по единой цене, без подписки.
+  - App Store: https://apps.apple.com/ru/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Азбука Lite](https://open.cait518.cc/ios-app-guide/ru/lumiletters.html) — Английский алфавит и прописи
+  - Попробуйте букву A и первую планету: ребёнок слышит звук, обводит букву пальцем и проходит викторины на планетах. Позже можно открыть все 26 букв. Без рекламы, офлайн.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Бопомофо](https://open.cait518.cc/ios-app-guide/ru/lumibopomofo.html) — Чжуинь: китайский детям
+  - Корми друзей-символов по звуку, обводи черты по порядку, катайся на горках тонов и соединяй звуки в поезде. Работает без интернета.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Планета Миссий](https://open.cait518.cc/ios-app-guide/ru/lumimission.html) — Таблица поощрений и наклейки
+  - Меньше уговоров, больше побед: каждая выполненная миссия приносит звёзды, кормит Lumi и пополняет альбом из 100 наклеек. Свои задания тоже можно. Без рекламы.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Планета Миссий Pro](https://open.cait518.cc/ios-app-guide/ru/lumimissionpro.html) — Режим дня: утро и вечер
+  - Все режимные моменты в комплекте: еда, чистка зубов, сон, уборка и сборы в школу, свои задания, обзор за 7 дней и вечернее напоминание. Без рекламы, работает офлайн.
+  - Цена: Платная загрузка по единой цене, без подписки.
+  - App Store: https://apps.apple.com/ru/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Погода: прогноз и одежда](https://open.cait518.cc/ios-app-guide/ru/lumiweather.html) — Выходить ли? Дождь, УФ, ветер
+  - Стоит ли сегодня выходить? Lumi даст индекс от 0 до 100, подскажет, что надеть и когда выйти, на iPhone, в виджете и на Apple Watch.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: Удалите данные](https://open.cait518.cc/ios-app-guide/ru/maskmyfile.html) — Скройте данные перед отправкой
+  - Копия паспорта для зимней поездки или расчётные листки к концу года? Найдите личные данные, навсегда закрасьте только выбранное и удалите метаданные. Всё на устройстве.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: Когда было](https://open.cait518.cc/ios-app-guide/ru/mochidonestamp.html) — Уход за домом и напоминания
+  - Больше не нужно гадать, когда вы делали это в последний раз. Отметьте штампом, Mochi запомнит и напомнит, когда снова пора. Бельё, фильтры, цветы, звонки, с семьёй.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: Милый список дел](https://open.cait518.cc/ios-app-guide/ru/mochi.html) — Чек-лист, задачи и виджет
+  - От Хэллоуина до Нового года: учёба, дела и покупки в одном милом списке. Нажми на маленький кружок, когда готово, выбери тему и добавь виджеты на экран «Домой».
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag: Доходы и расходы](https://open.cait518.cc/ios-app-guide/ru/moneytag.html) — Проекты · Метки · Отчёт
+  - Подработка или ярмарка в конце года? Ваш проект показывает доходы минус расходы как чистый итог, в выбранной вами валюте. Записи прямо с Apple Watch, итог в виджете.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: ИИ-слайды](https://open.cait518.cc/ios-app-guide/ru/onepageppt.html) — Презентация из заметок и PDF
+  - Годовой отчёт на носу? Вставьте заметки, PDF или таблицу и получите понятный слайд 16:9: главное в заголовках, цифры в диаграммах. Экспорт в .pptx, PDF или PNG.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: Ретро фильтры](https://open.cait518.cc/ios-app-guide/ru/photocream.html) — Пленочная камера, винтаж фото
+  - Фото со смартфона слишком «цифровые»? Больше 100 плёночных стилей с живым превью: зерно, ореол и засветка видны до снимка. Ретушь кожи без потери деталей, штамп даты.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: Очистка фото](https://open.cait518.cc/ios-app-guide/ru/picclear.html) — Освободить память: дубли фото
+  - Память забита? Освободите гигабайты: найдите дубликаты фото, похожие кадры, старые скриншоты и тяжёлые видео и проверьте всё перед удалением. Сканирование на устройстве.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: сканер кодов](https://open.cait518.cc/ios-app-guide/ru/qrcodehalo.html) — Открывай сразу, проверяй потом
+  - Отсканировали, и готово: ссылки открываются, Wi-Fi показывает запрос iOS, звонки и письма наготове. У каждого сохранённого скана есть Проверка безопасности в Истории.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: закладки с ИИ](https://open.cait518.cc/ios-app-guide/ru/savetag.html) — Сохраняй ссылки, читай позже
+  - Идеи подарков, рецепты к новогоднему столу и места для поездки теряются в чатах? Поделитесь ссылкой из любого приложения: теги появятся сами, а найти можно по смыслу.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: PDF и OCR](https://open.cait518.cc/ios-app-guide/ru/scanto.html) — Офлайн-сканер документов
+  - Чеки за новогодние подарки, гарантийные талоны и документы к концу года? Отсканируйте их в чёткие PDF, а OCR на устройстве найдёт любой по одному слову. Без сети.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: Звуки для сна](https://open.cait518.cc/ios-app-guide/ru/sereno.html) — Белый шум, дождь и море
+  - Дождь, океан, огонь: 140+ успокаивающих звуков для сна и концентрации. Смешивайте, засыпайте с плавным затуханием, просыпайтесь под пение птиц. Офлайн, без регистрации.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/ru/shotinbox.html) — Органайзер скриншотов
+  - Новогодние покупки и зимние поездки оставляют чеки, билеты и заказы на скриншотах. Они сортируются сами, текст ищется, посылки отслеживаются, лишнее легко убрать.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: Паспортное фото](https://open.cait518.cc/ios-app-guide/ru/snapportlite.html) — Портреты точно по размеру
+  - Нужно фото 35×45 мм на визу или загранпаспорт? 35 шаблонов размеров для 28 стран, направляющие для лица, белый или голубой фон и лист для печати на A4. Всё на устройстве.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: фото на паспорт](https://open.cait518.cc/ios-app-guide/ru/snapport.html) — 35x45 и лист для печати
+  - Новогодняя поездка или новый загранпаспорт? Сделайте фото на паспорт или визу дома: шаблоны популярных размеров, разметка для лица, белый фон и листы для печати.
+  - Цена: Платная загрузка по единой цене, без подписки.
+  - App Store: https://apps.apple.com/ru/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/ru/sononote.html) — Речь в текст и заметки
+  - Говорите, а Sono Note превратит речь в чистую расшифровку, резюме, ключевые пункты и задачи, даже в письмо. Для встреч, лекций и звонков. Без регистрации.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: перекидные часы](https://open.cait518.cc/ios-app-guide/ru/stayclock.html) — Часы и календарь без перерыва
+  - Длинные вечера до Нового года: пока телефон заряжается, он становится крупными часами, видными с другого конца комнаты, с календарём «Месяц» и будильником.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: Учёт времени](https://open.cait518.cc/ios-app-guide/ru/studydown.html) — Положите экраном вниз
+  - Сессия и дедлайны перед Новым годом? Выберите занятие, положите телефон экраном вниз — время идёт; подняли — пауза. Смотрите сегодня и эту неделю по каждому занятию.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet: детям](https://open.cait518.cc/ios-app-guide/ru/tripplanet.html) — Семейные миссии в пути
+  - Перелёты, поездки и новые места становятся миссиями: пристегнуться, поблагодарить экипаж, попробовать кусочек. За миссии — награды, за поездку — штамп. Без рекламы.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: План поездки](https://open.cait518.cc/ios-app-guide/ru/tripbeelite.html) — Маршрут отпуска по дням
+  - Домой на Новый год или в поездку на каникулы? Соберите путешествие в одну ленту по дням: рейсы, жильё, заметки, напоминания и данные билетов в одном месте. Без аккаунта.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: Планировщик](https://open.cait518.cc/ios-app-guide/ru/tripbee.html) — Поездка компанией и сбор вещей
+  - Редактируйте одну поездку вместе с семьей или друзьями, добавьте план на дождливый день и получайте напоминания по местному времени. Список вещей подстроится под каждого.
+  - Цена: Платная загрузка по единой цене, без подписки.
+  - App Store: https://apps.apple.com/ru/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: чёткие фото](https://open.cait518.cc/ios-app-guide/ru/unblurry.html) — Восстановление старых фото
+  - Исправьте размытые и смазанные фото на iPhone: резкость, шумоподавление и осветление тёмных снимков. В Pro — ИИ-суперразрешение и увеличение 4×.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: Лимиты ИИ и расход](https://open.cait518.cc/ios-app-guide/ru/claudeusagemini.html) — Claude, Codex, Copilot, Gemini
+  - Уведомления на любой процент, сортировка по 5-часовому или недельному сбросу и виджеты, листающие все записи. Сколько осталось в каждом AI-тарифе — сразу видно.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/ru/wifiaidlite.html) — Нет интернета? Найдите причину
+  - Пропал интернет? Wi-Fi, провайдер или только один сайт? Одно касание запускает независимые проверки и показывает самую вероятную причину и что делать дальше.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: Поиск проблем сети](https://open.cait518.cc/ios-app-guide/ru/wifiaid.html) — Диагностика роутера, mesh, DNS
+  - Новогодние праздники, вся семья на одном Wi-Fi? Если всё тормозит, проверьте Wi-Fi, DNS и интернет одним касанием и узнайте вероятную причину или сбой одного сайта.
+  - Цена: Платная загрузка по единой цене, без подписки.
+  - App Store: https://apps.apple.com/ru/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite: 5 слов в день](https://open.cait518.cc/ios-app-guide/ru/wordmatelite.html) — Учим языки без зубрёжки
+  - Бросали язык уже три раза? Начните с пяти слов в день. Wordmate Lite занимает минуту, озвучивает каждое слово и показывает, что вы выучили. 44 языка, работает офлайн.
+  - Цена: Бесплатная загрузка, разовая покупка открывает всё. Без подписок.
+  - App Store: https://apps.apple.com/ru/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: 44 языка](https://open.cait518.cc/ios-app-guide/ru/wordmate.html) — Учить слова: виджет и часы
+  - Учите слова и тут же забываете? Wordmate делит лексику 44 языков на 14 тем и 84 коротких блока, у каждого английского слова есть пример и озвучка. Учите прямо из виджета.
+  - Цена: Платная загрузка по единой цене, без подписки.
+  - App Store: https://apps.apple.com/ru/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: открыть RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/ru/zipbox.html) — Распаковка без рекламы
+  - Новогодние фото пришли в 7z с паролем или в ZIP из нескольких частей? Загляните внутрь, посмотрите фото и PDF и извлеките только нужное. Без рекламы.
+  - Цена: Платная загрузка по единой цене, без подписки.
+  - App Store: https://apps.apple.com/ru/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

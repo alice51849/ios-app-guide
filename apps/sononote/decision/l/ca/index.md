@@ -1,0 +1,28 @@
+---
+title: "Millor app de notes de veu que resumeix reunions a l’iPhone"
+lang: "ca"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/sononote/decision/l/ca/index.html"
+modified: "2026-10-21"
+app_store_id: "6782139553"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# Millor app de notes de veu que resumeix reunions a l’iPhone
+
+Després d’una trucada no vols una transcripció en brut — vols el resum, els punts d’acció i un esborrany de seguiment. Aquest és el buit que Sono Note vol cobrir.
+
+- Productivitat
+- Inici gratuït
+- Sense compte
+- Sense anuncis
+- Sense seguiment
+- Privat / en el dispositiu
+- App Store · Gratis
+
+[Descarrega Sono Note a l’App Store →](https://apps.apple.com/es/app/id6782139553?pt=118326163&ct=geo_pick&mt=8)
+
+[Llegeix la guia completa](https://open.cait518.cc/ios-app-guide/ca/answers/best-voice-notes-app-that-summarizes-meetings-on-iphone.html)
+
+> Guia escrita per Lumi Studio, el desenvolupador de l'aplicació. Els noms de les aplicacions són marques dels seus propietaris i s'utilitzen només per identificar-les. Per a decisions sobre documents, salut, escola i productivitat, comprova els requisits oficials quan sigui rellevant.

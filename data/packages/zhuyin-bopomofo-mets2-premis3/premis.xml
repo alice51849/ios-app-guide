@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<premis:premis xmlns:premis="http://www.loc.gov/premis/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0">
+  <premis:object xsi:type="premis:file" xmlID="object-001" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>a6aa93b1523058913ded08f06270ba9520992801ace26762846a88e2e501d514</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>7980</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>text/csv</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>data/zhuyin-bopomofo-ml-dataset.csv</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>data/zhuyin-bopomofo-ml-dataset.csv</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:object xsi:type="premis:file" xmlID="object-002" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.jsonl</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>d9be72584419f591af4bbf94cab7d28625ab635140da6a0e68e3888639355cd7</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>14364</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>text/plain</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>data/zhuyin-bopomofo-ml-dataset.jsonl</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>data/zhuyin-bopomofo-ml-dataset.jsonl</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:object xsi:type="premis:file" xmlID="object-003" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>7a3f9b535b1f032c5f5dace8e013187ef07d63d927e7906765f17666edef4b35</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>13637</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>application/ld+json</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>data/zhuyin-bopomofo-ml-dataset.croissant.jsonld</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>data/zhuyin-bopomofo-ml-dataset.croissant.jsonld</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:object xsi:type="premis:file" xmlID="object-004" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>8fa9e6bc32d3286d08c7e00f96ffd0cc6d9a60ea22e7bcc0b35a289a14fc3677</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>7631</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>application/csvm+json</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>data/zhuyin-bopomofo-ml-dataset.csv-metadata.json</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>data/zhuyin-bopomofo-ml-dataset.csv-metadata.json</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:object xsi:type="premis:file" xmlID="object-005" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-vocabulary.jsonld</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>88d6a5115cebd1f4936211ac8efab38ea18550409e8177de329242b03cf77f49</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>78997</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>application/ld+json</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>data/zhuyin-bopomofo-vocabulary.jsonld</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>data/zhuyin-bopomofo-vocabulary.jsonld</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:object xsi:type="premis:file" xmlID="object-006" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/README.txt</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>ac46a7734953aed17522b7947a269d9d16b195e615fbce39796f5be50d25c1ed</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>1864</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>text/plain</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>README.txt</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>README.txt</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:object xsi:type="premis:file" xmlID="object-007" version="3.0">
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URI</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/LICENSE.txt</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCharacteristics>
+      <premis:compositionLevel>0</premis:compositionLevel>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>SHA-256</premis:messageDigestAlgorithm>
+        <premis:messageDigest>4e6a84a70db92eefc475e51936a6ea93c33862d64d70b44bf99cc12c5ffb9ec6</premis:messageDigest>
+        <premis:messageDigestOriginator>iOS App Guide Open Resources</premis:messageDigestOriginator>
+      </premis:fixity>
+      <premis:size>1047</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>text/plain</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>LICENSE.txt</premis:originalName>
+    <premis:storage>
+      <premis:contentLocation>
+        <premis:contentLocationType>relative path</premis:contentLocationType>
+        <premis:contentLocationValue>LICENSE.txt</premis:contentLocationValue>
+      </premis:contentLocation>
+      <premis:storageMedium>deterministic ZIP entry</premis:storageMedium>
+    </premis:storage>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+    <premis:linkingRightsStatementIdentifier>
+      <premis:linkingRightsStatementIdentifierType>URI</premis:linkingRightsStatementIdentifierType>
+      <premis:linkingRightsStatementIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:linkingRightsStatementIdentifierValue>
+    </premis:linkingRightsStatementIdentifier>
+  </premis:object>
+  <premis:event xmlID="event-package-generation" version="3.0">
+    <premis:eventIdentifier>
+      <premis:eventIdentifierType>URI</premis:eventIdentifierType>
+      <premis:eventIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:eventIdentifierValue>
+    </premis:eventIdentifier>
+    <premis:eventType>metadata creation</premis:eventType>
+    <premis:eventDateTime>2026-09-04T14:41:42Z</premis:eventDateTime>
+    <premis:eventDetailInformation>
+      <premis:eventDetail>Generated METS 2.0 and PREMIS 3.0 records and calculated SHA-256 fixity.</premis:eventDetail>
+    </premis:eventDetailInformation>
+    <premis:eventOutcomeInformation>
+      <premis:eventOutcome>success</premis:eventOutcome>
+      <premis:eventOutcomeDetail>
+        <premis:eventOutcomeDetailNote>All seven local files matched their recorded byte lengths and SHA-256 values.</premis:eventOutcomeDetailNote>
+      </premis:eventOutcomeDetail>
+    </premis:eventOutcomeInformation>
+    <premis:linkingAgentIdentifier>
+      <premis:linkingAgentIdentifierType>URI</premis:linkingAgentIdentifierType>
+      <premis:linkingAgentIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#publisher</premis:linkingAgentIdentifierValue>
+      <premis:linkingAgentRole>implementer</premis:linkingAgentRole>
+    </premis:linkingAgentIdentifier>
+    <premis:linkingAgentIdentifier>
+      <premis:linkingAgentIdentifierType>URI</premis:linkingAgentIdentifierType>
+      <premis:linkingAgentIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#generator</premis:linkingAgentIdentifierValue>
+      <premis:linkingAgentRole>executing program</premis:linkingAgentRole>
+    </premis:linkingAgentIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.jsonl</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-vocabulary.jsonld</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/README.txt</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+    <premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+      <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/LICENSE.txt</premis:linkingObjectIdentifierValue>
+      <premis:linkingObjectRole>source</premis:linkingObjectRole>
+    </premis:linkingObjectIdentifier>
+  </premis:event>
+  <premis:agent xmlID="agent-publisher" version="3.0">
+    <premis:agentIdentifier>
+      <premis:agentIdentifierType>URI</premis:agentIdentifierType>
+      <premis:agentIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#publisher</premis:agentIdentifierValue>
+    </premis:agentIdentifier>
+    <premis:agentName>iOS App Guide Open Resources</premis:agentName>
+    <premis:agentType>organization</premis:agentType>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+  </premis:agent>
+  <premis:agent xmlID="agent-generator" version="3.0">
+    <premis:agentIdentifier>
+      <premis:agentIdentifierType>URI</premis:agentIdentifierType>
+      <premis:agentIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#generator</premis:agentIdentifierValue>
+    </premis:agentIdentifier>
+    <premis:agentName>zhuyin_mets_premis_package.py</premis:agentName>
+    <premis:agentType>software</premis:agentType>
+    <premis:linkingEventIdentifier>
+      <premis:linkingEventIdentifierType>URI</premis:linkingEventIdentifierType>
+      <premis:linkingEventIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#event-package-generation</premis:linkingEventIdentifierValue>
+    </premis:linkingEventIdentifier>
+  </premis:agent>
+  <premis:rights xmlID="rights-cc-by-4-0" version="3.0">
+    <premis:rightsStatement>
+      <premis:rightsStatementIdentifier>
+        <premis:rightsStatementIdentifierType>URI</premis:rightsStatementIdentifierType>
+        <premis:rightsStatementIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/#rights-cc-by-4.0</premis:rightsStatementIdentifierValue>
+      </premis:rightsStatementIdentifier>
+      <premis:rightsBasis>license</premis:rightsBasis>
+      <premis:licenseInformation>
+        <premis:licenseDocumentationIdentifier>
+          <premis:licenseDocumentationIdentifierType>URI</premis:licenseDocumentationIdentifierType>
+          <premis:licenseDocumentationIdentifierValue>https://creativecommons.org/licenses/by/4.0/</premis:licenseDocumentationIdentifierValue>
+          <premis:licenseDocumentationRole>license</premis:licenseDocumentationRole>
+        </premis:licenseDocumentationIdentifier>
+        <premis:licenseTerms>Creative Commons Attribution 4.0 International (CC BY 4.0).</premis:licenseTerms>
+      </premis:licenseInformation>
+      <premis:rightsGranted>
+        <premis:act>replicate</premis:act>
+        <premis:rightsGrantedNote>Permitted with attribution and indication of changes under CC BY 4.0.</premis:rightsGrantedNote>
+      </premis:rightsGranted>
+      <premis:rightsGranted>
+        <premis:act>migrate</premis:act>
+        <premis:rightsGrantedNote>Permitted with attribution and indication of changes under CC BY 4.0.</premis:rightsGrantedNote>
+      </premis:rightsGranted>
+      <premis:rightsGranted>
+        <premis:act>disseminate</premis:act>
+        <premis:rightsGrantedNote>Permitted with attribution and indication of changes under CC BY 4.0.</premis:rightsGrantedNote>
+      </premis:rightsGranted>
+      <premis:rightsGranted>
+        <premis:act>modify</premis:act>
+        <premis:rightsGrantedNote>Permitted with attribution and indication of changes under CC BY 4.0.</premis:rightsGrantedNote>
+      </premis:rightsGranted>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.jsonl</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.croissant.jsonld</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-ml-dataset.csv-metadata.json</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/data/zhuyin-bopomofo-vocabulary.jsonld</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/README.txt</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+      <premis:linkingObjectIdentifier>
+        <premis:linkingObjectIdentifierType>URI</premis:linkingObjectIdentifierType>
+        <premis:linkingObjectIdentifierValue>https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/LICENSE.txt</premis:linkingObjectIdentifierValue>
+        <premis:linkingObjectRole>governed object</premis:linkingObjectRole>
+      </premis:linkingObjectIdentifier>
+    </premis:rightsStatement>
+  </premis:rights>
+</premis:premis>

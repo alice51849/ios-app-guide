@@ -1,0 +1,245 @@
+# Apps directory — iOS App Guide
+
+> Structured information about each iOS app — features, pricing and FAQs.
+
+locale: en-CA
+apps: 54
+- Apps directory: https://open.cait518.cc/ios-app-guide/en-CA/tools/private-pay-once-iphone-app-finder.html
+- Apps directory · PWA: https://open.cait518.cc/ios-app-guide/en-CA/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/en-CA.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/en-CA.json
+- Apps directory · SVG: https://open.cait518.cc/ios-app-guide/en-CA/visuals/
+- Apps directory · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Apps directory · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Apps directory · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Apps directory · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Apps directory · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- Apps directory · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- Apps directory · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Apps directory · Agent Skill · en-CA: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/en-CA.json
+- Apps directory · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Apps directory · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Apps directory · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Apps directory · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Apps directory · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Apps directory · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Apps directory · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Apps directory · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Apps directory · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/en-CA/notesstudio100.html) — Note Taking, Handwriting & PDF
+  - From fall finals to the holidays: handwrite notes, mark up PDF slides, attach the lecture recording to the page and review with flashcards. All offline, no account.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: AI Prompt from Files](https://open.cait518.cc/ios-app-guide/en-CA/aibriefpack.html) — Prompt Builder for Files & PDF
+  - Year-end reports and holiday plans piling up? Add screenshots, PDFs, notes and links. They're read on your device, personal details get flagged: one clear AI brief.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: English Exam Prep](https://open.cait518.cc/ios-app-guide/en-CA/aim990.html) — TOEIC L&R 30-day repair plan
+  - Stop studying what you already know. An 8-minute diagnosis finds your 3 weakest skills, drills them daily and rechecks on Day 30. Offline, private, no account.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: Battery health score](https://open.cait518.cc/ios-app-guide/en-CA/battai.html) — Clear rules, sources, and limits
+  - Understand your battery over time Clear rules, sources, and limits Unlock deeper history, planning, and reports. One payment. No subscription.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily: Calculator & Themes](https://open.cait518.cc/ios-app-guide/en-CA/caldaily.html) — Widget, Tip, Discount & Loan
+  - Calculate right on your Home Screen: the widget is a full calculator. Tip, discount, loan and 5 more tools built in. No ads.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/en-CA/countdaysnow.html) — Countdown Plan: Work Backwards
+  - New Countdown Plan: give each event the steps to finish before it. Every step is due a set number of days before the date and moves when the date moves.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: ATS Resume](https://open.cait518.cc/ios-app-guide/en-CA/cvdesk.html) — Builder, Checker & Templates
+  - Instant ATS score, clear fixes and a 6-second recruiter view, so your resume gets read. Preview the finished PDF anytime. No account needed.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: Period & Cycle Tracker](https://open.cait518.cc/ios-app-guide/en-CA/cyca.html) — Private, Offline, No Account
+  - Busy holiday season and winter break? Log your period, flow, symptoms, mood and notes in seconds. Everything stays on your device: no account, no cloud, offline.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: Speak Today](https://open.cait518.cc/ios-app-guide/en-CA/dailymatelite.html) — 50-Language Travel Phrasebook
+  - Hear what locals say at the airport, hotel or café and learn the natural reply. Travel basics in all 50 languages, even offline.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: Practical Phrases](https://open.cait518.cc/ios-app-guide/en-CA/dailymate.html) — Learn French, Spanish & More
+  - Know the words but freeze up? Learn full sentences with natural replies: 8,400 phrases, 47 languages, 84 real-life situations. Widget and Apple Watch. Works offline.
+  - Pricing: Paid download with one upfront price and no subscription.
+  - App Store: https://apps.apple.com/ca/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: Sound Meter](https://open.cait518.cc/ios-app-guide/en-CA/dbhalo.html) — Spectrum, Dose & Sleep Journal
+  - Holiday parties, a noisy neighbour or snoring on long winter nights? See live dB on the Halo ring, estimate your daily noise dose and log snoring overnight.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Workday Alarm Clock](https://open.cait518.cc/ios-app-guide/en-CA/easyam.html) — Stat holiday? It stays quiet
+  - Christmas Day and New Year's Day stay quiet automatically. Taking the holidays off? Add those days as time off, see your next 7 days at a glance, and workdays still ring.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: Trip Spending](https://open.cait518.cc/ios-app-guide/en-CA/gmoneylite.html) — Travel Budget & Currency
+  - Holiday trip or a winter getaway down south? Log purchases in the local currency, see them in your home currency instantly, set a daily limit and convert offline.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: Spending & Budget](https://open.cait518.cc/ios-app-guide/en-CA/gmoney.html) — Travel Budget, Currency Rates
+  - Holiday travel or a winter getaway ahead? Log spending by category, trip or event, set a daily budget and convert currencies with live or manual rates, even offline.
+  - Pricing: Paid download with one upfront price and no subscription.
+  - App Store: https://apps.apple.com/ca/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: Price in Hours](https://open.cait518.cc/ios-app-guide/en-CA/hourstaglite.html) — Impulse Buying? Price in Hours
+  - Holiday shopping season: before you buy, see each price as hours of your own work, tag it Need, Want or Impulse, and see the work behind a goal for the new year.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: Hours to Buy](https://open.cait518.cc/ios-app-guide/en-CA/hourstag.html) — Hourly Wage & Spending Tracker
+  - What does it really cost? Not just in dollars, but in hours of your life. HoursTag helps you manually record completed expenses and converts each logged amount into the work time it took to earn. Set your pay once, log what you spent, and review the real hours behind your history. • Tag spending as Need, Want or Impulse • Track goals and wish lists in real work hours • Review category insights and a clear monthly breakdown • No account, no ads, no tracking One-time purchase. Spend your time on purpose.
+  - Pricing: Paid download with one upfront price and no subscription.
+  - App Store: https://apps.apple.com/ca/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/en-CA/ledmovingtext.html) — Cue flows and marquee signs
+  - Turn your screen into a bright scrolling sign in seconds, or build a Cue Flow: line up messages and tap through them live or on a timer. Full-screen, offline and private.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: Block Apps](https://open.cait518.cc/ios-app-guide/en-CA/lockhour.html) — App Blocker & Screen Time
+  - Lock distracting apps and websites until your timer ends. Focus, homework and sleep modes, Hard Mode, stats and streaks. No account needed.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo](https://open.cait518.cc/ios-app-guide/en-CA/lumibopomofo.html) — Zhuyin Games: Chinese Phonics
+  - Feed symbol friends by sound, trace strokes in order, ride the tone coaster and blend sounds on the train. Works offline. No ads.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/en-CA/lumibopomofopro.html) — Mandarin Tones & Worksheets
+  - All 37 Zhuyin sounds, fully included: Tone Coaster, Sound Train blending, fishing, tracing and Star Race. Parents see a review list and print practice sheets. No ads.
+  - Pricing: Paid download with one upfront price and no subscription.
+  - App Store: https://apps.apple.com/ca/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Lite: ABC Kids](https://open.cait518.cc/ios-app-guide/en-CA/lumiletters.html) — Alphabet Tracing & Phonics
+  - Start with the letter A and the first planet: hear the sound, trace it with a finger and play planet quizzes. Unlock all 26 letters later. No ads, works offline.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Pro: ABC Phonics](https://open.cait518.cc/ios-app-guide/en-CA/lumiletterspro.html) — Beginning, Middle, End Sounds
+  - Hear a word, pick its first, middle or last sound, then trace the letter. 26 letters, 14 planets, printable worksheets. No ads, no subscription, works offline.
+  - Pricing: Paid download with one upfront price and no subscription.
+  - App Store: https://apps.apple.com/ca/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Planet: Explorer](https://open.cait518.cc/ios-app-guide/en-CA/lumimath.html) — Addition & Subtraction Games
+  - Solve a question, light up a planet. 46 picture question types: counting, adding, subtracting, times tables, clocks, money. Printable worksheets. No ads, no subscription.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Pro: Kids Numbers](https://open.cait518.cc/ios-app-guide/en-CA/lumimathpro.html) — Logic Puzzles & Word Problems
+  - Competition-style logic, patterns and word problems in 46 question types. Weak-spot practice, learning report, printable worksheets. No ads or in-app purchases.
+  - Pricing: Paid download with one upfront price and no subscription.
+  - App Store: https://apps.apple.com/ca/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet](https://open.cait518.cc/ios-app-guide/en-CA/lumimission.html) — Kids Reward & Chore Chart
+  - Less nagging, more wins: every finished mission earns stars, feeds your child's Lumi buddy and fills a 100-sticker book. Add your own tasks too. No ads, no sign-up.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet Pro](https://open.cait518.cc/ios-app-guide/en-CA/lumimissionpro.html) — Morning & Bedtime Routines
+  - Every routine included: meals, brushing, bedtime, tidy-up and school prep, plus your own tasks, a 7-day view and an evening reminder. No ads, works offline.
+  - Pricing: Paid download with one upfront price and no subscription.
+  - App Store: https://apps.apple.com/ca/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Weather: What to Wear](https://open.cait518.cc/ios-app-guide/en-CA/lumiweather.html) — Outing Score, Umbrella & UV
+  - Coat or no coat? Lumi turns the forecast into a 0–100 outing score and tells you what to wear, plus umbrella and UV tips. Hourly, 7-day, widgets, Apple Watch.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: Remove Your Info](https://open.cait518.cc/ios-app-guide/en-CA/maskmyfile.html) — Redact documents you share
+  - Sending ID for holiday travel or year-end pay stubs to your accountant? Spot private details, black out only what you choose for good and strip metadata. All on-device.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: Last Time](https://open.cait518.cc/ios-app-guide/en-CA/mochidonestamp.html) — When Did I Last? Home Upkeep
+  - Never wonder when you last did it. Stamp it done, Mochi remembers and nudges you when it's due again. Sheets, filters, plants, calls, and share events with family.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: Cute Checklist](https://open.cait518.cc/ios-app-guide/en-CA/mochi.html) — Kawaii To-Do List & Errands
+  - From Halloween to the holidays, keep life cute and calm: plan school, errands and groceries, tap the little circle when done, pick a theme and add Home Screen widgets.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag: Income & Expenses](https://open.cait518.cc/ios-app-guide/en-CA/moneytag.html) — Projects · Tags · Report
+  - Year-end freelance gig or a side hustle? Your project shows income minus expenses as one clear net result, in the currency you choose, with live or manual rates.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: AI Slide Maker](https://open.cait518.cc/ios-app-guide/en-CA/onepageppt.html) — Presentation from notes & PDF
+  - Year-end review before the holidays? Paste notes, a PDF, a screenshot or a CSV and get one clear 16:9 slide: key points as headlines, numbers as charts. Share as PNG.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: Film Filters](https://open.cait518.cc/ios-app-guide/en-CA/photocream.html) — Film Camera & Vintage Filters
+  - Holiday lights and family dinners under warm indoor light? Fine-tune light, color and curves, retouch skin without losing detail, and add film grain for a year-end album.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: Photo Cleaner](https://open.cait518.cc/ios-app-guide/en-CA/picclear.html) — Clean Photo Library Offline
+  - Free up gigabytes on a full iPhone: find duplicates, similar shots, old screenshots, blurry photos and huge videos on-device. Review every photo before it's deleted.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: Scan & Create](https://open.cait518.cc/ios-app-guide/en-CA/qrcodehalo.html) — Opens Right Away, Check Later
+  - Scan and it's handled: links open, Wi-Fi codes bring up the iOS Join prompt, calls and emails are ready to go. Every saved scan has a Security Check in History.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: AI Social Bookmarks](https://open.cait518.cc/ios-app-guide/en-CA/savetag.html) — Link Saver: Watch & Read Later
+  - Gift ideas, holiday recipes and trips lost in your chats? Share any link from any app. It's tagged on your device, found by meaning, and unread saves resurface daily.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: Offline PDF OCR](https://open.cait518.cc/ios-app-guide/en-CA/scanto.html) — Private Document & ID Scanner
+  - Holiday gift receipts, return slips and year-end paperwork piling up? Scan them into crisp PDFs, and on-device OCR finds any one by a single word. Offline, no account.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: Sleep & Focus](https://open.cait518.cc/ios-app-guide/en-CA/sereno.html) — White Noise, Rain & Fan Sounds
+  - Rain, ocean, fire and more: 140+ calming sounds for sleep and focus. Mix layers, fade out as you drift off, wake to sunrise birdsong. 100% offline, no account.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/en-CA/shotinbox.html) — OCR Search & Clean Camera Roll
+  - Holiday shopping and winter trips leave receipts, tickets and order screenshots everywhere. Get them sorted, search the text inside, track a package, clear the rest.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: Take ID Photos](https://open.cait518.cc/ios-app-guide/en-CA/snapportlite.html) — Crop Portraits to Exact Size
+  - Holiday trip or passport renewal? Crop your photo to the exact size with built-in presets, face guides and a clean white background. All on your device.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: Passport & ID Photos](https://open.cait518.cc/ios-app-guide/en-CA/snapport.html) — 2x2 35x45 Sizes, Print Sheet
+  - Holiday trip or passport renewal? Make passport and visa photos at home: templates like Canada 50×70 mm, face guides, a white background and print-ready sheets.
+  - Pricing: Paid download with one upfront price and no subscription.
+  - App Store: https://apps.apple.com/ca/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/en-CA/sononote.html) — Voice to Text Notes & Memos
+  - Talk, and Sono Note turns it into a clean transcript, summary, key points and to-dos, even a follow-up email. Made for meetings, classes and calls. No account needed.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: Flip Desk Clock](https://open.cait518.cc/ios-app-guide/en-CA/stayclock.html) — Always-on time and calendar
+  - Long nights till the holidays: while your phone charges on the nightstand, it becomes a big always-on clock with a month calendar, an hourly chime and a simple alarm.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: Face-Down Timer](https://open.cait518.cc/ios-app-guide/en-CA/studydown.html) — Face-down activity time ledger
+  - Winter exams and year-end projects? Pick an activity, place your phone face down and the count starts; pick it up and it pauses. See today and this week, by activity.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet: Kids Quest](https://open.cait518.cc/ios-app-guide/en-CA/tripplanet.html) — Family Vacation & Travel Games
+  - Long flight or family road trip? Turn it into missions: buckle up, thank the crew, try a tiny bite. Kids earn rewards and passport stamps. No ads or third-party tracking.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: Trip Planner](https://open.cait518.cc/ios-app-guide/en-CA/tripbeelite.html) — Day-by-Day Vacation Itinerary
+  - Flying home for the holidays or away for New Year's? Put the trip on one day-by-day timeline, with flight and hotel details, notes, reminders and ticket info together.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Pro: Trip Planner](https://open.cait518.cc/ios-app-guide/en-CA/tripbee.html) — Group Travel & Packing List
+  - Invite family or friends to edit the same trip, add a rainy-day backup for any day and get reminders at local time. Packing lists adapt to every traveller, kids included.
+  - Pricing: Paid download with one upfront price and no subscription.
+  - App Store: https://apps.apple.com/ca/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: Unblur & HD](https://open.cait518.cc/ios-app-guide/en-CA/unblurry.html) — Restore Old Photos Offline
+  - Fix blurry, shaky shots on your iPhone: sharpen, denoise and brighten low light. Pro adds AI super-resolution, 4× upscale and old photo restore.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: AI Usage Tracker](https://open.cait518.cc/ios-app-guide/en-CA/claudeusagemini.html) — Claude, Codex & Copilot Limits
+  - Custom alerts at any percent, sort by 5-hour or weekly reset, and widgets that flip through every account. See what's left on each AI plan.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/en-CA/wifiaidlite.html) — Internet Down? Find the Cause
+  - Is it your Wi-Fi, your provider or one website? One tap runs independent checks and names the most likely cause with clear next steps. No account, ads or tracking.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: Find WiFi Problems](https://open.cait518.cc/ios-app-guide/en-CA/wifiaid.html) — Router, Mesh & DNS Diagnostics
+  - Holiday guests, streaming and video calls on one Wi-Fi? When it slows, check Wi-Fi, DNS and internet in one tap, get the most likely cause, or test a single website.
+  - Pricing: Paid download with one upfront price and no subscription.
+  - App Store: https://apps.apple.com/ca/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite: Vocabulary](https://open.cait518.cc/ios-app-guide/en-CA/wordmatelite.html) — One minute, five new words
+  - Five words, one minute a day, in any of 44 languages. Hear each word, see it in a sentence and keep your streak. Works offline, no account needed.
+  - Pricing: Free to download with a one-time purchase to unlock everything. No subscription traps.
+  - App Store: https://apps.apple.com/ca/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: Learn 44 Languages](https://open.cait518.cc/ios-app-guide/en-CA/wordmate.html) — Vocabulary Flashcards & Widget
+  - Holiday trip or New Year's resolution? Learn real words in 44 languages a spare minute at a time: 14 practical topics, example sentences and spoken pronunciation.
+  - Pricing: Paid download with one upfront price and no subscription.
+  - App Store: https://apps.apple.com/ca/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: Unzip RAR, ZIP & 7z](https://open.cait518.cc/ios-app-guide/en-CA/zipbox.html) — Preview and extract, no ads
+  - Holiday photos sent as a password protected 7z, or a year-end work ZIP? Look inside, preview photos and PDFs, and extract just the file you need, all on your device.
+  - Pricing: Paid download with one upfront price and no subscription.
+  - App Store: https://apps.apple.com/ca/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

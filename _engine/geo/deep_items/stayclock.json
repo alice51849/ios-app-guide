@@ -1,0 +1,37 @@
+[
+ {
+  "app_key": "stayclock",
+  "kind": "scenario",
+  "query": "How to turn an old iPad into an always-on nightstand clock",
+  "match": [
+   "old ipad into",
+   "spare ipad into",
+   "ipad as a nightstand clock",
+   "ipad into a bedside clock"
+  ],
+  "lead": "To turn an old iPad into a nightstand clock, keep it on its charger, stop the screen from locking, and run a full-screen clock that dims for the bedroom.",
+  "detail": "{name} turns an iPhone or iPad into an always-on desk clock with big time you can read from across the room, in portrait or landscape. Keep Awake can keep the screen on while charging, keep it always on above a battery floor you choose, or follow the system. For the bedroom, a night schedule switches to a dim red face on true black, and Panel Care gently shifts pixels on OLED screens. It needs no account and no network, and shows no ads. One complete face is free; an optional one-time Lifetime purchase unlocks 100 more faces, with no subscription.",
+  "follow_up": "Before you repurpose an older iPad, open the App Store listing and confirm that its compatibility section includes the iPadOS version your iPad can run.",
+  "bullets": [
+   "Check the App Store compatibility section first: an old iPad must still run a supported iPadOS version",
+   "Leave the iPad on its charger and use Keep Awake so the clock stays on through the night",
+   "Use a night schedule with a dim red face so the screen does not light up the room",
+   "Pick 12- or 24-hour time, your time zone and a calendar style for each face",
+   "A clock that needs no account and no network keeps running when the Wi-Fi is off"
+  ],
+  "faq": [
+   {
+    "q": "Does the iPad have to stay plugged in?",
+    "a": "For an all-night clock it is the practical choice. {name}'s Keep Awake can stay on only while charging, stay always on above a battery floor you set, or follow the system auto-lock."
+   },
+   {
+    "q": "How is this different from iPhone StandBy?",
+    "a": "StandBy is an iPhone feature that shows a clock while a locked iPhone charges on its side. {name} is a full-screen clock app for iPhone and iPad, and the face you pick also appears in its StandBy, Lock Screen and Home Screen widgets."
+   },
+   {
+    "q": "What is free in {name}?",
+    "a": "One complete face is free. An optional one-time Lifetime purchase unlocks 100 more faces, with no subscription."
+   }
+  ]
+ }
+]

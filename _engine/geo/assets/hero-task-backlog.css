@@ -1,0 +1,9 @@
+input[data-field=minutes],input[inputmode=numeric],#daily-minutes,#start-date{direction:ltr;text-align:start}
+.backlog-row{display:grid;grid-template-columns:minmax(140px,2fr) minmax(80px,.8fr) minmax(80px,.8fr) minmax(60px,.6fr) minmax(110px,1fr) auto;gap:12px;align-items:end;padding:12px 0;border-bottom:1px solid var(--line)}
+.backlog-row output{display:block;min-height:46px;padding:10px 0;overflow-wrap:anywhere;direction:ltr;text-align:start;font-variant-numeric:tabular-nums}
+#backlog-rows{order:3}
+.totals.backlog-totals{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:900px){.totals.backlog-totals{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:780px){.totals.backlog-totals{gap:10px;padding:14px 16px}.backlog-totals .total-value{font-size:clamp(1.2rem,3vw,1.8rem)}.fields .small{display:none}}
+@media(max-width:640px){.backlog-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.backlog-row>.name-field{grid-column:1/-1}.backlog-row>[data-remove]{grid-column:1/-1;justify-self:end}}
+@media(max-width:420px){.backlog-row{grid-template-columns:1fr}.totals.backlog-totals{grid-template-columns:1fr;gap:6px;padding:10px 12px}.totals.backlog-totals>div{min-height:0}.backlog-totals .total-value{font-size:1rem;line-height:1.3}}

@@ -1,0 +1,2192 @@
+{
+  "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
+  "api_version": "1.2.0",
+  "date_modified": "2026-10-21",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "locale": "hr",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "ordering": "alphabetical_by_app_name_not_a_ranking",
+  "record_count": 54,
+  "apps": [
+    {
+      "key": "notesstudio100",
+      "app_store_id": "6798813048",
+      "name": "100 Notes Studio: Pen & Paper",
+      "summary": "100 Notes Studio povezuje rukopis, tipkanje, označavanje PDF dokumenata, organizaciju bilježnica i učenje u miran radni prostor koji radi i bez mreže.",
+      "category": "productivity",
+      "search_terms": [
+        "dnevnik",
+        "planer",
+        "rokovnik",
+        "učenje",
+        "kartice",
+        "skica",
+        "fakultet",
+        "ispit",
+        "škola",
+        "predavanja",
+        "snimanje",
+        "offline",
+        "crtež"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/notesstudio100.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6798813048"
+      }
+    },
+    {
+      "key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "name": "AI Brief: Datoteke u AI upit",
+      "summary": "Bolji kontekst. Bolji odgovori.",
+      "category": "productivity",
+      "search_terms": [
+        "generator",
+        "sažetak",
+        "sažimanje",
+        "snimka zaslona",
+        "prepoznavanje teksta",
+        "OCR",
+        "kontekst",
+        "chat",
+        "dokumenti",
+        "bilješke"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/aibriefpack.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6791658210"
+      }
+    },
+    {
+      "key": "aim990",
+      "app_store_id": "6784974530",
+      "name": "Aim990: trener engleskog",
+      "summary": "Aim990 je dijagnostički trener za pripremu u stilu TOEIC Listening & Reading. Ovo nije skladište pitanja: svaka sesija koju otvorite propisana je iz vaših vlastitih odgovora.",
+      "category": "education",
+      "search_terms": [
+        "gramatika",
+        "slušanje",
+        "čitanje",
+        "vokabular",
+        "diktat",
+        "ispit",
+        "vježba",
+        "poslovni",
+        "bodovi",
+        "učenje",
+        "test",
+        "rječnik",
+        "fraze"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/aim990.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6784974530"
+      }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: Ocjena stanja baterije",
+      "summary": "BattAI BattAI koristi pet vrijednosti iz javnih API-ja sustava iOS: razinu baterije, stanje punjenja, način niske potrošnje, toplinsko stanje cijelog uređaja i vrijeme. Ostali rezultati izračunavaju se iz tih očitanja ili ih dodajete vi. Svaki podatak prikazuje izvor i ograničenja.",
+      "category": "utility",
+      "search_terms": [
+        "Ocjena stanja baterije",
+        "Maksimalni kapacitet",
+        "Ciklusi",
+        "Pažljivo punjenje",
+        "Raspon punjenja",
+        "Brzina punjenja",
+        "Izvoz podataka"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/battai.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6802423998"
+      }
+    },
+    {
+      "key": "caldaily",
+      "app_store_id": "6794178671",
+      "name": "CalDaily: kalkulator i teme",
+      "summary": "Kalkulator koji ćete zaista nastaviti koristiti, jer pamti razmišljanje iza svakog broja.",
+      "category": "utility",
+      "search_terms": [
+        "popust",
+        "pdv",
+        "napojnica",
+        "podjela",
+        "računa",
+        "kredit",
+        "pretvornik",
+        "jedinica",
+        "radni",
+        "dani",
+        "postotak",
+        "gorivo",
+        "kamata"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/caldaily.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6794178671"
+      }
+    },
+    {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Event Counter",
+      "summary": "• Dnevni fokus Otad · Danas · Slijedi — Spremi",
+      "category": "productivity",
+      "search_terms": [
+        "odbrojavanje",
+        "dani",
+        "rođendan",
+        "godišnjica",
+        "podsjetnik",
+        "widget",
+        "zaključani zaslon",
+        "vjenčanje",
+        "ispit",
+        "odmor"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/countdaysnow.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6807079789"
+      }
+    },
+    {
+      "key": "cvdesk",
+      "app_store_id": "6781337213",
+      "name": "CV Desk: ATS životopis",
+      "summary": "Izradi ATS životopis koji sustavi za zapošljavanje mogu stvarno pročitati — u potpunosti na iPhoneu. Bez računa, bez prijenosa datoteka i bez pretplate.",
+      "category": "productivity",
+      "search_terms": [
+        "predložak",
+        "primjer",
+        "resume",
+        "posao",
+        "traženje",
+        "posla",
+        "prijava",
+        "obrazac",
+        "razgovor",
+        "intervju",
+        "karijera",
+        "student"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/cvdesk.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6781337213"
+      }
+    },
+    {
+      "key": "cyca",
+      "app_store_id": "6782251621",
+      "name": "Cyca: Menstrualni kalendar",
+      "summary": "Cyca je nježan i privatan način da bolje razumiješ svoj ciklus. Zabilježi menstruaciju, jačinu krvarenja, simptome, raspoloženje i bilješke u nekoliko sekundi, pa u mirnom kalendaru pogledaj sljedeću menstruaciju, plodne dane i ovulaciju.",
+      "category": "health",
+      "search_terms": [
+        "menstruacija",
+        "mjesečnica",
+        "ciklus",
+        "plodnost",
+        "trudnoća",
+        "začeće",
+        "simptomi",
+        "raspoloženje",
+        "dnevnik",
+        "pms",
+        "zdravlje"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/cyca.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6782251621"
+      }
+    },
+    {
+      "key": "dailymate",
+      "app_store_id": "6790418321",
+      "name": "DailyMate: Rečenice za život",
+      "summary": "Nemoj učiti napamet izdvojene riječi. DailyMate donosi 8.400 cjelovitih rečenica koje prirodno koristiš na putovanju, poslu, u restoranu, kupnji, razgovorima o zdravlju i druženju. Plaćaš jednom, bez pretplate.",
+      "category": "kids",
+      "search_terms": [
+        "svakodnevne fraze",
+        "izrazi",
+        "razgovor",
+        "odgovori",
+        "situacije",
+        "izgovor",
+        "početnik",
+        "španjolski",
+        "francuski",
+        "japanski"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/dailymate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "12.99",
+        "currency": "EUR",
+        "formatted_price": "12,99 €",
+        "storefront_url": "https://apps.apple.com/hr/app/id6790418321"
+      }
+    },
+    {
+      "key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "name": "DailyMate Lite: Govori danas",
+      "summary": "Govori kad je važno. DailyMate Lite pretvara stvarne situacije u kratke vježbe s korisnom replikom i prirodnim odgovorom na 50 jezika. Besplatno započni temom Putovanja na početnoj razini, a cijelu zbirku otključaj jednom kupnjom. Bez pretplate.",
+      "category": "kids",
+      "search_terms": [
+        "odmor",
+        "njemački",
+        "talijanski",
+        "grčki",
+        "turski",
+        "portugalski",
+        "kineski",
+        "zračna luka",
+        "hotel",
+        "restoran",
+        "offline",
+        "turist"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/dailymatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6794725568"
+      }
+    },
+    {
+      "key": "dbhalo",
+      "app_store_id": "6806826699",
+      "name": "dB Halo: Mjerač razine zvuka",
+      "summary": "Odmah provjerite koliko je okolina glasna, koje frekvencije prevladavaju i koliko je procijenjenog sigurnog vremena ostalo. dB Halo mjeri razinu zvuka i analizira zvučni spektar, a sva se obrada odvija na uređaju.",
+      "category": "utility",
+      "search_terms": [
+        "glasnoća",
+        "decibelmetar",
+        "analizator",
+        "spektrogram",
+        "frekvencija",
+        "hrkanje",
+        "snimanje",
+        "mikrofon",
+        "sluh",
+        "FFT",
+        "RTA"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/dbhalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6806826699"
+      }
+    },
+    {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: Pametna budilica",
+      "summary": "Treba li budilica sutra ujutro zvoniti ili imaš slobodan dan? EasyAM to odlučuje umjesto tebe, za svaki dan posebno: radnim danima zvoni, za praznike i tvoje slobodne dane šuti, a sljedećih sedam dana vidiš unaprijed. Više ne gasiš budilicu prije produženog vikenda i ne zaboravljaš je upaliti nakon njega: postaviš je jednom i gotovo.",
+      "category": "utility",
+      "search_terms": [
+        "alarm",
+        "budilnik",
+        "blagdani",
+        "smjene",
+        "smjenski",
+        "godišnji",
+        "odmor",
+        "neradni",
+        "kalendar",
+        "buđenje",
+        "widget",
+        "flip",
+        "sat",
+        "dan"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6821790092"
+      }
+    },
+    {
+      "key": "gmoney",
+      "app_store_id": "6755782939",
+      "name": "G+Money: Troškovi i budžet",
+      "summary": "G+Money čini osobno praćenje novca jednostavnim i nenametljivim. Zabilježi svaki trošak, organiziraj ga po kategoriji, putovanju ili događaju i odmah vidi kamo novac odlazi.",
+      "category": "finance",
+      "search_terms": [
+        "praćenje",
+        "troškova",
+        "financije",
+        "pretvarač",
+        "valuta",
+        "tečaj",
+        "upravljanje",
+        "novcem",
+        "novac",
+        "štednja",
+        "proračun",
+        "odmor"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/gmoney.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €",
+        "storefront_url": "https://apps.apple.com/hr/app/id6755782939"
+      }
+    },
+    {
+      "key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "name": "G+Money Lite: Putni troškovi",
+      "summary": "G+Money Lite — Pametan putni konverter valuta i praćenje troškova",
+      "category": "finance",
+      "search_terms": [
+        "troškovi",
+        "džeparac",
+        "brzi unos",
+        "zapešće",
+        "početni zaslon",
+        "devize",
+        "putovanje",
+        "jednostavno",
+        "potrošnja",
+        "dnevnik"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/gmoneylite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6793436548"
+      }
+    },
+    {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite: Cijena u satima",
+      "summary": "HoursTag Lite - Pogledaj pravu cijenu stvari",
+      "category": "finance",
+      "search_terms": [
+        "impulzivna kupnja",
+        "isplati se",
+        "potreba",
+        "želja",
+        "kupovina",
+        "rasipanje",
+        "navike",
+        "žaljenje",
+        "minimalizam",
+        "widget"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6794039979"
+      }
+    },
+    {
+      "key": "hourstag",
+      "app_store_id": "6754218117",
+      "name": "HoursTag: Sati za kupnju",
+      "summary": "Koliko to stvarno košta? Ne u eurima, nego u satima vašeg života.",
+      "category": "finance",
+      "search_terms": [
+        "praćenje",
+        "štednja",
+        "financije",
+        "uštedjeti",
+        "novac",
+        "plaća",
+        "prihodi",
+        "budžet",
+        "ciljevi",
+        "kupnja",
+        "cijena",
+        "kalkulator"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/hourstag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €",
+        "storefront_url": "https://apps.apple.com/hr/app/id6754218117"
+      }
+    },
+    {
+      "key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "name": "LED Moving Text",
+      "summary": "Upiši rečenicu i podigni iPhone. Iz zadnjeg reda, s druge strane dolazne dvorane ili preko pulta pročita se jednim pogledom.",
+      "category": "utility",
+      "search_terms": [
+        "znak",
+        "ploča",
+        "transparent",
+        "plakat",
+        "koncert",
+        "navijanje",
+        "aerodrom",
+        "preuzimanje",
+        "obavijest",
+        "neon",
+        "izlog",
+        "slova",
+        "red"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/ledmovingtext.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6806639602"
+      }
+    },
+    {
+      "key": "lockhour",
+      "app_store_id": "6780107485",
+      "name": "LockHour Pro: Blokada i fokus",
+      "summary": "Zastitite svoje najbolje sate. LockHour Pro pomaze vam da se posvetite mirnim sesijama fokusa, smanjite ometanja telefonom i izgradite bolje radne navike bez nereda. Stvoren je za ucenje, duboki rad, pisanje, planiranje i svaki zadatak koji zasluzuje punu paznju.",
+      "category": "productivity",
+      "search_terms": [
+        "koncentracija",
+        "pomodoro",
+        "mjerač",
+        "vremena",
+        "učenje",
+        "ovisnost",
+        "mobitel",
+        "ekran",
+        "društvene",
+        "mreže",
+        "produktivnost"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/lockhour.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6780107485"
+      }
+    },
+    {
+      "key": "lumibopomofo",
+      "app_store_id": "6773017109",
+      "name": "Lumi Bopomofo",
+      "summary": "Razigran prvi korak u zvukove mandarinskog kineskog. Lumi Bopomofo pretvara Zhuyin, fonetski sustav za mandarinski, u drazesnu igru s temom planeta za djecu od 3 do 6 godina. Kratke aktivnosti pomazu malim ucenicima da s pouzdanjem prepoznaju simbole, zvukove i kombinacije.",
+      "category": "kids",
+      "search_terms": [
+        "mandarinski",
+        "učenje",
+        "tajvan",
+        "tradicionalni",
+        "tonovi",
+        "izgovor",
+        "glasovi",
+        "zabava",
+        "simboli",
+        "pisanje",
+        "vrtić",
+        "potezi"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/lumibopomofo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6773017109"
+      }
+    },
+    {
+      "key": "lumibopomofopro",
+      "app_store_id": "6775773117",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "summary": "Slatka Zhuyin pustolovina za djecu od 3 do 7 godina. Lumi Bopomofo Pro uči svih 37 Bopomofo znakova kroz slušanje, prepoznavanje, tonove, spajanje glasova i pisanje po tragu.",
+      "category": "kids",
+      "search_terms": [
+        "mandarinski",
+        "tajvan",
+        "djeca",
+        "izgovor",
+        "glasovi",
+        "slogovi",
+        "precrtavanje",
+        "ispis",
+        "vrtić",
+        "predškolci",
+        "dvojezično"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/lumibopomofopro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/hr/app/id6775773117"
+      }
+    },
+    {
+      "key": "lumiletters",
+      "app_store_id": "6778748533",
+      "name": "Lumi Letters Lite: ABC",
+      "summary": "Počnite slovom A i prvim planetom, a ostatak otključajte samo ako se svidi vašoj obitelji. Lumi Letters Lite pretvara englesku abecedu u zvjezdanu pustolovinu za djecu od 3 do 7 godina: čuju naziv i glas svakog slova, prstom crtaju velika i mala slova uz vodilice za pisanje i skupljaju slatke prijatelje slova. Bez oglasa, radi i bez interneta.",
+      "category": "kids",
+      "search_terms": [
+        "engleski",
+        "djecu",
+        "fonika",
+        "glasovi",
+        "čitati",
+        "učiti",
+        "vrtić",
+        "predškolci",
+        "igre",
+        "edukativne",
+        "listići",
+        "čitanje",
+        "slova"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/lumiletters.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6778748533"
+      }
+    },
+    {
+      "key": "lumiletterspro",
+      "app_store_id": "6778491147",
+      "name": "Lumi Letters Pro: ABC Phonics",
+      "summary": "Slušaj glas, pronađi ga u riječi i piši slovo po tragu: prava fonika za najmlađe. Lumi Letters Pro vodi djecu kroz 14 planeta, 12 vrsta zadataka i 26 slovnih prijatelja za skupljanje. Slušaju prvi, srednji i zadnji glas riječi, spajaju velika i mala slova i pišu svako slovo po tragu uz pomoćne crte. U roditeljskom kutku pratite napredak u četiri vještine i ispisujete dnevni radni listić. Bez oglasa, bez pretplate, bez prikupljanja podataka i radi bez interneta.",
+      "category": "kids",
+      "search_terms": [
+        "abeceda",
+        "slova",
+        "izgovor",
+        "samoglasnici",
+        "vrtić",
+        "predškolci",
+        "pisanje",
+        "čitanje",
+        "radni",
+        "listići",
+        "učenje",
+        "fonetika"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/lumiletterspro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/hr/app/id6778491147"
+      }
+    },
+    {
+      "key": "lumimath",
+      "app_store_id": "6778269699",
+      "name": "Lumi Math Planet: Explorer",
+      "summary": "Točan odgovor i mali planet zasja. Lumi Math Planet pretvara brojanje, zbrajanje, oduzimanje, tablicu množenja, sat i novac u zabavnu svemirsku pustolovinu: 46 vrsta zadataka sa slikama i čitanjem naglas. Roditelji prate napredak, vježbaju slabija područja i ispisuju radne listiće s rješenjima. Bez reklama i bez pretplate.",
+      "category": "kids",
+      "search_terms": [
+        "oblici",
+        "edukativne",
+        "brojanje",
+        "zbrajanje",
+        "oduzimanje",
+        "tablica",
+        "množenja",
+        "brojevi",
+        "sat",
+        "novac",
+        "razred",
+        "matematika"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/lumimath.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6778269699"
+      }
+    },
+    {
+      "key": "lumimathpro",
+      "app_store_id": "6776958488",
+      "name": "Lumi Math Pro: Brojevi",
+      "summary": "Pretvorite matematičko razmišljanje u toplu svemirsku avanturu. Lumi Math Pro pomaže djeci od 3 do 6 godina vježbati brojanje, osjećaj za brojeve, zbrajanje, obrasce, oblike i logiku kroz kratke, jasne zadatke.",
+      "category": "kids",
+      "search_terms": [
+        "matematika",
+        "mozgalice",
+        "zagonetke",
+        "razmišljanje",
+        "nizovi",
+        "uzorci",
+        "napamet",
+        "natjecanje",
+        "djeca",
+        "izazovi",
+        "listići"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/lumimathpro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/hr/app/id6776958488"
+      }
+    },
+    {
+      "key": "lumimission",
+      "app_store_id": "6779750237",
+      "name": "Lumi Mission Planet",
+      "summary": "Pretvorite svakodnevne rutine u male, vesele pobjede. Lumi Mission Planet pomaže djeci od 3 do 7 godina prati zube, jesti, pospremati igračke, spremati se za spavanje i školu kroz nježne svemirske misije.",
+      "category": "kids",
+      "search_terms": [
+        "sustav nagrađivanja",
+        "naljepnice",
+        "zvjezdice",
+        "rutina",
+        "predškolac",
+        "pranje zubi",
+        "spremanje",
+        "ponašanje",
+        "pohvala"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/lumimission.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6779750237"
+      }
+    },
+    {
+      "key": "lumimissionpro",
+      "app_store_id": "6779745474",
+      "name": "Lumi Mission Planet Pro",
+      "summary": "Pretvorite svakodnevne rutine u male, vesele pobjede. Lumi Mission Planet pomaže djeci od 3 do 7 godina prati zube, jesti, pospremati igračke, spremati se za spavanje i školu kroz nježne svemirske misije.",
+      "category": "kids",
+      "search_terms": [
+        "djeca",
+        "dnevni raspored",
+        "predškolac",
+        "pranje zubi",
+        "spremanje",
+        "spavanje",
+        "samostalnost",
+        "navike",
+        "vrtić",
+        "škola"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/lumimissionpro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/hr/app/id6779745474"
+      }
+    },
+    {
+      "key": "lumiweather",
+      "app_store_id": "6779552704",
+      "name": "Lumi Vrijeme: Prognoza danas",
+      "summary": "Lumi Vrijeme u sekundi pokazuje je li danas pravi dan za izlazak: ocjenu izlaska od 0 do 100 i kratku procjenu koju pročitate u prolazu.",
+      "category": "kids",
+      "search_terms": [
+        "vremenska",
+        "temperatura",
+        "kišobran",
+        "widget",
+        "sutra",
+        "satna",
+        "tjedan",
+        "oluja",
+        "snijeg",
+        "šetnja",
+        "bicikl",
+        "odjeća",
+        "oborine"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/lumiweather.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6779552704"
+      }
+    },
+    {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "name": "Mask My File: Ukloni podatke",
+      "summary": "Dijelite bez brige i zadržite koristan kontekst. Mask My File pronalazi privatne podatke prije nego što pošaljete datoteku, trajno prekriva ono što odaberete, a zatim ponovno otvara i provjerava novu kopiju prije nego što prikaže Private Ready.",
+      "category": "photo-utility",
+      "search_terms": [
+        "anonimizacija",
+        "cenzura",
+        "osobni podaci",
+        "putovnica",
+        "liječnički nalaz",
+        "ugovor",
+        "metapodaci",
+        "pdf",
+        "privatnost"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/maskmyfile.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6792850916"
+      }
+    },
+    {
+      "key": "mochi",
+      "app_store_id": "6785004775",
+      "name": "Mochi: Slatki zadaci",
+      "summary": "Mochi je slatka i umirujuća aplikacija za zadatke koja planiranje dana pretvara u mali trenutak zadovoljstva. Zapiši što trebaš napraviti, dodirni kružić kad završiš i uživaj u osjećaju napretka bez pritiska.",
+      "category": "productivity",
+      "search_terms": [
+        "popis",
+        "planer",
+        "bilješke",
+        "navike",
+        "rutina",
+        "raspored",
+        "kupnja",
+        "agenda",
+        "kalendar",
+        "dnevno",
+        "ciljevi",
+        "škola",
+        "posao",
+        "teme"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/mochi.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6785004775"
+      }
+    },
+    {
+      "key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "name": "Mochi DoneStamp: Zadnji put",
+      "summary": "Kada ste zadnji put promijenili posteljinu, zalili biljku, nazvali obitelj, sigurnosno kopirali fotografije ili zamijenili filtar?",
+      "category": "lifestyle",
+      "search_terms": [
+        "zalijevanje",
+        "dijeljenje",
+        "čišćenje",
+        "održavanje",
+        "kućanski poslovi",
+        "ponavljajuće",
+        "interval",
+        "povijest",
+        "widget"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/mochidonestamp.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6790800323"
+      }
+    },
+    {
+      "key": "moneytag",
+      "app_store_id": "6801956402",
+      "name": "MoneyTag: Prihodi i troškovi",
+      "summary": "Svaki projekt vodi svoje knjige: prihodi minus troškovi daju njegov neto rezultat. Ovdje su pitanja koja najčešće dobivamo. Ako vašeg nema, javite nam se — svaku poruku čita stvarna osoba.",
+      "category": "finance",
+      "search_terms": [
+        "knjigovodstvo",
+        "dobit",
+        "gubitak",
+        "obrt",
+        "paušalist",
+        "freelancer",
+        "najam",
+        "klijenti",
+        "blagajna",
+        "udruga",
+        "vjenčanje",
+        "posao"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/moneytag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6801956402"
+      }
+    },
+    {
+      "key": "onepageppt",
+      "app_store_id": "6798814385",
+      "name": "OnePage PPT: AI slajd",
+      "summary": "Od zida teksta nastaje JEDAN slajd koji ljudi doista pročitaju.",
+      "category": "productivity",
+      "search_terms": [
+        "sažetak",
+        "prezentacija",
+        "pptx",
+        "grafikon",
+        "dijagram",
+        "izvješće",
+        "tablica",
+        "infografika",
+        "seminarski",
+        "pdf",
+        "sastanak"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/onepageppt.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6798814385"
+      }
+    },
+    {
+      "key": "photocream",
+      "app_store_id": "6781808054",
+      "name": "PhotoCream Pro: Retro filteri",
+      "summary": "PhotoCream Pro pretvara vaš telefon u filmski fotoaparat: zrno, halaciju i curenje svjetla vidite uživo, još prije pritiska na okidač. Više od 100 filmskih izgleda, kopiranje boja s bilo koje fotografije, retuš kože i potpuni uređivač za svjetlo, boje i krivulje. Sve se odvija na uređaju: bez pretplate, bez reklama, a vaše se fotografije nikad ne učitavaju na internet.",
+      "category": "photo-utility",
+      "search_terms": [
+        "vintage",
+        "retro",
+        "film",
+        "zrno",
+        "uređivanje",
+        "fotografija",
+        "selfie",
+        "ljepota",
+        "retuš",
+        "estetika",
+        "35mm",
+        "jednokratni",
+        "efekti"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/photocream.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6781808054"
+      }
+    },
+    {
+      "key": "picclear",
+      "app_store_id": "6780223070",
+      "name": "PicClear Pro: Čišćenje slika",
+      "summary": "Oslobodi gigabajte prostora uklanjanjem fotografija koje ti više ne trebaju: duplikata, starih snimki zaslona, zamućenih kadrova i velikih videozapisa.",
+      "category": "photo-utility",
+      "search_terms": [
+        "duple fotografije",
+        "oslobodi prostor",
+        "čišćenje",
+        "memorija",
+        "puna",
+        "galerija",
+        "slične",
+        "mutne",
+        "veliki videi",
+        "izbriši"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/picclear.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6780223070"
+      }
+    },
+    {
+      "key": "qrcodehalo",
+      "app_store_id": "6806779853",
+      "name": "QR Code Halo: Skener kodova",
+      "summary": "QR Code Halo djeluje čim pročita kod. Skenirajte kamerom ili odaberite sliku: poveznice se otvaraju u pregledniku, kodovi za prijavu pristupnim ključem i poveznice aplikacija idu izravno u iOS, Wi-Fi kodovi prikazuju iOS upit za spajanje, a pozivi, poruke, e-pošta i mjesta otvaraju se u svojim aplikacijama. Kontakti i događaji otvaraju iOS zaslon za dodavanje, gdje sami potvrđujete. Tekst se kopira uz kratku napomenu, a kodovi javascript:, data: ili file: nikad se ne otvaraju. Ako želite najprije provjeriti svaki kod, isključite „Pokreni nakon skeniranja” u Postavkama; skupno skeniranje samo prikuplja.",
+      "category": "utility",
+      "search_terms": [
+        "čitač",
+        "barkod",
+        "generator",
+        "kreator",
+        "wifi",
+        "poveznica",
+        "sigurna",
+        "phishing",
+        "prevara",
+        "vizitka",
+        "url",
+        "skeniranje",
+        "slika"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/qrcodehalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6806779853"
+      }
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: AI oznake",
+      "summary": "Spremi sada. I ovaj put stvarno pročitaj.",
+      "category": "productivity",
+      "search_terms": [
+        "kategorije",
+        "čitanje",
+        "kasnije",
+        "popis",
+        "članci",
+        "videi",
+        "gledanje",
+        "objave",
+        "zbirka",
+        "recepti",
+        "želja",
+        "favoriti",
+        "kupnja"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/savetag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6802505528"
+      }
+    },
+    {
+      "key": "scanto",
+      "app_store_id": "6779977651",
+      "name": "ScanTo Pro: PDF i OCR",
+      "summary": "Skener dokumenata koji sve obavlja na uređaju — uključujući prepoznavanje teksta.",
+      "category": "productivity",
+      "search_terms": [
+        "skeniranje",
+        "skeniraj",
+        "račun",
+        "dokument",
+        "osobna",
+        "iskaznica",
+        "posjetnica",
+        "ugovor",
+        "tekst",
+        "prepoznavanje",
+        "lozinka"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/scanto.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6779977651"
+      }
+    },
+    {
+      "key": "sereno",
+      "app_store_id": "6788236641",
+      "name": "Sereno: Zvukovi za san",
+      "summary": "Sereno pretvara vaš telefon u vrhunsku zvučnu mašinu za spavanje, fokus i smirenost. Kiša, ocean, vjetar, vatra i još mnogo toga prave su terenske snimke koje se miješaju u više od 1000 jedinstvenih zvučnih pejzaža i nasumično isprepliću dok slušate — bez fiksne petlje, samo nježna mješavina koja vas nosi kroz noć.",
+      "category": "sleep-sound",
+      "search_terms": [
+        "uspavljivanje",
+        "fokus",
+        "oluja",
+        "valovi",
+        "smeđi",
+        "ružičasti",
+        "nesanica",
+        "beba",
+        "opuštanje",
+        "meditacija",
+        "učenje",
+        "ADHD"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/sereno.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6788236641"
+      }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "Vaše snimke, uredno složene Pronađite, riješite i očistite svaku snimku.",
+      "category": "photo-utility",
+      "search_terms": [
+        "čišćenje",
+        "fotografija",
+        "duplikati",
+        "slične",
+        "slike",
+        "pretraga",
+        "teksta",
+        "galerija",
+        "brisanje",
+        "OCR",
+        "photo cleaner"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/shotinbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6802166527"
+      }
+    },
+    {
+      "key": "snapport",
+      "app_store_id": "6780575828",
+      "name": "Snapport: Slike za Putovnicu",
+      "summary": "Snimite fotografije za putovnicu, vizu i osobne dokumente kod kuće, mirno i privatno. Snapport priprema samo fotografiju; sam dokument izdaje nadležno tijelo ili ustanova. Snapport nudi predloške uobičajenih dimenzija, vodiče za poravnanje lica, alate za pozadinu i rasporede spremne za ispis, a obrada se odvija izravno na vašem iPhoneu.",
+      "category": "photo-utility",
+      "search_terms": [
+        "fotografija za putovnicu",
+        "slika za vizu",
+        "slika za osobnu",
+        "biometrijska fotografija",
+        "slika za životopis"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/snapport.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/hr/app/id6780575828"
+      }
+    },
+    {
+      "key": "snapportlite",
+      "app_store_id": "6792856304",
+      "name": "Snapport Lite: Slike za osobnu",
+      "summary": "Trebate fotografiju točno određene veličine? Snapport Lite obrezuje vaš portret točno na odabranu veličinu, izravno na vašem uređaju. Snimite novu fotografiju ili odaberite jednu iz knjižnice, poravnajte lice prema vodilicama, uredite pozadinu i izvezite.",
+      "category": "photo-utility",
+      "search_terms": [
+        "fotografija za dokumente",
+        "obrezivanje",
+        "dimenzije",
+        "bijela pozadina",
+        "ispis",
+        "10x15",
+        "pikseli",
+        "dpi",
+        "selfie",
+        "cv"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/snapportlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6792856304"
+      }
+    },
+    {
+      "key": "sononote",
+      "app_store_id": "6782139553",
+      "name": "Sono Note",
+      "summary": "Govorite prirodno. Dobijte tekst na koji možete biti ponosni.",
+      "category": "productivity",
+      "search_terms": [
+        "transkripcija",
+        "diktafon",
+        "glasovne",
+        "zvuka",
+        "zapisnik",
+        "sastanka",
+        "predavanja",
+        "sažetak",
+        "zadaci",
+        "intervju",
+        "snimanje"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/sononote.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6782139553"
+      }
+    },
+    {
+      "key": "stayclock",
+      "app_store_id": "6814035888",
+      "name": "Stay Clock: preklopni sat",
+      "summary": "Stay Clock pretvara vaš iPhone ili iPad u stolni sat koji svijetli bez prekida i čita se s drugog kraja sobe. Velik prikaz vremena, kalendar prilagođen svakom brojčaniku i jedan izgled koji vas prati u modu pripravnosti, na zaključanom zaslonu, u widgetima početnog zaslona i na Apple Watchu.",
+      "category": "utility",
+      "search_terms": [
+        "noćni ormarić",
+        "mod pripravnosti",
+        "priključna stanica",
+        "punjenje",
+        "oled",
+        "widgeti",
+        "digitalni",
+        "budilica",
+        "veliki"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/stayclock.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6814035888"
+      }
+    },
+    {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "name": "Studydown: Praćenje vremena",
+      "summary": "Odvojite vrijeme za ono što vam je važno. Studydown bilježi koliko ulažete u projekt, čitanje ili hobi: dovoljno je odabrati aktivnost i položiti telefon zaslonom prema dolje.",
+      "category": "productivity",
+      "search_terms": [
+        "učenje",
+        "studiranje",
+        "fokus",
+        "produktivnost",
+        "štoperica",
+        "navike",
+        "ciljevi",
+        "rokovi",
+        "čitanje",
+        "ispit",
+        "sati",
+        "statistika"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/studydown.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6807335593"
+      }
+    },
+    {
+      "key": "tripplanet",
+      "app_store_id": "6787193643",
+      "name": "Trip Planet za djecu",
+      "summary": "Pretvorite svako obiteljsko putovanje u malu svemirsku avanturu. Trip Planet pretvara duge letove, pun auto i noćenja u hotelu u misije za djecu od 3 do 10 godina, s nagradama za skupljanje i pečatom u putovnici za svako završeno putovanje. Dvoje roditelja može dijeliti isto putovanje. Bez reklama i bez praćenja trećih strana.",
+      "category": "kids",
+      "search_terms": [
+        "odmor",
+        "putovanje",
+        "avion",
+        "auto",
+        "mališani",
+        "nagrade",
+        "putovnica",
+        "pečati",
+        "uspomene",
+        "fotografije",
+        "hotel",
+        "muzej",
+        "ljeto"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/tripplanet.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6787193643"
+      }
+    },
+    {
+      "key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "name": "TripBee Lite: Plan putovanja",
+      "summary": "Posvetite punu pozornost sljedećem putovanju. TripBee Lite miran je i dotjeran planer osmišljen za jedno aktivno putovanje.",
+      "category": "travel",
+      "search_terms": [
+        "ljetovanje",
+        "vikend",
+        "itinerar",
+        "raspored",
+        "kalendar",
+        "hotel",
+        "karte",
+        "rezervacija",
+        "podsjetnik",
+        "vrijeme",
+        "odbrojavanje"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/tripbeelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6791299610"
+      }
+    },
+    {
+      "key": "tripbee",
+      "app_store_id": "6787754435",
+      "name": "TripBee: Planer Putovanja",
+      "summary": "Planiraj offline, privatno sinkroniziraj putem iClouda i pozovi druge da uređuju zajedničko putovanje. Jednokratna kupnja, bez oglasa i praćenja.",
+      "category": "travel",
+      "search_terms": [
+        "obitelj",
+        "prijatelji",
+        "zajedno",
+        "kiša",
+        "vremenska zona",
+        "ukrcajna",
+        "kofer",
+        "prtljaga",
+        "beba",
+        "djeca",
+        "plaža",
+        "pakiranje"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/tripbee.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/hr/app/id6787754435"
+      }
+    },
+    {
+      "key": "unblurry",
+      "app_store_id": "6782275018",
+      "name": "Unblurry Pro: Jasne fotke",
+      "summary": "Mutna fotografija? Pretvorite je u jasnu i oštru.",
+      "category": "photo-utility",
+      "search_terms": [
+        "izoštri fotografiju",
+        "mutna fotografija",
+        "ukloni zamućenje",
+        "poboljšaj fotografiju",
+        "photo enhancer",
+        "mutno",
+        "4k"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/unblurry.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6782275018"
+      }
+    },
+    {
+      "key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "name": "UsageNow: Potrošnja AI-ja",
+      "summary": "AI limit potrošen usred zadatka? UsageNow pokazuje koliko ti je ostalo na svakom AI planu i točno kada se obnavlja, izravno na početnom zaslonu. Upozorit će te prije nego što sve potrošiš.",
+      "category": "productivity",
+      "search_terms": [
+        "code",
+        "dev",
+        "programer",
+        "usage",
+        "tracker",
+        "kvota",
+        "brojač",
+        "token",
+        "widget",
+        "reset",
+        "quota",
+        "meter",
+        "monitor",
+        "llm",
+        "sesija",
+        "api"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/claudeusagemini.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6818607603"
+      }
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "name": "WiFi Aid: Dijagnostika mreže",
+      "summary": "Pronađite najvjerojatniji uzrok neovisnim provjerama putanja, DNS-a, TCP-a, TLS-a, vremena i stabilnosti. Jedno plaćanje unaprijed, bez pretplate, oglasa i praćenja.",
+      "category": "photo-utility",
+      "search_terms": [
+        "latencija",
+        "jitter",
+        "ipv6",
+        "tcp",
+        "čvor",
+        "pojačivač",
+        "roaming",
+        "izvještaj",
+        "pdf",
+        "povijest",
+        "widget",
+        "sat",
+        "stabilnost",
+        "optika"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/wifiaid.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/hr/app/id6790467886"
+      }
+    },
+    {
+      "key": "wifiaidlite",
+      "app_store_id": "6793414462",
+      "name": "WiFi Aid Lite",
+      "summary": "Pronađi stvarni problem. Bez kupnje možete ukupno jednom provesti potpunu provjeru bilo kojim alatom. Neobavezna jednokratna kupnja u aplikaciji otključava neograničene provjere i usporedbu prije i nakon popravka—bez pretplate, oglasa ili praćenja.",
+      "category": "utility",
+      "search_terms": [
+        "mreža",
+        "veza",
+        "sporo",
+        "prekid",
+        "ping",
+        "test",
+        "provjera",
+        "problem",
+        "popravak",
+        "stranica",
+        "prijava",
+        "hotel",
+        "operater",
+        "modem"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/wifiaidlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6793414462"
+      }
+    },
+    {
+      "key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "name": "Wordmate Lite: vokabular",
+      "summary": "Želiš napokon pomaknuti strani jezik s mrtve točke, ali večer opet prođe bez ijedne nove riječi. Wordmate Lite svodi učenje na jednu minutu dnevno, minutu koju stvarno možeš održati.",
+      "category": "education",
+      "search_terms": [
+        "engleski",
+        "njemački",
+        "španjolski",
+        "talijanski",
+        "francuski",
+        "jezici",
+        "učenje",
+        "pamćenje",
+        "navika",
+        "početnici",
+        "offline"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/wordmatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Besplatno",
+        "storefront_url": "https://apps.apple.com/hr/app/id6797601720"
+      }
+    },
+    {
+      "key": "wordmate",
+      "app_store_id": "6789917808",
+      "name": "Wordmate: Učite nove riječi",
+      "summary": "Iskoristite svaki slobodan trenutak za nove riječi. Wordmate nudi 44 jezika, 14 praktičnih tema i tri razine, primjer rečenice za svaku englesku riječ i izgovor koji možete poslušati. Učite iz interaktivnog widgeta na početnom zaslonu ili sa sata. Plaćate jednom: bez pretplate i kupnji u aplikaciji.",
+      "category": "education",
+      "search_terms": [
+        "japanski",
+        "korejski",
+        "kineski",
+        "ruski",
+        "portugalski",
+        "primjeri rečenica",
+        "izgovor",
+        "razine",
+        "ponavljanje",
+        "lekcije"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/wordmate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/hr/app/id6789917808"
+      }
+    },
+    {
+      "key": "zipbox",
+      "app_store_id": "6806776579",
+      "name": "Zipbox: otvori RAR, ZIP, 7z",
+      "summary": "Zipbox se plaća pri preuzimanju s App Storea. Sve su funkcije uključene, bez kupnji u aplikaciji, pretplata i oglasa. Svih 13 formata obrađuje se na uređaju.",
+      "category": "utility",
+      "search_terms": [
+        "arhiva",
+        "lozinka",
+        "šifriranje",
+        "mapa",
+        "datoteke",
+        "upravitelj",
+        "unrar",
+        "tar",
+        "gz",
+        "iso",
+        "pregled",
+        "kompresija",
+        "offline",
+        "rar5"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/hr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/hr/zipbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €",
+        "storefront_url": "https://apps.apple.com/hr/app/id6806776579"
+      }
+    }
+  ]
+}

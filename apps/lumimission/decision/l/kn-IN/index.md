@@ -1,0 +1,28 @@
+---
+title: "ಪ್ರೀ-ಸ್ಕೂಲ್ ಮಕ್ಕಳಿಗೆ ಜಾಹೀರಾತು ಇಲ್ಲದ ಅತ್ಯುತ್ತಮ ಮಲಗುವ ಸಮಯ ಕ್ರಮ ಅಪ್ಲಿಕೇಶನ್"
+lang: "kn-IN"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumimission/decision/l/kn-IN/index.html"
+modified: "2026-10-21"
+app_store_id: "6779750237"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# ಪ್ರೀ-ಸ್ಕೂಲ್ ಮಕ್ಕಳಿಗೆ ಜಾಹೀರಾತು ಇಲ್ಲದ ಅತ್ಯುತ್ತಮ ಮಲಗುವ ಸಮಯ ಕ್ರಮ ಅಪ್ಲಿಕೇಶನ್
+
+ಪ್ರೀ-ಸ್ಕೂಲ್ ಮಕ್ಕಳಿಗೆ ಮಲಗುವ ಸಮಯ ಕ್ರಮ ಚಿಕ್ಕದು, ದೃಶ್ಯವಾಗಿದ್ದು, ಮಗು ಮತ್ತೊಬ್ಬರ ನೆನಪಿನ ಅಗತ್ಯವಿಲ್ಲದೆ ಅನುಸರಿಸಬಹುದಾದಷ್ಟು ನಿರ್ಧಿಷ್ಟವಾಗಿದ್ದರೆ ಉತ್ತಮವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. ಪರಿಚಿತ ಎನಿಸಿದರೆ Lumi Mission Planet ಒಮ್ಮೆ ನೋಡಿ.
+
+- ಮಕ್ಕಳು ಮತ್ತು ಕಲಿಕೆ
+- ಉಚಿತವಾಗಿ ಪ್ರಾರಂಭಿಸಿ
+- ಖಾತೆ ಇಲ್ಲ
+- ಜಾಹೀರಾತುಗಳಿಲ್ಲ
+- ಹಿಂಡಿಕೆ ಇಲ್ಲ
+- ಗೌಪ್ಯ / ಸಾಧನದಲ್ಲಿ
+- App Store · ಉಚಿತ
+
+[Lumi Mission Planet ಅನ್ನು App Store ನಲ್ಲಿ ಪಡೆಯಿರಿ →](https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=geo_pick&mt=8)
+
+[ಪೂರ್ಣ ಮಾರ್ಗದರ್ಶನ ಓದಿ](https://open.cait518.cc/ios-app-guide/kn-IN/answers/best-bedtime-routine-app-for-preschoolers-with-no-ads.html)
+
+> ಆ್ಯಪ್ ಡೆವಲಪರ್ Lumi Studio ಬರೆದ ಮಾರ್ಗದರ್ಶಿ. ಆ್ಯಪ್‌ಗಳ ಹೆಸರುಗಳು ಅವುಗಳ ಮಾಲೀಕರ ವ್ಯಾಪಾರ ಚಿಹ್ನೆಗಳು; ಗುರುತಿಸಲು ಮಾತ್ರ ಬಳಸಲಾಗಿದೆ. ದಾಖಲೆ, ಆರೋಗ್ಯ, ಶಾಲೆ ಮತ್ತು ಉತ್ಪಾದಕತೆಗೆ ಸಂಬಂಧಿಸಿದ ನಿರ್ಧಾರಗಳಲ್ಲಿ ಅಗತ್ಯವಿರುವ ಕಡೆ ಅಧಿಕೃತ ನಿಯಮಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.

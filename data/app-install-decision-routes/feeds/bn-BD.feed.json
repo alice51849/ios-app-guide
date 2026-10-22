@@ -1,0 +1,44 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "54টি যাচাইকৃত লাইভ অ্যাপ",
+  "home_page_url": "https://open.cait518.cc/ios-app-guide/bn-BD/index.html",
+  "feed_url": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/bn-BD.feed.json",
+  "description": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
+  "language": "bn-BD",
+  "authors": [
+    {
+      "name": "Lumi Studio",
+      "url": "https://open.cait518.cc/ios-app-guide/about.html"
+    }
+  ],
+  "_meta": {
+    "publisher_disclosure": "এটি Lumi Studio দ্বারা প্রকাশিত প্রথম পক্ষের উপাদান, যিনি প্রতিটি তালিকাভুক্ত অ্যাপের ডেভেলপার।",
+    "record_count": 0,
+    "is_ranking": false,
+    "measured_search_volume": false,
+    "alternate_feeds": {
+      "atom": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/bn-BD.atom.xml",
+      "rss": "https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/feeds/bn-BD.rss.xml"
+    }
+  },
+  "items": [],
+  "_market_availability": {
+    "state": "MARKET_UNAVAILABLE_OR_UNVERIFIED",
+    "reason": "MARKET_NOT_IN_APPLE_MEDIA_SERVICES",
+    "evidence": {
+      "source_url": "https://support.apple.com/en-us/118205",
+      "observed_at": "2026-09-12",
+      "country": "BD",
+      "apple_media_services_markets": 174,
+      "country_listed": false,
+      "lookup_app_results": 0,
+      "lookup_control_results": 0,
+      "redirect_market": "US"
+    },
+    "value": "N/A",
+    "content_retained": true,
+    "publishable": false,
+    "facts_allowed": false,
+    "outbox_count": 0
+  }
+}

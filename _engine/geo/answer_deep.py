@@ -1,0 +1,5041 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Deep-content items for high-converting "winner" apps (2026-07-08).
+
+Verified from app source code, App Store copy and support docs by two research
+workers (winner-health-kids: Cyca / Lumi Bopomofo / Lumi Weather;
+winner-productivity-photo: Mochi / LockHour / Unblurry). Each item is a
+scenario- or FAQ-style deep answer with {name} placeholders filled at runtime.
+
+Honesty preserved from source: Cyca = on-device, no network/ML, NOT a medical
+device / not contraception; Unblurry = honest motion-blur vs out-of-focus
+limits; LockHour = Screen Time API, Hard Mode bypass honesty; kids apps =
+ad-free, no data collected. Consumed by answer_facts._deep_facts().
+"""
+import json
+from typing import Any
+
+from site_config import PUBLIC_SITE  # noqa: E402
+
+DEEP_ITEMS: list[dict[str, Any]] = json.loads(r'''
+[
+ {
+  "app_key": "cyca",
+  "kind": "faq",
+  "query": "How does a period tracking app calculate the fertile window?",
+  "match": [
+   "how does a period tracking app calculate the fertile window?",
+   "how accurate is a cycle app's fertile window prediction?",
+   "fertile window",
+   "cycle tracking app",
+   "how it estimates"
+  ],
+  "lead": "A cycle-tracking app estimates your fertile window using the statistical average of your own logged period-start dates to predict when ovulation is likely to occur — not population averages.",
+  "detail": "{name} uses pure on-device calendar math — no network connection, no machine learning — to predict ovulation by subtracting the typical luteal length (~14 days) from your average cycle length. It then marks the 5 days before estimated ovulation plus the day of ovulation itself as the fertile window, reflecting the biological window in which sperm can survive up to 5 days to meet an egg. No app can guarantee exact ovulation timing: cycle length varies month to month, and many biological factors affect ovulation that a tracking app cannot observe. Predictions improve as you log more cycles — {name} averages your most recent 6 cycles.",
+  "bullets": [
+   "Fertile window = ~5 days before estimated ovulation + ovulation day itself (~6 days total)",
+   "Ovulation is predicted as: average cycle length minus typical luteal length (~14 days)",
+   "App predictions use your own logged period-start dates, not generic population data",
+   "Accuracy improves with more logged cycles — at least 3–6 cycles gives a more reliable average",
+   "An app is a personal-record tool, not a medical device — never rely on it for clinical decisions"
+  ],
+  "faq": [
+   {
+    "q": "Why does the fertile window shift from month to month?",
+    "a": "Ovulation timing can vary due to stress, illness, travel, sleep disruption, and other factors — meaning even if your average cycle is 28 days, individual cycles can be shorter or longer, shifting the window. {name} recalculates based on your logged history each time you log a new period start."
+   },
+   {
+    "q": "Does {name} send my cycle data anywhere?",
+    "a": "No. {name} stores everything — period start dates, symptoms, moods, notes — only on your iPhone using local calendar math. No account is required; no data leaves your device."
+   },
+   {
+    "q": "Is a cycle-tracking app a reliable form of contraception?",
+    "a": "No. Cycle-tracking apps are informational awareness tools — they are not validated contraceptive methods. Please speak with a qualified healthcare professional about contraception options that are right for you."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "scenario",
+  "query": "Why do I feel irritable and exhausted before my period every month?",
+  "match": [
+   "why do i feel irritable and exhausted before my period every month?",
+   "how to track pms symptoms to find out when they start in my cycle",
+   "pms symptoms",
+   "before period",
+   "mood log cycle"
+  ],
+  "lead": "Many people notice predictable mood and physical changes in the days before their period — a pattern that becomes clearer once you log symptoms across several cycles and can see where in the cycle they cluster.",
+  "detail": "During the luteal phase (roughly the second half of the cycle after ovulation), progesterone rises and then falls; many people experience this as fatigue, irritability, food cravings, bloating, or disrupted sleep — collectively grouped under PMS. {name} lets you log 8 moods (happy, calm, energetic, sensitive, sad, irritable, anxious, tired) and 12 physical symptoms (cramps, headache, bloating, fatigue, cravings, insomnia, acne, and more) each day. After a few cycles, its Rhythm feature runs entirely on your device to surface which of your symptoms cluster in the days before your period, and roughly how many days in advance they tend to appear — helping you plan and prepare rather than be caught off guard. This is a personal-awareness tool; if symptoms are severe or significantly affect your daily life, a healthcare provider can give a proper evaluation.",
+  "bullets": [
+   "Luteal phase = the phase from ovulation to period start, typically 12–14 days",
+   "PMS symptoms most commonly appear in the final 1–2 weeks of the cycle",
+   "Individual patterns vary widely — logging your own data reveals your specific pattern",
+   "2–3 months of consistent daily logging produces enough data for the Rhythm pattern feature",
+   "Severe symptoms that disrupt work, relationships, or sleep (PMDD) warrant a conversation with a doctor"
+  ],
+  "faq": [
+   {
+    "q": "What exactly can I log in {name} each day?",
+    "a": "Flow intensity (spotting/light/medium/heavy), 8 moods, 12 physical symptoms, intimacy, basal body temperature, and a free-text note. Everything is optional — you log only what you choose to track."
+   },
+   {
+    "q": "How many cycles does the Rhythm feature need before it detects a pattern?",
+    "a": "The engine requires at least 5 logged symptom days across cycles to begin surfacing patterns. A minimum of 1 logged cycle length is needed as baseline. More data gives more reliable and specific insights."
+   },
+   {
+    "q": "Can the app tell me if I have PMS or PMDD?",
+    "a": "No. {name} is not a diagnostic tool and cannot classify or diagnose any condition. It shows you your logged symptom patterns in relation to your cycle, for personal awareness. For any diagnosis or treatment, please consult a qualified healthcare professional."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "faq",
+  "query": "Which period tracking apps keep all data on the phone only?",
+  "match": [
+   "which period tracking apps keep all data on the phone only?",
+   "is my menstrual cycle data private and not uploaded to servers?",
+   "period app data privacy",
+   "on-device health data",
+   "no cloud upload"
+  ],
+  "lead": "Cycle and health data is sensitive personal information — whether an app requires an account, syncs to a cloud server, or includes third-party analytics SDKs determines how private your data actually is.",
+  "detail": "Some period-tracking apps store data on remote servers, require account sign-up, or include third-party analytics frameworks. {name} was built with an on-device-only architecture: the cycle engine, the personal rhythm pattern detection, and the body-forecast calculations all run as local calendar math on your iPhone, with nothing sent to a server. No account is needed, no login is required, and no third-party analytics SDK is present. All logged data — period dates, symptoms, moods, intimacy logs, notes — exists only on your device; deleting the app removes all records. Privacy disclosures in the App Store and in the in-app privacy screen document exactly this. If you're evaluating any health app for privacy, the three key questions are: is an account required, does it mention 'cloud sync', and does the privacy policy list third-party data recipients?",
+  "bullets": [
+   "Account-free apps structurally cannot link your health data to an identity in a remote database",
+   "Look for explicit 'on-device only' language in an app's privacy policy — not just 'we take privacy seriously'",
+   "No analytics SDK means usage patterns aren't shared with advertising or data-brokering networks",
+   "On-device-only means deleting the app is a complete data deletion — there's no server copy to request removal of",
+   "Paid apps with no ad revenue have weaker commercial incentives to monetize health data"
+  ],
+  "faq": [
+   {
+    "q": "How do I verify that {name} doesn't upload my data?",
+    "a": "The privacy policy states on-device-only storage; the app requires no account or email; and the App Store nutrition label lists no data linked to you or used to track you. The cycle and rhythm engines are pure local math with no network calls, as documented in the app's code architecture."
+   },
+   {
+    "q": "What happens to all my logged data if I delete the app?",
+    "a": "All data is stored locally, so deleting {name} removes all records from your device. There is no server copy. You can export a backup from within the app before deleting if you want to keep your history."
+   },
+   {
+    "q": "Can I use {name} without creating any account?",
+    "a": "Yes — {name} requires no account, no sign-up, and no email address. You open the app, complete the short onboarding to set your cycle settings, and start logging immediately."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "scenario",
+  "query": "Why is my period cycle a different number of days every month?",
+  "match": [
+   "why is my period cycle a different number of days every month?",
+   "what is a normal range for menstrual cycle length variation?",
+   "cycle length",
+   "irregular period",
+   "why different month to month"
+  ],
+  "lead": "It's common for cycle length to vary by several days from month to month — a spread of up to about 7–9 days across cycles is within the typical range for many adults.",
+  "detail": "Menstrual cycle length is counted from the first day of one period to the first day of the next. For adults, a cycle of 21–35 days is generally considered within a typical range; in adolescents, more variation is common. Stress, illness, significant weight changes, sleep disruption, and travel can all affect ovulation timing, which shifts the cycle length. {name}'s Insights screen shows your personal average cycle length (calculated from your last 6 logged cycles), your average period duration, and your variation (expressed as ± days) — giving you a concrete, data-driven picture of your own pattern over time. A variation of ±4 days or less shows as 'regular'; a wider spread is flagged as 'variable', which may be worth tracking more closely. If your cycle is consistently outside the 21–35 day range, or if it changes suddenly without a clear reason, that's worth discussing with a healthcare provider.",
+  "bullets": [
+   "Cycle length = day 1 of period to day 1 of the next period (not from end to start)",
+   "Typical adult range: 21–35 days; variation of ±7 days across cycles is common",
+   "Ovulation timing shifts first — cycle length changes follow from this",
+   "An app averages your recent cycles to make predictions; logging at least 3–6 cycles improves accuracy",
+   "Consistently <21 days, >35 days, or sudden unexplained changes deserve a healthcare conversation"
+  ],
+  "faq": [
+   {
+    "q": "How does {name} calculate my average cycle length?",
+    "a": "It measures the interval between each pair of consecutive logged period starts, filters outliers (gaps under 15 or over 60 days), takes your most recent up to 6 cycles, and averages them. Until you've logged at least 2 periods, it uses your manually-entered setting as the default."
+   },
+   {
+    "q": "What does the '±' variation number mean in the Insights screen?",
+    "a": "It's the difference between your shortest and longest recent cycle length. A variation of ±4 days or less is shown as 'regular'; a larger spread indicates more variability in your pattern."
+   },
+   {
+    "q": "My cycle runs about 32 days — is that a problem?",
+    "a": "{name} is not a medical tool and cannot tell you whether your cycle length is clinically significant. A 32-day cycle is within the commonly cited adult range of 21–35 days. Any concerns about your cycle — length, regularity, symptoms — should be discussed with a qualified healthcare provider."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "How to teach Bopomofo to a young child living outside Taiwan",
+  "match": [
+   "how to teach bopomofo to a young child living outside taiwan",
+   "chinese heritage family learning zhuyin at home abroad",
+   "overseas chinese family",
+   "teach bopomofo home",
+   "outside taiwan"
+  ],
+  "lead": "Overseas Chinese families maintaining Taiwanese Mandarin literacy at home can use a phonics-first approach with Bopomofo before introducing full characters — short daily app sessions can fill the gap left by limited formal Mandarin instruction.",
+  "detail": "Bopomofo (注音符號, Zhuyin) is the phonetic system used in Taiwan to annotate Mandarin pronunciation — every Taiwan-published children's book prints the 37 symbols beside the characters. For families living outside Taiwan, consistent structured practice replaces what children in Taiwan receive in school. {name} covers all 37 Bopomofo symbols across four game modes — audio-based symbol recognition (Feed the Friends), finger-traced stroke writing (Magic Tracing), four-tone practice (Tone Coaster), and syllable blending (Sound Train) — designed for children aged 4–7. The interface runs in both English and Traditional Chinese, so parents who are themselves more fluent in English can still guide their child through sessions. Progress is saved on-device with no account, no subscription, and no ads.",
+  "bullets": [
+   "Bopomofo is the standard phonics system in Taiwan — it annotates all Taiwan-published school textbooks and most children's books",
+   "Short daily practice (10–15 min) works better than infrequent longer sessions for children aged 4–7",
+   "A natural learning sequence: listening recognition → stroke tracing → tone practice → syllable blending",
+   "The dual English/Chinese interface means English-dominant parents can follow along without knowing Bopomofo themselves",
+   "No ads, no registration, and local-only progress storage remove common friction points for families using the app long-term"
+  ],
+  "faq": [
+   {
+    "q": "My child lives abroad and goes to a local school — will Bopomofo actually be useful for them?",
+    "a": "Bopomofo is specifically valuable for reading Taiwan-published books, accessing Taiwanese children's media, and participating in Taiwanese heritage schools. Families who also use Pinyin (for mainland Chinese materials or international Chinese-language programs) may add Pinyin later; many educators recommend building one phonics system solidly before introducing a second."
+   },
+   {
+    "q": "Do I need to already know Bopomofo myself to use {name} with my child?",
+    "a": "Not necessarily — the app plays accurate audio for every symbol, so children hear correct pronunciation directly. The English-Chinese dual interface means English-dominant parents can follow along. That said, a little learning together typically makes sessions more interactive and engaging."
+   },
+   {
+    "q": "Is there a free trial before committing to the full purchase?",
+    "a": "{name} is free to download, and the free version lets your child try the core games. A one-time in-app purchase unlocks all 37 symbol friends and every level with no ongoing subscription."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "How can my child prepare for grade 1 Bopomofo over the summer before school starts?",
+  "match": [
+   "prepare for grade 1 bopomofo over the summer",
+   "bopomofo over the summer",
+   "summer bopomofo prep",
+   "summer before school starts bopomofo",
+   "get ready for grade 1 bopomofo over the summer"
+  ],
+  "page_title": "Free 14-Day Grade 1 Zhuyin Summer Warm-Up Calendar",
+  "meta_description": "Free bilingual 14-day Zhuyin summer calendar with 8–10 minute activities, three starting lanes, no scores, no login and no school-readiness claim.",
+  "lead": "Start with a free bilingual, print-ready 14-day calendar: choose a gentle starting lane, sample listening, shape, stroke, tone, blending and reading activities, and stop each day within eight to ten minutes.",
+  "detail": "The free 14-day Grade 1 Zhuyin summer warm-up offers three flexible lanes: completely new, recognises some symbols, or ready to combine familiar sounds. Each day follows the same short choose, model, play, connect and close rhythm, with a gentle route plus an optional stretch only when the child is comfortable. It has no child-name field, date field, completion tracker, account, upload, score, diagnosis or saved profile. Taiwan Ministry of Education references establish standard Zhuyin forms, notation and stroke order; they do not prescribe or endorse this calendar. This original 14-day sequence has not been evaluated in a study, does not teach or assess all 37 symbols, and cannot show school readiness, faster learning or future results. Schools differ, so families should ask the child's school about its actual teaching plan. Lumi Bopomofo is optional inside a chosen day for guided listening, tracing, tone or blending practice; the complete calendar works without an app.",
+  "follow_up": "Open or print the free calendar first. If Zhuyin is completely new, choose only two or three symbols from the official chart and let listening count. If the child has prior exposure, use the free three-minute observation guide once to choose a lane rather than assign a score. Repeat, pause or ask the school whenever that is the gentler next step.",
+  "primary_resource_url": "{GUIDE}/tools/zhuyin-grade1-14-day-summer-calendar.html",
+  "primary_resource_label": "Open the free 14-day summer calendar",
+  "bullets": [
+   "English and Traditional Chinese 14-day printable calendar",
+   "Three flexible starting lanes instead of one age-based level",
+   "Eight to ten minutes with an explicit stop boundary each day",
+   "No name, date tracker, score, diagnosis, account, upload or saved profile",
+   "Official symbol and stroke references with explicit non-endorsement and evidence limits"
+  ],
+  "decision_steps": [
+   "Ask the child's school about its actual first-term plan; do not treat this calendar as an entrance requirement.",
+   "Choose the completely new, recognises some or ready-to-combine lane for today.",
+   "Follow the short choose, model, play, connect and close rhythm without quizzing first.",
+   "Use the optional stretch only when the child remains comfortable, and stop within ten minutes.",
+   "After Day 14, repeat, pause or choose one neutral next step without assigning a level."
+  ],
+  "comparison_rows": [
+   {
+    "need": "Flexible starting point",
+    "check": "Three lanes can change from day to day",
+    "why": "Prior exposure varies and the calendar should not label a child"
+   },
+   {
+    "need": "Bounded practice",
+    "check": "Each day has an eight-to-ten-minute ceiling and permission to stop",
+    "why": "Completing every activity is not the goal"
+   },
+   {
+    "need": "Evidence honesty",
+    "check": "The page states that the 14-day sequence is untested and not a readiness measure",
+    "why": "Official notation sources cannot prove outcomes for an independent family routine"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Free bilingual 14-day Grade 1 Zhuyin summer calendar",
+    "url": "{GUIDE}/tools/zhuyin-grade1-14-day-summer-calendar.html"
+   },
+   {
+    "title": "Taiwan Ministry of Education Bopomofo Handbook",
+    "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/html_ch/index.html"
+   },
+   {
+    "title": "Taiwan Ministry of Education Zhuyin Stroke Order",
+    "url": "https://stroke-order.learningweb.moe.edu.tw/phonetic.jsp?la=0"
+   }
+  ],
+  "where_app_fits": "The full 14-day calendar works without an app. Lumi Bopomofo is an optional activity layer after a family chooses today's lane; it provides guided listening, tracing, tone and blending practice across all 37 symbols without making the app or the calendar a school prerequisite.",
+  "faq": [
+   {
+    "q": "Must my child know Zhuyin before Grade 1?",
+    "a": "This calendar sets no entrance requirement. Ask the child's school about its teaching plan and use the calendar only as an optional familiarity routine."
+   },
+   {
+    "q": "Will fourteen days teach all 37 symbols?",
+    "a": "No. The calendar samples listening, shape, stroke, tone, blending and reading interactions. Repeat, pause or continue later without assigning a level."
+   },
+   {
+    "q": "Is Lumi Bopomofo required for the calendar?",
+    "a": "No. Paper, official references, adult modeling and a legally available annotated book are enough. The app is an optional practice activity."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "My child starts grade 1 in September and doesn't know any Bopomofo yet — will they fall behind?",
+  "match": [
+   "doesn't know any bopomofo",
+   "fall behind in grade 1 bopomofo",
+   "starts grade 1 in september and doesn't know",
+   "will my child fall behind without bopomofo",
+   "child doesn't know bopomofo before school"
+  ],
+  "lead": "Taiwan grade 1 teaches Bopomofo from zero — the curriculum assumes no prior knowledge and covers all 37 symbols in the first ten weeks — so a child starting without it will not be left behind; a gentle head start simply makes those fast early weeks feel calmer.",
+  "detail": "Taiwan's Ministry of Education curriculum for grade 1 explicitly assumes children have not learned Bopomofo (注音符號) before: teachers start from the very first symbols (ㄅㄆㄇㄈ) and build up sound, writing, and blending over roughly the first ten weeks after the early-September start, before moving on to reading. So a child who arrives in September knowing no Bopomofo is exactly who the curriculum is designed for, and within a few weeks the class levels out. What a small head start changes is comfort, not survival: children who already recognise some symbols by sound feel less rushed during those intensive first weeks and are less likely to compare themselves anxiously with classmates who attended cram schools. If you have a few weeks before school and want a low-pressure warm-up, keep it playful — 10–15 minute sessions a few times a week, focused on hearing and recognising symbols rather than perfect handwriting. {name} covers all 37 symbols across four game modes (audio recognition, stroke tracing, four-tone practice, and syllable blending) for ages 4–7, with a dual English and Traditional Chinese interface, on-device progress, no ads, and a one-time unlock instead of a subscription — a calm way to build familiarity without turning summer into school.",
+  "bullets": [
+   "Taiwan's grade 1 curriculum assumes zero prior Bopomofo and teaches all 37 symbols from scratch in about the first ten weeks",
+   "A child who starts school knowing no Bopomofo is not behind — the class levels out within a few weeks",
+   "A head start changes comfort, not outcomes: prepped children feel less rushed in the intensive first weeks",
+   "If you warm up beforehand, keep it playful — 10–15 minutes a few times a week, sound-first, no handwriting pressure",
+   "Avoid anxious comparison with cram-school peers; steady home practice catches any child up",
+   "Reading Taiwan-published books later is easier once the 37 symbols are familiar"
+  ],
+  "faq": [
+   {
+    "q": "Will my child really be okay starting grade 1 with no Bopomofo at all?",
+    "a": "Yes. Taiwan's grade 1 curriculum is designed to teach Bopomofo from zero, so teachers assume no prior knowledge and build up from the first symbols. Most classes level out within a few weeks. A head start is a comfort, not a requirement."
+   },
+   {
+    "q": "Is it worth doing anything in the few weeks before school, then?",
+    "a": "A light warm-up helps your child feel calmer during the fast first ten weeks, but it should stay playful — 10 to 15 minutes a few times a week focused on recognising symbols by sound. Avoid drilling or pushing for neat handwriting, which can create pressure before school even starts."
+   },
+   {
+    "q": "How do I help without knowing Bopomofo well myself?",
+    "a": "{name} plays accurate audio for every symbol so your child hears correct pronunciation directly, and the dual English and Traditional Chinese interface lets you follow along even if your own Bopomofo is rusty. Short sessions together are enough to build familiarity."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "My child recognises the Bopomofo symbols but can't blend them into syllables — how can I help?",
+  "match": [
+   "can't blend them into syllables",
+   "recognises the bopomofo symbols but can't blend",
+   "child can't blend bopomofo",
+   "struggling to blend zhuyin",
+   "blend bopomofo into syllables",
+   "knows the symbols but can't blend"
+  ],
+  "lead": "Recognising the 37 Bopomofo symbols and blending them into syllables are two different skills — many 4–7-year-olds know the symbols yet stall at 拼讀 (blending). Short, playful, sound-first practice bridges the gap.",
+  "detail": "In Zhuyin (注音符號), reading a syllable means blending an initial + a final (two-part, e.g. ㄅ + ㄚ → ㄅㄚ) or an initial + medial + final (three-part, e.g. ㄐ + ㄧ + ㄣ → ㄐㄧㄣ), then adding one of the four tones. A child can know every symbol in isolation and still find this combining step hard — it is the most common Zhuyin hurdle for ages 4–7, and being slow at first is completely normal. The approach that works is direct blending: say each sound clearly and separately, then connect them a little faster each time (ㄅ… ㄚ… ㄅㄚ), using a clap or a rhythm to mark the join. Master two-part blends before three-part ones, and add the four tones only after the base syllable is comfortable (ㄅㄚ → ㄅㄚˊ ㄅㄚˇ ㄅㄚˋ). Pairing each blended syllable with a familiar word (ㄅㄚ → 爸, ㄇㄚ → 媽) makes it stick. {name}'s syllable-blending mode (Sound Train) is built for exactly this step — it models the initial-plus-final join with audio and animation, so a child hears the blend and not just the separate symbols — alongside symbol recognition, stroke tracing and four-tone practice, for ages 4–7, pay-once, no ads, on-device.",
+  "bullets": [
+   "Recognising symbols and blending them (拼讀) are separate skills — knowing all 37 doesn't mean a child can blend yet",
+   "Blending is the most common Zhuyin hurdle at ages 4–7; being slow at first is normal, not a red flag",
+   "Use direct blending: say each sound separately, then join a little faster each time (ㄅ… ㄚ… ㄅㄚ)",
+   "Master two-part blends (聲母+韻母) before three-part (聲母+介音+韻母)",
+   "Add the four tones only after the base syllable is comfortable",
+   "Anchor each blend to a familiar word (ㄅㄚ → 爸, ㄇㄚ → 媽) so it sticks"
+  ],
+  "faq": [
+   {
+    "q": "My child knows every symbol but freezes when blending — is something wrong?",
+    "a": "No. Recognising symbols and blending them into a syllable are different skills, and the blending step (拼讀) is the classic sticking point for 4–7-year-olds. Short daily practice with the say-then-join method usually gets it flowing within a few weeks."
+   },
+   {
+    "q": "What is the difference between two-part and three-part blends?",
+    "a": "Two-part is an initial + final (ㄅ + ㄚ → ㄅㄚ). Three-part adds a medial ㄧ/ㄨ/ㄩ in the middle (ㄐ + ㄧ + ㄣ → ㄐㄧㄣ). Get two-part blends solid first, then introduce three-part — think of the medial as a bridge connecting the two ends."
+   },
+   {
+    "q": "Should I add tones while we are still learning to blend?",
+    "a": "Blend the base syllable first, then layer the four tones once it is comfortable (ㄅㄚ → ㄅㄚˊ ㄅㄚˇ ㄅㄚˋ). Trying to do both at once tends to overwhelm. {name}'s Sound Train mode blends first and practises tones separately, which mirrors this order."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "My child keeps confusing the second and third Bopomofo tones — how do I help?",
+  "match": [
+   "confusing the second and third bopomofo tones",
+   "confuses the second and third tone",
+   "mix up the second and third tone",
+   "child confuses mandarin tones",
+   "can't tell apart the tones",
+   "keeps confusing the tones"
+  ],
+  "lead": "The second tone (rising ˊ) and third tone (dipping then rising ˇ) both end by going up, so young children mix them up — the fix is to make the pitch shape visible and physical, not to explain it.",
+  "detail": "Mandarin has four tones marked in Zhuyin: first ˉ (high and level), second ˊ (rising), third ˇ (dipping — it falls then rises, like a checkmark), and fourth ˋ (falling sharply). The pair children confuse most is the second and third, because both finish by rising. Explaining this rarely works for a 4–7-year-old; showing it does. Pair each tone with a hand gesture the child copies: for the second tone, sweep your hand upward as you say it (ㄇㄚˊ, má); for the third, dip your hand down then back up in a V shape (ㄇㄚˇ, mǎ). Say them slowly and a little exaggerated, then in minimal pairs so the contrast is obvious — 麻 (máˊ) versus 馬 (mǎˇ), 牙 versus 也. A mirror, a sing-song voice, or recording the child and playing it back all help them hear the difference themselves. Keep sessions short and playful; tone accuracy comes from lots of light exposure, not drilling. {name}'s four-tone practice (Tone Coaster) is built for exactly this — it plays the correct pitch for each tone with animation so a child hears and sees the rise-versus-dip, alongside symbol recognition, stroke tracing and syllable blending, for ages 4–7, pay-once, no ads, on-device.",
+  "bullets": [
+   "The second (rising ˊ) and third (dipping ˇ) tones are the classic mix-up because both end by rising",
+   "Show the pitch, don't explain it: pair each tone with a hand gesture the child copies",
+   "Second tone = sweep the hand up; third tone = dip down then up in a V",
+   "Use minimal pairs so the contrast is obvious — 麻 (máˊ) versus 馬 (mǎˇ)",
+   "A mirror, a sing-song voice, or recording-and-replay helps the child hear the difference",
+   "Keep it short and playful — tones come from light repeated exposure, not drilling"
+  ],
+  "faq": [
+   {
+    "q": "Why does my child mix up the second and third tones specifically?",
+    "a": "Because both tones end with the pitch rising — the second rises straight up, while the third dips first and then rises. Young ears latch onto the shared upward ending. Making the falling-then-rising shape of the third tone visible with a hand gesture usually clears it up."
+   },
+   {
+    "q": "Is it better to explain the tones or just practise them?",
+    "a": "At ages 4–7, practise beats explanation. Copying a hand gesture, using an exaggerated sing-song voice, and hearing minimal pairs (麻 versus 馬) build the distinction far faster than describing pitch in words."
+   },
+   {
+    "q": "How much tone practice does my child need?",
+    "a": "Short and frequent wins. A few minutes of playful gesture-and-say practice several times a week, especially with minimal pairs, is enough. {name}'s Tone Coaster mode plays the correct pitch for each tone so your child can hear and copy it directly."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "My child confuses similar-looking Bopomofo symbols like ㄣ and ㄥ — how do I help?",
+  "match": [
+   "confuses similar-looking bopomofo symbols",
+   "confuses ㄣ and ㄥ",
+   "similar looking bopomofo symbols",
+   "confuse similar zhuyin symbols",
+   "child mixes up bopomofo symbols",
+   "tell apart similar bopomofo symbols"
+  ],
+  "lead": "Some Bopomofo symbols look or sound almost alike — ㄣ/ㄥ, ㄌ/ㄖ, ㄈ/ㄏ — so children swap them. The fix is to make the small visual difference and the mouth movement obvious, one pair at a time.",
+  "detail": "A handful of Zhuyin symbols are easy to mix up because they look similar, sound similar, or both. The most common pairs are ㄣ and ㄥ (a front nasal versus a back nasal), ㄌ and ㄖ, and ㄈ and ㄏ. Tackle one pair at a time, and give the child two anchors: a visual cue and a mouth cue. For ㄣ versus ㄥ, point out that ㄥ has an extra little tail, and contrast the sound with word pairs like 登 (ㄉㄣ) versus 燈 (ㄉㄥ) — ask the child to touch their nose and feel where the sound sits (ㄣ is shorter and further forward; ㄥ resonates longer at the back). For ㄌ versus ㄖ, ㄌ is said with the tongue tip tapping behind the top teeth (like English l), while ㄖ curls the tongue back (a retroflex, closer to English r); try 啦 versus 熱. For ㄈ versus ㄏ, ㄈ bites the top teeth on the lower lip and pushes air out (like f), while ㄏ is a relaxed breath with the tongue out of the way (like h); try 飯 versus 汗. Colour-marking the extra stroke, tracing the shapes with a finger, and short daily card-matching games all help. Keep it light and one pair at a time. {name} pairs accurate audio with each symbol and its stroke animation, so a child hears the difference and sees the shape — across symbol recognition, stroke tracing, four-tone practice and syllable blending, for ages 4–7, pay-once, no ads, on-device.",
+  "bullets": [
+   "The usual mix-ups are ㄣ/ㄥ (front vs back nasal), ㄌ/ㄖ, and ㄈ/ㄏ — work one pair at a time",
+   "Give two anchors per pair: a visual cue (e.g. ㄥ has an extra tail) and a mouth or tongue cue",
+   "ㄌ taps the tongue behind the top teeth (like l); ㄖ curls the tongue back (like r)",
+   "ㄈ bites the lip like f; ㄏ is a relaxed breath like h",
+   "Use minimal word pairs to hear the contrast — 登/燈, 啦/熱, 飯/汗",
+   "Colour-mark the different stroke and trace the shape; keep sessions short and playful"
+  ],
+  "faq": [
+   {
+    "q": "Which Bopomofo symbols do children mix up most?",
+    "a": "The classic pairs are ㄣ and ㄥ (a front nasal versus a back nasal), ㄌ and ㄖ, and ㄈ and ㄏ. They look similar, sound similar, or both. Teaching one pair at a time — with a visual cue and a mouth cue — prevents them blurring together."
+   },
+   {
+    "q": "How do I explain the ㄣ versus ㄥ difference to a young child?",
+    "a": "Skip the linguistics. Show that ㄥ has an extra little tail, then say a word pair like 登 (ㄉㄣ) and 燈 (ㄉㄥ) and have the child touch their nose: ㄣ feels shorter and further forward, ㄥ resonates longer at the back. Feeling and hearing beats explaining."
+   },
+   {
+    "q": "Should I fix all the confusing pairs at once?",
+    "a": "No — one pair at a time. Get ㄣ/ㄥ comfortable before moving to ㄌ/ㄖ. Short, playful daily practice with cards or gestures, and words the child already knows, makes the distinction stick without pressure. {name}'s audio-plus-animation for each symbol reinforces both the sound and the shape."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "My child learns the Bopomofo symbols but keeps forgetting them — how do I help?",
+  "match": [
+   "learns the bopomofo symbols but keeps forgetting",
+   "child keeps forgetting the bopomofo symbols",
+   "forgets the bopomofo symbols",
+   "can't remember the bopomofo symbols",
+   "child forgets zhuyin",
+   "keeps forgetting the symbols"
+  ],
+  "lead": "Forgetting is normal — young memory fades without revisiting. The fix isn't longer study but short, spaced, playful review: a few minutes several times a week, mixing a little new with lots of old.",
+  "detail": "A 4–7-year-old will learn a Zhuyin symbol and forget it within days unless it comes back — that is how young memory works, not a sign of a problem. The evidence-based fix is spaced repetition plus microlearning: revisit each symbol the same day, the next day, about a week later, and again a few weeks on, in short 5–10 minute bursts rather than one long session. Frequency beats duration — three tiny reviews across a day stick better than one long drill. Introduce only one or two new symbols at a time and spend most of each session revisiting old ones, so the child feels success, not overload. Make the review playful: matching a symbol to an object (ㄅ with 杯, ㄈ with 蜂), hiding symbol cards for a treasure hunt, singing the symbols, or letting the child teach a toy. Tie symbols to everyday life — point at a cup and say ㄅ — and praise progress without rushing. {name} is built around exactly this rhythm: short, game-based sessions that resurface earlier symbols across four modes (recognition, tracing, four-tone practice and syllable blending), with accurate audio and on-device progress, for ages 4–7, pay-once, no ads — so the spaced revisiting happens naturally instead of feeling like drilling.",
+  "bullets": [
+   "Forgetting is normal at 4–7 — young memory fades without revisiting; it is not a red flag",
+   "Use spaced repetition: revisit same day, next day, about a week, about a month, in 5–10 minute bursts",
+   "Frequency beats duration — several tiny reviews a day stick better than one long session",
+   "Add only one or two new symbols at a time; spend most of each session on old ones",
+   "Make review playful: object matching (ㄅ/杯), card treasure hunts, songs, teach-the-toy",
+   "Tie symbols to daily life and praise progress — no rushing or blaming"
+  ],
+  "faq": [
+   {
+    "q": "Is it normal for my child to forget symbols they just learned?",
+    "a": "Completely. Young memory fades quickly unless a symbol is revisited, so forgetting is expected, not a problem. The fix is short, spaced reviews — the same day, the next day, a week later — rather than trying to learn more at once."
+   },
+   {
+    "q": "How should I split learning new symbols versus reviewing old ones?",
+    "a": "Lean heavily on review. Introduce just one or two new symbols in a session and spend most of the time resurfacing ones already seen. That mix keeps the child succeeding instead of feeling overwhelmed, which is what makes symbols stick."
+   },
+   {
+    "q": "How long should each practice session be?",
+    "a": "Short — five to ten minutes, a few times across the day beats one long sitting. {name}'s game-based sessions are designed to be brief and to resurface earlier symbols automatically, so the spaced repetition happens without it feeling like drilling."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "Should I teach my child Bopomofo or Pinyin first?",
+  "match": [
+   "should i teach my child bopomofo or pinyin first?",
+   "what's the difference between zhuyin and pinyin for young children learning mandarin?",
+   "zhuyin vs pinyin",
+   "which teach first",
+   "kids phonics"
+  ],
+  "lead": "Zhuyin (Bopomofo) uses 37 purpose-built symbols with no overlap with the Latin alphabet, while Pinyin uses standard letters — for children with ties to Taiwan or Taiwan-published materials, Zhuyin is the natural starting point; Pinyin is the global standard for everything else.",
+  "detail": "Because Zhuyin's symbols are entirely new to learners, children cannot import English letter-sound associations into Mandarin — 'ㄓ' simply doesn't have an English analogue to confuse. Pinyin leverages the Latin alphabet, which is quicker to pick up for children already reading English, but letters like 'x', 'q', 'zh', and 'c' represent sounds very different from their English counterparts, which can entrench mispronunciation if not carefully taught. Taiwan's entire primary school system teaches Zhuyin first; all Taiwan-published children's books annotate in Zhuyin. {name} covers Zhuyin systematically across four modes — recognition, stroke tracing, four-tone practice, and syllable blending — aimed at ages 4–7. For families whose Chinese literacy materials, weekend heritage school, or cultural network is Taiwan-based, starting with Zhuyin is the natural, consistent choice.",
+  "bullets": [
+   "Zhuyin's unique symbol set prevents cross-contamination with English letter sounds — often cited as supporting more accurate Mandarin pronunciation",
+   "Pinyin is the international standard for Chinese input, international testing (AP Chinese, HSK), and mainland curricula",
+   "All Taiwan-published school textbooks and most Taiwan children's books use Zhuyin annotation exclusively",
+   "Most educators recommend mastering one phonics system solidly before introducing a second",
+   "Many families eventually learn both — the starting point depends on which materials and community the child is embedded in"
+  ],
+  "faq": [
+   {
+    "q": "Is Bopomofo only useful if my child will live in Taiwan?",
+    "a": "Not exclusively. Bopomofo is used in Taiwanese heritage schools and weekend schools across North America, Australia, Southeast Asia, and Europe. It's also the system used in Taiwanese community libraries and by Taiwan-based online tutors. Its value to any given child depends on whether their materials, tutors, and community connections are Taiwan-based."
+   },
+   {
+    "q": "Why exactly does Zhuyin have 37 symbols when Mandarin has no alphabet?",
+    "a": "Chinese characters are logographic — each character represents meaning, not sound. Zhuyin is a pronunciation guide layered on top: its 21 initials (consonants), 13 finals (vowel/endings), and 3 medials (glides), combined with 4 tone marks, can represent every syllable in standard Mandarin."
+   },
+   {
+    "q": "My child is already learning Pinyin at school — should I also teach Bopomofo?",
+    "a": "Some families successfully maintain both; others prefer to avoid introducing a second phonics system before the first is solid. If your child's school and home materials are Pinyin-based, adding Zhuyin is an extra commitment. If you specifically want your child to access Taiwan-published books or attend a Taiwanese heritage school, adding Zhuyin over time is worthwhile."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "How to practice Bopomofo stroke order with a preschooler",
+  "match": [
+   "how to practice bopomofo stroke order with a preschooler",
+   "app that teaches kids to trace zhuyin symbols with correct stroke order",
+   "bopomofo stroke order",
+   "trace zhuyin writing",
+   "kids finger practice"
+  ],
+  "lead": "Learning Bopomofo in the correct stroke direction and sequence helps children write more consistently and reinforces visual recall of each symbol — and finger-tracing on a touchscreen is a developmentally appropriate entry point before pencil work.",
+  "detail": "Stroke order in Zhuyin, like in Chinese characters, establishes habits that affect legibility and the kinesthetic memory that helps children remember symbol shapes. {name}'s Magic Tracing mode presents each of the 37 Bopomofo symbols with an animated stroke-by-stroke guide that the child then traces with their finger, receiving immediate feedback. For children aged 4–6 who are still developing pencil-grip strength and fine-motor precision, finger tracing on a smooth screen is a low-stakes starting point: the motion pattern is learned without the additional demands of holding a pencil or staying within paper lines. App tracing complements but does not replace paper practice — ideally children transition to writing on paper once they have the stroke direction and sequence in muscle memory.",
+  "bullets": [
+   "Stroke order matters for both Bopomofo and Chinese characters — correct habits now pay dividends later",
+   "Most Bopomofo symbols have 1–3 strokes, making them simpler than most characters but still sequenced",
+   "Finger tracing suits children 4–6 who are still building pencil grip and fine-motor precision",
+   "Animated stroke guides show the direction before the child copies — modeling before practice",
+   "Introduce 2–4 new symbols per session rather than rushing all 37 — review previously learned ones regularly"
+  ],
+  "faq": [
+   {
+    "q": "Does stroke order matter for Bopomofo, or only for Chinese characters?",
+    "a": "Stroke order matters for both, though Bopomofo symbols are far simpler (1–3 strokes each). Building correct stroke-direction habits with Bopomofo creates good foundations that carry over when children begin writing Chinese characters, which can have many more strokes in a precise sequence."
+   },
+   {
+    "q": "My child is 4 — is finger-tracing a good starting point for Zhuyin?",
+    "a": "Yes. For 4–5 year olds who are still developing fine-motor control, finger tracing is a developmentally appropriate entry point. It builds visual familiarity and motion memory for each symbol's shape without requiring the pen-hold strength and precision that paper writing demands."
+   },
+   {
+    "q": "How does {name} sequence the symbols — do children have to go in order?",
+    "a": "Symbols are arranged on a map and unlocked progressively in sequence, which mirrors how Bopomofo is typically taught (initials first, then medials, then finals). Children can replay completed symbols at any time; the map makes it visually clear which symbols are mastered and which are still ahead."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "How do you explain Mandarin tones to a young child?",
+  "match": [
+   "how do you explain mandarin tones to a young child?",
+   "best way to teach bopomofo tones to kids aged 4–7",
+   "mandarin four tones",
+   "teach tones preschoolers",
+   "tone learning app"
+  ],
+  "lead": "Mandarin's four tones change the meaning of a syllable completely — and because they're absent in English, heritage-language learners who don't hear Mandarin daily need deliberate, structured tone practice early on.",
+  "detail": "The same syllable in four different tones means four different words ('mā' = mother, 'má' = hemp, 'mǎ' = horse, 'mà' = scold). Children immersed in Mandarin from birth usually acquire tones naturally; children in overseas Chinese families, who often hear less Mandarin daily, benefit from explicit and engaging tone practice. {name}'s Tone Coaster mode visualizes each tone as a roller-coaster track shape: first tone flat-high, second tone rising, third tone dip-then-rise, fourth tone sharp drop. This motion metaphor gives children a kinesthetic-visual anchor for each tone before they can explain tone rules analytically. Hearing the correct audio alongside the visual track reinforces the audio-visual mapping that makes tones stick.",
+  "bullets": [
+   "Mandarin's 4 tones are not optional pronunciation markers — they distinguish completely different words",
+   "Children immersed in Mandarin acquire tones naturally; heritage learners outside Mandarin environments need explicit practice",
+   "Visual-motion metaphors (roller-coaster shape, hand gestures) help young children 'feel' each tone before memorizing rules",
+   "Correct tones are essential for intelligibility — a wrong tone is often simply not understood by native speakers",
+   "Early, consistent tone exposure is far easier to establish than correcting ingrained tone habits in older children"
+  ],
+  "faq": [
+   {
+    "q": "What are the four Mandarin tones?",
+    "a": "First tone (ˉ): high and flat — held steady. Second tone (ˊ): rising, like an English question. Third tone (ˇ): dips then rises — the 'V-shape' tone. Fourth tone (ˋ): sharp, short fall. A neutral (light) tone is unstressed with no mark. {name}'s Tone Coaster shows each as a physical track shape the character rides on."
+   },
+   {
+    "q": "Does {name} teach tones for all 37 Bopomofo symbols?",
+    "a": "The free version lets your child try the core games; a one-time unlock opens all 37 symbol friends and every level."
+   },
+   {
+    "q": "My child speaks some Mandarin at home but consistently gets tones wrong — will this help?",
+    "a": "Structured visual-audio tone practice can help, but hearing tones modeled correctly in real conversations is equally important. {name} works best as a complement to regular Mandarin interaction — not as the sole source of Mandarin tone input. For children with persistent tone challenges, a Mandarin-speaking tutor who can give real-time feedback is also valuable."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "scenario",
+  "query": "How do I know if now is a good time to go outside?",
+  "match": [
+   "how do i know if now is a good time to go outside?",
+   "good time to go outside",
+   "good time to go out",
+   "good day to go out"
+  ],
+  "lead": "Reading temperature, UV, rain chance and wind one number at a time is slow — a single 0–100 outing score with a one-line verdict answers the question at a glance.",
+  "detail": "{name} combines feels-like temperature, UV, rain chance and wind into an outing score from 0 to 100 and a short verdict, from a great day to go out to a day that is nicer spent indoors. Tap the score to see how each factor shaped it, so the answer is easy to check rather than a black box. The Today screen also points out the ideal time to head outside and shows the coming hours at a glance.",
+  "bullets": [
+   "One 0–100 outing score instead of four separate numbers",
+   "A short verdict from a great day out to a day better spent indoors",
+   "Tap the score to see how feels-like temperature, UV, rain and wind each contributed",
+   "The ideal time to head outside is highlighted on the Today screen",
+   "The Today screen works right away, without unlocking anything"
+  ],
+  "faq": [
+   {
+    "q": "What goes into the outing score?",
+    "a": "Feels-like temperature, UV, rain chance and wind. Tapping the score shows how each of them shaped the result."
+   },
+   {
+    "q": "Do I need to unlock anything to see the score?",
+    "a": "No. The Today screen, with the outing score, verdict, ideal time to go out and tips, works right away. A one-time in-app unlock adds the hourly view, the full 7-day forecast, the Get Ready checklist, multiple saved places and the hours ahead on Apple Watch."
+   },
+   {
+    "q": "Where does the weather data come from?",
+    "a": "{name} uses Apple WeatherKit. Forecasts are for reference only, so check the conditions around you before heading out."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "faq",
+  "query": "What is an outing score and how do I read it?",
+  "match": [
+   "what is an outing score",
+   "outing score",
+   "turns the forecast into"
+  ],
+  "lead": "An outing score turns the forecast into one number from 0 to 100: higher means a more comfortable day to be outside, lower means a day that is nicer spent indoors.",
+  "detail": "{name} shows the score together with a short verdict, so you do not have to judge what 18 degrees with 40% rain and a stiff wind adds up to. Tap the score to see how feels-like temperature, UV, rain and wind each pushed it up or down, which makes it easy to understand why today scores the way it does and to double-check it against the sky outside.",
+  "bullets": [
+   "0–100 scale with a plain-language verdict",
+   "Built from feels-like temperature, UV, rain and wind",
+   "Tap the score for the breakdown behind it",
+   "Useful as a first look before opening the hourly details"
+  ],
+  "faq": [
+   {
+    "q": "Is the score a replacement for checking conditions myself?",
+    "a": "No. It is a quick summary of the forecast; forecasts are for reference only, so look at the conditions around you before heading out."
+   },
+   {
+    "q": "Can I see why the score is low?",
+    "a": "Yes. Tap the score to see how feels-like temperature, UV, rain and wind each shaped it."
+   },
+   {
+    "q": "Does it work in my language?",
+    "a": "{name} is available in more than 40 languages and can follow your system language or one you choose."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "scenario",
+  "query": "How do I know if I need an umbrella or sunscreen today?",
+  "match": [
+   "umbrella or sunscreen",
+   "umbrella and sunscreen",
+   "umbrella",
+   "sunscreen reminders"
+  ],
+  "lead": "The quickest way to decide is a weather app that turns rain chance and UV into a plain tip — pack an umbrella, put on a hat and sunscreen, or add a light jacket for the wind.",
+  "detail": "{name} gives simple tips on the Today screen for when to pack an umbrella or raincoat, when a hat and sunscreen make sense, and when a light jacket will help against the wind. Where minute-by-minute precipitation data is available, it lets you know when rain is about to start or ease, and it gives a heads-up when rain looks likely tomorrow. The Get Ready checklist (part of the one-time unlock) turns the conditions into a short list of what to wear and what to bring, from sunglasses to rain boots, and you can share it in a tap.",
+  "bullets": [
+   "Plain tips for umbrella, raincoat, hat, sunscreen or a light jacket",
+   "Rain start and ease alerts where minute-by-minute data is available",
+   "A heads-up when rain looks likely tomorrow",
+   "Get Ready checklist of what to wear and bring, shareable in a tap",
+   "Daily reminder at the time that suits your morning"
+  ],
+  "faq": [
+   {
+    "q": "Is the Get Ready checklist free?",
+    "a": "The Today screen and its tips work right away. The Get Ready checklist is part of the one-time in-app unlock, which also adds the hourly view, the 7-day forecast, multiple saved places and the hours ahead on Apple Watch. There is no subscription."
+   },
+   {
+    "q": "Will I get a reminder?",
+    "a": "You can set a daily reminder for the time that suits your morning."
+   },
+   {
+    "q": "Does the rain alert work everywhere?",
+    "a": "Minute-by-minute precipitation data is only available in some regions; where it is not, you still get the forecast and the umbrella tip."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "scenario",
+  "query": "When is the ideal time to head out for a walk, run or ride?",
+  "match": [
+   "ideal time to head out",
+   "ideal time to go out",
+   "best time to go out",
+   "time to go out for a walk",
+   "walk, run"
+  ],
+  "lead": "Most days have a comfortable stretch and an unpleasant one — knowing which hours are which lets a walk, run, bike ride or commute land in the comfortable part.",
+  "detail": "{name} points out the ideal time to head outside on the Today screen, so a walk, run, bike ride, commute or weekend errand lands in the most comfortable hours. With the one-time unlock, the hourly view adds the day's temperature curve with feels-like temperature, rain chance, UV and wind for every hour, plus a 7-day forecast, for planning a bit further ahead.",
+  "bullets": [
+   "Ideal time to head out is highlighted on the Today screen",
+   "Hourly view with feels-like temperature, rain chance, UV and wind (one-time unlock)",
+   "7-day forecast for planning ahead (one-time unlock)",
+   "Works for walks, runs, rides, commutes and weekend errands"
+  ],
+  "faq": [
+   {
+    "q": "Can I see rain hour by hour?",
+    "a": "Yes. With the one-time unlock, the hourly view shows rain chance for every hour along with feels-like temperature, UV and wind."
+   },
+   {
+    "q": "Does it show tomorrow?",
+    "a": "The 7-day forecast is included in the one-time unlock. The app also gives a heads-up when rain looks likely tomorrow."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No. The unlock is a one-time purchase, and Family Sharing is supported."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "faq",
+  "query": "Is there a weather app with a Home Screen widget and Apple Watch support?",
+  "match": [
+   "widget",
+   "apple watch",
+   "lock screen"
+  ],
+  "lead": "Yes — {name} can sit on your Home Screen or Lock Screen as a widget and shows the current temperature on Apple Watch, so the answer is there before you open the app.",
+  "detail": "Add {name} to your Home Screen or Lock Screen as a widget to see today's conditions at a glance. On Apple Watch you can check the current temperature, and the one-time unlock adds the hours ahead on the watch. Save the places you go most, such as home, work or the park, and switch between them instantly; multiple saved places are part of the unlock.",
+  "bullets": [
+   "Home Screen and Lock Screen widgets",
+   "Current temperature on Apple Watch; hours ahead with the unlock",
+   "Save home, work, the park and other places and switch instantly (unlock)",
+   "Illustrated scenes that follow the weather and the time of day"
+  ],
+  "faq": [
+   {
+    "q": "Does the widget need an account?",
+    "a": "No. {name} needs no account. Your places and settings stay on your device."
+   },
+   {
+    "q": "Is Apple Watch support part of the unlock?",
+    "a": "Apple Watch shows the current temperature; the hours ahead on Apple Watch are part of the one-time in-app unlock."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No. It is a one-time unlock with no subscription."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "faq",
+  "query": "Is there a weather app with no account, no ads and no subscription?",
+  "match": [
+   "no account",
+   "no ads",
+   "no subscription",
+   "without an account",
+   "one-time unlock"
+  ],
+  "lead": "Yes — {name} needs no account, shows no ads, uses no third-party analytics, and the optional unlock is a one-time purchase rather than a subscription.",
+  "detail": "Your places and settings stay on your device, and your location is used only to get the weather where you are, never for advertising or tracking. The Today screen is available right away; a one-time in-app unlock adds the hourly view, the full 7-day forecast, the Get Ready checklist, multiple saved places and the hours ahead on Apple Watch. Family Sharing is supported. Weather data is provided by Apple WeatherKit.",
+  "bullets": [
+   "No account needed",
+   "No ads and no third-party analytics",
+   "Places and settings stay on your device",
+   "One-time unlock, no subscription",
+   "Family Sharing supported"
+  ],
+  "faq": [
+   {
+    "q": "What do I get without paying?",
+    "a": "The Today screen, with the outing score, verdict, ideal time to go out, tips and daily reminder."
+   },
+   {
+    "q": "What does the unlock add?",
+    "a": "The hourly view, the full 7-day forecast, the Get Ready checklist, multiple saved places and the hours ahead on Apple Watch."
+   },
+   {
+    "q": "What is the location used for?",
+    "a": "Only to get the weather where you are — never for advertising or tracking."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiweather",
+  "kind": "faq",
+  "query": "How do I decide what to wear from the weather forecast?",
+  "match": [
+   "how do i decide what to wear",
+   "what to wear",
+   "dress for the weather",
+   "what clothes"
+  ],
+  "lead": "Feels-like temperature, rain chance, UV and wind matter more than the number on the thermometer — a weather app that turns them into a short what-to-wear tip saves the guesswork.",
+  "detail": "{name} turns the day's conditions into simple tips: when a light jacket will help against the wind, when a hat and sunscreen make sense, when to pack an umbrella or raincoat. Lumi, the friendly character in the app, dresses for the conditions too — a sun hat, a raincoat, a scarf or an umbrella — so the answer is visible at a glance. The Get Ready checklist (part of the one-time unlock) lists what to wear and what to bring, from sunglasses to rain boots.",
+  "bullets": [
+   "Tips for jacket, hat, sunscreen, umbrella or raincoat",
+   "Lumi the character dresses for the conditions",
+   "Get Ready checklist of what to wear and bring (one-time unlock)",
+   "Feels-like temperature is part of every score"
+  ],
+  "faq": [
+   {
+    "q": "Does it tell me what to wear for tomorrow?",
+    "a": "The 7-day forecast and hourly view (one-time unlock) show feels-like temperature, rain chance, UV and wind ahead of time, and the app gives a heads-up when rain looks likely tomorrow."
+   },
+   {
+    "q": "Can I share the checklist?",
+    "a": "Yes, the Get Ready checklist can be shared in a tap."
+   },
+   {
+    "q": "Which languages are supported?",
+    "a": "{name} is available in more than 40 languages and can follow your system language or one you choose."
+   }
+  ]
+ },
+ {
+  "app_key": "mochi",
+  "kind": "scenario",
+  "query": "best aesthetic to-do list app iPhone no subscription",
+  "match": [
+   "best aesthetic to-do list app iphone no subscription",
+   "cute checklist app iphone free no ads",
+   "cute to-do app iphone",
+   "aesthetic checklist kawaii"
+  ],
+  "lead": "Mochi To-Do is a free, no-ads checklist app with 101 illustrated skins — each with its own paper texture, fonts, and decorative details — so your daily task list actually looks like something you want to open.",
+  "detail": "Unlike productivity apps that layer projects, priorities, and dashboards on top of simple list-keeping, {name} stays deliberately simple: tap the small circle to check off a task, drag to reorder, swipe to edit or delete. The 101 skins go beyond color swaps — each has unique paper, typography, and accents (cozy notebook, sakura, pastel sunset, midnight, ocean, confetti, and more). The base app is free with no ads and no subscription; a single one-time purchase opens every premium skin and removes the limits on lists and items per list.",
+  "bullets": [
+   "101 skins, each with unique paper texture, font, and decorative details — not a color swap",
+   "Interactive Home Screen and Lock Screen widgets: check tasks off the widget without opening the app",
+   "Reminders with emoji so important tasks never get forgotten",
+   "No account, no sign-up, no ads, no tracking — everything stored on-device only",
+   "One-time unlock for all premium skins; no subscription, ever"
+  ],
+  "faq": [
+   {
+    "q": "Is Mochi To-Do actually free, or is there a catch?",
+    "a": "Mochi is free to download with no ads. The free tier gives you 2 lists with up to 4 items each. A one-time optional purchase unlocks all 96 premium skins and removes list/item limits — there is no subscription."
+   },
+   {
+    "q": "Does Mochi have a Lock Screen widget?",
+    "a": "Yes. You can add an interactive Home or Lock Screen widget and tap the circle directly on the widget to mark a task complete — no need to open the app. The widget matches your chosen skin and updates instantly."
+   },
+   {
+    "q": "Does Mochi sync to iCloud or require an account?",
+    "a": "No. Mochi stores everything on your device only. There is no account, no cloud sync, and no sign-up. Your data doesn't leave your phone."
+   }
+  ]
+ },
+ {
+  "app_key": "mochi",
+  "kind": "scenario",
+  "query": "iPhone lock screen widget to check off tasks without opening app",
+  "match": [
+   "iphone lock screen widget to check off tasks without opening app",
+   "interactive checklist widget home screen ios",
+   "lock screen widget checklist",
+   "tick tasks from widget iphone"
+  ],
+  "lead": "Mochi's interactive iOS widgets let you mark tasks complete directly on your Home or Lock Screen — the circle is tappable right on the widget, no app launch required.",
+  "detail": "{name}'s widget is genuinely interactive: you add it to your Lock Screen or Home Screen and the task circles respond to taps, marking items done with real-time updates. The widget automatically matches your active skin — so your Lock Screen looks intentional rather than generic. You can point different widget placements at different lists, which is useful if you want groceries on your Lock Screen and a work checklist on your Home Screen.",
+  "bullets": [
+   "Interactive widget: tap the circle on the widget to complete tasks — no app launch needed",
+   "Works on both Home Screen and Lock Screen; add multiple widgets pointing at different lists",
+   "Widget reflects your chosen skin and updates instantly when items change",
+   "Available in multiple sizes to fit your layout",
+   "Core widget functionality is free; all skin-matching options open with the one-time premium unlock"
+  ],
+  "faq": [
+   {
+    "q": "Which iPhones support Mochi's interactive widget?",
+    "a": "Interactive widgets require iOS 17 or later, supported on iPhone XS (A12) and newer."
+   },
+   {
+    "q": "Does Mochi work on Apple Watch?",
+    "a": "Yes — the app includes Apple Watch support (via MochiWatchBridge) so you can view and check off tasks from your wrist, in addition to the iPhone widgets."
+   },
+   {
+    "q": "If I check something off on the widget, does it sync to the main app?",
+    "a": "Yes. The widget shares state with the main app via an App Group — changes appear immediately when you open Mochi, and vice versa."
+   }
+  ]
+ },
+ {
+  "app_key": "mochi",
+  "kind": "faq",
+  "query": "what do you get for free in Mochi To-Do",
+  "match": [
+   "what do you get for free in mochi to-do",
+   "mochi to-do subscription or one-time purchase difference",
+   "mochi free vs paid",
+   "to-do app one-time purchase ios"
+  ],
+  "lead": "Mochi To-Do is free with no ads and no subscription; the one-time purchase removes limits on lists and items and unlocks all 96 premium skins.",
+  "detail": "{name}'s free tier is genuinely usable: 2 lists with up to 4 items each, one emoji category, full widget functionality, reminders, and all core interactions — enough for most daily planning and grocery use cases. The single optional purchase lifts all caps (unlimited lists, unlimited items, all emoji categories) and opens every premium skin. There is no monthly or annual subscription tier — pay once and the unlock restores on any device via the same Apple ID.",
+  "bullets": [
+   "Free: 2 lists, up to 4 items each, 1 emoji category, all core features, widgets, reminders",
+   "Paid (one-time): unlimited lists, unlimited items per list, all emoji categories",
+   "Paid (one-time): all 96 premium skins — sakura, midnight, cozy paper, ocean, confetti, and more",
+   "No subscription ever — one purchase restores on any device with the same Apple ID",
+   "No ads at any tier, no account required, no tracking"
+  ],
+  "faq": [
+   {
+    "q": "Can I preview premium skins before buying?",
+    "a": "Yes — you can browse skins in the picker and see how they look on your actual list content before purchasing."
+   },
+   {
+    "q": "Does the unlock transfer if I get a new iPhone?",
+    "a": "Yes. Tap 'Restore Purchase' on the paywall screen while signed into the same Apple ID and the premium unlock is restored at no charge."
+   },
+   {
+    "q": "Are there any features behind a separate paywall beyond the skin unlock?",
+    "a": "No. The single one-time purchase unlocks everything: all skins, unlimited lists, unlimited items, all emoji categories. There are no additional paid tiers."
+   }
+  ]
+ },
+ {
+  "app_key": "mochi",
+  "kind": "scenario",
+  "query": "simple iPhone checklist app just lists no projects or sub-tasks",
+  "match": [
+   "simple iphone checklist app just lists no projects or sub-tasks",
+   "easiest to-do list app for people who hate complicated productivity apps",
+   "simple to-do list iphone",
+   "low-friction checklist no complexity"
+  ],
+  "lead": "Mochi To-Do does one thing — tap a circle to check something off — which makes it a low-friction alternative to productivity apps that require configuration before you've captured a single task.",
+  "detail": "Many to-do apps front-load cognitive work: choose a project, assign a priority, pick a tag. {name} skips all of that — type a task, it appears in your list, tap the circle when done. Drag to reorder; swipe to edit or delete; set a reminder if you need one. The visually warm design (illustrated skins, soft colors, clean type) makes opening the app feel pleasant rather than dutiful, which is often the real barrier to actually using a checklist. Note: Mochi is a productivity tool, not a therapeutic product — but a genuinely low-friction design is a real usability feature for anyone who finds heavy software hard to maintain as a habit.",
+  "bullets": [
+   "One interaction to complete a task: tap the circle — no sub-menus, no status changes required",
+   "Multiple separate lists for different areas of life (work, groceries, errands, etc.)",
+   "Drag tasks to reorder; swipe left to edit or delete any item",
+   "Reminders that keep habitual tasks on track",
+   "Visually warm design that makes opening the app feel inviting, not like a chore"
+  ],
+  "faq": [
+   {
+    "q": "Does Mochi have sub-tasks or projects?",
+    "a": "No. Mochi is intentionally flat: lists and items inside lists — no sub-tasks, priorities, tags, or project views. If you need that structure, a different app is the right choice; Mochi is built for simplicity."
+   },
+   {
+    "q": "Do completed tasks disappear or stay visible?",
+    "a": "Checked-off items remain in the list visually struck through until you manually delete them. You can review what you've done before clearing the board."
+   },
+   {
+    "q": "Is Mochi good for grocery or shopping lists?",
+    "a": "Yes — it's a primary use case. Create a Groceries list, check items off in-store from the Lock Screen widget without opening the app, and set a reminder to top it up. The free tier's 2 lists and 4-item limit covers a short shopping list; the unlock removes those caps."
+   }
+  ]
+ },
+ {
+  "app_key": "lockhour",
+  "kind": "scenario",
+  "query": "iPhone app that blocks Instagram while studying with Pomodoro timer",
+  "match": [
+   "iphone app that blocks instagram while studying with pomodoro timer",
+   "pomodoro study timer that locks distracting apps ios no subscription",
+   "study app block social media pomodoro",
+   "app blocker exam prep iphone"
+  ],
+  "lead": "LockHour's Study Mode runs Pomodoro-style cycles with breaks and uses Apple's Screen Time stack to shield your chosen apps at the OS level while you focus — they unlock automatically when the timer ends.",
+  "detail": "{name}'s Study Mode runs Pomodoro-style cycles with breaks. Before starting you pick the apps, categories or websites to block. During the session those apps show LockHour's shield screen instead of opening, and they unlock automatically when the timer ends. Insights show today's focused time, weekly charts, streaks and how many hours you've reclaimed.",
+  "bullets": [
+   "Study Mode: Pomodoro-style cycles with breaks",
+   "Blocking is enforced at the OS level by Apple Screen Time — not an app-switching trick",
+   "Chosen apps show a shield screen during the session and unlock automatically when the timer ends",
+   "Insights: today's focused time, weekly charts, streaks and reclaimed hours",
+   "One simple purchase unlocks everything — no subscription"
+  ],
+  "faq": [
+   {
+    "q": "What happens to blocked apps when the session ends?",
+    "a": "When the timer ends, LockHour lifts the shields automatically, so your blocked apps open again without any manual re-enabling."
+   },
+   {
+    "q": "Can I block specific apps or only broad categories?",
+    "a": "On a real device with Screen Time authorization granted, you use Apple's FamilyActivityPicker to select specific apps (e.g. TikTok, Instagram) as well as categories and web domains — granular selection is fully supported."
+   },
+   {
+    "q": "Is Study Mode a subscription?",
+    "a": "No. One simple purchase unlocks everything, with no subscription and no hidden fees; check the App Store listing for what you can try before buying."
+   }
+  ]
+ },
+ {
+  "app_key": "lockhour",
+  "kind": "scenario",
+  "query": "app to block social media and YouTube before bed iPhone",
+  "match": [
+   "app to block social media and youtube before bed iphone",
+   "automatically block phone apps at bedtime ios",
+   "stop doomscrolling before bed iphone",
+   "sleep wind down app blocker schedule"
+  ],
+  "lead": "LockHour's Sleep Wind Down mode is built to stop late-night scrolling: start it before bed and the social and video apps you choose stay shielded until the timer ends.",
+  "detail": "The impulse to scroll at night is hardest to resist when you are already tired, so make the decision once, before bed. {name}'s Sleep Wind Down mode locks the apps and websites you choose for the length you set and lifts the block automatically when the timer ends. Add Hard Mode and stopping early takes a cooldown and a confirmation, so ending the block becomes a deliberate choice instead of a reflex.",
+  "bullets": [
+   "Sleep Wind Down mode to stop late-night scrolling",
+   "You choose the apps or websites to lock and the session length",
+   "Hard Mode: a cooldown and a confirmation before you can stop early",
+   "Apps you did not select stay available",
+   "Everything unlocks automatically when the timer ends"
+  ],
+  "faq": [
+   {
+    "q": "Does the block keep working if LockHour is closed?",
+    "a": "Yes. The shield is applied through Apple's Screen Time framework, so closing or backgrounding LockHour does not lift it; the apps unlock automatically when the timer ends."
+   },
+   {
+    "q": "Can I block specific apps for Sleep Wind Down rather than categories?",
+    "a": "Yes — the selection uses Apple's FamilyActivityPicker, so you can choose specific apps (e.g. TikTok, Reddit) plus any web domains in addition to or instead of broad categories."
+   },
+   {
+    "q": "What if I genuinely need to use a blocked app at night?",
+    "a": "Without Hard Mode enabled you can end the session immediately in the app. With Hard Mode on, there is a cooldown and a confirmation before you can stop early — enough friction to interrupt an impulse scroll, but not a parental lock. Someone sufficiently determined can also revoke Screen Time authorization in iOS Settings."
+   }
+  ]
+ },
+ {
+  "app_key": "lockhour",
+  "kind": "faq",
+  "query": "how does LockHour Pro actually block apps on iPhone",
+  "match": [
+   "how does lockhour pro actually block apps on iphone",
+   "can you bypass lockhour focus session if you really want to",
+   "how app blocking works iphone screen time",
+   "lockhour bypass hard mode"
+  ],
+  "lead": "LockHour uses Apple's official FamilyControls and ManagedSettings APIs to block apps at the OS level — but it is honestly a self-control tool designed to add intentional friction, not an unbreakable lock.",
+  "detail": "When a session starts, {name} instructs the iOS ManagedSettingsStore to display a shield screen on every app in your selected list. This block is enforced by iOS itself — relaunching the phone, switching apps, or backgrounding LockHour does not lift it. Hard Mode raises the exit cost further: a cooldown and a confirmation come before you can stop early. The app is transparent about its limits: it's built to interrupt the impulse-grab, not to be technically impossible to bypass — a sufficiently determined user can go to iOS Settings → Screen Time and revoke LockHour's authorization, just as with any Screen Time configuration. What it does reliably is make casual, unconscious app-opening fail.",
+  "bullets": [
+   "Uses Apple FamilyControls + ManagedSettings — same OS stack as native Screen Time",
+   "Block survives app restarts and screen locks — enforced by iOS, not by LockHour staying in foreground",
+   "Hard Mode: a cooldown and a confirmation before you can end a session early",
+   "LockHour never reads app content, messages, browsing history, or Screen Time usage data",
+   "Designed for voluntary self-control — not parental control, not surveillance"
+  ],
+  "faq": [
+   {
+    "q": "Does LockHour block web browsers and websites too?",
+    "a": "Yes — Apple's Screen Time API supports web domain blocking in addition to app blocking. You can block Safari, third-party browsers, or specific domains when configuring your session."
+   },
+   {
+    "q": "Can LockHour see what I do inside apps or how long I use them?",
+    "a": "No. LockHour only instructs iOS to shield the apps you chose. It has no access to app content, messages, browsing data, or Screen Time reports. There are no ads, no tracking, no third-party analytics and no account."
+   },
+   {
+    "q": "Do phone calls and alarms still work during a session?",
+    "a": "Yes. Calls, alarms, and any apps you haven't selected to block remain fully functional. LockHour only affects the specific apps, categories, or domains you chose when setting up the session."
+   }
+  ]
+ },
+ {
+  "app_key": "lockhour",
+  "kind": "scenario",
+  "query": "app to stop checking social media first thing in the morning iPhone",
+  "match": [
+   "app to stop checking social media first thing in the morning iphone",
+   "automatically block news and social apps for first 30 minutes after wake up ios",
+   "morning routine no social media iphone",
+   "block apps first 30 minutes morning"
+  ],
+  "lead": "LockHour's Morning Reset mode is built to help you start your day before the scroll: start it when you wake up and the social and news apps you choose stay shielded until the timer ends.",
+  "detail": "The reflexive phone-grab right after an alarm is strongest precisely when willpower is lowest, so make the decision once, the night before. Start {name}'s Morning Reset when you wake, and the apps and websites you chose stay locked for the length you set, then unlock automatically. Streaks and the reclaimed-hours count show how many mornings you have protected, which gives the habit visible momentum.",
+  "bullets": [
+   "Morning Reset mode: start your day before the scroll",
+   "You choose the apps or websites to lock and the session length",
+   "Streaks and reclaimed hours make the habit visible",
+   "Apps you did not select stay available",
+   "One simple purchase unlocks everything — no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Can I choose how long the morning block lasts?",
+    "a": "Yes. Morning Reset is one of the focus modes, and Custom lets you set your own length if you want a different block."
+   },
+   {
+    "q": "Can I pick which apps are blocked in the morning?",
+    "a": "Yes. You choose the specific apps, categories or websites to shield before you start the session."
+   },
+   {
+    "q": "Does LockHour keep running in the background to enforce the block?",
+    "a": "The shield is applied through Apple's Screen Time framework, so it holds while LockHour is closed and lifts automatically when the timer ends."
+   }
+  ]
+ },
+ {
+  "app_key": "unblurry",
+  "kind": "scenario",
+  "query": "how to fix slightly blurry soft focus photo on iPhone",
+  "match": [
+   "how to fix slightly blurry soft focus photo on iphone",
+   "best app to sharpen out-of-focus photo iphone no cloud no subscription",
+   "fix soft focus blurry iphone photo",
+   "sharpen photo on-device ai iphone"
+  ],
+  "lead": "Unblurry works best on soft-focus and mild camera-shake photos where real detail was captured but not resolved sharply — the Sharpen and AI Clarity modes produce visibly crisper results on these, entirely on your device.",
+  "detail": "{name} uses two complementary approaches: a multi-scale unsharp masking Core Image pipeline (Sharpen and Auto Clear modes — fast, runs on any photo) and an on-device Real-ESRGAN x4 neural model (AI Clarity mode) that reconstructs high-frequency edge detail tile by tile. For photos that are soft rather than streaked — imperfect autofocus, slight hand-tremor in low light — these tools typically produce visible improvement. A strength slider controls intensity, and a press-and-hold before/after comparison lets you assess the actual result on your own photo before you commit to saving it.",
+  "bullets": [
+   "Sharpen mode: multi-scale unsharp masking + luminance sharpening — fast, color-faithful result",
+   "AI Clarity: Real-ESRGAN x4 neural model runs entirely on-device — rebuilds edge detail from scratch",
+   "Auto Clear: one-tap balanced fix combining sharpening, denoise, and micro-contrast for everyday soft shots",
+   "Strength slider: dial from subtle to aggressive — avoid pushing too high as over-sharpening creates haloing",
+   "Before/after press-and-hold comparison — verify the real improvement on your photo before saving"
+  ],
+  "faq": [
+   {
+    "q": "Does Unblurry improve every blurry photo?",
+    "a": "Sharpening improves photos where detail was captured but not resolved cleanly — soft focus, light camera shake. It cannot manufacture detail that was never captured. The before/after slider shows you the real result on your specific photo before you save."
+   },
+   {
+    "q": "What is the difference between Sharpen mode and AI Clarity?",
+    "a": "Sharpen uses Core Image unsharp masking — fast and runs on any photo. AI Clarity runs a Real-ESRGAN x4 neural model on-device, which tends to produce sharper, more natural edge reconstruction, especially on small or very soft images. AI Clarity takes longer and processes photos in tiles with a size cap."
+   },
+   {
+    "q": "Are enhanced photos saved at full resolution?",
+    "a": "Free exports are watermarked and resolution-capped. The one-time Pro unlock saves at your photo's full original resolution with no watermark, enables 4× upscaling, Portrait and Restore modes, and removes the daily save limit."
+   }
+  ]
+ },
+ {
+  "app_key": "unblurry",
+  "kind": "faq",
+  "query": "can an app actually fix motion blur in a photo",
+  "match": [
+   "can an app actually fix motion blur in a photo",
+   "what kind of blur can unblurry realistically fix",
+   "motion blur vs out of focus blur fix",
+   "can app fix motion blur photo"
+  ],
+  "lead": "Unblurry substantially improves soft-focus and mild camera-shake photos, but heavy directional motion blur — the streaking from a fast-moving subject — is a physically different problem that no sharpening or AI super-resolution tool can fully reverse.",
+  "detail": "Out-of-focus blur makes an image soft in all directions because the lens didn't resolve the subject sharply — the underlying edge data is blurred but present, and sharpening or neural SR can recover much of it. Motion blur from a fast subject or slow shutter averages light from multiple positions across time into directional streaks: spatial information along the smear direction is destroyed, not just blurred. {name}'s Sharpen mode will increase local contrast in a motion-blurred image — it will look less soft overall — but it cannot de-streak a runner or a moving car; the data was never captured. The Real-ESRGAN model powering AI Clarity was trained for general image super-resolution (recovering detail from degraded inputs), not for inverting specific motion-blur kernels. A practical test: if the subject is clearly recognizable but soft, sharpening genuinely helps; if edges and lines are smeared in a clear direction and the subject is hard to identify, no editing app will produce a clean fix.",
+  "bullets": [
+   "Out-of-focus blur: Unblurry's strongest use case — sharpening and AI SR both work well",
+   "Mild camera shake (hand tremor, not hard directional smear): noticeably improved with Sharpen or AI Clarity",
+   "Heavy directional motion blur (streaking subject): sharpening improves local contrast but cannot de-streak",
+   "Extreme blur (subject unrecognizable): no editing tool can reconstruct content that was never captured — be skeptical of apps that claim otherwise",
+   "Use the built-in before/after slider to judge the real result on your own photo before saving"
+  ],
+  "faq": [
+   {
+    "q": "What neural model powers Unblurry's AI Clarity mode?",
+    "a": "A Core ML conversion of Real-ESRGAN x4 (BSD-3 licensed), running entirely on-device on the Neural Engine or GPU. Real-ESRGAN is a super-resolution model trained on real-world image degradations including blur, noise, and compression artifacts — it tends to sharpen edges well, but it is not a dedicated motion-deblur network designed to invert directional blur kernels."
+   },
+   {
+    "q": "Why do many apps claim they can fix any blur?",
+    "a": "Sharpening algorithms increase edge contrast, which makes images look perceptually sharper and is a genuine improvement on soft-focus photos. Marketing often conflates 'looks less blurry' with 'fully recoverable' — they're not the same thing. Unblurry's support documentation is straightforward about what sharpening can and can't do."
+   },
+   {
+    "q": "Can Unblurry help a dark, blurry night photo?",
+    "a": "Night photos are often blurry for two separate reasons: high-ISO noise (fixable with Denoise mode) and blur from hand-shake or subject movement (partially fixable with Sharpen or AI Clarity for camera shake; not fully fixable if there is heavy directional motion blur). Try Auto Clear or Sharpen first — the before/after slider shows whether it helps on your specific shot."
+   }
+  ]
+ },
+ {
+  "app_key": "unblurry",
+  "kind": "scenario",
+  "query": "app to restore and upscale old scanned family photos iPhone no cloud",
+  "match": [
+   "app to restore and upscale old scanned family photos iphone no cloud",
+   "how to improve quality of faded scanned old photo on iphone",
+   "restore old scanned family photos iphone",
+   "upscale low-resolution vintage photo app"
+  ],
+  "lead": "Unblurry's Restore mode and 4× AI Upscale work well together on scanned or phone-photographed prints — reducing speckle and reviving faded colors before scaling the image up with neural edge reconstruction rather than simple pixel stretching.",
+  "detail": "When you scan or photograph an old print, the result is typically soft, grainy, color-faded, and small in pixel count. {name}'s Restore pipeline addresses each issue in sequence: a median filter suppresses scratch and speckle artifacts; noise reduction cleans up grain; a warm color-temperature shift compensates for the blue drift that printed photos develop with age; saturation and contrast boosts recover faded vibrancy. The 4× Upscale mode (Pro unlock required) then runs Real-ESRGAN on-device, producing sharper edges and finer texture than bicubic interpolation. One honest note: if a scanned area has no surviving detail — completely washed out or heavily damaged — the neural model fills in plausible texture that looks convincing at normal viewing sizes but is generated, not recovered historical data.",
+  "bullets": [
+   "Restore mode pipeline: median filter (scratch/speckle) → noise reduction → warmth shift → saturation and contrast revival",
+   "4× Upscale (Pro unlock): Real-ESRGAN neural upscaling — sharper edges and texture than standard bicubic",
+   "Works best on prints with visible content (even if faded) — not effective on fully washed-out or blank areas",
+   "Document mode is a good alternative for old typed letters, newspapers, or sheet music",
+   "100% on-device — your family photos never leave your iPhone"
+  ],
+  "faq": [
+   {
+    "q": "What is the maximum output size from 4× AI upscaling?",
+    "a": "The AI engine caps the input long edge at 768 pixels before running the model, producing a maximum output of 3072 pixels on the long edge. For large originals, the photo is first scaled down to fit the 768px cap, then upscaled 4× — keeping processing time and memory reasonable across all supported devices."
+   },
+   {
+    "q": "Should I use Restore mode or just Sharpen for old photos?",
+    "a": "Restore is specifically tuned for faded printed photos: speckle suppression, then warmth and color revival, then sharpening — in that order. Sharpen mode alone skips the color revival and noise steps. For genuinely old or faded prints, Restore is the better starting point; try Sharpen only if the photo is soft but not color-faded."
+   },
+   {
+    "q": "Can Unblurry colorize black-and-white photos?",
+    "a": "No. Unblurry enhances clarity, contrast, sharpness, and noise. It does not colorize grayscale images — that is a separate category of AI model not included in the app."
+   }
+  ]
+ },
+ {
+  "app_key": "unblurry",
+  "kind": "scenario",
+  "query": "how to make blurry whiteboard photo text sharp on iPhone",
+  "match": [
+   "how to make blurry whiteboard photo text sharp on iphone",
+   "app to fix soft document scan or jpeg-compressed screenshot iphone",
+   "sharpen whiteboard photo text iphone",
+   "make document scan readable app"
+  ],
+  "lead": "Unblurry's Document mode boosts contrast, lifts shadows, and applies tight unsharp masking specifically tuned for text strokes — making photographed whiteboards, soft document scans, and compression-softened screenshots noticeably more readable.",
+  "detail": "{name}'s Document pipeline differs from the general Sharpen mode in how it prioritizes readability over photographic quality: it reduces saturation (pushing toward neutral ink-on-paper contrast), boosts overall contrast more aggressively to separate text from background, and applies tightly-radiused unsharp masking that sharpens fine strokes without the haloing that general sharpening creates on continuous-tone images. It is also effective on a specific modern problem: screenshots shared via messaging apps (WhatsApp, iMessage) are JPEG-recompressed at lower quality, which smears fine text into soft artifacts — Document mode's denoise-then-sharpen pipeline recovers much of that apparent compression blur. The strength slider lets you push contrast without burning out fine hairline strokes.",
+  "bullets": [
+   "Document mode: contrast boost + shadow lift + fine-radius unsharp mask — tuned for text, not photographic content",
+   "Effective on photos of whiteboards, receipts, printed documents, handwritten notes",
+   "Also handles JPEG-compressed screenshots: compression softness responds well to denoise + fine sharpening",
+   "Strength slider: push sharpening and contrast without overexposing thin strokes",
+   "100% on-device — photograph a receipt, sharpen it, share it, no server involved"
+  ],
+  "faq": [
+   {
+    "q": "Is Document mode better than just using a dedicated scan app?",
+    "a": "Scan apps (including iOS built-in scanning) are better for capturing new documents — they correct perspective, normalize lighting, and output PDF. Document mode in Unblurry is for improving photos you've already taken: sharpening, contrast, and noise on an existing image. The two complement each other — scan first, then use Document mode in Unblurry if the text is still soft."
+   },
+   {
+    "q": "Can Unblurry make a blurry license plate or street sign readable?",
+    "a": "If the plate is soft due to mild focus blur or slight camera shake, sharpening usually helps. If it's blurry due to distance, fast movement, or very low resolution, the same limits apply: sharpening improves perceived contrast but cannot reconstruct characters that were never captured as distinct pixels. The before/after slider shows the real result before you save."
+   },
+   {
+    "q": "Does Document mode change the colors in my photo?",
+    "a": "Yes, intentionally — it reduces saturation by up to 25% at maximum strength to push the image toward readable ink-on-paper contrast, and it lifts shadows. For most document and whiteboard use cases this is helpful. If you want to preserve colors in a colorful flyer or printed illustration, use Auto Clear or Sharpen instead."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiletters",
+  "kind": "scenario",
+  "query": "What is the best phonics app for a 3-year-old who can't read yet?",
+  "match": [
+   "what is the best phonics app for a 3-year-old who can't read yet?",
+   "can a toddler use an abc learning app without a parent sitting with them?",
+   "pre-reader can play independently",
+   "abc app toddler no reading required",
+   "phonics app 3 year old no instructions to read",
+   "letter learning app works offline"
+  ],
+  "lead": "Lumi Letters is designed so pre-readers can pick it up, hear every instruction spoken aloud, and play through A–Z letter tracing and listening games entirely on their own.",
+  "detail": "Most phonics apps assume a child can already read the on-screen prompts — {name} is built from the ground up for children who cannot yet read a single word. Every instruction, letter name, phonics sound, and encouragement is spoken clearly by a child-friendly voice, so a 3-year-old can navigate the app independently without a parent present. Inside, there are two distinct worlds: the ABC Letter Park (26 candy-colored letter bubbles, each hiding a collectible forest friend) and My Planet (a 14-planet adventure with varied phonics challenges — beginning sounds, ending sounds, middle vowels, missing letters). {name} works fully offline too, making it ideal for car rides or flights without Wi-Fi.",
+  "bullets": [
+   "Every on-screen instruction is spoken aloud — pre-readers play independently from day one",
+   "Covers A–Z uppercase AND lowercase together, so letters never get confused",
+   "Real stroke-order tracing with numbered guides and a finger-following path",
+   "14 phonics challenge types across a 14-planet space adventure (My Planet mode)",
+   "26 collectible forest friends unlock as letters are mastered — intrinsic motivation, no fake currency",
+   "Fully offline — works on planes, car trips, anywhere without Wi-Fi"
+  ],
+  "faq": [
+   {
+    "q": "Does my child need to be able to read to use {name}?",
+    "a": "No — {name} is specifically designed for pre-readers. Every instruction is spoken aloud in a clear, child-paced voice. Your child hears the letter, hears the phonics sound, and taps or traces — no on-screen text needs to be read."
+   },
+   {
+    "q": "Are there any ads or pop-ups that could interrupt my child while they play {name} alone?",
+    "a": "There are no ads, no pop-ups, no external links, and no notification interruptions. {name} is 100% ad-free and designed for safe independent play."
+   },
+   {
+    "q": "Can {name} be used offline on a plane or during a road trip?",
+    "a": "Yes — {name} works fully offline. All content is stored on the device; no internet connection is needed during play."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiletters",
+  "kind": "faq",
+  "query": "Is there a phonics app for kids that has no ads and no monthly subscription?",
+  "match": [
+   "is there a phonics app for kids that has no ads and no monthly subscription?",
+   "what is the best one-time-purchase alphabet app for toddlers with no tracking?",
+   "best no-ad abc app for kids",
+   "phonics app one-time purchase no subscription",
+   "letter learning app no in-app purchases",
+   "toddler education app no ads no data"
+  ],
+  "lead": "{name} is a one-time-purchase alphabet and phonics app for ages 3–7 with no ads, no subscription, no third-party tracking, and no data collected from children.",
+  "detail": "In a market full of 'free' kids apps that monetize through ads or persistent subscription upsells, {name} takes a different approach: one purchase, then everything is yours with nothing more to pay. The app collects no personal data, has no third-party ad networks, and includes a parental gate that keeps purchase settings out of children's reach. Progress is stored only on the device and never uploaded to any server. Parents who are careful about their child's screen-time quality consistently highlight this as the main reason they chose {name} over free alternatives.",
+  "bullets": [
+   "Zero ads — no banner ads, no video ads, no sponsored content of any kind",
+   "Zero data collection — no accounts required, no analytics sent off-device",
+   "One-time purchase, no monthly or annual subscription",
+   "Parental gate protects settings and purchase screens",
+   "No external links that could route children out of the app"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} have any subscription fees after the initial purchase?",
+    "a": "No. {name} is a one-time purchase — there are no subscriptions, no monthly fees, and no additional in-app purchases. Buy once and your child can use the full app indefinitely."
+   },
+   {
+    "q": "Does {name} show ads to my child?",
+    "a": "{name} contains absolutely no advertising — no banners, no video ads, no sponsored characters. The app is completely ad-free."
+   },
+   {
+    "q": "Does {name} collect any data about my child?",
+    "a": "{name} collects no personal data. No account is required, no information is sent to external servers, and your child's progress is stored only on your device."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiletters",
+  "kind": "persona",
+  "query": "How do I find a kids learning app that isn't addictive or manipulative?",
+  "match": [
+   "how do i find a kids learning app that isn't addictive or manipulative?",
+   "what makes a screen-time app worth it for a 4-year-old? i want real learning, not just clicking.",
+   "screen time quality conscious parent",
+   "parent wants educational value from apps",
+   "no manipulative game mechanics kids app",
+   "calm learning app no pressure toddler"
+  ],
+  "lead": "For parents who evaluate kids apps on whether they build genuine skills rather than just screen engagement, Lumi Letters is built around real phonics learning — stroke-order tracing, sound recognition, and phonics blending — not points, streaks, or reward loops designed to maximize time-on-app.",
+  "detail": "{name} is explicitly designed around what phonics researchers call 'systematic phonics instruction': each letter introduces its name, its sound, a first-words example, and correct stroke order — in that order, every time. The 14-planet My Planet adventure includes structured phonics challenge types (beginning sounds, ending sounds, middle vowel sounds, missing letters, upper-lowercase matching) rather than arbitrary minigames. There are no timers, no lives, no 'come back tomorrow' streak mechanics, and no artificial urgency. A child who stops and picks it up a week later finds their progress exactly where they left it, without any social pressure to return. {name} paces at the child's speed; confidence-building rather than anxiety is the explicit design goal stated in the app's store listing.",
+  "bullets": [
+   "Covers A–Z uppercase and lowercase, phonics sounds, stroke-order tracing, and first-words examples",
+   "14-planet adventure uses real phonics challenge types, not arbitrary click-to-earn minigames",
+   "No timers, no lives, no 'streak' pressure mechanics",
+   "Progress saves locally; no 'you'll lose your streak' social engineering",
+   "Child-paced: no artificial urgency or manipulative notifications"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} use addictive mechanics like streaks, lives, or timers to keep kids playing longer?",
+    "a": "{name} does not use timers, lives, streaks, or any mechanic designed to create anxiety about returning. A child can stop at any time and return days later to find everything exactly where they left it."
+   },
+   {
+    "q": "What real phonics skills does {name} teach, beyond just showing letters?",
+    "a": "{name} teaches letter recognition (uppercase and lowercase), phonics sounds, stroke-order handwriting, first-word sound associations, and beginning/ending/middle-vowel sound discrimination through 12 game types across 14 planets."
+   },
+   {
+    "q": "Is {name} suitable for a child who gets easily frustrated with learning games?",
+    "a": "Yes — {name} is designed with gentle pacing and no failure states that eject a child from an activity. The app gives encouragement rather than a 'wrong' buzzer, and there's no punishment for making mistakes."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiletterspro",
+  "kind": "persona",
+  "query": "Is there a phonics app for homeschoolers that also generates printable practice worksheets?",
+  "match": [
+   "is there a phonics app for homeschoolers that also generates printable practice worksheets?",
+   "what is the best bilingual phonics app for a family teaching english as a heritage language?",
+   "homeschool phonics app with printable worksheets",
+   "alphabet app that generates practice sheets",
+   "abc learning app with parent dashboard",
+   "phonics app four languages bilingual family"
+  ],
+  "lead": "Lumi Letters Pro adds a Parent Zone that exports PDF practice sheets and learning insights — making it a digital-plus-paper phonics curriculum in one app for homeschooling and bilingual families.",
+  "detail": "Where the Lite version of {name} focuses on child-directed play, the Pro version adds a Parent Zone designed for parents who want to close the loop between screen-time learning and paper practice. From the Parent Zone, parents can export a printable PDF practice sheet matched to their child's current level, review learning data to see which letters need more practice, and back up or restore progress when switching devices. {name} also runs in four languages — Traditional Chinese, English, Japanese, and Korean — switching automatically based on device settings, making it practical for multilingual households or for Chinese-heritage families in the US, Canada, or Australia who need both English phonics and Chinese-language support in one place.",
+  "bullets": [
+   "Parent Zone: export printable PDF practice sheets at the child's current level",
+   "Learning data insights: see which letters need more reinforcement",
+   "Progress backup and restore — switch devices without losing progress",
+   "Four languages: Traditional Chinese, English, Japanese, Korean (auto-detects device language)",
+   "Same core phonics content as Lite (A–Z tracing, phonics, 26 forest friends, 14-planet adventure) plus parent layer",
+   "Paid upfront download — one-time purchase; no subscription, no ads, no data collected"
+  ],
+  "faq": [
+   {
+    "q": "Can {name} generate printable worksheets so my child can practice letters off-screen?",
+    "a": "Yes — {name}'s Parent Zone lets you export a PDF practice sheet matched to your child's current learning level. You can print it or save it for offline use."
+   },
+   {
+    "q": "Does {name} support languages other than English?",
+    "a": "{name} runs in Traditional Chinese, English, Japanese, and Korean. The app detects your device language automatically and switches accordingly — or you can switch manually in the Parent Zone."
+   },
+   {
+    "q": "Is {name} suitable for a Chinese-heritage family teaching English phonics?",
+    "a": "Yes — {name} was specifically designed for bilingual and multilingual families. The English phonics content (A–Z, phonics sounds, tracing) is delivered with full Traditional Chinese interface support, so Chinese-speaking parents can guide the experience while the child learns English sounds."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiletterspro",
+  "kind": "scenario",
+  "query": "What is the best app for a Chinese-speaking family in the US to teach their child English phonics?",
+  "match": [
+   "what is the best app for a chinese-speaking family in the us to teach their child english phonics?",
+   "is there a bilingual abc app that works in both chinese and english for heritage families?",
+   "chinese heritage family teaching english phonics app",
+   "bilingual phonics app traditional chinese english",
+   "heritage language parent teaching abc",
+   "app learn english phonics for chinese-speaking kids"
+  ],
+  "lead": "Lumi Letters Pro is used by Chinese-heritage families worldwide to introduce English phonics in a bilingual environment — the app interface runs in Traditional Chinese while teaching English letter sounds, names, and stroke-order tracing.",
+  "detail": "For Chinese-heritage families in the US, Canada, Australia, Singapore, and the UK who speak Traditional Chinese at home but need their child to build English reading foundations, {name} bridges both needs. The parent-facing interface, instructions, and Parent Zone run in Traditional Chinese; the phonics content (letter sounds, first-word examples, challenge types) delivers English learning. The four-language support means Chinese grandparents can navigate the parent controls while the child receives native-quality English phonics instruction. There is no need for account creation or data sharing — all progress stays on the device, which matters to families concerned about children's data privacy.",
+  "bullets": [
+   "Interface available in Traditional Chinese so Chinese-speaking parents can navigate fully",
+   "Child learns English phonics (A–Z, sounds, stroke order) through the Chinese-interface app",
+   "Four languages total: Traditional Chinese, English, Japanese, Korean",
+   "No account required; no child data sent off-device",
+   "Parent Zone (PDF worksheets, learning data, progress backup) fully in parent's language",
+   "One-time purchase — no subscription or recurring fees"
+  ],
+  "faq": [
+   {
+    "q": "My family speaks Traditional Chinese at home. Can I still use {name} to teach my child English phonics?",
+    "a": "Yes — {name} supports Traditional Chinese as a full interface language. Parents navigate in Chinese while the child learns English letters, phonics sounds, and tracing. The app automatically selects the appropriate language, or you can set it manually."
+   },
+   {
+    "q": "Does {name} require an account or internet connection for a Chinese-heritage family to use it abroad?",
+    "a": "{name} requires no account and no internet connection during play. All content and progress is stored locally on the device — it works fully offline and collects no data."
+   },
+   {
+    "q": "What does my child actually learn from {name} in an English phonics context?",
+    "a": "Your child learns to recognize and name all 26 letters (uppercase and lowercase), associate each letter with its phonics sound, trace letters with correct stroke order, and distinguish beginning, ending, and vowel sounds — the foundational skills for early reading in English."
+   }
+  ]
+ },
+ {
+  "app_key": "lumiletterspro",
+  "kind": "faq",
+  "query": "Is there a phonics app that shows parents what their child has learned and where they need more practice?",
+  "match": [
+   "is there a phonics app that shows parents what their child has learned and where they need more practice?",
+   "can i back up my child's phonics app progress if we get a new iphone?",
+   "phonics app with progress tracking for parents",
+   "abc app parent reporting learning insights",
+   "kids letter app backup restore new phone",
+   "phonics curriculum app one time purchase vs subscription"
+  ],
+  "lead": "Lumi Letters Pro's Parent Zone gives parents a view of learning data, the ability to export PDF practice sheets, and a progress backup that survives phone replacements — all with a one-time purchase, no subscription.",
+  "detail": "{name} is designed with two users in mind: the child who plays, and the parent who wants to understand what their child has learned without interrogating them. The Parent Zone is accessible behind a parental gate and shows which letters are mastered, which still need reinforcement, and at what level the child is currently working. Parents can export a level-matched PDF practice sheet to bridge screen and paper learning. Progress can be exported as a local backup file and restored on a new device — so a phone replacement or family sharing across devices does not erase months of progress.",
+  "bullets": [
+   "Parent Zone: learning data showing per-letter mastery and areas for more practice",
+   "PDF practice-sheet export matched to child's current level",
+   "Progress backup: export to file, restore on new device — no iCloud required",
+   "Parental gate keeps the Parent Zone child-inaccessible",
+   "One-time purchase, no subscription, no recurring fees",
+   "No data sent to external servers — all progress and data is local to the device"
+  ],
+  "faq": [
+   {
+    "q": "How does the Parent Zone in {name} show my child's progress?",
+    "a": "The Parent Zone in {name} shows which letters your child has mastered and which need more practice. You can also generate a PDF practice sheet at your child's current level to use offline."
+   },
+   {
+    "q": "If we upgrade to a new iPhone, will my child's progress in {name} transfer?",
+    "a": "Yes — {name} includes a local progress backup feature. You export a backup file from the Parent Zone, transfer it to the new device, and restore — all without cloud accounts or external services."
+   },
+   {
+    "q": "Is {name} a subscription, or is it a one-time purchase?",
+    "a": "{name} is a one-time purchase. There are no subscriptions, monthly fees, or ongoing charges. Once purchased, all features and future content are included with that purchase."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimath",
+  "kind": "scenario",
+  "query": "Is there an app to prepare my 6-year-old for WMI or similar math competitions?",
+  "match": [
+   "is there an app to prepare my 6-year-old for wmi or similar math competitions?",
+   "what math app teaches kids logic and reasoning, not just addition and subtraction?",
+   "wmi math competition prep for young kids",
+   "math olympiad app for children ages 5 to 8",
+   "kids math app beyond basic arithmetic",
+   "logic and reasoning math app preschool"
+  ],
+  "lead": "{name} is an iOS app, free to start with a one-time unlock, built on WMI (World Mathematics Invitational) and international competition question types — covering number patterns, logic, sequences, ordinals, combinations, story problems, and shapes — across a 14-planet space adventure for ages 5–8.",
+  "detail": "Most kids math apps stop at counting and arithmetic. {name} is built directly from the question types used in WMI and similar international early-grade math competitions: number pattern recognition, logical reasoning, finding the rule in a sequence, ordinal reasoning, basic combinations, shape and spatial problems, and applied story problems — alongside solid arithmetic. Each question uses cute clay-art visuals so even pre-readers can understand problems without text. The app also tracks weak spots automatically: it identifies which question types a child consistently misses and generates fresh practice sets targeting those specifically, so improvement is targeted rather than random.",
+  "bullets": [
+   "Question types sourced from WMI and international competition formats (ages 5–8 level)",
+   "Covers: number patterns, logic, sequences, comparison, ordinals, combinations, story problems, shapes + arithmetic",
+   "Clay-art 'understand at a glance' visuals — pre-readers can play independently",
+   "Weak-spot tracker: automatically identifies most-missed question types and drills them with new numbers",
+   "Skill tracking: progress scores for number sense, patterns, logic, space, and real-life domains",
+   "Free to start with a one-time unlock, zero ads, zero data collected"
+  ],
+  "faq": [
+   {
+    "q": "What competition math question types does {name} cover for young children?",
+    "a": "{name} covers the question types used in WMI and similar international early-grade competitions: number patterns, sequences, logical reasoning, ordinals, comparison, basic combinations, spatial/shape problems, applied story problems, and arithmetic. These are not random questions — they are chosen to build the reasoning skills competitions actually test."
+   },
+   {
+    "q": "How does {name} help with weak areas, rather than just reviewing everything equally?",
+    "a": "{name} automatically tracks how your child performs on every question type. The Weak-Spot Practice mode collects the types they most frequently miss, generates fresh problems with new numbers for each, and drills those specifically — so improvement targets real gaps."
+   },
+   {
+    "q": "Is {name} only for competition prep, or can it be used by any child ages 5–8?",
+    "a": "{name} is designed for any child aged 5–8 who is ready to go beyond basic arithmetic. The competition question types build reasoning skills that are valuable for all learners — WMI prep is the most visible application, but strong logical thinking benefits every child regardless of competition plans."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimathpro",
+  "kind": "persona",
+  "query": "Is there a math game for kids that I pay for once and has absolutely no in-app purchases or ads?",
+  "match": [
+   "is there a math game for kids that i pay for once and has absolutely no in-app purchases or ads?",
+   "my 6-year-old is advanced in math — what app genuinely challenges them with real reasoning, not just faster arithmetic?",
+   "math app trusted by parents no ads no iap",
+   "paid math app no in-app purchases kids",
+   "kids math game with tracking no manipulation",
+   "math app for gifted 6 year old space theme"
+  ],
+  "lead": "{name} is a paid-upfront iOS app with zero in-app purchases, zero ads, and zero data collected — parents pay once and the complete app is theirs, with no further spending prompts.",
+  "detail": "{name} is positioned as a premium, trust-first product. There are no ads interrupting play, no 'buy more coins' screens, no timers designed to push children to ask parents for upgrades, and no social pressure mechanics. The purchase is a standard paid App Store download — nothing more happens monetarily after that. All data stays on device; the app explicitly collects no personal information. For parents of gifted or academically advanced children who want genuine reasoning challenges rather than faster arithmetic drills, the WMI-style question formats — patterns, logic, combinations, ordinals — offer a qualitatively different type of math practice.",
+  "bullets": [
+   "Paid app — one purchase, no IAP, no in-app spending of any kind",
+   "Zero ads — no banner, video, or rewarded ads at any point",
+   "Zero data collected — everything stays on device; no accounts required",
+   "Challenges reasoning, not just speed: WMI-style logic, patterns, sequences, ordinals",
+   "Clay-art visuals make the app playable for pre-readers and adults alike",
+   "Progress export/import: switch phones without losing months of progress"
+  ],
+  "faq": [
+   {
+    "q": "After I buy {name}, will my child ever see a prompt to spend more money?",
+    "a": "Never. {name} is a paid-upfront app with no in-app purchases whatsoever. Once downloaded, the complete app is yours with no further spending prompts of any kind."
+   },
+   {
+    "q": "Is {name} suitable for a 6-year-old who finds typical kids math apps too easy?",
+    "a": "Yes — {name} uses WMI-level question types (patterns, logic, ordinals, combinations, spatial reasoning) that challenge children who have already mastered counting and basic arithmetic. The 14-planet adventure also adds engaging context that keeps advanced learners motivated."
+   },
+   {
+    "q": "Does {name} work without internet, and does it store any data on external servers?",
+    "a": "{name} works offline and stores all data on your device only. No data is collected, no accounts are required, and nothing is uploaded to external servers."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimath",
+  "kind": "faq",
+  "query": "Is there a math app for kids that tracks which types of problems they get wrong and focuses practice there?",
+  "match": [
+   "is there a math app for kids that tracks which types of problems they get wrong and focuses practice there?",
+   "what ios math app adapts to my child's weak areas automatically?",
+   "math app with weak spot tracking kids",
+   "personalized math practice app for child",
+   "app that tracks which math skills my child misses",
+   "adaptive math practice ios kids"
+  ],
+  "lead": "Lumi Math Planet automatically tracks a child's performance across every question type and has a dedicated Weak-Spot Practice mode that generates fresh problems targeting specifically the categories they miss most.",
+  "detail": "Many kids math apps review all content equally regardless of what a child already knows. {name} records results by question category across the entire app and surfaces the child's most frequently missed types in the Weak-Spot Practice mode — which generates new numbers for those same problem types, so the practice is genuinely different each session rather than memorizable. The Skill Tracking page displays a score across five domains (number sense, patterns, logic, space, real-life), giving parents a clear picture of which areas are strong and which need attention. This means practice time is spent where it matters most.",
+  "bullets": [
+   "Automatically tracks performance per question type across all 14 planets",
+   "Weak-Spot Practice mode collects most-missed categories and drills them with fresh numbers each session",
+   "Skill Tracking page: scores across number sense, patterns, logic, space, real-life",
+   "No guesswork — parents see exactly where their child is strong and where to focus",
+   "One-time purchase; no subscription or additional fees to access tracking features"
+  ],
+  "faq": [
+   {
+    "q": "How does {name}'s weak-spot tracking work?",
+    "a": "{name} records your child's answers across every question type in the 14-planet adventure. The Weak-Spot Practice mode automatically collects the categories with the most errors and generates fresh problems with new numbers for those types — so repeated practice genuinely reinforces rather than just repeats."
+   },
+   {
+    "q": "What does the Skill Tracking page in {name} show parents?",
+    "a": "The Skill Tracking page shows a score for each of five mathematical domains: number sense, patterns, logic, space, and real-life. It also shows overall completion progress. Parents can see at a glance where their child excels and which areas need more practice."
+   },
+   {
+    "q": "Can I export or share {name}'s progress data with my child's teacher or tutor?",
+    "a": "In the base version of {name}, progress data is visible in the Skill Tracking page on-device. The Pro version adds a Learning Report PDF export that can be shared with teachers or tutors."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimathpro",
+  "kind": "persona",
+  "query": "Is there a kids math app that can generate printable worksheets I can use for off-screen practice?",
+  "match": [
+   "is there a kids math app that can generate printable worksheets i can use for off-screen practice?",
+   "what math app for children produces a learning report i can share with my child's teacher?",
+   "math app that generates printable worksheets for kids",
+   "kids math app learning report pdf teacher",
+   "homeschool math app with progress documentation",
+   "math competition prep app printable practice"
+  ],
+  "lead": "Lumi Math Pro generates printable 20-question PDF worksheets at your child's current level (with answer key) and a one-page Learning Report PDF showing skill scores across five domains — designed for parents who want evidence of progress alongside the in-app experience.",
+  "detail": "For homeschooling parents, competition-track families, or parents coordinating with teachers, {name} closes the gap between app-based practice and paper/portfolio documentation. From the Parent Zone, a parent can generate a 20-question worksheet matched to the child's current level in any question category, save it as a PDF, and print it for screen-free practice anywhere. The Learning Report PDF gives a one-page snapshot of the child's skill scores across number sense, patterns, logic, spatial reasoning, and real-life math — suitable for sharing with teachers, tutors, or for academic program applications. {name} also adds four auto-detected languages (English, Traditional Chinese, Japanese, Korean) and local progress backup, making it the right choice for multilingual families or frequent phone upgrades.",
+  "bullets": [
+   "Printable worksheet generator: 20-question PDF at child's current level, with answer key",
+   "Learning Report PDF: skill scores across number sense, patterns, logic, space, real-life",
+   "Parent Zone: export both PDFs for school portfolios, teacher sharing, or tutor prep",
+   "4 languages auto-detected: English, Traditional Chinese, Japanese, Korean",
+   "Progress backup and restore — switch phones without losing data",
+   "One-time purchase; no subscription, no ads, no data collected"
+  ],
+  "faq": [
+   {
+    "q": "What does the printable worksheet from {name} look like?",
+    "a": "{name} generates a 20-question practice sheet matched to your child's current level in the app, formatted as a clean PDF with an answer key. You can print it for paper practice, save it for a portfolio, or share it with a teacher or tutor."
+   },
+   {
+    "q": "Can I share my child's {name} learning data with their teacher?",
+    "a": "Yes — {name}'s Learning Report PDF is a one-page summary of your child's skill scores across five mathematical domains (number sense, patterns, logic, space, real-life) and their overall progress. It can be exported and shared with teachers, tutors, or kept for academic records."
+   },
+   {
+    "q": "Does {name} work in Japanese or Korean for our multilingual family?",
+    "a": "Yes — {name} supports English, Traditional Chinese, Japanese, and Korean. The app detects your device language automatically, so questions, voice guidance, and the parent interface all display in your family's language."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimathpro",
+  "kind": "scenario",
+  "query": "What is the best app to prepare a 7-year-old for WMI that also has printable practice sheets for offline drilling?",
+  "match": [
+   "what is the best app to prepare a 7-year-old for wmi that also has printable practice sheets for offline drilling?",
+   "is there a competition math app for kids that works in japanese or korean as well as english?",
+   "wmi prep app printable worksheets offline practice",
+   "competition math app for kids paper practice pdf",
+   "math olympiad junior level app parents track",
+   "advanced math app for 7 year old four languages"
+  ],
+  "lead": "Lumi Math Pro is the most complete version of the WMI-style competition math app — it adds PDF worksheet generation, a Learning Report, four languages, and progress backup on top of the full 14-planet adventure and weak-spot tracking.",
+  "detail": "For families seriously preparing for WMI or similar early-grade math competitions, {name} provides the full in-app curriculum (14 planets, WMI-style question types, weak-spot drilling) plus the offline practice infrastructure: a parent can generate a 20-question worksheet at the child's current competition-prep level, print it, and use it during the car ride to the competition, at a tutor session, or over breakfast. The Learning Report PDF shows parents exactly which of the five skill domains need more work before a competition, removing guesswork from targeted preparation. For families outside English-speaking countries — particularly Japan and Korea where math competitions are popular — {name} delivers the complete experience in Japanese or Korean with auto-detected language switching.",
+  "bullets": [
+   "Full WMI-style question set (patterns, logic, sequences, ordinals, combinations, shapes, story problems + arithmetic)",
+   "20-question printable worksheet at child's current level + answer key",
+   "Learning Report PDF: skill scores across 5 domains for pre-competition gap analysis",
+   "4 languages: English, Traditional Chinese, Japanese, Korean",
+   "Weak-spot practice mode: auto-identifies and drills most-missed question types",
+   "Paid upfront, no IAP, no ads, no data collected"
+  ],
+  "faq": [
+   {
+    "q": "How does {name} help my child prepare for WMI specifically?",
+    "a": "{name} is built on WMI and similar international contest question types for the kids/early-grade level: number patterns, sequences, logical reasoning, ordinals, combinations, shape recognition, and applied story problems. The weak-spot tracker and printable worksheets let you target exactly the question types your child misses before the competition."
+   },
+   {
+    "q": "Does {name} work in Japanese for a family competing in Japan's math olympiad circuit?",
+    "a": "Yes — {name} fully supports Japanese, including localized questions and voice. The app auto-detects device language or can be set manually."
+   },
+   {
+    "q": "Is the Learning Report in {name} useful for a math tutor or teacher?",
+    "a": "Yes — the Learning Report PDF is a shareable one-pager showing your child's score across number sense, patterns, logic, spatial reasoning, and real-life math. Most tutors find it useful for quickly identifying the 1–2 domains that need the most focused work."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "What is the best app to teach Bopomofo/Zhuyin to my child who was born in the US?",
+  "match": [
+   "what is the best app to teach bopomofo/zhuyin to my child who was born in the us?",
+   "my family is taiwanese-american — is there an app to teach my 5-year-old zhuyin before we visit taiwan?",
+   "teach bopomofo to kids heritage chinese family abroad",
+   "app to learn zhuyin symbols for overseas taiwanese children",
+   "bopomofo app for kids in usa canada",
+   "chinese phonics app zhuyin diaspora family"
+  ],
+  "lead": "Lumi Bopomofo teaches all 37 Zhuyin symbols (ㄅㄆㄇ phonetics, as used in Taiwan) through four distinct game modes — listening, tracing, tone practice, and syllable blending — designed specifically for ages 4–7 including children who have never seen Bopomofo before.",
+  "detail": "For Taiwanese-heritage or Chinese-diaspora families outside Taiwan, teaching Zhuyin to a child who was born abroad presents a specific challenge: most resources are designed for children already immersed in a Chinese-language environment. {name} is structured for the from-zero learner: each of the 37 symbols gets its own dedicated character ('friend'), listen-and-tap recognition game, finger-tracing guided by stroke order, and a place in the Sound Train (聲母+介音+韻母 blending). The Tone Coaster teaches all four tones through an animated car-on-track visual that pre-readers instantly understand. The free version lets your child try the core games — enough to start — and a one-time in-app purchase unlocks all 37 symbol friends and every level.",
+  "bullets": [
+   "Covers all 37 Bopomofo/Zhuyin symbols used in Taiwan's phonetic system",
+   "Four game modes: Feed Friends (listening), Magic Tracing (stroke order), Tone Coaster (4 tones), Sound Train (syllable blending)",
+   "37 collectible character 'friends' plus hidden characters to discover",
+   "Free version: try the core games; a one-time purchase unlocks all 37 symbol friends and every level",
+   "No ads, no data collected, progress stored only on device",
+   "English + Chinese interface — navigable by non-Chinese-reading parents"
+  ],
+  "faq": [
+   {
+    "q": "What is Bopomofo/Zhuyin and why would my child need to learn it?",
+    "a": "Bopomofo (also called Zhuyin, or ㄅㄆㄇ after its first three symbols) is Taiwan's phonetic annotation system — the equivalent of phonics in English. Taiwan's primary school curriculum teaches all 37 symbols in Grade 1. For Taiwanese-heritage families outside Taiwan, learning Zhuyin enables children to read Traditional Chinese texts with phonetic guides and connect with Taiwanese educational materials."
+   },
+   {
+    "q": "Does {name} teach the tones as well as the symbols?",
+    "a": "Yes — {name} has a dedicated mode called the Tone Coaster that teaches all four Mandarin tones. An animated cart rides a track that visually represents each tone contour, making the tone system intuitive even for young children."
+   },
+   {
+    "q": "How much of {name} is free, and what does the paid unlock add?",
+    "a": "The free version of {name} lets your child try the core games — enough to get a real sense of the app. A single one-time purchase unlocks all 37 symbol friends and every level. There is no subscription."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "Is there a fun app to teach my 4-year-old the Zhuyin/Bopomofo symbols?",
+  "match": [
+   "is there a fun app to teach my 4-year-old the zhuyin/bopomofo symbols?",
+   "what is the best ios app for kids to learn ㄅㄆㄇ with stroke tracing?",
+   "how to teach zhuyin to a 4-year-old app",
+   "best bopomofo learning game for preschoolers",
+   "ㄅㄆㄇ app for kids stroke order",
+   "zhuyin phonics game children ios"
+  ],
+  "lead": "Lumi Bopomofo (Lumi 注音星球) is an iOS game specifically for ages 4–7 that teaches all 37 Zhuyin symbols through listening games, stroke-order finger tracing, tone practice, and syllable blending — with 37 collectible characters as motivation.",
+  "detail": "{name} is designed to make the often-tedious job of memorizing 37 Bopomofo symbols genuinely fun for young children. The 'Feed the Friends' mode plays a symbol's sound and asks the child to tap the correct symbol — building auditory recognition. Magic Tracing shows the correct stroke order for each symbol and guides the child's finger along the path. The Tone Coaster uses an animated visual (a cart riding a track shaped like each tone's pitch curve) to teach the four tones intuitively. The Sound Train mode then teaches syllable assembly: choosing an initial consonant (聲母), a medial (介音), and a final (韻母) to form a complete syllable. The free version lets children try the core games before a one-time purchase unlocks all 37 symbol friends and every level.",
+  "bullets": [
+   "Feed the Friends: listen to a symbol's sound and tap the correct one from the map",
+   "Magic Tracing: guided stroke-order tracing for every symbol",
+   "Tone Coaster: animated visual teaching all 4 tones (flat, rising, dipping, falling)",
+   "Sound Train: blend 聲母 + 介音 + 韻母 to form complete syllables",
+   "37 collectible 'friends' (one per symbol) plus hidden characters",
+   "No ads, no data collection, device-only progress"
+  ],
+  "faq": [
+   {
+    "q": "At what age can a child start using {name} to learn Bopomofo?",
+    "a": "{name} is designed for ages 4–7. The youngest children typically start with listening and tracing; the Sound Train (syllable blending) is more appropriate for children who already know several symbols. The free version is a good starting point to test your child's readiness."
+   },
+   {
+    "q": "Does {name} teach stroke order for Bopomofo symbols, or just recognition?",
+    "a": "Yes — {name}'s Magic Tracing mode shows the correct stroke order for every symbol, guides the child's finger along the path, and provides gentle feedback. Correct stroke order for Bopomofo symbols is taught as a first-class part of the app, not an afterthought."
+   },
+   {
+    "q": "Is {name} specifically for Taiwan's Zhuyin system, or does it also teach Pinyin (mainland China)?",
+    "a": "{name} teaches Bopomofo/Zhuyin exclusively — the phonetic system used in Taiwan's educational curriculum. It does not teach Pinyin (the romanization-based system used in mainland China). If your family uses or plans to use the Taiwan school system, {name} is directly aligned with that curriculum."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "persona",
+  "query": "How do I help my child prepare for Grade 1 Bopomofo learning in Taiwan?",
+  "match": [
+   "how do i help my child prepare for grade 1 bopomofo learning in taiwan?",
+   "my 5-year-old is starting primary school in taiwan next year — what app can help them get a head start on zhuyin?",
+   "taiwan kindergarten grade 1 bopomofo prep",
+   "child starting primary school taiwan phonics ready",
+   "bopomofo preparation before grade 1",
+   "注音準備入學app 4歲5歲"
+  ],
+  "lead": "For Taiwan-based families whose child is heading toward Grade 1 — where all 37 Bopomofo symbols are introduced as the foundation of Chinese literacy — Lumi Bopomofo offers a low-pressure, game-based introduction to every symbol before formal classroom instruction begins.",
+  "detail": "Taiwan's Grade 1 curriculum introduces all 37 Zhuyin symbols and their corresponding tones and blending rules within the first semester. Children who arrive at school having already encountered these symbols through play are significantly less anxious about the material. {name} covers all 37 symbols, the four tones, and basic 聲母+介音+韻母 blending (Sound Train mode) — all at a pace and in a style appropriate for 4–6 year olds. Unlike rote flashcard drilling, the game structure (Feed Friends, Magic Tracing, Tone Coaster, Sound Train) builds familiarity through repeated playful exposure rather than memorization pressure. The free version is a genuine preview of the core games; a one-time unlock provides the complete set.",
+  "bullets": [
+   "All 37 Zhuyin symbols covered — aligned with Taiwan Grade 1 curriculum scope",
+   "Tone Coaster teaches all four tones (first, second, third, fourth) visually",
+   "Sound Train practices 聲母+介音+韻母 blending, a key Grade 1 skill",
+   "Game-based exposure reduces first-day anxiety about unfamiliar symbols",
+   "Free version to start; a one-time unlock opens all 37 symbol friends",
+   "No ads, no data collected, fully offline"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} cover everything a child needs before starting Bopomofo in Grade 1?",
+    "a": "{name} covers all 37 symbols, all four tones, and 聲母+介音+韻母 syllable blending — the core scope of Taiwan's Grade 1 Bopomofo introduction. It is designed as a play-based preview and confidence builder, not a substitute for formal classroom instruction."
+   },
+   {
+    "q": "How long does it take for a 5-year-old to work through all 37 symbols in {name}?",
+    "a": "Timing varies by child; a few short sessions per week usually work better than long drills. The free version lets you test the pace before purchasing."
+   },
+   {
+    "q": "Is {name} used as homework support or just for pre-school prep?",
+    "a": "{name} works for both — it is commonly used as a low-pressure complement to school homework for Grade 1 children who need more practice with specific symbols or tones, as well as for pre-school children getting a head start before formal instruction."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "faq",
+  "query": "Is there a fully-unlocked Bopomofo app with no free-tier restrictions for children?",
+  "match": [
+   "is there a fully-unlocked bopomofo app with no free-tier restrictions for children?",
+   "what is the pro version of lumi bopomofo and what does it add?",
+   "complete bopomofo app all 37 symbols full unlock",
+   "zhuyin app unlimited practice no limit",
+   "bopomofo pro version full content",
+   "best paid zhuyin app no ads full curriculum"
+  ],
+  "lead": "Lumi Bopomofo Pro unlocks all 37 Zhuyin sounds, every level and every game from the first launch — no free tier, no locked content, no in-app purchase prompts during a child's session.",
+  "detail": "Where the free edition starts with the core games and a one-time unlock for the rest, {name} is fully unlocked from day one. Children have immediate access to all 37 Bopomofo sounds, every level and every game, plus all collectible companions. For families who know they want the complete curriculum without any upsell interruptions during a child's play session — particularly in a classroom, tutor, or structured home-learning environment — the Pro version removes all friction. There are no ads, no data collected, and no subscription.",
+  "bullets": [
+   "All 37 Zhuyin symbols unlocked from day one",
+   "All five games fully accessible: Match and Feed, Magic Tracing, Tone Roller Coaster, Bopomofo Fishing, Star Race",
+   "Every level unlocked (no free-play limit)",
+   "All collectible friends + hidden characters accessible",
+   "No in-app purchase prompts during a child's session",
+   "No ads, no data collected, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "What does {name} include that the free version of Lumi Bopomofo does not?",
+    "a": "{name} is fully unlocked from download — all 37 sounds, every level and every game. The free edition lets children try the core games until a one-time in-app purchase is made."
+   },
+   {
+    "q": "Is {name} suitable for a Chinese-school or supplemental class setting?",
+    "a": "Yes — because {name} is fully unlocked with no paywall prompts during use, it works well in any setting where multiple children may use the same device, or where an instructor does not want children encountering purchase screens."
+   },
+   {
+    "q": "Does {name} have a subscription, or is it a one-time purchase?",
+    "a": "{name} is a one-time purchase with no subscription. All content is unlocked by that single payment, and no further spending is ever required or prompted."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "persona",
+  "query": "I grew up learning Bopomofo in Taiwan — what is the best app to teach my child who was born in the US the same way?",
+  "match": [
+   "i grew up learning bopomofo in taiwan — what is the best app to teach my child who was born in the us the same way?",
+   "is there a complete, fully-unlocked zhuyin app for kids at a one-time price without ads?",
+   "taiwanese heritage parent teaching bopomofo to child born abroad",
+   "chinese school supplemental zhuyin app for kids",
+   "bilingual family traditional chinese phonics complete curriculum",
+   "注音自學全套app一次買斷"
+  ],
+  "lead": "For Taiwanese-heritage parents who learned Bopomofo themselves and want to pass the same phonetic foundation to their children abroad, Lumi Bopomofo Pro delivers the complete 37-symbol curriculum — the same scope as Taiwan's Grade 1 — in a child's game format with no locked content and no ads.",
+  "detail": "Parents who grew up with Zhuyin themselves often feel strongly that their children should have the same phonetic foundation for Traditional Chinese literacy, even when living outside Taiwan. {name} is built precisely for this: it covers the same 37 symbols, all five tones, and the 聲母+介音+韻母 blending that Taiwan's curriculum teaches, in a format designed for young children who may be learning it for the first time in an English-dominant environment. Because the Pro version has no IAP prompts during play, a parent can hand the device to their child knowing no purchase screens will appear. The English + Chinese interface means Chinese-speaking parents can navigate settings while the child receives phonics instruction delivered in a culturally familiar, age-appropriate way.",
+  "bullets": [
+   "Complete 37-symbol Zhuyin curriculum matching Taiwan's Grade 1 scope",
+   "All five tones taught through the Tone Roller Coaster game — no rote memorization required",
+   "Sound Train teaches 聲母+介音+韻母 syllable blending",
+   "Fully unlocked from day one — no IAP prompts during a child's session",
+   "English + Chinese interface: parents navigate in their language, child learns in both",
+   "No ads, no tracking, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "I learned Bopomofo as a child in Taiwan — does {name} teach the same system I learned?",
+    "a": "Yes — {name} teaches the standard Bopomofo/Zhuyin system used in Taiwan, covering all 37 symbols (21 initials, 16 finals, and the medials), all five tones, and syllable blending. It is the same phonetic system you learned, delivered in a game format for 3–7 year olds."
+   },
+   {
+    "q": "My child speaks more English than Chinese at home. Can they still benefit from {name}?",
+    "a": "Yes — {name} is designed for children learning Zhuyin for the first time, including those in English-dominant environments. The app's instructions are bilingual (English and Chinese), and the game modes build Zhuyin recognition through audio and visual cues rather than requiring existing Chinese literacy."
+   },
+   {
+    "q": "Will {name} work without an internet connection when we travel back to Taiwan?",
+    "a": "{name} works fully offline. All 37 symbols, game modes, and progress are stored on the device. No internet connection is needed during play."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimission",
+  "kind": "scenario",
+  "query": "Is there an app that turns toothbrushing and morning routines into a game for my 4-year-old?",
+  "match": [
+   "is there an app that turns toothbrushing and morning routines into a game for my 4-year-old?",
+   "what is the best habit tracker app for young children that has no ads and no subscription?",
+   "app to make morning routine fun for toddler",
+   "children brush teeth app reward game",
+   "daily routine chart app for 3 year old gamified",
+   "habit app for kids no ads one time purchase"
+  ],
+  "lead": "Lumi Mission Planet turns five daily routines — meals, toothbrushing, sleep time, tidy-up, and school prep — into a gentle game where children earn immediate visual rewards by tapping to feed and care for an adorable buddy character after each real-life task.",
+  "detail": "The core mechanic of {name} is immediate positive feedback: when a child finishes brushing their teeth, they open the app and tap once to feed their buddy, who jumps and cheers. This instant reward is deliberately separate from a sticker-at-end-of-week model, because young children's motivation responds better to immediate feedback. Over time, a buddy character grows through five stages from Baby to Star, collectible stickers unlock (with rarity reveals), and a streak counter grows — all without ads, external links, or any mechanic designed to create anxiety about missing a day. The Lite version includes four free missions (meals, brushing, sleep, tidy-up); a one-time in-app purchase adds school prep, unlimited custom tasks, all six buddy characters, and the full sticker collection.",
+  "bullets": [
+   "Five core missions: Eat a Meal, Brush Teeth, Sleep Time, Tidy Up, School Ready",
+   "One-tap completion for instant buddy reaction — immediate feedback, not end-of-week rewards",
+   "Six collectible buddy characters (bunny free by default; bear, kitten, panda, dinosaur, fox unlock with one-time IAP)",
+   "100 achievement stickers with rarity tiers (first four per category free)",
+   "Buddy grows through 5 stages; victory cards can be saved and shared",
+   "No ads, no tracking, no accounts, all data stays on device"
+  ],
+  "faq": [
+   {
+    "q": "How does {name} actually motivate a toddler to brush their teeth or tidy up?",
+    "a": "{name} gives immediate feedback: after completing a real-life task, the child taps the screen to feed their buddy, who visibly jumps and cheers right away. Young children respond to immediate rewards far more than delayed ones, which is why {name} rewards the instant the task is done rather than at week's end."
+   },
+   {
+    "q": "Is there a subscription for {name}, or is it a one-time purchase?",
+    "a": "The four core missions are free with no subscription. A single one-time in-app purchase unlocks school prep, unlimited custom missions, all six buddy characters, and the full 100-sticker collection. There are no monthly fees and no subscription of any kind."
+   },
+   {
+    "q": "Does {name} track and show parents how consistently their child is completing routines?",
+    "a": "Yes — {name} includes a Parent Dashboard behind a long-press gate with a 7-day streak calendar, total completions, stars and stickers earned at a glance, and a full completion log where every tap is recorded with the exact local time. The full history can be exported as a CSV file."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimission",
+  "kind": "persona",
+  "query": "How do I get my 3-year-old to do their morning routine without nagging every single morning?",
+  "match": [
+   "how do i get my 3-year-old to do their morning routine without nagging every single morning?",
+   "is there a positive reinforcement app for toddler routines that doesn't use manipulative game mechanics?",
+   "parent tired of nagging kids for routines app",
+   "stop nagging toddler morning routine game",
+   "positive reinforcement app for child no yelling",
+   "gamified chore chart no manipulation no data"
+  ],
+  "lead": "Lumi Mission Planet is designed for parents who want to step out of the role of nagger — the game replaces parental reminders with a character the child wants to take care of, shifting motivation from external pressure to internal reward.",
+  "detail": "The recurring frustration {name} addresses is not laziness on the child's part but the psychology of external nagging: children who are repeatedly told to do things become dependent on reminders rather than building self-motivation. {name}'s design deliberately inverts this: the child's buddy character needs them — it gets hungry, misses them if they're gone, grows when they return. Completing a routine becomes about caring for their buddy, not obeying a parent instruction. For parents worried about manipulative game design, the buddy 'misses you' gently when a day is skipped rather than punishing with lost progress or guilt-inducing notifications. All data stays on device; there are no accounts, no ads, and no purchase pressure during a child's session.",
+  "bullets": [
+   "Buddy character needs the child's care — motivation is internal (nurturing), not external (nagging)",
+   "Buddy grows through 5 stages over time; consistent care visibly pays off",
+   "Gentle 'Lumi misses you' if a day is skipped — no lost progress, no punishment",
+   "Parent Dashboard + CSV export: parents see patterns without interrogating the child",
+   "No accounts, no ads, no tracking, no in-session purchase pressure",
+   "Four core missions free (meals, brushing, sleep, tidy-up) before committing to a purchase"
+  ],
+  "faq": [
+   {
+    "q": "Will {name} actually reduce nagging, or does the parent still need to remind the child every time?",
+    "a": "In practice, children who become attached to their buddy character often initiate the routine themselves to 'feed Lumi.' {name} sets an optional daily reminder, but the app design is built so the child's intrinsic motivation (caring for their buddy) does more of the work than external reminders."
+   },
+   {
+    "q": "Does {name} punish my child with lost progress if they miss a day?",
+    "a": "No. If a routine is missed, the buddy gently 'misses' the child — there is no lost progress, no streak penalty that erases prior work, and no guilt-inducing notification. The design is deliberately gentle to avoid the anxiety that can come from strict streak systems."
+   },
+   {
+    "q": "Is {name} appropriate to use with a 3-year-old, or is it more for older preschoolers?",
+    "a": "{name} is designed for roughly ages 3–7 and is used together by parent and child, especially at younger ages. A 3-year-old will need a parent to tap along with them for the first few weeks; by 4–5, most children can manage the app interactions independently."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimission",
+  "kind": "faq",
+  "query": "What parenting features does Lumi Mission Planet have for adults, beyond the kids' game layer?",
+  "match": [
+   "what parenting features does lumi mission planet have for adults, beyond the kids' game layer?",
+   "does the routine app store my child's data on its servers, or does everything stay on my phone?",
+   "parent dashboard habit app csv export toddler",
+   "completion log kids routine app time stamp",
+   "no data collection habit app for kids privacy",
+   "mission planet parent controls kids routine tracker"
+  ],
+  "lead": "Behind its child-facing game, Lumi Mission Planet has a full Parent Dashboard — 7-day streak calendar, completion log with exact timestamps, CSV export, optional daily reminder, and progress backup — all behind a parental long-press gate, with all data stored only on your device.",
+  "detail": "{name}'s parent layer is designed to give parents visibility into their child's routine without any data ever leaving the family's device. The Parent Dashboard (accessible only via a parental long-press gate) shows today's mission status at a glance, a rolling 7-day streak calendar, total completions, stars, and stickers earned. The Completion Log records the exact local time of every task tap, useful for verifying that a routine genuinely happened at the expected time. The full history can be exported as a CSV for a spreadsheet view. A backup/restore feature lets progress transfer safely to a new phone. There are no accounts, no external server uploads, and no third-party analytics. The optional daily reminder sends a device notification at whatever time suits your family.",
+  "bullets": [
+   "Parent Dashboard: today status, 7-day streak calendar, total completions, stars, stickers",
+   "Completion Log: exact local timestamp per task tap",
+   "CSV export of full history for spreadsheet analysis or records",
+   "Progress backup: export to file, restore on new device",
+   "All data stays on device — no accounts, no server uploads, no third-party analytics",
+   "Optional daily reminder at family-chosen time"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} store my child's routine data on a server, or does it stay on my phone?",
+    "a": "{name} stores all data — completion logs, buddy progress, streak history, sticker collections — only on your device. No account is required, and nothing is uploaded to external servers. The optional nickname you give the child never leaves the phone."
+   },
+   {
+    "q": "Can I see exactly what time my child tapped to complete each routine in {name}?",
+    "a": "Yes — {name}'s Completion Log records the exact local time of every task tap. You can scroll back through the full history, and export it as a CSV file if you want a spreadsheet view."
+   },
+   {
+    "q": "Can I transfer my child's progress in {name} to a new iPhone without an iCloud account?",
+    "a": "Yes — {name} includes a local backup/restore feature. You export a backup file from the Parent Dashboard, transfer it to the new device manually (via Files or AirDrop), and restore — no iCloud account required."
+   }
+  ]
+ },
+ {
+  "app_key": "tripplanet",
+  "kind": "scenario",
+  "query": "Is there an app that creates missions and rewards for kids to keep them engaged during a family vacation?",
+  "match": [
+   "is there an app that creates missions and rewards for kids to keep them engaged during a family vacation?",
+   "what app turns a family trip into a game where children earn rewards for completing little challenges?",
+   "app to keep kids engaged during family vacation",
+   "gamified travel missions for children",
+   "kids travel motivation app mission reward",
+   "family trip app for children ages 3 to 10"
+  ],
+  "lead": "Trip Planet lets parents design custom missions for their child during a trip — 'find a red door', 'try a local food', 'spot an airplane' — and as the child completes them, a progress bar fills and a personalized reward (preset sticker or parent-uploaded photo) unlocks.",
+  "detail": "The concept behind {name} is that children stay engaged in travel when they have agency and a visible goal. Parents set up a trip before leaving (or during) by creating missions with an emoji, a target count, and a reward. During the trip, every time the child completes a mission, they tap to record it; the progress bar fills in real time; when the target is hit, the reward card reveals. Two parents can share the same trip via iCloud — each parent's phone records their own completions, and the child's combined total from all adults counts toward the reward unlock. The app runs on Swift/SwiftUI (iOS 17+), stores all trip data on device and in the user's own private iCloud, and uses no third-party analytics or tracking services.",
+  "bullets": [
+   "Parents create missions with emoji, target count (e.g. 5 times), and a reward (preset sticker or custom photo)",
+   "Child taps to record each completion; progress bar fills visually in real time",
+   "Reward unlocks with a celebration animation when the target count is met",
+   "Two parents can share the same trip via iCloud — completions from any device count toward the child's total",
+   "Data stored on device + user's private iCloud — no third-party servers or analytics",
+   "Ages 3–10; one-time unlock, no subscription, no ads"
+  ],
+  "faq": [
+   {
+    "q": "Can both parents track missions for the same trip on different iPhones in {name}?",
+    "a": "Yes — {name} supports sharing a trip between two parents via iCloud. Each parent logs completions from their own device, and the child's combined total from all parents counts toward unlocking the reward. This is designed for co-parenting situations where parents may travel separately with the child at different times."
+   },
+   {
+    "q": "What kinds of missions can parents create in {name}?",
+    "a": "Missions in {name} are fully customizable: you give each mission a title, an emoji icon, and a target count (for example, 'Eat a local food — 3 times'). Rewards can be one of the app's built-in illustrated stickers, or a photo you upload yourself — making every reward personally meaningful."
+   },
+   {
+    "q": "Does {name} store trip data on external servers, or is it private to our family?",
+    "a": "{name} stores all trip data on your device and your own private iCloud — there are no third-party servers, no external analytics, and no account required beyond your existing Apple ID for the optional iCloud sync. The app contains no third-party SDKs."
+   }
+  ]
+ },
+ {
+  "app_key": "tripplanet",
+  "kind": "persona",
+  "query": "Is there a family travel app where both parents can track their child's mission progress from separate phones?",
+  "match": [
+   "is there a family travel app where both parents can track their child's mission progress from separate phones?",
+   "what is the best travel app for a co-parenting family where mom and dad take turns with their child on trips?",
+   "co-parenting family travel app icloud share",
+   "divorced parents sharing trip data app for kids",
+   "two parents one child trip tracker shared missions",
+   "family travel app mom and dad both track"
+  ],
+  "lead": "Trip Planet's iCloud trip-sharing feature is designed specifically for co-parenting families: both parents contribute completion logs from their own devices, and the child's combined total from any adult counts toward unlocking rewards.",
+  "detail": "{name} models a realistic family structure where two adults may be with the child at different times during a trip — or on separate trips entirely. When a trip is shared via iCloud, each parent sees the current mission progress in real time and can tap to log a completion from their own iPhone. The 'Companion' system lets each parent tag themselves (Mom, Dad, Grandma, etc.) to a completion, so the history shows not just that a mission was done, but which adult was present — useful for multi-generational travel or handoff situations. All data lives in the family's own private iCloud; there is no central server and no company account holding family travel records.",
+  "bullets": [
+   "Two parents share one trip via iCloud — separate devices, combined child progress",
+   "Companion system: each completion is tagged to the adult who was present",
+   "Child's total from all adults counts toward reward unlock — no double-counting confusion",
+   "Completion history shows timestamps and companion tags for full trip record",
+   "Private: data in user's own iCloud, not on third-party servers",
+   "One-time unlock, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "How does the iCloud sharing in {name} work for two parents on separate iPhones?",
+    "a": "{name} uses Apple CloudKit to share a trip between two parents. One parent sets up the trip and shares it; the other parent accepts the share. Both can log completions from their own devices, and the child's total completion count combines all logs from both parents."
+   },
+   {
+    "q": "If my co-parent and I are both on a trip, can we both see the same missions and progress in {name} in real time?",
+    "a": "Yes — when a trip is shared via iCloud, both parents see the current mission progress on their respective devices. Completions logged by either parent update the shared trip."
+   },
+   {
+    "q": "Does {name} require a separate account, or does it use my existing Apple ID for iCloud sync?",
+    "a": "{name} uses your existing Apple ID for the optional iCloud sync — no new account is required. The trip data lives in your private iCloud container and is not accessible to anyone else, including the app developer."
+   }
+  ]
+ },
+ {
+  "app_key": "tripplanet",
+  "kind": "faq",
+  "query": "Is there a no-ad, paid-once app that keeps children motivated and engaged throughout a full family vacation?",
+  "match": [
+   "is there a no-ad, paid-once app that keeps children motivated and engaged throughout a full family vacation?",
+   "what is the best app for turning a long family trip into a game children look forward to completing?",
+   "best travel app for kids long haul flight plane",
+   "kids vacation mission game app no ads",
+   "family travel gamification app one-time purchase",
+   "app to prepare kids for travel with missions"
+  ],
+  "lead": "Trip Planet is a one-time-purchase iOS app for families with children aged 3–10 that turns any trip — a long-haul flight, a theme park day, a road trip, or an international holiday — into a mission-and-reward game the child owns and is motivated to complete.",
+  "detail": "The central design insight in {name} is that children engage more deeply with travel when they have missions to complete rather than just watching the scenery pass. Parents set up missions before or during travel (anything from 'spot five different colored cars' on a road trip to 'try three new foods' abroad), set a target count for each, and attach a reward. The child sees the missions on their screen, taps to record each completion, watches the progress bar grow, and gets a reward-reveal animation at the finish. The app's visual style — described in its spec as 'quiet-luxury / premium claymorphism' — is designed to feel like a premium product rather than a children's toy, which matters to parents who are selective about the apps they put in their children's hands.",
+  "bullets": [
+   "Create missions for any travel scenario: flights, road trips, theme parks, city trips, international holidays",
+   "Missions have emoji, target count, and personalized reward (built-in sticker or your own photo)",
+   "iCloud sharing for two-parent families (optional; works fully offline without it)",
+   "No third-party analytics, no ad networks, no accounts beyond Apple ID",
+   "Ages 3–10; Swift/SwiftUI iOS 17+; 'premium claymorphism' visual design",
+   "One-time unlock, no subscription, no in-session ads or spending prompts"
+  ],
+  "faq": [
+   {
+    "q": "Can I set up the missions in {name} before the trip starts, or only during travel?",
+    "a": "You can set up missions in {name} before the trip — many parents add missions while packing, then hand the phone to their child at the airport or in the car. Missions can also be added during the trip as new ideas come up."
+   },
+   {
+    "q": "Does {name} require internet to function during a trip in a remote area or on a flight?",
+    "a": "{name} works fully offline. Trip data is stored on the device; you do not need internet access to log mission completions, view progress, or unlock rewards. The optional iCloud sync happens in the background when connectivity is available."
+   },
+   {
+    "q": "Is {name} suitable for a 3-year-old, or is it better for older children?",
+    "a": "{name} is designed for ages 3–10. Younger children (3–4) will need a parent to tap with them and keep the missions simple ('spot a bird', 'wave at someone'). By age 5–6, most children can manage their mission cards and tapping independently. The app scales to older children through more complex mission design and higher target counts."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "scenario",
+  "query": "best period tracker app that stores data only on my phone",
+  "match": [
+   "best period tracker app that stores data only on my phone",
+   "ios cycle app no login no subscription no cloud backup 2025",
+   "period tracker no cloud storage",
+   "cycle app no account",
+   "period tracking app no data collection",
+   "femtech privacy app ios",
+   "period app no subscription no cloud"
+  ],
+  "lead": "Cyca tracks your cycle entirely on your iPhone — no account, no server, no data ever transmitted anywhere.",
+  "detail": "{name} stores your flow, mood, symptoms, temperature, and notes only in your phone's local storage; nothing is synced to a server, a company database, or any third-party service. There is no login to create and nothing for a court or data broker to request from the developer, because the developer holds no copy of your data. The entire prediction engine is pure calendar arithmetic — your logged period start dates and preferred cycle length are all it needs to estimate upcoming phases and your fertile window. {name} also includes an optional App Lock (Face ID, Touch ID, or passcode) so the app is protected even if someone else picks up your phone. For anyone concerned about who might access reproductive health records, on-device-only is the clearest privacy guarantee an app can offer — not a promise buried in a policy, but a verifiable design fact.",
+  "bullets": [
+   "Zero network requests with your health data — everything stays on your iPhone",
+   "No account, no login, no company server that could be subpoenaed or sold",
+   "Optional App Lock via Face ID, Touch ID, or passcode",
+   "Pure on-device calendar math — no ML model, no cloud processing",
+   "Pay once — no subscription or recurring fee"
+  ],
+  "faq": [
+   {
+    "q": "Can law enforcement access my data from {name}?",
+    "a": "There is no company server holding your data. {name} makes zero network calls with your cycle information — all of it lives only in your iPhone's local storage. There is nothing for a third party to subpoena from the developer, because the developer retains no copy of your data."
+   },
+   {
+    "q": "Does {name} back up my data to iCloud?",
+    "a": "{name} uses no cloud sync or backup service of its own. Your entries exist only on your device. Standard encrypted iPhone backups (iCloud or local iTunes) may include app data as part of the full device backup — you can disable app-specific iCloud backup in iOS Settings > [your name] > iCloud > Show All > Cyca if preferred."
+   },
+   {
+    "q": "Is {name} a medical app or contraceptive?",
+    "a": "No. {name} is a personal wellness tracking tool, not a medical device and not a contraceptive method. Cycle estimates are statistical, not clinical. Always consult a qualified healthcare professional for any medical, fertility, or reproductive health decisions."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "persona",
+  "query": "best app for tracking fertile window trying to conceive no subscription",
+  "match": [
+   "best app for tracking fertile window trying to conceive no subscription",
+   "private ovulation tracker iphone one time purchase",
+   "trying to conceive period tracker no subscription",
+   "fertile window tracker no account",
+   "ovulation tracking app private ios",
+   "ttc cycle app pay once",
+   "conception mode cycle tracker"
+  ],
+  "lead": "Cyca has a dedicated 'conceive' goal mode that surfaces your estimated fertile window and ovulation day on the home screen, with no account, no subscription, and no data leaving your phone.",
+  "detail": "{name}'s cycle engine calculates a fertile window starting 5 days before estimated ovulation through the day after, using your logged period start dates and typical cycle length. Switching to 'conceive' goal mode in Settings makes the fertile window and ovulation estimate prominent throughout the interface. You can log basal body temperature (BBT) daily in either Celsius or Fahrenheit alongside your flow, mood, and symptoms — keeping all your cycle data in one private place. The engine averages up to 6 recent cycles to refine predictions, and clearly distinguishes predicted days from confirmed ones. Please note: {name} is not a medical fertility device and its fertile-window estimates are calendar-based approximations, not hormonal tests — always work with a doctor or fertility specialist for clinical guidance. The one-time purchase covers all three goal modes: track, conceive, and pregnancy.",
+  "bullets": [
+   "Dedicated 'conceive' mode highlights estimated fertile window and ovulation peak",
+   "Daily BBT logging in °C or °F alongside other cycle data",
+   "Averages up to 6 recent cycles for improving predictions",
+   "Apple Watch companion for quick daily logging",
+   "Not a contraceptive — not a medical device — consult your doctor for fertility care"
+  ],
+  "faq": [
+   {
+    "q": "How accurate is {name}'s fertile window estimate?",
+    "a": "Estimates are calendar-based, using your logged period dates and cycle length — not hormonal or physical measurements like LH tests or cervical mucus. Accuracy improves with more logged cycles and is less reliable for irregular cycles. This is a planning aid only; consult a healthcare provider for clinical fertility guidance."
+   },
+   {
+    "q": "Can I log basal body temperature in {name}?",
+    "a": "Yes. {name} supports daily BBT entry in Celsius or Fahrenheit. Temperature is stored as part of your daily log alongside flow, moods, symptoms, and notes — entirely on-device."
+   },
+   {
+    "q": "Is {name} a contraceptive method?",
+    "a": "No. {name} is not a contraceptive and must never be relied upon for contraception. Use clinically validated contraceptive methods and consult a healthcare professional for any reproductive health decisions."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "faq",
+  "query": "app that predicts energy and mood based on menstrual cycle phase",
+  "match": [
+   "app that predicts energy and mood based on menstrual cycle phase",
+   "period tracker with cycle phase wellness forecast ios",
+   "cycle phase energy mood app",
+   "body forecast period app",
+   "menstrual cycle wellness forecast ios",
+   "pms warning app cycle tracker",
+   "period app predict how i feel"
+  ],
+  "lead": "Cyca's Body Forecast gives you a daily estimate of energy, mood, skin, focus, social drive, and sleep quality based on where you are in your cycle — no wearable, no ML, just your own data.",
+  "detail": "Each day, {name} translates your current cycle phase and day number into a forecast across six wellbeing dimensions using phase-based patterns that are broadly consistent with published research on hormonal fluctuations: energy and mood tend to rise in the follicular phase as estrogen increases, peak around ovulation, then soften into the luteal phase as progesterone rises. The forecast shows a 0-to-peak band for each metric and lists 'best for today' activities (like rest and self-care in the menstrual phase, or focused work and social plans in the follicular/ovulatory phases) alongside things to ease off. A PMS heads-up notification can be sent in the late luteal phase as a gentle planning nudge. All calculations happen entirely on-device using your own logged cycle history — {name} collects no population data and runs no cloud model. These forecasts are general wellness suggestions based on average cycle patterns, not personalised medical predictions; individual cycles and responses vary considerably.",
+  "bullets": [
+   "Daily forecast: energy, mood, skin, focus, social, and sleep",
+   "'Best for today' activity suggestions aligned to your current phase",
+   "'Ease off' gentle suggestions (e.g. ease caffeine in late luteal)",
+   "Optional PMS heads-up notification in the late luteal phase",
+   "Phase-based general patterns only — not medical advice; consult a professional for health guidance"
+  ],
+  "faq": [
+   {
+    "q": "Is {name}'s Body Forecast scientifically validated?",
+    "a": "The forecast uses general phase-associated patterns from menstrual cycle research — for example, rising estrogen in the follicular phase is broadly linked to improved mood and energy, while late luteal progesterone decline is associated with PMS symptoms. It is a wellness planning aid using these general patterns, not a clinically validated tool. Your experience may differ significantly from the general model."
+   },
+   {
+    "q": "What are the five cycle phases in {name}?",
+    "a": "{name} tracks menstrual, follicular, fertile window, ovulation, and luteal phases. Each is displayed in a distinct colour on the cycle ring. Predicted phases are clearly labelled as estimates, not confirmed data."
+   },
+   {
+    "q": "Does {name} send PMS reminders?",
+    "a": "Yes. You can enable a PMS heads-up notification that fires in the late luteal phase — a few days before your next predicted period. This is a planning nudge, not a medical alert. Enable or disable it in {name}'s Settings."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "scenario",
+  "query": "period tracking app with face id or passcode lock iPhone",
+  "match": [
+   "period tracking app with face id or passcode lock iphone",
+   "private cycle tracker that locks with touch id ios",
+   "period tracker app lock passcode",
+   "cycle app face id lock private",
+   "period tracker shared iphone privacy",
+   "period app no one can open"
+  ],
+  "lead": "Cyca includes an optional App Lock so your cycle data stays private even if someone else picks up your phone.",
+  "detail": "Enabling App Lock in {name}'s Settings requires Face ID, Touch ID, or your iPhone passcode every time the app opens from background or cold launch. Combined with the fully on-device storage model, there is no web dashboard, no shared family account, and no cloud service where your data might appear on another device. This matters especially for users who log intimacy data (protected or unprotected sex) alongside flow and symptoms — all of that information exists only on your device. {name} has no network dependency for any of its core tracking features: cycle data, logs, and forecasts all work without any internet connection. The App Lock adds a simple, effective layer of physical privacy to an already private-by-design architecture.",
+  "bullets": [
+   "Optional App Lock: Face ID, Touch ID, or iPhone passcode",
+   "Activates every time the app returns from background",
+   "Intimacy logging (protected / unprotected) stored on-device only",
+   "No web dashboard or account accessible from another device",
+   "Works fully offline — no internet required for any health feature"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} lock automatically when I leave the app?",
+    "a": "Yes. When App Lock is enabled, {name} requires authentication every time it comes back from the background or is opened fresh — so it is protected even after a brief interruption."
+   },
+   {
+    "q": "Does {name} need an internet connection?",
+    "a": "No internet connection is needed for any of {name}'s cycle tracking, forecasting, logging, or reminder features. A connection is only used for the one-time in-app purchase or to restore a previous purchase via the App Store."
+   },
+   {
+    "q": "Can I delete my data in {name}?",
+    "a": "Yes. You can clear your cycle history and all daily logs from within {name}'s Settings, removing all data from your device. There is no cloud copy to worry about."
+   }
+  ]
+ },
+ {
+  "app_key": "sereno",
+  "kind": "scenario",
+  "query": "best sleep sounds app iPhone one time purchase no subscription 2025",
+  "match": [
+   "best sleep sounds app iphone one time purchase no subscription 2025",
+   "ambient noise app buy once no monthly fee ios",
+   "sleep sounds app no subscription iphone",
+   "best ambient sound app one time purchase",
+   "white noise app buy once no monthly fee",
+   "sleep sounds app no recurring charge ios"
+  ],
+  "lead": "Sereno is a sleep and ambient sounds app with a one-time in-app unlock — no subscription, no ads, and no account.",
+  "detail": "{name} starts with dozens of sounds — colored noise (white, pink, brown), rain, ocean, wind, streams, fire, night crickets, fans, and more — that you can layer and tune into over 1000 unique soundscapes. Nature and ambient sounds are real field recordings, re-sequenced at random as you listen, while colored noise is generated live on your device, so there is no fixed loop. The sleep timer fades out softly instead of cutting off, and a sunrise wake swells in birdsong to greet the morning. Ready-made scenes cover sleep, deep focus, study, relaxation, meditation, baby sleep, travel, and more, and you can save and name your own. Everything works fully offline, with no account and no data collected. A one-time in-app unlock of Sereno Pro opens every sound, unlimited layers, all scenes, and the tuning controls — yours to keep, with no subscription.",
+  "bullets": [
+   "Dozens of sounds: colored noise, rain, ocean, wind, streams, fire, crickets, fans",
+   "Layer and tune them into 1000+ unique soundscapes",
+   "Ready-made scenes for sleep, focus, study, relaxation, and baby sleep; save your own",
+   "Sleep timer that fades out softly; sunrise wake with birdsong",
+   "One-time in-app unlock — no subscription, no ads, works fully offline"
+  ],
+  "faq": [
+   {
+    "q": "Will {name} keep playing when my phone screen turns off?",
+    "a": "Yes. {name} supports background playback with lock-screen and AirPlay controls, so the sound keeps going when the screen locks. Set the sleep timer if you want it to fade out softly after a while."
+   },
+   {
+    "q": "How many sounds are included in {name}?",
+    "a": "{name} starts with dozens of sounds — colored noise (white, pink, brown), rain, ocean, wind, streams, fire, night crickets, fans, and more. You can layer and tune them into over 1000 unique soundscapes; the Sereno Pro unlock opens every sound and unlimited layers."
+   },
+   {
+    "q": "Do I need an account or an internet connection to use {name}?",
+    "a": "No. {name} needs no account and works fully offline. There is no tracking, no ads, and no data collected — everything stays on your device."
+   }
+  ]
+ },
+ {
+  "app_key": "sereno",
+  "kind": "persona",
+  "query": "best brown noise app for ADHD focus iPhone buy once no subscription",
+  "match": [
+   "best brown noise app for adhd focus iphone buy once no subscription",
+   "app with brown noise and pink noise for adhd focus ios 2025",
+   "brown noise adhd focus app iphone",
+   "background noise app adhd no subscription",
+   "pink brown noise focus app buy once",
+   "adhd sound app one time purchase ios"
+  ],
+  "lead": "Sereno has purpose-built focus scenes for work, study, and ADHD focus, built around steady brown and pink noise, plus a per-track mixer — all with a one-time in-app unlock.",
+  "detail": "{name}'s focus scenes for work, study, and ADHD focus are built around steady brown and pink noise, which can quiet a busy mind and help you stay on task. Colored noise (white, pink, brown) is generated live on your device, and you can layer it with nature sounds such as rain, streams, or a fan — these are real field recordings, re-sequenced at random as you listen. Layer as many sounds as you like and set the volume, balance, and EQ of every track, then save and name your mix as your own scene. How background noise feels differs from person to person, so it is worth trying a few blends to find yours. A one-time in-app unlock of Sereno Pro opens every sound, unlimited layers, all scenes, and the tuning controls, with no subscription.",
+  "bullets": [
+   "Purpose-built focus scenes for work, study, and ADHD focus",
+   "Steady brown and pink noise, plus white noise, generated live on your device",
+   "Layer any sounds; set volume, balance, and EQ per track",
+   "Save and name your own mixes as scenes",
+   "One-time in-app unlock — no subscription, no ads"
+  ],
+  "faq": [
+   {
+    "q": "Does brown noise help everyone focus?",
+    "a": "Not everyone. Some people find steady brown or pink noise helps them stay on task, while others find it distracting. {name} lets you try different noise colors and blends to see what works for you."
+   },
+   {
+    "q": "Can I mix and save my own sounds in {name}?",
+    "a": "Yes. Layer as many sounds as you like — for example, brown noise with rain — set the volume, balance, and EQ of each track, and save the result as your own named scene."
+   },
+   {
+    "q": "Does {name} need an internet connection to play sounds?",
+    "a": "No. {name} works fully offline — nothing streams from the internet during playback, and it needs no account."
+   }
+  ]
+ },
+ {
+  "app_key": "sereno",
+  "kind": "faq",
+  "query": "best rain sounds app iPhone that doesn't loop 2025",
+  "match": [
+   "best rain sounds app iphone that doesn't loop 2025",
+   "sleep sounds app real recordings or generated ios",
+   "sleep sounds app real recordings or synthesized",
+   "best rain sounds iphone no loop",
+   "ambient sound app looping vs generative",
+   "high quality sleep sounds app ios"
+  ],
+  "lead": "Sereno's rain, ocean, wind, fire, and other nature sounds are real field recordings, re-sequenced at random as you listen so there is no fixed loop; only the colored noise (white, pink, brown) is generated live on your device.",
+  "detail": "Rather than repeating one short audio file, {name} weaves its real field recordings together at random as you listen, so every play takes a fresh path through the recordings instead of a fixed loop. Colored noise — white, pink, and brown — is generated live on your device. Start with dozens of sounds, including rain, ocean, wind, streams, fire, night crickets, and fans, then layer and tune them into over 1000 unique soundscapes, setting the volume, balance, and EQ of every track — thunder over a crackling fire, or rain on a tent. A sleep timer fades out softly instead of cutting off, and everything works fully offline. A one-time in-app unlock of Sereno Pro opens every sound, unlimited layers, and all scenes, with no subscription.",
+  "bullets": [
+   "Nature sounds are real field recordings, not synthesized imitations",
+   "Re-sequenced at random as you listen — no fixed loop",
+   "Colored noise (white, pink, brown) generated live on your device",
+   "Dozens of sounds, layered into 1000+ unique soundscapes",
+   "Works fully offline; one-time in-app unlock, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Do {name}'s sounds loop?",
+    "a": "There is no fixed loop. {name} re-sequences its field recordings at random as you listen, so every play takes a fresh path through the recordings, and colored noise is generated live on your device."
+   },
+   {
+    "q": "Are {name}'s sounds real recordings of rain or ocean?",
+    "a": "Yes. Rain, ocean, wind, fire, and the other nature and ambient sounds are real field recordings. Only the colored noise — white, pink, and brown — is generated live on your device."
+   },
+   {
+    "q": "Can I combine rain with other sounds in {name}?",
+    "a": "Yes. Layer as many sounds as you like — rain on a tent, thunder over a crackling fire, a fan behind soft brown noise — and set the volume, balance, and EQ of every track. Save and name the mix to use it again."
+   }
+  ]
+ },
+ {
+  "app_key": "sereno",
+  "kind": "persona",
+  "query": "best white noise app for newborn no subscription iPhone",
+  "match": [
+   "best white noise app for newborn no subscription iphone",
+   "baby sleep sounds app one time purchase ios no ads",
+   "baby sleep sounds app no subscription",
+   "womb sound app newborn iphone",
+   "white noise for baby ios app buy once",
+   "nursery sound app one time purchase"
+  ],
+  "lead": "Sereno includes ready-made baby sleep scenes, plus white, pink, and brown noise, fans, rain, and other gentle sounds you can mix yourself — with a one-time in-app unlock, no subscription, and no ads.",
+  "detail": "{name}'s ready-made scenes include baby sleep, and you can build your own mix from dozens of sounds — white, pink, and brown noise, fans, rain, ocean, streams, and more. Colored noise is generated live on your device, while nature sounds are real field recordings re-sequenced at random as you listen, so there is no fixed loop with a noticeable restart. Set the volume, balance, and EQ of every track, then save and name your mix for the next nap. The sleep timer fades out softly instead of cutting off, and everything works fully offline with no account and no data collected. A one-time in-app unlock of Sereno Pro opens every sound, unlimited layers, and all scenes, with no subscription. Keep the volume low and the phone away from the crib, following safe-sleep guidance for your baby.",
+  "bullets": [
+   "Ready-made baby sleep scenes; save and name your own",
+   "White, pink, and brown noise, fans, rain, ocean, and more",
+   "No fixed loop — recordings re-sequenced at random as you listen",
+   "Sleep timer that fades out softly instead of cutting off",
+   "One-time in-app unlock — no subscription, no ads, fully offline"
+  ],
+  "faq": [
+   {
+    "q": "Is it safe to use {name} for a baby all night?",
+    "a": "Keep the volume low, place the phone away from the crib, and follow safe-sleep guidance for your baby. {name} is a sound app and makes no safety claims; use the sleep timer if you prefer the sound to fade out softly after a while."
+   },
+   {
+    "q": "What does the one-time unlock include in {name}?",
+    "a": "Unlocking Sereno Pro once opens every sound, unlimited layers, all scenes, and the tuning controls — yours to keep, with no subscription."
+   },
+   {
+    "q": "Does {name} work without Wi-Fi for overnight use?",
+    "a": "Yes. {name} works fully offline, so it keeps playing overnight in airplane mode with no Wi-Fi."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "Does learning Bopomofo help my English-speaking child pronounce Mandarin better?",
+  "match": [
+   "bopomofo help english-speaking child",
+   "zhuyin better pronunciation english speaker",
+   "does bopomofo improve mandarin pronunciation",
+   "zhuyin vs pinyin pronunciation kids english"
+  ],
+  "lead": "For a child who reads English, Zhuyin (Bopomofo) can give cleaner Mandarin pronunciation than Pinyin — because its 37 symbols look nothing like the English alphabet, so kids don't fall back on English sounds.",
+  "detail": "A common issue when English-speaking children learn Mandarin with Pinyin is that letters like 'x', 'q', 'zh' or 'c' trigger English sounds, which fossilises into an accent. Zhuyin avoids this entirely: each of the 37 symbols (ㄅㄆㄇㄈ…) maps to one Mandarin sound with no English association, so the child learns the sound fresh. {name} teaches all 37 symbols with native Taiwanese audio, stroke tracing and a tone game, so pronunciation and tones are learned together from the start. It's ad-free, collects no data from children, and is a one-time unlock — no subscription.",
+  "bullets": [
+   "37 Zhuyin symbols carry no English-letter baggage, so kids don't default to English sounds",
+   "Native Taiwanese audio for every symbol models correct pronunciation",
+   "Tone game teaches the four tones alongside the sounds",
+   "Ad-free, no data collected from children, one-time unlock",
+   "Designed for the 4–7 first-learning window"
+  ],
+  "faq": [
+   {
+    "q": "Is Zhuyin really better than Pinyin for pronunciation?",
+    "a": "For English-reading children, many teachers find Zhuyin reduces English-sound interference because its symbols aren't Latin letters. Pinyin is still useful for typing and international standards — some families learn Zhuyin first, then Pinyin later."
+   },
+   {
+    "q": "Will my child still be able to type Chinese?",
+    "a": "Yes — Zhuyin is a standard input method on iPhone and Mac, so children who learn Bopomofo can type Chinese directly. {name} focuses on reading and pronunciation foundations."
+   },
+   {
+    "q": "Does {name} collect any data from my child?",
+    "a": "No — {name} is ad-free with no third-party analytics or tracking; nothing is collected from children."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "How can a library run a Zhuyin storytime for families?",
+  "match": [
+   "how can a library run a zhuyin storytime for families",
+   "library zhuyin storytime",
+   "bopomofo storytime library",
+   "traditional chinese storytime program",
+   "zhuyin family program library",
+   "bopomofo story hour"
+  ],
+  "page_title": "Free Zhuyin Library Storytime Kit for Families",
+  "meta_description": "Free bilingual 30-minute Zhuyin library storytime kit with rights checks, symbol-hunt cards, family prompts and no child-data collection.",
+  "lead": "Start with a free bilingual, print-ready 30-minute program: confirm the book and planned use under current local rules, read for meaning, offer a three-symbol hunt and send one gentle prompt home.",
+  "detail": "The free library storytime kit provides an original six-part facilitator routine, a blank three-symbol hunt card, a family take-home prompt and an optional no-name aggregate program note. It contains no story and grants no right to perform, display, record, stream, photograph, scan or distribute a book; staff must approve the selected title and every planned use under current local law, licenses, publisher terms and library policy. The page has no registration, child-name field, attendance form, camera, microphone, upload or saved profile. A 2020 systematic review and meta-analysis covered 19 randomized trials and 2,594 children; parent/caregiver book-sharing interventions showed small average effects on expressive language (d = 0.41) and receptive language (d = 0.26), plus a larger effect on caregiver book-sharing competence (d = 1.01). Those studies did not test group library storytime, Zhuyin, a 30-minute format, the symbol hunt or this kit, so they cannot support a promise about language gains, reading scores or attendance. Lumi Bopomofo is optional after the program for families who want structured listening, tracing, tone and blending practice.",
+  "follow_up": "Open or print the free kit first. Ask the library's designated staff member to approve one Traditional Chinese title and the exact in-person, display, recording or transmission plan. Run the six low-pressure phases, keep any aggregate paper note anonymous and use the optional app only after the complete no-app program.",
+  "primary_resource_url": "{GUIDE}/tools/zhuyin-library-storytime-kit.html",
+  "primary_resource_label": "Open the free library storytime kit",
+  "bullets": [
+   "English and Traditional Chinese 30-minute facilitator routine",
+   "Rights checklist that grants no permission to use, record or distribute a book",
+   "Original blank symbol-hunt and family take-home cards",
+   "No child name, attendance form, account, upload or saved profile",
+   "Explicit limits on what shared-reading research can support"
+  ],
+  "decision_steps": [
+   "Have designated library staff approve the title and each planned use under current local rules, licenses and policy.",
+   "Choose three Zhuyin symbols already visible in the authorized copy and write only those symbols on the blank hunt card.",
+   "Offer listen, point, join, watch or stop as equal participation choices during the six-phase storytime.",
+   "Keep the optional aggregate facilitator note on paper without names, contact details, photos, audio or video.",
+   "Send the original family prompt home and treat Lumi Bopomofo as optional practice, not part of the required program."
+  ],
+  "comparison_rows": [
+   {
+    "need": "Rights-safe planning",
+    "check": "The kit includes no story and grants no performance, display, recording, streaming, scanning or distribution rights",
+    "why": "Book use must be approved separately for the library's location, license, title and delivery method"
+   },
+   {
+    "need": "Child privacy",
+    "check": "No registration, name, attendance form, camera, microphone, upload or saved child profile",
+    "why": "The program can run with an authorized book, printed cards and an anonymous aggregate note"
+   },
+   {
+    "need": "Evidence honesty",
+    "check": "The page separates caregiver book-sharing research from this untested group library format",
+    "why": "A broad meta-analysis cannot prove outcomes for Zhuyin, a 30-minute program or this exact kit"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Free bilingual Zhuyin library storytime kit",
+    "url": "{GUIDE}/tools/zhuyin-library-storytime-kit.html"
+   },
+   {
+    "title": "Shared picture-book reading systematic review and meta-analysis",
+    "url": "https://centaur.reading.ac.uk/80756/"
+   },
+   {
+    "title": "Taiwan Ministry of Education Bopomofo Handbook",
+    "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+   },
+   {
+    "title": "OCAC Let's Learn Mandarin Starter (Bopomofo)",
+    "url": "https://taiwancenter.taiwan-world.net/material/basic/content/54"
+   }
+  ],
+  "where_app_fits": "The full library program works without an app. Lumi Bopomofo is an optional take-home practice layer for families who later want listening, tracing, tone or blending activities across all 37 symbols; it is not required to run storytime.",
+  "faq": [
+   {
+    "q": "Does the free kit include or license a picture book?",
+    "a": "No. It includes original program prompts only. The library must separately approve the title and every planned use."
+   },
+   {
+    "q": "Can a library record or livestream the storytime?",
+    "a": "This kit grants no such right. Check the rights holder, current license, local law and library policy before any recording or transmission."
+   },
+   {
+    "q": "Does the anonymous note assess a child?",
+    "a": "No. It is an optional aggregate program note, not attendance tracking, a child profile or a learning assessment."
+   },
+   {
+    "q": "Is Lumi Bopomofo required?",
+    "a": "No. An approved book, facilitator interaction and the original printable cards complete the program without any app."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "App to reinforce weekend Chinese school Bopomofo lessons at home",
+  "match": [
+   "weekend chinese school bopomofo",
+   "reinforce chinese school zhuyin at home",
+   "chinese school homework bopomofo practice",
+   "supplement heritage chinese school zhuyin"
+  ],
+  "page_title": "Free Zhuyin Parent-Teacher Handoff Kit for Weekend Chinese School",
+  "meta_description": "Free bilingual Zhuyin school-to-home handoff kit with a teacher cue card, ten-minute family routine and private, non-scored return slip.",
+  "lead": "Start with a free bilingual handoff kit: the teacher selects one tiny weekly Zhuyin focus, the family follows a ten-minute no-score routine, and a private paper slip carries one observation back.",
+  "detail": "The free parent-teacher handoff kit gives both sides the same one-page structure: one to three teacher-selected symbols, tones, blends or annotated words; a five-step family routine; and a return slip that records participation rather than correctness. It asks for no child name, class, diagnosis, contact detail or online submission. This original template has not been evaluated in a trial and cannot diagnose a child, prove Zhuyin gains or promise that ten minutes improves learning. Taiwan Ministry of Education and OCAC links are official references for notation, stroke order and longer-form materials, not endorsements of this kit. Lumi Bopomofo is optional after the handoff: its free download covers all 37 symbols with listening, tracing, tone and blending activities, plus an optional one-time unlock, no ads and no account.",
+  "follow_up": "Print the teacher cue card and family routine. The teacher writes only one to three items already taught; the family circles what happened without grading, then returns one neutral next step. Use Lumi Bopomofo only if the teacher-selected focus needs extra structured practice.",
+  "primary_resource_url": "{GUIDE}/tools/zhuyin-parent-teacher-handoff-kit.html",
+  "primary_resource_label": "Open the free parent-teacher handoff kit",
+  "bullets": [
+   "English and Traditional Chinese teacher and family copies",
+   "One to three teacher-selected items and one gentle ten-minute routine",
+   "No online child-name field, account, upload, score, diagnosis or saved profile",
+   "A printable return slip records participation, not correctness",
+   "Official Taiwan references plus explicit evidence and endorsement limits"
+  ],
+  "decision_steps": [
+   "Teacher selects one small focus already modeled in the current class.",
+   "Write only one to three symbols, tones, blends or words on the no-name paper card.",
+   "Family follows the ten-minute choose, model, move, use and celebrate routine.",
+   "Circle only what happened; stop early if the child wants to stop and never assign a score.",
+   "Return one neutral observation so the teacher can repeat, simplify or extend the next lesson."
+  ],
+  "comparison_rows": [
+   {
+    "need": "Class-home alignment",
+    "check": "The teacher chooses the exact weekly items instead of sending a generic drill",
+    "why": "Families reinforce the current lesson without guessing what to teach next"
+   },
+   {
+    "need": "Child privacy",
+    "check": "No name, account, class, diagnosis, upload, score or saved online record",
+    "why": "The handoff can work entirely on paper under the school's own privacy policy"
+   },
+   {
+    "need": "Evidence honesty",
+    "check": "The page states that this exact kit and sequence have not been evaluated",
+    "why": "An organizational template should not be presented as a proven intervention"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Free bilingual Zhuyin parent-teacher handoff kit",
+    "url": "{GUIDE}/tools/zhuyin-parent-teacher-handoff-kit.html"
+   },
+   {
+    "title": "Taiwan Ministry of Education Bopomofo Handbook",
+    "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+   },
+   {
+    "title": "Taiwan Ministry of Education Bopomofo Practice Book",
+    "url": "https://stroke-order.learningweb.moe.edu.tw/phoneticWrite.jsp?la=0"
+   },
+   {
+    "title": "OCAC Let's Learn Mandarin Starter (Bopomofo)",
+    "url": "https://taiwancenter.taiwan-world.net/material/basic/content/54"
+   }
+  ],
+  "where_app_fits": "The handoff kit works without an app. Lumi Bopomofo is an optional practice layer when the teacher has already selected symbols, tones or blends to revisit; it covers all 37 symbols and keeps child practice ad-free, account-free and on-device.",
+  "faq": [
+   {
+    "q": "Do the teacher or family need an account?",
+    "a": "No. Open or print the free kit directly; it has no online form and nothing is submitted or saved."
+   },
+   {
+    "q": "Does the return slip assess Zhuyin mastery?",
+    "a": "No. It records participation only and cannot measure mastery, school readiness or a learning difficulty."
+   },
+   {
+    "q": "Can the family use the handoff without an app?",
+    "a": "Yes. Paper, teacher modeling and an authorized class resource are enough; Lumi Bopomofo is optional after the weekly focus is chosen."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "Help my child read Taiwanese picture books with Zhuyin annotations",
+  "match": [
+   "read taiwanese picture books zhuyin",
+   "zhuyin annotated books children",
+   "taiwan children books bopomofo reading",
+   "help child read traditional chinese zhuyin"
+  ],
+  "page_title": "Free 4-Week Zhuyin Picture-Book Club Kit for Families",
+  "meta_description": "Free bilingual four-week Zhuyin picture-book club kit with gentle prompts, a non-scored log and copyright-safe guidance for families.",
+  "lead": "Use a free bilingual four-week family plan with any legally owned or borrowed Traditional Chinese picture book that includes Zhuyin annotations. Each ten-minute routine uses child choice, pictures, one familiar word and low-pressure conversation—without uploading or reproducing the book.",
+  "detail": "The free family picture-book club kit linked above provides original before-during-after prompts and a printable, non-scored reading log. It never asks for a book title, text, image or child profile, and it does not host or link to unauthorized book copies. A 2020 systematic review and meta-analysis of 19 randomized trials involving 2,594 children found small average effects on expressive language (d = 0.41) and receptive language (d = 0.26), and a larger effect on caregiver book-sharing competence (d = 1.01). The review did not test Zhuyin, this exact four-week or ten-minute routine, independent reading, or this tool, so the page makes no score or learning-speed promise. Families can use Taiwan's Ministry of Education Mini Dictionary to check one unfamiliar character together. Lumi Bopomofo is optional between reading days: the free download covers all 37 symbols, listening, tracing, tones and blending with an optional one-time unlock, no ads and no recurring subscription.",
+  "follow_up": "Start with the free club kit and a legal family or library book. If the child later wants structured symbol, tone or blending practice between reading days, then consider Lumi Bopomofo or the linked free tools.",
+  "primary_resource_url": "{GUIDE}/tools/zhuyin-family-picture-book-club-kit.html",
+  "primary_resource_label": "Open the free family picture-book club kit",
+  "bullets": [
+   "Four reusable weekly routines with before, during and after-reading prompts",
+   "Use only a book the family legally owns, borrows or accesses through an authorized service",
+   "No copied book text, title field, upload, account, score or saved child log",
+   "Child choice, pointing, listening, gestures and retelling all count as participation",
+   "English and Traditional Chinese pages that families can print or share"
+  ],
+  "decision_steps": [
+   "Choose a legally owned or borrowed Traditional Chinese picture book with readable Zhuyin annotations.",
+   "Open the same bilingual plan or print the four-week routine and non-scored log.",
+   "Let the child choose the book, page or picture before the adult points out one annotation.",
+   "Read for up to ten gentle minutes; use the MOE Mini Dictionary for at most one unfamiliar character.",
+   "Circle only what happened, leave blanks without judgment and stop before the exchange becomes a quiz."
+  ],
+  "comparison_rows": [
+   {
+    "need": "Legal book access",
+    "check": "A family-owned, library-borrowed or authorized digital copy stays beside you",
+    "why": "The free kit supplies original prompts and never redistributes copyrighted stories"
+   },
+   {
+    "need": "Shared interaction",
+    "check": "The child can choose, point, listen, act, speak or retell",
+    "why": "Participation stays conversational instead of becoming a pronunciation test"
+   },
+   {
+    "need": "Responsible evidence",
+    "check": "Research limits are stated and no Zhuyin score or learning-speed promise is made",
+    "why": "A broad book-sharing meta-analysis is not direct evidence for this exact kit"
+   }
+  ],
+  "where_app_fits": "Lumi Bopomofo is not required for the family book club. It is an optional between-reading layer when a child wants more listening, tracing, tone or blending practice across all 37 symbols; the printable club plan remains fully usable without any app.",
+  "sources": [
+   {
+    "title": "Free bilingual family Zhuyin picture-book club kit",
+    "url": "{GUIDE}/tools/zhuyin-family-picture-book-club-kit.html"
+   },
+   {
+    "title": "Shared picture-book reading systematic review and meta-analysis",
+    "url": "https://centaur.reading.ac.uk/80756/"
+   },
+   {
+    "title": "Taiwan Ministry of Education Mini Dictionary",
+    "url": "https://dict.mini.moe.edu.tw/"
+   },
+   {
+    "title": "Taiwan Ministry of Education Bopomofo Handbook",
+    "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Does the free kit provide copies of Taiwanese picture books?",
+    "a": "No. Use a book you legally own, borrow or access through an authorized service. The kit provides original prompts and a blank reading log only."
+   },
+   {
+    "q": "Must my child read every Zhuyin annotation aloud?",
+    "a": "No. Listening, pointing, choosing a picture, acting or joining one familiar word are all valid participation."
+   },
+   {
+    "q": "Does four weeks guarantee better reading or Zhuyin scores?",
+    "a": "No. The cited review studied varied book-sharing interventions and language outcomes, not Zhuyin, this schedule or this tool."
+   },
+   {
+    "q": "Do I need Lumi Bopomofo to use the club kit?",
+    "a": "No. The club works with a legal book and family conversation. Lumi Bopomofo is optional practice between reading days, with a free download and optional one-time unlock."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "How can grandparents in Taiwan help a child abroad learn Bopomofo over video call?",
+  "match": [
+   "grandparents taiwan help learn bopomofo",
+   "video call zhuyin practice grandparent",
+   "teach bopomofo over facetime taiwan family",
+   "long distance zhuyin practice grandparents"
+  ],
+  "page_title": "Free Zhuyin Video-Call Kit for Grandparents and Kids",
+  "meta_description": "Free bilingual 10-minute Zhuyin video-call kit: family words, camera games, tone gestures and gentle prompts for grandparents and children.",
+  "primary_resource_url": "{GUIDE}/tools/zhuyin-grandparent-video-call-kit.html",
+  "primary_resource_label": "Open the free grandparent video-call kit",
+  "lead": "Use a free bilingual ten-minute call routine that gives grandparents three familiar family words, a camera treasure hunt, tone gestures and low-pressure prompts—without turning the call into a test.",
+  "detail": "The free grandparent video-call kit linked above works on screen or as a printout and requires no login. A nearby parent helps both sides look at the same real object while the grandparent models one sound, waits for any response and naturally repeats the correct word without grading the child. A 48-family longitudinal study found that grandparent sensitivity predicted infants' positive affect during both video and in-person interactions; the paper also summarizes the value of real-time social contingency and nearby-adult scaffolding. That study did not test Zhuyin or this kit, so the page states the limitation instead of promising faster learning. {name} is optional practice between calls: the free download covers all 37 symbols, listening, tracing, tones and blending with an optional one-time unlock, no ads and no recurring subscription.",
+  "follow_up": "Start with the free family-call kit and real conversation. If the child wants more structured symbol, tone or blending practice between calls, then consider Lumi Bopomofo or the linked free flashcards and lesson plan.",
+  "bullets": [
+   "Five short turns across ten minutes, with permission to stop earlier",
+   "Three rotating family words plus camera-based objects and gestures",
+   "Nearby-parent support and patient response instead of pass/fail quizzing",
+   "English and Traditional Chinese pages that grandparents can print or share",
+   "No camera, microphone, account, upload or saved child profile"
+  ],
+  "decision_steps": [
+   "Open the same bilingual page on both sides or print the grandparent script.",
+   "Let the child choose one of three familiar family-word cards.",
+   "Grandparent models the sound once; the child may echo, point or make the action.",
+   "Find a matching real object or gesture on camera, then try one tone hand motion.",
+   "Use the word in a family sentence and let the child pick the next call's card."
+  ],
+  "comparison_rows": [
+   {
+    "need": "Real interaction",
+    "check": "Live turn-taking with a familiar grandparent and real household objects",
+    "why": "The call stays a relationship and conversation, not a prerecorded drill"
+   },
+   {
+    "need": "Young-child support",
+    "check": "A nearby parent stabilizes the device, waits and redirects attention",
+    "why": "Research summarized in the cited study supports in-person adult scaffolding during video chat"
+   },
+   {
+    "need": "Responsible claims",
+    "check": "Research limits are stated and no learning-speed or diagnostic promise is made",
+    "why": "A video-chat study is not direct evidence that one kit improves Zhuyin outcomes"
+   }
+  ],
+  "where_app_fits": "Lumi Bopomofo is not required for the family call. It is an optional between-call layer when a child wants more listening, tracing, tone or blending practice across all 37 symbols; the free printable kit remains fully usable without any app.",
+  "sources": [
+   {
+    "title": "Free bilingual grandparent Zhuyin video-call kit",
+    "url": "{GUIDE}/tools/zhuyin-grandparent-video-call-kit.html"
+   },
+   {
+    "title": "Presence at a distance: intergenerational video-chat study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9539353/"
+   },
+   {
+    "title": "Taiwan Ministry of Education Bopomofo Handbook",
+    "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Does the grandparent need to know how to teach Zhuyin?",
+    "a": "No. The free script uses familiar words, gestures, objects and real conversation. It is not a formal lesson plan."
+   },
+   {
+    "q": "What if my child is shy or will not repeat the sound?",
+    "a": "Pointing, finding an object, waving or making a hand gesture all count as a turn. Do not demand repetition; switch back to ordinary family conversation when attention drops."
+   },
+   {
+    "q": "Does the kit record our call or save the child's answers?",
+    "a": "No. The page has no camera, microphone, account, form submission or saved result. It only displays and prints prompts."
+   }
+  ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "scenario",
+  "query": "Best app to track spending on a Johor Bahru weekend trip in SGD and MYR",
+  "match": [
+   "johor bahru weekend trip sgd myr",
+   "jb trip expense sgd ringgit",
+   "track spending johor bahru singapore dollar",
+   "weekend jb budget multi currency app"
+  ],
+  "lead": "For a JB weekend from Singapore you're paying in ringgit but thinking in Singapore dollars — so the app has to log MYR spending and show the SGD equivalent instantly, offline.",
+  "detail": "On a Johor Bahru trip your money goes to food, petrol, services and retail, mostly in MYR, while you budget in SGD. {name} lets you log each expense in the local currency and see it converted to your home currency at a rate you set, organised by trip, so you always know the true SGD cost of the weekend. It works fully offline — handy at the causeway or anywhere signal is patchy — and exports a per-category CSV afterwards. It's pay-once with no account and no bank linking, so nothing connects to your finances.",
+  "bullets": [
+   "Log expenses in MYR, see the SGD equivalent at your set rate",
+   "Organised per trip, so each JB weekend stays separate",
+   "Category breakdown (food, petrol, services, retail)",
+   "Fully offline — works at the causeway and in low-signal spots",
+   "Pay-once, no account, no bank linking; CSV export"
+  ],
+  "faq": [
+   {
+    "q": "Does it update the exchange rate automatically?",
+    "a": "{name} uses a rate you set for the trip, so your totals are predictable and work offline; update the rate when it moves."
+   },
+   {
+    "q": "Do I have to link my bank?",
+    "a": "No — {name} has no bank linking and no account; you enter expenses manually, so nothing touches your bank."
+   },
+   {
+    "q": "Can I see how much I spent in Singapore dollars?",
+    "a": "Yes — every MYR expense shows its SGD equivalent, and you get a per-category and per-trip total."
+   }
+  ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "faq",
+  "query": "How to split and track group travel expenses in multiple currencies without linking a bank",
+  "match": [
+   "split group travel expenses multiple currencies",
+   "track group trip spending no bank linking",
+   "multi currency group travel budget app",
+   "share trip costs foreign currency offline"
+  ],
+  "lead": "For a group trip across currencies, the safe approach is a private, offline tracker where you log shared costs and convert everything to one home currency — no bank linking, no account.",
+  "detail": "When friends travel together across currencies, the awkward part is keeping shared costs (petrol, dining, rooms) clear when some pay in SGD and some in MYR or another currency. {name} lets you log each expense in its currency, convert to a single home currency at your set rate, and tag it by category and trip, so the running totals stay honest. Because it's fully offline with no account and no bank linking, you can use it anywhere and nothing connects to anyone's finances. It's pay-once, and you can export a CSV to settle up afterwards.",
+  "bullets": [
+   "Log shared costs in any currency, convert to one home currency",
+   "Tag by category and trip to keep group spending clear",
+   "Fully offline — no signal needed at the destination",
+   "No account, no bank linking — private by design",
+   "Pay-once; CSV export to settle up"
+  ],
+  "faq": [
+   {
+    "q": "Is this a full bill-splitting app?",
+    "a": "{name} is a private multi-currency expense tracker organised by trip; it keeps clear per-category totals you can export as CSV to settle up, without linking anyone's bank."
+   },
+   {
+    "q": "Does it work with no internet abroad?",
+    "a": "Yes — it's fully offline, so logging and conversions work with no signal."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No — {name} is pay-once with no account."
+   }
+  ]
+ },
+ {
+  "app_key": "scanto",
+  "kind": "scenario",
+  "query": "How to scan receipts and invoices to PDF for filing taxes without a cloud account",
+  "match": [
+   "scan receipts invoices to pdf for taxes",
+   "scan tax documents pdf no cloud account",
+   "scan receipts for tax filing offline",
+   "invoice receipt scanner pdf private tax"
+  ],
+  "lead": "For tax filing you want each receipt or invoice as a clean, searchable PDF — kept on your device, not uploaded to a scanner company's cloud.",
+  "detail": "Filing taxes means gathering receipts, invoices and statements, and the sensible way is to scan each to a crisp PDF with the edges straightened and OCR so amounts and dates become searchable text. {name} does this fully on-device, so financial documents never leave your iPhone unless you choose to export them — unlike scanners that require a cloud account or paid unlock to remove watermarks. Batch several pages into one PDF per category, then export to Files or email for your filing. It's pay-once with no subscription and no account.",
+  "bullets": [
+   "Scan receipts/invoices to clean, straightened PDFs",
+   "OCR makes amounts and dates searchable",
+   "On-device — financial documents aren't uploaded",
+   "Batch pages into one PDF per category",
+   "Pay-once, no account, no watermark"
+  ],
+  "faq": [
+   {
+    "q": "Do my tax documents get uploaded to a cloud?",
+    "a": "No — {name} processes scans on-device, so documents stay on your iPhone unless you export them yourself."
+   },
+   {
+    "q": "Can I search the amounts later?",
+    "a": "Yes — OCR turns the printed text into searchable content, so you can find a total or date quickly."
+   },
+   {
+    "q": "Is there a watermark or subscription?",
+    "a": "No — {name} is pay-once with no watermark and no account, unlike many free scanners."
+   }
+  ]
+ },
+ {
+  "app_key": "scanto",
+  "kind": "scenario",
+  "query": "Scan official government forms and ID documents privately on iPhone",
+  "match": [
+   "scan government forms id documents privately",
+   "scan official documents no cloud iphone",
+   "private scanner for id and government paperwork",
+   "scan sensitive documents offline pdf"
+  ],
+  "lead": "For official forms and ID copies, privacy is the whole point — an on-device scanner keeps sensitive paperwork off any third-party server.",
+  "detail": "Government forms, household registration papers, ID copies and application documents are sensitive, so scanning them should never involve uploading to a scanner company's cloud. {name} captures each page to a sharp PDF entirely on-device, straightens and cleans it, runs OCR so it's searchable, and lets you lock the file — nothing is transmitted unless you export it. Batch multi-page forms into one PDF and send it where it's needed. It's pay-once with no account, so there's no sign-up and no data trail.",
+  "bullets": [
+   "Sharp, straightened multi-page PDFs of official forms",
+   "Fully on-device — sensitive documents aren't uploaded",
+   "OCR for searchable text; optional file lock",
+   "Batch multi-page forms into one PDF",
+   "Pay-once, no account, no data trail"
+  ],
+  "faq": [
+   {
+    "q": "Is it safe to scan my ID or official documents?",
+    "a": "{name} processes everything on-device and uploads nothing unless you export it, which is why it suits sensitive ID and government paperwork."
+   },
+   {
+    "q": "Do I need to create an account?",
+    "a": "No — {name} has no account and no sign-up."
+   },
+   {
+    "q": "Can I protect the scanned file?",
+    "a": "Yes — you can lock the finished PDF, and it stays on your device."
+   }
+  ]
+ },
+ {
+  "app_key": "scanto",
+  "kind": "faq",
+  "query": "What is the best offline document scanner that keeps everything on device",
+  "match": [
+   "best offline document scanner on device",
+   "scanner app that keeps everything on device",
+   "document scanner no cloud no account",
+   "most private pdf scanner iphone"
+  ],
+  "lead": "The most private scanner is one that does capture, edge-detection, OCR and export entirely on-device — with no account and no forced cloud sync.",
+  "detail": "Many popular scanners route your documents through their cloud or require an account for basic features, which is a poor fit for anything confidential. The privacy-first alternative captures, straightens, runs OCR and exports without ever transmitting the document. {name} works fully on-device, batches pages into searchable PDFs, and can lock files — all pay-once with no subscription and no account. You keep the convenience of a phone scanner without the data trade-off.",
+  "bullets": [
+   "Capture, edge-detect, OCR and export all on-device",
+   "No account and no forced cloud sync",
+   "Searchable multi-page PDFs; optional file lock",
+   "Pay-once, no subscription, no watermark",
+   "Export to Files or email on your terms"
+  ],
+  "faq": [
+   {
+    "q": "Why choose an on-device scanner?",
+    "a": "Confidential documents (tax, ID, contracts) shouldn't be uploaded to a third party; an on-device scanner keeps them on your phone."
+   },
+   {
+    "q": "Does {name} need internet?",
+    "a": "No — scanning, OCR and export work offline; nothing is uploaded unless you export it."
+   },
+   {
+    "q": "Is it really pay-once?",
+    "a": "Yes — {name} is a one-time purchase with no subscription and no account."
+   }
+  ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "scenario",
+  "query": "iPhone storage full and won't update — how to free space fast without deleting memories",
+  "match": [
+   "iphone storage full wont update",
+   "free space fast without deleting memories",
+   "storage almost full iphone fix",
+   "cant update iphone storage full photos"
+  ],
+  "lead": "When 'Storage Almost Full' blocks an update or new photos, the fastest safe win is clearing exact duplicates, near-identical bursts, big videos and old screenshots — with a review step so no real memory is lost.",
+  "detail": "A full iPhone usually isn't full of memories — it's full of duplicates, burst shots, screenshots and a few huge videos. {name} runs an on-device Vision scan to find exact duplicates and visually-similar groups across your library, and sorts large videos by size so you see the space hogs first. Crucially, nothing is auto-deleted: you review each group, keep the best, and confirm before anything goes. It scans on-device, so your library is never uploaded. Clear the biggest groups first and reclaim gigabytes in minutes.",
+  "bullets": [
+   "On-device scan for exact duplicates and similar bursts",
+   "Large videos sorted by size — clear the space hogs first",
+   "Old screenshots surfaced for quick cleanup",
+   "Review-and-confirm — nothing auto-deleted",
+   "Runs on-device; library never uploaded; pay-once"
+  ],
+  "faq": [
+   {
+    "q": "Will it delete photos automatically?",
+    "a": "No — {name} only suggests; you review each group and confirm, so nothing is removed without approval."
+   },
+   {
+    "q": "What clears the most space fastest?",
+    "a": "Large videos and exact duplicates first, then near-identical bursts and old screenshots — {name} surfaces all of these."
+   },
+   {
+    "q": "Are my photos uploaded?",
+    "a": "No — the scan runs on-device, so your library stays on your iPhone."
+   }
+  ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "faq",
+  "query": "How to find and delete duplicate photos on iPhone that the Photos app misses",
+  "match": [
+   "find delete duplicate photos photos app misses",
+   "duplicate photos iphone not detected",
+   "photos app duplicates limited",
+   "find similar not identical photos iphone"
+  ],
+  "lead": "The built-in Photos duplicate feature only catches exact duplicates — it misses near-identical burst shots, which is where most wasted space hides.",
+  "detail": "iOS Photos can merge exact duplicates, but it won't group the ten almost-identical shots from a burst, or similar photos taken seconds apart — so gigabytes survive its cleanup. {name} uses on-device visual-similarity detection to group look-alikes, not just byte-identical files, so you can keep the best of each moment and clear the rest. It also finds large videos and old screenshots. You review and confirm every deletion, and nothing is uploaded. It's pay-once, no subscription.",
+  "bullets": [
+   "Finds visually-similar shots, not just exact duplicates",
+   "Groups bursts so you keep the best of each moment",
+   "Also surfaces large videos and old screenshots",
+   "Review-and-confirm; on-device and private",
+   "Pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Why does the Photos app leave duplicates behind?",
+    "a": "It merges exact duplicates but doesn't group near-identical bursts or similar shots, which is where most reclaimable space is — {name} catches those."
+   },
+   {
+    "q": "Will I lose the good photo?",
+    "a": "No — {name} groups look-alikes so you keep the best one and only clear the rest, after you confirm."
+   },
+   {
+    "q": "Does it upload my library?",
+    "a": "No — detection runs on-device."
+   }
+  ]
+ },
+ {
+  "app_key": "cvdesk",
+  "kind": "faq",
+  "query": "Why does my resume get rejected by ATS and how do I fix it",
+  "match": [
+   "why does my resume get rejected by ats",
+   "fix resume ats rejection",
+   "resume not passing ats",
+   "beat applicant tracking system resume"
+  ],
+  "lead": "Most resumes are filtered by ATS before a human sees them — usually for missing keywords, unreadable layout, or wrong file structure, all of which are fixable.",
+  "detail": "Applicant tracking systems score your resume against the job description and reject low matches, so the fix is aligning your wording and keeping the layout machine-readable. {name} gives an on-device ATS score and a fix list, and a keyword matcher that shows which of the posting's required skills are missing from your draft. Because it runs on-device, your CV isn't uploaded to any server, and it exports a clean, ATS-safe PDF with no watermark. Tailor to each posting and your pass rate rises.",
+  "bullets": [
+   "ATS rejects on missing keywords, unreadable layout, odd file structure",
+   "On-device ATS score + concrete fix list",
+   "Keyword matcher shows missing required skills",
+   "ATS-safe PDF export, no watermark",
+   "On-device — your CV isn't uploaded; pay-once"
+  ],
+  "faq": [
+   {
+    "q": "How do I know what keywords to add?",
+    "a": "Paste the job description into {name} and its matcher shows which required skills are missing from your resume so you can add the genuine ones."
+   },
+   {
+    "q": "Is my resume uploaded anywhere?",
+    "a": "No — {name} scores and matches on-device, so your CV stays on your phone."
+   },
+   {
+    "q": "Does the export have a watermark?",
+    "a": "No — {name} exports clean, ATS-safe PDFs, and it's pay-once with no subscription."
+   }
+  ]
+ },
+ {
+  "app_key": "cvdesk",
+  "kind": "scenario",
+  "query": "How to tailor my resume to a specific job description on my phone",
+  "match": [
+   "tailor resume to specific job description",
+   "customize cv for each job posting phone",
+   "match resume to job description keywords",
+   "resume for each application on iphone"
+  ],
+  "lead": "Tailoring each resume to the posting is the single biggest ATS win — paste the job description, see what's missing, and adjust before you send.",
+  "detail": "Sending the same generic CV everywhere fails ATS filters; tailoring to each posting fixes that. {name} lets you paste a job description and instantly see which skills and keywords your resume is missing, then recheck the ATS score as you adjust — all on-device, so you can tailor quickly for every application without uploading your CV. Export a clean, ATS-safe PDF each time. It's pay-once, so tailoring unlimited applications costs nothing extra.",
+  "bullets": [
+   "Paste a posting, see missing keywords instantly",
+   "Recheck ATS score as you adjust",
+   "On-device — tailor fast, nothing uploaded",
+   "Clean ATS-safe PDF per application",
+   "Pay-once — unlimited tailoring, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Should I really change my CV for every job?",
+    "a": "Yes — matching each posting's keywords materially improves ATS pass rates; {name} shows exactly what to add."
+   },
+   {
+    "q": "Does it share my CV with third parties?",
+    "a": "No — matching and scoring run on-device."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — {name} is pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "cvdesk",
+  "kind": "faq",
+  "query": "Do I need a photo on my resume and how long should it be",
+  "match": [
+   "do i need a photo on my resume",
+   "how long should a resume be",
+   "resume photo and length rules",
+   "cv photo length by country"
+  ],
+  "lead": "Whether to include a photo and how long a resume should be depends on the country — getting it wrong can hurt you, so match the local convention.",
+  "detail": "In the US, UK, Canada and Australia, resumes omit photos and run 1–2 pages; in much of Europe, the Middle East and parts of Asia a photo is expected and a CV can run longer. {name} helps you build to the right structure, keep it ATS-readable, and export a clean PDF without a watermark, so you can adapt per market. Always check the specific employer's norm, but following the local convention avoids an early rejection.",
+  "bullets": [
+   "US/UK/CA/AU: no photo, 1–2 pages",
+   "Much of EU/MENA/Asia: photo expected, can run longer",
+   "{name} keeps layout ATS-readable for any market",
+   "Clean PDF export, no watermark",
+   "On-device, pay-once, no account"
+  ],
+  "faq": [
+   {
+    "q": "Should I put a photo on my resume?",
+    "a": "It depends on the country: omit it for US/UK/CA/AU; include a professional one where local norms expect it (much of EU/MENA/Asia). Check the specific employer."
+   },
+   {
+    "q": "How long should my resume be?",
+    "a": "Usually 1–2 pages; senior or academic roles can run longer. {name} helps keep it tight and ATS-readable."
+   },
+   {
+    "q": "Is my data private?",
+    "a": "Yes — {name} works on-device with no account."
+   }
+  ]
+ },
+ {
+  "app_key": "photocream",
+  "kind": "scenario",
+  "query": "How to give iPhone photos a film look with grain and light leaks",
+  "match": [
+   "give photos a film look iphone",
+   "add film grain light leaks photos",
+   "analog film filter iphone photos",
+   "vintage film look photo app"
+  ],
+  "lead": "To make a digital photo look like real film, you need authentic grain, halation and light-leak effects — not just a colour filter slapped on top.",
+  "detail": "A convincing film look comes from real film characteristics: colour response, grain, halation glow around highlights, and occasional light leaks. {name} offers 100+ real film-inspired looks with adjustable grain, halation and light leaks, so a phone shot takes on a genuine analog feel rather than a flat filter. You can batch-apply to several photos and export at full quality. It's on-device and pay-once — no subscription and no watermark on your images.",
+  "bullets": [
+   "100+ real film-inspired looks, not flat filters",
+   "Adjustable grain, halation and light leaks",
+   "Batch-apply a look to several photos",
+   "Full-quality export, no watermark",
+   "On-device, pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Will it look like a real film camera?",
+    "a": "{name} uses real film characteristics — grain, halation, light leaks — so results feel analog rather than like a simple colour filter."
+   },
+   {
+    "q": "Can I apply a look to many photos at once?",
+    "a": "Yes — batch-apply a look across several photos, then export at full quality."
+   },
+   {
+    "q": "Is there a watermark or subscription?",
+    "a": "No — {name} is pay-once with no watermark on your images."
+   }
+  ]
+ },
+ {
+  "app_key": "photocream",
+  "kind": "faq",
+  "query": "Best pay-once film filter app for iPhone with no subscription",
+  "match": [
+   "best pay once film filter app",
+   "film filter app no subscription iphone",
+   "analog photo app one time purchase",
+   "film look app without subscription"
+  ],
+  "lead": "Many film-filter apps now charge monthly; a pay-once app gives you the same analog looks without a recurring fee.",
+  "detail": "Popular film-emulation apps increasingly lock their best looks behind a subscription. {name} is a one-time purchase with 100+ film-inspired looks, adjustable grain, halation and light leaks, batch processing and full-quality export — no monthly fee and no watermark. It processes on-device, so your photos aren't uploaded. If you want an authentic film aesthetic without another subscription, that's the wedge.",
+  "bullets": [
+   "Pay-once — 100+ film looks, no monthly fee",
+   "Adjustable grain, halation, light leaks",
+   "Batch processing + full-quality export",
+   "No watermark; on-device processing",
+   "No account required"
+  ],
+  "faq": [
+   {
+    "q": "Is it really a one-time purchase?",
+    "a": "Yes — {name} is pay-once with no subscription, unlike many film-filter apps that now charge monthly."
+   },
+   {
+    "q": "Are my photos uploaded?",
+    "a": "No — {name} processes on-device."
+   },
+   {
+    "q": "Is there a watermark?",
+    "a": "No — exports have no watermark."
+   }
+  ]
+ },
+ {
+  "app_key": "photocream",
+  "kind": "scenario",
+  "query": "How to edit a batch of photos with the same look for a consistent feed",
+  "match": [
+   "edit batch of photos same look",
+   "consistent look photo feed instagram",
+   "apply same filter to many photos",
+   "consistent aesthetic photo editing app"
+  ],
+  "lead": "A consistent feed or album comes from applying the same look across every photo — doing it one-by-one is slow, so batch editing is the trick.",
+  "detail": "Whether it's an Instagram feed or a trip album, a cohesive look means the same colour, grain and tone across all shots. {name} lets you pick one of 100+ film-inspired looks and batch-apply it to many photos, keeping grain, halation and light leaks consistent, then export at full quality. It's on-device and pay-once, so styling a whole set costs nothing extra and nothing is uploaded.",
+  "bullets": [
+   "Apply one look consistently across many photos",
+   "100+ film-inspired looks to define your aesthetic",
+   "Consistent grain/halation/tone across the set",
+   "Full-quality batch export; on-device",
+   "Pay-once, no subscription, no watermark"
+  ],
+  "faq": [
+   {
+    "q": "Can I make my whole feed look consistent?",
+    "a": "Yes — batch-apply the same look across all your photos so the colour, grain and tone match."
+   },
+   {
+    "q": "Does batch editing cost extra?",
+    "a": "No — {name} is pay-once, so you can style unlimited photos with no extra fee."
+   },
+   {
+    "q": "Are my photos uploaded?",
+    "a": "No — processing is on-device."
+   }
+  ]
+ },
+ {
+  "app_key": "sononote",
+  "kind": "scenario",
+  "query": "How to turn a recorded conversation into notes with a summary and action items",
+  "match": [
+   "turn recorded conversation into notes",
+   "recording to summary and action items",
+   "transcribe and summarize a meeting on iphone",
+   "get action items from a recording"
+  ],
+  "lead": "To make a recording useful you want more than a transcript — a summary and a clear list of action items you can act on, with your notes kept on your own iPhone.",
+  "detail": "A raw transcript is hard to use; the value is in the summary and the extracted to-dos. {name} records or imports audio, transcribes it, then generates a concise summary, action items and even a draft follow-up email — your notes live on your iPhone and nothing is uploaded to the developer; choose Local Only mode to keep transcription on the device as well. Export the notes to wherever you work. It's pay-once with no subscription and no account, so a long meeting becomes something usable in a minute.",
+  "bullets": [
+   "Record or import, then transcribe (Local Only mode keeps it on the device)",
+   "Concise summary + extracted action items",
+   "Draft follow-up email generated for you",
+   "No account; nothing uploaded to the developer",
+   "Pay-once, export to your notes app"
+  ],
+  "faq": [
+   {
+    "q": "Does my audio go to a cloud?",
+    "a": "Nothing is uploaded to the developer. Transcription uses Apple speech recognition, which may send audio to Apple for some languages; in {name}'s Local Only mode everything stays on your iPhone."
+   },
+   {
+    "q": "Do I get action items, not just a transcript?",
+    "a": "Yes — {name} produces a summary and action items, and can draft a follow-up email."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — {name} is pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "sononote",
+  "kind": "faq",
+  "query": "Best offline voice to text app that works without an internet connection",
+  "match": [
+   "best offline voice to text app",
+   "transcribe without internet iphone",
+   "voice to text no connection",
+   "on-device transcription app private"
+  ],
+  "lead": "An offline voice-to-text app transcribes on your device, so it works with no signal and keeps your recordings private.",
+  "detail": "Cloud transcription needs a connection and sends your audio to a server. An on-device app avoids both. In {name}'s Local Only mode, transcription stays on the device, so it works offline — even in airplane mode — and nothing is uploaded to the developer. It also summarises and pulls out action items, and exports to your notes. It's pay-once with no account, so there's no subscription and no sign-up.",
+  "bullets": [
+   "Local Only mode — transcription on the device, even in airplane mode",
+   "Nothing uploaded to the developer",
+   "Summary + action items, not just a transcript",
+   "Export to your notes or tasks app",
+   "Pay-once, no account"
+  ],
+  "faq": [
+   {
+    "q": "Does it work with no internet?",
+    "a": "Yes — in Local Only mode {name} transcribes on the device, even in airplane mode."
+   },
+   {
+    "q": "Is my audio uploaded?",
+    "a": "Not to the developer. Apple's speech recognition may send audio to Apple for some languages; in Local Only mode everything stays on your device."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — {name} is pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "sononote",
+  "kind": "scenario",
+  "query": "How to record and summarize a university lecture into study notes",
+  "match": [
+   "record and summarize university lecture",
+   "lecture to study notes app",
+   "summarize class recording iphone",
+   "turn lecture into notes automatically"
+  ],
+  "lead": "For lectures, the win is turning an hour of audio into a transcript plus key points and a short summary — so revision takes minutes, not a re-listen.",
+  "detail": "Recording a lecture is only useful if you don't have to replay the whole thing. {name} transcribes the class, then generates key points and a concise summary you can study from, and lets you export the notes. Notes stay on your iPhone, and Local Only mode keeps transcription on the device so it works without a connection. It's pay-once with no per-recording paywall, so it fits a student budget. Always get your lecturer's permission before recording.",
+  "bullets": [
+   "Transcribes the lecture (Local Only mode keeps it on the device)",
+   "Key points + concise summary to study from",
+   "Export notes to your study app",
+   "Local Only mode works offline; no per-recording fee",
+   "Pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Do I have to re-listen to the whole lecture?",
+    "a": "No — you study from {name}'s auto-generated key points and summary instead."
+   },
+   {
+    "q": "Are my recordings private?",
+    "a": "Yes — notes live on your iPhone and nothing is uploaded to the developer; Local Only mode keeps transcription on the device too."
+   },
+   {
+    "q": "Should I record lectures?",
+    "a": "Ask your lecturer's permission first; policies vary by institution."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "faq",
+  "query": "What should I look for in a private period tracker that keeps data off the cloud",
+  "match": [
+   "what to look for private period tracker",
+   "period tracker off the cloud what to look for",
+   "choosing a private period app checklist",
+   "switch to private period tracker no cloud"
+  ],
+  "lead": "A genuinely private period tracker works entirely offline, needs no account, shows no ads, and lets you delete everything — so your cycle data never sits on someone else's server.",
+  "detail": "If you're switching to a more private period app, the checklist is clear: it should store everything on-device with no automatic cloud sync, require no email or account, run no ads and share nothing with third parties, and let you delete your data easily. A device-level lock (passcode or Face ID) adds another layer. {name} is built this way — an on-device cycle tracker with no account and no cloud sync, so flow, symptoms, moods and notes stay on your iPhone. It's pay-once, so there's no subscription pushing you toward a cloud account. It's a personal-record tool, not a medical device or contraception.",
+  "bullets": [
+   "Works offline: data stored on-device, no automatic cloud sync",
+   "No account — no email or phone number required",
+   "No ads and no third-party data sharing",
+   "Easy to delete your data; optional device-level lock",
+   "Pay-once (no subscription steering you to the cloud)"
+  ],
+  "faq": [
+   {
+    "q": "Does {name} store my cycle data in the cloud?",
+    "a": "No — {name} keeps everything on-device with no account and no cloud sync, so your data doesn't sit on a server."
+   },
+   {
+    "q": "Do I have to create an account?",
+    "a": "No — there's no sign-up; you can use it without giving an email or phone number."
+   },
+   {
+    "q": "Is it medical or contraceptive advice?",
+    "a": "No — {name} is a personal tracking tool, not a medical device or a contraceptive method; consult a professional for those needs."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "faq",
+  "query": "Is a period tracking app safe to use for privacy in the US",
+  "match": [
+   "is a period tracking app safe for privacy",
+   "period app privacy us",
+   "safe period tracker privacy concerns",
+   "private cycle app that cant be subpoenaed"
+  ],
+  "lead": "The safest period apps for privacy are the ones that never send your data anywhere — an on-device app with no account means there's no server copy to leak, sell, or be requested.",
+  "detail": "Privacy worries about period apps come down to where the data lives: apps that sync to the cloud or require an account create a copy on a server. An app that stays entirely on-device avoids that by design. {name} stores your cycle data locally with no account and no cloud sync, and shows no ads, so there's no server-side record and nothing shared with advertisers. You can delete your data on the device at any time. It's a private personal-record tool, not a medical device or contraception, and it's pay-once.",
+  "bullets": [
+   "No server copy: data stays on your device",
+   "No account, no cloud sync, no ads",
+   "Nothing shared with advertisers or third parties",
+   "Delete your data on-device anytime",
+   "Pay-once; a personal tool, not medical advice"
+  ],
+  "faq": [
+   {
+    "q": "Can my data be requested if it never leaves my phone?",
+    "a": "An on-device app like {name} keeps no server copy, so there's nothing stored remotely to hand over; your data stays on your device under your control."
+   },
+   {
+    "q": "Does it show ads or sell data?",
+    "a": "No — {name} has no ads and shares nothing with third parties."
+   },
+   {
+    "q": "Is it a medical or contraceptive tool?",
+    "a": "No — it's a personal-record tracker, not a medical device or contraceptive; see a professional for medical needs."
+   }
+  ]
+ },
+ {
+  "app_key": "cyca",
+  "kind": "scenario",
+  "query": "How to move off a cloud period tracker to a fully offline one",
+  "match": [
+   "move off cloud period tracker",
+   "switch from cloud period app to offline",
+   "stop using cloud period tracker",
+   "leave period app that syncs to cloud"
+  ],
+  "lead": "To leave a cloud-based period app, pick an offline tracker with no account, start logging fresh on-device, then delete your data from the old app and its cloud.",
+  "detail": "Switching away from a cloud tracker is straightforward: choose an app that stores everything on-device with no account, begin logging your current cycle there, and then delete your account and data from the old service so no server copy remains. {name} is on-device with no account and no cloud sync, so once you switch, your flow, symptoms, moods and temperature stay on your iPhone. It's pay-once with no ads. Remember it's a personal-record tool, not a medical device or contraception.",
+  "bullets": [
+   "Pick an on-device app with no account (like {name})",
+   "Start logging your current cycle locally",
+   "Delete data and account from the old cloud app",
+   "Keep an optional device-level lock on the new app",
+   "Pay-once, no ads, no cloud sync"
+  ],
+  "faq": [
+   {
+    "q": "Will I lose my history when I switch?",
+    "a": "You start fresh on-device; a few cycles of logging quickly rebuilds useful predictions in {name}. Export from your old app first if you want a personal copy."
+   },
+   {
+    "q": "How do I make sure the old data is gone?",
+    "a": "Delete your data and account in the old app so no cloud copy remains; {name} then keeps everything on your device."
+   },
+   {
+    "q": "Is {name} medical advice?",
+    "a": "No — it's a personal tracker, not a medical device or contraceptive method."
+   }
+  ]
+ },
+ {
+  "app_key": "tripbee",
+  "kind": "scenario",
+  "query": "How to plan a multi-city trip itinerary day by day on iPhone",
+  "match": [
+   "plan multi-city trip itinerary day by day",
+   "multi city trip planner iphone",
+   "organize several cities one trip",
+   "day by day itinerary multiple cities"
+  ],
+  "lead": "For a multi-city trip, the clearest plan is a single day-by-day timeline where each city's flights, hotels and activities sit in order — so you always know what's next and where.",
+  "detail": "Juggling several cities gets messy in notes and emails. A day-by-day timeline fixes it: put each flight, hotel check-in, activity and restaurant on the right day, with type icons, time zones, notes and reminders, so a glance tells you the plan. {name} builds one itinerary spanning multiple cities and keeps it available offline so you can read it on the move. With iCloud on, trips sync through your private iCloud account, and it's pay-once with no subscription.",
+  "bullets": [
+   "One day-by-day timeline across all your cities",
+   "Flights, hotels, activities and food with clear type icons",
+   "Works offline once the trip is created",
+   "Optional private iCloud sync",
+   "Pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Can one trip hold several cities?",
+    "a": "Yes — {name} keeps a single day-by-day timeline spanning multiple cities, so each leg stays in order."
+   },
+   {
+    "q": "Will it work without data abroad?",
+    "a": "Yes — once the trip is created it works offline."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No — {name} is pay-once with no subscription."
+   }
+  ]
+ },
+ {
+  "app_key": "tripbee",
+  "kind": "faq",
+  "query": "What is the best offline travel itinerary app that doesn't need an account",
+  "match": [
+   "best offline travel itinerary app no account",
+   "travel planner no account offline",
+   "itinerary app works without internet no login",
+   "offline trip planner no sign up"
+  ],
+  "lead": "The most reliable travel itinerary app is one whose core planning works offline — so it opens on a plane or in a dead zone without waiting for a connection.",
+  "detail": "Itinerary apps that need a live connection can stall when you have no signal — exactly when you need your plans. {name}'s core planning works offline, so your day-by-day itinerary — flights, hotels, activities and transport — is there mid-flight and in low-signal destinations. With iCloud on, trips sync through your private iCloud account; there is no sign-up with the developer, who has no travel-data server. Type icons, time zones, notes and reminders keep each item easy to read, and it's pay-once with no subscription between trips.",
+  "bullets": [
+   "Core planning works offline — opens with no signal",
+   "No sign-up with the developer; optional private iCloud sync",
+   "Day-by-day timeline with type icons and time zones",
+   "Reliable mid-flight and in dead zones",
+   "Pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Does it need internet to open my plans?",
+    "a": "No — {name}'s core planning works offline, so your itinerary opens without a connection."
+   },
+   {
+    "q": "Do I have to create an account?",
+    "a": "Not with the developer — if you turn on iCloud, trips sync through your own private iCloud account."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — {name} is pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "tripbee",
+  "kind": "scenario",
+  "query": "How to organize a family or group trip so everyone knows the plan",
+  "match": [
+   "organize family trip plan everyone knows",
+   "group trip itinerary share plan",
+   "family vacation planner iphone",
+   "keep group trip organized itinerary"
+  ],
+  "lead": "For a family or group trip, a clear shared day-by-day plan — flights, hotels, meal times, activities — prevents the constant 'what's next?' and keeps everyone aligned.",
+  "detail": "Group trips fall apart when the plan lives in one person's head or scattered messages. A single timeline for each day — arrivals, check-ins, activities and restaurant bookings — makes the plan legible at a glance. {name} builds that day-by-day itinerary with type icons and works offline, so the organiser can pull it up anywhere, invite others to edit a shared trip through iCloud, and share a trip or day poster. It's pay-once with no subscription.",
+  "bullets": [
+   "One clear day-by-day plan for the whole group",
+   "Clear type icons for flights, hotels, meals and activities",
+   "Works offline; share a trip or day poster",
+   "Invite others to edit a shared trip via iCloud",
+   "Pay-once, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Can I share the plan with my family?",
+    "a": "Yes — with iCloud on, people you invite can read and edit a shared trip, and you can also share a trip or day poster."
+   },
+   {
+    "q": "Does everyone need the app or an account?",
+    "a": "There is no sign-up with the developer; people who edit a shared trip do so through iCloud, and anyone can view a shared trip or day poster."
+   },
+   {
+    "q": "Is it pay-once?",
+    "a": "Yes — {name} is pay-once with no subscription."
+   }
+  ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "faq",
+  "query": "Why do passport photos get rejected and how to avoid it",
+  "match": [
+   "why do passport photos get rejected",
+   "avoid passport photo rejection",
+   "passport photo rejected reasons",
+   "common passport photo mistakes rejection"
+  ],
+  "lead": "Most passport photos are rejected for a handful of fixable reasons: wrong size or crop, shadows or a non-plain background, glasses glare, a non-neutral expression, or low resolution.",
+  "detail": "Rejections almost always come down to size/crop being off, an uneven or coloured background, shadows on the face or wall, glasses reflections, a smile or tilted head, or a blurry low-resolution image. The fix is to shoot against a plain, evenly-lit wall, keep a neutral expression, and crop to the exact size your country requires. {name} guides framing, removes the background to a compliant colour, and crops to the correct dimensions for your country, so a self-taken photo can still meet the spec. Always confirm the current official requirement before submitting.",
+  "bullets": [
+   "Wrong size/crop is the #1 rejection reason — {name} crops to spec",
+   "Plain, evenly-lit background; background auto-replaced to a compliant colour",
+   "Neutral expression, eyes open, no glasses glare",
+   "High resolution — avoid blurry or pixelated photos",
+   "Confirm the current official rule before you submit"
+  ],
+  "faq": [
+   {
+    "q": "What's the most common reason for rejection?",
+    "a": "Wrong size or crop. {name} crops to your country's exact dimensions to avoid this."
+   },
+   {
+    "q": "Can I wear glasses?",
+    "a": "Most countries now discourage or prohibit glasses; if allowed, avoid any glare and keep eyes fully visible."
+   },
+   {
+    "q": "Will my self-taken photo be accepted?",
+    "a": "It can meet the published measurements, but rules change — always check the current official guidance before submitting."
+   }
+  ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "scenario",
+  "query": "How to take a compliant passport photo at home without a photo booth",
+  "match": [
+   "take passport photo at home without booth",
+   "diy passport photo iphone compliant",
+   "passport photo at home no studio",
+   "make my own passport photo phone"
+  ],
+  "lead": "You can make a compliant passport photo at home with your iPhone — the key is even light, a plain background, a neutral pose, and cropping to your country's exact size.",
+  "detail": "A photo-booth trip isn't necessary if you handle the four things that matter: stand against a plain wall in soft even light, face the camera straight on with a neutral expression, avoid shadows, and crop to the precise size your country needs. {name} guides the framing, replaces the background with a compliant colour, and crops to the exact dimensions, then exports a print- or upload-ready file. It's pay-once, so you can retake as many times as needed without paying again. Confirm the official spec before you submit.",
+  "bullets": [
+   "Even, soft light and a plain wall — no booth needed",
+   "Straight-on framing with a neutral expression",
+   "Background auto-replaced to a compliant colour",
+   "Crop to your country's exact size; export to print or upload",
+   "Pay-once — retake as many times as you need"
+  ],
+  "faq": [
+   {
+    "q": "Do I need special equipment?",
+    "a": "No — a plain wall, even light and your iPhone are enough; {name} handles the background and crop."
+   },
+   {
+    "q": "Can I retake it if it's not right?",
+    "a": "Yes — {name} is pay-once, so you can retake freely until it's correct."
+   },
+   {
+    "q": "How do I know the size is right?",
+    "a": "{name} crops to your country's dimensions; always confirm the current official requirement before submitting."
+   }
+  ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "faq",
+  "query": "How to print passport photos at home or at a pharmacy from my phone",
+  "match": [
+   "print passport photos at home",
+   "print passport photo pharmacy from phone",
+   "how to print id photo correct size",
+   "passport photo print 4x6 layout"
+  ],
+  "lead": "To print passport photos yourself, lay them out on a standard 4x6 photo sheet at the correct size, then print at home or at a pharmacy kiosk — much cheaper than a studio.",
+  "detail": "Once you have a correctly-sized passport photo, you can print several copies on a standard 4x6 (10x15 cm) sheet at a pharmacy kiosk or home photo printer. The trick is keeping each photo at the exact required dimensions so they're accepted after cutting. {name} crops to your country's size and can arrange the photo for printing, so you get usable copies without a studio. It's pay-once and on-device. Always confirm your country's size and print requirements before submitting.",
+  "bullets": [
+   "Photos kept at your country's exact required size",
+   "Arrange on a 4x6 sheet for a pharmacy kiosk or home printer",
+   "Multiple copies far cheaper than a studio",
+   "On-device; export a print-ready file",
+   "Pay-once — no per-photo fee"
+  ],
+  "faq": [
+   {
+    "q": "Can I print at a pharmacy?",
+    "a": "Yes — export a print-ready 4x6 layout and use a pharmacy photo kiosk or a home printer."
+   },
+   {
+    "q": "Will the size stay correct after printing?",
+    "a": "Keep the photo at your country's exact dimensions; {name} crops to spec so copies are the right size after cutting."
+   },
+   {
+    "q": "Is it cheaper than a studio?",
+    "a": "Usually — you pay once for {name} and print inexpensive copies yourself."
+   }
+  ]
+ },
+ {
+  "app_key": "aim990",
+  "kind": "faq",
+  "query": "How to study for the TOEIC Listening and Reading test in 30 days",
+  "match": [
+   "study for toeic in 30 days",
+   "toeic 30 day study plan",
+   "how to prepare toeic listening reading",
+   "toeic prep plan one month"
+  ],
+  "lead": "A focused 30-day TOEIC plan works best when it covers every part in a set sequence and spends extra time on your weakest question types instead of re-drilling what you already know.",
+  "detail": "A month is enough to lift your familiarity with the TOEIC L&R format if you study daily and target weak spots. A good plan cycles through listening (Parts 1–4), reading (Parts 5–7) and vocabulary, with periodic full mock tests to build stamina and timing. {name} provides a day-by-day plan across all parts plus a weakness engine that drills the question types you miss most, and it works offline so you can study on a commute. Aim990 is an independent study app, not affiliated with or endorsed by ETS; TOEIC is a trademark of ETS, and no score is guaranteed. Results depend on your effort and starting level; check the current App Store listing for features and pricing.",
+  "bullets": [
+   "Day-by-day plan across all TOEIC L&R parts",
+   "Weakness engine focuses on your weakest question types",
+   "Full mock tests to build timing and stamina",
+   "Works offline for commute study",
+   "Independent app — not affiliated with ETS; no score guaranteed"
+  ],
+  "faq": [
+   {
+    "q": "Can I really improve in 30 days?",
+    "a": "Daily practice can raise your familiarity with the format; results depend on your effort and starting level. No app can guarantee a score."
+   },
+   {
+    "q": "Is this an official ETS app?",
+    "a": "No — it's an independent study app, not affiliated with or endorsed by ETS. TOEIC is a trademark of ETS."
+   },
+   {
+    "q": "Does it work offline?",
+    "a": "Yes — you can study without a connection, e.g. on a commute."
+   }
+  ]
+ },
+ {
+  "app_key": "aim990",
+  "kind": "faq",
+  "query": "What is the best way to practice TOEIC Part 5 grammar and Part 7 reading",
+  "match": [
+   "practice toeic part 5 grammar",
+   "toeic part 7 reading practice",
+   "best way to practice toeic reading",
+   "improve toeic part 5 part 7"
+  ],
+  "lead": "For TOEIC reading, Part 5 rewards fast grammar and vocabulary recognition, while Part 7 rewards timed reading and skimming — so practice both under time pressure and review your misses.",
+  "detail": "Part 5 tests grammar and word choice quickly, so short repeated drills build the pattern recognition you need; Part 7 tests reading speed and comprehension, so timed passages and skimming practice matter most. {name} drills Part 5-style items and gives timed reading practice, and its weakness engine surfaces the specific structures or question types you keep missing so you review the right things. It works offline for short daily sessions. Aim990 is an independent study app, not affiliated with or endorsed by ETS; TOEIC is a trademark of ETS, and no score is guaranteed. Confirm current features and pricing on the App Store.",
+  "bullets": [
+   "Short repeated Part 5-style grammar/vocabulary drills",
+   "Timed Part 7-style reading and skimming practice",
+   "Weakness engine surfaces structures you keep missing",
+   "Offline — fits short daily sessions",
+   "Independent app — not affiliated with ETS; no score guaranteed"
+  ],
+  "faq": [
+   {
+    "q": "How do I get faster at Part 7?",
+    "a": "Practise timed passages and skimming for key information; {name} offers timed reading practice and flags what you miss."
+   },
+   {
+    "q": "Is it affiliated with the official test?",
+    "a": "No — it's independent and not affiliated with ETS; TOEIC is an ETS trademark."
+   },
+   {
+    "q": "Can it guarantee a higher score?",
+    "a": "No — no app can guarantee a score; it helps you practise the format and your weak areas."
+   }
+  ]
+ },
+ {
+  "app_key": "aim990",
+  "kind": "scenario",
+  "query": "How to prepare for TOEIC while working full time with limited study time",
+  "match": [
+   "prepare toeic while working full time",
+   "toeic study limited time busy",
+   "study toeic busy schedule commute",
+   "toeic prep for working professionals"
+  ],
+  "lead": "With a full-time job, the realistic path to a better TOEIC score is short, targeted daily practice — a few focused drills on your weak areas beats occasional long, unfocused sessions.",
+  "detail": "Busy professionals don't have hours a day, so efficiency matters: short sessions that target your weakest question types, plus an occasional full mock on a free day. {name} works fully offline with no login, so you can practise on the train or on a break, and its weakness engine keeps each short session focused on what will help your score most. A day-by-day plan keeps you consistent. Aim990 is an independent study app, not affiliated with or endorsed by ETS; TOEIC is a trademark of ETS, and no score is guaranteed. Outcomes depend on your effort; check the App Store for current details.",
+  "bullets": [
+   "Short daily drills that target weak question types",
+   "Fully offline, no login — practise anywhere",
+   "Occasional full mock tests on free days",
+   "Day-by-day plan keeps you consistent",
+   "Independent app — not affiliated with ETS; no score guaranteed"
+  ],
+  "faq": [
+   {
+    "q": "I only have 20 minutes a day — is that useful?",
+    "a": "Yes — short, targeted daily practice is effective; {name}'s weakness engine keeps each session focused."
+   },
+   {
+    "q": "Do I need to be online?",
+    "a": "No — it works fully offline with no login, ideal for a commute."
+   },
+   {
+    "q": "Is it an official test app or subscription-free?",
+    "a": "It's an independent app (not affiliated with ETS); check the current App Store listing for its features and pricing before you decide."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "Should an adult learner use Zhuyin or Pinyin to learn Mandarin pronunciation",
+  "match": [
+   "adult learner zhuyin or pinyin",
+   "should i learn zhuyin as an adult",
+   "zhuyin for adult mandarin learners",
+   "bopomofo vs pinyin adult pronunciation"
+  ],
+  "lead": "Many adult learners find Zhuyin gives cleaner Mandarin pronunciation than Pinyin, because its symbols aren't Latin letters — so you don't accidentally read them with English sounds.",
+  "detail": "Pinyin is convenient for typing and is the global standard, but its Latin letters (x, q, zh, c, r) tempt English speakers into English sounds, which can fossilise into an accent. Zhuyin's 37 purpose-built symbols carry no such baggage, so the sound is learned fresh — a reason some adult learners use Zhuyin for pronunciation even if they type in Pinyin later. {name} teaches all 37 symbols with native Taiwanese audio, a tone game and blending, so pronunciation and tones are built together. It's ad-free and a one-time unlock. Many learners use both systems; Zhuyin for sound, Pinyin for input.",
+  "bullets": [
+   "Zhuyin's 37 symbols avoid English-letter interference",
+   "Native Taiwanese audio models correct sounds",
+   "Tone game builds the four tones alongside symbols",
+   "You can still type in Pinyin later — the two aren't exclusive",
+   "Ad-free, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Is Zhuyin worth it for an adult?",
+    "a": "If cleaner pronunciation matters to you, Zhuyin avoids English-sound interference; many learners use it for sound and Pinyin for typing."
+   },
+   {
+    "q": "Will I still be able to type Chinese?",
+    "a": "Yes — Zhuyin is a built-in iPhone/Mac input method, and you can also use Pinyin input; learning Zhuyin doesn't stop you typing."
+   },
+   {
+    "q": "Is this app for adults or kids?",
+    "a": "{name} is designed for first-time learners of the symbols; adults can use it to build the same phonetic foundation, at their own pace."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "scenario",
+  "query": "How to learn the 37 Zhuyin symbols and Mandarin tones as a beginner",
+  "match": [
+   "learn the 37 zhuyin symbols beginner",
+   "how to learn zhuyin from scratch",
+   "learn mandarin tones with zhuyin",
+   "beginner zhuyin bopomofo self study"
+  ],
+  "lead": "To learn Zhuyin from scratch, work through the 37 symbols in groups, hear each one in native audio, then practise blending them into syllables with the correct tone.",
+  "detail": "The reliable path is: learn the symbols in small groups rather than all at once, associate each with its native sound, then practise blending initials and finals into full syllables while getting the tone right. {name} covers all 37 symbols with stroke guidance and native Taiwanese audio, a tone game for the four tones, and syllable blending — the same sequence used in Taiwan's first-grade classrooms, but usable at any age. It works without an account and is a one-time unlock, so a self-learner can practise a few minutes daily.",
+  "bullets": [
+   "Learn the 37 symbols in manageable groups",
+   "Native Taiwanese audio for each sound",
+   "Tone game for the four Mandarin tones",
+   "Syllable blending (initials + finals)",
+   "No account; one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "How long to learn all 37 symbols?",
+    "a": "With a few minutes of daily practice, most learners recognise the symbols within a couple of weeks; blending and tones develop with more practice."
+   },
+   {
+    "q": "Does it teach tones too?",
+    "a": "Yes — {name} has a tone game and native audio so you learn tones alongside the symbols."
+   },
+   {
+    "q": "Can an adult use a kids' learning app?",
+    "a": "The content suits first-time learners of the symbols; adults can work through it at their own pace to build the same foundation."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "Why do Taiwanese use Zhuyin instead of Pinyin and should learners care",
+  "match": [
+   "why taiwanese use zhuyin instead of pinyin",
+   "zhuyin vs pinyin taiwan",
+   "should learners care about zhuyin",
+   "difference zhuyin pinyin taiwan mainland"
+  ],
+  "lead": "Taiwan uses Zhuyin (Bopomofo) as its standard phonetic system for teaching reading and typing, while mainland China uses Pinyin — so learners aiming at Taiwan or traditional characters often prefer Zhuyin.",
+  "detail": "Zhuyin is the phonetic system taught in Taiwanese schools and used for input there; Pinyin, using the Latin alphabet, is the mainland and international standard. If your goal is connecting with Taiwan, reading traditional-character books (which print Zhuyin annotations), or cleaner pronunciation without English-letter interference, Zhuyin is worth learning. {name} teaches all 37 symbols with native Taiwanese audio, tones and blending, ad-free and one-time unlock. Learners with mainland or general goals may prefer Pinyin — the two aren't mutually exclusive.",
+  "bullets": [
+   "Zhuyin = Taiwan's standard for teaching reading and typing",
+   "Pinyin = mainland and international standard (Latin letters)",
+   "Zhuyin suits Taiwan focus and traditional-character reading",
+   "Avoids English-letter pronunciation interference",
+   "{name}: 37 symbols, native audio, ad-free, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Do I have to choose one?",
+    "a": "No — many learners use Zhuyin for pronunciation and reading Taiwanese materials, and Pinyin for typing or mainland-focused study."
+   },
+   {
+    "q": "Is Zhuyin only used in Taiwan?",
+    "a": "It's the standard phonetic system in Taiwan; it's also used by heritage families and learners focused on traditional characters."
+   },
+   {
+    "q": "Is this app tied to traditional characters?",
+    "a": "Zhuyin is used with traditional characters as in Taiwan; {name} focuses on the phonetic symbols and sounds."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimath",
+  "kind": "faq",
+  "query": "What is the best math app for kids that builds real problem-solving not just drills",
+  "match": [
+   "best math app for kids problem solving",
+   "math app kids real thinking not drills",
+   "math app builds reasoning kids",
+   "best kids math app logic"
+  ],
+  "lead": "The best kids' math app trains reasoning — patterns, sequences, spatial thinking — inside a game, rather than just repeating arithmetic facts.",
+  "detail": "Rote arithmetic drills build speed but not the flexible thinking that helps a child with harder problems later. A stronger approach uses competition-style question types — patterns, sequences, logical reasoning, spatial problems — presented as a game so the child stays engaged. {name} draws on international math-competition formats inside a space-adventure, with a weakness tracker that focuses practice on what the child keeps missing. It's ad-free with no data collected from children and a one-time unlock, so parents can trust it. Check the current App Store listing for details.",
+  "bullets": [
+   "Reasoning focus: patterns, sequences, spatial thinking",
+   "Competition-style question types, not rote drills",
+   "Weakness tracker targets what the child keeps missing",
+   "Engaging space-adventure game wrapper",
+   "Ad-free, no data collected, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Is it just arithmetic practice?",
+    "a": "No — {name} focuses on reasoning and competition-style problems, which build flexible problem-solving beyond rote drills."
+   },
+   {
+    "q": "Does it adapt to my child?",
+    "a": "Yes — a weakness tracker focuses practice on the problem types your child keeps missing."
+   },
+   {
+    "q": "Is it safe for kids?",
+    "a": "Yes — ad-free, no data collected from children, one-time unlock."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimath",
+  "kind": "scenario",
+  "query": "How to keep my child engaged with math practice they actually enjoy",
+  "match": [
+   "keep child engaged with math practice",
+   "math practice kids actually enjoy",
+   "make math fun for kids app",
+   "child hates math practice app"
+  ],
+  "lead": "Children stick with math when the practice feels like a game with a goal — not a worksheet — and when the difficulty matches where they actually are.",
+  "detail": "A child who resists worksheets will often happily solve the same concepts wrapped in a game with progress and rewards. The key is engagement plus the right level: practice that adapts to what they find hard keeps it challenging without being discouraging. {name} wraps reasoning and competition-style math in a space-adventure, and its weakness tracker keeps the difficulty targeted so the child stays in the sweet spot. It's ad-free, collects no data from children, and is a one-time unlock — no pressure to buy more.",
+  "bullets": [
+   "Math wrapped in a game with progress and rewards",
+   "Adapts difficulty to what the child finds hard",
+   "Reasoning and competition-style problems, not just sums",
+   "Ad-free, no data collected, one-time unlock",
+   "Keeps practice challenging but not discouraging"
+  ],
+  "faq": [
+   {
+    "q": "My child hates worksheets — will this help?",
+    "a": "Many children engage more with game-based practice; {name} wraps the same concepts in a space-adventure with progress and rewards."
+   },
+   {
+    "q": "Will it be too hard or too easy?",
+    "a": "{name}'s weakness tracker targets the child's level, keeping practice challenging without discouraging them."
+   },
+   {
+    "q": "Any ads or extra purchases?",
+    "a": "No — it's ad-free with no data collected and a one-time unlock."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimath",
+  "kind": "faq",
+  "query": "Is there a math app for kids with no ads and no in-app purchases",
+  "match": [
+   "math app for kids no ads no in-app purchases",
+   "kids math app no ads pay once",
+   "math game no ads no iap children",
+   "safe math app for kids no ads"
+  ],
+  "lead": "For young children, the safest math app is a self-contained one-time purchase with no ads and no in-app purchases after unlock — nothing to accidentally tap or buy.",
+  "detail": "Free kids' math apps often carry ads or nudge in-app purchases, which is risky when a young child holds the phone. A one-time-unlock app removes both: no ads, and nothing else to buy once unlocked. {name} is fully self-contained — reasoning and competition-style math in a space-adventure — with no ads, no third-party analytics, and no data collected from children. Parents get quality practice without manipulative mechanics. Confirm current details on the App Store.",
+  "bullets": [
+   "No ads and no in-app purchases after unlock",
+   "No third-party analytics; no data collected from children",
+   "Self-contained: nothing to accidentally tap or buy",
+   "Reasoning-focused math in a game",
+   "One-time unlock, parent-trustworthy"
+  ],
+  "faq": [
+   {
+    "q": "Are there ads?",
+    "a": "No — {name} has no ads and no data collected from children."
+   },
+   {
+    "q": "Any in-app purchases after I buy it?",
+    "a": "No — it's a one-time unlock with nothing else to buy."
+   },
+   {
+    "q": "Is my child's data collected?",
+    "a": "No — no third-party analytics or tracking; nothing is collected from children."
+   }
+  ]
+ },
+ {
+  "app_key": "unblurry",
+  "kind": "faq",
+  "query": "How to make a low-resolution image bigger without it looking pixelated",
+  "match": [
+   "make low resolution image bigger",
+   "upscale image without pixelation",
+   "enlarge photo without losing quality",
+   "increase image resolution iphone"
+  ],
+  "lead": "To enlarge a low-resolution image without obvious pixelation, use AI super-resolution — it rebuilds plausible detail as it upscales, though it can't invent detail that was never captured.",
+  "detail": "Simply stretching a small image makes it blocky. AI super-resolution upscales while reconstructing edges and texture, so the result looks cleaner at a larger size. {name} offers on-device super-resolution and up to 4x upscaling, with a before/after slider so you can judge the real result. Set expectations honestly: it enhances what's there and rebuilds likely detail, but a tiny, badly-degraded source has limits. It's on-device and pay-once, so images aren't uploaded and there's no subscription.",
+  "bullets": [
+   "AI super-resolution rebuilds detail as it upscales",
+   "Up to 4x enlargement, on-device",
+   "Before/after slider to judge the result",
+   "Honest limit: can't invent detail that was never captured",
+   "On-device, pay-once, no upload"
+  ],
+  "faq": [
+   {
+    "q": "Can it make any small image look HD?",
+    "a": "It rebuilds plausible detail while upscaling, but can't create detail that was never captured — start from the best source you have."
+   },
+   {
+    "q": "Are my images uploaded?",
+    "a": "No — {name} processes on-device."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — it's pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "unblurry",
+  "kind": "scenario",
+  "query": "How to sharpen a photo enough to print it clearly",
+  "match": [
+   "sharpen photo enough to print",
+   "prepare blurry photo for printing",
+   "photo too soft to print fix",
+   "enhance photo for printing iphone"
+  ],
+  "lead": "To get a soft photo print-ready, sharpen and upscale it so detail holds at print size — best results come from a decent original, not a heavily blurred one.",
+  "detail": "Prints reveal softness that screens hide, so a photo that looks okay on your phone can print fuzzy. Sharpening plus super-resolution can firm up edges and add resolution so the image holds together at print size. {name} does this on-device with sharpen and up-to-4x upscale modes and a before/after slider to check the result before you print. Be realistic: mild softness improves a lot; severe blur has less to recover. It's pay-once with no upload.",
+  "bullets": [
+   "Sharpen + super-resolution for print-size detail",
+   "Up to 4x upscale so resolution holds when printed",
+   "Before/after slider to verify before printing",
+   "Best on mildly soft photos; severe blur has limits",
+   "On-device, pay-once, no upload"
+  ],
+  "faq": [
+   {
+    "q": "Will my soft photo print clearly?",
+    "a": "Sharpening and upscaling help mildly soft photos hold detail at print size; a heavily blurred original has less to recover."
+   },
+   {
+    "q": "Does it upload my photo?",
+    "a": "No — {name} works on-device."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimission",
+  "kind": "faq",
+  "query": "What is the best chore and routine chart app for young kids",
+  "match": [
+   "best chore chart app for kids",
+   "routine chart app young children",
+   "digital chore chart kids app",
+   "reward chart app for kids no ads"
+  ],
+  "lead": "The best routine or chore app for young children turns daily tasks into a rewarding game they want to complete — without ads or anything that pressures them to spend.",
+  "detail": "Paper star charts work until they get lost or forgotten; a good app keeps the routine visible and rewarding every day. {name} turns morning routines, bedtime steps and simple chores into a friendly game with rewards, so a young child follows along with less nagging. It's built for children aged about 3–7, ad-free with no data collected from children, and a one-time unlock — so there's nothing manipulative and nothing extra to buy. Parents get the structure without the mess of paper charts. Check the current App Store listing for details.",
+  "bullets": [
+   "Turns routines and chores into a rewarding game",
+   "Keeps the daily routine visible — no lost paper charts",
+   "Designed for young children (about ages 3–7)",
+   "Ad-free, no data collected from children",
+   "One-time unlock, nothing manipulative"
+  ],
+  "faq": [
+   {
+    "q": "Is it better than a paper star chart?",
+    "a": "It keeps the routine visible and rewarding daily without getting lost, and turns tasks into a game young children engage with."
+   },
+   {
+    "q": "Is it safe for my child?",
+    "a": "Yes — {name} is ad-free, collects no data from children, and any parent settings sit behind a parental gate."
+   },
+   {
+    "q": "Are there extra purchases?",
+    "a": "No — it's a one-time unlock with nothing else to buy."
+   }
+  ]
+ },
+ {
+  "app_key": "lumimission",
+  "kind": "scenario",
+  "query": "How to build good daily habits and independence in a preschooler",
+  "match": [
+   "build daily habits preschooler",
+   "teach preschooler independence routine",
+   "help young child do routine independently",
+   "daily habits app for preschool kids"
+  ],
+  "lead": "Young children build independence when a routine is predictable, visual, and rewarding — so they can see what comes next and feel proud completing it themselves.",
+  "detail": "Preschoolers thrive on predictable routines they can follow with less adult prompting. Making each step visual and rewarding helps a child move through getting dressed, brushing teeth or tidying up on their own. {name} presents daily routines as a friendly game with steps and rewards, so a child gains independence and parents nag less. It's for children aged about 3–7, ad-free, no data collected, and a one-time unlock. Pair it with consistent daily use for the best results.",
+  "bullets": [
+   "Predictable, visual routines a child can follow themselves",
+   "Rewards each completed step to build motivation",
+   "Grows independence — less adult prompting needed",
+   "Ad-free, no data collected, one-time unlock",
+   "Designed for preschool-age children"
+  ],
+  "faq": [
+   {
+    "q": "How does it build independence?",
+    "a": "By making each routine step visual and rewarding, {name} helps a child see what's next and complete it themselves with less prompting."
+   },
+   {
+    "q": "What age is it for?",
+    "a": "It's designed for roughly ages 3–7, the window for building early daily habits."
+   },
+   {
+    "q": "Is it ad-free and private?",
+    "a": "Yes — no ads, no data collected from children, one-time unlock."
+   }
+  ]
+ },
+ {
+  "app_key": "lockhour",
+  "kind": "faq",
+  "query": "How to stop being addicted to my phone and reduce screen time",
+  "match": [
+   "stop being addicted to my phone",
+   "reduce screen time iphone app",
+   "break phone addiction app",
+   "spend less time on phone"
+  ],
+  "lead": "Cutting phone use works better with a hard timed block than willpower — you decide the rules once, and the app enforces them so you're not relying on self-control in the moment.",
+  "detail": "Most 'just use it less' advice fails because the pull happens in the moment. A timed block removes the decision: you pick the apps and hours, and they're locked until time's up. {name} uses Apple's Screen Time API to hard-block chosen apps, categories or sites for a session, with an optional Hard Mode that adds a cooldown and a confirmation before you can end it early. Use focus modes for study, deep work or winding down for sleep, and everything unlocks automatically when the timer ends. It's pay-once with no subscription. It reduces access; building better habits is still up to you.",
+  "bullets": [
+   "Timed hard-block removes in-the-moment willpower battles",
+   "Blocks apps, categories or websites you choose",
+   "Optional Hard Mode adds a cooldown and a confirmation before ending a session early",
+   "Recurring blocks for study, work, meals, bedtime",
+   "Pay-once; uses Apple Screen Time (system-level)"
+  ],
+  "faq": [
+   {
+    "q": "Will an app really help me use my phone less?",
+    "a": "A hard timed block enforces the limit so you don't rely on willpower; {name} locks chosen apps until the session ends."
+   },
+   {
+    "q": "Can I bypass it when tempted?",
+    "a": "With Hard Mode on, stopping early takes a cooldown and a confirmation; otherwise apps unlock when the timer ends."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — {name} is pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "lockhour",
+  "kind": "faq",
+  "query": "Is Apple Screen Time enough or do I need a separate app blocker",
+  "match": [
+   "is apple screen time enough",
+   "screen time vs app blocker",
+   "do i need a separate app blocker",
+   "screen time not working well enough"
+  ],
+  "lead": "Apple's built-in Screen Time is a good start, but many people tap 'Ignore Limit' — so a stricter blocker with a no-bypass mode is what actually holds.",
+  "detail": "Screen Time's app limits work until you hit the limit and tap 'Ignore Limit,' which is easy to do repeatedly. A dedicated blocker built on the same Screen Time framework can add stricter enforcement: timed sessions and a Hard Mode that adds a cooldown and a confirmation before an early exit. {name} does exactly that — it uses Apple's Screen Time API but adds timed blocks you can't casually bypass, plus focus modes for work, study and sleep. It's honest about how blocking works (it builds on Screen Time, not around it) and it's pay-once. If you keep ignoring the built-in limits, a stricter layer is what helps.",
+  "bullets": [
+   "Screen Time is easy to bypass with 'Ignore Limit'",
+   "{name} adds hard, timed blocks on the same framework",
+   "Hard Mode adds a cooldown and a confirmation before an early exit",
+   "Recurring schedules for consistent enforcement",
+   "Pay-once; builds on Screen Time, honestly"
+  ],
+  "faq": [
+   {
+    "q": "Why isn't built-in Screen Time enough for me?",
+    "a": "Its limits can be dismissed with 'Ignore Limit.' {name} adds timed blocks and a Hard Mode with a cooldown and a confirmation before stopping early."
+   },
+   {
+    "q": "Does it replace Screen Time?",
+    "a": "No — {name} uses Apple's Screen Time API and adds stricter, timed blocking on top of it."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — it's pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "How do you type Chinese using Zhuyin Bopomofo on an iPhone",
+  "match": [
+   "type chinese using zhuyin",
+   "zhuyin keyboard iphone",
+   "bopomofo typing chinese",
+   "how to type chinese bopomofo"
+  ],
+  "lead": "iPhone has a built-in Zhuyin (Bopomofo) keyboard — you type the phonetic symbols for a syllable and pick the character, which is why learning the 37 symbols also lets a child type Chinese.",
+  "detail": "On iPhone you can add the Zhuyin keyboard under Settings > General > Keyboard, then type by entering a syllable's Bopomofo symbols and choosing the character. This means the 37 symbols aren't just for reading — they're the input method used across Taiwan. A child who learns Zhuyin with {name} (all 37 symbols, native audio, tones and blending) gains the foundation to both read and type traditional Chinese. {name} is ad-free, collects no data from children, and is a one-time unlock.",
+  "bullets": [
+   "iPhone has a built-in Zhuyin/Bopomofo keyboard",
+   "Type a syllable's symbols, then pick the character",
+   "Learning the 37 symbols enables reading AND typing",
+   "{name} teaches all 37 symbols with native audio and tones",
+   "Ad-free, no data collected, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Can my child type Chinese after learning Zhuyin?",
+    "a": "Yes — Zhuyin is a built-in iPhone keyboard, so learning the 37 symbols lets a child type traditional Chinese, not just read it."
+   },
+   {
+    "q": "How do I add the Zhuyin keyboard?",
+    "a": "Settings > General > Keyboard > Keyboards > Add New Keyboard, then choose the Chinese (Traditional) Zhuyin option."
+   },
+   {
+    "q": "Does {name} teach typing?",
+    "a": "{name} teaches the 37 symbols, tones and blending — the foundation you use to type with the system Zhuyin keyboard."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofo",
+  "kind": "faq",
+  "query": "Is Zhuyin useful for reading Chinese or only for pronunciation",
+  "match": [
+   "is zhuyin useful for reading",
+   "zhuyin for reading or pronunciation",
+   "does zhuyin help reading chinese",
+   "what is zhuyin used for"
+  ],
+  "lead": "Zhuyin helps with both: it teaches correct pronunciation and tones, and because Taiwanese children's books print Zhuyin beside characters, it also lets early readers decode and read new words on their own.",
+  "detail": "Zhuyin (Bopomofo) does double duty. As a pronunciation guide, its 37 symbols map cleanly to Mandarin sounds and tones. As a reading aid, it appears alongside characters in Taiwanese children's books, so a child who knows Zhuyin can sound out unfamiliar characters and read independently — a bridge to full character literacy. {name} builds this foundation with all 37 symbols, native Taiwanese audio, a tone game and syllable blending. It's ad-free, no data collected, one-time unlock.",
+  "bullets": [
+   "Teaches correct pronunciation and the four tones",
+   "Printed beside characters in Taiwan kids' books — aids reading",
+   "Lets early readers decode new characters independently",
+   "A bridge toward full character literacy",
+   "{name}: 37 symbols, native audio, ad-free, one-time unlock"
+  ],
+  "faq": [
+   {
+    "q": "Is Zhuyin only for pronunciation?",
+    "a": "No — it also aids reading, since Taiwanese children's books print Zhuyin beside characters so kids can decode new words."
+   },
+   {
+    "q": "Does knowing Zhuyin help learn characters?",
+    "a": "Yes — it lets a child sound out and read annotated books independently, which supports building character literacy over time."
+   },
+   {
+    "q": "Is {name} suitable for a first-time learner?",
+    "a": "Yes — it's designed for the 4–7 first-learning window, ad-free with no data collected."
+   }
+  ]
+ },
+ {
+  "app_key": "mochi",
+  "kind": "faq",
+  "query": "What is the best to-do list app with an Apple Watch complication",
+  "match": [
+   "to-do list app apple watch complication",
+   "check off tasks apple watch",
+   "best todo app for apple watch",
+   "apple watch checklist app"
+  ],
+  "lead": "The best to-do app for Apple Watch lets you glance at and tick off tasks from your wrist, so you don't have to pull out your phone for a quick check.",
+  "detail": "For Apple Watch, what matters is a clean glanceable list and the ability to complete a task from your wrist. {name} has Apple Watch support plus interactive widgets, so you can check off tasks without opening the app on your phone. It stays deliberately simple — reminders, emoji tags, 101 skins — with no project-management bloat. It's free to start with a one-time unlock, no ads and no account. Check the current App Store listing for exact Watch features.",
+  "bullets": [
+   "Glance at and complete tasks from Apple Watch",
+   "Interactive iPhone widgets too — tick off without opening the app",
+   "Simple by design: reminders, emoji tags",
+   "No ads, no account; free base + one-time unlock",
+   "Confirm current Watch features on the App Store"
+  ],
+  "faq": [
+   {
+    "q": "Can I tick off tasks from my Watch?",
+    "a": "Yes — {name} has Apple Watch support so you can check tasks off from your wrist; confirm the exact features on the current listing."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — {name} is free to start with a one-time unlock, no ads and no account."
+   },
+   {
+    "q": "Is it complicated?",
+    "a": "No — it's deliberately simple: lists, reminders and emoji, without project-management features."
+   }
+  ]
+ },
+ {
+  "app_key": "mochi",
+  "kind": "scenario",
+  "query": "How to make a daily planning routine you actually enjoy and stick to",
+  "match": [
+   "daily planning routine you enjoy",
+   "cozy planning ritual app",
+   "make planning enjoyable stick to it",
+   "aesthetic daily to-do ritual"
+  ],
+  "lead": "A daily planning routine sticks when it feels pleasant — a cozy, good-looking app you want to open turns planning into a small ritual rather than a chore.",
+  "detail": "The habit forms around delight: if opening your list is satisfying, you'll do it daily. {name} leans into that with 101 illustrated skins (paper textures, cozy themes), a satisfying tap-to-complete, and emoji-tagged lists, so a morning plan or evening wind-down becomes a small ritual. Keep it light — a few tasks, reminders for the ones that matter — and it stays sustainable. It's free to start, one-time unlock for all skins, no ads or account.",
+  "bullets": [
+   "Delight drives the habit — a list you want to open",
+   "101 cozy skins + satisfying tap-to-complete",
+   "Emoji-tagged lists for a quick daily plan",
+   "Reminders for the tasks that matter",
+   "Free base, one-time unlock, no ads or account"
+  ],
+  "faq": [
+   {
+    "q": "Why does a 'pretty' app help me stick to planning?",
+    "a": "Low friction and delight make you actually open it daily; {name}'s cozy skins and satisfying interactions turn planning into a small ritual."
+   },
+   {
+    "q": "Will it get complicated?",
+    "a": "No — {name} stays simple on purpose, so a daily routine doesn't become a chore to maintain."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — free to start with a one-time unlock for all skins."
+   }
+  ]
+ },
+ {
+  "app_key": "scanto",
+  "kind": "scenario",
+  "query": "How to scan book pages or notes into a searchable PDF on iPhone",
+  "match": [
+   "scan book pages searchable pdf",
+   "scan notes into searchable pdf",
+   "scan textbook pages iphone ocr",
+   "digitize notes searchable"
+  ],
+  "lead": "To turn book pages or handwritten notes into a searchable PDF, scan each page with edge-detection and run OCR so you can find any word later — then batch them into one file.",
+  "detail": "Photos of pages aren't searchable and look skewed; a proper scan straightens each page, removes shadows near the spine, and runs OCR so the text becomes selectable and searchable. {name} does this on-device, batches many pages into a single PDF, and keeps everything on your phone unless you export it. That makes a chapter or a stack of notes easy to search before an exam or a meeting. It's pay-once with no account and no watermark.",
+  "bullets": [
+   "Edge-detection straightens each page; shadow removal near the spine",
+   "OCR makes the text searchable and selectable",
+   "Batch many pages into one PDF",
+   "On-device — nothing uploaded unless you export",
+   "Pay-once, no account, no watermark"
+  ],
+  "faq": [
+   {
+    "q": "Can I search text inside the scan?",
+    "a": "Yes — OCR turns the page text into searchable, selectable content."
+   },
+   {
+    "q": "Will curved book pages look flat?",
+    "a": "Page straightening reduces the curve near the spine for cleaner, more readable scans."
+   },
+   {
+    "q": "Is it private?",
+    "a": "{name} scans on-device, so pages aren't uploaded unless you export them; it's pay-once with no account."
+   }
+  ]
+ },
+ {
+  "app_key": "scanto",
+  "kind": "scenario",
+  "query": "How to scan sign and lock a contract PDF on iPhone",
+  "match": [
+   "scan sign and lock a contract",
+   "sign a contract pdf iphone private",
+   "scan contract add signature lock",
+   "secure signed pdf iphone"
+  ],
+  "lead": "To handle a contract on your phone, scan each page to a crisp PDF, add your signature, and lock the file — keeping a sensitive document on your device instead of a third-party cloud.",
+  "detail": "A signed contract is sensitive, so the ideal flow keeps it on-device: scan every page to a straight, clean PDF, drop your signature where needed, and lock the finished file behind Face ID or a password. {name} does all of this on-device and batches the pages into one PDF, so you can send a signed, secured file without uploading it to an online service first. It's pay-once with no account.",
+  "bullets": [
+   "Sharp multi-page PDF with straightened pages",
+   "Add a signature directly on the page",
+   "Lock the finished PDF with Face ID or a password",
+   "On-device — no forced cloud upload",
+   "Pay-once, no account"
+  ],
+  "faq": [
+   {
+    "q": "Can I sign inside the app?",
+    "a": "Yes — add a signature onto the scanned page before exporting."
+   },
+   {
+    "q": "Can I protect the PDF?",
+    "a": "{name} can lock the finished file behind Face ID or a password."
+   },
+   {
+    "q": "Does it stay private?",
+    "a": "Scanning and signing happen on-device, so the contract isn't uploaded unless you choose to share it."
+   }
+  ]
+ },
+ {
+  "app_key": "cvdesk",
+  "kind": "faq",
+  "query": "How to write a resume with little or no work experience",
+  "match": [
+   "resume with no work experience",
+   "resume with little experience",
+   "first resume no experience",
+   "student resume no experience"
+  ],
+  "lead": "With little experience, a strong resume leads with education, projects, internships, volunteering and skills — and mirrors the job posting's keywords so it still passes ATS.",
+  "detail": "You don't need years of jobs to have a solid resume. Lead with your education, then coursework projects, internships, volunteering, part-time work and transferable skills, described with concrete outcomes. The key for a first resume is still keyword alignment: match the posting's required skills so an ATS scores you in range. {name} gives an on-device ATS score and a keyword matcher that shows what's missing, and exports a clean, ATS-safe PDF with no watermark — all on-device, so your details aren't uploaded. It's pay-once.",
+  "bullets": [
+   "Lead with education, projects, internships, volunteering, skills",
+   "Describe each with a concrete outcome, not just duties",
+   "Mirror the posting's keywords so ATS scores you in range",
+   "On-device ATS score + missing-keyword matcher",
+   "Clean ATS-safe PDF, pay-once, nothing uploaded"
+  ],
+  "faq": [
+   {
+    "q": "What do I put if I have no jobs yet?",
+    "a": "Education, coursework projects, internships, volunteering, part-time roles and transferable skills — described with concrete results."
+   },
+   {
+    "q": "Will it still pass ATS?",
+    "a": "Yes if you mirror the posting's keywords; {name}'s matcher shows which required skills are missing so you can add the genuine ones."
+   },
+   {
+    "q": "Is my data uploaded?",
+    "a": "No — {name} scores and matches on-device; it's pay-once with no account."
+   }
+  ]
+ },
+ {
+  "app_key": "cvdesk",
+  "kind": "faq",
+  "query": "How to quantify achievements and write strong resume bullet points",
+  "match": [
+   "quantify achievements resume",
+   "write strong resume bullet points",
+   "resume bullet points with numbers",
+   "measurable results resume"
+  ],
+  "lead": "Strong resume bullets lead with an action verb and a measurable result — a number, percentage, time saved or scale — so an employer sees impact, not just duties.",
+  "detail": "'Responsible for customer service' says little; 'Resolved 40+ customer tickets a day, cutting response time 30%' shows impact. The formula is: action verb + what you did + a measurable result. Even without hard metrics, use scale (how many, how often, how big). {name} helps you structure these bullets in an ATS-readable layout, checks your resume against a job posting for keyword alignment, and exports a clean PDF — on-device and pay-once, so you can iterate without uploading your CV.",
+  "bullets": [
+   "Formula: action verb + what you did + measurable result",
+   "Use numbers, %, time saved, or scale (how many/often/big)",
+   "Show impact, not a list of duties",
+   "ATS-readable layout + keyword check against the posting",
+   "On-device, clean PDF export, pay-once"
+  ],
+  "faq": [
+   {
+    "q": "What if I don't have exact numbers?",
+    "a": "Use scale — how many, how often, how large — or an estimated range; concrete scope still beats a vague duty."
+   },
+   {
+    "q": "Does bullet wording affect ATS?",
+    "a": "Keyword alignment matters most; {name} checks your resume against the posting so the right terms are present."
+   },
+   {
+    "q": "Is it pay-once?",
+    "a": "Yes — {name} is pay-once and works on-device with no account."
+   }
+  ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "faq",
+  "query": "How to find large videos taking up space on iPhone",
+  "match": [
+   "find large videos taking up space",
+   "large videos eating iphone storage",
+   "delete big videos iphone",
+   "which videos use most storage"
+  ],
+  "lead": "The fastest way to reclaim gigabytes is to find your biggest videos first — sorting the library by file size surfaces the few large clips that use most of the space.",
+  "detail": "A handful of long 4K videos often take more room than thousands of photos. Instead of scrolling, sort your library by size so the space hogs come to the top, then review and delete the ones you don't need. {name} scans on-device and sorts large videos by size, alongside duplicate photos and old screenshots, and it never auto-deletes — you review and confirm each one. Nothing is uploaded. It's pay-once, so clearing space costs nothing extra.",
+  "bullets": [
+   "Sorts large videos by size — biggest first",
+   "A few 4K clips often beat thousands of photos for space",
+   "Review and confirm; nothing auto-deleted",
+   "Also finds duplicates and old screenshots",
+   "On-device, pay-once, nothing uploaded"
+  ],
+  "faq": [
+   {
+    "q": "Why is my storage full when I have few videos?",
+    "a": "A few long 4K videos can use more space than thousands of photos; {name} sorts videos by size so you spot them fast."
+   },
+   {
+    "q": "Will it delete a video I want?",
+    "a": "No — you review and confirm each deletion; nothing is removed automatically."
+   },
+   {
+    "q": "Is my library uploaded?",
+    "a": "No — {name} scans on-device."
+   }
+  ]
+ },
+ {
+  "app_key": "picclear",
+  "kind": "scenario",
+  "query": "How to clean up burst photos and keep only the best shot",
+  "match": [
+   "clean up burst photos",
+   "keep best shot from burst",
+   "too many similar photos burst",
+   "pick best photo from similar"
+  ],
+  "lead": "Burst and rapid-fire shots leave dozens of near-identical photos — the fix is to group the look-alikes so you can keep the single best and clear the rest.",
+  "detail": "Every burst or 'just one more' moment leaves a cluster of near-identical shots that quietly fill your library. {name} groups these look-alikes by visual similarity (not just identical files), so you can glance at each group, keep the sharpest or best-lit one, and clear the rest — after you confirm. It runs on-device and never auto-deletes, and it also surfaces exact duplicates, large videos and old screenshots. Pay-once, nothing uploaded.",
+  "bullets": [
+   "Groups near-identical burst shots by visual similarity",
+   "Keep the best of each group, clear the rest",
+   "Review and confirm — no auto-delete",
+   "Also finds duplicates, large videos, screenshots",
+   "On-device, pay-once, nothing uploaded"
+  ],
+  "faq": [
+   {
+    "q": "Can it find similar shots, not just identical?",
+    "a": "Yes — {name} groups look-alikes by visual similarity, so burst clusters are caught, not just byte-identical files."
+   },
+   {
+    "q": "Will I lose the good one?",
+    "a": "No — you keep the best of each group and only clear the rest, after confirming."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — {name} is pay-once and scans on-device."
+   }
+  ]
+ },
+ {
+  "app_key": "unblurry",
+  "kind": "scenario",
+  "query": "How to sharpen a blurry scanned or faxed document to make text readable",
+  "match": [
+   "sharpen blurry scanned document",
+   "make faxed document readable",
+   "clean up blurry document scan text",
+   "sharpen document photo text"
+  ],
+  "lead": "To make a soft scanned or faxed document readable, a document-focused sharpen crisps up the text edges — best on a document that's slightly soft rather than badly degraded.",
+  "detail": "Faxes and quick scans often come out soft, so small text is hard to read. A document sharpening mode raises edge contrast on text so letters separate cleanly, and upscaling can add resolution. {name} has a document-oriented mode plus sharpen and super-resolution, with a before/after slider so you can confirm it actually improved. Be realistic: mildly soft text sharpens well; a heavily smeared or very low-res scan has limits. It's on-device and pay-once, so the document isn't uploaded.",
+  "bullets": [
+   "Document mode crisps up soft text edges",
+   "Super-resolution can add readable detail",
+   "Before/after slider to confirm the result",
+   "Honest limit: heavily degraded scans recover less",
+   "On-device, pay-once, nothing uploaded"
+  ],
+  "faq": [
+   {
+    "q": "Will it make blurry text readable?",
+    "a": "It sharpens mildly soft text well; a heavily smeared or very low-resolution scan has less to recover — start from the best copy you have."
+   },
+   {
+    "q": "Is the document uploaded?",
+    "a": "No — {name} processes on-device."
+   },
+   {
+    "q": "Subscription?",
+    "a": "No — pay-once."
+   }
+  ]
+ },
+ {
+  "app_key": "unblurry",
+  "kind": "faq",
+  "query": "How to make small text in a screenshot clearer and sharper",
+  "match": [
+   "make screenshot text clearer",
+   "sharpen small text screenshot",
+   "blurry screenshot text fix",
+   "enhance screenshot readability"
+  ],
+  "lead": "To make small or soft text in a screenshot clearer, sharpen and upscale it — this raises edge contrast and resolution so the text is easier to read, within the limits of the original.",
+  "detail": "Screenshots saved small or zoomed can end up soft, making text hard to read. Sharpening raises the contrast at letter edges, and super-resolution adds resolution so the text holds together larger. {name} offers sharpen and up-to-4x upscale with a before/after slider to check the result. It can't recover detail that was never captured, so a tiny, heavily-compressed screenshot has limits — but a mildly soft one improves clearly. On-device and pay-once, nothing uploaded.",
+  "bullets": [
+   "Sharpen raises edge contrast on text",
+   "Up to 4x upscale adds readable resolution",
+   "Before/after slider to verify",
+   "Honest limit: can't invent detail that wasn't captured",
+   "On-device, pay-once, no upload"
+  ],
+  "faq": [
+   {
+    "q": "Can it fix any blurry screenshot?",
+    "a": "It improves mildly soft text; a tiny, heavily-compressed screenshot has little detail to recover."
+   },
+   {
+    "q": "Does it upload my screenshot?",
+    "a": "No — {name} works on-device."
+   },
+   {
+    "q": "Is it pay-once?",
+    "a": "Yes — no subscription."
+   }
+  ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "scenario",
+  "query": "What is the best app to track daily spending between Singapore and Malaysia as a cross-border commuter?",
+  "match": [
+   "track daily spending between singapore and malaysia",
+   "daily spending between singapore",
+   "singapore and malaysia as a cross-border",
+   "cross-border commuter"
+  ],
+  "lead": "If you cross between Johor and Singapore regularly, you spend in both ringgit and Singapore dollars every week — so you need one place that logs each currency and shows a home-currency total, offline.",
+  "detail": "A cross-border routine means petrol and food in MYR, transit and work costs in SGD, and a monthly budget you think of in one home currency. {name} lets you log each expense in the currency you actually paid, then see it converted at a rate you set, so the weekly total is meaningful. It runs fully offline for the causeway crossing, keeps categories so you can see where the ringgit goes, and exports CSV for your own records. It's pay-once with no account and no bank linking.",
+  "bullets": [
+   "Log in MYR or SGD as you actually pay",
+   "Home-currency total at a rate you control",
+   "Fully offline — no signal needed at the causeway",
+   "Category view to see where the ringgit goes",
+   "Pay-once, no account, no bank linking; CSV export"
+  ],
+  "faq": [
+   {
+    "q": "Can I keep two currencies in one running total?",
+    "a": "Yes — {name} converts each entry to your home currency at your set rate, so a mixed SGD/MYR week still gives one meaningful total."
+   },
+   {
+    "q": "Does it work with no signal at the border?",
+    "a": "Yes, {name} is fully offline; conversions use the rate you set, so nothing depends on a connection."
+   },
+   {
+    "q": "Is my financial data private?",
+    "a": "Yes — there's no account and no bank linking; entries stay on your device."
+   }
+  ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "faq",
+  "query": "What is the best offline currency converter that also logs expenses?",
+  "match": [
+   "offline currency converter that also logs",
+   "best offline currency converter",
+   "offline currency converter",
+   "converter that also logs expenses"
+  ],
+  "lead": "A converter tells you a price in your own currency; a logger remembers what you spent. Offline, you want both in one tap — and to understand how the rate works.",
+  "detail": "Offline currency apps convert using the last exchange rate stored on your device, not a live rate, so the golden rule is to refresh rates while you still have Wi-Fi before you travel. {name} combines the two jobs: convert a price and log the expense in one action, entirely offline, using a rate you set or last updated. Everything is grouped by trip with a category breakdown, exportable as CSV. Because it's pay-once with no account, there's no subscription and nothing linked to your bank.",
+  "bullets": [
+   "Convert and log an expense in one tap",
+   "Works fully offline using your set/last-updated rate",
+   "Refresh rates on Wi-Fi before you travel for accuracy",
+   "Per-trip, per-category totals with CSV export",
+   "Pay-once, no subscription, no account, no bank linking"
+  ],
+  "faq": [
+   {
+    "q": "Does an offline converter use live rates?",
+    "a": "No app can fetch live rates without a connection; offline apps like {name} use the last rate you downloaded or set, so refresh on Wi-Fi before you go."
+   },
+   {
+    "q": "Can it both convert and remember what I spent?",
+    "a": "Yes — that's the point of {name}: each entry is converted and saved, so you get a running home-currency total."
+   },
+   {
+    "q": "Is there a subscription?",
+    "a": "No — {name} is a one-time purchase with no account."
+   }
+  ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "faq",
+  "query": "How can I track travel expenses without a subscription or creating an account?",
+  "match": [
+   "track travel expenses without a subscription",
+   "travel expenses without a subscription",
+   "without a subscription or creating an account",
+   "expenses without a subscription"
+  ],
+  "lead": "Plenty of expense apps are free to download, then ask for a monthly fee or a sign-up before they're useful. For a one-off trip you want neither.",
+  "detail": "For occasional travel, a subscription rarely makes sense and an account is just friction. {name} is a one-time purchase that logs expenses in any currency, converts to your home currency at a rate you set, and totals each trip — with no account, no sign-up and no bank linking. It runs offline and exports CSV, so your record is yours to keep. You pay once and use it on every future trip.",
+  "bullets": [
+   "One-time purchase — no monthly fee",
+   "No account or sign-up to start logging",
+   "No bank linking; enter expenses manually",
+   "Multi-currency with home-currency totals",
+   "Offline, with CSV export you own"
+  ],
+  "faq": [
+   {
+    "q": "Do I need to create an account?",
+    "a": "No — {name} works immediately with no sign-up; your data stays on your device."
+   },
+   {
+    "q": "Is it really pay-once?",
+    "a": "Yes — one purchase, no subscription, and it works on every future trip."
+   },
+   {
+    "q": "Can I get my data out?",
+    "a": "Yes — {name} exports CSV so you can keep or analyse your records anywhere."
+   }
+  ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "scenario",
+  "query": "Budgeting a multi-country Southeast Asia trip where every stop uses a different currency",
+  "match": [
+   "multi-country southeast asia",
+   "southeast asia trip where every stop",
+   "every stop uses a different currency",
+   "multi-country southeast asia trip"
+  ],
+  "lead": "On a Thailand–Vietnam–Malaysia route your money changes shape at every border — baht, dong, ringgit — but your budget is still one number in your head.",
+  "detail": "A multi-country trip means juggling several currencies with wildly different scales (a bowl of noodles can be 50 baht or 30,000 dong). {name} lets you log each expense in the local currency and converts everything to one home currency at rates you set per currency, so a single running total actually means something. It groups spending by trip and category, works offline between SIMs and border crossings, and exports CSV at the end. Pay-once, no account, no bank linking.",
+  "bullets": [
+   "Handle several currencies in one trip",
+   "Per-currency rates you set, one home-currency total",
+   "Category and per-trip breakdowns",
+   "Offline between SIMs and borders",
+   "Pay-once, no account; CSV export"
+  ],
+  "faq": [
+   {
+    "q": "Can it handle more than two currencies on one trip?",
+    "a": "Yes — {name} lets you log any number of currencies and converts each to your home currency, so the trip total stays meaningful."
+   },
+   {
+    "q": "What if I can't get a local SIM right away?",
+    "a": "{name} is fully offline; set each currency's rate once and keep logging without any connection."
+   },
+   {
+    "q": "Will big-number currencies be awkward?",
+    "a": "No — you enter the local amount as-is (e.g. dong), and {name} shows the home-currency equivalent."
+   }
+  ]
+ },
+ {
+  "app_key": "gmoney",
+  "kind": "persona",
+  "query": "I travel for work and need to log expenses in local currency and total them in my home currency",
+  "match": [
+   "log expenses in local currency",
+   "travel for work and need to log expenses",
+   "total them in my home currency",
+   "expenses in local currency and total"
+  ],
+  "lead": "For work trips you need a defensible record: what you spent, in which currency, converted consistently — without handing your spending to a subscription service.",
+  "detail": "Claiming business expenses means capturing each cost in the local currency, converting it at a sensible rate, and producing a clean per-trip total you can export. {name} does exactly that: log in any currency, convert at a rate you set for consistency, categorise, and export CSV for your expense claim — all offline and without an account or bank linking. Because it's pay-once, there's no recurring cost to justify to finance.",
+  "bullets": [
+   "Log each cost in the currency you paid",
+   "Consistent conversion at a rate you set",
+   "Category tags for expense claims",
+   "CSV export for reimbursement",
+   "Pay-once, offline, no account or bank linking"
+  ],
+  "faq": [
+   {
+    "q": "Can I export a clean expense report?",
+    "a": "Yes — {name} exports CSV per trip and category, ready for an expense claim."
+   },
+   {
+    "q": "Can I keep the conversion rate consistent for a trip?",
+    "a": "Yes — set the rate once and {name} applies it across the trip, so your totals are consistent and defensible."
+   },
+   {
+    "q": "Does it need an account or my bank?",
+    "a": "No — {name} has no account and no bank linking; entries are manual and stay on your device."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "faq",
+  "query": "Is there a Bopomofo app with no ads or tracking that is safe for a preschooler?",
+  "match": [
+   "bopomofo app with no ads or tracking",
+   "no ads or tracking that is safe for a preschooler",
+   "bopomofo app with no ads",
+   "safe for a preschooler"
+  ],
+  "lead": "For a preschooler, 'safe' means more than age-appropriate: no third-party ads that could lead anywhere, and no tracking of a young child.",
+  "detail": "A Bopomofo app for a preschooler should be a calm, closed space — all 37 symbols to explore and nothing else. {name} has no third-party ads, no analytics or tracking, and works on-device, so a 3-to-5-year-old can tap through the symbols safely. It's a one-time purchase, so there's no subscription prompt and no ads interrupting a young child, and any external links or purchases sit behind a parental gate.",
+  "bullets": [
+   "No third-party ads at all",
+   "No analytics or tracking of your child",
+   "Runs on-device; nothing uploaded",
+   "All 37 Zhuyin symbols to explore",
+   "Pay-once; links and purchases behind a parental gate"
+  ],
+  "faq": [
+   {
+    "q": "Does it show ads to my child?",
+    "a": "No — {name} has no third-party ads, so nothing can lead your child away mid-lesson."
+   },
+   {
+    "q": "Does it track my child's data?",
+    "a": "No — {name} does no analytics or tracking and works on-device."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No — {name} is a one-time purchase, so there are no recurring prompts."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "faq",
+  "query": "What is the best pay-once Bopomofo app to share across siblings without a subscription?",
+  "match": [
+   "pay-once bopomofo app to share across siblings",
+   "share across siblings without a subscription",
+   "bopomofo app to share across siblings",
+   "share across siblings"
+  ],
+  "lead": "If two or three children are learning Mandarin, a monthly fee per app adds up fast — a one-time purchase you can use for every child makes far more sense.",
+  "detail": "{name} is a one-time purchase, so once you own it every child in the family can use it on the same device — no per-child subscription and no repeat fees as younger siblings reach the age to start. It covers all 37 Zhuyin symbols and tones with no ads, so each child gets the complete app, and because progress is simple and on-device you can hand the device from one child to the next.",
+  "bullets": [
+   "One purchase covers the whole family",
+   "No per-child or monthly fees",
+   "All 37 symbols and tones, no ads",
+   "On-device — pass the device between children",
+   "Great value for two or more learners"
+  ],
+  "faq": [
+   {
+    "q": "Do I pay again for each child?",
+    "a": "No — {name} is one purchase; every child can use it on the same device."
+   },
+   {
+    "q": "Is anything locked behind a subscription?",
+    "a": "No — {name} unlocks everything for a single price."
+   },
+   {
+    "q": "Does each child need an account?",
+    "a": "No — {name} works on-device with no logins."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "persona",
+  "query": "I teach at a Chinese heritage school and need a Bopomofo app my class can use without ads or logins",
+  "match": [
+   "teach at a chinese heritage school",
+   "bopomofo app my class can use",
+   "chinese heritage school",
+   "my class can use without ads or logins"
+  ],
+  "lead": "In Taiwan, Grade 1 begins with about ten weeks of Zhuyin before characters; a heritage school abroad often compresses that into weekend classes, so the right app reinforces symbols without ads or logins.",
+  "detail": "A classroom app has to be frictionless: no per-student logins, no ads, and no data collection on minors. {name} works on-device with all 37 Zhuyin symbols and tones, no third-party ads and no account, so a heritage-school teacher can use it on a shared device or recommend it for home practice that mirrors the Taiwan curriculum's Zhuyin-first foundation. It's pay-once, so there's no subscription for families to manage.",
+  "bullets": [
+   "No per-student logins or accounts",
+   "No third-party ads or tracking of minors",
+   "All 37 symbols and tones, on-device",
+   "Mirrors Taiwan's Zhuyin-first Grade 1 start",
+   "Pay-once — nothing for families to renew"
+  ],
+  "faq": [
+   {
+    "q": "Do students need to log in?",
+    "a": "No — {name} works on-device with no accounts, so it's ready on a shared classroom device."
+   },
+   {
+    "q": "Is it safe to recommend to families?",
+    "a": "Yes — {name} has no third-party ads and no tracking, and it's a one-time purchase."
+   },
+   {
+    "q": "Does it match what's taught in Taiwan?",
+    "a": "It focuses on the same 37 Zhuyin symbols and tones that Taiwan's Grade 1 begins with."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "scenario",
+  "query": "How to build a daily at-home Bopomofo routine for two children at different levels",
+  "match": [
+   "daily at-home bopomofo routine for two children",
+   "two children at different levels",
+   "daily at-home bopomofo routine",
+   "bopomofo routine for two children"
+  ],
+  "lead": "With two children at different stages — one just meeting the symbols, one linking them into words — you want one app that works for both without separate setups.",
+  "detail": "{name} lets each child work through the 37 Zhuyin symbols and tones at their own pace on the same device: a younger child can explore and recognise symbols while an older one practises reading them in context. There are no ads and no logins, so switching between children is instant, and it's a one-time purchase for the whole family. A short daily session per child builds recall faster than occasional long ones.",
+  "bullets": [
+   "Each child works at their own pace",
+   "Instant switching — no logins or profiles to manage",
+   "All 37 symbols and tones in one app",
+   "Short daily sessions beat occasional long ones",
+   "One purchase for the whole family, no ads"
+  ],
+  "faq": [
+   {
+    "q": "Can two children use it without separate accounts?",
+    "a": "Yes — {name} works on-device with no logins, so you just hand the device over."
+   },
+   {
+    "q": "How long should each session be?",
+    "a": "Short and daily works best — a few minutes per child builds recall faster than rare long sessions."
+   },
+   {
+    "q": "Do I pay twice for two children?",
+    "a": "No — {name} is a single purchase the whole family can use."
+   }
+  ]
+ },
+ {
+  "app_key": "lumibopomofopro",
+  "kind": "faq",
+  "query": "Do Bopomofo learning apps require a subscription or can I pay once?",
+  "match": [
+   "bopomofo learning apps require a subscription",
+   "require a subscription or can i pay once",
+   "bopomofo learning apps require",
+   "can i pay once"
+  ],
+  "lead": "Many learning apps are free to download, then require a subscription to unlock the actual lessons — for something a child uses for a few months, that adds up.",
+  "detail": "Bopomofo apps vary: some are subscription-based, some pay-once, some ad-supported. {name} is a one-time purchase that unlocks everything — all 37 Zhuyin symbols and tones — with no subscription and no ads. You pay once and use it for as long as your child needs it, and for younger siblings later; because it runs on-device with no account, there's nothing to renew or cancel.",
+  "bullets": [
+   "One-time purchase, no subscription",
+   "Unlocks all 37 symbols and tones",
+   "No ads and no account",
+   "Reusable for younger siblings later",
+   "On-device — nothing to renew or cancel"
+  ],
+  "faq": [
+   {
+    "q": "Is {name} a subscription?",
+    "a": "No — it's a one-time purchase that unlocks the whole app."
+   },
+   {
+    "q": "Will I be charged again later?",
+    "a": "No — you pay once; there's nothing to renew."
+   },
+   {
+    "q": "Do free Bopomofo apps cost more over time?",
+    "a": "They can — ad-supported or subscription apps add up, whereas {name} is a single price."
+   }
+  ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "scenario",
+  "query": "How to take a baby or newborn passport photo at home",
+  "match": [
+   "baby or newborn passport photo at home",
+   "newborn passport photo at home",
+   "baby passport photo",
+   "newborn passport photo"
+  ],
+  "lead": "A newborn can't sit up, look straight, or hold still — which is exactly why baby passport photos get rejected. The trick is to shoot from above while the baby lies on a plain white surface.",
+  "detail": "For a baby passport photo, lay the baby on their back on a smooth white sheet, then stand directly above and shoot down so the face is square to the camera. Rules are more lenient for infants: for under-1s, eyes don't have to be fully open and a slightly open mouth is usually fine — but no hands, no supporting props, and nothing else can be visible in the frame. {name} then crops to the exact size for your country and gives you a print-ready sheet or a digital file. Use even daylight, turn the flash off, and take lots of shots to get one clean frame.",
+  "bullets": [
+   "Lay baby on a plain white sheet; shoot from directly above",
+   "Under-1s: eyes may be closed, mouth slightly open is usually OK",
+   "No hands, props or supports visible in the frame",
+   "Even daylight, no flash (avoids red-eye and shadows)",
+   "{name} crops to the correct size and exports print or digital"
+  ],
+  "faq": [
+   {
+    "q": "Do the baby's eyes have to be open?",
+    "a": "For babies under one year, eyes don't have to be fully open — open is preferred but not required. {name} helps you pick the best of several shots."
+   },
+   {
+    "q": "Can my hand support the baby in the photo?",
+    "a": "No — hands and supports can't be visible. Lay the baby flat on white and shoot from above so nothing else is in frame."
+   },
+   {
+    "q": "How do I get the size right?",
+    "a": "{name} crops your photo to your country's exact passport size and head proportion, then exports a print sheet or digital file."
+   }
+  ]
+ },
+ {
+  "app_key": "snapport",
+  "kind": "faq",
+  "query": "How do I get a digital passport photo for an online application?",
+  "match": [
+   "digital passport photo for an online application",
+   "digital passport photo",
+   "passport photo for an online application"
+  ],
+  "lead": "More passport and visa applications are online now, and they don't want a scan of a print — they want a digital photo at specific pixel dimensions and file size.",
+  "detail": "Online applications usually ask for a square or portrait JPEG at a set pixel size (for example the US online form wants 600x600 to 1200x1200 pixels) with a plain background and correct head proportion. Taking a phone photo and uploading it rarely passes on the first try because the crop and background are off. {name} produces a digital file cropped to your country's exact spec with a clean background, so you get a compliant image to upload — and a print-ready version too if you also need physical copies.",
+  "bullets": [
+   "Online forms want a digital JPEG at set pixel dimensions",
+   "Plain background and correct head size/position required",
+   "A raw phone photo usually fails crop/background checks",
+   "{name} exports a compliant digital file to upload",
+   "Also gives a print sheet if you need physical copies"
+  ],
+  "faq": [
+   {
+    "q": "What size does a digital passport photo need to be?",
+    "a": "It varies by country; many online forms want a square JPEG (e.g. 600x600 to 1200x1200 px for the US). {name} crops to your country's spec."
+   },
+   {
+    "q": "Can I just upload a phone photo?",
+    "a": "Usually not directly — the crop, head size and background need to match. {name} fixes those and exports a compliant file."
+   },
+   {
+    "q": "Can I get both digital and printed?",
+    "a": "Yes — {name} gives a digital file to upload and a print-ready sheet for physical copies."
+   }
+  ]
+ },
+ {
+  "app_key": "hourstag",
+  "kind": "faq",
+  "query": "How many hours a year do my subscriptions actually cost me?",
+  "match": [
+   "hours a year do my subscriptions actually cost me",
+   "subscriptions actually cost me",
+   "hours a year do my subscriptions",
+   "my subscriptions actually cost"
+  ],
+  "lead": "Subscriptions feel small monthly, but added up over a year — and converted into hours you had to work to pay for them — they can be startling.",
+  "detail": "Add up what you pay per year across your subscriptions, then divide by your real hourly wage: that's how many hours a year you work just to keep them running. A stack of $10-15/month services can easily be a full day or two of work annually. {name} makes this visible so you can decide which subscriptions actually earn their hours — and it's a reminder that a one-time purchase you own outright never shows up on next year's total. {name} itself is pay-once, no subscription.",
+  "bullets": [
+   "Yearly subscription cost / real hourly wage = hours worked to pay them",
+   "A few $10-15/month apps can be 1-2 work days a year",
+   "Seeing the hours makes it easy to cut what isn't worth it",
+   "Pay-once apps you own never recur on next year's total",
+   "{name} is pay-once, on-device, no account"
+  ],
+  "faq": [
+   {
+    "q": "How do I turn subscriptions into hours?",
+    "a": "Sum the yearly cost and divide by your real hourly wage; {name} does the conversion for you."
+   },
+   {
+    "q": "Why prefer pay-once over subscriptions?",
+    "a": "A one-time purchase costs hours only once; a subscription keeps costing hours every year you keep it."
+   },
+   {
+    "q": "Does {name} track my accounts?",
+    "a": "No — you enter amounts manually and everything stays on your device."
+   }
+  ]
+ },
+ {
+  "app_key": "photocream",
+  "kind": "scenario",
+  "query": "How to get a disposable camera look on iPhone photos",
+  "match": [
+   "disposable camera look on iphone photos",
+   "disposable camera look",
+   "disposable camera look on iphone"
+  ],
+  "lead": "The disposable-camera look is everywhere in Japanese and Korean youth culture — it's loved for feeling candid and nostalgic rather than perfectly edited.",
+  "detail": "That look is made of a few specific ingredients: a harsh direct flash, visible film grain, occasional light leaks, a warm or slightly green colour cast, soft (not tack-sharp) focus, a gentle vignette, and sometimes a date stamp. {name} bundles exactly these — 100+ real film looks with grain, halation and light leaks — so you can get the disposable/analog feel in one tap instead of stacking manual edits. It's a one-time purchase with no subscription, so unlike the popular disposable-cam apps you're not paying monthly for a filter.",
+  "bullets": [
+   "The look = harsh flash + grain + light leaks + warm/green cast",
+   "Plus soft focus, a vignette and sometimes a date stamp",
+   "{name} has 100+ film looks with grain, halation & leaks",
+   "One tap instead of stacking manual edits",
+   "Pay-once, no subscription (many disposable-cam apps charge monthly)"
+  ],
+  "faq": [
+   {
+    "q": "Why does the disposable camera look feel so popular?",
+    "a": "It reads as candid and nostalgic — the grain, flash and colour shifts feel human and 'unfiltered', which resonates especially in Japanese and Korean youth culture."
+   },
+   {
+    "q": "Do I need a real disposable camera?",
+    "a": "No — {name} recreates the grain, light leaks and colour cast on your normal iPhone photos, so you get the look without buying or developing film."
+   },
+   {
+    "q": "Is it a subscription?",
+    "a": "No, {name} is a one-time purchase; many disposable-cam apps charge monthly."
+   }
+  ]
+ },
+ {
+  "app_key": "photocream",
+  "kind": "faq",
+  "query": "How can I make new photos look like old film photos without a film camera?",
+  "match": [
+   "make new photos look like old film photos without a film camera",
+   "look like old film photos without a film camera",
+   "old film photos without a film camera",
+   "without a film camera"
+  ],
+  "lead": "Real film cameras are expensive to buy, slow, and cost money every roll — but the look itself is something you can add to digital photos.",
+  "detail": "The 'shot on film' feel comes from grain, halation (soft glow around highlights), gentle light leaks, and film-style colour rather than any single filter. {name} applies real film looks with those elements to your existing digital photos in one tap, so a phone shot can pass for something taken on 35mm — no camera, no developing, no waiting. It's pay-once with no subscription, so you're not paying every month for the aesthetic.",
+  "bullets": [
+   "The film look = grain + halation + light leaks + film colour",
+   "{name} applies it to digital photos in one tap",
+   "No film camera, developing costs or waiting",
+   "100+ looks to match different film stocks and moods",
+   "One-time purchase, no subscription"
+  ],
+  "faq": [
+   {
+    "q": "Can a phone photo really look like film?",
+    "a": "Yes — the film feel is mostly grain, halation and colour, which {name} adds to digital photos convincingly."
+   },
+   {
+    "q": "Is this cheaper than shooting film?",
+    "a": "Much — no camera, film rolls or developing. {name} is a single purchase and reusable on every photo."
+   },
+   {
+    "q": "Do I have to subscribe?",
+    "a": "No, {name} is pay-once and works offline on your device."
+   }
+  ]
+ }
+]
+'''.replace("{GUIDE}", PUBLIC_SITE))
+
+# Extra deep items from deep_items/*.json (one file per app/worker) so parallel
+# workers can each add content without editing this shared file (no git conflicts).
+import os as _os
+import glob as _glob
+_DEEP_DIR = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "deep_items")
+for _f in sorted(_glob.glob(_os.path.join(_DEEP_DIR, "*.json"))):
+    try:
+        _extra = json.load(open(_f, encoding="utf-8"))
+        if isinstance(_extra, list):
+            DEEP_ITEMS.extend(_extra)
+    except Exception as _e:  # noqa: BLE001
+        print(f"\u26a0\ufe0f deep_items load {_f}: {_e}")
+
+
+def concise_meta(text: str, limit: int = 150) -> str:
+    """Keep a complete short lead; trim only when it actually exceeds the limit."""
+    compact = " ".join(text.split())
+    if len(compact) <= limit:
+        return compact
+    shortened = compact[: limit + 1].rsplit(" ", 1)[0].rstrip(" ,;:-")
+    return shortened if shortened.endswith((".", "!", "?")) else shortened + "."
+
+
+def deep_facts(q: str, key: str, name: str) -> dict[str, Any] | None:
+    """Match a deep-content item for `key`; return a content overlay or None."""
+    ql = q.lower()
+    for it in DEEP_ITEMS:
+        if it["app_key"] != key:
+            continue
+        if it["query"].lower() == ql or any(m in ql for m in it["match"]):
+            def sub(s: str) -> str:
+                return s.replace("{name}", name)
+            detail = sub(it["detail"])
+            lead = sub(it["lead"])
+            overlay = {
+                "meta_description": concise_meta(
+                    sub(it.get("meta_description", it["lead"]))
+                ),
+                "lead": lead,
+                "short_answer_paragraphs": [
+                    detail,
+                    sub(it.get(
+                        "follow_up",
+                        f"Try {name} on a real example first, and check the current App Store "
+                        f"listing for exact features and pricing before you decide.",
+                    )),
+                ],
+                "what_to_look_for": [sub(b) for b in it["bullets"]],
+                "where_app_fits": sub(it.get(
+                    "where_app_fits",
+                    f"{name} is built for exactly this — use the checklist above and test it on a real example.",
+                )),
+                "faq": [{"q": sub(f["q"]), "a": sub(f["a"])} for f in it["faq"]],
+            }
+            if "decision_steps" in it:
+                overlay["decision_steps"] = [sub(step) for step in it["decision_steps"]]
+            if "comparison_rows" in it:
+                overlay["comparison_rows"] = [
+                    {field: sub(row[field]) for field in ("need", "check", "why")}
+                    for row in it["comparison_rows"]
+                ]
+            if "sources" in it:
+                overlay["sources"] = [
+                    {"title": sub(source["title"]), "url": source["url"]}
+                    for source in it["sources"]
+                ]
+            for field in (
+                "page_title",
+                "primary_resource_url",
+                "primary_resource_label",
+                "date_modified",
+            ):
+                if field in it:
+                    overlay[field] = sub(it[field])
+            return overlay
+    return None
+
+
+ALL_DEEP_QUERIES: dict[str, list[str]] = {}
+for _it in DEEP_ITEMS:
+    ALL_DEEP_QUERIES.setdefault(_it["app_key"], []).append(_it["query"])
+
+if __name__ == "__main__":
+    print(f"{len(DEEP_ITEMS)} deep items")
+    for _it in DEEP_ITEMS:
+        print(f"  {_it['app_key']:14} {_it['kind']:9} {_it['query']}")

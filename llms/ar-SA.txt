@@ -1,0 +1,245 @@
+# دليل التطبيقات — iOS App Guide
+
+> معلومات منظمة عن كل تطبيق iOS — الميزات والسعر والأسئلة الشائعة.
+
+locale: ar-SA
+apps: 54
+- دليل التطبيقات: https://open.cait518.cc/ios-app-guide/ar-SA/tools/private-pay-once-iphone-app-finder.html
+- دليل التطبيقات · PWA: https://open.cait518.cc/ios-app-guide/ar-SA/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ar-SA.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ar-SA.json
+- دليل التطبيقات · SVG: https://open.cait518.cc/ios-app-guide/ar-SA/visuals/
+- دليل التطبيقات · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- دليل التطبيقات · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- دليل التطبيقات · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- دليل التطبيقات · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- دليل التطبيقات · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- دليل التطبيقات · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- دليل التطبيقات · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- دليل التطبيقات · Agent Skill · ar-SA: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/ar-SA.json
+- دليل التطبيقات · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- دليل التطبيقات · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- دليل التطبيقات · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- دليل التطبيقات · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- دليل التطبيقات · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- دليل التطبيقات · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- دليل التطبيقات · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- دليل التطبيقات · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- دليل التطبيقات · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/ar-SA/notesstudio100.html) — دفتر ملاحظات بخط اليد وPDF
+  - اكتب بخط يدك أو بلوحة المفاتيح، وعلّق على ملفات PDF، وسجّل المحاضرة في الصفحة نفسها دون إنترنت. راجع ببطاقات الحفظ. بلا حساب، وتبقى ملاحظاتك على جهازك.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: برومبت من ملفاتك](https://open.cait518.cc/ios-app-guide/ar-SA/aibriefpack.html) — حوّل ملفات PDF إلى برومبت
+  - تقارير نهاية السنة وخطط إجازة الشتاء تتراكم؟ أضف لقطات الشاشة وملفات PDF والملاحظات والروابط، فتُقرأ على جهازك وتُميَّز البيانات الشخصية في ملخص واحد واضح.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: مدرب الإنجليزية](https://open.cait518.cc/ios-app-guide/ar-SA/aim990.html) — تشخيص TOEIC وخطة 30 يومًا
+  - توقّف عن مراجعة ما تتقنه. تشخيص من 8 دقائق يحدد أضعف 3 مهارات لديك، ويبني خطة 30 يومًا، ثم يعيد القياس في اليوم 30. بدون إنترنت، بلا إعلانات ولا حساب.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: نتيجة صحة البطارية](https://open.cait518.cc/ios-app-guide/ar-SA/battai.html) — قواعد ومصادر وحدود واضحة
+  - افهم بطاريتك عبر الوقت قواعد ومصادر وحدود واضحة افتح سجلًا أعمق وتخطيطًا وتقارير. دفعة واحدة. بلا اشتراك.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily حاسبة وسمات](https://open.cait518.cc/ios-app-guide/ar-SA/caldaily.html) — ويدجت وأدوات وسجل مرتب
+  - احسب مباشرة على الشاشة الرئيسية: الأداة آلة حاسبة كاملة. البقشيش والخصم والقرض و5 أدوات أخرى مدمجة. بلا إعلانات.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/ar-SA/countdaysnow.html) — تركيز اليوم
+  - تركيز اليوم: منذ · اليوم · القادم — حفظ. بدون إعلانات، بدون حساب.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: سيرة ذاتية ATS](https://open.cait518.cc/ios-app-guide/ar-SA/cvdesk.html) — صانع السيرة الذاتية وفحص ATS
+  - احصل فورًا على تقييم ATS وإصلاحات واضحة ومعاينة لما يراه مسؤول التوظيف في 6 ثوانٍ. عاين ملف PDF النهائي في أي وقت. بلا حاجة إلى حساب.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: متتبّع الدورة](https://open.cait518.cc/ios-app-guide/ar-SA/cyca.html) — الدورة الشهرية والتبويض
+  - إجازة الشتاء ونهاية السنة مليئة بالسفر والمناسبات؟ سجّلي دورتك والتدفق والأعراض والمزاج والملاحظات في ثوانٍ. كل شيء يبقى على جهازك: بلا حساب ولا سحابة، ويعمل دون إنترنت.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: تكلّم الآن](https://open.cait518.cc/ios-app-guide/ar-SA/dailymatelite.html) — دليل محادثة للسفر بـ50 لغة
+  - افهم ما يقوله الناس في المطار والفندق والمطعم وتعلّم الرد الطبيعي. أساسيات السفر متاحة بكل اللغات الخمسين، حتى دون إنترنت.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: جمل يومية](https://open.cait518.cc/ios-app-guide/ar-SA/dailymate.html) — تعلم الإنجليزية بجمل حقيقية
+  - تعلّم ما يقوله الناس فعلًا: 8400 جملة يومية مع ردود طبيعية بـ47 لغة في 84 موقفًا واقعيًا. الأداة وApple Watch مشمولان. يعمل دون إنترنت.
+  - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
+  - App Store: https://apps.apple.com/sa/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: مقياس الديسيبل](https://open.cait518.cc/ios-app-guide/ar-SA/dbhalo.html) — الطيف وجرعة الضوضاء والنوم
+  - حفلات نهاية العام أو جيران مزعجون أو شخير في ليالي الشتاء؟ شاهد الديسيبل مباشرةً على حلقة Halo، وقدّر جرعة الضوضاء اليومية، وسجّل الشخير في يوميات النوم.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: منبه ذكي لأيام الدوام](https://open.cait518.cc/ios-app-guide/ar-SA/easyam.html) — يتخطى الاجازات الرسمية تلقائيا
+  - تخطط لرحلة شتوية أو إجازة نهاية العام؟ أضف أيامها كإجازة فيبقى المنبه صامتاً، ثم يعود ليرنّ في أول يوم عمل. وترى الأيام السبعة القادمة بنظرة واحدة.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: مصاريف السفر](https://open.cait518.cc/ios-app-guide/ar-SA/gmoneylite.html) — ميزانية يومية بالساعة والودجت
+  - إجازة الشتاء ورحلة نهاية السنة؟ سجّل مشترياتك بالعملة المحلية وشاهدها فورًا بعملتك، وحدّد حدًا يوميًا، وأسعار الصرف المباشرة أو اليدوية تعمل حتى دون إنترنت.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: مصاريف وميزانية](https://open.cait518.cc/ios-app-guide/ar-SA/gmoney.html) — مصاريف السفر وتحويل العملات
+  - إجازة الشتاء ونهاية السنة على الأبواب؟ سجّل مصروفاتك حسب الفئة أو الرحلة، وضع حدًا يوميًا وتابع الباقي، وحوّل العملات بأسعار مباشرة أو يدوية حتى دون اتصال.
+  - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
+  - App Store: https://apps.apple.com/sa/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: السعر بالساعات](https://open.cait518.cc/ios-app-guide/ar-SA/hourstaglite.html) — شراء واعٍ: السعر الحقيقي
+  - موسم تسوق نهاية العام والهدايا: قبل أن تشتري، شاهد السعر بساعات عملك، وصنّفه: احتياج أو رغبة أو اندفاع، واعرف كم ساعة عمل يحتاجها هدفك للعام الجديد.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: ساعات للشراء](https://open.cait518.cc/ios-app-guide/ar-SA/hourstag.html) — الأجر بالساعة والمصروفات
+  - هدايا آخر السنة وتسوّق الشتاء؟ قبل أن تشتري، شاهد كل سعر بساعات عملك، وصنّفه حاجة أو رغبة أو اندفاع، وخطّط لقائمة أمنياتك بساعات العمل.
+  - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
+  - App Store: https://apps.apple.com/sa/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/ar-SA/ledmovingtext.html) — شاشتك تتحول إلى لافتة مضيئة
+  - حوّل شاشتك إلى لافتة مضيئة متحركة في ثوانٍ، أو أنشئ تسلسل الرسائل: رتّب رسائلك وانتقل بينها بلمسة أو بمؤقت. ملء الشاشة، بلا إنترنت، وبخصوصية تامة.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: حظر التطبيقات](https://open.cait518.cc/ios-app-guide/ar-SA/lockhour.html) — حظر التطبيقات ووقت الشاشة
+  - تفتح الهاتف لدقيقة فتضيع ساعة؟ ابدأ جلسات تركيز بلا تشتيت، واعمل بإيقاع قريب من بومودورو، وقلّل فحص الهاتف ووقت الشاشة. مناسب للدراسة والكتابة والعمل العميق.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/ar-SA/lumibopomofopro.html) — نغمات الصينية وأوراق تدريب
+  - كل أصوات تشويين الـ37 متاحة: أفعوانية النغمات وقطار المقاطع والصيد وتتبع الحروف وسباق النجوم. يرى الوالدان التقدم وقائمة المراجعة ويطبعون أوراق التدريب. بلا إعلانات.
+  - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
+  - App Store: https://apps.apple.com/sa/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Pro: ABC Phonics](https://open.cait518.cc/ios-app-guide/ar-SA/lumiletterspro.html) — إنجليزي للأطفال: فونكس الحروف
+  - يسمع طفلك الكلمة ويجد الصوت الأول أو الأوسط أو الأخير ثم يتتبع الحرف. 26 حرفًا و14 كوكبًا وأوراق عمل للطباعة. بلا إعلانات ويعمل دون إنترنت.
+  - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
+  - App Store: https://apps.apple.com/sa/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Planet: Explorer](https://open.cait518.cc/ios-app-guide/ar-SA/lumimath.html) — ألعاب رياضيات للأطفال والروضة
+  - أجب صحيحًا فيضيء كوكب. 46 نوعًا من الأسئلة المصورة: العد والجمع والطرح وجدول الضرب والساعة والنقود. أوراق عمل قابلة للطباعة. بلا إعلانات وبلا اشتراك.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Pro: أرقام الأطفال](https://open.cait518.cc/ios-app-guide/ar-SA/lumimathpro.html) — ألغاز منطقية ومسائل كلامية
+  - ألغاز منطق وأنماط ومسائل كلامية في 46 نوعًا من الأسئلة. تدريب على نقاط الضعف وتقرير تقدّم وأوراق عمل للطباعة. بلا إعلانات وبلا مشتريات داخل التطبيق.
+  - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
+  - App Store: https://apps.apple.com/sa/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi الطقس: توقعات اليوم](https://open.cait518.cc/ios-app-guide/ar-SA/lumiweather.html) — مؤشر الخروج وماذا ترتدي
+  - هل الوقت مناسب للخروج؟ يحوّل Lumi توقعات الطقس إلى مؤشر خروج من 0 إلى 100 مع نصيحة واضحة: ماذا تلبس، ومتى تحمل المظلة أو واقي الشمس. توقعات بالساعة ولسبعة أيام.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Lumi بوبوموفو](https://open.cait518.cc/ios-app-guide/ar-SA/lumibopomofo.html) — تشويين: الصينية للأطفال
+  - أطعِم أصدقاء الرموز حسب الصوت، وتتبّع كل خط بالترتيب، واركب قطار النغمات الأفعواني، وركّب الأصوات في القطار. يعمل دون إنترنت.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi حروف Lite](https://open.cait518.cc/ios-app-guide/ar-SA/lumiletters.html) — تعلم كتابة الحروف الإنجليزية
+  - جرّب الحرف A والكوكب الأول: يسمع طفلك صوت الحرف، ويتتبعه بإصبعه، ويلعب اختبارات الكواكب. ويمكنك لاحقًا فتح الحروف الـ26 كلها والكواكب الـ14. بلا إعلانات ويعمل دون إنترنت.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi كوكب المهام](https://open.cait518.cc/ios-app-guide/ar-SA/lumimission.html) — جدول المكافآت والملصقات للطفل
+  - تذمّر أقل وإنجاز أكثر: كل مهمة ينجزها طفلك تمنحه نجومًا وتطعم Lumi وتملأ ألبوم 100 ملصق. أضف مهامك الخاصة. بلا إعلانات وبلا تسجيل.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi كوكب المهام Pro](https://open.cait518.cc/ios-app-guide/ar-SA/lumimissionpro.html) — روتين الصباح والنوم للأطفال
+  - كل الروتينات متاحة: الطعام وتنظيف الأسنان والنوم وترتيب الألعاب والاستعداد للمدرسة، مع مهامك الخاصة وملخص 7 أيام وتذكير مسائي. بلا إعلانات ويعمل دون إنترنت.
+  - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
+  - App Store: https://apps.apple.com/sa/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: إزالة معلوماتك](https://open.cait518.cc/ios-app-guide/ar-SA/maskmyfile.html) — طمس الصور والملفات قبل الإرسال
+  - سترسل صورة الجواز لحجز رحلة الشتاء أو كشف الراتب لمعاملة نهاية العام؟ اكتشف البيانات الخاصة، وأخفِ نهائيًا ما تختاره فقط، واحذف البيانات الوصفية. كل شيء على جهازك.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: آخر مرة](https://open.cait518.cc/ios-app-guide/ar-SA/mochidonestamp.html) — متى فعلتها؟ تذكيرات المنزل
+  - لا تتساءل بعد اليوم متى فعلتها آخر مرة. اختمها كمنجزة، وسيتذكرها Mochi وينبهك حين يحين موعدها. الملاءات والفلاتر والنباتات والمكالمات، ومشاركة مع العائلة.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: قائمة مهام لطيفة](https://open.cait518.cc/ios-app-guide/ar-SA/mochi.html) — تذكيرات متكررة وودجت للشاشة
+  - في موسم الاختبارات، نظّمي دراستك وتسوقك وروتينك في قائمة مهام لطيفة. اضغطي على الدائرة الصغيرة عند الانتهاء، وأضيفي ودجت لطيفًا على الشاشة.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag: الدخل والمصروفات](https://open.cait518.cc/ios-app-guide/ar-SA/moneytag.html) — المشاريع · الوسوم · التقرير
+  - عمل جانبي أو بسطة في موسم الشتاء ونهاية العام؟ يعرض مشروعك الدخل ناقص المصروفات كصافي نتيجة واضح، بالعملة التي تختارها. أضف القيود من Apple Watch وتابع الصافي في الودجت.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: عرض تقديمي](https://open.cait518.cc/ios-app-guide/ar-SA/onepageppt.html) — من الملاحظات إلى شريحة واحدة
+  - تقرير نهاية العام؟ الصق ملاحظاتك أو ملف PDF أو جدولًا، واحصل على شريحة واحدة واضحة بنسبة 16:9: النقاط الأساسية عناوين والأرقام مخططات. صدّر pptx أو PDF أو PNG.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: فلاتر ريترو](https://open.cait518.cc/ios-app-guide/ar-SA/photocream.html) — كاميرا فيلم قديمة، محرر الصور
+  - صور سهرات الشتاء وتجمعات نهاية العام تحت إضاءة صفراء؟ اضبط الإضاءة والألوان والمنحنيات، وجمّل البشرة دون فقدان التفاصيل، وأضف حبيبات الفيلم لألبوم العام.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: تنظيف الصور](https://open.cait518.cc/ios-app-guide/ar-SA/picclear.html) — حذف الصور المكررة وتوفير مساحة
+  - امتلأت الذاكرة؟ استعد غيغابايتات: اعثر على الصور المكررة والمتشابهة ولقطات الشاشة القديمة والفيديوهات الضخمة، وراجعها قبل الحذف. يتم الفحص على جهازك.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: مسح وإنشاء](https://open.cait518.cc/ios-app-guide/ar-SA/qrcodehalo.html) — افتح فورًا وافحص لاحقًا
+  - امسح وانتهى الأمر: تُفتح الروابط، ويعرض Wi-Fi طلب iOS، وتجهز المكالمات والبريد. ولكل مسح محفوظ فحص أمان في السجل على جهازك.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: حفظ الروابط الذكي](https://open.cait518.cc/ios-app-guide/ar-SA/savetag.html) — قائمة قراءة لاحقة ومفضلة
+  - أفكار هدايا آخر السنة ووصفات العزائم وأماكن رحلة الشتاء ضائعة في المحادثات؟ شارك الرابط من أي تطبيق، فيُصنَّف تلقائيًا على جهازك، وابحث عنه لاحقًا بالمعنى لا بالكلمات.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: PDF وOCR](https://open.cait518.cc/ios-app-guide/ar-SA/scanto.html) — ماسح مستندات بلا إنترنت
+  - تبحث عن إيصال أو عقد الآن؟ يقرأ ScanTo النص في كل مستند على جهازك، فتجده بالبحث بكلمة واحدة. لا رفع إلى السحابة، لا حساب، ويعمل دون إنترنت.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: أصوات النوم](https://open.cait518.cc/ios-app-guide/ar-SA/sereno.html) — ضوضاء بيضاء، مطر، بحر
+  - المطر والمحيط والنار وغيرها: أكثر من 140 صوتًا مهدئًا للنوم والتركيز. امزجها كما تحب، مؤقت يخفت تدريجيًا، واستيقظ على زقزقة العصافير. بدون إنترنت، بلا حساب.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/ar-SA/shotinbox.html) — تنظيم لقطات الشاشة وبحث OCR
+  - آلاف لقطات الشاشة ولا تجد اللقطة التي تريدها؟ يرتّبها ShotInbox في إيصالات وتذاكر وسفر ومحادثات، ويبحث في النص داخلها، ويساعدك على حذف ما لا تحتاجه. كل شيء على جهازك.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: التقط صور هوية](https://open.cait518.cc/ios-app-guide/ar-SA/snapportlite.html) — بورتريه بالمقاس الدقيق
+  - سفر إجازة الشتاء أو تجديد الجواز قبل نهاية السنة؟ قصّ صورتك بالمقاس المطلوب من قوالب جاهزة، مع أدلة لمحاذاة الوجه وخلفية بيضاء أو زرقاء، وكل ذلك على جهازك.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: صور جواز وهوية](https://open.cait518.cc/ios-app-guide/ar-SA/snapport.html) — 35x45 وورقة للطباعة
+  - سفر إجازة الشتاء أو تجديد الجواز؟ جهّز صورة الجواز أو التأشيرة في البيت: قوالب مقاسات شائعة، وأدلة لمحاذاة الوجه، وخلفية بيضاء، وصفحات جاهزة للطباعة. بلا حساب.
+  - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
+  - App Store: https://apps.apple.com/sa/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/ar-SA/sononote.html) — تحويل الصوت إلى نص · ملاحظات
+  - تحدّث وسيحوّل Sono Note كلامك إلى نص مرتب وملخص ونقاط رئيسية ومهام، وحتى مسودة بريد متابعة. مثالي للاجتماعات والمحاضرات والمكالمات. بلا حاجة إلى حساب.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: ساعة مكتب رقمية](https://open.cait518.cc/ios-app-guide/ar-SA/stayclock.html) — الوقت والتقويم بلا انقطاع
+  - ليالي الشتاء أطول حتى نهاية العام: اجعل هاتفك ساعة كبيرة واضحة بجانب السرير أثناء الشحن، مع تقويم الشهر وجرس كل ساعة ومنبه بسيط. بلا حساب وبلا إعلانات.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: مؤقت التركيز](https://open.cait518.cc/ios-app-guide/ar-SA/studydown.html) — ضعه وشاشته إلى الأسفل
+  - اختبارات نهاية الفصل ومشاريع آخر السنة؟ اختر نشاطًا وضع الهاتف على وجهه فيبدأ العدّ، وإذا رفعته يتوقف مؤقتًا. شاهد وقت اليوم والأسبوع موزعًا حسب النشاط.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet سفر أطفال](https://open.cait518.cc/ios-app-guide/ar-SA/tripplanet.html) — مهام الطائرة والسيارة للعائلة
+  - حوّل الرحلات الجوية والمشاوير الطويلة والأماكن الجديدة إلى مهام: ربط الحزام، شكر الطاقم، تذوّق لقمة. كل مهمة تفتح مكافأة، وكل رحلة مكتملة تمنح ختمًا في الجواز.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: مخطط رحلة](https://open.cait518.cc/ios-app-guide/ar-SA/tripbeelite.html) — برنامج العطلة يومًا بيوم
+  - سفر إجازة الشتاء أو رأس السنة؟ ضع رحلتك في خط زمني يومًا بيوم، مع تفاصيل الطيران والفندق والملاحظات والتذكيرات ومعلومات التذاكر في مكان واحد. بلا حساب وبلا إعلانات.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: مخطط الرحلات](https://open.cait518.cc/ios-app-guide/ar-SA/tripbee.html) — خطة سفر مشتركة وقائمة أمتعة
+  - عدّلوا الرحلة نفسها مع العائلة أو الأصدقاء، وأضيفوا خطة بديلة للأيام الممطرة، واستلموا التذكيرات بالتوقيت المحلي. قائمة الأمتعة تناسب كل مسافر، بما فيهم الأطفال.
+  - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
+  - App Store: https://apps.apple.com/sa/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: وضوح HD](https://open.cait518.cc/ios-app-guide/ar-SA/unblurry.html) — ترميم الصور القديمة
+  - من موسم الرياض إلى سهرات الشتاء: صور العائلة مهتزة أو معتمة؟ زد الحدة، وقلّل التشويش، وحسّن لقطات الإضاءة المنخفضة، والمعالجة محليًا على جهازك بلا رفع إلى السحابة.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: متتبع استخدام الذكاء](https://open.cait518.cc/ios-app-guide/ar-SA/claudeusagemini.html) — حدود Claude وCodex وCopilot
+  - تنبيهات مخصصة عند أي نسبة، وترتيب حسب إعادة تعيين الخمس ساعات أو الأسبوع، وأدوات تتنقل بين كل الحسابات. اعرف المتبقي من كل خطة ذكاء اصطناعي.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/ar-SA/wifiaidlite.html) — لا يوجد إنترنت؟ اعرف السبب
+  - الإنترنت بطيء أو مقطوع؟ قبل أن تتصل بالدعم، افحص الواي فاي وDNS والإنترنت بلمسة واحدة واعرف السبب الأرجح. بلا حساب ولا إعلانات ولا تتبّع.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: تشخيص مشاكل الشبكة](https://open.cait518.cc/ios-app-guide/ar-SA/wifiaid.html) — تشخيص الراوتر وMesh وDNS
+  - في موسم الشتاء وتجمعات العائلة، الكل على الواي فاي نفسه؟ إذا ثقل الاتصال، افحص Wi-Fi وDNS والإنترنت بنقرة واعرف السبب الأرجح، أو افحص موقعًا واحدًا فقط.
+  - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
+  - App Store: https://apps.apple.com/sa/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite: تعلّم المفردات](https://open.cait518.cc/ios-app-guide/ar-SA/wordmatelite.html) — خمس كلمات في دقيقة كل يوم
+  - بدأت تعلّم لغة أكثر من مرة ثم توقفت؟ جرّب خمس كلمات يوميًا. دقيقة واحدة، تسمع نطق كل كلمة وترى ما تعلّمته في النهاية. 44 لغة ويعمل دون إنترنت.
+  - السعر: تنزيل مجاني، وعملية شراء واحدة لفتح كل المزايا. بلا اشتراكات.
+  - App Store: https://apps.apple.com/sa/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: تعلّم 44 لغة](https://open.cait518.cc/ios-app-guide/ar-SA/wordmate.html) — حفظ المفردات: أداة وساعة
+  - تحفظ الكلمات ثم تنساها؟ يقسّم Wordmate مفردات 44 لغة إلى 14 موضوعًا عمليًا و84 وحدة، مع جملة مثال ونطق لكل كلمة إنجليزية. ذاكر من الأداة أو Apple Watch.
+  - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
+  - App Store: https://apps.apple.com/sa/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: فك ضغط RAR وZIP و7z](https://open.cait518.cc/ios-app-guide/ar-SA/zipbox.html) — استخراج ومعاينة بلا إعلانات
+  - صور الإجازة وصلتك في ملف 7z بكلمة سر، أو أرشيف عمل قبل نهاية العام؟ تصفّح المحتوى، وعاين الصور وملفات PDF، واستخرج الملف الذي تحتاجه فقط، كل ذلك على جهازك. بلا إعلانات.
+  - السعر: تنزيل مدفوع بسعر واحد مقدمًا ومن دون اشتراك.
+  - App Store: https://apps.apple.com/sa/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

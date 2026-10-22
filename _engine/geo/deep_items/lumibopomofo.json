@@ -1,0 +1,1807 @@
+[
+  {
+    "app_key": "lumibopomofo",
+    "kind": "scenario",
+    "match": [
+      "zhuyin or pinyin",
+      "bopomofo or pinyin",
+      "pinyin or zhuyin",
+      "zhuyin vs pinyin for",
+      "should i teach my child zhuyin",
+      "teach my child zhuyin or pinyin"
+    ],
+    "query": "should i teach my child zhuyin or pinyin first for chinese",
+    "lead": "Every overseas Chinese parent hits this fork: start your child on Zhuyin (Bopomofo) or Pinyin? Both are just training wheels for pronunciation, but they pull in different directions.",
+    "detail": "Zhuyin uses 37 symbols that look nothing like English or Chinese characters, so a child never confuses the pronunciation aid with the real word and never reads a sound through English habits. Pinyin uses the Latin alphabet, so it is faster to pick up for a child who already reads English and is the standard for typing and for materials outside Taiwan. There is no single right answer: choose Zhuyin if you want the most accurate pronunciation and use Taiwanese books, or Pinyin if your child's class and resources already use it. {name} covers the Zhuyin path — it teaches all 37 symbols through play, pay once, no ads, no subscription, with a parent gate.",
+    "bullets": [
+      "Teaches all 37 Zhuyin symbols and the tones, not just a handful",
+      "Keeps the sound separate from English letters, so pronunciation habits stay clean",
+      "Playful and age-appropriate for a 4–7 first-learning window, with a parent gate",
+      "No ads, no tracking, works offline — safe to hand to a young child",
+      "One-time purchase, so a family learning tool is not a monthly bill"
+    ],
+    "faq": [
+      {
+        "q": "Is Zhuyin or Pinyin better for a child?",
+        "a": "Neither is universally better. Zhuyin keeps pronunciation separate from English letters and is very precise; Pinyin is easier for a child who reads English and is the global standard for typing and resources. Pick the one that matches your child's materials and goals. {name} supports the Zhuyin route."
+      },
+      {
+        "q": "Will Zhuyin confuse my child who reads English?",
+        "a": "Usually the opposite — because Zhuyin symbols look nothing like English, children don't read a Chinese sound with English habits (like saying 'shi' as 'shy'). {name} introduces the symbols slowly through play."
+      },
+      {
+        "q": "Does {name} need a subscription?",
+        "a": "No. {name} is a one-time purchase, has no ads, collects no data, and works offline, with a parent gate before any purchase."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "oai_ore_resource_map",
+    "match": [
+      "repository harvest an oai-ore resource map",
+      "bopomofo oai-ore resource map",
+      "zhuyin compound digital object",
+      "oai-ore bopomofo data"
+    ],
+    "query": "Where can a repository harvest an OAI-ORE Resource Map for Bopomofo data?",
+    "page_title": "Harvest an OAI-ORE Resource Map for Bopomofo Data",
+    "meta_description": "Download RDF/XML, Turtle and JSON-LD OAI-ORE Resource Maps for sixteen verified resources covering all 37 Bopomofo symbols.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/",
+    "primary_resource_label": "Open the Bopomofo OAI-ORE Resource Map guide",
+    "lead": "Use the app-independent OAI-ORE aggregation to expose sixteen Bopomofo data, vocabulary, schema, API and event-stream resources as one finite compound digital object.",
+    "detail": "The package publishes three Resource Maps with distinct protocol-based URI-R identifiers: an authoritative RDF/XML map, a Turtle map and a JSON-LD map. Each describes the same URI-A and the same sixteen-member Aggregation Graph. The URI-A appends #aggregation to the RDF/XML URI, following OAI-ORE's no-server hash-URI implementation: a client dereferencing the Aggregation removes the fragment and retrieves its Resource Map without requiring 303 redirects or content negotiation. Every map has exactly one ore:describes statement, identifies the publishing Agent and modification timestamp, exposes all three maps through ore:isDescribedBy, and enumerates the same ore:aggregates boundary. Members cover canonical JSON, CSV, JSON Lines, Croissant, CSVW, SKOS JSON-LD/Turtle/N-Triples, SHACL, Frictionless Data Package and Table Schema files, the static API index and OpenAPI description, plus the LDES JSON-LD entry point and Turtle discovery overview. Each resource records its media type, byte size, inverse ore:isAggregatedBy relation and named SPDX SHA-256 checksum. All serializations are parsed independently as RDF, checked for connectedness and ORE structural constraints, and compared against the exact published source bytes. The six-member deterministic ZIP contains the three maps, bilingual README, CC BY 4.0 notice and checksum list. JSON-LD is provided as an additional RDF serialization; the resource does not claim it was an original 2008 OAI-ORE serialization profile. It also does not claim OAI endorsement, external repository ingest, DOI assignment, third-party certification, content negotiation or Atom conformance.",
+    "follow_up": "Open the bilingual guide, resolve the RDF/XML Resource Map or download the deterministic ZIP, verify checksums-sha256.txt, then parse the maps as RDF. Confirm that each URI-R describes the published hash URI, all three maps expose the same sixteen ore:aggregates objects, and every byte size and SHA-256 matches the fetched resource before repository staging.",
+    "bullets": [
+      "One hash-URI Aggregation representing sixteen exact Bopomofo resources",
+      "Distinct RDF/XML, Turtle and JSON-LD Resource Map URIs with the same Aggregation Graph",
+      "Required creator and modified metadata plus ore:describes, ore:isDescribedBy and ore:aggregates links",
+      "Media type, byte size, inverse membership and SPDX SHA-256 for every resource",
+      "Deterministic six-member ZIP with bilingual validation guide and checksums"
+    ],
+    "decision_steps": [
+      "Open the package guide and record the RDF/XML Resource Map and #aggregation URIs.",
+      "Download the Resource Maps or bundle and verify checksums-sha256.txt.",
+      "Parse each file with an RDF/XML, Turtle or JSON-LD-aware RDF library.",
+      "Confirm one ore:describes target and the same sixteen ore:aggregates members in every map.",
+      "Fetch each member and compare its media type, byte size and SHA-256 before ingest."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Compound-object boundary",
+        "check": "Exactly sixteen protocol-based ore:aggregates resource URIs",
+        "why": "A repository can identify the complete logical object instead of guessing from hyperlinks"
+      },
+      {
+        "need": "Static authoritative discovery",
+        "check": "RDF/XML URI plus #aggregation follows the OAI-ORE hash-URI pattern",
+        "why": "Dereferencing works on static hosting without server-side 303 redirects"
+      },
+      {
+        "need": "Byte-level transfer checks",
+        "check": "dcat:byteSize and named SPDX SHA-256 nodes match every fetched member",
+        "why": "A harvester can reject stale, incomplete or altered compound-object parts"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to discover, parse, validate, harvest or reuse any OAI-ORE member. If currently available, it appears only after the complete open aggregation as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo OAI-ORE 1.0 Resource Map",
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-oai-ore/"
+      },
+      {
+        "title": "OAI-ORE 1.0 Abstract Data Model",
+        "url": "https://www.openarchives.org/ore/1.0/datamodel"
+      },
+      {
+        "title": "OAI-ORE 1.0 Vocabulary",
+        "url": "https://www.openarchives.org/ore/1.0/vocabulary"
+      },
+      {
+        "title": "OAI-ORE HTTP hash-URI implementation",
+        "url": "https://www.openarchives.org/ore/1.0/http"
+      },
+      {
+        "title": "OAI-ORE RDF/XML Resource Map profile",
+        "url": "https://www.openarchives.org/ore/1.0/rdfxml"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Why does the Aggregation URI end in #aggregation?",
+        "a": "OAI-ORE documents a hash-URI pattern for static hosts without 303 redirect support. A client removes the fragment when dereferencing, retrieves the RDF/XML Resource Map, then distinguishes the conceptual Aggregation from the Resource Map URI."
+      },
+      {
+        "q": "Do the three Resource Maps have the same URI?",
+        "a": "No. OAI-ORE requires each Resource Map to have a distinct URI. Each map describes the same Aggregation and exposes the same sixteen-member Aggregation Graph while retaining serialization-specific Resource Map metadata."
+      },
+      {
+        "q": "Is JSON-LD an original OAI-ORE 1.0 serialization profile?",
+        "a": "No. OAI-ORE defines a Resource Map as an RDF Graph and states that any RDF syntax may serialize it, but its 2008 implementation documents directly profile formats such as RDF/XML and Atom. JSON-LD is supplied here as an additional modern RDF serialization without claiming an original OAI profile."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "ro_crate_research_object",
+    "match": [
+      "download a ro-crate 1.3 research object",
+      "bopomofo ro-crate",
+      "zhuyin research object",
+      "ro-crate 1.3 bopomofo symbols"
+    ],
+    "query": "Where can I download a RO-Crate 1.3 research object for all 37 Bopomofo symbols?",
+    "page_title": "Download a RO-Crate 1.3 Research Object for All 37 Bopomofo Symbols",
+    "meta_description": "Download an attached RO-Crate 1.3 package for all 37 Bopomofo symbols with CSV, JSON Lines, Croissant, CSVW, SKOS and SHA-256.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/",
+    "primary_resource_label": "Open the Bopomofo RO-Crate 1.3 guide",
+    "lead": "Use the attached, app-independent RO-Crate to transfer the complete 37-symbol Bopomofo reference table and its standards metadata as one reproducible research object.",
+    "detail": "The deterministic ZIP contains ten members at its crate root: ro-crate-metadata.json, a script-free ro-crate-preview.html, bilingual README and CC BY 4.0 attribution files, five data entities and checksums-sha256.txt. The payload covers the canonical 37-row UTF-8 CSV, equivalent JSON Lines, MLCommons Croissant 1.1 metadata, W3C CSVW metadata and the SKOS JSON-LD vocabulary. The metadata descriptor uses the required ro-crate-metadata.json identifier, points to one absolute root Dataset and declares conformance to RO-Crate 1.3. Every root hasPart File has a relative URI, name, description, media type, exact byte size and SHA-256. Validation uses the official 1.3 context pinned to an immutable public source commit, expands the graph offline and checks every path, byte, digest, checksum and deterministic ZIP property. Available third-party validator profiles currently stop at RO-Crate 1.2, so the resource does not claim third-party 1.3 certification. It also assigns no DOI, registers no repository deposit and makes no claim of external ingest or RO-Crate community endorsement.",
+    "follow_up": "Download the ZIP and checksums-sha256.txt, verify the ZIP bytes, extract it without changing paths, then parse ro-crate-metadata.json with an RO-Crate 1.3-aware tool. Confirm the root Dataset, seven hasPart entities, relative file paths, byte lengths and SHA-256 values before repository staging.",
+    "bullets": [
+      "Complete U+3105 through U+3129 coverage in a canonical 37-row CSV and equivalent JSON Lines",
+      "RO-Crate 1.3 descriptor, root Dataset and seven exact local File data entities",
+      "Croissant 1.1, W3C CSVW and SKOS JSON-LD metadata in one attached crate",
+      "Script-free static preview, bilingual reuse guide and CC BY 4.0 attribution",
+      "Deterministic ten-member ZIP with byte-exact SHA-256 checksums"
+    ],
+    "decision_steps": [
+      "Open the bilingual guide and download the attached ZIP plus checksums-sha256.txt.",
+      "Verify the published ZIP SHA-256 before extraction.",
+      "Confirm that ro-crate-metadata.json references the official RO-Crate 1.3 context and profile.",
+      "Check that all seven root hasPart paths exist and match their contentSize and sha256 values.",
+      "Test the extracted crate with a 1.3-aware consumer before repository ingest."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Research-object structure",
+        "check": "RO-Crate 1.3 metadata descriptor linked to one absolute root Dataset",
+        "why": "Consumers can find the crate root without guessing from filenames"
+      },
+      {
+        "need": "Portable core data",
+        "check": "CSV, JSON Lines, Croissant, CSVW and SKOS files use relative crate paths",
+        "why": "The extracted ZIP remains useful without depending on an app or account"
+      },
+      {
+        "need": "Fixity and reproducibility",
+        "check": "Stable member order, fixed ZIP timestamps and SHA-256 for every member except the checksum list",
+        "why": "A repository can reproduce and compare the exact transfer bytes"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, parse, validate or reuse any RO-Crate data entity. If currently available, it appears only after the complete research object as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo RO-Crate 1.3 research object",
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ro-crate/"
+      },
+      {
+        "title": "RO-Crate Metadata Specification 1.3.0",
+        "url": "https://www.researchobject.org/ro-crate/specification/1.3/"
+      },
+      {
+        "title": "RO-Crate 1.3 JSON-LD context",
+        "url": "https://w3id.org/ro/crate/1.3/context"
+      },
+      {
+        "title": "Pinned RO-Crate specification source",
+        "url": "https://github.com/ResearchObject/ro-crate/commit/4b4f939c18022550ae0b992b7ddfb2cb5b2e8608"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is this an attached or detached RO-Crate?",
+        "a": "It is an attached RO-Crate package. The ZIP root contains ro-crate-metadata.json beside its local payload files and static preview. The same files are also published individually for inspection."
+      },
+      {
+        "q": "Does this package have a DOI or prove repository deposit?",
+        "a": "No. It uses a stable canonical web identifier but does not assign a DOI, register a repository record or prove that any institution has ingested it."
+      },
+      {
+        "q": "Has a third-party validator certified RO-Crate 1.3 conformance?",
+        "a": "No. Available third-party base profiles currently stop at 1.2. The generator instead checks the pinned normative 1.3 context and required structure, expands JSON-LD offline and validates every packaged byte without claiming certification."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "mets_premis_preservation_package",
+    "match": [
+      "digital repository download a mets 2.0 and premis 3.0 package",
+      "bopomofo mets premis package",
+      "zhuyin digital preservation package",
+      "mets 2.0 premis 3.0 bopomofo data"
+    ],
+    "query": "Where can a digital repository download a METS 2.0 and PREMIS 3.0 package for Bopomofo data?",
+    "page_title": "Download a METS 2.0 and PREMIS 3.0 Package for Bopomofo Data",
+    "meta_description": "Download a schema-valid METS 2.0 and PREMIS 3.0 preservation package for all 37 Bopomofo symbols with per-file SHA-256 fixity.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/",
+    "primary_resource_label": "Open the Bopomofo METS and PREMIS package guide",
+    "lead": "Use the app-independent transfer package to stage all 37 Bopomofo symbols in a digital repository with a METS 2.0 inventory and structure map plus PREMIS 3.0 preservation metadata.",
+    "detail": "The deterministic ZIP contains ten members: mets.xml, premis.xml, a bilingual README, a CC BY 4.0 attribution file, five reusable data files and checksums-sha256.txt. METS fileSec inventories seven preserved files by relative path, IANA media type, byte size and SHA-256, while its logical structMap groups data and documentation and points to every file exactly once. A METS 2.0 mdRef links the complete external PREMIS record without using XLink, which METS 2 removed. PREMIS records seven File Objects with matching original names, formats, sizes and fixity; one successful metadata-creation Event; publisher and generator Agents; and one CC BY 4.0 Rights statement linking every Object. Both XML records validate offline against byte-pinned official XSD snapshots from immutable public source commits. The bundle also checks all paths, digests, 37 CSV rows, 37 JSON Lines records, ZIP order, fixed timestamps and file modes. The ZIP is a deterministic transfer wrapper, not a METS-defined archive format. The package has no DOI and does not claim repository registration, external ingest, third-party certification, institutional endorsement or a digital signature.",
+    "follow_up": "Download the ZIP and checksums-sha256.txt, verify the outer ZIP digest, extract without changing relative paths, then validate mets.xml and premis.xml against the cited official XSD versions. Confirm that all seven METS file entries, seven PREMIS File Objects, Event links and Rights links match the extracted bytes before repository ingest.",
+    "bullets": [
+      "Complete U+3105 through U+3129 coverage in canonical 37-row CSV and equivalent JSON Lines",
+      "METS 2.0 fileSec, logical structMap and external PREMIS 3.0 mdRef with no XLink dependency",
+      "Seven PREMIS File Objects, one generation Event, two Agents and one CC BY 4.0 Rights statement",
+      "Official byte-pinned METS 2.0 and PREMIS 3.0 XSD validation performed offline",
+      "Deterministic ten-member ZIP with per-file and outer SHA-256 checksums"
+    ],
+    "decision_steps": [
+      "Open the bilingual package guide and download the ZIP plus checksums-sha256.txt.",
+      "Verify the published outer SHA-256 before extracting the transfer wrapper.",
+      "Validate mets.xml and premis.xml against the exact cited official XSD versions.",
+      "Compare every METS file and PREMIS Object path, media type, byte size and SHA-256 with the extracted payload.",
+      "Review the PREMIS Event, Agents, Rights statement and your local repository policy before ingest."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Repository inventory and structure",
+        "check": "METS 2.0 fileSec inventories seven files and structMap points to every file exactly once",
+        "why": "Repository tooling can discover payload and documentation roles without guessing from filenames"
+      },
+      {
+        "need": "Preservation provenance and rights",
+        "check": "PREMIS 3.0 links seven File Objects to one Event, two Agents and one Rights statement",
+        "why": "Fixity, creation provenance and CC BY 4.0 permissions remain explicit at transfer"
+      },
+      {
+        "need": "Byte-level verification",
+        "check": "METS and PREMIS values match local paths, media types, byte sizes and SHA-256 digests",
+        "why": "A repository can reject an incomplete or altered payload before ingest"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, validate, ingest or reuse any file in this METS and PREMIS package. If currently available, it appears only after the complete preservation resource as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo METS 2.0 and PREMIS 3.0 preservation package",
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-mets2-premis3/"
+      },
+      {
+        "title": "Official METS 2.0 schema",
+        "url": "https://www.loc.gov/standards/mets/mets2.xsd"
+      },
+      {
+        "title": "PREMIS version 3 resources",
+        "url": "https://www.loc.gov/standards/premis/v3/"
+      },
+      {
+        "title": "Official PREMIS 3.0 schema",
+        "url": "https://www.loc.gov/standards/premis/v3/premis-v3-0.xsd"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does METS embed the PREMIS record?",
+        "a": "No. mets.xml uses a METS 2.0 mdRef with LOCREF=premis.xml, the PREMIS 3.0 version, media type, byte size and SHA-256. Both files remain beside each other in the extracted package."
+      },
+      {
+        "q": "Is the ZIP a METS-defined archive format?",
+        "a": "No. METS describes the package inventory and structure, but does not define this ZIP serialization. The ZIP is only a deterministic transfer wrapper with a published outer SHA-256."
+      },
+      {
+        "q": "Does schema validation prove repository ingest or authenticity?",
+        "a": "No. XSD validation and checksums establish structure and fixity only. They do not prove external ingest, institutional endorsement, third-party certification, authenticity or a digital signature."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "ocfl_digital_preservation",
+    "match": [
+      "digital repository download an ocfl 1.1 object",
+      "bopomofo ocfl preservation object",
+      "zhuyin ocfl repository",
+      "ocfl 1.1 bopomofo data"
+    ],
+    "query": "Where can a digital repository download an OCFL 1.1 object for Bopomofo data?",
+    "page_title": "Download an OCFL 1.1 Object for Bopomofo Data",
+    "meta_description": "Download a validated OCFL 1.1 object for all 37 Bopomofo symbols, with root and version inventories, SHA-512 content addressing and SHA-256 fixity.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/",
+    "primary_resource_label": "Download the Bopomofo OCFL preservation object",
+    "lead": "Use the open OCFL 1.1 object for a transparent, version-aware preservation copy of the complete 37-symbol Bopomofo dataset and its standards metadata.",
+    "detail": "The deterministic ZIP extracts to one OCFL Object root. Its exact 0=ocfl_object_1.1 Namaste file declares OCFL 1.1, while the object-root inventory.json and inventory.json.sha512 files are byte-identical to those in the head-version directory. The inventory identifies the object with a stable URI, uses SHA-512 for content addressing, maps physical version content paths in its manifest, and maps content digests to ten portable logical paths in the head state. A complete SHA-256 fixity block independently covers every stored content file. The logical state preserves the canonical 37-row UTF-8 CSV, equivalent JSON Lines, W3C CSVW metadata, MLCommons Croissant 1.1 metadata, the SKOS vocabulary in JSON-LD, Turtle and N-Triples, SHACL shapes, a validation guide and the CC BY 4.0 notice. The extracted object validates with ocfl-py 2.1.0. OCFL specifies an object-at-rest filesystem layout, not a ZIP transfer serialization or OCFL-specific media type, so the download uses generic application/zip with a separate outer SHA-256. This is one OCFL Object, not an OCFL Storage Root, repository service, institutional endorsement or proof of ingest.",
+    "follow_up": "Download the ZIP and checksum into the same directory, verify the outer SHA-256, extract the single object root, then run ocfl-validate.py against that directory with ocfl-py 2.1.0. Inspect the inventory id, head, manifest, version state and local rights policy before repository ingest.",
+    "bullets": [
+      "Complete U+3105 through U+3129 Bopomofo coverage with no audio or learner records",
+      "Exact OCFL 1.1 Namaste declaration plus root and head-version inventory sidecars",
+      "SHA-512 content-addressed manifest and complete SHA-256 fixity block",
+      "Ten logical files with physical content paths separated from logical paths",
+      "Deterministic single-root ZIP with a separately published outer SHA-256"
+    ],
+    "decision_steps": [
+      "Download the ZIP, checksums-sha256.txt and metadata.jsonld from the object guide.",
+      "Run shasum -a 256 -c checksums-sha256.txt before extracting the transfer wrapper.",
+      "Extract the ZIP and confirm it creates only the bopomofo-37-symbols-ocfl object root.",
+      "Run ocfl-validate.py bopomofo-37-symbols-ocfl with ocfl-py 2.1.0.",
+      "Confirm the inventory id and local retention policy before staging repository ingest."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Transparent object identification",
+        "check": "The root contains the exact 0=ocfl_object_1.1 Namaste declaration",
+        "why": "Humans and tools can identify the extracted directory without proprietary software"
+      },
+      {
+        "need": "Version and path reconstruction",
+        "check": "The inventory separates physical manifest paths from logical state paths",
+        "why": "A repository can rebuild the head state while retaining immutable version content"
+      },
+      {
+        "need": "Independent byte verification",
+        "check": "SHA-512 covers content addressing and SHA-256 fixity covers every physical content path",
+        "why": "An OCFL validator can verify inventories, sidecars, state mappings and stored bytes"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, validate, preserve or reconstruct the OCFL object. If currently available, it appears only after the open repository resource as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo OCFL 1.1 preservation object",
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ocfl/"
+      },
+      {
+        "title": "Oxford Common File Layout Specification 1.1",
+        "url": "https://ocfl.io/1.1/spec/"
+      },
+      {
+        "title": "Official OCFL 1.1 inventory JSON Schema",
+        "url": "https://ocfl.io/1.1/spec/inventory_schema.json"
+      },
+      {
+        "title": "ocfl-py validator",
+        "url": "https://github.com/zimeon/ocfl-py"
+      },
+      {
+        "title": "IANA application/zip media type registration",
+        "url": "https://www.iana.org/assignments/media-types/application/zip"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is the ZIP itself an OCFL-defined serialization?",
+        "a": "No. OCFL 1.1 defines the object-at-rest and storage-root filesystem layouts, not a transfer archive or OCFL-specific media type. The download uses a generic application/zip wrapper and publishes a separate checksum for those ZIP bytes."
+      },
+      {
+        "q": "Is this download a complete OCFL Storage Root?",
+        "a": "No. It is one independently valid OCFL Object with an object declaration. A repository may place it under a separately declared OCFL Storage Root using its own deterministic storage layout."
+      },
+      {
+        "q": "How does the object preserve future changes?",
+        "a": "The generator compares the current logical state with the published head. If source bytes or logical paths change, it appends a new forward-delta version, retains prior version directories and reuses existing content digests instead of rewriting history."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "iiif_presentation_manifest",
+    "match": [
+      "library load a iiif presentation 3 manifest",
+      "bopomofo iiif manifest",
+      "zhuyin iiif collection",
+      "iiif presentation 3 bopomofo symbols"
+    ],
+    "query": "Where can a library load a IIIF Presentation 3 manifest for all 37 Bopomofo symbols?",
+    "page_title": "Load a IIIF Presentation 3 Manifest for All 37 Bopomofo Symbols",
+    "meta_description": "Load a validated IIIF Presentation API 3.0.0 Manifest with 37 ordered Bopomofo canvases, bilingual metadata and safe static SVG images.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html",
+    "primary_resource_label": "Open the Bopomofo IIIF Presentation 3 guide",
+    "lead": "Use the open IIIF Presentation API 3.0.0 resource to display every Bopomofo symbol as an ordered, bilingual compound object in compatible library and digital-humanities viewers.",
+    "detail": "The static Manifest contains exactly 37 ordered 1200-by-1200 Canvases. Each Canvas has one AnnotationPage and one painting Annotation whose target is that Canvas and whose body is a stable image/svg+xml resource. The SVG cards contain deterministic embedded glyph outlines derived from a hash-pinned Noto Sans TC source under the SIL Open Font License; they contain no script, foreignObject, event handlers, external font or app promotion. Bilingual language maps expose the symbol, Unicode notation, Hanyu Pinyin, broad IPA, category and example metadata. A separate IIIF Collection references the Manifest, while seeAlso links expose the canonical CSV, Croissant and SKOS machine data and rendering points to a deterministic ZIP. The resource publishes CC BY 4.0 rights, required attribution, exact SHA-256 checksums and app-independent package metadata. It validates with the IIIF Presentation Validator pinned to a public source commit. No service block is present: this static resource does not claim a IIIF Image API, deep zoom, Content Search API, external collection membership, IIIF certification or institutional ingest.",
+    "follow_up": "Open collection.json or manifest.json in a Presentation API 3 compatible viewer, confirm that all 37 Canvases load in order, and verify the published SHA-256 values before local reuse. A viewer must support ordinary SVG image bodies; deployments that require tiled deep zoom should add their own separately operated IIIF Image service rather than inferring one from this Manifest.",
+    "bullets": [
+      "Exactly 37 ordered Canvases covering the complete Bopomofo inventory",
+      "One painting Annotation and one safe static SVG Image per Canvas",
+      "Bilingual labels plus Unicode, Pinyin, broad IPA, category and example metadata",
+      "IIIF Collection, Manifest, deterministic ZIP and exact SHA-256 checksums",
+      "No Image API, deep-zoom, certification or external-ingest claim"
+    ],
+    "decision_steps": [
+      "Open the bilingual guide and download collection.json, manifest.json or the deterministic ZIP.",
+      "Run the pinned IIIF Presentation Validator against manifest.json before repository ingest.",
+      "Confirm that the Manifest has 37 ordered Canvases and no service property.",
+      "Verify checksums-sha256.txt before mirroring the SVG images or ZIP.",
+      "Test one SVG body in the target viewer and add a separate Image API only if deep zoom is required."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Presentation interoperability",
+        "check": "A Presentation API 3.0.0 Manifest with 37 ordered Canvas resources",
+        "why": "Compatible viewers can present the complete symbol sequence without custom JSON"
+      },
+      {
+        "need": "Portable visual rendering",
+        "check": "Each painting Annotation targets its Canvas and references a 1200-by-1200 SVG Image",
+        "why": "The glyph remains sharp without depending on a proprietary app or remote font"
+      },
+      {
+        "need": "Discovery and verification",
+        "check": "Collection, seeAlso, rendering, ResourceSync and SHA-256 links remain separate",
+        "why": "Repositories can discover, validate and mirror the files without treating IIIF as a harvesting protocol"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to load, validate, display or reuse the IIIF Collection, Manifest or SVG images. If currently available, it appears only after the complete open resource as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo IIIF Presentation 3 resource",
+        "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-iiif-presentation-3.html"
+      },
+      {
+        "title": "IIIF Presentation API 3.0.0",
+        "url": "https://iiif.io/api/presentation/3.0/"
+      },
+      {
+        "title": "IIIF Cookbook: simplest Manifest with one image",
+        "url": "https://iiif.io/api/cookbook/recipe/0001-mvm-image/"
+      },
+      {
+        "title": "IIIF Presentation Validator",
+        "url": "https://github.com/IIIF/presentation-validator"
+      },
+      {
+        "title": "Noto Sans Traditional Chinese",
+        "url": "https://github.com/google/fonts/tree/main/ofl/notosanstc"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does this Manifest provide a IIIF Image API or deep zoom?",
+        "a": "No. Presentation API image bodies may reference ordinary web images, and these bodies are static SVG files with no service block. A repository that needs tiled resizing or deep zoom must operate and declare a separate Image API service."
+      },
+      {
+        "q": "Is IIIF Presentation itself a harvesting or search protocol?",
+        "a": "No. Presentation API structures a compound object for viewers; it does not replace catalog harvesting or content search. This resource exposes separate DCAT and ResourceSync discovery links and makes no Content Search API claim."
+      },
+      {
+        "q": "Does validator success mean IIIF certification or repository acceptance?",
+        "a": "No. Validator success checks the published JSON structure against the selected Presentation API rules. It does not imply IIIF Consortium endorsement, certification, viewer compatibility guarantees or ingest by any institution."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "bagit_digital_preservation",
+    "match": [
+      "digital repository download an rfc 8493 bagit package",
+      "bopomofo bagit preservation package",
+      "zhuyin bagit deposit",
+      "rfc 8493 bopomofo data"
+    ],
+    "query": "Where can a digital repository download an RFC 8493 BagIt package for Bopomofo data?",
+    "page_title": "Download an RFC 8493 BagIt Package for Bopomofo Data",
+    "meta_description": "Download a validated BagIt 1.0 preservation ZIP for all 37 Bopomofo symbols, with exact Payload-Oxum and SHA-256 and SHA-512 manifests.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/",
+    "primary_resource_label": "Download the Bopomofo BagIt preservation package",
+    "lead": "Use the open RFC 8493 BagIt package for a self-checking preservation copy of the complete 37-symbol Bopomofo dataset and its standards metadata.",
+    "detail": "The deterministic ZIP extracts to one BagIt 1.0 base directory. Its ten payload files preserve the canonical 37-row UTF-8 CSV, equivalent JSON Lines, W3C CSVW metadata, MLCommons Croissant 1.1 metadata, the SKOS vocabulary in JSON-LD, Turtle and N-Triples, SHACL shapes, a reuse guide and the CC BY 4.0 notice. bagit.txt declares version 1.0 and UTF-8 without a BOM. bag-info.txt records the exact Payload-Oxum. Every payload appears exactly once in both SHA-256 and SHA-512 manifests, and matching tag manifests cover the declaration, bag metadata and both payload manifests without listing themselves. ZIP members use stable ordering, fixed timestamps and stored bytes, while a separate SHA-256 file protects the serialized download. The extracted package validates with LibraryOfCongress bagit-python 1.9.0. RFC 8493 is an Informational filesystem-layout specification and does not define a ZIP serialization or imply institutional endorsement, repository ingest or protection against active attacks.",
+    "follow_up": "Download the ZIP and checksum into the same directory, verify the outer SHA-256, extract the single base directory, then validate it with bagit-python 1.9.0 before staging repository ingest. Keep the original ZIP if the repository preserves transfer objects, and retain the extracted bag if it preserves filesystem packages.",
+    "bullets": [
+      "Complete U+3105 through U+3129 Bopomofo coverage with no audio or learner records",
+      "Ten payload files with an exact octet.streams Payload-Oxum",
+      "SHA-256 and SHA-512 payload manifests plus matching tag manifests",
+      "Deterministic single-root ZIP with a separately published outer SHA-256",
+      "Open CC BY 4.0 payload, no account and no API key"
+    ],
+    "decision_steps": [
+      "Download the ZIP, checksums-sha256.txt and metadata.jsonld from the package guide.",
+      "Run shasum -a 256 -c checksums-sha256.txt before extracting the transfer object.",
+      "Extract the ZIP and confirm it creates only the bopomofo-37-symbols-bagit base directory.",
+      "Run python3 -m bagit --validate bopomofo-37-symbols-bagit with bagit 1.9.0.",
+      "Inspect local rights, retention, identifier and authenticity policies before repository ingest."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Fast completeness screening",
+        "check": "bag-info.txt contains an exact Payload-Oxum for all ten payload streams",
+        "why": "A receiver can detect an obviously incomplete transfer before full checksum validation"
+      },
+      {
+        "need": "Strong fixity",
+        "check": "Every payload and required tag file is covered by both SHA-256 and SHA-512",
+        "why": "Independent validators can verify exact bytes using BagIt 1.0 mandatory algorithms"
+      },
+      {
+        "need": "Portable transfer",
+        "check": "The archive has one base directory, safe ASCII paths, fixed timestamps and a separate ZIP checksum",
+        "why": "Extraction is predictable while the serialized transfer object also has byte-level fixity"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, validate, preserve or reuse the BagIt package. If currently available, it appears only after the open repository resource as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo RFC 8493 BagIt preservation package",
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-bagit/"
+      },
+      {
+        "title": "RFC 8493 - The BagIt File Packaging Format (V1.0)",
+        "url": "https://www.rfc-editor.org/rfc/rfc8493"
+      },
+      {
+        "title": "LibraryOfCongress bagit-python",
+        "url": "https://github.com/LibraryOfCongress/bagit-python"
+      },
+      {
+        "title": "IANA application/zip media type registration",
+        "url": "https://www.iana.org/assignments/media-types/application/zip"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does RFC 8493 define the ZIP file itself?",
+        "a": "No. RFC 8493 defines a filesystem hierarchy for a bag and has no IANA actions. This package uses a generic application/zip transfer wrapper with one BagIt base directory and publishes a separate checksum for the ZIP bytes."
+      },
+      {
+        "q": "What does Payload-Oxum prove?",
+        "a": "It records the total payload octets and number of payload streams, so a receiver can quickly detect an incomplete bag. RFC 8493 still requires full manifest checksum validation before calling the bag valid."
+      },
+      {
+        "q": "Does a valid BagIt package prove authenticity?",
+        "a": "No. BagIt manifests provide strong corruption detection, but RFC 8493 says they are not designed to protect against active attacks. A repository that needs authenticity should apply its own trusted signatures or custody controls."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "csvw_tabular_metadata",
+    "match": [
+      "data tools download csvw metadata",
+      "csvw metadata for all 37 bopomofo",
+      "bopomofo csv-metadata.json",
+      "zhuyin csvw table"
+    ],
+    "query": "Where can data tools download CSVW metadata for all 37 Bopomofo symbols?",
+    "page_title": "Download CSVW Metadata for All 37 Bopomofo Symbols",
+    "meta_description": "Download a validated 37-row Bopomofo CSV with W3C CSVW metadata, 12 typed required columns, a unique primary key, URI templates and SHA-256.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/",
+    "primary_resource_label": "Download the Bopomofo CSVW package",
+    "lead": "Use the open Bopomofo CSVW package. It pairs one canonical UTF-8 CSV containing all 37 standard symbols with metadata that follows W3C's tabular-data Recommendations and the default CSVW discovery filename.",
+    "detail": "The CSV contains 37 data rows and 12 columns for order, stable symbol ID, concept IRI, symbol, Unicode notation, Hanyu Pinyin, broad IPA, category, category IRI and example fields. Its adjacent zhuyin-bopomofo-ml-dataset.csv-metadata.json document uses the official CSVW context first, declares a UTF-8 comma dialect with one header row, marks every column required, assigns symbol_id as the unique primary key, and provides datatypes, facets, BCP 47 language tags, a row-subject URI template and RDF property or value mappings. A deterministic ZIP includes the CSV, metadata, README, CC BY 4.0 notice and SHA-256 list. Pinned unmodified official JSON-LD context and Turtle vocabulary snapshots support offline term checks, and the published pair validates with csvw 4.1.0. W3C defines the format but does not certify this package, endorse it or confirm ingestion by any external tool or catalog.",
+    "follow_up": "Download the metadata next to the CSV or extract the complete ZIP, verify checksums, then run csvwvalidate against the metadata file. Test the exact downstream processor because CSVW feature support and remote-URL handling vary between tools.",
+    "bullets": [
+      "Complete Unicode U+3105 through U+3129 coverage: 21 initials, 3 medials and 13 finals",
+      "Twelve required columns with integer, string and anyURI datatypes plus explicit facets",
+      "Unique symbol_id primary key, stable SKOS row subjects and RDF property or value mappings",
+      "Standard <CSV URL>-metadata.json discovery name with a relative adjacent CSV URL",
+      "Deterministic ZIP, CC BY 4.0 attribution, byte-exact SHA-256 and no account requirement"
+    ],
+    "decision_steps": [
+      "Download the complete ZIP for offline use or place the metadata file beside the canonical CSV.",
+      "Run csvwvalidate zhuyin-bopomofo-ml-dataset.csv-metadata.json with csvw 4.1.0.",
+      "Confirm that the processor reports 37 rows, 12 columns and no primary-key or datatype errors.",
+      "Inspect the aboutUrl, propertyUrl and valueUrl mappings before generating RDF.",
+      "Verify SHA-256 values and test the target ETL or catalog in staging before publishing."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Automatic metadata discovery",
+        "check": "The metadata uses the exact <CSV filename>-metadata.json convention and a relative url",
+        "why": "CSVW-aware tools can locate the table contract without a proprietary descriptor"
+      },
+      {
+        "need": "Strict tabular validation",
+        "check": "Required typed columns, format facets, a unique primary key and a declared dialect",
+        "why": "Pipelines can reject missing, malformed or duplicate values before reuse"
+      },
+      {
+        "need": "Linked-data projection",
+        "check": "Stable row subjects plus explicit RDF property and IRI value templates",
+        "why": "CSV-to-RDF processors receive deterministic mappings instead of guessing semantics"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, validate, transform or reuse the CSVW table. If currently available, it appears only after the open technical resource as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo CSVW table and offline bundle",
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-csvw/"
+      },
+      {
+        "title": "W3C Model for Tabular Data and Metadata on the Web",
+        "url": "https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/"
+      },
+      {
+        "title": "W3C Metadata Vocabulary for Tabular Data",
+        "url": "https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/"
+      },
+      {
+        "title": "W3C Generating RDF from Tabular Data on the Web",
+        "url": "https://www.w3.org/TR/2015/REC-csv2rdf-20151217/"
+      },
+      {
+        "title": "IANA application/csvm+json media type registration",
+        "url": "https://www.iana.org/assignments/media-types/application/csvm+json"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How can a CSVW tool discover the metadata automatically?",
+        "a": "The metadata file is published beside the CSV as zhuyin-bopomofo-ml-dataset.csv-metadata.json, following the standard <CSV URL>-metadata.json discovery name. It also points back to the adjacent CSV with a relative url."
+      },
+      {
+        "q": "Will every CSV or data-catalog tool ingest CSVW identically?",
+        "a": "No. CSVW support, URI-template behavior and remote Content-Type requirements vary. Validate the metadata and test the exact processor in a staging workflow rather than assuming universal compatibility."
+      },
+      {
+        "q": "Is this package certified or endorsed by W3C?",
+        "a": "No. It targets the published W3C Recommendations and is checked against pinned official vocabulary snapshots, but W3C does not certify, endorse or confirm external ingestion of this dataset."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "faq",
+    "match": [
+      "english interference",
+      "reads pinyin like english",
+      "pinyin like english",
+      "says shi like shy",
+      "child pronounces chinese with english",
+      "english sounds when learning chinese"
+    ],
+    "query": "how to stop my child reading pinyin with english sounds when learning chinese",
+    "lead": "If your English-speaking child reads Pinyin 'shi', 'xi' or 'c' with English sounds, the wrong pronunciation can stick for years.",
+    "detail": "This is a common problem for heritage learners: Pinyin reuses Latin letters, so a child who reads English tends to map them to English sounds and fossilize mistakes. Zhuyin sidesteps this entirely because its 37 symbols are not letters — there is no English reading to fall back on, so the child learns each Mandarin sound on its own terms. {name} teaches those 37 Zhuyin symbols through play, pay once and offline. It is a first-pronunciation tool, not a full Chinese course, so pair it with speaking and reading practice.",
+    "bullets": [
+      "Symbols that are not Latin letters, so there is no English sound to guess",
+      "Covers the tricky Mandarin sounds (retroflex zh/ch/sh, the ü final) precisely",
+      "Slow, playful introduction suited to young children, with a parent gate",
+      "No ads or tracking, fully offline, safe to hand to a child",
+      "One-time purchase, no subscription"
+    ],
+    "faq": [
+      {
+        "q": "Why does my child mispronounce Pinyin?",
+        "a": "Because Pinyin uses Latin letters, English-reading children often apply English sounds (for example 'xi' or 'zhi'), and the habit can stick. Learning the sound through Zhuyin symbols avoids that letter-to-English mapping."
+      },
+      {
+        "q": "Can an app fix pronunciation on its own?",
+        "a": "No app replaces listening and speaking with a fluent adult. {name} builds the Zhuyin symbol-to-sound foundation; pair it with real conversation and native audio."
+      },
+      {
+        "q": "Is {name} pay-once?",
+        "a": "Yes — one-time purchase, no ads, no subscription, offline, with a parent gate."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "scenario",
+    "match": [
+      "why does taiwan use zhuyin",
+      "why zhuyin not pinyin",
+      "why bopomofo not pinyin",
+      "why taiwan uses bopomofo",
+      "taiwan zhuyin instead of pinyin"
+    ],
+    "query": "why does taiwan use zhuyin bopomofo instead of pinyin",
+    "lead": "If you learned Chinese with Pinyin, Taiwan's insistence on Zhuyin (Bopomofo) can seem puzzling — but there are real reasons behind it.",
+    "detail": "Zhuyin was created in the 1910s, decades before Pinyin (1950s), and became embedded in Taiwan's schooling: children learn it first, and kids' books print it alongside characters as a reading bridge. Beyond history, its 37 non-Latin symbols keep the pronunciation aid visually separate from both English and the Chinese characters, which many teachers find gives cleaner, more accurate pronunciation. It is not that one system is right — Pinyin is the global standard for typing and international learners — but for a Taiwanese-style start, Zhuyin is the path. {name} teaches those 37 symbols the way Taiwanese children first meet them, through play, pay once and offline.",
+    "bullets": [
+      "Follows the Taiwanese first-learning approach: symbols and tones first",
+      "Keeps the sound aid distinct from characters and from English letters",
+      "Built for the 4–7 first-reading window, playful and age-appropriate",
+      "No ads, no tracking, offline, with a parent gate on purchases",
+      "One-time purchase, no subscription"
+    ],
+    "faq": [
+      {
+        "q": "Is Zhuyin only used in Taiwan?",
+        "a": "Largely yes — Taiwan uses Zhuyin as its main phonetic system, while Mainland China and most international courses use Pinyin. If your family uses Taiwanese books or wants that pronunciation style, Zhuyin is the route {name} supports."
+      },
+      {
+        "q": "Should international learners use Zhuyin?",
+        "a": "It depends on your goals. For typing and global resources, Pinyin is more practical. For accurate pronunciation with minimal English interference, or a Taiwanese context, Zhuyin helps. Many learners meet Pinyin first and add Zhuyin later."
+      },
+      {
+        "q": "Is {name} a subscription?",
+        "a": "No — {name} is a one-time purchase, ad-free, offline, and has a parent gate."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "scenario",
+    "match": [
+      "before starting school",
+      "before first grade",
+      "preschool learn zhuyin",
+      "kindergarten learn zhuyin",
+      "should my child learn zhuyin before",
+      "learn bopomofo before school"
+    ],
+    "query": "should my child learn zhuyin bopomofo before starting school",
+    "lead": "Before a child starts school in Taiwan, many parents panic about whether to drill Zhuyin (Bopomofo) early so the child won't fall behind in the intense first weeks.",
+    "detail": "There is no rule that a preschooler must learn Zhuyin first — Taiwan's early-years guidance favours play, stories and songs over formal drilling, and first-grade teachers do teach all 37 symbols from the start over roughly the first ten weeks. If your child is curious, a gentle, playful introduction (games, picture books with Zhuyin) can ease that start without pressure; if your child isn't interested, pushing can backfire and sour them on reading. {name} fits the gentle route — it teaches the 37 symbols through play, pay once, no ads, with a parent gate — as light exposure, not a bootcamp.",
+    "bullets": [
+      "Playful, low-pressure exposure rather than formal writing drills for a preschooler",
+      "Covers all 37 symbols and tones, the same set first grade introduces",
+      "Short sessions a young child can enjoy, with a parent gate on purchases",
+      "No ads, no tracking, offline — safe to hand to a young child",
+      "One-time purchase, not a subscription for a few months of prep"
+    ],
+    "faq": [
+      {
+        "q": "Does my child have to learn Zhuyin before first grade?",
+        "a": "No. First-grade teachers introduce all 37 symbols from the start (about ten weeks in Taiwan). Early exposure can ease the transition, but it isn't required, and forcing an uninterested child can backfire. {name} is for gentle, playful exposure."
+      },
+      {
+        "q": "Won't early drilling put my child off?",
+        "a": "It can, if it's heavy or joyless. Early-years guidance favours play and stories. Keep it light — games, songs, Zhuyin picture books — which is how {name} is designed."
+      },
+      {
+        "q": "Is {name} pay-once?",
+        "a": "Yes — one-time purchase, no ads, no subscription, offline, with a parent gate."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "faq",
+    "match": [
+      "struggling to keep up with zhuyin",
+      "struggling to learn zhuyin",
+      "struggling with bopomofo",
+      "can't keep up with zhuyin",
+      "falling behind zhuyin",
+      "child struggles with zhuyin",
+      "practice zhuyin at home"
+    ],
+    "query": "how to help my child who is struggling to keep up with zhuyin at school",
+    "lead": "If the first weeks of school move fast and your child is struggling to keep up with Zhuyin, homework can drag on and both of you end up frustrated.",
+    "detail": "The usual fix is not more pressure but light, frequent review at home: short sessions with games, mnemonics, and Zhuyin picture books, plus talking to the teacher about which symbols are the sticking point. Pressure tends to backfire, while playful repetition builds recognition. {name} is built for that kind of low-stress practice — it drills the 37 symbols through play, offline, pay once. It's a practice aid, not a replacement for the teacher; pair it with reading together and, if needed, ask the school about extra support.",
+    "bullets": [
+      "Short, playful review sessions instead of long, tense homework battles",
+      "Focus practice on the specific symbols your child keeps missing",
+      "Recognition through repetition and games, not rote pressure",
+      "Offline, no ads, with a parent gate — safe for a young child",
+      "One-time purchase, no subscription"
+    ],
+    "faq": [
+      {
+        "q": "My child is falling behind in Zhuyin — what helps?",
+        "a": "Light, frequent review at home (games, mnemonics, Zhuyin picture books) plus talking to the teacher about the specific weak symbols. Avoid pressure, which backfires. {name} gives low-stress, playful practice of the 37 symbols."
+      },
+      {
+        "q": "Can an app replace the teacher?",
+        "a": "No. {name} is a practice aid for the symbol-to-sound basics; pair it with reading together and school support if your child needs more help."
+      },
+      {
+        "q": "Does {name} need a subscription?",
+        "a": "No — one-time purchase, offline, no ads, with a parent gate."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "scenario",
+    "match": [
+      "how to teach mandarin tones",
+      "how to teach bopomofo tones",
+      "teach zhuyin blending",
+      "zhuyin blending",
+      "how to teach tones and blending",
+      "teach my child mandarin tones"
+    ],
+    "query": "how to teach mandarin tones and zhuyin blending to my child at home",
+    "lead": "Once a child knows the 37 Zhuyin symbols, the two hardest steps are the four tones and blending symbols into syllables. Both are learnable at home with short, playful daily practice.",
+    "detail": "For tones, pair each with a movement so pitch becomes physical: a flat hand held high for the 1st (level) tone, a rising hand for the 2nd, a dip-and-rise for the 3rd, and a sharp chop down for the 4th. Drill tone pairs on the same sound — ma1, ma2, ma3, ma4 — and use minimal pairs your child can picture, like ma1 (media, mom) versus ma3 (horse), so a wrong tone visibly changes meaning. For blending, treat it like phonics: say the initial, medial and final separately, tap each one, then slide them together (for example the initial plus a final), first slowly then faster. Practise with real words and silly nonsense syllables, and read simple Zhuyin books together while pointing at each symbol. Keep sessions to 5-10 minutes, rotate songs, cards and games to stay fresh, and praise effort over accuracy. {name} builds these exact steps into play — a tone game for the four tones, syllable blending for spelling, and stroke tracing — pay once, no ads, no subscription, with a parent gate.",
+    "bullets": [
+      "Give each tone a gesture (flat-high / rising / dip / chop) so pitch becomes physical",
+      "Drill the four tones on one sound (ma1 ma2 ma3 ma4) and use picture-able minimal pairs",
+      "Blend like phonics: say initial + medial + final, tap each, then slide them together",
+      "Mix real words with silly nonsense syllables, and finger-read simple Zhuyin books",
+      "Keep it to 5-10 minutes, rotate activities, and praise effort over accuracy"
+    ],
+    "faq": [
+      {
+        "q": "How do I teach the four Mandarin tones to a young child?",
+        "a": "Pair each tone with a movement (flat hand high for 1st, rising for 2nd, dip-and-rise for 3rd, sharp chop for 4th), drill the same sound across all four, and use minimal pairs your child can picture. Keep it short and playful. {name} has a dedicated tone game for exactly this."
+      },
+      {
+        "q": "What is the easiest way to teach Zhuyin blending?",
+        "a": "Treat it like phonics: say the initial, medial and final separately, tap each symbol, then slide them together — slowly first, then faster. Practise with real and nonsense syllables. {name} builds blending into play so children get lots of low-pressure repetition."
+      },
+      {
+        "q": "How long should each practice session be?",
+        "a": "For a 4-7 year old, 5-10 minutes is plenty. Short, frequent, playful sessions beat long ones. {name} is designed in short game loops, pay once with no ads or subscription."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "official_tone_notation",
+    "match": [
+      "where do bopomofo tone marks go",
+      "where to write zhuyin tone marks",
+      "bopomofo neutral tone dot position",
+      "zhuyin tone mark placement"
+    ],
+    "query": "where do bopomofo tone marks go in horizontal and vertical writing",
+    "lead": "Taiwan's Ministry of Education defines different Zhuyin tone-mark positions for regular tones and the neutral tone.",
+    "detail": "The official Mandarin Phonetic Symbols Handbook says the four regular tone marks sit at the upper right of the final symbol in both vertical and horizontal notation; the first-tone mark is normally omitted. The neutral-tone dot goes above the syllable in vertical notation, but before the first symbol in horizontal notation. This small placement rule is easy to miss when a child mostly learns by sound. Use the Ministry handbook for the formal writing model, then let {name} reinforce recognition of the four tones through listening and play.",
+    "bullets": [
+      "Regular tone marks: upper right of the syllable's final Zhuyin symbol",
+      "First tone: the mark is normally omitted",
+      "Neutral tone in vertical notation: dot above the syllable",
+      "Neutral tone in horizontal notation: dot before the first symbol",
+      "Official reference: Taiwan Ministry of Education Mandarin Phonetic Symbols Handbook"
+    ],
+    "faq": [
+      {
+        "q": "Where does the neutral-tone dot go in horizontal Zhuyin?",
+        "a": "The Ministry of Education standard places it before the syllable's first symbol in horizontal notation."
+      },
+      {
+        "q": "Does the neutral-tone dot use the same position in vertical Zhuyin?",
+        "a": "No. In vertical notation, the dot is placed above the syllable."
+      },
+      {
+        "q": "Does Lumi Bopomofo replace the official handwriting reference?",
+        "a": "No. Use the Ministry handbook for formal notation; Lumi Bopomofo reinforces symbol recognition, pronunciation and tones through play."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "official_dictionary_bridge",
+    "match": [
+      "why learn zhuyin if already speaks chinese",
+      "zhuyin help child read a chinese dictionary",
+      "bopomofo useful beyond first grade",
+      "use zhuyin to read independently",
+      "why should my child learn zhuyin"
+    ],
+    "query": "Why should my child learn Zhuyin if they already speak Chinese?",
+    "lead": "Zhuyin gives Mandarin-speaking children a pronunciation key for decoding unfamiliar Traditional Chinese characters without waiting for an adult.",
+    "detail": "Taiwan's official Ministry of Education Mini Dictionary displays standard Zhuyin pronunciation with its entries, and Zhuyin-annotated children's material uses the same 37-symbol system. Once a child recognizes those symbols and tones, the phonetic guide becomes a bridge from a character they do not yet know to a sound they may already understand. That makes Zhuyin useful beyond a short school unit: it supports dictionary use, independent reading and accurate pronunciation. Official reference: https://dict.mini.moe.edu.tw/. {name} builds the symbol, sound, tone and blending foundation through play; it is free to download, with a one-time unlock, no ads and no recurring subscription.",
+    "bullets": [
+      "Connects unfamiliar Traditional Chinese characters to pronunciations a Mandarin-speaking child may already know",
+      "Uses the same standard Zhuyin shown by Taiwan's official Ministry of Education Mini Dictionary",
+      "Supports independent reading instead of requiring an adult to pronounce every new character",
+      "Covers all 37 symbols, tones and syllable blending through short play activities",
+      "Free download with a one-time unlock, no ads and no recurring subscription"
+    ],
+    "decision_steps": [
+      "Start with a familiar spoken word and show the child its Traditional Chinese characters.",
+      "Point out the Zhuyin guide and blend its symbols into the word's pronunciation.",
+      "Check an unfamiliar character together in Taiwan's Ministry of Education Mini Dictionary.",
+      "Read a short Zhuyin-annotated story for five to ten minutes, letting the child decode before helping.",
+      "Use Lumi Bopomofo to revisit only the symbols, tones or blends that still cause hesitation."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Already speaks Mandarin",
+        "check": "Practice that connects Zhuyin symbols and tones to familiar spoken words",
+        "why": "Oral vocabulary becomes a foundation for decoding written characters"
+      },
+      {
+        "need": "Meets an unknown character",
+        "check": "A standard Zhuyin pronunciation guide or Ministry of Education dictionary entry",
+        "why": "The child can recover the sound without waiting for an adult to read it"
+      },
+      {
+        "need": "Builds reading independence",
+        "check": "Short practice plus real Zhuyin-annotated stories",
+        "why": "A phonetic skill becomes useful only when the child applies it to reading"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is the practice layer: it builds symbol recognition, tones and blending through short games. Pair it with shared reading and Taiwan's official dictionary rather than treating any app as a replacement for books or conversation.",
+    "sources": [
+      {
+        "title": "Taiwan Ministry of Education Mini Dictionary",
+        "url": "https://dict.mini.moe.edu.tw/"
+      },
+      {
+        "title": "Taiwan Ministry of Education Bopomofo Handbook",
+        "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Why learn Zhuyin if my child already speaks Mandarin?",
+        "a": "Speaking gives a child vocabulary, but not a way to decode an unfamiliar written character. Zhuyin connects the character to a pronunciation the child may already understand."
+      },
+      {
+        "q": "Is there an official Zhuyin dictionary for children?",
+        "a": "Yes. Taiwan's Ministry of Education Mini Dictionary at https://dict.mini.moe.edu.tw/ displays standard Zhuyin pronunciation with dictionary entries."
+      },
+      {
+        "q": "Does Lumi Bopomofo replace reading together?",
+        "a": "No. It builds the symbol-to-sound, tone and blending foundation through play. Children still benefit from shared reading and real conversation."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "heritage_school_lesson_plan",
+    "match": [
+      "five-day zhuyin lesson plan",
+      "5 day bopomofo lesson plan",
+      "heritage chinese school zhuyin lesson",
+      "weekend chinese school lesson plan",
+      "free zhuyin teacher resource"
+    ],
+    "query": "Where can I find a free five-day Zhuyin lesson plan for a heritage Chinese school?",
+    "lead": "Use a print-ready five-day starter mini-unit that teaches a repeatable Zhuyin routine without pretending children can master all 37 symbols in one week.",
+    "detail": "The free bilingual lesson plan at https://open.cait518.cc/ios-app-guide/guides/zhuyin-5-day-lesson-plan-heritage-school.html gives teachers five 30-minute sessions for ages 4–8. It starts with 12 symbols, slow blending and tone awareness, then shows how to repeat the routine with the remaining symbols. It is printable, requires no account and is licensed CC BY 4.0 for adaptation with attribution. The plan links Taiwan Ministry of Education notation and handwriting references plus Overseas Community Affairs Council materials. {name} is optional practice between classes: it adds listening, tracing, tone and blending games, with no ads or account; the free download offers a one-time unlock rather than a recurring subscription.",
+    "bullets": [
+      "Five complete 30-minute sessions with objectives, timed activities and exit checks",
+      "Honest 12-symbol starter set rather than an unrealistic five-day mastery claim",
+      "English and Traditional Chinese versions, formatted for printing",
+      "CC BY 4.0 reuse plus direct Taiwan Ministry of Education and OCAC references",
+      "Works without an app; optional no-ads practice through Lumi Bopomofo"
+    ],
+    "decision_steps": [
+      "Day 1: connect ㄅ ㄆ ㄇ ㄈ and ㄚ to sounds through modeling, cards and tracing.",
+      "Day 2: add ㄉ ㄊ ㄋ ㄌ while reviewing the first group.",
+      "Day 3: add ㄧ ㄨ ㄩ and begin slow symbol blending.",
+      "Day 4: hear first through fourth tones and the neutral tone with ㄇㄚ.",
+      "Day 5: decode a small real-word set, review and choose the next symbols."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Ready-to-use short unit",
+        "check": "Timed activities, materials, objectives and exit checks",
+        "why": "A teacher can print and teach instead of assembling disconnected worksheets"
+      },
+      {
+        "need": "Accurate expectations",
+        "check": "A starter set with a continuation method, not a five-day fluency promise",
+        "why": "Young learners need repeated practice across multiple weeks"
+      },
+      {
+        "need": "Reusable overseas resource",
+        "check": "English and Traditional Chinese pages under CC BY 4.0",
+        "why": "Heritage schools can adapt the plan and share it with attribution"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is an optional practice layer after teacher modeling, card work and shared reading. It reinforces all 37 symbols, tones and blending through short games; the lesson plan remains fully usable without any app.",
+    "sources": [
+      {
+        "title": "Free bilingual five-day Zhuyin lesson plan",
+        "url": "https://open.cait518.cc/ios-app-guide/guides/zhuyin-5-day-lesson-plan-heritage-school.html"
+      },
+      {
+        "title": "Taiwan Ministry of Education Bopomofo Handbook",
+        "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+      },
+      {
+        "title": "Overseas Community Affairs Council e-book catalog",
+        "url": "https://www.ocac.gov.tw/OCAC/Pages/List.aspx?nodeid=1438"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Will this teach all 37 Zhuyin symbols in five days?",
+        "a": "No. It deliberately teaches a 12-symbol starter set and a routine teachers can repeat over following weeks."
+      },
+      {
+        "q": "Can a heritage school adapt and share the lesson?",
+        "a": "Yes. The original lesson is CC BY 4.0, so it can be printed, adapted and shared with attribution to iOS App Guide."
+      },
+      {
+        "q": "Does the class need Lumi Bopomofo?",
+        "a": "No. Cards, paper, teacher modeling and games are enough. Lumi Bopomofo is an optional no-ads practice layer between lessons."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "parent_guided_no_score_observation",
+    "match": [
+      "check my child's zhuyin skills",
+      "three minute zhuyin skills",
+      "3 minute bopomofo check",
+      "zhuyin readiness check",
+      "what zhuyin skill to practice next"
+    ],
+    "query": "How can I check my child's Zhuyin skills at home in three minutes?",
+    "page_title": "3-Minute Zhuyin Observation Guide | Free Private Parent Tool",
+    "meta_description": "Free private 3-minute Zhuyin observation guide for parents: record symbols, tones, blending, writing and reading separately, with no score or level.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-readiness-check.html",
+    "primary_resource_label": "Open the free 3-minute observation guide",
+    "lead": "Use five separate, parent-guided observations instead of a pass-or-fail quiz: briefly sample symbol recognition, tone awareness, blending, writing and reading application without calculating a total, score, stage or level.",
+    "detail": "The free private three-minute observation guide linked above runs entirely in the browser and requires no login. A parent sits beside the child and records one small observation in each of five dimensions; the choices are displayed separately and are never added, ranked or converted into a score or level. The page then offers free flashcards, a symbol-and-tone chart, a 14-day activity calendar, printable tracing sheets and a five-day lesson plan in a fixed order, so the family may choose any activity or stop. It is an independent practice guide, not a school-readiness test, speech evaluation, developmental screening or professional diagnosis. {name} appears only after the free resources as an optional guided activity for listening, tracing, tones or blending.",
+    "follow_up": "Complete the free observation first and keep all five choices separate. Choose any one free activity, pause, or ask the child's school; Lumi Bopomofo is an optional practice layer rather than a required result.",
+    "bullets": [
+      "Five small observations: symbol recognition, tones, blending, writing and reading use",
+      "No account, upload, saved child data, total, score, stage or level",
+      "No pass/fail result and no claim to diagnose delay, school readiness or a speech issue",
+      "Free follow-up activities shown in a fixed order rather than ranked by performance",
+      "English and Traditional Chinese versions with reciprocal language links"
+    ],
+    "decision_steps": [
+      "Ask the child to identify a varied six-symbol sample without correcting during the attempt.",
+      "Sample five tone forms with one natural model and note which the child can identify or imitate.",
+      "Try three short blends, recording what the child can combine after at most one model.",
+      "Ask the child to copy three different symbol shapes on blank paper without demanding perfect penmanship.",
+      "Cover the Chinese characters and see whether the child can use Zhuyin to decode one short phrase."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Useful next step",
+        "check": "Separate observations for symbols, tones, blending, writing and reading",
+        "why": "The page keeps every choice separate and lets the family choose any next activity"
+      },
+      {
+        "need": "Child privacy",
+        "check": "No account, form submission, analytics field or stored result",
+        "why": "A parent can use the tool without creating a child profile"
+      },
+      {
+        "need": "Responsible interpretation",
+        "check": "No stage or level, explicit limits and no diagnostic language",
+        "why": "A three-minute sample can record today’s interaction without labeling a learner"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not needed to complete the observation guide. It appears after the free resources as an optional way to add short listening, tracing, tone or blending activities across all 37 symbols.",
+    "sources": [
+      {
+        "title": "Free private three-minute Zhuyin observation guide",
+        "url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-readiness-check.html"
+      },
+      {
+        "title": "Traditional Chinese version of the observation guide",
+        "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/tools/zhuyin-readiness-check.html"
+      },
+      {
+        "title": "Taiwan Ministry of Education Bopomofo Handbook",
+        "url": "https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/index.html"
+      },
+      {
+        "title": "Taiwan Ministry of Education Zhuyin Practice Book",
+        "url": "https://stroke-order.learningweb.moe.edu.tw/phoneticWrite.jsp?la=0"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is this a Zhuyin readiness test, score or diagnosis?",
+        "a": "No. It records five separate observations without a total, score, stage or level. It cannot determine school readiness, a reading level, a speech issue or any developmental condition."
+      },
+      {
+        "q": "Does the tool save my child's answers?",
+        "a": "No. There is no account, form submission or cloud storage. Choices remain only in the current browser tab and disappear when the page is closed or reset."
+      },
+      {
+        "q": "When should I repeat the observation?",
+        "a": "Only when another observation would be useful. Change the symbols, blends and phrase rather than drilling or memorizing the exact sample."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "teacher_lms_resource",
+    "match": [
+      "bopomofo qti question bank",
+      "zhuyin qti question bank",
+      "bopomofo questions for canvas",
+      "zhuyin questions for moodle",
+      "bopomofo lms question bank"
+    ],
+    "query": "Where can I download a free Bopomofo QTI question bank for Canvas or Moodle?",
+    "page_title": "Free Bopomofo QTI 2.1 and Moodle XML Question Bank",
+    "meta_description": "Download 37 editable Bopomofo questions as English or Traditional Chinese QTI 2.1 and Moodle XML, with a CSV answer key and SHA-256 metadata.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html",
+    "primary_resource_label": "Download the free Bopomofo LMS question bank",
+    "lead": "Use the free bilingual LMS question bank linked above: it contains one editable symbol-to-Pinyin item for each of the 37 Bopomofo symbols, with separate QTI 2.1 and Moodle XML downloads.",
+    "detail": "The open CC BY 4.0 bank provides English and Traditional Chinese QTI 2.1 ZIP packages, English and Traditional Chinese Moodle XML files, a CSV answer key and JSON-LD metadata with byte lengths and SHA-256 hashes. Each QTI archive contains imsmanifest.xml plus 37 self-contained single-response assessmentItem files. It uses no images, external media, account, tracking or child data. Import behavior varies by LMS version, so the resource explicitly recommends a staging course rather than claiming guaranteed compatibility.",
+    "follow_up": "Download the format your LMS currently supports, import it into a staging course, inspect all 37 items and edit wording or feedback for your class. The bank is practice content, not a standardized test, norm, level or school-readiness measure.",
+    "bullets": [
+      "Complete 21-initial, 3-medial and 13-final coverage from one canonical source table",
+      "Separate English and Traditional Chinese QTI 2.1 ZIP packages",
+      "Separate native Moodle XML imports for both languages",
+      "Stable item IDs, one correct response, answer key, byte lengths and SHA-256",
+      "CC BY 4.0, no account, tracking, external media or learner-data collection"
+    ],
+    "decision_steps": [
+      "Check the LMS import documentation for the version currently deployed by the school.",
+      "Choose QTI 2.1 for a compatible QTI importer or Moodle XML for Moodle's native importer.",
+      "Import into a staging course without extracting the QTI ZIP.",
+      "Review each item, category, answer and feedback before assigning it.",
+      "Treat results as classroom practice observations, never as a diagnosis or readiness score."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Canvas-compatible route",
+        "check": "QTI 2.1 ZIP with imsmanifest.xml and 37 assessmentItem files",
+        "why": "Canvas currently documents QTI 1.2 and 2.1 imports, but each installation should still be tested"
+      },
+      {
+        "need": "Moodle-native route",
+        "check": "Moodle XML with one category, stable idnumbers and 37 multichoice questions",
+        "why": "The native format avoids presenting QTI 3.0 as universally supported"
+      },
+      {
+        "need": "Auditable content",
+        "check": "CSV answer key plus JSON-LD byte lengths and SHA-256 hashes",
+        "why": "Teachers and catalog tools can verify the exact files before reuse"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, import or edit the question bank. It appears after the free teacher resource as an optional on-device practice layer for families.",
+    "sources": [
+      {
+        "title": "Free Bopomofo QTI 2.1 and Moodle XML question bank",
+        "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-lms-question-bank.html"
+      },
+      {
+        "title": "1EdTech QTI 2.1 implementation guide",
+        "url": "https://www.imsglobal.org/question/qtiv2p1/imsqti_implv2p1.html"
+      },
+      {
+        "title": "Canvas QTI import documentation",
+        "url": "https://community.instructure.com/en/kb/articles/660996-how-do-i-import-quizzes-from-qti-packages"
+      },
+      {
+        "title": "Moodle question import documentation",
+        "url": "https://docs.moodle.org/en/Import_questions"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is this a Common Cartridge file?",
+        "a": "No. It is an item-level QTI 2.1 content package plus separate Moodle XML exports. The page labels each format precisely and does not rename the package as Common Cartridge."
+      },
+      {
+        "q": "Will the QTI ZIP import into every Canvas or LMS version?",
+        "a": "No universal guarantee is possible. Canvas currently documents QTI 1.2 and 2.1 imports, but institutions customize and upgrade at different times. Import into a staging course and inspect all questions first."
+      },
+      {
+        "q": "Can I use the total as a Zhuyin readiness score?",
+        "a": "No. These are editable symbol-to-Pinyin practice items without norms, levels or cut scores. They do not assess pronunciation, tone production, reading fluency or school readiness."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "open_epub_resource",
+    "match": [
+      "free bopomofo epub",
+      "free zhuyin epub",
+      "bopomofo ebook for e-readers",
+      "zhuyin ebook download",
+      "bopomofo opds catalog"
+    ],
+    "query": "Where can I download a free Bopomofo EPUB for e-readers?",
+    "page_title": "Free Accessible Bopomofo EPUB 3.3 and OPDS Catalog",
+    "meta_description": "Download a free English or Traditional Chinese EPUB 3.3 reference for all 37 Bopomofo symbols, plus open OPDS catalog files for compatible tools.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html",
+    "primary_resource_label": "Download the free Bopomofo EPUB",
+    "lead": "Use the free bilingual EPUB resource on this page: it provides separate English and Traditional Chinese editions covering all 37 Bopomofo symbols, plus web-reading and OPDS catalog options.",
+    "detail": "Each CC BY 4.0 EPUB 3.3 edition contains a table of contents, text-first chapters for 21 initials, 3 medials and 13 finals, Hanyu Pinyin and broad IPA correspondences, example characters and a short non-diagnostic practice guide. The package has no scripts, images, tracking, account, learner profile or child-data collection. Downloadable Readium manifest JSON and OPDS 2.0/1.2 catalog files describe the same English and Traditional Chinese acquisitions. Because static hosting may return generic JSON or XML HTTP Content-Types, URL-based ingestion by strict catalog clients is not claimed. EPUB support also varies by reading system, so the page provides SHA-256 metadata and recommends checking the target reader rather than promising universal rendering.",
+    "follow_up": "Download the edition that matches the reader language, open it in a current EPUB 3 reading app and confirm its navigation and Bopomofo font coverage. Use the online text edition if a device cannot render EPUB correctly. This is a symbol reference, not audio instruction, a pronunciation assessment or a complete Chinese course.",
+    "bullets": [
+      "Complete 21-initial, 3-medial and 13-final coverage from one canonical 37-symbol dataset",
+      "Separate English and Traditional Chinese EPUB 3.3 editions with deterministic bytes",
+      "Text-first reading order, structural navigation and explicit accessibility metadata",
+      "Downloadable Readium manifest JSON plus OPDS 2.0 and OPDS 1.2 catalog files",
+      "CC BY 4.0, no account, scripts, tracking, external media or learner-data collection"
+    ],
+    "decision_steps": [
+      "Choose the English or Traditional Chinese edition for the reader.",
+      "Download the EPUB without extracting it, or download the OPDS file and test import in a compatible catalog reader.",
+      "Check the table of contents, reading order and Bopomofo glyph rendering on the target device.",
+      "Use the matching online text edition if the reader lacks reliable EPUB 3 or font support.",
+      "Pair the reference with fluent spoken models because a text-only book cannot assess pronunciation."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Offline e-reader copy",
+        "check": "EPUB 3.3 with all 37 symbols, navigation and no scripts or remote media",
+        "why": "The book remains portable and usable without creating an account"
+      },
+      {
+        "need": "Browser-accessible copy",
+        "check": "Matching text-first Web Publication with a Readium manifest",
+        "why": "Families can read the same reference when an EPUB app is unavailable"
+      },
+      {
+        "need": "Library or catalog discovery",
+        "check": "OPDS 2.0 JSON and OPDS 1.2 Atom feeds with open-access acquisitions and SHA-256",
+        "why": "Catalog tools that accept static JSON or XML can discover the exact bilingual files and verify their bytes"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, read or reuse the open book. It appears after the free publication as an optional on-device activity layer for families who want more than a text reference.",
+    "sources": [
+      {
+        "title": "Free Bopomofo EPUB 3.3 reference and OPDS catalog",
+        "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html"
+      },
+      {
+        "title": "W3C EPUB 3.3 specification",
+        "url": "https://www.w3.org/TR/epub-33/"
+      },
+      {
+        "title": "W3C EPUB Accessibility 1.1",
+        "url": "https://www.w3.org/TR/epub-a11y-11/"
+      },
+      {
+        "title": "Readium Web Publication Manifest",
+        "url": "https://readium.org/webpub-manifest/"
+      },
+      {
+        "title": "OPDS 2.0 specification",
+        "url": "https://specs.opds.io/opds-2.0"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Will the EPUB work in every e-reader?",
+        "a": "No universal guarantee is possible. EPUB 3 and Bopomofo font support vary by reading system. Test the target reader and use the matching online text edition if navigation or glyph rendering is incomplete. The static host may return generic JSON or XML HTTP Content-Types, so catalog clients that require exact OPDS or WebPub media types may need direct file import."
+      },
+      {
+        "q": "Does the EPUB include audio or test pronunciation?",
+        "a": "No. It is a text-first reference for symbol, Pinyin, IPA and example-word lookup. Pair it with fluent spoken models; it does not score speech, tones, fluency or school readiness."
+      },
+      {
+        "q": "Does the open book collect learner data?",
+        "a": "No. The EPUB and web publication use no account, scripts, analytics, tracking or child profile. They are downloadable CC BY 4.0 files."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "library_catalog_resource",
+    "match": [
+      "school library download catalog records",
+      "catalog records for a bopomofo epub",
+      "marcxml mods bibframe bopomofo"
+    ],
+    "query": "Where can a school library download catalog records for a Bopomofo EPUB?",
+    "page_title": "Download MARCXML, MODS and BIBFRAME Records for a Bopomofo EPUB",
+    "meta_description": "Download two review-ready Bopomofo EPUB catalog records as MARCXML, MODS 3.8, BIBFRAME 2.0 JSON-LD and Turtle, with SHA-256.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html",
+    "primary_resource_label": "Download the Bopomofo library catalog package",
+    "lead": "Use the open Bopomofo library catalog package. It provides two review-ready edition records—English and Traditional Chinese—as MARCXML, MODS 3.8, BIBFRAME 2.0 JSON-LD and Turtle, plus one ZIP bundle.",
+    "detail": "The records describe the exact open EPUB files rather than an app. Each edition includes a stable local identifier, language, title, corporate creator, publication data, format, rights, subjects, direct download URL, byte size and SHA-256. MARCXML and MODS are validated against pinned official schemas; the two BIBFRAME serializations must parse to the same RDF graph and use terms declared by the official vocabulary. Download from the bilingual guide at https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html. These are candidate records, so a cataloger should still review local 040, subject, classification, access and holdings policy before import; they do not assign an ISBN, LCCN or OCLC number.",
+    "follow_up": "Import into a test collection first. Confirm title display, script handling, subjects, links and local control fields before exposing the record in a public catalog. A static host may return generic XML or JSON Content-Types, so download-first import is the documented fallback for strict systems.",
+    "bullets": [
+      "One deterministic ZIP contains the MARCXML, MODS 3.8, BIBFRAME JSON-LD, BIBFRAME Turtle, README and SHA-256 checksum list.",
+      "The MARCXML collection carries two bibliographic records with 001, 005, 007, 008, 041, 245, 264, 3XX, 5XX, 6XX and 856 data.",
+      "Each record links to one exact EPUB edition and carries its byte length and SHA-256 provenance.",
+      "The package is CC BY 4.0, requires no account and remains usable without any app."
+    ],
+    "decision_steps": [
+      "Open the bilingual library catalog guide.",
+      "Download the complete ZIP or the syntax your library system accepts.",
+      "Verify checksums, then review local descriptive cataloging and access fields.",
+      "Import into a test collection before publishing the record to the public catalog."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Traditional ILS import",
+        "check": "MARCXML collection with separate English and Traditional Chinese edition records",
+        "why": "Libraries can review familiar MARC fields before loading either or both editions"
+      },
+      {
+        "need": "Metadata crosswalk or repository ingest",
+        "check": "MODS 3.8 records validated against the official schema",
+        "why": "Repositories can retain descriptive structure without parsing MARC fixed fields"
+      },
+      {
+        "need": "Linked-data workflow",
+        "check": "Equivalent BIBFRAME 2.0 JSON-LD and Turtle Work/Instance graphs",
+        "why": "Graph tools can choose either syntax and still receive the same 94 RDF triples"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, validate, import or reuse these catalog records or the EPUB. If currently available, it appears only after the free library resource as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo EPUB library catalog records",
+        "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html"
+      },
+      {
+        "title": "Library of Congress MARCXML schema",
+        "url": "https://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd"
+      },
+      {
+        "title": "Library of Congress MODS 3.8 schema",
+        "url": "https://www.loc.gov/standards/mods/v3/mods-3-8.xsd"
+      },
+      {
+        "title": "Library of Congress BIBFRAME 2.0 model",
+        "url": "https://www.loc.gov/bibframe/docs/bibframe2-model.html"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I import these records without reviewing them?",
+        "a": "No. They are schema-valid candidate records, not institution-approved cataloging. Review local control fields, subjects, classification, access and holdings policy in a staging collection."
+      },
+      {
+        "q": "Do the records assign an ISBN, LCCN or OCLC number?",
+        "a": "No. They use clearly labeled local identifiers and do not claim an external control number."
+      },
+      {
+        "q": "What if my library system rejects the file URL?",
+        "a": "Download the MARCXML, MODS, JSON-LD or Turtle file first and import it locally. Static hosting can return generic XML or JSON Content-Types that strict URL importers reject."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "oer_repository_metadata",
+    "match": [
+      "oer repository download metadata",
+      "metadata for a bopomofo learning resource",
+      "oai-dc dcmi lrmi bopomofo"
+    ],
+    "query": "Where can an OER repository download metadata for a Bopomofo learning resource?",
+    "page_title": "Download DCMI and LRMI Metadata for an Open Bopomofo Learning Resource",
+    "meta_description": "Download schema-valid OAI-DC plus offline-parsable DCMI Terms and LRMI JSON-LD for two open Bopomofo EPUB editions.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html",
+    "primary_resource_label": "Download the Bopomofo OER metadata package",
+    "lead": "Use the open Bopomofo OER metadata package. It describes the exact English and Traditional Chinese editions of a 37-symbol EPUB as standalone OAI-DC XML, DCMI Terms JSON-LD and LRMI JSON-LD, with one deterministic ZIP.",
+    "detail": "Each record describes a learning resource rather than an app. Source URLs, languages, byte lengths, modification timestamps and SHA-256 values come from the published EPUB manifest. The OAI-DC files validate against pinned official OAI and DCMI schemas. Both JSON-LD graphs use inline contexts and parse without network access; their DCMI and LRMI terms are checked against pinned official RDF vocabularies, including the LRMI supportingDocument resource type and instruction educational use. Download from https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html. These are metadata candidates, not an OAI-PMH service, DOI assignment, institution-approved record or universal-ingest guarantee.",
+    "follow_up": "Ingest into a staging collection first. Map local subjects, audience fields and identifiers, verify links and hashes, and inspect English, Traditional Chinese and Bopomofo display before publishing. Strict URL importers may need local file upload because static hosting can return generic XML or JSON Content-Types.",
+    "bullets": [
+      "Two standalone OAI-DC records, one for each exact EPUB language edition",
+      "One DCMI Terms JSON-LD graph with audience, education level, instructional method, rights and provenance",
+      "One LRMI JSON-LD graph with LearningResource, supportingDocument, instruction and explicit learning outcomes",
+      "Inline JSON-LD contexts, pinned official vocabularies and deterministic SHA-256-checked bytes",
+      "CC BY 4.0, no account required and no dependency on an app"
+    ],
+    "decision_steps": [
+      "Open the bilingual OER repository metadata guide.",
+      "Download the complete ZIP or the individual syntax your repository accepts.",
+      "Verify checksums and confirm that each metadata record points to the intended EPUB edition.",
+      "Map local subjects, audiences and identifiers in a staging collection.",
+      "Review language display and repository policy before making the record public."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Simple XML crosswalk",
+        "check": "Standalone OAI-DC record validated against official schemas",
+        "why": "A repository can map the 15-element Dublin Core view without treating the file as an OAI-PMH response"
+      },
+      {
+        "need": "Rich general-purpose RDF",
+        "check": "DCMI Terms JSON-LD with audience, method, level, rights, relations and provenance",
+        "why": "Repository fields retain more educational and fixity context than Simple Dublin Core"
+      },
+      {
+        "need": "Learning-resource discovery",
+        "check": "LRMI JSON-LD using official terms and controlled concept URIs",
+        "why": "Educational catalogs can identify resource type, instructional use, level and intended outcomes"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, validate, ingest or reuse the metadata or EPUB. If currently available, it appears only after the free OER resource as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo OER repository metadata package",
+        "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-oer-repository-metadata.html"
+      },
+      {
+        "title": "Open Archives Initiative OAI-DC XML schema",
+        "url": "https://www.openarchives.org/OAI/2.0/oai_dc.xsd"
+      },
+      {
+        "title": "DCMI Metadata Terms",
+        "url": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"
+      },
+      {
+        "title": "LRMI Terms",
+        "url": "https://www.dublincore.org/specifications/lrmi/lrmi_terms/"
+      },
+      {
+        "title": "LRMI Concept Schemes",
+        "url": "https://www.dublincore.org/specifications/lrmi/concept_schemes/"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can an OAI-PMH harvester use this as an endpoint?",
+        "a": "No. The package provides standalone OAI-DC metadata records only. It does not implement OAI-PMH Identify, ListRecords, resumption tokens or a harvesting endpoint."
+      },
+      {
+        "q": "Does this package claim IMS or IEEE LOM conformance?",
+        "a": "No. It deliberately provides DCMI and LRMI metadata and makes no IMS or IEEE LOM conformance claim."
+      },
+      {
+        "q": "What learner age does the metadata claim?",
+        "a": "No fixed age range is claimed. The EPUB is a beginner reference for learners of any age; children should use it with a caregiver or educator. It is not a diagnostic assessment or complete Chinese course."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "dcat_open_data_catalog",
+    "match": [
+      "open-data catalog harvest a bopomofo dataset",
+      "bopomofo dataset in dcat 3",
+      "dcat 3 bopomofo open data catalog"
+    ],
+    "query": "Where can an open-data catalog harvest a Bopomofo dataset in DCAT 3?",
+    "page_title": "Harvest Sixteen Open Bopomofo Datasets from a Static DCAT 3 Catalog",
+    "meta_description": "Download a W3C DCAT 3 JSON-LD or Turtle catalog for sixteen Bopomofo datasets and 80 exact distributions with SPDX SHA-256.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html",
+    "primary_resource_label": "Download the Bopomofo DCAT 3 catalog",
+    "lead": "Use the static Bopomofo DCAT 3 open-data catalog. It lists sixteen related datasets and 80 exact distributions in equivalent JSON-LD and Turtle graphs, with one deterministic ZIP bundle.",
+    "detail": "The catalog covers the 37-symbol reference data, static JSON API, SKOS and SHACL vocabulary, Croissant, CSVW and Data Package tables, RFC 8493 BagIt, OCFL 1.1, RO-Crate 1.3, METS 2.0 with PREMIS 3.0, OAI-ORE 1.0 and the LDES 1.0 with TREE event stream across preservation, research-object, compound-object and synchronization packages, IIIF Presentation 3 visual resources, Anki imports, LMS packages, EPUB and OPDS publication files, library records, and OER repository metadata. Every direct distribution records an IANA media-type IRI, byte size, CC BY 4.0 license, language IRIs and an SPDX SHA-256 checksum calculated from the published bytes. Each dcat:CatalogRecord has exactly one foaf:primaryTopic, and the static API is represented separately as a dcat:DataService. Download from https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html. This is a static DCAT description, not portal registration, W3C certification, institutional endorsement or proof that an external catalog has harvested it.",
+    "follow_up": "Parse the JSON-LD or Turtle in a staging catalog, read dcat:dataset and dcat:record, verify distribution hashes and byte sizes, and map themes, language policies and local identifiers before publication. Use dcat:downloadURL for files and dcat:endpointURL for the read-only API.",
+    "bullets": [
+      "Sixteen catalogued Bopomofo datasets with bilingual titles and descriptions",
+      "Eighty direct distributions spanning data, linked data, tabular metadata, preservation, research-object, compound-object and synchronization packages, visual resources, learning packages, publications and repository metadata",
+      "Equivalent JSON-LD and Turtle RDF graphs with stable named resources",
+      "SPDX SHA-256 checksums, exact byte sizes, IANA media-type IRIs and distribution-level CC BY 4.0 licenses",
+      "One dcat:DataService for the versioned static JSON API, with OpenAPI endpoint description"
+    ],
+    "decision_steps": [
+      "Open the bilingual DCAT 3 catalog guide.",
+      "Download JSON-LD, Turtle or the deterministic ZIP bundle.",
+      "Parse the graph and confirm each CatalogRecord has one primary topic.",
+      "Verify distribution byte sizes and SPDX SHA-256 values before ingest.",
+      "Map local themes and policy fields in a staging catalog before publishing."
+    ],
+    "comparison_rows": [
+      {
+        "need": "JSON-LD ingestion",
+        "check": "Inline contexts and stable named IRIs for catalog, records, datasets, distributions, checksums and service",
+        "why": "A JSON-LD processor can parse the graph without fetching a remote context"
+      },
+      {
+        "need": "Turtle or linked-data tooling",
+        "check": "A Turtle serialization isomorphic with the JSON-LD graph",
+        "why": "RDF tools can choose either syntax without receiving different catalog semantics"
+      },
+      {
+        "need": "File integrity checks",
+        "check": "Distribution-level SPDX SHA-256 plus xsd:nonNegativeInteger byte size",
+        "why": "Harvesters can detect changed or incomplete bytes before local publication"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to download, parse, verify or reuse the DCAT catalog or any listed open resource. If currently available, it appears only after the free catalog as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo DCAT 3 open-data catalog",
+        "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-dcat3-open-data-catalog.html"
+      },
+      {
+        "title": "W3C Data Catalog Vocabulary (DCAT) Version 3",
+        "url": "https://www.w3.org/TR/vocab-dcat-3/"
+      },
+      {
+        "title": "Official W3C DCAT 3 Turtle vocabulary",
+        "url": "https://www.w3.org/ns/dcat3.ttl"
+      },
+      {
+        "title": "SPDX RDF Terms",
+        "url": "https://spdx.org/rdf/terms/"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Has this catalog been registered with a government or institutional portal?",
+        "a": "No. It is a publicly downloadable static DCAT 3 description. It does not claim portal registration, W3C certification, institutional approval or confirmed harvesting by any third party."
+      },
+      {
+        "q": "Are the checksums independent authenticity proofs?",
+        "a": "No. They are useful SHA-256 fixity values, but the catalog and files share the same host. A consumer that needs authenticity should preserve or verify the metadata through a separately protected channel."
+      },
+      {
+        "q": "Is the landing page itself a data distribution?",
+        "a": "No. The graph uses dcat:landingPage for human-readable guides and dcat:downloadURL for direct file distributions. The static API is modeled as a dcat:DataService."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "ldes_tree_event_stream",
+    "match": [
+      "linked data client replicate bopomofo",
+      "bopomofo ldes event stream",
+      "zhuyin tree hypermedia",
+      "ldes 1.0 and tree event stream"
+    ],
+    "query": "Where can a Linked Data client replicate Bopomofo as an LDES 1.0 and TREE event stream?",
+    "page_title": "Replicate All 37 Bopomofo Symbols through a Static LDES 1.0 and TREE Event Stream",
+    "meta_description": "Consume 37 immutable Bopomofo version members from three bounded JSON-LD TREE nodes with a stable LDES 1.0 entry point and SHACL shape.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/",
+    "primary_resource_label": "Open the Bopomofo LDES and TREE event-stream guide",
+    "lead": "Start from the stable app-independent JSON-LD EventStream IRI, then traverse three immutable TREE nodes to replicate one first-version event for every canonical Bopomofo symbol.",
+    "detail": "The package follows the official LDES 1.0 consumer specification, vocabulary and server primer together with the TREE hypermedia specification. The canonical JSON-LD entry point is both an ldes:EventStream and the mutable root tree:Node; it has exactly one tree:view pointing to itself. It publishes ldes:timestampPath as dcterms:created, ldes:versionOfPath as dcterms:isVersionOf, a version-create class, an inline SHACL member shape, and a retention policy whose ldes:startingFrom equals the first retained event. Six typed TREE relations form paired inclusive-lower and exclusive-upper dcterms:created bounds for three JSON-LD nodes. Each node states ldes:immutable true and embeds its own tree:member descriptions. The 37 unique member IRIs contain timezone-qualified timestamps, link stable SKOS concept IRIs, and reproduce the canonical CSV fields for U+3105 through U+3129. The Turtle file is a discovery overview linking to the canonical JSON-LD root rather than a claim of server-side content negotiation. A deterministic nine-member ZIP, SHA-256 list, bilingual reuse guide and CC BY 4.0 notice support offline validation. Every JSON-LD document uses an inline context, and all RDF graphs, relation bounds, source concepts, checksums and ZIP properties are tested. This publisher-authored static snapshot does not claim a live write API, custom Cache-Control headers, registry listing, external replication, certification or LDES/TREE community endorsement.",
+    "follow_up": "Open the JSON-LD entry point, confirm one self tree:view and read its timestamp, version and shape paths. Follow each tree:relation/tree:node pair that your time filter cannot prune, extract the stream's tree:member IRIs, validate their dcterms:created and dcterms:isVersionOf values, and persist emitted member IRIs. For offline review, verify checksums-sha256.txt before opening the deterministic ZIP.",
+    "bullets": [
+      "One stable ldes:EventStream and root node with exactly one self tree:view",
+      "Thirty-seven immutable version members spanning every canonical Bopomofo symbol",
+      "Three JSON-LD TREE nodes with paired lower and upper dcterms:created bounds",
+      "Explicit timestampPath, versionOfPath, create semantics, retention policy and SHACL shape",
+      "Turtle discovery overview, deterministic bundle and byte-level SHA-256 verification"
+    ],
+    "decision_steps": [
+      "Open the bilingual guide and record the canonical JSON-LD EventStream IRI.",
+      "Parse the root and confirm its TREE view, timestamp path and version path.",
+      "Traverse the six bounded relations to the three immutable nodes.",
+      "Emit each unique TREE member once and verify all 37 SKOS version targets.",
+      "Validate the SHACL paths and preserve member state before synchronizing again."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Static incremental discovery",
+        "check": "One root with paired time-bound TREE relations to three dereferenceable nodes",
+        "why": "A client can traverse or prune finite branches without a custom query API"
+      },
+      {
+        "need": "Duplicate-safe replication",
+        "check": "Thirty-seven unique immutable member IRIs with timezone-qualified timestamps",
+        "why": "A consumer can persist emitted IRIs and avoid replaying the same version"
+      },
+      {
+        "need": "Version-aware reuse",
+        "check": "Every event has one dcterms:isVersionOf link to a stable SKOS concept",
+        "why": "Downstream systems can distinguish an immutable event from the entity it versions"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is not required to discover, parse, traverse, validate or replicate the LDES stream. If currently available, it appears only after the complete open event stream as an optional on-device practice layer.",
+    "sources": [
+      {
+        "title": "Bopomofo LDES 1.0 and TREE event stream",
+        "url": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-ldes/"
+      },
+      {
+        "title": "Linked Data Event Streams 1.0 specification",
+        "url": "https://semiceu.github.io/LinkedDataEventStreams/releases/1.0.0/"
+      },
+      {
+        "title": "LDES 1.0 server primer",
+        "url": "https://semiceu.github.io/LinkedDataEventStreams/releases/1.0.0/server-primer.html"
+      },
+      {
+        "title": "TREE hypermedia specification",
+        "url": "https://w3id.org/tree/specification"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can an LDES client start from the Turtle file?",
+        "a": "Yes. The Turtle overview has one tree:view link to the canonical JSON-LD root. The publication does not claim server-side content negotiation; clients follow the explicit link and then traverse the JSON-LD nodes."
+      },
+      {
+        "q": "Why are the three member nodes marked immutable?",
+        "a": "LDES members are append-only, and the official client algorithm can avoid refetching pages that explicitly state ldes:immutable true. Any incompatible future revision must use new versioned node IRIs rather than changing these bytes."
+      },
+      {
+        "q": "Does this prove that another registry or client has replicated the stream?",
+        "a": "No. It is a publicly dereferenceable, internally validated static publication. It does not claim registry listing, third-party replication, certification or community endorsement."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "short_sentence_reading_bridge",
+    "match": [
+      "can blend zhuyin syllables but cannot read a whole sentence",
+      "free printable zhuyin short sentence reading practice",
+      "zhuyin sentence reading cards",
+      "孩子會拼注音但不會讀句子怎麼練",
+      "免費注音短句閱讀練習",
+      "注音短句閱讀卡"
+    ],
+    "query": "How can I help a child who can blend Zhuyin syllables but cannot read a whole sentence?",
+    "page_title": "Free Zhuyin Short Sentence Reading Practice | Printable Cards",
+    "meta_description": "Free Zhuyin sentence cards bridge blending to short reading: show annotations, hide them, then reread. No login, score, upload or saved profile.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-short-sentence-reading-cards.html",
+    "primary_resource_label": "Open the free Zhuyin sentence reading cards",
+    "lead": "Move from syllable blending to sentence reading with one small change at a time: read a short fully annotated line, hide its Zhuyin, then reread exactly the same words without a timer or score.",
+    "detail": "The free bilingual tool linked above provides 24 original Traditional Chinese sentences in three steps: three-character lines, six- or seven-character everyday sentences, and two-clause sentences. Every character has a checked standard Zhuyin reading; phrase gaps and punctuation create natural pause points. A learner first decodes with the annotations visible, then taps once to hide them and rereads the same sentence. Nothing is typed, uploaded, scored or saved, and the set can be printed. Taiwan's official first-stage Mandarin outcomes include using Zhuyin material to learn reading (3-I-4) and reading text accurately at an appropriate rate (5-I-1). Those outcomes support the scope, but the Ministry of Education did not design, test or endorse this independent activity.",
+    "follow_up": "Start with three cards and stop while the activity still feels calm. If the learner repeatedly hesitates on one syllable, return to listening or blending practice instead of turning the sentence into a speed test. The free cards are complete without an app.",
+    "bullets": [
+      "Twenty-four original sentences across three progressive lengths",
+      "Standard Zhuyin on every character, with phrase spacing and punctuation kept visible",
+      "One-tap hide-and-reread flow with no timer, answer button, score, level or saved progress",
+      "Mobile-friendly in the browser and printable without an account or download form",
+      "English and Traditional Chinese pages with direct Ministry of Education references"
+    ],
+    "decision_steps": [
+      "Choose the three-character level and generate only three cards.",
+      "Read one sentence aloud while pointing to each annotated character.",
+      "Let the learner decode the same sentence with Zhuyin visible.",
+      "Hide the annotations and invite one unhurried reread of exactly the same line.",
+      "Stop, repeat another day, or return to syllable blending if the sentence is not comfortable."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Still pauses on individual syllables",
+        "check": "Use listening and blending practice before adding a full sentence",
+        "why": "A sentence adds memory and meaning demands before syllable joining is comfortable"
+      },
+      {
+        "need": "Can blend but loses the whole sentence",
+        "check": "Use one short annotated sentence with visible phrase gaps",
+        "why": "The learner can focus on a complete thought without facing a long passage"
+      },
+      {
+        "need": "Relies on the annotation every time",
+        "check": "Hide Zhuyin only for a second reading of the exact same sentence",
+        "why": "The task changes one support at a time without claiming that a single reread proves mastery"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is optional and is not needed for the free sentence cards. It can reinforce listening, tracing, tones and syllable blending before sentence reading, with a one-time unlock, no ads, no subscription and no account.",
+    "sources": [
+      {
+        "title": "Free Zhuyin short sentence reading cards",
+        "url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-short-sentence-reading-cards.html"
+      },
+      {
+        "title": "CIRN Mandarin learning outcomes for the first learning stage",
+        "url": "https://cirn.k12ea.gov.tw/TWELVE/List.aspx?fid=11010"
+      },
+      {
+        "title": "Taiwan Ministry of Education Mandarin Phonetic Symbols handbook",
+        "url": "https://language.moe.gov.tw/001/Upload/Files/site_content/M0001/juyin/html_ch/index.html"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is this a reading test or level assessment?",
+        "a": "No. It has no score, timer, pass/fail result or saved progress and cannot determine reading fluency, school readiness or a learning difficulty."
+      },
+      {
+        "q": "Why hide Zhuyin only after reading the same sentence once?",
+        "a": "It removes one support while keeping the words and meaning familiar. One successful reread is still just practice, not proof of mastery."
+      },
+      {
+        "q": "Does the tool collect what a child reads?",
+        "a": "No reading response is entered or collected. Level, set and visibility choices remain only in page memory and reset when the page closes."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "connected_text_mini_reader",
+    "match": [
+      "move from zhuyin sentences to a short story",
+      "free printable zhuyin mini reader",
+      "zhuyin decodable story for kids",
+      "孩子從注音句子進到短篇故事怎麼練",
+      "免費注音小讀本",
+      "可列印注音短文"
+    ],
+    "query": "How can I help a child move from Zhuyin sentences to a short story?",
+    "page_title": "Free Printable Zhuyin Mini-Readers | 3 Original Stories",
+    "meta_description": "Read or print three original six-page Zhuyin mini-readers. Show all annotations, hide alternate pages, then reread without Zhuyin. No login or score.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-decodable-mini-reader.html",
+    "primary_resource_label": "Open the free Zhuyin mini-reader generator",
+    "lead": "Move from isolated sentences to connected text with one small six-page story at a time: read with full Zhuyin, hide the annotations on alternate pages, then reread the same story without visible Zhuyin.",
+    "detail": "The free bilingual tool linked above contains three original six-page mini-readers and 18 checked Traditional Chinese sentences. Each page keeps one short line on screen, every character has a standard Zhuyin annotation, and the same story supports three passes: all annotations visible, annotations hidden on pages 2, 4 and 6, then all annotations hidden. Nothing is typed, uploaded, timed, scored or saved, and the selected reader can be printed. Taiwan's official first-stage Mandarin outcomes include using Zhuyin material to learn reading (3-I-4) and reading text accurately at an appropriate rate (5-I-1). Those outcomes support the scope, but the Ministry of Education did not write, test or endorse these independent stories.",
+    "follow_up": "Choose one story and keep the first pass fully annotated. Use the middle pass only after the learner understands what happened across all six pages. A final no-Zhuyin reread is optional and does not prove fluency, mastery or school readiness. The free readers are complete without an app.",
+    "bullets": [
+      "Three original six-page stories with 18 checked Traditional Chinese sentences",
+      "Standard Zhuyin on every character, with phrase gaps and punctuation kept visible",
+      "Three-pass flow: full annotations, alternate-page support, then no visible Zhuyin",
+      "Browser reading and private printing with no account, form, upload, timer, score or saved profile",
+      "English and Traditional Chinese pages with direct Ministry of Education references"
+    ],
+    "decision_steps": [
+      "Choose one six-page story and read its title together.",
+      "Read all six pages with every Zhuyin annotation visible.",
+      "Talk briefly about the character, action and ending before removing support.",
+      "Hide annotations on pages 2, 4 and 6 and reread the same connected text.",
+      "Use the no-Zhuyin pass only if it feels calm; otherwise keep the support visible."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Still pauses inside a single sentence",
+        "check": "Return to the short-sentence cards before adding a six-page story",
+        "why": "Connected text adds memory and meaning demands across several lines"
+      },
+      {
+        "need": "Reads each line but loses the story",
+        "check": "Keep all Zhuyin visible and discuss what changed from page to page",
+        "why": "The goal is to connect meaning, not merely finish six separate sentences"
+      },
+      {
+        "need": "Ready to reduce annotation support",
+        "check": "Hide Zhuyin on alternate pages before hiding it everywhere",
+        "why": "A middle pass changes one support gradually without turning reading into a test"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is optional and is not needed for the free mini-readers. It can reinforce listening, tracing, tones and syllable blending before connected-text reading, with a one-time unlock, no ads, no subscription and no account.",
+    "sources": [
+      {
+        "title": "Free Zhuyin mini-reader generator",
+        "url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-decodable-mini-reader.html"
+      },
+      {
+        "title": "CIRN Mandarin learning outcomes for the first learning stage",
+        "url": "https://cirn.k12ea.gov.tw/TWELVE/List.aspx?fid=11010"
+      },
+      {
+        "title": "Taiwan Ministry of Education Mandarin Phonetic Symbols handbook",
+        "url": "https://language.moe.gov.tw/001/Upload/Files/site_content/M0001/juyin/html_ch/index.html"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Are these stories copied or adapted from a published children's book?",
+        "a": "No. All three story sequences and every sentence were written for this free tool; it reproduces no book, illustration, audio clip or Ministry worksheet."
+      },
+      {
+        "q": "Does reading the no-Zhuyin pass prove fluency?",
+        "a": "No. It is one supported reread of familiar text, not a score, level, assessment or proof of mastery."
+      },
+      {
+        "q": "Does the tool collect what a child reads?",
+        "a": "No reading response is entered or collected. Story and annotation choices remain only in page memory and reset when the page closes."
+      }
+    ]
+  },
+  {
+    "app_key": "lumibopomofo",
+    "kind": "story_sequence_comprehension",
+    "match": [
+      "understand and retell a zhuyin story",
+      "zhuyin story sequencing cards",
+      "free zhuyin reading comprehension practice",
+      "孩子讀完注音故事卻說不出內容",
+      "注音故事排序練習",
+      "小一注音閱讀理解練習"
+    ],
+    "query": "How can I help a child understand and retell a Zhuyin story?",
+    "page_title": "Free Zhuyin Story Sequencing Cards | Read, Order and Retell",
+    "meta_description": "Free Zhuyin story cards: reorder six events, reveal the sequence, discuss two prompts and print privately. No login, score or child data.",
+    "primary_resource_url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-story-sequencing-cards.html",
+    "primary_resource_label": "Open the free Zhuyin story sequencing cards",
+    "date_modified": "2026-07-14",
+    "lead": "Keep the words familiar and change the task: after reading one original six-page story, mix its six annotated event cards, rebuild what happened first, next and last, then retell the story together.",
+    "detail": "The free bilingual tool linked above reuses the three original Zhuyin mini-readers as a different comprehension activity. Each story has six fully annotated event cards that can be shuffled, moved earlier or later, restored to the original order, discussed and printed. Nothing is typed, uploaded, timed, scored or saved. Taiwan's official first-stage Mandarin outcomes include reading stage-appropriate texts (5-I-3), understanding important information and viewpoints (5-I-4), and using images or story structure to support understanding and retelling (5-I-6). Those outcomes support the scope, but the Ministry of Education did not create, test or endorse this independent tool.",
+    "follow_up": "Read the story once before shuffling. Ask what may happen first, move one card at a time and use before, after and because language. Reveal the original order only as a discussion reference. A restored sequence is not a grade, diagnosis or proof that the learner understood every detail.",
+    "bullets": [
+      "Three original six-event stories with standard Zhuyin kept visible on every card",
+      "Accessible move-earlier and move-later controls instead of drag-only interaction",
+      "Two oral discussion prompts per story with no answer form or collected response",
+      "Shuffle, reveal, private printing and sharing with no account, timer, score or saved profile",
+      "English and Traditional Chinese pages with direct official curriculum references"
+    ],
+    "decision_steps": [
+      "Choose one familiar story and read all six events in the original mini-reader.",
+      "Open the sequencing cards and shuffle the same six events.",
+      "Ask which event happened first and move only one card at a time.",
+      "Use before, after and because language while rebuilding the sequence.",
+      "Reveal the original order, retell the story aloud and stop without scoring."
+    ],
+    "comparison_rows": [
+      {
+        "need": "Still works hard to read each line",
+        "check": "Keep the story in the mini-reader instead of shuffling events yet",
+        "why": "Sequencing adds memory and story-structure demands on top of decoding"
+      },
+      {
+        "need": "Reads every event but cannot connect them",
+        "check": "Move one card and ask what happened immediately before and after it",
+        "why": "A small comparison keeps attention on relationships rather than guessing a full order"
+      },
+      {
+        "need": "Can rebuild the order quickly",
+        "check": "Use the two oral prompts and retell the story in the learner's own words",
+        "why": "Correct order alone does not prove understanding of important information"
+      }
+    ],
+    "where_app_fits": "Lumi Bopomofo is optional and is not needed for the free sequencing cards. It can reinforce listening, tracing, tones and syllable blending before connected-text work, with a one-time unlock, no ads, no subscription and no account.",
+    "sources": [
+      {
+        "title": "Free Zhuyin story sequencing cards",
+        "url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-story-sequencing-cards.html"
+      },
+      {
+        "title": "CIRN Mandarin learning outcomes for the first learning stage",
+        "url": "https://cirn.k12ea.gov.tw/TWELVE/List.aspx?fid=11010"
+      },
+      {
+        "title": "Free original Zhuyin mini-reader generator",
+        "url": "https://open.cait518.cc/ios-app-guide/tools/zhuyin-decodable-mini-reader.html"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Are the sequencing stories copied from a book or worksheet?",
+        "a": "No. They reuse the three original story sequences written for the free mini-reader and reproduce no published book, illustration, audio clip or Ministry worksheet."
+      },
+      {
+        "q": "Does restoring the original order grade comprehension?",
+        "a": "No. It is a discussion reference only, with no score, timer, level, pass or diagnostic result."
+      },
+      {
+        "q": "Does the tool collect card moves or spoken answers?",
+        "a": "No. There is no answer form, and card order remains only in page memory until the page closes."
+      }
+    ]
+  }
+]

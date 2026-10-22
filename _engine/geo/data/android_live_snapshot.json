@@ -1,0 +1,1123 @@
+{
+ "schema": "lumi.android-live-snapshot/v1",
+ "source": "AndroidPlay android_live_scan (Play page HTTP 200 + publish LIVE)",
+ "source_generated": "2026-10-20T19:44:47+0800",
+ "count": 53,
+ "content_sha256": "08f147bc01c1602be4938b048f6348c948c3c73e1e1de81ae2c6b42e1c1a8a68",
+ "apps": {
+  "aibriefpack": {
+   "ios_app_id": "6791658210",
+   "ios_name": "AI Brief",
+   "android_folder": "31_AIBrief",
+   "package": "com.alice51849.AIBriefPack",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.AIBriefPack",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "AI Brief",
+     "short_description": "Turn screenshots, files and notes into one clear brief for any AI assistant"
+    },
+    "zh-TW": {
+     "title": "AI Brief",
+     "short_description": "把截圖、檔案與筆記整理成任何 AI 都能看懂的清晰摘要"
+    }
+   }
+  },
+  "aim990": {
+   "ios_app_id": "6784974530",
+   "ios_name": "Aim990",
+   "android_folder": "29_Aim990",
+   "package": "com.alice51849.aim990",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.aim990",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Aim990: Fix English Weak Spots",
+     "short_description": "TOEIC test prep: an 8-minute diagnosis, a 30-day plan and vocabulary practice"
+    },
+    "zh-TW": {
+     "title": "Aim990：多益英文弱點教練",
+     "short_description": "8 分鐘多益聽讀診斷，找出 3 個最弱技能，再用 30 天處方計畫、多益單字與模擬練習逐一修復"
+    }
+   }
+  },
+  "battai": {
+   "ios_app_id": "6802423998",
+   "ios_name": "BattAI",
+   "android_folder": "43_BattAI",
+   "package": "com.alice51849.BattAI",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.BattAI",
+   "paid": false,
+   "first_seen": "2026-10-14T20:53:34+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "BattAI: Battery health score",
+     "short_description": "Estimated time to 80%"
+    },
+    "zh-TW": {
+     "title": "BattAI: 電池健康分數",
+     "short_description": "預估到 80% 的時間"
+    }
+   }
+  },
+  "caldaily": {
+   "ios_app_id": "6794178671",
+   "ios_name": "CalDaily",
+   "android_folder": "40_CalDaily",
+   "package": "com.alice51849.CalDaily",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "paid": false,
+   "first_seen": "2026-10-14T15:15:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "CalDaily: Calculator & Themes"
+    },
+    "zh-TW": {
+     "title": "CalDaily 計算機與主題"
+    }
+   }
+  },
+  "countdaysnow": {
+   "ios_app_id": "6807079789",
+   "ios_name": "CountDaysNow",
+   "android_folder": "50_CountDaysNow",
+   "package": "com.alice51849.CountDaysNow",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.CountDaysNow",
+   "paid": false,
+   "first_seen": "2026-10-17T14:31:17+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "CountDaysNow: Event Counter"
+    },
+    "zh-TW": {
+     "title": "CountDaysNow：倒數日與紀念日計數器",
+     "short_description": "倒數日與紀念日一次管理：生日、旅行、考試還有幾天，在一起已經幾天，放上手機桌面一眼看見"
+    }
+   }
+  },
+  "cvdesk": {
+   "ios_app_id": "6781337213",
+   "ios_name": "CV Desk",
+   "android_folder": "16_CVDesk",
+   "package": "com.alice51849.cvdesk",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.cvdesk",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "CV Desk: ATS Resume Builder",
+     "short_description": "Resume & CV maker: clean templates, an instant ATS score and PDF export"
+    },
+    "zh-TW": {
+     "title": "CV Desk ATS 履歷製作",
+     "short_description": "打造 ATS 安全履歷，即時評分與關鍵字建議"
+    }
+   }
+  },
+  "cyca": {
+   "ios_app_id": "6782251621",
+   "ios_name": "Cyca",
+   "android_folder": "19_Cyca",
+   "package": "com.alice51849.cyca",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.cyca",
+   "paid": false,
+   "first_seen": "2026-10-18T08:00:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_casefold",
+   "copy": {
+    "en-US": {
+     "title": "Cyca: Period & Cycle Tracker",
+     "short_description": "Private period and cycle tracker with a daily body forecast and calm calendar"
+    },
+    "zh-TW": {
+     "title": "Cyca 經期週期追蹤・排卵",
+     "short_description": "私密生理期週期追蹤，搭配每日身體預報與舒緩日曆"
+    }
+   }
+  },
+  "dailymate": {
+   "ios_app_id": "6790418321",
+   "ios_name": "DailyMate",
+   "android_folder": "26_DailyMate",
+   "package": "com.caitlyn.dailymate",
+   "play_url": "https://play.google.com/store/apps/details?id=com.caitlyn.dailymate",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "DailyMate: Language Phrases",
+     "short_description": "Learn 8,400 everyday phrases in 47 languages, organized by topic and level"
+    },
+    "zh-TW": {
+     "title": "DailyMate：用句子學語言",
+     "short_description": "47 種語言、8,400 句生活會話，旅遊、工作、日常情境都用得上，還能聽發音"
+    }
+   }
+  },
+  "dailymatelite": {
+   "ios_app_id": "6794725568",
+   "ios_name": "DailyMate Lite",
+   "android_folder": "36_DailyMateLite",
+   "package": "com.alice51849.DailyMateLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.DailyMateLite",
+   "paid": false,
+   "first_seen": "2026-10-14T11:08:28+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "DailyMate Lite: Speak Today",
+     "short_description": "Travel phrasebook and speaking practice in 50 languages with natural replies"
+    },
+    "zh-TW": {
+     "title": "DailyMate Lite：開口練習",
+     "short_description": "出國點餐、問路、出差都用得上：英文、日語、韓語等 50 種語言的情境會話與口說練習"
+    }
+   }
+  },
+  "dbhalo": {
+   "ios_app_id": "6806826699",
+   "ios_name": "dB Halo",
+   "android_folder": "48_dBHalo",
+   "package": "com.alice51849.dBHalo",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.dBHalo",
+   "paid": false,
+   "first_seen": "2026-10-17T14:31:17+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "dB Halo: Decibel Sound Meter",
+     "short_description": "Check how loud it is with a live noise meter, spectrum view and sleep journal"
+    },
+    "zh-TW": {
+     "title": "dB Halo：分貝計與聲級計",
+     "short_description": "分貝計與噪音測量：即時看懂環境有多吵，還有頻譜分析與睡眠日誌"
+    }
+   }
+  },
+  "easyam": {
+   "ios_app_id": "6821790092",
+   "ios_name": "EasyAM",
+   "android_folder": "57_OFFDAY",
+   "package": "com.alice51849.Offday",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Offday",
+   "paid": false,
+   "first_seen": "2026-10-20T18:38:01+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "EasyAM: Holiday Alarm Clock"
+    },
+    "zh-TW": {
+     "title": "EasyAM: 國定假日、連假不響的智慧鬧鐘"
+    }
+   }
+  },
+  "gmoney": {
+   "ios_app_id": "6755782939",
+   "ios_name": "G+Money",
+   "android_folder": "15_GMoney",
+   "package": "com.caitlai.globi",
+   "play_url": "https://play.google.com/store/apps/details?id=com.caitlai.globi",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "G+Money: Expense Tracker",
+     "short_description": "Travel budget and expense tracker with a currency converter for 50 currencies"
+    },
+    "zh-TW": {
+     "title": "G+Money：旅遊記帳",
+     "short_description": "出國旅遊與日常記帳，搭配 50 種貨幣匯率換算，依旅程記錄花費、設每日預算"
+    }
+   }
+  },
+  "gmoneylite": {
+   "ios_app_id": "6793436548",
+   "ios_name": "G+Money Lite",
+   "android_folder": "32_GMoneyLite",
+   "package": "com.alice51849.GMoneyLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.GMoneyLite",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "G+Money Lite",
+     "short_description": "Log travel expenses in local currency and see them in your home currency"
+    },
+    "zh-TW": {
+     "title": "G+Money Lite",
+     "short_description": "出國旅遊記帳：用當地幣別記一筆，馬上換算成台幣，每日預算和旅程花費一目了然"
+    }
+   }
+  },
+  "hourstag": {
+   "ios_app_id": "6754218117",
+   "ios_name": "HoursTag: Hours to Buy",
+   "android_folder": "13_HoursTag",
+   "package": "com.caitlyn.hourstag",
+   "play_url": "https://play.google.com/store/apps/details?id=com.caitlyn.hourstag",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "HoursTag: Hours to Buy",
+     "short_description": "Expense tracker with an hourly wage calculator: see any price as hours of work"
+    },
+    "zh-TW": {
+     "title": "HoursTag：價格換工時記帳本",
+     "short_description": "記帳 App 加上時薪換算：輸入價格就知道要工作幾小時，標記必要、想要、衝動，少點衝動購物"
+    }
+   }
+  },
+  "hourstaglite": {
+   "ios_app_id": "6794039979",
+   "ios_name": "HoursTag Lite",
+   "android_folder": "33_HoursTagLite",
+   "package": "com.alice51849.hourstaglite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.hourstaglite",
+   "paid": false,
+   "first_seen": "2026-10-12T13:00:32+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_casefold",
+   "copy": {
+    "en-US": {
+     "title": "HoursTag Lite: Impulse Buying",
+     "short_description": "Turn prices into hours of work to stop impulse buying and stay on budget"
+    },
+    "zh-TW": {
+     "title": "HoursTag Lite",
+     "short_description": "買東西前先換算要工作幾小時，標記必要、想要或衝動，花得清楚，存錢也更有方向"
+    }
+   }
+  },
+  "ledmovingtext": {
+   "ios_app_id": "6806639602",
+   "ios_name": "LED Moving Text",
+   "android_folder": "49_LEDMovingText",
+   "package": "com.alice51849.LEDMovingText",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LEDMovingText",
+   "paid": false,
+   "first_seen": "2026-10-17T14:31:17+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "LED Moving Text: Banner Sign",
+     "short_description": "Scrolling text LED banner: hold up your phone at concerts, pickups and events"
+    },
+    "zh-TW": {
+     "title": "LED Moving Text：跑馬燈電子看板",
+     "short_description": "手機秒變 LED 跑馬燈與應援燈牌：演唱會、接機舉牌、活動提示都看得清楚"
+    }
+   }
+  },
+  "lockhour": {
+   "ios_app_id": "6780107485",
+   "ios_name": "LockHour Pro",
+   "android_folder": "10_LockHourPro",
+   "package": "com.focuslockpro.app",
+   "play_url": "https://play.google.com/store/apps/details?id=com.focuslockpro.app",
+   "paid": false,
+   "first_seen": "2026-10-13T18:49:04+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "LockHour Pro: App Blocker",
+     "short_description": "App blocker for focus and digital detox: lock distracting apps, less phone time"
+    },
+    "zh-TW": {
+     "title": "LockHour Pro",
+     "short_description": "專注時段自動封鎖分心的 App，讀書、工作、睡前都能幫你戒手機"
+    }
+   }
+  },
+  "lumibopomofo": {
+   "ios_app_id": "6773017109",
+   "ios_name": "Lumi Bopomofo",
+   "android_folder": "05_LumiBopomofo",
+   "package": "com.alice51849.LumiZhuyin",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyin",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Bopomofo",
+     "short_description": "Kids learn Bopomofo (Zhuyin) Chinese sounds with feeding, tracing and tone games"
+    },
+    "zh-TW": {
+     "title": "Lumi注音星球",
+     "short_description": "幼兒學注音好幫手：餵食小夥伴、描寫筆順、聲調與拼音遊戲，輕鬆認讀 37 個符號"
+    }
+   }
+  },
+  "lumibopomofopro": {
+   "ios_app_id": "6775773117",
+   "ios_name": "Lumi Bopomofo Pro",
+   "android_folder": "06_LumiBopomofoPro",
+   "package": "com.alice51849.LumiZhuyinPro",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiZhuyinPro",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Bopomofo Pro: Zhuyin",
+     "short_description": "Learn Zhuyin (Bopomofo) through play: sounds, blending, tones and tracing"
+    },
+    "zh-TW": {
+     "title": "Lumi注音星球 Pro",
+     "short_description": "用遊戲學注音：ㄅㄆㄇ發音、拼讀、聲調與筆順，幼兒到小一都適用"
+    }
+   }
+  },
+  "lumiletters": {
+   "ios_app_id": "6778748533",
+   "ios_name": "Lumi Letters",
+   "android_folder": "01_LumiLettersLite",
+   "package": "com.alice51849.LumiLettersLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLettersLite",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Letters Lite: ABC Kids",
+     "short_description": "Trace the ABCs, hear letter sounds and play phonics games for kids ages 3 to 7"
+    },
+    "zh-TW": {
+     "title": "Lumi 字母星球 Lite：兒童英文ABC遊戲",
+     "short_description": "給3到7歲孩子的英文字母啟蒙：跟著筆順描寫大小寫、聽字母發音，在星球闖關中玩自然發音"
+    }
+   }
+  },
+  "lumiletterspro": {
+   "ios_app_id": "6778491147",
+   "ios_name": "Lumi Letters Pro",
+   "android_folder": "02_LumiLettersPro",
+   "package": "com.alice51849.LumiLetters",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiLetters",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Letters Pro: ABC Phonics",
+     "short_description": "Phonics for kids 3–6: hear letter sounds, trace the ABCs and practice reading"
+    },
+    "zh-TW": {
+     "title": "Lumi 字母星球 Pro：ABC啟蒙",
+     "short_description": "3–6 歲英文自然發音啟蒙：聽字母音、描寫大小寫、看圖拼讀，還能列印今日學習單"
+    }
+   }
+  },
+  "lumimath": {
+   "ios_app_id": "6778269699",
+   "ios_name": "Lumi Math Planet",
+   "android_folder": "03_LumiMathPlanet",
+   "package": "com.alice51849.LumiMathFree",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathFree",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Math Planet: Explorer",
+     "short_description": "Space adventure math for kids: counting, adding, patterns and logic puzzles"
+    },
+    "zh-TW": {
+     "title": "Lumi數學星球：探索版",
+     "short_description": "幼兒數學遊戲：數數、加減法、找規律、邏輯推理，答對一題就點亮一顆星球的太空冒險"
+    }
+   }
+  },
+  "lumimathpro": {
+   "ios_app_id": "6776958488",
+   "ios_name": "Lumi Math Pro",
+   "android_folder": "04_LumiMathPro",
+   "package": "com.alice51849.LumiMathPlanet",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiMathPlanet",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Math Pro: Kids Numbers",
+     "short_description": "Space adventure math for kids 5–8: logic puzzles, patterns and number sense"
+    },
+    "zh-TW": {
+     "title": "Lumi 數學星球：兒童數學",
+     "short_description": "5–8 歲兒童數學冒險：邏輯推理、找規律、加減乘除，還有弱項練習與列印學習單"
+    }
+   }
+  },
+  "lumimission": {
+   "ios_app_id": "6779750237",
+   "ios_name": "Lumi Mission Planet",
+   "android_folder": "07_LumiMissionPlanet",
+   "package": "com.alice51849.lumimissionlite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_casefold",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Mission Planet: Routines",
+     "short_description": "Turn brushing, meals, bedtime and tidy-up into fun missions with star rewards"
+    },
+    "zh-TW": {
+     "title": "Lumi 任務星球：生活習慣養成",
+     "short_description": "刷牙、吃飯、睡覺、收玩具都變成好玩的任務，用集點貼紙陪孩子養成好習慣"
+    }
+   }
+  },
+  "lumimissionpro": {
+   "ios_app_id": "6779745474",
+   "ios_name": "Lumi Mission Planet Pro",
+   "android_folder": "08_LumiMissionPlanetPro",
+   "package": "com.lumi.mochimissionplanet",
+   "play_url": "https://play.google.com/store/apps/details?id=com.lumi.mochimissionplanet",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "store_title_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Mission Planet Pro",
+     "short_description": "Turn teeth brushing, meals and bedtime into happy missions for kids aged 3 to 7"
+    },
+    "zh-TW": {
+     "title": "Lumi 任務星球 Pro：好習慣養成遊戲",
+     "short_description": "把刷牙、吃飯、收玩具和睡前準備變成小任務，用貼紙獎勵陪 3 到 7 歲孩子養成好習慣"
+    }
+   }
+  },
+  "lumiweather": {
+   "ios_app_id": "6779552704",
+   "ios_name": "Lumi Weather",
+   "android_folder": "09_LumiWeather",
+   "package": "com.alice51849.LumiWeather",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.LumiWeather",
+   "paid": false,
+   "first_seen": "2026-10-17T09:56:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Lumi Weather: What to Wear",
+     "short_description": "Hourly weather forecast with an outing score, umbrella and sunscreen tips"
+    },
+    "zh-TW": {
+     "title": "Lumi天氣星球：天氣預報、外出指數與穿搭建議",
+     "short_description": "逐時與一週天氣預報，一眼看懂今天穿什麼、要不要帶傘、紫外線強不強"
+    }
+   }
+  },
+  "maskmyfile": {
+   "ios_app_id": "6792850916",
+   "ios_name": "Mask My File",
+   "android_folder": "38_MaskMyFile",
+   "package": "com.alice51849.MaskMyFile",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.MaskMyFile",
+   "paid": false,
+   "first_seen": "2026-10-13T19:51:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Mask My File: Redact PDF",
+     "short_description": "Redact PDF, photo and text files: black out private data and remove metadata"
+    },
+    "zh-TW": {
+     "title": "Mask My File：PDF 個資遮蔽",
+     "short_description": "分享 PDF、照片與文字檔前，先在本機塗黑遮蔽個資、移除中繼資料，原始檔不會被覆寫"
+    }
+   }
+  },
+  "mochi": {
+   "ios_app_id": "6785004775",
+   "ios_name": "Mochi",
+   "android_folder": "20_Mochi",
+   "package": "com.alice51849.MochiTodo",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.MochiTodo",
+   "paid": false,
+   "first_seen": "2026-10-12T15:08:27+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Mochi: Cute Checklist",
+     "short_description": "Cute to-do list and checklist with 100 cozy skins and repeating reminders"
+    },
+    "zh-TW": {
+     "title": "Mochi: 可愛待辦清單",
+     "short_description": "可愛又療癒的待辦清單，寫下待辦事項輕點打勾，100 款主題外觀與重複提醒"
+    }
+   }
+  },
+  "mochidonestamp": {
+   "ios_app_id": "6790800323",
+   "ios_name": "Mochi DoneStamp",
+   "android_folder": "28_MochiDoneStamp",
+   "package": "com.alice51849.MochiDoneStamp",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.MochiDoneStamp",
+   "paid": false,
+   "first_seen": "2026-10-13T18:49:04+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Mochi DoneStamp: Last Time",
+     "short_description": "Last time tracker for chores and upkeep, with days since and recurring reminders"
+    },
+    "zh-TW": {
+     "title": "Mochi DoneStamp：上次何時",
+     "short_description": "上次是什麼時候做的？一鍵記下家事與保養的完成時間，顯示經過天數，到期自動循環提醒"
+    }
+   }
+  },
+  "moneytag": {
+   "ios_app_id": "6801956402",
+   "ios_name": "MoneyTag: Income & Expense",
+   "android_folder": "44_MoneyTag",
+   "package": "com.alice51849.MoneyTag",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.MoneyTag",
+   "paid": false,
+   "first_seen": "2026-10-14T12:11:14+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "MoneyTag: Income & Expense",
+     "short_description": "Income and expense tracker by project: profit for each side hustle or client"
+    },
+    "zh-TW": {
+     "title": "MoneyTag: 收入與支出記帳",
+     "short_description": "專案制收支記帳：每個專案各算淨額，標籤跨專案合計，接案、副業、小店都好用"
+    }
+   }
+  },
+  "notesstudio100": {
+   "ios_app_id": "6798813048",
+   "ios_name": "100 Notes Studio",
+   "android_folder": "41_100NotesStudio",
+   "package": "com.alice51849.NotesStudio100",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.NotesStudio100",
+   "paid": false,
+   "first_seen": "2026-10-13T20:22:23+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "100 Notes Studio: Pen & Paper",
+     "short_description": "Note taking app: stylus handwriting, PDF annotation, page audio and flashcards"
+    },
+    "zh-TW": {
+     "title": "100 Notes Studio: Pen & Paper",
+     "short_description": "手寫筆記 App：29 種筆刷、100 款筆記本風格、PDF 標註、頁面錄音與抽認卡，還能上鎖"
+    }
+   }
+  },
+  "onepageppt": {
+   "ios_app_id": "6798814385",
+   "ios_name": "OnePage PPT",
+   "android_folder": "42_OnePagePPT",
+   "package": "com.alice51849.OnePagePPT",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.OnePagePPT",
+   "paid": false,
+   "first_seen": "2026-10-14T12:11:14+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "OnePage PPT: AI Slide Maker",
+     "short_description": "Notes to one perfect slide"
+    },
+    "zh-TW": {
+     "title": "OnePage PPT: AI 一頁簡報",
+     "short_description": "筆記、螢幕截圖、PDF秒變投影片"
+    }
+   }
+  },
+  "photocream": {
+   "ios_app_id": "6781808054",
+   "ios_name": "PhotoCream",
+   "android_folder": "17_PhotoCreamPro",
+   "package": "com.alice51849.photocream",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.photocream",
+   "paid": false,
+   "first_seen": "2026-10-13T15:42:19+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "PhotoCream Pro: Film Camera",
+     "short_description": "Retro and vintage film filters with grain and light leaks, plus a photo editor"
+    },
+    "zh-TW": {
+     "title": "PhotoCream Pro：底片相機",
+     "short_description": "底片相機搭配復古濾鏡，顆粒、光暈與漏光質感，加上完整修圖與自然美肌"
+    }
+   }
+  },
+  "picclear": {
+   "ios_app_id": "6780223070",
+   "ios_name": "PicClear",
+   "android_folder": "12_PicClearPro",
+   "package": "com.picclear.app",
+   "play_url": "https://play.google.com/store/apps/details?id=com.picclear.app",
+   "paid": false,
+   "first_seen": "2026-10-17T09:56:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "PicClear Pro: Photo Cleaner",
+     "short_description": "Duplicate photo remover: clear screenshots and blurry shots to reclaim storage"
+    },
+    "zh-TW": {
+     "title": "PicClear Pro",
+     "short_description": "清理重複照片、舊截圖與模糊照片，手機空間不足時幫你騰出儲存空間"
+    }
+   }
+  },
+  "qrcodehalo": {
+   "ios_app_id": "6806779853",
+   "ios_name": "QR Code Halo",
+   "android_folder": "47_QRCodeHalo",
+   "package": "com.alice51849.QRCodeHalo",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.QRCodeHalo",
+   "paid": false,
+   "first_seen": "2026-10-17T13:30:18+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "QR Code Halo: Scan & Create",
+     "short_description": "QR code scanner and barcode reader with a QR generator and on-device link check"
+    },
+    "zh-TW": {
+     "title": "QR Code Halo：條碼掃描、建立與安全檢查",
+     "short_description": "QR Code 掃描器、條碼掃描與 QR Code 產生器：一掃即開，事後在本機做安全檢查"
+    }
+   }
+  },
+  "savetag": {
+   "ios_app_id": "6802505528",
+   "ios_name": "SaveTag",
+   "android_folder": "46_SaveTag",
+   "package": "com.alice51849.SaveTag",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.SaveTag",
+   "paid": false,
+   "first_seen": "2026-10-13T19:51:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "SaveTag: AI Social Bookmarks",
+     "short_description": "Link saver and bookmark manager: auto-tagged saves to watch and read later"
+    },
+    "zh-TW": {
+     "title": "SaveTag：AI 連結收藏與書籤",
+     "short_description": "書籤管理與稍後閱讀：從任何 App 存連結，自動分類成購物、食譜、旅遊等主題，願望清單一次收齊"
+    }
+   }
+  },
+  "scanto": {
+   "ios_app_id": "6779977651",
+   "ios_name": "ScanTo Pro",
+   "android_folder": "11_ScanToPro",
+   "package": "com.alice51849.OfflineScannerPro",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.OfflineScannerPro",
+   "paid": false,
+   "first_seen": "2026-10-17T09:56:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "ScanTo Pro: Offline PDF & OCR",
+     "short_description": "Document scanner and PDF scanner with on-device OCR text search"
+    },
+    "zh-TW": {
+     "title": "ScanTo Pro: 離線PDF掃描器",
+     "short_description": "文件掃描成可搜尋的 PDF，OCR 文字辨識在裝置上完成，文件不上傳"
+    }
+   }
+  },
+  "sereno": {
+   "ios_app_id": "6788236641",
+   "ios_name": "Sereno",
+   "android_folder": "23_Sereno",
+   "package": "com.alice51849.Sereno",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Sereno",
+   "paid": false,
+   "first_seen": "2026-10-14T15:15:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Sereno: Sleep Sounds",
+     "short_description": "White noise, brown noise and rain sounds that never loop, for sleep and focus"
+    },
+    "zh-TW": {
+     "title": "Sereno: 睡眠音效・白噪音",
+     "short_description": "白噪音、褐噪音與雨聲即時生成不循環，陪你入睡、專注與放鬆"
+    }
+   }
+  },
+  "shotinbox": {
+   "ios_app_id": "6802166527",
+   "ios_name": "ShotInbox AI",
+   "android_folder": "45_ShotInbox",
+   "package": "com.alice51849.ShotInbox",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.ShotInbox",
+   "paid": false,
+   "first_seen": "2026-10-14T10:07:11+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "ShotInbox AI: Sort Screenshots",
+     "short_description": "OCR Search & Photo Cleaner"
+    },
+    "zh-TW": {
+     "title": "ShotInbox AI: Sort Screenshots",
+     "short_description": "本機截圖分類、相似清理與時間軸"
+    }
+   }
+  },
+  "snapport": {
+   "ios_app_id": "6780575828",
+   "ios_name": "Snapport",
+   "android_folder": "14_Snapport",
+   "package": "com.snapport.app",
+   "play_url": "https://play.google.com/store/apps/details?id=com.snapport.app",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Snapport: Passport & ID Photos",
+     "short_description": "Passport photo maker for visa and ID photos, with templates and print sheets"
+    },
+    "zh-TW": {
+     "title": "Snapport: 護照證件照、大頭照排版",
+     "short_description": "在家製作護照照片、簽證照片與大頭照，可換白底，內建尺寸範本與列印排版"
+    }
+   }
+  },
+  "snapportlite": {
+   "ios_app_id": "6792856304",
+   "ios_name": "Snapport Lite",
+   "android_folder": "34_SnapportLite",
+   "package": "com.alice51849.SnapportLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.SnapportLite",
+   "paid": false,
+   "first_seen": "2026-10-13T18:49:04+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Snapport Lite: Passport Photo",
+     "short_description": "Passport, visa and ID photo maker: 2x2 sizing, white background, print sheets"
+    },
+    "zh-TW": {
+     "title": "Snapport Lite：證件照與大頭照",
+     "short_description": "證件照、護照照片與大頭照製作：常用尺寸範本、去背換白底、臉部對齊指引，可拼版列印"
+    }
+   }
+  },
+  "sononote": {
+   "ios_app_id": "6782139553",
+   "ios_name": "Sono Note",
+   "android_folder": "18_SonoNote",
+   "package": "com.caitlyn.clearnotevoice",
+   "play_url": "https://play.google.com/store/apps/details?id=com.caitlyn.clearnotevoice",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Sono Note: Voice to Text Notes",
+     "short_description": "Voice recorder with speech to text that turns notes into summaries and tasks"
+    },
+    "zh-TW": {
+     "title": "Sono Note：語音轉文字筆記",
+     "short_description": "語音轉文字的錄音筆記：說完自動整理出逐字稿、摘要、重點與待辦事項"
+    }
+   }
+  },
+  "stayclock": {
+   "ios_app_id": "6814035888",
+   "ios_name": "Stay Clock",
+   "android_folder": "54_StayClock",
+   "package": "com.alice51849.StayClock",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.StayClock",
+   "paid": false,
+   "first_seen": "2026-10-17T16:03:14+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Stay Clock: Flip Desk Clock"
+    },
+    "zh-TW": {
+     "title": "Stay Clock：翻頁桌鐘・床頭常亮時鐘"
+    }
+   }
+  },
+  "studydown": {
+   "ios_app_id": "6807335593",
+   "ios_name": "Studydown",
+   "android_folder": "53_Studydown",
+   "package": "com.alice51849.Studydown",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Studydown",
+   "paid": false,
+   "first_seen": "2026-10-17T15:01:47+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Studydown: Face-Down Timer",
+     "short_description": "Face-down study timer and focus tracker: put the phone down, see hours add up"
+    },
+    "zh-TW": {
+     "title": "Studydown 讀書計時器：翻面專注計時",
+     "short_description": "讀書計時器與學習紀錄：開始計時後把手機螢幕朝下放，讀書、工作與練習時數一目了然"
+    }
+   }
+  },
+  "tripbee": {
+   "ios_app_id": "6787754435",
+   "ios_name": "TripBee Pro: Trip Planner",
+   "android_folder": "24_TripBeePro",
+   "package": "com.alice51849.Tripbee",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Tripbee",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "TripBee Pro: Trip Organizer",
+     "short_description": "Trip planner and itinerary organizer with family packing lists and trip sharing"
+    },
+    "zh-TW": {
+     "title": "TripBee Pro：旅遊行程規劃・行程整理管家",
+     "short_description": "旅遊行程規劃與整理：逐日行程、全家打包清單，還能把旅程傳到另一支手機"
+    }
+   }
+  },
+  "tripbeelite": {
+   "ios_app_id": "6791299610",
+   "ios_name": "TripBee Lite",
+   "android_folder": "30_TripBeeLite",
+   "package": "com.alice51849.TripbeeLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.TripbeeLite",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "TripBee Lite: Travel Plan",
+     "short_description": "Trip planner with a day-by-day itinerary for flights, hotels, tickets and notes"
+    },
+    "zh-TW": {
+     "title": "TripBee Lite：旅程規劃與每日行程表",
+     "short_description": "用每日時間軸做旅遊行程規劃，航班、住宿、票券與備註集中在同一趟旅程"
+    }
+   }
+  },
+  "tripplanet": {
+   "ios_app_id": "6787193643",
+   "ios_name": "Trip Planet: Kids Quest",
+   "android_folder": "22_LumiTripPlanet",
+   "package": "com.alice51849.TripPlanet",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.TripPlanet",
+   "paid": false,
+   "first_seen": "2026-10-15T17:02:19+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Trip Planet: Kids Quest",
+     "short_description": "Family Travel Missions"
+    },
+    "zh-TW": {
+     "title": "Trip Planet 親子旅行遊戲",
+     "short_description": "兒童帶娃出遊任務獎勵星圖"
+    }
+   }
+  },
+  "unblurry": {
+   "ios_app_id": "6782275018",
+   "ios_name": "Unblurry",
+   "android_folder": "21_UnblurryPro",
+   "package": "com.unblurry.app",
+   "play_url": "https://play.google.com/store/apps/details?id=com.unblurry.app",
+   "paid": false,
+   "first_seen": "2026-10-13T16:44:53+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Unblurry Pro: Unblur Photo HD",
+     "short_description": "Restore old photos offline, sharpen blurry shots and upscale them with AI"
+    },
+    "zh-TW": {
+     "title": "Unblurry Pro：模糊變清晰",
+     "short_description": "模糊照片變清晰：去模糊、銳化、AI 超解析放大，老照片修復、翻新舊相片也能離線完成"
+    }
+   }
+  },
+  "wifiaid": {
+   "ios_app_id": "6790467886",
+   "ios_name": "WiFi Aid",
+   "android_folder": "27_WiFiAid",
+   "package": "com.alice51849.WiFiAid",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAid",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "WiFi Aid: Network Diagnostics",
+     "short_description": "WiFi checker and DNS test: find the most likely cause of a bad connection"
+    },
+    "zh-TW": {
+     "title": "WiFi Aid：網路診斷",
+     "short_description": "網路很卡？一鍵網路診斷，分開檢測 DNS、TCP、TLS 與延遲，找出最可能的故障原因"
+    }
+   }
+  },
+  "wifiaidlite": {
+   "ios_app_id": "6793414462",
+   "ios_name": "WiFi Aid Lite",
+   "android_folder": "37_WiFiAidLite",
+   "package": "com.alice51849.WiFiAidLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite",
+   "paid": false,
+   "first_seen": "2026-10-14T13:14:03+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "WiFi Aid Lite: Network Check",
+     "short_description": "Slow internet? Test your WiFi, router and DNS to find the likely cause"
+    },
+    "zh-TW": {
+     "title": "WiFi Aid Lite",
+     "short_description": "網路很慢、連不上？一鍵檢測 Wi-Fi、路由器、DNS 與網站，找出斷線原因"
+    }
+   }
+  },
+  "wordmate": {
+   "ios_app_id": "6789917808",
+   "ios_name": "Wordmate: Learn 44 Languages",
+   "android_folder": "25_Wordmate",
+   "package": "com.caitlyn.flashdot",
+   "play_url": "https://play.google.com/store/apps/details?id=com.caitlyn.flashdot",
+   "paid": true,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Wordmate: Learn 44 Languages",
+     "short_description": "Build useful vocabulary in 44 languages with focused lessons and pronunciation"
+    },
+    "zh-TW": {
+     "title": "Wordmate：44 種語言背單字",
+     "short_description": "用 14 個生活主題背單字，44 種語言任你選，附發音朗讀與進度追蹤"
+    }
+   }
+  },
+  "wordmatelite": {
+   "ios_app_id": "6797601720",
+   "ios_name": "Wordmate Lite",
+   "android_folder": "35_WordmateLite",
+   "package": "com.alice51849.WordmateLite",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.WordmateLite",
+   "paid": false,
+   "first_seen": "2026-10-11T14:26:56+0800",
+   "launch_wave": "baseline",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Wordmate Lite: Vocabulary",
+     "short_description": "Learn languages five words a day: vocabulary builder for 44 languages, offline"
+    },
+    "zh-TW": {
+     "title": "Wordmate Lite 背單字：每天五個單字",
+     "short_description": "英文單字、日文單字都能背：一次五個、一分鐘練完，可聽發音、離線也能背，養成每天背單字的習慣"
+    }
+   }
+  },
+  "zipbox": {
+   "ios_app_id": "6806776579",
+   "ios_name": "Zipbox",
+   "android_folder": "52_Zipbox",
+   "package": "com.alice51849.Zipbox",
+   "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.Zipbox",
+   "paid": true,
+   "first_seen": "2026-10-17T15:32:38+0800",
+   "launch_wave": "new",
+   "match": "bundle_id_exact",
+   "copy": {
+    "en-US": {
+     "title": "Zipbox: Unzip RAR, ZIP & 7z",
+     "short_description": "Unzip, unrar and 7z file extractor: preview inside, take out only what you need"
+    },
+    "zh-TW": {
+     "title": "Zipbox 解壓縮：RAR ZIP 7z",
+     "short_description": "解壓縮前先預覽壓縮檔內容，只取出需要的檔案；支援 13 種格式，也能開啟密碼保護的壓縮檔"
+    }
+   }
+  }
+ },
+ "unmapped": [
+  {
+   "folder": "51_GBAGo",
+   "package": "com.alice51849.GBAGo",
+   "reason": "no_unique_ios_match"
+  }
+ ],
+ "baseline_first_seen": "2026-10-11T14:26:56+0800"
+}

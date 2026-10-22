@@ -1,0 +1,462 @@
+{
+  "name": "Zhuyin (Bopomofo) — 37 phonetic symbols",
+  "description": "The complete set of 37 Zhuyin Fuhao (Bopomofo) symbols used to teach Mandarin pronunciation in Taiwan: 21 initials (consonants), 3 medials (glides) and 13 finals (vowels), each with its Hanyu Pinyin equivalent, IPA transcription, Unicode code point and a common example word.",
+  "identifier": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo.json",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": "Lumi Apps",
+  "isBasedOn": "https://en.wikipedia.org/wiki/Bopomofo",
+  "relatedApp": "https://apps.apple.com/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+  "dateModified": "2026-09-10",
+  "counts": {
+    "initials": 21,
+    "medials": 3,
+    "finals": 13,
+    "total": 37
+  },
+  "symbols": [
+    {
+      "symbol": "ㄅ",
+      "unicode": "U+3105",
+      "pinyin": "b",
+      "ipa": "p",
+      "category": "initial",
+      "example": {
+        "character": "爸",
+        "pinyin": "bà",
+        "meaning": "father"
+      }
+    },
+    {
+      "symbol": "ㄆ",
+      "unicode": "U+3106",
+      "pinyin": "p",
+      "ipa": "pʰ",
+      "category": "initial",
+      "example": {
+        "character": "怕",
+        "pinyin": "pà",
+        "meaning": "afraid"
+      }
+    },
+    {
+      "symbol": "ㄇ",
+      "unicode": "U+3107",
+      "pinyin": "m",
+      "ipa": "m",
+      "category": "initial",
+      "example": {
+        "character": "媽",
+        "pinyin": "mā",
+        "meaning": "mother"
+      }
+    },
+    {
+      "symbol": "ㄈ",
+      "unicode": "U+3108",
+      "pinyin": "f",
+      "ipa": "f",
+      "category": "initial",
+      "example": {
+        "character": "飛",
+        "pinyin": "fēi",
+        "meaning": "to fly"
+      }
+    },
+    {
+      "symbol": "ㄉ",
+      "unicode": "U+3109",
+      "pinyin": "d",
+      "ipa": "t",
+      "category": "initial",
+      "example": {
+        "character": "大",
+        "pinyin": "dà",
+        "meaning": "big"
+      }
+    },
+    {
+      "symbol": "ㄊ",
+      "unicode": "U+310A",
+      "pinyin": "t",
+      "ipa": "tʰ",
+      "category": "initial",
+      "example": {
+        "character": "天",
+        "pinyin": "tiān",
+        "meaning": "sky"
+      }
+    },
+    {
+      "symbol": "ㄋ",
+      "unicode": "U+310B",
+      "pinyin": "n",
+      "ipa": "n",
+      "category": "initial",
+      "example": {
+        "character": "你",
+        "pinyin": "nǐ",
+        "meaning": "you"
+      }
+    },
+    {
+      "symbol": "ㄌ",
+      "unicode": "U+310C",
+      "pinyin": "l",
+      "ipa": "l",
+      "category": "initial",
+      "example": {
+        "character": "來",
+        "pinyin": "lái",
+        "meaning": "to come"
+      }
+    },
+    {
+      "symbol": "ㄍ",
+      "unicode": "U+310D",
+      "pinyin": "g",
+      "ipa": "k",
+      "category": "initial",
+      "example": {
+        "character": "狗",
+        "pinyin": "gǒu",
+        "meaning": "dog"
+      }
+    },
+    {
+      "symbol": "ㄎ",
+      "unicode": "U+310E",
+      "pinyin": "k",
+      "ipa": "kʰ",
+      "category": "initial",
+      "example": {
+        "character": "看",
+        "pinyin": "kàn",
+        "meaning": "to look"
+      }
+    },
+    {
+      "symbol": "ㄏ",
+      "unicode": "U+310F",
+      "pinyin": "h",
+      "ipa": "x",
+      "category": "initial",
+      "example": {
+        "character": "好",
+        "pinyin": "hǎo",
+        "meaning": "good"
+      }
+    },
+    {
+      "symbol": "ㄐ",
+      "unicode": "U+3110",
+      "pinyin": "j",
+      "ipa": "tɕ",
+      "category": "initial",
+      "example": {
+        "character": "家",
+        "pinyin": "jiā",
+        "meaning": "home"
+      }
+    },
+    {
+      "symbol": "ㄑ",
+      "unicode": "U+3111",
+      "pinyin": "q",
+      "ipa": "tɕʰ",
+      "category": "initial",
+      "example": {
+        "character": "去",
+        "pinyin": "qù",
+        "meaning": "to go"
+      }
+    },
+    {
+      "symbol": "ㄒ",
+      "unicode": "U+3112",
+      "pinyin": "x",
+      "ipa": "ɕ",
+      "category": "initial",
+      "example": {
+        "character": "小",
+        "pinyin": "xiǎo",
+        "meaning": "small"
+      }
+    },
+    {
+      "symbol": "ㄓ",
+      "unicode": "U+3113",
+      "pinyin": "zh",
+      "ipa": "ʈʂ",
+      "category": "initial",
+      "example": {
+        "character": "中",
+        "pinyin": "zhōng",
+        "meaning": "middle"
+      }
+    },
+    {
+      "symbol": "ㄔ",
+      "unicode": "U+3114",
+      "pinyin": "ch",
+      "ipa": "ʈʂʰ",
+      "category": "initial",
+      "example": {
+        "character": "吃",
+        "pinyin": "chī",
+        "meaning": "to eat"
+      }
+    },
+    {
+      "symbol": "ㄕ",
+      "unicode": "U+3115",
+      "pinyin": "sh",
+      "ipa": "ʂ",
+      "category": "initial",
+      "example": {
+        "character": "是",
+        "pinyin": "shì",
+        "meaning": "to be"
+      }
+    },
+    {
+      "symbol": "ㄖ",
+      "unicode": "U+3116",
+      "pinyin": "r",
+      "ipa": "ʐ",
+      "category": "initial",
+      "example": {
+        "character": "人",
+        "pinyin": "rén",
+        "meaning": "person"
+      }
+    },
+    {
+      "symbol": "ㄗ",
+      "unicode": "U+3117",
+      "pinyin": "z",
+      "ipa": "ts",
+      "category": "initial",
+      "example": {
+        "character": "早",
+        "pinyin": "zǎo",
+        "meaning": "early"
+      }
+    },
+    {
+      "symbol": "ㄘ",
+      "unicode": "U+3118",
+      "pinyin": "c",
+      "ipa": "tsʰ",
+      "category": "initial",
+      "example": {
+        "character": "菜",
+        "pinyin": "cài",
+        "meaning": "vegetable"
+      }
+    },
+    {
+      "symbol": "ㄙ",
+      "unicode": "U+3119",
+      "pinyin": "s",
+      "ipa": "s",
+      "category": "initial",
+      "example": {
+        "character": "三",
+        "pinyin": "sān",
+        "meaning": "three"
+      }
+    },
+    {
+      "symbol": "ㄧ",
+      "unicode": "U+3127",
+      "pinyin": "i / yi",
+      "ipa": "i",
+      "category": "medial",
+      "example": {
+        "character": "一",
+        "pinyin": "yī",
+        "meaning": "one"
+      }
+    },
+    {
+      "symbol": "ㄨ",
+      "unicode": "U+3128",
+      "pinyin": "u / wu",
+      "ipa": "u",
+      "category": "medial",
+      "example": {
+        "character": "五",
+        "pinyin": "wǔ",
+        "meaning": "five"
+      }
+    },
+    {
+      "symbol": "ㄩ",
+      "unicode": "U+3129",
+      "pinyin": "ü / yu",
+      "ipa": "y",
+      "category": "medial",
+      "example": {
+        "character": "魚",
+        "pinyin": "yú",
+        "meaning": "fish"
+      }
+    },
+    {
+      "symbol": "ㄚ",
+      "unicode": "U+311A",
+      "pinyin": "a",
+      "ipa": "a",
+      "category": "final",
+      "example": {
+        "character": "大",
+        "pinyin": "dà",
+        "meaning": "big"
+      }
+    },
+    {
+      "symbol": "ㄛ",
+      "unicode": "U+311B",
+      "pinyin": "o",
+      "ipa": "ɔ",
+      "category": "final",
+      "example": {
+        "character": "波",
+        "pinyin": "bō",
+        "meaning": "wave"
+      }
+    },
+    {
+      "symbol": "ㄜ",
+      "unicode": "U+311C",
+      "pinyin": "e",
+      "ipa": "ɤ",
+      "category": "final",
+      "example": {
+        "character": "喝",
+        "pinyin": "hē",
+        "meaning": "to drink"
+      }
+    },
+    {
+      "symbol": "ㄝ",
+      "unicode": "U+311D",
+      "pinyin": "ê",
+      "ipa": "ɛ",
+      "category": "final",
+      "example": {
+        "character": "誒",
+        "pinyin": "ề",
+        "meaning": "hey (interjection)"
+      }
+    },
+    {
+      "symbol": "ㄞ",
+      "unicode": "U+311E",
+      "pinyin": "ai",
+      "ipa": "ai",
+      "category": "final",
+      "example": {
+        "character": "愛",
+        "pinyin": "ài",
+        "meaning": "love"
+      }
+    },
+    {
+      "symbol": "ㄟ",
+      "unicode": "U+311F",
+      "pinyin": "ei",
+      "ipa": "ei",
+      "category": "final",
+      "example": {
+        "character": "給",
+        "pinyin": "gěi",
+        "meaning": "to give"
+      }
+    },
+    {
+      "symbol": "ㄠ",
+      "unicode": "U+3120",
+      "pinyin": "ao",
+      "ipa": "au",
+      "category": "final",
+      "example": {
+        "character": "好",
+        "pinyin": "hǎo",
+        "meaning": "good"
+      }
+    },
+    {
+      "symbol": "ㄡ",
+      "unicode": "U+3121",
+      "pinyin": "ou",
+      "ipa": "ou",
+      "category": "final",
+      "example": {
+        "character": "有",
+        "pinyin": "yǒu",
+        "meaning": "to have"
+      }
+    },
+    {
+      "symbol": "ㄢ",
+      "unicode": "U+3122",
+      "pinyin": "an",
+      "ipa": "an",
+      "category": "final",
+      "example": {
+        "character": "安",
+        "pinyin": "ān",
+        "meaning": "peace"
+      }
+    },
+    {
+      "symbol": "ㄣ",
+      "unicode": "U+3123",
+      "pinyin": "en",
+      "ipa": "ən",
+      "category": "final",
+      "example": {
+        "character": "恩",
+        "pinyin": "ēn",
+        "meaning": "grace"
+      }
+    },
+    {
+      "symbol": "ㄤ",
+      "unicode": "U+3124",
+      "pinyin": "ang",
+      "ipa": "aŋ",
+      "category": "final",
+      "example": {
+        "character": "忙",
+        "pinyin": "máng",
+        "meaning": "busy"
+      }
+    },
+    {
+      "symbol": "ㄥ",
+      "unicode": "U+3125",
+      "pinyin": "eng",
+      "ipa": "əŋ",
+      "category": "final",
+      "example": {
+        "character": "冷",
+        "pinyin": "lěng",
+        "meaning": "cold"
+      }
+    },
+    {
+      "symbol": "ㄦ",
+      "unicode": "U+3126",
+      "pinyin": "er",
+      "ipa": "ɚ",
+      "category": "final",
+      "example": {
+        "character": "二",
+        "pinyin": "èr",
+        "meaning": "two"
+      }
+    }
+  ]
+}

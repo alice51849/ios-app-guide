@@ -1,0 +1,30 @@
+---
+title: "G+Money Lite: Potni stroški — Dnevni proračun na uri | iOS App"
+lang: "sl-SI"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/gmoneylite/decision/l/sl-SI/index.html"
+modified: "2026-10-21"
+app_store_id: "6793436548"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# G+Money Lite: Potni stroški — Dnevni proračun na uri | iOS App
+
+G+Money Lite — Pametna potovalna valuta in sledilnik stroškov Potovalni denar, poenostavljen Zabeležite vsak nakup v lokalni valuti in ga takoj vidite v svoji domači valuti — na spletu ali brez povezave. Pretvori • Živi ali ročni tečaji: Lahko pridobimo najnovejše tečaje samodejno, ali pa jih nastavite sami. Vedno deluje brez povezave. • Pridobi najnovejše tečaje, ko odpreš aplikacijo (približno vsakih 6 ur). Vedno deluje brez povezave z tvojimi shranjenimi tečaji. • Referenčni tečaj na srednjem trgu. Kartice in gotovina se lahko razlikujejo. Poraba • Dnevna omejitev: Neobvezno. Poglej, kako se vsak dan ujema s tem. • Po kategorijah · Potovanja · Filtri · Zapisniki • Varnostna kopija & obnova: Vključuje stroške, tečaje, kategorije in nastavitve. • Widget · Apple Watch Vse ostane na vaši napravi. Brez računa, brez sledenja. Tečaji uporabljajo javno storitev menjalnih tečajev. Brez nakupa: tečaji, proračun, povzetek · 1 potovanje · 3 stroški Eno plačilo · Doživljenjski dostop · Brez naročnine Za vedno odklenite neomejene stroške in potovanja. Optimizirano za iPhone Duo.
+
+- Denar in potovanja
+- Brezplačen začetek
+- Brez povezave
+- Brez računa
+- Brez sledenja
+- Zasebno / na napravi
+- Gradnik
+- Apple Watch
+- App Store · Brezplačno
+
+[Prenesite G+Money Lite: Potni stroški iz trgovine App Store](https://apps.apple.com/si/app/id6793436548?pt=118326163&ct=geo_pick&mt=8)
+
+[Preberite celoten vodnik](https://open.cait518.cc/ios-app-guide/sl-SI/gmoneylite.html)
+
+> To je gradivo prve roke, ki ga je objavil Lumi Studio, razvijalec vseh navedenih aplikacij.

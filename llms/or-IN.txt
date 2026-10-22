@@ -1,0 +1,245 @@
+# ଆପ୍ ଡିରେକ୍ଟୋରି — iOS App Guide
+
+> ପ୍ରତ୍ୟେକ iOS ଆପ୍‌ର ବୈଶିଷ୍ଟ୍ୟ, ମୂଲ୍ୟ ଓ ବାରମ୍ବାର ପଚରାଯାଉଥିବା ପ୍ରଶ୍ନର ସୁସଂଗଠିତ ସୂଚନା।
+
+locale: or-IN
+apps: 54
+- ଆପ୍ ଡିରେକ୍ଟୋରି: https://open.cait518.cc/ios-app-guide/or-IN/tools/private-pay-once-iphone-app-finder.html
+- ଆପ୍ ଡିରେକ୍ଟୋରି · PWA: https://open.cait518.cc/ios-app-guide/or-IN/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/or-IN.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/or-IN.json
+- ଆପ୍ ଡିରେକ୍ଟୋରି · SVG: https://open.cait518.cc/ios-app-guide/or-IN/visuals/
+- ଆପ୍ ଡିରେକ୍ଟୋରି · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- ଆପ୍ ଡିରେକ୍ଟୋରି · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- ଆପ୍ ଡିରେକ୍ଟୋରି · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- ଆପ୍ ଡିରେକ୍ଟୋରି · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · or-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/or-IN.json
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ଆପ୍ ଡିରେକ୍ଟୋରି · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/or-IN/notesstudio100.html) — ହସ୍ତଲିଖିତ ନୋଟ୍, PDF ଟିପ୍ପଣୀ
+  - ଶୀତଦିନର ସେମିଷ୍ଟର ପରୀକ୍ଷା: ହାତରେ ନୋଟ୍ ଲେଖନ୍ତୁ, ଲେକ୍ଚର PDF ରେ ଚିହ୍ନ ଦିଅନ୍ତୁ, ରେକର୍ଡିଂ ସେହି ପୃଷ୍ଠାରେ ରଖନ୍ତୁ ଓ ଫ୍ଲାସକାର୍ଡରେ ପୁନରାବୃତ୍ତି କରନ୍ତୁ। ଅଫଲାଇନ, ଆକାଉଣ୍ଟ ଦରକାର ନାହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: ଫାଇଲରୁ AI ପ୍ରମ୍ପ୍ଟ](https://open.cait518.cc/ios-app-guide/or-IN/aibriefpack.html) — ଫାଇଲ ଓ PDF ରୁ ପ୍ରମ୍ପ୍ଟ
+  - ବର୍ଷ ଶେଷ ରିପୋର୍ଟ ଓ ଛୁଟି ଯୋଜନା? ସ୍କ୍ରିନସଟ, PDF, ନୋଟ ଓ ଲିଙ୍କ ଯୋଡ଼ନ୍ତୁ; ଡିଭାଇସରେ ହିଁ ପଢ଼ାଯାଏ, ବ୍ୟକ୍ତିଗତ ତଥ୍ୟ ଚିହ୍ନିତ ହୁଏ, AI ପାଇଁ ଗୋଟିଏ ସ୍ପଷ୍ଟ ବ୍ରିଫ ପ୍ରସ୍ତୁତ ହୁଏ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: ଇଂରାଜୀ କୋଚ୍](https://open.cait518.cc/ios-app-guide/or-IN/aim990.html) — 8 ମିନିଟ୍ ଦୁର୍ବଳତା ନିରୂପଣ
+  - 8 ମିନିଟ୍‌ର ନିରୂପଣ ଆପଣଙ୍କ 3ଟି ଦୁର୍ବଳ ଦକ୍ଷତା ଦେଖାଏ, ସୁଧାର ଯୋଜନା ଲେଖେ, ପ୍ରତିଦିନ ଅଭ୍ୟାସ କରାଏ ଏବଂ 30ତମ ଦିନରେ ପୁଣି ମାପେ। ଇଣ୍ଟରନେଟ୍ ଦରକାର ନାହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: ବ୍ୟାଟେରୀ ସ୍ଥିତି](https://open.cait518.cc/ios-app-guide/or-IN/battai.html) — ସ୍ପଷ୍ଟ ନିୟମ, ଉତ୍ସ ଓ ସୀମା
+  - ସମୟ ସହିତ ଆପଣଙ୍କ ବ୍ୟାଟେରୀକୁ ବୁଝନ୍ତୁ ସ୍ପଷ୍ଟ ନିୟମ, ଉତ୍ସ ଓ ସୀମା ଅଧିକ ଇତିହାସ, ଯୋଜନା ଓ ରିପୋର୍ଟ ଖୋଲନ୍ତୁ। ଗୋଟିଏ ଦେୟ। କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily: କାଲକୁଲେଟର](https://open.cait518.cc/ios-app-guide/or-IN/caldaily.html) — ୱିଜେଟ, ଉପକରଣ ଓ ଇତିହାସ
+  - ସିଧା ହୋମ୍ ସ୍କ୍ରିନରେ ହିସାବ କରନ୍ତୁ: ୱିଜେଟ୍ ନିଜେ ଏକ ପୂର୍ଣ୍ଣ କାଲକୁଲେଟର। ଟିପ୍, ଛାଡ଼, ଋଣ ଓ ଆଉ 5ଟି ଉପକରଣ ଆପ୍‌ରେ ହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/or-IN/countdaysnow.html) — ଆଜିର ଧ୍ୟାନ
+  - ଆଜିର ଧ୍ୟାନ: ପ୍ରତିଦିନ ବ୍ୟକ୍ତିଗତ ଭାବେ ଠାରୁ, ଆଜି କିମ୍ବା ଆଗକୁ ବାଛନ୍ତୁ। ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ତାରିଖ ସହ ଶେଷ ତିନିଟି ପସନ୍ଦ ଦେଖନ୍ତୁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: ATS ରେଜ୍ୟୁମେ ବିଲ୍ଡର](https://open.cait518.cc/ios-app-guide/or-IN/cvdesk.html) — ବାୟୋଡାଟା, ଟେମ୍ପଲେଟ୍ ଓ PDF
+  - ତୁରନ୍ତ ATS ସ୍କୋର, ସ୍ପଷ୍ଟ ସଂଶୋଧନ ଓ ନିଯୁକ୍ତିକର୍ତ୍ତାଙ୍କ ପ୍ରଥମ 6 ସେକେଣ୍ଡର ଦୃଷ୍ଟି। ଅନ୍ତିମ PDF ଯେକୌଣସି ସମୟରେ ପ୍ରିଭ୍ୟୁ କରନ୍ତୁ। ଆକାଉଣ୍ଟ ଦରକାର ନାହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: ପିରିଅଡ୍ ଓ ସାଇକଲ ଟ୍ରାକର](https://open.cait518.cc/ios-app-guide/or-IN/cyca.html) — ମାସିକ କ୍ୟାଲେଣ୍ଡର, ଡିମ୍ବୋତ୍ସର୍ଗ
+  - ଶୀତ ଛୁଟି ଓ ବର୍ଷଶେଷର ବ୍ୟସ୍ତତାରେ ବି ପିରିୟଡ଼ ହିସାବ ରଖନ୍ତୁ। ପ୍ରବାହ, ଲକ୍ଷଣ, ମୁଡ୍ ଓ ନୋଟ ସେକେଣ୍ଡରେ ଲେଖନ୍ତୁ। ସବୁ ଆପଣଙ୍କ ଫୋନରେ: ଆକାଉଣ୍ଟ ନାହିଁ, ଅଫଲାଇନ ଚାଲେ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: ଆଜି କୁହନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/dailymatelite.html) — ଯାତ୍ରା କଥାବାର୍ତ୍ତା, 50 ଭାଷା
+  - ବିମାନବନ୍ଦର, ହୋଟେଲ କିମ୍ବା ରେଷ୍ଟୁରାଣ୍ଟରେ ଲୋକମାନେ କଣ କହନ୍ତି ବୁଝନ୍ତୁ ଏବଂ ସ୍ୱାଭାବିକ ଉତ୍ତର ଶିଖନ୍ତୁ। ଯାତ୍ରାର ମୌଳିକ ପାଠ ସମସ୍ତ 50 ଭାଷାରେ, ଅଫଲାଇନରେ ମଧ୍ୟ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: ଦୈନନ୍ଦିନ ବାକ୍ୟ](https://open.cait518.cc/ios-app-guide/or-IN/dailymate.html) — ଇଂରାଜୀ କହିବା ଶିଖନ୍ତୁ
+  - ଲୋକେ ପ୍ରକୃତରେ କ'ଣ କୁହନ୍ତି ଶିଖନ୍ତୁ: 47ଟି ଭାଷାରେ 8,400 ଦୈନନ୍ଦିନ ବାକ୍ୟ ସ୍ୱାଭାବିକ ଉତ୍ତର ସହ, 84ଟି ପରିସ୍ଥିତିରେ। ୱିଜେଟ୍ ଓ Apple Watch ସହ। ଅଫଲାଇନରେ ବି ଚାଲେ।
+  - ମୂଲ୍ୟ: ଗୋଟିଏ ଆଗୁଆ ମୂଲ୍ୟରେ ପେଡ୍ ଡାଉନଲୋଡ୍, କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: ଶବ୍ଦ ସ୍ତର ମାପକ](https://open.cait518.cc/ios-app-guide/or-IN/dbhalo.html) — FFT, RTA ଓ ବର୍ଣ୍ଣାଳୀ
+  - ବାହାଘର ଋତୁ, ହଟ୍ଟଗୋଳିଆ ପଡ଼ୋଶୀ ବା ଶୀତ ରାତିରେ ନାକ ଡାକିବା? Halo ରିଙ୍ଗରେ ଲାଇଭ୍ dB ଦେଖନ୍ତୁ, ଦୈନିକ ଶବ୍ଦ ଡୋଜ ଆକଳନ କରନ୍ତୁ ଓ ସ୍ଲିପ୍ ଜର୍ନାଲରେ ନାକ ଡାକିବା ଲେଖନ୍ତୁ। ସବୁ ଡିଭାଇସରେ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: ଛୁଟି ଆଲାର୍ମ ଘଡ଼ି](https://open.cait518.cc/ios-app-guide/or-IN/easyam.html) — କାମ ଦିନରେ ବାଜେ, ଛୁଟିରେ ଚୁପ
+  - ଶୀତ ଛୁଟି ବା ବର୍ଷ ଶେଷର ଯାତ୍ରା? ସେହି ଦିନଗୁଡ଼ିକୁ ଛୁଟି ଭାବେ ଯୋଡ଼ନ୍ତୁ, ଆଲାର୍ମ ଚୁପ୍ ରହିବ ଓ ପ୍ରଥମ କାମ ଦିନ ପୁଣି ବାଜିବ। ଆଗାମୀ 7 ଦିନ ଗୋଟିଏ ନଜରରେ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: ଯାତ୍ରା ଖର୍ଚ୍ଚ](https://open.cait518.cc/ios-app-guide/or-IN/gmoneylite.html) — ଦୈନିକ ବଜେଟ୍ ୱାଚ୍ ଓ ୱିଜେଟରେ
+  - ଶୀତ ଛୁଟିରେ ବିଦେଶ ଯାତ୍ରା? ସ୍ଥାନୀୟ ମୁଦ୍ରାରେ ଖରିଦ ଲେଖନ୍ତୁ, ତୁରନ୍ତ ନିଜ ମୁଦ୍ରାରେ ଦେଖନ୍ତୁ, ଦୈନିକ ସୀମା ରଖନ୍ତୁ। ଲାଇଭ କିମ୍ବା ମାନୁଆଲ ଦର ଅଫଲାଇନରେ ମଧ୍ୟ ଚାଲେ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: ଖର୍ଚ୍ଚ ଓ ବଜେଟ୍](https://open.cait518.cc/ios-app-guide/or-IN/gmoney.html) — ଯାତ୍ରା ଖର୍ଚ୍ଚ ଓ ମୁଦ୍ରା ହାର
+  - ଶୀତ ଛୁଟି ଓ ନୂଆ ବର୍ଷ ଯାତ୍ରା ଆସୁଛି? ଶ୍ରେଣୀ ଅନୁଯାୟୀ ଖର୍ଚ୍ଚ ଲଗ କରନ୍ତୁ, ଦିନକିଆ ସୀମା ସେଟ କରି ଆଜି କେତେ ବାକି ଦେଖନ୍ତୁ। ଲାଇଭ କିମ୍ବା ମାନୁଆଲ ଦରରେ ମୁଦ୍ରା ବଦଳାନ୍ତୁ, ଅଫଲାଇନରେ ମଧ୍ୟ।
+  - ମୂଲ୍ୟ: ଗୋଟିଏ ଆଗୁଆ ମୂଲ୍ୟରେ ପେଡ୍ ଡାଉନଲୋଡ୍, କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: ମୂଲ୍ୟ ଘଣ୍ଟାରେ](https://open.cait518.cc/ios-app-guide/or-IN/hourstaglite.html) — ସଚେତନ କିଣା: ପ୍ରକୃତ ମୂଲ୍ୟ
+  - ବର୍ଷ ଶେଷ କିଣାକିଣି ଓ ଉପହାରର ସମୟ: କିଣିବା ପୂର୍ବରୁ ଦାମକୁ ଆପଣଙ୍କ କାମ ଘଣ୍ଟାରେ ଦେଖନ୍ତୁ, ଆବଶ୍ୟକ, ଚାହିଁ ବା ଆକର୍ଷଣ ଭାବେ ଚିହ୍ନିତ କରନ୍ତୁ, ଏବଂ ନୂଆ ବର୍ଷର ଗୋଲ୍ ପଛର କାମ ଦେଖନ୍ତୁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: ଘଣ୍ଟାରେ କିଣନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/hourstag.html) — ଘଣ୍ଟା ମଜୁରି ଓ ଖର୍ଚ୍ଚ
+  - ବର୍ଷ ଶେଷର ଖରିଦ ଓ ଉପହାର? କିଣିବା ଆଗରୁ ପ୍ରତ୍ୟେକ ଦାମକୁ କାମର ଘଣ୍ଟାରେ ଦେଖନ୍ତୁ, ଖର୍ଚ୍ଚକୁ ଆବଶ୍ୟକତା, ଚାହିଦା ବା ଅନୁରୋଧ ଭାବେ ଟ୍ୟାଗ କରନ୍ତୁ ଏବଂ ଲକ୍ଷ୍ୟକୁ କାମର ଘଣ୍ଟାରେ ଯୋଜନା କରନ୍ତୁ।
+  - ମୂଲ୍ୟ: ଗୋଟିଏ ଆଗୁଆ ମୂଲ୍ୟରେ ପେଡ୍ ଡାଉନଲୋଡ୍, କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/or-IN/ledmovingtext.html) — ସ୍କ୍ରିନରେ ଚାଲୁଥିବା ଫଳକ
+  - କିଛି ସେକେଣ୍ଡରେ ସ୍କ୍ରିନକୁ ଝଲସୁଥିବା ଚାଲନ୍ତା ଫଳକ କରନ୍ତୁ, କିମ୍ବା ସନ୍ଦେଶ କ୍ରମ ତିଆରି କରି ଟାପ କିମ୍ବା ଟାଇମରରେ ବଦଳାନ୍ତୁ। ଫୁଲ ସ୍କ୍ରିନ, ଅଫଲାଇନ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: ଆପ୍ ବ୍ଲକ୍](https://open.cait518.cc/ios-app-guide/or-IN/lockhour.html) — ସ୍କ୍ରିନ୍ ସମୟ ଓ ଆପ୍ ଲକ୍
+  - ସମୟ ନଷ୍ଟ କରୁଥିବା ଆପ୍ ଓ ୱେବସାଇଟ୍‌କୁ ଟାଇମର୍ ଶେଷ ହେବା ପର୍ଯ୍ୟନ୍ତ ଲକ୍ କରନ୍ତୁ। ଫୋକସ୍, ପଢ଼ା ଓ ନିଦ୍ରା ମୋଡ୍, ହାର୍ଡ ମୋଡ୍, ପରିସଂଖ୍ୟାନ। ଆକାଉଣ୍ଟ ଦରକାର ନାହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo](https://open.cait518.cc/ios-app-guide/or-IN/lumibopomofo.html) — Zhuyin: ପିଲାଙ୍କ ଚାଇନିଜ୍
+  - ଧ୍ୱନି ଶୁଣି ପ୍ରତୀକ ସାଙ୍ଗମାନଙ୍କୁ ଖାଇବାକୁ ଦିଅନ୍ତୁ, ପ୍ରତ୍ୟେକ ରେଖା କ୍ରମରେ ଟ୍ରେସ୍ କରନ୍ତୁ, ଟୋନ୍ ରୋଲର କୋଷ୍ଟରରେ ଚଢ଼ନ୍ତୁ ଓ ଟ୍ରେନରେ ଧ୍ୱନି ଯୋଡ଼ନ୍ତୁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: ଜୁଯିନ](https://open.cait518.cc/ios-app-guide/or-IN/lumibopomofopro.html) — ଚାଇନିଜ୍ ଟୋନ୍ ଓ ଅଭ୍ୟାସ ପତ୍ର
+  - ସମସ୍ତ 37 ଜୁଯିନ ଧ୍ୱନି ଏକାଠି: ଟୋନ୍ ରୋଲର କୋଷ୍ଟର, ଧ୍ୱନି ଟ୍ରେନ, ମାଛ ଧରା, ଟ୍ରେସିଂ ଓ ଷ୍ଟାର ରେସ। ଅଭିଭାବକ ପ୍ରଗତି ଦେଖନ୍ତି ଓ ଅଭ୍ୟାସ ପତ୍ର ପ୍ରିଣ୍ଟ କରନ୍ତି। ବିଜ୍ଞାପନ ନାହିଁ।
+  - ମୂଲ୍ୟ: ଗୋଟିଏ ଆଗୁଆ ମୂଲ୍ୟରେ ପେଡ୍ ଡାଉନଲୋଡ୍, କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Lite: ଏବିସି ଶିଶୁ](https://open.cait518.cc/ios-app-guide/or-IN/lumiletters.html) — ଇଂରାଜୀ ଅକ୍ଷର ଲେଖା ଓ ଫୋନିକ୍ସ
+  - ପ୍ରଥମେ A ଅକ୍ଷର ଓ ପ୍ରଥମ ଗ୍ରହ ଚେଷ୍ଟା କରନ୍ତୁ: ଶିଶୁ ଧ୍ୱନି ଶୁଣେ, ଆଙ୍ଗୁଠିରେ ଲେଖେ ଓ ଗ୍ରହ କ୍ୱିଜ୍ ଖେଳେ। ପରେ ସମସ୍ତ ୨୬ଟି ଅକ୍ଷର ଓ ୧୪ଟି ଗ୍ରହ ଅନଲକ୍ କରିହେବ। ବିଜ୍ଞାପନ ନାହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Pro: ABC ଫୋନିକ୍ସ](https://open.cait518.cc/ios-app-guide/or-IN/lumiletterspro.html) — ପିଲାଙ୍କ ପାଇଁ ଇଂରାଜୀ ଧ୍ୱନି
+  - ପିଲା ଗୋଟିଏ ଶବ୍ଦ ଶୁଣି ପ୍ରଥମ, ମଝି କିମ୍ବା ଶେଷ ଧ୍ୱନି ଖୋଜେ ଏବଂ ଅକ୍ଷର ଟ୍ରେସ୍ କରେ। 26ଟି ଅକ୍ଷର, 14ଟି ଗ୍ରହ ଓ ପ୍ରିଣ୍ଟ ଯୋଗ୍ୟ ୱାର୍କସିଟ୍। ବିଜ୍ଞାପନ ନାହିଁ।
+  - ମୂଲ୍ୟ: ଗୋଟିଏ ଆଗୁଆ ମୂଲ୍ୟରେ ପେଡ୍ ଡାଉନଲୋଡ୍, କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet Pro](https://open.cait518.cc/ios-app-guide/or-IN/lumimissionpro.html) — ସକାଳ ଓ ରାତିର ଦିନଚର୍ଯ୍ୟା
+  - ସବୁ ଦିନଚର୍ଯ୍ୟା ସାମିଲ: ଖାଇବା, ଦାନ୍ତ ଘଷିବା, ଶୋଇବା, ଖେଳନା ସଜାଡ଼ିବା ଓ ସ୍କୁଲ ପ୍ରସ୍ତୁତି, ନିଜ କାମ, 7 ଦିନର ସାରାଂଶ ଓ ସନ୍ଧ୍ୟା ସ୍ମାରକ। ବିଜ୍ଞାପନ ନାହିଁ।
+  - ମୂଲ୍ୟ: ଗୋଟିଏ ଆଗୁଆ ମୂଲ୍ୟରେ ପେଡ୍ ଡାଉନଲୋଡ୍, କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet: ଦୈନିକ ଅଭ୍ୟାସ](https://open.cait518.cc/ios-app-guide/or-IN/lumimission.html) — ପିଲାଙ୍କ ପାଇଁ ପୁରସ୍କାର ଚାର୍ଟ
+  - କମ୍ ଗାଳି, ଅଧିକ ଜିତ: ପ୍ରତି ସମାପ୍ତ ମିଶନ ତାରା ଦିଏ, Lumi କୁ ଖାଇବାକୁ ଦିଏ ଓ 100 ଷ୍ଟିକର ଆଲବମ ଭରେ। ନିଜ କାମ ଯୋଡନ୍ତୁ। ବିଜ୍ଞାପନ ନାହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi ଗଣିତ Pro: ଶିଶୁ ସଂଖ୍ୟା](https://open.cait518.cc/ios-app-guide/or-IN/lumimathpro.html) — ତର୍କ ପଜଲ୍ ଓ ଶବ୍ଦ ସମସ୍ୟା
+  - ତର୍କ ପଜଲ୍, ଢାଞ୍ଚା ଓ ଶବ୍ଦ ସମସ୍ୟା, 46 ପ୍ରକାର ପ୍ରଶ୍ନରେ। ଦୁର୍ବଳ ଅଂଶର ଅଭ୍ୟାସ, ପ୍ରଗତି ରିପୋର୍ଟ ଓ ପ୍ରିଣ୍ଟ ଯୋଗ୍ୟ ୱାର୍କସିଟ୍। ବିଜ୍ଞାପନ ନାହିଁ।
+  - ମୂଲ୍ୟ: ଗୋଟିଏ ଆଗୁଆ ମୂଲ୍ୟରେ ପେଡ୍ ଡାଉନଲୋଡ୍, କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi ଗଣିତ ଗ୍ରହ: ଅନୁସନ୍ଧାନ](https://open.cait518.cc/ios-app-guide/or-IN/lumimath.html) — ପିଲାଙ୍କ ଯୋଗ ବିୟୋଗ ଖେଳ
+  - ଠିକ୍ ଉତ୍ତର ଦେଲେ ଗୋଟିଏ ଗ୍ରହ ଝଲସି ଉଠେ। ଗଣନା, ଯୋଗ, ବିୟୋଗ, ନାମତା, ଘଣ୍ଟା ଓ ଟଙ୍କାର ଚିତ୍ର ସହ 46 ପ୍ରକାର ପ୍ରଶ୍ନ। ପ୍ରିଣ୍ଟ ଯୋଗ୍ୟ ୱର୍କସିଟ୍। ବିଜ୍ଞାପନ ନାହିଁ, ସବ୍ସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi ପାଗ: ଆଜିର ପୂର୍ବାନୁମାନ](https://open.cait518.cc/ios-app-guide/or-IN/lumiweather.html) — ବାହାରକୁ ଯିବା ସ୍କୋର ଓ ପୋଷାକ
+  - ଏବେ ବାହାରକୁ ଯିବେ ନା ଅପେକ୍ଷା କରିବେ? Lumi ପୂର୍ବାନୁମାନକୁ 0–100 ସ୍କୋରରେ ବଦଳାଏ ଏବଂ କ’ଣ ପିନ୍ଧିବେ, ଛତା କିମ୍ବା ସନସ୍କ୍ରିନ ଦରକାର କି ନାହିଁ କହେ। ଘଣ୍ଟାୱାରି ଓ 7 ଦିନର ପୂର୍ବାନୁମାନ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: ତଥ୍ୟ ହଟାନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/maskmyfile.html) — ସେୟାର ପୂର୍ବରୁ ବିବରଣୀ ଲୁଚାନ୍ତୁ
+  - ଶୀତ ଯାତ୍ରା ପାଇଁ ପାସପୋର୍ଟ କପି ବା ବର୍ଷ ଶେଷର ଦରମା ସ୍ଲିପ୍ ପଠାଇବେ? ବ୍ୟକ୍ତିଗତ ତଥ୍ୟ ଖୋଜନ୍ତୁ, ବାଛିଥିବା ଅଂଶ ହିଁ ସ୍ଥାୟୀ ଭାବେ ଢାଙ୍କନ୍ତୁ ଓ ମେଟାଡାଟା ହଟାନ୍ତୁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: ଶେଷ ଥର](https://open.cait518.cc/ios-app-guide/or-IN/mochidonestamp.html) — କେବେ କରିଥିଲି? ଘର କାମ ସ୍ମାରକ
+  - ଶେଷଥର କେବେ କରିଥିଲେ ଭାବିବାକୁ ପଡ଼ିବ ନାହିଁ। ସରିଲେ ଷ୍ଟାମ୍ପ ଦିଅନ୍ତୁ, Mochi ମନେ ରଖିବ ଓ ସମୟ ହେଲେ ମନେ ପକାଇବ। ଚାଦର, ଫିଲ୍ଟର, ଗଛ, ପରିବାର ସହ ମଧ୍ୟ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: କ୍ୟୁଟ୍ ଟାସ୍କ ଲିଷ୍ଟ](https://open.cait518.cc/ios-app-guide/or-IN/mochi.html) — ସୁନ୍ଦର କାମ ଓ ୱିଜେଟ୍
+  - ଦୀପାବଳିରୁ ବର୍ଷ ଶେଷ ପର୍ଯ୍ୟନ୍ତ ପଢ଼ା, କାମ ଓ ସପିଂ ସବୁ ଗୋଟିଏ ସୁନ୍ଦର ତାଲିକାରେ। କାମ ସରିଲେ ଛୋଟ ବୃତ୍ତକୁ ଟ୍ୟାପ୍ କରନ୍ତୁ, ଥିମ୍ ବାଛନ୍ତୁ ଓ Home Screen ରେ cute widgets ଯୋଡ଼ନ୍ତୁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag: ଆୟ ଓ ବ୍ୟୟ](https://open.cait518.cc/ios-app-guide/or-IN/moneytag.html) — ପ୍ରକଳ୍ପ · ଟ୍ୟାଗ · ରିପୋର୍ଟ
+  - ବର୍ଷ ଶେଷର ସାଇଡ କାମ ବା ଶୀତ ମେଳା ଷ୍ଟଲ? ଆପଣଙ୍କ ପ୍ରକଳ୍ପ ଆୟରୁ ବ୍ୟୟ ବାଦ ଦେଇ ଗୋଟିଏ ସ୍ପଷ୍ଟ ନିଟ ଫଳ, ଆପଣ ବାଛିଥିବା ମୁଦ୍ରାରେ ଦେଖାଏ। Apple Watch ରୁ ଏଣ୍ଟ୍ରି କରନ୍ତୁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: ଏକ ସ୍ଲାଇଡ୍](https://open.cait518.cc/ios-app-guide/or-IN/onepageppt.html) — ନୋଟରୁ ସୁନ୍ଦର ଉପସ୍ଥାପନା
+  - ବର୍ଷଶେଷ ସମୀକ୍ଷା ବୈଠକ? ନୋଟ, PDF, ସ୍କ୍ରିନସଟ କିମ୍ବା CSV ଦିଅନ୍ତୁ, ଗୋଟିଏ ସ୍ପଷ୍ଟ 16:9 ସ୍ଲାଇଡ ପାଆନ୍ତୁ: ମୁଖ୍ୟ କଥା ଶିରୋନାମା, ସଂଖ୍ୟା ଚାର୍ଟ। PNG ଭାବେ ସେୟାର କରନ୍ତୁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: ଫିଲ୍ମ ଫିଲ୍ଟର](https://open.cait518.cc/ios-app-guide/or-IN/photocream.html) — ଫିଲ୍ମ କ୍ୟାମେରା, ଭିଣ୍ଟେଜ ଫିଲ୍ଟର
+  - ବାହାଘର ଋତୁ ଓ ବର୍ଷ ଶେଷ ପାର୍ଟିର ଫଟୋ ହଳଦିଆ ଆଲୋକରେ? ଆଲୋକ, ରଙ୍ଗ ଓ କର୍ଭ ସୂକ୍ଷ୍ମ ଭାବେ ଠିକ୍ କରନ୍ତୁ, ବିବରଣୀ ନ ହରାଇ ଚର୍ମ ସୁନ୍ଦର କରନ୍ତୁ, ଫିଲ୍ମ ଗ୍ରେନ୍ ଯୋଡନ୍ତୁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: ଫଟୋ କ୍ଲିନର୍](https://open.cait518.cc/ios-app-guide/or-IN/picclear.html) — ସ୍କ୍ରିନସଟ୍ ହଟାଇ ସ୍ଥାନ ପାଆନ୍ତୁ
+  - ଷ୍ଟୋରେଜ୍ ଭରିଗଲା? ଡୁପ୍ଲିକେଟ୍ ଓ ସମାନ ଫଟୋ, ପୁରୁଣା ସ୍କ୍ରିନସଟ୍ ଓ ବଡ଼ ଭିଡିଓ ଖୋଜନ୍ତୁ, ଡିଲିଟ୍ ପୂର୍ବରୁ ଯାଞ୍ଚ କରି ଗିଗାବାଇଟ୍ ଜାଗା ଖାଲି କରନ୍ତୁ। ସ୍କାନ୍ ଡିଭାଇସରେ ହିଁ ହୁଏ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: ସ୍କାନ୍ ଓ ତିଆରି](https://open.cait518.cc/ios-app-guide/or-IN/qrcodehalo.html) — ତୁରନ୍ତ ଖୋଲେ, ପରେ ଯାଞ୍ଚ କରନ୍ତୁ
+  - ସ୍କାନ କରନ୍ତୁ, କାମ ସରିଲା: ଲିଙ୍କ ଖୋଲେ, Wi-Fi ରେ iOS ବାର୍ତ୍ତା ଆସେ, କଲ ଓ ଇମେଲ ପ୍ରସ୍ତୁତ। ପ୍ରତ୍ୟେକ ସଞ୍ଚିତ ସ୍କାନର ଇତିହାସରେ ସୁରକ୍ଷା ଯାଞ୍ଚ, ଆପଣଙ୍କ ଡିଭାଇସରେ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: AI ବୁକମାର୍କ](https://open.cait518.cc/ios-app-guide/or-IN/savetag.html) — ଲିଙ୍କ ସେଭ କରନ୍ତୁ, ପରେ ପଢ଼ନ୍ତୁ
+  - ଉପହାର ଆଇଡିଆ, ରେସିପି ଓ ବୁଲିବା ଜାଗାର ଲିଙ୍କ ଚାଟରେ ହଜିଯାଏ? ଯେକୌଣସି ଆପରୁ ସେୟାର କରନ୍ତୁ, ଡିଭାଇସରେ ନିଜେ ଟ୍ୟାଗ ହେବ ଓ ପରେ ଅର୍ଥ ଦେଇ ଖୋଜିପାରିବେ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: PDF ସ୍କାନ](https://open.cait518.cc/ios-app-guide/or-IN/scanto.html) — ଅଫଲାଇନ ଡକ୍ୟୁମେଣ୍ଟ ସ୍କାନର
+  - ବର୍ଷ ଶେଷର ରସିଦ, ୱାରେଣ୍ଟି କାର୍ଡ ଓ ଚୁକ୍ତି କାଗଜ ଜମିଗଲାଣି? ସ୍ପଷ୍ଟ PDF ରେ ସ୍କାନ୍ କରନ୍ତୁ, ଡିଭାଇସ୍‌ର OCR ଗୋଟିଏ ଶବ୍ଦରେ ଦରକାରୀ କାଗଜ ଖୋଜିଦିଏ। ଅଫଲାଇନ୍, ଆକାଉଣ୍ଟ ବିନା।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: ନିଦର ଶବ୍ଦ](https://open.cait518.cc/ios-app-guide/or-IN/sereno.html) — ହ୍ୱାଇଟ୍ ନଏଜ୍, ବର୍ଷା ଓ ସମୁଦ୍ର
+  - ବର୍ଷା, ସମୁଦ୍ର, ନିଆଁ ଓ ଆହୁରି ଅନେକ: ନିଦ, ଫୋକସ୍ ପାଇଁ 140+ ଶାନ୍ତିଦାୟକ ଶବ୍ଦ। ନିଜେ ମିକ୍ସ କରନ୍ତୁ, ଧୀରେ ବନ୍ଦ ହେଉଥିବା ଟାଇମର୍, ଚଢ଼େଇଙ୍କ ଡାକରେ ଉଠନ୍ତୁ। ଅଫଲାଇନ୍, ଆକାଉଣ୍ଟ ଦରକାର ନାହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/or-IN/shotinbox.html) — ସ୍କ୍ରିନସଟ ସଜାଡ଼ିବା, OCR ଖୋଜ
+  - ବର୍ଷ ଶେଷର କିଣାକିଣି ଓ ଶୀତ ଯାତ୍ରାରେ ରସିଦ, ଟିକେଟ ଓ ଅର୍ଡରର ସ୍କ୍ରିନସଟ୍ ଜମିଯାଏ। ସବୁ ନିଜେ ସଜାଡ଼ି ହୁଏ, ଭିତରର ଶବ୍ଦ ଖୋଜନ୍ତୁ, ପାର୍ସଲ ଟ୍ରାକ କରନ୍ତୁ, ବାକି ସଫା କରନ୍ତୁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: ଘରେ ଆଇଡି ଫଟୋ](https://open.cait518.cc/ios-app-guide/or-IN/snapportlite.html) — ଠିକ୍ ମାପରେ ପୋର୍ଟ୍ରେଟ୍ ଫଟୋ
+  - ଶୀତ ଛୁଟିରେ ବିଦେଶ ଯାତ୍ରା ବା ପାସପୋର୍ଟ ନବୀକରଣ? ପ୍ରସ୍ତୁତ ସାଇଜ୍ ଟେମ୍ପଲେଟରେ ଫଟୋକୁ ଠିକ୍ ମାପରେ କାଟନ୍ତୁ, ମୁହଁ ପାଇଁ ଗାଇଡ୍ ଓ ଧଳା ବା ନୀଳ ପୃଷ୍ଠଭୂମି ସହ, ଆପଣଙ୍କ ଫୋନରେ ହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: ପାସପୋର୍ଟ ଓ ID ଫୋଟୋ](https://open.cait518.cc/ios-app-guide/or-IN/snapport.html) — 35x45 ଏବଂ ପ୍ରିଣ୍ଟ ସିଟ୍
+  - ଛୁଟିରେ ବିଦେଶ ଯାତ୍ରା ବା ପାସପୋର୍ଟ ନବୀକରଣ? ଘରେ ପାସପୋର୍ଟ ଓ ଭିସା ଫଟୋ ତିଆରି କରନ୍ତୁ: ସାଧାରଣ ଆକାରର ଟେମ୍ପଲେଟ୍, ମୁହଁ ସଜାଡ଼ିବା ଗାଇଡ୍, ଧଳା ପୃଷ୍ଠଭୂମି ଓ ପ୍ରିଣ୍ଟ ସିଟ୍।
+  - ମୂଲ୍ୟ: ଗୋଟିଏ ଆଗୁଆ ମୂଲ୍ୟରେ ପେଡ୍ ଡାଉନଲୋଡ୍, କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/or-IN/sononote.html) — ଭଏସ ଟୁ ଟେକ୍ସଟ · ନୋଟ
+  - କୁହନ୍ତୁ, Sono Note ତାହାକୁ ସଫା ଟ୍ରାନ୍ସକ୍ରିପ୍ଟ, ସାରାଂଶ, ମୁଖ୍ୟ ବିନ୍ଦୁ ଓ କାର୍ଯ୍ୟରେ ବଦଳାଏ, ଫଲୋ-ଅପ୍ ଇମେଲ୍ ମଧ୍ୟ। ମିଟିଂ, କ୍ଲାସ୍ ଓ କଲ୍ ପାଇଁ। ଆକାଉଣ୍ଟ ଦରକାର ନାହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: ଡେସ୍କ ଘଡ଼ି](https://open.cait518.cc/ios-app-guide/or-IN/stayclock.html) — ସବୁବେଳେ ସମୟ ଓ କ୍ୟାଲେଣ୍ଡର୍
+  - ଶୀତର ଲମ୍ବା ରାତିରୁ ବର୍ଷ ଶେଷ ପର୍ଯ୍ୟନ୍ତ: ଚାର୍ଜ ହେଉଥିବା ଫୋନ ଶଯ୍ୟା ପାଖରେ ବଡ଼, ସହଜରେ ପଢ଼ିହେବା ସବୁବେଳେ ଚାଲୁ ଘଡ଼ି। ମାସ କ୍ୟାଲେଣ୍ଡର୍, ପ୍ରତି ଘଣ୍ଟାର ଘଣ୍ଟି ଓ ସରଳ ଆଲାର୍ମ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: ଫୋକସ୍](https://open.cait518.cc/ios-app-guide/or-IN/studydown.html) — ସ୍କ୍ରିନ୍ ତଳକୁ କରି ରଖନ୍ତୁ
+  - ଶୀତ ପରୀକ୍ଷା ଓ ବର୍ଷ ଶେଷ ପ୍ରୋଜେକ୍ଟ? ଗୋଟିଏ କାର୍ଯ୍ୟ ବାଛନ୍ତୁ, ଫୋନକୁ ଓଲଟା କରି ରଖନ୍ତୁ, ସମୟ ଗଣନା ଆରମ୍ଭ; ଉଠାଇଲେ ବିରତି। ଆଜି ଓ ଏହି ସପ୍ତାହର ସମୟ କାର୍ଯ୍ୟ ଅନୁସାରେ ଦେଖନ୍ତୁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet: Kids Quest](https://open.cait518.cc/ios-app-guide/or-IN/tripplanet.html) — ବିମାନ ଓ ସଡ଼କ ଯାତ୍ରା ମିଶନ
+  - ବିମାନ, ଲମ୍ବା କାର ଯାତ୍ରା ଓ ନୂଆ ଜାଗା ହେଉ ମିଶନ: ସିଟ୍ ବେଲ୍ଟ, କ୍ରୁଙ୍କୁ ଧନ୍ୟବାଦ, ଗୋଟିଏ ଗ୍ରାସ ଚାଖିବା। ପ୍ରତି ମିଶନରେ ପୁରସ୍କାର, ସମ୍ପୂର୍ଣ୍ଣ ଯାତ୍ରାରେ ପାସପୋର୍ଟ ଷ୍ଟାମ୍ପ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: ଯାତ୍ରା ଯୋଜନା](https://open.cait518.cc/ios-app-guide/or-IN/tripbeelite.html) — ଛୁଟିର ଦିନୱାରୀ ସୂଚୀ
+  - ଶୀତ ଛୁଟି ବା ନୂଆ ବର୍ଷର ଯାତ୍ରା? ପୂରା ଯାତ୍ରାକୁ ଦିନକୁ ଦିନ ଟାଇମଲାଇନରେ ରଖନ୍ତୁ: ଫ୍ଲାଇଟ ଓ ହୋଟେଲ ବିବରଣୀ, ନୋଟ୍, ରିମାଇଣ୍ଡର ଓ ଟିକେଟ ତଥ୍ୟ ଏକାଠି। ଆକାଉଣ୍ଟ ଦରକାର ନାହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: ଟ୍ରିପ୍ ପ୍ଲାନର୍](https://open.cait518.cc/ios-app-guide/or-IN/tripbee.html) — ଗ୍ରୁପ୍ ଯାତ୍ରା ଓ ପ୍ୟାକିଂ ଲିଷ୍ଟ
+  - ପରିବାର କିମ୍ବା ବନ୍ଧୁଙ୍କ ସହ ସମାନ ଟ୍ରିପ୍ ଏଡିଟ୍ କରନ୍ତୁ, ପ୍ରତିଦିନ ପାଇଁ ବର୍ଷା ପ୍ଲାନ୍ ବି ଯୋଡନ୍ତୁ ଓ ସ୍ଥାନୀୟ ସମୟରେ ରିମାଇଣ୍ଡର ପାଆନ୍ତୁ। ପ୍ୟାକିଂ ଲିଷ୍ଟ ସମସ୍ତଙ୍କ ପାଇଁ।
+  - ମୂଲ୍ୟ: ଗୋଟିଏ ଆଗୁଆ ମୂଲ୍ୟରେ ପେଡ୍ ଡାଉନଲୋଡ୍, କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: ଅସ୍ପଷ୍ଟ ମିଟାନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/unblurry.html) — ପୁରୁଣା ଫଟୋ ପୁନରୁଦ୍ଧାର
+  - ଶୀତ ଋତୁର ବିବାହ ମରସୁମ ଓ ବର୍ଷଶେଷ ଉତ୍ସବ: ଅସ୍ପଷ୍ଟ କିମ୍ବା ଅନ୍ଧାର ଫଟୋ? ସ୍ପଷ୍ଟତା, ଡିନଏଜ୍ ଓ ଲୋ ଲାଇଟ୍ ଦ୍ୱାରା ଅନ୍ଧାର ଫଟୋକୁ ଆଲୋକିତ କରନ୍ତୁ—ସବୁ କିଛି ଫୋନରେ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: AI ବ୍ୟବହାର ଟ୍ରାକର](https://open.cait518.cc/ios-app-guide/or-IN/claudeusagemini.html) — Claude, Codex, Copilot ସୀମା
+  - ଯେକୌଣସି ପ୍ରତିଶତରେ କଷ୍ଟମ ଆଲର୍ଟ, 5 ଘଣ୍ଟା ବା ସାପ୍ତାହିକ ରିସେଟ ଅନୁସାରେ ସଜାଇବା, ଓ ସବୁ ଆକାଉଣ୍ଟ ଓଲଟାଇ ଦେଖାଉଥିବା ୱିଜେଟ। ପ୍ରତ୍ୟେକ AI ପ୍ଲାନରେ କେତେ ବାକି ଦେଖନ୍ତୁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/or-IN/wifiaidlite.html) — ନେଟ୍ ଚାଲୁନି? କାରଣ ଜାଣନ୍ତୁ
+  - ନେଟ୍ ଚାଲୁନି? ୱାଇ-ଫାଇ, ପ୍ରୋଭାଇଡର କି କେବଳ ଗୋଟିଏ ୱେବସାଇଟ? ଗୋଟିଏ ଟ୍ୟାପରେ ସ୍ୱାଧୀନ ଯାଞ୍ଚ ଚାଲେ ଓ ସବୁଠୁ ସମ୍ଭାବ୍ୟ କାରଣ ଓ ପରବର୍ତ୍ତୀ ପଦକ୍ଷେପ ଦେଖାଏ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: ନେଟୱର୍କ ସମସ୍ୟା](https://open.cait518.cc/ios-app-guide/or-IN/wifiaid.html) — ରାଉଟର, ମେଶ ଓ DNS ଯାଞ୍ଚ
+  - ଛୁଟିରେ ପରିବାରର ସମସ୍ତେ ଗୋଟିଏ Wi-Fiରେ? ନେଟ୍ ଅଟକିଲେ ଗୋଟିଏ ଟାପରେ Wi-Fi, DNS ଓ ଇଣ୍ଟରନେଟ୍ ଯାଞ୍ଚ କରି ସବୁଠୁ ସମ୍ଭାବ୍ୟ କାରଣ ଜାଣନ୍ତୁ।
+  - ମୂଲ୍ୟ: ଗୋଟିଏ ଆଗୁଆ ମୂଲ୍ୟରେ ପେଡ୍ ଡାଉନଲୋଡ୍, କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite: ଇଂରାଜୀ ଶିଖନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/wordmatelite.html) — ଦିନକୁ 5 ନୂଆ ଶବ୍ଦ, ଏକ ମିନିଟ୍
+  - ଦିନକୁ ଏକ ମିନିଟ୍‌ରେ 5ଟି ଶବ୍ଦ, 44ଟି ଭାଷାରୁ ଯେକୌଣସିରେ। ପ୍ରତି ଶବ୍ଦ ଶୁଣନ୍ତୁ, ବାକ୍ୟରେ ଦେଖନ୍ତୁ ଓ ଧାରା ବଜାୟ ରଖନ୍ତୁ। ଅଫଲାଇନରେ ବି ଚାଲେ, ଆକାଉଣ୍ଟ ଦରକାର ନାହିଁ।
+  - ମୂଲ୍ୟ: ମାଗଣାରେ ଡାଉନଲୋଡ୍ କରନ୍ତୁ। ଥରେ କିଣି ସମସ୍ତ ବୈଶିଷ୍ଟ୍ୟକୁ ଅନଲକ୍ କରନ୍ତୁ—କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: 44ଟି ଭାଷା ଶିଖନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/wordmate.html) — ଶବ୍ଦ, ଫ୍ଲାସ୍ କାର୍ଡ ଓ ୱିଜେଟ୍
+  - ଛୁଟିରେ ଭ୍ରମଣ କିମ୍ବା ନୂଆ ବର୍ଷର ସଂକଳ୍ପ? ଖାଲି ସମୟରେ 44ଟି ଭାଷାର ଶବ୍ଦ ଶିଖନ୍ତୁ: 14ଟି ବ୍ୟବହାରିକ ବିଷୟ, ଉଦାହରଣ ବାକ୍ୟ ଏବଂ ଉଚ୍ଚାରଣ ଶୁଣିବା ସୁବିଧା।
+  - ମୂଲ୍ୟ: ଗୋଟିଏ ଆଗୁଆ ମୂଲ୍ୟରେ ପେଡ୍ ଡାଉନଲୋଡ୍, କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: ZIP, RAR, 7z ଖୋଲନ୍ତୁ](https://open.cait518.cc/ios-app-guide/or-IN/zipbox.html) — ବିଜ୍ଞାପନ ନାହିଁ, ଆଗେ ଦେଖନ୍ତୁ
+  - ବର୍ଷ ଶେଷର ଛବି ପାସୱାର୍ଡ ଥିବା 7z ରେ ଆସିଛି? ଖୋଲିବା ଆଗରୁ ଭିତରେ ଦେଖନ୍ତୁ, ଛବି ଓ PDF ପ୍ରିଭ୍ୟୁ କରନ୍ତୁ, ଦରକାରୀ ଫାଇଲ୍ ହିଁ ବାହାର କରନ୍ତୁ। ବିଜ୍ଞାପନ ନାହିଁ।
+  - ମୂଲ୍ୟ: ଗୋଟିଏ ଆଗୁଆ ମୂଲ୍ୟରେ ପେଡ୍ ଡାଉନଲୋଡ୍, କୌଣସି ସବସ୍କ୍ରିପସନ୍ ନାହିଁ।
+  - App Store: https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

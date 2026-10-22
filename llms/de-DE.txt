@@ -1,0 +1,245 @@
+# App-Verzeichnis — iOS App Guide
+
+> Strukturierte Infos zu jeder iOS-App — Funktionen, Preis und FAQ.
+
+locale: de-DE
+apps: 54
+- App-Verzeichnis: https://open.cait518.cc/ios-app-guide/de-DE/tools/private-pay-once-iphone-app-finder.html
+- App-Verzeichnis · PWA: https://open.cait518.cc/ios-app-guide/de-DE/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/de-DE.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/de-DE.json
+- App-Verzeichnis · SVG: https://open.cait518.cc/ios-app-guide/de-DE/visuals/
+- App-Verzeichnis · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- App-Verzeichnis · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- App-Verzeichnis · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- App-Verzeichnis · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- App-Verzeichnis · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- App-Verzeichnis · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- App-Verzeichnis · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- App-Verzeichnis · Agent Skill · de-DE: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/de-DE.json
+- App-Verzeichnis · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- App-Verzeichnis · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- App-Verzeichnis · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- App-Verzeichnis · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- App-Verzeichnis · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- App-Verzeichnis · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- App-Verzeichnis · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- App-Verzeichnis · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- App-Verzeichnis · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Notizen](https://open.cait518.cc/ios-app-guide/de-DE/notesstudio100.html) — Notizbuch, Handschrift & PDF
+  - Wintersemester bis zur Klausurenphase: von Hand mitschreiben, PDF-Folien markieren, die Vorlesung auf der Seite aufnehmen, mit Karteikarten lernen. Offline, ohne Konto.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: Dateien zu KI-Prompt](https://open.cait518.cc/ios-app-guide/de-DE/aibriefpack.html) — Prompts aus Dateien und PDFs
+  - Jahresabschluss und Weihnachtsplanung? Füge Screenshots, PDFs, Notizen und Links hinzu: auf dem Gerät gelesen, persönliche Daten markiert, ein klares Briefing für KI.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: Englisch-Trainer](https://open.cait518.cc/ios-app-guide/de-DE/aim990.html) — TOEIC-Diagnose in 8 Minuten
+  - Schluss mit Üben ins Blaue. Die 8-Minuten-Diagnose findet deine 3 schwächsten Fähigkeiten, trainiert sie täglich und misst an Tag 30 nach. Offline, ohne Konto.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: Batteriezustandswert](https://open.cait518.cc/ios-app-guide/de-DE/battai.html) — Klare Regeln, Quellen und Grenzen
+  - Verstehe deine Batterie im Zeitverlauf Klare Regeln, Quellen und Grenzen Schalte mehr Verlauf, Planung und Berichte frei. Eine Zahlung. Kein Abo.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily: Rechner & Designs](https://open.cait518.cc/ios-app-guide/de-DE/caldaily.html) — Widget, Tools, Verlauf
+  - Auf dem Home-Bildschirm rechnen: Das Widget ist ein kompletter Rechner. Trinkgeld, Rabatt, Kredit und 5 weitere Tools an Bord.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/de-DE/countdaysnow.html) — Tagesfokus
+  - Tagesfokus: Seitdem · Heute · Voraus — Speichern. Keine Werbung, kein Konto.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: ATS Lebenslauf](https://open.cait518.cc/ios-app-guide/de-DE/cvdesk.html) — Vorlage, Muster & PDF-Export
+  - Sofortiger ATS-Score, klare Verbesserungen und der 6-Sekunden-Blick von Recruitern. Die fertige PDF jederzeit in der Vorschau. Kein Konto nötig.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: Perioden Tracker](https://open.cait518.cc/ios-app-guide/de-DE/cyca.html) — Periodenkalender & Eisprung
+  - Adventsstress, Weihnachtsfeiern, Reisen? Periode, Blutung, Symptome, Stimmung und Notizen in Sekunden eintragen. Alles bleibt auf deinem Gerät, ohne Konto und Cloud.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: Sprechen](https://open.cait518.cc/ios-app-guide/de-DE/dailymatelite.html) — Sprachführer: Reise & Urlaub
+  - Verstehe, was Einheimische am Flughafen, im Hotel oder Restaurant sagen, und lerne die passende Antwort. Reise-Grundlagen in allen 50 Sprachen, auch offline.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: Sprachen im Alltag](https://open.cait518.cc/ios-app-guide/de-DE/dailymate.html) — Englisch lernen: echte Sätze
+  - Wörter gelernt, aber im Gespräch sprachlos? Ganze Sätze mit natürlichen Antworten: 8.400 Sätze, 47 Sprachen, 84 Situationen. Widget & Apple Watch. Auch offline. Kein Abo.
+  - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
+  - App Store: https://apps.apple.com/de/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: Schallpegelmesser](https://open.cait518.cc/ios-app-guide/de-DE/dbhalo.html) — Dezibel messen & Lärmpegel
+  - Jahresabschlussfeiern, laute Nachbarn oder Schnarchen in langen Winternächten? Live-dB am Halo-Ring sehen, die tägliche Lärmdosis schätzen, Schnarchen erfassen.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Wecker ohne Feiertage](https://open.cait518.cc/ios-app-guide/de-DE/easyam.html) — Klingelt auch im Urlaub nicht
+  - Weihnachtsfeiertage und Neujahr werden automatisch übersprungen. Zwischen den Jahren frei? Als Urlaub eintragen: Der Wecker schweigt bis zum ersten Arbeitstag.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: Reiseausgaben](https://open.cait518.cc/ios-app-guide/de-DE/gmoneylite.html) — Reisekosten & Urlaubsbudget
+  - Weihnachten oder Silvester im Ausland? Käufe in Landeswährung erfassen, sofort in deiner Währung sehen, Tageslimit setzen. Live- oder eigene Kurse, auch offline.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: Ausgaben und Budget](https://open.cait518.cc/ios-app-guide/de-DE/gmoney.html) — Haushaltsbuch & Geld verwalten
+  - Weihnachtsmarkt, Adventstrip, Silvester im Ausland? Ausgaben nach Kategorie erfassen, Tageslimit setzen, sehen, was heute übrig ist, und Währungen offline umrechnen.
+  - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
+  - App Store: https://apps.apple.com/de/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: Preis in Zeit](https://open.cait518.cc/ios-app-guide/de-DE/hourstaglite.html) — Impulskäufe stoppen & sparen
+  - Schon wieder spontan bestellt? HoursTag Lite zeigt jeden Preis in deinen Arbeitsstunden. Markiere Käufe als Bedarf, Wunsch oder Impuls. Ohne Konto, Daten bleiben lokal.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: Stunden zum Kauf](https://open.cait518.cc/ios-app-guide/de-DE/hourstag.html) — Stundenlohn & Ausgaben Tracker
+  - Adventszeit, Geschenke, gute Vorsätze? Sieh jeden Preis vor dem Kauf in Arbeitsstunden, tagge Brauche, Will oder Impuls und plane deine Wunschliste in Stunden.
+  - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
+  - App Store: https://apps.apple.com/de/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/de-DE/ledmovingtext.html) — Laufschrift und Leuchtschild
+  - Mach den Bildschirm in Sekunden zur leuchtenden Laufschrift oder baue eine Nachrichtenfolge, die du per Tipp oder Timer weiterschaltest. Vollbild, offline und privat.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: App-Blocker](https://open.cait518.cc/ios-app-guide/de-DE/lockhour.html) — Bildschirmzeit & Handysucht
+  - Sperre Apps und Websites, die dir Zeit rauben, bis der Timer abläuft. Modi für Fokus, Lernen und Schlaf, strenger Modus, Statistiken und Serien. Kein Konto nötig.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo](https://open.cait518.cc/ios-app-guide/de-DE/lumibopomofo.html) — Zhuyin: Chinesisch für Kinder
+  - Laut-Freunde füttern, jeden Strich in richtiger Reihenfolge nachspuren, Töne-Achterbahn fahren und im Zug Laute verbinden. Funktioniert auch offline.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/de-DE/lumibopomofopro.html) — Mandarin-Töne & Arbeitsblätter
+  - Alle 37 Zhuyin-Laute inklusive: Ton-Achterbahn, Lautzug, Angelspiel, Nachspuren und Sternenrennen. Eltern sehen Fortschritt und Wiederholliste und drucken Übungsblätter.
+  - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
+  - App Store: https://apps.apple.com/de/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Lite: Alphabet](https://open.cait518.cc/ios-app-guide/de-DE/lumiletters.html) — Englische Buchstaben schreiben
+  - Erst Buchstabe A und den ersten Planeten testen: Das Kind hört den Laut, spurt ihn nach und spielt Planeten-Quiz. Später alle 26 Buchstaben freischalten. Ohne Werbung.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Pro: ABC Phonics](https://open.cait518.cc/ios-app-guide/de-DE/lumiletterspro.html) — Englisch für Kinder: Laute
+  - Ihr Kind hört ein englisches Wort, findet den ersten, mittleren oder letzten Laut und spurt den Buchstaben nach. 26 Buchstaben, 14 Planeten, Arbeitsblätter. Ohne Werbung.
+  - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
+  - App Store: https://apps.apple.com/de/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Planet: Mathe-Spiele](https://open.cait518.cc/ios-app-guide/de-DE/lumimath.html) — Rechnen lernen für Kinder
+  - Aufgabe gelöst, ein Planet leuchtet auf. 46 Aufgabentypen mit Bildern: Zählen, Plus, Minus, Einmaleins, Uhr, Geld. Arbeitsblätter zum Ausdrucken. Ohne Werbung, ohne Abo.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Pro: Logik-Rätsel](https://open.cait518.cc/ios-app-guide/de-DE/lumimathpro.html) — Knobelaufgaben & Textaufgaben
+  - Logik, Muster und Textaufgaben in 46 Aufgabentypen, wie im Mathe-Wettbewerb. Schwächen gezielt üben, Lernbericht und Arbeitsblätter zum Drucken. Ohne Werbung.
+  - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
+  - App Store: https://apps.apple.com/de/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet Pro](https://open.cait518.cc/ios-app-guide/de-DE/lumimissionpro.html) — Tagesablauf & Morgenroutine
+  - Alle Routinen inklusive: Essen, Zähneputzen, Schlafenszeit, Aufräumen und Schulstart, dazu eigene Aufgaben, 7-Tage-Übersicht und Abend-Erinnerung. Ohne Werbung.
+  - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
+  - App Store: https://apps.apple.com/de/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet: Routinen](https://open.cait518.cc/ios-app-guide/de-DE/lumimission.html) — Belohnungstafel & Stickertafel
+  - Weniger Diskussionen, mehr Erfolge: Jede erledigte Mission bringt Sterne, füttert Lumi und füllt ein Heft mit 100 Stickern. Eigene Aufgaben möglich. Ohne Werbung.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Wetter: Was ziehe ich an?](https://open.cait518.cc/ios-app-guide/de-DE/lumiweather.html) — Was anziehen bei Regen & UV
+  - Raus oder lieber später? Lumi macht aus der Vorhersage einen Draußen-Score von 0 bis 100 und sagt dir, was du anziehen sollst und ob du Schirm oder Sonnencreme brauchst.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: Daten entfernen](https://open.cait518.cc/ios-app-guide/de-DE/maskmyfile.html) — PDF schwärzen & anonymisieren
+  - Ausweiskopie für die Winterreise oder Gehaltsnachweise zum Jahresende? Private Angaben finden, nur Gewähltes dauerhaft schwärzen, Metadaten entfernen.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: Zuletzt](https://open.cait518.cc/ios-app-guide/de-DE/mochidonestamp.html) — Putzplan, Wartung, Erinnerung
+  - Wann hast du das zuletzt gemacht? Abstempeln, Mochi merkt es sich und erinnert dich, wenn es wieder fällig ist. Bettwäsche, Filter, Pflanzen – auch mit der Familie.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: Süße To-do-Liste](https://open.cait518.cc/ios-app-guide/de-DE/mochi.html) — Checkliste, Aufgaben & Widget
+  - Von Halloween bis Advent: Studium, To-dos und Plätzchen-Einkauf in einer süßen Liste. Kleinen Kreis antippen, Design wählen, Widgets auf den Home-Bildschirm.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag: Einnahmen & Ausgaben](https://open.cait518.cc/ios-app-guide/de-DE/moneytag.html) — Projekte · Tags · Bericht
+  - Nebenjob oder Verkaufsstand bis Jahresende? Dein Projekt zeigt Einnahmen minus Ausgaben als klares Nettoergebnis, in der Währung deiner Wahl. Buchen per Apple Watch.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: KI Folien](https://open.cait518.cc/ios-app-guide/de-DE/onepageppt.html) — Präsentation & Infografik
+  - Jahresrückblick vor Weihnachten? Notizen, PDF, Screenshot oder CSV einfügen: eine klare 16:9-Folie, Kernaussagen als Überschriften, Zahlen als Diagramme. Als PNG teilen.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: Filmfilter](https://open.cait518.cc/ios-app-guide/de-DE/photocream.html) — Filmkamera & Vintage-Filter
+  - Weihnachtsbeleuchtung und Familienessen im warmen Licht? Licht, Farben und Kurven feinjustieren, Haut retuschieren, ohne Details zu verlieren, Filmkorn dazu.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: Fotos aufräumen](https://open.cait518.cc/ios-app-guide/de-DE/picclear.html) — Doppelte Fotos löschen
+  - Speicher voll? Gigabytes freigeben: doppelte Fotos, ähnliche Serien, alte Screenshots und riesige Videos finden und vor dem Löschen prüfen. Der Scan läuft auf dem Gerät.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: Scanner](https://open.cait518.cc/ios-app-guide/de-DE/qrcodehalo.html) — Sofort öffnen, danach prüfen
+  - Scannen und fertig: Links öffnen sich, Wi-Fi zeigt die iOS-Abfrage, Anrufe und E-Mails sind startklar. Jeder gesicherte Scan hat einen Sicherheitscheck im Verlauf.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: KI Lesezeichen](https://open.cait518.cc/ios-app-guide/de-DE/savetag.html) — Links sichern, später lesen
+  - Geschenkideen, Rezepte und Reiseziele gehen im Chat unter? Teile den Link aus jeder App: Er wird auf dem Gerät automatisch getaggt und nach Bedeutung wiedergefunden.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: PDF Scanner & OCR](https://open.cait518.cc/ios-app-guide/de-DE/scanto.html) — Dokumente offline scannen
+  - Kassenbons der Weihnachtsgeschenke, Garantiebelege und Rechnungen zum Jahresende? Als scharfe PDFs scannen – die Texterkennung auf dem Gerät findet alle per Suchwort.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: Schlafklänge](https://open.cait518.cc/ios-app-guide/de-DE/sereno.html) — Weißes Rauschen, Regen & Meer
+  - Regen, Meer, Feuer und mehr: über 140 beruhigende Klänge für Schlaf & Fokus. Selbst mischen, sanft ausblenden, mit Vogelgezwitscher aufwachen. 100 % offline, kein Konto.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Screenshots](https://open.cait518.cc/ios-app-guide/de-DE/shotinbox.html) — OCR-Suche & Fotos aufräumen
+  - Weihnachtseinkäufe und Winterreisen hinterlassen Belege, Tickets und Bestell-Screenshots. Alles wird sortiert, Text darin ist durchsuchbar, Pakete verfolgst du direkt.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: Passbild machen](https://open.cait518.cc/ios-app-guide/de-DE/snapportlite.html) — Porträtfotos exakt zuschneiden
+  - Weihnachtsreise, neuer Pass oder Bewerbung im Januar? Schneide dein Foto mit Vorlagen exakt zu, mit Gesichtshilfslinien und weißem oder blauem Hintergrund, auf dem Gerät.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: Pass- & Ausweisfoto](https://open.cait518.cc/ios-app-guide/de-DE/snapport.html) — 35x45 Passbild, Druckbogen
+  - Weihnachtsreise oder neuer Reisepass? Pass- und Visumfotos zu Hause: gängige Größenvorlagen, Hilfslinien fürs Gesicht, weißer Hintergrund und druckfertige Bögen.
+  - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
+  - App Store: https://apps.apple.com/de/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note: Sprache zu Text](https://open.cait518.cc/ios-app-guide/de-DE/sononote.html) — Transkription & Sprachnotizen
+  - Sprechen, und Sono Note macht daraus Transkript, Zusammenfassung, Kernpunkte und To-dos, sogar eine Follow-up-Mail. Für Meetings, Vorlesungen und Telefonate. Ohne Konto.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: Klapp-Tischuhr](https://open.cait518.cc/ios-app-guide/de-DE/stayclock.html) — Nachttischuhr & Wecker
+  - Eine schöne Tischuhr, die immer an ist und sich quer durchs Zimmer lesen lässt. Klapp-, LED- und Zeigerzifferblätter, echter Kalender, Wecker und sanfter Nachtmodus.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: Fokus-Timer](https://open.cait518.cc/ios-app-guide/de-DE/studydown.html) — Display nach unten
+  - Prüfungsphase und Jahresendspurt? Aktivität wählen, Handy mit dem Display nach unten hinlegen, die Zeit läuft; hochnehmen pausiert. Heute und diese Woche je Aktivität.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet Kinderreisen](https://open.cait518.cc/ios-app-guide/de-DE/tripplanet.html) — Urlaub mit Kind: Flug & Auto
+  - Flüge, Autofahrten und neue Orte werden zu Missionen: anschnallen, der Crew danken, Neues probieren. Belohnung pro Mission, Stempel pro Reise. Keine Werbung.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: Reiseplaner](https://open.cait518.cc/ios-app-guide/de-DE/tripbeelite.html) — Urlaub & Reiseroute pro Tag
+  - Über Weihnachten heim oder an Silvester weg? Leg die Reise auf eine Tageszeitleiste: Flüge, Unterkünfte, Notizen, Erinnerungen und Ticketinfos an einem Ort.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: Reiseplaner](https://open.cait518.cc/ios-app-guide/de-DE/tripbee.html) — Gruppenreise & Packliste
+  - Plane dieselbe Reise gemeinsam mit Familie oder Freunden, mit Regentag-Plan für jeden Tag und Erinnerungen zur Ortszeit. Die Packliste passt zu jedem Mitreisenden.
+  - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
+  - App Store: https://apps.apple.com/de/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: Fotos schärfen](https://open.cait518.cc/ios-app-guide/de-DE/unblurry.html) — Alte Fotos wiederherstellen
+  - Weihnachtsfeiern, Silvester und dunkle Winterabende: verwackelte oder zu dunkle Fotos? Schärfen, Entrauschen und Wenig Licht holen sie zurück, direkt auf dem iPhone.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: KI-Nutzung Tracker](https://open.cait518.cc/ios-app-guide/de-DE/claudeusagemini.html) — Claude, Codex & Copilot Limits
+  - Jahresendspurt? Stoß nicht mitten in der Arbeit ans KI-Limit. Sieh, was jedem KI-Plan bleibt, den Countdown bis zur Zurücksetzung und Warnungen bei deinem Prozentwert.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite: WLAN-Test](https://open.cait518.cc/ios-app-guide/de-DE/wifiaidlite.html) — Kein Internet? Ursache finden
+  - Internet weg? WLAN, Anbieter oder nur eine Website? Ein Tippen startet unabhängige Prüfungen und nennt die wahrscheinlichste Ursache samt nächsten Schritten.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: WLAN-Probleme finden](https://open.cait518.cc/ios-app-guide/de-DE/wifiaid.html) — Router-, Mesh- & DNS-Diagnose
+  - WLAN hakt schon wieder? WiFi Aid prüft mit einem Tipp WLAN, DNS, TCP, TLS und Stabilität und nennt die wahrscheinlichste Ursache. Auch für einzelne Websites, mit Widget.
+  - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
+  - App Store: https://apps.apple.com/de/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite: Vokabeltrainer](https://open.cait518.cc/ios-app-guide/de-DE/wordmatelite.html) — Fünf Wörter täglich, offline
+  - Fünf Wörter, eine Minute am Tag, in einer von 44 Sprachen. Jedes Wort hören, im Satz sehen und die Serie halten. Offline nutzbar, ohne Konto.
+  - Preis: Kostenloser Download, mit Einmalkauf alles freischalten. Keine Abo-Falle.
+  - App Store: https://apps.apple.com/de/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: 44 Sprachen lernen](https://open.cait518.cc/ios-app-guide/de-DE/wordmate.html) — Vokabeltrainer, Widget & Watch
+  - Winterurlaub oder Neujahrsvorsatz? Lerne Vokabeln in 44 Sprachen in kurzen Pausen: 14 praxisnahe Themen, Beispielsätze und gesprochene Aussprache. Auch im Widget.
+  - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
+  - App Store: https://apps.apple.com/de/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: RAR, ZIP & 7z öffnen](https://open.cait518.cc/ios-app-guide/de-DE/zipbox.html) — Datei entpacken, ZIP erstellen
+  - Weihnachtsfotos als 7z mit Passwort oder ein mehrteiliges ZIP? Erst reinschauen, Fotos und PDFs ansehen, dann nur das Nötige entpacken – alles auf dem Gerät.
+  - Preis: Kostenpflichtiger Download zum einmaligen Preis, ohne Abonnement.
+  - App Store: https://apps.apple.com/de/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

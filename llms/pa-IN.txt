@@ -1,0 +1,245 @@
+# ਐਪ ਡਾਇਰੈਕਟਰੀ — iOS App Guide
+
+> ਹਰੇਕ iOS ਐਪ ਦੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ, ਕੀਮਤ ਅਤੇ ਆਮ ਸਵਾਲਾਂ ਬਾਰੇ ਵਿਵਸਥਿਤ ਜਾਣਕਾਰੀ।
+
+locale: pa-IN
+apps: 54
+- ਐਪ ਡਾਇਰੈਕਟਰੀ: https://open.cait518.cc/ios-app-guide/pa-IN/tools/private-pay-once-iphone-app-finder.html
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · PWA: https://open.cait518.cc/ios-app-guide/pa-IN/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/pa-IN.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/pa-IN.json
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · SVG: https://open.cait518.cc/ios-app-guide/pa-IN/visuals/
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · pa-IN: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/pa-IN.json
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- ਐਪ ਡਾਇਰੈਕਟਰੀ · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/pa-IN/notesstudio100.html) — ਹੱਥ-ਲਿਖਤ ਨੋਟਸ, PDF ਟਿੱਪਣੀ
+  - ਸਰਦੀਆਂ ਦੇ ਸਮੈਸਟਰ ਇਮਤਿਹਾਨ: ਹੱਥ ਨਾਲ ਨੋਟਸ ਲਿਖੋ, ਲੈਕਚਰ PDF ਤੇ ਨਿਸ਼ਾਨ ਲਗਾਓ, ਰਿਕਾਰਡਿੰਗ ਉਸੇ ਪੰਨੇ ਤੇ ਰੱਖੋ ਅਤੇ ਫਲੈਸ਼ਕਾਰਡ ਨਾਲ ਦੁਹਰਾਓ। ਆਫਲਾਈਨ, ਖਾਤੇ ਤੋਂ ਬਿਨਾਂ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: ਫਾਈਲ ਤੋਂ AI ਪ੍ਰੌਂਪਟ](https://open.cait518.cc/ios-app-guide/pa-IN/aibriefpack.html) — ਫਾਈਲ ਤੇ PDF ਤੋਂ ਪ੍ਰੋਂਪਟ ਬਣਾਓ
+  - ਸਾਲ ਦੇ ਅੰਤ ਦੀਆਂ ਰਿਪੋਰਟਾਂ ਤੇ ਛੁੱਟੀਆਂ ਦੀ ਯੋਜਨਾ? ਸਕ੍ਰੀਨਸ਼ਾਟ, PDF, ਨੋਟਸ ਤੇ ਲਿੰਕ ਜੋੜੋ; ਡਿਵਾਈਸ 'ਤੇ ਪੜ੍ਹੇ ਜਾਂਦੇ ਹਨ, ਨਿੱਜੀ ਜਾਣਕਾਰੀ ਚਿੰਨ੍ਹਿਤ ਹੁੰਦੀ ਹੈ, AI ਲਈ ਸਾਫ਼ ਬ੍ਰੀਫ਼ ਬਣਦਾ ਹੈ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: ਅੰਗਰੇਜ਼ੀ ਕੋਚ](https://open.cait518.cc/ios-app-guide/pa-IN/aim990.html) — 8 ਮਿੰਟ ਵਿੱਚ ਕਮਜ਼ੋਰੀ ਜਾਂਚ
+  - 8 ਮਿੰਟ ਦੀ ਜਾਂਚ ਤੁਹਾਡੇ 3 ਸਭ ਤੋਂ ਕਮਜ਼ੋਰ ਹੁਨਰ ਦੱਸਦੀ ਹੈ, ਸੁਧਾਰ ਦੀ ਯੋਜਨਾ ਲਿਖਦੀ ਹੈ, ਰੋਜ਼ ਅਭਿਆਸ ਕਰਾਉਂਦੀ ਹੈ ਅਤੇ 30ਵੇਂ ਦਿਨ ਦੁਬਾਰਾ ਮਾਪਦੀ ਹੈ। ਆਫ਼ਲਾਈਨ, ਖਾਤੇ ਦੀ ਲੋੜ ਨਹੀਂ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: ਬੈਟਰੀ ਸਿਹਤ ਸਕੋਰ](https://open.cait518.cc/ios-app-guide/pa-IN/battai.html) — ਸਾਫ਼ ਨਿਯਮ, ਸਰੋਤ ਅਤੇ ਹੱਦਾਂ
+  - ਸਮੇਂ ਨਾਲ ਆਪਣੀ ਬੈਟਰੀ ਸਮਝੋ ਸਾਫ਼ ਨਿਯਮ, ਸਰੋਤ ਅਤੇ ਹੱਦਾਂ ਹੋਰ ਡੂੰਘਾ ਇਤਿਹਾਸ, ਯੋਜਨਾ ਅਤੇ ਰਿਪੋਰਟਾਂ ਖੋਲ੍ਹੋ। ਇਕ ਭੁਗਤਾਨ। ਕੋਈ ਗਾਹਕੀ ਨਹੀਂ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily: ਕੈਲਕੁਲੇਟਰ](https://open.cait518.cc/ios-app-guide/pa-IN/caldaily.html) — ਵਿਜੇਟ, ਸੰਦ ਅਤੇ ਇਤਿਹਾਸ
+  - ਸਿੱਧਾ ਹੋਮ ਸਕ੍ਰੀਨ 'ਤੇ ਹਿਸਾਬ ਲਾਓ: ਵਿਜੇਟ ਆਪ ਹੀ ਪੂਰਾ ਕੈਲਕੁਲੇਟਰ ਹੈ। ਟਿਪ, ਛੂਟ, ਕਰਜ਼ਾ ਤੇ 5 ਹੋਰ ਸੰਦ ਐਪ ਵਿੱਚ ਹੀ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/pa-IN/countdaysnow.html) — ਅੱਜ ਦਾ ਧਿਆਨ
+  - ਅੱਜ ਦਾ ਧਿਆਨ: ਹਰ ਦਿਨ ਨਿੱਜੀ ਤੌਰ ’ਤੇ ਤੋਂ, ਅੱਜ ਜਾਂ ਅੱਗੇ ਚੁਣੋ। ਅਹਿਮ ਮਿਤੀਆਂ ਨਾਲ ਪਿਛਲੀਆਂ ਤਿੰਨ ਚੋਣਾਂ ਮੁੜ ਵੇਖੋ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: ATS ਰੇਜ਼ਿਊ ਬਿਲਡਰ](https://open.cait518.cc/ios-app-guide/pa-IN/cvdesk.html) — ਬਾਇਓਡਾਟਾ, ਟੈਂਪਲੇਟ ਅਤੇ PDF
+  - ਤੁਰੰਤ ATS ਸਕੋਰ, ਸਾਫ਼ ਸੁਧਾਰ ਅਤੇ ਰਿਕਰੂਟਰ ਦੀ ਪਹਿਲੀ 6 ਸਕਿੰਟ ਵਾਲੀ ਨਜ਼ਰ। ਅੰਤਿਮ PDF ਕਦੇ ਵੀ ਪ੍ਰੀਵਿਊ ਕਰੋ। ਖਾਤੇ ਦੀ ਲੋੜ ਨਹੀਂ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: ਪੀਰੀਅਡ ਅਤੇ ਸਾਈਕਲ ਟ੍ਰੈਕਰ](https://open.cait518.cc/ios-app-guide/pa-IN/cyca.html) — ਮਾਹਵਾਰੀ ਕੈਲੰਡਰ, ਓਵੂਲੇਸ਼ਨ
+  - ਸਾਲ ਦੇ ਅੰਤ ਦੀ ਭੱਜ-ਦੌੜ ਵਿੱਚ ਵੀ ਪੀਰੀਅਡ ਦਾ ਹਿਸਾਬ ਰੱਖੋ। ਵਹਾਅ, ਲੱਛਣ, ਮੂਡ ਤੇ ਨੋਟ ਸਕਿੰਟਾਂ ਵਿੱਚ ਲਿਖੋ। ਸਭ ਤੁਹਾਡੇ ਫ਼ੋਨ ਵਿੱਚ: ਨਾ ਖਾਤਾ, ਆਫਲਾਈਨ ਵੀ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: ਅੱਜ ਬੋਲੋ](https://open.cait518.cc/ios-app-guide/pa-IN/dailymatelite.html) — ਸਫ਼ਰ ਦੀ ਗੱਲਬਾਤ, 50 ਭਾਸ਼ਾਵਾਂ
+  - ਹਵਾਈ ਅੱਡੇ, ਹੋਟਲ ਜਾਂ ਰੈਸਟੋਰੈਂਟ ਵਿੱਚ ਲੋਕ ਕੀ ਕਹਿੰਦੇ ਹਨ ਸਮਝੋ ਅਤੇ ਸਹਿਜ ਜਵਾਬ ਸਿੱਖੋ। ਸਫ਼ਰ ਦੇ ਮੁੱਢਲੇ ਪਾਠ ਸਾਰੀਆਂ 50 ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ, ਆਫ਼ਲਾਈਨ ਵੀ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: ਰੋਜ਼ਾਨਾ ਵਾਕ](https://open.cait518.cc/ios-app-guide/pa-IN/dailymate.html) — ਅੰਗਰੇਜ਼ੀ ਬੋਲਣਾ ਸਿੱਖੋ
+  - ਸਿੱਖੋ ਲੋਕ ਅਸਲ ਵਿੱਚ ਕੀ ਬੋਲਦੇ ਹਨ: 47 ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ 8,400 ਰੋਜ਼ਾਨਾ ਵਾਕ ਕੁਦਰਤੀ ਜਵਾਬਾਂ ਨਾਲ, 84 ਅਸਲ ਹਾਲਾਤਾਂ ਵਿੱਚ। ਵਿਜੇਟ ਤੇ Apple Watch ਸ਼ਾਮਲ।
+  - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: ਧੁਨੀ ਪੱਧਰ ਮੀਟਰ](https://open.cait518.cc/ios-app-guide/pa-IN/dbhalo.html) — FFT, RTA ਅਤੇ ਸ਼ੋਰ ਦੀ ਖੁਰਾਕ
+  - ਵਿਆਹਾਂ ਦਾ ਸੀਜ਼ਨ, ਰੌਲਾ ਪਾਉਂਦੇ ਗੁਆਂਢੀ ਜਾਂ ਸਰਦੀਆਂ ਦੀਆਂ ਰਾਤਾਂ ਵਿੱਚ ਘੁਰਾੜੇ? Halo ਰਿੰਗ 'ਤੇ ਲਾਈਵ dB ਵੇਖੋ, ਰੋਜ਼ਾਨਾ ਸ਼ੋਰ ਡੋਜ਼ ਦਾ ਅੰਦਾਜ਼ਾ ਲਗਾਓ ਤੇ ਸਲੀਪ ਜਰਨਲ ਵਿੱਚ ਘੁਰਾੜੇ ਦਰਜ ਕਰੋ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: ਛੁੱਟੀ ਅਲਾਰਮ ਘੜੀ](https://open.cait518.cc/ios-app-guide/pa-IN/easyam.html) — ਸਿਰਫ਼ ਕੰਮ ਵਾਲੇ ਦਿਨ ਵੱਜਦਾ ਹੈ
+  - ਸਰਦੀਆਂ ਦੀਆਂ ਛੁੱਟੀਆਂ ਜਾਂ ਸਾਲ ਦੇ ਅੰਤ ਦਾ ਸਫ਼ਰ? ਉਹ ਦਿਨ ਛੁੱਟੀ ਵਜੋਂ ਜੋੜੋ, ਅਲਾਰਮ ਚੁੱਪ ਰਹੇਗਾ ਤੇ ਪਹਿਲੇ ਕੰਮ ਵਾਲੇ ਦਿਨ ਫਿਰ ਵੱਜੇਗਾ। ਅਗਲੇ 7 ਦਿਨ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: ਯਾਤਰਾ ਖਰਚ](https://open.cait518.cc/ios-app-guide/pa-IN/gmoneylite.html) — ਵਾਚ ਤੇ ਵਿਜੇਟ ਉੱਤੇ ਰੋਜ਼ਾਨਾ ਬਜਟ
+  - ਸਰਦੀਆਂ ਦੀਆਂ ਛੁੱਟੀਆਂ ਵਿੱਚ ਵਿਦੇਸ਼ ਯਾਤਰਾ? ਸਥਾਨਕ ਮੁਦਰਾ ਵਿੱਚ ਖਰੀਦਦਾਰੀ ਲਿਖੋ, ਤੁਰੰਤ ਆਪਣੀ ਮੁਦਰਾ ਵਿੱਚ ਵੇਖੋ, ਰੋਜ਼ਾਨਾ ਸੀਮਾ ਰੱਖੋ। ਦਰਾਂ ਆਫਲਾਈਨ ਵੀ ਚੱਲਦੀਆਂ ਹਨ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: ਰੋਜ਼ਾਨਾ ਖਰਚ ਤੇ ਬਜਟ](https://open.cait518.cc/ios-app-guide/pa-IN/gmoney.html) — ਯਾਤਰਾ ਖਰਚ ਤੇ ਮੁਦਰਾ ਦਰ
+  - ਸਾਲ ਦੇ ਅੰਤ ਵਿੱਚ ਸਫ਼ਰ ਤੇ ਖਰੀਦਦਾਰੀ? ਸ਼੍ਰੇਣੀ ਅਨੁਸਾਰ ਖਰਚਾ ਲਿਖੋ, ਦਿਨ ਦੀ ਸੀਮਾ ਸੈੱਟ ਕਰੋ ਤੇ ਦੇਖੋ ਅੱਜ ਕਿੰਨਾ ਬਚਿਆ। ਲਾਈਵ ਜਾਂ ਮੈਨੁਅਲ ਦਰਾਂ ਨਾਲ ਮੁਦਰਾ ਬਦਲੋ, ਆਫਲਾਈਨ ਵੀ।
+  - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: ਕੀਮਤ ਘੰਟਿਆਂ ਵਿਚ](https://open.cait518.cc/ios-app-guide/pa-IN/hourstaglite.html) — ਸੁਚੇਤ ਖਰੀਦ: ਅਸਲ ਕੀਮਤ
+  - ਸਾਲ ਦੇ ਅੰਤ ਦੀ ਖਰੀਦਦਾਰੀ ਤੇ ਤੋਹਫ਼ਿਆਂ ਦਾ ਮੌਸਮ: ਖਰੀਦਣ ਤੋਂ ਪਹਿਲਾਂ ਕੀਮਤ ਆਪਣੇ ਕੰਮ ਦੇ ਘੰਟਿਆਂ ਵਿੱਚ ਵੇਖੋ, ਜ਼ਰੂਰਤ, ਚਾਹਤ ਜਾਂ ਇਮਪਲਸ ਟੈਗ ਕਰੋ, ਅਤੇ ਨਵੇਂ ਸਾਲ ਦੇ ਲਕਸ਼ ਪਿੱਛੇ ਦਾ ਕੰਮ ਵੇਖੋ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: ਘੰਟਿਆਂ ਦੀ ਕੀਮਤ](https://open.cait518.cc/ios-app-guide/pa-IN/hourstag.html) — ਘੰਟੇ ਦੀ ਤਨਖਾਹ ਤੇ ਖਰਚ
+  - ਸਾਲ ਦੇ ਅੰਤ ਦੀ ਖਰੀਦਦਾਰੀ ਅਤੇ ਤੋਹਫ਼ੇ? ਖਰੀਦਣ ਤੋਂ ਪਹਿਲਾਂ ਹਰ ਕੀਮਤ ਕੰਮ ਦੇ ਘੰਟਿਆਂ ਵਿੱਚ ਵੇਖੋ, ਲੋੜ, ਚਾਹਤ ਜਾਂ ਝਟਕਾ ਵਜੋਂ ਟੈਗ ਕਰੋ ਤੇ ਇੱਛਾ-ਸੂਚੀ ਘੰਟਿਆਂ ਵਿੱਚ ਬਣਾਓ।
+  - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/pa-IN/ledmovingtext.html) — ਸਕ੍ਰੀਨ ਉੱਤੇ ਚੱਲਦਾ ਬੋਰਡ
+  - ਕੁਝ ਸਕਿੰਟਾਂ ਵਿੱਚ ਸਕ੍ਰੀਨ ਨੂੰ ਚਮਕਦਾ ਚੱਲਦਾ ਬੋਰਡ ਬਣਾਓ, ਜਾਂ ਸੁਨੇਹਾ ਕ੍ਰਮ ਬਣਾ ਕੇ ਟੈਪ ਜਾਂ ਟਾਈਮਰ ਨਾਲ ਬਦਲੋ। ਫੁੱਲ ਸਕ੍ਰੀਨ, ਆਫਲਾਈਨ ਅਤੇ ਨਿੱਜੀ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: ਐਪ ਬਲਾਕਰ](https://open.cait518.cc/ios-app-guide/pa-IN/lockhour.html) — ਸਕ੍ਰੀਨ ਸਮਾਂ ਅਤੇ ਐਪ ਲਾਕ
+  - ਸਮਾਂ ਖਾਣ ਵਾਲੀਆਂ ਐਪਾਂ ਅਤੇ ਵੈੱਬਸਾਈਟਾਂ ਨੂੰ ਟਾਈਮਰ ਖਤਮ ਹੋਣ ਤੱਕ ਲਾਕ ਕਰੋ। ਫੋਕਸ, ਪੜ੍ਹਾਈ ਅਤੇ ਨੀਂਦ ਮੋਡ, ਹਾਰਡ ਮੋਡ, ਅੰਕੜੇ। ਖਾਤੇ ਦੀ ਲੋੜ ਨਹੀਂ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo](https://open.cait518.cc/ios-app-guide/pa-IN/lumibopomofo.html) — Zhuyin: ਬੱਚਿਆਂ ਲਈ ਚੀਨੀ
+  - ਆਵਾਜ਼ ਸੁਣ ਕੇ ਚਿੰਨ੍ਹ-ਦੋਸਤਾਂ ਨੂੰ ਖਾਣਾ ਖੁਆਓ, ਹਰ ਲਕੀਰ ਕ੍ਰਮ ਨਾਲ ਟਰੇਸ ਕਰੋ, ਟੋਨ ਰੋਲਰ ਕੋਸਟਰ 'ਤੇ ਚੜ੍ਹੋ ਅਤੇ ਰੇਲ ਵਿੱਚ ਧੁਨੀਆਂ ਜੋੜੋ। ਇੰਟਰਨੈੱਟ ਤੋਂ ਬਿਨਾਂ ਵੀ ਚੱਲਦਾ ਹੈ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/pa-IN/lumibopomofopro.html) — ਚੀਨੀ ਟੋਨ ਅਤੇ ਅਭਿਆਸ ਸ਼ੀਟਾਂ
+  - ਸਾਰੀਆਂ 37 ਜ਼ੂਯਿਨ ਧੁਨੀਆਂ ਇਕੱਠੀਆਂ: ਟੋਨ ਰੋਲਰ ਕੋਸਟਰ, ਧੁਨੀ ਰੇਲ, ਮੱਛੀ ਫੜਨਾ, ਟ੍ਰੇਸਿੰਗ ਤੇ ਸਟਾਰ ਰੇਸ। ਮਾਪੇ ਤਰੱਕੀ ਤੇ ਦੁਹਰਾਈ ਸੂਚੀ ਵੇਖਣ ਅਤੇ ਅਭਿਆਸ ਸ਼ੀਟਾਂ ਪ੍ਰਿੰਟ ਕਰਨ। ਕੋਈ ਇਸ਼ਤਿਹਾਰ ਨਹੀਂ।
+  - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Lite: ABC ਬੱਚੇ](https://open.cait518.cc/ios-app-guide/pa-IN/lumiletters.html) — ਅੰਗਰੇਜ਼ੀ ਅੱਖਰ ਲਿਖਣਾ ਤੇ ਫੋਨਿਕਸ
+  - ਪਹਿਲਾਂ ਅੱਖਰ A ਅਤੇ ਪਹਿਲਾ ਗ੍ਰਹਿ ਅਜ਼ਮਾਓ: ਬੱਚਾ ਧੁਨੀ ਸੁਣਦਾ ਹੈ, ਉਂਗਲ ਨਾਲ ਲਿਖਦਾ ਹੈ ਅਤੇ ਗ੍ਰਹਿਆਂ ਦੇ ਕੁਇਜ਼ ਖੇਡਦਾ ਹੈ। ਬਾਅਦ ਵਿੱਚ ਸਾਰੇ 26 ਅੱਖਰ ਅਨਲੌਕ ਕਰੋ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Pro: ABC ਫੋਨਿਕਸ](https://open.cait518.cc/ios-app-guide/pa-IN/lumiletterspro.html) — ਬੱਚਿਆਂ ਲਈ ਅੰਗਰੇਜ਼ੀ ਧੁਨੀਆਂ
+  - ਬੱਚਾ ਸ਼ਬਦ ਸੁਣਦਾ ਹੈ, ਪਹਿਲੀ, ਵਿਚਕਾਰਲੀ ਜਾਂ ਆਖਰੀ ਧੁਨੀ ਲੱਭਦਾ ਹੈ ਅਤੇ ਅੱਖਰ ਟਰੇਸ ਕਰਦਾ ਹੈ। 26 ਅੱਖਰ, 14 ਗ੍ਰਹਿ, ਪ੍ਰਿੰਟ ਹੋਣ ਵਾਲੀਆਂ ਵਰਕਸ਼ੀਟਾਂ। ਕੋਈ ਇਸ਼ਤਿਹਾਰ ਨਹੀਂ।
+  - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Planet: ਖੋਜੀ](https://open.cait518.cc/ios-app-guide/pa-IN/lumimath.html) — ਬੱਚਿਆਂ ਲਈ ਗਣਿਤ ਖੇਡਾਂ
+  - ਸਹੀ ਜਵਾਬ ਦਿਓ ਤੇ ਇੱਕ ਗ੍ਰਹਿ ਚਮਕ ਉੱਠਦਾ ਹੈ। ਗਿਣਤੀ, ਜੋੜ, ਘਟਾਓ, ਪਹਾੜੇ, ਘੜੀ, ਪੈਸੇ: ਤਸਵੀਰਾਂ ਵਾਲੇ 46 ਕਿਸਮ ਦੇ ਸਵਾਲ। ਕੋਈ ਇਸ਼ਤਿਹਾਰ ਨਹੀਂ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Pro: ਬੱਚਿਆਂ ਦੀ ਗਿਣਤੀ](https://open.cait518.cc/ios-app-guide/pa-IN/lumimathpro.html) — ਤਰਕ ਬੁਝਾਰਤਾਂ ਅਤੇ ਇਬਾਰਤੀ ਸਵਾਲ
+  - ਤਰਕ ਬੁਝਾਰਤਾਂ, ਪੈਟਰਨ ਅਤੇ ਇਬਾਰਤੀ ਸਵਾਲ, 46 ਕਿਸਮ ਦੇ ਪ੍ਰਸ਼ਨਾਂ ਵਿੱਚ। ਕਮਜ਼ੋਰ ਹਿੱਸਿਆਂ ਦਾ ਅਭਿਆਸ, ਤਰੱਕੀ ਰਿਪੋਰਟ ਅਤੇ ਪ੍ਰਿੰਟ ਹੋਣ ਵਾਲੀਆਂ ਵਰਕਸ਼ੀਟਾਂ।
+  - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet Pro](https://open.cait518.cc/ios-app-guide/pa-IN/lumimissionpro.html) — ਸਵੇਰ ਤੇ ਰਾਤ ਦੀ ਰੁਟੀਨ
+  - ਸਾਰੀਆਂ ਰੁਟੀਨਾਂ ਸ਼ਾਮਲ: ਖਾਣਾ, ਦੰਦ ਬੁਰਸ਼, ਨੀਂਦ, ਖਿਡੌਣੇ ਸਮੇਟਣਾ ਤੇ ਸਕੂਲ ਦੀ ਤਿਆਰੀ, ਆਪਣੇ ਕੰਮ, 7 ਦਿਨਾਂ ਦਾ ਸਾਰ ਤੇ ਸ਼ਾਮ ਦੀ ਯਾਦ-ਦਹਾਨੀ। ਕੋਈ ਇਸ਼ਤਿਹਾਰ ਨਹੀਂ।
+  - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet: ਰੁਟੀਨਸ](https://open.cait518.cc/ios-app-guide/pa-IN/lumimission.html) — ਬੱਚਿਆਂ ਲਈ ਇਨਾਮ ਚਾਰਟ
+  - ਘੱਟ ਝਿੜਕਾਂ, ਵੱਧ ਜਿੱਤਾਂ: ਹਰ ਪੂਰਾ ਮਿਸ਼ਨ ਤਾਰੇ ਦਿੰਦਾ ਹੈ, Lumi ਨੂੰ ਖਾਣਾ ਖੁਆਉਂਦਾ ਹੈ ਤੇ 100 ਸਟਿੱਕਰਾਂ ਦੀ ਐਲਬਮ ਭਰਦਾ ਹੈ। ਆਪਣੇ ਕੰਮ ਜੋੜੋ। ਕੋਈ ਇਸ਼ਤਿਹਾਰ ਨਹੀਂ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi ਮੌਸਮ: ਅੱਜ ਦੀ ਭਵਿੱਖਬਾਣੀ](https://open.cait518.cc/ios-app-guide/pa-IN/lumiweather.html) — ਬਾਹਰ ਜਾਣ ਦਾ ਸਕੋਰ ਤੇ ਕੱਪੜੇ
+  - ਹੁਣ ਬਾਹਰ ਜਾਈਏ ਜਾਂ ਰੁਕੀਏ? Lumi ਭਵਿੱਖਬਾਣੀ ਨੂੰ 0 ਤੋਂ 100 ਸਕੋਰ ਵਿੱਚ ਬਦਲਦਾ ਹੈ ਅਤੇ ਦੱਸਦਾ ਹੈ ਕੀ ਪਹਿਨਣਾ ਹੈ, ਛਤਰੀ ਜਾਂ ਸਨਸਕ੍ਰੀਨ ਚਾਹੀਦੀ ਹੈ ਜਾਂ ਨਹੀਂ। ਘੰਟਾਵਾਰ ਅਤੇ 7 ਦਿਨ ਦੀ ਭਵਿੱਖਬਾਣੀ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: ਜਾਣਕਾਰੀ ਹਟਾਓ](https://open.cait518.cc/ios-app-guide/pa-IN/maskmyfile.html) — ਭੇਜਣ ਤੋਂ ਪਹਿਲਾਂ ਵੇਰਵੇ ਲੁਕਾਓ
+  - ਸਰਦੀਆਂ ਦੀ ਯਾਤਰਾ ਲਈ ਪਾਸਪੋਰਟ ਦੀ ਕਾਪੀ ਜਾਂ ਸਾਲ ਦੇ ਅੰਤ ਦੀ ਤਨਖ਼ਾਹ ਸਲਿੱਪ ਭੇਜਣੀ ਹੈ? ਨਿੱਜੀ ਜਾਣਕਾਰੀ ਲੱਭੋ, ਸਿਰਫ਼ ਚੁਣਿਆ ਹਿੱਸਾ ਪੱਕਾ ਢੱਕੋ ਤੇ ਮੈਟਾਡੇਟਾ ਹਟਾਓ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: ਪਿਛਲੀ ਵਾਰ](https://open.cait518.cc/ios-app-guide/pa-IN/mochidonestamp.html) — ਕਦੋਂ ਕੀਤਾ ਸੀ? ਘਰ ਦੇ ਕੰਮ ਯਾਦ
+  - ਪਿਛਲੀ ਵਾਰ ਕਦੋਂ ਕੀਤਾ ਸੀ, ਹੁਣ ਸੋਚਣ ਦੀ ਲੋੜ ਨਹੀਂ। ਪੂਰਾ ਹੋਣ 'ਤੇ ਸਟੈਂਪ ਲਾਓ, Mochi ਯਾਦ ਰੱਖੇਗਾ ਤੇ ਸਮਾਂ ਆਉਣ 'ਤੇ ਯਾਦ ਕਰਾਏਗਾ। ਚਾਦਰ, ਫਿਲਟਰ, ਪੌਦੇ, ਪਰਿਵਾਰ ਨਾਲ ਵੀ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: ਕਿਊਟ ਟਾਸਕ ਲਿਸਟ](https://open.cait518.cc/ios-app-guide/pa-IN/mochi.html) — ਪਿਆਰੇ ਕੰਮ ਤੇ ਵਿਜੇਟ
+  - ਦੀਵਾਲੀ ਤੇ ਗੁਰਪੁਰਬ ਤੋਂ ਸਾਲ ਦੇ ਅੰਤ ਤੱਕ, ਪੜ੍ਹਾਈ, ਕੰਮ ਅਤੇ ਖਰੀਦਦਾਰੀ ਸਭ ਇੱਕ ਕਿਊਟ ਲਿਸਟ ਵਿੱਚ। ਕੰਮ ਪੂਰਾ ਹੋਣ 'ਤੇ ਛੋਟੇ ਗੋਲ ਤੇ ਟੈਪ ਕਰੋ, ਥੀਮ ਚੁਣੋ ਅਤੇ Home Screen ਤੇ widgets ਲਗਾਓ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag: ਆਮਦਨ ਤੇ ਖਰਚ](https://open.cait518.cc/ios-app-guide/pa-IN/moneytag.html) — ਪ੍ਰੋਜੈਕਟ · ਟੈਗ · ਰਿਪੋਰਟ
+  - ਸਾਲ ਦੇ ਅੰਤ ਦਾ ਸਾਈਡ ਕੰਮ ਜਾਂ ਸਰਦੀਆਂ ਦੇ ਮੇਲੇ ਦਾ ਸਟਾਲ? ਤੁਹਾਡਾ ਪ੍ਰੋਜੈਕਟ ਆਮਦਨ ਘਟਾਓ ਖਰਚ ਨੂੰ ਸ਼ੁੱਧ ਨਤੀਜੇ ਵਜੋਂ, ਤੁਹਾਡੀ ਚੁਣੀ ਮੁਦਰਾ ਵਿੱਚ ਵਿਖਾਉਂਦਾ ਹੈ। Apple Watch ਤੋਂ ਐਂਟਰੀ ਕਰੋ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: ਸਲਾਈਡ ਮੇਕਰ](https://open.cait518.cc/ios-app-guide/pa-IN/onepageppt.html) — ਨੋਟਾਂ ਤੋਂ ਸ਼ਾਨਦਾਰ ਪੇਸ਼ਕਾਰੀ
+  - ਸਾਲ ਦੇ ਅੰਤ ਦੀ ਰਿਵਿਊ ਮੀਟਿੰਗ? ਨੋਟ, PDF, ਸਕ੍ਰੀਨਸ਼ਾਟ ਜਾਂ CSV ਪਾਓ ਅਤੇ ਇੱਕ ਸਾਫ਼ 16:9 ਸਲਾਈਡ ਪਾਓ: ਮੁੱਖ ਗੱਲਾਂ ਸਿਰਲੇਖ, ਅੰਕੜੇ ਚਾਰਟ। PNG ਵਜੋਂ ਸਾਂਝਾ ਕਰੋ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: ਫਿਲਮ ਫਿਲਟਰ](https://open.cait518.cc/ios-app-guide/pa-IN/photocream.html) — ਫਿਲਮ ਕੈਮਰਾ ਅਤੇ ਵਿੰਟੇਜ ਫਿਲਟਰ
+  - ਵਿਆਹਾਂ ਦੇ ਸੀਜ਼ਨ ਤੇ ਸਾਲ ਦੇ ਅੰਤ ਦੀਆਂ ਪਾਰਟੀਆਂ ਦੀਆਂ ਫ਼ੋਟੋਆਂ ਪੀਲੀ ਰੋਸ਼ਨੀ ਵਿੱਚ? ਰੋਸ਼ਨੀ, ਰੰਗ ਤੇ ਕਰਵ ਬਾਰੀਕੀ ਨਾਲ ਠੀਕ ਕਰੋ, ਵੇਰਵੇ ਰੱਖ ਕੇ ਚਮੜੀ ਨਿਖਾਰੋ, ਫ਼ਿਲਮ ਗ੍ਰੇਨ ਜੋੜੋ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: ਫੋਟੋ ਕਲੀਨਰ](https://open.cait518.cc/ios-app-guide/pa-IN/picclear.html) — ਸਕ੍ਰੀਨਸ਼ਾਟ ਹਟਾਓ, ਥਾਂ ਬਣਾਓ
+  - ਸਟੋਰੇਜ ਭਰ ਗਈ? ਡੁਪਲੀਕੇਟ ਤੇ ਮਿਲਦੀਆਂ ਫੋਟੋਆਂ, ਪੁਰਾਣੇ ਸਕ੍ਰੀਨਸ਼ਾਟ ਤੇ ਵੱਡੀਆਂ ਵੀਡੀਓ ਲੱਭੋ, ਮਿਟਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਜਾਂਚੋ ਤੇ ਗੀਗਾਬਾਈਟ ਜਗ੍ਹਾ ਖਾਲੀ ਕਰੋ। ਸਕੈਨ ਡਿਵਾਈਸ 'ਤੇ ਹੀ ਹੁੰਦਾ ਹੈ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: ਸਕੈਨ ਤੇ ਬਣਾਓ](https://open.cait518.cc/ios-app-guide/pa-IN/qrcodehalo.html) — ਤੁਰੰਤ ਖੋਲ੍ਹੋ, ਬਾਅਦ ਵਿੱਚ ਜਾਂਚੋ
+  - ਸਕੈਨ ਕਰੋ, ਕੰਮ ਮੁੱਕਿਆ: ਲਿੰਕ ਖੁੱਲ੍ਹਦੇ ਹਨ, Wi-Fi ’ਤੇ iOS ਦਾ ਸੁਨੇਹਾ ਆਉਂਦਾ ਹੈ, ਕਾਲ ਤੇ ਈਮੇਲ ਤਿਆਰ। ਹਰ ਸੰਭਾਲੇ ਸਕੈਨ ਦੀ ਇਤਿਹਾਸ ਵਿੱਚ ਸੁਰੱਖਿਆ ਜਾਂਚ, ਤੁਹਾਡੀ ਡਿਵਾਈਸ ’ਤੇ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: AI ਬੁੱਕਮਾਰਕ](https://open.cait518.cc/ios-app-guide/pa-IN/savetag.html) — ਲਿੰਕ ਸੰਭਾਲੋ, ਬਾਅਦ ਵਿੱਚ ਪੜ੍ਹੋ
+  - ਤੋਹਫ਼ਿਆਂ ਦੇ ਆਈਡੀਆ, ਰੈਸਿਪੀ ਤੇ ਘੁੰਮਣ ਵਾਲੀਆਂ ਥਾਵਾਂ ਦੇ ਲਿੰਕ ਚੈਟ ਵਿੱਚ ਗੁੰਮ ਹੋ ਜਾਂਦੇ ਹਨ? ਕਿਸੇ ਵੀ ਐਪ ਤੋਂ ਸ਼ੇਅਰ ਕਰੋ, ਡਿਵਾਈਸ ਤੇ ਆਪੇ ਟੈਗ ਹੋਣਗੇ ਤੇ ਮਤਲਬ ਨਾਲ ਲੱਭੋ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: PDF ਸਕੈਨ](https://open.cait518.cc/ios-app-guide/pa-IN/scanto.html) — ਆਫਲਾਈਨ ਡੌਕੂਮੈਂਟ ਸਕੈਨਰ
+  - ਸਾਲ ਦੇ ਅੰਤ ਦੀਆਂ ਰਸੀਦਾਂ, ਵਾਰੰਟੀ ਕਾਰਡ ਤੇ ਇਕਰਾਰਨਾਮੇ ਇਕੱਠੇ ਹੋ ਗਏ? ਸਾਫ਼ PDF ਵਿੱਚ ਸਕੈਨ ਕਰੋ, ਡਿਵਾਈਸ ਦਾ OCR ਇੱਕ ਸ਼ਬਦ ਨਾਲ ਲੋੜੀਂਦਾ ਕਾਗਜ਼ ਲੱਭ ਦਿੰਦਾ ਹੈ। ਆਫ਼ਲਾਈਨ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: ਨੀਂਦ ਦੀਆਂ ਆਵਾਜ਼ਾਂ](https://open.cait518.cc/ios-app-guide/pa-IN/sereno.html) — ਵਾਈਟ ਨੌਇਜ਼, ਮੀਂਹ ਤੇ ਸਮੁੰਦਰ
+  - ਮੀਂਹ, ਸਮੁੰਦਰ, ਅੱਗ ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ: ਨੀਂਦ ਤੇ ਧਿਆਨ ਲਈ 140+ ਸਕੂਨਦੇਹ ਆਵਾਜ਼ਾਂ। ਆਪ ਮਿਕਸ ਕਰੋ, ਹੌਲੀ-ਹੌਲੀ ਬੰਦ ਹੁੰਦਾ ਟਾਈਮਰ, ਪੰਛੀਆਂ ਦੀ ਚਹਿਚਹਾਟ ਨਾਲ ਜਾਗੋ। ਆਫਲਾਈਨ, ਖਾਤੇ ਦੀ ਲੋੜ ਨਹੀਂ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/pa-IN/shotinbox.html) — ਸਕ੍ਰੀਨਸ਼ਾਟ ਛਾਂਟੀ ਅਤੇ OCR ਖੋਜ
+  - ਸਾਲ ਦੇ ਅੰਤ ਦੀ ਖ਼ਰੀਦਦਾਰੀ ਤੇ ਸਰਦੀਆਂ ਦੇ ਸਫ਼ਰ ਵਿੱਚ ਰਸੀਦਾਂ, ਟਿਕਟਾਂ ਤੇ ਆਰਡਰਾਂ ਦੇ ਸਕ੍ਰੀਨਸ਼ਾਟ ਇਕੱਠੇ ਹੋ ਜਾਂਦੇ ਹਨ। ਸਭ ਆਪੇ ਸੰਭਲਦੇ ਹਨ, ਅੰਦਰਲਾ ਸ਼ਬਦ ਲੱਭੋ, ਪਾਰਸਲ ਟ੍ਰੈਕ ਕਰੋ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: ID ਫੋਟੋ ਖਿੱਚੋ](https://open.cait518.cc/ios-app-guide/pa-IN/snapportlite.html) — ਸਹੀ ਆਕਾਰ ਵਿੱਚ ਪੋਰਟਰੇਟ ਫੋਟੋ
+  - ਸਰਦੀਆਂ ਦੀਆਂ ਛੁੱਟੀਆਂ ਵਿੱਚ ਵਿਦੇਸ਼ ਯਾਤਰਾ ਜਾਂ ਪਾਸਪੋਰਟ ਰੀਨਿਊ? ਤਿਆਰ ਸਾਈਜ਼ ਟੈਂਪਲੇਟਾਂ ਨਾਲ ਫ਼ੋਟੋ ਸਹੀ ਮਾਪ ਵਿੱਚ ਕੱਟੋ, ਚਿਹਰੇ ਦੀ ਗਾਈਡ ਤੇ ਚਿੱਟੇ ਜਾਂ ਨੀਲੇ ਬੈਕਗ੍ਰਾਊਂਡ ਨਾਲ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: ਪਾਸਪੋਰਟ & ID ਫੋਟੋ](https://open.cait518.cc/ios-app-guide/pa-IN/snapport.html) — 35x45 ਅਤੇ ਪ੍ਰਿੰਟ ਸ਼ੀਟ
+  - ਘਰ ਵਿੱਚ 30 ਸਕਿੰਟਾਂ ਵਿੱਚ ਪਰਫੈਕਟ ਪਾਸਪੋਰਟ ਤੇ ID ਫੋਟੋ। ਦੇਸ਼ ਮੁਤਾਬਕ ਸਹੀ ਸਾਈਜ਼, ਸਾਫ਼ ਬੈਕਗ੍ਰਾਊਂਡ, ਪ੍ਰਿੰਟ ਲਈ ਤਿਆਰ। ਕੋਈ ਸਟੂਡੀਓ ਨਹੀਂ, ਖਾਤਾ ਨਹੀਂ।
+  - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/pa-IN/sononote.html) — ਵੌਇਸ ਟੂ ਟੈਕਸਟ · ਨੋਟ
+  - ਬੋਲੋ, Sono Note ਉਸ ਨੂੰ ਸਾਫ਼ ਟ੍ਰਾਂਸਕ੍ਰਿਪਟ, ਸਾਰ, ਮੁੱਖ ਨੁਕਤਿਆਂ ਤੇ ਕੰਮਾਂ ਵਿੱਚ ਬਦਲਦਾ ਹੈ, ਫਾਲੋ-ਅੱਪ ਈਮੇਲ ਵੀ। ਮੀਟਿੰਗ, ਕਲਾਸ ਤੇ ਕਾਲ ਲਈ। ਖਾਤੇ ਦੀ ਲੋੜ ਨਹੀਂ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: ਡੈਸਕ ਘੜੀ](https://open.cait518.cc/ios-app-guide/pa-IN/stayclock.html) — ਹਮੇਸ਼ਾ ਚਾਲੂ ਸਮਾਂ ਤੇ ਕੈਲੰਡਰ
+  - ਸਰਦੀ ਦੀਆਂ ਲੰਮੀਆਂ ਰਾਤਾਂ ਤੋਂ ਸਾਲ ਦੇ ਅੰਤ ਤੱਕ: ਚਾਰਜ ਹੁੰਦਾ ਫ਼ੋਨ ਮੰਜੇ ਕੋਲ ਵੱਡੀ, ਪੜ੍ਹਨਯੋਗ ਹਮੇਸ਼ਾ ਚਾਲੂ ਘੜੀ ਬਣ ਜਾਂਦਾ ਹੈ। ਮਹੀਨਾ ਕੈਲੰਡਰ, ਹਰ ਘੰਟੇ ਦੀ ਘੰਟੀ ਅਤੇ ਸਧਾਰਨ ਅਲਾਰਮ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: ਫੋਕਸ ਟਾਈਮਰ](https://open.cait518.cc/ios-app-guide/pa-IN/studydown.html) — ਸਕਰੀਨ ਹੇਠਾਂ ਕਰਕੇ ਰੱਖੋ
+  - ਸਰਦੀਆਂ ਦੇ ਇਮਤਿਹਾਨ ਤੇ ਸਾਲ ਦੇ ਅਖੀਰ ਦੇ ਪ੍ਰੋਜੈਕਟ? ਇੱਕ ਗਤੀਵਿਧੀ ਚੁਣੋ, ਫ਼ੋਨ ਉਲਟਾ ਰੱਖੋ ਤੇ ਸਮਾਂ ਗਿਣਨਾ ਸ਼ੁਰੂ; ਚੁੱਕਦੇ ਹੀ ਰੁਕ ਜਾਵੇਗਾ। ਅੱਜ ਤੇ ਇਸ ਹਫ਼ਤੇ ਦਾ ਸਮਾਂ ਗਤੀਵਿਧੀ ਮੁਤਾਬਕ ਵੇਖੋ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet: Kids Quest](https://open.cait518.cc/ios-app-guide/pa-IN/tripplanet.html) — ਫਲਾਈਟ ਤੇ ਰੋਡ ਟ੍ਰਿਪ ਮਿਸ਼ਨ
+  - ਫਲਾਈਟ, ਲੰਮਾ ਕਾਰ ਸਫ਼ਰ ਤੇ ਨਵੀਆਂ ਥਾਵਾਂ ਬਣਨ ਮਿਸ਼ਨ: ਸੀਟ ਬੈਲਟ, ਕਰੂ ਦਾ ਧੰਨਵਾਦ, ਇੱਕ ਬੁਰਕੀ ਚੱਖਣੀ। ਹਰ ਮਿਸ਼ਨ ਤੇ ਇਨਾਮ, ਹਰ ਪੂਰੇ ਸਫ਼ਰ ਤੇ ਪਾਸਪੋਰਟ ਵਿੱਚ ਮੋਹਰ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: ਯਾਤਰਾ ਯੋਜਨਾ](https://open.cait518.cc/ios-app-guide/pa-IN/tripbeelite.html) — ਛੁੱਟੀਆਂ ਦਾ ਰੋਜ਼ਾਨਾ ਸ਼ਡਿਊਲ
+  - ਸਰਦੀਆਂ ਦੀਆਂ ਛੁੱਟੀਆਂ ਜਾਂ ਨਵੇਂ ਸਾਲ ਦਾ ਸਫ਼ਰ? ਸਾਰਾ ਟ੍ਰਿਪ ਇੱਕ ਦਿਨਵਾਰ ਟਾਈਮਲਾਈਨ 'ਤੇ ਰੱਖੋ: ਫ਼ਲਾਈਟ ਅਤੇ ਹੋਟਲ ਦੀ ਜਾਣਕਾਰੀ, ਨੋਟਸ, ਰਿਮਾਈਂਡਰ ਅਤੇ ਟਿਕਟ ਜਾਣਕਾਰੀ ਇਕੱਠੀ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: ਟ੍ਰਿਪ ਪਲੈਨਰ](https://open.cait518.cc/ios-app-guide/pa-IN/tripbee.html) — ਗਰੁੱਪ ਸਫ਼ਰ ਅਤੇ ਪੈਕਿੰਗ ਲਿਸਟ
+  - ਪਰਿਵਾਰ ਜਾਂ ਦੋਸਤਾਂ ਨਾਲ ਇੱਕੋ ਟ੍ਰਿਪ ਮਿਲ ਕੇ ਐਡਿਟ ਕਰੋ, ਹਰ ਦਿਨ ਲਈ ਮੀਂਹ ਦਾ ਪਲਾਨ ਬੀ ਜੋੜੋ ਅਤੇ ਸਥਾਨਕ ਸਮੇਂ ਤੇ ਰਿਮਾਈਂਡਰ ਪਾਓ। ਪੈਕਿੰਗ ਲਿਸਟ ਹਰ ਯਾਤਰੀ ਮੁਤਾਬਕ ਬਣਦੀ ਹੈ।
+  - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: Unblur & HD](https://open.cait518.cc/ios-app-guide/pa-IN/unblurry.html) — ਪੁਰਾਣੀਆਂ ਫੋਟੋਆਂ ਬਹਾਲ ਕਰੋ
+  - ਵਿਆਹਾਂ ਦਾ ਸੀਜ਼ਨ ਤੇ ਸਾਲ ਦੇ ਅੰਤ ਦੀਆਂ ਪਾਰਟੀਆਂ: ਧੁੰਦਲੀਆਂ ਜਾਂ ਹਿੱਲੀਆਂ ਤਸਵੀਰਾਂ? ਤਿੱਖਾ ਨਾਲ ਫੋਕਸ ਵਾਪਸ ਲਿਆਓ, ਡੀਨੋਇਜ਼ ਨਾਲ ਸ਼ੋਰ ਹਟਾਓ ਅਤੇ ਘੱਟ ਰੌਸ਼ਨੀ ਨਾਲ ਹਨੇਰੀਆਂ ਤਸਵੀਰਾਂ ਰੌਸ਼ਨ ਕਰੋ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: AI ਵਰਤੋਂ ਟ੍ਰੈਕਰ](https://open.cait518.cc/ios-app-guide/pa-IN/claudeusagemini.html) — Claude, Codex, Copilot ਸੀਮਾ
+  - ਕਿਸੇ ਵੀ ਪ੍ਰਤੀਸ਼ਤ 'ਤੇ ਕਸਟਮ ਅਲਰਟ, 5 ਘੰਟੇ ਜਾਂ ਹਫ਼ਤਾਵਾਰੀ ਰੀਸੈੱਟ ਮੁਤਾਬਕ ਲੜੀਬੱਧ, ਅਤੇ ਸਾਰੇ ਖਾਤੇ ਪਲਟ ਕੇ ਦਿਖਾਉਂਦੇ ਵਿਜੇਟ। ਹਰ AI ਪਲਾਨ ਵਿੱਚ ਕਿੰਨਾ ਬਾਕੀ, ਦੇਖੋ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/pa-IN/wifiaidlite.html) — ਨੈੱਟ ਨਹੀਂ ਚੱਲਦਾ? ਕਾਰਨ ਜਾਣੋ
+  - ਨੈੱਟ ਨਹੀਂ ਚੱਲਦਾ? ਵਾਈ-ਫਾਈ, ਪ੍ਰੋਵਾਈਡਰ ਜਾਂ ਸਿਰਫ਼ ਇੱਕ ਵੈੱਬਸਾਈਟ? ਇੱਕ ਟੈਪ ਨਾਲ ਵੱਖ-ਵੱਖ ਜਾਂਚਾਂ ਚੱਲਦੀਆਂ ਹਨ ਅਤੇ ਸਭ ਤੋਂ ਸੰਭਾਵੀ ਕਾਰਨ ਤੇ ਅਗਲੇ ਕਦਮ ਦਿਸਦੇ ਹਨ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: ਨੈੱਟਵਰਕ ਸਮੱਸਿਆ ਲੱਭੋ](https://open.cait518.cc/ios-app-guide/pa-IN/wifiaid.html) — ਰਾਊਟਰ, ਮੈਸ਼ ਅਤੇ DNS ਜਾਂਚ
+  - ਸਰਦੀਆਂ ਦੀਆਂ ਛੁੱਟੀਆਂ ਤੇ ਵਿਆਹਾਂ ਦੇ ਸੀਜ਼ਨ ਵਿੱਚ ਸਾਰਾ ਪਰਿਵਾਰ ਇੱਕੋ Wi-Fi 'ਤੇ? ਨੈੱਟ ਅਟਕੇ ਤਾਂ ਇੱਕ ਟੈਪ ਨਾਲ Wi-Fi, DNS ਅਤੇ ਇੰਟਰਨੈੱਟ ਜਾਂਚੋ ਤੇ ਸਭ ਤੋਂ ਸੰਭਾਵਿਤ ਕਾਰਨ ਜਾਣੋ।
+  - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite: ਅੰਗਰੇਜ਼ੀ ਸਿੱਖੋ](https://open.cait518.cc/ios-app-guide/pa-IN/wordmatelite.html) — ਰੋਜ਼ 5 ਨਵੇਂ ਸ਼ਬਦ, ਇੱਕ ਮਿੰਟ
+  - ਰੋਜ਼ ਇੱਕ ਮਿੰਟ ਵਿੱਚ 5 ਸ਼ਬਦ, 44 ਭਾਸ਼ਾਵਾਂ ਵਿੱਚੋਂ ਕਿਸੇ ਵਿੱਚ ਵੀ। ਹਰ ਸ਼ਬਦ ਸੁਣੋ, ਵਾਕ ਵਿੱਚ ਵੇਖੋ ਤੇ ਲੜੀ ਬਣਾਈ ਰੱਖੋ। ਆਫਲਾਈਨ ਵੀ ਚੱਲਦਾ ਹੈ, ਖਾਤੇ ਦੀ ਲੋੜ ਨਹੀਂ।
+  - ਕੀਮਤ: ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਇੱਕ ਵਾਰ ਖਰੀਦ ਕੇ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਨਲੌਕ ਕਰੋ—ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: 44 ਭਾਸ਼ਾਵਾਂ ਸਿੱਖੋ](https://open.cait518.cc/ios-app-guide/pa-IN/wordmate.html) — ਸ਼ਬਦ, ਫਲੈਸ਼ਕਾਰਡ, ਵਿਜੇਟ, ਘੜੀ
+  - ਸਰਦੀਆਂ ਦੀਆਂ ਛੁੱਟੀਆਂ ਵਿੱਚ ਵਿਦੇਸ਼ ਯਾਤਰਾ ਜਾਂ ਨਵੇਂ ਸਾਲ ਦਾ ਸੰਕਲਪ? ਵਿਹਲੇ ਪਲਾਂ ਵਿੱਚ 44 ਭਾਸ਼ਾਵਾਂ ਦੇ ਸ਼ਬਦ ਸਿੱਖੋ: 14 ਵਿਸ਼ੇ, ਉਦਾਹਰਨ ਵਾਕ ਅਤੇ ਉਚਾਰਨ ਸੁਣਨ ਦੀ ਸਹੂਲਤ।
+  - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: ZIP, RAR, 7z ਅਨਜ਼ਿਪ](https://open.cait518.cc/ios-app-guide/pa-IN/zipbox.html) — ਇਸ਼ਤਿਹਾਰ ਨਹੀਂ, ਪਹਿਲਾਂ ਵੇਖੋ
+  - ਸਾਲ ਦੇ ਅੰਤ ਦੀਆਂ ਤਸਵੀਰਾਂ ਪਾਸਵਰਡ ਵਾਲੀ 7z ਵਿੱਚ ਆਈਆਂ? ਖੋਲ੍ਹਣ ਤੋਂ ਪਹਿਲਾਂ ਅੰਦਰ ਵੇਖੋ, ਤਸਵੀਰਾਂ ਅਤੇ PDF ਦੀ ਝਲਕ ਲਓ, ਤੇ ਸਿਰਫ਼ ਲੋੜੀਂਦੀ ਫ਼ਾਈਲ ਕੱਢੋ। ਇਸ਼ਤਿਹਾਰ ਨਹੀਂ।
+  - ਕੀਮਤ: ਇੱਕ ਨਿਸ਼ਚਿਤ ਅਗਾਊਂ ਕੀਮਤ ਵਾਲਾ ਭੁਗਤਾਨਯੋਗ ਡਾਊਨਲੋਡ, ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ।
+  - App Store: https://apps.apple.com/in/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

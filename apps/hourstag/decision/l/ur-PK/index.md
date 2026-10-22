@@ -1,0 +1,28 @@
+---
+title: "HoursTag: وقت کی قیمت — فی گھنٹہ اجرت اور اخراجات | iOS App"
+lang: "ur-PK"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ur-PK/index.html"
+modified: "2026-10-21"
+app_store_id: "6754218117"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# HoursTag: وقت کی قیمت — فی گھنٹہ اجرت اور اخراجات | iOS App
+
+حقیقی قیمت کیا ہے؟ ڈالرز میں نہیں — زندگی کے گھنٹوں میں۔
+
+- پیسہ اور سفر
+- ادا شدہ ڈاؤن لوڈ
+- کوئی اکاؤنٹ نہیں
+- کوئی اشتہار نہیں
+- کوئی نگرانی نہیں
+- نجی / آلہ پر
+- App Store · Rs 1,300.00
+
+[App Store سے HoursTag: وقت کی قیمت حاصل کریں](https://apps.apple.com/pk/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
+
+[مکمل رہنمائی پڑھیں](https://open.cait518.cc/ios-app-guide/ur-PK/hourstag.html)
+
+> یہ مواد براہ راست Lumi Studio نے شائع کیا ہے، جو فہرست میں شامل تمام ایپس کا ڈویلپر ہے۔

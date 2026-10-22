@@ -1,0 +1,28 @@
+---
+title: "HoursTag: நேரத்தை வாங்க — மணி ஊதியம் & செலவு | iOS App"
+lang: "ta-IN"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/ta-IN/index.html"
+modified: "2026-10-21"
+app_store_id: "6754218117"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# HoursTag: நேரத்தை வாங்க — மணி ஊதியம் & செலவு | iOS App
+
+உண்மையில் எவ்வளவு செலவாகிறது? பணத்தில் அல்ல, உங்கள் வாழ்க்கையின் நேரத்தில்.
+
+- பணம் & பயணம்
+- பணம் செலுத்தி பதிவிறக்கவும்
+- கணக்கு இல்லை
+- விளம்பரங்கள் இல்லை
+- பின்தொடர்வு இல்லை
+- தனியுரிமை / சாதனத்தில்
+- App Store · ₹ 499
+
+[App Store-இல் HoursTag: நேரத்தை வாங்க-ஐப் பெறுங்கள்](https://apps.apple.com/in/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
+
+[முழு வழிகாட்டியை படிக்கவும்](https://open.cait518.cc/ios-app-guide/ta-IN/hourstag.html)
+
+> இது Lumi Studio வெளியிட்ட முதல்-பார்ட்டி தரவு, இது பட்டியலிடப்பட்ட ஒவ்வொரு செயலியின் உருவாக்குநர்.

@@ -1,0 +1,29 @@
+---
+title: "Mochi DoneStamp: Legutóbb — Mikor csináltam? Emlékeztetők | iOS App"
+lang: "hu"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/mochidonestamp/decision/l/hu/index.html"
+modified: "2026-10-21"
+app_store_id: "6790800323"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# Mochi DoneStamp: Legutóbb — Mikor csináltam? Emlékeztetők | iOS App
+
+Mikor cseréltél utoljára ágyneműt, locsoltál növényt, hívtad fel a családot, mentetted a fotókat vagy cseréltél szűrőt? A Mochi DoneStamp az élet eseményeinek memóriája, nem egy újabb feladatlista. Ha elkészültél, egy koppintás pontosan elmenti az időpontot egy nyugodt előzménybe. Szükség esetén adj hozzá hozzávetőleges vagy pontos ritmust. A következő időpont mindig a tényleges befejezéstől indul újra. • Egykoppintásos naplózás és Visszavonás • Korábbi időpontok hozzáadása, szerkesztése, törlése • Rugalmas és pontos ritmusok perctől évig • Helyi értesítések Kész és Szundi művelettel • Interaktív Főképernyő- és Zárolási képernyő-widgetek • Siri, Parancsok, opcionális jegyzetek és fotók • Időközstatisztika, teljes mentés és JSON-export • Sötét mód, iPad, VoiceOver és Dynamic Type Ingyen egy aktív esemény és korlátlan előzmény jár. A Lifetime Pro egyszeri megvásárlása korlátlan eseményt és minden funkciót felold. Nincs fiók, reklám, elemzés vagy követés. Az alapadatok az eszközön maradnak. Nincs előfizetés. iPhone Duo-ra optimalizálva.
+
+- Életmód
+- Ingyenes kezdés
+- Nincs fiók
+- Nincs reklám
+- Nincs követés
+- Privát / eszközön tárolt
+- Widget
+- App Store · Ingyenes
+
+[Töltse le a(z) Mochi DoneStamp: Legutóbb appot az App Store-ból](https://apps.apple.com/hu/app/id6790800323?pt=118326163&ct=geo_pick&mt=8)
+
+[Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/mochidonestamp.html)
+
+> Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.

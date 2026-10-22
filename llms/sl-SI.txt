@@ -1,0 +1,245 @@
+# Imenik aplikacij — iOS App Guide
+
+> Pregledne informacije o funkcijah, cenah in pogostih vprašanjih za vsako aplikacijo iOS.
+
+locale: sl-SI
+apps: 54
+- Imenik aplikacij: https://open.cait518.cc/ios-app-guide/sl-SI/tools/private-pay-once-iphone-app-finder.html
+- Imenik aplikacij · PWA: https://open.cait518.cc/ios-app-guide/sl-SI/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/sl-SI.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/sl-SI.json
+- Imenik aplikacij · SVG: https://open.cait518.cc/ios-app-guide/sl-SI/visuals/
+- Imenik aplikacij · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Imenik aplikacij · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Imenik aplikacij · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Imenik aplikacij · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Imenik aplikacij · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- Imenik aplikacij · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- Imenik aplikacij · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Imenik aplikacij · Agent Skill · sl-SI: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/sl-SI.json
+- Imenik aplikacij · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Imenik aplikacij · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Imenik aplikacij · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Imenik aplikacij · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Imenik aplikacij · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Imenik aplikacij · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Imenik aplikacij · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Imenik aplikacij · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Imenik aplikacij · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/sl-SI/notesstudio100.html) — Ročni zapiski in PDF
+  - Zima in izpitno obdobje januarja: zapiski na roko, označeni PDF-ji, posnetek predavanja na isti strani in ponavljanje s karticami. Brez povezave, brez računa.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: Datoteke v AI poziv](https://open.cait518.cc/ios-app-guide/sl-SI/aibriefpack.html) — Pozivi iz datotek in PDF
+  - Poročila ob koncu leta in načrti za praznike? Dodajte posnetke zaslona, PDF-je, zapiske in povezave: branje v napravi, osebni podatki označeni, jasen povzetek za AI.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: trener angleščine](https://open.cait518.cc/ios-app-guide/sl-SI/aim990.html) — Diagnoza TOEIC v 8 minutah
+  - Osemminutna diagnoza poimenuje tri najšibkejše veščine, zapiše načrt popravkov, ga vsak dan vadi in 30. dan vse znova izmeri. Brez povezave in brez računa.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: Ocena stanja baterije](https://open.cait518.cc/ios-app-guide/sl-SI/battai.html) — Jasna pravila, viri in omejitve
+  - Spremljajte svojo baterijo skozi čas Jasna pravila, viri in omejitve Odklenite globljo zgodovino, načrtovanje in poročila. Eno plačilo. Brez naročnine.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily: kalkulator in teme](https://open.cait518.cc/ios-app-guide/sl-SI/caldaily.html) — Pripomoček, orodja, zgodovina
+  - Računajte kar na začetnem zaslonu: pripomoček je pravi kalkulator. Napitnina, popust, kredit in še 5 vgrajenih orodij.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/sl-SI/countdaysnow.html) — Fokus dneva
+  - Fokus dneva: zasebno izberite Odtlej, Danes ali Naprej ter preglejte zadnje tri izbire ob pomembnih datumih.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: ATS Življenjepis](https://open.cait518.cc/ios-app-guide/sl-SI/cvdesk.html) — Izdelava CV: predloge in PDF
+  - Takojšnja ocena ATS, jasni popravki in pogled kadrovika v prvih 6 sekundah. Predogled končnega PDF-ja kadar koli. Brez računa.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: Sledilnik cikla](https://open.cait518.cc/ios-app-guide/sl-SI/cyca.html) — Menstrualni koledar, ovulacija
+  - Veseli december, potovanja in zabave? Zabeležite menstruacijo, krvavitev, simptome, razpoloženje in zapiske v nekaj sekundah. Vse ostane v napravi.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: Govori danes](https://open.cait518.cc/ios-app-guide/sl-SI/dailymatelite.html) — Frazarnik za potovanja
+  - Razumi, kaj ti rečejo na letališču, v hotelu ali restavraciji, in se nauči naravnega odgovora. Osnove za potovanje v vseh 50 jezikih, tudi brez povezave.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: Stavki za življenje](https://open.cait518.cc/ios-app-guide/sl-SI/dailymate.html) — Učenje angleščine v praksi
+  - Naučite se, kaj ljudje res rečejo: 8.400 vsakdanjih stavkov z naravnimi odgovori v 47 jezikih in 84 resničnih situacijah. Gradnik in Apple Watch vključena.
+  - Cena: Plačljiv prenos po eni vnaprej določeni ceni, brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: Merilnik ravni zvoka](https://open.cait518.cc/ios-app-guide/sl-SI/dbhalo.html) — Doza in varen čas
+  - Zimske zabave, glasni sosedje ali smrčanje v dolgih zimskih nočeh? Spremljajte dB v živo na obroču Halo, ocenite dnevni odmerek hrupa in beležite smrčanje.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Pametna budilka](https://open.cait518.cc/ios-app-guide/sl-SI/easyam.html) — Delovni dnevi da, prazniki ne
+  - Božič, dan samostojnosti in novo leto se preskočijo sami. Dopust med prazniki? Dodaj ga kot proste dni: budilka molči in spet zazvoni prvi delovni dan.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: Potni stroški](https://open.cait518.cc/ios-app-guide/sl-SI/gmoneylite.html) — Dnevni proračun na uri
+  - Božič ali silvestrovo v tujini? Beležite nakupe v lokalni valuti in jih takoj vidite v svoji, nastavite dnevni limit. Tečaji delujejo tudi brez povezave.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: Stroški in proračun](https://open.cait518.cc/ios-app-guide/sl-SI/gmoney.html) — Potovalni stroški in valute
+  - Veseli december, božič in novo leto na poti? Beležite izdatke po kategorijah, določite dnevni limit in vidite, koliko ostane danes. Valute tudi brez povezave.
+  - Cena: Plačljiv prenos po eni vnaprej določeni ceni, brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: Koliko ur dela](https://open.cait518.cc/ios-app-guide/sl-SI/hourstaglite.html) — Zavesten nakup: prava cena
+  - Nakupi ob koncu leta: pred nakupom vidite ceno v urah lastnega dela, jo označite kot potrebujem, želim ali impulz in si ogledate delo za ciljem za novo leto.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: Cena v Urah](https://open.cait518.cc/ios-app-guide/sl-SI/hourstag.html) — Urna postavka in stroški
+  - Božična darila in novoletne zaobljube? Pred nakupom vidiš vsako ceno v delovnih urah, označi Potreba, Želja ali Impulz in načrtuj svoje želje v urah.
+  - Cena: Plačljiv prenos po eni vnaprej določeni ceni, brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/sl-SI/ledmovingtext.html) — Svetleči napis, ki se premika
+  - Zaslon v nekaj sekundah spremeni v svetleč premikajoč se napis ali sestavi zaporedje sporočil, ki jih menjaš z dotikom ali časovnikom. Celoten zaslon, brez povezave.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: Blokada in fokus](https://open.cait518.cc/ios-app-guide/sl-SI/lockhour.html) — Čas pred zaslonom in zapora
+  - Zakleni aplikacije in spletne strani, ki ti kradejo čas, dokler se časovnik ne izteče. Načini za fokus, učenje in spanje, strogi način, statistika. Brez računa.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo](https://open.cait518.cc/ios-app-guide/sl-SI/lumibopomofo.html) — Zhuyin: kitajščina za otroke
+  - Hrani prijatelje-simbole po zvoku, obriši vsako potezo po vrsti, popelji se z vlakcem tonov in sestavljaj glasove na vlaku. Deluje brez povezave.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/sl-SI/lumibopomofopro.html) — Kitajski toni in delovni listi
+  - Vseh 37 zvokov zhuyin: tobogan tonov, vlak zlogov, ribolov, pisanje črk in zvezdna dirka. Starši vidijo napredek in natisnejo delovne liste. Brez oglasov.
+  - Cena: Plačljiv prenos po eni vnaprej določeni ceni, brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Lite: ABC Otroci](https://open.cait518.cc/ios-app-guide/sl-SI/lumiletters.html) — Angleška abeceda: pisanje
+  - Poskusite črko A in prvi planet: otrok sliši glas črke, jo s prstom prevleče in igra kvize na planetih. Pozneje odklenete vseh 26 črk. Brez oglasov.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Planet: Raziskovalec](https://open.cait518.cc/ios-app-guide/sl-SI/lumimath.html) — Matematične igre za otroke
+  - Pravilen odgovor in planet zasveti. 46 vrst slikovnih nalog: štetje, seštevanje, odštevanje, poštevanka, ura, denar. Brez oglasov in naročnine.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Pro: Otroška Matemat](https://open.cait518.cc/ios-app-guide/sl-SI/lumimathpro.html) — Logika in besedilne naloge
+  - Logika, zaporedja in besedilne naloge v 46 vrstah vprašanj. Vaja šibkih točk, poročilo o napredku in delovni listi za tisk. Brez oglasov in nakupov v aplikaciji.
+  - Cena: Plačljiv prenos po eni vnaprej določeni ceni, brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Misija Planet Pro](https://open.cait518.cc/ios-app-guide/sl-SI/lumimissionpro.html) — Jutranja in večerna rutina
+  - Vse rutine vključene: obrok, umivanje zob, spanje, pospravljanje in odhod v šolo, lastna opravila, pregled 7 dni in večerni opomnik. Brez oglasov, deluje brez povezave.
+  - Cena: Plačljiv prenos po eni vnaprej določeni ceni, brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Misija Planet: Rutine](https://open.cait518.cc/ios-app-guide/sl-SI/lumimission.html) — Tabela nagrad za otroke
+  - Manj prepričevanja, več uspehov: vsaka opravljena misija prinese zvezdice, nahrani Lumija in napolni album s 100 nalepkami. Dodajte svoja opravila. Brez oglasov.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Vreme: Napoved za danes](https://open.cait518.cc/ios-app-guide/sl-SI/lumiweather.html) — Ven ali ne? Dež, UV in veter
+  - Ven zdaj ali pozneje? Lumi napoved spremeni v indeks za ven od 0 do 100 in ti pove, kaj obleči ter ali potrebuješ dežnik ali kremo za sončenje.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Črke Pro: ABC Fonika](https://open.cait518.cc/ios-app-guide/sl-SI/lumiletterspro.html) — Angleščina za otroke: glasovi
+  - Otrok sliši besedo, najde prvi, srednji ali zadnji glas in obriše črko. 26 črk, 14 planetov in delovni listi za tisk. Brez oglasov, deluje brez povezave.
+  - Cena: Plačljiv prenos po eni vnaprej določeni ceni, brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: Odstrani podatke](https://open.cait518.cc/ios-app-guide/sl-SI/maskmyfile.html) — Skrijte podatke pred deljenjem
+  - Kopija potnega lista za zimsko potovanje ali plačilne liste ob koncu leta? Poišči zasebne podatke, trajno zakrij le izbrano in odstrani metapodatke. Vse na napravi.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: Nazadnje](https://open.cait518.cc/ios-app-guide/sl-SI/mochidonestamp.html) — Kdaj je bilo? Opomniki opravil
+  - Nič več ugibanja, kdaj ste to nazadnje naredili. Označite z žigom, Mochi si zapomni in vas opomni, ko je spet čas. Posteljnina, filtri, rastline, klici, tudi z družino.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: Ljubek seznam](https://open.cait518.cc/ios-app-guide/sl-SI/mochi.html) — Ljubki opravki in gradnik
+  - Od martinovega do božiča: šola, delo in nakupi v ljubkem seznamu. Ko končaš, tapni mali krog, izberi temo in dodaj prikupne widgete na začetni zaslon.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag: Prihodki in stroški](https://open.cait518.cc/ios-app-guide/sl-SI/moneytag.html) — Projekti · Oznake · Poročilo
+  - Stojnica ali delo ob koncu leta? Vaš projekt prikaže prihodke minus stroške kot jasen neto rezultat, v valuti, ki jo izberete. Vnosi kar z ure Apple Watch.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: AI prosojnica](https://open.cait518.cc/ios-app-guide/sl-SI/onepageppt.html) — Iz zapiskov v predstavitev
+  - Letni pregled pred božičem? Prilepite zapiske, PDF, posnetek zaslona ali CSV in dobite jasno prosojnico 16:9: ključne točke kot naslovi, številke kot grafi. Izvoz v PNG.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: Filmski filtri](https://open.cait518.cc/ios-app-guide/sl-SI/photocream.html) — Analogni fotoaparat in filtri
+  - Božične lučke in družinske večerje v topli svetlobi? Prilagodi svetlobo, barve in krivulje, retuširaj kožo brez izgube podrobnosti in dodaj filmsko zrno.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: Čiščenje slik](https://open.cait518.cc/ios-app-guide/sl-SI/picclear.html) — Izbriši posnetke zaslona
+  - Poln pomnilnik? Sprostite gigabajte: poiščite podvojene fotografije, podobne posnetke, stare posnetke zaslona in velike videe ter vse preverite pred brisanjem.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: Čitalnik kod](https://open.cait518.cc/ios-app-guide/sl-SI/qrcodehalo.html) — Odpri takoj, preveri pozneje
+  - Skenirajte in končano: povezave se odprejo, Wi-Fi prikaže poziv iOS, klici in e-pošta so pripravljeni. Vsako shranjeno skeniranje ima Varnostni pregled v Zgodovini.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: zaznamki z UI](https://open.cait518.cc/ios-app-guide/sl-SI/savetag.html) — Shrani povezave, beri pozneje
+  - Ideje za darila, praznični recepti in izleti izgubljeni v klepetih? Delite povezavo iz katere koli aplikacije: oznake se dodajo same na napravi, najdete jo po pomenu.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: PDF skener](https://open.cait518.cc/ios-app-guide/sl-SI/scanto.html) — Zasebno skeniranje dokumentov
+  - Računi za božična darila, garancijski listi in papirji ob koncu leta? Skeniraj jih v ostre PDF-je, OCR na napravi pa najde vsakega po eni besedi. Brez povezave.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: Zvoki za spanje](https://open.cait518.cc/ios-app-guide/sl-SI/sereno.html) — Beli šum, dež in morje
+  - Dež, morje, ogenj: 140+ pomirjujočih zvokov za spanje in zbranost. Mešajte sami, zaspite ob nežnem utišanju, zbudite se ob ptičjem petju. Brez povezave, brez računa.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/sl-SI/shotinbox.html) — Urejanje posnetkov zaslona
+  - Božični nakupi in zimska potovanja pustijo račune, vstopnice in naročila na posnetkih. Uredijo se sami, iščeš po besedilu, slediš paketom in počistiš ostalo.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: Slika za osebno](https://open.cait518.cc/ios-app-guide/sl-SI/snapportlite.html) — Portreti v natančni velikosti
+  - Praznično potovanje ali nov potni list? Obrežite fotografijo na točno velikost s pripravljenimi predlogami, vodili za obraz in belim ali modrim ozadjem, kar na napravi.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: Foto za dokumente](https://open.cait518.cc/ios-app-guide/sl-SI/snapport.html) — 35x45 in pola za tisk
+  - Božično potovanje ali nov potni list? Fotografijo za potni list ali vizum naredite doma: predloge običajnih velikosti, vodila za obraz, belo ozadje in listi za tisk.
+  - Cena: Plačljiv prenos po eni vnaprej določeni ceni, brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/sl-SI/sononote.html) — Govor v besedilo · Beleške
+  - Govorite in Sono Note to spremeni v čist prepis, povzetek, ključne točke in naloge, celo v e-pošto. Za sestanke, predavanja in klice. Brez računa.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: prekucna ura](https://open.cait518.cc/ios-app-guide/sl-SI/stayclock.html) — Ura in koledar vedno prižgana
+  - Dolgi večeri do božiča: med polnjenjem telefon postane velika ura, ki jo prebereš z drugega konca sobe, s koledarjem Mesec, urnim bitjem in preprostim alarmom.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: Merjenje časa](https://open.cait518.cc/ios-app-guide/sl-SI/studydown.html) — Položi ga z zaslonom navzdol
+  - Izpiti in roki ob koncu leta? Izberite dejavnost, položite telefon s zaslonom navzdol in čas teče; ko ga dvignete, se ustavi. Oglejte si danes in ta teden po dejavnostih.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet za otroke](https://open.cait518.cc/ios-app-guide/sl-SI/tripplanet.html) — Družinske misije na poti
+  - Leti, dolge vožnje in novi kraji postanejo misije: pripeti pas, se zahvaliti posadki, poskusiti grižljaj. Vsaka misija prinese nagrado, vsako končano potovanje žig.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: Načrt poti](https://open.cait518.cc/ios-app-guide/sl-SI/tripbeelite.html) — Počitnice dan za dnem
+  - Domov za božič ali na pot za novo leto? Postavite potovanje na eno časovnico po dnevih: leti, nastanitev, zapiski, opomniki in podatki o vstopnicah na enem mestu.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: Načrtovalec poti](https://open.cait518.cc/ios-app-guide/sl-SI/tripbee.html) — Skupinski izlet in pakiranje
+  - Isto pot urejajte skupaj z družino ali prijatelji, dodajte načrt za deževen dan in prejemajte opomnike po lokalnem času. Seznam za pakiranje se prilagodi vsakemu.
+  - Cena: Plačljiv prenos po eni vnaprej določeni ceni, brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: Jasna slika](https://open.cait518.cc/ios-app-guide/sl-SI/unblurry.html) — Obnova starih fotografij
+  - Adventni sejmi, božič in silvestrovo: zamegljene ali temne fotografije? Izostritev, Odstranjevanje šuma in Slaba svetloba jih rešijo kar na vašem iPhonu.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: Poraba UI in limiti](https://open.cait518.cc/ios-app-guide/sl-SI/claudeusagemini.html) — Claude, Codex, Copilot, Gemini
+  - Opozorila pri poljubnem odstotku, razvrščanje po 5-urni ali tedenski ponastavitvi in pripomočki, ki prelistajo račune. Poglejte, koliko vam ostane pri vsakem paketu UI.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/sl-SI/wifiaidlite.html) — Ni interneta? Poišči vzrok
+  - Ni interneta? Je kriv Wi-Fi, ponudnik ali le ena spletna stran? En dotik zažene neodvisne preizkuse in pokaže najverjetnejši vzrok ter naslednje korake.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: Diagnoza omrežja](https://open.cait518.cc/ios-app-guide/sl-SI/wifiaid.html) — Usmerjevalnik, mesh in DNS
+  - Prazniki in vsa družina na istem Wi-Fi? Ko se zatika, z enim dotikom preverite Wi-Fi, DNS in internet ter poiščite najverjetnejši vzrok ali preverite eno stran.
+  - Cena: Plačljiv prenos po eni vnaprej določeni ceni, brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite: besedišče](https://open.cait518.cc/ios-app-guide/sl-SI/wordmatelite.html) — Pet novih besed vsak dan
+  - Pet besed, minuta na dan, v katerem koli od 44 jezikov. Poslušajte besedo, jo vidite v stavku in ohranite niz. Deluje brez povezave in brez računa.
+  - Cena: Prenesite brezplačno. Z enkratnim nakupom odklenete vse funkcije—brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: 44 jezikov](https://open.cait518.cc/ios-app-guide/sl-SI/wordmate.html) — Besede, kartice in gradnik
+  - Potovanje za praznike ali novoletna zaobljuba? Učite se besed v 44 jezikih v prostih trenutkih: 14 praktičnih tem, primeri povedi in izgovorjava, ki jo slišite.
+  - Cena: Plačljiv prenos po eni vnaprej določeni ceni, brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: odpri RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/sl-SI/zipbox.html) — Razpakiraj brez oglasov
+  - Božične fotografije v 7z z geslom ali ZIP, razdeljen na dele? Poglej vsebino, predoglej fotografije in PDF ter razpakiraj samo, kar potrebuješ. Brez oglasov.
+  - Cena: Plačljiv prenos po eni vnaprej določeni ceni, brez naročnine.
+  - App Store: https://apps.apple.com/si/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

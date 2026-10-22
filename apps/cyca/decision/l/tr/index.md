@@ -1,0 +1,29 @@
+---
+title: "hesap gerektirmeyen en iyi adet takibi uygulaması iphone"
+lang: "tr"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/tr/index.html"
+modified: "2026-10-21"
+app_store_id: "6782251621"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# hesap gerektirmeyen en iyi adet takibi uygulaması iphone
+
+Veri hassasiyetinin tüm hikaye olduğu bir kategoride, doğru adet takip uygulaması her şeyi — akış, ruh hali, belirtiler, sıcaklık, yakınlık — cihazınızda, hesap veya bulut senkronizasyonu olmadan tutar. Cyca sadece bunu yapar, gerisini bırakır.
+
+- Sağlık
+- Başlangıçta ücretsiz · tek seferlik açma
+- Çevrimdışı
+- Hesap yok
+- Reklam yok
+- Takip yok
+- Gizli / cihazda
+- App Store · Ücretsiz
+
+[Cyca'yı App Store'dan edinin →](https://apps.apple.com/tr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
+
+[Kılavuzun tamamını oku](https://open.cait518.cc/ios-app-guide/tr/answers/best-period-tracker-app-no-account-required-iphone.html)
+
+> Uygulamanın geliştiricisi Lumi Studio tarafından hazırlanan rehber. Uygulama adları ilgili sahiplerinin ticari markalarıdır ve yalnızca tanımlama amacıyla kullanılır. Belgeler, sağlık, okul ve verimlilikle ilgili kararlarda, geçerli olduğu yerlerde resmi gereklilikleri doğrulayın.

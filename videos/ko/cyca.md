@@ -1,0 +1,23 @@
+---
+title: "계정 없이 사용할 수 있는 최고의 생리 주기 추적 앱 아이폰용"
+lang: "ko"
+canonical: "https://open.cait518.cc/ios-app-guide/videos/ko/cyca.html"
+modified: "2026-10-17"
+video_url: "https://files.catbox.moe/smlet6.mp4"
+duration: "PT16S"
+app_store_id: "6782251621"
+verified_live: true
+publisher: "Lumi Studio"
+---
+
+# 계정 없이 사용할 수 있는 최고의 생리 주기 추적 앱 아이폰용
+
+데이터 민감도가 중요한 카테고리에서 올바른 생리 주기 추적기는 흐름, 기분, 증상, 온도, 친밀감 등 모든 정보를 계정 없이 기기에만 보관하며 클라우드 동기화가 없습니다. Cyca, 딱 그 한 가지에만 집중합니다.
+
+[영상 보기](https://files.catbox.moe/smlet6.mp4)
+
+[앱 스토어에서 Cyca 받기 →](https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=iag_video_ko&mt=8)
+
+[앱 가이드 열기](https://open.cait518.cc/ios-app-guide/ko/answers/best-period-tracker-app-no-account-required-iphone.html)
+
+> 앱 개발자인 Lumi Studio에서 직접 작성한 가이드입니다. 앱 이름은 해당 소유자의 상표이며 식별 목적으로만 사용됩니다. 문서, 건강, 학교 및 생산성과 관련된 결정을 내릴 때는 필요에 따라 관련 기관의 공식 요건을 확인하시기 바랍니다.

@@ -1,0 +1,113 @@
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "Dataset",
+    "CreativeWork"
+  ],
+  "@id": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html#catalog-records",
+  "name": "Bopomofo EPUB library catalog records",
+  "alternateName": "注音 EPUB 圖書館書目紀錄",
+  "description": "Two bilingual-ready bibliographic records for the open 37-symbol Bopomofo EPUB, supplied as MARCXML, MODS 3.8 and BIBFRAME 2.0.",
+  "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-library-catalog-records.html",
+  "identifier": "LUMI-ZHUYIN-EPUB-CATALOG-2026",
+  "version": "1.0.0",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-09-04T14:41:43Z",
+  "inLanguage": [
+    "en",
+    "zh-Hant"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "creator": {
+    "@type": "Organization",
+    "name": "Lumi Apps - iOS App Guide",
+    "url": "https://open.cait518.cc/ios-app-guide"
+  },
+  "isBasedOn": {
+    "@type": "Book",
+    "url": "https://open.cait518.cc/ios-app-guide/data/zhuyin-bopomofo-epub-reference.html",
+    "dateModified": "2026-09-04T14:41:43Z",
+    "encoding": [
+      {
+        "@type": "MediaObject",
+        "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-en.epub",
+        "encodingFormat": "application/epub+zip",
+        "contentSize": "9533 bytes",
+        "sha256": "748281eadfdd1101548f847bbbe629e7811a0e75664c91f569d0983356342e24",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "MediaObject",
+        "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-epub/bopomofo-37-symbol-reference-zh-hant.epub",
+        "encodingFormat": "application/epub+zip",
+        "contentSize": "10258 bytes",
+        "sha256": "8dea84b7709babe0a082a6b129a0c7a417d977cee5c4343c9d1ad8ec44bf450b",
+        "inLanguage": "zh-Hant"
+      }
+    ]
+  },
+  "conformsTo": [
+    "https://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd",
+    "https://www.loc.gov/standards/mods/v3/mods-3-8.xsd",
+    "https://id.loc.gov/ontologies/bibframe.html",
+    "https://www.loc.gov/bibframe/docs/bibframe2-model.html"
+  ],
+  "numberOfItems": 2,
+  "keywords": [
+    "Bopomofo",
+    "Zhuyin",
+    "MARCXML",
+    "MODS 3.8",
+    "BIBFRAME 2.0",
+    "library catalog records",
+    "school library"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Complete ZIP bundle",
+      "encodingFormat": "application/zip",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-library-catalog-bundle.zip",
+      "contentSize": "7948 bytes",
+      "sha256": "8449a7db7f88e5ae7574a54146b3ec322c9833208afc94044f1ec652835bdd9b"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "MARCXML",
+      "encodingFormat": "application/marcxml+xml",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.marcxml.xml",
+      "contentSize": "10400 bytes",
+      "sha256": "ecf9f160b9bdb3d5159a166bbc00064f14f5b89e2449ad7d88859c1241e5c9a4"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "MODS 3.8",
+      "encodingFormat": "application/mods+xml",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.mods.xml",
+      "contentSize": "5905 bytes",
+      "sha256": "324b7794de657fc89b4adecdc12067ff6dfcb62fdd967c277aa443570f3a7878"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "BIBFRAME 2.0 JSON-LD",
+      "encodingFormat": "application/ld+json",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.jsonld",
+      "contentSize": "12441 bytes",
+      "sha256": "5d669a2b34dbba2b2cefd753b06b7627f79df388bbf680ec543bc4988e6a6bc4"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "BIBFRAME 2.0 Turtle",
+      "encodingFormat": "text/turtle",
+      "contentUrl": "https://open.cait518.cc/ios-app-guide/data/packages/zhuyin-bopomofo-library/bopomofo-37-symbol-reference.bibframe.ttl",
+      "contentSize": "8820 bytes",
+      "sha256": "83902fc5c01dc80ffa6bee50df1127501283f1cf65a35d5f344b2be00c3190f9"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "Lumi Apps Open Data",
+    "url": "https://open.cait518.cc/ios-app-guide/data/"
+  }
+}

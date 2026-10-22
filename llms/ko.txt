@@ -1,0 +1,245 @@
+# 앱 목록 — iOS App Guide
+
+> 각 iOS 앱의 구조화된 정보 — 기능, 가격, FAQ.
+
+locale: ko
+apps: 54
+- 앱 목록: https://open.cait518.cc/ios-app-guide/ko/tools/private-pay-once-iphone-app-finder.html
+- 앱 목록 · PWA: https://open.cait518.cc/ios-app-guide/ko/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/ko.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/ko.json
+- 앱 목록 · SVG: https://open.cait518.cc/ios-app-guide/ko/visuals/
+- 앱 목록 · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- 앱 목록 · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- 앱 목록 · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- 앱 목록 · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- 앱 목록 · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- 앱 목록 · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- 앱 목록 · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- 앱 목록 · Agent Skill · ko: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/ko.json
+- 앱 목록 · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- 앱 목록 · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- 앱 목록 · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- 앱 목록 · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- 앱 목록 · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- 앱 목록 · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- 앱 목록 · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- 앱 목록 · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- 앱 목록 · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/ko/notesstudio100.html) — 필기 노트·PDF 주석
+  - 기말고사부터 겨울방학 공부까지. 손글씨 필기, PDF 주석, 강의 녹음을 한 페이지에 모으고 암기카드로 복습해요. 모두 오프라인, 계정 없이 노트는 기기에만.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief：파일을 AI 프롬프트로](https://open.cait518.cc/ios-app-guide/ko/aibriefpack.html) — 파일·PDF로 프롬프트 만들기
+  - 연말 보고서와 연휴 계획 자료가 스크린샷·PDF·메모·링크에 흩어져 있나요? 모두 넣으면 기기에서 읽고 개인정보를 표시하고, 사실마다 출처를 남겨 AI용 깔끔한 브리프 하나로 정리해요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: 영어 약점 코치](https://open.cait518.cc/ios-app-guide/ko/aim990.html) — 토익 LC RC 8분 진단
+  - 아는 문제만 반복하는 공부는 그만. 8분 진단으로 가장 약한 3개 영역을 찾아 맞춤 처방으로 매일 집중 훈련하고, 30일째 같은 항목을 다시 측정해 성장을 확인하세요. 오프라인·광고 없음·계정 불필요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: 배터리 상태 점수](https://open.cait518.cc/ios-app-guide/ko/battai.html) — 규칙, 출처, 한계를 분명하게
+  - 연말에 폰을 바꾸고 중고로 팔 계획이라면? 중고 판매·서비스용 깔끔한 배터리 리포트를 PNG로 저장하고, 성능 최대치 추세와 80%까지 예상 기간도 확인하세요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily 계산기 및 테마](https://open.cait518.cc/ios-app-guide/ko/caldaily.html) — 위젯, 도구, 기록 정리
+  - 홈 화면에서 바로 계산하세요. 위젯이 그대로 계산기예요. 팁·할인·대출 등 8가지 도구를 담았어요. 광고 없음.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/ko/countdaysnow.html) — 오늘의 초점
+  - 오늘의 초점: 지난 · 오늘 · 다음 — 저장. 광고 없음.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: ATS 이력서 제작](https://open.cait518.cc/ios-app-guide/ko/cvdesk.html) — 이력서 양식·템플릿 PDF 저장
+  - ATS 점수를 바로 확인하고 고칠 점을 명확하게. 채용 담당자가 처음 6초에 보는 부분도 미리 봐요. 완성된 PDF를 언제든 미리 볼 수 있어요. 가입 없음.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca 생리·배란일 트래커](https://open.cait518.cc/ios-app-guide/ko/cyca.html) — 생리달력·가임기 계산·컨디션
+  - 연말 모임과 여행으로 바쁜 시즌에도 생리, 양, 증상, 기분, 메모를 몇 초 만에 기록하세요. 모든 데이터는 기기 안에만 남아요. 계정도 클라우드도 필요 없고, 오프라인에서도 쓸 수 있어요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: 바로 쓰는 한마디](https://open.cait518.cc/ios-app-guide/ko/dailymatelite.html) — 50개 언어 상황별 여행 회화
+  - 공항, 호텔, 식당에서 현지인이 건네는 말을 알아듣고 자연스럽게 대답하는 법을 익혀요. 여행 기초 과정은 50개 언어 모두 지원하고 오프라인에서도 돼요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: 문장으로 배우는 언어](https://open.cait518.cc/ios-app-guide/ko/dailymate.html) — 생활영어, 일본어, 중국어 회화
+  - 단어는 외웠는데 막상 말하려면 막히나요? DailyMate는 자연스러운 대답까지 이어지는 완전한 문장으로 배워요. 47개 언어, 8,400문장, 84가지 상황. 위젯과 Apple Watch 지원.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: 소음 측정기](https://open.cait518.cc/ios-app-guide/ko/dbhalo.html) — 노출량·주파수·수면 일지
+  - 연말 모임, 시끄러운 이웃, 긴 겨울밤의 코골이가 신경 쓰이나요? Halo 링으로 실시간 dB를 보고, 하루 소음 노출량을 추정하고, 수면 일지에 코골이를 기록하세요. 모든 처리는 기기 안에서 이뤄져요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: 스마트 공휴일 알람 시계](https://open.cait518.cc/ios-app-guide/ko/easyam.html) — 내일 울릴지 고민 끝! 출근·연차·휴가 알아서 척척
+  - 크리스마스와 새해 첫날, 2월 설 연휴까지 빨간날엔 알아서 조용히. 연차 붙여 쉬는 날은 휴가로 넣어 두면 끝. 출근하는 날엔 평소처럼 울려요. 앞으로 7일 동안 언제 몇 시에 울리는지 한눈에 보이고, 내일만 늦잠 자고 싶으면 다음 알람 한 번만 건너뛰기.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite：여행 가계부·환율](https://open.cait518.cc/ios-app-guide/ko/gmoneylite.html) — 해외여행 경비·하루 예산
+  - 연말연시 해외여행 가시나요? 현지 통화로 결제를 기록하면 바로 내 통화로 환산돼요. 하루 한도를 정해 오늘 얼마나 썼는지 확인하고, 실시간 또는 직접 입력한 환율은 오프라인에서도 써요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money：가계부·예산·환율](https://open.cait518.cc/ios-app-guide/ko/gmoney.html) — 생활비·소비기록·지출관리
+  - 오늘 얼마 더 써도 될까? 하루 한도를 정하면 남은 금액이 한눈에. 가계부와 50개 통화 환율 변환을 하나로, 오프라인에서도 작동. 계정·광고 없음. 먼저 써 보려면 'G+Money Lite：여행 가계부·환율' 검색
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite：노동시간으로 보는 가격](https://open.cait518.cc/ios-app-guide/ko/hourstaglite.html) — 이 물건은 몇 시간의 값일까
+  - 연말 쇼핑 시즌, 결제 전에 잠깐: 그 가격이 내 몇 시간 노동인지 확인하고 필요·갖고 싶음·충동으로 태그하세요. 새해 목표에 드는 노동 시간과 진행 상황도 볼 수 있어요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: 가격을 시간으로](https://open.cait518.cc/ios-app-guide/ko/hourstag.html) — 시급 계산기·지출 관리 가계부
+  - 연말 쇼핑과 선물 고민될 때, 사기 전에 가격을 내 근무 시간으로 확인하세요. 지출을 필요·원함·충동으로 분류하고, 목표와 위시리스트도 실제 노동 시간으로 계획하면 후회 없는 소비가 돼요.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/ko/ledmovingtext.html) — 화면이 그대로 전광판으로
+  - 글자만 입력하면 화면이 멀리서도 보이는 전광판이 돼요. 메시지 순서를 만들면 탭이나 타이머로 문구를 차례로 넘길 수 있어요. 전체 화면, 오프라인, 광고 없음.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro：앱 차단·집중 타이머](https://open.cait518.cc/ios-app-guide/ko/lockhour.html) — 스마트폰 중독 탈출·집중 타이머
+  - 시간을 뺏는 앱과 사이트를 타이머가 끝날 때까지 잠가요. 몰입·공부·수면 모드, 하드 모드, 통계와 연속 기록까지. 계정 없이 바로 써요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/ko/lumibopomofopro.html) — 주음부호 성조·따라쓰기·학습지
+  - 주음부호 37개가 모두 열려 있는 완전판. 성조 롤러코스터, 소리 기차, 주음 낚시, 따라쓰기, 스타 레이스로 놀면서 익혀요. 부모 페이지에서 진도와 복습 목록을 보고 학습지도 인쇄해요. 광고 없음.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi 레터 Lite: 어린이 영어 ABC](https://open.cait518.cc/ios-app-guide/ko/lumiletters.html) — 알파벳 따라쓰기·파닉스 놀이
+  - 글자 소리를 듣고, 손가락으로 따라 쓰고, 행성 퀴즈로 놀아요. 집에서 출력하는 PDF 학습지도 있어요. 알파벳 A와 첫 행성부터 체험하고, 마음에 들면 26글자와 행성 14개를 모두 해제하세요. 광고 없음.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi 레터 Pro: ABC 파닉스](https://open.cait518.cc/ios-app-guide/ko/lumiletterspro.html) — 엄마표 영어·첫소리 끝소리 듣기
+  - 영어 단어를 듣고 첫소리, 가운데 소리, 끝소리를 찾은 뒤 글자를 따라 써요. 알파벳 26자, 행성 14개, 인쇄용 학습지. 광고 없고 구독 없이 오프라인에서도 돼요.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi 미션 별 Pro: 생활습관 게임](https://open.cait518.cc/ios-app-guide/ko/lumimissionpro.html) — 아침·잠자리 루틴 체크리스트
+  - 밥 먹기, 양치, 잠자기, 정리정돈, 등교 준비까지 모든 미션 포함. 우리 집 미션도 추가하고 부모 페이지에서 7일 기록과 저녁 알림을 설정해요. 광고 없음·오프라인 사용 가능.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Lumi 미션 별: 생활습관 루틴](https://open.cait518.cc/ios-app-guide/ko/lumimission.html) — 칭찬 스티커판·도장판 보상표
+  - 잔소리는 줄이고 성취감은 크게! 밥 먹기, 양치, 정리정돈, 잠자리 준비를 미션으로. 끝내면 별을 모으고 Lumi에게 밥을 주며 스티커 100장을 모아요. 광고 없음, 가입 불필요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi 보포모포](https://open.cait518.cc/ios-app-guide/ko/lumibopomofo.html) — 중국어 발음 놀이·주음부호 게임
+  - 소리를 듣고 주음 친구에게 간식을 주고, 획순대로 따라 쓰고, 성조 롤러코스터를 타고, 소리 기차로 음을 이어요. 오프라인에서도 할 수 있어요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi 수학 행성: 아이 수학](https://open.cait518.cc/ios-app-guide/ko/lumimathpro.html) — 사고력 퍼즐·문장제·규칙 찾기
+  - 규칙 찾기, 논리 퍼즐, 문장제까지 46가지 문제. 약한 유형 연습, 학습 리포트, 답지 있는 인쇄용 학습지를 제공해요. 광고와 앱 내 구입이 없어요.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi 수학 행성: 체험판](https://open.cait518.cc/ios-app-guide/ko/lumimath.html) — 유아·초등 덧셈 뺄셈 구구단 놀이
+  - 문제를 맞히면 행성에 불이 켜져요. 수 세기, 덧셈, 뺄셈, 구구단, 시계, 돈까지 그림으로 푸는 46가지 문제. 정답지가 있는 학습지도 인쇄할 수 있어요. 광고도 구독도 없어요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File：공유 전 개인정보 삭제](https://open.cait518.cc/ios-app-guide/ko/maskmyfile.html) — 공유 전 개인정보 영구 가리기
+  - 연말정산 서류, 겨울 여행 예약용 여권 사본 보내기 전에 개인정보를 찾아 고른 부분만 완전히 가리고 메타데이터도 지우세요. 모든 처리는 기기 안에서 끝나요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: 마지막 기록](https://open.cait518.cc/ios-app-guide/ko/mochidonestamp.html) — 언제 했더라? 집안일 주기 알림
+  - 마지막으로 언제 했는지 더는 헷갈리지 마세요. 완료 스탬프를 찍으면 Mochi가 기억하고 다시 할 때가 되면 알려 줘요. 침구, 필터, 물 주기, 가족과 공유까지.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: 귀여운 할 일 목록 & 체크리스트](https://open.cait518.cc/ios-app-guide/ko/mochi.html) — 포근한 플래너로 하루 정리
+  - 귀여운 투두리스트로 오늘 할 일을 톡톡 체크! 동그라미를 눌러 완료하고, 홈 화면 위젯에서 바로 확인하세요. 광고 없음, 가입 필요 없음.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag: 수입과 지출](https://open.cait518.cc/ios-app-guide/ko/moneytag.html) — 프로젝트 · 태그 · 리포트
+  - 연말 부업이나 플리마켓, 결산 전에 손익부터 확인하세요. 프로젝트가 수입에서 지출을 뺀 순액을 한눈에, 내가 고른 통화로 보여줘요. Apple Watch로 바로 기록하고 위젯으로 확인.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: AI 발표자료](https://open.cait518.cc/ios-app-guide/ko/onepageppt.html) — 피피티 만들기·슬라이드 자동 생성
+  - 연말 결산·연간 보고 시즌, 회의 메모나 PDF, 캡처, CSV를 넣으면 핵심은 제목으로, 숫자는 차트로, 날짜는 타임라인으로 정리된 16:9 슬라이드 한 장 완성. 눌러서 고치고 PNG로 공유하세요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro：필름 필터·감성 보정](https://open.cait518.cc/ios-app-guide/ko/photocream.html) — 필름카메라 감성 필터·보정
+  - 연말 모임, 크리스마스 불빛 아래서 찍은 사진이 노랗게 나왔나요? 빛·색·커브를 세밀하게 조정하고, 디테일은 살린 채 피부를 보정하고, 필름 그레인으로 한 해 앨범을 완성하세요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro：사진 정리·중복 삭제](https://open.cait518.cc/ios-app-guide/ko/picclear.html) — 스크린샷 정리·저장공간 부족
+  - 용량 꽉 찬 아이폰에 저장공간 확보. 중복 사진, 비슷한 사진, 오래된 캡처, 흐릿한 사진, 큰 동영상을 기기 안에서 찾고 삭제 전에 하나씩 확인해요. 계정 없이 바로 써요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: QR코드 바로 실행](https://open.cait518.cc/ios-app-guide/ko/qrcodehalo.html) — 저장된 링크, 기기 안에서 보안 검사
+  - 스캔하면 끝. 링크가 열리고, Wi-Fi는 iOS 연결 창이 뜨고, 전화와 이메일도 바로 준비됩니다. 저장된 스캔은 기록에서 기기 안에서 보안 검사까지.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: AI 링크 보관함](https://open.cait518.cc/ios-app-guide/ko/savetag.html) — 나중에 읽기·기사 저장·북마크 정리
+  - 연말 선물 후보, 홈파티 레시피, 겨울 여행지 링크가 채팅에 묻히나요? 어떤 앱에서든 공유하면 기기에서 자동으로 태그되고, 정확한 단어 없이 의미로 다시 찾을 수 있어요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: 오프라인 PDF](https://open.cait518.cc/ios-app-guide/ko/scanto.html) — 문서 스캐너·문자인식 OCR
+  - 연말정산 앞두고 영수증, 보증서, 계약서가 쌓였나요? 선명한 PDF로 스캔하면 기기 안의 OCR이 단어 하나로 원하는 문서를 찾아 줘요. 인터넷 없이, 계정 없이 사용하세요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: 수면 사운드](https://open.cait518.cc/ios-app-guide/ko/sereno.html) — 빗소리·백색소음으로 숙면과 집중
+  - 빗소리, 파도, 장작불 등 수면과 집중을 위한 140가지가 넘는 편안한 소리. 직접 믹스하고, 잠들면 부드럽게 꺼지고, 아침엔 새소리로 깨워 줘요. 100% 오프라인, 계정 불필요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: 스크린샷 정리](https://open.cait518.cc/ios-app-guide/ko/shotinbox.html) — 자동 분류·OCR 검색·타임라인
+  - 연말 쇼핑과 겨울 여행으로 영수증·티켓·주문 내역 스크린샷이 쌓였다면? 자동으로 분류하고 이미지 속 글자까지 검색, 택배 조회와 미리 알림 추가, 나머지 정리까지.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite：집에서 증명사진](https://open.cait518.cc/ios-app-guide/ko/snapportlite.html) — 인물 사진을 원하는 규격으로
+  - 연말 해외여행이나 여권 갱신, 새해 이력서 준비 중이라면? 프리셋으로 사진을 정확한 규격에 맞춰 자르고, 얼굴 가이드와 흰색·파란색 배경까지 기기 안에서 바로 끝내세요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: 여권·신분증 사진](https://open.cait518.cc/ios-app-guide/ko/snapport.html) — 사원증·학생증 규격 사진
+  - 여권 사진 규격 때문에 다시 찍은 적 있나요? Snapport는 35×45mm 등 국가별 규격 템플릿, 정수리·눈·턱 가이드, 배경 변경, A4·4×6 인화용 시트까지 집에서 끝내요. 모두 기기에서 처리.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/ko/sononote.html) — 음성을 텍스트로·음성 메모
+  - 말만 하면 Sono Note가 깔끔한 전사, 요약, 핵심 포인트, 할 일로 정리하고 후속 이메일 초안까지 만들어요. 회의·강의·통화에 딱. 계정 없이 바로 써요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: 플립 탁상시계](https://open.cait518.cc/ios-app-guide/ko/stayclock.html) — 항상 켜지는 시계와 캘린더
+  - 긴 겨울밤부터 연말까지: 충전하는 동안 휴대폰이 방 저편에서도 잘 보이는 큰 탁상시계가 돼요. 월간 캘린더, 매시 차임, 간단한 알람까지. 계정도 광고도 없어요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: 집중 타이머](https://open.cait518.cc/ios-app-guide/ko/studydown.html) — 책상에 엎어 두세요
+  - 기말고사와 연말 프로젝트 시즌인가요? 활동을 고르고 휴대폰을 화면이 아래로 가게 뒤집어 두면 시간이 기록되고, 들어 올리면 일시정지돼요. 오늘과 이번 주 시간을 활동별로 한눈에 확인하세요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet 아이 여행 게임](https://open.cait518.cc/ios-app-guide/ko/tripplanet.html) — 비행기·나들이 미션 도장 모으기
+  - 비행기, 긴 차량 이동, 낯선 장소를 미션으로! 안전벨트 매기, 승무원께 감사 인사, 한 입 도전. 미션마다 보상, 여행을 마치면 여권에 도장을 받아요. 광고 없음.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: 여행 플래너](https://open.cait518.cc/ios-app-guide/ko/tripbeelite.html) — 날짜별 일정표·항공권·숙소 알림
+  - 연말 여행이나 새해 휴가를 앞두고 있다면: 다음 여행을 날짜별 타임라인 하나에. 항공편과 숙소 정보, 메모, 알림, 티켓 정보까지 한곳에 모았어요. 계정 없이 바로 써요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: 여행 플래너](https://open.cait518.cc/ios-app-guide/ko/tripbee.html) — 가족·친구와 공동 편집, 준비물 체크
+  - 가족·친구를 초대해 같은 여행 일정을 함께 편집하세요. 날마다 우천 시 플랜B를 넣고, 알림은 현지 시간에 맞춰 울려요. 준비물 리스트는 인원과 아이 나이에 맞게 자동으로 만들어져요.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: 사진 선명하게](https://open.cait518.cc/ios-app-guide/ko/unblurry.html) — 오래된 사진 복원·사진 화질 개선
+  - 연말 모임, 크리스마스, 송년회 사진이 흔들리거나 어둡게 나와 다시 찍을 수 없다면? 샤픈으로 흐린 초점과 흔들림을 살리고, 노이즈 제거로 입자감을 정리하고, 저조도로 어두운 사진을 밝혀요. 문서 모드로 글자도 또렷하게.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: AI 사용량 트래커](https://open.cait518.cc/ios-app-guide/ko/claudeusagemini.html) — Claude·Codex·Copilot·Gemini 한도
+  - 원하는 퍼센트로 만드는 맞춤 알림, 5시간·주간 초기화 순 정렬, 모든 계정을 넘겨 보는 위젯. 각 AI 요금제에 남은 사용량을 확인하세요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/ko/wifiaidlite.html) — 인터넷 안될 때 원인 찾기
+  - 인터넷이 갑자기 안 되나요? 와이파이, 통신사, 특정 사이트 중 무엇이 문제인지 한 번의 탭으로 여러 검사를 돌려 가장 유력한 원인과 해결 방법을 알려 드려요. 계정·광고·추적 없음.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid：네트워크 문제 진단](https://open.cait518.cc/ios-app-guide/ko/wifiaid.html) — 공유기·메시·DNS 네트워크 진단
+  - 연말 모임, 겨울방학으로 온 가족이 같은 와이파이에? 인터넷이 느려지면 한 번의 탭으로 Wi-Fi, DNS, 인터넷을 검사해 가장 가능성 높은 원인을 찾고, 특정 사이트만 문제인지도 바로 판별하세요.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite 하루 5단어](https://open.cait518.cc/ios-app-guide/ko/wordmatelite.html) — 44개 언어, 1분이면 끝나는 어휘
+  - 하루 1분에 5단어, 44개 언어 중 원하는 언어로. 단어를 듣고, 예문으로 보고, 연속 기록을 이어가요. 오프라인에서도 되고 계정도 필요 없어요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: 44개 언어 단어 학습](https://open.cait518.cc/ios-app-guide/ko/wordmate.html) — 단어 위젯・단어장 복습
+  - 겨울방학, 연말 해외여행, 새해 목표로 외국어를 시작해 보세요. 44개 언어 단어를 14개 실용 주제와 예문, 발음 듣기로 익히고, 홈 화면 위젯에서 단어를 확인하고 즐겨찾기에 저장하며 바로 이어가요.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox 압축풀기: ZIP RAR 7z](https://open.cait518.cc/ios-app-guide/ko/zipbox.html) — 압축 해제·압축파일 열기
+  - 연말 여행 사진이 비밀번호 걸린 7z로 왔나요? 풀기 전에 안을 먼저 보고, 사진과 PDF를 미리보기한 뒤 필요한 파일만 꺼내세요. 모두 기기 안에서 처리, 광고는 없어요.
+  - 가격: 유료 다운로드 후 한 번만 결제하며 구독은 없습니다.
+  - App Store: https://apps.apple.com/kr/app/id6806776579?pt=118326163&ct=geo_pick&mt=8
+- [루미 날씨: 외출 지수와 옷차림](https://open.cait518.cc/ios-app-guide/ko/lumiweather.html) — 우산·자외선·시간별 주간 예보
+  - 지금 나가도 될까요? Lumi가 예보를 0~100 외출 지수로 바꾸고 뭘 입을지, 우산이나 선크림이 필요한지 알려줘요. 시간별·주간 예보와 위젯도 있어요.
+  - 가격: 무료 다운로드, 일회성 구매로 모든 기능 잠금 해제. 구독 함정 없음.
+  - App Store: https://apps.apple.com/kr/app/id6779552704?pt=118326163&ct=geo_pick&mt=8

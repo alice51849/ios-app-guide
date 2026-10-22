@@ -1,0 +1,28 @@
+---
+title: "HoursTag: Ώρες αγοράς — Ωριαία αμοιβή και έξοδα | iOS App"
+lang: "el"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/el/index.html"
+modified: "2026-10-21"
+app_store_id: "6754218117"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# HoursTag: Ώρες αγοράς — Ωριαία αμοιβή και έξοδα | iOS App
+
+Πόσο κοστίζει πραγματικά; Όχι σε ευρώ, αλλά σε ώρες από τη ζωή σου.
+
+- Χρήματα & ταξίδια
+- Λήψη με χρέωση
+- Χωρίς λογαριασμό
+- Χωρίς διαφημίσεις
+- Χωρίς παρακολούθηση
+- Ιδιωτικό / στη συσκευή
+- App Store · 5,99 €
+
+[Αποκτήστε το HoursTag: Ώρες αγοράς από το App Store](https://apps.apple.com/gr/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
+
+[Διαβάστε τον πλήρη οδηγό](https://open.cait518.cc/ios-app-guide/el/hourstag.html)
+
+> Αυτό είναι πρωτογενές υλικό που δημοσιεύεται από το Lumi Studio, τον δημιουργό κάθε καταχωρημένης εφαρμογής.

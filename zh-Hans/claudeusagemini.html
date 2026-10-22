@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>UsageNow：AI 用量追踪器 — Claude、Codex、Copilot、Gemini 额度 | iOS App</title>
+<meta name="description" content="任务做到一半，AI 额度突然用完？UsageNow 直接在主屏幕上告诉你每个 AI 套餐还剩多少用量，以及具体几点重置，并在额度用完之前提醒你。">
+<meta name="keywords" content="code, dev, 开发者, 程序员, usage, tracker, meter, quota, token, 配额, 限额, 剩余, 重置, 倒计时, 小组件, 监控, 统计, 每周, 编程, 人工智能, 大模型, 智能体, llm, 代码">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hans/claudeusagemini.html">
+<!-- smart-app-banner:start -->
+<meta name="apple-itunes-app" content="app-id=6818607603, affiliate-data=pt=118326163&amp;ct=geo_pick&amp;mt=8">
+<!-- smart-app-banner:end -->
+<!-- social-preview:start -->
+<meta property="og:title" content="UsageNow：AI 用量追踪器 — Claude、Codex、Copilot、Gemini 额度 | iOS App">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hans/claudeusagemini.html">
+<meta property="og:image" content="https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg">
+<meta property="og:image:secure_url" content="https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="UsageNow：AI 用量追踪器 — Claude、Codex、Copilot、Gemini 额度 | iOS App">
+<meta property="og:description" content="任务做到一半，AI 额度突然用完？UsageNow 直接在主屏幕上告诉你每个 AI 套餐还剩多少用量，以及具体几点重置，并在额度用完之前提醒你。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="iOS App Guide">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<script type="application/ld+json" data-iag="primary-image">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/claudeusagemini.html#webpage",
+  "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/claudeusagemini.html",
+  "name": "UsageNow：AI 用量追踪器 — Claude、Codex、Copilot、Gemini 额度 | iOS App",
+  "description": "任务做到一半，AI 额度突然用完？UsageNow 直接在主屏幕上告诉你每个 AI 套餐还剩多少用量，以及具体几点重置，并在额度用完之前提醒你。",
+  "inLanguage": "zh-Hans",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "@id": "https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg#primaryimage",
+    "contentUrl": "https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg",
+    "url": "https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg",
+    "width": 1200,
+    "height": 675,
+    "encodingFormat": "image/jpeg",
+    "caption": "UsageNow：AI 用量追踪器 — Claude、Codex、Copilot、Gemini 额度 | iOS App",
+    "representativeOfPage": true
+  },
+  "mainEntity": {
+    "@id": "https://apps.apple.com/app/id6818607603"
+  }
+}
+</script>
+<style>
+.iag-app-preview{margin:clamp(1rem,3vw,1.5rem) 0 clamp(1.5rem,4vw,2.25rem)}
+.iag-app-preview__link{display:block;position:relative;width:100%;max-width:1200px;margin:0 auto;overflow:hidden;border-radius:clamp(14px,2.2vw,24px);background:#0b1020;box-shadow:0 18px 50px rgba(15,23,42,.22);line-height:0}
+.iag-app-preview__link::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.28);border-radius:inherit;pointer-events:none}
+.iag-app-preview__link:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
+.iag-app-preview__image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+@media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
+</style>
+<meta name="twitter:card" content="app">
+<meta name="twitter:title" content="UsageNow：AI 用量追踪器 — Claude、Codex、Copilot、Gemini 额度 | iOS App">
+<meta name="twitter:description" content="任务做到一半，AI 额度突然用完？UsageNow 直接在主屏幕上告诉你每个 AI 套餐还剩多少用量，以及具体几点重置，并在额度用完之前提醒你。">
+<meta name="twitter:image" content="https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg">
+<meta name="twitter:image:alt" content="UsageNow：AI 用量追踪器 — Claude、Codex、Copilot、Gemini 额度 | iOS App">
+<meta name="twitter:app:name:iphone" content="UsageNow">
+<meta name="twitter:app:id:iphone" content="6818607603">
+<meta name="twitter:app:name:ipad" content="UsageNow">
+<meta name="twitter:app:id:ipad" content="6818607603">
+<link rel="alternate" type="application/json+oembed" href="https://open.cait518.cc/ios-app-guide/oembed/zh-Hans/claudeusagemini.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fzh-Hans%2Fclaudeusagemini.html&amp;format=json" title="UsageNow：AI 用量追踪器 — Claude、Codex、Copilot、Gemini 额度 | iOS App">
+<!-- social-preview:end -->
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/claudeusagemini.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/claudeusagemini.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/claudeusagemini.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/claudeusagemini.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/claudeusagemini.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/claudeusagemini.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/claudeusagemini.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/claudeusagemini.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/claudeusagemini.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/claudeusagemini.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/claudeusagemini.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/claudeusagemini.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/claudeusagemini.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/claudeusagemini.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/claudeusagemini.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/claudeusagemini.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/claudeusagemini.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/claudeusagemini.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/claudeusagemini.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/claudeusagemini.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/claudeusagemini.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/claudeusagemini.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/claudeusagemini.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/claudeusagemini.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/claudeusagemini.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/claudeusagemini.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/claudeusagemini.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/claudeusagemini.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/claudeusagemini.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/claudeusagemini.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/claudeusagemini.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/claudeusagemini.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/claudeusagemini.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/claudeusagemini.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/claudeusagemini.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/claudeusagemini.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/claudeusagemini.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/claudeusagemini.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/claudeusagemini.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/claudeusagemini.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/claudeusagemini.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/claudeusagemini.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/claudeusagemini.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/claudeusagemini.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"UsageNow：AI 用量追踪器","operatingSystem":"iOS","applicationCategory":"BusinessApplication","description":"任务做到一半，AI 额度突然用完？UsageNow 直接在主屏幕上告诉你每个 AI 套餐还剩多少用量，以及具体几点重置，并在额度用完之前提醒你。\n\n所有额度，一眼看清\nClaude：5 小时会话额度与每周额度，包括各模型单独的每周上限\nChatGPT Codex：5 小时窗口与每周窗口\nGitHub Copilot：高级请求、聊天和代码补全\nGemini：各模型的每日请求配额\n每次重置都有实时倒计时，并按你所在地区的格式显示具体重置时间\n\n额度见底之前，先提醒你\n自定义你的提醒：选择 5 小时额度、每周额度或全部额度，再输入你在意的百分比，比如 90 或 98，想设几个都行。\n每个额度在每个周期只提醒一次，锁定屏幕也能保持清静。开启重置提醒，额度一恢复就马上知道。\n\n小组件，更好用\n直接在小组件上翻看你的所有账户\n想看最新数据时，轻点小组件即可刷新\n主屏幕和锁定屏幕小组件全尺寸覆盖，还支持 Apple Watch 复杂功能\n\n所有账户，按你的顺序排列\n工作号和个人号、Pro 和 Max，并排查看。可按 5 小时重置时间、每周重置时间、用量从高到低或从低到高、名称或服务排序，也可以拖动账户自定义顺序。\n\n随时随地都能看\n支持 iPhone、iPad 和 Apple Watch。\n\n从设计之初就注重隐私\n你在各服务自己的官方登录页面登录。登录信息保存在设备的钥匙串中，UsageNow 只与这些服务本身通信。没有 UsageNow 服务器，无需注册账户，也没有任何追踪。\n\n支持你的语言\n完整翻译为 50 种语言，日期和时间按你所在地区的习惯格式显示。随时可以在设置中切换语言。\n\n先免费体验全部功能\n在 App 内开启 24 小时免费试用，即可使用包括小组件在内的全部功能。试用结束后，如需继续使用 UsageNow 及其小组件，只需一次性购买解锁 UsageNow Pro。无需订阅。\n\nUsageNow 是一款独立 App，与 Anthropic、OpenAI、GitHub、Microsoft 和 Google 均无关联。Claude、ChatGPT、Codex、GitHub Copilot 和 Gemini 是其各自所有者的商标。\n\n有问题或建议？欢迎联系：hourstag.app@gmail.com\n\n针对 iPhone Duo 优化。展开后横向使用时，内屏会切换为双栏布局，利用多出来的空间，而不是把手机界面简单拉大；合上后，App 会在外屏以单栏布局继续运行。","url":"https://apps.apple.com/app/id6818607603?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/app/id6818607603?pt=118326163&ct=geo_pick&mt=8","featureList":["code","dev","开发者","程序员","usage","tracker","meter","quota"],"keywords":"code, dev, 开发者, 程序员, usage, tracker, meter, quota, token, 配额, 限额, 剩余, 重置, 倒计时, 小组件, 监控, 统计, 每周, 编程, 人工智能, 大模型, 智能体, llm, 代码","@id":"https://apps.apple.com/app/id6818607603","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6818607603"},"downloadUrl":"https://apps.apple.com/app/id6818607603?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/app/id6818607603?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/zh-Hans/claudeusagemini.html#webpage"}}</script>
+<script type="application/ld+json" data-first-party-disclosure="publisher">{"@context":"https://schema.org","@type":"WebSite","@id":"https://open.cait518.cc/ios-app-guide/#website","url":"https://open.cait518.cc/ios-app-guide","publisher":{"@type":"Organization","@id":"https://open.cait518.cc/ios-app-guide/#organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide/about.html","description":"Developer of the featured apps and operator of this site."}}</script>
+<!-- app-store-qr-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
+<!-- app-store-qr-style:end -->
+<!-- app-decision-card-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-decision-card-v1.css">
+<!-- app-decision-card-style:end -->
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<main>
+  <h1>UsageNow：AI 用量追踪器</h1>
+  <p><strong>Claude、Codex、Copilot、Gemini 额度</strong></p>
+<!-- app-decision-card:start -->
+<aside class="iag-decision-card" data-app-id="6818607603" aria-label="UsageNow：AI 用量追踪器">
+  <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/claudeusagemini-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
+  <div class="iag-decision-card__body">
+    <strong class="iag-decision-card__title" title="UsageNow：AI 用量追踪器">UsageNow：AI 用量追踪器</strong>
+    <p class="iag-decision-card__promise" title="Claude、Codex、Copilot、Gemini 额度">Claude、Codex、Copilot、Gemini 额度</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="code">code</span><span class="iag-decision-card__fact" title="dev">dev</span><span class="iag-decision-card__fact" title="开发者">开发者</span><span class="iag-decision-card__fact" title="程序员">程序员</span></div>
+    <p class="iag-decision-card__terms" title="免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。">免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。</p>
+    <a class="iag-decision-card__cta" href="https://apps.apple.com/app/id6818607603?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="在 App Store 获取 UsageNow：AI 用量追踪器" title="在 App Store 获取 UsageNow：AI 用量追踪器">在 App Store 获取 UsageNow：AI 用量追踪器</a>
+  </div>
+</aside>
+<!-- app-decision-card:end -->
+<!-- app-store-qr:start -->
+<section class="app-store-qr-card" style="display:none" aria-label="在 App Store 获取 UsageNow：AI 用量追踪器">
+<a class="app-store-qr-card__link" href="https://apps.apple.com/app/id6818607603?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener">
+<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6818607603-23b4e66c2c0dfb60e716.svg" width="164" height="164" alt="" decoding="async">
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">在 App Store 获取 UsageNow：AI 用量追踪器</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/app/id6818607603" aria-hidden="true"></span><span class="app-store-qr-card__badge-wrap"><img class="app-store-qr-card__badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/zh-cn?size=250x83" width="120" height="40" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span></span>
+</a>
+</section>
+<!-- app-store-qr:end -->
+<!-- app-hook-clip:start -->
+<figure class="app-hook-clip" data-app-key="claudeusagemini" lang="en" style="margin:18px 0;max-width:300px">
+<video controls playsinline muted loop preload="none" poster="https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg" width="1080" height="1920" style="display:block;width:100%;aspect-ratio:9/16;border-radius:18px;background:#111;object-fit:contain" aria-label="AI limit hit mid-task again? | UsageNow: AI Usage Tracker"><source src="https://files.catbox.moe/7j8u68.mp4" type="video/mp4"></video>
+<figcaption style="margin-top:6px;font-size:14px;color:#6b6257">AI limit hit mid-task again?</figcaption>
+</figure>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"AI limit hit mid-task again? | UsageNow: AI Usage Tracker","description":"任务做到一半，AI 额度突然用完？UsageNow 直接在主屏幕上告诉你每个 AI 套餐还剩多少用量，以及具体几点重置，并在额度用完之前提醒你。","thumbnailUrl":["https://open.cait518.cc/ios-app-guide/social/img/claudeusagemini-share.jpg"],"uploadDate":"2026-10-18T00:00:00+00:00","contentUrl":"https://files.catbox.moe/7j8u68.mp4","duration":"PT13.5S","inLanguage":"en"}</script>
+<!-- app-hook-clip:end -->
+<h2>UsageNow：AI 用量追踪器 是什么?</h2>
+  <p>UsageNow：AI 用量追踪器 是一款 iOS App。 Claude、Codex、Copilot、Gemini 额度</p>
+  <p>任务做到一半，AI 额度突然用完？UsageNow 直接在主屏幕上告诉你每个 AI 套餐还剩多少用量，以及具体几点重置，并在额度用完之前提醒你。</p>
+  <p>所有额度，一眼看清</p>
+  <p>Claude：5 小时会话额度与每周额度，包括各模型单独的每周上限</p>
+  <p>ChatGPT Codex：5 小时窗口与每周窗口</p>
+  <p>GitHub Copilot：高级请求、聊天和代码补全</p>
+  <p>Gemini：各模型的每日请求配额</p>
+  <p>每次重置都有实时倒计时，并按你所在地区的格式显示具体重置时间</p>
+  <p>额度见底之前，先提醒你</p>
+  <p>自定义你的提醒：选择 5 小时额度、每周额度或全部额度，再输入你在意的百分比，比如 90 或 98，想设几个都行。</p>
+  <p>每个额度在每个周期只提醒一次，锁定屏幕也能保持清静。开启重置提醒，额度一恢复就马上知道。</p>
+  <p>小组件，更好用</p>
+  <p>直接在小组件上翻看你的所有账户</p>
+  <p>想看最新数据时，轻点小组件即可刷新</p>
+  <p>主屏幕和锁定屏幕小组件全尺寸覆盖，还支持 Apple Watch 复杂功能</p>
+  <p>所有账户，按你的顺序排列</p>
+  <p>工作号和个人号、Pro 和 Max，并排查看。可按 5 小时重置时间、每周重置时间、用量从高到低或从低到高、名称或服务排序，也可以拖动账户自定义顺序。</p>
+  <p>随时随地都能看</p>
+  <p>支持 iPhone、iPad 和 Apple Watch。</p>
+  <p>从设计之初就注重隐私</p>
+  <p>你在各服务自己的官方登录页面登录。登录信息保存在设备的钥匙串中，UsageNow 只与这些服务本身通信。没有 UsageNow 服务器，无需注册账户，也没有任何追踪。</p>
+  <p>支持你的语言</p>
+  <p>完整翻译为 50 种语言，日期和时间按你所在地区的习惯格式显示。随时可以在设置中切换语言。</p>
+  <p>先免费体验全部功能</p>
+  <p>在 App 内开启 24 小时免费试用，即可使用包括小组件在内的全部功能。试用结束后，如需继续使用 UsageNow 及其小组件，只需一次性购买解锁 UsageNow Pro。无需订阅。</p>
+  <p>UsageNow 是一款独立 App，与 Anthropic、OpenAI、GitHub、Microsoft 和 Google 均无关联。Claude、ChatGPT、Codex、GitHub Copilot 和 Gemini 是其各自所有者的商标。</p>
+  <p><!--email_off-->有问题或建议？欢迎联系：hourstag.app@gmail.com<!--/email_off--></p>
+  <p>针对 iPhone Duo 优化。展开后横向使用时，内屏会切换为双栏布局，利用多出来的空间，而不是把手机界面简单拉大；合上后，App 会在外屏以单栏布局继续运行。</p>
+
+  <h2>主要功能</h2>
+  <ul>
+    <li>code</li>
+    <li>dev</li>
+    <li>开发者</li>
+    <li>程序员</li>
+    <li>usage</li>
+    <li>tracker</li>
+    <li>meter</li>
+    <li>quota</li>
+  </ul>
+
+  <h2>价格</h2>
+  <p>免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。</p>
+
+  <h2>下载</h2>
+  <p><a href="https://apps.apple.com/app/id6818607603?pt=118326163&amp;ct=geo_pick&amp;mt=8">在 App Store 获取 UsageNow：AI 用量追踪器</a></p>
+<p class="publisher-disclosure" data-publisher-disclosure="true"><small>这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。</small></p>
+</main>
+<!-- webmcp-install-tool:start -->
+<script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6818607603","app_name":"UsageNow","page_language":"zh-Hans","page_url":"https://open.cait518.cc/ios-app-guide/zh-Hans/claudeusagemini.html","app_store_url":"https://apps.apple.com/app/id6818607603?pt=118326163&ct=geo_pick&mt=8","localized_description":"任务做到一半，AI 额度突然用完？UsageNow 直接在主屏幕上告诉你每个 AI 套餐还剩多少用量，以及具体几点重置，并在额度用完之前提醒你。"}</script>
+<script src="https://open.cait518.cc/ios-app-guide/assets/webmcp-install-tool-v2.js" data-webmcp-install="iag-webmcp-install-data" defer></script>
+<!-- webmcp-install-tool:end -->
+<!-- mobile-store-cta:start -->
+<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
+<a class="mobile-store-cta__link" href="https://apps.apple.com/app/id6818607603?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" tabindex="-1" aria-label="在 App Store 获取 UsageNow：AI 用量追踪器" title="在 App Store 获取 UsageNow：AI 用量追踪器"><span class="mobile-store-cta__label">App Store</span></a>
+</div>
+<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
+<!-- mobile-store-cta:end -->
+<!-- app-store-share:start -->
+<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6818607603" data-app-store-url="https://apps.apple.com/app/id6818607603?pt=118326163&amp;ct=geo_pick&amp;mt=8" defer></script>
+<!-- app-store-share:end -->
+</body>
+</html>

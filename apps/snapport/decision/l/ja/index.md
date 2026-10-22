@@ -1,0 +1,29 @@
+---
+title: "赤ちゃんや幼児の自宅で使える最高のパスポート写真アプリ"
+lang: "ja"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/snapport/decision/l/ja/index.html"
+modified: "2026-10-21"
+app_store_id: "6780575828"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# 赤ちゃんや幼児の自宅で使える最高のパスポート写真アプリ
+
+赤ちゃんのパスポート写真は他の人が写ってはいけず背景は無地でなければなりませんが、乳児の場合は目が完全に開いていなくても構いません。
+
+- 写真・ユーティリティ
+- 有料ダウンロード
+- アカウント不要
+- 広告なし
+- 追跡なし
+- プライベート／端末内
+- App Store · ¥1,000
+- ★ 1.0/5 · 1
+
+[App StoreでSnapportを入手 →](https://apps.apple.com/jp/app/id6780575828?pt=118326163&ct=geo_pick&mt=8)
+
+[完全ガイドを読む](https://open.cait518.cc/ios-app-guide/ja/answers/best-passport-photo-app-for-babies-and-toddlers-at-home.html)
+
+> アプリ開発者であるLumi Studioが自ら作成したガイドです。アプリ名は各所有者の商標であり、識別目的でのみ使用されています。文書、健康、学校、生産性に関する決定を下す際は、必要に応じて関連機関の正式な要件をご確認ください。

@@ -1,0 +1,26 @@
+---
+title: "WiFi Aid: Hálózati hibák — Router, mesh, DNS diagnosztika | iOS App"
+lang: "hu"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/wifiaid/decision/l/hu/index.html"
+modified: "2026-10-21"
+app_store_id: "6790467886"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# WiFi Aid: Hálózati hibák — Router, mesh, DNS diagnosztika | iOS App
+
+Független útvonal-, DNS-, TCP-, TLS-, időzítés- és stabilitástesztekkel derítse ki a legvalószínűbb okot. Egyszeri előrefizetés, előfizetés, reklám és követés nélkül. • Teszt Indítása — Wi-Fi, DNS és internet egyetlen érintéssel • Deep Check — Több bizonyíték és stabilitás • Weboldal Teszt — Tudd meg, hogy a weboldal vagy a net rossz • Bizonyíték — DNS · TCP · TLS · TTFB · HTTP · Direct IP · IPv4 · IPv6 • A kapcsolat instabil — Ingadozás • Teszt Előzmények — Az adatokat csak az eszköz tárolja • Apple Watch — Teszt Indítása • Widget · iPad — Kapcsolódva · Teszt Indítása Nincs fiók, hirdetés vagy követés. Az adatokat csak az eszköz tárolja. Egyetlen előzetes vásárlás az App Store-ban. Nincs előfizetés. iPhone Duo-ra optimalizálva.
+
+- Fotó & segédprogram
+- Fizetős letöltés
+- Nincs fiók
+- Apple Watch
+- App Store · HUF2,490.00
+
+[Töltse le a(z) WiFi Aid: Hálózati hibák appot az App Store-ból](https://apps.apple.com/hu/app/id6790467886?pt=118326163&ct=geo_pick&mt=8)
+
+[Olvasd el a teljes útmutatót](https://open.cait518.cc/ios-app-guide/hu/wifiaid.html)
+
+> Ez első kézből származó anyag, amelyet a Lumi Studio tett közzé, az összes felsorolt alkalmazás fejlesztője.

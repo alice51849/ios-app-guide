@@ -1,0 +1,194 @@
+:root {
+  color-scheme: light dark;
+  --ink: #241b36;
+  --muted: #6f667d;
+  --card: rgba(255, 255, 255, 0.84);
+  --line: rgba(92, 66, 126, 0.13);
+  --rose: #dd5f8d;
+  --orchid: #8e5bd2;
+  --blue: #4d78d8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 14% 0%, rgba(235, 106, 155, 0.2), transparent 34%),
+    radial-gradient(circle at 92% 8%, rgba(87, 117, 225, 0.2), transparent 35%),
+    linear-gradient(145deg, #fff 0%, #f7f2fc 52%, #eef3ff 100%);
+}
+
+main {
+  width: min(1040px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 44px 0 72px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 850;
+}
+
+.mark {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 23px;
+  background: linear-gradient(135deg, var(--rose), var(--orchid) 52%, var(--blue));
+  box-shadow: 0 14px 35px rgba(115, 71, 177, 0.3);
+}
+
+select {
+  max-width: 185px;
+  padding: 10px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  background: var(--card);
+  font: inherit;
+  font-weight: 700;
+}
+
+.hero { padding: 72px 0 38px; }
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--orchid);
+  font-size: 0.8rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(3rem, 9vw, 6.7rem);
+  line-height: 0.95;
+  letter-spacing: -0.065em;
+}
+
+.lead {
+  max-width: 780px;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: clamp(1.08rem, 2.4vw, 1.38rem);
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  min-height: 178px;
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: var(--card);
+  box-shadow: 0 18px 54px rgba(62, 42, 92, 0.08);
+  backdrop-filter: blur(20px);
+}
+
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 1.22rem;
+  line-height: 1.2;
+}
+
+.card p, .technical p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.technical {
+  margin-top: 18px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.63);
+}
+
+.technical h2 { margin: 0 0 12px; }
+.technical h3 { margin: 26px 0 8px; }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin-top: 30px;
+}
+
+nav a {
+  padding: 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #6843ae;
+  background: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+nav a.primary {
+  border-color: transparent;
+  color: #fff;
+  background: linear-gradient(135deg, var(--rose), var(--orchid) 55%, var(--blue));
+}
+
+footer {
+  margin-top: 42px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+footer a { color: #6843ae; font-weight: 800; }
+
+@media (max-width: 700px) {
+  main { width: min(100% - 28px, 1040px); padding-top: 24px; }
+  .topbar { align-items: flex-start; }
+  .brand span:last-child { display: none; }
+  .hero { padding-top: 54px; }
+  .grid { grid-template-columns: 1fr; }
+  .card { min-height: 0; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f7f2ff;
+    --muted: #c5bdd3;
+    --card: rgba(31, 24, 49, 0.82);
+    --line: rgba(229, 214, 255, 0.12);
+  }
+
+  body {
+    background:
+      radial-gradient(circle at 12% 0%, rgba(216, 77, 132, 0.2), transparent 34%),
+      radial-gradient(circle at 92% 8%, rgba(74, 105, 211, 0.2), transparent 35%),
+      linear-gradient(145deg, #0f0b19 0%, #181127 54%, #11182c 100%);
+  }
+
+  .technical { background: rgba(25, 19, 40, 0.67); }
+  nav a { color: #d3b7ff; background: rgba(43, 33, 65, 0.7); }
+  footer a { color: #d3b7ff; }
+}

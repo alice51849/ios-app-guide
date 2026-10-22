@@ -1,0 +1,29 @@
+---
+title: "cea mai bună aplicație de zgomot alb pentru adormit fără abonament"
+lang: "ro"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/sereno/decision/l/ro/index.html"
+modified: "2026-10-21"
+app_store_id: "6788236641"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# cea mai bună aplicație de zgomot alb pentru adormit fără abonament
+
+Pentru somn, un abonament care te deranjează în fiecare lună este opusul relaxării. Dacă te regăsești, aruncă o privire la Sereno.
+
+- Somn & concentrare
+- Început gratuit
+- Offline
+- Fără cont
+- Fără reclame
+- Fără urmărire
+- Privat / pe dispozitiv
+- App Store · Gratuit
+
+[Descarcă Sereno din App Store →](https://apps.apple.com/ro/app/id6788236641?pt=118326163&ct=geo_pick&mt=8)
+
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/answers/best-white-noise-app-for-falling-asleep-no-subscription.html)
+
+> Ghid scris de Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci ale deținătorilor lor și sunt folosite doar pentru identificare. Pentru deciziile legate de documente, sănătate, școală și productivitate, verifică cerințele oficiale acolo unde contează.

@@ -1,0 +1,100 @@
+{
+  "contract_digest": "1d6962991d876f4b7bb837579f77fe73f9fc4c4408f4a48a4ed749fa43ef69c2",
+  "copy_mode": "byte_for_byte",
+  "files": [
+    {
+      "engine_relative_path": "high_intent_decision_routes.py",
+      "sha256": "e57189300d3fe994a2ffdc225d6ed99823a76119bf793ab90dd484db8009143d",
+      "source_path": "geo/high_intent_decision_routes.py",
+      "target_path": "_engine/geo/high_intent_decision_routes.py"
+    },
+    {
+      "engine_relative_path": "data/high_intent_decision_routes_v2.json",
+      "sha256": "e92c82b473d98e97ed9dc3160218e3f4a9c563fb4faea65b2be0ae047a1b0ffc",
+      "source_path": "geo/data/high_intent_decision_routes_v2.json",
+      "target_path": "_engine/geo/data/high_intent_decision_routes_v2.json"
+    },
+    {
+      "engine_relative_path": "conversion_route_contract.py",
+      "sha256": "5b512d3d0785c66df4ff9d22edf3567d7faf93bdce9eb38eb8b09445398de5ab",
+      "source_path": "geo/conversion_route_contract.py",
+      "target_path": "_engine/geo/conversion_route_contract.py"
+    },
+    {
+      "engine_relative_path": "paid_upfront_surfaces.py",
+      "sha256": "859673d3f8ed41f3bd3e6bb399f29e1dd3d04d415b8879fff787187c6e1e266d",
+      "source_path": "geo/paid_upfront_surfaces.py",
+      "target_path": "_engine/geo/paid_upfront_surfaces.py"
+    },
+    {
+      "engine_relative_path": "data/paid_upfront_surface_repairs.json",
+      "sha256": "b7f48683121484d0327ae24b9d70ced2c48920debde420218de05dfa20e6fa1c",
+      "source_path": "geo/data/paid_upfront_surface_repairs.json",
+      "target_path": "_engine/geo/data/paid_upfront_surface_repairs.json"
+    },
+    {
+      "engine_relative_path": "data/high_intent_conversion_contracts_v1.json",
+      "sha256": "1e0fb317b4c747a48a127defb0e3d10b229b2da1ff8698912b02603fe1037771",
+      "source_path": "geo/data/high_intent_conversion_contracts_v1.json",
+      "target_path": "_engine/geo/data/high_intent_conversion_contracts_v1.json"
+    },
+    {
+      "engine_relative_path": "gen_store_attribution.py",
+      "sha256": "97813cddb77899bee4fdbf87b981f642831e3cc8a29c6b30e21731f992e12fd2",
+      "source_path": "geo/gen_store_attribution.py",
+      "target_path": "_engine/geo/gen_store_attribution.py"
+    },
+    {
+      "engine_relative_path": "market_availability.py",
+      "sha256": "e165cb3db1ef397ce5e594e23760e63ff54538742e9a9529862ed03008b12182",
+      "source_path": "geo/market_availability.py",
+      "target_path": "_engine/geo/market_availability.py"
+    },
+    {
+      "engine_relative_path": "market_surface_policy.py",
+      "sha256": "854cde142438489c30b1bcd01718241c69e0f81d098f638b548b5c12699b7331",
+      "source_path": "geo/market_surface_policy.py",
+      "target_path": "_engine/geo/market_surface_policy.py"
+    },
+    {
+      "engine_relative_path": "gen_market_availability.py",
+      "sha256": "d8237392da819a621592bf0c113706b1000aba59f1485fe3f9e670947431619e",
+      "source_path": "geo/gen_market_availability.py",
+      "target_path": "_engine/geo/gen_market_availability.py"
+    },
+    {
+      "engine_relative_path": "official_locales.py",
+      "sha256": "576457e2c5b19b9b6e78f644397b27e177f3b195ce7ecc3ac83ef3a39b8d498a",
+      "source_path": "geo/official_locales.py",
+      "target_path": "_engine/geo/official_locales.py"
+    },
+    {
+      "engine_relative_path": "publish.py",
+      "sha256": "5b384c292175be7fc753d7edfbce6fbebb88201ec6c85fa9caf65da57a23a0a9",
+      "source_path": "geo/publish.py",
+      "target_path": "_engine/geo/publish.py"
+    },
+    {
+      "engine_relative_path": "sync_standard_site.py",
+      "sha256": "2187cfcf3664f55024c83fee0484cae6c207f5a0da4c3a1887bcd24b61bc5976",
+      "source_path": "geo/sync_standard_site.py",
+      "target_path": "_engine/geo/sync_standard_site.py"
+    },
+    {
+      "engine_relative_path": "site_config.py",
+      "sha256": "9321b633dfb6b0ec5005a114519a080794392312413b045afc0017be7bc8ba67",
+      "source_path": "geo/site_config.py",
+      "target_path": "_engine/geo/site_config.py"
+    },
+    {
+      "engine_relative_path": "websub_config.py",
+      "sha256": "834db3a8971dd648bebb1eb1b7d0c732468d485ee439b7f6874962e7bdec6740",
+      "source_path": "geo/websub_config.py",
+      "target_path": "_engine/geo/websub_config.py"
+    }
+  ],
+  "owner": "high_intent_decision_routes",
+  "schema_version": 1,
+  "source_repository": "alice51849/00_GrowthEngine",
+  "target_repository": "alice51849/ios-app-guide"
+}

@@ -1,0 +1,28 @@
+---
+title: "best app to track where my money goes and save more"
+lang: "pt-PT"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/pt-PT/index.html"
+modified: "2026-10-21"
+app_store_id: "6754218117"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# best app to track where my money goes and save more
+
+If saving feels abstract, tracking goals in hours-worked instead of dollars makes progress feel earned — you're not saving $500, you're saving 20 hours of your life toward something. If that is your situation, HoursTag is worth a look.
+
+- Dinheiro e viagens
+- Descarregamento pago
+- Sem conta
+- Sem anúncios
+- Sem rastreamento
+- Privado / no dispositivo
+- App Store · 5,99 €
+
+[Obter o HoursTag na App Store →](https://apps.apple.com/pt/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
+
+[Leia o guia completo](https://open.cait518.cc/ios-app-guide/pt-PT/answers/best-app-to-track-where-my-money-goes-and-save-more.html)
+
+> Guia da autoria do editor Lumi Studio, o programador da app. Os nomes das apps são marcas dos seus proprietários e são usados apenas para identificação. Para decisões sobre documentos, saúde, escola e produtividade, verifique os requisitos oficiais quando relevante.

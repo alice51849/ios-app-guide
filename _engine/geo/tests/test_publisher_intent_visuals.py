@@ -1,0 +1,543 @@
+#!/usr/bin/env python3
+"""Regression tests for localized publisher buyer-intent visuals."""
+
+from __future__ import annotations
+
+from datetime import datetime, timezone
+import hashlib
+import html
+import json
+from market_contract_assertions import assert_blocked_page, assert_blocked_record
+import os
+from pathlib import Path
+import re
+import sys
+import tempfile
+import unittest
+from urllib.parse import urlparse
+import xml.etree.ElementTree as ET
+
+
+GEO = Path(__file__).resolve().parents[1]
+if str(GEO) not in sys.path:
+    sys.path.insert(0, str(GEO))
+
+from app_store_storefronts import (
+    campaign_app_store_url,
+    validated_app_store_url,
+)
+from official_locales import OFFICIAL_LOCALES
+import first_party_disclosure
+import gen_feed
+import gen_sitemap_lastmod
+import publisher_intent_catalog as catalog
+import publisher_intent_visuals as visuals
+
+
+class PublisherIntentVisualUnitTests(unittest.TestCase):
+    def test_gallery_writer_preserves_standard_site_discovery(self) -> None:
+        publication = (
+            '<link rel="site.standard.publication" '
+            'href="at://did:plc:publisher/site.standard.publication/record">'
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "visuals" / "index.html"
+            path.parent.mkdir()
+            path.write_text(
+                f"<html><head>{publication}</head><body>Old</body></html>",
+                encoding="utf-8",
+            )
+            self.assertTrue(
+                visuals.write_gallery_if_changed(
+                    path,
+                    "<html><head></head><body>New</body></html>",
+                )
+            )
+            rendered = path.read_text(encoding="utf-8")
+            self.assertIn(publication, rendered)
+            self.assertIn("<body>New</body>", rendered)
+            self.assertFalse(gen_feed.ensure_feed_discovery(path))
+            identity = visuals._gallery_manifest_record("en", rendered)
+            self.assertEqual(visuals.gallery_url("en"), identity["gallery_url"])
+            self.assertEqual(
+                hashlib.sha256(rendered.encode("utf-8")).hexdigest(),
+                identity["sha256"],
+            )
+
+    def test_gallery_digest_survives_the_site_wide_disclosure_pass(self) -> None:
+        # geo-daily #1252: first_party_disclosure ran after this generator
+        # and rewrote visuals/index.html, so the manifest digest no longer
+        # matched the published gallery. The writer now emits the final page.
+        page = (
+            '<!doctype html>\n<html lang="ja"><head><title>Visuals</title>'
+            '</head><body>\n<main><h1>Visuals</h1><a href="https://apps.apple.com'
+            '/jp/app/id6798813048?pt=118326163&amp;ct=iag_visual_ja&amp;mt=8">'
+            'App Store</a></main></body></html>\n'
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / "ja" / "visuals" / "index.html"
+            path.parent.mkdir(parents=True)
+            self.assertTrue(visuals.write_gallery_if_changed(path, page))
+            written = path.read_text(encoding="utf-8")
+            self.assertIn(first_party_disclosure.MARKER, written)
+            self.assertIn(first_party_disclosure.banner_text("ja"), written)
+            recorded = visuals._gallery_manifest_record("ja", written)["sha256"]
+            stats = first_party_disclosure.run(root)
+            self.assertEqual(1, stats["promotional"])
+            self.assertEqual(0, stats["changed"])
+            self.assertEqual(
+                recorded, hashlib.sha256(path.read_bytes()).hexdigest()
+            )
+            self.assertFalse(visuals.write_gallery_if_changed(path, page))
+
+    def test_root_gallery_digest_survives_feed_and_disclosure_passes(self) -> None:
+        # geo-daily #1253: the disclosure publisher block landed after the
+        # feed links, so gen_feed (which owns every top-level page, the root
+        # gallery included) moved them and the root digest drifted.
+        page = (
+            '<!doctype html>\n<html lang="en"><head><title>Visuals</title>'
+            '</head><body>\n<main><h1>Visuals</h1><a href="https://apps.apple.com'
+            '/us/app/id6798813048?pt=118326163&amp;ct=iag_visual_en_us&amp;mt=8">'
+            'App Store</a></main></body></html>\n'
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / "visuals" / "index.html"
+            path.parent.mkdir(parents=True)
+            self.assertTrue(visuals.write_gallery_if_changed(path, page))
+            recorded = visuals._gallery_manifest_record(
+                "en", path.read_text(encoding="utf-8")
+            )["sha256"]
+            self.assertEqual(0, gen_feed.ensure_site_feed_discovery(root))
+            self.assertEqual(0, first_party_disclosure.run(root)["changed"])
+            self.assertEqual(
+                recorded, hashlib.sha256(path.read_bytes()).hexdigest()
+            )
+
+    def test_gallery_edited_after_build_is_redated(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / "visuals" / "index.html"
+            path.parent.mkdir()
+            built = "<html><head></head><body>Built</body></html>"
+            path.write_text(built, encoding="utf-8")
+            manifest = root / "manifest.json"
+            manifest.write_text(
+                json.dumps(
+                    {
+                        "galleries": [
+                            visuals._gallery_manifest_record(
+                                "en", built, modified="2026-10-14"
+                            )
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            recorded = visuals._recorded_gallery_digests(manifest)
+            self.assertEqual(
+                {"en": hashlib.sha256(built.encode("utf-8")).hexdigest()},
+                recorded,
+            )
+            self.assertFalse(
+                visuals._gallery_edited_since_build(path, recorded["en"])
+            )
+            path.write_text(
+                "<html><head></head><body>Renamed</body></html>",
+                encoding="utf-8",
+            )
+            self.assertTrue(
+                visuals._gallery_edited_since_build(path, recorded["en"])
+            )
+            self.assertFalse(visuals._gallery_edited_since_build(path, None))
+            self.assertEqual(
+                {}, visuals._recorded_gallery_digests(root / "missing.json")
+            )
+            self.assertEqual(
+                "2026-10-15",
+                visuals._gallery_modified(
+                    path, "en", [], {}, "2026-10-15", visuals.SITE, edited=True
+                ),
+            )
+
+    def test_campaign_tokens_are_unique_and_app_store_safe(self) -> None:
+        tokens = [
+            visuals.visual_campaign_token(locale)
+            for locale in OFFICIAL_LOCALES
+        ]
+        self.assertEqual(len(tokens), len(set(tokens)))
+        for token in tokens:
+            self.assertLessEqual(len(token), 30)
+            self.assertRegex(token, r"^[a-z0-9_]+$")
+
+    def test_svg_is_single_line_rtl_safe_and_truthful(self) -> None:
+        record = {
+            "locale": "ar-SA",
+            "app_key": "sample",
+            "app_name": "Sample App",
+            "app_store_id": "1234567890",
+            "publisher_query": "تطبيق خاص لإنجاز مهمة يومية",
+            "decision_context": "اختره عندما تريد مسارًا مباشرًا وواضحًا.",
+            "purchase_model": "paid_upfront",
+            "app_store_url": (
+                "https://apps.apple.com/sa/app/id1234567890"
+                "?ct=iag_data_ar_sa"
+            ),
+        }
+        svg = visuals.render_svg(record, "تنزيل مدفوع")
+        root = ET.fromstring(svg)
+        namespace = "{http://www.w3.org/2000/svg}"
+        self.assertEqual(f"{namespace}svg", root.tag)
+        self.assertEqual("rtl", root.attrib["direction"])
+        self.assertEqual("ar-SA", root.attrib["{http://www.w3.org/XML/1998/namespace}lang"])
+        self.assertEqual(
+            record["publisher_query"],
+            root.findtext(f"{namespace}title"),
+        )
+        self.assertIn(
+            record["decision_context"],
+            root.findtext(f"{namespace}desc"),
+        )
+        self.assertNotIn("<script", svg)
+        self.assertIn(
+            f"{visuals.SITE}/stories/img/sample-icon.jpg",
+            svg,
+        )
+        query = next(
+            element
+            for element in root.findall(f"{namespace}text")
+            if element.attrib.get("class") == "query"
+        )
+        app_name = next(
+            element
+            for element in root.findall(f"{namespace}text")
+            if element.attrib.get("class") == "app-name"
+        )
+        self.assertEqual("start", query.attrib["text-anchor"])
+        self.assertEqual("1100", query.attrib["x"])
+        self.assertEqual("end", app_name.attrib["text-anchor"])
+        self.assertEqual("ltr", app_name.attrib["direction"])
+        store = visuals.visual_store_url(record)
+        # The site stamps Apple campaign attribution when a provider token is
+        # configured, so pin the storefront link itself and let the shared
+        # validator reject anything that is not a complete pt+ct+mt triple.
+        self.assertEqual(
+            campaign_app_store_url(
+                "https://apps.apple.com/sa/app/id1234567890",
+                visuals.visual_campaign_token("ar-SA"),
+            ),
+            store,
+        )
+        self.assertEqual(store, validated_app_store_url(store))
+
+    def test_gallery_hreflang_covers_root_and_official_locales(self) -> None:
+        alternates = visuals._alternates()
+        self.assertEqual(
+            len(OFFICIAL_LOCALES) + 2,
+            alternates.count('rel="alternate" hreflang='),
+        )
+        self.assertIn('hreflang="en"', alternates)
+        self.assertIn('hreflang="x-default"', alternates)
+        for locale in OFFICIAL_LOCALES:
+            self.assertIn(f'hreflang="{locale}"', alternates)
+
+    def test_gallery_schema_omits_blocked_download_and_binds_evidence(self) -> None:
+        app_id = "6778748533"
+        record = {
+            "locale": "zh-Hans",
+            "app_name": "LumiLetters",
+            "app_store_id": app_id,
+            "app_store_url": None,
+            "canonical_guide_url": "https://example.com/zh-Hans/lumiletters.html",
+            **visuals.market.record_fields("zh-Hans", app_id),
+        }
+
+        application = visuals._application_schema(
+            record,
+            "购买方式",
+            "一次性购买",
+        )
+
+        self.assertEqual(f"urn:apple:app:id{app_id}", application["@id"])
+        self.assertNotIn("downloadUrl", application)
+        self.assertEqual(
+            visuals.market.record_fields("zh-Hans", app_id),
+            {"market_availability": application["market_availability"]},
+        )
+
+    def test_near_capacity_text_uses_horizontal_fit_transform(self) -> None:
+        value = "ನರ್ಸುಗಳಿಗೆ ಕ್ಲೌಡ್ ಇಲ್ಲದ ಉತ್ತಮ ಆಫ್‌ಲೈನ್ ಡಾಕ್ಯುಮೆಂಟ್ ಸ್ಕ್ಯಾನರ್ ಆಪ್"
+        size = visuals._fitted_size(
+            value,
+            maximum=54,
+            minimum=24,
+            width=1000,
+        )
+        node = visuals._text_node(
+            value,
+            x=100,
+            y=392,
+            size=size,
+            width=1000,
+            anchor="start",
+            css_class="query",
+        )
+        self.assertIn('transform="translate(100 0) scale(', node)
+        self.assertNotIn("textLength", node)
+
+    def test_icon_gate_rejects_missing_or_empty_assets(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            pages = Path(directory)
+            icon_dir = pages / "stories" / "img"
+            icon_dir.mkdir(parents=True)
+            (icon_dir / "empty-icon.jpg").touch()
+            with self.assertRaisesRegex(
+                ValueError,
+                "empty-icon.jpg.*missing-icon.jpg",
+            ):
+                visuals.validate_icons(pages, ("missing", "empty"))
+            (icon_dir / "empty-icon.jpg").write_bytes(b"jpeg")
+            (icon_dir / "missing-icon.jpg").write_bytes(b"jpeg")
+            visuals.validate_icons(pages, ("missing", "empty"))
+
+
+class PublisherIntentVisualOutputTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        candidates = []
+        configured = os.environ.get("GEO_PAGES")
+        if configured:
+            candidates.append(Path(configured))
+        candidates.extend((GEO / "pages", GEO.parents[1]))
+        cls.pages = next(
+            (
+                path
+                for path in candidates
+                if (path / "data" / visuals.MANIFEST_NAME).is_file()
+            ),
+            None,
+        )
+        if cls.pages is None:
+            raise unittest.SkipTest("Generated visual manifest is not present")
+        cls.manifest = json.loads(
+            (
+                cls.pages / "data" / visuals.MANIFEST_NAME
+            ).read_text(encoding="utf-8")
+        )
+        cls.records = cls.manifest["records"]
+
+    def _local_path(self, url: str) -> Path:
+        parsed = urlparse(url)
+        self.assertEqual("https", parsed.scheme)
+        self.assertEqual("open.cait518.cc", parsed.netloc)
+        prefix = "/ios-app-guide/"
+        self.assertTrue(parsed.path.startswith(prefix), parsed.path)
+        return self.pages / parsed.path.removeprefix(prefix)
+
+    def test_manifest_covers_every_app_and_locale(self) -> None:
+        self.assertEqual(catalog.EXPECTED_APP_COUNT, self.manifest["app_count"])
+        self.assertEqual(50, self.manifest["locale_count"])
+        self.assertEqual(visuals.EXPECTED_IMAGE_COUNT, self.manifest["image_count"])
+        self.assertEqual(51, self.manifest["gallery_count"])
+        self.assertTrue(self.manifest["publisher_authored"])
+        self.assertFalse(self.manifest["measured_search_volume"])
+        self.assertFalse(self.manifest["is_ranking"])
+        self.assertEqual(
+            {
+                "default": "clean_direct",
+                "campaign_scope": "per_locale_visual",
+                "campaign_requires": ["pt", "ct", "mt=8"],
+            },
+            self.manifest["app_store_link_policy"],
+        )
+        self.assertRegex(self.manifest["content_digest"], r"^[0-9a-f]{64}$")
+        self.assertRegex(self.manifest["generation_digest"], r"^[0-9a-f]{64}$")
+
+        by_locale: dict[str, list[dict[str, object]]] = {}
+        image_urls = set()
+        app_pairs = set()
+        for record in self.records:
+            locale = str(record["locale"])
+            key = str(record["app_key"])
+            by_locale.setdefault(locale, []).append(record)
+            app_pairs.add((locale, key))
+            image_url = str(record["image_url"])
+            image_urls.add(image_url)
+            image_path = self._local_path(image_url)
+            self.assertTrue(image_path.is_file(), image_path)
+            content = image_path.read_text(encoding="utf-8")
+            self.assertEqual(
+                record["sha256"],
+                hashlib.sha256(content.encode("utf-8")).hexdigest(),
+            )
+            root = ET.fromstring(content)
+            namespace = "{http://www.w3.org/2000/svg}"
+            self.assertEqual(f"{namespace}svg", root.tag)
+            self.assertEqual(locale, root.attrib["{http://www.w3.org/XML/1998/namespace}lang"])
+            expected_direction = (
+                "rtl" if locale in catalog.RTL_LOCALES else "ltr"
+            )
+            self.assertEqual(expected_direction, root.attrib["direction"])
+            self.assertTrue(root.findtext(f"{namespace}title"))
+            self.assertTrue(root.findtext(f"{namespace}desc"))
+            self.assertNotIn("<script", content)
+            if visuals.market.is_unavailable(locale, str(record["app_store_id"])):
+                assert_blocked_record(self, record, ("app_store_url",))
+                self.assertNotIn("apps.apple.com", content)
+                self.assertIn("বাংলাদেশে অনুপলব্ধ" if locale == "bn-BD" else "中国大陆下载状态未确认", content)
+            else:
+                parsed_store = urlparse(str(record["app_store_url"]))
+                self.assertEqual("apps.apple.com", parsed_store.netloc)
+                self.assertIn(f"id{record['app_store_id']}", parsed_store.path)
+                self.assertEqual(str(record["app_store_url"]), validated_app_store_url(str(record["app_store_url"])))
+            self.assertEqual(
+                visuals.gallery_url(locale),
+                record["gallery_url"],
+            )
+
+        self.assertEqual(set(OFFICIAL_LOCALES), set(by_locale))
+        self.assertEqual(visuals.EXPECTED_IMAGE_COUNT, len(app_pairs))
+        self.assertEqual(visuals.EXPECTED_IMAGE_COUNT, len(image_urls))
+        for localized in by_locale.values():
+            self.assertEqual(catalog.EXPECTED_APP_COUNT, len(localized))
+
+    def test_galleries_are_complete_localized_and_direct(self) -> None:
+        page_locales = ("en", *OFFICIAL_LOCALES)
+        self.assertEqual(51, len(page_locales))
+        for locale in page_locales:
+            path = self.pages / visuals.gallery_relative_path(locale)
+            source = path.read_text(encoding="utf-8")
+            self.assertEqual(
+                catalog.EXPECTED_APP_COUNT,
+                source.count('<article class="visual-card">'),
+            )
+            self.assertEqual(
+                catalog.EXPECTED_APP_COUNT,
+                source.count("<img "),
+            )
+            self.assertEqual(
+                len(OFFICIAL_LOCALES) + 2,
+                source.count('<link rel="alternate" hreflang='),
+            )
+            self.assertIn("white-space:nowrap", source)
+            store_urls = re.findall(
+                r'href="(https://apps\.apple\.com/'
+                r'(?:[a-z]{2}/)?app/id[0-9]+(?:\?[^"]*)?)"',
+                source,
+            )
+            if locale == "bn-BD":
+                assert_blocked_page(self, source)
+                self.assertEqual(len(store_urls), 0)
+            else:
+                unavailable = visuals.market.UNAVAILABLE_APP_MARKETS.get(locale, ())
+                self.assertEqual((catalog.EXPECTED_APP_COUNT - len(unavailable)) * 2, len(store_urls))
+            for url in store_urls:
+                decoded = html.unescape(url)
+                self.assertEqual(decoded, validated_app_store_url(decoded))
+            schema_match = re.search(
+                r'<script type="application/ld\+json">(.*?)</script>',
+                source,
+                flags=re.DOTALL,
+            )
+            self.assertIsNotNone(schema_match)
+            schema = json.loads(html.unescape(schema_match.group(1)))
+            self.assertEqual("ImageGallery", schema["@type"])
+            self.assertEqual(locale, schema["inLanguage"])
+            self.assertEqual(
+                catalog.EXPECTED_APP_COUNT,
+                schema["mainEntity"]["numberOfItems"],
+            )
+            for item in schema["mainEntity"]["itemListElement"]:
+                application = item["item"]["about"]
+                self.assertNotIn("offers", application)
+                app_id = str(application["identifier"]["value"])
+                if visuals.market.is_unavailable(locale, app_id):
+                    self.assertEqual(
+                        f"urn:apple:app:id{app_id}",
+                        application["@id"],
+                    )
+                    self.assertNotIn("downloadUrl", application)
+                    self.assertEqual(
+                        visuals.market.record_fields(locale, app_id),
+                        {
+                            "market_availability":
+                                application["market_availability"],
+                        },
+                    )
+                else:
+                    self.assertIn(
+                        f"/id{app_id}",
+                        application["downloadUrl"],
+                    )
+                    self.assertNotIn("market_availability", application)
+                purchase = application["additionalProperty"]
+                self.assertEqual("PropertyValue", purchase["@type"])
+                self.assertTrue(purchase["name"])
+                self.assertTrue(purchase["value"])
+            if locale in catalog.RTL_LOCALES:
+                self.assertIn(f'<html lang="{locale}" dir="rtl">', source)
+
+    def test_image_sitemap_and_discovery_cover_every_visual(self) -> None:
+        sitemap = ET.parse(self.pages / visuals.SITEMAP_NAME).getroot()
+        sitemap_ns = f"{{{visuals.SITEMAP_NS}}}"
+        image_ns = f"{{{visuals.IMAGE_NS}}}"
+        urls = sitemap.findall(f"{sitemap_ns}url")
+        self.assertEqual(51, len(urls))
+        max_date = (
+            datetime.now(timezone.utc)
+            + gen_sitemap_lastmod.MAX_CLOCK_SKEW
+        ).date().isoformat()
+        for url in urls:
+            lastmod = url.findtext(f"{sitemap_ns}lastmod")
+            with self.subTest(location=url.findtext(f"{sitemap_ns}loc")):
+                self.assertTrue(
+                    gen_sitemap_lastmod._valid_date(
+                        lastmod,
+                        today=max_date,
+                    )
+                )
+                location = url.findtext(f"{sitemap_ns}loc")
+                locale = next(locale for locale in ("en", *OFFICIAL_LOCALES) if visuals.gallery_url(locale) == location)
+                source = (self.pages / visuals.gallery_relative_path(locale)).read_text()
+                published = re.search(r'(?:name="content-modified" content="|"dateModified"\s*:\s*")(\d{4}-\d{2}-\d{2})', source)
+                self.assertIsNotNone(published)
+                self.assertEqual(
+                    str(lastmod),
+                    published[1],
+                )
+        image_locations = [
+            image.findtext(f"{image_ns}loc")
+            for url in urls
+            for image in url.findall(f"{image_ns}image")
+        ]
+        self.assertEqual(
+            visuals.EXPECTED_IMAGE_COUNT + catalog.EXPECTED_APP_COUNT,
+            len(image_locations),
+        )
+        self.assertEqual(
+            visuals.EXPECTED_IMAGE_COUNT,
+            len(set(image_locations)),
+        )
+        manifest_urls = {str(record["image_url"]) for record in self.records}
+        self.assertEqual(manifest_urls, set(image_locations))
+
+        robots = (self.pages / "robots.txt").read_text(encoding="utf-8")
+        sitemap_index = (
+            self.pages / "sitemap_index.xml"
+        ).read_text(encoding="utf-8")
+        llms = (self.pages / "llms.txt").read_text(encoding="utf-8")
+        llms_full = (self.pages / "llms-full.txt").read_text(encoding="utf-8")
+        for source in (robots, sitemap_index, llms, llms_full):
+            self.assertIn(visuals.SITEMAP_NAME, source)
+        for locale in OFFICIAL_LOCALES:
+            self.assertIn(f"{visuals.SITE}/{locale}/visuals/", llms)
+        self.assertIn(f"{visuals.SITE}/visuals/", llms)
+        self.assertIn(
+            f"{visuals.SITE}/data/{visuals.MANIFEST_NAME}",
+            llms,
+        )
+
+
+if __name__ == "__main__":
+    unittest.main()

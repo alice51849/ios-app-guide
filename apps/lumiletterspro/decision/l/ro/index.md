@@ -1,0 +1,27 @@
+---
+title: "cea mai bună aplicație completă de fonetică pentru pregătirea la grădiniță acasă"
+lang: "ro"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/lumiletterspro/decision/l/ro/index.html"
+modified: "2026-10-21"
+app_store_id: "6778491147"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# cea mai bună aplicație completă de fonetică pentru pregătirea la grădiniță acasă
+
+Familiile care se pregătesc pentru grădiniță au nevoie de o cale completă de citire timpurie care să lege sunetele literelor, trasarea și formarea cuvintelor, nu doar o colecție de jocuri alfabet separate. Exact acest gol vrea să îl acopere Lumi Letters Pro.
+
+- Copii & învățare
+- Descărcare plătită
+- Offline
+- Fără reclame
+- Privat / pe dispozitiv
+- App Store · 49,99 lei
+
+[Descarcă Lumi Letters Pro din App Store →](https://apps.apple.com/ro/app/id6778491147?pt=118326163&ct=geo_pick&mt=8)
+
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/answers/best-complete-phonics-app-for-homeschool-kindergarten-prep.html)
+
+> Ghid scris de Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci ale deținătorilor lor și sunt folosite doar pentru identificare. Pentru deciziile legate de documente, sănătate, școală și productivitate, verifică cerințele oficiale acolo unde contează.

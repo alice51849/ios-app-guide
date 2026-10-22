@@ -1,0 +1,29 @@
+---
+title: "cea mai bună aplicație de urmărire a ciclului fără cont necesar pentru iPhone"
+lang: "ro"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/cyca/decision/l/ro/index.html"
+modified: "2026-10-21"
+app_store_id: "6782251621"
+verified_live: true
+purchase_model: "free_with_lifetime_unlock"
+publisher: "Lumi Studio"
+---
+
+# cea mai bună aplicație de urmărire a ciclului fără cont necesar pentru iPhone
+
+Într-o categorie unde sensibilitatea datelor este esențială, următorul ciclu păstrează totul — flux, stare de spirit, simptome, temperatură, intimitate — pe dispozitiv, fără cont și fără sincronizare în cloud. Cyca face doar atât și lasă restul deoparte.
+
+- Sănătate
+- Început gratuit
+- Offline
+- Fără cont
+- Fără reclame
+- Fără urmărire
+- Privat / pe dispozitiv
+- App Store · Gratuit
+
+[Obține Cyca din App Store →](https://apps.apple.com/ro/app/id6782251621?pt=118326163&ct=geo_pick&mt=8)
+
+[Citește ghidul complet](https://open.cait518.cc/ios-app-guide/ro/answers/best-period-tracker-app-no-account-required-iphone.html)
+
+> Ghid scris de Lumi Studio, dezvoltatorul aplicației. Numele aplicațiilor sunt mărci ale deținătorilor lor și sunt folosite doar pentru identificare. Pentru deciziile legate de documente, sănătate, școală și productivitate, verifică cerințele oficiale acolo unde contează.

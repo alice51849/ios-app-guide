@@ -1,0 +1,2190 @@
+{
+  "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
+  "api_version": "1.2.0",
+  "date_modified": "2026-10-21",
+  "content_digest": "3640bd2fe814e90c319c41f805a18191267cf24b494e07e899e4e5a3298653b5",
+  "locale": "it",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "ordering": "alphabetical_by_app_name_not_a_ranking",
+  "record_count": 54,
+  "apps": [
+    {
+      "key": "notesstudio100",
+      "app_store_id": "6798813048",
+      "name": "100 Notes Studio: Pen & Paper",
+      "summary": "Riunisci scrittura a mano, testo digitato, annotazione di documenti, registrazioni e ripasso in uno spazio ordinato che funziona offline. 100 Notes Studio è progettato per tablet e smartphone, con un flusso completo su entrambi.",
+      "category": "productivity",
+      "search_terms": [
+        "appunti",
+        "università",
+        "scuola",
+        "taccuino",
+        "agenda",
+        "diario",
+        "ripasso",
+        "flashcard",
+        "registratore",
+        "vocale",
+        "offline"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6798813048?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/notesstudio100.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6798813048"
+      }
+    },
+    {
+      "key": "aibriefpack",
+      "app_store_id": "6791658210",
+      "name": "AI Brief: Da file a prompt IA",
+      "summary": "Un contesto migliore, risposte migliori.",
+      "category": "productivity",
+      "search_terms": [
+        "IA",
+        "riassunto",
+        "riassumere",
+        "screenshot",
+        "OCR",
+        "contesto",
+        "generatore",
+        "chat",
+        "documenti",
+        "note",
+        "immagine in testo"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6791658210?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/aibriefpack.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6791658210"
+      }
+    },
+    {
+      "key": "aim990",
+      "app_store_id": "6784974530",
+      "name": "Aim990: coach di inglese",
+      "summary": "Aim990 è un coach diagnostico per prepararsi nello stile di ascolto e lettura del TOEIC. Non è un magazzino di quiz: ogni sessione che apri viene prescritta dai tuoi stessi dati di risposta.",
+      "category": "education",
+      "search_terms": [
+        "grammatica",
+        "ascolto",
+        "lettura",
+        "vocabolario",
+        "dettato",
+        "esame",
+        "esercizi",
+        "lavoro",
+        "punteggio",
+        "test",
+        "studio",
+        "parole"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6784974530?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/aim990.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6784974530"
+      }
+    },
+    {
+      "key": "battai",
+      "app_store_id": "6802423998",
+      "name": "BattAI: Salute della batteria",
+      "summary": "BattAI BattAI usa cinque dati delle API pubbliche di iOS: livello batteria, stato di carica, Risparmio energetico, stato termico dell’intero dispositivo e ora. Gli altri risultati sono calcolati da queste letture o aggiunti da te. Ogni dettaglio mostra fonte e limiti.",
+      "category": "utility",
+      "search_terms": [
+        "Punteggio di salute della batteria",
+        "Capacità massima",
+        "Cicli",
+        "Cura della ricarica",
+        "Intervallo di carica",
+        "Velocità di ricarica",
+        "Esporta dati"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6802423998?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/battai.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6802423998"
+      }
+    },
+    {
+      "key": "caldaily",
+      "app_store_id": "6794178671",
+      "name": "CalDaily: calcolatrice e temi",
+      "summary": "Una calcolatrice che tieni, perché ricorda il contesto di ogni numero.",
+      "category": "utility",
+      "search_terms": [
+        "percentuale",
+        "mancia",
+        "conto",
+        "dividere",
+        "prestito",
+        "interessi",
+        "unità",
+        "convertire",
+        "sconto",
+        "iva",
+        "data",
+        "carburante"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6794178671?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/caldaily.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6794178671"
+      }
+    },
+    {
+      "key": "countdaysnow",
+      "app_store_id": "6807079789",
+      "name": "CountDaysNow: Event Counter",
+      "summary": "• Focus del giorno Da allora · Oggi · Avanti — Salva",
+      "category": "productivity",
+      "search_terms": [
+        "conto alla rovescia",
+        "giorni",
+        "compleanno",
+        "anniversario",
+        "promemoria",
+        "widget",
+        "schermata blocco",
+        "matrimonio"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6807079789?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/countdaysnow.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6807079789"
+      }
+    },
+    {
+      "key": "cvdesk",
+      "app_store_id": "6781337213",
+      "name": "CV Desk: curriculum ATS",
+      "summary": "Crea un curriculum a prova di ATS che i sistemi dei recruiter leggono davvero — tutto sul tuo iPhone. Nessun account. Nessun caricamento. Nessun abbonamento.",
+      "category": "productivity",
+      "search_terms": [
+        "fare",
+        "creare",
+        "esempio",
+        "europeo",
+        "formato",
+        "lavoro",
+        "ricerca",
+        "colloquio",
+        "candidatura",
+        "carriera",
+        "studente",
+        "docx"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6781337213?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/cvdesk.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6781337213"
+      }
+    },
+    {
+      "key": "cyca",
+      "app_store_id": "6782251621",
+      "name": "Cyca: Ciclo Mestruale",
+      "summary": "Scopri Cyca: il modo caldo e privato per capire il tuo ciclo.",
+      "category": "health",
+      "search_terms": [
+        "mestruazioni",
+        "calendario",
+        "fertilità",
+        "gravidanza",
+        "sintomi",
+        "umore",
+        "diario",
+        "pms",
+        "previsioni",
+        "salute",
+        "donna",
+        "dolori"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6782251621?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/cyca.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "rating_value": 4.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/it/app/id6782251621"
+      }
+    },
+    {
+      "key": "dailymate",
+      "app_store_id": "6790418321",
+      "name": "DailyMate: lingue in contesto",
+      "summary": "Conosci le parole ma ti blocchi quando devi parlare? DailyMate insegna frasi complete e le risposte naturali che le seguono, così impari ciò che la gente dice davvero invece di studiare parole isolate. Trovi 8.400 frasi pratiche in 47 lingue di apprendimento, organizzate in 14 temi quotidiani e 84 situazioni reali: dai saluti al cibo e agli acquisti, fino a lavoro, salute e viaggi. Un widget e l’app per l’orologio tengono una frase a portata di mano tutto il giorno. Un solo acquisto dà accesso all’app completa. Senza abbonamento.",
+      "category": "kids",
+      "search_terms": [
+        "conversazione",
+        "espressioni",
+        "risposte",
+        "situazioni",
+        "pronuncia",
+        "principiante",
+        "spagnolo",
+        "giapponese",
+        "coreano"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6790418321?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/dailymate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "12.99",
+        "currency": "EUR",
+        "formatted_price": "12,99 €",
+        "storefront_url": "https://apps.apple.com/it/app/id6790418321"
+      }
+    },
+    {
+      "key": "dailymatelite",
+      "app_store_id": "6794725568",
+      "name": "DailyMate Lite: Parla ora",
+      "summary": "Parla con più sicurezza quando serve. DailyMate Lite trasforma situazioni di viaggio, lavoro, ristorazione, salute e vita quotidiana in brevi esercizi con uno spunto e una risposta, in 50 lingue. Il tema Viaggi al livello Principiante è gratuito; l’intera raccolta è disponibile con un unico acquisto.",
+      "category": "kids",
+      "search_terms": [
+        "tedesco",
+        "francese",
+        "giapponese",
+        "portoghese",
+        "cinese",
+        "vacanza",
+        "turismo",
+        "aeroporto",
+        "ristorante",
+        "hotel",
+        "offline"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6794725568?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/dailymatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6794725568"
+      }
+    },
+    {
+      "key": "dbhalo",
+      "app_store_id": "6806826699",
+      "name": "dB Halo: Fonometro",
+      "summary": "dB Halo trasforma iPhone o iPad in un fonometro completo, con elaborazione interamente sul dispositivo. Il grande anello di sicurezza Halo mostra il livello sonoro in tempo reale, il minimo, la media, il massimo e il picco, oltre a un registro degli eventi con data e ora. Scegli la ponderazione A/C/Z, collega un microfono esterno e salva più profili di calibrazione per le tue configurazioni.",
+      "category": "utility",
+      "search_terms": [
+        "decibel",
+        "rumore",
+        "misuratore",
+        "suono",
+        "volume",
+        "acustica",
+        "analizzatore",
+        "frequenza",
+        "russare",
+        "udito",
+        "RTA",
+        "FFT",
+        "livello"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6806826699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/dbhalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6806826699"
+      }
+    },
+    {
+      "key": "easyam",
+      "app_store_id": "6821790092",
+      "name": "EasyAM: Sveglia intelligente",
+      "summary": "Domani la sveglia suona o no? Con EasyAM non devi più chiedertelo: decide lei, giorno per giorno. Suona nei giorni di lavoro, tace nei festivi e nei tuoi giorni di ferie, e appena apri l'app vedi i prossimi sette giorni: quali suonano e a che ora.",
+      "category": "utility",
+      "search_terms": [
+        "lavoro",
+        "turni",
+        "turnista",
+        "calendario",
+        "festività",
+        "orologio",
+        "digitale",
+        "widget",
+        "analogico",
+        "flip",
+        "vacanze",
+        "permessi"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6821790092?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/easyam.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6821790092"
+      }
+    },
+    {
+      "key": "gmoney",
+      "app_store_id": "6755782939",
+      "name": "G+Money: Spese e budget",
+      "summary": "G+Money unisce due strumenti di ogni giorno in uno solo — un convertitore di valute velocissimo e un elegante tracker delle spese — per la vita quotidiana e per i viaggi. Completamente offline. Totalmente privato.",
+      "category": "finance",
+      "search_terms": [
+        "tracker",
+        "gestione",
+        "contabilità",
+        "finanze",
+        "convertitore",
+        "valuta",
+        "tasso",
+        "cambio",
+        "vacanze",
+        "soldi",
+        "risparmio",
+        "budget"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6755782939?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/gmoney.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €",
+        "storefront_url": "https://apps.apple.com/it/app/id6755782939"
+      }
+    },
+    {
+      "key": "gmoneylite",
+      "app_store_id": "6793436548",
+      "name": "G+Money Lite: Spese di viaggio",
+      "summary": "G+Money Lite — Convertitore di valute e spese di viaggio",
+      "category": "finance",
+      "search_terms": [
+        "spese",
+        "paghetta",
+        "limite",
+        "registrazione rapida",
+        "polso",
+        "widget",
+        "schermata home",
+        "divise",
+        "viaggio",
+        "smartwatch"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6793436548?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/gmoneylite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6793436548"
+      }
+    },
+    {
+      "key": "hourstaglite",
+      "app_store_id": "6794039979",
+      "name": "HoursTag Lite: Prezzo in ore",
+      "summary": "HoursTag Lite - Il vero prezzo delle cose",
+      "category": "finance",
+      "search_terms": [
+        "acquisto impulsivo",
+        "ne vale la pena",
+        "bisogno",
+        "desiderio",
+        "shopping",
+        "consumo",
+        "sprechi",
+        "abitudini",
+        "rimpianto"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6794039979?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/hourstaglite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6794039979"
+      }
+    },
+    {
+      "key": "hourstag",
+      "app_store_id": "6754218117",
+      "name": "HoursTag: Ore per comprare",
+      "summary": "Quanto costa davvero? Non in euro, ma in ore della tua vita.",
+      "category": "finance",
+      "search_terms": [
+        "gestione",
+        "risparmiare",
+        "finanze",
+        "soldi",
+        "stipendio",
+        "entrate",
+        "budget",
+        "obiettivi",
+        "acquisti",
+        "prezzo",
+        "calcolatrice"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6754218117?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/hourstag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €",
+        "storefront_url": "https://apps.apple.com/it/app/id6754218117"
+      }
+    },
+    {
+      "key": "ledmovingtext",
+      "app_store_id": "6806639602",
+      "name": "LED Moving Text",
+      "summary": "Scrivi una frase e alza l'iPhone. Dal fondo del parterre, dall'altra parte della sala arrivi o al di sopra di un bancone si legge con un colpo d'occhio.",
+      "category": "utility",
+      "search_terms": [
+        "cartello",
+        "striscione",
+        "targa",
+        "concerto",
+        "tifo",
+        "aeroporto",
+        "ritiro",
+        "neon",
+        "vetrina",
+        "avviso",
+        "lettere",
+        "palco",
+        "folla"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6806639602?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/ledmovingtext.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6806639602"
+      }
+    },
+    {
+      "key": "lockhour",
+      "app_store_id": "6780107485",
+      "name": "LockHour Pro: Blocco app",
+      "summary": "Proteggi le ore che contano davvero. LockHour Pro ti aiuta a creare sessioni di concentrazione calme, ridurre le distrazioni del telefono e costruire abitudini produttive senza complicazioni. Ideale per studio, lavoro profondo e routine quotidiane.",
+      "category": "productivity",
+      "search_terms": [
+        "concentrazione",
+        "pomodoro",
+        "timer",
+        "studio",
+        "dipendenza",
+        "smartphone",
+        "cellulare",
+        "social",
+        "siti",
+        "produttività",
+        "sonno"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6780107485?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/lockhour.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6780107485"
+      }
+    },
+    {
+      "key": "lumibopomofo",
+      "app_store_id": "6773017109",
+      "name": "Lumi Bopomofo",
+      "summary": "Un modo dolce per esplorare i suoni del cinese mandarino. Lumi Bopomofo trasforma lo Zhuyin, il sistema fonetico del mandarino, in un gioco a tema pianeti per bambini dai 3 ai 6 anni. Mini attività guidano il riconoscimento di simboli, suoni e combinazioni.",
+      "category": "kids",
+      "search_terms": [
+        "mandarino",
+        "imparare",
+        "taiwan",
+        "tradizionale",
+        "toni",
+        "pronuncia",
+        "fonetica",
+        "sillabe",
+        "simboli",
+        "scrittura",
+        "prescolare"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6773017109?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/lumibopomofo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6773017109"
+      }
+    },
+    {
+      "key": "lumibopomofopro",
+      "app_store_id": "6775773117",
+      "name": "Lumi Bopomofo Pro: Zhuyin",
+      "summary": "Aiuta tuo figlio ad amare la fonetica cinese con una tenera avventura nello spazio.",
+      "category": "kids",
+      "search_terms": [
+        "cinese",
+        "taiwan",
+        "bambini",
+        "pronuncia",
+        "sillabe",
+        "ricalcare",
+        "stampare",
+        "prescolare",
+        "primaria",
+        "ripasso",
+        "bilingue"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6775773117?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/lumibopomofopro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/it/app/id6775773117"
+      }
+    },
+    {
+      "key": "lumiletters",
+      "app_store_id": "6778748533",
+      "name": "Lumi Letters Lite: ABC Kids",
+      "summary": "Iniziate dalla lettera A e dal primo pianeta e sbloccate il resto solo se alla vostra famiglia piace. Lumi Letters Lite trasforma l’alfabeto inglese in un’avventura tra le stelle per bambini dai 3 ai 7 anni: ascoltano nome e suono di ogni lettera, ricalcano maiuscole e minuscole seguendo le guide di scrittura e collezionano simpatici amici lettera. Senza pubblicità e anche offline.",
+      "category": "kids",
+      "search_terms": [
+        "bambini",
+        "alfabetiere",
+        "prescolare",
+        "scuola infanzia",
+        "giochi",
+        "educativi",
+        "imparare",
+        "scrittura",
+        "lettere",
+        "ricalcare"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6778748533?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/lumiletters.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6778748533"
+      }
+    },
+    {
+      "key": "lumiletterspro",
+      "app_store_id": "6778491147",
+      "name": "Lumi Letters Pro: ABC Phonics",
+      "summary": "Ascolta il suono, trovalo nella parola e ripassa la lettera: vera fonetica per i più piccoli. Con Lumi Letters Pro i bambini viaggiano tra 14 pianeti, 12 tipi di domande e 26 lettere amiche da collezionare. Ascoltano il suono iniziale, centrale e finale di ogni parola, abbinano maiuscole e minuscole e ripassano ogni lettera seguendo le guide del tratto. Nell'area genitori potete vedere i progressi in quattro abilità e stampare una scheda giornaliera. Senza pubblicità, senza abbonamenti, senza raccolta di dati e funziona anche offline.",
+      "category": "kids",
+      "search_terms": [
+        "alfabeto",
+        "lettere",
+        "fonetica",
+        "vocali",
+        "pronuncia",
+        "materna",
+        "prima",
+        "elementare",
+        "pregrafismo",
+        "schede",
+        "lettura",
+        "bimbi"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6778491147?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/lumiletterspro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/it/app/id6778491147"
+      }
+    },
+    {
+      "key": "lumimath",
+      "app_store_id": "6778269699",
+      "name": "Lumi Math Planet: Explorer",
+      "summary": "Rispondi a una domanda e un piccolo pianeta si illumina. Lumi Math Planet trasforma il conteggio, le addizioni e sottrazioni, le tabelline, l'orologio e i soldi in una dolce avventura spaziale: 46 tipi di domande illustrate, con lettura ad alta voce. I genitori seguono i progressi, allenano i punti deboli e stampano schede con le soluzioni. Senza pubblicità né abbonamento.",
+      "category": "kids",
+      "search_terms": [
+        "contare",
+        "numeri",
+        "addizioni",
+        "sottrazioni",
+        "tabelline",
+        "calcolo",
+        "prescolare",
+        "elementare",
+        "orologio",
+        "matematica"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6778269699?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/lumimath.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6778269699"
+      }
+    },
+    {
+      "key": "lumimathpro",
+      "app_store_id": "6776958488",
+      "name": "Lumi Math Pro: Kids Numbers",
+      "summary": "Trasforma il pensiero matematico a livello di competizione in un'avventura spaziale che i bambini non possono abbandonare.",
+      "category": "kids",
+      "search_terms": [
+        "matematica",
+        "ragionamento",
+        "rompicapo",
+        "indovinelli",
+        "sequenze",
+        "calcolo",
+        "mentale",
+        "sfide",
+        "pensiero",
+        "schede",
+        "gare"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6776958488?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/lumimathpro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/it/app/id6776958488"
+      }
+    },
+    {
+      "key": "lumimission",
+      "app_store_id": "6779750237",
+      "name": "Lumi Mission Planet: Routine",
+      "summary": "Far sì che un bambino piccolo si lavi i denti, finisca i pasti o riordini i giocattoli non dovrebbe essere una battaglia quotidiana.",
+      "category": "kids",
+      "search_terms": [
+        "adesivi",
+        "stelle",
+        "premi",
+        "motivazione",
+        "comportamento",
+        "denti",
+        "riordinare",
+        "giocattoli",
+        "nanna",
+        "pappa",
+        "bambini",
+        "asilo"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6779750237?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/lumimission.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6779750237"
+      }
+    },
+    {
+      "key": "lumimissionpro",
+      "app_store_id": "6779745474",
+      "name": "Lumi Mission Planet Pro",
+      "summary": "Far sì che un bambino piccolo si lavi i denti, finisca i pasti o metta a posto i giocattoli non dovrebbe essere una battaglia quotidiana.",
+      "category": "kids",
+      "search_terms": [
+        "bambini",
+        "abitudini",
+        "autonomia",
+        "nanna",
+        "denti",
+        "lavare",
+        "riordinare",
+        "scuola",
+        "asilo",
+        "giornata",
+        "buonanotte",
+        "igiene"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6779745474?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/lumimissionpro.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/it/app/id6779745474"
+      }
+    },
+    {
+      "key": "lumiweather",
+      "app_store_id": "6779552704",
+      "name": "Lumi Meteo: Previsioni",
+      "summary": "Lumi Meteo ti dice a colpo d'occhio se è il momento giusto per uscire, cosa indossare e se ti servono l'ombrello o la crema solare.",
+      "category": "kids",
+      "search_terms": [
+        "vestiti",
+        "tempo",
+        "pioggia",
+        "ombrello",
+        "crema",
+        "solare",
+        "temperatura",
+        "oggi",
+        "domani",
+        "vento",
+        "widget",
+        "percepita",
+        "temporale"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6779552704?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/lumiweather.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6779552704"
+      }
+    },
+    {
+      "key": "maskmyfile",
+      "app_store_id": "6792850916",
+      "name": "Mask My File: Rimuovi i dati",
+      "summary": "Condividi senza esporre più del necessario. Mask My File individua i dati personali prima che tu invii un file, oscura in modo permanente ciò che scegli, poi riapre e verifica il nuovo file prima di mostrare Private Ready.",
+      "category": "photo-utility",
+      "search_terms": [
+        "riservatezza",
+        "nascondere",
+        "documenti",
+        "scontrino",
+        "fattura",
+        "ricevuta",
+        "metadati",
+        "anonimizzare",
+        "gdpr",
+        "privato"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6792850916?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/maskmyfile.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6792850916"
+      }
+    },
+    {
+      "key": "mochi",
+      "app_store_id": "6785004775",
+      "name": "Mochi: Lista carina",
+      "summary": "Mochi rende la tua lista di cose da fare più carina, calma e piacevole da usare. Aggiungi le attività, tocca il piccolo cerchio quando le completi e goditi la soddisfazione di vedere la giornata prendere forma.",
+      "category": "productivity",
+      "search_terms": [
+        "attività",
+        "checklist",
+        "note",
+        "planner",
+        "abitudini",
+        "routine",
+        "programma",
+        "spesa",
+        "agenda",
+        "calendario",
+        "quotidiano",
+        "temi"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6785004775?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/mochi.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "rating_value": 5.0,
+        "rating_count": 1,
+        "storefront_url": "https://apps.apple.com/it/app/id6785004775"
+      }
+    },
+    {
+      "key": "mochidonestamp",
+      "app_store_id": "6790800323",
+      "name": "Mochi DoneStamp: Ultima volta",
+      "summary": "Quando hai cambiato le lenzuola, annaffiato una pianta, chiamato la famiglia, salvato le foto o sostituito un filtro l’ultima volta?",
+      "category": "lifestyle",
+      "search_terms": [
+        "faccende",
+        "pulizie",
+        "innaffiare",
+        "famiglia",
+        "casa",
+        "manutenzione",
+        "ricorrente",
+        "intervallo",
+        "cronologia",
+        "widget",
+        "auto"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6790800323?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/mochidonestamp.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6790800323"
+      }
+    },
+    {
+      "key": "moneytag",
+      "app_store_id": "6801956402",
+      "name": "MoneyTag: Entrate e uscite",
+      "summary": "Ogni progetto tiene la propria contabilità: entrate meno uscite danno il suo risultato netto. Qui trovi le domande più frequenti. Se la tua non c’è, scrivici: ogni messaggio lo legge una persona in carne e ossa.",
+      "category": "finance",
+      "search_terms": [
+        "contabilità",
+        "guadagni",
+        "perdite",
+        "partita iva",
+        "freelance",
+        "prima nota",
+        "cassa",
+        "affitto",
+        "clienti",
+        "bilancio",
+        "negozio"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6801956402?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/moneytag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6801956402"
+      }
+    },
+    {
+      "key": "onepageppt",
+      "app_store_id": "6798814385",
+      "name": "OnePage PPT: slide con IA",
+      "summary": "Trasforma un muro di testo in UNA slide che si legge davvero.",
+      "category": "productivity",
+      "search_terms": [
+        "riassunto",
+        "relazione",
+        "riunione",
+        "sintesi",
+        "pptx",
+        "tesina",
+        "diapositive",
+        "grafico",
+        "schema",
+        "infografica",
+        "tabella"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6798814385?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/onepageppt.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6798814385"
+      }
+    },
+    {
+      "key": "photocream",
+      "app_store_id": "6781808054",
+      "name": "PhotoCream Pro: Filtri retrò",
+      "summary": "PhotoCream Pro trasforma il tuo telefono in una fotocamera analogica: vedi grana, alone e fughe di luce in diretta, prima ancora di scattare. Oltre 100 look pellicola, copia dei colori di qualsiasi foto, ritocco della pelle e un editor completo per luce, colore e curve. Tutto avviene sul dispositivo: senza abbonamento, senza pubblicità e le tue foto non vengono mai caricate online.",
+      "category": "photo-utility",
+      "search_terms": [
+        "fotocamera",
+        "analogica",
+        "usa",
+        "getta",
+        "vintage",
+        "retro",
+        "grana",
+        "foto",
+        "selfie",
+        "bellezza",
+        "ritocco",
+        "estetica",
+        "35mm",
+        "editor"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6781808054?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/photocream.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6781808054"
+      }
+    },
+    {
+      "key": "picclear",
+      "app_store_id": "6780223070",
+      "name": "PicClear Pro: Pulizia foto",
+      "summary": "Libera gigabyte di spazio eliminando le foto che non ti servono — duplicati, screenshot, scatti sfocati e video che divorano spazio.",
+      "category": "photo-utility",
+      "search_terms": [
+        "screenshot",
+        "pulizia",
+        "memoria piena",
+        "galleria",
+        "elimina",
+        "simili",
+        "sfocate",
+        "video grandi",
+        "organizza",
+        "rullino"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6780223070?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/picclear.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6780223070"
+      }
+    },
+    {
+      "key": "qrcodehalo",
+      "app_store_id": "6806779853",
+      "name": "QR Code Halo: Scansiona e Crea",
+      "summary": "QR Code Halo agisce nel momento in cui legge un codice. Scansiona con la fotocamera o scegli una foto: i link si aprono nel browser, i codici di accesso con passkey e i link delle app passano direttamente a iOS, i codici Wi-Fi mostrano la richiesta di iOS per connettersi alla rete, e chiamate, messaggi, e-mail e luoghi si aprono nella loro app. Contatti ed eventi aprono la schermata di aggiunta di iOS, dove confermi tu. Il testo viene copiato con una breve nota, e i codici javascript:, data: o file: non vengono mai aperti. Per controllare prima ogni codice, disattiva “Esegui dopo la scansione” in Impostazioni; la scansione in serie si limita a raccogliere.",
+      "category": "utility",
+      "search_terms": [
+        "scanner",
+        "lettore",
+        "barre",
+        "generatore",
+        "wifi",
+        "link",
+        "sicuro",
+        "phishing",
+        "truffa",
+        "biglietto",
+        "visita",
+        "foto",
+        "url",
+        "lettura"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6806779853?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/qrcodehalo.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6806779853"
+      }
+    },
+    {
+      "key": "savetag",
+      "app_store_id": "6802505528",
+      "name": "SaveTag: segnalibri con IA",
+      "summary": "Salvalo adesso. E stavolta leggilo davvero.",
+      "category": "productivity",
+      "search_terms": [
+        "dopo",
+        "salvare",
+        "lista",
+        "lettura",
+        "articoli",
+        "video",
+        "guardare",
+        "raccolta",
+        "etichette",
+        "ricette",
+        "desideri",
+        "preferiti"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6802505528?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/savetag.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6802505528"
+      }
+    },
+    {
+      "key": "scanto",
+      "app_store_id": "6779977651",
+      "name": "ScanTo Pro: Scanner PDF e OCR",
+      "summary": "Lo scanner che fa tutto sul tuo dispositivo – compreso leggere il testo – e lo dimostra non andando mai online.",
+      "category": "productivity",
+      "search_terms": [
+        "scansione",
+        "scontrini",
+        "ricevute",
+        "fatture",
+        "carta",
+        "identità",
+        "contratti",
+        "testo",
+        "riconoscimento",
+        "password",
+        "blocco"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6779977651?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/scanto.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6779977651"
+      }
+    },
+    {
+      "key": "sereno",
+      "app_store_id": "6788236641",
+      "name": "Sereno: Suoni per Dormire",
+      "summary": "Sereno trasforma il tuo telefono in una macchina del suono di alta qualità per il sonno, la concentrazione e la calma. Pioggia, oceano, vento, fuoco e altro ancora sono vere registrazioni sul campo, fuse in oltre 1000 paesaggi sonori unici e intrecciate a caso mentre ascolti — nessun loop fisso, solo un mix delicato che ti accompagna per tutta la notte.",
+      "category": "sleep-sound",
+      "search_terms": [
+        "marrone",
+        "rosa",
+        "acufene",
+        "temporale",
+        "onde",
+        "insonnia",
+        "neonato",
+        "rilassamento",
+        "meditazione",
+        "concentrazione",
+        "ADHD"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6788236641?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/sereno.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6788236641"
+      }
+    },
+    {
+      "key": "shotinbox",
+      "app_store_id": "6802166527",
+      "name": "ShotInbox AI: Sort Screenshots",
+      "summary": "Screenshot finalmente in ordine Trova, gestisci e ripulisci ogni screenshot.",
+      "category": "photo-utility",
+      "search_terms": [
+        "organizzatore",
+        "duplicate",
+        "simili",
+        "galleria",
+        "spazio",
+        "memoria",
+        "ocr",
+        "scontrini",
+        "link",
+        "note",
+        "cronologia",
+        "album"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6802166527?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/shotinbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6802166527"
+      }
+    },
+    {
+      "key": "snapport",
+      "app_store_id": "6780575828",
+      "name": "Snapport: Foto Tessera",
+      "summary": "Scatta a casa foto per passaporto, visto e documenti, in modo tranquillo e privato. Snapport prepara solo la foto; il documento vero e proprio è rilasciato dall'autorità o dall'ente competente. Snapport offre modelli per i formati più comuni, guide per allineare il viso, strumenti per lo sfondo e fogli pronti da stampare, tutto elaborato sul tuo iPhone.",
+      "category": "photo-utility",
+      "search_terms": [
+        "foto visto",
+        "foto documenti",
+        "foto identità",
+        "foto biometrica",
+        "foto cv",
+        "foto curriculum",
+        "foto studente",
+        "35x45"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6780575828?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/snapport.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/it/app/id6780575828"
+      }
+    },
+    {
+      "key": "snapportlite",
+      "app_store_id": "6792856304",
+      "name": "Snapport Lite: Fai fototessere",
+      "summary": "Ti serve una foto in un formato preciso? Snapport Lite ritaglia il tuo ritratto esattamente nella misura che scegli, direttamente sul tuo dispositivo. Scatta una nuova foto o sceglila dalla libreria, allinea il viso alle guide, sistema lo sfondo ed esporta.",
+      "category": "photo-utility",
+      "search_terms": [
+        "fototessera",
+        "foto passaporto",
+        "ritagliare",
+        "dimensioni",
+        "sfondo bianco",
+        "scontorno",
+        "stampa",
+        "10x15",
+        "pixel",
+        "selfie"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6792856304?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/snapportlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6792856304"
+      }
+    },
+    {
+      "key": "sononote",
+      "app_store_id": "6782139553",
+      "name": "Sono Note",
+      "summary": "Parla naturalmente. Ottieni un testo di cui andare fiero.",
+      "category": "productivity",
+      "search_terms": [
+        "trascrizione",
+        "dettatura",
+        "registratore",
+        "trascrivere",
+        "audio",
+        "verbale",
+        "riunione",
+        "lezioni",
+        "riassunto",
+        "intervista"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6782139553?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/sononote.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6782139553"
+      }
+    },
+    {
+      "key": "stayclock",
+      "app_store_id": "6814035888",
+      "name": "Stay Clock: orologio flip",
+      "summary": "Stay Clock trasforma il tuo iPhone o iPad in un orologio da tavolo sempre acceso, leggibile anche dall’altra parte della stanza. Un’ora grande, un calendario che si adatta a ogni quadrante, e uno stesso stile che ti segue su StandBy, la schermata di blocco, i widget della schermata Home e Apple Watch.",
+      "category": "utility",
+      "search_terms": [
+        "comodino",
+        "standby",
+        "caricatore",
+        "burn-in",
+        "oled",
+        "widget",
+        "digitale",
+        "sveglia",
+        "schermo blocco",
+        "formato 24h",
+        "grande"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6814035888?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/stayclock.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6814035888"
+      }
+    },
+    {
+      "key": "studydown",
+      "app_store_id": "6807335593",
+      "name": "Studydown: Timer focus",
+      "summary": "Dedica tempo a ciò che conta e guarda i tuoi impegni prendere forma. Studydown registra il tempo per un progetto, una lettura o una passione con un gesto semplice: appoggiare il telefono a schermo in giù.",
+      "category": "productivity",
+      "search_terms": [
+        "studio",
+        "studiare",
+        "produttività",
+        "cronometro",
+        "abitudini",
+        "obiettivi",
+        "scadenze",
+        "lettura",
+        "esame",
+        "ore",
+        "progetti"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6807335593?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/studydown.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6807335593"
+      }
+    },
+    {
+      "key": "tripplanet",
+      "app_store_id": "6787193643",
+      "name": "Trip Planet viaggio bambini",
+      "summary": "Trasforma ogni viaggio in famiglia in una piccola avventura spaziale. Trip Planet trasforma i voli lunghi, l'auto piena e le notti in hotel in missioni per bambini dai 3 ai 10 anni, con premi da collezionare e un timbro sul passaporto per ogni viaggio concluso. Due genitori possono condividere lo stesso viaggio. Nessuna pubblicità e nessun tracciamento di terze parti.",
+      "category": "kids",
+      "search_terms": [
+        "aereo",
+        "auto",
+        "famiglia",
+        "piccoli",
+        "premi",
+        "passaporto",
+        "timbri",
+        "ricordi",
+        "foto",
+        "hotel",
+        "museo",
+        "aeroporto",
+        "ristorante"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6787193643?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/tripplanet.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6787193643"
+      }
+    },
+    {
+      "key": "tripbeelite",
+      "app_store_id": "6791299610",
+      "name": "TripBee Lite: Piano viaggio",
+      "summary": "Dedica tutta l’attenzione al prossimo viaggio. TripBee Lite è un planner essenziale e curato, costruito attorno a un solo viaggio attivo.",
+      "category": "travel",
+      "search_terms": [
+        "vacanze",
+        "organizzare",
+        "agenda",
+        "programma",
+        "volo",
+        "hotel",
+        "biglietti",
+        "prenotazione",
+        "promemoria",
+        "meteo",
+        "countdown"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6791299610?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/tripbeelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6791299610"
+      }
+    },
+    {
+      "key": "tripbee",
+      "app_store_id": "6787754435",
+      "name": "TripBee: Pianifica Viaggi",
+      "summary": "Pianifica offline, sincronizza in privato con iCloud e invita altri a modificare il viaggio. Acquisto unico, senza pubblicità né tracciamento.",
+      "category": "travel",
+      "search_terms": [
+        "famiglia",
+        "amici",
+        "condividi",
+        "insieme",
+        "pioggia",
+        "fuso orario",
+        "imbarco",
+        "bagaglio",
+        "bambini",
+        "spiaggia",
+        "checklist"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6787754435?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/tripbee.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/it/app/id6787754435"
+      }
+    },
+    {
+      "key": "unblurry",
+      "app_store_id": "6782275018",
+      "name": "Unblurry Pro: foto nitide",
+      "summary": "Foto sfocata? Rendila nitida come il cristallo.",
+      "category": "photo-utility",
+      "search_terms": [
+        "nitidezza foto",
+        "foto sfocata",
+        "rimuovi sfocatura",
+        "migliora foto",
+        "photo enhancer",
+        "foto 4K",
+        "ingrandire foto"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6782275018?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/unblurry.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6782275018"
+      }
+    },
+    {
+      "key": "claudeusagemini",
+      "app_store_id": "6818607603",
+      "name": "UsageNow: Monitor utilizzo IA",
+      "summary": "Hai esaurito il limite dell’IA a metà lavoro? UsageNow ti mostra quanto resta di ogni piano IA e quando si azzera esattamente, direttamente nella schermata Home, e ti avvisa prima che il limite finisca.",
+      "category": "productivity",
+      "search_terms": [
+        "ai",
+        "code",
+        "dev",
+        "sviluppatore",
+        "usage",
+        "tracker",
+        "consumo",
+        "quota",
+        "contatore",
+        "token",
+        "widget",
+        "reset",
+        "llm",
+        "meter",
+        "sessione"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6818607603?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/claudeusagemini.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6818607603"
+      }
+    },
+    {
+      "key": "wifiaid",
+      "app_store_id": "6790467886",
+      "name": "WiFi Aid: Trova guasti di rete",
+      "summary": "Trova la causa probabile con verifiche indipendenti di percorsi, DNS, TCP, TLS, tempi e stabilità. Un acquisto iniziale, senza abbonamenti, pubblicità o tracciamento.",
+      "category": "photo-utility",
+      "search_terms": [
+        "latenza",
+        "jitter",
+        "ipv6",
+        "tcp",
+        "nodo",
+        "ripetitore",
+        "roaming",
+        "rapporto",
+        "pdf",
+        "cronologia",
+        "widget",
+        "orologio",
+        "stabilità"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6790467886?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/wifiaid.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "6.99",
+        "currency": "EUR",
+        "formatted_price": "6,99 €",
+        "storefront_url": "https://apps.apple.com/it/app/id6790467886"
+      }
+    },
+    {
+      "key": "wifiaidlite",
+      "app_store_id": "6793414462",
+      "name": "WiFi Aid Lite",
+      "summary": "Trova il vero problema. Puoi fare un solo controllo completo in totale, con qualsiasi strumento, senza acquisto. Un acquisto in-app una tantum facoltativo sblocca controlli illimitati e il confronto prima e dopo la correzione: nessun abbonamento, pubblicità o tracciamento.",
+      "category": "utility",
+      "search_terms": [
+        "rete",
+        "connessione",
+        "lenta",
+        "guasto",
+        "ping",
+        "test",
+        "verifica",
+        "problemi",
+        "sito",
+        "portale",
+        "hotel",
+        "gestore",
+        "modem",
+        "linea"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6793414462?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/wifiaidlite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6793414462"
+      }
+    },
+    {
+      "key": "wordmatelite",
+      "app_store_id": "6797601720",
+      "name": "Wordmate Lite: vocabolario",
+      "summary": "Cinque parole, un minuto, un passo visibile sul tuo percorso. Wordmate Lite prende quel proposito vago di imparare finalmente una lingua e lo riduce a un gesto abbastanza piccolo da entrare in qualsiasi giornata.",
+      "category": "education",
+      "search_terms": [
+        "imparare",
+        "inglese",
+        "spagnolo",
+        "francese",
+        "tedesco",
+        "lingue",
+        "memorizzare",
+        "abitudine",
+        "principianti",
+        "minuto",
+        "offline"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6797601720?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/wordmatelite.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Gratis",
+        "storefront_url": "https://apps.apple.com/it/app/id6797601720"
+      }
+    },
+    {
+      "key": "wordmate",
+      "app_store_id": "6789917808",
+      "name": "Wordmate: Vocabolario",
+      "summary": "Trasforma i ritagli della giornata in nuove parole. Wordmate riunisce 44 lingue in 14 temi pratici e tre livelli, con una frase d’esempio per ogni parola inglese e pronuncia da ascoltare. Studia dal widget interattivo della schermata Home o dall’orologio. Paghi una volta sola: nessun abbonamento, nessun acquisto in-app.",
+      "category": "education",
+      "search_terms": [
+        "parole",
+        "giapponese",
+        "coreano",
+        "cinese",
+        "russo",
+        "arabo",
+        "portoghese",
+        "esempi",
+        "pronuncia",
+        "livelli",
+        "intermedio",
+        "avanzato"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": true,
+        "no_ads": false,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": true,
+        "apple_watch": true
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6789917808?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/wordmate.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "9.99",
+        "currency": "EUR",
+        "formatted_price": "9,99 €",
+        "storefront_url": "https://apps.apple.com/it/app/id6789917808"
+      }
+    },
+    {
+      "key": "zipbox",
+      "app_store_id": "6806776579",
+      "name": "Zipbox: aprire RAR, ZIP e 7z",
+      "summary": "Zipbox è un’app a pagamento su App Store. Un acquisto include tutto, senza acquisti in-app, abbonamenti o pubblicità. I 13 formati sono gestiti sul dispositivo.",
+      "category": "utility",
+      "search_terms": [
+        "estrarre",
+        "comprimere",
+        "password",
+        "anteprima",
+        "cartella",
+        "gestore",
+        "crittografia",
+        "unrar",
+        "tar",
+        "gz",
+        "iso",
+        "file",
+        "rar5",
+        "aes"
+      ],
+      "purchase_model": "paid_upfront",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": true,
+        "no_account": true,
+        "no_ads": true,
+        "no_tracking": true,
+        "private_or_on_device": true,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/it/app/id6806776579?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/it/zipbox.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "5.99",
+        "currency": "EUR",
+        "formatted_price": "5,99 €",
+        "storefront_url": "https://apps.apple.com/it/app/id6806776579"
+      }
+    }
+  ]
+}

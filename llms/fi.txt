@@ -1,0 +1,245 @@
+# Sovellushakemisto — iOS App Guide
+
+> Jäsennellyt tiedot jokaisen iOS-sovelluksen ominaisuuksista, hinnasta ja usein kysytyistä kysymyksistä.
+
+locale: fi
+apps: 54
+- Sovellushakemisto: https://open.cait518.cc/ios-app-guide/fi/tools/private-pay-once-iphone-app-finder.html
+- Sovellushakemisto · PWA: https://open.cait518.cc/ios-app-guide/fi/tools/private-pay-once-iphone-app-finder.webmanifest
+- Schema.org OfferCatalog: https://open.cait518.cc/ios-app-guide/api/v1/ios-app-offers/fi.jsonld
+- Install decision routes JSON: https://open.cait518.cc/ios-app-guide/data/app-install-decision-routes/locales/fi.json
+- Sovellushakemisto · SVG: https://open.cait518.cc/ios-app-guide/fi/visuals/
+- Sovellushakemisto · VS Code: https://vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522lumi-app-finder%2522%252C%2522type%2522%253A%2522stdio%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522-y%2522%252C%2522https%253A%252F%252Fgithub.com%252Falice51849%252Flumi-mcp%252Freleases%252Fdownload%252Fv1.3.0%252Flumi-app-finder-npx.tgz%2522%255D%257D
+- Sovellushakemisto · Cursor: https://cursor.com/en/install-mcp?name=lumi-app-finder&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImh0dHBzOi8vZ2l0aHViLmNvbS9hbGljZTUxODQ5L2x1bWktbWNwL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9sdW1pLWFwcC1maW5kZXItbnB4LnRneiJdfQ%3D%3D
+- Sovellushakemisto · Claude Desktop (MCPB): https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder.mcpb
+- Sovellushakemisto · MCP Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.alice51849%2Flumi-app-finder/versions/1.3.0
+- Sovellushakemisto · MCP v1.3.0 · SHA256SUMS: https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/SHA256SUMS
+- Sovellushakemisto · MCP client config: https://open.cait518.cc/ios-app-guide/data/lumi-app-finder.mcp.json
+- Sovellushakemisto · Agent Skill: https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder
+- Sovellushakemisto · Agent Skill · fi: https://raw.githubusercontent.com/alice51849/lumi-mcp/v1.3.0/skills/lumi-app-finder/references/fi.json
+- Sovellushakemisto · Agent Skill · GitHub Copilot: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user
+- Sovellushakemisto · Agent Skill · Claude Code: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent claude-code
+- Sovellushakemisto · Agent Skill · Cursor: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent cursor
+- Sovellushakemisto · Agent Skill · Codex: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent codex
+- Sovellushakemisto · Agent Skill · Gemini CLI: gh skill install alice51849/lumi-mcp lumi-app-finder@v1.3.0 --scope user --agent gemini-cli
+- Sovellushakemisto · Agent Skill · Vercel skills.sh: npx -y skills@1.5.19 add https://github.com/alice51849/lumi-mcp/tree/v1.3.0/skills/lumi-app-finder --skill lumi-app-finder -g -y
+- Sovellushakemisto · Claude Code: claude mcp add --transport stdio --scope user lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Sovellushakemisto · Codex: codex mcp add lumi-app-finder -- npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+- Sovellushakemisto · Gemini CLI: gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849/lumi-mcp/releases/download/v1.3.0/lumi-app-finder-npx.tgz
+
+- [100 Notes Studio: Pen & Paper](https://open.cait518.cc/ios-app-guide/fi/notesstudio100.html) — Muistikirja, käsiala ja PDF
+  - Talvi ja tenttikausi: kirjoita muistiinpanot käsin, merkitse luentojen PDF:t, liitä luennon äänitys sivulle ja kertaa korteilla. Täysin offline, ilman tiliä.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6798813048?pt=118326163&ct=geo_pick&mt=8
+- [AI Brief: Tiedostot promptiksi](https://open.cait518.cc/ios-app-guide/fi/aibriefpack.html) — Tee prompteja tiedostoista
+  - Vuodenvaihteen raportit ja joulun suunnitelmat? Lisää kuvakaappaukset, PDF:t, muistiot ja linkit: luetaan laitteella, henkilötiedot merkitään, selkeä kooste tekoälylle.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6791658210?pt=118326163&ct=geo_pick&mt=8
+- [Aim990: englannin valmentaja](https://open.cait518.cc/ios-app-guide/fi/aim990.html) — TOEIC-diagnoosi 8 minuutissa
+  - 8 minuutin diagnoosi nimeää kolme heikointa taitoasi, kirjoittaa korjaussuunnitelman, harjoittaa sitä päivittäin ja mittaa uudelleen päivänä 30. Offline, ei tiliä.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6784974530?pt=118326163&ct=geo_pick&mt=8
+- [BattAI: Akun kuntotulos](https://open.cait518.cc/ios-app-guide/fi/battai.html) — Selkeät säännöt, lähteet ja rajat
+  - Ymmärrä akkusi kehitys Selkeät säännöt, lähteet ja rajat Avaa syvempi historia, suunnittelu ja raportit. Yksi maksu. Ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6802423998?pt=118326163&ct=geo_pick&mt=8
+- [CalDaily: laskin ja teemat](https://open.cait518.cc/ios-app-guide/fi/caldaily.html) — Widget, työkalut ja historia
+  - Laske suoraan kotivalikossa: widget on täysi laskin. Tippi, alennus, laina ja 5 muuta sisäänrakennettua työkalua. Ei mainoksia.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6794178671?pt=118326163&ct=geo_pick&mt=8
+- [CountDaysNow: Event Counter](https://open.cait518.cc/ios-app-guide/fi/countdaysnow.html) — Päivän fokus
+  - Päivän fokus: valitse yksityisesti Siitä, Tänään tai Tulossa ja palaa kolmeen viimeisimpään valintaan tärkeiden päivien rinnalla.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6807079789?pt=118326163&ct=geo_pick&mt=8
+- [CV Desk: ATS-ansioluettelo](https://open.cait518.cc/ios-app-guide/fi/cvdesk.html) — CV-pohja, malli ja PDF-vienti
+  - Välitön ATS-pisteytys, selkeät korjaukset ja rekrytoijan 6 sekunnin silmäys. Esikatsele valmis PDF milloin vain. Ei tiliä tarvita.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6781337213?pt=118326163&ct=geo_pick&mt=8
+- [Cyca: Kuukautiskalenteri](https://open.cait518.cc/ios-app-guide/fi/cyca.html) — Ovulaatio ja kierron seuranta
+  - Pikkujoulut, matkat ja kiireinen joulukuu? Kirjaa kuukautiset, vuoto, oireet, mieliala ja muistiinpanot sekunneissa. Kaikki pysyy laitteellasi, ilman tiliä.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6782251621?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate Lite: Puhu tänään](https://open.cait518.cc/ios-app-guide/fi/dailymatelite.html) — Matkafraasit 50 kielellä
+  - Ymmärrä, mitä ihmiset sanovat lentokentällä, hotellissa tai ravintolassa, ja opi luonteva vastaus. Matkailun perusteet kaikilla 50 kielellä, myös offline.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6794725568?pt=118326163&ct=geo_pick&mt=8
+- [DailyMate: Lauseita elämään](https://open.cait518.cc/ios-app-guide/fi/dailymate.html) — Opi englantia ja espanjaa
+  - Opi, mitä ihmiset oikeasti sanovat: 8 400 arjen lausetta luontevine vastauksineen 47 kielellä ja 84 tilanteessa. Widget ja Apple Watch mukana. Toimii offline.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6790418321?pt=118326163&ct=geo_pick&mt=8
+- [dB Halo: Äänitasomittari](https://open.cait518.cc/ios-app-guide/fi/dbhalo.html) — Spektri, meluannos ja uni
+  - Vuodenvaihteen juhlat, meluisat naapurit tai kuorsaus pitkinä talviöinä? Näe desibelit livenä Halo-renkaassa, arvioi päivittäinen melualtistus ja kirjaa kuorsaus.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6806826699?pt=118326163&ct=geo_pick&mt=8
+- [EasyAM: Herätyskello arkeen](https://open.cait518.cc/ios-app-guide/fi/easyam.html) — Herätys ohittaa pyhät ja lomat
+  - Joulupyhät ja uudenvuodenpäivä ohitetaan automaattisesti. Lomaa välipäivinä? Lisää ne vapaapäiviksi: herätys pysyy hiljaa ja soi taas ensimmäisenä työpäivänä.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6821790092?pt=118326163&ct=geo_pick&mt=8
+- [G+Money Lite: Matkakulut](https://open.cait518.cc/ios-app-guide/fi/gmoneylite.html) — Päiväbudjetti kellossa
+  - Joulumatka tai uusivuosi ulkomailla? Kirjaa ostot paikallisessa valuutassa ja näe ne heti omassasi, aseta päiväraja. Live- tai omat kurssit toimivat myös offline.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6793436548?pt=118326163&ct=geo_pick&mt=8
+- [G+Money: Menot ja budjetti](https://open.cait518.cc/ios-app-guide/fi/gmoney.html) — Matkakulut ja valuutta
+  - Pikkujoulut, joulumatkat ja uusivuosi? Kirjaa menot kategorioittain, aseta päiväraja ja näe, paljonko tänään on jäljellä. Muunna valuutat myös offline.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6755782939?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag Lite: Hinta tunteina](https://open.cait518.cc/ios-app-guide/fi/hourstaglite.html) — Tietoinen osto: oikea hinta
+  - Vuoden lopun ostoskausi: ennen ostoa näet hinnan omina työtunteina, merkitset sen tarpeeksi, haluksi tai heräteostokseksi ja näet työn uuden vuoden tavoitteen takana.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6794039979?pt=118326163&ct=geo_pick&mt=8
+- [HoursTag: Ostotunnit](https://open.cait518.cc/ios-app-guide/fi/hourstag.html) — Tuntipalkka ja menot
+  - Joululahjat ja uudenvuoden lupaukset? Näe jokainen hinta työtunteina ennen ostoa, merkitse Tarve, Halu tai Heräte ja suunnittele toivelista tunteina.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6754218117?pt=118326163&ct=geo_pick&mt=8
+- [LED Moving Text](https://open.cait518.cc/ios-app-guide/fi/ledmovingtext.html) — Liikkuva valokyltti näytölle
+  - Tee näytöstä hetkessä kirkas liikkuva kyltti tai rakenna viestisarja, jota vaihdat napautuksella tai ajastimella. Koko näyttö, ilman verkkoa ja yksityisesti.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6806639602?pt=118326163&ct=geo_pick&mt=8
+- [LockHour Pro: Sovellusten esto](https://open.cait518.cc/ios-app-guide/fi/lockhour.html) — Ruutuaika ja sovelluslukko
+  - Lukitse aikaa vievät sovellukset ja sivustot, kunnes ajastin loppuu. Keskittymis-, opiskelu- ja unitilat, tiukka tila, tilastot ja putket. Ei tiliä tarvita.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6780107485?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo](https://open.cait518.cc/ios-app-guide/fi/lumibopomofo.html) — Zhuyin: kiinaa lapsille
+  - Ruoki merkkiystäviä äänen perusteella, jäljitä vedot oikeassa järjestyksessä, aja toonien vuoristorataa ja yhdistä äänteitä junassa. Toimii ilman nettiä.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6773017109?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Bopomofo Pro: Zhuyin](https://open.cait518.cc/ios-app-guide/fi/lumibopomofopro.html) — Mandariinin sävyt ja tehtävät
+  - Kaikki 37 zhuyin-äännettä: sävyvuoristorata, äännejuna, kalastus, kirjoitusharjoitus ja tähtikisa. Vanhemmat näkevät edistymisen ja tulostavat tehtäväarkit. Ei mainoksia.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6775773117?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Lite: ABC Kids](https://open.cait518.cc/ios-app-guide/fi/lumiletters.html) — Englannin kirjaimet lapsille
+  - Kokeile kirjainta A ja ensimmäistä planeettaa: lapsi kuulee äänteen, jäljentää sormella ja pelaa planeettavisoja. Myöhemmin voit avata kaikki 26 kirjainta. Ei mainoksia.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6778748533?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Letters Pro: ABC Phonics](https://open.cait518.cc/ios-app-guide/fi/lumiletterspro.html) — Englanti lapsille: äänteet
+  - Lapsi kuulee sanan, löytää alku-, keski- tai loppuäänteen ja jäljittää kirjaimen. 26 kirjainta, 14 planeettaa ja tulostettavat tehtävät. Ei mainoksia, toimii offline.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6778491147?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Planet: Explorer](https://open.cait518.cc/ios-app-guide/fi/lumimath.html) — Matikkapelit lapsille
+  - Oikea vastaus, ja planeetta syttyy. 46 kuvallista tehtävätyyppiä: laskeminen, plus, miinus, kertotaulu, kello, raha. Ei mainoksia, ei tilausta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6778269699?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Math Pro: Numerot](https://open.cait518.cc/ios-app-guide/fi/lumimathpro.html) — Logiikkaa ja sanatehtäviä
+  - Logiikkaa, lukujonoja ja sanatehtäviä 46 tehtävätyypissä. Heikkojen kohtien harjoitus, oppimisraportti ja tulostettavat tehtävät. Ei mainoksia eikä ostoja.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6776958488?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet](https://open.cait518.cc/ios-app-guide/fi/lumimission.html) — Palkintotaulu ja tarrataulu
+  - Vähemmän nalkutusta, enemmän onnistumisia: jokainen suoritettu tehtävä tuo tähtiä, ruokkii Lumia ja täyttää 100 tarran kirjan. Lisää omia tehtäviä. Ei mainoksia.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6779750237?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Mission Planet Pro](https://open.cait518.cc/ios-app-guide/fi/lumimissionpro.html) — Aamu- ja iltarutiinit
+  - Kaikki rutiinit mukana: ruokailu, hampaiden pesu, nukkumaanmeno, siivous ja kouluun lähtö, omat tehtävät, 7 päivän yhteenveto ja iltamuistutus. Ei mainoksia.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6779745474?pt=118326163&ct=geo_pick&mt=8
+- [Lumi Sää: Ennuste ja vaatteet](https://open.cait518.cc/ios-app-guide/fi/lumiweather.html) — Lähteäkö ulos? Sade, UV, tuuli
+  - Lähteäkö nyt vai myöhemmin? Lumi tekee sääennusteesta ulkoiluindeksin 0–100 ja kertoo, mitä pukea ja tarvitaanko sateenvarjoa tai aurinkovoidetta.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6779552704?pt=118326163&ct=geo_pick&mt=8
+- [Mask My File: Poista tietosi](https://open.cait518.cc/ios-app-guide/fi/maskmyfile.html) — Suojaa ennen jakamista
+  - Passikopio joulumatkaa varten tai palkkakuitit vuokrahakemukseen? Löydä yksityiset tiedot, peitä pysyvästi vain valitsemasi ja poista metatiedot. Kaikki laitteella.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6792850916?pt=118326163&ct=geo_pick&mt=8
+- [Mochi DoneStamp: Viimeksi](https://open.cait518.cc/ios-app-guide/fi/mochidonestamp.html) — Milloin tein sen? Muistutukset
+  - Ei enää arvailua, milloin teit sen viimeksi. Leimaa tehdyksi, Mochi muistaa ja muistuttaa, kun on taas aika. Lakanat, suodattimet, kasvit, puhelut, myös perheen kanssa.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6790800323?pt=118326163&ct=geo_pick&mt=8
+- [Mochi: Söpö tehtävälista](https://open.cait518.cc/ios-app-guide/fi/mochi.html) — Tehtävät, muistutukset, widget
+  - Halloweenista jouluun: opiskelu, työt ja ostokset söpössä listassa. Napauta pientä ympyrää, kun asia on tehty, valitse teema ja lisää suloisia widgettejä aloitusnäytölle.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6785004775?pt=118326163&ct=geo_pick&mt=8
+- [MoneyTag: Tulot ja menot](https://open.cait518.cc/ios-app-guide/fi/moneytag.html) — Projektit · Tunnisteet
+  - Sivukeikka tai myyntipöytä ennen vuodenvaihdetta? Projektisi näyttää tulot miinus menot yhtenä selkeänä nettotuloksena valitsemassasi valuutassa. Kirjaa Apple Watchilla.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6801956402?pt=118326163&ct=geo_pick&mt=8
+- [OnePage PPT: tekoälyesitys](https://open.cait518.cc/ios-app-guide/fi/onepageppt.html) — Muistiinpanoista yksi dia
+  - Vuoden yhteenveto ennen joulua? Liitä muistiinpanot, PDF, kuvakaappaus tai CSV ja saat selkeän 16:9-dian: pääkohdat otsikoiksi, luvut kaavioiksi. Vie PNG-kuvana.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6798814385?pt=118326163&ct=geo_pick&mt=8
+- [PhotoCream Pro: Filmifiltterit](https://open.cait518.cc/ios-app-guide/fi/photocream.html) — Filmikamera ja retrosuotimet
+  - Jouluvalot ja perheillalliset lämpimässä sisävalossa? Säädä valoa, värejä ja käyriä, retusoi iho yksityiskohtia menettämättä ja lisää filmirae vuoden albumiin.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6781808054?pt=118326163&ct=geo_pick&mt=8
+- [PicClear Pro: Kuvien siivous](https://open.cait518.cc/ios-app-guide/fi/picclear.html) — Poista kuvakaappaukset
+  - Muisti täynnä? Vapauta gigatavuja: löydä kaksoiskuvat, samankaltaiset kuvat, vanhat kuvakaappaukset ja isot videot, ja tarkista kaikki ennen poistoa.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6780223070?pt=118326163&ct=geo_pick&mt=8
+- [QR Code Halo: skannaa ja luo](https://open.cait518.cc/ios-app-guide/fi/qrcodehalo.html) — Avaa heti, tarkista myöhemmin
+  - Skannaa, ja se on tehty: linkit aukeavat, Wi-Fi näyttää iOS:n kyselyn, puhelut ja sähköpostit ovat valmiina. Jokaisella tallennetulla skannauksella on Turvatarkistus.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6806779853?pt=118326163&ct=geo_pick&mt=8
+- [SaveTag: tekoälykirjanmerkit](https://open.cait518.cc/ios-app-guide/fi/savetag.html) — Tallenna linkit, lue myöhemmin
+  - Lahjaideat, jouluruokien reseptit ja matkakohteet hukassa chateissa? Jaa linkki mistä tahansa apista: se tagataan laitteellasi ja löytyy merkityksen perusteella.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6802505528?pt=118326163&ct=geo_pick&mt=8
+- [ScanTo Pro: PDF ja OCR](https://open.cait518.cc/ios-app-guide/fi/scanto.html) — Yksityinen asiakirjaskanneri
+  - Joululahjojen kuitit, takuutodistukset ja vuodenvaihteen laskut? Skannaa ne teräviksi PDF:iksi, ja laitteen OCR löytää jokaisen yhdellä sanalla. Ilman verkkoa ja tiliä.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6779977651?pt=118326163&ct=geo_pick&mt=8
+- [Sereno: Uniäänet](https://open.cait518.cc/ios-app-guide/fi/sereno.html) — Valkoinen kohina, sade ja meri
+  - Sade, meri, tuli ja muut: yli 140 rauhoittavaa ääntä uneen ja keskittymiseen. Miksaa itse, nukahda hiljalleen vaimenevaan ääneen, herää linnunlauluun. Offline, ei tiliä.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6788236641?pt=118326163&ct=geo_pick&mt=8
+- [ShotInbox AI: Sort Screenshots](https://open.cait518.cc/ios-app-guide/fi/shotinbox.html) — Löydä ja järjestä näyttökuvat
+  - Joululahjat ja talvimatkat jättävät kuitit, liput ja tilaukset kuvakaappauksiksi. Ne järjestyvät itse, haet tekstiä, seuraat paketteja ja siivoat loput.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6802166527?pt=118326163&ct=geo_pick&mt=8
+- [Snapport Lite: Ota passikuvat](https://open.cait518.cc/ios-app-guide/fi/snapportlite.html) — Muotokuvat tarkkaan kokoon
+  - Joulumatka tai passin uusiminen? Rajaa kuva tarkkaan kokoon valmiilla pohjilla, kasvojen apuviivoilla ja valkoisella tai sinisellä taustalla, suoraan laitteellasi.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6792856304?pt=118326163&ct=geo_pick&mt=8
+- [Snapport: Passikuvat](https://open.cait518.cc/ios-app-guide/fi/snapport.html) — 35x45 ja tulostusarkki
+  - Joulumatka tai uusi passi? Ota passi- ja viisumikuva kotona: yleisten kokojen mallipohjat, apuviivat kasvoille, valkoinen tausta ja tulostusvalmiit arkit.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6780575828?pt=118326163&ct=geo_pick&mt=8
+- [Sono Note](https://open.cait518.cc/ios-app-guide/fi/sononote.html) — Puhe tekstiksi · Äänimuistio
+  - Puhu, ja Sono Note tekee siitä siistin litteroinnin, yhteenvedon, pääkohdat ja tehtävät, jopa seurantaviestin. Kokouksiin, luennoille ja puheluihin. Ei tiliä tarvita.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6782139553?pt=118326163&ct=geo_pick&mt=8
+- [Stay Clock: Pöytäkello](https://open.cait518.cc/ios-app-guide/fi/stayclock.html) — Aika ja kalenteri, aina päällä
+  - Pimeät illat jouluun asti: latautuessaan puhelin muuttuu suureksi kelloksi, joka näkyy huoneen toiselle puolelle. Kuukausikalenteri, tuntimerkki ja herätys.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6814035888?pt=118326163&ct=geo_pick&mt=8
+- [Studydown: Ajastin](https://open.cait518.cc/ios-app-guide/fi/studydown.html) — Käännä se näyttö alaspäin
+  - Tentit ja palautukset vuoden lopussa? Valitse aktiviteetti, aseta puhelin näyttö alaspäin, ja aika kulkee; kun nostat sen, laskenta tauottuu. Näe päivä ja viikko.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6807335593?pt=118326163&ct=geo_pick&mt=8
+- [Trip Planet: Matkaseikkailu](https://open.cait518.cc/ios-app-guide/fi/tripplanet.html) — Lomatehtäviä koko perheelle
+  - Lennot, automatkat ja uudet paikat muuttuvat tehtäviksi: turvavyö kiinni, kiitos miehistölle, maista palanen. Tehtävistä palkintoja, valmiista matkoista passileimoja.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6787193643?pt=118326163&ct=geo_pick&mt=8
+- [TripBee Lite: Matkasuunnitelma](https://open.cait518.cc/ios-app-guide/fi/tripbeelite.html) — Lomaohjelma päivä kerrallaan
+  - Jouluksi kotiin vai uudeksivuodeksi reissuun? Kokoa matka yhdelle päivittäiselle aikajanalle: lennot, majoitus, muistiinpanot, muistutukset ja lipputiedot yhdessä.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6791299610?pt=118326163&ct=geo_pick&mt=8
+- [TripBee: Matkasuunnittelu](https://open.cait518.cc/ios-app-guide/fi/tripbee.html) — Ryhmämatka ja pakkauslista
+  - Muokatkaa samaa matkaa perheen tai ystävien kanssa, lisää jokaiselle päivälle sadesuunnitelma ja saa muistutukset paikallista aikaa. Pakkauslista mukautuu jokaiselle.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6787754435?pt=118326163&ct=geo_pick&mt=8
+- [Unblurry Pro: Terävät kuvat](https://open.cait518.cc/ios-app-guide/fi/unblurry.html) — Palauta vanhat valokuvat
+  - Kaamos, pikkujoulut ja joulun valot: sumeita tai liian tummia kuvia? Terävöitä, vähennä kohinaa ja pelasta hämärät kuvat suoraan iPhonessa. Ei pilveä, ei tiliä.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6782275018?pt=118326163&ct=geo_pick&mt=8
+- [UsageNow: Tekoälyn käyttö](https://open.cait518.cc/ios-app-guide/fi/claudeusagemini.html) — Claude, Codex ja Copilot rajat
+  - Omat ilmoitukset millä prosentilla tahansa, järjestys 5 tunnin tai viikon nollauksen mukaan ja tilien selaus widgetissä. Näe, paljonko kustakin AI-paketista on jäljellä.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6818607603?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid Lite](https://open.cait518.cc/ios-app-guide/fi/wifiaidlite.html) — Ei nettiä? Löydä syy
+  - Ei nettiä? Onko vika wifissä, operaattorissa vai yhdessä sivustossa? Yksi napautus ajaa itsenäiset tarkistukset ja näyttää todennäköisimmän syyn ja seuraavat askeleet.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6793414462?pt=118326163&ct=geo_pick&mt=8
+- [WiFi Aid: Löydä verkon viat](https://open.cait518.cc/ios-app-guide/fi/wifiaid.html) — Reititin, mesh, DNS: diagnoosi
+  - Joululomalla koko perhe samassa Wi-Fissä? Kun yhteys takkuaa, tarkista Wi-Fi, DNS ja internet yhdellä napautuksella ja näe todennäköisin syy tai testaa sivusto.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6790467886?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate Lite: Sanasto](https://open.cait518.cc/ios-app-guide/fi/wordmatelite.html) — Viisi uutta sanaa päivässä
+  - Viisi sanaa, minuutti päivässä, millä tahansa 44 kielestä. Kuuntele sana, näe se lauseessa ja pidä putki käynnissä. Toimii offline, ei tiliä.
+  - Hinta: Lataa ilmaiseksi. Kertaostoksella avaat kaikki ominaisuudet—ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6797601720?pt=118326163&ct=geo_pick&mt=8
+- [Wordmate: Opi 44 kieltä](https://open.cait518.cc/ios-app-guide/fi/wordmate.html) — Sanasto, sanakortit ja widget
+  - Joulumatka tai uudenvuodenlupaus? Opi sanoja 44 kielellä pienissä tauoissa: 14 käytännön aihetta, esimerkkilauseet ja kuunneltava ääntäminen. Jatka widgetistä.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6789917808?pt=118326163&ct=geo_pick&mt=8
+- [Zipbox: avaa RAR, ZIP, 7z](https://open.cait518.cc/ios-app-guide/fi/zipbox.html) — Pura ilman mainoksia
+  - Joulukuvat salasanalla suojatussa 7z-paketissa tai osiin jaettu ZIP? Kurkista sisään, esikatsele kuvat ja PDF:t ja pura vain tarvitsemasi. Ei mainoksia.
+  - Hinta: Maksullinen lataus yhdellä kiinteällä hinnalla, ei tilausta.
+  - App Store: https://apps.apple.com/fi/app/id6806776579?pt=118326163&ct=geo_pick&mt=8

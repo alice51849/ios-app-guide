@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- guide-design:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/guide-premium-v1.css">
+<!-- guide-design:end -->
+<title>WiFi Aid Lite：网络故障检测 — 上不了网？一键找出原因 | iOS App</title>
+<meta name="description" content="“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测 DNS、TCP、TLS、响应时间与稳定性,交叉比对各项证据,告诉你最可能的故障原因,不必再瞎猜、重启碰运气。">
+<meta name="keywords" content="断网, 没网, 连不上, 无法上网, 网络卡, 卡顿, 不稳定, Ping, 测试, 排除, 修复, 连接, 网站, 网页, 打不开, 登录页, 认证, 酒店, 宿舍, 校园网, 热点, 公共, 运营商, 信号, 重连, 断断续续">
+<link rel="canonical" href="https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaidlite.html">
+<!-- smart-app-banner:start -->
+<meta name="apple-itunes-app" content="app-id=6793414462, affiliate-data=pt=118326163&amp;ct=geo_pick&amp;mt=8">
+<!-- smart-app-banner:end -->
+<!-- social-preview:start -->
+<meta property="og:title" content="WiFi Aid Lite：网络故障检测 — 上不了网？一键找出原因 | iOS App">
+<meta property="og:type" content="product">
+<meta property="og:url" content="https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaidlite.html">
+<meta property="og:image" content="https://open.cait518.cc/ios-app-guide/social/img/wifiaidlite-share.jpg">
+<meta property="og:image:secure_url" content="https://open.cait518.cc/ios-app-guide/social/img/wifiaidlite-share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="WiFi Aid Lite：网络故障检测 — 上不了网？一键找出原因 | iOS App">
+<meta property="og:description" content="App Store · 免费. “网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测 DNS、TCP、TLS、响应时间与稳定性,交叉比对各项证据,告诉你最可能的故障原因,不必再瞎猜、重启碰运气。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:site_name" content="iOS App Guide">
+<meta property="product:price:amount" content="0">
+<meta property="product:price:currency" content="CNY">
+<meta property="product:availability" content="instock">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<script type="application/ld+json" data-iag="primary-image">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaidlite.html#webpage",
+  "url": "https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaidlite.html",
+  "name": "WiFi Aid Lite：网络故障检测 — 上不了网？一键找出原因 | iOS App",
+  "description": "“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测 DNS、TCP、TLS、响应时间与稳定性,交叉比对各项证据,告诉你最可能的故障原因,不必再瞎猜、重启碰运气。",
+  "inLanguage": "zh-Hans",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "@id": "https://open.cait518.cc/ios-app-guide/social/img/wifiaidlite-share.jpg#primaryimage",
+    "contentUrl": "https://open.cait518.cc/ios-app-guide/social/img/wifiaidlite-share.jpg",
+    "url": "https://open.cait518.cc/ios-app-guide/social/img/wifiaidlite-share.jpg",
+    "width": 1200,
+    "height": 675,
+    "encodingFormat": "image/jpeg",
+    "caption": "WiFi Aid Lite：网络故障检测 — 上不了网？一键找出原因 | iOS App",
+    "representativeOfPage": true
+  },
+  "mainEntity": {
+    "@id": "https://apps.apple.com/app/id6793414462"
+  }
+}
+</script>
+<style>
+.iag-app-preview{margin:clamp(1rem,3vw,1.5rem) 0 clamp(1.5rem,4vw,2.25rem)}
+.iag-app-preview__link{display:block;position:relative;width:100%;max-width:1200px;margin:0 auto;overflow:hidden;border-radius:clamp(14px,2.2vw,24px);background:#0b1020;box-shadow:0 18px 50px rgba(15,23,42,.22);line-height:0}
+.iag-app-preview__link::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.28);border-radius:inherit;pointer-events:none}
+.iag-app-preview__link:focus-visible{outline:3px solid #2563eb;outline-offset:4px}
+.iag-app-preview__image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+@media(hover:hover){.iag-app-preview__link:hover{box-shadow:0 22px 60px rgba(15,23,42,.3)}}
+</style>
+<meta name="twitter:card" content="app">
+<meta name="twitter:title" content="WiFi Aid Lite：网络故障检测 — 上不了网？一键找出原因 | iOS App">
+<meta name="twitter:description" content="App Store · 免费. “网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测 DNS、TCP、TLS、响应时间与稳定性,交叉比对各项证据,告诉你最可能的故障原因,不必再瞎猜、重启碰运气。">
+<meta name="twitter:image" content="https://open.cait518.cc/ios-app-guide/social/img/wifiaidlite-share.jpg">
+<meta name="twitter:image:alt" content="WiFi Aid Lite：网络故障检测 — 上不了网？一键找出原因 | iOS App">
+<meta name="twitter:app:name:iphone" content="WiFi Aid Lite">
+<meta name="twitter:app:id:iphone" content="6793414462">
+<meta name="twitter:app:name:ipad" content="WiFi Aid Lite">
+<meta name="twitter:app:id:ipad" content="6793414462">
+<meta name="twitter:label1" content="App Store">
+<meta name="twitter:data1" content="免费">
+<link rel="alternate" type="application/json+oembed" href="https://open.cait518.cc/ios-app-guide/oembed/zh-Hans/wifiaidlite.json?url=https%3A%2F%2Fopen.cait518.cc%2Fios-app-guide%2Fzh-Hans%2Fwifiaidlite.html&amp;format=json" title="WiFi Aid Lite：网络故障检测 — 上不了网？一键找出原因 | iOS App">
+<!-- social-preview:end -->
+<link rel="alternate" hreflang="ar-SA" href="https://open.cait518.cc/ios-app-guide/ar-SA/wifiaidlite.html">
+<link rel="alternate" hreflang="bn-BD" href="https://open.cait518.cc/ios-app-guide/bn-BD/wifiaidlite.html">
+<link rel="alternate" hreflang="ca" href="https://open.cait518.cc/ios-app-guide/ca/wifiaidlite.html">
+<link rel="alternate" hreflang="cs" href="https://open.cait518.cc/ios-app-guide/cs/wifiaidlite.html">
+<link rel="alternate" hreflang="da" href="https://open.cait518.cc/ios-app-guide/da/wifiaidlite.html">
+<link rel="alternate" hreflang="de-DE" href="https://open.cait518.cc/ios-app-guide/de-DE/wifiaidlite.html">
+<link rel="alternate" hreflang="el" href="https://open.cait518.cc/ios-app-guide/el/wifiaidlite.html">
+<link rel="alternate" hreflang="en-AU" href="https://open.cait518.cc/ios-app-guide/en-AU/wifiaidlite.html">
+<link rel="alternate" hreflang="en-CA" href="https://open.cait518.cc/ios-app-guide/en-CA/wifiaidlite.html">
+<link rel="alternate" hreflang="en-GB" href="https://open.cait518.cc/ios-app-guide/en-GB/wifiaidlite.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/ios-app-guide/en-US/wifiaidlite.html">
+<link rel="alternate" hreflang="es-ES" href="https://open.cait518.cc/ios-app-guide/es-ES/wifiaidlite.html">
+<link rel="alternate" hreflang="es-MX" href="https://open.cait518.cc/ios-app-guide/es-MX/wifiaidlite.html">
+<link rel="alternate" hreflang="fi" href="https://open.cait518.cc/ios-app-guide/fi/wifiaidlite.html">
+<link rel="alternate" hreflang="fr-CA" href="https://open.cait518.cc/ios-app-guide/fr-CA/wifiaidlite.html">
+<link rel="alternate" hreflang="fr-FR" href="https://open.cait518.cc/ios-app-guide/fr-FR/wifiaidlite.html">
+<link rel="alternate" hreflang="gu-IN" href="https://open.cait518.cc/ios-app-guide/gu-IN/wifiaidlite.html">
+<link rel="alternate" hreflang="he" href="https://open.cait518.cc/ios-app-guide/he/wifiaidlite.html">
+<link rel="alternate" hreflang="hi" href="https://open.cait518.cc/ios-app-guide/hi/wifiaidlite.html">
+<link rel="alternate" hreflang="hr" href="https://open.cait518.cc/ios-app-guide/hr/wifiaidlite.html">
+<link rel="alternate" hreflang="hu" href="https://open.cait518.cc/ios-app-guide/hu/wifiaidlite.html">
+<link rel="alternate" hreflang="id" href="https://open.cait518.cc/ios-app-guide/id/wifiaidlite.html">
+<link rel="alternate" hreflang="it" href="https://open.cait518.cc/ios-app-guide/it/wifiaidlite.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/ios-app-guide/ja/wifiaidlite.html">
+<link rel="alternate" hreflang="kn-IN" href="https://open.cait518.cc/ios-app-guide/kn-IN/wifiaidlite.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/ios-app-guide/ko/wifiaidlite.html">
+<link rel="alternate" hreflang="ml-IN" href="https://open.cait518.cc/ios-app-guide/ml-IN/wifiaidlite.html">
+<link rel="alternate" hreflang="mr-IN" href="https://open.cait518.cc/ios-app-guide/mr-IN/wifiaidlite.html">
+<link rel="alternate" hreflang="ms" href="https://open.cait518.cc/ios-app-guide/ms/wifiaidlite.html">
+<link rel="alternate" hreflang="nl-NL" href="https://open.cait518.cc/ios-app-guide/nl-NL/wifiaidlite.html">
+<link rel="alternate" hreflang="no" href="https://open.cait518.cc/ios-app-guide/no/wifiaidlite.html">
+<link rel="alternate" hreflang="or-IN" href="https://open.cait518.cc/ios-app-guide/or-IN/wifiaidlite.html">
+<link rel="alternate" hreflang="pa-IN" href="https://open.cait518.cc/ios-app-guide/pa-IN/wifiaidlite.html">
+<link rel="alternate" hreflang="pl" href="https://open.cait518.cc/ios-app-guide/pl/wifiaidlite.html">
+<link rel="alternate" hreflang="pt-BR" href="https://open.cait518.cc/ios-app-guide/pt-BR/wifiaidlite.html">
+<link rel="alternate" hreflang="pt-PT" href="https://open.cait518.cc/ios-app-guide/pt-PT/wifiaidlite.html">
+<link rel="alternate" hreflang="ro" href="https://open.cait518.cc/ios-app-guide/ro/wifiaidlite.html">
+<link rel="alternate" hreflang="ru" href="https://open.cait518.cc/ios-app-guide/ru/wifiaidlite.html">
+<link rel="alternate" hreflang="sk" href="https://open.cait518.cc/ios-app-guide/sk/wifiaidlite.html">
+<link rel="alternate" hreflang="sl-SI" href="https://open.cait518.cc/ios-app-guide/sl-SI/wifiaidlite.html">
+<link rel="alternate" hreflang="sv" href="https://open.cait518.cc/ios-app-guide/sv/wifiaidlite.html">
+<link rel="alternate" hreflang="ta-IN" href="https://open.cait518.cc/ios-app-guide/ta-IN/wifiaidlite.html">
+<link rel="alternate" hreflang="te-IN" href="https://open.cait518.cc/ios-app-guide/te-IN/wifiaidlite.html">
+<link rel="alternate" hreflang="th" href="https://open.cait518.cc/ios-app-guide/th/wifiaidlite.html">
+<link rel="alternate" hreflang="tr" href="https://open.cait518.cc/ios-app-guide/tr/wifiaidlite.html">
+<link rel="alternate" hreflang="uk" href="https://open.cait518.cc/ios-app-guide/uk/wifiaidlite.html">
+<link rel="alternate" hreflang="ur-PK" href="https://open.cait518.cc/ios-app-guide/ur-PK/wifiaidlite.html">
+<link rel="alternate" hreflang="vi" href="https://open.cait518.cc/ios-app-guide/vi/wifiaidlite.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaidlite.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/ios-app-guide/zh-Hant/wifiaidlite.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/ios-app-guide/en-US/wifiaidlite.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"WiFi Aid Lite：网络故障检测","operatingSystem":"iOS","applicationCategory":"UtilitiesApplication","description":"“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测 DNS、TCP、TLS、响应时间与稳定性,交叉比对各项证据,告诉你最可能的故障原因,不必再瞎猜、重启碰运气。\n\n• 运行检查:一键完成 Wi-Fi、DNS 与互联网连接的完整检测,几秒内即可看到结果与诊断结论。\n• 深度检查:收集更多证据与稳定性样本,适合排查时好时坏的间歇性问题。\n• 网站检查:输入任意网址,立刻判断是单个网站出问题,还是整个网络都有故障。\n• 完整证据:DNS、TCP、TLS、TTFB、HTTP、直连 IP、IPv4 与 IPv6 逐项列出,每个结论都有依据。\n• 稳定性分析:通过连续采样观察延迟抖动,找出“看着连上了、用起来却很卡”的不稳定连接。\n• 检查记录:历次结果自动保存,方便比对网络状况的变化;所有记录仅保存在你的设备上。\n• 当前节点:通过精确位置识别当前连接的 Wi-Fi 与节点;位置信息仅用于此用途,且仅在本机处理。\n\n无需购买即可完整体验:所有工具合计可完整检查一次,任选一项工具即可,不是功能残缺的试用版。觉得好用,再通过一次性 App 内购买解锁,即可不限次数使用全部工具,并查看修复前后对照——一次解锁,绝无订阅。\n\n无需账号,没有广告、没有分析工具、没有任何跟踪;检查记录仅存本机,不上传云端。","url":"https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8","installUrl":"https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8","featureList":["断网","没网","连不上","无法上网","网络卡","卡顿","不稳定","Ping"],"keywords":"断网, 没网, 连不上, 无法上网, 网络卡, 卡顿, 不稳定, Ping, 测试, 排除, 修复, 连接, 网站, 网页, 打不开, 登录页, 认证, 酒店, 宿舍, 校园网, 热点, 公共, 运营商, 信号, 重连, 断断续续","@id":"https://apps.apple.com/app/id6793414462","identifier":{"@type":"PropertyValue","propertyID":"Apple App Store ID","value":"6793414462"},"downloadUrl":"https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8","potentialAction":{"@type":"InstallAction","target":"https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8"},"mainEntityOfPage":{"@id":"https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaidlite.html#webpage"},"offers":{"@type":"Offer","price":"0","priceCurrency":"CNY","url":"https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8","availability":"https://schema.org/InStock"}}</script>
+<!-- app-store-facts-style:start -->
+<link rel="stylesheet" href="https://open.cait518.cc/ios-app-guide/assets/app-store-facts-v1.css">
+<!-- app-store-facts-style:end -->
+<script type="application/ld+json" data-first-party-disclosure="publisher">{"@context":"https://schema.org","@type":"WebSite","@id":"https://open.cait518.cc/ios-app-guide/#website","url":"https://open.cait518.cc/ios-app-guide","publisher":{"@type":"Organization","@id":"https://open.cait518.cc/ios-app-guide/#organization","name":"Lumi Studio","url":"https://open.cait518.cc/ios-app-guide/about.html","description":"Developer of the featured apps and operator of this site."}}</script>
+<!-- app-store-qr-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-store-qr-v1.css">
+<!-- app-store-qr-style:end -->
+<!-- app-decision-card-style:start -->
+<link rel="stylesheet" href="/ios-app-guide/assets/app-decision-card-v1.css">
+<!-- app-decision-card-style:end -->
+<link rel="alternate" type="application/atom+xml" title="iOS App Guide — latest answers &amp; guides (Atom)" href="https://open.cait518.cc/ios-app-guide/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="iOS App Guide — latest answers &amp; guides (RSS 2.0)" href="https://open.cait518.cc/ios-app-guide/rss.xml">
+<link rel="alternate" type="application/feed+json" title="iOS App Guide — latest answers &amp; guides (JSON Feed 1.1)" href="https://open.cait518.cc/ios-app-guide/feed.json">
+<link rel="site.standard.publication" href="at://did:plc:kboucnzkxzmqmatvhes4xlt4/site.standard.publication/3mrocqbkyt6mg">
+</head>
+<body>
+<main>
+  <h1>WiFi Aid Lite：网络故障检测</h1>
+  <p><strong>上不了网？一键找出原因</strong></p>
+<!-- app-decision-card:start -->
+<aside class="iag-decision-card" data-app-id="6793414462" aria-label="WiFi Aid Lite：网络故障检测">
+  <img class="iag-decision-card__icon" src="/ios-app-guide/stories/img/wifiaidlite-icon.jpg" alt="" width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
+  <div class="iag-decision-card__body">
+    <strong class="iag-decision-card__title" title="WiFi Aid Lite：网络故障检测">WiFi Aid Lite：网络故障检测</strong>
+    <p class="iag-decision-card__promise" title="上不了网？一键找出原因">上不了网？一键找出原因</p>
+    <div class="iag-decision-card__facts"><span class="iag-decision-card__fact" title="断网">断网</span><span class="iag-decision-card__fact" title="没网">没网</span><span class="iag-decision-card__fact" title="连不上">连不上</span><span class="iag-decision-card__fact" title="无法上网">无法上网</span></div>
+    <div class="iag-decision-card__storefront"><span>App Store</span><span aria-hidden="true"> · </span><data value="0">免费</data></div>
+    <p class="iag-decision-card__terms" title="免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。">免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。</p>
+    <a class="iag-decision-card__cta" href="https://apps.apple.com/cn/app/id6793414462?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" aria-label="在 App Store 获取 WiFi Aid Lite：网络故障检测" title="在 App Store 获取 WiFi Aid Lite：网络故障检测">在 App Store 获取 WiFi Aid Lite：网络故障检测</a>
+  </div>
+</aside>
+<!-- app-decision-card:end --><!-- hero-task-resources-v1:start --><section class="hero-resource" data-primary-resource="hero-task"><article><h2>家庭带宽需求表</h2><p>列出家里同时在线做的事和设备数，就能算出需要多少 Mbps、当前套餐还剩多少余量，并下载成表。</p><a class="button" href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/bandwidth-need-sheet.html">你的带宽需求表</a> <a href="https://open.cait518.cc/ios-app-guide/zh-Hans/tools/results/bandwidth-need-sheet.csv" download>下载示例 CSV</a><p>每行小计＝设备数 × 每台数值。所需＝各行相加。余量＝套餐－所需；低于套餐 20% 为偏紧，小于零为不足。以 0.1 Mbps 为单位整数相加，合计不会漂移。</p></article></section><!-- hero-task-resources-v1:end -->
+<!-- app-store-qr:start -->
+<section class="app-store-qr-card" style="display:none" aria-label="在 App Store 获取 WiFi Aid Lite：网络故障检测">
+<a class="app-store-qr-card__link" href="https://apps.apple.com/cn/app/id6793414462?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener">
+<img class="app-store-qr-card__image" src="/ios-app-guide/assets/app-store-qr/id6793414462-c4f7b61885724b12bafa.svg" width="164" height="164" alt="" decoding="async">
+<span class="app-store-qr-card__copy"><strong class="app-store-qr-card__label">在 App Store 获取 WiFi Aid Lite：网络故障检测</strong><span class="app-store-qr-card__url" data-store-url="https://apps.apple.com/cn/app/id6793414462" aria-hidden="true"></span><span class="app-store-qr-card__badge-wrap"><img class="app-store-qr-card__badge" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/zh-cn?size=250x83" width="120" height="40" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span></span>
+</a>
+</section>
+<!-- app-store-qr:end -->
+<!-- app-hook-clip:start -->
+<figure class="app-hook-clip" data-app-key="wifiaidlite" lang="en" style="margin:18px 0;max-width:300px">
+<video controls playsinline muted loop preload="none" poster="https://open.cait518.cc/ios-app-guide/assets/hook-clips/hj5ucn.jpg" width="1080" height="1920" style="display:block;width:100%;aspect-ratio:9/16;border-radius:18px;background:#111;object-fit:contain" aria-label="Wi-Fi slow again? | WiFi Aid Lite: Network Check"><source src="https://files.catbox.moe/hj5ucn.mp4" type="video/mp4"></video>
+<figcaption style="margin-top:6px;font-size:14px;color:#6b6257">Wi-Fi slow again?</figcaption>
+</figure>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"Wi-Fi slow again? | WiFi Aid Lite: Network Check","description":"“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测 DNS、TCP、TLS、响应时间与稳定性,交叉比对各项证据,告诉你最可能的故障原因,不必再瞎猜、重启碰运气。","thumbnailUrl":["https://open.cait518.cc/ios-app-guide/assets/hook-clips/hj5ucn.jpg"],"uploadDate":"2026-10-18T00:00:00+00:00","contentUrl":"https://files.catbox.moe/hj5ucn.mp4","duration":"PT7S","inLanguage":"en"}</script>
+<!-- app-hook-clip:end -->
+<h2>WiFi Aid Lite：网络故障检测 是什么?</h2>
+  <p>WiFi Aid Lite：网络故障检测 是一款 iOS App。 上不了网？一键找出原因</p>
+  <p>“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测 DNS、TCP、TLS、响应时间与稳定性,交叉比对各项证据,告诉你最可能的故障原因,不必再瞎猜、重启碰运气。</p>
+  <p>• 运行检查:一键完成 Wi-Fi、DNS 与互联网连接的完整检测,几秒内即可看到结果与诊断结论。</p>
+  <p>• 深度检查:收集更多证据与稳定性样本,适合排查时好时坏的间歇性问题。</p>
+  <p>• 网站检查:输入任意网址,立刻判断是单个网站出问题,还是整个网络都有故障。</p>
+  <p>• 完整证据:DNS、TCP、TLS、TTFB、HTTP、直连 IP、IPv4 与 IPv6 逐项列出,每个结论都有依据。</p>
+  <p>• 稳定性分析:通过连续采样观察延迟抖动,找出“看着连上了、用起来却很卡”的不稳定连接。</p>
+  <p>• 检查记录:历次结果自动保存,方便比对网络状况的变化;所有记录仅保存在你的设备上。</p>
+  <p>• 当前节点:通过精确位置识别当前连接的 Wi-Fi 与节点;位置信息仅用于此用途,且仅在本机处理。</p>
+  <p>无需购买即可完整体验:所有工具合计可完整检查一次,任选一项工具即可,不是功能残缺的试用版。觉得好用,再通过一次性 App 内购买解锁,即可不限次数使用全部工具,并查看修复前后对照——一次解锁,绝无订阅。</p>
+  <p>无需账号,没有广告、没有分析工具、没有任何跟踪;检查记录仅存本机,不上传云端。</p>
+
+  <h2>主要功能</h2>
+  <ul>
+    <li>断网</li>
+    <li>没网</li>
+    <li>连不上</li>
+    <li>无法上网</li>
+    <li>网络卡</li>
+    <li>卡顿</li>
+    <li>不稳定</li>
+    <li>Ping</li>
+  </ul>
+
+  <h2>价格</h2>
+  <p>免费下载,一次性购买即可解锁全部功能,没有订阅陷阱。</p>
+
+  <h2>下载</h2>
+  <p><a href="https://apps.apple.com/cn/app/id6793414462?pt=118326163&amp;ct=geo_pick&amp;mt=8">在 App Store 获取 WiFi Aid Lite：网络故障检测</a></p>
+  <p class="android-play" data-android-play="com.alice51849.WiFiAidLite">Android: <a href="https://play.google.com/store/apps/details?id=com.alice51849.WiFiAidLite&amp;referrer=utm_source%3Dgeo_pick%26utm_campaign%3Dwifiaidlite" rel="noopener">Google Play</a></p>
+<p class="publisher-disclosure" data-publisher-disclosure="true"><small>这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。</small></p>
+<!-- app-store-facts:start -->
+<aside class="iag-store-facts" aria-label="App Store">
+<a class="iag-store-facts__link" href="https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8" rel="nofollow noopener">
+<span>App Store</span><span aria-hidden="true">&middot;</span><data value="0">免费</data>
+</a>
+</aside>
+<!-- app-store-facts:end -->
+</main>
+<!-- webmcp-install-tool:start -->
+<script type="application/json" id="iag-webmcp-install-data">{"app_store_id":"6793414462","app_name":"WiFi Aid Lite","page_language":"zh-Hans","page_url":"https://open.cait518.cc/ios-app-guide/zh-Hans/wifiaidlite.html","app_store_url":"https://apps.apple.com/cn/app/id6793414462?pt=118326163&ct=geo_pick&mt=8","localized_description":"“网络又卡了”——问题到底出在路由器、DNS、运营商,还是网站本身?WiFi Aid Lite 通过多条独立路径同时检测 DNS、TCP、TLS、响应时间与稳定性,交叉比对各项证据,告诉你最可能的故障原因,不必再瞎猜、重启碰运气。","storefront_facts":{"price":"0","currency":"CNY","formatted_price":"免费"}}</script>
+<script src="https://open.cait518.cc/ios-app-guide/assets/webmcp-install-tool-v2.js" data-webmcp-install="iag-webmcp-install-data" defer></script>
+<!-- webmcp-install-tool:end -->
+<!-- mobile-store-cta:start -->
+<div class="mobile-store-cta" data-mobile-store-cta hidden aria-hidden="true">
+<a class="mobile-store-cta__link" href="https://apps.apple.com/cn/app/id6793414462?pt=118326163&amp;ct=geo_pick&amp;mt=8" rel="nofollow noopener" tabindex="-1" aria-label="在 App Store 获取 WiFi Aid Lite：网络故障检测" title="在 App Store 获取 WiFi Aid Lite：网络故障检测"><span class="mobile-store-cta__label">App Store</span></a>
+</div>
+<script src="/ios-app-guide/assets/mobile-store-cta-v1.js" defer></script>
+<!-- mobile-store-cta:end -->
+<!-- app-store-share:start -->
+<script src="/ios-app-guide/assets/app-store-share-v1.js" data-app-store-share="6793414462" data-app-store-url="https://apps.apple.com/cn/app/id6793414462?pt=118326163&amp;ct=geo_pick&amp;mt=8" defer></script>
+<!-- app-store-share:end -->
+</body>
+</html>

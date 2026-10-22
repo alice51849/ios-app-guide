@@ -1,0 +1,28 @@
+---
+title: "HoursTag：价格换工时 — 月薪时薪计算・花费记账本 | iOS App"
+lang: "zh-Hans"
+canonical: "https://open.cait518.cc/ios-app-guide/apps/hourstag/decision/l/zh-Hans/index.html"
+modified: "2026-10-21"
+app_store_id: "6754218117"
+verified_live: true
+purchase_model: "paid_upfront"
+publisher: "Lumi Studio"
+---
+
+# HoursTag：价格换工时 — 月薪时薪计算・花费记账本 | iOS App
+
+这真正要花你多少？不是多少钱——是你生命中的几个小时。
+
+- 理财与出行
+- 付费下载
+- 无需账户
+- 无广告
+- 无跟踪
+- 私密 / 设备本地
+- App Store · ¥38.00
+
+[在 App Store 获取 HoursTag：价格换工时](https://apps.apple.com/cn/app/id6754218117?pt=118326163&ct=geo_pick&mt=8)
+
+[阅读完整指南](https://open.cait518.cc/ios-app-guide/zh-Hans/hourstag.html)
+
+> 这是由 Lumi Studio 发布的第一方资料；Lumi Studio 是每款列出 App 的开发者。

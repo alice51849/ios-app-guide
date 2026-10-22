@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T14:13:13Z",
+  "updated_at": "2026-10-22T05:13:06Z",
   "note": "Planned by 00_GrowthEngine shorts/scripts/schedule_posts.py; each clip at most once per channel.",
   "clips": {
     "mochi/en": {
@@ -17864,6 +17864,234 @@
         }
       ],
       "hook_best": "b"
+    },
+    "mochi_halloween/en": {
+      "app": "mochi_halloween",
+      "locale": "en",
+      "url": "https://files.catbox.moe/fmkl36.mp4",
+      "store_url": "https://apps.apple.com/us/app/id6785004775?pt=118326163&ct=h7_mochi_halloween&mt=8",
+      "hook": "Cute to do list for Halloween prep",
+      "name": "Mochi: Cute Checklist",
+      "search": "Mochi Cute Checklist",
+      "tags": [
+        "#Simple",
+        "#Routine",
+        "#Reminder",
+        "#Planner",
+        "#Agenda",
+        "#MochiCuteChecklist"
+      ],
+      "keywords": [
+        "chore",
+        "chart",
+        "grocery",
+        "simple",
+        "routine",
+        "reminder"
+      ],
+      "keyline": "Kawaii To-Do List & Chores",
+      "compliance": {
+        "store_claims_ok": true,
+        "screen_text_ok": true,
+        "board": "f13ffb6a085ca841",
+        "real_recording": false,
+        "rules": "2026-10-18"
+      },
+      "base": "mochi",
+      "variant": "season",
+      "window": {
+        "from": "2026-10-24",
+        "to": "2026-10-31"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Cute to do list for Halloween prep",
+          "benefit": "Costume, candy, pumpkin…tap and done"
+        },
+        {
+          "id": "b",
+          "lead": "Costume, candy, pumpkin…tap and done",
+          "benefit": "101 cute themes"
+        },
+        {
+          "id": "c",
+          "lead": "Party list on your Home Screen",
+          "benefit": "Costume, candy, pumpkin…tap and done"
+        }
+      ],
+      "hook_best": "b"
+    },
+    "mochi_halloween/pt-BR": {
+      "app": "mochi_halloween",
+      "locale": "pt-BR",
+      "url": "https://files.catbox.moe/wfl1um.mp4",
+      "store_url": "https://apps.apple.com/br/app/id6785004775?pt=118326163&ct=h7_mochi_halloween&mt=8",
+      "hook": "Lista de tarefas fofa para o Halloween",
+      "name": "Mochi: Lista fofa",
+      "search": "Mochi Lista fofa",
+      "tags": [
+        "#Notas",
+        "#Hábitos",
+        "#Rotina",
+        "#Agenda",
+        "#Compras",
+        "#MochiListaFofa"
+      ],
+      "keywords": [
+        "lembrete",
+        "afazeres",
+        "planner",
+        "notas",
+        "hábitos",
+        "rotina"
+      ],
+      "keyline": "Tarefas fofas e checklist",
+      "compliance": {
+        "store_claims_ok": true,
+        "screen_text_ok": true,
+        "board": "f13ffb6a085ca841",
+        "real_recording": false,
+        "rules": "2026-10-18"
+      },
+      "base": "mochi",
+      "variant": "season",
+      "window": {
+        "from": "2026-10-24",
+        "to": "2026-10-31"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "Lista de tarefas fofa para o Halloween",
+          "benefit": "Fantasia, doces, abóbora…um toque e pronto"
+        },
+        {
+          "id": "b",
+          "lead": "Fantasia, doces, abóbora…um toque e pronto",
+          "benefit": "101 temas fofos"
+        },
+        {
+          "id": "c",
+          "lead": "Lista da festa na Tela de Início",
+          "benefit": "Fantasia, doces, abóbora…um toque e pronto"
+        }
+      ],
+      "hook_best": "b"
+    },
+    "mochi_halloween/ja": {
+      "app": "mochi_halloween",
+      "locale": "ja",
+      "url": "https://files.catbox.moe/93kiyk.mp4",
+      "store_url": "https://apps.apple.com/jp/app/id6785004775?pt=118326163&ct=h7_mochi_halloween&mt=8",
+      "hook": "かわいいToDoで ハロウィン準備",
+      "name": "Mochi: かわいいToDo",
+      "search": "Mochi かわいいToDo",
+      "tags": [
+        "#リマインダー",
+        "#予定",
+        "#メモ",
+        "#習慣",
+        "#ルーティン",
+        "#MochiかわいいToDo"
+      ],
+      "keywords": [
+        "ToDoリスト",
+        "タスク",
+        "チェックリスト",
+        "リマインダー",
+        "予定",
+        "メモ"
+      ],
+      "keyline": "やることリストをかわいく整える",
+      "compliance": {
+        "store_claims_ok": true,
+        "screen_text_ok": true,
+        "board": "f13ffb6a085ca841",
+        "real_recording": false,
+        "rules": "2026-10-18"
+      },
+      "base": "mochi",
+      "variant": "season",
+      "window": {
+        "from": "2026-10-24",
+        "to": "2026-10-31"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "かわいいToDoで ハロウィン準備",
+          "benefit": "仮装、お菓子、かぼちゃ…タップで完了"
+        },
+        {
+          "id": "b",
+          "lead": "仮装、お菓子、かぼちゃ…タップで完了",
+          "benefit": "かわいいテーマ101種"
+        },
+        {
+          "id": "c",
+          "lead": "パーティーの準備も ホーム画面で確認",
+          "benefit": "仮装、お菓子、かぼちゃ…タップで完了"
+        }
+      ],
+      "hook_best": "b"
+    },
+    "mochi_suneung/ko": {
+      "app": "mochi_suneung",
+      "locale": "ko",
+      "url": "https://files.catbox.moe/e4a4ez.mp4",
+      "store_url": "https://apps.apple.com/kr/app/id6785004775?pt=118326163&ct=h7_mochi_suneung&mt=8",
+      "hook": "수능 전 투두리스트 귀엽게 정리",
+      "name": "Mochi: 귀여운 할 일 목록 & 체크리스트",
+      "search": "Mochi 귀여운 할 일",
+      "tags": [
+        "#메모",
+        "#습관",
+        "#루틴",
+        "#일정",
+        "#쇼핑",
+        "#Mochi귀여운할일"
+      ],
+      "keywords": [
+        "할일",
+        "알림",
+        "플래너",
+        "메모",
+        "습관",
+        "루틴"
+      ],
+      "keyline": "포근한 플래너로 하루 정리",
+      "compliance": {
+        "store_claims_ok": true,
+        "screen_text_ok": true,
+        "board": "c4f2a40ca4f5082c",
+        "real_recording": false,
+        "rules": "2026-10-18"
+      },
+      "base": "mochi",
+      "variant": "season",
+      "window": {
+        "from": "2026-10-22",
+        "to": "2026-11-19"
+      },
+      "hooks": [
+        {
+          "id": "a",
+          "lead": "수능 전 투두리스트 귀엽게 정리",
+          "benefit": "수험표, 신분증, 도시락…톡 누르면 체크"
+        },
+        {
+          "id": "b",
+          "lead": "수능 공부 계획표 앱｜귀여운 투두리스트",
+          "benefit": "수험표, 신분증, 도시락…톡 누르면 체크"
+        },
+        {
+          "id": "c",
+          "lead": "수험표, 신분증, 도시락…톡 누르면 체크",
+          "benefit": "귀여운 테마 101가지"
+        }
+      ],
+      "hook_best": "b"
     }
   },
   "seo": {
@@ -18296,16 +18524,16 @@
     },
     {
       "date": "2026-10-22",
-      "slot": 18,
-      "channel": "instagram",
-      "clip": "mochi_b/en",
+      "slot": 12,
+      "channel": "telegram",
+      "clip": "mochi_suneung/ko",
       "daily_extra": true
     },
     {
       "date": "2026-10-22",
-      "slot": 22,
-      "channel": "telegram",
-      "clip": "mochi_b/pt-BR",
+      "slot": 18,
+      "channel": "instagram",
+      "clip": "mochi_suneung/ko",
       "daily_extra": true
     },
     {
@@ -18326,20 +18554,20 @@
       "date": "2026-10-23",
       "slot": 1,
       "channel": "threads",
-      "clip": "hourstaglite/zh-Hant"
+      "clip": "lumibopomofo/zh-Hant"
     },
     {
       "date": "2026-10-23",
       "slot": 18,
       "channel": "instagram",
-      "clip": "mochi/pt-BR",
+      "clip": "mochi/en",
       "daily_extra": true
     },
     {
       "date": "2026-10-23",
       "slot": 22,
       "channel": "telegram",
-      "clip": "mochi/de",
+      "clip": "mochi_b/pt-BR",
       "daily_extra": true
     },
     {
@@ -18360,20 +18588,20 @@
       "date": "2026-10-24",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumibopomofo_b/zh-Hant"
+      "clip": "hourstaglite/zh-Hant"
     },
     {
       "date": "2026-10-24",
       "slot": 18,
       "channel": "instagram",
-      "clip": "mochi_b/pt-BR",
+      "clip": "mochi_halloween/en",
       "daily_extra": true
     },
     {
       "date": "2026-10-24",
       "slot": 22,
       "channel": "telegram",
-      "clip": "mochi_b/de",
+      "clip": "mochi_halloween/en",
       "daily_extra": true
     },
     {
@@ -18394,20 +18622,20 @@
       "date": "2026-10-25",
       "slot": 1,
       "channel": "threads",
-      "clip": "countdaysnow/zh-Hant"
+      "clip": "lumibopomofo_b/zh-Hant"
     },
     {
       "date": "2026-10-25",
       "slot": 18,
       "channel": "instagram",
-      "clip": "mochi/de",
+      "clip": "mochi_halloween/pt-BR",
       "daily_extra": true
     },
     {
       "date": "2026-10-25",
       "slot": 22,
       "channel": "telegram",
-      "clip": "mochi/fr",
+      "clip": "mochi_halloween/pt-BR",
       "daily_extra": true
     },
     {
@@ -18428,20 +18656,20 @@
       "date": "2026-10-26",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumibopomofo_t10/zh-Hant"
+      "clip": "countdaysnow/zh-Hant"
+    },
+    {
+      "date": "2026-10-26",
+      "slot": 12,
+      "channel": "telegram",
+      "clip": "mochi_halloween/ja",
+      "daily_extra": true
     },
     {
       "date": "2026-10-26",
       "slot": 18,
       "channel": "instagram",
-      "clip": "mochi_b/de",
-      "daily_extra": true
-    },
-    {
-      "date": "2026-10-26",
-      "slot": 22,
-      "channel": "telegram",
-      "clip": "mochi_b/fr",
+      "clip": "mochi_halloween/ja",
       "daily_extra": true
     },
     {
@@ -18462,20 +18690,20 @@
       "date": "2026-10-27",
       "slot": 1,
       "channel": "threads",
-      "clip": "countdaysnow_b/zh-Hant"
+      "clip": "lumibopomofo_t10/zh-Hant"
     },
     {
       "date": "2026-10-27",
       "slot": 18,
       "channel": "instagram",
-      "clip": "mochi/fr",
+      "clip": "mochi_b/en",
       "daily_extra": true
     },
     {
       "date": "2026-10-27",
       "slot": 22,
       "channel": "telegram",
-      "clip": "mochi/ja",
+      "clip": "mochi/de",
       "daily_extra": true
     },
     {
@@ -18496,20 +18724,20 @@
       "date": "2026-10-28",
       "slot": 1,
       "channel": "threads",
-      "clip": "claudeusagemini_b/zh-Hant"
+      "clip": "countdaysnow_b/zh-Hant"
     },
     {
       "date": "2026-10-28",
       "slot": 18,
       "channel": "instagram",
-      "clip": "mochi_b/fr",
+      "clip": "mochi/pt-BR",
       "daily_extra": true
     },
     {
       "date": "2026-10-28",
       "slot": 22,
       "channel": "telegram",
-      "clip": "mochi_b/ja",
+      "clip": "mochi_b/de",
       "daily_extra": true
     },
     {
@@ -18530,20 +18758,20 @@
       "date": "2026-10-29",
       "slot": 1,
       "channel": "threads",
-      "clip": "onepageppt/zh-Hant"
+      "clip": "claudeusagemini_b/zh-Hant"
     },
     {
       "date": "2026-10-29",
       "slot": 18,
       "channel": "instagram",
-      "clip": "mochi/ja",
+      "clip": "mochi_b/pt-BR",
       "daily_extra": true
     },
     {
       "date": "2026-10-29",
       "slot": 22,
       "channel": "telegram",
-      "clip": "mochi/ko",
+      "clip": "mochi/fr",
       "daily_extra": true
     },
     {
@@ -18564,20 +18792,20 @@
       "date": "2026-10-30",
       "slot": 1,
       "channel": "threads",
-      "clip": "mochi/zh-Hant"
+      "clip": "onepageppt/zh-Hant"
     },
     {
       "date": "2026-10-30",
       "slot": 18,
       "channel": "instagram",
-      "clip": "mochi_b/ja",
+      "clip": "mochi/de",
       "daily_extra": true
     },
     {
       "date": "2026-10-30",
       "slot": 22,
       "channel": "telegram",
-      "clip": "mochi_b/ko",
+      "clip": "mochi_b/fr",
       "daily_extra": true
     },
     {
@@ -18597,20 +18825,20 @@
       "date": "2026-10-31",
       "slot": 1,
       "channel": "threads",
-      "clip": "unblurry/zh-Hant"
+      "clip": "mochi/zh-Hant"
+    },
+    {
+      "date": "2026-10-31",
+      "slot": 12,
+      "channel": "telegram",
+      "clip": "mochi/ja",
+      "daily_extra": true
     },
     {
       "date": "2026-10-31",
       "slot": 18,
       "channel": "instagram",
-      "clip": "mochi/ko",
-      "daily_extra": true
-    },
-    {
-      "date": "2026-10-31",
-      "slot": 22,
-      "channel": "telegram",
-      "clip": "mochi/zh-Hant",
+      "clip": "mochi_b/de",
       "daily_extra": true
     },
     {
@@ -18633,16 +18861,16 @@
     },
     {
       "date": "2026-11-01",
-      "slot": 18,
-      "channel": "instagram",
-      "clip": "mochi_b/ko",
+      "slot": 12,
+      "channel": "telegram",
+      "clip": "mochi_b/ja",
       "daily_extra": true
     },
     {
       "date": "2026-11-01",
-      "slot": 22,
-      "channel": "telegram",
-      "clip": "mochi_b/zh-Hant",
+      "slot": 18,
+      "channel": "instagram",
+      "clip": "mochi/fr",
       "daily_extra": true
     },
     {
@@ -18662,13 +18890,20 @@
       "date": "2026-11-02",
       "slot": 1,
       "channel": "threads",
-      "clip": "mochi_b/zh-Hant"
+      "clip": "cyca/zh-Hant"
+    },
+    {
+      "date": "2026-11-02",
+      "slot": 12,
+      "channel": "telegram",
+      "clip": "mochi/ko",
+      "daily_extra": true
     },
     {
       "date": "2026-11-02",
       "slot": 18,
       "channel": "instagram",
-      "clip": "mochi/zh-Hant",
+      "clip": "mochi_b/fr",
       "daily_extra": true
     },
     {
@@ -18687,13 +18922,20 @@
       "date": "2026-11-03",
       "slot": 1,
       "channel": "threads",
-      "clip": "unblurry_b/zh-Hant"
+      "clip": "mochi_b/zh-Hant"
+    },
+    {
+      "date": "2026-11-03",
+      "slot": 12,
+      "channel": "telegram",
+      "clip": "mochi_b/ko",
+      "daily_extra": true
     },
     {
       "date": "2026-11-03",
       "slot": 18,
       "channel": "instagram",
-      "clip": "mochi_b/zh-Hant",
+      "clip": "mochi/ja",
       "daily_extra": true
     },
     {
@@ -18715,6 +18957,20 @@
       "clip": "battai_t10b/zh-Hant"
     },
     {
+      "date": "2026-11-04",
+      "slot": 12,
+      "channel": "telegram",
+      "clip": "mochi/zh-Hant",
+      "daily_extra": true
+    },
+    {
+      "date": "2026-11-04",
+      "slot": 18,
+      "channel": "instagram",
+      "clip": "mochi_b/ja",
+      "daily_extra": true
+    },
+    {
       "date": "2026-11-05",
       "slot": 1,
       "channel": "instagram",
@@ -18730,7 +18986,21 @@
       "date": "2026-11-05",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumiletters/zh-Hant"
+      "clip": "aim990/zh-Hant"
+    },
+    {
+      "date": "2026-11-05",
+      "slot": 12,
+      "channel": "telegram",
+      "clip": "mochi_b/zh-Hant",
+      "daily_extra": true
+    },
+    {
+      "date": "2026-11-05",
+      "slot": 18,
+      "channel": "instagram",
+      "clip": "mochi/ko",
+      "daily_extra": true
     },
     {
       "date": "2026-11-06",
@@ -18748,7 +19018,14 @@
       "date": "2026-11-06",
       "slot": 1,
       "channel": "threads",
-      "clip": "notesstudio100/zh-Hant"
+      "clip": "unblurry/zh-Hant"
+    },
+    {
+      "date": "2026-11-06",
+      "slot": 18,
+      "channel": "instagram",
+      "clip": "mochi_b/ko",
+      "daily_extra": true
     },
     {
       "date": "2026-11-07",
@@ -18766,7 +19043,14 @@
       "date": "2026-11-07",
       "slot": 1,
       "channel": "threads",
-      "clip": "tripbee/zh-Hant"
+      "clip": "lumiletters/zh-Hant"
+    },
+    {
+      "date": "2026-11-07",
+      "slot": 18,
+      "channel": "instagram",
+      "clip": "mochi/zh-Hant",
+      "daily_extra": true
     },
     {
       "date": "2026-11-08",
@@ -18784,7 +19068,14 @@
       "date": "2026-11-08",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumiletters_t10/zh-Hant"
+      "clip": "notesstudio100/zh-Hant"
+    },
+    {
+      "date": "2026-11-08",
+      "slot": 18,
+      "channel": "instagram",
+      "clip": "mochi_b/zh-Hant",
+      "daily_extra": true
     },
     {
       "date": "2026-11-09",
@@ -18796,13 +19087,13 @@
       "date": "2026-11-09",
       "slot": 1,
       "channel": "telegram",
-      "clip": "claudeusagemini_b/ja"
+      "clip": "claudeusagemini_b/zh-Hant"
     },
     {
       "date": "2026-11-09",
       "slot": 1,
       "channel": "threads",
-      "clip": "lumibopomofopro/zh-Hant"
+      "clip": "unblurry_b/zh-Hant"
     },
     {
       "date": "2026-11-10",
@@ -18820,25 +19111,25 @@
       "date": "2026-11-10",
       "slot": 1,
       "channel": "threads",
-      "clip": "tripbee_t10b/zh-Hant"
+      "clip": "lumiletters_t10/zh-Hant"
     },
     {
       "date": "2026-11-11",
       "slot": 1,
       "channel": "instagram",
-      "clip": "claudeusagemini_b/ja"
+      "clip": "claudeusagemini_b/zh-Hant"
     },
     {
       "date": "2026-11-11",
       "slot": 1,
       "channel": "telegram",
-      "clip": "unblurry/ja"
+      "clip": "battai_t10/ko"
     },
     {
       "date": "2026-11-11",
       "slot": 1,
       "channel": "threads",
-      "clip": "savetag/zh-Hant"
+      "clip": "aibriefpack/zh-Hant"
     },
     {
       "date": "2026-11-12",
@@ -18862,19 +19153,19 @@
       "date": "2026-11-13",
       "slot": 1,
       "channel": "instagram",
-      "clip": "unblurry/ja"
-    },
-    {
-      "date": "2026-11-13",
-      "slot": 1,
-      "channel": "telegram",
       "clip": "battai_t10/ko"
     },
     {
       "date": "2026-11-13",
       "slot": 1,
+      "channel": "telegram",
+      "clip": "cyca/zh-Hant"
+    },
+    {
+      "date": "2026-11-13",
+      "slot": 1,
       "channel": "threads",
-      "clip": "lumimissionpro/zh-Hant"
+      "clip": "dailymate/zh-Hant"
     },
     {
       "date": "2026-11-14",
@@ -18886,25 +19177,25 @@
       "date": "2026-11-14",
       "slot": 1,
       "channel": "telegram",
-      "clip": "unblurry_b/ja"
+      "clip": "battai/ko"
     },
     {
       "date": "2026-11-14",
       "slot": 1,
       "channel": "threads",
-      "clip": "gmoney/zh-Hant"
+      "clip": "easyam/zh-Hant"
     },
     {
       "date": "2026-11-15",
       "slot": 1,
       "channel": "instagram",
-      "clip": "battai_t10/ko"
+      "clip": "cyca/zh-Hant"
     },
     {
       "date": "2026-11-15",
       "slot": 1,
       "channel": "telegram",
-      "clip": "claudeusagemini_b/zh-Hant"
+      "clip": "claudeusagemini_b/ja"
     },
     {
       "date": "2026-11-15",
@@ -18916,103 +19207,103 @@
       "date": "2026-11-16",
       "slot": 1,
       "channel": "instagram",
-      "clip": "unblurry_b/ja"
-    },
-    {
-      "date": "2026-11-16",
-      "slot": 1,
-      "channel": "telegram",
       "clip": "battai/ko"
     },
     {
       "date": "2026-11-16",
       "slot": 1,
-      "channel": "threads",
-      "clip": "aibriefpack/zh-Hant"
-    },
-    {
-      "date": "2026-11-17",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "claudeusagemini_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-17",
-      "slot": 1,
       "channel": "telegram",
-      "clip": "unblurry/zh-Hant"
+      "clip": "cyca/ja"
+    },
+    {
+      "date": "2026-11-16",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "gmoney/zh-Hant"
     },
     {
       "date": "2026-11-17",
       "slot": 1,
-      "channel": "threads",
-      "clip": "dailymate/zh-Hant"
-    },
-    {
-      "date": "2026-11-18",
-      "slot": 1,
       "channel": "instagram",
-      "clip": "battai/ko"
+      "clip": "claudeusagemini_b/ja"
     },
     {
-      "date": "2026-11-18",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "lumiletters_t10/zh-Hant"
-    },
-    {
-      "date": "2026-11-18",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "easyam/zh-Hant"
-    },
-    {
-      "date": "2026-11-19",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "unblurry/zh-Hant"
-    },
-    {
-      "date": "2026-11-19",
+      "date": "2026-11-17",
       "slot": 1,
       "channel": "telegram",
       "clip": "battai_t10b/zh-Hant"
     },
     {
-      "date": "2026-11-19",
+      "date": "2026-11-17",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumibopomofopro/zh-Hant"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "cyca/ja"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "aim990/zh-Hant"
+    },
+    {
+      "date": "2026-11-18",
       "slot": 1,
       "channel": "threads",
       "clip": "lumiletterspro/zh-Hant"
     },
     {
-      "date": "2026-11-20",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "lumiletters_t10/zh-Hant"
-    },
-    {
-      "date": "2026-11-20",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "unblurry_b/zh-Hant"
-    },
-    {
-      "date": "2026-11-20",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "lumimathpro/zh-Hant"
-    },
-    {
-      "date": "2026-11-21",
+      "date": "2026-11-19",
       "slot": 1,
       "channel": "instagram",
       "clip": "battai_t10b/zh-Hant"
     },
     {
+      "date": "2026-11-19",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "cyca/ko"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumimathpro/zh-Hant"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "aim990/zh-Hant"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "battai/zh-Hant"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumimissionpro/zh-Hant"
+    },
+    {
+      "date": "2026-11-21",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "cyca/ko"
+    },
+    {
       "date": "2026-11-21",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumiletters/ja"
+      "clip": "aim990_t10b/vi"
     },
     {
       "date": "2026-11-21",
@@ -19024,13 +19315,13 @@
       "date": "2026-11-22",
       "slot": 1,
       "channel": "instagram",
-      "clip": "unblurry_b/zh-Hant"
+      "clip": "battai/zh-Hant"
     },
     {
       "date": "2026-11-22",
       "slot": 1,
       "channel": "telegram",
-      "clip": "battai/zh-Hant"
+      "clip": "cyca/id"
     },
     {
       "date": "2026-11-22",
@@ -19042,499 +19333,499 @@
       "date": "2026-11-23",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumiletters/ja"
+      "clip": "aim990_t10b/vi"
     },
     {
       "date": "2026-11-23",
       "slot": 1,
       "channel": "telegram",
-      "clip": "unblurry/ko"
+      "clip": "unblurry/ja"
     },
     {
       "date": "2026-11-23",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "savetag/zh-Hant"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "cyca/id"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "aim990/ja"
+    },
+    {
+      "date": "2026-11-24",
       "slot": 1,
       "channel": "threads",
       "clip": "scanto/zh-Hant"
     },
     {
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "slot": 1,
       "channel": "instagram",
-      "clip": "battai/zh-Hant"
+      "clip": "unblurry/ja"
     },
     {
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumiletters/ko"
+      "clip": "cyca/vi"
     },
     {
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "slot": 1,
       "channel": "threads",
       "clip": "sereno/zh-Hant"
     },
     {
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "slot": 1,
       "channel": "instagram",
-      "clip": "unblurry/ko"
+      "clip": "aim990/ja"
     },
     {
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "slot": 1,
       "channel": "telegram",
-      "clip": "notesstudio100/zh-Hant"
+      "clip": "unblurry_b/ja"
     },
     {
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "slot": 1,
       "channel": "threads",
       "clip": "shotinbox/zh-Hant"
     },
     {
-      "date": "2026-11-26",
+      "date": "2026-11-27",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumiletters/ko"
+      "clip": "cyca/vi"
     },
     {
-      "date": "2026-11-26",
+      "date": "2026-11-27",
       "slot": 1,
       "channel": "telegram",
-      "clip": "unblurry_b/ko"
+      "clip": "lumiletters_t10/zh-Hant"
     },
     {
-      "date": "2026-11-26",
+      "date": "2026-11-27",
       "slot": 1,
       "channel": "threads",
       "clip": "sononote/zh-Hant"
     },
     {
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "slot": 1,
       "channel": "instagram",
+      "clip": "unblurry_b/ja"
+    },
+    {
+      "date": "2026-11-28",
+      "slot": 1,
+      "channel": "telegram",
       "clip": "notesstudio100/zh-Hant"
     },
     {
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "slot": 1,
-      "channel": "telegram",
+      "channel": "threads",
       "clip": "tripbee/zh-Hant"
     },
     {
-      "date": "2026-11-27",
+      "date": "2026-11-29",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumiletters_t10/zh-Hant"
+    },
+    {
+      "date": "2026-11-29",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "unblurry/zh-Hant"
+    },
+    {
+      "date": "2026-11-29",
       "slot": 1,
       "channel": "threads",
       "clip": "tripbeelite/zh-Hant"
     },
     {
-      "date": "2026-11-28",
+      "date": "2026-11-30",
       "slot": 1,
       "channel": "instagram",
-      "clip": "unblurry_b/ko"
+      "clip": "notesstudio100/zh-Hant"
     },
     {
-      "date": "2026-11-28",
+      "date": "2026-11-30",
       "slot": 1,
       "channel": "telegram",
-      "clip": "notesstudio100/ja"
+      "clip": "lumiletters/ja"
     },
     {
-      "date": "2026-11-28",
+      "date": "2026-11-30",
       "slot": 1,
       "channel": "threads",
       "clip": "wifiaid/zh-Hant"
     },
     {
-      "date": "2026-11-29",
+      "date": "2026-12-01",
       "slot": 1,
       "channel": "instagram",
-      "clip": "tripbee/zh-Hant"
+      "clip": "gmoneylite/zh-Hant"
     },
     {
-      "date": "2026-11-29",
+      "date": "2026-12-01",
       "slot": 1,
       "channel": "telegram",
-      "clip": "unblurry_t10b/ja"
+      "clip": "gmoneylite/zh-Hant"
     },
     {
-      "date": "2026-11-29",
+      "date": "2026-12-01",
       "slot": 1,
       "channel": "threads",
-      "clip": "cyca/zh-Hant"
+      "clip": "gmoneylite/zh-Hant"
     },
     {
-      "date": "2026-11-30",
+      "date": "2026-12-02",
       "slot": 1,
       "channel": "instagram",
-      "clip": "notesstudio100/ja"
+      "clip": "unblurry/zh-Hant"
     },
     {
-      "date": "2026-11-30",
+      "date": "2026-12-02",
       "slot": 1,
       "channel": "telegram",
-      "clip": "tripbee_t10/id"
+      "clip": "unblurry_b/zh-Hant"
     },
     {
-      "date": "2026-11-30",
+      "date": "2026-12-02",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "tripbee_t10b/zh-Hant"
+    },
+    {
+      "date": "2026-12-03",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "gmoneylite_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-03",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "gmoneylite_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-03",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "gmoneylite_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-04",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumiletters/ja"
+    },
+    {
+      "date": "2026-12-04",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumiletters/ko"
+    },
+    {
+      "date": "2026-12-04",
       "slot": 1,
       "channel": "threads",
       "clip": "cvdesk/zh-Hant"
     },
     {
-      "date": "2026-12-01",
+      "date": "2026-12-05",
       "slot": 1,
       "channel": "instagram",
-      "clip": "gmoneylite/zh-Hant"
+      "clip": "unblurry_b/zh-Hant"
     },
     {
-      "date": "2026-12-01",
+      "date": "2026-12-05",
       "slot": 1,
       "channel": "telegram",
-      "clip": "gmoneylite/zh-Hant"
+      "clip": "unblurry/ko"
     },
     {
-      "date": "2026-12-01",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "gmoneylite/zh-Hant"
-    },
-    {
-      "date": "2026-12-02",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "unblurry_t10b/ja"
-    },
-    {
-      "date": "2026-12-02",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "notesstudio100/ko"
-    },
-    {
-      "date": "2026-12-02",
+      "date": "2026-12-05",
       "slot": 1,
       "channel": "threads",
       "clip": "zipbox/zh-Hant"
     },
     {
-      "date": "2026-12-03",
+      "date": "2026-12-06",
       "slot": 1,
       "channel": "instagram",
-      "clip": "gmoneylite_b/zh-Hant"
+      "clip": "notesstudio100/ja"
     },
     {
-      "date": "2026-12-03",
+      "date": "2026-12-06",
       "slot": 1,
       "channel": "telegram",
-      "clip": "gmoneylite_b/zh-Hant"
+      "clip": "notesstudio100/ja"
     },
     {
-      "date": "2026-12-03",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "gmoneylite_b/zh-Hant"
-    },
-    {
-      "date": "2026-12-04",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "notesstudio100/ko"
-    },
-    {
-      "date": "2026-12-04",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "tripbee_t10b/zh-Hant"
-    },
-    {
-      "date": "2026-12-04",
+      "date": "2026-12-06",
       "slot": 1,
       "channel": "threads",
       "clip": "tripplanet/zh-Hant"
     },
     {
-      "date": "2026-12-05",
+      "date": "2026-12-07",
       "slot": 1,
       "channel": "instagram",
-      "clip": "tripbee_t10/id"
+      "clip": "lumiletters/ko"
     },
     {
-      "date": "2026-12-05",
+      "date": "2026-12-07",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumibopomofopro/ja"
+      "clip": "aibriefpack/zh-Hant"
     },
     {
-      "date": "2026-12-05",
+      "date": "2026-12-07",
       "slot": 1,
       "channel": "threads",
       "clip": "lumiweather/zh-Hant"
     },
     {
-      "date": "2026-12-06",
+      "date": "2026-12-08",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumibopomofopro/ja"
+      "clip": "unblurry/ko"
     },
     {
-      "date": "2026-12-06",
+      "date": "2026-12-08",
       "slot": 1,
       "channel": "telegram",
-      "clip": "savetag/zh-Hant"
+      "clip": "unblurry_b/ko"
     },
     {
-      "date": "2026-12-06",
+      "date": "2026-12-08",
       "slot": 1,
       "channel": "threads",
       "clip": "wifiaidlite/zh-Hant"
     },
     {
-      "date": "2026-12-07",
+      "date": "2026-12-09",
       "slot": 1,
       "channel": "instagram",
-      "clip": "savetag/zh-Hant"
+      "clip": "notesstudio100/ko"
     },
     {
-      "date": "2026-12-07",
+      "date": "2026-12-09",
       "slot": 1,
       "channel": "telegram",
-      "clip": "caldaily/zh-Hant"
+      "clip": "notesstudio100/ko"
     },
     {
-      "date": "2026-12-07",
+      "date": "2026-12-09",
       "slot": 1,
       "channel": "threads",
       "clip": "wordmate/zh-Hant"
     },
     {
-      "date": "2026-12-08",
+      "date": "2026-12-10",
       "slot": 1,
       "channel": "instagram",
-      "clip": "tripbee_t10b/zh-Hant"
-    },
-    {
-      "date": "2026-12-08",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "lumibopomofopro_t10/ja"
-    },
-    {
-      "date": "2026-12-08",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "stayclock/zh-Hant"
-    },
-    {
-      "date": "2026-12-09",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "lumibopomofopro_t10/ja"
-    },
-    {
-      "date": "2026-12-09",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "lumimissionpro/zh-Hant"
-    },
-    {
-      "date": "2026-12-09",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "moneytag/zh-Hant"
+      "clip": "aibriefpack/zh-Hant"
     },
     {
       "date": "2026-12-10",
       "slot": 1,
-      "channel": "instagram",
+      "channel": "telegram",
       "clip": "caldaily/zh-Hant"
     },
     {
       "date": "2026-12-10",
       "slot": 1,
-      "channel": "telegram",
-      "clip": "gmoney/zh-Hant"
+      "channel": "threads",
+      "clip": "stayclock/zh-Hant"
     },
     {
-      "date": "2026-12-10",
+      "date": "2026-12-11",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "unblurry_b/ko"
+    },
+    {
+      "date": "2026-12-11",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "unblurry_t10b/ja"
+    },
+    {
+      "date": "2026-12-11",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "moneytag/zh-Hant"
+    },
+    {
+      "date": "2026-12-12",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "caldaily/zh-Hant"
+    },
+    {
+      "date": "2026-12-12",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "dailymate/zh-Hant"
+    },
+    {
+      "date": "2026-12-12",
       "slot": 1,
       "channel": "threads",
       "clip": "dailymatelite/zh-Hant"
     },
     {
-      "date": "2026-12-11",
+      "date": "2026-12-13",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumimissionpro/zh-Hant"
+      "clip": "dailymate/zh-Hant"
     },
     {
-      "date": "2026-12-11",
+      "date": "2026-12-13",
       "slot": 1,
       "channel": "telegram",
-      "clip": "aibriefpack/zh-Hant"
+      "clip": "easyam/zh-Hant"
     },
     {
-      "date": "2026-12-11",
+      "date": "2026-12-13",
       "slot": 1,
       "channel": "threads",
       "clip": "maskmyfile/zh-Hant"
     },
     {
-      "date": "2026-12-12",
+      "date": "2026-12-14",
       "slot": 1,
       "channel": "instagram",
+      "clip": "unblurry_t10b/ja"
+    },
+    {
+      "date": "2026-12-14",
+      "slot": 1,
+      "channel": "telegram",
       "clip": "gmoney/zh-Hant"
     },
     {
-      "date": "2026-12-12",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "dailymate/zh-Hant"
-    },
-    {
-      "date": "2026-12-12",
+      "date": "2026-12-14",
       "slot": 1,
       "channel": "threads",
       "clip": "lockhour/zh-Hant"
     },
     {
-      "date": "2026-12-13",
+      "date": "2026-12-15",
       "slot": 1,
       "channel": "instagram",
-      "clip": "aibriefpack/zh-Hant"
-    },
-    {
-      "date": "2026-12-13",
-      "slot": 1,
-      "channel": "telegram",
       "clip": "easyam/zh-Hant"
     },
     {
-      "date": "2026-12-13",
+      "date": "2026-12-15",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumibopomofopro/zh-Hant"
+    },
+    {
+      "date": "2026-12-15",
       "slot": 1,
       "channel": "threads",
       "clip": "mochidonestamp/zh-Hant"
     },
     {
-      "date": "2026-12-14",
+      "date": "2026-12-16",
       "slot": 1,
       "channel": "instagram",
-      "clip": "dailymate/zh-Hant"
+      "clip": "gmoney/zh-Hant"
     },
     {
-      "date": "2026-12-14",
+      "date": "2026-12-16",
       "slot": 1,
       "channel": "telegram",
       "clip": "lumiletterspro/zh-Hant"
     },
     {
-      "date": "2026-12-14",
+      "date": "2026-12-16",
       "slot": 1,
       "channel": "threads",
       "clip": "lumimath/zh-Hant"
     },
     {
-      "date": "2026-12-15",
+      "date": "2026-12-17",
       "slot": 1,
       "channel": "instagram",
-      "clip": "easyam/zh-Hant"
+      "clip": "lumibopomofopro/zh-Hant"
     },
     {
-      "date": "2026-12-15",
+      "date": "2026-12-17",
       "slot": 1,
       "channel": "telegram",
       "clip": "lumimathpro/zh-Hant"
     },
     {
-      "date": "2026-12-15",
+      "date": "2026-12-17",
       "slot": 1,
       "channel": "threads",
       "clip": "lockhour_b/zh-Hant"
     },
     {
-      "date": "2026-12-16",
+      "date": "2026-12-18",
       "slot": 1,
       "channel": "instagram",
       "clip": "lumiletterspro/zh-Hant"
     },
     {
-      "date": "2026-12-16",
+      "date": "2026-12-18",
       "slot": 1,
       "channel": "telegram",
-      "clip": "photocream/zh-Hant"
+      "clip": "lumibopomofopro_t10/ja"
     },
     {
-      "date": "2026-12-16",
+      "date": "2026-12-18",
       "slot": 1,
       "channel": "threads",
       "clip": "lumimission/zh-Hant"
     },
     {
-      "date": "2026-12-17",
+      "date": "2026-12-19",
       "slot": 1,
       "channel": "instagram",
       "clip": "lumimathpro/zh-Hant"
     },
     {
-      "date": "2026-12-17",
+      "date": "2026-12-19",
       "slot": 1,
       "channel": "telegram",
-      "clip": "picclear/zh-Hant"
+      "clip": "lumimissionpro/zh-Hant"
     },
     {
-      "date": "2026-12-17",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "aim990/zh-Hant"
-    },
-    {
-      "date": "2026-12-18",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "photocream/zh-Hant"
-    },
-    {
-      "date": "2026-12-18",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "scanto/zh-Hant"
-    },
-    {
-      "date": "2026-12-18",
+      "date": "2026-12-19",
       "slot": 1,
       "channel": "threads",
       "clip": "ledmovingtext/zh-Hant"
     },
     {
-      "date": "2026-12-19",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "picclear/zh-Hant"
-    },
-    {
-      "date": "2026-12-19",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "sereno/zh-Hant"
-    },
-    {
-      "date": "2026-12-19",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "lumimission_b/zh-Hant"
-    },
-    {
       "date": "2026-12-20",
       "slot": 1,
       "channel": "instagram",
-      "clip": "scanto/zh-Hant"
+      "clip": "lumibopomofopro_t10/ja"
     },
     {
       "date": "2026-12-20",
       "slot": 1,
       "channel": "telegram",
-      "clip": "shotinbox/zh-Hant"
+      "clip": "photocream/zh-Hant"
     },
     {
       "date": "2026-12-20",
@@ -19546,301 +19837,301 @@
       "date": "2026-12-21",
       "slot": 1,
       "channel": "instagram",
-      "clip": "sereno/zh-Hant"
+      "clip": "lumimissionpro/zh-Hant"
     },
     {
       "date": "2026-12-21",
       "slot": 1,
       "channel": "telegram",
-      "clip": "sononote/zh-Hant"
+      "clip": "picclear/zh-Hant"
     },
     {
       "date": "2026-12-21",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumimission_b/zh-Hant"
+    },
+    {
+      "date": "2026-12-22",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "photocream/zh-Hant"
+    },
+    {
+      "date": "2026-12-22",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "savetag/zh-Hant"
+    },
+    {
+      "date": "2026-12-22",
       "slot": 1,
       "channel": "threads",
       "clip": "qrcodehalo/zh-Hant"
     },
     {
-      "date": "2026-12-22",
+      "date": "2026-12-23",
       "slot": 1,
       "channel": "instagram",
-      "clip": "shotinbox/zh-Hant"
+      "clip": "picclear/zh-Hant"
     },
     {
-      "date": "2026-12-22",
+      "date": "2026-12-23",
       "slot": 1,
       "channel": "telegram",
-      "clip": "tripbeelite/zh-Hant"
+      "clip": "scanto/zh-Hant"
     },
     {
-      "date": "2026-12-22",
+      "date": "2026-12-23",
       "slot": 1,
       "channel": "threads",
       "clip": "studydown/zh-Hant"
     },
     {
-      "date": "2026-12-23",
+      "date": "2026-12-24",
       "slot": 1,
       "channel": "instagram",
-      "clip": "sononote/zh-Hant"
+      "clip": "savetag/zh-Hant"
     },
     {
-      "date": "2026-12-23",
+      "date": "2026-12-24",
       "slot": 1,
       "channel": "telegram",
-      "clip": "wifiaid/zh-Hant"
+      "clip": "sereno/zh-Hant"
     },
     {
-      "date": "2026-12-23",
+      "date": "2026-12-24",
       "slot": 1,
       "channel": "threads",
       "clip": "hourstag/zh-Hant"
     },
     {
-      "date": "2026-12-24",
+      "date": "2026-12-25",
       "slot": 1,
       "channel": "instagram",
-      "clip": "tripbeelite/zh-Hant"
+      "clip": "scanto/zh-Hant"
     },
     {
-      "date": "2026-12-24",
+      "date": "2026-12-25",
       "slot": 1,
       "channel": "telegram",
-      "clip": "cyca/zh-Hant"
+      "clip": "shotinbox/zh-Hant"
     },
     {
-      "date": "2026-12-24",
+      "date": "2026-12-25",
       "slot": 1,
       "channel": "threads",
       "clip": "snapportlite/zh-Hant"
     },
     {
-      "date": "2026-12-25",
+      "date": "2026-12-26",
       "slot": 1,
       "channel": "instagram",
-      "clip": "wifiaid/zh-Hant"
+      "clip": "sereno/zh-Hant"
     },
     {
-      "date": "2026-12-25",
+      "date": "2026-12-26",
       "slot": 1,
       "channel": "telegram",
-      "clip": "cvdesk/zh-Hant"
+      "clip": "sononote/zh-Hant"
     },
     {
-      "date": "2026-12-25",
+      "date": "2026-12-26",
       "slot": 1,
       "channel": "threads",
       "clip": "wordmatelite/zh-Hant"
     },
     {
-      "date": "2026-12-26",
+      "date": "2026-12-27",
       "slot": 1,
       "channel": "instagram",
-      "clip": "cyca/zh-Hant"
+      "clip": "shotinbox/zh-Hant"
     },
     {
-      "date": "2026-12-26",
+      "date": "2026-12-27",
       "slot": 1,
       "channel": "telegram",
-      "clip": "tripplanet/zh-Hant"
+      "clip": "tripbee/zh-Hant"
     },
     {
-      "date": "2026-12-26",
+      "date": "2026-12-27",
       "slot": 1,
       "channel": "threads",
       "clip": "snapport_b/en"
     },
     {
-      "date": "2026-12-27",
+      "date": "2026-12-28",
       "slot": 1,
       "channel": "instagram",
-      "clip": "cvdesk/zh-Hant"
+      "clip": "sononote/zh-Hant"
     },
     {
-      "date": "2026-12-27",
+      "date": "2026-12-28",
       "slot": 1,
       "channel": "telegram",
-      "clip": "wifiaidlite/zh-Hant"
+      "clip": "tripbeelite/zh-Hant"
     },
     {
-      "date": "2026-12-27",
+      "date": "2026-12-28",
       "slot": 1,
       "channel": "threads",
       "clip": "snapportlite_b/zh-Hant"
     },
     {
-      "date": "2026-12-28",
+      "date": "2026-12-29",
       "slot": 1,
       "channel": "instagram",
-      "clip": "tripplanet/zh-Hant"
+      "clip": "tripbee/zh-Hant"
     },
     {
-      "date": "2026-12-28",
+      "date": "2026-12-29",
       "slot": 1,
       "channel": "telegram",
-      "clip": "wordmate/zh-Hant"
+      "clip": "wifiaid/zh-Hant"
     },
     {
-      "date": "2026-12-28",
+      "date": "2026-12-29",
       "slot": 1,
       "channel": "threads",
       "clip": "snapport/en"
     },
     {
-      "date": "2026-12-29",
+      "date": "2026-12-30",
       "slot": 1,
       "channel": "instagram",
-      "clip": "wifiaidlite/zh-Hant"
+      "clip": "tripbeelite/zh-Hant"
     },
     {
-      "date": "2026-12-29",
+      "date": "2026-12-30",
       "slot": 1,
       "channel": "telegram",
-      "clip": "stayclock/ja"
+      "clip": "tripbee_t10/id"
     },
     {
-      "date": "2026-12-29",
+      "date": "2026-12-30",
       "slot": 1,
       "channel": "threads",
       "clip": "gmoneylite/en"
     },
     {
-      "date": "2026-12-30",
+      "date": "2026-12-31",
       "slot": 1,
       "channel": "instagram",
-      "clip": "wordmate/zh-Hant"
+      "clip": "wifiaid/zh-Hant"
     },
     {
-      "date": "2026-12-30",
+      "date": "2026-12-31",
       "slot": 1,
       "channel": "telegram",
-      "clip": "moneytag/ja"
+      "clip": "cvdesk/zh-Hant"
     },
     {
-      "date": "2026-12-30",
+      "date": "2026-12-31",
       "slot": 1,
       "channel": "threads",
       "clip": "claudeusagemini/en"
     },
     {
-      "date": "2026-12-31",
+      "date": "2027-01-01",
       "slot": 1,
       "channel": "instagram",
-      "clip": "stayclock/ja"
+      "clip": "tripbee_t10/id"
     },
     {
-      "date": "2026-12-31",
+      "date": "2027-01-01",
       "slot": 1,
       "channel": "telegram",
-      "clip": "wordmate/ja"
+      "clip": "tripplanet/zh-Hant"
     },
     {
-      "date": "2026-12-31",
+      "date": "2027-01-01",
       "slot": 1,
       "channel": "threads",
       "clip": "gmoneylite_b/en"
     },
     {
-      "date": "2027-01-01",
+      "date": "2027-01-02",
       "slot": 1,
       "channel": "instagram",
-      "clip": "moneytag/ja"
+      "clip": "cvdesk/zh-Hant"
     },
     {
-      "date": "2027-01-01",
+      "date": "2027-01-02",
       "slot": 1,
       "channel": "telegram",
-      "clip": "stayclock_t10/ja"
+      "clip": "tripbee_t10b/zh-Hant"
     },
     {
-      "date": "2027-01-01",
+      "date": "2027-01-02",
       "slot": 1,
       "channel": "threads",
       "clip": "lumibopomofo/en"
     },
     {
-      "date": "2027-01-02",
+      "date": "2027-01-03",
       "slot": 1,
       "channel": "instagram",
-      "clip": "wordmate/ja"
+      "clip": "tripplanet/zh-Hant"
     },
     {
-      "date": "2027-01-02",
+      "date": "2027-01-03",
       "slot": 1,
       "channel": "telegram",
-      "clip": "dailymatelite/zh-Hant"
+      "clip": "wifiaidlite/zh-Hant"
     },
     {
-      "date": "2027-01-02",
+      "date": "2027-01-03",
       "slot": 1,
       "channel": "threads",
       "clip": "claudeusagemini_b/en"
     },
     {
-      "date": "2027-01-03",
+      "date": "2027-01-04",
       "slot": 1,
       "channel": "instagram",
-      "clip": "stayclock_t10/ja"
+      "clip": "tripbee_t10b/zh-Hant"
     },
     {
-      "date": "2027-01-03",
+      "date": "2027-01-04",
       "slot": 1,
       "channel": "telegram",
-      "clip": "wordmate/ko"
+      "clip": "wordmate/zh-Hant"
     },
     {
-      "date": "2027-01-03",
+      "date": "2027-01-04",
       "slot": 1,
       "channel": "threads",
       "clip": "onepageppt/en"
     },
     {
-      "date": "2027-01-04",
+      "date": "2027-01-05",
       "slot": 1,
       "channel": "instagram",
-      "clip": "dailymatelite/zh-Hant"
+      "clip": "wifiaidlite/zh-Hant"
     },
     {
-      "date": "2027-01-04",
+      "date": "2027-01-05",
       "slot": 1,
       "channel": "telegram",
-      "clip": "maskmyfile/zh-Hant"
+      "clip": "stayclock/zh-Hant"
     },
     {
-      "date": "2027-01-04",
+      "date": "2027-01-05",
       "slot": 1,
       "channel": "threads",
       "clip": "lumibopomofo_b/en"
     },
     {
-      "date": "2027-01-05",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "wordmate/ko"
-    },
-    {
-      "date": "2027-01-05",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "lockhour/zh-Hant"
-    },
-    {
-      "date": "2027-01-05",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "unblurry/en"
-    },
-    {
       "date": "2027-01-06",
       "slot": 1,
       "channel": "instagram",
-      "clip": "maskmyfile/zh-Hant"
+      "clip": "wordmate/zh-Hant"
     },
     {
       "date": "2027-01-06",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumimath/zh-Hant"
+      "clip": "moneytag/zh-Hant"
     },
     {
       "date": "2027-01-06",
@@ -19852,217 +20143,235 @@
       "date": "2027-01-07",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lockhour/zh-Hant"
+      "clip": "stayclock/zh-Hant"
     },
     {
       "date": "2027-01-07",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lumimission/zh-Hant"
+      "clip": "wordmate/ja"
     },
     {
       "date": "2027-01-07",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "cyca/en"
+    },
+    {
+      "date": "2027-01-08",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "moneytag/zh-Hant"
+    },
+    {
+      "date": "2027-01-08",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "stayclock_t10/ja"
+    },
+    {
+      "date": "2027-01-08",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "aim990/en"
+    },
+    {
+      "date": "2027-01-09",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "wordmate/ja"
+    },
+    {
+      "date": "2027-01-09",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "dailymatelite/zh-Hant"
+    },
+    {
+      "date": "2027-01-09",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "unblurry/en"
+    },
+    {
+      "date": "2027-01-10",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "stayclock_t10/ja"
+    },
+    {
+      "date": "2027-01-10",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "wordmate/ko"
+    },
+    {
+      "date": "2027-01-10",
       "slot": 1,
       "channel": "threads",
       "clip": "lumiletters/en"
     },
     {
-      "date": "2027-01-08",
+      "date": "2027-01-11",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumimath/zh-Hant"
+      "clip": "dailymatelite/zh-Hant"
     },
     {
-      "date": "2027-01-08",
+      "date": "2027-01-11",
       "slot": 1,
       "channel": "telegram",
-      "clip": "lockhour_b/zh-Hant"
+      "clip": "maskmyfile/zh-Hant"
     },
     {
-      "date": "2027-01-08",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "unblurry_b/en"
-    },
-    {
-      "date": "2027-01-09",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "lumimission/zh-Hant"
-    },
-    {
-      "date": "2027-01-09",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "aim990/vi"
-    },
-    {
-      "date": "2027-01-09",
+      "date": "2027-01-11",
       "slot": 1,
       "channel": "threads",
       "clip": "notesstudio100/en"
     },
     {
-      "date": "2027-01-10",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "lockhour_b/zh-Hant"
-    },
-    {
-      "date": "2027-01-10",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "lumimission_b/zh-Hant"
-    },
-    {
-      "date": "2027-01-10",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "tripbee/en"
-    },
-    {
-      "date": "2027-01-11",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "aim990/vi"
-    },
-    {
-      "date": "2027-01-11",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "ledmovingtext_b/ja"
-    },
-    {
-      "date": "2027-01-11",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "lumibopomofopro/en"
-    },
-    {
       "date": "2027-01-12",
       "slot": 1,
       "channel": "instagram",
-      "clip": "lumimission_b/zh-Hant"
+      "clip": "wordmate/ko"
     },
     {
       "date": "2027-01-12",
       "slot": 1,
       "channel": "telegram",
-      "clip": "aim990_t10b/vi"
+      "clip": "lockhour/zh-Hant"
     },
     {
       "date": "2027-01-12",
       "slot": 1,
       "channel": "threads",
-      "clip": "savetag/en"
+      "clip": "unblurry_b/en"
     },
     {
       "date": "2027-01-13",
       "slot": 1,
       "channel": "instagram",
-      "clip": "ledmovingtext_b/ja"
+      "clip": "maskmyfile/zh-Hant"
     },
     {
       "date": "2027-01-13",
       "slot": 1,
       "channel": "telegram",
-      "clip": "dbhalo/zh-Hant"
+      "clip": "lumimath/zh-Hant"
     },
     {
       "date": "2027-01-13",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "caldaily/en"
-    },
-    {
-      "date": "2027-01-14",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "aim990_t10b/vi"
-    },
-    {
-      "date": "2027-01-14",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "ledmovingtext/zh-Hant"
-    },
-    {
-      "date": "2027-01-14",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "lumimissionpro/en"
-    },
-    {
-      "date": "2027-01-15",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "dbhalo/zh-Hant"
-    },
-    {
-      "date": "2027-01-15",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "qrcodehalo/zh-Hant"
-    },
-    {
-      "date": "2027-01-15",
-      "slot": 1,
-      "channel": "threads",
-      "clip": "gmoney/en"
-    },
-    {
-      "date": "2027-01-16",
-      "slot": 1,
-      "channel": "instagram",
-      "clip": "ledmovingtext/zh-Hant"
-    },
-    {
-      "date": "2027-01-16",
-      "slot": 1,
-      "channel": "telegram",
-      "clip": "studydown/zh-Hant"
-    },
-    {
-      "date": "2027-01-16",
       "slot": 1,
       "channel": "threads",
       "clip": "aibriefpack/en"
     },
     {
-      "date": "2027-01-17",
+      "date": "2027-01-14",
       "slot": 1,
       "channel": "instagram",
-      "clip": "qrcodehalo/zh-Hant"
+      "clip": "lockhour/zh-Hant"
     },
     {
-      "date": "2027-01-17",
+      "date": "2027-01-14",
       "slot": 1,
       "channel": "telegram",
-      "clip": "hourstag/zh-Hant"
+      "clip": "lumimission/zh-Hant"
     },
     {
-      "date": "2027-01-17",
+      "date": "2027-01-14",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "caldaily/en"
+    },
+    {
+      "date": "2027-01-15",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumimath/zh-Hant"
+    },
+    {
+      "date": "2027-01-15",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lockhour_b/zh-Hant"
+    },
+    {
+      "date": "2027-01-15",
       "slot": 1,
       "channel": "threads",
       "clip": "dailymate/en"
     },
     {
+      "date": "2027-01-16",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumimission/zh-Hant"
+    },
+    {
+      "date": "2027-01-16",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "ledmovingtext_b/ja"
+    },
+    {
+      "date": "2027-01-16",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "easyam/en"
+    },
+    {
+      "date": "2027-01-17",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lockhour_b/zh-Hant"
+    },
+    {
+      "date": "2027-01-17",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "lumimission_b/zh-Hant"
+    },
+    {
+      "date": "2027-01-17",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "gmoney/en"
+    },
+    {
       "date": "2027-01-18",
       "slot": 1,
       "channel": "instagram",
-      "clip": "studydown/zh-Hant"
+      "clip": "ledmovingtext_b/ja"
     },
     {
       "date": "2027-01-18",
       "slot": 1,
       "channel": "telegram",
-      "clip": "snapportlite/ja"
+      "clip": "dbhalo/zh-Hant"
     },
     {
       "date": "2027-01-18",
       "slot": 1,
       "channel": "threads",
-      "clip": "easyam/en"
+      "clip": "lumibopomofopro/en"
+    },
+    {
+      "date": "2027-01-19",
+      "slot": 1,
+      "channel": "instagram",
+      "clip": "lumimission_b/zh-Hant"
+    },
+    {
+      "date": "2027-01-19",
+      "slot": 1,
+      "channel": "telegram",
+      "clip": "ledmovingtext/zh-Hant"
+    },
+    {
+      "date": "2027-01-19",
+      "slot": 1,
+      "channel": "threads",
+      "clip": "lumiletterspro/en"
     }
   ]
 }

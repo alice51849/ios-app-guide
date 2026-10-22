@@ -253,6 +253,24 @@ PAGE_SPECS = (
             "下面照「出門前、路上、帶孩子與拍照、收假前一晚」四個時間點，挑出我們自己做、而且真的對得上這些麻煩的 App。"
             "每一段都先講要解決什麼，再講用哪一款、怎麼用。",
         ),
+        # 2026-10-23 付費榜衝榜實驗（reports/yi30/paid_chart_targets.md）：TripBee 在台灣付費旅遊榜前 10，
+        # 連假三天放在頁首最顯眼的位置。points 每一句都是 data/tripbee_full.json zh-Hant 描述的原文片段（測試逐句核對）。
+        "updated": "2026-10-23",
+        "spotlight": {
+            "key": "tripbee",
+            "seg": "pick",
+            "title": "這次連假先裝這一款：TripBee: 旅遊行程規劃",
+            "lead": "揪團出遊最常卡在三件事：行程版本傳來傳去、下雨沒有備案、出門才發現少帶東西。TripBee 把這三件事放進同一份行程：",
+            "points": (
+                "逐日行程時間軸：支援航班、飯店、餐廳與活動",
+                "邀請他人共同編輯共享旅程",
+                "智慧打包清單：依旅遊天數、季節、每位家庭成員與孩子年齡自動產生",
+                "結合天氣規劃：先看天氣再安排戶外與室內活動，遇到雨天、颱風或臨時改期時，也能快速準備備案",
+                "一鍵 Apple 地圖導航：從任一出發點前往景點、飯店、餐廳、機場或集合地點",
+                "一次購買，無廣告、無追蹤",
+            ),
+            "cta": "在 App Store 下載 TripBee →",
+        },
         "groups": (
             ("出門前：排行程、看天氣、收好票券", (
                 ("tripbee", "揪團出遊最怕行程傳來傳去。TripBee 可以邀家人朋友一起編同一份逐日行程，航班、飯店、餐廳和活動都排在時間軸上；"
@@ -489,6 +507,15 @@ header.top{background:#16161d}.lead{color:#d6d8e0}.duo-badge{background:#123327}
 """.strip()
 
 
+# 頁首主推卡的樣式：只加在有 spotlight 的頁（其他頁位元組不變）。
+SPOT_CSS = """
+.spot{background:var(--card);border:2px solid var(--brand);border-radius:16px;padding:16px 18px;margin:1.2rem 0}
+.spot h2{margin:0 0 .5rem}
+.spot ul{margin:.4rem 0 .6rem;padding-left:1.2rem}
+.spot li{margin:.2rem 0}
+""".strip()
+
+
 class GenerationError(RuntimeError):
     """The pages cannot be published as written; nothing is written."""
 
@@ -595,6 +622,17 @@ def _card(key: str, text: str, *, app_id: str, seg: str, badge: str | None, link
     return "\n".join(parts)
 
 
+def spotlight_block(spot: dict, app_id: str | None, relative: str) -> str:
+    """頁首主推卡：一款、幾句商店原文、一個台灣商店直連（ct＝ln_<key>_<seg>_tw_gw_1023）。"""
+    if not app_id:
+        raise GenerationError(f"{relative}: spotlight {spot['key']} is not in the live app manifest")
+    points = "".join(f"<li>{esc(point)}</li>" for point in spot["points"])
+    href = esc(store_url(app_id, spot["key"], spot["seg"]))
+    return (f'<section class="spot" id="pick-{esc(spot["key"])}"><h2>{esc(spot["title"])}</h2>'
+            f'<p>{esc(spot["lead"])}</p><ul>{points}</ul>'
+            f'<p class="cta"><a class="dl" href="{href}" rel="noopener">{esc(spot["cta"])}</a></p></section>')
+
+
 def page_groups(spec: dict, claimable: dict[str, str]) -> list[tuple[str, list[tuple[str, str]]]]:
     if spec["seg"] == "duo":
         groups = [(title, [(key, DUO_LINES[key]) for key in keys if key in claimable])
@@ -607,6 +645,7 @@ def page_groups(spec: dict, claimable: dict[str, str]) -> list[tuple[str, list[t
 def render(spec: dict, claimable: dict[str, str], ids: dict[str, str], badge: str) -> str:
     relative = page_relative(spec["slug"])
     canonical = url_for(relative)
+    updated = spec.get("updated", UPDATED)
     groups = page_groups(spec, claimable)
     is_duo = spec["seg"] == "duo"
     count = sum(len(items) for _, items in groups)
@@ -650,6 +689,9 @@ def render(spec: dict, claimable: dict[str, str], ids: dict[str, str], badge: st
     ]
     ld_json = json.dumps(ld, ensure_ascii=False, indent=1).replace("</", "<\\/")
     sections = [f'<nav class="toc" aria-label="分類">{" · ".join(toc)}</nav>'] + body + [steps_block]
+    if spec.get("spotlight"):
+        sections.insert(0, spotlight_block(spec["spotlight"], claimable.get(spec["spotlight"]["key"])
+                                           or ids.get(spec["spotlight"]["key"]), relative))
     if is_duo:  # the page itself is the claim: one reviewed line above the list, not one per card
         sections.insert(0, f'<p class="duo-badge">{esc(badge)}</p>')
     legal = f'<p class="legal">{esc(LEGAL)}</p>' if spec.get("legal") else ""
@@ -667,9 +709,9 @@ def render(spec: dict, claimable: dict[str, str], ids: dict[str, str], badge: st
 <meta property="og:title" content="{esc(spec['title'])}">
 <meta property="og:description" content="{esc(spec['desc'])}">
 <meta property="og:url" content="{esc(canonical)}">
-<meta property="article:modified_time" content="{UPDATED}">
+<meta property="article:modified_time" content="{updated}">
 <style>
-{CSS}
+{CSS + (chr(10) + SPOT_CSS if spec.get("spotlight") else "")}
 </style>
 <script type="application/ld+json">
 {ld_json}
@@ -681,7 +723,7 @@ def render(spec: dict, claimable: dict[str, str], ids: dict[str, str], badge: st
 <div class="breadcrumb"><a href="{esc(url_for(f'{LANG}/index.html'))}">首頁</a> / 季節推薦</div>
 <h1>{esc(spec['h1'])}</h1>
 <p class="lead">{esc(spec['lead'])}</p>
-<p class="updated">更新日期：{UPDATED}</p>
+<p class="updated">更新日期：{updated}</p>
 {''.join(f'<p>{esc(p)}</p>' for p in intro)}
 {chr(10).join(sections)}
 <section><h2>常見問題</h2>{faqs}</section>

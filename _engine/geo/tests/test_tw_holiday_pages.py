@@ -114,6 +114,40 @@ class LinkAndContentTests(unittest.TestCase):
             self.assertEqual({"BreadcrumbList", "ItemList", "FAQPage"}, {d["@type"] for d in data}, relative)
 
 
+class SpotlightTests(unittest.TestCase):
+    """付費榜衝榜實驗：連假出遊頁頁首主推 TripBee（只有這一頁，而且每句都是商店原文）。"""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.pages = build(gen.DUO_LINES)
+        cls.trip = cls.pages[gen.page_relative(gen.TRIP_SLUG)]
+
+    def test_only_the_trip_page_has_the_spotlight_and_it_comes_before_the_list(self):
+        for relative, source in self.pages.items():
+            self.assertEqual(relative == gen.page_relative(gen.TRIP_SLUG), 'class="spot"' in source, relative)
+            self.assertEqual(relative == gen.page_relative(gen.TRIP_SLUG), ".spot{" in source, relative)
+        self.assertLess(self.trip.index('class="spot"'), self.trip.index('class="toc"'))
+
+    def test_spotlight_link_is_a_tracked_taiwan_store_link(self):
+        block = re.search(r'<section class="spot".*?</section>', self.trip, re.S).group(0)
+        hrefs = re.findall(r'href="(https://apps\.apple\.com/[^"]+)"', block)
+        self.assertEqual(1, len(hrefs))
+        url = html.unescape(hrefs[0])
+        validated_app_store_url(url, IDS["tripbee"], expected_locale="zh-Hant", require_campaign=True)
+        ct = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(url).query))["ct"]
+        self.assertEqual("ln_tripbee_pick_tw_gw_1023", ct)
+
+    def test_every_spotlight_point_is_verbatim_store_copy(self):
+        spec = next(s for s in gen.PAGE_SPECS if s["slug"] == gen.TRIP_SLUG)
+        store = json.loads((GEO.parent / "data" / "tripbee_full.json").read_text(encoding="utf-8"))["zh-Hant"]
+        for point in spec["spotlight"]["points"]:
+            self.assertIn(point, store["description"])
+        self.assertIn(gen.NAMES["tripbee"], spec["spotlight"]["title"])
+        for text in (spec["spotlight"]["title"], spec["spotlight"]["lead"], *spec["spotlight"]["points"]):
+            self.assertIsNone(gen.BANNED.search(text))
+            self.assertNotIn("Pro", text)
+
+
 class SitemapTests(unittest.TestCase):
     def test_merge_adds_missing_rows_once(self):
         base = '<?xml version="1.0"?>\n<urlset>\n<url><loc>https://x/a.html</loc></url>\n</urlset>\n'

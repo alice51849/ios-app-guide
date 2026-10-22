@@ -1,5 +1,5 @@
 {
- "note": "Threads picture-slot queue (Taiwan 11:00). A queued post takes the slot on its date; otherwise the countdown card, otherwise the regular picture post. Body has no links; store links go in the first reply. 2026-10-22 Taiwan long weekend (10-23..10-25): those three dates carry zh-Hant long-weekend posts (TripBee Lite, G+Money Lite, Studydown); every later post keeps its order and moves to the next free date (none removed; lumibopomofo-season-6 stays on Sunday 11-15). 2026-10-23 EasyAM (holiday-skipping alarm, live 2026-10-20) takes four empty dates (11-18 shift workers, 11-24 US Thanksgiving in English, 12-22 year-end time off, 12-30 New Year long weekend); no other post moved.",
+ "note": "Threads picture-slot queue (Taiwan 11:00). A queued post takes the slot on its date; otherwise the countdown card, otherwise the regular picture post. Body has no links; store links go in the first reply. 2026-10-22 Taiwan long weekend (10-23..10-25): those three dates carry zh-Hant long-weekend posts (TripBee Lite, G+Money Lite, Studydown); every later post keeps its order and moves to the next free date (none removed; lumibopomofo-season-6 stays on Sunday 11-15). 2026-10-23 EasyAM (holiday-skipping alarm, live 2026-10-20) takes four empty dates (11-18 shift workers, 11-24 US Thanksgiving in English, 12-22 year-end time off, 12-30 New Year long weekend); no other post moved. 2026-10-23 paid-chart push: TripBee (paid, Taiwan paid Travel chart top 10) takes the 10-23 date for the long weekend; the TripBee Lite long-weekend post moves to 2027-01-01 (New Year long weekend, a free date, so its long-weekend copy still fits); nothing removed, no slot added.",
  "posts": [
   {
    "date": "2026-10-15",
@@ -69,14 +69,14 @@
   },
   {
    "date": "2026-10-23",
-   "app": "tripbeelite",
-   "app_id": "6791299610",
-   "task": "tripbeelite-lw-1",
-   "source": "tw_long_weekend_1023",
-   "ct": "ln_tripbeelite_lw_tw_th_1023",
+   "app": "tripbee",
+   "app_id": "6787754435",
+   "task": "tripbee-lw-paidchart-1",
+   "source": "tw_long_weekend_paid_chart_1023",
+   "ct": "ln_tripbee_lw_tw_th_1023",
    "lang": "zh-Hant",
    "topic_tag": "連假",
-   "text": "連假說走就走，結果行程散在 LINE 記事本、訂房確認信跟一堆截圖裡，到了現場才在翻？\n\nTripBee Lite 只專心整理「眼前這一趟」：把住宿、活動一個個排進每日時間軸，備註、提醒和票券資訊收在同一個地方，要用的時候點開就找得到。\n\n三天兩夜也好、當天來回也好，出門前花幾分鐘排一下，路上就不用一直在不同 App 之間切來切去。"
+   "text": "連假要揪團出門，最怕的不是去哪，是行程在群組裡傳了三個版本，到現場大家看的都不一樣。\n\nTripBee 讓你邀家人朋友一起編同一份逐日行程：航班、飯店、餐廳和活動都排在時間軸上，誰改了大家都看得到。\n\n打包清單會依天數、季節、每位旅伴和孩子年齡自動產生；先看天氣再排戶外和室內活動，遇到下雨或颱風也有備案。核心規劃離線也能用，一次購買、無廣告、無追蹤。\n\n連結在留言。"
   },
   {
    "date": "2026-10-24",
@@ -397,6 +397,17 @@
    "ct": "bm_easyam_tw_th",
    "locale": "zh-Hant",
    "text": "元旦三天連假前一晚，你會把鬧鐘一個個關掉嗎？最怕的是收假那天早上忘了打開。\n\nEasyAM 每天幫你判斷要不要響：國定假日早上自動不響，上班日照響，遇到補班日也會照常叫你起床。連假前不必再一個個關，收假後也不用擔心忘了開。\n\n明早想多睡一點，一鍵只跳過下一次，原本的規則不變。主畫面、鎖定畫面與 Apple Watch 都看得到下一次鬧鐘。\n\n連結在留言。"
+  },
+  {
+   "date": "2027-01-01",
+   "app": "tripbeelite",
+   "app_id": "6791299610",
+   "task": "tripbeelite-lw-1",
+   "source": "tw_long_weekend_1023",
+   "ct": "ln_tripbeelite_lw_tw_th_1023",
+   "lang": "zh-Hant",
+   "topic_tag": "連假",
+   "text": "連假說走就走，結果行程散在 LINE 記事本、訂房確認信跟一堆截圖裡，到了現場才在翻？\n\nTripBee Lite 只專心整理「眼前這一趟」：把住宿、活動一個個排進每日時間軸，備註、提醒和票券資訊收在同一個地方，要用的時候點開就找得到。\n\n三天兩夜也好、當天來回也好，出門前花幾分鐘排一下，路上就不用一直在不同 App 之間切來切去。"
   },
   {
    "date": "2027-02-15",

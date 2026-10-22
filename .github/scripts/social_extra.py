@@ -377,8 +377,13 @@ def todays_cards(day, channel):
 # release "carousel-cards"; the queue is .github/growth/carousels.json. Each entry opens on its `start` day and stays
 # offered for CAROUSEL_WINDOW_DAYS (the generator opens about 6 a day); the posters keep their own caps and never post a key twice. A card item carries
 # `images` (all cards, in order) besides `image` (the cover): Bluesky takes up to 4, single-image posters the cover.
+# New-listing floor (coordinator 2026-10-22): the queue's "app_launched" ({app: go-live date}, from 00_GrowthEngine
+# social/carousel/new_apps.json) rides on each card as `launched`; for LAUNCH_FLOOR_DAYS after go-live, one of the
+# day's card slots on each card channel goes to that App's card ahead of the rest (plan(); Bluesky does the same in
+# threads-autopilot media_post.py, over its paying order). No added post: the platform's daily cap is unchanged.
 CAROUSELS = HERE.parent / "growth" / "carousels.json"
 CAROUSEL_WINDOW_DAYS = 14   # bounds the feed (and its online QA) to the last two weeks of the queue
+LAUNCH_FLOOR_DAYS = 14
 
 
 def carousel_store_url(entry, channel):
@@ -396,6 +401,7 @@ def carousel_cards(day, channel, path=None):
     except (OSError, ValueError):
         return []
     today, oldest = day.isoformat(), (day - dt.timedelta(days=CAROUSEL_WINDOW_DAYS)).isoformat()
+    launched = data.get("app_launched") if isinstance(data.get("app_launched"), dict) else {}
     out = []
     for e in data.get("items") or []:
         start = str(e.get("start") or "")
@@ -412,7 +418,30 @@ def carousel_cards(day, channel, path=None):
                     "title": e["hook"], "alt": e.get("alt") or e["hook"], "name": e["name"], "hook": e["hook"],
                     "tags": tags, "button": clip_posts.text_for(e["locale"])["button"],
                     "store": carousel_store_url(e, channel), "format": e.get("format")})
+        if isinstance(launched.get(e["app"]), str):
+            out[-1]["launched"] = launched[e["app"]]
     return out
+
+
+def is_new_listing(card, day):
+    """The card's App went live less than LAUNCH_FLOOR_DAYS before `day` (its `launched` date)."""
+    try:
+        live = dt.date.fromisoformat(str(card.get("launched") or "")[:10])
+    except ValueError:
+        return False
+    return 0 <= (day - live).days < LAUNCH_FLOOR_DAYS
+
+
+def launch_first(cards, channel, posts, day):
+    """The new-listing floor: while no new listing's card went out on `channel` today, its first due card leads."""
+    news = [c for c in cards if is_new_listing(c, day)]
+    keys = {c["key"] for c in news}
+    if not news or any(p["channel"] == channel and p.get("clip") in keys
+                       and p.get("posted_at", "").startswith(day.isoformat()) for p in posts):
+        return cards
+    done = {p["clip"] for p in posts if p["channel"] == channel}
+    lead = next((c for c in news if c["key"] not in done), None)
+    return [lead] + [c for c in cards if c is not lead] if lead else cards
 
 
 def plan(channel, data, posts, day, slot, check=True):
@@ -425,7 +454,8 @@ def plan(channel, data, posts, day, slot, check=True):
     done = {p["clip"] for p in posts if p["channel"] == channel}
     items = todays_clips(data, posts, channel, day, slot)[:1] if rule["clips"] else []
     if rule["cards"] and slot == 15:
-        items += [c for c in todays_cards(day, channel) if c["key"] not in done and (not check or exists(c["image"]))]
+        cards = launch_first(todays_cards(day, channel), channel, posts, day)
+        items += [c for c in cards if c["key"] not in done and (not check or exists(c["image"]))]
     return items[:room]
 
 

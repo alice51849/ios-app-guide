@@ -1481,3 +1481,45 @@ class CarouselCardsTest(unittest.TestCase):
         self.assertEqual(S.carousel_cards(dt.date(2026, 12, 1), "bluesky", path=self.queue()), [])
         self.assertEqual(S.carousel_cards(dt.date(2026, 10, 22), "tumblr", path=self.queue()), [])
         self.assertEqual(S.carousel_cards(dt.date(2026, 10, 22), "bluesky", path=Path("/nonexistent.json")), [])
+
+    def test_the_queue_go_live_date_rides_on_the_card(self):
+        path = self.queue(app="easyam")
+        data = json.loads(path.read_text(encoding="utf-8"))
+        data["app_launched"] = {"easyam": "2026-10-20", "other": 5}
+        path.write_text(json.dumps(data), encoding="utf-8")
+        self.assertEqual(S.carousel_cards(dt.date(2026, 10, 22), "bluesky", path=path)[0]["launched"], "2026-10-20")
+        self.assertNotIn("launched", S.carousel_cards(dt.date(2026, 10, 22), "bluesky", path=self.queue())[0])
+
+
+class LaunchFloorTest(unittest.TestCase):
+    """Coordinator 2026-10-22: for 14 days after go-live a new App's card leads the day's cards on each card channel."""
+    DAY = dt.date(2026, 10, 22)
+    EMPTY = {"clips": {}, "schedule": []}
+
+    @staticmethod
+    def card(key, app, launched=None):
+        out = {"kind": "card", "key": key, "locale": "en", "app": app, "image": f"https://x/{key}.jpg"}
+        if launched:
+            out["launched"] = launched
+        return out
+
+    def keys(self, cards, posts=(), day=None):
+        with mock.patch.object(S, "todays_cards", return_value=cards):
+            return [i["key"] for i in S.plan("pinterest", self.EMPTY, list(posts), day or self.DAY, 15, check=False)]
+
+    def test_the_new_app_leads_once_a_day_and_the_cap_is_unchanged(self):
+        cards = [self.card("card/cd", "countdaysnow"), self.card("carousel/m1", "mochi"),
+                 self.card("carousel/e1", "easyam", "2026-10-20"), self.card("carousel/e2", "easyam", "2026-10-20")]
+        self.assertEqual(self.keys(cards), ["carousel/e1", "card/cd", "carousel/m1"])   # cap 3, no post added
+        posts = [{"channel": "pinterest", "clip": "carousel/e1", "posted_at": "2026-10-22T15:05:00Z"}]
+        self.assertEqual(self.keys(cards, posts), ["card/cd", "carousel/m1"])   # today's floor already met
+        posts = [{"channel": "pinterest", "clip": "carousel/e1", "posted_at": "2026-10-21T15:05:00Z"}]
+        self.assertEqual(self.keys(cards, posts), ["carousel/e2", "card/cd", "carousel/m1"])
+        posts = [{"channel": "tumblr", "clip": "carousel/e1", "posted_at": "2026-10-22T15:05:00Z"}]
+        self.assertEqual(self.keys(cards, posts)[0], "carousel/e1")   # each channel keeps its own floor
+
+    def test_after_fourteen_days_or_without_a_date_the_queue_order_is_back(self):
+        for launched, first in (("2026-10-09", "carousel/e1"), ("2026-10-08", "card/cd"), ("2026-10-23", "card/cd"),
+                                ("soon", "card/cd"), (None, "card/cd")):
+            cards = [self.card("card/cd", "countdaysnow"), self.card("carousel/e1", "easyam", launched)]
+            self.assertEqual(self.keys(cards)[0], first, launched)

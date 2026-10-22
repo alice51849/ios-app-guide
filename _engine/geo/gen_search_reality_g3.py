@@ -10,7 +10,8 @@
 規則（CLAUDE.md、ops/company/duo_claim_rules.md）：
 - 功能句只取 data/<key>_full.json 該語系商店文案；不寫價格、免費、Free、Pro。
 - 每頁一張主卡（＋必要時一張同系列卡），附該國商店 App Store 直連（pt＋ct＋mt）；
-  ct＝ln_<key>_sr_<國碼>_gw_<MMDD>，超過 30 字元時省略日期（agent/ct_codes.LN_RE 允許）。
+  ct＝gw 階梯碼 ln_<key>_<詞群>_<國>_gw（gw_campaign.py：款 × 國家 × 詞群，量不夠的格子併成 all／ww）；
+  頁首放詞群標記 growth-attribution-group=sr，每日改寫照標記逐連結重算、不再蓋成 geo_*。
   Google Play 連結由 android_play.inject_html 依已發布快照補上。
 - 每頁專屬內容：中日文 ≥450 字、英文 ≥450 個詞。
 - 只寫這些頁與各語系 sitemap_seasonal_<lang>.xml 的這幾列；不做 git 操作。
@@ -35,6 +36,7 @@ for entry in (HERE, ROOT / "social"):
         sys.path.insert(0, str(entry))
 
 import android_play  # noqa: E402
+import gw_campaign  # noqa: E402
 import first_party_disclosure  # noqa: E402
 from app_store_storefronts import validated_app_store_url  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
@@ -46,6 +48,8 @@ UPDATED = "2026-10-23"
 CAMPAIGN_DATE = "1023"
 SEG = "sr"
 PROVIDER_TOKEN = "118326163"  # 公開值：站上每個 App Store 連結的 pt= 都是它
+GW_GROUP = "sr"            # gw_campaign 詞群：品類主詞
+GW_META = gw_campaign.meta_tag(GW_GROUP)
 MAX_CT = 30                   # app_store_storefronts.CAMPAIGN_TOKEN_RE 的上限
 MIN_CJK = 450
 MIN_WORDS = 450
@@ -765,11 +769,12 @@ def sitemap_name(lang: str) -> str:
 
 
 def campaign(key: str, cc: str) -> str:
-    """ln_<key>_sr_<cc>_gw_<MMDD>；超過 30 字元就省略日期。"""
-    token = f"ln_{key}_{SEG}_{cc}_gw_{CAMPAIGN_DATE}"
+    """款 × 國家 × 詞群（sr）的 gw 階梯碼（gw_campaign.py）；開格看 geo/data/gw_campaign_plan.json。"""
+    try:
+        token = gw_campaign.campaign(key, GW_GROUP, cc)
+    except gw_campaign.GwCampaignError as error:
+        raise GenerationError(str(error)) from error
     if len(token) > MAX_CT:
-        token = f"ln_{key}_{SEG}_{cc}_gw"
-    if len(token) > MAX_CT or not re.fullmatch(r"ln_[a-z0-9]+_[a-z]+_[a-z]{2}_gw(?:_\d{4})?", token):
         raise GenerationError(f"campaign token does not fit: {token!r}")
     return token
 
@@ -854,6 +859,7 @@ def render(spec: dict, names: dict) -> str:
 <title>{esc(spec['title'])}</title>
 <meta name="description" content="{esc(spec['desc'])}">
 <meta name="robots" content="index,follow,max-image-preview:large">
+{GW_META}
 <link rel="canonical" href="{esc(canonical)}">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="{info['og']}">

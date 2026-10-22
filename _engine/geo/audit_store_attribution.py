@@ -574,9 +574,30 @@ def validate_reference(ref: Reference, *, provider: str,
     app_campaign = _app_result_campaign(normalized)
     if app_campaign is not None:
         allowed.add(app_campaign)
+    if campaign not in allowed and gw_campaign_problems(campaign, normalized) == []:
+        # Intent-page gw codes (gw_campaign.py): app x storefront x keyword group.
+        # Only a code whose app is the linked app and whose market is the link's
+        # storefront (or ww) passes; any other ln_*_gw shape is rejected below.
+        allowed.add(campaign)
     if campaign not in allowed:
-        raise AttributionError(f"Campaign outside the existing taxonomy: {campaign}")
+        problems = gw_campaign_problems(campaign, normalized)
+        detail = f" ({'; '.join(problems)})" if problems and problems != ["not gw"] else ""
+        raise AttributionError(f"Campaign outside the existing taxonomy: {campaign}{detail}")
     return campaign
+
+
+def gw_campaign_problems(campaign: str, url: str) -> list[str]:
+    """[] when ``campaign`` is a gw intent-page code valid on this exact link."""
+    import gw_campaign
+
+    if not gw_campaign.is_gw(campaign):
+        return ["not gw"]
+    match = APP_STORE_PATH_RE.fullmatch(urllib.parse.urlsplit(url).path)
+    app_id = match["app_id"] if match else None
+    return gw_campaign.link_problems(
+        campaign, app_key=gw_campaign.app_key_for_id(app_id),
+        storefront=gw_campaign.storefront_of(url),
+    )
 
 
 def _qr_card(href: str, image: str, root: Path | None, cache: set | None = None) -> None:

@@ -14,6 +14,7 @@ GEO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(GEO))
 
 import gen_tw_holiday_pages as gen  # noqa: E402
+import gw_campaign  # noqa: E402
 from app_store_storefronts import validated_app_store_url  # noqa: E402
 
 # Synthetic ids: every content key gets one; the claim gate is driven by CLAIMABLE only.
@@ -88,11 +89,12 @@ class LinkAndContentTests(unittest.TestCase):
                 validated_app_store_url(url, expected_locale="zh-Hant", require_campaign=True)
                 ct = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(url).query))["ct"]
                 self.assertLessEqual(len(ct), gen.MAX_CT)
-                self.assertRegex(ct, rf"^ln_[a-z0-9]+_{spec['seg']}_tw_gw(?:_1023)?$")
+                self.assertRegex(ct, r"^ln_[a-z0-9]+_(ss|all)_(tw|ww)_gw$")
+            self.assertIn(gw_campaign.meta_tag("ss"), source)  # 每日改寫照這個詞群標記保留 gw 碼
 
-    def test_campaign_keeps_the_date_when_it_fits(self):
-        self.assertEqual("ln_mochi_clean_tw_gw_1023", gen.campaign("mochi", "clean"))
-        self.assertEqual("ln_claudeusagemini_study_tw_gw", gen.campaign("claudeusagemini", "study"))
+    def test_campaign_is_the_gw_ladder_code_without_a_date(self):
+        for key, seg in (("mochi", "clean"), ("claudeusagemini", "study")):
+            self.assertEqual(gw_campaign.campaign(key, "ss", "tw"), gen.campaign(key, seg))
 
     def test_no_price_or_free_wording_and_enough_dedicated_text(self):
         for relative, source in self.pages.items():
@@ -135,7 +137,8 @@ class SpotlightTests(unittest.TestCase):
         url = html.unescape(hrefs[0])
         validated_app_store_url(url, IDS["tripbee"], expected_locale="zh-Hant", require_campaign=True)
         ct = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(url).query))["ct"]
-        self.assertEqual("ln_tripbee_pick_tw_gw_1023", ct)
+        # 主推卡跟整頁同一個 gw 階梯碼（款 × 國 × 詞群）；主推卡本身的點擊看點擊計數的 p
+        self.assertEqual(gw_campaign.campaign("tripbee", "ss", "tw"), ct)
 
     def test_every_spotlight_point_is_verbatim_store_copy(self):
         spec = next(s for s in gen.PAGE_SPECS if s["slug"] == gen.TRIP_SLUG)

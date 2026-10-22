@@ -16,6 +16,11 @@
 URL。這樣 QR 雜湊、decision card、smart app banner、歸因 ct、免責聲明、微格式全部沿用
 已經過稽核的那一份,不會因為手寫模板而漂移。
 
+追蹤碼(2026-10-23 起):每頁 <head> 放詞群標記 growth-attribution-group=sr(這些頁都是「已經排上名的
+品類詞」),App Store 連結、Smart App Banner、QR 卡一律改成 gw 階梯碼 ln_<款>_<詞群>_<國>_gw
+(gw_campaign.py:款 × 國家 × 詞群,量不夠的格子併成 all／ww),QR 圖同時重算,
+每日改寫照標記逐連結重算、不再蓋成 geo_ask。既有頁補標記:``--retag-existing``(不重新套供體)。
+
 不做 git 操作;只寫自己這批的檔案。
 """
 from __future__ import annotations
@@ -37,8 +42,13 @@ for entry in (HERE, ROOT / "social"):
 from site_config import PUBLIC_SITE  # noqa: E402
 from videogen.registry import APPS, APPSTORE  # noqa: E402
 from app_pairs import free_first_key  # noqa: E402
+import gw_campaign  # noqa: E402
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages")).resolve()
+GW_GROUP = "sr"                      # gw_campaign 詞群:品類主詞(已在榜的母語詞)
+PROVIDER_TOKEN = "118326163"         # app_store_storefronts.PROVIDER_TOKEN_ENV 沒設時的備援
+# render() 算出要新增的 QR 圖(相對 PAGES 的路徑 → SVG);main 寫檔(--dry-run 不寫)。
+PENDING_QR_ASSETS: dict[Path, str] = {}
 DATA = HERE / "data" / "ranked_query_answers.json"
 SITE = PUBLIC_SITE.rstrip("/")
 
@@ -530,7 +540,77 @@ def render(entry: dict, locale: str) -> str:
     )
     if page_url(locale, donor_slug) in text:
         raise SystemExit(f"donor slug leaked into {locale}/{slug}")
+    return apply_gw_attribution(text, page_relative(locale, slug))
+
+
+def page_relative(locale: str, slug: str) -> str:
+    return f"answers/{slug}.html" if locale == "en" else f"{locale}/answers/{slug}.html"
+
+
+def apply_gw_attribution(text: str, relative: str) -> str:
+    """放詞群標記,連結改成 gw 階梯碼,QR 圖跟著連結重算(圖檔放進 PENDING_QR_ASSETS)。
+
+    與每日改寫用同一個 final_store_url(gen_store_attribution.rewrite),所以之後每天重跑
+    結果不變;QR 卡的圖檔名是連結的 sha256,連結變了圖就一定要換,否則每日改寫的
+    QR 失步閘門會整棵樹拒絕。
+    """
+    import gen_app_store_qr_ctas as qr
+    import gen_store_attribution as attribution
+    from app_store_storefronts import load_storefront_availability, resolve_provider_token
+    from audit_store_attribution import locale_of
+
+    if gw_campaign.page_group(text) is None:
+        head = text.find("</head>")
+        if head < 0:
+            raise SystemExit(f"{relative}: no </head> for the attribution group marker")
+        text = text[:head] + gw_campaign.meta_tag(GW_GROUP) + "\n" + text[head:]
+    provider = resolve_provider_token() or PROVIDER_TOKEN
+    availability = load_storefront_availability(PAGES) or None
+    token = attribution.page_token(relative, text)
+    text, _ = attribution.rewrite(text, token, provider, locale=locale_of(relative), availability=availability)
+    link = attribution.QR_CARD_LINK_RE.search(text)
+    image = attribution.QR_CARD_IMAGE_RE.search(text)
+    if link and image:
+        href = html.unescape(link["href"])
+        asset = qr.qr_asset_relative(image["app"], href)
+        old_name = f"id{image['app']}-{image['digest']}.svg"
+        if asset.name != old_name:
+            text = text.replace(old_name, asset.name)
+            PENDING_QR_ASSETS[asset] = qr.qr_svg(image["app"], href)
+    if attribution.qr_card_desync(text) is not None:
+        raise SystemExit(f"{relative}: QR card is out of sync with its link after gw attribution")
     return text
+
+
+def write_qr_assets() -> int:
+    written = 0
+    for relative, svg in sorted(PENDING_QR_ASSETS.items()):
+        target = PAGES / relative
+        if target.exists() and target.read_text(encoding="utf-8") == svg:
+            continue
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(svg, encoding="utf-8")
+        written += 1
+    PENDING_QR_ASSETS.clear()
+    return written
+
+
+def retag_existing(entries: list[dict]) -> int:
+    """既有頁只補詞群標記與 gw 碼(不重新套供體、不動內文)。"""
+    changed = 0
+    for entry in entries:
+        for locale in dict.fromkeys(("en", entry["locale"])):
+            target = answers_dir(locale) / f"{entry['slug']}.html"
+            if not target.exists():
+                continue
+            source = target.read_text(encoding="utf-8")
+            updated = apply_gw_attribution(source, page_relative(locale, entry["slug"]))
+            if updated != source:
+                target.write_text(updated, encoding="utf-8")
+                changed += 1
+                print(f"RETAG {target.relative_to(PAGES)}", flush=True)
+    print(f"ranked-query answers: retagged {changed} files, {write_qr_assets()} QR images", flush=True)
+    return changed
 
 
 
@@ -678,9 +758,14 @@ def main() -> int:
     parser.add_argument("--data", type=Path, default=DATA)
     parser.add_argument("--only", help="只做這個 slug")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--retag-existing", action="store_true",
+                        help="既有頁只補詞群標記與 gw 追蹤碼、重算 QR 圖")
     args = parser.parse_args()
 
     entries = json.loads(args.data.read_text(encoding="utf-8"))
+    if args.retag_existing:
+        retag_existing(entries)
+        return 0
     written = 0
     skipped: list[dict] = []
     for entry in entries:
@@ -713,7 +798,11 @@ def main() -> int:
             written += 1
             print(f"WROTE {target.relative_to(PAGES)}", flush=True)
     print(f"ranked-query answers: {written} files", flush=True)
-    if args.dry_run or args.only:
+    if args.dry_run:
+        PENDING_QR_ASSETS.clear()
+        return 0
+    print(f"ranked-query answers: {write_qr_assets()} QR images", flush=True)
+    if args.only:
         return 0
     if skipped:
         # 索引與 sitemap 只登記真的寫出來的頁。

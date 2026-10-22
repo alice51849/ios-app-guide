@@ -36,6 +36,7 @@ for entry in (HERE, ROOT / "social"):
         sys.path.insert(0, str(entry))
 
 import android_play  # noqa: E402
+import gw_campaign  # noqa: E402
 import first_party_disclosure  # noqa: E402
 from app_store_storefronts import validated_app_store_url  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
@@ -46,6 +47,8 @@ SECTION = "seasonal"
 UPDATED = "2026-10-23"
 CAMPAIGN_DATE = "1023"
 PROVIDER_TOKEN = "118326163"  # 公開值：站上每個 App Store 連結的 pt= 都是它
+GW_GROUP = "ss"            # gw_campaign 詞群：檔期
+GW_META = gw_campaign.meta_tag(GW_GROUP)
 MAX_CT = 30                   # app_store_storefronts.CAMPAIGN_TOKEN_RE 的上限
 SEGS = {"halloween": "hw", "singles_day": "sd", "suneung": "sn", "thanksgiving": "tg",
         "black_friday": "bf", "gifts": "gf"}
@@ -170,12 +173,13 @@ def sitemap_name(lang: str) -> str:
 
 
 def campaign(key: str, event: str, cc: str) -> str:
-    """ln_<key>_<檔期碼>_<cc>_gw_<MMDD>；超過 30 字元就省略日期。"""
-    seg = SEGS[event]
-    token = f"ln_{key}_{seg}_{cc}_gw_{CAMPAIGN_DATE}"
+    """款 × 國家 × 詞群（ss 檔期）的 gw 階梯碼（gw_campaign.py）；哪個檔期由點擊計數的 p 分。"""
+    SEGS[event]  # 未知檔期照舊報錯
+    try:
+        token = gw_campaign.campaign(key, GW_GROUP, cc)
+    except gw_campaign.GwCampaignError as error:
+        raise GenerationError(str(error)) from error
     if len(token) > MAX_CT:
-        token = f"ln_{key}_{seg}_{cc}_gw"
-    if len(token) > MAX_CT or not re.fullmatch(r"ln_[a-z0-9]+_[a-z]+_[a-z]{2}_gw(?:_\d{4})?", token):
         raise GenerationError(f"campaign token does not fit: {token!r}")
     return token
 
@@ -260,6 +264,7 @@ def render(spec: dict, names: dict) -> str:
 <title>{esc(spec['title'])}</title>
 <meta name="description" content="{esc(spec['desc'])}">
 <meta name="robots" content="index,follow,max-image-preview:large">
+{GW_META}
 <link rel="canonical" href="{esc(canonical)}">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="{info['og']}">

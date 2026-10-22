@@ -13,6 +13,7 @@ GEO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(GEO))
 
 import gen_seasonal_peaks_2026 as gen  # noqa: E402
+import gw_campaign  # noqa: E402
 from app_store_storefronts import validated_app_store_url  # noqa: E402
 
 
@@ -39,13 +40,18 @@ class PageTests(unittest.TestCase):
                 validated_app_store_url(href, gen.APP_IDS[key], expected_locale=info["store"], require_campaign=True)
                 query = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(href).query))
                 self.assertEqual(query["pt"], gen.PROVIDER_TOKEN)
-                self.assertTrue(query["ct"].startswith(f"ln_{key}_{gen.SEGS[spec['event']]}_{info['cc']}_gw"))
+                self.assertEqual(query["ct"], gw_campaign.campaign(key, "ss", info["cc"]))
                 self.assertLessEqual(len(query["ct"]), gen.MAX_CT)
+            self.assertIn(gw_campaign.meta_tag("ss"), source)  # 每日改寫照這個詞群標記保留 gw 碼
 
-    def test_campaign_drops_date_only_when_too_long(self):
-        self.assertEqual(gen.campaign("mochi", "halloween", "us"), "ln_mochi_hw_us_gw_1023")
-        self.assertEqual(gen.campaign("countdaysnow", "suneung", "kr"), "ln_countdaysnow_sn_kr_gw_1023")
-        self.assertEqual(gen.campaign("hourstaglite", "singles_day", "id"), "ln_hourstaglite_sd_id_gw_1023")
+    def test_campaign_is_the_gw_ladder_code_without_a_date(self):
+        for key, event, cc in (("mochi", "halloween", "us"), ("countdaysnow", "suneung", "kr"),
+                               ("hourstaglite", "singles_day", "id")):
+            token = gen.campaign(key, event, cc)
+            self.assertEqual(gw_campaign.campaign(key, "ss", cc), token)
+            self.assertRegex(token, rf"^ln_{key}_(ss|all)_({cc}|ww)_gw$")
+        with self.assertRaises(KeyError):
+            gen.campaign("mochi", "no_such_event", "us")
 
     def test_no_price_free_or_pro_wording_outside_store_names(self):
         for spec in gen.PAGE_SPECS:

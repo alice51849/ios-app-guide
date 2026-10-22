@@ -13,6 +13,7 @@ GEO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(GEO))
 
 import gen_search_reality_g3 as gen  # noqa: E402
+import gw_campaign  # noqa: E402
 from app_store_storefronts import validated_app_store_url  # noqa: E402
 
 
@@ -41,12 +42,15 @@ class PageTests(unittest.TestCase):
                 validated_app_store_url(href, gen.APP_IDS[key], expected_locale=info["store"], require_campaign=True)
                 query = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(href).query))
                 self.assertEqual(query["pt"], gen.PROVIDER_TOKEN)
-                self.assertTrue(query["ct"].startswith(f"ln_{key}_sr_{info['cc']}_gw"))
+                self.assertEqual(query["ct"], gw_campaign.campaign(key, "sr", info["cc"]))
                 self.assertLessEqual(len(query["ct"]), gen.MAX_CT)
+            self.assertIn(gw_campaign.meta_tag("sr"), source)  # 每日改寫照這個詞群標記保留 gw 碼
 
-    def test_campaign_drops_date_only_when_too_long(self):
-        self.assertEqual(gen.campaign("gmoney", "tw"), "ln_gmoney_sr_tw_gw_1023")
-        self.assertEqual(gen.campaign("claudeusagemini", "us"), "ln_claudeusagemini_sr_us_gw")
+    def test_campaign_is_the_gw_ladder_code_without_a_date(self):
+        for key, cc in (("gmoney", "tw"), ("claudeusagemini", "us")):
+            token = gen.campaign(key, cc)
+            self.assertEqual(gw_campaign.campaign(key, "sr", cc), token)
+            self.assertRegex(token, rf"^ln_{key}_(sr|all)_({cc}|ww)_gw$")
 
     def test_no_price_free_or_pro_wording(self):
         for relative, source in self.pages.items():

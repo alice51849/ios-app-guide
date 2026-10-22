@@ -14,6 +14,7 @@ sys.path.insert(0, str(GEO))
 
 import gen_search_reality_easyam as gen  # noqa: E402
 import gen_search_reality_g3 as g3  # noqa: E402
+import gw_campaign  # noqa: E402
 
 PATCHED = ("LANGS", "APP_IDS", "PAGE_SPECS", "BANNED", "dedicated_size")
 
@@ -43,7 +44,8 @@ class EasyamPageTests(unittest.TestCase):
             href = html.unescape(re.search(r'class="dl" href="([^"]+)"', source).group(1))
             self.assertTrue(href.startswith(f"https://apps.apple.com/{cc}/app/id6821790092?"), href)
             query = urllib.parse.parse_qs(urllib.parse.urlsplit(href).query)
-            self.assertEqual(query["ct"], [f"ln_easyam_sr_{cc}_gw_1023"])
+            self.assertEqual(query["ct"], [gw_campaign.campaign("easyam", "sr", cc)])
+            self.assertIn(gw_campaign.meta_tag("sr"), source)
             self.assertEqual(query["pt"], ["118326163"])
 
     def test_no_price_free_or_pro_wording(self):

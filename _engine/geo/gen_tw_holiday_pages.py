@@ -10,8 +10,8 @@
 - iPhone Duo 宣稱只給 aso/duo/duo_list.py 判定可宣稱、而且 iTunes Lookup 讀到的線上版本等於
   live_version 的款；句子只用 aso/duo/claim_lines.json 的 zh-Hant promo_line（已另一模型複審）。
   不在清單的款（例如 BattAI）iPhone Duo 頁一個字都不寫，情境頁也不掛宣稱句。
-- 每張卡片附台灣商店 App Store 直連（pt＋ct＋mt）；ct＝ln_<key>_<族群>_tw_gw_1023，超過
-  app_store_storefronts.CAMPAIGN_TOKEN_RE 的 30 字元上限時省略日期（LN_RE 允許）。
+- 每張卡片附台灣商店 App Store 直連（pt＋ct＋mt）；ct＝gw 階梯碼 ln_<key>_<詞群>_<國>_gw（gw_campaign.py：
+  款 × 國家 × 詞群，量不夠的格子併成 all／ww；頁首詞群標記 ss，每日改寫照標記逐連結重算、不蓋成 geo_*）。
   Google Play 連結由 android_play.inject_html 依已發布快照補上（同一個 ct 進安裝來源）。
 - 功能句只取 data/<key>_full.json 的 zh-Hant 商店文案；不寫價格、免費、Free。
 - 只寫這 4 頁與 sitemap_seasonal_zh-Hant.xml 的這 4 列；不做 git 操作。
@@ -37,6 +37,7 @@ for entry in (HERE, ROOT / "social", ROOT / "aso" / "duo"):
         sys.path.insert(0, str(entry))
 
 import android_play  # noqa: E402
+import gw_campaign  # noqa: E402
 import duo_list  # noqa: E402
 import first_party_disclosure  # noqa: E402
 from app_store_storefronts import validated_app_store_url  # noqa: E402
@@ -50,6 +51,8 @@ SITEMAP = "sitemap_seasonal_zh-Hant.xml"
 UPDATED = "2026-10-22"
 CAMPAIGN_DATE = "1023"
 PROVIDER_TOKEN = "118326163"  # 公開值：站上每個 App Store 連結的 pt= 都是它
+GW_GROUP = "ss"            # gw_campaign 詞群：檔期
+GW_META = gw_campaign.meta_tag(GW_GROUP)
 MAX_CT = 30                   # app_store_storefronts.CAMPAIGN_TOKEN_RE 的上限
 CLAIM_LINES = ROOT / "aso" / "duo" / "claim_lines.json"
 LOOKUP_URL = "https://itunes.apple.com/lookup?id={ids}&country={cc}"
@@ -533,11 +536,14 @@ def page_relative(slug: str) -> str:
 
 
 def campaign(key: str, seg: str) -> str:
-    """ln_<key>_<seg>_tw_gw_<MMDD>; drops the date when the token would exceed MAX_CT."""
-    token = f"ln_{key}_{seg}_tw_gw_{CAMPAIGN_DATE}"
+    """款 × 台灣 × 詞群（ss 檔期）的 gw 階梯碼（gw_campaign.py）；哪一頁（族群）由點擊計數的 p 分。"""
+    if not re.fullmatch(r"[a-z]+", seg or ""):
+        raise GenerationError(f"bad segment: {seg!r}")
+    try:
+        token = gw_campaign.campaign(key, GW_GROUP, "tw")
+    except gw_campaign.GwCampaignError as error:
+        raise GenerationError(str(error)) from error
     if len(token) > MAX_CT:
-        token = f"ln_{key}_{seg}_tw_gw"
-    if len(token) > MAX_CT or not re.fullmatch(r"ln_[a-z0-9]+_[a-z]+_tw_gw(?:_\d{4})?", token):
         raise GenerationError(f"campaign token does not fit: {token!r}")
     return token
 
@@ -703,6 +709,7 @@ def render(spec: dict, claimable: dict[str, str], ids: dict[str, str], badge: st
 <title>{esc(spec['title'])}</title>
 <meta name="description" content="{esc(spec['desc'])}">
 <meta name="robots" content="index,follow,max-image-preview:large">
+{GW_META}
 <link rel="canonical" href="{esc(canonical)}">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="zh_TW">

@@ -66,6 +66,8 @@ from app_store_storefronts import (  # noqa: E402
     validated_app_store_review_url,
 )
 
+import gw_campaign  # noqa: E402  款 × 國家 × 詞群 的意圖頁追蹤碼（gw 階梯碼）
+
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages"))
 # Web Stories and publisher intent visuals carry their own per-surface
 # campaigns. Their generators and gates validate those links as atomic
@@ -399,7 +401,15 @@ def final_store_url(
         return None
     url = align_storefront(url, locale, availability)
     existing = existing_campaign(url)
-    campaign = existing if existing in PROTECTED_CAMPAIGNS else token
+    if existing in PROTECTED_CAMPAIGNS:
+        campaign = existing
+    else:
+        # Intent pages that declare a keyword group (gw_campaign.META_NAME) get
+        # the per-link app x storefront x group code; links that already carry
+        # a valid gw code for this very app and storefront keep it (the
+        # protected gw family). Everything else gets the page token.
+        gw = gw_campaign.stamp_campaign(token, existing, url, app_id)
+        campaign = gw if gw is not None else token
     return required_campaign_app_store_url(
         url, campaign, provider_token=provider,
         expected_locale=storefront_locale_for_url(url, locale),
@@ -738,14 +748,21 @@ def iter_html(pages: Path):
 
 def page_token(rel: str, text: str) -> str | None:
     """The single campaign a page may carry: stories use the protected story
-    campaign, publisher visuals are left to their own generator (None), every
-    other surface gets the taxonomy bucket for its path."""
+    campaign, publisher visuals are left to their own generator (None), intent
+    pages that declare a keyword group get a gw marker (resolved per link by
+    final_store_url), every other surface gets the taxonomy bucket for its path."""
     parts = set(Path(rel).parts)
     if "stories" in parts:
         return STORY_CAMPAIGN
     if PROTECTED_PARTS.intersection(parts):
         return None
-    return campaign_token(rel, text)
+    token = campaign_token(rel, text)
+    group = gw_campaign.page_group(text)
+    if group is not None:
+        # final_store_url resolves this marker per link (gw_campaign.stamp_campaign),
+        # so QR cards hashed from final_store_url stay in sync with the anchors.
+        return gw_campaign.page_marker(group, token)
+    return token
 
 
 # Whole-tree runs touch ~70k pages several times per Daily GEO; each page is

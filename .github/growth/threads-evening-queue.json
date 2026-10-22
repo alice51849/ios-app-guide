@@ -1,5 +1,5 @@
 {
- "note": "Dated conversion posts for the Threads evening slot (threads-post.yml 13:00 UTC = Taiwan 21:00 = US Eastern 9:00 = Brazil 10:00 = Germany/France 15:00). threads_series.py takes the post queued for the Taiwan date after a UsageNow event, a UsageNow hook clip or a weather alert, and before the daily rotation; every other day the rotation (BM-17 Mochi / BM-22 Lumi Weather) keeps the slot. Body has no links; the App Store link with the post's bm_<app>_<cc>_th token goes in the first reply. One post per date; facts follow the live App Store copy of that locale (00_GrowthEngine data/<app>_full.json). Source: 00_GrowthEngine reports/conversion_focus_2026-10-16.md (each app's top paying market).",
+ "note": "Dated conversion posts for the Threads evening slot (threads-post.yml 13:00 UTC = Taiwan 21:00 = US Eastern 9:00 = Brazil 10:00 = Germany/France 15:00). threads_series.py takes the post queued for the Taiwan date after a UsageNow event, a UsageNow hook clip or a weather alert, and before the daily rotation; every other day the rotation (BM-17 Mochi / BM-22 Lumi Weather) keeps the slot. Body has no links; the App Store link with the post's bm_<app>_<cc>_th token goes in the first reply. One post per date; facts follow the live App Store copy of that locale (00_GrowthEngine data/<app>_full.json). Source: 00_GrowthEngine reports/conversion_focus_2026-10-16.md (each app's top paying market). 2026-10-22 Taiwan long weekend (10-23..10-25): those three dates carry zh-Hant long-weekend posts (Unblurry, ShotInbox, LockHour); every later post keeps its order and moves to the next free date (none removed).",
  "posts": [
   {
    "date": "2026-10-18",
@@ -53,6 +53,36 @@
   },
   {
    "date": "2026-10-23",
+   "app": "unblurry",
+   "app_id": "6782275018",
+   "ct": "bm_unblurry_tw_th",
+   "locale": "zh-Hant",
+   "task": "unblurry-lw-1",
+   "source": "tw_long_weekend_1023",
+   "text": "連假出去玩一整天，晚上回飯店翻相簿才發現：最想留的那張剛好手震糊掉 😭\n\n先別刪。Unblurry 可以把手震、失焦、柔焦的照片直接在 iPhone 上變清楚，夜景太暗的也能用低光源模式把細節提亮。修完用前後對比滑桿看一下，滿意再存。\n\n照片不用上傳，全部在手機裡處理。今晚就把那張救回來吧。"
+  },
+  {
+   "date": "2026-10-24",
+   "app": "shotinbox",
+   "app_id": "6802166527",
+   "ct": "bm_shotinbox_tw_th",
+   "locale": "zh-Hant",
+   "task": "shotinbox-lw-1",
+   "source": "tw_long_weekend_1024",
+   "text": "連假玩了兩天，相簿多了一大堆截圖：車票、訂位、餐廳地址、店家菜單、朋友傳的景點……要找的時候永遠滑不到。\n\nShotInbox 會在手機上辨識截圖裡的文字，自動分成票券、旅遊、地圖與地點、收據這些類別，記得一個字就搜得到。截到地址可以直接在地圖打開，截到時間可以加進行事曆。\n\n辨識都在裝置上完成，不上傳。今晚花幾分鐘，把連假的截圖一次整理好。"
+  },
+  {
+   "date": "2026-10-25",
+   "app": "lockhour",
+   "app_id": "6780107485",
+   "ct": "bm_lockhour_tw_th",
+   "locale": "zh-Hant",
+   "task": "lockhour-lw-1",
+   "source": "tw_long_weekend_1025",
+   "text": "收假前一晚最常發生的事：說好早點睡，結果躺在床上滑短影音滑到兩點，隔天上班整個人當機。\n\n今晚試試 LockHour 的「睡前放鬆」：開始一個時段，選好的社群和影音 App 會先被鎖住，時間到自動解鎖。明天早上還可以用「晨間重啟」，起床先別碰社群。\n\n不用靠意志力硬撐。連假的最後一晚，好好睡一覺。"
+  },
+  {
+   "date": "2026-10-26",
    "app": "lumibopomofo",
    "app_id": "6773017109",
    "ct": "bm_lumibopomofo_us_th",
@@ -62,7 +92,7 @@
    "text": "Chinese school parents: your kid names ㄅㄆㄇ in class, then freezes at home when asked to blend ㄍ + ㄨ + ㄚ?\n\nNormal: knowing symbols and blending them are different skills, and blending grows with a few minutes most days.\n\nLumi Bopomofo makes it four small games: Feed the Friends, Magic Tracing, Tone Coaster (the tones) and Sound Train (blending).\n\nAd-free, no sign-up, English & Chinese interface. Free download.\n\nLink in the comments."
   },
   {
-   "date": "2026-10-24",
+   "date": "2026-10-27",
    "app": "mochi",
    "app_id": "6785004775",
    "ct": "bm_mochi_tw_th",
@@ -72,7 +102,7 @@
    "text": "期中考週加上報告、社團、打工，待辦全塞在腦袋裡？\n\nMochi 是一個可愛又療癒的待辦清單：寫下任務，輕點小圓圈就打勾完成，每完成一件都有一點小小的成就感。\n\n讀書、工作、購物清單、習慣、行程都放得下；101 款主題外觀，桌面小工具讓今天的事一解鎖就看到，也能用 Apple Watch 打勾。\n\n免費版有 2 個清單、每個最多 4 項，剛好放「今天」和「本週」；想每一科各開一個清單，進階版一次購買就不限數量。\n\n下載連結在留言。"
   },
   {
-   "date": "2026-10-25",
+   "date": "2026-10-28",
    "app": "mochi",
    "app_id": "6785004775",
    "ct": "bm_mochi_br_th",
@@ -82,7 +112,7 @@
    "text": "Vai viajar no feriado? Eu sou o desenvolvedor do Mochi e uso ele assim: uma lista “antes de sair de casa” com as 4 coisas que sempre esqueço (documento, carregador, gás, chaves), lembrete na manhã da viagem e o widget na Tela de Início pra conferir sem abrir o app. Toca no circulinho e pronto, sem aquele frio na barriga na porta. O Mochi é uma lista de tarefas fofa pra estudos, trabalho, compras e rotina, com 101 temas (5 grátis). Link nos comentários."
   },
   {
-   "date": "2026-10-26",
+   "date": "2026-10-29",
    "app": "cyca",
    "app_id": "6782251621",
    "ct": "bm_cyca_us_th",
@@ -92,7 +122,7 @@
    "text": "Before you put your period data into any app, ask one question: where does it go?\n\nI'm the indie developer behind Cyca, and my answer is: nowhere. No account, no servers, no tracking. Everything stays on your iPhone, and it works offline.\n\nTrack today and your period for free. Cyca Pro is a single lifetime purchase, never a subscription: future predictions, Personal Rhythm, the Smart Planner, full calendar history.\n\nLink in the comments."
   },
   {
-   "date": "2026-10-27",
+   "date": "2026-10-30",
    "app": "snapport",
    "app_id": "6780575828",
    "ct": "bm_snapport_de_th",
@@ -102,7 +132,7 @@
    "text": "Die häufigste Frage zu Snapport: Lite oder Vollversion?\n\nSnapport Lite: alle Vorlagen und Werkzeuge kostenlos nutzbar, der erste Export inklusive.\n\nSnapport: einmal kaufen, dann gehört es dir. Kein Abo, keine In-App-Käufe, keine Werbung. Eigene Größen in mm, Zoll oder Pixeln, Druckbögen für 10×15, A4 und Letter.\n\nBeide arbeiten offline auf dem iPhone. Keine garantiert die Annahme; das entscheidet die Stelle, bei der du einreichst.\n\nLink in den Kommentaren."
   },
   {
-   "date": "2026-10-28",
+   "date": "2026-10-31",
    "app": "claudeusagemini",
    "app_id": "6818607603",
    "ct": "bm_usagenow_de_th",
@@ -112,7 +142,7 @@
    "text": "Zwei Claude-Konten, dazu Copilot, und ich wusste nie, welches Fenster gerade frei ist. Deshalb zeigt UsageNow alle Konten nebeneinander, sortiert nach der nächsten Zurücksetzung, und blättert im Widget durch alle. Eine Warnung zum Zurücksetzen sagt mir, wann der lange Lauf starten kann. Auch auf Sperrbildschirm und Apple Watch. Erst 24 Stunden alles testen, dann einmal kaufen, kein Abo. Unabhängig von Anthropic und OpenAI. Link in den Kommentaren."
   },
   {
-   "date": "2026-10-29",
+   "date": "2026-11-01",
    "app": "aim990",
    "app_id": "6784974530",
    "ct": "bm_aim990_fr_th",
@@ -122,7 +152,7 @@
    "text": "L’écoute du TOEIC se travaille dans le train : 8 minutes de dictée, 5 minutes de répétition guidée avec la voix de l’appareil, puis une conversation de Part 3 avec les questions lues avant l’audio. C’est ma routine avec Aim990, que j’ai développé pour les étudiants en BTS et en école de commerce. L’entraînement quotidien fonctionne hors ligne, et un seul achat débloque tout, sans abonnement. Non affilié à ETS, palier estimé non officiel. Le lien est en commentaire."
   },
   {
-   "date": "2026-10-30",
+   "date": "2026-11-02",
    "app": "lumibopomofo",
    "app_id": "6773017109",
    "ct": "bm_lumibopomofo_us_th",
@@ -132,7 +162,7 @@
    "text": "Want your child reading Zhuyin like grandma in Taiwan, but never learned it yourself?\n\nYou don't need to model the sounds. Sit with them for ten minutes, keep it light: listen, pick, trace, blend.\n\nLumi Bopomofo follows those steps: Feed the Friends, Magic Tracing, Tone Coaster and Sound Train, with 37 Bopomofo friends to collect.\n\nAd-free, no personal data collected, English & Chinese interface. Free download.\n\nLink in the comments."
   },
   {
-   "date": "2026-10-31",
+   "date": "2026-11-03",
    "app": "lumibopomofo",
    "app_id": "6773017109",
    "ct": "bm_lumibopomofo_tw_th",
@@ -142,7 +172,7 @@
    "text": "寫注音作業時，孩子很常問：「這是二聲還是三聲？」\n\n聲調分不清很常見：二聲往上揚，三聲先降再升，小耳朵一開始真的很難分。比較有效的是同一個音連唸四聲（ㄇㄚ：媽、麻、馬、罵），配手勢比高低，每天兩三分鐘就好。\n\nLumi注音星球 的「聲調雲霄飛車」把這件事變成遊戲：看著小車在軌道上跑，分辨一、二、三、四聲。練完再搭「拼音小火車」把音拼起來，或用「魔法描寫」跟著筆順描一次。\n\n完成關卡拿星星和成就徽章，37 個注音小夥伴等孩子慢慢收集。完全無廣告、不蒐集個人資料。免費下載就能玩核心玩法，想要全部關卡再一次解鎖。\n\n連結在留言。"
   },
   {
-   "date": "2026-11-01",
+   "date": "2026-11-04",
    "app": "mochi",
    "app_id": "6785004775",
    "ct": "bm_mochi_tw_th",
@@ -152,7 +182,7 @@
    "text": "每次下載待辦 App 都撐不過一週？很多時候不是不夠自律，是清單長得像試算表，打開就累。\n\nMochi 把待辦變成粉嫩的小記事本：主畫面小工具放今天的 4 件事，點一下小圓圈完成，進度條跟著往前走。\n\n新的一個月，試試每天只寫 4 件事：一件讀書、一件工作、一件生活瑣事、一件留給自己。\n\n免費版就做得到（2 個清單、每個最多 4 項、5 款主題）；進階版一次購買，解鎖不限數量的清單、全部 101 款主題和 11 組表情。\n\n下載連結在留言。"
   },
   {
-   "date": "2026-11-02",
+   "date": "2026-11-05",
    "app": "lumibopomofo",
    "app_id": "6773017109",
    "ct": "bm_lumibopomofo_tw_th",
@@ -162,7 +192,7 @@
    "text": "小一注音課進到拼音以後，很多孩子卡在同一件事：ㄅ、ㄚ都認得，合起來卻唸不出ㄅㄚ。\n\n認符號和拼讀是兩種能力。拼讀要先聽得出聲母、介音、韻母，再把它們接成一個音，靠的是每天聽、每天拼一點點，不是一次練很久。\n\nLumi注音星球 的「拼音小火車」就是練這一步：把聲母、介音、韻母串成一個完整的音。另外有「餵食小夥伴」聽聲音選注音、「聲調雲霄飛車」分辨一、二、三、四聲、「魔法描寫」跟著筆順描。\n\n給約 4–7 歲的孩子，完全無廣告、無需註冊，進度只存在裝置上。免費下載先玩，喜歡再一次購買解鎖全部關卡，沒有訂閱。\n\n連結在留言。"
   },
   {
-   "date": "2026-11-04",
+   "date": "2026-11-06",
    "app": "lumibopomofo",
    "app_id": "6773017109",
    "ct": "bm_lumibopomofo_tw_th",
@@ -172,7 +202,7 @@
    "text": "陪小一孩子寫注音作業，才發現自己也不太確定：ㄓ跟ㄗ、ㄣ跟ㄥ，到底差在哪？\n\n這很正常，大人多半是憑感覺唸的。陪練時可以換個角色：不用當示範發音的老師，當陪孩子一起聽、一起選的人就好。分不清的音，多聽幾次比反覆糾正有用。\n\nLumi注音星球 的「餵食小夥伴」就是這樣練的：聽聲音、選出正確的注音，餵給小夥伴。接著用「魔法描寫」描筆順、「聲調雲霄飛車」分四聲、「拼音小火車」把聲母、介音、韻母拼成一個音。\n\n完全無廣告、無需註冊帳號，學習進度只存在裝置本機，iPhone、iPad 都能用。\n\n連結在留言。"
   },
   {
-   "date": "2026-11-05",
+   "date": "2026-11-07",
    "app": "mochi",
    "app_id": "6785004775",
    "ct": "bm_mochi_tw_th",

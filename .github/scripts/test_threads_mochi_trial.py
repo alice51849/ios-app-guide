@@ -33,7 +33,7 @@ POSTS = TRIAL.get("posts") or []
 LEGACY = {k: v for k, v in TRIAL.items() if k != "daily_after_end"}
 LEGACY["posts"] = [p for p in POSTS if p.get("date") != "2026-10-21"]
 CYCLE = (TRIAL.get("daily_after_end") or {}).get("cts") or []
-START, END = dt.date(2026, 10, 19), dt.date(2026, 11, 2)
+START, END = dt.date(2026, 10, 19), dt.date(2026, 11, 5)
 # Words that name a price or a paid tier the trial copy must not carry (owner's video rule (b), same for text).
 PRICE_WORDS = re.compile(r"[$€£¥￥₩]|\d+\s?(?:元|円|원|usd|dollars?)|\bfree\b|\bpro\b|\bpremium\b|免費|免费|進階|付費|"
                          r"無料|有料|プロ|무료|유료|프로|프리미엄", re.I)
@@ -59,7 +59,8 @@ class TrialFileTests(unittest.TestCase):
         self.assertEqual("mochi", TRIAL.get("app_key"))
         self.assertEqual(MOCHI, DL.app_store_id(TRIAL.get("app_store")))
         days = sorted(dt.date.fromisoformat(p["date"]) for p in POSTS)
-        self.assertEqual(14, len(days))
+        # 2026-10-22: Taiwan long weekend 10-23..10-25 got three zh-Hant entries; the later ones moved 3 days (to 11-05).
+        self.assertEqual(17, len(days))
         self.assertEqual(sorted(set(days)), days)
         self.assertTrue(all(START <= d <= END for d in days), days)
         self.assertEqual(dt.date(2026, 10, 20), days[0])
@@ -114,7 +115,7 @@ class TrialDayTests(unittest.TestCase):
             if entry:
                 self.assertEqual(day.isoformat(), entry["date"])
             day += dt.timedelta(days=1)
-        self.assertIsNone(threads_post.trial_post(dt.date(2026, 11, 3), TRIAL))
+        self.assertIsNone(threads_post.trial_post(dt.date(2026, 11, 6), TRIAL))
         self.assertIsNone(threads_post.trial_post(None, TRIAL))
 
     def test_a_missing_or_broken_file_means_no_trial(self):
@@ -321,22 +322,23 @@ class TrialSlotTests(MainHarness):
                 for i in range(2)}
         self.assertEqual({"th_mochi_en_01"}, days)
         self.assertEqual("th_mochi_ko_03", threads_post.trial_window_post(dt.date(2026, 10, 22), LEGACY)["ct"])
-        self.assertEqual("th_mochi_en_12", threads_post.trial_window_post(dt.date(2026, 11, 1), LEGACY)["ct"])
-        self.assertEqual("th_mochi_en_07", threads_post.trial_window_post(dt.date(2026, 10, 23), LEGACY)["ct"])
-        self.assertEqual("th_mochi_zh_03", threads_post.trial_window_post(dt.date(2026, 11, 3), LEGACY)["ct"])
-        self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 11, 4), LEGACY))
+        self.assertEqual("th_mochi_en_12", threads_post.trial_window_post(dt.date(2026, 11, 4), LEGACY)["ct"])
+        self.assertEqual("th_mochi_zh_04", threads_post.trial_window_post(dt.date(2026, 10, 23), LEGACY)["ct"])
+        self.assertEqual("th_mochi_en_07", threads_post.trial_window_post(dt.date(2026, 10, 26), LEGACY)["ct"])
+        self.assertEqual("th_mochi_zh_03", threads_post.trial_window_post(dt.date(2026, 11, 6), LEGACY)["ct"])
+        self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 11, 7), LEGACY))
         self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 10, 19), LEGACY))
         self.assertIsNone(threads_post.trial_window_post(None, LEGACY))
         # The current file: 10-21 has its own entry; 11-02's entry owns only its day, the daily cycle follows.
         self.assertEqual("th_mochi_en_01", threads_post.trial_window_post(dt.date(2026, 10, 20), TRIAL)["ct"])
         self.assertEqual("th_mochi_en_06", threads_post.trial_window_post(dt.date(2026, 10, 21), TRIAL)["ct"])
-        self.assertEqual("th_mochi_zh_03", threads_post.trial_window_post(dt.date(2026, 11, 2), TRIAL)["ct"])
-        self.assertEqual(CYCLE[0], threads_post.trial_window_post(dt.date(2026, 11, 3), TRIAL)["ct"])
+        self.assertEqual("th_mochi_zh_03", threads_post.trial_window_post(dt.date(2026, 11, 5), TRIAL)["ct"])
+        self.assertEqual(CYCLE[0], threads_post.trial_window_post(dt.date(2026, 11, 6), TRIAL)["ct"])
         self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 10, 19), TRIAL))
 
     def test_after_the_last_date_every_day_owes_the_next_cycle_entry_dated_that_day(self):
         by_ct = {p["ct"]: p for p in POSTS}
-        day = dt.date(2026, 11, 3)
+        day = dt.date(2026, 11, 6)
         for i in range(400):
             with self.subTest(day=day):
                 entry = threads_post.trial_window_post(day, TRIAL)
@@ -344,19 +346,19 @@ class TrialSlotTests(MainHarness):
                 self.assertEqual(day.isoformat(), entry["date"])   # the rerun lookup starts that day
                 self.assertEqual(by_ct[entry["ct"]]["text"], entry["text"])
             day += dt.timedelta(days=1)
-        self.assertEqual("2026-11-02", by_ct["th_mochi_zh_03"]["date"])   # the file's own entries stay as they are
+        self.assertEqual("2026-11-05", by_ct["th_mochi_zh_03"]["date"])   # the file's own entries stay as they are
 
     def test_a_cycle_ct_the_file_does_not_hold_is_skipped_and_an_empty_cycle_ends_the_trial(self):
         odd = dict(TRIAL, daily_after_end={"cts": ["th_mochi_xx_99", "th_mochi_en_09"]})
-        self.assertEqual("th_mochi_en_09", threads_post.trial_window_post(dt.date(2026, 11, 3), odd)["ct"])
-        self.assertEqual("th_mochi_en_09", threads_post.trial_window_post(dt.date(2026, 11, 9), odd)["ct"])
+        self.assertEqual("th_mochi_en_09", threads_post.trial_window_post(dt.date(2026, 11, 6), odd)["ct"])
+        self.assertEqual("th_mochi_en_09", threads_post.trial_window_post(dt.date(2026, 11, 12), odd)["ct"])
         for cfg in ({"cts": []}, {"cts": ["th_mochi_xx_99"]}, [], "on"):
             with self.subTest(cfg=cfg):
                 off = dict(TRIAL, daily_after_end=cfg)
-                self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 11, 4), off))
+                self.assertIsNone(threads_post.trial_window_post(dt.date(2026, 11, 7), off))
 
     def test_a_cycle_day_posts_its_entry_in_the_first_slot_with_its_own_ct(self):
-        rc, posted, queue, out = self.run_trial("2026-11-05", "01:40")
+        rc, posted, queue, out = self.run_trial("2026-11-08", "01:40")
         self.assertEqual(0, rc)
         self.assertIn("took=true", out)
         queue.assert_not_called()

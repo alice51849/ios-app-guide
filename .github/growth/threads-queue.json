@@ -1,5 +1,5 @@
 {
- "note": "Threads picture-slot queue (Taiwan 11:00). A queued post takes the slot on its date; otherwise the countdown card, otherwise the regular picture post. Body has no links; store links go in the first reply.",
+ "note": "Threads picture-slot queue (Taiwan 11:00). A queued post takes the slot on its date; otherwise the countdown card, otherwise the regular picture post. Body has no links; store links go in the first reply. 2026-10-22 Taiwan long weekend (10-23..10-25): those three dates carry zh-Hant long-weekend posts (TripBee Lite, G+Money Lite, Studydown); every later post keeps its order and moves to the next free date (none removed; lumibopomofo-season-6 stays on Sunday 11-15).",
  "posts": [
   {
    "date": "2026-10-15",
@@ -69,6 +69,39 @@
   },
   {
    "date": "2026-10-23",
+   "app": "tripbeelite",
+   "app_id": "6791299610",
+   "task": "tripbeelite-lw-1",
+   "source": "tw_long_weekend_1023",
+   "ct": "ln_tripbeelite_lw_tw_th_1023",
+   "lang": "zh-Hant",
+   "topic_tag": "連假",
+   "text": "連假說走就走，結果行程散在 LINE 記事本、訂房確認信跟一堆截圖裡，到了現場才在翻？\n\nTripBee Lite 只專心整理「眼前這一趟」：把住宿、活動一個個排進每日時間軸，備註、提醒和票券資訊收在同一個地方，要用的時候點開就找得到。\n\n三天兩夜也好、當天來回也好，出門前花幾分鐘排一下，路上就不用一直在不同 App 之間切來切去。"
+  },
+  {
+   "date": "2026-10-24",
+   "app": "gmoneylite",
+   "app_id": "6793436548",
+   "task": "gmoneylite-lw-1",
+   "source": "tw_long_weekend_1024",
+   "ct": "ln_gmoneylite_lw_tw_th_1024",
+   "lang": "zh-Hant",
+   "topic_tag": "連假",
+   "text": "連假飛日本三天，最常出現的對話：「這個多少台幣？」「我們現在花多少了？」\n\nG+Money Lite 讓你直接用日圓記每一筆，馬上換算成台幣，沒網路也能記。想控制預算可以設每日上限，每天花了多少一眼就看得到；也能用分類看錢都花去哪。\n\n不用帳號，資料只存在你的手機裡。回國後被問「這趟花了多少」，終於答得出來。"
+  },
+  {
+   "date": "2026-10-25",
+   "app": "studydown",
+   "app_id": "6807335593",
+   "task": "studydown-lw-1",
+   "source": "tw_long_weekend_1025",
+   "ct": "ln_studydown_lw_tw_th_1025",
+   "lang": "zh-Hant",
+   "topic_tag": "連假",
+   "text": "連假最後一天，原本排好的讀書計畫一頁都還沒動？\n\n不用一口氣補完。今天先挑一科，在 Studydown 按開始計時，把手機螢幕朝下蓋在桌上；拿起手機就會暫停，專心了多久一清二楚。\n\n讀完可以看今天和本週累積的時數、連續記錄天數，也能替考試設期限和每週目標。收假前先讀一小段，明天回到書桌就沒那麼難開始。"
+  },
+  {
+   "date": "2026-10-26",
    "app": "claudeusagemini",
    "app_id": "6818607603",
    "task": "claudeusagemini-09",
@@ -77,7 +110,7 @@
    "text": "Claude 跑到一半突然說額度用完，才發現不是 5 小時額度，而是每週額度先見底？UsageNow 讓你在主畫面小工具上看 Claude 5 小時與每週額度（含各模型每週上限）、Codex、Copilot 進階請求和 Gemini 每日配額，還有重置倒數。可以自己設 90% 或 98% 提醒，額度恢復也會通知。登入在各服務的官方頁面，資料存在裝置鑰匙圈，沒有 UsageNow 伺服器。App 內可免費試用 24 小時，之後一次買斷不訂閱。獨立開發，與 Anthropic、OpenAI、GitHub、Microsoft、Google 無關。"
   },
   {
-   "date": "2026-10-24",
+   "date": "2026-10-27",
    "app": "battai",
    "app_id": "6802423998",
    "task": "battai-conv-1",
@@ -87,7 +120,7 @@
    "locale": "ko"
   },
   {
-   "date": "2026-10-25",
+   "date": "2026-10-28",
    "app": "wordmate",
    "app_id": "6789917808",
    "task": "wordmate-conv-1",
@@ -97,7 +130,7 @@
    "locale": "zh-Hant"
   },
   {
-   "date": "2026-10-26",
+   "date": "2026-10-29",
    "app": "lumiweather",
    "app_id": "6779552704",
    "task": "lumiweather-conv-1",
@@ -107,7 +140,7 @@
    "locale": "ja"
   },
   {
-   "date": "2026-10-27",
+   "date": "2026-10-30",
    "app": "zipbox",
    "app_id": "6806776579",
    "task": "zipbox-conv-1",
@@ -117,7 +150,7 @@
    "locale": "zh-Hant"
   },
   {
-   "date": "2026-10-28",
+   "date": "2026-10-31",
    "app": "cvdesk",
    "app_id": "6781337213",
    "task": "cvdesk-conv-1",
@@ -127,7 +160,7 @@
    "locale": "zh-Hant"
   },
   {
-   "date": "2026-10-29",
+   "date": "2026-11-01",
    "app": "ledmovingtext",
    "app_id": "6806639602",
    "task": "ledmovingtext-07",
@@ -136,7 +169,7 @@
    "text": "市集擺攤一整天，最常被問的就是「還有貨嗎？」「可以刷卡嗎？」「排隊從哪開始？」喊到沒聲音。LED Moving Text 可以先把要說的話一行一句打好，現場點一下切下一句，或設 2–20 秒自動輪播。手機直接變成全螢幕跑馬燈，離線可用、不用註冊、沒有廣告；輸入不限次數、全螢幕、左右跑動和 108 種文字顏色永久免費。介面有 50 種語言，在 App 裡就能切換，攤位上的外籍夥伴也能用自己的語言操作。"
   },
   {
-   "date": "2026-10-30",
+   "date": "2026-11-02",
    "app": "gmoney",
    "app_id": "6755782939",
    "task": "gmoney-conv-1",
@@ -146,7 +179,7 @@
    "locale": "zh-Hant"
   },
   {
-   "date": "2026-10-31",
+   "date": "2026-11-03",
    "app": "notesstudio100",
    "app_id": "6798813048",
    "task": "notesstudio100-04",
@@ -155,7 +188,7 @@
    "text": "準備國考最怕的不是背不完，是筆記 App 中途改訂閱、或硬要你登入帳號。我是台灣的獨立開發者，做了 100 Notes Studio：不用帳號、沒有廣告、不用外部 AI，核心編輯離線可用。PDF 講義直接標註，手寫內容在裝置上辨識、可以搜尋；筆記裡就能做抽認卡和填空卡，用 FSRS 間隔重複排複習。免費版有 1 本最多 5 頁的筆記本和 2 款風格，100 款風格都能先預覽；要更多筆記本和全部風格，一次購買，不是訂閱。介面 44 種語言，App 內切換。"
   },
   {
-   "date": "2026-11-01",
+   "date": "2026-11-04",
    "app": "lumibopomofo",
    "app_id": "6773017109",
    "task": "lumibopomofo-conv-2",
@@ -165,7 +198,7 @@
    "locale": "zh-Hant"
   },
   {
-   "date": "2026-11-02",
+   "date": "2026-11-05",
    "app": "savetag",
    "app_id": "6802505528",
    "task": "savetag-04",
@@ -174,7 +207,7 @@
    "text": "很多人把連結丟進傳給自己的聊天室或備忘錄，結果食譜、想買的外套、出國景點全混在一條紀錄裡，要用時翻不到。我做了 SaveTag：從任何 App 用分享選單一鍵存下，裝置端自動貼上美食、旅遊、購物等標籤，記得大概就搜得到；每天「重新發現」挑幾則沒讀的給你。不用註冊、不上雲端、沒廣告。不購買也能用全部功能、保留最新 5 筆，Pro 一次性 App 內購買。介面 50 種語言，App 內切換。"
   },
   {
-   "date": "2026-11-03",
+   "date": "2026-11-06",
    "app": "unblurry",
    "app_id": "6782275018",
    "task": "unblurry-conv-2",
@@ -184,7 +217,7 @@
    "locale": "ja"
   },
   {
-   "date": "2026-11-04",
+   "date": "2026-11-07",
    "app": "aim990",
    "app_id": "6784974530",
    "task": "aim990-10",
@@ -193,7 +226,7 @@
    "text": "多益刷了幾百題，分數還卡在同一區間？最怕的是錯很多，卻說不出到底錯在哪一類。\n我做了 Aim990：先用 8 分鐘、約 20 題文法／聽力／閱讀診斷，找出最弱的 3 項技能，寫成一份處方：先修哪項、為什麼失分。之後每天只練一項，分診斷、修復、驗證三段；第 30 天用同樣技能複測，和第 1 天並排比。\n免費下載，一次購買解鎖全部，無訂閱；不用帳號、可離線、沒廣告。題目是原創非官方教材，與 ETS 無關，級距只是估算，不保證分數。"
   },
   {
-   "date": "2026-11-05",
+   "date": "2026-11-08",
    "app": "onepageppt",
    "app_id": "6798814385",
    "task": "onepageppt-conv-2",
@@ -203,7 +236,7 @@
    "locale": "zh-Hant"
   },
   {
-   "date": "2026-11-06",
+   "date": "2026-11-09",
    "app": "wordmatelite",
    "app_id": "6797601720",
    "task": "wordmatelite-10",
@@ -212,7 +245,7 @@
    "text": "裝過三個背單字 App，三個都死在「先把單字卡整理好」那一步？\nWordmate Lite 拿掉的就是這步：一次五個字，畫面像一條小石子路，踩完一顆前進一步，結束時把今天學會的五個字完整列給你看。44 種學習語言、14 個生活主題、三種難度，介面 44 種語言可在 App 內切換，可離線、不用帳號。\n老實說免費範圍不大：選一種語言、一個主題，練入門前 10 個字、收藏 3 個；覺得合用再一次買斷，沒有訂閱。我是開發者，歡迎直接留言問。"
   },
   {
-   "date": "2026-11-07",
+   "date": "2026-11-10",
    "app": "battai",
    "app_id": "6802423998",
    "task": "battai-conv-2",
@@ -222,7 +255,7 @@
    "locale": "ko"
   },
   {
-   "date": "2026-11-08",
+   "date": "2026-11-11",
    "app": "sereno",
    "app_id": "6788236641",
    "task": "sereno-07",
@@ -231,7 +264,7 @@
    "text": "睡前開白噪音，結果每隔幾分鐘就聽到雨聲「接縫」重來一次，反而更清醒？這是我做「Sereno: 極致睡眠音效」的原因：聲音在手機上即時生成，雨不循環、海浪不重複。可以把雨聲、風扇、褐噪音疊在一起，存成自己的組合；睡眠計時器會慢慢淡出，不會突然斷掉。完全離線、沒有廣告、不用帳號，介面有 44 種語言可在 App 內切換。免費先試，想要全部聲音、無限疊加和調音再一次買斷，不訂閱。搜尋時請打全名，同名 App 很多。你睡覺習慣聽什麼聲音？"
   },
   {
-   "date": "2026-11-09",
+   "date": "2026-11-12",
    "app": "wordmate",
    "app_id": "6789917808",
    "task": "wordmate-conv-2",
@@ -241,7 +274,7 @@
    "locale": "zh-Hant"
   },
   {
-   "date": "2026-11-10",
+   "date": "2026-11-13",
    "app": "lumiweather",
    "app_id": "6779552704",
    "task": "lumiweather-conv-2",
@@ -251,33 +284,13 @@
    "locale": "ja"
   },
   {
-   "date": "2026-11-11",
+   "date": "2026-11-14",
    "app": "zipbox",
    "app_id": "6806776579",
    "task": "zipbox-conv-2",
    "source": "conv_tw_2",
    "ct": "bm_zipbox_tw_th",
    "text": "Windows 同事傳來的 ZIP，在 iPhone 上解開，中文檔名全變成一串亂碼，二十個檔案根本分不出哪個是哪個。\n\n先安心：那不是檔案壞了，是檔名編碼對不上，內容通常完好。Zipbox 的做法是不急著解壓，先瀏覽壓縮檔的清單，點開預覽確認每個是什麼，只取出需要的那幾個，取出後直接重新命名成正確的中文，再匯出到檔案 App 或 iCloud 雲碟。檔案多的話，還能搜尋壓縮檔內的檔名與文字內容。\n\n13 種格式、RAR 和 7z 都能開，全部在裝置本機處理，零廣告，沒有內購和訂閱。\n\n連結在留言。",
-   "locale": "zh-Hant"
-  },
-  {
-   "date": "2026-11-12",
-   "app": "cvdesk",
-   "app_id": "6781337213",
-   "task": "cvdesk-conv-2",
-   "source": "conv_tw_2",
-   "ct": "bm_cvdesk_tw_th",
-   "text": "轉職的朋友問我：履歷產生器那麼多，怎麼挑？我自己只看三件事：做完能不能匯出（別填到最後才跳訂閱）、免費匯出有沒有浮水印、匯出的檔案 ATS 讀不讀得懂。CV Desk 的做法是：建立、預覽、ATS 分數和修正建議全部免費，一個職缺一份履歷隨你做；真的要投了，一次性解鎖就能匯出無浮水印的 PDF 或 Word，永遠不訂閱。履歷資料不上傳，飛航模式也能用。連結在留言。",
-   "locale": "zh-Hant"
-  },
-  {
-   "date": "2026-11-13",
-   "app": "gmoney",
-   "app_id": "6755782939",
-   "task": "gmoney-conv-2",
-   "source": "conv_tw_2",
-   "ct": "bm_gmoney_tw_th",
-   "text": "常被問：G+Money 和免費的 G+Money Lite 差在哪？老實講：Lite 免費提供匯率、預算、基本摘要，1 個旅程、3 筆支出，拿來先看看流程很夠。G+Money 是一次買斷的完整版：旅程不限、生活記帳和旅費分開看、自訂分類、依旅程分組匯出 CSV，完全離線。一年出國不只一次、平常也想記帳、又討厭訂閱的人，直接用完整版比較省事。兩款都沒有訂閱，資料都只在你的裝置上。連結在留言。",
    "locale": "zh-Hant"
   },
   {
@@ -288,6 +301,26 @@
    "source": "season_tw_6",
    "ct": "bm_lumibopomofo_tw_th",
    "text": "週末早上，不想再出注音作業，又怕孩子一放假就忘光？\n\n可以把複習變成玩：讓孩子挑三個這週常唸錯的音，大人唸、孩子找；再一起拼兩個簡單的字，像ㄏㄨㄚ（花）、ㄒㄧㄠˇ（小）。十分鐘就收。\n\nLumi注音星球 也能接手這十分鐘：聽聲音餵小夥伴、跟著筆順魔法描寫、坐聲調雲霄飛車分四聲、搭拼音小火車拼出完整的音，一邊收集 37 個注音小夥伴和成就徽章。\n\n完全無廣告、無需註冊，進度只存在裝置上。免費下載先玩，喜歡再一次解鎖，沒有訂閱。\n\n連結在留言。"
+  },
+  {
+   "date": "2026-11-16",
+   "app": "cvdesk",
+   "app_id": "6781337213",
+   "task": "cvdesk-conv-2",
+   "source": "conv_tw_2",
+   "ct": "bm_cvdesk_tw_th",
+   "text": "轉職的朋友問我：履歷產生器那麼多，怎麼挑？我自己只看三件事：做完能不能匯出（別填到最後才跳訂閱）、免費匯出有沒有浮水印、匯出的檔案 ATS 讀不讀得懂。CV Desk 的做法是：建立、預覽、ATS 分數和修正建議全部免費，一個職缺一份履歷隨你做；真的要投了，一次性解鎖就能匯出無浮水印的 PDF 或 Word，永遠不訂閱。履歷資料不上傳，飛航模式也能用。連結在留言。",
+   "locale": "zh-Hant"
+  },
+  {
+   "date": "2026-11-17",
+   "app": "gmoney",
+   "app_id": "6755782939",
+   "task": "gmoney-conv-2",
+   "source": "conv_tw_2",
+   "ct": "bm_gmoney_tw_th",
+   "text": "常被問：G+Money 和免費的 G+Money Lite 差在哪？老實講：Lite 免費提供匯率、預算、基本摘要，1 個旅程、3 筆支出，拿來先看看流程很夠。G+Money 是一次買斷的完整版：旅程不限、生活記帳和旅費分開看、自訂分類、依旅程分組匯出 CSV，完全離線。一年出國不只一次、平常也想記帳、又討厭訂閱的人，直接用完整版比較省事。兩款都沒有訂閱，資料都只在你的裝置上。連結在留言。",
+   "locale": "zh-Hant"
   },
   {
    "date": "2026-11-21",

@@ -6,6 +6,13 @@ The clips are rendered and uploaded by the private Growth Engine
 public video URLs, the App Store link with a per-clip campaign token, the
 hook line and the App Store search term shown on the end card.
 
+The video goes to Telegram and Instagram as bytes, never as a url the platform has to fetch (2026-10-22: the
+clips-mirror release url redirects and serves application/octet-stream, and Telegram / Instagram could not
+fetch it): clip_source.py downloads the clip to the runner (clips-mirror first, catbox second, redirects,
+Range resume, retries) and checks it is a whole mp4; Telegram gets it as a multipart sendVideo file and
+Instagram by resumable upload (a container with upload_type=resumable, then the bytes to its rupload address).
+A clip no source serves is red and posts nothing. Threads still takes video_url (its API has no byte upload).
+
 clips.json carries a pre-planned schedule: every entry names the date, the
 slot and the channel of exactly one clip. A clip is scheduled at most once per
 channel, so nothing is ever re-posted, and the pacing is decided when the
@@ -36,18 +43,22 @@ ig_bio.caption() are the last guards at the send call, so nothing goes out wrong
 """
 import argparse
 import datetime as dt
+import http.client
 import json
 import os
 import re
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import uuid
 from pathlib import Path
 
 import channel_rotation as CR
 import clip_progress
+import clip_source as CS
 import download_links as DL
 import duo_line
 import ig_bio as IGB
@@ -64,6 +75,9 @@ from social_post_common import SnapshotMissing, play_store_url
 HERE = Path(__file__).resolve().parent
 CLIPS = HERE.parent / "growth" / "clips.json"
 GRAPH = "https://graph.instagram.com/v21.0"
+# Instagram's resumable upload host; the container's own "uri" answer is used when it gives one.
+RUPLOAD = "https://rupload.facebook.com/ig-api-upload/v21.0"
+RUPLOAD_HOSTS = ("rupload.facebook.com", ".facebook.com", ".instagram.com")
 
 TEXT = {
     "en": {"search": "Search “{s}” on the App Store", "button": "Get it on the App Store"},
@@ -306,13 +320,41 @@ def _open(req, timeout):
         raise RuntimeError(f"HTTP {exc.code}: {body}") from None
 
 
+def _multipart(fields):
+    """multipart/form-data body and its Content-Type: a clip_source.Upload field goes as the file's bytes."""
+    boundary = f"----lumiclip{uuid.uuid4().hex}"
+    parts = []
+    for name, value in fields.items():
+        if isinstance(value, CS.Upload):
+            parts += [f'--{boundary}\r\nContent-Disposition: form-data; name="{name}"; filename="{value.filename}"\r\n'
+                      f"Content-Type: {value.content_type}\r\n\r\n".encode(), value.read(), b"\r\n"]
+        else:
+            parts += [f'--{boundary}\r\nContent-Disposition: form-data; name="{name}"\r\n\r\n'.encode(),
+                      str(value).encode("utf-8"), b"\r\n"]
+    parts.append(f"--{boundary}--\r\n".encode())
+    return b"".join(parts), f"multipart/form-data; boundary={boundary}"
+
+
 def _post(url, fields, timeout=60):
-    data = urllib.parse.urlencode(fields).encode()
-    return _open(urllib.request.Request(url, data=data, headers={"User-Agent": "lumi-clip-poster/1.0"}), timeout)
+    """POST fields: url-encoded, or multipart when a field is a clip_source.Upload (the clip's bytes)."""
+    headers = {"User-Agent": "lumi-clip-poster/1.0"}
+    if any(isinstance(v, CS.Upload) for v in fields.values()):
+        data, headers["Content-Type"] = _multipart(fields)
+        timeout = max(timeout, 300)
+    else:
+        data = urllib.parse.urlencode(fields).encode()
+    return _open(urllib.request.Request(url, data=data, headers=headers), timeout)
 
 
 def _get(url, timeout=60):
     return _open(urllib.request.Request(url, headers={"User-Agent": "lumi-clip-poster/1.0"}), timeout)
+
+
+def local_clip(clip, channel):
+    """The clip downloaded to this runner and checked as a whole mp4 (clip_source.py), as an Upload: the
+    platforms get the bytes, never the url (Telegram and Instagram could not fetch the clips-mirror url)."""
+    label = f"{clip.get('app')}/{clip.get('locale')} {channel}"
+    return CS.Upload(CS.fetch_clip(clip["url"], tempfile.mkdtemp(prefix="clip-"), label=label))
 
 
 def post_telegram(clip, variant=None):
@@ -330,9 +372,10 @@ def post_telegram(clip, variant=None):
     text = DL.ensure_download_link(caption(clip, "telegram", variant), store, play_link,
                                    max_len=post_qa.LIMITS["telegram"], app_store_label=text_for(clip["locale"])["button"],
                                    play_label=play_label(clip), label=f"{clip.get('app')}/{clip.get('locale')} telegram")
+    # Uploaded as a file (multipart), not a url Telegram has to fetch.
     result = _post(f"https://api.telegram.org/bot{token}/sendVideo", {
         "chat_id": chat,
-        "video": clip["url"],
+        "video": local_clip(clip, "telegram"),
         "caption": text,
         "supports_streaming": "true",
         "reply_markup": json.dumps(button),
@@ -401,9 +444,46 @@ def _refusal(exc):
     return not (code in NOT_READY or code < 0 or (isinstance(err, dict) and err.get("is_transient")))
 
 
+def _rupload(uri, video, token, tries=3, wait=5, timeout=300):
+    """Send the clip's bytes to the container's resumable upload address (Instagram API resumable upload)."""
+    parts = urllib.parse.urlsplit(uri or "")
+    host = parts.hostname or ""
+    if parts.scheme != "https" or not any(host == h or (h.startswith(".") and host.endswith(h)) for h in RUPLOAD_HOSTS):
+        raise RuntimeError(f"Instagram gave an unexpected upload address ({host or 'none'}); nothing sent")
+    data = video.read()
+    last = "no answer"
+    for attempt in range(tries):
+        if attempt:
+            time.sleep(wait * attempt)
+        req = urllib.request.Request(uri, data=data, method="POST", headers={
+            "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(len(data)),
+            "Content-Type": "application/octet-stream", "User-Agent": "lumi-clip-poster/1.0"})
+        try:
+            answer = _open(req, timeout)
+        except RuntimeError as exc:  # "HTTP <code>: <reason>" from _open; a 4xx other than 408/429 is lasting
+            if re.match(r"HTTP 4\d\d\b", str(exc)) and not re.match(r"HTTP (408|429)\b", str(exc)):
+                raise
+            last = str(exc)[:200]
+        except (urllib.error.URLError, http.client.HTTPException, OSError) as exc:
+            last = f"{exc.__class__.__name__}: {str(getattr(exc, 'reason', None) or exc)[:120]}"
+        else:
+            if answer.get("success") is True:
+                return
+            raise RuntimeError(f"Instagram did not take the video upload: {json.dumps(answer)[:200]}")
+    raise RuntimeError(f"Instagram video upload failed: {last}")
+
+
 def _reel(user, fields, token, wait, tries):
-    """Open one Reels container and wait for it; the container id."""
-    container = _post(f"{GRAPH}/{user}/media", {**fields, "access_token": token})["id"]
+    """Open one Reels container and wait for it; the container id. A clip_source.Upload in fields["video"] goes
+    by resumable upload (container with upload_type=resumable, then the bytes to its upload address)."""
+    fields = dict(fields)
+    video = fields.pop("video", None)
+    if isinstance(video, CS.Upload):
+        fields["upload_type"] = "resumable"
+    created = _post(f"{GRAPH}/{user}/media", {**fields, "access_token": token})
+    container = created["id"]
+    if isinstance(video, CS.Upload):
+        _rupload(created.get("uri") or f"{RUPLOAD}/{container}", video, token)
     for _ in range(tries):
         status = _get(f"{GRAPH}/{container}?fields=status_code&access_token={token}").get("status_code")
         if status == "FINISHED":
@@ -475,7 +555,7 @@ def post_instagram(clip, variant=None, wait=5, tries=60, day=None):
                        label=f"{clip.get('app')}/{clip.get('locale')} instagram")
     media, trial = _publish_reel(user, {
         "media_type": "REELS",
-        "video_url": clip["url"],
+        "video": local_clip(clip, "instagram"),  # resumable upload of the bytes (_reel), not a url to fetch
         "caption": text,  # Reels take no alt_text (image posts only)
         "share_to_feed": "true",
         # Cover = the hook frame once its slam has settled (frame 9), before the first cut: the pain point,
@@ -683,6 +763,10 @@ def main():
     except threads_cap.QuotaUnknown:
         # Nothing was posted (the ::warning:: says why). Red, so threads_backfill.py / the watchdog run the slot
         # again later the same Taiwan day, through the same cap check.
+        return 1
+    except CS.ClipUnavailable as exc:
+        # The clip host failed, not the platform: no ramp throttle (a host's 429 is not Instagram's), red step.
+        print(f"::error::{exc}; nothing was posted")
         return 1
     except Exception as exc:
         # A "slow down" answer drops the channel one ramp stage (committed by the workflow) and opens an issue;

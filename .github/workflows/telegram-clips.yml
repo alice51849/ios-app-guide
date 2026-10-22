@@ -76,6 +76,7 @@ jobs:
         run: |
           python3 .github/scripts/test_volume_ramp.py -q
           python3 .github/scripts/test_clip_posts.py -q
+          python3 .github/scripts/test_clip_source.py -q
       - name: Post the slot's hook clip (video + App Store button)
         if: (github.event_name == 'workflow_dispatch' && inputs.cron == '') || steps.slot.outputs.should_post == 'true'
         env:

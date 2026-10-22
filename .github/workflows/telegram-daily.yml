@@ -97,6 +97,7 @@ jobs:
         run: |
           python3 .github/scripts/test_volume_ramp.py -q
           python3 .github/scripts/test_clip_posts.py -q
+          python3 .github/scripts/test_clip_source.py -q
           python3 .github/scripts/clip_posts.py telegram --slot "$(echo "$SCHEDULE" | awk '{print $2}')"
       - name: Record the post link on the promotion page (and any throttle)
         # office.cait518.cc lists every clip post; clip_posts.py wrote the

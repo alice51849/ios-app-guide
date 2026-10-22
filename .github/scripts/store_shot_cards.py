@@ -379,6 +379,80 @@ def make_top5(out_dir, day, slot, data, posts, page_fetcher=None):
     return None
 
 
+# ---------------------------------------------------------------- queued carousels (00_GrowthEngine social/carousel)
+#
+# 2026-10-22 (carousel line): 5-card carousels built in 00_GrowthEngine (social/carousel/build_carousels.py) from the
+# apps' public App Store screenshots, published on this repo's public release "carousel-cards" and queued in
+# .github/growth/carousels.json: "pain" (situation -> fix -> app) and "top5" (5 apps for X, ours marked, at least 3
+# other developers' apps by name and objective fact only). They take the slot after the weekly list carousel and
+# before the plain screenshot carousel, so the day's allowance (volume-ramp.json) and the weekly app cooldown still
+# decide how many go out. Each carousel goes out once (key feed/<app>/<locale>/carousel/<id>).
+QUEUE = HERE.parent / "growth" / "carousels.json"
+QUEUE_SLOT_LOCALES = {7: ["zh-Hant", "ja", "ko", "de"], 19: ["en", "pt-BR"]}
+
+
+def queued_caption(entry):
+    """Instagram caption of a queued carousel: its text, the profile-link line and the brand hashtag first."""
+    limit = SC.TAG_LIMIT.get("instagram", 5)
+    tags = IGB.hashtags(lambda n: [t for t in entry.get("tags") or [] if isinstance(t, str)][:n], entry["name"],
+                        entry["store_url"], limit)
+    text = "\n".join([entry["text"], IGB.bio_line(entry["locale"])] + (["", " ".join(tags)] if tags else []))
+    return IGB.caption(text, entry["name"], entry["locale"], entry["store_url"], max_len=post_qa.LIMITS["instagram"],
+                       tag_limit=limit, label=f"feed carousel {entry['id']}")
+
+
+def make_queued(out_dir, day, slot, posts, fetcher=fetch, path=None):
+    """The first due queued carousel for the slot's locales whose app is not featured this week; its cards are
+    downloaded into out_dir (the workflow republishes them on the feed-cards branch). None when nothing fits."""
+    try:
+        queue = json.loads(Path(path or QUEUE).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    week_apps, _ = recent(posts, day, APP_COOLDOWN_DAYS)
+    done = {p.get("clip") for p in posts or [] if p.get("channel") == CHANNEL}
+    locales = QUEUE_SLOT_LOCALES.get(slot) or QUEUE_SLOT_LOCALES[19]
+    for e in queue.get("items") or []:
+        key = f"{KEY_PREFIX}{e.get('app')}/{e.get('locale')}/carousel/{e.get('id')}"
+        if ("instagram" not in (e.get("channels") or []) or e.get("locale") not in locales or key in done
+                or str(e.get("start") or "9999") > day.isoformat() or e.get("app") in week_apps):
+            continue
+        out = Path(out_dir)
+        out.mkdir(parents=True, exist_ok=True)
+        cards = []
+        try:
+            for i, url in enumerate(e.get("images") or []):
+                (out / f"{i + 1:02d}.jpg").write_bytes(fetcher(url))
+                cards.append(f"{i + 1:02d}.jpg")
+        except Exception as exc:  # a missing card skips this carousel, never half of it
+            print(f"feed: queued carousel {e.get('id')} not downloadable ({exc.__class__.__name__}); next one")
+            for c in cards:
+                (out / c).unlink(missing_ok=True)
+            continue
+        if len(cards) < CARDS_MIN:
+            continue
+        store = (f"https://apps.apple.com/{str(e['country']).lower()}/app/id{e['app_id']}"
+                 f"?pt=118326163&ct={feed_ct_token(e['app'], e['app_id'])}&mt=8")
+        entry = dict(e, store_url=store)
+        plan = {"key": key, "app": e["app"], "locale": e["locale"], "slot": slot, "date": day.isoformat(),
+                "variant": f"carousel-{e.get('format')}", "cards": cards, "caption": queued_caption(entry),
+                "store_url": store, "name": e["name"], "alt": (e.get("alt") or e["hook"])[:1000],
+                "listed": list(e.get("listed") or []), "source": e.get("source")}
+        problems = qa(plan, online=False)
+        if problems:  # a queued carousel the gate would refuse never takes the slot: the next one does
+            print(f"feed: queued carousel {e.get('id')} skipped ({problems[0]})")
+            for c in cards:
+                (out / c).unlink(missing_ok=True)
+            continue
+        (out / "plan.json").write_text(json.dumps(plan, ensure_ascii=False, indent=1), encoding="utf-8")
+        return plan
+    return None
+
+
+def feed_ct_token(app, app_id):  # the carousel family token h7_<app>_igc, sent at the app's level
+    import download_links as DL
+    return DL.app_campaign(f"h7_{app}_{FEED_CT}", str(app_id))
+
+
 def make(out_dir, day, slot, data=None, posts=None, fetcher=fetch):
     """Render the slot's carousel into out_dir (NN.jpg + plan.json). Returns the plan, or None (nothing due,
     allowance used up, no screenshots)."""
@@ -395,6 +469,10 @@ def make(out_dir, day, slot, data=None, posts=None, fetcher=fetch):
             print(f"feed: list carousel {plan['key']} from {plan['source']}")
             return plan
         print("feed: no list carousel fits this slot; the screenshot carousel instead")
+    plan = make_queued(out_dir, day, slot, posts, fetcher=fetcher)
+    if plan:
+        print(f"feed: queued carousel {plan['key']}")
+        return plan
     key, clip = pick(data, posts, day, slot)
     if not clip:
         print("feed: no app fits this slot (all featured recently)")

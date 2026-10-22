@@ -336,3 +336,64 @@ class Top5Test(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class QueuedCarouselTest(unittest.TestCase):
+    """2026-10-22 carousel line: queued 5-card carousels (00_GrowthEngine social/carousel) after the weekly list."""
+
+    def entry(self, **kw):
+        e = {"id": "mochi-zh-Hant-pain-20261022", "app": "mochi", "app_id": "6785004775", "locale": "zh-Hant",
+             "country": "TW", "format": "pain", "name": "mochi name", "hook": "每天看到待辦清單就好累？",
+             "text": "每天看到待辦清單就好累？\n\n點一下就完成\n\n在 App Store 搜尋「Mochi」", "tags": ["#可愛待辦清單"],
+             "alt": "alt", "listed": [], "channels": ["instagram", "pinterest"], "start": "2026-10-22",
+             "images": [f"https://github.com/o/r/releases/download/carousel-cards/x-0{i}.jpg" for i in range(1, 6)]}
+        e.update(kw)
+        return e
+
+    def make(self, entries, day=dt.date(2026, 10, 23), slot=7, posts=()):
+        tmp = tempfile.mkdtemp()
+        q = Path(tmp) / "carousels.json"
+        q.write_text(json.dumps({"items": entries}, ensure_ascii=False), encoding="utf-8")
+        got = []
+        plan = S.make_queued(Path(tmp) / "out", day, slot, list(posts), fetcher=lambda u: got.append(u) or b"x" * 20000,
+                             path=q)
+        return plan, got, Path(tmp) / "out"
+
+    def test_due_entry_becomes_an_instagram_plan_with_the_bio_line_and_no_url(self):
+        plan, got, out = self.make([self.entry()])
+        self.assertEqual(plan["key"], "feed/mochi/zh-Hant/carousel/mochi-zh-Hant-pain-20261022")
+        self.assertEqual(plan["cards"], [f"0{i}.jpg" for i in range(1, 6)])
+        self.assertEqual(len(got), 5)
+        self.assertNotRegex(plan["caption"], r"https?://")
+        self.assertIn("📲 請到個人檔案（bio）的連結下載", plan["caption"])
+        self.assertIn("ct=", plan["store_url"])
+        self.assertTrue((out / "plan.json").exists())
+
+    def test_not_due_wrong_slot_posted_cooling_or_not_for_instagram_is_skipped(self):
+        self.assertIsNone(self.make([self.entry(start="2026-10-30")])[0])
+        self.assertIsNone(self.make([self.entry()], slot=19)[0])                     # zh-Hant is the Asia slot
+        self.assertIsNone(self.make([self.entry(channels=["bluesky"])])[0])
+        done = [{"channel": S.CHANNEL, "clip": "feed/mochi/zh-Hant/carousel/mochi-zh-Hant-pain-20261022",
+                 "posted_at": "2026-10-10T07:21:00Z"}]
+        self.assertIsNone(self.make([self.entry()], posts=done)[0])
+        week = [{"channel": S.CHANNEL, "clip": "feed/mochi/en", "posted_at": "2026-10-21T19:21:00Z"}]
+        self.assertIsNone(self.make([self.entry()], posts=week)[0])                   # app featured this week
+        en = self.entry(id="mochi-en-pain-20261022", locale="en", country="US", text="Your list feels like a chore?")
+        self.assertEqual(self.make([self.entry(), en], slot=19)[0]["locale"], "en")
+        # one the pre-post gate would refuse (wrong script for its locale) gives its slot to the next one
+        bad = self.entry(id="mochi-de-pain-20261022", locale="de", country="DE", text="Spielerisch 注音 lernen")
+        de = self.entry(id="mochi-de-pain-20261023", locale="de", country="DE", text="Deine To-do-Liste, nur viel süßer")
+        with mock.patch("sys.stdout"):
+            self.assertEqual(self.make([bad, de])[0]["key"], "feed/mochi/de/carousel/mochi-de-pain-20261023")
+
+    def test_make_takes_the_queue_after_the_list_and_before_the_screenshot_carousel(self):
+        d = data(("mochi", "zh-Hant"))
+        tmp = tempfile.mkdtemp()
+        q = Path(tmp) / "carousels.json"
+        q.write_text(json.dumps({"items": [self.entry()]}, ensure_ascii=False), encoding="utf-8")
+        posts = [{"channel": S.CHANNEL, "clip": "feed/sereno/en/top5/2026-10-20", "posted_at": "2026-10-20T07:30:00Z"}]
+        with mock.patch.object(S, "QUEUE", q), mock.patch.object(S.volume_ramp, "room", return_value=(1, 0, 1)), \
+                mock.patch("sys.stdout"):
+            plan = S.make(Path(tmp) / "out", dt.date(2026, 10, 23), 7, data=d, posts=posts, fetcher=lambda u: b"x" * 20000)
+        self.assertIn("/carousel/", plan["key"])
+        self.assertEqual(S.qa(plan, online=False), [])

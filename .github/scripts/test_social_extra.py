@@ -1439,3 +1439,45 @@ class Platform50Test(unittest.TestCase):
 def html_unescape(text):
     import html as _html
     return _html.unescape(text)
+
+
+class CarouselCardsTest(unittest.TestCase):
+    """2026-10-22 carousel line: queued carousels reach the feed as card items with every image."""
+
+    def queue(self, **kw):
+        e = {"id": "mochi-en-pain-20261022", "app": "mochi", "app_id": "6785004775", "locale": "en", "country": "US",
+             "format": "pain", "name": "Mochi: Cute Checklist", "hook": "Your to-do list feels like a chore?",
+             "text": "Your to-do list feels like a chore?\n\nTap to check it off\n✓ 101 cute themes",
+             "short": "Your to-do list feels like a chore?\n\nTap to check it off", "tags": ["#CuteChecklist", "#Chore"],
+             "alt": "alt", "channels": ["bluesky", "pinterest", "instagram"], "start": "2026-10-22",
+             "images": [f"https://github.com/o/r/releases/download/carousel-cards/c-0{i}.jpg" for i in range(1, 6)]}
+        e["images4"] = [e["images"][i] for i in (0, 1, 2, 4)]
+        e.update(kw)
+        tmp = tempfile.mkdtemp()
+        path = Path(tmp) / "carousels.json"
+        path.write_text(json.dumps({"items": [e]}, ensure_ascii=False), encoding="utf-8")
+        return path
+
+    def test_bluesky_gets_the_short_text_and_the_four_card_cut(self):
+        cards = S.carousel_cards(dt.date(2026, 10, 22), "bluesky", path=self.queue())
+        self.assertEqual(len(cards), 1)
+        c = cards[0]
+        self.assertEqual(c["key"], "carousel/mochi-en-pain-20261022")
+        self.assertEqual(c["kind"], "card")
+        self.assertEqual(len(c["images"]), 4)
+        self.assertTrue(c["images"][-1].endswith("c-05.jpg"))
+        self.assertTrue(c["caption"].startswith("Your to-do list feels like a chore?\n\nTap to check it off"))
+        self.assertNotIn("101 cute themes", c["caption"])
+        self.assertIn("apps.apple.com/us/app/id6785004775", c["store"])
+        self.assertIn("ct=", c["store"])
+
+    def test_pinterest_takes_all_five_and_the_long_text(self):
+        c = S.carousel_cards(dt.date(2026, 10, 22), "pinterest", path=self.queue())[0]
+        self.assertEqual(len(c["images"]), 5)
+        self.assertIn("101 cute themes", c["caption"])
+
+    def test_not_yet_due_too_old_or_another_channel_is_left_out(self):
+        self.assertEqual(S.carousel_cards(dt.date(2026, 10, 21), "bluesky", path=self.queue()), [])
+        self.assertEqual(S.carousel_cards(dt.date(2026, 12, 1), "bluesky", path=self.queue()), [])
+        self.assertEqual(S.carousel_cards(dt.date(2026, 10, 22), "tumblr", path=self.queue()), [])
+        self.assertEqual(S.carousel_cards(dt.date(2026, 10, 22), "bluesky", path=Path("/nonexistent.json")), [])

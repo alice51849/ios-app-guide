@@ -364,8 +364,55 @@ def todays_cards(day, channel):
                           "play": countdown_cards.play_store_url(app["id"], uc.campaign(card, ct))})
         except Exception as exc:  # a utility-card data change must not stop the clips
             print(f"social-extra: utility card skipped ({exc.__class__.__name__})")
+    cards += carousel_cards(day, channel)
     locales = PLAN[channel].get("locales")
     return [c for c in cards if not locales or c["locale"] in locales]
+
+
+# ---------------------------------------------------------------- image carousels (00_GrowthEngine social/carousel)
+#
+# 2026-10-22 (carousel line): 5-card 1080x1350 carousels made from the apps' public App Store screenshots plus
+# localized text cards (00_GrowthEngine social/carousel/build_carousels.py; pain -> fix -> app, and "5 apps for X"
+# lists with at least 3 other developers' apps, names and objective facts only). The images live on the public
+# release "carousel-cards"; the queue is .github/growth/carousels.json. Each entry opens on its `start` day and stays
+# offered for CAROUSEL_WINDOW_DAYS; the posters keep their own caps and never post a key twice. A card item carries
+# `images` (all cards, in order) besides `image` (the cover): Bluesky takes up to 4, single-image posters the cover.
+CAROUSELS = HERE.parent / "growth" / "carousels.json"
+CAROUSEL_WINDOW_DAYS = 21
+
+
+def carousel_store_url(entry, channel):
+    """App Store link of a carousel post: the h7 family's platform token, sent at the app's level (app_campaign)."""
+    app_id = str(entry["app_id"])
+    token = DL.app_campaign(f"h7_{entry['app']}_{CT.get(channel, channel)}", app_id)
+    query = urllib.parse.urlencode({"pt": "118326163", "ct": token, "mt": "8"})
+    return f"https://apps.apple.com/{entry['country'].lower()}/app/id{app_id}?{query}"
+
+
+def carousel_cards(day, channel, path=None):
+    """The queued carousels due on `day` for `channel` (queue order: the flagship and priority apps first)."""
+    try:
+        data = json.loads(Path(path or CAROUSELS).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    today, oldest = day.isoformat(), (day - dt.timedelta(days=CAROUSEL_WINDOW_DAYS)).isoformat()
+    out = []
+    for e in data.get("items") or []:
+        start = str(e.get("start") or "")
+        images = [u for u in e.get("images") or [] if isinstance(u, str) and u.startswith("https://")]
+        if not start or not oldest <= start <= today or channel not in (e.get("channels") or []) or not images:
+            continue
+        body = e.get("short") if channel == "bluesky" else e.get("text")
+        tags = [t for t in e.get("tags") or [] if isinstance(t, str)]
+        tags = tags[:SC.TAG_LIMIT.get(channel, 5)]
+        if channel == "bluesky":  # 4 images at most: the entry's own 4-card cut (the app reveal kept)
+            images = [u for u in e.get("images4") or [] if isinstance(u, str) and u.startswith("https://")] or images[:4]
+        out.append({"kind": "card", "key": f"carousel/{e['id']}", "locale": e["locale"], "app": e["app"],
+                    "image": images[0], "images": images, "caption": with_tags(body or e["hook"], tags, channel),
+                    "title": e["hook"], "alt": e.get("alt") or e["hook"], "name": e["name"], "hook": e["hook"],
+                    "tags": tags, "button": clip_posts.text_for(e["locale"])["button"],
+                    "store": carousel_store_url(e, channel), "format": e.get("format")})
+    return out
 
 
 def plan(channel, data, posts, day, slot, check=True):

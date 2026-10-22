@@ -21,6 +21,9 @@ social_extra.py) calls this right before it posts. A post is refused when:
   最好, 世界一, 최고...), a competitor app's name, or "free" / "no ads" /
   "no subscription" / "one-time purchase" and feature counts that the product
   page (store name, subtitle, live description, price) does not state;
+- the app's repo store copy (data/<key>_full.json) no longer matches the live product page and the text
+  claims a feature the live page dropped (store_copy_drift: the daily check writes
+  .github/growth/store_copy_drift.json; a red app's dropped claims are refused here, audit 2026-10-23 S7);
 - a link is dead (only when online): the App Store lookup has no such app in
   that storefront, or the video URL answers 404 / 410. Network trouble never
   blocks a post; only a definite "not there" does.
@@ -43,6 +46,8 @@ import download_links as DL
 
 HERE = Path(__file__).resolve().parent
 CLIPS = HERE.parent / "growth" / "clips.json"
+STORE_COPY_DRIFT = HERE.parent / "growth" / "store_copy_drift.json"
+ENGINE_GEO = HERE.parents[1] / "_engine" / "geo"
 UA = "lumi-post-qa/1.0"
 
 # Platform caption limits (characters; Bluesky counts graphemes, len() is close for our text).
@@ -412,6 +417,7 @@ def clip_problems(clip, channel, text, online=True, length=True):
     facts, price = product_facts(clip.get("store_url", ""), store_text) if online else ("\n".join(store_text), None)
     allowed = (clip.get("name", ""), clip.get("search", ""))
     out += text_problems(text, clip.get("locale", ""), channel, allowed=allowed, facts=facts, price=price, length=length)
+    out += stale_claim_problems(text, clip.get("store_url", ""))
     out += download_link_problems(text, clip.get("store_url", ""), channel)
     if clip.get("name"):
         out += bio_problems(text, clip.get("locale", ""), clip["name"], channel, clip.get("store_url"))
@@ -438,6 +444,7 @@ def card_problems(text, locale, channel, *, store_url, name, image=None, extra_f
     # store_shot_cards.make_top5): words the caption may carry verbatim, never a claim of ours.
     facts, price = product_facts(store_url, (name, *extra_facts, *listed)) if online else ("\n".join((name, *extra_facts, *listed)), None)
     out += text_problems(text, locale, channel, allowed=(name, *listed), facts=facts, price=price, length=length)
+    out += stale_claim_problems(text, store_url)
     if require_link or DL.is_instagram(channel):
         out += download_link_problems(text, store_url, channel)
     if require_bio or DL.is_instagram(channel):
@@ -445,6 +452,27 @@ def card_problems(text, locale, channel, *, store_url, name, image=None, extra_f
     if online:
         out += link_problems(store_url)
     return out
+
+
+def stale_claim_problems(text, store_url, report_path=None):
+    """The 2026-10-23 store-copy guard: when the daily check (_engine/geo/store_copy_drift.py) marks the app red
+    (repo copy differs from the live product page), a post that still claims a feature the live page no longer
+    lists is refused. The whole post is about this one app, so every line is checked. No report = unknown = pass."""
+    if str(ENGINE_GEO) not in sys.path:
+        sys.path.insert(0, str(ENGINE_GEO))
+    try:
+        import store_copy_drift as SCD
+    except ImportError:
+        return []
+    report = SCD.load_report(Path(report_path) if report_path else STORE_COPY_DRIFT)
+    app_id = DL.app_store_id(store_url or "")
+    if not report or not app_id:
+        return []
+    try:
+        key = {v: k for k, v in SCD.roster_ids().items()}.get(str(app_id))
+    except (OSError, ValueError, KeyError):
+        return []
+    return SCD.claim_problems((report.get("apps") or {}).get(key), text, label=f"{key} ", whole=True)
 
 
 def gate(problems, label):

@@ -2619,7 +2619,7 @@
       "tags": [
         "#BatteryHealthScore",
         "#MaximumCapacity",
-        "#Cycles",
+        "#ChargeRate",
         "#ChargeCare",
         "#ChargeRange",
         "#BattAIBatteryHealth"
@@ -2627,7 +2627,6 @@
       "keywords": [
         "Battery health score",
         "Maximum capacity",
-        "Cycles",
         "Charge care",
         "Charge range",
         "Charge rate"
@@ -2650,7 +2649,7 @@
         {
           "id": "b",
           "lead": "A health score, and what shapes it",
-          "benefit": "Max capacity trend and cycle count"
+          "benefit": "Max capacity trend over time"
         },
         {
           "id": "c",
@@ -2671,7 +2670,7 @@
       "tags": [
         "#電池健康分數",
         "#最大容量",
-        "#循環次數",
+        "#充電速率",
         "#充電保養",
         "#充電區間",
         "#BattAI電池健康"
@@ -2679,7 +2678,6 @@
       "keywords": [
         "電池健康分數",
         "最大容量",
-        "循環次數",
         "充電保養",
         "充電區間",
         "充電速率"
@@ -2702,7 +2700,7 @@
         {
           "id": "b",
           "lead": "電池健康分數 連評分依據都看得到",
-          "benefit": "最大容量趨勢 ＋循環次數"
+          "benefit": "最大容量趨勢 一路看得到"
         },
         {
           "id": "c",
@@ -2723,7 +2721,7 @@
       "tags": [
         "#バッテリー状態スコア",
         "#最大容量",
-        "#充放電回数",
+        "#充電速度",
         "#充電ケア",
         "#充電範囲",
         "#BattAIバッテリー"
@@ -2731,7 +2729,6 @@
       "keywords": [
         "バッテリー状態スコア",
         "最大容量",
-        "充放電回数",
         "充電ケア",
         "充電範囲",
         "充電速度"
@@ -2754,7 +2751,7 @@
         {
           "id": "b",
           "lead": "状態スコアと その要因まで",
-          "benefit": "最大容量の推移と サイクル数"
+          "benefit": "最大容量の推移が わかる"
         },
         {
           "id": "c",
@@ -2775,7 +2772,7 @@
       "tags": [
         "#배터리상태점수",
         "#성능최대치",
-        "#사이클수",
+        "#충전속도",
         "#충전관리",
         "#충전구간",
         "#BattAI배터리"
@@ -2783,7 +2780,6 @@
       "keywords": [
         "배터리 상태 점수",
         "성능 최대치",
-        "사이클 수",
         "충전 관리",
         "충전 구간",
         "충전 속도"
@@ -2806,7 +2802,7 @@
         {
           "id": "b",
           "lead": "배터리 상태 점수와 점수를 만드는 요소",
-          "benefit": "성능 최대치 추세와 사이클 수"
+          "benefit": "성능 최대치 추세 한눈에"
         },
         {
           "id": "c",
@@ -16741,14 +16737,13 @@
         "#충전관리",
         "#충전구간",
         "#충전속도",
-        "#데이터내보내기",
+        "#배터리리포트",
         "#배터리상태점수",
         "#BattAI배터리"
       ],
       "keywords": [
         "배터리 상태 점수",
         "성능 최대치",
-        "사이클 수",
         "충전 관리",
         "충전 구간",
         "충전 속도"
@@ -16773,7 +16768,7 @@
         {
           "id": "b",
           "lead": "배터리 상태 점수와 점수를 만드는 요소",
-          "benefit": "성능 최대치 추세와 사이클 수"
+          "benefit": "성능 최대치 추세 한눈에"
         },
         {
           "id": "c",
@@ -16795,14 +16790,13 @@
         "#充電保養",
         "#充電區間",
         "#充電速率",
-        "#匯出資料",
+        "#電池報告",
         "#電池健康分數",
         "#BattAI電池健康"
       ],
       "keywords": [
         "電池健康分數",
         "最大容量",
-        "循環次數",
         "充電保養",
         "充電區間",
         "充電速率"
@@ -16827,7 +16821,7 @@
         {
           "id": "b",
           "lead": "電池健康分數 連評分依據都看得到",
-          "benefit": "最大容量趨勢 ＋循環次數"
+          "benefit": "最大容量趨勢 一路看得到"
         },
         {
           "id": "c",
@@ -17156,8 +17150,8 @@
       "tags": [
         "#Insomnia",
         "#Baby",
-        "#Tinnitus",
-        "#Adhd",
+        "#WhiteNoise",
+        "#SleepTimer",
         "#Focus",
         "#SerenoSleepSounds"
       ],
@@ -17183,17 +17177,17 @@
         {
           "id": "a",
           "lead": "White noise for baby's bedtime",
-          "benefit": "A ready-made baby sleep scene"
+          "benefit": "A sleep timer that fades out softly"
         },
         {
           "id": "b",
-          "lead": "A ready-made baby sleep scene",
+          "lead": "A sleep timer that fades out softly",
           "benefit": "Layer soft rain or a fan"
         },
         {
           "id": "c",
           "lead": "Timer fades out softly",
-          "benefit": "A ready-made baby sleep scene"
+          "benefit": "A sleep timer that fades out softly"
         }
       ],
       "hook_best": "b"
@@ -17209,8 +17203,8 @@
       "tags": [
         "#Insomnia",
         "#Baby",
-        "#Tinnitus",
-        "#Adhd",
+        "#WhiteNoise",
+        "#SleepTimer",
         "#Focus",
         "#SerenoSleepSounds"
       ],
@@ -17262,8 +17256,8 @@
       "tags": [
         "#Insomnia",
         "#Baby",
-        "#Tinnitus",
-        "#Adhd",
+        "#WhiteNoise",
+        "#SleepTimer",
         "#Focus",
         "#SerenoSleepSounds"
       ],

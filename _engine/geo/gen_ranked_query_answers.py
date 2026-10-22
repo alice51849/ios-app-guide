@@ -43,6 +43,7 @@ from site_config import PUBLIC_SITE  # noqa: E402
 from videogen.registry import APPS, APPSTORE  # noqa: E402
 from app_pairs import free_first_key  # noqa: E402
 import gw_campaign  # noqa: E402
+import store_copy_drift  # noqa: E402
 
 PAGES = Path(os.environ.get("GEO_PAGES", HERE / "pages")).resolve()
 GW_GROUP = "sr"                      # gw_campaign 詞群:品類主詞(已在榜的母語詞)
@@ -540,6 +541,10 @@ def render(entry: dict, locale: str) -> str:
     )
     if page_url(locale, donor_slug) in text:
         raise SystemExit(f"donor slug leaked into {locale}/{slug}")
+    # 倉儲文案與線上商店不一致的款（store_copy_drift 紅燈）：這頁寫的宣稱不可以是商店已不列的功能
+    stale = store_copy_drift.html_page_problems(text, label=f"{locale}/{slug}: ")
+    if stale:
+        raise SystemExit("\n".join(stale))
     return apply_gw_attribution(text, page_relative(locale, slug))
 
 

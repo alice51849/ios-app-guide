@@ -1,0 +1,5149 @@
+{
+ "apps": {
+  "aibriefpack": {
+   "blocked_terms": [],
+   "brands": [
+    "AI Brief"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.5",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "aim990": {
+   "blocked_terms": [],
+   "brands": [
+    "Aim990"
+   ],
+   "live_updated": "2026-10-11",
+   "live_version": "2.0.1",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "2.0.1",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "2.0.1",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "2.0.1",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "2.0.1",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "2.0.1",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "2.0.1",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "2.0.1",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "2.0.1",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "2.0.1",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "2.0.1",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "battai": {
+   "blocked_terms": [
+    "Ciclos",
+    "ciclos",
+    "cycle",
+    "Cycles",
+    "design capacity",
+    "export",
+    "Export data",
+    "Exportar dados",
+    "Exportar datos",
+    "Exporter les données",
+    "nominal charge capacity",
+    "Zyklen",
+    "より深い履歴、計画、レポートを使えます。",
+    "サイクル",
+    "充放電回数",
+    "公称充電容量",
+    "匯出",
+    "匯出資料",
+    "只付一次,絕無訂閱。",
+    "只付一次,绝无订阅。",
+    "导出",
+    "导出数据",
+    "循环次数",
+    "循環次數",
+    "支払いは一度だけ。サブスクリプションなし。",
+    "書き出",
+    "看懂电池随时间的变化",
+    "看懂電池隨時間的變化",
+    "解锁更深的历史、规划与报告。",
+    "設計容量",
+    "내보내",
+    "사이클",
+    "사이클 수",
+    "설계 용량"
+   ],
+   "brands": [
+    "BattAI"
+   ],
+   "live_updated": "2026-10-20",
+   "live_version": "1.1.7",
+   "locales": {
+    "de-DE": {
+     "added": [
+      "Nutzt fünf Werte aus öffentlichen iOS-APIs.",
+      "Kein Konto, Tracking, Werbung oder Netz.",
+      "Was BattAI dir zeigt",
+      "Ladestand, Laden und Wärme",
+      "Zustandswert und was ihn prägt",
+      "Hinweise: voll, schwach, zu heiß",
+      "Alle Widgets für Home- und Sperrbildschirm",
+      "Maximalkapazität im Verlauf",
+      "Berichte",
+      "Erstelle einen klaren Batteriebericht für Service, Weiterverkauf oder deine Unterlagen.",
+      "Vollständiger Bericht: Diagramme und Text der App",
+      "Derselbe Bericht als PNG-Bild",
+      "Alle Daten als Texttabelle",
+      "Öffentliche iOS-APIs liefern Batteriestand, Ladezustand, Stromsparmodus, Wärmezustand des ganzen Geräts und Zeit. BattAI kennzeichnet jedes andere Ergebnis als geschätzt oder von dir angegeben.",
+      "Die festen Regeln folgen etablierten Hinweisen zu Lithium-Ionen-Akkus: tiefe Entladung, lange Zeit bei hohem Ladestand, Wärme und Ladevolumen. Apples Servicewert von 80% maximaler Kapazität bleibt von BattAI-Hinweisbereichen getrennt. Kein Ergebnis verspricht mehr Lebensdauer.",
+      "Alles 24 Stunden gratis",
+      "Keine automatische Abbuchung. Kein Abo.",
+      "Nach 24 Stunden ist nur die Akkukarte gratis",
+      "Einmal freischalten und alles gehört dir",
+      "Dein Kauf ist mit deinem Apple Account verknüpft und gilt auf deinen Geräten."
+     ],
+     "dropped": [
+      "BattAI nutzt fünf Werte aus öffentlichen iOS-APIs: Batteriestand, Ladezustand, Stromsparmodus, Wärmezustand des ganzen Geräts und Zeit. Andere Ergebnisse werden daraus berechnet oder von dir ergänzt. Jedes Detail zeigt Quelle und Grenzen.",
+      "Maximale Kapazität im Zeitverlauf",
+      "Maximale Kapazität",
+      "Zyklen",
+      "Daten exportieren",
+      "Erstelle eine Datei auf diesem Gerät. Nichts wird hochgeladen.",
+      "Auf diesem Gerät erstellt. Keine Daten werden hochgeladen.",
+      "BattAI liest nur Ladezyklen, nominelle Ladekapazität und Designkapazität. Andere Dateidaten werden sofort verworfen und nie gespeichert oder gesendet.",
+      "Verstehe deine Batterie im Zeitverlauf",
+      "Schalte mehr Verlauf, Planung und Berichte frei.",
+      "Eine Zahlung. Kein Abo."
+     ],
+     "live_updated": "2026-10-20",
+     "live_version": "1.1.7",
+     "same": false
+    },
+    "en-GB": {
+     "added": [
+      "Uses five values from public iOS APIs.",
+      "No account, tracking, ads, or network use.",
+      "What BattAI tells you",
+      "Battery level, charging and heat",
+      "A health score and what affects it",
+      "Alerts when full, low or too hot",
+      "All Home Screen and Lock Screen widgets",
+      "Reports",
+      "Create a clear battery report for service, resale, or your own records.",
+      "Full report: the app's charts and text",
+      "The same report saved as a PNG",
+      "All of your data as a plain-text table",
+      "Public iOS APIs provide battery level, charge state, Low Power Mode, whole-device thermal state, and time. BattAI labels every other result as estimated or provided by you.",
+      "The fixed rules follow established lithium-ion guidance on deep discharge, long periods at high charge, heat, and charge volume. Apple’s 80% maximum-capacity service benchmark is kept separate from BattAI coaching bands. No result promises extra battery life.",
+      "All features free for 24 hours",
+      "No auto-charge. Not a subscription.",
+      "After 24 hours only the battery card stays free",
+      "Unlock once to own every feature",
+      "Your purchase is tied to your Apple Account and works on your devices."
+     ],
+     "dropped": [
+      "BattAI uses five values from public iOS APIs: battery level, charge state, Low Power Mode, whole-device thermal state, and time. Other results are calculated from those readings or added by you. Each detail shows its source and limits.",
+      "Maximum capacity",
+      "Cycles",
+      "Export data",
+      "Create a file on this device. Nothing is uploaded.",
+      "Built on this device. No data is uploaded.",
+      "BattAI reads only cycle count, nominal charge capacity, and design capacity. Other file data is discarded immediately and never stored or sent.",
+      "Understand your battery over time",
+      "Unlock deeper history, planning, and reports.",
+      "One payment. No subscription."
+     ],
+     "live_updated": "2026-10-20",
+     "live_version": "1.1.7",
+     "same": false
+    },
+    "en-US": {
+     "added": [
+      "Uses five values from public iOS APIs.",
+      "No account, tracking, ads, or network use.",
+      "What BattAI tells you",
+      "Battery level, charging and heat",
+      "A health score and what affects it",
+      "Alerts when full, low or too hot",
+      "All Home Screen and Lock Screen widgets",
+      "Reports",
+      "Create a clear battery report for service, resale, or your own records.",
+      "Full report: the app's charts and text",
+      "The same report saved as a PNG",
+      "All of your data as a plain-text table",
+      "Public iOS APIs provide battery level, charge state, Low Power Mode, whole-device thermal state, and time. BattAI labels every other result as estimated or provided by you.",
+      "The fixed rules follow established lithium-ion guidance on deep discharge, long periods at high charge, heat, and charge volume. Apple’s 80% maximum-capacity service benchmark is kept separate from BattAI coaching bands. No result promises extra battery life.",
+      "All features free for 24 hours",
+      "No auto-charge. Not a subscription.",
+      "After 24 hours only the battery card stays free",
+      "Unlock once to own every feature",
+      "Your purchase is tied to your Apple Account and works on your devices."
+     ],
+     "dropped": [
+      "BattAI uses five values from public iOS APIs: battery level, charge state, Low Power Mode, whole-device thermal state, and time. Other results are calculated from those readings or added by you. Each detail shows its source and limits.",
+      "Maximum capacity",
+      "Cycles",
+      "Export data",
+      "Create a file on this device. Nothing is uploaded.",
+      "Built on this device. No data is uploaded.",
+      "BattAI reads only cycle count, nominal charge capacity, and design capacity. Other file data is discarded immediately and never stored or sent.",
+      "Understand your battery over time",
+      "Unlock deeper history, planning, and reports.",
+      "One payment. No subscription."
+     ],
+     "live_updated": "2026-10-20",
+     "live_version": "1.1.7",
+     "same": false
+    },
+    "es-ES": {
+     "added": [
+      "Usa cinco valores de API públicas de iOS.",
+      "Sin cuenta, rastreo, anuncios ni red.",
+      "Qué te dice BattAI",
+      "Nivel de batería, carga y calor",
+      "Puntuación de salud y qué la afecta",
+      "Avisos si está llena, baja o caliente",
+      "Todos los widgets de pantalla de inicio y bloqueo",
+      "Evolución de la capacidad",
+      "Informes",
+      "Crea un informe claro de la batería para servicio, reventa o tus archivos.",
+      "Informe completo: los gráficos y textos de la app",
+      "El mismo informe guardado como PNG",
+      "Todos tus datos en una tabla de texto",
+      "Las API públicas de iOS ofrecen nivel de batería, estado de carga, modo de bajo consumo, estado térmico de todo el dispositivo y hora. BattAI marca cualquier otro resultado como estimado o aportado por ti.",
+      "Las reglas fijas siguen pautas establecidas para baterías de iones de litio sobre descargas profundas, periodos largos con carga alta, calor y volumen de carga. La referencia de servicio de Apple del 80% se mantiene separada de las bandas de orientación de BattAI. Ningún resultado promete más vida útil.",
+      "Usa todo gratis durante 24 horas",
+      "Sin cargos automáticos. No es una suscripción.",
+      "Después de 24 horas solo la tarjeta de batería es gratis",
+      "Desbloquea una vez y todo es tuyo",
+      "Tu compra está vinculada a tu cuenta de Apple y funciona en tus dispositivos."
+     ],
+     "dropped": [
+      "BattAI usa cinco valores de las API públicas de iOS: nivel de batería, estado de carga, modo de bajo consumo, estado térmico del dispositivo y hora. Los demás resultados se calculan con esas lecturas o los añades tú. Cada dato muestra su fuente y sus límites.",
+      "Capacidad máxima a lo largo del tiempo",
+      "Capacidad máxima",
+      "Ciclos",
+      "Exportar datos",
+      "Crea un archivo en este dispositivo. No se sube nada.",
+      "Creado en este dispositivo. No se suben datos.",
+      "BattAI solo lee el recuento de ciclos, la capacidad nominal de carga y la capacidad de diseño. Los demás datos se descartan al instante, sin guardarse ni enviarse.",
+      "Entiende tu batería con el tiempo",
+      "Desbloquea más historial, planificación e informes.",
+      "Pago único. Sin suscripción."
+     ],
+     "live_updated": "2026-10-20",
+     "live_version": "1.1.7",
+     "same": false
+    },
+    "fr-FR": {
+     "added": [
+      "Cinq valeurs des API publiques d’iOS.",
+      "Ni compte, ni pistage, ni pub, ni réseau.",
+      "Ce que BattAI vous dit",
+      "Batterie, charge et chaleur",
+      "Indice de santé et ce qui l'influence",
+      "Alertes si pleine, faible ou chaude",
+      "Tous les widgets d’écran d’accueil et verrouillé",
+      "Évolution capacité maximale",
+      "Rapports",
+      "Créez un rapport clair sur la batterie pour le service, la revente ou vos dossiers.",
+      "Rapport complet : les graphiques et les textes de l'app",
+      "Le même rapport enregistré en PNG",
+      "Toutes vos données dans un tableau texte",
+      "Les API publiques d’iOS donnent le niveau de batterie, l’état de recharge, le mode économie d’énergie, l’état thermique de tout l’appareil et l’heure. BattAI marque tout autre résultat comme estimé ou fourni par vous.",
+      "Les règles fixes suivent les recommandations établies pour les batteries lithium-ion sur les décharges profondes, les longues périodes à charge élevée, la chaleur et le volume de recharge. Le repère de service Apple de 80% reste distinct des plages de conseil BattAI. Aucun résultat ne promet une durée de vie supplémentaire.",
+      "Tout est gratuit pendant 24 h",
+      "Aucun prélèvement automatique. Ce n’est pas un abonnement.",
+      "Après 24 h, seule la carte batterie reste gratuite",
+      "Débloquez une fois pour tout garder",
+      "Votre achat est lié à votre compte Apple et fonctionne sur vos appareils."
+     ],
+     "dropped": [
+      "BattAI utilise cinq valeurs fournies par les API publiques d’iOS : niveau de batterie, état de recharge, mode économie d’énergie, état thermique de l’appareil et heure. Les autres résultats sont calculés à partir de ces relevés ou ajoutés par vous. Chaque détail indique sa source et ses limites.",
+      "Capacité maximale dans le temps",
+      "Capacité maximale",
+      "Cycles",
+      "Exporter les données",
+      "Créez un fichier sur cet appareil. Rien n’est envoyé.",
+      "Créé sur cet appareil. Aucune donnée n’est envoyée.",
+      "BattAI lit uniquement le nombre de cycles, la capacité de charge nominale et la capacité d’origine. Les autres données sont aussitôt écartées, sans stockage ni envoi.",
+      "Comprenez votre batterie dans le temps",
+      "Débloquez plus d’historique, de planification et de rapports.",
+      "Achat unique. Sans abonnement."
+     ],
+     "live_updated": "2026-10-20",
+     "live_version": "1.1.7",
+     "same": false
+    },
+    "ja": {
+     "added": [
+      "公開iOS APIの5つの値を使います。",
+      "アカウント・追跡・広告・通信なし。",
+      "BattAIでわかること",
+      "バッテリー残量・充電・発熱",
+      "健康スコアと、その要因",
+      "満充電・残量低下・高温のお知らせ",
+      "ホーム画面とロック画面のすべてのウィジェット",
+      "レポート",
+      "サービス、売却、自分の記録に使える、わかりやすい電池レポートを作成します。",
+      "完全なレポート:アプリのグラフとテキスト",
+      "同じレポートを PNG 画像として保存",
+      "すべてのデータをテキストの表に",
+      "公開iOS APIで得られるのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻です。BattAIはほかの結果を「推定」または「あなた」と明記します。",
+      "固定ルールは、深い放電、高残量での長時間保持、熱、充電量に関する一般的なリチウムイオン電池の指針に基づきます。Appleの最大容量80%サービス目安はBattAIのケア区分と分けて扱い、寿命が延びるとは約束しません。",
+      "すべての機能を24時間無料で",
+      "自動課金なし。サブスクではありません。",
+      "24時間後、無料はバッテリーカードのみ",
+      "一度の購入で、すべての機能がずっと使えます",
+      "購入はApple Accountに紐づき、お使いのデバイスで利用できます。"
+     ],
+     "dropped": [
+      "BattAIが公開iOS APIから使うのは、電池残量、充電状態、低電力モード、デバイス全体の熱状態、時刻の5つです。ほかの結果は記録から計算するか、あなたが追加します。各項目に情報源と限界を表示します。",
+      "最大容量",
+      "充放電回数",
+      "データを書き出す",
+      "このデバイスでファイルを作成します。アップロードはしません。",
+      "このデバイスで作成。データはアップロードしません。",
+      "BattAIが読むのは充放電回数、公称充電容量、設計容量だけです。ほかの内容はすぐ破棄し、保存も送信もしません。",
+      "電池の変化を長く見守る",
+      "より深い履歴、計画、レポートを使えます。",
+      "支払いは一度だけ。サブスクリプションなし。"
+     ],
+     "live_updated": "2026-10-20",
+     "live_version": "1.1.7",
+     "same": false
+    },
+    "ko": {
+     "added": [
+      "공개 iOS API의 값 5개를 사용해요.",
+      "계정, 추적, 광고, 네트워크 요청 없음.",
+      "BattAI가 알려주는 것",
+      "배터리 잔량·충전·발열",
+      "건강 점수와 그 요인",
+      "완충·부족·과열 시 알림",
+      "모든 홈 화면 및 잠금 화면 위젯",
+      "리포트",
+      "서비스, 중고 판매, 개인 기록에 쓸 수 있는 깔끔한 배터리 리포트를 만들어요.",
+      "전체 리포트: 앱의 차트와 텍스트",
+      "같은 리포트를 PNG 이미지로 저장",
+      "모든 데이터를 텍스트 표로",
+      "공개 iOS API가 제공하는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간이에요. BattAI는 나머지를 ‘추정’ 또는 ‘직접 제공’으로 표시해요.",
+      "정해진 규칙은 깊은 방전, 높은 잔량의 장시간 유지, 열, 충전량에 관한 일반적인 리튬 이온 지침을 따라요. Apple의 성능 최대치 80% 서비스 기준은 BattAI 관리 구간과 따로 두며 수명 연장을 약속하지 않아요.",
+      "모든 기능 24시간 무료",
+      "자동 결제 없음. 구독이 아닙니다.",
+      "24시간 후에는 배터리 카드만 무료입니다",
+      "한 번 결제로 모든 기능을 영구 소장",
+      "구매는 Apple Account에 연결되어 내 기기에서 사용할 수 있어요."
+     ],
+     "dropped": [
+      "BattAI가 공개 iOS API에서 쓰는 값은 배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간까지 다섯 가지예요. 다른 결과는 기록에서 계산하거나 직접 추가해요. 각 항목에 출처와 한계를 표시해요.",
+      "성능 최대치",
+      "사이클 수",
+      "데이터 내보내기",
+      "이 기기에서 파일을 만들어요. 업로드하지 않아요.",
+      "이 기기에서 만들며 업로드하지 않아요.",
+      "BattAI는 사이클 수, 공칭 충전 용량, 설계 용량만 읽어요. 다른 내용은 바로 버리고 저장하거나 보내지 않아요.",
+      "시간에 따른 배터리 변화를 이해하세요",
+      "더 깊은 기록, 계획, 리포트를 이용할 수 있어요.",
+      "한 번만 결제하면 됩니다. 구독은 없어요."
+     ],
+     "live_updated": "2026-10-20",
+     "live_version": "1.1.7",
+     "same": false
+    },
+    "pt-BR": {
+     "added": [
+      "Usa cinco dados das APIs públicas do iOS.",
+      "Sem conta, rastreio, anúncios ou rede.",
+      "O que o BattAI mostra",
+      "Nível da bateria, carga e calor",
+      "Uma nota de saúde e o que a define",
+      "Avisa se cheia, baixa ou quente",
+      "Todos os widgets da Tela de Início e Bloqueio",
+      "Evolução da capacidade",
+      "Relatórios",
+      "Crie um relatório claro da bateria para assistência, revenda ou seus registros.",
+      "Relatório completo: os gráficos e textos do app",
+      "O mesmo relatório salvo como PNG",
+      "Todos os seus dados em uma tabela de texto",
+      "As APIs públicas do iOS fornecem nível, estado da carga, Pouca Energia, estado térmico do aparelho inteiro e hora. O BattAI marca qualquer outro resultado como estimado ou informado por você.",
+      "As regras fixas seguem orientações consolidadas sobre íons de lítio: descarga profunda, longos períodos com carga alta, calor e volume de carga. A referência de serviço de 80% da capacidade máxima da Apple fica separada das faixas de orientação do BattAI. Nenhum resultado promete mais vida útil.",
+      "Tudo grátis por 24 horas",
+      "Sem cobrança automática. Não é assinatura.",
+      "Depois de 24 horas, só o cartão da bateria é grátis",
+      "Desbloqueie uma vez e tudo é seu",
+      "A compra fica vinculada à sua conta Apple e funciona nos seus aparelhos."
+     ],
+     "dropped": [
+      "O BattAI usa cinco dados das APIs públicas do iOS: nível da bateria, estado da carga, Pouca Energia, estado térmico do aparelho inteiro e hora. Os outros resultados são calculados com essas leituras ou adicionados por você. Cada dado mostra fonte e limites.",
+      "Capacidade máxima ao longo do tempo",
+      "Capacidade máxima",
+      "Ciclos",
+      "Exportar dados",
+      "Crie um arquivo neste aparelho. Nada é enviado.",
+      "Criado neste aparelho. Nenhum dado é enviado.",
+      "O BattAI lê apenas contagem de ciclos, capacidade nominal de carga e capacidade de projeto. Os outros dados são descartados na hora e nunca são salvos nem enviados.",
+      "Entenda sua bateria ao longo do tempo",
+      "Desbloqueie mais histórico, planejamento e relatórios.",
+      "Um pagamento. Sem assinatura."
+     ],
+     "live_updated": "2026-10-20",
+     "live_version": "1.1.7",
+     "same": false
+    },
+    "zh-Hans": {
+     "added": [
+      "使用公开 iOS API 的五项数据。",
+      "没有账户、追踪、广告或网络请求。",
+      "BattAI 会告诉你什么",
+      "电量、充电与发热",
+      "健康评分,以及影响它的因素",
+      "充满、电量低或过热时提醒",
+      "所有主屏幕与锁屏小组件",
+      "报告",
+      "为检修、二手转让或个人留档生成清晰的电池报告。",
+      "完整报告:App 的图表与文字",
+      "同一份报告存为 PNG 图片",
+      "全部数据的纯文本表格",
+      "公开 iOS API 只提供电量、充电状态、低电量模式、整机热状态和时间。BattAI 会把其他结果标为“估算”或“你提供”。",
+      "固定规则遵循关于深度放电、高电量长时间停留、热和充电量的常见锂离子电池养护建议。Apple 的最大容量 80% 服务基准与 BattAI 养护区间分开处理,不承诺延长寿命。",
+      "全部功能免费用 24 小时",
+      "不会自动扣费,也不是订阅",
+      "24 小时后只有电量卡片免费",
+      "购买一次,永久拥有全部功能",
+      "购买会关联到 Apple Account,并可在你的设备上使用。"
+     ],
+     "dropped": [
+      "BattAI 只使用公开 iOS API 提供的五项数据:电量、充电状态、低电量模式、整机热状态和时间。其他结果由这些读数计算或由你补充。每项都会显示来源和限制。",
+      "最大容量",
+      "循环次数",
+      "导出数据",
+      "在这台设备上生成文件,不会上传。",
+      "在这台设备上生成,不上传数据。",
+      "BattAI 只读取循环次数、标称充电容量和设计容量。其他内容会立即丢弃,不保存也不发送。",
+      "看懂电池随时间的变化",
+      "解锁更深的历史、规划与报告。",
+      "只付一次,绝无订阅。"
+     ],
+     "live_updated": "2026-10-20",
+     "live_version": "1.1.7",
+     "same": false
+    },
+    "zh-Hant": {
+     "added": [
+      "使用公開 iOS API 的五項資料。",
+      "沒有帳號、追蹤、廣告或網路請求。",
+      "BattAI 會告訴你什麼",
+      "電量、充電與發熱",
+      "健康分數,以及影響分數的因素",
+      "充飽、電量低或過熱時提醒",
+      "所有主畫面與鎖定畫面小工具",
+      "報告",
+      "為檢修、二手轉讓或個人留存建立清楚的電池報告。",
+      "完整報告:App 的圖表與文字",
+      "同一份報告存成 PNG 圖片",
+      "全部資料的純文字表格",
+      "公開 iOS API 只提供電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。BattAI 會把其他結果標示為「推估」或「你提供」。",
+      "固定規則遵循關於深度放電、高電量長時間停留、熱與充電量的常見鋰離子電池保養建議。Apple 的最大容量 80% 維修參考值會與 BattAI 保養區間分開處理,不承諾延長壽命。",
+      "全部功能免費使用 24 小時",
+      "不會自動扣款,也不是訂閱",
+      "24 小時後只有電量卡片免費",
+      "解鎖一次,永久擁有全部功能",
+      "購買會連結到 Apple Account,並可在你的裝置上使用。"
+     ],
+     "dropped": [
+      "BattAI 只使用公開 iOS API 提供的五項資料:電量、充電狀態、低耗電模式、整部裝置的熱狀態與時間。其他結果由這些讀值計算,或由你補充。每一項都會顯示來源與限制。",
+      "最大容量",
+      "循環次數",
+      "匯出資料",
+      "在這台裝置上產生檔案,不會上傳。",
+      "在這台裝置上產生,不會上傳資料。",
+      "BattAI 只讀取循環次數、標稱充電容量與設計容量。其他內容會立即捨棄,不儲存也不傳送。",
+      "看懂電池隨時間的變化",
+      "解鎖更深入的記錄、規劃與報告。",
+      "只付一次,絕無訂閱。"
+     ],
+     "live_updated": "2026-10-20",
+     "live_version": "1.1.7",
+     "same": false
+    }
+   },
+   "status": "red"
+  },
+  "caldaily": {
+   "blocked_terms": [],
+   "brands": [
+    "CalDaily કેલ્ક્યુલેટર અને થીમ",
+    "CalDaily ক্যালকুলেটর ও থিম",
+    "CalDaily कैलकुलेटर और थीम",
+    "CalDaily מחשבון ועיצובים",
+    "CalDaily ಕ್ಯಾಲ್ಕುಲೇಟರ್",
+    "CalDaily കാൽക്കുലേറ്റർ",
+    "CalDaily αριθμομηχανή",
+    "CalDaily حاسبة وسمات",
+    "CalDaily 계산기 및 테마",
+    "CalDaily 計算機與主題",
+    "CalDaily 计算器与主题",
+    "CalDaily 電卓とテーマ",
+    "CalDaily"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.7",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "claudeusagemini": {
+   "blocked_terms": [],
+   "brands": [
+    "UsageNow"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.1",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.1",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.1",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.1",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.1",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.1",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.1",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.1",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.1",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.1",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "countdaysnow": {
+   "blocked_terms": [],
+   "brands": [
+    "CountDaysNow"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.3",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "cvdesk": {
+   "blocked_terms": [],
+   "brands": [
+    "CV Desk ATS 履歷製作",
+    "CV Desk ATS 简历制作",
+    "CV Desk"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.4.9",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.9",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.9",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.9",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.9",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.9",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.9",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.9",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.9",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.9",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.9",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "cyca": {
+   "blocked_terms": [],
+   "brands": [
+    "Cyca 生理・排卵日トラッカー",
+    "Cyca 생리·배란일 트래커",
+    "Cyca 經期週期追蹤・排卵",
+    "Cyca 经期周期追踪・排卵",
+    "Cyca"
+   ],
+   "live_updated": "2026-10-16",
+   "live_version": "1.0.12",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.12",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.12",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.12",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.12",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.12",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.12",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.12",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.12",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.12",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.12",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "dailymate": {
+   "blocked_terms": [],
+   "brands": [
+    "DailyMate"
+   ],
+   "live_updated": "2026-10-10",
+   "live_version": "1.0.8",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-10",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-10",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-10",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-10",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-10",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-10",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-10",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-10",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-10",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-10",
+     "live_version": "1.0.8",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "dailymatelite": {
+   "blocked_terms": [],
+   "brands": [
+    "DailyMate Lite"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.7",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "dbhalo": {
+   "blocked_terms": [],
+   "brands": [
+    "dB Halo"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.5",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.5",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "easyam": {
+   "blocked_terms": [],
+   "brands": [
+    "EasyAM"
+   ],
+   "live_updated": "2026-10-20",
+   "live_version": "1.0.0",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-20",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-20",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-20",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-20",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-20",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-20",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-20",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-20",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-20",
+     "live_version": "1.0.0",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-20",
+     "live_version": "1.0.0",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "gbago": {
+   "blocked_terms": [],
+   "brands": [
+    "GBAGo"
+   ],
+   "live_updated": "2026-10-22",
+   "live_version": "1.0",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "gmoney": {
+   "blocked_terms": [],
+   "brands": [
+    "G+Money"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "2.1.13",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "2.1.13",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "2.1.13",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "2.1.13",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "2.1.13",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "2.1.13",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "2.1.13",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "2.1.13",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "2.1.13",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "2.1.13",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "2.1.13",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "gmoneylite": {
+   "blocked_terms": [],
+   "brands": [
+    "G+Money Lite"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.6",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "hourstag": {
+   "blocked_terms": [],
+   "brands": [
+    "HoursTag"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "3.0.18",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "3.0.18",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "3.0.18",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "3.0.18",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "3.0.18",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "3.0.18",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "3.0.18",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "3.0.18",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "3.0.18",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "3.0.18",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "3.0.18",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "hourstaglite": {
+   "blocked_terms": [],
+   "brands": [
+    "HoursTag Lite"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.1.5",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.5",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.5",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.5",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.5",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.5",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.5",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.5",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.5",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.5",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.5",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "ledmovingtext": {
+   "blocked_terms": [],
+   "brands": [
+    "LED Moving Text"
+   ],
+   "live_updated": "2026-10-16",
+   "live_version": "1.0.6",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-16",
+     "live_version": "1.0.6",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "lockhour": {
+   "blocked_terms": [],
+   "brands": [
+    "LockHour Pro"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.18",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "lumibopomofo": {
+   "blocked_terms": [],
+   "brands": [
+    "Lumi Μποπομόφο",
+    "Lumi Bopomofo",
+    "Lumi Бопомофо",
+    "Lumi بوبوموفو",
+    "Lumi बोपोमोफो",
+    "Lumi బోపొమోఫో",
+    "Lumi โปโปโมโฟ",
+    "Lumi بپوموفو",
+    "Lumi ボポモフォ",
+    "Lumi 注音星球",
+    "Lumi 보포모포",
+    "Lumi注音星球"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.17",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.17",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.17",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.17",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.17",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.17",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.17",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.17",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.17",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.17",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "lumibopomofopro": {
+   "blocked_terms": [],
+   "brands": [
+    "Lumi Bopomofo Pro",
+    "Lumi注音星球 Pro"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.24",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.24",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.24",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.24",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.24",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.24",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.24",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.24",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.24",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.24",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "lumiletters": {
+   "blocked_terms": [],
+   "brands": [
+    "Lumi ABC เด็ก Lite",
+    "Lumi Γράμματα Lite",
+    "Lumi Chữ Cái Lite",
+    "Lumi Letters Lite",
+    "Lumi Абетка Lite",
+    "Lumi Азбука Lite",
+    "Lumi अक्षर Lite",
+    "Lumi حروف Lite",
+    "Lumi 字母星球 Lite",
+    "Lumi レター Lite",
+    "Lumi 레터 Lite"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.1.8",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.8",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.8",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.8",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.8",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.8",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.8",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.8",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.8",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.8",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "lumiletterspro": {
+   "blocked_terms": [],
+   "brands": [
+    "Lumi எழுத்துகள் Pro",
+    "Lumi Letters Pro",
+    "Lumi Črke Pro",
+    "Lumi అక్షరాలు",
+    "Lumi ಅಕ್ಷರಗಳು",
+    "Lumi 字母星球 Pro",
+    "Lumi レター Pro",
+    "Lumi 레터 Pro"
+   ],
+   "live_updated": "2026-10-08",
+   "live_version": "1.3.6",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.3.6",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.3.6",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.3.6",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.3.6",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.3.6",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.3.6",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.3.6",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.3.6",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.3.6",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "lumimath": {
+   "blocked_terms": [],
+   "brands": [
+    "Lumi Math Planet",
+    "Lumi கணிதக் கோள்",
+    "Lumi గణిత గ్రహం",
+    "Lumi गणित ग्रह",
+    "Lumi ଗଣିତ ଗ୍ରହ",
+    "Lumi ಗಣಿತ ಗ್ರಹ",
+    "Lumi算数プラネット",
+    "Lumi 수학 행성",
+    "Lumi數學星球"
+   ],
+   "live_updated": "2026-10-12",
+   "live_version": "1.0.21",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.21",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.21",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.21",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.21",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.21",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.21",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.21",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.21",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.21",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "lumimathpro": {
+   "blocked_terms": [],
+   "brands": [
+    "Lumi さんすうプラネット",
+    "Lumi Math Pro",
+    "Lumi ଗଣିତ Pro",
+    "Lumi 수학 행성",
+    "Lumi 数学星球",
+    "Lumi 數學星球"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.15",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.15",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.15",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.15",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.15",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.15",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.15",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.15",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.15",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.15",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "lumimission": {
+   "blocked_terms": [],
+   "brands": [
+    "Lumi Hành Tinh Nhiệm Vụ",
+    "Lumi Πλανήτης Αποστολών",
+    "Lumi Mission Planet",
+    "Lumi Планета Миссий",
+    "Lumi మిషన్ ప్లానెట్",
+    "Lumi മിഷൻ പ്ലാനറ്റ്",
+    "Lumi Misija Planet",
+    "Lumi Планета Місій",
+    "Lumi كوكب المهام",
+    "Lumi ミッション星 生活習慣",
+    "Lumi مشن سیارہ",
+    "Lumi मिशन ग्रह",
+    "Lumi ดาวภารกิจ",
+    "Lumi 任務星球",
+    "Lumi 미션 별"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.4.8",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.8",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.8",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.8",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.8",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.8",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.8",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.8",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.8",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.8",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.8",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "lumimissionpro": {
+   "blocked_terms": [],
+   "brands": [
+    "Lumi Hành Tinh Nhiệm Vụ Pro",
+    "Lumi Πλανήτης Αποστολών Pro",
+    "Lumi മിഷൻ പ്ലാനറ്റ് പ്രോ",
+    "Lumi Mission Planet Pro",
+    "Lumi Планета Миссий Pro",
+    "Lumi Misija Planet Pro",
+    "Lumi Планета Місій Pro",
+    "Lumi ミッション星 Pro 毎日の習慣",
+    "Lumi كوكب المهام Pro",
+    "Lumi मिशन ग्रह Pro",
+    "Lumi ดาวภารกิจ Pro",
+    "Lumi 任务星球 Pro",
+    "Lumi 任務星球 Pro",
+    "Lumi 미션 별 Pro"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.13",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "lumiweather": {
+   "blocked_terms": [],
+   "brands": [
+    "Lumi天气星球 出门指数与穿衣建议",
+    "Lumi Thời tiết",
+    "Lumi מזג אוויר",
+    "Lumi Időjárás",
+    "Lumi আবহাওয়া",
+    "Lumi వాతావరణం",
+    "Lumi കാലാവസ്ഥ",
+    "Lumi Počasie",
+    "Lumi Vrijeme",
+    "Lumi Weather",
+    "Lumi Pogoda",
+    "Lumi Počasí",
+    "Lumi Tiempo",
+    "Lumi Vremea",
+    "Lumi Wetter",
+    "Lumi Καιρός",
+    "Lumi Погода",
+    "Lumi हवामान",
+    "Lumi હવામાન",
+    "Lumi வானிலை",
+    "Lumi ಹವಾಮಾನ",
+    "Lumi Cuaca",
+    "Lumi Meteo",
+    "Lumi Météo",
+    "Lumi Tempo",
+    "Lumi Temps",
+    "Lumi Vreme",
+    "Lumi Väder",
+    "Lumi الطقس",
+    "Lumi อากาศ",
+    "Lumi Hava",
+    "Lumi Vejr",
+    "Lumi Weer",
+    "Lumi موسم",
+    "Lumi मौसम",
+    "Lumi ਮੌਸਮ",
+    "Lumi Sää",
+    "Lumi Vær",
+    "Lumi ପାଗ",
+    "Lumi天氣星球",
+    "ルミのおてんき星",
+    "루미 날씨"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.7.7",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.7.7",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.7.7",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.7.7",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.7.7",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.7.7",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.7.7",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.7.7",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.7.7",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.7.7",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.7.7",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "maskmyfile": {
+   "blocked_terms": [],
+   "brands": [
+    "Mask My File"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.8",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "mochi": {
+   "blocked_terms": [],
+   "brands": [
+    "Mochi"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.16",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.16",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.16",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.16",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.16",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.16",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.16",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.16",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.16",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.16",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.16",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "mochidonestamp": {
+   "blocked_terms": [],
+   "brands": [
+    "Mochi DoneStamp"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.18",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.18",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "moneytag": {
+   "blocked_terms": [],
+   "brands": [
+    "MoneyTag"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.1.4",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.4",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.4",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.4",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.4",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.4",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.4",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.4",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.4",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.4",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.1.4",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "notesstudio100": {
+   "blocked_terms": [],
+   "brands": [
+    "100 Notes Studio"
+   ],
+   "live_updated": "2026-10-12",
+   "live_version": "1.0.8",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.8",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "onepageppt": {
+   "blocked_terms": [],
+   "brands": [
+    "OnePage PPT"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.7",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.7",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "photocream": {
+   "blocked_terms": [],
+   "brands": [
+    "PhotoCream Pro"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.13",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "picclear": {
+   "blocked_terms": [],
+   "brands": [
+    "PicClear Pro"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.9.8",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.9.8",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.9.8",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.9.8",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.9.8",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.9.8",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.9.8",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.9.8",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.9.8",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.9.8",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.9.8",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "qrcodehalo": {
+   "blocked_terms": [],
+   "brands": [
+    "QR Code Halo สแกน & สร้าง",
+    "QR Code Halo"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.3",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.3",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "savetag": {
+   "blocked_terms": [],
+   "brands": [
+    "SaveTag"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.6",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "scanto": {
+   "blocked_terms": [],
+   "brands": [
+    "ScanTo Pro"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.2.8",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.2.8",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.2.8",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.2.8",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.2.8",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.2.8",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.2.8",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.2.8",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.2.8",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.2.8",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.2.8",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "sereno": {
+   "blocked_terms": [
+    "ADHD",
+    "AirPlay",
+    "baby sleep",
+    "bedside mode",
+    "CONCENTRACIÓN & TDAH —",
+    "Sereno Pro",
+    "tinnitus",
+    "ベッドサイドモード",
+    "婴儿",
+    "嬰兒",
+    "旨在感到宁静 —",
+    "耳鳴",
+    "赤ちゃん",
+    "아기",
+    "이명"
+   ],
+   "brands": [
+    "Sereno"
+   ],
+   "live_updated": "2026-10-18",
+   "live_version": "1.1.1",
+   "locales": {
+    "de-DE": {
+     "added": [
+      "Sereno verwandelt Ihr Telefon in eine Klangmaschine für Schlaf, Konzentration und Entspannung. Regen, Meer, Wind, Feuer und mehr sind echte Aufnahmen vor Ort, gemischt zu über 1000 einzigartigen Klanglandschaften und beim Zuhören zufällig neu angeordnet, sodass Sie nie eine feste Schleife hören.",
+      "Keine Werbung. Kein Konto. Funktioniert vollständig offline.",
+      "Fertige Szenen für Schlaf, tiefe Konzentration, Lernen, Entspannung, Meditation, Natur, Lesen, Reisen und mehr. Speichern Sie Ihre Lieblingsmixe.",
+      "Ein Schlaf-Timer, der sanft ausblendet, statt abrupt abzubrechen, und ein sanftes Wecken bei Sonnenaufgang, das zur gewählten Zeit langsam Vogelgesang einblendet.",
+      "FOKUS —",
+      "Gleichmäßiges braunes und pinkes Rauschen bildet einen ruhigen Klanghintergrund für Arbeit, Lesen und Lernen, mit eigenen Fokus-Szenen.",
+      "Ein ruhiges, dunkles Design mit langsamer, sanfter Bewegung und dezenten Farbthemen. Wiedergabe im Hintergrund, Steuerung auf dem Sperrbildschirm und eine Vollbild-Nachtansicht, die die Helligkeit dimmt.",
+      "Einige Klänge, Szenen und Funktionen werden mit einem einmaligen In-App-Kauf freigeschaltet."
+     ],
+     "dropped": [
+      "Sereno verwandelt Ihr Telefon in eine hochwertige Klangmaschine für Schlaf, Konzentration und Ruhe. Regen, Meer, Wind, Feuer und mehr sind echte Aufnahmen vor Ort, gemischt zu über 1000 einzigartigen Klanglandschaften und beim Zuhören zufällig miteinander verwoben — keine feste Schleife, sondern ein sanfter Mix, der Sie durch die Nacht begleitet.",
+      "Einmal zahlen. Kein Abonnement. Keine Werbung. Kein Konto. Funktioniert vollständig offline.",
+      "Fertige Szenen für Schlaf, tiefen Fokus, ADHS-Fokus, Studium, Entspannung, Meditation, Tinnitus-Linderung, Babyschlaf, Reisen und mehr. Speichern und benennen Sie Ihre eigenen.",
+      "Ein Schlaf-Timer, der sanft ausblendet, anstatt abzubrechen, plus ein Sonnenaufgangswecker, der im Vogelgesang anschwillt, um den Morgen zu begrüßen.",
+      "FOKUS & ADHS —",
+      "Stetiges braunes und pinkes Rauschen kann einen beschäftigten Geist beruhigen und Ihnen helfen, bei der Sache zu bleiben. Speziell entwickelte Fokus-Szenen für Arbeit, Studium und ADHS.",
+      "Ein ruhiges, dunkel orientiertes Design mit langsamer, atmender Bewegung und beruhigenden Themen. Hintergrundwiedergabe, Sperrbildschirm- und AirPlay-Steuerungen sowie ein immersiver Nachttischmodus, der sich zum Klang abdunkelt.",
+      "Schalten Sie Sereno Pro einmal frei für alle Klänge, unbegrenzte Schichten, alle Szenen, Abstimmungssteuerungen und mehr — für immer Ihres."
+     ],
+     "live_updated": "2026-10-18",
+     "live_version": "1.1.1",
+     "same": false
+    },
+    "en-GB": {
+     "added": [
+      "Sereno turns your phone into a sound machine for sleep, focus, and relaxation. Rain, ocean, wind, fire, and more are real field recordings, blended into 1000+ unique soundscapes and re-sequenced at random as you listen, so you never hear a fixed loop.",
+      "No ads. No account. Works fully offline.",
+      "Ready-made scenes for sleep, deep focus, study, relaxation, meditation, nature, reading, travel, and more. Save your favourite mixes.",
+      "A sleep timer that fades out softly instead of cutting off, plus a sunrise wake-up that gently brings in birdsong at the time you choose.",
+      "FOCUS —",
+      "Steady brown and pink noise gives you an even background sound for work, reading, and study, with dedicated focus scenes.",
+      "A serene, dark design with slow, gentle motion and soft colour themes. Background playback, lock-screen controls, and a full-screen night view that dims the display.",
+      "Some sounds, scenes, and features are unlocked with a one-time in-app purchase."
+     ],
+     "dropped": [
+      "Sereno turns your phone into a high-end sound machine for sleep, focus, and calm. Rain, ocean, wind, fire and more are real field recordings, blended into 1000+ unique soundscapes and woven together at random as you listen — no fixed loop, just a gentle mix that carries you through the night.",
+      "Pay once. No subscription. No ads. No account. Works fully offline.",
+      "Ready-made scenes for sleep, deep focus, ADHD focus, study, relaxation, meditation, tinnitus relief, baby sleep, travel, and more. Save and name your own.",
+      "A sleep timer that fades out softly instead of cutting off, plus a sunrise wake that swells in birdsong to greet the morning.",
+      "FOCUS & ADHD —",
+      "Steady brown and pink noise can quiet a busy mind and help you stay on task. Purpose-built focus scenes for work, study, and ADHD.",
+      "A serene, dark-first design with slow, breathing motion and calming themes. Background playback, lock-screen and AirPlay controls, and an immersive bedside mode that dims to the sound.",
+      "Unlock Sereno Pro once for every sound, unlimited layers, all scenes, tuning controls, and more — yours forever."
+     ],
+     "live_updated": "2026-10-18",
+     "live_version": "1.1.1",
+     "same": false
+    },
+    "en-US": {
+     "added": [
+      "Sereno turns your phone into a sound machine for sleep, focus, and relaxation. Rain, ocean, wind, fire, and more are real field recordings, blended into 1000+ unique soundscapes and re-sequenced at random as you listen, so you never hear a fixed loop.",
+      "No ads. No account. Works fully offline.",
+      "Ready-made scenes for sleep, deep focus, study, relaxation, meditation, nature, reading, travel, and more. Save your favorite mixes.",
+      "A sleep timer that fades out softly instead of cutting off, plus a sunrise wake-up that gently brings in birdsong at the time you choose.",
+      "FOCUS —",
+      "Steady brown and pink noise gives you an even background sound for work, reading, and study, with dedicated focus scenes.",
+      "A serene, dark design with slow, gentle motion and soft color themes. Background playback, lock-screen controls, and a full-screen night view that dims the display.",
+      "Some sounds, scenes, and features are unlocked with a one-time in-app purchase."
+     ],
+     "dropped": [
+      "Sereno turns your phone into a high-end sound machine for sleep, focus, and calm. Rain, ocean, wind, fire and more are real field recordings, blended into 1000+ unique soundscapes and woven together at random as you listen — no fixed loop, just a gentle mix that carries you through the night.",
+      "Pay once. No subscription. No ads. No account. Works fully offline.",
+      "Ready-made scenes for sleep, deep focus, ADHD focus, study, relaxation, meditation, tinnitus relief, baby sleep, travel, and more. Save and name your own.",
+      "A sleep timer that fades out softly instead of cutting off, plus a sunrise wake that swells in birdsong to greet the morning.",
+      "FOCUS & ADHD —",
+      "Steady brown and pink noise can quiet a busy mind and help you stay on task. Purpose-built focus scenes for work, study, and ADHD.",
+      "A serene, dark-first design with slow, breathing motion and calming themes. Background playback, lock-screen and AirPlay controls, and an immersive bedside mode that dims to the sound.",
+      "Unlock Sereno Pro once for every sound, unlimited layers, all scenes, tuning controls, and more — yours forever."
+     ],
+     "live_updated": "2026-10-18",
+     "live_version": "1.1.1",
+     "same": false
+    },
+    "es-ES": {
+     "added": [
+      "Sereno convierte tu teléfono en una máquina de sonidos para dormir, concentrarte y relajarte. La lluvia, el océano, el viento, el fuego y mucho más son grabaciones de campo reales, combinadas en más de 1000 paisajes sonoros únicos y reordenadas al azar mientras escuchas, así que nunca oirás un bucle fijo.",
+      "Sin anuncios. Sin cuenta. Funciona completamente sin conexión.",
+      "Escenas preparadas para dormir, concentración profunda, estudio, relajación, meditación, naturaleza, lectura, viajes y más. Guarda tus mezclas favoritas.",
+      "Un temporizador de sueño que baja el sonido suavemente en lugar de cortarlo, y un despertar al amanecer que incorpora suavemente el canto de los pájaros a la hora que elijas.",
+      "CONCENTRACIÓN —",
+      "El ruido marrón y rosa constante crea un fondo sonoro uniforme para trabajar, leer y estudiar, con escenas dedicadas a la concentración.",
+      "Un diseño sereno y oscuro, con movimiento lento y suave y temas de color delicados. Reproducción en segundo plano, controles en la pantalla de bloqueo y una vista nocturna a pantalla completa que atenúa el brillo.",
+      "Algunos sonidos, escenas y funciones se desbloquean con una compra única dentro de la app."
+     ],
+     "dropped": [
+      "Sereno convierte tu teléfono en una máquina de sonido de alta gama para dormir, concentrarse y calmarse. La lluvia, el océano, el viento, el fuego y mucho más son grabaciones de campo reales, combinadas en más de 1000 paisajes sonoros únicos y entrelazadas al azar mientras escuchas — sin bucles fijos, solo una mezcla suave que te acompaña toda la noche.",
+      "Paga una vez. Sin suscripción. Sin anuncios. Sin cuenta. Funciona completamente offline.",
+      "Escenas preparadas para dormir, concentración profunda, concentración en TDAH, estudio, relajación, meditación, alivio de tinnitus, sueño de bebé, viaje y más. Guarda y nombra las tuyas propias.",
+      "Un temporizador de sueño que se desvanece suavemente en lugar de cortarse, además de un despertar al amanecer que se eleva en canto de pájaros para saludar la mañana.",
+      "CONCENTRACIÓN & TDAH —",
+      "El ruido marrón y rosa constante puede calmar una mente ocupada y ayudarte a mantenerte en la tarea. Escenas de concentración diseñadas para trabajo, estudio y TDAH.",
+      "Un diseño sereno, oscuro-primero con movimiento lento y respiratorio y temas calmantes. Reproducción en segundo plano, controles de pantalla bloqueada y AirPlay, y un modo de cabecera inmersivo que se atenúa al sonido.",
+      "Desbloquea Sereno Pro una vez para todos los sonidos, capas ilimitadas, todas las escenas, controles de ajuste y más — tuyo para siempre."
+     ],
+     "live_updated": "2026-10-18",
+     "live_version": "1.1.1",
+     "same": false
+    },
+    "fr-FR": {
+     "added": [
+      "Sereno transforme votre téléphone en machine sonore pour le sommeil, la concentration et la détente. La pluie, l'océan, le vent, le feu et bien d'autres sons sont de vrais enregistrements de terrain, assemblés en plus de 1000 paysages sonores uniques et réagencés au hasard pendant votre écoute : vous n'entendez jamais de boucle fixe.",
+      "Pas de publicités. Pas de compte. Fonctionne entièrement hors ligne.",
+      "Des scènes prêtes à l'emploi pour le sommeil, la concentration profonde, l'étude, la détente, la méditation, la nature, la lecture, le voyage et plus encore. Enregistrez vos mélanges préférés.",
+      "Un minuteur de sommeil qui baisse le son en douceur au lieu de s'arrêter brutalement, et un réveil en douceur au lever du soleil qui fait entrer peu à peu le chant des oiseaux à l'heure choisie.",
+      "CONCENTRATION —",
+      "Un bruit brun et rose constant offre un fond sonore régulier pour le travail, la lecture et l'étude, avec des scènes dédiées à la concentration.",
+      "Un design serein et sombre, avec un mouvement lent et doux et des thèmes de couleur délicats. Lecture en arrière-plan, contrôles sur l'écran de verrouillage et une vue de nuit plein écran qui atténue la luminosité.",
+      "Certains sons, scènes et fonctionnalités se débloquent avec un achat unique intégré à l'app."
+     ],
+     "dropped": [
+      "Sereno transforme votre téléphone en une machine sonore haut de gamme pour le sommeil, la concentration et le calme. La pluie, l'océan, le vent, le feu et bien d'autres sons sont de vrais enregistrements de terrain, assemblés en plus de 1000 paysages sonores uniques et tissés au hasard au fil de votre écoute — aucune boucle fixe, juste un mélange doux qui vous accompagne toute la nuit.",
+      "Payez une fois. Pas d'abonnement. Pas de publicités. Pas de compte. Fonctionne entièrement hors ligne.",
+      "Des scènes prêtes à l'emploi pour le sommeil, la concentration profonde, la concentration pour TDAH, l'étude, la relaxation, la méditation, le soulagement des acouphènes, le sommeil de bébé, le voyage et plus encore. Enregistrez et nommez les vôtres.",
+      "Un minuteur de sommeil qui s'estompe doucement au lieu de s'arrêter brutalement, plus un réveil au lever du soleil qui s'amplifie dans le chant des oiseaux pour saluer le matin.",
+      "CONCENTRATION & TDAH —",
+      "Le bruit brun et rose constant peut calmer un esprit occupé et vous aider à rester concentré. Scènes de concentration spécialement conçues pour le travail, l'étude et le TDAH.",
+      "Un design serein, sombre d'abord, avec un mouvement de respiration lent et des thèmes apaisants. Lecture en arrière-plan, contrôles de l'écran de verrouillage et AirPlay, et un mode de chevet immersif qui s'assombrit au son.",
+      "Déverrouillez Sereno Pro une fois pour chaque son, couches illimitées, toutes les scènes, contrôles de réglage, et plus encore — à vous pour toujours."
+     ],
+     "live_updated": "2026-10-18",
+     "live_version": "1.1.1",
+     "same": false
+    },
+    "ja": {
+     "added": [
+      "Serenoは、iPhoneを睡眠・集中・リラックスのためのサウンドマシンに変えます。雨や海、風、火などの音は本物のフィールド録音で、1000以上のユニークなサウンドスケープにブレンドされ、再生中もランダムに組み替えられるため、決まったループが聞こえることはありません。",
+      "広告なし。アカウント不要。完全にオフラインで動作します。",
+      "睡眠、深い集中、勉強、リラクゼーション、瞑想、自然、読書、旅行などのための、すぐに使えるシーン。お気に入りのミックスを保存できます。",
+      "音をいきなり止めずにやさしくフェードアウトするスリープタイマーと、選んだ時刻に鳥のさえずりを少しずつ流す日の出ウェイクアップ。",
+      "集中 —",
+      "安定したブラウンノイズとピンクノイズが、仕事や読書、勉強のための均一な背景音になります。集中用の専用シーンも用意しています。",
+      "ゆっくりとやさしい動きと落ち着いた配色テーマの、穏やかなダークデザイン。バックグラウンド再生、ロック画面からの操作、画面の明るさを抑えるフルスクリーンのナイトビュー。",
+      "一部のサウンド、シーン、機能は、1回限りのApp内課金でロック解除されます。"
+     ],
+     "dropped": [
+      "Serenoは、あなたの電話を睡眠、集中、そして落ち着きのための高級サウンドマシンに変えます。雨や海、風、火などの音は本物のフィールド録音です。1000以上のユニークなサウンドスケープにブレンドされ、再生中もランダムに織り交ぜられていきます — 決まったループはなく、夜通しあなたに寄り添う穏やかなミックスです。",
+      "一度購入。サブスクリプションなし。広告なし。アカウントなし。完全にオフラインで動作。",
+      "睡眠、深い集中、ADHDの集中、勉強、リラクゼーション、瞑想、耳鳴りの緩和、赤ちゃんの睡眠、旅行などのための準備されたシーン。自分のシーンを保存して名前を付けることができます。",
+      "カットオフする代わりに穏やかにフェードアウトするスリープタイマー、そして朝を迎える鳥のさえずりで膨らむ日の出の目覚め。",
+      "集中とADHD —",
+      "安定したブラウンノイズとピンクノイズは、忙しい心を静め、タスクに集中するのを助けます。仕事、勉強、ADHDのために特別に作られた集中シーン。",
+      "穏やかな、暗いデザインで、ゆっくりとした呼吸の動きと落ち着いたテーマ。バックグラウンド再生、ロック画面とAirPlayのコントロール、音に合わせて暗くなる没入型のベッドサイドモード。",
+      "一度だけSereno Proをアンロックして、すべてのサウンド、無制限のレイヤー、すべてのシーン、調整コントロールなどを手に入れましょう — 永遠にあなたのものです。"
+     ],
+     "live_updated": "2026-10-18",
+     "live_version": "1.1.1",
+     "same": false
+    },
+    "ko": {
+     "added": [
+      "Sereno는 휴대폰을 수면, 집중, 휴식을 위한 사운드 머신으로 바꿔 줍니다. 비, 바다, 바람, 불 등의 소리는 실제 현장 녹음으로, 1000개 이상의 독특한 사운드스케이프로 혼합되며 듣는 동안 무작위로 재배열되므로 고정된 루프가 들리지 않습니다.",
+      "광고 없음. 계정 없음. 완전히 오프라인으로 작동합니다.",
+      "수면, 깊은 집중, 공부, 휴식, 명상, 자연, 독서, 여행 등을 위한 준비된 장면. 마음에 드는 믹스를 저장하세요.",
+      "소리를 갑자기 끊지 않고 부드럽게 줄여 주는 수면 타이머와, 정한 시간에 새소리를 서서히 들려주는 일출 웨이크업.",
+      "집중 —",
+      "안정적인 브라운 노이즈와 핑크 노이즈가 업무, 독서, 공부를 위한 고른 배경음이 되어 줍니다. 집중 전용 장면도 있습니다.",
+      "느리고 부드러운 움직임과 은은한 색상 테마를 갖춘 차분한 다크 디자인. 백그라운드 재생, 잠금 화면 제어, 화면 밝기를 낮춰 주는 전체 화면 나이트 뷰.",
+      "일부 사운드, 장면 및 기능은 1회 앱 내 구입으로 잠금 해제됩니다."
+     ],
+     "dropped": [
+      "Sereno는 당신의 전화기를 수면, 집중, 그리고 평온을 위한 고급 사운드 머신으로 변환합니다. 비, 바다, 바람, 불 등의 소리는 실제 현장 녹음으로, 1000개 이상의 독특한 사운드스케이프로 혼합되어 듣는 동안 무작위로 엮입니다 — 정해진 루프 없이, 밤새 당신 곁을 지켜 주는 부드러운 믹스만 있습니다.",
+      "한 번 구매. 구독 없음. 광고 없음. 계정 없음. 완전히 오프라인으로 작동.",
+      "수면, 깊은 집중, ADHD 집중, 공부, 휴식, 명상, 이명 완화, 아기 수면, 여행 등을 위한 준비된 장면. 자신의 장면을 저장하고 이름을 지정하세요.",
+      "갑자기 꺼지는 대신 부드럽게 페이드 아웃되는 수면 타이머와 아침을 맞이하는 새소리로 부풀어 오르는 일출 알람.",
+      "집중 및 ADHD —",
+      "안정적인 브라운 노이즈와 핑크 노이즈는 바쁜 마음을 진정시키고 작업에 집중할 수 있도록 도와줍니다. 작업, 공부, ADHD를 위한 목적에 맞게 설계된 집중 장면.",
+      "느린 호흡 운동과 진정 테마가 있는 평온한, 어두운 우선 디자인. 백그라운드 재생, 잠금 화면 및 AirPlay 제어, 소리에 맞춰 어두워지는 몰입형 침대 모드.",
+      "모든 사운드, 무제한 레이어, 모든 장면, 조정 컨트롤 등을 위해 Sereno Pro를 한 번만 잠금 해제하세요 — 영원히 당신의 것입니다."
+     ],
+     "live_updated": "2026-10-18",
+     "live_version": "1.1.1",
+     "same": false
+    },
+    "pt-BR": {
+     "added": [
+      "O Sereno transforma seu telefone em uma máquina de sons para dormir, focar e relaxar. Chuva, oceano, vento, fogo e muito mais são gravações de campo reais, combinadas em mais de 1000 paisagens sonoras únicas e reorganizadas ao acaso enquanto você ouve, para que você nunca escute um loop fixo.",
+      "Sem anúncios. Sem conta. Funciona totalmente offline.",
+      "Cenas prontas para dormir, foco profundo, estudo, relaxamento, meditação, natureza, leitura, viagem e mais. Salve suas misturas favoritas.",
+      "Um temporizador de sono que abaixa o som suavemente em vez de cortá-lo, e um despertar ao nascer do sol que traz aos poucos o canto dos pássaros no horário que você escolher.",
+      "FOCO —",
+      "O ruído marrom e rosa constante cria um fundo sonoro uniforme para trabalhar, ler e estudar, com cenas dedicadas ao foco.",
+      "Um design sereno e escuro, com movimento lento e suave e temas de cores delicados. Reprodução em segundo plano, controles na tela bloqueada e uma visualização noturna em tela cheia que diminui o brilho.",
+      "Alguns sons, cenas e recursos são desbloqueados com uma compra única no app."
+     ],
+     "dropped": [
+      "O Sereno transforma seu telefone em uma máquina de som de alta qualidade para sono, foco e calma. Chuva, oceano, vento, fogo e muito mais são gravações de campo reais, combinadas em mais de 1000 paisagens sonoras únicas e entrelaçadas ao acaso enquanto você ouve — sem loop fixo, apenas uma mistura suave que te acompanha a noite toda.",
+      "Pague uma vez. Sem assinatura. Sem anúncios. Sem conta. Funciona totalmente offline.",
+      "Cenas prontas para dormir, foco profundo, foco em TDAH, estudo, relaxamento, meditação, alívio de zumbido, sono de bebê, viagem e mais. Salve e nomeie suas próprias.",
+      "Um temporizador de sono que desaparece suavemente em vez de cortar, além de um despertar ao nascer do sol que se eleva em canto de pássaros para saudar a manhã.",
+      "FOCO & TDAH —",
+      "Ruído marrom e rosa constante pode acalmar uma mente ocupada e ajudá-lo a manter-se na tarefa. Cenas de foco construídas para trabalho, estudo e TDAH.",
+      "Um design sereno, escuro-primeiro com movimento lento e respiratório e temas calmantes. Reprodução em segundo plano, controles de tela bloqueada e AirPlay, e um modo de cabeceira imersivo que escurece ao som.",
+      "Desbloqueie o Sereno Pro uma vez para todos os sons, camadas ilimitadas, todas as cenas, controles de ajuste e mais — seu para sempre."
+     ],
+     "live_updated": "2026-10-18",
+     "live_version": "1.1.1",
+     "same": false
+    },
+    "zh-Hans": {
+     "added": [
+      "Sereno 将您的手机变成用于睡眠、专注与放松的声音机。雨声、海浪、风声、火焰等均为实地录音,融合成 1000 多种独特的音景,并在您聆听时随机重新编排,因此您不会听到固定的循环。",
+      "无广告。无需账户。完全离线使用。",
+      "为睡眠、深度专注、学习、放松、冥想、自然、阅读、旅行等准备的现成场景。可保存您喜爱的混音。",
+      "睡眠计时器会柔和地逐渐降低音量,而不是突然停止;日出唤醒会在您设定的时间渐渐带入鸟鸣声。",
+      "专注 —",
+      "稳定的棕色噪音和粉色噪音为工作、阅读和学习提供平稳的背景声,并配有专门的专注场景。",
+      "为宁静而设计 —",
+      "宁静的深色设计,搭配缓慢柔和的动效与淡雅的配色主题。支持后台播放、锁屏控制,以及可调暗屏幕亮度的全屏夜间视图。",
+      "部分声音、场景和功能需通过一次性 App 内购买解锁。"
+     ],
+     "dropped": [
+      "Sereno 将您的手机变成高端的声音机器,用于睡眠、专注和宁静。雨声、海浪、风声、火焰等均为实地录音,融合成 1000 多种独特的音景,并在您聆听时随机交织——没有固定循环,只有温柔的混音,伴您度过漫漫长夜。",
+      "一次性购买。无订阅。无广告。无账户。完全离线工作。",
+      "为睡眠、深度专注、ADHD 专注、学习、放松、冥想、耳鸣缓解、婴儿睡眠、旅行等准备的场景。保存并命名您自己的场景。",
+      "一个柔和淡出的睡眠计时器,而不是突然停止,还有一个在鸟鸣中渐强的日出唤醒,迎接早晨。",
+      "专注与 ADHD —",
+      "稳定的棕色和粉色噪音可以平静忙碌的思绪,帮助您保持专注。专为工作、学习和 ADHD 设计的专注场景。",
+      "旨在感到宁静 —",
+      "一个宁静的、以黑暗为主的设计,具有缓慢的呼吸运动和宁静的主题。后台播放、锁屏和 AirPlay 控制,以及一个沉浸式床头模式,随着声音变暗。",
+      "一次解锁 Sereno Pro,获取所有声音、无限层、所有场景、调谐控制等——永远属于您。"
+     ],
+     "live_updated": "2026-10-18",
+     "live_version": "1.1.1",
+     "same": false
+    },
+    "zh-Hant": {
+     "added": [
+      "Sereno 將您的手機變成用於睡眠、專注與放鬆的音效機。雨聲、海浪、風聲、火焰等皆為實地錄音,融合成超過 1000 種獨特的音景,並在您聆聽時隨機重新編排,因此您不會聽到固定的循環。",
+      "無廣告。無需帳戶。完全離線使用。",
+      "為睡眠、深度專注、學習、放鬆、冥想、自然、閱讀、旅行等準備的現成場景。可儲存您喜愛的混音。",
+      "睡眠計時器會柔和地逐漸降低音量,而不是突然停止;日出喚醒會在您設定的時間漸漸帶入鳥鳴聲。",
+      "專注 —",
+      "穩定的棕色噪音與粉紅噪音為工作、閱讀與學習提供平穩的背景聲,並配有專屬的專注場景。",
+      "寧靜的深色設計,搭配緩慢柔和的動態與淡雅的配色主題。支援背景播放、鎖定畫面控制,以及可調暗螢幕亮度的全螢幕夜間檢視。",
+      "部分聲音、場景與功能需透過一次性 App 內購買解鎖。"
+     ],
+     "dropped": [
+      "Sereno 將您的手機變成高端的睡眠、專注和寧靜的音效機。雨聲、海浪、風聲、火焰等皆為實地錄音,融合成超過 1000 種獨特的音景,並在您聆聽時隨機交織——沒有固定循環,只有柔和的混音,伴您度過整個夜晚。",
+      "一次性購買。無需訂閱。無廣告。無需帳戶。完全離線運行。",
+      "為睡眠、深度專注、ADHD 專注、學習、放鬆、冥想、耳鳴緩解、嬰兒睡眠、旅行等準備的場景。保存並命名您自己的場景。",
+      "睡眠計時器會柔和地淡出而不是中斷,還有一個日出喚醒功能,伴隨著鳥鳴聲迎接早晨。",
+      "專注與 ADHD —",
+      "穩定的棕色和粉色噪音可以平靜繁忙的思緒,幫助您保持專注。專為工作、學習和 ADHD 設計的專注場景。",
+      "寧靜的、以黑色為主的設計,具有緩慢的呼吸運動和令人平靜的主題。背景播放、鎖屏和 AirPlay 控制,以及沉浸式床頭模式,隨著聲音變暗。",
+      "一次解鎖 Sereno Pro,即可獲得每種聲音、無限層次、所有場景、調整控制等——永遠屬於您。"
+     ],
+     "live_updated": "2026-10-18",
+     "live_version": "1.1.1",
+     "same": false
+    }
+   },
+   "status": "red"
+  },
+  "shotinbox": {
+   "blocked_terms": [],
+   "brands": [
+    "ShotInbox AI"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.4",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "snapport": {
+   "blocked_terms": [],
+   "brands": [
+    "Snapport 证件照·护照照",
+    "Snapport"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.11.4",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.11.4",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.11.4",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.11.4",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.11.4",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.11.4",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.11.4",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.11.4",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.11.4",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.11.4",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.11.4",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "snapportlite": {
+   "blocked_terms": [],
+   "brands": [
+    "Snapport Lite"
+   ],
+   "live_updated": "2026-10-11",
+   "live_version": "1.0.6",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-11",
+     "live_version": "1.0.6",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "sononote": {
+   "blocked_terms": [],
+   "brands": [
+    "Sono Note"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.4.10",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.10",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.10",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.10",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.10",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.10",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.10",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.10",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.10",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.10",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.4.10",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "stayclock": {
+   "blocked_terms": [],
+   "brands": [
+    "Stay Clock"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.6",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "studydown": {
+   "blocked_terms": [],
+   "brands": [
+    "Studydown"
+   ],
+   "live_updated": "2026-10-08",
+   "live_version": "1.0.3",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.0.3",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-08",
+     "live_version": "1.0.3",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "tripbee": {
+   "blocked_terms": [],
+   "brands": [
+    "TripBee Pro",
+    "TripBee"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.8",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "tripbeelite": {
+   "blocked_terms": [],
+   "brands": [
+    "TripBee Lite"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.8",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.8",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "tripplanet": {
+   "blocked_terms": [],
+   "brands": [
+    "Trip Planet കുട്ടികളുടെ സാഹസം",
+    "Trip Planet বাচ্চাদের অভিযান",
+    "Trip Planet ਬੱਚਿਆਂ ਦੀ ਮੁਹਿੰਮ",
+    "Trip Planet viagem crianças",
+    "Trip Planet viaggio bambini",
+    "Trip Planet voyage enfants",
+    "Trip Planet குழந்தை சாகசம்",
+    "Trip Planet Cuti Keluarga",
+    "Trip Planet viagem miúdos",
+    "Trip Planet voyage enfant",
+    "Trip Planet બાળકોનું સાહસ",
+    "Trip Planet Kinderreisen",
+    "Trip Planet Liburan Anak",
+    "Trip Planet मुलांचे साहस",
+    "Trip Planet ପିଲାଙ୍କ ସାହସ",
+    "Trip Planet పిల్లల సాహసం",
+    "Trip Planet Trẻ Du Lịch",
+    "Trip Planet gyerekeknek",
+    "Trip Planet niños viaje",
+    "Trip Planet reizen kids",
+    "Trip Planet טיולי ילדים",
+    "Trip Planet بچوں کی مہم",
+    "Trip Planet dla dzieci",
+    "Trip Planet बाल यात्रा",
+    "Trip Planet ಮಕ್ಕಳ ಸಾಹಸ",
+    "Trip Planet za otroke",
+    "Trip Planet سفر أطفال",
+    "Trip Planet เที่ยวลูก",
+    "Trip Planet pre deti",
+    "Trip Planet pro děti",
+    "Trip Planet za djecu",
+    "Trip Planet 子ども旅行ゲーム",
+    "Trip Planet 아이 여행 게임",
+    "Trip Planet παιδιά",
+    "Trip Planet 亲子旅行游戏",
+    "Trip Planet 親子旅行遊戲",
+    "Trip Planet copii",
+    "Trip Planet Çocuk",
+    "Trip Planet nens",
+    "Trip Planet"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.6",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "unblurry": {
+   "blocked_terms": [],
+   "brands": [
+    "Unblurry Pro"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.13",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.13",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "wifiaid": {
+   "blocked_terms": [],
+   "brands": [
+    "WiFi Aid"
+   ],
+   "live_updated": "2026-10-12",
+   "live_version": "1.0.13",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.13",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.13",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "wifiaidlite": {
+   "blocked_terms": [],
+   "brands": [
+    "WiFi Aid Lite"
+   ],
+   "live_updated": "2026-10-12",
+   "live_version": "1.0.9",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-12",
+     "live_version": "1.0.9",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "wordmate": {
+   "blocked_terms": [],
+   "brands": [
+    "Wordmate"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.9",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.9",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.9",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "wordmatelite": {
+   "blocked_terms": [],
+   "brands": [
+    "Wordmate Lite Seminit Sehari",
+    "Wordmate Lite 5 Kata Sehari",
+    "Wordmate Lite 5 từ mỗi ngày",
+    "Wordmate Lite วันละ 5 คํา",
+    "Wordmate Lite 每天五个单词",
+    "Wordmate Lite 每天五個單字",
+    "Wordmate Lite 하루 5단어",
+    "Wordmate Lite 1日5単語",
+    "Wordmate Lite"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.6",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "fr-FR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.6",
+     "same": true
+    }
+   },
+   "status": "green"
+  },
+  "zipbox": {
+   "blocked_terms": [],
+   "brands": [
+    "Zipbox 압축풀기",
+    "Zipbox 解压缩",
+    "Zipbox 解壓縮",
+    "Zipbox 解凍",
+    "Zipbox"
+   ],
+   "live_updated": "2026-10-09",
+   "live_version": "1.0.4",
+   "locales": {
+    "de-DE": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "en-GB": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "en-US": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "es-ES": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "ja": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "ko": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "pt-BR": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "zh-Hans": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    },
+    "zh-Hant": {
+     "added": [],
+     "dropped": [],
+     "live_updated": "2026-10-09",
+     "live_version": "1.0.4",
+     "same": true
+    }
+   },
+   "status": "green"
+  }
+ },
+ "countries": [
+  "us",
+  "jp",
+  "tw",
+  "kr",
+  "de",
+  "br",
+  "fr",
+  "es",
+  "cn",
+  "gb"
+ ],
+ "counts": {
+  "green": 53,
+  "red": 2,
+  "unknown": 0
+ },
+ "errors": [],
+ "generated_at": "2026-10-22T16:25:25Z",
+ "schema": "growth.store-copy-drift/v1"
+}

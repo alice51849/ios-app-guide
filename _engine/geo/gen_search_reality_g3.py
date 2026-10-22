@@ -37,6 +37,7 @@ for entry in (HERE, ROOT / "social"):
 
 import android_play  # noqa: E402
 import gw_campaign  # noqa: E402
+import store_copy_drift  # noqa: E402
 import first_party_disclosure  # noqa: E402
 from app_store_storefronts import validated_app_store_url  # noqa: E402
 from site_config import PUBLIC_SITE  # noqa: E402
@@ -939,6 +940,8 @@ def page_problems(spec: dict, source: str, pages: Path | None = None) -> list[st
                 problems.append(f"{relative}: internal link target missing {target}")
             elif re.search(r'<meta[^>]+name="robots"[^>]+noindex', path.read_text(encoding="utf-8", errors="ignore")):
                 problems.append(f"{relative}: internal link target is noindex {target}")
+    # 倉儲文案與線上商店不一致的款（store_copy_drift 紅燈）：同一句有品牌名＋商店已不列的功能 → 擋
+    problems += store_copy_drift.html_page_problems(source, label=f"{relative}: ")
     return problems
 
 

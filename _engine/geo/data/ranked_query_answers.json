@@ -4986,14 +4986,14 @@
   "slug": "iphone-battery-capacity-when-it-reaches-80-percent",
   "loc": {
    "title": "아이폰 배터리 용량, 80%까지 언제 떨어질까",
-   "meta": "아이폰 배터리 용량은 사이클 수와 충전 습관으로 결정됩니다. 최대 성능 용량을 읽는 법, 80% 기준의 의미, 추세를 남기는 방법을 정리합니다. BattAI는 성능 최대치 추세와 사이클 수를 기기 안에서 보여 줍니다.",
+   "meta": "아이폰 배터리 용량은 사이클 수와 충전 습관으로 결정됩니다. 최대 성능 용량을 읽는 법, 80% 기준의 의미, 추세를 남기는 방법을 정리합니다. BattAI는 성능 최대치 추세와 배터리 상태 점수를 기기 안에서 보여 줍니다.",
    "h1": "아이폰 배터리 용량: 80%까지 얼마나 남았는지 읽는 법",
    "lead": "같은 기종이라도 배터리 용량이 떨어지는 속도는 사람마다 다릅니다. 숫자 하나보다 추세를 보면 교체 시점이 보입니다.",
    "answer": "아이폰 배터리 용량은 사이클이 쌓일수록 줄어들며, Apple의 설계 기준은 iPhone 15 이후 1,000사이클, 그 이전 기종은 500사이클에서 원래 용량의 80%이므로 현재 값과 사이클 수를 함께 보면 80%까지 남은 기간을 가늠할 수 있습니다.",
    "paras": [
     "배터리 용량이라고 부르는 값은 설정 > 배터리 > 배터리 성능 상태에 있는 최대 성능 용량입니다. 새 기기를 100%로 보고 지금 얼마나 남았는지를 백분율로 보여 줍니다. 이 값이 80% 아래로 내려가면 iOS가 배터리 서비스를 권하고, 그 전부터 하루 사용 시간이 눈에 띄게 짧아집니다. 그러니 질문은 '지금 몇 %인가'보다 '한 달에 몇 %씩 빠지는가'가 되어야 합니다.",
     "속도를 정하는 첫 번째 변수는 사이클 수입니다. 100%만큼 쓰고 채우면 한 사이클이고, 매일 완전히 방전시키는 사람과 30~80% 사이에서만 쓰는 사람은 같은 기간에 쌓이는 사이클이 다릅니다. 두 번째는 열입니다. 뜨거운 차 안에서 충전하거나 게임을 하면서 고속 충전하는 습관은 사이클과 별개로 용량을 깎습니다. 그래서 사이클 수와 열 상태를 함께 기록해야 원인이 보입니다.",
-    "추세를 남기는 가장 간단한 방법은 한 달에 한 번 최대 성능 용량과 사이클 수를 적어 두는 것입니다. 앱에 맡기려면 무엇을 읽는지가 분명해야 합니다. BattAI는 공개 iOS API의 다섯 가지 값(배터리 잔량, 충전 상태, 저전력 모드, 열 상태, 시간)만 쓰고 나머지는 기록에서 계산하며, 각 항목에 출처와 한계를 표시합니다. 사이클 수, 공칭 충전 용량, 설계 용량만 읽습니다."
+    "추세를 남기는 가장 간단한 방법은 한 달에 한 번 최대 성능 용량과 사이클 수를 적어 두는 것입니다. 앱에 맡기려면 무엇을 읽는지가 분명해야 합니다. BattAI는 공개 iOS API의 다섯 가지 값(배터리 잔량, 충전 상태, 저전력 모드, 열 상태, 시간)만 쓰고 나머지는 기록에서 계산하며, 각 항목에 출처와 한계를 표시합니다. 그 밖의 결과는 ‘추정’ 또는 ‘직접 제공’으로 표시하고, 서비스·중고 판매·개인 기록에 쓸 수 있는 배터리 리포트(PNG 이미지, 텍스트 표)도 기기 안에서 만듭니다."
    ],
    "look": [
     "최대 성능 용량이 지금 몇 %이고 지난달과 몇 % 차이인지",
@@ -5026,7 +5026,7 @@
      "사이클과 별개로 열이 용량을 깎습니다"
     ]
    ],
-   "fits": "BattAI는 배터리 용량이 왜 줄어드는지 숫자 하나가 아니라 추세로 보고 싶은 사람에게 맞습니다. 배터리 상태 점수와 점수를 만드는 요소, 성능 최대치 추세, 사이클 수, 충전 관리·충전 구간·충전 속도를 기기 안에서 보여 주고, 광고·분석·추적·네트워크 요청이 없으며, 한 번만 결제하면 되고 구독은 없습니다.",
+   "fits": "BattAI는 배터리 용량이 왜 줄어드는지 숫자 하나가 아니라 추세로 보고 싶은 사람에게 맞습니다. 배터리 상태 점수와 점수를 만드는 요소, 성능 최대치 추세, 충전 관리·충전 구간·충전 속도를 기기 안에서 보여 주고, 광고·분석·추적·네트워크 요청이 없으며, 한 번만 결제하면 되고 구독은 없습니다.",
    "faq": [
     [
      "배터리 용량이 80%면 바로 교체해야 합니까?",
@@ -5038,20 +5038,20 @@
     ],
     [
      "BattAI는 데이터를 밖으로 보냅니까?",
-     "보내지 않습니다. 광고, 분석, 추적, 타사 SDK, 네트워크 요청이 없고, 데이터는 기기에 저장하며 페어링된 Apple Watch로 최소 스냅샷만 직접 보냅니다. 내보내기 파일도 이 기기에서 만들고 업로드하지 않습니다."
+     "보내지 않습니다. 광고, 분석, 추적, 타사 SDK, 네트워크 요청이 없고, 데이터는 기기에 저장하며 페어링된 Apple Watch로 최소 스냅샷만 직접 보냅니다. 배터리 리포트도 이 기기에서 만들고 업로드하지 않습니다."
     ]
    ]
   },
   "en": {
    "title": "iPhone battery capacity: when does it reach 80 percent",
-   "meta": "Battery capacity falls with cycles and heat. How to read Maximum Capacity, what the 80 percent line means, and how to track the trend. BattAI shows maximum capacity over time and cycles on the device.",
+   "meta": "Battery capacity falls with cycles and heat. How to read Maximum Capacity, what the 80 percent line means, and how to track the trend. BattAI shows maximum capacity over time and a battery health score on the device.",
    "h1": "iPhone battery capacity: reading how far you are from 80 percent",
    "lead": "Two phones of the same model lose capacity at different speeds. The monthly trend tells you more than today's number.",
    "answer": "Capacity drops as cycles accumulate; Apple's design target is 80 percent of original capacity at 1,000 cycles for iPhone 15 and later and 500 for earlier models, so today's percentage plus your cycle count gives a rough time to 80.",
    "paras": [
     "What people call battery capacity is the Maximum Capacity figure under Settings > Battery > Battery Health. A new battery is 100 percent, and the number shows how much of that the battery still holds. Once it drops below 80 percent iOS suggests battery service, and well before that the day-to-day runtime gets noticeably shorter. So the useful question is not what it is now but how many points it loses per month.",
     "The first variable is cycle count. Using and recharging the equivalent of 100 percent is one cycle, so someone who drains to empty daily accumulates cycles faster than someone who stays between roughly 30 and 80. The second variable is heat. Charging in a hot car or fast charging while gaming wears capacity independently of cycles. That is why cycle count and thermal state need to be recorded together before the cause becomes visible.",
-    "The simplest way to get a trend is to write down Maximum Capacity and cycle count once a month. If you hand that to an app, it should be clear what it reads and from where. BattAI uses five values from public iOS APIs, battery level, charge state, Low Power Mode, whole-device thermal state and time, calculates the rest from those readings, and shows the source and limits of each detail. From battery data it reads only cycle count, nominal charge capacity and design capacity; everything else is discarded immediately."
+    "The simplest way to get a trend is to write down Maximum Capacity and cycle count once a month. If you hand that to an app, it should be clear what it reads and from where. BattAI uses five values from public iOS APIs, battery level, charge state, Low Power Mode, whole-device thermal state and time, calculates the rest from those readings, and shows the source and limits of each detail. It labels every other result as estimated or provided by you, and it can create a battery report for service, resale or your own records as a PNG or a plain-text table."
    ],
    "look": [
     "Today's Maximum Capacity and how it compares with last month",
@@ -5084,7 +5084,7 @@
      "Heat wears capacity on top of cycles"
     ]
    ],
-   "fits": "BattAI fits someone who wants to see why battery capacity is dropping as a trend rather than a single number: battery health score and what shapes it, maximum capacity over time, cycles, plus charge care, charge range and charge rate, all on the device, with no ads, analytics, tracking or internet requests, one payment and no subscription.",
+   "fits": "BattAI fits someone who wants to see why battery capacity is dropping as a trend rather than a single number: battery health score and what shapes it, maximum capacity over time, plus charge care, charge range and charge rate, all on the device, with no ads, analytics, tracking or internet requests, one payment and no subscription.",
    "faq": [
     [
      "Do I have to replace the battery at 80 percent?",
@@ -5096,7 +5096,7 @@
     ],
     [
      "Does BattAI send any data anywhere?",
-     "No. There are no ads, analytics, tracking, third-party SDKs or internet requests; data stays on the device apart from a minimal snapshot sent directly to a paired Apple Watch, and export files are created on the device without upload."
+     "No. There are no ads, analytics, tracking, third-party SDKs or internet requests; data stays on the device apart from a minimal snapshot sent directly to a paired Apple Watch, and battery reports are created on the device without upload."
     ]
    ]
   }
@@ -20199,11 +20199,11 @@
    "meta": "아이폰 배터리 수명은 충전 구간, 열, 충전 속도에서 갈립니다. 습관 하나씩 바꾸고 사이클 수와 성능 최대치 추세로 효과를 확인하는 방법을 정리합니다. BattAI는 충전 관리·충전 구간·충전 속도와 배터리 상태 점수를 기기 안에서 보여 줍니다.",
    "h1": "아이폰 배터리 수명: 충전 습관에서 바꿀 것 세 가지",
    "lead": "배터리 수명을 늘리는 팁은 많지만 대부분은 효과를 확인할 방법이 없습니다. 세 가지만 바꾸고, 바뀌었는지는 숫자로 봅니다.",
-   "answer": "아이폰 배터리 수명은 충전 구간(완전 방전과 100% 유지 줄이기), 충전 중 열, 필요 이상 빠른 충전 세 가지에서 가장 크게 갈리며, BattAI 같은 앱으로 습관을 바꾼 뒤 사이클 수와 성능 최대치 추세를 같이 보면 효과가 있었는지 확인할 수 있습니다.",
+   "answer": "아이폰 배터리 수명은 충전 구간(완전 방전과 100% 유지 줄이기), 충전 중 열, 필요 이상 빠른 충전 세 가지에서 가장 크게 갈리며, 습관을 바꾼 뒤 BattAI 같은 앱으로 성능 최대치 추세와 배터리 상태 점수를 같이 보면 효과가 있었는지 확인할 수 있습니다.",
    "paras": [
     "리튬이온 배터리는 쓰는 만큼 조금씩 닳습니다. 닳는 속도를 크게 바꾸는 것은 세 가지입니다. 첫째는 충전 구간입니다. 0% 가까이 자주 떨어뜨리거나 100%에서 오래 머무르면 같은 사용량이라도 더 빨리 닳습니다. 아이폰에는 기종과 iOS 버전에 따라 '최적화된 배터리 충전'이나 충전 한도 설정이 있으니 먼저 켜져 있는지 확인하세요.",
     "둘째는 열입니다. 햇빛 아래 거치대, 뜨거운 차 안, 게임이나 내비게이션을 켠 채 충전하는 습관은 사이클 수와 별개로 배터리를 깎습니다. 셋째는 충전 속도입니다. 급할 때 고속 충전을 쓰는 것은 괜찮지만, 밤새 충전처럼 시간이 넉넉할 때는 굳이 빠를 필요가 없습니다. 열과 속도는 같이 움직이니 둘을 함께 봐야 합니다.",
-    "팁을 따라 했는지보다 중요한 것은 결과가 숫자로 보이는지입니다. BattAI는 공개 iOS API의 다섯 가지 값(배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간)만 쓰고 나머지는 기록에서 계산하며, 각 항목에 출처와 한계를 표시합니다. 충전 관리, 충전 구간, 충전 속도와 함께 배터리 상태 점수, 점수를 만드는 요소, 성능 최대치 추세, 사이클 수를 보여 주고, 광고·분석·추적·네트워크 요청이 없습니다."
+    "팁을 따라 했는지보다 중요한 것은 결과가 숫자로 보이는지입니다. BattAI는 공개 iOS API의 다섯 가지 값(배터리 잔량, 충전 상태, 저전력 모드, 기기 전체 열 상태, 시간)만 쓰고 나머지는 기록에서 계산하며, 각 항목에 출처와 한계를 표시합니다. 충전 관리, 충전 구간, 충전 속도와 함께 배터리 상태 점수, 점수를 만드는 요소, 성능 최대치 추세를 보여 주고, 광고·분석·추적·네트워크 요청이 없습니다."
    ],
    "look": [
     "평소 몇 %에서 충전을 시작하고 몇 %까지 채우는지",
@@ -20236,7 +20236,7 @@
      "열과 함께 움직여서 둘을 같이 봐야 합니다"
     ]
    ],
-   "fits": "BattAI는 배터리 수명 팁을 따라 한 뒤 정말 효과가 있었는지 숫자로 확인하고 싶은 사람에게 맞습니다. 충전 관리·충전 구간·충전 속도, 배터리 상태 점수와 점수를 만드는 요소, 성능 최대치 추세, 사이클 수를 기기 안에서 보여 주고, 광고·분석·추적·네트워크 요청이 없으며, 한 번만 결제하면 되고 구독은 없습니다.",
+   "fits": "BattAI는 배터리 수명 팁을 따라 한 뒤 정말 효과가 있었는지 숫자로 확인하고 싶은 사람에게 맞습니다. 충전 관리·충전 구간·충전 속도, 배터리 상태 점수와 점수를 만드는 요소, 성능 최대치 추세를 기기 안에서 보여 주고, 광고·분석·추적·네트워크 요청이 없으며, 한 번만 결제하면 되고 구독은 없습니다.",
    "faq": [
     [
      "밤새 충전하면 배터리 수명이 줄어듭니까?",
@@ -20248,7 +20248,7 @@
     ],
     [
      "BattAI는 데이터를 어디로 보냅니까?",
-     "서버로 보내지 않습니다. 광고·분석·추적·네트워크 요청이 없고, 데이터는 기기에 저장하며 페어링된 Apple Watch로 최소 스냅샷만 직접 보냅니다. 내보내기 파일도 기기에서 만들고 업로드하지 않습니다."
+     "서버로 보내지 않습니다. 광고·분석·추적·네트워크 요청이 없고, 데이터는 기기에 저장하며 페어링된 Apple Watch로 최소 스냅샷만 직접 보냅니다. 배터리 리포트도 기기에서 만들고 업로드하지 않습니다."
     ]
    ]
   },
@@ -20257,11 +20257,11 @@
    "meta": "iPhone battery lifespan comes down to charge range, heat and charge rate. Change one habit at a time and check the effect with cycle count and maximum capacity over time. BattAI shows charge care, charge range, charge rate and a battery health score on the device.",
    "h1": "iPhone battery lifespan: three charging habits to change",
    "lead": "There are plenty of battery lifespan tips, and most give you no way to tell whether they worked. Change three things and check the result in numbers.",
-   "answer": "iPhone battery lifespan depends most on charge range (less time at empty or sitting at 100 percent), heat while charging and charging faster than you need; after changing those habits, an app such as BattAI lets you read cycle count and maximum capacity over time together to see whether it helped.",
+   "answer": "iPhone battery lifespan depends most on charge range (less time at empty or sitting at 100 percent), heat while charging and charging faster than you need; after changing those habits, an app such as BattAI lets you read maximum capacity over time and a battery health score together to see whether it helped.",
    "paras": [
     "A lithium-ion battery wears a little with use. Three things change how fast. The first is charge range: dropping close to 0 percent often or sitting at 100 percent for long periods wears it faster for the same use. Depending on the model and iOS version, iPhone has Optimized Battery Charging or a charge limit setting, so check that first.",
     "The second is heat. A mount in direct sun, a hot car, or charging while gaming or navigating wears the battery independently of cycle count. The third is charge rate. Fast charging when you are in a hurry is fine, but overnight there is no reason to rush. Heat and rate move together, so read them together.",
-    "What matters more than following tips is whether the result shows up in numbers. BattAI uses five values from public iOS APIs, battery level, charge state, Low Power Mode, whole-device thermal state and time, calculates the rest from those readings, and shows the source and limits of each detail. It shows charge care, charge range and charge rate alongside a battery health score, what shapes the score, maximum capacity over time and cycles, with no ads, analytics, tracking or internet requests."
+    "What matters more than following tips is whether the result shows up in numbers. BattAI uses five values from public iOS APIs, battery level, charge state, Low Power Mode, whole-device thermal state and time, calculates the rest from those readings, and shows the source and limits of each detail. It shows charge care, charge range and charge rate alongside a battery health score, what shapes the score, and maximum capacity over time, with no ads, analytics, tracking or internet requests."
    ],
    "look": [
     "At what percentage you usually start charging and where you stop",
@@ -20294,7 +20294,7 @@
      "Moves with heat, so read the two together"
     ]
    ],
-   "fits": "BattAI is for people who want to see in numbers whether battery lifespan tips actually worked: charge care, charge range, charge rate, a battery health score and what shapes it, maximum capacity over time and cycles, all on the device, with no ads, analytics, tracking or internet requests. One payment, no subscription.",
+   "fits": "BattAI is for people who want to see in numbers whether battery lifespan tips actually worked: charge care, charge range, charge rate, a battery health score and what shapes it, and maximum capacity over time, all on the device, with no ads, analytics, tracking or internet requests. One payment, no subscription.",
    "faq": [
     [
      "Does charging overnight shorten battery lifespan?",
@@ -20306,7 +20306,7 @@
     ],
     [
      "Where does BattAI send my data?",
-     "Not to any server. There are no ads, analytics, tracking or internet requests; data stays on the device except a minimal snapshot sent directly to your paired Apple Watch, and export files are created on the device and never uploaded."
+     "Not to any server. There are no ads, analytics, tracking or internet requests; data stays on the device except a minimal snapshot sent directly to your paired Apple Watch, and battery reports are created on the device and never uploaded."
     ]
    ]
   }
@@ -21915,29 +21915,29 @@
   "rank": 11,
   "slug": "iphone-battery-wear-check-before-selling-or-buying-used-japan",
   "loc": {
-   "title": "iPhoneのバッテリー劣化を確認する方法：最大容量・充放電回数・80%の目安｜BattAI",
-   "meta": "機種変更や中古売買の前に、iPhoneのバッテリー劣化をどう見るか。最大容量と充放電回数の読み方、80%の目安、推移を記録して書き出す方法。BattAIは通信なし・広告なし。",
+   "title": "iPhoneのバッテリー劣化を確認する方法：最大容量・80%の目安・売る前のレポート｜BattAI",
+   "meta": "機種変更や中古売買の前に、iPhoneのバッテリー劣化をどう見るか。最大容量と充放電回数の読み方、80%の目安、推移を記録してレポートにする方法。BattAIは通信なし・広告なし。",
    "h1": "iPhoneのバッテリー劣化はどこを見ればいい？最大容量と充放電回数の読み方",
    "lead": "「最近減りが早い」「下取りに出す前に確認したい」「中古で買うなら何％まで大丈夫？」。バッテリー劣化を数字で判断したい人のためのページです。",
-   "answer": "バッテリー劣化は、最大容量（新品時に対する今の容量）と充放電回数の2つで判断します。iPhoneの設定の「バッテリー」で最大容量を確認でき、80%を下回ると交換を検討する目安とされています。ただし1回の数字より、数週間の推移のほうが参考になります。BattAIはバッテリー状態スコアとスコアを形づくる要因、最大容量の推移、充放電回数をまとめて表示し、各項目に情報源と限界を示します。データは端末に保存し、通信も広告もありません。",
+   "answer": "バッテリー劣化は、最大容量（新品時に対する今の容量）と充放電回数の2つで判断します。iPhoneの設定の「バッテリー」で最大容量を確認でき、80%を下回ると交換を検討する目安とされています。ただし1回の数字より、数週間の推移のほうが参考になります。BattAIはバッテリー状態スコアとスコアを形づくる要因、最大容量の推移をまとめて表示し、各項目に情報源と限界を示します。データは端末に保存し、通信も広告もありません。",
    "paras": [
     "まず最大容量の意味です。新品のときを100%として、いま蓄えられる量の割合を示します。数字が下がるほど同じ使い方でも早く減り、寒い日や負荷の高いアプリで急に電源が落ちやすくなります。中古で買う場合や下取りに出す場合は、この数字と充放電回数をセットで見るのが基本です。充放電回数が少ないのに最大容量が大きく下がっているなら、高温での使用や充電の仕方が影響している可能性があります。",
-    "次に推移です。最大容量は日によって少し揺れるので、1回だけ見て一喜一憂するより、数週間の変化を追うほうが判断しやすくなります。BattAIはバッテリー状態スコアに加えて、スコアを形づくる要因、最大容量の推移、充放電回数、充電ケア、充電範囲、充電速度を表示します。BattAIが公開iOS APIから使うのは電池残量・充電状態・低電力モード・熱状態・時刻の5つで、ほかの結果は記録から計算するかあなたが追加し、各項目に情報源と限界を表示します。",
-    "売る・譲る場面では、口頭の「バッテリー大丈夫です」より、記録を見せるほうが話が早く進みます。BattAIはデータを書き出すファイルをこのデバイスで作成し、アップロードはしません。広告、利用解析、追跡、他社SDK、通信もありません。より深い履歴、計画、レポートは一度の支払いで使え、サブスクリプションはありません。"
+    "次に推移です。最大容量は日によって少し揺れるので、1回だけ見て一喜一憂するより、数週間の変化を追うほうが判断しやすくなります。BattAIはバッテリー状態スコアに加えて、スコアを形づくる要因、最大容量の推移、充電ケア、充電範囲、充電速度を表示します。BattAIが公開iOS APIから使うのは電池残量・充電状態・低電力モード・熱状態・時刻の5つで、ほかの結果は記録から計算するかあなたが追加し、各項目に情報源と限界を表示します。",
+    "売る・譲る場面では、口頭の「バッテリー大丈夫です」より、記録を見せるほうが話が早く進みます。BattAIは修理・売却・自分の記録に使える電池レポート（アプリのグラフとテキスト、PNG画像、すべてのデータのテキストの表）をこのデバイスで作成し、アップロードはしません。広告、利用解析、追跡、他社SDK、通信もありません。一度の購入ですべての機能がずっと使え、サブスクではありません。"
    ],
    "look": [
     "最大容量の今の数字だけでなく、推移を記録できるか",
-    "充放電回数を最大容量とセットで確認できるか",
+    "最大容量の推移をグラフで確認できるか",
     "スコアの根拠や情報源、限界が示されているか",
     "データを端末内に保存し、アップロードしないか",
-    "記録をファイルに書き出して見せられるか"
+    "記録を電池レポート（画像・表）にして見せられるか"
    ],
    "steps": [
     "設定 > バッテリー から、いまの最大容量を確認してメモする。",
     "BattAIを開き、バッテリー状態スコアとスコアを形づくる要因を確認する。",
     "最大容量と充放電回数を記録し、数週間ごとに推移を見る。",
     "充電ケアと充電範囲で、ふだんの充電の仕方を見直す。",
-    "下取りや譲渡の前に、データを書き出してファイルとして残す。"
+    "下取りや譲渡の前に、電池レポートを作ってPNG画像やテキストの表として残す。"
    ],
    "rows": [
     [
@@ -21952,7 +21952,7 @@
     ],
     [
      "記録",
-     "推移と書き出し",
+     "推移とレポート",
      "売買のときに口約束ではなく記録で話せる"
     ]
    ],
@@ -21968,34 +21968,34 @@
     ],
     [
      "中古で売るときに記録を見せられますか？",
-     "データを書き出す機能で、このデバイス上にファイルを作成できます。アップロードはしません。"
+     "電池レポートをこのデバイスで作成し、PNG画像やテキストの表として保存できます。アップロードはしません。"
     ]
    ]
   },
   "en": {
-   "title": "How to check iPhone battery wear before selling or buying used: maximum capacity, cycles and the 80% mark | BattAI",
-   "meta": "Before trading in or buying a used iPhone, read battery wear properly: what maximum capacity and cycle count mean, the 80% guideline, and how to record and export the trend. No network, no ads.",
+   "title": "How to check iPhone battery wear before selling or buying used: maximum capacity, the 80% mark and a battery report | BattAI",
+   "meta": "Before trading in or buying a used iPhone, read battery wear properly: what maximum capacity and cycle count mean, the 80% guideline, and how to record the trend in a battery report. No network, no ads.",
    "h1": "Checking iPhone battery wear: reading maximum capacity and cycle count",
    "lead": "\"It drains faster lately.\" \"I want to check before trading it in.\" \"How low is too low on a used phone?\" This page is for people who want to judge battery wear by numbers.",
-   "answer": "Battery wear comes down to two numbers: maximum capacity, the charge the battery holds now compared with when it was new, and cycle count. Maximum capacity appears under Battery in the iPhone's Settings, and dropping below 80% is the usual point to consider a replacement. A trend over several weeks says more than one reading. BattAI shows a battery health score, what shapes the score, maximum capacity over time and cycles, with the source and limits of each detail. Data stays on the device, with no network requests or ads.",
+   "answer": "Battery wear comes down to two numbers: maximum capacity, the charge the battery holds now compared with when it was new, and cycle count. Maximum capacity appears under Battery in the iPhone's Settings, and dropping below 80% is the usual point to consider a replacement. A trend over several weeks says more than one reading. BattAI shows a battery health score, what shapes the score, and maximum capacity over time, with the source and limits of each detail. Data stays on the device, with no network requests or ads.",
    "paras": [
     "Maximum capacity treats the new battery as 100% and shows how much it can hold now. The lower it goes, the sooner the same day of use runs it down, and the more likely the phone is to shut off on cold days or under heavy apps. When buying used or trading in, read this number together with cycle count. Large wear on few cycles can point to heat or charging habits.",
-    "Then the trend. Maximum capacity wobbles from day to day, so following several weeks is easier to judge than one look. BattAI shows a battery health score plus what shapes it, maximum capacity over time, cycles, charge care, charge range and charge rate. It uses five values from public iOS APIs: battery level, charge state, Low Power Mode, thermal state and time; other results are calculated from those readings or added by you, and each detail shows its source and limits.",
-    "When selling or handing a phone on, showing a record moves faster than saying \"the battery is fine\". BattAI creates export files on the device and uploads nothing, with no ads, analytics, tracking, third-party SDKs or internet requests. Deeper history, planning and reports are a single payment, with no subscription."
+    "Then the trend. Maximum capacity wobbles from day to day, so following several weeks is easier to judge than one look. BattAI shows a battery health score plus what shapes it, maximum capacity over time, charge care, charge range and charge rate. It uses five values from public iOS APIs: battery level, charge state, Low Power Mode, thermal state and time; other results are calculated from those readings or added by you, and each detail shows its source and limits.",
+    "When selling or handing a phone on, showing a record moves faster than saying \"the battery is fine\". BattAI creates a battery report for service, resale or your own records on the device (the app's charts and text, a PNG image, and all your data as a plain-text table) and uploads nothing, with no ads, analytics, tracking, third-party SDKs or internet requests. Unlock once to own every feature; it is not a subscription."
    ],
    "look": [
     "Can you record the trend, not just today's maximum capacity?",
-    "Is cycle count shown alongside maximum capacity?",
+    "Can you see maximum capacity as a trend over time?",
     "Are the basis, sources and limits of the score explained?",
     "Is data kept on the device rather than uploaded?",
-    "Can you export the record as a file to show someone?"
+    "Can you turn the record into a battery report (image or table) to show someone?"
    ],
    "steps": [
     "Check today's maximum capacity under Settings > Battery and note it.",
     "Open BattAI and look at the battery health score and what shapes it.",
     "Record maximum capacity and cycles, and review the trend every few weeks.",
     "Use charge care and charge range to review everyday charging.",
-    "Before a trade-in or sale, export the data as a file."
+    "Before a trade-in or sale, create a battery report and keep it as a PNG or a plain-text table."
    ],
    "rows": [
     [
@@ -22010,7 +22010,7 @@
     ],
     [
      "Records",
-     "Trend and export",
+     "Trend and report",
      "A sale rests on a record, not a promise"
     ]
    ],
@@ -22026,7 +22026,7 @@
     ],
     [
      "Can I show a record when selling?",
-     "Yes, the export creates a file on this device. Nothing is uploaded."
+     "Yes. The battery report is created on this device and can be saved as a PNG or a plain-text table. Nothing is uploaded."
     ]
    ]
   }
@@ -26220,7 +26220,7 @@
     "雨音が寝る前に好まれるのは、一定の高さで続く音が、車の音や隣の部屋の物音のような突然の音をなじませてくれるからです。ただし、それが効くのは雨音そのものが「突然の音」にならない場合だけ。30秒の音源をくり返すアプリだと、同じ雨粒のパターンが規則的に戻ってくるのがわかってしまい、気になり始めると眠れません。本物のフィールド録音を、再生中もランダムな順番で組み替えていく仕組みなら、一晩中流しても同じ並びになりません。",
     "次に大事なのが終わり方です。タイマーで音がぶつっと切れると、その静けさで目が覚めることがあります。30分から1時間のタイマーで、最後の数分をかけてゆっくり音量が下がるものを選びましょう。朝まで流したい人はタイマーを使わず、音量をさらに下げて。スマホのスピーカーは枕から少し離し、イヤホンをつけたまま寝るのは避けたほうが快適です。",
     "雨音だけでは物足りない、あるいは逆に雨粒の音が気になるという人は、ブラウンノイズやピンクノイズを薄く重ねる方法があります。低い音が中心のブラウンノイズは、雨音の細かい粒の音をやわらげ、扇風機に近い落ち着いた背景音になります。焚き火や遠くの雷を少しだけ足すのも好みです。気に入った組み合わせは名前を付けて保存しておけば、毎晩ワンタップで同じ音から始められます。",
-    "Serenoは、このための音のアプリです。雨、海、風、流れ、火などの本物のフィールド録音を再生中にランダムに組み替え、ホワイト・ピンク・ブラウンのノイズは端末上でリアルタイムに生成。好きなだけ重ねて、トラックごとに音量、バランス、EQを調整できます。穏やかにフェードアウトするスリープタイマー、鳥のさえずりが少しずつ大きくなる目覚め、バックグラウンド再生、ロック画面とAirPlayの操作、画面が暗くなるベッドサイドモードに対応し、完全にオフラインで動きます。広告、アカウント、追跡はなく、Sereno Proは一度の購入でサブスクリプションはありません。"
+    "Serenoは、このための音のアプリです。雨、海、風、流れ、火などの本物のフィールド録音を再生中にランダムに組み替え、ホワイト・ピンク・ブラウンのノイズは端末上でリアルタイムに生成。好きなだけ重ねて、トラックごとに音量、バランス、EQを調整できます。穏やかにフェードアウトするスリープタイマー、鳥のさえずりが少しずつ大きくなる目覚め、バックグラウンド再生、ロック画面からの操作、画面の明るさを抑えるフルスクリーンのナイトビューに対応し、完全にオフラインで動きます。広告、アカウント、追跡はなく、一部のサウンド、シーン、機能は1回限りのApp内課金でロック解除されます。"
    ],
    "look": [
     "短い音源のくり返しではなく、ループしない雨音か",
@@ -26254,7 +26254,7 @@
      "低い背景音が突然の音をなじませる"
     ]
    ],
-   "fits": "Serenoは、寝る前に雨音や自然の音を流したい人のためのアプリです。本物の録音が再生中に組み替えられるループしないサウンド、端末で生成するホワイト・ピンク・ブラウンノイズ、無制限の重ね合わせとEQ、フェードアウトするスリープタイマー、ベッドサイドモード、完全オフライン再生。広告・アカウント・追跡なし、Sereno Proは一度の購入です。",
+   "fits": "Serenoは、寝る前に雨音や自然の音を流したい人のためのアプリです。本物の録音が再生中に組み替えられるループしないサウンド、端末で生成するホワイト・ピンク・ブラウンノイズ、無制限の重ね合わせとEQ、フェードアウトするスリープタイマー、フルスクリーンのナイトビュー、完全オフライン再生。広告・アカウント・追跡なし、一部のサウンド、シーン、機能は1回限りのApp内課金です。",
    "faq": [
     [
      "一晩中流しても大丈夫ですか？",
@@ -26280,7 +26280,7 @@
     "Rain sounds work at bedtime because a steady sound blends sudden ones, like a passing car or a noise next door. That only holds if the rain itself doesn't become the sudden sound. With an app that repeats a 30-second clip, you can hear the same pattern of drops coming back regularly, and once it bothers you sleep is gone. With real field recordings re-sequenced at random while you listen, the night never repeats the same order.",
     "The ending matters too. A timer that cuts the sound off can wake you with the sudden silence. Pick a 30 to 60 minute timer that fades the volume down over the last few minutes. If you prefer sound until morning, skip the timer and lower the volume further. Keep the phone speaker a little away from the pillow; sleeping in earphones is usually less comfortable.",
     "If rain alone feels thin, or the individual drops bother you, layer a little brown or pink noise underneath. Brown noise, centered on low frequencies, softens the fine patter and becomes a calm, fan-like background. A touch of fire or distant thunder is a matter of taste. Save a mix you like under a name and you can start the same sound with one tap every night.",
-    "Sereno is built for this. Real field recordings of rain, ocean, wind, streams and fire are recombined at random as you listen, while white, pink and brown noise are generated live on the device. Layer as many sounds as you like and set volume, balance and EQ per track. It has a sleep timer that fades out gently, a sunrise wake that swells with birdsong, background playback, Lock Screen and AirPlay controls, a dimmed bedside mode, and works fully offline. No ads, no account, no tracking; Sereno Pro is a one-time purchase with no subscription."
+    "Sereno is built for this. Real field recordings of rain, ocean, wind, streams and fire are recombined at random as you listen, while white, pink and brown noise are generated live on the device. Layer as many sounds as you like and set volume, balance and EQ per track. It has a sleep timer that fades out gently, a sunrise wake that swells with birdsong, background playback, Lock Screen controls, a full-screen night view that dims the display, and works fully offline. No ads, no account, no tracking; some sounds, scenes and features are unlocked with a one-time in-app purchase."
    ],
    "look": [
     "Whether the rain is non-looping rather than a short clip on repeat",
@@ -26314,7 +26314,7 @@
      "A low background blends sudden sounds"
     ]
    ],
-   "fits": "Sereno is for people who want rain or nature sounds at bedtime: non-looping real recordings recombined as they play, white, pink and brown noise generated on the device, unlimited layering with EQ, a fading sleep timer, a bedside mode and fully offline playback. No ads, account or tracking; Sereno Pro is a one-time purchase.",
+   "fits": "Sereno is for people who want rain or nature sounds at bedtime: non-looping real recordings recombined as they play, white, pink and brown noise generated on the device, unlimited layering with EQ, a fading sleep timer, a full-screen night view and fully offline playback. No ads, account or tracking; some sounds, scenes and features are a one-time in-app purchase.",
    "faq": [
     [
      "Can I leave it playing all night?",

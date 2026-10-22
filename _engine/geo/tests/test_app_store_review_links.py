@@ -314,6 +314,31 @@ class ReviewBlockTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             review.review_block(USAGENOW, href.replace(USAGENOW, str(APPSTORE["mochi"])), "ja")
 
+    def test_play_review_link_only_for_apps_live_on_android(self):
+        """2026-10-23: Apps live on Google Play (verified snapshot) also link Play's review list, same block,
+        no referrer, no incentive; an unknown Android status adds nothing."""
+        source = "<html><body><main><p>x</p></main></body></html>"
+        href = "https://apps.apple.com/jp/app/id6818607603?action=write-review"
+        play = review.play_review_url("com.example.usagenow")
+        self.assertEqual("https://play.google.com/store/apps/details?id=com.example.usagenow&showAllReviews=true", play)
+        with mock.patch.object(review, "_PLAY_PACKAGES", {USAGENOW: "com.example.usagenow"}):
+            once = review.render_review(Path("x"), source, USAGENOW, href, "ja")
+            self.assertEqual(once, review.render_review(Path("x"), once, USAGENOW, href, "ja"))
+        self.assertIn('data-play-review="com.example.usagenow"', once)
+        self.assertIn(html.escape(play, quote=True), once)
+        self.assertLess(once.index(review.REVIEW_LABELS["ja"]), once.index("Google Play"))
+        self.assertEqual(1, once.count(review.BLOCK_START))
+        with mock.patch.object(review, "_PLAY_PACKAGES", {}):
+            without = review.render_review(Path("x"), once, USAGENOW, href, "ja")
+        self.assertNotIn("play.google.com", without)
+        self.assertNotIn("play.google.com", review.render_review(Path("x"), source, USAGENOW, href, "ja", None))
+        for bad in ("https://play.google.com/store/apps/details?id=com.x.y&referrer=utm_source%3Dx",
+                    "https://example.com/?id=com.x.y&showAllReviews=true"):
+            with self.assertRaises(ValueError):
+                review.review_block(USAGENOW, href, "ja", bad)
+        with self.assertRaises(ValueError):
+            review.play_review_url("not a package")
+
     def test_review_link_is_not_a_primary_action_for_supplemental_resources(self):
         intro = "<main><h1>UsageNow</h1><p>Intro.</p>"
         review_block = review.review_block(USAGENOW, US_REVIEW, "en-US")

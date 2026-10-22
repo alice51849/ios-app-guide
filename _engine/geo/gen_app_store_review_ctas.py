@@ -17,6 +17,13 @@ Rules kept here on purpose:
     same page inventory as the QR card and the share action. This module only
     owns the block markup, the copy and the placement.
 
+  * Google Play (2026-10-23 emergency review: 15-country rating counts 0-3 on
+    44 Apps): when the App is live on Android per the verified snapshot
+    (android_play.load_snapshot; unreadable snapshot = no Play link), the same
+    block also links Google Play's review list
+    (``details?id=<package>&showAllReviews=true``, no referrer: not a download
+    link). Same neutral sentence, no incentive.
+
     python geo/gen_app_store_review_ctas.py --report   # read-only coverage count
 """
 
@@ -146,12 +153,65 @@ def is_review_app(app_id: str) -> bool:
     return str(app_id) in REVIEW_APP_IDS
 
 
-def review_block(app_id: str, href: str, locale: str) -> str:
-    """The managed block for one page. ``href`` is the final (stamped) link.
+PLAY_REVIEW_RE = re.compile(
+    r"https://play\.google\.com/store/apps/details\?id="
+    r"(?P<package>[A-Za-z][A-Za-z0-9_]*(?:\.[A-Za-z][A-Za-z0-9_]*)+)&showAllReviews=true"
+)
+_PLAY_PACKAGES: dict[str, str] | None = None
+
+
+def play_review_url(package: str) -> str:
+    """Google Play's review list for one package (no referrer: not a download link)."""
+    url = f"https://play.google.com/store/apps/details?id={package}&showAllReviews=true"
+    if not PLAY_REVIEW_RE.fullmatch(url):
+        raise ValueError(f"Invalid Android package: {package!r}")
+    return url
+
+
+def play_packages() -> dict[str, str]:
+    """{App Store id: Android package} from the verified Android snapshot.
+
+    Any problem with the snapshot means "unknown": no Play review link at all
+    (same rule as every Play link: a broken scan never adds or drops links)."""
+    global _PLAY_PACKAGES
+    if _PLAY_PACKAGES is None:
+        try:
+            import android_play  # noqa: PLC0415 - geo/android_play.py
+
+            apps = android_play.load_snapshot()
+            _PLAY_PACKAGES = {
+                str(entry["ios_app_id"]): str(entry["package"])
+                for entry in apps.values()
+                if entry.get("ios_app_id") and entry.get("package")
+            }
+        except Exception:  # noqa: BLE001 - unknown Android status = no Play link
+            _PLAY_PACKAGES = {}
+    return _PLAY_PACKAGES
+
+
+def play_review_href(app_id: str) -> str | None:
+    package = play_packages().get(str(app_id))
+    try:
+        return play_review_url(package) if package else None
+    except ValueError:
+        return None
+
+
+def review_block(app_id: str, href: str, locale: str, play_href: str | None = None) -> str:
+    """The managed block for one page. ``href`` is the final (stamped) link;
+    ``play_href`` (optional) is the App's Google Play review list.
 
     A ``<div>``, not a ``<p>``: supplemental-resource placement
     (hero_task_html) treats top-level paragraphs as the page introduction.
     """
+    if play_href is not None and not PLAY_REVIEW_RE.fullmatch(play_href):
+        raise ValueError(f"Invalid Google Play review URL: {play_href!r}")
+    play = (
+        ' · <a class="app-store-review__play" '
+        f'data-play-review="{html.escape(PLAY_REVIEW_RE.fullmatch(play_href)["package"], quote=True)}" '
+        f'href="{html.escape(play_href, quote=True)}" rel="nofollow noopener">Google Play</a>'
+        if play_href else ""
+    )
     if not is_review_app(app_id):
         raise ValueError(f"App is not a review-link roster App: {app_id}")
     if not is_app_store_review_url(href):
@@ -167,7 +227,7 @@ def review_block(app_id: str, href: str, locale: str) -> str:
                 'style="margin:1rem 0;font-size:.9em;text-align:center">'
                 f'<a class="app-store-review__link" href="{html.escape(href, quote=True)}" '
                 'rel="nofollow noopener">'
-                f"{html.escape(review_label(locale))}</a></div>"
+                f"{html.escape(review_label(locale))}</a>{play}</div>"
             ),
             BLOCK_END,
         )
@@ -252,14 +312,20 @@ def render_review(
     app_id: str,
     href: str | None,
     locale: str,
+    play_href: str | None | bool = True,
 ) -> str:
-    """Place (or remove) the review block. ``href=None`` removes it."""
+    """Place (or remove) the review block. ``href=None`` removes it.
+
+    ``play_href=True`` (default) looks the App up in the Android snapshot;
+    ``None``/``False`` leaves the Google Play review link out."""
     cleaned = strip_review(source)
     if href is None or not is_review_app(app_id):
         return cleaned
     if "</body>" not in cleaned:
         raise ValueError(f"App Store review page has no closing body: {path}")
-    block = review_block(app_id, href, locale)
+    if play_href is True:
+        play_href = play_review_href(app_id)
+    block = review_block(app_id, href, locale, play_href or None)
     # Right under the QR card (the page's own install card), else at the end
     # of the main content, else before the mobile sticky CTA / </body>.
     qr_index = cleaned.find(QR_BLOCK_END)

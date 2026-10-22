@@ -20914,5 +20914,1990 @@
     ]
    ]
   }
+ },
+ {
+  "key": "zipbox",
+  "locale": "ja",
+  "market": "JP",
+  "term": "パスワード付きzip",
+  "rank": 8,
+  "slug": "password-zip-email-attachment-iphone-japan-ppap",
+  "loc": {
+   "title": "メールのパスワード付きZIPをiPhoneで開く方法（PPAP対策）｜Zipbox 解凍",
+   "meta": "取引先から届いたパスワード付きZIP、iPhoneで開けない？別メールのパスワードを入れて、40個の中からPDFを1つだけ取り出すまでを手順で。Zipboxは端末内で処理、通信なし・広告なし。",
+   "h1": "メールで届いたパスワード付きZIPを、iPhoneで開いて必要なファイルだけ取り出す",
+   "lead": "「添付ファイルはパスワード付きZIPです。パスワードは別途お送りします」。外出先でこのメールを受け取って、iPhoneで中身を見られずに困った人向けのページです。",
+   "answer": "パスワード付きZIPは、iPhoneの標準機能だけでは暗号化方式によって展開できないことがあり、RARや7zはそもそも開けません。ZIPを端末内で展開できるアプリで共有メニューから開き、別メールで届いたパスワードを入れれば、中身を一覧で確認して必要なファイルだけ取り出せます。Zipbox 解凍はファイルをどこにも送らず、通信もしないので、取引先の資料をオンラインの解凍サイトにアップロードする必要がありません。",
+   "paras": [
+    "日本の会社では、添付ファイルをパスワード付きZIPにして、パスワードを2通目のメールで送る運用（いわゆるPPAP）がいまも残っています。困るのは移動中です。メールアプリで添付をタップしても中身が出てこない、ファイルAppに保存しても開かない、という相談がいちばん多いパターンです。まず添付ファイルを長押しして「ファイルに保存」を選び、ファイルが本当に端末に保存されたかを確かめてください。",
+    "次に、パスワードを入力できる解凍アプリを選びます。見るべきなのは、パスワード付きと分割ファイルに対応しているか、そして処理が端末の中で完結するかの2点です。Zipbox 解凍はZIP・RAR・7zのパスワード付きと分割ファイルに対応し、展開する前にファイル一覧を見ながら写真・PDF・テキストをプレビューして、必要な1つだけを取り出せます。App Storeで購入する買い切りのアプリで、アプリ内課金・サブスクリプション・広告はありません。",
+    "最後に情報の扱いです。パスワード付きで送られてくるのは、見積書や契約書、個人情報を含む名簿など、外に出したくない資料だからです。検索で出てくる「オンライン解凍」サイトに上げると、パスワードと中身を第三者に渡すことになります。端末の中で展開すれば、ファイルもパスワードもiPhoneの外に出ません。取り出したPDFは、そのままメールや共有シートで社内に転送できます。"
+   ],
+   "look": [
+    "添付ファイルが「ファイルに保存」で端末に保存されているか",
+    "拡張子が .zip か .rar か .7z か、.001 や .part1 のような分割ファイルではないか",
+    "アプリがパスワード付き・分割ファイルへの対応を明記しているか",
+    "展開が端末内で完結し、サーバーにアップロードしないか",
+    "ファイルを開くまでに広告やカウントダウンが挟まらないか"
+   ],
+   "steps": [
+    "メールアプリで添付のZIPを長押しし、「ファイルに保存」でiCloud Driveか「このiPhone内」に保存する。",
+    "ファイルAppでそのZIPを長押しして「共有」を選び、Zipboxを選ぶ。Zipboxから保存先のフォルダを開いてもよい。",
+    "2通目のメールに書かれたパスワードを入力する。コピーして貼り付けると打ち間違いを防げる。",
+    "一覧で中身を確認し、写真やPDFはプレビューしてから、必要なファイルだけにチェックを入れて取り出す。",
+    "取り出したファイルを共有シートからメールやファイルAppに送り、社内の担当者へ転送する。"
+   ],
+   "rows": [
+    [
+     "形式",
+     "ZIP・RAR・7z、分割ファイル、パスワード付きに対応しているか",
+     "取引先によって形式がばらばらなので、1つのアプリで済むほうが早い"
+    ],
+    [
+     "処理の場所",
+     "端末内で展開し、通信しないと明記されているか",
+     "パスワード付きの資料をサーバーに上げると、守秘の意味がなくなる"
+    ],
+    [
+     "取り出し方",
+     "全部ではなく1ファイルだけ取り出せるか",
+     "40個入りのZIPからPDFを1つ見たいだけのときに容量と時間を使わない"
+    ]
+   ],
+   "fits": "Zipbox 解凍は、通勤電車や出張先でパスワード付きZIPのメールを受け取る会社員、7zで写真をもらった人、Safariで落とした圧縮ファイルが開けない人に向いています。13形式を端末内で処理し、通信もアカウントも広告もない、App Storeで購入する買い切りのアプリです。",
+   "faq": [
+    [
+     "パスワードが合っているのに開けません。",
+     "全角・半角や前後のスペースが混ざっていることが多いので、2通目のメールからコピーして貼り付けてください。分割ファイルの場合は、すべてのパーツが同じフォルダにあるかも確認してください。"
+    ],
+    [
+     "ZIPの中身をサーバーに送ることはありますか？",
+     "Zipboxは通信を行わず、アカウントもログインも不要です。展開もプレビューもすべて端末の中で行います。"
+    ],
+    [
+     "取り出したPDFを社内に送るには？",
+     "取り出したファイルを共有シートから開けば、メールやファイルApp、iCloud Driveにそのまま渡せます。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to open a password-protected ZIP email attachment on iPhone (Japan's PPAP habit) with Zipbox",
+   "meta": "A client emails a password-protected ZIP and sends the password separately. Open it on iPhone, enter the password and pull out just the one PDF, on device, with no uploads and no ads.",
+   "h1": "Opening a password-protected ZIP email attachment on iPhone, then taking out only what you need",
+   "lead": "\"The attachment is a password-protected ZIP; the password follows in a separate email.\" This page is for the moment that email reaches you on the train and the file will not open.",
+   "answer": "Depending on how it was encrypted, a password-protected ZIP may not extract with the iPhone's built-in tools, and a RAR or 7z will not open at all. Open the archive from the share sheet in an extractor that works on the device, paste the password from the second email, then look inside and take out only the files you need. Zipbox: Unzip RAR, ZIP & 7z never sends the file anywhere and makes no network requests, so a client's documents never go to an online unzip site.",
+   "paras": [
+    "Many Japanese companies still send attachments as password-protected ZIPs and mail the password in a second message, a routine known locally as PPAP. It is awkward away from a desk: tapping the attachment in Mail shows nothing useful, and saving it to Files does not open it either. Start by long-pressing the attachment, choosing Save to Files, and checking that the archive really landed on the device.",
+    "Then pick an extractor that accepts a password. Two things matter: explicit support for password-protected and multi-part archives, and processing that stays on the phone. Zipbox handles password-protected and multi-part ZIP, RAR and 7z, lets you browse the file list and preview photos, PDFs and text before extracting, and pulls out just the item you choose. It is a paid App Store download where one purchase covers every feature, with no in-app purchases, subscription or ads.",
+    "Finally, handle the content with care. Files arrive password-protected because they are quotes, contracts or lists with personal data. Uploading them to an online extractor hands both the password and the contents to a third party. Extracting on the phone keeps the file and the password on the device, and the extracted PDF can be forwarded from the share sheet."
+   ],
+   "look": [
+    "Whether the attachment was actually saved to Files with Save to Files",
+    "Whether the extension is .zip, .rar or .7z, and whether it is split into .001 or .part1 volumes",
+    "Whether the app states support for password-protected and multi-part archives",
+    "Whether extraction stays on the device instead of uploading to a server",
+    "Whether an ad or countdown stands between you and the file"
+   ],
+   "steps": [
+    "In Mail, long-press the ZIP attachment and choose Save to Files, into iCloud Drive or On My iPhone.",
+    "In Files, long-press the archive, tap Share and choose Zipbox, or open that folder from inside Zipbox.",
+    "Paste the password from the second email; copying avoids typing mistakes.",
+    "Browse the list, preview photos or PDFs, and tick only the files you actually need before extracting.",
+    "Send the extracted files from the share sheet to Mail or Files and forward them to your team."
+   ],
+   "rows": [
+    [
+     "Formats",
+     "ZIP, RAR, 7z, multi-part and password-protected support",
+     "Clients use different formats, and one app is faster than three"
+    ],
+    [
+     "Where it runs",
+     "On-device extraction with no network requests",
+     "Uploading a protected file defeats the point of the password"
+    ],
+    [
+     "Extraction",
+     "Whether one file can be taken out on its own",
+     "You need one PDF out of forty, not the whole archive on your phone"
+    ]
+   ],
+   "fits": "Zipbox: Unzip RAR, ZIP & 7z suits commuters and business travellers who receive password-protected ZIPs by email, people sent photos as a 7z, and anyone with a Safari download that will not open. It handles 13 formats on the device, with no network, account or ads, as a paid App Store download.",
+   "faq": [
+    [
+     "The password is right but the archive still will not open.",
+     "Copy the password from the email instead of typing it; full-width characters or stray spaces are the usual cause. For split archives, keep every part in the same folder."
+    ],
+    [
+     "Does Zipbox send the archive to a server?",
+     "No. Zipbox makes no network requests and needs no account or sign-in; extraction and preview happen on the device."
+    ],
+    [
+     "How do I forward the extracted PDF?",
+     "Open the extracted file from the share sheet and send it to Mail, Files or iCloud Drive."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "maskmyfile",
+  "locale": "de-DE",
+  "market": "DE",
+  "term": "pdf schwärzen",
+  "rank": 49,
+  "slug": "pdf-schwaerzen-iphone-dauerhaft-statt-schwarzer-balken",
+  "loc": {
+   "title": "PDF schwärzen auf dem iPhone – dauerhaft statt nur schwarzer Balken | Mask My File",
+   "meta": "Ein schwarzer Kasten über dem Text reicht nicht: Der Text darunter bleibt oft kopierbar. So schwärzen Sie PDF und Fotos auf dem iPhone dauerhaft, prüfen die Kopie und senden sie, alles auf dem Gerät.",
+   "h1": "PDF auf dem iPhone schwärzen, sodass der Text wirklich weg ist",
+   "lead": "Mietbewerbung, Gehaltsnachweis, Arztbrief: Sie wollen das Dokument schicken, aber nicht jede Zeile darin. Diese Seite zeigt, worauf es beim Schwärzen ankommt, bevor Sie auf „Senden“ tippen.",
+   "answer": "Ein schwarzes Rechteck aus einer Markierungs- oder Zeichenfunktion verdeckt den Text oft nur optisch; darunter lässt er sich weiter markieren, kopieren oder durchsuchen. Dauerhaft geschwärzt ist ein PDF erst, wenn der Inhalt an dieser Stelle entfernt wird und die neue Kopie geprüft ist. Mask My File schwärzt in Bildern und PDF dauerhaft, entfernt Metadaten, wo das Format es erlaubt, und öffnet die neue Kopie erneut zur Prüfung, bevor „Private Ready“ erscheint. Alles läuft auf dem iPhone, ohne Konto und ohne Hochladen.",
+   "paras": [
+    "Der häufigste Fehler beim Schwärzen ist der Balken, der nur oben aufliegt. In vielen PDF-Programmen ist ein schwarzes Rechteck eine Anmerkung: Wer die Datei öffnet, sieht schwarz, aber die Textebene darunter ist noch da. Ein Doppelklick, Strg+A oder die Suchfunktion bringen IBAN, Steuer-ID oder Geburtsdatum wieder hervor. Bei Fotos und Screenshots ist es ähnlich, wenn man mit einem halbtransparenten Stift übermalt oder nur unscharf macht.",
+    "Für eine echte Schwärzung brauchen Sie drei Dinge: einen deckenden Balken, der den Inhalt an der Stelle ersetzt, das Entfernen von Metadaten wie Autor oder Aufnahmeort, und eine Kontrolle der fertigen Datei. Mask My File findet private Daten, bevor Sie eine Datei senden, schwärzt dauerhaft nur, was Sie auswählen, und prüft die neue Kopie. Gesichts- und Barcode-Erkennung markieren lediglich Bereiche zu Ihrer Prüfung; nichts wird ohne Ihre Auswahl verändert. Bei vielen Unterlagen verarbeiten Sie bis zu 100 Dateien mit eigener Vorschau.",
+    "Der zweite Punkt ist, wo das passiert. Online-Dienste zum Schwärzen verlangen, dass Sie genau das Dokument hochladen, das Sie schützen wollen. Mask My File verarbeitet alles auf dem Gerät: kein Konto, keine Werbung, kein Tracking, kein Hochladen von Inhalten. Die Texterkennung läuft lokal. Das ist gerade bei Gesundheitsdaten, Ausweiskopien und Kundenakten der Unterschied, auf den es ankommt."
+   ],
+   "look": [
+    "Ersetzt der Balken den Inhalt, oder liegt er nur als Anmerkung darüber?",
+    "Lässt sich der geschwärzte Text in der fertigen Datei noch markieren oder finden?",
+    "Werden Metadaten wie Autor, Datum oder Aufnahmeort entfernt?",
+    "Wird die Datei auf dem Gerät verarbeitet oder hochgeladen?",
+    "Können Sie mehrere Dateien auf einmal bearbeiten und jede einzeln prüfen?"
+   ],
+   "steps": [
+    "Öffnen Sie das PDF oder Foto in Mask My File, zum Beispiel über „Teilen“ aus der Dateien-App oder aus Mail.",
+    "Gehen Sie die Seiten in der Vorschau durch und zoomen Sie bei kleiner Schrift bis 5× hinein.",
+    "Wählen Sie Name, Adresse, IBAN oder Ausweisnummer aus; markierte Gesichter und Barcodes prüfen Sie einzeln.",
+    "Schwärzen Sie dauerhaft und entfernen Sie Metadaten, wo das Format es zulässt.",
+    "Warten Sie auf „Private Ready“ und senden Sie erst dann die neue Kopie, nicht das Original."
+   ],
+   "rows": [
+    [
+     "Schwärzung",
+     "Deckender Balken, der den Inhalt ersetzt",
+     "Ein aufgelegter Kasten lässt den Text darunter kopierbar"
+    ],
+    [
+     "Kontrolle",
+     "Erneutes Öffnen und Prüfen der neuen Kopie",
+     "Fehler fallen auf, bevor die Datei beim Vermieter liegt"
+    ],
+    [
+     "Ort der Verarbeitung",
+     "Auf dem Gerät, ohne Konto und ohne Upload",
+     "Sensible Dokumente landen nicht auf fremden Servern"
+    ]
+   ],
+   "fits": "Mask My File passt, wenn Sie Mietunterlagen, Gehaltsnachweise, Arztbriefe oder Kundendateien vom iPhone aus weitergeben und nur das Nötige zeigen wollen: dauerhaftes Schwärzen in PDF und Bildern, Metadaten entfernen, Prüfung der Kopie, alles lokal.",
+   "faq": [
+    [
+     "Reicht es, mit dem Markierungswerkzeug schwarz zu übermalen?",
+     "Oft nicht: Bei PDF bleibt die Textebene darunter erhalten und lässt sich kopieren. Prüfen Sie, ob der Inhalt an der Stelle ersetzt wird."
+    ],
+    [
+     "Werden meine Dokumente hochgeladen?",
+     "Nein. Mask My File verarbeitet alles auf dem Gerät, ohne Konto, Werbung, Tracking oder Hochladen von Inhalten."
+    ],
+    [
+     "Erkennt die App Gesichter automatisch?",
+     "Die Gesichts- und Barcode-Erkennung markiert nur Bereiche zur Prüfung. Sie entscheiden, was geschwärzt wird; die Erkennung identifiziert keine Person."
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to redact a PDF on iPhone so the text is really gone, not just covered | Mask My File",
+   "meta": "A black box over text often leaves the text underneath selectable. Redact PDFs and photos on iPhone permanently, check the new copy and share it, all on the device.",
+   "h1": "Redacting a PDF on iPhone so the text is actually removed",
+   "lead": "A rental application, a pay stub, a medical letter: you need to send the document, but not every line in it. This page covers what matters before you tap Send.",
+   "answer": "A black rectangle drawn with a markup or shape tool often hides text only visually; underneath it can still be selected, copied or searched. A PDF is properly redacted when the content in that spot is removed and the new copy has been checked. Mask My File applies permanent solid redaction to images and PDFs, removes metadata where the format supports it, and reopens the new copy to verify it before showing Private Ready, all on the iPhone with no account and no upload.",
+   "paras": [
+    "The most common redaction mistake is a box that only sits on top. In many PDF tools a black rectangle is an annotation: the reader sees black, but the text layer is still there, and select-all or search brings a bank number, tax ID or date of birth straight back. Photos and screenshots have the same problem when they are painted over with a semi-transparent pen or merely blurred.",
+    "Real redaction needs three things: an opaque block that replaces the content, removal of metadata such as author or location, and a check of the finished file. Mask My File finds private details before you send, permanently hides only what you choose, and verifies the new copy. Face and barcode detection only mark regions for your review. For a stack of paperwork it can protect up to 100 files at once, each with its own preview.",
+    "The second question is where it happens. Online redaction services ask you to upload the very document you are trying to protect. Mask My File processes everything on the device, with no account, advertising, tracking or content upload, and its text recognition runs locally. For health records, ID copies and customer files, that is the difference that matters."
+   ],
+   "look": [
+    "Does the box replace the content, or sit on top as an annotation?",
+    "Can the hidden text still be selected or found in the finished file?",
+    "Is metadata such as author, date or location removed?",
+    "Is the file processed on the device or uploaded?",
+    "Can you handle several files at once and check each one?"
+   ],
+   "steps": [
+    "Open the PDF or photo in Mask My File, for example from the share sheet in Files or Mail.",
+    "Go through the pages in the preview and zoom up to 5× on small print.",
+    "Select the name, address, bank number or ID number; review detected faces and barcodes one by one.",
+    "Apply permanent redaction and remove metadata where the format allows.",
+    "Wait for Private Ready and send the new copy, not the original."
+   ],
+   "rows": [
+    [
+     "Redaction",
+     "An opaque block that replaces the content",
+     "A box laid on top leaves the text copyable"
+    ],
+    [
+     "Verification",
+     "The new copy is reopened and checked",
+     "Mistakes show up before the file reaches the landlord"
+    ],
+    [
+     "Processing",
+     "On the device, no account, no upload",
+     "Sensitive documents never sit on someone else's server"
+    ]
+   ],
+   "fits": "Mask My File suits anyone sharing rental paperwork, pay stubs, medical letters or customer files from an iPhone who wants to show only what is needed: permanent redaction in PDFs and images, metadata removal and a verified copy, all processed locally.",
+   "faq": [
+    [
+     "Is drawing over text with the markup pen enough?",
+     "Often not: in a PDF the text layer can survive underneath and be copied. Check that the content in that spot is actually replaced."
+    ],
+    [
+     "Are my documents uploaded?",
+     "No. Mask My File processes everything on the device, with no account, advertising, tracking or content upload."
+    ],
+    [
+     "Does it detect faces automatically?",
+     "Face and barcode detection only mark regions for your review. You decide what is redacted, and detection does not identify a person."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "dbhalo",
+  "locale": "ko",
+  "market": "KR",
+  "term": "층간소음 측정",
+  "rank": null,
+  "slug": "upstairs-neighbor-noise-measure-and-log-on-iphone-korea",
+  "loc": {
+   "title": "층간소음 측정, 아이폰으로 dB와 시간 기록 남기는 법 | dB Halo 소음 측정기",
+   "meta": "윗집 발소리·쿵쿵 소리, 감으로 말하면 대화가 안 됩니다. 아이폰으로 dB와 피크, 소리가 난 시각을 기록하고 그래프 PDF로 정리하는 순서. 기기에서만 처리, 원본 오디오 저장 안 함.",
+   "h1": "층간소음, 아이폰으로 몇 dB인지 재고 언제 났는지 기록하기",
+   "lead": "밤 11시마다 들리는 쿵쿵 소리. 관리사무소나 윗집에 말하려면 “시끄러워요”보다 “몇 시에 몇 dB”가 필요합니다. 이 페이지는 그 기록을 남기는 방법을 정리했습니다.",
+   "answer": "층간소음은 한 번의 측정보다 여러 날의 기록이 설득력이 있습니다. 아이폰 소음 측정기로 현재·평균·최고·피크 레벨을 보고, 소리가 바뀐 시각을 이벤트 기록으로 남긴 뒤, 날짜별로 그래프 PDF나 CSV로 내보내 두세요. dB Halo는 측정과 기록, 내보내기를 모두 기기에서 처리하며 원본 마이크 오디오를 저장하지 않습니다. 다만 측정값은 추정치이고 인증된 전문 소음계가 아니므로, 공식 판단이 필요하면 관리사무소나 전문 기관의 측정을 함께 요청하세요.",
+   "paras": [
+    "층간소음 상담에서 가장 먼저 듣는 말은 “언제, 얼마나 자주요?”입니다. 기억으로 답하면 서로 느낌을 주장하는 대화가 되기 쉽습니다. 그래서 기록은 숫자(dB)와 시각, 그리고 반복성 세 가지를 갖추는 것이 좋습니다. 같은 방, 같은 위치에 아이폰을 두고, 소리가 시작될 때 측정을 켜 두면 최고값과 피크, 평균이 함께 남습니다.",
+    "측정 앱을 고를 때는 숫자만 크게 보여 주는지, 기록을 남기는지를 보세요. dB Halo는 큰 dB 숫자와 Halo 안전 구간 표시, 현재·최저·평균·최고·피크 레벨, 소리가 바뀐 시각을 남기는 이벤트 기록을 제공합니다. A/C/Z 주파수 보정을 고를 수 있고, 저음이 울리는 소리는 FFT 스펙트럼과 스펙트로그램으로 어느 대역인지 볼 수 있습니다. 기록에서 측정을 골라 그래프가 담긴 PDF 보고서나 CSV로 내보낼 수 있습니다.",
+    "사생활도 중요합니다. 밤새 측정하려면 마이크를 켜 두어야 하는데, 집 안의 대화까지 녹음되는 건 원하지 않을 겁니다. dB Halo는 계정·광고·추적이 없고 모든 처리를 기기에서 하며, 직접 녹음을 시작한 경우에만 AAC 파일을 만듭니다. 수면 일지는 코골이, 말소리, 기침 같은 소리를 분류해 시간순으로 정리하지만 원본 오디오는 저장하지 않습니다."
+   ],
+   "look": [
+    "현재값만이 아니라 평균·최고·피크가 함께 남는지",
+    "소리가 난 시각이 자동으로 기록되는지",
+    "날짜별 기록을 PDF나 CSV로 내보낼 수 있는지",
+    "원본 오디오를 저장하지 않고 기기에서만 처리하는지",
+    "측정값이 추정치라는 한계를 앱이 분명히 밝히는지"
+   ],
+   "steps": [
+    "소리가 주로 들리는 방에서 아이폰을 바닥이 아닌 같은 높이의 선반에 두고 매번 같은 위치를 쓴다.",
+    "소리가 시작되면 dB Halo 측정을 시작하고, 화면의 최고·피크 값과 이벤트 기록이 쌓이는지 확인한다.",
+    "저음으로 울리는 소리라면 스펙트럼 화면에서 어느 주파수 대역이 큰지 함께 본다.",
+    "측정을 저장하고, 며칠 동안 같은 시간대에 반복해서 기록한다.",
+    "기록에서 날짜별 측정을 골라 그래프 PDF나 CSV로 내보내 관리사무소 상담 때 보여 준다."
+   ],
+   "rows": [
+    [
+     "숫자",
+     "평균·최고·피크가 함께 남는지",
+     "한 번 쿵 하는 소리는 평균보다 피크에 드러난다"
+    ],
+    [
+     "시각",
+     "이벤트 기록에 시간이 찍히는지",
+     "“밤 11시 이후 반복”처럼 패턴을 보여 줄 수 있다"
+    ],
+    [
+     "정리",
+     "PDF·CSV 내보내기",
+     "상담할 때 화면 캡처보다 날짜별 기록이 정리돼 보인다"
+    ]
+   ],
+   "fits": "dB Halo는 층간소음 때문에 날짜별 기록이 필요한 사람, 아이 방이나 침실이 얼마나 시끄러운지 확인하고 싶은 사람에게 맞습니다. 측정·분석·기록·내보내기를 기기에서 처리하고 계정·광고·추적이 없습니다. 측정값은 추정치이며 인증된 전문 소음계를 대신하지 않습니다.",
+   "faq": [
+    [
+     "아이폰으로 잰 dB를 공식 증거로 쓸 수 있나요?",
+     "앱의 측정값은 추정치이며 인증된 전문 소음계가 아닙니다. 상담 자료로 기록을 정리하는 데 쓰고, 공식 측정이 필요하면 관리사무소나 전문 기관에 요청하세요."
+    ],
+    [
+     "밤새 측정하면 집 안 대화가 녹음되나요?",
+     "dB Halo는 원본 마이크 오디오를 저장하지 않으며, 직접 녹음을 시작한 경우에만 AAC 파일을 만듭니다."
+    ],
+    [
+     "저음으로 울리는 소리도 잡히나요?",
+     "A/C/Z 주파수 보정을 고를 수 있고, FFT 스펙트럼과 스펙트로그램으로 어느 대역의 소리인지 확인할 수 있습니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to measure and log noise from upstairs neighbors on iPhone (dB, peaks and times) | dB Halo",
+   "meta": "Footsteps and thuds from upstairs are hard to describe from memory. Record dB, peaks and the time each sound happened on iPhone, then export a graph PDF. Processed on device; raw audio is not saved.",
+   "h1": "Measuring upstairs neighbor noise on iPhone and keeping a dated log",
+   "lead": "The thumping starts at 11 p.m. again. To talk to building management or the neighbors, \"what time and how loud\" works better than \"it's noisy\". This page covers how to keep that record.",
+   "answer": "For neighbor noise, several days of records persuade more than a single reading. Use a sound meter on iPhone to watch the current, average, maximum and peak levels, keep a time-stamped event log of when the sound changed, and export each day as a graph PDF or CSV. dB Halo measures, logs and exports on the device and does not save raw microphone audio. Its readings are estimates and it is not a certified sound level meter, so ask building management or a professional when an official measurement is needed.",
+   "paras": [
+    "The first question in any noise complaint is \"when, and how often?\" Answering from memory turns it into one feeling against another. A useful record has three parts: a number in dB, a time, and repetition. Keep the iPhone in the same room and the same spot, start measuring when the sound begins, and the maximum, peak and average are kept together.",
+    "When choosing an app, check whether it only shows a big number or also keeps a record. dB Halo shows a large live dB reading with the Halo safety ring, minimum, average, maximum and peak levels, and a time-stamped event log. You can choose A, C or Z weighting, and for booming low sounds the FFT spectrum and spectrogram show which frequency band is loud. Selected measurements export as visual PDF reports or CSV data.",
+    "Privacy matters too. Measuring overnight means leaving the microphone on, and nobody wants the household's conversations recorded. dB Halo has no account, ads or tracking, processes everything on the device, and creates an AAC file only when you explicitly start a recording. The Sleep Journal classifies sounds such as snoring, speech, coughing and impacts in time order without saving raw audio."
+   ],
+   "look": [
+    "Whether average, maximum and peak are kept, not just the current value",
+    "Whether the time of each sound is logged automatically",
+    "Whether dated records export as PDF or CSV",
+    "Whether processing stays on the device without saving raw audio",
+    "Whether the app is clear that its readings are estimates"
+   ],
+   "steps": [
+    "In the room where the noise is worst, place the iPhone on a shelf at the same height and use the same spot every time.",
+    "Start a dB Halo measurement when the noise begins and check that maximum, peak and the event log are filling in.",
+    "For booming low sounds, look at the spectrum view to see which frequency band stands out.",
+    "Save the session and repeat at the same time of night for several days.",
+    "Pick the dated sessions in History and export a graph PDF or CSV to show building management."
+   ],
+   "rows": [
+    [
+     "Numbers",
+     "Average, maximum and peak together",
+     "A single thud shows up in the peak, not the average"
+    ],
+    [
+     "Times",
+     "Time stamps in the event log",
+     "Shows a pattern such as \"repeated after 11 p.m.\""
+    ],
+    [
+     "Records",
+     "PDF and CSV export",
+     "Dated reports read better than a pile of screenshots"
+    ]
+   ],
+   "fits": "dB Halo fits people who need dated records of neighbor noise and parents checking how loud a bedroom really is. It measures, analyzes, logs and exports on the device with no account, ads or tracking. Readings are estimates and do not replace a certified sound level meter.",
+   "faq": [
+    [
+     "Can iPhone dB readings be official evidence?",
+     "App readings are estimates and dB Halo is not a certified sound level meter. Use the log to organize your case, and ask building management or a professional for an official measurement."
+    ],
+    [
+     "Will measuring overnight record our conversations?",
+     "dB Halo does not save raw microphone audio; an AAC file is created only when you explicitly start a recording."
+    ],
+    [
+     "Does it pick up low booming sounds?",
+     "You can choose A, C or Z weighting, and the FFT spectrum and spectrogram show which frequency band the sound sits in."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "ledmovingtext",
+  "locale": "fr-FR",
+  "market": "FR",
+  "term": "texte défilant",
+  "rank": 40,
+  "slug": "texte-defilant-pancarte-concert-aeroport-iphone",
+  "loc": {
+   "title": "Texte défilant sur iPhone : pancarte de concert ou d'aéroport lisible de loin | LED Moving Text",
+   "meta": "Transformer l'écran de l'iPhone en bandeau lumineux défilant pour un concert, une arrivée à l'aéroport ou un comptoir bruyant : taille, vitesse, couleur, mode vertical et miroir. Sans compte.",
+   "h1": "Faire un texte défilant sur iPhone qu'on lit depuis le fond de la salle",
+   "lead": "Un prénom à brandir dans le hall des arrivées, un message pour l'artiste pendant le concert, une consigne au-dessus d'un comptoir : quand la voix ne porte pas, l'écran doit se lire d'un coup d'œil.",
+   "answer": "Pour qu'un texte défilant se lise de loin, trois réglages comptent : des lettres qui occupent toute la hauteur de l'écran, une vitesse assez lente pour lire le mot entier, et une couleur vive sur fond noir. LED Moving Text s'ouvre directement sur l'aperçu : on tape, on règle taille, vitesse et couleur, puis une pression passe en plein écran. Le mode vertical à quatre-vingt-dix degrés donne des lettres encore plus hautes, et l'écriture en miroir sert pour une vitrine ou un pare-brise. Aucune inscription n'est demandée.",
+   "paras": [
+    "Au concert, la pancarte en carton a deux défauts : elle ne se voit plus dès que les lumières baissent, et elle ne dit qu'une seule chose. L'écran du téléphone, lui, s'éclaire tout seul et change de message entre deux chansons. Le piège, c'est la lisibilité : un texte trop petit ou qui défile trop vite devient une traînée de couleur. Choisissez un message court, deux à quatre mots, et augmentez la taille jusqu'à ce que les lettres touchent les bords.",
+    "À l'aéroport ou à la gare, le but est d'être repéré avant de repérer. Un prénom en grandes lettres fixes ou qui défilent lentement se lit à travers le hall des arrivées. Pour un chauffeur ou un retrait au bord du trottoir, l'écriture en miroir permet de poser le téléphone contre la vitre et d'être lu de l'extérieur. Dans LED Moving Text, l'aperçu est l'éditeur : le texte, la vitesse, la taille et la couleur changent dès que vous y touchez, et le bouton Pause bien visible fige l'affichage.",
+    "Quand il faut enchaîner plusieurs messages, par exemple le prénom, puis « Par ici », puis le numéro du vol, vos derniers messages restent à portée de doigt : pas besoin de tout retaper entre deux annonces. Le clignotement réglable attire l'œil dans un hall bondé, et les cent huit couleurs de texte permettent de reprendre la couleur d'un groupe ou d'un club pour être reconnu tout de suite."
+   ],
+   "look": [
+    "Les lettres peuvent-elles occuper toute la hauteur, y compris en mode vertical ?",
+    "La vitesse se règle-t-elle assez lentement pour lire un prénom entier ?",
+    "Le texte passe-t-il en plein écran sans barre ni bouton qui gêne ?",
+    "Y a-t-il une écriture en miroir pour une vitrine ou un pare-brise ?",
+    "Faut-il créer un compte avant d'afficher le premier message ?"
+   ],
+   "steps": [
+    "Ouvrez LED Moving Text et tapez un message court : un prénom, le nom du groupe, « Merci ! ».",
+    "Choisissez une couleur vive et augmentez la taille jusqu'à ce que les lettres remplissent l'écran.",
+    "Réglez la vitesse en balayant, puis testez à trois mètres : si vous ne lisez pas le mot entier, ralentissez.",
+    "Touchez pour passer en plein écran ; tournez les lettres de quatre-vingt-dix degrés pour gagner en hauteur.",
+    "Pour une vitrine ou un pare-brise, activez l'écriture en miroir avant de poser le téléphone contre la vitre."
+   ],
+   "rows": [
+    [
+     "Concert",
+     "Message court, lettres en pleine hauteur",
+     "Un texte trop long devient illisible dans la foule"
+    ],
+    [
+     "Arrivées",
+     "Prénom fixe ou défilement lent",
+     "La personne vous repère avant que vous la cherchiez"
+    ],
+    [
+     "Vitrine ou voiture",
+     "Écriture en miroir",
+     "Le texte se lit à l'endroit depuis l'extérieur"
+    ]
+   ],
+   "fits": "LED Moving Text convient aux fans en concert, à ceux qui attendent quelqu'un aux arrivées, aux chauffeurs et aux équipes d'accueil : texte défilant ou fixe, cent huit couleurs, mode vertical, miroir et clignotement réglable, sans inscription.",
+   "faq": [
+    [
+     "Comment rendre le texte plus lisible de loin ?",
+     "Raccourcissez le message, augmentez la taille et ralentissez le défilement ; le mode vertical donne des lettres plus hautes."
+    ],
+    [
+     "Puis-je afficher le texte à travers une vitre ?",
+     "Oui, l'écriture en miroir est faite pour une vitrine ou un pare-brise."
+    ],
+    [
+     "Faut-il un compte ?",
+     "Non, l'application s'ouvre directement sur l'aperçu, sans inscription."
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to make scrolling text on iPhone that reads from the back of a concert or arrivals hall | LED Moving Text",
+   "meta": "Turn your iPhone screen into a scrolling LED sign for a concert, an airport pickup or a noisy counter: size, speed, color, a sideways mode and mirrored text. No account needed.",
+   "h1": "Making scrolling text on iPhone that people can read from far away",
+   "lead": "A name to hold up at arrivals, a message for the band between songs, a notice over a busy counter: when your voice will not carry, the screen has to read in one glance.",
+   "answer": "Three settings decide whether scrolling text reads from a distance: letters that fill the full height of the screen, a speed slow enough to read the whole word, and a bright color on black. LED Moving Text opens straight onto the preview: type, set size, speed and color, then one tap goes full screen. The sideways ninety-degree mode makes the letters taller still, and mirrored text works through a shop window or windscreen. There is nothing to sign up for.",
+   "paras": [
+    "At a concert, a cardboard sign has two problems: it disappears when the lights go down, and it only says one thing. A phone screen lights itself and can change message between songs. The trap is legibility: text that is too small or scrolls too fast turns into a smear of color. Keep the message short, two to four words, and raise the size until the letters touch the edges.",
+    "At an airport or station, the goal is to be spotted first. A name in large still letters, or scrolling slowly, reads across an arrivals hall. For a driver or a kerbside pickup, mirrored text lets you rest the phone against the glass and be read from outside. In LED Moving Text the preview is the editor: text, speed, size and color change the moment you touch them, and the clearly labeled pause button freezes the motion.",
+    "For events with several instructions, Cue Flow runs a sequence: one message per line, step backward or forward live, or set a 2 to 20 second timer with optional repeat. Event crews, speakers and queues keep a prepared run of signs without leaving the full-screen board."
+   ],
+   "look": [
+    "Can the letters fill the full height, including sideways?",
+    "Does the speed go slow enough to read a whole name?",
+    "Does full screen show only the text, without bars or buttons in the way?",
+    "Is there mirrored text for a window or windscreen?",
+    "Do you have to create an account before showing the first message?"
+   ],
+   "steps": [
+    "Open LED Moving Text and type a short message: a name, the band's name, \"Thank you!\".",
+    "Pick a bright color and raise the size until the letters fill the screen.",
+    "Swipe to set the speed, then test from three meters away; if you cannot read the whole word, slow it down.",
+    "Tap to go full screen; turn the letters ninety degrees for extra height.",
+    "For a window or windscreen, switch on mirrored text before resting the phone against the glass."
+   ],
+   "rows": [
+    [
+     "Concert",
+     "Short message, full-height letters",
+     "Long text is unreadable from inside a crowd"
+    ],
+    [
+     "Arrivals",
+     "Still name or slow scroll",
+     "The person spots you before you search for them"
+    ],
+    [
+     "Window or car",
+     "Mirrored text",
+     "Reads the right way round from outside"
+    ]
+   ],
+   "fits": "LED Moving Text suits fans at concerts, people waiting at arrivals, drivers and event crews: scrolling or still text, one hundred and eight colors, a sideways mode, mirrored text and an adjustable blink rate, with nothing to sign up for.",
+   "faq": [
+    [
+     "How do I make the text easier to read from far away?",
+     "Shorten the message, raise the size and slow the scroll; the sideways mode gives taller letters."
+    ],
+    [
+     "Can the text be read through a window?",
+     "Yes, mirrored text is made for a shop window or a windscreen."
+    ],
+    [
+     "Do I need an account?",
+     "No, the app opens straight onto the preview with nothing to sign up for."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "snapportlite",
+  "locale": "pt-BR",
+  "market": "BR",
+  "term": "foto 3x4",
+  "rank": 38,
+  "slug": "foto-3x4-no-celular-tamanho-fundo-e-impressao",
+  "loc": {
+   "title": "Foto 3x4 no celular: tamanho certo, fundo branco e folha para imprimir | Snapport Lite",
+   "meta": "Precisa de foto 3x4 para matrícula, crachá ou currículo? Como tirar no iPhone, alinhar o rosto com guias, trocar o fundo por branco e montar a folha para imprimir, sem marca d'água escondida.",
+   "h1": "Como fazer foto 3x4 no celular que sai no tamanho certo na impressão",
+   "lead": "Matrícula da escola, crachá do trabalho, ficha de inscrição: a foto 3x4 aparece quando menos se espera. Esta página mostra como resolver em casa, com o iPhone, sem errar o enquadramento.",
+   "answer": "Uma boa foto 3x4 depende de três coisas: o rosto na posição certa dentro do quadro, um fundo liso e claro, e uma impressão no tamanho real. No Snapport Lite você tira a foto ou escolhe uma da fototeca, alinha topo da cabeça, olhos e queixo com as guias, troca o fundo por branco ou cinza-claro e exporta em JPEG, PNG ou PDF, inclusive em folha de impressão. Todos os modelos de tamanho e ferramentas de edição podem ser usados, a primeira exportação está incluída e tudo é processado no próprio aparelho, sem conta.",
+   "paras": [
+    "O erro mais comum na foto 3x4 feita em casa não é a câmera, é o enquadramento. Rosto muito pequeno, cabeça cortada no topo ou ombros tortos fazem a foto parecer improvisada mesmo com boa luz. As guias de topo da cabeça, linha dos olhos e queixo resolvem isso: você encaixa o rosto e o recorte fica proporcional. Com pinça, arrastar e girar dá para ajustar o ângulo sem tirar a foto de novo.",
+    "O segundo ponto é o fundo. Parede com textura, porta ou cortina aparecem na foto e chamam atenção. O Snapport Lite permite manter o fundo original ou trocar por branco, cinza-claro, azul, vermelho ou uma cor personalizada, comparar antes e depois e refinar as bordas. Ajustes suaves de brilho, contraste, temperatura e nitidez deixam o visual natural, sem cara de filtro.",
+    "Por fim, a impressão. Mandar a foto solta para a gráfica pode sair esticada ou no tamanho errado. Escolha o modelo de tamanho ou defina um tamanho personalizado em milímetros, polegadas ou pixels, com o DPI que quiser, e exporte a folha de impressão pronta. Lembre que o aplicativo só edita a sua foto: passaporte, visto e documentos são emitidos pelo órgão em que você faz o pedido, e as regras de cada pedido valem mais do que qualquer modelo."
+   ],
+   "look": [
+    "O app mostra guias para topo da cabeça, olhos e queixo?",
+    "Dá para trocar o fundo por branco e comparar antes e depois?",
+    "Existe tamanho personalizado em mm com DPI escolhido?",
+    "A exportação sai em folha de impressão, além de arquivo solto?",
+    "A foto é processada no aparelho, sem criar conta?"
+   ],
+   "steps": [
+    "Fique de frente para uma janela, com luz no rosto, e peça para alguém tirar a foto na altura dos olhos.",
+    "Abra o Snapport Lite, escolha o tamanho ou crie um personalizado com as medidas pedidas.",
+    "Encaixe o rosto nas guias de topo da cabeça, olhos e queixo; ajuste com pinça, arrastar e girar.",
+    "Troque o fundo por branco ou cinza-claro, compare antes e depois e refine as bordas do cabelo.",
+    "Exporte em PDF ou JPEG na folha de impressão e confira o tamanho com uma régua antes de recortar."
+   ],
+   "rows": [
+    [
+     "Enquadramento",
+     "Guias de cabeça, olhos e queixo",
+     "O rosto fica proporcional ao quadro"
+    ],
+    [
+     "Fundo",
+     "Troca para branco com comparação antes e depois",
+     "Parede e porta somem sem recorte torto"
+    ],
+    [
+     "Impressão",
+     "Folha de impressão e tamanho personalizado em mm",
+     "A foto não sai esticada na gráfica"
+    ]
+   ],
+   "fits": "O Snapport Lite serve para quem precisa de foto 3x4, foto de passaporte ou de currículo e quer resolver em casa: 35 modelos para 28 países e regiões, tamanho personalizado, guias de rosto, troca de fundo e folha de impressão, tudo no aparelho, sem conta, sem anúncios e sem rastreamento.",
+   "faq": [
+    [
+     "A foto feita no app vale para qualquer documento?",
+     "O app só edita a sua foto. Quem aceita ou não é o órgão do pedido; confira as regras de tamanho e fundo de cada um."
+    ],
+    [
+     "Preciso criar conta?",
+     "Não. Tudo é processado no próprio aparelho, sem conta, sem anúncios e sem rastreamento."
+    ],
+    [
+     "Como garantir o tamanho certo na impressão?",
+     "Exporte a folha de impressão no tamanho escolhido e confira com uma régua antes de recortar."
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to make an ID photo at home on iPhone that prints at the right size | Snapport Lite",
+   "meta": "Need a small ID photo for school enrollment, a work badge or a résumé? Line up your face with guides, switch to a white background and export a print sheet, all on your iPhone.",
+   "h1": "Making an ID photo on your phone that comes out the right size on paper",
+   "lead": "School enrollment, a work badge, an application form: small ID photos turn up when you least expect them. This page shows how to do it at home with an iPhone without getting the framing wrong.",
+   "answer": "A good ID photo depends on three things: the face in the right place inside the frame, a plain light background, and a print at true size. In Snapport Lite you take a photo or pick one from your library, line up the top of the head, eye line and chin with the guides, switch the background to white or light gray, and export as JPEG, PNG or PDF, including a print sheet. Every size preset and editing tool can be used, your first export is included, and everything is processed on the device with no account.",
+   "paras": [
+    "The most common mistake with a home-made ID photo is not the camera but the framing. A face that is too small, a head cut off at the top or tilted shoulders make a photo look improvised even in good light. Head-top, eye-line and chin guides fix that: you fit the face to the guides and the crop stays in proportion. Pinch, drag and rotate adjust the angle without reshooting.",
+    "The second point is the background. Textured walls, doors and curtains show up and draw attention. Snapport Lite lets you keep the original background or switch to white, light gray, blue, red or a custom color, compare before and after, and refine the edges. Gentle brightness, contrast, warmth and sharpness controls keep you looking natural rather than filtered.",
+    "Finally, printing. Sending a loose photo to a print shop can come back stretched or the wrong size. Choose a size preset or set a custom size in millimeters, inches or pixels with your own DPI, and export a ready print sheet. Remember the app only edits your photo: passports, visas and ID cards are issued by the authority you apply to, and their rules count more than any preset."
+   ],
+   "look": [
+    "Does the app show guides for the top of the head, eyes and chin?",
+    "Can you switch to a white background and compare before and after?",
+    "Is there a custom size in millimeters with your chosen DPI?",
+    "Does export include a print sheet, not just a loose file?",
+    "Is the photo processed on the device without creating an account?"
+   ],
+   "steps": [
+    "Face a window so light falls on your face, and have someone take the photo at eye level.",
+    "Open Snapport Lite and choose a size, or create a custom one with the required measurements.",
+    "Fit your face to the head-top, eye-line and chin guides; adjust with pinch, drag and rotate.",
+    "Switch the background to white or light gray, compare before and after, and refine the hair edges.",
+    "Export a PDF or JPEG print sheet and check the size with a ruler before cutting."
+   ],
+   "rows": [
+    [
+     "Framing",
+     "Head, eye and chin guides",
+     "The face stays in proportion to the frame"
+    ],
+    [
+     "Background",
+     "Switch to white with before and after",
+     "Walls and doors disappear without a jagged cut-out"
+    ],
+    [
+     "Printing",
+     "Print sheet and custom size in mm",
+     "The photo does not come back stretched"
+    ]
+   ],
+   "fits": "Snapport Lite suits anyone who needs a small ID photo, a passport photo or a résumé photo and wants to do it at home: 35 presets for 28 countries and regions, custom sizes, face guides, background replacement and print sheets, all on the device with no account, ads or tracking.",
+   "faq": [
+    [
+     "Will a photo made in the app be accepted everywhere?",
+     "The app only edits your photo. The issuing authority decides; check its size and background rules."
+    ],
+    [
+     "Do I need an account?",
+     "No. Everything is processed on the device, with no account, ads or tracking."
+    ],
+    [
+     "How do I make sure it prints at the right size?",
+     "Export the print sheet at the chosen size and check it with a ruler before cutting."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "unblurry",
+  "locale": "ja",
+  "market": "JP",
+  "term": "ぼやけた 写真 修正",
+  "rank": 22,
+  "slug": "blurry-photo-fix-iphone-which-blur-can-be-saved-japan",
+  "loc": {
+   "title": "ぼやけた写真をiPhoneで修正する方法：手ブレ・ピンぼけ・暗い写真はどこまで直る？｜Unblurry",
+   "meta": "忘年会の暗い集合写真、子どもの手ブレ写真、昔のピンぼけ写真。ぼやけ方ごとに直せる範囲と、iPhoneだけで補正する手順。写真は端末の外に出ません。",
+   "h1": "ぼやけた写真をiPhoneで修正する：ぼやけ方で選ぶモードと手順",
+   "lead": "撮り直せない一枚がぼやけていたとき、最初に知りたいのは「これは直るのか」です。このページは、ぼやけの種類ごとにできることを整理しました。",
+   "answer": "ぼやけた写真は、原因によって直り方が違います。手ブレや甘いピントはシャープ系の補正で輪郭を取り戻しやすく、暗い場所のザラつきはノイズ除去とローライトで改善しやすい一方、被写体が大きく流れた写真を完全に元どおりにすることはできません。Unblurryは8つのモードで原因別に補正し、ビフォー／アフターを長押しで比べられます。処理はすべてiPhoneの中で完結し、写真をアップロードしません。",
+   "paras": [
+    "まず、ぼやけの原因を見分けます。全体がわずかに流れているなら手ブレ、背景はくっきりで顔だけ甘いならピンぼけ、暗い場所で撮ってザラザラしているならノイズです。忘年会やクリスマスの室内写真は、暗さとノイズと手ブレが重なっていることが多く、1回の補正より順番に処理したほうが自然に仕上がります。",
+    "Unblurryには、日常のぼやけをワンタップで補正するオートクリア、甘いピントや手ブレを救うシャープ、粒状感を抑えるノイズ除去、暗い写真を明るくするローライト、文字やホワイトボードをくっきりさせる書類、端末上のニューラルモデルでディテールを再構築するAI超解像、4×アップスケール、顔を補正して古い写真をよみがえらせるポートレート＆復元の8つのモードがあります。補正の前後はスライダーと長押しで比べられるので、やりすぎに気づけます。",
+    "写真の置き場所も大事です。子どもの顔や家族の集合写真を、知らないサイトにアップロードして補正するのは気が進まないはずです。Unblurryは100%オンデバイスで、写真がスマホの外に出ることはなく、サブスクも広告もトラッキングもありません。年賀状に使いたい一枚や、実家で見つけた古いプリントを撮った写真も、手元のiPhoneだけで仕上げられます。"
+   ],
+   "look": [
+    "ぼやけの原因（手ブレ・ピンぼけ・暗さ・ノイズ）に合わせたモードがあるか",
+    "補正前と補正後をすぐ比べられるか",
+    "写真をアップロードせず端末の中で処理するか",
+    "拡大しても輪郭がにじまないか（アップスケールの有無）",
+    "顔や古い写真の補正に向いたモードがあるか"
+   ],
+   "steps": [
+    "Unblurryで写真を開き、まずオートクリアで全体の変化を確認する。",
+    "手ブレやピンぼけが残るならシャープ、暗くてザラつくならローライトとノイズ除去を選ぶ。",
+    "人物写真はポートレート＆復元で顔まわりを整え、古い写真も同じモードで試す。",
+    "ビフォー／アフターを長押しで比べ、不自然なら一段階前に戻す。",
+    "年賀状や印刷に使う写真は、必要に応じて4×アップスケールで大きくしてから保存する。"
+   ],
+   "rows": [
+    [
+     "手ブレ・ピンぼけ",
+     "シャープで輪郭を取り戻す",
+     "大きく流れた写真は完全には戻らない"
+    ],
+    [
+     "暗い室内",
+     "ローライトとノイズ除去を順に",
+     "明るさとザラつきを別々に直すと自然"
+    ],
+    [
+     "古い写真",
+     "ポートレート＆復元、4×アップスケール",
+     "顔と拡大後の輪郭がにじみにくい"
+    ]
+   ],
+   "fits": "Unblurryは、暗い室内の集合写真、子どもの手ブレ写真、昔のプリントを撮った写真を、iPhoneだけで補正したい人に向いています。8つのモード、ビフォー／アフター比較、100%オンデバイス処理で、サブスク・広告・トラッキングはありません。",
+   "faq": [
+    [
+     "どんなぼやけ写真でも直りますか？",
+     "手ブレや甘いピント、暗さによるノイズは改善しやすいですが、被写体が大きく流れた写真を完全に元どおりにすることはできません。"
+    ],
+    [
+     "写真はどこかに送られますか？",
+     "いいえ。処理はすべてiPhoneの中で行い、写真がスマホの外に出ることはありません。"
+    ],
+    [
+     "古い紙の写真も補正できますか？",
+     "紙の写真をiPhoneで撮ってから、ポートレート＆復元や4×アップスケールで補正できます。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to fix a blurry photo on iPhone: what shake, missed focus and low light can and cannot recover | Unblurry",
+   "meta": "A dark party group shot, a child's shaky photo, an old out-of-focus print. What each kind of blur allows, and how to correct it on iPhone alone. Photos never leave the device.",
+   "h1": "Fixing a blurry photo on iPhone: pick the mode by the kind of blur",
+   "lead": "When the one photo you cannot retake is blurry, the first question is whether it can be fixed at all. This page sorts out what is possible for each kind of blur.",
+   "answer": "Blurry photos recover differently depending on the cause. Camera shake and soft focus respond well to sharpening, grain from dark rooms improves with denoise and low-light correction, but a subject that moved a long way during the exposure cannot be fully restored. Unblurry corrects by cause with eight modes, and you can press to compare before and after. Everything is processed on the iPhone, and photos are never uploaded.",
+   "paras": [
+    "Start by identifying the blur. If the whole frame is slightly smeared, it is camera shake; if the background is crisp and the face is soft, focus was missed; if a dark shot looks grainy, it is noise. Indoor party photos at the end of the year often combine darkness, noise and shake, and correcting them step by step looks more natural than a single pass.",
+    "Unblurry has eight modes: Auto Clear for everyday blur in one tap, Sharpen for soft focus and camera shake, Denoise for grain and high-ISO noise, Low Light to brighten dark shots, Document for text and whiteboards, AI Super Resolution where an on-device neural model rebuilds detail, 4× Upscale, and Portrait & Restore for faces and old photos. A before and after slider lets you spot overcorrection quickly.",
+    "Where the photo goes matters too. Few people want to upload a child's face or a family group shot to an unknown website. Unblurry is 100% on-device, so photos never leave the phone, with no subscription, ads or tracking. A holiday card photo or a snapshot of an old print can be finished on the iPhone in your hand."
+   ],
+   "look": [
+    "Is there a mode for the cause: shake, missed focus, darkness or noise?",
+    "Can you compare before and after instantly?",
+    "Is the photo processed on the device rather than uploaded?",
+    "Do edges stay clean when enlarged (is there an upscale)?",
+    "Is there a mode suited to faces and old photos?"
+   ],
+   "steps": [
+    "Open the photo in Unblurry and start with Auto Clear to see the overall change.",
+    "If shake or soft focus remains, use Sharpen; if it is dark and grainy, use Low Light and Denoise.",
+    "For portraits, use Portrait & Restore for faces, and try the same mode on old photos.",
+    "Press to compare before and after, and step back if it looks unnatural.",
+    "For cards or prints, enlarge with 4× Upscale if needed, then save."
+   ],
+   "rows": [
+    [
+     "Shake or soft focus",
+     "Sharpen to recover edges",
+     "Heavy motion blur cannot be fully undone"
+    ],
+    [
+     "Dark indoor shots",
+     "Low Light, then Denoise",
+     "Fixing brightness and grain separately looks natural"
+    ],
+    [
+     "Old photos",
+     "Portrait & Restore, 4× Upscale",
+     "Faces and enlarged edges stay clean"
+    ]
+   ],
+   "fits": "Unblurry suits people who want to fix dark group shots, a child's shaky photo or a snapshot of an old print on iPhone alone: eight modes, before and after comparison and 100% on-device processing, with no subscription, ads or tracking.",
+   "faq": [
+    [
+     "Can any blurry photo be fixed?",
+     "Shake, soft focus and low-light noise improve well, but a subject that moved a long way cannot be fully restored."
+    ],
+    [
+     "Is my photo sent anywhere?",
+     "No. Everything is processed on the iPhone, and photos never leave the phone."
+    ],
+    [
+     "Can I fix old paper photos?",
+     "Take a photo of the print with your iPhone, then use Portrait & Restore or 4× Upscale."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "scanto",
+  "locale": "de-DE",
+  "market": "DE",
+  "term": "dokumente scannen",
+  "rank": null,
+  "slug": "dokumente-scannen-iphone-offline-ohne-konto-und-durchsuchbar",
+  "loc": {
+   "title": "Dokumente scannen mit dem iPhone – offline, ohne Konto und später durchsuchbar | ScanTo",
+   "meta": "Mietvertrag, Kassenbon, Steuerbeleg: Papier als sauberes PDF scannen, Text auf dem Gerät erkennen und per Suchwort wiederfinden, ohne Cloud und ohne Registrierung. Auch im Flugmodus.",
+   "h1": "Dokumente mit dem iPhone scannen, ohne dass sie in einer Cloud landen",
+   "lead": "Belege für die Steuererklärung, ein unterschriebener Vertrag, die Kopie des Ausweises: Wer Papier digitalisiert, will es später wiederfinden und nicht irgendwo hochladen. Diese Seite zeigt, worauf es beim Scannen ankommt.",
+   "answer": "Ein guter Dokumentenscan auf dem iPhone braucht ein gerades, kontrastreiches PDF, eine Texterkennung, damit Sie per Suchwort statt per Dateiname suchen, und einen sicheren Ort für sensible Unterlagen. ScanTo Pro macht aus Papier in Sekunden saubere PDFs, erkennt den Text direkt auf dem Gerät, sortiert Scans automatisch in Quittungen, Ausweise, Karten und Verträge und funktioniert im Flugmodus genauso. Kein Konto, keine Cloud, kein Tracking; die App lässt sich mit Face ID sperren.",
+   "paras": [
+    "Viele Scanner-Apps sind schnell beim Fotografieren, aber beim Wiederfinden hilft das wenig: Nach einem Jahr heißen hundert Dateien „Scan 2026-03-14“. Mit Texterkennung auf dem Gerät wird jedes Wort im Dokument durchsuchbar. Sie tippen „Nebenkosten“ oder den Namen des Vermieters und finden das PDF, das diesen Text enthält. Den erkannten Text können Sie ansehen, kopieren oder als .txt exportieren.",
+    "Der zweite Punkt ist, wohin die Scans gehen. Ausweiskopien, Gehaltsabrechnungen und Verträge gehören nicht auf einen fremden Server. ScanTo Pro arbeitet ohne Cloud, ohne Konto und ohne Netzwerk: Registrierung, Login und Profil gibt es nicht, Analyse und Werbung ebenso wenig. Für das Teilen sensibler Unterlagen exportieren Sie passwortgeschützte, verschlüsselte PDFs.",
+    "Zum Schluss die Ordnung. Scans werden automatisch in Quittungen, Ausweise, Karten, Verträge und mehr sortiert, alles offline. Gerade zum Jahresende, wenn Belege für die Steuererklärung zusammengesucht werden, spart das die Suche durch den Fotostream. Wer mag, sperrt die App zusätzlich mit Face ID oder dem Gerätecode."
+   ],
+   "look": [
+    "Wird der Text auf dem Gerät erkannt, damit Sie im Inhalt suchen können?",
+    "Funktioniert die App ohne Konto und ohne Internet?",
+    "Lassen sich sensible PDFs mit Passwort verschlüsselt teilen?",
+    "Werden Scans automatisch nach Art sortiert?",
+    "Lässt sich die App selbst sperren?"
+   ],
+   "steps": [
+    "Legen Sie das Dokument auf eine dunkle, ebene Fläche und sorgen Sie für gleichmäßiges Licht.",
+    "Scannen Sie mit ScanTo Pro; Seiten werden als sauberes PDF zusammengefasst.",
+    "Lassen Sie die Texterkennung laufen und prüfen Sie die Einordnung als Quittung, Vertrag oder Ausweis.",
+    "Suchen Sie später per Wort im Dokumentinhalt statt nach Dateinamen.",
+    "Teilen Sie Ausweiskopien und Verträge als passwortgeschütztes, verschlüsseltes PDF."
+   ],
+   "rows": [
+    [
+     "Wiederfinden",
+     "Texterkennung und Suche im Inhalt",
+     "Ein Wort statt hundert Dateinamen durchsuchen"
+    ],
+    [
+     "Datenschutz",
+     "Kein Konto, keine Cloud, kein Netz",
+     "Ausweise und Verträge bleiben auf dem iPhone"
+    ],
+    [
+     "Teilen",
+     "Verschlüsselte PDF mit Passwort",
+     "Sensible Unterlagen gehen nicht offen per Mail"
+    ]
+   ],
+   "fits": "ScanTo Pro passt für Belege zur Steuererklärung, Mietverträge, Formulare und Ausweiskopien, wenn alles auf dem iPhone bleiben soll: Texterkennung auf dem Gerät, automatische Sortierung, Face-ID-Sperre und verschlüsselte PDF, ohne Konto, Cloud oder Werbung.",
+   "faq": [
+    [
+     "Funktioniert das Scannen ohne Internet?",
+     "Ja. ScanTo Pro geht nie online und funktioniert im Flugmodus genauso."
+    ],
+    [
+     "Kann ich nach Wörtern im Dokument suchen?",
+     "Ja. Die Texterkennung auf dem Gerät liest jeden Scan, und die Suche findet das Dokument, das ein Wort enthält."
+    ],
+    [
+     "Wie teile ich eine Ausweiskopie sicher?",
+     "Exportieren Sie sie als passwortgeschütztes, verschlüsseltes PDF und senden Sie das Passwort getrennt."
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to scan documents on iPhone offline, with no account, and search them later | ScanTo",
+   "meta": "Leases, receipts, tax papers: scan paper into clean PDFs, recognize the text on the device and find documents by any word inside, with no cloud and no sign-up. Works in airplane mode.",
+   "h1": "Scanning documents on iPhone without sending them to a cloud",
+   "lead": "Receipts for taxes, a signed contract, a copy of an ID: when you digitize paper you want to find it again later, not upload it somewhere. This page covers what matters when scanning.",
+   "answer": "A good document scan on iPhone needs a straight, high-contrast PDF, text recognition so you can search by content instead of file name, and a safe place for sensitive papers. ScanTo Pro turns paper into clean PDFs in seconds, reads the text on the device, sorts scans into receipts, IDs, cards and contracts, and works the same in airplane mode. There is no account, cloud or tracking, and the app can be locked with Face ID.",
+   "paras": [
+    "Many scanner apps are quick at capturing but little help at finding: a year later, a hundred files are called \"Scan 2026-03-14\". On-device text recognition makes every word searchable. Type the landlord's name or a word from a receipt and the PDF containing it appears. Recognized text can be viewed, copied or exported as a .txt file.",
+    "The second point is where scans go. ID copies, pay slips and contracts do not belong on someone else's server. ScanTo Pro works with no cloud, no account and no network: there is no sign-up, login or profile, and no analytics or ads. To share sensitive documents, export password-protected, encrypted PDFs.",
+    "Finally, order. Scans are sorted automatically into receipts, IDs, cards, contracts and more, all offline. At the end of the year, when receipts are gathered for taxes, that saves a hunt through the camera roll. You can also lock the app with Face ID or your passcode."
+   ],
+   "look": [
+    "Is text recognized on the device so you can search inside documents?",
+    "Does the app work without an account and without internet?",
+    "Can sensitive PDFs be shared password-protected and encrypted?",
+    "Are scans sorted by type automatically?",
+    "Can the app itself be locked?"
+   ],
+   "steps": [
+    "Place the document on a dark, flat surface with even light.",
+    "Scan with ScanTo Pro; pages are combined into a clean PDF.",
+    "Let text recognition run and check the category, such as receipt, contract or ID.",
+    "Later, search by a word in the content instead of the file name.",
+    "Share ID copies and contracts as password-protected, encrypted PDFs."
+   ],
+   "rows": [
+    [
+     "Finding",
+     "Text recognition and search inside",
+     "One word instead of a hundred file names"
+    ],
+    [
+     "Privacy",
+     "No account, no cloud, no network",
+     "IDs and contracts stay on the iPhone"
+    ],
+    [
+     "Sharing",
+     "Encrypted PDF with a password",
+     "Sensitive papers are not mailed in the clear"
+    ]
+   ],
+   "fits": "ScanTo Pro suits tax receipts, leases, forms and ID copies when everything should stay on the iPhone: on-device text recognition, automatic sorting, Face ID lock and encrypted PDFs, with no account, cloud or ads.",
+   "faq": [
+    [
+     "Does scanning work without internet?",
+     "Yes. ScanTo Pro never goes online and works the same in airplane mode."
+    ],
+    [
+     "Can I search for words inside documents?",
+     "Yes. On-device text recognition reads every scan, and search finds the document that contains a word."
+    ],
+    [
+     "How do I share an ID copy safely?",
+     "Export it as a password-protected, encrypted PDF and send the password separately."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "picclear",
+  "locale": "de-DE",
+  "market": "DE",
+  "term": "iphone speicher voll",
+  "rank": null,
+  "slug": "iphone-speicher-voll-fotos-sicher-aufraeumen-ohne-fehlgriff",
+  "loc": {
+   "title": "iPhone-Speicher voll? Fotos sicher aufräumen, ohne das Falsche zu löschen | PicClear",
+   "meta": "„Speicher fast voll“ – und dann? Erst Duplikate, Serienbilder, alte Screenshots und große Videos finden, alles prüfen und erst dann löschen. Auf dem Gerät, ohne Hochladen.",
+   "h1": "iPhone-Speicher voll: Fotos aufräumen, ohne Erinnerungen zu verlieren",
+   "lead": "Die Meldung kommt immer im falschen Moment: kurz vor dem Konzert, im Urlaub, vor dem Update. Diese Seite zeigt, wo die Gigabytes wirklich stecken und wie Sie sie freigeben, ohne aus Versehen das falsche Foto zu löschen.",
+   "answer": "Am meisten Speicher geben meist nicht einzelne Fotos frei, sondern Duplikate, Serienbilder, alte Screenshots, unscharfe Aufnahmen und große Videos. PicClear Pro durchsucht die Fotomediathek direkt auf dem iPhone, gruppiert, was sich entfernen lässt, und zeigt alles als Vorschau, bevor ein einziges Foto gelöscht wird. In jeder Gruppe bleibt ein empfohlenes bestes Foto, Favoriten werden nie automatisch ausgewählt, und Gelöschtes landet in „Zuletzt gelöscht“, wo es eine Zeit lang wiederherstellbar ist.",
+   "paras": [
+    "Wer bei „Speicher fast voll“ panisch durch die Mediathek wischt, löscht oft die falschen Dinge: ein einzelnes Lieblingsfoto statt der zwanzig fast gleichen Serienbilder daneben. Sinnvoller ist es, nach Art zu sortieren. Doppelte Fotos belegen doppelt Platz, Serienbilder bestehen aus vielen fast identischen Aufnahmen, Screenshots sammeln sich über Jahre, und ein paar lange Videos wiegen oft mehr als tausend Fotos.",
+    "PicClear Pro findet genau diese Gruppen: Duplikate, ähnliche Fotos mit Vorschlag für das beste, Screenshots, unscharfe Fotos, große Videos und große Fotos. Sie sehen mit Miniaturen genau, was entfernt würde, und nichts wird gelöscht, bis Sie bestätigen. Ihre Favoriten sind geschützt und werden nie automatisch ausgewählt. Scannen und ansehen können Sie alles, bevor Sie sich für das Aufräumen entscheiden.",
+    "Der dritte Punkt ist Vertrauen. Eine App, die Ihre ganze Fotomediathek liest, sollte die Bilder nicht hochladen. PicClear Pro analysiert alles auf dem Gerät, ohne Konto, ohne Werbung, ohne Tracking und ohne Analyse durch Dritte, und funktioniert vollständig offline."
+   ],
+   "look": [
+    "Findet die App Duplikate, Serienbilder, Screenshots und große Videos getrennt?",
+    "Sehen Sie eine Vorschau, bevor etwas gelöscht wird?",
+    "Bleibt in jeder Gruppe ein bestes Foto erhalten?",
+    "Sind Favoriten vor automatischer Auswahl geschützt?",
+    "Werden die Fotos auf dem Gerät analysiert statt hochgeladen?"
+   ],
+   "steps": [
+    "Prüfen Sie unter Einstellungen > Allgemein > iPhone-Speicher, wie viel Platz „Fotos“ belegt.",
+    "Starten Sie in PicClear Pro den Scan der Fotomediathek auf dem Gerät.",
+    "Beginnen Sie mit großen Videos und Duplikaten, dort steckt meist der meiste Platz.",
+    "Gehen Sie Serienbilder durch: Das empfohlene beste Foto bleibt, die übrigen wählen Sie ab oder aus.",
+    "Bestätigen Sie das Löschen und leeren Sie „Zuletzt gelöscht“ erst, wenn Sie sicher sind."
+   ],
+   "rows": [
+    [
+     "Große Videos",
+     "Nach Größe sortiert prüfen",
+     "Wenige Videos wiegen oft mehr als tausend Fotos"
+    ],
+    [
+     "Serienbilder",
+     "Bestes Foto behalten, Rest prüfen",
+     "Viel Platz, ohne die Erinnerung zu verlieren"
+    ],
+    [
+     "Sicherheit",
+     "Vorschau, Favoritenschutz, „Zuletzt gelöscht“",
+     "Ein Fehlgriff lässt sich eine Zeit lang zurückholen"
+    ]
+   ],
+   "fits": "PicClear Pro passt, wenn „Speicher fast voll“ wieder auftaucht und Sie Platz schaffen wollen, ohne Erinnerungen zu riskieren: Duplikate, ähnliche und unscharfe Fotos, Screenshots und große Videos finden, alles prüfen, auf dem Gerät und ohne Konto oder Werbung.",
+   "faq": [
+    [
+     "Löscht die App Fotos automatisch?",
+     "Nein. Nichts wird gelöscht, bis Sie bestätigen, und Favoriten werden nie automatisch ausgewählt."
+    ],
+    [
+     "Kann ich ein versehentlich gelöschtes Foto zurückholen?",
+     "Entfernte Objekte landen in „Zuletzt gelöscht“ in der Fotos-App und sind dort eine Zeit lang wiederherstellbar."
+    ],
+    [
+     "Werden meine Fotos hochgeladen?",
+     "Nein. Alles wird auf dem Gerät analysiert, und die App funktioniert vollständig offline."
+    ]
+   ]
+  },
+  "en": {
+   "title": "iPhone storage full? Clear photos safely without deleting the wrong ones | PicClear",
+   "meta": "\"Storage Almost Full\" again? Find duplicates, bursts, old screenshots and large videos, review everything, then delete. On the device, with no uploads.",
+   "h1": "iPhone storage full: clearing photos without losing memories",
+   "lead": "The warning always comes at the wrong moment: before a concert, on holiday, before an update. This page shows where the gigabytes really are and how to get them back without deleting the wrong photo.",
+   "answer": "The most space usually comes back not from single photos but from duplicates, bursts, old screenshots, blurry shots and large videos. PicClear Pro scans the photo library on the iPhone, groups what is safe to remove and previews everything before a single photo is deleted. Each group keeps a suggested best photo, Favorites are never selected automatically, and removed items go to Recently Deleted, where they can be recovered for a limited time.",
+   "paras": [
+    "Swiping through the library in a panic usually deletes the wrong things: one favorite photo instead of the twenty near-identical burst shots beside it. Sorting by type works better. Duplicates take double the space, bursts are many near-identical frames, screenshots pile up for years, and a few long videos often outweigh a thousand photos.",
+    "PicClear Pro finds exactly these groups: duplicate photos, similar photos with a suggested best shot, screenshots, blurry photos, large videos and large photos. Thumbnails show exactly what would be removed, and nothing is deleted until you confirm. Favorites are protected from automatic selection. You can scan and preview everything before deciding to clean.",
+    "The third point is trust. An app that reads your whole photo library should not upload it. PicClear Pro analyzes everything on the device, with no account, ads, tracking or third-party analytics, and works fully offline."
+   ],
+   "look": [
+    "Does the app separate duplicates, bursts, screenshots and large videos?",
+    "Do you see a preview before anything is deleted?",
+    "Does each group keep a best photo?",
+    "Are Favorites protected from automatic selection?",
+    "Are photos analyzed on the device instead of uploaded?"
+   ],
+   "steps": [
+    "Check Settings > General > iPhone Storage to see how much space Photos uses.",
+    "Run the PicClear Pro scan of your photo library on the device.",
+    "Start with large videos and duplicates, where most space usually is.",
+    "Review bursts: the suggested best photo stays, and you choose what goes.",
+    "Confirm deletion and empty Recently Deleted only when you are sure."
+   ],
+   "rows": [
+    [
+     "Large videos",
+     "Review sorted by size",
+     "A few videos often outweigh a thousand photos"
+    ],
+    [
+     "Bursts",
+     "Keep the best, review the rest",
+     "Lots of space without losing the moment"
+    ],
+    [
+     "Safety",
+     "Preview, Favorites protection, Recently Deleted",
+     "A mistake can be undone for a while"
+    ]
+   ],
+   "fits": "PicClear Pro suits anyone facing \"Storage Almost Full\" who wants space back without risking memories: find duplicates, similar and blurry photos, screenshots and large videos, review everything, on the device with no account or ads.",
+   "faq": [
+    [
+     "Does the app delete photos automatically?",
+     "No. Nothing is deleted until you confirm, and Favorites are never selected automatically."
+    ],
+    [
+     "Can I recover a photo I deleted by mistake?",
+     "Removed items go to Recently Deleted in Photos and can be recovered there for a limited time."
+    ],
+    [
+     "Are my photos uploaded?",
+     "No. Everything is analyzed on the device, and the app works fully offline."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "battai",
+  "locale": "ja",
+  "market": "JP",
+  "term": "バッテリー 劣化",
+  "rank": 11,
+  "slug": "iphone-battery-wear-check-before-selling-or-buying-used-japan",
+  "loc": {
+   "title": "iPhoneのバッテリー劣化を確認する方法：最大容量・充放電回数・80%の目安｜BattAI",
+   "meta": "機種変更や中古売買の前に、iPhoneのバッテリー劣化をどう見るか。最大容量と充放電回数の読み方、80%の目安、推移を記録して書き出す方法。BattAIは通信なし・広告なし。",
+   "h1": "iPhoneのバッテリー劣化はどこを見ればいい？最大容量と充放電回数の読み方",
+   "lead": "「最近減りが早い」「下取りに出す前に確認したい」「中古で買うなら何％まで大丈夫？」。バッテリー劣化を数字で判断したい人のためのページです。",
+   "answer": "バッテリー劣化は、最大容量（新品時に対する今の容量）と充放電回数の2つで判断します。iPhoneの設定の「バッテリー」で最大容量を確認でき、80%を下回ると交換を検討する目安とされています。ただし1回の数字より、数週間の推移のほうが参考になります。BattAIはバッテリー状態スコアとスコアを形づくる要因、最大容量の推移、充放電回数をまとめて表示し、各項目に情報源と限界を示します。データは端末に保存し、通信も広告もありません。",
+   "paras": [
+    "まず最大容量の意味です。新品のときを100%として、いま蓄えられる量の割合を示します。数字が下がるほど同じ使い方でも早く減り、寒い日や負荷の高いアプリで急に電源が落ちやすくなります。中古で買う場合や下取りに出す場合は、この数字と充放電回数をセットで見るのが基本です。充放電回数が少ないのに最大容量が大きく下がっているなら、高温での使用や充電の仕方が影響している可能性があります。",
+    "次に推移です。最大容量は日によって少し揺れるので、1回だけ見て一喜一憂するより、数週間の変化を追うほうが判断しやすくなります。BattAIはバッテリー状態スコアに加えて、スコアを形づくる要因、最大容量の推移、充放電回数、充電ケア、充電範囲、充電速度を表示します。BattAIが公開iOS APIから使うのは電池残量・充電状態・低電力モード・熱状態・時刻の5つで、ほかの結果は記録から計算するかあなたが追加し、各項目に情報源と限界を表示します。",
+    "売る・譲る場面では、口頭の「バッテリー大丈夫です」より、記録を見せるほうが話が早く進みます。BattAIはデータを書き出すファイルをこのデバイスで作成し、アップロードはしません。広告、利用解析、追跡、他社SDK、通信もありません。より深い履歴、計画、レポートは一度の支払いで使え、サブスクリプションはありません。"
+   ],
+   "look": [
+    "最大容量の今の数字だけでなく、推移を記録できるか",
+    "充放電回数を最大容量とセットで確認できるか",
+    "スコアの根拠や情報源、限界が示されているか",
+    "データを端末内に保存し、アップロードしないか",
+    "記録をファイルに書き出して見せられるか"
+   ],
+   "steps": [
+    "設定 > バッテリー から、いまの最大容量を確認してメモする。",
+    "BattAIを開き、バッテリー状態スコアとスコアを形づくる要因を確認する。",
+    "最大容量と充放電回数を記録し、数週間ごとに推移を見る。",
+    "充電ケアと充電範囲で、ふだんの充電の仕方を見直す。",
+    "下取りや譲渡の前に、データを書き出してファイルとして残す。"
+   ],
+   "rows": [
+    [
+     "最大容量",
+     "80%を下回っていないか、推移はどうか",
+     "交換や買い替えを考える目安になる"
+    ],
+    [
+     "充放電回数",
+     "最大容量とセットで見る",
+     "回数のわりに劣化が早いなら使い方を見直せる"
+    ],
+    [
+     "記録",
+     "推移と書き出し",
+     "売買のときに口約束ではなく記録で話せる"
+    ]
+   ],
+   "fits": "BattAIは、機種変更前に下取りの状態を確かめたい人、中古iPhoneのバッテリーを数字で判断したい人、減りの早さが劣化なのか使い方なのかを知りたい人に向いています。情報源と限界を示し、データは端末に保存、広告も通信もありません。",
+   "faq": [
+    [
+     "最大容量が何％になったら交換すべき？",
+     "一般に80%を下回ると交換を検討する目安とされています。1回の数字ではなく、数週間の推移も見て判断してください。"
+    ],
+    [
+     "BattAIはデータを外部に送りますか？",
+     "いいえ。広告、利用解析、追跡、他社SDK、通信はなく、データは端末に保存します。ペアリング済みApple Watchへは最小限のスナップショットだけを直接送ります。"
+    ],
+    [
+     "中古で売るときに記録を見せられますか？",
+     "データを書き出す機能で、このデバイス上にファイルを作成できます。アップロードはしません。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to check iPhone battery wear before selling or buying used: maximum capacity, cycles and the 80% mark | BattAI",
+   "meta": "Before trading in or buying a used iPhone, read battery wear properly: what maximum capacity and cycle count mean, the 80% guideline, and how to record and export the trend. No network, no ads.",
+   "h1": "Checking iPhone battery wear: reading maximum capacity and cycle count",
+   "lead": "\"It drains faster lately.\" \"I want to check before trading it in.\" \"How low is too low on a used phone?\" This page is for people who want to judge battery wear by numbers.",
+   "answer": "Battery wear comes down to two numbers: maximum capacity, the charge the battery holds now compared with when it was new, and cycle count. Maximum capacity appears under Battery in the iPhone's Settings, and dropping below 80% is the usual point to consider a replacement. A trend over several weeks says more than one reading. BattAI shows a battery health score, what shapes the score, maximum capacity over time and cycles, with the source and limits of each detail. Data stays on the device, with no network requests or ads.",
+   "paras": [
+    "Maximum capacity treats the new battery as 100% and shows how much it can hold now. The lower it goes, the sooner the same day of use runs it down, and the more likely the phone is to shut off on cold days or under heavy apps. When buying used or trading in, read this number together with cycle count. Large wear on few cycles can point to heat or charging habits.",
+    "Then the trend. Maximum capacity wobbles from day to day, so following several weeks is easier to judge than one look. BattAI shows a battery health score plus what shapes it, maximum capacity over time, cycles, charge care, charge range and charge rate. It uses five values from public iOS APIs: battery level, charge state, Low Power Mode, thermal state and time; other results are calculated from those readings or added by you, and each detail shows its source and limits.",
+    "When selling or handing a phone on, showing a record moves faster than saying \"the battery is fine\". BattAI creates export files on the device and uploads nothing, with no ads, analytics, tracking, third-party SDKs or internet requests. Deeper history, planning and reports are a single payment, with no subscription."
+   ],
+   "look": [
+    "Can you record the trend, not just today's maximum capacity?",
+    "Is cycle count shown alongside maximum capacity?",
+    "Are the basis, sources and limits of the score explained?",
+    "Is data kept on the device rather than uploaded?",
+    "Can you export the record as a file to show someone?"
+   ],
+   "steps": [
+    "Check today's maximum capacity under Settings > Battery and note it.",
+    "Open BattAI and look at the battery health score and what shapes it.",
+    "Record maximum capacity and cycles, and review the trend every few weeks.",
+    "Use charge care and charge range to review everyday charging.",
+    "Before a trade-in or sale, export the data as a file."
+   ],
+   "rows": [
+    [
+     "Maximum capacity",
+     "Below 80%? Which way is it trending?",
+     "A guide for replacing the battery or the phone"
+    ],
+    [
+     "Cycle count",
+     "Read with maximum capacity",
+     "Fast wear on few cycles points to habits worth changing"
+    ],
+    [
+     "Records",
+     "Trend and export",
+     "A sale rests on a record, not a promise"
+    ]
+   ],
+   "fits": "BattAI suits people checking a phone before trade-in, buyers judging a used iPhone's battery by numbers, and anyone wondering whether fast drain is wear or usage. It shows sources and limits, keeps data on the device, and has no ads or network requests.",
+   "faq": [
+    [
+     "At what maximum capacity should I replace the battery?",
+     "Dropping below 80% is the usual guideline. Look at the trend over several weeks rather than one reading."
+    ],
+    [
+     "Does BattAI send data anywhere?",
+     "No. There are no ads, analytics, tracking, third-party SDKs or internet requests; data stays on the device, except a minimal snapshot sent directly to a paired Apple Watch."
+    ],
+    [
+     "Can I show a record when selling?",
+     "Yes, the export creates a file on this device. Nothing is uploaded."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "shotinbox",
+  "locale": "ja",
+  "market": "JP",
+  "term": "スクショ 整理",
+  "rank": null,
+  "slug": "too-many-screenshots-sort-and-search-text-iphone-japan",
+  "loc": {
+   "title": "スクショが多すぎて探せない：iPhoneで自動分類して文字で検索する整理術｜ShotInbox",
+   "meta": "レシート、チケット、地図、買い物メモ…カメラロールに埋もれたスクショを、カテゴリ分けして中の文字で検索。勝手に消さず、処理は端末内。iPhoneでのスクショ整理の手順。",
+   "h1": "スクショが多すぎて見つからない：iPhoneで分類して、中の文字で探す",
+   "lead": "「あのスクショどこだっけ」と写真アプリを何分もスクロールした経験がある人へ。スクショは撮るのは一瞬、探すのは大変です。このページでは、消さずに整理して、すぐ見つける方法をまとめました。",
+   "answer": "スクショ整理のコツは、全部を手で分けるのではなく、種類ごとに自動で振り分け、中に写っている文字で検索できるようにすることです。ShotInboxはスクショを買い物・レシート・旅行・チケット・地図・チャット・仕事・学習・レシピなどに分類し、テキストやリンクで検索できます。地図で開く、リンクを開く、リマインダーに追加などの操作もその場でできます。自動削除はせず、OCRはApple VisionとNatural Languageで端末内処理、アップロードはありません。",
+   "paras": [
+    "スクショが増える理由は、あとで使うつもりのものを全部撮るからです。ネットショッピングの注文確認、イベントのチケット、乗り換え案内、レシピ、友だちとのやり取り。問題は、写真アプリではそれが撮った順に並ぶだけで、何が写っているかでは探せないことです。結果、同じ情報をもう一度探し直すか、スクショ自体を見つけられずに終わります。",
+    "ShotInboxはスクショを読み取り、買い物・レシート・旅行・チケット・地図/場所・チャット/SNS・仕事・学習・レシピ/料理・アイデア・QR/コード・エラー/技術・機密に振り分けます。テキスト、カテゴリ、リンクで検索でき、検出した予定とリマインダーは時系列で表示されます。見つけたスクショから、マップで開く・リンクを開く・テキストをコピー・コードを開く・電話をかける・荷物を追跡・カレンダーに追加まで進められます。",
+    "片づけるときも安心です。ShotInboxは自動で削除せず、「写真」アプリで最終確認が表示されます。読み取りはApple VisionとNatural Languageをデバイス上で処理し、アップロードはありません。機密カテゴリに入ったスクショをロックする機能や、ウィジェット、バックアップと書き出しは買い切りで使え、サブスクリプションはありません。"
+   ],
+   "look": [
+    "スクショを内容ごとに自動で分類できるか",
+    "画像の中の文字で検索できるか",
+    "見つけたスクショから地図やリンク、カレンダーへすぐ進めるか",
+    "勝手に削除せず、最後に自分で確認できるか",
+    "読み取りが端末内で完結し、アップロードしないか"
+   ],
+   "steps": [
+    "ShotInboxに写真ライブラリへのアクセスを許可し、スクショを読み込む。",
+    "自動で振り分けられたカテゴリ（レシート、チケット、旅行など）をざっと確認する。",
+    "探したいときは、スクショに写っていた単語や店名で検索する。",
+    "見つけたスクショから、リンクを開く・地図で開く・カレンダーに追加などを実行する。",
+    "不要なスクショは選んで削除し、「写真」アプリの最終確認で内容を見てから消す。"
+   ],
+   "rows": [
+    [
+     "探す",
+     "画像の中の文字で検索",
+     "撮った日を覚えていなくても見つかる"
+    ],
+    [
+     "使う",
+     "地図・リンク・カレンダーへ直接",
+     "スクショを見て手で打ち直す手間がない"
+    ],
+    [
+     "片づける",
+     "自動削除なし、最終確認あり",
+     "必要なスクショを消してしまう心配がない"
+    ]
+   ],
+   "fits": "ShotInboxは、カメラロールがスクショで埋まっている人、レシートやチケット、買い物メモをスクショで残す人、写真の中の文字で探したい人に向いています。分類・文字検索・その場の操作を、端末内処理で行います。",
+   "faq": [
+    [
+     "スクショが勝手に消えることはありますか？",
+     "ありません。ShotInboxは自動削除をせず、削除するときは「写真」アプリで最終確認が表示されます。"
+    ],
+    [
+     "スクショの内容はどこかに送られますか？",
+     "いいえ。OCRはApple VisionとNatural Languageでデバイス上で処理し、アップロードはありません。"
+    ],
+    [
+     "文字が写っていないスクショも分類されますか？",
+     "地図や場所、QR/コードなどのカテゴリもあり、テキスト以外の手がかりでも振り分けます。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Too many screenshots to find anything? Sort them automatically and search the text inside on iPhone | ShotInbox",
+   "meta": "Receipts, tickets, maps, shopping notes buried in the camera roll: sort screenshots into categories and search the words inside them. Nothing is auto-deleted, and processing stays on the device.",
+   "h1": "Too many screenshots: sorting them on iPhone and searching the text inside",
+   "lead": "For anyone who has scrolled Photos for minutes looking for one screenshot. Taking a screenshot takes a second; finding it again does not. This page covers sorting without deleting, and finding fast.",
+   "answer": "The trick is not to file screenshots by hand but to sort them by type automatically and search the text that appears in them. ShotInbox sorts screenshots into shopping, receipts, travel, tickets, maps, chats, work, study, recipes and more, and lets you search text, categories and links. From a result you can open it in Maps, open the link or add a reminder. It never auto-deletes, and OCR runs on the device with Apple Vision and Natural Language; nothing is uploaded.",
+   "paras": [
+    "Screenshots pile up because we capture everything we mean to use later: order confirmations, event tickets, transit routes, recipes, chats. The problem is that Photos lists them by date, not by what they show, so you either search for the information again or never find the screenshot.",
+    "ShotInbox reads screenshots and sorts them into Shopping, Receipts, Travel, Tickets, Maps & Places, Chats & Social, Work, Study, Recipes & Food, Inspiration, QR & Codes, Errors & Tech and Sensitive. You can search text, categories and links, and detected events and reminders are listed by time. From a screenshot you can open it in Maps, open a link, copy text, open a code, call a number, track a package, or add it to Calendar.",
+    "Clearing up is safe too. ShotInbox never auto-deletes, and Photos asks for final confirmation. Apple Vision and Natural Language run on the device, with nothing uploaded. Sensitive lock, widgets, backup and export come with a one-time purchase, with no subscription."
+   ],
+   "look": [
+    "Are screenshots sorted by content automatically?",
+    "Can you search the text inside images?",
+    "Can you jump from a screenshot to Maps, a link or Calendar?",
+    "Does it avoid deleting anything without your final confirmation?",
+    "Does reading stay on the device without uploads?"
+   ],
+   "steps": [
+    "Give ShotInbox access to your photo library and let it load your screenshots.",
+    "Skim the categories it sorted them into: receipts, tickets, travel and so on.",
+    "To find one, search a word or shop name that appeared in the screenshot.",
+    "From the result, open the link, open it in Maps or add it to Calendar.",
+    "Select screenshots you no longer need and check them in the Photos confirmation before deleting."
+   ],
+   "rows": [
+    [
+     "Finding",
+     "Search the text inside images",
+     "Works even when you forget the date"
+    ],
+    [
+     "Using",
+     "Straight to Maps, links and Calendar",
+     "No retyping from a screenshot"
+    ],
+    [
+     "Clearing",
+     "No auto-delete, final confirmation",
+     "No risk of losing the one you needed"
+    ]
+   ],
+   "fits": "ShotInbox suits people whose camera roll is full of screenshots, who keep receipts, tickets and shopping notes as screenshots, and who want to search by the words inside them. Sorting, text search and quick actions all run on the device.",
+   "faq": [
+    [
+     "Will screenshots be deleted automatically?",
+     "No. ShotInbox never auto-deletes, and Photos asks for final confirmation when you delete."
+    ],
+    [
+     "Is screenshot content sent anywhere?",
+     "No. OCR runs on the device with Apple Vision and Natural Language, and nothing is uploaded."
+    ],
+    [
+     "Are screenshots without text sorted too?",
+     "Yes, categories such as Maps & Places and QR & Codes use other clues besides text."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "caldaily",
+  "locale": "ja",
+  "market": "JP",
+  "term": "電卓 かわいい",
+  "rank": null,
+  "slug": "cute-calculator-app-no-ads-history-widget-japan",
+  "loc": {
+   "title": "かわいい電卓アプリを選ぶなら：見た目と広告なし・履歴・ウィジェットで比べる｜CalDaily",
+   "meta": "ホーム画面に置きたくなる見た目の電卓を探している人へ。テーマの数だけでなく、広告の有無、計算履歴、ウィジェット、割り勘や割引のツールで比べるポイント。",
+   "h1": "かわいい電卓アプリの選び方：見た目のあとに確認したい4つのこと",
+   "lead": "「電卓 かわいい」で探すと、見た目のいいアプリはたくさん見つかります。ところが使い始めると、広告が出る、履歴が消える、ウィジェットがない、で結局標準の電卓に戻る人も多いはず。このページは、毎日使い続けられるかで選ぶためのチェックリストです。",
+   "answer": "見た目で選ぶ電卓は、テーマの好み＋使い勝手の4点で比べると失敗しません。①計算中に広告が出ないか、②計算結果が履歴に残り、あとから探せるか、③ホーム画面ウィジェットで開かずに計算できるか、④割り勘・割引・税込のようなよく使う計算がすぐできるか。CalDailyは100種類のテーマ（キーの形・素材・光がそれぞれ異なる）、選んだテーマに合わせて見た目が変わるウィジェット、名前を付けて検索できる履歴、8つのツールを備え、広告もアカウントもありません。",
+   "paras": [
+    "電卓アプリでよくある不満は、計算のたびに広告が挟まること、そして閉じた瞬間に計算が消えることです。かわいいテーマに惹かれて入れても、この2つがあると数日で使わなくなります。CalDailyはすべての結果を残し、名前と種類を付けられるので、一週間後でも「割り勘した食事」や「比較したローン」をそのまま検索できます。履歴は日付ごとにまとまり、必要ならCSVに書き出せます。",
+    "見た目の話に戻ると、CalDailyのテーマは落ち着いたセラミックから深みのあるプリズムまで100種類あり、キーの形・素材・光がそれぞれ違います。ホーム画面ウィジェットはアプリを開かずに計算でき、選んでいるテーマに合わせて見た目も変わるので、ホーム画面の雰囲気を崩しません。1種類は最初から使え、一度の購入で残りすべてと全ツールの無制限利用が解放されます。サブスクリプションはありません。",
+    "ツールも選ぶ理由になります。メモリー、関数計算、割引と税、チップと割り勘、単位換算、日数と営業日、ローン返済額、旅行の燃料費の8つがあり、一度設定した税率や人数を既定値として覚えます。すべて端末内で動作し、アカウントもクラウド同期も広告も解析もありません。"
+   ],
+   "look": [
+    "計算中や結果表示のときに広告が出ないか",
+    "計算結果が履歴に残り、あとから検索できるか",
+    "ホーム画面ウィジェットで、開かずに計算できるか",
+    "テーマを変えたときにウィジェットの見た目も変わるか",
+    "割り勘・割引・税込など、よく使う計算がすぐできるか"
+   ],
+   "steps": [
+    "CalDailyを開き、テーマ一覧から好きな見た目を選ぶ。",
+    "ホーム画面を長押しして、CalDailyのウィジェットを追加する。",
+    "割り勘や割引の計算をしたら、結果に名前を付けて保存する。",
+    "あとで探すときは、履歴で名前やツールで絞り込む。",
+    "税率や人数など、よく使う値を各ツールの既定値に設定しておく。"
+   ],
+   "rows": [
+    [
+     "見た目",
+     "テーマの数と、ウィジェットへの反映",
+     "ホーム画面に置いたときに統一感が出る"
+    ],
+    [
+     "使い続けられるか",
+     "広告なし、計算履歴の検索",
+     "かわいいだけで終わらず毎日使える"
+    ],
+    [
+     "よく使う計算",
+     "割り勘・割引と税・単位換算などのツール",
+     "標準の電卓に戻らなくて済む"
+    ]
+   ],
+   "fits": "CalDailyは、ホーム画面に置きたくなる見た目の電卓が欲しい人、割り勘や割引の計算を履歴に残したい人、広告のない電卓を探している人に向いています。100種類のテーマ、ウィジェット、検索できる履歴、8つのツールを端末内で使えます。",
+   "faq": [
+    [
+     "広告は出ますか？",
+     "出ません。CalDailyには広告も解析もアカウントもありません。"
+    ],
+    [
+     "計算した内容はあとから見られますか？",
+     "すべての結果が履歴に残り、名前と種類を付けて検索できます。日付ごとにまとまり、CSVにも書き出せます。"
+    ],
+    [
+     "ウィジェットもテーマに合わせて変わりますか？",
+     "はい。ホーム画面ウィジェットは選んでいるテーマに合わせて見た目が変わります。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "Choosing an aesthetic calculator app: compare looks, no ads, history and widgets | CalDaily",
+   "meta": "Looking for a calculator pretty enough for your Home Screen? Beyond themes, compare ads, saved history, widgets and everyday tools such as split, discount and tax.",
+   "h1": "Picking an aesthetic calculator app: four things to check after the looks",
+   "lead": "Search for a cute or aesthetic calculator and you will find plenty of pretty ones. Many people still drift back to the default calculator once ads appear, history vanishes or there is no widget. This page is a checklist for choosing one you will keep using.",
+   "answer": "Judge a good-looking calculator on its theme plus four practical points: no ads mid-calculation, results kept in a searchable history, a Home Screen widget that calculates without opening the app, and quick tools for splitting, discounts and tax. CalDaily has one hundred themes with their own key shape, material and light, a widget that matches your theme, a history where results can be named and searched, and eight tools, with no ads and no account.",
+   "paras": [
+    "The usual complaints about calculator apps are ads between calculations and results that disappear the moment the app closes. A pretty theme will not save an app with both problems. CalDaily keeps every result and lets you give it a name and a type, so a week later you can search for the dinner you split or the loan you compared. History groups by day and exports to CSV.",
+    "Back to looks: CalDaily's themes run from quiet ceramics to deep prisms, one hundred in all, each with its own key shape, material and light. The Home Screen widget calculates without opening the app and matches the theme you chose, so it fits the rest of your screen. One theme comes with the app, and a single purchase unlocks the rest along with unlimited use of every tool, with no subscription.",
+    "The tools are a reason too: memory, scientific functions, discount and tax, tip and split, unit conversion, date differences and business days, loan payments and trip fuel cost. Each opens with defaults you set once, such as your tax rate or party size. Everything runs on the device, with no account, cloud sync, advertising or analytics."
+   ],
+   "look": [
+    "Do ads appear while you calculate?",
+    "Are results kept in a history you can search?",
+    "Can a Home Screen widget calculate without opening the app?",
+    "Does the widget change with your theme?",
+    "Are split, discount and tax one tap away?"
+   ],
+   "steps": [
+    "Open CalDaily and choose a look from the theme list.",
+    "Long-press the Home Screen and add the CalDaily widget.",
+    "After splitting a bill or checking a discount, name the result and save it.",
+    "To find it later, filter History by name or tool.",
+    "Set your usual tax rate or party size as each tool's default."
+   ],
+   "rows": [
+    [
+     "Looks",
+     "Number of themes and a matching widget",
+     "The Home Screen stays consistent"
+    ],
+    [
+     "Staying power",
+     "No ads, searchable history",
+     "Pretty and still used every day"
+    ],
+    [
+     "Everyday maths",
+     "Split, discount and tax, unit conversion",
+     "No reason to go back to the default app"
+    ]
+   ],
+   "fits": "CalDaily suits people who want a calculator that looks good on the Home Screen, who want split and discount results saved, and who are tired of ads in calculators: one hundred themes, a widget, searchable history and eight tools, all on the device.",
+   "faq": [
+    [
+     "Are there ads?",
+     "No. CalDaily has no advertising, analytics or account."
+    ],
+    [
+     "Can I see past calculations?",
+     "Every result is kept in History, where you can name, type and search it; it groups by day and exports to CSV."
+    ],
+    [
+     "Does the widget follow my theme?",
+     "Yes, the Home Screen widget matches whichever theme you are using."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "photocream",
+  "locale": "ko",
+  "market": "KR",
+  "term": "필름카메라 감성",
+  "rank": null,
+  "slug": "film-camera-mood-on-iphone-grain-halation-light-leak-korea",
+  "loc": {
+   "title": "필름카메라 감성, 아이폰으로 찍기 전에 바로 보는 법 | PhotoCream 필름 필터",
+   "meta": "필카 감성의 그레인, 할레이션, 빛샘을 셔터 누르기 전에 실시간으로 확인하고, 100개 이상의 필름 룩과 색감 복사로 통일감 있게 찍는 법. 기기 안에서 처리, 구독·광고 없음.",
+   "h1": "아이폰으로 필름카메라 감성 내기: 찍은 뒤 보정보다 찍기 전 미리보기",
+   "lead": "피드를 넘기다 보면 유독 필름 느낌이 나는 사진이 눈에 들어옵니다. 같은 아이폰으로 찍었는데 왜 다를까요? 이 페이지는 필카 감성을 만드는 요소와, 찍는 순간부터 그 느낌을 내는 방법을 정리했습니다.",
+   "answer": "필름카메라 감성은 그레인(입자감), 할레이션(밝은 부분 주변의 번짐), 빛샘, 그리고 살짝 바랜 색감이 함께 만들어 냅니다. 찍은 뒤 필터를 얹으면 사진마다 느낌이 달라지기 쉬운데, 셔터를 누르기 전에 그 효과를 실시간으로 보면 구도와 빛을 거기에 맞춰 잡을 수 있습니다. PhotoCream은 100개 이상의 필름 룩을 실시간 미리보기로 보여 주고, 원하는 사진의 색감을 복사해 여러 장을 같은 톤으로 맞출 수 있습니다. 모든 처리는 기기 안에서 이뤄지고 구독도 광고도 없습니다.",
+   "paras": [
+    "필카 감성이 어설프게 보이는 가장 흔한 이유는 효과의 양입니다. 그레인을 너무 세게 넣으면 노이즈처럼 보이고, 빛샘을 아무 데나 넣으면 일부러 만든 티가 납니다. 실제 필름에서는 창가의 역광, 저녁 조명, 네온 간판처럼 밝은 빛이 있을 때 할레이션과 빛샘이 자연스럽게 생깁니다. 그래서 찍기 전에 효과가 어떻게 걸리는지 보면서 빛의 방향을 고르는 것이 결과를 크게 바꿉니다.",
+    "PhotoCream은 휴대폰을 필름카메라처럼 쓰게 해 주는 앱입니다. 셔터를 누르기 전에 그레인, 할레이션, 빛샘을 실시간으로 확인할 수 있고, 100개 이상의 필름 룩 중에서 고를 수 있습니다. 마음에 드는 사진의 색감을 복사해 다른 사진에 적용하면, 여행 사진이나 일상 피드를 같은 톤으로 맞추기 쉽습니다. 빛·색·커브를 다루는 편집 도구와 텍스트, 프레임, 입자 효과도 있습니다.",
+    "인물 사진에서는 피부 표현이 감성을 좌우합니다. 주파수 분리 기술로 피부를 정돈하면서 얼굴의 세부는 살리고, 얼굴과 몸매 리셰이프로 비율을 자연스럽게 조정할 수 있습니다. 모든 편집은 기기에서 이뤄지고 업로드가 필요 없으며, 일회성 구매로 구독이나 광고가 없습니다."
+   ],
+   "look": [
+    "찍기 전에 필름 효과를 실시간으로 볼 수 있는지",
+    "그레인, 할레이션, 빛샘을 각각 느낄 수 있는 룩이 있는지",
+    "한 장의 색감을 다른 사진에 복사해 톤을 맞출 수 있는지",
+    "인물 사진에서 피부 결과 디테일을 함께 지켜 주는지",
+    "사진을 업로드하지 않고 기기에서 처리하는지"
+   ],
+   "steps": [
+    "역광이 드는 창가나 저녁 조명처럼 밝은 빛이 있는 장소를 고른다.",
+    "PhotoCream을 열고 필름 룩을 넘기며 실시간 미리보기로 느낌을 확인한다.",
+    "그레인과 빛샘이 과하지 않은 룩을 골라 구도를 잡고 찍는다.",
+    "마음에 드는 한 장의 색감을 복사해 같은 날 찍은 다른 사진에 적용한다.",
+    "인물 사진은 피부 보정을 약하게 걸고, 텍스트나 프레임으로 마무리한다."
+   ],
+   "rows": [
+    [
+     "입자감",
+     "그레인이 실시간으로 보이는지",
+     "노이즈처럼 과해지는 것을 찍기 전에 막는다"
+    ],
+    [
+     "빛",
+     "할레이션과 빛샘",
+     "밝은 빛이 있을 때 필름다운 번짐이 생긴다"
+    ],
+    [
+     "톤 통일",
+     "색감 복사",
+     "피드 전체가 같은 필름으로 찍은 것처럼 보인다"
+    ]
+   ],
+   "fits": "PhotoCream은 필카 감성을 아이폰으로 내고 싶은 사람, 여행·일상 피드를 같은 톤으로 맞추고 싶은 사람에게 맞습니다. 100개 이상의 필름 룩, 실시간 미리보기, 색감 복사, 뷰티 보정을 기기 안에서 처리하고 구독도 광고도 없습니다.",
+   "faq": [
+    [
+     "찍은 사진에도 필름 룩을 입힐 수 있나요?",
+     "네. 찍기 전 실시간 미리보기 외에도 편집 도구로 빛·색·커브를 조정하고 텍스트, 프레임, 입자 효과를 더할 수 있습니다."
+    ],
+    [
+     "사진이 서버로 올라가나요?",
+     "아니요. 모든 처리는 기기 안에서 이뤄지고 업로드가 필요 없습니다."
+    ],
+    [
+     "구독이 필요한가요?",
+     "구독도 광고도 없는 일회성 구매 방식입니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to get the film camera look on iPhone, previewed before you shoot | PhotoCream",
+   "meta": "See film grain, halation and light leaks live before you press the shutter, pick from 100+ film looks and copy a color grade across photos. All on device, no subscription or ads.",
+   "h1": "Getting the film camera look on iPhone: preview before you shoot, not after",
+   "lead": "Scrolling a feed, the photos that feel like film always stand out. Same iPhone, so why do they look different? This page covers what makes the film look and how to get it from the moment you shoot.",
+   "answer": "The film look comes from grain, halation around bright areas, light leaks and slightly faded color working together. Adding a filter afterwards tends to make every photo feel different; seeing the effect live before you press the shutter lets you set composition and light to suit it. PhotoCream shows 100+ film looks in live preview, and using the same look for a whole outing gives the set one tone. Everything is processed on the device, with no subscription or ads.",
+   "paras": [
+    "The most common reason a film look feels fake is the amount. Heavy grain reads as noise, and light leaks dropped anywhere look staged. On real film, halation and leaks appear naturally around bright light: a window behind someone, evening lamps, a neon sign. Seeing how the effect falls before you shoot, and choosing the direction of light accordingly, changes the result more than any later edit.",
+    "PhotoCream turns the phone into a film camera. Grain, halation and light leaks are visible live before the shutter, across 100+ carefully crafted looks spanning retro, cinema, instant and mono. Keep one look for a whole trip or day and the set falls into one tone. Exposure, contrast, curves, HSL and split toning tools, plus text, borders, grain, dust and a date stamp, are there for finishing.",
+    "In portraits, skin decides the mood. Frequency-separation smoothing evens skin while keeping eyes, hair and detail sharp, and reshape tools adjust proportions naturally. Every edit happens on the device with nothing uploaded, and a one-time unlock means no subscription and no ads."
+   ],
+   "look": [
+    "Can you see the film effect live before shooting?",
+    "Are there looks with distinct grain, halation and light leaks?",
+    "Can you keep one look across a whole set of photos?",
+    "Does portrait smoothing keep detail in eyes and hair?",
+    "Is everything processed on the device without uploads?"
+   ],
+   "steps": [
+    "Pick a spot with bright light: a backlit window or evening lamps.",
+    "Open PhotoCream and swipe through film looks in the live preview.",
+    "Choose a look whose grain and leaks are not overdone, frame and shoot.",
+    "Use the same look for the other photos from that day so the set matches.",
+    "Keep portrait smoothing light, then finish with text or a border."
+   ],
+   "rows": [
+    [
+     "Grain",
+     "Visible live",
+     "Stops it turning into noise before you shoot"
+    ],
+    [
+     "Light",
+     "Halation and light leaks",
+     "Film-like glow appears around bright light"
+    ],
+    [
+     "Consistency",
+     "One look per outing",
+     "A whole feed looks shot on the same roll"
+    ]
+   ],
+   "fits": "PhotoCream suits people who want a film camera mood on iPhone and a feed in one consistent tone: 100+ film looks, live preview, a full photo editor and beauty tools, processed on the device with no subscription or ads.",
+   "faq": [
+    [
+     "Can I apply a film look to photos I already took?",
+     "Yes. Beyond live preview, the editor adjusts light, color and curves and adds text, borders, grain and dust."
+    ],
+    [
+     "Are photos uploaded to a server?",
+     "No. Everything is processed on the device and nothing is uploaded."
+    ],
+    [
+     "Is there a subscription?",
+     "No. It is a one-time unlock with no subscription and no ads."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "qrcodehalo",
+  "locale": "ja",
+  "market": "JP",
+  "term": "qrコード 安全 確認",
+  "rank": 85,
+  "slug": "check-qr-code-link-safety-before-opening-iphone-japan",
+  "loc": {
+   "title": "QRコードは開く前に安全確認：偽QR・フィッシング対策をiPhoneで｜QR Code Halo",
+   "meta": "駐車場の精算機やチラシに貼られた偽QRコードの手口と、開く前にリンク先を確かめる手順。読み取り後の自動実行をオフにし、端末内でSafe・Caution・Blockedを判定。",
+   "h1": "そのQRコード、開く前に確認：iPhoneでリンクの安全性を見る手順",
+   "lead": "コインパーキングの精算機、飲食店のテーブル、駅のポスター。QRコードの上に別のシールが貼られ、偽サイトに誘導される手口が報告されています。このページは、読み取ってから開くまでの間に何を確かめるかをまとめました。",
+   "answer": "QRコードの安全確認でいちばん大事なのは、読み取ってすぐ開かないことです。まずリンク先のドメイン（host）を目で確かめ、店名や公式サイトと違う、つづりが紛らわしい、短縮URLで中身が見えない場合は開かずにスタッフや公式アプリで確認します。QR Code Haloは設定で「スキャン後に自動で実行」をオフにでき、履歴の「セキュリティチェック」で、ネット上の評判に頼らず端末内で中身をscheme・host・path・queryに分解し、Safe・Caution・Blockedを判定します。javascript:・data:・file: のようなコードは決して開きません。",
+   "paras": [
+    "偽QRコードの多くは、本物の上にシールを貼るだけの単純な手口です。支払い画面やログイン画面にそっくりなページに誘導し、カード番号やパスワードを入力させます。読み取った瞬間にブラウザが開くと、見た目が本物らしいだけで判断してしまいがちです。だからこそ、開く前にURLの中身を見る一手間が効きます。特に見るべきはhost、つまり「どこのサイトか」の部分です。",
+    "QR Code Haloは、初期設定では読み取った瞬間に実行して素早く開くアプリです。安全を優先したい場面では、設定で「スキャン後に自動で実行」をオフにすれば、まず結果を確認してから開くかどうかを決められます。履歴でコードを開いて「セキュリティチェック」をタップすると、Local Payload Security Inspectorが完全なpayloadを端末内で解析し、scheme・host・path・query・fragmentを項目ごとに表示して、Safe・Caution・Blockedの判定と理由を示します。",
+    "同じ場所のQRコードを何度も使うなら、QR Verificationが役立ちます。結果を端末内の参照として保存し、次に読み取ったコードをSHA-256フィンガープリントやURL構成要素で比べられるので、前回と中身が変わっていれば気づけます。判定はネット上の評判や曖昧なスコアを使わず、解析できない操作は閉じたままにします。"
+   ],
+   "look": [
+    "読み取った瞬間に開かず、先に中身を確認できる設定があるか",
+    "URLのhost（どこのサイトか）がはっきり表示されるか",
+    "判定の理由が項目ごとに示されるか",
+    "javascript: や data: のような危険な形式を開かないか",
+    "前回と同じQRコードかどうかを比べられるか"
+   ],
+   "steps": [
+    "QR Code Haloの設定で「スキャン後に自動で実行」をオフにする。",
+    "QRコードを読み取り、表示されたURLのhostが店名や公式サイトと一致するかを見る。",
+    "履歴でそのコードを開き、「セキュリティチェック」でSafe・Caution・Blockedの判定と理由を確認する。",
+    "CautionやBlockedのとき、または短縮URLで中身が分からないときは開かず、店員や公式アプリで確認する。",
+    "よく使う場所のコードはQR Verificationで参照として保存し、次回の読み取りと比べる。"
+   ],
+   "rows": [
+    [
+     "開く前",
+     "自動実行をオフにできるか",
+     "見た目が本物らしいページに流されない"
+    ],
+    [
+     "中身の確認",
+     "host・path・queryの分解表示",
+     "どこのサイトに飛ぶのかが一目で分かる"
+    ],
+    [
+     "判定",
+     "Safe・Caution・Blockedと理由",
+     "感覚ではなく根拠を見て判断できる"
+    ]
+   ],
+   "fits": "QR Code Haloは、駐車場や飲食店、チラシのQRコードを読む前に中身を確かめたい人に向いています。自動実行のオン・オフ、履歴からのセキュリティチェック、QR Verificationを端末内で使え、20種類のバーコード形式の読み取りとQRコード作成にも対応します。",
+   "faq": [
+    [
+     "読み取ったらすぐ開いてしまいますか？",
+     "初期設定では読み取った瞬間に実行します。先に確認したいときは、設定で「スキャン後に自動で実行」をオフにしてください。"
+    ],
+    [
+     "安全チェックはネットで照会しますか？",
+     "いいえ。ネット上の評判や曖昧なスコアは使わず、端末内でpayloadを解析して判定します。"
+    ],
+    [
+     "危険な形式のコードはどうなりますか？",
+     "javascript:・data:・file: のようなコードは決して開きません。"
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to check a QR code is safe before opening it on iPhone (quishing and fake parking QR codes) | QR Code Halo",
+   "meta": "Fake QR stickers on parking meters and menus lead to phishing pages. Check the link before it opens: turn off auto-run, read the host, and get a Safe, Caution or Blocked verdict on the device.",
+   "h1": "Check that QR code before it opens: reading link safety on iPhone",
+   "lead": "Parking pay stations, restaurant tables, station posters: stickers placed over real QR codes send people to fake sites. This page covers what to check between scanning and opening.",
+   "answer": "The single most important QR safety habit is not opening the link the instant you scan. Read the domain (the host) first; if it does not match the business or official site, uses a confusing spelling, or hides behind a short link, do not open it and check with staff or the official app. QR Code Halo lets you turn off Run action after scanning, and its Security Check in History parses the code on the device into scheme, host, path and query and returns Safe, Caution or Blocked without any network reputation lookup. Codes such as javascript:, data: or file: are never opened.",
+   "paras": [
+    "Most fake QR codes are a sticker over the real one. They lead to pages that imitate a payment or sign-in screen to collect card numbers or passwords. When the browser opens the instant you scan, a convincing page is easy to trust. That is why one extra look at the URL before opening works so well, especially at the host, the part that says which site it really is.",
+    "By default QR Code Halo acts the moment it reads a code. When safety comes first, turn off Run action after scanning in Settings and decide after you see the result. In History, open a code and tap Security Check: the Local Payload Security Inspector parses the complete payload on the device into scheme, host, path, query and fragment, and returns Safe, Caution or Blocked with transparent findings.",
+    "For codes you use again at the same place, QR Verification helps. Save a result as a local reference, then compare a later scan by its complete SHA-256 fingerprint and URL components, so a swapped code stands out. No network reputation lookup or fuzzy score is used, and parsing uncertainty fails closed."
+   ],
+   "look": [
+    "Can you stop codes from opening automatically and check first?",
+    "Is the URL's host shown clearly?",
+    "Are the reasons for the verdict listed item by item?",
+    "Are dangerous forms such as javascript: or data: refused?",
+    "Can you compare a code with the one you scanned last time?"
+   ],
+   "steps": [
+    "In QR Code Halo Settings, turn off Run action after scanning.",
+    "Scan the code and check that the host matches the business or official site.",
+    "Open the code in History and tap Security Check to see Safe, Caution or Blocked and why.",
+    "If it says Caution or Blocked, or a short link hides the destination, do not open it; ask staff or use the official app.",
+    "Save codes you use regularly as a QR Verification reference and compare future scans."
+   ],
+   "rows": [
+    [
+     "Before opening",
+     "Auto-run can be turned off",
+     "A convincing fake page gets no head start"
+    ],
+    [
+     "Inspection",
+     "Host, path and query broken out",
+     "You see where the link really goes"
+    ],
+    [
+     "Verdict",
+     "Safe, Caution or Blocked with reasons",
+     "Decide on evidence, not appearance"
+    ]
+   ],
+   "fits": "QR Code Halo suits people who want to check QR codes on parking meters, menus and flyers before opening them: auto-run on or off, Security Check from History and QR Verification on the device, plus 20 barcode formats and QR code creation.",
+   "faq": [
+    [
+     "Does it open links as soon as it scans?",
+     "By default it acts immediately. To check first, turn off Run action after scanning in Settings."
+    ],
+    [
+     "Does the safety check look things up online?",
+     "No. It uses no network reputation lookup or fuzzy score; the payload is parsed on the device."
+    ],
+    [
+     "What happens with dangerous code types?",
+     "Codes such as javascript:, data: or file: are never opened."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "snapport",
+  "locale": "ko",
+  "market": "KR",
+  "term": "여권 사진 만들기",
+  "rank": 31,
+  "slug": "make-korean-passport-photo-at-home-35x45-guides-print-sheet",
+  "paid_context": "pay_once",
+  "loc": {
+   "title": "여권 사진 만들기, 집에서 35×45mm 규격 맞추고 인화용 시트까지 | Snapport",
+   "meta": "여권·비자·신분증 사진을 집에서 준비하는 순서. 35×45mm 템플릿, 머리 위·눈높이·턱 가이드, 흰색 배경, 4×6 인화 시트. 한 번 구매, 구독·광고·계정 없음.",
+   "h1": "여권 사진 만들기: 집에서 규격에 맞게 찍고 인화용으로 정리하기",
+   "lead": "여권을 새로 만들거나 갱신해야 하는데 사진관 갈 시간이 없을 때, 집에서 사진을 준비하려는 사람을 위한 페이지입니다. 크기, 얼굴 위치, 배경, 인화까지 순서대로 정리했습니다.",
+   "answer": "여권 사진은 크기(35×45mm), 얼굴이 차지하는 비율, 배경, 그리고 인화 크기 네 가지를 맞추는 것이 핵심입니다. Snapport는 한국 35×45mm 등 대표 규격 템플릿과 머리 위·눈높이·턱 가이드로 얼굴 위치를 맞추고, 배경을 흰색으로 바꾸고, 4×6·A4 인화 시트에 여러 장을 재단 가이드와 함께 배치해 줍니다. 모든 처리는 iPhone에서 이루어지며 사진은 업로드되지 않습니다. 다만 사진 요구 사항은 기관과 신청 유형마다 다르고 Snapport는 승인을 보장하지 않으므로, 제출 전에 반드시 공식 요구 사항을 확인하세요.",
+   "paras": [
+    "집에서 찍은 여권 사진이 반려되는 이유는 대개 비슷합니다. 얼굴이 너무 작거나 크게 잘렸거나, 배경에 그림자가 지거나, 인화할 때 비율이 틀어진 경우입니다. 먼저 창가처럼 빛이 고르게 드는 곳에서 정면을 보고, 다른 사람이 눈높이에서 찍어 주는 것이 좋습니다. 안경 반사나 앞머리가 눈을 가리지 않는지도 이 단계에서 확인하세요.",
+    "Snapport는 기기에서 Apple Vision 얼굴 감지를 수행해 머리 위, 눈높이, 턱 가이드를 표시합니다. 핀치, 드래그, 회전으로 미세 조정하고, 얼굴 자동 중앙 정렬과 초기화도 할 수 있습니다. 배경은 흰색, 회색, 파란색, 빨간색으로 바꾸거나 원본을 유지할 수 있고, 기기 내 인물 분할로 전후 결과를 비교합니다. 밝기, 대비, 색온도, 노출, 선명도는 신원 확인에 무리가 없는 가벼운 조정만 제공합니다.",
+    "마지막은 인화입니다. JPEG, PNG, PDF로 내보내고 4×6, A4, Letter 인화 시트에 여러 장을 배치하면 재단 가이드를 따라 자르면 됩니다. Snapport는 한 번 구매하면 계속 쓸 수 있는 앱으로 구독, 앱 내 구입, 광고, 추적, 계정이 없으며, 사용자가 직접 실행하는 템플릿 업데이트 확인 외에는 네트워크를 쓰지 않습니다."
+   ],
+   "look": [
+    "35×45mm 같은 규격 템플릿과 사용자 지정 크기가 있는지",
+    "머리 위·눈높이·턱 가이드로 얼굴 위치를 맞출 수 있는지",
+    "배경을 흰색으로 바꾸고 전후를 비교할 수 있는지",
+    "4×6·A4 인화 시트와 재단 가이드를 만들 수 있는지",
+    "사진을 업로드하지 않고 기기에서 처리하는지"
+   ],
+   "steps": [
+    "창가처럼 빛이 고른 곳에서 밝은 벽을 등지고, 다른 사람이 눈높이에서 정면 사진을 찍는다.",
+    "Snapport에서 35×45mm 여권 템플릿을 고른다(용도에 따라 사용자 지정 크기도 가능).",
+    "머리 위·눈높이·턱 가이드에 맞춰 핀치, 드래그, 회전으로 위치를 조정한다.",
+    "배경을 흰색으로 바꾸고 전후를 비교해 머리카락 경계를 확인한다.",
+    "4×6 또는 A4 인화 시트로 내보내 인화하고, 재단 가이드를 따라 자른 뒤 공식 요구 사항과 대조한다."
+   ],
+   "rows": [
+    [
+     "규격",
+     "35×45mm 템플릿, 사용자 지정 크기",
+     "용도별로 다른 크기를 한 앱에서 맞춘다"
+    ],
+    [
+     "얼굴 위치",
+     "머리 위·눈높이·턱 가이드",
+     "얼굴 비율이 틀어져 반려되는 일을 줄인다"
+    ],
+    [
+     "인화",
+     "4×6·A4 시트와 재단 가이드",
+     "사진관 없이도 정확한 크기로 자를 수 있다"
+    ]
+   ],
+   "fits": "Snapport는 여권 갱신, 비자, 학생증·사원증·이력서 사진을 집에서 준비하려는 사람에게 맞습니다. 규격 템플릿, 얼굴 가이드, 배경 변경, 인화 시트를 기기에서 처리하며, 한 번 구매로 구독·앱 내 구입·광고·계정이 없습니다.",
+   "faq": [
+    [
+     "집에서 만든 여권 사진이 꼭 통과하나요?",
+     "Snapport는 일반 템플릿과 가이드를 제공하지만 승인을 보장하지 않으며 어떤 정부 기관과도 관련이 없습니다. 제출 전에 공식 요구 사항을 확인하세요."
+    ],
+    [
+     "사진이 서버로 전송되나요?",
+     "아니요. 모든 처리는 기기에서 이루어지며 사진은 업로드되지 않습니다."
+    ],
+    [
+     "추가 결제나 구독이 있나요?",
+     "Snapport는 한 번 구매하면 계속 쓸 수 있으며 구독, 앱 내 구입, 광고가 없습니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "How to make a passport photo at home: 35×45 mm size, face guides and a print sheet | Snapport",
+   "meta": "Prepare a passport, visa or ID photo at home: 35×45 mm and 2×2 templates, head-top, eye-line and chin guides, a white background and a 4×6 print sheet. Pay once, no subscription, ads or account.",
+   "h1": "Making a passport photo at home: fit the size, then lay it out for printing",
+   "lead": "For anyone renewing a passport with no time for a photo studio. This page walks through size, face position, background and printing in order.",
+   "answer": "A passport photo comes down to four things: the size, how much of the frame the face fills, the background, and the print size. Snapport offers common templates such as 35×45 mm and US 2×2, head-top, eye-line and chin guides for face position, background replacement to white, and 4×6, A4 or Letter print sheets with several copies and cut guides. Everything is processed on the iPhone and photos are never uploaded. Requirements vary by country, agency and application type and Snapport does not guarantee acceptance, so always check the official requirements before submitting.",
+   "paras": [
+    "Home-made passport photos tend to be rejected for the same reasons: the face is too small or cropped too tight, the background has shadows, or the print comes out at the wrong ratio. Start by facing a window with even light, and have someone else take the photo at eye level. Check for glare on glasses or hair over the eyes at this stage.",
+    "Snapport runs Apple Vision face detection on the device and shows head-top, eye-line and chin guides. Pinch, drag and rotate to fine-tune, auto-center the face, and reset anytime. Replace the background with white, gray, blue or red, or keep the original, and review the on-device person segmentation before and after. Brightness, contrast, warmth, exposure and sharpness are light adjustments that keep identity intact.",
+    "Last comes printing. Export JPEG, PNG or PDF and lay several copies onto a 4×6, A4 or Letter print sheet, then cut along the guides. Snapport is a single purchase with no subscription, in-app purchases, ads, tracking or account, and it uses the network only for an optional template update check that you start yourself."
+   ],
+   "look": [
+    "Are there size templates such as 35×45 mm plus custom sizes?",
+    "Do head-top, eye-line and chin guides help place the face?",
+    "Can the background be switched to white and compared before and after?",
+    "Can you make a 4×6 or A4 print sheet with cut guides?",
+    "Is the photo processed on the device without uploads?"
+   ],
+   "steps": [
+    "Stand facing a window with a light wall behind you and have someone take a straight photo at eye level.",
+    "In Snapport, choose the passport template for your country, or set a custom size.",
+    "Align with the head-top, eye-line and chin guides using pinch, drag and rotate.",
+    "Switch the background to white and compare before and after around the hair.",
+    "Export a 4×6 or A4 print sheet, print it, cut along the guides and compare with the official rules."
+   ],
+   "rows": [
+    [
+     "Size",
+     "Templates and custom sizes",
+     "Different documents in one app"
+    ],
+    [
+     "Face position",
+     "Head-top, eye-line and chin guides",
+     "Fewer rejections for face proportion"
+    ],
+    [
+     "Printing",
+     "4×6 and A4 sheets with cut guides",
+     "Exact size without a photo studio"
+    ]
+   ],
+   "fits": "Snapport suits people preparing passport, visa, student ID, work badge or résumé photos at home: size templates, face guides, background replacement and print sheets on the device, bought once with no subscription, in-app purchases, ads or account.",
+   "faq": [
+    [
+     "Will a home-made passport photo be accepted?",
+     "Snapport provides general templates and guides but does not guarantee acceptance and is not affiliated with any government agency. Check the official requirements before submitting."
+    ],
+    [
+     "Are photos sent to a server?",
+     "No. Everything is processed on the device and photos are never uploaded."
+    ],
+    [
+     "Are there extra charges or a subscription?",
+     "Snapport is bought once and has no subscription, in-app purchases or ads."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "wifiaidlite",
+  "locale": "ko",
+  "market": "KR",
+  "term": "와이파이 인터넷 안됨",
+  "rank": 1,
+  "slug": "wifi-connected-but-no-internet-iphone-router-dns-or-isp-korea",
+  "loc": {
+   "title": "와이파이 연결됐는데 인터넷 안됨: 공유기·DNS·통신사 중 원인 찾는 법 | WiFi Aid Lite",
+   "meta": "와이파이 신호는 꽉 찼는데 인터넷이 안 될 때, 공유기를 껐다 켜기 전에 확인할 것. 한 번의 탭으로 Wi-Fi·DNS·인터넷을 검사하고 가장 가능성 높은 원인과 근거를 확인하는 순서.",
+   "h1": "와이파이는 연결됐는데 인터넷이 안 될 때, 원인부터 찾는 순서",
+   "lead": "와이파이 아이콘은 그대로인데 웹페이지가 안 열리고, 카톡도 안 갑니다. 공유기를 몇 번이나 껐다 켜 봤지만 소용이 없을 때를 위한 페이지입니다.",
+   "answer": "“와이파이 연결됐는데 인터넷 안됨”은 대개 공유기, DNS, 통신사 회선, 특정 사이트 중 한 곳의 문제입니다. 감으로 재부팅을 반복하기보다 어디서 끊기는지를 먼저 확인하면 해결이 빨라집니다. WiFi Aid Lite는 한 번의 탭으로 Wi-Fi, DNS, 인터넷 연결을 한꺼번에 진단해 가장 가능성 높은 원인을 알려 주고, DNS·TCP·TLS·TTFB·HTTP·직접 IP·IPv4·IPv6 결과를 근거로 보여 줍니다. 계정도 광고도 추적도 없고, 기록은 이 기기에만 저장됩니다.",
+   "paras": [
+    "와이파이 신호가 꽉 차 있다는 건 휴대폰과 공유기 사이의 무선 연결이 살아 있다는 뜻일 뿐입니다. 그 뒤에서 공유기가 인터넷 회선과 연결되지 않았거나, 주소를 찾아 주는 DNS가 응답하지 않거나, 통신사 쪽에 장애가 있을 수 있습니다. 또는 인터넷은 정상인데 자주 쓰는 사이트 하나만 문제일 수도 있습니다. 원인이 어디냐에 따라 공유기를 재부팅할지, DNS 설정을 볼지, 통신사 고객센터에 전화할지가 달라집니다.",
+    "WiFi Aid Lite는 여러 독립 경로로 DNS, TCP, TLS, 응답 시간, 안정성을 동시에 검사하고 증거를 교차 비교해 결론을 냅니다. 웹사이트 검사로 특정 사이트만 문제인지 인터넷 전체 장애인지 바로 판별할 수 있고, 정밀 검사는 더 많은 증거와 안정성 샘플을 모아 됐다 안 됐다 하는 간헐적 문제를 가려냅니다. 안정성 분석은 지연 시간의 변동을 관찰해 “연결은 됐는데 자꾸 끊기는” 상태를 찾아냅니다.",
+    "고객센터에 전화할 때도 결과가 도움이 됩니다. “인터넷이 안 돼요”보다 “DNS는 응답하는데 TLS 연결이 실패합니다”처럼 말하면 상담이 빨라집니다. 검사 기록은 자동 저장되어 시간대별 변화를 비교할 수 있고, 기록은 이 기기에만 저장되며 클라우드로 전송되지 않습니다."
+   ],
+   "look": [
+    "와이파이·DNS·인터넷을 한 번에 나눠서 검사하는지",
+    "결론뿐 아니라 항목별 근거를 보여 주는지",
+    "특정 사이트만의 문제인지 판별할 수 있는지",
+    "간헐적으로 끊기는 불안정한 상태를 잡아내는지",
+    "계정 없이 쓰고 기록이 기기에만 남는지"
+   ],
+   "steps": [
+    "와이파이가 연결된 상태에서 WiFi Aid Lite를 열고 검사 실행을 누른다.",
+    "결론에 나온 가장 가능성 높은 원인과 DNS·TCP·TLS 등 항목별 결과를 확인한다.",
+    "특정 앱이나 사이트만 안 된다면 웹사이트 검사로 그 주소만 따로 확인한다.",
+    "됐다 안 됐다 한다면 정밀 검사로 안정성 샘플을 더 모은다.",
+    "공유기 문제로 나오면 재부팅하고, 회선 문제로 나오면 결과 화면을 보며 통신사에 문의한다."
+   ],
+   "rows": [
+    [
+     "공유기",
+     "Wi-Fi 연결과 회선 연결을 나눠 보기",
+     "신호는 꽉 차도 회선이 끊겼을 수 있다"
+    ],
+    [
+     "DNS",
+     "이름 조회 응답 여부",
+     "DNS만 문제라면 재부팅보다 설정 확인이 빠르다"
+    ],
+    [
+     "사이트",
+     "웹사이트 검사",
+     "인터넷 전체가 아니라 그 사이트만 장애일 수 있다"
+    ]
+   ],
+   "fits": "WiFi Aid Lite는 와이파이는 연결됐는데 인터넷이 안 될 때, 공유기를 재부팅할지 통신사에 전화할지 근거를 갖고 판단하고 싶은 사람에게 맞습니다. 한 번의 탭으로 Wi-Fi·DNS·인터넷을 진단하고, 계정·광고·추적 없이 기록은 기기에만 남습니다.",
+   "faq": [
+    [
+     "공유기를 재부팅하면 되지 않나요?",
+     "공유기 문제라면 효과가 있지만, DNS나 통신사 회선 문제라면 재부팅을 반복해도 해결되지 않습니다. 먼저 어디서 끊기는지 확인하세요."
+    ],
+    [
+     "특정 사이트만 안 열리는 것도 알 수 있나요?",
+     "웹사이트 검사로 그 사이트만 문제인지 인터넷 전체에 장애가 있는지 판별할 수 있습니다."
+    ],
+    [
+     "검사 기록이 외부로 전송되나요?",
+     "아니요. 기록은 이 기기에만 저장되며 클라우드로 전송되지 않습니다."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Wi-Fi connected but no internet on iPhone: is it the router, DNS or your provider? | WiFi Aid Lite",
+   "meta": "Full Wi-Fi bars but nothing loads? Before restarting the router again, find out where the connection breaks: one tap checks Wi-Fi, DNS and the wider internet and names the most likely cause with evidence.",
+   "h1": "Wi-Fi connected but no internet: find the cause before you restart anything",
+   "lead": "The Wi-Fi icon is full, but web pages will not load and messages will not send. This page is for when restarting the router a few times has not helped.",
+   "answer": "\"Connected but no internet\" usually means a problem at one of four places: the router, DNS, the provider's line, or one particular site. Finding where it breaks is faster than restarting by guesswork. WiFi Aid Lite checks Wi-Fi, DNS and the internet in one tap, names the most likely cause, and shows the evidence behind it: DNS, TCP, TLS, TTFB, HTTP, direct IP, IPv4 and IPv6. There is no account, ads or tracking, and records stay on the device.",
+   "paras": [
+    "Full Wi-Fi bars only mean the wireless link between phone and router is alive. Behind it, the router may have lost the internet line, DNS may not be answering, or the provider may have an outage. Or the internet is fine and only one site you use is failing. Where the fault sits decides whether to restart the router, look at DNS settings, or call your provider.",
+    "WiFi Aid Lite runs independent path, DNS, TCP, TLS, timing and stability checks and compares the evidence to reach a conclusion. Check a Website tells you whether one destination or the wider internet is failing, and Deep Check collects more evidence and stability samples to catch problems that come and go. Variation analysis spots a connection that is up but keeps dropping.",
+    "The result helps when you call support too. \"DNS answers but the TLS connection fails\" gets further than \"the internet is broken\". Check History keeps past results so you can compare times of day, and records are stored only on this device."
+   ],
+   "look": [
+    "Does it check Wi-Fi, DNS and the internet separately in one go?",
+    "Does it show evidence for each item, not just a verdict?",
+    "Can it tell whether only one site is down?",
+    "Does it catch an unstable connection that drops on and off?",
+    "Does it work without an account and keep records on the device?"
+   ],
+   "steps": [
+    "While connected to Wi-Fi, open WiFi Aid Lite and tap Run a Check.",
+    "Read the most likely cause and the item-by-item results for DNS, TCP, TLS and more.",
+    "If only one app or site fails, use Check a Website on that address.",
+    "If it comes and goes, run Deep Check to gather more stability samples.",
+    "If the router is to blame, restart it; if the line is, call your provider with the result in front of you."
+   ],
+   "rows": [
+    [
+     "Router",
+     "Wi-Fi link versus internet line",
+     "Full bars can hide a dead line"
+    ],
+    [
+     "DNS",
+     "Whether name lookups answer",
+     "A DNS-only fault needs settings, not a restart"
+    ],
+    [
+     "One site",
+     "Check a Website",
+     "The internet may be fine and only that site down"
+    ]
+   ],
+   "fits": "WiFi Aid Lite suits anyone whose Wi-Fi is connected but the internet is not, and who wants evidence before restarting the router or calling the provider: one-tap Wi-Fi, DNS and internet checks, with no account, ads or tracking and records kept on the device.",
+   "faq": [
+    [
+     "Won't restarting the router fix it?",
+     "Only when the router is the cause. If DNS or the provider's line is at fault, repeated restarts change nothing, so find where it breaks first."
+    ],
+    [
+     "Can it tell if only one site is down?",
+     "Yes, Check a Website shows whether one destination or the wider internet is failing."
+    ],
+    [
+     "Are my check results sent anywhere?",
+     "No. Records are stored only on this device."
+    ]
+   ]
+  }
+ },
+ {
+  "key": "wifiaidlite",
+  "locale": "fr-FR",
+  "market": "FR",
+  "term": "diagnostic wifi",
+  "rank": null,
+  "slug": "diagnostic-wifi-box-dns-ou-operateur-iphone",
+  "loc": {
+   "title": "Diagnostic Wi-Fi sur iPhone : la box, le DNS ou l'opérateur ? | WiFi Aid Lite",
+   "meta": "Internet en panne alors que le Wi-Fi est connecté ? Avant de redémarrer la box, testez Wi-Fi, DNS et internet en un geste et voyez la cause la plus probable avec les preuves.",
+   "h1": "Diagnostic Wi-Fi sur iPhone : savoir où ça coince avant d'appeler l'opérateur",
+   "lead": "Le Wi-Fi affiche toutes ses barres, mais les pages ne chargent plus. Avant de débrancher la box pour la troisième fois, mieux vaut savoir d'où vient la panne.",
+   "answer": "Une connexion Wi-Fi active sans internet vient presque toujours de l'un de ces quatre endroits : la box, le DNS, la ligne de l'opérateur, ou un seul site. WiFi Aid Lite lance en un geste les tests Wi-Fi et DNS et affiche les preuves détaillées : DNS, TCP, TLS, TTFB, HTTP, IP directe, IPv4 et IPv6. Tester un site indique si un seul site ou l'internet global est en cause, et le test complet ajoute des mesures de stabilité. Sans compte, pub ni suivi ; l'historique reste uniquement sur l'appareil.",
+   "paras": [
+    "Les barres du Wi-Fi ne disent qu'une chose : le téléphone parle bien à la box. Derrière, la box peut avoir perdu la ligne, le DNS peut ne plus répondre, l'opérateur peut avoir une coupure dans le quartier, ou internet fonctionne et seul le site que vous voulez ouvrir est en panne. Selon l'endroit, la bonne réaction change : redémarrer la box, vérifier le DNS, ou appeler le service client.",
+    "WiFi Aid Lite sépare ces étapes. Lancer un test vérifie Wi-Fi et DNS en un geste ; Tester un site regarde un site précis ou l'internet global ; le test complet rassemble plus de preuves et de mesures de stabilité. L'analyse de la gigue repère une connexion instable qui fonctionne puis décroche. Chaque conclusion s'appuie sur des preuves listées une par une.",
+    "Ces résultats servent aussi au téléphone avec l'opérateur : dire « le DNS répond mais la connexion TLS échoue » fait gagner du temps. L'historique garde les tests précédents pour comparer avant et après, et ces données privées restent uniquement sur l'appareil."
+   ],
+   "look": [
+    "Le test distingue-t-il le Wi-Fi, le DNS et un site précis ?",
+    "Les preuves sont-elles affichées une par une, pas seulement un verdict ?",
+    "Peut-on vérifier un seul site ?",
+    "La stabilité et la gigue sont-elles mesurées ?",
+    "Fonctionne-t-il sans compte, avec des données gardées sur l'appareil ?"
+   ],
+   "steps": [
+    "Restez connecté au Wi-Fi, ouvrez WiFi Aid Lite et lancez un test.",
+    "Lisez la cause la plus probable et les preuves : DNS, TCP, TLS et le reste.",
+    "Si une seule application ou un seul site bloque, utilisez Tester un site sur cette adresse.",
+    "Si la panne va et vient, lancez le test complet pour mesurer la stabilité.",
+    "Box en cause : redémarrez-la. Ligne en cause : appelez l'opérateur avec le résultat sous les yeux."
+   ],
+   "rows": [
+    [
+     "Box",
+     "Liaison Wi-Fi contre ligne internet",
+     "Toutes les barres peuvent cacher une ligne coupée"
+    ],
+    [
+     "DNS",
+     "Réponse aux requêtes de noms",
+     "Un problème DNS se règle sans redémarrer"
+    ],
+    [
+     "Un site",
+     "Tester un site",
+     "Internet peut marcher et seul ce site être en panne"
+    ]
+   ],
+   "fits": "WiFi Aid Lite convient quand le Wi-Fi est connecté mais qu'internet ne passe plus, et qu'on veut des preuves avant de redémarrer la box ou d'appeler l'opérateur : tests Wi-Fi et DNS en un geste, test d'un site précis, sans compte, pub ni suivi.",
+   "faq": [
+    [
+     "Redémarrer la box ne suffit pas ?",
+     "Seulement si la box est en cause. Si c'est le DNS ou la ligne, redémarrer ne change rien : cherchez d'abord où ça coince."
+    ],
+    [
+     "Peut-on savoir si un seul site est en panne ?",
+     "Oui, Tester un site distingue un site précis de l'internet global."
+    ],
+    [
+     "Mes résultats sont-ils envoyés quelque part ?",
+     "Non. L'historique reste uniquement sur l'appareil."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Wi-Fi diagnostics on iPhone: router, DNS or provider? Find where it breaks | WiFi Aid Lite",
+   "meta": "Internet down while Wi-Fi shows connected? Before power-cycling the router, test Wi-Fi, DNS and the internet in one tap and see the most likely cause with evidence. No account or ads.",
+   "h1": "Wi-Fi diagnostics on iPhone: know where it breaks before calling your provider",
+   "lead": "Wi-Fi shows every bar, but pages stop loading. Before unplugging the router for the third time, it pays to know where the fault is.",
+   "answer": "A Wi-Fi connection with no internet almost always comes from one of four places: the router, DNS, the provider's line, or a single site. WiFi Aid Lite runs Wi-Fi, DNS and internet checks in one tap and lists the evidence: DNS, TCP, TLS, TTFB, HTTP, direct IP, IPv4 and IPv6. Check a Website tells one destination from the wider internet, and Deep Check adds stability samples. No account, ads or tracking, and history stays on the device.",
+   "paras": [
+    "Wi-Fi bars only say that the phone can talk to the router. Behind that, the router may have lost the line, DNS may have stopped answering, the provider may have a local outage, or the internet is fine and only the site you want is down. The right response differs for each: restart the router, check DNS, or call support.",
+    "WiFi Aid Lite separates those steps. Run a Check covers Wi-Fi, DNS and the internet in one tap; Check a Website looks at one site or the wider internet; Deep Check gathers more evidence and stability samples. Variation analysis spots an unstable connection that works and then drops. Every conclusion rests on evidence listed item by item.",
+    "The results help on the phone with your provider too: \"DNS answers but the TLS connection fails\" saves time. Check History keeps earlier results so you can compare before and after a fix, and the records are stored only on this device."
+   ],
+   "look": [
+    "Does the test separate Wi-Fi, DNS and the internet?",
+    "Is evidence listed item by item, not just a verdict?",
+    "Can you check a single site?",
+    "Are stability and jitter measured?",
+    "Does it work without an account, with data kept on the device?"
+   ],
+   "steps": [
+    "Stay on Wi-Fi, open WiFi Aid Lite and run a check.",
+    "Read the most likely cause and the evidence: DNS, TCP, TLS and the rest.",
+    "If only one app or site fails, use Check a Website on that address.",
+    "If the fault comes and goes, run Deep Check to measure stability.",
+    "Router at fault: restart it. Line at fault: call your provider with the result in front of you."
+   ],
+   "rows": [
+    [
+     "Router",
+     "Wi-Fi link versus internet line",
+     "Full bars can hide a dead line"
+    ],
+    [
+     "DNS",
+     "Whether name lookups answer",
+     "A DNS problem is fixed without restarting"
+    ],
+    [
+     "One site",
+     "Check a Website",
+     "The internet may work and only that site be down"
+    ]
+   ],
+   "fits": "WiFi Aid Lite suits anyone whose Wi-Fi is connected but whose internet is not, and who wants evidence before restarting the router or calling the provider: Wi-Fi, DNS and internet checks in one tap, with no account, ads or tracking.",
+   "faq": [
+    [
+     "Isn't restarting the router enough?",
+     "Only if the router is the cause. If DNS or the line is at fault, restarting changes nothing, so find where it breaks first."
+    ],
+    [
+     "Can I tell if only one site is down?",
+     "Yes, Check a Website separates a single destination from the wider internet."
+    ],
+    [
+     "Are my results sent anywhere?",
+     "No. History stays only on this device."
+    ]
+   ]
+  }
  }
 ]

@@ -245,6 +245,15 @@ jobs:
             -s _engine/geo/tests -p test_result_image_index.py -q
           python3 _engine/geo/result_image_index.py --pages .
           python3 _engine/geo/result_image_index.py --pages . --check
+      - name: Add the anonymous download-click counter
+        # 與支援站同一塊匿名點擊計數（00_GrowthEngine geo/click_beacon.py，鏡像在
+        # _engine/geo）：點 App Store／Google Play 連結時用 sendBeacon 送 {p,a,ct,s}
+        # 到 office.cait518.cc/api/click；不用 cookie、不送識別碼、不擋導向。
+        # 兩種發布模式都要跑（自動配對發布是增量模式），而且放在所有寫 HTML 的
+        # 步驟之後、email 與 feed 閘門封存頁面位元組之前；不放在 deployment
+        # prepare 之前，免得工作樹的改動被當成增量變更路徑。按位元組釘選的頁面
+        # （hero、決策頁、結果圖庫）、CSP 頁與 AMP 頁不動。
+        run: python3 _engine/geo/click_beacon.py inject --pages .
       - name: Re-render public email protection after deployment preparation
         # The high-intent route/hero/result-image steps above can add or touch
         # HTML after the earlier render step, so the manifest it wrote can be

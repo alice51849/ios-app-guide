@@ -26712,7 +26712,44 @@ class GeneratorTests(unittest.TestCase):
         answer_entries = {
             url: image for url, image in entries.items() if url.startswith(prefix)
         }
+        # Answers pages carrying robots noindex (or none) must stay out of
+        # every sitemap, the Image Sitemap included; gen_image_sitemap skips
+        # them for that reason.  gen_app_page_consolidation (policy
+        # app_page_consolidation_policy.json, ShotInbox 2026-10-13) marks
+        # near-duplicate per-app answers pages -- 91-95% identical text, read
+        # as scaled content -- noindex,follow inside the managed preview
+        # block and keeps one indexable page per locale.  Those pages still
+        # carry the block, so the expectation applies the same robots rule:
+        # they must be absent from the Image Sitemap, everything else present.
+        from html.parser import HTMLParser
+
+        class RobotsParser(HTMLParser):
+            def __init__(self):
+                super().__init__(convert_charrefs=True)
+                self.robots = []
+
+            def handle_starttag(self, tag, attrs):
+                if tag.lower() != "meta":
+                    return
+                values = {name.lower(): value or "" for name, value in attrs}
+                if values.get("name", "").strip().lower() == "robots":
+                    self.robots.append(values.get("content", ""))
+
+        def is_noindex(source):
+            parser = RobotsParser()
+            parser.feed(source)
+            return any(
+                {
+                    token.casefold()
+                    for token in re.split(r"[\s,]+", directive)
+                    if token
+                }
+                & {"noindex", "none"}
+                for directive in parser.robots
+            )
+
         expected = {}
+        noindexed = set()
         for path in sorted((pages / "answers").glob("*.html")):
             source = path.read_text(encoding="utf-8")
             if gen_image_sitemap.ANSWER_BLOCK_START not in source:
@@ -26735,7 +26772,11 @@ class GeneratorTests(unittest.TestCase):
                 block.group("body"),
             )
             self.assertEqual(1, len(images), path)
+            if is_noindex(source):
+                noindexed.add(f"{prefix}{path.name}")
+                continue
             expected[f"{prefix}{path.name}"] = images[0]
+        self.assertFalse(noindexed & set(answer_entries), sorted(noindexed))
 
         live = set(
             gen_hubs.live_app_keys(

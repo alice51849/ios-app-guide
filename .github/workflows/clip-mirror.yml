@@ -1,0 +1,87 @@
+name: Hook clip mirror (catbox to release)
+
+# One-off, manual only. files.catbox.moe stopped answering on 2026-10-21, and every clip channel
+# (Telegram, Instagram, YouTube, Bluesky) fetches the clip from .github/growth/clips.json "url".
+# This copies each clip to the public release "clips-mirror" of this repo as <catbox id>.mp4 and
+# points clips.json at the release url, so the channels fetch from GitHub instead. It never
+# touches the posting code; catbox coming back does not need a switch back.
+#
+# Order: the cute checklist app first, then the clips scheduled 10-22..10-26, then the rest.
+# Only a clip whose release asset reads back at the size that was uploaded gets a new url.
+# Download fails fast: if the first clips all fail, catbox is unreachable from this runner and
+# the run stops without committing.
+#
+# Actions minutes: this repo is public, so hosted runners are free. For the record, about
+# 350 clips at 6 in parallel is roughly 10-25 minutes of one runner (once). The job stops at
+# 120 minutes at most.
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Only the first N clips in upload order (0 = all)"
+        required: false
+        default: "0"
+      commit:
+        description: "Rewrite clips.json and push it to main after mirroring (true/false)"
+        required: false
+        default: "true"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: clip-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Tests
+        run: python3 .github/scripts/test_clip_mirror.py -q
+      - name: Can this runner reach catbox
+        # Information only: the mirror step decides from the real downloads.
+        continue-on-error: true
+        run: |
+          curl -sSIL --connect-timeout 20 --max-time 40 https://files.catbox.moe/e7aq6y.mp4 | grep -iE '^(HTTP|content-type|content-length)' || echo "catbox: no answer"
+      - name: Make sure the release exists
+        run: |
+          gh release view clips-mirror -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || \
+            gh release create clips-mirror -R "$GITHUB_REPOSITORY" --title "clips mirror" \
+              --notes "catbox 備援片庫" --latest=false
+      - name: Download from catbox and upload to the release
+        env:
+          LIMIT: ${{ inputs.limit }}
+        run: python3 .github/scripts/clip_mirror.py mirror --results mirror-results.json --jobs 6 --limit "${LIMIT:-0}"
+      - name: Keep the results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mirror-results
+          path: mirror-results.json
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Point clips.json at the release, test, push to main
+        if: inputs.commit == 'true'
+        run: |
+          set -e
+          for i in 1 2 3 4; do
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            python3 .github/scripts/clip_mirror.py rewrite --results mirror-results.json
+            if git diff --quiet -- .github/growth/clips.json; then echo "clips.json already points at the release"; exit 0; fi
+            python3 .github/scripts/test_clip_posts.py -q
+            git add .github/growth/clips.json
+            git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "鉤子片網址改指向 GitHub 備援片庫（catbox 連不上）[skip ci]"
+            if git push -q origin HEAD:main; then echo "pushed $(git rev-parse --short HEAD)"; exit 0; fi
+            echo "push lost a race, trying again"; sleep $((i * 5))
+          done
+          echo "::error::could not push clips.json"; exit 1

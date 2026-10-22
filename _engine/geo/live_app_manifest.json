@@ -1,8 +1,8 @@
 {
   "schema": "lumi.live-app-roster/v1",
   "version": 1,
-  "revision": 12,
-  "roster_digest": "acd2b3a5d6f969a00f68ca6e6db0ae211afe435a202ef66e5abcebb7c06e268a",
+  "revision": 13,
+  "roster_digest": "00c46815f543ccb76fc3bf469e34590e99118f602bafbc85d63c8d2eec517911",
   "apps": {
     "aibriefpack": {
       "app_id": "6791658210",
@@ -51,6 +51,10 @@
     "easyam": {
       "app_id": "6821790092",
       "name": "EasyAM"
+    },
+    "gbago": {
+      "app_id": "6804564400",
+      "name": "GBAGo"
     },
     "gmoney": {
       "app_id": "6755782939",

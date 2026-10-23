@@ -757,6 +757,19 @@
       "posted_at": "2026-10-23T11:58:15Z",
       "id": "440",
       "variant": "b"
+    },
+    {
+      "channel": "instagram",
+      "clip": "mochi/zh-Hant",
+      "link": "https://www.instagram.com/reel/De1kczViZmY/",
+      "posted_at": "2026-10-23T12:35:19Z",
+      "id": "18175095826455951",
+      "variant": "b",
+      "ig_trial": {
+        "graduation_strategy": "SS_PERFORMANCE",
+        "result": "refused",
+        "error": "RuntimeError: HTTP 400: {\"error\":{\"message\":\"Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"error_subcode\":2207081,\"is_transient\":false,\"error_user_title\":\"Tr"
+      }
     }
   ]
 }

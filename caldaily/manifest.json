@@ -8,7 +8,7 @@
   1080,
   1350
  ],
- "built": "2026-10-23",
+ "built": "2026-10-24",
  "items": [
   {
    "locale": "ar-SA",
@@ -18,29 +18,39 @@
    "screenshot_locale": "ar-SA",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "ocr:ara",
-    "script_chars": 61,
+    "script_chars": 129,
     "mixed_english_words": {},
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_ar-SA.png",
+     "newcap:04_calculator_ar-SA.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [],
-   "line1": "حاسبة تتذكر كل نتيجة",
-   "line2": "سمِّ النتائج وابحث عنها لاحقًا",
+   "line1": "حاسبة تتذكر نتائجك",
+   "line2": "سمِّ تقسيم الفاتورة وابحث عنه لاحقًا",
    "chips": [
-    "سمِّ النتائج وابحث عنها لاحقًا",
-    "ويدجت وأدوات وسجل مرتب"
+    "سمِّ تقسيم الفاتورة وابحث عنه لاحقًا",
+    "8 أدوات منها البقشيش والقرض"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
+    "phones": 2,
+    "screen_area_ratio": 0.494,
+    "family": "stagger2",
     "font": "NotoSansArabic.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -49,9 +59,9 @@
       {
        "kind": "name",
        "plate": [
-        560,
+        316,
         72,
-        1008,
+        764,
         160
        ],
        "pads": [
@@ -64,7 +74,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 12.07,
+       "contrast_p10": 14.56,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -72,262 +82,10 @@
       {
        "kind": "title",
        "plate": [
-        562,
-        184,
-        1008,
-        818
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "headline": 104,
-        "sub": 52,
-        "ratio": 2.0
-       },
-       "contrast_p10": 12.7,
-       "plate_alpha": 0.55,
-       "lines": [
-        3,
-        2
-       ],
-       "lh": [
-        1.3,
-        1.4
-       ],
-       "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        679,
-        842,
-        1008,
-        985
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 10.46,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.4
-      }
-     ]
-    },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
-   },
-   "caption_instagram": "حاسبة تتذكر كل نتيجة\nسمِّ النتائج وابحث عنها لاحقًا\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#CalDaily",
-   "caption_link": "حاسبة تتذكر كل نتيجة\nسمِّ النتائج وابحث عنها لاحقًا\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
-   "cta_source": "lib",
-   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ar-SA.jpg"
-  },
-  {
-   "locale": "bn-BD",
-   "file": "caldaily/bn-BD.jpg",
-   "intended_locale": "bn-BD",
-   "headline_locale": "en-US",
-   "screenshot_locale": "en-US",
-   "localized": false,
-   "screenshots_used": [
-    1,
-    3
-   ],
-   "demo_language_check": {
-    "method": "asset-diff",
-    "script_chars": null,
-    "mixed_english_words": {},
-    "all_used_screens_localized": false
-   },
-   "screen_text_flags": {},
-   "warnings": [
-    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
-   ],
-   "line1": "Every Result, Saved",
-   "line2": "Name and search any calculation",
-   "chips": [
-    "Name and search any calculation",
-    "Widget, Tip, Discount & Loan"
-   ],
-   "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
-    "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
-    "cards_over_screen": [],
-    "typography_check": {
-     "ok": true,
-     "problems": [],
-     "plates": [
-      {
-       "kind": "name",
-       "plate": [
-        72,
-        72,
-        306,
-        160
-       ],
-       "pads": [
-        16,
-        16,
-        16,
-        16
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 32
-       },
-       "contrast_p10": 15.83,
-       "plate_alpha": 0.55,
-       "lines": 1,
-       "lh": null
-      },
-      {
-       "kind": "title",
-       "plate": [
-        72,
-        184,
-        477,
-        801
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "headline": 104,
-        "sub": 52,
-        "ratio": 2.0
-       },
-       "contrast_p10": 13.0,
-       "plate_alpha": 0.55,
-       "lines": [
-        3,
-        3
-       ],
-       "lh": [
-        1.18,
-        1.25
-       ],
-       "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        825,
-        457,
-        945
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 10.66,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
-      }
-     ]
-    },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
-   },
-   "caption_instagram": "Every Result, Saved\nName and search any calculation\n\n📲 Download via the link in bio\n\n#CalDaily",
-   "caption_link": "Every Result, Saved\nName and search any calculation\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
-   "cta_source": "lib",
-   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/bn-BD.jpg"
-  },
-  {
-   "locale": "ca",
-   "file": "caldaily/ca.jpg",
-   "intended_locale": "ca",
-   "headline_locale": "ca",
-   "screenshot_locale": "ca",
-   "localized": true,
-   "screenshots_used": [
-    1,
-    3
-   ],
-   "demo_language_check": {
-    "method": "asset-diff",
-    "script_chars": null,
-    "mixed_english_words": {},
-    "all_used_screens_localized": true
-   },
-   "screen_text_flags": {},
-   "warnings": [],
-   "line1": "Cada resultat, desat",
-   "line2": "Posa-hi nom i cerca'l després",
-   "chips": [
-    "Posa-hi nom i cerca'l després",
-    "Widget, eines i historial"
-   ],
-   "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
-    "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
-    "cards_over_screen": [],
-    "typography_check": {
-     "ok": true,
-     "problems": [],
-     "plates": [
-      {
-       "kind": "name",
-       "plate": [
-        72,
-        72,
-        306,
-        160
-       ],
-       "pads": [
-        16,
-        16,
-        16,
-        16
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 32
-       },
-       "contrast_p10": 15.83,
-       "plate_alpha": 0.55,
-       "lines": 1,
-       "lh": null
-      },
-      {
-       "kind": "title",
-       "plate": [
-        72,
-        184,
-        529,
-        713
+        92,
+        176,
+        987,
+        459
        ],
        "pads": [
         24,
@@ -341,26 +99,104 @@
         "sub": 48,
         "ratio": 2.0
        },
-       "contrast_p10": 15.29,
+       "contrast_p10": 14.77,
        "plate_alpha": 0.55,
        "lines": [
-        3,
-        2
+        1,
+        1
        ],
        "lh": [
-        1.18,
-        1.25
+        1.3,
+        1.4
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.272,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "حاسبة تتذكر نتائجك\nسمِّ تقسيم الفاتورة وابحث عنه لاحقًا\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#CalDaily",
+   "caption_link": "حاسبة تتذكر نتائجك\nسمِّ تقسيم الفاتورة وابحث عنه لاحقًا\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "caldaily/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "screen_match": {},
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "A Calculator That Remembers",
+   "line2": "Name a bill split, search it later",
+   "chips": [
+    "Name a bill split, search it later",
+    "8 tools incl. tip split and loan"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.442,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        256,
+        72,
+        824,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
       },
       {
-       "kind": "chip",
+       "kind": "title",
        "plate": [
-        72,
-        737,
-        409,
-        857
+        88,
+        176,
+        991,
+        545
        ],
        "pads": [
         24,
@@ -370,20 +206,154 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "text": 36
+        "headline": 100,
+        "sub": 50,
+        "ratio": 2.0
        },
-       "contrast_p10": 8.75,
+       "contrast_p10": 15.51,
        "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "lines": [
+        2,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "screen_similarity": 0.0,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Cada resultat, desat\nPosa-hi nom i cerca'l després\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#CalDaily",
-   "caption_link": "Cada resultat, desat\nPosa-hi nom i cerca'l després\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "A Calculator That Remembers\nName a bill split, search it later\n\n📲 Download via the link in bio\n\n#CalDaily",
+   "caption_link": "A Calculator That Remembers\nName a bill split, search it later\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "caldaily/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.816
+    ],
+    "1": [
+     1,
+     0.602
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Una calculadora que recorda",
+   "line2": "Posa nom a un compte dividit i cerca'l",
+   "chips": [
+    "Posa nom a un compte dividit i cerca'l",
+    "8 eines: propina dividida, préstec"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        266,
+        72,
+        815,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.63,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        100,
+        184,
+        981,
+        630
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.61,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Una calculadora que recorda\nPosa nom a un compte dividit i cerca'l\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#CalDaily",
+   "caption_link": "Una calculadora que recorda\nPosa nom a un compte dividit i cerca'l\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ca.jpg"
   },
@@ -395,8 +365,7 @@
    "screenshot_locale": "cs",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -405,19 +374,38 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [],
-   "line1": "Každý výpočet najdete",
-   "line2": "Názvy, hledání a osm nástrojů",
+   "screen_match": {
+    "0": [
+     0,
+     0.816
+    ],
+    "1": [
+     1,
+     0.608
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Kalkulačka s pamětí",
+   "line2": "Pojmenuj dělení účtu, později ho najdi",
    "chips": [
-    "Názvy, hledání a osm nástrojů",
-    "Widget, nástroje a historie"
+    "Pojmenuj dělení účtu, později ho najdi",
+    "8 nástrojů, třeba spropitné a úvěr"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 1.32,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -426,9 +414,9 @@
       {
        "kind": "name",
        "plate": [
+        258,
         72,
-        72,
-        306,
+        821,
         160
        ],
        "pads": [
@@ -441,7 +429,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 14.52,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -449,10 +437,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
+        234,
         184,
-        536,
-        754
+        847,
+        631
        ],
        "pads": [
         24,
@@ -466,10 +454,10 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.48,
+       "contrast_p10": 15.83,
        "plate_alpha": 0.55,
        "lines": [
-        3,
+        2,
         2
        ],
        "lh": [
@@ -477,38 +465,17 @@
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        778,
-        460,
-        898
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 8.51,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "Každý výpočet najdete\nNázvy, hledání a osm nástrojů\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#CalDaily",
-   "caption_link": "Každý výpočet najdete\nNázvy, hledání a osm nástrojů\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Kalkulačka s pamětí\nPojmenuj dělení účtu, později ho najdi\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#CalDaily",
+   "caption_link": "Kalkulačka s pamětí\nPojmenuj dělení účtu, později ho najdi\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/cs.jpg"
   },
@@ -520,8 +487,7 @@
    "screenshot_locale": "da",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -530,19 +496,38 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [],
-   "line1": "Hvert resultat gemt",
-   "line2": "Navngiv, søg og otte værktøjer",
+   "screen_match": {
+    "0": [
+     0,
+     0.816
+    ],
+    "1": [
+     1,
+     0.602
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "En lommeregner, der husker",
+   "line2": "Navngiv en regningsdeling, find den igen",
    "chips": [
-    "Navngiv, søg og otte værktøjer",
-    "Widget, værktøjer, historik"
+    "Navngiv en regningsdeling, find den igen",
+    "8 værktøjer som drikkepenge og lån"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 1.32,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -551,9 +536,9 @@
       {
        "kind": "name",
        "plate": [
+        232,
         72,
-        72,
-        306,
+        849,
         160
        ],
        "pads": [
@@ -566,7 +551,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 13.65,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -574,10 +559,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
+        80,
         184,
-        535,
-        748
+        1000,
+        630
        ],
        "pads": [
         24,
@@ -591,10 +576,10 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 14.91,
+       "contrast_p10": 15.64,
        "plate_alpha": 0.55,
        "lines": [
-        3,
+        2,
         2
        ],
        "lh": [
@@ -602,38 +587,17 @@
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        772,
-        494,
-        901
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 8.51,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "Hvert resultat gemt\nNavngiv, søg og otte værktøjer\n\n📲 Download via linket i bio\n\n#CalDaily",
-   "caption_link": "Hvert resultat gemt\nNavngiv, søg og otte værktøjer\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "En lommeregner, der husker\nNavngiv en regningsdeling, find den igen\n\n📲 Download via linket i bio\n\n#CalDaily",
+   "caption_link": "En lommeregner, der husker\nNavngiv en regningsdeling, find den igen\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/da.jpg"
   },
@@ -645,8 +609,8 @@
    "screenshot_locale": "de-DE",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -654,22 +618,36 @@
     "mixed_english_words": {},
     "all_used_screens_localized": true
    },
-   "screen_text_flags": {},
+   "screen_text_flags": {
+    "0": [
+     "pro"
+    ]
+   },
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_de-DE.png",
+     "newcap:04_calculator_de-DE.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.235<0.24)"
+    "screen text flags remain (no clean screenshot available): {0: ['pro']}"
    ],
-   "line1": "Jede Rechnung bleibt",
-   "line2": "Ergebnisse benennen und wiederfinden",
+   "line1": "Rechner, der sich erinnert",
+   "line2": "Rechnung teilen, benennen, später finden",
    "chips": [
-    "Ergebnisse benennen und wiederfinden",
-    "Widget, Tools, Verlauf"
+    "Rechnung teilen, benennen, später finden",
+    "8 Tools wie Trinkgeld und Kredit"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.253,
-    "family": "closeup2",
+    "phones": 2,
+    "screen_area_ratio": 0.396,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 1.32,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -701,10 +679,10 @@
       {
        "kind": "title",
        "plate": [
-        124,
         184,
-        955,
-        618
+        176,
+        896,
+        622
        ],
        "pads": [
         24,
@@ -718,7 +696,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.63,
+       "contrast_p10": 15.73,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -733,12 +711,13 @@
       }
      ]
     },
-    "phone_scale": 1.08,
-    "layout_family": "closeup2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+    "status_modes": [],
+    "screen_similarity": 0.015,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Jede Rechnung bleibt\nErgebnisse benennen und wiederfinden\n\n📲 Download über den Link in der Bio\n\n#CalDaily",
-   "caption_link": "Jede Rechnung bleibt\nErgebnisse benennen und wiederfinden\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Rechner, der sich erinnert\nRechnung teilen, benennen, später finden\n\n📲 Download über den Link in der Bio\n\n#CalDaily",
+   "caption_link": "Rechner, der sich erinnert\nRechnung teilen, benennen, später finden\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/de-DE.jpg"
   },
@@ -750,29 +729,45 @@
    "screenshot_locale": "el",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "ocr:ell",
-    "script_chars": 33,
+    "script_chars": 35,
     "mixed_english_words": {
-     "2": [
-      "Dinner"
+     "0": [
+      "Dinner",
+      "coast"
      ]
     },
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.812
+    ],
+    "1": [
+     1,
+     0.612
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [
-    "dropped screenshots [2] with mixed English strings [['Dinner']]",
+    "dropped screenshots [0] with mixed English strings [['Dinner', 'coast']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
     "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
    ],
-   "line1": "Θυμάται κάθε πράξη",
-   "line2": "Όνομα, αναζήτηση, 8 εργαλεία",
+   "line1": "Αριθμομηχανή που θυμάται",
+   "line2": "Δώσε όνομα σε μοιρασιά, βρες την μετά",
    "chips": [
-    "Όνομα, αναζήτηση, 8 εργαλεία",
-    "Widget, εργαλεία, 100 θέματα"
+    "Δώσε όνομα σε μοιρασιά, βρες την μετά",
+    "8 εργαλεία: φιλοδώρημα, δάνειο"
    ],
    "layout": {
     "phones": 1,
@@ -811,9 +806,9 @@
       {
        "kind": "title",
        "plate": [
-        216,
+        130,
         184,
-        864,
+        950,
         632
        ],
        "pads": [
@@ -828,7 +823,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.82,
+       "contrast_p10": 15.66,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -843,12 +838,13 @@
       }
      ]
     },
+    "status_modes": [],
     "phone_scale": 1.08,
     "layout_family": "closeup2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "Θυμάται κάθε πράξη\nΌνομα, αναζήτηση, 8 εργαλεία\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#CalDaily",
-   "caption_link": "Θυμάται κάθε πράξη\nΌνομα, αναζήτηση, 8 εργαλεία\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Αριθμομηχανή που θυμάται\nΔώσε όνομα σε μοιρασιά, βρες την μετά\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#CalDaily",
+   "caption_link": "Αριθμομηχανή που θυμάται\nΔώσε όνομα σε μοιρασιά, βρες την μετά\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/el.jpg"
   },
@@ -860,8 +856,8 @@
    "screenshot_locale": "en-AU",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -870,19 +866,33 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     1.0
+    ],
+    "1": [
+     1,
+     1.0
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [],
-   "line1": "Every Result, Saved",
-   "line2": "Name and search any calculation",
+   "line1": "A Calculator That Remembers",
+   "line2": "Name a bill split, search it later",
    "chips": [
-    "Name and search any calculation",
-    "Widget, GST, Discount & Loan"
+    "Name a bill split, search it later",
+    "8 tools incl. tip split and loan"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
+    "phones": 2,
+    "screen_area_ratio": 0.442,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -891,9 +901,9 @@
       {
        "kind": "name",
        "plate": [
+        256,
         72,
-        72,
-        306,
+        824,
         160
        ],
        "pads": [
@@ -906,7 +916,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 14.43,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -914,10 +924,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
-        184,
-        477,
-        801
+        88,
+        176,
+        991,
+        545
        ],
        "pads": [
         24,
@@ -927,53 +937,32 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 104,
-        "sub": 52,
+        "headline": 100,
+        "sub": 50,
         "ratio": 2.0
        },
-       "contrast_p10": 13.0,
+       "contrast_p10": 15.51,
        "plate_alpha": 0.55,
        "lines": [
-        3,
-        3
+        2,
+        1
        ],
        "lh": [
         1.18,
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        825,
-        457,
-        945
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 10.66,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "screen_similarity": 0.281,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Every Result, Saved\nName and search any calculation\n\n📲 Download via the link in bio\n\n#CalDaily",
-   "caption_link": "Every Result, Saved\nName and search any calculation\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "A Calculator That Remembers\nName a bill split, search it later\n\n📲 Download via the link in bio\n\n#CalDaily",
+   "caption_link": "A Calculator That Remembers\nName a bill split, search it later\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/en-AU.jpg"
   },
@@ -985,8 +974,8 @@
    "screenshot_locale": "en-CA",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -995,19 +984,33 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     1.0
+    ],
+    "1": [
+     1,
+     1.0
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [],
-   "line1": "Every Result, Saved",
-   "line2": "Name and search any calculation",
+   "line1": "A Calculator That Remembers",
+   "line2": "Name a bill split, search it later",
    "chips": [
-    "Name and search any calculation",
-    "Widget, Tip, Discount & Loan"
+    "Name a bill split, search it later",
+    "8 tools incl. tip split and loan"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
+    "phones": 2,
+    "screen_area_ratio": 0.442,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -1016,9 +1019,9 @@
       {
        "kind": "name",
        "plate": [
+        256,
         72,
-        72,
-        306,
+        824,
         160
        ],
        "pads": [
@@ -1031,7 +1034,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 14.43,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -1039,10 +1042,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
-        184,
-        477,
-        801
+        88,
+        176,
+        991,
+        545
        ],
        "pads": [
         24,
@@ -1052,53 +1055,32 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 104,
-        "sub": 52,
+        "headline": 100,
+        "sub": 50,
         "ratio": 2.0
        },
-       "contrast_p10": 13.0,
+       "contrast_p10": 15.51,
        "plate_alpha": 0.55,
        "lines": [
-        3,
-        3
+        2,
+        1
        ],
        "lh": [
         1.18,
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        825,
-        457,
-        945
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 10.66,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "screen_similarity": 0.282,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Every Result, Saved\nName and search any calculation\n\n📲 Download via the link in bio\n\n#CalDaily",
-   "caption_link": "Every Result, Saved\nName and search any calculation\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "A Calculator That Remembers\nName a bill split, search it later\n\n📲 Download via the link in bio\n\n#CalDaily",
+   "caption_link": "A Calculator That Remembers\nName a bill split, search it later\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/en-CA.jpg"
   },
@@ -1110,8 +1092,8 @@
    "screenshot_locale": "en-GB",
    "localized": true,
    "screenshots_used": [
-    1,
-    2
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -1120,19 +1102,33 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     1.0
+    ],
+    "1": [
+     1,
+     1.0
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [],
-   "line1": "Every Result, Saved",
-   "line2": "Name and search any calculation",
+   "line1": "A Calculator That Remembers",
+   "line2": "Name a bill split, search it later",
    "chips": [
-    "Name and search any calculation",
-    "Widget, VAT, Discount & Loan"
+    "Name a bill split, search it later",
+    "8 tools incl. tip split and loan"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
+    "phones": 2,
+    "screen_area_ratio": 0.442,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -1141,9 +1137,9 @@
       {
        "kind": "name",
        "plate": [
+        256,
         72,
-        72,
-        306,
+        824,
         160
        ],
        "pads": [
@@ -1156,7 +1152,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 14.43,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -1164,10 +1160,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
-        184,
-        477,
-        801
+        88,
+        176,
+        991,
+        545
        ],
        "pads": [
         24,
@@ -1177,53 +1173,32 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 104,
-        "sub": 52,
+        "headline": 100,
+        "sub": 50,
         "ratio": 2.0
        },
-       "contrast_p10": 13.0,
+       "contrast_p10": 15.51,
        "plate_alpha": 0.55,
        "lines": [
-        3,
-        3
+        2,
+        1
        ],
        "lh": [
         1.18,
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        825,
-        457,
-        945
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 10.66,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "screen_similarity": 0.282,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Every Result, Saved\nName and search any calculation\n\n📲 Download via the link in bio\n\n#CalDaily",
-   "caption_link": "Every Result, Saved\nName and search any calculation\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "A Calculator That Remembers\nName a bill split, search it later\n\n📲 Download via the link in bio\n\n#CalDaily",
+   "caption_link": "A Calculator That Remembers\nName a bill split, search it later\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/en-GB.jpg"
   },
@@ -1235,8 +1210,8 @@
    "screenshot_locale": "en-US",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -1245,19 +1220,29 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_en-US.png",
+     "newcap:04_calculator_en-US.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [],
-   "line1": "Every Result, Saved",
-   "line2": "Name and search any calculation",
+   "line1": "A Calculator That Remembers",
+   "line2": "Name a bill split, search it later",
    "chips": [
-    "Name and search any calculation",
-    "Widget, Tip, Discount & Loan"
+    "Name a bill split, search it later",
+    "8 tools incl. tip split and loan"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
+    "phones": 2,
+    "screen_area_ratio": 0.442,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -1266,9 +1251,9 @@
       {
        "kind": "name",
        "plate": [
+        256,
         72,
-        72,
-        306,
+        824,
         160
        ],
        "pads": [
@@ -1281,7 +1266,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 14.43,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -1289,10 +1274,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
-        184,
-        477,
-        801
+        88,
+        176,
+        991,
+        545
        ],
        "pads": [
         24,
@@ -1302,53 +1287,32 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 104,
-        "sub": 52,
+        "headline": 100,
+        "sub": 50,
         "ratio": 2.0
        },
-       "contrast_p10": 13.0,
+       "contrast_p10": 15.51,
        "plate_alpha": 0.55,
        "lines": [
-        3,
-        3
+        2,
+        1
        ],
        "lh": [
         1.18,
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        825,
-        457,
-        945
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 10.66,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "screen_similarity": 0.0,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Every Result, Saved\nName and search any calculation\n\n📲 Download via the link in bio\n\n#CalDaily",
-   "caption_link": "Every Result, Saved\nName and search any calculation\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "A Calculator That Remembers\nName a bill split, search it later\n\n📲 Download via the link in bio\n\n#CalDaily",
+   "caption_link": "A Calculator That Remembers\nName a bill split, search it later\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/en-US.jpg"
   },
@@ -1360,8 +1324,8 @@
    "screenshot_locale": "es-ES",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -1370,21 +1334,29 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
-   ],
-   "line1": "Cada cálculo, guardado",
-   "line2": "Ponle nombre, búscalo, expórtalo a CSV",
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_es-ES.png",
+     "newcap:04_calculator_es-ES.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [],
+   "line1": "La calculadora que recuerda",
+   "line2": "Ponle nombre a una cuenta y búscala luego",
    "chips": [
-    "Ponle nombre, búscalo, expórtalo a CSV",
-    "Widget, utilidades e historial"
+    "Ponle nombre a una cuenta y búscala luego",
+    "8 herramientas: propina y préstamo"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.248,
-    "family": "closeup2",
+    "phones": 2,
+    "screen_area_ratio": 0.396,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 1.32,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -1416,10 +1388,10 @@
       {
        "kind": "title",
        "plate": [
-        178,
-        184,
-        903,
-        631
+        144,
+        176,
+        937,
+        622
        ],
        "pads": [
         24,
@@ -1433,7 +1405,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.77,
+       "contrast_p10": 15.66,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -1448,12 +1420,13 @@
       }
      ]
     },
-    "phone_scale": 1.08,
-    "layout_family": "closeup2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+    "status_modes": [],
+    "screen_similarity": 0.009,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Cada cálculo, guardado\nPonle nombre, búscalo, expórtalo a CSV\n\n📲 Descárgala desde el enlace de la bio\n\n#CalDaily",
-   "caption_link": "Cada cálculo, guardado\nPonle nombre, búscalo, expórtalo a CSV\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "La calculadora que recuerda\nPonle nombre a una cuenta y búscala luego\n\n📲 Descárgala desde el enlace de la bio\n\n#CalDaily",
+   "caption_link": "La calculadora que recuerda\nPonle nombre a una cuenta y búscala luego\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/es-ES.jpg"
   },
@@ -1465,8 +1438,8 @@
    "screenshot_locale": "es-MX",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -1475,21 +1448,29 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
-   ],
-   "line1": "Cada cálculo, guardado",
-   "line2": "Ponle nombre, búscalo, expórtalo a CSV",
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_es-MX.png",
+     "newcap:04_calculator_es-MX.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [],
+   "line1": "La calculadora que recuerda",
+   "line2": "Ponle nombre a una cuenta y búscala luego",
    "chips": [
-    "Ponle nombre, búscalo, expórtalo a CSV",
-    "Widget, utilidades e historial"
+    "Ponle nombre a una cuenta y búscala luego",
+    "8 herramientas: propina y préstamo"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.248,
-    "family": "closeup2",
+    "phones": 2,
+    "screen_area_ratio": 0.396,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 1.32,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -1521,10 +1502,10 @@
       {
        "kind": "title",
        "plate": [
-        178,
-        184,
-        903,
-        631
+        144,
+        176,
+        937,
+        622
        ],
        "pads": [
         24,
@@ -1538,7 +1519,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.77,
+       "contrast_p10": 15.66,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -1553,12 +1534,13 @@
       }
      ]
     },
-    "phone_scale": 1.08,
-    "layout_family": "closeup2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+    "status_modes": [],
+    "screen_similarity": 0.024,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Cada cálculo, guardado\nPonle nombre, búscalo, expórtalo a CSV\n\n📲 Descárgala desde el enlace de la bio\n\n#CalDaily",
-   "caption_link": "Cada cálculo, guardado\nPonle nombre, búscalo, expórtalo a CSV\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "La calculadora que recuerda\nPonle nombre a una cuenta y búscala luego\n\n📲 Descárgala desde el enlace de la bio\n\n#CalDaily",
+   "caption_link": "La calculadora que recuerda\nPonle nombre a una cuenta y búscala luego\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/es-MX.jpg"
   },
@@ -1570,8 +1552,7 @@
    "screenshot_locale": "fi",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -1580,12 +1561,30 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [],
-   "line1": "Jokainen tulos tallessa",
-   "line2": "Nimeä, hae ja kahdeksan työkalua",
+   "screen_match": {
+    "0": [
+     0,
+     0.813
+    ],
+    "1": [
+     1,
+     0.605
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)"
+   ],
+   "line1": "Laskin, joka muistaa",
+   "line2": "Nimeä laskun jako, hae se myöhemmin",
    "chips": [
-    "Nimeä, hae ja kahdeksan työkalua",
-    "Widget, työkalut ja historia"
+    "Nimeä laskun jako, hae se myöhemmin",
+    "8 työkalua, mm. tippi ja laina"
    ],
    "layout": {
     "phones": 1,
@@ -1626,8 +1625,8 @@
        "plate": [
         72,
         184,
-        530,
-        753
+        532,
+        797
        ],
        "pads": [
         24,
@@ -1637,11 +1636,11 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 92,
-        "sub": 46,
+        "headline": 100,
+        "sub": 50,
         "ratio": 2.0
        },
-       "contrast_p10": 15.09,
+       "contrast_p10": 13.78,
        "plate_alpha": 0.55,
        "lines": [
         3,
@@ -1658,9 +1657,9 @@
        "kind": "chip",
        "plate": [
         72,
-        777,
-        463,
-        906
+        821,
+        452,
+        950
        ],
        "pads": [
         24,
@@ -1672,18 +1671,19 @@
        "sizes": {
         "text": 36
        },
-       "contrast_p10": 8.51,
+       "contrast_p10": 10.31,
        "plate_alpha": 0.55,
        "lines": 2,
        "lh": 1.25
       }
      ]
     },
+    "status_modes": [],
     "layout_family": "split2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
    },
-   "caption_instagram": "Jokainen tulos tallessa\nNimeä, hae ja kahdeksan työkalua\n\n📲 Lataa bion linkistä\n\n#CalDaily",
-   "caption_link": "Jokainen tulos tallessa\nNimeä, hae ja kahdeksan työkalua\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Laskin, joka muistaa\nNimeä laskun jako, hae se myöhemmin\n\n📲 Lataa bion linkistä\n\n#CalDaily",
+   "caption_link": "Laskin, joka muistaa\nNimeä laskun jako, hae se myöhemmin\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/fi.jpg"
   },
@@ -1695,8 +1695,7 @@
    "screenshot_locale": "fr-CA",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -1705,18 +1704,35 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.812
+    ],
+    "1": [
+     1,
+     0.606
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.232<0.24)"
    ],
-   "line1": "Chaque calcul gardé",
-   "line2": "Nommez, retrouvez, exportez en CSV",
+   "line1": "La calculatrice qui retient",
+   "line2": "Nommez un partage de facture, retrouvez-le",
    "chips": [
-    "Nommez, retrouvez, exportez en CSV",
-    "Widget, outils, 100 thèmes"
+    "Nommez un partage de facture, retrouvez-le",
+    "8 outils, dont pourboire et prêt"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.249,
+    "screen_area_ratio": 0.25,
     "family": "closeup2",
     "font": "NotoSans.ttf",
     "screen_ratio_vs_battai_split": 1.32,
@@ -1751,10 +1767,10 @@
       {
        "kind": "title",
        "plate": [
-        202,
+        140,
         184,
-        878,
-        630
+        939,
+        625
        ],
        "pads": [
         24,
@@ -1768,7 +1784,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.82,
+       "contrast_p10": 15.71,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -1783,12 +1799,13 @@
       }
      ]
     },
+    "status_modes": [],
     "phone_scale": 1.08,
     "layout_family": "closeup2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "Chaque calcul gardé\nNommez, retrouvez, exportez en CSV\n\n📲 Téléchargez-la via le lien dans la bio\n\n#CalDaily",
-   "caption_link": "Chaque calcul gardé\nNommez, retrouvez, exportez en CSV\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "La calculatrice qui retient\nNommez un partage de facture, retrouvez-le\n\n📲 Téléchargez-la via le lien dans la bio\n\n#CalDaily",
+   "caption_link": "La calculatrice qui retient\nNommez un partage de facture, retrouvez-le\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/fr-CA.jpg"
   },
@@ -1800,8 +1817,8 @@
    "screenshot_locale": "fr-FR",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -1810,21 +1827,29 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
-   ],
-   "line1": "Chaque calcul gardé",
-   "line2": "Nommez, retrouvez, exportez en CSV",
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_fr-FR.png",
+     "newcap:04_calculator_fr-FR.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [],
+   "line1": "La calculatrice qui retient",
+   "line2": "Nommez un partage d'addition, retrouvez-le",
    "chips": [
-    "Nommez, retrouvez, exportez en CSV",
-    "Widget, outils, 100 thèmes"
+    "Nommez un partage d'addition, retrouvez-le",
+    "8 outils, dont pourboire et prêt"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.249,
-    "family": "closeup2",
+    "phones": 2,
+    "screen_area_ratio": 0.399,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 1.32,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -1856,10 +1881,10 @@
       {
        "kind": "title",
        "plate": [
-        202,
-        184,
-        878,
-        630
+        140,
+        176,
+        939,
+        617
        ],
        "pads": [
         24,
@@ -1873,7 +1898,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.82,
+       "contrast_p10": 15.71,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -1888,12 +1913,13 @@
       }
      ]
     },
-    "phone_scale": 1.08,
-    "layout_family": "closeup2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+    "status_modes": [],
+    "screen_similarity": 0.007,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Chaque calcul gardé\nNommez, retrouvez, exportez en CSV\n\n📲 Téléchargez-la via le lien dans la bio\n\n#CalDaily",
-   "caption_link": "Chaque calcul gardé\nNommez, retrouvez, exportez en CSV\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "La calculatrice qui retient\nNommez un partage d'addition, retrouvez-le\n\n📲 Téléchargez-la via le lien dans la bio\n\n#CalDaily",
+   "caption_link": "La calculatrice qui retient\nNommez un partage d'addition, retrouvez-le\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/fr-FR.jpg"
   },
@@ -1905,28 +1931,49 @@
    "screenshot_locale": "gu-IN",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "ocr:guj",
-    "script_chars": 22,
-    "mixed_english_words": {},
+    "script_chars": 16,
+    "mixed_english_words": {
+     "0": [
+      "Dinner",
+      "coast"
+     ]
+    },
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.81
+    ],
+    "1": [
+     1,
+     0.597
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [
+    "dropped screenshots [0] with mixed English strings [['Dinner', 'coast']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
     "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
    ],
-   "line1": "દરેક ગણતરી સચવાય",
-   "line2": "વિજેટ પોતે જ પૂર્ણ કેલ્ક્યુલેટર",
+   "line1": "દરેક ગણતરી યાદ રહે",
+   "line2": "બિલ વહેંચણીને નામ આપો, પછી શોધો",
    "chips": [
-    "વિજેટ પોતે જ પૂર્ણ કેલ્ક્યુલેટર",
-    "વિજેટ, ટૂલ્સ અને ઇતિહાસ"
+    "બિલ વહેંચણીને નામ આપો, પછી શોધો",
+    "ટીપ, લોન સહિત 8 ટૂલ"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.276,
+    "screen_area_ratio": 0.278,
     "family": "closeup2",
     "font": "NotoSansGujarati.ttf",
     "screen_ratio_vs_battai_split": 1.13,
@@ -1961,10 +2008,10 @@
       {
        "kind": "title",
        "plate": [
-        88,
+        96,
         184,
-        993,
-        496
+        983,
+        490
        ],
        "pads": [
         24,
@@ -1978,7 +2025,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 14.91,
+       "contrast_p10": 14.12,
        "plate_alpha": 0.55,
        "lines": [
         1,
@@ -1993,11 +2040,12 @@
       }
      ]
     },
+    "status_modes": [],
     "layout_family": "closeup2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "દરેક ગણતરી સચવાય\nવિજેટ પોતે જ પૂર્ણ કેલ્ક્યુલેટર\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#CalDaily",
-   "caption_link": "દરેક ગણતરી સચવાય\nવિજેટ પોતે જ પૂર્ણ કેલ્ક્યુલેટર\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "દરેક ગણતરી યાદ રહે\nબિલ વહેંચણીને નામ આપો, પછી શોધો\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#CalDaily",
+   "caption_link": "દરેક ગણતરી યાદ રહે\nબિલ વહેંચણીને નામ આપો, પછી શોધો\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/gu-IN.jpg"
   },
@@ -2009,28 +2057,49 @@
    "screenshot_locale": "he",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "ocr:heb",
-    "script_chars": 64,
-    "mixed_english_words": {},
+    "script_chars": 58,
+    "mixed_english_words": {
+     "0": [
+      "Dinner",
+      "coast"
+     ]
+    },
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.604
+    ],
+    "1": [
+     1,
+     0.593
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [
+    "dropped screenshots [0] with mixed English strings [['Dinner', 'coast']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
     "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
    ],
-   "line1": "מחשבון שזוכר הכול",
-   "line2": "לכל תוצאה שם, וחיפוש גם אחרי שבוע",
+   "line1": "מחשבון שזוכר",
+   "line2": "נותנים שם לחלוקת חשבון ומוצאים אחר כך",
    "chips": [
-    "לכל תוצאה שם, וחיפוש גם אחרי שבוע",
-    "וידג'ט, כלים והיסטוריה"
+    "נותנים שם לחלוקת חשבון ומוצאים אחר כך",
+    "8 כלים, כולל טיפ והלוואה"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.257,
+    "screen_area_ratio": 0.272,
     "family": "closeup2",
     "font": "NotoSansHebrew.ttf",
     "screen_ratio_vs_battai_split": 1.13,
@@ -2065,10 +2134,10 @@
       {
        "kind": "title",
        "plate": [
-        78,
+        186,
         184,
-        1001,
-        443
+        893,
+        510
        ],
        "pads": [
         24,
@@ -2078,15 +2147,15 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 100,
-        "sub": 50,
+        "headline": 104,
+        "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 13.98,
+       "contrast_p10": 15.68,
        "plate_alpha": 0.55,
        "lines": [
         1,
-        1
+        2
        ],
        "lh": [
         1.3,
@@ -2094,37 +2163,15 @@
        ],
        "sub_w_le_headline_w": true,
        "inner_w": 888
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        314,
-        467,
-        765,
-        552
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 16.07,
-       "plate_alpha": 0.55,
-       "lines": 1,
-       "lh": 1.4
       }
      ]
     },
+    "status_modes": [],
     "layout_family": "closeup2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "מחשבון שזוכר הכול\nלכל תוצאה שם, וחיפוש גם אחרי שבוע\n\n📲 הורדה דרך הקישור בביו\n\n#CalDaily",
-   "caption_link": "מחשבון שזוכר הכול\nלכל תוצאה שם, וחיפוש גם אחרי שבוע\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "מחשבון שזוכר\nנותנים שם לחלוקת חשבון ומוצאים אחר כך\n\n📲 הורדה דרך הקישור בביו\n\n#CalDaily",
+   "caption_link": "מחשבון שזוכר\nנותנים שם לחלוקת חשבון ומוצאים אחר כך\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/he.jpg"
   },
@@ -2136,31 +2183,39 @@
    "screenshot_locale": "hi",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "ocr:hin",
-    "script_chars": 18,
+    "script_chars": 148,
     "mixed_english_words": {},
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
-   ],
-   "line1": "हर हिसाब सहेजा हुआ",
-   "line2": "नतीजे को नाम दें, बाद में खोजें",
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_hi.png",
+     "newcap:04_calculator_hi.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [],
+   "line1": "कैलकुलेटर जो याद रखे",
+   "line2": "बिल बँटवारे को नाम दें, बाद में खोजें",
    "chips": [
-    "नतीजे को नाम दें, बाद में खोजें",
-    "विजेट, टूल और साफ़ हिसाब"
+    "बिल बँटवारे को नाम दें, बाद में खोजें",
+    "टिप, लोन समेत 8 टूल"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.282,
-    "family": "closeup2",
+    "phones": 2,
+    "screen_area_ratio": 0.493,
+    "family": "stagger2",
     "font": "NotoSansDevanagari.ttf",
-    "screen_ratio_vs_battai_split": 1.13,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -2193,9 +2248,9 @@
        "kind": "title",
        "plate": [
         86,
-        184,
-        994,
-        479
+        176,
+        995,
+        461
        ],
        "pads": [
         24,
@@ -2205,11 +2260,11 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 100,
-        "sub": 50,
+        "headline": 96,
+        "sub": 48,
         "ratio": 2.0
        },
-       "contrast_p10": 14.85,
+       "contrast_p10": 14.54,
        "plate_alpha": 0.55,
        "lines": [
         1,
@@ -2224,11 +2279,13 @@
       }
      ]
     },
-    "layout_family": "closeup2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+    "status_modes": [],
+    "screen_similarity": 0.019,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "हर हिसाब सहेजा हुआ\nनतीजे को नाम दें, बाद में खोजें\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#CalDaily",
-   "caption_link": "हर हिसाब सहेजा हुआ\nनतीजे को नाम दें, बाद में खोजें\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "कैलकुलेटर जो याद रखे\nबिल बँटवारे को नाम दें, बाद में खोजें\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#CalDaily",
+   "caption_link": "कैलकुलेटर जो याद रखे\nबिल बँटवारे को नाम दें, बाद में खोजें\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/hi.jpg"
   },
@@ -2240,8 +2297,7 @@
    "screenshot_locale": "hr",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -2250,19 +2306,38 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [],
-   "line1": "Svaki izračun pronađeš",
-   "line2": "Naziv, pretraga i osam alata",
+   "screen_match": {
+    "0": [
+     0,
+     0.813
+    ],
+    "1": [
+     1,
+     0.618
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Kalkulator koji pamti",
+   "line2": "Imenuj podjelu računa, nađi je kasnije",
    "chips": [
-    "Naziv, pretraga i osam alata",
-    "Widget, alati i povijest"
+    "Imenuj podjelu računa, nađi je kasnije",
+    "8 alata, npr. napojnica i kredit"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.272,
-    "family": "split2",
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 1.32,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -2271,9 +2346,9 @@
       {
        "kind": "name",
        "plate": [
+        282,
         72,
-        72,
-        306,
+        797,
         160
        ],
        "pads": [
@@ -2286,7 +2361,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 14.87,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -2294,10 +2369,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
+        241,
         184,
-        534,
-        664
+        839,
+        630
        ],
        "pads": [
         24,
@@ -2307,14 +2382,14 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 88,
-        "sub": 44,
+        "headline": 104,
+        "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.52,
+       "contrast_p10": 15.83,
        "plate_alpha": 0.55,
        "lines": [
-        3,
+        2,
         2
        ],
        "lh": [
@@ -2322,38 +2397,17 @@
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        688,
-        392,
-        817
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 9.3,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "Svaki izračun pronađeš\nNaziv, pretraga i osam alata\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#CalDaily",
-   "caption_link": "Svaki izračun pronađeš\nNaziv, pretraga i osam alata\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Kalkulator koji pamti\nImenuj podjelu računa, nađi je kasnije\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#CalDaily",
+   "caption_link": "Kalkulator koji pamti\nImenuj podjelu računa, nađi je kasnije\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/hr.jpg"
   },
@@ -2365,8 +2419,7 @@
    "screenshot_locale": "hu",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -2375,19 +2428,38 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [],
-   "line1": "Minden számítás megvan",
-   "line2": "Név, keresés és nyolc eszköz",
+   "screen_match": {
+    "0": [
+     0,
+     0.835
+    ],
+    "1": [
+     1,
+     0.623
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.234<0.24)"
+   ],
+   "line1": "Számológép, ami emlékszik",
+   "line2": "Nevezd el a számlafelezést, később kereshető",
    "chips": [
-    "Név, keresés és nyolc eszköz",
-    "Widget, eszközök, előzmények"
+    "Nevezd el a számlafelezést, később kereshető",
+    "8 eszköz, pl. borravaló és hitel"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.272,
-    "family": "split2",
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 1.32,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -2396,9 +2468,9 @@
       {
        "kind": "name",
        "plate": [
+        263,
         72,
-        72,
-        306,
+        817,
         160
        ],
        "pads": [
@@ -2411,7 +2483,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 14.52,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -2419,10 +2491,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
+        140,
         184,
-        528,
-        695
+        940,
+        619
        ],
        "pads": [
         24,
@@ -2432,14 +2504,14 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 92,
-        "sub": 46,
+        "headline": 104,
+        "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.54,
+       "contrast_p10": 15.71,
        "plate_alpha": 0.55,
        "lines": [
-        3,
+        2,
         2
        ],
        "lh": [
@@ -2447,38 +2519,17 @@
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        719,
-        485,
-        848
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 8.94,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "Minden számítás megvan\nNév, keresés és nyolc eszköz\n\n📲 Töltsd le a bio linkjéről\n\n#CalDaily",
-   "caption_link": "Minden számítás megvan\nNév, keresés és nyolc eszköz\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Számológép, ami emlékszik\nNevezd el a számlafelezést, később kereshető\n\n📲 Töltsd le a bio linkjéről\n\n#CalDaily",
+   "caption_link": "Számológép, ami emlékszik\nNevezd el a számlafelezést, később kereshető\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/hu.jpg"
   },
@@ -2490,8 +2541,8 @@
    "screenshot_locale": "id",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -2500,21 +2551,29 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
-   ],
-   "line1": "Hitungan tersimpan",
-   "line2": "Beri nama hasil, cari lagi nanti",
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_id.png",
+     "newcap:04_calculator_id.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [],
+   "line1": "Kalkulator yang mengingat",
+   "line2": "Beri nama patungan makan, cari nanti",
    "chips": [
-    "Beri nama hasil, cari lagi nanti",
-    "Widget, alat, riwayat rapi"
+    "Beri nama patungan makan, cari nanti",
+    "8 alat: tip, patungan, cicilan"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.248,
-    "family": "closeup2",
+    "phones": 2,
+    "screen_area_ratio": 0.4,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 1.32,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -2546,10 +2605,10 @@
       {
        "kind": "title",
        "plate": [
-        249,
-        184,
-        831,
-        631
+        103,
+        176,
+        977,
+        616
        ],
        "pads": [
         24,
@@ -2563,7 +2622,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 15.62,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -2578,12 +2637,13 @@
       }
      ]
     },
-    "phone_scale": 1.08,
-    "layout_family": "closeup2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+    "status_modes": [],
+    "screen_similarity": 0.015,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Hitungan tersimpan\nBeri nama hasil, cari lagi nanti\n\n📲 Unduh lewat link di bio\n\n#CalDaily",
-   "caption_link": "Hitungan tersimpan\nBeri nama hasil, cari lagi nanti\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Kalkulator yang mengingat\nBeri nama patungan makan, cari nanti\n\n📲 Unduh lewat link di bio\n\n#CalDaily",
+   "caption_link": "Kalkulator yang mengingat\nBeri nama patungan makan, cari nanti\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/id.jpg"
   },
@@ -2595,8 +2655,8 @@
    "screenshot_locale": "it",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -2605,19 +2665,29 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_it.png",
+     "newcap:04_calculator_it.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [],
-   "line1": "Ogni calcolo, salvato",
-   "line2": "Dagli un nome, ritrovalo, esporta in CSV",
+   "line1": "La calcolatrice che ricorda",
+   "line2": "Dai un nome al conto diviso, ritrovalo poi",
    "chips": [
-    "Dagli un nome, ritrovalo, esporta in CSV",
-    "Widget, strumenti, cronologia"
+    "Dai un nome al conto diviso, ritrovalo poi",
+    "8 strumenti: mance, rate e altro"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
+    "phones": 2,
+    "screen_area_ratio": 0.395,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -2626,9 +2696,9 @@
       {
        "kind": "name",
        "plate": [
+        274,
         72,
-        72,
-        306,
+        806,
         160
        ],
        "pads": [
@@ -2641,7 +2711,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 14.71,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -2649,10 +2719,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
-        184,
-        513,
-        819
+        142,
+        176,
+        938,
+        623
        ],
        "pads": [
         24,
@@ -2666,49 +2736,28 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 13.11,
+       "contrast_p10": 15.7,
        "plate_alpha": 0.55,
        "lines": [
-        3,
-        3
+        2,
+        2
        ],
        "lh": [
         1.18,
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        843,
-        499,
-        972
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 10.6,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "screen_similarity": 0.008,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Ogni calcolo, salvato\nDagli un nome, ritrovalo, esporta in CSV\n\n📲 Scaricala dal link nella bio\n\n#CalDaily",
-   "caption_link": "Ogni calcolo, salvato\nDagli un nome, ritrovalo, esporta in CSV\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "La calcolatrice che ricorda\nDai un nome al conto diviso, ritrovalo poi\n\n📲 Scaricala dal link nella bio\n\n#CalDaily",
+   "caption_link": "La calcolatrice che ricorda\nDai un nome al conto diviso, ritrovalo poi\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/it.jpg"
   },
@@ -2720,31 +2769,39 @@
    "screenshot_locale": "ja",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "ocr:jpn",
-    "script_chars": 34,
+    "script_chars": 72,
     "mixed_english_words": {},
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
-   ],
-   "line1": "計算結果を全部残す",
-   "line2": "名前を付けて、あとから検索",
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_ja.png",
+     "newcap:04_calculator_ja.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [],
+   "line1": "計算を覚えている電卓",
+   "line2": "割り勘に名前をつけて後で検索",
    "chips": [
-    "名前を付けて、あとから検索",
-    "ウィジェット・8つのツール・履歴"
+    "割り勘に名前をつけて後で検索",
+    "チップ割り勘、ローンなど8種"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.263,
-    "family": "closeup2",
+    "phones": 2,
+    "screen_area_ratio": 0.529,
+    "family": "stagger2",
     "font": "NotoSansJP.ttf",
-    "screen_ratio_vs_battai_split": 1.13,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -2776,10 +2833,10 @@
       {
        "kind": "title",
        "plate": [
-        92,
-        184,
-        987,
-        426
+        82,
+        176,
+        997,
+        402
        ],
        "pads": [
         24,
@@ -2789,11 +2846,11 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 96,
-        "sub": 48,
+        "headline": 88,
+        "sub": 44,
         "ratio": 2.0
        },
-       "contrast_p10": 15.05,
+       "contrast_p10": 14.53,
        "plate_alpha": 0.55,
        "lines": [
         1,
@@ -2805,37 +2862,16 @@
        ],
        "sub_w_le_headline_w": true,
        "inner_w": 888
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        210,
-        450,
-        870,
-        536
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 15.72,
-       "plate_alpha": 0.55,
-       "lines": 1,
-       "lh": 1.25
       }
      ]
     },
-    "layout_family": "closeup2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+    "status_modes": [],
+    "screen_similarity": 0.017,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "計算結果を全部残す\n名前を付けて、あとから検索\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#CalDaily",
-   "caption_link": "計算結果を全部残す\n名前を付けて、あとから検索\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "計算を覚えている電卓\n割り勘に名前をつけて後で検索\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#CalDaily",
+   "caption_link": "計算を覚えている電卓\n割り勘に名前をつけて後で検索\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ja.jpg"
   },
@@ -2847,31 +2883,52 @@
    "screenshot_locale": "kn-IN",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "ocr:kan",
     "script_chars": 43,
-    "mixed_english_words": {},
+    "mixed_english_words": {
+     "0": [
+      "Dinner",
+      "coast"
+     ]
+    },
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.81
+    ],
+    "1": [
+     1,
+     0.605
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
+    "dropped screenshots [0] with mixed English strings [['Dinner', 'coast']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.204<0.24; closeup2×1.08: screen_area=0.22<0.24; closeup2×1.16: screen_area=0.235<0.24)"
    ],
-   "line1": "ಪ್ರತಿ ಲೆಕ್ಕ ಉಳಿಯುತ್ತದೆ",
-   "line2": "ಪ್ರತಿ ಫಲಿತಾಂಶಕ್ಕೆ ಹೆಸರು ನೀಡಿ",
+   "line1": "ನೆನಪಿಡುವ ಕ್ಯಾಲ್ಕುಲೇಟರ್",
+   "line2": "ಬಿಲ್ ಹಂಚಿಕೆಗೆ ಹೆಸರಿಡಿ, ನಂತರ ಹುಡುಕಿ",
    "chips": [
-    "ಪ್ರತಿ ಫಲಿತಾಂಶಕ್ಕೆ ಹೆಸರು ನೀಡಿ",
-    "ವಿಜೆಟ್, ಪರಿಕರ, 100 ಥೀಮ್"
+    "ಬಿಲ್ ಹಂಚಿಕೆಗೆ ಹೆಸರಿಡಿ, ನಂತರ ಹುಡುಕಿ",
+    "ಟಿಪ್, ಸಾಲ ಸೇರಿ 8 ಉಪಕರಣ"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.247,
+    "screen_area_ratio": 0.252,
     "family": "closeup2",
     "font": "NotoSansKannada.ttf",
-    "screen_ratio_vs_battai_split": 1.13,
+    "screen_ratio_vs_battai_split": 1.77,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -2882,7 +2939,7 @@
        "plate": [
         326,
         72,
-        754,
+        755,
         160
        ],
        "pads": [
@@ -2903,10 +2960,10 @@
       {
        "kind": "title",
        "plate": [
-        78,
+        192,
         184,
-        1003,
-        467
+        888,
+        708
        ],
        "pads": [
         24,
@@ -2916,15 +2973,15 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 92,
-        "sub": 46,
+        "headline": 104,
+        "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 14.38,
+       "contrast_p10": 15.82,
        "plate_alpha": 0.55,
        "lines": [
-        1,
-        1
+        2,
+        2
        ],
        "lh": [
         1.45,
@@ -2932,37 +2989,16 @@
        ],
        "sub_w_le_headline_w": true,
        "inner_w": 888
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        279,
-        491,
-        801,
-        583
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 16.13,
-       "plate_alpha": 0.55,
-       "lines": 1,
-       "lh": 1.5
       }
      ]
     },
+    "status_modes": [],
+    "phone_scale": 1.25,
     "layout_family": "closeup2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "ಪ್ರತಿ ಲೆಕ್ಕ ಉಳಿಯುತ್ತದೆ\nಪ್ರತಿ ಫಲಿತಾಂಶಕ್ಕೆ ಹೆಸರು ನೀಡಿ\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#CalDaily",
-   "caption_link": "ಪ್ರತಿ ಲೆಕ್ಕ ಉಳಿಯುತ್ತದೆ\nಪ್ರತಿ ಫಲಿತಾಂಶಕ್ಕೆ ಹೆಸರು ನೀಡಿ\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "ನೆನಪಿಡುವ ಕ್ಯಾಲ್ಕುಲೇಟರ್\nಬಿಲ್ ಹಂಚಿಕೆಗೆ ಹೆಸರಿಡಿ, ನಂತರ ಹುಡುಕಿ\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#CalDaily",
+   "caption_link": "ನೆನಪಿಡುವ ಕ್ಯಾಲ್ಕುಲೇಟರ್\nಬಿಲ್ ಹಂಚಿಕೆಗೆ ಹೆಸರಿಡಿ, ನಂತರ ಹುಡುಕಿ\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/kn-IN.jpg"
   },
@@ -2974,31 +3010,39 @@
    "screenshot_locale": "ko",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "ocr:kor",
-    "script_chars": 23,
+    "script_chars": 72,
     "mixed_english_words": {},
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes)"
-   ],
-   "line1": "계산 결과를 모두 남겨요",
-   "line2": "이름을 붙이고 나중에 검색",
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_ko.png",
+     "newcap:04_calculator_ko.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [],
+   "line1": "기억하는 계산기",
+   "line2": "더치페이에 이름 붙여 검색",
    "chips": [
-    "이름을 붙이고 나중에 검색",
-    "위젯, 도구, 기록 정리"
+    "더치페이에 이름 붙여 검색",
+    "팁·더치페이·대출 등 8가지"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.267,
-    "family": "closeup2",
+    "phones": 2,
+    "screen_area_ratio": 0.511,
+    "family": "stagger2",
     "font": "NotoSansKR.ttf",
-    "screen_ratio_vs_battai_split": 1.13,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -3030,10 +3074,10 @@
       {
        "kind": "title",
        "plate": [
-        89,
-        184,
-        991,
-        408
+        180,
+        176,
+        900,
+        431
        ],
        "pads": [
         24,
@@ -3043,11 +3087,11 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 88,
-        "sub": 44,
+        "headline": 104,
+        "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 14.63,
+       "contrast_p10": 15.66,
        "plate_alpha": 0.55,
        "lines": [
         1,
@@ -3059,37 +3103,16 @@
        ],
        "sub_w_le_headline_w": true,
        "inner_w": 888
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        336,
-        432,
-        745,
-        522
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 16.12,
-       "plate_alpha": 0.55,
-       "lines": 1,
-       "lh": 1.25
       }
      ]
     },
-    "layout_family": "closeup2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+    "status_modes": [],
+    "screen_similarity": 0.033,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "계산 결과를 모두 남겨요\n이름을 붙이고 나중에 검색\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#CalDaily",
-   "caption_link": "계산 결과를 모두 남겨요\n이름을 붙이고 나중에 검색\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "기억하는 계산기\n더치페이에 이름 붙여 검색\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#CalDaily",
+   "caption_link": "기억하는 계산기\n더치페이에 이름 붙여 검색\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ko.jpg"
   },
@@ -3101,28 +3124,49 @@
    "screenshot_locale": "ml-IN",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "ocr:mal",
-    "script_chars": 43,
-    "mixed_english_words": {},
+    "script_chars": 44,
+    "mixed_english_words": {
+     "0": [
+      "Dinner",
+      "coast"
+     ]
+    },
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.882
+    ],
+    "1": [
+     1,
+     0.603
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.2<0.24; closeup2×1.08: screen_area=0.216<0.24; closeup2×1.16: screen_area=0.231<0.24)"
+    "dropped screenshots [0] with mixed English strings [['Dinner', 'coast']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.203<0.24; closeup2×1.08: screen_area=0.219<0.24; closeup2×1.16: screen_area=0.234<0.24)"
    ],
-   "line1": "കണക്ക് സൂക്ഷിക്കും",
-   "line2": "ഫലങ്ങൾക്ക് പേരും തരവും നൽകാം",
+   "line1": "ഓർമയുള്ള കാൽക്കുലേറ്റർ",
+   "line2": "ബിൽ പങ്കിടലിന് പേരിടാം, പിന്നെ തിരയാം",
    "chips": [
-    "ഫലങ്ങൾക്ക് പേരും തരവും നൽകാം",
-    "വിജറ്റ്, ടൂളുകൾ, 100 തീം"
+    "ബിൽ പങ്കിടലിന് പേരിടാം, പിന്നെ തിരയാം",
+    "ടിപ്പ്, ലോൺ ഉൾപ്പെടെ 8 ടൂൾ"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.247,
+    "screen_area_ratio": 0.251,
     "family": "closeup2",
     "font": "NotoSansMalayalam.ttf",
     "screen_ratio_vs_battai_split": 1.77,
@@ -3149,7 +3193,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 14.78,
+       "contrast_p10": 14.79,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -3157,10 +3201,10 @@
       {
        "kind": "title",
        "plate": [
-        176,
+        78,
         184,
-        905,
-        719
+        1001,
+        710
        ],
        "pads": [
         24,
@@ -3174,7 +3218,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.79,
+       "contrast_p10": 15.21,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -3189,12 +3233,13 @@
       }
      ]
     },
+    "status_modes": [],
     "phone_scale": 1.25,
     "layout_family": "closeup2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "കണക്ക് സൂക്ഷിക്കും\nഫലങ്ങൾക്ക് പേരും തരവും നൽകാം\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#CalDaily",
-   "caption_link": "കണക്ക് സൂക്ഷിക്കും\nഫലങ്ങൾക്ക് പേരും തരവും നൽകാം\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "ഓർമയുള്ള കാൽക്കുലേറ്റർ\nബിൽ പങ്കിടലിന് പേരിടാം, പിന്നെ തിരയാം\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#CalDaily",
+   "caption_link": "ഓർമയുള്ള കാൽക്കുലേറ്റർ\nബിൽ പങ്കിടലിന് പേരിടാം, പിന്നെ തിരയാം\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ml-IN.jpg"
   },
@@ -3206,22 +3251,44 @@
    "screenshot_locale": "mr-IN",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "ocr:mar",
     "script_chars": 26,
-    "mixed_english_words": {},
+    "mixed_english_words": {
+     "0": [
+      "Dinner",
+      "coast"
+     ]
+    },
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [],
-   "line1": "प्रत्येक हिशेब जपलेला",
-   "line2": "निकालाला नाव द्या, नंतर शोधा",
+   "screen_match": {
+    "0": [
+     0,
+     0.81
+    ],
+    "1": [
+     1,
+     0.593
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['Dinner', 'coast']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)"
+   ],
+   "line1": "स्मरणशील कॅल्क्युलेटर",
+   "line2": "बिल वाटणीला नाव द्या, नंतर शोधा",
    "chips": [
-    "निकालाला नाव द्या, नंतर शोधा",
-    "विजेट, साधने आणि इतिहास"
+    "बिल वाटणीला नाव द्या, नंतर शोधा",
+    "टिप, कर्जासह 8 साधने"
    ],
    "layout": {
     "phones": 1,
@@ -3262,509 +3329,8 @@
        "plate": [
         72,
         184,
-        459,
-        868
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "headline": 104,
-        "sub": 52,
-        "ratio": 2.0
-       },
-       "contrast_p10": 13.04,
-       "plate_alpha": 0.55,
-       "lines": [
-        3,
-        2
-       ],
-       "lh": [
-        1.45,
-        1.5
-       ],
-       "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        892,
-        366,
-        1035
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 10.09,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.5
-      }
-     ]
-    },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
-   },
-   "caption_instagram": "प्रत्येक हिशेब जपलेला\nनिकालाला नाव द्या, नंतर शोधा\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#CalDaily",
-   "caption_link": "प्रत्येक हिशेब जपलेला\nनिकालाला नाव द्या, नंतर शोधा\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
-   "cta_source": "extra",
-   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/mr-IN.jpg"
-  },
-  {
-   "locale": "ms",
-   "file": "caldaily/ms.jpg",
-   "intended_locale": "ms",
-   "headline_locale": "ms",
-   "screenshot_locale": "ms",
-   "localized": true,
-   "screenshots_used": [
-    1,
-    2,
-    3
-   ],
-   "demo_language_check": {
-    "method": "asset-diff",
-    "script_chars": null,
-    "mixed_english_words": {},
-    "all_used_screens_localized": true
-   },
-   "screen_text_flags": {},
-   "warnings": [],
-   "line1": "Setiap kiraan disimpan",
-   "line2": "Namakan keputusan, cari semula nanti",
-   "chips": [
-    "Namakan keputusan, cari semula nanti",
-    "Widget, alatan, sejarah kemas"
-   ],
-   "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
-    "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
-    "cards_over_screen": [],
-    "typography_check": {
-     "ok": true,
-     "problems": [],
-     "plates": [
-      {
-       "kind": "name",
-       "plate": [
-        72,
-        72,
-        306,
-        160
-       ],
-       "pads": [
-        16,
-        16,
-        16,
-        16
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 32
-       },
-       "contrast_p10": 15.83,
-       "plate_alpha": 0.55,
-       "lines": 1,
-       "lh": null
-      },
-      {
-       "kind": "title",
-       "plate": [
-        72,
-        184,
-        524,
-        719
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "headline": 88,
-        "sub": 44,
-        "ratio": 2.0
-       },
-       "contrast_p10": 15.08,
-       "plate_alpha": 0.55,
-       "lines": [
-        3,
-        3
-       ],
-       "lh": [
-        1.18,
-        1.25
-       ],
-       "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        743,
-        436,
-        872
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 8.74,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
-      }
-     ]
-    },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
-   },
-   "caption_instagram": "Setiap kiraan disimpan\nNamakan keputusan, cari semula nanti\n\n📲 Muat turun melalui pautan dalam bio\n\n#CalDaily",
-   "caption_link": "Setiap kiraan disimpan\nNamakan keputusan, cari semula nanti\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
-   "cta_source": "extra",
-   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ms.jpg"
-  },
-  {
-   "locale": "nl-NL",
-   "file": "caldaily/nl-NL.jpg",
-   "intended_locale": "nl-NL",
-   "headline_locale": "nl-NL",
-   "screenshot_locale": "nl-NL",
-   "localized": true,
-   "screenshots_used": [
-    1,
-    3
-   ],
-   "demo_language_check": {
-    "method": "asset-diff",
-    "script_chars": null,
-    "mixed_english_words": {},
-    "all_used_screens_localized": true
-   },
-   "screen_text_flags": {},
-   "warnings": [],
-   "line1": "Elke som bewaard",
-   "line2": "Geef resultaten een naam en vind ze terug",
-   "chips": [
-    "Geef resultaten een naam en vind ze terug",
-    "Widget, tools, geschiedenis"
-   ],
-   "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
-    "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
-    "cards_over_screen": [],
-    "typography_check": {
-     "ok": true,
-     "problems": [],
-     "plates": [
-      {
-       "kind": "name",
-       "plate": [
-        72,
-        72,
-        306,
-        160
-       ],
-       "pads": [
-        16,
-        16,
-        16,
-        16
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 32
-       },
-       "contrast_p10": 15.83,
-       "plate_alpha": 0.55,
-       "lines": 1,
-       "lh": null
-      },
-      {
-       "kind": "title",
-       "plate": [
-        72,
-        184,
-        527,
-        643
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "headline": 92,
-        "sub": 46,
-        "ratio": 2.0
-       },
-       "contrast_p10": 15.59,
-       "plate_alpha": 0.55,
-       "lines": [
-        2,
-        3
-       ],
-       "lh": [
-        1.18,
-        1.25
-       ],
-       "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        667,
-        412,
-        796
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 9.72,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
-      }
-     ]
-    },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
-   },
-   "caption_instagram": "Elke som bewaard\nGeef resultaten een naam en vind ze terug\n\n📲 Download via de link in bio\n\n#CalDaily",
-   "caption_link": "Elke som bewaard\nGeef resultaten een naam en vind ze terug\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
-   "cta_source": "lib",
-   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/nl-NL.jpg"
-  },
-  {
-   "locale": "no",
-   "file": "caldaily/no.jpg",
-   "intended_locale": "no",
-   "headline_locale": "no",
-   "screenshot_locale": "no",
-   "localized": true,
-   "screenshots_used": [
-    1,
-    3
-   ],
-   "demo_language_check": {
-    "method": "asset-diff",
-    "script_chars": null,
-    "mixed_english_words": {},
-    "all_used_screens_localized": true
-   },
-   "screen_text_flags": {},
-   "warnings": [],
-   "line1": "Hvert resultat lagret",
-   "line2": "Navngi, søk og åtte verktøy",
-   "chips": [
-    "Navngi, søk og åtte verktøy",
-    "Widget, verktøy og historikk"
-   ],
-   "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
-    "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
-    "cards_over_screen": [],
-    "typography_check": {
-     "ok": true,
-     "problems": [],
-     "plates": [
-      {
-       "kind": "name",
-       "plate": [
-        72,
-        72,
-        306,
-        160
-       ],
-       "pads": [
-        16,
-        16,
-        16,
-        16
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 32
-       },
-       "contrast_p10": 15.83,
-       "plate_alpha": 0.55,
-       "lines": 1,
-       "lh": null
-      },
-      {
-       "kind": "title",
-       "plate": [
-        72,
-        184,
-        535,
-        748
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "headline": 104,
-        "sub": 52,
-        "ratio": 2.0
-       },
-       "contrast_p10": 14.95,
-       "plate_alpha": 0.55,
-       "lines": [
-        3,
-        2
-       ],
-       "lh": [
-        1.18,
-        1.25
-       ],
-       "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        772,
-        450,
-        901
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 8.52,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
-      }
-     ]
-    },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
-   },
-   "caption_instagram": "Hvert resultat lagret\nNavngi, søk og åtte verktøy\n\n📲 Last ned via lenken i bio\n\n#CalDaily",
-   "caption_link": "Hvert resultat lagret\nNavngi, søk og åtte verktøy\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
-   "cta_source": "lib",
-   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/no.jpg"
-  },
-  {
-   "locale": "or-IN",
-   "file": "caldaily/or-IN.jpg",
-   "intended_locale": "or-IN",
-   "headline_locale": "or-IN",
-   "screenshot_locale": "or-IN",
-   "localized": true,
-   "screenshots_used": [
-    1,
-    3
-   ],
-   "demo_language_check": {
-    "method": "ocr:ori",
-    "script_chars": 25,
-    "mixed_english_words": {},
-    "all_used_screens_localized": true
-   },
-   "screen_text_flags": {},
-   "warnings": [],
-   "line1": "ପ୍ରତି ହିସାବ ସଞ୍ଚିତ",
-   "line2": "ୱିଜେଟ୍ ନିଜେ ଏକ ପୂର୍ଣ୍ଣ କାଲକୁଲେଟର",
-   "chips": [
-    "ୱିଜେଟ୍ ନିଜେ ଏକ ପୂର୍ଣ୍ଣ କାଲକୁଲେଟର",
-    "ୱିଜେଟ, ଉପକରଣ ଓ ଇତିହାସ"
-   ],
-   "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
-    "font": "NotoSansOriya.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
-    "cards_over_screen": [],
-    "typography_check": {
-     "ok": true,
-     "problems": [],
-     "plates": [
-      {
-       "kind": "name",
-       "plate": [
-        72,
-        72,
-        499,
-        160
-       ],
-       "pads": [
-        16,
-        16,
-        16,
-        16
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 32
-       },
-       "contrast_p10": 15.83,
-       "plate_alpha": 0.55,
-       "lines": 1,
-       "lh": null
-      },
-      {
-       "kind": "title",
-       "plate": [
-        72,
-        184,
-        533,
-        678
+        539,
+        679
        ],
        "pads": [
         24,
@@ -3778,7 +3344,7 @@
         "sub": 48,
         "ratio": 2.0
        },
-       "contrast_p10": 15.53,
+       "contrast_p10": 15.6,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -3795,9 +3361,9 @@
        "kind": "chip",
        "plate": [
         72,
-        702,
-        431,
-        839
+        703,
+        475,
+        795
        ],
        "pads": [
         24,
@@ -3809,18 +3375,504 @@
        "sizes": {
         "text": 36
        },
-       "contrast_p10": 8.98,
+       "contrast_p10": 9.32,
        "plate_alpha": 0.55,
-       "lines": 2,
+       "lines": 1,
        "lh": 1.5
       }
      ]
     },
+    "status_modes": [],
     "layout_family": "split2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
    },
-   "caption_instagram": "ପ୍ରତି ହିସାବ ସଞ୍ଚିତ\nୱିଜେଟ୍ ନିଜେ ଏକ ପୂର୍ଣ୍ଣ କାଲକୁଲେଟର\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#CalDaily",
-   "caption_link": "ପ୍ରତି ହିସାବ ସଞ୍ଚିତ\nୱିଜେଟ୍ ନିଜେ ଏକ ପୂର୍ଣ୍ଣ କାଲକୁଲେଟର\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "स्मरणशील कॅल्क्युलेटर\nबिल वाटणीला नाव द्या, नंतर शोधा\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#CalDaily",
+   "caption_link": "स्मरणशील कॅल्क्युलेटर\nबिल वाटणीला नाव द्या, नंतर शोधा\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "caldaily/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.812
+    ],
+    "1": [
+     1,
+     0.609
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.235<0.24)"
+   ],
+   "line1": "Kalkulator yang ingat",
+   "line2": "Namakan bil kongsi, cari semula kemudian",
+   "chips": [
+    "Namakan bil kongsi, cari semula kemudian",
+    "8 alat termasuk tip dan pinjaman"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.253,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        805,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.82,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        236,
+        184,
+        845,
+        618
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.83,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "Kalkulator yang ingat\nNamakan bil kongsi, cari semula kemudian\n\n📲 Muat turun melalui pautan dalam bio\n\n#CalDaily",
+   "caption_link": "Kalkulator yang ingat\nNamakan bil kongsi, cari semula kemudian\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "caldaily/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_nl-NL.png",
+     "newcap:04_calculator_nl-NL.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [],
+   "line1": "Rekenmachine die onthoudt",
+   "line2": "Benoem een gesplitste rekening, zoek later",
+   "chips": [
+    "Benoem een gesplitste rekening, zoek later",
+    "8 tools, o.a. fooi delen en lening"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.395,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        232,
+        72,
+        847,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 13.8,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        130,
+        176,
+        949,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.66,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.001,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Rekenmachine die onthoudt\nBenoem een gesplitste rekening, zoek later\n\n📲 Download via de link in bio\n\n#CalDaily",
+   "caption_link": "Rekenmachine die onthoudt\nBenoem een gesplitste rekening, zoek later\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "caldaily/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.816
+    ],
+    "1": [
+     1,
+     0.6
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.233<0.24)"
+   ],
+   "line1": "En kalkulator som husker",
+   "line2": "Gi en regningsdeling navn, finn den senere",
+   "chips": [
+    "Gi en regningsdeling navn, finn den senere",
+    "8 verktøy, bl.a. tips og lån"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.251,
+    "family": "closeup2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.32,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        250,
+        72,
+        831,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.36,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        168,
+        184,
+        912,
+        624
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.75,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "En kalkulator som husker\nGi en regningsdeling navn, finn den senere\n\n📲 Last ned via lenken i bio\n\n#CalDaily",
+   "caption_link": "En kalkulator som husker\nGi en regningsdeling navn, finn den senere\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "caldaily/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 25,
+    "mixed_english_words": {
+     "0": [
+      "Dinner",
+      "coast"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.813
+    ],
+    "1": [
+     1,
+     0.599
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['Dinner', 'coast']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.209<0.24; closeup2×1.08: screen_area=0.226<0.24)"
+   ],
+   "line1": "ମନେ ରଖୁଥିବା କାଲକୁଲେଟର",
+   "line2": "ବିଲ୍ ଭାଗର ନାମ ଦେଇ ପରେ ଖୋଜନ୍ତୁ",
+   "chips": [
+    "ବିଲ୍ ଭାଗର ନାମ ଦେଇ ପରେ ଖୋଜନ୍ତୁ",
+    "ଟିପ୍, ଲୋନ୍ ସହ 8ଟି ଟୁଲ୍"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "closeup2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 1.52,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        326,
+        72,
+        753,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 15.02,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        211,
+        184,
+        869,
+        692
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.77,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "ମନେ ରଖୁଥିବା କାଲକୁଲେଟର\nବିଲ୍ ଭାଗର ନାମ ଦେଇ ପରେ ଖୋଜନ୍ତୁ\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#CalDaily",
+   "caption_link": "ମନେ ରଖୁଥିବା କାଲକୁଲେଟର\nବିଲ୍ ଭାଗର ନାମ ଦେଇ ପରେ ଖୋଜନ୍ତୁ\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/or-IN.jpg"
   },
@@ -3832,22 +3884,44 @@
    "screenshot_locale": "pa-IN",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "ocr:pan",
     "script_chars": 16,
-    "mixed_english_words": {},
+    "mixed_english_words": {
+     "0": [
+      "Dinner",
+      "coast"
+     ]
+    },
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [],
-   "line1": "ਹਰ ਹਿਸਾਬ ਸੰਭਾਲਿਆ",
-   "line2": "ਵਿਜੇਟ ਆਪ ਹੀ ਪੂਰਾ ਕੈਲਕੁਲੇਟਰ",
+   "screen_match": {
+    "0": [
+     0,
+     0.811
+    ],
+    "1": [
+     1,
+     0.593
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['Dinner', 'coast']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)"
+   ],
+   "line1": "ਯਾਦ ਰੱਖਦਾ ਕੈਲਕੁਲੇਟਰ",
+   "line2": "ਬਿੱਲ ਵੰਡ ਨੂੰ ਨਾਂ ਦਿਓ, ਬਾਅਦ ’ਚ ਲੱਭੋ",
    "chips": [
-    "ਵਿਜੇਟ ਆਪ ਹੀ ਪੂਰਾ ਕੈਲਕੁਲੇਟਰ",
-    "ਵਿਜੇਟ, ਸੰਦ ਅਤੇ ਇਤਿਹਾਸ"
+    "ਬਿੱਲ ਵੰਡ ਨੂੰ ਨਾਂ ਦਿਓ, ਬਾਅਦ ’ਚ ਲੱਭੋ",
+    "ਟਿਪ, ਕਰਜ਼ੇ ਸਮੇਤ 8 ਟੂਲ"
    ],
    "layout": {
     "phones": 1,
@@ -3888,8 +3962,8 @@
        "plate": [
         72,
         184,
-        528,
-        707
+        526,
+        678
        ],
        "pads": [
         24,
@@ -3899,11 +3973,11 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 100,
-        "sub": 50,
+        "headline": 96,
+        "sub": 48,
         "ratio": 2.0
        },
-       "contrast_p10": 15.54,
+       "contrast_p10": 15.59,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -3920,9 +3994,9 @@
        "kind": "chip",
        "plate": [
         72,
-        731,
-        496,
-        823
+        702,
+        475,
+        796
        ],
        "pads": [
         24,
@@ -3934,18 +4008,19 @@
        "sizes": {
         "text": 36
        },
-       "contrast_p10": 8.89,
+       "contrast_p10": 9.34,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": 1.5
       }
      ]
     },
+    "status_modes": [],
     "layout_family": "split2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
    },
-   "caption_instagram": "ਹਰ ਹਿਸਾਬ ਸੰਭਾਲਿਆ\nਵਿਜੇਟ ਆਪ ਹੀ ਪੂਰਾ ਕੈਲਕੁਲੇਟਰ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#CalDaily",
-   "caption_link": "ਹਰ ਹਿਸਾਬ ਸੰਭਾਲਿਆ\nਵਿਜੇਟ ਆਪ ਹੀ ਪੂਰਾ ਕੈਲਕੁਲੇਟਰ\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "ਯਾਦ ਰੱਖਦਾ ਕੈਲਕੁਲੇਟਰ\nਬਿੱਲ ਵੰਡ ਨੂੰ ਨਾਂ ਦਿਓ, ਬਾਅਦ ’ਚ ਲੱਭੋ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#CalDaily",
+   "caption_link": "ਯਾਦ ਰੱਖਦਾ ਕੈਲਕੁਲੇਟਰ\nਬਿੱਲ ਵੰਡ ਨੂੰ ਨਾਂ ਦਿਓ, ਬਾਅਦ ’ਚ ਲੱਭੋ\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/pa-IN.jpg"
   },
@@ -3957,8 +4032,8 @@
    "screenshot_locale": "pl",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -3967,19 +4042,29 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_pl.png",
+     "newcap:04_calculator_pl.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [],
-   "line1": "Każdy wynik zapisany",
-   "line2": "Nazwij, wyszukaj i osiem narzędzi",
+   "line1": "Kalkulator, który pamięta",
+   "line2": "Nazwij podział rachunku, znajdź go później",
    "chips": [
-    "Nazwij, wyszukaj i osiem narzędzi",
-    "Widżet, narzędzia, historia"
+    "Nazwij podział rachunku, znajdź go później",
+    "8 narzędzi, m.in. napiwek i kredyt"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.273,
-    "family": "split2",
+    "phones": 2,
+    "screen_area_ratio": 0.396,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -3988,9 +4073,9 @@
       {
        "kind": "name",
        "plate": [
+        258,
         72,
-        72,
-        306,
+        822,
         160
        ],
        "pads": [
@@ -4003,7 +4088,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 14.34,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -4011,10 +4096,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
-        184,
-        528,
-        694
+        147,
+        176,
+        933,
+        622
        ],
        "pads": [
         24,
@@ -4024,14 +4109,14 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 92,
-        "sub": 46,
+        "headline": 104,
+        "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.53,
+       "contrast_p10": 15.71,
        "plate_alpha": 0.55,
        "lines": [
-        3,
+        2,
         2
        ],
        "lh": [
@@ -4039,38 +4124,17 @@
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        718,
-        489,
-        838
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 8.92,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "screen_similarity": 0.002,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Każdy wynik zapisany\nNazwij, wyszukaj i osiem narzędzi\n\n📲 Pobierz przez link w bio\n\n#CalDaily",
-   "caption_link": "Każdy wynik zapisany\nNazwij, wyszukaj i osiem narzędzi\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Kalkulator, który pamięta\nNazwij podział rachunku, znajdź go później\n\n📲 Pobierz przez link w bio\n\n#CalDaily",
+   "caption_link": "Kalkulator, który pamięta\nNazwij podział rachunku, znajdź go później\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/pl.jpg"
   },
@@ -4082,8 +4146,8 @@
    "screenshot_locale": "pt-BR",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -4092,21 +4156,29 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
-   ],
-   "line1": "Cada conta guardada",
-   "line2": "Dê nome ao resultado e ache depois",
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_pt-BR.png",
+     "newcap:04_calculator_pt-BR.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [],
+   "line1": "Calculadora que lembra",
+   "line2": "Dê nome à conta dividida e ache depois",
    "chips": [
-    "Dê nome ao resultado e ache depois",
-    "Widget, ferramentas, histórico"
+    "Dê nome à conta dividida e ache depois",
+    "8 ferramentas: gorjeta, empréstimo"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.249,
-    "family": "closeup2",
+    "phones": 2,
+    "screen_area_ratio": 0.396,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 1.32,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -4138,10 +4210,10 @@
       {
        "kind": "title",
        "plate": [
-        230,
-        184,
-        851,
-        630
+        211,
+        176,
+        869,
+        622
        ],
        "pads": [
         24,
@@ -4155,7 +4227,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.82,
+       "contrast_p10": 15.77,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -4170,12 +4242,13 @@
       }
      ]
     },
-    "phone_scale": 1.08,
-    "layout_family": "closeup2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+    "status_modes": [],
+    "screen_similarity": 0.021,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Cada conta guardada\nDê nome ao resultado e ache depois\n\n📲 Baixe pelo link na bio\n\n#CalDaily",
-   "caption_link": "Cada conta guardada\nDê nome ao resultado e ache depois\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Calculadora que lembra\nDê nome à conta dividida e ache depois\n\n📲 Baixe pelo link na bio\n\n#CalDaily",
+   "caption_link": "Calculadora que lembra\nDê nome à conta dividida e ache depois\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/pt-BR.jpg"
   },
@@ -4187,8 +4260,7 @@
    "screenshot_locale": "pt-PT",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -4197,14 +4269,31 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.814
+    ],
+    "1": [
+     1,
+     0.6
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
     "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
    ],
-   "line1": "Cada conta guardada",
-   "line2": "Dê nome ao resultado e encontre-o depois",
+   "line1": "Calculadora que se lembra",
+   "line2": "Dá nome à conta dividida e encontra-a depois",
    "chips": [
-    "Dê nome ao resultado e encontre-o depois",
-    "Widget, ferramentas, histórico"
+    "Dá nome à conta dividida e encontra-a depois",
+    "8 ferramentas: gorjeta, empréstimo"
    ],
    "layout": {
     "phones": 1,
@@ -4243,9 +4332,9 @@
       {
        "kind": "title",
        "plate": [
-        230,
+        151,
         184,
-        851,
+        929,
         630
        ],
        "pads": [
@@ -4260,7 +4349,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.82,
+       "contrast_p10": 15.71,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -4275,12 +4364,13 @@
       }
      ]
     },
+    "status_modes": [],
     "phone_scale": 1.08,
     "layout_family": "closeup2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "Cada conta guardada\nDê nome ao resultado e encontre-o depois\n\n📲 Download via the link in bio\n\n#CalDaily",
-   "caption_link": "Cada conta guardada\nDê nome ao resultado e encontre-o depois\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Calculadora que se lembra\nDá nome à conta dividida e encontra-a depois\n\n📲 Download via the link in bio\n\n#CalDaily",
+   "caption_link": "Calculadora que se lembra\nDá nome à conta dividida e encontra-a depois\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "en-fallback",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/pt-PT.jpg"
   },
@@ -4292,8 +4382,7 @@
    "screenshot_locale": "ro",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -4302,18 +4391,35 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.813
+    ],
+    "1": [
+     1,
+     0.612
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
     "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
    ],
-   "line1": "Regăsești orice calcul",
-   "line2": "Nume, căutare și opt instrumente",
+   "line1": "Calculatorul care ține minte",
+   "line2": "Numește nota împărțită, găsește-o mai târziu",
    "chips": [
-    "Nume, căutare și opt instrumente",
-    "Widget, instrumente, istoric"
+    "Numește nota împărțită, găsește-o mai târziu",
+    "8 unelte: bacșiș, credit și altele"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.248,
+    "screen_area_ratio": 0.249,
     "family": "closeup2",
     "font": "NotoSans.ttf",
     "screen_ratio_vs_battai_split": 1.32,
@@ -4348,10 +4454,10 @@
       {
        "kind": "title",
        "plate": [
-        224,
+        118,
         184,
-        856,
-        632
+        961,
+        630
        ],
        "pads": [
         24,
@@ -4365,7 +4471,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.79,
+       "contrast_p10": 15.65,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -4380,12 +4486,13 @@
       }
      ]
     },
+    "status_modes": [],
     "phone_scale": 1.08,
     "layout_family": "closeup2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "Regăsești orice calcul\nNume, căutare și opt instrumente\n\n📲 Descarcă din linkul din bio\n\n#CalDaily",
-   "caption_link": "Regăsești orice calcul\nNume, căutare și opt instrumente\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Calculatorul care ține minte\nNumește nota împărțită, găsește-o mai târziu\n\n📲 Descarcă din linkul din bio\n\n#CalDaily",
+   "caption_link": "Calculatorul care ține minte\nNumește nota împărțită, găsește-o mai târziu\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ro.jpg"
   },
@@ -4397,31 +4504,39 @@
    "screenshot_locale": "ru",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "ocr:rus",
-    "script_chars": 31,
+    "script_chars": 132,
     "mixed_english_words": {},
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.232<0.24)"
-   ],
-   "line1": "Калькулятор помнит",
-   "line2": "Названия, поиск и 8 инструментов",
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_ru.png",
+     "newcap:04_calculator_ru.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [],
+   "line1": "Калькулятор, который помнит",
+   "line2": "Дай имя расчёту и найди его поиском",
    "chips": [
-    "Названия, поиск и 8 инструментов",
-    "Виджет, научный режим, история"
+    "Дай имя расчёту и найди его поиском",
+    "8 функций: чаевые, деление, кредит"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.25,
-    "family": "closeup2",
+    "phones": 2,
+    "screen_area_ratio": 0.41,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 1.32,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -4453,10 +4568,10 @@
       {
        "kind": "title",
        "plate": [
-        172,
-        184,
-        907,
-        625
+        80,
+        176,
+        999,
+        599
        ],
        "pads": [
         24,
@@ -4466,11 +4581,11 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 104,
-        "sub": 52,
+        "headline": 100,
+        "sub": 50,
         "ratio": 2.0
        },
-       "contrast_p10": 15.75,
+       "contrast_p10": 15.53,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -4485,12 +4600,13 @@
       }
      ]
     },
-    "phone_scale": 1.08,
-    "layout_family": "closeup2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
+    "status_modes": [],
+    "screen_similarity": 0.011,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Калькулятор помнит\nНазвания, поиск и 8 инструментов\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#CalDaily",
-   "caption_link": "Калькулятор помнит\nНазвания, поиск и 8 инструментов\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Калькулятор, который помнит\nДай имя расчёту и найди его поиском\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#CalDaily",
+   "caption_link": "Калькулятор, который помнит\nДай имя расчёту и найди его поиском\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ru.jpg"
   },
@@ -4502,8 +4618,7 @@
    "screenshot_locale": "sk",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -4512,19 +4627,38 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [],
-   "line1": "Každý výpočet nájdete",
-   "line2": "Názvy, hľadanie a osem nástrojov",
+   "screen_match": {
+    "0": [
+     0,
+     0.814
+    ],
+    "1": [
+     1,
+     0.611
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Kalkulačka, ktorá si pamätá",
+   "line2": "Pomenuj delenie účtu, neskôr ho nájdeš",
    "chips": [
-    "Názvy, hľadanie a osem nástrojov",
-    "Widget, nástroje, história"
+    "Pomenuj delenie účtu, neskôr ho nájdeš",
+    "8 nástrojov: prepitné aj úver"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
+    "screen_area_ratio": 0.248,
+    "family": "closeup2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 1.32,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -4533,9 +4667,9 @@
       {
        "kind": "name",
        "plate": [
+        273,
         72,
-        72,
-        306,
+        807,
         160
        ],
        "pads": [
@@ -4548,7 +4682,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 14.7,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -4556,10 +4690,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
+        106,
         184,
-        536,
-        819
+        973,
+        631
        ],
        "pads": [
         24,
@@ -4573,49 +4707,28 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 13.45,
+       "contrast_p10": 15.65,
        "plate_alpha": 0.55,
        "lines": [
-        3,
-        3
+        2,
+        2
        ],
        "lh": [
         1.18,
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        843,
-        469,
-        972
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 10.55,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "Každý výpočet nájdete\nNázvy, hľadanie a osem nástrojov\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#CalDaily",
-   "caption_link": "Každý výpočet nájdete\nNázvy, hľadanie a osem nástrojov\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Kalkulačka, ktorá si pamätá\nPomenuj delenie účtu, neskôr ho nájdeš\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#CalDaily",
+   "caption_link": "Kalkulačka, ktorá si pamätá\nPomenuj delenie účtu, neskôr ho nájdeš\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/sk.jpg"
   },
@@ -4627,8 +4740,7 @@
    "screenshot_locale": "sl-SI",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -4637,19 +4749,38 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [],
-   "line1": "Vsak izračun najdete",
-   "line2": "Ime, iskanje in osem orodij",
+   "screen_match": {
+    "0": [
+     0,
+     0.814
+    ],
+    "1": [
+     1,
+     0.605
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+   ],
+   "line1": "Kalkulator, ki si zapomni",
+   "line2": "Poimenuj delitev računa, najdi jo pozneje",
    "chips": [
-    "Ime, iskanje in osem orodij",
-    "Pripomoček, orodja, zgodovina"
+    "Poimenuj delitev računa, najdi jo pozneje",
+    "8 orodij, tudi napitnina in kredit"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
+    "screen_area_ratio": 0.249,
+    "family": "closeup2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 1.32,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -4658,9 +4789,9 @@
       {
        "kind": "name",
        "plate": [
+        272,
         72,
-        72,
-        306,
+        808,
         160
        ],
        "pads": [
@@ -4673,7 +4804,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 14.78,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -4681,10 +4812,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
+        178,
         184,
-        519,
-        753
+        901,
+        630
        ],
        "pads": [
         24,
@@ -4698,10 +4829,10 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.24,
+       "contrast_p10": 15.77,
        "plate_alpha": 0.55,
        "lines": [
-        3,
+        2,
         2
        ],
        "lh": [
@@ -4709,38 +4840,17 @@
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        777,
-        483,
-        906
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 8.52,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "phone_scale": 1.08,
+    "layout_family": "closeup2",
+    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "Vsak izračun najdete\nIme, iskanje in osem orodij\n\n📲 Prenesite prek povezave v biu\n\n#CalDaily",
-   "caption_link": "Vsak izračun najdete\nIme, iskanje in osem orodij\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Kalkulator, ki si zapomni\nPoimenuj delitev računa, najdi jo pozneje\n\n📲 Prenesite prek povezave v biu\n\n#CalDaily",
+   "caption_link": "Kalkulator, ki si zapomni\nPoimenuj delitev računa, najdi jo pozneje\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/sl-SI.jpg"
   },
@@ -4752,8 +4862,7 @@
    "screenshot_locale": "sv",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -4762,21 +4871,38 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.813
+    ],
+    "1": [
+     1,
+     0.606
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.23<0.24)"
+    "English UI on localized screenshots [(0, ['the', 'with'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.212<0.24; closeup2×1.08: screen_area=0.229<0.24)"
    ],
    "line1": "Kalkylatorn som minns",
-   "line2": "Namnge, sök och åtta verktyg",
+   "line2": "Namnge en notadelning, sök fram den sen",
    "chips": [
-    "Namnge, sök och åtta verktyg",
-    "Widget, verktyg, historik"
+    "Namnge en notadelning, sök fram den sen",
+    "8 verktyg, bl.a. dricks och lån"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.249,
+    "screen_area_ratio": 0.245,
     "family": "closeup2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 1.32,
+    "screen_ratio_vs_battai_split": 1.52,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -4811,7 +4937,7 @@
         216,
         184,
         864,
-        630
+        683
        ],
        "pads": [
         24,
@@ -4825,11 +4951,11 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.78,
+       "contrast_p10": 15.79,
        "plate_alpha": 0.55,
        "lines": [
         2,
-        2
+        3
        ],
        "lh": [
         1.18,
@@ -4840,12 +4966,13 @@
       }
      ]
     },
-    "phone_scale": 1.08,
+    "status_modes": [],
+    "phone_scale": 1.16,
     "layout_family": "closeup2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "Kalkylatorn som minns\nNamnge, sök och åtta verktyg\n\n📲 Ladda ner via länken i bion\n\n#CalDaily",
-   "caption_link": "Kalkylatorn som minns\nNamnge, sök och åtta verktyg\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Kalkylatorn som minns\nNamnge en notadelning, sök fram den sen\n\n📲 Ladda ner via länken i bion\n\n#CalDaily",
+   "caption_link": "Kalkylatorn som minns\nNamnge en notadelning, sök fram den sen\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/sv.jpg"
   },
@@ -4857,24 +4984,45 @@
    "screenshot_locale": "ta-IN",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "ocr:tam",
-    "script_chars": 92,
-    "mixed_english_words": {},
+    "script_chars": 95,
+    "mixed_english_words": {
+     "0": [
+      "Dinner",
+      "coast"
+     ]
+    },
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.806
+    ],
+    "1": [
+     1,
+     0.611
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [
+    "dropped screenshots [0] with mixed English strings [['Dinner', 'coast']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
     "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.199<0.24; closeup2×1.08: screen_area=0.214<0.24; closeup2×1.16: screen_area=0.229<0.24)"
    ],
-   "line1": "கணக்கு வரலாறு",
-   "line2": "விட்ஜெட்டே முழு கால்குலேட்டர்",
+   "line1": "மறக்காத கால்குலேட்டர்",
+   "line2": "பில் பகிர்வுக்குப் பெயர், பின் தேடு",
    "chips": [
-    "விட்ஜெட்டே முழு கால்குலேட்டர்",
-    "விட்ஜெட், கருவிகள், வரலாறு"
+    "பில் பகிர்வுக்குப் பெயர், பின் தேடு",
+    "டிப், கடன் உட்பட 8 கருவிகள்"
    ],
    "layout": {
     "phones": 1,
@@ -4905,7 +5053,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.0,
+       "contrast_p10": 15.01,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -4913,9 +5061,9 @@
       {
        "kind": "title",
        "plate": [
-        262,
+        98,
         184,
-        817,
+        981,
         723
        ],
        "pads": [
@@ -4930,7 +5078,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 15.7,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -4945,12 +5093,13 @@
       }
      ]
     },
+    "status_modes": [],
     "phone_scale": 1.25,
     "layout_family": "closeup2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "கணக்கு வரலாறு\nவிட்ஜெட்டே முழு கால்குலேட்டர்\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#CalDaily",
-   "caption_link": "கணக்கு வரலாறு\nவிட்ஜெட்டே முழு கால்குலேட்டர்\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "மறக்காத கால்குலேட்டர்\nபில் பகிர்வுக்குப் பெயர், பின் தேடு\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#CalDaily",
+   "caption_link": "மறக்காத கால்குலேட்டர்\nபில் பகிர்வுக்குப் பெயர், பின் தேடு\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ta-IN.jpg"
   },
@@ -4962,22 +5111,44 @@
    "screenshot_locale": "te-IN",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "ocr:tel",
     "script_chars": 33,
-    "mixed_english_words": {},
+    "mixed_english_words": {
+     "0": [
+      "Dinner",
+      "coast"
+     ]
+    },
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [],
-   "line1": "లెక్కలన్నీ భద్రం",
-   "line2": "ప్రతి ఫలితానికి పేరు, రకం",
+   "screen_match": {
+    "0": [
+     0,
+     0.813
+    ],
+    "1": [
+     1,
+     0.599
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['Dinner', 'coast']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)"
+   ],
+   "line1": "లెక్కలు మర్చిపోదు",
+   "line2": "బిల్ పంపకానికి పేరు, తర్వాత వెతకండి",
    "chips": [
-    "ప్రతి ఫలితానికి పేరు, రకం",
-    "విడ్జెట్, సాధనాలు, చరిత్ర"
+    "బిల్ పంపకానికి పేరు, తర్వాత వెతకండి",
+    "టిప్, లోన్ సహా 8 టూల్స్"
    ],
    "layout": {
     "phones": 1,
@@ -4995,132 +5166,7 @@
        "plate": [
         72,
         72,
-        506,
-        160
-       ],
-       "pads": [
-        16,
-        16,
-        16,
-        16
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 32
-       },
-       "contrast_p10": 15.83,
-       "plate_alpha": 0.55,
-       "lines": 1,
-       "lh": null
-      },
-      {
-       "kind": "title",
-       "plate": [
-        72,
-        184,
-        539,
-        717
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "headline": 104,
-        "sub": 52,
-        "ratio": 2.0
-       },
-       "contrast_p10": 15.37,
-       "plate_alpha": 0.55,
-       "lines": [
-        2,
-        2
-       ],
-       "lh": [
-        1.45,
-        1.5
-       ],
-       "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        741,
-        524,
-        834
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 8.81,
-       "plate_alpha": 0.55,
-       "lines": 1,
-       "lh": 1.5
-      }
-     ]
-    },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
-   },
-   "caption_instagram": "లెక్కలన్నీ భద్రం\nప్రతి ఫలితానికి పేరు, రకం\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#CalDaily",
-   "caption_link": "లెక్కలన్నీ భద్రం\nప్రతి ఫలితానికి పేరు, రకం\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
-   "cta_source": "extra",
-   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/te-IN.jpg"
-  },
-  {
-   "locale": "th",
-   "file": "caldaily/th.jpg",
-   "intended_locale": "th",
-   "headline_locale": "th",
-   "screenshot_locale": "th",
-   "localized": true,
-   "screenshots_used": [
-    1,
-    3
-   ],
-   "demo_language_check": {
-    "method": "ocr:tha",
-    "script_chars": 75,
-    "mixed_english_words": {},
-    "all_used_screens_localized": true
-   },
-   "screen_text_flags": {},
-   "warnings": [],
-   "line1": "ทุกผลลัพธ์ถูกเก็บไว้",
-   "line2": "ตั้งชื่อและค้นหาได้ เครื่องมือ 8 แบบ",
-   "chips": [
-    "ตั้งชื่อและค้นหาได้ เครื่องมือ 8 แบบ",
-    "วิดเจ็ต, วิทยาศาสตร์, ประวัติ"
-   ],
-   "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
-    "font": "NotoSansThai.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
-    "cards_over_screen": [],
-    "typography_check": {
-     "ok": true,
-     "problems": [],
-     "plates": [
-      {
-       "kind": "name",
-       "plate": [
-        72,
-        72,
-        488,
+        505,
         160
        ],
        "pads": [
@@ -5144,7 +5190,7 @@
         72,
         184,
         534,
-        640
+        657
        ],
        "pads": [
         24,
@@ -5175,9 +5221,9 @@
        "kind": "chip",
        "plate": [
         72,
-        664,
-        464,
-        802
+        681,
+        525,
+        773
        ],
        "pads": [
         24,
@@ -5189,53 +5235,63 @@
        "sizes": {
         "text": 36
        },
-       "contrast_p10": 9.55,
+       "contrast_p10": 9.8,
        "plate_alpha": 0.55,
-       "lines": 2,
+       "lines": 1,
        "lh": 1.5
       }
      ]
     },
+    "status_modes": [],
     "layout_family": "split2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
    },
-   "caption_instagram": "ทุกผลลัพธ์ถูกเก็บไว้\nตั้งชื่อและค้นหาได้ เครื่องมือ 8 แบบ\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#CalDaily",
-   "caption_link": "ทุกผลลัพธ์ถูกเก็บไว้\nตั้งชื่อและค้นหาได้ เครื่องมือ 8 แบบ\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
-   "cta_source": "lib",
-   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/th.jpg"
+   "caption_instagram": "లెక్కలు మర్చిపోదు\nబిల్ పంపకానికి పేరు, తర్వాత వెతకండి\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#CalDaily",
+   "caption_link": "లెక్కలు మర్చిపోదు\nబిల్ పంపకానికి పేరు, తర్వాత వెతకండి\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/te-IN.jpg"
   },
   {
-   "locale": "tr",
-   "file": "caldaily/tr.jpg",
-   "intended_locale": "tr",
-   "headline_locale": "tr",
-   "screenshot_locale": "tr",
+   "locale": "th",
+   "file": "caldaily/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
-    "method": "asset-diff",
-    "script_chars": null,
+    "method": "ocr:tha",
+    "script_chars": 163,
     "mixed_english_words": {},
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [
-    "line2 replaced (forbidden wording)"
-   ],
-   "line1": "Her sonucu hatırlar",
-   "line2": "Widget, araçlar ve geçmiş",
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_th.png",
+     "newcap:04_calculator_th.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [],
+   "line1": "เครื่องคิดเลขที่จำได้",
+   "line2": "ตั้งชื่อบิลหาร แล้วค้นหาทีหลัง",
    "chips": [
-    "Widget, araçlar ve geçmiş"
+    "ตั้งชื่อบิลหาร แล้วค้นหาทีหลัง",
+    "8 เครื่องมือ ทั้งทิป เงินกู้"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
-    "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "phones": 2,
+    "screen_area_ratio": 0.48,
+    "family": "stagger2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -5244,9 +5300,9 @@
       {
        "kind": "name",
        "plate": [
+        332,
         72,
-        72,
-        306,
+        748,
         160
        ],
        "pads": [
@@ -5259,7 +5315,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 15.04,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -5267,10 +5323,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
-        184,
-        521,
-        748
+        96,
+        176,
+        983,
+        482
        ],
        "pads": [
         24,
@@ -5284,10 +5340,124 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 14.38,
+       "contrast_p10": 14.6,
        "plate_alpha": 0.55,
        "lines": [
-        3,
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.006,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "เครื่องคิดเลขที่จำได้\nตั้งชื่อบิลหาร แล้วค้นหาทีหลัง\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#CalDaily",
+   "caption_link": "เครื่องคิดเลขที่จำได้\nตั้งชื่อบิลหาร แล้วค้นหาทีหลัง\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "caldaily/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_tr.png",
+     "newcap:04_calculator_tr.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [],
+   "line1": "Hatırlayan hesap makinesi",
+   "line2": "Hesap bölüşümüne isim ver, sonra ara",
+   "chips": [
+    "Hesap bölüşümüne isim ver, sonra ara",
+    "Bahşiş, bölüşme, kredi: 8 araç"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.4,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        296,
+        72,
+        784,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 14.96,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        112,
+        176,
+        969,
+        616
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 15.65,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
         2
        ],
        "lh": [
@@ -5295,15 +5465,17 @@
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "screen_similarity": 0.006,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Her sonucu hatırlar\nWidget, araçlar ve geçmiş\n\n📲 Biyografideki bağlantıdan indirin\n\n#CalDaily",
-   "caption_link": "Her sonucu hatırlar\nWidget, araçlar ve geçmiş\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Hatırlayan hesap makinesi\nHesap bölüşümüne isim ver, sonra ara\n\n📲 Biyografideki bağlantıdan indirin\n\n#CalDaily",
+   "caption_link": "Hatırlayan hesap makinesi\nHesap bölüşümüne isim ver, sonra ara\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/tr.jpg"
   },
@@ -5315,28 +5487,49 @@
    "screenshot_locale": "uk",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "ocr:ukr",
     "script_chars": 75,
-    "mixed_english_words": {},
+    "mixed_english_words": {
+     "0": [
+      "Dinner",
+      "coast"
+     ]
+    },
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.815
+    ],
+    "1": [
+     1,
+     0.637
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [
-    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.232<0.24)"
+    "dropped screenshots [0] with mixed English strings [['Dinner', 'coast']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback split2->closeup2 (split2: text does not fit at minimum sizes; closeup2: screen_area=0.234<0.24)"
    ],
-   "line1": "Калькулятор пам'ятає",
-   "line2": "Назви, пошук і 8 інструментів",
+   "line1": "Калькулятор, що пам’ятає",
+   "line2": "Назвіть розрахунок і знайдіть пізніше",
    "chips": [
-    "Назви, пошук і 8 інструментів",
-    "Віджет, інструменти, історія"
+    "Назвіть розрахунок і знайдіть пізніше",
+    "8 функцій: чайові, поділ, кредит"
    ],
    "layout": {
     "phones": 1,
-    "screen_area_ratio": 0.25,
+    "screen_area_ratio": 0.252,
     "family": "closeup2",
     "font": "NotoSans.ttf",
     "screen_ratio_vs_battai_split": 1.32,
@@ -5371,10 +5564,10 @@
       {
        "kind": "title",
        "plate": [
-        172,
+        158,
         184,
-        907,
-        625
+        922,
+        620
        ],
        "pads": [
         24,
@@ -5388,7 +5581,7 @@
         "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 15.75,
+       "contrast_p10": 15.7,
        "plate_alpha": 0.55,
        "lines": [
         2,
@@ -5403,12 +5596,13 @@
       }
      ]
     },
+    "status_modes": [],
     "phone_scale": 1.08,
     "layout_family": "closeup2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚（自檢未過改用 closeup2）"
    },
-   "caption_instagram": "Калькулятор пам'ятає\nНазви, пошук і 8 інструментів\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#CalDaily",
-   "caption_link": "Калькулятор пам'ятає\nНазви, пошук і 8 інструментів\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Калькулятор, що пам’ятає\nНазвіть розрахунок і знайдіть пізніше\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#CalDaily",
+   "caption_link": "Калькулятор, що пам’ятає\nНазвіть розрахунок і знайдіть пізніше\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/uk.jpg"
   },
@@ -5420,22 +5614,44 @@
    "screenshot_locale": "ur-PK",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    1
    ],
    "demo_language_check": {
     "method": "ocr:urd",
-    "script_chars": 41,
-    "mixed_english_words": {},
+    "script_chars": 43,
+    "mixed_english_words": {
+     "0": [
+      "Dinner",
+      "coast"
+     ]
+    },
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
-   "warnings": [],
-   "line1": "ہر حساب محفوظ",
-   "line2": "نتیجے کو نام دیں اور بعد میں تلاش کریں",
+   "screen_match": {
+    "0": [
+     0,
+     0.601
+    ],
+    "1": [
+     1,
+     0.591
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['Dinner', 'coast']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)"
+   ],
+   "line1": "کیلکولیٹر جو یاد رکھے",
+   "line2": "بل کی تقسیم کو نام دیں، پھر ڈھونڈیں",
    "chips": [
-    "نتیجے کو نام دیں اور بعد میں تلاش کریں",
-    "ویجٹ، اوزار اور ریکارڈ"
+    "بل کی تقسیم کو نام دیں، پھر ڈھونڈیں",
+    "ٹپ، بل تقسیم، قرض: 8 ٹولز"
    ],
    "layout": {
     "phones": 1,
@@ -5474,10 +5690,10 @@
       {
        "kind": "title",
        "plate": [
-        550,
+        549,
         184,
         1008,
-        655
+        891
        ],
        "pads": [
         24,
@@ -5487,15 +5703,15 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 100,
-        "sub": 50,
+        "headline": 104,
+        "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 12.56,
+       "contrast_p10": 12.51,
        "plate_alpha": 0.55,
        "lines": [
-        2,
-        2
+        3,
+        3
        ],
        "lh": [
         1.3,
@@ -5507,10 +5723,10 @@
       {
        "kind": "chip",
        "plate": [
-        585,
-        679,
+        675,
+        915,
         1008,
-        767
+        1053
        ],
        "pads": [
         24,
@@ -5522,18 +5738,19 @@
        "sizes": {
         "text": 36
        },
-       "contrast_p10": 13.2,
+       "contrast_p10": 8.41,
        "plate_alpha": 0.55,
-       "lines": 1,
+       "lines": 2,
        "lh": 1.4
       }
      ]
     },
+    "status_modes": [],
     "layout_family": "split2",
     "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
    },
-   "caption_instagram": "ہر حساب محفوظ\nنتیجے کو نام دیں اور بعد میں تلاش کریں\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#CalDaily",
-   "caption_link": "ہر حساب محفوظ\nنتیجے کو نام دیں اور بعد میں تلاش کریں\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "کیلکولیٹر جو یاد رکھے\nبل کی تقسیم کو نام دیں، پھر ڈھونڈیں\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#CalDaily",
+   "caption_link": "کیلکولیٹر جو یاد رکھے\nبل کی تقسیم کو نام دیں، پھر ڈھونڈیں\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "extra",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/ur-PK.jpg"
   },
@@ -5545,8 +5762,8 @@
    "screenshot_locale": "vi",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "asset-diff",
@@ -5555,18 +5772,29 @@
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_vi.png",
+     "newcap:04_calculator_vi.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [],
-   "line1": "Tính xong vẫn nhớ",
-   "line2": "Đặt tên, tìm lại, 8 công cụ",
+   "line1": "Máy tính biết ghi nhớ",
+   "line2": "Đặt tên lần chia tiền, tìm lại sau",
    "chips": [
-    "Đặt tên, tìm lại, 8 công cụ"
+    "Đặt tên lần chia tiền, tìm lại sau",
+    "8 công cụ: tiền boa, khoản vay"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
+    "phones": 2,
+    "screen_area_ratio": 0.397,
+    "family": "stagger2",
     "font": "NotoSans.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -5575,9 +5803,9 @@
       {
        "kind": "name",
        "plate": [
+        269,
         72,
-        72,
-        306,
+        811,
         160
        ],
        "pads": [
@@ -5590,7 +5818,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 14.53,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -5598,10 +5826,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
-        184,
-        538,
-        734
+        198,
+        176,
+        882,
+        620
        ],
        "pads": [
         24,
@@ -5611,14 +5839,14 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 100,
-        "sub": 50,
+        "headline": 104,
+        "sub": 52,
         "ratio": 2.0
        },
-       "contrast_p10": 14.93,
+       "contrast_p10": 15.82,
        "plate_alpha": 0.55,
        "lines": [
-        3,
+        2,
         2
        ],
        "lh": [
@@ -5626,15 +5854,17 @@
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "screen_similarity": 0.004,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "Tính xong vẫn nhớ\nĐặt tên, tìm lại, 8 công cụ\n\n📲 Tải về qua link ở bio\n\n#CalDaily",
-   "caption_link": "Tính xong vẫn nhớ\nĐặt tên, tìm lại, 8 công cụ\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "Máy tính biết ghi nhớ\nĐặt tên lần chia tiền, tìm lại sau\n\n📲 Tải về qua link ở bio\n\n#CalDaily",
+   "caption_link": "Máy tính biết ghi nhớ\nĐặt tên lần chia tiền, tìm lại sau\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/vi.jpg"
   },
@@ -5646,29 +5876,39 @@
    "screenshot_locale": "zh-Hans",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "ocr:chi_sim",
-    "script_chars": 24,
+    "script_chars": 54,
     "mixed_english_words": {},
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_zh-Hans.png",
+     "newcap:04_calculator_zh-Hans.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [],
-   "line1": "算过的都找得到",
-   "line2": "可命名・可搜索・8种工具",
+   "line1": "算过的，下周还找得到",
+   "line2": "分账晚餐取个名，一搜就有",
    "chips": [
-    "可命名・可搜索・8种工具",
-    "桌面小组件，贷款折扣小费都能算"
+    "分账晚餐取个名，一搜就有",
+    "小费分账、贷款等8种工具"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
+    "phones": 2,
+    "screen_area_ratio": 0.528,
+    "family": "stagger2",
     "font": "NotoSansSC.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -5677,9 +5917,9 @@
       {
        "kind": "name",
        "plate": [
+        324,
         72,
-        72,
-        505,
+        757,
         160
        ],
        "pads": [
@@ -5692,7 +5932,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 15.0,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -5700,10 +5940,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
-        184,
-        532,
-        629
+        83,
+        176,
+        997,
+        403
        ],
        "pads": [
         24,
@@ -5713,53 +5953,32 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 104,
-        "sub": 52,
+        "headline": 88,
+        "sub": 44,
         "ratio": 2.0
        },
-       "contrast_p10": 15.64,
+       "contrast_p10": 14.49,
        "plate_alpha": 0.55,
        "lines": [
-        2,
-        2
+        1,
+        1
        ],
        "lh": [
         1.18,
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        653,
-        460,
-        781
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 10.13,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "screen_similarity": 0.044,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "算过的都找得到\n可命名・可搜索・8种工具\n\n📲 请到个人主页（bio）的链接下载\n\n#CalDaily",
-   "caption_link": "算过的都找得到\n可命名・可搜索・8种工具\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "算过的，下周还找得到\n分账晚餐取个名，一搜就有\n\n📲 请到个人主页（bio）的链接下载\n\n#CalDaily",
+   "caption_link": "算过的，下周还找得到\n分账晚餐取个名，一搜就有\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/zh-Hans.jpg"
   },
@@ -5771,29 +5990,39 @@
    "screenshot_locale": "zh-Hant",
    "localized": true,
    "screenshots_used": [
-    1,
-    3
+    0,
+    1
    ],
    "demo_language_check": {
     "method": "ocr:chi_tra",
-    "script_chars": 27,
+    "script_chars": 62,
     "mixed_english_words": {},
     "all_used_screens_localized": true
    },
    "screen_text_flags": {},
+   "screen_match": {
+    "new_capture": [
+     "newcap:01_history_zh-Hant.png",
+     "newcap:04_calculator_zh-Hant.png"
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：商店第 1 張＝計算紀錄：5 筆已命名、跨 4 種工具的結果＋搜尋列＋依工具篩選，直接證明『算過的會留下、找得到』；資料豐富（高）"
+   },
    "warnings": [],
-   "line1": "算過的都找得到",
-   "line2": "命名・搜尋・8種進階工具",
+   "line1": "算過的，下週還找得到",
+   "line2": "分帳晚餐取個名，一搜就有",
    "chips": [
-    "命名・搜尋・8種進階工具",
-    "桌面小工具，貸款折扣小費都能算"
+    "分帳晚餐取個名，一搜就有",
+    "小費分帳、貸款等 8 種工具"
    ],
    "layout": {
-    "phones": 1,
-    "screen_area_ratio": 0.271,
-    "family": "split2",
+    "phones": 2,
+    "screen_area_ratio": 0.529,
+    "family": "stagger2",
     "font": "NotoSansTC.ttf",
-    "screen_ratio_vs_battai_split": 0.86,
+    "screen_ratio_vs_battai_split": 0.88,
     "cards_over_screen": [],
     "typography_check": {
      "ok": true,
@@ -5802,9 +6031,9 @@
       {
        "kind": "name",
        "plate": [
+        324,
         72,
-        72,
-        505,
+        757,
         160
        ],
        "pads": [
@@ -5817,7 +6046,7 @@
        "sizes": {
         "text": 32
        },
-       "contrast_p10": 15.83,
+       "contrast_p10": 15.0,
        "plate_alpha": 0.55,
        "lines": 1,
        "lh": null
@@ -5825,10 +6054,10 @@
       {
        "kind": "title",
        "plate": [
-        72,
-        184,
-        532,
-        629
+        83,
+        176,
+        997,
+        402
        ],
        "pads": [
         24,
@@ -5838,53 +6067,32 @@
        ],
        "pad_spread": 0,
        "sizes": {
-        "headline": 104,
-        "sub": 52,
+        "headline": 88,
+        "sub": 44,
         "ratio": 2.0
        },
-       "contrast_p10": 15.63,
+       "contrast_p10": 14.54,
        "plate_alpha": 0.55,
        "lines": [
-        2,
-        2
+        1,
+        1
        ],
        "lh": [
         1.18,
         1.25
        ],
        "sub_w_le_headline_w": true,
-       "inner_w": 420
-      },
-      {
-       "kind": "chip",
-       "plate": [
-        72,
-        653,
-        460,
-        781
-       ],
-       "pads": [
-        24,
-        24,
-        24,
-        24
-       ],
-       "pad_spread": 0,
-       "sizes": {
-        "text": 36
-       },
-       "contrast_p10": 10.13,
-       "plate_alpha": 0.55,
-       "lines": 2,
-       "lh": 1.25
+       "inner_w": 888
       }
      ]
     },
-    "layout_family": "split2",
-    "layout_reason": "預設（新標準）：左文右機，文字板在手機外側，畫面大而清楚"
+    "status_modes": [],
+    "screen_similarity": 0.03,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
    },
-   "caption_instagram": "算過的都找得到\n命名・搜尋・8種進階工具\n\n📲 請到個人檔案（bio）的連結下載\n\n#CalDaily",
-   "caption_link": "算過的都找得到\n命名・搜尋・8種進階工具\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
+   "caption_instagram": "算過的，下週還找得到\n分帳晚餐取個名，一搜就有\n\n📲 請到個人檔案（bio）的連結下載\n\n#CalDaily",
+   "caption_link": "算過的，下週還找得到\n分帳晚餐取個名，一搜就有\n\nApp Store: https://apps.apple.com/app/id6794178671\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.CalDaily",
    "cta_source": "lib",
    "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/caldaily/zh-Hant.jpg"
   }

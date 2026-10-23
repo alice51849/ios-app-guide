@@ -1,0 +1,6463 @@
+{
+ "schema": "lumi.promo_cards/v1",
+ "app": "lumimission",
+ "app_id": "6779750237",
+ "app_store_url": "https://apps.apple.com/app/id6779750237",
+ "play_url": "https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+ "size": [
+  1080,
+  1350
+ ],
+ "built": "2026-10-24",
+ "items": [
+  {
+   "locale": "ar-SA",
+   "file": "lumimission/ar-SA.jpg",
+   "intended_locale": "ar-SA",
+   "headline_locale": "ar-SA",
+   "screenshot_locale": "ar-SA",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:ara",
+    "script_chars": 15,
+    "mixed_english_words": {
+     "0": [
+      "today"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.833
+    ],
+    "1": [
+     1,
+     0.947
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['today']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)"
+   ],
+   "line1": "الأسنان والألعاب مهام",
+   "line2": "المس عند الإنجاز: نجوم وتشجيع",
+   "chips": [
+    "المس عند الإنجاز: نجوم وتشجيع",
+    "هدف لقمات من 5 إلى 12"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.257,
+    "family": "orbit2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        358,
+        72,
+        722,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.43,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        989,
+        461
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.44,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        824,
+        564,
+        1040,
+        742
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.2,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      }
+     ]
+    },
+    "status_modes": [],
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "الأسنان والألعاب مهام\nالمس عند الإنجاز: نجوم وتشجيع\n\n📲 حمّله من الرابط في الملف الشخصي (bio)\n\n#LumiMissionPlanet",
+   "caption_link": "الأسنان والألعاب مهام\nالمس عند الإنجاز: نجوم وتشجيع\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/ar-SA.jpg"
+  },
+  {
+   "locale": "bn-BD",
+   "file": "lumimission/bn-BD.jpg",
+   "intended_locale": "bn-BD",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": false,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": false
+   },
+   "screen_text_flags": {},
+   "screen_match": {},
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "no localized storefront screenshot (English-only or lookup failed); whole card in en-US"
+   ],
+   "line1": "Brush, Eat, Tidy: Mini Missions",
+   "line2": "Tap when done, earn stars and cheers",
+   "chips": [
+    "Tap when done, earn stars and cheers",
+    "Set a bite goal from 5 to 12"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.403,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        254,
+        72,
+        826,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        102,
+        176,
+        977,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.88,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.413,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Brush, Eat, Tidy: Mini Missions\nTap when done, earn stars and cheers\n\n📲 Download via the link in bio\n\n#LumiMissionPlanet",
+   "caption_link": "Brush, Eat, Tidy: Mini Missions\nTap when done, earn stars and cheers\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/bn-BD.jpg"
+  },
+  {
+   "locale": "ca",
+   "file": "lumimission/ca.jpg",
+   "intended_locale": "ca",
+   "headline_locale": "ca",
+   "screenshot_locale": "ca",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.947
+    ],
+    "1": [
+     1,
+     0.996
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Rentar-se les dents: missió",
+   "line2": "Toca en acabar: estrelles i visques",
+   "chips": [
+    "Toca en acabar: estrelles i visques",
+    "Objectiu de mossegades: de 5 a 12"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        174,
+        176,
+        905,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.94,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Rentar-se les dents: missió\nToca en acabar: estrelles i visques\n\n📲 Descarrega-la des de l'enllaç de la bio\n\n#LumiMissionPlanet",
+   "caption_link": "Rentar-se les dents: missió\nToca en acabar: estrelles i visques\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/ca.jpg"
+  },
+  {
+   "locale": "cs",
+   "file": "lumimission/cs.jpg",
+   "intended_locale": "cs",
+   "headline_locale": "cs",
+   "screenshot_locale": "cs",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.983
+    ],
+    "1": [
+     1,
+     0.983
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Čištění zubů jako mise",
+   "line2": "Hotovo? Klepni: hvězdičky a jásot",
+   "chips": [
+    "Hotovo? Klepni: hvězdičky a jásot",
+    "Cíl soust při jídle: 5 až 12"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.385,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        200,
+        176,
+        879,
+        640
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.11,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.406,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Čištění zubů jako mise\nHotovo? Klepni: hvězdičky a jásot\n\n📲 Stáhněte si ji přes odkaz v profilu (bio)\n\n#LumiMissionPlanet",
+   "caption_link": "Čištění zubů jako mise\nHotovo? Klepni: hvězdičky a jásot\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/cs.jpg"
+  },
+  {
+   "locale": "da",
+   "file": "lumimission/da.jpg",
+   "intended_locale": "da",
+   "headline_locale": "da",
+   "screenshot_locale": "da",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.995
+    ],
+    "1": [
+     1,
+     0.998
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Tandbørstning bliver mission",
+   "line2": "Tryk, når det er gjort: stjerner og jubel",
+   "chips": [
+    "Tryk, når det er gjort: stjerner og jubel",
+    "Mål for mundfulde: 5 til 12"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        138,
+        176,
+        942,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.91,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Tandbørstning bliver mission\nTryk, når det er gjort: stjerner og jubel\n\n📲 Download via linket i bio\n\n#LumiMissionPlanet",
+   "caption_link": "Tandbørstning bliver mission\nTryk, når det er gjort: stjerner og jubel\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/da.jpg"
+  },
+  {
+   "locale": "de-DE",
+   "file": "lumimission/de-DE.jpg",
+   "intended_locale": "de-DE",
+   "headline_locale": "de-DE",
+   "screenshot_locale": "de-DE",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.998
+    ],
+    "1": [
+     1,
+     0.996
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Zähneputzen als Mini-Mission",
+   "line2": "Fertig antippen: Sterne und Hasenjubel",
+   "chips": [
+    "Fertig antippen: Sterne und Hasenjubel",
+    "Essen: Bissen-Ziel von 5 bis 12"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        252,
+        72,
+        828,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        100,
+        176,
+        981,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.01,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Zähneputzen als Mini-Mission\nFertig antippen: Sterne und Hasenjubel\n\n📲 Download über den Link in der Bio\n\n#LumiMissionPlanet",
+   "caption_link": "Zähneputzen als Mini-Mission\nFertig antippen: Sterne und Hasenjubel\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/de-DE.jpg"
+  },
+  {
+   "locale": "el",
+   "file": "lumimission/el.jpg",
+   "intended_locale": "el",
+   "headline_locale": "el",
+   "screenshot_locale": "el",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:ell",
+    "script_chars": 8,
+    "mixed_english_words": {
+     "0": [
+      "today"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.946
+    ],
+    "1": [
+     1,
+     0.994
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['today']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Βούρτσισμα σαν αποστολή",
+   "line2": "Πάτα όταν τελειώσεις: αστέρια, χαρές",
+   "chips": [
+    "Πάτα όταν τελειώσεις: αστέρια, χαρές",
+    "Στόχος μπουκιών από 5 έως 12"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        270,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.29,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        145,
+        176,
+        935,
+        624
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.02,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Βούρτσισμα σαν αποστολή\nΠάτα όταν τελειώσεις: αστέρια, χαρές\n\n📲 Λήψη από τον σύνδεσμο στο προφίλ (bio)\n\n#LumiMissionPlanet",
+   "caption_link": "Βούρτσισμα σαν αποστολή\nΠάτα όταν τελειώσεις: αστέρια, χαρές\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/el.jpg"
+  },
+  {
+   "locale": "en-AU",
+   "file": "lumimission/en-AU.jpg",
+   "intended_locale": "en-AU",
+   "headline_locale": "en-AU",
+   "screenshot_locale": "en-AU",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     1.0
+    ],
+    "1": [
+     1,
+     1.0
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Brush, Eat, Tidy Missions",
+   "line2": "Tap when done, earn stars and cheers",
+   "chips": [
+    "Tap when done, earn stars and cheers",
+    "Set a bite goal from 5 to 12"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.403,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        167,
+        176,
+        913,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.17,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.413,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Brush, Eat, Tidy Missions\nTap when done, earn stars and cheers\n\n📲 Download via the link in bio\n\n#LumiMissionPlanet",
+   "caption_link": "Brush, Eat, Tidy Missions\nTap when done, earn stars and cheers\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/en-AU.jpg"
+  },
+  {
+   "locale": "en-CA",
+   "file": "lumimission/en-CA.jpg",
+   "intended_locale": "en-CA",
+   "headline_locale": "en-CA",
+   "screenshot_locale": "en-CA",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     1.0
+    ],
+    "1": [
+     1,
+     1.0
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Brush, Eat, Tidy Missions",
+   "line2": "Tap when done, earn stars and cheers",
+   "chips": [
+    "Tap when done, earn stars and cheers",
+    "Set a bite goal from 5 to 12"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.403,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        167,
+        176,
+        913,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.17,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.413,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Brush, Eat, Tidy Missions\nTap when done, earn stars and cheers\n\n📲 Download via the link in bio\n\n#LumiMissionPlanet",
+   "caption_link": "Brush, Eat, Tidy Missions\nTap when done, earn stars and cheers\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/en-CA.jpg"
+  },
+  {
+   "locale": "en-GB",
+   "file": "lumimission/en-GB.jpg",
+   "intended_locale": "en-GB",
+   "headline_locale": "en-GB",
+   "screenshot_locale": "en-GB",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     1.0
+    ],
+    "1": [
+     1,
+     1.0
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Brush, Eat, Tidy: Missions",
+   "line2": "Tap when done, earn stars and cheers",
+   "chips": [
+    "Tap when done, earn stars and cheers",
+    "Set a bite goal from 5 to 12"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.403,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        270,
+        72,
+        811,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.29,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        152,
+        176,
+        928,
+        610
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.17,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.413,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Brush, Eat, Tidy: Missions\nTap when done, earn stars and cheers\n\n📲 Download via the link in bio\n\n#LumiMissionPlanet",
+   "caption_link": "Brush, Eat, Tidy: Missions\nTap when done, earn stars and cheers\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/en-GB.jpg"
+  },
+  {
+   "locale": "en-US",
+   "file": "lumimission/en-US.jpg",
+   "intended_locale": "en-US",
+   "headline_locale": "en-US",
+   "screenshot_locale": "en-US",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     1.0
+    ],
+    "1": [
+     1,
+     1.0
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Brush, Eat, Tidy: Mini Missions",
+   "line2": "Tap when done, earn stars and cheers",
+   "chips": [
+    "Tap when done, earn stars and cheers",
+    "Set a bite goal from 5 to 12"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.403,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        254,
+        72,
+        826,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        102,
+        176,
+        977,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.88,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.413,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Brush, Eat, Tidy: Mini Missions\nTap when done, earn stars and cheers\n\n📲 Download via the link in bio\n\n#LumiMissionPlanet",
+   "caption_link": "Brush, Eat, Tidy: Mini Missions\nTap when done, earn stars and cheers\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/en-US.jpg"
+  },
+  {
+   "locale": "es-ES",
+   "file": "lumimission/es-ES.jpg",
+   "intended_locale": "es-ES",
+   "headline_locale": "es-ES",
+   "screenshot_locale": "es-ES",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.997
+    ],
+    "1": [
+     1,
+     0.996
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Rutinas hechas misiones",
+   "line2": "Al terminar, toca y gana estrellas y aplausos",
+   "chips": [
+    "Al terminar, toca y gana estrellas y aplausos",
+    "Meta de 5 a 12 bocados por comida"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        264,
+        72,
+        816,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.29,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        122,
+        176,
+        957,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.95,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        214,
+        1006
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.91,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Rutinas hechas misiones\nAl terminar, toca y gana estrellas y aplausos\n\n📲 Descárgala desde el enlace de la bio\n\n#LumiMissionPlanet",
+   "caption_link": "Rutinas hechas misiones\nAl terminar, toca y gana estrellas y aplausos\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/es-ES.jpg"
+  },
+  {
+   "locale": "es-MX",
+   "file": "lumimission/es-MX.jpg",
+   "intended_locale": "es-MX",
+   "headline_locale": "es-MX",
+   "screenshot_locale": "es-MX",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.997
+    ],
+    "1": [
+     1,
+     0.996
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Rutinas hechas misiones",
+   "line2": "Al terminar, toca y gana estrellas y aplausos",
+   "chips": [
+    "Al terminar, toca y gana estrellas y aplausos",
+    "Meta de 5 a 12 bocados por comida"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        122,
+        176,
+        957,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.95,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        214,
+        1006
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.91,
+       "plate_alpha": 0.55,
+       "lines": 5,
+       "lh": 1.25
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Rutinas hechas misiones\nAl terminar, toca y gana estrellas y aplausos\n\n📲 Descárgala desde el enlace de la bio\n\n#LumiMissionPlanet",
+   "caption_link": "Rutinas hechas misiones\nAl terminar, toca y gana estrellas y aplausos\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/es-MX.jpg"
+  },
+  {
+   "locale": "fi",
+   "file": "lumimission/fi.jpg",
+   "intended_locale": "fi",
+   "headline_locale": "fi",
+   "screenshot_locale": "fi",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.992
+    ],
+    "1": [
+     1,
+     0.997
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Arkirutiinit pikkutehtäviksi",
+   "line2": "Napauta, kun valmis: tähtiä ja hurrauksia",
+   "chips": [
+    "Napauta, kun valmis: tähtiä ja hurrauksia",
+    "Syömiseen 5–12 haukun tavoite"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        106,
+        176,
+        973,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.04,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Arkirutiinit pikkutehtäviksi\nNapauta, kun valmis: tähtiä ja hurrauksia\n\n📲 Lataa bion linkistä\n\n#LumiMissionPlanet",
+   "caption_link": "Arkirutiinit pikkutehtäviksi\nNapauta, kun valmis: tähtiä ja hurrauksia\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/fi.jpg"
+  },
+  {
+   "locale": "fr-CA",
+   "file": "lumimission/fr-CA.jpg",
+   "intended_locale": "fr-CA",
+   "headline_locale": "fr-CA",
+   "screenshot_locale": "fr-CA",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.99
+    ],
+    "1": [
+     1,
+     0.997
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Les routines en missions",
+   "line2": "Un toucher une fois fini : étoiles et bravos",
+   "chips": [
+    "Un toucher une fois fini : étoiles et bravos",
+    "Objectif de 5 à 12 bouchées"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        200,
+        176,
+        881,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        699,
+        237,
+        905
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.82,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Les routines en missions\nUn toucher une fois fini : étoiles et bravos\n\n📲 Téléchargez-la via le lien dans la bio\n\n#LumiMissionPlanet",
+   "caption_link": "Les routines en missions\nUn toucher une fois fini : étoiles et bravos\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/fr-CA.jpg"
+  },
+  {
+   "locale": "fr-FR",
+   "file": "lumimission/fr-FR.jpg",
+   "intended_locale": "fr-FR",
+   "headline_locale": "fr-FR",
+   "screenshot_locale": "fr-FR",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.99
+    ],
+    "1": [
+     1,
+     0.997
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "line2 replaced (forbidden wording)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.212<0.24; orbit2×1.08: screen_area=0.228<0.24)"
+   ],
+   "line1": "Les routines en missions",
+   "line2": "Un toucher une fois fini : étoiles et bravos",
+   "chips": [
+    "Un toucher une fois fini : étoiles et bravos",
+    "Objectif de 5 à 12 bouchées"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        254,
+        72,
+        826,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        200,
+        176,
+        881,
+        611
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.99,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        699,
+        237,
+        905
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.82,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Les routines en missions\nUn toucher une fois fini : étoiles et bravos\n\n📲 Téléchargez-la via le lien dans la bio\n\n#LumiMissionPlanet",
+   "caption_link": "Les routines en missions\nUn toucher une fois fini : étoiles et bravos\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/fr-FR.jpg"
+  },
+  {
+   "locale": "gu-IN",
+   "file": "lumimission/gu-IN.jpg",
+   "intended_locale": "gu-IN",
+   "headline_locale": "gu-IN",
+   "screenshot_locale": "gu-IN",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:guj",
+    "script_chars": 16,
+    "mixed_english_words": {
+     "0": [
+      "today"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.94
+    ],
+    "1": [
+     1,
+     0.997
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['today']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)"
+   ],
+   "line1": "રોજનાં કામ, નાનાં મિશન",
+   "line2": "પૂરું થાય એટલે ટૅપ, સ્ટાર અને તાળીઓ",
+   "chips": [
+    "પૂરું થાય એટલે ટૅપ, સ્ટાર અને તાળીઓ",
+    "5 થી 12 કોળિયાનું લક્ષ્ય"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.258,
+    "family": "orbit2",
+    "font": "NotoSansGujarati.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        284,
+        72,
+        796,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.33,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        86,
+        176,
+        994,
+        457
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        561,
+        269,
+        741
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 11.15,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "status_modes": [],
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "રોજનાં કામ, નાનાં મિશન\nપૂરું થાય એટલે ટૅપ, સ્ટાર અને તાળીઓ\n\n📲 બાયોમાંની લિંકથી ડાઉનલોડ કરો\n\n#LumiMissionPlanet",
+   "caption_link": "રોજનાં કામ, નાનાં મિશન\nપૂરું થાય એટલે ટૅપ, સ્ટાર અને તાળીઓ\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/gu-IN.jpg"
+  },
+  {
+   "locale": "he",
+   "file": "lumimission/he.jpg",
+   "intended_locale": "he",
+   "headline_locale": "he",
+   "screenshot_locale": "he",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:heb",
+    "script_chars": 34,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.803
+    ],
+    "1": [
+     1,
+     0.949
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "שגרת יום כמשימות קטנות",
+   "line2": "מסיימים, לוחצים ומקבלים כוכבים ותשואות",
+   "chips": [
+    "מסיימים, לוחצים ומקבלים כוכבים ותשואות",
+    "יעד של 5 עד 12 ביסים בארוחה"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.387,
+    "family": "stagger2",
+    "font": "NotoSansHebrew.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        330,
+        72,
+        750,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.3,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        142,
+        176,
+        939,
+        636
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.18,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.376,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "שגרת יום כמשימות קטנות\nמסיימים, לוחצים ומקבלים כוכבים ותשואות\n\n📲 הורדה דרך הקישור בביו\n\n#LumiMissionPlanet",
+   "caption_link": "שגרת יום כמשימות קטנות\nמסיימים, לוחצים ומקבלים כוכבים ותשואות\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/he.jpg"
+  },
+  {
+   "locale": "hi",
+   "file": "lumimission/hi.jpg",
+   "intended_locale": "hi",
+   "headline_locale": "hi",
+   "screenshot_locale": "hi",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:hin",
+    "script_chars": 8,
+    "mixed_english_words": {
+     "0": [
+      "today"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.996
+    ],
+    "1": [
+     1,
+     0.997
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['today']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)"
+   ],
+   "line1": "रोज़ के काम, छोटे मिशन",
+   "line2": "पूरा होते ही टैप, सितारे और तालियाँ",
+   "chips": [
+    "पूरा होते ही टैप, सितारे और तालियाँ",
+    "5 से 12 कौर का लक्ष्य"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.258,
+    "family": "orbit2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        384,
+        72,
+        697,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.65,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        74,
+        176,
+        1005,
+        459
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.53,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        562,
+        239,
+        736
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.96,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.5
+      }
+     ]
+    },
+    "status_modes": [],
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "रोज़ के काम, छोटे मिशन\nपूरा होते ही टैप, सितारे और तालियाँ\n\n📲 बायो में दिए लिंक से डाउनलोड करें\n\n#LumiMissionPlanet",
+   "caption_link": "रोज़ के काम, छोटे मिशन\nपूरा होते ही टैप, सितारे और तालियाँ\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/hi.jpg"
+  },
+  {
+   "locale": "hr",
+   "file": "lumimission/hr.jpg",
+   "intended_locale": "hr",
+   "headline_locale": "hr",
+   "screenshot_locale": "hr",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.953
+    ],
+    "1": [
+     1,
+     0.998
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Zubi, jelo, igračke: misije",
+   "line2": "Dodirni kad je gotovo: zvjezdice i pljesak",
+   "chips": [
+    "Dodirni kad je gotovo: zvjezdice i pljesak",
+    "Cilj zalogaja od 5 do 12"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.395,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        140,
+        176,
+        941,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.17,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.407,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Zubi, jelo, igračke: misije\nDodirni kad je gotovo: zvjezdice i pljesak\n\n📲 Preuzmi putem poveznice u biografiji (bio)\n\n#LumiMissionPlanet",
+   "caption_link": "Zubi, jelo, igračke: misije\nDodirni kad je gotovo: zvjezdice i pljesak\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/hr.jpg"
+  },
+  {
+   "locale": "hu",
+   "file": "lumimission/hu.jpg",
+   "intended_locale": "hu",
+   "headline_locale": "hu",
+   "screenshot_locale": "hu",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.977
+    ],
+    "1": [
+     1,
+     0.997
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Fogmosásból mini küldetés",
+   "line2": "Kész? Koppints: csillag és taps jár",
+   "chips": [
+    "Kész? Koppints: csillag és taps jár",
+    "Falatcél 5 és 12 között"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.395,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        161,
+        176,
+        919,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.96,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.404,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Fogmosásból mini küldetés\nKész? Koppints: csillag és taps jár\n\n📲 Töltsd le a bio linkjéről\n\n#LumiMissionPlanet",
+   "caption_link": "Fogmosásból mini küldetés\nKész? Koppints: csillag és taps jár\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/hu.jpg"
+  },
+  {
+   "locale": "id",
+   "file": "lumimission/id.jpg",
+   "intended_locale": "id",
+   "headline_locale": "id",
+   "screenshot_locale": "id",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.998
+    ],
+    "1": [
+     1,
+     0.996
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Sikat gigi jadi misi",
+   "line2": "Selesai? Ketuk, dapat bintang dan sorakan",
+   "chips": [
+    "Selesai? Ketuk, dapat bintang dan sorakan",
+    "Target suapan 5 sampai 12"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.482,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        78,
+        176,
+        1001,
+        479
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.57,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.412,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Sikat gigi jadi misi\nSelesai? Ketuk, dapat bintang dan sorakan\n\n📲 Unduh lewat link di bio\n\n#LumiMissionPlanet",
+   "caption_link": "Sikat gigi jadi misi\nSelesai? Ketuk, dapat bintang dan sorakan\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/id.jpg"
+  },
+  {
+   "locale": "it",
+   "file": "lumimission/it.jpg",
+   "intended_locale": "it",
+   "headline_locale": "it",
+   "screenshot_locale": "it",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.994
+    ],
+    "1": [
+     1,
+     0.996
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Denti e pappa? Missioni!",
+   "line2": "Fatto? Un tocco, stelle e applausi",
+   "chips": [
+    "Fatto? Un tocco, stelle e applausi",
+    "Obiettivo bocconi da 5 a 12"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        262,
+        72,
+        818,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        131,
+        176,
+        949,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.95,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        232,
+        916
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.85,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Denti e pappa? Missioni!\nFatto? Un tocco, stelle e applausi\n\n📲 Scaricala dal link nella bio\n\n#LumiMissionPlanet",
+   "caption_link": "Denti e pappa? Missioni!\nFatto? Un tocco, stelle e applausi\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/it.jpg"
+  },
+  {
+   "locale": "ja",
+   "file": "lumimission/ja.jpg",
+   "intended_locale": "ja",
+   "headline_locale": "ja",
+   "screenshot_locale": "ja",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:jpn",
+    "script_chars": 33,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.889
+    ],
+    "1": [
+     1,
+     0.973
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "歯みがきもミッション",
+   "line2": "できたらタップで星と拍手",
+   "chips": [
+    "できたらタップで星と拍手",
+    "ごはん5〜12口を目標に"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.529,
+    "family": "stagger2",
+    "font": "NotoSansJP.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        799,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.24,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        84,
+        176,
+        997,
+        402
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.67,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.415,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "歯みがきもミッション\nできたらタップで星と拍手\n\n📲 ダウンロードはプロフィール（bio）のリンクから\n\n#LumiMissionPlanet",
+   "caption_link": "歯みがきもミッション\nできたらタップで星と拍手\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/ja.jpg"
+  },
+  {
+   "locale": "kn-IN",
+   "file": "lumimission/kn-IN.jpg",
+   "intended_locale": "kn-IN",
+   "headline_locale": "kn-IN",
+   "screenshot_locale": "kn-IN",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:kan",
+    "script_chars": 25,
+    "mixed_english_words": {
+     "0": [
+      "today"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.964
+    ],
+    "1": [
+     1,
+     0.995
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['today']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)"
+   ],
+   "line1": "ಹಲ್ಲುಜ್ಜುವುದೂ ಮಿಷನ್",
+   "line2": "ಮುಗಿದಾಗ ಒತ್ತಿ: ನಕ್ಷತ್ರ, ಚಪ್ಪಾಳೆ",
+   "chips": [
+    "ಮುಗಿದಾಗ ಒತ್ತಿ: ನಕ್ಷತ್ರ, ಚಪ್ಪಾಳೆ",
+    "ಊಟಕ್ಕೆ 5–12 ತುತ್ತು ಗುರಿ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.261,
+    "family": "orbit2",
+    "font": "NotoSansKannada.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        799,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        74,
+        176,
+        1005,
+        447
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.54,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        552,
+        218,
+        784
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.55,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "status_modes": [],
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ಹಲ್ಲುಜ್ಜುವುದೂ ಮಿಷನ್\nಮುಗಿದಾಗ ಒತ್ತಿ: ನಕ್ಷತ್ರ, ಚಪ್ಪಾಳೆ\n\n📲 ಬಯೋದಲ್ಲಿರುವ ಲಿಂಕ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ\n\n#LumiMissionPlanet",
+   "caption_link": "ಹಲ್ಲುಜ್ಜುವುದೂ ಮಿಷನ್\nಮುಗಿದಾಗ ಒತ್ತಿ: ನಕ್ಷತ್ರ, ಚಪ್ಪಾಳೆ\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/kn-IN.jpg"
+  },
+  {
+   "locale": "ko",
+   "file": "lumimission/ko.jpg",
+   "intended_locale": "ko",
+   "headline_locale": "ko",
+   "screenshot_locale": "ko",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:kor",
+    "script_chars": 24,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.969
+    ],
+    "1": [
+     1,
+     0.998
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "양치·정리도 미션으로",
+   "line2": "다 하면 탭, 별과 박수 받기",
+   "chips": [
+    "다 하면 탭, 별과 박수 받기",
+    "밥은 5~12숟가락 목표"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.518,
+    "family": "stagger2",
+    "font": "NotoSansKR.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        303,
+        72,
+        777,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.37,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        88,
+        176,
+        993,
+        420
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.53,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.422,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "양치·정리도 미션으로\n다 하면 탭, 별과 박수 받기\n\n📲 다운로드는 프로필(bio) 링크에서\n\n#LumiMissionPlanet",
+   "caption_link": "양치·정리도 미션으로\n다 하면 탭, 별과 박수 받기\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/ko.jpg"
+  },
+  {
+   "locale": "ml-IN",
+   "file": "lumimission/ml-IN.jpg",
+   "intended_locale": "ml-IN",
+   "headline_locale": "ml-IN",
+   "screenshot_locale": "ml-IN",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:mal",
+    "script_chars": 25,
+    "mixed_english_words": {
+     "0": [
+      "today"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.947
+    ],
+    "1": [
+     1,
+     0.996
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['today']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)"
+   ],
+   "line1": "പല്ലുതേപ്പും മിഷൻ",
+   "line2": "കഴിഞ്ഞാൽ തൊടൂ: നക്ഷത്രം, കയ്യടി",
+   "chips": [
+    "കഴിഞ്ഞാൽ തൊടൂ: നക്ഷത്രം, കയ്യടി",
+    "ഊണിന് 5–12 ഉരുള ലക്ഷ്യം"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.262,
+    "family": "orbit2",
+    "font": "NotoSansMalayalam.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        327,
+        72,
+        753,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.47,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        75,
+        176,
+        1005,
+        446
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.53,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        551,
+        255,
+        785
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.97,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "status_modes": [],
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "പല്ലുതേപ്പും മിഷൻ\nകഴിഞ്ഞാൽ തൊടൂ: നക്ഷത്രം, കയ്യടി\n\n📲 ബയോയിലെ ലിങ്ക് വഴി ഡൗൺലോഡ് ചെയ്യുക\n\n#LumiMissionPlanet",
+   "caption_link": "പല്ലുതേപ്പും മിഷൻ\nകഴിഞ്ഞാൽ തൊടൂ: നക്ഷത്രം, കയ്യടി\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/ml-IN.jpg"
+  },
+  {
+   "locale": "mr-IN",
+   "file": "lumimission/mr-IN.jpg",
+   "intended_locale": "mr-IN",
+   "headline_locale": "mr-IN",
+   "screenshot_locale": "mr-IN",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:mar",
+    "script_chars": 12,
+    "mixed_english_words": {
+     "0": [
+      "today"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.953
+    ],
+    "1": [
+     1,
+     0.995
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['today']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)"
+   ],
+   "line1": "दात घासणेही मिशन",
+   "line2": "झाले की टॅप: तारे आणि टाळ्या",
+   "chips": [
+    "झाले की टॅप: तारे आणि टाळ्या",
+    "जेवणासाठी 5–12 घास लक्ष्य"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.25,
+    "family": "orbit2",
+    "font": "NotoSansDevanagari.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        107,
+        176,
+        973,
+        483
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.67,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        584,
+        227,
+        812
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.5,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "status_modes": [],
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "दात घासणेही मिशन\nझाले की टॅप: तारे आणि टाळ्या\n\n📲 बायोमधील लिंकवरून डाउनलोड करा\n\n#LumiMissionPlanet",
+   "caption_link": "दात घासणेही मिशन\nझाले की टॅप: तारे आणि टाळ्या\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/mr-IN.jpg"
+  },
+  {
+   "locale": "ms",
+   "file": "lumimission/ms.jpg",
+   "intended_locale": "ms",
+   "headline_locale": "ms",
+   "screenshot_locale": "ms",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.993
+    ],
+    "1": [
+     1,
+     0.992
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Gosok gigi jadi misi",
+   "line2": "Siap? Sentuh, arnab bersorak beri bintang",
+   "chips": [
+    "Siap? Sentuh, arnab bersorak beri bintang",
+    "Sasaran 5 hingga 12 suapan"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.495,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        990,
+        458
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.58,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.412,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Gosok gigi jadi misi\nSiap? Sentuh, arnab bersorak beri bintang\n\n📲 Muat turun melalui pautan dalam bio\n\n#LumiMissionPlanet",
+   "caption_link": "Gosok gigi jadi misi\nSiap? Sentuh, arnab bersorak beri bintang\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/ms.jpg"
+  },
+  {
+   "locale": "nl-NL",
+   "file": "lumimission/nl-NL.jpg",
+   "intended_locale": "nl-NL",
+   "headline_locale": "nl-NL",
+   "screenshot_locale": "nl-NL",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.998
+    ],
+    "1": [
+     1,
+     0.996
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Tanden poetsen als missie",
+   "line2": "Klaar? Tik en het konijntje geeft sterren",
+   "chips": [
+    "Klaar? Tik en het konijntje geeft sterren",
+    "Hapjesdoel van 5 tot 12"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        103,
+        176,
+        977,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.86,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Tanden poetsen als missie\nKlaar? Tik en het konijntje geeft sterren\n\n📲 Download via de link in bio\n\n#LumiMissionPlanet",
+   "caption_link": "Tanden poetsen als missie\nKlaar? Tik en het konijntje geeft sterren\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/nl-NL.jpg"
+  },
+  {
+   "locale": "no",
+   "file": "lumimission/no.jpg",
+   "intended_locale": "no",
+   "headline_locale": "no",
+   "screenshot_locale": "no",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.995
+    ],
+    "1": [
+     1,
+     0.997
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Tannpuss blir et oppdrag",
+   "line2": "Ferdig? Trykk, og kaninen deler ut stjerner",
+   "chips": [
+    "Ferdig? Trykk, og kaninen deler ut stjerner",
+    "Mål på 5 til 12 munnfuller"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        168,
+        176,
+        912,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.02,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Tannpuss blir et oppdrag\nFerdig? Trykk, og kaninen deler ut stjerner\n\n📲 Last ned via lenken i bio\n\n#LumiMissionPlanet",
+   "caption_link": "Tannpuss blir et oppdrag\nFerdig? Trykk, og kaninen deler ut stjerner\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/no.jpg"
+  },
+  {
+   "locale": "or-IN",
+   "file": "lumimission/or-IN.jpg",
+   "intended_locale": "or-IN",
+   "headline_locale": "or-IN",
+   "screenshot_locale": "or-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:ori",
+    "script_chars": 24,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.944
+    ],
+    "1": [
+     1,
+     0.997
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "ଦାନ୍ତ ଘଷିବା ହେଉ ମିଶନ",
+   "line2": "ସରିଲେ ଛୁଅଁନ୍ତୁ, ବନ୍ନୀ ତାରା ଦିଏ",
+   "chips": [
+    "ସରିଲେ ଛୁଅଁନ୍ତୁ, ବନ୍ନୀ ତାରା ଦିଏ",
+    "5 ରୁ 12 ଗ୍ରାସର ଲକ୍ଷ୍ୟ"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.5,
+    "family": "stagger2",
+    "font": "NotoSansOriya.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        246,
+        72,
+        834,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.2,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        74,
+        176,
+        1005,
+        450
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 92,
+        "sub": 46,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.49,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.406,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "ଦାନ୍ତ ଘଷିବା ହେଉ ମିଶନ\nସରିଲେ ଛୁଅଁନ୍ତୁ, ବନ୍ନୀ ତାରା ଦିଏ\n\n📲 ବାୟୋରେ ଥିବା ଲିଙ୍କରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ\n\n#LumiMissionPlanet",
+   "caption_link": "ଦାନ୍ତ ଘଷିବା ହେଉ ମିଶନ\nସରିଲେ ଛୁଅଁନ୍ତୁ, ବନ୍ନୀ ତାରା ଦିଏ\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/or-IN.jpg"
+  },
+  {
+   "locale": "pa-IN",
+   "file": "lumimission/pa-IN.jpg",
+   "intended_locale": "pa-IN",
+   "headline_locale": "pa-IN",
+   "screenshot_locale": "pa-IN",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:pan",
+    "script_chars": 13,
+    "mixed_english_words": {
+     "0": [
+      "EN-UI:done/today"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.944
+    ],
+    "1": [
+     1,
+     0.994
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['EN-UI:done/today']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)"
+   ],
+   "line1": "ਦੰਦ ਬੁਰਸ਼ ਬਣੇ ਮਿਸ਼ਨ",
+   "line2": "ਹੋ ਗਿਆ? ਛੂਹੋ, ਬਨੀ ਤਾਰੇ ਦੇਵੇ",
+   "chips": [
+    "ਹੋ ਗਿਆ? ਛੂਹੋ, ਬਨੀ ਤਾਰੇ ਦੇਵੇ",
+    "5 ਤੋਂ 12 ਬੁਰਕੀਆਂ ਦਾ ਟੀਚਾ"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.248,
+    "family": "orbit2",
+    "font": "NotoSansGurmukhi.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        276,
+        72,
+        803,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.29,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        112,
+        176,
+        967,
+        490
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.66,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        590,
+        188,
+        814
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.12,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.5
+      }
+     ]
+    },
+    "status_modes": [],
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "ਦੰਦ ਬੁਰਸ਼ ਬਣੇ ਮਿਸ਼ਨ\nਹੋ ਗਿਆ? ਛੂਹੋ, ਬਨੀ ਤਾਰੇ ਦੇਵੇ\n\n📲 ਬਾਇਓ ਵਿੱਚ ਦਿੱਤੇ ਲਿੰਕ ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ\n\n#LumiMissionPlanet",
+   "caption_link": "ਦੰਦ ਬੁਰਸ਼ ਬਣੇ ਮਿਸ਼ਨ\nਹੋ ਗਿਆ? ਛੂਹੋ, ਬਨੀ ਤਾਰੇ ਦੇਵੇ\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/pa-IN.jpg"
+  },
+  {
+   "locale": "pl",
+   "file": "lumimission/pl.jpg",
+   "intended_locale": "pl",
+   "headline_locale": "pl",
+   "screenshot_locale": "pl",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.997
+    ],
+    "1": [
+     1,
+     0.995
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Mycie zębów jako misja",
+   "line2": "Gotowe? Dotknij, a króliczek da gwiazdki",
+   "chips": [
+    "Gotowe? Dotknij, a króliczek da gwiazdki",
+    "Cel: od 5 do 12 kęsów"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        184,
+        176,
+        896,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.1,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        232,
+        924
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.93,
+       "plate_alpha": 0.55,
+       "lines": 3,
+       "lh": 1.25
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Mycie zębów jako misja\nGotowe? Dotknij, a króliczek da gwiazdki\n\n📲 Pobierz przez link w bio\n\n#LumiMissionPlanet",
+   "caption_link": "Mycie zębów jako misja\nGotowe? Dotknij, a króliczek da gwiazdki\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/pl.jpg"
+  },
+  {
+   "locale": "pt-BR",
+   "file": "lumimission/pt-BR.jpg",
+   "intended_locale": "pt-BR",
+   "headline_locale": "pt-BR",
+   "screenshot_locale": "pt-BR",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.992
+    ],
+    "1": [
+     1,
+     0.995
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Escovar os dentes: missão!",
+   "line2": "Fez? Toque e o coelhinho dá estrelas",
+   "chips": [
+    "Fez? Toque e o coelhinho dá estrelas",
+    "Meta de 5 a 12 garfadas"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.406,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        112,
+        176,
+        967,
+        605
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.08,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.413,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Escovar os dentes: missão!\nFez? Toque e o coelhinho dá estrelas\n\n📲 Baixe pelo link na bio\n\n#LumiMissionPlanet",
+   "caption_link": "Escovar os dentes: missão!\nFez? Toque e o coelhinho dá estrelas\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/pt-BR.jpg"
+  },
+  {
+   "locale": "pt-PT",
+   "file": "lumimission/pt-PT.jpg",
+   "intended_locale": "pt-PT",
+   "headline_locale": "pt-PT",
+   "screenshot_locale": "pt-PT",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.992
+    ],
+    "1": [
+     1,
+     0.995
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Lavar os dentes: missão!",
+   "line2": "Feito? Toca e o coelhinho dá estrelas",
+   "chips": [
+    "Feito? Toca e o coelhinho dá estrelas",
+    "Meta de 5 a 12 garfadas"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.406,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        112,
+        176,
+        967,
+        605
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.17,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.413,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Lavar os dentes: missão!\nFeito? Toca e o coelhinho dá estrelas\n\n📲 Download via the link in bio\n\n#LumiMissionPlanet",
+   "caption_link": "Lavar os dentes: missão!\nFeito? Toca e o coelhinho dá estrelas\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "en-fallback",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/pt-PT.jpg"
+  },
+  {
+   "locale": "ro",
+   "file": "lumimission/ro.jpg",
+   "intended_locale": "ro",
+   "headline_locale": "ro",
+   "screenshot_locale": "ro",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.938
+    ],
+    "1": [
+     1,
+     0.997
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Periajul devine misiune",
+   "line2": "Gata? Atinge și iepurașul dă stele",
+   "chips": [
+    "Gata? Atinge și iepurașul dă stele",
+    "Țintă de 5–12 îmbucături"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.395,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        130,
+        176,
+        950,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.93,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.404,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Periajul devine misiune\nGata? Atinge și iepurașul dă stele\n\n📲 Descarcă din linkul din bio\n\n#LumiMissionPlanet",
+   "caption_link": "Periajul devine misiune\nGata? Atinge și iepurașul dă stele\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/ro.jpg"
+  },
+  {
+   "locale": "ru",
+   "file": "lumimission/ru.jpg",
+   "intended_locale": "ru",
+   "headline_locale": "ru",
+   "screenshot_locale": "ru",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:rus",
+    "script_chars": 6,
+    "mixed_english_words": {
+     "0": [
+      "today"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.994
+    ],
+    "1": [
+     1,
+     0.995
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['today']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.228<0.24)"
+   ],
+   "line1": "Зубы, еда, игрушки — миссии",
+   "line2": "Готово? Нажми — звёзды и аплодисменты",
+   "chips": [
+    "Готово? Нажми — звёзды и аплодисменты",
+    "Цель за едой: от 5 до 12 ложек"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.245,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.02,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        308,
+        72,
+        773,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.39,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        82,
+        176,
+        999,
+        559
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.12,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        652,
+        217,
+        903
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.82,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.08,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Зубы, еда, игрушки — миссии\nГотово? Нажми — звёзды и аплодисменты\n\n📲 Скачать можно по ссылке в профиле (bio)\n\n#LumiMissionPlanet",
+   "caption_link": "Зубы, еда, игрушки — миссии\nГотово? Нажми — звёзды и аплодисменты\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/ru.jpg"
+  },
+  {
+   "locale": "sk",
+   "file": "lumimission/sk.jpg",
+   "intended_locale": "sk",
+   "headline_locale": "sk",
+   "screenshot_locale": "sk",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.985
+    ],
+    "1": [
+     1,
+     0.997
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Zuby, jedlo, hračky: misie",
+   "line2": "Hotovo? Ťukni a získaj hviezdy a potlesk",
+   "chips": [
+    "Hotovo? Ťukni a získaj hviezdy a potlesk",
+    "Cieľ pri jedle: 5 až 12 lyžíc"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.396,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        172,
+        176,
+        908,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.13,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.401,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Zuby, jedlo, hračky: misie\nHotovo? Ťukni a získaj hviezdy a potlesk\n\n📲 Stiahnite si ju cez odkaz v profile (bio)\n\n#LumiMissionPlanet",
+   "caption_link": "Zuby, jedlo, hračky: misie\nHotovo? Ťukni a získaj hviezdy a potlesk\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/sk.jpg"
+  },
+  {
+   "locale": "sl-SI",
+   "file": "lumimission/sl-SI.jpg",
+   "intended_locale": "sl-SI",
+   "headline_locale": "sl-SI",
+   "screenshot_locale": "sl-SI",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.953
+    ],
+    "1": [
+     1,
+     0.998
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "Zobje, hrana, igrače: misije",
+   "line2": "Opravljeno? Tapni za zvezdice in aplavz",
+   "chips": [
+    "Opravljeno? Tapni za zvezdice in aplavz",
+    "Cilj pri jedi: od 5 do 12 žlic"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.396,
+    "family": "stagger2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        286,
+        72,
+        794,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.34,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        173,
+        176,
+        907,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.01,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.398,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "Zobje, hrana, igrače: misije\nOpravljeno? Tapni za zvezdice in aplavz\n\n📲 Prenesite prek povezave v biu\n\n#LumiMissionPlanet",
+   "caption_link": "Zobje, hrana, igrače: misije\nOpravljeno? Tapni za zvezdice in aplavz\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/sl-SI.jpg"
+  },
+  {
+   "locale": "sv",
+   "file": "lumimission/sv.jpg",
+   "intended_locale": "sv",
+   "headline_locale": "sv",
+   "screenshot_locale": "sv",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.993
+    ],
+    "1": [
+     1,
+     0.997
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.209<0.24; orbit2×1.08: screen_area=0.225<0.24)"
+   ],
+   "line1": "Borsta, ät, städa: uppdrag",
+   "line2": "Tryck när det är klart, få stjärnor och jubel",
+   "chips": [
+    "Tryck när det är klart, få stjärnor och jubel",
+    "Matmål från 5 till 12 tuggor"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.241,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        126,
+        176,
+        953,
+        622
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.19,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        709,
+        201,
+        969
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.84,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Borsta, ät, städa: uppdrag\nTryck när det är klart, få stjärnor och jubel\n\n📲 Ladda ner via länken i bion\n\n#LumiMissionPlanet",
+   "caption_link": "Borsta, ät, städa: uppdrag\nTryck när det är klart, få stjärnor och jubel\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/sv.jpg"
+  },
+  {
+   "locale": "ta-IN",
+   "file": "lumimission/ta-IN.jpg",
+   "intended_locale": "ta-IN",
+   "headline_locale": "ta-IN",
+   "screenshot_locale": "ta-IN",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:tam",
+    "script_chars": 53,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.949
+    ],
+    "1": [
+     1,
+     0.994
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "பல் துலக்கலும் மிஷன்",
+   "line2": "முடிந்ததும் தொடு, நட்சத்திரம் பெறு",
+   "chips": [
+    "முடிந்ததும் தொடு, நட்சத்திரம் பெறு",
+    "உணவுக்கு 5–12 வாய் இலக்கு"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.363,
+    "family": "stagger2",
+    "font": "NotoSansTamil.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        753,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.51,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        94,
+        176,
+        987,
+        676
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.79,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.399,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "பல் துலக்கலும் மிஷன்\nமுடிந்ததும் தொடு, நட்சத்திரம் பெறு\n\n📲 பயோவில் உள்ள இணைப்பு வழியாகப் பதிவிறக்குங்கள்\n\n#LumiMissionPlanet",
+   "caption_link": "பல் துலக்கலும் மிஷன்\nமுடிந்ததும் தொடு, நட்சத்திரம் பெறு\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/ta-IN.jpg"
+  },
+  {
+   "locale": "te-IN",
+   "file": "lumimission/te-IN.jpg",
+   "intended_locale": "te-IN",
+   "headline_locale": "te-IN",
+   "screenshot_locale": "te-IN",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:tel",
+    "script_chars": 21,
+    "mixed_english_words": {
+     "0": [
+      "today"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.939
+    ],
+    "1": [
+     1,
+     0.996
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['today']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->closeup2 (orbit2: screen_area=0.18<0.24; orbit2×1.08: screen_area=0.194<0.24; orbit2×1.16: screen_area=0.207<0.24; orbit2×1.25: screen_area=0.223<0.24; split2: text does not fit at minimum sizes; closeup2: screen_area=0.198<0.24; closeup2×1.08: screen_area=0.213<0.24; closeup2×1.16: screen_area=0.228<0.24)"
+   ],
+   "line1": "పళ్లు తోమడం కూడా మిషన్",
+   "line2": "పూర్తయితే నొక్కండి, నక్షత్రాలు పొందండి",
+   "chips": [
+    "పూర్తయితే నొక్కండి, నక్షత్రాలు పొందండి",
+    "భోజనానికి 5–12 ముద్దల గోల్"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.244,
+    "family": "closeup2",
+    "font": "NotoSansTelugu.ttf",
+    "screen_ratio_vs_battai_split": 1.77,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        294,
+        72,
+        787,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.33,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        218,
+        184,
+        863,
+        726
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.16,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.25,
+    "layout_family": "closeup2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 closeup2）"
+   },
+   "caption_instagram": "పళ్లు తోమడం కూడా మిషన్\nపూర్తయితే నొక్కండి, నక్షత్రాలు పొందండి\n\n📲 బయోలోని లింక్ ద్వారా డౌన్‌లోడ్ చేయండి\n\n#LumiMissionPlanet",
+   "caption_link": "పళ్లు తోమడం కూడా మిషన్\nపూర్తయితే నొక్కండి, నక్షత్రాలు పొందండి\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/te-IN.jpg"
+  },
+  {
+   "locale": "th",
+   "file": "lumimission/th.jpg",
+   "intended_locale": "th",
+   "headline_locale": "th",
+   "screenshot_locale": "th",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:tha",
+    "script_chars": 54,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.957
+    ],
+    "1": [
+     1,
+     0.998
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "แปรงฟันก็เป็นภารกิจ",
+   "line2": "ทำเสร็จแตะเลย รับดาวและเสียงเชียร์",
+   "chips": [
+    "ทำเสร็จแตะเลย รับดาวและเสียงเชียร์",
+    "ตั้งเป้ากินข้าว 5–12 คำ"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.503,
+    "family": "stagger2",
+    "font": "NotoSansThai.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        374,
+        72,
+        705,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.65,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        95,
+        176,
+        985,
+        444
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.57,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.45,
+        1.5
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.412,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "แปรงฟันก็เป็นภารกิจ\nทำเสร็จแตะเลย รับดาวและเสียงเชียร์\n\n📲 ดาวน์โหลดได้ที่ลิงก์ในโปรไฟล์ (bio)\n\n#LumiMissionPlanet",
+   "caption_link": "แปรงฟันก็เป็นภารกิจ\nทำเสร็จแตะเลย รับดาวและเสียงเชียร์\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/th.jpg"
+  },
+  {
+   "locale": "tr",
+   "file": "lumimission/tr.jpg",
+   "intended_locale": "tr",
+   "headline_locale": "tr",
+   "screenshot_locale": "tr",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.989
+    ],
+    "1": [
+     1,
+     0.997
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Diş, yemek, oyuncak görevi",
+   "line2": "Bitince dokun, yıldız ve alkış kazan",
+   "chips": [
+    "Bitince dokun, yıldız ve alkış kazan",
+    "Yemekte 5–12 lokma hedefi"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        752,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.48,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        119,
+        176,
+        961,
+        623
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.12,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        710,
+        224,
+        961
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 9.0,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Diş, yemek, oyuncak görevi\nBitince dokun, yıldız ve alkış kazan\n\n📲 Biyografideki bağlantıdan indirin\n\n#LumiMissionPlanet",
+   "caption_link": "Diş, yemek, oyuncak görevi\nBitince dokun, yıldız ve alkış kazan\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/tr.jpg"
+  },
+  {
+   "locale": "uk",
+   "file": "lumimission/uk.jpg",
+   "intended_locale": "uk",
+   "headline_locale": "uk",
+   "screenshot_locale": "uk",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:ukr",
+    "script_chars": 5,
+    "mixed_english_words": {
+     "0": [
+      "EN-UI:done/today"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.943
+    ],
+    "1": [
+     1,
+     0.996
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['EN-UI:done/today']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Зуби, їжа, іграшки: місії",
+   "line2": "Зробив — торкнись: зірки й оплески",
+   "chips": [
+    "Зробив — торкнись: зірки й оплески",
+    "Мета за їжею: від 5 до 12 ложок"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        328,
+        72,
+        753,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.47,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        148,
+        176,
+        931,
+        624
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 12.15,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        40,
+        711,
+        234,
+        962
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 8.88,
+       "plate_alpha": 0.55,
+       "lines": 4,
+       "lh": 1.25
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Зуби, їжа, іграшки: місії\nЗробив — торкнись: зірки й оплески\n\n📲 Завантажуйте за посиланням у профілі (bio)\n\n#LumiMissionPlanet",
+   "caption_link": "Зуби, їжа, іграшки: місії\nЗробив — торкнись: зірки й оплески\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/uk.jpg"
+  },
+  {
+   "locale": "ur-PK",
+   "file": "lumimission/ur-PK.jpg",
+   "intended_locale": "ur-PK",
+   "headline_locale": "ur-PK",
+   "screenshot_locale": "ur-PK",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:urd",
+    "script_chars": 24,
+    "mixed_english_words": {
+     "0": [
+      "today"
+     ]
+    },
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.708
+    ],
+    "1": [
+     1,
+     0.857
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "dropped screenshots [0] with mixed English strings [['today']]",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)"
+   ],
+   "line1": "دانت اور کھلونے: مشن",
+   "line2": "کام ہو تو ٹیپ کریں، ستارے اور شاباش",
+   "chips": [
+    "کام ہو تو ٹیپ کریں، ستارے اور شاباش",
+    "5 سے 12 نوالوں کا ہدف"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.264,
+    "family": "orbit2",
+    "font": "NotoSansArabic.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        318,
+        72,
+        762,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        83,
+        176,
+        997,
+        439
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 88,
+        "sub": 44,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.53,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.3,
+        1.4
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      },
+      {
+       "kind": "card",
+       "plate": [
+        805,
+        544,
+        1040,
+        720
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 36
+       },
+       "contrast_p10": 10.42,
+       "plate_alpha": 0.55,
+       "lines": 2,
+       "lh": 1.4
+      }
+     ]
+    },
+    "status_modes": [],
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板"
+   },
+   "caption_instagram": "دانت اور کھلونے: مشن\nکام ہو تو ٹیپ کریں، ستارے اور شاباش\n\n📲 بائیو میں دیے گئے لنک سے ڈاؤن لوڈ کریں\n\n#LumiMissionPlanet",
+   "caption_link": "دانت اور کھلونے: مشن\nکام ہو تو ٹیپ کریں، ستارے اور شاباش\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "extra",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/ur-PK.jpg"
+  },
+  {
+   "locale": "vi",
+   "file": "lumimission/vi.jpg",
+   "intended_locale": "vi",
+   "headline_locale": "vi",
+   "screenshot_locale": "vi",
+   "localized": true,
+   "screenshots_used": [
+    1
+   ],
+   "demo_language_check": {
+    "method": "asset-diff",
+    "script_chars": null,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.994
+    ],
+    "1": [
+     1,
+     0.995
+    ]
+   },
+   "layout_override": "single",
+   "core_screen": {
+    "source_index": 1,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [
+    "English UI on localized screenshots [(0, ['done', 'today'])]; dropped",
+    "planned screens (2) not all localized/clean (have [1]); single phone with the clean localized primary (layout_override=single)",
+    "layout fallback orbit2->orbit2 (orbit2: screen_area=0.208<0.24; orbit2×1.08: screen_area=0.224<0.24)"
+   ],
+   "line1": "Đánh răng cũng là nhiệm vụ",
+   "line2": "Xong thì chạm, nhận sao và tiếng reo",
+   "chips": [
+    "Xong thì chạm, nhận sao và tiếng reo",
+    "Đặt mục tiêu ăn 5–12 miếng"
+   ],
+   "layout": {
+    "phones": 1,
+    "screen_area_ratio": 0.24,
+    "family": "orbit2",
+    "font": "NotoSans.ttf",
+    "screen_ratio_vs_battai_split": 1.18,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        799,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.34,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        104,
+        176,
+        975,
+        624
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 104,
+        "sub": 52,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.82,
+       "plate_alpha": 0.55,
+       "lines": [
+        2,
+        2
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "phone_scale": 1.16,
+    "layout_family": "orbit2",
+    "layout_reason": "兒童／可愛／清單型：單機置中，功能卡放手機外側（不壓畫面），文字進玻璃板（自檢未過改用 orbit2）"
+   },
+   "caption_instagram": "Đánh răng cũng là nhiệm vụ\nXong thì chạm, nhận sao và tiếng reo\n\n📲 Tải về qua link ở bio\n\n#LumiMissionPlanet",
+   "caption_link": "Đánh răng cũng là nhiệm vụ\nXong thì chạm, nhận sao và tiếng reo\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/vi.jpg"
+  },
+  {
+   "locale": "zh-Hans",
+   "file": "lumimission/zh-Hans.jpg",
+   "intended_locale": "zh-Hans",
+   "headline_locale": "zh-Hans",
+   "screenshot_locale": "zh-Hans",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_sim",
+    "script_chars": 16,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.977
+    ],
+    "1": [
+     1,
+     0.995
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "刷牙收玩具变小任务",
+   "line2": "做完点一下，兔兔欢呼给星星",
+   "chips": [
+    "做完点一下，兔兔欢呼给星星",
+    "吃饭可设5～12口目标"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.519,
+    "family": "stagger2",
+    "font": "NotoSansSC.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        215,
+        72,
+        865,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.06,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        90,
+        176,
+        991,
+        418
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.58,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.414,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "刷牙收玩具变小任务\n做完点一下，兔兔欢呼给星星\n\n📲 请到个人主页（bio）的链接下载\n\n#LumiMissionPlanet",
+   "caption_link": "刷牙收玩具变小任务\n做完点一下，兔兔欢呼给星星\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/zh-Hans.jpg"
+  },
+  {
+   "locale": "zh-Hant",
+   "file": "lumimission/zh-Hant.jpg",
+   "intended_locale": "zh-Hant",
+   "headline_locale": "zh-Hant",
+   "screenshot_locale": "zh-Hant",
+   "localized": true,
+   "screenshots_used": [
+    0,
+    1
+   ],
+   "demo_language_check": {
+    "method": "ocr:chi_tra",
+    "script_chars": 26,
+    "mixed_english_words": {},
+    "all_used_screens_localized": true
+   },
+   "screen_text_flags": {},
+   "screen_match": {
+    "0": [
+     0,
+     0.931
+    ],
+    "1": [
+     1,
+     0.994
+    ]
+   },
+   "core_screen": {
+    "source_index": 0,
+    "reason": "判定檔 primary 0＋secondary 1：首頁看得到今天的任務列與完成狀態、任務輪播，示範資料豐富，說明「每天的作息變任務」。"
+   },
+   "warnings": [],
+   "line1": "刷牙收玩具變小任務",
+   "line2": "做完點一下，兔兔歡呼給星星",
+   "chips": [
+    "做完點一下，兔兔歡呼給星星",
+    "吃飯可設 5～12 口目標"
+   ],
+   "layout": {
+    "phones": 2,
+    "screen_area_ratio": 0.52,
+    "family": "stagger2",
+    "font": "NotoSansTC.ttf",
+    "screen_ratio_vs_battai_split": 0.88,
+    "cards_over_screen": [],
+    "typography_check": {
+     "ok": true,
+     "problems": [],
+     "plates": [
+      {
+       "kind": "name",
+       "plate": [
+        282,
+        72,
+        799,
+        160
+       ],
+       "pads": [
+        16,
+        16,
+        16,
+        16
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "text": 32
+       },
+       "contrast_p10": 12.25,
+       "plate_alpha": 0.55,
+       "lines": 1,
+       "lh": null
+      },
+      {
+       "kind": "title",
+       "plate": [
+        89,
+        176,
+        991,
+        417
+       ],
+       "pads": [
+        24,
+        24,
+        24,
+        24
+       ],
+       "pad_spread": 0,
+       "sizes": {
+        "headline": 96,
+        "sub": 48,
+        "ratio": 2.0
+       },
+       "contrast_p10": 11.48,
+       "plate_alpha": 0.55,
+       "lines": [
+        1,
+        1
+       ],
+       "lh": [
+        1.18,
+        1.25
+       ],
+       "sub_w_le_headline_w": true,
+       "inner_w": 888
+      }
+     ]
+    },
+    "status_modes": [],
+    "screen_similarity": 0.41,
+    "layout_family": "stagger2",
+    "layout_reason": "相機／照片／創作型：雙機錯位，文字進玻璃板"
+   },
+   "caption_instagram": "刷牙收玩具變小任務\n做完點一下，兔兔歡呼給星星\n\n📲 請到個人檔案（bio）的連結下載\n\n#LumiMissionPlanet",
+   "caption_link": "刷牙收玩具變小任務\n做完點一下，兔兔歡呼給星星\n\nApp Store: https://apps.apple.com/app/id6779750237\nGoogle Play: https://play.google.com/store/apps/details?id=com.alice51849.lumimissionlite",
+   "cta_source": "lib",
+   "url": "https://raw.githubusercontent.com/alice51849/ios-app-guide/promo-cards/lumimission/zh-Hant.jpg"
+  }
+ ]
+}

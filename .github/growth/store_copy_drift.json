@@ -202,8 +202,8 @@
    "brands": [
     "BattAI"
    ],
-   "live_updated": "2026-10-20",
-   "live_version": "1.1.7",
+   "live_updated": "2026-10-22",
+   "live_version": "1.1.8",
    "locales": {
     "de-DE": {
      "added": [
@@ -241,8 +241,8 @@
       "Schalte mehr Verlauf, Planung und Berichte frei.",
       "Eine Zahlung. Kein Abo."
      ],
-     "live_updated": "2026-10-20",
-     "live_version": "1.1.7",
+     "live_updated": "2026-10-22",
+     "live_version": "1.1.8",
      "same": false
     },
     "en-GB": {
@@ -279,8 +279,8 @@
       "Unlock deeper history, planning, and reports.",
       "One payment. No subscription."
      ],
-     "live_updated": "2026-10-20",
-     "live_version": "1.1.7",
+     "live_updated": "2026-10-22",
+     "live_version": "1.1.8",
      "same": false
     },
     "en-US": {
@@ -317,8 +317,8 @@
       "Unlock deeper history, planning, and reports.",
       "One payment. No subscription."
      ],
-     "live_updated": "2026-10-20",
-     "live_version": "1.1.7",
+     "live_updated": "2026-10-22",
+     "live_version": "1.1.8",
      "same": false
     },
     "es-ES": {
@@ -357,8 +357,8 @@
       "Desbloquea más historial, planificación e informes.",
       "Pago único. Sin suscripción."
      ],
-     "live_updated": "2026-10-20",
-     "live_version": "1.1.7",
+     "live_updated": "2026-10-22",
+     "live_version": "1.1.8",
      "same": false
     },
     "fr-FR": {
@@ -397,8 +397,8 @@
       "Débloquez plus d’historique, de planification et de rapports.",
       "Achat unique. Sans abonnement."
      ],
-     "live_updated": "2026-10-20",
-     "live_version": "1.1.7",
+     "live_updated": "2026-10-22",
+     "live_version": "1.1.8",
      "same": false
     },
     "ja": {
@@ -435,8 +435,8 @@
       "より深い履歴、計画、レポートを使えます。",
       "支払いは一度だけ。サブスクリプションなし。"
      ],
-     "live_updated": "2026-10-20",
-     "live_version": "1.1.7",
+     "live_updated": "2026-10-22",
+     "live_version": "1.1.8",
      "same": false
     },
     "ko": {
@@ -473,8 +473,8 @@
       "더 깊은 기록, 계획, 리포트를 이용할 수 있어요.",
       "한 번만 결제하면 됩니다. 구독은 없어요."
      ],
-     "live_updated": "2026-10-20",
-     "live_version": "1.1.7",
+     "live_updated": "2026-10-22",
+     "live_version": "1.1.8",
      "same": false
     },
     "pt-BR": {
@@ -513,8 +513,8 @@
       "Desbloqueie mais histórico, planejamento e relatórios.",
       "Um pagamento. Sem assinatura."
      ],
-     "live_updated": "2026-10-20",
-     "live_version": "1.1.7",
+     "live_updated": "2026-10-22",
+     "live_version": "1.1.8",
      "same": false
     },
     "zh-Hans": {
@@ -551,8 +551,8 @@
       "解锁更深的历史、规划与报告。",
       "只付一次,绝无订阅。"
      ],
-     "live_updated": "2026-10-20",
-     "live_version": "1.1.7",
+     "live_updated": "2026-10-22",
+     "live_version": "1.1.8",
      "same": false
     },
     "zh-Hant": {
@@ -589,8 +589,8 @@
       "解鎖更深入的記錄、規劃與報告。",
       "只付一次,絕無訂閱。"
      ],
-     "live_updated": "2026-10-20",
-     "live_version": "1.1.7",
+     "live_updated": "2026-10-22",
+     "live_version": "1.1.8",
      "same": false
     }
    },
@@ -694,74 +694,110 @@
    "brands": [
     "UsageNow"
    ],
-   "live_updated": "2026-10-09",
-   "live_version": "1.0.1",
+   "live_updated": "2026-10-22",
+   "live_version": "1.0.2",
    "locales": {
     "de-DE": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.1",
-     "same": true
+     "added": [
+      "Starte in der App eine kostenlose 24-Stunden-Testphase und nutze alle Funktionen, auch die Widgets; es wird nichts abgebucht. Vor und nach dem Test ist die aktuelle Nutzung eines Kontos in der App gratis, und UsageNow Pro schaltet mit einem einzigen Einmalkauf weitere Konten, Widgets, Apple Watch und Hinweise frei. Kein Abo."
+     ],
+     "dropped": [
+      "Starte in der App eine kostenlose 24-Stunden-Testphase und nutze alle Funktionen, Widgets inklusive. Um UsageNow und die Widgets nach der Testphase weiter zu nutzen, schaltest du UsageNow Pro mit einem einmaligen Kauf frei. Kein Abo."
+     ],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0.2",
+     "same": false
     },
     "en-GB": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.1",
-     "same": true
+     "added": [
+      "Start a free 24-hour trial in the app and use every feature, widgets included; nothing is charged. Before and after the trial, one account's current usage is free in the app, and UsageNow Pro unlocks more accounts, widgets, Apple Watch and alerts with a single one-time purchase. No subscription."
+     ],
+     "dropped": [
+      "Start a free 24-hour trial in the app and use every feature, widgets included. To carry on using UsageNow and its widgets after the trial, unlock UsageNow Pro with a single one-off purchase. No subscription."
+     ],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0.2",
+     "same": false
     },
     "en-US": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.1",
-     "same": true
+     "added": [
+      "Start a free 24-hour trial in the app and use every feature, widgets included; nothing is charged. Before and after the trial, one account's current usage is free in the app, and UsageNow Pro unlocks more accounts, widgets, Apple Watch and alerts with a single one-time purchase. No subscription."
+     ],
+     "dropped": [
+      "Start a free 24-hour trial in the app and use every feature, widgets included. To keep using UsageNow and its widgets after the trial, unlock UsageNow Pro with a single one-time purchase. No subscription."
+     ],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0.2",
+     "same": false
     },
     "es-ES": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.1",
-     "same": true
+     "added": [
+      "Empieza en la app una prueba gratuita de 24 horas y usa todas las funciones, widgets incluidos, sin ningún cargo. Antes y después de la prueba, el uso actual de una cuenta es gratis en la app, y UsageNow Pro desbloquea más cuentas, widgets, Apple Watch y alertas con una sola compra única. Sin suscripción."
+     ],
+     "dropped": [
+      "Empieza en la app una prueba gratuita de 24 horas y usa todas las funciones, widgets incluidos. Para seguir usando UsageNow y sus widgets después de la prueba, desbloquea UsageNow Pro con una única compra. Sin suscripción."
+     ],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0.2",
+     "same": false
     },
     "fr-FR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.1",
-     "same": true
+     "added": [
+      "Lancez dans l’app un essai gratuit de 24 heures et profitez de toutes les fonctions, widgets compris, sans aucuns frais. Avant et après l’essai, l’utilisation actuelle d’un compte est gratuite dans l’app, et UsageNow Pro débloque plus de comptes, les widgets, l’Apple Watch et les alertes par un seul achat unique. Aucun abonnement."
+     ],
+     "dropped": [
+      "Lancez dans l’app un essai gratuit de 24 heures et profitez de toutes les fonctionnalités, widgets compris. Pour continuer à utiliser UsageNow et ses widgets après l’essai, débloquez UsageNow Pro par un achat unique. Aucun abonnement."
+     ],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0.2",
+     "same": false
     },
     "ja": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.1",
-     "same": true
+     "added": [
+      "アプリ内で24時間の無料トライアルを開始すれば、ウィジェットを含むすべての機能を使えます。料金はかかりません。トライアルの前も後も、1アカウントの現在の使用量はアプリで無料で見られます。UsageNow Proを一度購入すれば、複数アカウント、ウィジェット、Apple Watch、アラートが使えます。サブスクリプションはありません。"
+     ],
+     "dropped": [
+      "アプリ内で24時間の無料トライアルを開始すれば、ウィジェットを含むすべての機能を使えます。トライアル終了後もUsageNowとウィジェットを使い続けるには、1回限りの購入でUsageNow Proのロックを解除してください。サブスクリプションはありません。"
+     ],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0.2",
+     "same": false
     },
     "ko": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.1",
-     "same": true
+     "added": [
+      "앱에서 24시간 무료 체험을 시작하면 위젯을 포함한 모든 기능을 요금 없이 사용할 수 있습니다. 체험 전후 모두 계정 1개의 현재 사용량은 앱에서 무료이며, UsageNow Pro를 한 번 구매하면 더 많은 계정, 위젯, Apple Watch, 알림이 잠금 해제됩니다. 구독이 아닙니다."
+     ],
+     "dropped": [
+      "앱에서 24시간 무료 체험을 시작하면 위젯을 포함한 모든 기능을 사용할 수 있습니다. 체험 기간이 끝난 후에도 UsageNow와 위젯을 계속 사용하려면 한 번의 구매로 UsageNow Pro를 잠금 해제하세요. 구독은 없습니다."
+     ],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0.2",
+     "same": false
     },
     "pt-BR": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.1",
-     "same": true
+     "added": [
+      "Comece no app um teste grátis de 24 horas e use todos os recursos, widgets incluídos, sem nenhuma cobrança. Antes e depois do teste, o uso atual de uma conta é grátis no app, e o UsageNow Pro desbloqueia mais contas, widgets, Apple Watch e alertas com uma única compra. Sem assinatura."
+     ],
+     "dropped": [
+      "Comece no app um teste grátis de 24 horas e use todos os recursos, widgets incluídos. Para continuar usando o UsageNow e seus widgets depois do teste, desbloqueie o UsageNow Pro com uma única compra. Sem assinatura."
+     ],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0.2",
+     "same": false
     },
     "zh-Hant": {
-     "added": [],
-     "dropped": [],
-     "live_updated": "2026-10-09",
-     "live_version": "1.0.1",
-     "same": true
+     "added": [
+      "在 App 內開始 24 小時免費試用,就能使用包含小工具在內的所有功能,不會扣款。試用前後,App 內都可免費查看 1 個帳號的目前用量;UsageNow Pro 一次買斷即可解鎖多帳號、小工具、Apple Watch 與提醒。沒有訂閱。"
+     ],
+     "dropped": [
+      "在 App 內開始 24 小時免費試用,就能使用包含小工具在內的所有功能。試用結束後,若要繼續使用 UsageNow 與小工具,只需一次性購買解鎖 UsageNow Pro。沒有訂閱。"
+     ],
+     "live_updated": "2026-10-22",
+     "live_version": "1.0.2",
+     "same": false
     }
    },
-   "status": "green"
+   "status": "red"
   },
   "countdaysnow": {
    "blocked_terms": [],
@@ -5139,11 +5175,11 @@
   "gb"
  ],
  "counts": {
-  "green": 53,
-  "red": 2,
+  "green": 52,
+  "red": 3,
   "unknown": 0
  },
  "errors": [],
- "generated_at": "2026-10-22T16:25:25Z",
+ "generated_at": "2026-10-23T01:58:45Z",
  "schema": "growth.store-copy-drift/v1"
 }

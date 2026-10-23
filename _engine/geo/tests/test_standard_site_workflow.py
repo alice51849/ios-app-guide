@@ -52,10 +52,10 @@ MIRROR_SHA256 = {
         "6f5bc16db73d0d895b660ecb0d68d56db488cae4bed79b3ed444f879a2abba58"
     ),
     "_engine/social/standard_site_publish.py": (
-        "04e549f03c3629e63fc4b58ed89a90a91b4a4a131c8cdf0cea3b32beb762d2ec"
+        "a586accd957511e752b4c0552f766d545b83d8233a24e9550e33ab9bfde92b2e"
     ),
     "_engine/social/tests/test_standard_site.py": (
-        "a58edb92230ce9dd696877164b5616f943ec185767123b39baa394747d37a3df"
+        "b4a217ce7255b35bab07b7bd8aa4977f48a4224500d31b6fa3b41ef993485a58"
     ),
 }
 
@@ -508,6 +508,31 @@ class StandardSiteWorkflowTests(unittest.TestCase):
         )
         for forbidden in ("rebase", "reset --hard", "--force"):
             self.assertNotIn(forbidden, helper)
+
+
+@unittest.skipIf(
+    IS_DEPLOYED, "canonical-side guard; the deployed copy checks the mirror itself"
+)
+class StandardSiteMirrorPinCanonicalTests(unittest.TestCase):
+    """Fail in 00_GrowthEngine as soon as social/ drifts from MIRROR_SHA256.
+
+    The deployed test above only runs inside the pages repo (geo-daily), so a
+    canonical social/ edit that forgot to repin went unnoticed until the daily
+    run failed and blocked every Pages deploy (10-23: twice). Editing
+    social/{gen_standard_site,standard_site_publish}.py or its test now has
+    to update MIRROR_SHA256 in the same commit.
+    """
+
+    def test_pins_match_canonical_social_sources(self):
+        canon = Path(__file__).resolve().parents[2]
+        for relative, expected in MIRROR_SHA256.items():
+            source = canon / relative.removeprefix("_engine/")
+            with self.subTest(relative=relative):
+                self.assertEqual(
+                    expected,
+                    hashlib.sha256(source.read_bytes()).hexdigest(),
+                    f"update MIRROR_SHA256 for {relative}",
+                )
 
 
 if __name__ == "__main__":

@@ -124,7 +124,12 @@ class PendingPersonaTests(unittest.TestCase):
             catalog_audit.validate_registry(registry)
 
     def test_registration_promotes_only_registered_candidates(self):
+        # GBAGo went live on 2026-10-22, so its persona is already promoted
+        # at import time; stage a copy of it to exercise the promotion step.
         pending = copy.deepcopy(answer_personas.PENDING_PERSONAS)
+        pending.setdefault(
+            "gbago", copy.deepcopy(answer_personas.PERSONAS["gbago"])
+        )
         personas = {"existing": [{"query": "q"}]}
         promoted = answer_personas.promote_registered_personas(
             pending, personas, frozenset({"gbago", "existing", "unrelated"})
@@ -137,7 +142,11 @@ class PendingPersonaTests(unittest.TestCase):
         # candidate is registered in the automatic registry its persona is
         # promoted at import time and is no longer in PENDING_PERSONAS.
         staged = set(LAUNCH_CANDIDATES) & set(answer_personas.PENDING_PERSONAS)
-        self.assertIn("gbago", staged)
+        self.assertEqual(
+            set(), staged & answer_personas._registered_auto_keys()
+        )
+        self.assertNotIn("gbago", staged)
+        self.assertIn("gbago", answer_personas.PERSONAS)
         for key in staged - {"gbago"}:
             self.assertIn(key, pending)
         self.assertEqual([], answer_personas.promote_registered_personas(

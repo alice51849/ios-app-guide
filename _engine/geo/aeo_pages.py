@@ -510,6 +510,25 @@ CURATED_FALLBACK = {
             ["shift & holiday alarm clock", 0],
         ],
     },
+    "gbago": {
+        "key": "gbago",
+        "gap_queries": [
+            "gba emulator for iphone that shows which save is safe to load",
+            "iphone emulator with automatic snapshots so i never lose progress",
+            "gba emulator with save states and backup export",
+            "paid gba emulator with no in-app purchases or ads",
+        ],
+        # Competitor titles read off the live US App Store search results for
+        # "gba emulator" and "emulator save states" on 2026-10-23; rank 0
+        # means the position was not measured, exactly as for the other
+        # curated fallbacks.
+        "top_competitors": [
+            ["delta - game emulator", 0],
+            ["igba: gba & gbc retro emulator", 0],
+            ["retroarch", 0],
+            ["provenance app", 0],
+        ],
+    },
     "zipbox": {
         "key": "zipbox",
         "gap_queries": [
@@ -591,6 +610,8 @@ BRAND = {
     "ok alarm: holiday & shift work": "OK Alarm: Holiday & Shift Work",
     "halo alarm: work & holiday": "Halo Alarm: Work & Holiday",
     "shift & holiday alarm clock": "Shift & Holiday Alarm Clock",
+    "delta - game emulator": "Delta - Game Emulator", "igba: gba & gbc retro emulator": "iGBA: GBA & GBC Retro Emulator",
+    "retroarch": "RetroArch", "provenance app": "Provenance App",
 }
 
 ATTRS = [  # (顯示, cta_bullets 命中關鍵詞)

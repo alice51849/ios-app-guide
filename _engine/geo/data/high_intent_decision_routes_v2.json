@@ -3,9 +3,9 @@
   "dataset_name": "Lumi Studio High-Intent Decision Routes",
   "inventory_contract": {
     "relative_path": "data/verified-ios-app-finder-catalog.json",
-    "expected_app_count": 54,
-    "app_keys_sha256": "e113b81193a6a6edfbbc5aac051d54b81a8df04f147ba3598d487f7a40036706",
-    "copy_sha256": "f3363269f6338b33f9959e78f8aba04a21fa63df191e6fe7b476bccf657a2759",
+    "expected_app_count": 55,
+    "app_keys_sha256": "bb2a1279adc005a6c0ba0b987ffebef95e3efc4df1e914bd049ef763d4a81ca6",
+    "copy_sha256": "e6eab4ab2ca795a3185fa97e8f83bf7565eee691b2577b4c63f23eb456618a31",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd"
   },
   "publisher": {
@@ -2390,6 +2390,65 @@
             "fact.one_time_option",
             "capability.widget",
             "capability.apple_watch"
+          ]
+        }
+      }
+    },
+    {
+      "app_key": "gbago",
+      "route_slug": "keep-emulator-save-progress-safe-and-recoverable-on-iphone",
+      "intent_type": "problem_aware",
+      "primary": true,
+      "keyword_refs": [
+        0,
+        1,
+        5
+      ],
+      "locales": {
+        "en-US": {
+          "language": "en",
+          "market": "United States",
+          "culture_route": "Many people in the US who replay their own handheld-era game files on an iPhone worry less about the controls than about losing hours of progress to an overwritten slot or a save that will not load.",
+          "query": "Which iPhone emulator keeps my save progress safe and recoverable?",
+          "buyer_problem": "One overwritten save state or a damaged checkpoint can erase hours of play, and many emulators only list save slots without saying which one is safe to load. The decision is whether an emulator that gathers every save point for a game on one screen, marks each one as ready or not safe to load, and keeps automatic snapshots fits how you play.",
+          "decision_rule": "Favor a save-focused emulator when losing progress is your main worry and you import your own .gba, .gbc or .gb files from Files. It is a one-time paid download with no in-app purchases or subscription, and it includes no games beyond three original demo cartridges.",
+          "workflow_checks": [
+            "Does it show every checkpoint for a game, including the automatic resume point, save slots, snapshots and the battery save, in one place?",
+            "Will it ask you before falling back from a damaged checkpoint instead of loading it silently?",
+            "Can you export a backup of your saves and import it again later?"
+          ],
+          "alternative_lens": "If you only play short sessions and rarely use save states, a simpler emulator or your current setup may be enough. An emulator like this does not include games or provide game files; you need files you created yourself or are legally allowed to use.",
+          "verify_before_install": [
+            "Check that the files you want to play are .gba, .gbc or .gb files, or .zip archives containing them, that you are allowed to use.",
+            "Read the current listing for the price in your storefront and the iCloud save sync details before you buy."
+          ],
+          "evidence_refs": [
+            "summary.en",
+            "fact.purchase_model",
+            "fact.one_time_option"
+          ]
+        },
+        "zh-Hant": {
+          "language": "zh-Hant",
+          "market": "台灣",
+          "culture_route": "台灣不少玩家在 iPhone 上重溫掌機時代的自有遊戲檔，最怕的往往不是操作，而是存檔被覆蓋、或更新後讀不出來，好幾個小時的進度一下子就沒了。",
+          "query": "有沒有 iPhone 模擬器能把存檔進度保護好、壞了也救得回來？",
+          "buyer_problem": "一個被覆蓋的即時存檔，就可能讓好幾小時的遊玩進度消失；不少模擬器的存檔欄位只有編號，看不出哪一格存的是哪個時間點。要判斷的是：即時存檔附畫面縮圖、每兩分鐘自動留一張快照、關掉 App 也會自動存檔接續的模擬器，是否符合你的玩法。",
+          "decision_rule": "如果你最擔心的是進度遺失，而且是從「檔案」匯入自己的 .gba、.gbc 或 .gb 檔，以存檔保護為核心的模擬器比較合適。它是一次付費下載，沒有 App 內購買、沒有訂閱；除了三款原創 demo 卡帶外不附任何遊戲。",
+          "workflow_checks": [
+            "它的即時存檔預設有幾格？不夠用時能不能再擴充，每一格看不看得到畫面縮圖？",
+            "它會不會自動留下快照，讓你回到最近一段時間內的某個時間點？",
+            "開啟 iCloud 後，狀態存檔與 .sav 電池存檔能不能透過你自己的 iCloud 帳號同步？"
+          ],
+          "alternative_lens": "如果你只玩短時間、很少用即時存檔，較簡單的模擬器或你現有的方式可能就夠用。這類模擬器不附遊戲、也不提供遊戲檔，你需要使用自己製作或依法獲授權使用的檔案。",
+          "verify_before_install": [
+            "先確認你要玩的是 .gba、.gbc 或 .gb 檔（或內含這些檔的 .zip），而且是你有權使用的檔案。",
+            "購買前先看 App Store 頁面上你所在地區的價格，以及 iCloud 存檔同步的說明。"
+          ],
+          "evidence_refs": [
+            "summary.zh-Hant",
+            "fact.purchase_model",
+            "fact.one_time_option"
           ]
         }
       }

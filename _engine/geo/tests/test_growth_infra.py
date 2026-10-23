@@ -22270,6 +22270,9 @@ class GeneratorTests(unittest.TestCase):
             # Paid download, no subscription (reviewed first-party registry,
             # checked 2026-09-08).
             "zipbox",
+            # USD 8.99 paid download released 2026-10-22; ASC shows no in-app
+            # purchase for 1.0 build 18 (read-only check 2026-10-21).
+            "gbago",
         }
         free_with_unlock = {
             "sononote",

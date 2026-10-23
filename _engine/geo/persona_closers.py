@@ -153,6 +153,7 @@ SITUATIONS: dict[str, str] = {
     "claudeusagemini": "work",
     "duowallpaperstudio": "creative",
     "easyam": "utility",
+    "gbago": "utility",
 }
 DEFAULT_SITUATION = "utility"
 

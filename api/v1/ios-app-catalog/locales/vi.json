@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-23",
-  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
+  "content_digest": "aac94efeede0d530283473c3885f644bb2a6f3d8c5707c4a03083234cb0cd690",
   "locale": "vi",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 55,
+  "record_count": 56,
   "apps": [
     {
       "key": "notesstudio100",
@@ -194,8 +194,7 @@
         "đếm ngày",
         "thuế",
         "đơn giản",
-        "lịch sử",
-        "máy tính widget"
+        "lịch sử"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -356,8 +355,7 @@
         "đối thoại",
         "pháp",
         "đức",
-        "tây ban nha",
-        "câu giao tiếp hàng ngày"
+        "tây ban nha"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -517,6 +515,51 @@
       }
     },
     {
+      "key": "duowallpaperstudio",
+      "app_store_id": "6824946559",
+      "name": "Foldable Wallpaper Studio",
+      "summary": "Hình nền thường đặt lên điện thoại gập hay bị cắt mất chủ thể ở màn hình ngoài hoặc bị kéo giãn ở màn hình trong; mỗi cặp trong Foldable Wallpaper Studio được cắt từ cùng một khung cảnh: cận cảnh bên ngoài, toàn cảnh bên trong. Tất cả được thiết kế cho hai màn hình của iPhone Duo.",
+      "category": "photo-utility",
+      "search_terms": [
+        "điện thoại",
+        "đẹp",
+        "khóa",
+        "ảnh",
+        "tạo",
+        "tối giản",
+        "vũ trụ",
+        "phong cảnh",
+        "đồng hồ",
+        "đen",
+        "hoa",
+        "lịch",
+        "chủ đề",
+        "ngoài",
+        "đổi",
+        "áp"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/vn/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/vi/duowallpaperstudio.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "VND",
+        "formatted_price": "Miễn phí",
+        "storefront_url": "https://apps.apple.com/vn/app/id6824946559"
+      }
+    },
+    {
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money: Chi tiêu và ngân sách",
@@ -574,8 +617,7 @@
         "du lịch",
         "đơn giản",
         "nhật ký",
-        "smartwatch",
-        "chi tiêu du lịch"
+        "smartwatch"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -959,8 +1001,7 @@
         "luyện nghe",
         "trẻ em",
         "mẫu giáo",
-        "bài tập",
-        "phonics cho bé"
+        "bài tập"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1212,8 +1253,7 @@
         "tài liệu",
         "văn bản",
         "pdf",
-        "quét",
-        "che thông tin"
+        "quét"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1423,8 +1463,7 @@
         "35mm",
         "analog",
         "editor",
-        "filter",
-        "filter phim"
+        "filter"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1687,8 +1726,7 @@
         "screenshot",
         "sort",
         "tìm",
-        "kiếm",
-        "sắp xếp ảnh chụp màn hình"
+        "kiếm"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2140,8 +2178,7 @@
         "widget",
         "đồng hồ",
         "ổn định",
-        "cáp quang",
-        "chẩn đoán wifi"
+        "cáp quang"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -2303,9 +2340,7 @@
         "tar",
         "gz",
         "iso",
-        "aes",
-        "zip có mật khẩu",
-        "quản lý tệp nén"
+        "aes"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

@@ -1,14 +1,14 @@
 {
-  "abstained_pairs": 2679,
-  "app_count": 55,
-  "candidate_app_locale_pairs": 2750,
-  "creative_count": 55,
+  "abstained_pairs": 2727,
+  "app_count": 56,
+  "candidate_app_locale_pairs": 2800,
+  "creative_count": 56,
   "current_inventory": {
-    "app_keys_sha256": "bb2a1279adc005a6c0ba0b987ffebef95e3efc4df1e914bd049ef763d4a81ca6",
-    "copy_sha256": "e6eab4ab2ca795a3185fa97e8f83bf7565eee691b2577b4c63f23eb456618a31",
+    "app_keys_sha256": "3b8f236a1370422f5e0b445220a681cbd5a2739c29d98ede935c2d38abc2d39e",
+    "copy_sha256": "e84344460ef9fd2a48ae2fa2d97a2ff48bee2a7fa2de5c41ade50c1e6102a3b1",
     "missing_route_app_keys": [],
     "missing_route_app_keys_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-    "public_apps": 55
+    "public_apps": 56
   },
   "dataset": "Lumi Studio High-Intent Decision Routes",
   "deployment_state": "generated_not_deployed",
@@ -24,12 +24,12 @@
       "relative_path": "data/high-intent-decision-routes/conversion-contracts.schema.json"
     },
     {
-      "generated_sha256": "4595f77ee2593f1c9a215667b974503fa1ee33fa5b8086fc8bd22d05f5c38f1e",
+      "generated_sha256": "4c7835859956840f54bf023f5d4a4a5022e21db03bc0e8a149ded3090bf25bc5",
       "kind": "coverage_report",
       "relative_path": "data/high-intent-decision-routes/coverage.json"
     },
     {
-      "generated_sha256": "f7e36f23b544a68b6ceede0fa10b78db55d1650cd62d845063116307e6f0c539",
+      "generated_sha256": "6cedc00c1aa4b528a18793a5e8928b738947ce4d48c1e71ae04d801c26a0f8c2",
       "kind": "json_feed",
       "relative_path": "data/high-intent-decision-routes/feed.json"
     },
@@ -92,6 +92,11 @@
       "generated_sha256": "c11992631a5daa8a89645f60406ba290935937ae5e57d21a605e454f2a62afa9",
       "kind": "route_html",
       "relative_path": "en-US/decide/dbhalo/measure-room-noise-without-sending-audio-off-device.html"
+    },
+    {
+      "generated_sha256": "c03f38c8d2ba1c5e35ca6b838c3c112758f7e13b1be4c32a976d5b994f071f83",
+      "kind": "route_html",
+      "relative_path": "en-US/decide/duowallpaperstudio/wallpapers-that-fit-both-screens-of-a-foldable-iphone.html"
     },
     {
       "generated_sha256": "18bb1b323b2d554729643252e5b9ce681e14bcf9a25ca6984876c2963037072c",
@@ -334,7 +339,7 @@
       "relative_path": "ja/decide/unblurry/improve-soft-family-photo-realistically.html"
     },
     {
-      "generated_sha256": "4cb061de5318e7e8d13c537a65d242f296838f7b8f3269dedcb29d224c84089b",
+      "generated_sha256": "be2dffe65cd499244ff849343a214b643c1418008f4c6573e0a6e746b6eee67e",
       "kind": "sitemap",
       "relative_path": "sitemap-high-intent-decision-routes.xml"
     },
@@ -352,6 +357,11 @@
       "generated_sha256": "5cebc9ccb1aa3ccd4a79ff1e1bba51f8579db40fd603312374e1d7e13c925f4a",
       "kind": "route_html",
       "relative_path": "zh-Hant/decide/cyca/private-cycle-patterns-without-account.html"
+    },
+    {
+      "generated_sha256": "831da62a8ae5fdab2f899afc74ab219d64ac1670c2809f2211c75a7008272991",
+      "kind": "route_html",
+      "relative_path": "zh-Hant/decide/duowallpaperstudio/wallpapers-that-fit-both-screens-of-a-foldable-iphone.html"
     },
     {
       "generated_sha256": "1b4d1a083a02ac06b311513f658d9bdabaa54a007538aa7ea8814f38920ab1e8",
@@ -396,17 +406,17 @@
   ],
   "fallback_records": 0,
   "inventory": {
-    "app_keys_sha256": "bb2a1279adc005a6c0ba0b987ffebef95e3efc4df1e914bd049ef763d4a81ca6",
-    "copy_sha256": "e6eab4ab2ca795a3185fa97e8f83bf7565eee691b2577b4c63f23eb456618a31",
+    "app_keys_sha256": "3b8f236a1370422f5e0b445220a681cbd5a2739c29d98ede935c2d38abc2d39e",
+    "copy_sha256": "e84344460ef9fd2a48ae2fa2d97a2ff48bee2a7fa2de5c41ade50c1e6102a3b1",
     "official_locales_sha256": "e26dabf9370286ad8fd12034270cfcade92b2db4f4a0eecc19324203ce84d5bd",
-    "public_apps": 55,
+    "public_apps": 56,
     "relative_path": "data/verified-ios-app-finder-catalog.json"
   },
-  "manifest_digest": "f6c0f5e52764c1ba64d4c6ca1563105f0e434e06d8f7acbf638ec5e49a6be0bd",
+  "manifest_digest": "53419c065a547d683a633b779e6beb9964d61ee9a3f4a508058c44e4f5b870de",
   "owner": "high_intent_decision_routes",
-  "release_contract_digest": "f824f980dd224b942d5187a4c4b578970e16df1dc840ca21789c79474661a403",
+  "release_contract_digest": "036053e87189fea69b239fd9f0408150d1a509bf8eaf6c6a0e464ebb46e04790",
   "release_state": "exact",
-  "route_count": 71,
+  "route_count": 73,
   "routes": [
     {
       "app_key": "mochidonestamp",
@@ -611,6 +621,23 @@
       "route_id": "en-US:dbhalo:measure-room-noise-without-sending-audio-off-device",
       "route_slug": "measure-room-noise-without-sending-audio-off-device",
       "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/dbhalo/measure-room-noise-without-sending-audio-off-device.html"
+    },
+    {
+      "app_key": "duowallpaperstudio",
+      "app_store_id": "6824946559",
+      "app_store_url": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "fcd9b996ff9a3c8fe8749f4683d226d0a7acd73633f02ed515044b364e73067a",
+      "creative_id": "duowallpaperstudio:wallpapers-that-fit-both-screens-of-a-foldable-iphone:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "en-US",
+      "output_sha256": "c03f38c8d2ba1c5e35ca6b838c3c112758f7e13b1be4c32a976d5b994f071f83",
+      "record_digest": "518804b7ca64cc524bd71e5b188256c01d994f73d6fed2cce41224b1243cbbdc",
+      "relative_path": "en-US/decide/duowallpaperstudio/wallpapers-that-fit-both-screens-of-a-foldable-iphone.html",
+      "route_id": "en-US:duowallpaperstudio:wallpapers-that-fit-both-screens-of-a-foldable-iphone",
+      "route_slug": "wallpapers-that-fit-both-screens-of-a-foldable-iphone",
+      "url": "https://open.cait518.cc/ios-app-guide/en-US/decide/duowallpaperstudio/wallpapers-that-fit-both-screens-of-a-foldable-iphone.html"
     },
     {
       "app_key": "easyam",
@@ -1480,6 +1507,23 @@
       "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/cyca/private-cycle-patterns-without-account.html"
     },
     {
+      "app_key": "duowallpaperstudio",
+      "app_store_id": "6824946559",
+      "app_store_url": "https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_ask&mt=8",
+      "campaign_token": "geo_ask",
+      "content_type": "problem_aware",
+      "creative_digest": "fcd9b996ff9a3c8fe8749f4683d226d0a7acd73633f02ed515044b364e73067a",
+      "creative_id": "duowallpaperstudio:wallpapers-that-fit-both-screens-of-a-foldable-iphone:problem_aware",
+      "intent_type": "problem_aware",
+      "locale": "zh-Hant",
+      "output_sha256": "831da62a8ae5fdab2f899afc74ab219d64ac1670c2809f2211c75a7008272991",
+      "record_digest": "a75036a93fa93eacbf110320f187a6396f8940d0746b0f370984b7c230dbc376",
+      "relative_path": "zh-Hant/decide/duowallpaperstudio/wallpapers-that-fit-both-screens-of-a-foldable-iphone.html",
+      "route_id": "zh-Hant:duowallpaperstudio:wallpapers-that-fit-both-screens-of-a-foldable-iphone",
+      "route_slug": "wallpapers-that-fit-both-screens-of-a-foldable-iphone",
+      "url": "https://open.cait518.cc/ios-app-guide/zh-Hant/decide/duowallpaperstudio/wallpapers-that-fit-both-screens-of-a-foldable-iphone.html"
+    },
+    {
       "app_key": "easyam",
       "app_store_id": "6821790092",
       "app_store_url": "https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=geo_ask&mt=8",
@@ -1618,5 +1662,5 @@
   ],
   "schema_version": 2,
   "site": "https://open.cait518.cc/ios-app-guide",
-  "source_contract_digest": "eb40121547323618d73daa6c58a5b3cf9eb47995eb0c89a89124273f035dfdb4"
+  "source_contract_digest": "39fecd7960dc35cd2db106c058ca5fe679ee6b2d9a6383654553e8146991131c"
 }

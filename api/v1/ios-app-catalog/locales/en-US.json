@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-23",
-  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
+  "content_digest": "aac94efeede0d530283473c3885f644bb2a6f3d8c5707c4a03083234cb0cd690",
   "locale": "en-US",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 55,
+  "record_count": 56,
   "apps": [
     {
       "key": "notesstudio100",
@@ -489,8 +489,7 @@
         "schedule",
         "wake",
         "theme",
-        "digital",
-        "holiday alarm clock"
+        "digital"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -511,6 +510,51 @@
         "currency": "USD",
         "formatted_price": "Free",
         "storefront_url": "https://apps.apple.com/us/app/id6821790092"
+      }
+    },
+    {
+      "key": "duowallpaperstudio",
+      "app_store_id": "6824946559",
+      "name": "Foldable Wallpaper Studio",
+      "summary": "Wallpapers made in pairs for the two screens of iPhone Duo. Close it: a close-up on the cover screen. Open it: the whole scene on the inner screen, both cut from the same original artwork. 300+ original pairs in 14 styles · 5 widgets drawn with your wallpaper · your own photos as pairs · no ads, no account, no data collected.",
+      "category": "photo-utility",
+      "search_terms": [
+        "cute",
+        "hd",
+        "lock",
+        "home",
+        "background",
+        "photo",
+        "maker",
+        "minimal",
+        "amoled",
+        "clock",
+        "battery",
+        "black",
+        "3d",
+        "fold",
+        "aesthetic",
+        "cover"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/us/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/en-US/duowallpaperstudio.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "USD",
+        "formatted_price": "Free",
+        "storefront_url": "https://apps.apple.com/us/app/id6824946559"
       }
     },
     {
@@ -1239,10 +1283,7 @@
         "notes",
         "errands",
         "watch",
-        "themes",
-        "checklist",
-        "todo list",
-        "to do list"
+        "themes"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1262,8 +1303,8 @@
         "price": "0",
         "currency": "USD",
         "formatted_price": "Free",
-        "rating_value": 4.3,
-        "rating_count": 35,
+        "rating_value": 4.2,
+        "rating_count": 34,
         "storefront_url": "https://apps.apple.com/us/app/id6785004775"
       }
     },
@@ -1285,8 +1326,7 @@
         "recurring",
         "household",
         "days",
-        "since",
-        "when did i last do"
+        "since"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1375,8 +1415,7 @@
         "pdf",
         "notes",
         "pptx",
-        "csv",
-        "one page summary"
+        "csv"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

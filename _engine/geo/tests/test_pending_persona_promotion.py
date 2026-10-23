@@ -22,7 +22,7 @@ LAUNCH_CANDIDATES = {
     "gbago": ("6804564400", "GBAGo"),
     "studydown": ("6807335593", "Studydown"),
     "claudeusagemini": ("6818607603", "UsageNow"),
-    "duowallpaperstudio": ("6824946559", "Duo Wallpaper Studio"),
+    "duowallpaperstudio": ("6824946559", "Foldable Wallpaper Studio"),
 }
 FIELDS = {"query", "guide_title", "triggers", "persona", "lead", "paras",
           "look", "steps", "fits", "faq"}

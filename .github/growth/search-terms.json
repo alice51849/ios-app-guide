@@ -2,11 +2,11 @@
  "apps": {
   "aibriefpack": {
    "RU": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "ru",
     "paid": false,
-    "rank": 5,
-    "results": 6,
+    "rank": 6,
+    "results": 7,
     "term": "краткое содержание pdf",
     "weight": 0.1
    },
@@ -22,7 +22,7 @@
   },
   "aim990": {
    "CN": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "zh-Hans",
     "paid": false,
     "rank": 3,
@@ -49,11 +49,11 @@
     "weight": 0.3
    },
    "RU": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "ru",
     "paid": false,
     "rank": 7,
-    "results": 8,
+    "results": 7,
     "term": "toeic аудирование",
     "weight": 0.1
    }
@@ -96,10 +96,10 @@
     "weight": 0.3
    },
    "RU": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "ru",
     "paid": false,
-    "rank": 8,
+    "rank": 7,
     "results": 16,
     "term": "емкость батареи",
     "weight": 0.1
@@ -179,11 +179,11 @@
     "weight": 0.3
    },
    "RU": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "ru",
     "paid": false,
     "rank": 4,
-    "results": 4,
+    "results": 6,
     "term": "расход claude",
     "weight": 0.1
    },
@@ -226,11 +226,11 @@
     "weight": 0.2
    },
    "CN": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "zh-Hans",
     "paid": false,
     "rank": 6,
-    "results": 56,
+    "results": 55,
     "term": "ats 简历",
     "weight": 0.45
    },
@@ -282,11 +282,11 @@
   },
   "dailymate": {
    "GB": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "en",
     "paid": false,
     "rank": 4,
-    "results": 150,
+    "results": 149,
     "term": "everyday phrases",
     "weight": 0.45
    }
@@ -321,6 +321,15 @@
     "term": "réveil jours fériés",
     "weight": 0.3
    },
+   "GB": {
+    "date": "2026-10-23",
+    "locale": "en",
+    "paid": false,
+    "rank": 6,
+    "results": 158,
+    "term": "holiday alarm clock",
+    "weight": 0.45
+   },
    "KR": {
     "date": "2026-10-22",
     "locale": "ko",
@@ -330,6 +339,15 @@
     "term": "공휴일 알람",
     "weight": 0.3
    },
+   "RU": {
+    "date": "2026-10-23",
+    "locale": "ru",
+    "paid": false,
+    "rank": 4,
+    "results": 5,
+    "term": "будильник сменный график",
+    "weight": 0.1
+   },
    "TW": {
     "date": "2026-10-22",
     "locale": "zh-Hant",
@@ -338,6 +356,15 @@
     "results": 26,
     "term": "假日不響 鬧鐘",
     "weight": 0.3
+   },
+   "US": {
+    "date": "2026-10-23",
+    "locale": "en",
+    "paid": false,
+    "rank": 7,
+    "results": 149,
+    "term": "holiday alarm clock",
+    "weight": 1.0
    }
   },
   "gmoney": {
@@ -373,11 +400,11 @@
     "weight": 0.3
    },
    "RU": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "ru",
     "paid": false,
     "rank": 5,
-    "results": 11,
+    "results": 10,
     "term": "импульсивные покупки",
     "weight": 0.1
    },
@@ -431,11 +458,11 @@
     "weight": 0.3
    },
    "GB": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "en",
     "paid": false,
-    "rank": 8,
-    "results": 56,
+    "rank": 7,
+    "results": 57,
     "term": "bopomofo",
     "weight": 0.45
    },
@@ -458,7 +485,7 @@
     "weight": 0.3
    },
    "RU": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "ru",
     "paid": false,
     "rank": 2,
@@ -476,11 +503,11 @@
     "weight": 0.1
    },
    "US": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "en",
     "paid": true,
     "rank": 10,
-    "results": 68,
+    "results": 69,
     "term": "bopomofo",
     "weight": 1.0
    }
@@ -505,7 +532,7 @@
     "weight": 0.3
    },
    "RU": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "ru",
     "paid": false,
     "rank": 5,
@@ -516,19 +543,19 @@
   },
   "lumimission": {
    "CN": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "zh-Hans",
     "paid": false,
-    "rank": 5,
-    "results": 53,
+    "rank": 4,
+    "results": 54,
     "term": "家务 表",
     "weight": 0.45
    },
    "RU": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "ru",
     "paid": false,
-    "rank": 3,
+    "rank": 1,
     "results": 4,
     "term": "таблица поощрений",
     "weight": 0.1
@@ -554,7 +581,7 @@
     "weight": 0.4
    },
    "RU": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "ru",
     "paid": false,
     "rank": 9,
@@ -592,11 +619,11 @@
     "weight": 0.6
    },
    "RU": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "ru",
     "paid": false,
     "rank": 8,
-    "results": 12,
+    "results": 13,
     "term": "замазать данные",
     "weight": 0.1
    },
@@ -621,10 +648,10 @@
     "weight": 0.2
    },
    "GB": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "en",
     "paid": false,
-    "rank": 2,
+    "rank": 1,
     "results": 185,
     "term": "cute to do list",
     "weight": 0.45
@@ -639,7 +666,7 @@
     "weight": 0.3
    },
    "RU": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "ru",
     "paid": false,
     "rank": 1,
@@ -657,11 +684,11 @@
     "weight": 0.1
    },
    "US": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "en",
     "paid": true,
     "rank": 10,
-    "results": 187,
+    "results": 188,
     "term": "checklist",
     "weight": 1.0
    },
@@ -695,11 +722,11 @@
     "weight": 0.3
    },
    "RU": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "ru",
     "paid": false,
     "rank": 4,
-    "results": 6,
+    "results": 7,
     "term": "когда последний раз",
     "weight": 0.1
    },
@@ -723,6 +750,15 @@
    }
   },
   "moneytag": {
+   "CN": {
+    "date": "2026-10-23",
+    "locale": "zh-Hans",
+    "paid": false,
+    "rank": 10,
+    "results": 31,
+    "term": "项目支出",
+    "weight": 0.45
+   },
    "DE": {
     "date": "2026-10-21",
     "locale": "de",
@@ -744,10 +780,10 @@
   },
   "onepageppt": {
    "CN": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "zh-Hans",
     "paid": false,
-    "rank": 2,
+    "rank": 3,
     "results": 10,
     "term": "一页 总结",
     "weight": 0.45
@@ -824,10 +860,10 @@
   },
   "studydown": {
    "RU": {
-    "date": "2026-10-20",
+    "date": "2026-10-23",
     "locale": "ru",
     "paid": false,
-    "rank": 4,
+    "rank": 10,
     "results": 18,
     "term": "учет времени учебы",
     "weight": 0.1
@@ -947,7 +983,7 @@
    }
   }
  },
- "as_of": "2026-10-22",
+ "as_of": "2026-10-23",
  "fresh_days": 7,
  "schema": "lumi.search-terms/v1",
  "source": "00_GrowthEngine data/rank_watch/history.csv + reports/funnel-latest.json",

@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-23",
-  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
+  "content_digest": "aac94efeede0d530283473c3885f644bb2a6f3d8c5707c4a03083234cb0cd690",
   "locale": "th",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 55,
+  "record_count": 56,
   "apps": [
     {
       "key": "notesstudio100",
@@ -27,8 +27,7 @@
         "เลคเชอร์",
         "วาดรูป",
         "ออฟไลน์",
-        "มหาลัย",
-        "จดโน้ตด้วยลายมือ"
+        "มหาลัย"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -68,9 +67,7 @@
         "บริบท",
         "โน้ต",
         "แชท",
-        "สรุปให้",
-        "พรอมต์ ai",
-        "จัดการพรอมต์"
+        "สรุปให้"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -191,8 +188,7 @@
         "วันทำการ",
         "ค่าน้ำมัน",
         "ส่วนลด",
-        "วิศวะ",
-        "เครื่องคิดเลข วิดเจ็ต"
+        "วิศวะ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -311,9 +307,7 @@
         "ไดอารี่",
         "มีลูก",
         "ปวดประจำเดือน",
-        "คำนวณ",
-        "ติดตามประจำเดือน",
-        "รอบเดือน"
+        "คำนวณ"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -505,6 +499,51 @@
       }
     },
     {
+      "key": "duowallpaperstudio",
+      "app_store_id": "6824946559",
+      "name": "Foldable Wallpaper Studio",
+      "summary": "วอลเปเปอร์ภาพเดียวมักไม่พอดีกับทั้งสองจอของมือถือจอพับได้ Foldable Wallpaper Studio จึงมอบวอลเปเปอร์คู่ที่ตัดจากฉากเดียวกัน ภาพโคลสอัปสำหรับจอนอก และภาพทั้งฉากสำหรับจอใน ออกแบบมาสำหรับสองหน้าจอของ iPhone Duo และยังทำคู่จากรูปถ่ายของคุณเองได้ด้วย",
+      "category": "photo-utility",
+      "search_terms": [
+        "วิดเจ็ต",
+        "ภาพ",
+        "พื้นหลัง",
+        "แต่ง",
+        "หน้าจอ",
+        "ล็อค",
+        "นาฬิกา",
+        "น่ารัก",
+        "มินิมอล",
+        "สีดำ",
+        "อวกาศ",
+        "ธรรมชาติ",
+        "ดอกไม้",
+        "รูป",
+        "ธีม",
+        "ล็อก"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/th/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/th/duowallpaperstudio.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "THB",
+        "formatted_price": "ฟรี",
+        "storefront_url": "https://apps.apple.com/th/app/id6824946559"
+      }
+    },
+    {
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money: รายจ่ายและงบประมาณ",
@@ -519,8 +558,7 @@
         "การเงิน",
         "จัดการเงิน",
         "กระเป๋าเงิน",
-        "คำนวณเงิน",
-        "บันทึกค่าใช้จ่ายเที่ยว"
+        "คำนวณเงิน"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -923,8 +961,7 @@
         "ปฐมวัย",
         "เกมเด็ก",
         "เด็กเล็ก",
-        "ออกเสียง",
-        "โฟนิกส์เด็ก"
+        "ออกเสียง"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1090,8 +1127,7 @@
         "อนุบาล",
         "ไปโรงเรียน",
         "เข้านอน",
-        "ตื่นนอน",
-        "กิจวัตรก่อนนอน"
+        "ตื่นนอน"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1261,9 +1297,7 @@
         "ช่วงเวลา",
         "ประวัติ",
         "วิดเจ็ต",
-        "ล้างแอร์",
-        "บันทึกงานบ้าน",
-        "เตือนงานบ้าน"
+        "ล้างแอร์"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1388,8 +1422,7 @@
         "เกรน",
         "แสงรั่ว",
         "ผิวเนียน",
-        "35mm",
-        "ฟิลเตอร์ฟิล์ม"
+        "35mm"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1509,9 +1542,7 @@
         "ช้อปปิ้ง",
         "ของที่อยากได้",
         "โน้ต",
-        "ค้นหา",
-        "บุ๊กมาร์ก",
-        "อ่านทีหลัง"
+        "ค้นหา"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1787,8 +1818,7 @@
         "oled",
         "นาฬิกาปลุก",
         "ธีมนาฬิกา",
-        "จอเบิร์น",
-        "นาฬิกาพลิก"
+        "จอเบิร์น"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1910,8 +1940,7 @@
         "ที่พัก",
         "แจ้งเตือน",
         "พยากรณ์อากาศ",
-        "นับถอยหลัง",
-        "แผนเที่ยว"
+        "นับถอยหลัง"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2246,8 +2275,7 @@
         "tar",
         "gz",
         "iso",
-        "aes",
-        "แตกไฟล์ 7z"
+        "aes"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

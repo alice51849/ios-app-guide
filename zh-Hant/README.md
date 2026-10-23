@@ -4,7 +4,7 @@
 
 第一方目錄，說明每款 App 的適合對象、想完成的任務，以及 App Store 下載入口。
 
-由開發者撰寫的搜尋意圖，涵蓋 55 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
+由開發者撰寫的搜尋意圖，涵蓋 56 款已驗證上架的 iOS App 與 Apple 官方 50 個地區語系。
 
 **地區語系:** [ar-SA](../ar-SA/) · [bn-BD](../bn-BD/) · [ca](../ca/) · [cs](../cs/) · [da](../da/) · [de-DE](../de-DE/) · [el](../el/) · [en-AU](../en-AU/) · [en-CA](../en-CA/) · [en-GB](../en-GB/) · [en-US](../en-US/) · [es-ES](../es-ES/) · [es-MX](../es-MX/) · [fi](../fi/) · [fr-CA](../fr-CA/) · [fr-FR](../fr-FR/) · [gu-IN](../gu-IN/) · [he](../he/) · [hi](../hi/) · [hr](../hr/) · [hu](../hu/) · [id](../id/) · [it](../it/) · [ja](../ja/) · [kn-IN](../kn-IN/) · [ko](../ko/) · [ml-IN](../ml-IN/) · [mr-IN](../mr-IN/) · [ms](../ms/) · [nl-NL](../nl-NL/) · [no](../no/) · [or-IN](../or-IN/) · [pa-IN](../pa-IN/) · [pl](../pl/) · [pt-BR](../pt-BR/) · [pt-PT](../pt-PT/) · [ro](../ro/) · [ru](../ru/) · [sk](../sk/) · [sl-SI](../sl-SI/) · [sv](../sv/) · [ta-IN](../ta-IN/) · [te-IN](../te-IN/) · [th](../th/) · [tr](../tr/) · [uk](../uk/) · [ur-PK](../ur-PK/) · [vi](../vi/) · [zh-Hans](../zh-Hans/) · **zh-Hant**
 
@@ -101,6 +101,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 | **DailyMate Lite：開口練習** | DailyMate Lite：開口練習 — 出國旅遊・點餐問路・50種語言 \| iOS App | 想開口時，不必先在腦中拼湊單字。DailyMate Lite 將旅行、工作、餐飲、健康等生活情境整理成簡短提示與自然回覆，讓你用完整的一來一往練習 50 種語言。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/dailymatelite.html) | [在 App Store 取得 DailyMate Lite：開口練習](https://apps.apple.com/tw/app/id6794725568?pt=118326163&ct=geo_pick&mt=8) |
 | **dB Halo** | 具頻譜與噪音劑量功能的 iPhone 聲音測量 App | dB Halo — 從家庭工作室與空調低鳴，到健身房或演唱會場地，dB Halo 幫你看懂聲音，資料不會離開你的裝置。免費開始 · 一次買斷 · 沒有訂閱。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/sound-meter-app-for-iphone-with-frequency-spectrum-and-noise-dose.html) | [前往 App Store 下載 dB Halo →](https://apps.apple.com/tw/app/id6806826699?pt=118326163&ct=geo_pick&mt=8) |
 | **EasyAM: 國定假日、連假不響的智慧鬧鐘** | EasyAM: 國定假日、連假不響的智慧鬧鐘 — 明早要不要響？上班日、補班日照響，請假、特休自動跳過 \| iOS App | 明天早上的鬧鐘，到底要不要響？EasyAM 每天幫你判斷：上班日照響，國定假日和你的休假安靜不響，遇到補班日也會照常叫你起床。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/easyam.html) | [在 App Store 取得 EasyAM: 國定假日、連假不響的智慧鬧鐘](https://apps.apple.com/tw/app/id6821790092?pt=118326163&ct=geo_pick&mt=8) |
+| **Foldable Wallpaper Studio** | Foldable Wallpaper Studio — 摺疊手機雙螢幕高畫質桌布，外螢幕內螢幕成對＋主畫面美化小工具 \| iOS App | 專為 iPhone Duo 雙螢幕打造的成對桌布：合上，外螢幕是特寫；展開，內螢幕是整片全景，兩張出自同一幅原創畫面。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/duowallpaperstudio.html) | [在 App Store 取得 Foldable Wallpaper Studio](https://apps.apple.com/tw/app/id6824946559?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money** | 最佳無訂閱旅遊預算追蹤應用程式 iPhone | 旅途中你需要一款能在無資料國家離線使用、支援多貨幣且不需帳號的預算追蹤器 — 按旅程分類讓每次假期獨立。這個缺口，就是 G+Money 想補上的。 | 付費下載 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-travel-budget-tracker-app-no-subscription-iphone.html) | [在 App Store 取得 G+Money →](https://apps.apple.com/tw/app/id6755782939?pt=118326163&ct=geo_pick&mt=8) |
 | **G+Money Lite** | iPhone 最好用的免費旅遊記帳與匯率換算工具 | 有用的免費旅費試用，應該讓你走完從當地貨幣到本國貨幣的完整流程，而不只是一本付費後才有用的空白帳簿。G+Money Lite——聰明的旅行匯率與記帳工具——每筆花費都記下，並以本國貨幣顯示。 | 免費開始使用 · 一次購買解鎖 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/answers/best-free-travel-expense-tracker-with-currency-conversion-for-iphone.html) | [前往 App Store 取得 G+Money Lite →](https://apps.apple.com/tw/app/id6793436548?pt=118326163&ct=geo_pick&mt=8) |
 | **GBAGo: 視覺存檔** | GBAGo: 視覺存檔 — 復原地圖 · 自動快照 \| iOS App | 除 Lumi Studio 自製的三款原創 demo 卡帶外，GBAGo 不包含遊戲或內容目錄。請僅從「檔案」匯入由你自行創作，或依適用法律獲授權使用的檔案。 | 付費下載 | [指南](https://open.cait518.cc/ios-app-guide/zh-Hant/gbago.html) | [在 App Store 取得 GBAGo: 視覺存檔](https://apps.apple.com/tw/app/id6804564400?pt=118326163&ct=geo_pick&mt=8) |
@@ -147,7 +148,7 @@ gemini mcp add --scope user lumi-app-finder npx -y https://github.com/alice51849
 
 ## 下載完整資料集
 
-JSON、JSONL 與 CSV 格式皆包含相同的 2,750 筆紀錄。
+JSON、JSONL 與 CSV 格式皆包含相同的 2,800 筆紀錄。
 
 [JSON](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.json) · [JSONL](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.jsonl) · [CSV](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.csv) · [MLCommons Croissant 1.1](https://open.cait518.cc/ios-app-guide/data/lumi-studio-publisher-search-intent-catalog.croissant.jsonld)
 

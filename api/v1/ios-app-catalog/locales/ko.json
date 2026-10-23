@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-23",
-  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
+  "content_digest": "aac94efeede0d530283473c3885f644bb2a6f3d8c5707c4a03083234cb0cd690",
   "locale": "ko",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 55,
+  "record_count": 56,
   "apps": [
     {
       "key": "notesstudio100",
@@ -182,8 +182,7 @@
         "충전 관리",
         "충전 구간",
         "충전 속도",
-        "데이터 내보내기",
-        "배터리"
+        "데이터 내보내기"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -615,9 +614,7 @@
         "요일",
         "디지털",
         "해외",
-        "당직",
-        "공휴일 알람",
-        "평일 알람"
+        "당직"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -638,6 +635,63 @@
         "currency": "KRW",
         "formatted_price": "무료",
         "storefront_url": "https://apps.apple.com/kr/app/id6821790092"
+      }
+    },
+    {
+      "key": "duowallpaperstudio",
+      "app_store_id": "6824946559",
+      "name": "Foldable Wallpaper Studio",
+      "summary": "iPhone Duo의 커버 화면과 메인 화면을 위한 세트 배경화면. 접으면 커버 화면에 클로즈업, 펼치면 메인 화면에 같은 장면의 전경이 펼쳐집니다. 14가지 스타일 300세트 이상 · 고른 배경화면으로 그려지는 위젯 5종 · 내 사진으로 세트 만들기 · 광고·계정·데이터 수집 없음.",
+      "category": "photo-utility",
+      "search_terms": [
+        "바탕화면",
+        "만들기",
+        "사이즈",
+        "고화질",
+        "잠금화면",
+        "홈화면",
+        "사진",
+        "감성",
+        "귀여운",
+        "예쁜",
+        "미니멀",
+        "심플",
+        "꾸미기",
+        "우주",
+        "야경",
+        "풍경",
+        "꽃",
+        "가을",
+        "접는폰",
+        "밤하늘",
+        "일러스트",
+        "시계",
+        "달력",
+        "배터리",
+        "노을",
+        "문구",
+        "글귀",
+        "테마"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/kr/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/ko/duowallpaperstudio.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "KRW",
+        "formatted_price": "무료",
+        "storefront_url": "https://apps.apple.com/kr/app/id6824946559"
       }
     },
     {
@@ -1037,10 +1091,7 @@
         "6세",
         "7세",
         "5세",
-        "중국어학습",
-        "유아 중국어",
-        "중국어 발음 어린이",
-        "어린이 중국어"
+        "중국어학습"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1251,8 +1302,7 @@
         "5세",
         "연산",
         "숫자",
-        "사칙연산",
-        "수학 놀이"
+        "사칙연산"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1473,8 +1523,7 @@
         "일기예보",
         "눈",
         "옷",
-        "여행",
-        "옷차림 날씨"
+        "여행"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1636,8 +1685,7 @@
         "교체주기",
         "화분",
         "빨래",
-        "기한",
-        "마지막 기록"
+        "기한"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2581,9 +2629,7 @@
         "어플",
         "HD",
         "업스케일러",
-        "수정",
-        "흐린 사진 복구",
-        "사진 선명하게"
+        "수정"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2684,8 +2730,7 @@
         "레이턴시",
         "응답시간",
         "연결상태",
-        "사이트확인",
-        "인터넷 연결 확인"
+        "사이트확인"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,

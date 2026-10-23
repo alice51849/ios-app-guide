@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-23",
-  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
+  "content_digest": "aac94efeede0d530283473c3885f644bb2a6f3d8c5707c4a03083234cb0cd690",
   "locale": "de-DE",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 55,
+  "record_count": 56,
   "apps": [
     {
       "key": "notesstudio100",
@@ -140,8 +140,7 @@
         "Ladeschonung",
         "Ladebereich",
         "Laderate",
-        "Daten exportieren",
-        "akku kapazität"
+        "Daten exportieren"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -479,6 +478,48 @@
       }
     },
     {
+      "key": "duowallpaperstudio",
+      "app_store_id": "6824946559",
+      "name": "Foldable Wallpaper Studio",
+      "summary": "Hintergrundbilder als Paar für beide Displays des iPhone Duo: zugeklappt ein Ausschnitt auf dem Außendisplay, aufgeklappt die ganze Szene auf dem Innendisplay, aus demselben Original. Über 300 Paare in 14 Stilen · 5 Widgets mit deinem Hintergrund · Paare aus eigenen Fotos · ohne Werbung, Konto oder Datensammlung.",
+      "category": "photo-utility",
+      "search_terms": [
+        "sperrbildschirm",
+        "hintergrund",
+        "handy",
+        "erstellen",
+        "süße",
+        "foto",
+        "uhr",
+        "akku",
+        "kalender",
+        "amoled",
+        "pink",
+        "girly",
+        "tapete"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/de/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/de-DE/duowallpaperstudio.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "EUR",
+        "formatted_price": "Kostenlos",
+        "storefront_url": "https://apps.apple.com/de/app/id6824946559"
+      }
+    },
+    {
       "key": "gmoney",
       "app_store_id": "6755782939",
       "name": "G+Money: Ausgaben und Budget",
@@ -533,8 +574,7 @@
         "urlaub",
         "reise",
         "tagesbudget",
-        "smartwatch",
-        "urlaubsbudget"
+        "smartwatch"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -613,8 +653,7 @@
         "stunden",
         "arbeitszeit",
         "sparziel",
-        "ausgaben",
-        "impulskäufe"
+        "ausgaben"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -692,9 +731,7 @@
         "Flughafen",
         "Neon",
         "Banner",
-        "Fan",
-        "abholschild flughafen",
-        "konzert schild"
+        "Fan"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -813,10 +850,7 @@
         "vorschule",
         "grundschule",
         "zweisprachig",
-        "quiz",
-        "zhuyin lernen",
-        "bopomofo",
-        "mandarin kinder"
+        "quiz"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1052,8 +1086,7 @@
         "kita",
         "vorschule",
         "selbstständigkeit",
-        "gewohnheiten",
-        "abendroutine kinder"
+        "gewohnheiten"
       ],
       "purchase_model": "paid_upfront",
       "one_time_option": true,
@@ -1810,8 +1843,7 @@
         "reisepass",
         "stempel",
         "erinnerungen",
-        "kleinkind",
-        "reisen mit kindern"
+        "kleinkind"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1931,8 +1963,7 @@
         "ki",
         "foto",
         "scharf",
-        "restaurieren",
-        "unscharf schärfen"
+        "restaurieren"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2058,8 +2089,7 @@
         "hotspot",
         "anbieter",
         "modem",
-        "hilfe",
-        "wlan kein internet"
+        "hilfe"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

@@ -74,13 +74,13 @@
       "uniqueItems": true
     },
     "app_count": {
-      "const": 55
+      "const": 56
     },
     "locale_count": {
       "const": 50
     },
     "record_count": {
-      "const": 2750
+      "const": 2800
     },
     "locales": {
       "type": "array",
@@ -223,8 +223,8 @@
     },
     "records": {
       "type": "array",
-      "minItems": 2750,
-      "maxItems": 2750,
+      "minItems": 2800,
+      "maxItems": 2800,
       "items": {
         "$ref": "#/$defs/record"
       }
@@ -365,6 +365,7 @@
             "dailymate",
             "dailymatelite",
             "dbhalo",
+            "duowallpaperstudio",
             "easyam",
             "gbago",
             "gmoney",

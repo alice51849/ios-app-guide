@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-23",
-  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
+  "content_digest": "aac94efeede0d530283473c3885f644bb2a6f3d8c5707c4a03083234cb0cd690",
   "locale": "he",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 55,
+  "record_count": 56,
   "apps": [
     {
       "key": "notesstudio100",
@@ -526,6 +526,53 @@
         "currency": "ILS",
         "formatted_price": "בחינם",
         "storefront_url": "https://apps.apple.com/il/app/id6821790092"
+      }
+    },
+    {
+      "key": "duowallpaperstudio",
+      "app_store_id": "6824946559",
+      "name": "Foldable Wallpaper Studio",
+      "summary": "תמונה אחת נחתכת אחרת בכל מסך של טלפון מתקפל: Foldable Wallpaper Studio נותן לכם זוגות רקעים שתוכננו לשני המסכים של iPhone Duo, תקריב למסך החיצוני והסצנה כולה למסך הפנימי, מתוך אותה תמונה.",
+      "category": "photo-utility",
+      "search_terms": [
+        "טפטים",
+        "רקע",
+        "זוגות",
+        "מסך",
+        "נעילה",
+        "בית",
+        "תמונות",
+        "שחור",
+        "חמודים",
+        "אסתטיים",
+        "יפים",
+        "מגניבים",
+        "כוכבים",
+        "נופים",
+        "שעון",
+        "פרחים",
+        "3d",
+        "hd"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/il/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/he/duowallpaperstudio.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "ILS",
+        "formatted_price": "בחינם",
+        "storefront_url": "https://apps.apple.com/il/app/id6824946559"
       }
     },
     {

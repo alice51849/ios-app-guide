@@ -2,11 +2,11 @@
   "$schema": "https://open.cait518.cc/ios-app-guide/api/v1/ios-app-catalog/catalog.schema.json",
   "api_version": "1.2.0",
   "date_modified": "2026-10-23",
-  "content_digest": "a6ff8651a4ca213956f9cecec8d2d98f3a72456927ef966d484ab7e59fa02516",
+  "content_digest": "aac94efeede0d530283473c3885f644bb2a6f3d8c5707c4a03083234cb0cd690",
   "locale": "pt-BR",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "ordering": "alphabetical_by_app_name_not_a_ranking",
-  "record_count": 55,
+  "record_count": 56,
   "apps": [
     {
       "key": "notesstudio100",
@@ -26,8 +26,7 @@
         "gravação",
         "aula",
         "desenho",
-        "offline",
-        "notas à mão"
+        "offline"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -266,8 +265,7 @@
         "aprendiz",
         "profissional",
         "trabalho",
-        "simples",
-        "currículo ats"
+        "simples"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -387,8 +385,7 @@
         "aeroporto",
         "restaurante",
         "hotel",
-        "offline",
-        "guia de conversação"
+        "offline"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -492,6 +489,49 @@
         "currency": "BRL",
         "formatted_price": "Grátis",
         "storefront_url": "https://apps.apple.com/br/app/id6821790092"
+      }
+    },
+    {
+      "key": "duowallpaperstudio",
+      "app_store_id": "6824946559",
+      "name": "Foldable Wallpaper Studio",
+      "summary": "Papéis de parede em pares para as duas telas do iPhone Duo: fechado, um close na tela externa; aberto, a cena inteira na tela interna, da mesma arte original. Mais de 300 pares em 14 estilos · 5 widgets com o seu papel de parede · pares com suas fotos · sem anúncios, sem conta e sem coleta de dados.",
+      "category": "photo-utility",
+      "search_terms": [
+        "celular",
+        "fundo",
+        "tela",
+        "bloqueio",
+        "estético",
+        "personalizado",
+        "fofo",
+        "bonito",
+        "frases",
+        "preto",
+        "amoled",
+        "foto",
+        "criar",
+        "flores"
+      ],
+      "purchase_model": "free_with_lifetime_unlock",
+      "one_time_option": true,
+      "capabilities": {
+        "offline": false,
+        "no_account": false,
+        "no_ads": true,
+        "no_tracking": false,
+        "private_or_on_device": false,
+        "widget": false,
+        "apple_watch": false
+      },
+      "app_store_url": "https://apps.apple.com/br/app/id6824946559?pt=118326163&ct=geo_pick&mt=8",
+      "guide_url": "https://open.cait518.cc/ios-app-guide/pt-BR/duowallpaperstudio.html",
+      "verified_live": true,
+      "storefront_facts": {
+        "price": "0",
+        "currency": "BRL",
+        "formatted_price": "Grátis",
+        "storefront_url": "https://apps.apple.com/br/app/id6824946559"
       }
     },
     {
@@ -713,8 +753,7 @@
         "letras",
         "fila",
         "palco",
-        "aviso",
-        "placa aeroporto"
+        "aviso"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1163,8 +1202,7 @@
         "anonimizar",
         "lgpd",
         "exif",
-        "senha",
-        "tarjar pdf"
+        "senha"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1205,10 +1243,7 @@
         "calendário",
         "widget",
         "organização",
-        "diária",
-        "lista de tarefas",
-        "checklist",
-        "to do list"
+        "diária"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1818,8 +1853,7 @@
         "leitura",
         "prova",
         "vestibular",
-        "concurso",
-        "timer de foco"
+        "concurso"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -1860,8 +1894,7 @@
         "fotos",
         "hotel",
         "museu",
-        "aeroporto",
-        "jogos para viagem de carro"
+        "aeroporto"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,
@@ -2028,9 +2061,7 @@
         "reset",
         "llm",
         "meter",
-        "sessão",
-        "monitor de uso ia",
-        "uso de tokens"
+        "sessão"
       ],
       "purchase_model": "free_with_lifetime_unlock",
       "one_time_option": true,

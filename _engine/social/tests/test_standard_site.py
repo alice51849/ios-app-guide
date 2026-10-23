@@ -3031,7 +3031,29 @@ class StandardSitePublisherTests(ProjectScratchCase):
             if line.strip()
         ]
         blocks = [item["block"] for item in page["blocks"]]
-        self.assertEqual(lines, [block["plaintext"] for block in blocks])
+        # Leaflet feeds render content-backed documents from the blocks
+        # only, so the last block must link the canonical guide page.
+        self.assertEqual(
+            lines + [document["canonical_url"]],
+            [block["plaintext"] for block in blocks],
+        )
+        canonical_facets = blocks[-1]["facets"]
+        self.assertEqual(1, len(canonical_facets))
+        self.assertEqual(
+            {
+                "$type": "pub.leaflet.richtext.facet#byteSlice",
+                "byteStart": 0,
+                "byteEnd": len(document["canonical_url"].encode("utf-8")),
+            },
+            canonical_facets[0]["index"],
+        )
+        self.assertEqual(
+            [{
+                "$type": "pub.leaflet.richtext.facet#link",
+                "uri": document["canonical_url"],
+            }],
+            canonical_facets[0]["features"],
+        )
         for item in page["blocks"]:
             self.assertEqual(
                 "pub.leaflet.pages.linearDocument#block", item["$type"]
@@ -3045,6 +3067,37 @@ class StandardSitePublisherTests(ProjectScratchCase):
         ]
         self.assertIn(document["primary_app_store_url"], links)
         self.assertIn("ct=standard_site", document["primary_app_store_url"])
+
+    def test_leaflet_content_links_canonical_exactly_once(self) -> None:
+        canonical = "https://open.cait518.cc/ios-app-guide/en-US/alpha.html"
+        appended = publisher.leaflet_content("第一段", canonical)
+        blocks = [item["block"] for item in appended["pages"][0]["blocks"]]
+        self.assertEqual(["第一段", canonical], [b["plaintext"] for b in blocks])
+        already = publisher.leaflet_content(f"原文：{canonical}", canonical)
+        blocks = [item["block"] for item in already["pages"][0]["blocks"]]
+        self.assertEqual([f"原文：{canonical}"], [b["plaintext"] for b in blocks])
+        self.assertEqual(
+            canonical, blocks[0]["facets"][0]["features"][0]["uri"]
+        )
+        for bad in (
+            "http://open.cait518.cc/ios-app-guide/en-US/alpha.html",
+            "https://open.cait518.cc/a b.html",
+            "https://open.cait518.cc/alpha.",
+        ):
+            with self.assertRaises(publisher.PublishError):
+                publisher.leaflet_content("第一段", bad)
+
+    def test_legacy_document_record_content_links_canonical(self) -> None:
+        manifest = fixture_manifest({"alpha": 1})
+        document = manifest["documents"][0]
+        self.assertIn("legacy_app_store_link", document)
+        record = publisher.legacy_document_record(
+            document,
+            "at://did:plc:test/site.standard.publication/3mrocqbkyt6mg",
+            {"published_at": "2026-07-28T00:00:00.000Z"},
+        )
+        last = record["content"]["pages"][0]["blocks"][-1]["block"]
+        self.assertEqual(document["canonical_url"], last["plaintext"])
 
     def test_leaflet_link_facets_use_utf8_byte_offsets(self) -> None:
         url = (

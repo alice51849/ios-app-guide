@@ -770,6 +770,14 @@
         "result": "refused",
         "error": "RuntimeError: HTTP 400: {\"error\":{\"message\":\"Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"error_subcode\":2207081,\"is_transient\":false,\"error_user_title\":\"Tr"
       }
+    },
+    {
+      "channel": "telegram",
+      "clip": "mochi/zh-Hant",
+      "link": "https://t.me/LumiApps2026/441",
+      "posted_at": "2026-10-23T12:40:10Z",
+      "id": "441",
+      "variant": "b"
     }
   ]
 }

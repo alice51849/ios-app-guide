@@ -126,7 +126,8 @@ SECRETS = {
     "dailymotion": ("DM_API_KEY", "DM_API_SECRET", "DM_USERNAME", "DM_PASSWORD"),
     "misskey": ("MISSKEY_TOKEN",),
     "pixelfed": ("PIXELFED_TOKEN",),
-    "telegraph": ("TELEGRAPH_TOKEN",),
+    # Telegraph needs no sign-up: without TELEGRAPH_TOKEN the run opens its own account (createAccount).
+    "telegraph": (),
     "writeas": ("WRITEAS_TOKEN",),
     "hatena": ("HATENA_ID", "HATENA_BLOG_ID", "HATENA_API_KEY"),
     "wordpress": ("WPCOM_SITE", "WPCOM_TOKEN"),
@@ -1387,12 +1388,28 @@ def render_telegraph(item):
     return dict(out, nodes=nodes, checks=[("page", nodes_text(nodes))])
 
 
+_TELEGRAPH_TOKEN = {}
+
+
+def telegraph_token():
+    """TELEGRAPH_TOKEN when set; otherwise one account per run from createAccount (Telegraph has no sign-up)."""
+    if env("TELEGRAPH_TOKEN"):
+        return env("TELEGRAPH_TOKEN")
+    if "token" not in _TELEGRAPH_TOKEN:
+        r = http("POST", f"{TELEGRAPH}/createAccount", form({
+            "short_name": "LumiApps", "author_name": "Lumi Apps", "author_url": "https://open.cait518.cc/ig/"}))
+        if not r.get("ok"):
+            raise RuntimeError(f"telegraph: {r.get('error')}")
+        _TELEGRAPH_TOKEN["token"] = r["result"]["access_token"]
+    return _TELEGRAPH_TOKEN["token"]
+
+
 def post_telegraph(item):
     out = outgoing(item, "telegraph")
     if not out:
         return None
     r = http("POST", f"{TELEGRAPH}/createPage", form({
-        "access_token": env("TELEGRAPH_TOKEN"), "title": out["title"][:256], "author_name": "Lumi Apps",
+        "access_token": telegraph_token(), "title": out["title"][:256], "author_name": "Lumi Apps",
         "author_url": "https://open.cait518.cc/ig/", "content": json.dumps(out["nodes"], ensure_ascii=False)}))
     if not r.get("ok"):
         raise RuntimeError(f"telegraph: {r.get('error')}")
@@ -1400,7 +1417,7 @@ def post_telegraph(item):
 
 
 def whoami_telegraph():
-    r = http("GET", f"{TELEGRAPH}/getAccountInfo?" + urllib.parse.urlencode({"access_token": env("TELEGRAPH_TOKEN")}))
+    r = http("GET", f"{TELEGRAPH}/getAccountInfo?" + urllib.parse.urlencode({"access_token": telegraph_token()}))
     print(f"telegraph: {r.get('result', {}).get('short_name')}")
 
 

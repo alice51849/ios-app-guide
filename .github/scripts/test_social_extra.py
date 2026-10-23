@@ -206,10 +206,12 @@ class PlanTest(unittest.TestCase):
     def test_missing_secrets_log_not_configured_and_post_nothing(self):
         with mock.patch.dict(os.environ, {}, clear=True), mock.patch.object(S, "http") as h, \
                 mock.patch("sys.stdout", new_callable=io.StringIO) as out:
-            self.assertEqual(S.run(S.CHANNELS, DAY, 1, data=DATA), 0)
-            self.assertEqual(S.whoami(S.CHANNELS), 0)
+            # Telegraph needs no secret (it opens its own account), so it is the one channel left out here.
+            chans = tuple(c for c in S.CHANNELS if c != "telegraph")
+            self.assertEqual(S.run(chans, DAY, 1, data=DATA), 0)
+            self.assertEqual(S.whoami(chans), 0)
         h.assert_not_called()
-        self.assertEqual(out.getvalue().count("not configured"), 2 * len(S.CHANNELS))
+        self.assertEqual(out.getvalue().count("not configured"), 2 * len(chans))
 
     def test_dry_run_posts_nothing(self):
         with mock.patch.dict(os.environ, ENV_ALL, clear=True), mock.patch.object(S, "http") as h, \
@@ -1354,7 +1356,8 @@ class Platform50Test(unittest.TestCase):
                 self.assertIn(ch, table, ch)
             self.assertEqual(DL.coarse_campaign(f"h7_a_{S.CT[ch]}"), "social", ch)
             with mock.patch.dict(os.environ, {}, clear=True):
-                self.assertFalse(S.configured(ch), ch)
+                # Telegraph needs no account (createAccount per run), so it is the one channel always on.
+                self.assertEqual(S.configured(ch), ch == "telegraph", ch)
 
     def test_every_new_channel_renders_the_download_link_it_sends(self):
         for ch in self.NEW:
@@ -1384,11 +1387,26 @@ class Platform50Test(unittest.TestCase):
         self.assertNotIn("catbox", status["status"])
 
     def test_telegraph_page_links_both_stores(self):
-        res, fake = self.run_post("telegraph", [("POST", "/createPage", {"ok": True, "result": {"path": "p-1", "url": "https://telegra.ph/p-1"}})])
+        res, fake = self.run_post("telegraph", [("POST", "/createPage", {"ok": True, "result": {"path": "p-1", "url": "https://telegra.ph/p-1"}})],
+                                  env={"TELEGRAPH_TOKEN": "v"})
         self.assertEqual(res["link"], "https://telegra.ph/p-1")
         sent = dict(urllib.parse.parse_qsl(fake.calls[0]["data"].decode()))
         self.assertIn("apps.apple.com", sent["content"])
         self.assertEqual(sent["author_url"], "https://open.cait518.cc/ig/")
+
+    def test_telegraph_opens_its_own_account_without_a_token(self):
+        S._TELEGRAPH_TOKEN.clear()
+        try:
+            res, fake = self.run_post("telegraph", [
+                ("POST", "/createAccount", {"ok": True, "result": {"access_token": "tok-1"}}),
+                ("POST", "/createPage", {"ok": True, "result": {"path": "p-2", "url": "https://telegra.ph/p-2"}})])
+        finally:
+            S._TELEGRAPH_TOKEN.clear()
+        self.assertEqual(res["link"], "https://telegra.ph/p-2")
+        self.assertIn("/createAccount", fake.calls[0]["url"])
+        sent = dict(urllib.parse.parse_qsl(fake.calls[1]["data"].decode()))
+        self.assertEqual(sent["access_token"], "tok-1")
+        self.assertIn("apps.apple.com", sent["content"])
 
     def test_writeas_posts_markdown_to_the_blog(self):
         res, fake = self.run_post("writeas", [("POST", "/collections/lumi/posts", {"data": {"id": "i1", "slug": "s1"}})],
